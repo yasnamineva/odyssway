@@ -105,6 +105,75 @@ test("shows the error state instead of computing for reversed dates", async ({ p
   await expect(page.getByTestId("days-used")).toHaveText("0");
 });
 
+test("renders the 180-day window strip with one cell per day", async ({ page }) => {
+  await fillFirstTrip(page, "2026-06-01", "2026-06-10");
+  await setCheckDate(page, "2026-06-30");
+  const strip = page.getByTestId("window-strip");
+  await expect(strip).toBeVisible();
+  await expect(strip.locator(".grid > div")).toHaveCount(180);
+  await expect(strip).toContainText("Counted day");
+});
+
+test("finder answers 'when can I stay N days' with the official-example date", async ({ page }) => {
+  await fillFirstTrip(page, "2024-01-01", "2024-03-30"); // 90 days used
+  await setCheckDate(page, "2024-03-31");
+  await page.getByLabel("Days").fill("90");
+  // 90 days of absence required: earliest full 90-day stay starts 29 Jun 2024.
+  await expect(page.getByTestId("finder-result")).toContainText("Jun 29, 2024");
+});
+
+test("forecast lists the longest stay for upcoming entry dates", async ({ page }) => {
+  await fillFirstTrip(page, "2026-05-01", "2026-06-29"); // 60 days
+  await setCheckDate(page, "2026-07-01");
+  const forecast = page.getByTestId("forecast");
+  await expect(forecast).toBeVisible();
+  await expect(forecast.locator("li")).toHaveCount(7);
+  await expect(forecast.locator("li").first()).toContainText("up to 30 days");
+});
+
+test("warns when entered trips break the rule together (whole-timeline check)", async ({ page }) => {
+  await fillFirstTrip(page, "2026-01-01", "2026-03-31"); // 90 days
+  await page.getByRole("button", { name: "Add another stay" }).click();
+  await page.getByLabel("Entry date").nth(1).fill("2026-04-10");
+  await page.getByLabel("Exit date").nth(1).fill("2026-04-14");
+  await setCheckDate(page, "2026-01-15"); // a date where status alone looks fine
+  await expect(page.getByTestId("timeline-warning")).toContainText("Apr 10, 2026");
+});
+
+test("compliant planned trip can be added to the stays list", async ({ page }) => {
+  await setCheckDate(page, "2026-07-01");
+  await page.getByLabel("Planned entry").fill("2026-08-01");
+  await page.getByLabel("Planned exit").fill("2026-08-15");
+  await page.getByRole("button", { name: "Add this trip to my stays" }).click();
+  await expect(page.getByLabel("Entry date").last()).toHaveValue("2026-08-01");
+  await expect(page.getByLabel("Planned entry")).toHaveValue("");
+  await expect(page.getByTestId("days-used")).toHaveText("0"); // future trip, none used on 1 Jul
+});
+
+test("remember-on-device persists trips across a reload", async ({ page }) => {
+  await fillFirstTrip(page, "2026-06-01", "2026-06-10");
+  await page.getByLabel(/Remember my trips/).check();
+  await page.waitForTimeout(200); // allow the persistence effect to flush
+  await page.reload();
+  await expect(page.getByLabel("Entry date").first()).toHaveValue("2026-06-01");
+  await expect(page.getByLabel(/Remember my trips/)).toBeChecked();
+  // Unticking erases the stored copy.
+  await page.getByLabel(/Remember my trips/).uncheck();
+  await page.reload();
+  await expect(page.getByLabel("Entry date").first()).toHaveValue("");
+});
+
+test("border report copies a plain-text summary", async ({ page, context }) => {
+  await context.grantPermissions(["clipboard-read", "clipboard-write"]);
+  await fillFirstTrip(page, "2026-06-01", "2026-06-10");
+  await setCheckDate(page, "2026-06-30");
+  await page.getByRole("button", { name: "Copy border report" }).click();
+  await expect(page.getByTestId("report-copied")).toBeVisible();
+  const clipboard = await page.evaluate(() => navigator.clipboard.readText());
+  expect(clipboard).toContain("Schengen 90/180 day report");
+  expect(clipboard).toContain("Jun 1, 2026 to Jun 10, 2026 (10 days");
+});
+
 test("works at mobile viewport", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await fillFirstTrip(page, "2026-06-01", "2026-06-10");

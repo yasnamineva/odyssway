@@ -11,6 +11,7 @@ export { buildPresence } from "./presence";
 export {
   MAX_DAYS_IN_WINDOW,
   WINDOW_DAYS,
+  checkTimeline,
   maxStay,
   nextEntry,
   planTrip,
@@ -28,6 +29,7 @@ export type {
   PlanTripResult,
   PresenceResult,
   StatusResult,
+  TimelineResult,
   Trip,
   TripExclusion,
 } from "./types";

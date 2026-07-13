@@ -112,6 +112,12 @@ export interface MaxStayResult {
   lastAllowedDay: ISODate | null;
 }
 
+export interface TimelineResult {
+  compliant: boolean;
+  /** First day anywhere in the entered trips on which the 90/180 rule breaks. */
+  firstViolationDay: ISODate | null;
+}
+
 export interface NextEntryResult {
   desiredStay: number;
   /** Earliest entry date ≥ `from` allowing `desiredStay` consecutive compliant days. */

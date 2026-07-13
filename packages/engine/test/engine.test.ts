@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { maxStay, nextEntry, planTrip, status } from "../src/engine";
+import { checkTimeline, maxStay, nextEntry, planTrip, status } from "../src/engine";
 import { EngineError, InvalidTripError } from "../src/errors";
 import { trips } from "./helpers";
 
@@ -121,6 +121,36 @@ describe("maxStay", () => {
     // the planned trip merged into it; continuous presence caps at 90 total in window.
     expect(result.maxDays).toBeLessThanOrEqual(90);
     expect(result.maxDays).toBeGreaterThan(0);
+  });
+});
+
+describe("checkTimeline", () => {
+  it("accepts compliant trip sets", () => {
+    const t = trips(["2026-01-01", "2026-03-31"]); // 90 days
+    expect(checkTimeline(t)).toEqual({ compliant: true, firstViolationDay: null });
+  });
+
+  it("catches two individually-fine trips that break the rule together", () => {
+    // 90 days + 5 more inside the same window: each trip alone is ≤ 90.
+    const t = trips(["2026-01-01", "2026-03-31"], ["2026-04-10", "2026-04-14"]);
+    const result = checkTimeline(t);
+    expect(result.compliant).toBe(false);
+    expect(result.firstViolationDay).toBe("2026-04-10");
+  });
+
+  it("is order-independent and merges duplicates", () => {
+    const ordered = trips(["2026-01-01", "2026-01-10"], ["2026-03-01", "2026-03-20"]);
+    const shuffled = trips(
+      ["2026-03-01", "2026-03-20"],
+      ["2026-01-01", "2026-01-10"],
+      ["2026-01-01", "2026-01-10"], // duplicate must count once
+    );
+    expect(status(ordered, "2026-03-20")).toEqual(status(shuffled, "2026-03-20"));
+    expect(status(shuffled, "2026-03-20").daysUsed).toBe(30);
+  });
+
+  it("handles an empty trip list", () => {
+    expect(checkTimeline([]).compliant).toBe(true);
   });
 });
 

@@ -2,11 +2,16 @@
 
 import {
   EngineError,
+  addDays,
+  buildPresence,
+  checkTimeline,
   isValidISODate,
   maxStay,
   nextEntry,
   planTrip,
   status,
+  toEpochDay,
+  type TimelineResult,
   type MaxStayResult,
   type NextEntryResult,
   type PlanTripResult,
@@ -75,11 +80,39 @@ function rowHasOrderError(row: TripRow): boolean {
   return rowIsComplete(row) && row.entry > row.exit;
 }
 
+interface ForecastEntry {
+  entry: string;
+  result: MaxStayResult;
+}
+
 interface Results {
   status: StatusResult;
   maxStay: MaxStayResult;
   plan: PlanTripResult | null;
   planEarliest: NextEntryResult | null;
+  /** Epoch days with counted presence — drives the 180-day window strip. */
+  presence: ReadonlySet<number>;
+  /** Forward planner: longest stay for a handful of upcoming entry dates. */
+  forecast: ForecastEntry[];
+  /** "When can I stay N days?" answer, null while N is invalid. */
+  finder: NextEntryResult | null;
+  /** Compliance of the entered trips themselves, across the whole timeline. */
+  timeline: TimelineResult;
+}
+
+/** Colors validated with the dataviz palette checker (see git history). */
+const STRIP_COUNTED = "#3767a8";
+const STRIP_PLANNED = "#d97706";
+
+const FORECAST_OFFSETS = [0, 7, 14, 30, 45, 60, 90];
+
+const STORAGE_KEY = "borderline.calculator.v1";
+
+interface StoredState {
+  trips: Array<{ entry: string; exit: string; country: string; permit: boolean }>;
+  planEntry: string;
+  planExit: string;
+  desiredStay: string;
 }
 
 let nextRowId = 1;
@@ -99,18 +132,61 @@ export default function Calculator() {
   const [refDate, setRefDate] = useState("");
   const [planEntry, setPlanEntry] = useState("");
   const [planExit, setPlanExit] = useState("");
+  const [desiredStay, setDesiredStay] = useState("90");
+  const [saveEnabled, setSaveEnabled] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [reportCopied, setReportCopied] = useState(false);
 
   useEffect(() => {
     const decoded = decodeShareState(window.location.search, KNOWN_CODES);
     if (decoded.trips && decoded.trips.length > 0) {
+      // A shared link wins over anything stored on this device.
       setRows(decoded.trips.map((t) => newRow(t.entry, t.exit, t.country, t.permit)));
+      if (decoded.planEntry) setPlanEntry(decoded.planEntry);
+      if (decoded.planExit) setPlanExit(decoded.planExit);
+    } else {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const stored = JSON.parse(raw) as StoredState;
+          if (stored.trips.length > 0) {
+            setRows(
+              stored.trips.map((t) => newRow(t.entry, t.exit, t.country, t.permit)),
+            );
+          }
+          setPlanEntry(stored.planEntry ?? "");
+          setPlanExit(stored.planExit ?? "");
+          if (stored.desiredStay) setDesiredStay(stored.desiredStay);
+          setSaveEnabled(true);
+        }
+      } catch {
+        // Corrupt or unavailable storage: start fresh.
+      }
     }
     setRefDate(decoded.refDate ?? localTodayISO());
-    if (decoded.planEntry) setPlanEntry(decoded.planEntry);
-    if (decoded.planExit) setPlanExit(decoded.planExit);
     setMounted(true);
   }, []);
+
+  useEffect(() => {
+    if (!mounted) return;
+    try {
+      if (saveEnabled) {
+        const stored: StoredState = {
+          trips: rows
+            .filter(rowIsComplete)
+            .map(({ entry, exit, country, permit }) => ({ entry, exit, country, permit })),
+          planEntry,
+          planExit,
+          desiredStay,
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(stored));
+      } else {
+        localStorage.removeItem(STORAGE_KEY);
+      }
+    } catch {
+      // Storage unavailable (private mode quota etc.) — saving is best-effort.
+    }
+  }, [mounted, saveEnabled, rows, planEntry, planExit, desiredStay]);
 
   const fmt = useMemo(
     () =>
@@ -132,6 +208,10 @@ export default function Calculator() {
   const planComplete =
     isValidISODate(planEntry) && isValidISODate(planExit) && planEntry <= planExit;
 
+  const desiredStayDays = /^\d+$/.test(desiredStay) ? Number(desiredStay) : NaN;
+  const desiredStayValid =
+    Number.isInteger(desiredStayDays) && desiredStayDays >= 1 && desiredStayDays <= 90;
+
   const results = useMemo((): { data: Results | null; error: string | null } => {
     if (!mounted || !isValidISODate(refDate)) return { data: null, error: null };
     try {
@@ -145,11 +225,23 @@ export default function Calculator() {
           planEarliest = nextEntry(trips, plan.tripLengthDays, planEntry, engineContext);
         }
       }
-      return { data: { status: s, maxStay: ms, plan, planEarliest }, error: null };
+      const { presence } = buildPresence(trips, engineContext);
+      const forecast = FORECAST_OFFSETS.map((offset) => {
+        const entry = addDays(refDate, offset);
+        return { entry, result: maxStay(trips, entry, engineContext) };
+      });
+      const finder = desiredStayValid
+        ? nextEntry(trips, desiredStayDays, refDate, engineContext)
+        : null;
+      const timeline = checkTimeline(trips, engineContext);
+      return {
+        data: { status: s, maxStay: ms, plan, planEarliest, presence, forecast, finder, timeline },
+        error: null,
+      };
     } catch (e) {
       return { data: null, error: e instanceof EngineError ? e.message : String(e) };
     }
-  }, [mounted, trips, refDate, planComplete, planEntry, planExit]);
+  }, [mounted, trips, refDate, planComplete, planEntry, planExit, desiredStayValid, desiredStayDays]);
 
   const updateRow = (id: number, patch: Partial<TripRow>) => {
     setRows((rs) => rs.map((r) => (r.id === id ? { ...r, ...patch } : r)));
@@ -179,8 +271,65 @@ export default function Calculator() {
     setRefDate(localTodayISO());
     setPlanEntry("");
     setPlanExit("");
+    setDesiredStay("90");
     setCopied(false);
+    setReportCopied(false);
     window.history.replaceState(null, "", window.location.pathname);
+  };
+
+  const addPlanToTrips = () => {
+    setRows((rs) => [
+      ...rs.filter((r) => r.entry !== "" || r.exit !== ""),
+      newRow(planEntry, planExit),
+    ]);
+    setPlanEntry("");
+    setPlanExit("");
+  };
+
+  const copyReport = async () => {
+    if (!results.data) return;
+    const s = results.data.status;
+    const ms = results.data.maxStay;
+    const lines: string[] = [
+      t("report.title", { date: formatDate(localTodayISO()) }),
+      "",
+      t("report.staysHeading"),
+      ...rows.filter((r) => rowIsComplete(r) && !rowHasOrderError(r)).map((r) => {
+        const days = toEpochDay(r.exit) - toEpochDay(r.entry) + 1;
+        const base = t("report.stayLine", {
+          entry: formatDate(r.entry),
+          exit: formatDate(r.exit),
+          days,
+          country: r.country ? countryName(r.country) : t("countryUnspecified"),
+        });
+        return r.permit ? `${base} ${t("report.permitSuffix")}` : base;
+      }),
+      "",
+      t("statusSentence", {
+        start: formatDate(s.windowStart),
+        end: formatDate(s.onDate),
+        used: s.daysUsed,
+        remaining: s.daysRemaining,
+      }),
+      ...(ms.maxDays > 0 && ms.lastAllowedDay
+        ? [
+            t("maxStaySentence", {
+              entry: formatDate(ms.entry),
+              exit: formatDate(ms.lastAllowedDay),
+              days: ms.maxDays,
+            }),
+          ]
+        : []),
+      t("nextSafeEntry", { date: formatDate(s.nextSafeEntry) }),
+      "",
+      t("report.disclaimer"),
+    ];
+    try {
+      await navigator.clipboard.writeText(lines.join("\n"));
+      setReportCopied(true);
+    } catch {
+      // Clipboard unavailable — nothing sensible to do without it.
+    }
   };
 
   if (!mounted) {
@@ -295,6 +444,13 @@ export default function Calculator() {
               {row.permit ? (
                 <p className="mt-1 text-xs text-slate-500">{t("permitHint")}</p>
               ) : null}
+              {rowIsComplete(row) && !rowHasOrderError(row) ? (
+                <p className="mt-1 text-xs text-slate-500">
+                  {t("rowDayCount", {
+                    days: toEpochDay(row.exit) - toEpochDay(row.entry) + 1,
+                  })}
+                </p>
+              ) : null}
               {rowHasOrderError(row) ? (
                 <p className="mt-1 text-xs text-red-600">{t("rowOrderError")}</p>
               ) : null}
@@ -329,11 +485,34 @@ export default function Calculator() {
             onChange={(e) => setRefDate(e.target.value)}
           />
         </div>
+        <label className="mt-4 flex items-start gap-2 text-xs text-slate-600">
+          <input
+            type="checkbox"
+            className="mt-0.5"
+            checked={saveEnabled}
+            onChange={(e) => setSaveEnabled(e.target.checked)}
+          />
+          <span>
+            {t("saveLabel")}{" "}
+            <span className="text-slate-400">{t("saveHint")}</span>
+          </span>
+        </label>
       </section>
 
       {results.error ? (
         <section className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
           {t("computeError", { message: results.error })}
+        </section>
+      ) : null}
+
+      {results.data && !results.data.timeline.compliant ? (
+        <section
+          data-testid="timeline-warning"
+          className="rounded-2xl border border-red-200 bg-red-50 p-4 text-sm leading-relaxed text-red-900"
+        >
+          {t("timelineWarning", {
+            date: formatDate(results.data.timeline.firstViolationDay!),
+          })}
         </section>
       ) : null}
 
@@ -343,7 +522,57 @@ export default function Calculator() {
           formatDate={formatDate}
           onShare={share}
           copied={copied}
+          onCopyReport={copyReport}
+          reportCopied={reportCopied}
         />
+      ) : null}
+
+      {results.data ? (
+        <WindowStrip
+          presence={results.data.presence}
+          refDate={refDate}
+          planStart={planComplete ? planEntry : null}
+          planEnd={planComplete ? planExit : null}
+          formatDate={formatDate}
+        />
+      ) : null}
+
+      {results.data ? (
+        <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+          <h2 className="text-sm font-semibold text-slate-900">{t("finderTitle")}</h2>
+          <p className="mb-3 text-xs text-slate-500">{t("finderHint")}</p>
+          <div className="flex items-end gap-3">
+            <div>
+              <label className={labelClass} htmlFor="desiredStay">
+                {t("finderLabel")}
+              </label>
+              <input
+                id="desiredStay"
+                type="number"
+                min={1}
+                max={90}
+                inputMode="numeric"
+                className={`${inputClass} w-24`}
+                value={desiredStay}
+                onChange={(e) => setDesiredStay(e.target.value)}
+              />
+            </div>
+            <div className="min-w-0 flex-1 pb-1 text-sm leading-relaxed text-slate-700">
+              {results.data.finder ? (
+                <p data-testid="finder-result">
+                  {t("finderResult", {
+                    days: results.data.finder.desiredStay,
+                    date: formatDate(results.data.finder.earliestEntry),
+                    exit: formatDate(results.data.finder.lastAllowedDay),
+                  })}
+                </p>
+              ) : (
+                <p className="text-xs text-red-600">{t("finderInvalid")}</p>
+              )}
+            </div>
+          </div>
+          <ForecastList forecast={results.data.forecast} formatDate={formatDate} />
+        </section>
       ) : null}
 
       <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
@@ -380,6 +609,7 @@ export default function Calculator() {
             plan={results.data.plan}
             planEarliest={results.data.planEarliest}
             formatDate={formatDate}
+            onAddToTrips={addPlanToTrips}
           />
         ) : null}
       </section>
@@ -406,11 +636,15 @@ function StatusCard({
   formatDate,
   onShare,
   copied,
+  onCopyReport,
+  reportCopied,
 }: {
   results: Results;
   formatDate: (iso: string) => string;
   onShare: () => void;
   copied: boolean;
+  onCopyReport: () => void;
+  reportCopied: boolean;
 }) {
   const t = useTranslations("calc");
   const s = results.status;
@@ -491,7 +725,7 @@ function StatusCard({
           </p>
         ))}
       </div>
-      <div className="mt-4">
+      <div className="mt-4 flex flex-wrap gap-3">
         <button
           type="button"
           onClick={onShare}
@@ -499,9 +733,136 @@ function StatusCard({
         >
           {t("share")}
         </button>
-        {copied ? <p className="mt-2 text-xs text-emerald-700">{t("shareCopied")}</p> : null}
+        <button
+          type="button"
+          onClick={onCopyReport}
+          className="rounded-lg border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50"
+        >
+          {t("report.button")}
+        </button>
+      </div>
+      {copied ? <p className="mt-2 text-xs text-emerald-700">{t("shareCopied")}</p> : null}
+      {reportCopied ? (
+        <p data-testid="report-copied" className="mt-2 text-xs text-emerald-700">
+          {t("report.copied")}
+        </p>
+      ) : null}
+    </section>
+  );
+}
+
+/** 180-day rolling window as one cell per day (mark colors validated for CVD). */
+function WindowStrip({
+  presence,
+  refDate,
+  planStart,
+  planEnd,
+  formatDate,
+}: {
+  presence: ReadonlySet<number>;
+  refDate: string;
+  planStart: string | null;
+  planEnd: string | null;
+  formatDate: (iso: string) => string;
+}) {
+  const t = useTranslations("calc");
+  const end = toEpochDay(refDate);
+  const start = end - 179;
+  const planFrom = planStart ? toEpochDay(planStart) : null;
+  const planTo = planEnd ? toEpochDay(planEnd) : null;
+
+  const cells = [];
+  for (let d = start; d <= end; d++) {
+    const counted = presence.has(d);
+    const planned =
+      !counted && planFrom !== null && planTo !== null && d >= planFrom && d <= planTo;
+    const date = formatDate(addDays(refDate, d - end));
+    const state = counted
+      ? t("stripStateCounted")
+      : planned
+        ? t("stripStatePlanned")
+        : t("stripStateFree");
+    cells.push(
+      <div
+        key={d}
+        title={`${date} — ${state}`}
+        className="h-3 rounded-[2px]"
+        style={{
+          backgroundColor: counted
+            ? STRIP_COUNTED
+            : planned
+              ? STRIP_PLANNED
+              : "var(--color-slate-100)",
+        }}
+      />,
+    );
+  }
+
+  return (
+    <section
+      data-testid="window-strip"
+      className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
+    >
+      <h2 className="text-sm font-semibold text-slate-900">{t("stripTitle")}</h2>
+      <p className="mb-3 text-xs text-slate-500">
+        {t("stripCaption", {
+          start: formatDate(addDays(refDate, -179)),
+          end: formatDate(refDate),
+        })}
+      </p>
+      <div className="grid grid-cols-[repeat(30,minmax(0,1fr))] gap-[2px]">{cells}</div>
+      <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-slate-500">
+        <span className="inline-flex items-center gap-1.5">
+          <span
+            className="inline-block h-2.5 w-2.5 rounded-[2px]"
+            style={{ backgroundColor: STRIP_COUNTED }}
+          />
+          {t("stripLegendCounted")}
+        </span>
+        <span className="inline-flex items-center gap-1.5">
+          <span
+            className="inline-block h-2.5 w-2.5 rounded-[2px]"
+            style={{ backgroundColor: STRIP_PLANNED }}
+          />
+          {t("stripLegendPlanned")}
+        </span>
+        <span className="inline-flex items-center gap-1.5">
+          <span className="inline-block h-2.5 w-2.5 rounded-[2px] border border-slate-200 bg-slate-100" />
+          {t("stripLegendFree")}
+        </span>
       </div>
     </section>
+  );
+}
+
+/** Forward planner: the longest compliant stay for upcoming entry dates. */
+function ForecastList({
+  forecast,
+  formatDate,
+}: {
+  forecast: ForecastEntry[];
+  formatDate: (iso: string) => string;
+}) {
+  const t = useTranslations("calc");
+  return (
+    <div className="mt-4" data-testid="forecast">
+      <h3 className="text-xs font-semibold text-slate-700">{t("forecastTitle")}</h3>
+      <ul className="mt-2 divide-y divide-slate-100 text-sm text-slate-700">
+        {forecast.map(({ entry, result }) => (
+          <li key={entry} className="flex items-baseline justify-between gap-3 py-1.5">
+            <span className="text-slate-500">{formatDate(entry)}</span>
+            <span className="text-right">
+              {result.maxDays > 0 && result.lastAllowedDay
+                ? t("forecastRow", {
+                    days: result.maxDays,
+                    exit: formatDate(result.lastAllowedDay),
+                  })
+                : t("forecastRowBlocked")}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
@@ -509,26 +870,37 @@ function PlanResult({
   plan,
   planEarliest,
   formatDate,
+  onAddToTrips,
 }: {
   plan: PlanTripResult;
   planEarliest: NextEntryResult | null;
   formatDate: (iso: string) => string;
+  onAddToTrips: () => void;
 }) {
   const t = useTranslations("calc");
 
   if (plan.compliant) {
     return (
-      <p
+      <div
         data-testid="plan-result"
         className="mt-3 rounded-xl bg-emerald-50 p-3 text-sm leading-relaxed text-emerald-900"
       >
-        {t("planCompliant", {
-          days: plan.tripLengthDays,
-          entry: formatDate(plan.entry),
-          exit: formatDate(plan.exit),
-          remaining: plan.daysRemainingAfterTrip,
-        })}
-      </p>
+        <p>
+          {t("planCompliant", {
+            days: plan.tripLengthDays,
+            entry: formatDate(plan.entry),
+            exit: formatDate(plan.exit),
+            remaining: plan.daysRemainingAfterTrip,
+          })}
+        </p>
+        <button
+          type="button"
+          onClick={onAddToTrips}
+          className="mt-2 rounded-lg border border-emerald-300 px-3 py-1.5 text-xs font-medium text-emerald-900 hover:bg-emerald-100"
+        >
+          {t("planAddToTrips")}
+        </button>
+      </div>
     );
   }
 

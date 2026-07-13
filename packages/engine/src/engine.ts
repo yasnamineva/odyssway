@@ -7,6 +7,7 @@ import type {
   NextEntryResult,
   PlanTripResult,
   StatusResult,
+  TimelineResult,
   Trip,
 } from "./types";
 
@@ -140,6 +141,26 @@ export function maxStay(
     maxDays: days,
     lastAllowedDay: days > 0 ? fromEpochDay(start + days - 1) : null,
   };
+}
+
+/**
+ * Whole-timeline compliance: is EVERY day of presence across all entered
+ * trips (past and future) within the 90/180 rule? Catches the case where a
+ * trip is fine in isolation but pushes a later listed trip over the limit —
+ * something per-trip checks miss.
+ */
+export function checkTimeline(
+  trips: Trip[],
+  ctx: EngineContext = {},
+): TimelineResult {
+  const { presence } = buildPresence(trips, ctx);
+  const days = [...presence].sort((a, b) => a - b);
+  for (const d of days) {
+    if (countInWindow(presence, d) > MAX_DAYS_IN_WINDOW) {
+      return { compliant: false, firstViolationDay: fromEpochDay(d) };
+    }
+  }
+  return { compliant: true, firstViolationDay: null };
 }
 
 /** Earliest entry date ≥ `from` allowing `desiredStay` consecutive compliant days. */
