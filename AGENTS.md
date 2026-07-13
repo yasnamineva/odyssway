@@ -34,6 +34,12 @@ A web product for non-EU travelers to the Schengen Area that combines:
 - ETIAS (pre-travel authorization for visa-exempt nationals, ~€20, valid 3 years) is
   targeted for **Q4 2026** with a transitional grace period. VERIFY current status,
   fee, and dates before publishing any ETIAS content — they have slipped before.
+  **ETIAS is opportunistic upside, not foundation** (competitive red-team, 2026-07):
+  launch timing has slipped repeatedly, and when it launches, generic queries
+  ("is ETIAS live", "ETIAS cost") will largely be answered by official sources and
+  AI Overviews. Our ETIAS assets target the **long tail** ("ETIAS rejected what now",
+  nationality + residence-permit combinations) and freshness. The business case must
+  close on the evergreen calculator + EES demand alone; ETIAS traffic is a bonus.
 - Competitor landscape: many commodity 90/180 calculators exist
   (visa-calculator.com, schengencalculator.org, traveltally90.app, schengentraveler.com,
   europevisacheck.com, iOS/Android apps, plus the EU's official but bare-bones
@@ -329,6 +335,8 @@ URL structure (locale-prefixed later: `/bg/…`, `/tr/…`, `hreflang` everywher
 | `/bring/[item]` | Programmatic from `eu-items.json`. KW: "can I bring {item} into the EU/Europe" |
 | `/tracker` | Phase-2 app (accounts, alerts, Pro) |
 | `/about`, `/methodology`, `/sources` | Trust pages: how we verify, full source list |
+| `/changelog` | **Verification changelog**: public, chronological log of every rule-data change (what changed, why, source link, `verified_at`, `verified_by`). Rendered **automatically** from the versioned data files (derive from git history or a dedicated changelog JSON — implementer's choice, but never hand-maintained). |
+| `/widget` | Embed instructions for the embeddable calculator (Phase 3): iframe or script embed for travel blogs / expat sites, with a "powered by" backlink |
 
 Rules for programmatic pages (anti-thin-content):
 - A page ships only if its data row is `verified` AND it renders ≥ some unique
@@ -347,6 +355,7 @@ Rules for programmatic pages (anti-thin-content):
 - Plain language, ~8th-grade reading level. Short sentences. Second person.
 - Every rules page: answer-first summary box (2–3 sentences) → details → sources.
 - Always show: legal source name + link, "Checked against official sources: {date}".
+- Every rules page links to its own entries in `/changelog` ("see update history").
 - Never copy text from competitors or paste regulation text wholesale; paraphrase
   with citation.
 - Tone: calm and precise. No fear-mongering headlines, even though the topics are
@@ -392,6 +401,13 @@ Rules for programmatic pages (anti-thin-content):
   hash the content, diff against stored hashes, open a report in
   `data/UNVERIFIED/source-changes-{date}.md` when something changes. Run via cron
   (GitHub Action, weekly).
+- Watched sources must also include: **eu-LISA announcements** and any **official
+  EU traveler app releases** (the EU shipping better official tooling is a tracked
+  competitive risk), plus the **official ETIAS site** for launch-status changes.
+- The `/changelog` (§7) is part of this moat: cloned competitors can fake a
+  "verified" badge but cannot fake a consistent public update history. The
+  changelog makes our verification legible to users, journalists, search engines,
+  and AI systems that decide what to cite.
 - Any source change → re-check the value against the (possibly moved/updated)
   official source → bump `verified_at` → sitemap `lastmod` updates automatically.
 - The `/etias/status` page is the fastest-moving asset; design it so a single JSON
@@ -410,21 +426,41 @@ Rules for programmatic pages (anti-thin-content):
 - Calculator UI (mobile-first, shareable results), `/rules/90-180-rule`,
   `/ees` hub + `what-to-expect` + `dispute-overstay`, `/etias/status`,
   `/about` + `/methodology` + `/sources`, disclaimers, schema.org, sitemap,
-  Plausible. ✅ when: Lighthouse ≥ 95 perf/SEO/accessibility on mobile; zero
-  unverified data rendered.
+  Plausible.
+- `data/ees.json` for the first 5 countries (FR, ES, DE, IT, NL — highest
+  traveler volume) → programmatic `/ees/data-access/[country]` pages +
+  **downloadable** template letters (EN + official language). *Moved up from
+  Phase 2 (competitive red-team, 2026-07): this wedge is a first-mover race —
+  content authorities (SchengenVisaInfo-class sites) can outrank us within
+  weeks of noticing the demand, so page age and backlink accumulation must
+  start at launch.*
+- ✅ when: Lighthouse ≥ 95 perf/SEO/accessibility on mobile; zero unverified
+  data rendered; **5 dispute-guide pages live with verified authority data and
+  downloadable templates**.
 
 **Phase 2 — Depth + retention**
-- `data/ees.json` for first 5 countries (suggest: FR, ES, DE, IT, NL — highest
-  traveler volume) → `/ees/data-access/[country]` + template letters.
+- **Lightweight retention, early and DEFENSIVE (not a monetization feature)**:
+  email capture, saved trips, day-threshold email alerts, and a free
+  "border-proof PDF" export of computed travel history. *Rationale
+  (competitive red-team, 2026-07): general-purpose AI assistants can replicate
+  one-off day calculations, but cannot offer persistence, proactive alerts,
+  deterministic verified computation, or exportable artifacts — this layer is
+  the primary long-term moat.*
 - Programmatic `/etias/[nationality]` for top 15 visa-exempt nationalities.
-- Accounts (Supabase), saved trips, email alert at N days remaining. GDPR
-  export/delete. ✅ when: a user can save trips, get an alert, delete account fully.
+- Accounts (Supabase), GDPR export/delete. ✅ when: a user can save trips, get
+  an alert, export the PDF, and delete their account fully.
 
 **Phase 3 — Expansion**
 - `/bring` module (top 25 items), overstay-penalties pages, bilateral-agreements
   pages (verified rows only), Pro gating + Stripe, locales (bg, tr, sr) with
-  hreflang. ✅ when: item pages render only verified rows; locale switcher +
-  translated engine strings work.
+  hreflang.
+- **Embeddable calculator** (iframe or script embed) that travel blogs and
+  expat sites can install, with a "powered by" backlink; embed instructions at
+  `/widget` (§7). *Rationale: reduces dependence on organic search rankings by
+  generating durable backlinks and referral traffic.*
+- ✅ when: item pages render only verified rows; locale switcher + translated
+  engine strings work; the widget renders on a third-party page with a working
+  backlink.
 
 Work order within any phase: data schema → data (verified or UNVERIFIED) →
 engine/logic → tests → UI → content → SEO wiring.
@@ -447,3 +483,27 @@ engine/logic → tests → UI → content → SEO wiring.
 6. Don't paywall or degrade the free calculator.
 7. Don't generate filler blog posts. Every page must map to a row in §7's table or
    be explicitly approved.
+
+---
+
+## 14. Competitive posture
+
+What we deliberately do **NOT** compete on:
+- Generic informational queries owned by content authorities ("what is the
+  Schengen Area") — that traffic is theirs and AI Overviews' now.
+- "A calculator exists" as an identity — the commodity calculator is table
+  stakes, not a product.
+- App-store distribution — we don't fight the iOS/Android calculator apps on
+  their turf in v1.
+
+The durable moats, in priority order:
+1. A **verified legal data corpus with a public changelog** (§7 `/changelog`, §11).
+2. The **edge-case engine with cited legal basis** (permits, accession dates,
+   bilateral bases — each rule traceable to a regulation article).
+3. **Per-country EES dispute procedures + template letters** (first-mover wedge).
+4. **Persistence, alerts, and exportable artifacts** (Phase 2 — what one-off AI
+   answers can't do).
+5. **Freshness infrastructure** (§11 source watching + fast single-JSON updates).
+
+Features can be cloned in a weekend; a continuously verified, publicly
+auditable legal data corpus cannot.
