@@ -2,7 +2,9 @@
   "launchStatus": "announced",
   "feeEUR": 20,
   "validityYears": 3,
-  "exemptions": [],
+  "exemptions": [
+    "The €20 fee is waived for applicants under 18 or above 70 years of age at the time of application — the authorisation itself is still required (Regulation (EU) 2018/1240, Art. 18(2))."
+  ],
   "legal_source": {
     "name": "Regulation (EU) 2018/1240 (ETIAS Regulation); fee set to EUR 20 by Commission Delegated Regulation (EU) 2025/1411 of 16 July 2025; launch window per EEAS official page",
     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32025R1411"
@@ -12,13 +14,15 @@
   "status": "verified",
   "_notes": [
     "Verified per Accuracy Policy §3 (source verification): each value below traces to the primary official sources in _sources.",
-    "exemptions is intentionally empty: the reported fee-exemption age brackets (under 18 / over 70) could not be confirmed against Regulation (EU) 2018/1240 Art. 18 — EUR-Lex blocks automated access. Tracked in data/UNVERIFIED/TODO.md; do not publish age brackets until confirmed.",
-    "Validity ends earlier if the travel document used in the application expires first (EEAS, verbatim).",
-    "Launch has slipped before — re-check before any ETIAS content update; exact start date not yet announced."
+    "Validity ends earlier if the travel document used in the application expires first (EEAS, verbatim; Reg. 2018/1240).",
+    "Launch has slipped before — re-check before any ETIAS content update; exact start date not yet announced.",
+    "EUR-Lex blocks automated fetching, but the same documents are retrievable from the Publications Office CELLAR API (publications.europa.eu/resource/celex/<CELEX>, Accept: application/xhtml+xml) — that is how the consolidated regulation text was obtained."
   ],
   "_sources": [
     { "claim": "launchStatus=announced; 'ETIAS will start operations in the last quarter of 2026'; no exact date published", "name": "EEAS — Coming visa-free to Europe (official EU)", "url": "https://www.eeas.europa.eu/eeas/coming-visa-free-country-and-travelling-europe_en", "checked": "2026-07-13" },
     { "claim": "feeEUR=20", "name": "Commission Delegated Regulation (EU) 2025/1411 of 16 July 2025 (CELEX:32025R1411), amending Regulation (EU) 2018/1240", "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32025R1411", "checked": "2026-07-13" },
+    { "claim": "feeEUR=20 confirmed in the consolidated regulation text: 'A travel authorisation fee of EUR 20 shall be paid by the applicant for each application' (Art. 18(1) as amended)", "name": "Regulation (EU) 2018/1240, consolidated version of 12 June 2026 (CELEX 02018R1240-20260612), Art. 18(1)", "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018R1240-20260612", "checked": "2026-07-13" },
+    { "claim": "Fee waived for applicants under 18 or above 70 years of age at the time of the application (Art. 18(2), verbatim)", "name": "Regulation (EU) 2018/1240, consolidated version of 12 June 2026 (CELEX 02018R1240-20260612), Art. 18(2)", "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018R1240-20260612", "checked": "2026-07-13" },
     { "claim": "CONFLICT NOTE: the EEAS page still displays the superseded EUR 7 fee; the delegated regulation is the controlling text and wins per Accuracy Policy §3.8", "name": "EEAS page (stale on this point)", "url": "https://www.eeas.europa.eu/eeas/coming-visa-free-country-and-travelling-europe_en", "checked": "2026-07-13" },
     { "claim": "validityYears=3, or until the travel document used in the application expires, whichever comes first", "name": "EEAS — Coming visa-free to Europe", "url": "https://www.eeas.europa.eu/eeas/coming-visa-free-country-and-travelling-europe_en", "checked": "2026-07-13" },
     { "claim": "Applies to visa-exempt nationals travelling to 30 participating European countries (29 Schengen + Cyprus)", "name": "EEAS — Coming visa-free to Europe", "url": "https://www.eeas.europa.eu/eeas/coming-visa-free-country-and-travelling-europe_en", "checked": "2026-07-13" }

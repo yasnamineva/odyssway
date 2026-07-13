@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import rawCountriesFile from "../../../../data/countries.json";
 import { countriesVerifiedAt } from "../../lib/countries";
 import { etias, etiasSources, type SourceNote } from "../../lib/etias";
+import { publishedNationalities } from "../../lib/nationalities";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("pages.sources");
@@ -27,7 +28,19 @@ const contentSources = [
   {
     name: "European Commission — Entry/Exit System (Migration & Home Affairs)",
     url: "https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/entry-exit-system_en",
-    usedFor: "/ees, /ees/what-to-expect",
+    usedFor: "/ees, /ees/what-to-expect, /ees/dispute-overstay",
+    checked: "2026-07-13",
+  },
+  {
+    name: "Regulation (EU) 2017/2226 (EES Regulation), Art. 52 — consolidated version of 12 June 2026",
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02017R2226-20260612",
+    usedFor: "/ees/dispute-overstay (correction rights, deadlines)",
+    checked: "2026-07-13",
+  },
+  {
+    name: "Regulation (EU) 2016/399 (Schengen Borders Code), Art. 6(1)–(2) — consolidated version of 12 October 2025",
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02016R0399-20251012",
+    usedFor: "calculator engine (core 90/180 rule, entry/exit days, permit exclusion)",
     checked: "2026-07-13",
   },
   {
@@ -88,6 +101,25 @@ export default async function SourcesPage() {
           </span>
         </h3>
         <SourceList sources={etiasSources} />
+
+        <h3 className="mt-6 text-sm font-semibold text-slate-800">
+          nationality-rules.json{" "}
+          <span className="font-normal text-xs text-slate-500">
+            — {t("verifiedLabel", { date: publishedNationalities[0]?.verified_at ?? "" })}
+          </span>
+        </h3>
+        <ul className="mt-2 space-y-2 text-sm leading-relaxed text-slate-700">
+          <li>
+            {publishedNationalities.map((r) => r.name).join(", ")} —{" "}
+            <a
+              href={publishedNationalities[0]?.legal_source.url}
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              {publishedNationalities[0]?.legal_source.name}
+            </a>
+          </li>
+        </ul>
       </section>
 
       <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">

@@ -14,21 +14,25 @@ source.
 - [x] Golden-test fixtures — transcribed directly from the official EC manual
       PDF (primary source), provenance recorded in the fixture file.
 
-## Blocked on EUR-Lex access (blocks a page automation can't finish)
+## EUR-Lex access — SOLVED via the Publications Office CELLAR API
 
-EUR-Lex rejects automated fetching (HTML and PDF endpoints return empty to
-non-browser clients). These need either a manual copy-paste of the article
-text or an alternate official mirror:
+EUR-Lex rejects automated fetching, but the same documents are served by
+CELLAR: `http://publications.europa.eu/resource/celex/<CELEX>` with
+`Accept: application/xhtml+xml` + `Accept-Language: en` (use the SPARQL
+endpoint `publications.europa.eu/webapi/rdf/sparql` to find the latest
+consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
+2026-07-13:
 
-- [ ] ETIAS fee-exemption age brackets — confirm Regulation (EU) 2018/1240
-      Art. 18 wording (reported: fee waived under 18 / over 70; authorisation
-      still required). Until confirmed, `etias.json` ships with `exemptions: []`
-      and the /etias/status page must not mention age brackets.
-- [ ] Exact article/paragraph of Regulation (EU) 2016/399 defining the 90/180
-      short stay (engine README currently cites the EC manual's restatement,
-      which is official but secondary to the regulation).
-- [ ] EES Regulation (EU) 2017/2226 — articles granting record access/
-      rectification rights (needed for `ees.json` and template letters).
+- [x] ETIAS fee EUR 20 + fee waiver under 18 / above 70 — Reg. (EU) 2018/1240
+      Art. 18(1)–(2), consolidated 02018R1240-20260612 → `etias.json`.
+- [x] Core 90/180 rule = SBC Art. 6(1); entry/exit days + permit exclusion =
+      Art. 6(2), consolidated 02016R0399-20251012 → engine README.
+- [x] EES record correction rights = Reg. (EU) 2017/2226 Art. 52 (45-day
+      reply, any member state, overstayer-list correction on evidence of
+      error), consolidated 02017R2226-20260612 → /ees/dispute-overstay.
+- [x] Visa-exempt list = Reg. (EU) 2018/1806 Annex II, consolidated
+      02018R1806-20251230 → `nationality-rules.json` (top 15 nationalities,
+      incl. footnote conditions for UA biometric passports and GB Part 3).
 
 ## Blocked on research (no primary source identified yet)
 

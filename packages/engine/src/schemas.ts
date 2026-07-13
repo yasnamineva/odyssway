@@ -70,9 +70,14 @@ export const countriesFileSchema = z
 export const nationalityRuleSchema = z
   .object({
     nationality: countryCodeSchema,
+    name: z.string().min(1),
+    /** Adjective used in copy: "ETIAS for {citizenLabel} citizens". */
+    citizenLabel: z.string().min(1),
     visaExempt: z.boolean(),
     etiasApplicable: z.boolean(),
     schengenVisaRequired: z.boolean(),
+    /** Conditions/caveats from Annex II footnotes (e.g. biometric passports only). */
+    notes: z.string().optional(),
     ...verificationFields,
   })
   .superRefine(requireVerifierWhenVerified);

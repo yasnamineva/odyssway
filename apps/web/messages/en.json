@@ -29,6 +29,10 @@
       "title": "Is ETIAS Live Yet? Launch Tracker — start date, €20 fee, validity",
       "description": "Current official status of ETIAS: expected launch window, fee, validity — tracked against EU sources and updated when they change."
     },
+    "eesDispute": {
+      "title": "EES Says You Overstayed But You Didn't? Your Correction Rights",
+      "description": "How to dispute a false EES overstay flag: your Article 52 rectification rights, the 45-day reply deadline, and the evidence to gather — sourced from the regulation."
+    },
     "about": {
       "title": "About Borderline",
       "description": "A Schengen compliance toolkit: edge-case-aware 90/180 calculator, EES guides, and rules verified against official EU sources."
@@ -65,6 +69,22 @@
     "sourcesTitle": "Sources for this page",
     "checkedOn": "Checked against official sources on {date}.",
     "ctaCalculator": "ETIAS won't change the 90/180-day limit — check your days"
+  },
+  "etiasNat": {
+    "metaTitle": "ETIAS for {citizens} Citizens — status, fee, what to do now",
+    "metaDescription": "Do {citizens} citizens need ETIAS for Europe? Current official status, the €20 fee, validity, and how the 90/180-day rule applies to {country} passport holders.",
+    "h1": "ETIAS for {citizens} citizens",
+    "verdictNotLive": "{citizens} citizens will need ETIAS — but not yet. There is nothing to do today.",
+    "verdictLive": "{citizens} citizens need an ETIAS travel authorisation before travelling.",
+    "factsTitle": "The essentials",
+    "factVisaExempt": "{country} is on the EU's visa-exempt list (Regulation (EU) 2018/1806, Annex II): no Schengen visa is needed for short stays.",
+    "factEtias": "Once ETIAS is live, {citizens} citizens will apply online before travelling to 30 European countries — it's an authorisation, not a visa.",
+    "factFee": "The application will cost €{fee} and be valid for {years} years, or until your passport expires — whichever comes first.",
+    "noteLabel": "Worth knowing",
+    "ninetyTitle": "The 90/180-day rule still applies",
+    "ninetyBody": "ETIAS doesn't change how long you can stay: {citizens} citizens remain limited to 90 days in any 180-day period in the Schengen Area — and since April 2026 the Entry/Exit System counts your days automatically.",
+    "ninetyCta": "Check your days with the calculator",
+    "sourceLine": "Visa-exemption source:"
   },
   "sourcesPage": {
     "h1": "Sources",

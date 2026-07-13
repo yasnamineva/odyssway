@@ -8,7 +8,10 @@ const routes: Array<{ path: string; expectText: string }> = [
   { path: "/rules/90-180-rule", expectText: "The short answer" },
   { path: "/ees", expectText: "Entry/Exit System" },
   { path: "/ees/what-to-expect", expectText: "no more passport stamps" },
+  { path: "/ees/dispute-overstay", expectText: "Article 52" },
   { path: "/etias/status", expectText: "ETIAS launch tracker" },
+  { path: "/etias/us", expectText: "ETIAS for US citizens" },
+  { path: "/etias/ua", expectText: "biometric passports" },
   { path: "/about", expectText: "About" },
   { path: "/methodology", expectText: "primary official source" },
   { path: "/sources", expectText: "countries.json" },
@@ -29,6 +32,11 @@ test("/etias/status renders the verified data values", async ({ page }) => {
   await expect(page.locator("body")).toContainText("Not live yet");
   await expect(page.locator("body")).toContainText("€20");
   await expect(page.locator("body")).toContainText("last quarter of 2026");
+});
+
+test("unknown nationality pages 404 instead of rendering thin content", async ({ page }) => {
+  const response = await page.goto("/etias/xx");
+  expect(response?.status()).toBe(404);
 });
 
 test("sitemap and robots respond", async ({ request }) => {
