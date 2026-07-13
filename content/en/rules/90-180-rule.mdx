@@ -1,0 +1,68 @@
+{/* Facts sourced from: EC User Manual for the Short-Stay Schengen Calculator
+    (https://ec.europa.eu/assets/home/visa-calculator/docs/short_stay_schengen_calculator_user_manual_en.pdf),
+    checked 2026-07-12. Per-country data: data/countries.json (checked 2026-07-13). */}
+
+# The Schengen 90/180-day rule, explained
+
+> **The short answer:** you can spend at most **90 days** in the Schengen Area
+> within **any 180-day period**. The window is rolling — there is no reset date.
+> Your entry day and your exit day both count as full days. Use our
+> [calculator](/calculator) to check your own dates.
+
+## How the rolling window works
+
+On **every single day** of your stay, look back 180 days (that day included).
+Inside that window, your days of presence in the Schengen Area must not exceed 90.
+
+This is why the rule confuses people: it's not "90 days per calendar half-year"
+and it doesn't reset when a new year starts. Days only stop counting against you
+when they become older than 180 days. One useful consequence, straight from the
+European Commission's guidance: after **90 days of uninterrupted absence**, you
+can always stay for up to 90 days again.
+
+## What counts as a day
+
+- The **day you enter** and the **day you exit** each count as a full day —
+  even if you land at 23:50.
+- Days in **any Schengen country** count toward the same shared limit: hopping
+  from Spain to France doesn't restart anything.
+- **Iceland, Liechtenstein, Norway and Switzerland** are not in the EU, but they
+  are in Schengen — days there count.
+- **Ireland and Cyprus** are in the EU but not in the border-free Schengen area
+  — days there do **not** count. Days in the **UK** don't count either.
+- Days in Bulgaria, Romania or Croatia **before** those countries joined
+  Schengen don't count. Our calculator handles this automatically when you pick
+  the country ([full country data and sources](/sources)).
+
+## A worked example (from the EU's own manual)
+
+A visa-exempt traveller visits for one day on 1 January 2024, then enters again
+on 1 June 2024 for a long stay. On 14 June, the 180-day window contains
+15 days of presence — fine. But staying continuously, they reach 90 days in the
+window on **29 August 2024**, which is their last allowed day. Staying to
+20 September, as planned, would mean overstaying from 30 August.
+
+Our engine reproduces this and every other worked example from the official
+manual in its automated test suite.
+
+## Days that don't consume the allowance
+
+Stays under a **residence permit** or a national **long-stay (D) visa** are not
+counted toward the 90/180 limit in the state that issued them. (Days a permit
+holder spends in *other* Schengen countries do count — a common and expensive
+misunderstanding. A dedicated guide is coming.)
+
+## What happens if you overstay
+
+Since April 2026 the EU's Entry/Exit System records entries and exits digitally
+and **detects overstays automatically** — see [what to expect at the border](/ees/what-to-expect).
+Consequences vary by country and circumstances; we don't provide legal advice.
+
+---
+
+**Sources:** [European Commission — User Manual for the Short-Stay Schengen
+Calculator](https://ec.europa.eu/assets/home/visa-calculator/docs/short_stay_schengen_calculator_user_manual_en.pdf)
+(rule mechanics, worked example); [data sources for country membership](/sources).
+Checked against official sources on 2026-07-13. This page is informational only
+— not legal advice. Cross-check your dates with the
+[official EU calculator](https://ec.europa.eu/assets/home/visa-calculator/calculator.htm?lang=en).

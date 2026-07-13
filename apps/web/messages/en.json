@@ -6,8 +6,73 @@
   "header": {
     "brand": "Borderline",
     "nav": {
-      "calculator": "Calculator"
+      "calculator": "Calculator",
+      "rule": "90/180 rule",
+      "ees": "EES",
+      "etias": "ETIAS"
     }
+  },
+  "pages": {
+    "rule": {
+      "title": "Schengen 90/180 Day Rule Explained — rolling window, entry/exit days, edge cases",
+      "description": "Plain-language guide to the Schengen 90/180-day rule: how the rolling window works, which countries count, and the edge cases — verified against official EU sources."
+    },
+    "eesHub": {
+      "title": "EU Entry/Exit System (EES) Explained — digital borders, biometrics, overstay detection",
+      "description": "What the EES is, what data it records about you, and why automated overstay detection changes how carefully you must count your Schengen days."
+    },
+    "eesWhat": {
+      "title": "EES at the Border: What to Expect — fingerprints, facial image, no more stamps",
+      "description": "What happens at your first EES border crossing and every one after: biometric enrolment, automated gates, and what the system records."
+    },
+    "etias": {
+      "title": "Is ETIAS Live Yet? Launch Tracker — start date, €20 fee, validity",
+      "description": "Current official status of ETIAS: expected launch window, fee, validity — tracked against EU sources and updated when they change."
+    },
+    "about": {
+      "title": "About Borderline",
+      "description": "A Schengen compliance toolkit: edge-case-aware 90/180 calculator, EES guides, and rules verified against official EU sources."
+    },
+    "methodology": {
+      "title": "How We Verify Our Information",
+      "description": "Our source policy: primary official sources only, per-claim citations, dated checks, automated freshness monitoring — and its limits, stated plainly."
+    },
+    "sources": {
+      "title": "Sources",
+      "description": "Every official source behind our rule data and guides, with the date each value was last checked."
+    }
+  },
+  "etias": {
+    "h1": "ETIAS launch tracker",
+    "status": {
+      "announced": "Not live yet",
+      "live": "Live",
+      "grace_period": "Live — grace period"
+    },
+    "statusDetail": {
+      "announced": "ETIAS is not operational. You cannot apply yet, and no exact start date has been announced.",
+      "live": "ETIAS is operational. Visa-exempt travellers need an authorisation before travelling.",
+      "grace_period": "ETIAS is operational with a transitional grace period."
+    },
+    "expectedWindow": "Officially expected to start operating in the last quarter of 2026. The EU will announce the exact date ahead of launch, and this page will update.",
+    "whatIs": "ETIAS will be a pre-travel authorisation for visa-exempt travellers (like US, UK, Canadian and Australian citizens) visiting 30 European countries — the 29 Schengen countries plus Cyprus. It's an online application, not a visa.",
+    "feeLabel": "Fee",
+    "feeValue": "€{fee}",
+    "feeNote": "Set by Commission Delegated Regulation (EU) 2025/1411. Some travellers will be exempt from the fee.",
+    "validityLabel": "Validity",
+    "validityValue": "{years} years — or until the travel document used in the application expires, whichever comes first",
+    "scamNote": "Applications are not open. Any site offering to submit or 'pre-register' an ETIAS application today is not official — the EU's own travel site is the only authoritative channel.",
+    "sourcesTitle": "Sources for this page",
+    "checkedOn": "Checked against official sources on {date}.",
+    "ctaCalculator": "ETIAS won't change the 90/180-day limit — check your days"
+  },
+  "sourcesPage": {
+    "h1": "Sources",
+    "intro": "Every value we publish is checked against a primary official source and dated. This page lists them all.",
+    "dataTitle": "Rule data",
+    "contentTitle": "Guides and pages",
+    "checkedLabel": "Checked {date}",
+    "verifiedLabel": "Dataset last verified {date}"
   },
   "home": {
     "h1": "Schengen 90/180 day calculator",
@@ -57,6 +122,24 @@
     "estimatedNote": "Results are estimates for information only, not an official determination and not legal advice. Border authorities decide authorised stay. Cross-check with the official EU calculator and verify with official authorities.",
     "officialCalculator": "Official EU short-stay calculator"
   },
+  "rulesFaq": [
+    {
+      "q": "How does the Schengen 90/180-day rule work?",
+      "a": "You may spend at most 90 days in the Schengen Area within any 180-day period. The window is rolling: on each day of your stay, the previous 180 days (that day included) must contain no more than 90 days of presence. There is no fixed reset date."
+    },
+    {
+      "q": "Do arrival and departure days count as days of stay?",
+      "a": "Yes. The day you enter and the day you exit each count as a full day, regardless of the time of day."
+    },
+    {
+      "q": "Do days in Ireland, Cyprus or the UK count toward the 90 days?",
+      "a": "No — they are outside the border-free Schengen Area, so days there never count. Days in Iceland, Liechtenstein, Norway and Switzerland do count, because those countries are in Schengen."
+    },
+    {
+      "q": "When can I come back after using all 90 days?",
+      "a": "After 90 days of uninterrupted absence you can always stay for up to 90 days again. If you used your days across several trips, the earliest safe re-entry date depends on your exact dates — a rolling-window calculator gives you the date."
+    }
+  ],
   "explainer": {
     "title": "How the 90/180 rule works",
     "p1": "Visitors under the short-stay rules may spend at most 90 days in the Schengen Area within any 180-day period. The window is rolling: on every single day of your stay, the previous 180 days must contain no more than 90 days of presence.",
@@ -68,6 +151,9 @@
   "footer": {
     "disclaimer": "Informational only — not legal advice and not an official determination of your right to stay. Always verify with official authorities. We are not affiliated with the European Union.",
     "officialCalculator": "Official EU calculator",
-    "affiliateNote": "This site currently contains no advertising or affiliate links."
+    "affiliateNote": "This site currently contains no advertising or affiliate links.",
+    "about": "About",
+    "methodology": "How we verify",
+    "sources": "Sources"
   }
 }

@@ -39,6 +39,11 @@ const SOURCES: WatchedSource[] = [
     usedBy: "data/etias.json, /etias/status (verify URL is still canonical)",
   },
   {
+    id: "ec-ees-policy-page",
+    url: "https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/entry-exit-system_en",
+    usedBy: "/ees and /ees/what-to-expect content (rollout dates, data collected)",
+  },
+  {
     id: "ec-schengen-area-page",
     url: "https://home-affairs.ec.europa.eu/policies/schengen/schengen-area_en",
     usedBy: "data/countries.json (membership list, Cyprus status)",

@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@borderline/engine": "workspace:*",
+    "@mdx-js/loader": "^3.1.1",
+    "@mdx-js/react": "^3.1.1",
+    "@next/mdx": "^15.5.20",
     "next": "^15.5.0",
     "next-intl": "^4.3.0",
     "react": "^19.1.0",
@@ -17,6 +20,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.0",
+    "@types/mdx": "^2.0.14",
     "@types/node": "^24.0.0",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.0",
