@@ -11,13 +11,22 @@ export default async function HomePage() {
   return (
     <div className="space-y-8">
       <section>
-        <h1 className="text-2xl font-bold tracking-tight text-slate-900">
+        <h1 className="text-3xl font-bold tracking-tight text-slate-900">
           {t("home.h1")}
         </h1>
-        <p className="mt-2 text-sm leading-relaxed text-slate-600">{t("home.sub")}</p>
+        <p className="mt-3 text-sm leading-relaxed text-slate-600">{t("home.sub")}</p>
         <p className="mt-2 text-xs leading-relaxed text-slate-500">
           {t("home.crossCheck")}
         </p>
+      </section>
+
+      <section className="grid grid-cols-3 divide-x divide-slate-200 rounded-2xl border border-slate-200 bg-white shadow-sm">
+        {(t.raw("home.stats") as Array<{ n: string; label: string }>).map((s, i) => (
+          <div key={i} className="px-3 py-4 text-center">
+            <div className="font-display text-2xl font-bold text-slate-900">{s.n}</div>
+            <div className="mt-1 text-[11px] leading-snug text-slate-500">{s.label}</div>
+          </div>
+        ))}
       </section>
 
       <Calculator />

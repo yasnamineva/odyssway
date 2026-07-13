@@ -28,7 +28,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     strong: (props) => <strong className="font-semibold text-slate-900" {...props} />,
     blockquote: (props) => (
       <blockquote
-        className="mt-4 rounded-xl border border-blue-100 bg-blue-50 p-4 text-sm leading-relaxed text-slate-800 [&>p]:mt-0"
+        className="mt-4 rounded-r-xl border-l-4 border-blue-500 bg-blue-50 p-4 text-sm leading-relaxed text-slate-800 [&>p]:mt-0"
         {...props}
       />
     ),

@@ -421,7 +421,7 @@ function StatusCard({
       <h2 className="mb-3 text-sm font-semibold text-slate-900">{t("statusTitle")}</h2>
       <div className="mb-4 grid grid-cols-2 gap-3">
         <div className="rounded-xl bg-slate-50 p-3 text-center">
-          <div data-testid="days-used" className="text-3xl font-bold tabular-nums text-slate-900">
+          <div data-testid="days-used" className="font-display text-3xl font-bold tabular-nums text-slate-900">
             {s.daysUsed}
           </div>
           <div className="text-xs text-slate-500">{t("daysUsed")}</div>
@@ -433,7 +433,7 @@ function StatusCard({
         >
           <div
             data-testid="days-remaining"
-            className={`text-3xl font-bold tabular-nums ${
+            className={`font-display text-3xl font-bold tabular-nums ${
               s.overstayDays > 0 ? "text-red-700" : "text-emerald-700"
             }`}
           >

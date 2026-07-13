@@ -1,8 +1,42 @@
 @import "tailwindcss";
 
+/*
+ * Visual direction (design/references moodboard): trust-professional
+ * editorial — warm paper surfaces, deep ink-navy, serif display headings,
+ * restrained accents. Implemented by re-mapping the default slate/blue
+ * scales so every component inherits the palette consistently.
+ */
 @theme {
   --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+    Cambria, "Times New Roman", serif;
+
+  /* Warm paper → ink-navy ramp (replaces cool slate) */
+  --color-slate-50: #f7f4ec;
+  --color-slate-100: #efe9dc;
+  --color-slate-200: #e3dbc7;
+  --color-slate-300: #cfc4ab;
+  --color-slate-400: #9b948a;
+  --color-slate-500: #6d6c64;
+  --color-slate-600: #545760;
+  --color-slate-700: #3e4450;
+  --color-slate-800: #2a3444;
+  --color-slate-900: #1c2a3a;
+
+  /* Navy tints for informational surfaces and focus states */
+  --color-blue-50: #eef1f6;
+  --color-blue-100: #dce3ee;
+  --color-blue-200: #b9c8de;
+  --color-blue-500: #27436b;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+  }
 }
 
 html {

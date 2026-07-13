@@ -37,48 +37,60 @@ export default async function RootLayout({
       </head>
       <body className="bg-slate-50 text-slate-900 antialiased">
         <NextIntlClientProvider messages={messages}>
-          <div className="mx-auto flex min-h-dvh max-w-2xl flex-col px-4">
-            <header className="flex flex-wrap items-center justify-between gap-2 py-5">
-              <a href="/" className="text-lg font-bold tracking-tight">
-                {t("header.brand")}
-              </a>
-              <nav className="flex flex-wrap gap-x-4 gap-y-1">
-                <a href="/calculator" className="text-sm font-medium text-slate-600 hover:text-slate-900">
-                  {t("header.nav.calculator")}
-                </a>
-                <a href="/rules/90-180-rule" className="text-sm font-medium text-slate-600 hover:text-slate-900">
-                  {t("header.nav.rule")}
-                </a>
-                <a href="/ees" className="text-sm font-medium text-slate-600 hover:text-slate-900">
-                  {t("header.nav.ees")}
-                </a>
-                <a href="/etias/status" className="text-sm font-medium text-slate-600 hover:text-slate-900">
-                  {t("header.nav.etias")}
-                </a>
-              </nav>
-            </header>
-            <main className="flex-1 pb-12">{children}</main>
-            <footer className="space-y-2 border-t border-slate-200 py-6 text-xs leading-relaxed text-slate-500">
-              <p>{t("footer.disclaimer")}</p>
-              <p className="flex flex-wrap gap-x-4 gap-y-1">
-                <a href="/about" className="underline hover:text-slate-700">
-                  {t("footer.about")}
-                </a>
-                <a href="/methodology" className="underline hover:text-slate-700">
-                  {t("footer.methodology")}
-                </a>
-                <a href="/sources" className="underline hover:text-slate-700">
-                  {t("footer.sources")}
-                </a>
+          <div className="flex min-h-dvh flex-col">
+            <header className="border-b border-slate-200">
+              <div className="mx-auto flex max-w-2xl flex-wrap items-baseline justify-between gap-2 px-4 py-5">
                 <a
-                  href={OFFICIAL_CALCULATOR_URL}
-                  rel="noopener noreferrer"
-                  className="underline hover:text-slate-700"
+                  href="/"
+                  className="font-display text-xl font-bold tracking-tight text-slate-900"
                 >
-                  {t("footer.officialCalculator")}
+                  {t("header.brand")}
                 </a>
-              </p>
-              <p>{t("footer.affiliateNote")}</p>
+                <nav className="flex flex-wrap gap-x-4 gap-y-1">
+                  <a href="/calculator" className="text-[13px] font-medium text-slate-600 hover:text-slate-900">
+                    {t("header.nav.calculator")}
+                  </a>
+                  <a href="/rules/90-180-rule" className="text-[13px] font-medium text-slate-600 hover:text-slate-900">
+                    {t("header.nav.rule")}
+                  </a>
+                  <a href="/ees" className="text-[13px] font-medium text-slate-600 hover:text-slate-900">
+                    {t("header.nav.ees")}
+                  </a>
+                  <a href="/etias/status" className="text-[13px] font-medium text-slate-600 hover:text-slate-900">
+                    {t("header.nav.etias")}
+                  </a>
+                </nav>
+              </div>
+            </header>
+            <main className="mx-auto w-full max-w-2xl flex-1 px-4 pt-8 pb-12">
+              {children}
+            </main>
+            <footer className="bg-slate-900 text-slate-300">
+              <div className="mx-auto max-w-2xl space-y-3 px-4 py-8 text-xs leading-relaxed">
+                <p className="font-display text-base text-slate-100">
+                  {t("header.brand")}
+                </p>
+                <p>{t("footer.disclaimer")}</p>
+                <p className="flex flex-wrap gap-x-4 gap-y-1">
+                  <a href="/about" className="underline hover:text-white">
+                    {t("footer.about")}
+                  </a>
+                  <a href="/methodology" className="underline hover:text-white">
+                    {t("footer.methodology")}
+                  </a>
+                  <a href="/sources" className="underline hover:text-white">
+                    {t("footer.sources")}
+                  </a>
+                  <a
+                    href={OFFICIAL_CALCULATOR_URL}
+                    rel="noopener noreferrer"
+                    className="underline hover:text-white"
+                  >
+                    {t("footer.officialCalculator")}
+                  </a>
+                </p>
+                <p className="text-slate-400">{t("footer.affiliateNote")}</p>
+              </div>
             </footer>
           </div>
         </NextIntlClientProvider>

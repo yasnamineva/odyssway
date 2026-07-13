@@ -97,7 +97,12 @@
   "home": {
     "h1": "Schengen 90/180 day calculator",
     "sub": "Check how many of your 90 days you've used, whether a planned trip fits, and the earliest date you can enter again.",
-    "crossCheck": "Our engine reproduces every worked example from the official EU calculator's user manual — and you can always cross-check with the official calculator."
+    "crossCheck": "Our engine reproduces every worked example from the official EU calculator's user manual — and you can always cross-check with the official calculator.",
+    "stats": [
+      { "n": "90/180", "label": "the EU rule, computed exactly as Art. 6(1) defines it" },
+      { "n": "29", "label": "Schengen countries covered, accession dates included" },
+      { "n": "0", "label": "trip details stored on our servers — it all stays in your browser" }
+    ]
   },
   "calc": {
     "scopeTitle": "What to enter",
