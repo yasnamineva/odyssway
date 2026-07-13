@@ -1,0 +1,38 @@
+name: Watch official sources
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm watch:sources
+      - name: Open PR when sources changed
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "chore: official source change report"
+          title: "Official source change detected — human review required"
+          body: >
+            scripts/watch-sources.ts detected changes in watched official
+            sources. Review the report in data/UNVERIFIED/, update affected
+            data files, and bump verified_at.
+          branch: source-watch/report
+          add-paths: |
+            data/source-hashes.json
+            data/UNVERIFIED/source-changes-*.md

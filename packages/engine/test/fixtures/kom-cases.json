@@ -1,0 +1,75 @@
+{
+  "_provenance": {
+    "source": "User Manual for the Short-Stay 'Schengen' Calculator, European Commission, Section 6 'Examples'",
+    "url": "https://ec.europa.eu/assets/home/visa-calculator/docs/short_stay_schengen_calculator_user_manual_en.pdf",
+    "retrieved_at": "2026-07-12",
+    "note": "Worked examples transcribed from the official manual. Our engine must match the official calculator on all of them (AGENTS.md §6.6). Expected values below are stated verbatim in the manual; derived fields (exact exit dates) follow arithmetically from the manual's day counts."
+  },
+  "example1": {
+    "description": "Person not subject to the visa requirement: enters 1 Jan 2024 and leaves same day; enters again 1 Jun 2024 and stays until 20 Sep 2024.",
+    "trips": [
+      { "entry": "2024-01-01", "exit": "2024-01-01" },
+      { "entry": "2024-06-01", "exit": "2024-09-20" }
+    ],
+    "statusCases": [
+      {
+        "id": "KOM-1.1",
+        "manualText": "On 14.6.2024: over the last 180 days (18.12.2023 - 14.6.2024) the person had stayed 1 day + 14 days = 15 days; no overstay.",
+        "onDate": "2024-06-14",
+        "expected": { "windowStart": "2023-12-18", "daysUsed": 15, "overstayDays": 0 }
+      },
+      {
+        "id": "KOM-1.2",
+        "manualText": "On 29.8.2024: over the last 180 days (3.3.2024 - 29.8.2024) the person had stayed 90 days (1.6.2024 - 29.8.2024); 29.8.2024 = last day of authorised stay.",
+        "onDate": "2024-08-29",
+        "expected": { "windowStart": "2024-03-03", "daysUsed": 90, "overstayDays": 0 }
+      }
+    ],
+    "planCase": {
+      "id": "KOM-1.2-plan",
+      "manualText": "29.8.2024 is the last day of authorised stay for the stay begun 1.6.2024, so staying until 20.9.2024 is an overstay beginning 30.8.2024.",
+      "plannedEntry": "2024-06-01",
+      "plannedExit": "2024-09-20",
+      "priorTrips": [{ "entry": "2024-01-01", "exit": "2024-01-01" }],
+      "expected": {
+        "compliant": false,
+        "firstViolationDay": "2024-08-30",
+        "latestSafeExit": "2024-08-29"
+      }
+    }
+  },
+  "example2": {
+    "description": "Visa holder (90/180 multiple-entry visa): stays 1-10 Jan 2024 (10 days), 1-30 Mar 2024 (30 days), 1 May - 9 Jun 2024 (40 days).",
+    "trips": [
+      { "entry": "2024-01-01", "exit": "2024-01-10" },
+      { "entry": "2024-03-01", "exit": "2024-03-30" },
+      { "entry": "2024-05-01", "exit": "2024-06-09" }
+    ],
+    "maxStayCases": [
+      {
+        "id": "KOM-2.1",
+        "manualText": "On 19.6.2024: the person might enter for a consecutive 20 days maximum (10 leftover days 19-28.6, plus 10 days as the 1-10 Jan stay rolls out of the window from 29.6).",
+        "entry": "2024-06-19",
+        "expected": { "maxDays": 20, "lastAllowedDay": "2024-07-08" }
+      },
+      {
+        "id": "KOM-2.2",
+        "manualText": "On 7.8.2024: still 20 consecutive days maximum; on 26.8.2024 the person should leave, reaching 90 days in the window.",
+        "entry": "2024-08-07",
+        "expected": { "maxDays": 20, "lastAllowedDay": "2024-08-26" }
+      },
+      {
+        "id": "KOM-2.3",
+        "manualText": "On 8.8.2024: the person might enter for a consecutive 50 days maximum (10 leftover + 10 from the January stay + 30 from the March stay rolling out from 28.8).",
+        "entry": "2024-08-08",
+        "expected": { "maxDays": 50, "lastAllowedDay": "2024-09-26" }
+      },
+      {
+        "id": "KOM-2.4",
+        "manualText": "On 8.9.2024: the person might enter for a consecutive 90 days maximum; 90 days of absence (10.6.2024 - 7.9.2024) always allows a new 90-day stay.",
+        "entry": "2024-09-08",
+        "expected": { "maxDays": 90, "lastAllowedDay": "2024-12-06" }
+      }
+    ]
+  }
+}

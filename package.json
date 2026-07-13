@@ -1,0 +1,19 @@
+{
+  "name": "borderline",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "validate:data": "tsx scripts/validate-data.ts",
+    "watch:sources": "tsx scripts/watch-sources.ts",
+    "ci": "pnpm typecheck && pnpm test && pnpm validate:data && pnpm build"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.2",
+    "zod": "^4.1.0"
+  }
+}

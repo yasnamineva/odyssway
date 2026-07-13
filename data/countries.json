@@ -1,0 +1,55 @@
+{
+  "legal_source": {
+    "name": "EC Migration & Home Affairs — Schengen area (membership); Council Decisions (EU) 2022/2451 and 2024/210 (accessions); EC short-stay calculator manual §1 (day-counting exclusions)",
+    "url": "https://home-affairs.ec.europa.eu/policies/schengen/schengen-area_en"
+  },
+  "verified_at": "2026-07-13",
+  "verified_by": "agent:claude-fable-5",
+  "status": "verified",
+  "_notes": [
+    "Verified per Accuracy Policy §3 (source verification, no human review — owner decision 2026-07-13): every value below traces to the primary official sources in _sources.",
+    "schengenSince = the date the state began fully applying the Schengen acquis (visas, day counting) — for BG/RO that is 2024-03-31 per Council Decision (EU) 2024/210, NOT the 2025-01-01 land-border date."
+  ],
+  "_sources": [
+    { "claim": "29 Schengen members: 25 EU + IS/NO/CH/LI; Cyprus integration underway; Ireland opt-out", "name": "EC Migration & Home Affairs — Schengen area", "url": "https://home-affairs.ec.europa.eu/policies/schengen/schengen-area_en", "checked": "2026-07-13" },
+    { "claim": "Croatia: full application of the Schengen acquis from 2023-01-01", "name": "Council Decision (EU) 2022/2451", "url": "https://eur-lex.europa.eu/eli/dec/2022/2451/oj", "checked": "2026-07-13" },
+    { "claim": "Bulgaria & Romania: full application of the Schengen acquis from 2024-03-31 (air/sea internal checks lifted)", "name": "Council Decision (EU) 2024/210; Council press release 2023-12-30", "url": "https://www.consilium.europa.eu/en/press/press-releases/2023/12/30/schengen-area-council-takes-move-towards-lifting-border-controls-with-bulgaria-and-romania/", "checked": "2026-07-13" },
+    { "claim": "Bulgaria & Romania: internal land border checks lifted 2025-01-01 (full membership; no effect on day counting)", "name": "EC Migration & Home Affairs news, 2025-01-03", "url": "https://home-affairs.ec.europa.eu/news/bulgaria-and-romania-join-schengen-area-2025-01-03_en", "checked": "2026-07-13" },
+    { "claim": "Stays in Cyprus, Ireland and the UK do not count toward 90/180; stays in IS/LI/NO/CH do", "name": "EC short-stay calculator user manual, §1", "url": "https://ec.europa.eu/assets/home/visa-calculator/docs/short_stay_schengen_calculator_user_manual_en.pdf", "checked": "2026-07-12" },
+    { "claim": "ETIAS covers 30 participating European countries (29 Schengen + Cyprus), hence etiasRequired=true for CY", "name": "EEAS — Coming visa-free to Europe (official EU)", "url": "https://www.eeas.europa.eu/eeas/coming-visa-free-country-and-travelling-europe_en", "checked": "2026-07-13" }
+  ],
+  "countries": [
+    { "code": "AT", "name": "Austria", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "BE", "name": "Belgium", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "BG", "name": "Bulgaria", "schengenMember": true, "schengenSince": "2024-03-31", "euMember": true, "etiasRequired": true, "notes": "Full Schengen acquis applied from 31 Mar 2024 (Council Decision (EU) 2024/210); land border checks lifted 1 Jan 2025. Stays before 31 Mar 2024 do not count toward Schengen 90/180." },
+    { "code": "HR", "name": "Croatia", "schengenMember": true, "schengenSince": "2023-01-01", "euMember": true, "etiasRequired": true, "notes": "Full Schengen acquis applied from 1 Jan 2023 (Council Decision (EU) 2022/2451). Stays before that date do not count toward Schengen 90/180." },
+    { "code": "CZ", "name": "Czech Republic", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "DK", "name": "Denmark", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "EE", "name": "Estonia", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "FI", "name": "Finland", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "FR", "name": "France", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "DE", "name": "Germany", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "GR", "name": "Greece", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "HU", "name": "Hungary", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "IS", "name": "Iceland", "schengenMember": true, "euMember": false, "etiasRequired": true, "notes": "Non-EU Schengen member — short stays count toward 90/180 (EC manual §1)." },
+    { "code": "IT", "name": "Italy", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "LV", "name": "Latvia", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "LI", "name": "Liechtenstein", "schengenMember": true, "euMember": false, "etiasRequired": true, "notes": "Non-EU Schengen member — short stays count toward 90/180 (EC manual §1)." },
+    { "code": "LT", "name": "Lithuania", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "LU", "name": "Luxembourg", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "MT", "name": "Malta", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "NL", "name": "Netherlands", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "NO", "name": "Norway", "schengenMember": true, "euMember": false, "etiasRequired": true, "notes": "Non-EU Schengen member — short stays count toward 90/180 (EC manual §1)." },
+    { "code": "PL", "name": "Poland", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "PT", "name": "Portugal", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "RO", "name": "Romania", "schengenMember": true, "schengenSince": "2024-03-31", "euMember": true, "etiasRequired": true, "notes": "Full Schengen acquis applied from 31 Mar 2024 (Council Decision (EU) 2024/210); land border checks lifted 1 Jan 2025. Stays before 31 Mar 2024 do not count toward Schengen 90/180." },
+    { "code": "SK", "name": "Slovakia", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "SI", "name": "Slovenia", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "ES", "name": "Spain", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "SE", "name": "Sweden", "schengenMember": true, "euMember": true, "etiasRequired": true },
+    { "code": "CH", "name": "Switzerland", "schengenMember": true, "euMember": false, "etiasRequired": true, "notes": "Non-EU Schengen member — short stays count toward 90/180 (EC manual §1)." },
+    { "code": "CY", "name": "Cyprus", "schengenMember": false, "euMember": true, "etiasRequired": true, "notes": "EU member, not yet applying Schengen in full ('integration underway' per EC, checked 2026-07-13) — stays do NOT count toward 90/180 (EC manual §1). ETIAS DOES apply: the only non-Schengen country among the 30 ETIAS countries (EEAS)." },
+    { "code": "IE", "name": "Ireland", "schengenMember": false, "euMember": true, "etiasRequired": false, "notes": "EU member, opt-out from Schengen — stays do NOT count toward 90/180 (EC manual §1)." },
+    { "code": "GB", "name": "United Kingdom", "schengenMember": false, "euMember": false, "etiasRequired": false, "notes": "Stays do not count toward 90/180 (EC manual §1). UK runs its own 180-day visitor rule — Phase 2 multi-jurisdiction ledger." }
+  ]
+}

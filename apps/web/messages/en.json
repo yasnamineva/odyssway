@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "title": "Schengen 90/180 Day Calculator — edge cases done right",
+    "description": "Free Schengen 90/180 day rule calculator. Check how many days you have left, plan trips, and find your next safe entry date. Built to match the official EU calculator."
+  },
+  "header": {
+    "brand": "Borderline",
+    "nav": {
+      "calculator": "Calculator"
+    }
+  },
+  "home": {
+    "h1": "Schengen 90/180 day calculator",
+    "sub": "Check how many of your 90 days you've used, whether a planned trip fits, and the earliest date you can enter again.",
+    "crossCheck": "Our engine reproduces every worked example from the official EU calculator's user manual — and you can always cross-check with the official calculator."
+  },
+  "calc": {
+    "scopeTitle": "What to enter",
+    "scopeNote": "Add your trips to Europe, including your current one if you're there now. Picking the country is optional but recommended: stays in non-Schengen countries (for example Ireland, Cyprus or the UK) are automatically excluded from the 90-day count, and recent joiners like Bulgaria, Romania and Croatia are handled correctly for dates before they joined Schengen.",
+    "scopeSource": "Rule source: European Commission, short-stay calculator user manual",
+    "dataChecked": "Country data checked against official sources on {date}.",
+    "pastTripsTitle": "Your stays (last 12 months)",
+    "entry": "Entry date",
+    "exit": "Exit date",
+    "country": "Country (optional)",
+    "countryUnspecified": "Schengen Area — country not specified",
+    "countryGroupSchengen": "Schengen countries (days count)",
+    "countryGroupNonSchengen": "Outside Schengen (days don't count)",
+    "exclusionNonSchengen": "{country}: {days, plural, one {# day} other {# days}} excluded — outside the Schengen Area.",
+    "exclusionPreAccession": "{country}: {days, plural, one {# day} other {# days}} excluded — before this country joined the Schengen Area.",
+    "addTrip": "Add another stay",
+    "removeTrip": "Remove stay",
+    "rowOrderError": "Entry date is after exit date.",
+    "checkDateLabel": "Check my status on",
+    "statusTitle": "Your status",
+    "daysUsed": "days used",
+    "daysRemaining": "days remaining",
+    "windowLabel": "180-day window: {start} – {end}",
+    "statusSentence": "Between {start} and {end} you've used {used, plural, one {# day} other {# days}} of your 90. You have {remaining, plural, one {# day} other {# days}} remaining (estimated).",
+    "overstayWarning": "This exceeds the 90-day limit by {days, plural, one {# day} other {# days}} within this window. If these dates are correct, contact the border authorities of the country you're in for guidance.",
+    "maxStaySentence": "Entering (or staying) on {entry}, you could remain until {exit} — {days, plural, one {# day} other {# days}} (estimated).",
+    "maxStayBlocked": "You can't be in the Schengen Area on {entry} without breaking the 90/180 rule.",
+    "nextSafeEntry": "Next safe entry date: {date}",
+    "planTitle": "Plan a future trip",
+    "planHint": "Optional — check whether a specific trip fits your remaining days.",
+    "planEntry": "Planned entry",
+    "planExit": "Planned exit",
+    "planCompliant": "Your {days, plural, one {#-day} other {#-day}} trip from {entry} to {exit} fits. After it you'd have {remaining, plural, one {# day} other {# days}} left in that window (estimated).",
+    "planViolation": "As planned, this trip breaks the 90/180 rule on {violation}. Entering on {entry}, your latest safe exit is {exit}.",
+    "planNoEntry": "You can't enter on {entry} at all — your window is already full that day.",
+    "planEarliestEntry": "Earliest entry date for a {days, plural, one {#-day} other {#-day}} trip: {date}",
+    "share": "Copy shareable link",
+    "shareCopied": "Link copied — your dates are encoded in the URL, nothing is stored on our servers.",
+    "reset": "Clear all",
+    "computeError": "We can't compute this case yet: {message}",
+    "estimatedTitle": "Estimates, not decisions",
+    "estimatedNote": "Results are estimates for information only, not an official determination and not legal advice. Border authorities decide authorised stay. Cross-check with the official EU calculator and verify with official authorities.",
+    "officialCalculator": "Official EU short-stay calculator"
+  },
+  "explainer": {
+    "title": "How the 90/180 rule works",
+    "p1": "Visitors under the short-stay rules may spend at most 90 days in the Schengen Area within any 180-day period. The window is rolling: on every single day of your stay, the previous 180 days must contain no more than 90 days of presence.",
+    "p2": "Your entry day and your exit day both count as full days of stay. There is no reset when a new calendar year starts — only days rolling out of the 180-day window give you allowance back.",
+    "p3": "Not every day in Europe counts: stays in non-Schengen countries (Ireland, Cyprus, the UK) never consume your allowance, and days in Bulgaria, Romania or Croatia before their Schengen accession don't either — pick the country on each trip and the calculator handles this. Days under a residence permit or long-stay (D) visa in the issuing state are also excluded; support for entering those is coming next.",
+    "sourceLabel": "Source: European Commission, User Manual for the Short-Stay Schengen Calculator",
+    "lastVerified": "Rules checked against the official sources linked above on {date}."
+  },
+  "footer": {
+    "disclaimer": "Informational only — not legal advice and not an official determination of your right to stay. Always verify with official authorities. We are not affiliated with the European Union.",
+    "officialCalculator": "Official EU calculator",
+    "affiliateNote": "This site currently contains no advertising or affiliate links."
+  }
+}
