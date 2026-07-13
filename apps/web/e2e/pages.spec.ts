@@ -12,6 +12,10 @@ const routes: Array<{ path: string; expectText: string }> = [
   { path: "/etias/status", expectText: "ETIAS launch tracker" },
   { path: "/etias/us", expectText: "ETIAS for US citizens" },
   { path: "/etias/ua", expectText: "biometric passports" },
+  { path: "/ees/data-access/fr", expectText: "CNIL" },
+  { path: "/ees/data-access/de", expectText: "45 days" },
+  { path: "/guides/dual-citizens", expectText: "not a Union citizen" },
+  { path: "/guides/residence-permit-holders", expectText: "shall not be taken into account" },
   { path: "/about", expectText: "About" },
   { path: "/methodology", expectText: "primary official source" },
   { path: "/sources", expectText: "countries.json" },
@@ -37,6 +41,19 @@ test("/etias/status renders the verified data values", async ({ page }) => {
 test("unknown nationality pages 404 instead of rendering thin content", async ({ page }) => {
   const response = await page.goto("/etias/xx");
   expect(response?.status()).toBe(404);
+});
+
+test("unverified EES countries 404 instead of rendering thin content", async ({ page }) => {
+  const response = await page.goto("/ees/data-access/pl");
+  expect(response?.status()).toBe(404);
+});
+
+test("EES country page shows both template letters", async ({ page }) => {
+  await page.goto("/ees/data-access/it");
+  await expect(page.getByText("Template letter — Italian")).toBeVisible();
+  await expect(page.getByText("Template letter — English")).toBeVisible();
+  await page.getByText("Template letter — Italian").click();
+  await expect(page.locator("body")).toContainText("articolo 52 del regolamento (UE) 2017/2226");
 });
 
 test("sitemap and robots respond", async ({ request }) => {

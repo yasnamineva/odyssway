@@ -55,6 +55,12 @@ const contentSources = [
     usedFor: "/etias/status",
     checked: "2026-07-13",
   },
+  {
+    name: "EDPB — Members (national data protection authorities)",
+    url: "https://www.edpb.europa.eu/about-edpb/about-edpb/members_en",
+    usedFor: "/ees/data-access/[country] (authority identities)",
+    checked: "2026-07-13",
+  },
 ];
 
 function SourceList({ sources }: { sources: SourceNote[] }) {

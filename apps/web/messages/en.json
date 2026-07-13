@@ -33,6 +33,14 @@
       "title": "EES Says You Overstayed But You Didn't? Your Correction Rights",
       "description": "How to dispute a false EES overstay flag: your Article 52 rectification rights, the 45-day reply deadline, and the evidence to gather — sourced from the regulation."
     },
+    "dualCitizens": {
+      "title": "Dual Citizens: Which Passport for Schengen and the EES?",
+      "description": "If one of your nationalities is EU/EEA/Swiss, the 90/180-day rule doesn't apply to you — what the law says, what the EES records, and practical passport advice."
+    },
+    "permitHolders": {
+      "title": "Residence Permit Holders: the 90/180 Rule in Other Schengen Countries",
+      "description": "Your permit days don't consume the 90/180 allowance in the issuing country — but days in other Schengen states do. What the Schengen Borders Code actually says."
+    },
     "about": {
       "title": "About Borderline",
       "description": "A Schengen compliance toolkit: edge-case-aware 90/180 calculator, EES guides, and rules verified against official EU sources."
@@ -69,6 +77,27 @@
     "sourcesTitle": "Sources for this page",
     "checkedOn": "Checked against official sources on {date}.",
     "ctaCalculator": "ETIAS won't change the 90/180-day limit — check your days"
+  },
+  "eesAccess": {
+    "metaTitle": "Correct Your EES Record in {country} — who to contact, template letter",
+    "metaDescription": "Wrong exit recorded or false overstay flag in {country}? Where to send your Article 52 rectification request, the 45-day deadline, and ready-to-use template letters.",
+    "h1": "Correct your EES record: {country}",
+    "intro": "If the Entry/Exit System holds wrong data about you from a crossing in {country} — a missing exit, a false overstay flag — Article 52 of Regulation (EU) 2017/2226 gives you the right to have it rectified. Here's who can help and what to send.",
+    "authorityTitle": "Who to contact",
+    "authorityWebsite": "Official website →",
+    "stepsTitle": "The procedure",
+    "step1": "Gather evidence of your actual movements: boarding passes, tickets, accommodation and payment records.",
+    "step2": "Fill in one of the template letters below — state precisely which record is wrong and what the correct facts are.",
+    "step3": "Send it via the channels above. Under Article 52 you may address your request to the competent authority of any Schengen country, not only {country}.",
+    "step4": "Note the date you sent it: authorities must reply within 45 days. No answer or a refusal opens the Article 54 complaint route — the supervisory authority must assist you throughout.",
+    "timelineLabel": "Deadline for a reply",
+    "appealLabel": "If they refuse or don't answer",
+    "lettersTitle": "Template letters",
+    "lettersIntro": "Copy a letter, replace every placeholder in curly braces with your details, attach your evidence, and keep a copy of everything you send.",
+    "letterLabel": "Template letter — {language}",
+    "sourceLine": "Sources:",
+    "checkedOn": "Checked against official sources on {date}.",
+    "disputeLink": "Read the full guide: the EES says you overstayed — but you didn't"
   },
   "etiasNat": {
     "metaTitle": "ETIAS for {citizens} Citizens — status, fee, what to do now",
@@ -172,7 +201,7 @@
     "title": "How the 90/180 rule works",
     "p1": "Visitors under the short-stay rules may spend at most 90 days in the Schengen Area within any 180-day period. The window is rolling: on every single day of your stay, the previous 180 days must contain no more than 90 days of presence.",
     "p2": "Your entry day and your exit day both count as full days of stay. There is no reset when a new calendar year starts — only days rolling out of the 180-day window give you allowance back.",
-    "p3": "Not every day in Europe counts: stays in non-Schengen countries (Ireland, Cyprus, the UK) never consume your allowance, and days in Bulgaria, Romania or Croatia before their Schengen accession don't either — pick the country on each trip and the calculator handles this. Days under a residence permit or long-stay (D) visa in the issuing state are also excluded; support for entering those is coming next.",
+    "p3": "Not every day in Europe counts: stays in non-Schengen countries (Ireland, Cyprus, the UK) never consume your allowance, and days in Bulgaria, Romania or Croatia before their Schengen accession don't either — pick the country on each trip and the calculator handles this. Days under a residence permit or long-stay (D) visa in the issuing state are excluded too: tick the permit box on that trip.",
     "sourceLabel": "Source: European Commission, User Manual for the Short-Stay Schengen Calculator",
     "lastVerified": "Rules checked against the official sources linked above on {date}."
   },

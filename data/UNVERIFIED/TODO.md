@@ -43,8 +43,14 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
       foreign-ministry / border-authority pages are the likely primary sources.
 - [ ] `overstay-penalties.json`: per-state fine/ban ranges from national law or
       official authority pages.
-- [ ] `ees.json`: per-state EES data-access authority, channel, form, timeline
-      (start with FR, ES, DE, IT, NL) — national DPA / border authority pages.
+- [ ] `ees.json` — the five launch countries (FR, ES, DE, IT, NL) ship with
+      the national DPA as the verified contact (grounded in Reg. 2017/2226
+      Art. 53(2): the supervisory authority must assist with rectification,
+      identities verified via the EDPB members list). Still to verify per
+      country: the **designated EES controller** (border/interior authority),
+      its direct request channel/form, and accepted languages — likely
+      sources: each interior ministry / border police site, national EES
+      information pages.
 - [ ] `eu-items.json`: Directive 2007/74/EC allowances, Regulation (EU)
       2018/1672 cash rules, Regulation (EU) 2019/2122 animal products — the
       directives/regulations are on EUR-Lex (see access problem above); the EC's

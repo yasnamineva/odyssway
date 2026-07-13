@@ -52,6 +52,27 @@ Manual spot-check: `pnpm dev`, then compare any scenario against the
 [official EU calculator](https://ec.europa.eu/assets/home/visa-calculator/calculator.htm?lang=en)
 — results must match.
 
+## Deploying to Vercel
+
+The app is a standard Next.js project inside a pnpm workspace; Vercel
+handles this natively:
+
+1. Push the repo to GitHub (`git remote add origin … && git push -u origin main`).
+2. In Vercel: **Add New → Project → import the repo**, and set
+   **Root Directory = `apps/web`** (Framework: Next.js is auto-detected;
+   install runs at the workspace root automatically).
+3. Set the environment variables (Project → Settings → Environment Variables):
+   - `NEXT_PUBLIC_SITE_URL` — the production origin, e.g. `https://yourdomain.com`
+     (used by `sitemap.xml` / `robots.txt`).
+   - `NEXT_PUBLIC_PLAUSIBLE_DOMAIN` — optional; leave unset to ship without
+     analytics.
+4. Deploy. Every push to `main` redeploys; CI (typecheck, tests, data gate,
+   e2e) runs on GitHub Actions in parallel — make Vercel wait on it via
+   "Ignored Build Step"/checks if you want gating.
+
+CLI alternative from `apps/web`: `npx vercel login`, then `npx vercel`
+(preview) / `npx vercel --prod`.
+
 ## Status
 
 - **Phase 0 (foundation): done.** Engine implements all four queries

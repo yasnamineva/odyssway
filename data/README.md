@@ -35,8 +35,8 @@ source verification, no human editorial review pass).
 |---|---|
 | `countries.json` | **live** — verified 2026-07-13 |
 | `etias.json` | **live** — verified 2026-07-13 (fee-exemption ages pending, see TODO) |
-| `nationality-rules.json` | not started |
+| `nationality-rules.json` | **live** — top 15 visa-exempt nationalities, verified 2026-07-13 (Reg. 2018/1806 Annex II consolidated) |
+| `ees.json` | **live** — FR/ES/DE/IT/NL with DPA contacts (Art. 53(2) basis); designated controllers pending (see TODO) |
 | `bilateral-agreements.json` | not started — candidates in `UNVERIFIED/bilateral-candidates.json` |
 | `overstay-penalties.json` | not started |
-| `ees.json` | not started |
 | `eu-items.json` | not started |
