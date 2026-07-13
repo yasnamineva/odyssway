@@ -20,13 +20,37 @@ overrides everything else.**
 
 ```bash
 pnpm install
-pnpm dev             # run the web app
-pnpm test            # engine tests, incl. official EC golden cases
+pnpm dev             # run the web app (http://localhost:3000)
+pnpm test            # unit tests: engine (incl. official EC golden cases) + web
+pnpm test:e2e        # browser tests: builds, serves, and drives the real UI
 pnpm typecheck
 pnpm validate:data   # Accuracy Policy gate (also runs in CI)
 pnpm watch:sources   # diff watched official sources, report changes
 pnpm build
 ```
+
+## Testing
+
+Four automated layers, all run by CI on every push (`.github/workflows/ci.yml`):
+
+1. **Engine unit + golden tests** (`pnpm --filter @borderline/engine test`) —
+   51 tests: all four queries, date math (leap years, DST-immunity), presence
+   edge cases (permits, bilateral, accession dates), a 300-run property test,
+   and the **golden cases**: every worked example from the European
+   Commission's official calculator manual must produce identical results.
+2. **Web unit tests** (`pnpm --filter web test`) — share-URL encoding/decoding
+   (round-trips, legacy links, malformed input).
+3. **Data validation** (`pnpm validate:data`) — schema-checks /data, rejects
+   unverified rows in production and any production reference to UNVERIFIED.
+4. **E2E browser tests** (`pnpm test:e2e`) — Playwright drives the real UI
+   (local Chrome; Chromium in CI): counting, overstay warnings, Ireland
+   exclusion, Bulgaria's 2024 accession boundary, residence-permit exclusion,
+   trip planning, share links, reversed-date handling, every route, sitemap,
+   and a mobile-viewport overflow check.
+
+Manual spot-check: `pnpm dev`, then compare any scenario against the
+[official EU calculator](https://ec.europa.eu/assets/home/visa-calculator/calculator.htm?lang=en)
+— results must match.
 
 ## Status
 

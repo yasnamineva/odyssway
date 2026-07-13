@@ -7,6 +7,7 @@
     "build": "pnpm --filter web build",
     "typecheck": "pnpm -r typecheck",
     "test": "pnpm -r test",
+    "test:e2e": "pnpm --filter web test:e2e",
     "validate:data": "tsx scripts/validate-data.ts",
     "watch:sources": "tsx scripts/watch-sources.ts",
     "ci": "pnpm typecheck && pnpm test && pnpm validate:data && pnpm build"

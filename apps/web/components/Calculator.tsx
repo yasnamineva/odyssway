@@ -22,6 +22,7 @@ import {
   nonSchengenCountries,
   schengenCountries,
 } from "../lib/countries";
+import { decodeShareState, encodeShareState } from "../lib/share";
 
 const OFFICIAL_CALCULATOR_URL =
   "https://ec.europa.eu/assets/home/visa-calculator/calculator.htm?lang=en";
@@ -34,6 +35,8 @@ interface TripRow {
   exit: string;
   /** ISO country code, or "" = Schengen Area, country unspecified. */
   country: string;
+  /** Stay under a residence permit / long-stay (D) visa issued by `country`. */
+  permit: boolean;
 }
 
 /** The user's local calendar date — their "today" at the border. */
@@ -49,13 +52,18 @@ function localTodayISO(): string {
 /** Unspecified country = "ZZ" (Schengen Area, country unspecified) — the
  * engine counts those days like any current Schengen member. Picking a real
  * country activates non-Schengen exclusion and per-date accession handling
- * from the verified dataset. */
+ * from the verified dataset; the permit flag marks the stay as excluded under
+ * a residence permit / D visa issued by that country. */
 function toTrip(row: TripRow): Trip {
+  const country = row.country || "ZZ";
   return {
     entry: row.entry,
     exit: row.exit,
-    country: row.country || "ZZ",
-    basis: { kind: "visa_free" },
+    country,
+    basis:
+      row.permit && row.country
+        ? { kind: "d_visa_or_permit", issuingCountry: row.country }
+        : { kind: "visa_free" },
   };
 }
 
@@ -75,55 +83,13 @@ interface Results {
 }
 
 let nextRowId = 1;
-function newRow(entry = "", exit = "", country = ""): TripRow {
-  return { id: nextRowId++, entry, exit, country };
+function newRow(entry = "", exit = "", country = "", permit = false): TripRow {
+  return { id: nextRowId++, entry, exit, country, permit };
 }
 
 const KNOWN_CODES = new Set(
   [...schengenCountries, ...nonSchengenCountries].map((c) => c.code),
 );
-
-/** URL-encoded state (§6.5): dates live in the link, nothing on our servers. */
-function encodeState(rows: TripRow[], refDate: string, planEntry: string, planExit: string): string {
-  const params = new URLSearchParams();
-  const t = rows
-    .filter(rowIsComplete)
-    .map((r) => (r.country ? `${r.entry}.${r.exit}.${r.country}` : `${r.entry}.${r.exit}`))
-    .join("~");
-  if (t) params.set("t", t);
-  params.set("d", refDate);
-  if (planEntry) params.set("pe", planEntry);
-  if (planExit) params.set("px", planExit);
-  return params.toString();
-}
-
-function decodeState(search: string): {
-  rows: TripRow[] | null;
-  refDate: string | null;
-  planEntry: string | null;
-  planExit: string | null;
-} {
-  const params = new URLSearchParams(search);
-  const rows =
-    params
-      .get("t")
-      ?.split("~")
-      .map((pair) => pair.split("."))
-      .filter(
-        (p) =>
-          (p.length === 2 || p.length === 3) &&
-          isValidISODate(p[0]!) &&
-          isValidISODate(p[1]!),
-      )
-      .map((p) =>
-        newRow(p[0]!, p[1]!, p[2] !== undefined && KNOWN_CODES.has(p[2]) ? p[2] : ""),
-      ) ?? null;
-  const date = (key: string) => {
-    const v = params.get(key);
-    return v !== null && isValidISODate(v) ? v : null;
-  };
-  return { rows, refDate: date("d"), planEntry: date("pe"), planExit: date("px") };
-}
 
 export default function Calculator() {
   const t = useTranslations("calc");
@@ -136,8 +102,10 @@ export default function Calculator() {
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
-    const decoded = decodeState(window.location.search);
-    if (decoded.rows && decoded.rows.length > 0) setRows(decoded.rows);
+    const decoded = decodeShareState(window.location.search, KNOWN_CODES);
+    if (decoded.trips && decoded.trips.length > 0) {
+      setRows(decoded.trips.map((t) => newRow(t.entry, t.exit, t.country, t.permit)));
+    }
     setRefDate(decoded.refDate ?? localTodayISO());
     if (decoded.planEntry) setPlanEntry(decoded.planEntry);
     if (decoded.planExit) setPlanExit(decoded.planExit);
@@ -189,11 +157,21 @@ export default function Calculator() {
   };
 
   const share = async () => {
-    const query = encodeState(rows, refDate, planEntry, planExit);
+    const query = encodeShareState({
+      trips: rows.filter(rowIsComplete),
+      refDate,
+      planEntry,
+      planExit,
+    });
     const url = `${window.location.origin}${window.location.pathname}?${query}`;
     window.history.replaceState(null, "", `?${query}`);
-    await navigator.clipboard.writeText(url);
-    setCopied(true);
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+    } catch {
+      // Clipboard unavailable (permissions/insecure context): the URL bar
+      // already carries the link, so sharing still works by copying it there.
+    }
   };
 
   const reset = () => {
@@ -210,7 +188,7 @@ export default function Calculator() {
   }
 
   const inputClass =
-    "w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-base focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200";
+    "w-full min-w-0 rounded-lg border border-slate-300 bg-white px-3 py-2 text-base focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200";
   const labelClass = "block text-xs font-medium text-slate-600";
 
   return (
@@ -235,7 +213,7 @@ export default function Calculator() {
           {rows.map((row) => (
             <div key={row.id}>
               <div className="flex items-end gap-2">
-                <div className="flex-1">
+                <div className="min-w-0 flex-1">
                   <label className={labelClass} htmlFor={`entry-${row.id}`}>
                     {t("entry")}
                   </label>
@@ -247,7 +225,7 @@ export default function Calculator() {
                     onChange={(e) => updateRow(row.id, { entry: e.target.value })}
                   />
                 </div>
-                <div className="flex-1">
+                <div className="min-w-0 flex-1">
                   <label className={labelClass} htmlFor={`exit-${row.id}`}>
                     {t("exit")}
                   </label>
@@ -276,7 +254,12 @@ export default function Calculator() {
                   id={`country-${row.id}`}
                   className={inputClass}
                   value={row.country}
-                  onChange={(e) => updateRow(row.id, { country: e.target.value })}
+                  onChange={(e) =>
+                    updateRow(row.id, {
+                      country: e.target.value,
+                      ...(e.target.value === "" ? { permit: false } : {}),
+                    })
+                  }
                 >
                   <option value="">{t("countryUnspecified")}</option>
                   <optgroup label={t("countryGroupSchengen")}>
@@ -295,6 +278,23 @@ export default function Calculator() {
                   </optgroup>
                 </select>
               </div>
+              <label
+                className={`mt-2 flex items-start gap-2 text-xs ${
+                  row.country ? "text-slate-600" : "text-slate-400"
+                }`}
+              >
+                <input
+                  type="checkbox"
+                  className="mt-0.5"
+                  disabled={!row.country}
+                  checked={row.permit}
+                  onChange={(e) => updateRow(row.id, { permit: e.target.checked })}
+                />
+                <span>{t("permitLabel")}</span>
+              </label>
+              {row.permit ? (
+                <p className="mt-1 text-xs text-slate-500">{t("permitHint")}</p>
+              ) : null}
               {rowHasOrderError(row) ? (
                 <p className="mt-1 text-xs text-red-600">{t("rowOrderError")}</p>
               ) : null}
@@ -350,7 +350,7 @@ export default function Calculator() {
         <h2 className="text-sm font-semibold text-slate-900">{t("planTitle")}</h2>
         <p className="mb-3 text-xs text-slate-500">{t("planHint")}</p>
         <div className="flex gap-2">
-          <div className="flex-1">
+          <div className="min-w-0 flex-1">
             <label className={labelClass} htmlFor="planEntry">
               {t("planEntry")}
             </label>
@@ -362,7 +362,7 @@ export default function Calculator() {
               onChange={(e) => setPlanEntry(e.target.value)}
             />
           </div>
-          <div className="flex-1">
+          <div className="min-w-0 flex-1">
             <label className={labelClass} htmlFor="planExit">
               {t("planExit")}
             </label>
@@ -421,7 +421,9 @@ function StatusCard({
       <h2 className="mb-3 text-sm font-semibold text-slate-900">{t("statusTitle")}</h2>
       <div className="mb-4 grid grid-cols-2 gap-3">
         <div className="rounded-xl bg-slate-50 p-3 text-center">
-          <div className="text-3xl font-bold tabular-nums text-slate-900">{s.daysUsed}</div>
+          <div data-testid="days-used" className="text-3xl font-bold tabular-nums text-slate-900">
+            {s.daysUsed}
+          </div>
           <div className="text-xs text-slate-500">{t("daysUsed")}</div>
         </div>
         <div
@@ -430,6 +432,7 @@ function StatusCard({
           }`}
         >
           <div
+            data-testid="days-remaining"
             className={`text-3xl font-bold tabular-nums ${
               s.overstayDays > 0 ? "text-red-700" : "text-emerald-700"
             }`}
@@ -449,7 +452,7 @@ function StatusCard({
           })}
         </p>
         {s.overstayDays > 0 ? (
-          <p className="font-medium text-red-700">
+          <p data-testid="overstay-warning" className="font-medium text-red-700">
             {t("overstayWarning", { days: s.overstayDays })}
           </p>
         ) : null}
@@ -470,16 +473,21 @@ function StatusCard({
           {t("nextSafeEntry", { date: formatDate(s.nextSafeEntry) })}
         </p>
         {s.exclusions.map((ex, i) => (
-          <p key={i} className="text-xs text-slate-500">
+          <p key={i} data-testid="exclusion-note" className="text-xs text-slate-500">
             {ex.reason === "pre_accession_days"
               ? t("exclusionPreAccession", {
                   country: countryName(ex.trip.country),
                   days: ex.daysExcluded,
                 })
-              : t("exclusionNonSchengen", {
-                  country: countryName(ex.trip.country),
-                  days: ex.daysExcluded,
-                })}
+              : ex.reason === "residence_permit_issuing_state"
+                ? t("exclusionPermit", {
+                    country: countryName(ex.trip.country),
+                    days: ex.daysExcluded,
+                  })
+                : t("exclusionNonSchengen", {
+                    country: countryName(ex.trip.country),
+                    days: ex.daysExcluded,
+                  })}
           </p>
         ))}
       </div>
@@ -510,7 +518,10 @@ function PlanResult({
 
   if (plan.compliant) {
     return (
-      <p className="mt-3 rounded-xl bg-emerald-50 p-3 text-sm leading-relaxed text-emerald-900">
+      <p
+        data-testid="plan-result"
+        className="mt-3 rounded-xl bg-emerald-50 p-3 text-sm leading-relaxed text-emerald-900"
+      >
         {t("planCompliant", {
           days: plan.tripLengthDays,
           entry: formatDate(plan.entry),
@@ -522,7 +533,10 @@ function PlanResult({
   }
 
   return (
-    <div className="mt-3 space-y-2 rounded-xl bg-red-50 p-3 text-sm leading-relaxed text-red-900">
+    <div
+      data-testid="plan-result"
+      className="mt-3 space-y-2 rounded-xl bg-red-50 p-3 text-sm leading-relaxed text-red-900"
+    >
       {plan.latestSafeExit ? (
         <p>
           {t("planViolation", {

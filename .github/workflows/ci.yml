@@ -26,3 +26,7 @@ jobs:
         run: pnpm validate:data
       - name: Build web app
         run: pnpm build
+      - name: Install Playwright browser
+        run: pnpm --filter web exec playwright install --with-deps chromium
+      - name: E2E smoke tests
+        run: pnpm test:e2e
