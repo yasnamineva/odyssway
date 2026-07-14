@@ -350,7 +350,10 @@ export default function Calculator() {
             {t("scopeSource")}
           </a>
           <br />
-          {t("dataChecked", { date: countriesVerifiedAt })}
+          {t("dataChecked", { date: countriesVerifiedAt })}{" "}
+          <a href="/changelog#dataset-countries" className="underline">
+            {t("updateHistory")}
+          </a>
         </p>
       </section>
 

@@ -1,0 +1,62 @@
+[
+  {
+    "commit": "973faf44185d908ae57d2894d941f622e380e04f",
+    "date": "2026-07-13",
+    "dataset": "ees",
+    "summary": "EES per-country correction pages, template letters, dual-citizen & permit guides, deploy docs",
+    "verified_at": "2026-07-13",
+    "verified_by": "agent:claude-fable-5",
+    "source": {
+      "name": "Regulation (EU) 2017/2226, Arts. 52–54 (consolidated 02017R2226-20260612); authority identity per the EDPB members list",
+      "url": "https://www.edpb.europa.eu/about-edpb/about-edpb/members_en"
+    }
+  },
+  {
+    "commit": "679e51b03aeebade49e9ff2613e03e1ce11b54f3",
+    "date": "2026-07-13",
+    "dataset": "etias",
+    "summary": "Nationality ETIAS pages, EES dispute guide, exact regulation citations via CELLAR",
+    "verified_at": "2026-07-13",
+    "verified_by": "agent:claude-fable-5",
+    "source": {
+      "name": "Regulation (EU) 2018/1240 (ETIAS Regulation); fee set to EUR 20 by Commission Delegated Regulation (EU) 2025/1411 of 16 July 2025; launch window per EEAS official page",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32025R1411"
+    }
+  },
+  {
+    "commit": "679e51b03aeebade49e9ff2613e03e1ce11b54f3",
+    "date": "2026-07-13",
+    "dataset": "nationality-rules",
+    "summary": "Nationality ETIAS pages, EES dispute guide, exact regulation citations via CELLAR",
+    "verified_at": "2026-07-13",
+    "verified_by": "agent:claude-fable-5",
+    "source": {
+      "name": "Regulation (EU) 2018/1806, Annex II (consolidated version of 30 December 2025, CELEX 02018R1806-20251230)",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018R1806-20251230"
+    }
+  },
+  {
+    "commit": "52f5a84a9e5c8dca77ebf1e8ff7ff739b09b7e83",
+    "date": "2026-07-13",
+    "dataset": "countries",
+    "summary": "Initial commit: monorepo, Schengen 90/180 engine, calculator UI, verified data",
+    "verified_at": "2026-07-13",
+    "verified_by": "agent:claude-fable-5",
+    "source": {
+      "name": "EC Migration & Home Affairs — Schengen area (membership); Council Decisions (EU) 2022/2451 and 2024/210 (accessions); EC short-stay calculator manual §1 (day-counting exclusions)",
+      "url": "https://home-affairs.ec.europa.eu/policies/schengen/schengen-area_en"
+    }
+  },
+  {
+    "commit": "52f5a84a9e5c8dca77ebf1e8ff7ff739b09b7e83",
+    "date": "2026-07-13",
+    "dataset": "etias",
+    "summary": "Initial commit: monorepo, Schengen 90/180 engine, calculator UI, verified data",
+    "verified_at": "2026-07-13",
+    "verified_by": "agent:claude-fable-5",
+    "source": {
+      "name": "Regulation (EU) 2018/1240 (ETIAS Regulation); fee set to EUR 20 by Commission Delegated Regulation (EU) 2025/1411 of 16 July 2025; launch window per EEAS official page",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32025R1411"
+    }
+  }
+]

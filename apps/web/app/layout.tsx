@@ -81,6 +81,9 @@ export default async function RootLayout({
                   <a href="/sources" className="underline hover:text-white">
                     {t("footer.sources")}
                   </a>
+                  <a href="/changelog" className="underline hover:text-white">
+                    {t("footer.changelog")}
+                  </a>
                   <a
                     href={OFFICIAL_CALCULATOR_URL}
                     rel="noopener noreferrer"

@@ -49,6 +49,11 @@ const SOURCES: WatchedSource[] = [
     usedBy: "data/countries.json (membership list, Cyprus status)",
   },
   {
+    id: "eulisa-home",
+    url: "https://www.eulisa.europa.eu/",
+    usedBy: "eu-LISA announcements — EES/ETIAS operational news and official EU traveler app releases (tracked competitive risk per AGENTS.md §11)",
+  },
+  {
     id: "eeas-visa-free-etias",
     url: "https://www.eeas.europa.eu/eeas/coming-visa-free-country-and-travelling-europe_en",
     usedBy: "data/etias.json (launch window, validity, 30-country scope; fee figure on this page is stale — EUR 20 per Delegated Regulation (EU) 2025/1411)",

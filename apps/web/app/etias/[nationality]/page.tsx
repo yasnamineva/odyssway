@@ -40,6 +40,7 @@ export default async function EtiasNationalityPage({
   if (!rule || !rule.visaExempt || !rule.etiasApplicable) notFound();
   const t = await getTranslations("etiasNat");
   const te = await getTranslations("etias");
+  const tc = await getTranslations("common");
 
   return (
     <article className="space-y-6">
@@ -101,6 +102,11 @@ export default async function EtiasNationalityPage({
         {rule.verified_at ? (
           <p className="mt-1">{te("checkedOn", { date: rule.verified_at })}</p>
         ) : null}
+        <p className="mt-1">
+          <a href="/changelog#dataset-nationality-rules" className="underline">
+            {tc("updateHistory")}
+          </a>
+        </p>
       </section>
     </article>
   );

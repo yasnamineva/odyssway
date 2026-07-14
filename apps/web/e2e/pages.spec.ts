@@ -16,6 +16,7 @@ const routes: Array<{ path: string; expectText: string }> = [
   { path: "/ees/data-access/de", expectText: "45 days" },
   { path: "/guides/dual-citizens", expectText: "not a Union citizen" },
   { path: "/guides/residence-permit-holders", expectText: "shall not be taken into account" },
+  { path: "/changelog", expectText: "Verification changelog" },
   { path: "/about", expectText: "About" },
   { path: "/methodology", expectText: "primary official source" },
   { path: "/sources", expectText: "countries.json" },
@@ -48,12 +49,28 @@ test("unverified EES countries 404 instead of rendering thin content", async ({ 
   expect(response?.status()).toBe(404);
 });
 
-test("EES country page shows both template letters", async ({ page }) => {
+test("EES country page shows both template letters with downloads", async ({ page }) => {
   await page.goto("/ees/data-access/it");
   await expect(page.getByText("Template letter — Italian")).toBeVisible();
   await expect(page.getByText("Template letter — English")).toBeVisible();
   await page.getByText("Template letter — Italian").click();
   await expect(page.locator("body")).toContainText("articolo 52 del regolamento (UE) 2017/2226");
+  const download = page.locator('a[download="ees-rectification-it-it.txt"]');
+  await expect(download).toHaveAttribute("href", /^data:text\/plain/);
+});
+
+test("changelog lists dated, sourced entries with dataset anchors", async ({ page }) => {
+  await page.goto("/changelog");
+  await expect(page.locator("#dataset-countries")).toBeVisible();
+  await expect(page.locator("#dataset-ees")).toBeVisible();
+  await expect(page.locator("body")).toContainText("verified by agent:claude-fable-5");
+});
+
+test("rules pages link their update history", async ({ page }) => {
+  await page.goto("/rules/90-180-rule");
+  await expect(
+    page.locator('a[href="/changelog#dataset-countries"]').first(),
+  ).toBeVisible();
 });
 
 test("sitemap and robots respond", async ({ request }) => {

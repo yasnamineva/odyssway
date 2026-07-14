@@ -34,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: r.verified_at ?? CONTENT_CHECKED,
       priority: 0.6,
     })),
+    { url: `${BASE}/changelog`, lastModified: CONTENT_CHECKED, priority: 0.5 },
     { url: `${BASE}/about`, lastModified: CONTENT_CHECKED, priority: 0.3 },
     { url: `${BASE}/methodology`, lastModified: CONTENT_CHECKED, priority: 0.4 },
     { url: `${BASE}/sources`, lastModified: CONTENT_CHECKED, priority: 0.4 },

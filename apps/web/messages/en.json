@@ -52,7 +52,21 @@
     "sources": {
       "title": "Sources",
       "description": "Every official source behind our rule data and guides, with the date each value was last checked."
+    },
+    "changelog": {
+      "title": "Verification Changelog — every rule-data change, dated and sourced",
+      "description": "A public, chronological log of every change to our rule data: what changed, when it was checked against official sources, and by whom. Generated from version history."
     }
+  },
+  "changelogPage": {
+    "h1": "Verification changelog",
+    "intro": "Every change to the rule data behind this site, newest first — what changed, when it was verified against official sources, and by whom. This log is generated automatically from our version history; it cannot be edited by hand.",
+    "verifiedLine": "Checked against official sources {date} · verified by {by}",
+    "noStamp": "No verification stamp recorded for this revision",
+    "footer": "Badges can be faked; a consistent public update history can't. If you find an error, the fastest fix is pointing us at the official source that contradicts us."
+  },
+  "common": {
+    "updateHistory": "See update history"
   },
   "etias": {
     "h1": "ETIAS launch tracker",
@@ -95,6 +109,7 @@
     "lettersTitle": "Template letters",
     "lettersIntro": "Copy a letter, replace every placeholder in curly braces with your details, attach your evidence, and keep a copy of everything you send.",
     "letterLabel": "Template letter — {language}",
+    "downloadLabel": "Download as .txt",
     "sourceLine": "Sources:",
     "checkedOn": "Checked against official sources on {date}.",
     "disputeLink": "Read the full guide: the EES says you overstayed — but you didn't"
@@ -138,6 +153,7 @@
     "scopeNote": "Add your trips to Europe, including your current one if you're there now. Picking the country is optional but recommended: stays in non-Schengen countries (for example Ireland, Cyprus or the UK) are automatically excluded from the 90-day count, and recent joiners like Bulgaria, Romania and Croatia are handled correctly for dates before they joined Schengen.",
     "scopeSource": "Rule source: European Commission, short-stay calculator user manual",
     "dataChecked": "Country data checked against official sources on {date}.",
+    "updateHistory": "See update history",
     "pastTripsTitle": "Your stays (last 12 months)",
     "entry": "Entry date",
     "exit": "Exit date",
@@ -241,6 +257,7 @@
     "affiliateNote": "This site currently contains no advertising or affiliate links.",
     "about": "About",
     "methodology": "How we verify",
-    "sources": "Sources"
+    "sources": "Sources",
+    "changelog": "Update history"
   }
 }

@@ -19,6 +19,7 @@ const statusStyles: Record<string, string> = {
 
 export default async function EtiasStatusPage() {
   const t = await getTranslations("etias");
+  const tc = await getTranslations("common");
 
   return (
     <article className="space-y-6">
@@ -86,6 +87,11 @@ export default async function EtiasStatusPage() {
         {etias.verified_at ? (
           <p className="mt-2">{t("checkedOn", { date: etias.verified_at })}</p>
         ) : null}
+        <p className="mt-1">
+          <a href="/changelog#dataset-etias" className="underline">
+            {tc("updateHistory")}
+          </a>
+        </p>
       </section>
     </article>
   );

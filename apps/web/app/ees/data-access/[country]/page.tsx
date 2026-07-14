@@ -30,7 +30,20 @@ export async function generateMetadata({
   };
 }
 
-function Letter({ letter, label }: { letter: LetterTemplate; label: string }) {
+function Letter({
+  letter,
+  label,
+  country,
+  downloadLabel,
+}: {
+  letter: LetterTemplate;
+  label: string;
+  country: string;
+  downloadLabel: string;
+}) {
+  const text = `${letter.subject}\n\n${letter.body}\n`;
+  const dataUrl = `data:text/plain;charset=utf-8,${encodeURIComponent(text)}`;
+  const filename = `ees-rectification-${country.toLowerCase()}-${letter.lang}.txt`;
   return (
     <details className="group rounded-xl border border-slate-200 bg-slate-50 open:bg-white">
       <summary className="cursor-pointer px-4 py-3 text-sm font-medium text-slate-800">
@@ -41,6 +54,13 @@ function Letter({ letter, label }: { letter: LetterTemplate; label: string }) {
         <pre className="mt-3 whitespace-pre-wrap font-sans text-xs leading-relaxed text-slate-700">
           {letter.body}
         </pre>
+        <a
+          href={dataUrl}
+          download={filename}
+          className="mt-3 inline-block rounded-lg border border-slate-300 px-3 py-1.5 text-xs font-medium text-slate-700 hover:bg-slate-50"
+        >
+          {downloadLabel}
+        </a>
       </div>
     </details>
   );
@@ -54,6 +74,7 @@ export default async function EesDataAccessPage({
   const record = eesRecordBySlug((await params).country);
   if (!record) notFound();
   const t = await getTranslations("eesAccess");
+  const tc = await getTranslations("common");
   const country = eesCountryName(record.country);
   const localLetter = lettersByCountry[record.country];
 
@@ -112,9 +133,16 @@ export default async function EesDataAccessPage({
           <Letter
             letter={localLetter}
             label={t("letterLabel", { language: localLetter.languageName })}
+            country={record.country}
+            downloadLabel={t("downloadLabel")}
           />
         ) : null}
-        <Letter letter={letterEnglish} label={t("letterLabel", { language: "English" })} />
+        <Letter
+          letter={letterEnglish}
+          label={t("letterLabel", { language: "English" })}
+          country={record.country}
+          downloadLabel={t("downloadLabel")}
+        />
         {record.languageRequirements ? (
           <p className="text-xs leading-relaxed text-slate-500">
             {record.languageRequirements}
@@ -132,6 +160,11 @@ export default async function EesDataAccessPage({
         {record.verified_at ? (
           <p className="mt-1">{t("checkedOn", { date: record.verified_at })}</p>
         ) : null}
+        <p className="mt-1">
+          <a href="/changelog#dataset-ees" className="underline">
+            {tc("updateHistory")}
+          </a>
+        </p>
         <p className="mt-2">
           <a href="/ees/dispute-overstay" className="underline">
             {t("disputeLink")}
