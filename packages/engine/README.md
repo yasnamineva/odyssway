@@ -1,4 +1,4 @@
-# @borderline/engine
+# @odyssway/engine
 
 Pure-TypeScript Schengen 90/180 calculation engine. **Zero framework
 dependencies** (only `zod`, for the data schemas) so it can later power a
@@ -7,7 +7,7 @@ mobile app or API unchanged.
 ## API
 
 ```ts
-import { status, planTrip, maxStay, nextEntry } from "@borderline/engine";
+import { status, planTrip, maxStay, nextEntry } from "@odyssway/engine";
 
 status(trips, "2026-07-12");            // days used / remaining on a date
 planTrip(trips, entry, exit);           // is this future trip compliant? first violating day?

@@ -18,9 +18,11 @@ import type { ZodType } from "zod";
 import {
   bilateralAgreementsFileSchema,
   countriesFileSchema,
+  customsItemsFileSchema,
+  destinationsFileSchema,
   eesFileSchema,
+  entryRequirementsFileSchema,
   etiasFileSchema,
-  euItemsFileSchema,
   nationalityRulesFileSchema,
   overstayPenaltiesFileSchema,
 } from "../packages/engine/src/schemas";
@@ -37,7 +39,9 @@ const SCHEMA_BY_FILE: Record<string, ZodType> = {
   "overstay-penalties.json": overstayPenaltiesFileSchema,
   "ees.json": eesFileSchema,
   "etias.json": etiasFileSchema,
-  "eu-items.json": euItemsFileSchema,
+  "destinations.json": destinationsFileSchema,
+  "entry-requirements.json": entryRequirementsFileSchema,
+  "customs-items.json": customsItemsFileSchema,
 };
 
 const errors: string[] = [];

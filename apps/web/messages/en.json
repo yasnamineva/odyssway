@@ -1,11 +1,15 @@
 {
   "meta": {
-    "title": "Schengen 90/180 Day Calculator — edge cases done right",
-    "description": "Free Schengen 90/180 day rule calculator. Check how many days you have left, plan trips, and find your next safe entry date. Built to match the official EU calculator."
+    "title": "Odyssway — can you go, for how long, and what can you bring?",
+    "tripCheckTitle": "Trip Check — Odyssway",
+    "calculatorTitle": "Schengen 90/180 Calculator — Odyssway",
+    "calculatorDescription": "The EU's rolling 90/180-day rule, computed exactly: multiple trips, residence-permit exclusions, dual citizenship, a day-by-day timeline, and PDF export.",
+    "description": "Free trip-compliance checker: tell us where you're from and where you're going, and we'll tell you if you can enter, how long you can stay, what documents you need, and whether your items clear customs — every fact cited to an official source."
   },
   "header": {
-    "brand": "Borderline",
+    "brand": "Odyssway",
     "nav": {
+      "tripCheck": "Trip Check",
       "calculator": "Calculator",
       "rule": "90/180 rule",
       "ees": "EES",
@@ -42,7 +46,7 @@
       "description": "Your permit days don't consume the 90/180 allowance in the issuing country — but days in other Schengen states do. What the Schengen Borders Code actually says."
     },
     "about": {
-      "title": "About Borderline",
+      "title": "About Odyssway",
       "description": "A Schengen compliance toolkit: edge-case-aware 90/180 calculator, EES guides, and rules verified against official EU sources."
     },
     "methodology": {
@@ -56,7 +60,70 @@
     "changelog": {
       "title": "Verification Changelog — every rule-data change, dated and sourced",
       "description": "A public, chronological log of every change to our rule data: what changed, when it was checked against official sources, and by whom. Generated from version history."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions — how Odyssway works, verification, coverage",
+      "description": "Answers to the most common questions about Trip Check, the Schengen calculator, how we verify rules, and what we don't cover yet."
+    },
+    "blog": {
+      "title": "Blog — regulation changes, explained and cited",
+      "description": "What actually changed in travel rules, written plainly and traced back to the official source and the exact date we checked it."
     }
+  },
+  "faqPage": {
+    "h1": "Frequently asked questions",
+    "intro": "The questions we get most. If yours isn't here, the fastest answer is usually on the specific rule page — or check /sources for exactly what we've verified and when.",
+    "items": [
+      {
+        "q": "Is this legal advice?",
+        "a": "No. Everything here is informational and reflects our reading of official sources at the date shown — it isn't legal advice and isn't an official determination of your right to stay or enter. Border authorities decide, not us. For anything consequential, verify with the official source we cite, or a qualified adviser."
+      },
+      {
+        "q": "How do you actually verify your data?",
+        "a": "Every fact we publish is checked directly against a primary official source — a regulation, an official government page, a statute — before it goes live, and we record the date it was checked and who checked it. If we can't reach or confirm something against a primary source, we don't publish it; it stays flagged internally as unverified instead. See /methodology for the full policy and /sources for the complete list of what backs every claim on the site."
+      },
+      {
+        "q": "Why isn't my destination or nationality covered yet?",
+        "a": "We'd rather show you an honest \"not yet verified\" than a guess. Coverage grows destination by destination, each one fully researched against that country's own immigration and customs authorities — we don't publish a country until we can cite it properly. The trip-check picker shows what's live now and what's queued next."
+      },
+      {
+        "q": "What's the difference between Trip Check and the Schengen Calculator?",
+        "a": "Trip Check (/trip-check) answers the broad question — can you enter a given destination, for how long, with what documents, and what you can bring — across all our verified destinations. The Schengen Calculator (/calculator) is the deeper tool specifically for the EU's rolling 90/180-day rule: multiple trips, residence-permit exclusions, dual citizenship, and a day-by-day timeline. If your trip is only about Schengen days, use the calculator directly."
+      },
+      {
+        "q": "Do you store my trip details?",
+        "a": "No. The calculator runs entirely in your browser — your dates never reach our servers, and shareable links encode your trip in the URL itself rather than in a database. Trip Check works the same way: nothing you enter is stored server-side."
+      },
+      {
+        "q": "How do you keep this up to date when rules change?",
+        "a": "We watch our official sources on a weekly automated cycle for content changes, and re-verify anything that moved. Every change to our data — what changed, when, and against which source — is logged publicly at /changelog, so you can see our update history rather than just take our word for it."
+      },
+      {
+        "q": "Is Odyssway free?",
+        "a": "Yes. The calculator and Trip Check are both free with no account required, and that's not changing — free access to accurate compliance information is the point of the site."
+      },
+      {
+        "q": "Are you affiliated with the EU, a government, or an airline?",
+        "a": "No. We're an independent, unaffiliated site. We're not the European Union, any national government, or any airline or visa-processing company, and nothing here should be read as an official channel."
+      },
+      {
+        "q": "I think something is wrong or out of date. How do I report it?",
+        "a": "Point us at the official source that contradicts what we have — that's the fastest fix, since every value we publish traces to a specific citation you can check against. See /sources for what's currently backing each claim."
+      }
+    ]
+  },
+  "blogPage": {
+    "h1": "Blog",
+    "intro": "What actually changed in travel rules — written plainly, and every claim traced back to the official source and the date we checked it. No filler, no speculation.",
+    "readMore": "Read more →",
+    "empty": "No posts yet."
+  },
+  "blogPostPage": {
+    "backToBlog": "← All posts",
+    "sourceLabel": "Source:",
+    "verifiedLabel": "Checked against official sources: {date}",
+    "changelogLink": "See this in the verification changelog →",
+    "disclaimer": "Informational only — not legal advice and not an official determination of your right to stay. Always verify with official authorities. We are not affiliated with the European Union."
   },
   "changelogPage": {
     "h1": "Verification changelog",
@@ -136,19 +203,73 @@
     "dataTitle": "Rule data",
     "contentTitle": "Guides and pages",
     "checkedLabel": "Checked {date}",
-    "verifiedLabel": "Dataset last verified {date}"
+    "verifiedLabel": "Dataset last verified {date}",
+    "euCustomsLabel": "EU/Schengen-harmonized customs rules"
   },
   "home": {
-    "h1": "Schengen 90/180 day calculator",
-    "sub": "Check how many of your 90 days you've used, whether a planned trip fits, and the earliest date you can enter again.",
-    "crossCheck": "Our engine reproduces every worked example from the official EU calculator's user manual — and you can always cross-check with the official calculator.",
+    "hero": {
+      "eyebrow": "Free · cited to official sources · nothing stored on our servers",
+      "h1": "Can you go — and for how long?",
+      "sub": "Two free tools that answer real travel-compliance questions: entry requirements, stay limits, required documents, and customs. Every fact traces to an official source, dated — not a guess.",
+      "ctaPrimary": "Start a Trip Check",
+      "ctaSecondary": "Open the Schengen Calculator"
+    },
     "stats": [
       { "n": "90/180", "label": "the EU rule, computed exactly as Art. 6(1) defines it" },
       { "n": "29", "label": "Schengen countries covered, accession dates included" },
       { "n": "0", "label": "trip details stored on our servers — it all stays in your browser" }
-    ]
+    ],
+    "story": {
+      "sectionIndex": "( 02 )",
+      "ariaLabel": "Why the 90/180 rule matters",
+      "stages": [
+        {
+          "eyebrow": "The rule",
+          "heading": "Every day counts, exactly",
+          "body": "The Schengen 90/180 rule is a rolling window, not a calendar quarter — and border systems now log every entry and exit automatically. There's no rounding, and nothing to recalculate by hand.",
+          "markers": ["Day 87 of 90", "EES: entry logged", "ETIAS: tracked"]
+        },
+        {
+          "eyebrow": "The stakes",
+          "heading": "Miscounting has real consequences",
+          "body": "Overstaying can mean a fine, a formal entry ban, or being turned back at the gate — recorded against your passport, not just your memory.",
+          "markers": ["Overstay recorded", "Entry ban: 3 years", "Boarding denied"]
+        },
+        {
+          "eyebrow": "The fix",
+          "heading": "Know your exact status, before you fly",
+          "body": "Trip Check and the 90/180 calculator compute your exact position for any trip — cited to official sources, nothing guessed, nothing stored on our servers.",
+          "markers": ["90/180 tracked", "Sources cited", "Trip verified"]
+        }
+      ]
+    },
+    "previewHeading": "See it before you use it",
+    "previewSub": "A real result from Trip Check — not a mockup. Same data, same citations, same tool you'd get below.",
+    "previewBarLabel": "trip-check — US citizen → United Kingdom",
+    "previewEntry": "Can you go?",
+    "previewStay": "For how long?",
+    "previewItem": "Bringing {item}?",
+    "previewCta": "Try your own trip →",
+    "toolsHeading": "Two tools, two different jobs",
+    "tools": {
+      "tripCheck": {
+        "title": "Trip Check",
+        "body": "Tell us your nationality, your destination, and what you're bringing. We'll tell you if you can enter, how long you can stay, what documents you need, and whether your items clear customs — with a live route map.",
+        "bullets": ["Entry requirements", "Stay-length limits", "Required documents", "Customs verdicts"],
+        "cta": "Open Trip Check"
+      },
+      "calculator": {
+        "title": "Schengen 90/180 Calculator",
+        "body": "For travelers juggling multiple trips: the full rolling 180-day window, residence-permit exclusions, dual citizenship handling, a day-by-day visual timeline, PDF export, and reminders.",
+        "bullets": ["Multi-trip tracking", "PDF border report", "Passport-expiry reminders", "Shareable links"],
+        "cta": "Open the calculator"
+      }
+    },
+    "trustBadges": ["Cited to official sources", "Nothing stored on our servers", "Free — no account needed"],
+    "trustBadgeCoverage": "{count} destinations verified — growing weekly"
   },
   "calc": {
+    "pageH1": "Schengen 90/180 day calculator",
     "scopeTitle": "What to enter",
     "scopeNote": "Add your trips to Europe, including your current one if you're there now. Picking the country is optional but recommended: stays in non-Schengen countries (for example Ireland, Cyprus or the UK) are automatically excluded from the 90-day count, and recent joiners like Bulgaria, Romania and Croatia are handled correctly for dates before they joined Schengen.",
     "scopeSource": "Rule source: European Commission, short-stay calculator user manual",
@@ -214,11 +335,26 @@
     "report": {
       "button": "Copy border report",
       "copied": "Report copied — a plain-text summary of your stays and day count, ready to paste or print.",
+      "pdfButton": "Download PDF",
+      "pdfHeading": "Schengen 90/180 border report",
       "title": "Schengen 90/180 day report — generated {date}",
       "staysHeading": "Stays entered:",
       "stayLine": "- {entry} to {exit} ({days, plural, one {# day} other {# days}}, {country})",
       "permitSuffix": "[residence permit / D visa — excluded in issuing country]",
       "disclaimer": "Estimates for information only, not an official determination. Cross-check: https://ec.europa.eu/assets/home/visa-calculator/calculator.htm"
+    },
+    "reminders": {
+      "title": "Reminders",
+      "hint": "Optional, and never sent anywhere — the date stays only in this browser (same as \"remember my trips\" above). We'll show a warning here as dates approach, and you can add a one-click reminder to your own calendar app.",
+      "passportExpiryLabel": "Passport expiry date (optional)",
+      "passportStatus": "Your passport expires {date} ({days, plural, one {# day} other {# days}} from now).",
+      "passportExpired": "Your passport expired on {date}.",
+      "addToCalendar": "Add reminder to my calendar",
+      "passportEventTitle": "Passport renewal reminder",
+      "passportEventDescription": "Your passport expires on {date}. Many countries require 3–6 months of validity beyond your travel dates — check requirements before booking.",
+      "approachingLimit": "You have {days, plural, one {# day} other {# days}} left in your current 90/180 window — plan your next trip carefully.",
+      "limitEventTitle": "Your Schengen 90/180 allowance runs out",
+      "limitEventDescription": "Based on your entered stays, this is the last day of your current compliant stay. Check Odyssway again before booking further travel."
     },
     "computeError": "We can't compute this case yet: {message}",
     "estimatedTitle": "Estimates, not decisions",
@@ -258,6 +394,77 @@
     "about": "About",
     "methodology": "How we verify",
     "sources": "Sources",
-    "changelog": "Update history"
+    "changelog": "Update history",
+    "faq": "FAQ",
+    "blog": "Blog"
+  },
+  "destinationPage": {
+    "metaTitle": "Entry requirements and customs for {destination}",
+    "metaDescription": "Verified entry requirements, stay limits, and customs rules for travelling to {destination}, cited to official sources.",
+    "h1": "Travelling to {destination}",
+    "checkYourTripCta": "Check your specific trip →",
+    "entryTitle": "Entry requirements by nationality",
+    "itemsTitle": "What you can bring",
+    "upToDays": "up to {days} days per visit",
+    "verifiedLine": "Checked against official sources on {date}.",
+    "officialSourceLink": "Official source",
+    "requirement": {
+      "visa_free": "visa-free short stay",
+      "eta_required": "electronic travel authorisation (ETA) required",
+      "visa_required": "visa required",
+      "visa_on_arrival": "visa on arrival"
+    },
+    "verdict": {
+      "prohibited": "prohibited",
+      "allowed_with_limits": "allowed, within limits",
+      "allowed": "allowed",
+      "declaration_required": "allowed, must be declared",
+      "depends": "depends on specifics"
+    }
+  },
+  "tripCheck": {
+    "eyebrow": "Trip Check",
+    "title": "Where are you from, and where are you going?",
+    "subtitle": "Tell us your nationality, your destination, and what you're bringing — we'll tell you if you can enter, how long you can stay, what documents you need, and whether your items clear customs. Every answer is cited to an official source; if we haven't verified a pair yet, we say so instead of guessing.",
+    "fromLabel": "I'm from",
+    "fromPlaceholder": "Select your nationality",
+    "toLabel": "I'm going to",
+    "toPlaceholder": "Select a destination",
+    "schengenArea": "Schengen Area (any country, unspecified)",
+    "toGroupDestinations": "Destinations",
+    "toGroupSchengenStates": "Schengen Area — specific country",
+    "toGroupComingSoon": "Coming soon",
+    "comingSoonSuffix": "(coming soon)",
+    "bringingLabel": "I want to bring (optional)",
+    "bringingPlaceholder": "e.g. wine, cash, prescription medication",
+    "addItem": "Add",
+    "removeItem": "Remove {item}",
+    "submit": "Check my trip",
+    "notCoveredTitle": "We haven't verified {destination} yet",
+    "notCoveredBody": "Rather than guess, we're showing you this honestly: we don't yet have entry requirements for this pair, checked against an official source. Check directly with the destination's official authority below — we're adding new destinations regularly.",
+    "notCoveredLink": "Go to the official source",
+    "entryCardTitle": "Can you go?",
+    "basisCitizen": "You're a citizen of your destination — none of these rules apply to you.",
+    "basisVisaFree": "Yes — you can enter {destination} without a visa for a short stay. No application, no approval to wait on; just travel with the documents listed below.",
+    "basisEtaRequired": "Yes — with an approved Electronic Travel Authorisation (ETA). An ETA is a lightweight online pre-screening, not a visa: no interview, and it's usually approved within minutes to a few days — but it must be approved before you fly to {destination}, not on arrival.",
+    "basisVisaRequired": "You need a visa before travelling to {destination}. This means applying in advance — typically through an embassy, consulate, or authorized visa center — and getting it approved before you can board your flight.",
+    "basisVisaOnArrival": "Yes — a visa is issued on arrival in {destination}, so there's no advance application, but budget time and (usually) a fee at the border itself.",
+    "basisNotCovered": "We haven't verified this yet.",
+    "stayCardTitle": "For how long?",
+    "stayRollingWindow": "Up to {maxDays} days in any rolling {windowDays}-day period — the window slides with every day that passes, it isn't reset by leaving and re-entering.",
+    "stayFixedPerEntry": "Up to {maxDays} days per visit, counted fresh from each entry date.",
+    "stayVisaRequired": "Your stay length depends on the visa you're granted — it isn't a fixed number we can show until you know which visa category applies.",
+    "trackInCalculator": "Track multiple trips in the full Schengen calculator →",
+    "documentsCardTitle": "What documents do you need?",
+    "sourceLabel": "Source:",
+    "itemsCardTitle": "Can you bring it?",
+    "itemNotFound": "Not yet verified for {destination} — we won't guess. Check the destination's customs authority directly.",
+    "verdict": {
+      "prohibited": "Prohibited — do not bring this.",
+      "allowed_with_limits": "Allowed, within limits.",
+      "allowed": "Allowed.",
+      "declaration_required": "Allowed, but you must declare it.",
+      "depends": "Depends on specifics — see the notes below."
+    }
   }
 }

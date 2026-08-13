@@ -1,0 +1,3336 @@
+[
+  {
+    "slug": "alcohol-us",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "US",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "1 liter of alcoholic beverages duty-free per adult nonresident visitor",
+      "quantity": "1 liter"
+    },
+    "legal_source": {
+      "name": "19 CFR §148.43",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2023-title19-vol2/xml/CFR-2023-title19-vol2-sec148-43.xml"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-us",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars"
+    ],
+    "destination": "US",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "200 cigarettes, or 50 cigars, or 2 kg of smoking tobacco (proportionate combinations allowed), duty-free per adult nonresident visitor"
+    },
+    "notes": "Cigars of Cuban origin are separately restricted.",
+    "legal_source": {
+      "name": "19 CFR §148.43",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2023-title19-vol2/xml/CFR-2023-title19-vol2-sec148-43.xml"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-us",
+    "names": [
+      "cash",
+      "currency",
+      "money"
+    ],
+    "destination": "US",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Must file a report (FinCEN Form 105) if carrying more than $10,000 in currency or monetary instruments",
+      "quantity": "$10,000"
+    },
+    "legal_source": {
+      "name": "31 U.S.C. §5316; 31 CFR §1010.340",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2020-title31/pdf/USCODE-2020-title31-subtitleIV-chap53-subchapII-sec5316.pdf"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-us",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "drugs (prescription)"
+    ],
+    "destination": "US",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "No more than roughly a 90-day supply for personal use, in original containers, with your prescription or a doctor's note"
+    },
+    "notes": "FDA-unapproved medications may be refused entry even if legally prescribed abroad.",
+    "legal_source": {
+      "name": "U.S. Customs and Border Protection — Traveling with Medication to the United States",
+      "url": "https://help.cbp.gov/s/article/Article-1444"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-us",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc"
+    ],
+    "destination": "US",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Federally illegal at the border regardless of state or foreign-country legality, including for medical use.",
+    "legal_source": {
+      "name": "U.S. Customs and Border Protection — marijuana remains illegal under federal law",
+      "url": "https://www.cbp.gov/travel/clearing-cbp/cbp-reminds-travelers-canada-marijuana-remains-illegal-united-states"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cbd-us",
+    "names": [
+      "cbd",
+      "cbd oil",
+      "hemp extract"
+    ],
+    "destination": "US",
+    "category": "cbd_cannabis",
+    "verdict": "depends",
+    "limits": {
+      "description": "Legal only if THC content is below 0.3%"
+    },
+    "legal_source": {
+      "name": "U.S. Customs and Border Protection — CBD: know the facts",
+      "url": "https://www.cbp.gov/employee-resources/health-wellness/substance-abuse-prevention/cbd-know-facts"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-us",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk"
+    ],
+    "destination": "US",
+    "category": "food_animal",
+    "verdict": "prohibited",
+    "notes": "Most fresh meat and dairy products are prohibited; not declaring items can result in a penalty of up to $1,000.",
+    "legal_source": {
+      "name": "USDA APHIS — Don't Pack a Pest",
+      "url": "https://www.aphis.usda.gov"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-us",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds"
+    ],
+    "destination": "US",
+    "category": "food_plant",
+    "verdict": "prohibited",
+    "notes": "Most fresh fruits, vegetables, plants, seeds and soil are prohibited or require inspection; not declaring items can result in a penalty of up to $1,000.",
+    "legal_source": {
+      "name": "USDA APHIS — Don't Pack a Pest",
+      "url": "https://www.aphis.usda.gov"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-us",
+    "names": [
+      "weapons",
+      "knives",
+      "firearms",
+      "switchblade"
+    ],
+    "destination": "US",
+    "category": "weapons",
+    "verdict": "depends",
+    "notes": "Switchblade and other spring-loaded knives are generally prohibited. Firearms require advance ATF authorization (Form 6NIA for nonimmigrant visitors) and must be declared on CBP Form 4457.",
+    "legal_source": {
+      "name": "U.S. Customs and Border Protection — prohibited and restricted items",
+      "url": "https://help.cbp.gov/s/article/Article-1123"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-gb",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "GB",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Up to 42 litres of beer, 18 litres of still wine, plus either 4 litres of spirits (over 22% ABV) or 9 litres of drinks up to 22% ABV, duty-free"
+    },
+    "legal_source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-gb",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars"
+    ],
+    "destination": "GB",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "One of: 200 cigarettes, 100 cigarillos, 50 cigars, 250g loose tobacco, or 200 heated-tobacco sticks (splittable across categories), duty-free"
+    },
+    "legal_source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-gb",
+    "names": [
+      "cash",
+      "currency",
+      "money"
+    ],
+    "destination": "GB",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Must declare cash of £10,000 or more (any currency) when crossing the Great Britain border; a €10,000 threshold applies for Northern Ireland",
+      "quantity": "£10,000"
+    },
+    "legal_source": {
+      "name": "gov.uk — Bringing cash into the UK",
+      "url": "https://www.gov.uk/bringing-cash-into-uk"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-gb",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "drugs (prescription)"
+    ],
+    "destination": "GB",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Up to 3 months' supply without a licence; longer supplies, or any Schedule 1 controlled drug, require a Home Office licence applied for at least 14 days ahead"
+    },
+    "legal_source": {
+      "name": "gov.uk — Taking controlled drugs into the UK",
+      "url": "https://www.gov.uk/travelling-controlled-drugs"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-gb",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc"
+    ],
+    "destination": "GB",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Cannabis is a controlled drug and listed among banned goods. Some CBD products may be treated differently depending on their cannabinoid content — check before travelling if bringing CBD specifically.",
+    "legal_source": {
+      "name": "gov.uk — Banned and restricted goods",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/banned-and-restricted-goods"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-gb",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk"
+    ],
+    "destination": "GB",
+    "category": "food_animal",
+    "verdict": "depends",
+    "limits": {
+      "description": "From the EU/EEA/Switzerland: cheese, milk, dairy, and most red meats are banned, but fish, poultry, eggs and honey are allowed. From all other countries: all meat and dairy products are banned outright, with narrow exceptions for honey and infant/medical foods up to 2kg."
+    },
+    "legal_source": {
+      "name": "gov.uk — Bringing meat, dairy, fish and other animal products into Great Britain",
+      "url": "https://www.gov.uk/bringing-food-into-great-britain/meat-dairy-fish-animal-products"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-gb",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping liquid",
+      "e-liquid"
+    ],
+    "destination": "GB",
+    "category": "e_cigarettes",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Counted under the general personal-goods allowance of £390 (no separate vape category yet)"
+    },
+    "notes": "A dedicated Vaping Products Duty and a distinct duty-free allowance take effect from 1 October 2026 — check gov.uk closer to your travel date.",
+    "legal_source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-gb",
+    "names": [
+      "weapons",
+      "knives",
+      "pepper spray",
+      "self-defence spray"
+    ],
+    "destination": "GB",
+    "category": "weapons",
+    "verdict": "depends",
+    "notes": "Flick knives and several other specific knife types, self-defence sprays (including pepper spray and CS gas), knuckledusters and stun guns are banned outright. Firearms, explosives and ammunition require a special licence.",
+    "legal_source": {
+      "name": "gov.uk — Banned and restricted goods",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/banned-and-restricted-goods"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-ca",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "CA",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Up to 1.5 litres of wine, 1.14 litres of spirits, or 8.5 litres of beer/ale duty-free"
+    },
+    "notes": "This duty-free allowance is generally tied to how long you were away before arriving; if in doubt, declare and ask the CBSA officer. Provincial minimum age applies.",
+    "legal_source": {
+      "name": "CBSA — Alcohol and tobacco limits",
+      "url": "https://www.cbsa-asfc.gc.ca/travel-voyage/atl-lat-eng.html"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-ca",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars"
+    ],
+    "destination": "CA",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Up to 200 cigarettes, 50 cigars, 200g manufactured tobacco, and 200 tobacco sticks duty-free; packages must be stamped \"duty paid Canada droit acquitté\""
+    },
+    "legal_source": {
+      "name": "CBSA — Alcohol and tobacco limits",
+      "url": "https://www.cbsa-asfc.gc.ca/travel-voyage/atl-lat-eng.html"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-ca",
+    "names": [
+      "cash",
+      "currency",
+      "money"
+    ],
+    "destination": "CA",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Must declare currency or monetary instruments valued at CAD $10,000 or more",
+      "quantity": "CAD $10,000"
+    },
+    "legal_source": {
+      "name": "CBSA — Travellers and their goods",
+      "url": "https://www.cbsa-asfc.gc.ca/travel-voyage/ttd-vdd-eng.html"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-ca",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "drugs (prescription)"
+    ],
+    "destination": "CA",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "A 90-day supply, or a single course of treatment, whichever is less, in original or clearly labelled packaging"
+    },
+    "notes": "Controlled substances must always be declared to the CBSA officer.",
+    "legal_source": {
+      "name": "Health Canada — Personal use health products guidance",
+      "url": "https://www.canada.ca/en/health-canada/services/drugs-health-products/compliance-enforcement/importation-exportation/personal-use-health-products-guidance/document.html"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-cbd-ca",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "cbd",
+      "cbd oil"
+    ],
+    "destination": "CA",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Illegal to bring cannabis or any cannabis product — including THC or CBD oils — into or out of Canada in any amount, even though cannabis is legal domestically and even with a medical authorization, unless you hold a rare Health Canada permit or exemption.",
+    "legal_source": {
+      "name": "CBSA — Bringing cannabis across the border",
+      "url": "https://www.cbsa-asfc.gc.ca/travel-voyage/cannabis-eng.html"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-ca",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk"
+    ],
+    "destination": "CA",
+    "category": "food_animal",
+    "verdict": "depends",
+    "limits": {
+      "description": "Meat from the US: allowed up to 20kg if hand-carried. Fresh, dried or cured meat from other countries: generally not permitted. Dairy from any country: only ice cream, yogurt, kashk and pasteurized cheese are permitted."
+    },
+    "legal_source": {
+      "name": "CBSA — Food, plant and animal products",
+      "url": "https://www.cbsa-asfc.gc.ca/services/fpa-apa/bringing-apporter-fpa-eng.html"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-ca",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping liquid",
+      "e-liquid"
+    ],
+    "destination": "CA",
+    "category": "e_cigarettes",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Maximum of 120 millilitres (liquid) or 120 grams (solid) duty-free",
+      "quantity": "120 mL / 120 g"
+    },
+    "notes": "Minimum age 18 to bring tobacco or vaping products into Canada.",
+    "legal_source": {
+      "name": "CBSA — Alcohol and tobacco limits",
+      "url": "https://www.cbsa-asfc.gc.ca/travel-voyage/atl-lat-eng.html"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-ca",
+    "names": [
+      "weapons",
+      "knives",
+      "pepper spray",
+      "taser"
+    ],
+    "destination": "CA",
+    "category": "weapons",
+    "verdict": "depends",
+    "notes": "Most weapons are prohibited from entering Canada, including tasers, pepper spray and certain knives. A narrow exception exists for bear/dog repellent spray labelled strictly for use against animals.",
+    "legal_source": {
+      "name": "CBSA — Travel checklist",
+      "url": "https://www.cbsa-asfc.gc.ca/travel-voyage/checklist-aidememoire-eng.html"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-eu",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "EU",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "1 litre of spirits over 22% ABV, or 2 litres of drinks up to 22% ABV (combinable proportionally) — plus, additively, 4 litres of still wine and 16 litres of beer, duty-free"
+    },
+    "notes": "Does not apply to travellers under 17.",
+    "legal_source": {
+      "name": "Council Directive 2007/74/EC, Art. 9",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32007L0074"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-eu",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars"
+    ],
+    "destination": "EU",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "200 cigarettes, or 100 cigarillos, or 50 cigars, or 250g smoking tobacco (each figure is 100% of the allowance, splittable across types), duty-free"
+    },
+    "notes": "Does not apply to travellers under 17. Some member states apply lower limits for land travellers than for air travellers.",
+    "legal_source": {
+      "name": "Council Directive 2007/74/EC, Art. 8",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32007L0074"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-eu",
+    "names": [
+      "cash",
+      "currency",
+      "money"
+    ],
+    "destination": "EU",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Must declare cash of €10,000 or more (including bearer instruments and highly liquid stores of value) when entering or leaving the EU",
+      "quantity": "€10,000"
+    },
+    "legal_source": {
+      "name": "Regulation (EU) 2018/1672, Art. 3(1)",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32018R1672"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-eu",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "drugs (prescription)"
+    ],
+    "destination": "EU",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Ordinary prescription medicine is a national-law matter, not EU-harmonized. Narcotic or psychotropic medication may be carried with a doctor's certificate valid for up to 30 days."
+    },
+    "legal_source": {
+      "name": "Convention Implementing the Schengen Agreement, Art. 75",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02)"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-eu",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk"
+    ],
+    "destination": "EU",
+    "category": "food_animal",
+    "verdict": "depends",
+    "limits": {
+      "description": "Meat and dairy products are excluded from the general personal-import exemption and are effectively banned from most third countries. Other animal-origin products (e.g. honey), fishery products, and infant/medical foods have narrow exemptions up to 2–20kg."
+    },
+    "notes": "Andorra, Iceland, Liechtenstein, Norway, San Marino and Switzerland are exempt from these controls.",
+    "legal_source": {
+      "name": "Commission Delegated Regulation (EU) 2019/2122, Art. 7 and Annex I",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R2122"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-eu",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping liquid",
+      "e-liquid"
+    ],
+    "destination": "EU",
+    "category": "e_cigarettes",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Falls under the general personal-goods value threshold: €300 for land travellers, €430 for air/sea travellers"
+    },
+    "legal_source": {
+      "name": "Council Directive 2007/74/EC, Art. 7",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32007L0074"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-eu",
+    "names": [
+      "weapons",
+      "firearms",
+      "knives"
+    ],
+    "destination": "EU",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "Carrying a firearm through two or more Schengen states generally requires each state's prior authorisation, recorded on a European Firearms Pass, with a narrow exception for hunters/target shooters/re-enactors travelling with a valid Pass."
+    },
+    "notes": "Knife possession is not EU-harmonized — it varies by national law.",
+    "legal_source": {
+      "name": "Directive (EU) 2021/555, Art. 17",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32021L0555"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-eu",
+    "names": [
+      "drone",
+      "quadcopter"
+    ],
+    "destination": "EU",
+    "category": "drones",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "No dedicated customs rule; falls under the general personal-goods value threshold: €300 for land travellers, €430 for air/sea travellers"
+    },
+    "notes": "Separate EASA rules govern where and how you may fly a drone in the EU — this entry covers customs entry only, not flight operation.",
+    "legal_source": {
+      "name": "Council Directive 2007/74/EC, Art. 7",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32007L0074"
+    },
+    "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-jp",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "JP",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "3 bottles (760 mL each) of alcoholic beverages duty-free per adult traveler",
+      "quantity": "3 x 760 mL bottles"
+    },
+    "notes": "No alcohol allowance for travelers under 20.",
+    "legal_source": {
+      "name": "Japan Customs — Duty-Free Allowance for Accompanied Personal Effects of Overseas Travelers (FAQ 7105)",
+      "url": "https://www.customs.go.jp/english/c-answer_e/keitaibetsuso/7105_e.htm"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-jp",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars"
+    ],
+    "destination": "JP",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "One of: 200 cigarettes, 50 cigars, 10 packages of heated-tobacco sticks, or 250 g of other tobacco, duty-free per adult traveler",
+      "quantity": "200 cigarettes (or equivalent)"
+    },
+    "notes": "No tobacco allowance for travelers under 20.",
+    "legal_source": {
+      "name": "Japan Customs — Duty-Free Allowance for Accompanied Personal Effects of Overseas Travelers (FAQ 7105)",
+      "url": "https://www.customs.go.jp/english/c-answer_e/keitaibetsuso/7105_e.htm"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-jp",
+    "names": [
+      "cash",
+      "currency",
+      "money"
+    ],
+    "destination": "JP",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Must submit a \"Declaration of Carrying of Means of Payment, etc.\" when carrying cash, checks (incl. traveler's checks), promissory notes, or securities exceeding ¥1,000,000 (or equivalent) into or out of Japan; also applies to over 1 kg of gold at 90%+ purity",
+      "quantity": "¥1,000,000"
+    },
+    "legal_source": {
+      "name": "Japan Customs — Export/Import of Means of Payment, etc. (FAQ 7305)",
+      "url": "https://www.customs.go.jp/english/c-answer_e/keitaibetsuso/7305_e.htm"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-jp",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "otc medicine"
+    ],
+    "destination": "JP",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "General over-the-counter drugs and quasi-drugs: up to a 2-month supply. Prescription drugs (and poisons/deadly poisons under Japanese law): up to a 1-month supply. External preparations: up to 24 pieces per item. Larger quantities require a Yakkan Shoumei (import confirmation certificate) obtained in advance."
+    },
+    "notes": "Narcotics, psychotropics, and stimulant raw materials are governed separately and are far more restricted — see the dedicated 'stimulant medication' entry.",
+    "legal_source": {
+      "name": "Japan Customs — Private Importation of Drugs, Cosmetics, etc. (FAQ 1806)",
+      "url": "https://www.customs.go.jp/english/c-answer_e/imtsukan/1806_e.htm"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "stimulant-medication-jp",
+    "names": [
+      "pseudoephedrine",
+      "sudafed",
+      "vicks inhaler",
+      "adderall",
+      "amphetamine",
+      "decongestant",
+      "vyvanse",
+      "lisdexamfetamine",
+      "stimulant medication"
+    ],
+    "destination": "JP",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Amphetamine and methamphetamine (e.g. Adderall) cannot be brought into Japan under any circumstances, even with a valid foreign prescription. Products classified as 'stimulants' raw materials' — including pseudoephedrine (found in many common decongestants) and lisdexamfetamine (Vyvanse) — require advance permission from Japan's Narcotics Control Department before you travel."
+    },
+    "notes": "Apply at least 14 days before travel; applications typically require a doctor's certificate. Do not simply pack common decongestants like Sudafed or Vicks inhalers without checking first — travelers have been detained for unknowingly carrying pseudoephedrine-based medication into Japan.",
+    "legal_source": {
+      "name": "Narcotics Control Department, Ministry of Health, Labour and Welfare — bringing narcotics and stimulant raw materials into Japan",
+      "url": "https://www.ncd.mhlw.go.jp/en/application2.html"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-jp",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish"
+    ],
+    "destination": "JP",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Products extracted or manufactured from any part of the cannabis plant other than the stalks or seeds (leaves, buds, branches, roots) are regulated as 'cannabis' under the Cannabis Control Act. Importing them requires an Import Permission from the Ministry of Health, Labour and Welfare, which is not realistically available for personal travel use — treat as prohibited.",
+    "legal_source": {
+      "name": "Tokyo Customs — Cannabis Control Act",
+      "url": "https://www.customs.go.jp/tokyo/english/yuubin/taimatorishimari.htm"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cbd-jp",
+    "names": [
+      "cbd",
+      "cbd oil",
+      "hemp extract"
+    ],
+    "destination": "JP",
+    "category": "cbd_cannabis",
+    "verdict": "depends",
+    "limits": {
+      "description": "Legal to import only if extracted solely from the stalks or seeds of the cannabis plant, accompanied by a Certificate of Manufacture and a Component Analysis Report from an accredited laboratory proving both the plant-part origin and absence of THC."
+    },
+    "notes": "Products made from leaves or flowers are treated as prohibited cannabis regardless of THC content or how the product is marketed abroad. Japan tightened cannabis-related enforcement under a revised Cannabis Control Act effective December 2024; we could not verify the exact post-revision THC detection threshold against a primary source in this pass (see data/UNVERIFIED/TODO.md). Do not bring CBD products into Japan without pre-clearing them.",
+    "legal_source": {
+      "name": "Tokyo Customs — Cannabis Control Act",
+      "url": "https://www.customs.go.jp/tokyo/english/yuubin/taimatorishimari.htm"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-jp",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "ham",
+      "sausage"
+    ],
+    "destination": "JP",
+    "category": "food_animal",
+    "verdict": "prohibited",
+    "notes": "Meat and meat products (ham, sausage, jerky, etc.) generally cannot be brought in without an export health certificate issued by the exporting country's government — something individual travelers essentially never have, so treat meat as prohibited in practice. Small quantities of dairy products (roughly 10 kg or less, not for resale) carried in accompanied baggage are treated more leniently, but check with the Animal Quarantine Service counter on arrival. Violations carry up to 3 years' imprisonment or a ¥3,000,000 fine.",
+    "legal_source": {
+      "name": "Animal Quarantine Service (MAFF) — Bringing animal products into Japan",
+      "url": "https://www.maff.go.jp/aqs/english/product/import.html"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-jp",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds"
+    ],
+    "destination": "JP",
+    "category": "food_plant",
+    "verdict": "prohibited",
+    "notes": "Most fresh fruits and vegetables cannot be brought in at all. Seeds, seedlings, cut flowers, beans and rice generally require a phytosanitary certificate issued by the exporting country's government. Soil, and plants with soil attached, are always prohibited. Violations carry up to 3 years' imprisonment or a ¥3,000,000 fine.",
+    "legal_source": {
+      "name": "Plant Protection Station (MAFF) — Request to people coming to Japan",
+      "url": "https://www.maff.go.jp/pps/j/pqaqinfo_en.html"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-jp",
+    "names": [
+      "weapons",
+      "knives",
+      "firearms",
+      "swords"
+    ],
+    "destination": "JP",
+    "category": "weapons",
+    "verdict": "depends",
+    "notes": "Firearms (pistols, rifles, machine guns), their ammunition, and pistol parts are prohibited outright. Hunting guns, air guns, and swords are restricted rather than banned — importing them requires import approval from the Minister of Economy, Trade and Industry plus a Permission to Possess Firearms/Swords issued by a Prefectural Public Safety Commission, verified at Customs. Not a realistic option for casual travelers.",
+    "legal_source": {
+      "name": "Japan Customs — Customs' confirmation requirement under the Firearms and Swords Possession Control Law (FAQ 1809)",
+      "url": "https://www.customs.go.jp/english/c-answer_e/imtsukan/1809_e.htm"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-ke",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "KE",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Spirits (including liqueurs) up to 1 litre, or wine up to 2 litres, duty-free per traveller aged 18 and over",
+      "quantity": "1 litre spirits or 2 litres wine"
+    },
+    "legal_source": {
+      "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
+      "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-ke",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars"
+    ],
+    "destination": "KE",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Cigarettes, cigars, cheroots, cigarillos, tobacco and snuff not exceeding 250 grammes in total weight, duty-free",
+      "quantity": "250g"
+    },
+    "legal_source": {
+      "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
+      "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-ke",
+    "names": [
+      "cash",
+      "currency",
+      "money"
+    ],
+    "destination": "KE",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Kenya Revenue Authority passenger-clearance guidance requires declaring currency of USD 10,000 or more (or equivalent) on the Passenger Declaration Form (F88) on arrival",
+      "quantity": "$10,000"
+    },
+    "notes": "A separate, older Central Bank of Kenya regulation (Legal Notice No. 118 of 1998, still in force and unamended) sets a lower threshold — currency exceeding KSh 500,000 or the equivalent of USD 5,000 must be declared to a Customs Officer on Form CBK/C.D./1. The two official sources do not agree on the figure; to stay on the safe side, declare at the lower USD 5,000 threshold if in doubt.",
+    "legal_source": {
+      "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
+      "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-ke",
+    "names": [
+      "drone",
+      "quadcopter",
+      "uav",
+      "unmanned aircraft"
+    ],
+    "destination": "KE",
+    "category": "drones",
+    "verdict": "depends",
+    "notes": "Drones may not be imported into Kenya without a permit issued by the Kenya Civil Aviation Authority (KCAA) (Civil Aviation (Unmanned Aircraft Systems) Regulations, 2020, reg. 7(1)). Visitors can apply for a temporary permit, valid for operation of the UAS for up to 30 days and renewable once (reg. 11(1)). KRA's own restricted-items list separately confirms drones require authorisation before customs release. Apply to KCAA before travelling — do not assume a drone can simply be carried through customs.",
+    "legal_source": {
+      "name": "Civil Aviation (Unmanned Aircraft Systems) Regulations, 2020 (Kenya Civil Aviation Authority)",
+      "url": "https://www.kcaa.or.ke/sites/default/files/regulation/Civil%20Aviation%20(Unmanned%20Aircraft%20Systems)%20Regulations%202020.pdf"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-ke",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "drugs (prescription)"
+    ],
+    "destination": "KE",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "KRA lists \"Medicaments\" among items restricted for import: they require authorisation/permit from the relevant government institution before Customs will release them. KRA's public guidance does not name the specific licensing body or state a personal-use quantity threshold, so neither is published here — confirm with a Kenyan diplomatic mission before travelling with prescription medication.",
+    "legal_source": {
+      "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
+      "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-ke",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc"
+    ],
+    "destination": "KE",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "\"Narcotic drugs\" are listed as prohibited imports under the Second/Third Schedule of the East African Community Customs Management Act, 2004, as cited in KRA's own passenger-clearance guidance. Cannabis/marijuana is a controlled narcotic drug in Kenya (Narcotic Drugs and Psychotropic Substances (Control) Act) and is not legal for recreational or medical use. CBD-specific treatment (e.g. a THC percentage threshold, as some other countries define) was not found on a primary Kenyan source in this research pass — treat any cannabis-derived product as prohibited until that is confirmed.",
+    "legal_source": {
+      "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
+      "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-ke",
+    "names": [
+      "weapons",
+      "knives",
+      "firearms",
+      "ammunition"
+    ],
+    "destination": "KE",
+    "category": "weapons",
+    "verdict": "depends",
+    "notes": "Arms and ammunition are listed by KRA as restricted imports: they require authorisation/licence from the relevant government institution before Customs will release them. Spent cartridges are separately listed as restricted. KRA's guidance does not name the specific licensing body, so it is not stated here.",
+    "legal_source": {
+      "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
+      "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "plants-seeds-ke",
+    "names": [
+      "plants",
+      "seeds",
+      "flowers",
+      "plant material"
+    ],
+    "destination": "KE",
+    "category": "food_plant",
+    "verdict": "depends",
+    "notes": "\"Plants and Plant material\" are listed by KRA as restricted imports, requiring a permit/licence from the relevant government institution before Customs will release them. KRA's guidance does not name the specific licensing body, so it is not stated here. No blanket personal-use exemption is published on the primary source used here.",
+    "legal_source": {
+      "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
+      "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-za",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "ZA",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "2 litres of wine plus 1 litre of other alcoholic beverages (including beer), duty-free per person, once per 30-day cycle after an absence of 48 hours or more",
+      "quantity": "2 litres wine + 1 litre other alcohol"
+    },
+    "notes": "Not available to travellers under 18. Allowances may not be pooled between travellers.",
+    "legal_source": {
+      "name": "SARS — SC-PA-01-03 Duty Free Allowances for Travellers (External Guide, Rev. 8, eff. 1 July 2026)",
+      "url": "https://www.sars.gov.za/wp-content/uploads/Docs/Customs/SC-PA-01-03-Duty-Free-Allowances-for-Travellers-External-Guide.pdf"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-za",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars"
+    ],
+    "destination": "ZA",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "200 cigarettes, or 20 cigars, or 250g combined pipe/cigarette tobacco, duty-free per person, once per 30-day cycle after an absence of 48 hours or more"
+    },
+    "notes": "Not available to travellers under 18.",
+    "legal_source": {
+      "name": "SARS — SC-PA-01-03 Duty Free Allowances for Travellers (External Guide, Rev. 8, eff. 1 July 2026)",
+      "url": "https://www.sars.gov.za/wp-content/uploads/Docs/Customs/SC-PA-01-03-Duty-Free-Allowances-for-Travellers-External-Guide.pdf"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-za",
+    "names": [
+      "cash",
+      "currency",
+      "money"
+    ],
+    "destination": "ZA",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "South African bank notes must be declared on arrival. Currency — Rand, or foreign currency convertible to Rand — in excess of R100,000 requires National Treasury/SARB permission and must be reported under the Financial Intelligence Centre Act; undeclared excess currency is subject to search and seizure.",
+      "quantity": "R100,000"
+    },
+    "legal_source": {
+      "name": "SARS — SC-PA-01-06 Excess Currency External Policy (Rev. 11, eff. 1 July 2026)",
+      "url": "https://www.sars.gov.za/wp-content/uploads/Ops/Policies/SC-PA-01-06-Excess-Currency-External-Policy.pdf"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-za",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "drugs (prescription)"
+    ],
+    "destination": "ZA",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Personal medicines for up to three months' use are allowed, accompanied by a prescription issued by a medical doctor."
+    },
+    "legal_source": {
+      "name": "SARS — SC-PA-01-03 Duty Free Allowances for Travellers (External Guide, Rev. 8, eff. 1 July 2026)",
+      "url": "https://www.sars.gov.za/wp-content/uploads/Docs/Customs/SC-PA-01-03-Duty-Free-Allowances-for-Travellers-External-Guide.pdf"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-za",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "cbd",
+      "cbd oil"
+    ],
+    "destination": "ZA",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "SARS's traveller guide lists 'narcotics and habit-forming drugs' among goods that may not be imported at all, with no exception described for cannabis or CBD. South African domestic law separately decriminalises private personal cannabis use/cultivation within the country's borders, but that does not extend to importation across the border. We could not independently confirm, against a SAHPRA primary source, the low-dose (Schedule 0) CBD exemption some secondary sources describe — treat any cannabis or CBD product as prohibited for import until that is verified.",
+    "legal_source": {
+      "name": "SARS — SC-PA-01-03 Duty Free Allowances for Travellers (External Guide, Rev. 8, eff. 1 July 2026)",
+      "url": "https://www.sars.gov.za/wp-content/uploads/Docs/Customs/SC-PA-01-03-Duty-Free-Allowances-for-Travellers-External-Guide.pdf"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-za",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk"
+    ],
+    "destination": "ZA",
+    "category": "food_animal",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Animal products, including meat and dairy, are restricted goods and may only be imported under permit or quota."
+    },
+    "notes": "SARS's guide only confirms the general permit requirement, not itemised quantities or species-specific exceptions; check with the Department of Agriculture, Land Reform and Rural Development (DALRRD) before travelling with any animal product.",
+    "legal_source": {
+      "name": "SARS — SC-PA-01-03 Duty Free Allowances for Travellers (External Guide, Rev. 8, eff. 1 July 2026)",
+      "url": "https://www.sars.gov.za/wp-content/uploads/Docs/Customs/SC-PA-01-03-Duty-Free-Allowances-for-Travellers-External-Guide.pdf"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-za",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds"
+    ],
+    "destination": "ZA",
+    "category": "food_plant",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Plants and plant products are restricted goods and may only be imported under permit or quota."
+    },
+    "notes": "SARS's guide only confirms the general permit requirement, not itemised quantities or species-specific exceptions; check with DALRRD before travelling with any plant product.",
+    "legal_source": {
+      "name": "SARS — SC-PA-01-03 Duty Free Allowances for Travellers (External Guide, Rev. 8, eff. 1 July 2026)",
+      "url": "https://www.sars.gov.za/wp-content/uploads/Docs/Customs/SC-PA-01-03-Duty-Free-Allowances-for-Travellers-External-Guide.pdf"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-za",
+    "names": [
+      "weapons",
+      "firearms",
+      "knives"
+    ],
+    "destination": "ZA",
+    "category": "weapons",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Firearms are restricted goods — they may only be imported under permit and are excluded from every traveller duty-free allowance."
+    },
+    "notes": "Military weapons are prohibited outright. Firearm import-permit process details (issuing authority, timelines) were not independently verified against a South African Police Service primary source in this pass.",
+    "legal_source": {
+      "name": "SARS — SC-PA-01-03 Duty Free Allowances for Travellers (External Guide, Rev. 8, eff. 1 July 2026)",
+      "url": "https://www.sars.gov.za/wp-content/uploads/Docs/Customs/SC-PA-01-03-Duty-Free-Allowances-for-Travellers-External-Guide.pdf"
+    },
+    "verified_at": "2026-08-11",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-mx",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "MX",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Adults (18+) may bring up to 3 liters of spirits/liquor plus 6 liters of wine duty-free as part of personal baggage; alcoholic beverages cannot be counted toward the separate USD 500 general merchandise franchise.",
+      "quantity": "3 L spirits + 6 L wine"
+    },
+    "notes": "No alcohol allowance for travelers under 18.",
+    "legal_source": {
+      "name": "ANAM (Agencia Nacional de Aduanas de México) — Equipaje y franquicia",
+      "url": "https://www.anam.gob.mx/equipaje-y-franquicia/"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-mx",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars"
+    ],
+    "destination": "MX",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Adults (18+) may bring up to 20 packs of cigarettes, or 25 cigars, or 200 grams of tobacco duty-free as part of personal baggage; tobacco products cannot be counted toward the separate USD 500 general merchandise franchise.",
+      "quantity": "20 cigarette packs (or equivalent)"
+    },
+    "notes": "No tobacco allowance for travelers under 18.",
+    "legal_source": {
+      "name": "ANAM (Agencia Nacional de Aduanas de México) — Equipaje y franquicia",
+      "url": "https://www.anam.gob.mx/equipaje-y-franquicia/"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-mx",
+    "names": [
+      "cash",
+      "currency",
+      "money"
+    ],
+    "destination": "MX",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Must file a declaration (form for “Declaración de Internación o Extracción de Cantidades en Efectivo o Documentos por Cobrar”) when carrying cash, domestic/foreign checks, payment orders, or other negotiable documents exceeding USD 10,000 or its equivalent into or out of Mexico.",
+      "quantity": "USD 10,000"
+    },
+    "notes": "Carrying more than USD 10,000 is not itself illegal; failing to declare it is. Under-declaring more than USD 10,000 carries a fine of 20–40% of the amount over the threshold; amounts over USD 30,000 that are undeclared can trigger criminal penalties (3–6 years) and forfeiture unless lawful origin is proven.",
+    "legal_source": {
+      "name": "ANAM — Declaración de dinero",
+      "url": "https://www.anam.gob.mx/declaracion-de-dinero/"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "medication-mx",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "otc medicine"
+    ],
+    "destination": "MX",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Personal-use medications (medicamentos de uso personal) are allowed in personal baggage. For psychotropic/controlled substances, a medical prescription must be presented; quantities should be consistent with a personal treatment course."
+    },
+    "notes": "ANAM's own guidance does not publish an exact day-supply or unit limit the way Japan's does; treat prescription/controlled medication as requiring supporting documentation (prescription, and ideally a doctor's note) rather than assuming a specific numeric cap. See TODO for what remains unverified here.",
+    "legal_source": {
+      "name": "ANAM (Agencia Nacional de Aduanas de México) — Equipaje y franquicia",
+      "url": "https://www.anam.gob.mx/equipaje-y-franquicia/"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cbd-cannabis-mx",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "cbd",
+      "hemp"
+    ],
+    "destination": "MX",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "ANAM's own list of merchandise that cannot be brought into Mexico includes “estupefacientes” (narcotics/controlled substances), which covers cannabis and its extracts. No CBD-specific carve-out or THC threshold was found on a primary ANAM/COFEPRIS source in this pass — treat all cannabis-derived products, including CBD, as prohibited to bring across the border regardless of legality at origin or in Mexican domestic law.",
+    "legal_source": {
+      "name": "ANAM — Mercancía que no puedes ingresar a México",
+      "url": "https://www.anam.gob.mx/mercancia-que-no-puedes-ingresar-a-mexico/"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-mx",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping device",
+      "electronic cigarette",
+      "heated tobacco"
+    ],
+    "destination": "MX",
+    "category": "e_cigarettes",
+    "verdict": "prohibited",
+    "notes": "E-cigarettes and similar personal electronic/electric vaporization devices — including heated-tobacco and nicotine-delivery systems — are explicitly listed by ANAM as merchandise that cannot be brought into Mexico (tariff classification 8543.40.01 LIGIE).",
+    "legal_source": {
+      "name": "ANAM — Mercancía que no puedes ingresar a México",
+      "url": "https://www.anam.gob.mx/mercancia-que-no-puedes-ingresar-a-mexico/"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-mx",
+    "names": [
+      "weapons",
+      "firearms",
+      "ammunition",
+      "knives"
+    ],
+    "destination": "MX",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "notes": "Firearms, ammunition, explosives, gunpowder, and fireworks require prior authorization from the Secretaría de la Defensa Nacional (SEDENA) to import; ordinary tourists are not eligible — the only traveler exception is a SEDENA “permiso extraordinario” for hunting/sport-shooting visitors with firearms/ammunition covered by that specific permit. Bringing a firearm without authorization is a serious federal crime (penalties up to 5–30 years for restricted/military-grade items, 3–10 years for other firearms).",
+    "legal_source": {
+      "name": "ANAM — Mercancía regulada por parte de la Secretaría de la Defensa Nacional",
+      "url": "https://www.anam.gob.mx/mercancia-regulada-por-parte-de-la-secretaria-de-la-defensa-nacional/"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "food-animal-mx",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "animal products"
+    ],
+    "destination": "MX",
+    "category": "food_animal",
+    "verdict": "prohibited",
+    "notes": "SENASICA's traveler-facing prohibited list includes fresh meat of any species/origin, fresh cheeses (e.g. asadero, cottage, mozzarella, panela), home-made/artisanal meat and dairy products, and pork products/derivatives from countries with African Swine Fever — none of these may be brought in personal baggage. The list is explicitly stated as illustrative, not exhaustive (“ensunciativa, más no limitativa”).",
+    "legal_source": {
+      "name": "SENASICA — Productos prohibidos (información para viajeros)",
+      "url": "https://www.gob.mx/senasica/documentos/productos-prohibidos?state=published"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "food-plant-mx",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds",
+      "flowers"
+    ],
+    "destination": "MX",
+    "category": "food_plant",
+    "verdict": "prohibited",
+    "notes": "SENASICA's traveler-facing prohibited list includes fresh fruits and vegetables, cut flowers/plants/in-vitro plantlets, fresh foliage, propagative material (seeds, bulbs, cuttings, buds), grains/seeds (corn, beans, rice, quinoa, wheat, sesame, sunflower), green coffee and green tobacco, and fresh chestnuts, unless accompanied by the required phytosanitary documentation — which is not realistically available to an ordinary tourist. Soil/earth is prohibited outright with no exception. The list is explicitly stated as illustrative, not exhaustive.",
+    "legal_source": {
+      "name": "SENASICA — Productos prohibidos (información para viajeros)",
+      "url": "https://www.gob.mx/senasica/documentos/productos-prohibidos?state=published"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-th",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "TH",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Up to 1 litre of alcoholic beverages duty-free per traveler entering Thailand.",
+      "quantity": "1 litre"
+    },
+    "notes": "Amounts above the allowance must be declared and duty paid, or surrendered to Customs; undeclared excess alcohol can be seized and may lead to prosecution.",
+    "legal_source": {
+      "name": "Thai Customs Department — Individual travelers: duty-free allowance and restricted/prohibited goods",
+      "url": "https://www.customs.go.th/list_strc_simple_neted.php?ini_content=individual_160503_03_160905_01&lang=en&left_menu=menu_individual_submenu_01_160421_01"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-th",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars"
+    ],
+    "destination": "TH",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Up to 200 cigarettes, or 250 g of cigars/smoking tobacco, or 250 g of a combination of tobacco products, duty-free per traveler.",
+      "quantity": "200 cigarettes (or equivalent)"
+    },
+    "notes": "Amounts above the allowance must be declared and duty paid, or surrendered to Customs.",
+    "legal_source": {
+      "name": "Thai Customs Department — Individual travelers: duty-free allowance and restricted/prohibited goods",
+      "url": "https://www.customs.go.th/list_strc_simple_neted.php?ini_content=individual_160503_03_160905_01&lang=en&left_menu=menu_individual_submenu_01_160421_01"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-th",
+    "names": [
+      "cash",
+      "currency",
+      "money"
+    ],
+    "destination": "TH",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "A Customs declaration is required when bringing into or taking out of Thailand Thai baht banknotes exceeding THB 450,000, or foreign currency banknotes exceeding USD 15,000 (or equivalent).",
+      "quantity": "THB 450,000 / USD 15,000"
+    },
+    "notes": "Figures per the Bank of Thailand's exchange control regulation page; the page does not itself cite the underlying Ministerial Regulation/Currency Act section number, so treat the legal citation as the regulator's own summary rather than the statute text.",
+    "legal_source": {
+      "name": "Bank of Thailand — Exchange Control Regulation (currency declaration thresholds)",
+      "url": "https://www.bot.or.th/en/our-roles/financial-markets/foreign-exchange-regulations/exchange-control-regulation.html"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "medication-th",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "otc medicine"
+    ],
+    "destination": "TH",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "General (non-narcotic, non-psychotropic) medicines may be carried in the amount necessary for personal use, up to a 30-day supply."
+    },
+    "notes": "Narcotics and psychotropic-substance medications are governed separately and are far more restricted — see the dedicated 'controlled medication' entry. Medical devices for personal use require supporting documentation (device information, purpose letter, and a medical certificate of need).",
+    "legal_source": {
+      "name": "Thai FDA — Passenger belongings related to health products into the Kingdom of Thailand (foods, cosmetics, herbal products)",
+      "url": "https://en.fda.moph.go.th/guideline-of-importation-for-personal-use/bringing-of-health-products-into-the-kingdom-of-thailand-01/"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-th",
+    "names": [
+      "narcotics",
+      "psychotropic medication",
+      "controlled substance",
+      "adderall",
+      "amphetamine",
+      "opioid painkiller",
+      "codeine",
+      "xanax",
+      "alprazolam"
+    ],
+    "destination": "TH",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Medications containing psychotropic substances (Schedule II, III, or IV) may be carried for personal use up to a 30-day supply with a doctor's certificate/prescription, no advance permit needed. For a 31–90 day supply, travelers must obtain an FDA permit (Form IC-2) at least 15 days before traveling. Medications containing narcotic drugs (Schedule II or III) require an FDA Narcotics Division license before importing, for up to a 90-day supply. Importing Schedule I psychotropic substances is not allowed under any circumstances."
+    },
+    "notes": "Apply online at least 15 days before travel via the FDA's traveler permit portal (permitfortraveler.fda.moph.go.th). Processing takes about 3 working days. The FDA's guidance does not name specific drugs (e.g. whether Adderall/amphetamine is treated as a narcotic or an outright-banned substance) — travelers with stimulant or opioid prescriptions should confirm their medication's schedule with the FDA before travel rather than assume it is covered by the general allowance.",
+    "legal_source": {
+      "name": "Thai FDA — Guidance for Travelers under Treatment Carrying Personal Medications Containing Narcotic Drugs/Psychotropic Substances into Thailand",
+      "url": "https://en.fda.moph.go.th/entrepreneurs-narcotic-drugs-and-psychotropic-substances/category/guidance-for-travelers-under-treatment-carrying-personal-medications-containing-narcotic-drugs-into-/"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-th",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish",
+      "cbd",
+      "cbd oil",
+      "hemp extract"
+    ],
+    "destination": "TH",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Thailand's domestic cannabis law has reversed direction multiple times (decriminalized for flower/products in 2022, reclassified as a medical-only 'controlled herb' from June 2025 with a PT 33 prescription required above 0.2% THC), and remains politically unsettled as of this verification — but that domestic-sale question is separate from importation. For bringing cannabis or hemp-based products INTO Thailand from abroad, the Thai FDA is explicit and unqualified: cannabis- or hemp-based foods, cosmetics containing cannabis/hemp extract, and herbal products containing cannabis or hemp are all listed as not allowed to import, with no personal-use carve-out and no exception for a foreign medical-cannabis prescription. Treat all CBD and cannabis products as prohibited for import regardless of THC content or how they are labeled/legal in the traveler's home country.",
+    "legal_source": {
+      "name": "Thai FDA — Passenger belongings related to health products into the Kingdom of Thailand (foods, cosmetics, herbal products)",
+      "url": "https://en.fda.moph.go.th/guideline-of-importation-for-personal-use/bringing-of-health-products-into-the-kingdom-of-thailand-01/"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-th",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vape pen",
+      "e-liquid",
+      "pod system",
+      "disposable vape"
+    ],
+    "destination": "TH",
+    "category": "e_cigarettes",
+    "verdict": "prohibited",
+    "notes": "Thailand has banned the import of e-cigarettes, vape pens, pod systems, e-liquids, and related devices/accessories nationwide since a 2014 Ministry of Commerce notification (import/export control), enforced via Customs Act B.E. 2560 (2017) ss. 244 and 246. There is no personal-use or tourist exemption and no way to declare vapes to make importing them legal. Penalties include confiscation and criminal liability (importers: up to 10 years' imprisonment or a fine of 5x the goods' value; possession: up to 5 years or a fine of 4x the value). Enforcement at airports and tourist areas has intensified through 2025–2026. This is a genuine, actively-enforced prosecution risk for travelers who assume vaping is treated like ordinary tobacco.",
+    "legal_source": {
+      "name": "Thailand.go.th (Royal Thai Government official information portal) — Electric and electronic cigarettes are illegal in Thailand: prohibition on importing by tourists",
+      "url": "https://thailand.go.th/issue-focus-detail/009_130"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-th",
+    "names": [
+      "weapons",
+      "knives",
+      "firearms",
+      "guns",
+      "ammunition"
+    ],
+    "destination": "TH",
+    "category": "weapons",
+    "verdict": "depends",
+    "notes": "Firearms, ammunition, explosives, and equivalent items are restricted goods requiring a permit from the Department of Provincial Administration before import; Thai Customs' own traveler page does not spell out a separate tourist/personal-use process, and this is not a realistic option for ordinary tourists. No species/caliber-level detail or a stated blanket prohibition for non-residents was found in this pass — published at the general 'restricted, permit required' level rather than asserting an unverified full ban.",
+    "legal_source": {
+      "name": "Thai Customs Department — Restricted and Prohibited Goods for travelers",
+      "url": "https://www.customs.go.th/cont_strc_simple.php?ini_content=individual_160426_01&lang=en&left_menu=menu_individual_submenu_03_01"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-th",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "ham",
+      "sausage",
+      "smoked salmon"
+    ],
+    "destination": "TH",
+    "category": "food_animal",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Personal-use import allowance: milk/dairy products (ready-to-drink milk, powdered milk, ice cream, cheese, whey protein, yogurt, pudding) up to 2.5 kg/L; meat, processed meat, and animal products (sausages, ham, smoked meat, dried pork, smoked salmon) up to 5 kg. All food items combined must not exceed 10 kg/L, and none of the items may have been imported by the same traveler within the prior 3 months."
+    },
+    "notes": "This FDA personal-consumption allowance covers processed/shelf-stable meat and dairy. Fresh/uncooked meat and dairy are separately regulated by the Department of Livestock Development, which requires an import permit and (for meat) an export health certificate from the country of origin — not realistically obtainable by an individual tourist, so treat fresh/raw meat and dairy as effectively off-limits even though this row's quantity limits are for the processed-goods case.",
+    "legal_source": {
+      "name": "Thai FDA — Passenger belongings related to health products into the Kingdom of Thailand (foods, cosmetics, herbal products)",
+      "url": "https://en.fda.moph.go.th/guideline-of-importation-for-personal-use/bringing-of-health-products-into-the-kingdom-of-thailand-01/"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-th",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds"
+    ],
+    "destination": "TH",
+    "category": "food_plant",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Personal-use import allowance: fresh or processed (pickled/candied/canned) plants, vegetables, and fruit up to 5 kg; dried plants, vegetables, and fruit up to 2.5 kg. All food items combined must not exceed 10 kg/L, and none of the items may have been imported by the same traveler within the prior 3 months."
+    },
+    "notes": "This FDA allowance is for personal-consumption produce. Live plants, seeds/propagative material, and soil are separately regulated by the Department of Agriculture (plant quarantine) and typically require a phytosanitary certificate/import permit — doa.go.th itself blocked automated access in this research pass, so no specific quantity/permit detail for that category is published here; treat seeds, seedlings, cut flowers, and anything with soil attached as a likely-restricted case needing advance research, not covered by the produce allowance above.",
+    "legal_source": {
+      "name": "Thai FDA — Passenger belongings related to health products into the Kingdom of Thailand (foods, cosmetics, herbal products)",
+      "url": "https://en.fda.moph.go.th/guideline-of-importation-for-personal-use/bringing-of-health-products-into-the-kingdom-of-thailand-01/"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-th",
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter"
+    ],
+    "destination": "TH",
+    "category": "drones",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Bringing a personal drone into Thailand in your luggage is allowed (no import permit needed for non-commercial personal use), but it cannot be legally operated until registered with both the National Broadcasting and Telecommunications Commission (NBTC, drone ownership/radio-frequency registration at anyregis.nbtc.go.th) and the Civil Aviation Authority of Thailand (CAAT, drone + pilot registration at uasportal.caat.or.th) — required for any drone with a camera, or weighing over 2 kg."
+    },
+    "notes": "CAAT registration can take up to roughly 14 days and generally needs a Thai mobile number and an entry stamp already in the passport, which effectively blocks legal flight for short trips even though bringing the drone itself is not restricted. Liability insurance (THB 1,000,000 minimum third-party cover) is required for CAAT registration. This entry covers the import/registration question; it is not a customs duty-free allowance in the same sense as alcohol/tobacco.",
+    "legal_source": {
+      "name": "Thailand.go.th (Royal Thai Government official information portal) — Updated Guide for Tourists Regarding Flying a Drone in Thailand",
+      "url": "https://thailand.go.th/issue-focus-detail/updated-guide-for-tourists-regarding-flying-a-drone-in-thailand"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-rw",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "RW",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Spirits (including liqueurs) up to 1 litre, or wine up to 2 litres, duty-free per traveller aged 18 and over",
+      "quantity": "1 litre spirits or 2 litres wine"
+    },
+    "legal_source": {
+      "name": "Rwanda Revenue Authority — Passengers' Baggage (traveler duty-free allowances, EAC Customs Management Act 2004 basis)",
+      "url": "https://www.rra.gov.rw/fileadmin/img/passengers-baggage.html"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-rw",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars"
+    ],
+    "destination": "RW",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Cigarettes, cigars, cheroots, cigarillos, tobacco and snuff not exceeding 250 grammes in total weight, duty-free, for travellers aged 18 and over",
+      "quantity": "250g"
+    },
+    "legal_source": {
+      "name": "Rwanda Revenue Authority — Passengers' Baggage (traveler duty-free allowances, EAC Customs Management Act 2004 basis)",
+      "url": "https://www.rra.gov.rw/fileadmin/img/passengers-baggage.html"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-rw",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "bearer negotiable instruments"
+    ],
+    "destination": "RW",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Cash or bearer negotiable instruments up to USD 10,000 (or equivalent in other currencies) may be carried without declaring; amounts exceeding that must be declared to the competent authority on entry, transit, or exit (Art. 3-4)",
+      "quantity": "$10,000"
+    },
+    "notes": "Failure to declare, or a false declaration, triggers an administrative fine of 5% of the transported cash/instrument value, without prejudice to criminal sanctions (Art. 7). This is a national Rwandan regulation distinct from — and more specific than — the general EAC/RRA traveler goods-declaration process.",
+    "legal_source": {
+      "name": "Regulations Relating to the Declaration of Cross Border Cash or Bearer Negotiable Instruments, No 02/2021",
+      "url": "https://rwandalii.org/akn/rw/act/reg/2021/2"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-rw",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "drugs (prescription)"
+    ],
+    "destination": "RW",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Personal-use importation of prescription-only medicines is allowed for up to a 90-day supply (at the maximum manufacturer/healthcare-provider-recommended dose), accompanied by a valid prescription or a written declaration/letter from an authorized practitioner",
+      "quantity": "90-day supply"
+    },
+    "notes": "Sourced from Rwanda FDA's 2023 Guidelines on personal-effects imports (Doc. No. FDISM/FDIEC/GDL/003), which explicitly define 'Visitor' and apply to travelers, not just residents. Suspended, recalled, or banned medicines are not allowed regardless of prescription. See the separate 'controlled substances' row for narcotic/psychotropic medicines, which carry a stricter 30-day limit.",
+    "legal_source": {
+      "name": "Rwanda FDA — Guidelines on Control of Importation and Exportation of Regulated Products Declared as Personal Effects (Doc. No. FDISM/FDIEC/GDL/003, effective 15/03/2023)",
+      "url": "https://rwandafda.gov.rw/wp-content/uploads/2023/03/Guidelines%20for%20import%20and%20export%20of%20regulated%20products%20declared%20as%20personal%20effects.pdf"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-substances-rw",
+    "names": [
+      "controlled substances",
+      "narcotic medicine",
+      "psychotropic medicine",
+      "opioids",
+      "stimulant medication"
+    ],
+    "destination": "RW",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Personal-use importation of controlled substances (narcotic drugs, psychotropic substances, or precursors under Law n° 03/2012) is allowed for up to a 30-day supply, for medical purposes only",
+      "quantity": "30-day supply"
+    },
+    "notes": "Must be accompanied by a prescription or authorization letter from a registered practitioner in the traveler's country of origin. Online purchase or courier importation of controlled substances is not allowed under any circumstances (Rwanda FDA Guidelines, s. 3.2.4-3.2.5). Verdict is 'depends' rather than 'allowed_with_limits' because the underlying substance must itself be legal/prescribable in Rwanda — the guideline does not name which specific drugs qualify.",
+    "legal_source": {
+      "name": "Rwanda FDA — Guidelines on Control of Importation and Exportation of Regulated Products Declared as Personal Effects (Doc. No. FDISM/FDIEC/GDL/003, effective 15/03/2023)",
+      "url": "https://rwandafda.gov.rw/wp-content/uploads/2023/03/Guidelines%20for%20import%20and%20export%20of%20regulated%20products%20declared%20as%20personal%20effects.pdf"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-rw",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "cbd"
+    ],
+    "destination": "RW",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "\"Narcotic drugs under international control\" are listed as prohibited imports under Part A(7) of the EAC Customs Management Act 2004 Second Schedule, as published on RRA's own prohibited-goods page. Cannabis is separately a controlled narcotic drug under Rwanda's domestic Law n° 03/2012 of 15/02/2012 governing narcotic drugs, psychotropic substances and precursors (referenced in Rwanda FDA's personal-effects guidelines). No CBD-specific carve-out (e.g. a THC percentage threshold, as some other countries define) was found on a primary Rwandan source in this research pass — treat any cannabis-derived product, including CBD, as prohibited pending a specific carve-out.",
+    "legal_source": {
+      "name": "Rwanda Revenue Authority — Prohibited Goods for Travelers (EAC Customs Management Act 2004, Second Schedule)",
+      "url": "https://www.rra.gov.rw/en/customs-services/travelers/prohibited-goods"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-rw",
+    "names": [
+      "weapons",
+      "knives",
+      "firearms",
+      "ammunition"
+    ],
+    "destination": "RW",
+    "category": "weapons",
+    "verdict": "depends",
+    "notes": "\"Arms and ammunition specified under Chapter 93 of the Customs Nomenclature\" are listed as restricted imports under Part B(5) of the EAC Customs Management Act 2004 Second Schedule — importable only in accordance with a written permit granted by the competent authority of the Partner State. RRA's published list does not name the specific licensing body, so it is not stated here.",
+    "legal_source": {
+      "name": "Rwanda Revenue Authority — Prohibited Goods for Travelers (EAC Customs Management Act 2004, Second Schedule)",
+      "url": "https://www.rra.gov.rw/en/customs-services/travelers/prohibited-goods"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-rw",
+    "names": [
+      "drone",
+      "quadcopter",
+      "uav",
+      "unmanned aircraft"
+    ],
+    "destination": "RW",
+    "category": "drones",
+    "verdict": "depends",
+    "notes": "Rwanda Civil Aviation Authority (RCAA) requires every drone to be declared to Rwanda National Police at the point of entry into the country (\"Declare your drone to Rwanda National Police at any point of entry into the country, failure to abide calls for penalty as stipulated in the Regulations\" — caa.gov.rw). Before operating (flying) the drone, RCAA also requires a UAS Activity Permit and UAS registration under Rwanda Civil Aviation Regulations Part 27. This is a real, concrete border-declaration requirement (stronger than most other destinations in this dataset, where only a general operational-permit gap was found) — do not attempt to bring a drone into Rwanda without declaring it and applying for the RCAA permits in advance.",
+    "legal_source": {
+      "name": "Rwanda Civil Aviation Authority — Unmanned Aircraft (Drones)",
+      "url": "https://www.caa.gov.rw/unmanned-aircraft"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "plastic-bags-rw",
+    "names": [
+      "plastic bags",
+      "plastic carry bags",
+      "single-use plastic",
+      "polythene bags"
+    ],
+    "destination": "RW",
+    "category": "other",
+    "verdict": "prohibited",
+    "notes": "Rwanda has one of the world's strictest plastic-bag import bans: \"The manufacturing, use, importation or sale of plastic carry bags and single-use plastic items is prohibited\" (Law N° 17/2019, Art. 3, updating the original 2008 ban). Importation carries dispossession of the items plus an administrative fine equal to 10 times their value (Art. 10) — the law states no exemption for travelers or personal luggage. In practice, plastic bags (including shopping bags packed around purchased goods, and some single-use plastic packaging) are confiscated at Kigali International Airport and land borders. Home-compostable plastic items or woven polypropylene are exempt only with prior authorization from the competent authority (Art. 4).",
+    "legal_source": {
+      "name": "Law N° 17/2019 of 10/08/2019 Relating to the Prohibition of Manufacturing, Importation, Use and Sale of Plastic Carry Bags and Single-Use Plastic Items",
+      "url": "https://rwandalii.org/akn/rw/act/law/2019/17/eng@2019-09-23"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-eg",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "EG",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "One litre of alcoholic beverages (spirits) duty-free in accompanied personal baggage, per the Egyptian Customs Authority's published passenger exemptions for tourists/transit arrivals and returning residents alike.",
+      "quantity": "1 litre"
+    },
+    "notes": "Separately, purchases made at duty-free shops inside the customs area within 48 hours of arrival carry a different, larger allowance: tourists/transit passengers may buy up to USD 200 total, including up to 3 litres of spirits (the first and second litre taxed at 1% of the duty otherwise owed, the third litre at 25%, minimum USD 13 per litre or equivalent), with 1 litre of spirits swappable for 1 carton of beer; this exemption is granted at most 4 times per calendar year and requires the passport holder to be physically present. Returning residents get a USD 300 duty-free-shop allowance with a 1-litre spirits cap, at most twice per year. No minimum-age requirement for the alcohol allowance was stated on the source page used here.",
+    "legal_source": {
+      "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
+      "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-eg",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars"
+    ],
+    "destination": "EG",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "One cartridge/carton of cigarettes (200 cigarettes), or 25 cigars, or 200 grams of tobacco, duty-free per traveller, per the Egyptian Customs Authority's published passenger exemptions.",
+      "quantity": "200 cigarettes or 25 cigars or 200g tobacco"
+    },
+    "notes": "A separate duty-free-shop purchase allowance (within 48 hours of arrival) permits an additional 2 cartridges of cigarettes for tourists/transit passengers (2 cartridges for returning residents too), on top of the general personal-baggage allowance above.",
+    "legal_source": {
+      "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
+      "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-eg",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "drugs (prescription)"
+    ],
+    "destination": "EG",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "The Egyptian Customs Authority's passenger-legislation page lists medications (\"الأدوية\") among common restricted-goods examples: allowed within the traveller's personal-use needs, supported by medical reports/a prescription where relevant; any quantity beyond personal use requires clearance from the competent control authority (the source names the Egyptian Drug Authority, هيئة الدواء المصرية, as an example) before Customs will release it. Medical instruments/devices are treated separately as \"special use\" (not \"personal use\") and likewise require Egyptian Drug Authority clearance. No numeric day-supply or unit quantity cap, and no named-drug restricted list (e.g. controlled stimulants), was published on the source used here.",
+    "legal_source": {
+      "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
+      "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-eg",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "cbd"
+    ],
+    "destination": "EG",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "The Egyptian Customs Authority's own general definitions (same Travel & Tourism / Passengers page) list \"narcotic drugs\" (المخدرات) as an example of \"prohibited goods\" (البضائع الممنوعة) under Customs Law No. 207/2020 — goods whose import or export is not permitted at all. Cannabis/marijuana is a controlled narcotic drug under Egyptian law generally. No CBD-specific quantity or THC-percentage carve-out (as some other countries define) was found on a primary Egyptian source in this pass — treat any cannabis-derived product, including CBD, as prohibited pending a specific carve-out.",
+    "legal_source": {
+      "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
+      "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-eg",
+    "names": [
+      "weapons",
+      "knives",
+      "daggers",
+      "bladed weapons"
+    ],
+    "destination": "EG",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "Daggers and other edged/bladed weapons require prior clearance from the competent control authority (the source names General Security, الأمن العام, as an example) before Customs will release them."
+    },
+    "notes": "This verdict is scoped to what the source (Egyptian Customs Authority's restricted-goods examples for passengers) actually states: daggers/bladed weapons need security clearance, not an outright ban. The same page's general definitions separately list \"weapons\" (الأسلحة) as an example of \"prohibited goods\" not permitted for import or export at all — a broader, stricter category that most likely covers firearms and ammunition, but no passenger-specific firearms verdict distinct from bladed weapons was found, so no firearms-specific claim is published here. Treat firearms/ammunition as prohibited pending a dedicated source; this row covers knives/daggers only.",
+    "legal_source": {
+      "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
+      "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-eg",
+    "names": [
+      "drone",
+      "quadcopter",
+      "uav",
+      "unmanned aircraft",
+      "remote-controlled aircraft"
+    ],
+    "destination": "EG",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Remote-controlled/radio-controlled aircraft (drones) require prior clearance from the competent control authority (the source names the Ministry of Defence, وزارة الدفاع, as an example) before Customs will release them."
+    },
+    "notes": "The Egyptian Customs Authority's restricted-goods examples list \"الطائرات الموجهة لاسلكيا\" (radio-controlled aircraft) as requiring control-agency clearance. No further detail (e.g. a specific permit process, fee, or weight-based exemption) was found on a primary source in this pass — apply for clearance in advance rather than assuming a drone can simply be carried through Customs.",
+    "legal_source": {
+      "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
+      "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-eg",
+    "names": [
+      "e-cigarettes",
+      "vape",
+      "vaping device",
+      "electronic cigarette"
+    ],
+    "destination": "EG",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "limits": {
+      "description": "Electronic cigarettes require prior clearance from the competent control authority (the source names the General Authority for Export & Import Control, GOEIC / الهيئة العامة للرقابة على الصادرات والواردات, as an example) before Customs will release them."
+    },
+    "legal_source": {
+      "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
+      "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "plants-seeds-eg",
+    "names": [
+      "plants",
+      "seeds",
+      "agricultural seeds",
+      "pesticides",
+      "plant material"
+    ],
+    "destination": "EG",
+    "category": "food_plant",
+    "verdict": "depends",
+    "limits": {
+      "description": "Agricultural seeds and pesticides require prior clearance from the competent control authority (the source names the Ministry of Agriculture, وزارة الزراعة, as an example) before Customs will release them."
+    },
+    "notes": "The source used here (Egyptian Customs Authority's restricted-goods examples for passengers) covers seeds and pesticides specifically; it does not address general fresh produce, cut flowers, or other plant material, so no blanket food_plant verdict beyond seeds/pesticides is published — see data/UNVERIFIED/TODO.md.",
+    "legal_source": {
+      "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
+      "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "general-goods-eg",
+    "names": [
+      "gifts",
+      "new items",
+      "personal effects",
+      "general goods",
+      "souvenirs"
+    ],
+    "destination": "EG",
+    "category": "other",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "New (non-personal-use) items such as gifts and souvenirs brought by a tourist/transit passenger or returning resident are duty-free up to EGP 15,000 in total value, provided they are not intended for trade; customs duty and other taxes apply to the value above that threshold.",
+      "quantity": "EGP 15,000"
+    },
+    "legal_source": {
+      "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
+      "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-ng",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "NG",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Spirits up to 1 litre and wine up to 1 litre, duty-free, under the Nigeria Customs Service's passenger baggage concessions for consumable goods",
+      "quantity": "1 litre spirits + 1 litre wine"
+    },
+    "notes": "customs.gov.ng is a JavaScript-rendered single-page site protected by Cloudflare that returned only an empty app shell to direct automated fetches; this figure was confirmed via a Wayback Machine (web.archive.org) snapshot of the same official page's rendered content, cross-checked against a current Google search-index snippet of the live page quoting identical figures — the URL cited is the live, human-browsable customs.gov.ng page.",
+    "legal_source": {
+      "name": "Nigeria Customs Service — Passenger's Concessions",
+      "url": "https://customs.gov.ng/?page_id=3073"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-ng",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars"
+    ],
+    "destination": "NG",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Cigarettes, cigars, or tobacco of all kinds up to 200 grammes total weight, duty-free",
+      "quantity": "200g"
+    },
+    "notes": "customs.gov.ng is a JavaScript-rendered single-page site protected by Cloudflare that returned only an empty app shell to direct automated fetches; this figure was confirmed via a Wayback Machine (web.archive.org) snapshot of the same official page's rendered content, cross-checked against a current Google search-index snippet of the live page quoting identical figures — the URL cited is the live, human-browsable customs.gov.ng page.",
+    "legal_source": {
+      "name": "Nigeria Customs Service — Passenger's Concessions",
+      "url": "https://customs.gov.ng/?page_id=3073"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-ng",
+    "names": [
+      "cash",
+      "currency",
+      "money"
+    ],
+    "destination": "NG",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Transportation of cash or negotiable instruments in excess of US$10,000 (or its equivalent) into or out of Nigeria by an individual must be declared to the Nigeria Customs Service",
+      "quantity": "$10,000"
+    },
+    "notes": "Basis: Money Laundering (Prevention and Prohibition) Act, 2022, s. 3(3)-(5) (read directly from the Act's own text). False declaration or failure to declare is an offence: forfeiture of the undeclared funds/instrument and/or imprisonment for at least two years. Declare via the Nigeria Customs Service's E-Currency Declaration Form (cdf.nigeriatradehub.gov.ng).",
+    "legal_source": {
+      "name": "Money Laundering (Prevention and Prohibition) Act, 2022, s. 3",
+      "url": "https://placng.org/i/wp-content/uploads/2022/05/Money-Laundering-Prevention-and-Prohibition-Act-2022.pdf"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-ng",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "cbd",
+      "indian hemp"
+    ],
+    "destination": "NG",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Cannabis (\"Indian hemp\") is a controlled narcotic drug under Nigerian law. Importation, possession, cultivation, and use of cannabis/narcotic drugs are criminal offences under the National Drug Law Enforcement Agency Act (Cap. N30, Laws of the Federation of Nigeria 2004), ss. 11, 19-20 (life imprisonment for importation/trafficking; 15-25 years for possession/use) — confirmed directly from the Act's own text. No medical- or low-THC/CBD-specific exemption was found on a primary Nigerian source in this pass; treat any cannabis-derived product, including CBD, as prohibited.",
+    "legal_source": {
+      "name": "National Drug Law Enforcement Agency Act (Cap. N30, Laws of the Federation of Nigeria 2004)",
+      "url": "https://lawsofnigeria.placng.org/laws/NATIONAL%20DRUG%20LAW%20ENFORCEMENT%20AGENCY%20ACT.pdf"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-ng",
+    "names": [
+      "weapons",
+      "knives",
+      "firearms",
+      "ammunition",
+      "pistols"
+    ],
+    "destination": "NG",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "notes": "The Nigeria Customs Service's list of goods whose importation is absolutely prohibited explicitly bans air pistols, pistols disguised in any form, and weapons/ammunition designed to discharge noxious liquid or gas. Ordinary firearms and ammunition generally require a Presidential import licence under separate Nigerian firearms legislation, which could not be fetched from a live, directly-accessible primary government source in this pass and is not realistically obtainable by tourists — travelers should not attempt to bring any firearm, replica, or ammunition into Nigeria.",
+    "legal_source": {
+      "name": "Nigeria Customs Service — Goods the Importation of Which is Absolutely Prohibited",
+      "url": "https://customs.gov.ng/?page_id=3077"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-ng",
+    "names": [
+      "meat",
+      "dairy",
+      "animal products",
+      "cheese"
+    ],
+    "destination": "NG",
+    "category": "food_animal",
+    "verdict": "depends",
+    "notes": "The Nigeria Agricultural Quarantine Service (NAQS) requires a sanitary/health certificate, specific-disease laboratory test results, and an import permit for animal and animal-product imports. NAQS's own FAQ describes this in general commodity terms rather than stating a personal-baggage/traveler-specific exemption or quantity threshold, so no traveler-specific allowance is published here — assume meat/dairy products require prior NAQS authorisation and check with NAQS before bringing any.",
+    "legal_source": {
+      "name": "Nigeria Agricultural Quarantine Service — Frequently Asked Questions",
+      "url": "https://www.naqs.gov.ng/faq/"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-ng",
+    "names": [
+      "plants",
+      "seeds",
+      "fruit",
+      "vegetables",
+      "flowers",
+      "plant material"
+    ],
+    "destination": "NG",
+    "category": "food_plant",
+    "verdict": "depends",
+    "notes": "NAQS requires a Phytosanitary Certificate for plant and plant-product imports (Nigeria is a signatory to the International Plant Protection Convention). NAQS's FAQ discusses this in general commodity terms rather than a personal-baggage/traveler-specific exemption, so no traveler-specific allowance is published here. NAQS has separately named specific prohibited plant material (e.g. cassava stem and plant parts, to guard against Cassava Brown Streak Disease) — treat fresh produce, seeds, and plant material as requiring prior NAQS clearance.",
+    "legal_source": {
+      "name": "Nigeria Agricultural Quarantine Service — Frequently Asked Questions",
+      "url": "https://www.naqs.gov.ng/faq/"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-ma",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "MA",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "One 1-litre bottle of wine and one 1-litre bottle of liqueur or other spirits, duty-free, for non-resident travelers arriving in Morocco",
+      "quantity": "1L wine + 1L spirits"
+    },
+    "notes": "Applies to travelers whose habitual residence is abroad (tourists), admitted without declaration or formality under the temporary-admission regime. Quantities above this are subject to declaration and duties/taxes. Corroborated by an older (June 2010) Moroccan Customs traveler guide stating the same 1L wine + 1L spirits figures.",
+    "legal_source": {
+      "name": "Kingdom of Morocco Ministry of Foreign Affairs — Consular guide: Customs facilities for non-residents visiting Morocco temporarily",
+      "url": "https://fr.diplomatie.ma/visiter-le-maroc-facilit%C3%A9s-douani%C3%A8res-accord%C3%A9es-aux-personnes-ayant-leur-r%C3%A9sidence-%C3%A0-l%C3%A9tranger-et-s%C3%A9journant-temporairement"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-ma",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "cigarillos"
+    ],
+    "destination": "MA",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "200 cigarettes, or 100 cigarillos, or 25 cigars, or 250 grammes of an assortment of these products, duty-free, for non-resident travelers arriving in Morocco",
+      "quantity": "200 cigarettes / 250g"
+    },
+    "notes": "Applies to travelers whose habitual residence is abroad (tourists), admitted without declaration or formality. An older (June 2010) Moroccan Customs traveler guide states a flat 200g of manufactured tobacco instead of this cigarette/cigarillo/cigar breakdown; this more detailed and more recently observed figure is used as the published value.",
+    "legal_source": {
+      "name": "Kingdom of Morocco Ministry of Foreign Affairs — Consular guide: Customs facilities for non-residents visiting Morocco temporarily",
+      "url": "https://fr.diplomatie.ma/visiter-le-maroc-facilit%C3%A9s-douani%C3%A8res-accord%C3%A9es-aux-personnes-ayant-leur-r%C3%A9sidence-%C3%A0-l%C3%A9tranger-et-s%C3%A9journant-temporairement"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-ma",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "banknotes"
+    ],
+    "destination": "MA",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Payment instruments and financial instruments denominated in foreign currency must be declared to Customs on entry when their value is equal to or greater than 100,000 Moroccan dirhams (MAD); declaration is optional below that threshold. Separately, Moroccan dirham (MAD) banknotes themselves may not be imported or exported at all, except that travelers may carry up to 2,000 MAD in banknotes for incidental expenses.",
+      "quantity": "MAD 100,000 (foreign currency); MAD 2,000 (dirham banknotes)"
+    },
+    "notes": "Legal basis: Article 66 bis of the Customs and Indirect Taxes Code, added by the 2022 Finance Law. Declaring the imported amount also lets the traveler re-export unspent foreign currency later. Foreign currency itself (banknotes, cheques, cards) can otherwise be brought in without an amount limit — it is the >=100,000 MAD threshold that triggers a mandatory declaration, and the dirham import/export ban that is separate and absolute (2,000 MAD carve-out).",
+    "legal_source": {
+      "name": "Office des Changes (Kingdom of Morocco foreign-exchange authority) — FAQ: mandatory declaration of imported banknotes",
+      "url": "https://www.oc.gov.ma/fr/faq/la-declaration-aux-services-douaniers-a-l-entree-des-billets-de-banque-importes-est-elle"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "medication-ma",
+    "names": [
+      "medication",
+      "prescription drugs",
+      "medicine"
+    ],
+    "destination": "MA",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Personal medication in small quantities, visibly for the traveler's own use, is admitted without particular formality if needed; Moroccan Customs may ask travelers to sign a personal-use undertaking and show supporting medical documents (medical certificate or prescription). Import for any purpose other than personal use requires Ministry of Health authorization and payment of duties/taxes. Substances on Table B of Morocco's controlled/poisonous-substances schedule additionally require an official Ministry of Health narcotics-service import certificate, regardless of quantity."
+    },
+    "notes": "Sourced from both the Ministry of Foreign Affairs' non-resident traveler customs guide and a 2024 Customs circular restating the same personal-use rule (medical certificate/prescription plus a signed undertaking to re-export any unused quantity). No specific named-drug list (e.g. controlled stimulants) or numeric day-supply cap was found for Morocco, unlike some other destinations in this dataset — treat that as an open gap, not as 'no restriction'.",
+    "legal_source": {
+      "name": "Kingdom of Morocco Ministry of Foreign Affairs — Consular guide: Customs facilities for non-residents visiting Morocco temporarily",
+      "url": "https://fr.diplomatie.ma/visiter-le-maroc-facilit%C3%A9s-douani%C3%A8res-accord%C3%A9es-aux-personnes-ayant-leur-r%C3%A9sidence-%C3%A0-l%C3%A9tranger-et-s%C3%A9journant-temporairement"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-ma",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "hashish",
+      "kif",
+      "cbd"
+    ],
+    "destination": "MA",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Narcotics (\"stupéfiants\") are on Moroccan Customs' list of imports strictly prohibited to travelers, with no personal-use or quantity carve-out. Morocco's Law 13-21 (2021) legalized cannabis cultivation only for licensed domestic medical/pharmaceutical/industrial production under the ANRAC regulator — it created no exception for travelers importing or possessing cannabis, hashish, or kif, and no CBD-specific threshold (e.g. a THC percentage carve-out) was found on a primary Moroccan source. Treat CBD as covered by the same blanket prohibition pending a specific carve-out.",
+    "legal_source": {
+      "name": "Kingdom of Morocco Ministry of Foreign Affairs — Consular guide: Customs facilities for non-residents visiting Morocco temporarily",
+      "url": "https://fr.diplomatie.ma/visiter-le-maroc-facilit%C3%A9s-douani%C3%A8res-accord%C3%A9es-aux-personnes-ayant-leur-r%C3%A9sidence-%C3%A0-l%C3%A9tranger-et-s%C3%A9journant-temporairement"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "food-animal-ma",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "animal products"
+    ],
+    "destination": "MA",
+    "category": "food_animal",
+    "verdict": "depends",
+    "limits": {
+      "description": "Products of animal origin require a veterinary certificate issued by Morocco's Office National de Sécurité Sanitaire des Produits Alimentaires (ONSSA) before import."
+    },
+    "notes": "No species- or quantity-specific list (e.g. whether small personal quantities of cured meat or cheese are tolerated without a certificate) was found on a primary Moroccan source in this pass — published at the general 'certificate required' level only, not a blanket allow or prohibit.",
+    "legal_source": {
+      "name": "Administration des Douanes et Impôts Indirects (Moroccan Customs) — Circulaire N° 6568/311 (30 May 2024), Annex: general rules on personal effects, prohibited/restricted imports and personal medication",
+      "url": "https://www.douane.gov.ma/dms/loadDocument?documentId=94052"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "food-plant-ma",
+    "names": [
+      "fruit",
+      "vegetables",
+      "seeds",
+      "plants",
+      "plant products"
+    ],
+    "destination": "MA",
+    "category": "food_plant",
+    "verdict": "depends",
+    "limits": {
+      "description": "Plant products require a phytosanitary certificate issued by Morocco's Office National de Sécurité Sanitaire des Produits Alimentaires (ONSSA) before import."
+    },
+    "notes": "No species- or quantity-specific list was found on a primary Moroccan source in this pass — published at the general 'certificate required' level only.",
+    "legal_source": {
+      "name": "Administration des Douanes et Impôts Indirects (Moroccan Customs) — Circulaire N° 6568/311 (30 May 2024), Annex: general rules on personal effects, prohibited/restricted imports and personal medication",
+      "url": "https://www.douane.gov.ma/dms/loadDocument?documentId=94052"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-ma",
+    "names": [
+      "weapons",
+      "firearms",
+      "hunting rifle",
+      "ammunition",
+      "knives"
+    ],
+    "destination": "MA",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "War weapons and their ammunition are strictly prohibited to all travelers. Ordinary hunting weapons and their ammunition may be temporarily imported by tourists only with authorization from the local Direction Générale de la Sûreté Nationale (DGSN) services (in practice: a port-of-arms permit from the provincial authority, then a DGSN import authorization), limited to 10 cartridges per weapon; rifled-barrel hunting weapons are absolutely prohibited outright. Edged weapons of any kind ('armes blanches') require a separate import license from the Foreign Trade department."
+    },
+    "notes": "Sourced from Moroccan Customs' own restrictions text (a compiled reference going back to a 1937 decree on hunting-weapon imports, still cited as current on douane.gov.ma) plus a 2024 Customs circular listing edged weapons among goods requiring an import license. A tourist bringing a hunting weapon must also separately hold a Moroccan hunting permit to actually hunt with it.",
+    "legal_source": {
+      "name": "Administration des Douanes et Impôts Indirects (Moroccan Customs) — Recueil des Droits et Impôts à l'Importation, Titre XII, Section 02: Restrictions spécifiques d'importation et d'exportation",
+      "url": "https://www.douane.gov.ma/dms/loadDocument?documentId=30835"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-ma",
+    "names": [
+      "drone",
+      "quadcopter",
+      "uav",
+      "remote-controlled aircraft"
+    ],
+    "destination": "MA",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Drones are import-license goods, not ordinary duty-free personal effects. Morocco's Customs administration explicitly excludes drones and other remote-controlled flying objects from its duty-free children's-toys/personal-effects allowance. For a tourist's temporary stay, authorization is delivered by local DGSN (Sûreté Nationale) services; permanent import requires an import license from the Foreign Trade department, and equipment using radio transmission may also need ANRT (telecoms regulator) homologation."
+    },
+    "notes": "The clearest primary citation found (a 2024 Moroccan Customs circular) is framed around the annual 'Marhaba' welcome campaign for Moroccans residing abroad, but its general-rules section (I.3, listing import-license goods and prohibited items) states rules of general application, not MRE-specific ones — treated as a valid general citation here. A dedicated foreign-tourist-specific drone circular was not located in this pass; re-verify with one if found. Secondary sources describe seizure and fines for unauthorized drone use, but no primary source for penalty amounts was fetched, so no penalty figure is published.",
+    "legal_source": {
+      "name": "Administration des Douanes et Impôts Indirects (Moroccan Customs) — Circulaire N° 6568/311 (30 May 2024), Annex: general rules on personal effects, prohibited/restricted imports and personal medication",
+      "url": "https://www.douane.gov.ma/dms/loadDocument?documentId=94052"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-in",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "IN",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Up to 2 litres of alcoholic liquor or wine are included within the traveller's general Duty Free Allowance. Quantities beyond 2 litres are dutiable at 150% (whisky) / 110% (beer) or the applicable tariff rate.",
+      "quantity": "2 litres"
+    },
+    "notes": "The 2-litre alcohol allowance is bundled inside the same overall Duty Free Allowance as the tobacco allowance and general goods value cap (Rs. 50,000 for most tourists), not a separate standalone allowance.",
+    "legal_source": {
+      "name": "Chennai Customs Zone (CBIC) — Passenger Clearance FAQ (duty-free allowances, prohibited/restricted goods)",
+      "url": "https://chennaicustoms.gov.in/passenger-clearance-faq/"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-in",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars"
+    ],
+    "destination": "IN",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "One of: 100 cigarettes, or 25 cigars, or 125 g of tobacco, included within the traveller's general Duty Free Allowance. Cigarettes beyond this are dutiable at 256%.",
+      "quantity": "100 cigarettes (or equivalent)"
+    },
+    "legal_source": {
+      "name": "Chennai Customs Zone (CBIC) — Passenger Clearance FAQ (duty-free allowances, prohibited/restricted goods)",
+      "url": "https://chennaicustoms.gov.in/passenger-clearance-faq/"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-in",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "foreign exchange"
+    ],
+    "destination": "IN",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Foreign exchange may be brought into India without limit, but a Currency Declaration Form (CDF) must be filed with Customs if foreign currency notes alone exceed USD 5,000, or if the aggregate value of foreign exchange (currency notes, bank notes, traveller's cheques) exceeds USD 10,000. Separately, import of Indian Rupee currency notes is prohibited for foreign visitors; only Indian residents returning from abroad may carry in up to Rs. 25,000.",
+      "quantity": "USD 5,000 (cash) / USD 10,000 (aggregate foreign exchange)"
+    },
+    "notes": "These are the same thresholds confirmed on both the Reserve Bank of India's own Master Direction on Import and CBIC's Chennai Customs Zone passenger FAQ, so this is a cross-checked, high-confidence figure.",
+    "legal_source": {
+      "name": "Reserve Bank of India — Master Direction on Import (FED Master Direction No. 17/2016-17), Foreign Exchange Management (Export and Import of Currency) Regulations",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "medication-in",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "controlled substances",
+      "narcotics"
+    ],
+    "destination": "IN",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Ordinary prescription and over-the-counter medication in personal-use quantities is not separately addressed by a primary CBIC baggage-rules source reachable in this pass. Medicines that are themselves narcotic drugs or psychotropic substances under the NDPS Act (e.g. many opioid painkillers, some ADHD stimulants, certain sedatives) are a distinct, stricter case: travellers must seek advance permission from India's Narcotics Commissioner before departure, submitting a doctor's prescription and supporting papers, before they may bring the drug into India."
+    },
+    "notes": "No numeric day-supply or unit quantity cap for NDPS-scheduled medicines was found on a primary Indian government source in this pass (unlike Japan's or Thailand's dedicated schedules) — do not assume a specific number of days is pre-authorised; the advance-permission requirement itself is what's confirmed.",
+    "legal_source": {
+      "name": "Department of Revenue, Ministry of Finance — International travellers requiring NDPS drugs for medical use",
+      "url": "https://dor.gov.in/international-travellers-requiring-ndps-medical-use"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-in",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish",
+      "charas",
+      "ganja",
+      "cbd",
+      "cbd oil",
+      "hemp extract"
+    ],
+    "destination": "IN",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "The Narcotic Drugs and Psychotropic Substances Act, 1985 defines \"cannabis (hemp)\" to cover charas (resin/hashish/hash oil) and ganja (the flowering or fruiting tops) — both are prohibited narcotic drugs, and importing them into India carries severe criminal penalties. The statutory definition of cannabis excludes seeds and leaves when not accompanied by the flowering/fruiting tops (the basis for bhang, a leaf-based preparation, being treated differently under Indian law domestically) — but this carve-out is about domestic cultivation/sale, not a confirmed customs import allowance, and no primary CBIC/NDPS source describing a personal-import allowance for CBD oil or hemp-derived products (with or without a foreign prescription) was found in this pass. Treat all cannabis-derived products, including CBD oil, as prohibited to import.",
+    "legal_source": {
+      "name": "Narcotic Drugs and Psychotropic Substances Act, 1985, Section 2(iii) (definition of cannabis)",
+      "url": "https://dor.gov.in/files/acts_files/Narcotic-Drugs-and-Psychotropic-Substances-Act-1985_0.pdf"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-in",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping device",
+      "e-liquid",
+      "juul",
+      "heated tobacco",
+      "e-hookah"
+    ],
+    "destination": "IN",
+    "category": "e_cigarettes",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "The Prohibition of Electronic Cigarettes Act, 2019 makes it a criminal offence for any person to produce, manufacture, import, export, transport, sell, distribute, or advertise electronic cigarettes (or any part of one) in India — there is no personal-use or personal-baggage exemption in the Act's text."
+    },
+    "notes": "Section 7 penalty for a first offence: up to 1 year imprisonment and/or a fine up to Rs. 1,00,000 (one lakh); a second or subsequent offence carries up to 3 years imprisonment and a fine up to Rs. 5,00,000 (five lakh). This is a genuine, high-stakes traveler trap: a device that is legal and commonly carried in many other countries is a criminal offence to bring into India, not merely a confiscated item.",
+    "legal_source": {
+      "name": "Prohibition of Electronic Cigarettes (Production, Manufacture, Import, Export, Transport, Sale, Distribution, Storage and Advertisement) Act, 2019 (Act No. 42 of 2019), Sections 4 and 7",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13078/1/A2019-42.pdf"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-in",
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft"
+    ],
+    "destination": "IN",
+    "category": "drones",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Import of drones (Unmanned Aircraft Systems) in Completely-Built-Up (CBU), Semi-Knocked-Down (SKD), or Completely-Knocked-Down (CKD) form is classified \"Prohibited\" under India's ITC (HS) 2022 import policy (Chapter 88, Policy Condition No. 03, as revised by DGFT Notification No. 54/2015-20 dated 9 Feb 2022). The only stated exceptions are: (i) government entities, government-recognised educational/R&D institutions, and drone manufacturers importing for R&D, each requiring a DGFT import authorisation; and (ii) drones for defence and security purposes, also requiring DGFT authorisation. Import of drone components (not assembled units) is classified \"Free\"."
+    },
+    "notes": "No exception for tourists or personal/recreational use is stated anywhere in this notification — a foreign visitor's personal camera drone falls squarely within the prohibited CBU category, with no realistic path to a DGFT import authorisation. This is a genuinely high-risk item: many travelers assume a personal drone is fine to pack, and India's rule is stricter than most destinations already in this dataset.",
+    "legal_source": {
+      "name": "Directorate General of Foreign Trade — Notification No. 54/2015-20 dated 9 Feb 2022, ITC (HS) 2022, Chapter 88 Policy Condition No. 03 (import policy for Unmanned Aircraft Systems)",
+      "url": "https://content.dgft.gov.in/Website/dgftprod/7d5fd1eb-ad39-4c99-b760-014223657469/Eng-Notification%2054%20dated%209%20Feb%202022%20ITC(HS)%202022%20_with%20Annexures.pdf"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-in",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition"
+    ],
+    "destination": "IN",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Import of firearms is prohibited. Import of cartridges/ammunition in excess of 50 rounds is also prohibited. A narrow exception exists for 0.177 bore air guns and air pistols, which may be imported free of restriction only by shooters registered with a Rifle Club or a District/State/National Rifle Association."
+    },
+    "notes": "Not a realistic route for an ordinary tourist — the air-gun exception requires registered-shooter status with a recognised Indian rifle association, not something a visiting traveler is likely to hold.",
+    "legal_source": {
+      "name": "Chennai Customs Zone (CBIC) — Passenger Clearance FAQ (duty-free allowances, prohibited/restricted goods)",
+      "url": "https://chennaicustoms.gov.in/passenger-clearance-faq/"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-in",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "poultry",
+      "fish"
+    ],
+    "destination": "IN",
+    "category": "food_animal",
+    "verdict": "depends",
+    "notes": "CBIC's own passenger FAQ lists \"Meat and meat products / fish / Dairy products / poultry products\" together with several other categories as \"prohibited/restricted\" without distinguishing, item by item, which are outright banned versus importable under a permit/health certificate. Given that ambiguity, and no dedicated Food Safety and Standards Authority of India (FSSAI) or Department of Animal Husbandry traveler-specific page was found in this pass, treat animal-origin food as high-risk to bring rather than assuming a personal-consumption exemption applies.",
+    "legal_source": {
+      "name": "Chennai Customs Zone (CBIC) — Passenger Clearance FAQ (duty-free allowances, prohibited/restricted goods)",
+      "url": "https://chennaicustoms.gov.in/passenger-clearance-faq/"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-in",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds",
+      "flowers"
+    ],
+    "destination": "IN",
+    "category": "food_plant",
+    "verdict": "depends",
+    "notes": "CBIC's own passenger FAQ lists \"Seeds / Plants / Fruits / Flowers and other planting material\" together with several other categories as \"prohibited/restricted\" without distinguishing, item by item, which are outright banned versus importable under a phytosanitary permit. No dedicated Plant Quarantine (Directorate of Plant Protection, Quarantine & Storage) traveler-specific page was found in this pass to resolve the ambiguity.",
+    "legal_source": {
+      "name": "Chennai Customs Zone (CBIC) — Passenger Clearance FAQ (duty-free allowances, prohibited/restricted goods)",
+      "url": "https://chennaicustoms.gov.in/passenger-clearance-faq/"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "satellite-phone-in",
+    "names": [
+      "satellite phone",
+      "sat phone"
+    ],
+    "destination": "IN",
+    "category": "other",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Any kind of satellite phone may be brought into and used in India only after obtaining a licence from the Department of Telecommunications. Unauthorised possession/use attracts penal provisions under Sections 20 and 21 of the Indian Telegraph Act, 1885."
+    },
+    "notes": "A well-known real traveler trap: satellite phones that are legal to carry freely in most countries (e.g. for trekking or maritime use) require advance Indian government licensing — ordinary tourists do not have a realistic path to that licence, so treat a satellite phone as something you cannot simply pack for a trip to India.",
+    "legal_source": {
+      "name": "Chennai Customs Zone (CBIC) — Passenger Clearance FAQ (duty-free allowances, prohibited/restricted goods)",
+      "url": "https://chennaicustoms.gov.in/passenger-clearance-faq/"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-tr",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "TR",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free for adults (18+): 1 liter of alcoholic beverages over 22% ABV, or 2 liters of alcoholic beverages at or under 22% ABV, per traveler entering Türkiye.",
+      "quantity": "1 L (>22% ABV) or 2 L (≤22% ABV)"
+    },
+    "notes": "Travelers under 18 are not entitled to the alcohol duty-free allowance.",
+    "legal_source": {
+      "name": "T.C. Ticaret Bakanlığı (Turkish Ministry of Trade) — Gümrük Rehberi: quantities of duty-free consumer goods for travelers (Customs Law No. 4458, Special Consumption Tax Law No. 4760, VAT Law No. 3065, Council of Ministers Decision 2009/15481)",
+      "url": "https://gumrukrehberi.gov.tr/sayfa/yolcu-beraberinde-getirilen-t%C3%BCketim-e%C5%9Fyas%C4%B1n%C4%B1n-miktarlar%C4%B1-ne-kadard%C4%B1r"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-tr",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars"
+    ],
+    "destination": "TR",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free for adults (18+), one full allowance per product type (types are not combinable): 600 cigarettes, or 100 cigarillos (each ≤3g), or 50 cigars, or 250g of cut/rolling tobacco (with up to 200 cigarette papers), or 250g of pipe tobacco."
+    },
+    "notes": "Travelers under 18 are not entitled to the tobacco duty-free allowance.",
+    "legal_source": {
+      "name": "T.C. Ticaret Bakanlığı (Turkish Ministry of Trade) — Gümrük Rehberi: quantities of duty-free consumer goods for travelers (Customs Law No. 4458, Special Consumption Tax Law No. 4760, VAT Law No. 3065, Council of Ministers Decision 2009/15481)",
+      "url": "https://gumrukrehberi.gov.tr/sayfa/yolcu-beraberinde-getirilen-t%C3%BCketim-e%C5%9Fyas%C4%B1n%C4%B1n-miktarlar%C4%B1-ne-kadard%C4%B1r"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-tr",
+    "names": [
+      "cash",
+      "currency",
+      "money"
+    ],
+    "destination": "TR",
+    "category": "cash",
+    "verdict": "depends",
+    "limits": {
+      "description": "No mandatory threshold requires travelers to declare cash brought into Türkiye. Declaration is voluntary, but if made must be complete and accurate. Cash representing personal debts, gifts, dowries, inheritances, immigrants' assets, foreign loans, or uncut-diamond export proceeds may not be physically carried in — it must be transferred via a bank."
+    },
+    "notes": "If customs officers ask a traveler to explain the amount or source of cash carried and the traveler gives no explanation, or a false/misleading one, the undisclosed amount is seized and a 10% administrative fine is applied, with the case referred to the public prosecutor and Türkiye's Financial Crimes Investigation Board (MASAK). This is Türkiye's rule for cash brought INTO the country; a separate, stricter rule applies to cash taken OUT of Türkiye (not researched in this pass — see data/UNVERIFIED/TODO.md).",
+    "legal_source": {
+      "name": "T.C. Ticaret Bakanlığı (Turkish Ministry of Trade) — Gümrük Rehberi: Cash and Valuables Guide (basis: Decision No. 32 on the Protection of the Value of Turkish Currency)",
+      "url": "https://gumrukrehberi.gov.tr/kategori/bireysel-slemler/nakit-ve-ziynet-esyasi-rehberi"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "medication-tr",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "drugs (prescription)"
+    ],
+    "destination": "TR",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Personal medication for use during the trip is allowed if the traveler presents documentation showing it is needed for personal treatment — a medical report, doctor's report, or prescription is accepted."
+    },
+    "notes": "No specific day-supply or unit quantity cap is stated by this source; the requirement is documentary (proof of personal medical need), not a numeric limit.",
+    "legal_source": {
+      "name": "T.C. Ticaret Bakanlığı (Turkish Ministry of Trade) — Gümrük Rehberi: can a traveler bring their medication to Türkiye",
+      "url": "https://gumrukrehberi.gov.tr/sayfa/yolcunun-kulland%C4%B1%C4%9F%C4%B1-ila%C3%A7lar%C4%B1n%C4%B1-beraberinde-t%C3%BCrkiyeye-getirmesi-m%C3%BCmk%C3%BCn-m%C3%BCd%C3%BCr"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-tr",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "cbd",
+      "cbd oil"
+    ],
+    "destination": "TR",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Narcotic and stimulant-effect substances are barred from entering Türkiye — confirmed for postal/courier shipment specifically, under Law No. 2313 on the Supervision of Narcotic Substances. No CBD- or low-THC-specific carve-out was found in this pass; treat all cannabis/CBD products as prohibited pending a dedicated primary source on personal/accompanied-baggage import (see data/UNVERIFIED/TODO.md).",
+    "legal_source": {
+      "name": "T.C. Ticaret Bakanlığı (Turkish Ministry of Trade) — Gümrük Rehberi: items travelers cannot send to Türkiye by post or courier (Law No. 2313 on the Supervision of Narcotic Substances)",
+      "url": "https://gumrukrehberi.gov.tr/sayfa/posta-ya-da-h%C4%B1zl%C4%B1-kargo-ta%C5%9F%C4%B1mac%C4%B1l%C4%B1%C4%9F%C4%B1-yoluyla-t%C3%BCrkiyeye-getirilemeyecek-e%C5%9Fyalar-hangileridir"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-tr",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk"
+    ],
+    "destination": "TR",
+    "category": "food_animal",
+    "verdict": "prohibited",
+    "notes": "Meat and dairy products cannot be brought into Türkiye as personal imports/accompanied baggage, or sent to Türkiye by post, under Ministry of Agriculture and Forestry Communiqué No. 2012/11.",
+    "legal_source": {
+      "name": "T.C. Ticaret Bakanlığı (Turkish Ministry of Trade) — Gümrük Rehberi: other food products travelers may bring to Türkiye (basis: Ministry of Agriculture and Forestry Communiqué No. 2012/11)",
+      "url": "https://gumrukrehberi.gov.tr/sayfa/yolcu-beraberinde-t%C3%BCrkiyeye-getirilebilen-di%C4%9Fer-g%C4%B1da-%C3%BCr%C3%BCnleri-nelerdir"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "plant-products-tr",
+    "names": [
+      "fruit",
+      "vegetables",
+      "seeds",
+      "plants"
+    ],
+    "destination": "TR",
+    "category": "food_plant",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free for personal consumption: up to 3 kg total of fresh and dried fruit and vegetables, plus up to 1 kg of other plant products, plus up to 2 kg of honey. Quantities above these are treated as a commercial shipment."
+    },
+    "legal_source": {
+      "name": "T.C. Ticaret Bakanlığı (Turkish Ministry of Trade) — Gümrük Rehberi: other food products travelers may bring to Türkiye",
+      "url": "https://gumrukrehberi.gov.tr/sayfa/yolcu-beraberinde-t%C3%BCrkiyeye-getirilebilen-di%C4%9Fer-g%C4%B1da-%C3%BCr%C3%BCnleri-nelerdir"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-au",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "AU",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "2.25 litres of alcoholic beverages duty-free per traveller aged 18 or over, regardless of where or how purchased; no concession for travellers under 18",
+      "quantity": "2.25 litres"
+    },
+    "notes": "Exceeding the limit means duty/tax applies to all alcohol carried, not just the excess.",
+    "legal_source": {
+      "name": "Australian Border Force — Duty free",
+      "url": "https://www.abf.gov.au/entering-and-leaving-australia/duty-free"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-au",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars"
+    ],
+    "destination": "AU",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "25 cigarettes or 25 grams of tobacco in any form duty-free per traveller aged 18 or over; no concession for travellers under 18. Most tobacco products (cigarettes, molasses tobacco, heat-not-burn, loose-leaf) are otherwise classed as prohibited imports beyond the personal concession.",
+      "quantity": "25 cigarettes or 25g tobacco"
+    },
+    "notes": "No permit is needed to bring tobacco products as a traveller within the concession. Exceeding the limit means duty/tax applies to all tobacco carried, not just the excess.",
+    "legal_source": {
+      "name": "Australian Border Force — Duty free",
+      "url": "https://www.abf.gov.au/entering-and-leaving-australia/duty-free"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-au",
+    "names": [
+      "cash",
+      "currency",
+      "money"
+    ],
+    "destination": "AU",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Must declare if carrying AUD 10,000 or more (or foreign-currency equivalent), combined across cash and non-cash monetary instruments (bearer negotiable instruments), when entering or leaving Australia. No limit on the amount that may be carried — only a duty to declare at or above the threshold.",
+      "quantity": "AUD 10,000"
+    },
+    "notes": "Applies to citizens, residents, and visitors alike, in both directions. Splitting cash among travellers to stay under the threshold (\"structuring\") is a criminal offence. Money transferred via a bank or remittance provider does not need to be declared.",
+    "legal_source": {
+      "name": "AUSTRAC — Moving money overseas",
+      "url": "https://www.austrac.gov.au/general-public/moving-money-overseas"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "medication-au",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "drugs (prescription)"
+    ],
+    "destination": "AU",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Traveller's exemption: up to a 3-month supply of most personal medicines (including some controlled substances) for the traveller or an immediate family member travelling with them, without needing special permission",
+      "quantity": "3-month supply"
+    },
+    "notes": "Keep medicine in original packaging with dispensing labels; carry the prescription or a doctor's letter stating what you're taking and how much. Cannot bring medicines for anyone else or sell/supply them. Some medicines require a permit or prescription and others cannot be brought at all — check the TGA/Office of Drug Control before travelling for anything unusual.",
+    "legal_source": {
+      "name": "Therapeutic Goods Administration — Entering Australia (travelling with medicines and medical devices)",
+      "url": "https://www.tga.gov.au/resources/consumer-information-and-resources/travelling-medicines-and-medical-devices/entering-australia"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-au",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "cbd"
+    ],
+    "destination": "AU",
+    "category": "cbd_cannabis",
+    "verdict": "depends",
+    "notes": "Cannabis and cannabis-containing therapeutic goods are excluded from the general personal-importation scheme and are prohibited imports under the Customs (Prohibited Imports) Regulations 1956, EXCEPT under the traveller's exemption: a traveller may import medicinal cannabis for their own medical treatment (or that of someone they're caring for) if it was prescribed by a medical practitioner and supplied through a pharmacy, up to a 3-month supply per the prescription (or, for medicinal cannabis vapes, without the 3-month cap under a separate exemption). Recreational/non-prescribed cannabis is prohibited outright, with no CBD-specific carve-out confirmed for travellers. Evidence (prescription/label) may be required on entry.",
+    "legal_source": {
+      "name": "Therapeutic Goods Administration — Medicinal cannabis: importation and the traveller's exemption",
+      "url": "https://www.tga.gov.au/resources/explore-topic/medicinal-cannabis-hub/medicinal-cannabis-information-patients/medicinal-cannabis-importation-and-travellers-exemption"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-au",
+    "names": [
+      "e-cigarettes",
+      "vapes",
+      "vaping devices",
+      "e-liquid"
+    ],
+    "destination": "AU",
+    "category": "e_cigarettes",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Traveller's exemption for vapes entering by ship or aircraft, for the traveller's own use (or someone they're caring for who is travelling with them): maximum 2 vapes, 20 vape accessories (cartridges/capsules/pods), and 200 mL of vape substance in liquid form",
+      "quantity": "2 vapes / 20 accessories / 200 mL liquid"
+    },
+    "notes": "Vapes cannot otherwise be purchased from overseas retailers or websites and mailed/couriered into Australia for personal use, even with a prescription — that route is prohibited outright. Vapes containing controlled drugs (e.g. cannabis) are not covered by these quantity limits and are treated as prohibited drugs instead. Significant penalties apply for unlawfully importing vaping goods.",
+    "legal_source": {
+      "name": "Therapeutic Goods Administration — Vapes: information for individuals and patients",
+      "url": "https://www.tga.gov.au/products/unapproved-therapeutic-goods/therapeutic-vaping-goods/vaping-hub/vapes-information-individuals-and-patients"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-au",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "ham",
+      "sausage",
+      "jerky",
+      "biltong"
+    ],
+    "destination": "AU",
+    "category": "food_animal",
+    "verdict": "depends",
+    "notes": "Strict, product-specific biosecurity import conditions apply and can change quickly with disease outbreaks (check BICON before travelling). Broadly: canned/retorted meat is permitted if commercially manufactured, shelf-stable, and (except canned poultry) labelled as made in a country free from foot-and-mouth disease. Uncanned/fresh meat, ham, bacon, salami and sausages from any country other than New Zealand are NOT allowed without an import permit; New Zealand-sourced uncanned meat (excluding pork and poultry) is allowed if declared and correctly labelled. Pork-derived jerky/biltong is never permitted for personal use; non-pork jerky is allowed up to 1 kg under specific labelling/packaging conditions. Cheese, butter and other dairy products are permitted for personal use up to 10 kg/10 litres if commercially packaged and made in a foot-and-mouth-disease-free country; must be declared and inspected on arrival. Non-compliant goods are exported or destroyed at the traveller's expense.",
+    "legal_source": {
+      "name": "Department of Agriculture, Fisheries and Forestry — Bringing or mailing goods to Australia",
+      "url": "https://www.agriculture.gov.au/biosecurity-trade/travelling/bringing-mailing-goods"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-au",
+    "names": [
+      "fresh fruit",
+      "fresh vegetables",
+      "plants",
+      "seeds",
+      "flowers",
+      "plant material"
+    ],
+    "destination": "AU",
+    "category": "food_plant",
+    "verdict": "prohibited",
+    "notes": "Official traveller advice: \"do not carry any fresh fruit or vegetables, plants, seeds, meat and animal or wood products\" into Australia — for faster border clearance, travellers are told simply not to bring these. Most live plants require a Department-issued import permit; seeds must be a permitted species, phytosanitary-certified, and free of contamination, or they will be exported/destroyed. Declare any risk goods on arrival or dispose of them in terminal bins. Providing false/misleading declarations or failing to comply with a biosecurity officer's directions can draw an infringement notice of up to AUD 6,600, civil penalty proceedings, or criminal prosecution, and can lead to visa cancellation and a re-entry ban of up to 3 years.",
+    "legal_source": {
+      "name": "Department of Agriculture, Fisheries and Forestry — Travelling to Australia",
+      "url": "https://www.agriculture.gov.au/biosecurity-trade/travelling/to-australia"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-au",
+    "names": [
+      "weapons",
+      "knives",
+      "firearms",
+      "ammunition"
+    ],
+    "destination": "AU",
+    "category": "weapons",
+    "verdict": "depends",
+    "notes": "Firearms and firearm-related articles are prohibited imports under the Customs (Prohibited Imports) Regulations 1956 unless the importer first obtains written permission — either from the Attorney-General's Department or written confirmation/certification from the relevant state or territory Police Firearms Registry — via the Department of Home Affairs' Firearms Portal, before the item arrives. Requirements depend on the firearm's category, action type, magazine capacity, and fitted parts/accessories; not realistically available to an ordinary tourist without advance planning.",
+    "legal_source": {
+      "name": "Department of Home Affairs — Firearms Portal (import firearms and firearms-related articles)",
+      "url": "https://import.firearms.gov.au/landing/"
+    },
+    "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-ae",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "AE",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Alcoholic beverages not exceeding 4 litres, or 2 cartons of beer (each carton up to 24 cans of up to 355 mL per can), duty-free per traveler aged 18 or over. Excess quantity is confiscated rather than merely taxed.",
+      "quantity": "4 L (or 2 x 24-can beer cartons, 355 mL cans)"
+    },
+    "notes": "No alcohol allowance for travelers under 18 — cigarettes, tobacco products and alcoholic beverages are not permitted entry at all for under-18s, per the guide.",
+    "legal_source": {
+      "name": "Dubai Customs — Passenger Customs Guide, Version 6 (2025)",
+      "url": "https://www.dubaicustoms.gov.ae/en/OpenData/Publications/PassengerCustomsGuide.pdf"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-ae",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "shisha",
+      "hookah molasses"
+    ],
+    "destination": "AE",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "One of: 200 cigarettes, or 50 cigars, or 500 g of tobacco (minced or pressed for pipes), tumbak (pure tobacco), or hookah/shisha molasses, duty-free per traveler aged 18 or over. Customs duty is imposed on excess quantities.",
+      "quantity": "200 cigarettes (or equivalent)"
+    },
+    "notes": "No tobacco allowance for travelers under 18.",
+    "legal_source": {
+      "name": "Dubai Customs — Passenger Customs Guide, Version 6 (2025)",
+      "url": "https://www.dubaicustoms.gov.ae/en/OpenData/Publications/PassengerCustomsGuide.pdf"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-ae",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "traveler's cheques"
+    ],
+    "destination": "AE",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Arriving or departing passengers aged 18+ must declare cash, other bearer monetary instruments (cheques, promissory notes, payment orders), precious metals, or precious stones with an aggregate value exceeding AED 60,000 (or the equivalent in foreign currencies). Declaration is made via the designated form or the Afseh/iDeclare online platform. For travelers under 18, any amount they carry is added to their accompanying parent/guardian's threshold.",
+      "quantity": "AED 60,000 (~USD 16,300)"
+    },
+    "legal_source": {
+      "name": "Dubai Customs — Declaring Money Procedure / Passenger Customs Guide, Version 6 (2025)",
+      "url": "https://www.dubaicustoms.gov.ae/en/eServices/ServicesForIndividuals/ViewCustomsProcedure/Pages/DeclaringMoneyProcedure.aspx"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "medication-ae",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "otc medicine",
+      "controlled drugs"
+    ],
+    "destination": "AE",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Prescribed medicines for personal use may be brought in without a permit in what the government portal describes only as \"normal quantities\" (no numeric day-supply figure is stated on the primary page reached in this pass). Narcotic, psychotropic, and other controlled medicines classed A or B are not freely importable — they require advance authorization from the Ministry of Health and Prevention (MOHAP) before travel."
+    },
+    "notes": "The UAE has a well-documented history of detaining and prosecuting travelers over common prescription and over-the-counter medications (including some antidepressants, ADHD medications, and codeine-containing painkillers) that are controlled substances under UAE law even though sold over the counter elsewhere. This pass could not independently verify MOHAP's specific named-medicines list or the often-cited \"3-month supply\" quantity figure against mohap.gov.ae itself — every fetch attempt (browser fetch, direct HTTP, and a text-extraction proxy) failed against that domain. Do not assume a common medication is fine to bring without checking the MOHAP permit service first — see data/UNVERIFIED/TODO.md.",
+    "legal_source": {
+      "name": "U.ae (UAE Government Portal) — Drugs and Controlled Medicines",
+      "url": "https://u.ae/en/information-and-services/health-and-fitness/drugs-and-controlled-medicines"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-ae",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish",
+      "cbd",
+      "cbd oil",
+      "hemp extract"
+    ],
+    "destination": "AE",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Dubai Customs' official passenger guide lists \"narcotics of all kinds\" among items not allowed for import by passengers under any circumstances. No CBD-specific carve-out (e.g. a THC percentage threshold) was found on a primary UAE source in this pass — treat CBD/hemp products the same as cannabis and do not bring them, regardless of their legal status in your home country or how they are labeled.",
+    "legal_source": {
+      "name": "Dubai Customs — Passenger Customs Guide, Version 6 (2025)",
+      "url": "https://www.dubaicustoms.gov.ae/en/OpenData/Publications/PassengerCustomsGuide.pdf"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-ae",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "ham",
+      "sausage",
+      "animal products"
+    ],
+    "destination": "AE",
+    "category": "food_animal",
+    "verdict": "depends",
+    "notes": "Dubai Customs' official passenger guide lists both \"Food Products\" and \"Domestic Animals\" among goods accompanying passengers that are subject to permits from relevant authorities, and separately notes food items are not allowed in under a traveler's name if the quantity is commercial. The guide does not name the issuing agency or give species/quantity specifics for personal-quantity meat and dairy, so this is published at the general \"permit required\" level rather than a more specific but unverified claim.",
+    "legal_source": {
+      "name": "Dubai Customs — Passenger Customs Guide, Version 6 (2025)",
+      "url": "https://www.dubaicustoms.gov.ae/en/OpenData/Publications/PassengerCustomsGuide.pdf"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-ae",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds",
+      "seedlings"
+    ],
+    "destination": "AE",
+    "category": "food_plant",
+    "verdict": "depends",
+    "notes": "Dubai Customs' official passenger guide lists \"Plants and Seedlings\" among goods accompanying passengers that are subject to permits from relevant authorities, and explicitly states that agricultural seedlings containing soil are not allowed to be brought in by a traveler at all. The guide does not name the issuing agency or give species-level specifics beyond the soil rule.",
+    "legal_source": {
+      "name": "Dubai Customs — Passenger Customs Guide, Version 6 (2025)",
+      "url": "https://www.dubaicustoms.gov.ae/en/OpenData/Publications/PassengerCustomsGuide.pdf"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-ae",
+    "names": [
+      "drone",
+      "uas",
+      "quadcopter",
+      "uav"
+    ],
+    "destination": "AE",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "The General Civil Aviation Authority (GCAA) states that all UAS/drones, regardless of weight, used by individuals for recreational purposes must be registered with the GCAA. Dubai Customs' passenger guide also lists drones among items accompanying passengers that are subject to permits from relevant authorities and must be declared on arrival."
+    },
+    "notes": "Secondary reporting (a January 2025 news report on a GCAA policy update) describes recreational drone registration/use as currently limited to UAE residents with a valid UAE Pass account, which would effectively bar short-term tourists from legally registering a personal drone — this pass could not independently confirm that residency restriction against a primary GCAA page (the GCAA registration page itself does not address visitor/tourist status). Bringing a drone as a tourist carries real risk of it being held at the airport pending registration proof; check with the GCAA (drones@gcaa.gov.ae) before traveling with one.",
+    "legal_source": {
+      "name": "General Civil Aviation Authority (GCAA) — UAS Registration",
+      "url": "https://www.gcaa.gov.ae/en/pages/UASRegistration.aspx/"
+    },
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  }
+]

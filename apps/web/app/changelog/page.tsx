@@ -31,7 +31,7 @@ export default async function ChangelogPage() {
   const firstSeen = new Set<string>();
 
   return (
-    <article className="space-y-6">
+    <article className="mx-auto max-w-2xl space-y-6">
       <header>
         <h1 className="text-2xl font-bold tracking-tight text-slate-900">{t("h1")}</h1>
         <p className="mt-2 text-sm leading-relaxed text-slate-600">{t("intro")}</p>

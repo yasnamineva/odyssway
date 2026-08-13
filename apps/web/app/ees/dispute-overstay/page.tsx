@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function EesDisputeOverstayPage() {
   return (
-    <article>
+    <article className="mx-auto max-w-2xl">
       <DisputeContent />
     </article>
   );

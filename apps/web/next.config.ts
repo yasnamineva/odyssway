@@ -6,7 +6,7 @@ const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 const withMDX = createMDX({});
 
 const nextConfig: NextConfig = {
-  transpilePackages: ["@borderline/engine"],
+  transpilePackages: ["@odyssway/engine"],
   pageExtensions: ["ts", "tsx", "mdx"],
 };
 

@@ -25,7 +25,7 @@ export default async function RulePage() {
   };
 
   return (
-    <article>
+    <article className="mx-auto max-w-2xl">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}

@@ -1,4 +1,4 @@
-import { schemas } from "@borderline/engine";
+import { schemas } from "@odyssway/engine";
 import { z } from "zod";
 import rawNationalityRules from "../../../data/nationality-rules.json";
 

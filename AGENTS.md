@@ -1,4 +1,4 @@
-# AGENTS.md — Schengen Compliance Product ("Project Borderline", working name)
+# AGENTS.md — Trip Compliance Platform ("Odyssway")
 
 This file is the single source of truth for any AI agent working on this codebase.
 Read it fully before writing code. When in doubt, follow the **Accuracy Policy** (§3) —
@@ -8,20 +8,41 @@ it overrides everything else, including feature velocity.
 
 ## 1. What we are building and why
 
-A web product for non-EU travelers to the Schengen Area that combines:
+A web product that answers one question directly: **I'm from ⟨nationality⟩, going to
+⟨destination⟩, bringing ⟨items⟩ — can I go, for how long, what do I need, and can I
+bring it?** (rearchitected 2026-08 from a Schengen-only tool into this general
+front door; see §14 for why the calculator alone was not a durable enough product).
+The flagship flow (`/`, §7) resolves, per destination:
 
-1. **An edge-case-aware 90/180-day calculator** (rolling-window day counter that
-   correctly handles residence permits, dual citizenship, and bilateral visa-waiver
-   agreements — cases every existing competitor ignores).
-2. **EES (Entry/Exit System) guides**: what to expect at the border, and — the key
+1. **Entry eligibility** — visa-free, ETA-required, visa-required, or visa-on-arrival,
+   for the destination.
+2. **Allowed stay length** — a generalized `StayPolicy` (§6.7): the Schengen rolling
+   90/180 window for Schengen destinations, or a flat per-entry limit (the pattern
+   most of the rest of the world uses — US VWP, UK Standard Visitor, Canada eTA, etc.).
+3. **Required documents** — passport validity, proof of funds/onward travel, and
+   similar entry conditions, per destination.
+4. **Customs "can I bring it"** — item-level verdicts (alcohol, tobacco, cash,
+   medication, CBD/cannabis, food of animal/plant origin, e-cigarettes, weapons,
+   drones) for the specific destination, not just the EU.
+
+This combines what used to be five separate mid-funnel products into one flow, built
+on top of:
+
+1. **An edge-case-aware Schengen 90/180-day calculator** (rolling-window day counter
+   that correctly handles residence permits, dual citizenship, and bilateral
+   visa-waiver agreements — cases every existing competitor ignores). This remains
+   our deepest, most-verified destination module, reachable directly at `/calculator`
+   for travelers who need multi-trip tracking, and linked from Schengen results in the
+   general flow.
+2. **EES (Entry/Exit System) guides**: what to expect at the border, and — a key
    differentiator — per-country guides for **accessing and correcting your EES record**
    (wrong exit recorded, false overstay flag, fingerprint enrollment failures),
    including template letters to national authorities.
 3. **An ETIAS launch tracker + per-nationality requirement pages** (ETIAS is expected
-   to launch late 2026; this is a scheduled traffic wave we build in front of).
-4. **A "Can I bring it into the EU" module**: item-level checker for the harmonized EU
-   customs/food/cash rules (meat/dairy ban, €10,000 cash declaration, duty-free
-   allowances, medication quantities).
+   to launch late 2026; opportunistic upside, not foundational — see the note below).
+4. **A general "can I bring it" module** (§5.11): item-level checker per destination,
+   not limited to the EU's harmonized regime. Launch coverage is curated and
+   expanding — see §2 for how uncovered pairs are handled honestly.
 5. **Pro tier (later)**: saved trip history, alerts before day limits, family profiles,
    multi-jurisdiction day ledger (Schengen + UK 180-day + US ESTA + tax-residency days),
    PDF export of travel history.
@@ -60,9 +81,14 @@ A web product for non-EU travelers to the Schengen Area that combines:
 
 ## 2. Non-goals (do NOT build these)
 
-- No general "visa requirements for every country worldwide" database.
+- **No claim of exhaustive global coverage.** The (nationality × destination) and
+  (destination × item) matrix is curated and grows over time — never assembled by
+  guessing at the shape of a country's immigration/customs regime. A pair is either
+  `verified` (§3) or it renders the honest "not yet covered — here's the official
+  source to check yourself" state. This replaces the old blanket "no visa database" /
+  "no can-I-bring beyond the EU" non-goals (2026-07 scope) now that general coverage
+  is the point — the constraint moved from *scope* to *honesty about scope*.
 - No US TSA / carry-on security content (owned by tsa.gov; different problem).
-- No "can I bring it" coverage beyond the EU's harmonized regime.
 - No legal-advice chatbot. Tools compute; content explains; we never advise on
   individual immigration cases.
 - No scraping of competitor sites' content.
@@ -210,7 +236,13 @@ Launch status (`announced | live | grace_period`), fee, validity, exemptions
 The `/etias/status` tracker page renders directly from this file so updating one
 JSON updates the whole site.
 
-### 5.7 `data/eu-items.json` ("Can I bring it into the EU" module)
+### 5.7 `data/eu-items.json` — SUPERSEDED by 5.11 `data/customs-items.json`
+
+Never built. Superseded 2026-08 by the destination-keyed `customs-items.json` below,
+which generalizes the same idea beyond the EU. Kept here only so the section numbers
+below stay stable; do not build this file.
+
+Original spec, for reference:
 ```ts
 {
   slug: "meat-products",
@@ -234,6 +266,51 @@ attempt per-country depth here in v1.
 (`threshold_days, channel`). Trip `basis` enum:
 `visa_free | c_visa | d_visa_or_permit(issuing_country) | bilateral(agreement_id)`.
 GDPR requirements in §10 apply.
+
+### 5.9 `data/destinations.json` (non-Schengen destinations)
+Metadata for destinations outside the Schengen Area — Schengen members already live
+in `countries.json` and are never duplicated here.
+```ts
+{
+  code: string,                  // ISO 3166-1 alpha-2
+  name: string,
+  region: string,
+  officialAuthorityUrl: string,  // fallback link when a pair isn't covered yet
+  legal_source, verified_at, verified_by, status
+}
+```
+
+### 5.10 `data/entry-requirements.json` (nationality × non-Schengen destination)
+The general entry-eligibility matrix. Schengen destinations are **not** looked up
+here — they resolve from the existing `nationality-rules.json` + `countries.json` +
+`etias.json`, so an already-verified fact is never duplicated into a second file.
+```ts
+{
+  nationality: string, destination: string,     // both ISO alpha-2
+  requirement: "visa_free" | "eta_required" | "visa_required" | "visa_on_arrival",
+  stayPolicy: StayPolicy,        // §6.7
+  documentsNeeded: string[],
+  notes?: string,
+  legal_source, verified_at, verified_by, status
+}
+```
+
+### 5.11 `data/customs-items.json` (destination × item category)
+Generalizes the never-built `eu-items.json` (5.7) to any destination, keyed by
+destination code. The sentinel code `"EU"` is used for the EU/Schengen-harmonized
+customs rules (the same allowances apply across every Schengen member).
+```ts
+{
+  slug: string, names: string[],   // search synonyms
+  destination: string,             // ISO alpha-2, or "EU" for the harmonized EU regime
+  category: "alcohol" | "tobacco" | "cash" | "medication" | "cbd_cannabis"
+    | "food_animal" | "food_plant" | "e_cigarettes" | "weapons" | "drones" | "other",
+  verdict: "prohibited" | "allowed_with_limits" | "allowed" | "declaration_required" | "depends",
+  limits?: { description: string, quantity?: string },
+  notes?: string,
+  legal_source, verified_at, verified_by, status
+}
+```
 
 ---
 
@@ -299,7 +376,25 @@ Every result includes: days used, days remaining, **next safe entry date**,
 breaks on 15 Sep."). Include a shareable/exportable summary (URL-encoded state;
 no server storage for anonymous users).
 
-### 6.6 Tests (mandatory before any UI work)
+### 6.6 `StayPolicy` — generalizing "how long can I stay" beyond Schengen
+Most of the world does not use a rolling window: it uses a flat per-entry limit
+(US VWP 90 days, UK Standard Visitor up to 6 months, Canada visitor status up to
+6 months, each judged per entry with no lookback across other trips). `packages/
+engine/src/stay-policy.ts` expresses this as a discriminated union so the trip-check
+resolver (§7 `/`) can share one type across destinations:
+```ts
+type StayPolicy =
+  | { kind: "rolling_window"; windowDays: number; maxDays: number }  // Schengen: 180/90
+  | { kind: "fixed_per_entry"; maxDays: number }
+  | { kind: "visa_required" };                                       // no automatic duration
+```
+`rolling_window` is handled entirely by the existing §6.1–§6.5 engine — nothing about
+that engine changes. `fixed_per_entry` is evaluated by `evaluateSimpleStay()`, a
+one-line comparison with no lookback. `visa_required` means the engine computes no
+number at all; the visa's own terms decide the stay, and the UI must not display a
+day count for it.
+
+### 6.7 Tests (mandatory before any UI work)
 - Unit tests for every algorithm and edge case above, including: overlapping trips,
   trips straddling the 180-day boundary, entry=exit same-day trips, leap years,
   timezone-free date math (use date-only arithmetic; never `Date` with local TZ).
@@ -317,9 +412,11 @@ URL structure (locale-prefixed later: `/bg/…`, `/tr/…`, `hreflang` everywher
 
 | Route | Purpose / primary keywords |
 |---|---|
-| `/` | Calculator front and center + trust signals. KW: "schengen calculator", "90/180 day rule calculator" |
-| `/calculator` | Canonical tool URL (same component), FAQ + HowTo schema |
-| `/rules/90-180-rule` | Definitive plain-language explainer feeding the tool. KW: "schengen 90 180 rule explained" |
+| `/` | **Marketing landing page** (2026-08): hero + tool cards linking `/trip-check` and `/calculator` — not a tool itself. Named, icon-forward cards so the two tools read as distinct products, not one blended flow. KW: "schengen travel requirements checker", "can I travel to {destination}" |
+| `/trip-check` | **"Trip Check"** — the canonical trip-check tool (named and given its own nav entry 2026-08, moved off `/`): "I'm from ⟨X⟩, going to ⟨Y⟩, bringing ⟨Z⟩" — resolves entry eligibility, stay length, documents, and item verdicts (§5.9–5.11, §6.6). Uncovered pairs render the honest not-yet-verified state, never a guess. KW: "can I travel to {destination}", "what can I bring to {destination}" |
+| `/calculator` | The Schengen 90/180 deep-dive — **retained as-is**, not rewritten. Reached directly, from the header nav, and linked from Schengen results on `/trip-check`. FAQ + HowTo schema. KW: "schengen calculator", "90/180 day rule calculator" |
+| `/destinations/[slug]` | Programmatic per-destination hub (verified destinations only, §5.9): entry requirements by nationality + item verdicts for that destination. KW: "{destination} entry requirements", "what can I bring to {destination}" |
+| `/rules/90-180-rule` | Definitive plain-language explainer feeding the Schengen tool. KW: "schengen 90 180 rule explained" |
 | `/rules/overstay-penalties/[country]` | Programmatic, from verified data. KW: "overstay schengen fine {country}" |
 | `/guides/residence-permit-holders` | Edge case. KW: "residence permit travel other schengen countries 90 days" |
 | `/guides/dual-citizens` | KW: "dual citizen which passport schengen ees" |
@@ -331,11 +428,12 @@ URL structure (locale-prefixed later: `/bg/…`, `/tr/…`, `hreflang` everywher
 | `/ees/dispute-overstay` | KW: "EES says I overstayed but I didn't" |
 | `/etias/status` | **Launch tracker** — renders from `data/etias.json`, updated frequently. KW: "is ETIAS live", "ETIAS start date" |
 | `/etias/[nationality]` | Programmatic. KW: "ETIAS for {nationality} citizens" |
-| `/bring` | EU items module hub. KW: "what can I bring into the EU" |
-| `/bring/[item]` | Programmatic from `eu-items.json`. KW: "can I bring {item} into the EU/Europe" |
+| `/bring/[item]` | Phase 3, optional: standalone SEO landing pages generalizing `customs-items.json` (§5.11) item results beyond the inline results already on `/` and `/destinations/[slug]`. KW: "can I bring {item} to {destination}" |
 | `/tracker` | Phase-2 app (accounts, alerts, Pro) |
 | `/about`, `/methodology`, `/sources` | Trust pages: how we verify, full source list |
 | `/changelog` | **Verification changelog**: public, chronological log of every rule-data change (what changed, why, source link, `verified_at`, `verified_by`). Rendered **automatically** from the versioned data files (derive from git history or a dedicated changelog JSON — implementer's choice, but never hand-maintained). |
+| `/faq` | General trust/how-it-works questions (not per-rule FAQs, which live on their own pages per §6.7/existing `rulesFaq` pattern) — legal-advice disclaimer, verification method, coverage gaps, privacy, pricing. `FAQPage` schema. |
+| `/blog` + `/blog/[slug]` | **Explicitly approved exception to the §13.7 no-filler-posts rule**: every post exists because of a real, already-verified change in our own data (`apps/web/lib/blog.ts` pairs each post with the `legal_source` + `verified_at` that justify it) — regulation changes we caught (new destination policy, EES/ETIAS milestones) or transparency posts about our own verification process. MDX bodies in `content/en/blog/`, explanatory/no-fear tone (§8). Never a post that isn't traceable to a citation. |
 | `/widget` | Embed instructions for the embeddable calculator (Phase 3): iframe or script embed for travel blogs / expat sites, with a "powered by" backlink |
 
 Rules for programmatic pages (anti-thin-content):
@@ -404,6 +502,18 @@ Rules for programmatic pages (anti-thin-content):
 - Watched sources must also include: **eu-LISA announcements** and any **official
   EU traveler app releases** (the EU shipping better official tooling is a tracked
   competitive risk), plus the **official ETIAS site** for launch-status changes.
+- **Known gap (as of 2026-08-13)**: the 13 non-launch-set destinations added since
+  Phase 1.5's original US/GB/CA (§12) — Japan, Kenya, South Africa, Mexico,
+  Thailand, Rwanda, Nigeria, Egypt, India, Turkey, Morocco, Australia, UAE — are
+  not yet in `scripts/watch-sources.ts`'s `SOURCES` list, so their pages aren't
+  covered by the weekly diff yet. Add each destination's key source URLs (from its
+  `legal_source`/`officialAuthorityUrl` fields and the research notes in
+  `data/UNVERIFIED/TODO.md`) before relying on the watcher for freshness on these
+  rows. Two destinations flagged their own rules as unusually time-sensitive and
+  worth checking sooner than the weekly cadence regardless: Thailand (a
+  cabinet-approved visa-exemption cut not yet gazetted) and South Africa (its ETA
+  launched 2026-08-12 with eligibility/fee still unconfirmed on any primary
+  source).
 - The `/changelog` (§7) is part of this moat: cloned competitors can fake a
   "verified" badge but cannot fake a consistent public update history. The
   changelog makes our verification legible to users, journalists, search engines,
@@ -438,22 +548,79 @@ Rules for programmatic pages (anti-thin-content):
   data rendered; **5 dispute-guide pages live with verified authority data and
   downloadable templates**.
 
+**Phase 1.5 — General trip-check (2026-08 rearchitecture)**
+- Trip-check front door (§1, §7): nationality × destination × items → entry,
+  stay, documents, customs, via `apps/web/lib/trip-check.ts`. `/calculator`
+  untouched, reached from Schengen results.
+- `StayPolicy` engine generalization (§6.6) + `data/destinations.json`,
+  `entry-requirements.json`, `customs-items.json` (§5.9–5.11).
+- Launch coverage, curated and expanded from here: Schengen Area (reuses existing
+  verified data), United States, United Kingdom, Canada — chosen for
+  well-documented, English-language, single-authority official sources. Grown since
+  (2026-08-11 through 2026-08-13, in three research batches) to **16 destinations**:
+  US, GB, CA, Japan, Kenya, South Africa, Mexico, Thailand, Rwanda, Nigeria, Egypt,
+  India, Turkey, Morocco, Australia, UAE — each with the full 15-nationality entry
+  requirement matrix and per-destination customs verdicts, every row individually
+  cited (see `data/UNVERIFIED/TODO.md` for the per-destination research notes,
+  including source-reachability findings worth reading before picking the next
+  batch). Brazil is the only destination still queued (`data/UNVERIFIED/
+  destinations.json`). Everything outside this set, and any nationality outside the
+  existing 15-nationality roster, renders the honest not-yet-covered state, never a
+  guess.
+- `/destinations/[slug]` programmatic hub, verified destinations only.
+- **Given its own name and route** (2026-08): the tool is named "Trip Check",
+  moved to `/trip-check` with its own header nav entry, and `/` became a
+  proper marketing landing page (hero + named tool cards for both products)
+  instead of being the tool itself. The homepage also surfaces a live, computed
+  "N destinations verified" trust badge (`coveredDestinationCount` in
+  `apps/web/lib/destinations.ts`, linked to `/sources`) — counts destinations with
+  at least one verified entry-requirement row, not just a `destinations.json` stub,
+  so it can never overstate coverage mid-research-pass.
+- ✅ when: launch destinations resolve real entry + stay + document + item data
+  with citations; every other destination in the picker is visibly "coming soon"
+  and resolves to the not-covered state, never a fabricated answer. (Met at launch
+  for the original four; the bar carries forward for every destination added since.)
+
 **Phase 2 — Depth + retention**
-- **Lightweight retention, early and DEFENSIVE (not a monetization feature)**:
-  email capture, saved trips, day-threshold email alerts, and a free
-  "border-proof PDF" export of computed travel history. *Rationale
-  (competitive red-team, 2026-07): general-purpose AI assistants can replicate
-  one-off day calculations, but cannot offer persistence, proactive alerts,
-  deterministic verified computation, or exportable artifacts — this layer is
-  the primary long-term moat.*
+- **Lightweight retention, early and DEFENSIVE (not a monetization feature)**.
+  *Rationale (competitive red-team, 2026-07): general-purpose AI assistants can
+  replicate one-off day calculations, but cannot offer persistence, proactive
+  alerts, deterministic verified computation, or exportable artifacts — this
+  layer is the primary long-term moat.*
+  - ✅ **Shipped, client-only (2026-08)**: "border-proof PDF" export
+    (`lib/report-lines.ts` + jsPDF, one shared line-builder feeds both the PDF
+    and the existing clipboard report — never two sources of truth for the
+    wording); a passport-expiry reminder and an "approaching your 90-day
+    limit" warning, each backed by a one-click `.ics` calendar download
+    (`lib/ics.ts`) so the reminder lives in the user's own calendar app. All
+    of this is opt-in, stored only in `localStorage` (same toggle as "remember
+    my trips"), and requires no account, no email, and no server — it does
+    not touch the architecture in §4/§10 ("no trip data sent to the server
+    for anonymous users").
+  - **Still open, and a materially bigger decision** (needs an actual backend
+    decision, not just a UI addition): **email-based** day-threshold alerts,
+    saved trips synced across devices, and accounts. This is the part of
+    Phase 2 that requires Supabase + Resend (§4) and a GDPR review (§10) —
+    don't start it opportunistically off a UI request; it needs its own
+    explicit go-ahead given the privacy-architecture change it represents.
 - Programmatic `/etias/[nationality]` for top 15 visa-exempt nationalities.
-- Accounts (Supabase), GDPR export/delete. ✅ when: a user can save trips, get
-  an alert, export the PDF, and delete their account fully.
+- Accounts (Supabase), GDPR export/delete. ✅ when: a user can save trips
+  server-side, get an email alert, and delete their account fully (the
+  client-only PDF/reminders above already satisfy the export/reminder half of
+  the original acceptance criterion without needing this).
 
 **Phase 3 — Expansion**
-- `/bring` module (top 25 items), overstay-penalties pages, bilateral-agreements
-  pages (verified rows only), Pro gating + Stripe, locales (bg, tr, sr) with
-  hreflang.
+- `/bring/[item]` standalone landing pages (top 25 items across launch
+  destinations), overstay-penalties pages, bilateral-agreements pages (verified
+  rows only), Pro gating + Stripe, locales (bg, tr, sr) with hreflang. Continue
+  expanding `entry-requirements.json`/`customs-items.json` destination coverage
+  beyond the current 16-destination set (§12 Phase 1.5) — Brazil is next, already
+  queued in `data/UNVERIFIED/destinations.json`; after that, prioritize by
+  traffic/tourism volume and by source-reachability signal from prior research
+  passes (see `data/UNVERIFIED/TODO.md`'s per-destination "source-quality note"
+  entries — e.g. Rwanda and South Africa were unusually clean, several
+  government sites need a Wayback-Machine-plus-live-cross-check workaround for
+  Cloudflare/Akamai-blocked pages).
 - **Embeddable calculator** (iframe or script embed) that travel blogs and
   expat sites can install, with a "powered by" backlink; embed instructions at
   `/widget` (§7). *Rationale: reduces dependence on organic search rankings by
@@ -488,22 +655,43 @@ engine/logic → tests → UI → content → SEO wiring.
 
 ## 14. Competitive posture
 
+The 2026-08 rearchitecture (§1) moved us from a single-purpose Schengen calculator
+to a general trip-check platform, because a single-purpose tool — however good —
+is a feature competitors and general-purpose AI assistants can eventually match.
+This also puts us next to a broader field: iVisa, Sherpa, VisaGuide.World, Wanderlog's
+"requirements" panels, and Google's own "before you go" surfaces. The response is
+the same one that already worked for the Schengen-only product: don't try to win on
+breadth-of-claims (nobody can verify the whole world at once, and pretending to is
+how competitors get things wrong) — win by being the one place where every claim is
+cited, dated, and never a guess.
+
 What we deliberately do **NOT** compete on:
 - Generic informational queries owned by content authorities ("what is the
-  Schengen Area") — that traffic is theirs and AI Overviews' now.
-- "A calculator exists" as an identity — the commodity calculator is table
+  Schengen Area", "do I need a US visa") — that traffic is theirs and AI
+  Overviews' now.
+- "A calculator/checker exists" as an identity — the commodity tool is table
   stakes, not a product.
+- **Breadth of claimed coverage.** iVisa- and Sherpa-class competitors answer for
+  every country pair immediately, often by inference or stale data. We answer for
+  fewer pairs, correctly, with a citation — and say "not yet verified" everywhere
+  else (§2). This is a deliberate trade, not a temporary gap to hide.
 - App-store distribution — we don't fight the iOS/Android calculator apps on
   their turf in v1.
 
 The durable moats, in priority order:
-1. A **verified legal data corpus with a public changelog** (§7 `/changelog`, §11).
+1. A **verified legal data corpus with a public changelog** (§7 `/changelog`, §11) —
+   now spanning entry requirements, stay policy, and customs items, not just
+   Schengen dates.
 2. The **edge-case engine with cited legal basis** (permits, accession dates,
-   bilateral bases — each rule traceable to a regulation article).
+   bilateral bases, and now `StayPolicy` per destination — each rule traceable to
+   a regulation or official-source article).
 3. **Per-country EES dispute procedures + template letters** (first-mover wedge).
 4. **Persistence, alerts, and exportable artifacts** (Phase 2 — what one-off AI
    answers can't do).
 5. **Freshness infrastructure** (§11 source watching + fast single-JSON updates).
+6. **Honesty about coverage gaps as itself a trust signal** — a visibly curated,
+   growing, cited matrix reads as more credible than a competitor's silent guess
+   at full coverage, once a user has been burned by one wrong answer.
 
 Features can be cloned in a weekend; a continuously verified, publicly
 auditable legal data corpus cannot.

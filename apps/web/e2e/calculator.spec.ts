@@ -174,6 +174,45 @@ test("border report copies a plain-text summary", async ({ page, context }) => {
   expect(clipboard).toContain("Jun 1, 2026 to Jun 10, 2026 (10 days");
 });
 
+test("downloads a PDF border report", async ({ page }) => {
+  await fillFirstTrip(page, "2026-06-01", "2026-06-10");
+  await setCheckDate(page, "2026-06-30");
+  const [download] = await Promise.all([
+    page.waitForEvent("download"),
+    page.getByTestId("download-pdf").click(),
+  ]);
+  expect(download.suggestedFilename()).toMatch(/^schengen-border-report-\d{4}-\d{2}-\d{2}\.pdf$/);
+});
+
+test("shows a tiered passport-expiry reminder and downloads a calendar file", async ({ page }) => {
+  // Passport expiry is judged against real today (unlike the calculator's own
+  // hypothetical "check status on" field), so this must stay a future date.
+  await page.getByLabel("Passport expiry date (optional)").fill("2030-01-01");
+  const note = page.getByTestId("passport-expiry-note");
+  await expect(note).toBeVisible();
+  await expect(note).toContainText("expires");
+  const [download] = await Promise.all([
+    page.waitForEvent("download"),
+    note.getByRole("button", { name: "Add reminder to my calendar" }).click(),
+  ]);
+  expect(download.suggestedFilename()).toMatch(/^passport-renewal-2030-01-01\.ics$/);
+});
+
+test("warns when approaching the 90-day limit and offers a calendar reminder", async ({
+  page,
+}) => {
+  await fillFirstTrip(page, "2026-01-01", "2026-03-26"); // 85 days used, 5 remaining
+  await setCheckDate(page, "2026-03-26");
+  const banner = page.getByTestId("approaching-limit-warning");
+  await expect(banner).toBeVisible();
+  await expect(banner).toContainText("5 days left");
+  const [download] = await Promise.all([
+    page.waitForEvent("download"),
+    banner.getByRole("button", { name: "Add reminder to my calendar" }).click(),
+  ]);
+  expect(download.suggestedFilename()).toMatch(/^schengen-limit-\d{4}-\d{2}-\d{2}\.ics$/);
+});
+
 test("works at mobile viewport", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await fillFirstTrip(page, "2026-06-01", "2026-06-10");

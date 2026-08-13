@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function EesHubPage() {
   return (
-    <article>
+    <article className="mx-auto max-w-2xl">
       <EesHubContent />
     </article>
   );

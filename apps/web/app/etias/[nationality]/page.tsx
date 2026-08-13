@@ -43,7 +43,7 @@ export default async function EtiasNationalityPage({
   const tc = await getTranslations("common");
 
   return (
-    <article className="space-y-6">
+    <article className="mx-auto max-w-2xl space-y-6">
       <header>
         <h1 className="text-2xl font-bold tracking-tight">
           {t("h1", { citizens: rule.citizenLabel })}

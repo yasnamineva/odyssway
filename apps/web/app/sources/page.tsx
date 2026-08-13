@@ -2,8 +2,16 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import rawCountriesFile from "../../../../data/countries.json";
 import { countriesVerifiedAt } from "../../lib/countries";
+import { customsItems, destinations, entryRequirements } from "../../lib/destinations";
 import { etias, etiasSources, type SourceNote } from "../../lib/etias";
 import { publishedNationalities } from "../../lib/nationalities";
+
+/** Distinct {name, url} legal sources across a set of rows, in first-seen order. */
+function distinctSources(rows: Array<{ legal_source: { name: string; url: string } }>) {
+  const seen = new Map<string, { name: string; url: string }>();
+  for (const r of rows) seen.set(r.legal_source.url, r.legal_source);
+  return [...seen.values()];
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("pages.sources");
@@ -83,7 +91,7 @@ export default async function SourcesPage() {
   const t = await getTranslations("sourcesPage");
 
   return (
-    <article className="space-y-6">
+    <article className="mx-auto max-w-2xl space-y-6">
       <header>
         <h1 className="text-2xl font-bold tracking-tight text-slate-900">{t("h1")}</h1>
         <p className="mt-2 text-sm leading-relaxed text-slate-600">{t("intro")}</p>
@@ -125,6 +133,52 @@ export default async function SourcesPage() {
               {publishedNationalities[0]?.legal_source.name}
             </a>
           </li>
+        </ul>
+
+        {destinations
+          .filter((d) => d.status === "verified")
+          .map((d) => {
+            const rows = [
+              ...entryRequirements.filter((r) => r.destination === d.code && r.status === "verified"),
+              ...customsItems.filter((i) => i.destination === d.code && i.status === "verified"),
+            ];
+            return (
+              <div key={d.code}>
+                <h3 className="mt-6 text-sm font-semibold text-slate-800">
+                  {d.name}{" "}
+                  <span className="font-normal text-xs text-slate-500">
+                    — {t("verifiedLabel", { date: d.verified_at ?? "" })}
+                  </span>
+                </h3>
+                <ul className="mt-2 space-y-2 text-sm leading-relaxed text-slate-700">
+                  {distinctSources(rows).map((s, i) => (
+                    <li key={i}>
+                      <a href={s.url} rel="noopener noreferrer" className="underline">
+                        {s.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+
+        <h3 className="mt-6 text-sm font-semibold text-slate-800">
+          {t("euCustomsLabel")}{" "}
+          <span className="font-normal text-xs text-slate-500">
+            — {t("verifiedLabel", { date: customsItems.find((i) => i.destination === "EU")?.verified_at ?? "" })}
+          </span>
+        </h3>
+        <ul className="mt-2 space-y-2 text-sm leading-relaxed text-slate-700">
+          {distinctSources(customsItems.filter((i) => i.destination === "EU" && i.status === "verified")).map(
+            (s, i) => (
+              <li key={i}>
+                <a href={s.url} rel="noopener noreferrer" className="underline">
+                  {s.name}
+                </a>
+              </li>
+            ),
+          )}
         </ul>
       </section>
 

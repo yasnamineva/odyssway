@@ -1,4 +1,4 @@
-import { isValidISODate } from "@borderline/engine";
+import { isValidISODate } from "@odyssway/engine";
 
 /**
  * URL-encoded calculator state (AGENTS.md §6.5): dates live in the link,

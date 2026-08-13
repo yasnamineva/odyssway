@@ -7,11 +7,28 @@ import "./globals.css";
 const OFFICIAL_CALCULATOR_URL =
   "https://ec.europa.eu/assets/home/visa-calculator/calculator.htm?lang=en";
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.invalid";
+
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("meta");
+  const title = t("title");
+  const description = t("description");
   return {
-    title: t("title"),
-    description: t("description"),
+    metadataBase: new URL(SITE_URL),
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      siteName: "Odyssway",
+      type: "website",
+      locale: "en_US",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
   };
 }
 
@@ -39,7 +56,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <div className="flex min-h-dvh flex-col">
             <header className="border-b border-slate-200">
-              <div className="mx-auto flex max-w-2xl flex-wrap items-baseline justify-between gap-2 px-4 py-5">
+              <div className="mx-auto flex max-w-6xl flex-wrap items-baseline justify-between gap-2 px-4 py-5">
                 <a
                   href="/"
                   className="font-display text-xl font-bold tracking-tight text-slate-900"
@@ -47,6 +64,9 @@ export default async function RootLayout({
                   {t("header.brand")}
                 </a>
                 <nav className="flex flex-wrap gap-x-4 gap-y-1">
+                  <a href="/trip-check" className="text-[13px] font-medium text-slate-600 hover:text-slate-900">
+                    {t("header.nav.tripCheck")}
+                  </a>
                   <a href="/calculator" className="text-[13px] font-medium text-slate-600 hover:text-slate-900">
                     {t("header.nav.calculator")}
                   </a>
@@ -62,11 +82,11 @@ export default async function RootLayout({
                 </nav>
               </div>
             </header>
-            <main className="mx-auto w-full max-w-2xl flex-1 px-4 pt-8 pb-12">
+            <main className="mx-auto w-full max-w-6xl flex-1 px-4 pt-8 pb-12">
               {children}
             </main>
             <footer className="bg-slate-900 text-slate-300">
-              <div className="mx-auto max-w-2xl space-y-3 px-4 py-8 text-xs leading-relaxed">
+              <div className="mx-auto max-w-6xl space-y-3 px-4 py-8 text-xs leading-relaxed">
                 <p className="font-display text-base text-slate-100">
                   {t("header.brand")}
                 </p>
@@ -83,6 +103,12 @@ export default async function RootLayout({
                   </a>
                   <a href="/changelog" className="underline hover:text-white">
                     {t("footer.changelog")}
+                  </a>
+                  <a href="/blog" className="underline hover:text-white">
+                    {t("footer.blog")}
+                  </a>
+                  <a href="/faq" className="underline hover:text-white">
+                    {t("footer.faq")}
                   </a>
                   <a
                     href={OFFICIAL_CALCULATOR_URL}

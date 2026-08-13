@@ -3,7 +3,8 @@ import { expect, test } from "@playwright/test";
 /** Every public route renders with its key content (Phase 1 launch surface). */
 
 const routes: Array<{ path: string; expectText: string }> = [
-  { path: "/", expectText: "Schengen 90/180 day calculator" },
+  { path: "/", expectText: "Can you go — and for how long?" },
+  { path: "/trip-check", expectText: "Where are you from, and where are you going?" },
   { path: "/calculator", expectText: "Schengen 90/180 day calculator" },
   { path: "/rules/90-180-rule", expectText: "The short answer" },
   { path: "/ees", expectText: "Entry/Exit System" },
@@ -14,6 +15,9 @@ const routes: Array<{ path: string; expectText: string }> = [
   { path: "/etias/ua", expectText: "biometric passports" },
   { path: "/ees/data-access/fr", expectText: "CNIL" },
   { path: "/ees/data-access/de", expectText: "45 days" },
+  { path: "/destinations/us", expectText: "Travelling to United States" },
+  { path: "/destinations/gb", expectText: "Travelling to United Kingdom" },
+  { path: "/destinations/ca", expectText: "Travelling to Canada" },
   { path: "/guides/dual-citizens", expectText: "not a Union citizen" },
   { path: "/guides/residence-permit-holders", expectText: "shall not be taken into account" },
   { path: "/changelog", expectText: "Verification changelog" },
@@ -47,6 +51,19 @@ test("unknown nationality pages 404 instead of rendering thin content", async ({
 test("unverified EES countries 404 instead of rendering thin content", async ({ page }) => {
   const response = await page.goto("/ees/data-access/pl");
   expect(response?.status()).toBe(404);
+});
+
+test("unverified destination pages 404 instead of rendering thin content", async ({ page }) => {
+  const response = await page.goto("/destinations/au");
+  expect(response?.status()).toBe(404);
+});
+
+test("sources page cites the promoted destination and EU customs data", async ({ page }) => {
+  await page.goto("/sources");
+  await expect(page.locator("body")).toContainText("United States");
+  await expect(page.locator("body")).toContainText("United Kingdom");
+  await expect(page.locator("body")).toContainText("Canada");
+  await expect(page.locator("body")).toContainText("EU/Schengen-harmonized customs rules");
 });
 
 test("EES country page shows both template letters with downloads", async ({ page }) => {
@@ -83,8 +100,23 @@ test("sitemap and robots respond", async ({ request }) => {
 
 test("header navigation reaches the guide pages", async ({ page }) => {
   await page.goto("/");
+  await page.locator("header").getByRole("link", { name: "Trip Check", exact: true }).click();
+  await expect(page).toHaveURL(/\/trip-check$/);
   await page.getByRole("link", { name: "90/180 rule" }).click();
   await expect(page).toHaveURL(/\/rules\/90-180-rule$/);
   await page.getByRole("link", { name: "ETIAS" }).click();
   await expect(page).toHaveURL(/\/etias\/status$/);
+});
+
+test("landing page links into both tools", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.getByRole("link", { name: "Start a Trip Check" })).toHaveAttribute(
+    "href",
+    "/trip-check",
+  );
+  await expect(
+    page.getByRole("link", { name: "Open the Schengen Calculator" }),
+  ).toHaveAttribute("href", "/calculator");
+  await page.getByRole("link", { name: /Open Trip Check/ }).click();
+  await expect(page).toHaveURL(/\/trip-check$/);
 });

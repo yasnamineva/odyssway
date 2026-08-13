@@ -1,9 +1,11 @@
-# Borderline (working name)
+# Odyssway
 
-Schengen compliance product: an edge-case-aware 90/180 calculator, EES
-record-correction guides, an ETIAS launch tracker, and an EU customs item
-checker. **Read `AGENTS.md` before contributing — the Accuracy Policy (§3)
-overrides everything else.**
+Trip-compliance platform: **Trip Check** (`/trip-check`) answers "I'm from
+⟨nationality⟩, going to ⟨destination⟩, bringing ⟨items⟩ — can I go, for how
+long, what do I need, and can I bring it?" across 16 verified destinations
+(and growing), built on top of an edge-case-aware Schengen 90/180 calculator,
+EES record-correction guides, and an ETIAS launch tracker. **Read `AGENTS.md`
+before contributing — the Accuracy Policy (§3) overrides everything else.**
 
 ## Layout
 
@@ -11,8 +13,8 @@ overrides everything else.**
 /apps/web            # Next.js app (App Router, Tailwind v4, next-intl)
 /packages/engine     # pure-TS Schengen calculation engine + tests
 /content             # MDX guides (en/, later bg/, tr/, sr/…)
-/data                # human-verified rule data (JSON) — the crown jewels
-/data/UNVERIFIED     # agent-drafted data awaiting human verification
+/data                # verified rule data (JSON) — the crown jewels
+/data/UNVERIFIED     # agent-drafted data awaiting primary-source verification
 /scripts             # data validation (CI gate), source change detection
 ```
 
@@ -33,13 +35,14 @@ pnpm build
 
 Four automated layers, all run by CI on every push (`.github/workflows/ci.yml`):
 
-1. **Engine unit + golden tests** (`pnpm --filter @borderline/engine test`) —
-   51 tests: all four queries, date math (leap years, DST-immunity), presence
+1. **Engine unit + golden tests** (`pnpm --filter @odyssway/engine test`) —
+   61 tests: all four queries, date math (leap years, DST-immunity), presence
    edge cases (permits, bilateral, accession dates), a 300-run property test,
    and the **golden cases**: every worked example from the European
    Commission's official calculator manual must produce identical results.
 2. **Web unit tests** (`pnpm --filter web test`) — share-URL encoding/decoding
-   (round-trips, legacy links, malformed input).
+   (round-trips, legacy links, malformed input), trip-check resolution, PDF
+   report lines, and `.ics` reminder generation.
 3. **Data validation** (`pnpm validate:data`) — schema-checks /data, rejects
    unverified rows in production and any production reference to UNVERIFIED.
 4. **E2E browser tests** (`pnpm test:e2e`) — Playwright drives the real UI
@@ -75,17 +78,29 @@ CLI alternative from `apps/web`: `npx vercel login`, then `npx vercel`
 
 ## Status
 
+(Phase numbers refer to AGENTS.md §12.)
+
 - **Phase 0 (foundation): done.** Engine implements all four queries
   (`status`, `planTrip`, `maxStay`, `nextEntry`), edge-case handling
   (residence permits, bilateral basis, per-date accession), and matches every
   worked example in the European Commission's official calculator manual
   (golden tests). CI runs typecheck + tests + data validation + build.
-- **Phase 1 (launch surface): started.** Client-side calculator UI with
-  URL-shareable state lives at `/` and `/calculator`, including a country
-  picker backed by `data/countries.json` (non-Schengen stays excluded,
-  BG/RO/HR accession dates handled per-date). Remaining: content pages,
-  `/etias/status` page (data is ready), schema.org, sitemap, Plausible domain
-  config.
+- **Phase 1 (launch surface): done.** Calculator UI, `/rules/90-180-rule`,
+  the `/ees` hub + dispute/data-access guides, `/etias/status`, trust pages,
+  disclaimers, schema.org, sitemap, Plausible.
+- **Phase 1.5 (general trip-check platform): live and growing.** `/trip-check`
+  resolves entry eligibility, stay length, required documents, and customs
+  verdicts for **16 verified destinations** (US, GB, CA, Japan, Kenya, South
+  Africa, Mexico, Thailand, Rwanda, Nigeria, Egypt, India, Turkey, Morocco,
+  Australia, UAE — plus the Schengen Area) across the full 15-nationality
+  roster, every fact individually cited. Brazil is next in the queue
+  (`data/UNVERIFIED/destinations.json`); the homepage shows a live, computed
+  coverage count. `/` is the marketing landing page; `/calculator` remains
+  the dedicated Schengen deep-dive.
+- **Phase 2 (retention): partially shipped.** Client-only, no-account, no-server
+  border-proof PDF export and passport-expiry / 90-day-limit reminders
+  (`.ics` download) are live. Email alerts and synced accounts (would need
+  Supabase + a GDPR review) are still open — see AGENTS.md §12.
 
 ## Verification workflow (short version)
 

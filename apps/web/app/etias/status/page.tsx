@@ -22,7 +22,7 @@ export default async function EtiasStatusPage() {
   const tc = await getTranslations("common");
 
   return (
-    <article className="space-y-6">
+    <article className="mx-auto max-w-2xl space-y-6">
       <h1 className="text-2xl font-bold tracking-tight text-slate-900">{t("h1")}</h1>
 
       <section

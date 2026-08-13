@@ -37,6 +37,9 @@ source verification, no human editorial review pass).
 | `etias.json` | **live** — verified 2026-07-13 (fee-exemption ages pending, see TODO) |
 | `nationality-rules.json` | **live** — top 15 visa-exempt nationalities, verified 2026-07-13 (Reg. 2018/1806 Annex II consolidated) |
 | `ees.json` | **live** — FR/ES/DE/IT/NL with DPA contacts (Art. 53(2) basis); designated controllers pending (see TODO) |
+| `destinations.json` | **live** — 16 destinations: US, GB, CA, JP, KE, ZA, MX, TH, RW, NG, EG, IN, TR, MA, AU, AE. Brazil queued next (see `UNVERIFIED/destinations.json` + TODO) |
+| `entry-requirements.json` | **live** — full 15-nationality roster × all 16 destinations above (232 rows, per-row citations) |
+| `customs-items.json` | **live** — destination-keyed customs verdicts for the same 16 destinations plus the `"EU"` harmonized-Schengen sentinel (148 rows, per-row citations) |
 | `bilateral-agreements.json` | not started — candidates in `UNVERIFIED/bilateral-candidates.json` |
 | `overstay-penalties.json` | not started |
 | `eu-items.json` | not started |

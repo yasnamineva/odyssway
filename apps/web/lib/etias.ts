@@ -1,4 +1,4 @@
-import { schemas } from "@borderline/engine";
+import { schemas } from "@odyssway/engine";
 import rawEtiasFile from "../../../data/etias.json";
 
 export interface SourceNote {

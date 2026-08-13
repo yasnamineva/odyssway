@@ -17,12 +17,18 @@ export {
   planTrip,
   status,
 } from "./engine";
+export { evaluateSimpleStay } from "./stay-policy";
+export type { SimpleStayResult, StayPolicy } from "./stay-policy";
 export type {
   Basis,
   BilateralAgreementRecord,
   CountryCode,
   CountryRecord,
+  CustomsItemCategory,
+  CustomsItemRecord,
+  DestinationRecord,
   EngineContext,
+  EntryRequirementRecord,
   ExclusionReason,
   MaxStayResult,
   NextEntryResult,

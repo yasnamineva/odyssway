@@ -5,10 +5,14 @@ import Calculator from "../../components/Calculator";
 /** Canonical tool URL (AGENTS.md §7) — same component as the home page. */
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("meta");
+  const title = t("calculatorTitle");
+  const description = t("calculatorDescription");
   return {
-    title: t("title"),
-    description: t("description"),
+    title,
+    description,
     alternates: { canonical: "/calculator" },
+    openGraph: { title, description },
+    twitter: { title, description },
   };
 }
 
@@ -25,13 +29,13 @@ export default async function CalculatorPage() {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="mx-auto max-w-4xl space-y-6">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(appJsonLd) }}
       />
       <h1 className="text-2xl font-bold tracking-tight text-slate-900">
-        {t("home.h1")}
+        {t("calc.pageH1")}
       </h1>
       <Calculator />
     </div>

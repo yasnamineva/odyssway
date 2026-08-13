@@ -58,6 +58,107 @@ const SOURCES: WatchedSource[] = [
     url: "https://www.eeas.europa.eu/eeas/coming-visa-free-country-and-travelling-europe_en",
     usedBy: "data/etias.json (launch window, validity, 30-country scope; fee figure on this page is stale — EUR 20 per Delegated Regulation (EU) 2025/1411)",
   },
+  {
+    id: "us-vwp-statute",
+    url: "https://www.govinfo.gov/content/pkg/USCODE-2023-title8/html/USCODE-2023-title8-chap12-subchapII-partII-sec1187.htm",
+    usedBy: "data/entry-requirements.json (US Visa Waiver Program eligibility, stay length, ESTA)",
+  },
+  {
+    id: "us-customs-personal-exemptions",
+    url: "https://www.govinfo.gov/content/pkg/CFR-2023-title19-vol2/xml/CFR-2023-title19-vol2-sec148-43.xml",
+    usedBy: "data/customs-items.json (US alcohol/tobacco duty-free allowances)",
+  },
+  {
+    id: "uk-standard-visitor",
+    url: "https://www.gov.uk/standard-visitor-visa",
+    usedBy: "data/entry-requirements.json (UK Standard Visitor route, ETA, stay length, documents)",
+  },
+  {
+    id: "uk-bringing-goods",
+    url: "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain",
+    usedBy: "data/customs-items.json (UK alcohol/tobacco/general-goods allowances)",
+  },
+  {
+    id: "ca-eta-eligibility",
+    url: "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=1016&top=16",
+    usedBy: "data/entry-requirements.json (Canada eTA eligibility, stay length)",
+  },
+  {
+    id: "ca-customs-alcohol-tobacco",
+    url: "https://www.cbsa-asfc.gc.ca/travel-voyage/atl-lat-eng.html",
+    usedBy: "data/customs-items.json (Canada alcohol/tobacco/vape allowances). Known to block some automated fetches — a persistent failure here is itself a signal to re-check manually.",
+  },
+  {
+    id: "eu-cash-declaration-regulation",
+    url: "http://publications.europa.eu/resource/celex/32018R1672",
+    usedBy: "data/customs-items.json (EU €10,000 cash declaration threshold), fetched via the Publications Office CELLAR API (eur-lex.europa.eu itself blocks automated fetching)",
+  },
+  // --- Non-launch-set destinations added 2026-08-11 through 2026-08-13 (AGENTS.md §12 Phase 1.5) ---
+  {
+    id: "jp-visa-exemption-list",
+    url: "https://www.mofa.go.jp/j_info/visit/visa/short/novisa.html",
+    usedBy: "data/entry-requirements.json (Japan reciprocal visa exemption list)",
+  },
+  {
+    id: "ke-eta-regulation",
+    url: "https://new.kenyalaw.org/akn/ke/act/ln/2024/1/eng@2024-01-19/source.pdf",
+    usedBy: "data/entry-requirements.json (Kenya eTA regime, Legal Notice No. 1 of 2024)",
+  },
+  {
+    id: "mx-visa-exemption-list",
+    url: "https://www.gob.mx/cms/uploads/attachment/file/67045/Paises_y_regiones_que_requieren_VISA_para_viajar_a_Mexico-Paises_y_regiones_que_no_requieren_VISA_para_viajar_a_Mexico.pdf",
+    usedBy: "data/entry-requirements.json (Mexico INM/SRE visa-exemption annex)",
+  },
+  {
+    id: "za-visa-exemption-list",
+    url: "https://www.dha.gov.za/index.php/immigration-services/exempt-countries",
+    usedBy: "data/entry-requirements.json (South Africa DHA visa exemption list — also watch for the new ETA's eligibility/fee terms once published)",
+  },
+  {
+    id: "th-visa-exemption-list",
+    url: "https://image.mfa.go.th/mfa/0/zE6021nSnu/0303/%E0%B8%9C.60.pdf",
+    usedBy: "data/entry-requirements.json (Thailand ผ.60 visa-exemption scheme — a cabinet-approved 30/15-day replacement was pending Royal Gazette publication as of verification; check for that specifically)",
+  },
+  {
+    id: "rw-visa-on-arrival",
+    url: "https://www.migration.gov.rw/visa-on-arrival",
+    usedBy: "data/entry-requirements.json (Rwanda DGIE visa-on-arrival terms by nationality group)",
+  },
+  {
+    id: "eg-evisa-faq",
+    url: "https://visa2egypt.gov.eg/eVisa/FAQ",
+    usedBy: "data/entry-requirements.json (Egypt e-Visa eligible-nationality list)",
+  },
+  {
+    id: "ng-tourism-visa",
+    url: "https://immigration.gov.ng/info-center/tourism-visa-f5a/",
+    usedBy: "data/entry-requirements.json (Nigeria Tourism Visa F5A e-Visa terms)",
+  },
+  {
+    id: "ma-visa-exemption-list",
+    url: "https://www.consulat.ma/en/list-countries-whose-citizens-are-exempted-entry-visa-morocco",
+    usedBy: "data/entry-requirements.json (Morocco visa-exemption list)",
+  },
+  {
+    id: "in-evisa-tvoa",
+    url: "https://indianvisaonline.gov.in/evisa/tvoa.html",
+    usedBy: "data/entry-requirements.json (India e-Tourist Visa eligible-country list and terms)",
+  },
+  {
+    id: "tr-visa-information",
+    url: "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+    usedBy: "data/entry-requirements.json (Turkey visa-exemption regime, Law No. 6458). Note: evisa.gov.tr — the domain named in secondary sources as Turkey's e-Visa portal — currently redirects to a private company; not used as a citation, but worth periodically re-checking.",
+  },
+  {
+    id: "au-eta-subclass-601",
+    url: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601",
+    usedBy: "data/entry-requirements.json (Australia ETA subclass 601 and eVisitor terms)",
+  },
+  {
+    id: "ae-movement-residence-law",
+    url: "https://www.gdrfad.gov.ae/themes/gdrfad/content/pdf/Law-of-Movement-and-Residence-of-Aliens-en.pdf",
+    usedBy: "data/entry-requirements.json (UAE entry/residence law underlying the visa-exemption list)",
+  },
 ];
 
 const ROOT = join(import.meta.dirname, "..");
@@ -74,7 +175,7 @@ function loadHashes(): Record<string, string> {
 
 async function fetchHash(url: string): Promise<string> {
   const res = await fetch(url, {
-    headers: { "user-agent": "borderline-source-watch/0.1 (change detection for compliance data)" },
+    headers: { "user-agent": "odyssway-source-watch/0.1 (change detection for compliance data)" },
     redirect: "follow",
   });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);

@@ -124,3 +124,57 @@ export interface NextEntryResult {
   earliestEntry: ISODate;
   lastAllowedDay: ISODate;
 }
+
+/** Matches data/destinations.json records (see schemas.ts / AGENTS.md §5.9). Non-Schengen only. */
+export interface DestinationRecord {
+  code: CountryCode;
+  name: string;
+  region: string;
+  officialAuthorityUrl: string;
+  legal_source: { name: string; url: string };
+  verified_at: string | null;
+  verified_by: string | null;
+  status: "verified" | "needs_verification";
+}
+
+/** Matches data/entry-requirements.json records (see schemas.ts / AGENTS.md §5.10). */
+export interface EntryRequirementRecord {
+  nationality: CountryCode;
+  destination: CountryCode;
+  requirement: "visa_free" | "eta_required" | "visa_required" | "visa_on_arrival";
+  stayPolicy: import("./stay-policy").StayPolicy;
+  documentsNeeded: string[];
+  notes?: string;
+  legal_source: { name: string; url: string };
+  verified_at: string | null;
+  verified_by: string | null;
+  status: "verified" | "needs_verification";
+}
+
+export type CustomsItemCategory =
+  | "alcohol"
+  | "tobacco"
+  | "cash"
+  | "medication"
+  | "cbd_cannabis"
+  | "food_animal"
+  | "food_plant"
+  | "e_cigarettes"
+  | "weapons"
+  | "drones"
+  | "other";
+
+/** Matches data/customs-items.json records (see schemas.ts / AGENTS.md §5.11). */
+export interface CustomsItemRecord {
+  slug: string;
+  names: string[];
+  destination: CountryCode;
+  category: CustomsItemCategory;
+  verdict: "prohibited" | "allowed_with_limits" | "allowed" | "declaration_required" | "depends";
+  limits?: { description: string; quantity?: string };
+  notes?: string;
+  legal_source: { name: string; url: string };
+  verified_at: string | null;
+  verified_by: string | null;
+  status: "verified" | "needs_verification";
+}

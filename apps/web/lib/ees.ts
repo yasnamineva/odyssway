@@ -1,4 +1,4 @@
-import { schemas } from "@borderline/engine";
+import { schemas } from "@odyssway/engine";
 import { z } from "zod";
 import rawEes from "../../../data/ees.json";
 import { countryName } from "./countries";

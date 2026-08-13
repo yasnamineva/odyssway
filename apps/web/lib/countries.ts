@@ -2,7 +2,7 @@ import {
   schemas,
   type CountryRecord,
   type EngineContext,
-} from "@borderline/engine";
+} from "@odyssway/engine";
 import rawCountriesFile from "../../../data/countries.json";
 
 /**

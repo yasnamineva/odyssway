@@ -29,6 +29,19 @@
   --color-blue-100: #dce3ee;
   --color-blue-200: #b9c8de;
   --color-blue-500: #27436b;
+
+  --animate-fade-in-up: fade-in-up 0.45s ease-out;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @layer base {
@@ -37,6 +50,14 @@
   h3 {
     font-family: var(--font-display);
   }
+}
+
+/* Faint grid backdrop for dark editorial sections (GlobeStory). */
+.bg-grid-faint {
+  background-image:
+    linear-gradient(rgba(247, 244, 236, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(247, 244, 236, 0.06) 1px, transparent 1px);
+  background-size: 44px 44px;
 }
 
 html {

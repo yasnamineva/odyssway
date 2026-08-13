@@ -17,7 +17,7 @@ import {
   type PlanTripResult,
   type StatusResult,
   type Trip,
-} from "@borderline/engine";
+} from "@odyssway/engine";
 import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useMemo, useState } from "react";
 import {
@@ -27,6 +27,8 @@ import {
   nonSchengenCountries,
   schengenCountries,
 } from "../lib/countries";
+import { downloadIcs } from "../lib/ics";
+import { buildReportLines } from "../lib/report-lines";
 import { decodeShareState, encodeShareState } from "../lib/share";
 
 const OFFICIAL_CALCULATOR_URL =
@@ -106,14 +108,24 @@ const STRIP_PLANNED = "#d97706";
 
 const FORECAST_OFFSETS = [0, 7, 14, 30, 45, 60, 90];
 
-const STORAGE_KEY = "borderline.calculator.v1";
+const STORAGE_KEY = "odyssway.calculator.v1";
 
 interface StoredState {
   trips: Array<{ entry: string; exit: string; country: string; permit: boolean }>;
   planEntry: string;
   planExit: string;
   desiredStay: string;
+  passportExpiry: string;
 }
+
+/** Reminder thresholds, in days, matching the tiers shown in the UI. */
+const EXPIRY_URGENT_DAYS = 30;
+const EXPIRY_WARN_DAYS = 90;
+const EXPIRY_NOTICE_DAYS = 180;
+/** Bring the reminder forward this many days before expiry — no border rejects you at the actual expiry date. */
+const EXPIRY_REMINDER_LEAD_DAYS = 90;
+/** "Approaching the limit" banner shows once daysRemaining is at or below this, but still compliant. */
+const APPROACHING_LIMIT_THRESHOLD = 10;
 
 let nextRowId = 1;
 function newRow(entry = "", exit = "", country = "", permit = false): TripRow {
@@ -133,6 +145,7 @@ export default function Calculator() {
   const [planEntry, setPlanEntry] = useState("");
   const [planExit, setPlanExit] = useState("");
   const [desiredStay, setDesiredStay] = useState("90");
+  const [passportExpiry, setPassportExpiry] = useState("");
   const [saveEnabled, setSaveEnabled] = useState(false);
   const [copied, setCopied] = useState(false);
   const [reportCopied, setReportCopied] = useState(false);
@@ -157,6 +170,7 @@ export default function Calculator() {
           setPlanEntry(stored.planEntry ?? "");
           setPlanExit(stored.planExit ?? "");
           if (stored.desiredStay) setDesiredStay(stored.desiredStay);
+          if (stored.passportExpiry) setPassportExpiry(stored.passportExpiry);
           setSaveEnabled(true);
         }
       } catch {
@@ -178,6 +192,7 @@ export default function Calculator() {
           planEntry,
           planExit,
           desiredStay,
+          passportExpiry,
         };
         localStorage.setItem(STORAGE_KEY, JSON.stringify(stored));
       } else {
@@ -186,7 +201,7 @@ export default function Calculator() {
     } catch {
       // Storage unavailable (private mode quota etc.) — saving is best-effort.
     }
-  }, [mounted, saveEnabled, rows, planEntry, planExit, desiredStay]);
+  }, [mounted, saveEnabled, rows, planEntry, planExit, desiredStay, passportExpiry]);
 
   const fmt = useMemo(
     () =>
@@ -272,6 +287,7 @@ export default function Calculator() {
     setPlanEntry("");
     setPlanExit("");
     setDesiredStay("90");
+    setPassportExpiry("");
     setCopied(false);
     setReportCopied(false);
     window.history.replaceState(null, "", window.location.pathname);
@@ -286,50 +302,90 @@ export default function Calculator() {
     setPlanExit("");
   };
 
+  const reportRows = () =>
+    rows
+      .filter((r) => rowIsComplete(r) && !rowHasOrderError(r))
+      .map(({ entry, exit, country, permit }) => ({ entry, exit, country, permit }));
+
   const copyReport = async () => {
     if (!results.data) return;
-    const s = results.data.status;
-    const ms = results.data.maxStay;
-    const lines: string[] = [
-      t("report.title", { date: formatDate(localTodayISO()) }),
-      "",
-      t("report.staysHeading"),
-      ...rows.filter((r) => rowIsComplete(r) && !rowHasOrderError(r)).map((r) => {
-        const days = toEpochDay(r.exit) - toEpochDay(r.entry) + 1;
-        const base = t("report.stayLine", {
-          entry: formatDate(r.entry),
-          exit: formatDate(r.exit),
-          days,
-          country: r.country ? countryName(r.country) : t("countryUnspecified"),
-        });
-        return r.permit ? `${base} ${t("report.permitSuffix")}` : base;
-      }),
-      "",
-      t("statusSentence", {
-        start: formatDate(s.windowStart),
-        end: formatDate(s.onDate),
-        used: s.daysUsed,
-        remaining: s.daysRemaining,
-      }),
-      ...(ms.maxDays > 0 && ms.lastAllowedDay
-        ? [
-            t("maxStaySentence", {
-              entry: formatDate(ms.entry),
-              exit: formatDate(ms.lastAllowedDay),
-              days: ms.maxDays,
-            }),
-          ]
-        : []),
-      t("nextSafeEntry", { date: formatDate(s.nextSafeEntry) }),
-      "",
-      t("report.disclaimer"),
-    ];
+    const lines = buildReportLines(
+      t,
+      formatDate,
+      localTodayISO(),
+      reportRows(),
+      results.data.status,
+      results.data.maxStay,
+    );
     try {
       await navigator.clipboard.writeText(lines.join("\n"));
       setReportCopied(true);
     } catch {
       // Clipboard unavailable — nothing sensible to do without it.
     }
+  };
+
+  const downloadPdf = async () => {
+    if (!results.data) return;
+    const lines = buildReportLines(
+      t,
+      formatDate,
+      localTodayISO(),
+      reportRows(),
+      results.data.status,
+      results.data.maxStay,
+    );
+    // Dynamically imported so the ~130KB jsPDF library only loads when someone
+    // actually clicks "Download PDF", not on every /calculator page load.
+    const { default: JsPDF } = await import("jspdf");
+    const doc = new JsPDF({ unit: "pt", format: "a4" });
+    const marginX = 48;
+    const maxWidth = 500;
+    const pageBottom = 780;
+    let y = 56;
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(15);
+    doc.text(t("report.pdfHeading"), marginX, y);
+    y += 26;
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(11);
+    for (const line of lines) {
+      if (line === "") {
+        y += 10;
+        continue;
+      }
+      for (const wrapped of doc.splitTextToSize(line, maxWidth) as string[]) {
+        if (y > pageBottom) {
+          doc.addPage();
+          y = 56;
+        }
+        doc.text(wrapped, marginX, y);
+        y += 16;
+      }
+    }
+    doc.save(`schengen-border-report-${localTodayISO()}.pdf`);
+  };
+
+  const addPassportReminderToCalendar = () => {
+    if (!isValidISODate(passportExpiry)) return;
+    const reminderDate = addDays(passportExpiry, -EXPIRY_REMINDER_LEAD_DAYS);
+    downloadIcs({
+      id: `passport-renewal-${passportExpiry}`,
+      title: t("reminders.passportEventTitle"),
+      description: t("reminders.passportEventDescription", { date: formatDate(passportExpiry) }),
+      date: reminderDate < localTodayISO() ? localTodayISO() : reminderDate,
+    });
+  };
+
+  const addLimitReminderToCalendar = () => {
+    const lastAllowed = results.data?.maxStay.lastAllowedDay;
+    if (!lastAllowed) return;
+    downloadIcs({
+      id: `schengen-limit-${lastAllowed}`,
+      title: t("reminders.limitEventTitle"),
+      description: t("reminders.limitEventDescription"),
+      date: lastAllowed,
+    });
   };
 
   if (!mounted) {
@@ -502,6 +558,28 @@ export default function Calculator() {
         </label>
       </section>
 
+      <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+        <h2 className="text-sm font-semibold text-slate-900">{t("reminders.title")}</h2>
+        <p className="mb-3 text-xs text-slate-500">{t("reminders.hint")}</p>
+        <label className={labelClass} htmlFor="passportExpiry">
+          {t("reminders.passportExpiryLabel")}
+        </label>
+        <input
+          id="passportExpiry"
+          type="date"
+          className={`${inputClass} max-w-xs`}
+          value={passportExpiry}
+          onChange={(e) => setPassportExpiry(e.target.value)}
+        />
+        {isValidISODate(passportExpiry) ? (
+          <PassportExpiryNote
+            expiry={passportExpiry}
+            formatDate={formatDate}
+            onAddToCalendar={addPassportReminderToCalendar}
+          />
+        ) : null}
+      </section>
+
       {results.error ? (
         <section className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
           {t("computeError", { message: results.error })}
@@ -511,11 +589,32 @@ export default function Calculator() {
       {results.data && !results.data.timeline.compliant ? (
         <section
           data-testid="timeline-warning"
-          className="rounded-2xl border border-red-200 bg-red-50 p-4 text-sm leading-relaxed text-red-900"
+          className="animate-fade-in-up rounded-2xl border border-red-200 bg-red-50 p-4 text-sm leading-relaxed text-red-900 motion-reduce:animate-none"
         >
           {t("timelineWarning", {
             date: formatDate(results.data.timeline.firstViolationDay!),
           })}
+        </section>
+      ) : null}
+
+      {results.data &&
+      results.data.status.overstayDays === 0 &&
+      results.data.status.daysRemaining > 0 &&
+      results.data.status.daysRemaining <= APPROACHING_LIMIT_THRESHOLD ? (
+        <section
+          data-testid="approaching-limit-warning"
+          className="animate-fade-in-up rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm leading-relaxed text-amber-900 motion-reduce:animate-none"
+        >
+          <p>{t("reminders.approachingLimit", { days: results.data.status.daysRemaining })}</p>
+          {results.data.maxStay.lastAllowedDay ? (
+            <button
+              type="button"
+              onClick={addLimitReminderToCalendar}
+              className="mt-2 rounded-lg border border-amber-300 px-3 py-1.5 text-xs font-medium text-amber-900 hover:bg-amber-100"
+            >
+              {t("reminders.addToCalendar")}
+            </button>
+          ) : null}
         </section>
       ) : null}
 
@@ -527,6 +626,7 @@ export default function Calculator() {
           copied={copied}
           onCopyReport={copyReport}
           reportCopied={reportCopied}
+          onDownloadPdf={downloadPdf}
         />
       ) : null}
 
@@ -641,6 +741,7 @@ function StatusCard({
   copied,
   onCopyReport,
   reportCopied,
+  onDownloadPdf,
 }: {
   results: Results;
   formatDate: (iso: string) => string;
@@ -648,6 +749,7 @@ function StatusCard({
   copied: boolean;
   onCopyReport: () => void;
   reportCopied: boolean;
+  onDownloadPdf: () => void;
 }) {
   const t = useTranslations("calc");
   const s = results.status;
@@ -742,6 +844,14 @@ function StatusCard({
           className="rounded-lg border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50"
         >
           {t("report.button")}
+        </button>
+        <button
+          type="button"
+          data-testid="download-pdf"
+          onClick={onDownloadPdf}
+          className="rounded-lg border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50"
+        >
+          {t("report.pdfButton")}
         </button>
       </div>
       {copied ? <p className="mt-2 text-xs text-emerald-700">{t("shareCopied")}</p> : null}
@@ -886,7 +996,7 @@ function PlanResult({
     return (
       <div
         data-testid="plan-result"
-        className="mt-3 rounded-xl bg-emerald-50 p-3 text-sm leading-relaxed text-emerald-900"
+        className="mt-3 animate-fade-in-up rounded-xl bg-emerald-50 p-3 text-sm leading-relaxed text-emerald-900 motion-reduce:animate-none"
       >
         <p>
           {t("planCompliant", {
@@ -910,7 +1020,7 @@ function PlanResult({
   return (
     <div
       data-testid="plan-result"
-      className="mt-3 space-y-2 rounded-xl bg-red-50 p-3 text-sm leading-relaxed text-red-900"
+      className="mt-3 animate-fade-in-up space-y-2 rounded-xl bg-red-50 p-3 text-sm leading-relaxed text-red-900 motion-reduce:animate-none"
     >
       {plan.latestSafeExit ? (
         <p>
@@ -931,6 +1041,50 @@ function PlanResult({
           })}
         </p>
       ) : null}
+    </div>
+  );
+}
+
+/** Tiered warning (urgent/warn/notice/fine) plus a one-click calendar download — no email, no account, nothing leaves the browser. */
+function PassportExpiryNote({
+  expiry,
+  formatDate,
+  onAddToCalendar,
+}: {
+  expiry: string;
+  formatDate: (iso: string) => string;
+  onAddToCalendar: () => void;
+}) {
+  const t = useTranslations("calc");
+  const daysUntil = toEpochDay(expiry) - toEpochDay(localTodayISO());
+
+  let tier: "urgent" | "warn" | "notice" | "fine";
+  if (daysUntil <= EXPIRY_URGENT_DAYS) tier = "urgent";
+  else if (daysUntil <= EXPIRY_WARN_DAYS) tier = "warn";
+  else if (daysUntil <= EXPIRY_NOTICE_DAYS) tier = "notice";
+  else tier = "fine";
+
+  const tierClass = {
+    urgent: "border-red-200 bg-red-50 text-red-900",
+    warn: "border-amber-200 bg-amber-50 text-amber-900",
+    notice: "border-blue-200 bg-blue-50 text-blue-900",
+    fine: "border-slate-200 bg-slate-50 text-slate-600",
+  }[tier];
+
+  return (
+    <div className={`mt-3 rounded-xl border p-3 text-xs leading-relaxed ${tierClass}`} data-testid="passport-expiry-note">
+      <p>
+        {daysUntil < 0
+          ? t("reminders.passportExpired", { date: formatDate(expiry) })
+          : t("reminders.passportStatus", { date: formatDate(expiry), days: daysUntil })}
+      </p>
+      <button
+        type="button"
+        onClick={onAddToCalendar}
+        className="mt-2 rounded-lg border border-current/30 px-3 py-1.5 text-xs font-medium hover:bg-white/50"
+      >
+        {t("reminders.addToCalendar")}
+      </button>
     </div>
   );
 }

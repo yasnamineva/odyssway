@@ -79,7 +79,7 @@ export default async function EesDataAccessPage({
   const localLetter = lettersByCountry[record.country];
 
   return (
-    <article className="space-y-6">
+    <article className="mx-auto max-w-2xl space-y-6">
       <header>
         <h1 className="text-2xl font-bold tracking-tight">{t("h1", { country })}</h1>
         <p className="mt-2 text-sm leading-relaxed text-slate-600">

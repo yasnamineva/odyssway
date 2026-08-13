@@ -136,21 +136,70 @@ export const etiasFileSchema = z
   })
   .superRefine(requireVerifierWhenVerified);
 
-// --- §5.7 data/eu-items.json ---
-export const euItemSchema = z
+// --- §5.7 data/eu-items.json: SUPERSEDED by §5.11 data/customs-items.json
+// (destination-keyed rather than hardcoded to the EU) — never built, schema
+// intentionally removed. See AGENTS.md §5.
+
+// --- §5.9 data/destinations.json (non-Schengen destinations only — Schengen
+// members already live in countries.json, never duplicated here) ---
+export const destinationRecordSchema = z
+  .object({
+    code: countryCodeSchema,
+    name: z.string().min(1),
+    region: z.string().min(1),
+    /** Official government authority page — the "not yet covered" fallback link. */
+    officialAuthorityUrl: z.url(),
+    ...verificationFields,
+  })
+  .superRefine(requireVerifierWhenVerified);
+export const destinationsFileSchema = z.array(destinationRecordSchema);
+
+// --- StayPolicy (packages/engine/src/stay-policy.ts) as data ---
+export const stayPolicySchema = z.discriminatedUnion("kind", [
+  z.object({
+    kind: z.literal("rolling_window"),
+    windowDays: z.number().int().positive(),
+    maxDays: z.number().int().positive(),
+  }),
+  z.object({ kind: z.literal("fixed_per_entry"), maxDays: z.number().int().positive() }),
+  z.object({ kind: z.literal("visa_required") }),
+]);
+
+// --- §5.10 data/entry-requirements.json (nationality × non-Schengen destination) ---
+export const entryRequirementSchema = z
+  .object({
+    nationality: countryCodeSchema,
+    destination: countryCodeSchema,
+    requirement: z.enum(["visa_free", "eta_required", "visa_required", "visa_on_arrival"]),
+    stayPolicy: stayPolicySchema,
+    documentsNeeded: z.array(z.string().min(1)).min(1),
+    notes: z.string().optional(),
+    ...verificationFields,
+  })
+  .superRefine(requireVerifierWhenVerified);
+export const entryRequirementsFileSchema = z.array(entryRequirementSchema);
+
+// --- §5.11 data/customs-items.json (destination × item category) ---
+export const customsItemCategorySchema = z.enum([
+  "alcohol",
+  "tobacco",
+  "cash",
+  "medication",
+  "cbd_cannabis",
+  "food_animal",
+  "food_plant",
+  "e_cigarettes",
+  "weapons",
+  "drones",
+  "other",
+]);
+
+export const customsItemSchema = z
   .object({
     slug: z.string().regex(/^[a-z0-9-]+$/),
     names: z.array(z.string().min(1)).min(1),
-    category: z.enum([
-      "food_animal_origin",
-      "food_plant",
-      "cash",
-      "alcohol",
-      "tobacco",
-      "medication",
-      "pets",
-      "other",
-    ]),
+    destination: countryCodeSchema,
+    category: customsItemCategorySchema,
     verdict: z.enum([
       "prohibited",
       "allowed_with_limits",
@@ -161,12 +210,11 @@ export const euItemSchema = z
     limits: z
       .object({ description: z.string().min(1), quantity: z.string().optional() })
       .optional(),
-    exceptions: z.array(z.string()).optional(),
-    appliesTo: z.literal("entering_EU_from_non_EU"),
+    notes: z.string().optional(),
     ...verificationFields,
   })
   .superRefine(requireVerifierWhenVerified);
-export const euItemsFileSchema = z.array(euItemSchema);
+export const customsItemsFileSchema = z.array(customsItemSchema);
 
 // --- Engine input schemas (useful for validating URL-shared calculator state) ---
 export const basisSchema = z.discriminatedUnion("kind", [
