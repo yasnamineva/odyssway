@@ -32,11 +32,14 @@ describe("resolveTripCheck", () => {
     expect(result.basis).toBe("not_covered");
   });
 
-  it("is honestly not-covered for a destination with no verified entry-requirements row yet", () => {
-    const result = resolveTripCheck("US", "BR", []);
+  it("is honestly not-covered for a nationality/destination pair with no verified entry-requirements row yet", () => {
+    // Singapore is a verified destination, but the IL->SG row was withheld
+    // from production data (only secondary-sourced, not primary-confirmed) —
+    // this must still resolve to an honest not-covered result, not a guess.
+    const result = resolveTripCheck("IL", "SG", []);
     expect(result.covered).toBe(false);
     expect(result.basis).toBe("not_covered");
-    expect(result.officialAuthorityUrl).toContain("gov.br");
+    expect(result.officialAuthorityUrl).toContain("ica.gov.sg");
   });
 
   it("resolves a verified non-Schengen destination (UK ETA route)", () => {
@@ -66,8 +69,10 @@ describe("resolveTripCheck", () => {
     expect(result.items[0]!.match?.verdict).toBe("declaration_required");
   });
 
-  it("never fabricates an item match when no customs data exists for the destination", () => {
-    const result = resolveTripCheck("US", "BR", ["cash", "alcohol"]);
+  it("never fabricates an item match when no customs data exists for the queried items", () => {
+    // South Korea's only verified customs row is the cash-declaration
+    // threshold — alcohol/weapons must never fall back to a guess.
+    const result = resolveTripCheck("US", "KR", ["alcohol", "weapons"]);
     expect(result.items).toHaveLength(2);
     expect(result.items.every((i) => i.match === null)).toBe(true);
   });

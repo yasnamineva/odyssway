@@ -3332,5 +3332,642 @@
     "verified_at": "2026-08-13",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
+  },
+  {
+    "slug": "alcohol-ph",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "PH",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty- and tax-free allowance for arriving travelers is two (2) bottles of liquor with a combined value of less than PHP 10,000. Amounts beyond this are subject to duties/taxes and must be declared.",
+      "quantity": "2 bottles (approx. 1 liter each), combined value under PHP 10,000"
+    },
+    "notes": "Allowance applies per traveler under Bureau of Customs guidelines (CAO 01-2017 framework); goods must be for personal use, not commercial quantities.",
+    "legal_source": {
+      "name": "Bureau of Customs Philippines - Guidelines on Arriving Travelers",
+      "url": "https://customs.gov.ph/guidelines-on-arriving-travelers/"
+    },
+    "verified_at": "2026-08-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-ph",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "pipe tobacco"
+    ],
+    "destination": "PH",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty- and tax-free allowance for arriving travelers is two (2) reams of cigarettes (approx. 400 sticks) OR 50 cigars OR 250 grams of pipe tobacco.",
+      "quantity": "400 cigarettes, or 50 cigars, or 250g pipe tobacco"
+    },
+    "notes": "Allowance applies per traveler; amounts exceeding this are subject to duties and excise tax and must be declared. Goods must be for personal use, not for barter, sale, or hire.",
+    "legal_source": {
+      "name": "Bureau of Customs Philippines - Guidelines on Arriving Travelers",
+      "url": "https://customs.gov.ph/guidelines-on-arriving-travelers/"
+    },
+    "verified_at": "2026-08-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-ph",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "foreign currency"
+    ],
+    "destination": "PH",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Foreign currency or bearer negotiable monetary instruments (travelers' checks, drafts, notes, money orders, bonds, securities, etc.) exceeding USD 10,000 (or equivalent) must be declared to the Bureau of Customs using the Foreign Currency Declaration Form. Philippine peso amounts of PHP 50,000 or more require prior written authorization from the Bangko Sentral ng Pilipinas (BSP).",
+      "quantity": "USD 10,000 equivalent (foreign currency); PHP 50,000 (Philippine peso)"
+    },
+    "notes": "No upper limit on the amount that may be carried, but anything above the threshold must be declared; the Foreign Currency Declaration Form is available from Customs Officers at arrival/departure desks or via the BSP website. Declaration may also be completed through the e-Travel system prior to arrival.",
+    "legal_source": {
+      "name": "Bureau of Customs Philippines - Foreign Currency",
+      "url": "https://customs.gov.ph/foreign-currency/"
+    },
+    "verified_at": "2026-08-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-nz",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "NZ",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free personal allowance for travellers 17 years or older: up to 4.5 litres of wine or beer (equivalent to six 750ml bottles), PLUS up to 3 bottles/containers of spirits or liqueur not exceeding 1.125 litres each.",
+      "quantity": "4.5L wine/beer + 3 bottles of spirits/liqueur (max 1.125L each)"
+    },
+    "notes": "Must be 17 or older to claim the concession. Amounts above these limits must be declared and are subject to Customs duty and GST; alcohol is always dutiable regardless of value (the general NZ$1000 duty-free threshold for goods does not apply to alcohol or tobacco).",
+    "legal_source": {
+      "name": "New Zealand Customs Service — Duty-free shopping (personal allowances)",
+      "url": "https://www.customs.govt.nz/personal/travel-to-and-from-nz/duty-free-shopping/"
+    },
+    "verified_at": "2026-08-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-nz",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars"
+    ],
+    "destination": "NZ",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free personal allowance for travellers 17 years or older: 50 cigarettes, OR 50 grams of cigars/tobacco products, OR a mixture of both totalling 50 grams.",
+      "quantity": "50 cigarettes or 50g cigars/tobacco (combined)"
+    },
+    "notes": "Must be 17 or older to claim the concession. It is legal to bring in more than the allowance, but the excess must be declared on the arrival card/Traveller Declaration; duty and GST are payable on the first 50 cigarettes/50g are duty-free, and the remainder is dutiable or must be surrendered in the tobacco disposal bins at the airport.",
+    "legal_source": {
+      "name": "New Zealand Customs Service — Duty-free shopping (personal allowances)",
+      "url": "https://www.customs.govt.nz/personal/travel-to-and-from-nz/duty-free-shopping/"
+    },
+    "verified_at": "2026-08-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-nz",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "banknotes"
+    ],
+    "destination": "NZ",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "A Border Cash Report is mandatory when carrying NZ$10,000 or more in cash (or foreign-currency equivalent) into or out of New Zealand.",
+      "quantity": "NZD 10,000 or equivalent"
+    },
+    "notes": "\"Cash\" covers physical currency, travellers' cheques, cheques, money/postal orders, bearer bonds, bills of exchange, promissory notes, and other instruments prescribed under the Anti-Money Laundering Act 2009. The report can be filed online (within 72 hours of travel) or on the paper NZCS 337 form at the border. There is no cap on how much cash may be carried — this is a reporting obligation, not a fee — but failing to declare is a criminal offence that can lead to fines, imprisonment, and seizure of the cash.",
+    "legal_source": {
+      "name": "New Zealand Customs Service — Border Cash Report",
+      "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/border-cash-report"
+    },
+    "verified_at": "2026-08-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "food-plant-nz",
+    "names": [
+      "food",
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds",
+      "biosecurity risk goods"
+    ],
+    "destination": "NZ",
+    "category": "food_plant",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "All biosecurity risk goods — including fruit, vegetables, eggs, meat, honey, cooking ingredients, herbs, seeds, spices, items made from plant/wood material, and used outdoor equipment (e.g. footwear with soil) — must be declared on arrival, whether or not they are ultimately allowed in.",
+      "quantity": "N/A — declaration mandatory regardless of quantity"
+    },
+    "notes": "New Zealand's Ministry for Primary Industries (MPI) enforces very strict biosecurity controls to keep out pests and diseases. Declare via the New Zealand Traveller Declaration (app or travellerdeclaration.govt.nz), the paper arrival card, or directly to a biosecurity officer; undeclared items can also be placed in airport disposal bins before the declaration point. Failing to declare a risk item — even accidentally or 'because you forgot' — can trigger an instant NZD $400 infringement fine, with further prosecution possible for serious cases.",
+    "legal_source": {
+      "name": "Ministry for Primary Industries (MPI) — Travelling to New Zealand: biosecurity declarations",
+      "url": "https://www.mpi.govt.nz/bring-send-to-nz/bringing-and-posting-items-to-nz/travelling-to-new-zealand"
+    },
+    "verified_at": "2026-08-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-vn",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "VN",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free personal allowance tiered by alcohol strength; amounts above these limits are subject to duty or must be declared.",
+      "quantity": "1.5 liters of spirits ≥20% ABV, OR 2 liters of alcoholic beverages/wine <20% ABV, OR 3 liters of beer/other alcoholic drinks (only one category, not combined); not permitted for travelers under 18"
+    },
+    "notes": "Allowances are per adult traveler and cannot be pooled among family members. Amounts exceeding the limit must be declared and are subject to import duty; quantities intended for resale require a commercial import declaration.",
+    "legal_source": {
+      "name": "Vietnam General Department of Customs (customs.gov.vn) - Duty-free allowances for persons entering Vietnam",
+      "url": "https://www.customs.gov.vn/index.jsp?pageId=2281&aid=157208&cid=4208"
+    },
+    "verified_at": "2026-08-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-vn",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "shredded tobacco"
+    ],
+    "destination": "VN",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free personal allowance for tobacco products; only one category (not combined) applies per traveler.",
+      "quantity": "200 cigarettes, OR 20 cigars, OR 250 grams of shredded/pipe tobacco; not permitted for travelers under 18"
+    },
+    "notes": "Allowances cannot be combined or pooled among travelers. Vaping devices, e-cigarettes and heated-tobacco products are separately restricted/prohibited from import under Vietnam's e-cigarette ban (effective 1 January 2025); check current e-cigarette rules separately before packing vape devices.",
+    "legal_source": {
+      "name": "Vietnam General Department of Customs (customs.gov.vn) - Duty-free allowances for persons entering Vietnam",
+      "url": "https://www.customs.gov.vn/index.jsp?pageId=2281&aid=157208&cid=4208"
+    },
+    "verified_at": "2026-08-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-vn",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "foreign currency",
+      "Vietnamese dong"
+    ],
+    "destination": "VN",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Cash/currency above the threshold must be declared to border-gate customs on arrival or departure; amounts at or below the threshold need no declaration.",
+      "quantity": "Foreign currency cash equivalent to USD 5,000 or more, OR Vietnamese dong cash of VND 15,000,000 or more"
+    },
+    "notes": "Threshold set under State Bank of Vietnam Circular No. 15/2011/TT-NHNN. Declaration is also required below the threshold if the traveler intends to deposit foreign currency exceeding USD 5,000 into a Vietnamese bank account, since the stamped declaration form is needed as supporting documentation for the bank. Traveler's checks, bank/payment cards, and securities are not subject to this cash threshold.",
+    "legal_source": {
+      "name": "State Bank of Vietnam Circular No. 15/2011/TT-NHNN, as summarized by Vietnam Customs / Vietnam Law Magazine (official gazette text)",
+      "url": "https://www.customs.gov.vn/index.jsp?pageId=2281&aid=157007&cid=4208"
+    },
+    "verified_at": "2026-08-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-cn",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "CN",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free allowance for alcoholic beverages (over 12% ABV) carried by inbound travelers to mainland China",
+      "quantity": "1.5 liters for general travelers entering directly from abroad; reduced to 0.75 liters for travelers entering from Hong Kong SAR or Macao SAR; frequent (daily/short-interval) cross-border travelers get no duty-free alcohol allowance at all"
+    },
+    "notes": "Allowance is set under Announcement No. 11 (2024) of the Customs Tariff Commission of the State Council and Announcement No. 7 (2024) of the Ministry of Finance/General Administration of Customs/State Taxation Administration, implemented under the Measures of the Customs of the PRC on the Supervision of Inbound and Outbound Passenger Baggage and Articles (effective 1 April 2025). Quantities above the duty-free allowance are dutiable (a composite tax applies to excess alcohol/tobacco); an indivisible single item over the limit may be taxed in full rather than only on the excess.",
+    "legal_source": {
+      "name": "Chongqing Municipal People's Government (official English portal) — Customs FAQ on tobacco and alcohol import allowances, citing Customs Tariff Commission Announcement No. 11 (2024) and MOF/GACC/STA Announcement No. 7 (2024)",
+      "url": "https://english.cq.gov.cn/services/entryandexit/FAQs/202606/t20260629_15782361.html"
+    },
+    "verified_at": "2026-08-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-cn",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "e-cigarettes",
+      "heated tobacco",
+      "vape"
+    ],
+    "destination": "CN",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free tobacco allowance for general inbound travelers to mainland China (choose one of the following categories, not cumulative)",
+      "quantity": "400 cigarettes (including heated-tobacco sticks), OR 20 cigars, OR 500 grams of cut/pipe tobacco, plus up to 2 e-cigarette devices with a combined 12 mL of e-liquid"
+    },
+    "notes": "Reduced allowance for travelers entering directly from Hong Kong SAR or Macao SAR: 200 cigarettes / 10 cigars / 250 grams tobacco, plus 1 e-cigarette device up to 6 mL. Frequent cross-border travelers get a much smaller allowance (40 cigarettes / 2 cigars / 40 grams, plus 1 e-cigarette device per day). Set under Announcement No. 11 (2024) of the Customs Tariff Commission and Announcement No. 7 (2024) of MOF/GACC/STA, under the Measures of the Customs of the PRC on the Supervision of Inbound and Outbound Passenger Baggage and Articles (effective 1 April 2025). Amounts above the allowance are dutiable (composite tax rate cited at roughly 50% on the dutiable excess for tobacco/alcohol).",
+    "legal_source": {
+      "name": "Chongqing Municipal People's Government (official English portal) — Customs FAQ on tobacco and alcohol import allowances, citing Customs Tariff Commission Announcement No. 11 (2024) and MOF/GACC/STA Announcement No. 7 (2024)",
+      "url": "https://english.cq.gov.cn/services/entryandexit/FAQs/202606/t20260629_15782361.html"
+    },
+    "verified_at": "2026-08-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-cn",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "RMB",
+      "foreign currency",
+      "banknotes"
+    ],
+    "destination": "CN",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Cash declaration thresholds for travelers entering mainland China",
+      "quantity": "RMB (CNY) cash: capped at 20,000 yuan per person per entry/exit — amounts above must be declared to Customs and undeclared excess can be turned back/confiscated. Foreign currency cash: no fixed maximum amount for bringing it INTO China, but any amount exceeding the equivalent of USD 5,000 must be declared in writing to Customs on arrival."
+    },
+    "notes": "The written-declaration trigger derives from the (国家外汇管理局/海关总署) Interim Measures for the Administration of Carrying Foreign Currency Cash Into and Out of the Country, read together with the Measures of the Customs of the PRC on the Supervision of Inbound and Outbound Passenger Baggage and Articles (effective 1 April 2025), whose Article 9 requires declaring 'currency exceeding the prescribed amount.' Note: China's own National Immigration Administration, when asked by a foreign traveler how much cash may be carried in, explicitly stated this is a Customs matter, not an immigration matter — confirming Customs (not NIA) is the correct authority for this fact. Undeclared cash above the threshold risks detention and penalties under Customs administrative-penalty rules.",
+    "legal_source": {
+      "name": "State Administration of Foreign Exchange (SAFE), Tianjin Branch — official notice reproducing the Interim Measures for the Administration of Carrying Foreign Currency Cash Into and Out of the Country",
+      "url": "https://www.safe.gov.cn/tianjin/2024/0430/2466.html"
+    },
+    "verified_at": "2026-08-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-id",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "ID",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free allowance for adult passengers arriving in Indonesia is 1 liter of beverages containing ethyl alcohol. Quantities exceeding this are subject to import duty/excise, or may be seized/destroyed by customs.",
+      "quantity": "1 liter per adult passenger"
+    },
+    "notes": "Applies per adult traveler on arrival; excess alcohol beyond the 1-liter allowance is dutiable or subject to confiscation.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Bea dan Cukai (Directorate General of Customs and Excise, Republic of Indonesia) — Barang Penumpang (Passenger Goods)",
+      "url": "https://www.beacukai.go.id/barang-penumpang"
+    },
+    "verified_at": "2026-09-02",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-id",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "e-cigarettes",
+      "vape"
+    ],
+    "destination": "ID",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free tobacco allowance per adult passenger arriving in Indonesia: 200 cigarettes, or 25 cigars, or 100 grams of loose/sliced tobacco or other processed tobacco. If a passenger carries a mix of these product types, the duty exemption is applied proportionally across categories rather than in full for each. Separate allowances apply to e-cigarette products (e.g. up to 140 solid sticks/40 capsules, or limited volumes of e-liquid for open/closed systems).",
+      "quantity": "200 cigarettes / 25 cigars / 100g tobacco per adult passenger"
+    },
+    "notes": "Amounts above the duty-free thresholds are dutiable/excisable or subject to confiscation. Minimum age for the allowance is 18 (tobacco) per Bea Cukai guidance.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Bea dan Cukai (Directorate General of Customs and Excise, Republic of Indonesia) — Barang Penumpang (Passenger Goods)",
+      "url": "https://www.beacukai.go.id/barang-penumpang"
+    },
+    "verified_at": "2026-09-02",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-id",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "banknotes"
+    ],
+    "destination": "ID",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Carrying cash (Rupiah or foreign currency) or negotiable payment instruments (cheques, traveler's cheques, promissory notes, bills of exchange) with a value equivalent to IDR 100,000,000 or more into or out of Indonesia must be declared to Customs on the Customs Declaration form. Separately, under Bank Indonesia rules, carrying physical foreign-currency banknotes (Uang Kertas Asing) equivalent to IDR 1,000,000,000 or more requires additional special permission from Bank Indonesia.",
+      "quantity": "IDR 100,000,000 equivalent (general customs declaration threshold)"
+    },
+    "notes": "Failure to declare, or under-declaring, cash/instruments at or above the threshold can result in administrative penalties and potential confiscation. Travelers carrying large sums should check both the Customs declaration requirement and the separate Bank Indonesia physical-banknote permit rule.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Bea dan Cukai (Directorate General of Customs and Excise, Republic of Indonesia) — Selamat Datang (Arriving From Abroad)",
+      "url": "https://www.beacukai.go.id/selamat-datang"
+    },
+    "verified_at": "2026-09-02",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-sa",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "SA",
+    "category": "alcohol",
+    "verdict": "prohibited",
+    "notes": "Alcohol of any kind is fully prohibited in Saudi Arabia — it may not be imported, sold, purchased, or consumed anywhere in the Kingdom. Saudi customs officially lists 'alcohol and drugs of all kinds' among prohibited items; possession/importation can lead to seizure, fines, and imprisonment. This is confirmed both by Saudi Arabia's own customs authority (ZATCA) and by the U.S. International Trade Administration's official country commercial guide, which lists alcohol among goods whose importation Saudi law prohibits outright.",
+    "legal_source": {
+      "name": "ZATCA (Saudi Zakat, Tax and Customs Authority) – Traveler disclosure & prohibited items guidance",
+      "url": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Pages/customs-individual/Travel-pages/disclosure-amounts.aspx"
+    },
+    "verified_at": "2026-09-02",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-sa",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "shisha tobacco"
+    ],
+    "destination": "SA",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Up to 200 cigarettes are duty/tax-free. Quantities above 200 but up to 2,400 cigarettes are still permitted as personal baggage but are subject to customs duties and taxes on the entire quantity, and require Saudi Food and Drug Authority (SFDA) approval. Quantities exceeding 2,400 cigarettes must go through commercial import procedures and cannot be brought as personal baggage.",
+      "quantity": "200 cigarettes duty-free"
+    },
+    "notes": "Official ZATCA guidance sets a 200-cigarette duty-free personal allowance; larger personal quantities (up to 2,400) are allowed but taxed in full and require SFDA approval, and anything above 2,400 is treated as a commercial import.",
+    "legal_source": {
+      "name": "ZATCA (Saudi Zakat, Tax and Customs Authority) – Personal Tobacco Import Quantity Limits for Travelers",
+      "url": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Pages/customs-individual/Travel-pages/Quantity-Tobaacco.aspx"
+    },
+    "verified_at": "2026-09-02",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-sa",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "banknotes"
+    ],
+    "destination": "SA",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declaration is required when cash, bearer negotiable instruments, gold bars, precious metals, gemstones, or jewelry total SAR 40,000 or more (or the equivalent in foreign currency). There is no cap on the amount that may be carried — only a mandatory declaration above the threshold.",
+      "quantity": "SAR 40,000"
+    },
+    "notes": "Under Saudi Arabia's anti-money-laundering framework (Royal Decree No. M/39), travelers entering or leaving the Kingdom must declare currencies/negotiable instruments/precious metals worth SAR 40,000 or more via ZATCA's Customs Declaration for Travelers e-service; failure to declare can result in penalties.",
+    "legal_source": {
+      "name": "ZATCA (Saudi Zakat, Tax and Customs Authority) – Customs Declaration for Travelers / disclosure threshold guidance",
+      "url": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Pages/customs-individual/Travel-pages/disclosure-amounts.aspx"
+    },
+    "verified_at": "2026-09-02",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-br",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "BR",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free allowance for alcoholic beverages carried in accompanied baggage or purchased at an arrival duty-free shop.",
+      "quantity": "Up to 12 liters total in accompanied baggage (12 liters also applies at land border crossings); arrival duty-free shop purchases are capped at 24 units total with a maximum of 12 units per beverage type."
+    },
+    "notes": "Allowance is per traveler aged 18 or over and cannot be pooled across family members; travelers under 18 may not purchase alcohol even if accompanied by a guardian. The duty-free shop purchase quota resets on a 30-day rolling basis. Amounts above the limit are subject to import tax at standard rates.",
+    "legal_source": {
+      "name": "Receita Federal do Brasil – Guia do Viajante: Cota de isenção, duty free e bagagem tributável",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/cota-de-isencao-duty-free-e-bagagem-tributavel"
+    },
+    "verified_at": "2026-09-02",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-br",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "pipe tobacco"
+    ],
+    "destination": "BR",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free tobacco allowance for travelers entering Brazil.",
+      "quantity": "Up to 10 packs of cigarettes (200 cigarettes total), OR 25 cigars/cigarrilhas, OR 250 grams of pipe tobacco"
+    },
+    "notes": "Sale of tobacco products (including duty-free) to travelers under 18 is prohibited, even if accompanied by a guardian. Quantities above the limit are taxable at standard import rates.",
+    "legal_source": {
+      "name": "Receita Federal do Brasil – Guia do Viajante: Cota de isenção, duty free e bagagem tributável",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/cota-de-isencao-duty-free-e-bagagem-tributavel"
+    },
+    "verified_at": "2026-09-02",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-br",
+    "names": [
+      "cash",
+      "currency",
+      "money declaration",
+      "currency declaration"
+    ],
+    "destination": "BR",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Mandatory declaration threshold for physical cash/currency carried into Brazil.",
+      "quantity": "Amounts exceeding US$10,000 (or the equivalent in any other currency) in physical paper currency"
+    },
+    "notes": "Declared via the Declaração Eletrônica de Bens de Viajante (e-DBV) at edbv.receita.fazenda.gov.br, filed with Receita Federal customs control before leaving the customs area on arrival. Applies to national or foreign paper currency in specie only — not credit instruments, personal checks, or traveler's checks. Legal basis: Lei nº 14.286/2021.",
+    "legal_source": {
+      "name": "Receita Federal do Brasil – Guia do Viajante: Dinheiro em espécie na entrada no Brasil",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/dinheiro-em-especie"
+    },
+    "verified_at": "2026-09-02",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-sg",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "SG",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free liquor concession applies only if you are 18+, have spent 48 hours or more outside Singapore immediately before arrival, and are not arriving from Malaysia. Pick one combination totalling the concession.",
+      "quantity": "1L spirits + 1L wine, OR 1L spirits + 1L beer, OR 1L wine + 1L beer, OR 2L wine, OR 2L beer"
+    },
+    "notes": "All liquor of 0.5% ABV or more must be declared. Travellers under 18, those who don't meet the 48-hour/non-Malaysia conditions, or amounts beyond the concession must use the Red Channel and pay duty plus GST on the full quantity carried (not just the excess).",
+    "legal_source": {
+      "name": "Singapore Customs - Duty-Free Concession and GST Import Relief",
+      "url": "https://www.customs.gov.sg/at-customs/arriving-in-singapore/duty-free-concession-gst-relief/"
+    },
+    "verified_at": "2026-09-02",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-sg",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "rolling tobacco"
+    ],
+    "destination": "SG",
+    "category": "tobacco",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "There is NO duty-free concession or GST import relief for cigarettes or tobacco products, in any quantity.",
+      "quantity": "0 (no duty-free allowance of any amount)"
+    },
+    "notes": "All tobacco products, regardless of quantity, must be declared via the Red Channel, with both customs duty and GST paid before clearance. Uncustomed tobacco (packs without the Singapore duty-paid marking) found in a traveller's possession beyond what was declared can be seized, with fines under the Customs Act / Tobacco Control Act.",
+    "legal_source": {
+      "name": "Singapore Customs - Duty-Free Concession and GST Import Relief",
+      "url": "https://www.customs.gov.sg/at-customs/arriving-in-singapore/duty-free-concession-gst-relief/"
+    },
+    "verified_at": "2026-09-02",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-sg",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping device",
+      "electronic nicotine delivery system",
+      "ENDS",
+      "vape pod"
+    ],
+    "destination": "SG",
+    "category": "e_cigarettes",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "E-cigarettes, vaporisers, and components/imitation tobacco products of this kind are banned outright for import, possession, purchase, and use - there is no personal-use allowance.",
+      "quantity": "0"
+    },
+    "notes": "Confirmed via Singapore Customs' prohibited/controlled goods listing, citing the Health Sciences Authority (HSA) Tobacco Regulation Branch: 'Imitation tobacco products (electronic cigarettes, vaporisers) and components of imitation tobacco products' are prohibited, as is 'any solution or substance...intended to be used with an electronic nicotine delivery system or vaporizers.' HSA actively enforces this at the border and reports frequent seizures/prosecutions, including for adulterated vape pods (e.g. etomidate-laced products) in 2026.",
+    "legal_source": {
+      "name": "Singapore Customs - Controlled and Prohibited Goods for Imports",
+      "url": "https://www.customs.gov.sg/doing-business/import-operations/import-procedures/controlled-and-prohibited-goods-for-imports/"
+    },
+    "verified_at": "2026-09-02",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-kr",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "foreign currency declaration"
+    ],
+    "destination": "KR",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declaration to Korea Customs is required when carrying means of payment (cash, checks, etc.), in Korean won or any foreign currency, equal to or exceeding USD 10,000 (or equivalent) into or out of South Korea.",
+      "quantity": "USD 10,000 or equivalent"
+    },
+    "notes": "Below USD 10,000, no declaration or permission is needed on arrival or departure. At or above USD 10,000 on arrival, travelers must mark item 3 on the Traveler Declaration Form, report it to Customs, and obtain a Certificate of Foreign Currency Declaration before passing immigration. On departure, Korean residents carrying USD 10,000+ must report to Customs (some purposes require bank confirmation instead); non-residents departing with more than they declared on arrival need a foreign exchange bank confirmation. Failure to report can carry imprisonment of up to 1 year or a fine of up to KRW 100 million (up to triple the violation amount in some cases).",
+    "legal_source": {
+      "name": "Korea Customs Service - Declaration of Foreign Currency",
+      "url": "https://www.customs.go.kr/english/cm/cntnts/cntntsView.do?mi=10800&cntntsId=5500"
+    },
+    "verified_at": "2026-09-02",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
   }
 ]

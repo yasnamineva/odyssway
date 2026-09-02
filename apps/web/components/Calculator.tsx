@@ -30,6 +30,7 @@ import {
 import { downloadIcs } from "../lib/ics";
 import { buildReportLines } from "../lib/report-lines";
 import { decodeShareState, encodeShareState } from "../lib/share";
+import SearchableSelect from "./SearchableSelect";
 
 const OFFICIAL_CALCULATOR_URL =
   "https://ec.europa.eu/assets/home/visa-calculator/calculator.htm?lang=en";
@@ -458,33 +459,29 @@ export default function Calculator() {
                 <label className={labelClass} htmlFor={`country-${row.id}`}>
                   {t("country")}
                 </label>
-                <select
+                <SearchableSelect
                   id={`country-${row.id}`}
-                  className={inputClass}
                   value={row.country}
-                  onChange={(e) =>
+                  onChange={(v) =>
                     updateRow(row.id, {
-                      country: e.target.value,
-                      ...(e.target.value === "" ? { permit: false } : {}),
+                      country: v,
+                      ...(v === "" ? { permit: false } : {}),
                     })
                   }
-                >
-                  <option value="">{t("countryUnspecified")}</option>
-                  <optgroup label={t("countryGroupSchengen")}>
-                    {schengenCountries.map((c) => (
-                      <option key={c.code} value={c.code}>
-                        {c.name}
-                      </option>
-                    ))}
-                  </optgroup>
-                  <optgroup label={t("countryGroupNonSchengen")}>
-                    {nonSchengenCountries.map((c) => (
-                      <option key={c.code} value={c.code}>
-                        {c.name}
-                      </option>
-                    ))}
-                  </optgroup>
-                </select>
+                  placeholder={t("countryUnspecified")}
+                  noResultsLabel={t("noMatches")}
+                  groups={[
+                    { options: [{ value: "", label: t("countryUnspecified") }] },
+                    {
+                      label: t("countryGroupSchengen"),
+                      options: schengenCountries.map((c) => ({ value: c.code, label: c.name })),
+                    },
+                    {
+                      label: t("countryGroupNonSchengen"),
+                      options: nonSchengenCountries.map((c) => ({ value: c.code, label: c.name })),
+                    },
+                  ]}
+                />
               </div>
               <label
                 className={`mt-2 flex items-start gap-2 text-xs ${

@@ -214,6 +214,10 @@
       "ctaPrimary": "Start a Trip Check",
       "ctaSecondary": "Open the Schengen Calculator"
     },
+    "quickCheck": {
+      "eyebrow": "Quick check",
+      "heading": "Two fields, straight to your answer"
+    },
     "stats": [
       { "n": "90/180", "label": "the EU rule, computed exactly as Art. 6(1) defines it" },
       { "n": "29", "label": "Schengen countries covered, accession dates included" },
@@ -280,6 +284,7 @@
     "exit": "Exit date",
     "country": "Country (optional)",
     "countryUnspecified": "Schengen Area — country not specified",
+    "noMatches": "No matches",
     "countryGroupSchengen": "Schengen countries (days count)",
     "countryGroupNonSchengen": "Outside Schengen (days don't count)",
     "exclusionNonSchengen": "{country}: {days, plural, one {# day} other {# days}} excluded — outside the Schengen Area.",
@@ -430,6 +435,7 @@
     "fromPlaceholder": "Select your nationality",
     "toLabel": "I'm going to",
     "toPlaceholder": "Select a destination",
+    "noMatches": "No matches",
     "schengenArea": "Schengen Area (any country, unspecified)",
     "toGroupDestinations": "Destinations",
     "toGroupSchengenStates": "Schengen Area — specific country",

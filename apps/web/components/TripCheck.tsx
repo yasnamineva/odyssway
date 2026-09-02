@@ -7,6 +7,7 @@ import { schengenCountries } from "../lib/countries";
 import { destinationLabelFor } from "../lib/destination-label";
 import { destinations, queuedDestinations } from "../lib/destinations";
 import { publishedNationalities } from "../lib/nationalities";
+import SearchableSelect from "./SearchableSelect";
 import {
   resolveMapDestinationCode,
   resolveTripCheck,
@@ -34,13 +35,20 @@ const BASIS_LABEL_KEY: Record<EntryBasis, string> = {
   not_covered: "basisNotCovered",
 };
 
-export default function TripCheck() {
+export default function TripCheck({
+  initialNationality,
+  initialDestination,
+}: {
+  /** Pre-fills from the homepage's quick-check widget (?nationality=&destination=). */
+  initialNationality?: string;
+  initialDestination?: string;
+} = {}) {
   const t = useTranslations("tripCheck");
-  const [nationality, setNationality] = useState("");
-  const [destination, setDestination] = useState("");
+  const [nationality, setNationality] = useState(initialNationality ?? "");
+  const [destination, setDestination] = useState(initialDestination ?? "");
   const [itemInput, setItemInput] = useState("");
   const [items, setItems] = useState<string[]>([]);
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState(Boolean(initialNationality && initialDestination));
 
   const result: TripCheckResult | null = useMemo(() => {
     if (!submitted || !nationality || !destination) return null;
@@ -81,65 +89,62 @@ export default function TripCheck() {
             <label className={labelClass} htmlFor="tc-nationality">
               {t("fromLabel")}
             </label>
-            <select
+            <SearchableSelect
               id="tc-nationality"
               data-testid="tc-nationality"
-              className={inputClass}
               value={nationality}
-              onChange={(e) => {
-                setNationality(e.target.value);
+              onChange={(v) => {
+                setNationality(v);
                 setSubmitted(false);
               }}
-            >
-              <option value="">{t("fromPlaceholder")}</option>
-              {publishedNationalities.map((n) => (
-                <option key={n.nationality} value={n.nationality}>
-                  {n.name}
-                </option>
-              ))}
-            </select>
+              placeholder={t("fromPlaceholder")}
+              noResultsLabel={t("noMatches")}
+              groups={[
+                {
+                  options: publishedNationalities.map((n) => ({
+                    value: n.nationality,
+                    label: n.name,
+                  })),
+                },
+              ]}
+            />
           </div>
 
           <div>
             <label className={labelClass} htmlFor="tc-destination">
               {t("toLabel")}
             </label>
-            <select
+            <SearchableSelect
               id="tc-destination"
               data-testid="tc-destination"
-              className={inputClass}
               value={destination}
-              onChange={(e) => {
-                setDestination(e.target.value);
+              onChange={(v) => {
+                setDestination(v);
                 setSubmitted(false);
               }}
-            >
-              <option value="">{t("toPlaceholder")}</option>
-              <option value={SCHENGEN_DESTINATION}>{t("schengenArea")}</option>
-              <optgroup label={t("toGroupDestinations")}>
-                {destinations
-                  .filter((d) => d.status === "verified")
-                  .map((d) => (
-                    <option key={d.code} value={d.code}>
-                      {d.name}
-                    </option>
-                  ))}
-              </optgroup>
-              <optgroup label={t("toGroupSchengenStates")}>
-                {schengenCountries.map((c) => (
-                  <option key={c.code} value={c.code}>
-                    {c.name}
-                  </option>
-                ))}
-              </optgroup>
-              <optgroup label={t("toGroupComingSoon")}>
-                {queuedDestinations.map((d) => (
-                  <option key={d.code} value={d.code}>
-                    {d.name} {t("comingSoonSuffix")}
-                  </option>
-                ))}
-              </optgroup>
-            </select>
+              placeholder={t("toPlaceholder")}
+              noResultsLabel={t("noMatches")}
+              groups={[
+                { options: [{ value: SCHENGEN_DESTINATION, label: t("schengenArea") }] },
+                {
+                  label: t("toGroupDestinations"),
+                  options: destinations
+                    .filter((d) => d.status === "verified")
+                    .map((d) => ({ value: d.code, label: d.name })),
+                },
+                {
+                  label: t("toGroupSchengenStates"),
+                  options: schengenCountries.map((c) => ({ value: c.code, label: c.name })),
+                },
+                {
+                  label: t("toGroupComingSoon"),
+                  options: queuedDestinations.map((d) => ({
+                    value: d.code,
+                    label: `${d.name} ${t("comingSoonSuffix")}`,
+                  })),
+                },
+              ]}
+            />
           </div>
 
           <div>

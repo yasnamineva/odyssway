@@ -16,8 +16,13 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default async function TripCheckPage() {
+export default async function TripCheckPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ nationality?: string; destination?: string }>;
+}) {
   const t = await getTranslations();
+  const { nationality, destination } = await searchParams;
   const appJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
@@ -34,7 +39,7 @@ export default async function TripCheckPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(appJsonLd) }}
       />
-      <TripCheck />
+      <TripCheck initialNationality={nationality} initialDestination={destination} />
     </div>
   );
 }

@@ -62,11 +62,14 @@ export default function GlobeStory() {
   const revealRef = useRef<HTMLElement>(null);
   const [visible, setVisible] = useState(false);
 
-  // Fades + lifts the whole section in once its top edge scrolls into view,
-  // rather than letting the dark band show through at the bottom of the
-  // hero on load. threshold: 0 (not Reveal's usual 0.15) so this fires the
-  // instant any part of it appears — waiting for 15% of a 300vh section
-  // would mean scrolling deep into its own pinned track before it appears.
+  // Fades + lifts the whole section in once the reader actually scrolls to
+  // it. Gated on window.scrollY > 0, not just IntersectionObserver — on a
+  // tall viewport the section can already overlap the initial viewport at
+  // scrollY 0 (short hero, tall screen), and IntersectionObserver reports
+  // that as "intersecting" on its very first callback, before any real
+  // scrolling happens. That made the reveal fire immediately on load
+  // instead of on scroll. Requiring scrollY > 0 first guarantees nothing
+  // shows until the user has actually moved.
   useEffect(() => {
     const el = revealRef.current;
     if (!el) return;
@@ -74,17 +77,42 @@ export default function GlobeStory() {
       setVisible(true);
       return;
     }
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry?.isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0 },
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
+    let hasScrolled = window.scrollY > 0;
+    let observer: IntersectionObserver | null = null;
+
+    const startObserving = () => {
+      if (observer) return;
+      observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry?.isIntersecting) {
+            setVisible(true);
+            observer?.disconnect();
+          }
+        },
+        { threshold: 0 },
+      );
+      observer.observe(el);
+    };
+
+    const onScroll = () => {
+      if (hasScrolled) return;
+      hasScrolled = window.scrollY > 0;
+      if (hasScrolled) {
+        startObserving();
+        window.removeEventListener("scroll", onScroll);
+      }
+    };
+
+    if (hasScrolled) {
+      startObserving();
+    } else {
+      window.addEventListener("scroll", onScroll, { passive: true });
+    }
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      observer?.disconnect();
+    };
   }, []);
 
   return (

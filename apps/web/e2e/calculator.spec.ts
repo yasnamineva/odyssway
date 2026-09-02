@@ -15,6 +15,13 @@ async function setCheckDate(page: Page, date: string) {
   await page.getByLabel("Check my status on").fill(date);
 }
 
+/** The per-trip country field is a SearchableSelect typeahead combobox, not a
+ * native <select> — type enough of the label to filter to it, then click it. */
+async function pickCountry(page: Page, query: string, optionName: string) {
+  await page.getByLabel("Country (optional)").first().fill(query);
+  await page.getByRole("option", { name: optionName, exact: true }).click();
+}
+
 test.beforeEach(async ({ page }) => {
   await page.goto("/calculator");
   // The calculator is client-side; wait for hydration to replace the skeleton.
@@ -38,7 +45,7 @@ test("flags an overstay beyond 90 days in the window", async ({ page }) => {
 
 test("excludes days in a non-Schengen country (Ireland)", async ({ page }) => {
   await fillFirstTrip(page, "2026-06-01", "2026-06-10");
-  await page.getByLabel("Country (optional)").first().selectOption("IE");
+  await pickCountry(page, "Ireland", "Ireland");
   await setCheckDate(page, "2026-06-30");
   await expect(page.getByTestId("days-used")).toHaveText("0");
   await expect(page.getByTestId("exclusion-note")).toContainText("Ireland");
@@ -48,7 +55,7 @@ test("handles Bulgaria's 2024 accession date per-day", async ({ page }) => {
   // BG joined Schengen 2024-03-31 (Council Decision (EU) 2024/210):
   // 1–30 Mar 2024 must not count; 31 Mar – 10 Apr (11 days) must.
   await fillFirstTrip(page, "2024-03-01", "2024-04-10");
-  await page.getByLabel("Country (optional)").first().selectOption("BG");
+  await pickCountry(page, "Bulgaria", "Bulgaria");
   await setCheckDate(page, "2024-04-10");
   await expect(page.getByTestId("days-used")).toHaveText("11");
   await expect(page.getByTestId("exclusion-note")).toContainText("Bulgaria");
@@ -57,7 +64,7 @@ test("handles Bulgaria's 2024 accession date per-day", async ({ page }) => {
 
 test("excludes a residence-permit stay in the issuing country", async ({ page }) => {
   await fillFirstTrip(page, "2026-01-01", "2026-06-30"); // half a year
-  await page.getByLabel("Country (optional)").first().selectOption("ES");
+  await pickCountry(page, "Spain", "Spain");
   await page.getByLabel(/residence permit or long-stay/).first().check();
   await setCheckDate(page, "2026-06-30");
   await expect(page.getByTestId("days-used")).toHaveText("0");
@@ -86,7 +93,7 @@ test("accepts a compliant planned trip", async ({ page }) => {
 
 test("share writes state into the URL and restores it on load", async ({ page }) => {
   await fillFirstTrip(page, "2026-06-01", "2026-06-10");
-  await page.getByLabel("Country (optional)").first().selectOption("FR");
+  await pickCountry(page, "France", "France");
   await setCheckDate(page, "2026-06-30");
   await page.getByRole("button", { name: "Copy shareable link" }).click();
   await expect(page).toHaveURL(/t=2026-06-01\.2026-06-10\.FR/);
@@ -94,7 +101,7 @@ test("share writes state into the URL and restores it on load", async ({ page })
   // A fresh navigation to the shared URL restores the computation.
   await page.goto(`/calculator?t=2026-06-01.2026-06-10.FR&d=2026-06-30`);
   await expect(page.getByTestId("days-used")).toHaveText("10");
-  await expect(page.getByLabel("Country (optional)").first()).toHaveValue("FR");
+  await expect(page.getByLabel("Country (optional)").first()).toHaveValue("France");
 });
 
 test("shows the error state instead of computing for reversed dates", async ({ page }) => {

@@ -46,6 +46,4 @@ export function destinationByCode(code: string): DestinationRecord | undefined {
  * §13.3). No entry requirement or customs data exists yet for these;
  * resolveTripCheck() always returns `covered: false` for them.
  */
-export const queuedDestinations: Array<{ code: string; name: string; officialAuthorityUrl: string }> = [
-  { code: "BR", name: "Brazil", officialAuthorityUrl: "https://www.gov.br/mre/en" },
-];
+export const queuedDestinations: Array<{ code: string; name: string; officialAuthorityUrl: string }> = [];

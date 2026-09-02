@@ -54,7 +54,7 @@ test("unverified EES countries 404 instead of rendering thin content", async ({ 
 });
 
 test("unverified destination pages 404 instead of rendering thin content", async ({ page }) => {
-  const response = await page.goto("/destinations/au");
+  const response = await page.goto("/destinations/co");
   expect(response?.status()).toBe(404);
 });
 

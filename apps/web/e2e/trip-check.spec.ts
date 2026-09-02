@@ -1,13 +1,20 @@
-import { expect, test } from "@playwright/test";
+import { expect, test, type Page } from "@playwright/test";
 
 /** The Trip Check flow (AGENTS.md §7 "/trip-check"): from / to / bringing → results. */
+
+/** SearchableSelect is a typeahead combobox, not a native <select> — type enough
+ * of the label to filter to it, then click the matching option. */
+async function pickCombobox(page: Page, testId: string, query: string, optionName: string) {
+  await page.getByTestId(testId).fill(query);
+  await page.getByRole("option", { name: optionName, exact: true }).click();
+}
 
 test("resolves the Schengen path via the rolling-window engine and links the full calculator", async ({
   page,
 }) => {
   await page.goto("/trip-check");
-  await page.getByTestId("tc-nationality").selectOption("US");
-  await page.getByTestId("tc-destination").selectOption("SCHENGEN");
+  await pickCombobox(page, "tc-nationality", "United States", "United States");
+  await pickCombobox(page, "tc-destination", "Schengen Area", "Schengen Area (any country, unspecified)");
   await page.getByTestId("tc-submit").click();
 
   await expect(page.getByTestId("tc-results")).toBeVisible();
@@ -23,8 +30,8 @@ test("resolving a specific Schengen member state behaves the same as the Schenge
   page,
 }) => {
   await page.goto("/trip-check");
-  await page.getByTestId("tc-nationality").selectOption("GB");
-  await page.getByTestId("tc-destination").selectOption("FR");
+  await pickCombobox(page, "tc-nationality", "United Kingdom", "United Kingdom");
+  await pickCombobox(page, "tc-destination", "France", "France");
   await page.getByTestId("tc-submit").click();
 
   await expect(page.getByTestId("tc-results")).toBeVisible();
@@ -35,8 +42,8 @@ test("resolves a verified non-Schengen destination end to end, with a matched cu
   page,
 }) => {
   await page.goto("/trip-check");
-  await page.getByTestId("tc-nationality").selectOption("US");
-  await page.getByTestId("tc-destination").selectOption("CA");
+  await pickCombobox(page, "tc-nationality", "United States", "United States");
+  await pickCombobox(page, "tc-destination", "Canada", "Canada");
 
   const itemInput = page.getByTestId("tc-item-input");
   await itemInput.fill("cannabis");
@@ -51,12 +58,16 @@ test("resolves a verified non-Schengen destination end to end, with a matched cu
   await expect(page.getByTestId("tc-item-not-found")).toHaveCount(0);
 });
 
-test("a queued (not-yet-verified) destination shows the honest not-covered state, never a guess", async ({
+test("a nationality/destination pair with no verified row shows the honest not-covered state, never a guess", async ({
   page,
 }) => {
+  // Israel -> Singapore: both individually verified, but that specific pair's
+  // entry-requirement row was withheld from production data (only
+  // secondary-sourced, not primary-confirmed) — must resolve honestly, not
+  // fall back to a guess.
   await page.goto("/trip-check");
-  await page.getByTestId("tc-nationality").selectOption("US");
-  await page.getByTestId("tc-destination").selectOption("AU");
+  await pickCombobox(page, "tc-nationality", "Israel", "Israel");
+  await pickCombobox(page, "tc-destination", "Singapore", "Singapore");
   await page.getByTestId("tc-submit").click();
 
   await expect(page.getByTestId("tc-not-covered")).toBeVisible();
@@ -68,8 +79,8 @@ test("item tags can be added, removed, and are looked up per destination without
   page,
 }) => {
   await page.goto("/trip-check");
-  await page.getByTestId("tc-nationality").selectOption("US");
-  await page.getByTestId("tc-destination").selectOption("SCHENGEN");
+  await pickCombobox(page, "tc-nationality", "United States", "United States");
+  await pickCombobox(page, "tc-destination", "Schengen Area", "Schengen Area (any country, unspecified)");
 
   const itemInput = page.getByTestId("tc-item-input");
   await itemInput.fill("definitely-not-a-real-item-xyz");
@@ -84,8 +95,8 @@ test("item tags can be added, removed, and are looked up per destination without
 test("submit is disabled until both nationality and destination are chosen", async ({ page }) => {
   await page.goto("/trip-check");
   await expect(page.getByTestId("tc-submit")).toBeDisabled();
-  await page.getByTestId("tc-nationality").selectOption("US");
+  await pickCombobox(page, "tc-nationality", "United States", "United States");
   await expect(page.getByTestId("tc-submit")).toBeDisabled();
-  await page.getByTestId("tc-destination").selectOption("SCHENGEN");
+  await pickCombobox(page, "tc-destination", "Schengen Area", "Schengen Area (any country, unspecified)");
   await expect(page.getByTestId("tc-submit")).toBeEnabled();
 });

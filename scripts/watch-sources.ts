@@ -159,6 +159,52 @@ const SOURCES: WatchedSource[] = [
     url: "https://www.gdrfad.gov.ae/themes/gdrfad/content/pdf/Law-of-Movement-and-Residence-of-Aliens-en.pdf",
     usedBy: "data/entry-requirements.json (UAE entry/residence law underlying the visa-exemption list)",
   },
+  // --- Destinations added 2026-09-02 (AGENTS.md §12 Phase 1.5 continued) ---
+  {
+    id: "ph-evisa-policy",
+    url: "https://evisa.gov.ph/",
+    usedBy: "data/entry-requirements.json (Philippines Executive Order No. 408 visa-waiver country list)",
+  },
+  {
+    id: "cn-nia-visa-free-list",
+    url: "https://www.nia.gov.cn/",
+    usedBy: "data/entry-requirements.json (China NIA unilateral visa-free list)",
+  },
+  {
+    id: "vn-evisa-portal",
+    url: "https://evisa.xuatnhapcanh.gov.vn/",
+    usedBy: "data/entry-requirements.json (Vietnam e-Visa portal — unilateral exemption + e-visa nationality lists). Note: newer evisa.gov.vn/thithucdientu.gov.vn domains have broken SSL certs as of verification.",
+  },
+  {
+    id: "nz-nzeta-visa-waiver-list",
+    url: "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/nzeta",
+    usedBy: "data/entry-requirements.json (New Zealand NZeTA + visa-waiver country list, IVL fee)",
+  },
+  {
+    id: "id-imigrasi-voa-bvk-list",
+    url: "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa",
+    usedBy: "data/entry-requirements.json (Indonesia VOA/visa-free/Calling Visa nationality lists — Brazil moved from VOA to visa-free 2026-07-09, worth periodic recheck)",
+  },
+  {
+    id: "sa-evisa-portal",
+    url: "https://visa.visitsaudi.com/",
+    usedBy: "data/entry-requirements.json (Saudi Arabia eVisa eligible-nationality list)",
+  },
+  {
+    id: "sg-ica-entering-singapore",
+    url: "https://www.ica.gov.sg/enter-transit-depart/entering-singapore",
+    usedBy: "data/entry-requirements.json (Singapore ICA visa-required country list — exact per-nationality stay lengths for several countries are not published by ICA and were sourced from converging secondary reporting; recheck if precision matters)",
+  },
+  {
+    id: "kr-keta-portal",
+    url: "https://www.k-eta.go.kr/",
+    usedBy: "data/entry-requirements.json (South Korea K-ETA eligible-nationality list, fee, temporary exemption window through 2026-12-31)",
+  },
+  {
+    id: "br-qgrv-visa-regime",
+    url: "https://www.gov.br/pf/pt-br/assuntos/imigracao/prorrogar-estada-no-brasil/qgrv-simples-port-140120.pdf",
+    usedBy: "data/entry-requirements.json (Brazil Polícia Federal QGRV visa-regime table — US/CA/AU visa requirement reinstated 2025-04-10 by Decreto 11.982/2025, a repeal bill was pending as of verification; recheck periodically)",
+  },
 ];
 
 const ROOT = join(import.meta.dirname, "..");

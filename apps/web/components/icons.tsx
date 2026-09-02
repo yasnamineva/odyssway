@@ -20,6 +20,14 @@ export function CompassIcon({ className }: IconProps) {
   );
 }
 
+export function ChevronDownIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className} aria-hidden="true">
+      <path d="M6 9l6 6 6-6" />
+    </svg>
+  );
+}
+
 export function CalendarClockIcon({ className }: IconProps) {
   return (
     <svg {...base} className={className} aria-hidden="true">

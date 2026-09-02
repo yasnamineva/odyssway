@@ -1,7 +1,10 @@
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 import type { ReactNode } from "react";
 import CountUp from "../components/CountUp";
+import FaqAccordion from "../components/FaqAccordion";
 import GlobeStory from "../components/GlobeStory";
+import HeroQuickCheck from "../components/HeroQuickCheck";
 import {
   CalendarClockIcon,
   CompassIcon,
@@ -14,6 +17,7 @@ import Reveal from "../components/Reveal";
 import { coveredDestinationCount } from "../lib/destinations";
 import { destinationLabelFor } from "../lib/destination-label";
 import { resolveTripCheck } from "../lib/trip-check";
+import heroImage from "../public/images/hero-travel.jpg";
 
 const STAT_ICONS = [ScaleIcon, GlobeIcon, ShieldCheckIcon];
 
@@ -23,6 +27,7 @@ export default async function HomePage() {
   const trustBadges = t.raw("home.trustBadges") as string[];
   const tripCheckBullets = t.raw("home.tools.tripCheck.bullets") as string[];
   const calculatorBullets = t.raw("home.tools.calculator.bullets") as string[];
+  const faqItems = t.raw("faqPage.items") as Array<{ q: string; a: string }>;
 
   // A real, precomputed example — not a mockup — so the "here's what you get"
   // preview is exactly as honest as the live tool (AGENTS.md §3).
@@ -30,29 +35,49 @@ export default async function HomePage() {
 
   return (
     <div className="space-y-16">
-      <section className="text-center">
-        <span className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-3 py-1 text-[11px] font-semibold tracking-wide text-blue-700 uppercase">
-          {t("home.hero.eyebrow")}
-        </span>
-        <h1 className="mx-auto mt-4 max-w-2xl font-display text-4xl font-bold tracking-tight text-slate-900 lg:text-5xl">
-          {t("home.hero.h1")}
-        </h1>
-        <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-slate-600 lg:text-base">
-          {t("home.hero.sub")}
-        </p>
-        <div className="mt-7 flex flex-wrap justify-center gap-3">
-          <a
-            href="/trip-check"
-            className="rounded-lg bg-slate-900 px-6 py-3 text-sm font-medium text-white transition hover:scale-[1.02] hover:bg-slate-700"
-          >
-            {t("home.hero.ctaPrimary")}
-          </a>
-          <a
-            href="/calculator"
-            className="rounded-lg border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-700 transition hover:scale-[1.02] hover:bg-slate-50"
-          >
-            {t("home.hero.ctaSecondary")}
-          </a>
+      <section className="relative -mt-8">
+        <div className="relative left-1/2 h-[540px] w-screen -translate-x-1/2 overflow-hidden sm:h-[600px] lg:h-[660px]">
+          <Image
+            src={heroImage}
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/95 via-slate-900/45 to-slate-900/10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/70 via-slate-900/15 to-transparent" />
+          <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-center px-4 pb-24">
+            <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-white/90 px-3 py-1 text-[11px] font-semibold tracking-wide text-slate-900 uppercase shadow-sm backdrop-blur">
+              {t("home.hero.eyebrow")}
+            </span>
+            <h1 className="mt-4 max-w-xl font-display text-4xl font-bold tracking-tight text-white lg:text-6xl">
+              {t("home.hero.h1")}
+            </h1>
+            <p className="mt-4 max-w-lg text-sm leading-relaxed text-white/85 lg:text-base">
+              {t("home.hero.sub")}
+            </p>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <a
+                href="/trip-check"
+                className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-lg transition hover:scale-[1.03] hover:bg-white/90"
+              >
+                {t("home.hero.ctaPrimary")}
+              </a>
+              <a
+                href="/calculator"
+                className="rounded-full border border-white/50 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:scale-[1.03] hover:bg-white/20"
+              >
+                {t("home.hero.ctaSecondary")}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="relative z-20 mx-auto -mt-16 max-w-3xl px-4 sm:-mt-20">
+          <div className="rounded-2xl border border-slate-200 bg-white/95 p-5 shadow-2xl backdrop-blur sm:p-7">
+            <HeroQuickCheck />
+          </div>
         </div>
       </section>
 
@@ -137,6 +162,7 @@ export default async function HomePage() {
               bullets={tripCheckBullets}
               cta={t("home.tools.tripCheck.cta")}
               href="/trip-check"
+              accent="blue"
             />
             <ToolCard
               icon={<CalendarClockIcon className="h-6 w-6" />}
@@ -145,6 +171,7 @@ export default async function HomePage() {
               bullets={calculatorBullets}
               cta={t("home.tools.calculator.cta")}
               href="/calculator"
+              accent="amber"
             />
           </div>
         </section>
@@ -170,6 +197,34 @@ export default async function HomePage() {
           ))}
         </section>
       </Reveal>
+
+      <Reveal>
+        <section>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                mainEntity: faqItems.map((item) => ({
+                  "@type": "Question",
+                  name: item.q,
+                  acceptedAnswer: { "@type": "Answer", text: item.a },
+                })),
+              }),
+            }}
+          />
+          <h2 className="text-center font-display text-xl font-bold text-slate-900">
+            {t("faqPage.h1")}
+          </h2>
+          <p className="mx-auto mt-2 max-w-lg text-center text-sm text-slate-500">
+            {t("faqPage.intro")}
+          </p>
+          <div className="mt-6">
+            <FaqAccordion items={faqItems} />
+          </div>
+        </section>
+      </Reveal>
     </div>
   );
 }
@@ -183,6 +238,11 @@ function PreviewCard({ label, value, span }: { label: string; value: string; spa
   );
 }
 
+const TOOL_CARD_ACCENTS = {
+  blue: { badge: "bg-blue-50 text-blue-700", border: "hover:border-blue-200", dot: "bg-blue-400" },
+  amber: { badge: "bg-amber-50 text-amber-700", border: "hover:border-amber-200", dot: "bg-amber-400" },
+};
+
 function ToolCard({
   icon,
   title,
@@ -190,6 +250,7 @@ function ToolCard({
   bullets,
   cta,
   href,
+  accent,
 }: {
   icon: ReactNode;
   title: string;
@@ -197,13 +258,15 @@ function ToolCard({
   bullets: string[];
   cta: string;
   href: string;
+  accent: keyof typeof TOOL_CARD_ACCENTS;
 }) {
+  const colors = TOOL_CARD_ACCENTS[accent];
   return (
     <a
       href={href}
-      className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg lg:p-8"
+      className={`group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg lg:p-8 ${colors.border}`}
     >
-      <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-blue-700 transition group-hover:scale-110">
+      <div className={`inline-flex h-11 w-11 items-center justify-center rounded-xl transition group-hover:scale-110 ${colors.badge}`}>
         {icon}
       </div>
       <h3 className="mt-4 font-display text-lg font-bold text-slate-900">{title}</h3>
@@ -211,7 +274,7 @@ function ToolCard({
       <ul className="mt-4 grid grid-cols-2 gap-x-3 gap-y-1.5 text-xs text-slate-500">
         {bullets.map((b) => (
           <li key={b} className="flex items-center gap-1.5">
-            <span className="h-1 w-1 shrink-0 rounded-full bg-blue-400" />
+            <span className={`h-1 w-1 shrink-0 rounded-full ${colors.dot}`} />
             {b}
           </li>
         ))}
