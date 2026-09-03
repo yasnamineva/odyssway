@@ -147,7 +147,7 @@ const SOURCES: WatchedSource[] = [
   {
     id: "tr-visa-information",
     url: "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
-    usedBy: "data/entry-requirements.json (Turkey visa-exemption regime, Law No. 6458). Note: evisa.gov.tr — the domain named in secondary sources as Turkey's e-Visa portal — currently redirects to a private company; not used as a citation, but worth periodically re-checking.",
+    usedBy: "data/entry-requirements.json (Turkey visa-exemption regime, Law No. 6458; also the source for China's very recent 2026-01-02 visa-free grant — worth periodic recheck given how new that change is). Note: evisa.gov.tr — the domain named in secondary sources as Turkey's e-Visa portal — currently redirects to a private company; not used as a citation, but worth periodically re-checking.",
   },
   {
     id: "au-eta-subclass-601",
@@ -204,6 +204,12 @@ const SOURCES: WatchedSource[] = [
     id: "br-qgrv-visa-regime",
     url: "https://www.gov.br/pf/pt-br/assuntos/imigracao/prorrogar-estada-no-brasil/qgrv-simples-port-140120.pdf",
     usedBy: "data/entry-requirements.json (Brazil Polícia Federal QGRV visa-regime table — US/CA/AU visa requirement reinstated 2025-04-10 by Decreto 11.982/2025, a repeal bill was pending as of verification; recheck periodically)",
+  },
+  // --- Nationality roster expansion added 2026-09-03 (China, India) ---
+  {
+    id: "eu-visa-list-regulation-annex1",
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018R1806-20251230",
+    usedBy: "data/nationality-rules.json (Regulation (EU) 2018/1806 Annex I — third countries whose nationals need a Schengen visa; used for China/India's schengenVisaRequired status)",
   },
 ];
 

@@ -226,5 +226,37 @@
     "verified_at": "2026-07-13",
     "verified_by": "agent:claude-fable-5",
     "status": "verified"
+  },
+  {
+    "nationality": "CN",
+    "name": "China",
+    "citizenLabel": "Chinese",
+    "visaExempt": false,
+    "etiasApplicable": false,
+    "schengenVisaRequired": true,
+    "notes": "Listed in Annex I, Section 1 (States) as a country whose nationals must hold a Schengen (Type C) visa. No footnote or partial exemption is attached to the 'China' entry itself (the People's Republic of China is on Annex I; only the Special Administrative Regions Hong Kong and Macao are separately listed on Annex II as visa-exempt, which does not extend to PRC ordinary passports).",
+    "legal_source": {
+      "name": "Regulation (EU) 2018/1806, Annex I (consolidated version of 30 December 2025, CELEX 02018R1806-20251230)",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018R1806-20251230"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "name": "India",
+    "citizenLabel": "Indian",
+    "visaExempt": false,
+    "etiasApplicable": false,
+    "schengenVisaRequired": true,
+    "notes": "Listed in Annex I, Section 1 (States) as a country whose nationals must hold a Schengen (Type C) visa. No footnote or partial exemption is attached to the 'India' entry.",
+    "legal_source": {
+      "name": "Regulation (EU) 2018/1806, Annex I (consolidated version of 30 December 2025, CELEX 02018R1806-20251230)",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018R1806-20251230"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
   }
 ]

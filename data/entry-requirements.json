@@ -7788,5 +7788,899 @@
     "verified_at": "2026-09-02",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
+  },
+  {
+    "nationality": "CN",
+    "destination": "AU",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid Chinese (PRC) passport",
+      "Completed Visitor visa (subclass 600) online application",
+      "Evidence of purpose of visit and funds",
+      "For the Approved Destination Status (ADS) stream: booking through an ADS-approved travel agent for a group tour"
+    ],
+    "notes": "China is not an ETA (subclass 601) or eVisitor (subclass 651) eligible passport, so PRC passport holders must apply in advance for a Visitor visa (subclass 600). Australia's Home Affairs domain (immi.homeaffairs.gov.au / homeaffairs.gov.au) returned 403 Forbidden on every direct fetch attempt in this session, so this was instead confirmed via the Australian Embassy in Beijing's own site, which describes the subclass 600 Approved Destination Status (ADS) stream specifically for PRC passport holders on approved group tours, and references a separate Frequent Traveller stream (with biometric collection for applicants in China) offering longer multi-entry validity. Exact per-visit stay lengths (which vary by stream/grant, e.g. 3/6/12 months for standard grants, ~90 days per visit under Frequent Traveller) were not confirmable on an accessible official page this session, so no single maxDays figure is asserted.",
+    "legal_source": {
+      "name": "Australian Embassy China - Visas and Migration",
+      "url": "https://china.embassy.gov.au/bjng/Visas_and_Migration.html"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CN",
+    "destination": "CA",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid Chinese passport",
+      "Completed Temporary Resident Visa (visitor visa) application",
+      "Biometrics (fingerprints and photo)",
+      "Proof of funds and travel purpose"
+    ],
+    "notes": "IRCC's official eTA eligibility page lists the eTA-eligible passport countries (a small set including Brazil, Mexico, Indonesia, Thailand, etc.) and China is not among them, so Chinese passport holders cannot use the eTA and must instead apply for a visitor visa (Temporary Resident Visa) in advance, including biometrics. Exact document checklist confirmed generically from IRCC guidance rather than a China-specific document list page.",
+    "legal_source": {
+      "name": "Government of Canada / IRCC - eTA eligibility",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/eligibility/eta-x.html"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CN",
+    "destination": "EG",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from arrival date",
+      "Printed copy of the approved e-Visa",
+      "Travel itinerary",
+      "Hotel booking / accommodation details",
+      "Supporting invitation letter (for business or family visits, where applicable)"
+    ],
+    "notes": "Egypt's official e-Visa portal explicitly lists China among eligible nationalities for its Tourism e-Visa (single entry $30, multiple entry $65). The FAQ page did not state the permitted stay length or visa validity window, so no maxDays figure is asserted. The portal also notes Egyptian port authorities retain the right to refuse entry to any e-visa holder without explanation.",
+    "legal_source": {
+      "name": "Egypt e-Visa Portal (Ministry of Interior) - FAQ",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CN",
+    "destination": "GB",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport or travel document covering the stay",
+      "Completed online Standard Visitor visa application",
+      "Evidence supporting purpose of visit, funds, and intent to leave"
+    ],
+    "notes": "The People's Republic of China is explicitly listed as a 'visa national' in the UK's Immigration Rules Appendix Visitor Visa National List, meaning standard Chinese passport holders need a Standard Visitor visa before travel (an asterisked exception applies to Hong Kong and Macao SAR passport holders, who do not need a visit visa). gov.uk's Standard Visitor visa page confirms Chinese nationals may usually stay up to 6 months, at a cost of £135, with online applications open from 3 months before travel.",
+    "legal_source": {
+      "name": "GOV.UK - Standard Visitor visa",
+      "url": "https://www.gov.uk/standard-visitor-visa"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CN",
+    "destination": "IN",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Regular visa application submitted through an Indian Mission/Consulate (not via e-Visa)",
+      "Supporting documents per Indian Mission requirements (photograph, itinerary, invitation where applicable)"
+    ],
+    "notes": "India's official e-Visa portal lists eligible passport countries/regions for the e-Tourist Visa scheme, and China (PRC) is not among the ~174 listed nationalities. The portal's own guidance is that travelers who don't qualify for e-Visa must 'apply for regular Visa at Indian Mission.' This is consistent with India having excluded Chinese nationals from e-Visa eligibility following the 2020 border tensions; regular visa applications for Chinese citizens are handled through Indian diplomatic missions rather than the e-Visa fast-track. The specific document checklist for the regular-visa route (as opposed to the general e-Visa list) was not itemized on the pages accessible this session.",
+    "legal_source": {
+      "name": "Indian Visa Online (Bureau of Immigration, Ministry of Home Affairs) - e-Visa / eTV information",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CN",
+    "destination": "JP",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid Chinese passport",
+      "Completed Japanese visa application form",
+      "Passport-size photo",
+      "Travel itinerary and flight/hotel bookings",
+      "Proof of sufficient funds / financial guarantor documents",
+      "Visa issued in advance by a Japanese Embassy/Consulate (or via an authorized Chinese travel agency for group/package tourist visas)"
+    ],
+    "notes": "Japan does NOT unilaterally exempt Chinese passport holders from visas, unlike many Western nationalities. China is absent from MOFA's official 74-country/region short-term visa exemption list. Chinese tourists must obtain a visa in advance (individual tourist visa or, historically, visas processed through MOFA-designated travel agencies for group tours); there is no self-service visa-free or eTA stay to display.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Japan (MOFA) - List of Countries/Regions Exempt from Short-Term Visa",
+      "url": "https://www.mofa.go.jp/j_info/visit/visa/short/novisa.html"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CN",
+    "destination": "KE",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport (at least 6 months validity)",
+      "Kenya eTA (Electronic Travel Authorization) approval obtained online before travel",
+      "Passport-size digital photo",
+      "Return/onward travel ticket",
+      "Proof of accommodation"
+    ],
+    "notes": "Kenya requires an eTA for essentially all foreign nationals (Kenya abolished visas in favor of a universal eTA regime); the official eTA eligibility page lists 'The People's Republic of China - ETA required' with no ordinary-passport exemption (only Chinese diplomatic/official/service passport holders get a short exemption of up to 30 days). Standard visitor stay under the eTA is the general Kenyan single-entry visitor period (up to 90 days), confirmed at the port of entry.",
+    "legal_source": {
+      "name": "Kenya eTA (Directorate of Immigration Services) - Eligibility",
+      "url": "https://etakenya.go.ke/eligibility"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CN",
+    "destination": "KR",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid Chinese passport",
+      "Completed Korean visa application form (short-term C-3 tourist visa or applicable category)",
+      "Passport photo",
+      "Proof of itinerary, accommodation, and financial means",
+      "Visa issued in advance by a Korean Embassy/Consulate-General (individual applicants) or processed via a Korea-designated travel agency for organized group tours"
+    ],
+    "notes": "South Korea's K-ETA (electronic travel authorization) system, used by nationals of ~112 visa-waiver countries, does NOT list mainland China (People's Republic of China) as an eligible nationality on the official K-ETA eligible-countries page - only 'China P.R. (Hong Kong)' and 'China P.R. (Macao)' passport holders appear, each with a 90-day allowance. Ordinary PRC passport holders therefore must obtain a standard visa in advance; K-ETA does not substitute for it. This is distinct from the K-ETA rules published for K-ETA-eligible nationalities elsewhere on this site.",
+    "legal_source": {
+      "name": "Korea Electronic Travel Authorization (K-ETA) - Eligible Countries",
+      "url": "https://www.k-eta.go.kr/portal/guide/viewetaalification.do"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CN",
+    "destination": "MA",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Return/onward travel ticket",
+      "Proof of accommodation or invitation",
+      "Proof of sufficient funds (recommended)"
+    ],
+    "notes": "Morocco unilaterally exempted Chinese passport holders from visa requirements (effective 2016, as a tourism-promotion measure) and China ('Chine') appears without qualification on the official Moroccan consular list of nationalities exempt from an entry visa. The fetched list did not show an explicit day-limit annotation next to China (unlike some entries, e.g. Malaysia/Hungary at 90 days, Maldives/Hong Kong at 30 days); 90 days is used here as Morocco's standard visa-exempt stay ceiling under its general foreigner entry rules, consistent with the majority of unqualified entries on the same list, but the destination-specific 90-day figure for China itself was not independently confirmed on a dedicated page.",
+    "legal_source": {
+      "name": "Consulat du Maroc - List of countries whose nationals are exempt from an entry visa to Morocco",
+      "url": "https://consulat.ma/fr/liste-des-pays-dont-les-ressortissants-sont-dispenses-du-visa-dentree-au-maroc"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CN",
+    "destination": "MX",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid Chinese passport",
+      "Completed Mexican visa application (visitante sin permiso para realizar actividades remuneradas)",
+      "OR a valid, unexpired visa (or matching residency) from the United States, Canada, Japan, the United Kingdom, or any Schengen country, which exempts the holder from applying for a separate Mexican visa",
+      "Proof of itinerary and financial solvency",
+      "Visa issued in advance by a Mexican Embassy/Consulate"
+    ],
+    "notes": "Mexico's INM (Instituto Nacional de Migración) publishes a list of nationalities requiring a visa to enter as tourists; China is a long-standing visa-required nationality on that list. The SRE's foreign-visa page confirms a distinct exemption clause: holders of a valid US, Canada, Japan, UK, or Schengen visa can enter Mexico without applying separately for a Mexican visa - this applies to Chinese nationals holding one of those visas, but ordinary Chinese passport holders without one need a standard Mexican visa obtained in advance. Caveat: the INM page's actual visa-required country list is embedded as an image that could not be machine-read during verification, so China's specific listing was confirmed via established policy knowledge plus the corroborating structure of the fetched official pages rather than by directly reading China's name off the list itself.",
+    "legal_source": {
+      "name": "Instituto Nacional de Migración (INM) - Países que requieren visa para México / SRE - Visas para Extranjeros",
+      "url": "https://www.inm.gob.mx/gobmx/word/index.php/paises-requieren-visa-para-mexico/"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CN",
+    "destination": "NZ",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid Chinese passport",
+      "Completed New Zealand Visitor Visa application (via Immigration New Zealand, online or paper)",
+      "Passport photo",
+      "Proof of sufficient funds",
+      "Proof of onward/return travel",
+      "Health and character requirements as applicable (e.g., chest X-ray for longer stays)"
+    ],
+    "notes": "China is not among the nationalities eligible for New Zealand's NZeTA (Electronic Travel Authority); Immigration New Zealand's official visitor-visa guidance confirms Chinese citizens must apply for and obtain a Visitor Visa in advance (with dedicated checklists/resources for Chinese applicants), rather than travel visa-free or on an eTA.",
+    "legal_source": {
+      "name": "Immigration New Zealand - Visitor Visa",
+      "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/visitor-visa"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CN",
+    "destination": "PH",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid passport (at least 6 months validity)",
+      "Philippine Temporary Visitor Visa (9a) obtained from a Philippine Embassy/Consulate in advance",
+      "Visa application form and passport photo",
+      "Proof of sufficient funds and return/onward ticket",
+      "For organized group tours only: Visa Upon Arrival (VUA) processed under Bureau of Immigration memoranda specific to People's Republic of China (PROC) tour groups, arranged through an accredited tour operator"
+    ],
+    "notes": "The Philippine Bureau of Immigration's visa-waiver page does not list China among visa-exempt nationalities (it separately addresses only Macau-Portuguese, Hong Kong-British, and Hong Kong SAR passport holders), confirming ordinary Chinese passport holders are visa-required. However, the BI's Visa-Upon-Arrival (SEVUA) page explicitly references 'VA RADJR Memorandum 2012-002 - VA to Foreign Tour for Indian or People's Republic of China (PROC) Groups,' i.e., organized Chinese tour groups routed through accredited agencies can get a visa processed on arrival rather than at an embassy beforehand. Individual/independent Chinese tourists still need a standard visa obtained in advance.",
+    "legal_source": {
+      "name": "Philippine Bureau of Immigration - Visa Upon Arrival (SEVUA) / Visa Waiver",
+      "url": "https://immigration.gov.ph/visas/visa-upon-arrival-sevua/"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "AE",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months",
+      "UAE entry permit/visa obtained in advance (via airline, hotel, tour operator, or an ICP/GDRFA-approved typing/service centre)",
+      "Return or onward travel ticket",
+      "Proof of accommodation"
+    ],
+    "notes": "The UAE Ministry of Foreign Affairs' own visa-exemption list explicitly marks the Republic of India as requiring a visa (i.e. not on the visa-exempt list), unlike US/UK/EU/Australian/Canadian/Japanese/Korean/Singaporean passport holders who are visa-free. Ordinary Indian passport holders must therefore arrange a UAE tourist entry permit/e-visa in advance through an airline, hotel, tour operator, or authorized typing centre before travel; it is not a walk-up visa-on-arrival for the general case. Some third-party and travel-industry sources describe a conditional visa-on-arrival for Indian nationals who separately hold a valid, used US visa/green card or UK/Schengen visa or residency, but this agent could not confirm that specific carve-out against a primary UAE government source in this session, so it is not asserted here as fact.",
+    "legal_source": {
+      "name": "UAE Ministry of Foreign Affairs — Visa Exemptions for Non-Citizens",
+      "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "AU",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Visitor visa (subclass 600) application via ImmiAccount",
+      "Evidence of sufficient funds for the stay",
+      "Evidence of intention to depart Australia (genuine temporary entrant)"
+    ],
+    "notes": "India is not on the eligible-passport list for Australia's Electronic Travel Authority (subclass 601) or the eVisitor (subclass 651), both of which are restricted to a specific set of countries (e.g. USA, Canada, Japan, Singapore, Malaysia, Brunei, Hong Kong for ETA; EU/UK/EEA-aligned passports for eVisitor). Indian citizens must instead apply in advance for the general Visitor visa (subclass 600), which the Department of Home Affairs' own page describes as being for 'tourists, business visitors or to visit family for 3, 6 or 12 months' — the exact grant length is decided case-by-case by a visa officer, so there is no fixed self-service stay length to quote.",
+    "legal_source": {
+      "name": "Department of Home Affairs — Visitor visa (subclass 600)",
+      "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "BR",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months",
+      "Brazilian visitor visa (VIVIS) obtained in advance via the e-visa/consular process",
+      "Proof of accommodation and travel itinerary",
+      "Proof of sufficient funds",
+      "Passport-style photo and completed application form"
+    ],
+    "notes": "Brazil's Ministry of Foreign Affairs / Polícia Federal Quadro Geral de Regime de Vistos (QGRV) — the federal government's official master table of visa regimes for foreigners entering Brazil — lists 'Índia' under the VIVIS (ordinary-passport visitor visa) column with code '1', defined in the document's own legend as 'Visto exigido' (visa required). This is unlike a subset of nationalities (e.g. Argentina, most of the EU) that carry code 8 (visa waiver up to ~90 days). Indian tourists therefore need a visa arranged before travel; there is no fixed self-service maximum-stay figure published for the visa-required track (it is granted per application).",
+    "legal_source": {
+      "name": "Polícia Federal – Quadro Geral de Regime de Vistos (QGRV)",
+      "url": "https://www.gov.br/pf/pt-br/assuntos/imigracao/prorrogar-estada-no-brasil/qgrv-simples-port-140120.pdf"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "CA",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid passport (at least 6 months validity)",
+      "Temporary Resident Visa (TRV / visitor visa) approved before travel",
+      "Digital copy of passport bio-data page and any prior visa/stamp pages",
+      "Proof of financial support and ties to India (as required by IRCC)"
+    ],
+    "notes": "India is not on IRCC's eTA-required (fully visa-exempt) list, and India also does not appear on IRCC's 'select visa-required countries' eTA-X list (Antigua and Barbuda, Argentina, Brazil, Costa Rica, Indonesia, Malaysia, Mexico, Morocco, Panama, Philippines, St. Kitts and Nevis, St. Lucia, St. Vincent and the Grenadines, Seychelles, Thailand, Trinidad and Tobago, Uruguay) — that eTA-X route additionally requires holding a Canadian visa in the last 10 years or a valid US non-immigrant visa. Indian citizens therefore must apply for and obtain a standard Temporary Resident Visa (visitor visa) before travelling, regardless of air/land entry. Stay length at the border is decided by an officer (commonly up to 6 months) rather than a fixed self-service figure.",
+    "legal_source": {
+      "name": "IRCC — eTA-X conditional eligibility for visa-required nationals",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/eligibility/eta-x.html"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "CN",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months with blank visa pages",
+      "Chinese visa (typically L/tourist visa) obtained in advance from a Chinese embassy/consulate or visa application service centre",
+      "Completed visa application form and photo",
+      "Proof of itinerary, accommodation, and return/onward ticket"
+    ],
+    "notes": "China's National Immigration Administration publishes an official list of countries whose ordinary-passport holders get unilateral visa-free entry (for business, tourism, family/friend visits, exchanges, or transit up to 30 days). As of the version checked (dated 2026-02-17), the list covers 50 countries across Europe, Oceania, part of Asia (Brunei, South Korea, Japan, Saudi Arabia, Oman, Kuwait, Bahrain) and the Americas (Brazil, Argentina, Chile, Peru, Uruguay, Canada) — India is not among them. Indian nationals must therefore obtain a Chinese visa in advance; there is no visa-on-arrival or fixed self-service stay length for this track (validity/duration is set by the issuing consulate per application).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "EG",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from arrival date",
+      "Approved Egypt e-Visa (single entry $30 or multiple entry $65) applied for online in advance",
+      "Printed copy of the approved e-Visa",
+      "Travel itinerary and hotel reservation/accommodation details"
+    ],
+    "notes": "Egypt's official e-Visa portal (Ministry of Interior) lists India among the nationalities eligible to apply for an e-Visa online rather than needing a full embassy visa. Fees are $30 for single entry and $65 for multiple entries; the FAQ checked did not itemize the maximum stay per entry, so the standard e-Visa figure (commonly cited as 30 days) is used here per this project's existing convention for this destination/source but should be reconfirmed if a stricter figure is found.",
+    "legal_source": {
+      "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "GB",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport or travel document covering the stay",
+      "Completed online Standard Visitor visa application",
+      "Evidence supporting purpose of visit, funds, and intent to leave"
+    ],
+    "notes": "India is explicitly listed on the UK's Immigration Rules Appendix Visitor: Visa National List, meaning Indian ordinary passport holders are 'visa nationals' who must obtain a Standard Visitor visa (entry clearance) before travelling — they are not eligible for the UK's Electronic Travel Authorisation (ETA) route, which is for non-visa nationals only. gov.uk's Standard Visitor visa page states visitors can usually stay up to 6 months.",
+    "legal_source": {
+      "name": "Immigration Rules Appendix Visitor: Visa National List",
+      "url": "https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-visitor-visa-national-list"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system"
+    ],
+    "notes": "Indonesia's Directorate General of Immigration (Direktorat Jenderal Imigrasi) publishes the official country list for Visa on Arrival eligibility, and India ('India') appears on that list. This matches the standard VOA terms this project has already verified for other VOA-eligible nationalities entering Indonesia (30 days, IDR 500,000 fee, extendable once for a further 30 days).",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CN",
+    "destination": "RW",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid at least 6 months",
+      "Return/onward ticket",
+      "Visa-on-arrival fee (Chinese ordinary passport holders are not in the AU/Commonwealth/La Francophonie or EAC fee-waived categories)"
+    ],
+    "notes": "Since 1 January 2018, Rwanda grants visa on arrival to nationals of all countries at Kigali International Airport and all land borders. Citizens of African Union, Commonwealth and La Francophonie member states get the visa-on-arrival fee waived for a 30-day visit; Chinese nationals do not fall into those waived categories, so the standard visa-on-arrival fee applies for the standard 30-day tourist stay.",
+    "legal_source": {
+      "name": "Rwanda Development Board (RDB) — One Stop Centre: Visas & Permits",
+      "url": "https://rdb.rw/one-stop-centre/"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CN",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid at least 6 months",
+      "Return/onward ticket",
+      "SG Arrival Card (submitted online before arrival)",
+      "Proof of sufficient funds/accommodation if requested at the checkpoint"
+    ],
+    "notes": "With effect from 9 February 2024, holders of ordinary passports issued by the People's Republic of China are exempt from Singapore visa requirements for stays of up to 30 days, under a mutual visa-exemption arrangement between Singapore and China. Chinese diplomatic, public affairs and service passport holders were already visa-exempt for 30 days. Other PRC-related travel documents (Hong Kong SAR DOI, Macau SAR Travel Permit, PRC Travel Document) still require a visa unless eligible for the separate 96-hour Visa-Free Transit Facility, which explicitly excludes ordinary PRC passport holders.",
+    "legal_source": {
+      "name": "Embassy of the Republic of Singapore in Beijing — Visa Information (for PRC nationals)",
+      "url": "https://www.mfa.gov.sg/Overseas-Mission/Beijing/consular-services/visa-information/"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CN",
+    "destination": "TH",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 60
+    },
+    "documentsNeeded": [
+      "Passport valid at least 6 months",
+      "Return/onward ticket",
+      "Thailand Digital Arrival Card (TDAC), completed online before arrival",
+      "Proof of accommodation/funds if requested at the checkpoint"
+    ],
+    "notes": "Thailand and China signed a permanent mutual visa-exemption agreement for holders of ordinary passports and passports for public affairs (signed 28 January 2024, entered into force 1 March 2024): visa-free entry for stays not exceeding 30 days per visit, with a cumulative cap of 90 days in any 180-day period. Thailand's Royal Embassy in Beijing subsequently announced a further extension of the visa-exempt stay to 60 days per entry ('THAI 60-Day Visa Exemption,' posted 25 July 2024), consistent with Thailand's broader mid-2024 extension of visa-exempt stays from 30 to 60 days for many nationalities.",
+    "legal_source": {
+      "name": "Royal Thai Embassy, Beijing — Signing of the Thailand-China Mutual Visa Exemption Agreement",
+      "url": "https://thaiembbeij.org/th/news/signing-of-the-agreement-between-the-government-of-the-kingdom-of-thailand-and-the-government-of-the-peoples-republic-of-china-on-mutual-visa-exemption-for-holders-of-ordinary-passports-and-p/"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CN",
+    "destination": "TR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for the intended duration of stay",
+      "Return/onward ticket",
+      "Proof of accommodation/funds if requested at the border"
+    ],
+    "notes": "As of 2 January 2026, holders of ordinary passports issued by the People's Republic of China are exempt from Turkish visa requirements for tourism purposes, for stays of up to 90 days within any 180-day period. Chinese official-passport holders remain visa-exempt for stays of up to 30 days. No e-Visa is required for ordinary-passport holders under this exemption. This is a very recent policy change (effective the same month verification was performed); re-confirm before publishing in case of further amendment.",
+    "legal_source": {
+      "name": "Republic of Türkiye Ministry of Foreign Affairs — Visa Information for Foreigners",
+      "url": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CN",
+    "destination": "US",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "DS-160 online nonimmigrant visa application confirmation page",
+      "Visa application fee payment receipt",
+      "Passport-style photo",
+      "Consular interview at a U.S. Embassy or Consulate (Beijing, Guangzhou, Shanghai, Shenyang or Wuhan)"
+    ],
+    "notes": "China is not a member of the U.S. Visa Waiver Program, so there is no ESTA option for Chinese passport holders. Chinese citizens travelling for tourism or short business visits must obtain a U.S. nonimmigrant visa in the 'Tourism & Visit' category (commonly the B-1/B-2 visitor visa) in advance, via the DS-160 online application and an in-person consular interview.",
+    "legal_source": {
+      "name": "U.S. Embassy & Consulates in China — Visas",
+      "url": "https://china.usembassy-china.org.cn/visas/"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CN",
+    "destination": "ZA",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Completed visitor's visa application (form BI-84)",
+      "Passport-size photos",
+      "Proof of accommodation/travel itinerary",
+      "Proof of sufficient funds",
+      "Return/onward ticket",
+      "Yellow fever vaccination certificate if arriving from an at-risk country"
+    ],
+    "notes": "On South Africa's official visa-exemption list, only Chinese diplomatic, official and service passport holders get 30-day visa-free entry; ordinary (tourist) Chinese passport holders are explicitly not exempt and must obtain a visa in advance, with visa fees applying. South Africa's Trusted Tour Operator Scheme (TTOS) lists China-based approved tour operators, offering a facilitated visa process for pre-booked group tourists, but individual travelers still need a standard visitor's visa obtained before arrival.",
+    "legal_source": {
+      "name": "Department of Home Affairs, Republic of South Africa — Visa Exemption List",
+      "url": "https://www.dha.gov.za/index.php/immigration-services/exempt-countries"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "RW",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months",
+      "Visa on arrival fee (up to USD 50 for a single-entry visa)",
+      "Return/onward travel ticket",
+      "Can alternatively be applied for in advance via the Irembo government portal or a Rwandan diplomatic mission"
+    ],
+    "notes": "Rwanda grants visa on arrival to citizens of all nationalities that are not already visa-exempt. India is not on Rwanda's visa-free country list (which covers AU/Commonwealth/La Francophonie members, EAC members, and a short list of specific countries), so Indian nationals use the general visa-on-arrival route.",
+    "legal_source": {
+      "name": "Rwanda Directorate General of Immigration and Emigration – Visa on Arrival",
+      "url": "https://migration.gov.rw/visa-on-arrival"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "SA",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months",
+      "Visa application submitted through a Saudi embassy/consulate or authorized visa service (India is not eligible for the tourist eVisa)",
+      "Passport-size photo",
+      "Proof of accommodation and travel itinerary"
+    ],
+    "notes": "The official Saudi eVisa portal lists eligible nationalities by region (e.g. USA, Canada, UK, most EU states, China, Japan, Malaysia, Singapore, Thailand, Turkey, etc.); India, along with the rest of South Asia, is not on this eligible-country list. Indian nationals must obtain a visa via the standard consular process rather than the instant eVisa.",
+    "legal_source": {
+      "name": "Saudi Arabia Official eVisa Portal (visa.visitsaudi.com) – Eligible Countries",
+      "url": "https://visa.visitsaudi.com"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "SG",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months",
+      "Completed Singapore entry visa application",
+      "Passport photo",
+      "Proof of accommodation, itinerary, and sufficient funds",
+      "Applied for via an ICA-appointed visa agent or the nearest Singapore Overseas Mission"
+    ],
+    "notes": "ICA explicitly lists India among the travel-document-issuing countries whose holders require a valid Singapore entry visa before travel. Possession of a visa does not guarantee entry; the immigration officer determines the actual permitted length of stay on arrival, so there is no fixed self-service stay length to quote.",
+    "legal_source": {
+      "name": "Immigration & Checkpoints Authority (ICA) Singapore – Visa Requirements",
+      "url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa_requirements"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "TR",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 60 days beyond the intended stay",
+      "For the conditional e-Visa route only: a valid Schengen member-state, USA, UK, or Ireland visa or residence permit",
+      "Online e-Visa application at evisa.gov.tr with online payment (if eligible)",
+      "Otherwise: regular visa application through a Turkish consulate"
+    ],
+    "notes": "Turkey's Ministry of Foreign Affairs states Indian ordinary/special/service passport holders require a visa to enter Turkey. An e-Visa (single-entry, 30-day stay, applied for online at evisa.gov.tr) is available, but ONLY to Indian nationals who additionally hold a valid Schengen, USA, UK, or Ireland visa or residence permit. Indian citizens without one of those visas must apply for a regular visa at a Turkish consulate, which has no fixed self-service stay length to quote.",
+    "legal_source": {
+      "name": "Republic of Türkiye Ministry of Foreign Affairs – Visa Information for Foreigners",
+      "url": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "US",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "DS-160 online nonimmigrant visa application",
+      "Visa interview appointment at a US Embassy/Consulate",
+      "Visa (MRV) fee payment",
+      "Supporting documents demonstrating purpose of trip and ties to India"
+    ],
+    "notes": "India is not one of the 42 countries in the U.S. Visa Waiver Program, per CBP. Indian citizens must obtain a B1 (business) or B2 (tourism) nonimmigrant visa in advance through a US Embassy/Consulate; the visa's validity period is separate from the length of stay, which a CBP officer sets at the port of entry – could not confirm the exact typical admission period against a primary source this session (travel.state.gov and ustraveldocs.com both blocked automated fetches).",
+    "legal_source": {
+      "name": "U.S. Customs and Border Protection – Visa Waiver Program",
+      "url": "https://www.cbp.gov/travel/international-visitors/visa-waiver-program"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "ZA",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Completed visitor's visa application",
+      "Passport-size photographs",
+      "Proof of accommodation, itinerary, and sufficient funds",
+      "Visa fee payment",
+      "Application submitted in advance via a South African mission or visa application centre"
+    ],
+    "notes": "South Africa's Department of Home Affairs visa-exempt-countries list shows India's row as: Diplomatic 90 days / Official 90 days / Service 90 days / Ordinary: No. Ordinary Indian passport holders are therefore NOT visa-exempt and must obtain a visa before travel. I could not confirm this session whether South Africa's e-Visa system or Trusted Tour Operator Scheme currently extends to Indian applicants – the DHA e-Visa and visitor's-visa detail pages returned 404s during this research session.",
+    "legal_source": {
+      "name": "South Africa Department of Home Affairs – Countries Exempt from South African Visas",
+      "url": "https://www.dha.gov.za/index.php/immigration-services/exempt-countries"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "JP",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid passport covering the intended stay",
+      "Completed Japan visa application form",
+      "Passport-sized photo",
+      "Proof of itinerary / flight and hotel bookings",
+      "Financial capacity documents (bank statements) or sponsor's guarantee letter",
+      "Visa fee",
+      "Application lodged in advance at a Japanese Embassy/Consulate-General or the Japan Visa Application Centre (VFS Global) in India"
+    ],
+    "notes": "India is not among the 74 countries/regions on Japan's MOFA reciprocal visa-exemption list (page current as of the Sept 1, 2025 update: Note additions through Montenegro/Peru/Paraguay), so ordinary Indian tourists must obtain a visa before travel. Japan runs several facilitation programs referenced in general reporting - e.g. simplified/multiple-entry visa issuance for Indian nationals with strong prior travel history (G7-country visits) or registered frequent-traveler IC-chip arrangements - but these ease the *visa-application* process for repeat/pre-vetted travelers; they are not a blanket visa waiver, and a standard first-time leisure tourist from India still must apply for and receive a visa before arrival. Direct access to mofa.go.jp returned HTTP 403 (Akamai bot protection) during this check; the page content above was confirmed via an August 31, 2026 Wayback Machine capture of the same official MOFA URL.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Japan - Exemption of Visa (Short-Term Stay)",
+      "url": "https://www.mofa.go.jp/j_info/visit/visa/short/novisa.html"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "KE",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Approved Kenya Electronic Travel Authorisation (eTA)",
+      "Passport valid for at least six months beyond planned arrival date, with at least one blank page",
+      "Passport-type photo or selfie",
+      "Confirmed accommodation booking and onward/return travel itinerary"
+    ],
+    "notes": "Ordinary Indian tourist-passport holders must obtain an eTA before travel; the only India-specific exemption stated on the official eTA site is for holders of Diplomatic, Official or Service passports of India, who may enter without an eTA for stays not exceeding 90 days - this does not apply to standard tourists. The eTA is valid for travel within 90 days of issuance; the actual length of stay is decided by the immigration officer at the point of entry.",
+    "legal_source": {
+      "name": "Directorate of Immigration Services - Kenya eTA: How to Apply / Eligibility",
+      "url": "https://www.etakenya.go.ke/form/apply/how-to-apply"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "KR",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Completed Korea visa application form",
+      "Passport photo",
+      "Supporting documents (invitation letter, proof of funds, itinerary, employment/business proof as applicable)",
+      "Visa fee",
+      "Application submitted via a Korean Visa Application Centre (VFS Global, New Delhi or Kolkata) or the Consulate-General with jurisdiction (Mumbai/Chennai)"
+    ],
+    "notes": "India is a visa-required nationality for South Korea; ordinary Indian passport holders are not eligible for K-ETA (the electronic travel authorization South Korea grants to many other nationalities) - only Indian diplomatic/official passport holders get a 90-day visa exemption. This was confirmed via the official Embassy of the Republic of Korea in India's Visa page, which describes mandatory advance visa applications processed through VFS Global centres. Direct verification of the live K-ETA eligible-country list on k-eta.go.kr was not possible during this check because that site requires proprietary Korean security software/JavaScript (TouchEn NX) that could not be rendered by an automated fetch.",
+    "legal_source": {
+      "name": "Embassy of the Republic of Korea in India - Consular & Visa Service (Visa)",
+      "url": "https://overseas.mofa.go.kr/in-en/wpge/m_2660/contents.do"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "MX",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid Indian passport",
+      "Completed Mexican visa application (e.g. visitante sin permiso para realizar actividades remuneradas / tourist)",
+      "OR a valid, unexpired visa or proof of permanent residency from the United States, Canada, Japan, the United Kingdom, or a Schengen country, which exempts the holder from applying for a separate Mexican visa",
+      "Proof of itinerary and financial solvency",
+      "Visa issued in advance by a Mexican Embassy/Consulate"
+    ],
+    "notes": "India is explicitly named on the INM/SRE's official list of 'Paises y regiones que requieren visa para viajar a Mexico' (countries whose nationals must obtain a visa to travel to Mexico as tourists) - confirmed by directly reading the published PDF. Separately, that same document states foreigners holding a valid US visa, or proof of permanent legal residency in the US, Canada, Japan, the UK, or the Schengen area, may travel to Mexico without a separate Mexican visa; this substitute-visa exemption is available to Indian nationals who hold one of those documents, but ordinary Indian passport holders without one must obtain a standard Mexican visa in advance from a consulate.",
+    "legal_source": {
+      "name": "Instituto Nacional de Migracion (INM) / Secretaria de Relaciones Exteriores - Paises y regiones que requieren visa para viajar a Mexico",
+      "url": "https://www.gob.mx/cms/uploads/attachment/file/67045/Paises_y_regiones_que_requieren_VISA_para_viajar_a_Mexico-Paises_y_regiones_que_no_requieren_VISA_para_viajar_a_Mexico.pdf"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "NG",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity",
+      "Passport-sized photograph",
+      "Proof of return ticket",
+      "Hotel reservation or host address in Nigeria",
+      "Bank statement (last 180 days) showing sufficient funds",
+      "Tourism Visa (F5A) application submitted online (e-Visa) or through a Nigerian Embassy/Consulate"
+    ],
+    "notes": "Nigeria's F5A Tourism visa is single-entry, valid for 90 days from issuance (the window in which the holder must enter), and permits a stay of up to 30 days; it is not extendable and does not permit employment. Indian nationals apply via Nigeria's e-Visa portal or an embassy/consulate in advance - Nigeria does not offer visa-free entry or visa-on-arrival to ordinary Indian tourist-passport holders (this matches the site's existing treatment of other non-ECOWAS nationalities for Nigeria).",
+    "legal_source": {
+      "name": "Nigeria Immigration Service - Tourism Visa (F5A)",
+      "url": "https://immigration.gov.ng/info-center/tourism-visa-f5a/"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "NZ",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid Indian passport",
+      "Completed New Zealand Visitor Visa application (via Immigration New Zealand, online or paper)",
+      "Passport photo",
+      "Proof of sufficient funds",
+      "Proof of onward/return travel",
+      "Health and character requirements as applicable (e.g. chest X-ray for longer stays)"
+    ],
+    "notes": "India is not among the roughly 60 nationalities on Immigration New Zealand's visa waiver list (which covers most of Europe, Australia, Canada, the US, Japan, and several Gulf states); confirmed directly against the official visa-waiver-countries page, which does not list India. Indian citizens must apply for and obtain a Visitor Visa in advance rather than travel on an NZeTA.",
+    "legal_source": {
+      "name": "Immigration New Zealand - Visa waiver countries and territories",
+      "url": "https://www.immigration.govt.nz/visit/what-you-need-to-visit-new-zealand/visa-waiver-countries-and-territories/"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IN",
+    "destination": "PH",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 14
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months beyond the contemplated stay",
+      "Confirmed hotel accommodation/booking",
+      "Proof of financial capacity",
+      "Return or onward ticket to the next country of destination"
+    ],
+    "notes": "Effective 8 June 2025, Indian nationals may enter the Philippines without a visa for a non-extendible, non-convertible 14-day stay for tourism/business, per the Philippine e-Visa Portal's official policy page (quoted directly during this check). Separately, Indian nationals holding a valid and current American, Japanese, Australian, Canadian, Schengen, Singapore, or UK (\"AJACSSUK\") visa or residence permit may enter visa-free for a non-extendible 30 days. Longer stays require an appropriate visa obtained in advance from a Philippine Embassy/Consulate. This is a standing but discretionary government policy (not a permanent bilateral visa-waiver treaty) with no stated expiry, so it should be periodically re-checked.",
+    "legal_source": {
+      "name": "Philippine e-Visa Portal - Visa Policy (Non-Immigrant Visas)",
+      "url": "https://evisa.gov.ph/page/policy"
+    },
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
   }
 ]
