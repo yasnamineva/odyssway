@@ -77,6 +77,24 @@ describe("resolveTripCheck", () => {
     expect(result.items.every((i) => i.match === null)).toBe(true);
   });
 
+  it("catches a common typo of a real controlled-substance item", () => {
+    // Japan's stimulant-medication row explicitly covers Adderall/amphetamine.
+    const result = resolveTripCheck("US", "JP", ["adderoll"]);
+    expect(result.items[0]!.match?.slug).toBe("stimulant-medication-jp");
+  });
+
+  it("resolves a known slang/abbreviation to its canonical item", () => {
+    const result = resolveTripCheck("US", "JP", ["addy"]);
+    expect(result.items[0]!.match?.slug).toBe("stimulant-medication-jp");
+  });
+
+  it("does not fuzzy-match a short query into an unrelated item", () => {
+    // "cash" is one edit from "hash"-type slang, but must never cross into
+    // an unrelated category just because they're similarly spelled.
+    const result = resolveTripCheck("US", "CA", ["cash"]);
+    expect(result.items[0]!.match?.category).toBe("cash");
+  });
+
   it("ignores blank item queries", () => {
     const result = resolveTripCheck("US", "US", ["  ", "", "wine"]);
     expect(result.items).toHaveLength(1);

@@ -12,6 +12,7 @@ import {
   entryRequirements,
   queuedDestinations,
 } from "./destinations";
+import { expandQuery, isFuzzyMatch } from "./fuzzy-match";
 import { nationalityBySlug } from "./nationalities";
 
 /** Sentinel destination value for "the Schengen Area as a whole" in the trip-check picker. */
@@ -187,26 +188,44 @@ export function resolveMapDestinationCode(destination: string): string {
   return dest === SCHENGEN_DESTINATION ? SCHENGEN_REPRESENTATIVE_CODE : dest;
 }
 
-/** Case-insensitive match against an item's slug or its synonym list. */
+/**
+ * Case-insensitive match against an item's slug or its synonym list — tried
+ * in three passes, cheapest/most-precise first: exact, then substring, then
+ * (as a last resort) typo/abbreviation-tolerant fuzzy matching. Each pass
+ * runs across every query variant (the raw text plus any known alias) before
+ * falling through to the next, so an exact alias hit always beats a fuzzy
+ * guess on the raw text.
+ */
 function matchItem(query: string, destinationCode: string): CustomsItemRecord | null {
-  const q = query.trim().toLowerCase();
-  if (!q) return null;
-  return (
-    customsItems.find(
-      (item) =>
-        item.destination === destinationCode &&
-        item.status === "verified" &&
-        (item.slug.replace(/-/g, " ") === q || item.names.some((n) => n.toLowerCase() === q)),
-    ) ??
-    customsItems.find(
-      (item) =>
-        item.destination === destinationCode &&
-        item.status === "verified" &&
-        (item.slug.includes(q.replace(/\s+/g, "-")) ||
-          item.names.some((n) => n.toLowerCase().includes(q) || q.includes(n.toLowerCase()))),
-    ) ??
-    null
+  const variants = expandQuery(query).filter(Boolean);
+  if (variants.length === 0) return null;
+
+  const candidates = customsItems.filter(
+    (item) => item.destination === destinationCode && item.status === "verified",
   );
+
+  for (const q of variants) {
+    const exact = candidates.find(
+      (item) => item.slug.replace(/-/g, " ") === q || item.names.some((n) => n.toLowerCase() === q),
+    );
+    if (exact) return exact;
+  }
+
+  for (const q of variants) {
+    const substring = candidates.find(
+      (item) =>
+        item.slug.includes(q.replace(/\s+/g, "-")) ||
+        item.names.some((n) => n.toLowerCase().includes(q) || q.includes(n.toLowerCase())),
+    );
+    if (substring) return substring;
+  }
+
+  for (const q of variants) {
+    const fuzzy = candidates.find((item) => item.names.some((n) => isFuzzyMatch(q, n)));
+    if (fuzzy) return fuzzy;
+  }
+
+  return null;
 }
 
 export function resolveTripCheck(

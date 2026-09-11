@@ -34,9 +34,9 @@ export default async function HomePage() {
   const example = resolveTripCheck("US", "GB", ["alcohol"]);
 
   return (
-    <div className="space-y-16">
+    <div className="space-y-10">
       <section className="relative -mt-8">
-        <div className="relative left-1/2 h-[540px] w-screen -translate-x-1/2 overflow-hidden sm:h-[600px] lg:h-[660px]">
+        <div className="relative left-1/2 h-[380px] w-screen -translate-x-1/2 overflow-hidden sm:h-[400px] lg:h-[440px]">
           <Image
             src={heroImage}
             alt=""
@@ -47,17 +47,17 @@ export default async function HomePage() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/95 via-slate-900/45 to-slate-900/10" />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/70 via-slate-900/15 to-transparent" />
-          <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-center px-4 pb-24">
+          <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-center px-4 pb-12">
             <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-white/90 px-3 py-1 text-[11px] font-semibold tracking-wide text-slate-900 uppercase shadow-sm backdrop-blur">
               {t("home.hero.eyebrow")}
             </span>
-            <h1 className="mt-4 max-w-xl font-display text-4xl font-bold tracking-tight text-white lg:text-6xl">
+            <h1 className="mt-3 max-w-xl font-display text-3xl font-bold tracking-tight text-white lg:text-5xl">
               {t("home.hero.h1")}
             </h1>
-            <p className="mt-4 max-w-lg text-sm leading-relaxed text-white/85 lg:text-base">
+            <p className="mt-3 max-w-lg text-sm leading-relaxed text-white/85 lg:text-base">
               {t("home.hero.sub")}
             </p>
-            <div className="mt-7 flex flex-wrap gap-3">
+            <div className="mt-5 flex flex-wrap gap-3">
               <a
                 href="/trip-check"
                 className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-lg transition hover:scale-[1.03] hover:bg-white/90"
@@ -74,8 +74,8 @@ export default async function HomePage() {
           </div>
         </div>
 
-        <div className="relative z-20 mx-auto -mt-16 max-w-3xl px-4 sm:-mt-20">
-          <div className="rounded-2xl border border-slate-200 bg-white/95 p-5 shadow-2xl backdrop-blur sm:p-7">
+        <div className="relative z-20 mx-auto -mt-10 max-w-3xl px-4 sm:-mt-12">
+          <div className="rounded-2xl border border-slate-200 bg-white/95 p-4 shadow-2xl backdrop-blur sm:p-5">
             <HeroQuickCheck />
           </div>
         </div>

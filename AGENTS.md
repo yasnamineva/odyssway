@@ -25,6 +25,19 @@ The flagship flow (`/`, §7) resolves, per destination:
    medication, CBD/cannabis, food of animal/plant origin, e-cigarettes, weapons,
    drones) for the specific destination, not just the EU.
 
+**Long-term direction, not current scope**: the same thesis extends naturally to
+*residence* compliance once someone actually lives abroad — permit status, renewal
+dates, absence tracking, PR/citizenship clocks. This is a real, honest future
+direction, and it is **explicitly not current scope**. Building it now would be a
+mistake: it needs an entire product surface that doesn't exist yet (accounts,
+persistent per-user legal-status data — not just the Supabase-for-saved-trips
+already planned in §4/§5.8), and the legal stakes of a wrong *residence*-status
+answer (a broken PR clock, a lapsed permit) are categorically higher than a wrong
+*trip*-level answer (a fine, a confiscated item, a missed flight). See §2 for the
+explicit non-goal and §14 for the full reasoning. Do not start residence-compliance
+work off this paragraph alone — like Phase 2 accounts (§12), it needs its own
+explicit go-ahead.
+
 This combines what used to be five separate mid-funnel products into one flow, built
 on top of:
 
@@ -88,7 +101,27 @@ on top of:
   source to check yourself" state. This replaces the old blanket "no visa database" /
   "no can-I-bring beyond the EU" non-goals (2026-07 scope) now that general coverage
   is the point — the constraint moved from *scope* to *honesty about scope*.
-- No US TSA / carry-on security content (owned by tsa.gov; different problem).
+- No US TSA / carry-on security content (owned by tsa.gov; different problem — and
+  distinct from customs/import law, which is what `customs-items.json` answers.
+  Airport-security "what can I carry on the plane" and destination-customs "what can
+  I import" are two different regulatory domains with two different authorities;
+  don't blend them into one item result, even when a user's search phrasing sounds
+  the same for both).
+- No generic "where should I move" / personalized immigration-route recommender.
+  This category (VisaGuide, Visa Atlas-class competitors) is already well-served by
+  funded competitors publishing 1,000+ routes across 200+ destinations by their own
+  account — we cannot out-cover them, and trying would repeat the mistake the 2026-08
+  rearchitecture (§1) already moved us away from once (competing on breadth we can't
+  sustain). If what a user actually wants is "find me a country to move to," that's
+  not this product.
+- No residence-status tracking (permit renewal, PR/citizenship clocks, "am I still
+  compliant" for someone already living abroad) as **current** scope — see §1's
+  long-term-direction note and §14. A plausible future direction, gated behind real
+  demand signal and a much higher accuracy/legal-risk bar than trip-level compliance;
+  not something to build opportunistically off a feature request.
+- No large consumer subscription commitment before a lightweight paid feature has
+  actually shown people will pay for persistent state (§9) — don't build subscription
+  billing infrastructure on the assumption that it will work.
 - No legal-advice chatbot. Tools compute; content explains; we never advise on
   individual immigration cases.
 - No scraping of competitor sites' content.
@@ -311,6 +344,13 @@ customs rules (the same allowances apply across every Schengen member).
   legal_source, verified_at, verified_by, status
 }
 ```
+**Possible future refinement, not a current requirement**: a more granular verdict
+model (e.g. splitting `depends` into `permit_required` vs.
+`unsure_confirm_with_authority`) could make results more actionable at a glance. Do
+not migrate the schema speculatively — the `notes` field already carries this nuance
+in prose for every row researched so far, and a schema migration has a real cost
+(every existing row needs re-classifying). Only do it if a concrete case shows the
+current 5-value enum is actually blocking a real, specific answer.
 
 ---
 
@@ -465,6 +505,18 @@ Rules for programmatic pages (anti-thin-content):
 
 ## 9. Monetization hooks (build the slots, even before partnerships exist)
 
+**Principle: sell persistent state, not facts.** A single verified answer ("can I
+bring my Adderall to Japan") must stay free — that's the acquisition engine, and
+charging for a fact undermines the trust the whole product is built on (§3). What's
+plausibly worth paying for is *state that persists and accrues value over time*:
+saved trips, alerts before a limit is hit, a multi-trip travel-history export, a
+family/multi-traveler dashboard. If a "premium" feature is really just today's free
+answer with a paywall in front of it, that's the wrong feature to build.
+Pricing should be tested, not assumed — a small-consumer willingness-to-pay signal
+(a 2026 regional survey found some travelers would pay only ~€2 on average for
+extra travel-app features) is a real caution against anchoring on a high-priced
+subscription before real checkout/price experiments say otherwise.
+
 - Affiliate slot component `<PartnerOffer context="...">` with contexts:
   `travel_insurance` (highest intent: Schengen visa applicants MUST have insurance),
   `esim`, `visa_service` (for visa-required nationalities on /etias and nationality
@@ -474,6 +526,18 @@ Rules for programmatic pages (anti-thin-content):
   multi-jurisdiction ledger. Free tier must remain genuinely useful (calculator
   never paywalled — it's the acquisition engine).
 - No display-ad networks in v1 (they wreck trust and Core Web Vitals).
+- **B2B is a later-phase option, not a near-term plan.** The strongest version of
+  the pitch isn't "sell data access" in the abstract, it's **"reduce expensive human
+  research"** for organizations that already pay staff or consultants to answer
+  exactly these item-level compliance questions for travelers — corporate travel
+  managers, relocation firms, immigration lawyers, HR/global-mobility teams, travel
+  agencies, and (specifically relevant if medication/controlled-substance depth is
+  the proven vertical, §14) universities and medical-travel organizations handling
+  travelers who carry prescribed controlled medication across borders. Don't build
+  API infrastructure speculatively — validate with a handful of real
+  conversations/pilots first, after the consumer product and data corpus have
+  already proven reliable. Building this first would be backwards: the data corpus
+  is the product being sold, and it doesn't exist at B2B quality yet.
 
 ---
 
@@ -526,6 +590,25 @@ Rules for programmatic pages (anti-thin-content):
 ---
 
 ## 12. Build phases and acceptance criteria
+
+**Validation discipline**: a phase earns its follow-up; it isn't scheduled in
+advance. Before investing heavily in the *next* phase, look for real signal from the
+current one — repeat visits, use of more than one tool in a session, saved-trip
+adoption, willingness to pay for a lightweight paid feature — rather than proceeding
+on a fixed roadmap because it was written down once. This applies especially before
+Phase 2's accounts/alerts work and long before any residence-compliance work (§1,
+§2, §14, and the deferred-hypothesis note at the end of this section) — those need
+their own explicit go-ahead, not just "the roadmap says so."
+
+The item-depth wedge (§14) specifically needs to answer a commercial question, not
+just an editorial one — don't assume a deeply-researched Japan/medication row is
+better just because it feels more rigorous. **Prove it**: will a traveler with a
+real "can I bring my prescribed ADHD medication into Japan" question actually choose
+Odyssway's answer over Google, Reddit, the official government page, a shallow
+breadth-first competitor, or a generic AI answer? That's measurable (organic
+rankings for specific long-tail item+destination queries, time-on-page vs. bounce,
+repeat visits for a second item/trip) and is the real test of whether depth beats
+breadth here — not an assumption to build the rest of the strategy on.
 
 **Phase 0 — Foundation (do first)**
 - Monorepo scaffold, CI (typecheck, tests, data validation), deploy pipeline.
@@ -613,14 +696,19 @@ Rules for programmatic pages (anti-thin-content):
 - `/bring/[item]` standalone landing pages (top 25 items across launch
   destinations), overstay-penalties pages, bilateral-agreements pages (verified
   rows only), Pro gating + Stripe, locales (bg, tr, sr) with hreflang. Continue
-  expanding `entry-requirements.json`/`customs-items.json` destination coverage
-  beyond the current 16-destination set (§12 Phase 1.5) — Brazil is next, already
-  queued in `data/UNVERIFIED/destinations.json`; after that, prioritize by
-  traffic/tourism volume and by source-reachability signal from prior research
-  passes (see `data/UNVERIFIED/TODO.md`'s per-destination "source-quality note"
-  entries — e.g. Rwanda and South Africa were unusually clean, several
-  government sites need a Wayback-Machine-plus-live-cross-check workaround for
-  Cloudflare/Akamai-blocked pages).
+  expanding `entry-requirements.json`/`customs-items.json` destination coverage —
+  grown since Phase 1.5's original 16 to **25 destinations** and, as of 2026-09,
+  **17 nationalities** (added China and India, the first two Annex-I/Schengen-visa-
+  required nationalities alongside the original 15 Annex-II/visa-exempt ones).
+  Current active focus (2026-09-11): item-level depth within already-covered
+  destinations, not just new destinations — specifically niche/controlled
+  medication (see §14's wedge note) and typo/abbreviation-tolerant item search
+  (`apps/web/lib/fuzzy-match.ts`). Next destinations, when resumed, should be
+  prioritized by traffic/tourism volume and by source-reachability signal from
+  prior research passes (see `data/UNVERIFIED/TODO.md`'s per-destination
+  "source-quality note" entries — e.g. Rwanda and South Africa were unusually
+  clean, several government sites need a Wayback-Machine-plus-live-cross-check
+  workaround for Cloudflare/Akamai-blocked pages).
 - **Embeddable calculator** (iframe or script embed) that travel blogs and
   expat sites can install, with a "powered by" backlink; embed instructions at
   `/widget` (§7). *Rationale: reduces dependence on organic search rankings by
@@ -631,6 +719,18 @@ Rules for programmatic pages (anti-thin-content):
 
 Work order within any phase: data schema → data (verified or UNVERIFIED) →
 engine/logic → tests → UI → content → SEO wiring.
+
+**Deferred strategic hypothesis, deliberately not a numbered phase:** residence
+compliance — permit status, renewal dates, absence tracking, PR/citizenship clocks —
+is a plausible long-term direction, but it isn't scheduled, gated, or implied by
+anything above. Deliberately kept out of the numbered phase list, since even a
+gated, unscheduled phase number quietly acquires "we'll definitely build this
+eventually" status on a roadmap. It would require its own product (accounts,
+persistent per-user legal-status data — a new privacy/GDPR surface beyond §10) and a
+materially higher accuracy bar than trip-level compliance, since a wrong answer
+there can cost someone their legal status, not just a fine. If it's ever pursued, it
+starts from demonstrated demand and a real legal-data-maintenance plan, not from
+this paragraph. See §1 and §14 for the full reasoning.
 
 ---
 
@@ -695,3 +795,59 @@ The durable moats, in priority order:
 
 Features can be cloned in a weekend; a continuously verified, publicly
 auditable legal data corpus cannot.
+
+### Where the near-term wedge actually is
+
+**We cannot out-research funded competitors claiming 190+ countries or 1,400+
+routes of generic immigration-route/relocation data, and trying to would be a
+losing move, not an ambitious one.** Every research pass this project has actually
+run has taken real hours and hit real usage limits to cover a double-digit number of
+destinations *correctly* — that rate does not scale to "everywhere," and pretending
+otherwise is exactly the mistake §2/§14 already warn against. When sizing up a
+competitor, treat their own self-reported coverage numbers or "structured,
+source-backed, deterministic" methodology claims as a directional signal — assume
+competent competitors exist — not as confirmed fact; we haven't independently
+verified their data quality, and the same standard §3 holds our own data to applies
+to how we read theirs.
+
+A **Personal Compliance Ledger** — residence-permit tracking, absence-day counting,
+PR/citizenship clocks — is not the next priority. It's a categorically bigger and
+legally riskier product than anything built so far (§1, §2, and the
+deferred-hypothesis note at the end of §12): it needs infrastructure that doesn't
+exist (accounts, persistent per-user legal-status data) and a much higher accuracy
+bar, since a wrong answer there can cost someone their legal status rather than a
+fine.
+
+The niche that has actually proven itself is narrower, already underway, and doesn't
+need any new infrastructure: **item-level customs depth for high-stakes, high-search
+categories, with prescription/controlled medication as the strongest current
+hypothesis** — not the whole thesis. Don't let "medication" quietly become the
+entire strategy; it's the first vertical to test, not the only one worth testing.
+Candidate verticals share the same underlying product problem ("I have this specific
+object — what exactly happens if I cross this border with it?") but have genuinely
+different legal structures, so depth in one doesn't transfer to the others for
+free: medication/controlled substances (in progress), CBD/cannabis, food (animal,
+plant, homemade), cash/bearer instruments, medical devices (syringes, CPAP/oxygen
+equipment), vapes/nicotine, weapons, drones. **Test them roughly one at a time, not
+all at once** — build a vertical to real depth, then use the validation test in §12
+(does a real high-stakes searcher actually choose our answer over Google/Reddit/an
+official page/a shallow competitor/a generic AI answer?) before committing more
+research hours to the next one. Medication happens to be first because the work was
+already underway (`stimulant-medication-jp`, `controlled-medication-th` in
+`data/customs-items.json`, `apps/web/lib/fuzzy-match.ts`) — not because it's been
+proven to be the strongest vertical yet.
+
+Precisely what the asset is, worth stating carefully: it is **not** "we verify
+facts" — verification discipline (§3) is a process, and a well-resourced competitor
+could adopt the same process. It's a **prerequisite** for the moat, not the moat
+itself. The actual asset is the *accumulated output* of that process sustained over
+time in a narrow set of high-stakes questions: thousands of specific, cited,
+exception-aware, maintained rule-rows, plus their revision history. A competitor
+could copy the method in a weekend; reproducing the accumulated, maintained corpus
+takes as long to copy as it took to build, and by then the corpus has kept growing.
+That's a **compounding asset**, not a non-cloneable one — a meaningfully more honest
+claim, and the right one to hold this document to.
+
+This is where to point the next batch of research hours, not a pivot away from the
+flagship trip-check flow (§1) — it's the answer to "what do we verify next," not a
+change to what the product is.

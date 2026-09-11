@@ -31,9 +31,9 @@ export default function HeroQuickCheck() {
         router.push(`/trip-check?${params.toString()}`);
       }}
     >
-      <p className="text-xs font-semibold tracking-wide text-blue-700 uppercase">{th("eyebrow")}</p>
-      <h2 className="mt-1 font-display text-lg font-bold text-slate-900">{th("heading")}</h2>
-      <div className="mt-4 grid gap-3 sm:grid-cols-[1fr_1fr_auto] sm:items-end">
+      <p className="text-[11px] font-semibold tracking-wide text-blue-700 uppercase">{th("eyebrow")}</p>
+      <h2 className="mt-0.5 font-display text-base font-bold text-slate-900">{th("heading")}</h2>
+      <div className="mt-3 grid gap-3 sm:grid-cols-[1fr_1fr_auto] sm:items-end">
         <div>
           <label className="block text-xs font-medium text-slate-500" htmlFor="hero-nationality">
             {t("fromLabel")}

@@ -2,10 +2,10 @@
 
 import { useTranslations } from "next-intl";
 import dynamic from "next/dynamic";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { schengenCountries } from "../lib/countries";
 import { destinationLabelFor } from "../lib/destination-label";
-import { destinations, queuedDestinations } from "../lib/destinations";
+import { EU_CUSTOMS_CODE, destinations, queuedDestinations } from "../lib/destinations";
 import { publishedNationalities } from "../lib/nationalities";
 import SearchableSelect from "./SearchableSelect";
 import {
@@ -54,6 +54,24 @@ export default function TripCheck({
     if (!submitted || !nationality || !destination) return null;
     return resolveTripCheck(nationality, destination, items);
   }, [submitted, nationality, destination, items]);
+
+  // Best-effort, fire-and-forget: report items nobody's verified yet so real
+  // search demand — not guesswork — drives which niche items get researched
+  // next. Never blocks or affects the result shown to this user.
+  useEffect(() => {
+    if (!result || !result.covered) return;
+    const misses = result.items.filter((i) => i.match === null);
+    if (misses.length === 0) return;
+    const customsDestination = result.isSchengen ? EU_CUSTOMS_CODE : result.destination;
+    for (const miss of misses) {
+      fetch("/api/item-miss", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ query: miss.query, destination: customsDestination }),
+        keepalive: true,
+      }).catch(() => {});
+    }
+  }, [result]);
 
   const addItem = () => {
     const v = itemInput.trim();
