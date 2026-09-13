@@ -3969,5 +3969,924 @@
     "verified_at": "2026-09-02",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-eu",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "vyvanse",
+      "lisdexamfetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "tramadol",
+      "opioid painkiller"
+    ],
+    "destination": "EU",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Article 75 of the Convention Implementing the Schengen Agreement (CISA) lets travelers carry 'the narcotic drugs and psychotropic substances that are necessary for their medical treatment' if, at any check, they can produce a certificate issued or authenticated by a competent authority of their state of residence. Article 75 itself leaves the certificate's exact form and the details on permitted quantity and journey duration to the Schengen Executive Committee; in practice the resulting 'Schengen certificate' is understood to cover only the quantity needed for a journey of up to 30 days.",
+      "quantity": "up to a 30-day supply, evidenced by the Schengen certificate"
+    },
+    "notes": "This is a Schengen-wide legal basis (confirmed directly from Article 75's text), but the certificate itself is issued nationally — by a doctor, pharmacist, or health authority depending on the member state — before you travel; there is no single EU-wide online portal. Article 75 covers 'narcotic drugs and psychotropic substances' as legal classes rather than naming individual medicines, but these classes are the internationally scheduled categories (1961 and 1971 UN conventions) that cover common stimulants (Adderall/amphetamine, Vyvanse/lisdexamfetamine, Ritalin/methylphenidate), benzodiazepines (Xanax/alprazolam, Valium/diazepam, Klonopin/clonazepam), and opioid painkillers (codeine, oxycodone, tramadol). Some Schengen states still restrict or ban specific substances outright under their own national law regardless of the certificate — for example, the UK's own guidance (a non-Schengen state, cited here only as an illustration of the pattern) notes a Schengen certificate cannot be used to bring a Schedule 1 drug into Great Britain. Confirm with the specific member state's narcotics authority before traveling with an unusual medication.",
+    "legal_source": {
+      "name": "Convention Implementing the Schengen Agreement, Art. 75",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02)"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-ke",
+    "names": [
+      "controlled substance",
+      "narcotic medication"
+    ],
+    "destination": "KE",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Kenya Revenue Authority's traveler FAQ lists 'Narcotic drugs' among goods prohibited for import outright (citing the 2nd and 3rd Schedule of the East African Community Customs Management Act), while listing 'Medicaments' generally among restricted goods that may be imported once 'authorization by relevant Government Institutions' is obtained. The FAQ does not say which of these two rules governs a specific controlled prescription medicine (e.g. a stimulant, benzodiazepine, or opioid painkiller), does not name the authorizing institution for medicaments, and states no personal-use quantity or day-supply exception."
+    },
+    "notes": "This is a genuine, unresolved gap in KRA's public guidance, not a confirmed 'allowed' or 'banned' answer. Kenya's controlling law for scheduled drugs is the Narcotic Drugs and Psychotropic Substances (Control) Act, 1994, and the Pharmacy and Poisons Board is Kenya's medicines regulator, but no traveler-facing page from either body could be reached in this pass (pharmacyboardkenya.org returned an expired-certificate error; NACADA's site had no relevant guidance) to confirm whether a foreign prescription is sufficient or a specific permit is required. Anyone carrying an ADHD stimulant, benzodiazepine, or opioid painkiller should contact a Kenyan diplomatic mission or the Pharmacy and Poisons Board before travel rather than assume the ordinary prescription-medication allowance covers it.",
+    "legal_source": {
+      "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
+      "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-za",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication"
+    ],
+    "destination": "ZA",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "SARS's traveller guide lists 'Narcotics and habit-forming drugs' among prohibited goods that 'may not be imported' at all, while separately stating that 'Travellers may import their personal medicines provided it is for not more than three (3) months' use,' accompanied by a doctor's prescription, under its restricted-goods rule for 'Medicine.' The guide does not specify which rule governs a specific controlled prescription medicine — e.g. an ADHD stimulant, a benzodiazepine, or an opioid painkiller — so it cannot be confirmed from this source alone whether such medication is treated as an allowed personal medicine or a prohibited habit-forming drug."
+    },
+    "notes": "South Africa separately schedules narcotics/psychotropics under the Medicines and Related Substances Act (Schedules 5 and 6) and the Drugs and Drug Trafficking Act, administered by SAHPRA and SAPS respectively, but no SAHPRA or SAPS page addressing a traveler's personal-use import of scheduled substances could be reached in this pass — SAHPRA's public import-permit pages (importation-of-medical-products-border-control) describe commercial/institutional importation processes, not personal baggage. Given SARS's own guide leaves the 'habit-forming drug' vs 'personal medicine' classification unresolved for controlled prescription drugs, travelers carrying stimulants, benzodiazepines, or opioid painkillers should carry the original prescription plus a doctor's letter and confirm status with SAHPRA or a South African diplomatic mission before travel.",
+    "legal_source": {
+      "name": "SARS — SC-PA-01-03 Duty Free Allowances for Travellers (External Guide, Rev. 8, eff. 1 July 2026)",
+      "url": "https://www.sars.gov.za/wp-content/uploads/Docs/Customs/SC-PA-01-03-Duty-Free-Allowances-for-Travellers-External-Guide.pdf"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-mx",
+    "names": [
+      "controlled substance",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "vyvanse",
+      "lisdexamfetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam"
+    ],
+    "destination": "MX",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "ANAM's personal-baggage guidance states that for psychotropic substances ('Tratándose de sustancias psicotrópicas deberá mostrarse la receta médica correspondiente') the traveler must show the corresponding medical prescription — no separate advance import permit is described for personal-use quantities of psychotropics. Under Mexico's Ley General de Salud, 'sustancias psicotrópicas' is the class that covers common controlled stimulants (e.g. amphetamine/Adderall, methylphenidate/Ritalin, lisdexamfetamine/Vyvanse) and benzodiazepines (e.g. alprazolam/Xanax, diazepam/Valium, clonazepam/Klonopin), so a doctor's prescription for these should be sufficient for personal-use quantities at the border."
+    },
+    "notes": "ANAM's traveler-facing text names only 'sustancias psicotrópicas' (psychotropic substances) — it does not mention 'estupefacientes' (narcotic drugs), the separate Mexican legal category that covers opioid painkillers such as codeine, oxycodone, and tramadol. Whether the same simple prescription-only rule extends to opioid painkillers, or whether they instead require the more formal COFEPRIS sanitary import permit used for controlled narcotics (Permiso Sanitario COFEPRIS-03-023, aimed primarily at commercial/institutional importers), is not addressed by ANAM's page, so opioid painkillers are deliberately left out of this entry's name list. No numeric day-supply or unit-quantity cap is published for psychotropics either. Travelers carrying opioid painkillers should confirm with COFEPRIS (tel. 800 033 5050) or a Mexican consulate before travel.",
+    "legal_source": {
+      "name": "ANAM (Agencia Nacional de Aduanas de México) — Equipaje y franquicia",
+      "url": "https://www.anam.gob.mx/equipaje-y-franquicia/"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "injectable-medication-mx",
+    "names": [
+      "ozempic",
+      "wegovy",
+      "mounjaro",
+      "zepbound",
+      "semaglutide",
+      "tirzepatide",
+      "insulin",
+      "needles",
+      "syringes",
+      "injection pen",
+      "glp-1"
+    ],
+    "destination": "MX",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "ANAM's personal-baggage rule explicitly permits travelers to carry 'a device for measuring blood pressure and one for measuring glucose or a combined device, and their reagents, as well as medications for personal use' without describing this as needing a special permit. Insulin and GLP-1 medications (semaglutide/Ozempic/Wegovy, tirzepatide/Mounjaro/Zepbound) are not psychotropic substances, so ANAM's prescription-only requirement (which applies specifically to 'sustancias psicotrópicas') does not apply to them; they fall under this general personal-use medication allowance instead."
+    },
+    "notes": "ANAM's page does not separately name insulin or GLP-1 drugs, does not mention injector pens or needles/syringes as a distinct category, gives no numeric day-supply cap, and says nothing about refrigeration or cold-chain handling. The glucose-meter allowance strongly implies diabetes supplies are contemplated by this rule, but a sharps/needle-specific declaration requirement could not be confirmed. Carry the medication in original packaging with your prescription or a doctor's letter, and declare injector pens/needles if asked.",
+    "legal_source": {
+      "name": "ANAM (Agencia Nacional de Aduanas de México) — Equipaje y franquicia",
+      "url": "https://www.anam.gob.mx/equipaje-y-franquicia/"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-eg",
+    "names": [
+      "controlled substance",
+      "narcotic medication"
+    ],
+    "destination": "EG",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Egypt's Customs Authority names 'narcotics' as one example of goods generally prohibited for import/export ('البضائع الممنوعة ... مثل: مخدرات - آثار - أسلحة ...'), while separately stating that medications ('الأدوية') are allowed 'within the limits of personal use and supported by medical reports,' with anything beyond personal-use quantities requiring clearance from the Egyptian Drug Authority. The page's prohibited-goods example list does not distinguish illegal recreational narcotics from a foreign doctor-prescribed controlled medication, so which rule governs a specific controlled prescription drug is not resolved by this source."
+    },
+    "notes": "Egypt is widely reported (in travel-advisory and news coverage, not a primary legal source) to enforce unusually strict controlled-substance rules, with codeine, tramadol, and some other common prescription drugs reportedly leading to traveler detentions even with a foreign prescription — but this could not be confirmed against a primary Egyptian government source (e.g. a named controlled-substances schedule from the Egyptian Drug Authority or Ministry of Health) in this pass; the EDA's own site (edaegypt.gov.eg) had no traveler-facing guidance reachable. Treat the detention reports as an important caution rather than a verified fact, and do not assume a specific controlled medication is covered by the general 'medications for personal use' allowance. Anyone carrying an ADHD stimulant, benzodiazepine, or opioid painkiller should contact the Egyptian Drug Authority (hotline 15301) or an Egyptian consulate before travel.",
+    "legal_source": {
+      "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations",
+      "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-ae",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "vyvanse",
+      "lisdexamfetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "tramadol",
+      "opioid painkiller"
+    ],
+    "destination": "AE",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "All of the following are listed by name on the UAE's official controlled/semi-controlled medicines schedule and are allowed for personal use ONLY with supporting documents, up to a maximum 3-month supply: amphetamine (Adderall), lisdexamfetamine (Vyvanse), methylphenidate (Ritalin) — Psychotropic Schedule II; alprazolam (Xanax), diazepam (Valium), clonazepam (Klonopin) — Psychotropic Schedule IV / 'CD'; codeine, oxycodone — Narcotic Schedule I/II; tramadol — 'CD'. None of these is flatly prohibited. Travelers must carry BOTH a dated, stamped prescription (issued within 3 months) AND an attested medical report (issued within 1 year) naming the medicine, dose, and treatment duration.",
+      "quantity": "up to a 3-month supply (or the length of stay, whichever is less)"
+    },
+    "notes": "The Emirates Drug Establishment (EDE) — which took over the Ministry of Health and Prevention's (MOHAP) controlled-medicines functions on 29 Dec 2025 under Federal Decree-Law No. 38 of 2024 — offers an optional electronic pre-approval permit before travel; it is NOT strictly mandatory, and travelers may instead simply declare the medicine with prescription + medical report at the port of entry. In practice, undeclared or undocumented controlled medication is what has led to detentions at UAE airports historically, even for drugs that are technically allowed with paperwork — this row corrects the common assumption (from older secondary press reporting) that these drugs are outright banned; per EDE's own current list they are not, but the documentation bar (prescription AND medical report, not just prescription alone) is stricter than most countries. This list is dated 15/09/2022 by EDE/MOHAP but remains the current published schedule as of Sept 2026; it explicitly states non-inclusion of a substance doesn't mean it's uncontrolled, so travelers with any other controlled medication should verify against EDE directly. MOHAP's own domain (mohap.gov.ae) was unreachable during this research (connection resets), so EDE.gov.ae — confirmed as the current regulator via the Federal Decree-Law — was used instead.",
+    "legal_source": {
+      "name": "Emirates Drug Establishment (EDE) — Issue of Permit to Import Medicines for Personal Use / Controlled and Semi-Controlled Medicines List",
+      "url": "https://www.ede.gov.ae/en/w/issue-of-permit-to-import-medicines-for-personal-use"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "medication-br",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "otc medicine"
+    ],
+    "destination": "BR",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "The quantity of medicines (including biologics) carried in accompanied baggage must be compatible with personal use/consumption and with the circumstances and length of the trip — there is no fixed numeric day-supply cap. A medical prescription signed by a qualified professional may be requested by the health authority at the port of entry if the quantity does not look consistent with your stay or suggests commercial resale."
+    },
+    "notes": "This is Brazil's general 'accompanied baggage' rule and applies to ordinary prescription and OTC medicines, biologics, and medical products alike. Narcotic and psychotropic ('controlled') medicines are governed by a separate, much stricter ANVISA import regime — see the dedicated 'controlled medication' entry for this destination.",
+    "legal_source": {
+      "name": "ANVISA (Agência Nacional de Vigilância Sanitária) — Regras de bagagem (Portos, aeroportos e fronteiras)",
+      "url": "https://www.gov.br/anvisa/pt-br/assuntos/paf/regras-de-bagagem"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-br",
+    "names": [
+      "narcotics",
+      "psychotropic medication",
+      "controlled substance",
+      "adderall",
+      "amphetamine",
+      "vyvanse",
+      "lisdexamfetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "opioid painkiller",
+      "codeine",
+      "oxycodone",
+      "tramadol"
+    ],
+    "destination": "BR",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Whether a controlled medicine can be imported depends on which of ANVISA's schedules (Lists A1, A2, A3, B1, B2, C1–C5, set by Portaria SVS/MS n° 344/1998) its active substance is on. Medicines on List C1 may be brought in with only a valid medical prescription shown to the sanitary authority at the port of entry — no advance ANVISA authorization is needed, provided no similar product is registered/sold in Brazil (commercial sale of the imported product is prohibited; personal use only). Medicines on Lists A1, A2, A3, B1, B2, C2 and C5 cannot be imported by a traveler at all without ANVISA's advance, case-by-case 'exceptional use' authorization: the patient/legal guardian must petition before travel through ANVISA's SEI electronic system with a signed prescription (patient name, commercial drug name, dosage, quantity, treatment duration, doctor's signature/CRM), a medical report (diagnosis/CID, case history, justification vs. Brazilian-registered alternatives), and a signed liability statement. Approval is not guaranteed and, once granted, must be presented at the ANVISA airport post to release the medicine."
+    },
+    "notes": "Substances on List C3 (teratogenic/immunosuppressant, e.g. thalidomide, lenalidomide, pomalidomide) are excluded even from the exceptional-use pathway. Substances on Lists E and F are proscribed outright — import, export, trade and use are illegal for any purpose other than authorized research. This pass verified the mechanism directly from ANVISA's official 'Importação de produtos controlados' page, but did not cross-check the live substance-by-substance annex (Portaria 344/1998, Anexo I, which is amended periodically by separate RDCs) to confirm exactly which list captures each named drug — e.g. whether Adderall/amphetamine, Xanax/alprazolam, Valium/diazepam, Klonopin/clonazepam, codeine, oxycodone or tramadol individually sit on C1 versus one of the prohibited-without-authorization lists. Confirm your specific medicine's list before travel via ANVISA's published substance list or its helpline (0800 642 9782).",
+    "legal_source": {
+      "name": "ANVISA — Importação de produtos controlados (Medicamentos)",
+      "url": "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/controlados/importacao"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "injectable-medication-br",
+    "names": [
+      "insulin",
+      "ozempic",
+      "semaglutide",
+      "wegovy",
+      "mounjaro",
+      "tirzepatide",
+      "zepbound",
+      "glp-1",
+      "needles",
+      "syringes",
+      "pen injector"
+    ],
+    "destination": "BR",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Insulin and GLP-1 injectable medicines (semaglutide/Ozempic/Wegovy, tirzepatide/Mounjaro/Zepbound) fall under 'medicamentos, incluindo os biológicos' in ANVISA's baggage rules: the personal-use quantity must be compatible with your treatment and length of stay in Brazil, with no fixed numeric day-supply cap published. A medical prescription may be requested if the quantity looks excessive for the trip. Needles, syringes and pen injectors are 'produtos médicos' (medical products) under the same personal-use rule."
+    },
+    "notes": "None of these substances are narcotics or psychotropics under Portaria 344/1998, so the stricter ANVISA controlled-substances import regime (see the 'controlled medication' entry for Brazil) does not apply to them. ANVISA's baggage-rules page does not name insulin, semaglutide, tirzepatide, or needles specifically — it addresses them only through the general 'biológicos'/'produtos médicos' categories — so no drug-specific guidance (e.g. sharps handling, a syringe-count cap) was found on a primary source in this pass.",
+    "legal_source": {
+      "name": "ANVISA (Agência Nacional de Vigilância Sanitária) — Regras de bagagem (Portos, aeroportos e fronteiras)",
+      "url": "https://www.gov.br/anvisa/pt-br/assuntos/paf/regras-de-bagagem"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "medication-sg",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "otc medicine"
+    ],
+    "destination": "SG",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Up to 3 months' supply for your own or an immediate family member's use, provided the medicine is lawfully prescribed to you in your country of residence, does not contain a controlled substance (see the 'controlled medication' entry) or a prohibited substance, and is not in chewing-gum form. You must carry a copy of the valid prescription/doctor's letter, and each medicine must be in its original container/packaging, labelled by the dispensing pharmacy with patient name, medication name and quantity. Imports exceeding 3 months' supply are not allowed under any circumstances.",
+      "quantity": "3-month supply"
+    },
+    "notes": "Travelers who are only transiting through Singapore without clearing immigration (staying within the airside transit zone) do not need HSA approval for personal medications, but prohibited medications are still barred even in transit. Importing medication for someone other than yourself or an immediate family member is not allowed and can lead to confiscation or enforcement action.",
+    "legal_source": {
+      "name": "Health Sciences Authority (HSA) — Travelling with medications to Singapore",
+      "url": "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-medications/"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-sg",
+    "names": [
+      "narcotics",
+      "psychotropic medication",
+      "controlled substance",
+      "adderall",
+      "amphetamine",
+      "vyvanse",
+      "lisdexamfetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "opioid painkiller",
+      "codeine",
+      "oxycodone"
+    ],
+    "destination": "SG",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Medicines containing a substance listed in Appendix A of HSA's 'Document guide for bringing in personal medications' — drawn from the Second and Third Schedules to the Misuse of Drugs Regulations, the First Schedule to the Health Products (Therapeutic Products) Regulations 2016, and other medications of concern — cannot be brought in under the ordinary 3-month traveller allowance. You must submit an online application for HSA approval at least 2 weeks before arrival, in English, attaching medical documentation (pharmacy dispensing label, doctor's prescription, or doctor's letter with patient/prescriber details, medication composition, dose, frequency and total quantity) plus photographs of the product showing its name, active ingredient(s), strength, directions for use, dosage form and dispensed quantity. Approved medications do not need to be declared at customs, but the approval email and supporting documents must be kept available for inspection by ICA officers on request."
+    },
+    "notes": "Appendix A (edition dated 17 Mar 2026, fetched directly from HSA) explicitly names, among hundreds of substances: Alprazolam, Amphetamine (Amfetamine), Dexamphetamine, Lisdexamphetamine (Vyvanse), Methylphenidate, Dexmethylphenidate, Diazepam, Clonazepam, Codeine, and Oxycodone — so a traveler carrying medicine containing any of these needs HSA approval in advance. Tramadol was checked against the same list and was NOT found on it, so ordinary medicine (not the controlled-substances process) rules appear to apply to it — but confirm against the live Appendix A before travel, since HSA updates it periodically. Cannabis, cannabis extracts, THC, CBD and related cannabinoids are separately and absolutely prohibited under the Fourth Schedule to the Misuse of Drugs Regulations regardless of prescription or approval — Singapore enforces the Misuse of Drugs Act with severe penalties.",
+    "legal_source": {
+      "name": "Health Sciences Authority (HSA) — Document guide for bringing in personal medications (Appendix A: List of controlled substances)",
+      "url": "https://file.go.gov.sg/document-guide-for-bringing-in-personal-medications.pdf"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "injectable-medication-sg",
+    "names": [
+      "insulin",
+      "ozempic",
+      "semaglutide",
+      "wegovy",
+      "mounjaro",
+      "tirzepatide",
+      "zepbound",
+      "glp-1",
+      "needles",
+      "syringes",
+      "pen injector"
+    ],
+    "destination": "SG",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Insulin and GLP-1 medicines (semaglutide, tirzepatide) are not on HSA's Appendix A controlled-substances list, so the drug itself falls under the ordinary personal-medication rule: up to 3 months' supply with a prescription/doctor's letter and original labelled packaging. Separately, delivery hardware — pen injectors, needles and syringes that are not already in use on your body on arrival — may fall under HSA's personal-import-of-medical-devices scheme, which requires its own advance approval (apply at least 10 working days ahead, via a doctor's/dentist's letter confirming and justifying the need), capped at a 3-month supply of devices."
+    },
+    "notes": "HSA's medical-devices page does not explicitly name insulin pens, injector pens, syringes or needles, and only carves out devices 'already in use when you arrive, such as implanted devices or those already in contact with your skin or eyes' from the approval requirement. It is not clear from the primary source whether a traveler's own in-use insulin pump or GLP-1 pen is exempt on that basis, or whether unopened spare pens/needles/syringes must separately go through the device-import approval — this pass could not resolve that ambiguity from the published text. Confirm directly with HSA (PTM_Enquiry@hsa.gov.sg) before travel, particularly if carrying multiple unopened pens or a supply of needles.",
+    "legal_source": {
+      "name": "Health Sciences Authority (HSA) — Travelling with medications to Singapore / Travelling with medical devices to Singapore",
+      "url": "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "injectable-medication-jp",
+    "names": [
+      "insulin",
+      "ozempic",
+      "semaglutide",
+      "wegovy",
+      "mounjaro",
+      "tirzepatide",
+      "zepbound",
+      "glp-1",
+      "needles",
+      "syringes",
+      "pen injector"
+    ],
+    "destination": "JP",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Insulin and GLP-1 injectable drugs (semaglutide/Ozempic/Wegovy, tirzepatide/Mounjaro/Zepbound) are prescription drugs under Japan Customs' general framework: up to a 1-month supply is allowed without a Yakkan Shoumei (import confirmation certificate); a larger supply requires obtaining a Yakkan Shoumei in advance. Injector pens, needles and syringes accompanying the medication are treated as personal-use medical equipment for the same trip."
+    },
+    "notes": "Japan Customs' 'Private Importation of Drugs, Cosmetics, etc.' FAQ — the same source already used for Japan's general prescription-medication entry — does not separately name insulin, semaglutide/tirzepatide, or syringes/needles/pen injectors; it only gives the general 1-month prescription-drug limit and a separate 'medical equipment' example list (electric massage equipment, low-frequency therapy devices, contact lenses) that does not mention injection devices. No injectable- or device-specific carve-out (e.g. a syringe/needle count cap, or sharps documentation) was found in this pass. For anything beyond routine personal-use quantities, or for questions about needles/syringes specifically, Japan Customs' FAQ directs inquiries to the Regional Bureaus of Health and Welfare (Kanto-Shinetsu: yakkan@mhlw.go.jp; Kinki and west: kiyakuji@mhlw.go.jp).",
+    "legal_source": {
+      "name": "Japan Customs — Private Importation of Drugs, Cosmetics, etc. (FAQ 1806)",
+      "url": "https://www.customs.go.jp/english/c-answer_e/imtsukan/1806_e.htm"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "injectable-medication-th",
+    "names": [
+      "insulin",
+      "ozempic",
+      "semaglutide",
+      "wegovy",
+      "mounjaro",
+      "tirzepatide",
+      "zepbound",
+      "glp-1",
+      "needles",
+      "syringes",
+      "pen injector"
+    ],
+    "destination": "TH",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Insulin and GLP-1 medicines (semaglutide, tirzepatide) are non-narcotic, non-psychotropic medicines under the Thai FDA's general personal-use rule: they may be carried in the amount necessary for personal use, up to a 30-day supply. Injector pens, needles and syringes used to administer them are medical devices for personal use, which the Thai FDA requires be accompanied by supporting documentation (device information, a purpose letter, and a medical certificate of need)."
+    },
+    "notes": "The Thai FDA's 'Bringing of health products into the Kingdom of Thailand' guidance — the same source already used for Thailand's general medication entry — does not separately name insulin, semaglutide/tirzepatide, or injection devices; it states the general 30-day medicine allowance and a general medical-device documentation requirement, without clarifying how the two interact for an injectable drug delivered via a device (e.g. whether a pen injector needs the medical-device paperwork in addition to a prescription for the medicine inside it). No injectable- or GLP-1-specific carve-out was found in this pass — this is a fast-moving 2026 topic, so confirm current requirements with the Thai FDA or your airline before travel.",
+    "legal_source": {
+      "name": "Thai FDA — Passenger belongings related to health products into the Kingdom of Thailand (foods, cosmetics, herbal products)",
+      "url": "https://en.fda.moph.go.th/guideline-of-importation-for-personal-use/bringing-of-health-products-into-the-kingdom-of-thailand-01/"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "injectable-medication-rw",
+    "names": [
+      "insulin",
+      "ozempic",
+      "semaglutide",
+      "wegovy",
+      "mounjaro",
+      "tirzepatide",
+      "zepbound",
+      "glp-1",
+      "needles",
+      "syringes",
+      "pen injector"
+    ],
+    "destination": "RW",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Insulin, GLP-1 injectable medicines and their delivery devices are covered by Rwanda FDA's personal-effects rule for 'pharmaceutical products and medical devices': the imported quantity must not exceed a 90-day supply (or a single course of treatment) at the maximum manufacturer/healthcare-provider-recommended dose, and import/export should be accompanied by a medical prescription from an authorized practitioner where applicable. The guidelines' definition of 'medical device' ('any instrument, machine, appliance, or material intended by the manufacturer to be used alone or in combination for the purpose of diagnosis, testing, vaccination, cure, surgery or for human or animal health protection') is broad enough to cover pen injectors, needles and syringes used for self-administered injections.",
+      "quantity": "90-day supply"
+    },
+    "notes": "Sourced directly from the same Rwanda FDA Guidelines (FDISM/FDIEC/GDL/003) already used for Rwanda's general prescription-medication and controlled-substances entries — confirmed by parsing the PDF text directly rather than a summarized fetch. The document does not use the words 'insulin,' 'semaglutide,' 'GLP-1' or 'injectable' anywhere — it addresses these products only through the general 'pharmaceutical product' and 'medical device' definitions and the 90-day personal-effects cap — so no insulin/GLP-1-specific guidance (e.g. a distinct sharps or needle-count rule) exists on this primary source. Products 'that require direct oversight or administration by a trained operator' additionally require the importer to provide the contact details of the Rwandan health facility/provider who will administer them — self-injected insulin/GLP-1 pens would not normally fall in that category, but this was not explicitly confirmed for these specific products.",
+    "legal_source": {
+      "name": "Rwanda FDA — Guidelines on Control of Importation and Exportation of Regulated Products Declared as Personal Effects (Doc. No. FDISM/FDIEC/GDL/003, effective 15/03/2023)",
+      "url": "https://rwandafda.gov.rw/wp-content/uploads/2023/03/Guidelines%20for%20import%20and%20export%20of%20regulated%20products%20declared%20as%20personal%20effects.pdf"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-us",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "vyvanse",
+      "lisdexamfetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "tramadol",
+      "opioid painkiller"
+    ],
+    "destination": "US",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Individuals may cross the U.S. border with a Schedule II-V controlled substance for personal medical use if (1) it is in the original container it was dispensed in, and (2) the traveler declares it to a CBP officer, stating either the trade/chemical name and schedule, or the prescribing practitioner/pharmacy and prescription number. U.S. residents bringing such medication back into the U.S. after obtaining it abroad are capped at 50 dosage units combined across all such medication; that cap does not apply to medication lawfully obtained in the U.S. before departure, and the source does not state it applying to non-resident visitors entering with their own foreign prescription.",
+      "quantity": "50 dosage units (U.S. residents only, for meds obtained abroad)"
+    },
+    "notes": "This is a DEA regulation (21 CFR 1301.26), separate from CBP's 90-day-supply guidance on the site's general 'prescription medication' entry -- the two operate together. By DEA scheduling (a well-established, separately-documented fact, not itself re-verified against a DEA scheduling page in this pass), Schedule II covers amphetamine/Adderall, methylphenidate/Ritalin, lisdexamfetamine/Vyvanse and oxycodone; Schedule IV covers alprazolam/Xanax, diazepam/Valium, clonazepam/Klonopin and tramadol; codeine spans Schedule II-V depending on formulation -- all fall within the II-V range this exemption covers. The regulation text itself does not name these drugs by brand, only by schedule.",
+    "legal_source": {
+      "name": "U.S. Drug Enforcement Administration / eCFR -- 21 CFR 1301.26, Exemption of certain persons from registration for personal use of controlled substances",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-II/part-1301/section-1301.26"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "injectable-medication-us",
+    "names": [
+      "ozempic",
+      "wegovy",
+      "mounjaro",
+      "zepbound",
+      "semaglutide",
+      "tirzepatide",
+      "insulin",
+      "needles",
+      "syringes",
+      "injection pen",
+      "glp-1"
+    ],
+    "destination": "US",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "As FDA-approved prescription drugs, GLP-1 medications (semaglutide/tirzepatide) and insulin follow the FDA's personal importation framework: foreign visitors may bring in roughly a 90-day supply, with the prescription or a doctor's letter. Separately, at TSA airport security screening, insulin is confirmed as a permitted 'medically necessary liquid' in carry-on above the standard 3.4oz limit -- travelers must tell the officer and place it in a bin separately for X-ray screening; the final decision rests with the TSA officer.",
+      "quantity": "~90-day supply (foreign visitors)"
+    },
+    "notes": "Compounded or non-FDA-approved semaglutide/tirzepatide products are treated differently: FDA's personal importation policy only extends discretionary allowance to unapproved drugs when there's a serious condition, no domestic availability, no unreasonable risk, and written affirmation of personal use. Genuine brand-name Ozempic/Wegovy/Mounjaro/Zepbound are FDA-approved, so this stricter unapproved-drug pathway shouldn't apply to them, but a compounded version should expect more scrutiny. The TSA insulin page (https://www.tsa.gov/travel/security-screening/whatcanibring/items/insulin, checked 2026-09-13) doesn't separately name GLP-1 pens, syringes specifically, or give refrigeration/ice-pack rules -- a dedicated TSA syringes/needles/ice-pack page could not be located in this pass, so treat 'same handling as insulin' as a reasonable inference rather than a directly confirmed rule.",
+    "legal_source": {
+      "name": "U.S. Food and Drug Administration -- Personal Importation of Drugs",
+      "url": "https://www.fda.gov/industry/import-basics/personal-importation"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-gb",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "vyvanse",
+      "lisdexamfetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "tramadol",
+      "opioid painkiller"
+    ],
+    "destination": "GB",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Up to 3 months' supply of medicine containing a controlled drug can be carried in hand luggage without a Home Office licence. All of the stimulants, benzodiazepines and opioids named in this entry are Schedule 2-4 drugs under the Misuse of Drugs Regulations (amphetamine, methylphenidate and lisdexamfetamine: Schedule 2; oxycodone: Schedule 2; codeine: Schedule 2 or 5 depending on the preparation; tramadol: Schedule 3; diazepam, alprazolam and clonazepam: Schedule 4 Part 1), so the 3-month exemption applies to them -- only Schedule 1 drugs are barred without a special licence. Non-UK residents must carry a letter stating their name, travel dates, and a list of the medicine with dose/strength, signed by the prescriber; the medicine must travel in hand luggage, not hold luggage.",
+      "quantity": "3-month supply"
+    },
+    "notes": "UK residents needing more than 3 months, or anyone needing a Schedule 1 drug, must apply in advance to the Home Office's Drugs and Firearms Licensing Unit (DFLU) -- the source doesn't give a lead time for this specific case (a different gov.uk page about importing/exporting controlled drugs generally recommends applying at least 14 days ahead, which is what the site's general prescription-medication-gb entry cites). None of Adderall/Xanax/Valium/Klonopin/codeine/oxycodone/tramadol are Schedule 1 in the UK, so an outright ban shouldn't apply to them at ordinary personal-use quantities.",
+    "legal_source": {
+      "name": "gov.uk -- Taking controlled drugs into the UK",
+      "url": "https://www.gov.uk/travelling-controlled-drugs"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "injectable-medication-gb",
+    "names": [
+      "ozempic",
+      "wegovy",
+      "mounjaro",
+      "zepbound",
+      "semaglutide",
+      "tirzepatide",
+      "insulin",
+      "needles",
+      "syringes",
+      "injection pen",
+      "glp-1"
+    ],
+    "destination": "GB",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Liquid medication over 100ml (which covers most injectable pens/vials) is allowed through UK airport security in hand luggage, but you must carry proof it's prescribed to you -- a prescription copy or a letter from your doctor. Hypodermic syringes are explicitly listed as permitted in hand luggage. No such proof is required for tablets or for liquid medicine in containers of 100ml or less."
+    },
+    "notes": "Cooling gel packs to keep injectable medication cold are allowed in both hand and hold luggage; ice packs specifically require contacting the airport in advance, per this same gov.uk page. This is UK airport-security screening guidance rather than a customs-import statute, but it's the primary UK government source found for the needle/cold-chain mechanics of carrying GLP-1s and insulin. It does not name Ozempic/Wegovy/Mounjaro or GLP-1 drugs by brand -- insulin and injectable medicines are covered only as a general liquid-medication category.",
+    "legal_source": {
+      "name": "gov.uk -- Hand luggage restrictions: essential medicines and medical equipment",
+      "url": "https://www.gov.uk/hand-luggage-restrictions/essential-medicines-and-medical-equipment"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-ca",
+    "names": [
+      "controlled substance",
+      "narcotic",
+      "narcotic medication",
+      "psychotropic medication",
+      "amphetamine",
+      "adderall",
+      "vyvanse",
+      "lisdexamfetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "tramadol",
+      "opioid painkiller"
+    ],
+    "destination": "CA",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Under CBSA's Section 56 Class Exemption, travelers may personally carry (in person only -- not by mail or courier) a prescribed narcotic or Food and Drug Regulations Part G controlled drug up to the lesser of a single course of treatment or a 30-day supply, and a prescribed benzodiazepine/targeted substance up to the lesser of a single course of treatment or a 90-day supply. Opioids (codeine, oxycodone, tramadol) and stimulants (amphetamine, methylphenidate/Ritalin, lisdexamfetamine/Vyvanse) fall under the narcotic/Part-G 30-day limit; benzodiazepines (diazepam/Valium, alprazolam/Xanax, clonazepam/Klonopin) get the 90-day limit. Medication must be in pharmacy- or hospital-dispensed packaging with proper labelling, and must be declared to a CBSA officer at the border.",
+      "quantity": "30-day supply (stimulants/opioids); 90-day supply (benzodiazepines)"
+    },
+    "notes": "No advance import permit is required for these amounts under the Class Exemption -- but it does not cover Annex I-listed substances unless separately approved by Health Canada or the source country's regulator, and it explicitly does not apply to shipping controlled substances by mail or courier, only carrying them in person.",
+    "legal_source": {
+      "name": "Canada Border Services Agency -- Memorandum D19-9-2, Importation and Exportation of Controlled Substances and Precursors",
+      "url": "https://www.cbsa-asfc.gc.ca/publications/dm-md/d19/d19-9-2-eng.html"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "injectable-medication-ca",
+    "names": [
+      "ozempic",
+      "wegovy",
+      "mounjaro",
+      "zepbound",
+      "semaglutide",
+      "tirzepatide",
+      "insulin",
+      "needles",
+      "syringes",
+      "injection pen",
+      "glp-1"
+    ],
+    "destination": "CA",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "GLP-1 drugs and insulin are ordinary (non-controlled) prescription drugs in Canada, so the general personal-use rule applies: a single course of treatment or a 90-day supply, whichever is less, hand-carried in original/clearly labelled pharmacy packaging. Health Canada's guidance separately states that medical devices imported for personal use -- which covers self-administered injection pens, syringes and needles -- are not restricted under the Food and Drugs Act or Medical Devices Regulations, provided the device doesn't require a trained operator, i.e. it's meant for the patient's own self-administration.",
+      "quantity": "90-day supply"
+    },
+    "notes": "This guidance document does not mention insulin, GLP-1 drugs, needles or syringes by name -- the 90-day rule is the same generic prescription-drug provision already used for the site's general prescription-medication-ca entry, and the needle/syringe treatment is inferred from the document's general 'medical devices for personal use' section, not a dedicated sharps policy. No refrigeration/cold-chain guidance was found on this source.",
+    "legal_source": {
+      "name": "Health Canada -- Personal Use Health Products Guidance",
+      "url": "https://www.canada.ca/en/health-canada/services/drugs-health-products/compliance-enforcement/importation-exportation/personal-use-health-products-guidance/document.html"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-au",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "tramadol",
+      "opioid painkiller"
+    ],
+    "destination": "AU",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Australia's traveller's exemption lets you bring up to 3 months' supply of your prescription medicine, and the Office of Drug Control confirms this covers Schedule 8-type medicines too: 'Prescription medicines such as morphine, oxycodone, methadone, methylphenidate, Adderall, and benzodiazepines are all covered by the traveller exemption.' Codeine-containing medication is also covered but 'requires a prescription from your medical doctor.' You need a valid prescription or a doctor's letter stating the medicine name and dosage, and the medicine should stay in its original packaging with the dispensing label intact; declare everything to the Australian Border Force on arrival.",
+      "quantity": "3-month supply"
+    },
+    "notes": "If you need more than 3 months' worth, ODC's guidance points to either getting a new prescription from an Australian-registered prescriber, or importing a further 3-month supply if the medicine isn't otherwise restricted -- it does not describe an advance import-permit process for a longer personal supply of these particular drugs, unlike Thailand's or Japan's schemes. Lisdexamfetamine (Vyvanse) is not named individually on this source (only 'methylphenidate' and 'Adderall' are used as the stimulant examples) and so is omitted from this entry's names, even though it is a similar stimulant class. Methadone is also named as covered by the source but isn't included here since it wasn't part of the requested drug list.",
+    "legal_source": {
+      "name": "Australian Government Office of Drug Control -- Travelling to Australia with medicines and medical devices",
+      "url": "https://www.odc.gov.au/travellers/travelling-or-australia-medicines-and-medical-devices"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "injectable-medication-au",
+    "names": [
+      "ozempic",
+      "wegovy",
+      "mounjaro",
+      "zepbound",
+      "semaglutide",
+      "tirzepatide",
+      "insulin",
+      "needles",
+      "syringes",
+      "injection pen",
+      "glp-1"
+    ],
+    "destination": "AU",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Insulin and other injectable medicines fall under the same traveller's exemption as other prescription medicines: bring up to 3 months' supply, carry your prescription or a doctor's letter naming the medicine and dose, keep it in original packaging, and declare it to the Australian Border Force. TGA's own traveller guidance uses an insulin worked example: a diabetic traveller kept insulin in its original packaging with a prescription and doctor's letter, and used a small cooler bag on board to keep it cold during a long-haul flight.",
+      "quantity": "3-month supply"
+    },
+    "notes": "Neither the TGA nor ODC pages fetched in this pass name GLP-1 drugs (Ozempic/Wegovy/Mounjaro/Zepbound, semaglutide/tirzepatide) specifically, or address needles/syringes/injection pens as their own category -- they're covered only by extension as ordinary prescription medicines/medical devices under the general traveller's exemption, and by the insulin example for cold-chain handling. If you need more than 3 months' supply, the same 'get a local prescription or import a further batch' guidance from the general controlled-medicine entry applies.",
+    "legal_source": {
+      "name": "Therapeutic Goods Administration -- Entering Australia (travelling with medicines and medical devices)",
+      "url": "https://www.tga.gov.au/resources/consumer-information-and-resources/travelling-medicines-and-medical-devices/entering-australia"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-nz",
+    "names": [
+      "controlled drug",
+      "narcotic medication",
+      "psychotropic medication",
+      "amphetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "tramadol",
+      "opioid painkiller"
+    ],
+    "destination": "NZ",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Medicines that are controlled drugs under New Zealand's Misuse of Drugs Act must be declared on the New Zealand Traveller Declaration and are capped at one month's supply (versus three months for ordinary prescription medicines), carried in original packaging with a prescription copy or a doctor's letter confirming the treatment.",
+      "quantity": "1-month supply"
+    },
+    "notes": "Neither NZ Customs' nor Medsafe's traveller pages (as fetched in this pass) name which specific drugs count as 'controlled drugs' for this rule -- there's no breakdown by stimulant/benzodiazepine/opioid class or schedule number, unlike Thailand's or Canada's guidance for the same topic. Under NZ's Misuse of Drugs Act, amphetamine-type stimulants, benzodiazepines (diazepam, alprazolam, clonazepam) and many opioids (codeine above OTC strength, oxycodone, tramadol) are classified as controlled drugs, but that classification was not independently confirmed against a primary NZ legal source in this pass -- the Ministry of Health's controlled-drugs page returned an access error (403) when fetched. Verdict is marked 'depends' rather than 'allowed_with_limits' for that reason. Adderall and Vyvanse specifically were not checked and are omitted; treat their NZ status as unconfirmed.",
+    "legal_source": {
+      "name": "New Zealand Customs Service -- Prohibited and restricted items: medicines",
+      "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "medication-sa",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "over-the-counter medicine",
+      "otc medicine",
+      "personal medication"
+    ],
+    "destination": "SA",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Saudi Arabia's SFDA-run Controlled Drugs System (CDS) traveler-clearance regime applies only to medicines containing narcotic drugs or psychotropic substances (see the separate controlled-medication entry) — the SFDA's published traveler clearance terms do not describe a separate permit or state a numeric quantity cap for ordinary (non-controlled) prescription or OTC medicine.",
+      "quantity": "No published numeric limit found; bring only a reasonable personal-use quantity."
+    },
+    "notes": "Bring medicine in its original, labeled packaging and carry a copy of the prescription or a doctor's letter for prescription items. SFDA has not published a specific personal-use quantity limit (e.g. a days'-supply cap) for non-controlled medicines that could be independently confirmed in this research; only medicines classified as narcotic drugs or psychotropic substances require the advance CDS clearance permit described in the controlled-medication entry.",
+    "legal_source": {
+      "name": "Saudi Food and Drug Authority (SFDA) — Controlled Drugs System (CDS), User Manual for Traveler Clearance (defines the scope of the traveler permit regime as narcotic drugs/psychotropic substances only)",
+      "url": "https://cds.sfda.gov.sa/HomeFiles/TravilerJourneyEnglish.pdf"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-sa",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "vyvanse",
+      "lisdexamfetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "tramadol",
+      "opioid painkiller"
+    ],
+    "destination": "SA",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Any narcotic drug or psychotropic substance carried by a traveler for personal treatment (the kind of medicine that, as commonly prescribed, includes stimulants such as Adderall/amphetamine and Ritalin/methylphenidate, benzodiazepines such as Xanax/alprazolam and Valium/diazepam, and opioid painkillers such as codeine and oxycodone) must be cleared in advance through SFDA's Controlled Drugs System (CDS) at cds.sfda.gov.sa before arrival in or departure from Saudi Arabia. Clearance requires either (a) a detailed medical report from a licensed medical institution, issued within the last 6 months, naming the diagnosis, treatment plan, and the drug's scientific name and dosage, or (b) a doctor's prescription in the patient's name, issued within the last 6 months, with diagnosis, drug details and the institution's seal — plus a copy of the patient's ID and a signed pledge that the medicine is for the named patient's own use at their own risk.",
+      "quantity": "No published blanket days'-supply figure; each medicine/quantity is submitted individually through the CDS online request for SFDA approval."
+    },
+    "notes": "Drugs listed in Category (D) of Schedule I, Category (A) of Schedule II, or Paragraph (IV) of the Psychotropic Substances schedule under Saudi Arabia's Law of Combating Narcotic Drugs and Psychotropic Substances cannot be cleared for travelers under any circumstances, regardless of prescription — SFDA's traveler-clearance document does not name which specific brand-name medicines fall in these banned categories, only the schedule references, so travelers should confirm their specific medication's classification with SFDA before applying. Apply through the CDS system before travel; the guidance does not state a fixed processing time.",
+    "legal_source": {
+      "name": "Saudi Food and Drug Authority (SFDA) — Controlled Drugs System (CDS), User Manual for Traveler Clearance, Article (6): Procedures and Controls for Clearance",
+      "url": "https://cds.sfda.gov.sa/HomeFiles/TravilerJourneyEnglish.pdf"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-ph",
+    "names": [
+      "controlled substance",
+      "dangerous drug",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "tramadol",
+      "opioid painkiller"
+    ],
+    "destination": "PH",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Under Dangerous Drugs Board Regulation No. 1, Series of 2014, Section 35, a traveler entering, leaving, or passing through the Philippines who is under treatment for a medical condition may possess a dangerous drug or a drug preparation containing a controlled chemical, in a quantity reasonable for that treatment, when prescribed by a physician. For a supply of up to 30 days, the traveler must carry: (a) a letter from the attending physician describing the medical condition, (b) the physician's prescription listing the trade and generic names of the drug, and the medicine in its original, properly labeled container — no advance PDEA permit is required for this 30-day case.",
+      "quantity": "Up to 30 days' supply with physician's letter + prescription only. For a supply exceeding 30 days, the traveler additionally needs Certificates of Authorization from PDEA and from the National Competent Authority of their home country (incoming) or destination country (outgoing); the PDEA request must be submitted in writing at least 30 working days before travel, and PDEA replies within 15 working days."
+    },
+    "notes": "The regulation governs 'dangerous drugs' and 'drug preparations containing a controlled chemical' generally (as scheduled under RA 9165, the Comprehensive Dangerous Drugs Act of 2002) rather than naming specific brands like Adderall or Xanax; it does not itself state which named medicines fall in which schedule. Common stimulants (amphetamine, methylphenidate), benzodiazepines (diazepam, alprazolam, clonazepam) and opioid painkillers (codeine, oxycodone) are the general classes of substance this regime is understood to cover, but travelers should confirm their specific medicine's PH classification with PDEA before travel. Outgoing travelers must also check the destination country's own requirements.",
+    "legal_source": {
+      "name": "Philippine Dangerous Drugs Board — Board Regulation No. 1, Series of 2014 (Comprehensive Amendments to Board Regulation No. 3, Series 2003), Section 35: Carrying of Dangerous Drugs and/or Drug Preparation containing Controlled Chemical by International Travelers",
+      "url": "https://ddb.gov.ph/images/Board_Regulation/2014/BD.REG1.14.pdf"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "medication-id",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "over-the-counter medicine",
+      "otc medicine",
+      "personal medication"
+    ],
+    "destination": "ID",
+    "category": "medication",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Indonesian Customs (Direktorat Jenderal Bea dan Cukai) passenger-baggage guidance, citing regulation PMK 34/2025 (amending PMK 203/2017), lists 'obat-obatan' (medicines) — alongside narcotics, psychotropics, and precursors — as a category that must go through the red-lane (mandatory physical inspection) channel rather than the green (no-inspection) lane when declared via the passenger Electronic Customs Declaration (ECD) at ecd.beacukai.go.id.",
+      "quantity": "No specific numeric personal-use quantity cap for ordinary medicine is stated on this page."
+    },
+    "notes": "Confirmed directly from Indonesian Customs' own passenger-baggage page, which names PMK 34/2025 and PMK 203/2017. It does not give a numeric quantity limit for non-controlled medicine, only that medicines trigger mandatory physical inspection; travelers should carry medicines in original packaging with a prescription/doctor's letter, especially for quantities that could look like more than personal use.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Bea dan Cukai (Indonesian Customs) — Barang Penumpang (Passenger Goods), citing PMK 34/2025 and PMK 203/2017",
+      "url": "https://www.beacukai.go.id/barang-penumpang"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
   }
 ]
