@@ -84,6 +84,11 @@ export default function WorldMap({
   );
 }
 
+/** Classic map-pin outline, tip at local (12, 24) — the anchor point every
+ * caller positions at the actual geographic coordinate. */
+const PIN_PATH = "M12 24s8-9.5 8-15A8 8 0 104 9c0 5.5 8 15 8 15z";
+const PIN_SCALE = 0.85;
+
 function Marker({
   point,
   color,
@@ -94,16 +99,25 @@ function Marker({
   label?: string;
 }) {
   const [x, y] = point;
+  const pinHeight = 24 * PIN_SCALE;
   return (
     <g>
-      <circle cx={x} cy={y} r={5} fill={color} stroke="#ffffff" strokeWidth={1.5} />
+      <path
+        d={PIN_PATH}
+        transform={`translate(${x - 12 * PIN_SCALE}, ${y - pinHeight}) scale(${PIN_SCALE})`}
+        fill={color}
+        stroke="#ffffff"
+        strokeWidth={1.2}
+      />
+      <circle cx={x} cy={y - pinHeight + 8 * PIN_SCALE} r={2.6} fill="#ffffff" />
       {label && (
         <text
           x={x}
-          y={y - 10}
+          y={y - pinHeight - 4}
           textAnchor="middle"
           className="font-sans"
           fontSize={11}
+          fontWeight={600}
           fill="#1e293b"
           stroke="#ffffff"
           strokeWidth={3}
