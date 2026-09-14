@@ -109,6 +109,9 @@ export default async function RootLayout({
                   <a href="/blog" className="hover:text-slate-900 hover:underline">
                     {t("footer.blog")}
                   </a>
+                  <a href="/bring" className="hover:text-slate-900 hover:underline">
+                    {t("footer.bring")}
+                  </a>
                   <a href="/faq" className="hover:text-slate-900 hover:underline">
                     {t("footer.faq")}
                   </a>

@@ -17,6 +17,10 @@
     }
   },
   "pages": {
+    "bring": {
+      "title": "Can I Bring That? — Customs Rules by Item, Across Every Destination",
+      "description": "Alcohol, medication, cannabis/CBD, cash and more — what's allowed, limited, or prohibited across every destination Trip Check covers, cited to each country's own customs authority."
+    },
     "rule": {
       "title": "Schengen 90/180 Day Rule Explained — rolling window, entry/exit days, edge cases",
       "description": "Plain-language guide to the Schengen 90/180-day rule: how the rolling window works, which countries count, and the edge cases — verified against official EU sources."
@@ -126,6 +130,18 @@
     "changelogLink": "See this in the verification changelog →",
     "disclaimer": "Informational only — not legal advice and not an official determination of your right to stay. Always verify with official authorities. We are not affiliated with the European Union."
   },
+  "bringPage": {
+    "h1": "What Can You Bring? By Item",
+    "intro": "Pick an item to see what's allowed, limited, or prohibited across every destination we've verified — for your specific trip, use Trip Check instead.",
+    "backToIndex": "← All items",
+    "checkYourTripCta": "Check your specific trip →",
+    "metaTitle": "Bringing {item} Abroad — Rules by Destination",
+    "metaDescription": "Can you bring {item} into the country? Verified customs rules by destination, cited to each country's own customs authority.",
+    "faqQuestion": "Can I bring {item} into {destination}?",
+    "h1item": "Bringing {item} Into a Country — What Each Destination Requires",
+    "introItem": "What's allowed, limited, or prohibited for {item} in every destination we've verified, cited to each country's own customs authority.",
+    "verifiedLine": "Checked {date} —"
+  },
   "changelogPage": {
     "h1": "Verification changelog",
     "intro": "Every change to the rule data behind this site, newest first — what changed, when it was verified against official sources, and by whom. This log is generated automatically from our version history; it cannot be edited by hand.",
@@ -134,7 +150,8 @@
     "footer": "Badges can be faked; a consistent public update history can't. If you find an error, the fastest fix is pointing us at the official source that contradicts us."
   },
   "common": {
-    "updateHistory": "See update history"
+    "updateHistory": "See update history",
+    "compareEverywhere": "compare everywhere →"
   },
   "etias": {
     "h1": "ETIAS launch tracker",
@@ -413,7 +430,8 @@
     "sources": "Sources",
     "changelog": "Update history",
     "faq": "FAQ",
-    "blog": "Blog"
+    "blog": "Blog",
+    "bring": "What can I bring?"
   },
   "destinationPage": {
     "metaTitle": "Entry requirements and customs for {destination}",

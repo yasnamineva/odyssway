@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
 import { blogPosts } from "../lib/blog";
+import { BRING_CATEGORIES } from "../lib/bring-categories";
 import { countriesVerifiedAt } from "../lib/countries";
-import { destinations } from "../lib/destinations";
+import { customsItems, destinations } from "../lib/destinations";
 import { etias } from "../lib/etias";
 import { publishedEesRecords } from "../lib/ees";
 import { publishedNationalities } from "../lib/nationalities";
@@ -44,6 +45,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: d.verified_at ?? CONTENT_CHECKED,
         priority: 0.7,
       })),
+    { url: `${BASE}/bring`, lastModified: CONTENT_CHECKED, priority: 0.5 },
+    ...Object.entries(BRING_CATEGORIES).map(([category, meta]) => {
+      const dates = customsItems
+        .filter((i) => i.category === category && i.status === "verified" && i.verified_at)
+        .map((i) => i.verified_at as string);
+      return {
+        url: `${BASE}/bring/${meta.slug}`,
+        lastModified: dates.length > 0 ? dates.sort().at(-1)! : CONTENT_CHECKED,
+        priority: 0.6,
+      };
+    }),
     { url: `${BASE}/changelog`, lastModified: CONTENT_CHECKED, priority: 0.5 },
     { url: `${BASE}/about`, lastModified: CONTENT_CHECKED, priority: 0.3 },
     { url: `${BASE}/methodology`, lastModified: CONTENT_CHECKED, priority: 0.4 },

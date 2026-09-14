@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { blogPosts } from "../../../lib/blog";
+import { BRING_CATEGORIES, type BringCategory } from "../../../lib/bring-categories";
 import { customsItems, destinationByCode, destinations, entryRequirements } from "../../../lib/destinations";
 import { nationalityRules } from "../../../lib/nationalities";
 
@@ -92,6 +93,14 @@ export default async function DestinationPage({ params }: { params: Promise<Para
                 <span className="font-medium text-slate-900">{item.names[0]}: </span>
                 {t(`verdict.${item.verdict}`)}
                 {item.limits && <span className="text-slate-500"> — {item.limits.description}</span>}
+                {item.category in BRING_CATEGORIES && (
+                  <a
+                    href={`/bring/${BRING_CATEGORIES[item.category as BringCategory].slug}`}
+                    className="ml-2 whitespace-nowrap text-xs text-blue-700 underline"
+                  >
+                    {tc("compareEverywhere")}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
