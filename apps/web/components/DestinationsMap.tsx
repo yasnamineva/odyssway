@@ -1,7 +1,7 @@
 "use client";
 
 import { geoCentroid, geoEquirectangular, geoPath } from "d3-geo";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { schengenCountries } from "../lib/countries";
 import { destinations } from "../lib/destinations";
 import { alpha2ForFeatureId, countryFeature, WORLD_COUNTRIES } from "../lib/world-map-data";
@@ -24,10 +24,19 @@ const REGION_COLORS: Record<string, string> = {
   Oceania: "#edc949",
 };
 const FALLBACK_COLOR = "#8298b3";
+const SCHENGEN_KEY = "Schengen Area";
 
 /** Classic map-pin outline, tip at local (12, 24) — matches WorldMap.tsx's marker. */
 const PIN_PATH = "M12 24s8-9.5 8-15A8 8 0 104 9c0 5.5 8 15 8 15z";
 const PIN_SCALE = 0.6;
+
+function PinIcon({ color, className }: { color: string; className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill={color} className={className}>
+      <path d={PIN_PATH} />
+    </svg>
+  );
+}
 
 /**
  * "Where Trip Check covers" — every verified non-Schengen destination as a
@@ -38,6 +47,8 @@ const PIN_SCALE = 0.6;
  * geometry out of the initial homepage bundle, matching WorldMap.tsx.
  */
 export default function DestinationsMap() {
+  const [activeFilter, setActiveFilter] = useState<string | null>(null);
+
   const projection = useMemo(
     () => geoEquirectangular().fitSize([WIDTH, HEIGHT], WORLD_COUNTRIES),
     [],
@@ -70,22 +81,55 @@ export default function DestinationsMap() {
     return Object.keys(REGION_COLORS).filter((r) => seen.has(r));
   }, [pins]);
 
+  const filterOptions = [...regionsPresent, SCHENGEN_KEY];
+  const visiblePins =
+    activeFilter && activeFilter !== SCHENGEN_KEY
+      ? pins.filter((p) => p.region === activeFilter)
+      : pins;
+  const showSchengen = !activeFilter || activeFilter === SCHENGEN_KEY;
+  const showPins = activeFilter !== SCHENGEN_KEY;
+
   return (
     <div>
-      <ul className="mb-4 flex flex-wrap justify-center gap-x-4 gap-y-2">
-        {regionsPresent.map((region) => (
-          <li key={region} className="flex items-center gap-1.5 text-xs text-slate-600">
-            <span
-              className="h-2.5 w-2.5 shrink-0 rounded-full"
-              style={{ backgroundColor: REGION_COLORS[region] ?? FALLBACK_COLOR }}
-            />
-            {region}
-          </li>
-        ))}
-        <li className="flex items-center gap-1.5 text-xs text-slate-600">
-          <span className="h-2.5 w-2.5 shrink-0 rounded-full border border-slate-300 bg-[#d3e0ee]" />
-          Schengen Area (29 states)
+      {/* Pill-outlined filter legend, reference2-style — a real region
+          filter, not decorative: clicking a pill isolates that region's
+          pins on the map, clicking it again (or "All") resets. */}
+      <ul className="mb-4 flex flex-wrap justify-center gap-2">
+        <li>
+          <button
+            type="button"
+            onClick={() => setActiveFilter(null)}
+            className={`rounded-full border px-3 py-1.5 text-xs font-semibold transition ${
+              activeFilter === null
+                ? "border-slate-900 bg-slate-900 text-white"
+                : "border-slate-300 bg-white text-slate-600 hover:border-slate-400"
+            }`}
+          >
+            All
+          </button>
         </li>
+        {filterOptions.map((region) => {
+          const isSchengen = region === SCHENGEN_KEY;
+          const color = isSchengen ? "#6f8aa8" : (REGION_COLORS[region] ?? FALLBACK_COLOR);
+          const active = activeFilter === region;
+          return (
+            <li key={region}>
+              <button
+                type="button"
+                onClick={() => setActiveFilter(active ? null : region)}
+                aria-pressed={active}
+                className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-semibold transition ${
+                  active
+                    ? "border-slate-900 bg-slate-900 text-white"
+                    : "border-slate-300 bg-white text-slate-600 hover:border-slate-400"
+                }`}
+              >
+                <PinIcon color={active ? "#ffffff" : color} className="h-3 w-3 shrink-0" />
+                {isSchengen ? "Schengen Area (29 states)" : region}
+              </button>
+            </li>
+          );
+        })}
       </ul>
 
       <svg
@@ -102,30 +146,31 @@ export default function DestinationsMap() {
             <path
               key={`${f.id}-${i}`}
               d={path(f) ?? undefined}
-              fill={isSchengen ? SCHENGEN_FILL : "#e6edf5"}
+              fill={isSchengen && showSchengen ? SCHENGEN_FILL : "#e6edf5"}
               stroke="#ffffff"
               strokeWidth={0.5}
             />
           );
         })}
-        {pins.map((p) => {
-          const [x, y] = p.point;
-          const color = REGION_COLORS[p.region] ?? FALLBACK_COLOR;
-          const pinHeight = 24 * PIN_SCALE;
-          return (
-            <g key={p.code}>
-              <title>{p.name}</title>
-              <path
-                d={PIN_PATH}
-                transform={`translate(${x - 12 * PIN_SCALE}, ${y - pinHeight}) scale(${PIN_SCALE})`}
-                fill={color}
-                stroke="#ffffff"
-                strokeWidth={1}
-              />
-              <circle cx={x} cy={y - pinHeight + 8 * PIN_SCALE} r={1.8} fill="#ffffff" />
-            </g>
-          );
-        })}
+        {showPins &&
+          visiblePins.map((p) => {
+            const [x, y] = p.point;
+            const color = REGION_COLORS[p.region] ?? FALLBACK_COLOR;
+            const pinHeight = 24 * PIN_SCALE;
+            return (
+              <g key={p.code}>
+                <title>{p.name}</title>
+                <path
+                  d={PIN_PATH}
+                  transform={`translate(${x - 12 * PIN_SCALE}, ${y - pinHeight}) scale(${PIN_SCALE})`}
+                  fill={color}
+                  stroke="#ffffff"
+                  strokeWidth={1}
+                />
+                <circle cx={x} cy={y - pinHeight + 8 * PIN_SCALE} r={1.8} fill="#ffffff" />
+              </g>
+            );
+          })}
       </svg>
     </div>
   );

@@ -100,10 +100,16 @@ test("sitemap and robots respond", async ({ request }) => {
 
 test("header navigation reaches the guide pages", async ({ page }) => {
   await page.goto("/");
+
+  await page.getByRole("button", { name: "Open menu" }).click();
   await page.locator("header").getByRole("link", { name: "Trip Check", exact: true }).click();
   await expect(page).toHaveURL(/\/trip-check$/);
+
+  await page.getByRole("button", { name: "Open menu" }).click();
   await page.getByRole("link", { name: "90/180 rule" }).click();
   await expect(page).toHaveURL(/\/rules\/90-180-rule$/);
+
+  await page.getByRole("button", { name: "Open menu" }).click();
   await page.getByRole("link", { name: "ETIAS" }).click();
   await expect(page).toHaveURL(/\/etias\/status$/);
 });

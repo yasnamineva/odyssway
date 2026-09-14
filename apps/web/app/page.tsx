@@ -15,6 +15,7 @@ import {
   ShieldCheckIcon,
 } from "../components/icons";
 import Reveal from "../components/Reveal";
+import { blogPostsByDate } from "../lib/blog";
 import { coveredDestinationCount, destinations } from "../lib/destinations";
 import { destinationLabelFor } from "../lib/destination-label";
 import { resolveTripCheck } from "../lib/trip-check";
@@ -43,8 +44,8 @@ export default async function HomePage() {
 
   return (
     <div className="space-y-10">
-      <section className="relative">
-        <div className="relative left-1/2 h-[380px] w-screen -translate-x-1/2 overflow-hidden sm:h-[400px] lg:h-[440px]">
+      <section className="relative -mt-4">
+        <div className="relative left-1/2 h-[560px] w-screen -translate-x-1/2 overflow-hidden sm:h-[600px]">
           <Image
             src={heroImage}
             alt=""
@@ -53,41 +54,50 @@ export default async function HomePage() {
             sizes="100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/95 via-slate-900/45 to-slate-900/10" />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/70 via-slate-900/15 to-transparent" />
-          <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-center px-4 pb-12">
-            <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-white/90 px-3 py-1 text-[11px] font-semibold tracking-wide text-slate-900 uppercase shadow-sm backdrop-blur">
-              {t("home.hero.eyebrow")}
+          {/* Light wash, not a dark overlay — the photo itself is pale/misty
+              enough for dark text, fading to the page background at the
+              bottom so the hero blends straight into the next section. Kept
+              non-transparent through the middle band (not just top/bottom)
+              because on narrow viewports the taller text stack reaches down
+              into the photo's darker mountain silhouette, where dark text
+              needs the extra contrast. */}
+          <div className="absolute inset-0 bg-gradient-to-b from-white/45 via-white/35 to-slate-50" />
+          <div className="relative z-10 mx-auto flex h-full max-w-2xl flex-col items-center px-4 pt-16 text-center sm:pt-20">
+            <span className="flex h-20 w-20 items-center justify-center rounded-full border-4 border-white bg-white shadow-lg">
+              <CompassIcon className="h-9 w-9 text-blue-700" />
             </span>
-            <h1 className="mt-3 max-w-xl font-display text-3xl font-bold tracking-tight text-white lg:text-5xl">
+            <h1 className="mt-5 font-display text-3xl font-extrabold tracking-tight text-slate-900 lg:text-5xl">
               {t("home.hero.h1")}
             </h1>
-            <p className="mt-3 max-w-lg text-sm leading-relaxed text-white/85 lg:text-base">
+            <p className="mt-4 max-w-lg text-sm leading-relaxed text-slate-600 lg:text-base">
               {t("home.hero.sub")}
             </p>
-            <div className="mt-5 flex flex-wrap gap-3">
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
               <a
                 href="/trip-check"
-                className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-lg transition hover:scale-[1.03] hover:bg-white/90"
+                className="rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:scale-[1.03] hover:bg-slate-700"
               >
                 {t("home.hero.ctaPrimary")}
               </a>
               <a
                 href="/calculator"
-                className="rounded-full border border-white/50 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:scale-[1.03] hover:bg-white/20"
+                className="rounded-full border border-slate-300 bg-white/80 px-6 py-3 text-sm font-semibold text-slate-700 backdrop-blur transition hover:scale-[1.03] hover:bg-white"
               >
                 {t("home.hero.ctaSecondary")}
               </a>
             </div>
-          </div>
-        </div>
-
-        <div className="relative z-20 mx-auto -mt-10 max-w-3xl px-4 sm:-mt-12">
-          <div className="rounded-2xl border border-slate-200 bg-white/95 p-4 shadow-2xl backdrop-blur sm:p-5">
-            <HeroQuickCheck />
+            <span className="mt-5 inline-flex items-center gap-1.5 rounded-full bg-white/80 px-3 py-1 text-[11px] font-semibold tracking-wide text-slate-500 uppercase backdrop-blur">
+              {t("home.hero.eyebrow")}
+            </span>
           </div>
         </div>
       </section>
+
+      <Reveal>
+        <section className="mx-auto max-w-xl rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-5">
+          <HeroQuickCheck />
+        </section>
+      </Reveal>
 
       <Reveal>
         <section className="mx-auto grid max-w-3xl gap-3 sm:grid-cols-3">
@@ -249,6 +259,48 @@ export default async function HomePage() {
               className="inline-flex items-center gap-1.5 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-700"
             >
               {t("home.coverageMap.cta")}
+            </a>
+          </div>
+        </section>
+      </Reveal>
+
+      <Reveal>
+        <section>
+          <h2 className="text-center font-display text-2xl font-bold text-slate-900">
+            {t("home.blogTeaser.heading")}
+          </h2>
+          <p className="mx-auto mt-2 max-w-lg text-center text-sm text-slate-500">
+            {t("home.blogTeaser.sub")}
+          </p>
+          <ol className="mx-auto mt-6 grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {blogPostsByDate.slice(0, 3).map((post) => (
+              <li key={post.slug}>
+                <a
+                  href={`/blog/${post.slug}`}
+                  className="group flex h-full flex-col items-center rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm transition hover:-translate-y-0.5 hover:border-blue-200 hover:shadow-md"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element -- self-generated same-origin PNG, not a candidate for next/image optimization */}
+                  <img
+                    src={`/blog/${post.slug}/opengraph-image`}
+                    alt=""
+                    className="h-16 w-16 shrink-0 rounded-full border border-slate-100 object-cover"
+                  />
+                  <time dateTime={post.date} className="mt-3 text-[11px] text-slate-400">
+                    {post.date}
+                  </time>
+                  <h3 className="mt-1 font-display text-sm font-bold text-slate-900">
+                    {post.title}
+                  </h3>
+                </a>
+              </li>
+            ))}
+          </ol>
+          <div className="mt-6 text-center">
+            <a
+              href="/blog"
+              className="inline-flex items-center gap-1.5 rounded-full border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-50"
+            >
+              {t("home.blogTeaser.cta")}
             </a>
           </div>
         </section>

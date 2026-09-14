@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { Baloo_2 } from "next/font/google";
 import type { ReactNode } from "react";
+import SiteNav from "../components/SiteNav";
 import "./globals.css";
 
 /** Soft, rounded display font (misty-travel-journal reference direction) —
@@ -69,71 +70,52 @@ export default async function RootLayout({
       <body className="bg-slate-50 text-slate-900 antialiased">
         <NextIntlClientProvider messages={messages}>
           <div className="flex min-h-dvh flex-col">
-            <header className="px-3 pt-3 sm:px-4 sm:pt-4">
-              <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 rounded-full border border-slate-200 bg-white/95 px-4 py-2.5 shadow-sm backdrop-blur">
-                <a
-                  href="/"
-                  className="font-display text-lg font-extrabold tracking-tight text-slate-900"
-                >
-                  {t("header.brand")}
-                </a>
-                <nav className="hidden items-center gap-0.5 rounded-full bg-slate-100 p-1 md:flex">
-                  <a href="/trip-check" className="rounded-full px-3 py-1.5 text-[13px] font-medium text-slate-600 transition hover:bg-white hover:text-slate-900 hover:shadow-sm">
-                    {t("header.nav.tripCheck")}
-                  </a>
-                  <a href="/calculator" className="rounded-full px-3 py-1.5 text-[13px] font-medium text-slate-600 transition hover:bg-white hover:text-slate-900 hover:shadow-sm">
-                    {t("header.nav.calculator")}
-                  </a>
-                  <a href="/rules/90-180-rule" className="rounded-full px-3 py-1.5 text-[13px] font-medium text-slate-600 transition hover:bg-white hover:text-slate-900 hover:shadow-sm">
-                    {t("header.nav.rule")}
-                  </a>
-                  <a href="/ees" className="rounded-full px-3 py-1.5 text-[13px] font-medium text-slate-600 transition hover:bg-white hover:text-slate-900 hover:shadow-sm">
-                    {t("header.nav.ees")}
-                  </a>
-                  <a href="/etias/status" className="rounded-full px-3 py-1.5 text-[13px] font-medium text-slate-600 transition hover:bg-white hover:text-slate-900 hover:shadow-sm">
-                    {t("header.nav.etias")}
-                  </a>
-                </nav>
-                <a
-                  href="/trip-check"
-                  className="rounded-full bg-slate-900 px-4 py-2 text-[13px] font-semibold whitespace-nowrap text-white transition hover:bg-slate-700"
-                >
-                  {t("home.hero.ctaPrimary")}
-                </a>
-              </div>
+            <header className="relative z-30 mx-auto w-full max-w-6xl">
+              <SiteNav
+                brand={t("header.brand")}
+                links={[
+                  { href: "/trip-check", label: t("header.nav.tripCheck") },
+                  { href: "/calculator", label: t("header.nav.calculator") },
+                  { href: "/rules/90-180-rule", label: t("header.nav.rule") },
+                  { href: "/ees", label: t("header.nav.ees") },
+                  { href: "/etias/status", label: t("header.nav.etias") },
+                  { href: "/blog", label: t("footer.blog") },
+                ]}
+                cta={{ href: "/trip-check", label: t("home.hero.ctaPrimary") }}
+              />
             </header>
-            <main className="mx-auto w-full max-w-6xl flex-1 px-4 pt-8 pb-12">
+            <main className="mx-auto w-full max-w-6xl flex-1 px-4 pb-12">
               {children}
             </main>
-            <footer className="bg-slate-900 text-slate-300">
-              <div className="mx-auto max-w-6xl space-y-3 px-4 py-8 text-xs leading-relaxed">
-                <p className="font-display text-base text-slate-100">
+            <footer className="border-t border-slate-200 bg-white">
+              <div className="mx-auto max-w-2xl space-y-4 px-4 py-10 text-center text-xs leading-relaxed text-slate-500">
+                <p className="font-display text-lg font-bold text-slate-900">
                   {t("header.brand")}
                 </p>
                 <p>{t("footer.disclaimer")}</p>
-                <p className="flex flex-wrap gap-x-4 gap-y-1">
-                  <a href="/about" className="underline hover:text-white">
+                <p className="flex flex-wrap justify-center gap-x-4 gap-y-1.5">
+                  <a href="/about" className="hover:text-slate-900 hover:underline">
                     {t("footer.about")}
                   </a>
-                  <a href="/methodology" className="underline hover:text-white">
+                  <a href="/methodology" className="hover:text-slate-900 hover:underline">
                     {t("footer.methodology")}
                   </a>
-                  <a href="/sources" className="underline hover:text-white">
+                  <a href="/sources" className="hover:text-slate-900 hover:underline">
                     {t("footer.sources")}
                   </a>
-                  <a href="/changelog" className="underline hover:text-white">
+                  <a href="/changelog" className="hover:text-slate-900 hover:underline">
                     {t("footer.changelog")}
                   </a>
-                  <a href="/blog" className="underline hover:text-white">
+                  <a href="/blog" className="hover:text-slate-900 hover:underline">
                     {t("footer.blog")}
                   </a>
-                  <a href="/faq" className="underline hover:text-white">
+                  <a href="/faq" className="hover:text-slate-900 hover:underline">
                     {t("footer.faq")}
                   </a>
                   <a
                     href={OFFICIAL_CALCULATOR_URL}
                     rel="noopener noreferrer"
-                    className="underline hover:text-white"
+                    className="hover:text-slate-900 hover:underline"
                   >
                     {t("footer.officialCalculator")}
                   </a>
