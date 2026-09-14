@@ -3790,6 +3790,42 @@
     "status": "verified"
   },
   {
+    "slug": "drones-sa",
+    "names": ["drone", "uav", "quadcopter", "unmanned aircraft"],
+    "destination": "SA",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "ZATCA lists drones as one of its named examples of \"restricted materials that require approval from competent authorities\" (the other named example being medicines) — meaning a drone cannot simply be carried through like an ordinary personal item, but isn't outright banned either. Travelers must disclose the drone at customs and obtain the necessary authorisation before entry."
+    },
+    "notes": "ZATCA's page does not name the specific competent authority or describe the approval process/timeline for drones (unlike its more detailed treatment of medicines, which points to the SFDA clearance system cited elsewhere on this site). Saudi Arabia's General Authority of Civil Aviation (GACA) is the plausible drone/UAV regulator, but that could not be independently confirmed against a primary GACA source in this pass — treat the approval requirement as confirmed, but the exact process as unconfirmed.",
+    "legal_source": {
+      "name": "ZATCA (Saudi Zakat, Tax and Customs Authority) — prohibited and restricted items for travelers",
+      "url": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Pages/customs-individual/Travel-pages/disclosure-amounts.aspx"
+    },
+    "verified_at": "2026-09-14",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-sa",
+    "names": ["weapons", "stun gun", "electric shock device", "taser", "laser pointer", "tear gas", "fireworks", "radar detector"],
+    "destination": "SA",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "ZATCA's prohibited-items list bans \"all types of electric shock\" devices, laser devices (with one narrow exception: a single red laser pen not exceeding 5 milliwatts), fireworks, \"eavesdropping devices of all shapes and types,\" speed radar detectors, and items described as \"tear softeners\" (tear-gas-type irritants). Surveillance devices disguised as everyday objects — the source specifically names hidden-camera watches, pens, glasses, and toy airplanes — are also prohibited."
+    },
+    "notes": "This list is broader and more surveillance/security-focused than a typical 'weapons' list — it groups conventional self-defence items (stun devices, tear gas) with electronic surveillance/countermeasure gear (hidden cameras, radar detectors, eavesdropping devices) and laser pointers above a trivial power threshold. Travelers who wouldn't think of a laser pointer, a novelty pen camera, or a radar detector as a 'weapon' are exactly the ones likely to be caught out by this rule.",
+    "legal_source": {
+      "name": "ZATCA (Saudi Zakat, Tax and Customs Authority) — prohibited and restricted items for travelers",
+      "url": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Pages/customs-individual/Travel-pages/disclosure-amounts.aspx"
+    },
+    "verified_at": "2026-09-14",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
     "slug": "cash-sa",
     "names": [
       "cash",
@@ -4301,6 +4337,24 @@
     "status": "verified"
   },
   {
+    "slug": "weapons-br",
+    "names": ["weapons", "firearms", "guns", "ammunition", "airsoft", "replica gun", "toy gun", "air gun"],
+    "destination": "BR",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "Real firearms, ammunition, and other products controlled by the Army Command ('Armas, munições e demais produtos controlados pelo Comando do Exército') are restricted goods requiring prior approval from the Brazilian Army — not something arranged at the border. Separately, and more likely to catch a traveler off guard: toy guns, firearm replicas, and simulated firearms are listed as prohibited outright — the source explicitly includes air-compressed or gas-powered guns used for games or sporting competitions (i.e. airsoft) and toys merely shaped like a firearm."
+    },
+    "notes": "The airsoft/toy-gun prohibition is easy to miss because it reads like a real-weapons rule at first glance — a traveler bringing sporting airsoft equipment or a child's toy gun could reasonably assume it doesn't count as a 'weapon,' but Receita Federal's own wording names exactly this category as prohibited, not merely restricted.",
+    "legal_source": {
+      "name": "Receita Federal — Guia do Viajante: Proibições e Restrições (Entrada no Brasil)",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/proibicoes-restricoes"
+    },
+    "verified_at": "2026-09-14",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
     "slug": "medication-sg",
     "names": [
       "medication",
@@ -4383,6 +4437,24 @@
       "url": "https://file.go.gov.sg/document-guide-for-bringing-in-personal-medications.pdf"
     },
     "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-sg",
+    "names": ["cash", "currency", "money", "bearer negotiable instruments"],
+    "destination": "SG",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "The Singapore Police Force operates a real cross-border cash movement reporting scheme (Form NP 728, lodged with the Suspicious Transaction Reporting Office under the Corruption, Drug Trafficking and Other Serious Crimes (Confiscation of Benefits) Act) covering cash and bearer negotiable instruments above a threshold."
+    },
+    "notes": "The specific SGD threshold that triggers mandatory reporting could not be confirmed on a primary source in this pass — the Police e-Services page for lodging the report describes the process (an online form, ~10 minutes to complete) but doesn't state the dollar figure itself, and that page returned no other numeric threshold. A commonly-cited SGD 20,000 figure appears in secondary sources, but this site only publishes what it can verify directly — treat the exact threshold as unconfirmed and, if carrying a large sum, check with the Singapore Police Force or file the report regardless.",
+    "legal_source": {
+      "name": "Singapore Police Force — Lodge Cash Movement Report for Carriers, Recipients or Senders",
+      "url": "https://www.police.gov.sg/E-Services/Lodge-Cash-Movement-Report-For-Carriers-Recipients-or-Senders"
+    },
+    "verified_at": "2026-09-14",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
   },
@@ -4837,6 +4909,42 @@
     "status": "verified"
   },
   {
+    "slug": "weapons-nz",
+    "names": ["weapons", "firearms", "guns", "ammunition", "airgun", "stun gun", "pepper spray", "knife", "knives"],
+    "destination": "NZ",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "\"All firearms, weapons and ammunition are prohibited in New Zealand without a permit.\" Authorisation must be obtained from Te Tari Pūreke — Firearms Safety Authority (FSA) or New Zealand Police before travelling with firearms, weapons, ammunition, or firearm parts. The same permit requirement covers airguns, stun devices, pepper spray, and various knife types — none of these can simply be declared and allowed through; a permit obtained in advance is required."
+    },
+    "notes": "NZ Customs places the burden of verifying permit requirements on the traveller or importer before arrival — there is no on-arrival process to obtain a permit you didn't already have. Ordinary pocket/kitchen knives packed in checked luggage are typically a separate, lower-risk case in practice, but the source's own wording sets a wide 'various knife types' net without a clear-cut personal-use exemption, so travellers should not assume any knife is automatically fine.",
+    "legal_source": {
+      "name": "New Zealand Customs Service — Prohibited and restricted items",
+      "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/"
+    },
+    "verified_at": "2026-09-14",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "wildlife-products-nz",
+    "names": ["ivory", "coral", "tortoiseshell", "animal skin souvenir", "fur", "endangered species products", "cites souvenir", "shells", "crocodile leather"],
+    "destination": "NZ",
+    "category": "other",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "\"Some plants and animals are protected under international law. This includes items made from endangered species. You must not bring these items into New Zealand without the correct permits.\" NZ Customs names corals, clams, crocodile products, and certain traditional medicines as commonly seized items; the Department of Conservation issues permits (where obtainable at all) for ivory products, animal skins, leather goods, furs, shells, marine life items, protected timber, and live species."
+    },
+    "notes": "This is a CITES (Convention on International Trade in Endangered Species) enforcement matter, not a simple customs allowance — many categories named here (ivory in particular) have no realistic personal-import permit path even when a permit process technically exists. Souvenirs bought abroad (coral jewellery, tortoiseshell items, animal-skin goods) are a common, easy-to-miss trap for travellers who assume a small souvenir quantity is exempt; the source states no such exemption. Anyone uncertain should contact the Department of Conservation (cites@doc.govt.nz) before travel, not after purchasing the item.",
+    "legal_source": {
+      "name": "New Zealand Customs Service — Prohibited and restricted items",
+      "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/"
+    },
+    "verified_at": "2026-09-14",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
     "slug": "medication-sa",
     "names": [
       "medication",
@@ -4985,6 +5093,43 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "Indonesian Customs' own passenger-baggage guidance names 'narkotika' (narcotics) — alongside psychotropics, precursors, and medicines — as a category that triggers mandatory red-lane physical inspection; cannabis (ganja) is classified as a Golongan I (Schedule I, the strictest category) narcotic under Indonesia's Narcotics Law (UU No. 35 Tahun 2009), covering personal possession and import with no traveler exception found on this source. CBD/cannabidiol products are not separately addressed on the pages fetched in this pass and should be treated as covered by the same narcotics prohibition given Indonesia's strict, no-carve-out approach to cannabis-derived products. Indonesia is widely known to impose severe penalties for narcotics offences, up to and including capital punishment for trafficking-level quantities — travelers should not assume any personal-use exception exists.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Bea dan Cukai (Indonesian Customs) — Barang Penumpang (Passenger Goods)",
+      "url": "https://www.beacukai.go.id/barang-penumpang"
+    },
+    "verified_at": "2026-09-14",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-ph",
+    "names": ["weapons", "firearms", "guns", "ammunition", "war weapons"],
+    "destination": "PH",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "The Bureau of Customs lists \"Firearms and weapons of war and parts thereof, ammunitions\" among regulated goods requiring a \"Permit to Import\" from the Philippine National Police – Firearms and Explosives Office (PNP-FEO) before the item can be brought in — not a process available on arrival.",
+      "quantity": "PNP-FEO Permit to Import required in advance"
+    },
+    "notes": "Contact for the PNP-FEO permit process, as published by the Bureau of Customs: +632 723 0401 loc. 4588 or feocsg@pnp.gov.ph. No exception for parts, replicas, or small ammunition quantities was found on this source — treat any firearm-related item as requiring the permit.",
+    "legal_source": {
+      "name": "Bureau of Customs Philippines — Guidelines on Arriving Travelers",
+      "url": "https://customs.gov.ph/guidelines-on-arriving-travelers/"
+    },
+    "verified_at": "2026-09-14",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-id",
+    "names": ["weapons", "firearms", "guns", "air rifle", "airsoft", "knife", "sharp weapon"],
+    "destination": "ID",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "Indonesian Customs' passenger-baggage guidance lists 'senjata api' (firearms), 'senjata angin' (air weapons, e.g. air rifles/airsoft) and 'senjata tajam' (sharp weapons) — alongside narcotics and explosives — as categories that trigger mandatory red-lane physical inspection. Firearms and air weapons realistically require a police-issued import/possession permit that ordinary tourists do not have access to; 'sharp weapons' is a broader, less-defined category that the source does not limit to combat knives, so an unusually large or blade-style knife risks being treated the same way."
+    },
+    "notes": "Bea Cukai's page does not give a numeric size/blade-length threshold for 'senjata tajam,' nor does it name an exception for ordinary pocket knives or multitools packed in checked luggage — travelers carrying anything that could be characterised as a weapon should expect inspection and be ready to justify it, not assume a small size makes it exempt.",
     "legal_source": {
       "name": "Direktorat Jenderal Bea dan Cukai (Indonesian Customs) — Barang Penumpang (Passenger Goods)",
       "url": "https://www.beacukai.go.id/barang-penumpang"
