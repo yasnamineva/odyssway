@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
+import { blogPosts } from "../../../lib/blog";
 import { customsItems, destinationByCode, destinations, entryRequirements } from "../../../lib/destinations";
 import { nationalityRules } from "../../../lib/nationalities";
 
@@ -50,6 +51,8 @@ export default async function DestinationPage({ params }: { params: Promise<Para
     .filter((i) => i.destination === dest.code && i.status === "verified")
     .sort((a, b) => a.slug.localeCompare(b.slug));
 
+  const relatedPosts = blogPosts.filter((p) => p.destinationCodes?.includes(dest.code));
+
   return (
     <article className="mx-auto max-w-2xl space-y-6">
       <header>
@@ -89,6 +92,21 @@ export default async function DestinationPage({ params }: { params: Promise<Para
                 <span className="font-medium text-slate-900">{item.names[0]}: </span>
                 {t(`verdict.${item.verdict}`)}
                 {item.limits && <span className="text-slate-500"> — {item.limits.description}</span>}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {relatedPosts.length > 0 && (
+        <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <h2 className="text-base font-semibold text-slate-900">{t("relatedPostsTitle")}</h2>
+          <ul className="mt-3 space-y-2">
+            {relatedPosts.map((p) => (
+              <li key={p.slug}>
+                <a href={`/blog/${p.slug}`} className="text-sm font-medium text-blue-700 underline hover:text-blue-800">
+                  {p.title}
+                </a>
               </li>
             ))}
           </ul>

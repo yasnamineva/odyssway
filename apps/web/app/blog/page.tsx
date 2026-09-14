@@ -9,7 +9,10 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title,
     description,
-    alternates: { canonical: "/blog" },
+    alternates: {
+      canonical: "/blog",
+      types: { "application/rss+xml": "/blog/feed.xml" },
+    },
     openGraph: { title, description },
     twitter: { title, description },
   };
@@ -18,8 +21,26 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function BlogIndexPage() {
   const t = await getTranslations("blogPage");
 
+  const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.invalid";
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: "Odyssway Blog",
+    url: `${SITE_URL}/blog`,
+    blogPost: blogPostsByDate.map((post) => ({
+      "@type": "BlogPosting",
+      headline: post.title,
+      url: `${SITE_URL}/blog/${post.slug}`,
+      datePublished: post.date,
+    })),
+  };
+
   return (
     <article className="mx-auto max-w-4xl space-y-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <header className="text-center">
         <h1 className="font-display text-3xl font-extrabold tracking-tight text-slate-900">
           {t("h1")}

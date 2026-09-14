@@ -16,6 +16,10 @@ export interface BlogPost {
   verifiedAt: string; // ISO date — when the underlying data was checked (may predate `date`)
   /** Anchor into /changelog for the dataset this post is about, if one exists there. */
   changelogDataset?: string;
+  /** Destination codes (data/destinations.json) this post covers, for cross-linking
+   * from destination pages — internal links between topically-related, already-cited
+   * pages, not a separate content surface. */
+  destinationCodes?: string[];
 }
 
 export const blogPosts: BlogPost[] = [
@@ -30,6 +34,7 @@ export const blogPosts: BlogPost[] = [
       url: "https://www.dha.gov.za/index.php/immigration-services/exempt-countries",
     },
     verifiedAt: "2026-08-11",
+    destinationCodes: ["ZA"],
   },
   {
     slug: "kenya-replaced-visa-on-arrival",
@@ -42,6 +47,7 @@ export const blogPosts: BlogPost[] = [
       url: "https://new.kenyalaw.org/akn/ke/act/ln/2024/1/eng@2024-01-19/source.pdf",
     },
     verifiedAt: "2026-08-11",
+    destinationCodes: ["KE"],
   },
   {
     slug: "ees-live-five-countries",
@@ -67,6 +73,33 @@ export const blogPosts: BlogPost[] = [
       url: "/sources",
     },
     verifiedAt: "2026-08-13",
+    destinationCodes: ["JP", "KE", "ZA", "MX", "EG", "NG", "AU", "TH", "RW", "MA", "IN", "TR", "AE"],
+  },
+  {
+    slug: "twenty-destinations-verified",
+    title: "We Just Verified 4 More Destinations — And Two of Their Visa-Free Rules Expire This Year",
+    dek: "China's and Vietnam's visa-free windows for UK travelers aren't permanent — both are dated policies with real expiration clauses. Here's what else turned up verifying the Philippines, New Zealand, Vietnam, and China.",
+    date: "2026-08-19",
+    category: "Site news",
+    legalSource: {
+      name: "Odyssway — full source list",
+      url: "/sources",
+    },
+    verifiedAt: "2026-08-18",
+    destinationCodes: ["PH", "NZ", "VN", "CN"],
+  },
+  {
+    slug: "twenty-five-destinations-verified",
+    title: "25 Destinations Verified — Including One Where We Found Nothing to Confirm",
+    dek: "Brazil reinstated its visa requirement for three nationalities, not all of them. Singapore's famous \"90 days\" figure doesn't appear in any government document we could find. Five more destinations, verified the slow way.",
+    date: "2026-09-03",
+    category: "Site news",
+    legalSource: {
+      name: "Odyssway — full source list",
+      url: "/sources",
+    },
+    verifiedAt: "2026-09-02",
+    destinationCodes: ["ID", "SA", "BR", "SG", "KR"],
   },
 ];
 

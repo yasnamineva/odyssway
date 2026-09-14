@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { ComponentType } from "react";
 import { blogPostBySlug, blogPosts } from "../../../lib/blog";
+import { destinationByCode } from "../../../lib/destinations";
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -53,14 +54,37 @@ export default async function BlogPostPage({
   const t = await getTranslations("blogPostPage");
   const PostBody = await loadPostBody(post.slug);
 
+  const relatedDestinations = (post.destinationCodes ?? [])
+    .map((code) => destinationByCode(code))
+    .filter((d): d is NonNullable<typeof d> => d !== undefined && d.status === "verified");
+
+  const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.invalid";
+  const postUrl = `${SITE_URL}/blog/${post.slug}`;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
     description: post.dek,
-    image: `/blog/${post.slug}/opengraph-image`,
+    image: `${SITE_URL}/blog/${post.slug}/opengraph-image`,
     datePublished: post.date,
     dateModified: post.verifiedAt,
+    mainEntityOfPage: { "@type": "WebPage", "@id": postUrl },
+    author: { "@type": "Organization", name: "Odyssway", url: SITE_URL },
+    publisher: {
+      "@type": "Organization",
+      name: "Odyssway",
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/icon` },
+    },
+  };
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Blog", item: `${SITE_URL}/blog` },
+      { "@type": "ListItem", position: 2, name: post.title, item: postUrl },
+    ],
   };
 
   return (
@@ -68,6 +92,10 @@ export default async function BlogPostPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
       <a href="/blog" className="text-sm font-medium text-slate-600 hover:text-slate-900">
         {t("backToBlog")}
@@ -96,6 +124,26 @@ export default async function BlogPostPage({
       <div className="space-y-4 text-sm leading-relaxed text-slate-700 [&_a]:underline [&_a]:decoration-slate-300 [&_a]:underline-offset-2 hover:[&_a]:decoration-slate-500 [&_h2]:mt-6 [&_h2]:font-display [&_h2]:text-lg [&_h2]:font-bold [&_h2]:text-slate-900 [&_li]:mt-1 [&_ul]:list-disc [&_ul]:space-y-1 [&_ul]:pl-5">
         <PostBody />
       </div>
+
+      {relatedDestinations.length > 0 && (
+        <div className="rounded-2xl border border-slate-200 bg-white p-4">
+          <h2 className="text-xs font-semibold tracking-wide text-slate-400 uppercase">
+            {t("relatedDestinations")}
+          </h2>
+          <ul className="mt-2 flex flex-wrap gap-2">
+            {relatedDestinations.map((d) => (
+              <li key={d.code}>
+                <a
+                  href={`/destinations/${d.code.toLowerCase()}`}
+                  className="inline-flex items-center rounded-full border border-slate-200 px-3 py-1 text-xs font-medium text-slate-700 hover:border-blue-200 hover:text-blue-700"
+                >
+                  {d.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       <div className="space-y-1 rounded-2xl border border-slate-200 bg-slate-50 p-4 text-xs leading-relaxed text-slate-500">
         <p>
