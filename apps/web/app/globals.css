@@ -1,20 +1,19 @@
 @import "tailwindcss";
 
 /*
- * Visual direction (design/references moodboard): misty travel-journal —
- * soft cool blue-gray surfaces (evoking the mountain-fog reference photo),
- * a rounded playful display font, pin-marker maps, and circular imagery,
- * replacing the earlier warm-paper/sharp-grotesque direction. Implemented
- * by re-mapping the default slate/blue scales so every component inherits
- * the palette consistently.
+ * Visual direction (design/references moodboard): misty travel-journal
+ * surfaces (soft cool blue-gray, evoking the mountain-fog reference photo,
+ * pin-marker maps, circular imagery) paired with a bold, geometric-sans
+ * display font — a more serious/professional register than the earlier
+ * rounded Baloo 2, closer to the industrial-B2B reference's headline
+ * weight. Palette implemented by re-mapping the default slate/blue scales
+ * so every component inherits it consistently.
  */
 @theme {
   --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
-  /* Rounded, soft display font (next/font-loaded Baloo 2, see
-     app/layout.tsx) for headlines — the misty-travel-journal reference's
-     playful, approachable letterforms in place of the earlier sharp
-     grotesque. */
+  /* Bold geometric display font (next/font-loaded Poppins, see
+     app/layout.tsx) for headlines. */
   --font-display: var(--font-display-sans), ui-sans-serif, system-ui,
     -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 

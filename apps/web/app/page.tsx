@@ -17,23 +17,18 @@ import {
 import Reveal from "../components/Reveal";
 import { blogPostsByDate } from "../lib/blog";
 import { coveredDestinationCount, destinations } from "../lib/destinations";
-import { destinationLabelFor } from "../lib/destination-label";
-import { resolveTripCheck } from "../lib/trip-check";
 import heroImage from "../public/images/hero-travel.jpg";
 
 const STAT_ICONS = [ScaleIcon, GlobeIcon, ShieldCheckIcon];
+const STAT_HREFS = ["/rules/90-180-rule", "/sources", "/methodology"];
 
 export default async function HomePage() {
   const t = await getTranslations();
-  const stats = t.raw("home.stats") as Array<{ n: string; label: string }>;
+  const stats = t.raw("home.stats") as Array<{ n: string; label: string; cta: string }>;
   const trustBadges = t.raw("home.trustBadges") as string[];
   const tripCheckBullets = t.raw("home.tools.tripCheck.bullets") as string[];
   const calculatorBullets = t.raw("home.tools.calculator.bullets") as string[];
   const faqItems = t.raw("faqPage.items") as Array<{ q: string; a: string }>;
-
-  // A real, precomputed example — not a mockup — so the "here's what you get"
-  // preview is exactly as honest as the live tool (AGENTS.md §3).
-  const example = resolveTripCheck("US", "GB", ["alcohol"]);
 
   const destinationsByRegion = destinations
     .filter((d) => d.status === "verified")
@@ -43,9 +38,9 @@ export default async function HomePage() {
     }, {});
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-6">
       <section className="relative -mt-4">
-        <div className="relative left-1/2 h-[560px] w-screen -translate-x-1/2 overflow-hidden sm:h-[600px]">
+        <div className="relative left-1/2 h-[380px] w-screen -translate-x-1/2 overflow-hidden sm:h-[420px]">
           <Image
             src={heroImage}
             alt=""
@@ -62,17 +57,17 @@ export default async function HomePage() {
               into the photo's darker mountain silhouette, where dark text
               needs the extra contrast. */}
           <div className="absolute inset-0 bg-gradient-to-b from-white/45 via-white/35 to-slate-50" />
-          <div className="relative z-10 mx-auto flex h-full max-w-2xl flex-col items-center px-4 pt-16 text-center sm:pt-20">
-            <span className="flex h-20 w-20 items-center justify-center rounded-full border-4 border-white bg-white shadow-lg">
-              <CompassIcon className="h-9 w-9 text-blue-700" />
+          <div className="relative z-10 mx-auto flex h-full max-w-2xl flex-col items-center px-4 pt-8 text-center sm:pt-10">
+            <span className="flex h-14 w-14 items-center justify-center rounded-full border-4 border-white bg-white shadow-lg">
+              <CompassIcon className="h-6 w-6 text-blue-700" />
             </span>
-            <h1 className="mt-5 font-display text-3xl font-extrabold tracking-tight text-slate-900 lg:text-5xl">
+            <h1 className="mt-3 font-display text-3xl font-extrabold tracking-tight text-slate-900 lg:text-5xl">
               {t("home.hero.h1")}
             </h1>
-            <p className="mt-4 max-w-lg text-sm leading-relaxed text-slate-600 lg:text-base">
+            <p className="mt-3 max-w-lg text-sm leading-relaxed text-slate-600 lg:text-base">
               {t("home.hero.sub")}
             </p>
-            <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <div className="mt-4 flex flex-wrap justify-center gap-3">
               <a
                 href="/trip-check"
                 className="rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:scale-[1.03] hover:bg-slate-700"
@@ -86,7 +81,7 @@ export default async function HomePage() {
                 {t("home.hero.ctaSecondary")}
               </a>
             </div>
-            <span className="mt-5 inline-flex items-center gap-1.5 rounded-full bg-white/80 px-3 py-1 text-[11px] font-semibold tracking-wide text-slate-500 uppercase backdrop-blur">
+            <span className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-white/80 px-3 py-1 text-[11px] font-semibold tracking-wide text-slate-500 uppercase backdrop-blur">
               {t("home.hero.eyebrow")}
             </span>
           </div>
@@ -94,27 +89,33 @@ export default async function HomePage() {
       </section>
 
       <Reveal>
-        <section className="mx-auto max-w-xl rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-5">
+        <section className="mx-auto max-w-xl rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
           <HeroQuickCheck />
         </section>
       </Reveal>
 
       <Reveal>
-        <section className="mx-auto grid max-w-3xl gap-3 sm:grid-cols-3">
+        <section className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-3">
           {stats.map((s, i) => {
             const Icon = STAT_ICONS[i % STAT_ICONS.length]!;
             return (
               <div
                 key={i}
-                className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
+                className="flex flex-col items-center rounded-2xl border border-slate-200 bg-white px-6 py-8 text-center shadow-sm"
               >
-                <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-blue-50 text-blue-700">
-                  <Icon className="h-3.5 w-3.5" />
+                <span className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-50 text-slate-900 shadow-[0_2px_8px_rgba(15,23,42,0.08)]">
+                  <Icon className="h-7 w-7" />
                 </span>
-                <div className="mt-3 font-display text-3xl font-extrabold text-slate-900 tabular-nums">
+                <div className="mt-4 font-display text-4xl font-extrabold text-slate-900 tabular-nums">
                   <CountUp value={s.n} />
                 </div>
-                <div className="mt-1.5 text-[11px] leading-snug text-slate-500">{s.label}</div>
+                <div className="mt-2 max-w-[22ch] text-sm leading-snug text-slate-500">{s.label}</div>
+                <a
+                  href={STAT_HREFS[i % STAT_HREFS.length]}
+                  className="mt-5 inline-flex items-center gap-1 rounded-full border border-slate-300 px-4 py-1.5 text-xs font-semibold text-slate-700 transition hover:border-slate-900 hover:bg-slate-900 hover:text-white"
+                >
+                  {s.cta} <span aria-hidden="true">→</span>
+                </a>
               </div>
             );
           })}
@@ -122,55 +123,6 @@ export default async function HomePage() {
       </Reveal>
 
       <GlobeStory />
-
-      <Reveal>
-        <section>
-          <h2 className="text-center font-display text-xl font-bold text-slate-900">
-            {t("home.previewHeading")}
-          </h2>
-          <p className="mx-auto mt-2 max-w-lg text-center text-sm text-slate-500">
-            {t("home.previewSub")}
-          </p>
-          <div className="mx-auto mt-6 max-w-lg overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md">
-            <div className="flex items-center gap-1.5 border-b border-slate-100 bg-slate-50 px-4 py-2.5">
-              <span className="h-2.5 w-2.5 rounded-full bg-red-300" />
-              <span className="h-2.5 w-2.5 rounded-full bg-amber-300" />
-              <span className="h-2.5 w-2.5 rounded-full bg-emerald-300" />
-              <span className="ml-2 text-[11px] text-slate-400">
-                {t("home.previewBarLabel")}
-              </span>
-            </div>
-            <div className="grid gap-3 p-5 sm:grid-cols-2">
-              <PreviewCard
-                label={t("home.previewEntry")}
-                value={t(`tripCheck.basis${example.basis === "eta_required" ? "EtaRequired" : "VisaFree"}`, {
-                  destination: destinationLabelFor(example.destination) ?? example.destination,
-                })}
-              />
-              <PreviewCard
-                label={t("home.previewStay")}
-                value={
-                  example.stayPolicy?.kind === "fixed_per_entry"
-                    ? t("tripCheck.stayFixedPerEntry", { maxDays: example.stayPolicy.maxDays })
-                    : ""
-                }
-              />
-              {example.items[0]?.match ? (
-                <PreviewCard
-                  label={t("home.previewItem", { item: example.items[0].query })}
-                  value={t(`tripCheck.verdict.${example.items[0].match.verdict}`)}
-                  span
-                />
-              ) : null}
-            </div>
-            <div className="border-t border-slate-100 bg-slate-50 px-5 py-3 text-center">
-              <a href="/trip-check" className="text-xs font-medium text-blue-700 hover:underline">
-                {t("home.previewCta")}
-              </a>
-            </div>
-          </div>
-        </section>
-      </Reveal>
 
       <Reveal>
         <section>
@@ -333,15 +285,6 @@ export default async function HomePage() {
           </div>
         </section>
       </Reveal>
-    </div>
-  );
-}
-
-function PreviewCard({ label, value, span }: { label: string; value: string; span?: boolean }) {
-  return (
-    <div className={`rounded-xl bg-slate-50 p-3 ${span ? "sm:col-span-2" : ""}`}>
-      <div className="text-[11px] text-slate-500">{label}</div>
-      <div className="mt-0.5 text-sm font-medium text-slate-900">{value}</div>
     </div>
   );
 }

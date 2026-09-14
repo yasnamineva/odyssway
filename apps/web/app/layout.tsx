@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
-import { Baloo_2 } from "next/font/google";
+import { Poppins } from "next/font/google";
 import type { ReactNode } from "react";
 import SiteNav from "../components/SiteNav";
 import "./globals.css";
 
-/** Soft, rounded display font (misty-travel-journal reference direction) —
- * self-hosted at build time by next/font (no external <link>/CSP concerns).
+/** Bold geometric-sans display font — replaces the earlier rounded Baloo 2
+ * (too soft/playful for a compliance product; read as generic "AI slop").
+ * Self-hosted at build time by next/font (no external <link>/CSP concerns).
  * Exposed as its own variable (not `--font-display` directly) because
  * Tailwind's `@theme` in globals.css already owns that name; see the
  * `--font-display` token there, which wraps this variable with sans-serif
  * fallbacks. */
-const displayFont = Baloo_2({
+const displayFont = Poppins({
   subsets: ["latin"],
   weight: ["600", "700", "800"],
   variable: "--font-display-sans",

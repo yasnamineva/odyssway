@@ -8,7 +8,12 @@ import { alpha2ForFeatureId, countryFeature, WORLD_COUNTRIES } from "../lib/worl
 
 const WIDTH = 960;
 const HEIGHT = 460;
-const SCHENGEN_FILL = "#d3e0ee";
+/** Baseline tint (shown whenever Schengen isn't specifically filtered out)
+ * vs. a bolder shade + thicker stroke when the Schengen pill is actively
+ * selected — without this distinction, clicking "Schengen Area" produced
+ * no visible change at all, since the bloc was already tinted by default. */
+const SCHENGEN_FILL_DEFAULT = "#d3e0ee";
+const SCHENGEN_FILL_ACTIVE = "#4a6f96";
 
 /** One color per region — pins are grouped/legended by this, not by
  * destination, so the legend stays a handful of items even as coverage
@@ -87,6 +92,7 @@ export default function DestinationsMap() {
       ? pins.filter((p) => p.region === activeFilter)
       : pins;
   const showSchengen = !activeFilter || activeFilter === SCHENGEN_KEY;
+  const schengenActive = activeFilter === SCHENGEN_KEY;
   const showPins = activeFilter !== SCHENGEN_KEY;
 
   return (
@@ -146,9 +152,15 @@ export default function DestinationsMap() {
             <path
               key={`${f.id}-${i}`}
               d={path(f) ?? undefined}
-              fill={isSchengen && showSchengen ? SCHENGEN_FILL : "#e6edf5"}
+              fill={
+                isSchengen && showSchengen
+                  ? schengenActive
+                    ? SCHENGEN_FILL_ACTIVE
+                    : SCHENGEN_FILL_DEFAULT
+                  : "#e6edf5"
+              }
               stroke="#ffffff"
-              strokeWidth={0.5}
+              strokeWidth={isSchengen && schengenActive ? 1.25 : 0.5}
             />
           );
         })}

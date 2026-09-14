@@ -237,9 +237,21 @@
       "heading": "Two fields, straight to your answer"
     },
     "stats": [
-      { "n": "90/180", "label": "the EU rule, computed exactly as Art. 6(1) defines it" },
-      { "n": "29", "label": "Schengen countries covered, accession dates included" },
-      { "n": "0", "label": "trip details stored on our servers — it all stays in your browser" }
+      {
+        "n": "90/180",
+        "label": "the EU rule, computed exactly as Art. 6(1) defines it",
+        "cta": "Read the rule"
+      },
+      {
+        "n": "29",
+        "label": "Schengen countries covered, accession dates included",
+        "cta": "See coverage"
+      },
+      {
+        "n": "0",
+        "label": "trip details stored on our servers — it all stays in your browser",
+        "cta": "How we work"
+      }
     ],
     "story": {
       "sectionIndex": "( 02 )",
@@ -265,13 +277,6 @@
         }
       ]
     },
-    "previewHeading": "See it before you use it",
-    "previewSub": "A real result from Trip Check — not a mockup. Same data, same citations, same tool you'd get below.",
-    "previewBarLabel": "trip-check — US citizen → United Kingdom",
-    "previewEntry": "Can you go?",
-    "previewStay": "For how long?",
-    "previewItem": "Bringing {item}?",
-    "previewCta": "Try your own trip →",
     "toolsHeading": "Two tools, two different jobs",
     "tools": {
       "tripCheck": {

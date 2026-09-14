@@ -42,7 +42,7 @@ export default function CountUp({ value }: { value: string }) {
         };
         requestAnimationFrame(step);
       },
-      { threshold: 0.4 },
+      { threshold: 0.15 },
     );
     observer.observe(el);
     return () => observer.disconnect();
