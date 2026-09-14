@@ -270,7 +270,13 @@
       }
     },
     "trustBadges": ["Cited to official sources", "Nothing stored on our servers", "Free — no account needed"],
-    "trustBadgeCoverage": "{count} destinations verified — growing weekly"
+    "trustBadgeCoverage": "{count} destinations verified — growing weekly",
+    "coverageMap": {
+      "heading": "Where Trip Check covers",
+      "sub": "Every pin is a destination with cited, verified entry and customs rules — plus the entire Schengen Area as one bloc. Nowhere else on the map gets a guess; it gets the honest not-yet-covered state instead.",
+      "listHeading": "Verified destinations, by region",
+      "cta": "See every source →"
+    }
   },
   "calc": {
     "pageH1": "Schengen 90/180 day calculator",

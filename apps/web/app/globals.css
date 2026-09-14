@@ -1,39 +1,40 @@
 @import "tailwindcss";
 
 /*
- * Visual direction (design/references moodboard): clean modern corporate —
- * warm paper surfaces and deep ink-navy stay, but headlines moved from an
- * editorial serif to a bold grotesque sans, with card-based stat blocks and
- * a pill-shaped nav replacing plainer bordered layouts. Implemented by
- * re-mapping the default slate/blue scales so every component inherits the
- * palette consistently.
+ * Visual direction (design/references moodboard): misty travel-journal —
+ * soft cool blue-gray surfaces (evoking the mountain-fog reference photo),
+ * a rounded playful display font, pin-marker maps, and circular imagery,
+ * replacing the earlier warm-paper/sharp-grotesque direction. Implemented
+ * by re-mapping the default slate/blue scales so every component inherits
+ * the palette consistently.
  */
 @theme {
   --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
-  /* Bold modern grotesque (next/font-loaded Plus Jakarta Sans, see
-     app/layout.tsx) for headlines, replacing the earlier editorial-serif
-     direction with a cleaner, punchier look. */
+  /* Rounded, soft display font (next/font-loaded Baloo 2, see
+     app/layout.tsx) for headlines — the misty-travel-journal reference's
+     playful, approachable letterforms in place of the earlier sharp
+     grotesque. */
   --font-display: var(--font-display-sans), ui-sans-serif, system-ui,
     -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
-  /* Warm paper → ink-navy ramp (replaces cool slate) */
-  --color-slate-50: #f7f4ec;
-  --color-slate-100: #efe9dc;
-  --color-slate-200: #e3dbc7;
-  --color-slate-300: #cfc4ab;
-  --color-slate-400: #9b948a;
-  --color-slate-500: #6d6c64;
-  --color-slate-600: #545760;
-  --color-slate-700: #3e4450;
-  --color-slate-800: #2a3444;
-  --color-slate-900: #1c2a3a;
+  /* Cool misty blue-gray → deep ink ramp (replaces the warm paper tones) */
+  --color-slate-50: #f3f7fb;
+  --color-slate-100: #e6edf5;
+  --color-slate-200: #d3e0ee;
+  --color-slate-300: #aec2d9;
+  --color-slate-400: #8298b3;
+  --color-slate-500: #5c7086;
+  --color-slate-600: #445468;
+  --color-slate-700: #303c4d;
+  --color-slate-800: #202836;
+  --color-slate-900: #131924;
 
-  /* Navy tints for informational surfaces and focus states */
-  --color-blue-50: #eef1f6;
-  --color-blue-100: #dce3ee;
-  --color-blue-200: #b9c8de;
-  --color-blue-500: #27436b;
+  /* Misty teal-blue tints for informational surfaces, links, and focus states */
+  --color-blue-50: #eaf4f6;
+  --color-blue-100: #d3e9ed;
+  --color-blue-200: #a8d3db;
+  --color-blue-500: #17798c;
 
   --animate-fade-in-up: fade-in-up 0.45s ease-out;
 }

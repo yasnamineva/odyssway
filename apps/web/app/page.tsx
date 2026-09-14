@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import type { ReactNode } from "react";
 import CountUp from "../components/CountUp";
+import DestinationsMap from "../components/DestinationsMapLoader";
 import FaqAccordion from "../components/FaqAccordion";
 import GlobeStory from "../components/GlobeStory";
 import HeroQuickCheck from "../components/HeroQuickCheck";
@@ -14,7 +15,7 @@ import {
   ShieldCheckIcon,
 } from "../components/icons";
 import Reveal from "../components/Reveal";
-import { coveredDestinationCount } from "../lib/destinations";
+import { coveredDestinationCount, destinations } from "../lib/destinations";
 import { destinationLabelFor } from "../lib/destination-label";
 import { resolveTripCheck } from "../lib/trip-check";
 import heroImage from "../public/images/hero-travel.jpg";
@@ -32,6 +33,13 @@ export default async function HomePage() {
   // A real, precomputed example — not a mockup — so the "here's what you get"
   // preview is exactly as honest as the live tool (AGENTS.md §3).
   const example = resolveTripCheck("US", "GB", ["alcohol"]);
+
+  const destinationsByRegion = destinations
+    .filter((d) => d.status === "verified")
+    .reduce<Record<string, string[]>>((acc, d) => {
+      (acc[d.region] ??= []).push(d.name);
+      return acc;
+    }, {});
 
   return (
     <div className="space-y-10">
@@ -200,6 +208,49 @@ export default async function HomePage() {
               {label}
             </span>
           ))}
+        </section>
+      </Reveal>
+
+      <Reveal>
+        <section>
+          <h2 className="text-center font-display text-2xl font-bold text-slate-900">
+            {t("home.coverageMap.heading")}
+          </h2>
+          <p className="mx-auto mt-2 max-w-lg text-center text-sm text-slate-500">
+            {t("home.coverageMap.sub")}
+          </p>
+          <div className="mx-auto mt-6 max-w-4xl overflow-hidden rounded-2xl border border-slate-200 bg-white p-5 shadow-sm lg:p-6">
+            <DestinationsMap />
+          </div>
+          <div className="mx-auto mt-4 max-w-4xl rounded-2xl border border-slate-200 bg-white p-5 shadow-sm lg:p-6">
+            <h3 className="font-display text-sm font-bold text-slate-900">
+              {t("home.coverageMap.listHeading")}
+            </h3>
+            <div className="mt-3 grid gap-x-6 gap-y-3 sm:grid-cols-2 lg:grid-cols-4">
+              {Object.entries(destinationsByRegion).map(([region, names]) => (
+                <div key={region}>
+                  <div className="text-[10px] font-semibold tracking-wide text-slate-400 uppercase">
+                    {region}
+                  </div>
+                  <ul className="mt-1 space-y-0.5">
+                    {names.map((name) => (
+                      <li key={name} className="text-sm text-slate-600">
+                        {name}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="mt-5 text-center">
+            <a
+              href="/sources"
+              className="inline-flex items-center gap-1.5 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-700"
+            >
+              {t("home.coverageMap.cta")}
+            </a>
+          </div>
         </section>
       </Reveal>
 
