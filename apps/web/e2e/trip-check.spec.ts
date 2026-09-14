@@ -100,3 +100,30 @@ test("submit is disabled until both nationality and destination are chosen", asy
   await pickCombobox(page, "tc-destination", "Schengen Area", "Schengen Area (any country, unspecified)");
   await expect(page.getByTestId("tc-submit")).toBeEnabled();
 });
+
+test("a nationality can't be picked as its own destination, and vice versa", async ({ page }) => {
+  await page.goto("/trip-check");
+  await pickCombobox(page, "tc-nationality", "United States", "United States");
+  await page.getByTestId("tc-destination").fill("United States");
+  await expect(page.getByRole("option", { name: "United States", exact: true })).toHaveCount(0);
+
+  await page.getByTestId("tc-destination").fill("");
+  await pickCombobox(page, "tc-destination", "Canada", "Canada");
+  await page.getByTestId("tc-nationality").fill("Canada");
+  await expect(page.getByRole("option", { name: "Canada", exact: true })).toHaveCount(0);
+});
+
+test("the item field suggests known customs items for the chosen destination as you type", async ({
+  page,
+}) => {
+  await page.goto("/trip-check");
+  await pickCombobox(page, "tc-nationality", "United States", "United States");
+  await pickCombobox(page, "tc-destination", "Japan", "Japan");
+
+  const itemInput = page.getByTestId("tc-item-input");
+  await itemInput.fill("adder");
+  await expect(page.getByTestId("tc-item-suggestions").getByText("adderall", { exact: true })).toBeVisible();
+  await page.getByTestId("tc-item-suggestions").getByText("adderall", { exact: true }).click();
+
+  await expect(page.getByTestId("tc-item-tags")).toContainText("adderall");
+});

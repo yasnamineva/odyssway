@@ -48,10 +48,12 @@ export default function HeroQuickCheck() {
               noResultsLabel={t("noMatches")}
               groups={[
                 {
-                  options: publishedNationalities.map((n) => ({
-                    value: n.nationality,
-                    label: n.name,
-                  })),
+                  options: publishedNationalities
+                    .filter((n) => n.nationality !== destination)
+                    .map((n) => ({
+                      value: n.nationality,
+                      label: n.name,
+                    })),
                 },
               ]}
             />
@@ -74,19 +76,23 @@ export default function HeroQuickCheck() {
                 {
                   label: t("toGroupDestinations"),
                   options: destinations
-                    .filter((d) => d.status === "verified")
+                    .filter((d) => d.status === "verified" && d.code !== nationality)
                     .map((d) => ({ value: d.code, label: d.name })),
                 },
                 {
                   label: t("toGroupSchengenStates"),
-                  options: schengenCountries.map((c) => ({ value: c.code, label: c.name })),
+                  options: schengenCountries
+                    .filter((c) => c.code !== nationality)
+                    .map((c) => ({ value: c.code, label: c.name })),
                 },
                 {
                   label: t("toGroupComingSoon"),
-                  options: queuedDestinations.map((d) => ({
-                    value: d.code,
-                    label: `${d.name} ${t("comingSoonSuffix")}`,
-                  })),
+                  options: queuedDestinations
+                    .filter((d) => d.code !== nationality)
+                    .map((d) => ({
+                      value: d.code,
+                      label: `${d.name} ${t("comingSoonSuffix")}`,
+                    })),
                 },
               ]}
             />

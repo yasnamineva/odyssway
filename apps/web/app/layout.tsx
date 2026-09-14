@@ -1,8 +1,21 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import type { ReactNode } from "react";
 import "./globals.css";
+
+/** Bold, modern grotesque for headlines — self-hosted at build time by
+ * next/font (no external <link>/CSP concerns). Exposed as its own variable
+ * (not `--font-display` directly) because Tailwind's `@theme` in
+ * globals.css already owns that name; see the `--font-display` token there,
+ * which wraps this variable with sans-serif fallbacks. */
+const displayFont = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["700", "800"],
+  variable: "--font-display-sans",
+  display: "swap",
+});
 
 const OFFICIAL_CALCULATOR_URL =
   "https://ec.europa.eu/assets/home/visa-calculator/calculator.htm?lang=en";
@@ -42,7 +55,7 @@ export default async function RootLayout({
   const plausibleDomain = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
 
   return (
-    <html lang="en">
+    <html lang="en" className={displayFont.variable}>
       <head>
         {plausibleDomain ? (
           <script
@@ -55,31 +68,37 @@ export default async function RootLayout({
       <body className="bg-slate-50 text-slate-900 antialiased">
         <NextIntlClientProvider messages={messages}>
           <div className="flex min-h-dvh flex-col">
-            <header className="border-b border-slate-200">
-              <div className="mx-auto flex max-w-6xl flex-wrap items-baseline justify-between gap-2 px-4 py-5">
+            <header className="px-3 pt-3 sm:px-4 sm:pt-4">
+              <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 rounded-full border border-slate-200 bg-white/95 px-4 py-2.5 shadow-sm backdrop-blur">
                 <a
                   href="/"
-                  className="font-display text-xl font-bold tracking-tight text-slate-900"
+                  className="font-display text-lg font-extrabold tracking-tight text-slate-900"
                 >
                   {t("header.brand")}
                 </a>
-                <nav className="flex flex-wrap gap-x-4 gap-y-1">
-                  <a href="/trip-check" className="text-[13px] font-medium text-slate-600 hover:text-slate-900">
+                <nav className="hidden items-center gap-0.5 rounded-full bg-slate-100 p-1 md:flex">
+                  <a href="/trip-check" className="rounded-full px-3 py-1.5 text-[13px] font-medium text-slate-600 transition hover:bg-white hover:text-slate-900 hover:shadow-sm">
                     {t("header.nav.tripCheck")}
                   </a>
-                  <a href="/calculator" className="text-[13px] font-medium text-slate-600 hover:text-slate-900">
+                  <a href="/calculator" className="rounded-full px-3 py-1.5 text-[13px] font-medium text-slate-600 transition hover:bg-white hover:text-slate-900 hover:shadow-sm">
                     {t("header.nav.calculator")}
                   </a>
-                  <a href="/rules/90-180-rule" className="text-[13px] font-medium text-slate-600 hover:text-slate-900">
+                  <a href="/rules/90-180-rule" className="rounded-full px-3 py-1.5 text-[13px] font-medium text-slate-600 transition hover:bg-white hover:text-slate-900 hover:shadow-sm">
                     {t("header.nav.rule")}
                   </a>
-                  <a href="/ees" className="text-[13px] font-medium text-slate-600 hover:text-slate-900">
+                  <a href="/ees" className="rounded-full px-3 py-1.5 text-[13px] font-medium text-slate-600 transition hover:bg-white hover:text-slate-900 hover:shadow-sm">
                     {t("header.nav.ees")}
                   </a>
-                  <a href="/etias/status" className="text-[13px] font-medium text-slate-600 hover:text-slate-900">
+                  <a href="/etias/status" className="rounded-full px-3 py-1.5 text-[13px] font-medium text-slate-600 transition hover:bg-white hover:text-slate-900 hover:shadow-sm">
                     {t("header.nav.etias")}
                   </a>
                 </nav>
+                <a
+                  href="/trip-check"
+                  className="rounded-full bg-slate-900 px-4 py-2 text-[13px] font-semibold whitespace-nowrap text-white transition hover:bg-slate-700"
+                >
+                  {t("home.hero.ctaPrimary")}
+                </a>
               </div>
             </header>
             <main className="mx-auto w-full max-w-6xl flex-1 px-4 pt-8 pb-12">

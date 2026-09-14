@@ -35,7 +35,7 @@ export default async function HomePage() {
 
   return (
     <div className="space-y-10">
-      <section className="relative -mt-8">
+      <section className="relative">
         <div className="relative left-1/2 h-[380px] w-screen -translate-x-1/2 overflow-hidden sm:h-[400px] lg:h-[440px]">
           <Image
             src={heroImage}
@@ -82,16 +82,21 @@ export default async function HomePage() {
       </section>
 
       <Reveal>
-        <section className="mx-auto grid max-w-3xl grid-cols-3 divide-x divide-slate-200 rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <section className="mx-auto grid max-w-3xl gap-3 sm:grid-cols-3">
           {stats.map((s, i) => {
             const Icon = STAT_ICONS[i % STAT_ICONS.length]!;
             return (
-              <div key={i} className="px-3 py-5 text-center">
-                <Icon className="mx-auto h-5 w-5 text-blue-700" />
-                <div className="mt-2 font-display text-2xl font-bold text-slate-900 tabular-nums">
+              <div
+                key={i}
+                className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
+              >
+                <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-blue-50 text-blue-700">
+                  <Icon className="h-3.5 w-3.5" />
+                </span>
+                <div className="mt-3 font-display text-3xl font-extrabold text-slate-900 tabular-nums">
                   <CountUp value={s.n} />
                 </div>
-                <div className="mt-1 text-[11px] leading-snug text-slate-500">{s.label}</div>
+                <div className="mt-1.5 text-[11px] leading-snug text-slate-500">{s.label}</div>
               </div>
             );
           })}

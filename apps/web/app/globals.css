@@ -1,16 +1,21 @@
 @import "tailwindcss";
 
 /*
- * Visual direction (design/references moodboard): trust-professional
- * editorial — warm paper surfaces, deep ink-navy, serif display headings,
- * restrained accents. Implemented by re-mapping the default slate/blue
- * scales so every component inherits the palette consistently.
+ * Visual direction (design/references moodboard): clean modern corporate —
+ * warm paper surfaces and deep ink-navy stay, but headlines moved from an
+ * editorial serif to a bold grotesque sans, with card-based stat blocks and
+ * a pill-shaped nav replacing plainer bordered layouts. Implemented by
+ * re-mapping the default slate/blue scales so every component inherits the
+ * palette consistently.
  */
 @theme {
   --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
-  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
-    Cambria, "Times New Roman", serif;
+  /* Bold modern grotesque (next/font-loaded Plus Jakarta Sans, see
+     app/layout.tsx) for headlines, replacing the earlier editorial-serif
+     direction with a cleaner, punchier look. */
+  --font-display: var(--font-display-sans), ui-sans-serif, system-ui,
+    -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
   /* Warm paper → ink-navy ramp (replaces cool slate) */
   --color-slate-50: #f7f4ec;

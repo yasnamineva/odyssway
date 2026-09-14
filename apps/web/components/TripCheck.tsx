@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import { useEffect, useMemo, useState } from "react";
 import { schengenCountries } from "../lib/countries";
 import { destinationLabelFor } from "../lib/destination-label";
-import { EU_CUSTOMS_CODE, destinations, queuedDestinations } from "../lib/destinations";
+import { EU_CUSTOMS_CODE, customsItems, destinations, queuedDestinations } from "../lib/destinations";
 import { publishedNationalities } from "../lib/nationalities";
 import SearchableSelect from "./SearchableSelect";
 import {
@@ -47,8 +47,34 @@ export default function TripCheck({
   const [nationality, setNationality] = useState(initialNationality ?? "");
   const [destination, setDestination] = useState(initialDestination ?? "");
   const [itemInput, setItemInput] = useState("");
+  const [itemSuggestOpen, setItemSuggestOpen] = useState(false);
   const [items, setItems] = useState<string[]>([]);
   const [submitted, setSubmitted] = useState(Boolean(initialNationality && initialDestination));
+
+  // Every verified synonym for the chosen destination's customs items — the
+  // pool suggestions are filtered from as the user types. Free text is still
+  // always allowed (Enter adds whatever was typed, in or out of this list);
+  // suggestions are a shortcut, not a constraint (AGENTS.md §2: a pair not
+  // being covered is a valid, honest answer, never a dead end).
+  const itemSuggestionPool = useMemo(() => {
+    if (!destination) return [];
+    const isSchengen =
+      destination === SCHENGEN_DESTINATION || schengenCountries.some((c) => c.code === destination);
+    const customsDestination = isSchengen ? EU_CUSTOMS_CODE : destination;
+    const pool = new Set<string>();
+    customsItems
+      .filter((it) => it.destination === customsDestination && it.status === "verified")
+      .forEach((it) => it.names.forEach((n) => pool.add(n)));
+    return [...pool].sort();
+  }, [destination]);
+
+  const itemSuggestions = useMemo(() => {
+    const q = itemInput.trim().toLowerCase();
+    if (!q) return [];
+    return itemSuggestionPool
+      .filter((n) => n.toLowerCase().includes(q) && !items.includes(n))
+      .slice(0, 8);
+  }, [itemInput, itemSuggestionPool, items]);
 
   const result: TripCheckResult | null = useMemo(() => {
     if (!submitted || !nationality || !destination) return null;
@@ -73,10 +99,11 @@ export default function TripCheck({
     }
   }, [result]);
 
-  const addItem = () => {
-    const v = itemInput.trim();
+  const addItem = (value?: string) => {
+    const v = (value ?? itemInput).trim();
     if (v && !items.includes(v)) setItems((prev) => [...prev, v]);
     setItemInput("");
+    setItemSuggestOpen(false);
   };
 
   const removeItem = (item: string) => setItems((prev) => prev.filter((i) => i !== item));
@@ -119,10 +146,12 @@ export default function TripCheck({
               noResultsLabel={t("noMatches")}
               groups={[
                 {
-                  options: publishedNationalities.map((n) => ({
-                    value: n.nationality,
-                    label: n.name,
-                  })),
+                  options: publishedNationalities
+                    .filter((n) => n.nationality !== destination)
+                    .map((n) => ({
+                      value: n.nationality,
+                      label: n.name,
+                    })),
                 },
               ]}
             />
@@ -147,19 +176,23 @@ export default function TripCheck({
                 {
                   label: t("toGroupDestinations"),
                   options: destinations
-                    .filter((d) => d.status === "verified")
+                    .filter((d) => d.status === "verified" && d.code !== nationality)
                     .map((d) => ({ value: d.code, label: d.name })),
                 },
                 {
                   label: t("toGroupSchengenStates"),
-                  options: schengenCountries.map((c) => ({ value: c.code, label: c.name })),
+                  options: schengenCountries
+                    .filter((c) => c.code !== nationality)
+                    .map((c) => ({ value: c.code, label: c.name })),
                 },
                 {
                   label: t("toGroupComingSoon"),
-                  options: queuedDestinations.map((d) => ({
-                    value: d.code,
-                    label: `${d.name} ${t("comingSoonSuffix")}`,
-                  })),
+                  options: queuedDestinations
+                    .filter((d) => d.code !== nationality)
+                    .map((d) => ({
+                      value: d.code,
+                      label: `${d.name} ${t("comingSoonSuffix")}`,
+                    })),
                 },
               ]}
             />
@@ -169,25 +202,54 @@ export default function TripCheck({
             <label className={labelClass} htmlFor="tc-item">
               {t("bringingLabel")}
             </label>
-            <div className="flex gap-2">
-              <input
-                id="tc-item"
-                data-testid="tc-item-input"
-                type="text"
-                className={inputClass}
-                placeholder={t("bringingPlaceholder")}
-                value={itemInput}
-                onChange={(e) => setItemInput(e.target.value)}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") {
-                    e.preventDefault();
-                    addItem();
-                  }
-                }}
-              />
+            <div className="relative flex gap-2">
+              <div className="relative min-w-0 flex-1">
+                <input
+                  id="tc-item"
+                  data-testid="tc-item-input"
+                  type="text"
+                  autoComplete="off"
+                  className={inputClass}
+                  placeholder={t("bringingPlaceholder")}
+                  value={itemInput}
+                  onChange={(e) => {
+                    setItemInput(e.target.value);
+                    setItemSuggestOpen(true);
+                  }}
+                  onFocus={() => setItemSuggestOpen(true)}
+                  onBlur={() => setItemSuggestOpen(false)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      e.preventDefault();
+                      addItem();
+                    } else if (e.key === "Escape") {
+                      setItemSuggestOpen(false);
+                    }
+                  }}
+                />
+                {itemSuggestOpen && itemSuggestions.length > 0 && (
+                  <ul
+                    data-testid="tc-item-suggestions"
+                    className="absolute z-20 mt-1 max-h-56 w-full overflow-auto rounded-lg border border-slate-200 bg-white py-1 shadow-lg"
+                  >
+                    {itemSuggestions.map((s) => (
+                      <li
+                        key={s}
+                        role="option"
+                        aria-selected={false}
+                        onMouseDown={(e) => e.preventDefault()}
+                        onClick={() => addItem(s)}
+                        className="cursor-pointer px-3 py-1.5 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-900"
+                      >
+                        {s}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
               <button
                 type="button"
-                onClick={addItem}
+                onClick={() => addItem()}
                 className="shrink-0 rounded-lg border border-slate-300 px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50"
               >
                 {t("addItem")}

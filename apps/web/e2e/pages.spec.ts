@@ -110,10 +110,11 @@ test("header navigation reaches the guide pages", async ({ page }) => {
 
 test("landing page links into both tools", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("link", { name: "Start a Trip Check" })).toHaveAttribute(
-    "href",
-    "/trip-check",
-  );
+  // The header nav also has a "Start a Trip Check" CTA (site-wide, every
+  // page) — scope to the hero itself to check that specific link.
+  await expect(
+    page.getByRole("main").getByRole("link", { name: "Start a Trip Check" }),
+  ).toHaveAttribute("href", "/trip-check");
   await expect(
     page.getByRole("link", { name: "Open the Schengen Calculator" }),
   ).toHaveAttribute("href", "/calculator");
