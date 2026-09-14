@@ -322,6 +322,24 @@
     "status": "verified"
   },
   {
+    "slug": "food-plant-gb",
+    "names": ["fruit", "vegetables", "nuts", "seeds", "mango", "banana", "citrus", "plants"],
+    "destination": "GB",
+    "category": "food_plant",
+    "verdict": "depends",
+    "limits": {
+      "description": "From the EU, Switzerland, or Liechtenstein: fruit, vegetables, and nuts/seeds may be brought in for personal consumption with no certificate needed. From all other (non-EU) countries: most fruit, vegetables, nuts, and seeds require a phytosanitary certificate issued by plant-health authorities in the departure country — but a specific named list is exempt from that requirement: pineapple, kiwi, coconut, citrus fruits (oranges, lemons, limes, grapefruit), kumquat, persimmon, durian, curry leaves, banana and plantain, mango, dates, passion fruit, and guava. Also exempt: processed/packaged plant products (e.g. packaged salads, frozen plant material), peeled or processed nuts and nut butters, and certain grains such as rice."
+    },
+    "notes": "The named non-EU exemption list is specific and non-obvious — a traveler bringing a fresh apple or a bag of raw almonds from outside the EU would need a certificate they almost certainly don't have, while the same traveler bringing a mango or a banana is fine. No quantity limit for any category is stated on this source.",
+    "legal_source": {
+      "name": "gov.uk — Bringing fruit, vegetables, nuts and seeds into Great Britain",
+      "url": "https://www.gov.uk/bringing-food-into-great-britain/fruit-vegetables-nuts-seeds"
+    },
+    "verified_at": "2026-09-14",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
     "slug": "e-cigarettes-gb",
     "names": [
       "e-cigarette",
@@ -495,6 +513,24 @@
       "url": "https://www.cbsa-asfc.gc.ca/services/fpa-apa/bringing-apporter-fpa-eng.html"
     },
     "verified_at": "2026-08-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "food-plant-ca",
+    "names": ["fruit", "vegetables", "plants", "seeds", "bulbs", "plant cuttings"],
+    "destination": "CA",
+    "category": "food_plant",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "CBSA does not give a blanket allowed/prohibited answer for fruit, vegetables, plants, or seeds — it states plainly that \"importing a single piece of fruit\" can be harmful, and that food, plant, and animal items must always be declared \"whether they are regulated or not.\" Plant cuttings, seeds, and bulbs are named as examples of commonly restricted items. Travelers must verify the specific product against the Canadian Food Inspection Agency's Automated Import Reference System (AIRS) before travelling — the actual answer depends on the exact product, its country of origin, and the province of entry."
+    },
+    "notes": "This is the honest, if less satisfying, answer this source supports: there is no single rule to state, and CBSA's own guidance is to check the item-specific AIRS database in advance rather than assume. Treat any single piece of fruit or plant material as needing to be declared regardless of quantity.",
+    "legal_source": {
+      "name": "CBSA — Food, plant and animal products",
+      "url": "https://www.cbsa-asfc.gc.ca/services/fpa-apa/bringing-apporter-fpa-eng.html"
+    },
+    "verified_at": "2026-09-14",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
   },
@@ -3192,6 +3228,21 @@
       "url": "https://www.dubaicustoms.gov.ae/en/OpenData/Publications/PassengerCustomsGuide.pdf"
     },
     "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "paan-nasvaar-ae",
+    "names": ["paan", "betel leaf", "betel nut", "nasvaar", "naswar", "gutka", "chewing tobacco"],
+    "destination": "AE",
+    "category": "tobacco",
+    "verdict": "prohibited",
+    "notes": "Dubai Customs' Passenger Customs Guide lists 'Nasvaar and Betel leaves (paan) of any kind' as an example of items not allowed for import by passengers — a distinct, absolute prohibition separate from the ordinary duty-free tobacco allowance (200 cigarettes / 50 cigars / 500g pipe tobacco). This is easy for travelers from South Asia to miss, since paan and nasvaar are common, everyday items at home that don't register as 'tobacco products' the way cigarettes do, and the ordinary tobacco allowance gives no hint that a specific product within that category is banned outright rather than just limited.",
+    "legal_source": {
+      "name": "Dubai Customs — Passenger Customs Guide, Version 6 (2025), \"Examples of items not allowed for import by passengers\"",
+      "url": "https://www.dubaicustoms.gov.ae/en/OpenData/Publications/PassengerCustomsGuide.pdf"
+    },
+    "verified_at": "2026-09-14",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
   },
