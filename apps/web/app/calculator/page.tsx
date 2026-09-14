@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import Calculator from "../../components/Calculator";
+import TravelerTabs from "../../components/TravelerTabs";
 
 /** Canonical tool URL (AGENTS.md §7) — same component as the home page. */
 export async function generateMetadata(): Promise<Metadata> {
@@ -37,7 +37,7 @@ export default async function CalculatorPage() {
       <h1 className="text-2xl font-bold tracking-tight text-slate-900">
         {t("calc.pageH1")}
       </h1>
-      <Calculator />
+      <TravelerTabs />
     </div>
   );
 }

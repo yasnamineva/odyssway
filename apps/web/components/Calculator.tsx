@@ -137,7 +137,7 @@ const KNOWN_CODES = new Set(
   [...schengenCountries, ...nonSchengenCountries].map((c) => c.code),
 );
 
-export default function Calculator() {
+export default function Calculator({ storageKey = STORAGE_KEY }: { storageKey?: string } = {}) {
   const t = useTranslations("calc");
   const locale = useLocale();
   const [mounted, setMounted] = useState(false);
@@ -160,7 +160,7 @@ export default function Calculator() {
       if (decoded.planExit) setPlanExit(decoded.planExit);
     } else {
       try {
-        const raw = localStorage.getItem(STORAGE_KEY);
+        const raw = localStorage.getItem(storageKey);
         if (raw) {
           const stored = JSON.parse(raw) as StoredState;
           if (stored.trips.length > 0) {
@@ -195,9 +195,9 @@ export default function Calculator() {
           desiredStay,
           passportExpiry,
         };
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(stored));
+        localStorage.setItem(storageKey, JSON.stringify(stored));
       } else {
-        localStorage.removeItem(STORAGE_KEY);
+        localStorage.removeItem(storageKey);
       }
     } catch {
       // Storage unavailable (private mode quota etc.) — saving is best-effort.

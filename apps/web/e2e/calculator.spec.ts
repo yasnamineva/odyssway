@@ -220,6 +220,34 @@ test("warns when approaching the 90-day limit and offers a calendar reminder", a
   expect(download.suggestedFilename()).toMatch(/^schengen-limit-\d{4}-\d{2}-\d{2}\.ics$/);
 });
 
+test("a second traveler gets an independent, renamable day count", async ({ page }) => {
+  await fillFirstTrip(page, "2026-06-01", "2026-06-10");
+  await setCheckDate(page, "2026-06-30");
+  await expect(page.getByTestId("days-used")).toHaveText("10");
+
+  // No tab bar yet with a single traveler.
+  await expect(page.getByRole("button", { name: "Traveler 1" })).toHaveCount(0);
+
+  await page.getByRole("button", { name: "+ Add traveler" }).click();
+  await expect(page.getByRole("button", { name: "Traveler 1" })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Traveler 2" })).toBeVisible();
+
+  // The new traveler's calculator is blank, not a copy of traveler 1's.
+  await expect(page.getByTestId("days-used")).toHaveText("0");
+  await expect(page.getByLabel("Entry date").first()).toHaveValue("");
+
+  await page.getByLabel("Traveler name").fill("Partner");
+  await expect(page.getByRole("button", { name: "Partner" })).toBeVisible();
+
+  await fillFirstTrip(page, "2026-07-01", "2026-07-03");
+  await setCheckDate(page, "2026-07-03");
+  await expect(page.getByTestId("days-used")).toHaveText("3");
+
+  // Removing the active traveler falls back to the remaining one.
+  await page.getByRole("button", { name: "Remove traveler" }).click();
+  await expect(page.getByRole("button", { name: "Traveler 1" })).toHaveCount(0); // tab bar hidden again at 1 traveler
+});
+
 test("works at mobile viewport", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await fillFirstTrip(page, "2026-06-01", "2026-06-10");

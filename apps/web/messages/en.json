@@ -287,8 +287,8 @@
       },
       "calculator": {
         "title": "Schengen 90/180 Calculator",
-        "body": "For travelers juggling multiple trips: the full rolling 180-day window, residence-permit exclusions, dual citizenship handling, a day-by-day visual timeline, PDF export, and reminders.",
-        "bullets": ["Multi-trip tracking", "PDF border report", "Passport-expiry reminders", "Shareable links"],
+        "body": "For travelers juggling multiple trips — or travelling as a group: the full rolling 180-day window, residence-permit exclusions, dual citizenship handling, an independent day count per traveler, a day-by-day visual timeline, PDF export, and reminders.",
+        "bullets": ["Multi-trip tracking", "Multi-traveler mode", "PDF border report", "Passport-expiry reminders", "Shareable links"],
         "cta": "Open the calculator"
       }
     },
@@ -308,6 +308,13 @@
   },
   "calc": {
     "pageH1": "Schengen 90/180 day calculator",
+    "travelers": {
+      "addTraveler": "+ Add traveler",
+      "removeTraveler": "Remove traveler",
+      "defaultName": "Traveler {n}",
+      "renameLabel": "Traveler name",
+      "note": "Each traveler gets an independent day count — useful when you're travelling with someone whose passport, visa basis, or residence permit differs from yours. Switching tabs clears unsaved entries for the traveler you're leaving — turn on \"remember on this device\" (below) for each traveler you don't want to re-enter."
+    },
     "scopeTitle": "What to enter",
     "scopeNote": "Add your trips to Europe, including your current one if you're there now. Picking the country is optional but recommended: stays in non-Schengen countries (for example Ireland, Cyprus or the UK) are automatically excluded from the 90-day count, and recent joiners like Bulgaria, Romania and Croatia are handled correctly for dates before they joined Schengen.",
     "scopeSource": "Rule source: European Commission, short-stay calculator user manual",
