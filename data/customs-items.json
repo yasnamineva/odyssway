@@ -3775,6 +3775,21 @@
     "status": "verified"
   },
   {
+    "slug": "cannabis-sa",
+    "names": ["cannabis", "marijuana", "weed", "thc", "hashish", "cbd", "cannabidiol"],
+    "destination": "SA",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "ZATCA's own traveler-facing customs guidance lists 'alcohol and drugs of all kinds' among prohibited items, warning that smuggling any prohibited item carries penalties including imprisonment and a fine — cannabis, marijuana, hashish, THC and CBD products all fall under this blanket 'drugs of all kinds' prohibition; the page does not name individual drugs or carve out any exception for CBD. Saudi Arabia's controlled-substance clearance system (Saudi Food and Drug Authority, per the traveler user manual already cited on this site's medication entries for SA) governs prescribed narcotic/psychotropic medicines specifically — cannabis and CBD are not part of that medical clearance pathway and should be treated as absolutely prohibited for personal import, including hemp-derived CBD with no measurable THC.",
+    "legal_source": {
+      "name": "ZATCA (Saudi Zakat, Tax and Customs Authority) — prohibited items for travelers",
+      "url": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Pages/customs-individual/Travel-pages/disclosure-amounts.aspx"
+    },
+    "verified_at": "2026-09-14",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
     "slug": "cash-sa",
     "names": [
       "cash",
@@ -4267,6 +4282,25 @@
     "status": "verified"
   },
   {
+    "slug": "cannabis-br",
+    "names": ["cannabis", "marijuana", "maconha", "weed", "thc", "hashish", "cbd", "cannabidiol", "canabidiol"],
+    "destination": "BR",
+    "category": "cbd_cannabis",
+    "verdict": "depends",
+    "limits": {
+      "description": "Receita Federal's prohibited-goods list bans 'substâncias entorpecentes ou drogas' (narcotic substances or drugs) outright — recreational cannabis, marijuana, and THC-containing products fall under this and cannot be brought into Brazil under any process. Separately, Receita Federal's restricted-goods table lists 'Canabidiol, em associação com outros canabinóides, dentre eles o THC' (cannabidiol, in association with other cannabinoids, including THC) as controlled by ANVISA, importable only with prior 'exceptional import authorization' (autorização de importação excepcional) obtained from ANVISA before travel — not something arranged at the border.",
+      "quantity": "CBD: ANVISA exceptional-import authorization required in advance; recreational cannabis/THC: prohibited outright"
+    },
+    "notes": "The government's own official service page for requesting this CBD authorization is linked directly from the Receita Federal restrictions table, confirming it's a real, active process rather than a formality: gov.br/pt-br/servicos/solicitar-autorizacao-para-importacao-excepcional-de-produtos-a-base-de-canabidiol. No day-supply or product-quantity cap for approved CBD imports was found on the pages fetched in this pass.",
+    "legal_source": {
+      "name": "Receita Federal — Guia do Viajante: Proibições e Restrições (Entrada no Brasil)",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/proibicoes-restricoes"
+    },
+    "verified_at": "2026-09-14",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
     "slug": "medication-sg",
     "names": [
       "medication",
@@ -4321,6 +4355,31 @@
     "notes": "Appendix A (edition dated 17 Mar 2026, fetched directly from HSA) explicitly names, among hundreds of substances: Alprazolam, Amphetamine (Amfetamine), Dexamphetamine, Lisdexamphetamine (Vyvanse), Methylphenidate, Dexmethylphenidate, Diazepam, Clonazepam, Codeine, and Oxycodone — so a traveler carrying medicine containing any of these needs HSA approval in advance. Tramadol was checked against the same list and was NOT found on it, so ordinary medicine (not the controlled-substances process) rules appear to apply to it — but confirm against the live Appendix A before travel, since HSA updates it periodically. Cannabis, cannabis extracts, THC, CBD and related cannabinoids are separately and absolutely prohibited under the Fourth Schedule to the Misuse of Drugs Regulations regardless of prescription or approval — Singapore enforces the Misuse of Drugs Act with severe penalties.",
     "legal_source": {
       "name": "Health Sciences Authority (HSA) — Document guide for bringing in personal medications (Appendix A: List of controlled substances)",
+      "url": "https://file.go.gov.sg/document-guide-for-bringing-in-personal-medications.pdf"
+    },
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-sg",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish",
+      "cbd",
+      "cannabidiol",
+      "cannabis oil",
+      "hemp oil"
+    ],
+    "destination": "SG",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Cannabis, cannabis extracts, THC, CBD and related cannabinoids are separately and absolutely prohibited under the Fourth Schedule to the Misuse of Drugs Regulations, regardless of prescription or approval — this is a distinct, harder line than the ordinary controlled-medication approval process (HSA Appendix A), which does not apply here. Singapore enforces the Misuse of Drugs Act with severe penalties, including for personal-use quantities.",
+    "legal_source": {
+      "name": "Health Sciences Authority (HSA) — Document guide for bringing in personal medications, citing the Fourth Schedule to the Misuse of Drugs Regulations",
       "url": "https://file.go.gov.sg/document-guide-for-bringing-in-personal-medications.pdf"
     },
     "verified_at": "2026-09-13",
@@ -4763,6 +4822,21 @@
     "status": "verified"
   },
   {
+    "slug": "cannabis-nz",
+    "names": ["cannabis", "marijuana", "weed", "thc", "hashish", "cbd", "cannabidiol"],
+    "destination": "NZ",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "NZ Customs' prohibited-and-restricted-items page explicitly bans 'cannabis utensils' (bongs, vaporisers, hash pipes) as drug paraphernalia, and does not list cannabis or CBD anywhere among the medicines a traveller may bring under the ordinary prescription-medicine or controlled-drugs provisions (which are capped at 3 months' and 1 month's supply respectively, with no cannabis-specific carve-out named). New Zealand's 2020 cannabis-legalisation referendum failed, so recreational cannabis remains illegal; Medsafe's own site (medsafe.govt.nz) was checked in this pass and surfaced no traveller-facing guidance on medicinal cannabis import either. Treat any cannabis or CBD product, including hemp-derived, as prohibited for personal import absent a specific NZ medicinal-cannabis import authorisation obtained in advance.",
+    "legal_source": {
+      "name": "New Zealand Customs Service -- Prohibited and restricted items",
+      "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/"
+    },
+    "verified_at": "2026-09-14",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
     "slug": "medication-sa",
     "names": [
       "medication",
@@ -4865,6 +4939,21 @@
     "status": "verified"
   },
   {
+    "slug": "cannabis-ph",
+    "names": ["cannabis", "marijuana", "weed", "thc", "hashish", "cbd", "cannabidiol"],
+    "destination": "PH",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "RA 9165 (Comprehensive Dangerous Drugs Act of 2002), Sec. 3(j), defines 'Dangerous Drugs' as those listed in the Schedules annexed to the 1961 Single Convention on Narcotic Drugs (as amended by the 1972 Protocol) and the 1971 Single Convention on Psychotropic Substances — both of which schedule cannabis and its resin. The Board Regulation 1/2014 medical-travel exception cited on this site's 'controlled medication' entry for the Philippines applies to prescribed pharmaceutical drug preparations with a physician's letter and prescription; it does not extend to raw cannabis, marijuana, or unregistered CBD products, which the Philippine Drug Enforcement Agency (PDEA) treats as prohibited dangerous drugs with no personal-travel carve-out found on the sources checked in this pass. The Philippines is well known for severe, actively-enforced penalties for dangerous-drugs offences — travelers should not assume any personal-use or small-quantity exception exists.",
+    "legal_source": {
+      "name": "Republic Act No. 9165 — Comprehensive Dangerous Drugs Act of 2002, Sec. 3(j) (Dangerous Drugs)",
+      "url": "https://ddb.gov.ph/wp-content/uploads/2022/01/RA-9165.pdf"
+    },
+    "verified_at": "2026-09-14",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
     "slug": "medication-id",
     "names": [
       "medication",
@@ -4886,6 +4975,21 @@
       "url": "https://www.beacukai.go.id/barang-penumpang"
     },
     "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-id",
+    "names": ["cannabis", "marijuana", "ganja", "weed", "thc", "hashish", "cbd", "cannabidiol"],
+    "destination": "ID",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Indonesian Customs' own passenger-baggage guidance names 'narkotika' (narcotics) — alongside psychotropics, precursors, and medicines — as a category that triggers mandatory red-lane physical inspection; cannabis (ganja) is classified as a Golongan I (Schedule I, the strictest category) narcotic under Indonesia's Narcotics Law (UU No. 35 Tahun 2009), covering personal possession and import with no traveler exception found on this source. CBD/cannabidiol products are not separately addressed on the pages fetched in this pass and should be treated as covered by the same narcotics prohibition given Indonesia's strict, no-carve-out approach to cannabis-derived products. Indonesia is widely known to impose severe penalties for narcotics offences, up to and including capital punishment for trafficking-level quantities — travelers should not assume any personal-use exception exists.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Bea dan Cukai (Indonesian Customs) — Barang Penumpang (Passenger Goods)",
+      "url": "https://www.beacukai.go.id/barang-penumpang"
+    },
+    "verified_at": "2026-09-14",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
   }
