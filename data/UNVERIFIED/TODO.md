@@ -1818,3 +1818,94 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
       the exempted-nationality walk-in category (as opposed to applied-for
       visas generally) was not separately confirmed; `documentsNeeded`
       publishes the Art. 8 figure as-is.
+
+## Done (2026-09-14/15) — cannabis/CBD gap fill + niche categories + overstay-penalties explainer
+
+- [x] `cannabis`/`cbd_cannabis` rows added for **Singapore, New Zealand,
+      Saudi Arabia, Brazil, Indonesia, Philippines** (the 6 of 9
+      destinations missing this category that were reachable this pass) —
+      see `data/customs-items.json` slugs `cannabis-sg`, `cannabis-nz`,
+      `cannabis-sa`, `cannabis-br`, `cannabis-id`, `cannabis-ph`. Brazil is
+      the standout nuance: recreational cannabis/THC is prohibited outright,
+      but CBD is merely *restricted*, with a real, live ANVISA "exceptional
+      import authorization" government service page — recorded as
+      `depends`, not `prohibited`, because that's what Receita Federal's own
+      restricted-goods table actually says.
+- [ ] `cannabis`/`cbd_cannabis` for **Vietnam, China, South Korea** —
+      genuinely blocked, not skipped: Korean government domains (`.go.kr`)
+      don't resolve via DNS from this environment at all; Chinese customs/
+      NMPA domains fail on SSL cert errors and bot-blocking (412) even when
+      DNS resolves; Vietnam's `customs.gov.vn` article-listing pages are
+      client-rendered JS with no fetchable links, and the specific bulletin
+      URL (needed the same way the existing VN alcohol/tobacco/cash rows
+      were sourced) couldn't be discovered without a working WebSearch
+      budget (exhausted this session, 200/200). Retry once the budget
+      resets or a different access method is found — do not fill these with
+      secondary-source figures.
+- [x] Niche-but-real categories added by re-mining pages already fetched
+      for the cannabis pass (no extra research cost) plus a few new
+      targeted fetches: NZ weapons + a new `wildlife-products-nz` (CITES
+      souvenirs — ivory/coral/tortoiseshell), SA drones + weapons (the SA
+      "weapons" row turned out to be more surveillance/security-equipment
+      than firearms: laser pointers >5mW, hidden-camera novelty items,
+      radar detectors, tear gas), BR weapons (toy guns/airsoft/replica
+      firearms prohibited outright, separate from the real-firearms Army
+      Command permit process), ID weapons, PH weapons, SG cash (real
+      reporting mechanism confirmed — SPF Form NP 728 — but the exact SGD
+      threshold could not be verified on a primary source in this pass, so
+      published honestly as unconfirmed rather than repeating the
+      commonly-cited SGD 20,000 figure), AE `paan-nasvaar-ae` (betel
+      leaf/smokeless tobacco — a real, absolute, easy-to-miss prohibition
+      distinct from the ordinary tobacco allowance), GB and CA `food_plant`
+      (both were missing entirely — GB has a specific named non-EU
+      exempt-fruit list; CA's CBSA gives no blanket answer, just "always
+      declare, check AIRS per item," published as `declaration_required`
+      rather than invented as allowed/prohibited).
+- [ ] `e_cigarettes` — real effort spent this pass checking Japan, Kenya,
+      South Africa, Nigeria, and Turkey's already-reachable general customs
+      allowance pages specifically for vape/e-cigarette mentions; none of
+      them address the category at all (it's simply absent, not
+      prohibited-or-allowed), so nothing was added rather than guessed.
+      Same recurring gap noted for US/GB/CA/JP/KE/ZA/MX above — this
+      category needs a dedicated health-ministry/customs page per country,
+      not just the general duty-free-allowance page, and that search is
+      what's actually blocked without WebSearch.
+- [ ] `drones` for most of the 17 destinations still missing it — FAA
+      (403), UK CAA (reachable but its detailed rule pages didn't surface
+      the actual weight/registration threshold through WebFetch's
+      extraction), and several other aviation-authority sites were tried
+      and mostly didn't yield usable content this pass. Note: for several
+      countries the honest answer may simply be "not customs-restricted,
+      only a separate flight-registration matter with the aviation
+      authority" (confirmed for NZ, where Customs' own prohibited-items
+      page doesn't mention drones at all) — that's a real, different shape
+      of answer than the strict-import-ban countries already in the
+      dataset (India, Saudi Arabia, Egypt, Kenya, Morocco, Rwanda,
+      Thailand, UAE), worth encoding explicitly rather than leaving blank
+      once a primary aviation-authority source is actually reachable.
+
+### `/rules/overstay-penalties` — EU-wide general explainer, published
+
+- [x] Built `/rules/overstay-penalties`, cited directly to Directive
+      2008/115/EC (the "Return Directive"), Arts. 3(2), 6(1), 7(1)-(2),
+      11(1)-(3) — CELEX 32008L0115. **EUR-Lex's HTML pages are still
+      blocked to automated fetching** (confirmed again this pass, `curl`
+      and WebFetch both got empty/202 responses), but the CELLAR-API
+      workaround documented above still works exactly as described:
+      `http://publications.europa.eu/resource/celex/32008L0115` with
+      `Accept: application/xhtml+xml` returned the full, real Official
+      Journal text (HTTP 200, ~106KB) via plain `curl` — no consolidated
+      version exists at guessed CELEX date suffixes (404), so the original
+      2008 text is what's cited, which is standard practice for an
+      unamended act.
+- [ ] `/rules/overstay-penalties/[country]` (the per-country programmatic
+      route from §7 of AGENTS.md, `data/overstay-penalties.json`) is
+      **still not built** — the schema exists in the engine
+      (`overstayPenaltySchema`) but the directive itself doesn't set
+      national fine amounts (that's each Schengen country's own
+      immigration-law matter, not EU-harmonized), and finding 29 countries'
+      individual fine/ban-range figures needs the same kind of per-country
+      research (and the same WebSearch dependency) as the destinations
+      work above. Deliberately left unbuilt rather than shipping guessed or
+      thinly-sourced per-country rows — the general EU-wide page states
+      this gap explicitly rather than hiding it.
