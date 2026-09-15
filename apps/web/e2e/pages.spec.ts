@@ -118,13 +118,14 @@ test("header navigation reaches the guide pages", async ({ page }) => {
 
 test("landing page links into both tools", async ({ page }) => {
   await page.goto("/");
-  // The header nav also has a "Start a Trip Check" CTA (site-wide, every
-  // page) — scope to the hero itself to check that specific link.
+  // The header nav has a "Start a Trip Check" CTA (site-wide, every page),
+  // and the homepage itself repeats both hero CTAs again in the closing
+  // banner — scope to main and take the first (the hero's) of each.
   await expect(
-    page.getByRole("main").getByRole("link", { name: "Start a Trip Check" }),
+    page.getByRole("main").getByRole("link", { name: "Start a Trip Check" }).first(),
   ).toHaveAttribute("href", "/trip-check");
   await expect(
-    page.getByRole("link", { name: "Open the Schengen Calculator" }),
+    page.getByRole("main").getByRole("link", { name: "Open the Schengen Calculator" }).first(),
   ).toHaveAttribute("href", "/calculator");
   await page.getByRole("link", { name: /Open Trip Check/ }).click();
   await expect(page).toHaveURL(/\/trip-check$/);

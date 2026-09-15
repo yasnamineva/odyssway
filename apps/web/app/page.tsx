@@ -7,7 +7,9 @@ import FaqAccordion from "../components/FaqAccordion";
 import GlobeStory from "../components/GlobeStory";
 import HeroQuickCheck from "../components/HeroQuickCheck";
 import {
+  ArrowRightIcon,
   CalendarClockIcon,
+  CheckIcon,
   CompassIcon,
   GlobeIcon,
   MapPinRouteIcon,
@@ -21,6 +23,19 @@ import heroImage from "../public/images/hero-travel.jpg";
 
 const STAT_ICONS = [ScaleIcon, GlobeIcon, ShieldCheckIcon];
 const STAT_HREFS = ["/rules/90-180-rule", "/sources", "/methodology"];
+
+/** Same region→color mapping as DestinationsMap's pin legend, so the card
+ * grid below the map reads as one consistent system rather than two. */
+const REGION_ACCENTS: Record<string, string> = {
+  "North America": "#4e79a7",
+  "South America": "#ff9da7",
+  Europe: "#76b7b2",
+  "Europe/Asia": "#af7aa1",
+  Africa: "#59a14f",
+  "Middle East": "#e15759",
+  Asia: "#f28e2b",
+  Oceania: "#edc949",
+};
 
 export default async function HomePage() {
   const t = await getTranslations();
@@ -126,11 +141,15 @@ export default async function HomePage() {
 
       <Reveal>
         <section>
-          <h2 className="text-center font-display text-xl font-bold text-slate-900">
+          <p className="text-center text-xs font-semibold tracking-wide text-blue-700 uppercase">
+            {t("home.toolsEyebrow")}
+          </p>
+          <h2 className="mt-1 text-center font-display text-2xl font-bold text-slate-900">
             {t("home.toolsHeading")}
           </h2>
-          <div className="mt-6 grid gap-6 lg:grid-cols-2">
+          <div className="mt-8 grid gap-6 lg:grid-cols-2">
             <ToolCard
+              num="01"
               icon={<MapPinRouteIcon className="h-6 w-6" />}
               title={t("home.tools.tripCheck.title")}
               body={t("home.tools.tripCheck.body")}
@@ -140,6 +159,7 @@ export default async function HomePage() {
               accent="blue"
             />
             <ToolCard
+              num="02"
               icon={<CalendarClockIcon className="h-6 w-6" />}
               title={t("home.tools.calculator.title")}
               body={t("home.tools.calculator.body")}
@@ -153,29 +173,39 @@ export default async function HomePage() {
       </Reveal>
 
       <Reveal>
-        <section className="flex flex-wrap justify-center gap-3">
-          <a
-            href="/sources"
-            className="inline-flex items-center gap-1.5 rounded-full border border-blue-200 bg-blue-50 px-3 py-1.5 text-xs font-semibold text-blue-700 transition hover:bg-blue-100"
-          >
-            <GlobeIcon className="h-3.5 w-3.5" />
-            {t("home.trustBadgeCoverage", { count: coveredDestinationCount })}
-          </a>
-          {trustBadges.map((label, i) => (
-            <span
-              key={i}
-              className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-600"
-            >
-              <CompassIcon className="h-3.5 w-3.5 text-blue-700" />
-              {label}
-            </span>
-          ))}
+        <section className="relative left-1/2 w-screen -translate-x-1/2">
+          <div className="bg-slate-900 px-4 py-12 sm:px-6 lg:px-8">
+            <div className="mx-auto grid max-w-4xl grid-cols-2 gap-6 sm:grid-cols-4">
+              <a href="/sources" className="group flex flex-col items-center text-center">
+                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white transition group-hover:bg-white/20">
+                  <GlobeIcon className="h-5 w-5" />
+                </span>
+                <span className="mt-3 font-display text-2xl font-extrabold text-white tabular-nums">
+                  {coveredDestinationCount}+
+                </span>
+                <span className="mt-1 text-xs leading-snug text-slate-400">
+                  {t("home.trustBadgeCoverage", { count: coveredDestinationCount })}
+                </span>
+              </a>
+              {trustBadges.map((label, i) => (
+                <div key={i} className="flex flex-col items-center text-center">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white">
+                    <CompassIcon className="h-5 w-5" />
+                  </span>
+                  <span className="mt-3 text-xs leading-snug text-slate-300">{label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
       </Reveal>
 
       <Reveal>
         <section>
-          <h2 className="text-center font-display text-2xl font-bold text-slate-900">
+          <p className="text-center text-xs font-semibold tracking-wide text-blue-700 uppercase">
+            {t("home.coverageMap.eyebrow")}
+          </p>
+          <h2 className="mt-1 text-center font-display text-2xl font-bold text-slate-900">
             {t("home.coverageMap.heading")}
           </h2>
           <p className="mx-auto mt-2 max-w-lg text-center text-sm text-slate-500">
@@ -184,28 +214,29 @@ export default async function HomePage() {
           <div className="mx-auto mt-6 max-w-4xl overflow-hidden rounded-2xl border border-slate-200 bg-white p-5 shadow-sm lg:p-6">
             <DestinationsMap />
           </div>
-          <div className="mx-auto mt-4 max-w-4xl rounded-2xl border border-slate-200 bg-white p-5 shadow-sm lg:p-6">
-            <h3 className="font-display text-sm font-bold text-slate-900">
-              {t("home.coverageMap.listHeading")}
-            </h3>
-            <div className="mt-3 grid gap-x-6 gap-y-3 sm:grid-cols-2 lg:grid-cols-4">
-              {Object.entries(destinationsByRegion).map(([region, names]) => (
-                <div key={region}>
-                  <div className="text-[10px] font-semibold tracking-wide text-slate-400 uppercase">
-                    {region}
+          <div className="mx-auto mt-8 grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {Object.entries(destinationsByRegion).map(([region, names]) => (
+              <div
+                key={region}
+                className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+              >
+                <div
+                  className="h-1.5"
+                  style={{ backgroundColor: REGION_ACCENTS[region] ?? "#8298b3" }}
+                />
+                <div className="p-4">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-display text-sm font-bold text-slate-900">{region}</h3>
+                    <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-semibold text-slate-500">
+                      {names.length}
+                    </span>
                   </div>
-                  <ul className="mt-1 space-y-0.5">
-                    {names.map((name) => (
-                      <li key={name} className="text-sm text-slate-600">
-                        {name}
-                      </li>
-                    ))}
-                  </ul>
+                  <p className="mt-2 text-xs leading-relaxed text-slate-500">{names.join(", ")}</p>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
-          <div className="mt-5 text-center">
+          <div className="mt-8 text-center">
             <a
               href="/sources"
               className="inline-flex items-center gap-1.5 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-700"
@@ -218,31 +249,44 @@ export default async function HomePage() {
 
       <Reveal>
         <section>
-          <h2 className="text-center font-display text-2xl font-bold text-slate-900">
+          <p className="text-center text-xs font-semibold tracking-wide text-blue-700 uppercase">
+            {t("home.blogTeaser.eyebrow")}
+          </p>
+          <h2 className="mt-1 text-center font-display text-2xl font-bold text-slate-900">
             {t("home.blogTeaser.heading")}
           </h2>
           <p className="mx-auto mt-2 max-w-lg text-center text-sm text-slate-500">
             {t("home.blogTeaser.sub")}
           </p>
-          <ol className="mx-auto mt-6 grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <ol className="mx-auto mt-8 grid max-w-4xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {blogPostsByDate.slice(0, 3).map((post) => (
               <li key={post.slug}>
                 <a
                   href={`/blog/${post.slug}`}
-                  className="group flex h-full flex-col items-center rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm transition hover:-translate-y-0.5 hover:border-blue-200 hover:shadow-md"
+                  className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element -- self-generated same-origin PNG, not a candidate for next/image optimization */}
                   <img
                     src={`/blog/${post.slug}/opengraph-image`}
                     alt=""
-                    className="h-16 w-16 shrink-0 rounded-full border border-slate-100 object-cover"
+                    className="aspect-[1200/630] w-full object-cover"
                   />
-                  <time dateTime={post.date} className="mt-3 text-[11px] text-slate-400">
-                    {post.date}
-                  </time>
-                  <h3 className="mt-1 font-display text-sm font-bold text-slate-900">
-                    {post.title}
-                  </h3>
+                  <div className="flex flex-1 flex-col p-5">
+                    <div className="flex items-center gap-2">
+                      <span className="rounded-full bg-blue-50 px-2.5 py-0.5 text-[10px] font-semibold tracking-wide text-blue-700 uppercase">
+                        {post.category}
+                      </span>
+                      <time dateTime={post.date} className="text-[11px] text-slate-400">
+                        {post.date}
+                      </time>
+                    </div>
+                    <h3 className="mt-2 flex-1 font-display text-sm font-bold text-slate-900">
+                      {post.title}
+                    </h3>
+                    <span className="mt-3 inline-flex items-center gap-1 text-xs font-medium text-slate-900 transition-all group-hover:gap-1.5">
+                      {t("blogPage.readMore")}
+                    </span>
+                  </div>
                 </a>
               </li>
             ))}
@@ -254,6 +298,33 @@ export default async function HomePage() {
             >
               {t("home.blogTeaser.cta")}
             </a>
+          </div>
+        </section>
+      </Reveal>
+
+      <Reveal>
+        <section className="relative left-1/2 w-screen -translate-x-1/2">
+          <div className="bg-slate-900 px-4 py-14 text-center sm:px-6">
+            <h2 className="font-display text-2xl font-bold text-white lg:text-3xl">
+              {t("home.ctaBanner.heading")}
+            </h2>
+            <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-slate-300">
+              {t("home.ctaBanner.sub")}
+            </p>
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <a
+                href="/trip-check"
+                className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-md transition hover:scale-[1.03]"
+              >
+                {t("home.hero.ctaPrimary")}
+              </a>
+              <a
+                href="/calculator"
+                className="rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:scale-[1.03] hover:bg-white/10"
+              >
+                {t("home.hero.ctaSecondary")}
+              </a>
+            </div>
           </div>
         </section>
       </Reveal>
@@ -274,13 +345,16 @@ export default async function HomePage() {
               }),
             }}
           />
-          <h2 className="text-center font-display text-xl font-bold text-slate-900">
+          <p className="text-center text-xs font-semibold tracking-wide text-blue-700 uppercase">
+            {t("faqPage.eyebrow")}
+          </p>
+          <h2 className="mt-1 text-center font-display text-2xl font-bold text-slate-900">
             {t("faqPage.h1")}
           </h2>
           <p className="mx-auto mt-2 max-w-lg text-center text-sm text-slate-500">
             {t("faqPage.intro")}
           </p>
-          <div className="mt-6">
+          <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-slate-200 bg-white p-2 shadow-sm sm:p-4">
             <FaqAccordion items={faqItems} />
           </div>
         </section>
@@ -290,11 +364,12 @@ export default async function HomePage() {
 }
 
 const TOOL_CARD_ACCENTS = {
-  blue: { badge: "bg-blue-50 text-blue-700", border: "hover:border-blue-200", dot: "bg-blue-400" },
-  amber: { badge: "bg-amber-50 text-amber-700", border: "hover:border-amber-200", dot: "bg-amber-400" },
+  blue: { badge: "bg-blue-50 text-blue-700", border: "hover:border-blue-200", check: "text-blue-600" },
+  amber: { badge: "bg-amber-50 text-amber-700", border: "hover:border-amber-200", check: "text-amber-600" },
 };
 
 function ToolCard({
+  num,
   icon,
   title,
   body,
@@ -303,6 +378,7 @@ function ToolCard({
   href,
   accent,
 }: {
+  num: string;
   icon: ReactNode;
   title: string;
   body: string;
@@ -315,23 +391,29 @@ function ToolCard({
   return (
     <a
       href={href}
-      className={`group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg lg:p-8 ${colors.border}`}
+      className={`group relative flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg lg:p-8 ${colors.border}`}
     >
-      <div className={`inline-flex h-11 w-11 items-center justify-center rounded-xl transition group-hover:scale-110 ${colors.badge}`}>
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-3 right-4 font-display text-7xl font-extrabold text-slate-100 select-none"
+      >
+        {num}
+      </span>
+      <div className={`relative inline-flex h-11 w-11 items-center justify-center rounded-xl transition group-hover:scale-110 ${colors.badge}`}>
         {icon}
       </div>
-      <h3 className="mt-4 font-display text-lg font-bold text-slate-900">{title}</h3>
-      <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">{body}</p>
-      <ul className="mt-4 grid grid-cols-2 gap-x-3 gap-y-1.5 text-xs text-slate-500">
+      <h3 className="relative mt-4 font-display text-lg font-bold text-slate-900">{title}</h3>
+      <p className="relative mt-2 flex-1 text-sm leading-relaxed text-slate-600">{body}</p>
+      <ul className="relative mt-4 grid grid-cols-2 gap-x-3 gap-y-1.5 text-xs text-slate-500">
         {bullets.map((b) => (
           <li key={b} className="flex items-center gap-1.5">
-            <span className={`h-1 w-1 shrink-0 rounded-full ${colors.dot}`} />
+            <CheckIcon className={`h-3.5 w-3.5 shrink-0 ${colors.check}`} />
             {b}
           </li>
         ))}
       </ul>
-      <span className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-slate-900 transition-all group-hover:gap-2.5">
-        {cta} <span aria-hidden="true">→</span>
+      <span className="relative mt-5 inline-flex items-center gap-1 text-sm font-medium text-slate-900 transition-all group-hover:gap-2.5">
+        {cta} <ArrowRightIcon className="h-4 w-4" />
       </span>
     </a>
   );
