@@ -25,6 +25,10 @@
       "title": "Schengen 90/180 Day Rule Explained — rolling window, entry/exit days, edge cases",
       "description": "Plain-language guide to the Schengen 90/180-day rule: how the rolling window works, which countries count, and the edge cases — verified against official EU sources."
     },
+    "overstayPenalties": {
+      "title": "What Actually Happens If You Overstay in Schengen — Entry Bans Explained",
+      "description": "The real EU-wide mechanism behind an overstay: the return decision, the voluntary-departure window, and the up-to-5-year entry ban — cited directly to the Return Directive, not a guess."
+    },
     "eesHub": {
       "title": "EU Entry/Exit System (EES) Explained — digital borders, biometrics, overstay detection",
       "description": "What the EES is, what data it records about you, and why automated overstay detection changes how carefully you must count your Schengen days."
@@ -343,6 +347,7 @@
     "windowLabel": "180-day window: {start} – {end}",
     "statusSentence": "Between {start} and {end} you've used {used, plural, one {# day} other {# days}} of your 90. You have {remaining, plural, one {# day} other {# days}} remaining (estimated).",
     "overstayWarning": "This exceeds the 90-day limit by {days, plural, one {# day} other {# days}} within this window. If these dates are correct, contact the border authorities of the country you're in for guidance.",
+    "overstayLearnMore": "What actually happens next →",
     "maxStaySentence": "Entering (or staying) on {entry}, you could remain until {exit} — {days, plural, one {# day} other {# days}} (estimated).",
     "maxStayBlocked": "You can't be in the Schengen Area on {entry} without breaking the 90/180 rule.",
     "nextSafeEntry": "Next safe entry date: {date}",

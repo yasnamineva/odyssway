@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/trip-check`, lastModified: countriesVerifiedAt, priority: 1 },
     { url: `${BASE}/calculator`, lastModified: countriesVerifiedAt, priority: 0.9 },
     { url: `${BASE}/rules/90-180-rule`, lastModified: CONTENT_CHECKED, priority: 0.8 },
+    { url: `${BASE}/rules/overstay-penalties`, lastModified: "2026-09-15", priority: 0.7 },
     { url: `${BASE}/ees`, lastModified: CONTENT_CHECKED, priority: 0.8 },
     { url: `${BASE}/ees/what-to-expect`, lastModified: CONTENT_CHECKED, priority: 0.7 },
     { url: `${BASE}/ees/dispute-overstay`, lastModified: CONTENT_CHECKED, priority: 0.8 },

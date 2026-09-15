@@ -41,6 +41,9 @@ test("flags an overstay beyond 90 days in the window", async ({ page }) => {
   await expect(page.getByTestId("days-used")).toHaveText("100");
   await expect(page.getByTestId("days-remaining")).toHaveText("0");
   await expect(page.getByTestId("overstay-warning")).toContainText("exceeds");
+  await expect(
+    page.getByRole("link", { name: "What actually happens next →" }),
+  ).toHaveAttribute("href", "/rules/overstay-penalties");
 });
 
 test("excludes days in a non-Schengen country (Ireland)", async ({ page }) => {

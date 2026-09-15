@@ -7,6 +7,7 @@ const routes: Array<{ path: string; expectText: string }> = [
   { path: "/trip-check", expectText: "Where are you from, and where are you going?" },
   { path: "/calculator", expectText: "Schengen 90/180 day calculator" },
   { path: "/rules/90-180-rule", expectText: "The short answer" },
+  { path: "/rules/overstay-penalties", expectText: "Return Directive" },
   { path: "/ees", expectText: "Entry/Exit System" },
   { path: "/ees/what-to-expect", expectText: "no more passport stamps" },
   { path: "/ees/dispute-overstay", expectText: "Article 52" },
@@ -94,6 +95,7 @@ test("sitemap and robots respond", async ({ request }) => {
   const sitemap = await request.get("/sitemap.xml");
   expect(sitemap.status()).toBe(200);
   expect(await sitemap.text()).toContain("/rules/90-180-rule");
+  expect(await sitemap.text()).toContain("/rules/overstay-penalties");
   const robots = await request.get("/robots.txt");
   expect(robots.status()).toBe(200);
 });

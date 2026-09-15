@@ -788,9 +788,14 @@ function StatusCard({
           })}
         </p>
         {s.overstayDays > 0 ? (
-          <p data-testid="overstay-warning" className="font-medium text-red-700">
-            {t("overstayWarning", { days: s.overstayDays })}
-          </p>
+          <>
+            <p data-testid="overstay-warning" className="font-medium text-red-700">
+              {t("overstayWarning", { days: s.overstayDays })}
+            </p>
+            <a href="/rules/overstay-penalties" className="inline-block text-xs font-medium text-red-700 underline">
+              {t("overstayLearnMore")}
+            </a>
+          </>
         ) : null}
         {ms.maxDays > 0 && ms.lastAllowedDay ? (
           <p>
