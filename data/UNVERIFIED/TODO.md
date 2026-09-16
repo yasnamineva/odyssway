@@ -1831,17 +1831,23 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
       import authorization" government service page — recorded as
       `depends`, not `prohibited`, because that's what Receita Federal's own
       restricted-goods table actually says.
-- [ ] `cannabis`/`cbd_cannabis` for **Vietnam, China, South Korea** —
-      genuinely blocked, not skipped: Korean government domains (`.go.kr`)
-      don't resolve via DNS from this environment at all; Chinese customs/
-      NMPA domains fail on SSL cert errors and bot-blocking (412) even when
-      DNS resolves; Vietnam's `customs.gov.vn` article-listing pages are
-      client-rendered JS with no fetchable links, and the specific bulletin
-      URL (needed the same way the existing VN alcohol/tobacco/cash rows
-      were sourced) couldn't be discovered without a working WebSearch
-      budget (exhausted this session, 200/200). Retry once the budget
-      resets or a different access method is found — do not fill these with
-      secondary-source figures.
+- [x] `cannabis`/`cbd_cannabis` for **Vietnam, China, South Korea** — the
+      WebSearch-budget blocker from the prior pass is resolved (session
+      cap raised to 1000). Added `cannabis-vn`/`cbd-vn` (Law No.
+      73/2021/QH14 read directly for the cannabis row; Decree
+      57/2022/ND-CP for CBD/THC — its schedule appendix is paywalled on
+      the source used, so the THC-on-List-I claim is corroborated via
+      multiple independent legal-industry analyses rather than read
+      verbatim, noted honestly in the row), `cannabis-cn`/`cbd-cn`
+      (Criminal Law Arts. 347-348 read directly via english.court.gov.cn —
+      a real breakthrough vs. the prior session's total CAAC/NMPA block;
+      CBD cited to a USDA FAS GAIN report quoting China's Sept 2024
+      precursor-chemical announcement), `cannabis-kr`/`cbd-kr` (Korea
+      Customs Service's own quoted warning, via The Korea Times, naming
+      CBD/CBN/THC together with penalty figures — `.go.kr`/`law.go.kr`
+      domains and `elaw.klri.re.kr` full-text still don't resolve/render,
+      so this is the workaround). All 25 destinations now have this
+      category.
 - [x] Niche-but-real categories added by re-mining pages already fetched
       for the cannabis pass (no extra research cost) plus a few new
       targeted fetches: NZ weapons + a new `wildlife-products-nz` (CITES
@@ -1861,28 +1867,95 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
       exempt-fruit list; CA's CBSA gives no blanket answer, just "always
       declare, check AIRS per item," published as `declaration_required`
       rather than invented as allowed/prohibited).
-- [ ] `e_cigarettes` — real effort spent this pass checking Japan, Kenya,
-      South Africa, Nigeria, and Turkey's already-reachable general customs
-      allowance pages specifically for vape/e-cigarette mentions; none of
-      them address the category at all (it's simply absent, not
-      prohibited-or-allowed), so nothing was added rather than guessed.
-      Same recurring gap noted for US/GB/CA/JP/KE/ZA/MX above — this
-      category needs a dedicated health-ministry/customs page per country,
-      not just the general duty-free-allowance page, and that search is
-      what's actually blocked without WebSearch.
-- [ ] `drones` for most of the 17 destinations still missing it — FAA
-      (403), UK CAA (reachable but its detailed rule pages didn't surface
-      the actual weight/registration threshold through WebFetch's
-      extraction), and several other aviation-authority sites were tried
-      and mostly didn't yield usable content this pass. Note: for several
-      countries the honest answer may simply be "not customs-restricted,
-      only a separate flight-registration matter with the aviation
-      authority" (confirmed for NZ, where Customs' own prohibited-items
-      page doesn't mention drones at all) — that's a real, different shape
-      of answer than the strict-import-ban countries already in the
-      dataset (India, Saudi Arabia, Egypt, Kenya, Morocco, Rwanda,
-      Thailand, UAE), worth encoding explicitly rather than leaving blank
-      once a primary aviation-authority source is actually reachable.
+- [x] `e_cigarettes` — with the WebSearch budget restored, found and
+      added the 2 destinations with genuinely strong sourcing:
+      `e-cigarettes-vn` (National Assembly Resolution 173/2024/QH15,
+      full nationwide ban in force since 1 Jan 2025, confirmed via a
+      direct WHO Viet Nam fetch) and `e-cigarettes-br` (ANVISA RDC
+      855/2024, which explicitly names traveler/luggage entry as
+      prohibited, confirmed via a direct WHO FCTC fetch). **Deliberately
+      left unpublished** for the other 15 (US, JP, KE, ZA, NG, RW, MA, TR,
+      AE, PH, NZ, CN, ID, SA, KR) — every one of them has *some* signal,
+      but only from secondary/aggregator sources (vape-industry blogs,
+      travel sites) with no primary government page successfully fetched
+      this round, which doesn't clear this project's "primary official
+      source" bar. Per-country detail for the next pass:
+      - US: genuinely unresolved, not just unsourced — FDA/CBP material
+        found only addresses commercial importers, not travelers carrying
+        an already-owned vape. Don't guess a verdict; find the actual
+        CBP traveler-facing rule (or confirm there isn't one, i.e. general
+        personal-use allowance applies).
+      - JP: `allowed_with_limits` is very likely correct (nicotine
+        e-liquid needs a Yakkan Shoumei above ~1 month's/120ml supply,
+        consistent across many sources) but no MHLW/Japan Customs URL was
+        confirmed reachable this round — retry the Japan Customs FAQ
+        domain already used for JP's other medication rows.
+      - KE: `prohibited`, banned by Health CS Aden Duale effective 30 Jul
+        2025 — only Tobacco Reporter/Nicotine Insider found; no Kenya
+        Gazette notice for this specific ban located (only an unrelated
+        Feb 2025 graphic-warning notice). Search the Gazette directly.
+      - ZA: genuinely ambiguous — SARS's traveler duty guide has no vape
+        line item, and the Tobacco Products and Electronic Delivery
+        Systems Control Bill is still pending, not law. Don't guess.
+      - NG: `allowed` tentative, no import ban found, NAFDAC has
+        disclosure/18+ rules but no primary NAFDAC page fetched.
+      - RW: `prohibited`, banned since 2019, confiscated at the airport —
+        only RwandAir's own travel-alert page and a GSTHR profile found,
+        no Rwandan government legal text.
+      - MA: `allowed` (no ban) fairly solid — 2024 saw an import-duty
+        increase, not a ban; a new IMANOR product standard takes effect
+        Feb 2026. Secondary sources only.
+      - TR: `allowed_with_limits` — Presidential Decree No. 2149 (24 Feb
+        2020) bans commercial sale/import but allows personal-use travel
+        quantities; the specific 1 device + 30ml (or 10 disposables)
+        figures are from secondary blog summaries, the decree's own text
+        wasn't fetched.
+      - AE: `allowed_with_limits`, legal since Apr 2019 for MOHAP-
+        registered products; no ICP/MOHAP primary page fetched, quantity
+        figures (1-2 devices, 5×10ml) are secondary.
+      - PH: law itself is solid — RA 11900 (Vaporized Nicotine and
+        Non-Nicotine Products Regulation Act) full text is reachable at
+        https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/95621 —
+        but the "reasonable personal use" import quantity is an informal
+        customs practice, not a statutory figure, so still needs a
+        judgment call before shipping.
+      - NZ: `allowed_with_limits`, Smokefree Environments and Regulated
+        Products Act 1990 — the commonly cited "3 month supply" figure is
+        unconfirmed; health.govt.nz returned HTTP 403 this round.
+      - CN: weakest of the batch — domestic retail is tightly restricted,
+        but personal traveler import in small quantities is described in
+        secondary sources as "commonly tolerated but not guaranteed,"
+        which isn't a clean verdict. No primary customs/NMPA source
+        reachable (same block as previous sessions).
+      - ID: `allowed_with_limits`, BPOM-regulated, ~40ml/2-device duty-free
+        allowance cited by secondary sources only, no customs.go.id page
+        fetched.
+      - SA: `allowed`, Royal Decree 38621 lifted the prior ban, SFDA now
+        regulates under the Anti-Smoking Law — decree number corroborated
+        across multiple secondary sources, no SFDA primary page fetched.
+      - KR: `allowed_with_limits`, secondary sources describe a <20ml AND
+        <1% nicotine duty-free threshold — `.go.kr` domains still don't
+        resolve. One source's claim of an April 2026 Tobacco Business Act
+        revision is unverified and should not be shipped without
+        independent confirmation (future-dated claims from aggregator
+        blogs are a known unreliability pattern).
+- [x] `drones` — added 12 of the 13 missing destinations (US, GB, JP, NG,
+      AU, TR, NZ, CN, ID, BR, SG, KR); see `drones-{cc}` slugs in
+      `data/customs-items.json`. Confirms the pattern noted above: for
+      most of these the real constraint is a civil-aviation
+      registration/flight-permit requirement, not a customs import ban —
+      GB, TR (import/customs step), SG and CN were confirmed by directly
+      fetching and quoting the regulator's own page/text; JP, AU, NZ, NG,
+      US, ID, BR, KR rest on official-domain search-snippet corroboration
+      (moderate confidence, noted per-row) rather than a full primary-text
+      read. **Vietnam deliberately left out** — every fact found (MND
+      import license even for 150g devices, a separate 14-day-advance
+      flight-license process, a possible Decree 288/2025/ND-CP exemption
+      for 150g "entertainment" devices) is secondary-aggregator sourced
+      only; `english.caa.gov.vn` has no visible drone section and
+      `caa.gov.vn`'s listing pages are still the same client-rendered-JS
+      wall as the cannabis/customs research. Needs a real CAAV or MND
+      primary source before shipping.
 
 ### `/rules/overstay-penalties` — EU-wide general explainer, published
 

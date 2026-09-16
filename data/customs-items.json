@@ -5262,5 +5262,344 @@
     "verified_at": "2026-09-14",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
+  },
+  {
+    "slug": "cannabis-vn",
+    "names": ["cannabis", "marijuana", "weed", "thc"],
+    "destination": "VN",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Cannabis is a controlled narcotic plant under Vietnamese law with no exception for recreational, medical, or industrial use; possession, transport, or trade carries criminal penalties up to life imprisonment for large quantities.",
+    "legal_source": {
+      "name": "Vietnam Law on Drug Prevention and Control No. 73/2021/QH14, Art. 2(6) & Art. 5 (English translation)",
+      "url": "https://english.luatvietnam.vn/law-on-drug-prevention-and-control-no-73-2021-qh14-dated-march-30-2021-of-the-national-assembly-201171-doc1.html"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cbd-vn",
+    "names": ["cbd", "cbd oil", "hemp extract"],
+    "destination": "VN",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Decree 57/2022/ND-CP, which sets Vietnam's official schedules of controlled narcotic substances, places cannabis (plant, resin) and THC — the psychoactive compound in cannabis-derived CBD products — on List I, the highest-control tier absolutely prohibited for medical and social use; Vietnam draws no exception for low-THC or hemp-labeled formulations, so CBD oil has no legal personal-import route even with a foreign prescription. (The decree's detailed schedule appendix sits behind a subscriber paywall on the source used; its List-I placement of cannabis/THC is corroborated by multiple independent legal-industry analyses of the decree.)",
+    "legal_source": {
+      "name": "Decree No. 57/2022/ND-CP on the Lists of Narcotic Substances and Precursors",
+      "url": "https://english.luatvietnam.vn/decree-no-57-2022-nd-cp-dated-august-25-2022-of-the-government-on-the-lists-of-narcotic-substances-and-precursors-228744-doc1.html"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-cn",
+    "names": ["cannabis", "marijuana", "weed", "thc"],
+    "destination": "CN",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "China maintains zero tolerance for marijuana with no recreational or medical exception. Under the Criminal Law, smuggling, trafficking, transporting or manufacturing narcotic drugs is a criminal offense regardless of quantity (Art. 347), and unauthorized possession above threshold quantities carries additional criminal penalties (Art. 348).",
+    "legal_source": {
+      "name": "Criminal Law of the People's Republic of China, Arts. 347-348 (official English translation, Supreme People's Court)",
+      "url": "https://english.court.gov.cn/2015-12/01/c_761557_31.htm"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cbd-cn",
+    "names": ["cbd", "cbd oil", "hemp extract"],
+    "destination": "CN",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Since September 1, 2024, China regulates cannabidiol (CBD) as a Category II precursor chemical requiring import/export licensing (joint announcement by China's NMPA, customs authority GACC, and other ministries); there is no personal-use import pathway for travelers, and unlicensed CBD products are treated as contraband at the border regardless of THC content or legality abroad.",
+    "legal_source": {
+      "name": "USDA Foreign Agricultural Service, GAIN Report CH2024-0101 — 'China: Cannabidiol to be Regulated as Precursor Chemical'",
+      "url": "https://www.fas.usda.gov/data/china-cannabidiol-be-regulated-precursor-chemical"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-kr",
+    "names": ["cannabis", "marijuana", "weed", "thc"],
+    "destination": "KR",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "The Korea Customs Service has publicly warned that bringing in marijuana-related products without Ministry of Food and Drug Safety approval is punishable under the Narcotics Control Act — with penalties applying even to gifts from someone abroad or to use that occurred entirely outside Korea, regardless of home-country legality or a foreign prescription.",
+    "limits": {
+      "description": "Marijuana-related offenses under the Narcotics Control Act carry up to 5 years' imprisonment or a fine of up to KRW 50 million."
+    },
+    "legal_source": {
+      "name": "Korea Customs Service warning, reported by The Korea Times — 'Customs service warns against products containing marijuana'",
+      "url": "https://www.koreatimes.co.kr/southkorea/society/20240102/customs-service-warns-against-products-containing-marijuana"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cbd-kr",
+    "names": ["cbd", "cbd oil", "hemp extract"],
+    "destination": "KR",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "The Korea Customs Service explicitly names CBD, CBN and THC together in its warning: products labeled or marketed with any of these cannabinoids brought in without prior Ministry of Food and Drug Safety approval are subject to Narcotics Control Act penalties, including for gifts and regardless of a foreign prescription. Korea does run a general controlled-substance entry-permit process (MFDS, in force since 2009), but travelers should not assume a low-THC or hemp label creates an exception.",
+    "legal_source": {
+      "name": "Korea Customs Service warning, reported by The Korea Times — 'Customs service warns against products containing marijuana'",
+      "url": "https://www.koreatimes.co.kr/southkorea/society/20240102/customs-service-warns-against-products-containing-marijuana"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-vn",
+    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid", "heated tobacco", "iqos"],
+    "destination": "VN",
+    "category": "e_cigarettes",
+    "verdict": "prohibited",
+    "notes": "National Assembly Resolution 173/2024/QH15 bans the production, trade, importation, possession, transportation and use of e-cigarettes and heated-tobacco products nationwide, in force since 1 January 2025; Vietnam Customs directed all customs departments (Official Letter No. 17/TCHQ-GSQL) to halt clearance of these products, and a December 2025 follow-up resolution closed related loopholes.",
+    "legal_source": {
+      "name": "WHO Viet Nam — National Assembly Resolution 173/2024/QH15 banning e-cigarettes and heated tobacco",
+      "url": "https://www.who.int/vietnam/news/detail/11-12-2025-world-health-organization-welcomes-national-assembly-s-strong-stance-on-banned-e-cigarettes-and-heated-tobacco-products"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-br",
+    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
+    "destination": "BR",
+    "category": "e_cigarettes",
+    "verdict": "prohibited",
+    "notes": "ANVISA Resolution RDC 855/2024 explicitly prohibits the entry of electronic smoking devices into Brazil by travelers in any form, including in accompanied luggage, alongside a nationwide ban on their manufacture, import, sale, distribution, storage, transport and advertising.",
+    "legal_source": {
+      "name": "ANVISA RDC 855/2024, via the WHO FCTC Implementation Database",
+      "url": "https://extranet.who.int/fctcapps/fctcapps/who-fctc-coordination-platform/implementation-database/news/brazil-anvisa-upholds-ban"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-us",
+    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "destination": "US",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Any drone weighing 250g or more must be registered with the FAA (DroneZone) before flying; recreational flyers must also pass the free TRUST knowledge test. Most drones must broadcast Remote ID; foreign-registered drones with Remote ID capability need to file a Notice of Identification with the FAA before flying in US airspace."
+    },
+    "notes": "This is a flight-operation requirement, not a customs import restriction — bringing a drone into the US isn't itself limited, but legally flying it (even recreationally) requires FAA registration completed in advance; there is no same-day tourist workaround described.",
+    "legal_source": {
+      "name": "FAA — Information for International UAS Operators in the United States",
+      "url": "https://www.faa.gov/uas/resources/foreign_operators"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-gb",
+    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "destination": "GB",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "A Flyer ID (theory test) is required for any drone 100g or heavier; an Operator ID is also required for drones 250g+ or 100-250g with a camera. The UK Civil Aviation Authority states it does not recognize overseas drone registrations or qualifications — visitors must obtain UK Flyer/Operator IDs before flying, regardless of what they hold at home."
+    },
+    "notes": "Confirmed directly from the CAA's own guidance page, which explicitly states foreign registrations aren't accepted — this is not just a formality for visitors, it's a real prerequisite to complete before arrival.",
+    "legal_source": {
+      "name": "UK Civil Aviation Authority — Registering to fly drones and model aircraft",
+      "url": "https://www.caa.co.uk/drones/open-category/getting-started-with-drones-and-model-aircraft/registering-to-fly-drones-and-model-aircraft/"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-jp",
+    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "destination": "JP",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Registration with Japan's Ministry of Land, Infrastructure, Transport and Tourism (MLIT) is mandatory for any drone weighing 100g or more, with no exemption for foreign visitors, in force since June 20, 2022."
+    },
+    "notes": "In practice, MLIT's online registration system requires a Japanese address and typically takes 7-10 business days to process, which makes same-trip tourist registration impractical without advance planning through a local agent or rental company.",
+    "legal_source": {
+      "name": "MLIT (Ministry of Land, Infrastructure, Transport and Tourism) — Unmanned Aircraft Registration System",
+      "url": "https://www.mlit.go.jp/koku/koku_ua_registration.html"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-ng",
+    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "destination": "NG",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Drones weighing more than 250g must be registered with the Nigeria Civil Aviation Authority (NCAA), and operators need a Remotely Piloted Aircraft Systems Certificate plus a per-flight authorization before flying."
+    },
+    "notes": "NCAA's advisory circular page is real and reachable, but its detailed procedural text lives in a linked PDF that wasn't retrievable in this pass, so the 250g threshold and certificate process should be treated as the general shape of the rule rather than a word-for-word confirmed figure — undeclared drones risk being held in bonded customs storage pending the paperwork.",
+    "legal_source": {
+      "name": "Nigeria Civil Aviation Authority (NCAA) — Unmanned Aircraft System Operations in Nigeria's Airspace (Guidance NCAA-GAD-AC-002)",
+      "url": "https://ncaa.gov.ng/documents/advisory-circulars/unmanned-aircraft-system-operations-in-nigeria-s-airspace-guidance/"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-au",
+    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "destination": "AU",
+    "category": "drones",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "No registration, licence or accreditation is required for recreational drone flying in Australia at any weight, but standard operating conditions apply: fly no higher than 120m, stay at least 30m from other people, and drones 250g or heavier can't be flown within 5.5km of a controlled airport."
+    },
+    "notes": "Foreign-registered drones can't be separately registered in Australia, but that only matters for commercial operation — casual recreational tourist flying doesn't require it.",
+    "legal_source": {
+      "name": "Civil Aviation Safety Authority (CASA) — Drone rules",
+      "url": "https://www.casa.gov.au/knowyourdrone/drone-rules"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-tr",
+    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "destination": "TR",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Drones under 500g are commonly described as exempt from registration, customs paperwork and Turkish ID requirements; drones 500g and over must go through SHGM's UAV registry and an import Technical Compliance Certificate application filed with the Customs Directorate (SHT-İHA Instruction, Art. 6). Legally flying as a foreign national separately requires a flight-permit application to SHGM at least 20 days in advance through diplomatic channels."
+    },
+    "notes": "The import/customs certificate mechanism is confirmed directly on SHGM's own import page; the specific 500g weight threshold and the 20-day foreign-national flight-permit lead time are corroborated by secondary sources, not read verbatim on that page.",
+    "legal_source": {
+      "name": "SHGM (Sivil Havacılık Genel Müdürlüğü / Turkish Directorate General of Civil Aviation) — İnsansız Hava Aracı İthali (UAV Import)",
+      "url": "https://web.shgm.gov.tr/tr/s/2227-insansiz-hava-araci-ithali"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-nz",
+    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "destination": "NZ",
+    "category": "drones",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Unmanned aircraft under 25kg are covered by Part 101 of New Zealand's civil aviation rules. Visitors may fly without registering, holding a licence, or a certificate, provided they follow Part 101's standard conditions: daylight only, within visual line of sight, yield to manned aircraft, get consent before flying over people or their property, and obtain ATC clearance in controlled airspace."
+    },
+    "notes": "New Zealand does not currently operate a drone registration scheme at all (one has been floated with no confirmed date) — this is a genuinely lighter-touch regime than most other destinations in this dataset.",
+    "legal_source": {
+      "name": "Civil Aviation Authority of New Zealand — Part 101: Unmanned Aircraft and Rocket Operating Rules",
+      "url": "https://www.aviation.govt.nz/rules/rule-part/part-101/"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-cn",
+    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "destination": "CN",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "\"民用无人驾驶航空器所有者应当依法进行实名登记\" (\"Owners of civil unmanned aircraft shall carry out real-name registration in accordance with the law\") — Art. 10 of China's Interim Regulation on the Administration of Unmanned Aircraft Flights, in force since January 1, 2024. This real-name registration requirement applies to all civil drones regardless of weight."
+    },
+    "notes": "Bringing a personal consumer drone through Chinese customs is not itself restricted or specially declared. The registration requirement, however, is a genuine barrier for visitors in practice: the regulation doesn't spell out a foreign-operator registration path, and the platform is understood to require a Chinese phone number, which blocks straightforward tourist self-registration.",
+    "legal_source": {
+      "name": "State Council / Civil Aviation Administration of China (CAAC) — Interim Regulation on the Administration of Unmanned Aircraft Flights, Art. 10",
+      "url": "https://www.caac.gov.cn/XXGK/XXGK/FLFG/202401/t20240115_222642.html"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-id",
+    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "destination": "ID",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Nationally, Indonesia doesn't restrict bringing a drone through customs and doesn't require registration or a licence for recreational flying of Open Category drones under 25kg, per Ministry of Transportation Regulation PM 37/2020. Bali is a documented exception: local reporting describes a 2025 directive requiring pre-arrival drone registration through the SIPP-TA/SIPUDI system for all drone weights before flying there."
+    },
+    "notes": "The national regulation (PM 37/2020) is confirmed via Indonesia's official legal-database domains, though not read as full primary text in this pass. The Bali-specific 2025 registration directive is secondary-sourced only and should be treated as unconfirmed until a primary DGCA Indonesia document is found — don't assume it applies outside Bali.",
+    "legal_source": {
+      "name": "Peraturan Menteri Perhubungan RI No. PM 37 Tahun 2020 — Pengoperasian Pesawat Udara Tanpa Awak di Ruang Udara yang Dilayani Indonesia",
+      "url": "https://peraturan.go.id/id/permenhub-no-pm37-tahun-2020"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-br",
+    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "destination": "BR",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Drones over 250g must be registered with Brazil's civil aviation authority (ANAC) through the SISANT system, which requires a Brazilian CPF or CNPJ taxpayer number — the real obstacle for tourists, who would need to obtain a CPF from a Brazilian consulate beforehand or have a Brazilian resident register the drone on their behalf. Drones of 250g or under don't need registration for recreational use, but must still follow altitude, visual-line-of-sight and people-distance rules."
+    },
+    "notes": "A direct fetch of ANAC's registration page was blocked by a CAPTCHA in this pass, so this is drawn from consistent secondary reporting rather than the primary page's own text — treat the CPF/CNPJ barrier as the well-corroborated headline fact, but re-verify against ANAC directly before treating exact figures as final.",
+    "legal_source": {
+      "name": "ANAC (Agência Nacional de Aviação Civil) — Cadastro de Drone (SISANT)",
+      "url": "https://www.gov.br/anac/pt-br/assuntos/drones/cadastro-de-drone"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-sg",
+    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "destination": "SG",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Drones over 250g must be registered through the Civil Aviation Authority of Singapore's (CAAS) UA Portal: a S$25 registration label plus online registration, using Singpass or a UAPass account for foreign visitors, taking about 5 working days to process. The minimum age to register is 16. Drones of 250g or under are exempt from registration for basic recreational use."
+    },
+    "notes": "Confirmed directly from CAAS's own registration page, including the UAPass pathway specifically built for foreign visitors — apply before arrival, since the processing time doesn't support a same-day registration on landing.",
+    "legal_source": {
+      "name": "Civil Aviation Authority of Singapore (CAAS) — Registration / Deregistration (Unmanned Aircraft)",
+      "url": "https://www.caas.gov.sg/unmanned-aircraft/registration-deregistration/"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-kr",
+    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "destination": "KR",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Drones under 250g are exempt from registration. Drones of 250g or heavier must be registered through the Drone One-Stop portal, a Ministry of Land, Infrastructure and Transport administrative system that lists a roughly 7-business-day processing time for aircraft registration."
+    },
+    "notes": "The Drone One-Stop portal itself was reachable and confirmed real in this pass (Korean government domains have historically been unreachable from this environment, so this is a genuine access breakthrough), but its registration process requires Korean-resident identity verification with no stated tourist exemption or workaround — in practice this blocks visitors from registering anything 250g or heavier. The specific 250g threshold comes from secondary sources, not the portal's own text.",
+    "legal_source": {
+      "name": "Drone One-Stop (드론원스톱 민원서비스) — Ministry of Land, Infrastructure and Transport drone administrative portal",
+      "url": "https://drone.onestop.go.kr"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
   }
 ]
