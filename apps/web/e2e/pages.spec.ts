@@ -17,6 +17,8 @@ const routes: Array<{ path: string; expectText: string }> = [
   { path: "/etias/ua", expectText: "biometric passports" },
   { path: "/ees/data-access/fr", expectText: "CNIL" },
   { path: "/ees/data-access/de", expectText: "45 days" },
+  { path: "/rules/overstay-penalties/de", expectText: "Aufenthaltsgesetz" },
+  { path: "/rules/overstay-penalties/fr", expectText: "CESEDA" },
   { path: "/destinations/us", expectText: "Travelling to United States" },
   { path: "/destinations/gb", expectText: "Travelling to United Kingdom" },
   { path: "/destinations/ca", expectText: "Travelling to Canada" },
@@ -52,6 +54,13 @@ test("unknown nationality pages 404 instead of rendering thin content", async ({
 
 test("unverified EES countries 404 instead of rendering thin content", async ({ page }) => {
   const response = await page.goto("/ees/data-access/pl");
+  expect(response?.status()).toBe(404);
+});
+
+test("unverified overstay-penalty countries 404 instead of rendering thin content", async ({
+  page,
+}) => {
+  const response = await page.goto("/rules/overstay-penalties/gr");
   expect(response?.status()).toBe(404);
 });
 

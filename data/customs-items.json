@@ -5601,5 +5601,230 @@
     "verified_at": "2026-09-16",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-sg",
+    "names": ["meat", "dairy", "cheese", "milk", "beef", "pork"],
+    "destination": "SG",
+    "category": "food_animal",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Beef, mutton and pork are allowed only from Singapore Food Agency-approved source countries (the approved list includes Argentina, Australia, Belgium, Brazil, Canada, Denmark, Finland, France, Germany, Hungary, Ireland, Japan, Mexico, the Netherlands, New Zealand, Paraguay, Poland, Spain, Sweden, Uruguay and the USA for beef, with the exact list varying by meat type), capped at 5kg combined. Dairy and other processed food fall under the general non-commercial personal-food allowance of 5kg/5L/S$100 combined."
+    },
+    "notes": "The approved-country list differs by meat type (beef vs. pork vs. mutton) — check SFA's own list for the specific country and meat combination before assuming an origin is covered.",
+    "legal_source": {
+      "name": "Singapore Food Agency — List of Food & Food Products Allowed",
+      "url": "https://www.sfa.gov.sg/bringing-food-for-private-consumption-from-overseas/list-of-food---food-products-allowed"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-sg",
+    "names": ["fruit", "vegetables", "plants", "seeds"],
+    "destination": "SG",
+    "category": "food_plant",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Fruit and vegetables are allowed from any country in a small, reasonable hand-carry quantity for personal consumption, within the general 5kg/5L/S$100 non-commercial food allowance."
+    },
+    "notes": "Importing at commercial scale without the required approvals carries a fine of up to S$10,000 and/or 3 years' imprisonment, per an Immigration & Checkpoints Authority enforcement release — that penalty applies to commercial-scale evasion, not an ordinary traveler's hand-carried snack.",
+    "legal_source": {
+      "name": "Singapore Food Agency — General Rule to Bring Food into Singapore (Non-commercial)",
+      "url": "https://www.sfa.gov.sg/bringing-food-for-private-consumption-from-overseas/general-rule-to-bring-food-into-singapore-non-commercial"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-nz",
+    "names": ["meat", "dairy", "cheese", "milk", "honey", "eggs"],
+    "destination": "NZ",
+    "category": "food_animal",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "All animal products — meat, dairy, fish, honey, eggs, feathers, shells, wool, skins, bones — must be declared on arrival. Some (pork, trout, whole eggs) are banned outright; others are allowed only after inspection by Biosecurity New Zealand."
+    },
+    "notes": "Failing to declare, even accidentally, draws an instant NZD 400 infringement fine — New Zealand runs the strictest biosecurity enforcement in this dataset. A proposal to raise this to NZD 800 for high-risk items (meat, fresh fruit) was reported as of February 2026 but had not taken effect as law at the time of writing — don't assume it's in force.",
+    "legal_source": {
+      "name": "New Zealand Customs Service — What you can and can't bring (food and other risk items)",
+      "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/food-and-other-risk-items"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-br",
+    "names": ["meat", "dairy", "cheese", "milk", "cured meat", "salami"],
+    "destination": "BR",
+    "category": "food_animal",
+    "verdict": "depends",
+    "limits": {
+      "description": "Raw or artisanally-processed meat, cured meats, and non-industrialized milk/dairy are prohibited. Cheese, salami and doce de leite ARE allowed if in original manufacturer packaging with identifying labels — the packaging and labeling is what distinguishes an allowed item from a prohibited one."
+    },
+    "notes": "Per Portaria MAPA n° 872/2025: any animal product brought in without sanitary proof is treated as prohibited by default. Items that do require import authorization can be pre-declared via a MAPA-issued document before travel.",
+    "legal_source": {
+      "name": "Ministério da Agricultura e Pecuária (MAPA) — Viajantes e Bagagens (Portaria MAPA n° 872/2025)",
+      "url": "https://www.gov.br/agricultura/pt-br/assuntos/vigilancia-agropecuaria/viajantes-e-bagagens"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-br",
+    "names": ["fruit", "vegetables", "seeds", "plants", "flowers"],
+    "destination": "BR",
+    "category": "food_plant",
+    "verdict": "prohibited",
+    "notes": "Fresh fruit, vegetables, seeds, seedlings, plants and flowers are prohibited without sanitary/phytosanitary proof, per Portaria MAPA n° 872/2025 — Brazil treats any plant product without that documentation as prohibited by default, and ordinary travelers don't carry it.",
+    "legal_source": {
+      "name": "Ministério da Agricultura e Pecuária (MAPA) — Viajantes e Bagagens (Portaria MAPA n° 872/2025)",
+      "url": "https://www.gov.br/agricultura/pt-br/assuntos/vigilancia-agropecuaria/viajantes-e-bagagens"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-ph",
+    "names": ["meat", "dairy", "cheese", "milk", "canned meat"],
+    "destination": "PH",
+    "category": "food_animal",
+    "verdict": "depends",
+    "limits": {
+      "description": "Fully cooked/canned meat from disease-free countries needs no clearance. Processed-but-uncooked meat needs no SPS clearance but is capped at 10kg per passenger, with a veterinary health certificate or proof of purchase. Unprocessed meat requires an SPS Import Clearance for any quantity, however small."
+    },
+    "notes": "Per Bureau of Animal Industry Memorandum Circular 48, Series of 2021 — the cooked/canned-vs-uncooked-vs-unprocessed distinction is the whole rule; a canned corned beef and a raw steak are treated completely differently at the border.",
+    "legal_source": {
+      "name": "Bureau of Animal Industry (BAI) — Meat Products Import (Memorandum Circular 48, s. 2021)",
+      "url": "https://www.bai.gov.ph/Stakeholders/MeatProductsImport"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-vn",
+    "names": ["meat", "dairy", "cheese", "milk", "pork", "beef"],
+    "destination": "VN",
+    "category": "food_animal",
+    "verdict": "depends",
+    "limits": {
+      "description": "Fresh or animal-origin products brought in without a veterinary quarantine certificate from the country of export risk confiscation and destruction on arrival."
+    },
+    "notes": "Administrative penalties for quarantine-registration and declaration violations run under Decree No. 204/2026/ND-CP (Vietnam's current veterinary administrative-penalty decree), broadly VND 1–50 million depending on the severity of the violation, with mandatory re-quarantine or destruction of the goods as a remedial measure. Found via a search-snippet quote of the decree, not a full direct fetch — treat the exact penalty figures as approximate.",
+    "legal_source": {
+      "name": "Decree No. 204/2026/ND-CP on administrative penalties in veterinary medicine, via LuatVietnam",
+      "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/nghi-dinh-204-2026-nd-cp-quy-dinh-xu-phat-vi-pham-hanh-chinh-trong-linh-vuc-thu-y-437349-d1.html"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-kr",
+    "names": ["meat", "dairy", "cheese", "milk", "beef", "pork", "chicken"],
+    "destination": "KR",
+    "category": "food_animal",
+    "verdict": "prohibited",
+    "notes": "Meat and poultry (beef, pork, lamb, chicken and processed forms like ham, sausage and jerky) and dairy (milk, cheese, butter) are barred from entry — even an in-flight meal containing these can't be carried off the plane. A commonly cited 'up to KRW 10 million' fine figure appears only in secondary travel-blog sources, not this page itself — don't treat that specific number as confirmed.",
+    "legal_source": {
+      "name": "Korea Tourism Organization (official) — Animal/Plant Quarantine",
+      "url": "https://english1.visitkorea.or.kr/enu/TRV/TV_ENG_2_4.jsp"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-kr",
+    "names": ["fruit", "vegetables", "plants", "seeds", "flowers"],
+    "destination": "KR",
+    "category": "food_plant",
+    "verdict": "prohibited",
+    "notes": "Fresh fruit and vegetables, cut flowers, seeds, saplings, bulbs, roots, and dried/fresh agricultural or medicinal-herb products are all barred from entry.",
+    "legal_source": {
+      "name": "Korea Tourism Organization (official) — Animal/Plant Quarantine",
+      "url": "https://english1.visitkorea.or.kr/enu/TRV/TV_ENG_2_4.jsp"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-eu",
+    "names": ["fruit", "vegetables", "plants", "seeds", "flowers"],
+    "destination": "EU",
+    "category": "food_plant",
+    "verdict": "depends",
+    "limits": {
+      "description": "Plants for planting — seeds, bulbs, tubers, cuttings, grafts, rooted plants — are banned outright from non-EU countries in personal luggage. Fruit, vegetables, flowers and other plant products need a phytosanitary certificate issued in the country of origin, except for a short exempt list (pineapple, coconut, durian, banana, and dates, per Annex XI of Implementing Regulation (EU) 2019/2072), which need no certificate."
+    },
+    "notes": "Undocumented plant goods that don't fall on the exempt list are confiscated and destroyed at the EU external border, not just fined.",
+    "legal_source": {
+      "name": "European Commission — Your Europe: Taking animal products, food or plants with you in the EU",
+      "url": "https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-ke",
+    "names": ["meat", "dairy", "cheese", "milk"],
+    "destination": "KE",
+    "category": "food_animal",
+    "verdict": "depends",
+    "limits": {
+      "description": "Kenya's Meat Control (Importation of Meat and Meat Products) Regulations require an import permit from the Director of Veterinary Services for meat or meat-product imports, via written application, a fee, and 24 hours' advance notice to the port of entry."
+    },
+    "notes": "This regulation reads as built for commercial importers, not obviously for a tourist carrying a personal quantity of cured meat or cheese — don't assume an ordinary traveler needs to apply for a Director-of-Veterinary-Services permit before a trip, but also don't assume they're exempt; Kenya's own page doesn't draw that line explicitly. Found via a search-snippet quote of the regulation text, not a direct fetch (403'd).",
+    "legal_source": {
+      "name": "Kenya Law — The Meat Control (Importation of Meat and Meat Products) Regulations",
+      "url": "https://new.kenyalaw.org/akn/ke/act/ln/2001/28/eng@2022-12-31"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-id",
+    "names": ["meat", "dairy", "cheese", "milk"],
+    "destination": "ID",
+    "category": "food_animal",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "All animal and fish product imports must carry quarantine documents from the country/region of origin, declared through Indonesia's \"All Indonesia\" app and inspected on arrival."
+    },
+    "notes": "Undocumented goods are confiscated and destroyed — enforcement was recently tightened specifically for goods originating from Malaysia amid Nipah-virus concerns, an example of how fast this can change by origin country.",
+    "legal_source": {
+      "name": "Badan Karantina Indonesia (Indonesian Quarantine Agency) — Pengawasan Produk Hewan dan Tumbuhan Asal Luar Negeri",
+      "url": "https://karantinaindonesia.go.id/berita/pengawasan-produk-hewan-dan-tumbuhan-asal-luar-negeri-terus-diperketat"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-id",
+    "names": ["fruit", "vegetables", "plants", "seeds"],
+    "destination": "ID",
+    "category": "food_plant",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "All plant product imports must carry quarantine documents from the country/region of origin, declared through Indonesia's \"All Indonesia\" app and inspected on arrival."
+    },
+    "notes": "Undocumented goods are confiscated and destroyed.",
+    "legal_source": {
+      "name": "Badan Karantina Indonesia (Indonesian Quarantine Agency) — Pengawasan Produk Hewan dan Tumbuhan Asal Luar Negeri",
+      "url": "https://karantinaindonesia.go.id/berita/pengawasan-produk-hewan-dan-tumbuhan-asal-luar-negeri-terus-diperketat"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
   }
 ]

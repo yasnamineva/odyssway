@@ -1971,14 +1971,103 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
       version exists at guessed CELEX date suffixes (404), so the original
       2008 text is what's cited, which is standard practice for an
       unamended act.
-- [ ] `/rules/overstay-penalties/[country]` (the per-country programmatic
-      route from §7 of AGENTS.md, `data/overstay-penalties.json`) is
-      **still not built** — the schema exists in the engine
-      (`overstayPenaltySchema`) but the directive itself doesn't set
-      national fine amounts (that's each Schengen country's own
-      immigration-law matter, not EU-harmonized), and finding 29 countries'
-      individual fine/ban-range figures needs the same kind of per-country
-      research (and the same WebSearch dependency) as the destinations
-      work above. Deliberately left unbuilt rather than shipping guessed or
-      thinly-sourced per-country rows — the general EU-wide page states
-      this gap explicitly rather than hiding it.
+- [x] `/rules/overstay-penalties/[country]` — built. `data/overstay-penalties.json`
+      now has 22 of the 29 Schengen countries (AT, BE, BG, DE, DK, EE, ES,
+      FI, FR, IS, IT, LT, LU, LV, NL, NO, PL, PT, RO, SE, SI, CH), each with
+      a real, citable national-law source for the fine and/or entry-ban
+      figures — see the row's `enforcementNotes` for exactly which figures
+      were directly confirmed vs. secondary-corroborated. Where a specific
+      figure (usually the fine amount) genuinely couldn't be pinned down,
+      the field says so honestly (e.g. Norway: "does not impose fines,"
+      per UDI itself; France: no automatic fine at all, a genuinely
+      different mechanism than most — both real findings, not gaps) rather
+      than being invented or omitted.
+      **7 Schengen countries deliberately left unpublished** — real research
+      effort was spent on each (4 parallel research passes, ~30 tool calls
+      apiece), but nothing cleared the "real, specific, reachable-or-quoted
+      source" bar this project uses:
+      - Croatia (HR): fine bands exist in the Law on Foreigners' penalty
+        chapter (Arts. 100-104) but which band governs simple overstay
+        specifically wasn't confirmed; the one ban-duration figure found
+        (3 months-1 year for ≤30-day overstays) is single-sourced.
+      - Czech Republic (CZ): weakest of the batch — CZK 3,000/5,000/10,000
+        fine tiers are mentioned in secondary sources but which tier
+        applies to simple overstay (vs. other violations under Law No.
+        326/1999 Sb.) wasn't confirmed; no ban figure found at all.
+      - Greece (GR): only aggregator/blog sources found (visa-calculator.com,
+        euroborder.com) for both fine (~EUR 500-1,200) and ban (~90 days) —
+        no Greek government or authoritative source reached.
+      - Hungary (HU): no fine or ban figures located at all; only found
+        that Hungary replaced its 2007 immigration law with new unified
+        legislation effective 1 Jan 2024 — needs a dedicated pass at the
+        new law's text or Hungary's immigration authority (BMH).
+      - Liechtenstein (LI): fully unresolved, as expected for a microstate
+        — every search returned only generic pan-Schengen content with
+        zero LI-specific figures or a citable LI government source
+        (Ausländergesetz / Migrationsamt).
+      - Malta (MT): fine amount entirely unresolved (Immigration Act Cap.
+        217's own text wasn't fetchable); the 1-10 year ban range comes
+        from a single immigration-law-firm blog, not government-primary.
+      - Slovakia (SK): ban-duration tiers (1y/1-3y/1-5y/10y, Act 404/2011
+        § 82) are corroborated by multiple Slovak sources including the
+        Supreme Administrative Court, but which tier maps to a
+        straightforward first-time overstay wasn't confirmed, and no fine
+        figure was found — a direct read of the Ministry of Interior's own
+        PDF (linked, not yet fetched) is the natural next step.
+      Cyprus isn't in this list — it's an EU member but not a Schengen
+      member (see `countries.json`), so the 90/180 rule and this dataset
+      don't apply to it at all.
+
+## Done (2026-09-16) — food_animal/food_plant gap fill
+
+- [x] Added 13 rows closing most of the `food_animal` (was missing from 12
+      destinations) / `food_plant` (was missing from 10) gap: `meat-dairy-sg`
+      + `fresh-produce-sg` (SFA, directly fetched), `meat-dairy-nz`
+      (NZ Customs + a real 2026 enforcement case), `meat-dairy-br` +
+      `fresh-produce-br` (MAPA, Portaria n° 872/2025, directly fetched —
+      note cheese/salami/doce de leite are explicitly exempted if in
+      original manufacturer packaging, everything else needs sanitary
+      proof), `meat-dairy-ph` (Bureau of Animal Industry, directly quoted:
+      cooked/canned vs. processed-uncooked vs. unprocessed meat are treated
+      completely differently), `meat-dairy-vn` (Decree 204/2026/ND-CP,
+      search-snippet sourced), `meat-dairy-kr` + `fresh-produce-kr` (Korea
+      Tourism Organization's official English page — a real breakthrough,
+      since `.go.kr` domains remain unreachable), `fresh-produce-eu` (an EC
+      "Your Europe" portal page, directly fetched — plants-for-planting
+      banned outright from non-EU countries, fruit/veg need a phytosanitary
+      certificate except a short exempt list per Annex XI of Implementing
+      Regulation (EU) 2019/2072), `meat-dairy-ke` (Kenya Law's Meat Control
+      Regulations — flagged as possibly built for commercial importers, not
+      obviously applicable to ordinary travelers, since Kenya's own text
+      doesn't draw that line), `meat-dairy-id` + `fresh-produce-id` (Badan
+      Karantina Indonesia, directly fetched).
+- [ ] **Left unpublished, real effort spent, no real specific source
+      reached**:
+      - China (CN), both categories — extremely consistent secondary
+        corroboration of a well-known zero-tolerance meat/dairy/produce
+        policy, but no GACC/customs.gov.cn/12360 page survived the SSL/
+        bot-blocking that's affected China research all project long. A
+        homepage-level URL isn't a real citation — don't ship one.
+      - Vietnam (VN), `food_plant` only (the `food_animal` row shipped) —
+        only found that seeds not on the protected-species list and free of
+        soil are allowed; a specific thuvienphapluat.vn page on seed-import
+        penalties exists but wasn't fetched for exact figures.
+      - Philippines (PH), `food_plant` only (the `food_animal` row shipped)
+        — the Bureau of Plant Industry's phytosanitary-clearance
+        requirement is corroborated by multiple secondary sources, but no
+        specific BPI page was reachable this pass, only the general
+        bpi.gov.ph homepage — not specific enough to cite.
+      - Rwanda (RW), both categories — RRA's prohibited-goods page doesn't
+        address food specifically; a real "Law on Plant Health Protection
+        in Rwanda" exists (found via a Laws.Africa mirror) requiring a
+        license + phytosanitary certificate, but its exact article text
+        wasn't fetched this pass.
+      - Saudi Arabia (SA), both categories — ZATCA's prohibited-goods page
+        404'd, the SFDA food-import PDF fetched but was unreadable
+        (binary/encoded). Needs a fresh pass targeting SFDA's
+        traveler-specific guidance or the "Individual Travelers" customs
+        portal specifically.
+      - Egypt (EG), `food_animal` only — every source found was a
+        travel-blog aggregator; no Egyptian Customs Authority or Ministry
+        of Agriculture primary page located. Needs a dedicated pass,
+        ideally in Arabic against mfa.gov.eg or customs.gov.eg.

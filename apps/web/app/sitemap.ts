@@ -6,6 +6,7 @@ import { customsItems, destinations } from "../lib/destinations";
 import { etias } from "../lib/etias";
 import { publishedEesRecords } from "../lib/ees";
 import { publishedNationalities } from "../lib/nationalities";
+import { publishedOverstayPenalties } from "../lib/overstay-penalties";
 
 const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.invalid";
 
@@ -19,6 +20,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/calculator`, lastModified: countriesVerifiedAt, priority: 0.9 },
     { url: `${BASE}/rules/90-180-rule`, lastModified: CONTENT_CHECKED, priority: 0.8 },
     { url: `${BASE}/rules/overstay-penalties`, lastModified: "2026-09-15", priority: 0.7 },
+    ...publishedOverstayPenalties.map((r) => ({
+      url: `${BASE}/rules/overstay-penalties/${r.country.toLowerCase()}`,
+      lastModified: r.verified_at ?? CONTENT_CHECKED,
+      priority: 0.6,
+    })),
     { url: `${BASE}/ees`, lastModified: CONTENT_CHECKED, priority: 0.8 },
     { url: `${BASE}/ees/what-to-expect`, lastModified: CONTENT_CHECKED, priority: 0.7 },
     { url: `${BASE}/ees/dispute-overstay`, lastModified: CONTENT_CHECKED, priority: 0.8 },

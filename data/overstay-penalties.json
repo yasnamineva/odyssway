@@ -1,0 +1,288 @@
+[
+  {
+    "country": "AT",
+    "fineRange": "EUR 500–2,500 for a first offense; EUR 2,500–7,500 for a repeat offense (or 2–4 weeks' imprisonment respectively if the fine can't be collected)",
+    "banRange": "No Austria-specific statutory range was confirmed; entry bans are issued case-by-case within the general EU framework (commonly around 3 years for straightforward cases, per the EU-wide explainer on this site)",
+    "enforcementNotes": "Unlawful stay is an administrative offense (Verwaltungsübertretung) under § 120(1a) of the Aliens Police Act (Fremdenpolizeigesetz 2005, FPG) — it is not punishable while a person is formally tolerated (geduldet), within a voluntary-departure period, or subject to a liberty restriction. Fine figures are quoted from a legal-database publisher citing the statute directly, not Austria's own RIS portal.",
+    "legal_source": {
+      "name": "Fremdenpolizeigesetz 2005 (FPG) § 120, via JUSLINE Österreich legal database",
+      "url": "https://www.jusline.at/gesetz/fpg/paragraf/120"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "BE",
+    "fineRange": "EUR 200 flat administrative fine, due immediately at the border (foreigners) or on the territory (EU citizens without valid documents)",
+    "banRange": "1–5 years (Aliens Act Art. 74/11), applied Schengen-wide at the Immigration Office's discretion",
+    "enforcementNotes": "Legal basis is Arts. 4bis, 41, 41bis, 42, 42quinquies of the Belgian Aliens Act (in force since 24 July 2016). The fine and the entry ban are separate consequences — paying the fine doesn't avoid a ban being issued. Sourced via the European Migration Network's Belgian contact point reporting on the measure; a direct fetch of the Immigration Office's own site (dofi.ibz.be) was blocked by a CAPTCHA.",
+    "legal_source": {
+      "name": "European Migration Network Belgium — Belgian Immigration Office (Office des Étrangers) administrative fine and entry-ban rules",
+      "url": "https://dofi.ibz.be/en/themes/faq/administrative-fines"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "BG",
+    "fineRange": "BGN 500–5,000 for a first offense; BGN 1,000–10,000 for a repeat offense",
+    "banRange": "Up to 5 years, tightened by a 2023 parliamentary amendment in force since 31 March 2024 (coinciding with Bulgaria's partial Schengen accession)",
+    "enforcementNotes": "Legal basis is the Law on Foreigners in the Republic of Bulgaria and its implementing regulations (Chapter 4). The 5-year figure is a general refusal ground covering any documented border/passport/visa/currency/customs violation in the prior 5 years, not an overstay-exclusive provision. Figures are quoted from a Bulgarian immigration-law firm citing the Act by name, corroborated by a second independent source describing the 2023 amendment.",
+    "legal_source": {
+      "name": "Law on Foreigners in the Republic of Bulgaria, as summarized by Elan Consulting (Bulgarian immigration law firm)",
+      "url": "https://www.elan-consulting-bg.com/en/post/globi-za-narusheniya-ot-chuzhdenci-v-blgariya-prez-2024g"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "DE",
+    "fineRange": "EUR 500–5,000 administrative fine (Residence Act § 98, for negligent unlawful residence) — this figure is secondary-corroborated; the primary-text fetch used for the ban tiers below didn't reach far enough to confirm it verbatim",
+    "banRange": "Up to 5 years as the general rule (§11(3)); up to 10 years if expulsion followed a criminal conviction (§11(5)); up to 20 years for terrorism/security grounds (§11(5a)); can be permanent for standing deportation orders (§11(5b))",
+    "enforcementNotes": "Overstays are typically caught at exit control or a later encounter; deportation costs (commonly cited elsewhere as EUR 5,000–20,000) are billed separately from the administrative fine. Short overstays are treated less severely under a proportionality principle, but liability attaches from day one.",
+    "legal_source": {
+      "name": "Gesetze im Internet (German Federal Ministry of Justice) — Residence Act (Aufenthaltsgesetz), § 11",
+      "url": "https://www.gesetze-im-internet.de/englisch_aufenthg/englisch_aufenthg.html"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "DK",
+    "fineRange": "DKK 1,500 flat fine",
+    "banRange": "Typically 2 years, registered Schengen-wide via SIS",
+    "enforcementNotes": "Administrative expulsion (udvisning) with an entry ban is imposed under the Aliens Act (Udlændingeloven) §§ 25b and 32; even a 1–5 day overstay can trigger expulsion. Figures are quoted from a Danish immigration-law firm citing these sections — a direct fetch of Denmark's official legal portal (retsinformation.dk) wasn't attempted this pass.",
+    "legal_source": {
+      "name": "Holm Thomsen Law (Danish immigration law firm) — 'Visa Overstays in Denmark', citing Udlændingeloven §§25b, 32",
+      "url": "https://holmthomsenlaw.com/article/visa-overstays-in-denmark-how-minor-overstays-can-lead-to-severe-penalties/"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "EE",
+    "fineRange": "Punishable as a misdemeanor (väärtegu) under Penal Code § 260; the statute's specific fine-unit amount was not confirmed against primary text this pass",
+    "banRange": "3 years if issued at a border checkpoint for an expired Schengen-authorized stay; 5 years for a standard precept-to-leave; up to 10 years for aggravated or repeat cases",
+    "enforcementNotes": "Governed by Estonia's Obligation to Leave and Prohibition on Entry Act. Ban-duration figures were read directly from the Act's English text via LegislationLine (an OSCE/ODIHR legal database mirroring official translations) — Estonia's own Official Gazette portal (riigiteataja.ee) is JS-rendered and didn't return text via automated fetch.",
+    "legal_source": {
+      "name": "Obligation to Leave and Prohibition on Entry Act of the Republic of Estonia, via LegislationLine (OSCE/ODIHR)",
+      "url": "https://legislationline.org/taxonomy/term/13346"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "ES",
+    "fineRange": "EUR 501–10,000 — Spanish authorities choose between a fine and expulsion for a given case, they aren't applied together",
+    "banRange": "3–10 years Schengen-wide if expulsion (rather than a fine) is the outcome chosen",
+    "enforcementNotes": "Overstay beyond 3 months is classified as a \"grave\" infraction under Ley Orgánica 4/2000 (LOEX) Art. 53.1(a). A proportionality principle and recent Spanish Supreme Court case law favor a fine over expulsion for a simple overstay with no aggravating factors.",
+    "legal_source": {
+      "name": "BOE (Spain's Official State Gazette) — Ley Orgánica 4/2000, Art. 53.1(a)",
+      "url": "https://www.boe.es/eli/es/lo/2000/01/11/4/con/20080122"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "FI",
+    "fineRange": "No specific monetary figure was found for Finland in this pass",
+    "banRange": "Entry bans may be imposed for a fixed term or until further notice (i.e. potentially indefinite) — Finland's immigration service does not publish a simple numeric range",
+    "enforcementNotes": "Confirmed directly from the Finnish Immigration Service's (Migri) own page on denial of admittance, deportation and entry bans. The absence of a stated numeric ban range is Migri's own framing, not a research gap.",
+    "legal_source": {
+      "name": "Maahanmuuttovirasto (Finnish Immigration Service, Migri) — Denial of admittance or stay, deportation, entry ban",
+      "url": "https://migri.fi/en/denial-of-admittance-or-stay-deportation-entry-ban"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "FR",
+    "fineRange": "No automatic fine for the overstay itself — since a 2012 reform (following CJEU case law), simple irregular presence is not automatically a criminal or fined offense; monetary and criminal exposure attaches to evading a removal order (OQTF), not to the overstay alone",
+    "banRange": "Typically 1–3 years alongside an OQTF (obligation to leave French territory); evading or violating a removal order is a separate offense carrying up to 3 years' imprisonment plus a 10-year territorial ban (CESEDA Art. L824-9)",
+    "enforcementNotes": "This is a genuinely different shape of rule than most Schengen countries: France doesn't fine simple overstay directly, it escalates through an OQTF process. Art. L824-9 was fetched and read directly: \"puni de trois ans d'emprisonnement\" and \"dix ans d'interdiction du territoire\" for violating a removal order.",
+    "legal_source": {
+      "name": "Légifrance — Code de l'entrée et du séjour des étrangers et du droit d'asile (CESEDA), Art. L824-9",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043911515"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "IS",
+    "fineRange": "No specific monetary figure was found for Iceland in this pass",
+    "banRange": "Typically at least 2 years, can be permanent for more serious cases",
+    "enforcementNotes": "Sourced from island.is (Iceland's official government services portal) and the Directorate of Immigration's (Útlendingastofnun) own site structure; the specific page on deportation and re-entry bans was confirmed to exist but not fetched for full text this pass.",
+    "legal_source": {
+      "name": "Útlendingastofnun (Directorate of Immigration, Iceland) — Brottvísun og endurkomubann (Deportation and re-entry ban)",
+      "url": "https://utl.is/index.php/brottvisun-og-endurkomubann"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "IT",
+    "fineRange": "EUR 5,000–10,000, the commonly cited administrative fine for soggiorno irregolare (irregular stay)",
+    "banRange": "Typically 5 years, reducible to 3 years on judicial request; recorded in SIS",
+    "enforcementNotes": "Legal basis is the Consolidated Immigration Act (Decreto Legislativo 25 luglio 1998, n. 286), Artt. 13, 13-bis. The statute was located on Italy's official legislative database (Normattiva) and confirmed real and reachable, but only its table of contents was extracted, not the article text itself — the specific figures above are secondary-corroborated, not read verbatim from the statute.",
+    "legal_source": {
+      "name": "Normattiva (Italy's official legislative database) — Decreto Legislativo 25 luglio 1998, n. 286 (Testo Unico Immigrazione), Artt. 13, 13-bis",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-07-25;286"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "LT",
+    "fineRange": "EUR 70–300 (Code of Administrative Offences, Art. 538), for undocumented entry, stay, residence or transit",
+    "banRange": "General Schengen entry bans of 1–5 years; up to 5 years specifically for failing to pay fines or discharge customs obligations under the Law on the Legal Status of Aliens",
+    "enforcementNotes": "Irregular stay is classed as an administrative offense under Art. 538. Detention pending deportation is possible under the Law on the Legal Status of Aliens, Art. 113(2), if the person is assessed as a flight risk. Figures come from a UNHCR Refworld-hosted translation of the relevant Lithuanian statutes, not a direct fetch of Lithuania's own legislative portal.",
+    "legal_source": {
+      "name": "Code of Administrative Offences of the Republic of Lithuania, Art. 538; Law on the Legal Status of Aliens, via UNHCR Refworld",
+      "url": "https://www.refworld.org/sites/default/files/attachments/58a6e3d74.pdf"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "LU",
+    "fineRange": "No specific fine amount was found for Luxembourg in this pass — the law's Chapter 7 (\"Sanctions\") addresses irregular entry/stay, but a fixed monetary figure wasn't located",
+    "banRange": "5 years, confirmed via a real published case (the Minister of Home Affairs ordering immediate departure plus a 5-year entry ban), citing Arts. 100 and 109–115",
+    "enforcementNotes": "Legal basis is the loi modifiée du 29 août 2008 sur la libre circulation des personnes et l'immigration. The consolidated text is hosted on Luxembourg's own official legislative portal (Legilux); the specific article numbers and the 5-year figure come from a secondary case summary citing the law, not a direct read of Arts. 100/109–115 themselves.",
+    "legal_source": {
+      "name": "Legilux (Luxembourg's official legislative portal) — Loi modifiée du 29 août 2008 sur la libre circulation des personnes et l'immigration, Arts. 100, 109–115",
+      "url": "https://legilux.public.lu/eli/etat/leg/loi/2008/08/29/n1/consolide/20240908"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "LV",
+    "fineRange": "Up to EUR 350 (70 fine-units × EUR 5), Immigration Law § 68.2, for staying without a valid travel document, visa or residence permit, or for otherwise violating stay conditions",
+    "banRange": "No Latvia-specific figure was found on PMLP's own pages this pass — not confirmed, and not guessed",
+    "enforcementNotes": "PMLP (Latvia's Office of Citizenship and Migration Affairs) issues return decisions for irregular stay. Overstay is typically only detected via a police check or when the person seeks a public-authority service, not proactively.",
+    "legal_source": {
+      "name": "PMLP (Pilsonības un migrācijas lietu pārvalde, Latvia's Office of Citizenship and Migration Affairs) — Administrative liability in the field of residence permits, Immigration Law § 68.2",
+      "url": "https://www.pmlp.gov.lv/en/administrative-liability-field-residence-permits-0"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "NL",
+    "fineRange": "No fixed statutory fine for the overstay itself — the Immigration and Naturalisation Service's own page discusses fines only in the context of violating an active entry ban (\"a few thousand euros,\" unspecified)",
+    "banRange": "1 year for an overstay of more than 3 but up to 90 days; 2 years for more than 90 days; up to 10 or 20 years for public-order or security threats",
+    "enforcementNotes": "Irregular stay is a criminal offense under Penal Code § 197, not just an administrative matter — violating an active entry ban specifically risks up to 6 months' imprisonment. The entry ban's clock starts on the date of departure, not the date it's issued.",
+    "legal_source": {
+      "name": "IND (Immigratie- en Naturalisatiedienst, Dutch Immigration and Naturalisation Service) — Entry ban",
+      "url": "https://ind.nl/en/entry-ban"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "NO",
+    "fineRange": "Norway does not impose fines for Immigration Act violations, per the Norwegian Directorate of Immigration's own definitions",
+    "banRange": "2, 5 or 10 years, or permanent, applied Schengen-wide",
+    "enforcementNotes": "Expulsion is specifically considered for overstays of 30 or more days for third-country nationals. The ban must be formally lifted before re-entry becomes possible again. Norway is Schengen-associated but not an EU member (EFTA/EEA), so this is sourced from Norway's own immigration authority rather than an EU directive.",
+    "legal_source": {
+      "name": "UDI (Utlendingsdirektoratet, Norwegian Directorate of Immigration) — word definitions: Expulsion / Prohibition against entry",
+      "url": "https://www.udi.no/en/word-definitions/expulsion/"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "PL",
+    "fineRange": "Reported as roughly PLN 500–5,000 for illegal stay, though sources on the exact statutory scale are inconsistent — treat as approximate",
+    "banRange": "6 months to 3 years",
+    "enforcementNotes": "The Border Guard commander issues a border-crossing protocol plus an order to leave Polish territory, with a voluntary-return deadline of 8–30 days from the decision. The entry ban covers Poland and the wider Schengen Area. Ban-duration figure is confirmed directly from Poland's official Border Guard site; the fine figure is not.",
+    "legal_source": {
+      "name": "Komenda Główna Straży Granicznej (Polish Border Guard Headquarters) — Konsekwencje nielegalnego pobytu na terytorium RP",
+      "url": "https://www.podlaski.strazgraniczna.pl/pod/cudzoziemcy/konsekwencje-nielegalne"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "PT",
+    "fineRange": "EUR 80–160 for an overstay up to 30 days, tiering up to EUR 500–700 for an overstay beyond 180 days",
+    "banRange": "No Portugal-specific figure was found this pass — not confirmed, and not guessed",
+    "enforcementNotes": "Legal basis is Lei n.º 23/2007 (Lei de Estrangeiros), Art. 192.º — the fine scales with how long the overstay lasted, and applies whether the person is caught in-country or at departure. Figures are quoted from a compiler site (Legispédia de Estrangeiros e Fronteiras) reproducing the article text; Portugal's official gazette (Diário da República) wasn't fetched directly this pass.",
+    "legal_source": {
+      "name": "Lei n.º 23/2007 (Lei de Estrangeiros), Art. 192.º, via Legispédia de Estrangeiros e Fronteiras",
+      "url": "https://sites.google.com/site/leximigratoria/artigo-192-o-permanencia-ilegal"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "RO",
+    "fineRange": "Reported inconsistently across sources, roughly RON 400–1,000 depending on overstay duration — treat as approximate, not confirmed against the ordinance's exact penalty table",
+    "banRange": "1 year for an illegal stay of 30 days to 1 year; 2 years for over 1 year; a minimum of 5 years for repeat violations",
+    "enforcementNotes": "Legal basis is Emergency Ordinance (OUG) 194/2002 on the regime of foreigners in Romania. The ban-duration figures are consistent across multiple sources; the fine figure is not, and is reported here as approximate rather than precise. Sourced via a Romanian legal-database compiler (euroavocatura.ro) quoting the ordinance; Romania's own official legislative portals weren't fetched directly this pass.",
+    "legal_source": {
+      "name": "OUG 194/2002 privind regimul străinilor în România, via euroavocatura.ro",
+      "url": "https://www.euroavocatura.ro/print2.php?print2=lege&idItem=1696"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "SE",
+    "fineRange": "Day-fines (dagsböter), not a flat amount — Swedish Prosecution Authority guidance sets 30 day-fines for overstays up to 1 month, rising to 50 day-fines for up to 5 months; each day-fine is scaled to the person's income, so there's no single SEK figure to quote",
+    "banRange": "No Sweden-specific figure beyond the general EU Return Directive baseline was found this pass",
+    "enforcementNotes": "Unauthorized residence is criminalized under the Aliens Act (Utlänningslagen 2005:716), Ch. 20 § 1 — but in minor cases prosecution isn't pursued unless justified by public interest, so many simple tourist overstays may never actually reach a fine in practice.",
+    "legal_source": {
+      "name": "Åklagarmyndigheten (Swedish Prosecution Authority) — Normalstraff för vissa bötesbrott, citing Utlänningslagen (2005:716) Ch. 20 § 1",
+      "url": "https://www.aklagare.se/globalassets/dokument/rattsliga-vagledningar/rav-202121-normalstraff-for-vissa-botesbrott.pdf"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "SI",
+    "fineRange": "No specific fine amount was found for Slovenia in this pass",
+    "banRange": "6 months to 5 years (Aliens Act, ZTuj-2, entry-ban provision), with a 7–30 day voluntary-departure deadline set before removal or the ban takes effect",
+    "enforcementNotes": "Sources disagree on whether the entry-ban provision is numbered Art. 66 or Art. 67 of ZTuj-2 (likely reflecting renumbering between the ZTuj-1 and ZTuj-2 versions of the law) — treat the article number as approximate. Sourced via a Slovenian legal-text compiler (zakonodaja.com) plus the national police's (policija.si) description of the general mechanism; Slovenia's official consolidated-text portal (pisrs.si) wasn't fetched directly this pass.",
+    "legal_source": {
+      "name": "Zakon o tujcih (ZTuj-2), entry-ban provision, via zakonodaja.com",
+      "url": "https://zakonodaja.com/zakon/ztuj-2/66-clen-prepoved-vstopa"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "CH",
+    "fineRange": "No fixed national statutory amount — cantonal police impose fines case-by-case; real-world reported examples cluster around CHF 350–600, but this is anecdotal, not a confirmed statutory range",
+    "banRange": "Typically 12 months for a first-time, moderate overstay with no prior infringements; the State Secretariat for Migration (SEM) can impose up to 5 years for more serious cases under Art. 67(3) of the Federal Act on Foreign Nationals and Integration (FNIA/AIG)",
+    "enforcementNotes": "SEM decides bans, which are appealable within 30 days to the Federal Administrative Court in St. Gallen. Switzerland is Schengen-associated but not an EU member (EFTA); the ban is a Swiss domestic-law decision but is still enforced Schengen-wide via SIS II. Sourced via Swiss public broadcaster SWI swissinfo.ch and Swiss immigration-law firms; SEM's own site wasn't fetched directly this pass.",
+    "legal_source": {
+      "name": "Federal Act on Foreign Nationals and Integration (FNIA/AIG), Art. 67, as reported by SWI swissinfo.ch",
+      "url": "https://www.swissinfo.ch/eng/swiss-politics/overstaying-can-be-painfully-pricey/77086481"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  }
+]
