@@ -26,6 +26,15 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
     a: (props) => <a className="underline hover:text-slate-900" {...props} />,
     strong: (props) => <strong className="font-semibold text-slate-900" {...props} />,
+    code: (props) => (
+      <code className="rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[0.85em] text-slate-800" {...props} />
+    ),
+    pre: (props) => (
+      <pre
+        className="mt-3 overflow-x-auto rounded-xl bg-slate-900 p-4 text-xs leading-relaxed text-slate-100 [&_code]:bg-transparent [&_code]:p-0 [&_code]:text-slate-100"
+        {...props}
+      />
+    ),
     blockquote: (props) => (
       <blockquote
         className="mt-4 rounded-r-xl border-l-4 border-blue-500 bg-blue-50 p-4 text-sm leading-relaxed text-slate-800 [&>p]:mt-0"

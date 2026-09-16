@@ -60,6 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/changelog`, lastModified: CONTENT_CHECKED, priority: 0.5 },
     { url: `${BASE}/about`, lastModified: CONTENT_CHECKED, priority: 0.3 },
     { url: `${BASE}/methodology`, lastModified: CONTENT_CHECKED, priority: 0.4 },
+    { url: `${BASE}/developers`, lastModified: "2026-09-16", priority: 0.4 },
     { url: `${BASE}/sources`, lastModified: CONTENT_CHECKED, priority: 0.4 },
     { url: `${BASE}/faq`, lastModified: CONTENT_CHECKED, priority: 0.5 },
     { url: `${BASE}/blog`, lastModified: CONTENT_CHECKED, priority: 0.5 },

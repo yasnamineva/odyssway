@@ -1,0 +1,89 @@
+# API — build on our verified data
+
+Everything Trip Check answers is backed by a cited, dated data corpus. You
+can query the same engine directly instead of scraping our pages or
+re-researching the rules yourself.
+
+> **The short version:** three read-only GET endpoints, no API key, no
+> account, no rate-limit headache — just don't hammer it, and link back to
+> us. That's the whole deal.
+
+## `GET /api/v1/trip-check`
+
+The same lookup Trip Check itself uses — entry requirements, stay length,
+and customs verdicts for a nationality/destination pair, with an optional
+list of items to check.
+
+**Query parameters**
+
+- `nationality` (required) — a nationality code, e.g. `US`
+- `destination` (required) — a destination code (e.g. `GB`), or `SCHENGEN`
+  for the Schengen Area as a whole
+- `items` (optional) — comma-separated item queries, e.g. `alcohol,laptop`
+
+```
+GET /api/v1/trip-check?nationality=US&destination=GB&items=alcohol
+```
+
+Returns the resolved entry basis, stay policy, required documents, and a
+match (or `null`) for each item query — each with the citation that backs
+it, exactly as shown on the site.
+
+## `GET /api/v1/destinations`
+
+Every verified destination, with its official-authority link and citation.
+No parameters.
+
+```
+GET /api/v1/destinations
+```
+
+## `GET /api/v1/customs-items`
+
+Verified customs-item rows, optionally filtered.
+
+**Query parameters** (both optional, combine freely)
+
+- `destination` — a destination code, e.g. `JP`
+- `category` — one of `alcohol`, `tobacco`, `cash`, `medication`,
+  `cbd_cannabis`, `food_animal`, `food_plant`, `e_cigarettes`, `weapons`,
+  `drones`, `other`
+
+```
+GET /api/v1/customs-items?destination=TH&category=cbd_cannabis
+```
+
+## The terms, plainly
+
+- **Free to use, with attribution.** A visible link back to odyssway.com
+  near wherever you show the data. That's the ask — we're not licensing
+  this for a fee, and we're not gatekeeping it behind a key.
+- **Read-only, no writes, no accounts.** These endpoints don't touch
+  anything about your users — no data of theirs passes through us.
+- **Cache it.** Responses carry an hour-long `Cache-Control` header; the
+  underlying data doesn't change minute to minute, so please cache on your
+  end rather than re-fetching per page view.
+- **Cite what we cite.** Every row carries its own `legalSource` /
+  `legal_source` — if you're making a claim to your own users, point them
+  at the primary source the same way we do, not just at us.
+- **This is informational data, not legal advice** — for you and for
+  anyone you show it to. See [our own disclaimer](/about) for the exact
+  language; the same limits apply downstream.
+- **No SLA, no uptime guarantee.** This is offered in good faith as part
+  of the same public corpus the site itself runs on — treat it accordingly
+  and don't build something that breaks if it's briefly unavailable.
+
+## Why we're doing this
+
+The value here isn't the API surface — it's what's behind it: a dated,
+cited corpus that took real research hours to build, documented in a
+[public changelog](/changelog) that can't be quietly edited. Anyone can
+clone a UI. Reproducing the corpus takes as long to copy as it took to
+build — and it keeps growing. If that's useful to your product, we'd
+rather you build on it than re-derive it from scratch.
+
+---
+
+There's no support inbox or contact form here yet — this is a small,
+no-account site, and we haven't built one. If that changes, it'll show up
+on this page.

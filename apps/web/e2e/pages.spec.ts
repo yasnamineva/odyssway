@@ -8,6 +8,7 @@ const routes: Array<{ path: string; expectText: string }> = [
   { path: "/calculator", expectText: "Schengen 90/180 day calculator" },
   { path: "/rules/90-180-rule", expectText: "The short answer" },
   { path: "/rules/overstay-penalties", expectText: "Return Directive" },
+  { path: "/developers", expectText: "GET /api/v1/trip-check" },
   { path: "/ees", expectText: "Entry/Exit System" },
   { path: "/ees/what-to-expect", expectText: "no more passport stamps" },
   { path: "/ees/dispute-overstay", expectText: "Article 52" },
@@ -98,6 +99,32 @@ test("sitemap and robots respond", async ({ request }) => {
   expect(await sitemap.text()).toContain("/rules/overstay-penalties");
   const robots = await request.get("/robots.txt");
   expect(robots.status()).toBe(200);
+});
+
+test("public API v1 returns cited, CORS-enabled JSON", async ({ request }) => {
+  const tripCheck = await request.get(
+    "/api/v1/trip-check?nationality=US&destination=GB&items=alcohol",
+  );
+  expect(tripCheck.status()).toBe(200);
+  expect(tripCheck.headers()["access-control-allow-origin"]).toBe("*");
+  const tripCheckBody = await tripCheck.json();
+  expect(tripCheckBody.destinationName).toBe("United Kingdom");
+  expect(tripCheckBody.items[0].match.slug).toBe("alcohol-gb");
+
+  const missingParams = await request.get("/api/v1/trip-check");
+  expect(missingParams.status()).toBe(400);
+
+  const destinations = await request.get("/api/v1/destinations");
+  expect(destinations.status()).toBe(200);
+  const destinationsBody = await destinations.json();
+  expect(destinationsBody.count).toBeGreaterThan(20);
+
+  const customsItems = await request.get(
+    "/api/v1/customs-items?destination=TH&category=cbd_cannabis",
+  );
+  expect(customsItems.status()).toBe(200);
+  const customsItemsBody = await customsItems.json();
+  expect(customsItemsBody.items.every((i: { destination: string }) => i.destination === "TH")).toBe(true);
 });
 
 test("header navigation reaches the guide pages", async ({ page }) => {

@@ -116,6 +116,9 @@ export default async function RootLayout({
                   <a href="/faq" className="hover:text-slate-900 hover:underline">
                     {t("footer.faq")}
                   </a>
+                  <a href="/developers" className="hover:text-slate-900 hover:underline">
+                    {t("footer.developers")}
+                  </a>
                   <a
                     href={OFFICIAL_CALCULATOR_URL}
                     rel="noopener noreferrer"
