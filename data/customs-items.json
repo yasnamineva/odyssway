@@ -579,6 +579,25 @@
     "status": "verified"
   },
   {
+    "slug": "drones-ca",
+    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "destination": "CA",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Drones weighing 250g and above must be registered to fly in Canada — but foreign pilots cannot register directly. Instead, a visitor must apply for a Foreign SFOC-RPAS (Special Flight Operations Certificate) from Transport Canada before travelling, which takes about 30 business days to process for non-commercial use. Drones under 250g are exempt from both registration and the Foreign SFOC-RPAS requirement (except at advertised events).",
+      "quantity": "250g threshold; ~30 business days' advance processing for a Foreign SFOC-RPAS"
+    },
+    "notes": "Most consumer camera drones (e.g. a standard DJI Mini is one of the few common models under 250g; most other popular models are well above it) fall into the registration-required category, making the 30-business-day advance application a real, easy-to-miss trap for a short trip — a tourist who decides to bring their drone a week before departure will not receive approval in time. Transport Canada's own drone-pilot certificate is also required, separate from the SFOC-RPAS application.",
+    "legal_source": {
+      "name": "Transport Canada — Getting permission to fly a drone in Canada as a foreign pilot",
+      "url": "https://tc.canada.ca/en/aviation/drone-safety/drone-pilot-licensing/get-permission-special-drone-operations/get-permission-fly-drone-foreign-pilot"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
     "slug": "alcohol-eu",
     "names": [
       "alcohol",
@@ -1486,6 +1505,25 @@
       "url": "https://www.anam.gob.mx/mercancia-regulada-por-parte-de-la-secretaria-de-la-defensa-nacional/"
     },
     "verified_at": "2026-08-12",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-mx",
+    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "destination": "MX",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "\"El registro de la información del RPAS debe llevarse a cabo antes de iniciar su operación correspondiente\" (RPAS registration must be completed before beginning operation) — Mexico's Federal Civil Aviation Agency (AFAC) requires every drone to be registered under standard NOM-107-SCT3-2019 before it can legally fly, via the Apéndice K registration form (proof of ownership/possession plus identification), submitted by email to rpas@afac.gob.mx. A registration folio is issued within 10 business days.",
+      "quantity": "~10 business days' advance registration"
+    },
+    "notes": "AFAC's own page does not distinguish between Mexican residents and foreign visitors — the same standard and process applies to everyone, with no visitor exemption or simplified tourist path found in this pass. Bringing the drone itself into Mexico isn't restricted, but flying it without completing this registration in advance is.",
+    "legal_source": {
+      "name": "Agencia Federal de Aviación Civil (AFAC) — RPAS/Drones, citing NOM-107-SCT3-2019",
+      "url": "https://www.gob.mx/afac/acciones-y-programas/rpas-drones"
+    },
+    "verified_at": "2026-09-16",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
   },
@@ -4155,6 +4193,24 @@
     "status": "verified"
   },
   {
+    "slug": "drones-za",
+    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "destination": "ZA",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "\"In accordance with Part 101.02.4(1) of the Civil Aviation Regulations, 2011, no remotely [piloted] UAS shall be operated within the Republic of South Africa, unless such UAS has been issued with a certificate of registration by the Director\" (South African Civil Aviation Authority). This is a flight-operation registration requirement, not a customs import ban — bringing a drone into the country isn't itself restricted, but legally switching it on to fly is."
+    },
+    "notes": "SACAA's own UAS guidance page does not address a visitor/tourist exemption, a temporary-registration path, or how a foreign-registered drone is treated — it describes private and commercial operator registration generally, with no carve-out found for short-stay travelers in this pass. Treat flying a personal drone in South Africa as requiring SACAA registration obtained in advance, not something sorted out on arrival; SACAA's own contact for this is rpasInbox@caa.co.za.",
+    "legal_source": {
+      "name": "South African Civil Aviation Authority (SACAA) — Unmanned Aircraft Systems, citing Civil Aviation Regulations 2011, Part 101.02.4(1)",
+      "url": "https://www.caa.co.za/industry-information/uas/"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
     "slug": "controlled-medication-mx",
     "names": [
       "controlled substance",
@@ -5168,6 +5224,24 @@
       "url": "https://customs.gov.ph/guidelines-on-arriving-travelers/"
     },
     "verified_at": "2026-09-14",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-ph",
+    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpa"],
+    "destination": "PH",
+    "category": "drones",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "The Civil Aviation Authority of the Philippines (CAAP) states plainly: \"There is no special permit required for flying drones for recreational purposes.\" Operating rules apply instead of a permit: keep the drone within visual line of sight, stay at or below 120m/400ft altitude, stay at least 10km from any airport's movement area, don't fly at night, over crowds, over national-security-sensitive government facilities, or in any area with an active fire/police/emergency response. Travelers should also check with the Local Government Unit (LGU) of the area for local drone ordinances, which CAAP notes can add restrictions on top of the national rules."
+    },
+    "notes": "A genuinely different, more permissive answer than most destinations checked for this category — Philippines has no registration or advance-permit requirement for personal/recreational drones, only in-flight operating rules. Commercial drone operations are separately gated behind a CAAP Certificate of Authorization (COA), which doesn't apply to a tourist's personal use.",
+    "legal_source": {
+      "name": "Civil Aviation Authority of the Philippines (CAAP) — Do's and Don'ts for Flying Drones or Remotely Piloted Aircraft (RPA)",
+      "url": "https://caap.gov.ph/wp-content/uploads/2025/05/Drone-Dos-and-Donts-Revised_final-scaled.jpg"
+    },
+    "verified_at": "2026-09-16",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
   },
