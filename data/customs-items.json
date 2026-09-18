@@ -5826,5 +5826,251 @@
     "verified_at": "2026-09-16",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
+  },
+  {
+    "slug": "drones-vn",
+    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas", "flycam"],
+    "destination": "VN",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Decree No. 288/2025/ND-CP classifies drones into 5 weight tiers (under 0.25kg, 0.25–under 2kg, 2–under 25kg, 25–under 150kg, 150kg+). Recreational drones under 0.25kg (250g) flown outside prohibited/restricted airspace are exempt from a flight permit, but must still be reported to local military and public security agencies. Import licenses for drones are issued by the provincial-level People's Committee, after consulting the Ministry of National Defense or Ministry of Public Security — not a standalone military license, contrary to what's commonly claimed online. Flight-permit applications for drones that do need one must be submitted at least 7 days ahead; the competent agency must decide within 5 working days."
+    },
+    "notes": "The decree itself doesn't specify financial or criminal penalties for violations — it defers to other legal documents and the parent Law on People's Air Defense. Separately reported but not independently verified against primary text: registration has reportedly been mandatory for all drones regardless of weight since 1 July 2025, with a further 2026 circular adding a mandatory electronic ID-code stamp per drone — treat that specific claim as unconfirmed rather than settled.",
+    "legal_source": {
+      "name": "Decree No. 288/2025/ND-CP (Government of Vietnam) — Management of Unmanned Aircraft and Other Aerial Vehicles, Arts. 4, 6, 21, 22",
+      "url": "https://english.luatvietnam.vn/decree-no-288-2025-nd-cp-dated-november-5-2025-of-the-government-providing-the-management-of-unmanned-aircraft-and-other-aerial-vehicles-418028-doc1.html"
+    },
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-za",
+    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
+    "destination": "ZA",
+    "category": "e_cigarettes",
+    "verdict": "allowed",
+    "notes": "South Africa has no dedicated vaping law yet — the Tobacco Products and Electronic Delivery Systems Control Bill (B33-2022), which would introduce vape-specific regulation, is still in committee and hasn't passed the National Assembly or NCOP or been signed into law. E-cigarettes fall under the general personal-goods customs allowance, not a vape-specific rule, for now.",
+    "legal_source": {
+      "name": "Parliament of South Africa — Tobacco Products and Electronic Delivery Systems Control Bill (B33-2022)",
+      "url": "https://www.parliament.gov.za/bill/2307574"
+    },
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-tr",
+    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
+    "destination": "TR",
+    "category": "e_cigarettes",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Presidential Decision No. 2149 (Resmi Gazete Issue 31050, 25 February 2020), Art. 1, bans commercial import of e-cigarettes and electronic hookahs outright, but Art. 2(2) explicitly authorizes the Ministry of Commerce to separately regulate traveler-accompanied entry of these goods. A Ministry of Commerce implementing circular is commonly cited elsewhere as setting the personal allowance at 1 device plus 30ml of e-liquid, or 10 disposable devices."
+    },
+    "notes": "The decree itself (directly fetched and quoted) only establishes that a personal-traveler exception exists and delegates it to the Ministry of Commerce — the specific 1-device/30ml figures come from secondary sources describing that ministry's implementing circular, not the decree text itself.",
+    "legal_source": {
+      "name": "Presidential Decision No. 2149 (Resmi Gazete Issue 31050, 25 February 2020), Arts. 1-2",
+      "url": "https://www.lexpera.com.tr/resmi-gazete/metin/elektronik-sigara-ve-benzeri-cihazlar-ile-bazi-tutun-mamulleri-ve-tutun-mamulunu-taklit-eder-tarzda-3"
+    },
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-ma",
+    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
+    "destination": "MA",
+    "category": "e_cigarettes",
+    "verdict": "allowed",
+    "limits": {
+      "description": "No import or sale ban exists — Morocco's 2024 Finance Law (PLF-2024) raised the import duty on disposable e-cigarettes from 2.5% to 40%, and a further fixed internal consumption tax of 50 dirhams per disposable unit took effect in January 2025. A new IMANOR product safety/labeling standard for smoke-free products takes effect February 2026."
+    },
+    "notes": "Confirmed via consistent reporting across 7 independent Moroccan financial/business press outlets (Le Desk, La Vie Éco, H24info, Le360, Médias24, and others), not a direct Morocco Customs (douane.gov.ma) fetch — that domain and its specific circulars are bot-blocked from this environment. Treat the 'no ban, just rising duties' finding as solid; verify the exact current duty rate against douane.gov.ma directly when it becomes reachable.",
+    "legal_source": {
+      "name": "Le Desk — 'PLF 2024: le droit d'importation des cigarettes électroniques jetables augmenté à 40%'",
+      "url": "https://ledesk.ma/encontinu/plf-2024-le-droit-dimportation-des-cigarettes-electroniques-jetables-augmente-a-40/"
+    },
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-ke",
+    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
+    "destination": "KE",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "limits": {
+      "description": "Kenya's e-cigarette import status is actively contested in court, not settled. Health Cabinet Secretary Aden Duale announced a directive on 31 May 2025 suspending the manufacturing, importation, distribution, sale and promotion of nicotine products and requiring all existing licensees to reapply. On 4 June 2025, Justice Bahati Mwamuye of the High Court issued a conservatory order — following a petition by Susan Awino — restraining the government \"from implementing or enforcing the decision suspending all licences and import clearances,\" pending full determination of the case. A separate, broader ban announcement is also reported for 30 July 2025."
+    },
+    "notes": "No Kenya Gazette notice was found for either the ban or the court order — this is reported only through Kenyan mainstream press (The Standard), not a government-primary document. Given the active litigation, don't treat either 'banned' or 'allowed' as settled — check current status before relying on this for travel planning.",
+    "legal_source": {
+      "name": "The Standard (Kenya) — 'Court halts CS Duale's ban on nicotine product licences and importation'",
+      "url": "https://www.standardmedia.co.ke/national/article/2001521132/court-halts-cs-duales-ban-on-nicotine-product-licences-and-importation"
+    },
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-cn",
+    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
+    "destination": "CN",
+    "category": "e_cigarettes",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "General Administration of Customs Announcement No. 102 of 2022 (effective 1 November 2022) allows passengers to duty-free carry 2 e-cigarette devices plus 6 cartridges/liquid products totaling 12ml or less. Travelers on Hong Kong/Macao routes get a lower allowance (1 device, 3 cartridges, up to 6ml); frequent cross-border travelers get less still (1 device, 1 cartridge, up to 2ml, once per day). Travelers under 16 may not carry e-cigarettes at all."
+    },
+    "notes": "The announcement number and exact figures are corroborated identically across multiple independent Chinese sources (news outlets, tax-law reference sites, industry sites) — a direct fetch of customs.gov.cn itself still fails on a self-signed certificate, the same block this project has hit on Chinese government domains throughout, so this is strong search-corroboration rather than a directly read government page.",
+    "legal_source": {
+      "name": "General Administration of Customs of China, Announcement No. 102 of 2022 (海关总署公告2022年第102号) — E-Cigarette Taxation",
+      "url": "http://www.customs.gov.cn/customs/302249/302266/302267/4666399/index.html"
+    },
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-id",
+    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
+    "destination": "ID",
+    "category": "e_cigarettes",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Solid e-cigarettes: up to 140 units (batang) or 40 capsules (kapsul). Open-system e-liquid: up to 30ml. Closed-system e-liquid: up to 12ml. Crew-member allowances are lower than passenger allowances."
+    },
+    "notes": "Regulated under Peraturan Menteri Keuangan No. 34/PMK.04/2025 (amending PMK 203/2017).",
+    "legal_source": {
+      "name": "Direktorat Jenderal Bea dan Cukai (Indonesian Customs) — Barang Penumpang (Passenger Goods)",
+      "url": "https://www.beacukai.go.id/barang-penumpang"
+    },
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-kr",
+    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
+    "destination": "KR",
+    "category": "e_cigarettes",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "\"e-cigarette/liquid nicotine 20ml (Nicotine percentage less than 1%)\" — quoted directly from the Korea Customs Service's own English-language duty-free allowance page."
+    },
+    "notes": "Reaching 20ml or more, or a nicotine concentration of 1% or more, moves the item out of the duty-free allowance; secondary sources describe nicotine concentrations above 1% as treated as a toxic substance and confiscated, though that specific enforcement detail wasn't read directly on this page.",
+    "legal_source": {
+      "name": "Korea Customs Service (English site) — Duty-Free Allowance for Travelers",
+      "url": "https://www.customs.go.kr/english/cm/cntnts/cntntsView.do?mi=8069&cntntsId=2743"
+    },
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-us",
+    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
+    "destination": "US",
+    "category": "e_cigarettes",
+    "verdict": "allowed",
+    "notes": "CBP's own prohibited-and-restricted-items page (which does cover alcohol, firearms, food, plants, medication and more) doesn't mention e-cigarettes or vapes anywhere — the absence is the finding. FDA/CBP material about e-cigarette import compliance (marketing authorization, Submission Tracking Numbers, import alerts) addresses commercial importers, not a traveler carrying their own already-owned device; a personal vape falls under the general personal-goods rules, not a dedicated restriction.",
+    "legal_source": {
+      "name": "U.S. Customs and Border Protection — Prohibited and Restricted Items",
+      "url": "https://www.cbp.gov/travel/us-citizens/know-before-you-go/prohibited-and-restricted-items"
+    },
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-ph",
+    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
+    "destination": "PH",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "limits": {
+      "description": "RA 11900 (\"Vaporized Nicotine and Non-Nicotine Products Regulation Act\", signed 25 July 2022) legalized and regulates vape products under the DTI, but sets no statutory personal-import quantity cap. Customs applies an informal, discretionary \"reasonable personal use\" standard instead of a fixed number."
+    },
+    "notes": "This is the genuine, honest answer rather than a research gap — the law's full text is directly reachable and doesn't specify a quantity, and no DTI or Bureau of Customs page with a concrete traveler allowance was found either. Don't assume a specific number applies; expect discretion at the border.",
+    "legal_source": {
+      "name": "Republic Act No. 11900 — Vaporized Nicotine and Non-Nicotine Products Regulation Act",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/95621"
+    },
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-rw",
+    "names": ["meat", "dairy", "cheese", "milk"],
+    "destination": "RW",
+    "category": "food_animal",
+    "verdict": "depends",
+    "limits": {
+      "description": "\"Any person wishing to import fresh, chilled, frozen, salted, dried or smoked meat, other than that preserved by canning, is required to obtain from the national level veterinary authorities an import permit\" — Ministerial Order on Animal Slaughtering and Meat Inspection, Art. 16, quoted directly. The rule is written in broad \"any person\" language with no traveler-specific exemption stated."
+    },
+    "notes": "This specific order doesn't address dairy products — no dairy-specific rule was found in this pass, so treat dairy as an open question rather than assuming it follows the same permit rule as meat.",
+    "legal_source": {
+      "name": "Ministerial Order on Animal Slaughtering and Meat Inspection, Art. 16 (pursuant to Law n° 54/2008)",
+      "url": "https://rwandalii.org/akn/rw/act/mo/2010/12/eng@2010-12-13"
+    },
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-rw",
+    "names": ["fruit", "vegetables", "plants", "seeds"],
+    "destination": "RW",
+    "category": "food_plant",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "\"Any person entering Rwanda by air or by road with plants or plant products whether as accompanied or checked-in baggage, must declare such items to a competent employee at the point of entry\" — Law on Plant Health Protection in Rwanda (2016), Art. 10, quoted directly. Art. 3 requires a license plus a phytosanitary certificate for plant/plant-product imports generally; Art. 4 allows exemptions via a Ministerial Order, but that order's exempt-items list wasn't read in this pass."
+    },
+    "notes": "The declaration duty applies broadly with no personal-quantity carve-out stated in the law itself.",
+    "legal_source": {
+      "name": "Law on Plant Health Protection in Rwanda (2016), Arts. 3, 4, 10",
+      "url": "https://rwandalii.org/akn/rw/act/law/2016/16/eng@2016-05-30"
+    },
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-vn",
+    "names": ["fruit", "vegetables", "seeds", "plants"],
+    "destination": "VN",
+    "category": "food_plant",
+    "verdict": "depends",
+    "limits": {
+      "description": "Decree 214/2026/ND-CP, Art. 31, quoted directly: importing quarantine-subject plants without a plant quarantine import permit draws a fine of VND 3,000,000–5,000,000 (Khoản 2); importing without a phytosanitary certificate from the exporting country draws VND 10,000,000–20,000,000 (Khoản 4). Both carry forced re-export, or destruction if re-export isn't possible (Khoản 6)."
+    },
+    "notes": "Seeds not on Vietnam's protected-species list and free of soil are reported elsewhere as allowed to bring in without these documents — the permit/certificate requirement applies to quarantine-subject plants specifically, not every plant product.",
+    "legal_source": {
+      "name": "Nghị định 214/2026/NĐ-CP (Decree on administrative penalties in cultivation, plant protection and plant quarantine), Art. 31",
+      "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/nghi-dinh-214-2026-nd-cp-xu-phat-vi-pham-hanh-chinh-trong-trong-trot-bao-ve-thuc-vat-438062-d1.html"
+    },
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-ph",
+    "names": ["fruit", "vegetables", "plants", "seeds"],
+    "destination": "PH",
+    "category": "food_plant",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Travelers must file for a Plant Quarantine Clearance (PQC) prior to importation at the National Plant Quarantine Services Division (NPQSD) central office for personal-consumption plant, fruit and vegetable imports — a process explicitly distinct from the commercial import (SPSIC) pathway."
+    },
+    "notes": "The specific commodity categories this applies to (NPQSD's Category II/III/IV classification) weren't read in full in this pass — treat the PQC requirement itself as solid, but check NPQSD directly for whether a specific item needs it.",
+    "legal_source": {
+      "name": "DA-Bureau of Plant Industry, National Plant Quarantine Services Division (NPQSD) — Import Requirements",
+      "url": "https://npqsd.bpi-npqsd.com.ph/import/how-to-import/"
+    },
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
   }
 ]

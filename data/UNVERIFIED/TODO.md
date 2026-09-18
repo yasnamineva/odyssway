@@ -1873,72 +1873,93 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
       full nationwide ban in force since 1 Jan 2025, confirmed via a
       direct WHO Viet Nam fetch) and `e-cigarettes-br` (ANVISA RDC
       855/2024, which explicitly names traveler/luggage entry as
-      prohibited, confirmed via a direct WHO FCTC fetch). **Deliberately
-      left unpublished** for the other 15 (US, JP, KE, ZA, NG, RW, MA, TR,
-      AE, PH, NZ, CN, ID, SA, KR) — every one of them has *some* signal,
-      but only from secondary/aggregator sources (vape-industry blogs,
-      travel sites) with no primary government page successfully fetched
-      this round, which doesn't clear this project's "primary official
-      source" bar. Per-country detail for the next pass:
-      - US: genuinely unresolved, not just unsourced — FDA/CBP material
-        found only addresses commercial importers, not travelers carrying
-        an already-owned vape. Don't guess a verdict; find the actual
-        CBP traveler-facing rule (or confirm there isn't one, i.e. general
-        personal-use allowance applies).
-      - JP: `allowed_with_limits` is very likely correct (nicotine
-        e-liquid needs a Yakkan Shoumei above ~1 month's/120ml supply,
-        consistent across many sources) but no MHLW/Japan Customs URL was
-        confirmed reachable this round — retry the Japan Customs FAQ
-        domain already used for JP's other medication rows.
-      - KE: `prohibited`, banned by Health CS Aden Duale effective 30 Jul
-        2025 — only Tobacco Reporter/Nicotine Insider found; no Kenya
-        Gazette notice for this specific ban located (only an unrelated
-        Feb 2025 graphic-warning notice). Search the Gazette directly.
-      - ZA: genuinely ambiguous — SARS's traveler duty guide has no vape
-        line item, and the Tobacco Products and Electronic Delivery
-        Systems Control Bill is still pending, not law. Don't guess.
-      - NG: `allowed` tentative, no import ban found, NAFDAC has
-        disclosure/18+ rules but no primary NAFDAC page fetched.
-      - RW: `prohibited`, banned since 2019, confiscated at the airport —
-        only RwandAir's own travel-alert page and a GSTHR profile found,
-        no Rwandan government legal text.
-      - MA: `allowed` (no ban) fairly solid — 2024 saw an import-duty
-        increase, not a ban; a new IMANOR product standard takes effect
-        Feb 2026. Secondary sources only.
-      - TR: `allowed_with_limits` — Presidential Decree No. 2149 (24 Feb
-        2020) bans commercial sale/import but allows personal-use travel
-        quantities; the specific 1 device + 30ml (or 10 disposables)
-        figures are from secondary blog summaries, the decree's own text
-        wasn't fetched.
-      - AE: `allowed_with_limits`, legal since Apr 2019 for MOHAP-
-        registered products; no ICP/MOHAP primary page fetched, quantity
-        figures (1-2 devices, 5×10ml) are secondary.
-      - PH: law itself is solid — RA 11900 (Vaporized Nicotine and
-        Non-Nicotine Products Regulation Act) full text is reachable at
-        https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/95621 —
-        but the "reasonable personal use" import quantity is an informal
-        customs practice, not a statutory figure, so still needs a
-        judgment call before shipping.
-      - NZ: `allowed_with_limits`, Smokefree Environments and Regulated
-        Products Act 1990 — the commonly cited "3 month supply" figure is
-        unconfirmed; health.govt.nz returned HTTP 403 this round.
-      - CN: weakest of the batch — domestic retail is tightly restricted,
-        but personal traveler import in small quantities is described in
-        secondary sources as "commonly tolerated but not guaranteed,"
-        which isn't a clean verdict. No primary customs/NMPA source
-        reachable (same block as previous sessions).
-      - ID: `allowed_with_limits`, BPOM-regulated, ~40ml/2-device duty-free
-        allowance cited by secondary sources only, no customs.go.id page
-        fetched.
-      - SA: `allowed`, Royal Decree 38621 lifted the prior ban, SFDA now
-        regulates under the Anti-Smoking Law — decree number corroborated
-        across multiple secondary sources, no SFDA primary page fetched.
-      - KR: `allowed_with_limits`, secondary sources describe a <20ml AND
-        <1% nicotine duty-free threshold — `.go.kr` domains still don't
-        resolve. One source's claim of an April 2026 Tobacco Business Act
-        revision is unverified and should not be shipped without
-        independent confirmation (future-dated claims from aggregator
-        blogs are a known unreliability pattern).
+      prohibited, confirmed via a direct WHO FCTC fetch). 15 more left
+      unpublished after that pass — see the 2026-09-18 retry entry below
+      for what happened to each.
+
+- [x] **Retry pass (2026-09-18)** on the 15 unpublished e_cigarettes
+      destinations — 9 now resolved and shipped, 6 remain unpublished.
+      **Shipped this round**:
+      - South Africa (ZA) — resolved to a clean, real government-primary
+        finding: the Tobacco Products and Electronic Delivery Systems
+        Control Bill (B33-2022) is still in committee, not law, confirmed
+        directly on parliament.gov.za. `allowed` (no dedicated vape law
+        exists yet).
+      - Turkey (TR) — resolved. Presidential Decision No. 2149 (Resmi
+        Gazete 31050, 25 Feb 2020) directly fetched and quoted: Art. 1
+        bans commercial import, Art. 2(2) delegates a traveler exception
+        to the Ministry of Commerce. The specific 1-device/30ml figure is
+        still from a secondary source describing that ministry's
+        implementing circular, not the decree text itself.
+      - Morocco (MA) — resolved via 7 independent Moroccan financial/
+        business press outlets confirming no import ban exists, only
+        rising duties (2.5%→40% in 2024, plus a 50 MAD/unit tax from Jan
+        2025). Morocco Customs' own site (douane.gov.ma) and its specific
+        circulars remain bot-blocked from this environment.
+      - Kenya (KE) — resolved with a "contested, not settled" verdict
+        (`depends`) rather than a flat `prohibited` — the Health CS's 31
+        May 2025 nicotine-product ban directive was suspended by a High
+        Court conservatory order on 4 June 2025 (Justice Bahati Mwamuye,
+        following a petition by Susan Awino). Still only Kenyan press
+        (The Standard), no Kenya Gazette notice found for either the
+        directive or the court order.
+      - China (CN) — a real breakthrough: General Administration of
+        Customs Announcement No. 102 of 2022 (effective 1 Nov 2022) sets
+        exact passenger duty-free figures (2 devices + 6 cartridges/≤12ml
+        combined; lower for HK/Macao routes; under-16 barred entirely) —
+        identically corroborated across 5+ independent Chinese sources.
+        Direct fetch of customs.gov.cn still fails on a self-signed cert,
+        so this is strong search-corroboration, not a directly-read page.
+      - Indonesia (ID) — resolved, directly fetched from
+        beacukai.go.id/barang-penumpang (already used elsewhere in this
+        dataset): specific unit/ml limits under Peraturan Menteri
+        Keuangan No. 34/PMK.04/2025.
+      - South Korea (KR) — resolved, directly fetched from
+        customs.go.kr's own English site (note: NOT a `.go.kr` domain,
+        and it resolved where `.go.kr` domains have not) — confirms the
+        previously-secondary <20ml/<1%-nicotine duty-free figure verbatim.
+      - United States (US) — resolved as an absence-based finding:
+        cbp.gov's own prohibited-and-restricted-items page, directly
+        fetched, covers alcohol/firearms/food/plants/meds but never
+        mentions e-cigarettes — treated as `allowed` under the general
+        personal-goods rule, since FDA/CBP material about vapes only
+        ever addresses commercial importers, not travelers.
+      - Philippines (PH) — resolved as `depends` with an honest caveat:
+        RA 11900's full text (reachable, re-confirmed) sets no statutory
+        personal-import quantity; customs applies an informal, discretionary
+        standard instead. This is the genuine answer, not a research gap.
+      **6 still unpublished**:
+      - Japan (JP) — no improvement. Directly (re-)fetched both Japan
+        Customs pages already used elsewhere in this dataset for JP
+        (general medication FAQ 1806_e.htm, tobacco-tax FAQ 3103_e.htm) —
+        neither mentions e-cigarettes/nicotine e-liquid at all.
+      - Nigeria (NG) — marginal improvement, still not primary. Found SON
+        (Standards Organisation of Nigeria, not NAFDAC) guidelines via
+        secondary sites describing that only zero-nicotine e-cigarettes
+        can currently be SONCAP-registered for import — no SON/NAFDAC
+        government page fetched directly.
+      - Rwanda (RW) — marginal improvement. Confirmed rwandafda.gov.rw is
+        real and reachable with a tobacco-laws page linking to Law No.
+        08/2013 and a 2015 Gazette narcotics/tobacco order, but the
+        linked PDFs' actual text wasn't fetched, so the e-cigarette-ban
+        language specifically still isn't confirmed.
+      - UAE (AE) — no improvement. icp.gov.ae's specific vaping-products
+        page 404'd; still only secondary blogs for the 1-2 devices +
+        5×10ml figures.
+      - New Zealand (NZ) — no improvement. health.govt.nz still 403's;
+        customs.govt.nz's prohibited-imports URL 404'd (site's been
+        reorganized since it was last checked) — needs the new URL
+        structure found before retrying.
+      - Saudi Arabia (SA) — genuinely **more** uncertain than before, not
+        just unsourced: every ZATCA traveler-specific URL 404'd, but a
+        Saudi Gazette headline ("Customs ban individuals from importing
+        electronic cigarettes") suggests personal/mail-order import may
+        actually be banned, contradicting the earlier `allowed` read —
+        the article itself was paywalled (HTTP 402) so scope (does this
+        cover accompanied luggage or just shipped/mail-order import?)
+        couldn't be confirmed. Don't ship `allowed` here without reading
+        that piece or finding a working ZATCA page — the honest current
+        state is "actively contradictory signals, unresolved."
 - [x] `drones` — added 12 of the 13 missing destinations (US, GB, JP, NG,
       AU, TR, NZ, CN, ID, BR, SG, KR); see `drones-{cc}` slugs in
       `data/customs-items.json`. Confirms the pattern noted above: for
@@ -1948,14 +1969,26 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
       fetching and quoting the regulator's own page/text; JP, AU, NZ, NG,
       US, ID, BR, KR rest on official-domain search-snippet corroboration
       (moderate confidence, noted per-row) rather than a full primary-text
-      read. **Vietnam deliberately left out** — every fact found (MND
-      import license even for 150g devices, a separate 14-day-advance
-      flight-license process, a possible Decree 288/2025/ND-CP exemption
-      for 150g "entertainment" devices) is secondary-aggregator sourced
-      only; `english.caa.gov.vn` has no visible drone section and
-      `caa.gov.vn`'s listing pages are still the same client-rendered-JS
-      wall as the cannabis/customs research. Needs a real CAAV or MND
-      primary source before shipping.
+      read. Vietnam was left out of this pass — see the 2026-09-18 retry
+      entry below, now resolved and shipped, closing out drones coverage
+      to all 26 destinations.
+
+- [x] **Retry pass (2026-09-18)** on `drones-vn` — resolved with a real
+      breakthrough: directly fetched and quoted Decree No. 288/2025/ND-CP
+      (in force since 5 Nov 2025), the actual current government decree
+      on managing unmanned aircraft — via LuatVietnam, not a search
+      snippet this time. This meaningfully **corrects** the prior
+      secondary-sourced facts: the import-license path runs through the
+      provincial People's Committee after consulting the Ministry of
+      National Defense or Ministry of Public Security, not a standalone
+      MND license as aggregator blogs (ts2.tech, kampatour.com) had
+      claimed; the flight-permit lead time is 7 days, not 14. Recreational
+      drones under 250g flown outside restricted airspace are exempt from
+      a flight permit but must still be reported to local military/police.
+      One secondary-only claim (mandatory registration for all drones
+      regardless of weight since 1 Jul 2025, plus a 2026 ID-code circular)
+      wasn't independently verified against primary text and is flagged as
+      such in the shipped row rather than asserted as settled.
 
 ### `/rules/overstay-penalties` — EU-wide general explainer, published
 
@@ -1972,8 +2005,10 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
       2008 text is what's cited, which is standard practice for an
       unamended act.
 - [x] `/rules/overstay-penalties/[country]` — built. `data/overstay-penalties.json`
-      now has 22 of the 29 Schengen countries (AT, BE, BG, DE, DK, EE, ES,
-      FI, FR, IS, IT, LT, LU, LV, NL, NO, PL, PT, RO, SE, SI, CH), each with
+      now has 26 of the 29 Schengen countries (AT, BE, BG, CH, CZ, DE, DK,
+      EE, ES, FI, FR, GR, HR, IS, IT, LT, LU, LV, NL, NO, PL, PT, RO, SE,
+      SI, SK — HR, CZ, GR, SK added in a 2026-09-18 retry pass, see below),
+      each with
       a real, citable national-law source for the fine and/or entry-ban
       figures — see the row's `enforcementNotes` for exactly which figures
       were directly confirmed vs. secondary-corroborated. Where a specific
@@ -1982,41 +2017,77 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
       per UDI itself; France: no automatic fine at all, a genuinely
       different mechanism than most — both real findings, not gaps) rather
       than being invented or omitted.
-      **7 Schengen countries deliberately left unpublished** — real research
-      effort was spent on each (4 parallel research passes, ~30 tool calls
-      apiece), but nothing cleared the "real, specific, reachable-or-quoted
-      source" bar this project uses:
-      - Croatia (HR): fine bands exist in the Law on Foreigners' penalty
-        chapter (Arts. 100-104) but which band governs simple overstay
-        specifically wasn't confirmed; the one ban-duration figure found
-        (3 months-1 year for ≤30-day overstays) is single-sourced.
-      - Czech Republic (CZ): weakest of the batch — CZK 3,000/5,000/10,000
-        fine tiers are mentioned in secondary sources but which tier
-        applies to simple overstay (vs. other violations under Law No.
-        326/1999 Sb.) wasn't confirmed; no ban figure found at all.
-      - Greece (GR): only aggregator/blog sources found (visa-calculator.com,
-        euroborder.com) for both fine (~EUR 500-1,200) and ban (~90 days) —
-        no Greek government or authoritative source reached.
-      - Hungary (HU): no fine or ban figures located at all; only found
-        that Hungary replaced its 2007 immigration law with new unified
-        legislation effective 1 Jan 2024 — needs a dedicated pass at the
-        new law's text or Hungary's immigration authority (BMH).
-      - Liechtenstein (LI): fully unresolved, as expected for a microstate
-        — every search returned only generic pan-Schengen content with
-        zero LI-specific figures or a citable LI government source
-        (Ausländergesetz / Migrationsamt).
-      - Malta (MT): fine amount entirely unresolved (Immigration Act Cap.
-        217's own text wasn't fetchable); the 1-10 year ban range comes
-        from a single immigration-law-firm blog, not government-primary.
-      - Slovakia (SK): ban-duration tiers (1y/1-3y/1-5y/10y, Act 404/2011
-        § 82) are corroborated by multiple Slovak sources including the
-        Supreme Administrative Court, but which tier maps to a
-        straightforward first-time overstay wasn't confirmed, and no fine
-        figure was found — a direct read of the Ministry of Interior's own
-        PDF (linked, not yet fetched) is the natural next step.
-      Cyprus isn't in this list — it's an EU member but not a Schengen
+      Cyprus was never in scope here — it's an EU member but not a Schengen
       member (see `countries.json`), so the 90/180 rule and this dataset
       don't apply to it at all.
+
+- [x] **Retry pass (2026-09-18)** on the 7 originally-unpublished Schengen
+      countries, using more targeted per-country leads and (where a live
+      fetch was blocked) trying the Wayback Machine — **note: the Wayback
+      Machine technique is fully blocked at the tool level in this
+      environment** ("Claude Code is unable to fetch from web.archive.org"),
+      confirmed during this pass, so don't suggest it again as a workaround
+      for any country until that changes. 4 of the 7 now clear the bar and
+      are published:
+      - Croatia (HR) — resolved. EUR 60–920 fine, directly quoted from
+        Croatia's Official Gazette (current Zakon o strancima Art. 253(2),
+        as amended by NN 151/22): a real breakthrough over the earlier
+        pass, which had only found stale pre-euro kuna figures.
+      - Czech Republic (CZ) — resolved, moderate confidence. Up to CZK
+        10,000 (§ 157(1)(a)-(e) of Act No. 326/1999 Sb.) and a 5/10-year
+        ban tier (§ 119(1)) — search-snippet corroborated across two
+        independent queries, still no direct full-text read (every
+        e-sbirka.gov.cz/mzv.gov.cz/Refworld fetch attempt failed).
+      - Greece (GR) — resolved, and a genuinely important finding: Greece
+        **criminalized** simple illegal stay via Law 5275/2026 (published
+        6 Feb 2026) — at least 2 years' imprisonment + EUR 5,000, not the
+        administrative-fine model most other countries use. This
+        supersedes the old Law 4251/2014 the original pass had targeted.
+        Directly quoted from R.S.A. (Refugee Support Aegean), which is
+        actively tracking ~300 real imprisonment cases under this law;
+        corroborated by 2 more independent outlets (GreekReporter,
+        InfoMigrants).
+      - Slovakia (SK) — resolved, with an honest caveat. Ban tiers (1y /
+        1-3y / 1-5y / 10y, Act 404/2011 § 82(3), strictest-governs rule at
+        § 82(7)) are solidly multi-source-corroborated including via the
+        Slovak Supreme Administrative Court's own case law, but which tier
+        governs a plain first-time tourist overstay specifically still
+        isn't confirmed, and no fine figure was found — the Ministry of
+        Interior's own PDF of the act failed to extract readable text on
+        two separate attempts (reported as compressed/undecodable both
+        times), so a manual/different-tool read of that PDF is the
+        natural next step if this needs tightening further.
+      **3 still deliberately left unpublished**:
+      - Hungary (HU): now correctly identified the current governing law
+        for the first time — Act XC of 2023 (in force since 1 Jan 2024,
+        replacing the old 2007 Act II), hosted at njt.hu/net.jogtar.hu.
+        Confirmed structurally that unlawful stay triggers expulsion with
+        an entry ban as a consequence (Art. 7(3)), but every direct fetch
+        of the enforcement/sanctions sections was truncated before
+        reaching a ban-duration figure or an individual fine amount — a
+        "5 million HUF" figure found is an *employer* fine for hiring
+        undocumented workers, not a penalty on the overstayer, don't
+        conflate them. A follow-up pass should target Part Four of Act XC
+        of 2023 specifically (likely Arts. 130s-140s based on document
+        structure).
+      - Liechtenstein (LI): still unresolved, likely a genuine dead end
+        given its size — no LI-specific fine or ban figure confirmed. New
+        leads found but not solid enough to cite: a vague, uncorroborated
+        "up to CHF 10,000" figure for Ausländergesetz violations generally
+        (no article number, no confirmation it covers overstay
+        specifically) and Liechtenstein's 1923 customs treaty binding it
+        to apply Swiss foreigners-police law at the border, which — if
+        confirmed with a specific citation — would itself be a legitimate
+        "adopts Switzerland's rules" finding rather than a gap.
+      - Malta (MT): marginal improvement only. Two candidate fine
+        provisions surfaced (Immigration Act Art. 5: up to 300 fine units
+        for prohibited-immigrant/overstay status; a separate up-to-EUR-2,500
+        + 3 months for general non-compliance) but which governs simple
+        tourist overstay is unclear, and neither was read from a
+        government-primary source — legislation.mt, natlex.ilo.org,
+        refworld.org (403) and globaldetentionproject.org all failed to
+        yield readable text. Ban range unchanged: still only the single
+        Sciberras Advocates law-firm blog, 1-10 years, not government-primary.
 
 ## Done (2026-09-16) — food_animal/food_plant gap fill
 
@@ -2041,33 +2112,52 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
       obviously applicable to ordinary travelers, since Kenya's own text
       doesn't draw that line), `meat-dairy-id` + `fresh-produce-id` (Badan
       Karantina Indonesia, directly fetched).
-- [ ] **Left unpublished, real effort spent, no real specific source
-      reached**:
-      - China (CN), both categories — extremely consistent secondary
-        corroboration of a well-known zero-tolerance meat/dairy/produce
-        policy, but no GACC/customs.gov.cn/12360 page survived the SSL/
-        bot-blocking that's affected China research all project long. A
-        homepage-level URL isn't a real citation — don't ship one.
-      - Vietnam (VN), `food_plant` only (the `food_animal` row shipped) —
-        only found that seeds not on the protected-species list and free of
-        soil are allowed; a specific thuvienphapluat.vn page on seed-import
-        penalties exists but wasn't fetched for exact figures.
-      - Philippines (PH), `food_plant` only (the `food_animal` row shipped)
-        — the Bureau of Plant Industry's phytosanitary-clearance
-        requirement is corroborated by multiple secondary sources, but no
-        specific BPI page was reachable this pass, only the general
-        bpi.gov.ph homepage — not specific enough to cite.
-      - Rwanda (RW), both categories — RRA's prohibited-goods page doesn't
-        address food specifically; a real "Law on Plant Health Protection
-        in Rwanda" exists (found via a Laws.Africa mirror) requiring a
-        license + phytosanitary certificate, but its exact article text
-        wasn't fetched this pass.
-      - Saudi Arabia (SA), both categories — ZATCA's prohibited-goods page
-        404'd, the SFDA food-import PDF fetched but was unreadable
-        (binary/encoded). Needs a fresh pass targeting SFDA's
-        traveler-specific guidance or the "Individual Travelers" customs
-        portal specifically.
-      - Egypt (EG), `food_animal` only — every source found was a
-        travel-blog aggregator; no Egyptian Customs Authority or Ministry
-        of Agriculture primary page located. Needs a dedicated pass,
-        ideally in Arabic against mfa.gov.eg or customs.gov.eg.
+- [x] **Retry pass (2026-09-18)** on the destinations left unpublished
+      above — 3 of 6 now resolved with directly-quoted primary sources and
+      shipped:
+      - Rwanda (RW), both categories — resolved. `meat-dairy-rw`: Art. 16
+        of the Ministerial Order on Animal Slaughtering and Meat
+        Inspection, directly quoted, requires a national-veterinary-
+        authority import permit for fresh/chilled/frozen/salted/dried/
+        smoked meat (dairy isn't addressed by this specific order, still a
+        gap). `fresh-produce-rw`: Art. 10 of the Law on Plant Health
+        Protection (2016), directly quoted, requires declaring all
+        plant/plant-product imports on arrival. Both fetched directly from
+        RwandaLII, a legal-information-institute portal.
+      - Vietnam (VN), `food_plant` — resolved. Decree 214/2026/ND-CP, Art.
+        31, directly quoted and fetched from LuatVietnam: specific VND
+        fine tiers for importing quarantine-subject plants without a
+        permit (3-5 million) vs. without a phytosanitary certificate
+        (10-20 million), both backed by forced re-export/destruction.
+      - Philippines (PH), `food_plant` — resolved. The National Plant
+        Quarantine Services Division's own import-requirements page,
+        directly fetched: a Plant Quarantine Clearance (PQC) is required
+        before importing personal-consumption plant/fruit/vegetable
+        goods, a separate pathway from commercial SPSIC import.
+      **3 of 6 still unresolved, real effort spent both rounds**:
+      - China (CN), both categories — no improvement. Direct fetch still
+        fails on a self-signed cert (english.customs.gov.cn), and the
+        Wayback Machine workaround is confirmed fully blocked at the tool
+        level in this environment (not just for China) — that avenue is
+        dead for any country until that changes. Facts remain the same
+        well-corroborated secondary claim (meat/dairy/produce/seeds all
+        prohibited), no primary source reachable.
+      - Saudi Arabia (SA), both categories — no improvement despite trying
+        5 distinct URLs (ZATCA's prohibited-goods page 404'd, ZATCA FAQ
+        loaded with no substantive content, e-services.zatca.gov.sa
+        connection-refused, a USDA GAIN PDF and the SFDA PDF both
+        unreadable/scanned-binary). Found a real Saudi Post prohibited-
+        items page (splonline.com.sa) but it's postal-shipping guidance,
+        not traveler-baggage customs, and only covers "perishable
+        foodstuffs"/"dead animals" generically, not specifically enough
+        to ship.
+      - Egypt (EG), `food_animal` — partial improvement, still not
+        shippable. Now has a real specific legal basis via FAO's FAOLEX
+        database: Decree No. 46 of 1967 (effective 11 Mar 1967),
+        administered by Egypt's General Organization for Veterinary
+        Services under the Ministry of Agriculture — but every FAOLEX PDF
+        candidate tried is a scanned image with no extractable text, so
+        the decree's actual content still isn't readable. A real upgrade
+        (decree number + administering authority via an authoritative
+        international database, vs. only travel-blog aggregators before)
+        but short of a directly quotable primary text.

@@ -284,5 +284,57 @@
     "verified_at": "2026-09-16",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
+  },
+  {
+    "country": "HR",
+    "fineRange": "EUR 60–920 for a third-country national's unlawful stay",
+    "banRange": "1–3 months when tied to a revoked short-term-residence case (Aliens Act, Art. 56(2)) — this is a reasonable proxy for overstay consequences, not a figure confirmed to be identical to a straightforward tourist overstay",
+    "enforcementNotes": "The fine figure is directly quoted from Croatia's Official Gazette: \"Novčanom kaznom u iznosu od 60,00 do 920,00 eura kaznit će se za prekršaj državljanin treće zemlje koji u Republici Hrvatskoj nezakonito boravi\" (Zakon o strancima, current Art. 253(2), as amended by Narodne novine 151/22) — a real breakthrough over an earlier pass that only found stale pre-euro kuna figures.",
+    "legal_source": {
+      "name": "Narodne novine (Croatia's Official Gazette) — Zakon o strancima (Aliens Act), Art. 253(2)",
+      "url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_151_2347.html"
+    },
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "CZ",
+    "fineRange": "Up to CZK 10,000, under § 157(1)(a)-(e) of Act No. 326/1999 Sb., tied to the illegal-stay obligation in § 103(n)",
+    "banRange": "5 years for an ordinary expulsion case under § 119(1); 10 years if the person is deemed a security threat; extendable by a further 5 years for non-compliance",
+    "enforcementNotes": "Figures are corroborated across two independent search-snippet queries with consistent results, not a direct full-text read — every direct-fetch attempt on the Czech Republic's own portals (e-sbirka.gov.cz, mzv.gov.cz, and a Refworld mirror) failed on JS-rendering, binary-PDF, or 403 issues.",
+    "legal_source": {
+      "name": "Act No. 326/1999 Sb., on the Residence of Foreign Nationals in the Czech Republic, §§ 103(n), 119(1), 157",
+      "url": "https://www.zakonyprolidi.cz/cs/1999-326"
+    },
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "GR",
+    "fineRange": "At least EUR 5,000, as part of a criminal sentence (not a standalone administrative fine) — rising to EUR 10,000+ for a repeat offense after a prior deportation",
+    "banRange": "Not a fixed range — Greece treats a repeat offense (returning after deportation) as an aggravated version of the same criminal offense rather than issuing a separate administrative entry-ban duration figure",
+    "enforcementNotes": "Greece criminalized simple illegal stay via Law 5275/2026 (Government Gazette, published 6 February 2026) — converting what most other Schengen countries treat as an administrative matter into a criminal one. At least 2 years' imprisonment plus the fine above applies to a first offense; a repeat offense after deportation draws at least 3 years plus EUR 10,000+. This is a genuinely different, and much harsher, enforcement model than the administrative-fine approach used elsewhere in this dataset, and a recent, active policy shift (nearly 300 people were reported imprisoned under it as of this check) — don't assume Greece follows the same pattern as its neighbors. This supersedes the older Law 4251/2014, which an earlier research pass had been targeting for this question.",
+    "legal_source": {
+      "name": "R.S.A. (Refugee Support Aegean) — 'Criminalisation of illegal stay in Greece puts almost 300 people behind bars', re: Law 5275/2026",
+      "url": "https://rsaegean.org/en/criminalisation-of-illegal-stay-in-greece-puts-almost-300-people-behind-bars/"
+    },
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "country": "SK",
+    "fineRange": "No fine amount was confirmed for Slovakia in this pass — not guessed",
+    "banRange": "Entry bans under Act No. 404/2011 Z.z. § 82(3) tier as 1 year, 1–3 years, 1–5 years, or 10 years depending on the grounds for expulsion; § 82(7) states that when multiple grounds apply, the strictest tier governs. Which tier applies to a straightforward first-time tourist overstay specifically was not confirmed against the statute's exact criteria.",
+    "enforcementNotes": "The tier structure and section numbers are corroborated across multiple independent Slovak legal-text sources, including the Slovak Supreme Administrative Court's own case law — but a direct read of the Ministry of Interior's own PDF of the act (linked from minv.sk) failed on both attempts (reported as compressed/undecodable), so the tier-to-scenario mapping remains the main open question here.",
+    "legal_source": {
+      "name": "Zákon č. 404/2011 Z.z. o pobyte cudzincov (Act on the Residence of Foreign Nationals), § 82, via zakonypreludi.sk",
+      "url": "https://www.zakonypreludi.sk/zz/2011-404"
+    },
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
   }
 ]

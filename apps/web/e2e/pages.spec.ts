@@ -60,7 +60,7 @@ test("unverified EES countries 404 instead of rendering thin content", async ({ 
 test("unverified overstay-penalty countries 404 instead of rendering thin content", async ({
   page,
 }) => {
-  const response = await page.goto("/rules/overstay-penalties/gr");
+  const response = await page.goto("/rules/overstay-penalties/hu");
   expect(response?.status()).toBe(404);
 });
 
