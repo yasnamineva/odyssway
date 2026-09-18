@@ -707,8 +707,11 @@ breadth here — not an assumption to build the rest of the strategy on.
   prioritized by traffic/tourism volume and by source-reachability signal from
   prior research passes (see `data/UNVERIFIED/TODO.md`'s per-destination
   "source-quality note" entries — e.g. Rwanda and South Africa were unusually
-  clean, several government sites need a Wayback-Machine-plus-live-cross-check
-  workaround for Cloudflare/Akamai-blocked pages).
+  clean; China, Saudi Arabia, and several `.go.kr`/`.gov.vn` domains are
+  consistently SSL/bot-blocked. **The Wayback Machine is not a workaround
+  here** — confirmed fully blocked at the tool level in this environment
+  (2026-09-18), not just for specific hard-to-reach sites, so don't suggest
+  it as a fallback in future research prompts).
 - **Embeddable calculator** (iframe or script embed) that travel blogs and
   expat sites can install, with a "powered by" backlink; embed instructions at
   `/widget` (§7). *Rationale: reduces dependence on organic search rankings by
