@@ -18,24 +18,11 @@ import {
 } from "../components/icons";
 import Reveal from "../components/Reveal";
 import { blogPostsByDate } from "../lib/blog";
-import { coveredDestinationCount, destinations } from "../lib/destinations";
+import { coveredDestinationCount } from "../lib/destinations";
 import heroImage from "../public/images/hero-travel.jpg";
 
 const STAT_ICONS = [ScaleIcon, GlobeIcon, ShieldCheckIcon];
 const STAT_HREFS = ["/rules/90-180-rule", "/sources", "/methodology"];
-
-/** Same region→color mapping as DestinationsMap's pin legend, so the card
- * grid below the map reads as one consistent system rather than two. */
-const REGION_ACCENTS: Record<string, string> = {
-  "North America": "#4e79a7",
-  "South America": "#ff9da7",
-  Europe: "#76b7b2",
-  "Europe/Asia": "#af7aa1",
-  Africa: "#59a14f",
-  "Middle East": "#e15759",
-  Asia: "#f28e2b",
-  Oceania: "#edc949",
-};
 
 export default async function HomePage() {
   const t = await getTranslations();
@@ -44,13 +31,6 @@ export default async function HomePage() {
   const tripCheckBullets = t.raw("home.tools.tripCheck.bullets") as string[];
   const calculatorBullets = t.raw("home.tools.calculator.bullets") as string[];
   const faqItems = t.raw("faqPage.items") as Array<{ q: string; a: string }>;
-
-  const destinationsByRegion = destinations
-    .filter((d) => d.status === "verified")
-    .reduce<Record<string, string[]>>((acc, d) => {
-      (acc[d.region] ??= []).push(d.name);
-      return acc;
-    }, {});
 
   return (
     <div className="space-y-6">
@@ -209,30 +189,8 @@ export default async function HomePage() {
           <p className="mx-auto mt-2 max-w-lg text-center text-sm text-slate-500">
             {t("home.coverageMap.sub")}
           </p>
-          <div className="mx-auto mt-6 max-w-4xl overflow-hidden rounded-2xl border border-slate-200 bg-white p-5 shadow-sm lg:p-6">
+          <div className="mx-auto mt-6 max-w-6xl overflow-hidden rounded-2xl border border-slate-200 bg-white p-5 shadow-sm lg:p-8">
             <DestinationsMap />
-          </div>
-          <div className="mx-auto mt-8 grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {Object.entries(destinationsByRegion).map(([region, names]) => (
-              <div
-                key={region}
-                className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
-              >
-                <div
-                  className="h-1.5"
-                  style={{ backgroundColor: REGION_ACCENTS[region] ?? "#8298b3" }}
-                />
-                <div className="p-4">
-                  <div className="flex items-center justify-between">
-                    <h3 className="font-display text-sm font-bold text-slate-900">{region}</h3>
-                    <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-semibold text-slate-500">
-                      {names.length}
-                    </span>
-                  </div>
-                  <p className="mt-2 text-xs leading-relaxed text-slate-500">{names.join(", ")}</p>
-                </div>
-              </div>
-            ))}
           </div>
           <div className="mt-8 text-center">
             <a
