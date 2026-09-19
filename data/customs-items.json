@@ -6072,5 +6072,143 @@
     "verified_at": "2026-09-18",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-cn",
+    "names": ["meat", "dairy", "cheese", "milk", "yoghurt", "butter"],
+    "destination": "CN",
+    "category": "food_animal",
+    "verdict": "prohibited",
+    "notes": "\"(生或熟)肉类(含脏器类)及其制品\" (meat, raw or cooked, including organ meat and products thereof) and \"动物源性乳及乳制品，包括生乳、巴氏杀菌乳、灭菌乳、调制乳、发酵乳，奶油、黄油、奶酪、炼乳等乳制品\" (animal-origin dairy and dairy products, including raw milk, pasteurized milk, sterilized milk, flavored milk, fermented milk, cream, butter, cheese and condensed milk) are both listed as prohibited, quoted directly from Announcement No. 470's actual text.",
+    "legal_source": {
+      "name": "Ministry of Agriculture and Rural Affairs & General Administration of Customs of China, Announcement No. 470 — List of Animals, Plants, Their Products and Other Quarantine Materials Prohibited from Being Carried or Mailed into the People's Republic of China (via China-Africa SPS Cooperation Information Network)",
+      "url": "https://www.chinaafricasps.org/zh/spsxx/yqqk/zgjjjyxyhswhdwybml/608451159900229.shtml"
+    },
+    "verified_at": "2026-09-19",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-cn",
+    "names": ["fruit", "vegetables", "seeds", "plants"],
+    "destination": "CN",
+    "category": "food_plant",
+    "verdict": "prohibited",
+    "notes": "\"新鲜水果、蔬菜\" (fresh fruit and vegetables) are listed as prohibited, quoted directly from Announcement No. 470's actual text — the same announcement that bars meat and dairy.",
+    "legal_source": {
+      "name": "Ministry of Agriculture and Rural Affairs & General Administration of Customs of China, Announcement No. 470 — List of Animals, Plants, Their Products and Other Quarantine Materials Prohibited from Being Carried or Mailed into the People's Republic of China (via China-Africa SPS Cooperation Information Network)",
+      "url": "https://www.chinaafricasps.org/zh/spsxx/yqqk/zgjjjyxyhswhdwybml/608451159900229.shtml"
+    },
+    "verified_at": "2026-09-19",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-jp",
+    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
+    "destination": "JP",
+    "category": "e_cigarettes",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "\"税関限りの確認で通関が可能なカートリッジの数量は、用法用量からみて1ヶ月分\" (\"The quantity of cartridges that can clear customs with only a customs check is one month's supply, based on directions for use\") — quoted directly from MHLW's own Q&A on pharmaceutical import procedures. Nicotine-containing e-cigarette cartridges and liquid are classified as pharmaceutical products under Japanese law (with the vaporizer device itself classified as a medical device), which is why this general pharmaceutical-import framework — the same one covering Japan's other medication rows in this dataset — applies to them."
+    },
+    "notes": "Above a 1-month supply, a Yakkan Shoumei (pharmaceutical import certificate) from a Regional Bureau of Health and Welfare is required, following the same process as Japan's other prescription/controlled-medication rows. Devices themselves (mods, pod systems, batteries) aren't restricted by this framework, though airline lithium-battery rules still apply. Disposable vapes were reportedly banned nationwide in April 2025 — a separate, more recent development not covered by the Q&A document cited here.",
+    "legal_source": {
+      "name": "Ministry of Health, Labour and Welfare (MHLW) — Q&A on Pharmaceutical Import Procedures (医薬品等輸入手続質疑応答集)",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb9332&dataType=1&pageNo=2"
+    },
+    "verified_at": "2026-09-19",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-sa",
+    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
+    "destination": "SA",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "limits": {
+      "description": "Since around August 2020, Saudi Customs has banned individuals from importing e-cigarettes, shisha and their accessories through shipping companies and personal website purchases — goods imported this way are confiscated, a fine is imposed, and a seizure record is registered. Companies licensed by the Saudi Food and Drug Authority (SFDA) may still import these products in commercial quantities."
+    },
+    "notes": "This measure is specifically about shipping/mail-order/online-purchase import channels for individuals — it does not clearly say whether it also restricts what a traveler personally carries in accompanied luggage, and that distinction wasn't confirmed either way in this pass. Don't assume it's safe to bring a personal vape in checked or carry-on baggage just because this rule targets shipping specifically — but also don't assume accompanied baggage is covered by the same ban. Corroborated identically across 5 independent outlets (Saudi Gazette, Zawya, Al Bawaba, Riyadh Xpress, Vaping Post); every direct fetch of the Saudi Gazette article itself returned HTTP 402 (paywalled), so this is strong multi-source corroboration rather than a directly read primary article. Separately, Arab News (directly fetched and quoted) traces the same underlying policy back further: the Ministry of Commerce and Investment banned e-cigarette/vaping sales in September 2015, and \"considers anyone bringing them in from abroad to be smuggling\" — broader phrasing than 'shipping only' — so the individual-import restriction isn't a one-off report, it's a long-standing, consistently-described policy, even though the accompanied-baggage question specifically remains unresolved. Domestic sale/possession has separately been legal since Royal Decree 38621 (2019) — don't confuse 'legal to own in Saudi Arabia' with 'legal to personally import.'",
+    "legal_source": {
+      "name": "Saudi Gazette — 'Customs ban individuals from importing electronic cigarettes' (c. August 2020)",
+      "url": "https://saudigazette.com.sa/article/597279/SAUDI-ARABIA/Customs-ban-individuals-from-importing-electronic-cigarettes"
+    },
+    "verified_at": "2026-09-19",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-nz",
+    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
+    "destination": "NZ",
+    "category": "e_cigarettes",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Vaping products aren't mentioned anywhere on NZ Customs' own duty-free FAQ page, and aren't covered by the tobacco-specific concession (limited to 50 cigarettes, or 50g of cigars/tobacco/a mixture) — so they fall under the general goods concession instead: \"You'll have to pay GST and duty if you bought more than NZ$700 in total\" of duty-free items and related purchases."
+    },
+    "notes": "This corrects a previously-uncorroborated claim of a '3 month supply' vape-specific allowance, which doesn't appear anywhere on NZ Customs' actual site — the real rule is simpler: no vape-specific concession exists, so the general $700 threshold governs instead. Vaping products are regulated inside New Zealand (a disposable-vape sales ban, retailer age-verification rules) rather than at the border specifically.",
+    "legal_source": {
+      "name": "New Zealand Customs Service — Duty-Free Shopping FAQs",
+      "url": "https://www.customs.govt.nz/personal/travel-to-and-from-nz/duty-free-shopping/faqs/"
+    },
+    "verified_at": "2026-09-19",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-sa",
+    "names": ["meat", "pork", "ham", "bacon", "dairy", "cheese", "milk", "live animals"],
+    "destination": "SA",
+    "category": "food_animal",
+    "verdict": "depends",
+    "limits": {
+      "description": "\"Saudi law prohibits importation of the following products: weapons, alcohol, narcotics, pork and pork products...\" — pork and pork products are absolutely prohibited, no exceptions. Separately, \"the importation of the following products requires special approval by Saudi authorities: ... live animals ...\" — live animals need advance authorization before import."
+    },
+    "notes": "Directly quoted from a U.S. government trade guide, not a Saudi government page itself (ZATCA's and SFDA's own prohibited-goods pages remain unreachable — 404s and unreadable scanned PDFs, a persistent block for this project on Saudi domains). This source is specific about pork and live animals but doesn't state a general rule for other meat or dairy products — don't assume non-pork meat or dairy is unrestricted just because it isn't named here; it simply wasn't confirmed either way in this pass.",
+    "legal_source": {
+      "name": "U.S. International Trade Administration — Saudi Arabia: Prohibited and Restricted Imports",
+      "url": "https://www.trade.gov/country-commercial-guides/saudi-arabia-prohibited-and-restricted-imports"
+    },
+    "verified_at": "2026-09-19",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-sa",
+    "names": ["seeds", "plants", "agricultural seeds"],
+    "destination": "SA",
+    "category": "food_plant",
+    "verdict": "depends",
+    "limits": {
+      "description": "\"The importation of the following products requires special approval by Saudi authorities: agricultural seeds ...\" — quoted directly. Seeds need advance authorization from Saudi authorities before import."
+    },
+    "notes": "This source confirms a special-approval requirement for agricultural seeds specifically — it doesn't separately address general fresh fruit and vegetables, so treat this row as covering seeds only, not a blanket fresh-produce rule, until a broader source is found.",
+    "legal_source": {
+      "name": "U.S. International Trade Administration — Saudi Arabia: Prohibited and Restricted Imports",
+      "url": "https://www.trade.gov/country-commercial-guides/saudi-arabia-prohibited-and-restricted-imports"
+    },
+    "verified_at": "2026-09-19",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-eg",
+    "names": ["meat", "dairy", "cheese", "milk"],
+    "destination": "EG",
+    "category": "food_animal",
+    "verdict": "depends",
+    "limits": {
+      "description": "Ministry of Agriculture and Land Reclamation Decree 1647 (1997) requires importers to apply to the General Organization for Veterinary Services (GOVS) for a permit before bringing in meat/animal products, with the epidemiological status of the country of origin taken into account; a granted permit is valid for 1 month and is renewable."
+    },
+    "notes": "The decree's own text and the USDA report describing it are both unreadable in this environment (scanned/binary PDFs) — this is drawn from the report's search-indexed summary rather than a directly read document, similar in tier to how this project has cited a USDA GAIN report for a different country's regulation elsewhere. The permit mechanism reads as built for commercial importers, similar to Kenya's meat-import regulation already in this dataset — no traveler/personal-quantity carve-out was found, so don't assume it applies the same way to a tourist's suitcase as to a commercial shipment. Egypt's National Food Safety Authority took over food-safety regulation generally in 2020 but still relies on GOVS for this specific import-permit mechanism.",
+    "legal_source": {
+      "name": "USDA FAS GAIN Report — FAIRS Country Report Annual, Cairo Egypt (EG2025-0025), re: Ministry of Agriculture and Land Reclamation Decree 1647 (1997)",
+      "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=FAIRS+Country+Report+Annual_Cairo_Egypt_EG2025-0025.pdf"
+    },
+    "verified_at": "2026-09-19",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
   }
 ]

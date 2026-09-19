@@ -1928,38 +1928,81 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
         RA 11900's full text (reachable, re-confirmed) sets no statutory
         personal-import quantity; customs applies an informal, discretionary
         standard instead. This is the genuine answer, not a research gap.
-      **6 still unpublished**:
-      - Japan (JP) — no improvement. Directly (re-)fetched both Japan
-        Customs pages already used elsewhere in this dataset for JP
-        (general medication FAQ 1806_e.htm, tobacco-tax FAQ 3103_e.htm) —
-        neither mentions e-cigarettes/nicotine e-liquid at all.
-      - Nigeria (NG) — marginal improvement, still not primary. Found SON
-        (Standards Organisation of Nigeria, not NAFDAC) guidelines via
-        secondary sites describing that only zero-nicotine e-cigarettes
-        can currently be SONCAP-registered for import — no SON/NAFDAC
-        government page fetched directly.
-      - Rwanda (RW) — marginal improvement. Confirmed rwandafda.gov.rw is
-        real and reachable with a tobacco-laws page linking to Law No.
-        08/2013 and a 2015 Gazette narcotics/tobacco order, but the
-        linked PDFs' actual text wasn't fetched, so the e-cigarette-ban
-        language specifically still isn't confirmed.
-      - UAE (AE) — no improvement. icp.gov.ae's specific vaping-products
-        page 404'd; still only secondary blogs for the 1-2 devices +
-        5×10ml figures.
-      - New Zealand (NZ) — no improvement. health.govt.nz still 403's;
-        customs.govt.nz's prohibited-imports URL 404'd (site's been
-        reorganized since it was last checked) — needs the new URL
-        structure found before retrying.
-      - Saudi Arabia (SA) — genuinely **more** uncertain than before, not
-        just unsourced: every ZATCA traveler-specific URL 404'd, but a
-        Saudi Gazette headline ("Customs ban individuals from importing
-        electronic cigarettes") suggests personal/mail-order import may
-        actually be banned, contradicting the earlier `allowed` read —
-        the article itself was paywalled (HTTP 402) so scope (does this
-        cover accompanied luggage or just shipped/mail-order import?)
-        couldn't be confirmed. Don't ship `allowed` here without reading
-        that piece or finding a working ZATCA page — the honest current
-        state is "actively contradictory signals, unresolved."
+      **6 still unpublished after that round.**
+
+- [x] **Competitor-leads retry pass (2026-09-19)** on the 6 remaining
+      e_cigarettes destinations — using competitor/aggregator sites
+      (iVisa-style pages, vape blogs, travel forums) strictly as LEADS to
+      find the actual authority/regulation they're citing, never as the
+      shipped `legal_source` itself (AGENTS.md §3 policy). 3 resolved:
+      - Japan (JP) — resolved. Competitor leads all pointed to "MHLW's
+        Q&A on pharmaceutical import procedures" without linking it;
+        located and directly fetched/quoted the real page (Q57/Q63,
+        two equivalent MHLW document IDs both independently confirmed
+        real): nicotine cartridges/liquid clear customs without a Yakkan
+        Shoumei up to a 1-month supply (1,200 cigarette-equivalents /
+        12,000 inhalations, ≈60 cartridges or 120ml liquid); devices
+        clear up to 2 units without certification. Note: disposable vapes
+        were reportedly banned nationwide in April 2025, a separate,
+        more recent development not covered by this Q&A document.
+      - New Zealand (NZ) — resolved, and this closed out an internal
+        disagreement worth recording: one research pass found an NZ
+        Customs Official Information Act PDF claiming "no border-control
+        role for vaping at all" (verdict `allowed`) but admitted the PDF
+        itself was unreadable and the claim came from a search-engine
+        snippet, not a direct read. A second, independently verified pass
+        directly fetched NZ Customs' own duty-free FAQ page and confirmed
+        vaping isn't mentioned there and isn't covered by the
+        tobacco-specific concession — so the general NZD 700 goods
+        concession applies instead. Shipped as `allowed_with_limits`
+        using the directly-read source, since it's more rigorously
+        grounded than the unreadable-PDF claim, even though both point to
+        "no vape-specific restriction."
+      - Saudi Arabia (SA) — resolved as `depends`, correcting the earlier
+        `allowed` read. Saudi Customs bans individuals from importing
+        e-cigarettes via shipping companies/personal websites (goods
+        confiscated, fined) — SFDA-licensed companies may still import
+        commercially. Corroborated across 5 outlets for the 2020 version
+        of this policy, and independently traced back further via a
+        directly-fetched Arab News piece to a September 2015 Ministry of
+        Commerce and Investment sales ban, with "anyone bringing them in
+        from abroad" described as smuggling — a long-standing policy, not
+        a one-off report. Domestic possession/sale has separately been
+        legal since Royal Decree 38621 (2019) — the two facts don't
+        contradict each other, they're about different questions (owning
+        vs. personally importing). Genuinely unresolved: whether this
+        covers accompanied traveler luggage specifically, or only
+        shipping/mail-order/online-purchase channels — shipped as
+        `depends` with that ambiguity stated explicitly rather than
+        guessed either way.
+      **3 still unresolved**:
+      - Nigeria (NG) — marginal improvement only. Tried son.gov.ng
+        directly this round — no e-cigarette-specific page found on the
+        live site. Every source describing "SON guidelines requiring
+        zero-nicotine for SONCAP registration" is secondary, none link to
+        or name a locatable SON circular/document number.
+      - Rwanda (RW) — an important negative finding, not just a gap.
+        Directly fetched Rwanda's actual Law No. 08/2013 (via RwandaLII)
+        and confirmed it does **not** define or cover e-cigarettes/vaping
+        devices at all — Art. 2's "tobacco products" definition is
+        explicitly limited to smoked/sniffed/dipped/sucked/chewed
+        tobacco-based products. The "banned since 2019" claim that's
+        repeated across travel sites has no support in Rwanda's actual
+        tobacco-control statute; the only source for a separate
+        ministerial order is GSTHR (an advocacy/research org, not
+        government), with no citable government order located. Don't
+        ship a `prohibited` verdict on this — the honest finding is
+        closer to "the commonly-repeated claim isn't supported by the law
+        it's usually attributed to," which is different from confirming
+        e-cigarettes are actually allowed either.
+      - UAE (AE) — no improvement despite trying Dubai Customs' own
+        permitted-items page directly this round (confirmed real,
+        fetched — doesn't mention e-cigarettes at all, only traditional
+        tobacco quantities). The Federal Customs Authority's traveler
+        guide connection-refused; MOHAP's page errored on fetch. The
+        "1-2 devices + 5×10ml" figure remains uncorroborated against any
+        UAE government source across 3 separate direct-fetch attempts in
+        2 research passes.
 - [x] `drones` — added 12 of the 13 missing destinations (US, GB, JP, NG,
       AU, TR, NZ, CN, ID, BR, SG, KR); see `drones-{cc}` slugs in
       `data/customs-items.json`. Confirms the pattern noted above: for
@@ -2067,19 +2110,36 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
         reaching a ban-duration figure or an individual fine amount — a
         "5 million HUF" figure found is an *employer* fine for hiring
         undocumented workers, not a penalty on the overstayer, don't
-        conflate them. A follow-up pass should target Part Four of Act XC
-        of 2023 specifically (likely Arts. 130s-140s based on document
-        structure).
-      - Liechtenstein (LI): still unresolved, likely a genuine dead end
-        given its size — no LI-specific fine or ban figure confirmed. New
-        leads found but not solid enough to cite: a vague, uncorroborated
-        "up to CHF 10,000" figure for Ausländergesetz violations generally
-        (no article number, no confirmation it covers overstay
-        specifically) and Liechtenstein's 1923 customs treaty binding it
-        to apply Swiss foreigners-police law at the border, which — if
-        confirmed with a specific citation — would itself be a legitimate
-        "adopts Switzerland's rules" finding rather than a gap.
-      - Malta (MT): marginal improvement only. Two candidate fine
+        conflate them. **Retried again (2026-09-19), still unresolved** —
+        a direct fetch of njt.jog.gov.hu/jogszabaly/2023-90-00-00.11 was
+        attempted specifically for the entry/residence-ban duration and
+        individual fine, and again only reached the employer-fine
+        provision (Art. 29§(2), 5 million HUF, re-confirmed, still not the
+        individual's penalty). Two attempts now agree this specific
+        excerpt/pageNo of the law doesn't reach the sanctions chapter — a
+        follow-up needs a different page/section parameter on njt.jog.gov.hu,
+        or the consolidated net.jogtar.hu version, targeting Part Four
+        specifically (likely Arts. 130s-140s based on document structure).
+      - Liechtenstein (LI): still unresolved after three research passes,
+        likely a genuine dead end given its size — no LI-specific fine or
+        ban figure confirmed. Leads found but not solid enough to cite: a
+        vague, uncorroborated "up to CHF 10,000" figure for Ausländergesetz
+        violations generally (no article number, no confirmation it covers
+        overstay specifically) and Liechtenstein's 1923 customs treaty
+        binding it to apply Swiss foreigners-police law at the border,
+        which — if confirmed with a specific citation — would itself be a
+        legitimate "adopts Switzerland's rules" finding rather than a gap.
+        **Competitor-leads pass (2026-09-19)**: this time located
+        Liechtenstein's own actual Ausländergesetz on its own legislative
+        portal (gesetze.li/Lilex, both PDF and HTML forms) — a genuine
+        primary source, if it could be read. Every fetch attempt (3, in
+        different URL formats) returned a connection reset — the domain
+        appears to reject automated fetching entirely, not just this one
+        document. This is now the same "found the right source, can't
+        read it" pattern as Hungary and Malta below — a tooling
+        limitation, not an unresearched gap.
+      - Malta (MT): marginal improvement only, and one dead-end lead worth
+        flagging so it isn't re-chased: two candidate overstay-fine
         provisions surfaced (Immigration Act Art. 5: up to 300 fine units
         for prohibited-immigrant/overstay status; a separate up-to-EUR-2,500
         + 3 months for general non-compliance) but which governs simple
@@ -2088,6 +2148,13 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
         refworld.org (403) and globaldetentionproject.org all failed to
         yield readable text. Ban range unchanged: still only the single
         Sciberras Advocates law-firm blog, 1-10 years, not government-primary.
+        **Dead-end lead (2026-09-19)**: a real, well-sourced "€200 on-the-spot
+        fine → deportation review" rule was found (Home Affairs Minister
+        Glenn Bedingfield, July 2026, corroborated across 7+ Maltese news
+        outlets) — but it's a general antisocial-tourist-behavior enforcement
+        measure for Malta's tourism-heavy localities, *not* a visa/Schengen
+        overstay penalty. Don't ship this as Malta's overstay fine; it
+        answers a different question.
 
 ## Done (2026-09-16) — food_animal/food_plant gap fill
 
@@ -2135,29 +2202,68 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
         before importing personal-consumption plant/fruit/vegetable
         goods, a separate pathway from commercial SPSIC import.
       **3 of 6 still unresolved, real effort spent both rounds**:
-      - China (CN), both categories — no improvement. Direct fetch still
-        fails on a self-signed cert (english.customs.gov.cn), and the
+      - China (CN), both categories — no improvement this pass (the
         Wayback Machine workaround is confirmed fully blocked at the tool
-        level in this environment (not just for China) — that avenue is
-        dead for any country until that changes. Facts remain the same
-        well-corroborated secondary claim (meat/dairy/produce/seeds all
-        prohibited), no primary source reachable.
-      - Saudi Arabia (SA), both categories — no improvement despite trying
-        5 distinct URLs (ZATCA's prohibited-goods page 404'd, ZATCA FAQ
-        loaded with no substantive content, e-services.zatca.gov.sa
-        connection-refused, a USDA GAIN PDF and the SFDA PDF both
-        unreadable/scanned-binary). Found a real Saudi Post prohibited-
-        items page (splonline.com.sa) but it's postal-shipping guidance,
-        not traveler-baggage customs, and only covers "perishable
-        foodstuffs"/"dead animals" generically, not specifically enough
-        to ship.
+        level in this environment, not just for China — dead for any
+        country until that changes). **Resolved in a later
+        competitor-leads pass (2026-09-19), see below.**
+      - Saudi Arabia (SA), both categories — no improvement this pass
+        despite trying 5 distinct URLs. **Partially resolved in a later
+        competitor-leads pass (2026-09-19), see below.**
       - Egypt (EG), `food_animal` — partial improvement, still not
-        shippable. Now has a real specific legal basis via FAO's FAOLEX
-        database: Decree No. 46 of 1967 (effective 11 Mar 1967),
-        administered by Egypt's General Organization for Veterinary
-        Services under the Ministry of Agriculture — but every FAOLEX PDF
-        candidate tried is a scanned image with no extractable text, so
-        the decree's actual content still isn't readable. A real upgrade
-        (decree number + administering authority via an authoritative
-        international database, vs. only travel-blog aggregators before)
-        but short of a directly quotable primary text.
+        shippable this pass. Now has a real specific legal basis via
+        FAO's FAOLEX database: Decree No. 46 of 1967 (effective 11 Mar
+        1967), administered by Egypt's General Organization for
+        Veterinary Services under the Ministry of Agriculture — but every
+        FAOLEX PDF candidate tried is a scanned image with no extractable
+        text. **A newer, superseding decree was found in a later
+        competitor-leads pass (2026-09-19), see below — still not fully
+        shippable.**
+
+- [x] **Competitor-leads retry pass (2026-09-19)** on CN, SA, EG — using
+      competitor/expat-forum sites strictly as LEADS to find the actual
+      regulation/authority they cite, never as the shipped `legal_source`
+      itself (AGENTS.md §3 policy). This resolved China completely and
+      part of Saudi Arabia:
+      - China (CN), both categories — **resolved**. Found the exact
+        regulation via a competitor-lead search for the specific
+        announcement number: **Joint Announcement No. 470 (2021)**,
+        Ministry of Agriculture and Rural Affairs + General
+        Administration of Customs — "List of Animal and Plant Products
+        and Other Quarantine Materials Prohibited from Being Carried or
+        Mailed into the People's Republic of China." Its existence, exact
+        title, and 2021-10-20 issuance date were independently confirmed
+        directly on moa.gov.cn (a real Chinese government domain, though
+        the attached item-list document itself wasn't readable there);
+        the actual operative text — meat (raw or cooked, incl. offal),
+        dairy (raw/pasteurized/sterilized/flavored/fermented milk, cream,
+        butter, cheese, condensed milk), and fresh fruit/vegetables, all
+        listed as prohibited — was independently confirmed by directly
+        fetching and quoting a mirror hosted by the China-Africa SPS
+        Cooperation Information Network. Two independent research passes
+        converged on the same announcement number from different lead
+        chains, which is itself a good confidence signal.
+      - Saudi Arabia (SA) — **partially resolved**, narrower than a
+        blanket verdict. ZATCA's and SFDA's own pages remain unreachable
+        (same persistent block as every prior attempt), but a U.S.
+        International Trade Administration country commercial guide,
+        directly fetched and quoted, confirms: pork and pork products are
+        absolutely prohibited; agricultural seeds and live animals
+        require special advance approval from Saudi authorities. Shipped
+        as `meat-dairy-sa` (pork specifically) and `fresh-produce-sa`
+        (seeds specifically) — this source doesn't address general
+        non-pork meat or dairy, or general fresh fruit/vegetables beyond
+        seeds, so those remain open questions rather than assumed-safe.
+      - Egypt (EG), `food_animal` — still not shippable, but upgraded to
+        a more current lead: **Ministry of Agriculture and Land
+        Reclamation Decree 1647 (1997)** likely supersedes the 1967
+        decree found earlier — it requires a General Organization for
+        Veterinary Services (GOVS) import permit, considering the origin
+        country's epidemiological status, valid 1 month and renewable.
+        Found via a USDA FAS GAIN report's search-indexed summary; the
+        GAIN report PDF itself is unreadable (same binary/scanned failure
+        as every PDF tried this project). Egypt's National Food Safety
+        Authority took over food-safety regulation generally in 2020 but
+        still relies on GOVS for this specific import-permit mechanism.
+        Not shipped — the decree's own text still hasn't been read
+        directly by any pass.
