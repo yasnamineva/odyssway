@@ -62,24 +62,22 @@ export default async function HomePage() {
             fill
             priority
             sizes="100vw"
-            className="object-cover"
+            className="object-cover object-top"
           />
-          {/* Light wash, not a dark overlay — the photo itself is pale/misty
-              enough for dark text, fading to the page background at the
-              bottom so the hero blends straight into the next section. Kept
-              non-transparent through the middle band (not just top/bottom)
-              because on narrow viewports the taller text stack reaches down
-              into the photo's darker mountain silhouette, where dark text
-              needs the extra contrast. */}
-          <div className="absolute inset-0 bg-gradient-to-b from-white/45 via-white/35 to-slate-50" />
+          {/* Light wash, not a dark overlay. Kept deliberately faint through
+              the middle of the photo (a moody mountain-ridge shot, darker
+              than the old one) so it stays visible rather than washing out
+              — the fade only really commits in the bottom third, where it
+              blends into the page background for the next section. */}
+          <div className="absolute inset-0 bg-gradient-to-b from-white/25 from-0% via-white/10 via-55% to-slate-50 to-100%" />
           <div className="relative z-10 mx-auto flex h-full max-w-2xl flex-col items-center px-4 pt-8 text-center sm:pt-10">
             <span className="flex h-14 w-14 items-center justify-center rounded-full border-4 border-white bg-white shadow-lg">
               <CompassIcon className="h-6 w-6 text-blue-700" />
             </span>
-            <h1 className="mt-3 font-display text-3xl font-extrabold tracking-tight text-slate-900 lg:text-5xl">
+            <h1 className="mt-3 font-display text-3xl font-extrabold tracking-tight text-slate-900 [text-shadow:0_2px_20px_rgba(255,255,255,0.85)] lg:text-5xl">
               {t("home.hero.h1")}
             </h1>
-            <p className="mt-3 max-w-lg text-sm leading-relaxed text-slate-600 lg:text-base">
+            <p className="mt-3 max-w-lg text-sm leading-relaxed text-slate-700 [text-shadow:0_2px_16px_rgba(255,255,255,0.9)] lg:text-base">
               {t("home.hero.sub")}
             </p>
             <div className="mt-4 flex flex-wrap justify-center gap-3">
@@ -110,24 +108,24 @@ export default async function HomePage() {
       </Reveal>
 
       <Reveal>
-        <section className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-3">
+        <section className="mx-auto grid max-w-3xl gap-3 sm:grid-cols-3">
           {stats.map((s, i) => {
             const Icon = STAT_ICONS[i % STAT_ICONS.length]!;
             return (
               <div
                 key={i}
-                className="flex flex-col items-center rounded-2xl border border-slate-200 bg-white px-6 py-8 text-center shadow-sm"
+                className="flex flex-col items-center rounded-xl border border-slate-200 bg-white px-4 py-4 text-center shadow-sm"
               >
-                <span className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-50 text-slate-900 shadow-[0_2px_8px_rgba(15,23,42,0.08)]">
-                  <Icon className="h-7 w-7" />
+                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-50 text-slate-900">
+                  <Icon className="h-5 w-5" />
                 </span>
-                <div className="mt-4 font-display text-4xl font-extrabold text-slate-900 tabular-nums">
+                <div className="mt-2.5 font-display text-2xl font-extrabold text-slate-900 tabular-nums">
                   <CountUp value={s.n} />
                 </div>
-                <div className="mt-2 max-w-[22ch] text-sm leading-snug text-slate-500">{s.label}</div>
+                <div className="mt-1 max-w-[22ch] text-xs leading-snug text-slate-500">{s.label}</div>
                 <a
                   href={STAT_HREFS[i % STAT_HREFS.length]}
-                  className="mt-5 inline-flex items-center gap-1 rounded-full border border-slate-300 px-4 py-1.5 text-xs font-semibold text-slate-700 transition hover:border-slate-900 hover:bg-slate-900 hover:text-white"
+                  className="mt-2.5 inline-flex items-center gap-1 rounded-full border border-slate-300 px-3 py-1 text-[11px] font-semibold text-slate-700 transition hover:border-slate-900 hover:bg-slate-900 hover:text-white"
                 >
                   {s.cta} <span aria-hidden="true">→</span>
                 </a>
