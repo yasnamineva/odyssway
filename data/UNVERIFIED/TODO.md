@@ -2267,3 +2267,71 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
         still relies on GOVS for this specific import-permit mechanism.
         Not shipped — the decree's own text still hasn't been read
         directly by any pass.
+
+## Done (2026-09-19) — `medication` gap fill (Nigeria, Vietnam, China, South Korea)
+
+Per AGENTS.md §14's wedge note, "niche/controlled medication" is this
+project's flagged strategic differentiator, not just a coverage gap to
+fill — this pass targeted the 4 destinations still missing the whole
+`medication` category (was 22/26).
+
+- [x] South Korea (KR) — resolved, both rows, directly fetched and quoted.
+      `prescription-medication-kr`: max 6 bottles or a 3-month supply
+      (Ministry of Foreign Affairs embassy notice — resolves a genuine
+      conflict in secondary sources between "6 weeks" and "3 months").
+      `controlled-medication-kr`: MFDS advance-permit requirement for any
+      medicine containing a controlled substance, regardless of
+      nationality, in force since 2009, online applications since Dec
+      2024 (MFDS's own page — the same domain/page pattern already used
+      for the existing `cbd-kr` row). Amphetamine-based stimulants
+      (Adderall, Vyvanse) reportedly cannot be brought in for personal
+      use even with a permit — this specific point is secondary-
+      corroborated, not read verbatim on a primary MFDS page.
+- [x] China (CN) — resolved, both rows, directly fetched and quoted from
+      two different Chinese-government-affiliated legal-database domains
+      (policy.mofcom.gov.cn and beijing.gov.cn — both different from the
+      persistently SSL/bot-blocked customs.gov.cn, a useful pattern for
+      future China research). `prescription-medication-cn`: Art. 39 of
+      the Measures for the Administration of Drug Import — a "self-use,
+      reasonable quantity" standard with no fixed numeric cap, commonly
+      interpreted as ~3 months in practice per secondary sources.
+      `controlled-medication-cn`: Art. 44 of the Regulations on the
+      Administration of Narcotic Drugs and Psychotropic Substances (State
+      Council Order No. 442) — a medical diagnosis certificate + ID +
+      single-prescription-max quantity lets an individual carry narcotic
+      drugs and Category I psychotropic substances. Which specific
+      Western medications (e.g. Adderall) count as "Category I" under
+      China's own schedule wasn't independently confirmed against a
+      named-substance list — flagged as a gap in the shipped row.
+- [x] Vietnam (VN) — partially resolved. `controlled-medication-vn`
+      shipped: 7-day supply for narcotic/addictive medication, 10-day for
+      psychotropic/precursor medication, 30-day for combination drugs —
+      extremely well-corroborated figures (multiple independent
+      Vietnamese sources converge on them, including a Vietnam Customs
+      regional office page titled exactly on this topic), but the page
+      itself is JS-rendered and unreadable in this environment (the same
+      recurring blocker for customs.gov.vn-family sites all project), so
+      this is search-corroborated rather than a verbatim primary read.
+      The specific governing circular is genuinely unresolved, not just
+      unconfirmed: a commonly-repeated attribution to Circular
+      19/2014/TT-BYT Art. 17 turned out to be a misattribution (that
+      article covers export/import licensing procedures, not traveler
+      carry limits) when checked directly, and neither of its two known
+      successor circulars (20/2017/TT-BYT, 18/2026/TT-BYT) contain the
+      traveler provision either. `prescription-medication-vn` (general
+      OTC/prescription) **not shipped** — only thin, general framing
+      found via search-snippet synthesis, no specific figure or citation.
+- [ ] Nigeria (NG) — **not resolved**, none of the 3 sub-topics
+      (general/OTC, controlled substances, injectables) cleared the bar.
+      NAFDAC's Import & Export of Drugs page was directly fetched but has
+      no substantive rule text, just links to guideline PDFs. A real,
+      specific, locatable NAFDAC document exists — "Guidelines for
+      Obtaining Permit for Importation of Narcotic Drugs, Psychotropic
+      Substances and Drug Precursors" — but it's an unreadable
+      binary-encoded PDF, confirmed on two independent fetch attempts;
+      even if it could be read, it's unconfirmed whether it addresses
+      individual travelers vs. only commercial/company importers. NDLEA's
+      own site has no traveler-facing page on this topic at all. No
+      source found at all for injectable medication (insulin/GLP-1).
+      Needs either a different PDF-reading approach or a different lead
+      entirely before this can ship.

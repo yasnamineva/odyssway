@@ -6210,5 +6210,95 @@
     "verified_at": "2026-09-19",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-kr",
+    "names": ["medication", "prescription medicine", "medicine", "otc medicine"],
+    "destination": "KR",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "\"The medicines are allowed with a maximum of 6 bottles or three months' supply.\" Travelers must show proof the medicines are for personal use — a prescription, medical certificate or pharmacy label on the packaging — and may also be asked for a receipt or other proof of lawful purchase. Keep medicines in their original packaging."
+    },
+    "notes": "This is for ordinary, non-narcotic medication — medicines containing controlled substances follow a separate advance-permit process (see the dedicated controlled-medication entry for Korea).",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of the Republic of Korea, Embassy Notice — Bringing Medicines into Korea by Travel",
+      "url": "https://overseas.mofa.go.kr/lt-en/brd/m_28401/view.do?seq=18"
+    },
+    "verified_at": "2026-09-19",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-kr",
+    "names": ["controlled substance", "narcotic medication", "psychotropic medication", "adderall", "amphetamine", "vyvanse", "lisdexamfetamine", "ritalin", "methylphenidate", "stimulant medication"],
+    "destination": "KR",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "\"Any person who will enter into Korea with medicines containing controlled substances should get a permit from the Ministry [of Food and Drug Safety, MFDS], regardless of their nationality\" — quoted directly. In force since October 23, 2009; online applications available since December 27, 2024. Apply in advance through MFDS's Narcotics Policy Division (+82-43-719-1564, narcotics@korea.kr)."
+    },
+    "notes": "Amphetamine-based stimulants (Adderall, Vyvanse, Dexedrine) are consistently reported elsewhere as treated as narcotics that cannot be brought in for personal use even with a valid prescription or MFDS permit — this specific amphetamine-vs-methylphenidate distinction is corroborated across multiple independent travel/relocation sites but wasn't read verbatim in a primary MFDS document in this pass. Methylphenidate (Ritalin/Concerta) is legal but still requires the same MFDS narcotics-import permit as any other controlled medication. Travelers carrying amphetamine-based medication have reportedly faced detention or questioning, since it can register similarly to methamphetamine on a drug test.",
+    "legal_source": {
+      "name": "Ministry of Food and Drug Safety (Korea) — permit requirement for entering Korea with medicines containing controlled substances",
+      "url": "https://www.mfds.go.kr/eng/brd/m_60/view.do?seq=75669"
+    },
+    "verified_at": "2026-09-19",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-vn",
+    "names": ["controlled substance", "narcotic medication", "psychotropic medication", "stimulant medication"],
+    "destination": "VN",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Narcotic/addictive medication (thuốc gây nghiện): up to a 7-day supply per the accompanying prescription's dosage, carried without needing a separate export/import permit. Psychotropic drugs and precursor-containing medication (thuốc hướng thần, tiền chất): up to a 10-day supply. Combination medications containing narcotic, psychotropic, precursor, toxic or banned substances together: up to a 30-day supply. Exceeding these thresholds requires an export/import permit. A copy of the prescription and medical records, certified by a healthcare organization or bearing a signature/stamp, must accompany the medication."
+    },
+    "notes": "These figures are extremely well-established and consistently repeated across many independent Vietnamese sources, including a Vietnam Customs regional office (kv17.customs.gov.vn) page titled exactly on this topic — but that page (like most Vietnamese customs.gov.vn pages throughout this project's research) is JS-rendered and its body text couldn't be directly extracted, so the specific figures here are search-engine-corroborated rather than read verbatim from a primary source. The exact governing circular/decree number is also genuinely unresolved: one commonly-repeated attribution to Circular 19/2014/TT-BYT Art. 17 turned out to be a misattribution (that article is about export/import licensing procedures, not traveler carry limits) when checked directly, and neither of that circular's two known successors (20/2017/TT-BYT, 18/2026/TT-BYT) contain the traveler provision either — treat the day-supply figures as reliable, the specific legal citation as unconfirmed.",
+    "legal_source": {
+      "name": "Chi cục Hải quan khu vực XVII (Vietnam Customs, Region XVII) — Quy định về mang thuốc cá nhân khi xuất cảnh (Regulations on carrying personal medication when departing)",
+      "url": "https://kv17.customs.gov.vn/index.jsp?pageId=2&aid=1637&cid=43"
+    },
+    "verified_at": "2026-09-19",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-cn",
+    "names": ["medication", "prescription medicine", "medicine", "otc medicine"],
+    "destination": "CN",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "\"进出境人员随身携带的个人自用的少量药品，应当以自用、合理数量为限，并接受海关监管\" (\"Small quantities of medication for personal use carried by inbound/outbound persons shall be limited to self-use, reasonable quantities, and subject to customs supervision\") — Art. 39, Measures for the Administration of Drug Import. There's no fixed numeric cap in the regulation itself; it's a \"self-use, reasonable quantity\" standard applied at customs' discretion. Multiple municipal-government FAQ pages commonly describe this as interpreted around a 3-month supply in practice, with a prescription, doctor's certificate, or purchase receipts as proof of legitimate personal use."
+    },
+    "notes": "Narcotic drugs and psychotropic substances follow a separate, stricter framework — see the dedicated controlled-medication entry for China.",
+    "legal_source": {
+      "name": "药品进口管理办法 (Measures for the Administration of Drug Import), Art. 39 — jointly issued by NMPA (formerly SFDA) and the General Administration of Customs",
+      "url": "https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=47964"
+    },
+    "verified_at": "2026-09-19",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-cn",
+    "names": ["controlled substance", "narcotic medication", "psychotropic medication", "adderall", "amphetamine", "vyvanse", "lisdexamfetamine", "ritalin", "methylphenidate", "stimulant medication"],
+    "destination": "CN",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "\"因治疗疾病需要，个人凭医疗机构出具的医疗诊断书、本人身份证明，可以携带单张处方最大用量以内的麻醉药品和第一类精神药品\" (\"For treatment of illness, an individual, upon presenting a medical diagnosis certificate issued by a medical institution and personal ID, may carry narcotic drugs and Category I psychotropic substances not exceeding the maximum quantity of a single prescription\") — Art. 44, Regulations on the Administration of Narcotic Drugs and Psychotropic Substances (State Council Order No. 442). Without this documentation, expect much stricter scrutiny. Healthcare workers carrying such drugs for medical duty need a certificate from a provincial drug-supervision department instead."
+    },
+    "notes": "Which specific common Western medications (e.g. Adderall/amphetamine-class ADHD stimulants) count as \"Category I psychotropic substances\" under China's own drug schedule was not independently confirmed against a named-substance list in this pass — China's well-documented strict stance on ADHD stimulants makes it very likely they fall under this framework and require the same documentation, but don't assume a specific drug is covered or excluded without checking. Opium, morphine, heroin, cannabis and other addictive narcotics are separately absolutely prohibited for import/export under a different customs order, corroborated by search but not independently re-verified this pass.",
+    "legal_source": {
+      "name": "麻醉药品和精神药品管理条例 (Regulations on the Administration of Narcotic Drugs and Psychotropic Substances), State Council Order No. 442, Art. 44",
+      "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/200803/t20080328_780477.html"
+    },
+    "verified_at": "2026-09-19",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
   }
 ]
