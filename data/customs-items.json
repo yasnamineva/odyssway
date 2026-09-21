@@ -6300,5 +6300,328 @@
     "verified_at": "2026-09-19",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
+  },
+  {
+    "slug": "alcohol-hk",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "whisky",
+      "vodka"
+    ],
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "\"A passenger aged 18 or above is allowed to bring into Hong Kong, for his own use, 1 litre of alcoholic liquor with an alcoholic strength above 30% by volume\" duty-free (measured at 20℃). Hong Kong ID card holders must have spent 24 hours or more outside Hong Kong to claim it.",
+      "quantity": "1 litre of liquor above 30% ABV"
+    },
+    "notes": "The 1-litre concession only matters for spirits: Hong Kong's duty schedule charges 0% on wine and on liquor other than wine of 30% ABV or less, so beer and wine aren't dutiable. Passengers who fail to declare, or make a false or incomplete declaration of, dutiable goods above the concession are liable to prosecution under the Dutiable Commodities Ordinance.",
+    "legal_source": {
+      "name": "Hong Kong Customs and Excise Department — Duty-free Concessions",
+      "url": "https://www.customs.gov.hk/en/service-enforcement-information/passenger-clearance/duty-free-concessions/index.html"
+    },
+    "destination": "HK",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-hk",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "cigar",
+      "rolling tobacco"
+    ],
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "\"A passenger aged 18 or above is allowed to bring into Hong Kong, for his own use, the following quantity of tobacco products exempted from duty: 19 cigarettes; or 1 cigar or 25 grams of cigars; or 25 grams of other manufactured tobacco.\"",
+      "quantity": "19 cigarettes, or 1 cigar / 25 g of cigars, or 25 g other manufactured tobacco"
+    },
+    "notes": "One of the smallest tobacco allowances in the world — a single pack of 20 exceeds it. Passengers who fail to declare excess dutiable goods are liable to prosecution. E-cigarettes and heated tobacco are a separate, stricter matter: see the e-cigarettes entry for Hong Kong.",
+    "legal_source": {
+      "name": "Hong Kong Customs and Excise Department — Duty-free Concessions",
+      "url": "https://www.customs.gov.hk/en/service-enforcement-information/passenger-clearance/duty-free-concessions/index.html"
+    },
+    "destination": "HK",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-hk",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "bearer negotiable instruments",
+      "cheques"
+    ],
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Anyone arriving at a specified control point with currency and bearer negotiable instruments totalling \"more than HKD120,000\" must \"make a declaration to a Customs officer, using the Red Channel.\" The threshold applies in any currency (declare in the original currency, e.g. USD 20,000); an adult accompanying a child under 16 declares on the child's behalf.",
+      "quantity": "HK$120,000 total value"
+    },
+    "notes": "Maximum penalty for failing to declare or disclose is a fine of HK$500,000 and two years' imprisonment. A first-time breach can be settled by paying HK$2,000 if the traveller has no prior money-laundering or terrorist-financing conviction and the money isn't suspected crime proceeds. Hong Kong has no currency import cap, only this declaration duty.",
+    "legal_source": {
+      "name": "Hong Kong Customs and Excise Department — Currency and Bearer Negotiable Instruments",
+      "url": "https://www.customs.gov.hk/en/service-enforcement-information/passenger-clearance/currency-bearer-negotiable-instruments/index.html"
+    },
+    "destination": "HK",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-hk",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping",
+      "heated tobacco",
+      "heat sticks",
+      "iqos",
+      "alternative smoking products",
+      "e-liquid"
+    ],
+    "category": "e_cigarettes",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "\"No person may import an alternative smoking product by way of parcels, cargoes, and bringing in by incoming travellers.\" The ban covers e-cigarettes, heated tobacco (heat sticks), herbal cigarettes and their accessories, regardless of quantity or personal use. Import penalty on summary conviction: a fine of HK$500,000 and two years' imprisonment."
+    },
+    "notes": "Since 30 April 2026 it is also an offence to possess a specified alternative smoking product in a public place: a HK$3,000 fixed penalty for small non-commercial quantities (up to 5 capsules / 5 mL / 100 heat sticks / 100 rolls), or a fine of up to HK$10,000 on conviction, and up to HK$50,000 and six months' imprisonment for larger quantities. Don't pack a vape, pods or heat sticks for Hong Kong, even in checked luggage; the Tobacco and Alcohol Control Office page doesn't describe any personal-use exception.",
+    "legal_source": {
+      "name": "Tobacco and Alcohol Control Office, Department of Health — Ban on Alternative Smoking Products",
+      "url": "https://www.taco.gov.hk/t/english/legislation/legislation_asp.html"
+    },
+    "destination": "HK",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-hk",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hemp",
+      "edibles"
+    ],
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Cannabis is a dangerous drug under the Dangerous Drugs Ordinance (Cap. 134). Hong Kong Customs \"reminds members of the public not to bring any cannabis products or products containing CBD into Hong Kong.\" Trafficking (including importing and exporting) carries a maximum penalty of a fine of HK$5 million and life imprisonment; possession and consumption carry up to HK$1 million and seven years' imprisonment."
+    },
+    "notes": "There is no medical or personal-use exception for travellers, and no THC threshold. Edibles, oils, vape cartridges and food or drinks containing cannabis all count.",
+    "legal_source": {
+      "name": "Hong Kong Customs and Excise Department — Customs takes strict enforcement action to control cannabidiol (CBD) from February 1 (press release)",
+      "url": "https://www.info.gov.hk/gia/general/202301/27/P2023012700369.htm"
+    },
+    "destination": "HK",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cbd-hk",
+    "names": [
+      "cbd",
+      "cbd oil",
+      "cannabidiol",
+      "hemp extract",
+      "cbd gummies",
+      "cbd cream"
+    ],
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "\"CBD has been listed as a dangerous drug under the Dangerous Drugs Ordinance (DDO)\" since 1 February 2023. \"Importation of products (including food or drinks) containing CBD into Hong Kong is prohibited unless the relevant provisions in the DDO are complied with,\" with no exemption based on concentration. Maximum penalty for trafficking (including import): HK$5 million and life imprisonment; for possession or consumption: HK$1 million and seven years."
+    },
+    "notes": "Unlike most of the world, Hong Kong treats even zero-THC CBD as a dangerous drug: skin care, edible oils and supplements containing CBD are all covered. The Narcotics Division adds that CBD products can contain trace THC and that CBD can decompose into THC in storage.",
+    "legal_source": {
+      "name": "Narcotics Division, Security Bureau — Legislative Control of Cannabidiol (CBD)",
+      "url": "https://www.nd.gov.hk/en/CBD.html"
+    },
+    "destination": "HK",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-hk",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "otc medicine",
+      "painkillers",
+      "antibiotics"
+    ],
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "\"Pharmaceutical products and medicines imported in the personal baggage of a person entering Hong Kong and which are accompanied by him and in a reasonable quantity for his personal use may be exempted from licensing requirement.\" No numeric day-supply cap is published; \"reasonable quantity for personal use\" is the test."
+    },
+    "notes": "This exemption covers ordinary medicines. Medicines containing dangerous drugs (see the controlled-medication entry for Hong Kong) need prior written approval from the Drug Office. Medicines containing endangered-species ingredients need separate approval under species-protection law.",
+    "legal_source": {
+      "name": "Drug Office, Department of Health — Frequently Asked Questions (medicines carried by visitors)",
+      "url": "https://www.drugoffice.gov.hk/eps/do/en/consumer/news_informations/faq.html"
+    },
+    "destination": "HK",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-hk",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "opioid",
+      "morphine",
+      "codeine",
+      "adderall",
+      "amphetamine",
+      "vyvanse",
+      "dangerous drugs",
+      "psychotropic medication",
+      "stimulant medication"
+    ],
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "A visitor wishing to bring medicine containing dangerous drugs (as defined under the Dangerous Drugs Ordinance, Cap. 134) must obtain \"prior written approval issued by the Drug Office of the Department of Health\", supported by a certification letter from the local doctor giving the doctor's name and medical registration number, clinic details, the patient's name and address, and the drug name, dosage form, strength and total quantity, with the doctor's original signature. Processing normally takes 10 working days; carry both the letter and the approval while travelling."
+    },
+    "notes": "Customs' list of dangerous drugs includes opium, morphine, heroin, cannabis, cocaine and amphetamines, so amphetamine-based ADHD medication such as Adderall falls in this approval regime (an inference from that list). Which other prescription drugs (for example specific benzodiazepines or methylphenidate brands) are scheduled under Cap. 134 was not confirmed in this pass — ask the Drug Office (tel. +852 2572 2068, pharmgeneral@dh.gov.hk) before travelling with them.",
+    "legal_source": {
+      "name": "Drug Office, Department of Health — Frequently Asked Questions (medicines carried by visitors)",
+      "url": "https://www.drugoffice.gov.hk/eps/do/en/consumer/news_informations/faq.html"
+    },
+    "destination": "HK",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-hk",
+    "names": [
+      "meat",
+      "poultry",
+      "dairy",
+      "cheese",
+      "milk",
+      "chicken",
+      "pork",
+      "beef",
+      "eggs"
+    ],
+    "category": "food_animal",
+    "verdict": "depends",
+    "limits": {
+      "description": "\"No licence is required for the import of frozen or chilled meat and poultry imported in the personal baggage of a person for personal consumption or as gifts, in an amount not exceeding 15 kg. For frozen or chilled meat and poultry, however, an official certificate as defined in the Imported Game, Meat, Poultry and Eggs Regulations, Cap. 132AK, is required.\"",
+      "quantity": "15 kg meat/poultry, with an official certificate"
+    },
+    "notes": "The licence exemption up to 15 kg comes with a requirement for an official health certificate from the exporting country, which ordinary travellers rarely have — treat homemade or shop-bought meat as something to leave behind unless you hold one. Milk and milk beverages, and eggs, are listed as having their own specific legal requirements or administrative arrangements, which this page doesn't spell out, so no dairy allowance is stated here.",
+    "legal_source": {
+      "name": "Hong Kong Customs and Excise Department — Controlled Imports",
+      "url": "https://www.customs.gov.hk/en/service-enforcement-information/trade-facilitation/prohibited-articles/controlled-imports/index.html"
+    },
+    "destination": "HK",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-hk",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds",
+      "flowers",
+      "cut flowers",
+      "soil"
+    ],
+    "category": "food_plant",
+    "verdict": "depends",
+    "limits": {
+      "description": "\"Under the Plant (Importation and Pest Control) Ordinance, Cap. 207, it is illegal to import plants, plant pests or soil into Hong Kong without a valid licence / authorization issued in advance by the Agriculture, Fisheries and Conservation Department. However, plants produced in and imported from any place in China outside Hong Kong are exempted from licensing requirement. The exemption also applies to the import of cut flowers, fruits and vegetables for consumption.\""
+    },
+    "notes": "So fresh fruit and vegetables for your own consumption and cut flowers need no plant licence, but live plants, seeds-for-planting and soil do (in advance). General food-safety law still applies to food you bring. Endangered plant species and derivatives need a separate advance licence under Cap. 586.",
+    "legal_source": {
+      "name": "Hong Kong Customs and Excise Department — Controlled Imports",
+      "url": "https://www.customs.gov.hk/en/service-enforcement-information/trade-facilitation/prohibited-articles/controlled-imports/index.html"
+    },
+    "destination": "HK",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-hk",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "air rifle",
+      "airsoft",
+      "stun gun",
+      "pepper spray",
+      "crossbow",
+      "spear gun",
+      "ammunition",
+      "knife",
+      "gravity knife",
+      "knuckleduster",
+      "baton"
+    ],
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "Under the Firearms and Ammunition Ordinance, Cap. 238, \"possession of arms and ammunition is subject to a licence for possession or a dealer's licence issued by the Hong Kong Police Force.\" \"Arms\" include pistols, air guns and air rifles with muzzle energy greater than 2 joules, electric stun guns, aerosols containing noxious gas, liquid or powder (e.g. dog repellents), harpoons, spear guns, and crossbows with a draw weight of more than 6 kg. Importing arms and ammunition on the Munitions List also requires a licence from the Trade and Industry Department. Separately, the Weapons Ordinance, Cap. 217, \"forbids the possession of the prohibited weapons, such as Chinese-style throwing dart, knuckleduster, spring-loaded steel baton, gravity knife and gravity-operated steel baton, as listed in the Schedule of the Ordinance.\""
+    },
+    "notes": "The page describes a licensing system for arms, not a route for tourists to obtain a licence — treat firearms, air guns, stun guns, pepper spray and crossbows as do-not-pack. The prohibited-weapons list is a possession ban with no licence route stated; it names knuckledusters, gravity knives and spring-loaded batons. Ordinary knives that aren't on the Schedule aren't addressed by this page.",
+    "legal_source": {
+      "name": "Hong Kong Customs and Excise Department — Controlled Imports",
+      "url": "https://www.customs.gov.hk/en/service-enforcement-information/trade-facilitation/prohibited-articles/controlled-imports/index.html"
+    },
+    "destination": "HK",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-hk",
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas",
+      "dji"
+    ],
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Under Hong Kong's Small Unmanned Aircraft Order (Cap. 448G), \"all SUA and remote pilots shall be registered except for Standard Category A1 Operations\" — that is, aircraft weighing not more than 250 g operated within the applicable operating requirements are exempt from registration. Non-residents register through the Civil Aviation Department's eSUA portal using their travel documents; registrations by non-residents \"are normally valid for six months.\"",
+      "quantity": "250 g"
+    },
+    "notes": "Visitors are told to apply once they have concrete travel plans and their travel documents ready; registration labels are collected in person, through an authorised representative, or delivered by local surface mail to a Hong Kong address (no international courier). Anything over 250 g should be registered before you fly it, so plan ahead rather than sorting it out at the airport. The page excerpt read here doesn't detail the heavier categories' operating rules or insurance requirements.",
+    "legal_source": {
+      "name": "Civil Aviation Department (Hong Kong) — Small Unmanned Aircraft Order (Cap. 448G): tips for visitors",
+      "url": "https://www.cad.gov.hk/english/sua_tipsforvisitors.html"
+    },
+    "destination": "HK",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
   }
 ]
