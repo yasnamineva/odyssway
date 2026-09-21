@@ -10,6 +10,10 @@ export interface BlogPost {
   slug: string;
   title: string;
   dek: string;
+  /** Search-result title/description when the on-page headline or dek is too long
+   * to survive truncation (~60 / ~160 chars). The page itself still shows `title`/`dek`. */
+  seoTitle?: string;
+  seoDescription?: string;
   date: string; // ISO date — when the post was published
   category: string;
   legalSource: { name: string; url: string };
@@ -26,6 +30,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "south-africa-eta-launched",
     title: "South Africa's New ETA Just Launched — Here's What We Actually Know",
+    seoTitle: "South Africa's New ETA: What We Actually Know",
     dek: "An Electronic Travel Authorisation went live on 12 August 2026. The eligibility list and fee aren't published anywhere yet, so neither are we.",
     date: "2026-08-13",
     category: "Regulation change",
@@ -39,6 +44,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "kenya-replaced-visa-on-arrival",
     title: "Kenya Replaced Visa-on-Arrival With a Universal eTA — What Changed",
+    seoTitle: "Kenya Replaced Visa-on-Arrival With a Universal eTA",
     dek: "If you're still planning around Kenya's old visa-on-arrival system, you're planning around a rule that no longer exists.",
     date: "2026-08-12",
     category: "Regulation change",
@@ -52,6 +58,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "ees-live-five-countries",
     title: "EES Is Now Live in France, Spain, Germany, Italy & the Netherlands — What Changes at the Border",
+    seoTitle: "EES Now Live in 5 Countries: What Changes at the Border",
     dek: "The Entry/Exit System now logs every crossing automatically at these five borders. There's no more passport stamp to argue with — and no more rounding.",
     date: "2026-08-11",
     category: "Regulation change",
@@ -65,6 +72,8 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "sixteen-destinations-verified",
     title: "We Just Verified 13 New Destinations. Here's Exactly How.",
+    seoTitle: "We Just Verified 13 New Destinations. Here's How.",
+    seoDescription: "Every entry requirement and customs rule for 13 new destinations, from Egypt to India, checked against each country's own government sources.",
     dek: "No shortcuts: every entry requirement and customs rule for Egypt, Morocco, Nigeria, Rwanda, India, the UAE, Thailand, Turkey, and Australia was checked against that country's own government sources before it went live.",
     date: "2026-08-13",
     category: "Site news",
@@ -78,6 +87,8 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "twenty-destinations-verified",
     title: "We Just Verified 4 More Destinations — And Two of Their Visa-Free Rules Expire This Year",
+    seoTitle: "4 More Destinations Verified — 2 Visa-Free Rules Expire",
+    seoDescription: "China's and Vietnam's visa-free windows for UK travelers are dated policies with real expiration clauses. What else turned up verifying four more destinations.",
     dek: "China's and Vietnam's visa-free windows for UK travelers aren't permanent — both are dated policies with real expiration clauses. Here's what else turned up verifying the Philippines, New Zealand, Vietnam, and China.",
     date: "2026-08-19",
     category: "Site news",
@@ -91,6 +102,8 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "twenty-five-destinations-verified",
     title: "25 Destinations Verified — Including One Where We Found Nothing to Confirm",
+    seoTitle: "25 Destinations Verified — One With Nothing to Confirm",
+    seoDescription: "Brazil reinstated its visa requirement for three nationalities, not all of them. What we verified across 25 destinations, and the one with nothing to confirm.",
     dek: "Brazil reinstated its visa requirement for three nationalities, not all of them. Singapore's famous \"90 days\" figure doesn't appear in any government document we could find. Five more destinations, verified the slow way.",
     date: "2026-09-03",
     category: "Site news",

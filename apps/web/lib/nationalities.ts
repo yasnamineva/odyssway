@@ -13,6 +13,13 @@ export const publishedNationalities: NationalityRule[] = nationalityRules.filter
   (r) => r.status === "verified",
 );
 
+/** Nationalities that actually get an /etias/[nationality] page — visa-required
+ * nationalities (e.g. CN, IN) are verified rows too, but ETIAS doesn't apply to
+ * them, so listing them would publish 404s (and did, in the sitemap). */
+export const etiasNationalities: NationalityRule[] = publishedNationalities.filter(
+  (r) => r.visaExempt && r.etiasApplicable,
+);
+
 export function nationalityBySlug(slug: string): NationalityRule | undefined {
   return publishedNationalities.find(
     (r) => r.nationality.toLowerCase() === slug.toLowerCase(),

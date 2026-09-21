@@ -2,9 +2,10 @@
   "meta": {
     "title": "Odyssway — can you go, for how long, and what can you bring?",
     "tripCheckTitle": "Trip Check — Odyssway",
+    "tripCheckDescription": "Tell us your nationality and destination: entry requirements, how long you can stay, documents needed and whether your items clear customs, all cited.",
     "calculatorTitle": "Schengen 90/180 Calculator — Odyssway",
     "calculatorDescription": "The EU's rolling 90/180-day rule, computed exactly: multiple trips, residence-permit exclusions, dual citizenship, a day-by-day timeline, and PDF export.",
-    "description": "Free trip-compliance checker: tell us where you're from and where you're going, and we'll tell you if you can enter, how long you can stay, what documents you need, and whether your items clear customs — every fact cited to an official source."
+    "description": "Check if you can enter a country, how long you can stay, which documents you need and what clears customs — every rule cited to an official source."
   },
   "header": {
     "brand": "Odyssway",
@@ -18,47 +19,47 @@
   },
   "pages": {
     "bring": {
-      "title": "Can I Bring That? — Customs Rules by Item, Across Every Destination",
-      "description": "Alcohol, medication, cannabis/CBD, cash and more — what's allowed, limited, or prohibited across every destination Trip Check covers, cited to each country's own customs authority."
+      "title": "What Can I Bring? Customs Rules by Item and Destination",
+      "description": "Alcohol, medication, cannabis, cash and more: what's allowed, limited or prohibited in every destination we verify, cited to the official customs source."
     },
     "developers": {
       "title": "API — Build on Our Verified Travel-Compliance Data",
       "description": "Free, read-only API for entry requirements, stay policy, and customs verdicts — the same cited data corpus Trip Check itself runs on."
     },
     "rule": {
-      "title": "Schengen 90/180 Day Rule Explained — rolling window, entry/exit days, edge cases",
-      "description": "Plain-language guide to the Schengen 90/180-day rule: how the rolling window works, which countries count, and the edge cases — verified against official EU sources."
+      "title": "Schengen 90/180 Day Rule Explained: How It Works",
+      "description": "Plain-language guide to the Schengen 90/180-day rule: the rolling window, which countries count and the edge cases, verified against official EU sources."
     },
     "overstayPenalties": {
-      "title": "What Actually Happens If You Overstay in Schengen — Entry Bans Explained",
-      "description": "The real EU-wide mechanism behind an overstay: the return decision, the voluntary-departure window, and the up-to-5-year entry ban — cited directly to the Return Directive, not a guess."
+      "title": "What Happens If You Overstay in Schengen: Entry Bans",
+      "description": "How an overstay really works under EU law: the return decision, the voluntary-departure window and the up-to-5-year entry ban, cited to the Return Directive."
     },
     "eesHub": {
-      "title": "EU Entry/Exit System (EES) Explained — digital borders, biometrics, overstay detection",
+      "title": "EU Entry/Exit System (EES) Explained",
       "description": "What the EES is, what data it records about you, and why automated overstay detection changes how carefully you must count your Schengen days."
     },
     "eesWhat": {
-      "title": "EES at the Border: What to Expect — fingerprints, facial image, no more stamps",
+      "title": "EES at the Border: What to Expect",
       "description": "What happens at your first EES border crossing and every one after: biometric enrolment, automated gates, and what the system records."
     },
     "etias": {
-      "title": "Is ETIAS Live Yet? Launch Tracker — start date, €20 fee, validity",
+      "title": "Is ETIAS Live Yet? Launch Date, €20 Fee and Validity",
       "description": "Current official status of ETIAS: expected launch window, fee, validity — tracked against EU sources and updated when they change."
     },
     "eesDispute": {
-      "title": "EES Says You Overstayed But You Didn't? Your Correction Rights",
-      "description": "How to dispute a false EES overstay flag: your Article 52 rectification rights, the 45-day reply deadline, and the evidence to gather — sourced from the regulation."
+      "title": "EES Says You Overstayed But You Didn't? Your Rights",
+      "description": "How to dispute a false EES overstay flag: your Article 52 rectification rights, the 45-day reply deadline and the evidence to gather, from the regulation."
     },
     "dualCitizens": {
       "title": "Dual Citizens: Which Passport for Schengen and the EES?",
       "description": "If one of your nationalities is EU/EEA/Swiss, the 90/180-day rule doesn't apply to you — what the law says, what the EES records, and practical passport advice."
     },
     "permitHolders": {
-      "title": "Residence Permit Holders: the 90/180 Rule in Other Schengen Countries",
+      "title": "Residence Permit Holders and the 90/180 Rule",
       "description": "Your permit days don't consume the 90/180 allowance in the issuing country — but days in other Schengen states do. What the Schengen Borders Code actually says."
     },
     "about": {
-      "title": "About Odyssway",
+      "title": "About Odyssway: How We Verify Travel Rules",
       "description": "A Schengen compliance toolkit: edge-case-aware 90/180 calculator, EES guides, and rules verified against official EU sources."
     },
     "methodology": {
@@ -66,15 +67,15 @@
       "description": "Our source policy: primary official sources only, per-claim citations, dated checks, automated freshness monitoring — and its limits, stated plainly."
     },
     "sources": {
-      "title": "Sources",
+      "title": "Sources: Every Official Page Behind Our Data",
       "description": "Every official source behind our rule data and guides, with the date each value was last checked."
     },
     "changelog": {
-      "title": "Verification Changelog — every rule-data change, dated and sourced",
-      "description": "A public, chronological log of every change to our rule data: what changed, when it was checked against official sources, and by whom. Generated from version history."
+      "title": "Verification Changelog: Every Rule Change, Dated",
+      "description": "A public log of every change to our rule data: what changed, when it was checked against official sources, and by whom. Generated from version history."
     },
     "faq": {
-      "title": "Frequently Asked Questions — how Odyssway works, verification, coverage",
+      "title": "FAQ: How Odyssway Works, Verification and Coverage",
       "description": "Answers to the most common questions about Trip Check, the Schengen calculator, how we verify rules, and what we don't cover yet."
     },
     "blog": {
@@ -187,8 +188,8 @@
     "ctaCalculator": "ETIAS won't change the 90/180-day limit — check your days"
   },
   "eesAccess": {
-    "metaTitle": "Correct Your EES Record in {country} — who to contact, template letter",
-    "metaDescription": "Wrong exit recorded or false overstay flag in {country}? Where to send your Article 52 rectification request, the 45-day deadline, and ready-to-use template letters.",
+    "metaTitle": "Correct Your EES Record in {country}: Who to Contact",
+    "metaDescription": "Wrong exit recorded or false overstay flag in {country}? Where to send your Article 52 rectification request, the 45-day deadline and template letters.",
     "h1": "Correct your EES record: {country}",
     "intro": "If the Entry/Exit System holds wrong data about you from a crossing in {country} — a missing exit, a false overstay flag — Article 52 of Regulation (EU) 2017/2226 gives you the right to have it rectified. Here's who can help and what to send.",
     "authorityTitle": "Who to contact",
@@ -209,7 +210,7 @@
     "disputeLink": "Read the full guide: the EES says you overstayed — but you didn't"
   },
   "bringDestinationPage": {
-    "metaTitle": "Can You Bring {item} to {destination}? Verified Rules",
+    "metaTitle": "Can You Bring {item} to {destination}?",
     "metaDescription": "Can you bring {item} to {destination}? {answer} Limits and the official source, checked {date}.",
     "h1": "Can you bring {item} to {destination}?",
     "shortAnswer": "Short answer",
@@ -224,9 +225,23 @@
     "breadcrumbRoot": "What can you bring",
     "disclaimer": "Informational only — not legal advice. Customs rules change; confirm with the official source above before you travel."
   },
+  "calcInfo": {
+    "heading": "How this calculator counts your days",
+    "points": [
+      "In any 180-day window, your days in the Schengen Area can't exceed 90. The window rolls, so there is no reset date.",
+      "Your entry day and your exit day both count as full days.",
+      "Days in any Schengen country share one limit, including Iceland, Liechtenstein, Norway and Switzerland.",
+      "Days in Ireland, Cyprus and the UK don't count.",
+      "Stays on a residence permit or long-stay (D) visa don't use up the allowance in the issuing country, but days in other Schengen countries do.",
+      "After 90 days of uninterrupted absence, you can always stay up to 90 days again."
+    ],
+    "footer": "Built to reproduce every worked example in the European Commission's calculator manual.",
+    "ruleLink": "Read the full 90/180 rule explanation",
+    "sourcesLink": "See our sources"
+  },
   "overstayCountry": {
-    "metaTitle": "Overstay Penalties in {country} — fine, entry ban, enforcement",
-    "metaDescription": "What actually happens if you overstay the 90/180-day limit in {country}: the fine (if any), how long an entry ban lasts, and how it's enforced in practice — cited to {country}'s own law.",
+    "metaTitle": "Overstay Penalties in {country}: Fine and Entry Ban",
+    "metaDescription": "What happens if you overstay the 90/180-day limit in {country}: the fine (if any), how long an entry ban lasts and how it is enforced, per national law.",
     "h1": "Overstaying in {country}: fine, entry ban and enforcement",
     "intro": "This is what {country}'s own national law adds on top of the EU-wide entry-ban mechanism — every Schengen country runs that same baseline process, explained on the general overstay-penalties page, but the fine amount and exact enforcement style are set by each country individually.",
     "fineTitle": "Fine",
@@ -238,8 +253,8 @@
     "disclaimer": "This is informational only, not legal advice — consult a qualified adviser if you're facing an actual return decision or entry ban."
   },
   "etiasNat": {
-    "metaTitle": "ETIAS for {citizens} Citizens — status, fee, what to do now",
-    "metaDescription": "Do {citizens} citizens need ETIAS for Europe? Current official status, the €20 fee, validity, and how the 90/180-day rule applies to {country} passport holders.",
+    "metaTitle": "ETIAS for {citizens} Citizens: Status, Fee, What to Do",
+    "metaDescription": "Do {citizens} citizens need ETIAS for Europe? Current status, the €20 fee, validity, and how the 90/180-day rule applies to {country} passport holders.",
     "h1": "ETIAS for {citizens} citizens",
     "verdictNotLive": "{citizens} citizens will need ETIAS — but not yet. There is nothing to do today.",
     "verdictLive": "{citizens} citizens need an ETIAS travel authorisation before travelling.",

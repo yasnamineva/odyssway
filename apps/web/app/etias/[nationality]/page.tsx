@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { etias } from "../../../lib/etias";
-import { nationalityBySlug, publishedNationalities } from "../../../lib/nationalities";
+import { etiasNationalities, nationalityBySlug } from "../../../lib/nationalities";
 
 interface Params {
   nationality: string;
@@ -11,7 +11,7 @@ interface Params {
 export const dynamicParams = false;
 
 export function generateStaticParams(): Params[] {
-  return publishedNationalities.map((r) => ({
+  return etiasNationalities.map((r) => ({
     nationality: r.nationality.toLowerCase(),
   }));
 }

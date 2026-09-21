@@ -6,7 +6,7 @@ import TripCheck from "../../components/TripCheck";
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("meta");
   const title = t("tripCheckTitle");
-  const description = t("description");
+  const description = t("tripCheckDescription");
   return {
     title,
     description,

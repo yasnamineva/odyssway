@@ -121,6 +121,27 @@ test("sitemap and robots respond", async ({ request }) => {
   expect(robots.status()).toBe(200);
 });
 
+test("every sitemap URL resolves — never advertise a 404 to search engines", async ({ request }) => {
+  const xml = await (await request.get("/sitemap.xml")).text();
+  const paths = [...xml.matchAll(/<loc>https?:\/\/[^/]+([^<]*)<\/loc>/g)].map((m) => m[1]!);
+  expect(paths.length).toBeGreaterThan(300);
+  const bad: string[] = [];
+  for (let i = 0; i < paths.length; i += 20) {
+    await Promise.all(
+      paths.slice(i, i + 20).map(async (path) => {
+        const res = await request.get(path);
+        if (res.status() !== 200) bad.push(`${res.status()} ${path}`);
+      }),
+    );
+  }
+  expect(bad).toEqual([]);
+});
+
+test("calculator page carries supporting copy, not just the tool", async ({ page }) => {
+  await page.goto("/calculator");
+  await expect(page.getByRole("heading", { name: "How this calculator counts your days" })).toBeVisible();
+});
+
 test("public API v1 returns cited, CORS-enabled JSON", async ({ request }) => {
   const tripCheck = await request.get(
     "/api/v1/trip-check?nationality=US&destination=GB&items=alcohol",

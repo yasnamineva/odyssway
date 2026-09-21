@@ -5,9 +5,14 @@
  *
  * Run weekly via GitHub Action (.github/workflows/watch-sources.yml) or
  * manually: pnpm watch:sources
+ *
+ * Besides the hand-curated SOURCES below, every distinct `legal_source.url` in
+ * the production data files is watched automatically (deriveDataSources), so a
+ * newly verified row is covered without touching this file. `--list` prints
+ * what would be watched without fetching anything.
  */
 import { createHash } from "node:crypto";
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 interface WatchedSource {
@@ -214,67 +219,189 @@ const SOURCES: WatchedSource[] = [
 ];
 
 const ROOT = join(import.meta.dirname, "..");
-const HASHES_FILE = join(ROOT, "data", "source-hashes.json");
-const REPORT_DIR = join(ROOT, "data", "UNVERIFIED");
+const DATA_DIR = join(ROOT, "data");
+const HASHES_FILE = join(DATA_DIR, "source-hashes.json");
+const REPORT_DIR = join(DATA_DIR, "UNVERIFIED");
+const NON_RULE_FILES = new Set(["source-hashes.json", "changelog.json"]);
 
-function loadHashes(): Record<string, string> {
-  try {
-    return JSON.parse(readFileSync(HASHES_FILE, "utf8")) as Record<string, string>;
-  } catch {
-    return {};
+/** Recursively collect every object carrying a `legal_source.url`. */
+function collectLegalSources(node: unknown, file: string, out: Map<string, string[]>): void {
+  if (Array.isArray(node)) {
+    for (const item of node) collectLegalSources(item, file, out);
+  } else if (node !== null && typeof node === "object") {
+    const rec = node as Record<string, unknown>;
+    const src = rec.legal_source as { url?: unknown } | undefined;
+    if (src && typeof src.url === "string") {
+      const label = String(rec.slug ?? rec.country ?? rec.nationality ?? rec.code ?? "row");
+      const list = out.get(src.url) ?? [];
+      list.push(`${file}:${label}`);
+      out.set(src.url, list);
+    }
+    for (const value of Object.values(rec)) collectLegalSources(value, file, out);
   }
+}
+
+/** One watched source per distinct cited URL in production data, minus those already curated above. */
+function deriveDataSources(): WatchedSource[] {
+  const curated = new Set(SOURCES.map((s) => s.url));
+  const byUrl = new Map<string, string[]>();
+  for (const f of readdirSync(DATA_DIR).filter((f) => f.endsWith(".json") && !NON_RULE_FILES.has(f))) {
+    collectLegalSources(JSON.parse(readFileSync(join(DATA_DIR, f), "utf8")), f, byUrl);
+  }
+  return [...byUrl.entries()]
+    .filter(([url]) => !curated.has(url))
+    .map(([url, uses]) => ({
+      id: `data-${createHash("sha1").update(url).digest("hex").slice(0, 10)}`,
+      url,
+      usedBy: `${uses.slice(0, 3).join(", ")}${uses.length > 3 ? ` (+${uses.length - 3} more)` : ""}`,
+    }));
+}
+
+interface HashStore {
+  hashes: Record<string, string>;
+  /** Ids that failed to fetch last run — lets us report a source turning unreachable once, not every week. */
+  unreachable: string[];
+}
+
+function loadStore(): HashStore {
+  try {
+    const raw = JSON.parse(readFileSync(HASHES_FILE, "utf8")) as Partial<HashStore> & Record<string, unknown>;
+    if (raw.hashes && typeof raw.hashes === "object") {
+      return { hashes: raw.hashes, unreachable: raw.unreachable ?? [] };
+    }
+    return { hashes: raw as Record<string, string>, unreachable: [] }; // legacy flat format
+  } catch {
+    return { hashes: {}, unreachable: [] };
+  }
+}
+
+/**
+ * Hash what a reader would see, not the markup: government pages routinely
+ * change nonces, tracking scripts and whitespace on every request, which
+ * would flag every page as "changed" every week and bury real changes.
+ * Non-HTML (PDF etc.) is hashed byte-for-byte.
+ */
+const MIN_TEXT_CHARS = 300;
+
+function contentHash(contentType: string, body: Buffer): string {
+  let bytes: Buffer = body;
+  if (/html|xml/i.test(contentType)) {
+    const text = body
+      .toString("utf8")
+      .replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<!--[\s\S]*?-->/gi, " ")
+      .replace(/<[^>]+>/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+    // A near-empty page is a JS shell or a bot-challenge stub (its only text is a
+    // random token), not the document — hashing it would monitor nothing and
+    // "change" on every request.
+    if (text.length < MIN_TEXT_CHARS) {
+      throw new Error(`no readable content (${text.length} chars: JS-rendered page or bot challenge)`);
+    }
+    bytes = Buffer.from(text, "utf8");
+  }
+  return createHash("sha256").update(bytes).digest("hex");
 }
 
 async function fetchHash(url: string): Promise<string> {
   const res = await fetch(url, {
-    headers: { "user-agent": "odyssway-source-watch/0.1 (change detection for compliance data)" },
+    headers: { "user-agent": "odyssway-source-watch/0.2 (change detection for compliance data)" },
     redirect: "follow",
+    signal: AbortSignal.timeout(30_000),
   });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const body = Buffer.from(await res.arrayBuffer());
-  return createHash("sha256").update(body).digest("hex");
+  return contentHash(res.headers.get("content-type") ?? "", Buffer.from(await res.arrayBuffer()));
 }
 
-const today = new Date().toISOString().slice(0, 10);
-const previous = loadHashes();
-const next: Record<string, string> = { ...previous };
-const changes: string[] = [];
-const failures: string[] = [];
+async function pool<T>(items: T[], size: number, fn: (item: T) => Promise<void>): Promise<void> {
+  let next = 0;
+  await Promise.all(
+    Array.from({ length: size }, async () => {
+      while (next < items.length) await fn(items[next++]!);
+    }),
+  );
+}
 
-for (const source of SOURCES) {
-  try {
-    const hash = await fetchHash(source.url);
-    const old = previous[source.id];
-    if (old === undefined) {
-      changes.push(`- **${source.id}** — first snapshot recorded (no baseline to diff).`);
-    } else if (old !== hash) {
-      changes.push(
-        `- **${source.id}** — CONTENT CHANGED. Review ${source.url} and re-verify: ${source.usedBy}.`,
-      );
+const allSources = [...SOURCES, ...deriveDataSources()];
+
+// Wrapped in main(): tsx compiles this file as CJS, where top-level await is a syntax
+// error — the original script failed to start at all, so the weekly CI job never ran.
+async function main(): Promise<void> {
+
+  if (process.argv.includes("--list")) {
+    console.log(`${SOURCES.length} curated + ${allSources.length - SOURCES.length} derived from data = ${allSources.length} watched sources`);
+    process.exit(0);
+  }
+
+  const today = new Date().toISOString().slice(0, 10);
+  const previous = loadStore();
+  const hashes: Record<string, string> = { ...previous.hashes };
+  const wasUnreachable = new Set(previous.unreachable);
+  const unreachable = new Set<string>();
+  const changes: string[] = [];
+  const newFailures: string[] = [];
+  let firstSnapshots = 0;
+  let volatile = 0;
+
+  await pool(allSources, 8, async (source) => {
+    try {
+      const hash = await fetchHash(source.url);
+      const old = previous.hashes[source.id];
+      if (old === undefined) {
+        firstSnapshots++;
+        hashes[source.id] = hash;
+      } else if (old !== hash) {
+        // Confirm before flagging: only a change that persists on an immediate
+        // refetch is real. A page that differs from itself is volatile (rotating
+        // banners, per-request tokens) and can't be monitored by whole-page hash.
+        await new Promise((resolve) => setTimeout(resolve, 1500));
+        const again = await fetchHash(source.url);
+        if (again === hash) {
+          changes.push(`- **${source.id}** — CONTENT CHANGED. Review ${source.url} and re-verify: ${source.usedBy}.`);
+          hashes[source.id] = hash;
+        } else {
+          volatile++;
+        }
+      }
+    } catch (e) {
+      unreachable.add(source.id);
+      // Report a source turning unreachable once; a permanently blocked site is
+      // summarised as a count, not re-listed every run.
+      if (!wasUnreachable.has(source.id)) {
+        newFailures.push(`- **${source.id}** — fetch failed (${(e as Error).message}): ${source.url} — used by ${source.usedBy}`);
+      }
     }
-    next[source.id] = hash;
-  } catch (e) {
-    failures.push(`- **${source.id}** — fetch failed (${(e as Error).message}): ${source.url}`);
+  });
+
+  const store: HashStore = { hashes, unreachable: [...unreachable].sort() };
+  writeFileSync(HASHES_FILE, `${JSON.stringify(store, null, 2)}\n`);
+
+  const stillBlocked = [...unreachable].filter((id) => wasUnreachable.has(id)).length;
+  const summary = `Watched ${allSources.length} sources: ${changes.length} changed, ${firstSnapshots} first snapshots, ${volatile} volatile (differ between fetches, not flagged), ${newFailures.length} newly unmonitorable, ${stillBlocked} still unmonitorable (unreachable, JS-rendered or bot-challenged).`;
+
+  if (changes.length > 0 || newFailures.length > 0) {
+    mkdirSync(REPORT_DIR, { recursive: true });
+    const report = [
+      `# Source changes — ${today}`,
+      "",
+      "Official sources changed (or could not be checked). A human must review",
+      "each item, update the affected data, and bump `verified_at`.",
+      "",
+      summary,
+      "",
+      ...(changes.length > 0 ? ["## Changed", "", ...changes, ""] : []),
+      ...(newFailures.length > 0 ? ["## Newly unreachable (URL moved? blocked?)", "", ...newFailures, ""] : []),
+    ].join("\n");
+    const reportPath = join(REPORT_DIR, `source-changes-${today}.md`);
+    writeFileSync(reportPath, report);
+    console.log(`Wrote ${reportPath}`);
+    console.log(report);
+  } else {
+    console.log(`No source changes detected. ${summary}`);
   }
 }
 
-writeFileSync(HASHES_FILE, `${JSON.stringify(next, null, 2)}\n`);
-
-if (changes.length > 0 || failures.length > 0) {
-  mkdirSync(REPORT_DIR, { recursive: true });
-  const report = [
-    `# Source changes — ${today}`,
-    "",
-    "Official sources changed (or could not be checked). A human must review",
-    "each item, update the affected data, and bump `verified_at`.",
-    "",
-    ...(changes.length > 0 ? ["## Changed", "", ...changes, ""] : []),
-    ...(failures.length > 0 ? ["## Fetch failures (URL moved? blocked?)", "", ...failures, ""] : []),
-  ].join("\n");
-  const reportPath = join(REPORT_DIR, `source-changes-${today}.md`);
-  writeFileSync(reportPath, report);
-  console.log(`Wrote ${reportPath}`);
-  console.log(report);
-} else {
-  console.log("No source changes detected.");
-}
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});

@@ -566,18 +566,24 @@ subscription before real checkout/price experiments say otherwise.
 - Watched sources must also include: **eu-LISA announcements** and any **official
   EU traveler app releases** (the EU shipping better official tooling is a tracked
   competitive risk), plus the **official ETIAS site** for launch-status changes.
-- **Known gap (as of 2026-08-13)**: the 13 non-launch-set destinations added since
-  Phase 1.5's original US/GB/CA (§12) — Japan, Kenya, South Africa, Mexico,
-  Thailand, Rwanda, Nigeria, Egypt, India, Turkey, Morocco, Australia, UAE — are
-  not yet in `scripts/watch-sources.ts`'s `SOURCES` list, so their pages aren't
-  covered by the weekly diff yet. Add each destination's key source URLs (from its
-  `legal_source`/`officialAuthorityUrl` fields and the research notes in
-  `data/UNVERIFIED/TODO.md`) before relying on the watcher for freshness on these
-  rows. Two destinations flagged their own rules as unusually time-sensitive and
-  worth checking sooner than the weekly cadence regardless: Thailand (a
-  cabinet-approved visa-exemption cut not yet gazetted) and South Africa (its ETA
-  launched 2026-08-12 with eligibility/fee still unconfirmed on any primary
-  source).
+- **Coverage is now data-driven (2026-09-21).** Besides the curated `SOURCES`
+  list, the watcher derives one entry per distinct `legal_source.url` in every
+  production data file (~270 pages), so a newly verified row is watched without
+  editing the script. Pages are hashed on their visible text, not markup, and a
+  change is only reported if it persists on an immediate refetch. Sources that
+  can't be monitored by this method — unreachable, or returning a JS shell / bot
+  challenge (under 300 characters of text) — are counted in the report summary
+  rather than listed weekly; those ~55 need a manual or targeted-extraction check.
+  `pnpm watch:sources -- --list` prints what would be watched.
+- **The script used to fail at startup** (top-level `await` under tsx's CJS
+  output), so the weekly job had never run and no baseline `source-hashes.json`
+  existed. Fixed the same day; the first CI run will open a PR that commits the
+  baseline. Do not commit a baseline generated from a restricted network — it
+  would record blocked sources as unmonitorable.
+- Two destinations flagged their own rules as unusually time-sensitive and worth
+  checking sooner than the weekly cadence regardless: Thailand (a cabinet-approved
+  visa-exemption cut not yet gazetted) and South Africa (its ETA launched
+  2026-08-12 with eligibility/fee still unconfirmed on any primary source).
 - The `/changelog` (§7) is part of this moat: cloned competitors can fake a
   "verified" badge but cannot fake a consistent public update history. The
   changelog makes our verification legible to users, journalists, search engines,

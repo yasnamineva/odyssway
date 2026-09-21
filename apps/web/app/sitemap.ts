@@ -6,7 +6,7 @@ import { countriesVerifiedAt } from "../lib/countries";
 import { customsItems, destinations, entryRequirements } from "../lib/destinations";
 import { etias } from "../lib/etias";
 import { publishedEesRecords } from "../lib/ees";
-import { publishedNationalities } from "../lib/nationalities";
+import { etiasNationalities } from "../lib/nationalities";
 import { publishedOverstayPenalties } from "../lib/overstay-penalties";
 import { SITE_URL as BASE } from "../lib/site";
 
@@ -52,7 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: etias.verified_at ?? CONTENT_CHECKED,
       priority: 0.8,
     },
-    ...publishedNationalities.map((r) => ({
+    ...etiasNationalities.map((r) => ({
       url: `${BASE}/etias/${r.nationality.toLowerCase()}`,
       lastModified: r.verified_at ?? CONTENT_CHECKED,
       priority: 0.6,

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import type { ReactNode } from "react";
@@ -21,6 +22,8 @@ import { blogPostsByDate } from "../lib/blog";
 import { coveredDestinationCount } from "../lib/destinations";
 import { SITE_URL } from "../lib/site";
 import heroImage from "../public/images/hero-travel.jpg";
+
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 const STAT_ICONS = [ScaleIcon, GlobeIcon, ShieldCheckIcon];
 const STAT_HREFS = ["/rules/90-180-rule", "/sources", "/methodology"];

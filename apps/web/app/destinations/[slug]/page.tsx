@@ -3,9 +3,10 @@ import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { blogPosts } from "../../../lib/blog";
 import { BRING_CATEGORIES, type BringCategory } from "../../../lib/bring-categories";
-import { destinationSlug } from "../../../lib/bring-pages";
+import { destinationSlug, rowLabel } from "../../../lib/bring-pages";
 import { customsItems, destinationByCode, destinations, entryRequirements } from "../../../lib/destinations";
 import { nationalityRules } from "../../../lib/nationalities";
+import { SITE_URL } from "../../../lib/site";
 
 interface Params {
   slug: string;
@@ -55,8 +56,26 @@ export default async function DestinationPage({ params }: { params: Promise<Para
 
   const relatedPosts = blogPosts.filter((p) => p.destinationCodes?.includes(dest.code));
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Odyssway", item: SITE_URL },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: t("h1", { destination: dest.name }),
+        item: `${SITE_URL}/destinations/${dest.code.toLowerCase()}`,
+      },
+    ],
+  };
+
   return (
     <article className="mx-auto max-w-2xl space-y-6">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <header>
         <h1 className="text-2xl font-bold tracking-tight text-slate-900">
           {t("h1", { destination: dest.name })}
@@ -91,7 +110,7 @@ export default async function DestinationPage({ params }: { params: Promise<Para
           <ul className="mt-3 divide-y divide-slate-100 text-sm text-slate-700">
             {items.map((item) => (
               <li key={item.slug} className="py-2">
-                <span className="font-medium text-slate-900">{item.names[0]}: </span>
+                <span className="font-medium text-slate-900">{rowLabel(item.slug, dest.code)}: </span>
                 {t(`verdict.${item.verdict}`)}
                 {item.limits && <span className="text-slate-500"> — {item.limits.description}</span>}
                 {item.category in BRING_CATEGORIES && (
