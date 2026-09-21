@@ -6623,5 +6623,632 @@
     "verified_at": "2026-09-21",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
+  },
+  {
+    "slug": "alcohol-ie",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer",
+      "whiskey"
+    ],
+    "destination": "IE",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "From outside the EU (including the UK): 1 litre of spirits, or 2 litres of other alcoholic drinks up to 22% alcohol (e.g. port, sherry, sparkling wine, some liqueurs), plus 4 litres of still wine and 16 litres of beer. You can split the spirits/other-drinks allowance fractionally (e.g. 0.5 litres of spirits and 1 litre of port). Customs Duty, Excise Duty and VAT apply to anything above the allowance."
+    },
+    "notes": "Applies to travellers aged 17 or over (Revenue/Citizens Information: \"You are not entitled to alcohol or tobacco allowances if you are under 17\"). This is Ireland's own Revenue guidance for arrivals from outside the EU (including Great Britain). Reduced allowances apply to transport crews (0.35 L spirits, 0.75 L still wine, 4 L beer). Arrivals from within the EU follow different rules.",
+    "legal_source": {
+      "name": "Revenue (Ireland) — Duty-free allowances (travelling from outside the EU)",
+      "url": "https://www.revenue.ie/en/customs/individuals/info-travelling-duty-free/from-outside-eu/allowances.aspx"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-ie",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "cigarillos",
+      "rolling tobacco",
+      "smokeless tobacco",
+      "snus"
+    ],
+    "destination": "IE",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "From outside the EU (including the UK): 200 cigarettes, or 100 cigarillos, or 50 cigars, or 250g of smoking tobacco. The allowance can be split fractionally (e.g. 100 cigarettes and 50 cigarillos). Duty and VAT apply above it."
+    },
+    "notes": "Revenue: \"The import of oral smokeless tobacco is generally prohibited\" (snus-type products) — see Ireland's prohibitions and restrictions list. Reduced allowances apply to transport crews (40 cigarettes, 20 cigarillos, 10 cigars or 50g).",
+    "legal_source": {
+      "name": "Revenue (Ireland) — Duty-free allowances (travelling from outside the EU)",
+      "url": "https://www.revenue.ie/en/customs/individuals/info-travelling-duty-free/from-outside-eu/allowances.aspx"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-ie",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "travellers cheques",
+      "gold"
+    ],
+    "destination": "IE",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "If you enter or leave the EU at an Irish airport or port carrying cash of €10,000 or more (or the equivalent in another currency), you must make a declaration to Customs. \"Cash\" includes banknotes and coins, cheques/travellers' cheques/promissory notes/money orders without a named beneficiary, gold coins of at least 90% gold and gold bars/nuggets of at least 99.5% gold. The rule applies to movements to or from the UK (including the Isle of Man and Channel Islands) but not to or from Northern Ireland.",
+      "quantity": "€10,000"
+    },
+    "notes": "A Customs officer may search for, seize and retain cash of €1,000 or more if there are reasonable grounds to believe it is proceeds of crime or intended for criminal conduct. Incorrect or incomplete declarations carry penalties.",
+    "legal_source": {
+      "name": "Revenue (Ireland) — Travelling with, or sending, cash",
+      "url": "https://www.revenue.ie/en/customs/individuals/travelling-with-sending-cash/index.aspx"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-ie",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "ham",
+      "sausage",
+      "fish",
+      "honey",
+      "infant formula",
+      "baby milk"
+    ],
+    "destination": "IE",
+    "category": "food_animal",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Personal consignments of meat, milk or their products are not allowed from non-EU countries (including Great Britain), with a narrow exception for products from the Faroe Islands or Greenland (10 kg combined). Allowed in luggage from outside the EU: powdered infant milk/infant formula and special foods required for medical reasons (combined 2 kg, sealed and branded); fish and shellfish up to 20 kg or the weight of one fish; other animal products such as honey up to 2 kg; and a defined list of low-risk products (bread, cakes, biscuits, chocolate and confectionery, pasta and noodles not mixed with meat, soup stocks and flavourings, coffee/tea extracts, liqueurs and cordials)."
+    },
+    "notes": "Live animals (including live insects) may not be brought in luggage from non-EU countries. The rule covers goods moving from Great Britain but not from Northern Ireland. Meat/milk personal imports can carry Foot and Mouth Disease and African Swine Fever, which is why the ban applies even to small quantities and to online orders by post or courier.",
+    "legal_source": {
+      "name": "Food Safety Authority of Ireland — Personal Imports (food that can be brought from a third country for personal use); Department of Agriculture, Food and the Marine — Personal Consignments in Luggage",
+      "url": "https://www.fsai.ie/enforcement-and-legislation/legislation/food-legislation/imports/personal-imports"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-ie",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds",
+      "flowers",
+      "cut flowers",
+      "soil",
+      "timber",
+      "nuts",
+      "spices"
+    ],
+    "destination": "IE",
+    "category": "food_plant",
+    "verdict": "depends",
+    "limits": {
+      "description": "Plants, fruit, vegetables, cut flowers, seeds, soil and timber may not be brought in from a third country (including Great Britain) without a phytosanitary certificate presented to the Department of Agriculture, Food and the Marine at the point of entry. Bananas, durians, dates, pineapples and coconuts are exempt from phytosanitary certification. Separately, for food safety, foods of non-animal origin on the EU high-risk import-control list (Regulation (EU) 2019/1793) are limited to 5 kg of each fresh product and 2 kg of each other product in personal luggage; foods not on that list have no weight limit."
+    },
+    "notes": "The plant-health rule (certificate) and the food-safety rule (weight limits) are separate — a phytosanitary certificate is what a traveller would need for fresh produce and plants, which in practice means most fresh fruit, vegetables and plants should not be brought from outside the EU. Applies to Great Britain but not Northern Ireland.",
+    "legal_source": {
+      "name": "Department of Agriculture, Food and the Marine — Information on Personal Consignments in Luggage or through Postal, Courier & Online Services",
+      "url": "https://www.gov.ie/en/department-of-agriculture-food-and-the-marine/publications/information-on-personal-consignments-in-luggage-or-through-postal-courier-online-services/"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-ie",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hash",
+      "cocaine",
+      "heroin",
+      "amphetamine",
+      "illegal drugs"
+    ],
+    "destination": "IE",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Citizens Information: \"It is an offence to import or carry on your person, controlled substances (drugs) when travelling to or from Ireland. Examples of controlled substances are cannabis, cocaine, heroin, and amphetamines.\" Customs runs a National Drugs Team with detector-dog units at airports and ferry ports. Revenue lists \"illegal or dangerous drugs\" among goods that must be declared to a customs officer. Medicines containing controlled drugs are handled separately (see the controlled-medication entry).",
+    "legal_source": {
+      "name": "Citizens Information — Customs regulations for travellers to Ireland (drugs)",
+      "url": "https://www.citizensinformation.ie/en/travel-and-recreation/travel-to-ireland/customs-regulations-for-travellers/"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-ie",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "otc medicine",
+      "drugs (prescription)"
+    ],
+    "destination": "IE",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Visitors from non-Schengen countries may bring up to 3 months' supply of prescription medicines for their own personal use. The Department of Health recommends original packaging with your name clearly displayed, plus the prescription (or a copy) and/or a letter from your doctor or dispensing pharmacist outlining your condition and stating the medicines are for personal use — placed inside the package as proof of legitimacy.",
+      "quantity": "3 months' supply"
+    },
+    "notes": "\"In Ireland, the current practice is that the customs officer must be satisfied that the documentation supports the amount and personal use of the medical products in the possession of the traveller\" and \"the Irish Customs Authority has the final say in all such matters.\" Revenue lists medicines among goods that must be declared. Medicines containing controlled drugs are covered separately (see the controlled-medication entry).",
+    "legal_source": {
+      "name": "Department of Health (Ireland) — Travelling into Ireland with prescribed narcotics and/or psychotropic substances",
+      "url": "https://www.gov.ie/en/department-of-health/services/travelling-into-ireland-from-schengen-countries-with-prescribed-narcotics-andor-psychotropic-substances/"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-ie",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "dexamphetamine",
+      "vyvanse",
+      "lisdexamfetamine",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "stimulant medication",
+      "methadone",
+      "buprenorphine",
+      "oxycodone",
+      "opioid painkiller",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam"
+    ],
+    "destination": "IE",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "From non-Schengen countries (e.g. US, UK, Canada, Australia, Asia): the Department of Health's general rule applies — up to 3 months' supply for personal use, original packaging, and a prescription or doctor's/pharmacist's letter inside the package; a customs officer must be satisfied the documents support the amount and personal use. From Schengen countries (since 1 April 2023): an Article 75 Certificate issued or authenticated by your own country's competent authority is required for any prescribed product containing a controlled drug in Schedule II or III of the Misuse of Drugs Regulations 2017, with a separate certificate for each drug. Prescribed cannabis-based products are not permitted to be brought into Ireland."
+    },
+    "notes": "Ireland's own statute (Misuse of Drugs Regulations 2017, S.I. 173/2017) lists amphetamine, dexamphetamine, lisdexamfetamine, methylphenidate (Ritalin/Concerta), oxycodone, methadone, buprenorphine and fentanyl in Schedule 2, so ADHD stimulants and strong opioids are Schedule 2 drugs — and need the Article 75 Certificate when arriving from a Schengen country. Alprazolam (Xanax), diazepam (Valium) and zolpidem are in Schedule 4, which the Department's Article 75 rule does not cover. Methadone and buprenorphine for opioid substitution may be brought in from the Schengen Area with an Article 75 Certificate. To check a specific product's schedule, use the HPRA 'search for a medicine' tool; for personal-medication queries the Department points to enforcementcontrol@hpra.ie. The Department page describes the non-Schengen rule in general terms only and does not name a separate certificate for non-Schengen visitors — carry full documentation regardless, since Irish Customs has the final say.",
+    "legal_source": {
+      "name": "Department of Health (Ireland) — Travelling into Ireland with prescribed narcotics and/or psychotropic substances",
+      "url": "https://www.gov.ie/en/department-of-health/services/travelling-into-ireland-from-schengen-countries-with-prescribed-narcotics-andor-psychotropic-substances/"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-ie",
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas",
+      "dji"
+    ],
+    "destination": "IE",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Flying a drone in Ireland that weighs more than 250 grams, or has a camera or sensor, requires registration as a drone operator with the Irish Aviation Authority (IAA). Registration costs €41 and is valid for 2 years; you then label the drone with your operator registration number and load it into the drone's Direct Remote ID. Drones over 250g also need online-training certification (valid 5 years). Open-category flights are for drones under 25 kg (or with a class mark 0–4); heavier drones cannot be flown without IAA permission. If you live in the EU you only register in your country of residence, not in each country you fly in."
+    },
+    "notes": "This is a flight-operation rule, not a customs ban — bringing a drone into Ireland isn't itself restricted, but flying it legally is. The IAA or the Gardaí can take away a drone if they believe it is likely to be used in breach of the regulations, and flying a drone with a camera over identifiable people can raise privacy offences. The Citizens Information and IAA pages do not spell out a separate route for non-EU visitors who aren't registered in an EU state — confirm the process with the IAA (MySRS) before travelling rather than assuming registration can be done on arrival.",
+    "legal_source": {
+      "name": "Citizens Information — Owning and operating a drone (summarising Irish Aviation Authority rules; IAA registration page: https://www.iaa.ie/general-aviation/drones/drone-register)",
+      "url": "https://www.citizensinformation.ie/en/travel-and-recreation/sport-and-leisure/owning-and-operating-a-drone/"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-ie",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "air rifle",
+      "airsoft",
+      "knife",
+      "flick knife",
+      "pepper spray",
+      "stun gun",
+      "taser",
+      "crossbow",
+      "paintball"
+    ],
+    "destination": "IE",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "Firearms need an importation (transfer) licence from the Department of Justice obtained BEFORE bringing them into the country, plus firearms certification; a firearms certificate for a non-resident costs €40 for 1 year. CS gas spray, pepper spray and stun guns are totally prohibited: importation or possession is illegal. Crossbows, spearguns and all airguns with a muzzle velocity over 1 joule (including paintball markers) are legally firearms and must be licensed. The Firearms and Offensive Weapons Act 1990 prohibits importing offensive weapons (listed in the 1991 Order, as amended in 2009 — including flick knives and several disguised knives), with penalties of up to 10 years' imprisonment."
+    },
+    "notes": "Other types of knives can be imported, but carrying one in public without lawful reason is an offence under Section 9 of the 1990 Act, so a knife in luggage is not the same as a knife on your person. Antique firearms held as ornaments or curiosities are exempt from the Firearms Acts, but the licensing position for an ordinary traveller is: don't bring a firearm without written authorisation. Revenue also lists \"firearms, weapons, fireworks or explosives\" among goods that must be declared to a customs officer.",
+    "legal_source": {
+      "name": "Department of Justice, Home Affairs and Migration — Firearms: your questions answered",
+      "url": "https://www.gov.ie/en/department-of-justice-home-affairs-and-migration/publications/firearms-your-questions-answered/"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cbd-ie",
+    "names": [
+      "cbd",
+      "cbd oil",
+      "hemp extract",
+      "cannabidiol",
+      "hemp oil",
+      "hemp seed"
+    ],
+    "destination": "IE",
+    "category": "cbd_cannabis",
+    "verdict": "depends",
+    "limits": {
+      "description": "The Food Safety Authority of Ireland states CBD \"is not considered a narcotic drug and is not a controlled drug in Ireland under the Misuse of Drugs Act 1977\" — but THC is: \"There is no legal threshold or tolerance in Ireland under the Misuse of Drugs Act for the presence of THC in food, except for hemp seed and hemp seed derived food products\", so food products containing THC at any level (other than hemp seed products) are classified as controlled drugs. Separately, CBD as or in food or food supplements is an unauthorised novel food under EU Regulation 2015/2283 and cannot legally be placed on the EU market."
+    },
+    "notes": "The FSAI page is about placing products on the market and about what counts as a controlled drug; it does not give a traveller-specific rule for CBD in personal luggage. Practical reading: a CBD product with any measurable THC is a controlled-drug risk at the border; a genuinely THC-free product isn't a controlled drug, but can't be lawfully sold as a food supplement. Hemp seeds and hemp seed oil/flour are outside both the Misuse of Drugs Act and the novel food rules. Prescribed cannabis-based medicines are not permitted to be brought into Ireland (Department of Health).",
+    "legal_source": {
+      "name": "Food Safety Authority of Ireland — Regulation of Cannabidiol (CBD) and Hemp food products in Ireland",
+      "url": "https://www.fsai.ie/business-advice/running-a-food-business/food-safety-and-hygiene/food-innovation/cbd-and-other-hemp-products"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-ie",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping liquid",
+      "e-liquid",
+      "vaping device",
+      "nicotine inhaling product"
+    ],
+    "destination": "IE",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "limits": {
+      "description": "Revenue's traveller allowances for arrivals from outside the EU list allowances for cigarettes, cigarillos, cigars and smoking tobacco only — there is no vaping-specific allowance, and Revenue's list of prohibited/restricted goods in baggage does not mention e-cigarettes or vapes. Since 1 November 2025 Ireland charges an E-Liquid Products Tax of 50 cent per millilitre on e-liquid (nicotine and non-nicotine), but Revenue says it applies \"the first time an e-liquid product is supplied by a business in the State\", i.e. it falls on importers, manufacturers and suppliers, not on a traveller's own device."
+    },
+    "notes": "This row records what the traveller guidance does and doesn't say — no source found either sets a personal-import quantity for vapes or bans carrying one. Whether e-liquid in luggage is treated under the general €430 goods allowance is not stated by Revenue and is an inference, not a confirmed rule. Vapes are regulated at the point of sale (nicotine inhaling products licence, no sale to under-18s, under the Public Health (Tobacco Products and Nicotine Inhaling Products) Act 2023), which is a retail rule rather than a border one.",
+    "legal_source": {
+      "name": "Revenue (Ireland) — Revenue publishes guidance on new 'Vape Tax' (E-Liquid Products Tax); traveller allowances page: https://www.revenue.ie/en/customs/individuals/info-travelling-duty-free/from-outside-eu/allowances.aspx",
+      "url": "https://www.revenue.ie/en/corporate/press-office/press-releases/2025/pr-093025-vape-tax.aspx"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-my",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "beer",
+      "liquor",
+      "duty free alcohol"
+    ],
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Wine, spirits, beer or malt liquor: not exceeding 1 litre in total is exempt from customs duty/tax, for travellers entering by air or any other mode of transport. Anything above that is dutiable and must be declared in the Red Lane."
+    },
+    "notes": "Per the Customs Department's Traveler's Guide list of goods exempt from duty/tax. The page does not state the rules on alcohol for Muslim travellers or any minimum-age rule, and those were not checked.",
+    "legal_source": {
+      "name": "Royal Malaysian Customs Department — Traveler's Guide",
+      "url": "https://www.customs.gov.my/en/individu/pengembara/travelers-guide"
+    },
+    "destination": "MY",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-my",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "smoking",
+      "duty free cigarettes"
+    ],
+    "category": "tobacco",
+    "verdict": "depends",
+    "limits": {
+      "description": "Cigarettes and tobacco products are not on the Customs Department's list of duty-free goods for travellers — they are expressly excluded from the general exemption — so any quantity is dutiable and must be declared in the Red Lane."
+    },
+    "notes": "The Traveler's Guide gives no duty-free tobacco quantity and only says duty/tax on tobacco follows a 'specific' rate under the Sales Tax (Rate of Tax) Order 2018; the per-stick rate was not confirmed. Some secondary sources describe an older 200-cigarette allowance — the current official page does not list one.",
+    "legal_source": {
+      "name": "Royal Malaysian Customs Department — Traveler's Guide",
+      "url": "https://www.customs.gov.my/en/individu/pengembara/travelers-guide"
+    },
+    "destination": "MY",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-my",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "bearer negotiable instruments",
+      "declare cash"
+    ],
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Cash and bearer negotiable instruments amounting to USD 10,000 or more (entering or leaving) must be declared on Customs Form No. 7 at the customs counters. Importing or exporting Malaysian ringgit requires prior written permission from Bank Negara Malaysia.",
+      "quantity": "USD 10,000"
+    },
+    "notes": "Legal basis: s.28B(1) Anti-Money Laundering, Anti-Terrorism Financing and Proceeds of Unlawful Activities Act 2001 and Regulation 55, Customs Regulations 2019. Failure to declare is an offence punishable by a fine of up to RM3 million or up to 5 years' imprisonment, or both.",
+    "legal_source": {
+      "name": "Royal Malaysian Customs Department — Traveler's Guide",
+      "url": "https://www.customs.gov.my/en/individu/pengembara/travelers-guide"
+    },
+    "destination": "MY",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-my",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hemp",
+      "drugs"
+    ],
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Import and export of drugs including morphine, heroin, opium and cannabis is strictly prohibited. Under the Customs Act 1967 and the Dangerous Drugs Act 1952 the penalty for drug trafficking is a mandatory death penalty. There is no recreational or medical-cannabis exception for travellers on this page; prescription drugs may only be imported under Ministry of Health licences/permits.",
+    "legal_source": {
+      "name": "Royal Malaysian Customs Department — Traveler's Guide",
+      "url": "https://www.customs.gov.my/en/individu/pengembara/travelers-guide"
+    },
+    "destination": "MY",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-my",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "otc medicine",
+      "vitamins",
+      "supplements"
+    ],
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Medicines (including vitamins and supplements) for your own use or an immediate family member travelling with you: not more than the quantity reasonably needed for one (1) month's use by one person, judged from the dosage on the label. Keep the dispensing label and original packaging intact."
+    },
+    "notes": "Only products registered with the Drug Control Authority may be imported commercially; the personal-use allowance is a separate traveller exception under the Poisons Act 1952, Dangerous Drugs Act 1952 and Control of Drugs and Cosmetics Regulations 1984. If you will be in Malaysia over a month you are told to get prescriptions from a registered Malaysian doctor. Do not bring medicines for anyone other than yourself or an immediate family member travelling with you.",
+    "legal_source": {
+      "name": "Ministry of Health Malaysia, Pharmaceutical Services Programme — Traveller's Guide: Bringing Medication into Malaysia",
+      "url": "https://pharmacy.moh.gov.my/sites/default/files/document-upload/travellers-guide-bringing-medication-malaysia-personal-use-edited-16012019.pdf"
+    },
+    "destination": "MY",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-my",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "vyvanse",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "codeine",
+      "tramadol",
+      "morphine",
+      "oxycodone",
+      "sleeping pills",
+      "stimulant medication"
+    ],
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Prescription medicines containing dangerous drugs (e.g. cannabis- or narcotic-based medication liable to abuse or dependence) must be declared at the border on arrival. Medicines controlled under the Dangerous Drugs Act 1952 and the Poisons (Psychotropic Substances) Regulations 1989 need a valid prescription or a doctor's letter, written in English or with a translation, stating the medicine, dosage and quantity. The same one-month personal-use quantity cap applies."
+    },
+    "notes": "The MOH guide points to the First Schedule of the Dangerous Drugs Act 1952 and the Third Schedule of the Poisons Act 1952 for which substances are covered — this pass did not check each named drug (e.g. specific ADHD stimulants or benzodiazepines) against those schedules, so confirm a specific product with the MOH Pharmaceutical Services Programme (pelesenanbpf@moh.gov.my, +603-7841 3200/3320) before travel. The Customs Department separately states prescription drugs can only be imported subject to licences/permits from the Ministry of Health, and drug trafficking carries a mandatory death penalty.",
+    "legal_source": {
+      "name": "Ministry of Health Malaysia, Pharmaceutical Services Programme — Traveller's Guide: Bringing Medication into Malaysia",
+      "url": "https://pharmacy.moh.gov.my/sites/default/files/document-upload/travellers-guide-bringing-medication-malaysia-personal-use-edited-16012019.pdf"
+    },
+    "destination": "MY",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-my",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping",
+      "e-liquid",
+      "vape juice",
+      "nicotine",
+      "heated tobacco"
+    ],
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "limits": {
+      "description": "Import of nicotine and of nicotine-containing preparations 'of a kind used for vaporizer smoking' (vape liquid/gel) is a conditional prohibition: it is prohibited except under an import licence from the Ministry of Health's Pharmaceutical Services Programme (Customs (Prohibition of Imports) Order 2023, Second Schedule Part I, item 4). Separately, the Customs Department's traveller duty-free list expressly excludes electronic cigarettes and vaporising devices and their liquids, so they are dutiable and must be declared in the Red Lane."
+    },
+    "notes": "Neither the Order nor the Traveler's Guide sets a personal-use quantity or grants travellers an exemption from the licence requirement — treat carrying nicotine vape liquid as risky and check with Malaysian Customs or the Ministry of Health first. Vaping products are also regulated under the Control of Smoking Products for Public Health Act 2024 (Act 852, in force 1 October 2024); that Act's own text and any traveller-specific provisions were not read in this pass.",
+    "legal_source": {
+      "name": "Customs (Prohibition of Imports) Order 2023, P.U.(A) 117 — Malaysia Attorney General's Chambers",
+      "url": "https://lom.agc.gov.my/ilims/upload/portal/akta/outputp/1809215/PUA117.pdf"
+    },
+    "destination": "MY",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-my",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition",
+      "taser",
+      "stun gun",
+      "pepper spray",
+      "baton",
+      "knife",
+      "paintball",
+      "toy gun",
+      "replica gun",
+      "fireworks",
+      "explosives"
+    ],
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "Import is allowed only with a licence or approval from the Chief Police Officer: arms and ammunition as defined in the Arms Act 1960 (including paintball markers/pellets and Taser guns), shotgun cartridges, expandable batons, imitation arms including toy guns and pistols, and imitation hand grenades (Arms Act 1960); fireworks and explosives (Explosives Act 1957). A traveller without that licence cannot lawfully bring them in."
+    },
+    "notes": "From the Customs (Prohibition of Imports) Order 2023, Third Schedule items 44–50. Ordinary pocket knives and multitools are not addressed by these items and were not researched separately.",
+    "legal_source": {
+      "name": "Customs (Prohibition of Imports) Order 2023, P.U.(A) 117 — Malaysia Attorney General's Chambers",
+      "url": "https://lom.agc.gov.my/ilims/upload/portal/akta/outputp/1809215/PUA117.pdf"
+    },
+    "destination": "MY",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-my",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "pork",
+      "sausage",
+      "eggs",
+      "honey",
+      "chicken",
+      "beef"
+    ],
+    "category": "food_animal",
+    "verdict": "depends",
+    "limits": {
+      "description": "Import of meat and edible meat offal, dairy produce, birds' eggs and honey, and of any domestic animal or its meat/eggs, requires prior official approval: a MAQIS import permit and inspection (Malaysian Quarantine and Inspection Services Act 2011) and, for food products, approval of the Ministry of Health's Food Safety and Quality Division (Customs (Prohibition of Imports) Order 2023)."
+    },
+    "notes": "No traveller exemption or personal-quantity allowance appears in the Order. Enforcement is real: Malaysia's state news reported MAQIS seizing 40 pork sausages and 10 chickens from a passenger at KLIA in 2025 for lacking a MAQIS import permit and an origin-country health certificate, under s.11(1) of Act 728. The Customs Traveler's Guide separately lists 'food preparations' up to RM150 as duty-exempt, which is a duty rule and does not override the permit requirement.",
+    "legal_source": {
+      "name": "Customs (Prohibition of Imports) Order 2023, P.U.(A) 117 — Malaysia Attorney General's Chambers",
+      "url": "https://lom.agc.gov.my/ilims/upload/portal/akta/outputp/1809215/PUA117.pdf"
+    },
+    "destination": "MY",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-my",
+    "names": [
+      "fruit",
+      "vegetables",
+      "produce",
+      "nuts",
+      "spices",
+      "cereals",
+      "plants"
+    ],
+    "category": "food_plant",
+    "verdict": "depends",
+    "limits": {
+      "description": "Edible vegetables and roots, fruit and nuts, coffee/tea/spices and cereals are food products whose import is subject to the approval of the Ministry of Health's Food Safety and Quality Division (Customs (Prohibition of Imports) Order 2023, Third Schedule item 35). Importing plants, agricultural produce or soil without a valid MAQIS import permit is an offence under the MAQIS Act 2011."
+    },
+    "notes": "No personal-luggage exemption or quantity allowance appears in the Order or on the MAQIS FAQ. Live plants, seeds and cut flowers were not separately confirmed on a primary page in this pass.",
+    "legal_source": {
+      "name": "Customs (Prohibition of Imports) Order 2023, P.U.(A) 117 — Malaysia Attorney General's Chambers",
+      "url": "https://lom.agc.gov.my/ilims/upload/portal/akta/outputp/1809215/PUA117.pdf"
+    },
+    "destination": "MY",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-my",
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas",
+      "dji"
+    ],
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Under regulation 140 of the Civil Aviation Regulations 2016, anyone intending to operate an Unmanned Aircraft System must obtain prior authorisation from CAAM. For low-risk operations (visual line of sight, under 400 ft above ground, no spraying) that authorisation is an Authorisation to Fly (ATF) permit, applied for by email to drone.atf@caam.gov.my at least 14 working days before the flight; flying without the required permit is a violation penalised under regulation 206(3)."
+    },
+    "notes": "This is a flight-operation requirement, not a customs import ban. CAAM's notice says nothing about a tourist or recreational exemption, so plan on an ATF permit for any flight. Widely reported figures — a RM250 permit fee, registration of drones above 250 g, a RM50,000 maximum fine — appear only in secondary sources and were not confirmed on a CAAM page in this pass; whether importing a consumer drone needs a separate approval (e.g. radio-equipment certification) was also not confirmed.",
+    "legal_source": {
+      "name": "Civil Aviation Authority of Malaysia (CAAM) — Safety Information 01/2025: Authorisation to Fly (ATF) application for UAS operations",
+      "url": "https://www.caam.gov.my/wp-content/uploads/2025/02/SI-01_2025-ATF-Application-for-UAS-Operations-Including-Operations-Related-to-Training.pdf"
+    },
+    "destination": "MY",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
   }
 ]
