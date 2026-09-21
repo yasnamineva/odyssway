@@ -16,6 +16,18 @@ export const WORLD_COUNTRIES: FeatureCollection<Geometry, { name: string }> = fe
 const featureById = new Map(WORLD_COUNTRIES.features.map((f) => [String(f.id), f]));
 const alpha2ById = new Map(Object.entries(COUNTRY_GEO_IDS).map(([alpha2, id]) => [id, alpha2]));
 
+/**
+ * [lon, lat] for covered destinations too small to have any polygon in the 110m
+ * atlas. They're drawn as marker dots instead — without this a country we cover
+ * would silently look uncovered on the map. A unit test fails if a verified
+ * destination has neither a polygon nor an entry here.
+ */
+export const MICRO_STATE_COORDS: Record<string, [number, number]> = {
+  SG: [103.82, 1.35],
+  HK: [114.17, 22.32],
+  MV: [73.5, 3.2],
+};
+
 /** The country's geometry, or undefined if this alpha-2 code isn't in our crosswalk or the atlas. */
 export function countryFeature(alpha2: string) {
   const id = COUNTRY_GEO_IDS[alpha2.toUpperCase()];

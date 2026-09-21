@@ -1,10 +1,10 @@
 "use client";
 
-import { geoEquirectangular, geoPath } from "d3-geo";
+import { geoArea, geoCentroid, geoEquirectangular, geoPath } from "d3-geo";
 import { useMemo, useState } from "react";
 import { schengenCountries } from "../lib/countries";
 import { destinations } from "../lib/destinations";
-import { alpha2ForFeatureId, WORLD_COUNTRIES } from "../lib/world-map-data";
+import { alpha2ForFeatureId, countryFeature, MICRO_STATE_COORDS, WORLD_COUNTRIES } from "../lib/world-map-data";
 
 const WIDTH = 960;
 const HEIGHT = 460;
@@ -33,6 +33,9 @@ const REGION_COLORS: Record<string, string> = {
 };
 const FALLBACK_COLOR = "#8298b3";
 const SCHENGEN_KEY = "Schengen Area";
+/** Polygons smaller than this (steradians) are a few pixels wide at this scale —
+ * present but easy to miss — so they also get a halo ring. */
+const TINY_AREA = 0.0007;
 
 /**
  * "Where Trip Check covers" — every verified non-Schengen destination filled
@@ -63,6 +66,20 @@ export default function DestinationsMap() {
     }
     return map;
   }, []);
+
+  /** Dots for covered destinations with no polygon, halos for ones with a tiny polygon. */
+  const markers = useMemo(() => {
+    const out: Array<{ code: string; name: string; region: string; x: number; y: number; halo: boolean }> = [];
+    for (const [code, dest] of destinationByCode) {
+      const feature = countryFeature(code);
+      let lonLat: [number, number] | undefined;
+      if (!feature) lonLat = MICRO_STATE_COORDS[code];
+      else if (geoArea(feature) < TINY_AREA) lonLat = geoCentroid(feature) as [number, number];
+      const point = lonLat ? projection(lonLat) : null;
+      if (point) out.push({ code, ...dest, x: point[0], y: point[1], halo: Boolean(feature) });
+    }
+    return out;
+  }, [destinationByCode, projection]);
 
   const regionsPresent = useMemo(() => {
     const seen = new Set([...destinationByCode.values()].map((d) => d.region));
@@ -150,6 +167,24 @@ export default function DestinationsMap() {
             </path>
           );
         })}
+        {markers
+          .filter((m) => !schengenFilterOnly && (!activeFilter || activeFilter === m.region))
+          .map((m) => {
+            const color = REGION_COLORS[m.region] ?? FALLBACK_COLOR;
+            return (
+              <g key={m.code}>
+                <title>{m.name}</title>
+                {m.halo ? (
+                  <circle cx={m.x} cy={m.y} r={7} fill={color} fillOpacity={0.18} stroke={color} strokeWidth={1.5} />
+                ) : (
+                  <>
+                    <circle cx={m.x} cy={m.y} r={9} fill={color} fillOpacity={0.25} />
+                    <circle cx={m.x} cy={m.y} r={4.5} fill={color} stroke="#ffffff" strokeWidth={1.5} />
+                  </>
+                )}
+              </g>
+            );
+          })}
       </svg>
     </div>
   );
