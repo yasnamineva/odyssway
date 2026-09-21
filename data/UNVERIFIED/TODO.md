@@ -2335,3 +2335,58 @@ fill — this pass targeted the 4 destinations still missing the whole
       source found at all for injectable medication (insulin/GLP-1).
       Needs either a different PDF-reading approach or a different lead
       entirely before this can ship.
+
+## Done (2026-09-21/22) — expansion to new destinations
+
+New destinations chosen by tourism volume, English-language official sources,
+and fit with the site's Schengen-adjacent audience. Each was researched by a
+separate agent that wrote a deliverable to a scratch file, validated it against
+the production schemas, and had its riskiest claims spot-checked against the
+official page before merging. Rows without a specific official page were
+omitted rather than filled. Next candidates (not started): Taiwan, Serbia,
+Albania, Sri Lanka, Qatar, Jordan, Colombia, Tanzania, Costa Rica.
+
+- [x] **Hong Kong (HK)** — 16 entry rows (every roster nationality except
+      mainland China) and 12 customs rows; stay lengths confirmed row-by-row
+      against the Immigration Department table, the e-cigarette import ban and
+      the 30 April 2026 public-place possession offence quoted from the
+      Tobacco and Alcohol Control Office. Still open: mainland China (CN) —
+      entry is by Exit-Entry Permit / Two-way Permit, which the schema can't
+      express; insulin/injectables (no traveller guidance found); which
+      specific prescription drugs (benzodiazepines, methylphenidate) are
+      scheduled under Cap. 134.
+- [x] **Ireland (IE)** — 16 entry rows, 12 customs rows. GB deliberately
+      omitted (Common Travel Area: unlimited stay, not expressible). Ukraine
+      is visa-free only by a 25 Feb 2022 ministerial waiver (INIS note 3),
+      flagged in the row as a wartime measure to re-check. Still open: an
+      official traveller rule for e-cigarettes (the row records only what
+      Revenue omits plus the supplier-level e-liquid tax); the drone process
+      for non-EU visitors; CBD personal import; whether controlled medication
+      from non-Schengen countries needs more than the general 3-month/
+      documentation rule; injectables; Revenue's full prohibitions PDF and
+      DAFM's animal-products guide were located but not read in full.
+- [x] **Malaysia (MY)** — 11 customs rows. Entry rows exist only for GB, CA
+      and CN because Malaysia's Immigration Department per-country table
+      wouldn't parse; a follow-up using Malaysian embassy (kln.gov.my) pages
+      was run for the other nationalities (see below if merged). Still open:
+      Israel (Israeli passport holders aren't admitted as ordinary visitors —
+      no primary source stating the current rule); the CN visa exemption's end
+      date (sources conflict between 31 Dec 2026 and a five-year term);
+      tobacco duty-free quantity (current Customs page lists none; the old
+      200-cigarette figure is unconfirmed); vape devices without liquid and
+      Act 852's own text; CBD; injectables; drone fee/registration figures are
+      secondary-sourced only.
+- [x] **Georgia (GE)** — 17 entry rows (verified against Government Ordinance
+      No. 255, the visa-free list on matsne.gov.ge: 14 roster nationalities
+      may stay one full year; Chile, China and India are not on it) and 10
+      customs rows. Alcohol, tobacco, e-liquid (50 ml) and the GEL 30,000 cash
+      threshold are quoted from the Revenue Service's own brochure. Cannabis
+      is sourced to Annex 1 List I of the narcotics law (cannabis, extracts,
+      oil and resin are "strictly restricted"); the 2018 Constitutional Court
+      ruling covers private consumption only. Still open: ordinary
+      (non-controlled) prescription medicine, CBD-only products and injectables
+      (no official traveller guidance found); the Revenue Service's traveller
+      FAQ pages for plants/animals, weapons and currency only render in a
+      browser (JavaScript), and reading them would firm up the food, weapons
+      and drone rows (which currently only establish that permits apply);
+      which named drugs are on List 1; exact e-visa terms for CL/CN/IN.

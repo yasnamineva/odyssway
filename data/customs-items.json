@@ -7250,5 +7250,272 @@
     "verified_at": "2026-09-21",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
+  },
+  {
+    "slug": "alcohol-ge",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "vodka",
+      "whisky",
+      "liquor",
+      "chacha"
+    ],
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free for passengers aged 18 or over, in hand luggage/baggage for personal or family use or as a gift, per 30 calendar days: 1 litre of spirits of 22% ABV or higher (or undenatured ethyl alcohol of 80% or higher), OR 2 litres of alcoholic beverages under 22% ABV, OR a combination of those two kinds within their percentage shares (beer and wine excepted from the combination); PLUS 4 litres of wine AND 16 litres of beer.",
+      "quantity": "1 L spirits (22%+) or 2 L under 22%; plus 4 L wine and 16 L beer"
+    },
+    "notes": "Quoted from the Revenue Service's own brochure. It states the allowances \"per 30 calendar days\" for goods entering through land and marine checkpoints; the air-checkpoint paragraph prints \"per calendar days\" (the \"30\" appears to have been dropped), and the brochure states the same volumes for air, so treat 30 days as the intended period but confirm at the airport if you're near the limit. Anything above the allowance is dutiable and must be declared.",
+    "legal_source": {
+      "name": "Revenue Service of Georgia — Exemption from import duties and the obligation of declaring goods carried by an individual (customs brochure)",
+      "url": "https://www.rs.ge/Media/Default/Images/CustomsBrochures/Exemption%20of%20goods%20from%20duties%20and%20declaring.pdf"
+    },
+    "destination": "GE",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-ge",
+    "names": [
+      "cigarettes",
+      "tobacco",
+      "cigars",
+      "cigarillos",
+      "heated tobacco",
+      "heat sticks",
+      "iqos",
+      "smoking"
+    ],
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free for passengers aged 18 or over, in hand luggage/baggage for personal or family use or as a gift, per 30 calendar days on land/sea entries (the air paragraph gives the same quantities): 200 cigarettes, OR 50 cigars, OR 50 cigarillos, OR 200 heated-tobacco sticks, OR 10 tobacco capsules, OR 250 g of other tobacco (raw tobacco excluded), or a combination as long as the percentage shares of each product's limit total no more than 100%.",
+      "quantity": "200 cigarettes, or 50 cigars, or 50 cigarillos, or 200 heated-tobacco sticks, or 250 g other tobacco"
+    },
+    "notes": "Quoted from the Revenue Service's own brochure. Electronic-cigarette liquid has its own separate 50 ml allowance inside the same tobacco allowance — see the e-cigarettes entry for Georgia.",
+    "legal_source": {
+      "name": "Revenue Service of Georgia — Exemption from import duties and the obligation of declaring goods carried by an individual (customs brochure)",
+      "url": "https://www.rs.ge/Media/Default/Images/CustomsBrochures/Exemption%20of%20goods%20from%20duties%20and%20declaring.pdf"
+    },
+    "destination": "GE",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-ge",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping liquid",
+      "e-liquid",
+      "vape juice",
+      "electronic cigarette"
+    ],
+    "category": "e_cigarettes",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Within the same passenger tobacco allowance (aged 18+, hand luggage/baggage, personal or family use or as a gift), the Revenue Service's brochure allows 50 ml of electronic-cigarette liquid duty-free per 30 calendar days. E-cigarette liquid is expressly excluded from the general GEL 500 / GEL 3,000 goods-value allowance and from the food allowance, so it can't be brought in under those.",
+      "quantity": "50 ml of e-liquid per 30 days"
+    },
+    "notes": "This covers the customs duty-free allowance for e-liquid only. The brochure doesn't address vaping devices themselves, nicotine strength limits, or Georgia's domestic tobacco-control rules for e-cigarettes, and no separate Georgian import ban on devices was found in this pass — confirm devices and pods with Georgian Customs if you're carrying more than a personal setup.",
+    "legal_source": {
+      "name": "Revenue Service of Georgia — Exemption from import duties and the obligation of declaring goods carried by an individual (customs brochure)",
+      "url": "https://www.rs.ge/Media/Default/Images/CustomsBrochures/Exemption%20of%20goods%20from%20duties%20and%20declaring.pdf"
+    },
+    "destination": "GE",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-ge",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "cheques",
+      "checks",
+      "securities",
+      "lari",
+      "gel"
+    ],
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "An individual must declare cash (national and/or foreign currency), cheques and/or securities with a total sum of more than GEL 30,000 (or the equivalent in another currency) when importing or exporting them.",
+      "quantity": "GEL 30,000 or equivalent"
+    },
+    "notes": "The threshold applies to both bringing money in and taking it out, and covers cheques and securities as well as banknotes. Quoted from the Revenue Service's brochure ('When is an individual obliged to declare goods?'). Penalties for failing to declare aren't stated in the brochure, so none are asserted here.",
+    "legal_source": {
+      "name": "Revenue Service of Georgia — Exemption from import duties and the obligation of declaring goods carried by an individual (customs brochure)",
+      "url": "https://www.rs.ge/Media/Default/Images/CustomsBrochures/Exemption%20of%20goods%20from%20duties%20and%20declaring.pdf"
+    },
+    "destination": "GE",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "destination": "GE",
+    "category": "medication",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified",
+    "slug": "controlled-medication-ge",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "stimulant medication",
+      "adderall",
+      "amphetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "diazepam",
+      "codeine"
+    ],
+    "verdict": "depends",
+    "limits": {
+      "description": "\"A person can bring into the territory of Georgia 31 days’ supply of narcotic drugs and psychotropic substances for personal use (except of “narcotic drugs strictly restricted for free circulation” included in the list 1 of annex 1 of law of Georgia on “Narcotic drugs, psychotropic substances, Precursors and Narcological Assistance”).\" You must present, together with your customs declaration: a photocopy of the prescription translated into English and certified by an apostille (name, surname, gender and age, diagnosis, brand and generic names, dosage form, quantity, method of use and duration of treatment); the prescribing physician’s certificate, translated into English and certified per the law of the departure country; and a document signed and sealed by an authorised person and apostilled (authority name, address, contact person, phone, country of destination)."
+    },
+    "notes": "Customs checks the documents against what you carry, signs and seals them and returns them to you; keep them for your whole stay (handing them in on departure is not mandatory). Anything on List 1 of Annex 1 cannot be brought in even with a prescription. Which specific brand-name drugs (e.g. amphetamine-based stimulants) sit on List 1 versus the permitted lists was not confirmed in this pass — the Ministry of Foreign Affairs publishes the schedules separately, so check your exact medicine against them before travel. The Revenue Service’s brochure also lists narcotic drugs, psychotropic substances and \"medications subject to the special control\" among goods needing permits/certificates.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Georgia — Bringing Narcotic Drugs and Psychotropic Substances to Georgia (official guidance PDF)",
+      "url": "https://mfa.gov.ge/pfiles/files/Bringing%20Narcotic%20Drugs%20And%20Psychotropic%20Substances%20To%20Georgia.pdf"
+    }
+  },
+  {
+    "destination": "GE",
+    "category": "cbd_cannabis",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified",
+    "slug": "cannabis-ge",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hash",
+      "hashish"
+    ],
+    "verdict": "prohibited",
+    "notes": "Georgia's Constitutional Court ruled on 30 July 2018 that consuming cannabis is protected private conduct, and a follow-up law limits consumption to adults 21+ at home — but that did not legalise acquiring, carrying or importing it, and the substances above remain on the strictly-restricted list. Press reporting on the follow-up law (OC Media) describes continuing penalties for possession and acquisition: fines from GEL 500 for a first offence, criminal fines of at least GEL 1,500 or community work for repeats within a year, GEL 800–1,500 for public consumption, and 6–10 years' imprisonment for supplying under-21s. Do not bring cannabis into Georgia.",
+    "legal_source": {
+      "name": "Law of Georgia on Narcotic Drugs, Psychotropic Substances, Precursors and Narcological Assistance — Annex 1 List I and Art. 30(4) (matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/1670322"
+    },
+    "limits": {
+      "description": "Cannabis (flowering or fruiting tops), cannabis extracts and tinctures, cannabis oil and cannabis resin are all listed in Annex 1, List I of Georgia's narcotics law — the list of \"narcotic drugs strictly restricted for free circulation.\" The Ministry of Foreign Affairs' traveller guidance excludes List 1 substances from the 31-day personal-supply allowance that applies to prescribed narcotic medicines, and under Art. 30(4) narcotic drugs brought in without a preliminary permit are returned at the supplier's expense."
+    }
+  },
+  {
+    "destination": "GE",
+    "category": "food_animal",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified",
+    "slug": "meat-dairy-ge",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "sausage",
+      "animal products",
+      "pets"
+    ],
+    "verdict": "depends",
+    "limits": {
+      "description": "The Revenue Service brochure lists \"Plant and / or animal, their parts or derivatives\" among the goods for which permits and/or certificates must be submitted additionally at customs (it applies to any import that is restricted or requires a permit or license, which must be declared)."
+    },
+    "notes": "The brochure gives no personal-luggage quantity or exemption and doesn’t say which meat or dairy products are covered, so this row only establishes that animal products need permits/certificates in principle. The National Food Agency issues the veterinary-control import permits (reported as valid for one month, applied for electronically); its traveller-specific guidance and the Revenue Service’s \"Plants and Animals\" FAQ page are not readable without a browser, so confirm with the National Food Agency before bringing meat or dairy.",
+    "legal_source": {
+      "name": "Revenue Service of Georgia — customs brochure \"Exemption of goods from duties and declaring\" (section: goods requiring permits and/or certificates)",
+      "url": "https://www.rs.ge/Media/Default/Images/CustomsBrochures/Exemption%20of%20goods%20from%20duties%20and%20declaring.pdf"
+    }
+  },
+  {
+    "destination": "GE",
+    "category": "food_plant",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified",
+    "slug": "fresh-produce-ge",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds",
+      "flowers",
+      "fresh produce"
+    ],
+    "verdict": "depends",
+    "limits": {
+      "description": "The Revenue Service brochure lists \"Plant and / or animal, their parts or derivatives\" among the goods for which permits and/or certificates must be submitted additionally at customs (any import that is restricted or requires a permit or license must be declared)."
+    },
+    "notes": "No personal-luggage quantity or exemption is stated, and the brochure doesn’t name which plant products are covered. Phytosanitary import permits are issued by the National Food Agency (reported validity up to 6 months); its traveller guidance and the Revenue Service’s \"Plants and Animals\" FAQ page could not be read, so check with the National Food Agency before bringing fruit, vegetables, seeds or plants.",
+    "legal_source": {
+      "name": "Revenue Service of Georgia — customs brochure \"Exemption of goods from duties and declaring\" (section: goods requiring permits and/or certificates)",
+      "url": "https://www.rs.ge/Media/Default/Images/CustomsBrochures/Exemption%20of%20goods%20from%20duties%20and%20declaring.pdf"
+    }
+  },
+  {
+    "destination": "GE",
+    "category": "weapons",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified",
+    "slug": "weapons-ge",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition",
+      "knife",
+      "explosives",
+      "pepper spray"
+    ],
+    "verdict": "depends",
+    "limits": {
+      "description": "The Revenue Service brochure lists \"Weapons or explosive\" among the goods for which permits and/or certificates must be submitted at customs, and any import that is restricted or needs a permit must be declared."
+    },
+    "notes": "In practice this means firearms, ammunition and explosives cannot simply be carried in; a permit from the competent Georgian authority is required first. The brochure doesn’t say which authority issues permits for visitors, or how knives, air weapons and self-defence sprays are treated — don’t assume an ordinary tourist can obtain a permit, and check with Georgian authorities before travelling with anything that could be classed as a weapon.",
+    "legal_source": {
+      "name": "Revenue Service of Georgia — customs brochure \"Exemption of goods from duties and declaring\" (section: goods requiring permits and/or certificates)",
+      "url": "https://www.rs.ge/Media/Default/Images/CustomsBrochures/Exemption%20of%20goods%20from%20duties%20and%20declaring.pdf"
+    }
+  },
+  {
+    "destination": "GE",
+    "category": "drones",
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified",
+    "slug": "drones-ge",
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas"
+    ],
+    "verdict": "depends",
+    "limits": {
+      "description": "Georgia’s Civil Aviation Agency drone portal uses the EU-style class system (class C0: MTOM under 250 g; C2: under 4 kg; C3/C4: under 25 kg), asks users to \"label your unmanned aircraft with your user registration number before heading out to fly\", limits several classes to \"a maximum attainable height above the take-off point limited to 120 m\", and states that \"Flying UAS within Restricted, Prohibited and Dangerous areas without authorization is not permitted\" (zone information at airspace.gov.ge)."
+    },
+    "notes": "The official portal page does not say who must register, or whether a foreign visitor can register or fly a drone brought from abroad; secondary sources say drones over 250 g need GCAA registration but that is unconfirmed here. Customs also treats high-frequency radio-electronic devices and communication equipment as permit goods (Revenue Service brochure) — whether that reaches consumer drones is not stated. Register or check with the Civil Aviation Agency before flying.",
+    "legal_source": {
+      "name": "Georgian Civil Aviation Agency — UAS (drone) portal",
+      "url": "https://uas.gov.ge/EN"
+    }
   }
 ]
