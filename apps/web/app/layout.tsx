@@ -4,6 +4,7 @@ import { getMessages, getTranslations } from "next-intl/server";
 import { Poppins } from "next/font/google";
 import type { ReactNode } from "react";
 import SiteNav from "../components/SiteNav";
+import { SITE_URL } from "../lib/site";
 import "./globals.css";
 
 /** Bold geometric-sans display font — replaces the earlier rounded Baloo 2
@@ -22,8 +23,6 @@ const displayFont = Poppins({
 
 const OFFICIAL_CALCULATOR_URL =
   "https://ec.europa.eu/assets/home/visa-calculator/calculator.htm?lang=en";
-
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.invalid";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("meta");

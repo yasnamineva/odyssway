@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { ComponentType } from "react";
 import { blogPostBySlug, blogPosts } from "../../../lib/blog";
 import { destinationByCode } from "../../../lib/destinations";
+import { SITE_URL } from "../../../lib/site";
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -58,7 +59,6 @@ export default async function BlogPostPage({
     .map((code) => destinationByCode(code))
     .filter((d): d is NonNullable<typeof d> => d !== undefined && d.status === "verified");
 
-  const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.invalid";
   const postUrl = `${SITE_URL}/blog/${post.slug}`;
 
   const jsonLd = {

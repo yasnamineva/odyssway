@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { blogPosts } from "../../../lib/blog";
 import { BRING_CATEGORIES, type BringCategory } from "../../../lib/bring-categories";
+import { destinationSlug } from "../../../lib/bring-pages";
 import { customsItems, destinationByCode, destinations, entryRequirements } from "../../../lib/destinations";
 import { nationalityRules } from "../../../lib/nationalities";
 
@@ -94,12 +95,20 @@ export default async function DestinationPage({ params }: { params: Promise<Para
                 {t(`verdict.${item.verdict}`)}
                 {item.limits && <span className="text-slate-500"> — {item.limits.description}</span>}
                 {item.category in BRING_CATEGORIES && (
-                  <a
-                    href={`/bring/${BRING_CATEGORIES[item.category as BringCategory].slug}`}
-                    className="ml-2 whitespace-nowrap text-xs text-blue-700 underline"
-                  >
-                    {tc("compareEverywhere")}
-                  </a>
+                  <>
+                    <a
+                      href={`/bring/${BRING_CATEGORIES[item.category as BringCategory].slug}/${destinationSlug(dest.name)}`}
+                      className="ml-2 whitespace-nowrap text-xs text-blue-700 underline"
+                    >
+                      {t("itemDetails")}
+                    </a>
+                    <a
+                      href={`/bring/${BRING_CATEGORIES[item.category as BringCategory].slug}`}
+                      className="ml-2 whitespace-nowrap text-xs text-blue-700 underline"
+                    >
+                      {tc("compareEverywhere")}
+                    </a>
+                  </>
                 )}
               </li>
             ))}

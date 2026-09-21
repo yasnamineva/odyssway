@@ -1,21 +1,33 @@
 import type { MetadataRoute } from "next";
 import { blogPosts } from "../lib/blog";
 import { BRING_CATEGORIES } from "../lib/bring-categories";
+import { bringPairs } from "../lib/bring-pages";
 import { countriesVerifiedAt } from "../lib/countries";
-import { customsItems, destinations } from "../lib/destinations";
+import { customsItems, destinations, entryRequirements } from "../lib/destinations";
 import { etias } from "../lib/etias";
 import { publishedEesRecords } from "../lib/ees";
 import { publishedNationalities } from "../lib/nationalities";
 import { publishedOverstayPenalties } from "../lib/overstay-penalties";
-
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.invalid";
+import { SITE_URL as BASE } from "../lib/site";
 
 /** Content pages carry the date their sources were last checked (AGENTS.md §7). */
 const CONTENT_CHECKED = "2026-07-13";
 
+/** Latest ISO date among the given stamps — lastmod should reflect real data changes, not a fixed date. */
+function latest(dates: Array<string | null | undefined>): string {
+  const valid = dates.filter((d): d is string => Boolean(d));
+  return valid.length > 0 ? valid.sort().at(-1)! : CONTENT_CHECKED;
+}
+
+const DATA_LAST_UPDATED = latest([
+  ...customsItems.map((i) => i.verified_at),
+  ...entryRequirements.map((r) => r.verified_at),
+  ...destinations.map((d) => d.verified_at),
+]);
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    { url: `${BASE}/`, lastModified: CONTENT_CHECKED, priority: 0.9 },
+    { url: `${BASE}/`, lastModified: DATA_LAST_UPDATED, priority: 0.9 },
     { url: `${BASE}/trip-check`, lastModified: countriesVerifiedAt, priority: 1 },
     { url: `${BASE}/calculator`, lastModified: countriesVerifiedAt, priority: 0.9 },
     { url: `${BASE}/rules/90-180-rule`, lastModified: CONTENT_CHECKED, priority: 0.8 },
@@ -49,10 +61,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       .filter((d) => d.status === "verified")
       .map((d) => ({
         url: `${BASE}/destinations/${d.code.toLowerCase()}`,
-        lastModified: d.verified_at ?? CONTENT_CHECKED,
+        lastModified: latest([
+          d.verified_at,
+          ...customsItems.filter((i) => i.destination === d.code).map((i) => i.verified_at),
+          ...entryRequirements.filter((r) => r.destination === d.code).map((r) => r.verified_at),
+        ]),
         priority: 0.7,
       })),
-    { url: `${BASE}/bring`, lastModified: CONTENT_CHECKED, priority: 0.5 },
+    { url: `${BASE}/bring`, lastModified: DATA_LAST_UPDATED, priority: 0.5 },
+    ...bringPairs.map((p) => ({
+      url: `${BASE}/bring/${p.itemSlug}/${p.destinationSlug}`,
+      lastModified: p.lastVerified ?? CONTENT_CHECKED,
+      priority: 0.6,
+    })),
     ...Object.entries(BRING_CATEGORIES).map(([category, meta]) => {
       const dates = customsItems
         .filter((i) => i.category === category && i.status === "verified" && i.verified_at)

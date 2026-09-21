@@ -19,6 +19,8 @@ const routes: Array<{ path: string; expectText: string }> = [
   { path: "/ees/data-access/de", expectText: "45 days" },
   { path: "/rules/overstay-penalties/de", expectText: "Aufenthaltsgesetz" },
   { path: "/rules/overstay-penalties/fr", expectText: "CESEDA" },
+  { path: "/bring/e-cigarettes/japan", expectText: "Can you bring e-cigarettes or vapes to Japan?" },
+  { path: "/bring/medication/south-korea", expectText: "Ministry of Food and Drug Safety" },
   { path: "/destinations/us", expectText: "Travelling to United States" },
   { path: "/destinations/gb", expectText: "Travelling to United Kingdom" },
   { path: "/destinations/ca", expectText: "Travelling to Canada" },
@@ -91,7 +93,15 @@ test("changelog lists dated, sourced entries with dataset anchors", async ({ pag
   await page.goto("/changelog");
   await expect(page.locator("#dataset-countries")).toBeVisible();
   await expect(page.locator("#dataset-ees")).toBeVisible();
+  await expect(page.locator("#dataset-customs-items")).toBeVisible();
+  await expect(page.locator("#dataset-destinations")).toBeVisible();
   await expect(page.locator("body")).toContainText("verified by agent:claude-fable-5");
+});
+
+test("unpublished item/destination pairs 404 instead of rendering thin content", async ({ page }) => {
+  // No verified e-cigarettes row exists for Rwanda (the claim couldn't be sourced).
+  const response = await page.goto("/bring/e-cigarettes/rwanda");
+  expect(response?.status()).toBe(404);
 });
 
 test("rules pages link their update history", async ({ page }) => {
@@ -106,6 +116,7 @@ test("sitemap and robots respond", async ({ request }) => {
   expect(sitemap.status()).toBe(200);
   expect(await sitemap.text()).toContain("/rules/90-180-rule");
   expect(await sitemap.text()).toContain("/rules/overstay-penalties");
+  expect(await sitemap.text()).toContain("/bring/e-cigarettes/japan");
   const robots = await request.get("/robots.txt");
   expect(robots.status()).toBe(200);
 });

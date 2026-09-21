@@ -24,6 +24,10 @@ const DATA_FILES = [
   "data/etias.json",
   "data/nationality-rules.json",
   "data/ees.json",
+  "data/destinations.json",
+  "data/entry-requirements.json",
+  "data/customs-items.json",
+  "data/overstay-penalties.json",
 ];
 
 interface ChangelogEntry {
@@ -43,12 +47,22 @@ function git(args: string[]): string {
 function extractStamp(json: string): Pick<ChangelogEntry, "verified_at" | "verified_by" | "source"> {
   try {
     const parsed = JSON.parse(json) as unknown;
-    // Array files carry the stamp per row; envelope files at the top level.
-    const carrier = (Array.isArray(parsed) ? parsed[0] : parsed) as {
+    // Array files carry the stamp per row — use the most recently verified
+    // row (the first row is arbitrary and often months stale); envelope
+    // files carry it at the top level.
+    type Stamped = {
       verified_at?: string | null;
       verified_by?: string | null;
       legal_source?: { name: string; url: string };
-    } | undefined;
+    };
+    const carrier = (
+      Array.isArray(parsed)
+        ? (parsed as Stamped[]).reduce<Stamped | undefined>(
+            (best, row) => ((row.verified_at ?? "") > (best?.verified_at ?? "") ? row : best),
+            undefined,
+          )
+        : parsed
+    ) as Stamped | undefined;
     return {
       verified_at: carrier?.verified_at ?? null,
       verified_by: carrier?.verified_by ?? null,

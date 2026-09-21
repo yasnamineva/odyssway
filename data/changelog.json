@@ -1,5 +1,257 @@
 [
   {
+    "commit": "d2ad20b83874c35e84c2f8ff0e16a68675b0d2ec",
+    "date": "2026-09-19",
+    "dataset": "customs-items",
+    "summary": "Fill medication gap for KR, CN, VN (25/26 destinations, up from 22/26)",
+    "verified_at": "2026-09-19",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Ministry of Agriculture and Rural Affairs & General Administration of Customs of China, Announcement No. 470 — List of Animals, Plants, Their Products and Other Quarantine Materials Prohibited from Being Carried or Mailed into the People's Republic of China (via China-Africa SPS Cooperation Information Network)",
+      "url": "https://www.chinaafricasps.org/zh/spsxx/yqqk/zgjjjyxyhswhdwybml/608451159900229.shtml"
+    }
+  },
+  {
+    "commit": "27d08525ebce203a2f354cbde4d403208f36c50c",
+    "date": "2026-09-19",
+    "dataset": "customs-items",
+    "summary": "Competitor-leads retry: close food_animal/food_plant fully, e_cigarettes to 23/26",
+    "verified_at": "2026-09-19",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Ministry of Agriculture and Rural Affairs & General Administration of Customs of China, Announcement No. 470 — List of Animals, Plants, Their Products and Other Quarantine Materials Prohibited from Being Carried or Mailed into the People's Republic of China (via China-Africa SPS Cooperation Information Network)",
+      "url": "https://www.chinaafricasps.org/zh/spsxx/yqqk/zgjjjyxyhswhdwybml/608451159900229.shtml"
+    }
+  },
+  {
+    "commit": "f5e1ff1f21ab1082b94c8846e0142b93e347eb0c",
+    "date": "2026-09-18",
+    "dataset": "customs-items",
+    "summary": "Retry pass: close most e_cigarettes/food/drones gaps, 4 more overstay countries",
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Decree No. 288/2025/ND-CP (Government of Vietnam) — Management of Unmanned Aircraft and Other Aerial Vehicles, Arts. 4, 6, 21, 22",
+      "url": "https://english.luatvietnam.vn/decree-no-288-2025-nd-cp-dated-november-5-2025-of-the-government-providing-the-management-of-unmanned-aircraft-and-other-aerial-vehicles-418028-doc1.html"
+    }
+  },
+  {
+    "commit": "f5e1ff1f21ab1082b94c8846e0142b93e347eb0c",
+    "date": "2026-09-18",
+    "dataset": "overstay-penalties",
+    "summary": "Retry pass: close most e_cigarettes/food/drones gaps, 4 more overstay countries",
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Narodne novine (Croatia's Official Gazette) — Zakon o strancima (Aliens Act), Art. 253(2)",
+      "url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_151_2347.html"
+    }
+  },
+  {
+    "commit": "5f21898e22707298b2e1b0dbbe03f15a384ac84b",
+    "date": "2026-09-16",
+    "dataset": "customs-items",
+    "summary": "Add food_animal/food_plant rows + build /rules/overstay-penalties/[country]",
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Transport Canada — Getting permission to fly a drone in Canada as a foreign pilot",
+      "url": "https://tc.canada.ca/en/aviation/drone-safety/drone-pilot-licensing/get-permission-special-drone-operations/get-permission-fly-drone-foreign-pilot"
+    }
+  },
+  {
+    "commit": "5f21898e22707298b2e1b0dbbe03f15a384ac84b",
+    "date": "2026-09-16",
+    "dataset": "overstay-penalties",
+    "summary": "Add food_animal/food_plant rows + build /rules/overstay-penalties/[country]",
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Fremdenpolizeigesetz 2005 (FPG) § 120, via JUSLINE Österreich legal database",
+      "url": "https://www.jusline.at/gesetz/fpg/paragraf/120"
+    }
+  },
+  {
+    "commit": "1da324a9bc70f90b379feb620fd3a0c5c5356557",
+    "date": "2026-09-16",
+    "dataset": "customs-items",
+    "summary": "Fill cbd_cannabis (all 25→26 destinations), drones (12 more), e_cigarettes (2 more)",
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Transport Canada — Getting permission to fly a drone in Canada as a foreign pilot",
+      "url": "https://tc.canada.ca/en/aviation/drone-safety/drone-pilot-licensing/get-permission-special-drone-operations/get-permission-fly-drone-foreign-pilot"
+    }
+  },
+  {
+    "commit": "56eb1f0dc9f56366bda662d5ea6c2579a169bb6d",
+    "date": "2026-09-16",
+    "dataset": "customs-items",
+    "summary": "Add 4 drone customs entries (ZA, CA, MX, PH) + fix a validate:data violation",
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Transport Canada — Getting permission to fly a drone in Canada as a foreign pilot",
+      "url": "https://tc.canada.ca/en/aviation/drone-safety/drone-pilot-licensing/get-permission-special-drone-operations/get-permission-fly-drone-foreign-pilot"
+    }
+  },
+  {
+    "commit": "a6d7b595bed88c3962937742d5dc548830a28e3a",
+    "date": "2026-09-14",
+    "dataset": "customs-items",
+    "summary": "Three more genuinely niche, real-search customs items",
+    "verified_at": "2026-09-14",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "gov.uk — Bringing fruit, vegetables, nuts and seeds into Great Britain",
+      "url": "https://www.gov.uk/bringing-food-into-great-britain/fruit-vegetables-nuts-seeds"
+    }
+  },
+  {
+    "commit": "570852c98b906c49cb6712830360df4e58e1064a",
+    "date": "2026-09-14",
+    "dataset": "customs-items",
+    "summary": "Expand customs items into niche-but-real search categories (weapons, drones, wildlife, cash)",
+    "verified_at": "2026-09-14",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "ZATCA (Saudi Zakat, Tax and Customs Authority) — prohibited items for travelers",
+      "url": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Pages/customs-individual/Travel-pages/disclosure-amounts.aspx"
+    }
+  },
+  {
+    "commit": "3847959f788e87a16e889a22dbd64e69b480953c",
+    "date": "2026-09-14",
+    "dataset": "customs-items",
+    "summary": "Fill the cannabis/CBD data gap for 6 of the 9 destinations missing it",
+    "verified_at": "2026-09-14",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "ZATCA (Saudi Zakat, Tax and Customs Authority) — prohibited items for travelers",
+      "url": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Pages/customs-individual/Travel-pages/disclosure-amounts.aspx"
+    }
+  },
+  {
+    "commit": "12f8cc95bdb39b1900ff0e4b882c9b682c2406cd",
+    "date": "2026-09-13",
+    "dataset": "customs-items",
+    "summary": "Expand medication customs coverage: controlled substances + GLP-1/injectables",
+    "verified_at": "2026-09-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Convention Implementing the Schengen Agreement, Art. 75",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02)"
+    }
+  },
+  {
+    "commit": "8ce002a89369bb51e2baf6a42163a89e6e5ef843",
+    "date": "2026-09-11",
+    "dataset": "entry-requirements",
+    "summary": "Re-verify flagged entry-requirement facts (Brazil, Saudi Arabia, Singapore)",
+    "verified_at": "2026-09-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Panrotas (Brazilian travel-trade press, citing Diário Oficial da União exchange-of-notes publication)",
+      "url": "https://www.panrotas.com.br/mercado/destinos/2026/07/brasil-e-japao-prorrogam-isencao-de-vistos-para-turistas-ate-2029_230682.html"
+    }
+  },
+  {
+    "commit": "e5157bfe3e1dd42c3afbacaa1c98225c6040e2f5",
+    "date": "2026-09-03",
+    "dataset": "entry-requirements",
+    "summary": "Expand nationality roster: add China and India",
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Australian Embassy China - Visas and Migration",
+      "url": "https://china.embassy.gov.au/bjng/Visas_and_Migration.html"
+    }
+  },
+  {
+    "commit": "e5157bfe3e1dd42c3afbacaa1c98225c6040e2f5",
+    "date": "2026-09-03",
+    "dataset": "nationality-rules",
+    "summary": "Expand nationality roster: add China and India",
+    "verified_at": "2026-09-03",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Regulation (EU) 2018/1806, Annex I (consolidated version of 30 December 2025, CELEX 02018R1806-20251230)",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018R1806-20251230"
+    }
+  },
+  {
+    "commit": "3bb443f6ca4a29fd9196f1009ef8b46ba9e314cb",
+    "date": "2026-09-02",
+    "dataset": "customs-items",
+    "summary": "Expand Trip Check to 25 destinations; searchable selects; homepage redesign",
+    "verified_at": "2026-09-02",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Direktorat Jenderal Bea dan Cukai (Directorate General of Customs and Excise, Republic of Indonesia) — Barang Penumpang (Passenger Goods)",
+      "url": "https://www.beacukai.go.id/barang-penumpang"
+    }
+  },
+  {
+    "commit": "3bb443f6ca4a29fd9196f1009ef8b46ba9e314cb",
+    "date": "2026-09-02",
+    "dataset": "destinations",
+    "summary": "Expand Trip Check to 25 destinations; searchable selects; homepage redesign",
+    "verified_at": "2026-09-02",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Direktorat Jenderal Imigrasi (Directorate General of Immigration, Republic of Indonesia) — Daftar Subjek VoA, BVK & Calling Visa",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa"
+    }
+  },
+  {
+    "commit": "3bb443f6ca4a29fd9196f1009ef8b46ba9e314cb",
+    "date": "2026-09-02",
+    "dataset": "entry-requirements",
+    "summary": "Expand Trip Check to 25 destinations; searchable selects; homepage redesign",
+    "verified_at": "2026-09-02",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    }
+  },
+  {
+    "commit": "b85f10e5a355e7786d6a82482d4c64ad1313d807",
+    "date": "2026-08-13",
+    "dataset": "customs-items",
+    "summary": "Rebrand to Odyssway; general trip-check platform launch",
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Thai Customs Department — Individual travelers: duty-free allowance and restricted/prohibited goods",
+      "url": "https://www.customs.go.th/list_strc_simple_neted.php?ini_content=individual_160503_03_160905_01&lang=en&left_menu=menu_individual_submenu_01_160421_01"
+    }
+  },
+  {
+    "commit": "b85f10e5a355e7786d6a82482d4c64ad1313d807",
+    "date": "2026-08-13",
+    "dataset": "destinations",
+    "summary": "Rebrand to Odyssway; general trip-check platform launch",
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Ministry of Foreign Affairs of Thailand, Department of Consular Affairs — Visa Exemption Scheme for Tourism and Short-Term Business (\"ผ.60\"), effective 15 July 2024",
+      "url": "https://image.mfa.go.th/mfa/0/zE6021nSnu/0303/%E0%B8%9C.60.pdf"
+    }
+  },
+  {
+    "commit": "b85f10e5a355e7786d6a82482d4c64ad1313d807",
+    "date": "2026-08-13",
+    "dataset": "entry-requirements",
+    "summary": "Rebrand to Odyssway; general trip-check platform launch",
+    "verified_at": "2026-08-13",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Ministry of Foreign Affairs of Thailand, Department of Consular Affairs — List of Countries and Territories entitled to Visa Exemption Scheme for Tourism and Short-Term Business (up to 60 days) (“ผ.60”), effective 15 July 2024",
+      "url": "https://image.mfa.go.th/mfa/0/zE6021nSnu/0303/%E0%B8%9C.60.pdf"
+    }
+  },
+  {
     "commit": "973faf44185d908ae57d2894d941f622e380e04f",
     "date": "2026-07-13",
     "dataset": "ees",

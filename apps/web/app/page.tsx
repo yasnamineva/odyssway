@@ -19,6 +19,7 @@ import {
 import Reveal from "../components/Reveal";
 import { blogPostsByDate } from "../lib/blog";
 import { coveredDestinationCount } from "../lib/destinations";
+import { SITE_URL } from "../lib/site";
 import heroImage from "../public/images/hero-travel.jpg";
 
 const STAT_ICONS = [ScaleIcon, GlobeIcon, ShieldCheckIcon];
@@ -32,8 +33,28 @@ export default async function HomePage() {
   const calculatorBullets = t.raw("home.tools.calculator.bullets") as string[];
   const faqItems = t.raw("faqPage.items") as Array<{ q: string; a: string }>;
 
+  const siteJsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Odyssway",
+      url: SITE_URL,
+      logo: `${SITE_URL}/icon`,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "Odyssway",
+      url: SITE_URL,
+    },
+  ];
+
   return (
     <div className="space-y-6">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
+      />
       <section className="relative -mt-4">
         <div className="relative left-1/2 h-[380px] w-screen -translate-x-1/2 overflow-hidden sm:h-[420px]">
           <Image
@@ -42,14 +63,17 @@ export default async function HomePage() {
             fill
             priority
             sizes="100vw"
-            className="object-cover object-top"
+            className="object-cover object-[50%_40%]"
           />
-          {/* Light wash, not a dark overlay. Kept deliberately faint through
-              the middle of the photo (a moody mountain-ridge shot, darker
-              than the old one) so it stays visible rather than washing out
-              — the fade only really commits in the bottom third, where it
-              blends into the page background for the next section. */}
+          {/* Photo: Pexels 17838012 (Pexels license, free, no attribution
+              required) — a wide landscape shot, so the short full-bleed
+              banner crops to actual peaks instead of empty sky (a portrait
+              photo cropped with object-top did exactly that on desktop).
+              Light wash, not a dark overlay, kept faint through the middle
+              so the photo stays visible; the fade only really commits in the
+              bottom third, where it blends into the page background. */}
           <div className="absolute inset-0 bg-gradient-to-b from-white/25 from-0% via-white/10 via-55% to-slate-50 to-100%" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_75%_60%_at_50%_48%,rgba(255,255,255,0.72),rgba(255,255,255,0.35)_55%,transparent_80%)]" />
           <div className="relative z-10 mx-auto flex h-full max-w-2xl flex-col items-center px-4 pt-8 text-center sm:pt-10">
             <span className="flex h-14 w-14 items-center justify-center rounded-full border-4 border-white bg-white shadow-lg">
               <CompassIcon className="h-6 w-6 text-blue-700" />

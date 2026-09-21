@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { BRING_CATEGORIES, bringCategoryBySlug } from "../../../lib/bring-categories";
+import { destinationSlug } from "../../../lib/bring-pages";
 import { customsItems, destinationByCode } from "../../../lib/destinations";
 
 interface Params {
@@ -109,7 +110,7 @@ export default async function BringItemPage({ params }: { params: Promise<Params
         {[...byDestination.values()].map((d) => (
           <li key={d.code} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
             <a
-              href={`/destinations/${d.code.toLowerCase()}`}
+              href={`/bring/${meta.slug}/${destinationSlug(d.name)}`}
               className="font-display text-base font-bold text-slate-900 hover:underline"
             >
               {d.name}
