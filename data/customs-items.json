@@ -7517,5 +7517,273 @@
       "name": "Georgian Civil Aviation Agency — UAS (drone) portal",
       "url": "https://uas.gov.ge/EN"
     }
+  },
+  {
+    "slug": "alcohol-mv",
+    "names": [
+      "alcohol",
+      "liquor",
+      "wine",
+      "beer",
+      "spirits",
+      "duty free alcohol"
+    ],
+    "destination": "MV",
+    "category": "alcohol",
+    "verdict": "prohibited",
+    "notes": "The airport operator's customs page states: \"All alcohol is confiscated on arrival, including duty-free purchases from departure airports or in-flight\"; prohibited items other than narcotics are released to foreign nationals only when they leave. The Maldives consulate page adds that prior licences are required to import alcohol and that alcohol is only available at tourist resorts and hotels (none is sold in Malé or on inhabited islands). UK FCDO warns you can be arrested and deported for possessing or drinking alcohol, or being intoxicated, outside resorts and on inhabited islands — do not take alcohol out of your resort.",
+    "legal_source": {
+      "name": "Maldives Airports Company — Velana International Airport: Customs & Security, Prohibited & Restricted Items",
+      "url": "https://maldivesairport.com/customs-security"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-mv",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "drugs",
+      "narcotics"
+    ],
+    "destination": "MV",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "The airport operator's customs page: narcotics — \"Zero-tolerance policy. Penalties include life imprisonment. Applies regardless of legal status in the country of origin.\" UK FCDO: \"Possession, trafficking and manufacture of any illegal drugs are serious offences in Maldives and penalties can be severe\" — arrest and detention, long prison sentences, corporal punishment (whipping) in some cases, and the death penalty for the most serious offences. No recreational or medical-cannabis exception for travellers was found, and CBD-specific treatment was not confirmed.",
+    "legal_source": {
+      "name": "Maldives Airports Company — Velana International Airport: Customs & Security, Prohibited & Restricted Items",
+      "url": "https://maldivesairport.com/customs-security"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-mv",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition"
+    ],
+    "destination": "MV",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "notes": "The airport operator's customs page lists under weapons and chemicals: \"Firearms, ammunition, replicas, explosives, fireworks, bladed weapons, toxic substances, and poisons\" — so replicas and bladed weapons are covered, not just firearms. Prohibited items other than narcotics are confiscated and released to foreign nationals only at departure. The Maldives consulate page also states the import of firearms is strictly prohibited.",
+    "legal_source": {
+      "name": "Maldives Airports Company — Velana International Airport: Customs & Security, Prohibited & Restricted Items",
+      "url": "https://maldivesairport.com/customs-security"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prohibited-items-mv",
+    "names": [
+      "pork",
+      "pork products",
+      "idols",
+      "religious items",
+      "bible",
+      "pornography",
+      "pornographic material",
+      "items contrary to islam"
+    ],
+    "destination": "MV",
+    "category": "other",
+    "verdict": "prohibited",
+    "notes": "Airport operator's customs page: pork — \"all pork-based food and products containing pork derivatives\"; pornographic material — \"all forms — printed, digital, or physical. Also includes sex toys\"; religious materials — \"non-Islamic items intended for distribution or public worship\", while \"small personal items for private use such as a worn cross or personal Bible are generally tolerated\". UK FCDO: it is illegal to bring in anything deemed contrary to Islam, including 'idols for worship', bibles, pork and pork products, and alcohol. Resorts serve pork and alcohol; the ban is on bringing them in. Widely cited sources tie the pork ban to the Import Prohibition Act (Law No. 4/1975), which was not read on an official page.",
+    "legal_source": {
+      "name": "Maldives Airports Company — Velana International Airport: Customs & Security, Prohibited & Restricted Items",
+      "url": "https://maldivesairport.com/customs-security"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-mv",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "otc medicine",
+      "prescription drugs"
+    ],
+    "destination": "MV",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "MFDA Guideline on Good Import Practice §4.7: \"Importation of medicines for personal use will be limited to 90 days' supply\"; more than 90 days needs additional documents on the patient's illness history (up to 6 months' supply with them). The medicines \"should be accompanied by a valid prescription (not older than 3 months from the prescribed date) from a registered medical practitioner\", stating the patient's full name and address, prescribed date, indication, medicine name (generic/brand), dosage form, strength, dosage, duration of treatment, and the doctor's name, registration number, signature and official seal."
+    },
+    "notes": "The airport operator's customs page: prescription medication \"may be imported for personal use with a valid prescription or doctor's letter issued by a registered medical practitioner\", in original pharmacy packaging with clear labelling and \"not in excessive amounts relative to your time in the Maldives\"; carrying it without valid documentation may lead to confiscation or investigation. \"Common over-the-counter medication (paracetamol, ibuprofen, antihistamines, anti-malarials) does not require documentation.\" The 90-day figure and prescription details come from the MFDA import guideline, which is written for importers as well as individuals — check with MFDA for anything beyond a routine supply.",
+    "legal_source": {
+      "name": "Maldives Food and Drug Authority — Guideline on Good Import Practice (MTG/RE-IP/GLN-TE 007, 13.02.2020), §§4.7–4.9",
+      "url": "https://health.gov.mv/storage/uploads/50wNdLqA/bixuazbn.pdf"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-mv",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "vyvanse",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "codeine",
+      "tramadol",
+      "oxycodone",
+      "opioid painkiller"
+    ],
+    "destination": "MV",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "MFDA Guideline §4.9.1: \"Importation of controlled drug for prescription should be limited to 30 days' supply, for patients with chronic illness can be of maximum 90 days' supply\"; more than three months needs documents on the patient's illness history with a valid prescription, and a controlled-drug prescription is valid for 90 days from the prescribed date. §4.8.2: \"It is an offense to import any controlled drug into Maldives without obtaining the import certificate from MFDA\", and controlled medicinal products may not be imported by post."
+    },
+    "notes": "The airport operator's customs page: \"Controlled substances — including opioids, benzodiazepines, and stimulants — require particular documentation. Some substances that are legal by prescription in the country of origin may be controlled in the Maldives.\" The MFDA guideline requires an MFDA import certificate/authorization for controlled drugs and channels bulk imports through designated importers; how that applies to a traveller's personal supply is not spelled out, so contact MFDA before travelling with any narcotic or psychotropic medicine (that includes ADHD stimulants and benzodiazepines). UK FCDO: carry a doctor's prescription and check Maldivian regulations in advance. Drug offences carry severe penalties.",
+    "legal_source": {
+      "name": "Maldives Food and Drug Authority — Guideline on Good Import Practice (MTG/RE-IP/GLN-TE 007, 13.02.2020), §§4.7–4.9",
+      "url": "https://health.gov.mv/storage/uploads/50wNdLqA/bixuazbn.pdf"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-mv",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "smoking tobacco",
+      "duty free cigarettes"
+    ],
+    "destination": "MV",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Effective 9 November 2024, only travellers on a tourist visa may import limited tobacco for personal use, duty-exempt: \"Up to 200 cigarettes, or 25 cigars, or 250 grams of tobacco.\" Quantities above that \"will be retained by Customs for a maximum of 30 days\" and can be collected at the Velana International Airport departure customs counter before leaving."
+    },
+    "notes": "Per the Maldives Customs Service circular addressed to all passengers on a tourist visa. Tobacco brought by travellers who are not on a tourist visa that doesn't meet the Ministry of Health's labelling requirements is confiscated. Tobacco is one item: vaporizers are treated separately (see the e-cigarettes entry).",
+    "legal_source": {
+      "name": "Maldives Customs Service — Circular 14-VDS/CIR/2024/2 (9 Nov 2024): Revised Guidelines on Importation of Tobacco Products by Travellers",
+      "url": "https://www.customs.gov.mv/d/Circular%202_2024%20-%20Revised%20Guidelines%20on%20Importation%20of%20Tobacco%20Products%20by%20Travellers.pdf"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-mv",
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas"
+    ],
+    "destination": "MV",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Flying a drone needs prior approvals, reviewed \"case-by-case\" by the Maldives Civil Aviation Authority: \"Depending on the area of operation, you may need approval from Maldives National Defence Force\" (MNDF); \"once approval has been obtained from MNDF, apply to the CAA\" with the application form and a copy of the MNDF permit; plus \"approval from any other relevant parties (e.g. resorts, island or city council)\". Operations must stay below 400 feet. The airport operator's customs page: \"Permits required in advance from MCAA + MNDF. Drones without permits may be held at customs.\""
+    },
+    "notes": "This CAA page sets out the flying-permit procedure only. It does not say whether tourists or small recreational drones are exempt, how far ahead to apply, what the penalties are, or how customs treats a drone in luggage, so none of that is asserted from the CAA page. The airport operator's customs page adds: \"Permits required in advance from MCAA + MNDF. Drones without permits may be held at customs\", and lists drones without permits among items given a retrieval receipt at the border.",
+    "legal_source": {
+      "name": "Maldives Civil Aviation Authority — Flying Remotely Piloted Aircraft (Drones) in the Maldives",
+      "url": "https://www.caa.gov.mv/operations/flying-remotely-piloted-aircraft-(drones)-in-the-maldives"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-mv",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping device",
+      "vaping liquid",
+      "e-liquid",
+      "vaporizer",
+      "disposable vape"
+    ],
+    "destination": "MV",
+    "category": "e_cigarettes",
+    "verdict": "prohibited",
+    "notes": "Airport operator's customs page: \"Since 15 November 2024, the Maldives has banned the import of all vaping devices — both disposable and reusable — e-cigarettes, and related accessories. Devices and accessories are confiscated at customs. A receipt is issued and items can be collected on departure.\" Vaporizers appear on its list of retrievable items given a receipt. Press reports say the ban was extended on 15 December 2024 to possession and use inside the country; that extension was not confirmed on an official page in this pass.",
+    "legal_source": {
+      "name": "Maldives Airports Company — Velana International Airport: Customs & Security, Prohibited & Restricted Items",
+      "url": "https://maldivesairport.com/customs-security"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-mv",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "foreign currency",
+      "us dollars"
+    ],
+    "destination": "MV",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Passengers carrying currency over US$10,000 use the red channel to declare it: the airport operator's customs page lists \"currency over $10,000\" among goods to declare at Customs."
+    },
+    "notes": "Press reports say the threshold was lowered from US$20,000 to US$10,000 in January 2021 and stems from the Prevention of Money Laundering and Financing of Terrorism Act (Law No. 10/2014), covering any currency including rufiyaa; the law itself and whether the figure is 'more than' or 'at least' US$10,000 were not read on an official page. There is no cap on how much foreign currency you may bring in, only the declaration duty.",
+    "legal_source": {
+      "name": "Maldives Airports Company — Velana International Airport: Customs & Security, Prohibited & Restricted Items",
+      "url": "https://maldivesairport.com/customs-security"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-mv",
+    "names": [
+      "plants",
+      "seeds",
+      "flowers",
+      "cut flowers",
+      "live plants",
+      "planting seeds",
+      "coconut"
+    ],
+    "destination": "MV",
+    "category": "food_plant",
+    "verdict": "depends",
+    "limits": {
+      "description": "Under the Plant Quarantine Regulation, \"all plants, parts of plants, plant products\" must be imported in accordance with the regulation (§3); plants and seeds brought for planting or ornamental purposes must be disease-free, clean of sand and water, correctly packed and labelled, and accompany a phytosanitary certificate. The regulation states that \"raw flora and bouquets and garlands made from fresh flora weighing less than 500 grams may be imported without a phytosanitary certificate\". Prohibited outright (§9): \"all parts of Maldivian coconut trees (cocos nucifera) except timber\", any plant prohibited by other law, and FAO-listed invasive species."
+    },
+    "notes": "This is a 2008 regulation aimed at plant imports generally; it does not say how a traveller's personal luggage is treated, and it says nothing specific about fresh fruit or vegetables brought as food. Whether it has since been amended was not checked. Treat live plants, seeds and unusual plant material as needing prior approval from the Plant and Animal Quarantine Unit and contact MFDA before bringing any.",
+    "legal_source": {
+      "name": "Maldives Plant Quarantine Regulation (Ministry of Fisheries, Agriculture and Marine Resources, 2008), §§3–9 — copy hosted by Julius Kühn-Institut from the FAOLEX record",
+      "url": "https://pflanzengesundheit.julius-kuehn.de/dokumente/upload/mv3-2008pqreg_en.pdf"
+    },
+    "verified_at": "2026-09-21",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
   }
 ]

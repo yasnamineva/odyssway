@@ -2365,17 +2365,38 @@ Albania, Sri Lanka, Qatar, Jordan, Colombia, Tanzania, Costa Rica.
       from non-Schengen countries needs more than the general 3-month/
       documentation rule; injectables; Revenue's full prohibitions PDF and
       DAFM's animal-products guide were located but not read in full.
-- [x] **Malaysia (MY)** — 11 customs rows. Entry rows exist only for GB, CA
-      and CN because Malaysia's Immigration Department per-country table
-      wouldn't parse; a follow-up using Malaysian embassy (kln.gov.my) pages
-      was run for the other nationalities (see below if merged). Still open:
-      Israel (Israeli passport holders aren't admitted as ordinary visitors —
-      no primary source stating the current rule); the CN visa exemption's end
-      date (sources conflict between 31 Dec 2026 and a five-year term);
-      tobacco duty-free quantity (current Customs page lists none; the old
-      200-cigarette figure is unconfirmed); vape devices without liquid and
-      Act 852's own text; CBD; injectables; drone fee/registration figures are
-      secondary-sourced only.
+- [x] **Malaysia (MY)** — 13 entry rows and 11 customs rows. Malaysia's
+      Immigration Department per-country table wouldn't parse, so entry rows
+      come from Malaysian embassy pages (kln.gov.my) and each nationality's
+      own foreign ministry: GB 90, CA 90, CN 30, JP 90, SG 30, IN 30 (waiver
+      expires 31 Dec 2026), MX 30, KR 90, AR 90, CL 30 (embassy says "less
+      than 30 days"), AU 90, US 90, BR 90. The AU, US and BR figures came from
+      search extracts because direct fetches failed, and the row notes say so.
+      Still open: NZ (no usable official text); UA (absent from the
+      visa-required list, but no Ukraine-specific statement); Israel (Israeli
+      passport holders aren't admitted as ordinary visitors — no primary
+      source stating the current rule); the CN exemption's end date (sources
+      conflict between 31 Dec 2026 and a five-year term); tobacco duty-free
+      quantity (current Customs page lists none; the old 200-cigarette figure
+      is unconfirmed); vape devices without liquid and Act 852's own text;
+      CBD; injectables; drone fee/registration figures are secondary-sourced
+      only.
+- [x] **Maldives (MV)** — 16 entry rows (free 30-day visa on arrival for
+      every roster nationality except Israel, whose passport holders are
+      barred — no row) and 11 customs rows. Alcohol is confiscated on arrival
+      even if duty-free, vaping devices have been banned since 15 Nov 2024,
+      pork/pornography/non-Islamic religious items are prohibited, and
+      narcotics carry up to life imprisonment (all quoted from the Velana
+      airport operator's customs page). Tobacco (200 cigarettes / 25 cigars /
+      250 g, tourists only, from 9 Nov 2024) is from a Maldives Customs Service
+      circular; medication limits are from the Food and Drug Authority's import
+      guideline. Still open: CBD, injectables and a separate meat/dairy row;
+      customs.gov.mv pages are behind a bot challenge; the cash threshold
+      (US$10,000) is implied by the airport page and press reports, not
+      stated as a formal rule on an official page; the produce row rests on
+      a 2008 plant-quarantine regulation that doesn't address personal
+      luggage; the consulate page used for entry rows is dated (6-month
+      passport validity vs FCDO's 1 month after arrival — both noted).
 - [x] **Georgia (GE)** — 17 entry rows (verified against Government Ordinance
       No. 255, the visa-free list on matsne.gov.ge: 14 roster nationalities
       may stay one full year; Chile, China and India are not on it) and 10

@@ -33,9 +33,10 @@ const REGION_COLORS: Record<string, string> = {
 };
 const FALLBACK_COLOR = "#8298b3";
 const SCHENGEN_KEY = "Schengen Area";
-/** Polygons smaller than this (steradians) are a few pixels wide at this scale —
- * present but easy to miss — so they also get a halo ring. */
-const TINY_AREA = 0.0007;
+/** Polygons smaller than this (steradians, roughly under 100,000 km²) are a few
+ * pixels wide at this scale — present but easy to miss (Ireland, Georgia, the
+ * UAE, Rwanda) — so they also get a halo ring. */
+const TINY_AREA = 0.002;
 
 /**
  * "Where Trip Check covers" — every verified non-Schengen destination filled
