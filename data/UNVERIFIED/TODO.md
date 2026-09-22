@@ -2268,6 +2268,35 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
         Not shipped — the decree's own text still hasn't been read
         directly by any pass.
 
+- [x] **Serbia (RS)** — 17 entry rows (all from the Foreign Ministry's
+      per-nationality visa-regime pages, most on a genuine 90-day-in-180
+      rolling window, not a flat entry limit) and 12 customs rows, 10 of them
+      quoted directly from Customs' tourist FAQ (200 cigarettes-equivalent
+      tobacco allowance excludes snus, which is banned outright; e-cigarettes
+      and nicotine pouches allowed for personal use with no stated numeric
+      cap). Cannabis and CBD are sourced to a law firm's country guide (CMS
+      Expert Guides) rather than Serbia's own statute text — the EU Drugs
+      Agency's more authoritative country page 403'd on every attempt to
+      reach it directly. South Korea's page states a flat 90 days with no
+      180-day reference (may be a page omission, not a different rule);
+      China's 30-day page is dated 2018 but was reconfirmed live and current.
+      Still open: injectables, a plant-specific produce rule, and the
+      drone-model exemption list.
+- [x] **Taiwan (TW)** — 16 entry rows (10 nationalities get 90 days, SG/MY
+      get 30, India gets a 30-day pre-approved e-authorization; mainland
+      China omitted — separate permit system) and 12 customs rows, all
+      directly quoted from Taiwan government pages. Two notable facts: NT$
+      and RMB have hard legal caps that can't be brought in even if declared
+      (NT$100,000 / RMB 20,000), unlike other currencies which have no cap
+      once declared above US$10,000; CBD is treated far more strictly than
+      the US/EU (10ppm THC threshold vs 2,000-3,000ppm elsewhere), with no
+      approved personal-import pathway at all. One citation URL (cash-tw) was
+      double-checked and confirmed correct after two WebFetch calls
+      returned no matching text on it — a live-fetch flake, not a bad
+      citation. Brazil/Mexico/Argentina/Ukraine are recorded as
+      visa-required by confirmed absence from every exemption list BOCA
+      publishes, not an explicit "visa required" sentence — the rows say so.
+
 ## Done (2026-09-19) — `medication` gap fill (Nigeria, Vietnam, China, South Korea)
 
 Per AGENTS.md §14's wedge note, "niche/controlled medication" is this

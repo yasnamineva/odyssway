@@ -7785,5 +7785,613 @@
     "verified_at": "2026-09-21",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
+  },
+  {
+    "slug": "alcohol-rs",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer",
+      "whiskey"
+    ],
+    "destination": "RS",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Quoted directly from Customs: \"1 liter of spirits or 1 liter of sparkling and liqueur wines or suitable combination of mentioned drinks and 1 liter of other wines\" may be brought duty-free as personal luggage. Beer and olive oil have no precisely defined quantity, but Customs states it \"must be obviously intended for personal use and not for resale.\""
+    },
+    "notes": "This is the personal-luggage exemption, not a hard cap — goods above the duty-free allowance can still be brought in but are subject to duty/VAT (10% flat rate at the border if the total value of dutiable goods is under EUR 3,000; regular customs procedure above that).",
+    "legal_source": {
+      "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
+      "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-rs",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "cigarillos",
+      "rolling tobacco",
+      "smokeless tobacco",
+      "snus",
+      "heated tobacco"
+    ],
+    "destination": "RS",
+    "category": "tobacco",
+    "verdict": "depends",
+    "limits": {
+      "description": "Quoted directly from Customs: \"50 cigarettes, 25 cigarillos (cigars up to 3g), 10 cigars, 50g of tobacco or suitable combination of all mentioned products.\" This covers cut tobacco, pipe tobacco, hookah tobacco, chewing tobacco, snuff, and heated (non-burning) tobacco products. Oral tobacco (snus) is explicitly excluded: \"tobacco for oral use (snus) whose import and distribution in the Republic of Serbia is prohibited.\""
+    },
+    "notes": "Marked \"depends\" because the allowance covers most tobacco forms but snus specifically is prohibited outright, not just capped. Above the allowance, duty/VAT applies (10% flat rate under EUR 3,000 total dutiable value; regular procedure above that).",
+    "legal_source": {
+      "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
+      "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-rs",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping liquid",
+      "e-liquid",
+      "electronic cigarette",
+      "nicotine pouches"
+    ],
+    "destination": "RS",
+    "category": "e_cigarettes",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Quoted directly from Customs: passengers \"are also allowed to carry related tobacco products in their luggage in quantities for personal use (electronic cigarettes, vapes, nicotine pouches and hookah aromas)\". No specific numeric limit (device count or e-liquid volume) is given — only the general \"personal use, not for resale\" standard that applies to the whole tobacco-products allowance."
+    },
+    "notes": "Oral nicotine pouches are listed together with e-cigarettes/vapes as allowed; this is separate from snus (smokeless tobacco for oral use), which is the one tobacco-related product Customs explicitly prohibits.",
+    "legal_source": {
+      "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
+      "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-rs",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "euros",
+      "dinars"
+    ],
+    "destination": "RS",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Quoted directly from Customs: \"You may bring into Serbia as much money as you wish, but if it is EUR 10.000 or more (in dinars or other foreign currency) your obligation is to DECLARE it to Customs, the same as you would do when entering/leaving EU.\" On departure, all passengers may take out up to EUR 10,000 freely; Serbian residents may not exceed that without evidence of prior import/withdrawal, and non-residents may exceed it only with specific receipts (a customs cash-declaration form from entry, a Serbian bank withdrawal receipt, or an exchange-office receipt for RSD obtained via card use in Serbia).",
+      "quantity": "EUR 10,000"
+    },
+    "notes": "Applies per person, including children (Customs FAQ: \"It applies to each person, children included\"). Get and keep the Cash Declaration Form at entry if you're carrying a large sum you might need to take back out — without it, an amount over EUR 10,000 on departure risks seizure. Payment cards can be brought in/out freely with no limit.",
+    "legal_source": {
+      "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
+      "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-rs",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "otc medicine"
+    ],
+    "destination": "RS",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Quoted directly from Customs: medicines may be brought in \"for personal passenger's use and for animals accompanying the passenger, in quantity needed for regular therapy not longer than 15 days. In that case medical opinion won't be necessary.\" For a longer stay, \"a larger quantity of medicines required for the implementation of usual therapy during several months of stay (more than 15 days, but no more than six months)\" is allowed but needs prior approval from \"the competent ministry\" (the Ministry of Health)."
+    },
+    "notes": "Above a 15-day supply, or if the medicine contains a controlled psychoactive substance, or if a single package exceeds 30 dosage units, Customs specifically flags that pre-approval is required — see the dedicated controlled-medication entry for Serbia for that stricter case.",
+    "legal_source": {
+      "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
+      "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-rs",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "vyvanse",
+      "lisdexamfetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "diazepam",
+      "codeine",
+      "opioid painkiller",
+      "stimulant medication"
+    ],
+    "destination": "RS",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Quoted directly from Customs: \"if medicines that you use contain controlled psychoactive substances and/or if their quantity exceeds one package of up to 30 dosage units, you should obtain the approval for import of medicines for personal needs from the competent ministry\" — i.e. the general 15-day/no-approval rule does not apply once a controlled substance is involved; approval from the Ministry of Health is needed regardless of how short the trip is."
+    },
+    "notes": "Customs' own FAQ doesn't name which specific drugs count as \"controlled psychoactive substances\" — that's set by Serbia's Law on Psychoactive Controlled Substances (Zakon o psihoaktivnim kontrolisanim supstancama) schedules, which weren't read directly in this pass. Treat common stimulants (Adderall/Vyvanse/Ritalin) and benzodiazepines (Xanax/Valium) as likely to trigger this approval requirement, and apply for approval before travel rather than assuming a 15-day rule applies.",
+    "legal_source": {
+      "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
+      "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-rs",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish"
+    ],
+    "destination": "RS",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Cannabis is classified as a Schedule I narcotic drug under Serbia's Law on Psychoactive Controlled Substances (Zakon o psihoaktivnim kontrolisanim supstancama); unauthorized production, sale and possession are criminalized under Criminal Code Arts. 246 and 246a, including for small personal-use quantities. There is no legal personal-import pathway or medical-use exception for travelers."
+    },
+    "notes": "This row is sourced to a law firm's country guide (CMS Expert Guides), not Serbia's own statute text directly — the Criminal Code articles and the Psychoactive Controlled Substances Law schedules weren't read verbatim in this pass. Reported penalty range for unauthorized possession of larger/dealing quantities is 3-12 years' imprisonment (Art. 246); simple possession of a small personal-use quantity (Art. 246a(1)) can draw a fine or up to 3 years, with a possibility of exemption from punishment in some cases. Do not bring cannabis into Serbia in any form.",
+    "legal_source": {
+      "name": "CMS Expert Guides — Cannabis Law and Legislation in Serbia",
+      "url": "https://cms.law/en/int/expert-guides/cms-expert-guide-to-a-legal-roadmap-to-cannabis/serbia"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cbd-rs",
+    "names": [
+      "cbd",
+      "cbd oil",
+      "hemp extract"
+    ],
+    "destination": "RS",
+    "category": "cbd_cannabis",
+    "verdict": "depends",
+    "limits": {
+      "description": "Legal hemp cultivation exists in Serbia (fibre, seed and further-propagation use, THC capped at 0.3%, requiring Ministry of Agriculture authorisation), but according to CMS Expert Guides, \"the extraction of CBD oil is not regulated by law\" and Serbia's Commission for Psychoactive Controlled Substances has given an opinion that CBD itself is a psychoactive substance capable of unwanted effects."
+    },
+    "notes": "This is genuinely ambiguous, not a confirmed personal-import rule — sourced to a law firm's country guide (CMS Expert Guides) and a hemp-industry site (Hemppedia), not Serbia's own regulatory text read directly. Given the Commission's stated position, don't assume a CBD product is safe to bring into Serbia just because it's legal where you bought it; treat it with the same caution as cannabis until you've confirmed current status with Serbian authorities.",
+    "legal_source": {
+      "name": "CMS Expert Guides — Cannabis Law and Legislation in Serbia",
+      "url": "https://cms.law/en/int/expert-guides/cms-expert-guide-to-a-legal-roadmap-to-cannabis/serbia"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-rs",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "ham",
+      "sausage"
+    ],
+    "destination": "RS",
+    "category": "food_animal",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Quoted directly from Customs: food \"may only be brought into/taken out of country in reasonable quantities for personal use and in the original manufacturer's wrapping. If you are importing food of animal origin, its quantity is limited to a maximum of one kilogram.\"",
+      "quantity": "1 kg (animal-origin food)"
+    },
+    "notes": "The 1 kg cap applies specifically to food of animal origin (meat, dairy, etc.); it must also be in its original, manufacturer-sealed packaging, not home-made or repackaged.",
+    "legal_source": {
+      "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
+      "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-rs",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds"
+    ],
+    "destination": "RS",
+    "category": "food_plant",
+    "verdict": "depends",
+    "limits": {
+      "description": "Customs' general food rule: goods \"may only be brought into/taken out of country in reasonable quantities for personal use and in the original manufacturer's wrapping.\" Unlike animal-origin food, no numeric cap is stated for plant products in this source, and no phytosanitary-certificate requirement for fresh fruit, vegetables, seeds or live plants is mentioned."
+    },
+    "notes": "This is the general food rule, not a plant-specific one — Customs' tourist FAQ doesn't separately address live plants, seeds for planting, or phytosanitary certificates, so treat this as an open question rather than a confirmed answer for anything beyond ordinary packaged food. Check with Serbian phytosanitary authorities (Ministry of Agriculture, Forestry and Water Management) before bringing live plants or seeds.",
+    "legal_source": {
+      "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
+      "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-rs",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition",
+      "knife"
+    ],
+    "destination": "RS",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "Quoted directly from Customs: \"Passengers are not allowed to carry weapons across the border unless they possess the permit issued by a competent authority\" (the Ministry of Domestic and Foreign Trade). An exception exists for hunting weapons and ammunition, which may be brought in temporarily \"in appropriate quantities\" specifically for organized hunting tours or shooting-sport events."
+    },
+    "notes": "Ordinary tourists have no general route to bring a firearm without a permit obtained in advance. The hunting/shooting-sport exception is narrow — it applies to participation in an organized event, not general recreational carrying. Blades/knives aren't separately addressed in this source.",
+    "legal_source": {
+      "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
+      "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-rs",
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft"
+    ],
+    "destination": "RS",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Quoted directly from Customs: whether a permit is needed to import/export a drone \"depends on whether it, in terms of its technical characteristics, meets the conditions prescribed in the National Control List of Dual Use Items and the National Control List of Weapons and Military Equipment.\" The permit, if needed, is issued by the Ministry of Internal and Foreign Trade. A list of UAV models exempt from the permit requirement exists in the Ministry's own \"Instructions for the identification of UAV\" document, which wasn't read in this pass."
+    },
+    "notes": "This is a customs/export-control classification, not a flight-registration rule — it governs whether your specific drone model can cross the border with or without a permit, based on its technical specifications, not where or how you fly it once in Serbia. If your drone isn't clearly on the exempt list, Customs says to contact the Ministry directly for a classification opinion before travel.",
+    "legal_source": {
+      "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
+      "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-tw",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "whisky",
+      "vodka"
+    ],
+    "destination": "TW",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Inward passengers aged 18 or over may bring in \"alcoholic beverage 1.5 liters or less\" duty-free. Above that, up to a total of 5 liters may be brought in with duty paid. Alcohol from Mainland China is treated more strictly: \"limited to only 1 liter of controlled alcoholic beverage imported from Mainland China\" even within the paid-duty allowance."
+    },
+    "notes": "Passengers exceeding the duty-free limit but within the 5-liter ceiling must use the Red Channel and pay duty rather than being refused entry outright; amounts above 5 liters in total are not addressed on this page.",
+    "legal_source": {
+      "name": "Customs Administration, Ministry of Finance (Taiwan) — Regulations for Inbound Passengers Carrying Tobacco or Liquor",
+      "url": "https://web.customs.gov.tw/en/singlehtml/1865?cntId=cus16_87451_1865"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-tw",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "cigar",
+      "rolling tobacco"
+    ],
+    "destination": "TW",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Passengers aged 20 or over may bring in duty-free: \"200 cigarettes, or 25 cigars, or 1 pound of tobacco, or 200 designated tobacco products\" (the last covering products like heated-tobacco sticks that aren't cigarettes/cigars/loose tobacco)."
+    },
+    "notes": "Passengers under 20 are not entitled to this concession at all. Fines for bringing in undeclared amounts above the allowance: NT$500 per carton of cigarettes, NT$3,000 per pound of tobacco, and NT$4,000 per 25 cigars. Vaping devices and e-liquid are a completely separate, much stricter rule — see the e-cigarettes entry for Taiwan; they are not covered by this tobacco allowance at all.",
+    "legal_source": {
+      "name": "Customs Administration, Ministry of Finance (Taiwan) — Regulations for Inbound Passengers Carrying Tobacco or Liquor",
+      "url": "https://web.customs.gov.tw/en/singlehtml/1865?cntId=cus16_87451_1865"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-tw",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "foreign currency",
+      "renminbi",
+      "RMB",
+      "New Taiwan Dollar"
+    ],
+    "destination": "TW",
+    "category": "cash",
+    "verdict": "depends",
+    "limits": {
+      "description": "Taiwan sets hard caps, not just declaration thresholds, on two currencies: \"Each passenger can't bring more than NT$100,000 with him/her when entering or leaving Taiwan\" and separately \"Renminbi is limited up to RMB$20,000\" — amounts above either cap cannot be brought in at all, even with a declaration. Other foreign currencies work differently: amounts \"in excess of US$10,000 (or its equivalent in other foreign currencies) must be declared,\" but there is no maximum once declared. Negotiable securities with a face value over US$10,000 must also be declared, with no cap."
+    },
+    "notes": "This is a genuinely unusual rule most travelers don't expect: New Taiwan Dollars and Renminbi are capped by law, while every other currency (USD, EUR, etc.) has no cap at all as long as it's declared above the USD 10,000-equivalent threshold. Failing to declare excess declarable currency results in confiscation of the excess portion.",
+    "legal_source": {
+      "name": "Kaohsiung Customs, Ministry of Finance (Taiwan) — Limits on NTD, RMB, Foreign Currency and Negotiable Securities Carried by Passengers",
+      "url": "https://web.customs.gov.tw/ekaohsiung/singlehtml/c718884d9be040dcb652112cdbabad3a?cntId=cb9e98e0aa664b4eb58f638076ddbeef"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-tw",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "otc medicine"
+    ],
+    "destination": "TW",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Non-prescription (OTC) medicine: \"maximum 12 units per type, 36 total units combined\" (bottles/boxes/tubes as packaged). Prescription medicine without a doctor's note or prescription copy: \"restricted to a 2-month supply.\" Prescription medicine with a doctor's note/prescription copy: up to a \"maximum 6-month supply,\" not exceeding the documented reasonable dose."
+    },
+    "notes": "Must be in original packaging and for personal use only — reselling imported personal medication draws a fine of NT$30,000 to NT$2,000,000 under Pharmaceutical Affairs Act Arts. 27 and 92. Narcotic/psychotropic controlled medications follow a stricter, separate rule — see the controlled-medication entry for Taiwan.",
+    "legal_source": {
+      "name": "Ministry of Health and Welfare (Taiwan) — Rules for Bringing Everyday Travel Medication In and Out of the Country",
+      "url": "https://www.mohw.gov.tw/cp-6649-79226-1.html"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-tw",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "vyvanse",
+      "lisdexamfetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "sleeping pills",
+      "zolpidem",
+      "codeine",
+      "morphine",
+      "fentanyl",
+      "stimulant medication"
+    ],
+    "destination": "TW",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "For personal Schedule 1-3 controlled drugs (examples the Ministry gives: sleeping pills like zolpidem, triazolam, flunitrazepam, and opioids like morphine and fentanyl), \"the amount cannot exceed that on the prescription,\" a medical institution certificate or a diagnostic certificate/prescription copy from the attending physician is required, and the total is capped at a 6-month supply. For Schedule 1-3 controlled drugs specifically, travelers may send TFDA \"a declaration and medical diagnostic certificate to apply for a certification document\" in advance under Article 18 of the Enforcement Rules for the Controlled Drugs Act."
+    },
+    "notes": "The Ministry's own guidance does not name ADHD stimulants (methylphenidate/Ritalin, amphetamine-class drugs like Adderall or Vyvanse) specifically — whether they fall under this controlled-drug process or a different one wasn't confirmed in this pass, so don't assume either way; check with TFDA before travelling with any stimulant medication. Controlled drugs must be carried on the person at all times and cannot be sent by mail or courier.",
+    "legal_source": {
+      "name": "Ministry of Health and Welfare (Taiwan) — Pay Attention to Carrying Controlled Drugs Into and Out of a Country",
+      "url": "https://www.mohw.gov.tw/cp-6570-74684-2.html"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-tw",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish"
+    ],
+    "destination": "TW",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "\"Marijuana is still listed under the Category two narcotics in accordance with 'Narcotics Hazard Prevention Act' in Taiwan.\" \"Offenders of manufacturing, transporting, selling, cultivating, transferring, possessing or taking Category two narcotics are subject to life imprisonment or a minimum ten-year fixed-term imprisonment, and may also be subject to a fine of no more than fifteen million New Taiwan dollars.\" There is no recreational or medical exception, and Taiwanese customs authorities have specifically warned travelers not to bring in cannabis products even from countries where cannabis is legal (e.g. Thailand).",
+    "legal_source": {
+      "name": "Taipei Customs, Ministry of Finance (Taiwan) — Taipei Customs Urges the Public Not to Import Cannabis and Its Related Products",
+      "url": "https://web.customs.gov.tw/etaipei/singlehtml/1373?cntId=4a12960866294b029ad6bea2fa4ff4da"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cbd-tw",
+    "names": [
+      "cbd",
+      "cbd oil",
+      "hemp extract",
+      "cannabidiol"
+    ],
+    "destination": "TW",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Taiwan applies an unusually strict THC threshold: if a CBD product's THC content exceeds 10 parts per million (0.001%) — far stricter than the 0.2-0.3% thresholds used in the US, EU, Japan or Thailand — it is classified as a Category 2 narcotic under Appendix 2 of the Narcotics Hazard Prevention Act and treated the same as cannabis itself. Even below that threshold, importing a CBD product without prior Taiwan FDA (TFDA) approval is illegal: \"violating the Pharmaceutical Affairs Act results in imprisonment up to 10 years and a fine up to 100 million NT dollars\" for unauthorized import of an unapproved drug."
+    },
+    "notes": "No CBD-containing product is currently approved for sale in Taiwan, so there is effectively no personal-use import pathway without a doctor's prescription and an advance TFDA application under the Regulations on Management of Medicament Samples and Gifts. Treat any CBD product as high-risk to bring into Taiwan, including hemp-derived products marketed as low-THC elsewhere.",
+    "legal_source": {
+      "name": "Taichung Customs, Ministry of Finance (Taiwan) — Importing CBD Products Without Permission Can Lead to Penalties",
+      "url": "https://web.customs.gov.tw/taichung/singlehtml/274?cntId=523e44c77a674455b2385edfd0c24af3"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-tw",
+    "names": [
+      "meat",
+      "pork",
+      "ham",
+      "bacon",
+      "sausage",
+      "jerky",
+      "dairy",
+      "cheese",
+      "milk"
+    ],
+    "destination": "TW",
+    "category": "food_animal",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "\"Almost all kinds of meat products made from land animals are NOT permitted to carry into Taiwan.\" The fine for bringing in undeclared meat products generally is \"NTD 10,000 to NTD 1,000,000\" under infectious-disease-prevention law. Pork specifically is under a further, harsher rule: Taiwan has \"banned the import of all kinds of pork products from ASF [African Swine Fever]-infected areas,\" with a first-time violation fined at a flat \"NTD 200,000, regardless of nationality,\" rising toward NT$1 million for repeat violations; foreign nationals who don't pay the fine at the border are repatriated."
+    },
+    "notes": "Taiwan detected its first-ever domestic African Swine Fever case in October 2025, so enforcement has tightened further. This page does not separately address dairy products — treat dairy as an open question rather than assuming it's exempt from the general animal-product restriction.",
+    "legal_source": {
+      "name": "Taipei Customs, Ministry of Finance (Taiwan) — What Food Products Can I Bring Into Taiwan (African Swine Fever Prevention)",
+      "url": "https://web.customs.gov.tw/etaipei/singlehtml/1367?cntId=df67c73ce2f449f09c487bf7f3ed88bb"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-tw",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds",
+      "flowers"
+    ],
+    "destination": "TW",
+    "category": "food_plant",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "\"禁止攜帶活植物及其生鮮產品\" (\"Bringing live plants and fresh plant products is prohibited\"), with an exception only for items that separately comply with plant quarantine regulations. Fresh fruit specifically has been banned from passenger baggage since 1 October 1998."
+    },
+    "notes": "Dried plant products (dried flowers, dried vegetables, dried fruit, dried spices) and some seeds (e.g. vegetable and spice seeds) can be brought in after declaring at the quarantine counter and passing inspection — this is a genuinely different, less strict rule than for fresh produce, so don't assume all plant matter is banned. The customs page mentions \"severe penalties\" for violations without stating an exact fine figure; a secondary source (Taiwan Ministry of Agriculture materials) cites NT$3,000 or more, but that specific figure wasn't independently confirmed on an official page in this pass.",
+    "legal_source": {
+      "name": "Taipei Customs, Ministry of Finance (Taiwan) — Agricultural, Livestock, Fishery Products and Food",
+      "url": "https://web.customs.gov.tw/taipei/singlehtml/3392?cntId=cus2_3392_3392_1351"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-tw",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping liquid",
+      "e-liquid",
+      "heated tobacco",
+      "iqos"
+    ],
+    "destination": "TW",
+    "category": "e_cigarettes",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "\"Passengers are NOT allowed to carry e-cigarettes and e-liquids into Taiwan.\" Violators \"may be fined between NT$50,000 and NT$5 million according to Paragraph 1 of Article 15 and Paragraph 2 of Article 26 of the Tobacco Hazards Prevention Act.\""
+    },
+    "notes": "Taiwan's amended Tobacco Hazards Prevention Act (in force since 22 March 2023) fully bans e-cigarettes — manufacture, import, sale and use — and separately regulates heated-tobacco products like IQOS, which are also barred for travelers to bring in. If merely transiting Taiwan for another destination, devices can be declared and deposited at the bonded luggage counter for collection on departure, rather than being confiscated outright.",
+    "legal_source": {
+      "name": "Customs Administration, Ministry of Finance (Taiwan) — Are Passengers Allowed to Bring Electronic Cigarettes into Taiwan?",
+      "url": "https://web.customs.gov.tw/en/singlehtml/3457?cntId=cus16_175758_3457"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-tw",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "air rifle",
+      "airsoft",
+      "knife",
+      "sharp weapon",
+      "stun gun"
+    ],
+    "destination": "TW",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "\"Firearms (including shotguns, air guns, fishing guns, etc.), ammunition (including artillery shells, bullets, bombs, explosives, etc.), and knives referred to in the Act Governing the Control of Guns, Ammunition and Knives\" are prohibited, \"excluding those permitted by competent authorities.\""
+    },
+    "notes": "Taiwan has extremely strict, near-total gun control — private possession of firearms and ammunition is generally illegal outright, and there is no realistic tourist path to authorization. Secondary sources describe common traveler pitfalls beyond obvious firearms: switchblades, stun batons, gas-powered guns, cosplay prop knives, hunting knives, and toy guns with metal firing pins have all reportedly been confiscated; only plastic replica guns with no firing capability are generally treated as toys, though this specific distinction wasn't independently confirmed on the official customs page in this pass.",
+    "legal_source": {
+      "name": "Kaohsiung Customs, Ministry of Finance (Taiwan) — Prohibited Articles",
+      "url": "https://web.customs.gov.tw/ekaohsiung/singlehtml/9a18ddca4652423ba5e2f6801a8fe492?cntId=935f25ca5d15405a82a328b9f2813af0"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-tw",
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas"
+    ],
+    "destination": "TW",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Drones with a maximum take-off weight over 250g must be registered with Taiwan's Civil Aeronautics Administration (CAA) before flying (Regulations of Drone, Art. 6(1)); drones under 250g owned by an individual are exempt from registration. Foreign nationals bringing their own drone face an extra step regardless of weight class for anything requiring registration: under Art. 38(1)-(2), they must submit documents to the CAA and can only fly \"after CAA's certification,\" and a foreign visitor holding valid drone credentials from their home country can get that certification valid for \"a maximum of six month after the date of issuance.\""
+    },
+    "notes": "A tourist bringing a small recreational drone under 250g can fly without registering it at all, regardless of nationality. Operating a heavier drone (2-15kg with navigation systems, or anything over 15kg) also needs a Remote Pilot License with age/testing requirements on top of the registration/certification above — a materially higher bar than just registering the aircraft.",
+    "legal_source": {
+      "name": "Laws & Regulations Database of the Republic of China (Taiwan) — Regulations of Drone, Arts. 6, 38",
+      "url": "https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=K0090083"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
   }
 ]
