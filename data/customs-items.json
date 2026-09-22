@@ -8393,5 +8393,237 @@
     "verified_at": "2026-09-22",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
+  },
+  {
+    "slug": "alcohol-al",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "whisky",
+      "vodka"
+    ],
+    "destination": "AL",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free per traveler 17 or older: 1 litre of spirits over 22% ABV, OR 2 litres of beverages up to 22% ABV and sparkling wines, PLUS (separately) 2 litres of still wine and 10 litres of beer. \"No relief for alcohol and tobacco shall be granted to travellers under 17 years old.\"",
+      "quantity": "1L spirits >22% ABV, or 2L ≤22% ABV/sparkling; plus 2L still wine and 10L beer"
+    },
+    "notes": "Quoted directly from the General Directorate of Customs' own traveler page. Amounts above this are dutiable and must be declared.",
+    "legal_source": {
+      "name": "General Directorate of Customs (Republic of Albania) — Tobacco, alcoholic drinks and coffee",
+      "url": "https://www.dogana.gov.al/english/c/174/193/tobacco-alcoholic-drinks-and-coffee"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-al",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "cigar",
+      "cigarillos",
+      "rolling tobacco"
+    ],
+    "destination": "AL",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free per traveler 17 or older: \"200 cigarette\" or \"100 cigarillos\" or \"50 cigars\" or \"250 grams of smoking tobacco.\" \"No relief for alcohol and tobacco shall be granted to travellers under 17 years old.\"",
+      "quantity": "200 cigarettes, or 100 cigarillos, or 50 cigars, or 250g smoking tobacco"
+    },
+    "notes": "Quoted directly from the General Directorate of Customs' own traveler page. E-cigarettes are a separate matter — see the e-cigarettes entry for Albania, which has no equivalent explicit traveler allowance.",
+    "legal_source": {
+      "name": "General Directorate of Customs (Republic of Albania) — Tobacco, alcoholic drinks and coffee",
+      "url": "https://www.dogana.gov.al/english/c/174/193/tobacco-alcoholic-drinks-and-coffee"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-al",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "cheques",
+      "bearer instruments"
+    ],
+    "destination": "AL",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Travelers entering or leaving Albania \"are obliged to declare the amounts in cash, any type of instrument negotiable of the holder, metals or precious stones, valuables and antiques, starting from the amount of 10,000 euros or its equivalent in other currencies.\"",
+      "quantity": "EUR 10,000 or equivalent"
+    },
+    "notes": "Quoted directly from the General Directorate of Customs' own traveler page. The threshold covers precious metals/stones and antiques as well as cash and negotiable instruments, and applies on both entry and exit.",
+    "legal_source": {
+      "name": "General Directorate of Customs (Republic of Albania) — Cash Declaration",
+      "url": "https://www.dogana.gov.al/english/c/174/195/cash-declaration"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-al",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "otc medicine"
+    ],
+    "destination": "AL",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Foreign travelers may carry limited quantities of medicines for personal use if: (1) not for promotion/marketing, (2) they complete a written statement that the medication is for personal use and provide the prescribing doctor's contact details (Albanian or foreign), deposited with customs at the entry point, and (3) the amount covers no more than 2 months of treatment, justified by the accompanying doctor's prescription showing the daily dose. Non-residents' quantity should match the length of their stay in Albania.",
+      "quantity": "Up to a 2-month supply, with prescription and a customs declaration"
+    },
+    "notes": "Quoted/paraphrased directly from the Ministry for Europe and Foreign Affairs' own page on this exact topic. This is the general-medicine rule; medicines classed as narcotic or psychotropic substances are far more restricted — see the controlled-medication entry for Albania.",
+    "legal_source": {
+      "name": "Ministry for Europe and Foreign Affairs (Republic of Albania) — Travel of foreign citizens with drugs for minimal consumption",
+      "url": "https://arkiva.punetejashtme.gov.al/en/udhetimi-i-shtetasve-te-huaj-me-barna-per-konsum-minimal/"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-al",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "xanax",
+      "alprazolam",
+      "oxycodone",
+      "codeine",
+      "opioid painkiller",
+      "stimulant medication"
+    ],
+    "destination": "AL",
+    "category": "medication",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "The Customs Authority's own prohibitions page states plainly: \"It is prohibited the import, export, transit of narcotics and psychotropic substances\" — a criminal offense under Albanian Criminal Law — and this explicitly extends to \"plants, narcotic medicaments and psychotropic substances of natural or synthetic nature, their materials and their preparations.\""
+    },
+    "notes": "Unlike ordinary medication, the Customs Authority's page describing narcotics/psychotropic substances states a blanket import prohibition with no traveler or personal-medical-use exception mentioned. Some secondary/travel-advisory sources describe a narrower personal-use allowance for controlled medicines with a medical certificate, but that specific carve-out was not found on an Albanian government page in this research pass — do not assume it applies. If you take a medication that is a controlled substance in your home country, verify directly with the Albanian Embassy before travelling.",
+    "legal_source": {
+      "name": "General Directorate of Customs (Republic of Albania) — Narcotics and Psychotropic Substances and human trafficking",
+      "url": "https://www.dogana.gov.al/english/c/177/239/narcotics-and-psychotropic-substances-and-human-trafficking"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-al",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish",
+      "hemp",
+      "edibles"
+    ],
+    "destination": "AL",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Covered by the same blanket ban as other narcotics: \"It is prohibited the import, export, transit of narcotics and psychotropic substances,\" which explicitly extends to \"plants, narcotic medicaments and psychotropic substances of natural or synthetic nature.\" A criminal offense under Albanian Criminal Law."
+    },
+    "notes": "Albania has had major real-world cannabis cultivation and trafficking enforcement over the past decade, and the Customs Authority's page names no medical or personal-use exception for travelers. There is no THC threshold or de minimis carve-out stated.",
+    "legal_source": {
+      "name": "General Directorate of Customs (Republic of Albania) — Narcotics and Psychotropic Substances and human trafficking",
+      "url": "https://www.dogana.gov.al/english/c/177/239/narcotics-and-psychotropic-substances-and-human-trafficking"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cbd-al",
+    "names": [
+      "cbd",
+      "cbd oil",
+      "cannabidiol",
+      "hemp extract",
+      "cbd gummies"
+    ],
+    "destination": "AL",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Not named specifically, but falls under the Customs Authority's blanket ban on importing \"plants, narcotic medicaments and psychotropic substances of natural or synthetic nature, their materials and their preparations\" — the same provision covering cannabis generally."
+    },
+    "notes": "No Albanian government page found that names CBD specifically or draws a distinction by THC content, unlike some countries' customs authorities. Given the blanket wording covering cannabis-plant preparations generally and no confirmed exception, treat CBD products the same as cannabis: do not bring them. This inference (CBD swept in under the general cannabis/narcotic-plant provision, not a CBD-specific rule) should be treated as somewhat less certain than the cannabis row itself.",
+    "legal_source": {
+      "name": "General Directorate of Customs (Republic of Albania) — Narcotics and Psychotropic Substances and human trafficking",
+      "url": "https://www.dogana.gov.al/english/c/177/239/narcotics-and-psychotropic-substances-and-human-trafficking"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-al",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition",
+      "pistol",
+      "rifle"
+    ],
+    "destination": "AL",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "\"Foreign citizens have the right to enter with firearms in the territory of the Republic of Albania only after they are equipped with a temporary authorization issued by the competent body of the State Police.\" Category B and C weapons separately require State Police authorization for trading, import/export, hunting, or sporting purposes."
+    },
+    "notes": "You cannot simply bring a firearm into Albania — a prior temporary authorization from the State Police is required. The Customs Authority's page doesn't address bladed weapons, air weapons, or self-defense items specifically, so don't assume those are unregulated; the U.S. ITA country guide separately confirms \"special import provisions are enforced for strategic sectors such as weapons, munitions.\"",
+    "legal_source": {
+      "name": "General Directorate of Customs (Republic of Albania) — Weapons",
+      "url": "https://www.dogana.gov.al/english/c/177/236/weapons"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-al",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping",
+      "e-liquid",
+      "vape juice",
+      "electronic cigarette"
+    ],
+    "destination": "AL",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "limits": {
+      "description": "Albania's tobacco-control law (Law No. 9636, as amended through 2024) defines \"smoking\" to include electronic cigarettes, and permits their retail sale (18+ only) subject to restrictions — but the law's provisions found in this pass are about domestic manufacture, marketing and retail-sale channels (e.g., a ban on selling tobacco products, including via the definition covering e-cigarettes, \"through the postal service\"), not a traveler-facing import quantity."
+    },
+    "notes": "The Customs Authority's own traveler duty-free page (used for the tobacco and alcohol allowances above) does not mention e-cigarettes, vapes, or e-liquid at all — unlike tobacco, there is no stated personal duty-free allowance or explicit ban for travelers bringing a vape. Domestically, nicotine liquid may only be placed on the market in refill containers up to 10ml or disposables up to 2ml, with nicotine concentration capped at 20mg/ml — whether this domestic market-placement rule is enforced against a traveler's personal device wasn't confirmed. Treat this as unresolved rather than clearly allowed or banned.",
+    "legal_source": {
+      "name": "Law No. 9636, dated 6.11.2006 \"On the Protection of Health from Tobacco Products\" (as amended through 2024)",
+      "url": "https://assets.tobaccocontrollaws.org/uploads/legislation/Albania/Albania-Law-No.-9636.pdf"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
   }
 ]

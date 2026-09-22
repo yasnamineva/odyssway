@@ -11155,5 +11155,153 @@
     "verified_at": "2026-09-22",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
+  },
+  {
+    "nationality": "US",
+    "destination": "AL",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 3 months beyond entry (6+ months recommended)",
+      "Return/onward ticket (may be requested)",
+      "Confirmation of accommodation (may be requested)",
+      "International certificate of vaccination if arriving from a country affected by an epidemic disease"
+    ],
+    "notes": "The U.S. Embassy in Tirana states directly: \"U.S. citizens do not need a visa to enter the Republic of Albania; U.S. citizens generally are allowed to stay in Albania for up to one year without a residence permit.\" This is a long-standing bilateral arrangement, far more generous than the 90/180-day rule most other nationalities get. To \"restart the clock\" on the one-year limit you must leave Albania and stay out for at least 90 days; shorter trips abroad do not reset it. Staying beyond one year, taking a job, or enrolling in school requires a residence permit.",
+    "legal_source": {
+      "name": "U.S. Embassy in Albania — Entering and Residing",
+      "url": "https://al.usembassy.gov/entering-and-residing/"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "GB",
+    "destination": "AL",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport with an expiry date at least 3 months after the planned departure from Albania",
+      "Yellow fever vaccination certificate if arriving from a country with transmission risk"
+    ],
+    "notes": "UK gov.uk travel advice: \"You can visit Albania without a visa for up to 90 days in a 180-day period, for tourism or business.\" This is the standard rate most nationalities get — unlike the US's separate one-year bilateral arrangement.",
+    "legal_source": {
+      "name": "gov.uk — Foreign travel advice: Albania, entry requirements",
+      "url": "https://www.gov.uk/foreign-travel-advice/albania/entry-requirements"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CA",
+    "destination": "AL",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 3 months beyond the planned departure from Albania"
+    ],
+    "notes": "Canada's official travel advisory: \"Tourist visa: not required for stays up to 90 days in any 180-day period.\"",
+    "legal_source": {
+      "name": "Government of Canada — Travel advice and advisories: Albania",
+      "url": "https://travel.gc.ca/destinations/albania"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "JP",
+    "destination": "AL",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Japan's Ministry of Foreign Affairs overseas safety page states (translated): Albania grants visa exemption to Japanese nationals; for short-term stays of up to 90 days including the day of entry, no visa is required. Staying longer requires obtaining a visa from the Albanian Embassy in Tokyo beforehand, or applying at a local police station after entering Albania.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Japan — Overseas Safety Information: Albania",
+      "url": "http://www.anzen.mofa.go.jp/m/mbimmigration_196.html"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CN",
+    "destination": "AL",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Ordinary (regular) Chinese passport",
+      "Passport valid well beyond the visit (recommended 6+ months)"
+    ],
+    "notes": "China's own Ministry of Foreign Affairs consular page confirms a bilateral mutual visa-exemption agreement (signed 16 Jan 2023, in force since 18 Mar 2023): Chinese citizens holding an ordinary passport may enter Albania for tourism, business, family visits, medical treatment, or scientific/cultural/sporting/trade activities without a visa, for up to 90 days within any 180-day period. (Diplomatic and official-duty passport holders are covered by a separate, broader exemption.)",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of the People's Republic of China — Consular Service Network: Albania",
+      "url": "https://cs.mfa.gov.cn/zggmcg/ljmdd/oz_652287/aebny_652289/"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "KR",
+    "destination": "AL",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport (a Korean-language national ID card alone is not accepted for identity/nationality verification)",
+      "Supporting documents such as flight tickets, booking confirmations or hotel receipts, since Albania frequently does not stamp passports"
+    ],
+    "notes": "South Korea's Ministry of Foreign Affairs states directly: \"대한민국 여권을 소지한 우리 국민은 알바니아에 여행 목적으로 체류하고자 할 시에는 별도의 사증 없이 180일 내 90일간 체류할 수 있습니다\" (\"Korean passport holders travelling to Albania for tourism may stay for 90 days within a 180-day period without a separate visa\"). Staying beyond 90 days, or entering for a purpose other than tourism, requires a visa.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of the Republic of Korea (0404.go.kr) — Albania entry-document/visa-free guidance",
+      "url": "https://0404.go.kr/bbs/embsyNtc/1/detail?ntnCd=300"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "SG",
+    "destination": "AL",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Singapore's Ministry of Foreign Affairs states directly: \"Singaporeans can visit Albania for up to 90 days within 180 days of the date of initial entry without a visa, provided that no employment is sought.\"",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs, Singapore — Albania Travel Page",
+      "url": "https://www.mfa.gov.sg/Countries-Regions/A/Albania/Travel-Page"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
   }
 ]

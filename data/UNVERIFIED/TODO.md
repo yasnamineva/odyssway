@@ -2297,6 +2297,24 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
       visa-required by confirmed absence from every exemption list BOCA
       publishes, not an explicit "visa required" sentence — the rows say so.
 
+- [x] **Albania (AL)** — 7 entry rows and 9 customs rows. Notable: US citizens
+      get a full year visa-free (directly quoted from the US Embassy in
+      Tirana, independently re-confirmed on the live page) — a genuinely
+      unusual, generous bilateral arrangement worth surfacing since it's far
+      more generous than the 90/180 window GB, CA, JP, CN, KR and SG get.
+      Customs rows are mostly from the General Directorate of Customs'
+      traveller pages; e-cigarettes is the weakest row (records that
+      Customs' own duty-free page never mentions vapes at all — an absence,
+      not a confirmed verdict). Still open: 8 more nationalities (KR/SG were
+      resolved via their own foreign ministries in a follow-up pass; IL, MX,
+      BR, AR, CL, MY, UA, IN each had a real official-source lead that hit a
+      connection reset, TLS error, Cloudflare challenge, or JS-rendered page
+      with no visa text extractable — genuine access failures, not
+      unresearched); Ukraine's real 2027 humanitarian waiver has no
+      confirmed day-limit anywhere; India's rule is contradictory across
+      sources (simple visa-free vs. conditional on holding another visa);
+      no food_animal/food_plant or drones rows — no primary source found.
+
 ## Done (2026-09-19) — `medication` gap fill (Nigeria, Vietnam, China, South Korea)
 
 Per AGENTS.md §14's wedge note, "niche/controlled medication" is this
