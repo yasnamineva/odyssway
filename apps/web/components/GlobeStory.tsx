@@ -269,7 +269,7 @@ function DesktopStory({ stages, sectionIndex }: { stages: Stage[]; sectionIndex:
 
   return (
     <div ref={outerRef} className="relative" style={{ height: "300vh" }}>
-      <div className="bg-grid-faint sticky top-0 flex h-screen items-center overflow-hidden bg-[#0b1420]">
+      <div className="bg-grid-faint sticky top-0 flex h-screen items-center overflow-hidden bg-slate-900">
         <span className="absolute top-6 left-6 font-mono text-xs text-white/30">{sectionIndex}</span>
         <div className="mx-auto grid w-full max-w-6xl grid-cols-2 items-center gap-16 px-8">
           <div ref={wrapperRef} className="relative mx-auto aspect-square w-full max-w-lg">
@@ -318,7 +318,7 @@ function DesktopStory({ stages, sectionIndex }: { stages: Stage[]; sectionIndex:
 
 function MobileStory({ stages }: { stages: Stage[] }) {
   return (
-    <div className="bg-grid-faint space-y-8 bg-[#0b1420] px-6 py-10 sm:px-10">
+    <div className="bg-grid-faint space-y-8 bg-slate-900 px-6 py-10 sm:px-10">
       {stages.map((s, i) => (
         <div key={i} className={i > 0 ? "border-t border-white/10 pt-8" : ""}>
           <div className="flex items-center gap-2 font-mono text-[11px] tracking-widest text-white/50 uppercase">

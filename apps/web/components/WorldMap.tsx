@@ -7,10 +7,10 @@ import { alpha2ForFeatureId, countryFeature, WORLD_COUNTRIES } from "../lib/worl
 const WIDTH = 720;
 const HEIGHT = 380;
 
-const STRIP_COUNTED = "#3767a8";
+const STRIP_COUNTED = "#1f7a48";
 const MARK_ORIGIN = "#d97706";
 /** Distinct from STRIP_COUNTED so the destination marker stays visible when its country is highlighted the same color. */
-const MARK_DESTINATION = "#0f172a";
+const MARK_DESTINATION = "#141210";
 
 export interface WorldMapProps {
   /** Alpha-2 code for the "from" point. */
@@ -59,7 +59,7 @@ export default function WorldMap({
       }
       className="h-auto w-full"
     >
-      <rect x={0} y={0} width={WIDTH} height={HEIGHT} fill="#eef4fb" />
+      <rect x={0} y={0} width={WIDTH} height={HEIGHT} fill="#faf9f7" />
       {WORLD_COUNTRIES.features.map((f, i) => {
         const code = alpha2ForFeatureId(f.id);
         const isHighlighted = code !== undefined && highlightSet.has(code);
@@ -69,13 +69,13 @@ export default function WorldMap({
             // unrecognized territories, so id alone isn't a unique key.
             key={`${f.id}-${i}`}
             d={path(f) ?? undefined}
-            fill={isHighlighted ? STRIP_COUNTED : "#d7e2ee"}
+            fill={isHighlighted ? STRIP_COUNTED : "#e0dbd3"}
             stroke="#ffffff"
             strokeWidth={0.5}
           />
         );
       })}
-      {arcPath && <path d={arcPath} fill="none" stroke="#334155" strokeWidth={1.5} strokeDasharray="4 3" />}
+      {arcPath && <path d={arcPath} fill="none" stroke="#4c463d" strokeWidth={1.5} strokeDasharray="4 3" />}
       {originPoint && <Marker point={originPoint} color={MARK_ORIGIN} label={originLabel} />}
       {destinationPoint && (
         <Marker point={destinationPoint} color={MARK_DESTINATION} label={destinationLabel} />
@@ -118,7 +118,7 @@ function Marker({
           className="font-sans"
           fontSize={11}
           fontWeight={600}
-          fill="#1e293b"
+          fill="#221e19"
           stroke="#ffffff"
           strokeWidth={3}
           paintOrder="stroke"

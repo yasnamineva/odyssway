@@ -1,0 +1,44 @@
+[
+  {
+    "nationality": "IN",
+    "destination": "AL",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Albanian visa (type C, apply online at e-visa.al), unless an exemption below applies"
+    ],
+    "notes": "needs_verification: Indian nationals are not visa-exempt for Schengen, and Albania's MFA sheet says nationals not listed in its per-country visa table need a visa — but that table (MFA PDF) could not be retrieved, so India's status cannot be confirmed. The same MFA sheet exempts holders of a valid multiple-entry Schengen, US or UK visa that has already been used in that area, and holders of a valid Schengen, US or UK residence permit.",
+    "legal_source": {
+      "name": "Ministry for Europe and Foreign Affairs of Albania — Regjimi i vizave për të huajt (visa regime for foreigners, information sheet)",
+      "url": "https://punetejashtme.gov.al/wp-content/uploads/2024/09/II-NR.3-REGJIMI-I-VIZAVE-PER-TE-HUAJT-INFO-PER-TE-HUAJT.pdf"
+    },
+    "verified_at": "2026-10-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "needs_verification"
+  },
+  {
+    "nationality": "FR",
+    "destination": "SA",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months",
+      "Tourist eVisa applied for online at visa.visitsaudi.com before travel (recommended), or a tourist visa issued on arrival",
+      "Medical insurance (required for the tourist visa)"
+    ],
+    "notes": "STILL HELD (re-checked 2026-10-05): France Diplomatie (updated 16 Sep 2026) says Saudi Arabia offers French nationals (one of 65 countries) a tourist eVisa and recommends obtaining it online via Visit Saudi before travel; it does not say a visa is issued on arrival. visa.visitsaudi.com returns 403 and visitsaudi.com visa pages 404; ksavisa.sa is a client-rendered app. Only secondary sources (news, agencies) mention visa on arrival for France. Needs a primary Saudi source before promotion.",
+    "legal_source": {
+      "name": "France Diplomatie — Conseils aux voyageurs, Arabie saoudite: Entrée / séjour (updated 2026-09-16)",
+      "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/arabie-saoudite/conseils-aux-voyageurs-entree-sejour"
+    },
+    "verified_at": "2026-10-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "needs_verification"
+  }
+]

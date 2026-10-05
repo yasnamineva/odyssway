@@ -76,6 +76,10 @@ export const nationalityRuleSchema = z
     visaExempt: z.boolean(),
     etiasApplicable: z.boolean(),
     schengenVisaRequired: z.boolean(),
+    /** EU citizen: free movement (Directive 2004/38/EC) within the EU and the
+     * Schengen Area, so the third-country flags above are all false — the
+     * row's legal_source is the free-movement rule, not Annex II. */
+    euCitizen: z.boolean().optional(),
     /** Conditions/caveats from Annex II footnotes (e.g. biometric passports only). */
     notes: z.string().optional(),
     ...verificationFields,

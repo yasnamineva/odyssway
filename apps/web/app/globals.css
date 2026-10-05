@@ -1,39 +1,61 @@
 @import "tailwindcss";
 
 /*
- * Visual direction (design/references moodboard): misty travel-journal
- * surfaces (soft cool blue-gray, evoking the mountain-fog reference photo,
- * pin-marker maps, circular imagery) paired with a bold, geometric-sans
- * display font — a more serious/professional register than the earlier
- * rounded Baloo 2, closer to the industrial-B2B reference's headline
- * weight. Palette implemented by re-mapping the default slate/blue scales
- * so every component inherits it consistently.
+ * Visual direction (design/references moodboard, reference.png): an
+ * instrument-panel register, not a travel brochure — near-black ink,
+ * a single confident signal-green accent, and a tall condensed display
+ * face borrowed from precision/industrial branding rather than SaaS
+ * defaults. Dark sections (hero, GlobeStory, footer) share one grid+mono
+ * language so the whole page reads as one system instead of a light demo
+ * with a dark section bolted on.
+ *
+ * `blue-*` intentionally stays untouched Tailwind blue — several pages
+ * (bring/[item]/[destination], ees/data-access, etias) use it as a real
+ * status color (e.g. "declaration required") distinct from red's
+ * "prohibited"/danger meaning, so it must not become the brand accent.
+ * `brand-*` is the new accent scale instead — a deep forest green,
+ * deliberately not Tailwind's default emerald (already carrying
+ * "on track"/success meaning on the calculator's status cards), so the
+ * brand color and that status color stay visually distinct.
  */
 @theme {
   --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
-  /* Bold geometric display font (next/font-loaded Poppins, see
-     app/layout.tsx) for headlines. */
-  --font-display: var(--font-display-sans), ui-sans-serif, system-ui,
-    -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* Warm humanist serif (next/font-loaded Lora, see app/layout.tsx) for
+     headlines, matching the Odyssway logo's own serif wordmark. Serif
+     fallbacks here (not the sans ones --font-sans uses) so a FOUT moment
+     before Lora loads doesn't visibly clash with it. */
+  --font-display: var(--font-display-sans), Georgia, Cambria,
+    "Times New Roman", Times, serif;
+  --font-mono: "SFMono-Regular", ui-monospace, Menlo, Consolas, monospace;
 
-  /* Cool misty blue-gray → deep ink ramp (replaces the warm paper tones) */
-  --color-slate-50: #f3f7fb;
-  --color-slate-100: #e6edf5;
-  --color-slate-200: #d3e0ee;
-  --color-slate-300: #aec2d9;
-  --color-slate-400: #8298b3;
-  --color-slate-500: #5c7086;
-  --color-slate-600: #445468;
-  --color-slate-700: #303c4d;
-  --color-slate-800: #202836;
-  --color-slate-900: #131924;
+  /* Neutral warm-ink ramp (replaces the old misty blue-gray) — true near-
+     black at 900 for hero/footer/story panels, warm off-white at 50 for
+     page background. No blue tint anywhere in this scale on purpose. */
+  --color-slate-50: #faf9f7;
+  --color-slate-100: #f0ede8;
+  --color-slate-200: #e0dbd3;
+  --color-slate-300: #c3bcb0;
+  --color-slate-400: #948b7d;
+  --color-slate-500: #6c6459;
+  --color-slate-600: #4c463d;
+  --color-slate-700: #363129;
+  --color-slate-800: #221e19;
+  --color-slate-900: #141210;
 
-  /* Misty teal-blue tints for informational surfaces, links, and focus states */
-  --color-blue-50: #eaf4f6;
-  --color-blue-100: #d3e9ed;
-  --color-blue-200: #a8d3db;
-  --color-blue-500: #17798c;
+  /* Brand accent — a single signal green, used sparingly (CTAs, active
+     states, the small square bullet mark) rather than washed across the
+     page. */
+  --color-brand-50: #eaf5ee;
+  --color-brand-100: #cfe8da;
+  --color-brand-200: #a0d1b3;
+  --color-brand-300: #6fb589;
+  --color-brand-400: #439563;
+  --color-brand-500: #1f7a48;
+  --color-brand-600: #166339;
+  --color-brand-700: #124f2f;
+  --color-brand-800: #0d3c24;
+  --color-brand-900: #082818;
 
   --animate-fade-in-up: fade-in-up 0.45s ease-out;
 }
@@ -57,12 +79,22 @@
   }
 }
 
-/* Faint grid backdrop for dark editorial sections (GlobeStory). */
+/* Faint grid backdrop for dark instrument-panel sections (hero, GlobeStory). */
 .bg-grid-faint {
   background-image:
-    linear-gradient(rgba(247, 244, 236, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(247, 244, 236, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(250, 249, 247, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(250, 249, 247, 0.06) 1px, transparent 1px);
   background-size: 44px 44px;
+}
+
+/* Small square bullet mark used ahead of eyebrow/kicker labels — the
+   site's one recurring signature instead of a generic bullet or check icon. */
+.mark-square {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: var(--color-brand-500);
+  flex: none;
 }
 
 html {

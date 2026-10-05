@@ -3,11 +3,22 @@
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { schengenCountries } from "../lib/countries";
-import { destinations, queuedDestinations } from "../lib/destinations";
-import { publishedNationalities } from "../lib/nationalities";
-import { SCHENGEN_DESTINATION } from "../lib/trip-check";
+import { SCHENGEN_DESTINATION } from "../lib/schengen-sentinel";
 import SearchableSelect from "./SearchableSelect";
+
+export interface QuickCheckPlace {
+  code: string;
+  name: string;
+}
+
+/** Built on the server (see app/page.tsx) and passed in, so the homepage
+ * ships these short name lists instead of the whole data corpus. */
+export interface QuickCheckOptions {
+  nationalities: QuickCheckPlace[];
+  destinations: QuickCheckPlace[];
+  schengenStates: QuickCheckPlace[];
+  comingSoon: QuickCheckPlace[];
+}
 
 /**
  * The floating "quick check" widget over the hero photo — two fields that
@@ -15,24 +26,29 @@ import SearchableSelect from "./SearchableSelect";
  * scroll to a plain link. Reuses tripCheck's own copy so the language stays
  * identical between the teaser and the real form.
  */
-export default function HeroQuickCheck() {
+export default function HeroQuickCheck({ options }: { options: QuickCheckOptions }) {
   const t = useTranslations("tripCheck");
   const th = useTranslations("home.quickCheck");
   const router = useRouter();
   const [nationality, setNationality] = useState("");
   const [destination, setDestination] = useState("");
+  const [attempted, setAttempted] = useState(false);
+  const missing = attempted && (!nationality || !destination);
 
   return (
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        if (!nationality || !destination) return;
+        if (!nationality || !destination) {
+          setAttempted(true);
+          return;
+        }
         const params = new URLSearchParams({ nationality, destination });
         router.push(`/trip-check?${params.toString()}`);
       }}
     >
-      <p className="text-[11px] font-semibold tracking-wide text-blue-700 uppercase">{th("eyebrow")}</p>
-      <h2 className="mt-0.5 font-display text-base font-bold text-slate-900">{th("heading")}</h2>
+      <p className="font-display text-sm text-brand-700 italic">{th("eyebrow")}</p>
+      <h2 className="mt-0.5 font-display text-lg font-bold text-slate-900">{th("heading")}</h2>
       <div className="mt-3 grid gap-3 sm:grid-cols-[1fr_1fr_auto] sm:items-end">
         <div>
           <label className="block text-xs font-medium text-slate-500" htmlFor="hero-nationality">
@@ -48,12 +64,9 @@ export default function HeroQuickCheck() {
               noResultsLabel={t("noMatches")}
               groups={[
                 {
-                  options: publishedNationalities
-                    .filter((n) => n.nationality !== destination)
-                    .map((n) => ({
-                      value: n.nationality,
-                      label: n.name,
-                    })),
+                  options: options.nationalities
+                    .filter((n) => n.code !== destination)
+                    .map((n) => ({ value: n.code, label: n.name })),
                 },
               ]}
             />
@@ -75,19 +88,19 @@ export default function HeroQuickCheck() {
                 { options: [{ value: SCHENGEN_DESTINATION, label: t("schengenArea") }] },
                 {
                   label: t("toGroupDestinations"),
-                  options: destinations
-                    .filter((d) => d.status === "verified" && d.code !== nationality)
+                  options: options.destinations
+                    .filter((d) => d.code !== nationality)
                     .map((d) => ({ value: d.code, label: d.name })),
                 },
                 {
                   label: t("toGroupSchengenStates"),
-                  options: schengenCountries
+                  options: options.schengenStates
                     .filter((c) => c.code !== nationality)
                     .map((c) => ({ value: c.code, label: c.name })),
                 },
                 {
                   label: t("toGroupComingSoon"),
-                  options: queuedDestinations
+                  options: options.comingSoon
                     .filter((d) => d.code !== nationality)
                     .map((d) => ({
                       value: d.code,
@@ -101,12 +114,17 @@ export default function HeroQuickCheck() {
         <button
           type="submit"
           data-testid="hero-quick-check-submit"
-          disabled={!nationality || !destination}
-          className="rounded-lg bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-700 disabled:cursor-not-allowed disabled:opacity-40"
+          aria-describedby={missing ? "hero-quick-check-missing" : undefined}
+          className="rounded-md bg-brand-500 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-brand-600"
         >
           {t("submit")}
         </button>
       </div>
+      {missing ? (
+        <p id="hero-quick-check-missing" role="alert" className="mt-2 text-xs text-red-700">
+          {th("missing")}
+        </p>
+      ) : null}
     </form>
   );
 }

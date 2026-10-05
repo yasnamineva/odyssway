@@ -210,7 +210,7 @@
     "disputeLink": "Read the full guide: the EES says you overstayed — but you didn't"
   },
   "bringDestinationPage": {
-    "metaTitle": "Can You Bring {item} to {destination}?",
+    "metaTitle": "Can you bring {item} to {destination}?",
     "metaDescription": "Can you bring {item} to {destination}? {answer} Limits and the official source, checked {date}.",
     "h1": "Can you bring {item} to {destination}?",
     "shortAnswer": "Short answer",
@@ -287,22 +287,19 @@
     },
     "quickCheck": {
       "eyebrow": "Quick check",
-      "heading": "Two fields, straight to your answer"
+      "heading": "Two fields, straight to your answer",
+      "missing": "Choose your passport and your destination first.",
+      "calculatorLink": "Tracking several Schengen trips? Open the 90/180 calculator"
     },
     "stats": [
       {
         "n": "90/180",
-        "label": "the EU rule, computed exactly as Art. 6(1) defines it",
+        "label": "The Schengen limit: 90 days in any 180-day period, counted day by day.",
         "cta": "Read the rule"
       },
       {
-        "n": "29",
-        "label": "Schengen countries covered, accession dates included",
-        "cta": "See coverage"
-      },
-      {
         "n": "0",
-        "label": "trip details stored on our servers — it all stays in your browser",
+        "label": "Trip details stored on our servers. Everything stays in your browser.",
         "cta": "How we work"
       }
     ],
@@ -348,11 +345,16 @@
     },
     "trustBadges": ["Cited to official sources", "Nothing stored on our servers", "Free — no account needed"],
     "trustBadgeCoverage": "{count} destinations verified — growing weekly",
+    "statsHeading": "The numbers behind it",
     "coverageMap": {
       "eyebrow": "Coverage",
       "heading": "Where Trip Check covers",
-      "sub": "Every colored country has cited, verified entry and customs rules — plus the entire Schengen Area as one bloc. Nowhere else on the map gets a guess; it gets the honest not-yet-covered state instead.",
-      "cta": "See every source →"
+      "sub": "Green countries have entry and customs rules we've checked against official government sources. The Schengen Area, in gold, counts as one. Anywhere else, Trip Check says we haven't checked it yet and links you to the official source instead of guessing.",
+      "cta": "See every source →",
+      "worldwideHeading": "Currently verified in",
+      "destinationsLabel": "Destinations",
+      "schengenLabel": "Schengen Area · {count} states",
+      "countLine": "destinations, plus all {schengen} Schengen countries"
     },
     "ctaBanner": {
       "heading": "Ready to check your trip?",
@@ -363,6 +365,35 @@
       "heading": "From the travel blog",
       "sub": "Regulation changes and coverage updates, written up the day we verify them against the source.",
       "cta": "Go to Blog Page"
+    },
+    "coverageStat": {
+      "label": "destinations checked against official sources, plus all {schengen} Schengen countries",
+      "cta": "See coverage"
+    },
+    "sample": {
+      "eyebrow": "A real answer",
+      "heading": "What an answer looks like",
+      "sub": "This is what Trip Check gives back for one real question. Each line links to the official page it comes from and shows the date we last checked it.",
+      "cta": "Run your own check",
+      "query": "{nationality} passport → {destination}, carrying {item}",
+      "tag": "From our verified data",
+      "itemLabel": "Can I bring {item}?",
+      "entryAnswer": "Yes, without a visa, for a short visit.",
+      "checked": "checked {date}"
+    },
+    "rule": {
+      "eyebrow": "The 90/180 rule",
+      "heading": "How the 90/180 rule really counts",
+      "sub": "In the Schengen Area you can spend at most 90 days in any 180-day period. The 180 days move forward one day at a time: old days drop off, new ones count. Drag the slider to see it for an example traveller with three trips.",
+      "dateLabel": "On",
+      "usedLabel": "Days used",
+      "remainingLabel": "Days left",
+      "sliderLabel": "Move the date",
+      "windowLabel": "{days}-day window",
+      "under": "The 180 days run from {start} to this date. {remaining, plural, =0 {No days left — the next day here would be an overstay.} one {# day left.} other {# days left.}}",
+      "over": "That's {days, plural, one {# day} other {# days}} over the limit: an overstay. This traveller should have left earlier.",
+      "legend": "Example trips to Portugal, Spain and Italy. Coloured: days inside the 180-day window, which count. Grey: days outside it, which no longer count.",
+      "cta": "Check your own trips in the calculator"
     }
   },
   "calc": {
@@ -561,10 +592,13 @@
     "basisVisaRequired": "You need a visa before travelling to {destination}. This means applying in advance — typically through an embassy, consulate, or authorized visa center — and getting it approved before you can board your flight.",
     "basisVisaOnArrival": "Yes — a visa is issued on arrival in {destination}, so there's no advance application, but budget time and (usually) a fee at the border itself.",
     "basisNotCovered": "We haven't verified this yet.",
+    "basisFreeMovement": "Yes — as an EU citizen you have the right to free movement in {destination}. No visa, no travel authorisation, and the 90/180-day limit doesn't apply to you.",
+    "intraEuCustoms": "Our customs answers cover arriving from outside the EU. Travelling between EU countries follows different rules that we haven't verified yet — check the national customs authority before you go.",
     "stayCardTitle": "For how long?",
     "stayRollingWindow": "Up to {maxDays} days in any rolling {windowDays}-day period — the window slides with every day that passes, it isn't reset by leaving and re-entering.",
     "stayFixedPerEntry": "Up to {maxDays} days per visit, counted fresh from each entry date.",
     "stayVisaRequired": "Your stay length depends on the visa you're granted — it isn't a fixed number we can show until you know which visa category applies.",
+    "stayUnconfirmed": "No fixed number of days is stated on the official sources we checked. Your permitted stay is set when you arrive — check your entry stamp or permit.",
     "trackInCalculator": "Track multiple trips in the full Schengen calculator →",
     "documentsCardTitle": "What documents do you need?",
     "sourceLabel": "Source:",

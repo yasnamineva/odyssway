@@ -28,6 +28,7 @@ const labelClass = "block text-xs font-medium text-slate-600";
 
 const BASIS_LABEL_KEY: Record<EntryBasis, string> = {
   citizen: "basisCitizen",
+  free_movement: "basisFreeMovement",
   visa_free: "basisVisaFree",
   eta_required: "basisEtaRequired",
   visa_required: "basisVisaRequired",
@@ -85,7 +86,7 @@ export default function TripCheck({
   // search demand — not guesswork — drives which niche items get researched
   // next. Never blocks or affects the result shown to this user.
   useEffect(() => {
-    if (!result || !result.covered) return;
+    if (!result || !result.covered || result.intraEuCustoms) return;
     const misses = result.items.filter((i) => i.match === null);
     if (misses.length === 0) return;
     const customsDestination = result.isSchengen ? EU_CUSTOMS_CODE : result.destination;
@@ -96,6 +97,10 @@ export default function TripCheck({
         body: JSON.stringify({ query: miss.query, destination: customsDestination }),
         keepalive: true,
       }).catch(() => {});
+      // Same two fields as a cookie-free Plausible custom event, so misses can
+      // be counted over time (the log line above only lives as long as the
+      // host's log retention). No-op when Plausible isn't loaded.
+      window.plausible?.("Item not found", { props: { query: miss.query.trim().slice(0, 100), destination: customsDestination } });
     }
   }, [result]);
 
@@ -114,7 +119,7 @@ export default function TripCheck({
 
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm lg:p-8">
-      <span className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-3 py-1 text-[11px] font-semibold tracking-wide text-blue-700 uppercase">
+      <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-50 px-3 py-1 text-[11px] font-semibold tracking-wide text-brand-700 uppercase">
         {t("eyebrow")}
       </span>
       <h1 className="mt-3 font-display text-2xl font-bold tracking-tight text-slate-900 lg:text-3xl">
@@ -351,7 +356,9 @@ function TripCheckResults({ result }: { result: TripCheckResult }) {
                 })
               : result.stayPolicy.kind === "fixed_per_entry"
                 ? t("stayFixedPerEntry", { maxDays: result.stayPolicy.maxDays })
-                : t("stayVisaRequired")}
+                : result.basis === "visa_required"
+                  ? t("stayVisaRequired")
+                  : t("stayUnconfirmed")}
           </p>
           {result.isSchengen && (
             <a href="/calculator" className="mt-2 inline-block text-xs underline">
@@ -387,7 +394,16 @@ function TripCheckResults({ result }: { result: TripCheckResult }) {
         </div>
       )}
 
-      {result.items.length > 0 && (
+      {result.items.length > 0 && result.intraEuCustoms && (
+        <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm" data-testid="tc-items">
+          <h2 className="text-sm font-semibold text-slate-900">{t("itemsCardTitle")}</h2>
+          <p className="mt-1 text-xs text-amber-700" data-testid="tc-intra-eu-customs">
+            {t("intraEuCustoms")}
+          </p>
+        </div>
+      )}
+
+      {result.items.length > 0 && !result.intraEuCustoms && (
         <div
           className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
           data-testid="tc-items"

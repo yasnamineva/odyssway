@@ -169,6 +169,9 @@ test("public API v1 returns cited, CORS-enabled JSON", async ({ request }) => {
 });
 
 test("header navigation reaches the guide pages", async ({ page }) => {
+  // The menu toggle only exists below the lg breakpoint (desktop shows the
+  // links inline), so drive the nav at phone width.
+  await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");
 
   await page.getByRole("button", { name: "Open menu" }).click();

@@ -62,11 +62,15 @@ export default async function BlogIndexPage() {
                 <img
                   src={`/blog/${post.slug}/opengraph-image`}
                   alt=""
+                  width={80}
+                  height={80}
+                  loading="lazy"
+                  decoding="async"
                   className="h-20 w-20 shrink-0 rounded-full border border-slate-100 object-cover"
                 />
                 <div className="min-w-0">
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className="rounded-full bg-blue-50 px-2.5 py-0.5 text-[10px] font-semibold tracking-wide text-blue-700 uppercase">
+                    <span className="rounded-full bg-brand-50 px-2.5 py-0.5 text-[10px] font-semibold tracking-wide text-brand-700 uppercase">
                       {post.category}
                     </span>
                     <time dateTime={post.date} className="text-xs text-slate-500">

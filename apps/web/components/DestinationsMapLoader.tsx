@@ -13,7 +13,7 @@ import dynamic from "next/dynamic";
  */
 const DestinationsMap = dynamic(() => import("./DestinationsMap"), {
   ssr: false,
-  loading: () => <div className="aspect-[960/460] w-full animate-pulse rounded-2xl bg-slate-100" />,
+  loading: () => <div className="aspect-[760/860] w-full" />,
 });
 
 export default DestinationsMap;

@@ -78,14 +78,36 @@ describe("resolveTripCheck", () => {
   });
 
   it("catches a common typo of a real controlled-substance item", () => {
-    // Japan's stimulant-medication row explicitly covers Adderall/amphetamine.
+    // Japan's amphetamine row covers Adderall — prohibited outright, kept
+    // separate from the "needs permission" stimulant raw materials.
     const result = resolveTripCheck("US", "JP", ["adderoll"]);
-    expect(result.items[0]!.match?.slug).toBe("stimulant-medication-jp");
+    expect(result.items[0]!.match?.slug).toBe("amphetamine-medication-jp");
+    expect(result.items[0]!.match?.verdict).toBe("prohibited");
   });
 
   it("resolves a known slang/abbreviation to its canonical item", () => {
     const result = resolveTripCheck("US", "JP", ["addy"]);
+    expect(result.items[0]!.match?.slug).toBe("amphetamine-medication-jp");
+  });
+
+  it("keeps permission-needed stimulant raw materials on their own row", () => {
+    const result = resolveTripCheck("US", "JP", ["sudafed"]);
     expect(result.items[0]!.match?.slug).toBe("stimulant-medication-jp");
+    expect(result.items[0]!.match?.verdict).toBe("depends");
+  });
+
+  it("gives EU citizens free movement within the EU, and withholds extra-EU customs verdicts", () => {
+    for (const destination of ["SCHENGEN", "DE", "IE", "CY"]) {
+      const result = resolveTripCheck("FR", destination, ["cigarettes"]);
+      expect(result.basis).toBe("free_movement");
+      expect(result.stayPolicy).toBeNull();
+      expect(result.intraEuCustoms).toBe(true);
+      expect(result.items[0]!.match).toBeNull();
+    }
+  });
+
+  it("does not apply free movement to an EU citizen leaving the EU", () => {
+    expect(resolveTripCheck("FR", "JP", []).basis).not.toBe("free_movement");
   });
 
   it("does not fuzzy-match a short query into an unrelated item", () => {

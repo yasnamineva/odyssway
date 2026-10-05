@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "prescription-medication-cy",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine"
+    ],
+    "destination": "CY",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "NEEDS VERIFICATION (re-checked 2026-10-05): still no Cypriot primary source for ordinary (non-controlled) prescription medicines carried by travellers. The Pharmaceutical Services 'Narcotics and Psychotropics' page covers only internationally controlled medicines (permits for visitors; already published as controlled-medication-cy); its linked 'Guidelines for Travellers Carrying Personal Medication' PDF is a generic 2003 UN guideline, not Cyprus rules; the Pharmaceutical Services FAQ (dmlfaq_gr) returned HTTP 500. Secondary sites claim a 3-month supply is fine without prescription — unconfirmed, do not use. Next step: email phscentral@phs.moh.gov.cy or find the Medicinal Products Law provision on personal import.",
+    "legal_source": {
+      "name": "Cyprus Ministry of Health, Pharmaceutical Services — Narcotics and Psychotropics (permits for visitors carrying controlled medicines)",
+      "url": "https://www.moh.gov.cy/moh/phs/phs.nsf/drugsphych_en/drugsphych_en"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "e-cigarettes-cy",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "e-liquid",
+      "vaping device"
+    ],
+    "destination": "CY",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "notes": "NEEDS VERIFICATION (re-checked 2026-10-05). Confirmed on primary sources: Cyprus Customs' passenger allowances list tobacco products and alcohol only — e-cigarettes and e-liquid are not among them (Channel system and concessions page, last updated 5/2/2020); e-liquid, with or without nicotine, is a nationally excisable product at €0.12 per ml (Excise Duties — General Information, Excise Duty Law 91(I)/2004 Part XII); cross-border distance sales of e-cigarettes and refill containers to consumers are prohibited (Health Protection (Smoking Control) Regulations 2017, arts 20 and 22(8)). Not confirmed: whether a traveller's personal e-liquid is relieved under the general €430 'other goods' allowance or owes the excise duty — no primary source states this, so no verdict is published.",
+    "legal_source": {
+      "name": "Cyprus Customs & Excise Department — Prohibitions & restrictions (passengers)",
+      "url": "https://www.mof.gov.cy/mof/customs/customs.nsf/All/0D56470143C54886C22572BF002D7648?OpenDocument="
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  }
+]

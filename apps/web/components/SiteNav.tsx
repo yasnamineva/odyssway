@@ -1,6 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import logo from "../public/images/logo.png";
 
 export interface SiteNavLink {
   href: string;
@@ -8,11 +10,10 @@ export interface SiteNavLink {
 }
 
 /**
- * Minimal floating nav — logo + a single menu toggle, no boxed pill bar.
- * Matches the misty-travel-journal reference's ultra-light top bar (logo
- * left, icon-only controls right) while staying a real, fully-navigable
- * menu rather than the reference's decorative icons — this is a working
- * product with real pages, not a one-page personal site.
+ * A plain masthead: logo, text links, one CTA, closed by a hairline rule
+ * so the logo always sits on the page's own paper — never on top of a
+ * hero photo. Collapses the links to a toggle + dropdown under lg, since
+ * six real destinations don't fit at phone width.
  */
 export default function SiteNav({
   brand,
@@ -43,39 +44,59 @@ export default function SiteNav({
   }, [open]);
 
   return (
-    <div ref={rootRef} className="relative flex items-center justify-between px-4 py-4 sm:px-6">
-      <a href="/" className="font-display text-lg font-extrabold tracking-tight text-slate-900">
-        {brand}
+    <div ref={rootRef} className="relative flex items-center justify-between gap-6 border-b border-slate-300/70 pb-3">
+      <a href="/" className="shrink-0">
+        <Image src={logo} alt={brand} className="h-11 w-auto sm:h-14" sizes="(min-width: 640px) 200px, 160px" priority />
       </a>
 
-      <button
-        type="button"
-        onClick={() => setOpen((v) => !v)}
-        aria-expanded={open}
-        aria-controls="site-nav-menu"
-        aria-label={open ? "Close menu" : "Open menu"}
-        className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white/90 text-slate-700 shadow-sm backdrop-blur transition hover:bg-white"
-      >
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} className="h-4.5 w-4.5">
-          {open ? (
-            <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
-          ) : (
-            <path d="M4 7h16M4 12h16M4 17h16" strokeLinecap="round" />
-          )}
-        </svg>
-      </button>
+      <nav className="hidden items-center gap-7 lg:flex">
+        {links.map((link) => (
+          <a
+            key={link.href}
+            href={link.href}
+            className="text-[14px] text-slate-600 underline-offset-[6px] transition hover:text-slate-900 hover:underline"
+          >
+            {link.label}
+          </a>
+        ))}
+      </nav>
+
+      <div className="flex shrink-0 items-center gap-2">
+        <a
+          href={cta.href}
+          className="hidden rounded-md bg-brand-500 px-4 py-2.5 text-[13px] font-semibold text-white transition hover:bg-brand-600 lg:inline-block"
+        >
+          {cta.label}
+        </a>
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-expanded={open}
+          aria-controls="site-nav-menu"
+          aria-label={open ? "Close menu" : "Open menu"}
+          className="flex h-10 w-10 items-center justify-center rounded-md border border-slate-300 bg-white text-slate-900 transition hover:bg-slate-50 lg:hidden"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} className="h-5 w-5">
+            {open ? (
+              <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
+            ) : (
+              <path d="M4 7h16M4 12h16M4 17h16" strokeLinecap="round" />
+            )}
+          </svg>
+        </button>
+      </div>
 
       {open && (
         <div
           id="site-nav-menu"
-          className="absolute top-full right-4 z-30 mt-2 w-56 overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-xl sm:right-6"
+          className="absolute top-full right-0 z-30 mt-2 w-56 overflow-hidden rounded-md border border-slate-300 bg-white p-2 shadow-lg lg:hidden"
         >
           <ul>
             {links.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="block rounded-xl px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+                  className="block rounded px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900"
                 >
                   {link.label}
                 </a>
@@ -84,7 +105,7 @@ export default function SiteNav({
           </ul>
           <a
             href={cta.href}
-            className="mt-1 block rounded-xl bg-slate-900 px-3 py-2.5 text-center text-sm font-semibold text-white transition hover:bg-slate-700"
+            className="mt-1 block rounded bg-brand-500 px-3 py-2.5 text-center text-sm font-semibold text-white transition hover:bg-brand-400"
           >
             {cta.label}
           </a>

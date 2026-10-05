@@ -4,7 +4,7 @@ import {
   type CustomsItemRecord,
   type StayPolicy,
 } from "@odyssway/engine";
-import { schengenCountries } from "./countries";
+import { countries, countryName, schengenCountries } from "./countries";
 import {
   EU_CUSTOMS_CODE,
   customsItems,
@@ -15,11 +15,13 @@ import {
 import { expandQuery, isFuzzyMatch } from "./fuzzy-match";
 import { nationalityBySlug } from "./nationalities";
 
-/** Sentinel destination value for "the Schengen Area as a whole" in the trip-check picker. */
-export const SCHENGEN_DESTINATION = "SCHENGEN";
+import { SCHENGEN_DESTINATION } from "./schengen-sentinel";
+
+export { SCHENGEN_DESTINATION };
 
 export type EntryBasis =
   | "citizen"
+  | "free_movement"
   | "visa_free"
   | "eta_required"
   | "visa_required"
@@ -48,6 +50,10 @@ export interface TripCheckResult {
   /** Set when `covered` is false and we at least know where to point the user. */
   officialAuthorityUrl?: string;
   items: TripCheckItemResult[];
+  /** True for EU-citizen travel within the EU/Schengen: the customs data covers
+   * arrivals from outside the EU, so item verdicts are withheld rather than
+   * shown for the wrong situation. */
+  intraEuCustoms?: boolean;
 }
 
 /** SBC Art. 6(1) entry conditions, already this project's foundational legal basis (see engine README / 90-180-rule content). */
@@ -57,6 +63,8 @@ const SCHENGEN_DOCUMENTS = [
   "Proof of the purpose and conditions of your stay (e.g. accommodation, itinerary)",
   "Sufficient funds for your stay and return journey",
 ];
+/** Your Europe, "Travel documents for EU citizens" (checked 2026-10-02). */
+const EU_CITIZEN_DOCUMENTS = ["A valid passport or national identity card"];
 const SCHENGEN_LEGAL_SOURCE = {
   name: "Regulation (EU) 2016/399 (Schengen Borders Code), Art. 6(1)",
   url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02016R0399-20251012",
@@ -64,6 +72,13 @@ const SCHENGEN_LEGAL_SOURCE = {
 
 function isSchengenCode(code: string): boolean {
   return schengenCountries.some((c) => c.code === code.toUpperCase());
+}
+
+/** EU members (incl. non-Schengen IE/CY) plus the Schengen states — everywhere
+ * an EU citizen travels on free movement, per the Your Europe source below. */
+function isFreeMovementDestination(code: string): boolean {
+  const upper = code.toUpperCase();
+  return upper === SCHENGEN_DESTINATION || isSchengenCode(upper) || countries.some((c) => c.code === upper && c.euMember);
 }
 
 /** Symbolic member state used to place the map marker when "Schengen Area, unspecified" is picked. */
@@ -103,9 +118,26 @@ function resolveEntry(
     };
   }
 
+  const natRule = nationalityBySlug(nat);
+  if (natRule?.euCitizen && natRule.status === "verified" && isFreeMovementDestination(dest)) {
+    const schengen = dest === SCHENGEN_DESTINATION || isSchengenCode(dest);
+    return {
+      destination: schengen ? SCHENGEN_DESTINATION : dest,
+      mapDestinationCode: dest === SCHENGEN_DESTINATION ? SCHENGEN_REPRESENTATIVE_CODE : dest,
+      destinationName: schengen ? "Schengen Area" : countryName(dest),
+      isSchengen: schengen,
+      covered: true,
+      basis: "free_movement",
+      stayPolicy: null,
+      documentsNeeded: [...EU_CITIZEN_DOCUMENTS],
+      notes: natRule.notes,
+      legalSource: natRule.legal_source,
+    };
+  }
+
   if (dest === SCHENGEN_DESTINATION || isSchengenCode(dest)) {
     const mapDestinationCode = dest === SCHENGEN_DESTINATION ? SCHENGEN_REPRESENTATIVE_CODE : dest;
-    const rule = nationalityBySlug(nat);
+    const rule = natRule;
     if (!rule || rule.status !== "verified") {
       return {
         destination: SCHENGEN_DESTINATION,
@@ -235,14 +267,16 @@ export function resolveTripCheck(
 ): TripCheckResult {
   const entry = resolveEntry(nationality, destination);
   const customsDestination = entry.isSchengen ? EU_CUSTOMS_CODE : entry.destination;
+  const intraEuCustoms = entry.basis === "free_movement";
   const items: TripCheckItemResult[] = itemQueries
     .map((q) => q.trim())
     .filter(Boolean)
-    .map((query) => ({ query, match: matchItem(query, customsDestination) }));
+    .map((query) => ({ query, match: intraEuCustoms ? null : matchItem(query, customsDestination) }));
 
   return {
     nationality: nationality.toUpperCase(),
     ...entry,
     items,
+    ...(intraEuCustoms ? { intraEuCustoms } : {}),
   };
 }

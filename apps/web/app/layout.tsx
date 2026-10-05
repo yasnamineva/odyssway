@@ -1,22 +1,24 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
-import { Poppins } from "next/font/google";
+import { Lora } from "next/font/google";
 import type { ReactNode } from "react";
+import FooterLogo from "../components/FooterLogo";
 import SiteNav from "../components/SiteNav";
 import { SITE_URL } from "../lib/site";
 import "./globals.css";
 
-/** Bold geometric-sans display font — replaces the earlier rounded Baloo 2
- * (too soft/playful for a compliance product; read as generic "AI slop").
- * Self-hosted at build time by next/font (no external <link>/CSP concerns).
- * Exposed as its own variable (not `--font-display` directly) because
- * Tailwind's `@theme` in globals.css already owns that name; see the
- * `--font-display` token there, which wraps this variable with sans-serif
- * fallbacks. */
-const displayFont = Poppins({
+/** Lora — a warm humanist serif matching the curled, moderate-contrast
+ * letterforms of the Odyssway wordmark itself (logo.png), so headlines and
+ * the logo read as one typographic family instead of a sans headline next
+ * to a serif logo. Self-hosted at build time by next/font (no external
+ * <link>/CSP concerns). Exposed as its own variable (not `--font-display`
+ * directly) because Tailwind's `@theme` in globals.css already owns that
+ * name; see the `--font-display` token there, which wraps this variable
+ * with serif fallbacks. */
+const displayFont = Lora({
   subsets: ["latin"],
-  weight: ["600", "700", "800"],
+  weight: ["500", "600", "700"],
   variable: "--font-display-sans",
   display: "swap",
 });
@@ -70,7 +72,7 @@ export default async function RootLayout({
       <body className="bg-slate-50 text-slate-900 antialiased">
         <NextIntlClientProvider messages={messages}>
           <div className="flex min-h-dvh flex-col">
-            <header className="relative z-30 mx-auto w-full max-w-6xl">
+            <header className="relative z-30 mx-auto w-full max-w-6xl px-4 pt-4 sm:px-6">
               <SiteNav
                 brand={t("header.brand")}
                 links={[
@@ -84,49 +86,58 @@ export default async function RootLayout({
                 cta={{ href: "/trip-check", label: t("home.hero.ctaPrimary") }}
               />
             </header>
-            <main className="mx-auto w-full max-w-6xl flex-1 px-4 pb-12">
+            <main className="mx-auto w-full max-w-6xl flex-1 px-4 pb-12 sm:px-6">
               {children}
             </main>
-            <footer className="border-t border-slate-200 bg-white">
-              <div className="mx-auto max-w-2xl space-y-4 px-4 py-10 text-center text-xs leading-relaxed text-slate-500">
-                <p className="font-display text-lg font-bold text-slate-900">
-                  {t("header.brand")}
-                </p>
-                <p>{t("footer.disclaimer")}</p>
-                <p className="flex flex-wrap justify-center gap-x-4 gap-y-1.5">
-                  <a href="/about" className="hover:text-slate-900 hover:underline">
-                    {t("footer.about")}
-                  </a>
-                  <a href="/methodology" className="hover:text-slate-900 hover:underline">
-                    {t("footer.methodology")}
-                  </a>
-                  <a href="/sources" className="hover:text-slate-900 hover:underline">
-                    {t("footer.sources")}
-                  </a>
-                  <a href="/changelog" className="hover:text-slate-900 hover:underline">
-                    {t("footer.changelog")}
-                  </a>
-                  <a href="/blog" className="hover:text-slate-900 hover:underline">
-                    {t("footer.blog")}
-                  </a>
-                  <a href="/bring" className="hover:text-slate-900 hover:underline">
-                    {t("footer.bring")}
-                  </a>
-                  <a href="/faq" className="hover:text-slate-900 hover:underline">
-                    {t("footer.faq")}
-                  </a>
-                  <a href="/developers" className="hover:text-slate-900 hover:underline">
-                    {t("footer.developers")}
-                  </a>
-                  <a
-                    href={OFFICIAL_CALCULATOR_URL}
-                    rel="noopener noreferrer"
-                    className="hover:text-slate-900 hover:underline"
-                  >
-                    {t("footer.officialCalculator")}
-                  </a>
-                </p>
-                <p className="text-slate-400">{t("footer.affiliateNote")}</p>
+            <footer className="border-t border-slate-800 bg-slate-900 text-white">
+              <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
+                <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
+                  <div className="max-w-xs">
+                    <span className="inline-flex rounded-md bg-white px-4 py-3">
+                      <FooterLogo alt={t("header.brand")} />
+                    </span>
+                    <p className="mt-3 text-xs leading-relaxed text-white/50">
+                      {t("footer.disclaimer")}
+                    </p>
+                  </div>
+                  <nav className="grid grid-cols-2 gap-x-10 gap-y-2 text-xs sm:grid-cols-3">
+                    <a href="/about" className="text-white/60 transition hover:text-white">
+                      {t("footer.about")}
+                    </a>
+                    <a href="/methodology" className="text-white/60 transition hover:text-white">
+                      {t("footer.methodology")}
+                    </a>
+                    <a href="/sources" className="text-white/60 transition hover:text-white">
+                      {t("footer.sources")}
+                    </a>
+                    <a href="/changelog" className="text-white/60 transition hover:text-white">
+                      {t("footer.changelog")}
+                    </a>
+                    <a href="/blog" className="text-white/60 transition hover:text-white">
+                      {t("footer.blog")}
+                    </a>
+                    <a href="/bring" className="text-white/60 transition hover:text-white">
+                      {t("footer.bring")}
+                    </a>
+                    <a href="/faq" className="text-white/60 transition hover:text-white">
+                      {t("footer.faq")}
+                    </a>
+                    <a href="/developers" className="text-white/60 transition hover:text-white">
+                      {t("footer.developers")}
+                    </a>
+                    <a
+                      href={OFFICIAL_CALCULATOR_URL}
+                      rel="noopener noreferrer"
+                      className="text-white/60 transition hover:text-white"
+                    >
+                      {t("footer.officialCalculator")}
+                    </a>
+                  </nav>
+                </div>
+                <div className="mt-10 flex flex-col gap-2 border-t border-white/10 pt-6 font-mono text-[11px] text-white/60 sm:flex-row sm:items-center sm:justify-between">
+                  <span>{t("footer.affiliateNote")}</span>
+                  <span>90 / 180</span>
+                </div>
               </div>
             </footer>
           </div>

@@ -2458,3 +2458,582 @@ Albania, Sri Lanka, Qatar, Jordan, Colombia, Tanzania, Costa Rica.
       browser (JavaScript), and reading them would firm up the food, weapons
       and drone rows (which currently only establish that permits apply);
       which named drugs are on List 1; exact e-visa terms for CL/CN/IN.
+
+## Done (2026-10-02) — batch 1: FR/ES/DE/IT/NL nationalities + Cyprus
+
+Promoted to /data: 5 EU nationality rows (free movement, Your Europe), 151 entry
+rows for FR/ES/DE/IT/NL × 31 non-EU destinations, Cyprus (destination row, 17
+entry rows, 11 customs rows), Japan amphetamine row split from
+stimulant-medication-jp, and the Thailand correction (60→30 days from
+2026-09-15, MFA summary image; MX→TH pulled to UNVERIFIED).
+
+Held in data/UNVERIFIED/entry-requirements.json: TR (FR/DE/IT) and AL
+(FR/DE/ES/NL) — sources say only "90 days", a fresh-per-entry model would be
+the more permissive claim; IT→JP (sources disagree, mofa.go.jp 403); FR→SA (no
+primary source confirms VoA for French nationals); MX→TH.
+Held in data/UNVERIFIED/customs-items.json: CY prescription medication,
+CY e-cigarettes.
+
+Existing rows flagged by this pass, NOT yet re-verified or edited:
+- GB→BR: rolling 90/180, but Brazil's QGRV table gives UK code 8 (no 180-day cap); QGRV edition dated 2020.
+- CN→KE: fixed 90 days; every other Kenya eTA row and Kenya's page say stay is set at entry.
+- US/GB→AE: fixed 90 per entry vs. EU sources' 90 in any 180.
+- EG rows: the same e-Visa is `visa_required` (US/GB) but `eta_required` (IN).
+- ID (16 rows): All Indonesia arrival declaration (mandatory since 2025-10-01) not listed; US→ID note says VoA can't be converted, imigrasi.go.id says it can.
+- NZ rows: cited URLs now redirect; IVL NZD 100 and NZD 17/23 fees unconfirmed on current pages.
+- US→SA: says 66 eVisa countries, portal now says 68.
+- KR/BR/AR/CL→TH: values still correct (90-day bilateral), notes refreshed 2026-10-02.
+- GB→CN: the 31 Dec 2026 end date is on the MFA FAQ, not on the NIA list it cites.
+- ZA rows: ETA status now has a primary source (DHA statement 2079, 2026-08-12 — voluntary for visa-exempt travellers).
+- IN→TH: India is on Thailand's 30-day list (added 2026-10-02).
+
+Per-group research notes follow verbatim.
+
+### Batch 1 notes — americas
+
+##### Batch 1 (2026-10-02) — EU nationalities FR/ES/DE/IT/NL × US, CA, MX, BR
+
+All 20 rows verified against primary sources fetched 2026-10-02 (agent:claude-opus-5-5).
+
+###### Sources used
+- **US**: DHS — Visa Waiver Program page (https://www.dhs.gov/visa-waiver-program) — current program-country table lists France, Germany, Italy, Netherlands, Spain. 90-day limit + e-passport requirement per DHS VWP requirements page (https://www.dhs.gov/visa-waiver-program-requirements). CBP's VWP page only says "42 countries" and links to DHS for the list.
+- **CA**: IRCC check-visa-eta page (https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/check-visa-eta.html) — all five under "eTA-required countries or territories" (air). Fee CAD $7 from the eTA apply page. Stay: IRCC Help Centre qnum=1198 — "Most visitors can stay for up to 6 months"; the officer may set a shorter or longer stay.
+- **MX**: SRE/INM Anexo 1 PDF (same file as the existing rows) — Alemania, España, Francia, Italia and Países Bajos (Holanda) are all listed as not requiring a visa. 180 days: INM press release (gob.mx/inm, "Facilita INM el ingreso … FMM … vía electrónica") — "condición de estancia de Visitante con una temporalidad de hasta 180 días".
+- **BR**: MRE/PF QGRV PDF (same file as the existing rows), VIVIS column: DE/FR/IT/NL = 8* (visa exemption up to 90 days; * = max 90 days per 180); **ES = 8 (no \*)** → encoded as fixed_per_entry 90, not rolling_window.
+
+###### Reachability notes
+- WebFetch can't parse gov PDFs directly, but it saves them locally; `pdftotext -layout` on the saved file worked for both the MX and BR PDFs.
+- diputados.gob.mx (Ley de Migración text) and ordenjuridico.gob.mx refuse connections; gaceta.diputados.gob.mx timed out. Art. 52(I) could not be fetched; the INM press release was used for the 180-day figure instead.
+- The Brazil QGRV edition is dated 14/01/2020 — it's what the existing BR rows cite, but its age is a freshness risk worth a manual check.
+
+###### Possible issue in existing data (not edited)
+- **GB → BR** row uses stayPolicy rolling_window 90/180, but the QGRV shows Reino Unido VIVIS = **8** (no \*), and the row's own note describes "90 days per entry, extendable once, capped at 180 days in any 12-month period" — which isn't a 90/180 rolling window. Worth re-checking.
+
+### Batch 1 notes — europe-near
+
+##### Batch 1 — EU nationalities (FR, ES, DE, IT, NL) → GB, AL, RS, GE, TR (2026-10-02, agent:claude-opus-5-5)
+
+25/25 rows verified against primary official sources fetched on 2026-10-02. Staged in `europe-near.json`; schema-valid (entryRequirementsFileSchema).
+
+###### GB — United Kingdom (5 rows, eta_required, 180 days)
+- Source: GOV.UK "Visiting the UK as an EU, EEA or Swiss citizen" — EU citizens (except Irish) need an ETA; stay usually up to 6 months; passport valid for the whole stay; ID cards accepted only with EUSS status / family permit / frontier worker permit / S2 / pending EUSS application.
+- Cross-check: Immigration Rules Appendix ETA National List — France (#60), Germany (#61), Italy (#65), Netherlands (#72), Spain (#80) listed in cohort (d), travel on or after 2 April 2025.
+- Note: `https://www.gov.uk/visit-uk-as-eu-eea-swiss-citizen` 404s; the live page is under `/guidance/`.
+
+###### AL — Albania (5 rows, visa_free)
+- Albania's own sources were NOT usable: the MFA visa-regime table PDF (`punetejashtme.gov.al/.../2-REGJIMI-I-VIZAVE-PER-TE-HUAJT-28.05.2024.pdf`) returns a bot-challenge HTML page to curl and 404 to WebFetch; `punetejashtme.gov.al/en/?p=553` renders empty. The MFA's general PDF (II-NR.3, readable) gives document-validity rules but no per-country table. The Netherlands embassy page (ambasadat.gov.al) confirms EU citizens may enter with an ID card valid 3+ months, but states no stay length.
+- Used each traveller's own government (same approach as existing GB/CA/JP/KR/SG → AL rows):
+  - DE: Auswärtiges Amt (Stand 02.10.2026) — passport/Personalausweis/Kinderreisepass, valid 3+ months at entry; provisional ID not accepted; visa-free tourism up to 90 days.
+  - FR: France Diplomatie Entrée/Séjour (updated 15/09/2026) — CNI or passport, valid 3 months beyond return; 90 days; Albania doesn't recognise the CNI 5-year extension.
+  - IT: Viaggiare Sicuri country sheet PDF (`/schede_paese/pdf/ALB.pdf`, updated 30/7/2026; the HTML page is a JS app) — passport or CIE valid 3+ months beyond return; **90 days within 6 months** for EU citizens; new: temporary paper ID accepted from 30/7/2026.
+  - ES: exteriores.gob.es (updated 22/07/2026) — DNI valid 3+ months accepted; visa-free under three months.
+  - NL: Nederland Wereldwijd (updated 14-08-2026) — passport/ID valid 90+ days on departure; ≤ 90 days no visa.
+- Stay policy follows each source's wording: IT = rolling_window 90/180 (source states the 6-month period); DE/FR/ES/NL = fixed_per_entry 90 (sources state only 90 days). Italy's sheet describes the limit for EU citizens generally as 90 days within 6 months — a candidate for harmonising all five rows to rolling_window if Albania's own table becomes reachable.
+
+###### RS — Serbia (5 rows, visa_free, rolling 90/180)
+- Source: mfa.gov.rs per-country visa-regime pages (francuska, spanija, nemacka, italija, holandija) — all identical: "No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry"; "* ID card can also be used to travel to Serbia".
+- Not included: the 50 EUR/day funds and insurance lines in existing RS rows — they are not on these country pages, so I didn't carry them over unverified.
+
+###### GE — Georgia (5 rows, visa_free, 365 days)
+- Source: Ordinance No. 255 on matsne.gov.ge (consolidated 24/02/2026) — Germany #22, Spain #31, Italy #39, Netherlands #58, France #71; Note 1 "one full year"; EU citizens may enter with an EU-issued identity card.
+- Not included: the funds/insurance requirement in the existing US row (its source wasn't re-checked here).
+
+###### TR — Türkiye (5 rows, visa_free)
+- Source: mfa.gov.tr Visa Information for Foreigners. Wording differs by country: ES and NL "up to 90 days in any 180-day period" → rolling_window; FR, DE, IT "up to 90 days" → fixed_per_entry 90. Recorded as written.
+- Passport validity: Law No. 6458 Art. 7.1(b), 60 days beyond the stay (MFA validity page); MFA advises 6 months.
+- UNVERIFIED / left out: national-ID-card entry. The MFA's "countries whose citizens are allowed to enter Türkiye with their national ID's" page returns only navigation chrome (content likely JS-loaded) to both curl and WebFetch. Rows list the passport route only and say so in notes. TODO: re-check that page (or a Turkish embassy page) to add ID-card entry for these five.
+
+###### Contradictions with existing rows
+- None found for these destinations.
+
+### Batch 1 notes — east-asia
+
+##### Batch 1 (2026-10-02) — EU nationalities (FR, ES, DE, IT, NL) → JP, KR, CN, HK, TW
+
+Researched by agent:claude-opus-5-5. 25 rows: 24 verified, 1 needs_verification (IT→JP).
+
+###### Sources used (all fetched 2026-10-02)
+- **Japan**: every `mofa.go.jp` and `*.emb-japan.go.jp` URL returned HTTP 403 (WebFetch and curl with a browser UA), including the visa-exemption list `novisa.html` cited by the existing JP rows. Used each traveller's own foreign ministry instead (national government authority, allowed under §3):
+  - FR: France Diplomatie, Japon > Entrée / séjour (updated 2026-09-24) — 90 days visa-free, passport only (no ID card), Visit Japan Web recommended.
+  - DE: Auswärtiges Amt, Japan Reise- und Sicherheitshinweise (Stand 2026-10-02, unchanged since 2026-07-07) — 90 days; Reisepass/vorläufiger Reisepass/Kinderreisepass yes, Personalausweis no; valid for whole stay.
+  - ES: exteriores.gob.es recomendaciones de viaje Japón (updated 2026-06-18) — 90 days, return ticket required, strict on passport condition.
+  - NL: nederlandwereldwijd.nl reisadvies Japan (updated 2026-08-07) — 90 days, passport valid for whole stay.
+  - IT: Viaggiare Sicuri is an Angular SPA (WebFetch gets only the shell); the country sheet PDF works: `https://www.viaggiaresicuri.it/schede_paese/pdf/JPN.pdf` (updated 2026-04-01).
+- **Korea**: K-ETA eligible-countries page (`k-eta.go.kr/portal/guide/viewetaalification.do`) fetched fine — FR/ES/DE/IT 90 days, NL "03 Months". 22-country temporary exemption list: Korean Embassy in Belgium notice (mofa.go.kr/be-en, seq=748985, 2024-12-17); extension to 2026-12-31 KST: Korean Embassy Netherlands notice (2026-01-05) and Seattle consulate notice. Note `mofa.go.kr` without `www` 301-redirects; `be.mofa.go.kr` redirect-loops.
+- **China**: NIA unilateral visa-free list (dated 2026-02-17) — all five listed, 30 days, counted from 00:00 the day after entry; page gives NO end date. End date 2026-12-31 for the 48 non-Russia/non-Brunei countries comes from the MFA Consular Department FAQ `https://www.mfa.gov.cn/wjbzwfwpt/kzx/tzgg/202511/t20251110_11749824.html`.
+- **Hong Kong**: ImmD visa-free table — all five 90 days.
+- **Taiwan**: BOCA visa-exempt entry — all five 90 days, passport 6 months, return ticket, online arrival card within 7 days, stay starts day after arrival, not extendable.
+
+###### Not verified — IT→JP (status needs_verification)
+Italy's foreign ministry says Italians are visa-exempt "per un periodo massimo di 90 giorni ogni 180 giorni". Japan's exemption is otherwise framed as a 90-day period of stay per landing. Without Japan's own MOFA page (403) the stay policy (fixed_per_entry vs rolling 90/180) can't be settled. Retry `mofa.go.jp/j_info/visit/visa/short/novisa.html` from a different network.
+
+###### Deliberately not claimed
+- DE→JP 6-month stay via extension (MOFA "Note 8" per search snippets: Austria, Germany, Ireland, Liechtenstein, Mexico, Switzerland, UK). The Auswärtiges Amt page doesn't mention it and MOFA was unreachable, so the row says 90 days only. Worth adding once MOFA is reachable.
+- NL→KR: K-ETA lists "03 Months", encoded as 90 days (conservative) with a note.
+
+###### Time-sensitive (re-check before 2026-12-31)
+- CN: unilateral visa-free policy for these countries ends 2026-12-31 unless extended again.
+- KR: K-ETA temporary exemption ends 2026-12-31 KST.
+
+###### Possible issues with existing rows (not edited)
+- `GB→CN` (and similar) attribute the 2026-12-31 end date to the NIA list page; the NIA page (2026-02-17) shows no end date — the date is on the MFA FAQ above. Value correct, citation incomplete.
+- All existing `→JP` rows cite `mofa.go.jp/.../novisa.html`, which now returns 403 from this environment; the source watcher will likely count it as unmonitorable.
+
+### Batch 1 notes — se-asia
+
+##### Batch 1 — EU nationalities (FR, ES, DE, IT, NL) × Southeast Asia (TH, VN, MY, SG, ID, PH) — researched 2026-10-02, agent:claude-opus-5-5
+
+30 rows staged in `se-asia.json`, all `verified` (each value confirmed on a primary
+official source fetched 2026-10-02), schema-valid against `entryRequirementsFileSchema`.
+
+| Dest | Result for all 5 | Controlling source |
+|---|---|---|
+| TH | visa_free, 30 days (tourism only) | Thai MFA summary image, status 31 Aug 2026, effective 15 Sep 2026 |
+| VN | visa_free, 45 days | Res. 44/NQ-CP (DE/FR/IT/ES, any purpose, to 14 Mar 2028); Res. 229/NQ-CP (NL, tourism, to 14 Aug 2028) |
+| MY | visa_free, 90 days | Malaysian embassies Paris/Berlin/Rome/The Hague (kln.gov.my); ES via Spanish MFA + IMI list |
+| SG | visa_free, 90 days | ICA visa-required list (none of the 5 listed) + each origin MFA for the 90-day figure |
+| ID | visa_on_arrival, 30 days (+30 once) | imigrasi.go.id VOA list + B1 page |
+| PH | visa_free, 30 days | eVisaPH / DFA, EO 408 list |
+
+###### Cross-check method (new, worth reusing for every EU-nationality batch)
+All five origin-country foreign ministries are machine-readable and dated, giving a
+nationality-specific second source for every pair:
+- DE: `auswaertiges-amt.de/de/service/laender/{country}-node/{country}sicherheit-NNNNNN` (node id from the `-node` page). "Stand" date on page.
+- FR: `diplomatie.gouv.fr/fr/information-par-pays/{slug}/conseils-aux-voyageurs-entree-sejour`
+- NL: `nederlandwereldwijd.nl/reisadvies/{slug}` (Dutch slugs: maleisie, indonesie, filipijnen)
+- ES: `exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc={Spanish name}`
+- IT: `viaggiaresicuri.it/schede_paese/{ISO3}.json` (the site is an Angular app; this JSON is what it loads). Italy's pages lag — TH still partly said 60 days.
+Script: `scratchpad/batch1/src/pull.py {DEST}`.
+Origin-MFA pages are national government authorities (same class as gov.uk / Smartraveller already cited in /data), used as the cited basis only where the destination publishes no figure (SG stay length; ES→MY).
+
+###### Source reachability
+- `image.mfa.go.th` reachable (PDF + JPG). `ratchakitcha.soc.go.th` / `immigration.go.th` not retried (known Cloudflare block). `london.thaiembassy.org` reachable and text-based.
+- `datafiles.chinhphu.vn` signed resolution PDFs are scans — render with `pdftoppm` and read the image. `baochinhphu.vn` / `vanban.chinhphu.vn` need `curl --compressed`.
+- `imigrasi.go.id` reachable; `evisa.imigrasi.go.id` 404/202-empty; `allindonesia.imigrasi.go.id` is a JS shell.
+- `*.dfa.gov.ph` embassy pages all 403; `etravel.gov.ph` is a JS shell. `evisa.gov.ph` and `immigration.gov.ph` PDFs reachable.
+- `kln.gov.my` embassy pages and `imi.gov.my` reachable.
+- ICA per-country pages exist only for visa-required countries (others 404).
+
+###### Partially confirmed detail (rows still verified on their core facts)
+- PH eTravel: kept in documents (as in existing verified rows) but worded without a timing claim. The only primary text reachable today was a BI advisory for ASEAN Summit delegates ("at least 72 hours prior"), which conflicts with secondary sources' "within 72 hours before arrival". DFA advisories that state the general rule were 403.
+- TH "twice per calendar year": Royal Thai Embassy London states it generally; TAT says it applies to land-border entries. Both noted in the rows; the Royal Gazette text could not be fetched to settle it.
+- MY East Malaysia: French MFA says Sarawak grants 30 days on arrival; German MFA says the separate Sabah/Sarawak permit is usually 90 days. Noted, not encoded.
+
+###### Existing /data rows a primary source now contradicts — NOT edited, needs a fix pass
+1. **Every Thailand entry row (TH, 16 rows) is out of date.** The 60-day "ผ.60" scheme they cite was repealed effective 15 Sep 2026 (MFA list "status as of 31 August 2026"):
+   - US, GB, CA, AU, NZ, JP, SG, MY, IL, UA: 60 → **30 days**, tourism only.
+   - **MX: no longer on any exemption list** → needs re-research (probably visa_required).
+   - **IN: now on the 30-day exemption list** — there is no IN→TH row yet; a coverage candidate.
+   - CN: the MFA image now shows China under the bilateral **30-day** category (row says 60).
+   - KR, BR, AR, CL: bilateral 90 days — unchanged per the image.
+   - The rows' notes ("not published in the Royal Gazette") are now false; AGENTS.md §11's Thailand flag is resolved.
+2. **Indonesia rows (all 16) lack the All Indonesia arrival declaration**, mandatory for every arriving international passenger since 1 Oct 2025 (imigrasi.go.id press release, 1 Oct 2025).
+3. **US→ID (and copies) note says the VOA "cannot be converted to another stay permit"**; imigrasi.go.id's B1 page says it "dapat dialihkan menjadi izin tinggal lain" (can be converted).
+4. Minor, pre-existing: SG rows for US, NZ, CL, JP use `requirement: visa_free` with `stayPolicy: visa_required`, so the UI shows "depends on the visa you're granted" for a visa-free trip. The per-nationality MFA method above could give them real figures.
+
+### Batch 1 notes — south-asia-mideast
+
+##### Batch 1 (2026-10-02) — EU nationalities FR/ES/DE/IT/NL → IN, MV, AE, SA, EG
+
+Staged in `south-asia-mideast.json`: 25 entry-requirement rows (24 `verified`,
+1 `needs_verification`), schema-checked against `entryRequirementsFileSchema`.
+verified_by `agent:claude-opus-5-5`, verified_at 2026-10-02.
+
+###### Method
+Destination-government sources first; where those don't state a value for a
+specific nationality (stay length, on-arrival issuance), each EU state's own
+foreign-ministry travel advice for its own citizens is the cited legal source,
+per nationality. Same pattern the existing rows use with gov.uk/travel.gc.ca.
+No nationality was inferred from another.
+
+###### Per destination
+- [x] **IN** (5 × `eta_required`, 30 days fixed): indianvisaonline.gov.in/evisa/tvoa.html
+      — e-Visa list entries 54 France, 58 Germany, 75 Italy, 114 Netherlands,
+      149 Spain; 30-day duration, 6-month passport validity, apply ≥4 days ahead,
+      return ticket + funds quoted verbatim. Same shape as the existing GB row.
+- [x] **AE** (5 × `visa_free`, `rolling_window` 180/90): mofa.gov.ae exemption page
+      marks all five "Visa Free" (no duration). 90 days in any 180 + 6-month passport
+      confirmed per nationality on: diplomatie.gouv.fr (cites EU–UAE agreement
+      6 May 2015), exteriores.gob.es, auswaertiges-amt.de (biometric passport only,
+      no Personalausweis), viaggiaresicuri.it ARE.pdf (EU exemption since 7 May
+      2015), nederlandwereldwijd.nl. Modeled as a rolling window (not
+      `fixed_per_entry`) because every source says "90 days within 180".
+- [x] **MV** (5 × `visa_on_arrival`, 30 days fixed): immigration.gov.mv/visa/tourist-visa
+      (updated 2026-09-10) — on-arrival tourist visa, no pre-approval; MRZ passport
+      ≥1 month validity; return ticket + prepaid booking + funds; IMUGA ≤96 h; Israeli
+      passports refused since 15 Apr 2025. Page gives no day count; 30 days confirmed
+      per nationality by DE/FR/ES/IT/NL travel advice.
+- [x] **SA** DE/ES/IT/NL (`visa_on_arrival`, `rolling_window` 365/90): visa.visitsaudi.com
+      eligible list includes all five; "one-year, multiple entry visa … up to 90
+      days". On-arrival issuance confirmed by DE (AA), NL, ES (all airports + land
+      crossings, SAR 380) and IT (terminals at Riyadh/Jeddah for Schengen residents).
+- [ ] **SA FR** — `needs_verification`. Eligibility + terms verified on the portal, but
+      France Diplomatie (2026-09-16) only recommends the online eVisa and never
+      mentions on-arrival issuance for tourists; Visit Saudi's FAQ answers
+      (visitsaudi.com/en/travel-regulations) are client-rendered and unreadable by
+      curl, WebFetch or r.jina.ai. Needs a primary source on on-arrival issuance for
+      French nationals (or a decision to model the advance eVisa differently).
+- [x] **EG** (5 × `visa_on_arrival`, stayPolicy `visa_required` = no day count):
+      visa2egypt.gov.eg/eVisa/FAQ lists all five as e-Visa eligible; fees US$30
+      single / US$65 multiple; passport 6 months. On-arrival issuance confirmed per
+      nationality by all five governments. Day count deliberately NOT published:
+      the portal states none and the governments disagree (NL/ES 30 days, FR "one
+      month", IT 28 days, DE not stated). ID card accepted for tourism for FR, DE, IT.
+      Germany: Cairo airport has used QR-code visas since 1 Sep 2026 (US$36 cash at
+      bank counters).
+
+###### Source-quality notes
+- `indianvisaonline.gov.in`, `visa2egypt.gov.eg`, `immigration.gov.mv` (plain curl),
+  `mofa.gov.ae`: reachable and quotable.
+- `visa.visitsaudi.com`: plain curl returns a JS-heavy page; `r.jina.ai` renders the
+  eligible-country list cleanly. `visitsaudi.com/en/travel-regulations` FAQ answers
+  are client-rendered: unreadable by every method tried. `help.visitsaudi.com` now
+  301s to `visitsaudi.com/en/help-support`.
+- `u.ae`: the visa-on-arrival / visa-free-entry sub-pages 404; the parent page only
+  links to visitdubai.com, which no longer carries country lists. `gdrfad.gov.ae`
+  node pages 403. The UAE has no reachable primary page stating the EU stay length,
+  hence the EU-government sources.
+- EU foreign-ministry sites are an efficient, per-nationality primary source for EU
+  passports: auswaertiges-amt.de, diplomatie.gouv.fr, exteriores.gob.es,
+  nederlandwereldwijd.nl all fetch cleanly. viaggiaresicuri.it pages are
+  client-rendered, but `/schede_paese/pdf/{ISO3}.pdf` is a dated official PDF
+  (pdftotext works).
+- **Lesson:** a WebFetch summary misreported Egypt's fees as $25/$60. The raw page
+  says $30/$65. Always confirm numbers against the raw text.
+
+###### Observations on existing rows (not edited — for the parent)
+- **SA (existing US row notes)** say the eVisa list has "66 nationalities"; the portal
+  now says "68 eligible countries" (2026-10-02). The count in notes is stale; the
+  classification is unaffected.
+- **EG internal inconsistency**: the existing US/GB rows model the Egypt e-Visa as
+  `visa_required`, but the existing IN row models the same e-Visa as `eta_required`.
+  Separately, five EU governments document a visa on arrival at Egyptian airports;
+  whether that applies to US/GB passports was not checked in this pass.
+- **AE**: existing US/GB rows use `fixed_per_entry` 90; EU sources describe the EU
+  cohort's limit as 90 days in any 180. Not a contradiction for US/GB (different
+  nationalities, not re-checked here), but worth re-checking.
+
+### Batch 1 notes — africa
+
+##### Batch 1 (2026-10-02) — EU nationalities FR/ES/DE/IT/NL × MA, KE, NG, RW, ZA
+
+25 rows in `africa.json`, all `verified` (agent:claude-opus-5-5), each checked
+against a primary source fetched on 2026-10-02.
+
+- **MA (5 × visa_free, 90 days/entry).** consulat.ma exemption list (fetched
+  via the `r.jina.ai` proxy; the F5/TSPD bot challenge is still in place)
+  lists "Germany", "Spain + Andorra", "France + Monaco", "Italy" and
+  "Netherlands", with no stay annotation. visitmorocco.com/en/useful-information
+  (Formalities modal): "For all nationalities, the maximum duration of the
+  tourist trip is 90 days", plus a one-time 90-day extension at a police station.
+- **KE (5 × eta_required, no fixed day count).** etakenya.go.ke/form/apply/how-to-apply
+  (raw HTML via curl + browser UA) lists the eTA exemptions under the 2025
+  Amendment Rules: EAC states (180 days), a 90-day national list and a 60-day
+  African list. None of the five is on them. The page says: "Once you arrive,
+  the duration of your stay is determined at the point of entry." Fees are
+  from etakenya.go.ke/eligibility: Standard USD 30, One Year Multi-Entry USD 300.
+  - The eligibility page's per-country list is loaded over a Phoenix LiveView
+    websocket, so it can't be fetched.
+  - The Legal Notice 93/2025 PDF on new.kenyalaw.org now returns an nginx
+    **403** to curl (it worked in the 2026-08 pass).
+- **NG (5 × visa_required, 30 days).** immigration.gov.ng F5A page: eligibility
+  is "citizens of all countries except ECOWAS member States and other countries
+  which Nigeria has entered into visa abolition/waiver agreements". Terms:
+  validity 90 days, single entry, 30-day stay, not extendable.
+  - NIS publishes **no list** of waiver-agreement countries (FAQ at
+    /info-center/ checked; /visa-exemption/ is a 404).
+  - The visa_required answer therefore rests on absence: the five aren't
+    ECOWAS members, and no primary source names a waiver for them. That's the
+    same basis the existing NG rows use. Low harm if wrong (worst case,
+    someone applies for a visa they don't need).
+- **RW (5 × visa_on_arrival, 30 days).** migration.gov.rw/visa-on-arrival: AU,
+  Commonwealth and La Francophonie members get the visa fee waived for 30
+  days; everyone else pays (≤ USD 50 single entry, ≤ USD 70 multiple). OIF
+  official list (francophonie.org/90-etats-et-gouvernements-125, 53 members,
+  5 associates, 32 observers): **France is a full member**, so FR gets the
+  fee-waived visa. ES, DE, IT and NL are not on any of the three OIF lists,
+  not in the AU or Commonwealth, and not on Rwanda's named 90-day list, so
+  they get the paid visa on arrival.
+- **ZA (5 × visa_free, 90 days).** www.dha.gov.za exempt-countries table, parsed
+  from raw HTML (not WebFetch, per the earlier silent-corruption warning):
+  all five show "90 Days" in the Ordinary column.
+
+###### Update for the open ZA ETA TODO (§11 / TODO.md line ~1144)
+DHA statement 2079, "Address by the Minister of Home Affairs … at the official
+launch of South Africa's Electronic Travel Authorisation" (12 Aug 2026), is a
+primary source for the mandatory-vs-voluntary question:
+- The ETA "will progressively become compulsory for short stay visits from
+  countries that require port-of-entry visas".
+- It will be accessible "on a voluntary basis to visa exempt travellers"
+  (faster queue; online 90-day extension).
+- "Over the coming weeks, we will inform the embassies of countries as they
+  are systematically added."
+- The initial pilot was for China, India, Indonesia and Mexico. Airports at
+  launch: OR Tambo, Cape Town, King Shaka and Lanseria.
+
+The existing ZA rows' notes ("could not be confirmed against a primary
+source") can now be updated to cite this. The fee is still not on any primary
+page fetched.
+
+###### Possible contradiction / inconsistency in existing rows (not edited)
+- **KE/CN** uses `stayPolicy: fixed_per_entry, maxDays 90` (citing
+  etakenya.go.ke/eligibility), but every other eTA-required KE row uses
+  `visa_required`. The current how-to-apply page says stay length "is
+  determined at the point of entry". The CN row's fixed 90 isn't supported by
+  any page fetched today.
+
+###### Unverified / not published
+None. Passport-validity rules for MA, RW and ZA weren't on the pages fetched,
+so `documentsNeeded` stays at "Valid passport".
+
+### Batch 1 notes — oceania
+
+##### Batch 1 (2026-10-02) — EU nationalities (FR, ES, DE, IT, NL) → Australia, New Zealand
+
+Researched by agent:claude-opus-5-5. 10 rows, all `verified`, staged in `oceania.json`.
+
+###### Australia (5 rows) — eVisitor (subclass 651)
+- Source: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/evisitor-651
+- **Reachability:** WebFetch gets 403 Forbidden (as noted in earlier passes). Plain `curl`
+  with a browser User-Agent returns the full page (200, ~1.3 MB). The tab content
+  (eligibility, "How long you can stay", cost) is embedded as JSON in the HTML, not
+  rendered text: decode `\uXXXX` escapes and strip tags to read it.
+- Confirmed verbatim: eligible passports include France, Germany, Italy, The Netherlands
+  and Spain (no conditions); "valid for travel to Australia for 12 months, starting from
+  the date it is granted"; multiple entry; "You can stay in Australia for 3 months after
+  each entry"; "The eVisitor is free"; must be outside Australia when applying and when
+  it is decided; apply online.
+- Classification: `eta_required` + `fixed_per_entry` 90, consistent with the existing
+  ETA (601) rows (same "3 months" → 90 days nuance). Explained in each row's notes.
+
+###### New Zealand (5 rows) — visa waiver + NZeTA
+- Eligibility source: https://www.immigration.govt.nz/visit/what-you-need-to-visit-new-zealand/visa-waiver-countries-and-territories/
+  France, Germany, Italy, Netherlands and Spain are listed with no passport conditions
+  (unlike e.g. Estonia/Latvia/Lithuania "citizens only", Greece passports from 2006,
+  Portugal right-to-live). Stay "less than 3 months, or 6 months if from the United Kingdom".
+- Stay/validity/fee: https://www.immigration.govt.nz/visas/new-zealand-electronic-travel-authority-nzeta/
+  NZeTA valid 2 years; stays up to 3 months each visit; "Cost From NZD $17"; allow 72 hours;
+  max 6 months in any 12-month period; passport valid 3 months past departure.
+- **Reachability:** all pages fetch fine with curl.
+- **The site has been restructured:** the URLs cited by existing NZ rows
+  (`/new-zealand-visas/visas/visa/nzeta`, `/new-zealand-visas/visas/visa/visa-waiver`)
+  now redirect to `/visas/new-zealand-electronic-travel-authority-nzeta/` and
+  `/visas/visa-waiver-visitor-visa/`. The source watcher will probably flag these.
+
+###### Not asserted
+- **IVL (NZD $100):** existing NZ rows list the International Visitor Conservation and
+  Tourism Levy and an NZD $17 app / $23 web split. Neither fetched page mentions the IVL,
+  and per-country fees are hidden behind a country selector ("We cannot display any
+  process or costs information until you have provided your country details"). This
+  doesn't contradict the old rows, but it's unconfirmed as of 2026-10-02. Needs a targeted
+  re-check of the fee page before the next re-verification of the existing NZ rows.
+
+###### Contradictions with existing rows
+- None found on substance. Only the moved URLs and the unconfirmed IVL/fee detail above.
+
+### Batch 1 notes — cyprus
+
+##### Batch 1 (2026-10-02) — Cyprus (CY) as a new destination
+
+Researched by agent:claude-opus-5-5. Staged in the scratchpad (not yet in /data):
+`cyprus-destination.json` (1 row), `cyprus-entry.json` (17 rows, all verified),
+`cyprus-customs.json` (12 rows: 10 verified, 2 needs_verification).
+EU/EEA/CH nationals are excluded on purpose; they're handled by the free-movement code path.
+
+###### Entry — sources
+- **Cyprus MFA, "Categories of persons and countries whose nationals do not require a visa"**
+  (https://www.gov.cy/mfa/en/documents/categories-of-persons-and-countries-whose-nationals-do-not-require-a-visa/, posted 2024-06-09).
+  Visa-free "for a stay up to 90 days, provided they are bona fide visitors": US, GB, CA, AU, NZ, JP,
+  South Korea, SG, BR, MX, AR, CL, MY, IL, UA (UA *biometric passports only*). CN and IN are not listed.
+  Schengen double/multiple-entry visa holders, and holders of Schengen-state national visas or residence permits,
+  need no Cyprus visa for ≤90 days in any 180 (Decision 565/2014/EU). This doesn't apply to Turkish or Azerbaijani citizens.
+- **gov.cy "Visas"** (https://www.gov.cy/en/information/visas/): defines a short stay as "up to 90 days within any
+  180-day period" and links the EC calculator. Exempt nationals are per "Part Β" of Annex 1
+  (https://www.gov.cy/media/sites/19/2026/01/Annex-1_en.pdf, fetched): CN and IN are in Part A (visa required).
+  Visa-application passport rules: valid ≥3 months after departure, 2 blank pages, issued within 10 years.
+  Applications can be submitted at least 15 days before travel. Cyprus visas are valid only for Cyprus.
+- **EC short-stay calculator manual §1** (ec.europa.eu PDF, fetched): "Stays in Cyprus and Ireland shall not be taken
+  into account" for the Schengen 90/180.
+- **Modelling decision:** visa-exempt rows use `rolling_window` 180/90. The MFA list says "up to 90 days" for exempt
+  nationals, and gov.cy frames every short stay as 90 within 180, so the notes cite both. The 90/180 for exempt
+  nationals comes from Reg. 2018/1806 Art. 4. EUR-Lex wasn't fetched (it blocks automation), so the cited basis is the
+  Cypriot framing.
+
+###### Customs — sources
+- Alcohol and tobacco: Cyprus Customs general allowances page (last updated 2020-02-05) plus Your Europe (europa.eu,
+  "last checked 21/09/2026"), which confirms these are non-EU-arrival allowances and that Cyprus uses the higher tobacco limit.
+- Cash: the Cyprus Customs Cash Control page cites the **repealed Reg. 1889/2005** (stale official page). It's
+  cross-checked with EC DG TAXUD "EU Cash Controls" (Reg. 2018/1672: €10,000, current cash definition). The conflict is recorded in the row notes.
+- Food (animal): EC "Personal imports" (Reg. 2019/2122). **Conflict:** the Cyprus Customs restrictions list requires
+  Veterinary Services authorisation for meat, fish and cheese and a licence for honey, while the EU rule allows fish ≤20 kg and honey ≤2 kg.
+  Verdict `prohibited` (meat and milk are clear in both sources). The conflict is noted, and the controlling EU text is described.
+- Food (plant): EC "Trade in plants…" (passengers' luggage; 5 exempt fruits) plus the Cyprus Customs licence requirement.
+- Cannabis and CBD: Cyprus Customs prohibitions list (narcotics; "cannabis derivatives … oil and flour from the seeds …
+  cannabis contained in foods and beverages"; competent authority Chief of Police).
+- Controlled medication: MOH Pharmaceutical Services "Narcotics and Psychotropics" page plus the "Application Form for
+  Import for Personal Use" (.doc, fetched). The PDF titled "Guidelines for Travellers Carrying Personal Medication" on
+  that page is the **generic 2003 UN guideline**, not a Cyprus rule, so it isn't cited.
+- Drones: drones.gov.cy (Department of Civil Aviation), non-EU visitor section.
+- Weapons: Cyprus Customs prohibitions & restrictions (Law 113(I)/2004 First Annex; Chief of Police permits; Inspector of Mines).
+
+###### Left unpublished (needs_verification)
+- `prescription-medication-cy`: no Cypriot primary source found for ordinary prescription medicines (quantity/documents).
+- `e-cigarettes-cy`: Customs only bans cross-border *distance sales*; no traveller carriage rule found.
+
+###### Source-quality note
+- gov.cy pages return **403 to WebFetch** but **200 to curl with a browser User-Agent**. mof.gov.cy, moh.gov.cy,
+  drones.gov.cy and ec.europa.eu are all reachable the same way. mfa.gov.cy/* legacy URLs 301 to the gov.cy MFA homepage.
+- Several official pages are old (customs pages last updated 2020; the MFA list was posted 2024 and still says "Bulgarian, Croatian and Romanian national visa").
+  These are worth adding to the source watcher.
+
+## Done (2026-10-05) — batch 2: Albania, held rows, flagged-row re-verification
+
+Promoted/corrected in /data: Albania completed from its own law (Law 79/2021
+"On Foreigners", Art. 29(2): 90 days in any 180) — 13 new rows incl. the
+previously held FR/DE/ES/NL, and GB/CA/JP/CN→AL corrected from per-entry to
+90/180. Turkey FR/DE/IT verified (90/180), IT→JP (90/180, Italy's wording),
+MX→TH (visa required since 2026-09-15, Royal Thai Embassy Mexico).
+Corrections: UAE GB/CA/SG → 90/180; US/AU/NZ/JP/KR→AE now show no day count
+(no readable source states one); CN→KE no fixed stay; EG labelling fixed
+(GB/CA visa_on_arrival, IN visa_required, unsourced 30 days removed); US→SA
+68 countries; GB→CN citation; all ID rows list the All Indonesia arrival
+declaration (mandatory since 2025-10-01) and US→ID VoA conversion fixed; NZ
+URLs updated, unconfirmed NZD 23 fee removed, IVL confirmed.
+Pulled to UNVERIFIED: GB→BR (rule contradicts its own 2020 QGRV source; 2026
+editions blocked). Still held: IN→AL, FR→SA, CY prescription medication,
+CY e-cigarettes (contact emails in the Cyprus notes below).
+Open follow-up: every BR row cites the 2020 QGRV edition — re-verify Brazil
+against a current edition when gov.br is reachable.
+
+Per-group notes follow verbatim.
+
+### Batch 2 notes — albania
+
+##### Albania (AL) — batch 2 (2026-10-05)
+
+###### Sources reached (Albania's own primary texts)
+- **Law No. 79/2021 "On Foreigners"**, consolidated as amended by Law 43/2025: asp.gov.al PDF `wp-content/uploads/2025/11/Ligj-PER-TE-HUAJT-2021-06-24-79-perditesuar-2025-PDF.pdf` (curl with a browser UA). Art. 29(2): visa-exempt foreigners may stay **90 days within 180 days** from entry, unless a bilateral or multilateral agreement, reciprocity or a Council of Ministers decision provides otherwise. Art. 29(3): re-entry once the 180-day period has passed. Art. 29(5): register locally within 10 days, as a rule. The English translation at mb.gov.al (2024/10) matches.
+- **MFA visa-regime information sheet**: punetejashtme.gov.al `wp-content/uploads/2024/09/II-NR.3-REGJIMI-I-VIZAVE-PER-TE-HUAJT-INFO-PER-TE-HUAJT.pdf`. It lists among those who enter without a visa "foreign nationals who enter and stay in the Schengen states without a visa", plus holders of a used multiple-entry Schengen, US or UK visa, and holders of Schengen, US or UK residence permits. Passport rule: valid 3+ months after departure and issued within the last 10 years. Nationals not in the per-country table need a visa.
+
+###### Not reachable
+- The MFA per-country visa table (`2024/05/2-REGJIMI-I-VIZAVE-PER-TE-HUAJT-28.05.2024.pdf`) returns a 404 page. `punetejashtme.gov.al` HTML pages return an Incapsula block or a 212-byte challenge.
+- The e-visa.al API (`/api/countries`) returns `requiresVisa: 1` for all 209 countries, the US and France included, so it isn't a visa-requirement flag. Not used.
+- Traveller-government cross-checks: Smartraveller (AU) timed out; safetravel.govt.nz (NZ) has no visa section; mfa.gov.ua (UA) is behind Cloudflare. No Albanian embassy in India; embassy sites have no visa pages.
+
+###### Rows
+- New and verified: AU, NZ, BR, MX, AR, CL, MY, IL, UA (cite the MFA sheet together with Annex II Schengen visa exemption; 90/180 from Art. 29(2); UA requires a biometric passport). FR, DE, ES, NL (previously held) are now rolling 90/180 and cite Law 79/2021. Their documents are kept from each traveller-government source, named in the notes.
+- **IN → AL: needs_verification.** India isn't visa-exempt for Schengen, so the default is that a visa is needed, but only the unreachable per-country table could confirm India isn't listed there. Exemptions for holders of Schengen, US or UK visas or permits are noted.
+- **Corrections to existing rows**: GB, CA, JP and CN → AL change from a fixed 90 days per entry to rolling 90/180 (Art. 29(2)). The GB, CA and CN cited sources already say "90 days in 180", so the old modelling contradicted their own notes. US → AL (1 year, bilateral) is consistent with Art. 29(2)'s exception clause and is unchanged. KR, SG and IT are already 90/180.
+- Caveat: a bilateral agreement could give a longer stay than 90/180 for some nationality. The rows show the default, which errs on the safe side.
+
+### Batch 2 notes — held
+
+##### Batch 2 (2026-10-05) — held-back entry rows re-checked (TR ×3, IT→JP, FR→SA, MX→TH)
+
+Resolved (verified, ready to promote):
+- FR→TR: France Diplomatie, Turquie Entrée/séjour (updated 15 Sep 2026) — "ne dépassant pas 90 jours sur une période de 180 jours, que le séjour soit continu ou fractionné"; CNI or passport valid ≥150 days beyond entry. rolling_window 90/180.
+- DE→TR: Auswärtiges Amt Türkei (Stand 05.10.2026) — "bis zu 90 Tagen in einem Zeitraum von 180 Tagen kein Visum"; one-day exit no longer resets 90 days; Reisepass/Personalausweis/Kinderreisepass accepted. rolling_window 90/180.
+- IT→TR: Viaggiare Sicuri TUR.pdf (15/7/2026) — visa needed "per rimanere più di 90 giorni nell'arco di 180 giorni"; passport or CIE with ≥5 months' validity (CIE route limits listed). rolling_window 90/180.
+- IT→JP: Viaggiare Sicuri JPN.pdf (1/4/2026) — "per un periodo massimo di 90 giorni ogni 180 giorni". Published as rolling_window 90/180 (Italy's wording = the stricter reading). Japan's own pages still unreachable: mofa.go.jp (incl. ?fs=e, /ca/fna/), it.emb-japan.go.jp, la.us.emb-japan.go.jp all HTTP 403 to both curl (browser UA) and WebFetch. isa.go.jp is reachable but its pages don't list exemptions. Re-check against MOFA when reachable; if Japan confirms a per-entry 90 days, the FR/DE/ES/NL→JP fixed_per_entry rows are the model.
+- MX→TH: Royal Thai Embassy Mexico City visa page (updated 2 Oct 2026) — from 15 Sep 2026 Mexican ordinary-passport holders must obtain a Thai visa (60-day exemption cancelled, MOI notifications of 31 Aug 2026); apply via thaievisa.go.th; tourist visa stay generally 60 days/entry, +30 extension. requirement visa_required, stayPolicy visa_required. Note: the embassy homepage banner still links an old "Exempt_visa_60_days_announcement" image — the visa page itself is current.
+
+Still held:
+- FR→SA: France Diplomatie (16 Sep 2026) only says eVisa offered (65 countries incl. France) and recommends getting it online before travel. Saudi primaries unreachable: visa.visitsaudi.com 403, visitsaudi.com visa pages 404, ksavisa.sa JS-only. Visa-on-arrival for France appears only in secondary sources (Gulf News, BAL, agencies).
+
+Source-reachability notes: diplomatie.gouv.fr country pages, auswaertiges-amt.de and viaggiaresicuri.it PDFs all fetch cleanly with curl + browser UA. mexico.thaiembassy.org is reachable and text-based. sre.gob.mx guía del viajero: connection refused.
+
+### Batch 2 notes — corrections-a
+
+##### Batch 2 (2026-10-05) — re-verification of rows flagged in batch 1 (corrections-a)
+
+15 corrected rows in `corrections-a.json` (14 `verified`, 1 `needs_verification`), validated against `entryRequirementsFileSchema`. verified_at 2026-10-05, agent:claude-opus-5-5.
+
+###### Per item
+- **CN→KE — WRONG (stay model).** etakenya.go.ke/form/apply/how-to-apply (curl + browser UA): "The ETA is valid for travel within 90 days from the date of issuance. Once you arrive, the duration of your stay is determined at the point of entry." The row turned the 90-day *travel window* into a fixed 90-day stay. China is not on either ordinary-passport exemption list on that page → `eta_required` stands. Fixed: stayPolicy `visa_required` (no day count), same as every other KE eTA row; source → how-to-apply page.
+  - Spot-check: MY→KE and SG→KE (both on Kenya's 90-day exemption list) are already `visa_free`/90 — correct.
+- **EG labelling — INCONSISTENT; rule applied across all 22 EG rows:** `visa_on_arrival` only where a government source confirms on-arrival issuance for that nationality; otherwise `visa_required` (the e-Visa is a visa applied for in advance — existing project convention). No EG row gets a computed day count (Egypt's portal publishes none).
+  - **IN→EG — WRONG.** Was `eta_required` + fixed 30 days whose own notes said "commonly cited" (unsourced). Fixed → `visa_required`, no day count. No primary source confirms VoA for Indian passports.
+  - **GB→EG → `visa_on_arrival`** — gov.uk FCDO Egypt entry requirements: VoA at approved airports USD 30 cash, "valid for up to 30 days"; e-visa "valid for up to 3 months"; Cairo digital VoA USD 36 by card from 1 Aug 2026; Sharm El-Sheikh <15 days free stamp.
+  - **CA→EG → `visa_on_arrival`** — travel.gc.ca/destinations/egypt: "Canadian passport holders can obtain an electronic visa prior to travel or a 30-day tourist visa on arrival in Egypt, paid in cash in U.S. dollars"; Taba 14-day Sinai stamp.
+  - US/AU/NZ/JP/KR/SG/BR/MX/AR/CL/MY/UA/CN stay `visa_required` (e-Visa confirmed on visa2egypt.gov.eg FAQ; VoA not confirmable — travel.state.gov 403/Cloudflare; smartraveller timed out; safetravel.govt.nz has no visa info). IL unchanged (embassy visa). FR/ES/DE/IT/NL already `visa_on_arrival` (confirmed by their governments in batch 1) — consistent, unchanged. **Follow-up:** US and others likely qualify for VoA too (secondary sources say so) — re-check when travel.state.gov / smartraveller are reachable.
+- **US/GB→AE — WRONG (stay model), and the "30 days" lead did NOT hold.** Secondary/search snippets and stale UAE mission pages said 30 days for US/UK; current sources say 90 within 180:
+  - GB: gov.uk FCDO UAE: free visa on arrival "valid for up to 90 days over a 180-day period, which will begin from the date of first entry"; continuous or split. → `rolling_window` 90/180.
+  - Checked the other 6 fixed-90 AE rows too: **CA** (travel.gc.ca: "90 days within a 180-day period", from first entry) and **SG** (mfa.gov.sg: "up to 90 days in the UAE within a 180-day period") → `rolling_window` 90/180.
+  - **US, AU, NZ, JP, KR**: UAE MOFA lists all as "Visa Free" (re-checked), but no primary source for the stay could be read: u.ae visa-on-arrival / entry pages 404 (curl, WebFetch, headless Chrome timeout); GDRFA node/2086 gone (403/404); UAE mission pages (Boston, Stockholm) now 404; travel.state.gov Cloudflare challenge even in headless Chrome; smartraveller (updated 2026-09-02) confirms VoA but no stay length; safetravel.govt.nz no visa info; anzen.mofa.go.jp / 0404.go.kr didn't render. → stayPolicy `visa_required` (no day count, same pattern as existing BR/MX/AR/CL/MY/IL/UA AE rows), with notes warning that every confirmed nationality is 90/180. The old fixed-90-per-entry model was the more permissive claim and is supported by no source.
+- **US→SA — note fixed.** visa.visitsaudi.com (via r.jina.ai): "68 eligible countries" (row said 66), US listed; "one-year, multiple entry visa, allowing tourists to spend up to 90 days". Also removed two unsourced claims: the Israel-travel-evidence refusal (not on the portal, no sourcing record) and the bundled-insurance SAR 100,000 detail (not on the portal). On-arrival processing (label `visa_on_arrival`) rests on the 2026-09-02 verification; Visit Saudi FAQ / help pages are client-rendered (r.jina.ai returns ~250 bytes) and travel.state.gov is blocked, so it couldn't be re-confirmed — said so in the notes. Worth a re-check.
+- **GB→CN — citation fixed, value right.** NIA list (2026-02-17) includes 英国, ≤30 days, counted from 00:00 the day after entry, no end date. MFA Consular FAQ (mfa.gov.cn/wjbzwfwpt/kzx/tzgg/202511/t20251110_11749824.html): "remain in effect until December 31, 2026" for 48 countries incl. UK. Notes/legal_source now name both, as in the batch-1 FR→CN row.
+- **GB→BR — cannot confirm → `needs_verification` (pull).** The row's rolling 90/180 contradicts its cited source: QGRV (Atualizado em 14/01/2020) legend "8. Dispensa de Visto, por até 90 dias" and "* - Máximo 90 dias de estada a cada 180 dias"; Reino Unido = 15 / 15 / **8** (no asterisk). Newer editions exist (gov.br `qgrv-simples-port-15jan26.pdf`, `QGRV_simples_port_10MAR261.pdf`) but every fetch (curl, WebFetch, r.jina.ai) got a gov.br CAPTCHA / "Acesso Temporariamente Interrompido". A search summary hinted the UK code may differ in the 2026 edition — unverifiable, not relied on.
+
+###### For the parent
+- **All BR rows (incl. batch-1 FR/ES/DE/IT/NL) cite the 2020 QGRV edition** while 2026 editions exist. Same freshness risk as GB→BR; re-check all BR rows against the current QGRV once gov.br stops blocking.
+- Reachability: gov.uk and travel.gc.ca reliable (curl). gov.br currently CAPTCHA-blocks. travel.state.gov is behind Cloudflare (blocks curl, r.jina.ai, headless Chrome). u.ae visa pages have moved/404. r.jina.ai renders smartraveller and visa.visitsaudi.com.
+
+### Batch 2 notes — corrections-b
+
+##### Batch 2 (2026-10-05) — Indonesia + New Zealand re-verification (corrections-b.json, 35 full rows)
+
+###### Indonesia (16 rows changed: every pre-batch-1 ID row)
+- **All Indonesia arrival declaration** added to documentsNeeded of all 16 older rows (the 5 FR/ES/DE/IT/NL rows already had it). Source: Kemenimipas (Ministry of Immigration and Corrections), "Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia", 1 Oct 2025 — "Mulai 1 Oktober 2025, setiap penumpang yang tiba dari luar negeri diwajibkan mengisi deklarasi kedatangan"; sole system at all airports and seaports; can be filled from 3 days before arrival. https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia — cited in each row's notes (the row's legal_source stays the visa list).
+- **US→ID note fixed**: it said the VoA "cannot be converted to another stay permit". imigrasi.go.id B1 page: "Izin Tinggal ini dapat diperpanjang satu kali dan dapat dialihkan menjadi izin tinggal lain melalui mekanisme bridging visa" (can be extended once and converted to another stay permit via the bridging-visa mechanism). No other ID row carried the wrong claim.
+- **Unchanged values re-confirmed** (imigrasi.go.id, fetched 2026-10-05): VoA list still includes US, GB (Inggris), CA, AU, NZ, JP, KR, MX, AR, CL, UA, IN; visa-free (BVK) list includes SG, MY, BR; Israel not on VoA/BVK (Calling Visa row unchanged in substance). B1: 30 days, extendable once to 60, IDR 500,000.
+- Reachability: allindonesia.imigrasi.go.id is a JS-only SPA (no text); imigrasi.go.id and kemenimipas.go.id fetch fine with curl + browser UA / WebFetch.
+
+###### New Zealand (19 rows changed; AU→NZ and IN→NZ unchanged)
+- **Redirected URLs updated**: …/new-zealand-visas/visas/visa/nzeta → /visas/new-zealand-electronic-travel-authority-nzeta/; …/visa/visitor-visa → /visas/visitor-visa/; …/visa/visa-waiver → /visas/visa-waiver-visitor-visa/. The visa-waiver-countries list and the Australian-citizens page did not redirect.
+- **NZeTA fee**: current NZeTA page says only "Cost From NZD $17". The "$23 via the website" figure appears on no current page → removed from 13 rows; replaced with "from NZD $17".
+- **IVL NZD $100 confirmed**: Visa Waiver Visitor Visa page glossary tooltip: "The International Visitor Conservation and Tourism Levy (IVL) is a fee of NZD $100…"; "You must pay a fee for your NZeTA and also for an [IVL] — you pay these together when you request your NZeTA." Kept in older rows; added to the 5 EU rows (which had said it was unconfirmed) plus the IVL document line.
+- Re-confirmed: stays up to 3 months (6 for UK citizens), 6 months in any 12; NZeTA valid 2 years; visa-waiver list includes US, CA, JP, KR, SG, BR, MX, AR, CL, MY, IL, FR, ES, DE, IT, NL, GB; UA/CN/IN not listed. Visitor visa (UA/CN): "From NZD $441", funds NZD $1,000/month or $400/month with prepaid accommodation — matches existing rows.
+- Reachability: immigration.govt.nz fetches with curl + browser UA; fee/IVL detail sits in base64 glossary tooltips (decode `content="…"`).
+
+### Batch 2 notes — cyprus-customs
+
+###### Batch 2 — Cyprus held customs rows (re-checked 2026-10-05)
+
+Both rows remain `needs_verification`; no verdict is publishable.
+
+- prescription-medication-cy: Pharmaceutical Services narcotics page (moh.gov.cy/moh/phs/phs.nsf/drugsphych_en) covers only internationally
+  controlled medicines; linked PDF is a generic 2003 UN guideline. FAQ page (dmlfaq_gr) returns HTTP 500 to curl with a browser UA.
+  Secondary sites (entrybrief, sigmalive, airport site) claim "3-month supply" — not usable. Next: contact phscentral@phs.moh.gov.cy or
+  locate the personal-import provision of the Medicinal Products for Human Use Law.
+- e-cigarettes-cy: primary facts confirmed but insufficient for a verdict —
+  - Customs "Channel system and concessions" (mof.gov.cy/mof/customs/customs.nsf/All/D8E0334067181B47C22572BF002DF37C, updated 5/2/2020):
+    allowances cover tobacco products and alcohol only; €430 for other goods.
+  - Customs "Excise Duties — General Information" (…/All/A2C3593B5465A799422577D6002FEAC4): e-liquid excise €0.12/ml (Law 91(I)/2004 Part XII,
+    national, not EU-harmonised).
+  - Prohibitions page: distance-sales ban only.
+  Gap: whether personal e-liquid is relieved under the €430 allowance or dutiable. Next: Customs headquarters (headquarters@customs.mof.gov.cy).
+- Reachability: mof.gov.cy and moh.gov.cy load with curl + browser UA; phs FAQ returns 500.
+
+## Done (2026-10-05) — batch 3: Brazil re-verified against the current QGRV (updated 2026-08-26)
+
+#### Brazil re-verification (2026-10-05) — current QGRV edition
+
+- **Source reached:** MRE "Quadro Geral de Regime de Vistos" landing page
+  (gov.br/mre/.../vistos/quadro-geral-de-regime-de-vistos-para-entrada-de-estrangeiros-no-brasil,
+  updated 26/08/2026) → `qgrv-simples-port-26ago26.pdf` (+ `-ing-` English
+  version), "Atualizado em 26 de agosto de 2026". Plain curl and WebFetch get an
+  F5 "TSPD" JS challenge on the PDFs; a headless Chromium navigating to the PDF
+  URL solves it and receives the file as a download (Playwright
+  `waitForEvent("download")`). The landing page itself loads with curl.
+- **Codes changed vs the 2020 edition:** the ordinary-passport VIVIS column now
+  uses 1 = visa required, 2 = exempt up to 30 days, 4 = exempt up to 90 days;
+  `*` = max 90 days in every 180; `#` = entry with civil ID card.
+- **Per row:** US/CA/AU/IN = 1. FR/DE/IT/NL/UA = 4*. NZ/KR/JP/MY/IL/ES/GB/MX = 4.
+  AR/CL = 4#. SG = 2. **CN = 2 (new row: visa-free up to 30 days).**
+- **Counting rule for codes without `*`:** Decreto 9.199/2017 (planalto.gov.br,
+  reachable with curl) art. 20: stay up to 90 days, extendable by the PF by up to
+  90, max 180 per "ano migratório"; §1 the count starts at first entry and is
+  suspended while the visitor is abroad (cumulative across visits); art. 23:
+  art. 20 "poderá ser aplicado" to visa-exempt nationals. Because "fresh 90 per
+  entry" (old ES row) and "90 in any 180" (old NZ/KR/JP/MX/AR/CL/MY/IL rows) can
+  both permit more than this, those rows are now modelled as the stricter
+  rolling 90/365 (30/365 for SG/CN) with the exact rule in notes.
+- **GB→BR resolved:** code 4 → verified with the same model; removed from UNVERIFIED.
+- **Citations fixed:** JP row cited panrotas.com.br (trade news) and US/AU cited
+  agenciabrasil (state news agency) — both replaced by the QGRV. Unsourced eVisa
+  fee/validity detail dropped from AU; IN/US/AU documents trimmed to what the
+  table supports. CA keeps travel.gc.ca; MX keeps the Brazilian embassy page for
+  its documents, with the QGRV code cited in notes.
+- **Not found:** the PF "ato do dirigente máximo" defining the migratory year
+  (Portaria 18/2020 DIREX is only a COVID deadline reset). The PF
+  "prorrogar-estada-no-brasil" page still links only the 2020 table.

@@ -116,23 +116,26 @@ export default async function SourcesPage() {
         </h3>
         <SourceList sources={etiasSources} />
 
-        <h3 className="mt-6 text-sm font-semibold text-slate-800">
-          nationality-rules.json{" "}
-          <span className="font-normal text-xs text-slate-500">
-            — {t("verifiedLabel", { date: publishedNationalities[0]?.verified_at ?? "" })}
-          </span>
-        </h3>
+        <h3 className="mt-6 text-sm font-semibold text-slate-800">nationality-rules.json</h3>
+        {/* Grouped by the source each row actually cites: visa-exempt rows
+            (Annex II), visa-required rows and EU-citizen (free movement) rows
+            rest on different legal texts, checked on different dates. */}
         <ul className="mt-2 space-y-2 text-sm leading-relaxed text-slate-700">
-          <li>
-            {publishedNationalities.map((r) => r.name).join(", ")} —{" "}
-            <a
-              href={publishedNationalities[0]?.legal_source.url}
-              rel="noopener noreferrer"
-              className="underline"
-            >
-              {publishedNationalities[0]?.legal_source.name}
-            </a>
-          </li>
+          {[...new Set(publishedNationalities.map((r) => r.legal_source.url))].map((url) => {
+            const group = publishedNationalities.filter((r) => r.legal_source.url === url);
+            const first = group[0]!;
+            return (
+              <li key={url}>
+                {group.map((r) => r.name).join(", ")} —{" "}
+                <a href={url} rel="noopener noreferrer" className="underline">
+                  {first.legal_source.name}
+                </a>{" "}
+                <span className="text-xs text-slate-500">
+                  — {t("verifiedLabel", { date: first.verified_at ?? "" })}
+                </span>
+              </li>
+            );
+          })}
         </ul>
 
         {destinations

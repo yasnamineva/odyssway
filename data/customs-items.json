@@ -869,13 +869,33 @@
     "status": "verified"
   },
   {
+    "slug": "amphetamine-medication-jp",
+    "names": [
+      "adderall",
+      "amphetamine",
+      "methamphetamine"
+    ],
+    "destination": "JP",
+    "category": "medication",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Amphetamine (the active ingredient of Adderall) and methamphetamine are controlled as 'Stimulants' under Japan's Stimulants Control Act and cannot be brought into Japan, even for treatment and even with a prescription from your own country."
+    },
+    "notes": "Talk to your doctor well before travel about an alternative. Lisdexamfetamine (Vyvanse), for example, is a 'stimulants' raw material' that can be brought in with advance permission from the Narcotics Control Department (apply at least 14 days before travel).",
+    "legal_source": {
+      "name": "Narcotics Control Department, Ministry of Health, Labour and Welfare — bringing narcotics and stimulant raw materials into Japan",
+      "url": "https://www.ncd.mhlw.go.jp/en/application2.html"
+    },
+    "verified_at": "2026-10-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "stimulant-medication-jp",
     "names": [
       "pseudoephedrine",
       "sudafed",
       "vicks inhaler",
-      "adderall",
-      "amphetamine",
       "decongestant",
       "vyvanse",
       "lisdexamfetamine",
@@ -885,15 +905,15 @@
     "category": "medication",
     "verdict": "depends",
     "limits": {
-      "description": "Amphetamine and methamphetamine (e.g. Adderall) cannot be brought into Japan under any circumstances, even with a valid foreign prescription. Products classified as 'stimulants' raw materials' — including pseudoephedrine (found in many common decongestants) and lisdexamfetamine (Vyvanse) — require advance permission from Japan's Narcotics Control Department before you travel."
+      "description": "Products classified as 'stimulants' raw materials' — including pseudoephedrine (found in many common decongestants) and lisdexamfetamine (Vyvanse) — require advance permission from Japan's Narcotics Control Department before you travel. Amphetamine and methamphetamine (e.g. Adderall) are different: they cannot be brought in at all."
     },
     "notes": "Apply at least 14 days before travel; applications typically require a doctor's certificate. Do not simply pack common decongestants like Sudafed or Vicks inhalers without checking first — travelers have been detained for unknowingly carrying pseudoephedrine-based medication into Japan.",
     "legal_source": {
       "name": "Narcotics Control Department, Ministry of Health, Labour and Welfare — bringing narcotics and stimulant raw materials into Japan",
       "url": "https://www.ncd.mhlw.go.jp/en/application2.html"
     },
-    "verified_at": "2026-08-11",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-02",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -8624,6 +8644,310 @@
     },
     "verified_at": "2026-09-22",
     "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-cy",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer",
+      "whisky",
+      "vodka",
+      "zivania"
+    ],
+    "destination": "CY",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free from outside the EU: 1 litre of drinks over 22% alcohol (or undenatured ethyl alcohol of 80% vol. and over), or 2 litres of drinks not over 22%; plus 4 litres of still wine and 16 litres of beer. Travellers under 17 get no alcohol allowance. Anything over the allowance must be declared in the red channel.",
+      "quantity": "1 L spirits or 2 L ≤22%; 4 L still wine; 16 L beer"
+    },
+    "notes": "These are the EU allowances for travellers entering the EU from a non-EU country (Your Europe, europa.eu), which Cyprus Customs lists as its general allowances. Other goods (not alcohol/tobacco) are duty-free up to €430 per person (€175 for travellers under 15, per Cyprus Customs).",
+    "legal_source": {
+      "name": "Cyprus Customs & Excise Department — Travellers: dual channel system and general allowances",
+      "url": "https://www.mof.gov.cy/mof/customs/customs.nsf/All/D8E0334067181B47C22572BF002DF37C"
+    },
+    "verified_at": "2026-10-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-cy",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "cigarillos",
+      "rolling tobacco",
+      "smoking tobacco"
+    ],
+    "destination": "CY",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free from outside the EU: 200 cigarettes, or 100 cigarillos (max. 3 g each), or 50 cigars, or 250 g of smoking tobacco. Travellers under 17 get no tobacco allowance. Declare anything over the allowance in the red channel.",
+      "quantity": "200 cigarettes / 100 cigarillos / 50 cigars / 250 g"
+    },
+    "notes": "Cyprus applies the EU's higher tobacco limit (Your Europe lists the countries applying the lower limit; Cyprus is not among them).",
+    "legal_source": {
+      "name": "Cyprus Customs & Excise Department — Travellers: dual channel system and general allowances",
+      "url": "https://www.mof.gov.cy/mof/customs/customs.nsf/All/D8E0334067181B47C22572BF002DF37C"
+    },
+    "verified_at": "2026-10-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-cy",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "travellers cheques",
+      "gold",
+      "bonds",
+      "shares"
+    ],
+    "destination": "CY",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Anyone entering or leaving Cyprus with €10,000 or more in cash (or the equivalent in other currencies or bearer instruments such as traveller's cheques), or gold worth €10,000 or more, must declare it in writing to Customs at the point of entry or exit. Failing to declare is an offence: the cash or gold is seized and you can be fined up to €50,000.",
+      "quantity": "€10,000 or more"
+    },
+    "notes": "Cyprus Customs' page (last updated 2020) still cites the repealed Regulation (EC) 1889/2005; the current EU rule is Regulation (EU) 2018/1672 (EC DG TAXUD), which keeps the €10,000 threshold and defines cash as banknotes and coins, bearer negotiable instruments, gold coins of at least 90% gold and gold bars/nuggets of at least 99.5% gold. Cyprus' page also applies the declaration to travel to/from other EU member states (national Law 53(I)/2009).",
+    "legal_source": {
+      "name": "Cyprus Customs & Excise Department — Cash Control; cross-checked with European Commission DG TAXUD — EU Cash Controls (Regulation (EU) 2018/1672)",
+      "url": "https://www.mof.gov.cy/mof/customs/customs.nsf/0/E906CCB9D3760124C22572BF002DF9A1"
+    },
+    "verified_at": "2026-10-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-cy",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "halloumi",
+      "milk",
+      "ham",
+      "sausage"
+    ],
+    "destination": "CY",
+    "category": "food_animal",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "You cannot bring meat, milk or their products (including cheese) into Cyprus from outside the EU in your luggage. Fish, honey and powdered infant milk follow separate, more lenient EU limits."
+    },
+    "notes": "Conflict between sources, recorded per AGENTS.md §3.8: the EU rule (Delegated Regulation (EU) 2019/2122, directly applicable) allows fish up to 20 kg and honey up to 2 kg, but Cyprus Customs' restrictions list says meat, fish and cheese need authorisation from the Director of Veterinary Services and honey needs a Veterinary Services licence. The list may refer to commercial imports; if you plan to bring fish or honey, check with Cyprus Veterinary Services first. These rules don't apply to products coming from other EU countries, Andorra, Iceland, Liechtenstein, Norway, San Marino or Switzerland.",
+    "legal_source": {
+      "name": "European Commission — Personal imports of animal products (Commission Delegated Regulation (EU) 2019/2122)",
+      "url": "https://food.ec.europa.eu/animals/animal-products-movements/personal-imports_en"
+    },
+    "verified_at": "2026-10-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "animal-product-allowances-cy",
+    "names": [
+      "fish",
+      "honey",
+      "infant formula",
+      "baby milk",
+      "infant food"
+    ],
+    "destination": "CY",
+    "category": "food_animal",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Under EU rules you can bring, from outside the EU: fishery products up to 20 kg (or one fish, if heavier); other animal products such as honey up to 2 kg; and powdered infant milk, infant food or special foods needed for medical reasons up to 2 kg, if they don't need refrigeration before opening and are in unbroken branded packaging."
+    },
+    "notes": "Conflict between sources, recorded per AGENTS.md §3.8: the EU rule (Delegated Regulation (EU) 2019/2122, directly applicable) allows fish up to 20 kg and honey up to 2 kg, but Cyprus Customs' restrictions list says meat, fish and cheese need authorisation from the Director of Veterinary Services and honey needs a Veterinary Services licence. The list may refer to commercial imports; if you plan to bring fish or honey, check with Cyprus Veterinary Services first. These rules don't apply to products coming from other EU countries, Andorra, Iceland, Liechtenstein, Norway, San Marino or Switzerland.",
+    "legal_source": {
+      "name": "European Commission — Personal imports of animal products (Commission Delegated Regulation (EU) 2019/2122)",
+      "url": "https://food.ec.europa.eu/animals/animal-products-movements/personal-imports_en"
+    },
+    "verified_at": "2026-10-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-cy",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds",
+      "flowers",
+      "cut flowers",
+      "soil",
+      "nuts"
+    ],
+    "destination": "CY",
+    "category": "food_plant",
+    "verdict": "depends",
+    "limits": {
+      "description": "Plants, fruit, vegetables and cut flowers from outside the EU may not be brought in your luggage unless accompanied by a phytosanitary certificate. No certificate is needed for pineapples, coconuts, durians, bananas and dates. Cyprus Customs additionally requires a licence from the Director of the Department of Agriculture and a phytosanitary inspection for flowers and plants."
+    },
+    "legal_source": {
+      "name": "European Commission — Trade in plants & plant products from non-EU countries (passengers' luggage; Regulation (EU) 2019/2072)",
+      "url": "https://food.ec.europa.eu/plants/plant-health-and-biosecurity/trade-plants-plant-products-non-eu-countries_en"
+    },
+    "verified_at": "2026-10-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-cy",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hash",
+      "cocaine",
+      "heroin",
+      "illegal drugs",
+      "narcotics"
+    ],
+    "destination": "CY",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Cyprus Customs lists narcotic drugs, psychotropic substances and other controlled pharmaceuticals among goods whose importation is prohibited.",
+    "legal_source": {
+      "name": "Cyprus Customs & Excise Department — Prohibitions & restrictions (passengers)",
+      "url": "https://www.mof.gov.cy/mof/customs/customs.nsf/All/0D56470143C54886C22572BF002D7648?OpenDocument="
+    },
+    "verified_at": "2026-10-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cbd-cy",
+    "names": [
+      "cbd",
+      "cbd oil",
+      "hemp oil",
+      "hemp seed oil",
+      "cannabidiol",
+      "hemp food",
+      "cannabis edibles"
+    ],
+    "destination": "CY",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Cyprus Customs lists cannabis derivatives under prohibited imports — explicitly including oil and flour from cannabis seeds, cannabis contained in foods and beverages, and other cannabis derivatives. The competent authority is the Chief of Police."
+    },
+    "notes": "Customs states its lists are not exhaustive and refers enquiries to the competent authority (Chief of Police).",
+    "legal_source": {
+      "name": "Cyprus Customs & Excise Department — Prohibitions & restrictions (passengers)",
+      "url": "https://www.mof.gov.cy/mof/customs/customs.nsf/All/0D56470143C54886C22572BF002D7648?OpenDocument="
+    },
+    "verified_at": "2026-10-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-cy",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "vyvanse",
+      "ritalin",
+      "methylphenidate",
+      "stimulant medication",
+      "codeine",
+      "tramadol",
+      "oxycodone",
+      "morphine",
+      "opioid painkiller",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "sleeping pills"
+    ],
+    "destination": "CY",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Visitors can bring small quantities of internationally controlled medicines (narcotics or psychotropics) for their own treatment only with a permit issued by Cyprus's Pharmaceutical Services (Ministry of Health). The application asks for your passport number, arrival and departure dates, and each drug's name, form, strength, daily dose and prescribed quantity, and must include a copy of your prescription showing the doctor's name, address, phone/fax and licence number. Without a permit, Customs treats narcotic drugs, psychotropic substances and other controlled pharmaceuticals as prohibited imports."
+    },
+    "notes": "Apply to Pharmaceutical Services before you travel (phscentral@phs.moh.gov.cy). The Application Form for Import for Personal Use is linked from the source page.",
+    "legal_source": {
+      "name": "Cyprus Ministry of Health, Pharmaceutical Services — Narcotics and Psychotropics (permits for visitors carrying controlled medicines)",
+      "url": "https://www.moh.gov.cy/moh/phs/phs.nsf/drugsphych_en/drugsphych_en"
+    },
+    "verified_at": "2026-10-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-cy",
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "dji",
+      "model aircraft"
+    ],
+    "destination": "CY",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Bringing a drone is not restricted, but flying it is regulated under EU (EASA) rules. Visitors from outside the EU who have not flown in another EU country before must register as an operator with Cyprus's Department of Civil Aviation (age 18+, €15, VISA card only) and attach the operator registration number to every drone. Registration is needed if the drone weighs more than 250 g, or has a camera or other sensor able to capture personal data. Non-EU residents also need an A1/A3 remote pilot certificate (online training and exam, €15, valid 5 years) — not required for a C0 drone under 250 g. No flying in no-fly zones and keep at least 8 km from airports and heliports."
+    },
+    "notes": "If you already registered in another EU country (where you first flew), do not register again in Cyprus.",
+    "legal_source": {
+      "name": "Cyprus Department of Civil Aviation — Unmanned Aircraft (drones.gov.cy)",
+      "url": "https://drones.gov.cy/"
+    },
+    "verified_at": "2026-10-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-cy",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition",
+      "air rifle",
+      "hunting gun",
+      "knife",
+      "flick knife",
+      "dagger",
+      "handcuffs",
+      "bow",
+      "archery",
+      "fireworks",
+      "explosives"
+    ],
+    "destination": "CY",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "Prohibited: flick knives and daggers; automatic firearms, long-barrel semi-automatic or repeating firearms, ammunition, military explosive devices and projectile launchers (per Law 113(I)/2004, First Annex). Restricted — permit from the Chief of Police needed: air rifles up to 4.5 mm, hunting guns taking no more than two cartridges per loading, sporting pistols, sporting archery equipment and handcuffs. Explosives, hunting cartridges and fireworks need an import licence from the Inspector of Mines."
+    },
+    "notes": "Customs states its lists are not exhaustive; contact Customs Headquarters or the Police before travelling with any weapon.",
+    "legal_source": {
+      "name": "Cyprus Customs & Excise Department — Prohibitions & restrictions (passengers)",
+      "url": "https://www.mof.gov.cy/mof/customs/customs.nsf/All/0D56470143C54886C22572BF002D7648?OpenDocument="
+    },
+    "verified_at": "2026-10-02",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   }
 ]
