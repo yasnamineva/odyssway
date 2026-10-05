@@ -91,33 +91,46 @@ export default async function HomePage() {
       />
 
       {/* Hero — the vintage-globe close-up (background.jpg): soft, pale bokeh
-          on its left, sharp map detail on its right. All hero content lives
-          in one left column over that quiet side, so nothing competes with
-          the globe. The photo starts below the masthead's rule, so the logo
-          always sits on plain paper, never on the image. */}
-      <section className="relative left-1/2 mt-4 w-screen -translate-x-1/2 overflow-hidden">
-        <Image
-          src={heroImage}
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-[70%_36%] sm:object-[58%_36%]"
-        />
-        <div className="absolute inset-0 bg-slate-50/60 sm:bg-transparent sm:bg-gradient-to-r sm:from-slate-50/80 sm:via-slate-50/45 sm:via-40% sm:to-transparent sm:to-70%" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-slate-50" />
-        <div className="relative mx-auto flex min-h-[min(86vh,800px)] max-w-6xl items-center px-4 pt-12 pb-24 sm:px-6 lg:pt-14 lg:pb-32">
-          <div className="w-full max-w-xl">
-            <Kicker>{t("home.hero.eyebrow")}</Kicker>
-            <h1 className="mt-4 font-display text-4xl leading-[1.08] font-extrabold text-slate-900 sm:text-5xl lg:text-6xl">
-              {t("home.hero.h1")}
-            </h1>
-            <p className="mt-5 max-w-md text-base leading-relaxed text-slate-700">
-              {t("home.hero.sub")}
-            </p>
+          on its left, sharp map detail on its right; all content in one left
+          column over that quiet side. The photo starts below the masthead's
+          rule, so the logo always sits on plain paper.
+          Phones: the photo band holds only the headline and intro, and the
+          quick check follows once, below it, on plain paper — one thing per
+          screen instead of everything at once. From lg up the photo spans
+          both bands (the text band drops `relative`, so the photo layer is
+          positioned against the whole section). One form in the DOM either way. */}
+      <section className="relative left-1/2 mt-4 w-screen -translate-x-1/2 overflow-hidden lg:flex lg:min-h-[min(86vh,800px)] lg:flex-col lg:justify-center">
+        {/* Phones: the photo band fills the first screen (minus the
+            masthead, ~5.5rem), so the quick check starts right below the
+            fold — the first thing you reach when you scroll. */}
+        <div className="relative flex min-h-[calc(100svh-5.5rem)] items-center lg:static lg:block lg:min-h-0">
+          <Image
+            src={heroImage}
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-[70%_36%] sm:object-[58%_36%]"
+          />
+          <div className="absolute inset-0 bg-slate-50/60 sm:bg-transparent sm:bg-gradient-to-r sm:from-slate-50/80 sm:via-slate-50/45 sm:via-40% sm:to-transparent sm:to-70%" />
+          <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-b from-transparent to-slate-50 lg:h-40" />
+          <div className="relative mx-auto w-full max-w-6xl px-4 pt-10 pb-24 sm:px-6 lg:pt-14 lg:pb-0">
+            <div className="max-w-xl">
+              <Kicker>{t("home.hero.eyebrow")}</Kicker>
+              <h1 className="mt-4 font-display text-4xl leading-[1.08] font-extrabold text-slate-900 sm:text-5xl lg:text-6xl">
+                {t("home.hero.h1")}
+              </h1>
+              <p className="mt-5 max-w-md text-base leading-relaxed text-slate-700">
+                {t("home.hero.sub")}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="relative mx-auto w-full max-w-6xl px-4 pt-2 pb-4 sm:px-6 lg:pt-8 lg:pb-32">
+          <div className="max-w-xl">
             {/* One primary action: the quick check. The calculator gets a
                 quiet text link rather than a competing button. */}
-            <div className="mt-8 rounded-md border border-slate-300 bg-[#fffdf8]/95 p-5 shadow-[0_1px_0_rgba(20,18,16,0.04),0_12px_32px_-18px_rgba(20,18,16,0.35)] backdrop-blur">
+            <div className="rounded-md border border-slate-300 bg-[#fffdf8]/95 p-5 shadow-[0_1px_0_rgba(20,18,16,0.04),0_12px_32px_-18px_rgba(20,18,16,0.35)] backdrop-blur">
               <HeroQuickCheck options={QUICK_CHECK_OPTIONS} />
             </div>
             <a

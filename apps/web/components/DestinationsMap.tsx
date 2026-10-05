@@ -103,11 +103,11 @@ export default function DestinationsMap({
   );
   const path = useMemo(() => geoPath(projection), [projection]);
 
-  const onPointerDown = useCallback((e: React.PointerEvent<SVGSVGElement>) => {
+  const onPointerDown = useCallback((e: React.PointerEvent<HTMLDivElement>) => {
     dragRef.current = { dragging: true, lastX: e.clientX, lastY: e.clientY };
     e.currentTarget.setPointerCapture(e.pointerId);
   }, []);
-  const onPointerMove = useCallback((e: React.PointerEvent<SVGSVGElement>) => {
+  const onPointerMove = useCallback((e: React.PointerEvent<HTMLDivElement>) => {
     if (!dragRef.current.dragging) return;
     const dx = e.clientX - dragRef.current.lastX;
     const dy = e.clientY - dragRef.current.lastY;
@@ -118,9 +118,9 @@ export default function DestinationsMap({
       lat: Math.max(-MAX_LAT, Math.min(MAX_LAT, r.lat - dy * DRAG_SENSITIVITY)),
     }));
   }, []);
-  const onPointerUp = useCallback((e: React.PointerEvent<SVGSVGElement>) => {
+  const onPointerUp = useCallback((e: React.PointerEvent<HTMLDivElement>) => {
     dragRef.current.dragging = false;
-    e.currentTarget.releasePointerCapture(e.pointerId);
+    if (e.currentTarget.hasPointerCapture(e.pointerId)) e.currentTarget.releasePointerCapture(e.pointerId);
   }, []);
 
   const schengenSet = useMemo(
@@ -189,16 +189,24 @@ export default function DestinationsMap({
         })}
       </ul>
 
-      <div className="relative mt-4">
+      {/* Drag handling lives on this HTML wrapper, not the <svg>: iOS Safari
+          ignores touch-action on SVG elements, so touches on the svg were
+          taken as page scrolls and the drag was cancelled. pan-y keeps
+          vertical page scrolling working on phones (the globe is nearly
+          screen-wide); a sideways swipe turns the globe. */}
+      <div
+        className="relative mt-4 cursor-grab touch-pan-y select-none active:cursor-grabbing"
+        onPointerDown={onPointerDown}
+        onPointerMove={onPointerMove}
+        onPointerUp={onPointerUp}
+        onPointerCancel={onPointerUp}
+        onPointerLeave={onPointerUp}
+      >
         <svg
           viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
           role="img"
           aria-label="Draggable globe showing every destination Trip Check currently covers"
-          className="relative h-auto w-full cursor-grab touch-none select-none active:cursor-grabbing"
-          onPointerDown={onPointerDown}
-          onPointerMove={onPointerMove}
-          onPointerUp={onPointerUp}
-          onPointerLeave={onPointerUp}
+          className="relative h-auto w-full"
         >
           <defs>
             <radialGradient id="vg-sea" cx="40%" cy="34%" r="75%">
