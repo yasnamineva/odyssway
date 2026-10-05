@@ -46,6 +46,8 @@ export async function generateMetadata(): Promise<Metadata> {
       title,
       description,
     },
+    // Google Search Console ownership check for odyssway.com.
+    verification: { google: "zjdlpm3mhVwsK4PwkLYRfXBjxbzUgaN5bxPlkfxy7IY" },
   };
 }
 
