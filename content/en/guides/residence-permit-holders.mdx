@@ -3,60 +3,70 @@
     Art. 2(3) (scope exclusions); EC short-stay calculator manual §1. Retrieved via
     Publications Office CELLAR, checked 2026-07-13. */}
 
+import { Callout, Compare, Fact, FactGrid, InShort, LinkCard, LinkCards, More, Sources, Step, Steps } from "../../../apps/web/components/content/Blocks";
+import InfoTip from "../../../apps/web/components/content/InfoTip";
+import { CalendarClockIcon, ClockIcon, DocumentSearchIcon, PassportIcon } from "../../../apps/web/components/icons";
+
 # Residence permit holders: how 90/180 works for you
 
-> **The short answer:** days spent in the country that issued your residence
-> permit or long-stay (D) visa don't consume your 90/180 allowance — the
-> Schengen Borders Code says such periods "shall not be taken into account".
-> But days you spend in **other** Schengen countries count like anyone
-> else's. That's the trap.
+<InShort>
+  Days in the country that issued your **residence permit or D visa** don't
+  count. Days in **other** Schengen countries count exactly like a tourist's.
+  That's the trap.
+</InShort>
 
-## The rule, from the regulation
+<Compare
+  yesTitle="Counts toward 90 in 180"
+  noTitle="Doesn't count"
+  yes={[<>Your weekend in Lisbon, week in Paris, ski trip to Austria — any Schengen country <strong>other</strong> than the one that issued your permit.</>, <>Days in a <strong>gap</strong> between two permits.</>, <>Short-stay days you used <strong>before</strong> you got the permit.</>]}
+  no={[<>Days in the country that issued your permit or long-stay (D) visa. <InfoTip label="The exact wording">Schengen Borders Code, Art. 6(2): "Periods of stay authorised under a residence permit or a long-stay visa shall not be taken into account in the calculation of the duration of stay on the territory of the Member States."</InfoTip></>]}
+/>
 
-Schengen Borders Code, Art. 6(2): "Periods of stay authorised under a
-residence permit or a long-stay visa shall not be taken into account in the
-calculation of the duration of stay on the territory of the Member States."
+<Callout title="The trap, in one example">
+  You live in Spain on a residence permit. Over six months you spend more than
+  90 days travelling in other Schengen countries. That's an **overstay** — even
+  though you legally live in the Schengen Area. Cross-border commuters,
+  consultants and families split between two countries hit this without
+  realising.
+</Callout>
 
-So if you live in Spain on a residence permit, your months in Spain are not
-short-stay days. Your weekend in Lisbon, your week in Paris, your ski trip
-to Austria — those are ordinary short-stay days, counted against 90 in any
-180, exactly as for a tourist.
+## Count it in the calculator
 
-## The trap, concretely
+<Steps>
+  <Step title="Add your home-country stay">Enter the dates you were in the country that issued your permit.</Step>
+  <Step title="Pick that country and tick the permit box">"Residence permit / long-stay (D) visa issued by this country" — those days are left out.</Step>
+  <Step title="Add your other trips">Everything else counts against 90 in any 180.</Step>
+</Steps>
 
-A permit holder living in Spain who travels through other Schengen countries
-for more than 90 days within a 180-day window is overstaying — even though
-they legally *live* in the Schengen Area. Frequent cross-border commuters,
-consultants and families split between two EU countries hit this without
-realising it.
+<LinkCards>
+  <LinkCard href="/calculator" icon={<CalendarClockIcon />} title="Open the calculator">It handles permit days for you.</LinkCard>
+</LinkCards>
 
-Our [calculator](/calculator) models this: add your home-country stay, pick
-the country, and tick "residence permit / long-stay (D) visa issued by this
-country" — those days are excluded, and your trips elsewhere are counted.
+## Good to know
 
-## What about the EES?
+<FactGrid columns={3}>
+  <Fact icon={<ClockIcon />} title="Plan renewals">A gap between permits isn't covered — those days count.</Fact>
+  <Fact icon={<CalendarClockIcon />} title="Old trips still count">A new permit doesn't erase short-stay days used before it.</Fact>
+  <Fact icon={<DocumentSearchIcon />} title="Keep your own records">Borders inside Schengen aren't checked, so tickets and receipts prove your count.</Fact>
+</FactGrid>
 
-Holders of residence permits and long-stay visas are **outside the scope of
-the EES** (Regulation (EU) 2017/2226, Art. 2(3)) — your crossings aren't
-recorded in it the way a tourist's are. Don't rely on the system to count
-your other-country days for you: it's your own responsibility.
+<More summary="Does the EES count my days?">
+  No. Holders of residence permits and long-stay visas are outside the scope of
+  the EES (Regulation (EU) 2017/2226, Art. 2(3)), so your crossings aren't
+  recorded the way a tourist's are. Counting your days in other countries is
+  your own responsibility.
+</More>
 
-## Practical notes
+<LinkCards>
+  <LinkCard href="/rules/90-180-rule" icon={<CalendarClockIcon />} title="How 90/180 works">The rolling window, with an interactive example.</LinkCard>
+  <LinkCard href="/guides/dual-citizens" icon={<PassportIcon />} title="Also an EU citizen?">Then the rule doesn't apply at all.</LinkCard>
+</LinkCards>
 
-- **Renewals and gaps:** the exclusion covers periods "authorised under" the
-  permit. A gap between permits isn't covered — those days count as short
-  stay. Plan renewals accordingly.
-- **New permit, old trips:** getting a permit doesn't erase short-stay days
-  you used before it — the window keeps rolling.
-- **Keep evidence** of where you were: since border crossings inside
-  Schengen aren't checked, your own records (tickets, receipts) are what
-  proves your day count if questioned.
-
----
-
+<Sources>
 **Sources:** [Regulation (EU) 2016/399, Art. 6(2) — consolidated version](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02016R0399-20251012);
 [Regulation (EU) 2017/2226, Art. 2(3) — consolidated version](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02017R2226-20260612);
 [EC short-stay calculator user manual](https://ec.europa.eu/assets/home/visa-calculator/docs/short_stay_schengen_calculator_user_manual_en.pdf) §1;
 [update history](/changelog).
 Checked against official sources on 2026-07-13. Informational only — not
 legal advice.
+</Sources>

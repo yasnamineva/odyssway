@@ -4,64 +4,74 @@
     02017R2226-20260612, Art. 2 (scope). Retrieved via Publications Office CELLAR,
     checked 2026-07-13. */}
 
+import { Callout, Compare, Fact, FactGrid, InShort, LinkCard, LinkCards, More, Sources } from "../../../apps/web/components/content/Blocks";
+import InfoTip from "../../../apps/web/components/content/InfoTip";
+import { CalendarClockIcon, GlobeIcon, PassportIcon, ShieldCheckIcon } from "../../../apps/web/components/icons";
+
 # Dual citizens: which passport for Schengen and the EES?
 
-> **The short answer:** if one of your nationalities is an EU country, the
-> 90/180-day rule does **not** apply to you — it only limits "third-country
-> nationals", and the law defines that as someone who is *not* a Union
-> citizen. Travel on your EU passport and there's no day limit and no EES
-> biometric record of your crossings.
+<InShort>
+  If one of your nationalities is an **EU country**, the 90/180-day rule
+  doesn't apply to you. Travel on your **EU passport**: no day limit, and no
+  EES record of your crossings.
+</InShort>
 
-## What the law actually says
+## Which situation are you in?
 
-The 90-days-in-any-180 limit comes from the Schengen Borders Code's entry
-conditions **for third-country nationals** (Regulation (EU) 2016/399,
-Art. 6). The same regulation defines a third-country national as "any person
-who is not a Union citizen" (Art. 2). A dual citizen holding, say, both US
-and Italian nationality **is** a Union citizen — so the short-stay limit
-simply isn't about them.
+<FactGrid columns={3}>
+  <Fact icon={<ShieldCheckIcon />} title="One nationality is EU">
+    No 90/180 limit, no EES registration — as long as you cross on your EU
+    passport.
+  </Fact>
+  <Fact icon={<GlobeIcon />} title="Both are non-EU">
+    The rule applies whichever passport you use. Your crossings are matched
+    biometrically, not per document.
+  </Fact>
+  <Fact icon={<PassportIcon />} title="Family member of an EU citizen">
+    With an EU residence card you're outside the EES too. Without one, you're
+    registered like other non-EU travellers. <InfoTip label="Legal basis">Free Movement Directive 2004/38/EC; EES Regulation (EU) 2017/2226, Art. 2(3)(a).</InfoTip>
+  </Fact>
+</FactGrid>
 
-The Entry/Exit System works the same way: its scope covers third-country
-nationals admitted for a short stay (Regulation (EU) 2017/2226, Art. 2).
-Union citizens are not registered in it — no fingerprint enrolment, no
-entry/exit records, no automated overstay checks.
+## Which passport to show at the EU border
 
-## The practical part: documents
+<Compare
+  yesTitle="Your EU passport"
+  noTitle="Your non-EU passport"
+  yes={[<>Processed as an EU citizen.</>, <>No 90/180 count.</>, <>No EES fingerprints or records.</>]}
+  no={[<>Processed as a non-EU traveller on that document.</>, <>Registered in the EES.</>, <>Days count toward 90/180.</>]}
+/>
 
-Border systems treat you according to the document you present. Two
-consequences:
+Use the same EU passport **consistently** for EU crossings — mixing documents
+invites confusion.
 
-- **Entering and leaving the EU on your EU passport** means you're processed
-  as a Union citizen: no 90/180 count, no EES record.
-- **Mixing documents invites confusion.** If you enter on your non-EU
-  passport, you'll be processed — and EES-registered — as a third-country
-  national on that document. Use the same (EU) document consistently for EU
-  border crossings.
+<Callout title="Other borders have their own rules" tone="info">
+  Airlines and other countries decide for themselves. Many require their own
+  citizens to enter on the national passport — the US does for US citizens.
+  Pick the right passport per border, and stick with it.
+</Callout>
 
-Remember that airlines and *other* countries have their own rules: many
-countries require their own citizens to enter *them* on the national
-passport (the US does, for US citizens). Nothing here changes that — pick
-per border, consistently.
+<More summary="What the law actually says">
+  The 90-in-180 limit is an entry condition **for third-country nationals**
+  (Schengen Borders Code, Regulation (EU) 2016/399, Art. 6). The same
+  regulation defines a third-country national as "any person who is not a
+  Union citizen" (Art. 2). Someone with both US and Italian nationality **is**
+  a Union citizen, so the limit isn't about them.
 
-## One nationality EU, spouse or family not?
+  The EES covers third-country nationals admitted for a short stay
+  (Regulation (EU) 2017/2226, Art. 2). Union citizens aren't registered: no
+  fingerprints, no entry/exit records, no automated overstay checks.
+</More>
 
-Non-EU **family members of EU citizens** have their own regime: with a
-residence card under the Free Movement Directive (2004/38/EC) they are
-outside EES scope too (Reg. 2017/2226, Art. 2(3)(a)). Without one, they are
-registered like other third-country nationals. That's a separate guide-worthy
-topic — for now, know the distinction exists.
+<LinkCards>
+  <LinkCard href="/calculator" icon={<CalendarClockIcon />} title="Both nationalities non-EU?">Count your days with the calculator.</LinkCard>
+  <LinkCard href="/guides/residence-permit-holders" icon={<PassportIcon />} title="Living here on a permit?">How your days are counted.</LinkCard>
+</LinkCards>
 
-## If both your nationalities are non-EU
-
-Then the 90/180 rule applies to you regardless of which passport you use —
-the limit attaches to you as a person, and since full EES deployment your
-crossings are matched biometrically, not per document. Count your days with
-the [calculator](/calculator).
-
----
-
+<Sources>
 **Sources:** [Regulation (EU) 2016/399, Arts. 2 and 6 — consolidated version](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02016R0399-20251012);
 [Regulation (EU) 2017/2226, Art. 2 — consolidated version](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02017R2226-20260612);
 [update history](/changelog).
 Checked against official sources on 2026-07-13. Informational only — not
 legal advice.
+</Sources>

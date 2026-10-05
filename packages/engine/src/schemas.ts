@@ -119,6 +119,10 @@ export const eesRecordSchema = z
   .object({
     country: countryCodeSchema,
     authority: z.string().min(1),
+    /** Short display name of the authority to write to (from `authority`). */
+    contactName: z.string().min(1).optional(),
+    /** Its email, only when `contactChannel` publishes one for corrections. */
+    contactEmail: z.email().optional(),
     contactChannel: z.string().min(1),
     formUrl: z.url().optional(),
     expectedTimeline: z.string().optional(),
@@ -126,7 +130,11 @@ export const eesRecordSchema = z
     languageRequirements: z.string().optional(),
     ...verificationFields,
   })
-  .superRefine(requireVerifierWhenVerified);
+  .superRefine(requireVerifierWhenVerified)
+  .refine((r) => !r.contactEmail || r.contactChannel.includes(r.contactEmail), {
+    message: "contactEmail must appear in the verified contactChannel text",
+    path: ["contactEmail"],
+  });
 export const eesFileSchema = z.array(eesRecordSchema);
 
 // --- §5.6 data/etias.json ---

@@ -6,7 +6,7 @@ const routes: Array<{ path: string; expectText: string }> = [
   { path: "/", expectText: "Can you go — and for how long?" },
   { path: "/trip-check", expectText: "Where are you from, and where are you going?" },
   { path: "/calculator", expectText: "Schengen 90/180 day calculator" },
-  { path: "/rules/90-180-rule", expectText: "The short answer" },
+  { path: "/rules/90-180-rule", expectText: "In short" },
   { path: "/rules/overstay-penalties", expectText: "Return Directive" },
   { path: "/developers", expectText: "GET /api/v1/trip-check" },
   { path: "/ees", expectText: "Entry/Exit System" },
@@ -255,4 +255,18 @@ test("embeddable calculator renders without site chrome; /widget shows the snipp
   await page.goto("/widget");
   await expect(page.locator("pre")).toContainText("/embed/calculator");
   await expect(page.locator("pre")).toContainText("/calculator\">Odyssway</a>");
+});
+
+test("info icons open a note on tap and close with Escape; detail dropdowns expand", async ({ page }) => {
+  await page.goto("/ees");
+  const tip = page.getByRole("button", { name: "How the counting works" });
+  const note = page.getByRole("note").filter({ hasText: "90 days in any 180-day period" });
+  await expect(note).toBeHidden();
+  await tip.click();
+  await expect(note).toBeVisible();
+  await page.keyboard.press("Escape");
+  await expect(note).toBeHidden();
+
+  await page.getByText("What exactly is the EES?").click();
+  await expect(page.getByText("eu-LISA")).toBeVisible();
 });

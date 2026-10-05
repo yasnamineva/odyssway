@@ -3,51 +3,64 @@
     checked 2026-07-13. This page deliberately sticks to what the official
     source states; procedural details not published there are not invented. */}
 
+import { Fact, FactGrid, InShort, LinkCard, LinkCards, Sources, Step, Steps } from "../../../apps/web/components/content/Blocks";
+import InfoTip from "../../../apps/web/components/content/InfoTip";
+import { AlertIcon, CalendarClockIcon, DocumentSearchIcon, FingerprintIcon, GateIcon, PassportIcon } from "../../../apps/web/components/icons";
+
 # EES at the border: what to expect
 
-> **The short answer:** no more passport stamps. On your first EES crossing
-> your passport data, **fingerprints and a facial image** are registered; on
-> later trips the system verifies you against that record. Each entry and exit
-> is logged with its **date and place**, and overstays are flagged
-> automatically.
+<InShort>
+  If you're a non-EU traveller on a short stay, no more passport stamps. Your **first** crossing registers your passport,
+  **fingerprints and a face photo**. After that, each crossing checks you
+  against that record and logs the **date and place**.
+</InShort>
 
-## Your first crossing after EES
+## Two kinds of crossing
 
-The EES registers your name, your travel document data, and your biometrics —
-fingerprints and a captured facial image. This enrolment happens at the border
-of whichever of the 29 participating countries you cross first. Because
-enrolment involves more steps than the old stamp, first-time crossings take
-longer than you may be used to.
-
-## Every crossing after that
-
-Your record already exists, so the border check verifies you against it and
-logs the date and place of your entry or exit. The European Commission notes
-the EES enables wider use of **automated border control and self-service
-systems** — expect kiosks and e-gates at larger crossings.
+<FactGrid>
+  <Fact icon={<FingerprintIcon />} title="Your first crossing">
+    Passport data, fingerprints and a face photo are registered at whichever
+    of the 29 countries you enter first. Expect it to take longer than a stamp.
+  </Fact>
+  <Fact icon={<GateIcon />} title="Every crossing after that">
+    You're checked against your record and the date and place are logged.
+    Larger crossings increasingly use kiosks and e-gates.
+  </Fact>
+</FactGrid>
 
 ## What the system does with your record
 
-- Tracks your entries and exits against the [90/180-day rule](/rules/90-180-rule)
-  — overstays are **detected automatically**
-- Records refusals of entry
-- Helps border authorities identify travellers using fake or forged documents
+<FactGrid columns={3}>
+  <Fact icon={<CalendarClockIcon />} title="Counts your days">Against the 90/180 rule. Overstays are flagged automatically.</Fact>
+  <Fact icon={<AlertIcon />} title="Records refusals">Any refusal of entry is stored.</Fact>
+  <Fact icon={<PassportIcon />} title="Spots forged documents">It helps officers catch fake or forged passports.</Fact>
+</FactGrid>
 
-## Practical implications
+## Before you go
 
-- **Count your days before you travel** — the system counts them digitally
-  either way. Our [calculator](/calculator) matches the EU's official
-  methodology.
-- **Your record can contain errors** (for example an exit that failed to
-  register). The EES Regulation is the legal basis for accessing and
-  correcting your data; per-country guides on how to do that are in
-  preparation.
-- EES applies to **non-EU nationals on short stays** in the 29 participating
-  countries.
+<Steps>
+  <Step title="Count your days">
+    The system counts them digitally either way. Our [calculator](/calculator)
+    uses the EU's official method.
+  </Step>
+  <Step title="Keep your travel records">
+    Boarding passes and bookings are your proof if a crossing is recorded
+    wrongly.
+  </Step>
+  <Step title="Know how to fix a mistake">
+    A record can contain errors, such as an exit that didn't register. You
+    have the right to get it corrected. <InfoTip label="Legal basis">The EES Regulation, (EU) 2017/2226, gives you the right to access and correct your data (Article 52).</InfoTip>
+  </Step>
+</Steps>
 
----
+<LinkCards>
+  <LinkCard href="/ees/missing-exit-record" icon={<DocumentSearchIcon />} title="No exit recorded?">How to get it fixed.</LinkCard>
+  <LinkCard href="/ees" icon={<GateIcon />} title="Correct your record, by country">Contacts and template letters for all 29 countries.</LinkCard>
+</LinkCards>
 
-**Source:** [European Commission — Entry/Exit System](https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/entry-exit-system_en)
-(Regulation (EU) 2017/2226); [update history](/changelog#dataset-ees).
-Checked against official sources on 2026-07-13. Informational only — not
-legal advice.
+<Sources>
+  **Source:** [European Commission — Entry/Exit System](https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/entry-exit-system_en)
+  (Regulation (EU) 2017/2226); [update history](/changelog#dataset-ees).
+  Checked against official sources on 2026-07-13. Informational only — not
+  legal advice.
+</Sources>

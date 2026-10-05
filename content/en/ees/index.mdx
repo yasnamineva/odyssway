@@ -1,58 +1,73 @@
 {/* Facts sourced from: EC Migration & Home Affairs — Entry/Exit System
     (https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/entry-exit-system_en),
-    checked 2026-07-13. */}
+    checked 2026-07-13. Country list: data/ees.json (checked 2026-10-05). */}
+
+import { Fact, FactGrid, InShort, KeyNumbers, LinkCard, LinkCards, More, Sources } from "../../../apps/web/components/content/Blocks";
+import InfoTip from "../../../apps/web/components/content/InfoTip";
+import { EesCountryGrid } from "../../../apps/web/components/content/CountryGrid";
+import { AlertIcon, CompassIcon, CalendarClockIcon, FingerprintIcon, GateIcon, PassportIcon, UndoIcon } from "../../../apps/web/components/icons";
 
 # The EU Entry/Exit System (EES)
 
-> **The short answer:** since **10 April 2026** the EES is fully operational.
-> It replaced passport stamping: every non-EU traveller's entries and exits
-> across 29 European countries are now registered digitally, and overstays are
-> **detected automatically**. First enrolment includes fingerprints and a
-> facial image.
+<InShort>
+  No more passport stamps. Since **10 April 2026**, every non-EU traveller's
+  entries and exits are recorded digitally, and overstays are **flagged
+  automatically**.
+</InShort>
 
-## What the EES is
+<KeyNumbers
+  items={[
+    { value: "29", label: "European countries use it" },
+    { value: "10 Apr 2026", label: "Fully running since" },
+    { value: "90/180", label: "Days counted for you, automatically" },
+  ]}
+/>
 
-The EES is an automated IT system for registering non-EU nationals travelling
-for a short stay, operated at the external borders of 29 participating
-European countries. It began operating progressively on **12 October 2025**
-and became fully operational on **10 April 2026**, replacing manual passport
-stamping. The system is managed by the EU agency eu-LISA and governed by
-Regulation (EU) 2017/2226 (with the progressive rollout set by Regulation
-(EU) 2025/1534).
+<More summary="What exactly is the EES?">
+  An automated IT system that registers non-EU nationals travelling for a short
+  stay, at the external borders of 29 European countries. It started step by
+  step on **12 October 2025** and became fully operational on **10 April
+  2026**. It is run by the EU agency eu-LISA under Regulation (EU) 2017/2226;
+  the gradual start was set by Regulation (EU) 2025/1534.
+</More>
 
 ## What gets recorded about you
 
-- Your name and travel document data
-- Biometric data: **fingerprints and a captured facial image**
-- The **date and place** of each entry and each exit
-- Any **refusals of entry**
+<FactGrid>
+  <Fact icon={<PassportIcon />} title="Your passport details">Name and travel document data.</Fact>
+  <Fact icon={<FingerprintIcon />} title="Fingerprints and a face photo">Taken on your first crossing.</Fact>
+  <Fact icon={<CalendarClockIcon />} title="Every entry and exit">The date and the border crossing point.</Fact>
+  <Fact icon={<AlertIcon />} title="Refusals of entry">If you were ever turned away.</Fact>
+</FactGrid>
 
-## Why it matters for the 90/180 rule
+## Why it matters
 
-Because entries and exits are recorded centrally, the system detects
-overstayers automatically. Miscounting your days is no longer a paperwork
-problem — it's flagged by the system itself. Check your dates before you
-travel with our [90/180 calculator](/calculator), and read
-[how the rule works](/rules/90-180-rule).
+Your days are now counted by the system itself, so a miscount shows up as an
+overstay. <InfoTip label="How the counting works">The Schengen limit is 90 days in any 180-day period. Entry and exit days both count. See [the 90/180 rule](/rules/90-180-rule).</InfoTip>
+
+<LinkCards>
+  <LinkCard href="/calculator" icon={<CalendarClockIcon />} title="Check your days">Our 90/180 calculator uses the EU's own method.</LinkCard>
+  <LinkCard href="/rules/90-180-rule" icon={<CompassIcon />} title="How the rule works">The rolling window, in plain words.</LinkCard>
+</LinkCards>
 
 ## Guides
 
-- [What to expect at the border](/ees/what-to-expect)
-- [The EES says you overstayed — but you didn't](/ees/dispute-overstay) — your
-  correction rights under Article 52, deadlines, and what evidence to gather
-- [No exit recorded? How to get it fixed](/ees/missing-exit-record) — why a
-  missing exit flags you as an overstayer, and the steps to correct it
+<LinkCards columns={3}>
+  <LinkCard href="/ees/what-to-expect" icon={<GateIcon />} title="At the border">What happens on your first and later crossings.</LinkCard>
+  <LinkCard href="/ees/dispute-overstay" icon={<AlertIcon />} title="It says I overstayed — I didn't">Your right to a correction, and the deadlines.</LinkCard>
+  <LinkCard href="/ees/missing-exit-record" icon={<UndoIcon />} title="No exit recorded">Why it matters and how to get it fixed.</LinkCard>
+</LinkCards>
 
-## Correct your EES record, by country
+## Correct your record, by country
 
-Who to contact in each of the 29 EES countries, with a template letter in
-English and the national language:
+Pick the country to write to. Each guide names the authority, its contact
+details and a ready-made letter in English and the local language.
 
-[Austria](/ees/data-access/at) · [Belgium](/ees/data-access/be) · [Bulgaria](/ees/data-access/bg) · [Croatia](/ees/data-access/hr) · [Czech Republic](/ees/data-access/cz) · [Denmark](/ees/data-access/dk) · [Estonia](/ees/data-access/ee) · [Finland](/ees/data-access/fi) · [France](/ees/data-access/fr) · [Germany](/ees/data-access/de) · [Greece](/ees/data-access/gr) · [Hungary](/ees/data-access/hu) · [Iceland](/ees/data-access/is) · [Italy](/ees/data-access/it) · [Latvia](/ees/data-access/lv) · [Liechtenstein](/ees/data-access/li) · [Lithuania](/ees/data-access/lt) · [Luxembourg](/ees/data-access/lu) · [Malta](/ees/data-access/mt) · [Netherlands](/ees/data-access/nl) · [Norway](/ees/data-access/no) · [Poland](/ees/data-access/pl) · [Portugal](/ees/data-access/pt) · [Romania](/ees/data-access/ro) · [Slovakia](/ees/data-access/sk) · [Slovenia](/ees/data-access/si) · [Spain](/ees/data-access/es) · [Sweden](/ees/data-access/se) · [Switzerland](/ees/data-access/ch)
+<EesCountryGrid />
 
----
-
-**Source:** [European Commission — Entry/Exit System](https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/entry-exit-system_en);
-[update history](/changelog#dataset-ees).
-Checked against official sources on 2026-07-13. Informational only — not legal
-advice.
+<Sources>
+  **Source:** [European Commission — Entry/Exit System](https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/entry-exit-system_en);
+  [update history](/changelog#dataset-ees). Checked against official sources on
+  2026-07-13; country contacts on 2026-10-05. Informational only — not legal
+  advice.
+</Sources>

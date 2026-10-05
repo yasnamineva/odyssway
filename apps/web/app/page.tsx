@@ -9,6 +9,7 @@ import HeroQuickCheck from "../components/HeroQuickCheck";
 import { ArrowRightIcon, CalendarClockIcon, MapPinRouteIcon } from "../components/icons";
 import Reveal from "../components/Reveal";
 import RuleRuler from "../components/RuleRuler";
+import { More } from "../components/content/Blocks";
 import SampleAnswer from "../components/SampleAnswer";
 import { blogPostsByDate } from "../lib/blog";
 import { schengenCountries } from "../lib/countries";
@@ -251,18 +252,16 @@ export default async function HomePage() {
               </span>
             </a>
 
-            <dl className="mt-5 space-y-4 text-[13px] leading-relaxed">
-              <div>
-                <dt className="font-semibold text-slate-900">{t("home.coverageMap.destinationsLabel")}</dt>
-                <dd className="mt-1 text-slate-600">{DESTINATION_NAMES.join(", ")}</dd>
-              </div>
-              <div>
-                <dt className="font-semibold text-slate-900">
-                  {t("home.coverageMap.schengenLabel", { count: SCHENGEN_NAMES.length })}
-                </dt>
-                <dd className="mt-1 text-slate-600">{SCHENGEN_NAMES.join(", ")}</dd>
-              </div>
-            </dl>
+            {/* The globe already shows coverage; the names are there for
+                anyone who wants to scan them, not in everyone's way. */}
+            <More summary={t("home.coverageMap.listToggle")}>
+              <p className="font-semibold text-slate-900">{t("home.coverageMap.destinationsLabel")}</p>
+              <p className="mt-1 text-slate-600">{DESTINATION_NAMES.join(", ")}</p>
+              <p className="mt-4 font-semibold text-slate-900">
+                {t("home.coverageMap.schengenLabel", { count: SCHENGEN_NAMES.length })}
+              </p>
+              <p className="mt-1 text-slate-600">{SCHENGEN_NAMES.join(", ")}</p>
+            </More>
 
             <a
               href="/sources"

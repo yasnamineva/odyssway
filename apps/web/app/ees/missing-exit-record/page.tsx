@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function EesMissingExitRecordPage() {
   return (
-    <article className="mx-auto max-w-2xl">
+    <article className="mx-auto max-w-3xl">
       <MissingExitContent />
     </article>
   );

@@ -92,3 +92,100 @@ export function ArrowRightIcon({ className }: IconProps) {
     </svg>
   );
 }
+
+export function FingerprintIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className} aria-hidden="true">
+      <path d="M6.5 7.5A7 7 0 0118.8 10" />
+      <path d="M5 12a7 7 0 01.6-2.8M19 13.5c0 2.3-.4 4.3-1.2 6" />
+      <path d="M8.5 19.5c-.7-1.6-1-3.5-1-5.5a4.5 4.5 0 019 0c0 1.3-.1 2.6-.4 3.8" />
+      <path d="M12 14c0 2.6.5 4.6 1.4 6.2M11.2 20.5c-.8-1.7-1.2-3.8-1.2-6.5a2 2 0 014 0" />
+    </svg>
+  );
+}
+
+export function FaceScanIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className} aria-hidden="true">
+      <path d="M4 8V5.5A1.5 1.5 0 015.5 4H8M16 4h2.5A1.5 1.5 0 0120 5.5V8M20 16v2.5a1.5 1.5 0 01-1.5 1.5H16M8 20H5.5A1.5 1.5 0 014 18.5V16" />
+      <circle cx="12" cy="10.5" r="2.75" />
+      <path d="M7.5 17c.9-1.8 2.5-2.75 4.5-2.75s3.6.95 4.5 2.75" />
+    </svg>
+  );
+}
+
+export function PassportIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className} aria-hidden="true">
+      <rect x="5" y="3" width="14" height="18" rx="2" />
+      <circle cx="12" cy="10" r="3" />
+      <path d="M9 10h6M12 7c.9.8 1.3 1.8 1.3 3s-.4 2.2-1.3 3M9 17h6" />
+    </svg>
+  );
+}
+
+export function AlertIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className} aria-hidden="true">
+      <path d="M12 4l9 15.5H3z" />
+      <path d="M12 10v4M12 16.8v.2" />
+    </svg>
+  );
+}
+
+export function LetterIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className} aria-hidden="true">
+      <rect x="3.5" y="5.5" width="17" height="13" rx="2" />
+      <path d="M4 7l8 6 8-6" />
+    </svg>
+  );
+}
+
+export function ClockIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className} aria-hidden="true">
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M12 7.5V12l3 2" />
+    </svg>
+  );
+}
+
+export function GateIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className} aria-hidden="true">
+      <path d="M4 20V6.5A1.5 1.5 0 015.5 5h3A1.5 1.5 0 0110 6.5V20M14 20V6.5A1.5 1.5 0 0115.5 5h3A1.5 1.5 0 0120 6.5V20M2.5 20h19" />
+      <path d="M10 12h4" strokeDasharray="1.5 1.5" />
+      <path d="M7 9v1.5M17 9v1.5" />
+    </svg>
+  );
+}
+
+export function InfoIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className} aria-hidden="true">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 11v5.5M12 7.8v.2" />
+    </svg>
+  );
+}
+
+export function DocumentSearchIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className} aria-hidden="true">
+      <path d="M13.5 3.5H7A1.5 1.5 0 005.5 5v14A1.5 1.5 0 007 20.5h4" />
+      <path d="M13.5 3.5L18.5 8.5V11M13.5 3.5v5h5" />
+      <circle cx="16" cy="16" r="2.75" />
+      <path d="M18 18l2.5 2.5" />
+    </svg>
+  );
+}
+
+export function UndoIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className} aria-hidden="true">
+      <path d="M9 14L4 9l5-5" />
+      <path d="M4 9h10.5a5.5 5.5 0 010 11H11" />
+    </svg>
+  );
+}

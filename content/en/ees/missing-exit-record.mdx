@@ -5,80 +5,101 @@
     the EES", "Check how long you can stay", "Contact details for data
     protection matters", FAQ), checked 2026-10-05. */}
 
+import { DeadlineTrack, Fact, FactGrid, InShort, LinkCard, LinkCards, More, Sources, Step, Steps } from "../../../apps/web/components/content/Blocks";
+import InfoTip from "../../../apps/web/components/content/InfoTip";
+import { AlertIcon, CalendarClockIcon, DocumentSearchIcon, GateIcon, LetterIcon, ScaleIcon } from "../../../apps/web/components/icons";
+
 # EES missing exit record: how to get it fixed
 
-> **The short answer:** if the EES has no exit recorded for you, it will
-> automatically treat you as an overstayer once your allowed stay runs out.
-> Gather proof of when you actually left, then ask an EES **data controller**
-> to correct the record — the EU lists one for every participating country.
-> Under **Article 52 of the EES Regulation**, you can ask **any** of those
-> countries, and they must **reply within 45 days**.
+<InShort>
+  With no exit on record, the EES treats you as an **overstayer** once your
+  allowed stay runs out. Gather proof of when you left and ask any EES country
+  to correct it — it must **reply within 45 days**.
+</InShort>
 
 ## Why a missing exit matters
 
-Every entry and exit is logged with its date and place. The EES then checks,
-automatically, which records have **no exit** once the authorised stay has
-ended — and anyone identified that way is added to a list of overstayers that
-border and immigration authorities can see. If the record is missing, the
-system assumes you never left.
-
-A missing exit also keeps your data longer: records without an exit are stored
-for **5 years** from the end of your authorised stay, instead of the usual 3.
+<FactGrid>
+  <Fact icon={<AlertIcon />} title="You're listed as an overstayer">
+    The system checks automatically for records with no exit after the stay
+    ends, and border and immigration authorities can see that list.
+  </Fact>
+  <Fact icon={<CalendarClockIcon />} title="Your data is kept longer">
+    5 years from the end of your allowed stay, instead of the usual 3.
+  </Fact>
+</FactGrid>
 
 ## First, check what the system shows
 
-The EU runs an official
-[“Check how long you can stay” tool](https://travel-europe.europa.eu/en/ees/check-how-long-you-can-stay).
-Enter your passport details and planned dates and it gives an **OK / NOT OK**
-answer plus your remaining days. Passport control officers can also tell you
-your remaining stay. Note that the tool does not count time in the Schengen
-area that began before 10 April 2026.
+<LinkCards>
+  <LinkCard href="https://travel-europe.europa.eu/en/ees/check-how-long-you-can-stay" icon={<DocumentSearchIcon />} title="The EU's official stay checker">
+    Enter your passport and dates for an OK / NOT OK answer and your days left.
+  </LinkCard>
+  <LinkCard href="/calculator" icon={<CalendarClockIcon />} title="Our 90/180 calculator">
+    Count your own days so you can say exactly which day is wrong.
+  </LinkCard>
+</LinkCards>
 
-If the result doesn't match your own count, run your dates through our
-[90/180 calculator](/calculator) so you can say exactly which day is wrong.
+<More summary="Good to know about the EU checker">
+  Border officers can also tell you your remaining stay. The EU's tool doesn't
+  count time in the Schengen area that began before 10 April 2026.
+</More>
 
 ## How to get it corrected
 
-1. **Collect proof of your exit.** Boarding passes, e-tickets, and booking or
-   payment records showing where you were. If a border officer stamped your
-   passport on the way out — the regulation's fall-back when the system can't
-   record a crossing — that stamp is worth keeping too.
-2. **Contact a data controller.** The EU's official
-   [contact list](https://travel-europe.europa.eu/en/ees/contact-details-for-data-protection-matters)
-   names, for each of the 29 countries, the authority that handles requests to
-   **access or correct** your EES data. The EU suggests contacting one of the
-   countries you travelled to; for questions about your remaining stay, its FAQ
-   points you to the country where you **last entered or exited**.
-3. **Send a written correction request** citing Article 52 of Regulation (EU)
-   2017/2226: who you are, which crossing is missing or wrong, the correct
-   facts, and your evidence. Our [country guides](/ees) include
-   a ready-made template letter in English and the local language.
-4. **Watch the deadlines.** The country must reply within **45 days**. If it
-   has to consult the country that made the record, it must contact that
-   country within **7 days**, and the check must be done within **30 days** of
-   that contact. If they correct the record, they must confirm it to you in
-   writing.
+<Steps>
+  <Step title="Collect proof you left">
+    Boarding passes, e-tickets, bookings or payments that show where you were.
+    An exit stamp in your passport is worth keeping too. <InfoTip label="Why a stamp">When the system can't record a crossing, the regulation's fall-back is a passport stamp (Article 21).</InfoTip>
+  </Step>
+  <Step title="Pick a country to write to">
+    The EU lists one authority per country for **access and corrections**.
+    Writing to a country you travelled to is the natural choice; for questions
+    about your remaining stay, the EU points you to the country where you last
+    entered or left.
+  </Step>
+  <Step title="Send a written correction request">
+    Who you are, which crossing is missing or wrong, the correct facts, and your
+    proof — citing Article 52 of Regulation (EU) 2017/2226. Our
+    [country guides](/ees) include a ready-made letter.
+  </Step>
+  <Step title="Get it confirmed in writing">
+    If they correct the record, they must confirm it to you in writing.
+  </Step>
+</Steps>
+
+## The deadlines
+
+<DeadlineTrack
+  points={[
+    { day: 0, label: "You send your request" },
+    { day: 7, label: "Passed to the country that made the record, if needed" },
+    { day: 37, label: "That country has checked the data (at the latest)" },
+    { day: 45, label: "Deadline for the reply to you" },
+  ]}
+/>
 
 ## If they refuse
 
-A country that doesn't agree the record is wrong must explain why **in
-writing**. You can then complain to that country's **data protection
-supervisory authority** (also on the EU contact list), and you have the right
-to an effective judicial remedy. Once an error is shown, the regulation
-requires overstay data to be removed from the overstayer list without delay.
-See [the EES says you overstayed](/ees/dispute-overstay) for the full set of
-rights.
+<FactGrid columns={3}>
+  <Fact icon={<LetterIcon />} title="A written reason">They must explain the refusal in writing.</Fact>
+  <Fact icon={<GateIcon />} title="A complaint">To that country's data protection authority.</Fact>
+  <Fact icon={<ScaleIcon />} title="A court">You have the right to an effective judicial remedy.</Fact>
+</FactGrid>
 
----
+Once an error is shown, the overstay must be removed from the list without
+delay. [All your correction rights →](/ees/dispute-overstay)
 
-**Sources:** [Regulation (EU) 2017/2226 — consolidated version of 12 June 2026](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02017R2226-20260612)
-(Art. 12 automatic overstay identification; Art. 13 web service; Art. 21
-fall-back stamping; Art. 34 retention; Art. 35 rectification and overstayer
-list; Art. 52 your request, 45/7/30-day deadlines);
-[EU — Data held by the EES](https://travel-europe.europa.eu/en/ees/data-held-by-ees);
-[EU — Check how long you can stay](https://travel-europe.europa.eu/en/ees/check-how-long-you-can-stay);
-[EU — Contact details for data protection matters](https://travel-europe.europa.eu/en/ees/contact-details-for-data-protection-matters);
-[EU — EES FAQs](https://travel-europe.europa.eu/en/ees/faq);
-[update history](/changelog#dataset-ees). Checked against official sources on
-2026-10-05. Informational only — not legal advice; for an individual case
-consult the competent national authorities or a qualified adviser.
+<Sources>
+  **Sources:** [Regulation (EU) 2017/2226 — consolidated version of 12 June 2026](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02017R2226-20260612)
+  (Art. 12 automatic overstay identification; Art. 13 web service; Art. 21
+  fall-back stamping; Art. 34 retention; Art. 35 rectification and overstayer
+  list; Art. 52 your request, 45/7/30-day deadlines);
+  [EU — Data held by the EES](https://travel-europe.europa.eu/en/ees/data-held-by-ees);
+  [EU — Check how long you can stay](https://travel-europe.europa.eu/en/ees/check-how-long-you-can-stay);
+  [EU — Contact details for data protection matters](https://travel-europe.europa.eu/en/ees/contact-details-for-data-protection-matters);
+  [EU — EES FAQs](https://travel-europe.europa.eu/en/ees/faq);
+  [update history](/changelog#dataset-ees). Checked against official sources on
+  2026-10-05. Informational only — not legal advice; for an individual case
+  consult the competent national authorities or a qualified adviser.
+</Sources>

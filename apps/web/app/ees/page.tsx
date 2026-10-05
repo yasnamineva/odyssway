@@ -14,7 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function EesHubPage() {
   return (
-    <article className="mx-auto max-w-2xl">
+    <article className="mx-auto max-w-3xl">
       <BreadcrumbJsonLd trail={[{ name: "EES", path: "/ees" }]} />
       <EesHubContent />
     </article>

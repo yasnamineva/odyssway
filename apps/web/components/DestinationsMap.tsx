@@ -348,7 +348,7 @@ export default function DestinationsMap({
         </li>
         <li className="flex items-center gap-2">
           <span className="h-3 w-3 rounded-[2px] border border-black/15" style={{ backgroundColor: SCHENGEN_FILL_DEFAULT }} />
-          Schengen Area ({schengenCodes.length} states)
+          Schengen Area
         </li>
         <li className="flex items-center gap-2">
           <span className="h-3 w-3 rounded-[2px] border border-black/15" style={{ backgroundColor: NEUTRAL_FILL }} />

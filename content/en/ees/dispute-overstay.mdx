@@ -1,76 +1,102 @@
 {/* Facts sourced from: Regulation (EU) 2017/2226 (EES Regulation), consolidated
     version of 12 June 2026 (CELEX 02017R2226-20260612), Art. 52 — retrieved via
     the Publications Office CELLAR API 2026-07-13; and the EC EES policy page
-    (home-affairs.ec.europa.eu), checked 2026-07-13. */}
+    (home-affairs.ec.europa.eu), checked 2026-07-13. Day 37 below = the latest
+    possible date: forwarded within 7 days, then checked within 30 days. */}
+
+import { DeadlineTrack, Fact, FactGrid, InShort, LinkCard, LinkCards, More, Sources, Step, Steps } from "../../../apps/web/components/content/Blocks";
+import InfoTip from "../../../apps/web/components/content/InfoTip";
+import { AlertIcon, CalendarClockIcon, DocumentSearchIcon, GateIcon, LetterIcon, ScaleIcon, UndoIcon } from "../../../apps/web/components/icons";
 
 # The EES says you overstayed — but you didn't
 
-> **The short answer:** you have a legal right to get wrong EES data corrected.
-> Under **Article 52 of the EES Regulation**, you can send a rectification
-> request to the competent authority of **any** Schengen country — not just the
-> one that made the error — and authorities must **reply within 45 days**.
-> Entries on the overstayer list must be corrected when you show there was an
-> error.
+<InShort>
+  You have a legal right to get wrong EES data corrected. Write to **any** EES
+  country — not only the one that made the mistake — and it must **reply
+  within 45 days**. <InfoTip label="Legal basis">Article 52 of the EES Regulation, (EU) 2017/2226.</InfoTip>
+</InShort>
 
 ## How a false overstay happens
 
-The EES computes overstays automatically from recorded entries and exits. If
-an exit was never registered (equipment failure, an unrecorded crossing) or
-was recorded wrongly, the system can flag you as an overstayer even though you
-left on time.
+<FactGrid>
+  <Fact icon={<UndoIcon />} title="An exit wasn't recorded">Equipment failure or a crossing that didn't register.</Fact>
+  <Fact icon={<AlertIcon />} title="An exit was recorded wrongly">Wrong date or place on your record.</Fact>
+</FactGrid>
 
-## Your rights, exactly as the regulation states them
+The system computes overstays from your entries and exits, so either mistake
+can flag you even though you left on time.
 
-The EES Regulation (Regulation (EU) 2017/2226, Art. 52) gives you the rights
-of **access, rectification, completion and erasure** of your personal data,
-and of restriction of its processing:
+## What to do
 
-- Requests "may be addressed to the competent authority of **any Member
-  State**" — you don't have to deal with the country where the error happened.
-- The state responsible (or the one you asked) "shall reply to such requests
-  **within 45 days** of receipt".
-- If checking the data requires consulting the state that recorded it, that
-  state must be contacted **within 7 days**, and it must check the accuracy of
-  the data **within 30 days** of that contact.
-- Data on the overstayer list "shall be erased without delay … and shall be
-  rectified or completed" when you provide evidence that you were **forced to
-  exceed the stay by unforeseeable and serious events**, that you have
-  **acquired a legal right to stay** — or simply **in case of errors**.
-- If the authorities refuse, you are entitled to "an **effective judicial
-  remedy** to ensure the data are rectified, completed or erased".
+<Steps>
+  <Step title="Gather your proof">
+    Boarding passes, tickets, accommodation and payment records that show when
+    you really left. Run your dates through our [calculator](/calculator) so you
+    can say exactly which day is wrong.
+  </Step>
+  <Step title="Write a correction request">
+    Say who you are (as in your passport), which record is wrong (date and
+    border crossing), what the correct facts are, and attach your proof. Cite
+    Article 52 of Regulation (EU) 2017/2226.
+  </Step>
+  <Step title="Send it to one country">
+    The country that made the error, or any other EES country if that's easier.
+    Our [country guides](/ees) give the right contact and a ready-made letter.
+  </Step>
+  <Step title="Watch the deadline">
+    If the reply is late or a refusal, you can complain to that country's data
+    protection authority or go to court.
+  </Step>
+</Steps>
 
-## What to do, step by step
+## The deadlines
 
-1. **Reconstruct your dates.** Gather boarding passes, tickets, accommodation
-   and payment records proving your actual exit date. Check your day count
-   with our [calculator](/calculator) so you can state precisely why the
-   record is wrong.
-2. **Write a rectification request** citing Article 52 of Regulation (EU)
-   2017/2226: identify yourself as in your travel document, state the
-   incorrect record (date and border crossing), state the correct facts, and
-   attach your evidence.
-3. **Send it to a competent authority** — of the country that recorded the
-   error, or any other Schengen country if that's easier for you.
-   Which authority handles EES requests differs by country; our per-country
-   guides with addresses and template letters are in preparation.
-4. **Track the 45-day deadline.** If the reply is late or negative, the
-   regulation's judicial-remedy route and each country's data-protection
-   authority are your escalation paths.
+<DeadlineTrack
+  points={[
+    { day: 0, label: "You send your request" },
+    { day: 7, label: "Passed to the country that made the record, if needed" },
+    { day: 37, label: "That country has checked the data (at the latest)" },
+    { day: 45, label: "Deadline for the reply to you" },
+  ]}
+/>
 
-## Before it ever gets that far
+<More summary="Your rights, exactly as the regulation states them">
+  Article 52 of Regulation (EU) 2017/2226 gives you the rights of **access,
+  rectification, completion and erasure** of your personal data, and of
+  restriction of its processing:
 
-A false flag is much easier to dispute with your own records in hand: keep
-your boarding passes and count your own days — the [90/180 rule](/rules/90-180-rule)
-still applies to you regardless of what the system recorded. If the overstay
-wasn't a system error, see [what actually happens next](/rules/overstay-penalties)
-— it's a specific, bounded process, not an automatic ban.
+  - Requests "may be addressed to the competent authority of **any Member State**".
+  - The state "shall reply to such requests **within 45 days** of receipt".
+  - If the state that recorded the data has to be consulted, it must be contacted
+    **within 7 days** and must check the data **within 30 days** of that contact.
+  - Data on the overstayer list "shall be erased without delay … and shall be
+    rectified or completed" when you show you were **forced to exceed the stay
+    by unforeseeable and serious events**, that you have **acquired a legal
+    right to stay** — or **in case of errors**.
+  - If the authorities refuse, you are entitled to "an **effective judicial
+    remedy** to ensure the data are rectified, completed or erased".
+</More>
 
----
+## Before it gets that far
 
-**Sources:** [Regulation (EU) 2017/2226, Art. 52 — consolidated version of
-12 June 2026](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02017R2226-20260612)
-(all quoted passages); [European Commission — Entry/Exit System](https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/entry-exit-system_en)
-(automatic overstay detection); [update history](/changelog#dataset-ees).
-Checked against official sources on 2026-07-13. Informational only — not
-legal advice; for an individual case consult the competent national
-authorities or a qualified adviser.
+<FactGrid>
+  <Fact icon={<LetterIcon />} title="Keep your boarding passes">Your own records make a false flag easy to disprove.</Fact>
+  <Fact icon={<CalendarClockIcon />} title="Count your own days">The [90/180 rule](/rules/90-180-rule) applies whatever the system recorded.</Fact>
+</FactGrid>
+
+<LinkCards columns={3}>
+  <LinkCard href="/ees/missing-exit-record" icon={<DocumentSearchIcon />} title="No exit recorded?">The step-by-step fix.</LinkCard>
+  <LinkCard href="/rules/overstay-penalties" icon={<ScaleIcon />} title="If it really was an overstay">What happens next — a bounded process, not an automatic ban.</LinkCard>
+  <LinkCard href="/ees" icon={<GateIcon />} title="Correct your record, by country">Contacts and letters for all 29 countries.</LinkCard>
+</LinkCards>
+
+<Sources>
+  **Sources:** [Regulation (EU) 2017/2226, Art. 52 — consolidated version of
+  12 June 2026](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02017R2226-20260612)
+  (all quoted passages); [European Commission — Entry/Exit System](https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/entry-exit-system_en)
+  (automatic overstay detection); [update history](/changelog#dataset-ees).
+  Checked against official sources on 2026-07-13; the 30-day check wording
+  re-checked on 2026-10-05. Informational only — not legal advice; for an
+  individual case consult the competent national authorities or a qualified
+  adviser.
+</Sources>
