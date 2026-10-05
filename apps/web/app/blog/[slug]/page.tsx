@@ -128,7 +128,7 @@ export default async function BlogPostPage({
 
       {relatedDestinations.length > 0 && (
         <div className="rounded-2xl border border-slate-200 bg-white p-4">
-          <h2 className="text-xs font-semibold tracking-wide text-slate-400 uppercase">
+          <h2 className="text-xs font-semibold tracking-wide text-slate-500 uppercase">
             {t("relatedDestinations")}
           </h2>
           <ul className="mt-2 flex flex-wrap gap-2">

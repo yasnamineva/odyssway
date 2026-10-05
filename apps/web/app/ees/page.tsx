@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import BreadcrumbJsonLd from "../../components/BreadcrumbJsonLd";
 import { getTranslations } from "next-intl/server";
 import EesHubContent from "../../../../content/en/ees/index.mdx";
 
@@ -14,6 +15,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function EesHubPage() {
   return (
     <article className="mx-auto max-w-2xl">
+      <BreadcrumbJsonLd trail={[{ name: "EES", path: "/ees" }]} />
       <EesHubContent />
     </article>
   );

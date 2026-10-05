@@ -54,7 +54,7 @@ export async function generateMetadata({
     title,
     description,
     alternates: { canonical: `/bring/${pair.itemSlug}/${pair.destinationSlug}` },
-    openGraph: { title, description },
+    openGraph: { title, description, images: ["/opengraph-image"] },
   };
 }
 
@@ -127,7 +127,7 @@ export default async function BringDestinationPage({ params }: { params: Promise
           {t("h1", { item: meta.searchLabel, destination: destName })}
         </h1>
         <p className="mt-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm">
-          <span className="text-xs font-semibold tracking-wide text-slate-400 uppercase">
+          <span className="text-xs font-semibold tracking-wide text-slate-500 uppercase">
             {t("shortAnswer")}
           </span>
           <br />
@@ -155,7 +155,7 @@ export default async function BringDestinationPage({ params }: { params: Promise
             <p className="mt-3 text-xs leading-relaxed text-slate-500">
               <span className="font-semibold">{t("alsoCovers")}</span> {r.names.slice(0, 14).join(", ")}
             </p>
-            <p className="mt-3 border-t border-slate-100 pt-3 text-xs text-slate-400">
+            <p className="mt-3 border-t border-slate-100 pt-3 text-xs text-slate-500">
               {t("verifiedLine", { date: r.verified_at ?? "" })}{" "}
               <span className="font-medium text-slate-500">{t("sourceLine")}</span>{" "}
               <a href={r.legal_source.url} rel="noopener noreferrer" className="underline">

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { etias, etiasSources } from "../../../lib/etias";
+import { etiasNationalities } from "../../../lib/nationalities";
+import BreadcrumbJsonLd from "../../../components/BreadcrumbJsonLd";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("pages.etias");
@@ -23,6 +25,7 @@ export default async function EtiasStatusPage() {
 
   return (
     <article className="mx-auto max-w-2xl space-y-6">
+      <BreadcrumbJsonLd trail={[{ name: "ETIAS", path: "/etias/status" }]} />
       <h1 className="text-2xl font-bold tracking-tight text-slate-900">{t("h1")}</h1>
 
       <section
@@ -70,6 +73,22 @@ export default async function EtiasStatusPage() {
             {t("ctaCalculator")}
           </a>
         </p>
+      </section>
+
+      <section>
+        <h2 className="text-lg font-semibold text-slate-900">{t("byNationalityTitle")}</h2>
+        <ul className="mt-3 grid grid-cols-2 gap-x-6 gap-y-1.5 text-sm sm:grid-cols-3">
+          {etiasNationalities.map((rule) => (
+            <li key={rule.nationality}>
+              <a
+                href={`/etias/${rule.nationality.toLowerCase()}`}
+                className="text-slate-700 underline decoration-slate-300 underline-offset-2 hover:text-slate-900"
+              >
+                {rule.name}
+              </a>
+            </li>
+          ))}
+        </ul>
       </section>
 
       <section className="rounded-2xl border border-slate-200 bg-slate-100 p-4 text-xs leading-relaxed text-slate-600">

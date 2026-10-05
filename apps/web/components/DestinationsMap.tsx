@@ -336,7 +336,7 @@ export default function DestinationsMap({
             backgroundImage: GRAIN_URL,
           }}
         />
-        <span className="pointer-events-none absolute top-0 right-0 font-display text-xs text-slate-400 italic">
+        <span className="pointer-events-none absolute top-0 right-0 font-display text-xs text-slate-500 italic">
           Drag to turn the globe
         </span>
       </div>

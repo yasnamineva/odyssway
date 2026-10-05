@@ -132,12 +132,12 @@ export default function SearchableSelect({
           className="absolute z-20 mt-1 max-h-72 w-full overflow-auto rounded-lg border border-slate-200 bg-white py-1 shadow-lg"
         >
           {filteredGroups.length === 0 && (
-            <li className="px-3 py-2 text-sm text-slate-400">{noResultsLabel}</li>
+            <li className="px-3 py-2 text-sm text-slate-500">{noResultsLabel}</li>
           )}
           {filteredGroups.map((group, gi) => (
             <li key={group.label ?? `group-${gi}`}>
               {group.label && (
-                <div className="px-3 pt-2 pb-1 text-[11px] font-semibold tracking-wide text-slate-400 uppercase">
+                <div className="px-3 pt-2 pb-1 text-[11px] font-semibold tracking-wide text-slate-500 uppercase">
                   {group.label}
                 </div>
               )}

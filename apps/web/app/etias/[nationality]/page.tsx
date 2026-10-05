@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { etias } from "../../../lib/etias";
 import { etiasNationalities, nationalityBySlug } from "../../../lib/nationalities";
+import BreadcrumbJsonLd from "../../../components/BreadcrumbJsonLd";
 
 interface Params {
   nationality: string;
@@ -44,6 +45,12 @@ export default async function EtiasNationalityPage({
 
   return (
     <article className="mx-auto max-w-2xl space-y-6">
+      <BreadcrumbJsonLd
+        trail={[
+          { name: "ETIAS", path: "/etias/status" },
+          { name: t("h1", { citizens: rule.citizenLabel }), path: `/etias/${rule.nationality.toLowerCase()}` },
+        ]}
+      />
       <header>
         <h1 className="text-2xl font-bold tracking-tight">
           {t("h1", { citizens: rule.citizenLabel })}

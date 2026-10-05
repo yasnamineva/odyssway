@@ -390,7 +390,10 @@ export default function Calculator({ storageKey = STORAGE_KEY }: { storageKey?: 
   };
 
   if (!mounted) {
-    return <div className="h-96 animate-pulse rounded-2xl bg-slate-100" aria-hidden />;
+    // At least a full screen tall: the mounted tool is ~2,000px+, so a shorter
+    // placeholder pulls the content below it into view and then shoves it away
+    // (CLS 0.31 on mobile with the old h-96).
+    return <div className="h-svh animate-pulse rounded-2xl bg-slate-100" aria-hidden />;
   }
 
   const inputClass =
@@ -485,7 +488,7 @@ export default function Calculator({ storageKey = STORAGE_KEY }: { storageKey?: 
               </div>
               <label
                 className={`mt-2 flex items-start gap-2 text-xs ${
-                  row.country ? "text-slate-600" : "text-slate-400"
+                  row.country ? "text-slate-600" : "text-slate-500"
                 }`}
               >
                 <input
@@ -550,7 +553,7 @@ export default function Calculator({ storageKey = STORAGE_KEY }: { storageKey?: 
           />
           <span>
             {t("saveLabel")}{" "}
-            <span className="text-slate-400">{t("saveHint")}</span>
+            <span className="text-slate-500">{t("saveHint")}</span>
           </span>
         </label>
       </section>

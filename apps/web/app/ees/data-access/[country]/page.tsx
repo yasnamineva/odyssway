@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import BreadcrumbJsonLd from "../../../../components/BreadcrumbJsonLd";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { eesCountryName, eesRecordBySlug, publishedEesRecords } from "../../../../lib/ees";
@@ -80,6 +81,12 @@ export default async function EesDataAccessPage({
 
   return (
     <article className="mx-auto max-w-2xl space-y-6">
+      <BreadcrumbJsonLd
+        trail={[
+          { name: "EES", path: "/ees" },
+          { name: t("h1", { country }), path: `/ees/data-access/${record.country.toLowerCase()}` },
+        ]}
+      />
       <header>
         <h1 className="text-2xl font-bold tracking-tight">{t("h1", { country })}</h1>
         <p className="mt-2 text-sm leading-relaxed text-slate-600">

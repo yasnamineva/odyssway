@@ -42,7 +42,11 @@ export async function generateMetadata({
     title,
     description: t("metaDescription", { item: found.meta.searchLabel }),
     alternates: { canonical: `/bring/${found.meta.slug}` },
-    openGraph: { title, description: t("metaDescription", { item: found.meta.searchLabel }) },
+    openGraph: {
+      title,
+      description: t("metaDescription", { item: found.meta.searchLabel }),
+      images: ["/opengraph-image"],
+    },
   };
 }
 
@@ -119,7 +123,7 @@ export default async function BringItemPage({ params }: { params: Promise<Params
               {d.items.map(({ item: i }) => (
                 <li key={i.slug} className="py-2">
                   {d.items.length > 1 && (
-                    <div className="text-xs font-semibold tracking-wide text-slate-400 uppercase">
+                    <div className="text-xs font-semibold tracking-wide text-slate-500 uppercase">
                       {i.names[0]}
                     </div>
                   )}
@@ -128,7 +132,7 @@ export default async function BringItemPage({ params }: { params: Promise<Params
                     {i.limits?.description && <span> — {i.limits.description}</span>}
                   </div>
                   {i.notes && <p className="mt-1 text-xs leading-relaxed text-slate-500">{i.notes}</p>}
-                  <p className="mt-1 text-xs text-slate-400">
+                  <p className="mt-1 text-xs text-slate-500">
                     {t("verifiedLine", { date: i.verified_at ?? "" })}{" "}
                     <a href={i.legal_source.url} rel="noopener noreferrer" className="underline">
                       {i.legal_source.name}
