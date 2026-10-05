@@ -99,12 +99,18 @@ test("share writes state into the URL and restores it on load", async ({ page })
   await pickCountry(page, "France", "France");
   await setCheckDate(page, "2026-06-30");
   await page.getByRole("button", { name: "Copy shareable link" }).click();
-  await expect(page).toHaveURL(/t=2026-06-01\.2026-06-10\.FR/);
+  // In the fragment, never the query string: fragments aren't sent to servers.
+  await expect(page).toHaveURL(/\/calculator#t=2026-06-01\.2026-06-10\.FR/);
 
   // A fresh navigation to the shared URL restores the computation.
-  await page.goto(`/calculator?t=2026-06-01.2026-06-10.FR&d=2026-06-30`);
+  await page.goto(`/calculator#t=2026-06-01.2026-06-10.FR&d=2026-06-30`);
   await expect(page.getByTestId("days-used")).toHaveText("10");
   await expect(page.getByLabel("Country (optional)").first()).toHaveValue("France");
+
+  // Links made before the switch (?t=…) still work, and move into the fragment.
+  await page.goto(`/calculator?t=2026-06-01.2026-06-10.FR&d=2026-06-30`);
+  await expect(page.getByTestId("days-used")).toHaveText("10");
+  await expect(page).toHaveURL(/\/calculator#t=2026-06-01/);
 });
 
 test("shows the error state instead of computing for reversed dates", async ({ page }) => {

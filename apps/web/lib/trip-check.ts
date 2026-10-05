@@ -47,6 +47,8 @@ export interface TripCheckResult {
   documentsNeeded: string[];
   notes?: string;
   legalSource?: { name: string; url: string };
+  /** When the cited row was last checked against its source (YYYY-MM-DD). */
+  verifiedAt?: string;
   /** Set when `covered` is false and we at least know where to point the user. */
   officialAuthorityUrl?: string;
   items: TripCheckItemResult[];
@@ -99,6 +101,7 @@ function resolveEntry(
   | "documentsNeeded"
   | "notes"
   | "legalSource"
+  | "verifiedAt"
   | "officialAuthorityUrl"
 > {
   const nat = nationality.toUpperCase();
@@ -132,6 +135,7 @@ function resolveEntry(
       documentsNeeded: [...EU_CITIZEN_DOCUMENTS],
       notes: natRule.notes,
       legalSource: natRule.legal_source,
+      verifiedAt: natRule.verified_at ?? undefined,
     };
   }
 
@@ -161,6 +165,7 @@ function resolveEntry(
       documentsNeeded: SCHENGEN_DOCUMENTS,
       notes: rule.notes,
       legalSource: SCHENGEN_LEGAL_SOURCE,
+      verifiedAt: rule.verified_at ?? undefined,
     };
   }
 
@@ -207,6 +212,7 @@ function resolveEntry(
     documentsNeeded: row.documentsNeeded,
     notes: row.notes,
     legalSource: row.legal_source,
+    verifiedAt: row.verified_at ?? undefined,
   };
 }
 

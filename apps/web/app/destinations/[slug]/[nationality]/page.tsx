@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import BreadcrumbJsonLd from "../../../../components/BreadcrumbJsonLd";
+import SourceNote from "../../../../components/SourceNote";
 import { destinationPath } from "../../../../lib/destinations";
 import { travelPair, travelPairPath, travelPairs, type TravelPair } from "../../../../lib/travel-pairs";
 
@@ -53,6 +54,7 @@ export default async function TravelPairPage({ params }: { params: Promise<Param
   const { t, vars, answer, stay } = await pairText(pair);
   const tr = await getTranslations("destinationPage.requirement");
   const tc = await getTranslations("common");
+  const ts = await getTranslations("tripCheck");
   const { row } = pair;
 
   // The comparisons are what make each page more than its one row: the same
@@ -137,13 +139,14 @@ export default async function TravelPairPage({ params }: { params: Promise<Param
             </div>
           )}
         </dl>
-        <p className="mt-4 border-t border-slate-100 pt-3 text-xs text-slate-500">
-          {t("verifiedLine", { date: row.verified_at ?? "" })}{" "}
-          <span className="font-medium">{t("sourceLine")}</span>{" "}
-          <a href={row.legal_source.url} rel="noopener noreferrer" className="underline">
-            {row.legal_source.name}
-          </a>
-        </p>
+        <SourceNote
+          className="mt-4"
+          name={row.legal_source.name}
+          url={row.legal_source.url}
+          date={row.verified_at}
+          sourceLabel={ts("sourceLabel")}
+          checkedLabel={row.verified_at ? ts("checkedOn", { date: row.verified_at }) : undefined}
+        />
       </section>
 
       <p className="text-sm">

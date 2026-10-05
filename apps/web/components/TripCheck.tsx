@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import dynamic from "next/dynamic";
 import { useEffect, useMemo, useState } from "react";
+import SourceNote from "./SourceNote";
 import { schengenCountries } from "../lib/countries";
 import { destinationLabelFor } from "../lib/destination-label";
 import { EU_CUSTOMS_CODE, customsItems, destinations, queuedDestinations } from "../lib/destinations";
@@ -72,9 +73,7 @@ export default function TripCheck({
   const itemSuggestions = useMemo(() => {
     const q = itemInput.trim().toLowerCase();
     if (!q) return [];
-    return itemSuggestionPool
-      .filter((n) => n.toLowerCase().includes(q) && !items.includes(n))
-      .slice(0, 8);
+    return itemSuggestionPool.filter((n) => n.toLowerCase().includes(q) && !items.includes(n)).slice(0, 8);
   }, [itemInput, itemSuggestionPool, items]);
 
   const result: TripCheckResult | null = useMemo(() => {
@@ -94,13 +93,21 @@ export default function TripCheck({
       fetch("/api/item-miss", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query: miss.query, destination: customsDestination }),
+        body: JSON.stringify({
+          query: miss.query,
+          destination: customsDestination,
+        }),
         keepalive: true,
       }).catch(() => {});
       // Same two fields as a cookie-free Plausible custom event, so misses can
       // be counted over time (the log line above only lives as long as the
       // host's log retention). No-op when Plausible isn't loaded.
-      window.plausible?.("Item not found", { props: { query: miss.query.trim().slice(0, 100), destination: customsDestination } });
+      window.plausible?.("Item not found", {
+        props: {
+          query: miss.query.trim().slice(0, 100),
+          destination: customsDestination,
+        },
+      });
     }
   }, [result]);
 
@@ -133,6 +140,16 @@ export default function TripCheck({
           onSubmit={(e) => {
             e.preventDefault();
             setSubmitted(true);
+            // On phones the answer is below the fold — bring it into view.
+            if (window.matchMedia("(max-width: 1023px)").matches) {
+              const smooth = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+              requestAnimationFrame(() =>
+                document.getElementById("tc-result")?.scrollIntoView({
+                  behavior: smooth ? "smooth" : "auto",
+                  block: "start",
+                }),
+              );
+            }
           }}
         >
           <div>
@@ -177,7 +194,9 @@ export default function TripCheck({
               placeholder={t("toPlaceholder")}
               noResultsLabel={t("noMatches")}
               groups={[
-                { options: [{ value: SCHENGEN_DESTINATION, label: t("schengenArea") }] },
+                {
+                  options: [{ value: SCHENGEN_DESTINATION, label: t("schengenArea") }],
+                },
                 {
                   label: t("toGroupDestinations"),
                   options: destinations
@@ -292,174 +311,245 @@ export default function TripCheck({
           </button>
         </form>
 
-        <div className="mt-8 lg:mt-0" data-testid="tc-map-panel">
-          <WorldMap
-            originCode={nationality || undefined}
-            destinationCode={mapDestinationCode}
-            highlightCodes={destination === SCHENGEN_DESTINATION ? schengenCountries.map((c) => c.code) : []}
-            originLabel={originLabel}
-            destinationLabel={destinationLabel}
-          />
-          {result && <TripCheckResults result={result} />}
+        {/* Phones: the answer comes straight after the form, the map after it.
+            Desktop: map on top of the right column, answer beneath. */}
+        <div className="mt-2 flex flex-col lg:mt-0" data-testid="tc-map-panel">
+          <div className="order-2 mt-6 lg:order-1 lg:mt-0">
+            <WorldMap
+              originCode={nationality || undefined}
+              destinationCode={mapDestinationCode}
+              highlightCodes={
+                destination === SCHENGEN_DESTINATION ? schengenCountries.map((c) => c.code) : []
+              }
+              originLabel={originLabel}
+              destinationLabel={destinationLabel}
+            />
+          </div>
+          {result && (
+            <div id="tc-result" className="order-1 scroll-mt-4 lg:order-2">
+              <TripCheckResults
+                result={result}
+                originName={originLabel ?? nationality}
+                onEdit={() => {
+                  const field = document.getElementById("tc-nationality");
+                  field?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center",
+                  });
+                  field?.focus({ preventScroll: true });
+                }}
+              />
+            </div>
+          )}
         </div>
       </div>
     </section>
   );
 }
 
-function TripCheckResults({ result }: { result: TripCheckResult }) {
+function TripCheckResults({
+  result,
+  originName,
+  onEdit,
+}: {
+  result: TripCheckResult;
+  originName: string;
+  onEdit: () => void;
+}) {
   const t = useTranslations("tripCheck");
+  const checked = result.verifiedAt ? t("checkedOn", { date: result.verifiedAt }) : undefined;
+
+  // The exact scenario evaluated, as a route — so the answer below is never
+  // read as being about a different trip.
+  const scenario = (
+    <div
+      className="mt-6 flex flex-wrap items-center justify-between gap-3 border-y border-slate-200 py-3"
+      data-testid="tc-scenario"
+    >
+      <div className="min-w-0">
+        <p className="text-[11px] font-semibold tracking-wide text-slate-500 uppercase">
+          {t("scenarioLabel")}
+        </p>
+        <p className="mt-0.5 flex flex-wrap items-center gap-x-2 text-sm font-medium break-words text-slate-900">
+          <span>{t("scenarioPassport", { origin: originName })}</span>
+          <span aria-hidden="true" className="inline-flex items-center text-brand-700">
+            <span className="h-px w-6 border-t border-dashed border-current" />
+            <span className="-ml-0.5 text-xs">▶</span>
+          </span>
+          <span className="sr-only">{t("scenarioTo")}</span>
+          <span>{result.destinationName}</span>
+        </p>
+        {result.items.length > 0 && (
+          <p className="mt-0.5 text-xs break-words text-slate-600">
+            {t("scenarioItems", {
+              items: result.items.map((i) => i.query).join(", "),
+            })}
+          </p>
+        )}
+      </div>
+      <button
+        type="button"
+        onClick={onEdit}
+        className="shrink-0 rounded-md border border-slate-300 px-3 py-1.5 text-xs font-medium text-slate-700 hover:bg-slate-50"
+      >
+        {t("editTrip")}
+      </button>
+    </div>
+  );
 
   if (!result.covered) {
     return (
-      <div
-        data-testid="tc-not-covered"
-        className="mt-6 animate-fade-in-up rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm leading-relaxed text-amber-900 motion-reduce:animate-none"
-      >
-        <p className="font-medium">{t("notCoveredTitle", { destination: result.destinationName })}</p>
-        <p className="mt-1">{t("notCoveredBody")}</p>
-        {result.officialAuthorityUrl && (
-          <a
-            href={result.officialAuthorityUrl}
-            rel="noopener noreferrer"
-            className="mt-2 inline-block underline"
-          >
-            {t("notCoveredLink")}
-          </a>
-        )}
-      </div>
+      <>
+        {scenario}
+        <div
+          data-testid="tc-not-covered"
+          className="mt-4 animate-fade-in-up rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm leading-relaxed text-amber-900 motion-reduce:animate-none"
+        >
+          <p className="font-medium">{t("notCoveredTitle", { destination: result.destinationName })}</p>
+          <p className="mt-1">{t("notCoveredBody")}</p>
+          {result.officialAuthorityUrl && (
+            <a
+              href={result.officialAuthorityUrl}
+              rel="noopener noreferrer"
+              className="mt-2 inline-block underline"
+            >
+              {t("notCoveredLink")}
+            </a>
+          )}
+        </div>
+      </>
     );
   }
 
-  return (
-    <div
-      className="mt-6 grid animate-fade-in-up gap-4 sm:grid-cols-2 motion-reduce:animate-none"
-      data-testid="tc-results"
-    >
-      <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-        <h2 className="text-sm font-semibold text-slate-900">{t("entryCardTitle")}</h2>
-        <p className="mt-1 text-sm text-slate-700" data-testid="tc-basis">
-          {t(BASIS_LABEL_KEY[result.basis], { destination: result.destinationName })}
-        </p>
-        {result.notes && <p className="mt-1 text-xs text-slate-500">{result.notes}</p>}
-        <SourceLine legalSource={result.legalSource} />
-      </div>
+  const showAssumption = result.basis !== "citizen" && result.basis !== "free_movement";
 
-      {result.stayPolicy && (
-        <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-          <h2 className="text-sm font-semibold text-slate-900">{t("stayCardTitle")}</h2>
-          <p className="mt-1 text-sm text-slate-700" data-testid="tc-stay">
-            {result.stayPolicy.kind === "rolling_window"
-              ? t("stayRollingWindow", {
-                  maxDays: result.stayPolicy.maxDays,
-                  windowDays: result.stayPolicy.windowDays,
-                })
-              : result.stayPolicy.kind === "fixed_per_entry"
-                ? t("stayFixedPerEntry", { maxDays: result.stayPolicy.maxDays })
-                : result.basis === "visa_required"
-                  ? t("stayVisaRequired")
-                  : t("stayUnconfirmed")}
+  return (
+    <>
+      {scenario}
+      <div className="mt-4 animate-fade-in-up space-y-4 motion-reduce:animate-none" data-testid="tc-results">
+        <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+          <h2 className="text-sm font-semibold text-slate-900">{t("entryCardTitle")}</h2>
+          <p className="mt-1 text-sm leading-relaxed text-slate-800" data-testid="tc-basis">
+            {t(BASIS_LABEL_KEY[result.basis], {
+              destination: result.destinationName,
+            })}
           </p>
-          {result.isSchengen && (
-            <a href="/calculator" className="mt-2 inline-block text-xs underline">
-              {t("trackInCalculator")}
-            </a>
+          {(showAssumption || result.notes) && (
+            <div className="mt-3 rounded-lg bg-slate-50 p-3 text-xs leading-relaxed text-slate-600">
+              <p className="font-semibold text-slate-700">{t("conditionsTitle")}</p>
+              {showAssumption && <p className="mt-1">{t("assumption", { origin: originName })}</p>}
+              {result.notes && <p className="mt-1">{result.notes}</p>}
+            </div>
           )}
-          <SourceLine legalSource={result.legalSource} />
-        </div>
-      )}
 
-      {result.documentsNeeded.length > 0 && (
-        <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-          <h2 className="text-sm font-semibold text-slate-900">{t("documentsCardTitle")}</h2>
-          <ul className="mt-2 list-disc space-y-1 pl-4 text-sm text-slate-700">
-            {result.documentsNeeded.map((doc) =>
-              result.legalSource ? (
-                <li key={doc}>
-                  <a
-                    href={result.legalSource.url}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="underline decoration-slate-300 underline-offset-2 hover:decoration-slate-500"
-                  >
-                    {doc}
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            {result.stayPolicy && (
+              <div>
+                <h3 className="text-sm font-semibold text-slate-900">{t("stayCardTitle")}</h3>
+                <p className="mt-1 text-sm text-slate-700" data-testid="tc-stay">
+                  {result.stayPolicy.kind === "rolling_window"
+                    ? t("stayRollingWindow", {
+                        maxDays: result.stayPolicy.maxDays,
+                        windowDays: result.stayPolicy.windowDays,
+                      })
+                    : result.stayPolicy.kind === "fixed_per_entry"
+                      ? t("stayFixedPerEntry", {
+                          maxDays: result.stayPolicy.maxDays,
+                        })
+                      : result.basis === "visa_required"
+                        ? t("stayVisaRequired")
+                        : t("stayUnconfirmed")}
+                </p>
+                {result.isSchengen && (
+                  <a href="/calculator" className="mt-2 inline-block text-xs underline">
+                    {t("trackInCalculator")}
                   </a>
-                </li>
-              ) : (
-                <li key={doc}>{doc}</li>
-              ),
-            )}
-          </ul>
-          <SourceLine legalSource={result.legalSource} />
-        </div>
-      )}
-
-      {result.items.length > 0 && result.intraEuCustoms && (
-        <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm" data-testid="tc-items">
-          <h2 className="text-sm font-semibold text-slate-900">{t("itemsCardTitle")}</h2>
-          <p className="mt-1 text-xs text-amber-700" data-testid="tc-intra-eu-customs">
-            {t("intraEuCustoms")}
-          </p>
-        </div>
-      )}
-
-      {result.items.length > 0 && !result.intraEuCustoms && (
-        <div
-          className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
-          data-testid="tc-items"
-        >
-          <h2 className="text-sm font-semibold text-slate-900">{t("itemsCardTitle")}</h2>
-          <ul className="mt-2 space-y-3">
-            {result.items.map((item) => (
-              <li key={item.query} data-testid="tc-item-result">
-                <p className="text-sm font-medium text-slate-900">{item.query}</p>
-                {item.match ? (
-                  <>
-                    <p className="text-sm text-slate-700">{t(`verdict.${item.match.verdict}`)}</p>
-                    {item.match.limits && (
-                      <p className="text-xs text-slate-500">{item.match.limits.description}</p>
-                    )}
-                    {item.match.notes && (
-                      <p className="text-xs text-slate-500">{item.match.notes}</p>
-                    )}
-                    <a
-                      href={item.match.legal_source.url}
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      className="text-xs underline"
-                    >
-                      {item.match.legal_source.name}
-                    </a>
-                  </>
-                ) : (
-                  <p className="text-xs text-amber-700" data-testid="tc-item-not-found">
-                    {t("itemNotFound", { destination: result.destinationName })}
-                  </p>
                 )}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+              </div>
+            )}
+            {result.documentsNeeded.length > 0 && (
+              <div>
+                <h3 className="text-sm font-semibold text-slate-900">{t("documentsCardTitle")}</h3>
+                <ul className="mt-1 list-disc space-y-1 pl-4 text-sm text-slate-700">
+                  {result.documentsNeeded.map((doc) => (
+                    <li key={doc}>{doc}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
 
-    </div>
-  );
-}
+          {result.legalSource && (
+            <SourceNote
+              className="mt-4"
+              name={result.legalSource.name}
+              url={result.legalSource.url}
+              date={result.verifiedAt}
+              sourceLabel={t("sourceLabel")}
+              checkedLabel={checked}
+            />
+          )}
+        </section>
 
-function SourceLine({ legalSource }: { legalSource?: { name: string; url: string } }) {
-  const t = useTranslations("tripCheck");
-  if (!legalSource) return null;
-  return (
-    <p className="mt-2 text-xs text-slate-500">
-      {t("sourceLabel")}{" "}
-      <a
-        href={legalSource.url}
-        rel="noopener noreferrer"
-        target="_blank"
-        className="underline decoration-slate-300 underline-offset-2 hover:decoration-slate-500"
-      >
-        {legalSource.name}
-      </a>
-    </p>
+        {result.items.length > 0 && result.intraEuCustoms && (
+          <section
+            className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
+            data-testid="tc-items"
+          >
+            <h2 className="text-sm font-semibold text-slate-900">{t("itemsCardTitle")}</h2>
+            <p className="mt-1 text-xs text-amber-700" data-testid="tc-intra-eu-customs">
+              {t("intraEuCustoms")}
+            </p>
+          </section>
+        )}
+
+        {result.items.length > 0 && !result.intraEuCustoms && (
+          <section
+            className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
+            data-testid="tc-items"
+          >
+            <h2 className="text-sm font-semibold text-slate-900">{t("itemsCardTitle")}</h2>
+            <ul className="mt-2 divide-y divide-slate-100">
+              {result.items.map((item) => (
+                <li key={item.query} data-testid="tc-item-result" className="py-3 first:pt-1 last:pb-0">
+                  <p className="text-sm font-medium break-words text-slate-900">{item.query}</p>
+                  {item.match ? (
+                    <>
+                      <p className="text-sm text-slate-700">{t(`verdict.${item.match.verdict}`)}</p>
+                      {item.match.limits && (
+                        <p className="mt-1 text-xs leading-relaxed text-slate-600">
+                          {item.match.limits.description}
+                        </p>
+                      )}
+                      {item.match.notes && (
+                        <p className="mt-1 text-xs leading-relaxed text-slate-600">{item.match.notes}</p>
+                      )}
+                      <SourceNote
+                        className="mt-2"
+                        name={item.match.legal_source.name}
+                        url={item.match.legal_source.url}
+                        date={item.match.verified_at}
+                        sourceLabel={t("sourceLabel")}
+                        checkedLabel={
+                          item.match.verified_at
+                            ? t("checkedOn", { date: item.match.verified_at })
+                            : undefined
+                        }
+                      />
+                    </>
+                  ) : (
+                    <p className="text-xs text-amber-700" data-testid="tc-item-not-found">
+                      {t("itemNotFound", {
+                        destination: result.destinationName,
+                      })}
+                    </p>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+      </div>
+    </>
   );
 }

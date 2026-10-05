@@ -2,6 +2,8 @@
     (https://ec.europa.eu/assets/home/visa-calculator/docs/short_stay_schengen_calculator_user_manual_en.pdf),
     checked 2026-07-12. Per-country data: data/countries.json (checked 2026-07-13). */}
 
+import RuleRuler from "../../../apps/web/components/RuleRuler";
+
 # The Schengen 90/180-day rule, explained
 
 > **The short answer:** you can spend at most **90 days** in the Schengen Area
@@ -19,6 +21,13 @@ and it doesn't reset when a new year starts. Days only stop counting against you
 when they become older than 180 days. One useful consequence, straight from the
 European Commission's guidance: after **90 days of uninterrupted absence**, you
 can always stay for up to 90 days again.
+
+Drag the marker below to move the day you're checking. The bracket is the
+180-day look-back; the bar counts the days inside it.
+
+<div className="not-prose my-6">
+  <RuleRuler />
+</div>
 
 ## What counts as a day
 

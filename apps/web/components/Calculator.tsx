@@ -152,7 +152,16 @@ export default function Calculator({ storageKey = STORAGE_KEY }: { storageKey?: 
   const [reportCopied, setReportCopied] = useState(false);
 
   useEffect(() => {
-    const decoded = decodeShareState(window.location.search, KNOWN_CODES);
+    const fromHash = window.location.hash.length > 1;
+    const decoded = decodeShareState(
+      fromHash ? window.location.hash : window.location.search,
+      KNOWN_CODES,
+    );
+    if (!fromHash && decoded.trips) {
+      // Legacy ?t=… link: move the dates into the fragment so they aren't
+      // re-sent to the server on reload or leaked in a Referer header.
+      window.history.replaceState(null, "", `${window.location.pathname}#${window.location.search.slice(1)}`);
+    }
     if (decoded.trips && decoded.trips.length > 0) {
       // A shared link wins over anything stored on this device.
       setRows(decoded.trips.map((t) => newRow(t.entry, t.exit, t.country, t.permit)));
@@ -271,8 +280,8 @@ export default function Calculator({ storageKey = STORAGE_KEY }: { storageKey?: 
       planEntry,
       planExit,
     });
-    const url = `${window.location.origin}${window.location.pathname}?${query}`;
-    window.history.replaceState(null, "", `?${query}`);
+    const url = `${window.location.origin}${window.location.pathname}#${query}`;
+    window.history.replaceState(null, "", `${window.location.pathname}#${query}`);
     try {
       await navigator.clipboard.writeText(url);
       setCopied(true);

@@ -20,6 +20,8 @@ const RANGE_DAYS = RANGE_END - RANGE_START + 1;
  * the first nudge of the slider to the right shows what an overstay looks like. */
 const INITIAL_DAY = toEpochDay("2026-04-18");
 
+const SLIDER_MIN = RANGE_START + WINDOW_DAYS - 1;
+
 const pct = (day: number) => ((day - RANGE_START) / RANGE_DAYS) * 100;
 
 export default function RuleRuler() {
@@ -130,12 +132,16 @@ export default function RuleRuler() {
         <span className="sr-only">{t("sliderLabel")}</span>
         <input
           type="range"
-          min={RANGE_START + WINDOW_DAYS - 1}
+          min={SLIDER_MIN}
           max={RANGE_END}
           value={day}
           onChange={(e) => setDay(Number(e.target.value))}
           aria-valuetext={`${formatDay(day)}: ${result.daysUsed} / ${MAX_DAYS_IN_WINDOW}`}
-          className="w-full accent-brand-600"
+          className="block accent-brand-600"
+          // The first checkable day is 179 days into the axis (a full window
+          // must fit), so the slider spans only that part of the ruler — its
+          // handle then sits under the day it controls.
+          style={{ marginLeft: `${pct(SLIDER_MIN)}%`, width: `${100 - pct(SLIDER_MIN)}%` }}
         />
       </label>
 

@@ -18,7 +18,7 @@ test("resolves the Schengen path via the rolling-window engine and links the ful
   await page.getByTestId("tc-submit").click();
 
   await expect(page.getByTestId("tc-results")).toBeVisible();
-  await expect(page.getByTestId("tc-basis")).toContainText("without a visa");
+  await expect(page.getByTestId("tc-basis")).toContainText("No visa needed");
   await expect(page.getByTestId("tc-stay")).toContainText("90 days");
   await expect(page.getByTestId("tc-stay")).toContainText("180-day");
   await expect(
@@ -52,7 +52,7 @@ test("resolves a verified non-Schengen destination end to end, with a matched cu
   await page.getByTestId("tc-submit").click();
 
   await expect(page.getByTestId("tc-results")).toBeVisible();
-  await expect(page.getByTestId("tc-basis")).toContainText("without a visa");
+  await expect(page.getByTestId("tc-basis")).toContainText("No visa needed");
   await expect(page.getByTestId("tc-stay")).toContainText("180 days");
   await expect(page.getByTestId("tc-item-result")).toContainText("Prohibited");
   await expect(page.getByTestId("tc-item-not-found")).toHaveCount(0);
@@ -126,4 +126,16 @@ test("the item field suggests known customs items for the chosen destination as 
   await page.getByTestId("tc-item-suggestions").getByText("adderall", { exact: true }).click();
 
   await expect(page.getByTestId("tc-item-tags")).toContainText("adderall");
+});
+
+test("a result restates the trip, its assumptions and a dated source, with a way to edit", async ({ page }) => {
+  await page.goto("/trip-check?nationality=US&destination=JP");
+  await expect(page.getByTestId("tc-scenario")).toContainText("United States passport");
+  await expect(page.getByTestId("tc-scenario")).toContainText("Japan");
+  await expect(page.getByText("What this assumes")).toBeVisible();
+  await expect(page.getByTestId("tc-results").getByTestId("source-note").first()).toContainText(
+    /Checked against the source on \d{4}-\d{2}-\d{2}/,
+  );
+  await page.getByRole("button", { name: "Edit trip" }).click();
+  await expect(page.locator("#tc-nationality")).toBeFocused();
 });

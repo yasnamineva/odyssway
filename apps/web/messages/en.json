@@ -110,7 +110,7 @@
       },
       {
         "q": "Do you store my trip details?",
-        "a": "No. The calculator runs entirely in your browser — your dates never reach our servers, and shareable links encode your trip in the URL itself rather than in a database. Trip Check works the same way: nothing you enter is stored server-side."
+        "a": "No. The calculator runs entirely in your browser and your dates are never sent to us. A shareable link keeps your trips after the # in the link, a part browsers don't send to any server, so we never see them. But anyone you give the link to can read those dates, so share it only with people you'd tell. Trip Check computes in your browser too; when you open it from a link, your nationality and destination are in the address, so they appear in our hosting provider's standard request logs. When an item search finds no verified rule, we log the text you typed and the destination (nothing else) to decide what to research next. We have no accounts, cookies or analytics."
       },
       {
         "q": "How do you keep this up to date when rules change?",
@@ -523,7 +523,7 @@
     "planNoEntry": "You can't enter on {entry} at all — your window is already full that day.",
     "planEarliestEntry": "Earliest entry date for a {days, plural, one {#-day} other {#-day}} trip: {date}",
     "share": "Copy shareable link",
-    "shareCopied": "Link copied — your dates are encoded in the URL, nothing is stored on our servers.",
+    "shareCopied": "Link copied. Your dates are inside the link itself (after the #), which is never sent to our servers. Anyone you send it to can see them.",
     "reset": "Clear all",
     "rowDayCount": "{days, plural, one {# day} other {# days}} of stay (entry and exit days both count)",
     "timelineWarning": "Taken together, the stays you've entered break the 90/180 rule starting {date} — even if each trip looks fine on its own. Check the dates around that day.",
@@ -637,7 +637,7 @@
       "prohibited": "prohibited",
       "allowed_with_limits": "allowed, within limits",
       "allowed": "allowed",
-      "declaration_required": "allowed, must be declared",
+      "declaration_required": "allowed, declaration may be required",
       "depends": "depends on specifics"
     }
   },
@@ -665,12 +665,12 @@
     "notCoveredLink": "Go to the official source",
     "entryCardTitle": "Can you go?",
     "basisCitizen": "You're a citizen of your destination — none of these rules apply to you.",
-    "basisVisaFree": "Yes — you can enter {destination} without a visa for a short stay. No application, no approval to wait on; just travel with the documents listed below.",
-    "basisEtaRequired": "Yes — with an approved Electronic Travel Authorisation (ETA). An ETA is a lightweight online pre-screening, not a visa: no interview, and it's usually approved within minutes to a few days — but it must be approved before you fly to {destination}, not on arrival.",
+    "basisVisaFree": "No visa needed for a short visit to {destination}, as long as you meet the entry conditions below. The border officer makes the final decision on entry.",
+    "basisEtaRequired": "No visa, but you need an approved Electronic Travel Authorisation (ETA) before you travel to {destination}. You apply online in advance; it isn't issued on arrival. The border officer makes the final decision on entry.",
     "basisVisaRequired": "You need a visa before travelling to {destination}. This means applying in advance — typically through an embassy, consulate, or authorized visa center — and getting it approved before you can board your flight.",
-    "basisVisaOnArrival": "Yes — a visa is issued on arrival in {destination}, so there's no advance application, but budget time and (usually) a fee at the border itself.",
+    "basisVisaOnArrival": "You can get a visa when you arrive in {destination}, so there's no advance application. It's granted at the border, subject to the conditions below.",
     "basisNotCovered": "We haven't verified this yet.",
-    "basisFreeMovement": "Yes — as an EU citizen you have the right to free movement in {destination}. No visa, no travel authorisation, and the 90/180-day limit doesn't apply to you.",
+    "basisFreeMovement": "As an EU citizen you have the right to free movement in {destination}: no visa, no travel authorisation, and the 90/180-day limit doesn't apply to you.",
     "intraEuCustoms": "Our customs answers cover arriving from outside the EU. Travelling between EU countries follows different rules that we haven't verified yet — check the national customs authority before you go.",
     "stayCardTitle": "For how long?",
     "stayRollingWindow": "Up to {maxDays} days in any rolling {windowDays}-day period — the window slides with every day that passes, it isn't reset by leaving and re-entering.",
@@ -679,14 +679,22 @@
     "stayUnconfirmed": "No fixed number of days is stated on the official sources we checked. Your permitted stay is set when you arrive — check your entry stamp or permit.",
     "trackInCalculator": "Track multiple trips in the full Schengen calculator →",
     "documentsCardTitle": "What documents do you need?",
-    "sourceLabel": "Source:",
+    "sourceLabel": "Source",
+    "checkedOn": "Checked against the source on {date}",
+    "scenarioLabel": "Your trip",
+    "scenarioPassport": "{origin} passport",
+    "scenarioTo": "to",
+    "scenarioItems": "Bringing: {items}",
+    "editTrip": "Edit trip",
+    "conditionsTitle": "What this assumes",
+    "assumption": "A short visit, such as a holiday, on a {origin} passport. Working, studying, staying longer or travelling on another passport can change the answer.",
     "itemsCardTitle": "Can you bring it?",
     "itemNotFound": "Not yet verified for {destination} — we won't guess. Check the destination's customs authority directly.",
     "verdict": {
       "prohibited": "Prohibited — do not bring this.",
       "allowed_with_limits": "Allowed, within limits.",
       "allowed": "Allowed.",
-      "declaration_required": "Allowed, but you must declare it.",
+      "declaration_required": "Allowed. A declaration may be required — the conditions below say when.",
       "depends": "Depends on specifics — see the notes below."
     }
   }

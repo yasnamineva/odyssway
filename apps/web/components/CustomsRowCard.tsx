@@ -1,6 +1,7 @@
 import type { CustomsItemRecord } from "@odyssway/engine";
 import { getTranslations } from "next-intl/server";
 import { rowLabel } from "../lib/bring-pages";
+import SourceNote from "./SourceNote";
 
 export const VERDICT_STYLES: Record<string, string> = {
   prohibited: "bg-red-50 text-red-700 ring-red-200",
@@ -20,6 +21,7 @@ export default async function CustomsRowCard({
 }) {
   const t = await getTranslations("bringDestinationPage");
   const tv = await getTranslations("destinationPage.verdict");
+  const ts = await getTranslations("tripCheck");
   return (
     <li className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
       <div className="flex flex-wrap items-center gap-2">
@@ -39,13 +41,14 @@ export default async function CustomsRowCard({
       <p className="mt-3 text-xs leading-relaxed text-slate-500">
         <span className="font-semibold">{t("alsoCovers")}</span> {row.names.slice(0, 14).join(", ")}
       </p>
-      <p className="mt-3 border-t border-slate-100 pt-3 text-xs text-slate-500">
-        {t("verifiedLine", { date: row.verified_at ?? "" })}{" "}
-        <span className="font-medium text-slate-500">{t("sourceLine")}</span>{" "}
-        <a href={row.legal_source.url} rel="noopener noreferrer" className="underline">
-          {row.legal_source.name}
-        </a>
-      </p>
+      <SourceNote
+        className="mt-4"
+        name={row.legal_source.name}
+        url={row.legal_source.url}
+        date={row.verified_at}
+        sourceLabel={ts("sourceLabel")}
+        checkedLabel={row.verified_at ? ts("checkedOn", { date: row.verified_at }) : undefined}
+      />
     </li>
   );
 }

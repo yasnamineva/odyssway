@@ -4,7 +4,11 @@ import { isValidISODate } from "@odyssway/engine";
  * URL-encoded calculator state (AGENTS.md §6.5): dates live in the link,
  * nothing is stored server-side.
  *
- * Format: ?t=<trip>~<trip>&d=<refDate>&pe=<planEntry>&px=<planExit>
+ * Format: #t=<trip>~<trip>&d=<refDate>&pe=<planEntry>&px=<planExit>
+ * The state goes in the fragment (after #), which browsers never send to a
+ * server, so shared dates stay out of request logs and Referer headers. Links
+ * made before 2026-10 used the query string (?t=…); decodeShareState still
+ * reads those, and the calculator rewrites them to the fragment form on load.
  * where <trip> = entry.exit | entry.exit.CC | entry.exit.CC.p
  * ("p" = residence permit / D visa issued by that country).
  */
@@ -50,7 +54,8 @@ export function decodeShareState(
   search: string,
   knownCountryCodes: ReadonlySet<string>,
 ): DecodedShareState {
-  const params = new URLSearchParams(search);
+  // Accepts "#…", "?…" or a bare query string.
+  const params = new URLSearchParams(search.replace(/^[#?]/, ""));
 
   const trips =
     params

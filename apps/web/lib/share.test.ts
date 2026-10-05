@@ -66,3 +66,13 @@ describe("encodeShareState / decodeShareState", () => {
     expect(query).toBe("d=2026-06-01");
   });
 });
+
+describe("decodeShareState input forms", () => {
+  it("reads the fragment form and the legacy query form identically", () => {
+    const known = new Set(["FR"]);
+    const fromHash = decodeShareState("#t=2026-01-01.2026-01-10.FR&d=2026-06-01", known);
+    const fromQuery = decodeShareState("?t=2026-01-01.2026-01-10.FR&d=2026-06-01", known);
+    expect(fromHash).toEqual(fromQuery);
+    expect(fromHash.trips?.[0]?.country).toBe("FR");
+  });
+});
