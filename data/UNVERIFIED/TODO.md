@@ -1328,14 +1328,22 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
       foreign-ministry / border-authority pages are the likely primary sources.
 - [ ] `overstay-penalties.json`: per-state fine/ban ranges from national law or
       official authority pages.
-- [ ] `ees.json` — the five launch countries (FR, ES, DE, IT, NL) ship with
-      the national DPA as the verified contact (grounded in Reg. 2017/2226
-      Art. 53(2): the supervisory authority must assist with rectification,
-      identities verified via the EDPB members list). Still to verify per
-      country: the **designated EES controller** (border/interior authority),
-      its direct request channel/form, and accepted languages — likely
-      sources: each interior ministry / border police site, national EES
-      information pages.
+- [x] `ees.json` — all 29 EES states verified 2026-10-05 (24 added, the
+      launch five upgraded). Each row now names the **designated EES data
+      controller** from the official EU EES page "Contact details for data
+      protection matters" (travel-europe.europa.eu/en/ees/contact-details-for-
+      data-protection-matters — JS-rendered, needs a real browser), with the
+      national DPA as the Art. 53(2) helper/complaint body (EDPB list).
+      Still open per country: accepted languages (no source states them).
+      Conflicts recorded: MT complaint email on the EU page reads
+      `idpc.info@ispc.org.mt` (typo; IDPC + EDPB give `@idpc.org.mt`, used);
+      SE controller email differs between the EU page and police form PM 188.10
+      (both listed); PL Border Guard notice lists `gabinet.kg@` besides the EU
+      page's `nu.ees@` (both listed); HU authority email differs from EDPB
+      (EU page's used). Letters in 18 new languages use each EU language
+      version of Reg. 2017/2226 (CELLAR) for terminology; `nb` and `is` are
+      plain translations (no EU language version). **None has had a native
+      speaker check** — worth doing for the highest-traffic ones (pl, pt, el).
 - [ ] `eu-items.json`: Directive 2007/74/EC allowances, Regulation (EU)
       2018/1672 cash rules, Regulation (EU) 2019/2122 animal products — the
       directives/regulations are on EUR-Lex (see access problem above); the EC's

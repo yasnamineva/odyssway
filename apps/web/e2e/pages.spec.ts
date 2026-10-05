@@ -21,9 +21,9 @@ const routes: Array<{ path: string; expectText: string }> = [
   { path: "/rules/overstay-penalties/fr", expectText: "CESEDA" },
   { path: "/bring/e-cigarettes/japan", expectText: "Can you bring e-cigarettes or vapes to Japan?" },
   { path: "/bring/medication/south-korea", expectText: "Ministry of Food and Drug Safety" },
-  { path: "/destinations/us", expectText: "Travelling to United States" },
-  { path: "/destinations/gb", expectText: "Travelling to United Kingdom" },
-  { path: "/destinations/ca", expectText: "Travelling to Canada" },
+  { path: "/destinations/united-states", expectText: "Travelling to United States" },
+  { path: "/destinations/united-kingdom", expectText: "Travelling to United Kingdom" },
+  { path: "/destinations/canada", expectText: "Travelling to Canada" },
   { path: "/guides/dual-citizens", expectText: "not a Union citizen" },
   { path: "/guides/residence-permit-holders", expectText: "shall not be taken into account" },
   { path: "/changelog", expectText: "Verification changelog" },
@@ -55,7 +55,7 @@ test("unknown nationality pages 404 instead of rendering thin content", async ({
 });
 
 test("unverified EES countries 404 instead of rendering thin content", async ({ page }) => {
-  const response = await page.goto("/ees/data-access/pl");
+  const response = await page.goto("/ees/data-access/ie");
   expect(response?.status()).toBe(404);
 });
 
@@ -67,7 +67,7 @@ test("unverified overstay-penalty countries 404 instead of rendering thin conten
 });
 
 test("unverified destination pages 404 instead of rendering thin content", async ({ page }) => {
-  const response = await page.goto("/destinations/co");
+  const response = await page.goto("/destinations/colombia");
   expect(response?.status()).toBe(404);
 });
 
@@ -200,4 +200,59 @@ test("landing page links into both tools", async ({ page }) => {
   ).toHaveAttribute("href", "/calculator");
   await page.getByRole("link", { name: /Open Trip Check/ }).click();
   await expect(page).toHaveURL(/\/trip-check$/);
+});
+
+test("old destination code URLs redirect permanently to the name URL", async ({ request }) => {
+  const res = await request.get("/destinations/jp", { maxRedirects: 0 });
+  expect(res.status()).toBe(308);
+  expect(res.headers()["location"]).toBe("/destinations/japan");
+});
+
+test("named-medicine pages answer the brand query from the verified row", async ({ page }) => {
+  await page.goto("/medications/adderall/japan");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Can you bring Adderall to Japan?");
+  await expect(page.locator("body")).toContainText("Prohibited");
+  await expect(page.locator("body")).toContainText("Adderall in other countries");
+
+  // Single-country medicines get the pair page but no thin one-row hub.
+  const sudafed = await page.goto("/medications/sudafed/japan");
+  expect(sudafed?.status()).toBe(200);
+  const hub = await page.goto("/medications/sudafed");
+  expect(hub?.status()).toBe(404);
+
+  await page.goto("/medications/adderall");
+  await expect(page.locator("table")).toContainText("Japan");
+});
+
+test("nationality × destination pages render the verified row with comparisons", async ({ page }) => {
+  const res = await page.goto("/destinations/united-states/united-kingdom");
+  expect(res?.status()).toBe(200);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+    "United States entry requirements for UK citizens",
+  );
+  await expect(page.locator("body")).toContainText("ESTA");
+  await expect(page.locator("body")).toContainText("United States for other passports");
+  await page.goto("/destinations/japan");
+  await expect(page.locator('a[href="/destinations/japan/united-states"]')).toBeVisible();
+});
+
+test("EES guides cover all 29 EES countries and the missing-exit guide", async ({ page }) => {
+  await page.goto("/ees");
+  await expect(page.locator('a[href^="/ees/data-access/"]')).toHaveCount(29);
+  await page.goto("/ees/data-access/pl");
+  await expect(page.locator("body")).toContainText("Border Guard");
+  await expect(page.getByText("Template letter — Polish")).toBeVisible();
+  const res = await page.goto("/ees/missing-exit-record");
+  expect(res?.status()).toBe(200);
+  await expect(page.locator("body")).toContainText("Article 52");
+});
+
+test("embeddable calculator renders without site chrome; /widget shows the snippet", async ({ page }) => {
+  await page.goto("/embed/calculator");
+  await expect(page.locator("header")).toHaveCount(0);
+  await expect(page.locator("footer")).toHaveCount(0);
+  await expect(page.getByRole("link", { name: /Schengen calculator by Odyssway/ })).toBeVisible();
+  await page.goto("/widget");
+  await expect(page.locator("pre")).toContainText("/embed/calculator");
+  await expect(page.locator("pre")).toContainText("/calculator\">Odyssway</a>");
 });

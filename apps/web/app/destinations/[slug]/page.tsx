@@ -4,9 +4,16 @@ import { getTranslations } from "next-intl/server";
 import { blogPosts } from "../../../lib/blog";
 import { BRING_CATEGORIES, type BringCategory } from "../../../lib/bring-categories";
 import { destinationSlug, rowLabel } from "../../../lib/bring-pages";
-import { customsItems, destinationByCode, destinations, entryRequirements } from "../../../lib/destinations";
+import {
+  customsItems,
+  destinationBySlug,
+  destinationPath,
+  destinations,
+  entryRequirements,
+} from "../../../lib/destinations";
 import { nationalityRules } from "../../../lib/nationalities";
 import { SITE_URL } from "../../../lib/site";
+import { travelPairPath } from "../../../lib/travel-pairs";
 
 interface Params {
   slug: string;
@@ -17,7 +24,7 @@ export const dynamicParams = false;
 export function generateStaticParams(): Params[] {
   return destinations
     .filter((d) => d.status === "verified")
-    .map((d) => ({ slug: d.code.toLowerCase() }));
+    .map((d) => ({ slug: destinationSlug(d.name) }));
 }
 
 export async function generateMetadata({
@@ -25,18 +32,18 @@ export async function generateMetadata({
 }: {
   params: Promise<Params>;
 }): Promise<Metadata> {
-  const dest = destinationByCode((await params).slug);
+  const dest = destinationBySlug((await params).slug);
   if (!dest) return {};
   const t = await getTranslations("destinationPage");
   return {
     title: t("metaTitle", { destination: dest.name }),
     description: t("metaDescription", { destination: dest.name }),
-    alternates: { canonical: `/destinations/${dest.code.toLowerCase()}` },
+    alternates: { canonical: destinationPath(dest) },
   };
 }
 
 export default async function DestinationPage({ params }: { params: Promise<Params> }) {
-  const dest = destinationByCode((await params).slug);
+  const dest = destinationBySlug((await params).slug);
   if (!dest || dest.status !== "verified") notFound();
 
   const t = await getTranslations("destinationPage");
@@ -65,7 +72,7 @@ export default async function DestinationPage({ params }: { params: Promise<Para
         "@type": "ListItem",
         position: 2,
         name: t("h1", { destination: dest.name }),
-        item: `${SITE_URL}/destinations/${dest.code.toLowerCase()}`,
+        item: `${SITE_URL}${destinationPath(dest)}`,
       },
     ],
   };
@@ -93,7 +100,13 @@ export default async function DestinationPage({ params }: { params: Promise<Para
           <ul className="mt-3 divide-y divide-slate-100 text-sm text-slate-700">
             {nationalityRows.map(({ row, name }) => (
               <li key={row.nationality} className="py-2">
-                <span className="font-medium text-slate-900">{name}: </span>
+                <a
+                  href={travelPairPath({ destinationSlug: destinationSlug(dest.name), nationalitySlug: destinationSlug(name) })}
+                  className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-2"
+                >
+                  {name}
+                </a>
+                <span className="font-medium text-slate-900">: </span>
                 {t(`requirement.${row.requirement}`)}
                 {row.stayPolicy.kind === "fixed_per_entry" && (
                   <span> — {t("upToDays", { days: row.stayPolicy.maxDays })}</span>

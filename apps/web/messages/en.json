@@ -46,6 +46,10 @@
       "title": "Is ETIAS Live Yet? Launch Date, €20 Fee and Validity",
       "description": "Current official status of ETIAS: expected launch window, fee, validity — tracked against EU sources and updated when they change."
     },
+    "eesMissingExit": {
+      "title": "EES Missing Exit Record: How to Get It Fixed",
+      "description": "No exit recorded in the EU Entry/Exit System? Why it flags you as an overstayer, how to check your record, and how to get it corrected within 45 days under Article 52."
+    },
     "eesDispute": {
       "title": "EES Says You Overstayed But You Didn't? Your Rights",
       "description": "How to dispute a false EES overstay flag: your Article 52 rectification rights, the 45-day reply deadline and the evidence to gather, from the regulation."
@@ -148,6 +152,7 @@
     "metaTitle": "Bringing {item} Abroad — Rules by Destination",
     "metaDescription": "Can you bring {item} into the country? Verified customs rules by destination, cited to each country's own customs authority.",
     "faqQuestion": "Can I bring {item} into {destination}?",
+    "namedMedicinesLink": "Travelling with a specific medicine, like Adderall or Ozempic? See it country by country \u2192",
     "h1item": "Bringing {item} Into a Country — What Each Destination Requires",
     "introItem": "What's allowed, limited, or prohibited for {item} in every destination we've verified, cited to each country's own customs authority.",
     "verifiedLine": "Checked {date} —"
@@ -210,6 +215,76 @@
     "checkedOn": "Checked against official sources on {date}.",
     "disputeLink": "Read the full guide: the EES says you overstayed — but you didn't"
   },
+  "travelPair": {
+    "metaTitle": "{destination} entry requirements for {citizens} citizens",
+    "metaDescription": "{answer} Stay, documents and official source, checked {date}.",
+    "h1": "{destination} entry requirements for {citizens} citizens",
+    "shortAnswer": "Short answer",
+    "answer": {
+      "visa_free": "{citizens} citizens can visit {destination} without a visa.",
+      "eta_required": "{citizens} citizens need an electronic travel authorisation (ETA) before travelling to {destination}.",
+      "visa_required": "{citizens} citizens need a visa to visit {destination}.",
+      "visa_on_arrival": "{citizens} citizens can get a visa on arrival in {destination}."
+    },
+    "stayTitle": "How long you can stay",
+    "stayFixed": "Up to {days} days per visit.",
+    "stayRolling": "Up to {maxDays} days in any {windowDays}-day period.",
+    "stayVisa": "Your visa sets how long you can stay.",
+    "stayUnconfirmed": "The official source doesn't state a fixed stay length. Check it before you travel.",
+    "documentsTitle": "What you need",
+    "notesTitle": "Good to know",
+    "sourceLine": "Source:",
+    "verifiedLine": "Checked against official sources on {date}.",
+    "otherNationalities": "{destination} for other passports",
+    "otherDestinations": "Other destinations for {citizens} citizens",
+    "ctaTripCheck": "Check your trip, including what you can bring \u2192",
+    "destinationGuide": "Full {destination} guide \u2192",
+    "disclaimer": "Informational only \u2014 not legal advice. Entry rules change; confirm with the official source above before you travel."
+  },
+  "widgetPage": {
+    "metaTitle": "Free Schengen 90/180 calculator for your website",
+    "metaDescription": "Embed Odyssway's free Schengen 90/180-day calculator on your travel blog or expat site with one copy-paste snippet. No account, no tracking.",
+    "h1": "Add the Schengen calculator to your site",
+    "intro": "Running a travel blog, expat guide or visa site? Give your readers the same 90/180-day calculator we run here. It's free, needs no account, and stays up to date when the rules or our engine change.",
+    "snippetTitle": "Copy this into your page",
+    "snippetHelp": "Paste it where the calculator should appear. The small script resizes the frame to fit; it works without it, at a fixed height.",
+    "termsTitle": "How it works",
+    "termFree": "Free for any site, commercial or not.",
+    "termCredit": "Please keep the \"Schengen 90/180 calculator by Odyssway\" line under the frame.",
+    "termPrivacy": "Your readers' trips stay in their own browser. Nothing is sent to us or to you, and there are no cookies or trackers.",
+    "termUpdates": "When a rule changes, the embedded calculator updates automatically. There's nothing to maintain.",
+    "previewTitle": "Preview",
+    "poweredBy": "Schengen calculator by Odyssway \u2192"
+  },
+  "medicationsIndex": {
+    "metaTitle": "Travelling with medication: Adderall, Xanax, Ozempic and more",
+    "metaDescription": "Country-by-country customs rules for named medicines like Adderall, Xanax, Codeine and Ozempic, each cited to the official source.",
+    "h1": "Travelling with a specific medicine",
+    "intro": "Pick your medicine to see, country by country, whether you can bring it. A country only appears when its official customs rule names that medicine.",
+    "countries": "{count, plural, one {# country} other {# countries}}",
+    "generalLink": "Looking for general rules on prescription medicine? Compare medication rules by country \u2192"
+  },
+  "medicationProduct": {
+    "metaTitle": "Travelling with {product}: rules in {count} countries",
+    "metaDescription": "Can you bring {product} abroad? Customs rules for {product} in {count} countries, each from the official source and dated.",
+    "h1": "Travelling with {product}",
+    "intro": "Whether you can bring {product} depends on where you are going. This list only includes countries whose official customs rule names {product}. Each row links to the full rule and its source.",
+    "colCountry": "Country",
+    "colVerdict": "Verdict",
+    "colChecked": "Checked",
+    "breadcrumbRoot": "Medicines",
+    "missing": "Country not listed? We have not verified a rule that names {product} there yet. Trip Check shows what we do know.",
+    "otherMedicines": "Other medicines"
+  },
+  "medicationPair": {
+    "metaTitle": "Can you bring {product} to {destination}?",
+    "metaDescription": "Can you bring {product} to {destination}? {answer} Official source, checked {date}.",
+    "h1": "Can you bring {product} to {destination}?",
+    "ruleScope": "{destination}'s official rule below names {product}. The same rule also covers the other medicines it lists, so read the conditions carefully.",
+    "otherCountries": "{product} in other countries",
+    "allCountries": "{product} in every country we cover \u2192",
+    "medicationGuide": "All medication rules for {destination} \u2192"
+  },
   "bringDestinationPage": {
     "metaTitle": "Can you bring {item} to {destination}?",
     "metaDescription": "Can you bring {item} to {destination}? {answer} Limits and the official source, checked {date}.",
@@ -220,6 +295,7 @@
     "sourceLine": "Source:",
     "verifiedLine": "Checked {date} —",
     "moreForDestination": "Other things to check for {destination}",
+    "namedMedicines": "Specific medicines named in {destination}'s rules",
     "compareEverywhere": "Compare {item} in every destination →",
     "fullGuide": "Full {destination} guide →",
     "checkYourTripCta": "Check your specific trip →",
@@ -536,6 +612,7 @@
     "faq": "FAQ",
     "blog": "Blog",
     "bring": "What can I bring?",
+    "widget": "Embed the calculator",
     "developers": "API"
   },
   "destinationPage": {

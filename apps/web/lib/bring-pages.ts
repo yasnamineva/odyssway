@@ -1,6 +1,6 @@
 import type { CustomsItemRecord, DestinationRecord } from "@odyssway/engine";
 import { BRING_CATEGORIES, type BringCategory } from "./bring-categories";
-import { customsItems, destinations } from "./destinations";
+import { customsItems, destinationSlug, destinations } from "./destinations";
 
 /**
  * One page per (item category × destination) that has at least one verified
@@ -18,12 +18,7 @@ export interface BringPair {
   lastVerified: string | null;
 }
 
-export function destinationSlug(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
-}
+export { destinationSlug };
 
 export const bringPairs: BringPair[] = (() => {
   const pairs: BringPair[] = [];

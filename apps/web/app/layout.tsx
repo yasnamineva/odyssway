@@ -4,6 +4,7 @@ import { getMessages, getTranslations } from "next-intl/server";
 import { Lora } from "next/font/google";
 import type { ReactNode } from "react";
 import FooterLogo from "../components/FooterLogo";
+import SiteChrome from "../components/SiteChrome";
 import SiteNav from "../components/SiteNav";
 import { SITE_URL } from "../lib/site";
 import "./globals.css";
@@ -74,6 +75,7 @@ export default async function RootLayout({
       <body className="bg-slate-50 text-slate-900 antialiased">
         <NextIntlClientProvider messages={messages}>
           <div className="flex min-h-dvh flex-col">
+            <SiteChrome>
             <header className="relative z-30 mx-auto w-full max-w-6xl px-4 pt-4 sm:px-6">
               <SiteNav
                 brand={t("header.brand")}
@@ -88,9 +90,11 @@ export default async function RootLayout({
                 cta={{ href: "/trip-check", label: t("home.hero.ctaPrimary") }}
               />
             </header>
+            </SiteChrome>
             <main className="mx-auto w-full max-w-6xl flex-1 px-4 pb-12 sm:px-6">
               {children}
             </main>
+            <SiteChrome>
             <footer className="border-t border-slate-800 bg-slate-900 text-white">
               <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
                 <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
@@ -127,6 +131,9 @@ export default async function RootLayout({
                     <a href="/developers" className="text-white/60 transition hover:text-white">
                       {t("footer.developers")}
                     </a>
+                    <a href="/widget" className="text-white/60 transition hover:text-white">
+                      {t("footer.widget")}
+                    </a>
                     <a
                       href={OFFICIAL_CALCULATOR_URL}
                       rel="noopener noreferrer"
@@ -142,6 +149,7 @@ export default async function RootLayout({
                 </div>
               </div>
             </footer>
+            </SiteChrome>
           </div>
         </NextIntlClientProvider>
       </body>

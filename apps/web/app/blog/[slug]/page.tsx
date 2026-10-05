@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { ComponentType } from "react";
 import { blogPostBySlug, blogPosts } from "../../../lib/blog";
-import { destinationByCode } from "../../../lib/destinations";
+import { destinationByCode, destinationPath } from "../../../lib/destinations";
 import { SITE_URL } from "../../../lib/site";
 
 export function generateStaticParams() {
@@ -135,7 +135,7 @@ export default async function BlogPostPage({
             {relatedDestinations.map((d) => (
               <li key={d.code}>
                 <a
-                  href={`/destinations/${d.code.toLowerCase()}`}
+                  href={destinationPath(d)}
                   className="inline-flex items-center rounded-full border border-slate-200 px-3 py-1 text-xs font-medium text-slate-700 hover:border-blue-200 hover:text-blue-700"
                 >
                   {d.name}

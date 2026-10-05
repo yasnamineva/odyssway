@@ -38,6 +38,24 @@ export function destinationByCode(code: string): DestinationRecord | undefined {
   return destinations.find((d) => d.code === upper);
 }
 
+/** URL slug from a display name: "United States" → "united-states". */
+export function destinationSlug(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+/** Canonical destination hub URL — by name, the way people search
+ * ("japan entry requirements"); the old code URLs redirect here (next.config.ts). */
+export function destinationPath(dest: { name: string }): string {
+  return `/destinations/${destinationSlug(dest.name)}`;
+}
+
+export function destinationBySlug(slug: string): DestinationRecord | undefined {
+  return destinations.find((d) => destinationSlug(d.name) === slug);
+}
+
 /**
  * Destinations shown in the trip-check picker as "coming soon" — plain
  * display names and official-site links only, never a legal claim, so this

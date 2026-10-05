@@ -4,6 +4,9 @@ import { notFound } from "next/navigation";
 import { BRING_CATEGORIES } from "../../../../lib/bring-categories";
 import { bringPair, bringPairs, bringPairsForDestination, rowLabel } from "../../../../lib/bring-pages";
 import { SITE_URL } from "../../../../lib/site";
+import CustomsRowCard from "../../../../components/CustomsRowCard";
+import { productsForDestination } from "../../../../lib/medication-products";
+import { destinationPath } from "../../../../lib/destinations";
 
 interface Params {
   item: string;
@@ -15,14 +18,6 @@ export const dynamicParams = false;
 export function generateStaticParams(): Params[] {
   return bringPairs.map((p) => ({ item: p.itemSlug, destination: p.destinationSlug }));
 }
-
-const VERDICT_STYLES: Record<string, string> = {
-  prohibited: "bg-red-50 text-red-700 ring-red-200",
-  allowed_with_limits: "bg-amber-50 text-amber-800 ring-amber-200",
-  allowed: "bg-emerald-50 text-emerald-700 ring-emerald-200",
-  declaration_required: "bg-blue-50 text-blue-700 ring-blue-200",
-  depends: "bg-slate-100 text-slate-700 ring-slate-200",
-};
 
 function capitalize(s: string): string {
   return s.charAt(0).toUpperCase() + s.slice(1);
@@ -137,32 +132,7 @@ export default async function BringDestinationPage({ params }: { params: Promise
 
       <ul className="space-y-4">
         {pair.rows.map((r) => (
-          <li key={r.slug} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-            <div className="flex flex-wrap items-center gap-2">
-              <h2 className="font-display text-base font-bold text-slate-900">
-                {rowLabel(r.slug, pair.destination.code)}
-              </h2>
-              <span
-                className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ring-1 ring-inset ${VERDICT_STYLES[r.verdict] ?? VERDICT_STYLES.depends}`}
-              >
-                {tv(r.verdict)}
-              </span>
-            </div>
-            {r.limits?.description && (
-              <p className="mt-3 text-sm leading-relaxed text-slate-700">{r.limits.description}</p>
-            )}
-            {r.notes && <p className="mt-2 text-sm leading-relaxed text-slate-600">{r.notes}</p>}
-            <p className="mt-3 text-xs leading-relaxed text-slate-500">
-              <span className="font-semibold">{t("alsoCovers")}</span> {r.names.slice(0, 14).join(", ")}
-            </p>
-            <p className="mt-3 border-t border-slate-100 pt-3 text-xs text-slate-500">
-              {t("verifiedLine", { date: r.verified_at ?? "" })}{" "}
-              <span className="font-medium text-slate-500">{t("sourceLine")}</span>{" "}
-              <a href={r.legal_source.url} rel="noopener noreferrer" className="underline">
-                {r.legal_source.name}
-              </a>
-            </p>
-          </li>
+          <CustomsRowCard key={r.slug} row={r} destinationCode={pair.destination.code} />
         ))}
       </ul>
 
@@ -179,10 +149,30 @@ export default async function BringDestinationPage({ params }: { params: Promise
         <span className="mx-2 text-slate-300" aria-hidden="true">
           |
         </span>
-        <a href={`/destinations/${pair.destination.code.toLowerCase()}`} className="text-blue-700 underline">
+        <a href={destinationPath(pair.destination)} className="text-blue-700 underline">
           {t("fullGuide", { destination: destName })}
         </a>
       </p>
+
+      {pair.category === "medication" && productsForDestination(pair.destination.code).length > 0 && (
+        <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <h2 className="text-base font-semibold text-slate-900">
+            {t("namedMedicines", { destination: destName })}
+          </h2>
+          <ul className="mt-3 flex flex-wrap gap-2">
+            {productsForDestination(pair.destination.code).map((p) => (
+              <li key={p.slug}>
+                <a
+                  href={`/medications/${p.slug}/${pair.destinationSlug}`}
+                  className="inline-block rounded-full border border-slate-300 px-3 py-1 text-xs font-medium text-slate-700 hover:border-slate-900 hover:bg-slate-900 hover:text-white"
+                >
+                  {p.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {siblings.length > 0 && (
         <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">

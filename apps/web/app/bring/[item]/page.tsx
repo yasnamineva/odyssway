@@ -56,7 +56,7 @@ export default async function BringItemPage({ params }: { params: Promise<Params
   // Anti-thin-content (AGENTS.md §7): a category page ships only if it has
   // real verified rows to show — never a placeholder.
   if (!found || found.rows.length === 0) notFound();
-  const { meta, rows } = found;
+  const { category, meta, rows } = found;
 
   const t = await getTranslations("bringPage");
   const tc = await getTranslations("destinationPage.verdict");
@@ -108,6 +108,13 @@ export default async function BringItemPage({ params }: { params: Promise<Params
             {t("checkYourTripCta")}
           </a>
         </p>
+        {category === "medication" ? (
+          <p className="mt-2 text-sm text-slate-600">
+            <a href="/medications" className="underline">
+              {t("namedMedicinesLink")}
+            </a>
+          </p>
+        ) : null}
       </header>
 
       <ul className="space-y-3">

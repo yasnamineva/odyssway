@@ -3,10 +3,12 @@ import { blogPosts } from "../lib/blog";
 import { BRING_CATEGORIES } from "../lib/bring-categories";
 import { bringPairs } from "../lib/bring-pages";
 import { countriesVerifiedAt } from "../lib/countries";
-import { customsItems, destinations, entryRequirements } from "../lib/destinations";
+import { customsItems, destinationPath, destinations, entryRequirements } from "../lib/destinations";
 import { etias } from "../lib/etias";
 import { publishedEesRecords } from "../lib/ees";
+import { latestVerified, medicationProducts, pairsForProduct, productPairs } from "../lib/medication-products";
 import { etiasNationalities } from "../lib/nationalities";
+import { travelPairPath, travelPairs } from "../lib/travel-pairs";
 import { publishedOverstayPenalties } from "../lib/overstay-penalties";
 import { SITE_URL as BASE } from "../lib/site";
 
@@ -37,9 +39,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: r.verified_at ?? CONTENT_CHECKED,
       priority: 0.6,
     })),
-    { url: `${BASE}/ees`, lastModified: CONTENT_CHECKED, priority: 0.8 },
+    { url: `${BASE}/ees`, lastModified: "2026-10-05", priority: 0.8 },
     { url: `${BASE}/ees/what-to-expect`, lastModified: CONTENT_CHECKED, priority: 0.7 },
-    { url: `${BASE}/ees/dispute-overstay`, lastModified: CONTENT_CHECKED, priority: 0.8 },
+    { url: `${BASE}/ees/dispute-overstay`, lastModified: "2026-10-05", priority: 0.8 },
+    { url: `${BASE}/ees/missing-exit-record`, lastModified: "2026-10-05", priority: 0.8 },
+    { url: `${BASE}/widget`, lastModified: "2026-10-05", priority: 0.4 },
     ...publishedEesRecords.map((r) => ({
       url: `${BASE}/ees/data-access/${r.country.toLowerCase()}`,
       lastModified: r.verified_at ?? CONTENT_CHECKED,
@@ -60,7 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...destinations
       .filter((d) => d.status === "verified")
       .map((d) => ({
-        url: `${BASE}/destinations/${d.code.toLowerCase()}`,
+        url: `${BASE}${destinationPath(d)}`,
         lastModified: latest([
           d.verified_at,
           ...customsItems.filter((i) => i.destination === d.code).map((i) => i.verified_at),
@@ -69,6 +73,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
       })),
     { url: `${BASE}/bring`, lastModified: DATA_LAST_UPDATED, priority: 0.5 },
+    ...travelPairs.map((pair) => ({
+      url: `${BASE}${travelPairPath(pair)}`,
+      lastModified: pair.row.verified_at ?? DATA_LAST_UPDATED,
+      priority: 0.6,
+    })),
+    { url: `${BASE}/medications`, lastModified: DATA_LAST_UPDATED, priority: 0.6 },
+    ...medicationProducts.map((p) => ({
+      url: `${BASE}/medications/${p.slug}`,
+      lastModified: latest(pairsForProduct(p.slug).map((pair) => latestVerified(pair.rows))),
+      priority: 0.6,
+    })),
+    ...productPairs.map((pair) => ({
+      url: `${BASE}/medications/${pair.product.slug}/${pair.destinationSlug}`,
+      lastModified: latestVerified(pair.rows) ?? DATA_LAST_UPDATED,
+      priority: 0.5,
+    })),
     ...bringPairs.map((p) => ({
       url: `${BASE}/bring/${p.itemSlug}/${p.destinationSlug}`,
       lastModified: p.lastVerified ?? CONTENT_CHECKED,

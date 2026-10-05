@@ -456,6 +456,7 @@ URL structure (locale-prefixed later: `/bg/…`, `/tr/…`, `hreflang` everywher
 | `/trip-check` | **"Trip Check"** — the canonical trip-check tool (named and given its own nav entry 2026-08, moved off `/`): "I'm from ⟨X⟩, going to ⟨Y⟩, bringing ⟨Z⟩" — resolves entry eligibility, stay length, documents, and item verdicts (§5.9–5.11, §6.6). Uncovered pairs render the honest not-yet-verified state, never a guess. KW: "can I travel to {destination}", "what can I bring to {destination}" |
 | `/calculator` | The Schengen 90/180 deep-dive — **retained as-is**, not rewritten. Reached directly, from the header nav, and linked from Schengen results on `/trip-check`. FAQ + HowTo schema. KW: "schengen calculator", "90/180 day rule calculator" |
 | `/destinations/[slug]` | Programmatic per-destination hub (verified destinations only, §5.9): entry requirements by nationality + item verdicts for that destination. KW: "{destination} entry requirements", "what can I bring to {destination}" |
+| `/destinations/[slug]/[nationality]` | Programmatic, one page per verified `entry-requirements.json` row (approved 2026-10-05): requirement, stay, documents, notes, source — plus the same destination across passports and the same passport across destinations, so each page carries unique substance. Destination slugs are names (`/destinations/japan`); old code URLs 308-redirect. KW: "{destination} entry requirements for {nationality} citizens", "do {nationality} citizens need a visa for {destination}" |
 | `/rules/90-180-rule` | Definitive plain-language explainer feeding the Schengen tool. KW: "schengen 90 180 rule explained" |
 | `/rules/overstay-penalties/[country]` | Programmatic, from verified data. KW: "overstay schengen fine {country}" |
 | `/guides/residence-permit-holders` | Edge case. KW: "residence permit travel other schengen countries 90 days" |
@@ -469,6 +470,9 @@ URL structure (locale-prefixed later: `/bg/…`, `/tr/…`, `hreflang` everywher
 | `/etias/status` | **Launch tracker** — renders from `data/etias.json`, updated frequently. KW: "is ETIAS live", "ETIAS start date" |
 | `/etias/[nationality]` | Programmatic. KW: "ETIAS for {nationality} citizens" |
 | `/bring/[item]` | Phase 3, optional: standalone SEO landing pages generalizing `customs-items.json` (§5.11) item results beyond the inline results already on `/` and `/destinations/[slug]`. KW: "can I bring {item} to {destination}" |
+| `/medications`, `/medications/[product]`, `/medications/[product]/[destination]` | Named-medicine pages (approved 2026-10-05). A product matches a customs row only when that verified row lists the brand name in `names` — never inferred from an ingredient or drug class. Hubs need ≥2 countries; single-country products (Sudafed → Japan) get only the pair page. KW: "can I bring {product} to {destination}", "travelling with {product}" |
+| `/ees/missing-exit-record` | KW: "EES missing exit record", "EES no exit recorded" |
+| `/embed/calculator` | The calculator alone for third-party iframes (noindex, canonical `/calculator`); site header/footer hidden via `SiteChrome`. |
 | `/tracker` | Phase-2 app (accounts, alerts, Pro) |
 | `/about`, `/methodology`, `/sources` | Trust pages: how we verify, full source list |
 | `/changelog` | **Verification changelog**: public, chronological log of every rule-data change (what changed, why, source link, `verified_at`, `verified_by`). Rendered **automatically** from the versioned data files (derive from git history or a dedicated changelog JSON — implementer's choice, but never hand-maintained). |
