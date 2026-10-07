@@ -12,6 +12,7 @@ import RuleRuler from "../components/RuleRuler";
 import { More } from "../components/content/Blocks";
 import SampleAnswer from "../components/SampleAnswer";
 import { blogPostsByDate } from "../lib/blog";
+import { photos } from "../lib/photos";
 import { schengenCountries } from "../lib/countries";
 import { coveredDestinationCount, destinations, entryRequirements, queuedDestinations } from "../lib/destinations";
 import { publishedNationalities } from "../lib/nationalities";
@@ -295,15 +296,13 @@ export default async function HomePage() {
                   href={`/blog/${post.slug}`}
                   className="group flex h-full flex-col overflow-hidden rounded-md border border-slate-300/80 bg-white transition hover:border-slate-400"
                 >
-                  {/* eslint-disable-next-line @next/next/no-img-element -- self-generated same-origin PNG, not a candidate for next/image optimization */}
-                  <img
-                    src={`/blog/${post.slug}/opengraph-image`}
+                  <Image
+                    src={`/images/photos/${post.photo}.jpg`}
                     alt=""
-                    width={1200}
-                    height={630}
-                    loading="lazy"
-                    decoding="async"
-                    className="aspect-[1200/630] w-full border-b border-slate-300/80 object-cover"
+                    width={photos[post.photo].width}
+                    height={photos[post.photo].height}
+                    sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw"
+                    className="aspect-[3/2] w-full border-b border-slate-300/80 object-cover"
                   />
                   <div className="flex flex-1 flex-col p-5">
                     <p className="text-[11px] tracking-[0.12em] text-slate-500 uppercase">

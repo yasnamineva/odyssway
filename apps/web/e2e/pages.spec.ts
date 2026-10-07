@@ -208,6 +208,21 @@ test("old destination code URLs redirect permanently to the name URL", async ({ 
   expect(res.headers()["location"]).toBe("/destinations/japan");
 });
 
+test("blog posts carry a photo and retired post URLs redirect", async ({ page, request }) => {
+  await page.goto("/blog", { waitUntil: "domcontentloaded" });
+  const cards = page.locator("main ol > li");
+  await expect(cards).toHaveCount(6);
+  await expect(cards.first().locator("img")).toHaveAttribute("src", /blog-/);
+  await page.goto("/blog/adhd-medication-japan", { waitUntil: "domcontentloaded" });
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Adderall");
+  await expect(page.locator("figure img")).toBeVisible();
+  const og = await page.locator('meta[property="og:image"]').getAttribute("content");
+  expect(og).toContain("/images/photos/blog-japan.jpg");
+  const res = await request.get("/blog/ees-live-five-countries", { maxRedirects: 0 });
+  expect(res.status()).toBe(308);
+  expect(res.headers()["location"]).toBe("/blog/europe-counts-your-days");
+});
+
 test("named-medicine pages answer the brand query from the verified row", async ({ page }) => {
   await page.goto("/medications/adderall/japan");
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("Can you bring Adderall to Japan?");

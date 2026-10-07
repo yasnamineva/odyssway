@@ -3,6 +3,8 @@ import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import BreadcrumbJsonLd from "../../../../components/BreadcrumbJsonLd";
 import SourceNote from "../../../../components/SourceNote";
+import Photo from "../../../../components/content/Photo";
+import { destinationPhoto } from "../../../../lib/photos";
 import { destinationPath } from "../../../../lib/destinations";
 import { travelPair, travelPairPath, travelPairs, type TravelPair } from "../../../../lib/travel-pairs";
 
@@ -56,6 +58,7 @@ export default async function TravelPairPage({ params }: { params: Promise<Param
   const tc = await getTranslations("common");
   const ts = await getTranslations("tripCheck");
   const { row } = pair;
+  const photo = destinationPhoto(pair.destination.code);
 
   // The comparisons are what make each page more than its one row: the same
   // destination across passports, and the same passport across destinations.
@@ -107,14 +110,14 @@ export default async function TravelPairPage({ params }: { params: Promise<Param
         <h1 className="font-display text-2xl font-bold tracking-tight text-slate-900 lg:text-3xl">
           {t("h1", vars)}
         </h1>
-        <p className="mt-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm">
-          <span className="text-xs font-semibold tracking-wide text-slate-500 uppercase">{t("shortAnswer")}</span>
-          <br />
-          <span className="font-medium text-slate-900">{answer}</span> {stay}
+        {photo ? <Photo name={photo} hero /> : null}
+        <p className="mt-5 border-l-4 border-brand-600 pl-4 text-lg leading-relaxed text-slate-700">
+          <span className="block text-[11px] font-semibold tracking-[0.14em] text-brand-700 uppercase">{t("shortAnswer")}</span>
+          <span className="font-semibold text-slate-900">{answer}</span> {stay}
         </p>
       </header>
 
-      <section className="rounded-2xl border border-slate-200 bg-white p-5 text-sm leading-relaxed text-slate-700 shadow-sm">
+      <section className="text-[15px] leading-relaxed text-slate-700">
         <dl className="space-y-4">
           <div>
             <dt className="font-semibold text-slate-900">{t("stayTitle")}</dt>

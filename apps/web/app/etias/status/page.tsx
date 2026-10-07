@@ -4,7 +4,7 @@ import { etias, etiasSources } from "../../../lib/etias";
 import { etiasNationalities } from "../../../lib/nationalities";
 import { Callout, KeyNumbers, LinkCard, LinkCards, More } from "../../../components/content/Blocks";
 import InfoTip from "../../../components/content/InfoTip";
-import { CalendarClockIcon } from "../../../components/icons";
+import Photo from "../../../components/content/Photo";
 import BreadcrumbJsonLd from "../../../components/BreadcrumbJsonLd";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -17,9 +17,9 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const statusStyles: Record<string, string> = {
-  announced: "bg-amber-50 border-amber-200 text-amber-900",
-  live: "bg-emerald-50 border-emerald-200 text-emerald-900",
-  grace_period: "bg-emerald-50 border-emerald-200 text-emerald-900",
+  announced: "text-amber-800",
+  live: "text-emerald-800",
+  grace_period: "text-emerald-800",
 };
 
 export default async function EtiasStatusPage() {
@@ -35,16 +35,20 @@ export default async function EtiasStatusPage() {
       <BreadcrumbJsonLd trail={[{ name: "ETIAS", path: "/etias/status" }]} />
       <h1 className="font-display text-2xl font-bold tracking-tight text-slate-900 lg:text-3xl">{t("h1")}</h1>
 
-      <section className={`mt-5 rounded-2xl border p-5 ${statusStyles[etias.launchStatus]}`}>
-        <p className="flex items-center gap-2 text-2xl font-bold">
+      <Photo name="etias-airport" hero />
+
+      <section className="mt-6">
+        <p className={`flex items-center gap-2 text-2xl font-bold ${statusStyles[etias.launchStatus]}`}>
           <span className="relative flex h-3 w-3">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-current opacity-30 motion-reduce:animate-none" />
             <span className="relative inline-flex h-3 w-3 rounded-full bg-current" />
           </span>
           {t(`status.${etias.launchStatus}`)}
         </p>
-        <p className="mt-1 text-sm leading-relaxed">{t(`statusDetail.${etias.launchStatus}`)}</p>
-        {etias.launchStatus === "announced" ? <p className="mt-2 text-sm leading-relaxed">{t("expectedWindow")}</p> : null}
+        <p className="mt-1 text-[15px] leading-relaxed text-slate-700">{t(`statusDetail.${etias.launchStatus}`)}</p>
+        {etias.launchStatus === "announced" ? (
+          <p className="mt-2 text-[15px] leading-relaxed text-slate-700">{t("expectedWindow")}</p>
+        ) : null}
       </section>
 
       <KeyNumbers
@@ -59,7 +63,7 @@ export default async function EtiasStatusPage() {
 
       <section className="mt-10">
         <h2 className="text-lg font-semibold text-slate-900">{t("whatIsTitle")}</h2>
-        <p className="mt-2 text-sm leading-relaxed text-slate-700">
+        <p className="mt-2 text-[15px] leading-relaxed text-slate-700">
           {t("whatIs")}{" "}
           <InfoTip label={t("detailsLabel")}>
             {t("feeNote")} {t("validityValue", { years: etias.validityYears ?? 3 })}
@@ -67,24 +71,21 @@ export default async function EtiasStatusPage() {
         </p>
         {etias.launchStatus === "announced" ? <Callout title={t("scamTitle")}>{t("scamNote")}</Callout> : null}
         <LinkCards>
-          <LinkCard href="/calculator" icon={<CalendarClockIcon />} title={t("ctaCalculator")} />
+          <LinkCard href="/calculator" title={t("ctaCalculator")} />
         </LinkCards>
       </section>
 
       <section className="mt-10">
         <h2 className="text-lg font-semibold text-slate-900">{t("byNationalityTitle")}</h2>
         <p className="mt-1 text-sm text-slate-600">{t("byNationalityHint")}</p>
-        <ul className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3">
+        <ul className="mt-3 grid grid-cols-2 gap-x-6 sm:grid-cols-3">
           {etiasNationalities.map((rule) => (
             <li key={rule.nationality}>
               <a
                 href={`/etias/${rule.nationality.toLowerCase()}`}
-                className="flex items-center gap-2.5 rounded-lg border border-slate-200 bg-white px-3 py-2.5 text-sm text-slate-800 transition hover:border-slate-900"
+                className="block py-1.5 text-[15px] text-brand-800 underline decoration-brand-200 underline-offset-4 hover:decoration-brand-700"
               >
-                <span className="flex h-6 w-8 shrink-0 items-center justify-center rounded bg-slate-100 font-mono text-[11px] font-semibold text-slate-600">
-                  {rule.nationality}
-                </span>
-                <span className="min-w-0 break-words">{rule.name}</span>
+                {rule.name}
               </a>
             </li>
           ))}

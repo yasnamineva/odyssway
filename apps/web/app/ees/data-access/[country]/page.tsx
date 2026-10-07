@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import BreadcrumbJsonLd from "../../../../components/BreadcrumbJsonLd";
-import { InShort, KeyNumbers, LinkCard, LinkCards, More, Step, Steps } from "../../../../components/content/Blocks";
-import { AlertIcon, ChevronDownIcon, DocumentSearchIcon, GateIcon, LetterIcon } from "../../../../components/icons";
+import { InShort, LinkCard, LinkCards, More, Step, Steps } from "../../../../components/content/Blocks";
+import { ChevronDownIcon, LetterIcon } from "../../../../components/icons";
+import Photo from "../../../../components/content/Photo";
 import SourceNote from "../../../../components/SourceNote";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
@@ -106,30 +107,15 @@ export default async function EesDataAccessPage({
         {t("h1", { country })}
       </h1>
 
-      <InShort>{t("intro", { country })}</InShort>
+      <Photo name="ees-envelope" hero />
 
-      <KeyNumbers
-        items={[
-          { value: t("numberDaysValue"), label: t("numberDaysLabel") },
-          { value: t("numberAnyValue"), label: t("numberAnyLabel") },
-          { value: localLetter ? "2" : "1", label: t("numberLettersLabel") },
-        ]}
-      />
+      <InShort>{t("intro", { country })}</InShort>
 
       <section className="mt-10">
         <h2 className="text-lg font-semibold text-slate-900">{t("authorityTitle")}</h2>
-        <div className="mt-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-          <div className="flex gap-3">
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-700">
-              <GateIcon className="h-5 w-5" />
-            </span>
-            <div className="min-w-0">
-              <p className="text-base font-semibold break-words text-slate-900">
-                {record.contactName ?? record.authority}
-              </p>
-              <p className="mt-0.5 text-[13px] text-slate-600">{t("authorityRole")}</p>
-            </div>
-          </div>
+        <div className="mt-3">
+          <p className="text-base font-semibold break-words text-slate-900">{record.contactName ?? record.authority}</p>
+          <p className="mt-0.5 text-[15px] text-slate-600">{t("authorityRole")}</p>
           <div className="mt-4 flex flex-wrap gap-2">
             {record.contactEmail ? (
               <a
@@ -151,7 +137,7 @@ export default async function EesDataAccessPage({
             ) : null}
           </div>
           {!record.contactEmail ? (
-            <p className="mt-3 text-[13px] text-slate-700">{t("noEmail")}</p>
+            <p className="mt-3 text-[15px] text-slate-700">{t("noEmail")}</p>
           ) : null}
           <More summary={t("fullContact")}>
             <p>{record.authority}</p>
@@ -196,8 +182,8 @@ export default async function EesDataAccessPage({
       </section>
 
       <LinkCards>
-        <LinkCard href="/ees/missing-exit-record" icon={<DocumentSearchIcon />} title={t("linkMissingExit")} />
-        <LinkCard href="/ees/dispute-overstay" icon={<AlertIcon />} title={t("disputeLink")} />
+        <LinkCard href="/ees/missing-exit-record" title={t("linkMissingExit")} />
+        <LinkCard href="/ees/dispute-overstay" title={t("disputeLink")} />
       </LinkCards>
 
       <div className="mt-10">

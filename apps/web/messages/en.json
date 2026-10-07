@@ -83,8 +83,8 @@
       "description": "Answers to the most common questions about Trip Check, the Schengen calculator, how we verify rules, and what we don't cover yet."
     },
     "blog": {
-      "title": "Blog — regulation changes, explained and cited",
-      "description": "What actually changed in travel rules, written plainly and traced back to the official source and the exact date we checked it."
+      "title": "Travel rules blog: visa changes, medicine and EES",
+      "description": "Thailand's visa-free cut, Korea's K-ETA deadline, Ozempic and Adderall abroad, and Europe's new border system, each checked against official sources."
     }
   },
   "faqPage": {
@@ -132,7 +132,7 @@
   },
   "blogPage": {
     "h1": "Blog",
-    "intro": "What actually changed in travel rules — written plainly, and every claim traced back to the official source and the date we checked it. No filler, no speculation.",
+    "intro": "The travel rules that just changed, and the ones that catch people out. Every fact comes from a government source, with the date we checked it.",
     "readMore": "Read more →",
     "empty": "No posts yet."
   },
@@ -222,11 +222,6 @@
     "sourceLine": "Sources:",
     "checkedOn": "Checked against official sources on {date}.",
     "disputeLink": "It says I overstayed — my rights",
-    "numberDaysValue": "45 days",
-    "numberDaysLabel": "for them to reply",
-    "numberAnyValue": "Any",
-    "numberAnyLabel": "EES country can take your request",
-    "numberLettersLabel": "ready-made letters, English + local language",
     "authorityRole": "Handles requests to see or correct EES data",
     "noEmail": "No email address is published for EES requests here — use the official website or the postal details below.",
     "fullContact": "Full contact details, data protection officer and complaints",
@@ -466,7 +461,7 @@
     "blogTeaser": {
       "eyebrow": "Blog",
       "heading": "From the travel blog",
-      "sub": "Regulation changes and coverage updates, written up the day we verify them against the source.",
+      "sub": "The travel rules that just changed, from visa-free stays to medicine at the border. Every fact checked against the government source.",
       "cta": "Go to Blog Page"
     },
     "coverageStat": {
@@ -726,5 +721,60 @@
       "declaration_required": "Allowed. A declaration may be required — the conditions below say when.",
       "depends": "Depends on specifics — see the notes below."
     }
+  },
+  "photos": {
+    "credit": "Photo: {author} / Pixabay",
+    "ees-border": "A traveller with a suitcase walking through an automated passport gate",
+    "ees-fingerprint": "A finger placed on a fingerprint scanner",
+    "ees-departures": "A traveller looking up at the departures board in an airport hall",
+    "ees-letter": "Someone writing a note at a desk, with an envelope beside it",
+    "ees-proof": "A traveller in an airport holding a passport and a boarding pass",
+    "ees-envelope": "A blank letter and an envelope on a wooden table, next to a pen and a coffee",
+    "overstay-board": "A yellow airport departures board listing European cities",
+    "overstay-flapboard": "A split-flap departures board showing destinations and flight numbers",
+    "rule-calendar": "A pen resting on a printed calendar with dates circled",
+    "dual-passports": "A French passport lying next to another passport's visa pages on a world map",
+    "permit-street": "A yellow tram on a narrow street in Lisbon",
+    "etias-airport": "Travellers in silhouette walking past an airport window at sunset",
+    "dest-us": "The Manhattan skyline at sunset",
+    "dest-gb": "The Houses of Parliament and Big Ben across Westminster Bridge, London",
+    "dest-ca": "Moraine Lake in Banff National Park, Alberta",
+    "dest-jp": "A pagoda at a temple in Kyoto",
+    "dest-ke": "Sunset over the Masai Mara",
+    "dest-mx": "The Palacio de Bellas Artes in Mexico City",
+    "dest-za": "Cape Town's waterfront with Table Mountain behind",
+    "dest-th": "Wat Arun at sunset, Bangkok",
+    "dest-rw": "The Kigali Convention Centre, Rwanda",
+    "dest-eg": "The pyramids of Giza",
+    "dest-ma": "Marrakech's market square at dusk",
+    "dest-in": "The Hawa Mahal in Jaipur",
+    "dest-tr": "The Blue Mosque in Istanbul",
+    "dest-au": "The Sydney Opera House",
+    "dest-ae": "The Downtown Dubai skyline across the water",
+    "dest-ph": "Boats moored at El Nido, Palawan",
+    "dest-nz": "The view from Roys Peak over Lake Wanaka",
+    "dest-vn": "Limestone islands in Ha Long Bay",
+    "dest-cn": "The Great Wall at Mutianyu",
+    "dest-id": "Ulun Danu Beratan temple on a lake in Bali",
+    "dest-br": "Rio de Janeiro and its bay",
+    "dest-sg": "Marina Bay Sands, Singapore",
+    "dest-kr": "Gwanghwamun, the main gate of Gyeongbokgung Palace in Seoul",
+    "dest-hk": "A Star Ferry crossing Victoria Harbour, Hong Kong",
+    "dest-ie": "The Cliffs of Moher",
+    "dest-my": "The Petronas Twin Towers in Kuala Lumpur at dusk",
+    "dest-ge": "A panorama of Tbilisi",
+    "dest-mv": "Overwater villas in the Maldives",
+    "dest-rs": "The Ada Bridge over the Sava in Belgrade",
+    "dest-tw": "The Taipei skyline with Taipei 101",
+    "dest-al": "The seafront at Sarandë, Albania",
+    "dest-cy": "The coast near Paphos, Cyprus",
+    "dest-sa": "The seafront at Al Khobar, Saudi Arabia",
+    "blog-ees": "A crowded airport hall with signs for information and police",
+    "blog-eta": "An aeroplane wing seen through a cabin window",
+    "blog-japan": "A narrow Tokyo street at night, lit by shop signs",
+    "blog-glp1": "An open, old leather suitcase",
+    "blog-thailand": "A longtail boat moored in clear water off Koh Phi Phi, Thailand",
+    "blog-overstay": "The grand hall of Antwerp Central Station",
+    "creditAnonymous": "Photo: Pixabay"
   }
 }

@@ -4,11 +4,13 @@
     02017R2226-20260612, Art. 2 (scope). Retrieved via Publications Office CELLAR,
     checked 2026-07-13. */}
 
-import { Callout, Compare, Fact, FactGrid, InShort, LinkCard, LinkCards, More, Sources } from "../../../apps/web/components/content/Blocks";
+import { Callout, Compare, InShort, More, Sources } from "../../../apps/web/components/content/Blocks";
 import InfoTip from "../../../apps/web/components/content/InfoTip";
-import { CalendarClockIcon, GlobeIcon, PassportIcon, ShieldCheckIcon } from "../../../apps/web/components/icons";
+import Photo from "../../../apps/web/components/content/Photo";
 
 # Dual citizens: which passport for Schengen and the EES?
+
+<Photo name="dual-passports" hero />
 
 <InShort>
   If one of your nationalities is an **EU country**, the 90/180-day rule
@@ -18,20 +20,13 @@ import { CalendarClockIcon, GlobeIcon, PassportIcon, ShieldCheckIcon } from "../
 
 ## Which situation are you in?
 
-<FactGrid columns={3}>
-  <Fact icon={<ShieldCheckIcon />} title="One nationality is EU">
-    No 90/180 limit, no EES registration — as long as you cross on your EU
-    passport.
-  </Fact>
-  <Fact icon={<GlobeIcon />} title="Both are non-EU">
-    The rule applies whichever passport you use. Your crossings are matched
-    biometrically, not per document.
-  </Fact>
-  <Fact icon={<PassportIcon />} title="Family member of an EU citizen">
-    With an EU residence card you're outside the EES too. Without one, you're
-    registered like other non-EU travellers. <InfoTip label="Legal basis">Free Movement Directive 2004/38/EC; EES Regulation (EU) 2017/2226, Art. 2(3)(a).</InfoTip>
-  </Fact>
-</FactGrid>
+- **One nationality is EU**: no 90/180 limit and no EES registration — as long
+  as you cross on your EU passport.
+- **Both are non-EU**: the rule applies whichever passport you use. Your
+  crossings are matched biometrically, not per document — count your days
+  with the [calculator](/calculator).
+- **Family member of an EU citizen**: with an EU residence card you're outside
+  the EES too. Without one, you're registered like other non-EU travellers. <InfoTip label="Legal basis">Free Movement Directive 2004/38/EC; EES Regulation (EU) 2017/2226, Art. 2(3)(a).</InfoTip>
 
 ## Which passport to show at the EU border
 
@@ -63,10 +58,7 @@ invites confusion.
   fingerprints, no entry/exit records, no automated overstay checks.
 </More>
 
-<LinkCards>
-  <LinkCard href="/calculator" icon={<CalendarClockIcon />} title="Both nationalities non-EU?">Count your days with the calculator.</LinkCard>
-  <LinkCard href="/guides/residence-permit-holders" icon={<PassportIcon />} title="Living here on a permit?">How your days are counted.</LinkCard>
-</LinkCards>
+Living here on a permit instead? See [how your days are counted](/guides/residence-permit-holders).
 
 <Sources>
 **Sources:** [Regulation (EU) 2016/399, Arts. 2 and 6 — consolidated version](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02016R0399-20251012);

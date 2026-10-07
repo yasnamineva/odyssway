@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Fact, InShort, LinkCard, LinkCards } from "../../../../components/content/Blocks";
-import { AlertIcon, GateIcon, ScaleIcon } from "../../../../components/icons";
+import Photo from "../../../../components/content/Photo";
 import SourceNote from "../../../../components/SourceNote";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
@@ -84,25 +84,21 @@ export default async function OverstayCountryPage({
         {t("h1", { country })}
       </h1>
 
+      <Photo name="overstay-flapboard" hero />
+
       <InShort>{t("inShort", { country })}</InShort>
 
-      <div className="mt-6 grid gap-3 sm:grid-cols-2">
-        <Fact icon={<ScaleIcon />} title={t("fineTitle")}>
-          {record.fineRange}
-        </Fact>
-        <Fact icon={<GateIcon />} title={t("banTitle")}>
-          {record.banRange}
-        </Fact>
+      <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2">
+        <Fact title={t("fineTitle")}>{record.fineRange}</Fact>
+        <Fact title={t("banTitle")}>{record.banRange}</Fact>
       </div>
-      <div className="mt-3">
-        <Fact icon={<AlertIcon />} title={t("enforcementTitle")}>
-          {record.enforcementNotes}
-        </Fact>
+      <div className="mt-6">
+        <Fact title={t("enforcementTitle")}>{record.enforcementNotes}</Fact>
       </div>
 
       <LinkCards>
-        <LinkCard href="/rules/overstay-penalties" icon={<ScaleIcon />} title={t("backLink")} />
-        <LinkCard href="/ees/dispute-overstay" icon={<AlertIcon />} title={t("disputeLink")} />
+        <LinkCard href="/rules/overstay-penalties" title={t("backLink")} />
+        <LinkCard href="/ees/dispute-overstay" title={t("disputeLink")} />
       </LinkCards>
 
       <div className="mt-10 space-y-3">

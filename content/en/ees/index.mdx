@@ -2,26 +2,20 @@
     (https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/entry-exit-system_en),
     checked 2026-07-13. Country list: data/ees.json (checked 2026-10-05). */}
 
-import { Fact, FactGrid, InShort, KeyNumbers, LinkCard, LinkCards, More, Sources } from "../../../apps/web/components/content/Blocks";
+import { InShort, LinkCard, LinkCards, More, Sources } from "../../../apps/web/components/content/Blocks";
 import InfoTip from "../../../apps/web/components/content/InfoTip";
+import Photo from "../../../apps/web/components/content/Photo";
 import { EesCountryGrid } from "../../../apps/web/components/content/CountryGrid";
-import { AlertIcon, CompassIcon, CalendarClockIcon, FingerprintIcon, GateIcon, PassportIcon, UndoIcon } from "../../../apps/web/components/icons";
 
 # The EU Entry/Exit System (EES)
 
+<Photo name="ees-border" hero />
+
 <InShort>
   No more passport stamps. Since **10 April 2026**, every non-EU traveller's
-  entries and exits are recorded digitally, and overstays are **flagged
-  automatically**.
+  entries and exits are recorded digitally in 29 European countries, and
+  overstays are **flagged automatically**.
 </InShort>
-
-<KeyNumbers
-  items={[
-    { value: "29", label: "European countries use it" },
-    { value: "10 Apr 2026", label: "Fully running since" },
-    { value: "90/180", label: "Days counted for you, automatically" },
-  ]}
-/>
 
 <More summary="What exactly is the EES?">
   An automated IT system that registers non-EU nationals travelling for a short
@@ -33,29 +27,24 @@ import { AlertIcon, CompassIcon, CalendarClockIcon, FingerprintIcon, GateIcon, P
 
 ## What gets recorded about you
 
-<FactGrid>
-  <Fact icon={<PassportIcon />} title="Your passport details">Name and travel document data.</Fact>
-  <Fact icon={<FingerprintIcon />} title="Fingerprints and a face photo">Taken on your first crossing.</Fact>
-  <Fact icon={<CalendarClockIcon />} title="Every entry and exit">The date and the border crossing point.</Fact>
-  <Fact icon={<AlertIcon />} title="Refusals of entry">If you were ever turned away.</Fact>
-</FactGrid>
+- **Your passport details**: name and travel document data.
+- **Fingerprints and a face photo**, taken on your first crossing.
+- **Every entry and exit**: the date and the border crossing point.
+- **Refusals of entry**, if you were ever turned away.
 
 ## Why it matters
 
 Your days are now counted by the system itself, so a miscount shows up as an
 overstay. <InfoTip label="How the counting works">The Schengen limit is 90 days in any 180-day period. Entry and exit days both count. See [the 90/180 rule](/rules/90-180-rule).</InfoTip>
-
-<LinkCards>
-  <LinkCard href="/calculator" icon={<CalendarClockIcon />} title="Check your days">Our 90/180 calculator uses the EU's own method.</LinkCard>
-  <LinkCard href="/rules/90-180-rule" icon={<CompassIcon />} title="How the rule works">The rolling window, in plain words.</LinkCard>
-</LinkCards>
+Check your dates with our [90/180 calculator](/calculator), which uses the
+EU's own method, or read [how the rule works](/rules/90-180-rule).
 
 ## Guides
 
-<LinkCards columns={3}>
-  <LinkCard href="/ees/what-to-expect" icon={<GateIcon />} title="At the border">What happens on your first and later crossings.</LinkCard>
-  <LinkCard href="/ees/dispute-overstay" icon={<AlertIcon />} title="It says I overstayed — I didn't">Your right to a correction, and the deadlines.</LinkCard>
-  <LinkCard href="/ees/missing-exit-record" icon={<UndoIcon />} title="No exit recorded">Why it matters and how to get it fixed.</LinkCard>
+<LinkCards>
+  <LinkCard href="/ees/what-to-expect" title="At the border">what happens on your first and later crossings</LinkCard>
+  <LinkCard href="/ees/dispute-overstay" title="It says I overstayed — I didn't">your right to a correction, and the deadlines</LinkCard>
+  <LinkCard href="/ees/missing-exit-record" title="No exit recorded">why it matters and how to get it fixed</LinkCard>
 </LinkCards>
 
 ## Correct your record, by country

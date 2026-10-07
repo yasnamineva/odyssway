@@ -1,3 +1,5 @@
+import type { PhotoKey } from "./photos";
+
 /**
  * Blog post metadata. Every post exists because of a real, already-verified
  * change in our own rule data (AGENTS.md §13.7: no filler posts) — the MDX
@@ -24,95 +26,128 @@ export interface BlogPost {
    * from destination pages — internal links between topically-related, already-cited
    * pages, not a separate content surface. */
   destinationCodes?: string[];
+  /** Pixabay photo shown on the card, the post and its social preview (lib/photos.ts). */
+  photo: PhotoKey;
 }
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "south-africa-eta-launched",
-    title: "South Africa's New ETA Just Launched — Here's What We Actually Know",
-    seoTitle: "South Africa's New ETA: What We Actually Know",
-    dek: "An Electronic Travel Authorisation went live on 12 August 2026. The eligibility list and fee aren't published anywhere yet, so neither are we.",
-    date: "2026-08-13",
-    category: "Regulation change",
+    slug: "thailand-visa-free-cut-2026",
+    title:
+      "Thailand just halved its visa-free stay. Four more rule changes to check before you book",
+    seoTitle: "Thailand Halved Its Visa-Free Stay: 2026 Rule Changes",
+    seoDescription:
+      "Thailand cut visa-free stays from 60 to 30 days. Korea's K-ETA waiver and China's visa-free policy both end 31 December 2026, and Brazil's visas are back.",
+    dek: "Thailand cut 60 days to 30. Korea's K-ETA waiver and China's visa-free policy both have an end date, Brazil brought back visas, and Vietnam went the other way.",
+    date: "2026-10-06",
+    category: "Visa rules",
     legalSource: {
-      name: "Department of Home Affairs — Visa Exemption List (Immigration Act 13 of 2002)",
-      url: "https://www.dha.gov.za/index.php/immigration-services/exempt-countries",
+      name: "Ministry of Foreign Affairs of Thailand — revision of the visa exemption and VoA schemes, effective 15 September 2026",
+      url: "https://image.mfa.go.th/mfa/0/umufy3EgqL/Con0926/Visa_Exemption_(EN)_0.jpg",
     },
-    verifiedAt: "2026-08-11",
-    destinationCodes: ["ZA"],
+    verifiedAt: "2026-10-05",
+    changelogDataset: "entry-requirements",
+    destinationCodes: ["TH", "KR", "CN", "BR", "VN"],
+    photo: "blog-thailand",
   },
   {
-    slug: "kenya-replaced-visa-on-arrival",
-    title: "Kenya Replaced Visa-on-Arrival With a Universal eTA — What Changed",
-    seoTitle: "Kenya Replaced Visa-on-Arrival With a Universal eTA",
-    dek: "If you're still planning around Kenya's old visa-on-arrival system, you're planning around a rule that no longer exists.",
-    date: "2026-08-12",
-    category: "Regulation change",
+    slug: "visa-free-is-not-form-free",
+    title: "Visa-free doesn't mean form-free any more",
+    seoTitle: "Visa-Free Doesn't Mean Form-Free: Travel Authorisations",
+    seoDescription:
+      "The UK, US, Canada, Australia, New Zealand and Kenya all want an online authorisation before you fly. Costs, validity, and where ETIAS stands.",
+    dek: "The UK, US, Canada, Australia, New Zealand and Kenya all want an approved online form before you board. Here's who needs what, and what it costs.",
+    date: "2026-10-06",
+    category: "Visa rules",
     legalSource: {
-      name: "Kenya Citizenship and Immigration (Amendment) Regulations, 2023 (Legal Notice No. 1 of 2024)",
-      url: "https://new.kenyalaw.org/akn/ke/act/ln/2024/1/eng@2024-01-19/source.pdf",
+      name: "GOV.UK — Visiting the UK as an EU, EEA or Swiss citizen; Immigration Rules Appendix ETA National List",
+      url: "https://www.gov.uk/guidance/visiting-the-uk-as-an-eu-eea-or-swiss-citizen",
     },
-    verifiedAt: "2026-08-11",
-    destinationCodes: ["KE"],
+    verifiedAt: "2026-10-05",
+    changelogDataset: "entry-requirements",
+    destinationCodes: ["GB", "US", "CA", "AU", "NZ", "KE", "KR", "ZA"],
+    photo: "blog-eta",
   },
   {
-    slug: "ees-live-five-countries",
-    title: "EES Is Now Live in France, Spain, Germany, Italy & the Netherlands — What Changes at the Border",
-    seoTitle: "EES Now Live in 5 Countries: What Changes at the Border",
-    dek: "The Entry/Exit System now logs every crossing automatically at these five borders. There's no more passport stamp to argue with — and no more rounding.",
-    date: "2026-08-11",
-    category: "Regulation change",
+    slug: "adhd-medication-japan",
+    title: "Taking ADHD medication to Japan? Adderall can't come with you",
+    seoTitle: "Adderall and Vyvanse in Japan: What You Can Bring",
+    seoDescription:
+      "Adderall is banned in Japan even with a prescription. Vyvanse and Sudafed need advance permission. The rules from Japan's health ministry and customs.",
+    dek: "Adderall is banned in Japan, prescription or not. Vyvanse is allowed with a permit you apply for weeks ahead, and so are some cold remedies.",
+    date: "2026-10-06",
+    category: "Medicine",
     legalSource: {
-      name: "Regulation (EU) 2017/2226 (EES Regulation), Arts. 52–54, consolidated 02017R2226-20260612",
+      name: "Narcotics Control Department, Ministry of Health, Labour and Welfare — bringing narcotics and stimulant raw materials into Japan",
+      url: "https://www.ncd.mhlw.go.jp/en/application2.html",
+    },
+    verifiedAt: "2026-10-02",
+    changelogDataset: "customs-items",
+    destinationCodes: ["JP"],
+    photo: "blog-japan",
+  },
+  {
+    slug: "ozempic-wegovy-mounjaro-travel",
+    title: "Flying with Ozempic, Wegovy or Mounjaro: what ten countries allow",
+    seoTitle: "Travelling With Ozempic, Wegovy or Mounjaro",
+    seoDescription:
+      "How much Ozempic, Wegovy or Mounjaro you can bring into the US, UK, Canada, Australia, Japan, Thailand, Singapore, Mexico, Brazil and Rwanda.",
+    dek: "None of these countries bans GLP-1 pens, but most cap the supply, and two need planning weeks ahead.",
+    date: "2026-10-06",
+    category: "Medicine",
+    legalSource: {
+      name: "Therapeutic Goods Administration — Entering Australia (travelling with medicines and medical devices)",
+      url: "https://www.tga.gov.au/resources/consumer-information-and-resources/travelling-medicines-and-medical-devices/entering-australia",
+    },
+    verifiedAt: "2026-09-13",
+    changelogDataset: "customs-items",
+    destinationCodes: [
+      "US",
+      "GB",
+      "CA",
+      "AU",
+      "JP",
+      "TH",
+      "SG",
+      "MX",
+      "BR",
+      "RW",
+    ],
+    photo: "blog-glp1",
+  },
+  {
+    slug: "europe-counts-your-days",
+    title: "Europe's borders now count your days for you",
+    seoTitle: "EES: Europe's Borders Now Count Your Days",
+    seoDescription:
+      "Since 10 April 2026 the EU's Entry/Exit System logs every crossing and flags overstays automatically. What it records and how to fix a wrong record.",
+    dek: "Since 10 April 2026, the passport stamp is gone. The Entry/Exit System logs every crossing and flags overstays on its own.",
+    date: "2026-10-06",
+    category: "Europe",
+    legalSource: {
+      name: "Regulation (EU) 2017/2226 (EES Regulation), consolidated version of 12 June 2026",
       url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02017R2226-20260612",
     },
-    verifiedAt: "2026-07-13",
+    verifiedAt: "2026-10-05",
     changelogDataset: "ees",
+    photo: "blog-ees",
   },
   {
-    slug: "sixteen-destinations-verified",
-    title: "We Just Verified 13 New Destinations. Here's Exactly How.",
-    seoTitle: "We Just Verified 13 New Destinations. Here's How.",
-    seoDescription: "Every entry requirement and customs rule for 13 new destinations, from Egypt to India, checked against each country's own government sources.",
-    dek: "No shortcuts: every entry requirement and customs rule for Egypt, Morocco, Nigeria, Rwanda, India, the UAE, Thailand, Turkey, and Australia was checked against that country's own government sources before it went live.",
-    date: "2026-08-13",
-    category: "Site news",
+    slug: "overstay-europe-what-happens",
+    title: "Overstayed in Europe? What actually happens next",
+    seoTitle: "Overstayed in Schengen? What Actually Happens",
+    seoDescription:
+      "An overstay in Europe doesn't mean an automatic ban. How the EU's Return Directive works, and how France, Spain, the Netherlands and Germany differ.",
+    dek: "There's no automatic ban. There is a process, and each country runs it differently.",
+    date: "2026-10-06",
+    category: "Europe",
     legalSource: {
-      name: "Odyssway — full source list",
-      url: "/sources",
+      name: "Directive 2008/115/EC (Return Directive), Arts. 6, 7 and 11",
+      url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32008L0115",
     },
-    verifiedAt: "2026-08-13",
-    destinationCodes: ["JP", "KE", "ZA", "MX", "EG", "NG", "AU", "TH", "RW", "MA", "IN", "TR", "AE"],
-  },
-  {
-    slug: "twenty-destinations-verified",
-    title: "We Just Verified 4 More Destinations — And Two of Their Visa-Free Rules Expire This Year",
-    seoTitle: "4 More Destinations Verified — 2 Visa-Free Rules Expire",
-    seoDescription: "China's and Vietnam's visa-free windows for UK travelers are dated policies with real expiration clauses. What else turned up verifying four more destinations.",
-    dek: "China's and Vietnam's visa-free windows for UK travelers aren't permanent — both are dated policies with real expiration clauses. Here's what else turned up verifying the Philippines, New Zealand, Vietnam, and China.",
-    date: "2026-08-19",
-    category: "Site news",
-    legalSource: {
-      name: "Odyssway — full source list",
-      url: "/sources",
-    },
-    verifiedAt: "2026-08-18",
-    destinationCodes: ["PH", "NZ", "VN", "CN"],
-  },
-  {
-    slug: "twenty-five-destinations-verified",
-    title: "25 Destinations Verified — Including One Where We Found Nothing to Confirm",
-    seoTitle: "25 Destinations Verified — One With Nothing to Confirm",
-    seoDescription: "Brazil reinstated its visa requirement for three nationalities, not all of them. What we verified across 25 destinations, and the one with nothing to confirm.",
-    dek: "Brazil reinstated its visa requirement for three nationalities, not all of them. Singapore's famous \"90 days\" figure doesn't appear in any government document we could find. Five more destinations, verified the slow way.",
-    date: "2026-09-03",
-    category: "Site news",
-    legalSource: {
-      name: "Odyssway — full source list",
-      url: "/sources",
-    },
-    verifiedAt: "2026-09-02",
-    destinationCodes: ["ID", "SA", "BR", "SG", "KR"],
+    verifiedAt: "2026-09-16",
+    changelogDataset: "overstay-penalties",
+    photo: "blog-overstay",
   },
 ];
 

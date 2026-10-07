@@ -5,11 +5,13 @@
     the EES", "Check how long you can stay", "Contact details for data
     protection matters", FAQ), checked 2026-10-05. */}
 
-import { DeadlineTrack, Fact, FactGrid, InShort, LinkCard, LinkCards, More, Sources, Step, Steps } from "../../../apps/web/components/content/Blocks";
+import { DeadlineTrack, InShort, More, Sources, Step, Steps } from "../../../apps/web/components/content/Blocks";
 import InfoTip from "../../../apps/web/components/content/InfoTip";
-import { AlertIcon, CalendarClockIcon, DocumentSearchIcon, GateIcon, LetterIcon, ScaleIcon } from "../../../apps/web/components/icons";
+import Photo from "../../../apps/web/components/content/Photo";
 
 # EES missing exit record: how to get it fixed
+
+<Photo name="ees-proof" hero />
 
 <InShort>
   With no exit on record, the EES treats you as an **overstayer** once your
@@ -19,26 +21,18 @@ import { AlertIcon, CalendarClockIcon, DocumentSearchIcon, GateIcon, LetterIcon,
 
 ## Why a missing exit matters
 
-<FactGrid>
-  <Fact icon={<AlertIcon />} title="You're listed as an overstayer">
-    The system checks automatically for records with no exit after the stay
-    ends, and border and immigration authorities can see that list.
-  </Fact>
-  <Fact icon={<CalendarClockIcon />} title="Your data is kept longer">
-    5 years from the end of your allowed stay, instead of the usual 3.
-  </Fact>
-</FactGrid>
+- **You're listed as an overstayer.** The system checks automatically for
+  records with no exit after the stay ends, and border and immigration
+  authorities can see that list.
+- **Your data is kept longer**: 5 years from the end of your allowed stay,
+  instead of the usual 3.
 
 ## First, check what the system shows
 
-<LinkCards>
-  <LinkCard href="https://travel-europe.europa.eu/en/ees/check-how-long-you-can-stay" icon={<DocumentSearchIcon />} title="The EU's official stay checker">
-    Enter your passport and dates for an OK / NOT OK answer and your days left.
-  </LinkCard>
-  <LinkCard href="/calculator" icon={<CalendarClockIcon />} title="Our 90/180 calculator">
-    Count your own days so you can say exactly which day is wrong.
-  </LinkCard>
-</LinkCards>
+The EU's official [stay checker](https://travel-europe.europa.eu/en/ees/check-how-long-you-can-stay)
+gives an OK / NOT OK answer and your days left when you enter your passport
+and dates. Count your own days with our [90/180 calculator](/calculator) so you
+can say exactly which day is wrong.
 
 <More summary="Good to know about the EU checker">
   Border officers can also tell you your remaining stay. The EU's tool doesn't
@@ -81,11 +75,9 @@ import { AlertIcon, CalendarClockIcon, DocumentSearchIcon, GateIcon, LetterIcon,
 
 ## If they refuse
 
-<FactGrid columns={3}>
-  <Fact icon={<LetterIcon />} title="A written reason">They must explain the refusal in writing.</Fact>
-  <Fact icon={<GateIcon />} title="A complaint">To that country's data protection authority.</Fact>
-  <Fact icon={<ScaleIcon />} title="A court">You have the right to an effective judicial remedy.</Fact>
-</FactGrid>
+They must explain the refusal **in writing**. You can then complain to that
+country's **data protection authority**, and you have the right to an
+**effective judicial remedy** in court.
 
 Once an error is shown, the overstay must be removed from the list without
 delay. [All your correction rights →](/ees/dispute-overstay)

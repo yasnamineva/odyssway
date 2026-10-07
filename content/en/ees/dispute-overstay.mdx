@@ -4,11 +4,13 @@
     (home-affairs.ec.europa.eu), checked 2026-07-13. Day 37 below = the latest
     possible date: forwarded within 7 days, then checked within 30 days. */}
 
-import { DeadlineTrack, Fact, FactGrid, InShort, LinkCard, LinkCards, More, Sources, Step, Steps } from "../../../apps/web/components/content/Blocks";
+import { DeadlineTrack, InShort, LinkCard, LinkCards, More, Sources, Step, Steps } from "../../../apps/web/components/content/Blocks";
 import InfoTip from "../../../apps/web/components/content/InfoTip";
-import { AlertIcon, CalendarClockIcon, DocumentSearchIcon, GateIcon, LetterIcon, ScaleIcon, UndoIcon } from "../../../apps/web/components/icons";
+import Photo from "../../../apps/web/components/content/Photo";
 
 # The EES says you overstayed — but you didn't
+
+<Photo name="ees-letter" hero />
 
 <InShort>
   You have a legal right to get wrong EES data corrected. Write to **any** EES
@@ -18,13 +20,10 @@ import { AlertIcon, CalendarClockIcon, DocumentSearchIcon, GateIcon, LetterIcon,
 
 ## How a false overstay happens
 
-<FactGrid>
-  <Fact icon={<UndoIcon />} title="An exit wasn't recorded">Equipment failure or a crossing that didn't register.</Fact>
-  <Fact icon={<AlertIcon />} title="An exit was recorded wrongly">Wrong date or place on your record.</Fact>
-</FactGrid>
-
-The system computes overstays from your entries and exits, so either mistake
-can flag you even though you left on time.
+The system computes overstays from your entries and exits. So if **an exit
+wasn't recorded** (equipment failure, or a crossing that didn't register) or
+**was recorded wrongly** (wrong date or place), you can be flagged even though
+you left on time.
 
 ## What to do
 
@@ -79,15 +78,16 @@ can flag you even though you left on time.
 
 ## Before it gets that far
 
-<FactGrid>
-  <Fact icon={<LetterIcon />} title="Keep your boarding passes">Your own records make a false flag easy to disprove.</Fact>
-  <Fact icon={<CalendarClockIcon />} title="Count your own days">The [90/180 rule](/rules/90-180-rule) applies whatever the system recorded.</Fact>
-</FactGrid>
+Keep your boarding passes: your own records make a false flag easy to
+disprove. And count your own days — the [90/180 rule](/rules/90-180-rule)
+applies whatever the system recorded.
 
-<LinkCards columns={3}>
-  <LinkCard href="/ees/missing-exit-record" icon={<DocumentSearchIcon />} title="No exit recorded?">The step-by-step fix.</LinkCard>
-  <LinkCard href="/rules/overstay-penalties" icon={<ScaleIcon />} title="If it really was an overstay">What happens next — a bounded process, not an automatic ban.</LinkCard>
-  <LinkCard href="/ees" icon={<GateIcon />} title="Correct your record, by country">Contacts and letters for all 29 countries.</LinkCard>
+## Related
+
+<LinkCards>
+  <LinkCard href="/ees/missing-exit-record" title="No exit recorded?">the step-by-step fix</LinkCard>
+  <LinkCard href="/rules/overstay-penalties" title="If it really was an overstay">what happens next — a bounded process, not an automatic ban</LinkCard>
+  <LinkCard href="/ees" title="Correct your record, by country">contacts and letters for all 29 countries</LinkCard>
 </LinkCards>
 
 <Sources>

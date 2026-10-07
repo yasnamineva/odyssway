@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 import { blogPostsByDate } from "../../lib/blog";
+import { photos } from "../../lib/photos";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("pages.blog");
@@ -21,7 +23,8 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function BlogIndexPage() {
   const t = await getTranslations("blogPage");
 
-  const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.invalid";
+  const SITE_URL =
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.invalid";
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Blog",
@@ -36,7 +39,7 @@ export default async function BlogIndexPage() {
   };
 
   return (
-    <article className="mx-auto max-w-4xl space-y-8">
+    <article className="mx-auto max-w-4xl space-y-10">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -45,47 +48,55 @@ export default async function BlogIndexPage() {
         <h1 className="font-display text-3xl font-extrabold tracking-tight text-slate-900">
           {t("h1")}
         </h1>
-        <p className="mx-auto mt-2 max-w-lg text-sm leading-relaxed text-slate-600">{t("intro")}</p>
+        <p className="mx-auto mt-2 max-w-lg text-sm leading-relaxed text-slate-600">
+          {t("intro")}
+        </p>
       </header>
 
       {blogPostsByDate.length === 0 ? (
         <p className="text-center text-sm text-slate-500">{t("empty")}</p>
       ) : (
-        <ol className="grid gap-4 sm:grid-cols-2">
-          {blogPostsByDate.map((post) => (
-            <li key={post.slug}>
+        <ol className="grid gap-x-6 gap-y-10 sm:grid-cols-2">
+          {blogPostsByDate.map((post, i) => (
+            <li
+              key={post.slug}
+              className={i === 0 ? "sm:col-span-2" : undefined}
+            >
               <a
                 href={`/blog/${post.slug}`}
-                className="group flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-200 hover:shadow-md"
+                className={`group block ${i === 0 ? "sm:grid sm:grid-cols-[3fr_2fr] sm:items-center sm:gap-8" : ""}`}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element -- self-generated same-origin PNG, not a candidate for next/image optimization */}
-                <img
-                  src={`/blog/${post.slug}/opengraph-image`}
+                <Image
+                  src={`/images/photos/${post.photo}.jpg`}
                   alt=""
-                  width={80}
-                  height={80}
-                  loading="lazy"
-                  decoding="async"
-                  className="h-20 w-20 shrink-0 rounded-full border border-slate-100 object-cover"
+                  width={photos[post.photo].width}
+                  height={photos[post.photo].height}
+                  priority={i === 0}
+                  sizes={
+                    i === 0
+                      ? "(min-width: 640px) 540px, 100vw"
+                      : "(min-width: 640px) 440px, 100vw"
+                  }
+                  className="aspect-[3/2] w-full rounded-xl object-cover transition group-hover:opacity-90"
                 />
-                <div className="min-w-0">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span className="rounded-full bg-brand-50 px-2.5 py-0.5 text-[10px] font-semibold tracking-wide text-brand-700 uppercase">
+                <div className="mt-4 min-w-0 sm:mt-0">
+                  <p
+                    className={`text-[11px] tracking-[0.12em] text-slate-500 uppercase ${i === 0 ? "" : "sm:mt-4"}`}
+                  >
+                    <span className="font-semibold text-brand-700">
                       {post.category}
                     </span>
-                    <time dateTime={post.date} className="text-xs text-slate-500">
-                      {post.date}
-                    </time>
-                  </div>
-                  <h2 className="mt-1 font-display text-base font-bold text-slate-900">
+                    <span aria-hidden="true"> · </span>
+                    <time dateTime={post.date}>{post.date}</time>
+                  </p>
+                  <h2
+                    className={`mt-2 font-display font-bold leading-snug text-slate-900 underline-offset-4 group-hover:underline ${i === 0 ? "text-2xl" : "text-lg"}`}
+                  >
                     {post.title}
                   </h2>
-                  <p className="mt-1 line-clamp-2 text-sm leading-relaxed text-slate-600">
+                  <p className="mt-2 text-[15px] leading-relaxed text-slate-600">
                     {post.dek}
                   </p>
-                  <span className="mt-1.5 inline-flex items-center gap-1 text-xs font-medium text-slate-900 transition-all group-hover:gap-2">
-                    {t("readMore")}
-                  </span>
                 </div>
               </a>
             </li>

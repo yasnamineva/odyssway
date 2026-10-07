@@ -13,17 +13,40 @@ const withMDX = createMDX({});
  * destinationSlug() in lib/destinations.ts. */
 function destinationCodeRedirects() {
   const file = path.join(__dirname, "../../data/destinations.json");
-  const destinations = JSON.parse(readFileSync(file, "utf8")) as Array<{ code: string; name: string }>;
+  const destinations = JSON.parse(readFileSync(file, "utf8")) as Array<{
+    code: string;
+    name: string;
+  }>;
   return destinations.map((d) => ({
     source: `/destinations/${d.code.toLowerCase()}`,
-    destination: `/destinations/${d.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`,
+    destination: `/destinations/${d.name
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "")}`,
     permanent: true,
   }));
 }
 
+// Blog posts retired in the 2026-10 rewrite, each sent to the post that now
+// covers its topic (or the blog index for the old coverage-milestone posts).
+const retiredBlogRedirects = (
+  [
+    ["ees-live-five-countries", "/blog/europe-counts-your-days"],
+    ["kenya-replaced-visa-on-arrival", "/blog/visa-free-is-not-form-free"],
+    ["south-africa-eta-launched", "/blog/visa-free-is-not-form-free"],
+    ["twenty-destinations-verified", "/blog/thailand-visa-free-cut-2026"],
+    ["twenty-five-destinations-verified", "/blog/thailand-visa-free-cut-2026"],
+    ["sixteen-destinations-verified", "/blog"],
+  ] as const
+).map(([slug, destination]) => ({
+  source: `/blog/${slug}`,
+  destination,
+  permanent: true,
+}));
+
 const nextConfig: NextConfig = {
   async redirects() {
-    return destinationCodeRedirects();
+    return [...destinationCodeRedirects(), ...retiredBlogRedirects];
   },
   transpilePackages: ["@odyssway/engine"],
   pageExtensions: ["ts", "tsx", "mdx"],

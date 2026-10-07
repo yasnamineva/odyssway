@@ -3,11 +3,13 @@
     checked 2026-07-13. This page deliberately sticks to what the official
     source states; procedural details not published there are not invented. */}
 
-import { Fact, FactGrid, InShort, LinkCard, LinkCards, Sources, Step, Steps } from "../../../apps/web/components/content/Blocks";
+import { InShort, LinkCard, LinkCards, Sources, Step, Steps } from "../../../apps/web/components/content/Blocks";
 import InfoTip from "../../../apps/web/components/content/InfoTip";
-import { AlertIcon, CalendarClockIcon, DocumentSearchIcon, FingerprintIcon, GateIcon, PassportIcon } from "../../../apps/web/components/icons";
+import Photo from "../../../apps/web/components/content/Photo";
 
 # EES at the border: what to expect
+
+<Photo name="ees-departures" hero />
 
 <InShort>
   If you're a non-EU traveller on a short stay, no more passport stamps. Your **first** crossing registers your passport,
@@ -15,26 +17,23 @@ import { AlertIcon, CalendarClockIcon, DocumentSearchIcon, FingerprintIcon, Gate
   against that record and logs the **date and place**.
 </InShort>
 
-## Two kinds of crossing
+## Your first crossing
 
-<FactGrid>
-  <Fact icon={<FingerprintIcon />} title="Your first crossing">
-    Passport data, fingerprints and a face photo are registered at whichever
-    of the 29 countries you enter first. Expect it to take longer than a stamp.
-  </Fact>
-  <Fact icon={<GateIcon />} title="Every crossing after that">
-    You're checked against your record and the date and place are logged.
-    Larger crossings increasingly use kiosks and e-gates.
-  </Fact>
-</FactGrid>
+Your passport data, fingerprints and a face photo are registered at whichever
+of the 29 countries you enter first. Expect it to take longer than a stamp.
+
+<Photo name="ees-fingerprint" />
+
+## Every crossing after that
+
+You're checked against your record, and the date and place are logged. Larger
+crossings increasingly use kiosks and e-gates.
 
 ## What the system does with your record
 
-<FactGrid columns={3}>
-  <Fact icon={<CalendarClockIcon />} title="Counts your days">Against the 90/180 rule. Overstays are flagged automatically.</Fact>
-  <Fact icon={<AlertIcon />} title="Records refusals">Any refusal of entry is stored.</Fact>
-  <Fact icon={<PassportIcon />} title="Spots forged documents">It helps officers catch fake or forged passports.</Fact>
-</FactGrid>
+- It **counts your days** against the 90/180 rule, and flags overstays automatically.
+- It **records refusals** of entry.
+- It helps officers **spot fake or forged passports**.
 
 ## Before you go
 
@@ -53,9 +52,11 @@ import { AlertIcon, CalendarClockIcon, DocumentSearchIcon, FingerprintIcon, Gate
   </Step>
 </Steps>
 
+## Related
+
 <LinkCards>
-  <LinkCard href="/ees/missing-exit-record" icon={<DocumentSearchIcon />} title="No exit recorded?">How to get it fixed.</LinkCard>
-  <LinkCard href="/ees" icon={<GateIcon />} title="Correct your record, by country">Contacts and template letters for all 29 countries.</LinkCard>
+  <LinkCard href="/ees/missing-exit-record" title="No exit recorded?">how to get it fixed</LinkCard>
+  <LinkCard href="/ees" title="Correct your record, by country">contacts and template letters for all 29 countries</LinkCard>
 </LinkCards>
 
 <Sources>

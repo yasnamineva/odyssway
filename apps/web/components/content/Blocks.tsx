@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { ArrowRightIcon, ChevronDownIcon } from "../icons";
+import { ChevronDownIcon } from "../icons";
 
 /**
  * Building blocks for guide pages (MDX and TSX). The aim: the answer and the
@@ -10,9 +10,9 @@ import { ArrowRightIcon, ChevronDownIcon } from "../icons";
 /** The answer-first summary every guide opens with (AGENTS.md §8). */
 export function InShort({ children, label = "In short" }: { children: ReactNode; label?: string }) {
   return (
-    <div className="mt-5 rounded-2xl border border-brand-200 bg-brand-50/70 p-5 sm:p-6">
+    <div className="mt-6 border-l-4 border-brand-600 pl-4">
       <p className="text-[11px] font-semibold tracking-[0.14em] text-brand-700 uppercase">{label}</p>
-      <div className="mt-2 text-base leading-relaxed text-slate-800 [&_p]:mt-0 [&_strong]:text-slate-900">
+      <div className="mt-1 text-lg leading-relaxed text-slate-800 [&_p]:mt-0 [&_p]:text-lg [&_strong]:text-slate-900">
         {children}
       </div>
     </div>
@@ -23,15 +23,13 @@ export function InShort({ children, label = "In short" }: { children: ReactNode;
 export function KeyNumbers({ items }: { items: Array<{ value: string; label: string }> }) {
   // Phones: one compact row per number. Wider: side-by-side tiles.
   return (
-    <dl className="mt-6 grid gap-px overflow-hidden rounded-2xl border border-slate-200 bg-slate-200 sm:grid-cols-[repeat(auto-fit,minmax(0,1fr))]">
+    <dl className="mt-6 flex flex-wrap gap-x-10 gap-y-4">
       {items.map((item) => (
-        <div key={item.label} className="flex items-baseline gap-3 bg-white px-4 py-3 sm:block sm:p-4">
+        <div key={item.label} className="min-w-0">
           <dt className="sr-only">{item.label}</dt>
-          <dd className="contents sm:block">
-            <span className="shrink-0 font-display text-xl font-bold text-slate-900 tabular-nums sm:block sm:text-2xl">
-              {item.value}
-            </span>
-            <span className="text-xs leading-snug text-slate-600 sm:mt-1 sm:block">{item.label}</span>
+          <dd>
+            <span className="block font-display text-2xl font-bold text-slate-900 tabular-nums">{item.value}</span>
+            <span className="block text-xs leading-snug text-slate-600">{item.label}</span>
           </dd>
         </div>
       ))}
@@ -41,22 +39,15 @@ export function KeyNumbers({ items }: { items: Array<{ value: string; label: str
 
 export function FactGrid({ children, columns = 2 }: { children: ReactNode; columns?: 2 | 3 | 4 }) {
   const cols = { 2: "sm:grid-cols-2", 3: "sm:grid-cols-3", 4: "sm:grid-cols-2 lg:grid-cols-4" }[columns];
-  return <div className={`mt-5 grid gap-3 ${cols}`}>{children}</div>;
+  return <div className={`mt-4 grid gap-x-8 gap-y-4 ${cols}`}>{children}</div>;
 }
 
-/** One idea per card: an icon, a short title, one or two lines. */
-export function Fact({ icon, title, children }: { icon: ReactNode; title: string; children?: ReactNode }) {
+/** One idea: a short bold title and a line or two of text. */
+export function Fact({ title, children }: { title: string; children?: ReactNode }) {
   return (
-    <div className="flex gap-3 rounded-xl border border-slate-200 bg-white p-4">
-      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-700 [&_svg]:h-5 [&_svg]:w-5">
-        {icon}
-      </span>
-      <div className="min-w-0">
-        <p className="text-sm font-semibold text-slate-900">{title}</p>
-        {children ? (
-          <div className="mt-0.5 text-[13px] leading-relaxed text-slate-600 [&_p]:mt-0">{children}</div>
-        ) : null}
-      </div>
+    <div className="min-w-0">
+      <p className="text-[15px] font-semibold text-slate-900">{title}</p>
+      {children ? <div className="mt-0.5 text-[15px] leading-relaxed text-slate-600 [&_p]:mt-0">{children}</div> : null}
     </div>
   );
 }
@@ -69,9 +60,9 @@ export function Steps({ children }: { children: ReactNode }) {
 export function Step({ title, children }: { title: string; children?: ReactNode }) {
   return (
     <li className="relative pb-6 pl-12 [counter-increment:step] last:pb-0 before:absolute before:top-0 before:left-0 before:flex before:h-8 before:w-8 before:items-center before:justify-center before:rounded-full before:bg-slate-900 before:text-sm before:font-semibold before:text-white before:content-[counter(step)] after:absolute after:top-9 after:bottom-1 after:left-4 after:w-px after:bg-slate-300 last:after:hidden">
-      <p className="pt-1 text-sm font-semibold text-slate-900">{title}</p>
+      <p className="pt-1 text-[15px] font-semibold text-slate-900">{title}</p>
       {children ? (
-        <div className="mt-1 text-[13px] leading-relaxed text-slate-600 [&_p]:mt-1 [&_ul]:mt-1">{children}</div>
+        <div className="mt-1 text-[15px] leading-relaxed text-slate-600 [&_p]:mt-1 [&_ul]:mt-1">{children}</div>
       ) : null}
     </li>
   );
@@ -94,55 +85,34 @@ export function More({ summary, children, subtle = false }: { summary: string; c
     );
   }
   return (
-    <details className="group mt-4 rounded-xl border border-slate-200 bg-white open:shadow-sm">
-      <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 text-sm font-medium text-slate-800 select-none [&::-webkit-details-marker]:hidden">
+    <details className="group mt-5 border-y border-slate-200">
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-3 py-3 text-[15px] font-medium text-slate-800 select-none hover:text-slate-950 [&::-webkit-details-marker]:hidden">
         {summary}
         <ChevronDownIcon className="h-4 w-4 shrink-0 text-slate-500 transition-transform group-open:rotate-180" />
       </summary>
-      <div className="border-t border-slate-100 px-4 pb-4 text-[13px] leading-relaxed text-slate-700 [&>*:first-child]:mt-3 [&_li]:text-[13px] [&_p]:text-[13px]">
+      <div className="pb-4 text-sm leading-relaxed text-slate-700 [&>*:first-child]:mt-0 [&_li]:text-sm [&_p]:text-sm">
         {children}
       </div>
     </details>
   );
 }
 
-export function LinkCards({ children, columns = 2 }: { children: ReactNode; columns?: 2 | 3 }) {
-  return (
-    <div className={`mt-5 grid gap-3 ${columns === 3 ? "sm:grid-cols-2 lg:grid-cols-3" : "sm:grid-cols-2"}`}>
-      {children}
-    </div>
-  );
+/** A short list of related links — plain text, one per line. */
+export function LinkCards({ children }: { children: ReactNode }) {
+  return <ul className="mt-4 space-y-3">{children}</ul>;
 }
 
-export function LinkCard({
-  href,
-  icon,
-  title,
-  children,
-}: {
-  href: string;
-  icon?: ReactNode;
-  title: string;
-  children?: ReactNode;
-}) {
+export function LinkCard({ href, title, children }: { href: string; title: string; children?: ReactNode }) {
   return (
-    <a
-      href={href}
-      className="group flex gap-3 rounded-xl border border-slate-200 bg-white p-4 no-underline transition hover:border-slate-900 hover:shadow-sm"
-    >
-      {icon ? (
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-700 [&_svg]:h-5 [&_svg]:w-5">
-          {icon}
-        </span>
-      ) : null}
-      <span className="min-w-0 flex-1">
-        <span className="flex items-center justify-between gap-2 text-sm font-semibold text-slate-900">
-          {title}
-          <ArrowRightIcon className="h-4 w-4 shrink-0 text-slate-400 transition group-hover:translate-x-0.5 group-hover:text-slate-900" />
-        </span>
-        {children ? <span className="mt-0.5 block text-[13px] leading-relaxed text-slate-600">{children}</span> : null}
-      </span>
-    </a>
+    <li className="text-[15px] leading-relaxed">
+      <a
+        href={href}
+        className="font-semibold text-brand-800 underline decoration-brand-300 underline-offset-4 hover:decoration-brand-700"
+      >
+        {title}
+      </a>
+      {children ? <span className="text-slate-600"> — {children}</span> : null}
+    </li>
   );
 }
 
@@ -151,7 +121,7 @@ export function LinkCard({
  * evenly spaced (the day numbers carry the timing) so labels never collide. */
 export function DeadlineTrack({ points }: { points: Array<{ day: number; label: string }> }) {
   return (
-    <ol className="mt-6 flex flex-col rounded-2xl border border-slate-200 bg-white p-5 sm:flex-row">
+    <ol className="mt-6 flex flex-col sm:flex-row">
       {points.map((p, i) => {
         const last = i === points.length - 1;
         return (
@@ -186,12 +156,12 @@ export function Sources({ children }: { children: ReactNode }) {
 export function Callout({ title, children, tone = "warning" }: { title: string; children: ReactNode; tone?: "warning" | "info" }) {
   const styles =
     tone === "warning"
-      ? "border-amber-300 bg-amber-50 text-amber-950 [&_strong]:text-amber-950"
-      : "border-slate-200 bg-slate-50 text-slate-800";
+      ? "border-amber-500 text-slate-800 [&_strong]:text-slate-900"
+      : "border-slate-300 text-slate-800";
   return (
-    <div className={`mt-5 rounded-xl border p-4 ${styles}`} role={tone === "warning" ? "note" : undefined}>
-      <p className="text-sm font-semibold">{title}</p>
-      <div className="mt-1 text-[13px] leading-relaxed [&_p]:mt-0 [&_p]:text-[13px] [&_p]:text-inherit">{children}</div>
+    <div className={`mt-6 border-l-4 pl-4 ${styles}`} role={tone === "warning" ? "note" : undefined}>
+      <p className="text-[15px] font-semibold text-slate-900">{title}</p>
+      <div className="mt-1 text-[15px] leading-relaxed [&_p]:mt-0 [&_p]:text-[15px] [&_p]:text-inherit">{children}</div>
     </div>
   );
 }
@@ -211,7 +181,7 @@ export function Compare({
   const list = (items: ReactNode[], mark: string, markClass: string) => (
     <ul className="mt-3 space-y-2.5">
       {items.map((item, i) => (
-        <li key={i} className="flex gap-2.5 text-[13px] leading-relaxed text-slate-700">
+        <li key={i} className="flex gap-2.5 text-[15px] leading-relaxed text-slate-700">
           <span aria-hidden="true" className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[11px] font-bold ${markClass}`}>
             {mark}
           </span>
@@ -221,13 +191,13 @@ export function Compare({
     </ul>
   );
   return (
-    <div className="mt-5 grid gap-3 sm:grid-cols-2">
-      <div className="rounded-xl border border-brand-200 bg-white p-4">
-        <p className="text-sm font-semibold text-brand-800">{yesTitle}</p>
+    <div className="mt-5 grid gap-x-10 gap-y-6 sm:grid-cols-2">
+      <div>
+        <p className="text-[15px] font-semibold text-brand-800">{yesTitle}</p>
         {list(yes, "✓", "bg-brand-100 text-brand-800")}
       </div>
-      <div className="rounded-xl border border-slate-200 bg-white p-4">
-        <p className="text-sm font-semibold text-slate-700">{noTitle}</p>
+      <div>
+        <p className="text-[15px] font-semibold text-slate-700">{noTitle}</p>
         {list(no, "✕", "bg-slate-100 text-slate-600")}
       </div>
     </div>

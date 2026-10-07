@@ -8,27 +8,21 @@
     identical Official Journal text and is this project's documented
     workaround for EU-legislation citations generally. */}
 
-import { Callout, InShort, KeyNumbers, LinkCard, LinkCards, More, Sources, Step, Steps } from "../../../apps/web/components/content/Blocks";
+import { Callout, InShort, More, Sources, Step, Steps } from "../../../apps/web/components/content/Blocks";
 import InfoTip from "../../../apps/web/components/content/InfoTip";
+import Photo from "../../../apps/web/components/content/Photo";
 import { OverstayCountryGrid } from "../../../apps/web/components/content/CountryGrid";
-import { AlertIcon, GateIcon } from "../../../apps/web/components/icons";
 import { publishedOverstayPenalties } from "../../../apps/web/lib/overstay-penalties";
 
 # What actually happens if you overstay
 
+<Photo name="overstay-board" hero />
+
 <InShort>
   Overstaying does **not** trigger an automatic entry ban. You get a **return
   decision** with **7 to 30 days to leave**. Leave in that window and the ban
-  isn't automatic. <InfoTip label="Where this comes from">The EU's Return Directive, 2008/115/EC — the rules every Schengen country applies. Quotes below are from its official text.</InfoTip>
+  isn't automatic; a ban normally lasts **up to 5 years**. <InfoTip label="Where this comes from">The EU's Return Directive, 2008/115/EC — the rules every Schengen country applies. Quotes below are from its official text.</InfoTip>
 </InShort>
-
-<KeyNumbers
-  items={[
-    { value: "7–30 days", label: "to leave on your own" },
-    { value: "Up to 5 yrs", label: "entry ban, only if you don't leave" },
-    { value: String(publishedOverstayPenalties.length), label: "countries with verified national fines" },
-  ]}
-/>
 
 ## The process, step by step
 
@@ -74,15 +68,14 @@ import { publishedOverstayPenalties } from "../../../apps/web/lib/overstay-penal
 
 ## How it gets noticed
 
-<LinkCards>
-  <LinkCard href="/ees/what-to-expect" icon={<GateIcon />} title="The EES counts your days">Since April 2026 overstays are flagged automatically.</LinkCard>
-  <LinkCard href="/ees/dispute-overstay" icon={<AlertIcon />} title="Flagged by mistake?">How to get a false overstay corrected.</LinkCard>
-</LinkCards>
+Since April 2026 the [EES](/ees/what-to-expect) logs every entry and exit, so
+overstays are flagged automatically. Flagged by mistake? Here's
+[how to get a false overstay corrected](/ees/dispute-overstay).
 
 ## Fines and bans, country by country
 
 The directive sets the EU-wide process. **Fines** are national law, so they
-differ by country. Pick one:
+differ by country. We have verified figures for {publishedOverstayPenalties.length} of them:
 
 <OverstayCountryGrid />
 

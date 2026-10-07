@@ -15,6 +15,8 @@ import { nationalityRules } from "../../../lib/nationalities";
 import { SITE_URL } from "../../../lib/site";
 import { travelPairPath } from "../../../lib/travel-pairs";
 import { InShort } from "../../../components/content/Blocks";
+import Photo from "../../../components/content/Photo";
+import { destinationPhoto } from "../../../lib/photos";
 import { VERDICT_STYLES } from "../../../components/CustomsRowCard";
 
 interface Params {
@@ -94,12 +96,13 @@ export default async function DestinationPage({ params }: { params: Promise<Para
       REQUIREMENT_ORDER.indexOf(a.requirement as (typeof REQUIREMENT_ORDER)[number]) -
         REQUIREMENT_ORDER.indexOf(b.requirement as (typeof REQUIREMENT_ORDER)[number]) || (b.days ?? 0) - (a.days ?? 0),
   );
+  const photo = destinationPhoto(dest.code);
   const visaFreeCount = nationalityRows.filter((r) => r.row.requirement === "visa_free").length;
   const GROUP_STYLE: Record<string, string> = {
-    visa_free: "border-brand-200 bg-brand-50/60",
-    eta_required: "border-blue-200 bg-blue-50/60",
-    visa_on_arrival: "border-amber-200 bg-amber-50/60",
-    visa_required: "border-slate-200 bg-slate-50",
+    visa_free: "bg-brand-600",
+    eta_required: "bg-blue-600",
+    visa_on_arrival: "bg-amber-500",
+    visa_required: "bg-slate-400",
   };
 
   return (
@@ -111,6 +114,7 @@ export default async function DestinationPage({ params }: { params: Promise<Para
       <h1 className="font-display text-2xl font-bold tracking-tight text-slate-900 lg:text-3xl">
         {t("h1", { destination: dest.name })}
       </h1>
+      {photo ? <Photo name={photo} hero /> : null}
 
       {nationalityRows.length > 0 && (
         <InShort>
@@ -128,14 +132,17 @@ export default async function DestinationPage({ params }: { params: Promise<Para
         <section className="mt-10">
           <h2 className="text-lg font-semibold text-slate-900">{t("entryTitle")}</h2>
           <p className="mt-1 text-sm text-slate-600">{t("entryHint")}</p>
-          <div className="mt-4 space-y-3">
+          <div className="mt-5 space-y-6">
             {groupList.map((g) => (
-              <div key={`${g.requirement}${g.days}`} className={`rounded-xl border p-4 ${GROUP_STYLE[g.requirement] ?? ""}`}>
-                <p className="text-sm font-semibold text-slate-900 first-letter:uppercase">
+              <div key={`${g.requirement}${g.days}`}>
+                <p className="flex items-center gap-2 text-[15px] font-semibold text-slate-900">
+                  <span aria-hidden="true" className={`h-2.5 w-2.5 shrink-0 rounded-full ${GROUP_STYLE[g.requirement] ?? ""}`} />
+                  <span className="first-letter:uppercase">
                   {t(`requirement.${g.requirement}`)}
                   {g.days ? <span className="font-normal text-slate-600"> · {t("upToDays", { days: g.days })}</span> : null}
+                  </span>
                 </p>
-                <ul className="mt-3 flex flex-wrap gap-2">
+                <ul className="mt-2 flex flex-wrap gap-2 pl-[18px]">
                   {g.rows.map(({ row, name }) => (
                     <li key={row.nationality}>
                       <a
@@ -157,13 +164,13 @@ export default async function DestinationPage({ params }: { params: Promise<Para
         <section className="mt-10">
           <h2 className="text-lg font-semibold text-slate-900">{t("itemsTitle")}</h2>
           <p className="mt-1 text-sm text-slate-600">{t("itemsHint")}</p>
-          <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+          <ul className="mt-4 divide-y divide-slate-200 border-y border-slate-200">
             {items.map((item) => {
               const category = item.category in BRING_CATEGORIES ? BRING_CATEGORIES[item.category as BringCategory] : null;
               const inner = (
                 <>
                   <span className="flex items-start justify-between gap-3">
-                    <span className="text-sm font-semibold text-slate-900">{rowLabel(item.slug, dest.code)}</span>
+                    <span className="text-[15px] font-semibold text-slate-900">{rowLabel(item.slug, dest.code)}</span>
                     <span
                       className={`shrink-0 rounded-full px-2 py-0.5 text-[11px] font-semibold ring-1 ring-inset ${VERDICT_STYLES[item.verdict] ?? VERDICT_STYLES.depends}`}
                     >
@@ -171,7 +178,7 @@ export default async function DestinationPage({ params }: { params: Promise<Para
                     </span>
                   </span>
                   {item.limits ? (
-                    <span className="mt-1 line-clamp-2 text-xs leading-relaxed text-slate-600">
+                    <span className="mt-0.5 line-clamp-2 text-sm leading-relaxed text-slate-600">
                       {item.limits.description}
                     </span>
                   ) : null}
@@ -182,12 +189,12 @@ export default async function DestinationPage({ params }: { params: Promise<Para
                   {category ? (
                     <a
                       href={`/bring/${category.slug}/${destinationSlug(dest.name)}`}
-                      className="block h-full rounded-xl border border-slate-200 bg-white p-3.5 transition hover:border-slate-900"
+                      className="block py-3 transition hover:bg-slate-50"
                     >
                       {inner}
                     </a>
                   ) : (
-                    <div className="h-full rounded-xl border border-slate-200 bg-white p-3.5">{inner}</div>
+                    <div className="py-3">{inner}</div>
                   )}
                 </li>
               );
@@ -197,8 +204,8 @@ export default async function DestinationPage({ params }: { params: Promise<Para
       )}
 
       {relatedPosts.length > 0 && (
-        <section className="mt-10 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-          <h2 className="text-base font-semibold text-slate-900">{t("relatedPostsTitle")}</h2>
+        <section className="mt-10">
+          <h2 className="text-lg font-semibold text-slate-900">{t("relatedPostsTitle")}</h2>
           <ul className="mt-3 space-y-2">
             {relatedPosts.map((p) => (
               <li key={p.slug}>
@@ -211,7 +218,7 @@ export default async function DestinationPage({ params }: { params: Promise<Para
         </section>
       )}
 
-      <section className="mt-10 rounded-2xl border border-slate-200 bg-slate-100 p-4 text-xs leading-relaxed text-slate-600">
+      <section className="mt-12 border-t border-slate-200 pt-4 text-xs leading-relaxed text-slate-500">
         <p>
           {t("verifiedLine", { date: dest.verified_at ?? "" })}{" "}
           <a href={dest.officialAuthorityUrl} rel="noopener noreferrer" className="underline">
