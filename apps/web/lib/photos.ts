@@ -69,3 +69,9 @@ export function destinationPhoto(code: string): PhotoKey | null {
   const key = `dest-${code.toLowerCase()}`;
   return key in photos ? (key as PhotoKey) : null;
 }
+
+/** A photo as an Open Graph image entry (served from our own domain). */
+export function photoOgImage(key: PhotoKey) {
+  const photo = photos[key];
+  return { url: `/images/photos/${key}.jpg`, width: photo.width, height: photo.height };
+}

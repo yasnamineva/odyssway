@@ -59,6 +59,8 @@ export default async function RootLayout({
 }) {
   const messages = await getMessages();
   const t = await getTranslations();
+  // Analytics is off (the variable is unset). The Privacy Policy promises
+  // "no analytics" — update content/en/legal/privacy.mdx before setting it.
   const plausibleDomain = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
 
   return (
@@ -133,6 +135,12 @@ export default async function RootLayout({
                     </a>
                     <a href="/widget" className="text-white/60 transition hover:text-white">
                       {t("footer.widget")}
+                    </a>
+                    <a href="/privacy" className="text-white/60 transition hover:text-white">
+                      {t("footer.privacy")}
+                    </a>
+                    <a href="/terms" className="text-white/60 transition hover:text-white">
+                      {t("footer.terms")}
                     </a>
                     <a
                       href={OFFICIAL_CALCULATOR_URL}

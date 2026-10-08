@@ -199,7 +199,7 @@ export default async function MedicationPairPage({ params }: { params: Promise<P
       )}
 
       <p className="text-xs leading-relaxed text-slate-500">
-        {tb("disclaimer")}{" "}
+        {tb("disclaimer")} {tc("medicalDisclaimer")}{" "}
         <a href="/changelog#dataset-customs-items" className="underline">
           {tc("updateHistory")}
         </a>

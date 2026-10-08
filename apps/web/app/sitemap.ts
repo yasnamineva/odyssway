@@ -11,6 +11,7 @@ import { etiasNationalities } from "../lib/nationalities";
 import { travelPairPath, travelPairs } from "../lib/travel-pairs";
 import { publishedOverstayPenalties } from "../lib/overstay-penalties";
 import { SITE_URL as BASE } from "../lib/site";
+import { LEGAL_UPDATED } from "../lib/legal";
 
 /** Content pages carry the date their sources were last checked (AGENTS.md §7). */
 const CONTENT_CHECKED = "2026-07-13";
@@ -110,6 +111,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/developers`, lastModified: "2026-09-16", priority: 0.4 },
     { url: `${BASE}/sources`, lastModified: CONTENT_CHECKED, priority: 0.4 },
     { url: `${BASE}/faq`, lastModified: CONTENT_CHECKED, priority: 0.5 },
+    { url: `${BASE}/privacy`, lastModified: LEGAL_UPDATED, priority: 0.2 },
+    { url: `${BASE}/terms`, lastModified: LEGAL_UPDATED, priority: 0.2 },
     { url: `${BASE}/blog`, lastModified: CONTENT_CHECKED, priority: 0.5 },
     ...blogPosts.map((p) => ({
       url: `${BASE}/blog/${p.slug}`,

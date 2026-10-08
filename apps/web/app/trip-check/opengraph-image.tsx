@@ -1,19 +1,9 @@
-import { ImageResponse } from "next/og";
-import { OgCard } from "../../lib/og-card";
+import { OG_CONTENT_TYPE, OG_SIZE, ogCard } from "../../lib/og-card";
 
-export const size = { width: 1200, height: 630 };
-export const contentType = "image/png";
+export const size = OG_SIZE;
+export const contentType = OG_CONTENT_TYPE;
+export const alt = "Trip Check — entry rules, stay limits, documents and customs for one trip";
 
-export default async function Image() {
-  return new ImageResponse(
-    (
-      <OgCard
-        eyebrow="Trip Check"
-        title="Where are you from, and where are you going?"
-        sub="Entry rules, stay limits, required documents, and customs — for one specific trip."
-        accent="#60a5fa"
-      />
-    ),
-    { ...size },
-  );
+export default function Image() {
+  return ogCard({ eyebrow: "Trip Check", title: "Where are you from, and where are you going?", sub: "Entry rules, stay limits, documents and customs for one specific trip." });
 }

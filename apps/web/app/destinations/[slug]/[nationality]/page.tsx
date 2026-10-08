@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import BreadcrumbJsonLd from "../../../../components/BreadcrumbJsonLd";
 import SourceNote from "../../../../components/SourceNote";
 import Photo from "../../../../components/content/Photo";
-import { destinationPhoto } from "../../../../lib/photos";
+import { destinationPhoto, photoOgImage } from "../../../../lib/photos";
 import { destinationPath } from "../../../../lib/destinations";
 import { travelPair, travelPairPath, travelPairs, type TravelPair } from "../../../../lib/travel-pairs";
 
@@ -41,11 +41,16 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const { t, vars, answer } = await pairText(pair);
   const title = t("metaTitle", vars);
   const description = t("metaDescription", { ...vars, answer, date: pair.row.verified_at ?? "" });
+  const photo = destinationPhoto(pair.destination.code);
   return {
     title,
     description,
     alternates: { canonical: travelPairPath(pair) },
-    openGraph: { title, description, images: ["/opengraph-image"] },
+    openGraph: {
+      title,
+      description,
+      images: [photo ? photoOgImage(photo) : "/opengraph-image"],
+    },
   };
 }
 

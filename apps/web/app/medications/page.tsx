@@ -14,6 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function MedicationsIndexPage() {
+  const tc = await getTranslations("common");
   const t = await getTranslations("medicationsIndex");
   return (
     <article className="mx-auto max-w-3xl space-y-6">
@@ -37,6 +38,7 @@ export default async function MedicationsIndexPage() {
           {t("generalLink")}
         </a>
       </p>
+      <p className="text-xs leading-relaxed text-slate-500">{tc("medicalDisclaimer")}</p>
     </article>
   );
 }

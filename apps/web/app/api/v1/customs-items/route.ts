@@ -29,7 +29,7 @@ export async function GET(request: Request): Promise<NextResponse> {
       items: rows,
       source: "https://odyssway.com/sources",
       license:
-        "Free to use with attribution (a visible link back to odyssway.com). See /developers.",
+        "Free to use with attribution (a visible link back to odyssway.com). Terms: https://odyssway.com/terms",
     },
     { headers: { ...CORS_HEADERS, "Cache-Control": "public, max-age=3600" } },
   );

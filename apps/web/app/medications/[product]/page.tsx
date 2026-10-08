@@ -39,6 +39,7 @@ export default async function MedicationProductPage({ params }: { params: Promis
   const pairs = pairsForProduct(product.slug);
   const t = await getTranslations("medicationProduct");
   const tv = await getTranslations("destinationPage.verdict");
+  const tc = await getTranslations("common");
   const others = medicationProducts.filter((p) => p.slug !== product.slug);
 
   return (
@@ -120,6 +121,8 @@ export default async function MedicationProductPage({ params }: { params: Promis
           ))}
         </ul>
       </section>
+
+      <p className="text-xs leading-relaxed text-slate-500">{tc("medicalDisclaimer")}</p>
     </article>
   );
 }

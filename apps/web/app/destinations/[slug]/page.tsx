@@ -16,7 +16,7 @@ import { SITE_URL } from "../../../lib/site";
 import { travelPairPath } from "../../../lib/travel-pairs";
 import { InShort } from "../../../components/content/Blocks";
 import Photo from "../../../components/content/Photo";
-import { destinationPhoto } from "../../../lib/photos";
+import { destinationPhoto, photoOgImage } from "../../../lib/photos";
 import { VERDICT_STYLES } from "../../../components/CustomsRowCard";
 
 interface Params {
@@ -39,10 +39,15 @@ export async function generateMetadata({
   const dest = destinationBySlug((await params).slug);
   if (!dest) return {};
   const t = await getTranslations("destinationPage");
+  const title = t("metaTitle", { destination: dest.name });
+  const description = t("metaDescription", { destination: dest.name });
+  const photo = destinationPhoto(dest.code);
   return {
-    title: t("metaTitle", { destination: dest.name }),
-    description: t("metaDescription", { destination: dest.name }),
+    title,
+    description,
     alternates: { canonical: destinationPath(dest) },
+    // Shared links show the destination's own photo; the brand card otherwise.
+    openGraph: { title, description, images: [photo ? photoOgImage(photo) : "/opengraph-image"] },
   };
 }
 

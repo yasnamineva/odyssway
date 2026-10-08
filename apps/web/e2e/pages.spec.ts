@@ -223,6 +223,18 @@ test("blog posts carry a photo and retired post URLs redirect", async ({ page, r
   expect(res.headers()["location"]).toBe("/blog/europe-counts-your-days");
 });
 
+test("privacy policy and terms are linked from the footer and name the operator", async ({ page }) => {
+  await page.goto("/");
+  await page.locator("footer").getByRole("link", { name: "Privacy" }).click();
+  await expect(page).toHaveURL(/\/privacy$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Privacy Policy");
+  await expect(page.locator("article")).toContainText("support@odyssway.com");
+  await expect(page.locator("article")).toContainText("Commission for Personal Data Protection");
+  await page.goto("/terms");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Terms of Use");
+  await expect(page.locator("article")).toContainText("not legal advice");
+});
+
 test("named-medicine pages answer the brand query from the verified row", async ({ page }) => {
   await page.goto("/medications/adderall/japan");
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("Can you bring Adderall to Japan?");
