@@ -113,9 +113,12 @@ export default function DestinationsMap({
     const dy = e.clientY - dragRef.current.lastY;
     dragRef.current.lastX = e.clientX;
     dragRef.current.lastY = e.clientY;
+    // The surface follows the pointer: dragging right brings the land on the
+    // left into view, so the centre longitude moves west (and likewise for
+    // latitude: dragging down brings the north into view).
     setRotation((r) => ({
-      lon: r.lon + dx * DRAG_SENSITIVITY,
-      lat: Math.max(-MAX_LAT, Math.min(MAX_LAT, r.lat - dy * DRAG_SENSITIVITY)),
+      lon: r.lon - dx * DRAG_SENSITIVITY,
+      lat: Math.max(-MAX_LAT, Math.min(MAX_LAT, r.lat + dy * DRAG_SENSITIVITY)),
     }));
   }, []);
   const onPointerUp = useCallback((e: React.PointerEvent<HTMLDivElement>) => {
