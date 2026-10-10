@@ -37,5 +37,791 @@
     "verified_at": null,
     "verified_by": null,
     "status": "needs_verification"
+  },
+  {
+    "slug": "meat-dairy-lk",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "sausage",
+      "ham",
+      "jerky",
+      "eggs",
+      "animal products"
+    ],
+    "destination": "LK",
+    "category": "food_animal",
+    "verdict": "depends",
+    "notes": "MISSING: no official passenger-specific rule for meat/dairy found. Sri Lanka Customs says 'any part of an animal (including animal skins, hides, teeth, hair, chanks, shells etc.)' is restricted without prior approval, and DAPH (daph.gov.lk/services/Quar) describes commercial import clearance of 'Meat, Meat Products, Chicken products, Casing & Table eggs' under the Animal Diseases Act No. 59 of 1992 — but neither page says what a traveller may carry. Needs DAPH Animal Quarantine guidance for passenger baggage.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Sri Lanka's official authority page",
+      "url": "https://www.immigration.gov.lk/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "e-cigarettes-lk",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping",
+      "e-liquid",
+      "heated tobacco",
+      "iqos"
+    ],
+    "destination": "LK",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "notes": "MISSING: no primary source found. Sri Lanka Customs pages do not mention e-cigarettes; news (The Morning, 2025) says the legal status is unclear and legislation was expected; a secondary database (GSTHR) claims import is prohibited. GOV.UK only mentions a 'Smoking and e-cigarette bans' heading for public places. Needs a NATA (nata.gov.lk) statement or Import & Export Control gazette.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Sri Lanka's official authority page",
+      "url": "https://www.immigration.gov.lk/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "weapons-lk",
+    "names": [
+      "firearms",
+      "guns",
+      "ammunition",
+      "knives",
+      "pepper spray",
+      "weapons",
+      "airsoft"
+    ],
+    "destination": "LK",
+    "category": "weapons",
+    "verdict": "depends",
+    "notes": "MISSING: no readable primary source. The Gun Ordinance text on lawnet.gov.lk (reported to allow import of a gun in passenger baggage only with a declaration and Customs permit) could not be fetched — the site served a mismatched TLS certificate (bluehost), so it was not trusted. Customs' passenger guide only says restricted/prohibited articles are in 'Schedule B of Customs Ordinance'. Needs the Customs Ordinance Schedule B / Firearms Ordinance from an official host and Ministry of Defence guidance.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Sri Lanka's official authority page",
+      "url": "https://www.immigration.gov.lk/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "cbd-lk",
+    "names": [
+      "cbd",
+      "cbd oil",
+      "cannabidiol",
+      "hemp oil"
+    ],
+    "destination": "LK",
+    "category": "cbd_cannabis",
+    "verdict": "depends",
+    "notes": "MISSING: no official traveller guidance on CBD. The Poisons, Opium and Dangerous Drugs Ordinance s.28 bans import of the hemp plant 'or any preparation thereof', which on its face would cover hemp-derived CBD, but no official page applies it to CBD products and s.30 carves out licensed galenical preparations. Needs NDDCB/NMRA/Customs confirmation.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Sri Lanka's official authority page",
+      "url": "https://www.immigration.gov.lk/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "glp1-insulin-lk",
+    "names": [
+      "insulin",
+      "insulin pen",
+      "ozempic",
+      "wegovy",
+      "mounjaro",
+      "semaglutide",
+      "tirzepatide",
+      "glp-1"
+    ],
+    "destination": "LK",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "MISSING: NMRA's traveller page bans intramuscular/intravenous medicines under the personal allowance but says nothing about subcutaneous injectables (insulin, GLP-1 pens). Needs NMRA confirmation that subcutaneous pens fall under the ordinary 90-day personal rule.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Sri Lanka's official authority page",
+      "url": "https://www.immigration.gov.lk/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "controlled-medication-pe",
+    "names": [
+      "controlled medication",
+      "narcotics",
+      "opioids",
+      "psychotropics",
+      "adhd medication",
+      "benzodiazepines",
+      "stimulants"
+    ],
+    "destination": "PE",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "Missing: a current, traveller-specific rule. DIGEMID says narcotic and psychotropic medicines are controlled under D.S. N° 023-2001-SA (https://www.digemid.minsa.gob.pe/webDigemid/psicotropicos-y-estupefacientes/). The 2001 regulation text on gob.pe (https://www.gob.pe/institucion/minsa/normas-legales/255646-023-2001-sa), 5th complementary provision, only covers 'viajeros internacionales con enfermedad terminal' carrying narcotic medicines: original prescription + original certificate from the health authority of the country of origin, maximum 5 days' supply. It does not address psychotropics (e.g. ADHD stimulants, benzodiazepines) or non-terminal patients, and we could not confirm whether it has been amended. DIGEMID's 'autorización excepcional' (Consideraciones_PF-2025.pdf) is for imports 'por valija' with a Peruvian-prescriber prescription — unclear whether it applies to accompanied baggage. Need: DIGEMID confirmation of the rule for travellers carrying controlled medicines.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Peru's official authority page",
+      "url": "https://www.gob.pe/migraciones"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "cannabis-pe",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "cbd",
+      "cbd oil",
+      "weed",
+      "thc"
+    ],
+    "destination": "PE",
+    "category": "cbd_cannabis",
+    "verdict": "depends",
+    "notes": "Missing: any official rule on travellers bringing cannabis or CBD into Peru. Medicinal cannabis is regulated domestically (Ley 30681, DIGEMID patient register) but we found no SUNAT/DIGEMID traveller guidance. UK FCDO warns illegal drug use and trafficking carry lengthy jail sentences. Do not publish until a primary source covers import by travellers.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Peru's official authority page",
+      "url": "https://www.gob.pe/migraciones"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "e-cigarettes-pe",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping",
+      "e-liquid",
+      "heated tobacco",
+      "iqos"
+    ],
+    "destination": "PE",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "notes": "Missing: no SUNAT or MINSA traveller rule found. Ley N° 32159 (Nov 2024) regulates consumption/advertising of tobacco and nicotine products incl. electronic nicotine delivery systems, but we did not find import/baggage limits, and SUNAT's duty-free list mentions only cigarettes, cigars and loose tobacco. Only a non-official site claimed vapes are 'restricted' — not usable.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Peru's official authority page",
+      "url": "https://www.gob.pe/migraciones"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "e-cigarettes-do",
+    "names": [
+      "e-cigarettes",
+      "vapes",
+      "vape",
+      "e-liquid",
+      "heated tobacco",
+      "iqos",
+      "juul"
+    ],
+    "destination": "DO",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "notes": "needs_verification: Dominican Customs' traveller manual does not mention e-cigarettes or vapes. Press reports cite Ley 16-19 on tobacco control (indoor vaping ban, sales restrictions) and pending bills on vape imports, but we did not read the law text on an official domain and found no official rule on travellers bringing vapes. Need: Ley 16-19 text (consultoria.gov.do or congreso) and any DGA/Ministerio de Salud Pública rule on personal import of vapes.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Dominican Republic's official authority page",
+      "url": "https://migracion.gob.do/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "controlled-medication-co",
+    "names": [
+      "controlled medication",
+      "adhd medication",
+      "stimulants",
+      "opioids",
+      "benzodiazepines",
+      "narcotics",
+      "psychotropics"
+    ],
+    "destination": "CO",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "Missing: a primary Colombian rule for travellers carrying narcotic/psychotropic medicines. Resolución 1478 de 2006 (Ministerio de Salud / Fondo Nacional de Estupefacientes, PDF read from fne.minsalud.gov.co) regulates imports of controlled substances by registered importers (via Bogotá only) but contains no traveller/personal-baggage provision. Código Penal Art. 376 criminalises bringing scheduled substances into the country 'sin permiso de autoridad competente' — whether a foreign prescription counts as permission is not stated anywhere found. Need: FNE or INVIMA guidance or a Colombian embassy page on travellers' controlled medication.",
+    "legal_source": {
+      "name": "Resolución 1478 de 2006 – Fondo Nacional de Estupefacientes",
+      "url": "https://fne.minsalud.gov.co/extranet/Paginas/normatividad/docs/Resolucion_1478_2006.pdf"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "injectable-medication-co",
+    "names": [
+      "injectable medication",
+      "syringes",
+      "needles",
+      "insulin",
+      "ozempic",
+      "wegovy",
+      "mounjaro"
+    ],
+    "destination": "CO",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "Missing: any Colombian or traveller-government source on bringing insulin / GLP-1 pens or syringes. Only general advice found (gov.uk: original container, carry prescription).",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Colombia's official authority page",
+      "url": "https://www.migracioncolombia.gov.co/tramites-y-servicios/instructivos/requisitos-de-entrada-y-salida-del-pais"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "e-cigarettes-co",
+    "names": [
+      "e-cigarettes",
+      "vapes",
+      "vape",
+      "e-liquid",
+      "heated tobacco",
+      "vapeadores"
+    ],
+    "destination": "CO",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "notes": "Missing: a primary source on importing vapes in personal baggage. Colombia regulates vaping devices (Ley 2354 de 2024 reportedly) but the text was not read and no traveller rule was found; presumably they would fall under the general USD 2,000 / 10-unit baggage rules (Decreto 1165 de 2019) but this is not confirmed.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Colombia's official authority page",
+      "url": "https://www.migracioncolombia.gov.co/tramites-y-servicios/instructivos/requisitos-de-entrada-y-salida-del-pais"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "cbd-co",
+    "names": [
+      "cbd",
+      "cbd oil",
+      "cannabidiol"
+    ],
+    "destination": "CO",
+    "category": "cbd_cannabis",
+    "verdict": "depends",
+    "notes": "Missing: whether travellers may bring CBD products. Not addressed by Código Penal Art. 376 or any traveller page found.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Colombia's official authority page",
+      "url": "https://www.migracioncolombia.gov.co/tramites-y-servicios/instructivos/requisitos-de-entrada-y-salida-del-pais"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "alcohol-ar",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor"
+    ],
+    "destination": "AR",
+    "category": "alcohol",
+    "verdict": "depends",
+    "notes": "MISSING: an official quantity limit. ARCA's traveller pages only give the USD 500/300 value allowance and say goods must not be commercial quantities. Secondary sites claim 2 L (non-Mercosur arrivals) or 1 L, but no ARCA page or regulation was found to confirm either. RG AFIP 2731/2009 (Mercosur Decision 53/08), art. 9.6, lets states set quantity limits, but the Argentine limits were not located.",
+    "legal_source": {
+      "name": "ARCA (Aduana) — Franquicias",
+      "url": "https://www.afip.gob.ar/viajeros/ayuda/franquicia.asp"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "tobacco-ar",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars"
+    ],
+    "destination": "AR",
+    "category": "tobacco",
+    "verdict": "depends",
+    "notes": "MISSING: an official quantity limit. Secondary sites claim 400 cigarettes and 50 cigars, or 200 and 25, but no ARCA page or regulation was found. Only the USD value allowance is verified (see duty-free-goods-ar).",
+    "legal_source": {
+      "name": "ARCA (Aduana) — Franquicias",
+      "url": "https://www.afip.gob.ar/viajeros/ayuda/franquicia.asp"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "prescription-medication-ar",
+    "names": [
+      "prescription medication",
+      "medicine",
+      "pills",
+      "prescription"
+    ],
+    "destination": "AR",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "MISSING: no official rule for travellers carrying ordinary prescription medicine. The argentina.gob.ar service page 'Ingresar al país medicamentos para uso personal' returned HTTP 500/403 on every attempt, including headless Chromium. Try it again later. ANMAT's RAEM-NR covers imports of medicines not registered in Argentina.",
+    "legal_source": {
+      "name": "argentina.gob.ar — Ingresar al país medicamentos para uso personal (unreachable)",
+      "url": "https://www.argentina.gob.ar/servicio/ingresar-al-pais-medicamentos-para-uso-personal"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "injectable-medication-ar",
+    "names": [
+      "insulin",
+      "ozempic",
+      "wegovy",
+      "mounjaro",
+      "syringes",
+      "injectable",
+      "glp-1"
+    ],
+    "destination": "AR",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "MISSING: no official source was found on insulin, GLP-1 pens or syringes in traveller baggage. It depends on the same unreachable ANMAT personal-use page.",
+    "legal_source": {
+      "name": "argentina.gob.ar — Ingresar al país medicamentos para uso personal (unreachable)",
+      "url": "https://www.argentina.gob.ar/servicio/ingresar-al-pais-medicamentos-para-uso-personal"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "e-cigarettes-ar",
+    "names": [
+      "e-cigarettes",
+      "vape",
+      "vapes",
+      "e-liquid",
+      "heated tobacco",
+      "iqos",
+      "nicotine pouches"
+    ],
+    "destination": "AR",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "notes": "CHANGED IN 2026: ANMAT Disposición 2543/2026 (Boletín Oficial 04/05/2026) repealed Disposición 3226/2011, the 2011 ban on importing and selling e-cigarettes (verified on boletinoficial.gob.ar/detalleAviso/primera/341513/20260504). Ministry of Health Resolution 549/2026 reportedly set up a mandatory registry for vapes, heated tobacco and nicotine pouches, but it was not read. MISSING: whether travellers may bring personal devices and liquids, and in what quantities.",
+    "legal_source": {
+      "name": "ANMAT Disposición 2543/2026, Boletín Oficial 04/05/2026",
+      "url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/341513/20260504"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "drones-ar",
+    "names": [
+      "drone",
+      "drones",
+      "dji",
+      "uav",
+      "rpas"
+    ],
+    "destination": "AR",
+    "category": "drones",
+    "verdict": "depends",
+    "notes": "MISSING: customs treatment of a tourist's drone, and the operating rules. Secondary sources say ANAC Resolution 550/2025 (Aug 2025, RAAC Parts 100–102) removed registration for drones under 250 g and licences up to 25 kg. The ANAC text was not read, and nothing official was found on bringing a drone in as baggage.",
+    "legal_source": {
+      "name": "ANAC — Resolución 550/2025 (not read)",
+      "url": "https://www.argentina.gob.ar/anac"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "cash-jo",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "dollars",
+      "euros",
+      "dinars",
+      "bearer instruments"
+    ],
+    "destination": "JO",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Large amounts of cash must be declared — threshold unconfirmed (USD 10,000 equivalent vs JOD 10,000 vs JOD 15,000)."
+    },
+    "notes": "NEEDS VERIFICATION — official sources conflict and Jordan Customs (customs.gov.jo) returned HTTP 451 / IP restriction. Japan MOFA (22 Apr 2026): declare cash of USD 10,000 equivalent or more. German Foreign Office (09.10.2026): cash up to JOD 15,000 may be brought in; amounts above must be declared. Search extracts of Jordan Customs notices (Key=11875, Key=12045) say arrivals must declare cash/negotiable instruments over JOD 10,000 under Law No. 20 of 2021, but those pages could not be opened. The AMLU's 2011 Instructions No. 4 used JOD 15,000.",
+    "legal_source": {
+      "name": "Jordan Customs Department — Cross-border declaration notice",
+      "url": "https://www.customs.gov.jo/en/CMS_NewsDetails.aspx?Key=12045"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "prescription-medication-jo",
+    "names": [
+      "prescription medication",
+      "medicine",
+      "medication",
+      "pills",
+      "prescription drugs"
+    ],
+    "destination": "JO",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Reportedly up to a 3-month personal supply with a prescription — unconfirmed."
+    },
+    "notes": "NEEDS VERIFICATION. Only a Jordan News report of a JFDA statement says personal-use medicine is allowed up to a 3-month supply with a medical prescription. jfda.jo redirected and was not read. Canada says some prescription drugs are unavailable in Jordan and travellers must check legality; the Netherlands says to check whether a medicine certificate is needed.",
+    "legal_source": {
+      "name": "Jordan Food and Drug Administration",
+      "url": "https://www.jfda.jo/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "controlled-medication-jo",
+    "names": [
+      "controlled medication",
+      "narcotic medication",
+      "psychotropic",
+      "adhd medication",
+      "opioids",
+      "benzodiazepines",
+      "codeine",
+      "tramadol"
+    ],
+    "destination": "JO",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Unconfirmed — likely needs medical documentation in English and possibly a JFDA permit."
+    },
+    "notes": "NEEDS VERIFICATION. German Foreign Office: when carrying such medicines for medical purposes 'muss die ärztliche Notwendigkeit in englischer Sprache dokumentiert sein' (the medical need must be documented in English), stated in the context of Jordan's strict narcotics law. Secondary guides claim a prior JFDA permit is needed for narcotics/psychotropics (incl. codeine, tramadol); no JFDA page was read. High-stakes: drug offences carry long prison sentences.",
+    "legal_source": {
+      "name": "Jordan Food and Drug Administration",
+      "url": "https://www.jfda.jo/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "injectable-medication-jo",
+    "names": [
+      "injectable medication",
+      "syringes",
+      "insulin pen"
+    ],
+    "destination": "JO",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "NEEDS VERIFICATION. No official source read addresses insulin, GLP-1 pens or syringes for Jordan.",
+    "legal_source": {
+      "name": "Jordan Food and Drug Administration",
+      "url": "https://www.jfda.jo/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "e-cigarettes-jo",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping",
+      "iqos",
+      "heated tobacco"
+    ],
+    "destination": "JO",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "notes": "NEEDS VERIFICATION. No official source read addresses e-cigarettes for travellers to Jordan (UK and Canada pages silent).",
+    "legal_source": {
+      "name": "Jordan Customs Department",
+      "url": "https://www.customs.gov.jo/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "meat-dairy-jo",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "sausage",
+      "pork"
+    ],
+    "destination": "JO",
+    "category": "food_animal",
+    "verdict": "depends",
+    "notes": "NEEDS VERIFICATION. No Ministry of Agriculture or customs page was read. Secondary sources claim pork is banned — unconfirmed.",
+    "legal_source": {
+      "name": "Ministry of Agriculture (Jordan)",
+      "url": "https://www.moa.gov.jo/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "fresh-produce-jo",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds",
+      "fresh produce"
+    ],
+    "destination": "JO",
+    "category": "food_plant",
+    "verdict": "depends",
+    "notes": "NEEDS VERIFICATION. No Ministry of Agriculture page was read.",
+    "legal_source": {
+      "name": "Ministry of Agriculture (Jordan)",
+      "url": "https://www.moa.gov.jo/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "cannabis-cr",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "cbd",
+      "cbd oil",
+      "thc",
+      "hemp"
+    ],
+    "destination": "CR",
+    "category": "cbd_cannabis",
+    "verdict": "depends",
+    "notes": "Not verified. The Ministry of Health controlled-substances list (SCIJ, 11 Sep 2026) lists CANNABIS, cannabis resin/extracts/tinctures and TETRAHIDROCANNABINOL as fiscalised substances, and Ley 8204 penalises unauthorised drugs, but Costa Rica's medicinal-cannabis and hemp law (reportedly Ley 10113; number not confirmed) and its rules on CBD products were not read, so whether a traveller may bring CBD or prescribed medical cannabis is unconfirmed. Needs: that law + reglamento text on SCIJ, Ministerio de Salud guidance.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Costa Rica's official authority page",
+      "url": "https://www.migracion.go.cr/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "meat-dairy-cr",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "sausages",
+      "salami",
+      "ham",
+      "milk",
+      "eggs",
+      "honey",
+      "jerky"
+    ],
+    "destination": "CR",
+    "category": "food_animal",
+    "verdict": "depends",
+    "notes": "Not verified. Only confirmed point: the Declaración de Viajero is used to declare 'aquellas situaciones que pudieren afectar la sanidad humana, animal o vegetal' (Decreto 44096, art. 3 def. 5). SENASA (senasa.go.cr) did not respond; no primary source for which animal products travellers may bring.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Costa Rica's official authority page",
+      "url": "https://www.migracion.go.cr/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "fresh-produce-cr",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds",
+      "flowers",
+      "soil",
+      "nuts",
+      "fresh produce"
+    ],
+    "destination": "CR",
+    "category": "food_plant",
+    "verdict": "depends",
+    "notes": "Not verified. Plant products are controlled by the Servicio Fitosanitario del Estado under Ley 7664 de Protección Fitosanitaria; a DGAC circular (sub.dgac.go.cr ca04_11) reportedly requires declaring plant/animal products but returned 403. Only secondary/news sources (SFE inspections, sniffer dogs, confiscation and incineration) were found. Needs SFE traveller page or Ley 7664 article text.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Costa Rica's official authority page",
+      "url": "https://www.migracion.go.cr/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "e-cigarettes-cr",
+    "names": [
+      "e-cigarettes",
+      "vapes",
+      "vape",
+      "electronic cigarettes",
+      "heated tobacco",
+      "iqos",
+      "e-liquid"
+    ],
+    "destination": "CR",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "notes": "Not verified. Costa Rica regulates electronic nicotine delivery systems (the specific law was not confirmed from a primary source), but no primary text on traveller import of personal vapes was read, and the tobacco allowance (500 g tobacco elaborado) does not mention e-cigarettes.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Costa Rica's official authority page",
+      "url": "https://www.migracion.go.cr/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "drones-cr",
+    "names": [
+      "drone",
+      "drones",
+      "dji",
+      "quadcopter",
+      "uav",
+      "rpas"
+    ],
+    "destination": "CR",
+    "category": "drones",
+    "verdict": "depends",
+    "notes": "Not verified. Drone rules are set by the Dirección General de Aviación Civil (dgac.go.cr), which returned 403 to both curl and WebFetch. Registration/permit requirements for tourists' drones unconfirmed.",
+    "legal_source": {
+      "name": "Not yet verified — Dirección General de Aviación Civil (Costa Rica) is the competent authority",
+      "url": "https://www.dgac.go.cr/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "tobacco-qa",
+    "names": [
+      "cigarettes",
+      "tobacco",
+      "cigars",
+      "rolling tobacco",
+      "duty free cigarettes"
+    ],
+    "destination": "QA",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Not confirmed — 200 or 400 cigarettes (see notes)"
+    },
+    "notes": "Not verified. The GCC 'Unified Guide for Customs Procedures at First Entry Points' PDF on customs.gov.qa (Arabic, created Mar 2025) appears to say the cigarette exemption must not exceed '200' cigarettes and personal effects/gifts must not exceed SAR 3,000 (or equivalent), non-commercial. But the PDF's text layer is garbled (broken font mapping), and secondary sources say 400 cigarettes. Needs a clean reading of the Qatar customs passenger allowance (Arabic PDF OCR, or an official English page).",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Qatar's official authority page",
+      "url": "https://portal.moi.gov.qa/qatarvisas/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "injectable-medication-qa",
+    "names": [
+      "injectable medication",
+      "insulin",
+      "syringes",
+      "needles",
+      "epipen"
+    ],
+    "destination": "QA",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "Not verified. The MOPH controlled-drug guideline only covers controlled injectables: 'If the drug is in the form of injections, the approval for its release shall be done under the supervision of a local healthcare facility in the name of the patient.' No primary source read covers non-controlled injectables such as insulin or GLP-1 pens (Ozempic/Wegovy/Mounjaro), syringes or needles. Presumably the general prescription rule applies (prescription and medical report under 6 months old, in English/Arabic), but this is unconfirmed. Needs: a MOPH page on non-controlled medicines and medical devices.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Qatar's official authority page",
+      "url": "https://portal.moi.gov.qa/qatarvisas/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "meat-dairy-qa",
+    "names": [
+      "meat",
+      "beef",
+      "chicken",
+      "dairy",
+      "cheese",
+      "milk",
+      "eggs",
+      "sausage"
+    ],
+    "destination": "QA",
+    "category": "food_animal",
+    "verdict": "depends",
+    "notes": "Not verified. Only pork is confirmed as prohibited (see pork-products-qa). No primary source read gives Qatar's rules for travellers carrying other meat, dairy or eggs (Ministry of Municipality veterinary quarantine). Customs' Unified Guide has a section on goods subject to veterinary/agricultural quarantine, but it is for commercial imports and was not read. Needs: a Ministry of Municipality traveller rule.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Qatar's official authority page",
+      "url": "https://portal.moi.gov.qa/qatarvisas/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "fresh-produce-qa",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds",
+      "soil",
+      "flowers"
+    ],
+    "destination": "QA",
+    "category": "food_plant",
+    "verdict": "depends",
+    "notes": "Not verified. No primary source read covers travellers bringing fresh fruit, vegetables, plants or seeds into Qatar (Ministry of Municipality agricultural quarantine). Poppy and hemp seeds are prohibited (see poppy-seeds-qa, cannabis-qa).",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Qatar's official authority page",
+      "url": "https://portal.moi.gov.qa/qatarvisas/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
   }
 ]

@@ -40,5 +40,126 @@
     "verified_at": "2026-10-05",
     "verified_by": "agent:claude-opus-5-5",
     "status": "needs_verification"
+  },
+  {
+    "nationality": "IL",
+    "destination": "CO",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Passport valid for the whole stay",
+      "Onward or return ticket (may be requested at the border)",
+      "Proof of sufficient funds (may be requested at the border)"
+    ],
+    "notes": "Visa-free again since September 2026. Background: Resolución 8558 de 2025 (23 Jul 2025, Diario Oficial 26 Aug 2025) required a visa from Israeli nationals on reciprocity grounds, and the compiled text of Res. 5488 de 2022 Art. 3 lit. A on the Cancillería normograma (checked 2026-10-09) still omits Israel. However, the Cancillería press release of 11 Sep 2026 announces 'el restablecimiento de la exención recíproca de visado para los titulares de pasaportes ordinarios de ambos países que viajen con fines turísticos', made official by 'Resolución 12189 de 2026', applying 'a partir del mes de septiembre de 2026' (Israel proposed on 16 Aug 2026 restoring the mutual exemption on pre-12 May 2025 terms; Colombia accepted on 19 Aug 2026). The text of Res. 12189 de 2026 itself could not be retrieved from the normograma. Tourism only per the press release. Once admitted, the general Colombian visitor rules apply: Colombian law: visitors from visa-exempt countries get a Permiso de Ingreso y Permanencia (PIP) at the border. A Tourism Permit (PT) is 'hasta por noventa (90) días calendario' per entry (Resolución 3167 de 2019 Art. 14, Migración Colombia). Migración Colombia counts each foreigner's days so they do not exceed 180 calendar days, continuous or discontinuous, in the same calendar year (1 Jan–31 Dec). Extension: the Permiso Temporal de Permanencia (PTP, 'prórroga') extends a Tourism Permit by up to 90 more calendar days, never beyond 180 days in the calendar year; apply online (Formulario Único de Trámites) at least 5 business days before the PIP expires; 2026 fee COP 150,000 (Resolución 0599 de 2026); issued by email 3 business days after payment; grant is discretionary. Modelled here as 180 days in any 365-day window, which is stricter than the legal calendar-year count (the legal rule would allow, e.g., 180 days ending 31 Dec and a new allowance from 1 Jan) — and each single entry is still capped at 90 days unless extended. Entry documents (Migración Colombia 'Requisitos de entrada y salida del país'): valid passport, plus 'tiquete de viaje de salida y demostrar solvencia económica, según corresponda'; officers may also ask for invitation letters or lodging (Res. 3167/2019 Art. 8 par. 2). Any paid activity requires a visa. Check-Mig online pre-registration (72 h to 1 h before travel) is free and explicitly 'no es de carácter obligatorio' per Migración Colombia. Conflict noted: gov.uk (FCDO, updated 2026-10-06) says visitors may extend 'by up to 120 days' and 'cannot remain ... more than 180 days in any 12-month period'; the Colombian sources (PTP page, Res. 3167/2019) say a 90-day PTP and 180 days per calendar year — the Colombian rule controls. Travel advice (gov.uk) adds: yellow-fever vaccination certificate required if arriving from certain countries with transmission risk; Colombian dual nationals must enter and leave on their Colombian document. HELD (batch 4 spot-check, 2026-10-09): rests on a Cancillería press release (11 Sep 2026) about Resolución 12189 de 2026, whose text isn't published; the official compiled visa list still omits Israel. Re-check once the resolution is in the Diario Oficial.",
+    "legal_source": {
+      "name": "Colombia fortalece sus relaciones con Israel y restablece la exención de visa para viajeros colombianos (11 Sep 2026) – Cancillería",
+      "url": "https://www.cancilleria.gov.co/sala-de-prensa/noticias/colombia-fortalece-sus-relaciones-con-israel-y-restablece-la-exencion-de-visa-para-viajeros-colombianos"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "nationality": "MY",
+    "destination": "AR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport (embassy advises at least 6 months' validity on entry and 2 blank pages)"
+    ],
+    "notes": "The Argentine Embassy in Malaysia states: 'Malaysian citizens are not required a Tourist visa to visit Argentina for up to thirty (30) days. In case you are Malaysian and plan to visit Argentina for more than thirty (30) days, you should apply for a visa' (tourist visa fee USD 150, stay up to 90 days). That page was last updated 28/04/2022; the current DNM Régimen de Visas table (read 2026-10-09) agrees that Malaysian ordinary passports need no visa. 30 days is shorter than most nationalities' 90. Health insurance: Decreto 366/2025 requires a sworn declaration of trip purpose and health insurance, but only 'una vez reglamentada su implementación' (art. 123 bis); no regulation found as of 2026-10-09. HELD (batch 4 spot-check, 2026-10-09): the only source is an Argentine embassy page last updated 28/04/2022; needs a current official source for the 30-day stay.",
+    "legal_source": {
+      "name": "Embassy of the Argentine Republic in Malaysia — Tourism Visas",
+      "url": "https://emsia.cancilleria.gob.ar/en/node/51906"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "nationality": "CN",
+    "destination": "AR",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Argentine tourist visa from a consulate — OR a valid US visa of similar category / valid US Green Card (visa-free up to 30 days)"
+    ],
+    "notes": "Chinese ordinary-passport holders need a tourist visa from an Argentine consulate (DNM Régimen de Visas: 'REQUIERE VISA'). Exception — Resolución 316/2025 (Vicejefatura de Gabinete del Interior, Boletín Oficial 21/07/2025), art. 1: entry without a consular visa or AVE is allowed with a valid US visa of a similar category, for tourism (art. 24 a) Law 25.871) or business, 'con un plazo de permanencia máximo autorizado de hasta TREINTA (30) días'; art. 2: no change of immigration category; stay may be extended once for a similar period after DNM evaluation. The DNM table and the Argentine Consulate in Sydney say that since 15 January 2026 a valid US Green Card also qualifies (Chinese nationals: up to 30 days). Otherwise: consular tourist visa (Cancillería: stay up to 90 days, fee USD 150, passport valid ≥6 months, interview; requirements differ for applications filed in China under a bilateral agreement). Decreto 366/2025 health-insurance declaration not yet enforceable (art. 123 bis). HELD (batch 4 spot-check, 2026-10-09): the exemption terms (stay limit, US-visa/Green Card condition) rest on Boletín Oficial resolutions that couldn't be re-read during the spot-check (site reset connections); re-confirm the resolution text before publishing.",
+    "legal_source": {
+      "name": "Resolución 316/2025 (RESOL-2025-316-APN-VGI#JGM), Boletín Oficial 21/07/2025",
+      "url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/328606/20250721"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "nationality": "IN",
+    "destination": "AR",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Argentine tourist visa from a consulate — OR a valid US visa of similar category / valid US Green Card (visa-free up to 90 days, tourism only)"
+    ],
+    "notes": "Indian ordinary-passport holders need a tourist visa from an Argentine consulate (DNM Régimen de Visas: 'REQUIERE VISA'). Exception — Resolución 353/2025 (Boletín Oficial 27/08/2025), art. 1: entry without a consular visa or AVE with a valid US visa of a similar category, verified with the authorities, as a tourist, 'con un plazo de hasta NOVENTA (90) días de permanencia'; art. 2: no change of category; stay may be extended once for a similar period after DNM evaluation. Since 15 January 2026 a valid US Green Card also qualifies (DNM table 'Green CARD (EEUU): HABILITADO'; Argentine Consulate in Sydney). Otherwise: consular tourist visa (Cancillería: stay up to 90 days, fee USD 150, passport valid ≥6 months, 2 photos, FSV form, proof of funds, return ticket booking, hotel booking, interview). Decreto 366/2025 health-insurance declaration not yet enforceable (art. 123 bis). HELD (batch 4 spot-check, 2026-10-09): the exemption terms (stay limit, US-visa/Green Card condition) rest on Boletín Oficial resolutions that couldn't be re-read during the spot-check (site reset connections); re-confirm the resolution text before publishing.",
+    "legal_source": {
+      "name": "Resolución 353/2025 (RESOL-2025-353-APN-VGI#JGM), Boletín Oficial 27/08/2025",
+      "url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/330397/20250827"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "nationality": "IL",
+    "destination": "JO",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "NEEDS VERIFICATION. Israel is not on Jordan's Ministry of Interior restricted-nationality list, but Israeli passport holders appear to face specific rules that only secondary sources describe: an Israeli news site (ias.co.il) reports Israelis must now apply at least 48 hours in advance for entry via the Arava/Wadi Araba crossing, with a JOD 70 visa waived for stays of 2+ nights; other reports mention fee waivers for short Eilat–Aqaba visits and restrictions on which crossings Israelis may use. No gov.il, Israel Airports Authority or Jordanian government page stating the current rule for Israeli citizens was found. The requirement value above is a placeholder, not a finding.",
+    "legal_source": {
+      "name": "Ministry of Interior (Jordan) — Restricted and Non Restricted Countries",
+      "url": "https://moi.gov.jo/EN/Pages/Restricted_and_Non_Restricted_Countries_Nationalities"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "nationality": "IL",
+    "destination": "QA",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Not confirmed"
+    ],
+    "notes": "Not verified. Israel does not appear in any of MOI's on-arrival lists (43-country 90-day, 39-country 30-day, Qatar-Oman joint, Pakistan/India/Thailand, Ukraine, Iran, Belarus), and VisitQatar's nationality wizard has no Israel option. Whether Israeli ordinary passport holders can get a Hayya e-visa at all, or need a special entry permit, was not found on a primary source. Needs: an MOI/Hayya statement or a Qatar embassy page on Israeli passport holders.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found; Qatar's official authority page",
+      "url": "https://portal.moi.gov.qa/qatarvisas/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
   }
 ]

@@ -3045,3 +3045,48 @@ Both rows remain `needs_verification`; no verdict is publishable.
 - **Not found:** the PF "ato do dirigente máximo" defining the migratory year
   (Portaria 18/2020 DIREX is only a COVID deadline reset). The PF
   "prorrogar-estada-no-brasil" page still links only the 2020 table.
+
+## Done (2026-10-09/10) — batch 4: eight new destinations
+
+Promoted to /data (42 destinations now): Sri Lanka (LK), Peru (PE), Dominican
+Republic (DO), Colombia (CO), Argentina (AR), Jordan (JO), Costa Rica (CR),
+Qatar (QA) — 169 entry rows and 76 customs rows. One research agent per
+destination (shared brief); the three riskiest claims of each were
+spot-checked against the official page before merging. Held rows are in
+data/UNVERIFIED with what's missing in their notes.
+
+Spot-check decisions (made at merge, not by the research agents):
+- **IL→CO held**: rests on a Cancillería press release (11 Sep 2026) about
+  Resolución 12189 de 2026; the resolution text isn't published and the
+  official compiled list still omits Israel.
+- **MY→AR held**: only source is an Argentine embassy page dated 2022-04-28.
+- **CN→AR, IN→AR held**: the US-visa / Green Card exemption terms rest on
+  Boletín Oficial resolutions (316/2025, 353/2025) that couldn't be re-read
+  during the spot-check (connection resets). Re-read before publishing.
+- **Jordan stay length not published**: the MOI fee table lists visa
+  *validity* tiers (3 months single entry JOD 40 …), not a stay length, and
+  traveller governments disagree (Japan 90 days; UK "valid for 3 months";
+  France/Spain 1 month). Rows use `visa_on_arrival` with no day count.
+
+Still open, by destination:
+- LK: meat/dairy, e-cigarettes, weapons (lawnet.gov.lk certificate mismatch),
+  CBD, insulin/GLP-1 pens. ETA extension conflict (270 days vs 6 months) noted.
+- PE: controlled medication (only a 2001 terminal-patient provision), cannabis,
+  e-cigarettes. gob.pe blocks WebFetch (HTTP 418) — curl with a browser UA works.
+- DO: e-cigarettes (Ley 16-19 not readable on an official domain).
+  migracion.gob.do blocks curl (403) but renders in Playwright.
+- CO: controlled + injectable medication, e-cigarettes, CBD. Weapons and
+  drones rows rest on travel.gc.ca; food rows on a 2017 ICA notice.
+- AR: alcohol and tobacco (customs gives only a USD 500 value allowance),
+  prescription/injectable medication (ANMAT page 500/403), e-cigarettes (ban
+  repealed 4 May 2026; traveller rule unknown), drones. Decree 366/2025's
+  insurance declaration isn't enforceable until regulated.
+- JO: cash (USD 10k / JOD 10k / JOD 15k conflict), all medication rows,
+  e-cigarettes, meat/dairy, fresh produce. customs.gov.jo returns HTTP 451.
+- CR: cannabis/CBD, meat/dairy, fresh produce, e-cigarettes, drones.
+  migracion.go.cr unreachable; the visa directive (AJ-484-11-2025, La Gaceta
+  17 Nov 2025) was read from icoder.go.cr's copy of the Gazette edition.
+- QA: tobacco (customs PDF text garbled: 200 vs 400 cigarettes), insulin/GLP-1,
+  meat/dairy other than pork, fresh produce. portal.moi.gov.qa needs a headless
+  browser session at /qatarvisas/ (trailing slash).
+- Israel (IL) is held for CO, JO and QA.

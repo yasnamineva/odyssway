@@ -55,6 +55,15 @@ export const photos = {
   "dest-al": { width: 1280, height: 853, author: null, page: "https://pixabay.com/photos/saranda-albania-beach-2798899/" },
   "dest-cy": { width: 1280, height: 853, author: "instagramfotografin", page: "https://pixabay.com/photos/cyprus-pafos-sea-lake-rauh-4135015/" },
   "dest-sa": { width: 1280, height: 853, author: "abdullah_shakoor", page: "https://pixabay.com/photos/khobar-saudi-arabia-east-gulf-2224144/" },
+  // Destinations added in research batch 4 (2026-10).
+  "dest-co": { width: 1280, height: 853, author: "makalu", page: "https://pixabay.com/photos/colombia-cartagena-city-4936995/" },
+  "dest-cr": { width: 1280, height: 960, author: "purpledawn", page: "https://pixabay.com/photos/volcano-costa-rica-mountain-arenal-672304/" },
+  "dest-do": { width: 1280, height: 934, author: "dezalb", page: "https://pixabay.com/photos/punta-cana-bavaro-beach-1808453/" },
+  "dest-pe": { width: 1280, height: 960, author: "jstarj", page: "https://pixabay.com/photos/machu-pichu-peru-inca-andes-772355/" },
+  "dest-ar": { width: 1280, height: 960, author: "pierobruno", page: "https://pixabay.com/photos/casa-rosada-argentina-25-de-mayo-78242/" },
+  "dest-lk": { width: 1280, height: 853, author: "adamhilltravel", page: "https://pixabay.com/photos/sigiriya-lion-rock-sri-lanka-asia-3607590/" },
+  "dest-jo": { width: 1280, height: 720, author: "plukje", page: "https://pixabay.com/photos/jordan-petra-holiday-middle-east-181912/" },
+  "dest-qa": { width: 1280, height: 850, author: "leafwriter", page: "https://pixabay.com/photos/qatar-doha-architecture-travel-3853815/" },
   // Blog posts.
   "blog-ees": { width: 1280, height: 853, author: null, page: "https://pixabay.com/photos/airport-tourism-flying-air-traffic-1515431/" },
   "blog-eta": { width: 1280, height: 853, author: "stocksnap", page: "https://pixabay.com/photos/window-airplane-airline-travel-2600716/" },

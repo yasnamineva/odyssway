@@ -708,7 +708,7 @@ breadth here — not an assumption to build the rest of the strategy on.
   destinations), overstay-penalties pages, bilateral-agreements pages (verified
   rows only), Pro gating + Stripe, locales (bg, tr, sr) with hreflang. Continue
   expanding `entry-requirements.json`/`customs-items.json` destination coverage —
-  grown since Phase 1.5's original 16 to **25 destinations** and, as of 2026-09,
+  grown since Phase 1.5's original 16 to **25 destinations** (42 as of 2026-10-10, after batch 4 added Sri Lanka, Peru, the Dominican Republic, Colombia, Argentina, Jordan, Costa Rica and Qatar) and, as of 2026-09,
   **17 nationalities** (added China and India, the first two Annex-I/Schengen-visa-
   required nationalities alongside the original 15 Annex-II/visa-exempt ones).
   Current active focus (2026-09-11): item-level depth within already-covered

@@ -8949,5 +8949,2103 @@
     "verified_at": "2026-10-02",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "alcohol-lk",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "whisky",
+      "vodka",
+      "gin",
+      "rum",
+      "duty free alcohol"
+    ],
+    "destination": "LK",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Tourists: two regular-size bottles of wine and one and a half litres of spirits, duty-free.",
+      "quantity": "2 bottles wine + 1.5 L spirits"
+    },
+    "notes": "Sri Lanka Customs' passenger guide lists the tourist exemption as 'Two regular-size bottles of wine and one and a half liters of spirits' (plus toilet water up to a quarter litre and a small quantity of perfume and souvenirs up to US$250). The Passenger Services Directorate page states the foreigner limit as '1½ litres' of alcoholic beverages (residents 2½ litres) and adds that 'All liquor should either be purchased from Sri Lanka Duty Free shops or brought from abroad on the day of arrival. Liquor sent as Unaccompanied Baggage will not be allowed free of duty.' Excess is taxed at normal rates.",
+    "legal_source": {
+      "name": "Travellers — Passenger Guide, Sri Lanka Customs",
+      "url": "https://www.customs.gov.lk/personal/travellers/"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-lk",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "cigarillos",
+      "beedi",
+      "bidi",
+      "snuff",
+      "rolling tobacco"
+    ],
+    "destination": "LK",
+    "category": "tobacco",
+    "verdict": "prohibited",
+    "notes": "Sri Lanka Customs' Passenger Services Directorate page states: 'Cigarettes, Cigars, Beedies and Snuff are not allowed to be imported to Sri Lanka as personal baggage (accompanied or unaccompanied).' There is no duty-free tobacco allowance — the tourist exemption in the Customs passenger guide lists only clothing, wine/spirits, toilet water, perfume and souvenirs. Other forms of tobacco (e.g. loose pipe tobacco) are not named on the page; e-cigarettes are not addressed (see unverified).",
+    "legal_source": {
+      "name": "Passenger Services Directorate — Sri Lanka Customs",
+      "url": "https://www.customs.gov.lk/about-us/directorates-and-divisions/passenger-services-directorate/"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-lk",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "foreign currency",
+      "dollars",
+      "euros",
+      "banknotes",
+      "currency declaration"
+    ],
+    "destination": "LK",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declare to Customs on arrival if you bring in more than US$15,000 (or equivalent); you receive a currency declaration receipt. Declare when leaving if you take out more than US$10,000.",
+      "quantity": "> US$15,000 in / > US$10,000 out"
+    },
+    "notes": "Sri Lanka Customs: 'Any passenger may bring in or take out any amount of money in the form of currency' provided it is legally acquired. Bringing in currency exceeding US$15,000 or equivalent 'Must be declared to Customs — a currency declaration receipt will be issued'. Taking out currency exceeding US$10,000 must be declared. If you want to take previously brought-in currency back out, declare it on arrival even if it is below US$15,000. The Customs passenger guide also lists foreign currencies, gold jewellery and gems among items to declare to the Customs Arrival officer. GOV.UK separately notes you cannot transfer money without an exchange control permit from the Central Bank of Sri Lanka.",
+    "legal_source": {
+      "name": "Passenger Services Directorate — Sri Lanka Customs",
+      "url": "https://www.customs.gov.lk/about-us/directorates-and-divisions/passenger-services-directorate/"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-lk",
+    "names": [
+      "prescription medication",
+      "prescription medicine",
+      "medicine",
+      "medication",
+      "pills",
+      "tablets",
+      "personal medication",
+      "prescription drugs"
+    ],
+    "destination": "LK",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Personal medicine without prior NMRA approval: the quantity needed for your stay or up to 90 days, whichever is less, in the original container (or labelled with name, strength and instructions); show medical records or prescription when asked.",
+      "quantity": "length of stay, max 90 days' supply"
+    },
+    "notes": "NMRA 'Instruction for travelers': 'A person travelling to Sri Lanka can carry medicine for his personal use, without prior approval of the NMRA' under these conditions: the quantity of any single medicine for the duration of the stay or up to ninety days, whichever is less; prior NMRA approval for quantities exceeding a 90-day requirement; medicine 'administered through intramuscular or intravenous route is not permitted'; 'The medicine specified in Schedule III is not permitted'; original container or appropriate labelling; medical records or prescription produced when necessary. For medicines not registered/available in Sri Lanka, NMRA issues a personal user Letter of Authorization (prescription, request letter, ID copy, prescriber-signed form; max 100 doses; no fee; email pa5@nmra.gov.lk). The NMRA page carries no visible date.",
+    "legal_source": {
+      "name": "Bringing Personal Medicines into Sri Lanka — National Medicines Regulatory Authority (NMRA)",
+      "url": "https://www.nmra.gov.lk/announcements/bringing-personal-medicines-into-sri-lanka"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-lk",
+    "names": [
+      "controlled medication",
+      "narcotic medication",
+      "psychotropic medication",
+      "dangerous drugs",
+      "opioids",
+      "strong painkillers",
+      "controlled substances"
+    ],
+    "destination": "LK",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "NMRA's traveller instruction excludes 'The medicine specified in Schedule III' from the personal-medicine allowance ('not permitted'), and any quantity above a 90-day supply needs prior NMRA approval. Separately, the Poisons, Opium and Dangerous Drugs Ordinance (s.54A(c)) makes it an offence, 'except as permitted by ... the provisions of this Chapter or a licence of the Director', to import any dangerous drug listed in Part III of the Third Schedule above the amounts set there, with severe penalties (s.54A(a) sets death or life imprisonment for manufacturing heroin, cocaine, morphine or opium). We could not find the content of NMRA's 'Schedule III' on an official page, so we cannot say which specific drugs (e.g. ADHD stimulants, benzodiazepines, codeine) are excluded. If your medicine is a narcotic or psychotropic, contact NMRA (info@nmra.gov.lk, +94 11 2698896) before travel. Sources: NMRA traveller page (https://www.nmra.gov.lk/announcements/bringing-personal-medicines-into-sri-lanka) and the Ordinance text published by NMRA (https://cdn.prod.website-files.com/666d0695ca3ba7fa496a5068/66d0118a99a826f61299405c_podd_drugs_ordinance_06.pdf).",
+    "legal_source": {
+      "name": "Bringing Personal Medicines into Sri Lanka — National Medicines Regulatory Authority (NMRA)",
+      "url": "https://www.nmra.gov.lk/announcements/bringing-personal-medicines-into-sri-lanka"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "injectable-medication-lk",
+    "names": [
+      "injectable medication",
+      "injection",
+      "injections",
+      "intramuscular",
+      "intravenous",
+      "iv medication",
+      "syringe medication"
+    ],
+    "destination": "LK",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "NMRA's traveller instruction states: 'The medicine administered through intramuscular or intravenous route is not permitted' under the no-prior-approval personal allowance. The page does not mention subcutaneous injectables (such as insulin pens or GLP-1 pens) either way, so this row does not cover them — ask NMRA (info@nmra.gov.lk) before travelling with any injectable. For an intramuscular/intravenous medicine you need, NMRA's personal-user Letter of Authorization route (prescription, request letter, ID, prescriber-signed form) is the official channel, though the page does not say explicitly that it applies to travellers' IM/IV medicines.",
+    "legal_source": {
+      "name": "Bringing Personal Medicines into Sri Lanka — National Medicines Regulatory Authority (NMRA)",
+      "url": "https://www.nmra.gov.lk/announcements/bringing-personal-medicines-into-sri-lanka"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-lk",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "ganja",
+      "hashish",
+      "hash",
+      "bhang",
+      "hemp",
+      "cannabis seeds"
+    ],
+    "destination": "LK",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Poisons, Opium and Dangerous Drugs Ordinance s.28: 'No poppy plant, coca plant, or hemp plant [Cannabis sativa L], or seeds, pods, leaves, flowers, or any part of any such plant or any preparation thereof, shall be imported or brought into or exported from Sri Lanka.' s.29 bans possession or use of hemp resin and preparations 'commonly known as bhang, hashish or ganja' except as licensed (s.30 exempts licensed galenical preparations and hemp rope/fibre). GOV.UK travel advice: 'Illegal drugs, including cannabis, carry severe penalties' and 'You should expect a long jail sentence and heavy fines', including in transit; airports use technology to detect illegal items. Medical-cannabis prescriptions from other countries are not recognised anywhere in these sources. CBD products are not specifically addressed by an official traveller page (see unverified).",
+    "legal_source": {
+      "name": "Poisons, Opium and Dangerous Drugs Ordinance (as amended to Act No. 26 of 1986), ss. 28–29 — text published by NMRA",
+      "url": "https://cdn.prod.website-files.com/666d0695ca3ba7fa496a5068/66d0118a99a826f61299405c_podd_drugs_ordinance_06.pdf"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-lk",
+    "names": [
+      "fruit",
+      "fresh fruit",
+      "apples",
+      "grapes",
+      "mangoes",
+      "peaches",
+      "kiwi",
+      "plants",
+      "seeds",
+      "cuttings",
+      "flowers",
+      "dried fruit",
+      "vegetables"
+    ],
+    "destination": "LK",
+    "category": "food_plant",
+    "verdict": "prohibited",
+    "notes": "Sri Lanka Customs: 'All fruits including Apples, Grapes, Mangoes, Peaches, Kiwi etc. are not allowed to be imported by air in personal baggage. All such items will be referred to the plant quarantine unit at BIA and will be destroyed.' Plants need a permit from the Department of Agriculture – Plant Quarantine Unit (Katunayake) obtained before leaving for Sri Lanka, plus a phytosanitary certificate from the exporting country; otherwise they are detained. Some plants (Orchids, Adeniums, Hoya, Ixora) are allowed with a licence; Anthurium, palm, Ficus, citrus and conifer families are not allowed. 'Any part of a plant (including fresh or dried fruits, leaves, seeds, twigs, roots etc.)' is restricted without prior approval. The page does not specifically address vegetables or processed plant foods.",
+    "legal_source": {
+      "name": "Passenger Services Directorate — Sri Lanka Customs",
+      "url": "https://www.customs.gov.lk/about-us/directorates-and-divisions/passenger-services-directorate/"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-lk",
+    "names": [
+      "drone",
+      "drones",
+      "quadcopter",
+      "uav",
+      "unmanned aircraft",
+      "dji",
+      "model aircraft"
+    ],
+    "destination": "LK",
+    "category": "drones",
+    "verdict": "depends",
+    "notes": "CAASL: the drone import procedure (MOD, CAASL, TRCSL and Import & Export Control Department no-objections) 'is exclusively relevant to drones imported into the country for permanent use. For drones brought in by visiting tourists for temporary use within the country, there is no need to adhere to the outlined process. Instead, for such visitors, please proceed to submit a request for flying approval through our online portal.' So you may bring a drone for temporary use, but you need CAASL flying approval before flying. CAASL lists minimum third-party liability cover by take-off weight (not required at 0.25 kg or below; LKR 100,000 above 0.25–0.9 kg; LKR 400,000 above 0.9–4 kg; higher above). Its model-aircraft procedure starts with a mandatory security clearance from the Ministry of Defence. CAASL publishes restricted and archaeological area maps. GOV.UK advises not to fly drones near military bases, government buildings or VIP vehicles.",
+    "legal_source": {
+      "name": "Drones — Civil Aviation Authority of Sri Lanka (CAASL)",
+      "url": "https://caa.lk/en/drones"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "gems-gold-lk",
+    "names": [
+      "gems",
+      "gemstones",
+      "precious stones",
+      "gold",
+      "gold jewellery",
+      "jewelry",
+      "jewellery",
+      "gold bars",
+      "ingots"
+    ],
+    "destination": "LK",
+    "category": "other",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declare gemstones to Customs on arrival (US$200 service fee per person). Only bona fide personal gold jewellery in reasonable quantity; no ingots, gold biscuits or rough/unfinished jewellery.",
+      "quantity": "gems: declare + US$200 fee"
+    },
+    "notes": "Sri Lanka Customs: 'If a person wishes to import gemstones as passenger baggage, it should be declared to Customs. A service fee of USD 200 will be charged per person.' Exporting gemstones must go through the National Gem and Jewellery Authority; otherwise it is treated as smuggling. 'Only bona fide personal jewellery in reasonable quantity is allowed to be imported and exported'; 'Rough and unfinished jewellery, Ingots and Gold Biscuits are not allowed to be imported or exported as passenger baggage.' Antiques over 100 years old need Department of Archaeology approval to export.",
+    "legal_source": {
+      "name": "Passenger Services Directorate — Sri Lanka Customs",
+      "url": "https://www.customs.gov.lk/about-us/directorates-and-divisions/passenger-services-directorate/"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-pe",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "licor",
+      "whisky",
+      "vodka"
+    ],
+    "destination": "PE",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Travellers over 18 may bring up to 3 litres of liquor duty-free without declaring it.",
+      "quantity": "3 L (18+)"
+    },
+    "notes": "SUNAT lists 'Licor (3 litros)' among goods you need not declare, 'solo para mayores de 18 años'. Anything over that must be declared on the Declaración Jurada de Equipaje (red channel) and is taxed. Undeclared goods are seized; to recover them you pay the duties plus a fine of 50% of their customs value (SUNAT). Goods beyond the free list are taxed at a single 12% rate up to US$1,000 per trip (max US$3,000 per calendar year, per SUNAT's 'Ingresar equipaje al país' page); above that, normal import duties apply. Separately, foreign-made drinks labelled 'pisco' are prohibited (see pisco row).",
+    "legal_source": {
+      "name": "Bienes y artículos no obligados a declarar y que puedes ingresar libres de impuestos al Perú — SUNAT (gob.pe, last changed 14 Jan 2024)",
+      "url": "https://www.gob.pe/15286-bienes-y-articulos-no-obligados-a-declarar-y-que-puedes-ingresar-libres-de-impuestos-al-peru"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-pe",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "rolling tobacco",
+      "cigarillos"
+    ],
+    "destination": "PE",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Travellers over 18: 20 packs of cigarettes, or 50 cigars, or 250 g of cut/loose smoking tobacco, duty-free.",
+      "quantity": "20 packs or 50 cigars or 250 g (18+)"
+    },
+    "notes": "SUNAT's duty-free list: 'Cajetillas de cigarrillos (20 unidades). Cigarros puros (50 unidades) o tabaco picado o en hierbas para fumar (250 gramos)', only for over-18s. SUNAT does not state the number of cigarettes per pack. The 2017 SUNAT declaration form shows the three as alternatives ('o'). Undeclared goods are seized; to recover them you pay the duties plus a fine of 50% of their customs value (SUNAT). Goods beyond the free list are taxed at a single 12% rate up to US$1,000 per trip (max US$3,000 per calendar year, per SUNAT's 'Ingresar equipaje al país' page); above that, normal import duties apply.",
+    "legal_source": {
+      "name": "Bienes y artículos no obligados a declarar y que puedes ingresar libres de impuestos al Perú — SUNAT (gob.pe, last changed 14 Jan 2024)",
+      "url": "https://www.gob.pe/15286-bienes-y-articulos-no-obligados-a-declarar-y-que-puedes-ingresar-libres-de-impuestos-al-peru"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-pe",
+    "names": [
+      "cash",
+      "money",
+      "currency",
+      "dollars",
+      "travellers cheques",
+      "bearer instruments",
+      "efectivo"
+    ],
+    "destination": "PE",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declare cash and/or negotiable bearer instruments over US$10,000 (or equivalent). Carrying more than US$30,000 into or out of Peru is not allowed.",
+      "quantity": "> US$10,000 declare; > US$30,000 prohibited"
+    },
+    "notes": "SUNAT: travellers entering or leaving must declare cash and/or negotiable financial instruments (traveller's cheques, bearer cheques and promissory notes, etc.) 'siempre que sea un monto mayor a US$ 10 000,00'; 'No está permitido ingresar o salir del país llevando dinero y/o instrumentos financieros negociables por más de US$ 30 000,00'. Use the Declaración Jurada de Equipaje plus the cash declaration form at the SUNAT (Aduanas) office after baggage claim. Failing to declare or declaring falsely means temporary retention of the full amount and a penalty of 30% of the undeclared value. Conflict: SUNAT's 'Bienes o artículos que debes declarar' page (gob.pe/15285) writes the ceiling as 'S/ 30,000.00' (soles); the dedicated cash page and SUNAT's declaration form both say US$30,000, which we treat as correct.",
+    "legal_source": {
+      "name": "Ingresar y salir con dinero del país — SUNAT (gob.pe, last changed 23 Sep 2019)",
+      "url": "https://www.gob.pe/1116-ingresar-equipaje-al-pais-ingresar-y-salir-con-dinero-del-pais"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-pe",
+    "names": [
+      "prescription medication",
+      "medicine",
+      "medication",
+      "pills",
+      "personal medication",
+      "medicamentos"
+    ],
+    "destination": "PE",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Medicines for your own personal use are treated as personal effects and need not be declared.",
+      "quantity": "Personal use"
+    },
+    "notes": "SUNAT lists 'medicamentos' among personal-use goods that pay no tax and need no baggage declaration 'siempre que sean para tu uso personal'. Medical aids and equipment you need (wheelchairs, crutches, blood-pressure, temperature or glucose meters, etc.) are also free in a 'reasonable quantity for your trip'. Narcotic and psychotropic medicines are controlled substances in Peru (DIGEMID, D.S. 023-2001-SA) and are NOT covered by this row — see the controlled-medication entry. SUNAT does not state a prescription requirement for accompanied baggage; carrying your prescription is prudent but not a cited rule.",
+    "legal_source": {
+      "name": "Bienes y artículos no obligados a declarar y que puedes ingresar libres de impuestos al Perú — SUNAT (gob.pe, last changed 14 Jan 2024)",
+      "url": "https://www.gob.pe/15286-bienes-y-articulos-no-obligados-a-declarar-y-que-puedes-ingresar-libres-de-impuestos-al-peru"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "injectable-medication-pe",
+    "names": [
+      "insulin",
+      "insulin pen",
+      "injectable medication",
+      "glucose meter",
+      "diabetes supplies"
+    ],
+    "destination": "PE",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Injectable medicines for personal use (e.g. insulin) and the medical devices you need (e.g. glucose meters) can be brought as personal goods.",
+      "quantity": "Personal use / reasonable quantity"
+    },
+    "notes": "Same SUNAT rule as personal medication: 'medicamentos' for personal use need no declaration, and 'medios auxiliares y equipos necesarios para tu control médico... medidores de presión arterial, temperatura o glucosa, entre otros' are allowed in a quantity 'razonable para tu viaje' for travellers who are ill or disabled. SUNAT does not name specific brands (so no GLP-1 brand names are listed here) and does not mention syringes or needles specifically.",
+    "legal_source": {
+      "name": "Bienes y artículos no obligados a declarar y que puedes ingresar libres de impuestos al Perú — SUNAT (gob.pe, last changed 14 Jan 2024)",
+      "url": "https://www.gob.pe/15286-bienes-y-articulos-no-obligados-a-declarar-y-que-puedes-ingresar-libres-de-impuestos-al-peru"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-pe",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "sausage",
+      "ham",
+      "salami",
+      "pork",
+      "honey",
+      "milk",
+      "eggs",
+      "jamón"
+    ],
+    "destination": "PE",
+    "category": "food_animal",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Must declare. Packed and labelled, from countries without sanitary restrictions: pasteurised dairy up to 5 kg (or one cheese up to 10 kg); sausages/cured meats up to 10 kg; canned ready meals up to 2 kg; honey, royal jelly, pollen up to 1 kg. ALL pork products are banned.",
+      "quantity": "Dairy 5 kg; sausages 10 kg; canned 2 kg; honey 1 kg; no pork"
+    },
+    "notes": "SENASA: every passenger must declare animal products on the passenger declaration and take meats, sausages, eggs and other livestock products to the SENASA office in the arrivals hall; 'SOLO PODRÁN INGRESAR AL PERÚ LOS PRODUCTOS DECLARADOS Y AUTORIZADOS POR EL SENASA'. Without an import permit, allowed only if properly packed and labelled and not from countries with sanitary restrictions: 'Lácteos pasteurizados hasta 5 kg. o un solo molde de queso no mayor a 10 kg', 'Embutidos (excepto de origen porcino) hasta 10 Kg', 'Comida rápida enlatada (excepto de porcino) hasta 2 Kg', 'Miel, jalea real, polen hasta 1 Kg'. Pork: Resolución Directoral 0012-2021-MIDAGRI-SENASA-DSA prohibits pig-origin goods entering Peru (African swine fever). In-flight food (cheese, ham, etc.) may not be taken off the plane and is confiscated.",
+    "legal_source": {
+      "name": "¡Amigo viajero! — Servicio Nacional de Sanidad Agraria del Perú (SENASA), gob.pe campaign page (last changed 10 May 2024)",
+      "url": "https://www.gob.pe/institucion/senasa/campa%C3%B1as/6969-amigo-viajero"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-pe",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds",
+      "flowers",
+      "spices",
+      "herbs",
+      "soil",
+      "nuts",
+      "grains"
+    ],
+    "destination": "PE",
+    "category": "food_plant",
+    "verdict": "depends",
+    "limits": {
+      "description": "Declare all plant products. Up to 1 kg each of industrially dried herbs/flowers/fruit and vegetables, ground spices, edible mushrooms, flours, grains and whole spices are allowed after SENASA inspection. Fresh or naturally dried fruit and flowers, wood, live insects and plants need prior SENASA authorisation. Soil is not allowed.",
+      "quantity": "1 kg of listed dried/processed items"
+    },
+    "notes": "SENASA 'Amigo viajero': products allowed in accompanied baggage and only checked by the SENASA inspector, 'Sólo hasta 1 kg': industrially dried medicinal and aromatic herbs; industrially dried cut flowers and foliage; industrially dried fruit and vegetables; ground herbs and spices; fresh or dried edible mushrooms; flours, starches, semolina; grains; whole spices. More than that requires meeting SENASA rules before travel. 'Los productos frescos o secos naturalmente (frutas y flores), maderas, insectos vivos, plantas o partes de ellas... requieren de una autorización previa por parte del SENASA y no pueden ingresar al país en tu equipaje sin cumplir los controles fitosanitarios. No está autorizado el ingreso de suelo o tierra.' Declare plant products on the customs declaration. Queries: scv@senasa.gob.pe. SUNAT also lists 'productos agropecuarios' as restricted goods.",
+    "legal_source": {
+      "name": "¡Amigo viajero! — Servicio Nacional de Sanidad Agraria del Perú (SENASA), gob.pe campaign page (last changed 10 May 2024)",
+      "url": "https://www.gob.pe/institucion/senasa/campa%C3%B1as/6969-amigo-viajero"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-pe",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition",
+      "rifle",
+      "pistol",
+      "hunting rifle"
+    ],
+    "destination": "PE",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "Restricted: arms and ammunition need prior authorisation from the competent Peruvian authority and must be declared."
+    },
+    "notes": "SUNAT lists 'Armas y municiones' among 'Mercancía restringida que requiere autorización de una o más entidades competentes para su ingreso', which must be declared on the Declaración Jurada de Equipaje. SUNAT's page does not name the authorising body or set out the procedure; without the authorisation the item can be held in customs custody (SUNAT 'Ingresar equipaje al país'). We have not verified the authorising agency's traveller procedure.",
+    "legal_source": {
+      "name": "Bienes o artículos que debes declarar al entrar al Perú — SUNAT (gob.pe, last changed 14 Jan 2024)",
+      "url": "https://www.gob.pe/15285"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-pe",
+    "names": [
+      "drone",
+      "drones",
+      "rpas",
+      "quadcopter",
+      "uav",
+      "dji"
+    ],
+    "destination": "PE",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Recreational drones under 2 kg take-off mass fall outside Peru's RPAS regulation. Heavier drones, or any non-recreational use, must be registered with the DGAC (within 30 working days of acquisition) and non-recreational operation needs DGAC licences.",
+      "quantity": "< 2 kg recreational: outside the regulation"
+    },
+    "notes": "D.S. N° 012-2026-MTC (Regulation of Law 30740, published 29 May 2026) applies to national and foreign persons operating RPAS. Art. 3.2(b) excludes 'La Aeronave Pilotada a Distancia de uso recreativo o aerodeportivo que tenga una masa máxima de despegue inferior a dos (2) kilogramos'. Art. 8: RPA/RPAS used in the Open or Specific category must be entered in the DGAC's Register of Remotely Piloted Aircraft (free, per NTC 001-2015) within 30 working days of acquisition. Art. 25/30: operations other than recreational use need an Open-category operating licence and a remote-pilot licence; the licence form asks for a DNI, passport or carné de extranjería. The regulation's Open/Specific-category provisions take effect only once the DGAC updates its technical rules (within two years), so NTC 001-2015 still governs in the meantime. Flights in Natural Protected Areas are supervised together with SERNANP (art. 7.2). This row covers flying rules; we found no SUNAT traveller rule specific to bringing a drone into Peru.",
+    "legal_source": {
+      "name": "Decreto Supremo N° 012-2026-MTC — Reglamento de la Ley N° 30740 (RPAS), El Peruano, 29 May 2026",
+      "url": "https://busquedas.elperuano.pe/dispositivo/NL/2520332-3"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "pisco-pe",
+    "names": [
+      "pisco",
+      "foreign pisco",
+      "chilean pisco"
+    ],
+    "destination": "PE",
+    "category": "alcohol",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Drinks made abroad and labelled 'pisco' may not be brought into Peru."
+    },
+    "notes": "SUNAT lists 'Bebidas fabricadas en el extranjero con la denominación “pisco”' as 'Mercancía prohibida de ingresar al territorio nacional'; prohibited goods are seized. Same list: used clothing and footwear not owned by the traveller, and used car parts.",
+    "legal_source": {
+      "name": "Bienes o artículos que debes declarar al entrar al Perú — SUNAT (gob.pe, last changed 14 Jan 2024)",
+      "url": "https://www.gob.pe/15285"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-do",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "rum",
+      "whisky",
+      "vodka",
+      "booze",
+      "duty free alcohol"
+    ],
+    "destination": "DO",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Adult passengers may bring up to 5 litres of alcoholic drinks (wine, beer, rum, whisky or other liquor) free of duty.",
+      "quantity": "5 L"
+    },
+    "notes": "Dominican Customs (DGA) Manual del Viajero, FAQ 1: 'Los pasajeros mayores de edad pueden ingresar hasta 5 litros de bebidas alcohólicas (vino, cerveza, ron, whisky u otro licor) libres de impuestos.' The downloadable manual (PDF, Nov 2025) says the same ('Hasta cinco litros de bebida alcohólica de libre circulación'). Amounts beyond personal-baggage allowances must be declared on the E-Ticket customs section.",
+    "legal_source": {
+      "name": "Dirección General de Aduanas (DGA) — Manual del Viajero (traveller FAQ page)",
+      "url": "https://www.aduanas.gob.do/manual-del-viajero/"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-do",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "cigarillos",
+      "rolling tobacco",
+      "smokes"
+    ],
+    "destination": "DO",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free: 20 packs of cigarettes, OR 25 cigars, OR 200 grams of tobacco (adult passengers).",
+      "quantity": "20 packs or 25 cigars or 200 g"
+    },
+    "notes": "DGA Manual del Viajero, FAQ 2: 'Se permite ingresar, libre de impuestos: 20 cajetillas de cigarrillos, o 25 puros, o 200 gramos de tabaco.' The PDF manual specifies this applies to 'pasajeros mayores de edad'. The allowances are alternatives ('o'), not cumulative. E-cigarettes/vapes are not mentioned by Customs (see unverified).",
+    "legal_source": {
+      "name": "Dirección General de Aduanas (DGA) — Manual del Viajero (traveller FAQ page)",
+      "url": "https://www.aduanas.gob.do/manual-del-viajero/"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-do",
+    "names": [
+      "cash",
+      "money",
+      "currency",
+      "dollars",
+      "euros",
+      "bearer instruments",
+      "cheques",
+      "travellers cheques",
+      "securities"
+    ],
+    "destination": "DO",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Cash of US$10,000 or more (or the equivalent in Dominican pesos or other currency), and bearer securities/instruments, must be declared to Customs on entry or exit using the official form, with documents showing the lawful origin of the funds. No tax is charged for carrying money.",
+      "quantity": "US$10,000"
+    },
+    "notes": "DGA Manual del Viajero: under 'Que sí necesitan declaración aduanera' — 'Dinero en efectivo US$10,000 o su equivalente en pesos dominicanos u otra moneda extranjera, títulos o valores al portador, estás obligado a declararlo ... al momento de tu entrada o salida, utilizando el formulario habilitado ... y presentar los documentos que justifiquen la procedencia lícita'. FAQ 9 says 'No se cobran impuestos por portar dinero' and phrases the trigger as 'más de US$10,000'. Wording conflict on the same page (US$10,000 vs more than US$10,000) — we show the stricter reading: declare at US$10,000 or more. The declaration is part of the E-Ticket.",
+    "legal_source": {
+      "name": "Dirección General de Aduanas (DGA) — Manual del Viajero (traveller FAQ page)",
+      "url": "https://www.aduanas.gob.do/manual-del-viajero/"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-do",
+    "names": [
+      "prescription medication",
+      "medicine",
+      "medication",
+      "pills",
+      "personal medication",
+      "prescription drugs",
+      "tablets"
+    ],
+    "destination": "DO",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Medicines for personal use are allowed, in quantities consistent with the length of your stay and your dosage."
+    },
+    "notes": "DGA Manual del Viajero, FAQ 4: 'Los medicamentos de uso personal están permitidos.' The PDF manual: 'Los medicamentos deben ser de uso personal de conformidad con la estadía y dosis'. The same page lists 'medicinas, sujetas a regulaciones por el ... Ministerio de Salud Pública' among items needing a customs declaration, so declare medicines on the E-Ticket customs section if in doubt. Customs gives no fixed quantity.",
+    "legal_source": {
+      "name": "Dirección General de Aduanas (DGA) — Manual del Viajero (traveller FAQ page)",
+      "url": "https://www.aduanas.gob.do/manual-del-viajero/"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-do",
+    "names": [
+      "controlled medication",
+      "psychotropic",
+      "narcotic medication",
+      "adhd medication",
+      "stimulants",
+      "opioids",
+      "benzodiazepines",
+      "sleeping pills",
+      "painkillers",
+      "controlled substances"
+    ],
+    "destination": "DO",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Controlled or psychotropic medicines for personal use are allowed only with the doctor's prescription that justifies their use during your stay; quantity must match your stay and dosage."
+    },
+    "notes": "DGA Manual del Viajero, FAQ 4: 'En el caso de sustancias controladas o psicotrópicas, debes presentar la receta médica que justifique su consumo durante la estadía.' PDF manual: '...debiendo mostrarse la receta médica, en caso de que se trate de sustancias psicotrópicas.' Customs does not name specific drugs. We could not find a Ministry of Public Health (DIGEMAPS) or DNCD page on travellers' controlled medication, so any extra Ministry authorisation for large quantities or particular substances is unconfirmed. Separately, Customs lists 'sustancias psicotrópicas' without a prescription among prohibited/restricted items, and Canada's advice notes the Dominican Republic's zero-tolerance policy on illegal drugs. Keep medicines in original packaging with the prescription.",
+    "legal_source": {
+      "name": "Dirección General de Aduanas (DGA) — Manual del Viajero (traveller FAQ page)",
+      "url": "https://www.aduanas.gob.do/manual-del-viajero/"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "injectable-medication-do",
+    "names": [
+      "injectable medication",
+      "insulin",
+      "insulin pen",
+      "ozempic",
+      "wegovy",
+      "mounjaro",
+      "glp-1",
+      "semaglutide",
+      "tirzepatide",
+      "epipen",
+      "syringes"
+    ],
+    "destination": "DO",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Covered by the general personal-medication rule: allowed for personal use in quantities consistent with your stay and dosage."
+    },
+    "notes": "Dominican Customs has no injectable-specific rule; its general rule applies: 'Los medicamentos de uso personal están permitidos' and 'deben ser de uso personal de conformidad con la estadía y dosis' (DGA Manual del Viajero, FAQ 4 and PDF manual). Insulin and GLP-1 pens (Ozempic, Wegovy, Mounjaro) are not controlled/psychotropic substances, so the prescription requirement for psychotropics does not expressly apply — but carrying the prescription is sensible. Customs does not mention syringes, needles or cooling packs specifically. Medicines are among items 'sujetas a regulaciones por el Ministerio de Salud Pública' that the page says need a declaration.",
+    "legal_source": {
+      "name": "Dirección General de Aduanas (DGA) — Manual del Viajero (traveller FAQ page)",
+      "url": "https://www.aduanas.gob.do/manual-del-viajero/"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-do",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "edibles",
+      "hashish",
+      "cbd",
+      "cbd oil"
+    ],
+    "destination": "DO",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "No allowance. Drugs are prohibited, and the Dominican Republic has a zero-tolerance policy on illegal drugs including cannabis."
+    },
+    "notes": "DGA Manual del Viajero, FAQ 14 ('¿Qué artículos están prohibidos o restringidos?'): 'La droga, sustancias psicotrópicas, armas de fuego, sustancias contaminantes, y otras que afecten la seguridad nacional.' Canada's travel advice (travel.gc.ca/destinations/dominican-republic, updated 26 May 2026): 'The Dominican Republic has a zero-tolerance policy to illegal drugs, including cannabis. Authorities can impose severe penalties for possession of even a small quantity'; departing travellers may be drug-screened, have luggage searched or be asked to undergo an X-ray. Medical cannabis prescriptions from other countries are not recognised in any source we found. CBD: no official source addresses CBD specifically — treat THC-containing CBD products as cannabis.",
+    "legal_source": {
+      "name": "Dirección General de Aduanas (DGA) — Manual del Viajero (traveller FAQ page)",
+      "url": "https://www.aduanas.gob.do/manual-del-viajero/"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-do",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "sausage",
+      "salami",
+      "ham",
+      "jerky",
+      "eggs",
+      "animal products",
+      "food"
+    ],
+    "destination": "DO",
+    "category": "food_animal",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "All food must be declared on the customs form (E-Ticket). Animal products are subject to agricultural/animal-health rules and may be inspected or seized."
+    },
+    "notes": "DGA Manual del Viajero, FAQ 16: '¿Debo declarar productos de alimentos? Sí, se debe declarar en el formulario correspondiente' — 'ese aspecto es competencia de las autoridades de salud, sanidad vegetal, animal'. The page also lists 'productos agropecuarios, alimentos ... sujetas a regulaciones por el Ministerio de Agricultura o el Ministerio de Salud Pública' as needing declaration. We could not find an official passenger list of which meat/dairy items are banned; the animal-health authority (Dirección General de Ganadería) did not publish one we could reach. Declare and expect possible confiscation.",
+    "legal_source": {
+      "name": "Dirección General de Aduanas (DGA) — Manual del Viajero (traveller FAQ page)",
+      "url": "https://www.aduanas.gob.do/manual-del-viajero/"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-do",
+    "names": [
+      "fruit",
+      "vegetables",
+      "fresh produce",
+      "plants",
+      "seeds",
+      "flowers",
+      "soil",
+      "nuts"
+    ],
+    "destination": "DO",
+    "category": "food_plant",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Plants, agricultural products and food must be declared on the customs form (E-Ticket); they are subject to Ministry of Agriculture rules and plant-quarantine inspection."
+    },
+    "notes": "DGA Manual del Viajero: 'Plantas, productos agropecuarios, alimentos y medicinas, sujetas a regulaciones por el Ministerio de Agricultura o el Ministerio de Salud Pública' are listed under items that DO need a customs declaration; FAQ 16 says foods must be declared on the form. The Ministry of Agriculture runs plant-quarantine inspection at airports, but we found no official passenger list of banned fruits/vegetables. Declare and expect possible confiscation.",
+    "legal_source": {
+      "name": "Dirección General de Aduanas (DGA) — Manual del Viajero (traveller FAQ page)",
+      "url": "https://www.aduanas.gob.do/manual-del-viajero/"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-do",
+    "names": [
+      "firearms",
+      "guns",
+      "ammunition",
+      "rifle",
+      "pistol",
+      "weapons",
+      "hunting rifle"
+    ],
+    "destination": "DO",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Firearms are listed by Customs as prohibited or restricted items; there is no traveller allowance."
+    },
+    "notes": "DGA Manual del Viajero, FAQ 14 ('¿Qué artículos están prohibidos o restringidos?'): 'La droga, sustancias psicotrópicas, armas de fuego, sustancias contaminantes, y otras que afecten la seguridad nacional.' The page lists them as 'prohibidos o restringidos' and does not describe any permit route for tourists; we did not research whether a separate firearm import authorisation exists (e.g. for sport shooting). Do not bring firearms or ammunition without prior written authorisation from the Dominican authorities. Knives, pepper spray and replica weapons are not mentioned.",
+    "legal_source": {
+      "name": "Dirección General de Aduanas (DGA) — Manual del Viajero (traveller FAQ page)",
+      "url": "https://www.aduanas.gob.do/manual-del-viajero/"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-do",
+    "names": [
+      "drone",
+      "drones",
+      "uav",
+      "quadcopter",
+      "dji",
+      "uas",
+      "rpas"
+    ],
+    "destination": "DO",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Flying a drone is regulated by IDAC under RAD 107: the operator and the drone must be registered, prior permits are needed for flights in urban areas or near crowds, restricted zones and height limits apply, and you must keep visual line of sight."
+    },
+    "notes": "IDAC (Instituto Dominicano de Aviación Civil) notice 'Idac advierte sobre uso de drones sin autorización en el Centro Olímpico Juan Pablo Duarte' (2026): 'el Rad 107 establece obligaciones como el registro del operador y del dron, la solicitud previa de permisos para vuelos en áreas urbanas o cercanas a multitudes, el respeto a zonas restringidas y límites de altura, así como la obligación de mantener contacto visual con la aeronave en todo momento.' A separate 2026 IDAC notice banned unauthorised drone flights near all venues of the XXV Central American and Caribbean Games (Santo Domingo, Boca Chica, Baní, San Cristóbal, Bonao, Santiago, Puerto Plata, Punta Cana); misuse can bring administrative sanctions. An older IDAC notice (2024) lists airports, the National Palace, the Ministry of Defence, San Isidro Air Base, the oil refinery, Las Calderas naval base and military camps as restricted zones. Customs does not mention drones; the duty-free electronics allowance lists one camera, two phones, one laptop and one tablet, so a drone could be assessed for duty. No source states a weight threshold under RAD 107 (an older IDAC notice mentioned permits for drones over 4.4 lb under the former RAD-48).",
+    "legal_source": {
+      "name": "IDAC — Idac advierte sobre uso de drones sin autorización en el Centro Olímpico Juan Pablo Duarte (RAD 107)",
+      "url": "https://www.idac.gob.do/es/idac-advierte-sobre-uso-de-drones-sin-autorizacion-en-el-centro-olimpico-juan-pablo-duarte/"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "gifts-electronics-do",
+    "names": [
+      "gifts",
+      "duty free",
+      "laptop",
+      "tablet",
+      "camera",
+      "phone",
+      "electronics",
+      "personal effects",
+      "souvenirs"
+    ],
+    "destination": "DO",
+    "category": "other",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Personal effects are duty-free. Electronics duty-free per traveller: 1 photo/video camera, 2 mobile phones, 1 laptop and 1 tablet, sound devices, 1 musical instrument. Gifts up to US$500 total, usable once every 3 months.",
+      "quantity": "Gifts US$500"
+    },
+    "notes": "DGA Manual del Viajero (FAQ 8, 11, 13) and PDF manual: '1 laptop y 1 tablet (nuevas o usadas). Si llevas una segunda laptop o más, deberás pagar los impuestos'; 'Una cámara fotográfica y de video por viajero. Dos teléfonos celulares'; gifts 'por un valor total de hasta USD$500.00 ... solo puede ser utilizada y aplicada una vez cada (3) meses' (PDF: 2–3 units per gift type, not repeated). Children: a stroller, car seat, playpen and 5 toys each. Personal sports equipment in reasonable, non-commercial quantities is duty-free.",
+    "legal_source": {
+      "name": "Dirección General de Aduanas (DGA) — Manual del Viajero (traveller FAQ page)",
+      "url": "https://www.aduanas.gob.do/manual-del-viajero/"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-co",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "licor",
+      "vino",
+      "cerveza",
+      "whisky",
+      "rum",
+      "aguardiente"
+    ],
+    "destination": "CO",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Counts toward the general USD 2,000 duty-free baggage allowance; no more than 10 units of the same kind (more is treated as a commercial shipment). Excess value pays a 15% single tax.",
+      "quantity": "Within USD 2,000 total; max 10 units of same kind"
+    },
+    "notes": "Decreto 1165 de 2019: Art. 268 – travellers may bring accompanied baggage 'hasta por un valor total de dos mil dólares ... (USD 2.000)' free of the tributo único (minors get a reduced share, Art. 274); Art. 266 – up to 'diez (10) unidades de la misma clase, por viajero' of goods for personal/family use or gifts is not a commercial shipment; Art. 270 – excess pays a 15% ad valorem single tax. No separate litre/carton quota for this product appears in the customs decree: it simply counts toward the general duty-free allowance. Goods above the allowance must be declared on DIAN Form 530; undeclared goods subject to the tax can be seized (Art. 267 par. 2). Separately, gov.uk notes drinking alcohol in public spaces is illegal.",
+    "legal_source": {
+      "name": "Decreto 1165 de 2019 (Régimen de Aduanas), Arts. 266–270 – DIAN normograma",
+      "url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-co",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "cigarillos",
+      "rolling tobacco",
+      "cigarrillos",
+      "tabaco"
+    ],
+    "destination": "CO",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Counts toward the general USD 2,000 duty-free baggage allowance; no more than 10 units of the same kind per traveller. Excess value pays a 15% single tax.",
+      "quantity": "Within USD 2,000 total; max 10 units of same kind"
+    },
+    "notes": "Same legal basis as alcohol: Decreto 1165 de 2019 Arts. 266 (10 units of the same class = not commercial), 268 (USD 2,000 franchise) and 270 (15% single tax on the excess). No separate litre/carton quota for this product appears in the customs decree: it simply counts toward the general duty-free allowance. What counts as one 'unit' (pack vs carton) is not defined in the decree — keep quantities clearly personal. Declare anything over the allowance on DIAN Form 530.",
+    "legal_source": {
+      "name": "Decreto 1165 de 2019 (Régimen de Aduanas), Arts. 266–270 – DIAN normograma",
+      "url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-co",
+    "names": [
+      "cash",
+      "money",
+      "currency",
+      "dollars",
+      "euros",
+      "pesos",
+      "traveller's cheques",
+      "efectivo",
+      "dinero"
+    ],
+    "destination": "CO",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declare cash, Colombian pesos or monetary instruments over USD 10,000 (or equivalent) on DIAN Form 530, both entering and leaving.",
+      "quantity": "Over USD 10,000"
+    },
+    "notes": "DIAN: travellers must file the 'Declaración de Equipaje, de Dinero o Títulos representativos de Dinero – Viajeros' (Form 530) when the amount in foreign currency, Colombian cash or monetary instruments exceeds 'USD 10.000 ... o su equivalente en otras monedas'; amounts up to USD 10,000 need no declaration. DIAN's Form 530 page states the same threshold. Cross-checked: gov.uk ('You can bring up to 10,000 US dollars-worth of any currency ... declare anything above this amount with ... DIAN'). Undeclared excess may be retained by customs (per DIAN Form 530 page; exact sanction not re-read).",
+    "legal_source": {
+      "name": "Trámites aduaneros – Viajeros – DIAN",
+      "url": "https://www.dian.gov.co/tramitesservicios/tramites-y-servicios/Paginas/tramites-aduaneros.aspx"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "goods-allowance-co",
+    "names": [
+      "duty free",
+      "duty-free allowance",
+      "gifts",
+      "souvenirs",
+      "shopping",
+      "electronics",
+      "franquicia",
+      "customs allowance"
+    ],
+    "destination": "CO",
+    "category": "other",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "USD 2,000 of goods duty-free per adult (personal effects not counted); above that, up to USD 3,000 more with a 15% single tax if you were abroad at least 5 days (once a year).",
+      "quantity": "USD 2,000 duty-free"
+    },
+    "notes": "Decreto 1165 de 2019 Art. 268: duty-free accompanied baggage up to USD 2,000; personal effects are not counted. Art. 269: travellers abroad at least 5 calendar days may bring, paying the 15% single tax (Art. 270), up to 3 units each of household, sports and professional articles and up to 10 units of the same kind of other personal goods, up to USD 3,000 total, once per year per person. Art. 274: minors get a reduced quota (DIAN page: 50%). Art. 276: non-residents may temporarily import, tax-free and subject to re-export, items needed for personal or professional use during their stay if declared on arrival. DIAN's 'Trámites aduaneros' page repeats the USD 2,000 franchise and 15% tax. Note: the English version of DIAN's Form 530 page mentions a 'USD 5,000' quota that the Spanish page and the decree do not — the decree controls.",
+    "legal_source": {
+      "name": "Decreto 1165 de 2019 (Régimen de Aduanas), Arts. 266–270 – DIAN normograma",
+      "url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-co",
+    "names": [
+      "prescription medication",
+      "medicine",
+      "medication",
+      "prescription drugs",
+      "pills",
+      "medicamentos"
+    ],
+    "destination": "CO",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "No Colombian traveller allowance found. Carry personal quantities in original containers with a copy of your prescription; check legality yourself."
+    },
+    "notes": "No primary Colombian rule specific to travellers' personal medication was found (DIAN, INVIMA and the Fondo Nacional de Estupefacientes pages searched). Customs law treats 'efectos personales' — new or used articles a traveller may need for personal use during the trip — as outside the duty-free quota (Decreto 1165 de 2019, Art. 3 definition, as modified by Decreto 360 de 2021), but does not mention medicines. The UK government's Colombia travel advice says: 'If you take prescription medication, you will be responsible for determining its legality in Colombia. Always keep your medication in the original container, bring sufficient quantities ..., pack your medication in your carry-on luggage and carry a copy of your prescriptions', and that Colombian prescriptions 'must be written in Spanish, in the metric system and using the medicine's generic name'. travel.gc.ca adds that some prescription medicines are unavailable in Colombia and adrenaline auto-injectors are not sold there.",
+    "legal_source": {
+      "name": "Colombia travel advice – Health (updated 2026-10-06) – GOV.UK / FCDO",
+      "url": "https://www.gov.uk/foreign-travel-advice/colombia/health"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-co",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "hashish",
+      "thc",
+      "edibles",
+      "marihuana"
+    ],
+    "destination": "CO",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Bringing cannabis into Colombia without a licence is a crime, even in transit and even in small amounts."
+    },
+    "notes": "Código Penal (Ley 599 de 2000) Art. 376 as modified by Ley 1453 de 2011: anyone who 'sin permiso de autoridad competente, introduzca al país, así sea en tránsito o saque de él' narcotic or psychotropic substances faces 128–360 months' prison; if the quantity does not exceed 1,000 g of marijuana or 200 g of hashish the penalty is 64–108 months. The only carve-out (added by Ley 1787 de 2016) is medical/scientific cannabis use under licences from the Ministry of Health or Ministry of Justice. Domestic 'personal dose' rules do not authorise import. CBD products are not specifically addressed by this source — treat as unverified. Travel advice (gov.uk) also stresses severe penalties for drug possession and trafficking.",
+    "legal_source": {
+      "name": "Ley 599 de 2000 (Código Penal), Art. 376 – Secretaría del Senado",
+      "url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0599_2000_pr014.html"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-co",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "ham",
+      "jamón",
+      "sausage",
+      "salami",
+      "chorizo",
+      "honey",
+      "pork",
+      "embutidos",
+      "queso"
+    ],
+    "destination": "CO",
+    "category": "food_animal",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Sealed, commercially labelled cured/cooked meats, boneless aged hams and aged/processed cheeses up to 6 kg each; processed honey and pre-cooked shrimp up to 3 kg. Pork products from Spain and Germany currently banned.",
+      "quantity": "6 kg per item type (honey 3 kg)"
+    },
+    "notes": "ICA (12 Apr 2017 notice, under Resolución ICA 3865 de 2005): animal-origin food may enter without an import document only in its original sealed packaging labelled with country, establishment, packing and expiry dates: cooked or cured hermetically packed sausages/meat products up to 6 kg; boneless hams up to 6 kg each (Spanish serrano aged >190 days, ibérico >365 days, Italian >400 days, others >180 days); aged, processed or spreadable sealed cheeses up to 6 kg; processed/pasteurised honey up to 3 kg; pre-cooked sealed shrimp up to 3 kg. Excluded: bovine meat products from BSE countries; cured pork from Italy and from countries with African or classical swine fever. Current restriction: ICA Resolución 00031675 (4 Dec 2025) Art. 3 prohibits pork products from Spain carried as accompanied baggage 'independientemente de la cantidad' (unless meeting OMSA Code art. 15.1.2), and Resolución 00034883 (30 Dec 2025) does the same for Germany, both until lifted. Non-compliant goods are held for re-shipment within 5 days or seized and incinerated. Declare animal products on the DIAN baggage declaration. Caveat: the quantity list comes from a 2017 ICA notice; no newer consolidated traveller list was found.",
+    "legal_source": {
+      "name": "El ICA hace recomendaciones a viajeros internacionales sobre el ingreso al país de productos de origen vegetal y animal (12 Apr 2017) – Instituto Colombiano Agropecuario (ICA)",
+      "url": "https://www.ica.gov.co/noticias/agricola-y-pecuaria/ica-hace-recomendaciones-a-viajeros-internacionale.aspx"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-co",
+    "names": [
+      "fruit",
+      "vegetables",
+      "fresh produce",
+      "plants",
+      "seeds",
+      "flowers",
+      "soil",
+      "frutas",
+      "verduras",
+      "semillas"
+    ],
+    "destination": "CO",
+    "category": "food_plant",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Plants, seeds, propagation material and fresh fruit/vegetables need a phytosanitary certificate from the origin country; otherwise they may be seized."
+    },
+    "notes": "ICA (12 Apr 2017 notice): products must arrive with 'el correspondiente certificado zoosanitario o fitosanitario' from the country of origin; plants of all species, planting/propagation material and fresh fruits and vegetables that don't comply may be seized because they can carry pests. Non-compliant goods are held for re-shipment within 5 days or seized and incinerated. Travellers must declare plants and plant products on the baggage declaration (DIAN lists 'vegetales, animales y productos reglamentados' among cases requiring Form 530). Caveat: 2017 notice; no newer traveller page found.",
+    "legal_source": {
+      "name": "El ICA hace recomendaciones a viajeros internacionales sobre el ingreso al país de productos de origen vegetal y animal (12 Apr 2017) – Instituto Colombiano Agropecuario (ICA)",
+      "url": "https://www.ica.gov.co/noticias/agricola-y-pecuaria/ica-hace-recomendaciones-a-viajeros-internacionale.aspx"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-co",
+    "names": [
+      "firearms",
+      "guns",
+      "pistol",
+      "rifle",
+      "ammunition",
+      "weapons",
+      "armas"
+    ],
+    "destination": "CO",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Importing firearms into Colombia is illegal."
+    },
+    "notes": "Government of Canada travel advice for Colombia (updated 2026-10-06): 'It's illegal to import firearms into Colombia.' Other weapons (knives, pepper spray, etc.) are not covered by this source. The underlying Colombian statute (Decreto 2535 de 1993 on arms) was not read in this pass.",
+    "legal_source": {
+      "name": "Travel advice and advisories for Colombia (updated 2026-10-06) – Government of Canada",
+      "url": "https://travel.gc.ca/destinations/colombia"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-co",
+    "names": [
+      "drone",
+      "drones",
+      "uav",
+      "quadcopter",
+      "dji"
+    ],
+    "destination": "CO",
+    "category": "drones",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Drones may only be brought in through El Dorado International Airport (Bogotá), with a customs form on arrival stating the drone's use."
+    },
+    "notes": "Government of Canada travel advice for Colombia (updated 2026-10-06): 'You may only bring drones into Colombia through El Dorado International Airport in Bogotá' and you must complete a customs form on arrival confirming the drone's intended use. Flying rules (Aerocivil RAC 100 registration/operation requirements) were not verified in this pass.",
+    "legal_source": {
+      "name": "Travel advice and advisories for Colombia (updated 2026-10-06) – Government of Canada",
+      "url": "https://travel.gc.ca/destinations/colombia"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "duty-free-goods-ar",
+    "names": [
+      "duty free",
+      "duty-free allowance",
+      "franquicia",
+      "souvenirs",
+      "gifts",
+      "shopping",
+      "purchases",
+      "customs allowance"
+    ],
+    "destination": "AR",
+    "category": "other",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Clothes and personal items, one phone and one notebook/tablet are duty-free. Other goods bought abroad: USD 500 by air or sea (plus USD 500 at the arrival duty-free shop); USD 300 by land or river (no arrival duty-free allowance, except USD 500 at Puerto Iguazú). Under-16s get 50%. Monthly, not cumulative. Above the allowance you pay 50% of the excess and must declare.",
+      "quantity": "USD 500 (air/sea)"
+    },
+    "notes": "ARCA (customs) pages 'Franquicias', 'Objetos permitidos' and 'Régimen de equipaje' (read 2026-10-09). Families (spouses, partners, children under 16) may pool allowances. Goods for commercial purposes are prohibited under the baggage regime. You only have to declare if you exceed the allowance, carry SENASA-regulated goods, or carry USD 10,000+ in cash; use the digital baggage declaration (mobile app / self-service kiosks) or form OM-2087/G5 or G6. ARCA gives no separate litre/stick limits for alcohol or tobacco on these pages — see unverified rows.",
+    "legal_source": {
+      "name": "ARCA (Aduana) — ¿Cuál es la franquicia de ingreso?",
+      "url": "https://www.afip.gob.ar/viajeros/ayuda/franquicia.asp"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-ar",
+    "names": [
+      "cash",
+      "money",
+      "currency",
+      "dollars",
+      "euros",
+      "travellers cheques",
+      "monetary instruments",
+      "pesos"
+    ],
+    "destination": "AR",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Entering with cash or monetary instruments (foreign or Argentine currency) worth USD 10,000 or more must be declared to customs on form OM 2249A. For under-16s the limit is USD 5,000. Amounts above USD 10,000 can only leave Argentina by bank transfer.",
+      "quantity": "USD 10,000 (USD 5,000 under 16)"
+    },
+    "notes": "ARCA 'Ingreso y egreso de valores': amounts under USD 10,000 may be brought in freely; higher amounts need a special declaration (OM 2249A). ARCA 'Régimen de equipaje' says to declare when 'igual o superior al equivalente a USD 10.000'. Conversion uses the Banco de la Nación buying rate at close of the previous business day. Cross-check: gov.uk Argentina advice says declare cash/travellers cheques over USD 10,000; Spain MFA says the same applies on entry and exit.",
+    "legal_source": {
+      "name": "ARCA (Aduana) — ¿Qué importes pueden ingresarse y/o retirarse del país?",
+      "url": "https://www.afip.gob.ar/viajeros/ayuda/ingreso-egreso-de-valores.asp"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-ar",
+    "names": [
+      "controlled medication",
+      "narcotics",
+      "psychotropics",
+      "opioids",
+      "morphine",
+      "methadone",
+      "benzodiazepines",
+      "alprazolam",
+      "clonazepam",
+      "diazepam",
+      "lorazepam",
+      "amphetamine",
+      "adhd medication",
+      "stimulants"
+    ],
+    "destination": "AR",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Carry a legalised medical prescription. Under the Mercosur rule applied in Argentina, it must show your name and address; the medicine, active ingredient, strength, form, quantity and dosage; and the date, name, address, signature and registration of the prescriber. It must be authorised by the health authority. Patients in transit present this document to health or police authorities at the airport or border.",
+      "quantity": "personal treatment, with legalised prescription"
+    },
+    "notes": "Source: argentina.gob.ar Derecho Fácil summary of Mercosur GMC Resolution 66/2000, which ANMAT applies. It covers travel between Argentina, Brazil, Paraguay, Uruguay and Venezuela, and no official page was found on how travellers from outside Mercosur are treated, so confirm with ANMAT before travelling. ARCA lists 'Estupefacientes' as prohibited in baggage. ANMAT's control lists include methadone, hydrocodone and hydromorphone (narcotics, Ley 17.818) and amphetamine, alprazolam, clonazepam, diazepam and lorazepam (psychotropics, Ley 19.303). Methylphenidate was not checked. Medicines not registered in Argentina may need an ANMAT exceptional-access (RAEM-NR) authorisation; that procedure is for imports and may not cover a traveller's own supply.",
+    "legal_source": {
+      "name": "Argentina.gob.ar Derecho Fácil — Mercosur: Traslado de medicamentos (Resolución GMC 66/2000)",
+      "url": "https://www.argentina.gob.ar/justicia/derechofacil/leysimple/mercosur-traslado-de-medicamentos"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-ar",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "hashish",
+      "hash",
+      "cannabis oil",
+      "thc",
+      "cbd",
+      "cbd oil",
+      "edibles"
+    ],
+    "destination": "AR",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Do not bring cannabis. Customs prohibits narcotics ('Estupefacientes') in baggage, and ANMAT lists cannabis, its resin, and cannabis extracts and tinctures as Lista I narcotics under Ley 17.818."
+    },
+    "notes": "Sources: the ARCA 'Objetos permitidos y prohibiciones' page, plus the ANMAT controlled-substances list (argentina.gob.ar/sites/default/files/estupefacientes_2016.pdf, linked from the ANMAT 'Listados' page): 'CANNABIS (Marihuana), su resina (Haschisch) y los extractos y tinturas de Cannabis — LISTA I. LEY 17818/68'. No official page read deals with CBD-only products for travellers. Because 'extractos y tinturas' are listed, treat CBD oils as prohibited unless ANMAT confirms otherwise. Argentina's medical-cannabis programme is for registered patients in Argentina and does not give foreign travellers an allowance.",
+    "legal_source": {
+      "name": "ARCA (Aduana) — ¿Qué objetos se pueden ingresar? (Prohibiciones: Estupefacientes); ANMAT Listado de Sustancias Controladas — Estupefacientes",
+      "url": "https://www.afip.gob.ar/viajeros/ayuda/objetos.asp"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-ar",
+    "names": [
+      "meat",
+      "beef",
+      "pork",
+      "chicken",
+      "sausage",
+      "salami",
+      "chorizo",
+      "ham",
+      "jamon",
+      "cured meat",
+      "charcuterie",
+      "honey",
+      "homemade food",
+      "biltong",
+      "jerky"
+    ],
+    "destination": "AR",
+    "category": "food_animal",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Prohibited: meat of any species, cured/processed meats, sausages, hams, honey and other bee products, homemade food, and any food without a label. Exceptions: canned fish, pork or poultry. Boneless Spanish serrano/ibérico ham, sliced or in pieces, is allowed if it is factory vacuum-packed and labelled. Allowed items must be packaged, labelled and in personal quantities."
+    },
+    "notes": "SENASA page 'Ingresar o regresar al país con alimentos' (Resolution 295/1999). The Spanish-ham exception comes from Res. 655/2017. Ibérico loin (lomo) from Spain has been suspended (Res. 940/2025). SENASA may confiscate products without the required authorisation. ARCA says SENASA-regulated goods must be declared.",
+    "legal_source": {
+      "name": "SENASA — Ingresar o regresar al país con alimentos",
+      "url": "https://www.argentina.gob.ar/senasa/informacion-al-viajero/ingresar-o-regresar-al-pais"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "dairy-ar",
+    "names": [
+      "dairy",
+      "milk",
+      "cheese",
+      "yogurt",
+      "butter",
+      "dulce de leche",
+      "milk powder",
+      "infant formula",
+      "condensed milk"
+    ],
+    "destination": "AR",
+    "category": "food_animal",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Allowed in personal quantities if packaged and labelled by the producer under official health control: pasteurised milk, condensed milk, milk powder, yogurt, butter, dulce de leche, and cheeses made from pasteurised milk. Other dairy products and derivatives are on the 'not permitted' list."
+    },
+    "notes": "SENASA 'Ingresar o regresar al país con alimentos' (Res. 295/1999). The page lists 'productos y derivados lácteos' as not permitted, apart from the authorised items above. Treat raw-milk cheese and unlabelled dairy as prohibited. Declare SENASA-regulated goods on arrival.",
+    "legal_source": {
+      "name": "SENASA — Ingresar o regresar al país con alimentos",
+      "url": "https://www.argentina.gob.ar/senasa/informacion-al-viajero/ingresar-o-regresar-al-pais"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-ar",
+    "names": [
+      "fruit",
+      "fresh fruit",
+      "vegetables",
+      "plants",
+      "flowers",
+      "seeds",
+      "bulbs",
+      "soil",
+      "nuts",
+      "dried fruit",
+      "jam"
+    ],
+    "destination": "AR",
+    "category": "food_plant",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Prohibited: fresh fruit and vegetables; flowers and garden plants; fruit, ornamental and forestry plants; plant parts such as seeds, roots and buds. Allowed in personal quantities if packaged and labelled: processed fruit and vegetables (in syrup, pickled, canned), roasted or salted nuts, jams, candied fruit, juices, sugar and oil."
+    },
+    "notes": "SENASA 'Ingresar o regresar al país con alimentos' (Res. 295/1999). Also prohibited: animal feed, veterinary products, insects and microorganisms. A separate SENASA barrier also restricts some fruit and meat entering Patagonia from the rest of Argentina.",
+    "legal_source": {
+      "name": "SENASA — Ingresar o regresar al país con alimentos",
+      "url": "https://www.argentina.gob.ar/senasa/informacion-al-viajero/ingresar-o-regresar-al-pais"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-ar",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition",
+      "explosives",
+      "hunting rifle",
+      "fireworks"
+    ],
+    "destination": "AR",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Firearms and explosives are prohibited in baggage unless the national firearms authority (RENAR, formerly ANMAC) has authorised them in advance. Flammables are also excluded."
+    },
+    "notes": "The ARCA 'Objetos permitidos y prohibiciones' page reads 'Armas, explosivos (salvo autorización del RENAR)'. ARCA's 2018 baggage infographic names the authority as ANMAC. Contact the firearms authority well before travel, for example for hunting trips. No authorisation procedure was read.",
+    "legal_source": {
+      "name": "ARCA (Aduana) — ¿Qué objetos se pueden ingresar?",
+      "url": "https://www.afip.gob.ar/viajeros/ayuda/objetos.asp"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-jo",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "whisky",
+      "vodka",
+      "arak"
+    ],
+    "destination": "JO",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Up to 1 litre of alcohol duty-free per traveller; more than 1 litre is subject to customs duty.",
+      "quantity": "1 L"
+    },
+    "notes": "German Foreign Office (Stand 09.10.2026): 'Bis zu 1 l Alkohol ... dürfen zollfrei mitgeführt werden.' Cross-checked with Japan MOFA (updated 22 Apr 2026): bringing more than 1 litre of alcohol into Jordan incurs duty; if you enter overland with more than 1 litre and plan to take it out later by air, you pay a cash deposit (JOD only) at the border, refunded when customs checks the alcohol on departure. Jordan Customs' own site (customs.gov.jo) was IP-blocked from our environment, so the controlling customs text was not read. Public drinking is banned outside some hotels and restaurants (France Diplomatie).",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Jordanien: Reise- und Sicherheitshinweise (Einreise und Zoll)",
+      "url": "https://www.auswaertiges-amt.de/de/service/laender/jordanien-node/jordaniensicherheit-218008"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-jo",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "rolling tobacco",
+      "smokes"
+    ],
+    "destination": "JO",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "200 cigarettes and 200 g of tobacco duty-free per traveller.",
+      "quantity": "200 cigarettes + 200 g tobacco"
+    },
+    "notes": "German Foreign Office (Stand 09.10.2026): 'außerdem 200 Zigaretten und 200 g Tabak dürfen zollfrei mitgeführt werden.' The 200-cigarette figure also appears in Jordan's AIP GEN 1.3 (Civil Aviation Regulatory Commission, dated 01 Nov 2006 — old). Jordan Customs' own site was IP-blocked. Rules for cigars as a separate allowance were not confirmed.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Jordanien: Reise- und Sicherheitshinweise (Einreise und Zoll)",
+      "url": "https://www.auswaertiges-amt.de/de/service/laender/jordanien-node/jordaniensicherheit-218008"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-jo",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition",
+      "rifle",
+      "pistol",
+      "knife"
+    ],
+    "destination": "JO",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Import of weapons is prohibited."
+    },
+    "notes": "German Foreign Office: 'Die Einfuhr von Waffen, Drohnen, Funkgeräten, Rauschgift und pornografischen Schriften ist verboten.' Japan MOFA (22 Apr 2026): narcotics, firearms and pornography may not be brought in. Knives specifically are not addressed by either source; the verdict covers weapons/firearms generally.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Jordanien: Reise- und Sicherheitshinweise (Einreise und Zoll)",
+      "url": "https://www.auswaertiges-amt.de/de/service/laender/jordanien-node/jordaniensicherheit-218008"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-jo",
+    "names": [
+      "drone",
+      "drones",
+      "quadcopter",
+      "uav",
+      "dji"
+    ],
+    "destination": "JO",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Only with prior approval from Jordan's Civil Aviation Regulatory Commission; without a permit the drone is held/confiscated at the border."
+    },
+    "notes": "UK FCDO: 'You must apply for approval to take a drone into Jordan at least 10 working days before you travel. If you have not received a permit before you arrive, the authorities will hold your drone at the airport. You can collect it when you leave Jordan.' Canada: 'You must obtain authorization before importing or operating a drone'; violations can mean imprisonment, fines or confiscation. CONFLICT: France Diplomatie says drones 'sont interdits à l'arrivée en Jordanie et sont systématiquement confisqués', and Germany lists drones among prohibited imports. The CARC publishes a 'Drones Operations Approval Application Form' (https://carc.gov.jo/en/drones). Treat a drone as not importable unless you hold CARC approval before you travel.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Jordan travel advice: Entry requirements (Customs rules, Drones)",
+      "url": "https://www.gov.uk/foreign-travel-advice/jordan/entry-requirements"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-jo",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "hashish",
+      "hash",
+      "drugs",
+      "narcotics"
+    ],
+    "destination": "JO",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Narcotics, including cannabis, may not be imported; drug offences are punished severely even for tiny amounts."
+    },
+    "notes": "German Foreign Office: import of 'Rauschgift' is prohibited, and drug offences are punished 'schon bei geringsten Mengen und bei jeder Art von Drogen mit langjährigen Haftstrafen (bis lebenslänglich)'. Japan MOFA: narcotics may not be brought in and their import, possession and use are severely punished. France: drug possession/use/trade severely punished, with prison plus permanent ban from the territory. CBD products are not specifically addressed by any source read — do not assume CBD is allowed.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Jordanien: Reise- und Sicherheitshinweise (Einreise und Zoll)",
+      "url": "https://www.auswaertiges-amt.de/de/service/laender/jordanien-node/jordaniensicherheit-218008"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "pornography-jo",
+    "names": [
+      "pornography",
+      "adult magazines",
+      "adult material",
+      "explicit material"
+    ],
+    "destination": "JO",
+    "category": "other",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Pornographic material may not be imported — Japan notes even weekly magazines with semi-nude photos can be refused."
+    },
+    "notes": "Japan MOFA (22 Apr 2026): pornography may not be brought in, including magazines carrying semi-nude photos. Germany also lists 'pornografische Schriften' as prohibited imports.",
+    "legal_source": {
+      "name": "外務省 海外安全ホームページ — ヨルダン 安全対策基礎データ（通関・外貨申告）",
+      "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_054.html"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "radio-equipment-jo",
+    "names": [
+      "walkie-talkie",
+      "two-way radio",
+      "radio transmitter",
+      "radios"
+    ],
+    "destination": "JO",
+    "category": "other",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Import of radio transceivers (Funkgeräte) is prohibited."
+    },
+    "notes": "German Foreign Office lists 'Funkgeräte' (radio devices) among prohibited imports. Single source; no Jordanian telecom-regulator page was read, so licensed exceptions are unknown.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Jordanien: Reise- und Sicherheitshinweise (Einreise und Zoll)",
+      "url": "https://www.auswaertiges-amt.de/de/service/laender/jordanien-node/jordaniensicherheit-218008"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "personal-effects-jo",
+    "names": [
+      "laptop",
+      "camera",
+      "personal electronics",
+      "travel equipment"
+    ],
+    "destination": "JO",
+    "category": "other",
+    "verdict": "allowed",
+    "limits": {
+      "description": "Travel items including a laptop and camera may be brought in duty-free but must be taken out again."
+    },
+    "notes": "German Foreign Office: 'Reisebedarf inklusive Laptop und Kamera darf zollfrei eingeführt werden, muss aber wieder ausgeführt werden.' Separately, Jordan strictly bans exporting antiquities without Department of Antiquities authorisation (France Diplomatie, Law 21/1998) and Germany also mentions corals.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Jordanien: Reise- und Sicherheitshinweise (Einreise und Zoll)",
+      "url": "https://www.auswaertiges-amt.de/de/service/laender/jordanien-node/jordaniensicherheit-218008"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-cr",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "rum",
+      "whisky",
+      "vodka",
+      "aguardiente",
+      "licor",
+      "vino"
+    ],
+    "destination": "CR",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "5 litres of wine, aguardiente or liquor per adult traveller, duty-free, as part of baggage",
+      "quantity": "5 L per adult"
+    },
+    "notes": "Art. 365(j) of the customs regulation (Decreto 44051-H) counts as duty-free traveller baggage 'Quinientos gramos de tabaco elaborado, cinco litros de vino, aguardiente o licor, por cada viajero mayor de edad y hasta dos kilogramos de golosinas.' The text does not mention beer separately; it says 'wine, aguardiente or liquor'. Baggage must be for personal use, not commercial. Anything above the allowance counts as goods other than baggage (see the US$500-equivalent allowance row) and must be declared on the Declaración de Viajero (art. 368).",
+    "legal_source": {
+      "name": "Reglamento a la Ley General de Aduanas, Decreto Ejecutivo N° 44051-H (18 May 2023), arts. 365–371 — SCIJ/Sinalevi, Procuraduría General de la República",
+      "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=99648&param2=136510&param3=1"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-cr",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "rolling tobacco",
+      "cigarillos",
+      "tabaco",
+      "cigarrillos"
+    ],
+    "destination": "CR",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "500 g of manufactured tobacco per adult traveller, duty-free, as part of baggage",
+      "quantity": "500 g per adult"
+    },
+    "notes": "Art. 365(j) Decreto 44051-H: 'Quinientos gramos de tabaco elaborado … por cada viajero mayor de edad'. The regulation states the allowance by weight, not by number of cigarettes. Amounts above it must be declared and taxes paid. E-cigarettes are not covered by this row (see unverified).",
+    "legal_source": {
+      "name": "Reglamento a la Ley General de Aduanas, Decreto Ejecutivo N° 44051-H (18 May 2023), arts. 365–371 — SCIJ/Sinalevi, Procuraduría General de la República",
+      "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=99648&param2=136510&param3=1"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-cr",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "us dollars",
+      "colones",
+      "euros",
+      "traveller's cheques",
+      "bearer instruments",
+      "securities",
+      "efectivo"
+    ],
+    "destination": "CR",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declare cash and/or títulos valores (securities/bearer instruments) of US$10,000 or more (or the equivalent in other currency) when entering or leaving",
+      "quantity": "≥ US$10,000"
+    },
+    "notes": "Art. 35 Ley 8204 as quoted in Decreto 44096: 'Al ingresar en el país o salir de él, toda persona, nacional o extranjera, estará obligada a declarar el dinero efectivo o los títulos valores que porte, si la cantidad es igual o superior a los diez mil dólares … (US$10.000,00) o su equivalente en otra moneda.' The 'Declaración de dinero en efectivo y/o títulos valores' form (issued by the Instituto Costarricense sobre Drogas) is available at the migration posts; it must be completed and signed before finishing immigration and handed to Customs (arts. 4, 8, 11, 17). Failing to declare, or declaring a different amount, means 'la pérdida inmediata del dinero en efectivo y/o títulos valores a favor del Instituto Costarricense sobre Drogas' (art. 5) — it does not stop you entering or leaving. The threshold is 'igual o superior' — exactly US$10,000 must be declared. Cross-check: GOV.UK also says declare cash/travellers cheques of US$10,000 or more.",
+    "legal_source": {
+      "name": "Decreto Ejecutivo N° 44096-MP-H-MAG-MOPT-MGP-MSP, Reglamento al artículo 35 de la Ley N° 8204 (cash and bearer-instrument declarations) — SCIJ/Sinalevi, Procuraduría General de la República",
+      "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=99936&param2=136926&param3=1"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-cr",
+    "names": [
+      "prescription medication",
+      "medicine",
+      "medicines",
+      "pills",
+      "prescription drugs",
+      "medicamentos"
+    ],
+    "destination": "CR",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Medicines for your own use, in quantities consistent with your circumstances and needs, enter duty-free as baggage; controlled (narcotic/psychotropic) medicines have extra rules"
+    },
+    "notes": "Art. 365(c) Decreto 44051-H includes in traveller baggage 'Medicamentos, alimentos, instrumentos, aparatos médicos, higiénicos o de tocador y artículos desechables utilizados con estos, en cantidades acordes con las circunstancias y necesidades del viajero.' Baggage must not be commercial. If your medicine contains a narcotic or psychotropic substance, see controlled-medication-cr: more than one month's supply needs Ministry of Health authorisation. Cross-check: travel.gc.ca advises keeping medicines in the original container, in carry-on, with paper and electronic copies of prescriptions.",
+    "legal_source": {
+      "name": "Reglamento a la Ley General de Aduanas, Decreto Ejecutivo N° 44051-H (18 May 2023), arts. 365–371 — SCIJ/Sinalevi, Procuraduría General de la República",
+      "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=99648&param2=136510&param3=1"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-cr",
+    "names": [
+      "controlled medication",
+      "narcotics",
+      "psychotropics",
+      "opioids",
+      "adhd medication",
+      "stimulants",
+      "benzodiazepines",
+      "sleeping pills",
+      "methylphenidate",
+      "ritalin",
+      "amphetamine",
+      "dexamphetamine",
+      "adderall",
+      "alprazolam",
+      "xanax",
+      "clonazepam",
+      "diazepam",
+      "valium",
+      "lorazepam",
+      "zolpidem",
+      "oxycodone",
+      "codeine",
+      "morphine",
+      "fentanyl"
+    ],
+    "destination": "CR",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Up to one month of treatment: no authorisation needed. More than one month: Ministry of Health authorisation, applied for at least one month before travel. Never allowed: 1961 Convention List IV narcotics and fentanyl in ampoules",
+      "quantity": "≤ 1 month's treatment without permit"
+    },
+    "notes": "Art. 57 Decreto 45161-S (2025): 'El Ministerio de Salud autorizará a los viajeros el ingreso o salida de preparados farmacéuticos que contienen estupefacientes o psicotrópicos cuando la cantidad supere un mes de tratamiento' — apply at least one month before travel with: ID copy (for digital filing), copies of the prescription and epicrisis and/or medical report issued no more than 3 months earlier stating diagnosis and prescribed medicines, and a copy of the purchase invoice if bought abroad. 'Si las cantidades son menores a un mes de tratamiento, esta autorización no es requerida. Los viajeros internacionales no pueden llevar consigo los estupefacientes incluidos en la Lista IV de la Convención Única de 1961 de Estupefacientes, ni fentanilo en ampollas aun cuando se permita su uso en el país de origen.' Which substances are controlled: the Ministry of Health 'Lista de sustancias sometidas a fiscalización nacional' (SCIJ, dated 11 Sep 2026; https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=107827&param2=152346&param3=1) lists, among others, METILFENIDATO, ANFETAMINA, DEXANFETAMINA, ALPRAZOLAM, CLONAZEPAM, DIAZEPAM, LORAZEPAM, ZOLPIDEM, OXICODONA, CODEINA, MORFINA and FENTANILO. Brand names in the search terms are mapped to those ingredients for search only (Adderall = amphetamine salts; Ritalin = methylphenidate; Xanax = alprazolam; Valium = diazepam); the sources name ingredients, not brands. Lisdexamfetamine (Vyvanse) and tramadol were not found as entries in the list text read, so they are deliberately not named here.",
+    "legal_source": {
+      "name": "Decreto Ejecutivo N° 45161-S, Reglamento para el control de drogas, estupefacientes y psicotrópicas (17 Jun 2025), art. 57 — SCIJ/Sinalevi, Procuraduría General de la República",
+      "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=105221&param2=147500&param3=1"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "injectable-medication-cr",
+    "names": [
+      "injectable medication",
+      "insulin",
+      "insulin pen",
+      "syringes",
+      "needles",
+      "epipen",
+      "ozempic",
+      "wegovy",
+      "mounjaro",
+      "glp-1",
+      "semaglutide",
+      "tirzepatide"
+    ],
+    "destination": "CR",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Medicines plus the medical instruments and disposable items used with them (syringes, pen needles) enter duty-free as baggage in quantities matching your needs"
+    },
+    "notes": "Art. 365(c) Decreto 44051-H covers 'Medicamentos … instrumentos, aparatos médicos … y artículos desechables utilizados con estos, en cantidades acordes con las circunstancias y necesidades del viajero' — this is a general rule; it does not name insulin or GLP-1 brands. Insulin, semaglutide (Ozempic/Wegovy) and tirzepatide (Mounjaro) are not narcotics/psychotropics, so the one-month controlled-medicine authorisation (Decreto 45161-S art. 57) does not apply to them as such. Keep the prescription with you; airline rules on carrying needles and cooling packs are separate from customs.",
+    "legal_source": {
+      "name": "Reglamento a la Ley General de Aduanas, Decreto Ejecutivo N° 44051-H (18 May 2023), arts. 365–371 — SCIJ/Sinalevi, Procuraduría General de la República",
+      "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=99648&param2=136510&param3=1"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-cr",
+    "names": [
+      "firearms",
+      "guns",
+      "rifles",
+      "shotguns",
+      "hunting rifle",
+      "ammunition",
+      "weapons",
+      "armas"
+    ],
+    "destination": "CR",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "Tourists may bring hunting shotguns/rifles (up to four different hunting/target guns) and 500 rounds as baggage, but only subject to the Ley de Armas y Explosivos permit rules",
+      "quantity": "up to 4 guns, 500 rounds (as baggage)"
+    },
+    "notes": "Art. 365(k) Decreto 44051-H: 'Escopeta o rifles de caza y quinientos tiros, incluso hasta cuatro armas diferentes para cacería o para tiro al blanco … siempre que se demuestre, en forma fehaciente, que el viajero es turista. El ingreso de armas y municiones estará sujeto a las regulaciones que sobre esta materia establece la Ley de Armas y Explosivos.' The customs rule only makes them duty-free baggage; the permit requirements under the Arms and Explosives Law were not verified here — do not travel with a firearm without confirming them with the Costa Rican authorities first. Handguns and other weapons are not covered by the baggage allowance.",
+    "legal_source": {
+      "name": "Reglamento a la Ley General de Aduanas, Decreto Ejecutivo N° 44051-H (18 May 2023), arts. 365–371 — SCIJ/Sinalevi, Procuraduría General de la República",
+      "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=99648&param2=136510&param3=1"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "duty-free-goods-cr",
+    "names": [
+      "duty free allowance",
+      "gifts",
+      "souvenirs",
+      "shopping",
+      "new goods",
+      "electronics",
+      "franquicia"
+    ],
+    "destination": "CR",
+    "category": "other",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Goods that are not baggage are tax-free up to 500 Central American pesos in total customs value, once every 6 months, if you were out of Costa Rica at least 72 hours",
+      "quantity": "500 Central American pesos / 6 months"
+    },
+    "notes": "Art. 115 Ley 7557: 'Las mercancías que la persona traiga consigo, que no constituyan equipaje, no estarán sujetas al pago de tributos hasta por un monto de quinientos pesos centroamericanos … Para estos efectos, la persona deberá permanecer un mínimo de setenta y dos horas fuera del país y no tendrá derecho a disfrutar, de nuevo, de este beneficio hasta que hayan transcurrido los seis meses siguientes a su arribo.' Reglamento 44051-H arts. 370–371: proved with your passport; not cumulative, personal, not for commercial quantities or prohibited goods. The Central American peso is a regional unit of account; the texts read do not give a dollar figure. Above the limit, customs prepares the declaration and you pay the taxes (art. 366). Normal personal baggage (clothes, one laptop, one phone, one camera, sports gear, etc., art. 365) is duty-free on top of this.",
+    "legal_source": {
+      "name": "Ley General de Aduanas N° 7557, arts. 114–115 (current consolidated version 11 of 11), Sistema Costarricense de Información Jurídica (SCIJ/Sinalevi), Procuraduría General de la República",
+      "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=25886&param2=131179&param3=1"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-qa",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "whisky",
+      "vodka",
+      "champagne",
+      "mirin",
+      "duty free alcohol"
+    ],
+    "destination": "QA",
+    "category": "alcohol",
+    "verdict": "prohibited",
+    "notes": "Travellers may not bring alcohol into Qatar. Auswärtiges Amt (Stand 09.10.2026): 'Die Einfuhr von Drogen, Alkohol, pornografischen Materials sowie religiöser Bücher und Materialien ist strengstens untersagt.' Cross-checked: Japan MOFA lists 酒類（みりん等の調味料を含む） — alcoholic drinks, including cooking seasonings such as mirin — among prohibited imports; Nederland Wereldwijd: 'Neem geen alcohol en varkensvlees(producten) mee naar Qatar'; France Diplomatie also lists alcohol as prohibited. Inside Qatar alcohol is sold only in licensed hotels/restaurants/bars and to resident permit holders (GOV.UK); public drinking can mean up to 6 months' prison or a QAR 3,000 fine. Note: alcohol is not on the customs.gov.qa tariff prohibited-goods list, and no Qatari-authority page stating the import ban was read; the verdict rests on three travellers' governments that agree.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Katar: Reise- und Sicherheitshinweise, 'Einreise und Zoll' (Stand 09.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/service/laender/katar-node/katarsicherheit-202280"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-qa",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "qatari riyal",
+      "qar",
+      "banknotes",
+      "travellers cheques",
+      "gold",
+      "jewellery",
+      "precious metals",
+      "gems",
+      "diamonds",
+      "cash declaration"
+    ],
+    "destination": "QA",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declare cash (Qatari riyals or foreign currency), bearer instruments (travellers cheques, cheques, money orders, promissory notes), precious metals (gold, silver, platinum) or precious stones worth more than QAR 50,000 in total, on the customs declaration form, when entering or leaving Qatar.",
+      "quantity": "over QAR 50,000"
+    },
+    "notes": "GOV.UK: 'If you are taking money, precious metals or gems worth more than 50,000 Qatari riyals into Qatar, you must complete a declaration form', covering currency, travellers cheques, money orders, cheques, promissory notes, precious metals and precious stones; breaking the rules can mean fines, imprisonment or seizure. Cross-checked: Auswärtiges Amt says import or export above QAR 50,000 must be declared on the General Authority of Customs form on entry and exit, and violations are punished by imprisonment, fine or seizure; Government of Canada says the same for 'more than QAR50,000' when entering or leaving. Carrying it is legal; failing to declare is the offence.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Qatar travel advice: Entry requirements (updated 19 Aug 2026)",
+      "url": "https://www.gov.uk/foreign-travel-advice/qatar/entry-requirements"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-qa",
+    "names": [
+      "prescription medication",
+      "medicine",
+      "medication",
+      "prescription",
+      "pills",
+      "tablets",
+      "over the counter medicine"
+    ],
+    "destination": "QA",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Carry a prescription and a medical report in English or Arabic, issued within the last 6 months, with details of your medication and treatment. Some prescription and over-the-counter medicines are controlled in Qatar and need a Ministry of Public Health permit (see controlled-medication-qa)."
+    },
+    "notes": "GOV.UK (Health page, updated 19 Aug 2026): 'Some prescribed and over-the-counter medicines may be controlled substances in Qatar. If you need to bring controlled or prescription medication into Qatar, make sure you follow the steps required by the Qatar Ministry of Public Health, including carrying a prescription and medical report in English or Arabic containing details of your medication and treatment, issued within the last 6 months.' Auswärtiges Amt lists what the report should contain: patient details, diagnosis, treatment plan and duration, dosage recommendations, scientific and brand name, dose and quantity, a legible stamp of the doctor/clinic, on the clinic's letterhead, plus a copy of your passport. Nederland Wereldwijd: keep medicines in the original packaging. Check whether your medicine is on Qatar's controlled lists before travelling.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Qatar travel advice: Entry requirements (updated 19 Aug 2026)",
+      "url": "https://www.gov.uk/foreign-travel-advice/qatar/entry-requirements"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-qa",
+    "names": [
+      "controlled medication",
+      "adhd medication",
+      "amphetamine",
+      "dexamfetamine",
+      "dexamphetamine",
+      "adderall",
+      "codeine",
+      "tramadol",
+      "morphine",
+      "oxycodone",
+      "fentanyl",
+      "methadone",
+      "buprenorphine",
+      "diazepam",
+      "alprazolam",
+      "xanax",
+      "clonazepam",
+      "lorazepam",
+      "zolpidem",
+      "pregabalin",
+      "gabapentin",
+      "phentermine",
+      "benzodiazepines",
+      "opioids",
+      "sleeping pills",
+      "painkillers"
+    ],
+    "destination": "QA",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Narcotic and psychoactive medicines: up to 30 days' supply or the length of your stay, whichever is shorter. Psychotropic medicines: up to 2 months' supply. Needs a Ministry of Public Health permit, a prescription or medical report under 6 months old and a passport copy. Some substances are banned outright.",
+      "quantity": "30 days (narcotic/psychoactive) / 2 months (psychotropic)"
+    },
+    "notes": "Ministry of Public Health guideline (Pharmacy and Drug Control Department): drugs banned internationally and locally, and those in Sub-schedules A and B of Schedule 1 of Law No. 9 of 1987, may not be released. Prohibited items include cannabis, cannabis resin, heroin, LSD, psilocybin, cathinone, MDA and dronabinol. For patients arriving for personal use you need: a detailed approved medical report or prescription no more than six months old, showing patient details, diagnosis, treatment plan and duration, recommendations, scientific drug name, form, dose and quantity, stamped and on the health facility's letterhead; a signed undertaking that only you will use it; and a passport copy. 'An amount of narcotic and psychoactive substances sufficient for a maximum of thirty days or the duration of the patient's stay in the State of Qatar, whichever is shorter, is allowed' and 'An amount of psychotropic substances sufficient for a maximum of two months is allowed'. Any excess is destroyed by the department. The narcotic/psychoactive list includes amfetamine, dexamfetamine, codeine, dihydrocodeine, fentanyl, hydrocodone, hydromorphone, methadone, morphine, oxycodone and pethidine. The psychotropic list includes alprazolam, bromazepam, buprenorphine, clonazepam, diazepam, lorazepam, midazolam, temazepam, zolpidem, phentermine, phenobarbital, tramadol, pregabalin and gabapentin. The guide tells you to check INCB's Yellow and Green lists for updates. Methylphenidate (Ritalin/Concerta) and lisdexamfetamine (Vyvanse) are not named on the lists, so they are not included in names here. Permit: MOPH's Controlled Medicines System (https://fli.moph.gov.qa/traveller/home; user manual v1.0, 2025) takes applications from travellers carrying narcotic/psychotropic medicines for personal use. You upload passport, prescription, medical report and photos of the medicine; applications are 'reviewed within 24 hours'; an approved permit letter is 'valid for 90 days from date of approval' and 'must be printed and carried along with the original medical prescription and medical report during travel'. GOV.UK confirms the online permit system. The guideline PDF is dated Nov 2022; the controlling law is Law No. 9 of 1987.",
+    "legal_source": {
+      "name": "Ministry of Public Health Qatar, Pharmacy and Drug Control Department — 'Controls and Regulations for the release of narcotic drugs, psychotropic substances and psychoactive drugs in the possession of patients arriving in or departing the State of Qatar' (Guideline of Controlled Drugs for Travellers, PDF)",
+      "url": "https://www.moph.gov.qa/_layouts/15/download.aspx?SourceUrl=/Admin/Lists/PublicationsAttachments/Attachments/201/Guideline-of-Controlled-Drugs-for-Travellers%20-%20English.pdf"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-qa",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "hashish",
+      "hash",
+      "cannabis resin",
+      "thc",
+      "dronabinol",
+      "hemp seeds"
+    ],
+    "destination": "QA",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Ministry of Public Health 'Items Prohibited from Entering the State of Qatar' (covering active raw materials or 'any pharmaceutical dosage forms i.e tablets, capsules, syrup, injection, oils, etc.') lists CANNABIS, CANNABIS RESIN and DRONABINOL (synthetic THC). Medical cannabis prescriptions do not make them allowed. The General Authority of Customs' list of goods forbidden by tariff also includes Cannabis sativa, Hashish and hemp seeds. GOV.UK: zero tolerance; possession of drugs 'including cannabis, (even residual amounts)' brings severe penalties, also in transit, and airports scan transit baggage. CBD is not named on any page read: CBD extracted from cannabis falls within 'cannabis … in any pharmaceutical dosage form … oils', but no source addresses hemp-derived CBD by name, so 'cbd' is not in names — treat CBD products as prohibited unless MOPH confirms otherwise.",
+    "legal_source": {
+      "name": "Ministry of Public Health Qatar, Pharmacy and Drug Control Department — 'Controls and Regulations for the release of narcotic drugs, psychotropic substances and psychoactive drugs in the possession of patients arriving in or departing the State of Qatar' (Guideline of Controlled Drugs for Travellers, PDF)",
+      "url": "https://www.moph.gov.qa/_layouts/15/download.aspx?SourceUrl=/Admin/Lists/PublicationsAttachments/Attachments/201/Guideline-of-Controlled-Drugs-for-Travellers%20-%20English.pdf"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-qa",
+    "names": [
+      "e-cigarettes",
+      "e-cigarette",
+      "vape",
+      "vapes",
+      "vaping",
+      "e-liquid",
+      "vape juice",
+      "heated tobacco",
+      "iqos",
+      "heets",
+      "electronic shisha",
+      "e-shisha",
+      "pod"
+    ],
+    "destination": "QA",
+    "category": "e_cigarettes",
+    "verdict": "prohibited",
+    "notes": "The General Authority of Customs' 'Goods forbidden by Tariff' list includes 'Electronic devices for cigarettes', 'Electronic water pipe \"shisha\"', 'Electrically heated devices for cigarettes' (heated-tobacco devices) and their parts. GOV.UK: 'It is illegal to import and sell vapes and electronic cigarette products. This includes the sale and purchase of related liquids and other similar products, including electronic shisha pipes. The law applies regardless of quantity and intended use. Customs officials may confiscate any such items from your luggage', and 'It is illegal to vape or use an e-cigarette. Police can arrest you and courts can impose a fine, a prison sentence or deportation.'",
+    "legal_source": {
+      "name": "General Authority of Customs (Qatar) — Goods forbidden by Tariff (Prohibited Goods in the Unified GCC Customs Tariff)",
+      "url": "https://www.customs.gov.qa/English/Tariff/Pages/Prohibited-Goods.aspx"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "pork-products-qa",
+    "names": [
+      "pork",
+      "ham",
+      "bacon",
+      "salami",
+      "prosciutto",
+      "chorizo",
+      "lard",
+      "pork sausage",
+      "jamon",
+      "pepperoni"
+    ],
+    "destination": "QA",
+    "category": "food_animal",
+    "verdict": "prohibited",
+    "notes": "Auswärtiges Amt: 'Die Einfuhr von Schweinefleisch ist ebenfalls nicht gestattet.' Cross-checked: Japan MOFA lists 豚肉及び豚肉の加工品（ハム、ソーセージ、ベーコン、ラード等） — pork and processed pork such as ham, sausage, bacon and lard — among prohibited imports; Nederland Wereldwijd: 'Neem geen alcohol en varkensvlees(producten) mee'; France Diplomatie lists pork as prohibited. Rules for other meat and dairy were not found on a primary source (see meat-dairy-qa in unverified).",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Katar: Reise- und Sicherheitshinweise, 'Einreise und Zoll' (Stand 09.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/service/laender/katar-node/katarsicherheit-202280"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-qa",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition",
+      "rifle",
+      "pistol",
+      "explosives"
+    ],
+    "destination": "QA",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "notes": "Japan MOFA (Qatar safety basics) lists 銃火器類 (firearms) among items prohibited from import, and says possessing or importing drugs or firearms brings severe penalties (麻薬や銃器の所持、持込みは厳罰が科せられます). Qatar Customs publishes a separate procedure for importing weapons and high-risk materials (Unified Guide), which applies to licensed imports, not tourists' luggage; it was not read. Knives, pepper spray and replica weapons are not covered by a source read.",
+    "legal_source": {
+      "name": "外務省 海外安全ホームページ — カタール 安全対策基礎データ (Japan MOFA)",
+      "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_048.html"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-qa",
+    "names": [
+      "drone",
+      "drones",
+      "quadcopter",
+      "dji",
+      "uav",
+      "unmanned aircraft"
+    ],
+    "destination": "QA",
+    "category": "drones",
+    "verdict": "depends",
+    "notes": "Government of Canada (14 Sep 2026): 'You must obtain authorization before importing or operating a drone.' GOV.UK: 'Drone use, including aerial photography and filming, is regulated in Qatar. You may need licences or permits before importing or operating a drone. Breaching drone regulations may result in fines, imprisonment and confiscation of equipment.' The Qatar Civil Aviation Authority's own drone rules (who issues the authorization, how to apply) were not read — get authorization before you fly with a drone.",
+    "legal_source": {
+      "name": "Government of Canada — Travel advice and advisories: Qatar (last updated 14 Sep 2026)",
+      "url": "https://travel.gc.ca/destinations/qatar"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "poppy-seeds-qa",
+    "names": [
+      "poppy seeds",
+      "poppy",
+      "khat",
+      "qat",
+      "paan",
+      "betel",
+      "coca leaf",
+      "sniffing tobacco"
+    ],
+    "destination": "QA",
+    "category": "other",
+    "verdict": "prohibited",
+    "notes": "The General Authority of Customs' 'Goods forbidden by Tariff' list (Unified GCC Customs Tariff) includes poppy seeds and poppy, poppy straw, black poppy, coca leaf, khat (catha edulis), opium, hashish, prepared chewable Indian paan (betel) with or without tobacco, and chewable/sniffing tobacco preparations (Sahmmah, Suwaikah). Cooking or baking poppy seeds are included — don't pack them.",
+    "legal_source": {
+      "name": "General Authority of Customs (Qatar) — Goods forbidden by Tariff (Prohibited Goods in the Unified GCC Customs Tariff)",
+      "url": "https://www.customs.gov.qa/English/Tariff/Pages/Prohibited-Goods.aspx"
+    },
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]
