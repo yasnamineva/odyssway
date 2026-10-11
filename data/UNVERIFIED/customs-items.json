@@ -823,5 +823,834 @@
     "verified_at": null,
     "verified_by": null,
     "status": "needs_verification"
+  },
+  {
+    "slug": "e-cigarettes-cl",
+    "names": [
+      "e-cigarettes",
+      "vape",
+      "vapes",
+      "vaping",
+      "e-liquid",
+      "heated tobacco",
+      "iqos",
+      "juul"
+    ],
+    "destination": "CL",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "notes": "needs_verification: Law 21.642 (published 4 Jan 2024, per secondary sources) reportedly assimilates e-cigarettes and heated-tobacco products to tobacco products under Law 19.419, but no primary page read states whether travellers may bring vapes/e-liquid in, or whether the 400-cigarette tobacco allowance covers them. Need the bcn.cl text of Law 21.642 and an Aduana/MINSAL statement on travellers.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (Servicio Nacional de Aduanas, Viajero, viajera y turista)",
+      "url": "https://www.aduana.cl/aduana/site/edic/base/port/viajero_turista.html"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "sag-false-declaration-fine-cl",
+    "names": [
+      "sag fine",
+      "undeclared food fine",
+      "declaration fine"
+    ],
+    "destination": "CL",
+    "category": "other",
+    "verdict": "declaration_required",
+    "notes": "needs_verification: the fine amount for a false or omitted SAG declaration. A consular leaflet and 2014 SAG news (secondary/old) say 3 to 300 UTM; the current joint form says only that a false declaration 'constituye falta y será sancionado con multa'. sag.gob.cl was down for maintenance (HTTP 502) on 2026-10-10. Need the current SAG page or the law (Ley 18.755 / DL 3.557) stating the range.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (SAG, Ingreso a Chile)",
+      "url": "https://www.sag.cl/ambitos-de-accion/ingreso-chile"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "fresh-produce-me",
+    "names": [
+      "fruit",
+      "vegetables",
+      "fresh produce",
+      "plants",
+      "flowers",
+      "seeds",
+      "bulbs"
+    ],
+    "destination": "ME",
+    "category": "food_plant",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Draft (unverified): small non-commercial quantities may be brought without a phytosanitary certificate — fresh fruit and vegetables (except potatoes) up to 5 kg total, one bouquet of cut flowers, up to 100 g of seeds in original packaging, up to 3 kg of bulbs, up to 3 house plants (not bonsai), up to 10 balcony plants — if from countries Montenegro allows imports from.",
+      "quantity": "Up to 5 kg fruit/veg (no potatoes)"
+    },
+    "notes": "Figures from the Ministry of Agriculture rulebook (Sl. list CG 27/2008, Art. 9), read only through the FAO FAOLEX copy (faolex.fao.org/docs/pdf/mne168619.pdf), not an official Montenegrin page. Missing: confirmation that this 2008 rulebook is still in force (Montenegro has aligned food/plant-health law with the EU since then), and an official copy on gov.me or sluzbenilist.me or a current page from the Food Safety, Veterinary and Phytosanitary Administration.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found",
+      "url": "https://www.gov.me/upravacarina/putnicki-promet"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "injectable-medication-me",
+    "names": [
+      "injectable medication",
+      "syringes",
+      "needles",
+      "insulin pens",
+      "epipen"
+    ],
+    "destination": "ME",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Not verified. The general personal-medication rule (up to 6 months' supply for personal use) presumably applies, but no source addresses injectables, needles or pens specifically."
+    },
+    "notes": "No Montenegrin or traveller-government source found that mentions insulin, GLP-1 pens (Ozempic/Wegovy/Mounjaro), syringes or needles. Brand names deliberately left out of names. Needs: a Customs Administration or CInMED statement on carrying injectable medicines and needles.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found",
+      "url": "https://www.gov.me/upravacarina/putnicki-promet"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "e-cigarettes-me",
+    "names": [
+      "e-cigarettes",
+      "vape",
+      "vapes",
+      "e-liquid",
+      "heated tobacco",
+      "iqos"
+    ],
+    "destination": "ME",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "limits": {
+      "description": "Not verified — no duty-free allowance or import rule for e-cigarettes or e-liquids found."
+    },
+    "notes": "The customs Decree (Sl. list CG 31/25) allowances list only cigarettes, cigarillos, cigars and smoking tobacco; e-cigarettes, e-liquids and heated-tobacco sticks are not mentioned. Needs: the Customs Administration's treatment of these products for travellers, and any rule in Montenegro's tobacco-control law on bringing them in.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found",
+      "url": "https://www.gov.me/upravacarina/putnicki-promet"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "injectable-medication-jm",
+    "names": [
+      "injectable medication",
+      "insulin",
+      "syringes",
+      "needles",
+      "injection pens"
+    ],
+    "destination": "JM",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "needs_verification: no Jamaican official source specifically addresses injectable medicines, needles/syringes or GLP-1 pens (Ozempic/Wegovy/Mounjaro) for travellers. The general Ministry of Health guidance (via Embassy of Jamaica, Brussels) allows 'regular prescriptions' in original labelled containers with a copy of the prescription and a physician's letter, which probably covers insulin, but syringes/needles and any cold-chain/device rule are not mentioned. Needs a Ministry of Health and Wellness or JCA page that covers injectables.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (Jamaica Customs Agency)",
+      "url": "https://jca.gov.jm/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "e-cigarettes-jm",
+    "names": [
+      "e-cigarettes",
+      "vape",
+      "vapes",
+      "e-liquid",
+      "vape pens",
+      "electronic cigarettes",
+      "heated tobacco"
+    ],
+    "destination": "JM",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "notes": "needs_verification: no current official Jamaican rule on travellers bringing e-cigarettes was found. Secondary (news, 2014) reports said the Ministry of Health and JCA blocked imports of e-cigarettes with liquid cartridges pending safety assessment; a Ministry of Health statement (October 2024, moh.gov.jm/?p=24234, found via search only, not read) speaks of moving to regulate e-cigarettes. Neither establishes the current traveller rule. Needs a JCA or MOHW page, or a gazetted regulation.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (Jamaica Customs Agency)",
+      "url": "https://jca.gov.jm/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "prescription-medication-bs",
+    "names": [
+      "prescription medication",
+      "medicine",
+      "medication",
+      "pills",
+      "prescription drugs"
+    ],
+    "destination": "BS",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "MISSING: no Bahamian government page sets a personal-use rule for travellers' prescription medicines. Bahamas Customs pages (Arriving, General Traveler's Questions, Prohibited & Restricted) are silent on medicines. The Ministry of Health and Wellness pages on bahamas.gov.bs return 403. Secondary sites claim a 30-day or 90-day supply limit and say the Bahamas Embassy in Washington recommends carrying a doctor's letter. These are unverified; the embassy site did not resolve. Official cross-checks found only general advice: Auswärtiges Amt suggests getting an English doctor's certificate of necessity for regular medicines, and Canada advises keeping medicine in its original container with a copy of the prescription. Next step: the Ministry of Health and Wellness or Pharmacy Council, or the INCB country-regulations page for The Bahamas.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (The Bahamas Customs Department, Arriving)",
+      "url": "https://www.bahamascustoms.gov.bs/visitor-info/arriving/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "controlled-medication-bs",
+    "names": [
+      "controlled medication",
+      "narcotics",
+      "opioids",
+      "codeine",
+      "morphine",
+      "oxycodone",
+      "methadone",
+      "benzodiazepines",
+      "diazepam",
+      "adhd medication",
+      "stimulants",
+      "adderall"
+    ],
+    "destination": "BS",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "MISSING: no traveller procedure was found. The Dangerous Drugs Act (Ch. 228, 2000 revised edition, laws.bahamas.gov.bs/cms/images/LEGISLATION/PRINCIPAL/2000/2000-0043/2000-0043.pdf) s.15(4) says 'No dangerous drug shall be imported into The Bahamas' unless the importer holds a valid import authorisation (Form C) issued by the Minister. That is the commercial import-certificate regime, and the Act does not say whether a traveller carrying their own prescribed dose falls under it or has an exemption. Secondary sources say an import licence or approval from the Chief Medical Officer (Ministry of Health and Wellness) is needed, with a 30-daily-dose cap for opioid-substitution treatment. Unverified. Also unconfirmed: whether pseudoephedrine products are affected by the Customs precursor-chemical restriction (listed for manufacturing, not personal use).",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (The Bahamas Customs Department, Arriving)",
+      "url": "https://www.bahamascustoms.gov.bs/visitor-info/arriving/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "injectable-medication-bs",
+    "names": [
+      "injectable medication",
+      "insulin",
+      "syringes",
+      "needles",
+      "epipen",
+      "ozempic",
+      "wegovy",
+      "mounjaro",
+      "glp-1"
+    ],
+    "destination": "BS",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "MISSING: no Bahamian official source covers travelling with injectable medicines, needles or GLP-1 pens. Pending a primary source (Ministry of Health and Wellness or Customs), carry a prescription and doctor's letter. This is general advice, not a verified Bahamian rule.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (The Bahamas Customs Department, Arriving)",
+      "url": "https://www.bahamascustoms.gov.bs/visitor-info/arriving/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "e-cigarettes-bs",
+    "names": [
+      "e-cigarettes",
+      "vape",
+      "vapes",
+      "e-liquid",
+      "heated tobacco",
+      "iqos",
+      "nicotine pouches"
+    ],
+    "destination": "BS",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "notes": "MISSING: Bahamas Customs gives a tobacco allowance (200 cigarettes / 50 cigars / 1 lb) but says nothing about e-cigarettes, e-liquids, heated tobacco or nicotine pouches. No other official page was found. Do not assume the tobacco allowance covers them.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (The Bahamas Customs Department, Arriving)",
+      "url": "https://www.bahamascustoms.gov.bs/visitor-info/arriving/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "controlled-medication-ec",
+    "names": [
+      "controlled medication",
+      "narcotics",
+      "psychotropics",
+      "adhd medication",
+      "opioids",
+      "benzodiazepines"
+    ],
+    "destination": "EC",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "Missing: no Ecuadorian page states how a traveller may bring medicines containing controlled (narcotic/psychotropic) substances. SENAE's personal-effects list only says medicines need a prescription (national or foreign). ARCSA's gob.ec procedure 'Autorización previo embarque para importación de medicamentos que contengan sustancias catalogadas sujetas a fiscalización' (updated 2024-03-05) is for registered importers (RUC holders), not travellers. Need an ARCSA or Ministerio de Salud rule on personal-use quantities / required documents; controlsanitario.gob.ec timed out.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (main official customs page: SENAE Viajeros por Vía Aérea)",
+      "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/viajeros-por-via-aerea/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "injectable-medication-ec",
+    "names": [
+      "injectable medication",
+      "insulin",
+      "syringes",
+      "needles",
+      "epipen"
+    ],
+    "destination": "EC",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "Missing: no official source specifically covers injectables, needles or GLP-1 pens. The general SENAE rule (medicines with a prescription are personal effects; up to 2 glucose meters) probably applies, but no page names insulin or syringes, so this is left unverified. Brand names (Ozempic, Wegovy, Mounjaro) deliberately not added.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (main official customs page: SENAE Viajeros por Vía Aérea)",
+      "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/viajeros-por-via-aerea/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "cannabis-ec",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "cbd",
+      "hemp",
+      "thc"
+    ],
+    "destination": "EC",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Missing: no primary source read. Not on SENAE's personal-effects list. Ecuador's drug law (Ley Orgánica de Prevención Integral del Fenómeno Socio Económico de las Drogas) and the COIP govern cannabis; the rule on carrying cannabis or CBD across the border has to be checked against the COIP/drug-law text and any ARCSA rules for non-psychoactive cannabis/CBD. Verdict 'prohibited' is a placeholder, not verified.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (main official customs page: SENAE Viajeros por Vía Aérea)",
+      "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/viajeros-por-via-aerea/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "meat-dairy-ec",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "ham",
+      "jamón",
+      "sausages",
+      "salami",
+      "milk"
+    ],
+    "destination": "EC",
+    "category": "food_animal",
+    "verdict": "depends",
+    "notes": "Missing: agrocalidad.gob.ec returns HTTP 403 (Incapsula bot block) to curl, WebFetch and headless Chromium. Press reports (eldiario.ec, Jan 2026) quote Agrocalidad allowances (e.g. pasteurised dairy up to 5 kg, vacuum-sealed sausages up to 10 kg, meat up to 5 kg with a zoosanitary registration) and stepped-up checks on pork products from Europe after African swine fever — none checked against an Agrocalidad page. SENAE's list counts 'alimentos debidamente sellados o empacados al vacío' as personal effects for duty, but that is a customs-duty rule, not the animal-health rule.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (main official customs page: SENAE Viajeros por Vía Aérea)",
+      "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/viajeros-por-via-aerea/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "fresh-produce-ec",
+    "names": [
+      "fruit",
+      "vegetables",
+      "fresh produce",
+      "plants",
+      "seeds",
+      "soil",
+      "flowers"
+    ],
+    "destination": "EC",
+    "category": "food_plant",
+    "verdict": "depends",
+    "notes": "Missing: Agrocalidad site blocked (403). Press reports say all agricultural products must be declared, items with soil and propagation material (plants, cuttings, seeds) are not allowed, and controls were tightened after Fusarium race 4 (TR4) was detected in El Oro — not verified against Agrocalidad.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (main official customs page: SENAE Viajeros por Vía Aérea)",
+      "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/viajeros-por-via-aerea/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "e-cigarettes-ec",
+    "names": [
+      "e-cigarettes",
+      "vape",
+      "vapes",
+      "vaping",
+      "e-liquid",
+      "heated tobacco"
+    ],
+    "destination": "EC",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "notes": "Missing: e-cigarettes are not on SENAE's duty-free personal-effects list, so they would be taxable goods (or fall under the USD 500 catch-all for unlisted items) — but no official page says whether vapes need ARCSA/other permits or have a traveller allowance. Need SENAE/ARCSA/COMEX source.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (main official customs page: SENAE Viajeros por Vía Aérea)",
+      "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/viajeros-por-via-aerea/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "weapons-ec",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition",
+      "knives",
+      "pepper spray"
+    ],
+    "destination": "EC",
+    "category": "weapons",
+    "verdict": "depends",
+    "notes": "Missing: no source read. Firearms import/possession in Ecuador is controlled by the armed forces (Comando Conjunto) under the arms-control law; need the official rule for travellers bringing firearms, ammunition, pepper spray or knives.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (main official customs page: SENAE Viajeros por Vía Aérea)",
+      "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/viajeros-por-via-aerea/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "meat-dairy-tz",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "sausage",
+      "animal products"
+    ],
+    "destination": "TZ",
+    "category": "food_animal",
+    "verdict": "depends",
+    "notes": "Missing: a current primary source on travellers bringing meat or dairy in their luggage. Lead: the Tanzania High Commission Kuala Lumpur page (https://www.my.tzembassy.go.tz/services/category/visa-information, 'Import Permit Food, Plants, Pets and Animal Products') says an import permit from the 'National Food Commission' is required for meat and edible offal, but the page itself says \"This information has to be verified from Ministry of Agriculture... and Ministry of Water and Livestock Development\" and names ministries that no longer exist. It also has no traveller/personal-use exemption. Needs the Ministry of Livestock and Fisheries (mifugo.go.tz) / TMDA food import guidance.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found",
+      "url": "https://www.tra.go.tz/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "fresh-produce-tz",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds",
+      "fresh produce",
+      "flowers"
+    ],
+    "destination": "TZ",
+    "category": "food_plant",
+    "verdict": "depends",
+    "notes": "Missing: a current primary source. Same lead as meat-dairy-tz: the KL High Commission page says a special import permit from the Director of Agriculture is needed for fresh fruit, plants, plant parts and seeds, which may enter only at designated ports and are subject to quarantine. The page flags itself as needing verification. Needs the Tanzania Plant Health and Pesticides Authority (TPHPA, tphpa.go.tz) or the Ministry of Agriculture.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found",
+      "url": "https://www.tra.go.tz/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "e-cigarettes-tz",
+    "names": [
+      "e-cigarettes",
+      "vape",
+      "vapes",
+      "e-liquid",
+      "electronic cigarettes"
+    ],
+    "destination": "TZ",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "notes": "Missing: no Tanzanian primary source on importing e-cigarettes was found. TRA's passenger allowance lists only cigarettes, cigars, cheroots, cigarillos, tobacco and snuff (250 g). Needs the Tobacco Products (Regulation) Act or TRA/TMDA guidance.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found",
+      "url": "https://www.tra.go.tz/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "weapons-tz",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition",
+      "knives"
+    ],
+    "destination": "TZ",
+    "category": "weapons",
+    "verdict": "depends",
+    "notes": "Missing: no primary source read on bringing firearms or weapons as a visitor (licensing body, procedure). Needs the Firearms and Ammunition Control Act, 2015, or Tanzania Police Force guidance.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found",
+      "url": "https://www.tra.go.tz/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "wildlife-products-tz",
+    "names": [
+      "animal skins",
+      "ivory",
+      "seashells",
+      "hunting trophies",
+      "wildlife products"
+    ],
+    "destination": "TZ",
+    "category": "other",
+    "verdict": "depends",
+    "notes": "Export-side rule, recorded as a lead: Canada's advice (travel.gc.ca, 7 Oct 2026) says taking animal parts out of Tanzania needs a special permit from the Tanzania Wildlife Management Authority, and collecting seashells from marine parks is illegal; UK FCDO warns against bringing animal-skin accessories into Tanzania. Not an import verdict, and no TAWA page was read, so it is left unverified.",
+    "legal_source": {
+      "name": "Travel advice and advisories for Tanzania, Government of Canada (travel.gc.ca)",
+      "url": "https://travel.gc.ca/destinations/tanzania"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "alcohol-kh",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "duty free alcohol"
+    ],
+    "destination": "KH",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "notes": "Duty-free alcohol allowance not found on any readable primary source. customs.gov.kh timed out from every route tried; no traveller-government page states a quantity. Secondary sites conflict (1 L vs 2 L) — do not use.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (General Department of Customs and Excise of Cambodia; customs.gov.kh unreachable)",
+      "url": "https://www.customs.gov.kh/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "tobacco-kh",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "duty free cigarettes"
+    ],
+    "destination": "KH",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "notes": "Duty-free tobacco allowance not found on any primary source; secondary sites conflict (200 vs 400 cigarettes). Needs the GDCE passenger allowance prakas.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (General Department of Customs and Excise of Cambodia; customs.gov.kh unreachable)",
+      "url": "https://www.customs.gov.kh/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "e-cigarettes-kh",
+    "names": [
+      "e-cigarettes",
+      "vape",
+      "vapes",
+      "vaping",
+      "e-liquid",
+      "heated tobacco",
+      "iqos",
+      "shisha"
+    ],
+    "destination": "KH",
+    "category": "e_cigarettes",
+    "verdict": "prohibited",
+    "notes": "News and NGO reports say Cambodia bans import, sale, use and possession of e-cigarettes and shisha (2014 directive, heated tobacco added 2021, consolidated by an October 2025 directive) and that enforcement is active in 2026, but no official Cambodian text (Khmer) or traveller-government page confirming it was read. Likely prohibited — high-stakes, so left unverified.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (General Department of Customs and Excise of Cambodia; customs.gov.kh unreachable)",
+      "url": "https://www.customs.gov.kh/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "prescription-medication-kh",
+    "names": [
+      "medication",
+      "medicine",
+      "prescription drugs",
+      "pills",
+      "personal medication"
+    ],
+    "destination": "KH",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "No Cambodian Ministry of Health/DDF rule on personal-use quantities found. Traveller-government pages only say keep medicines in original packaging and check legality (Canada, Netherlands). Netherlands advice says to check whether a medicines declaration is needed.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (General Department of Customs and Excise of Cambodia; customs.gov.kh unreachable)",
+      "url": "https://www.customs.gov.kh/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "controlled-medication-kh",
+    "names": [
+      "adhd medication",
+      "stimulants",
+      "opioids",
+      "benzodiazepines",
+      "codeine",
+      "controlled medication",
+      "narcotic medication"
+    ],
+    "destination": "KH",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "Japan MOFA lists narcotics among prohibited imports but gives no rule for prescribed controlled medicines (it links to Japan's own MHLW page for leaving/returning to Japan). No Cambodian rule from the Ministry of Health or the National Authority for Combating Drugs was found.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (General Department of Customs and Excise of Cambodia; customs.gov.kh unreachable)",
+      "url": "https://www.customs.gov.kh/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "injectable-medication-kh",
+    "names": [
+      "insulin",
+      "syringes",
+      "injectable medication",
+      "epipen"
+    ],
+    "destination": "KH",
+    "category": "medication",
+    "verdict": "depends",
+    "notes": "No primary source addresses injectable medication or syringes for travellers to Cambodia.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (General Department of Customs and Excise of Cambodia; customs.gov.kh unreachable)",
+      "url": "https://www.customs.gov.kh/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "meat-dairy-kh",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "sausage",
+      "pork",
+      "animal products"
+    ],
+    "destination": "KH",
+    "category": "food_animal",
+    "verdict": "depends",
+    "notes": "No primary source on import of animal-origin food by travellers found (customs.gov.kh and Ministry of Agriculture pages not reached).",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (General Department of Customs and Excise of Cambodia; customs.gov.kh unreachable)",
+      "url": "https://www.customs.gov.kh/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "fresh-produce-kh",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds",
+      "fresh produce"
+    ],
+    "destination": "KH",
+    "category": "food_plant",
+    "verdict": "depends",
+    "notes": "No primary source on import of plants/plant products by travellers found.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (General Department of Customs and Excise of Cambodia; customs.gov.kh unreachable)",
+      "url": "https://www.customs.gov.kh/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "radio-equipment-kh",
+    "names": [
+      "radio",
+      "walkie talkie",
+      "two-way radio",
+      "radio transmitter"
+    ],
+    "destination": "KH",
+    "category": "other",
+    "verdict": "prohibited",
+    "notes": "Japan MOFA (updated 25 Mar 2025) lists '無線機' (radio equipment) among items prohibited from import, but does not define the scope (e.g. whether licensed/consumer devices are covered). Too ambiguous to publish without the Cambodian customs text.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (General Department of Customs and Excise of Cambodia; customs.gov.kh unreachable)",
+      "url": "https://www.customs.gov.kh/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "cannabis-il",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "cbd",
+      "cbd oil",
+      "medical cannabis",
+      "thc"
+    ],
+    "destination": "IL",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "No official gov.il page found on travellers bringing cannabis or CBD into Israel. Cannabis is a dangerous drug under the Dangerous Drugs Ordinance, and MoH says controlled substances may be brought in for 31 days with a prescription and a home-country permit, but no official page says whether that covers foreign medical-cannabis prescriptions. Secondary sources say foreign cannabis licences aren't recognised. Not verified, and 'prohibited' is only a placeholder; CBD status is unknown. Needs the MoH Medical Cannabis Unit (IMCA) or customs to confirm.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (Israel Tax Authority / Ministry of Health / Ministry of Agriculture)",
+      "url": "https://www.gov.il/en/pages/guide-tourist-customs"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "e-cigarettes-il",
+    "names": [
+      "e-cigarettes",
+      "vape",
+      "vapes",
+      "e-liquid",
+      "disposable vape",
+      "iqos",
+      "heated tobacco"
+    ],
+    "destination": "IL",
+    "category": "e_cigarettes",
+    "verdict": "allowed_with_limits",
+    "notes": "The customs guide bans importing 'tobacco and smoking products' not packaged and marked per the 1983 Law on Restriction on Advertising and Marketing of Tobacco and Smoking Products, but doesn't spell out e-cigarette allowances. A news report (not primary) describes a purchase-tax order allowing 4 ml liquid / 2 disposables (under 5 days abroad) or 10 ml / 5 disposables (5+ days). That order's text hasn't been found on gov.il or Nevo. Needs the official order or an Israel Tax Authority page.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (Israel Tax Authority / Ministry of Health / Ministry of Agriculture)",
+      "url": "https://www.gov.il/en/pages/guide-tourist-customs"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "meat-dairy-il",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "sausage",
+      "salami",
+      "milk",
+      "eggs",
+      "honey",
+      "animal products"
+    ],
+    "destination": "IL",
+    "category": "food_animal",
+    "verdict": "depends",
+    "notes": "The customs guide allows food within the $200 allowance (3 kg in total, 1 kg per type), but no Ministry of Agriculture Veterinary Services page for travellers carrying meat or dairy was found. Secondary sites conflict (banned vs. declare/permit). Needs the MoAg veterinary page.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (Israel Tax Authority / Ministry of Health / Ministry of Agriculture)",
+      "url": "https://www.gov.il/en/pages/guide-tourist-customs"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "fresh-produce-il",
+    "names": [
+      "fruit",
+      "vegetables",
+      "fresh produce",
+      "fresh fruit"
+    ],
+    "destination": "IL",
+    "category": "food_plant",
+    "verdict": "prohibited",
+    "notes": "Israeli news reports quote the Ministry of Agriculture saying the Plant Protection Law bans bringing fruit and vegetables through border crossings, except one etrog per traveller. No primary MoAg page was reached; the Tax Authority guide only says 'Plants, seeds' need a plant protection certificate. 'Prohibited' is a placeholder.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (Israel Tax Authority / Ministry of Health / Ministry of Agriculture)",
+      "url": "https://www.gov.il/en/pages/guide-tourist-customs"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "injectable-medication-il",
+    "names": [
+      "insulin",
+      "injectable medication",
+      "syringes",
+      "needles",
+      "epipen",
+      "glp-1"
+    ],
+    "destination": "IL",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "notes": "The MoH 90-day personal-supply rule covers all non-narcotic, non-psychotropic medicines, so insulin and GLP-1 pens probably fall under it, but no official page mentions injectables, syringes or needles, or any brand (Ozempic, Wegovy, Mounjaro). Not published as a separate row, to avoid an inferred brand-name answer.",
+    "legal_source": {
+      "name": "Not yet verified — no primary source found (Israel Tax Authority / Ministry of Health / Ministry of Agriculture)",
+      "url": "https://www.gov.il/en/pages/guide-tourist-customs"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
   }
 ]

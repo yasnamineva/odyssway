@@ -3090,3 +3090,37 @@ Still open, by destination:
   meat/dairy other than pork, fresh produce. portal.moi.gov.qa needs a headless
   browser session at /qatarvisas/ (trailing slash).
 - Israel (IL) is held for CO, JO and QA.
+
+## Done (2026-10-10/11) — batch 5: eight more destinations
+
+Promoted to /data (50 destinations now): Chile (CL), Montenegro (ME), Jamaica
+(JM), Bahamas (BS), Ecuador (EC), Tanzania (TZ), Cambodia (KH), Israel (IL).
+Same process as batch 4 (shared brief with batch-4 lessons; riskiest claims
+spot-checked against the official page before merging).
+
+Spot-check decisions made at merge:
+- **Bahamas stay length**: Bahamas Immigration says only "three (3) months or
+  eight (8) months as each individual agreement may dictate", stamped by the
+  officer. Only US (Immigration: "not exceeding eight (8) months") and CA
+  (Canada: "up to 8 months") keep 240 days; GB keeps GOV.UK's "usually 30
+  days"; all other passports show no day count.
+- **Cambodia is thin by necessity**: 9 of 22 passports verified. The e-visa
+  portal's eligible-nationality list sits behind a captcha and customs.gov.kh
+  never answered, so 13 entry rows and 9 customs rows are held.
+- **Tanzania mandatory inbound travel insurance** (~USD 44, NIC mainland / ZIC
+  Zanzibar) is listed on every entry row, confirmed on travel.gc.ca
+  (2026-10-07). Its legal basis is reported as Government Notice No. 256 of
+  2026 (from 1 Oct 2026) but that notice wasn't read — add NIC's FAQ and the
+  notice to the source watcher.
+- **Montenegro**: China moves fully to the visa regime from 1 Nov 2026 (gov.me);
+  the group-tour/business exemptions end 31 Oct 2026 — re-check after that date.
+
+Still open (held in data/UNVERIFIED):
+- CL: e-cigarettes-cl, sag-false-declaration-fine-cl
+- ME: fresh-produce-me, injectable-medication-me, e-cigarettes-me
+- JM: injectable-medication-jm, e-cigarettes-jm
+- BS: prescription-medication-bs, controlled-medication-bs, injectable-medication-bs, e-cigarettes-bs
+- EC: controlled-medication-ec, injectable-medication-ec, cannabis-ec, meat-dairy-ec, fresh-produce-ec, e-cigarettes-ec, weapons-ec
+- TZ: meat-dairy-tz, fresh-produce-tz, e-cigarettes-tz, weapons-tz, wildlife-products-tz
+- KH: US→KH, AU→KH, NZ→KH, KR→KH, CN→KH, IN→KH, IL→KH, UA→KH, MX→KH, BR→KH, AR→KH, CL→KH, DE→KH, alcohol-kh, tobacco-kh, e-cigarettes-kh, prescription-medication-kh, controlled-medication-kh, injectable-medication-kh, meat-dairy-kh, fresh-produce-kh, radio-equipment-kh
+- IL: cannabis-il, e-cigarettes-il, meat-dairy-il, fresh-produce-il, injectable-medication-il

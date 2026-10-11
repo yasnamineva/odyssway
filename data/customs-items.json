@@ -11047,5 +11047,2066 @@
     "verified_at": "2026-10-09",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "alcohol-cl",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "whisky",
+      "vodka",
+      "pisco",
+      "alcoholic beverages",
+      "duty free alcohol"
+    ],
+    "destination": "CL",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Up to 2,500 cc (2.5 litres) of alcoholic beverages per adult traveller duty-free as part of baggage.",
+      "quantity": "2.5 L per adult"
+    },
+    "notes": "Aduana Exempt Resolution No. 309 (Annex 5, point I.3) includes in a traveller's duty-free baggage, per adult traveller, '2500 cubic centimeters of alcoholic beverages'. The joint Aduana–SAG declaration form states this applies to 'people over the age 18'. Anything above the allowance must be declared and taxed. Separately, duty-free shop purchases made on arrival in Chile (Law 19.288) are allowed up to US$675 per trip — Exempt Resolution No. 1301 raised this from US$500 (the older figure still printed on the 2016 declaration form and on some Aduana FAQ pages; the resolution controls). Aduana's 'Visto Bueno' list notes alcoholic beverages are an SAG-controlled product for imports generally; the baggage allowance above is the traveller rule.",
+    "legal_source": {
+      "name": "Servicio Nacional de Aduanas — Exempt Resolution No. 309 (Annex No. 5, Appendix XI, Chapter III of the Compendium of Customs Regulations: benefits for travellers; in force 13 March 2018), official English version; amounts updated by Exempt Resolution No. 1301",
+      "url": "https://www.aduana.cl/aduana/site/docs/20241104/20241104131844/exempt_resolution_309.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-cl",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "pipe tobacco",
+      "cigarillos",
+      "duty free cigarettes"
+    ],
+    "destination": "CL",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Per adult traveller: 400 cigarettes, 500 g of pipe tobacco and 50 cigars, duty-free.",
+      "quantity": "400 cigarettes + 500 g pipe tobacco + 50 cigars"
+    },
+    "notes": "Aduana Exempt Resolution No. 309 (Annex 5, point I.3): 'Up to a quantity not exceeding per adult traveler 400 units of cigarettes, 500 grams of pipe tobacco; 50 units of cigars'. The joint Aduana–SAG form gives the same figures for travellers over 18. Amounts above this must be declared and taxed. E-cigarettes are not mentioned in the allowance (see e-cigarettes, unverified).",
+    "legal_source": {
+      "name": "Servicio Nacional de Aduanas — Exempt Resolution No. 309 (Annex No. 5, Appendix XI, Chapter III of the Compendium of Customs Regulations: benefits for travellers; in force 13 March 2018), official English version; amounts updated by Exempt Resolution No. 1301",
+      "url": "https://www.aduana.cl/aduana/site/docs/20241104/20241104131844/exempt_resolution_309.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-cl",
+    "names": [
+      "cash",
+      "money",
+      "currency",
+      "dollars",
+      "euros",
+      "pesos",
+      "bearer instruments",
+      "traveller's cheques",
+      "cheques",
+      "declare cash"
+    ],
+    "destination": "CL",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Cash or bearer negotiable instruments over US$10,000 (or the equivalent in any currency, including Chilean pesos) must be declared to Aduanas on entry and on exit.",
+      "quantity": "over US$10,000"
+    },
+    "notes": "Aduana 'Declaración de Dinero' page: 'Si ingresas o sales de Chile con más de US$ 10.000 o su equivalente en cualquier moneda debes declararlo ante Aduanas' (legal basis: art. 4 of Law 19.913); the same page's next sentence says 'desde 10.000 dólares' (from US$10,000) — so declaring at exactly US$10,000 is the safe choice. Declare to Aduana officials at the border checkpoint; the joint Aduana–SAG form has a yes/no box for it. Penalty: the current Aduana page quotes art. 168 bis of the Ordenanza de Aduanas — when the offence is detected Aduanas 'deberá retener la totalidad del dinero en efectivo o los instrumentos negociables al portador' and must bring criminal action immediately (the page links Law 21.632 strengthening anti-smuggling law). The older 2016 joint form instead describes a fine of up to 30% of the undeclared amount (Law 19.913 art. 39); the current Aduana page is treated as controlling and the conflict is noted.",
+    "legal_source": {
+      "name": "Servicio Nacional de Aduanas — Declaración de Dinero (Viajero, viajera y turista)",
+      "url": "https://www.aduana.cl/declaracion-de-dinero/aduana/2018-12-28/084148.html"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-cl",
+    "names": [
+      "prescription medication",
+      "prescription medicine",
+      "medicine",
+      "medication",
+      "pills",
+      "tablets",
+      "over-the-counter medicine",
+      "painkillers",
+      "vitamins",
+      "antibiotics"
+    ],
+    "destination": "CL",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Personal-use medicines in quantities consistent with the prescription (ISP's reference is up to 6 months of treatment), carried with a dated, doctor-signed prescription or medical certificate no older than 6 months; OTC medicines only in the amount needed for your stay.",
+      "quantity": "up to 6 months' treatment"
+    },
+    "notes": "ISP 'Guía para ingresar medicamentos a Chile en el equipaje' (5 June 2025): Chile has no specific health regulation for medicines in travellers' baggage; the customs baggage rule covers 'Medicamentos, en cantidades conforme a la respectiva receta médica, siempre que sean para su uso personal o de familiares directos'; OTC medicines only in quantities for personal use. ISP requires: carry the prescription or medical certificate showing daily dose and length of treatment, 'idealmente traducida al español'; it must be dated, not more than 6 months old, and signed by a doctor; generic/INN name suggested; quantity consistent with the prescribed treatment ('el uso racional de medicamentos considera hasta seis (6) meses de tratamiento'); keep medicines in their original packaging; medicines must travel with the passenger. Raw materials ('polvos, líquidos o productos no etiquetados') are prohibited. Aduana: quantities that exceed normal personal use are presumed commercial and retained. Aduana's Visto Bueno page also notes ISP-related retention of products such as melatonin, slimming products and supplements claiming therapeutic properties, and hormonal supplements.",
+    "legal_source": {
+      "name": "Instituto de Salud Pública de Chile (ISP), Agencia Nacional de Medicamentos — Guía para ingresar medicamentos a Chile en el equipaje (published 5 June 2025)",
+      "url": "https://www.ispch.gob.cl/anamed/importacion-y-exportacion/guia-para-ingresar-medicamentos-a-chile-en-el-equipaje/"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-cl",
+    "names": [
+      "controlled medication",
+      "controlled drugs",
+      "narcotics",
+      "psychotropics",
+      "opioids",
+      "benzodiazepines",
+      "adhd medication",
+      "stimulants",
+      "sleeping pills",
+      "strong painkillers"
+    ],
+    "destination": "CL",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "No separate traveller procedure is published; ISP's general personal-use rule applies (prescription with dose and duration, quantity matching the treatment, original packaging), but possession of narcotic/psychotropic substances without justification is a crime under Law 20.000."
+    },
+    "notes": "ISP's traveller guide (5 June 2025) does not set a separate rule for narcotic or psychotropic medicines; it applies the general personal-use conditions to all medicines and cites the UNODC/INCB guidelines stating that travellers under medical treatment carrying internationally controlled medicines are not carrying out an import/export operation. Chile publishes no list of restricted medicines for travellers (the Korean Embassy in Chile, citing the ISP guide in Aug 2026, says Chile does not publish one). Legal backdrop (Law 20.000, version in force from 23 May 2026, bcn.cl): art. 3 treats importing or carrying such substances 'sin contar con la autorización competente' as trafficking; art. 4 punishes possession of small quantities 'a menos que justifique que están destinadas a la atención de un tratamiento médico' or exclusive, near-term personal use. So bring the prescription (Spanish translation recommended), only the prescribed quantity, in original packaging, and ask ISP (Agencia Nacional de Medicamentos) in advance if unsure. No specific drug (e.g. a named ADHD stimulant) is named by any source read, so none is named here.",
+    "legal_source": {
+      "name": "Instituto de Salud Pública de Chile (ISP), Agencia Nacional de Medicamentos — Guía para ingresar medicamentos a Chile en el equipaje (published 5 June 2025)",
+      "url": "https://www.ispch.gob.cl/anamed/importacion-y-exportacion/guia-para-ingresar-medicamentos-a-chile-en-el-equipaje/"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "injectable-medication-cl",
+    "names": [
+      "injectable medication",
+      "insulin",
+      "insulin pen",
+      "ozempic",
+      "wegovy",
+      "mounjaro",
+      "glp-1",
+      "semaglutide",
+      "tirzepatide",
+      "epipen",
+      "syringes"
+    ],
+    "destination": "CL",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Prescription injectables follow the general personal-use rule: quantity consistent with a dated (≤6 months), doctor-signed prescription showing dose and duration, in original packaging.",
+      "quantity": "up to 6 months' treatment"
+    },
+    "notes": "ISP's traveller guide (5 June 2025) applies one rule to all personal-use prescription medicines, so insulin and GLP-1 pens (e.g. Ozempic, Wegovy, Mounjaro) are covered as prescription medicines: carry the prescription/medical certificate with daily dose and duration (ideally translated into Spanish), dated within 6 months and doctor-signed; quantity consistent with the treatment (reference: up to 6 months); original packaging. No source read addresses needles/syringes, sharps or cold-chain packaging specifically, and none names these brands — the names are listed only because they are prescription medicines within the general rule.",
+    "legal_source": {
+      "name": "Instituto de Salud Pública de Chile (ISP), Agencia Nacional de Medicamentos — Guía para ingresar medicamentos a Chile en el equipaje (published 5 June 2025)",
+      "url": "https://www.ispch.gob.cl/anamed/importacion-y-exportacion/guia-para-ingresar-medicamentos-a-chile-en-el-equipaje/"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-cl",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "marihuana",
+      "weed",
+      "thc",
+      "hashish",
+      "edibles",
+      "cannabis oil"
+    ],
+    "destination": "CL",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "ISP's 2023 cannabis guide: 'Cannabis es Estupefaciente', THC is a psychotropic, and any cannabis extract with more than 0.2% THC is a narcotic; foods may not contain cannabis or derivatives; import of controlled cannabis raw material is allowed only for manufacturing pharmaceutical products. Aduana 'Viajeros que ingresan al país': 'En Chile, está prohibido y penado por ley la tenencia y el tráfico de drogas y sustancias psicotrópicas'. Law 20.000 art. 3 treats importing such substances without authorisation as trafficking. Law 20.000's medical-cannabis provision (art. 8, as quoted by ISP) concerns cultivation justified by a prescription from a treating doctor; nothing read authorises travellers to import cannabis. Do not bring cannabis or THC products, including medical cannabis prescribed abroad, without first checking with ISP.",
+    "legal_source": {
+      "name": "Instituto de Salud Pública de Chile — Cannabis: uso medicinal, vigilancia y control (Versión 2023); Ley N° 20.000 (latest version in force from 23 May 2026, Biblioteca del Congreso Nacional); Aduana — Viajeros que ingresan al país",
+      "url": "https://www.ispch.cl/wp-content/uploads/2023/10/04-Cannabis.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cbd-cl",
+    "names": [
+      "cbd",
+      "cbd oil",
+      "cannabidiol",
+      "hemp",
+      "cbd gummies",
+      "cbd cream"
+    ],
+    "destination": "CL",
+    "category": "cbd_cannabis",
+    "verdict": "depends",
+    "limits": {
+      "description": "CBD products are treated as medicines; products with >0.2% THC are narcotics (prohibited); ISP has authorised no cannabis cosmetics and foods may not contain cannabis."
+    },
+    "notes": "ISP 2023 cannabis guide: 'Todo producto con cannabis y derivados es MEDICAMENTO'; cannabis extract with under 0.2% THC and CBD (cannabidiol) are pharmaceutical raw materials 'no sujetas a control legal' as narcotics, but 'Todo producto en base a extracto de cannabis que contenga un porcentaje mayor al 0,2 de THC es un estupefaciente'; 'El ISP no ha autorizado cosméticos con cannabis y derivados'; 'Los alimentos NO pueden contener cannabis y derivados' (hemp seed foods are subject to THC contaminant limits in DS 977/1966 art. 170 bis). No source read says whether a traveller may carry a CBD product for personal use; a prescribed CBD medicine would presumably fall under the general personal-use medicine rule, but that is not stated. Treat CBD gummies, creams and oils as risky; check with ISP before travelling.",
+    "legal_source": {
+      "name": "Instituto de Salud Pública de Chile — Cannabis: uso medicinal, vigilancia y control (Versión 2023); Ley N° 20.000 (latest version in force from 23 May 2026, Biblioteca del Congreso Nacional); Aduana — Viajeros que ingresan al país",
+      "url": "https://www.ispch.cl/wp-content/uploads/2023/10/04-Cannabis.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-cl",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "yoghurt",
+      "ham",
+      "sausages",
+      "salami",
+      "jerky",
+      "eggs",
+      "honey",
+      "propolis",
+      "royal jelly",
+      "pet food",
+      "animal products"
+    ],
+    "destination": "CL",
+    "category": "food_animal",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "All animal products must be declared on the joint Aduana–SAG sworn declaration; an SAG inspector decides whether each item may enter."
+    },
+    "notes": "SAG 'Ingreso a Chile' (page read 2026-10-10; sag.gob.cl itself was down for maintenance, read via sag.cl): every person entering Chile must declare under oath any animal or plant products carried 'sin importar su cantidad o tiempo desde que lo obtuvo'; 'Un/a inspector/a SAG evaluará si el producto está en condiciones de ingresar al país'. The joint Aduana–SAG form lists animal products to declare: live animals (birds, bees, pets), 'Carne o derivados (jamón, embutidos, otros)', 'Leche y sus derivados (queso, yogurt, otros)', bee products (honey, royal jelly, propolis), veterinary medicines, semen/embryos, animal feed, 'Productos de origen animal y comida de uso personal, que los contenga', animal-origin crafts (antlers, horns, hooves), trophies and insect collections; CITES species need documentation. 'Declaring YES does not necessarily imply authorization'; a false SAG declaration 'constituye falta y será sancionado con multa' (no amount verified — see unverified). Luggage may be X-rayed or checked by SAG detector dogs. Which specific products are refused was not readable (SAG product pages unavailable), so the verdict is declaration rather than a ban.",
+    "legal_source": {
+      "name": "Servicio Agrícola y Ganadero (SAG) — Ingreso a Chile: declara todos los productos vegetales y animales que traigas a Chile",
+      "url": "https://www.sag.cl/ambitos-de-accion/ingreso-chile"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-cl",
+    "names": [
+      "fruit",
+      "vegetables",
+      "fresh produce",
+      "seeds",
+      "plants",
+      "flowers",
+      "nuts",
+      "spices",
+      "herbs",
+      "grains",
+      "beans",
+      "soil",
+      "wood",
+      "dried fruit"
+    ],
+    "destination": "CL",
+    "category": "food_plant",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "All plant products — fresh, dried, dehydrated, frozen or processed — must be declared on the joint Aduana–SAG sworn declaration; an SAG inspector decides whether each item may enter."
+    },
+    "notes": "SAG 'Ingreso a Chile': declare every plant or animal product regardless of quantity; an SAG inspector decides admissibility. The joint Aduana–SAG form lists plant products to declare: 'Frutos y hortalizas (frescas, secas, deshidratadas, congeladas y agroindustrializadas)', live plants and plant parts, all grains and seeds (including for eating), legumes, spices/herbs/seasonings, flowers, soil or anything containing soil, plant-origin crafts, wood, conifer cones, biological material (live insects, spores), other packed or unpacked plant products, pesticides and fertilisers. False declaration is punishable by a fine. Declaring does not guarantee entry; non-compliant products are not allowed in.",
+    "legal_source": {
+      "name": "Servicio Nacional de Aduanas / SAG — Bienvenido/a a Chile: Declaración Jurada (Welcome to Chile Affidavit), joint Aduana–SAG form, version 03",
+      "url": "https://www.aduana.cl/aduana/site/docs/20080129/20080129131334/declaracion_conjunta_sag_aduanas.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-cl",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "rifles",
+      "shotguns",
+      "ammunition",
+      "hunting rifle",
+      "explosives",
+      "bows",
+      "arrows",
+      "crossbows",
+      "martial arts weapons",
+      "nunchaku"
+    ],
+    "destination": "CL",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "Firearms, ammunition, explosives and martial-arts implements (including bows, arrows, crossbows) need prior DGMN authorisation; foreign hunters and sport shooters apply for a temporary-import authorisation through a Chilean legal representative."
+    },
+    "notes": "Aduana 'Productos que requieren autorización o Visto Bueno': 'Armas de fuego, municiones, explosivos y sustancias químicas, inflamables y asfixiantes e implementos de artes marciales' require the Visto Bueno of the Dirección General de Movilización Nacional (DGMN); 'Los implementos para la realización de Artes Marciales ... requieren permisos de la DGMN, dentro de ellos arcos, flechas y ballestas, keibo, cadenas con puntas metálicas'. ChileAtiende/DGMN 'Autorización para la internación temporal de armas' (Ley 17.798; Decreto 83): available to foreign hunters, shooting federations and clubs, sportspeople, exhibitors and embassies; for hunting a legal representative must file a notarised document taking responsibility for the weapons while in Chile; applied for at DGMN offices; reply within 20 working days; validity 'En caso necesario, 180 días'; fee per DGMN schedule (amount not shown). Bringing a weapon without authorisation is an offence.",
+    "legal_source": {
+      "name": "ChileAtiende / Dirección General de Movilización Nacional (DGMN) — Autorización para la internación temporal de armas (Ley N° 17.798; Decreto N° 83)",
+      "url": "https://www.chileatiende.gob.cl/fichas/949-autorizacion-para-la-internacion-temporal-de-armas"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-cl",
+    "names": [
+      "drone",
+      "drones",
+      "uav",
+      "rpas",
+      "quadcopter",
+      "dji"
+    ],
+    "destination": "CL",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "No customs ban was found; flying is regulated by DGAC. Over populated areas DAN 151 requires DGAC registration, a remote-pilot credential and an operating authorisation; key limits: max 120 m (400 ft), visual line of sight, not within 2 km of a runway axis extension or 1 km parallel to a runway, never over military sites or prisons."
+    },
+    "notes": "DGAC DAN 151 Ed. 3 (May 2024) applies to anyone operating an RPA 'sobre áreas pobladas' for public-interest matters or aerial work, alongside DAN 91 'Reglas del Aire'. It requires: prior DGAC authorisation (151.101) with the RPA registration card, the remote-pilot credential, insurance, a KMZ of the site and the landowner's permission; registration in the DGAC RPA registry (151.201, the application form asks for a Chilean ID card/RUT); a credential requiring age 18+ and a written exam (151.303); max take-off weight 9 kg and an emergency parachute (151.005). Operating limits (151.103): VLOS only, max 500 m distance and 400 ft (120 m) height, not within 2 km of the runway extension or 1 km parallel to a runway, no prohibited/dangerous zones, no night flights without authorisation, one RPA at a time. 151.105: all flights over military installations, prisons and strategic installations are prohibited. Rules for purely recreational flying over unpopulated areas (DAN 91) and whether a tourist can register a drone were not confirmed — check with DGAC before flying. Aduana treats radio-transmitting equipment as needing SUBTEL authorisation in general imports; not confirmed for traveller drones.",
+    "legal_source": {
+      "name": "Dirección General de Aeronáutica Civil (DGAC) — DAN 151 Operaciones de aeronaves pilotadas a distancia (RPAS) en asuntos de interés público o trabajos aéreos, Ed. 3, May 2024",
+      "url": "https://www.dgac.gob.cl/wp-content/uploads/2024/05/DAN-151-ED3-27MAY2024.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-me",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "vodka",
+      "whisky",
+      "whiskey",
+      "rakija",
+      "duty free alcohol"
+    ],
+    "destination": "ME",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free for travellers aged 17+: 1 litre of spirits over 22% vol (or undenatured ethyl alcohol of 80% vol or more), OR 2 litres of alcoholic drinks up to 22% vol (or a proportional mix of the two), plus 4 litres of still wine and 2 litres of beer. The same quantities apply whether you arrive by air or by land/sea.",
+      "quantity": "1 L spirits or 2 L ≤22% + 4 L still wine + 2 L beer"
+    },
+    "notes": "Montenegrin Customs Administration instruction (31 Oct 2025) applying Articles 8–9 of the Decree on exemption from import duties (Sl. list CG 31/25). People under 17 get no alcohol or tobacco allowance. The alcohol/tobacco quantities are duty-free regardless of value and are not counted toward the general goods allowance (EUR 430 for air and sea travellers, EUR 300 for other travellers, EUR 150 for under-15s). Above the allowance, full import duties are charged (up to the maximum quantities of excise goods individuals may import). Goods must be occasional and for personal/family use or gifts, not commercial.",
+    "legal_source": {
+      "name": "Oslobođenje od plaćanja uvoznih dažbina na robu u ličnom prtljagu — Customs Administration of Montenegro (Uprava carina) instruction no. 14388/1-25 of 31 Oct 2025, applying the Decree on conditions and procedure for exemption from import duties (Sl. list CG 31/25)",
+      "url": "https://www.gov.me/dokumenta/31c08da8-50ec-47ba-9975-a39fe4eca260"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-me",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "cigarillos",
+      "pipe tobacco",
+      "rolling tobacco",
+      "smoking"
+    ],
+    "destination": "ME",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free for travellers aged 17+. Arriving by AIR: 200 cigarettes, or 100 cigarillos (cigars up to 3 g each), or 50 cigars, or 250 g smoking tobacco (or a proportional mix). Arriving by any OTHER means (land, sea, rail): only 40 cigarettes, or 20 cigarillos, or 10 cigars, or 50 g smoking tobacco.",
+      "quantity": "Air: 200 cigarettes; land/sea: 40 cigarettes"
+    },
+    "notes": "Customs Administration instruction of 31 Oct 2025 (Decree Sl. list CG 31/25, Art. 8 for air travel, Art. 9 for 'other types of traffic'). The lower allowance for non-air arrivals is a common surprise for travellers driving in from Croatia, Bosnia, Serbia or Albania or arriving by ferry. Under-17s get no tobacco allowance. Tobacco above the allowance is charged full import duties.",
+    "legal_source": {
+      "name": "Oslobođenje od plaćanja uvoznih dažbina na robu u ličnom prtljagu — Customs Administration of Montenegro (Uprava carina) instruction no. 14388/1-25 of 31 Oct 2025, applying the Decree on conditions and procedure for exemption from import duties (Sl. list CG 31/25)",
+      "url": "https://www.gov.me/dokumenta/31c08da8-50ec-47ba-9975-a39fe4eca260"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-me",
+    "names": [
+      "cash",
+      "money",
+      "currency",
+      "euros",
+      "dollars",
+      "travellers cheques",
+      "cheques",
+      "bearer instruments",
+      "gold",
+      "precious metals"
+    ],
+    "destination": "ME",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "You must declare to customs, on entry and on exit, cash of EUR 10,000 or more (or the equivalent in other currencies), and the same applies to cheques, bearer securities, precious metals and precious stones of that value. Customs ask for full documentation on where the money came from.",
+      "quantity": "EUR 10,000 or more"
+    },
+    "notes": "Customs Administration operational notice no. D-6425/1-25 of 8 May 2025: anyone carrying 'novac, čekovi, hartije od vrijednosti na donosioca, dragocjeni metali ili drago kamenje' worth EUR 10,000 or more across the border must declare it to customs and provide complete documentation on its origin. If undeclared money has no sign of illegal origin it is not seized, but a misdemeanour penalty order is issued. If there is suspicion about its origin (declared or not, and at any amount), customs may hold the money and the person for up to 6 hours while the police Financial Intelligence Unit and prosecutor decide. The Customs Administration's 2016 instruction (also published on the same page) cites the legal basis as Art. 10 of the Law on Current and Capital Transactions with Foreign Countries and the Decision setting EUR 10,000 as the limit for carrying cash without declaring it, and gives a fine of EUR 550–2,000 for individuals (that figure is from 2016 and may have changed). UK FCDO advice agrees: declare cash or travellers' cheques of EUR 10,000 or more, keep the certified declaration, or the money may be seized when you leave.",
+    "legal_source": {
+      "name": "Obavještenje o operativnom postupanju na graničnim prelazima u vezi sa prenosom sredstava plaćanja — Customs Administration of Montenegro (Uprava carina), 8 May 2025",
+      "url": "https://www.gov.me/dokumenta/96ae60dd-9608-426d-ac08-adeb6c656bee"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-me",
+    "names": [
+      "medication",
+      "medicine",
+      "prescription",
+      "prescription medicine",
+      "pills",
+      "tablets",
+      "drugs for personal use",
+      "medical supplies"
+    ],
+    "destination": "ME",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "You may bring a reasonable amount of medication for your personal use, up to a maximum of 6 months' supply. Medicines containing narcotic or controlled substances have stricter rules (30 days' supply, doctor's certificate, declare) — see the controlled-medication row.",
+      "quantity": "Up to 6 months' supply"
+    },
+    "notes": "UK FCDO: 'When travelling to Montenegro, you may carry a reasonable amount of medication needed for personal use for a maximum of 6 months.' Montenegro's customs Decree (Sl. list CG 31/25, Art. 7) also provides that the value of medicines and medical devices necessary for the traveller's personal needs is not counted toward the duty-free value limit. The 6-month figure comes from the UK government page; we did not find it in a Montenegrin legal text. Keep medicines in original packaging with your prescription.",
+    "legal_source": {
+      "name": "Montenegro travel advice — Entry requirements (UK Foreign, Commonwealth & Development Office, GOV.UK)",
+      "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-me",
+    "names": [
+      "controlled medication",
+      "narcotic medication",
+      "opioids",
+      "psychotropic",
+      "adhd medication",
+      "stimulants",
+      "benzodiazepines",
+      "sleeping pills",
+      "strong painkillers",
+      "methadone",
+      "medicine containing drugs"
+    ],
+    "destination": "ME",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "You may carry a medicine containing a controlled drug only in the amount needed for your own treatment for at most 30 days, and you must carry a certificate (report) from your doctor confirming you need it. The certificate may not be older than 90 days. The UK government also says to declare such medicine to customs on arrival.",
+      "quantity": "Max 30 days' supply + doctor's certificate under 90 days old"
+    },
+    "notes": "Law on Prevention of Drug Abuse, Art. 43: 'Lice koje prelazi državnu granicu može da posjeduje lijek koji sadrži drogu u količini potrebnoj za ličnu terapiju, za period od najviše 30 dana na osnovu potvrde (izvještaja) izabranog doktora ili doktora medicine specijaliste...' and 'Potvrda o neophodnosti posjedovanja lijeka ne može biti starija od 90 dana.' The same rule (30 days, certificate from a vet, under 90 days old) applies to medicine for an animal travelling with you, and for that the law expressly requires reporting the certificate to customs (fine EUR 100 if not, Art. 52a). For human medicine the law requires you to carry the certificate; UK FCDO advice additionally says 'You must declare any prescription medication containing narcotics to customs on arrival' and that undocumented or undeclared medication 'may lead to confiscation and legal action' — declaring is the safe course. Holding more than the doctor-prescribed amount is a misdemeanour (EUR 100–2,000, Art. 52). The law does not name specific medicines; whether a given medicine is covered depends on Montenegro's official list of drugs and psychotropic substances, which we did not review. The Ministry's own 2020 traveller notice (gov.me article 222598, now archived) states the same rule.",
+    "legal_source": {
+      "name": "Zakon o sprječavanju zloupotrebe droga (Law on Prevention of Drug Abuse, Sl. list CG 28/11, 35/13) — consolidated text published by the Government of Montenegro",
+      "url": "https://www.gov.me/en/documents/eaa4743a-ed71-423c-b25c-324e228e6e10"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-me",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "hashish",
+      "thc",
+      "illegal drugs",
+      "narcotics"
+    ],
+    "destination": "ME",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Using, producing, trading or possessing drugs for personal use is prohibited. Do not bring cannabis into Montenegro."
+    },
+    "notes": "Law on Prevention of Drug Abuse, Art. 45: 'Zabranjena je upotreba, proizvodnja, promet, posjedovanje droga za ličnu upotrebu...' Possessing drugs for personal use is a misdemeanour fined EUR 100–2,000 (Art. 52); larger amounts and trafficking are criminal offences. UK FCDO: 'Illegal drugs, including cannabis, carry severe penalties.' Not covered here: CBD products and any Montenegrin medical-cannabis rules — we found no primary source on those, so don't assume CBD is allowed.",
+    "legal_source": {
+      "name": "Zakon o sprječavanju zloupotrebe droga (Law on Prevention of Drug Abuse, Sl. list CG 28/11, 35/13) — consolidated text published by the Government of Montenegro",
+      "url": "https://www.gov.me/en/documents/eaa4743a-ed71-423c-b25c-324e228e6e10"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-me",
+    "names": [
+      "meat",
+      "dairy",
+      "milk",
+      "cheese",
+      "sausage",
+      "ham",
+      "salami",
+      "jerky",
+      "eggs",
+      "butter",
+      "animal products",
+      "fish"
+    ],
+    "destination": "ME",
+    "category": "food_animal",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "You cannot bring meat, milk or products containing them into Montenegro. Exceptions: powdered baby milk, baby food, and special foods required for medical reasons (sealed, labelled, not needing special storage)."
+    },
+    "notes": "UK FCDO: 'You cannot take meat, milk or products containing them into Montenegro. There are some exceptions such as powdered baby milk, baby food and special foods or pet feed required for medical reasons.' This matches the Ministry of Agriculture rulebook on food travellers bring into Montenegro (Sl. list CG 27/2008, Art. 4–5), which lists meat, meat products, fish, molluscs, milk and dairy products, eggs, animal fat, gelatin and collagen as not allowed without a veterinary certificate, and allows powdered milk/baby food and medically required food; and up to 1 kg of heat-treated (canned) pet food (Art. 8). We read that rulebook only via the FAO legal database copy and could not confirm it is still in force, so the cited source is the current UK page. Items that don't meet the rules are seized and destroyed at the border.",
+    "legal_source": {
+      "name": "Montenegro travel advice — Entry requirements (UK Foreign, Commonwealth & Development Office, GOV.UK)",
+      "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-me",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "hunting rifle",
+      "shotgun",
+      "ammunition",
+      "sport shooting",
+      "rifle"
+    ],
+    "destination": "ME",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "Visitors without permanent residence may bring hunting or sporting firearms and ammunition only to hunt or take part in sports competitions (or cultural events), and the weapon must be entered in your passport (by a Montenegrin embassy/consulate, or by the border police if you hold a licence to carry it in your home country). Declare it to the border police on arrival with your weapon document and proof of purpose (invitation letter, hunt or competition organiser's notice). Cross only at international border crossings, and you may not sell the weapon."
+    },
+    "notes": "Law on Weapons and Ammunition (Zakon o oružju i municiji), adopted 31 July 2026 and proclaimed 3 August 2026, which replaces the 2015 Law on Weapons: Art. 66 (foreigners without permanent residence may carry weapons across the border for hunting, sports competitions and cultural events, only at international crossings, and may not sell them), Art. 67 (must declare weapons and ammunition to the border police and show the weapon document and proof of purpose), Art. 72 (hunting/sporting weapons must be entered in the travel document; the border police issues an entry approval and cancels it on exit). Art. 75 (EU European Firearms Pass) applies only from Montenegro's EU accession. Other weapon types (self-defence weapons, knives, pepper spray, replicas) were not researched — treat them as not covered.",
+    "legal_source": {
+      "name": "Zakon o oružju i municiji (Law on Weapons and Ammunition), Službeni list Crne Gore, 2026",
+      "url": "https://www.sluzbenilist.me/propisi/397047/download"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-me",
+    "names": [
+      "drone",
+      "drones",
+      "uav",
+      "uas",
+      "unmanned aircraft",
+      "quadcopter",
+      "dji"
+    ],
+    "destination": "ME",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Bringing a drone is not restricted by customs rules we found, but flying is regulated. Near Podgorica and Tivat airports, flying inside the restricted areas around each airport needs prior approval from Montenegro's Airspace Management Cell (AMC), applied for at least two working days ahead (by 10:00 UTC) for each flight. Elsewhere inside the Podgorica and Tivat control zones you may fly up to 50 m above ground; 50–120 m needs AMC approval."
+    },
+    "notes": "Civil Aviation Agency of Montenegro Safety Order 2017/001 rev 03 (based on the Law on Air Transport and the Rulebook on safe use of unmanned aircraft systems, Sl. list CG 24/23 and 117/23). The Agency's unmanned-aircraft page lists this as revision 3, published 1 July 2024. Not verified here: Montenegro's general drone registration, operator/pilot training (an A1/A3 theory course is offered by the Agency) and rules outside the two airport control zones under Rulebook 24/23 — check caa.me before flying.",
+    "legal_source": {
+      "name": "Safety Order 2017/001 rev 03 laying down requirements for use of unmanned aircraft systems within CTR Podgorica and CTR Tivat — Civil Aviation Agency of Montenegro",
+      "url": "https://www.caa.me/sites/default/files/so_2017-001_rev_03.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-jm",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "rum",
+      "whisky",
+      "vodka",
+      "duty free alcohol"
+    ],
+    "destination": "JM",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Travellers aged 18+ may bring 1 litre of spirits and 1 litre of wine duty-free (the stricter of two official figures; the Customs FAQ says 2 litres of alcoholic beverages). Declare anything above this.",
+      "quantity": "1 L spirits + 1 L wine (18+)"
+    },
+    "notes": "Two official Jamaica Customs Agency (JCA) figures differ. The JCA FAQ (live page, no date shown) says 'All passengers, 18 years and over, are allowed the following without payment of duty, provided they do not exceed the amount indicated, and the items are properly declared: … Alcoholic beverages .. 2 litres'. The official Immigration/Customs C5 card (JCA PDF, 2020 upload, https://jca.gov.jm/wp-content/uploads/2020/07/C5new.x11699.pdf) says passengers and crew may import free of duty '1 litre of Spirits; 1 litre of Wine'. Both add up to 2 litres, but the C5 splits it by type, so the stricter reading (no more than 1 litre of spirits) is shown. Bringing alcohol in bulk is a matter for the Spirits Pool Association (JCA Prohibited & Restricted Items guide). Goods over your allowance must be declared on the C5 and you use the red line.",
+    "legal_source": {
+      "name": "What are my duty-free allowances and exemptions? — Jamaica Customs Agency FAQ",
+      "url": "https://jca.gov.jm/faq/what-are-my-duty-free-allowances-and-exemptions"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-jm",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "rolling tobacco",
+      "pipe tobacco",
+      "cigarillos"
+    ],
+    "destination": "JM",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Travellers aged 18+ may bring 200 cigarettes, or 50 cigars, or 230 g of processed tobacco duty-free.",
+      "quantity": "200 cigarettes or 50 cigars or 230 g (18+)"
+    },
+    "notes": "JCA FAQ: all passengers 18 years and over may bring without duty 'Tobacco (sticks) …….200 cigarettes,50 cigars or 230 grams of processed tobacco', provided the items are properly declared and within the amount. The C5 card gives the same: '200 sticks of cigarettes or 50 sticks of cigars or 230g of Tobacco'. The allowance is one of the three, not all three. E-cigarettes are not covered by this allowance (see the unverified e-cigarette entry).",
+    "legal_source": {
+      "name": "What are my duty-free allowances and exemptions? — Jamaica Customs Agency FAQ",
+      "url": "https://jca.gov.jm/faq/what-are-my-duty-free-allowances-and-exemptions"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-jm",
+    "names": [
+      "cash",
+      "money",
+      "currency",
+      "us dollars",
+      "banknotes",
+      "travellers cheques",
+      "monetary instruments",
+      "jamaican dollars"
+    ],
+    "destination": "JM",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declare cash or monetary instruments over US$10,000 (or equivalent in any currency) on the C5 form; you must be able to show the money's source and purpose.",
+      "quantity": "over US$10,000 equivalent"
+    },
+    "notes": "JCA press release (13 October 2025): 'while carrying cash across borders is not illegal, travellers must declare any amount over US$10,000 (or its equivalent) and must be able to verify its source and purpose.' The C5 card, question 14: 'I am carrying currency or monetary instruments over US$10,000 or equivalent'. The UK government's advice (https://www.gov.uk/foreign-travel-advice/jamaica/entry-requirements) phrases it as 'Declare cash or travellers cheques if the value is 10,000 US dollars or more', on the C5, and says you will also complete the Financial Investigation Division Cross Border Form provided by a customs officer — so declare at exactly US$10,000 too, to be safe. Separately, Section 101A of the Proceeds of Crime Act prohibits cash payments of J$1,000,000 or more in Jamaica (two travellers were fined J$200,000 each in 2025 under that section). The C5 states failure to make a full declaration is an offence that may result in fines, forfeiture and/or imprisonment. Spain's embassy also lists importing local currency (Jamaican dollars) among prohibited imports (exteriores.gob.es, June 2026) — not confirmed on a JCA page.",
+    "legal_source": {
+      "name": "Joint enforcement at NMIA leads to POCA convictions; travellers fined after declaring large cash sums — Jamaica Customs Agency press release, 13 October 2025",
+      "url": "https://jca.gov.jm/wp-content/uploads/2025/10/Adjusted-JCA-and-FID-collaborate-under-POCA5.x37584.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-jm",
+    "names": [
+      "prescription medication",
+      "prescription medicine",
+      "medicine",
+      "medication",
+      "prescription drugs",
+      "pills",
+      "personal medication"
+    ],
+    "destination": "JM",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Regular (non-narcotic) prescription medicine for your stay is allowed if it is in its original labelled containers and you carry a copy of every prescription (name, quantity, strength, dosage) plus a doctor's letter stating the condition treated.",
+      "quantity": "Quantity for your stay"
+    },
+    "notes": "Embassy of Jamaica, Brussels (Ministry of Health and Wellness guidance, page © 2026): 'Travellers to Jamaica may bring regular prescriptions to Jamaica for use during their stay in Jamaica provided that: The person brings a copy of all prescriptions clearly stating name, the quantity, strength and dosage and that all the prescription drugs are in the original containers and clearly labelled. Letter from the physician stating the condition being treated.' Prescriptions containing narcotics need a special Ministry of Health permit (see controlled-medication-jm). The C5 card asks you to declare pharmaceuticals in commercial quantities, and the JCA Prohibited & Restricted Items guide lists pharmaceuticals under the Ministry of Health & Wellness. Spain's embassy (exteriores.gob.es, June 2026) likewise says medicines must travel in their original packaging with the doctor's prescription.",
+    "legal_source": {
+      "name": "Importation of Prescription Drugs to Jamaica — Embassy of Jamaica and Jamaica Mission to the EU, Brussels (reproducing Ministry of Health and Wellness guidance)",
+      "url": "https://jamaica-brussels.be/importation-of-prescription-drugs-to-jamaica/"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-jm",
+    "names": [
+      "narcotic medication",
+      "narcotics",
+      "controlled medication",
+      "controlled drugs",
+      "prescription narcotics",
+      "dangerous drugs"
+    ],
+    "destination": "JM",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Prescriptions containing narcotics need a special permit from Jamaica's Ministry of Health and Wellness, issued before you travel and carried with you.",
+      "quantity": "Permit required in advance"
+    },
+    "notes": "Embassy of Jamaica, Brussels (Ministry of Health and Wellness guidance): 'A special permit will be required from the Ministry of Health and Wellness for prescription containing narcotics.' Apply to the Chief Dangerous Drugs Inspector, Pharmaceutical and Regulatory Affairs Division, Ministry of Health and Wellness, 45-47 Barbados Avenue, Kingston 5 (tel. (876) 633-7145; 'Emailed requests will be accepted'). Send: a physician's letter with the patient's name and condition; a copy of the prescription with name, strength and quantity for the whole stay; flight details (dates/times, flight numbers, ports of entry and departure); your address in Jamaica; your contact details; and the physician's phone number. 'Once approval is granted, the Ministry of Health will directly send the applicant the special permit … This document must be carried with the patient when traveling to Jamaica.' No processing time is stated, so apply early. The source says 'narcotics' and names no specific drugs; it does not say whether non-narcotic controlled psychotropics (e.g. ADHD stimulants, benzodiazepines) need the same permit — ask the Pharmaceutical and Regulatory Affairs Division before travelling with any controlled medicine.",
+    "legal_source": {
+      "name": "Importation of Prescription Drugs to Jamaica — Embassy of Jamaica and Jamaica Mission to the EU, Brussels (reproducing Ministry of Health and Wellness guidance)",
+      "url": "https://jamaica-brussels.be/importation-of-prescription-drugs-to-jamaica/"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-jm",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "ganja",
+      "weed",
+      "medical marijuana",
+      "medical cannabis",
+      "thc"
+    ],
+    "destination": "JM",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Do not bring cannabis into Jamaica. Small-amount possession inside Jamaica is a ticketable offence, and visitors can get a permit to buy medical ganja locally, but crossing the border with it is not allowed outside a narrow, regulated route for terminal or serious chronic illness."
+    },
+    "notes": "Ministry of Justice fact sheet on the Dangerous Drugs (Amendment) Act 2015: possession of 2 ounces or less is no longer an arrestable offence but police may issue a ticket (J$500, payable within 30 days); possession of over 2 ounces remains a criminal offence. Import: 'A person who is suffering from cancer or any other terminal or serious chronic illness may import medicine or a therapeutic product derived from or containing ganja' if a registered medical practitioner certifies the illness and recommends its use, and 'The importation … must comply with regulations which are to be made' — this route is not open to ordinary travellers. Visitors: 'Persons who do not ordinarily reside in Jamaica (for example, tourists …) may apply for a permit to allow them to lawfully purchase and possess up to 2 ounces of ganja at a time, for medical or therapeutic purposes', with evidence of a home-country medical recommendation or a voluntary declaration; 'The permit is issued by Jamaica's Ministry of Health, and a fee is payable' (the fact sheet is undated; the Cannabis Licensing Authority site was not checked). Government of Canada (https://travel.gc.ca/destinations/jamaica, 26 May 2026): 'Do not attempt to enter or depart Jamaica and cross international borders with any amount of cannabis.' GOV.UK: 'It's illegal to smoke marijuana (ganja) in Jamaica' and severe penalties apply to other drug offences including attempting to export narcotics. The C5 card asks you to declare illicit drugs or narcotics. CBD: hemp (under 1% THC) is excluded from the DDA ganja provisions but its import is to be regulated by the Cannabis Licensing Authority — no traveller rule for CBD products was found, so treat CBD as not confirmed allowed.",
+    "legal_source": {
+      "name": "Dangerous Drugs (Amendment) Act 2015 — Fact Sheet Booklet, Ministry of Justice, Government of Jamaica",
+      "url": "https://moj.gov.jm/sites/default/files/pdf/Dangerous%20Drugs%20Act%20Fact%20Sheet%20Booklet.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-jm",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "sausage",
+      "ham",
+      "salami",
+      "jerky",
+      "bacon",
+      "processed meat",
+      "pet food",
+      "animal products"
+    ],
+    "destination": "JM",
+    "category": "food_animal",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Do not bring meat (raw, cooked or processed) or milk products without an import permit from the Ministry of Agriculture's Veterinary Services Division; customs may destroy them."
+    },
+    "notes": "JCA Prohibited & Restricted Items guide (March 2025): 'All meat imports, regardless of type or quantity, require an import permit from the Ministry of Agriculture and Fisheries'; the Veterinary Services Division list covers 'Meat (Raw or Cooked)', 'Milk & its by-products', 'Pet & Animal Foods' and 'Processed Meats & Sausages' (contact: (876) 977-2489, vsdpermits@micaf.gov.jm). UK government advice (https://www.gov.uk/foreign-travel-advice/jamaica/entry-requirements): 'It is illegal to bring meat and dairy products into Jamaica. Customs officials may search your baggage and will destroy banned foodstuffs.' Spain's embassy also lists 'productos cárnicos' and honey as prohibited imports. The C5 card requires you to declare meat, food and animal products (question 13a). Shown as prohibited because a visitor without a prior permit cannot lawfully bring these in.",
+    "legal_source": {
+      "name": "Prohibited & Restricted Items guide — Jamaica Customs Agency (March 2025)",
+      "url": "https://jca.gov.jm/wp-content/uploads/2025/03/Prohibited-and-Restricted-Items.x68962.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "honey-jm",
+    "names": [
+      "honey",
+      "raw honey",
+      "manuka honey",
+      "honeycomb",
+      "bee products"
+    ],
+    "destination": "JM",
+    "category": "food_animal",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Honey is a prohibited import."
+    },
+    "notes": "JCA Prohibited & Restricted Items guide (March 2025), under the Ministry of Agriculture & Fisheries (Plant Quarantine): 'Honey (Prohibited Item)'. Spain's embassy in Kingston (exteriores.gob.es, June 2026) also lists 'miel' among prohibited imports. Honey is also listed on the C5 card's declaration question 13a.",
+    "legal_source": {
+      "name": "Prohibited & Restricted Items guide — Jamaica Customs Agency (March 2025)",
+      "url": "https://jca.gov.jm/wp-content/uploads/2025/03/Prohibited-and-Restricted-Items.x68962.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-jm",
+    "names": [
+      "fruit",
+      "vegetables",
+      "fresh produce",
+      "plants",
+      "seeds",
+      "flowers",
+      "cut flowers",
+      "soil",
+      "ground provisions",
+      "red peas",
+      "nuts"
+    ],
+    "destination": "JM",
+    "category": "food_plant",
+    "verdict": "depends",
+    "limits": {
+      "description": "Fresh fruit, vegetables, plants, plant products and ground provisions need an import permit from the Ministry of Agriculture's Plant Quarantine Division; declare them on the C5."
+    },
+    "notes": "JCA Prohibited & Restricted Items guide (March 2025): 'Importing agricultural items can unknowingly bring along harmful pests and diseases … these items are restricted and require a permit from the Ministry of Agriculture and Fisheries.' Plant Quarantine list: 'Fresh Fruits & Vegetables', 'Plants & Plant products', 'Red Peas (in commercial quantities)', 'Ground Provisions', 'Honey (Prohibited Item)' (contact: Plant Quarantine Division, (876) 977-0637). The C5 card question 13a requires declaring fruits, plants, cut flowers, vegetables, soil, plant material and food. Without a permit, expect such items to be refused or confiscated. The guide says it is not exhaustive and the list may change.",
+    "legal_source": {
+      "name": "Prohibited & Restricted Items guide — Jamaica Customs Agency (March 2025)",
+      "url": "https://jca.gov.jm/wp-content/uploads/2025/03/Prohibited-and-Restricted-Items.x68962.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-jm",
+    "names": [
+      "firearms",
+      "guns",
+      "ammunition",
+      "bullets",
+      "toy guns",
+      "replica guns",
+      "pepper spray",
+      "taser",
+      "stun gun",
+      "swords",
+      "knives",
+      "bows and arrows",
+      "bulletproof vest",
+      "handcuffs",
+      "night vision goggles",
+      "weapons"
+    ],
+    "destination": "JM",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Do not bring firearms, ammunition or other listed weapons (including toy guns, pepper spray, tasers, swords, bows) without permits obtained in advance from the Trade Board and/or the Ministry of National Security."
+    },
+    "notes": "JCA Prohibited & Restricted Items guide (March 2025): firearms, explosives and fireworks are controlled by The Trade Board Limited; the Ministry of National Security (Protective Security & Small Arms Branch, protective.security@mns.gov.jm) controls 'Firearm Parts', 'Firearm Holsters', 'Ammunition', 'Bullet Proof Vests', 'Toy Guns', 'Bows & Arrows', 'Pepper Sprays', 'Taser / Stun Gun', 'Tactical Flashlights', 'Night Vision Goggles', 'Swords / Spears', 'Firearm Cleaning Kits', 'Handcuffs' and 'Camouflage Clothing & Materials'. On toy guns: 'importing any toy gun requires a permit from the Ministry of National Security.' Government of Canada (https://travel.gc.ca/destinations/jamaica): 'Entering the country with a firearm or even a single round of ammunition is considered a serious crime.' The C5 card requires declaring 'Arms ammunition, explosives, fireworks, toy guns or other weapons'. Shown as prohibited for ordinary travellers; the permit route exists but must be completed before arrival.",
+    "legal_source": {
+      "name": "Prohibited & Restricted Items guide — Jamaica Customs Agency (March 2025)",
+      "url": "https://jca.gov.jm/wp-content/uploads/2025/03/Prohibited-and-Restricted-Items.x68962.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "camouflage-clothing-jm",
+    "names": [
+      "camouflage",
+      "camo",
+      "camouflage clothing",
+      "military clothing",
+      "army print"
+    ],
+    "destination": "JM",
+    "category": "other",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Camouflage clothing and materials (and denim resembling police uniform) are restricted to military/police use; do not pack them."
+    },
+    "notes": "JCA Prohibited & Restricted Items guide (March 2025): 'Importing camouflage clothing and denim similar to the apparel of the Jamaica Constabulary Force is restricted in Jamaica. This type of apparel is reserved for military personnel only. Wearing of this type of apparel can be mistaken for impersonation of the Jamaica Defense Force or the Jamaica Constabulary Force.' 'Camouflage Clothing & Materials' are listed under the Ministry of National Security. Shown as prohibited because there is no visitor permit route described.",
+    "legal_source": {
+      "name": "Prohibited & Restricted Items guide — Jamaica Customs Agency (March 2025)",
+      "url": "https://jca.gov.jm/wp-content/uploads/2025/03/Prohibited-and-Restricted-Items.x68962.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-jm",
+    "names": [
+      "drone",
+      "drones",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "dji"
+    ],
+    "destination": "JM",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Recreational drone flying needs no JCAA permit but strict rules apply (max 400 ft, within 500 m and line of sight, not within 5 km of aerodromes, no night/FPV flights). Any non-recreational use (e.g. paid photography) needs a JCAA Special Aerial Work Permit. Customs/radio-equipment rules for bringing a drone in were not confirmed."
+    },
+    "notes": "Jamaica Civil Aviation Authority, 'Unmanned Aircraft' (jcaa.gov.jm/unmanned-aircraft/): 'Professional operators, whether commercial or non-commercial, require a Special Aerial Work Permit from the JCAA … Recreational operators do not require a permit but must comply with the relevant operating guidelines.' Recreational guidelines (this page): not above 400 feet (122 m); not beyond 1,640 feet (500 m) or the operator's unaided visual range; no First-Person View; not over or within 500 ft (152 m) of an open-air assembly or 165 ft (50 m) of any person; not over private or public property without permission; not in restricted/prohibited airspace; not within 16,500 ft (5,000 m) of any aerodrome or helipad; must have fail-safe return/land; no autonomous flights, no night or low-visibility flights, no dropping items. Contact: Flight Safety Division, 876 960-3948, uavrequests@jcaa.gov.jm. NOT CONFIRMED: whether Jamaica Customs requires an import permit or Spectrum Management Authority type approval for a visitor's personal drone (radio equipment) — no official page addressing travellers was found, hence 'depends'. Check with JCA/SMA before travelling.",
+    "legal_source": {
+      "name": "Recreational UA Operators or Hobbyists — Jamaica Civil Aviation Authority",
+      "url": "https://www.jcaa.gov.jm/recreational-ua-operators-or-hobbyists/"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-bs",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "rum",
+      "whisky",
+      "vodka",
+      "gin",
+      "beer",
+      "duty free alcohol"
+    ],
+    "destination": "BS",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Each adult may bring duty-free one quart of spirits and one quart of wine. Anything more is dutiable. Customs sets no separate duty-free beer allowance.",
+      "quantity": "1 quart spirits + 1 quart wine per adult"
+    },
+    "notes": "Bahamas Customs 'Arriving': 'DUTY FREE ALLOWANCES FOR ALL TRAVELLERS — Alcoholic Beverages not exceeding one quart of spirits and one quart of wine (Adults only)'. The General Traveler's Questions page (2 Jan 2026) repeats this for 'every traveling adult, either visitor or resident', 'in addition to the entitled exemption' (visitors: $100.00 per trip on any dutiable article; above that, duties and taxes apply). A quart is about 0.95 litres. Beer: Customs names no beer allowance; the Bahamas Ministry of Tourism site (cross-check only) says 'All beer imported into the country is dutiable at a rate of $10 per imperial gallon or $18 per case' — so plan to pay duty on beer. Visitors carrying only used personal belongings give an oral declaration; anyone carrying other items completes the C17 Baggage Declaration in the Exempt app, with receipts.",
+    "legal_source": {
+      "name": "The Bahamas Customs Department — Visitors: Arriving (duty-free allowances for all travellers)",
+      "url": "https://www.bahamascustoms.gov.bs/visitor-info/arriving/"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-bs",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "cigarillos",
+      "rolling tobacco",
+      "pipe tobacco"
+    ],
+    "destination": "BS",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Each adult may bring duty-free one of: 200 cigarettes, OR 50 cigars, OR one pound (about 454 g) of tobacco.",
+      "quantity": "200 cigarettes or 50 cigars or 1 lb tobacco"
+    },
+    "notes": "Bahamas Customs 'Arriving': 'Tobacco not exceeding one pound in weight or 200 cigarettes or 50 cigars (Adults Only).' The allowance is in addition to the visitor's $100 exemption on dutiable goods. The source says 'Adults only' but does not state the age.",
+    "legal_source": {
+      "name": "The Bahamas Customs Department — Visitors: Arriving (duty-free allowances for all travellers)",
+      "url": "https://www.bahamascustoms.gov.bs/visitor-info/arriving/"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-bs",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "dollars",
+      "travellers cheques",
+      "bearer instruments",
+      "cheques",
+      "money orders",
+      "gold",
+      "precious stones",
+      "jewellery"
+    ],
+    "destination": "BS",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declare cash and negotiable instruments worth BSD 10,000 (= USD 10,000) or more. This applies on arrival and on departure. The same threshold covers precious metals in bullion, and loose stones or jewellery carried for trade.",
+      "quantity": "BSD 10,000 or more"
+    },
+    "notes": "Bahamas Customs General Traveler's Questions (2 Jan 2026), Q6 'Must I declare how much cash I am carrying?': 'Any person carrying cash and negotiable instruments of a value equivalent to $10,000.00 or more, loose or uncut precious stones or jewelery with intention to trade of a value equivalent to $10,000.00 or more; and precious metals in bullion'. 'Cash' includes coins and bank notes in any currency; 'Negotiable Instruments' includes cheques, travellers cheques, promissory notes, money orders and instruments in bearer form. On departure, the Customs 'Departing' page (Travellers Currency Declaration) says each person or responsible family member must declare cash, negotiable instruments, precious metals or stones 'of a value equivalent to BS $10,000.00'. 'Penalties for non-compliance can include forfeiture of the cash, plus up to a $2,000 fine.' Cross-check: Government of Canada travel advice says 'It's illegal to leave The Bahamas with more than 10,000 BSD.' The official tourism site says the Bahamian dollar 'is maintained at the same level as the U.S. dollar'.",
+    "legal_source": {
+      "name": "The Bahamas Customs Department — General Traveler's Questions (updated 2 Jan 2026)",
+      "url": "https://www.bahamascustoms.gov.bs/accordions/general-travelers-questions/"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-bs",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "edibles",
+      "hash",
+      "cbd",
+      "medical marijuana",
+      "medical cannabis"
+    ],
+    "destination": "BS",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Official Bahamas visitor guidance (Ministry of Tourism FAQ, health and safety tips): 'The purchase and usage of marijuana is illegal and enforced with strict penalties.' Do not bring cannabis in any form. A foreign medical-cannabis card does not let you import it. Cross-checks: Auswärtiges Amt says drug use and trafficking, 'auch in geringsten Mengen' (even in the smallest amounts), are prosecuted very strictly, with heavy fines and prison and usually no bail. GOV.UK says 'Penalties for possessing or trafficking drugs are severe'. Legislative context: the Cannabis Act, 2024 was published in the Extraordinary Official Gazette (26 July 2024). It creates a licensed medical/religious cannabis regime, including a provision that 'A pharmacist may dispense medical cannabis to a visitor' who holds a medical card from a recognised jurisdiction and a prescription. It also contains a section titled 'Unlawful import and export of cannabis' (s.58). We could not confirm that the visitor-dispensing scheme is in operation, and nothing in it allows a traveller to bring their own supply. CBD: no official source addresses CBD separately; the Cannabis Act defines cannabis broadly, so treat CBD/THC products as cannabis and do not bring them.",
+    "legal_source": {
+      "name": "The Islands of The Bahamas official tourism site (bahamas.com, Bahamas Ministry of Tourism) — Frequently Asked Questions: health and safety tips",
+      "url": "https://www.bahamas.com/plan-your-trip/island-faq"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-bs",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "sausage",
+      "salami",
+      "ham",
+      "jerky",
+      "eggs",
+      "butter",
+      "food",
+      "animal products"
+    ],
+    "destination": "BS",
+    "category": "food_animal",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declare all food. Some dairy items are restricted. Meat and other food unfit for human consumption is prohibited."
+    },
+    "notes": "Bahamas Customs General Traveler's Questions (2 Jan 2026), Q14 'Can I bring food as a traveler?': 'Yes, you are allowed to travel with certain foods. There are restrictions when importing fruits, vegetables and some dairy items ... to prevent the introduction of certain diseases that are contracted from plants and animals. You must declare all food products. Failure to declare food products can result in forfeiture and or fines.' Customs' prohibited list includes 'Meat, provisions, fruits and vegetables, and any articles intended for human food, which are unfit for human consumption.' Customs gives no item-by-item list of which meat or dairy products are allowed. Separate Animal Contagious Diseases orders (meat, poultry and live-bird import prohibitions) exist on laws.bahamas.gov.bs, but we have not reviewed their current scope, so declare every meat, poultry or dairy item and expect it may be refused. The Bahamas Agricultural Health and Food Safety Authority (BAHFSA) site did not respond during research.",
+    "legal_source": {
+      "name": "The Bahamas Customs Department — General Traveler's Questions (updated 2 Jan 2026)",
+      "url": "https://www.bahamascustoms.gov.bs/accordions/general-travelers-questions/"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-bs",
+    "names": [
+      "fruit",
+      "vegetables",
+      "fresh produce",
+      "plants",
+      "flowers",
+      "seeds",
+      "cuttings",
+      "soil"
+    ],
+    "destination": "BS",
+    "category": "food_plant",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Fresh fruit, vegetables, plants and flowers need an import permit from the Department of Agriculture before you travel. Without one, don't bring them. Declare all food."
+    },
+    "notes": "Bahamas Customs General Traveler's Questions (2 Jan 2026), Q14: 'permits are required to import fruits, vegetables and plant/flowers from the Department of Agriculture prior to importation.' All food must be declared; 'Failure to declare food products can result in forfeiture and or fines.' Verdict is 'prohibited' because, without a permit obtained in advance, you may not bring these items. With a permit, they may be imported under its terms.",
+    "legal_source": {
+      "name": "The Bahamas Customs Department — General Traveler's Questions (updated 2 Jan 2026)",
+      "url": "https://www.bahamascustoms.gov.bs/accordions/general-travelers-questions/"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-bs",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition",
+      "bullets",
+      "pistol",
+      "rifle",
+      "shotgun",
+      "starter pistol",
+      "flare gun",
+      "speargun",
+      "spear gun",
+      "fireworks"
+    ],
+    "destination": "BS",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "You may not bring firearms (or fireworks) without special authorization from the Commissioner of Police. Underwater guns of any kind except a Hawaiian sling are prohibited outright."
+    },
+    "notes": "Bahamas Customs 'Prohibited and Restricted Imports and Exports': restricted goods include 'Firearms, fireworks, unless special authorization by the Commissioner of Police'. The prohibited list includes 'Underwater gun being any manufacture or device other than the device known as a Hawaiian Sling whereby a missile may be discharged under water', so spearguns are banned. Cross-check: Auswärtiges Amt says import of weapons, including starter/blank pistols and diving and boat signal (flare) pistols, 'ist nur mit besonderer Einfuhrgenehmigung erlaubt' (only allowed with a special import permit). Check every bag for stray ammunition before you travel. The US State Department's Bahamas advisory reportedly warns that even small amounts of ammunition packed by mistake have led to detention, but travel.state.gov and the US Embassy pages were bot-blocked, so we could not read and cite that text. Boaters arriving with firearms on board must declare them to Customs at the first port of entry (Customs pleasure-vessel procedures; not separately verified here).",
+    "legal_source": {
+      "name": "The Bahamas Customs Department — Prohibited and Restricted Imports and Exports",
+      "url": "https://www.bahamascustoms.gov.bs/imports-and-exports/prohibited-and-restricted-imports-and-exports/"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-bs",
+    "names": [
+      "drone",
+      "drones",
+      "uav",
+      "uas",
+      "quadcopter",
+      "dji",
+      "unmanned aircraft"
+    ],
+    "destination": "BS",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Every drone must be registered with the Civil Aviation Authority Bahamas (CAA-B) before you fly. Recreational registration costs $30 (5 business days) or $50 expedited (2 business days). Drones over 249 g also need your home-country registration certificate."
+    },
+    "notes": "CAA-B Drone FAQs: 'The CAA-B requires that all drones be registered. Drones over 249 grams requires a UAS certificate or Certification from the country of origin.' Register through the online form (https://caabahamas.com/drone-registration/). You'll need: name, address, email, phone, drone make, model and weight, home-country registration for drones over 249 g, a colour scan of your passport photo page, intended purpose and island of operation. Allow at least five business days. The letter of authorization is valid from your arrival date to your departure date. Commercial use needs a separate application (dronesupport@caabahamas.com). Operating limits: no higher than 400 ft (122 m); no further than 1,640 ft (500 m); within unaided visual line of sight; not over or within 500 ft (152 m) of an organised open-air assembly; not within 165 ft (50 m) of any person (take-off and landing no closer than 100 ft / 30 m); not over private or public property without permission; not within 16,500 ft (5,000 m) of any aerodrome or helipad; not at night or in low visibility; not in restricted or prohibited airspace. CAA-B notes that Bahamas Customs 'is a separate government entity' and may have additional rules on arrival with a drone. Government of Canada travel advice confirms drones must be registered with the CAA-B. Source-quality note: the old domain bcaa.gov.bs now serves unrelated gambling spam — use caabahamas.com only.",
+    "legal_source": {
+      "name": "Civil Aviation Authority Bahamas (CAA-B) — Drone FAQs",
+      "url": "https://caabahamas.com/drone-faqs/"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "pets-bs",
+    "names": [
+      "pet",
+      "pets",
+      "dog",
+      "cat",
+      "animal",
+      "travelling with a pet"
+    ],
+    "destination": "BS",
+    "category": "other",
+    "verdict": "depends",
+    "limits": {
+      "description": "To bring an animal you need a current single-use import permit from the Department of Agriculture and a current veterinary health certificate. The animal must be at least six months old."
+    },
+    "notes": "Bahamas Customs General Traveler's Questions (2 Jan 2026), Q1 'What are the requirements for travelling to the Bahamas with an animal?': 'A current permit from the Department of Agriculture (one time use only); The animal must be at least six months of age; A current Veterinary Health Certificate (vaccination records must be up to date)'. The Customs 'Arriving' page points to the Department of Agriculture's Bahamas Animal Import Requirements for the application. We did not verify further conditions such as rabies-vaccine timing.",
+    "legal_source": {
+      "name": "The Bahamas Customs Department — General Traveler's Questions (updated 2 Jan 2026)",
+      "url": "https://www.bahamascustoms.gov.bs/accordions/general-travelers-questions/"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-ec",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "whisky",
+      "vodka",
+      "rum",
+      "licor"
+    ],
+    "destination": "EC",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Travellers aged 18+ may bring up to 3 litres of alcoholic drinks duty-free. If a single bottle takes you over the limit, you pay duty on the excess part.",
+      "quantity": "3 L (18+)"
+    },
+    "notes": "SENAE personal-effects list: 'En caso de pasajeros mayores de 18 años de edad, máximo 3 litros de bebidas alcohólicas... Cuando un mismo envase exceda lo establecido, se deberá tributar en la parte proporcional a la diferencia no exenta.' The list PDF (May 2026) shows the old figure '5' struck out and replaced by '3'; SENAE's air-travellers page also says 'Hasta 3 litros de alcohol'. The cut from 5 to 3 litres took effect in May 2026 (date per press reports of SENAE Resolution 2026-0041; the resolution text itself was not read). Anything above an allowance, or not on SENAE's personal-effects list, is a 'bien tributable': declare it on the online Formulario de Registro Aduanero (FRA) and pay duties; taxable goods up to USD 2,000 can be cleared in the arrivals hall, above that they must go through a formal import. Goods not otherwise listed that have no volume/quantity restriction still count as personal effects up to USD 500 in total.",
+    "legal_source": {
+      "name": "Listado de bienes que puede ingresar al Ecuador sin pago de impuesto (efectos personales del viajero) — SENAE, PDF uploaded May 2026",
+      "url": "https://www.aduana.gob.ec/wp-content/uploads/2026/05/LISTADO-EFECTO-DE-VIAJEROS.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-ec",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "cigarillos",
+      "rolling tobacco",
+      "pipe tobacco",
+      "cigarrillos"
+    ],
+    "destination": "EC",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Travellers aged 18+ may bring duty-free: 20 packs of 20 cigarettes (400 cigarettes), 1 pound of tobacco and 25 cigars.",
+      "quantity": "400 cigarettes + 1 lb tobacco + 25 cigars (18+)"
+    },
+    "notes": "SENAE personal-effects list: 'En caso de pasajeros mayores de 18 años de edad, ... 20 cajetillas de cigarrillos de 20 unidades, 1 libra de tabaco y 25 unidades de habanos o cigarros.' E-cigarettes/vapes are not on the list (see separate row). Anything above an allowance, or not on SENAE's personal-effects list, is a 'bien tributable': declare it on the online Formulario de Registro Aduanero (FRA) and pay duties; taxable goods up to USD 2,000 can be cleared in the arrivals hall, above that they must go through a formal import. Goods not otherwise listed that have no volume/quantity restriction still count as personal effects up to USD 500 in total.",
+    "legal_source": {
+      "name": "Listado de bienes que puede ingresar al Ecuador sin pago de impuesto (efectos personales del viajero) — SENAE, PDF uploaded May 2026",
+      "url": "https://www.aduana.gob.ec/wp-content/uploads/2026/05/LISTADO-EFECTO-DE-VIAJEROS.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-ec",
+    "names": [
+      "cash",
+      "money",
+      "currency",
+      "dollars",
+      "euros",
+      "traveller's cheques",
+      "bearer instruments",
+      "gold",
+      "precious stones",
+      "efectivo"
+    ],
+    "destination": "EC",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declare cash, bearer negotiable instruments, precious metals and precious stones (combined) worth USD 10,000 or more, or the equivalent in other currencies, when entering OR leaving Ecuador, on the online Formulario de Registro Aduanero (FRA).",
+      "quantity": "≥ USD 10,000 in or out"
+    },
+    "notes": "SENAE Resolution SENAE-SENAE-2025-0076-RE, Art. 2: 'El viajero deberá registrar y presentar el Formulario de Registro Aduanero (FRA) cuando la combinación del dinero en efectivo, instrumentos negociables al portador y los valores que representen los metales y piedras preciosas, igualen o superen los USD$10,000.00'. Applies to entry and exit (Art. 3; Art. 84 of the Ley Orgánica de Prevención, Detección y Combate del Delito de Lavado de Activos). Fill in the FRA before customs control and show the QR code or PDF with your passport. Penalties quoted in the resolution from that law: Art. 87 — administrative fine of 30% of the undeclared or falsely declared amount, without prejudice to criminal action; Art. 88 — 50% on reoffending. Leaving Ecuador: Ecuador charges a currency-outflow tax (ISD). SENAE quotes Art. 13.1 of the ISD regulation: foreign currency carried in by non-resident foreigners does not attract ISD on exit if the stay is no more than 90 calendar days and the amount was registered on entry — so register it on the FRA when you arrive. UK FCDO advice says amounts over USD 1,350 taken out are taxable (not checked against the SRI's own page).",
+    "legal_source": {
+      "name": "Resolución Nro. SENAE-SENAE-2025-0076-RE (28 July 2025) — control of taxable goods and cash/bearer instruments/precious metals ≥ USD 10,000 — SENAE",
+      "url": "https://www.aduana.gob.ec/wp-content/uploads/2025/09/SENAE-SENAE-2025-0076-RE-1.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-ec",
+    "names": [
+      "medication",
+      "medicine",
+      "prescription",
+      "prescription drugs",
+      "pills",
+      "vitamins",
+      "supplements",
+      "medicamentos"
+    ],
+    "destination": "EC",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Medicines for personal use count as duty-free personal effects if they come with a prescription (from Ecuador or abroad). Food supplements: up to 8 kg.",
+      "quantity": "with prescription; supplements max 8 kg"
+    },
+    "notes": "SENAE personal-effects list: 'Medicamentos, vitaminas y suplementos alimenticios. Para el caso de medicamentos deberán estar acompañados con su respectiva prescripción médica nacional o extranjera. Para el caso de suplementos alimenticios, máximo 8 Kg.' The list does not set a maximum quantity of medicine; carry only what matches your prescription. Medicines containing controlled (narcotic or psychotropic) substances are regulated by ARCSA under the drug-control law — see the separate controlled-medication entry, which we have not been able to verify. Anything above an allowance, or not on SENAE's personal-effects list, is a 'bien tributable': declare it on the online Formulario de Registro Aduanero (FRA) and pay duties; taxable goods up to USD 2,000 can be cleared in the arrivals hall, above that they must go through a formal import. Goods not otherwise listed that have no volume/quantity restriction still count as personal effects up to USD 500 in total.",
+    "legal_source": {
+      "name": "Listado de bienes que puede ingresar al Ecuador sin pago de impuesto (efectos personales del viajero) — SENAE, PDF uploaded May 2026",
+      "url": "https://www.aduana.gob.ec/wp-content/uploads/2026/05/LISTADO-EFECTO-DE-VIAJEROS.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "medical-devices-ec",
+    "names": [
+      "blood pressure monitor",
+      "glucose meter",
+      "glucometer",
+      "thermometer",
+      "wheelchair",
+      "crutches",
+      "mobility aids",
+      "medical devices"
+    ],
+    "destination": "EC",
+    "category": "other",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free: up to 2 each of blood-pressure monitors, thermometers and glucose meters per traveller or family group; wheelchairs, crutches, orthopaedic and similar aids for older or disabled travellers in personal-use quantities.",
+      "quantity": "max 2 of each meter type"
+    },
+    "notes": "SENAE personal-effects list: 'Aparatos de medición de presión arterial, de temperatura y de glucosa, máximo 2 por cada uno, por pasajero o grupo familiar' and 'Ayudas técnicas para adultos mayores o personas con discapacidad... tales como: sillas de ruedas, muletas, aparatos ortopédicos y similares... en cantidades exclusivas para uso personal.' A 'grupo familiar' is minors plus one parent or guardian. Anything above an allowance, or not on SENAE's personal-effects list, is a 'bien tributable': declare it on the online Formulario de Registro Aduanero (FRA) and pay duties; taxable goods up to USD 2,000 can be cleared in the arrivals hall, above that they must go through a formal import. Goods not otherwise listed that have no volume/quantity restriction still count as personal effects up to USD 500 in total.",
+    "legal_source": {
+      "name": "Listado de bienes que puede ingresar al Ecuador sin pago de impuesto (efectos personales del viajero) — SENAE, PDF uploaded May 2026",
+      "url": "https://www.aduana.gob.ec/wp-content/uploads/2026/05/LISTADO-EFECTO-DE-VIAJEROS.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-ec",
+    "names": [
+      "drone",
+      "drones",
+      "quadcopter",
+      "uav",
+      "dji"
+    ],
+    "destination": "EC",
+    "category": "drones",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Customs: one drone (new or used) worth up to USD 1,000 enters duty-free as a personal effect. A second drone, or one worth more, is taxable.",
+      "quantity": "1 drone ≤ USD 1,000"
+    },
+    "notes": "SENAE personal-effects list: 'se consideran como efectos personales hasta 1 unidad, nueva o usada de los siguientes artículos: ... Dron, cuyo valor no supere los USD 1.000,00. En caso de encontrarse dos o más unidades... se la considerará bienes tributables'. This row covers customs only. Rules for flying a drone in Ecuador (civil aviation authority DGAC, protected areas such as Galápagos) were not verified — check with DGAC before you fly. Anything above an allowance, or not on SENAE's personal-effects list, is a 'bien tributable': declare it on the online Formulario de Registro Aduanero (FRA) and pay duties; taxable goods up to USD 2,000 can be cleared in the arrivals hall, above that they must go through a formal import. Goods not otherwise listed that have no volume/quantity restriction still count as personal effects up to USD 500 in total.",
+    "legal_source": {
+      "name": "Listado de bienes que puede ingresar al Ecuador sin pago de impuesto (efectos personales del viajero) — SENAE, PDF uploaded May 2026",
+      "url": "https://www.aduana.gob.ec/wp-content/uploads/2026/05/LISTADO-EFECTO-DE-VIAJEROS.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "electronics-ec",
+    "names": [
+      "phone",
+      "mobile phone",
+      "laptop",
+      "tablet",
+      "camera",
+      "smartwatch",
+      "headphones",
+      "game console",
+      "electronics"
+    ],
+    "destination": "EC",
+    "category": "other",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free: one new and one used unit each of mobile phone, camera, video camera, tablet, laptop, GPS, satellite phone, game console (with up to 2 accessories), smartwatch and wireless headphones; up to 6 memory cards.",
+      "quantity": "1 new + 1 used of each"
+    },
+    "notes": "SENAE personal-effects list: 'También se consideran como efectos personales hasta una unidad nueva y una usada de los siguientes artículos: Teléfono celular. Cámara fotográfica... Computador portátil... Reloj inteligente o smartwatch... Audífonos inalámbricos.' More units are taxable. SENAE's air-travellers page also tells travellers to register a phone's IMEI (not detailed here). Anything above an allowance, or not on SENAE's personal-effects list, is a 'bien tributable': declare it on the online Formulario de Registro Aduanero (FRA) and pay duties; taxable goods up to USD 2,000 can be cleared in the arrivals hall, above that they must go through a formal import. Goods not otherwise listed that have no volume/quantity restriction still count as personal effects up to USD 500 in total.",
+    "legal_source": {
+      "name": "Listado de bienes que puede ingresar al Ecuador sin pago de impuesto (efectos personales del viajero) — SENAE, PDF uploaded May 2026",
+      "url": "https://www.aduana.gob.ec/wp-content/uploads/2026/05/LISTADO-EFECTO-DE-VIAJEROS.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "perfume-ec",
+    "names": [
+      "perfume",
+      "cologne",
+      "fragrance",
+      "cosmetics",
+      "lotion",
+      "creams"
+    ],
+    "destination": "EC",
+    "category": "other",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free: up to 500 ml of perfume per traveller (1,000 ml per family group) and up to 2,500 ml of creams, body lotions, splash and similar per traveller (5,000 ml per family group), in new containers.",
+      "quantity": "500 ml perfume; 2,500 ml lotions"
+    },
+    "notes": "SENAE personal-effects list: 'Máximo 500 mililitros de perfume por pasajero o 1.000 mililitros de perfume por grupo familiar, contenidos en frascos nuevos' and 'Máximo 2.500 mililitros en total por pasajero o 5.000 mililitros en total por grupo familiar, de cremas, lociones corporales, splash y similares'. Anything above an allowance, or not on SENAE's personal-effects list, is a 'bien tributable': declare it on the online Formulario de Registro Aduanero (FRA) and pay duties; taxable goods up to USD 2,000 can be cleared in the arrivals hall, above that they must go through a formal import. Goods not otherwise listed that have no volume/quantity restriction still count as personal effects up to USD 500 in total.",
+    "legal_source": {
+      "name": "Listado de bienes que puede ingresar al Ecuador sin pago de impuesto (efectos personales del viajero) — SENAE, PDF uploaded May 2026",
+      "url": "https://www.aduana.gob.ec/wp-content/uploads/2026/05/LISTADO-EFECTO-DE-VIAJEROS.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-tz",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "liqueur",
+      "whisky",
+      "vodka"
+    ],
+    "destination": "TZ",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Spirits (including liqueurs) or wine up to 2 litres in total, duty-free, for travellers aged 18 or over, in accompanied baggage",
+      "quantity": "2 litres"
+    },
+    "notes": "TRA lists, among goods on which \"duty shall not be levied\" when imported by and in possession of the passenger: \"Spirits (including liquors) or wine, not exceeding two (2) litres\". TRA notes the duty-free allowances are granted \"only to passengers who have attained the age of eighteen (18) years\" and not for unaccompanied baggage. Possible conflict: Kenya's revenue authority (KRA), applying the same EAC customs regime, words this allowance as 1 litre of spirits or 2 litres of wine. The EAC Customs Management Act schedule itself was not read in this pass. TRA's wording is used here; if you carry spirits, keeping to 1 litre is the cautious reading. Beer is not separately mentioned. Anything above the allowance must be declared and duty paid.",
+    "legal_source": {
+      "name": "Returning Resident and First Arrival — Passengers' Baggage and personal effects, Tanzania Revenue Authority",
+      "url": "https://www.tra.go.tz/page/returning-resident"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-tz",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "cigarillos",
+      "cheroots",
+      "snuff",
+      "rolling tobacco"
+    ],
+    "destination": "TZ",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Cigarettes, cigars, cheroots, cigarillos, tobacco and snuff up to 250 grams in total, duty-free, for travellers aged 18 or over",
+      "quantity": "250 g"
+    },
+    "notes": "TRA: duty is not levied on \"Cigarettes, Cigars, cheroots, cigarillos, tobacco and snuff not exceeding in all 250 grammes in weight\" imported by and in possession of the passenger. Only for travellers aged 18 or over, accompanied baggage only. Above this, declare and pay duty. Kenya's KRA states the same 250 g figure.",
+    "legal_source": {
+      "name": "Returning Resident and First Arrival — Passengers' Baggage and personal effects, Tanzania Revenue Authority",
+      "url": "https://www.tra.go.tz/page/returning-resident"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-tz",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "us dollars",
+      "foreign currency",
+      "bearer negotiable instruments"
+    ],
+    "destination": "TZ",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declare cash over USD 10,000 (or equivalent) on arrival and on departure",
+      "quantity": "USD 10,000"
+    },
+    "notes": "Canada's official travel advice (last updated 7 October 2026): \"You must declare any amount over 10,000 U.S. dollars on arrival and departure.\" TRA separately lists a \"Cross Border Declaration of Currency and Bearer Negotiable Instruments\" among customs documents (https://www.tra.go.tz/page/import-procedures), but no Tanzanian page stating the threshold could be read in this pass, so the figure rests on the Canadian government page.",
+    "legal_source": {
+      "name": "Travel advice and advisories for Tanzania, Government of Canada (travel.gc.ca)",
+      "url": "https://travel.gc.ca/destinations/tanzania"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-tz",
+    "names": [
+      "medication",
+      "medicine",
+      "prescription medicine",
+      "prescription drugs",
+      "pills",
+      "tablets"
+    ],
+    "destination": "TZ",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Enough for up to 21 days of treatment for yourself or a companion; more than that needs a TMDA permit",
+      "quantity": "21 days' supply"
+    },
+    "notes": "TMDA's import/export guidelines (s. 2.5.2, Importation of pharmaceuticals for personal use): \"Any bona fide tourist or visitor who enters into or person normally resident who re-enter Tanzania Mainland may bring with him such quantity of any pharmaceutical product as may be required during a period of 21 days for the medical treatment of himself, any member or partner travelling with him.\" Larger personal-use imports need a TMDA permit, with a prescription from a registered practitioner and a letter giving the reasons if TMDA asks for one. Controlled medicines (narcotics, psychotropics) have their own rules: see controlled-medication-tz. TMDA's guidelines apply to Tanzania Mainland; Zanzibar regulates medicines separately and was not researched in this pass. Guideline edition dated January 2021, still the version TMDA publishes (checked 2026-10-10).",
+    "legal_source": {
+      "name": "Guidelines for Importation and Exportation of Pharmaceutical Products (Fourth Edition, January 2021), Tanzania Medicines and Medical Devices Authority, s. 2.5.2",
+      "url": "https://www.tmda.go.tz/uploads/publications/en1657888502-en1623839100-GUIDELINE%20FOR%20IMPORTATION%20,AND%20EXPORTATION%20final%20most%20(1).pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-tz",
+    "names": [
+      "controlled medication",
+      "narcotic medication",
+      "psychotropic medication",
+      "opioids",
+      "adhd medication",
+      "stimulants",
+      "benzodiazepines",
+      "sleeping pills",
+      "strong painkillers"
+    ],
+    "destination": "TZ",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "English prescription required, at most 30 days of treatment; larger quantities need a TMDA permit; Schedule IV narcotics (1961 Convention) not allowed",
+      "quantity": "max 30 days"
+    },
+    "notes": "TMDA's Guidelines for Dealing in Controlled Drugs (s. 2.5.2(d)): travellers carrying preparations with internationally controlled drugs for personal use must (i) carry a prescription from a registered practitioner, written in English, giving the patient's name, the medicine's name (trade and INN), posology and total amount prescribed, with a treatment duration of \"not more than 30 days\" (any longer treatment must be prescribed inside Tanzania); (ii) apply to TMDA for an import permit if the quantity exceeds the internationally recommended limit; (iii) \"Narcotic drugs included in schedule IV of the 1961 Convention are not allowed to be carried by travelers even if they are permitted in the country of departure\"; (iv) schedule III preparations of the 1961 Convention may be carried without restriction; (v) the type and quantity must comply with the rules of the origin and destination countries and international rules. A permit application otherwise needs a prescription, a letter giving reasons and a current medical report from a reputable hospital. TMDA defines controlled drugs as any narcotic drug, psychotropic substance or precursor listed under s. 77 of the Tanzania Medicines and Medical Devices Act. No specific drugs (e.g. ADHD stimulants) are named in the traveller rule. TMDA's guidelines apply to Tanzania Mainland; Zanzibar regulates medicines separately and was not researched in this pass. Edition dated January 2021.",
+    "legal_source": {
+      "name": "Guidelines for Dealing in Controlled Drugs (Third Edition, January 2021), Tanzania Medicines and Medical Devices Authority, s. 2.5.2",
+      "url": "https://www.tmda.go.tz/uploads/publications/en1626772669-en1626163951-GUIDELINES%20FOR%20DEALING%20IN%20CONTROLLED%20DRUGSpdf.pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "injectable-medication-tz",
+    "names": [
+      "injectable medication",
+      "insulin",
+      "insulin pen",
+      "injections",
+      "injectable"
+    ],
+    "destination": "TZ",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Up to 21 days' supply, as for any pharmaceutical product",
+      "quantity": "21 days' supply"
+    },
+    "notes": "Tanzania has no separate traveller rule for injectables. Under TMDA's personal-use rule (s. 2.5.2), a visitor to Tanzania Mainland may bring \"such quantity of any pharmaceutical product as may be required during a period of 21 days\" for their own treatment or a companion's; larger amounts need a TMDA permit. Brand-name GLP-1 pens are not named by the source. Needles and syringes (medical devices) are not covered by this rule and were not researched. TMDA's guidelines apply to Tanzania Mainland; Zanzibar regulates medicines separately and was not researched in this pass. ",
+    "legal_source": {
+      "name": "Guidelines for Importation and Exportation of Pharmaceutical Products (Fourth Edition, January 2021), Tanzania Medicines and Medical Devices Authority, s. 2.5.2",
+      "url": "https://www.tmda.go.tz/uploads/publications/en1657888502-en1623839100-GUIDELINE%20FOR%20IMPORTATION%20,AND%20EXPORTATION%20final%20most%20(1).pdf"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-tz",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "bangi",
+      "ganja",
+      "hashish",
+      "thc"
+    ],
+    "destination": "TZ",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "DCEA (in Swahili): under the Drugs Control and Enforcement Act, Cap. 95, involvement of any kind with cannabis (\"kulima, kuuza, kuhifadhi, kutumia, kuichakata\" — growing, selling, storing/possessing, using, processing) is a criminal offence, \"adhabu yake inafikia hadi KIFUNGO CHA MAISHA JELA\" (the penalty can be up to life imprisonment). Canada's travel advice adds that drug penalties are severe, with long prison sentences. No primary source on CBD products was found, so treat any cannabis-derived product, CBD included, as prohibited.",
+    "legal_source": {
+      "name": "Ukweli kuhusu Bangi (Facts about cannabis), Drug Control and Enforcement Authority (DCEA)",
+      "url": "https://www.dcea.go.tz/pages/fact-about-marijuana"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-tz",
+    "names": [
+      "drone",
+      "drones",
+      "quadcopter",
+      "uav",
+      "uas",
+      "rpas",
+      "unmanned aircraft"
+    ],
+    "destination": "TZ",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "TCAA import permit and operator registration needed before arrival (apply at least 3 weeks ahead), or the drone is confiscated",
+      "quantity": "permit required"
+    },
+    "notes": "TCAA: \"Any person travelling to Tanzania with a drone\" must apply for a TCAA import permit (\"Without TCAA Import Permit, the drone will be confiscated at the entry point upon arrival\") and register the operator (drone pilot), at least THREE WEEKS before travel. To get access to the online system, email drones@tcaa.go.tz with your phone number, address, and the drone model and purpose. No refund if the applications are not completed in time. Non-resident fees (TCAA 'Drone charges' page, https://www.tcaa.go.tz/pages/drone-charges-in-tanzania), for drones under 5 kg: registration USD 100, operations permit USD 10 per day, import permit USD 50 per drone. Fees are higher for 5.1–25 kg and over 25 kg. Canada's travel advice also says a permit is needed to import a drone.",
+    "legal_source": {
+      "name": "Drones — requirements for non-residents, Tanzania Civil Aviation Authority",
+      "url": "https://www.tcaa.go.tz/pages/drones"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "plastic-bags-tz",
+    "names": [
+      "plastic bags",
+      "plastic carrier bags",
+      "shopping bags",
+      "polythene bags"
+    ],
+    "destination": "TZ",
+    "category": "other",
+    "verdict": "prohibited",
+    "notes": "Canada's official travel advice (updated 7 October 2026): using, making or importing plastic bags is illegal in Tanzania, and offenders, tourists included, can face heavy fines, up to 7 days in prison, or both. Remove plastic carrier bags from your luggage before arrival. The Tanzanian regulation text (Vice President's Office / NEMC) was not read in this pass, and the exact scope (e.g. zip-lock toiletry bags) is not confirmed here.",
+    "legal_source": {
+      "name": "Travel advice and advisories for Tanzania, Government of Canada (travel.gc.ca)",
+      "url": "https://travel.gc.ca/destinations/tanzania"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-kh",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "us dollars",
+      "usd",
+      "foreign currency",
+      "riel",
+      "declare cash",
+      "10000"
+    ],
+    "destination": "KH",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Bringing in cash worth USD 10,000 or more (or the equivalent in other currencies) must be declared. Taking USD 10,000 or more out needs prior permission from the central bank and related authorities.",
+      "quantity": "USD 10,000 equivalent"
+    },
+    "notes": "Japan MOFA (updated 25 Mar 2025), 外貨申告: '1万米ドル相当額以上の現金の持ち込みは申告が必要です' (cash of USD 10,000 equivalent or more must be declared on entry) and '1万米ドル相当額以上の現金を国外に持ち出す場合には、中央銀行および関係機関から事前に持ち出し許可を得る必要があります' (to take USD 10,000 or more out, get prior export permission from the central bank and relevant agencies). Declarations are made in the customs section of the Cambodia e-Arrival. Possible conflict: the airport operator's pages (Cambodia Airports, not a government source, not cited) word the threshold as sums 'over US$10,000' and say an export permit from the National Bank of Cambodia is needed only if the cash was not declared on entry. We follow the stricter reading (declare at USD 10,000 or more). The Cambodian customs site (customs.gov.kh) was unreachable, so the national text could not be read directly.",
+    "legal_source": {
+      "name": "安全対策基礎データ：カンボジア (Basic safety data: Cambodia) — 外務省 海外安全ホームページ, Ministry of Foreign Affairs of Japan (updated 25 Mar 2025)",
+      "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_004.html"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-kh",
+    "names": [
+      "weapons",
+      "guns",
+      "firearms",
+      "ammunition",
+      "ammo",
+      "explosives",
+      "knives"
+    ],
+    "destination": "KH",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "notes": "Japan MOFA (updated 25 Mar 2025), 通関: 'weapons and ammunition (武器・弾薬), narcotics, pornographic products, radio equipment, and chemicals that can be used to make explosives are prohibited from being brought into Cambodia.' The source does not mention knives specifically or any permit route for firearms; 'knives' is listed as a search term only so travellers find this row — check with Cambodian authorities before carrying any blade. Large quantities of any product may be treated as commercial and seized or taxed.",
+    "legal_source": {
+      "name": "安全対策基礎データ：カンボジア (Basic safety data: Cambodia) — 外務省 海外安全ホームページ, Ministry of Foreign Affairs of Japan (updated 25 Mar 2025)",
+      "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_004.html"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-kh",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "hash",
+      "thc",
+      "edibles",
+      "drugs",
+      "narcotics"
+    ],
+    "destination": "KH",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "UK FCDO (Cambodia safety and security): 'Possession, trafficking and manufacture of any illegal drugs are serious offences in Cambodia. This includes cannabis.' Zero tolerance; even very small amounts can bring arrest and a long jail sentence, up to life. Spain's MFA (updated 22 Jul 2026) adds that both trafficking and consumption of all drugs, 'incluido el cannabis', are banned with penalties 'de entre 10 años a cadena perpetua'. Japan MOFA lists narcotics among items prohibited from import and warns of life imprisonment. France's MFA states 10–20 years' prison and fines up to USD 10,000 for use, possession and trafficking. Airport scanning also covers transit passengers' baggage. CBD products are not specifically addressed by any source read, so CBD is not covered by this row.",
+    "legal_source": {
+      "name": "Cambodia travel advice: safety and security (illegal drugs) — GOV.UK Foreign travel advice (FCDO)",
+      "url": "https://www.gov.uk/foreign-travel-advice/cambodia/safety-and-security"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-kh",
+    "names": [
+      "drone",
+      "drones",
+      "dji",
+      "quadcopter",
+      "uav",
+      "aerial photography"
+    ],
+    "destination": "KH",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Flying drones is banned in Phnom Penh and within the Angkor Wat grounds in Siem Reap; get permission in advance for any drone filming."
+    },
+    "notes": "Japan MOFA (updated 25 Mar 2025), 写真撮影の制限: 'プノンペンおよびシェムリアップのアンコールワットの敷地内でのドローンの使用は禁止されています。ドローンによる撮影を行う場合には、事前に許可を取得してください。' (Drone use is prohibited in Phnom Penh and within the Angkor Wat grounds in Siem Reap; obtain permission before filming with a drone.) The source covers use, not import; it does not name the permitting authority. Photography near military/security sites and airports marked 'no photography' is also restricted. Note that 'radio equipment' (無線機) is on the same page's list of prohibited imports — whether that captures drone controllers is not stated.",
+    "legal_source": {
+      "name": "安全対策基礎データ：カンボジア (Basic safety data: Cambodia) — 外務省 海外安全ホームページ, Ministry of Foreign Affairs of Japan (updated 25 Mar 2025)",
+      "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_004.html"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "antiquities-kh",
+    "names": [
+      "antiquities",
+      "artefacts",
+      "artifacts",
+      "khmer statues",
+      "buddha statue",
+      "archaeological",
+      "cultural heritage",
+      "souvenirs"
+    ],
+    "destination": "KH",
+    "category": "other",
+    "verdict": "depends",
+    "limits": {
+      "description": "A permit is needed to buy, export or possess cultural or archaeological artefacts; carry the legal paperwork."
+    },
+    "notes": "Government of Canada travel advice (last updated 26 May 2026), Cultural heritage and antiquities: 'A permit is required to purchase, export or possess cultural or archaeological artefacts. To avoid any difficulties, make sure you obtain and carry the required legal paperwork to purchase or export antiquities.' The source does not name the issuing authority.",
+    "legal_source": {
+      "name": "Travel advice and advisories for Cambodia (Laws and culture) — Government of Canada (travel.gc.ca)",
+      "url": "https://travel.gc.ca/destinations/cambodia"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-il",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "whisky",
+      "vodka",
+      "duty free alcohol"
+    ],
+    "destination": "IL",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free in the green channel: 1 litre of alcohol, liquor or spirits plus 2 litres of wine, for each entrant aged at least 18.",
+      "quantity": "1 L spirits + 2 L wine (18+)"
+    },
+    "notes": "Israel Tax Authority, green channel list: 'Alcohol, liquor, spirits and wine - 1 liter of alcohol, liquor and spirits, and 2 liters of wine - for each entrant aged at least 18'. Going through the green channel counts as declaring that you carry only permitted items in permitted quantities; anything more must go through the red channel and is taxed. The guide also allows alcoholic perfumes up to 1/4 litre (250 ml) per entrant. If unsure, use the red channel. Non-exempt items not declared in the red channel may be charged double taxes.",
+    "legal_source": {
+      "name": "Customs Guide for Tourists and Foreign Residents — Israel Tax Authority (gov.il), chapter 'The green channel Passage with Tax-Exempt Items' (updated 30.07.2026)",
+      "url": "https://www.gov.il/en/pages/guide-tourist-customs?chapterIndex=3"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-il",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "rolling tobacco",
+      "cigarette carton"
+    ],
+    "destination": "IL",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free: tobacco in all its forms up to 250 grams (cigarettes: up to 200, one carton) per entrant. Tobacco and smoking products not packaged and marked as Israeli law and Ministry of Health rules require are prohibited.",
+      "quantity": "250 g / 200 cigarettes"
+    },
+    "notes": "Israel Tax Authority green channel list: 'Tobacco in all its forms, weighing not more than 250 grams / 8.81 oz. (cigarettes - up to 200 cigarettes that are one carton)'. The guide's approvals chapter adds: 'It is prohibited to import tobacco and smoking products to Israel as defined in the Law on Restriction on Advertising and Marketing of Tobacco and Smoking Products -1983 ... which are not packaged and marked in accordance with the Law and the rules established by the Ministry of Health.' The guide does not say whether this packaging rule is enforced against a traveller's personal allowance; amounts above 250 g must be declared in the red channel.",
+    "legal_source": {
+      "name": "Customs Guide for Tourists and Foreign Residents — Israel Tax Authority (gov.il), chapter 'The green channel Passage with Tax-Exempt Items' (updated 30.07.2026)",
+      "url": "https://www.gov.il/en/pages/guide-tourist-customs?chapterIndex=3"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-il",
+    "names": [
+      "cash",
+      "money",
+      "currency",
+      "dollars",
+      "euros",
+      "shekels",
+      "travellers cheques",
+      "bearer securities",
+      "cheques",
+      "payment cards"
+    ],
+    "destination": "IL",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "You must declare money worth 50,000 NIS or more (combined) when entering or leaving Israel. The threshold is 12,000 NIS for entering or leaving Gaza and for leaving Israel by land (Rafah, Nitzana, Jordan River, Yitzhak Rabin crossings); at the Allenby crossing it is the equivalent of 2,000 Jordanian dinars.",
+      "quantity": "50,000 NIS"
+    },
+    "notes": "Israel Tax Authority, 'Money laundering' (Required Reporting of Transfer of Money into and out of Israel; page updated 28.06.2021), under the Prohibition of Money Laundering Law, 2000 and its 2001 reporting regulations. 'Money' means cash, cashier's cheques, traveller's cheques, bearer securities, negotiable instruments and payment cards. You declare on Customs form 84a. Not declaring is an offence: up to 6 months in prison or a fine of up to ten times the undeclared amount, whichever is higher. Police and customs can seize the amount above the threshold. The 50,000 NIS general threshold dates from the 7 December 2017 amendment to section 4 of the law. Carrying money is allowed; only the declaration is required.",
+    "legal_source": {
+      "name": "Money laundering — Required Reporting of Transfer of Money into and out of Israel, Israel Tax Authority (gov.il)",
+      "url": "https://www.gov.il/en/departments/general/money-laundering"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-il",
+    "names": [
+      "prescription medication",
+      "medicine",
+      "medicines",
+      "prescription drugs",
+      "pills",
+      "vitamins",
+      "dietary supplements",
+      "personal medication"
+    ],
+    "destination": "IL",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "You may bring medicines for your own normal personal needs, up to a 90-day supply at the recommended dosage. This does not cover narcotic drugs or psychotropic substances, which have separate rules (see controlled-medication-il).",
+      "quantity": "90-day supply"
+    },
+    "notes": "Israel Ministry of Health, Pharmaceutics Division: 'Travelers entering Israel can bring medicines in amounts that are suitable to their own personal needs. This personal supply is limited to a maximum 90-day quantity based on the recommended dosage for each medication. However, this does not apply to narcotic drugs and psychotropic substances.' Israeli law applies even if the product is not a medicine where you bought it: supplements or vitamins sold over the counter abroad 'may be classified as medicines requiring authorization in Israel', especially if they are marketed with medical claims. The page does not say whether a prescription must be carried for non-controlled medicines.",
+    "legal_source": {
+      "name": "International Travel with Controlled Substances — Guidelines for Travelers, Pharmaceutics Division, Israel Ministry of Health (gov.il; English page updated 28.05.2024, Hebrew version updated 30.08.2026)",
+      "url": "https://www.gov.il/en/pages/carrying-medication"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-il",
+    "names": [
+      "controlled medication",
+      "narcotics",
+      "psychotropic",
+      "opioids",
+      "oxycodone",
+      "morphine",
+      "codeine",
+      "fentanyl",
+      "methadone",
+      "methylphenidate",
+      "benzodiazepines",
+      "diazepam",
+      "lorazepam",
+      "adhd medication",
+      "stimulants",
+      "sleeping pills"
+    ],
+    "destination": "IL",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Medicines with substances listed in the Dangerous Drugs Ordinance may be brought into Israel in amounts for up to 31 days. You must carry a photocopy of a valid prescription, the medicine in its original package, and a 'permit to carry a controlled substance' issued by the health authority of your country of residence.",
+      "quantity": "31-day supply + documents"
+    },
+    "notes": "Israel Ministry of Health: 'Substances specified in the Controlled Substances Ordinance may be brought into Israel in amounts sufficient for 31 days. To comply with the Ordinance, travelers must carry the following: 1. A photocopy of a valid prescription, 2. Medicine in its original package, 3. \"A permit to carry a controlled substance\" issued by the competent health authority in the country of residence.' The Hebrew version (updated 30.08.2026) says the same: 31 days, with the same three documents. Israel's INCB country form (dated 04.12.2023) matches: 31 days each for narcotic drugs and psychotropic substances, a valid prescription, a doctor's certificate endorsed by the home health authority, the original container, and a traveller's certificate for narcotic/psychotropic medicines endorsed by the home health authorities. Contact: Ministry of Health Pharmaceutical Division, rok.import@moh.gov.il / PERMITS@MOH.GOV.IL, tel. 08-6241010. The drugs named here (opioids, methylphenidate, benzodiazepines) come from the page's UNODC table of controlled substances. That table is advice for Israelis travelling abroad, not an Israeli import limit; the Israeli limit is the 31-day rule. The page does not say how amphetamine-based ADHD medicines such as Adderall are treated on entry, so check with the Ministry of Health. Cannabis is not covered here (see unverified).",
+    "legal_source": {
+      "name": "International Travel with Controlled Substances — Guidelines for Travelers, Pharmaceutics Division, Israel Ministry of Health (gov.il; English page updated 28.05.2024, Hebrew version updated 30.08.2026)",
+      "url": "https://www.gov.il/en/pages/carrying-medication"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-il",
+    "names": [
+      "drone",
+      "drones",
+      "uav",
+      "quadcopter",
+      "dji",
+      "unmanned aerial vehicle"
+    ],
+    "destination": "IL",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Importing a drone needs approval from the competent authorities (Ministry of Communications, and Ministry of Transportation / Israel Airports Authority). Tourists must also leave a guarantee equal to the applicable taxes, refunded when they take the drone out of Israel.",
+      "quantity": "approval + tax guarantee"
+    },
+    "notes": "Israel Tax Authority tourist customs guide, 'Items which Import is Conditional on the Approval of the Competent Authority': Drone — Ministry of Communications, Ministry of Transportation - Israel Airports Authority (03-5198282, requests@moc.gov.il; 03-9774521, gendela@mot.gov.il). An import approval can be obtained before or after the item arrives, but the item is only released after it is presented. An import licence must be obtained before arrival, and failing to do so is an offence that may bring a fine. 'Taxes and Guarantees' chapter: 'If you have brought with you one of the following items: a new personal computer, a UAV (drone), electric bicycle or similar items, you will be required to deposit a guarantee in the amount of taxes applicable to them - in cash or by credit card.' The guarantee is returned if you take the item out on time, and kept if you don't. Declare in the red channel. Flying rules inside Israel are not covered here.",
+    "legal_source": {
+      "name": "Customs Guide for Tourists and Foreign Residents — Israel Tax Authority (gov.il), chapter 'Items which Import is Conditional on the Approval of the Competent Authority' (updated 30.07.2026)",
+      "url": "https://www.gov.il/en/pages/guide-tourist-customs?chapterIndex=8"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-il",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition",
+      "knives",
+      "pepper spray",
+      "tear gas",
+      "starting pistol",
+      "gun parts",
+      "taser"
+    ],
+    "destination": "IL",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "Weapons and weapon parts need approval from the Ministry of Public Security. Some items are banned outright, including knives other than pocket knives or knives for a legitimate trade or household purpose, gun-shaped tear gas canisters, starting pistols or gas-operated firearms and similar tools, explosives, and radar/laser jammer detectors.",
+      "quantity": "permit; some items banned"
+    },
+    "notes": "Israel Tax Authority tourist customs guide: 'Weapon and parts — Ministry of Public Security, 077-2324444' is on the list of items whose import needs a competent authority's approval. The prohibited-items chapter lists, among others: 'A knife, other than a pocket knife and other than a knife intended for the usage in a profession, craft, business, household or any other legitimate purpose; A Radar Laser Jammer Detector; A wrap-like firearm (gun wrap pistol skin) or starting pistol-like or a gas-operated firearm or any similar tools; A tear gas canister, shaped like a firearm; ... Explosives and flammable substances'. The guide calls these 'examples', so the list is not complete. Pepper spray in non-firearm form and tasers are not specifically addressed.",
+    "legal_source": {
+      "name": "Customs Guide for Tourists and Foreign Residents — Israel Tax Authority (gov.il), chapter 'Items that are prohibited for importation' (updated 30.07.2026)",
+      "url": "https://www.gov.il/en/pages/guide-tourist-customs?chapterIndex=9"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "plants-seeds-il",
+    "names": [
+      "plants",
+      "seeds",
+      "cuttings",
+      "bulbs",
+      "soil",
+      "plant material",
+      "etrog",
+      "lulav",
+      "four species"
+    ],
+    "destination": "IL",
+    "category": "food_plant",
+    "verdict": "depends",
+    "limits": {
+      "description": "Plants and seeds need a plant protection certificate/approval from the Ministry of Agriculture before customs will release them. Used sacks or wrapping that held plant material are banned.",
+      "quantity": "approval required"
+    },
+    "notes": "Israel Tax Authority tourist customs guide, approvals list: 'Plants, seeds — Ministry of Agriculture – plant protection certificate, 03-9681587, Beit Dagan'. The prohibited-items list includes 'Used sacks or any other wrapping material that were used for packaging vegetative material' and 'Used apiculture (beekeeping) equipment'. The guide does not specifically say how fresh fruit and vegetables are treated, and the Ministry of Agriculture's own traveller page could not be found, so fruit and vegetables are left out of this row (see unverified). Separately, the green channel allows food within the $200 personal allowance, up to 3 kg in total and no more than 1 kg of each type, but only for food that needs no approval.",
+    "legal_source": {
+      "name": "Customs Guide for Tourists and Foreign Residents — Israel Tax Authority (gov.il), chapter 'Items which Import is Conditional on the Approval of the Competent Authority' (updated 30.07.2026)",
+      "url": "https://www.gov.il/en/pages/guide-tourist-customs?chapterIndex=8"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "personal-goods-il",
+    "names": [
+      "gifts",
+      "personal goods",
+      "duty free allowance",
+      "shopping",
+      "perfume",
+      "electronics",
+      "laptop",
+      "camera",
+      "food"
+    ],
+    "destination": "IL",
+    "category": "other",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free: other goods for personal use or as gifts worth up to US$200 per entrant aged 2 or over, which can include food up to 3 kg in total (max 1 kg per type); perfume up to 250 ml. Used, portable personal items (camera, laptop, jewellery, sports or camping gear, etc.) may pass the green channel but must leave with you. New computers, drones and e-bikes need a tax guarantee.",
+      "quantity": "US$200; perfume 250 ml"
+    },
+    "notes": "Israel Tax Authority: the exemption 'is strictly personal to each of the entrants' and allowances can't be combined. 'If the value of an imported item exceeds $200, it is not possible to get an exemption for $200 and pay taxes on the difference. Entrants will be charged taxes on the full value of the item.' Use the red channel if in doubt, or for portable work tools, diving equipment, e-bikes or a new computer. Customs may ask for a guarantee for some items. There is no exemption for items sent by parcel post.",
+    "legal_source": {
+      "name": "Customs Guide for Tourists and Foreign Residents — Israel Tax Authority (gov.il), chapter 'The green channel Passage with Tax-Exempt Items' (updated 30.07.2026)",
+      "url": "https://www.gov.il/en/pages/guide-tourist-customs?chapterIndex=3"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "banned-items-il",
+    "names": [
+      "prohibited items",
+      "counterfeit goods",
+      "fake goods",
+      "obscene material",
+      "drug paraphernalia",
+      "bongs",
+      "pipes",
+      "gambling tickets",
+      "snakes",
+      "terrorist propaganda"
+    ],
+    "destination": "IL",
+    "category": "other",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Banned: counterfeit or obscene goods; counterfeit coins or documents; unlicensed lottery/gambling tickets and adverts; forbidden games; dangerous live animals such as vipers; tools used to make or consume a dangerous drug; goods that may incite violence, terrorism or racism or show support for a terrorist organisation.",
+      "quantity": "prohibited"
+    },
+    "notes": "Israel Tax Authority tourist customs guide, 'Items that are prohibited for importation' (these are 'examples', so the list is not complete): 'Goods that are hacked or obscene; Counterfeits and imitations of coins and of documents; Tickets and advertisements for lotteries or gambling, for which performance no permit has been issued in advance; ... Forbidden games; Explosives and flammable substances, living creatures such as vipers and similar dangerous goods; Used apiculture (beekeeping) equipment; Goods, which are tools of the kind used to make or consume a dangerous drug; Goods, which have the potential to incite violence, terrorism or racism; Goods, which have a manifestation of identification with or sympathy for a terrorist organization.'",
+    "legal_source": {
+      "name": "Customs Guide for Tourists and Foreign Residents — Israel Tax Authority (gov.il), chapter 'Items that are prohibited for importation' (updated 30.07.2026)",
+      "url": "https://www.gov.il/en/pages/guide-tourist-customs?chapterIndex=9"
+    },
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]

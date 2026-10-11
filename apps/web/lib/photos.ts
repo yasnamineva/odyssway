@@ -64,6 +64,15 @@ export const photos = {
   "dest-lk": { width: 1280, height: 853, author: "adamhilltravel", page: "https://pixabay.com/photos/sigiriya-lion-rock-sri-lanka-asia-3607590/" },
   "dest-jo": { width: 1280, height: 720, author: "plukje", page: "https://pixabay.com/photos/jordan-petra-holiday-middle-east-181912/" },
   "dest-qa": { width: 1280, height: 850, author: "leafwriter", page: "https://pixabay.com/photos/qatar-doha-architecture-travel-3853815/" },
+  // Destinations added in research batch 5 (2026-10).
+  "dest-il": { width: 1280, height: 493, author: "walkerssk", page: "https://pixabay.com/photos/jerusalem-israel-old-town-walls-1712855/" },
+  "dest-kh": { width: 1280, height: 960, author: "mrsakchai", page: "https://pixabay.com/photos/siem-reap-angkor-wat-temple-2811393/" },
+  "dest-cl": { width: 1280, height: 853, author: "jmarti20", page: "https://pixabay.com/photos/torres-del-paine-national-park-4827345/" },
+  "dest-ec": { width: 1280, height: 852, author: "gonzo1887", page: "https://pixabay.com/photos/galapagos-r%C3%A1bida-galapagos-islands-4324983/" },
+  "dest-jm": { width: 1280, height: 853, author: "ivan_z", page: "https://pixabay.com/photos/sea-caribbean-island-jamaica-5926926/" },
+  "dest-bs": { width: 1280, height: 743, author: "violetta", page: "https://pixabay.com/photos/lighthouse-bahamas-nassau-island-116954/" },
+  "dest-me": { width: 1280, height: 960, author: "falco", page: "https://pixabay.com/photos/kotor-montenegro-balkan-1094388/" },
+  "dest-tz": { width: 1280, height: 788, author: "klimentgrozdanoski", page: "https://pixabay.com/photos/africa-zanzibar-beach-tanzania-5135407/" },
   // Blog posts.
   "blog-ees": { width: 1280, height: 853, author: null, page: "https://pixabay.com/photos/airport-tourism-flying-air-traffic-1515431/" },
   "blog-eta": { width: 1280, height: 853, author: "stocksnap", page: "https://pixabay.com/photos/window-airplane-airline-travel-2600716/" },

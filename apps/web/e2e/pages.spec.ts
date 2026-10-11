@@ -67,7 +67,7 @@ test("unverified overstay-penalty countries 404 instead of rendering thin conten
 });
 
 test("unverified destination pages 404 instead of rendering thin content", async ({ page }) => {
-  const response = await page.goto("/destinations/tanzania");
+  const response = await page.goto("/destinations/nepal");
   expect(response?.status()).toBe(404);
 });
 
