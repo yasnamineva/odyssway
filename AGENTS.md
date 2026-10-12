@@ -595,6 +595,10 @@ subscription before real checkout/price experiments say otherwise.
   and AI systems that decide what to cite.
 - Any source change → re-check the value against the (possibly moved/updated)
   official source → bump `verified_at` → sitemap `lastmod` updates automatically.
+- **IndexNow (2026-10-12)**: `pnpm indexnow` pushes URLs from the live sitemap to
+  Bing and the other IndexNow engines (key file in `apps/web/public/`). After a
+  data update and deploy, submit only what changed (`-- --since YYYY-MM-DD` or
+  explicit paths) — never resubmit the whole sitemap routinely.
 - The `/etias/status` page is the fastest-moving asset; design it so a single JSON
   edit + deploy updates everything (banner, per-nationality pages, FAQ answers).
 

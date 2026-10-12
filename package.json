@@ -12,6 +12,7 @@
     "validate:data": "tsx scripts/validate-data.ts",
     "watch:sources": "tsx scripts/watch-sources.ts",
     "coverage": "tsx scripts/coverage-report.ts",
+    "indexnow": "tsx scripts/indexnow.ts",
     "ci": "pnpm typecheck && pnpm test && pnpm validate:data && pnpm build"
   },
   "devDependencies": {
