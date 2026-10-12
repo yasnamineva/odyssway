@@ -1,0 +1,125 @@
+# Source changes — 2026-10-12
+
+Official sources changed (or could not be checked). A human must review
+each item, update the affected data, and bump `verified_at`.
+
+Watched 649 sources: 0 changed, 533 first snapshots, 0 volatile (differ between fetches, not flagged), 116 newly unmonitorable, 0 still unmonitorable (unreachable, JS-rendered or bot-challenged).
+
+## Newly unreachable (URL moved? blocked?)
+
+- **eu-etias-hub** — fetch failed (no readable content (75 chars: JS-rendered page or bot challenge)): https://travel-europe.europa.eu/etias_en — used by data/etias.json, /etias/status (verify URL is still canonical)
+- **eu-ees-hub** — fetch failed (no readable content (75 chars: JS-rendered page or bot challenge)): https://travel-europe.europa.eu/ees_en — used by /ees pages (verify URL is still canonical)
+- **ma-visa-exemption-list** — fetch failed (no readable content (118 chars: JS-rendered page or bot challenge)): https://www.consulat.ma/en/list-countries-whose-citizens-are-exempted-entry-visa-morocco — used by data/entry-requirements.json (Morocco visa-exemption list)
+- **id-imigrasi-voa-bvk-list** — fetch failed (HTTP 403): https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa — used by data/entry-requirements.json (Indonesia VOA/visa-free/Calling Visa nationality lists — Brazil moved from VOA to visa-free 2026-07-09, worth periodic recheck)
+- **sa-evisa-portal** — fetch failed (HTTP 403): https://visa.visitsaudi.com/ — used by data/entry-requirements.json (Saudi Arabia eVisa eligible-nationality list)
+- **eu-visa-list-regulation-annex1** — fetch failed (no readable content (0 chars: JS-rendered page or bot challenge)): https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018R1806-20251230 — used by data/nationality-rules.json (Regulation (EU) 2018/1806 Annex I — third countries whose nationals need a Schengen visa; used for China/India's schengenVisaRequired status)
+- **data-f3696f0f8c** — fetch failed (no readable content (67 chars: JS-rendered page or bot challenge)): https://help.cbp.gov/s/article/Article-1444 — used by customs-items.json:prescription-medication-us
+- **kr-keta-portal** — fetch failed (no readable content (15 chars: JS-rendered page or bot challenge)): https://www.k-eta.go.kr/ — used by data/entry-requirements.json (South Korea K-ETA eligible-nationality list, fee, temporary exemption window through 2026-12-31)
+- **data-f2da113fc5** — fetch failed (no readable content (67 chars: JS-rendered page or bot challenge)): https://help.cbp.gov/s/article/Article-1123 — used by customs-items.json:weapons-us
+- **data-aa681251c4** — fetch failed (no readable content (0 chars: JS-rendered page or bot challenge)): https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32007L0074 — used by customs-items.json:alcohol-eu, customs-items.json:tobacco-eu, customs-items.json:e-cigarettes-eu (+1 more)
+- **data-7fcbfb5e17** — fetch failed (no readable content (0 chars: JS-rendered page or bot challenge)): https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02) — used by customs-items.json:prescription-medication-eu, customs-items.json:controlled-medication-eu
+- **data-c18abc457b** — fetch failed (no readable content (0 chars: JS-rendered page or bot challenge)): https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32018R1672 — used by customs-items.json:cash-eu
+- **data-56199bb4eb** — fetch failed (no readable content (0 chars: JS-rendered page or bot challenge)): https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32021L0555 — used by customs-items.json:weapons-eu
+- **data-59cc866d45** — fetch failed (no readable content (0 chars: JS-rendered page or bot challenge)): https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R2122 — used by customs-items.json:meat-dairy-eu
+- **data-9795647c7e** — fetch failed (HTTP 403): https://customs.gov.ng/?page_id=3073 — used by customs-items.json:alcohol-ng, customs-items.json:tobacco-ng
+- **data-7ab75ae2c1** — fetch failed (HTTP 403): https://customs.gov.ng/?page_id=3077 — used by customs-items.json:weapons-ng
+- **data-15026dd475** — fetch failed (no readable content (118 chars: JS-rendered page or bot challenge)): https://fr.diplomatie.ma/visiter-le-maroc-facilit%C3%A9s-douani%C3%A8res-accord%C3%A9es-aux-personnes-ayant-leur-r%C3%A9sidence-%C3%A0-l%C3%A9tranger-et-s%C3%A9journant-temporairement — used by customs-items.json:alcohol-ma, customs-items.json:tobacco-ma, customs-items.json:medication-ma (+1 more)
+- **data-ec0e648453** — fetch failed (HTTP 404): https://rwandafda.gov.rw/wp-content/uploads/2023/03/Guidelines%20for%20import%20and%20export%20of%20regulated%20products%20declared%20as%20personal%20effects.pdf — used by customs-items.json:prescription-medication-rw, customs-items.json:controlled-substances-rw, customs-items.json:injectable-medication-rw
+- **data-8672255658** — fetch failed (fetch failed): https://gumrukrehberi.gov.tr/sayfa/yolcu-beraberinde-getirilen-t%C3%BCketim-e%C5%9Fyas%C4%B1n%C4%B1n-miktarlar%C4%B1-ne-kadard%C4%B1r — used by customs-items.json:alcohol-tr, customs-items.json:tobacco-tr
+- **data-1678c2789a** — fetch failed (fetch failed): https://gumrukrehberi.gov.tr/kategori/bireysel-slemler/nakit-ve-ziynet-esyasi-rehberi — used by customs-items.json:cash-tr
+- **data-8de4b2a2d4** — fetch failed (fetch failed): https://www.abf.gov.au/entering-and-leaving-australia/duty-free — used by customs-items.json:alcohol-au, customs-items.json:tobacco-au
+- **data-68cd12efe8** — fetch failed (fetch failed): https://gumrukrehberi.gov.tr/sayfa/yolcu-beraberinde-t%C3%BCrkiyeye-getirilebilen-di%C4%9Fer-g%C4%B1da-%C3%BCr%C3%BCnleri-nelerdir — used by customs-items.json:meat-dairy-tr, customs-items.json:plant-products-tr
+- **data-b369587498** — fetch failed (fetch failed): https://gumrukrehberi.gov.tr/sayfa/yolcunun-kulland%C4%B1%C4%9F%C4%B1-ila%C3%A7lar%C4%B1n%C4%B1-beraberinde-t%C3%BCrkiyeye-getirmesi-m%C3%BCmk%C3%BCn-m%C3%BCd%C3%BCr — used by customs-items.json:medication-tr
+- **data-ded741e134** — fetch failed (fetch failed): https://gumrukrehberi.gov.tr/sayfa/posta-ya-da-h%C4%B1zl%C4%B1-kargo-ta%C5%9F%C4%B1mac%C4%B1l%C4%B1%C4%9F%C4%B1-yoluyla-t%C3%BCrkiyeye-getirilemeyecek-e%C5%9Fyalar-hangileridir — used by customs-items.json:cannabis-tr
+- **data-0467ff9207** — fetch failed (fetch failed): https://www.austrac.gov.au/general-public/moving-money-overseas — used by customs-items.json:cash-au
+- **data-42d4904dc3** — fetch failed (HTTP 404): https://u.ae/en/information-and-services/health-and-fitness/drugs-and-controlled-medicines — used by customs-items.json:medication-ae
+- **data-fc042ba81c** — fetch failed (no readable content (17 chars: JS-rendered page or bot challenge)): https://www.customs.gov.vn/index.jsp?pageId=2281&aid=157208&cid=4208 — used by customs-items.json:alcohol-vn, customs-items.json:tobacco-vn
+- **data-b0d533ff36** — fetch failed (no readable content (17 chars: JS-rendered page or bot challenge)): https://www.customs.gov.vn/index.jsp?pageId=2281&aid=157007&cid=4208 — used by customs-items.json:cash-vn
+- **data-e55b93df86** — fetch failed (fetch failed): https://english.cq.gov.cn/services/entryandexit/FAQs/202606/t20260629_15782361.html — used by customs-items.json:alcohol-cn, customs-items.json:tobacco-cn
+- **data-7f3f3b473a** — fetch failed (fetch failed): https://www.safe.gov.cn/tianjin/2024/0430/2466.html — used by customs-items.json:cash-cn
+- **data-68e9c2d05c** — fetch failed (The operation was aborted due to timeout): https://www.indiacode.nic.in/bitstream/123456789/13078/1/A2019-42.pdf — used by customs-items.json:e-cigarettes-in
+- **data-64f820f800** — fetch failed (HTTP 404): https://www.gov.br/anac/pt-br/assuntos/drones/cadastro-de-drone — used by customs-items.json:drones-br
+- **data-dad093d155** — fetch failed (fetch failed): https://www.fas.usda.gov/data/china-cannabidiol-be-regulated-precursor-chemical — used by customs-items.json:cbd-cn
+- **data-c62a85d1c0** — fetch failed (fetch failed): https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/95621 — used by customs-items.json:e-cigarettes-ph
+- **data-cf1a4df659** — fetch failed (fetch failed): http://www.customs.gov.cn/customs/302249/302266/302267/4666399/index.html — used by customs-items.json:e-cigarettes-cn
+- **data-6bb5511fcf** — fetch failed (fetch failed): https://peraturan.go.id/id/permenhub-no-pm37-tahun-2020 — used by customs-items.json:drones-id
+- **data-4b13c79269** — fetch failed (no readable content (17 chars: JS-rendered page or bot challenge)): https://kv17.customs.gov.vn/index.jsp?pageId=2&aid=1637&cid=43 — used by customs-items.json:controlled-medication-vn
+- **data-7a2936c2df** — fetch failed (fetch failed): https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=47964 — used by customs-items.json:prescription-medication-cn
+- **data-2be110c151** — fetch failed (HTTP 403): https://www.gov.ie/en/department-of-agriculture-food-and-the-marine/publications/information-on-personal-consignments-in-luggage-or-through-postal-courier-online-services/ — used by customs-items.json:fresh-produce-ie
+- **data-3597b98221** — fetch failed (HTTP 403): https://www.citizensinformation.ie/en/travel-and-recreation/travel-to-ireland/customs-regulations-for-travellers/ — used by customs-items.json:cannabis-ie
+- **data-8347fef8cf** — fetch failed (HTTP 403): https://www.gov.ie/en/department-of-health/services/travelling-into-ireland-from-schengen-countries-with-prescribed-narcotics-andor-psychotropic-substances/ — used by customs-items.json:prescription-medication-ie, customs-items.json:controlled-medication-ie
+- **data-040a782a80** — fetch failed (HTTP 403): https://www.citizensinformation.ie/en/travel-and-recreation/sport-and-leisure/owning-and-operating-a-drone/ — used by customs-items.json:drones-ie
+- **data-4bbc0c53b5** — fetch failed (HTTP 403): https://www.gov.ie/en/department-of-justice-home-affairs-and-migration/publications/firearms-your-questions-answered/ — used by customs-items.json:weapons-ie
+- **data-1dd53167a0** — fetch failed (fetch failed): https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=FAIRS+Country+Report+Annual_Cairo_Egypt_EG2025-0025.pdf — used by customs-items.json:meat-dairy-eg
+- **data-7cacb2d2a4** — fetch failed (fetch failed): https://arkiva.punetejashtme.gov.al/en/udhetimi-i-shtetasve-te-huaj-me-barna-per-konsum-minimal/ — used by customs-items.json:prescription-medication-al
+- **data-cbc2cbd3b8** — fetch failed (fetch failed): https://caa.lk/en/drones — used by customs-items.json:drones-lk
+- **data-045a0d580c** — fetch failed (HTTP 403): https://www.aduana.cl/aduana/site/docs/20241104/20241104131844/exempt_resolution_309.pdf — used by customs-items.json:alcohol-cl, customs-items.json:tobacco-cl
+- **data-10cf216a6f** — fetch failed (HTTP 403): https://www.aduana.cl/declaracion-de-dinero/aduana/2018-12-28/084148.html — used by customs-items.json:cash-cl
+- **data-65bca0e18c** — fetch failed (fetch failed): https://www.customs.gov.qa/English/Tariff/Pages/Prohibited-Goods.aspx — used by customs-items.json:e-cigarettes-qa, customs-items.json:poppy-seeds-qa
+- **data-054cc3af35** — fetch failed (fetch failed): https://www.ispch.cl/wp-content/uploads/2023/10/04-Cannabis.pdf — used by customs-items.json:cannabis-cl, customs-items.json:cbd-cl
+- **data-123f6c3067** — fetch failed (HTTP 403): https://www.aduana.cl/aduana/site/docs/20080129/20080129131334/declaracion_conjunta_sag_aduanas.pdf — used by customs-items.json:fresh-produce-cl
+- **data-4a1a70a40b** — fetch failed (HTTP 403): https://www.chileatiende.gob.cl/fichas/949-autorizacion-para-la-internacion-temporal-de-armas — used by customs-items.json:weapons-cl
+- **data-1b0e058aeb** — fetch failed (fetch failed): https://www.ispch.gob.cl/anamed/importacion-y-exportacion/guia-para-ingresar-medicamentos-a-chile-en-el-equipaje/ — used by customs-items.json:prescription-medication-cl, customs-items.json:controlled-medication-cl, customs-items.json:injectable-medication-cl
+- **data-39969dc4de** — fetch failed (HTTP 403): https://www.bahamas.com/plan-your-trip/island-faq — used by customs-items.json:cannabis-bs
+- **data-1ee4fb8475** — fetch failed (fetch failed): https://moj.gov.jm/sites/default/files/pdf/Dangerous%20Drugs%20Act%20Fact%20Sheet%20Booklet.pdf — used by customs-items.json:cannabis-jm
+- **data-e8da9b5d91** — fetch failed (HTTP 403): https://www.gov.il/en/pages/guide-tourist-customs?chapterIndex=3 — used by customs-items.json:alcohol-il, customs-items.json:tobacco-il, customs-items.json:personal-goods-il
+- **data-c2a997dda0** — fetch failed (HTTP 403): https://www.gov.il/en/pages/carrying-medication — used by customs-items.json:prescription-medication-il, customs-items.json:controlled-medication-il
+- **data-cf0823a454** — fetch failed (HTTP 403): https://www.gov.il/en/departments/general/money-laundering — used by customs-items.json:cash-il
+- **data-2522f7b619** — fetch failed (HTTP 403): https://www.gov.il/en/pages/guide-tourist-customs?chapterIndex=8 — used by customs-items.json:drones-il, customs-items.json:plants-seeds-il
+- **data-bfe606d6fa** — fetch failed (HTTP 403): https://www.gov.il/en/pages/guide-tourist-customs?chapterIndex=9 — used by customs-items.json:weapons-il, customs-items.json:banned-items-il
+- **data-f464bbbe0e** — fetch failed (fetch failed): https://www.tra.go.tz/page/returning-resident — used by customs-items.json:alcohol-tz, customs-items.json:tobacco-tz
+- **data-6d8d9a9ad2** — fetch failed (HTTP 403): https://www.gov.cy/mfa/en/documents/categories-of-persons-and-countries-whose-nationals-do-not-require-a-visa/ — used by destinations.json:CY, entry-requirements.json:US, entry-requirements.json:GB (+13 more)
+- **data-c5616a3d89** — fetch failed (HTTP 403): https://migracion.gob.do/servicio/prorroga-de-estadia/ — used by destinations.json:DO
+- **data-e5a230310a** — fetch failed (no readable content (61 chars: JS-rendered page or bot challenge)): https://israel-entry.piba.gov.il/ — used by destinations.json:IL
+- **data-22f9b599b9** — fetch failed (no readable content (75 chars: JS-rendered page or bot challenge)): https://travel-europe.europa.eu/en/ees/contact-details-for-data-protection-matters — used by ees.json:AT, ees.json:BE, ees.json:CH (+19 more)
+- **data-d7b0d92634** — fetch failed (no readable content (75 chars: JS-rendered page or bot challenge)): https://travel-europe.europa.eu/ees/contact-details-for-data-protection-matters#Malta — used by ees.json:MT
+- **data-9a0dc3b426** — fetch failed (no readable content (75 chars: JS-rendered page or bot challenge)): https://travel-europe.europa.eu/ees/contact-details-for-data-protection-matters#Bulgaria — used by ees.json:BG
+- **data-1e469d502d** — fetch failed (no readable content (75 chars: JS-rendered page or bot challenge)): https://travel-europe.europa.eu/ees/contact-details-for-data-protection-matters#Greece — used by ees.json:GR
+- **data-c54769902d** — fetch failed (no readable content (75 chars: JS-rendered page or bot challenge)): https://travel-europe.europa.eu/ees/contact-details-for-data-protection-matters#Portugal — used by ees.json:PT
+- **data-1a25836046** — fetch failed (no readable content (75 chars: JS-rendered page or bot challenge)): https://travel-europe.europa.eu/ees/contact-details-for-data-protection-matters#Romania — used by ees.json:RO
+- **data-76485878ce** — fetch failed (fetch failed): https://visa.immigration.go.tz/guidelines — used by destinations.json:TZ, entry-requirements.json:GB, entry-requirements.json:CA (+18 more)
+- **data-987dca5a8a** — fetch failed (fetch failed): https://www.evisa.gov.kh/ — used by destinations.json:KH
+- **data-24fa2e115a** — fetch failed (no readable content (118 chars: JS-rendered page or bot challenge)): https://www.diplomatie.ma/en/launch-electronic-visa-evisa — used by entry-requirements.json:IL
+- **data-1e984ac23f** — fetch failed (fetch failed): https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/35/9740 — used by entry-requirements.json:IL
+- **data-c388e3f31e** — fetch failed (HTTP 403): https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-bebas-visa-kunjungan — used by entry-requirements.json:SG, entry-requirements.json:MY
+- **data-6c619f8ec6** — fetch failed (HTTP 403): https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival — used by entry-requirements.json:US, entry-requirements.json:GB, entry-requirements.json:CA (+14 more)
+- **data-9ae4e26838** — fetch failed (HTTP 403): https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-calling-visa — used by entry-requirements.json:IL
+- **data-f947af6376** — fetch failed (no readable content (35 chars: JS-rendered page or bot challenge)): https://cs.mfa.gov.cn/wgrlh/lhqz/lhqzjjs/202510/t20251023_11739051.shtml — used by entry-requirements.json:SG
+- **data-6130d788c1** — fetch failed (HTTP 403): https://kemenimipas.go.id/berita-utama/kemenimipas-menambah-enam-negara-penerima-bebas-visa-kunjungan-ke-indonesia — used by entry-requirements.json:BR
+- **data-d44ba188e4** — fetch failed (fetch failed): https://www.kln.gov.my/web/sgp_singapore/requirement_malaysians — used by entry-requirements.json:MY
+- **data-c6a93114bf** — fetch failed (no readable content (118 chars: JS-rendered page or bot challenge)): https://consulat.ma/fr/liste-des-pays-dont-les-ressortissants-sont-dispenses-du-visa-dentree-au-maroc — used by entry-requirements.json:CN
+- **data-a31c310618** — fetch failed (HTTP 403): https://visa.visitsaudi.com — used by entry-requirements.json:IN
+- **data-9b220389c8** — fetch failed (HTTP 403): https://china.usembassy-china.org.cn/visas/ — used by entry-requirements.json:CN
+- **data-876f4a1fdc** — fetch failed (fetch failed): https://www.kln.gov.my/web/ind_new-delhi/requirement_foreigner — used by entry-requirements.json:IN
+- **data-6584787e1c** — fetch failed (fetch failed): https://www.kln.gov.my/web/mex_mexico-city/requirement_foreigner — used by entry-requirements.json:MX
+- **data-96adf7c986** — fetch failed (HTTP 403): https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Malaysia.html — used by entry-requirements.json:US
+- **data-3bf5e81f32** — fetch failed (fetch failed): https://www.kln.gov.my/web/kor_seoul/requirement_foreigner — used by entry-requirements.json:KR
+- **data-22afd3c032** — fetch failed (fetch failed): https://www.kln.gov.my/web/chl_santiago/requirement_foreigner — used by entry-requirements.json:CL
+- **data-02a498d36e** — fetch failed (fetch failed): https://www.kln.gov.my/web/arg_buenos-aires/requirement_foreigner — used by entry-requirements.json:AR
+- **data-5b1e6fb15d** — fetch failed (fetch failed): https://www.kln.gov.my/web/bra_brasilia/other_information/-/asset_publisher/2TQe/content/other-consular-information-3 — used by entry-requirements.json:BR
+- **data-00afcfa281** — fetch failed (HTTP 403): https://al.usembassy.gov/entering-and-residing/ — used by entry-requirements.json:US
+- **data-b5a3c3a123** — fetch failed (no readable content (35 chars: JS-rendered page or bot challenge)): https://cs.mfa.gov.cn/zggmcg/ljmdd/oz_652287/aebny_652289/ — used by entry-requirements.json:CN
+- **data-89f9539e62** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/ALB — used by entry-requirements.json:IT
+- **data-e4168c0449** — fetch failed (fetch failed): https://www.kln.gov.my/web/fra_paris/requirement_foreigner — used by entry-requirements.json:FR
+- **data-db618c9821** — fetch failed (fetch failed): https://www.kln.gov.my/web/deu_berlin/requirement_foreigner — used by entry-requirements.json:DE
+- **data-fb73d2b3dc** — fetch failed (fetch failed): https://www.kln.gov.my/web/ita_rome/requirement_foreigner — used by entry-requirements.json:IT
+- **data-4f507bea86** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/SGP — used by entry-requirements.json:IT
+- **data-5bafa908ac** — fetch failed (fetch failed): https://www.kln.gov.my/web/nld_the-hague/requirement_foreigner — used by entry-requirements.json:NL
+- **data-52b625ebdc** — fetch failed (HTTP 403): https://www.gov.cy/en/information/visas/ — used by entry-requirements.json:CN, entry-requirements.json:IN
+- **data-4c85b21981** — fetch failed (HTTP 403): https://cancilleria.gov.co/normograma/compilacion/docs/resolucion_minrelaciones_5488_2022.htm — used by entry-requirements.json:US, entry-requirements.json:GB, entry-requirements.json:CA (+13 more)
+- **data-e2c1dac1e1** — fetch failed (no readable content (0 chars: JS-rendered page or bot challenge)): https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:22015A1219(01) — used by entry-requirements.json:FR, entry-requirements.json:DE, entry-requirements.json:ES (+2 more)
+- **data-c1dda522d8** — fetch failed (HTTP 400): https://www.auswaertiges-amt.de/de/service/laender/bahamas-node/bahamassicherheit-201606 — used by entry-requirements.json:DE
+- **data-ce2dc16ff9** — fetch failed (fetch failed): https://overseas.mofa.go.kr/in-en/wpge/m_2660/contents.do — used by entry-requirements.json:IN
+- **data-0d9d2758b2** — fetch failed (no readable content (154 chars: JS-rendered page or bot challenge)): https://www.mfaic.gov.kh/en/2025-03-26-visa-exemption-list-of-visa-exemption-between-cambodia-and-other-countries-15-22-56 — used by entry-requirements.json:SG, entry-requirements.json:MY
+- **data-781e978deb** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/KHM — used by entry-requirements.json:IT
+- **data-9ea904dd54** — fetch failed (no readable content (61 chars: JS-rendered page or bot challenge)): https://israel-entry.piba.gov.il/learn-about — used by entry-requirements.json:US, entry-requirements.json:GB, entry-requirements.json:CA (+15 more)
+- **data-6e159b8b54** — fetch failed (no readable content (0 chars: JS-rendered page or bot challenge)): https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32025R1411 — used by etias.json:row
+- **data-e502806406** — fetch failed (no readable content (61 chars: JS-rendered page or bot challenge)): https://israel-entry.piba.gov.il/learn-about-evisa-b2 — used by entry-requirements.json:MY, entry-requirements.json:CN, entry-requirements.json:IN
+- **data-bbc8e8ffe3** — fetch failed (HTTP 403): https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043911515 — used by overstay-penalties.json:FR
+- **data-53c2bc886e** — fetch failed (HTTP 403): https://www.refworld.org/sites/default/files/attachments/58a6e3d74.pdf — used by overstay-penalties.json:LT
+- **data-5eba830891** — fetch failed (no readable content (240 chars: JS-rendered page or bot challenge)): https://legilux.public.lu/eli/etat/leg/loi/2008/08/29/n1/consolide/20240908 — used by overstay-penalties.json:LU
+- **data-7623a5564f** — fetch failed (HTTP 404): https://legislationline.org/taxonomy/term/13346 — used by overstay-penalties.json:EE
+- **data-97dc3d0928** — fetch failed (HTTP 403): https://www.udi.no/en/word-definitions/expulsion/ — used by overstay-penalties.json:NO
+- **data-a904c86520** — fetch failed (HTTP 403): https://www.zakonypreludi.sk/zz/2011-404 — used by overstay-penalties.json:SK
+- **data-0a1ce5174b** — fetch failed (HTTP 403): https://rsaegean.org/en/criminalisation-of-illegal-stay-in-greece-puts-almost-300-people-behind-bars/ — used by overstay-penalties.json:GR
+- **data-830d5956b0** — fetch failed (fetch failed): https://www.gesetze-im-internet.de/englisch_aufenthg/englisch_aufenthg.html — used by overstay-penalties.json:DE
