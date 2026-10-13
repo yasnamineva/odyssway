@@ -3127,26 +3127,38 @@ Still open (held in data/UNVERIFIED):
 
 ## Peptides (2026-10-13)
 
-Promoted to /data: peptides-us, peptides-ca, peptides-nz, growth-hormone-gb
-(BPC-157, TB-500, melanotan II, CJC-1295, ipamorelin, retatrutide etc.; UK
-somatropin/HCG under Misuse of Drugs Regulations 2001 reg 4(2) + Sch 4 Pt 2).
-Product pages: /medications/{peptides,bpc-157,tb-500,melanotan-ii,hgh}.
+Promoted to /data: peptides-us, peptides-ca, peptides-nz, peptides-sg,
+growth-hormone-gb (BPC-157, TB-500, melanotan II, CJC-1295, ipamorelin,
+retatrutide etc.; UK somatropin/HCG under Misuse of Drugs Regulations 2001
+reg 4(2) + Sch 4 Pt 2). Product pages:
+/medications/{peptides,bpc-157,tb-500,melanotan-ii,hgh}.
+
+Resolved the same day:
+- **CA residents vs visitors**: prescription-medication-ca, injectable-medication-ca
+  and peptides-ca re-checked against GUI-0116 and corrected. Residents may bring
+  back drugs prescribed and filled in Canada; drugs prescribed or bought abroad
+  generally not (exceptions: treatment that had to start abroad, foreign
+  clinical trials, newly landed immigrants/refugees).
+- **SG**: peptides-sg from HSA's traveller page (prescribed in country of
+  residence, 3 months, prescription + pharmacy label) plus HSA's 2026-09-25
+  retatrutide/cagrilintide advisory. Names deliberately exclude BPC-157 etc.
+  because HSA doesn't name them.
 
 Still open:
 - **AU (peptides-au, growth-hormone-au)**: tga.gov.au and odc.gov.au timed out
-  from this environment (WebFetch and curl). Read directly: TGA safety alert
-  "TGA warning on the risks of importing unapproved peptide products"
-  (2026-05-07); TGA Poisons Standard final decision adding BPC-157 to
-  Schedule 4 from 1 June 2024; ODC "Importing anabolic and androgenic
-  substances into Australia" (HGH/somatropin permit per shipment). Key open
-  question: does the traveller's exemption cover prescribed growth hormone
-  carried in person, or is an ODC permit still needed?
-- **GB research peptides**: no MHRA source found naming BPC-157 or research
-  peptides; growth-hormone-gb deliberately says it doesn't cover them.
-- **SG**: HSA advisory (2026-09-25) calls retatrutide and cagrilintide
-  unapproved, but says nothing about travellers bringing them in. Not used.
+  from this environment twice on 2026-10-13 (WebFetch and curl, HTTP/2 and
+  HTTP/1.1); legislation.gov.au F1996B03651 returns only its table of contents.
+  Read directly: TGA safety alert "TGA warning on the risks of importing
+  unapproved peptide products" (2026-05-07); TGA Poisons Standard final
+  decision adding BPC-157 to Schedule 4 from 1 June 2024; ODC "Importing
+  anabolic and androgenic substances into Australia" (HGH/somatropin permit per
+  shipment). Key open question: does the traveller's exemption cover
+  prescribed growth hormone carried in person, or is an ODC permit needed?
+  Try from a different network, or a browser.
+- **GB research peptides**: re-searched 2026-10-13. MHRA material found is
+  enforcement against sellers (retatrutide/peptide manufacturing raids, June
+  2026 advertising warning), nothing on travellers. gov.uk's controlled-drugs
+  page says non-controlled medicines follow MHRA import rules, but no MHRA
+  page stating the personal-import rule for unlicensed medicines was found.
+  growth-hormone-gb deliberately says it doesn't cover them.
 - **US growth hormone**: no traveller-specific FDA/CBP source read; not added.
-- **CA data conflict to re-check**: injectable-medication-ca and
-  prescription-medication-ca apply the 90-day rule to everyone, but GUI-0116
-  (read 2026-10-13) says residents of Canada generally may not bring
-  prescription drugs in; only visitors may bring a personal quantity.

@@ -54,7 +54,7 @@ export const blogPosts: BlogPost[] = [
     title: "Retatrutide isn't Ozempic, and customs knows the difference",
     seoTitle: "Travelling With Retatrutide vs Ozempic: Customs Rules",
     seoDescription:
-      "Approved GLP-1 pens like Ozempic and Mounjaro can travel with a prescription. Retatrutide is an unapproved peptide in the US, Canada and New Zealand.",
+      "Approved GLP-1 pens like Ozempic and Mounjaro can travel with a prescription. Retatrutide is an unapproved peptide in the US, Canada, New Zealand and Singapore.",
     dek: "Approved weight-loss pens can usually come with you. Retatrutide bought online usually can't.",
     date: "2026-10-13",
     category: "Medicine",
@@ -64,7 +64,7 @@ export const blogPosts: BlogPost[] = [
     },
     verifiedAt: "2026-10-13",
     changelogDataset: "customs-items",
-    destinationCodes: ["US", "CA", "NZ"],
+    destinationCodes: ["US", "CA", "NZ", "SG"],
     photo: "blog-retatrutide",
   },
   {

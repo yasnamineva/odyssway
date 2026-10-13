@@ -461,15 +461,16 @@
     "category": "medication",
     "verdict": "allowed_with_limits",
     "limits": {
-      "description": "A 90-day supply, or a single course of treatment, whichever is less, in original or clearly labelled packaging"
+      "description": "Visitors: a 90-day supply, or a single course of treatment, whichever is less, of a prescription drug for their own use, in original or clearly labelled packaging. Residents of Canada: you can bring back the same amount of a drug that was prescribed and filled in Canada. Residents generally may not bring in prescription drugs prescribed or bought abroad; Health Canada only allows exceptions for treatment that had to start while abroad, foreign-sponsored clinical trials, and newly landed immigrants or refugees continuing treatment.",
+      "quantity": "90-day supply"
     },
-    "notes": "Controlled substances must always be declared to the CBSA officer.",
+    "notes": "Controlled substances must always be declared to the CBSA officer. Health Canada says prescriptions issued abroad may not be filled in Canada. Visitors staying more than three months may bring an additional 90-day supply every three months, and should be ready to show proof of visitor status, such as a passport, a study or work visa, or a letter from an employer or university.",
     "legal_source": {
       "name": "Health Canada — Personal use health products guidance",
       "url": "https://www.canada.ca/en/health-canada/services/drugs-health-products/compliance-enforcement/importation-exportation/personal-use-health-products-guidance/document.html"
     },
-    "verified_at": "2026-08-10",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-13",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -4904,7 +4905,7 @@
     "category": "medication",
     "verdict": "allowed_with_limits",
     "limits": {
-      "description": "GLP-1 drugs and insulin are ordinary (non-controlled) prescription drugs in Canada, so the general personal-use rule applies: a single course of treatment or a 90-day supply, whichever is less, hand-carried in original/clearly labelled pharmacy packaging. Health Canada's guidance separately states that medical devices imported for personal use -- which covers self-administered injection pens, syringes and needles -- are not restricted under the Food and Drugs Act or Medical Devices Regulations, provided the device doesn't require a trained operator, i.e. it's meant for the patient's own self-administration.",
+      "description": "GLP-1 drugs and insulin are ordinary (non-controlled) prescription drugs in Canada, so the general personal-use rule applies: a single course of treatment or a 90-day supply, whichever is less, hand-carried in original/clearly labelled pharmacy packaging. This applies to visitors, and to residents of Canada returning with pens or insulin prescribed and filled in Canada; residents generally may not bring in prescription drugs prescribed or bought abroad. Health Canada's guidance separately states that medical devices imported for personal use -- which covers self-administered injection pens, syringes and needles -- are not restricted under the Food and Drugs Act or Medical Devices Regulations, provided the device doesn't require a trained operator, i.e. it's meant for the patient's own self-administration.",
       "quantity": "90-day supply"
     },
     "notes": "This guidance document does not mention insulin, GLP-1 drugs, needles or syringes by name -- the 90-day rule is the same generic prescription-drug provision already used for the site's general prescription-medication-ca entry, and the needle/syringe treatment is inferred from the document's general 'medical devices for personal use' section, not a dedicated sharps policy. No refrigeration/cold-chain guidance was found on this source.",
@@ -4912,8 +4913,8 @@
       "name": "Health Canada -- Personal Use Health Products Guidance",
       "url": "https://www.canada.ca/en/health-canada/services/drugs-health-products/compliance-enforcement/importation-exportation/personal-use-health-products-guidance/document.html"
     },
-    "verified_at": "2026-09-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-13",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -13194,7 +13195,7 @@
     "destination": "CA",
     "category": "medication",
     "verdict": "prohibited",
-    "notes": "Health Canada says peptides are generally regulated as prescription drugs in Canada, and unauthorized drug products are illegal. Its April 2026 advisory names BPC-157, CJC-1295, DSIP, epitalon, GHK-Cu, ipamorelin, KPV, melanotan I and II, MOTS-c, SS-31, TB-500 and retatrutide among products it has seized, and says a \"for research use only\" label does not make a product legal. An authorized drug has an eight-digit Drug Identification Number (DIN) on the label. Health Canada works with the Canada Border Services Agency to stop unauthorized shipments. An authorized peptide medicine prescribed to you is a different case: visitors may bring a personal quantity of a prescription drug for their own use (no more than a 90-day supply or one course of treatment, whichever is less), but residents of Canada generally may not bring prescription drugs in. See the prescription medication entry.",
+    "notes": "Health Canada says peptides are generally regulated as prescription drugs in Canada, and unauthorized drug products are illegal. Its April 2026 advisory names BPC-157, CJC-1295, DSIP, epitalon, GHK-Cu, ipamorelin, KPV, melanotan I and II, MOTS-c, SS-31, TB-500 and retatrutide among products it has seized, and says a \"for research use only\" label does not make a product legal. An authorized drug has an eight-digit Drug Identification Number (DIN) on the label. Health Canada works with the Canada Border Services Agency to stop unauthorized shipments. An authorized peptide medicine prescribed to you is a different case: visitors may bring a personal quantity of a prescription drug for their own use (no more than a 90-day supply or one course of treatment, whichever is less), and residents of Canada may bring back a drug prescribed and filled in Canada, but generally not one prescribed or bought abroad. See the prescription medication entry.",
     "legal_source": {
       "name": "Health Canada — Think twice before injecting peptides bought online (advisory RA-81874, 2026-04-09)",
       "url": "https://recalls-rappels.canada.ca/en/alert-recall/think-twice-injecting-peptides-bought-online-unauthorized-products-can-seriously-harm"
@@ -13306,6 +13307,44 @@
         "claim": "Hand luggage, 3 months' supply, letter contents, seizure, posted medicine taken away",
         "name": "gov.uk — Taking controlled drugs into the UK",
         "url": "https://www.gov.uk/travelling-controlled-drugs"
+      }
+    ],
+    "verified_at": "2026-10-13",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "peptides-sg",
+    "names": [
+      "peptides",
+      "peptide",
+      "research peptides",
+      "peptide injections",
+      "retatrutide",
+      "cagrilintide"
+    ],
+    "destination": "SG",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Only if a doctor prescribed it to you. HSA lets travellers bring up to 3 months' supply of a medicine without prior approval when it was lawfully prescribed to you in your country of residence, you carry a copy of the prescription or a doctor's letter, and it stays in its original container labelled by the dispensing pharmacy. More than 3 months' supply is not allowed. Peptide vials bought online without a prescription don't meet these conditions.",
+      "quantity": "3-month supply, with a prescription"
+    },
+    "notes": "HSA says retatrutide and cagrilintide are unapproved injectable peptides still in clinical development, and that no regulator, including HSA, has approved them as medicines. It also says labels such as \"research use only\" or \"not for human consumption\" should be treated as a warning sign. Approved GLP-1 medicines such as semaglutide and tirzepatide are a different case: see the injectable medication entry, which also covers bringing pens, needles and syringes.",
+    "legal_source": {
+      "name": "Health Sciences Authority — Travelling with medications to Singapore",
+      "url": "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-medications/"
+    },
+    "_sources": [
+      {
+        "claim": "Traveller criteria: lawfully prescribed in country of residence, prescription/doctor's letter, original labelled container, max 3 months",
+        "name": "HSA — Travelling with medications to Singapore (last updated 2026-06-15)",
+        "url": "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-medications/"
+      },
+      {
+        "claim": "Retatrutide and cagrilintide unapproved, no regulator approved them; research-use-only labels a warning sign",
+        "name": "HSA — Risks of obtaining prescription medicines and unapproved injectable peptides through unauthorised channels (2026-09-25)",
+        "url": "https://www.hsa.gov.sg/announcements/risks-of-obtaining-prescription-medicines-unauthorised-channels/"
       }
     ],
     "verified_at": "2026-10-13",
