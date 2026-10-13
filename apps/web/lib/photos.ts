@@ -80,6 +80,8 @@ export const photos = {
   "blog-glp1": { width: 1280, height: 880, author: "alexas_fotos", page: "https://pixabay.com/photos/suitcase-antique-leather-1645229/" },
   "blog-thailand": { width: 1280, height: 853, author: "solenec1", page: "https://pixabay.com/photos/thailand-koh-phi-phi-beach-island-2419443/" },
   "blog-overstay": { width: 1280, height: 859, author: "clickerhappy", page: "https://pixabay.com/photos/antwerp-station-hall-building-2428766/" },
+  "blog-peptides": { width: 1280, height: 853, author: "multifacetedgirl", page: "https://pixabay.com/photos/medicine-1309148/" },
+  "blog-retatrutide": { width: 1280, height: 960, author: "Bru-nO", page: "https://pixabay.com/photos/syringe-1573024/" },
 } as const satisfies Record<string, PhotoMeta>;
 
 /** The photo for a destination, if we have one (not yet for Nigeria). */

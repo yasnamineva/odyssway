@@ -30,6 +30,11 @@ const PRODUCTS: MedicationProduct[] = [
   { slug: "mounjaro", name: "Mounjaro", term: "mounjaro" },
   { slug: "insulin", name: "Insulin", term: "insulin" },
   { slug: "sudafed", name: "Sudafed", term: "sudafed" },
+  { slug: "peptides", name: "Peptides", term: "peptides" },
+  { slug: "bpc-157", name: "BPC-157", term: "bpc-157" },
+  { slug: "tb-500", name: "TB-500", term: "tb-500" },
+  { slug: "melanotan-ii", name: "Melanotan II", term: "melanotan ii" },
+  { slug: "hgh", name: "HGH (growth hormone)", term: "hgh" },
 ];
 
 export interface ProductPair {

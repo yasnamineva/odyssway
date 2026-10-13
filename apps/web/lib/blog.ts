@@ -32,6 +32,42 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "peptides-bpc-157-customs",
+    title: "Travelling with peptides? \"Research use only\" won't get BPC-157 through customs",
+    seoTitle: "Can You Travel With Peptides? BPC-157, TB-500 at Customs",
+    seoDescription:
+      "BPC-157, TB-500 and melanotan II are unapproved drugs at the US, Canadian and New Zealand borders. Growth hormone and HCG in the UK: carried in person only.",
+    dek: "The US, Canada and New Zealand treat research peptides as unapproved medicines. The UK lets you carry prescribed growth hormone and HCG, but only in person.",
+    date: "2026-10-13",
+    category: "Medicine",
+    legalSource: {
+      name: "Health Canada — Think twice before injecting peptides bought online (advisory RA-81874)",
+      url: "https://recalls-rappels.canada.ca/en/alert-recall/think-twice-injecting-peptides-bought-online-unauthorized-products-can-seriously-harm",
+    },
+    verifiedAt: "2026-10-13",
+    changelogDataset: "customs-items",
+    destinationCodes: ["US", "CA", "NZ", "GB"],
+    photo: "blog-peptides",
+  },
+  {
+    slug: "retatrutide-is-not-ozempic",
+    title: "Retatrutide isn't Ozempic, and customs knows the difference",
+    seoTitle: "Travelling With Retatrutide vs Ozempic: Customs Rules",
+    seoDescription:
+      "Approved GLP-1 pens like Ozempic and Mounjaro can travel with a prescription. Retatrutide is an unapproved peptide in the US, Canada and New Zealand.",
+    dek: "Approved weight-loss pens can usually come with you. Retatrutide bought online usually can't.",
+    date: "2026-10-13",
+    category: "Medicine",
+    legalSource: {
+      name: "U.S. Food and Drug Administration — Personal Importation",
+      url: "https://www.fda.gov/industry/import-basics/personal-importation",
+    },
+    verifiedAt: "2026-10-13",
+    changelogDataset: "customs-items",
+    destinationCodes: ["US", "CA", "NZ"],
+    photo: "blog-retatrutide",
+  },
+  {
     slug: "thailand-visa-free-cut-2026",
     title:
       "Thailand just halved its visa-free stay. Four more rule changes to check before you book",

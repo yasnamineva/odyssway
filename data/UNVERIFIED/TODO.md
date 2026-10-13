@@ -3124,3 +3124,29 @@ Still open (held in data/UNVERIFIED):
 - TZ: meat-dairy-tz, fresh-produce-tz, e-cigarettes-tz, weapons-tz, wildlife-products-tz
 - KH: US→KH, AU→KH, NZ→KH, KR→KH, CN→KH, IN→KH, IL→KH, UA→KH, MX→KH, BR→KH, AR→KH, CL→KH, DE→KH, alcohol-kh, tobacco-kh, e-cigarettes-kh, prescription-medication-kh, controlled-medication-kh, injectable-medication-kh, meat-dairy-kh, fresh-produce-kh, radio-equipment-kh
 - IL: cannabis-il, e-cigarettes-il, meat-dairy-il, fresh-produce-il, injectable-medication-il
+
+## Peptides (2026-10-13)
+
+Promoted to /data: peptides-us, peptides-ca, peptides-nz, growth-hormone-gb
+(BPC-157, TB-500, melanotan II, CJC-1295, ipamorelin, retatrutide etc.; UK
+somatropin/HCG under Misuse of Drugs Regulations 2001 reg 4(2) + Sch 4 Pt 2).
+Product pages: /medications/{peptides,bpc-157,tb-500,melanotan-ii,hgh}.
+
+Still open:
+- **AU (peptides-au, growth-hormone-au)**: tga.gov.au and odc.gov.au timed out
+  from this environment (WebFetch and curl). Read directly: TGA safety alert
+  "TGA warning on the risks of importing unapproved peptide products"
+  (2026-05-07); TGA Poisons Standard final decision adding BPC-157 to
+  Schedule 4 from 1 June 2024; ODC "Importing anabolic and androgenic
+  substances into Australia" (HGH/somatropin permit per shipment). Key open
+  question: does the traveller's exemption cover prescribed growth hormone
+  carried in person, or is an ODC permit still needed?
+- **GB research peptides**: no MHRA source found naming BPC-157 or research
+  peptides; growth-hormone-gb deliberately says it doesn't cover them.
+- **SG**: HSA advisory (2026-09-25) calls retatrutide and cagrilintide
+  unapproved, but says nothing about travellers bringing them in. Not used.
+- **US growth hormone**: no traveller-specific FDA/CBP source read; not added.
+- **CA data conflict to re-check**: injectable-medication-ca and
+  prescription-medication-ca apply the 90-day rule to everyone, but GUI-0116
+  (read 2026-10-13) says residents of Canada generally may not bring
+  prescription drugs in; only visitors may bring a personal quantity.
