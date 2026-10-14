@@ -5385,7 +5385,33 @@
     },
     "verified_at": "2026-09-13",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "procedure": {
+      "title": "Get clearance through SFDA's Controlled Drugs System",
+      "authority": "Saudi Food and Drug Authority (SFDA)",
+      "applyUrl": "https://cds.sfda.gov.sa",
+      "documents": [
+        "A scan of your ID (passport).",
+        "The prescription or medical report.",
+        "A photo of the medicine.",
+        "If you're carrying medicine for someone else: proof of their consent and a copy of their ID."
+      ],
+      "steps": [
+        "Create a traveller account on the Controlled Drugs System (\"Create Traveler User\") and log in with the code SFDA emails you.",
+        "Choose \"Request a Clearance\" and say whether you're arriving in or leaving Saudi Arabia, with your flight dates, country and port.",
+        "Attach the documents, then enter each medicine: active substance, trade name, dosage form, concentration and number of packs.",
+        "Add a justification, accept the pledges and submit.",
+        "Track the request under Clearance → View Requests. When it's accepted, open it and choose \"View License\" to see your clearance."
+      ],
+      "sources": [
+        {
+          "name": "Saudi Food and Drug Authority (SFDA) — Controlled Drugs System (CDS), User Manual for Traveler Clearance, Article (6): Procedures and Controls for Clearance",
+          "url": "https://cds.sfda.gov.sa/HomeFiles/TravilerJourneyEnglish.pdf"
+        }
+      ],
+      "verified_at": "2026-10-14",
+      "verified_by": "agent:claude-opus-5-5"
+    }
   },
   {
     "slug": "controlled-medication-ph",
@@ -5423,7 +5449,32 @@
     },
     "verified_at": "2026-09-13",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "procedure": {
+      "title": "For more than 30 days' supply: get PDEA authorization",
+      "authority": "Philippine Drug Enforcement Agency (PDEA)",
+      "leadTime": "30 working days before you arrive",
+      "processingTime": "PDEA replies within 15 working days of receiving the request",
+      "documents": [
+        "A letter from your doctor describing your medical condition and the medicine, with its trade and generic names.",
+        "A certificate of authorization from your home country's national competent authority."
+      ],
+      "steps": [
+        "Up to 30 days' supply, no PDEA authorization is needed: carry your doctor's letter and the prescription (with trade and generic names), and keep the medicine in its original, labelled container.",
+        "For more than 30 days' supply, get a certificate of authorization from your home country's drug authority.",
+        "Send a written request to PDEA, with the doctor's letter and that certificate, 30 working days before you arrive.",
+        "Travel with PDEA's authorization, your home country's certificate, the doctor's letter and the labelled medicine."
+      ],
+      "transit": "The regulation covers travellers passing through the Philippines as well as those entering it.",
+      "sources": [
+        {
+          "name": "Philippine Dangerous Drugs Board — Board Regulation No. 1, Series of 2014 (Comprehensive Amendments to Board Regulation No. 3, Series 2003), Section 35: Carrying of Dangerous Drugs and/or Drug Preparation containing Controlled Chemical by International Travelers",
+          "url": "https://ddb.gov.ph/images/Board_Regulation/2014/BD.REG1.14.pdf"
+        }
+      ],
+      "verified_at": "2026-10-14",
+      "verified_by": "agent:claude-opus-5-5"
+    }
   },
   {
     "slug": "cannabis-ph",
@@ -6503,21 +6554,77 @@
   },
   {
     "slug": "controlled-medication-kr",
-    "names": ["controlled substance", "narcotic medication", "psychotropic medication", "adderall", "amphetamine", "vyvanse", "lisdexamfetamine", "ritalin", "methylphenidate", "stimulant medication"],
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "vyvanse",
+      "lisdexamfetamine",
+      "ritalin",
+      "methylphenidate",
+      "stimulant medication"
+    ],
     "destination": "KR",
     "category": "medication",
     "verdict": "depends",
     "limits": {
-      "description": "\"Any person who will enter into Korea with medicines containing controlled substances should get a permit from the Ministry [of Food and Drug Safety, MFDS], regardless of their nationality\" — quoted directly. In force since October 23, 2009; online applications available since December 27, 2024. Apply in advance through MFDS's Narcotics Policy Division (+82-43-719-1564, narcotics@korea.kr)."
+      "description": "Anyone entering Korea with medicine containing a controlled substance needs a permit from the Ministry of Food and Drug Safety (MFDS) before arrival, whatever their nationality. You can bring only what you'll use during your stay, plus up to 5 days' extra for delays, and never more than a 90-day supply. Carry the medicine in your hand luggage.",
+      "quantity": "What you'll use during your stay, plus up to 5 days' extra, never more than 90 days' supply"
     },
-    "notes": "Amphetamine-based stimulants (Adderall, Vyvanse, Dexedrine) are consistently reported elsewhere as treated as narcotics that cannot be brought in for personal use even with a valid prescription or MFDS permit — this specific amphetamine-vs-methylphenidate distinction is corroborated across multiple independent travel/relocation sites but wasn't read verbatim in a primary MFDS document in this pass. Methylphenidate (Ritalin/Concerta) is legal but still requires the same MFDS narcotics-import permit as any other controlled medication. Travelers carrying amphetamine-based medication have reportedly faced detention or questioning, since it can register similarly to methamphetamine on a drug test.",
+    "notes": "Medicine containing controlled substances can't be posted to Korea: MFDS says shipped medicine is seized and destroyed or returned. The permit is only for the person who takes the medicine, not family or friends. MFDS's guide doesn't say whether amphetamine products such as Adderall can be permitted, so ask MFDS before you travel with one. If you're not eligible, or you'll stay longer than 3 months, MFDS suggests asking your doctor about alternatives you can get prescribed in Korea.",
     "legal_source": {
       "name": "Ministry of Food and Drug Safety (Korea) — permit requirement for entering Korea with medicines containing controlled substances",
       "url": "https://www.mfds.go.kr/eng/brd/m_60/view.do?seq=75669"
     },
-    "verified_at": "2026-09-19",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-14",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Permit required regardless of nationality; online applications from 27 Dec 2024",
+        "name": "Ministry of Food and Drug Safety (Korea) — permit requirement for entering Korea with medicines containing controlled substances",
+        "url": "https://www.mfds.go.kr/eng/brd/m_60/view.do?seq=75669"
+      },
+      {
+        "claim": "Documents, 10-business-day processing, 90-day cap, 5-day extra, hand luggage, no mail, transit exemption",
+        "name": "Ministry of Food and Drug Safety — Guideline on permit to bring in narcotics for self-treatment, with FAQ (attachment to the MFDS notice)",
+        "url": "https://www.mfds.go.kr/eng/brd/m_60/down.do?brd_id=eng0013&seq=75669&data_tp=A&file_seq=1"
+      }
+    ],
+    "procedure": {
+      "title": "Get an MFDS permit to bring in controlled medicine",
+      "authority": "Narcotics Policy Division, Ministry of Food and Drug Safety (MFDS)",
+      "applyUrl": "https://nedrug.mfds.go.kr/eng/index",
+      "leadTime": "At least 10 business days before you arrive. MFDS rejects applications made with less notice, and there's no way to speed it up.",
+      "processingTime": "Up to 10 business days",
+      "documents": [
+        "A clear, full-size copy of your passport.",
+        "Your flight booking, showing your name, flight number, arrival and departure dates and arrival airport.",
+        "A medical certificate or doctor's letter: hospital name, your name, the doctor's name and signature, the diagnosis and symptoms, each medicine's trade name and active ingredient, how to take it, the daily dose, the quantity prescribed and the issue date.",
+        "A valid prescription with your details, the issue date, the active ingredient, the dose and the quantity.",
+        "A drug export certificate from your home country's authorities, if your country issues one. If it doesn't, tick \"Not available\" on the application form.",
+        "Staying long-term for work or study: a supporting document such as an exchange-student or posting certificate."
+      ],
+      "steps": [
+        "Gather the documents, in English or Korean. Anything in another language needs a notarised translation, sent with the original.",
+        "Apply online on MFDS's nedrug portal at least 10 business days before you arrive.",
+        "Ask only for what you'll use in Korea, plus up to 5 days' extra for delays. If you'll travel on to another country, attach that flight booking and you can include the medicine for that trip too.",
+        "MFDS emails or faxes the permit to you.",
+        "Carry the medicine in your hand luggage when you enter Korea."
+      ],
+      "atTheBorder": "MFDS sends the permit to the agencies concerned, so carrying your copy isn't required, but it's useful to have. For questions about customs declarations, MFDS refers you to Korea Customs.",
+      "transit": "No permit is needed if you only change planes in Korea and don't go through immigration.",
+      "sources": [
+        {
+          "name": "Ministry of Food and Drug Safety — Guideline on permit to bring in narcotics for self-treatment, with FAQ (attachment to the MFDS notice)",
+          "url": "https://www.mfds.go.kr/eng/brd/m_60/down.do?brd_id=eng0013&seq=75669&data_tp=A&file_seq=1"
+        }
+      ],
+      "verified_at": "2026-10-14",
+      "verified_by": "agent:claude-opus-5-5"
+    }
   },
   {
     "slug": "controlled-medication-vn",
@@ -6780,7 +6887,30 @@
     "destination": "HK",
     "verified_at": "2026-09-21",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "procedure": {
+      "title": "Get prior written approval from Hong Kong's Drug Office",
+      "authority": "Drug Office, Department of Health",
+      "processingTime": "Normally 10 working days once all the documents are received",
+      "documents": [
+        "A certification letter from the doctor who prescribes the medicine, with: the doctor's full name and medical registration number; the clinic's name and address; the date of the letter; your full name and home address; and, for each controlled medicine, its name, dosage form, strength and total quantity. It must carry the doctor's original signature. The Drug Office links a sample letter."
+      ],
+      "steps": [
+        "Ask your doctor for the certification letter, using the Drug Office's sample format.",
+        "Apply to the Drug Office for prior written approval. Its FAQ gives no application form or channel, so contact it first (tel. +852 2572 2068, pharmgeneral@dh.gov.hk).",
+        "Allow at least 10 working days for processing once your documents are complete."
+      ],
+      "atTheBorder": "Carry the doctor's certification letter and the Drug Office's written approval while you enter and stay in Hong Kong.",
+      "transit": "Approval is needed even if you're only transiting through Hong Kong, the Drug Office says.",
+      "sources": [
+        {
+          "name": "Drug Office, Department of Health — Frequently Asked Questions (medicines carried by visitors)",
+          "url": "https://www.drugoffice.gov.hk/eps/do/en/consumer/news_informations/faq.html"
+        }
+      ],
+      "verified_at": "2026-10-14",
+      "verified_by": "agent:claude-opus-5-5"
+    }
   },
   {
     "slug": "meat-dairy-hk",
@@ -9142,7 +9272,32 @@
     },
     "verified_at": "2026-10-02",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "procedure": {
+      "title": "Get a permit from Cyprus's Pharmaceutical Services",
+      "authority": "Pharmaceutical Services, Ministry of Health",
+      "documents": [
+        "The application form for patients carrying controlled drugs: your name, postal address, phone, email or fax, place and date of birth, passport or ID number, arrival and departure dates, and each drug's name, form, strength, daily dose and prescribed quantity, signed by you.",
+        "A copy of the prescription showing the doctor's name, address, phone and fax number and licence number."
+      ],
+      "steps": [
+        "Download the application form from the Pharmaceutical Services page and fill it in.",
+        "Attach a copy of your prescription.",
+        "Send it to Pharmaceutical Services before you travel. The page lists phscentral@phs.moh.gov.cy, tel. +357 22 608620 and fax +357 22 608649 as contacts, but gives no lead time or processing time, so apply early."
+      ],
+      "sources": [
+        {
+          "name": "Cyprus Ministry of Health, Pharmaceutical Services — Narcotics and Psychotropics (permits for visitors carrying controlled medicines)",
+          "url": "https://www.moh.gov.cy/moh/phs/phs.nsf/drugsphych_en/drugsphych_en"
+        },
+        {
+          "name": "Pharmaceutical Services, Ministry of Health — Application form for patients who carry controlled drugs during their holiday in Cyprus",
+          "url": "https://www.moh.gov.cy/moh/phs/phs.nsf/0C083A899BB653E4C22585340045E50D/$file/Application%20Form%20for%20Import%20for%20Personal%20Use.doc"
+        }
+      ],
+      "verified_at": "2026-10-14",
+      "verified_by": "agent:claude-opus-5-5"
+    }
   },
   {
     "slug": "drones-cy",
@@ -11149,7 +11304,36 @@
     },
     "verified_at": "2026-10-09",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "procedure": {
+      "title": "Get a Controlled Medication Permit from Qatar's Ministry of Public Health",
+      "authority": "Pharmacy and Drug Control Department, Ministry of Public Health",
+      "applyUrl": "https://fli.moph.gov.qa",
+      "leadTime": "At least 5 working days before you travel",
+      "processingTime": "Approved or rejected within 3 working days once all requirements are met",
+      "documents": [
+        "A copy of your passport (or Qatar ID).",
+        "The medical prescription.",
+        "The medical report.",
+        "Photos of the medicine."
+      ],
+      "steps": [
+        "Register in Qatar's National Authentication System (NAS) with your passport number, mobile number and email, then log in to the Controlled Medicines System.",
+        "Create a request and complete the patient profile, plus anyone travelling with you.",
+        "Enter your trip (arrival, dates, port of entry, emergency contact) and each medicine: diagnosis, active ingredient, dosage form, prescription length in days, concentration, pack size, number of packs and trade name. You can add up to 5 active ingredients.",
+        "Upload the documents, accept the pledges and submit.",
+        "If approved, the system issues a permit letter with a permit number. It's valid for 90 days from approval; if you don't use it in time, apply again."
+      ],
+      "atTheBorder": "Print the permit and carry it with the original prescription and medical report. The ministry can still release only part of the medicine, or refuse it, if it doesn't meet the approval criteria.",
+      "sources": [
+        {
+          "name": "Ministry of Public Health — Controlled Medicines System, public user manual v1.0",
+          "url": "https://fli.moph.gov.qa/UserGuideEn.pdf"
+        }
+      ],
+      "verified_at": "2026-10-14",
+      "verified_by": "agent:claude-opus-5-5"
+    }
   },
   {
     "slug": "cannabis-qa",
@@ -12039,7 +12223,32 @@
     },
     "verified_at": "2026-10-10",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "procedure": {
+      "title": "Get a special permit from Jamaica's Ministry of Health and Wellness",
+      "authority": "Chief Dangerous Drugs Inspector, Pharmaceutical and Regulatory Affairs Division, Ministry of Health and Wellness",
+      "documents": [
+        "A letter from your doctor giving your name and the condition being treated.",
+        "A copy of the prescription showing each drug's name, strength and quantity for your whole stay.",
+        "Your flight details: arrival and departure dates and times, flight numbers, and ports of entry and departure.",
+        "Your address in Jamaica, and your own address, phone number and email.",
+        "A phone number for your doctor."
+      ],
+      "steps": [
+        "Gather the documents.",
+        "Send the request to the Chief Dangerous Drugs Inspector, 45-47 Barbados Avenue, Kingston 5 (tel. (876) 633-7145). Emailed requests are accepted. No processing time is stated, so apply early.",
+        "The ministry sends the special permit to you directly before your departure date."
+      ],
+      "atTheBorder": "Carry the special permit with you when you travel to Jamaica.",
+      "sources": [
+        {
+          "name": "Importation of Prescription Drugs to Jamaica — Embassy of Jamaica and Jamaica Mission to the EU, Brussels (reproducing Ministry of Health and Wellness guidance)",
+          "url": "https://jamaica-brussels.be/importation-of-prescription-drugs-to-jamaica/"
+        }
+      ],
+      "verified_at": "2026-10-14",
+      "verified_by": "agent:claude-opus-5-5"
+    }
   },
   {
     "slug": "cannabis-jm",

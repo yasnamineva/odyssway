@@ -369,3 +369,11 @@ gate was passed or missed, and why.
     "Schedule I" claims, were removed.
   - **Next:** the remaining permit rows listed in `data/UNVERIFIED/TODO.md`
     ("Permit procedures").
+- **2026-10-14. Permit procedures, batch 2.** Added Korea, Hong Kong, Cyprus, Saudi
+  Arabia, Qatar, Jamaica and the Philippines, so 11 countries now have step-by-step
+  guides.
+  - **Korea:** the row was rewritten from MFDS's own guide, and a claim sourced from
+    travel websites was removed.
+  - **Not given a procedure** (no published official application route, or no permit
+    involved): Serbia, Sri Lanka and the document-only countries. The reasons are in
+    `data/UNVERIFIED/TODO.md`.

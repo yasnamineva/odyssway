@@ -3194,7 +3194,35 @@ Corrections made while re-checking:
   under any circumstances". Neither is on the current FDA page (Ministerial
   Regulation B.E. 2567, in force 21 Sep 2024). Re-add only from a primary source.
 
-Next candidates for procedures (verdict depends on a permit, procedure already
-partly in `notes`): controlled-medication-kr, -cn, -hk, -tw, -my, -ph, -sa, -qa,
--ie, -cy, -rs, -ge, -mv, -lk, -mx, -br, -ar, -jm, -za, -ke, controlled-substances-rw,
-medication-ma.
+Batch 2 (2026-10-14), procedures added from each authority's own material:
+- **Korea**: MFDS guideline and FAQ (ZIP attachment to the MFDS notice). The
+  `controlled-medication-kr` row was rewritten from it: 90-day cap, 5-day extra, hand
+  luggage, no mail. Removed: the notes' secondary-sourced claim that amphetamine
+  (Adderall) can't be permitted at all, and the unverified narcotics@korea.kr address.
+  **Open:** does MFDS permit amphetamine products? Its guide and FAQ don't say.
+- **Hong Kong** (Drug Office FAQ Q.16): 10 working days, applies in transit too. No
+  application channel is published; the procedure says to contact the Drug Office.
+- **Cyprus** (Pharmaceutical Services page and its application form). The page's
+  "Guidelines for Travellers" PDF is actually the generic UN 2003 guidelines, not
+  Cyprus-specific. No lead or processing time is published.
+- **Saudi Arabia** (SFDA CDS traveller user manual): account, request, attachments,
+  status, licence.
+- **Qatar** (MOPH Controlled Medicines System user manual v1.0, fli.moph.gov.qa,
+  launched August 2026): 5 working days ahead, 3-day decision, permit valid 90 days.
+  The row's own guideline PDF (moph.gov.qa download) now returns a bot challenge;
+  re-check the row's quantities against it when reachable.
+- **Jamaica** (Embassy in Brussels page reproducing the MOHW guidance).
+- **Philippines** (DDB Regulation No. 1 s.2014, Sec. 35(4)): PDEA request 30 working
+  days ahead for more than 30 days' supply; reply within 15 working days.
+
+Not given a procedure, and why:
+- **Serbia**: Customs says to get approval from "the competent ministry", but no
+  ministry page describing the application was found. Only secondary sources.
+- **Sri Lanka**: NMRA requires prior approval above 90 days but publishes no traveller
+  application route (only the separate personal-user licence for imports).
+- **China, Taiwan, Malaysia, Georgia, Mexico, Brazil, Argentina, Rwanda, Morocco,
+  Ireland**: the verdict depends on documents carried or declared at the border, or on
+  a home-country certificate, not on a permit applied for in advance. The row text
+  already covers it.
+- **South Africa, Kenya, Maldives**: no traveller procedure on a reachable primary
+  source (see those rows' notes).
