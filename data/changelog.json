@@ -1,5 +1,119 @@
 [
   {
+    "commit": "5e3fff8bc93c7b9f991306866c2eba884c9f6473",
+    "date": "2026-10-13",
+    "dataset": "customs-items",
+    "summary": "Canada medication: residents vs visitors; Singapore peptides",
+    "verified_at": "2026-10-13",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Health Canada — Personal use health products guidance",
+      "url": "https://www.canada.ca/en/health-canada/services/drugs-health-products/compliance-enforcement/importation-exportation/personal-use-health-products-guidance/document.html"
+    }
+  },
+  {
+    "commit": "e2f3039109cd700d5231b5915f7c78d889d38f0b",
+    "date": "2026-10-13",
+    "dataset": "customs-items",
+    "summary": "Peptides: US, Canada, New Zealand and UK growth hormone, two blog posts",
+    "verified_at": "2026-10-13",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "U.S. Food and Drug Administration — Personal Importation",
+      "url": "https://www.fda.gov/industry/import-basics/personal-importation"
+    }
+  },
+  {
+    "commit": "835257558e09ab3883b3229edecd0b49ffabcd56",
+    "date": "2026-10-11",
+    "dataset": "customs-items",
+    "summary": "Eight more destinations: Chile, Montenegro, Jamaica, Bahamas, Ecuador, Tanzania, Cambodia, Israel",
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Servicio Nacional de Aduanas — Exempt Resolution No. 309 (Annex No. 5, Appendix XI, Chapter III of the Compendium of Customs Regulations: benefits for travellers; in force 13 March 2018), official English version; amounts updated by Exempt Resolution No. 1301",
+      "url": "https://www.aduana.cl/aduana/site/docs/20241104/20241104131844/exempt_resolution_309.pdf"
+    }
+  },
+  {
+    "commit": "835257558e09ab3883b3229edecd0b49ffabcd56",
+    "date": "2026-10-11",
+    "dataset": "destinations",
+    "summary": "Eight more destinations: Chile, Montenegro, Jamaica, Bahamas, Ecuador, Tanzania, Cambodia, Israel",
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Servicio Nacional de Migraciones (SERMIG) — Personas que ingresan con fines turísticos, recreativos, de negocios, u otros similares (Ley N° 21.325 de Migración y Extranjería, art. 27)",
+      "url": "https://serviciomigraciones.cl/permanencia-transitoria/subcategorias/turistas/"
+    }
+  },
+  {
+    "commit": "835257558e09ab3883b3229edecd0b49ffabcd56",
+    "date": "2026-10-11",
+    "dataset": "entry-requirements",
+    "summary": "Eight more destinations: Chile, Montenegro, Jamaica, Bahamas, Ecuador, Tanzania, Cambodia, Israel",
+    "verified_at": null,
+    "verified_by": null,
+    "source": null
+  },
+  {
+    "commit": "e8a9a949ad96f0efcb0258015b8923f2c1df1daa",
+    "date": "2026-10-10",
+    "dataset": "customs-items",
+    "summary": "Eight new destinations: Sri Lanka, Peru, Dominican Republic, Colombia, Argentina, Jordan, Costa Rica, Qatar",
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Travellers — Passenger Guide, Sri Lanka Customs",
+      "url": "https://www.customs.gov.lk/personal/travellers/"
+    }
+  },
+  {
+    "commit": "e8a9a949ad96f0efcb0258015b8923f2c1df1daa",
+    "date": "2026-10-10",
+    "dataset": "destinations",
+    "summary": "Eight new destinations: Sri Lanka, Peru, Dominican Republic, Colombia, Argentina, Jordan, Costa Rica, Qatar",
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Electronic Travel Authorization (ETA) official website — Department of Immigration & Emigration, Sri Lanka",
+      "url": "https://www.eta.gov.lk/slvisa/visainfo/center.jsp?locale=en_US"
+    }
+  },
+  {
+    "commit": "e8a9a949ad96f0efcb0258015b8923f2c1df1daa",
+    "date": "2026-10-10",
+    "dataset": "entry-requirements",
+    "summary": "Eight new destinations: Sri Lanka, Peru, Dominican Republic, Colombia, Argentina, Jordan, Costa Rica, Qatar",
+    "verified_at": null,
+    "verified_by": null,
+    "source": null
+  },
+  {
+    "commit": "9a4ce08d74d9188919f959c06114c08bbff99899",
+    "date": "2026-10-05",
+    "dataset": "ees",
+    "summary": "Visual guide pages: summaries up front, detail on demand",
+    "verified_at": "2026-10-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Travel to Europe (official EU EES site) — Contact details for data protection matters, Austria; rights under Regulation (EU) 2017/2226, Arts. 52–54; cross-checked against the Federal Ministry of the Interior's EES data-protection notice (Art. 13 GDPR), which lists the same controllers and BMI-EES@bmi.gv.at",
+      "url": "https://travel-europe.europa.eu/en/ees/contact-details-for-data-protection-matters"
+    }
+  },
+  {
+    "commit": "1032e1caaac643ac0d642271815aa3475409c201",
+    "date": "2026-10-05",
+    "dataset": "ees",
+    "summary": "SEO expansion: EES in all 29 states, medicine and nationality pages, widget",
+    "verified_at": "2026-10-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Travel to Europe (official EU EES site) — Contact details for data protection matters, Austria; rights under Regulation (EU) 2017/2226, Arts. 52–54; cross-checked against the Federal Ministry of the Interior's EES data-protection notice (Art. 13 GDPR), which lists the same controllers and BMI-EES@bmi.gv.at",
+      "url": "https://travel-europe.europa.eu/en/ees/contact-details-for-data-protection-matters"
+    }
+  },
+  {
     "commit": "1f9989c4b781d6623386cf51f64a59e7fbbae274",
     "date": "2026-10-05",
     "dataset": "customs-items",

@@ -164,6 +164,23 @@ export type CustomsItemCategory =
   | "drones"
   | "other";
 
+/** How to get the permit a row depends on — its own sources and check date (schemas.ts). */
+export interface CustomsProcedure {
+  title: string;
+  authority: string;
+  applyUrl?: string;
+  leadTime?: string;
+  processingTime?: string;
+  fee?: string;
+  documents?: string[];
+  steps: string[];
+  atTheBorder?: string;
+  transit?: string;
+  sources: { name: string; url: string }[];
+  verified_at: string;
+  verified_by: string;
+}
+
 /** Matches data/customs-items.json records (see schemas.ts / AGENTS.md §5.11). */
 export interface CustomsItemRecord {
   slug: string;
@@ -173,6 +190,7 @@ export interface CustomsItemRecord {
   verdict: "prohibited" | "allowed_with_limits" | "allowed" | "declaration_required" | "depends";
   limits?: { description: string; quantity?: string };
   notes?: string;
+  procedure?: CustomsProcedure;
   legal_source: { name: string; url: string };
   verified_at: string | null;
   verified_by: string | null;

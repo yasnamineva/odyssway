@@ -3162,3 +3162,39 @@ Still open:
   page stating the personal-import rule for unlicensed medicines was found.
   growth-hormone-gb deliberately says it doesn't cover them.
 - **US growth hormone**: no traveller-specific FDA/CBP source read; not added.
+
+## Permit procedures (2026-10-14)
+
+New optional `procedure` field on customs rows (schemas.ts `customsProcedureSchema`):
+authority, lead time, documents, steps, border and transit notes, with its own
+`sources` and `verified_at`. Rendered as a "how to get permission" checklist with
+HowTo markup on `/bring/medication/[destination]` and `/medications/[product]/[destination]`,
+and linked from Trip Check results.
+
+Done, each from the authority's own page, agent:claude-opus-5-5, 2026-10-14:
+- **Japan** (NCD application guidance, controlled substances list of 12 Dec 2024,
+  psychotropics table, Haneda/Narita attention sheet, office list): procedure on
+  `stimulant-medication-jp`; new rows `narcotic-medication-jp` (depends) and
+  `psychotropic-medication-jp` (allowed_with_limits, per-substance table amounts).
+- **Thailand** (Thai FDA traveller guidance): procedure on `controlled-medication-th`.
+- **Singapore** (HSA "Travelling with medications to Singapore", updated 15 June 2026):
+  procedure and transit exemption on `controlled-medication-sg`.
+- **UAE** (EDE permit page): optional-permit procedure and transit note on
+  `controlled-medication-ae`.
+
+Corrections made while re-checking:
+- `stimulant-medication-jp`: NCD's list excludes products with 10% or less
+  ephedrine/pseudoephedrine, which the row now says. **"Vicks inhaler" removed from
+  `names`**: its US active ingredient (levmetamfetamine) isn't on NCD's list by that
+  name, and the list's methamphetamine and amphetamine (incl. levamfetamine) entries
+  are prohibited outright, so the earlier "needs a permit" answer is unsupported
+  either way. Open question: does Japan treat levmetamfetamine as methamphetamine
+  (prohibited) or not at all? Needs an NCD answer before any Vicks row ships.
+- `controlled-medication-th`: removed "Form IC-2" and "Schedule I can't be imported
+  under any circumstances". Neither is on the current FDA page (Ministerial
+  Regulation B.E. 2567, in force 21 Sep 2024). Re-add only from a primary source.
+
+Next candidates for procedures (verdict depends on a permit, procedure already
+partly in `notes`): controlled-medication-kr, -cn, -hk, -tw, -my, -ph, -sa, -qa,
+-ie, -cy, -rs, -ge, -mv, -lk, -mx, -br, -ar, -jm, -za, -ke, controlled-substances-rw,
+medication-ma.

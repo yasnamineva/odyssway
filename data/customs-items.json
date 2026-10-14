@@ -896,7 +896,6 @@
     "names": [
       "pseudoephedrine",
       "sudafed",
-      "vicks inhaler",
       "decongestant",
       "vyvanse",
       "lisdexamfetamine",
@@ -906,14 +905,194 @@
     "category": "medication",
     "verdict": "depends",
     "limits": {
-      "description": "Products classified as 'stimulants' raw materials' — including pseudoephedrine (found in many common decongestants) and lisdexamfetamine (Vyvanse) — require advance permission from Japan's Narcotics Control Department before you travel. Amphetamine and methamphetamine (e.g. Adderall) are different: they cannot be brought in at all."
+      "description": "Japan classes lisdexamfetamine (Vyvanse) and pseudoephedrine (found in many decongestants, such as Sudafed) as \"stimulants' raw materials\". You need permission from Japan's Narcotics Control Department before you travel. Products with 10% or less ephedrine or pseudoephedrine are excluded from the list. Amphetamine and methamphetamine (such as Adderall) are different: they can't be brought in at all."
     },
-    "notes": "Apply at least 14 days before travel; applications typically require a doctor's certificate. Do not simply pack common decongestants like Sudafed or Vicks inhalers without checking first — travelers have been detained for unknowingly carrying pseudoephedrine-based medication into Japan.",
+    "notes": "Apply at least 14 days before you travel. If you're not sure which category your medicine is in, NCD says to check with the doctor who prescribed it. You must carry the medicine yourself and show the import certificate to customs.",
     "legal_source": {
-      "name": "Narcotics Control Department, Ministry of Health, Labour and Welfare — bringing narcotics and stimulant raw materials into Japan",
+      "name": "Narcotics Control Department, Ministry of Health, Labour and Welfare — Application Guidance (carrying medicine containing controlled substances)",
       "url": "https://www.ncd.mhlw.go.jp/en/application2.html"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-14",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Permission needed for stimulants' raw materials; lisdexamfetamine and pseudoephedrine named; 14-day lead time; carry in person; show certificate",
+        "name": "Narcotics Control Department, Ministry of Health, Labour and Welfare — Application Guidance (carrying medicine containing controlled substances)",
+        "url": "https://www.ncd.mhlw.go.jp/en/application2.html"
+      },
+      {
+        "claim": "Pseudoephedrine/ephedrine products with 10% or less excluded; lisdexamfetamine classed SRM",
+        "name": "Narcotics Control Department — Controlled Substances List in Japan (12 December 2024)",
+        "url": "https://www.ncd.mhlw.go.jp/dl_data/keitai/cotrolled_substances_list20241212%20.pdf"
+      }
+    ],
+    "procedure": {
+      "title": "Get an import certificate from Japan's Narcotics Control Department",
+      "authority": "Narcotics Control Department (NCD), Ministry of Health, Labour and Welfare",
+      "applyUrl": "https://www.ncd.mhlw.go.jp/en/application2.html",
+      "leadTime": "Apply at least 14 days before you travel. NCD says its Tokyo office can't accept last-minute applications for any reason.",
+      "documents": [
+        "The import application form from the NCD page. There are separate forms for narcotics and for stimulants' raw materials.",
+        "The export application form as well, if you'll leave Japan with leftover medicine. If you won't, say in your email that you don't need an export permit.",
+        "A medical certificate from the doctor who prescribed the medicine, issued within the last 3 months. It must give your name and current address, the specific reason you take the medicine, each medicine with its dose and strength, and the doctor's signature. NCD doesn't accept a reason like \"for personal use\" or \"for travel\".",
+        "Photos of your own medicine packages, showing the name and strength, as JPEG, PDF or Word files. NCD can't open HEIC photos.",
+        "Arriving at Haneda or Narita: also a driver's licence or utility bill confirming your address (not needed if the address is on the medical certificate). If you'll stay more than 90 days, also your visa, work contract or letter of acceptance."
+      ],
+      "steps": [
+        "Check your medicine's category on NCD's controlled substances list. This permit is for narcotics and stimulants' raw materials. Amphetamine (Adderall) and methamphetamine can't be brought in at all.",
+        "Fill in the import form, and the export form if you're taking leftovers home. Give your arrival date as the time of entry. For the reason for departure, write \"To return home\" or \"To go to another country\", not \"For vacation\".",
+        "Get the medical certificate from your prescribing doctor and photograph your medicine packages.",
+        "Send everything by email, fax or post to the NCD office that covers your arrival airport. If your files are over 10 MB, split them across several emails, then send a short follow-up asking NCD to confirm it received them.",
+        "Travel with the medicine and the import certificate NCD sends you."
+      ],
+      "atTheBorder": "Show the import certificate to the customs officer. You must carry the medicine yourself: it can't be posted to Japan or carried for you by someone else, even family.",
+      "sources": [
+        {
+          "name": "Narcotics Control Department, Ministry of Health, Labour and Welfare — Application Guidance (carrying medicine containing controlled substances)",
+          "url": "https://www.ncd.mhlw.go.jp/en/application2.html"
+        },
+        {
+          "name": "Narcotics Control Department — Attention for arrivals at Haneda or Narita",
+          "url": "https://www.ncd.mhlw.go.jp/dl_data/keitai/attention_HNDandNRT.pdf"
+        },
+        {
+          "name": "Narcotics Control Department — office list with the airports each office covers",
+          "url": "https://www.ncd.mhlw.go.jp/dl_data/keitai/area_en.pdf"
+        }
+      ],
+      "verified_at": "2026-10-14",
+      "verified_by": "agent:claude-opus-5-5"
+    }
+  },
+  {
+    "slug": "narcotic-medication-jp",
+    "names": [
+      "narcotic medication",
+      "opioid painkiller",
+      "oxycodone",
+      "codeine",
+      "morphine",
+      "fentanyl",
+      "tapentadol",
+      "ghb",
+      "sodium oxybate",
+      "xyrem",
+      "xywav",
+      "lumryz"
+    ],
+    "destination": "JP",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Japan classes oxycodone, codeine, morphine, fentanyl, tapentadol and GHB (sodium oxybate, sold as Xyrem, Xywav and Lumryz) as narcotics. You can bring them for your own treatment only with an import certificate from the Narcotics Control Department, applied for before you travel. Products with 1% or less codeine (or dihydrocodeine) are excluded from the narcotics list."
+    },
+    "notes": "NCD notes that tramadol is not a narcotic in Japan, so this certificate doesn't apply to it. Heroin and opium powder can't be brought in by any traveller, even with a prescription.",
+    "legal_source": {
+      "name": "Narcotics Control Department, Ministry of Health, Labour and Welfare — Application Guidance (carrying medicine containing controlled substances)",
+      "url": "https://www.ncd.mhlw.go.jp/en/application2.html"
+    },
+    "_sources": [
+      {
+        "claim": "Narcotics need permission; named examples incl. GHB brands; tramadol not a narcotic; prohibited substances",
+        "name": "Narcotics Control Department, Ministry of Health, Labour and Welfare — Application Guidance (carrying medicine containing controlled substances)",
+        "url": "https://www.ncd.mhlw.go.jp/en/application2.html"
+      },
+      {
+        "claim": "Codeine and dihydrocodeine products at 1% or less excluded",
+        "name": "Narcotics Control Department — Controlled Substances List in Japan (12 December 2024)",
+        "url": "https://www.ncd.mhlw.go.jp/dl_data/keitai/cotrolled_substances_list20241212%20.pdf"
+      }
+    ],
+    "procedure": {
+      "title": "Get an import certificate from Japan's Narcotics Control Department",
+      "authority": "Narcotics Control Department (NCD), Ministry of Health, Labour and Welfare",
+      "applyUrl": "https://www.ncd.mhlw.go.jp/en/application2.html",
+      "leadTime": "Apply at least 14 days before you travel. NCD says its Tokyo office can't accept last-minute applications for any reason.",
+      "documents": [
+        "The import application form from the NCD page. There are separate forms for narcotics and for stimulants' raw materials.",
+        "The export application form as well, if you'll leave Japan with leftover medicine. If you won't, say in your email that you don't need an export permit.",
+        "A medical certificate from the doctor who prescribed the medicine, issued within the last 3 months. It must give your name and current address, the specific reason you take the medicine, each medicine with its dose and strength, and the doctor's signature. NCD doesn't accept a reason like \"for personal use\" or \"for travel\".",
+        "Photos of your own medicine packages, showing the name and strength, as JPEG, PDF or Word files. NCD can't open HEIC photos.",
+        "Arriving at Haneda or Narita: also a driver's licence or utility bill confirming your address (not needed if the address is on the medical certificate). If you'll stay more than 90 days, also your visa, work contract or letter of acceptance."
+      ],
+      "steps": [
+        "Check your medicine's category on NCD's controlled substances list. This permit is for narcotics and stimulants' raw materials. Amphetamine (Adderall) and methamphetamine can't be brought in at all.",
+        "Fill in the import form, and the export form if you're taking leftovers home. Give your arrival date as the time of entry. For the reason for departure, write \"To return home\" or \"To go to another country\", not \"For vacation\".",
+        "Get the medical certificate from your prescribing doctor and photograph your medicine packages.",
+        "Send everything by email, fax or post to the NCD office that covers your arrival airport. If your files are over 10 MB, split them across several emails, then send a short follow-up asking NCD to confirm it received them.",
+        "Travel with the medicine and the import certificate NCD sends you."
+      ],
+      "atTheBorder": "Show the import certificate to the customs officer. You must carry the medicine yourself: it can't be posted to Japan or carried for you by someone else, even family.",
+      "sources": [
+        {
+          "name": "Narcotics Control Department, Ministry of Health, Labour and Welfare — Application Guidance (carrying medicine containing controlled substances)",
+          "url": "https://www.ncd.mhlw.go.jp/en/application2.html"
+        },
+        {
+          "name": "Narcotics Control Department — Attention for arrivals at Haneda or Narita",
+          "url": "https://www.ncd.mhlw.go.jp/dl_data/keitai/attention_HNDandNRT.pdf"
+        },
+        {
+          "name": "Narcotics Control Department — office list with the airports each office covers",
+          "url": "https://www.ncd.mhlw.go.jp/dl_data/keitai/area_en.pdf"
+        }
+      ],
+      "verified_at": "2026-10-14",
+      "verified_by": "agent:claude-opus-5-5"
+    },
+    "verified_at": "2026-10-14",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "psychotropic-medication-jp",
+    "names": [
+      "psychotropic medication",
+      "benzodiazepine",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "ativan",
+      "lorazepam",
+      "ambien",
+      "zolpidem",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "provigil",
+      "modafinil",
+      "etizolam",
+      "buprenorphine"
+    ],
+    "destination": "JP",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "You can bring psychotropic medicines without a permit or a doctor's certificate, as long as the total amount of each active ingredient stays within the limit in NCD's table and it isn't an injection. Limits from the table include: alprazolam (Xanax) 72 mg, clonazepam (Klonopin) 180 mg, diazepam (Valium) 1.2 g, lorazepam (Ativan) 90 mg, zolpidem (Ambien) 300 mg, etizolam 90 mg, methylphenidate (Ritalin, Concerta) 2.16 g, modafinil (Provigil) 6 g and buprenorphine 80 mg. Above those amounts, or for injections, carry a certificate from your prescribing doctor.",
+      "quantity": "Total active ingredient up to NCD's table amount, e.g. 72 mg of alprazolam"
+    },
+    "notes": "The limits are totals across everything you carry, not per tablet. For example, 72 mg of alprazolam is 144 tablets of 0.5 mg, or 36 tablets of 2 mg. A doctor's certificate must give your name, the disease, why you need the medicine, each medicine with its dose and strength, the doctor's signature and the date. To bring more than a month's supply, NCD says to contact yakkan@mhlw.go.jp first.",
+    "legal_source": {
+      "name": "Narcotics Control Department — Table (List of Psychotropics) with carry-in amounts",
+      "url": "https://www.ncd.mhlw.go.jp/dl_data/keitai/total.pdf"
+    },
+    "_sources": [
+      {
+        "claim": "No certificate or permission needed at or below table amounts (not injections); certificate contents above; >1 month contact yakkan",
+        "name": "Narcotics Control Department, Ministry of Health, Labour and Welfare — Application Guidance (carrying medicine containing controlled substances)",
+        "url": "https://www.ncd.mhlw.go.jp/en/application2.html"
+      },
+      {
+        "claim": "Per-substance carry-in amounts",
+        "name": "Narcotics Control Department — Table (List of Psychotropics) with carry-in amounts",
+        "url": "https://www.ncd.mhlw.go.jp/dl_data/keitai/total.pdf"
+      }
+    ],
+    "verified_at": "2026-10-14",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -1700,16 +1879,36 @@
     "category": "medication",
     "verdict": "depends",
     "limits": {
-      "description": "Medications containing psychotropic substances (Schedule II, III, or IV) may be carried for personal use up to a 30-day supply with a doctor's certificate/prescription, no advance permit needed. For a 31–90 day supply, travelers must obtain an FDA permit (Form IC-2) at least 15 days before traveling. Medications containing narcotic drugs (Schedule II or III) require an FDA Narcotics Division license before importing, for up to a 90-day supply. Importing Schedule I psychotropic substances is not allowed under any circumstances."
+      "description": "Psychotropic medicines (Thai Schedules II, III and IV): you can carry up to a 30-day supply with a certificate or prescription from your doctor, without a permit. For a 31–90 day supply you need a Thai FDA permit, obtained at least 15 days before you travel. Narcotic medicines (Schedules II and III): up to a 90-day supply, and only with a Thai FDA permit obtained at least 15 days before you travel."
     },
-    "notes": "Apply online at least 15 days before travel via the FDA's traveler permit portal (permitfortraveler.fda.moph.go.th). Processing takes about 3 working days. The FDA's guidance does not name specific drugs (e.g. whether Adderall/amphetamine is treated as a narcotic or an outright-banned substance) — travelers with stimulant or opioid prescriptions should confirm their medication's schedule with the FDA before travel rather than assume it is covered by the general allowance.",
+    "notes": "The FDA's guidance doesn't name individual drugs, so it doesn't say whether a given medicine (for example Adderall) is a narcotic, a psychotropic, or something that can't be brought in at all. If you have a stimulant or opioid prescription, confirm its schedule with the Thai FDA before you travel. The rules come from Ministerial Regulation B.E. 2567 (2024), in force since 21 September 2024.",
     "legal_source": {
       "name": "Thai FDA — Guidance for Travelers under Treatment Carrying Personal Medications Containing Narcotic Drugs/Psychotropic Substances into Thailand",
       "url": "https://en.fda.moph.go.th/entrepreneurs-narcotic-drugs-and-psychotropic-substances/category/guidance-for-travelers-under-treatment-carrying-personal-medications-containing-narcotic-drugs-into-/"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-14",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "procedure": {
+      "title": "Get a Thai FDA permit for travellers",
+      "authority": "Thai Food and Drug Administration (FDA)",
+      "applyUrl": "https://permitfortraveler.fda.moph.go.th/nct_permit_main/",
+      "leadTime": "At least 15 days before you travel",
+      "processingTime": "About 3 working days after the FDA receives a complete application",
+      "steps": [
+        "Work out whether your medicine is a narcotic or a psychotropic under Thai law, and how many days' supply you're bringing. A permit is needed for any narcotic, and for psychotropics over a 30-day supply.",
+        "Apply on the FDA's online traveller permit portal at least 15 days before you travel.",
+        "Wait for the permit. The FDA says it's issued in about 3 working days once your application is complete."
+      ],
+      "sources": [
+        {
+          "name": "Thai FDA — Guidance for Travelers under Treatment Carrying Personal Medications Containing Narcotic Drugs/Psychotropic Substances into Thailand",
+          "url": "https://en.fda.moph.go.th/entrepreneurs-narcotic-drugs-and-psychotropic-substances/category/guidance-for-travelers-under-treatment-carrying-personal-medications-containing-narcotic-drugs-into-/"
+        }
+      ],
+      "verified_at": "2026-10-14",
+      "verified_by": "agent:claude-opus-5-5"
+    }
   },
   {
     "slug": "cannabis-th",
@@ -4352,7 +4551,33 @@
     },
     "verified_at": "2026-09-13",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "procedure": {
+      "title": "Optional: get an EDE permit before you travel",
+      "authority": "Emirates Drug Establishment (EDE)",
+      "applyUrl": "https://www.ede.gov.ae/en/w/issue-of-permit-to-import-medicines-for-personal-use",
+      "processingTime": "1 working day",
+      "fee": "Free",
+      "documents": [
+        "A prescription issued within the last 3 months and stamped by the treating healthcare facility. It must show your full name, the medicine and its dose and form, how long the treatment lasts, the issue date and the doctor's name.",
+        "A medical report issued within the last year and stamped by the treating healthcare facility. It must show your full name, the diagnosis, the treatment plan (medicine, dose, form and duration), the issue date and the doctor's name."
+      ],
+      "steps": [
+        "Sign in to the EDE website with UAE PASS.",
+        "Fill in the application form and attach the prescription and medical report.",
+        "Submit it. EDE says the permit is issued in 1 working day, free of charge."
+      ],
+      "atTheBorder": "The permit is optional for visitors. Without one, you can carry up to a 3-month supply with your prescription and medical report. For narcotic or psychotropic medicines, EDE says these documents must be authenticated by the treating health authority.",
+      "transit": "EDE says transit passengers who stay inside the airport don't need approval.",
+      "sources": [
+        {
+          "name": "Emirates Drug Establishment (EDE) — Issue of Permit to Import Medicines for Personal Use / Controlled and Semi-Controlled Medicines List",
+          "url": "https://www.ede.gov.ae/en/w/issue-of-permit-to-import-medicines-for-personal-use"
+        }
+      ],
+      "verified_at": "2026-10-14",
+      "verified_by": "agent:claude-opus-5-5"
+    }
   },
   {
     "slug": "medication-br",
@@ -4541,7 +4766,33 @@
     },
     "verified_at": "2026-09-13",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "procedure": {
+      "title": "Get HSA approval before you arrive",
+      "authority": "Health Sciences Authority (HSA)",
+      "applyUrl": "https://go.gov.sg/hsa-ptm",
+      "leadTime": "At least 2 weeks before you arrive. HSA says later applications may not be processed in time.",
+      "documents": [
+        "Medical documents: a pharmacy dispensing label, a doctor's prescription or a doctor's letter. They must show your and the prescriber's details, the medicine's name and composition, the dose and frequency, and the total quantity prescribed.",
+        "Clear photos of the product showing its name, active ingredients, strength, directions for use, dosage form and the quantity dispensed."
+      ],
+      "steps": [
+        "Check whether any active ingredient is on Appendix A of HSA's document guide (the list of controlled substances).",
+        "Fill in HSA's online application form, in English, at least 2 weeks before you arrive. Incomplete applications are rejected, and you'd have to apply again.",
+        "Attach your medical documents and photos as PDF, JPEG or ZIP files.",
+        "Keep the approval email. It covers only the arrival date you gave, so if your plans change, apply again."
+      ],
+      "atTheBorder": "Approved medicines don't need to be declared at customs. Keep the approval email and your documents ready in case immigration (ICA) officers ask to see them.",
+      "transit": "You don't need HSA approval if you stay in the airport transit zone and don't clear immigration. Prohibited medicines, such as cannabis-based products, still aren't allowed in transit.",
+      "sources": [
+        {
+          "name": "Health Sciences Authority — Travelling with medications to Singapore (last updated 15 June 2026)",
+          "url": "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-medications"
+        }
+      ],
+      "verified_at": "2026-10-14",
+      "verified_by": "agent:claude-opus-5-5"
+    }
   },
   {
     "slug": "cannabis-sg",

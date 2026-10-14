@@ -1,6 +1,7 @@
 import type { CustomsItemRecord } from "@odyssway/engine";
 import { getTranslations } from "next-intl/server";
 import { rowLabel } from "../lib/bring-pages";
+import ProcedureSection from "./ProcedureSection";
 import SourceNote from "./SourceNote";
 
 export const VERDICT_STYLES: Record<string, string> = {
@@ -11,7 +12,7 @@ export const VERDICT_STYLES: Record<string, string> = {
   depends: "bg-slate-100 text-slate-700 ring-slate-200",
 };
 
-/** One verified customs row: verdict, limits, notes, what else it covers, source and date. */
+/** One verified customs row: verdict, limits, notes, how to get any permit it needs, what else it covers, source and date. */
 export default async function CustomsRowCard({
   row,
   destinationCode,
@@ -38,6 +39,7 @@ export default async function CustomsRowCard({
         <p className="mt-3 text-sm leading-relaxed text-slate-700">{row.limits.description}</p>
       )}
       {row.notes && <p className="mt-2 text-sm leading-relaxed text-slate-600">{row.notes}</p>}
+      {row.procedure && <ProcedureSection procedure={row.procedure} />}
       <p className="mt-3 text-xs leading-relaxed text-slate-500">
         <span className="font-semibold">{t("alsoCovers")}</span> {row.names.slice(0, 14).join(", ")}
       </p>

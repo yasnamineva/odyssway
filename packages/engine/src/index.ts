@@ -26,6 +26,7 @@ export type {
   CountryRecord,
   CustomsItemCategory,
   CustomsItemRecord,
+  CustomsProcedure,
   DestinationRecord,
   EngineContext,
   EntryRequirementRecord,

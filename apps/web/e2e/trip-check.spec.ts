@@ -139,3 +139,18 @@ test("a result restates the trip, its assumptions and a dated source, with a way
   await page.getByRole("button", { name: "Edit trip" }).click();
   await expect(page.locator("#tc-nationality")).toBeFocused();
 });
+
+test("an item whose verdict needs a permit links to the step-by-step procedure", async ({ page }) => {
+  await page.goto("/trip-check");
+  await pickCombobox(page, "tc-nationality", "United States", "United States");
+  await pickCombobox(page, "tc-destination", "Japan", "Japan");
+  const itemInput = page.getByTestId("tc-item-input");
+  await itemInput.fill("vyvanse");
+  await itemInput.press("Enter");
+  await page.getByTestId("tc-submit").click();
+
+  const link = page.getByTestId("tc-item-procedure");
+  await expect(link).toHaveAttribute("href", "/bring/medication/japan");
+  await link.click();
+  await expect(page.getByRole("heading", { name: "Get an import certificate from Japan's Narcotics Control Department" }).first()).toBeVisible();
+});

@@ -206,6 +206,28 @@ export const customsItemCategorySchema = z.enum([
   "other",
 ]);
 
+/**
+ * How to get the permit or approval a row's verdict depends on (form,
+ * authority, lead time, documents, steps). Carries its own sources and check
+ * date, because it is often verified from a different official page than the
+ * row's verdict, and on a different day.
+ */
+export const customsProcedureSchema = z.object({
+  title: z.string().min(1),
+  authority: z.string().min(1),
+  applyUrl: z.url().optional(),
+  leadTime: z.string().min(1).optional(),
+  processingTime: z.string().min(1).optional(),
+  fee: z.string().min(1).optional(),
+  documents: z.array(z.string().min(1)).min(1).optional(),
+  steps: z.array(z.string().min(1)).min(2),
+  atTheBorder: z.string().min(1).optional(),
+  transit: z.string().min(1).optional(),
+  sources: z.array(legalSourceSchema).min(1),
+  verified_at: isoDateSchema,
+  verified_by: z.string().min(1),
+});
+
 export const customsItemSchema = z
   .object({
     slug: z.string().regex(/^[a-z0-9-]+$/),
@@ -223,6 +245,7 @@ export const customsItemSchema = z
       .object({ description: z.string().min(1), quantity: z.string().optional() })
       .optional(),
     notes: z.string().optional(),
+    procedure: customsProcedureSchema.optional(),
     ...verificationFields,
   })
   .superRefine(requireVerifierWhenVerified);

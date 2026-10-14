@@ -109,7 +109,7 @@ export const blogPosts: BlogPost[] = [
     title: "Taking ADHD medication to Japan? Adderall can't come with you",
     seoTitle: "Adderall and Vyvanse in Japan: What You Can Bring",
     seoDescription:
-      "Adderall is banned in Japan even with a prescription. Vyvanse and Sudafed need advance permission. The rules from Japan's health ministry and customs.",
+      "Adderall is banned in Japan, even with a prescription. Vyvanse needs a permit; Ritalin is allowed up to a limit. The rules from Japan's health ministry.",
     dek: "Adderall is banned in Japan, prescription or not. Vyvanse is allowed with a permit you apply for weeks ahead, and so are some cold remedies.",
     date: "2026-10-06",
     category: "Medicine",
@@ -117,7 +117,7 @@ export const blogPosts: BlogPost[] = [
       name: "Narcotics Control Department, Ministry of Health, Labour and Welfare — bringing narcotics and stimulant raw materials into Japan",
       url: "https://www.ncd.mhlw.go.jp/en/application2.html",
     },
-    verifiedAt: "2026-10-02",
+    verifiedAt: "2026-10-14",
     changelogDataset: "customs-items",
     destinationCodes: ["JP"],
     photo: "blog-japan",

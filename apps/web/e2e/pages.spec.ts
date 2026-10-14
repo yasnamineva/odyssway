@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { blogPosts } from "../lib/blog";
 
 /** Every public route renders with its key content (Phase 1 launch surface). */
 
@@ -211,7 +212,7 @@ test("old destination code URLs redirect permanently to the name URL", async ({ 
 test("blog posts carry a photo and retired post URLs redirect", async ({ page, request }) => {
   await page.goto("/blog", { waitUntil: "domcontentloaded" });
   const cards = page.locator("main ol > li");
-  await expect(cards).toHaveCount(6);
+  await expect(cards).toHaveCount(blogPosts.length);
   await expect(cards.first().locator("img")).toHaveAttribute("src", /blog-/);
   await page.goto("/blog/adhd-medication-japan", { waitUntil: "domcontentloaded" });
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Adderall");

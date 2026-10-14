@@ -6,7 +6,14 @@ import { useEffect, useMemo, useState } from "react";
 import SourceNote from "./SourceNote";
 import { schengenCountries } from "../lib/countries";
 import { destinationLabelFor } from "../lib/destination-label";
-import { EU_CUSTOMS_CODE, customsItems, destinations, queuedDestinations } from "../lib/destinations";
+import { BRING_CATEGORIES } from "../lib/bring-categories";
+import {
+  EU_CUSTOMS_CODE,
+  customsItems,
+  destinationSlug,
+  destinations,
+  queuedDestinations,
+} from "../lib/destinations";
 import { publishedNationalities } from "../lib/nationalities";
 import SearchableSelect from "./SearchableSelect";
 import {
@@ -22,6 +29,15 @@ const WorldMap = dynamic(() => import("./WorldMap"), {
   ssr: false,
   loading: () => <div className="aspect-[16/9] w-full animate-pulse rounded-xl bg-slate-100" />,
 });
+
+/** The page that shows a row's full permit procedure: its /bring item × destination page. */
+function procedureHref(row: (typeof customsItems)[number]): string | undefined {
+  if (row.category === "other") return undefined;
+  const destination = destinations.find((d) => d.code === row.destination && d.status === "verified");
+  return destination
+    ? `/bring/${BRING_CATEGORIES[row.category].slug}/${destinationSlug(destination.name)}`
+    : undefined;
+}
 
 const inputClass =
   "w-full min-w-0 rounded-lg border border-slate-300 bg-white px-3 py-2 text-base focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200";
@@ -523,6 +539,15 @@ function TripCheckResults({
                       )}
                       {item.match.notes && (
                         <p className="mt-1 text-xs leading-relaxed text-slate-600">{item.match.notes}</p>
+                      )}
+                      {item.match.procedure && procedureHref(item.match) && (
+                        <a
+                          href={procedureHref(item.match)}
+                          className="mt-1 inline-block text-xs font-semibold text-brand-700 underline underline-offset-2"
+                          data-testid="tc-item-procedure"
+                        >
+                          {t("procedureLink")}
+                        </a>
                       )}
                       <SourceNote
                         className="mt-2"
