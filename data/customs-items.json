@@ -14355,6 +14355,27 @@
     "status": "verified"
   },
   {
+    "slug": "pseudoephedrine-nz",
+    "names": [
+      "pseudoephedrine"
+    ],
+    "destination": "NZ",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "All medicines containing pseudoephedrine are controlled drugs in New Zealand, including cold and flu medicines you can buy without a prescription elsewhere. Declare them on your New Zealand Traveller Declaration, keep them in their original packaging and in your hand luggage, and bring no more than one month's supply. Customs' controlled-drug rules also ask for a copy of your prescription or a letter from your doctor confirming you're being treated with it, with its name and strength.",
+      "quantity": "1 month's supply"
+    },
+    "notes": "You can't bring pseudoephedrine medicines into New Zealand for friends or family. Check the label of any cold or allergy medicine you pack: if it lists pseudoephedrine, these rules apply.",
+    "legal_source": {
+      "name": "New Zealand Customs Service — Prohibited and restricted items (travellers)",
+      "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/"
+    },
+    "verified_at": "2026-10-16",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "growth-hormone-gb",
     "names": [
       "growth hormone",
@@ -14500,6 +14521,27 @@
       "url": "https://www.cnb.gov.sg/singapore-drug-situation/drugs--psychoactive-substances--and-inhalants/kratom/"
     },
     "verified_at": "2026-10-15",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "medicated-gum-sg",
+    "names": [
+      "nicotine gum",
+      "medicated gum"
+    ],
+    "destination": "SG",
+    "category": "medication",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Don't bring it. Singapore's Health Sciences Authority doesn't allow personal imports of medications in chewing gum form under any circumstances. That includes nicotine gum used to quit smoking."
+    },
+    "notes": "This entry covers medicated gum only. Ordinary chewing gum has separate import rules, and other forms of nicotine replacement such as patches have their own rules; we haven't verified either yet.",
+    "legal_source": {
+      "name": "Health Sciences Authority — Travelling with medications to Singapore (last updated 15 June 2026)",
+      "url": "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-medications/"
+    },
+    "verified_at": "2026-10-16",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   }

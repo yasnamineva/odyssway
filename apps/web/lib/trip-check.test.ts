@@ -128,6 +128,11 @@ describe("resolveTripCheck", () => {
     expect(resolveTripCheck("US", "AU", ["phenibut"]).items[0]!.match?.slug).toBe("phenibut-au");
   });
 
+  it("answers pseudoephedrine in New Zealand and nicotine gum in Singapore", () => {
+    expect(resolveItem("NZ", "pseudoephedrine")?.slug).toBe("pseudoephedrine-nz");
+    expect(resolveItem("SG", "nicotine gum")?.verdict).toBe("prohibited");
+  });
+
   it("answers kratom and kava, and keeps generic words from matching them", () => {
     expect(resolveTripCheck("US", "AU", ["kratom"]).items[0]!.match?.verdict).toBe("prohibited");
     expect(resolveTripCheck("US", "NZ", ["kratom"]).items[0]!.match?.slug).toBe("kratom-nz");

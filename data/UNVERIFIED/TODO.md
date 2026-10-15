@@ -3386,3 +3386,19 @@ transit). Not added:
   arrested, but that's about illegal drugs, not prescribed medicine.
 - **Turkey (Istanbul)**: no primary source for controlled medicine or transit found
   (TİTCK and Customs pages searched).
+
+## Step 1.4 batch 4 (2026-10-16)
+
+Published: `pseudoephedrine-nz` (NZ Customs: all pseudoephedrine medicines are
+controlled drugs; declare, hand luggage, 1 month, prescription or doctor's letter),
+`medicated-gum-sg` (HSA: personal imports of medications in chewing gum form not
+permitted under any circumstances, so nicotine gum is out).
+
+Open:
+- **Singapore ordinary chewing gum**: the ICA prohibited goods page (now JS-rendered)
+  doesn't mention it; need Singapore Customs or the Chewing Gum Regulations on SSO.
+- **Singapore nicotine patches**: ICA lists "any product containing nicotine ... that
+  may be used topically for application, by implant or injected" as prohibited.
+  Whether that covers transdermal patches isn't stated; needs HSA confirmation.
+- **"Sudafed" brand for NZ**: not named by NZ Customs, and US "Sudafed PE" contains
+  phenylephrine, so the brand isn't in the row's names.

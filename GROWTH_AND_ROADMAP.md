@@ -444,3 +444,7 @@ gate was passed or missed, and why.
   for transit wording. Added Georgia (applies in transit), Hong Kong prescription
   medicine with dangerous drugs (applies), Singapore peptides (exempt airside), and
   Albania CBD (applies). Istanbul still has no primary source.
+- **2026-10-16 (overnight). Step 1.4, batch 4.** Pseudoephedrine in New Zealand
+  (controlled drug: declare, 1 month, prescription or doctor's letter, even for
+  over-the-counter cold tablets) and nicotine gum in Singapore (medicated gum can't
+  be imported at all).
