@@ -34,10 +34,10 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "melatonin-zyn-legal-at-home",
     title: "Legal at home, trouble at the border: melatonin and nicotine pouches",
-    seoTitle: "Can You Bring Melatonin or Zyn Abroad? Australia, NZ, UK",
+    seoTitle: "Can You Bring Melatonin or Zyn Abroad? Australia, France, NZ, UK",
     seoDescription:
-      "Australia banned nicotine pouches for travellers in July 2026; Singapore prohibits them. Melatonin needs a prescription for NZ and is prescription-only in the UK.",
-    dek: "Australia now seizes nicotine pouches at the border, and Singapore bans them. Melatonin, a US supplement, is a prescription medicine in New Zealand and the UK.",
+      "Australia banned nicotine pouches for travellers in July 2026, France in April 2026; Singapore prohibits them. Melatonin needs a prescription for NZ and Australia.",
+    dek: "Australia now seizes nicotine pouches at the border, and France and Singapore ban them. Melatonin, a US supplement, is a prescription medicine in New Zealand, Australia and the UK.",
     date: "2026-10-15",
     category: "Medicine",
     legalSource: {
@@ -54,17 +54,17 @@ export const blogPosts: BlogPost[] = [
     title: "Travelling with peptides? \"Research use only\" won't get BPC-157 through customs",
     seoTitle: "Can You Travel With Peptides? BPC-157, TB-500 at Customs",
     seoDescription:
-      "BPC-157, TB-500 and melanotan II are unapproved drugs at the US, Canadian and New Zealand borders. Growth hormone and HCG in the UK: carried in person only.",
-    dek: "The US, Canada and New Zealand treat research peptides as unapproved medicines. The UK lets you carry prescribed growth hormone and HCG, but only in person.",
+      "BPC-157, TB-500 and melanotan II are unapproved drugs at the US, Canadian and New Zealand borders, and need a prescription for Australia. Growth hormone and HCG: UK and Australia.",
+    dek: "The US, Canada and New Zealand treat research peptides as unapproved medicines, and Australia needs a prescription. The UK lets you carry prescribed growth hormone and HCG, but only in person.",
     date: "2026-10-13",
     category: "Medicine",
     legalSource: {
       name: "Health Canada — Think twice before injecting peptides bought online (advisory RA-81874)",
       url: "https://recalls-rappels.canada.ca/en/alert-recall/think-twice-injecting-peptides-bought-online-unauthorized-products-can-seriously-harm",
     },
-    verifiedAt: "2026-10-13",
+    verifiedAt: "2026-10-15",
     changelogDataset: "customs-items",
-    destinationCodes: ["US", "CA", "NZ", "GB"],
+    destinationCodes: ["US", "CA", "NZ", "GB", "AU"],
     photo: "blog-peptides",
   },
   {

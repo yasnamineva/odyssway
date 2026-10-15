@@ -173,7 +173,15 @@ export default async function SourcesPage() {
           </span>
         </h3>
         <ul className="mt-2 space-y-2 text-sm leading-relaxed text-slate-700">
-          {distinctSources(customsItems.filter((i) => i.destination === "EU" && i.status === "verified")).map(
+          {distinctSources(
+            customsItems.filter(
+              // The harmonised EU rows plus member states' own national rules
+              // (destination codes that aren't standalone destinations).
+              (i) =>
+                (i.destination === "EU" || !destinations.some((d) => d.code === i.destination)) &&
+                i.status === "verified",
+            ),
+          ).map(
             (s, i) => (
               <li key={i}>
                 <a href={s.url} rel="noopener noreferrer" className="underline">

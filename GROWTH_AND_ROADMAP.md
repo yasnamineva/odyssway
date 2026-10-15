@@ -386,3 +386,22 @@ gate was passed or missed, and why.
   - **Next:** Australia melatonin (TGA unreachable from here), Japan nicotine
     pouches, and France's "white snus" ban (April 2026). Then more items from the
     unmatched-search log.
+- **2026-10-15. Open items cleared, and step 1.4 continued.**
+  - **Australia:** growth hormone, peptides (BPC-157, TB-500 and others) and
+    melatonin. TGA still times out, so these come from the law itself on
+    legislation.gov.au (Poisons Standard, Therapeutic Goods Regulations, Customs
+    (Prohibited Imports) Regulations) and the Border Force's item list.
+  - **France:** nicotine pouches banned since 1 April 2026, including bringing them
+    in and having them. This is the first **national rule inside the Schengen
+    Area**: Trip Check now checks a member state's own rows before the shared EU
+    rows, and shows them to EU citizens too.
+  - **Kratom:** prohibited in Australia and Singapore; New Zealand releases it at
+    the border only on a doctor's authority. **Kava:** up to 4 kg for travellers
+    18+ in Australia.
+  - **Qatar:** quantities re-checked; a wrong "24 hours" processing claim corrected.
+  - **Blog:** both the melatonin/Zyn post and the peptides post now cover these.
+  - **Still open, no primary source found:** UK personal-import rule, Japan (Vicks,
+    pouches), Korea amphetamines, Singapore/Japan melatonin, US growth hormone.
+  - **Next:** more step 1.4 items (poppers and phenibut in Australia need TGA;
+    kratom in more countries; nicotine pouches in other EU states), driven by the
+    unmatched-search log once it's exported.

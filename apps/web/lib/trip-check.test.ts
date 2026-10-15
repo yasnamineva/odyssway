@@ -110,6 +110,37 @@ describe("resolveTripCheck", () => {
     expect(resolveTripCheck("US", "SG", ["nicotine pouches"]).items[0]!.match?.slug).toBe("nicotine-pouches-sg");
   });
 
+  it("answers growth hormone, peptides and melatonin for Australia", () => {
+    expect(resolveTripCheck("US", "AU", ["hgh"]).items[0]!.match?.slug).toBe("growth-hormone-au");
+    expect(resolveTripCheck("US", "AU", ["bpc-157"]).items[0]!.match?.slug).toBe("peptides-au");
+    expect(resolveTripCheck("US", "AU", ["melatonin"]).items[0]!.match?.slug).toBe("melatonin-au");
+  });
+
+  it("answers kratom and kava, and keeps generic words from matching them", () => {
+    expect(resolveTripCheck("US", "AU", ["kratom"]).items[0]!.match?.verdict).toBe("prohibited");
+    expect(resolveTripCheck("US", "NZ", ["kratom"]).items[0]!.match?.slug).toBe("kratom-nz");
+    expect(resolveTripCheck("US", "SG", ["kratom"]).items[0]!.match?.slug).toBe("kratom-sg");
+    expect(resolveTripCheck("US", "AU", ["kava"]).items[0]!.match?.slug).toBe("kava-au");
+    expect(resolveTripCheck("US", "AU", ["tea"]).items[0]!.match?.slug).not.toBe("kratom-au");
+    expect(resolveTripCheck("US", "NZ", ["supplement"]).items[0]!.match?.slug).not.toBe("melatonin-nz");
+  });
+
+  it("applies a member state's national rule on top of the EU rows, for everyone arriving there", () => {
+    const visitor = resolveTripCheck("US", "FR", ["zyn", "cigarettes"]);
+    expect(visitor.items[0]!.match?.slug).toBe("nicotine-pouches-fr");
+    expect(visitor.items[0]!.match?.verdict).toBe("prohibited");
+    expect(visitor.items[1]!.match?.destination).toBe("EU");
+
+    const euCitizen = resolveTripCheck("DE", "FR", ["nicotine pouches", "cigarettes"]);
+    expect(euCitizen.intraEuCustoms).toBe(true);
+    expect(euCitizen.items[0]!.match?.slug).toBe("nicotine-pouches-fr");
+    expect(euCitizen.items[1]!.match).toBeNull();
+
+    // Neither another member state nor "Schengen Area, unspecified" picks up France's rule.
+    expect(resolveTripCheck("US", "DE", ["zyn"]).items[0]!.match?.slug).not.toBe("nicotine-pouches-fr");
+    expect(resolveTripCheck("US", "SCHENGEN", ["zyn"]).items[0]!.match?.slug).not.toBe("nicotine-pouches-fr");
+  });
+
   it("gives EU citizens free movement within the EU, and withholds extra-EU customs verdicts", () => {
     for (const destination of ["SCHENGEN", "DE", "IE", "CY"]) {
       const result = resolveTripCheck("FR", destination, ["cigarettes"]);

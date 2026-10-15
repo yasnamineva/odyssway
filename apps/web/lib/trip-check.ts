@@ -274,10 +274,20 @@ export function resolveTripCheck(
   const entry = resolveEntry(nationality, destination);
   const customsDestination = entry.isSchengen ? EU_CUSTOMS_CODE : entry.destination;
   const intraEuCustoms = entry.basis === "free_movement";
+  // A Schengen state's own national rule (a row keyed by its code, e.g.
+  // France's nicotine pouch ban) applies to everyone arriving there, EU
+  // citizens included, and takes precedence over the harmonised EU row.
+  // (Ireland and Cyprus have full rows of their own as destinations.)
+  const picked = destination.toUpperCase();
+  const nationalCode = isSchengenCode(picked) ? picked : null;
   const items: TripCheckItemResult[] = itemQueries
     .map((q) => q.trim())
     .filter(Boolean)
-    .map((query) => ({ query, match: intraEuCustoms ? null : matchItem(query, customsDestination) }));
+    .map((query) => {
+      const national = nationalCode ? matchItem(query, nationalCode) : null;
+      if (national || intraEuCustoms) return { query, match: national };
+      return { query, match: matchItem(query, customsDestination) };
+    });
 
   return {
     nationality: nationality.toUpperCase(),

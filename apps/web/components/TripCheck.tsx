@@ -81,7 +81,11 @@ export default function TripCheck({
     const customsDestination = isSchengen ? EU_CUSTOMS_CODE : destination;
     const pool = new Set<string>();
     customsItems
-      .filter((it) => it.destination === customsDestination && it.status === "verified")
+      .filter(
+        (it) =>
+          (it.destination === customsDestination || it.destination === destination) &&
+          it.status === "verified",
+      )
       .forEach((it) => it.names.forEach((n) => pool.add(n)));
     return [...pool].sort();
   }, [destination]);
@@ -507,26 +511,21 @@ function TripCheckResults({
           )}
         </section>
 
-        {result.items.length > 0 && result.intraEuCustoms && (
+        {result.items.length > 0 && (
           <section
             className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
             data-testid="tc-items"
           >
             <h2 className="text-sm font-semibold text-slate-900">{t("itemsCardTitle")}</h2>
-            <p className="mt-1 text-xs text-amber-700" data-testid="tc-intra-eu-customs">
-              {t("intraEuCustoms")}
-            </p>
-          </section>
-        )}
-
-        {result.items.length > 0 && !result.intraEuCustoms && (
-          <section
-            className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
-            data-testid="tc-items"
-          >
-            <h2 className="text-sm font-semibold text-slate-900">{t("itemsCardTitle")}</h2>
+            {result.intraEuCustoms && (
+              <p className="mt-1 text-xs text-amber-700" data-testid="tc-intra-eu-customs">
+                {t("intraEuCustoms")}
+              </p>
+            )}
             <ul className="mt-2 divide-y divide-slate-100">
-              {result.items.map((item) => (
+              {/* Intra-EU: only national rules (which bind everyone) are shown;
+                  the note above covers every other item. */}
+              {result.items.filter((item) => !result.intraEuCustoms || item.match).map((item) => (
                 <li key={item.query} data-testid="tc-item-result" className="py-3 first:pt-1 last:pb-0">
                   <p className="text-sm font-medium break-words text-slate-900">{item.query}</p>
                   {item.match ? (

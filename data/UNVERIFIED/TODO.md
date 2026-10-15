@@ -3207,10 +3207,12 @@ Batch 2 (2026-10-14), procedures added from each authority's own material:
   Cyprus-specific. No lead or processing time is published.
 - **Saudi Arabia** (SFDA CDS traveller user manual): account, request, attachments,
   status, licence.
-- **Qatar** (MOPH Controlled Medicines System user manual v1.0, fli.moph.gov.qa,
-  launched August 2026): 5 working days ahead, 3-day decision, permit valid 90 days.
-  The row's own guideline PDF (moph.gov.qa download) now returns a bot challenge;
-  re-check the row's quantities against it when reachable.
+- **Qatar** (MOPH Controlled Medicines System user manual v1.0, © 2025,
+  fli.moph.gov.qa): 5 working days ahead, 3-day decision, permit valid 90 days.
+  Re-checked 2026-10-15: the guideline PDF is reachable again and confirms the row's
+  quantities (30 days or length of stay for narcotic/psychoactive, 2 months for
+  psychotropic). The row's notes said applications are "reviewed within 24 hours";
+  the manual says three working days, so the notes were corrected.
 - **Jamaica** (Embassy in Brussels page reproducing the MOHW guidance).
 - **Philippines** (DDB Regulation No. 1 s.2014, Sec. 35(4)): PDEA request 30 working
   days ahead for more than 30 days' supply; reply within 15 working days.
@@ -3262,3 +3264,63 @@ Still open:
   French decree on Légifrance. Note that Schengen customs resolve to the `EU` rows, so
   a France-only rule needs a design decision on how to show a member-state exception.
 - **UAE, Thailand, Turkey**: nothing official found.
+
+## Open items follow-up (2026-10-15)
+
+Resolved, agent:claude-opus-5-5, 2026-10-15:
+- **Australia** (TGA and ODC still time out, so used the law itself on
+  legislation.gov.au plus ABF's "List of items" data embedded in its page):
+  `growth-hormone-au` (Customs (Prohibited Imports) Regulations reg 5G and Sch 7A;
+  ABF "Hormones"), `peptides-au` (Poisons Standard October 2026: BPC-157, TB-500,
+  ipamorelin, CJC-1295, GHRP-6, GHRP-2, hexarelin, AOD-9604, ibutamoren, Melanotan II
+  are Schedule 4, most also in Appendix D item 5; Therapeutic Goods Regulations Sch 5
+  item 1(d): Schedule 4 needs a doctor's written authority, overseas doctors accepted
+  for passengers), `melatonin-au` (Schedule 4, with two Schedule 3 exceptions).
+- **France nicotine pouches**: `nicotine-pouches-fr`, from the Conseil d'État order
+  n° 509561 (22 Dec 2025), which quotes the decree's new art. R. 5132-45 CSP, and
+  Service-Public.gouv.fr (updated 12 March 2026). Légifrance itself returns 403 here.
+  **Design decision made for member-state rules**: a row keyed by a Schengen state's
+  own code (here `FR`) is a national rule. Trip Check checks it first for that
+  state, then falls back to the `EU` row. National rules also show for EU citizens
+  (a ban on possession binds everyone), and not for "Schengen Area, unspecified".
+  They have no /bring page (Schengen states aren't in destinations.json); their
+  sources are listed under EU customs on /sources.
+- **Qatar** quantities re-checked (see above).
+
+Still open (searched again 2026-10-15, nothing primary found):
+- **UK**: personal import of non-controlled prescription-only medicines. The Human
+  Medicines Regulations 2012 reg 17 requires a manufacturer's licence to import, but
+  whether a traveller's personal supply falls outside it is legal interpretation, not
+  a stated rule. Need an MHRA page that says it. UK research peptides and kratom
+  (Psychoactive Substances Act 2016 s.8 turns on intent; no gov.uk page names kratom)
+  are open for the same reason.
+- **Japan**: Vicks inhaler (levmetamfetamine) and nicotine pouches. Only secondary
+  sources, which disagree.
+- **Korea**: whether MFDS permits amphetamine products. Only secondary sources.
+- **Singapore, Japan melatonin**: no official classification for travellers.
+- **UAE, Thailand, Turkey nicotine pouches**: nothing official.
+- **US growth hormone**: FDA's personal importation page is generic; no traveller
+  source names HGH.
+
+## Legal at home, controlled abroad: kratom and kava (2026-10-15)
+
+Published `kratom-au` (prohibited: Customs (Prohibited Imports) Regulations Sch 4
+item 204(g); Poisons Standard Schedule 9), `kratom-nz` (depends: Medsafe Prescriber
+Update Dec 2021, prescription medicine, released at the border only on a medical
+practitioner's authority), `kratom-sg` (prohibited: CNB, Class A), and `kava-au`
+(allowed_with_limits: ABF, 4 kg, 18+, accompanied baggage). Kratom is in the
+medication category, which gives it /bring/medication pages and a /medications/kratom
+hub.
+
+Also removed generic multi-word synonyms ("sleep supplement", "melatonin gummies")
+from the melatonin rows: Trip Check's substring pass made a plain "supplement"
+search match melatonin.
+
+Open:
+- **Kratom**: UK (see above), Thailand (legal domestically since 2021; traveller rule
+  not found), Malaysia, Japan, the EU states that list it nationally.
+- **Poppers (alkyl nitrites), Australia**: Schedule 4 in the Poisons Standard
+  (amyl nitrite Schedule 3 in some therapeutic packs), but whether the passenger
+  exemption for therapeutic goods applies to poppers needs TGA's own page, which
+  times out.
+- **Phenibut, Australia**: Schedule 9; not yet a row.

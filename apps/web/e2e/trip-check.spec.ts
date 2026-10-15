@@ -154,3 +154,21 @@ test("an item whose verdict needs a permit links to the step-by-step procedure",
   await link.click();
   await expect(page.getByRole("heading", { name: "Get an import certificate from Japan's Narcotics Control Department" }).first()).toBeVisible();
 });
+
+test("a member state's national rule shows for visitors and for EU citizens", async ({ page }) => {
+  for (const nationality of ["United States", "Germany"]) {
+    await page.goto("/trip-check");
+    await pickCombobox(page, "tc-nationality", nationality, nationality);
+    await pickCombobox(page, "tc-destination", "France", "France");
+    const itemInput = page.getByTestId("tc-item-input");
+    await itemInput.fill("zyn");
+    await itemInput.press("Enter");
+    await page.getByTestId("tc-submit").click();
+
+    const result = page.getByTestId("tc-item-result");
+    await expect(result).toHaveCount(1);
+    await expect(result).toContainText("Since 1 April 2026, France bans nicotine pouches");
+  }
+  // The German citizen also sees the intra-EU note for everything else.
+  await expect(page.getByTestId("tc-intra-eu-customs")).toBeVisible();
+});
