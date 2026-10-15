@@ -175,15 +175,23 @@ test("header navigation reaches the guide pages", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");
 
-  await page.getByRole("button", { name: "Open menu" }).click();
+  // A click that lands before the page hydrates does nothing, so retry the
+  // toggle until the menu actually opens.
+  const openMenu = async () =>
+    expect(async () => {
+      await page.getByRole("button", { name: "Open menu" }).click();
+      await expect(page.getByRole("link", { name: "90/180 rule" })).toBeVisible({ timeout: 1000 });
+    }).toPass();
+
+  await openMenu();
   await page.locator("header").getByRole("link", { name: "Trip Check", exact: true }).click();
   await expect(page).toHaveURL(/\/trip-check$/);
 
-  await page.getByRole("button", { name: "Open menu" }).click();
+  await openMenu();
   await page.getByRole("link", { name: "90/180 rule" }).click();
   await expect(page).toHaveURL(/\/rules\/90-180-rule$/);
 
-  await page.getByRole("button", { name: "Open menu" }).click();
+  await openMenu();
   await page.getByRole("link", { name: "ETIAS" }).click();
   await expect(page).toHaveURL(/\/etias\/status$/);
 });

@@ -153,6 +153,32 @@ describe("resolveTripCheck", () => {
     expect(resolveTripCheck("US", "SCHENGEN", ["zyn"]).items[0]!.match?.slug).not.toBe("nicotine-pouches-fr");
   });
 
+  it("adds a stopover country's stated transit rule for each item", () => {
+    const viaSg = resolveTripCheck("US", "AU", ["adderall"], "SG");
+    expect(viaSg.transit).toEqual({ code: "SG", name: "Singapore" });
+    expect(viaSg.items[0]!.match?.slug).toBe("controlled-medication-au");
+    expect(viaSg.items[0]!.transitMatch?.transit?.rule).toBe("exempt_airside");
+
+    const viaHk = resolveTripCheck("US", "AU", ["adderall"], "HK");
+    expect(viaHk.items[0]!.transitMatch?.transit?.rule).toBe("applies");
+
+    // A verified row with no stated transit rule stays a row without `transit`; no row stays null.
+    const viaJp = resolveTripCheck("US", "AU", ["adderall", "kava"], "JP");
+    expect(viaJp.items[0]!.transitMatch?.slug).toBe("amphetamine-medication-jp");
+    expect(viaJp.items[0]!.transitMatch?.transit).toBeUndefined();
+    expect(viaJp.items[1]!.transitMatch).toBeNull();
+
+    // No stopover, an unknown one, or the destination itself: no transit at all.
+    expect(resolveTripCheck("US", "AU", ["adderall"]).items[0]!.transitMatch).toBeUndefined();
+    expect(resolveTripCheck("US", "AU", ["adderall"], "XX").transit).toBeUndefined();
+    expect(resolveTripCheck("US", "AU", ["adderall"], "AU").transit).toBeUndefined();
+
+    // EU citizens get the stopover answer too.
+    expect(resolveTripCheck("DE", "FR", ["adderall"], "AE").items[0]!.transitMatch?.transit?.rule).toBe(
+      "exempt_airside",
+    );
+  });
+
   it("gives EU citizens free movement within the EU, and withholds extra-EU customs verdicts", () => {
     for (const destination of ["SCHENGEN", "DE", "IE", "CY"]) {
       const result = resolveTripCheck("FR", destination, ["cigarettes"]);

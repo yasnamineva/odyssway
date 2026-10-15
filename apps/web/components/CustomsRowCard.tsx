@@ -23,6 +23,7 @@ export default async function CustomsRowCard({
   const t = await getTranslations("bringDestinationPage");
   const tv = await getTranslations("destinationPage.verdict");
   const ts = await getTranslations("tripCheck");
+  const tt = await getTranslations("transit");
   return (
     <li className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
       <div className="flex flex-wrap items-center gap-2">
@@ -40,6 +41,25 @@ export default async function CustomsRowCard({
       )}
       {row.notes && <p className="mt-2 text-sm leading-relaxed text-slate-600">{row.notes}</p>}
       {row.procedure && <ProcedureSection procedure={row.procedure} />}
+      {row.transit && (
+        <div className="mt-4 rounded-xl bg-slate-50 p-3" data-testid="row-transit">
+          <p className="text-sm font-semibold text-slate-800">
+            {tt("heading")}{" "}
+            <span className="ml-1 rounded-full bg-white px-2 py-0.5 text-xs font-semibold text-slate-700 ring-1 ring-inset ring-slate-200">
+              {tt(row.transit.rule)}
+            </span>
+          </p>
+          <p className="mt-1 text-sm leading-relaxed text-slate-700">{row.transit.description}</p>
+          <p className="mt-1 text-xs text-slate-500">
+            {tt("sourceLabel")}{" "}
+            <a href={row.transit.source.url} rel="noopener noreferrer" className="underline">
+              {row.transit.source.name}
+            </a>
+            {" · "}
+            {ts("checkedOn", { date: row.transit.verified_at })}
+          </p>
+        </div>
+      )}
       <p className="mt-3 text-xs leading-relaxed text-slate-500">
         <span className="font-semibold">{t("alsoCovers")}</span> {row.names.slice(0, 14).join(", ")}
       </p>

@@ -4630,7 +4630,6 @@
         "Submit it. EDE says the permit is issued in 1 working day, free of charge."
       ],
       "atTheBorder": "The permit is optional for visitors. Without one, you can carry up to a 3-month supply with your prescription and medical report. For narcotic or psychotropic medicines, EDE says these documents must be authenticated by the treating health authority.",
-      "transit": "EDE says transit passengers who stay inside the airport don't need approval.",
       "sources": [
         {
           "name": "Emirates Drug Establishment (EDE) — Issue of Permit to Import Medicines for Personal Use / Controlled and Semi-Controlled Medicines List",
@@ -4639,6 +4638,15 @@
       ],
       "verified_at": "2026-10-14",
       "verified_by": "agent:claude-opus-5-5"
+    },
+    "transit": {
+      "rule": "exempt_airside",
+      "description": "You don't need an approval if you stay inside the airport while you change planes, the Emirates Drug Establishment says.",
+      "source": {
+        "name": "Emirates Drug Establishment (EDE) — Issue of Permit to Import Medicines for Personal Use / Controlled and Semi-Controlled Medicines List",
+        "url": "https://www.ede.gov.ae/en/w/issue-of-permit-to-import-medicines-for-personal-use"
+      },
+      "verified_at": "2026-10-14"
     }
   },
   {
@@ -4791,7 +4799,16 @@
     },
     "verified_at": "2026-09-13",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "transit": {
+      "rule": "exempt_airside",
+      "description": "If you stay in the airport transit zone and don't clear immigration, you don't need HSA approval for personal medication. Prohibited medicines are still not allowed, even in transit.",
+      "source": {
+        "name": "Health Sciences Authority (HSA) — Travelling with medications to Singapore",
+        "url": "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-medications/"
+      },
+      "verified_at": "2026-10-15"
+    }
   },
   {
     "slug": "controlled-medication-sg",
@@ -4845,7 +4862,6 @@
         "Keep the approval email. It covers only the arrival date you gave, so if your plans change, apply again."
       ],
       "atTheBorder": "Approved medicines don't need to be declared at customs. Keep the approval email and your documents ready in case immigration (ICA) officers ask to see them.",
-      "transit": "You don't need HSA approval if you stay in the airport transit zone and don't clear immigration. Prohibited medicines, such as cannabis-based products, still aren't allowed in transit.",
       "sources": [
         {
           "name": "Health Sciences Authority — Travelling with medications to Singapore (last updated 15 June 2026)",
@@ -4854,6 +4870,15 @@
       ],
       "verified_at": "2026-10-14",
       "verified_by": "agent:claude-opus-5-5"
+    },
+    "transit": {
+      "rule": "exempt_airside",
+      "description": "You don't need HSA approval if you stay in the airport transit zone and don't clear immigration. Prohibited medicines, such as cannabis-based products, still aren't allowed in transit.",
+      "source": {
+        "name": "Health Sciences Authority — Travelling with medications to Singapore (last updated 15 June 2026)",
+        "url": "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-medications"
+      },
+      "verified_at": "2026-10-14"
     }
   },
   {
@@ -5754,7 +5779,6 @@
         "Send a written request to PDEA, with the doctor's letter and that certificate, 30 working days before you arrive.",
         "Travel with PDEA's authorization, your home country's certificate, the doctor's letter and the labelled medicine."
       ],
-      "transit": "The regulation covers travellers passing through the Philippines as well as those entering it.",
       "sources": [
         {
           "name": "Philippine Dangerous Drugs Board — Board Regulation No. 1, Series of 2014 (Comprehensive Amendments to Board Regulation No. 3, Series 2003), Section 35: Carrying of Dangerous Drugs and/or Drug Preparation containing Controlled Chemical by International Travelers",
@@ -5763,6 +5787,15 @@
       ],
       "verified_at": "2026-10-14",
       "verified_by": "agent:claude-opus-5-5"
+    },
+    "transit": {
+      "rule": "applies",
+      "description": "The Philippine rules cover travellers passing through the Philippines as well as those entering it.",
+      "source": {
+        "name": "Philippine Dangerous Drugs Board — Board Regulation No. 1, Series of 2014 (Comprehensive Amendments to Board Regulation No. 3, Series 2003), Section 35: Carrying of Dangerous Drugs and/or Drug Preparation containing Controlled Chemical by International Travelers",
+        "url": "https://ddb.gov.ph/images/Board_Regulation/2014/BD.REG1.14.pdf"
+      },
+      "verified_at": "2026-10-14"
     }
   },
   {
@@ -7039,7 +7072,6 @@
         "Carry the medicine in your hand luggage when you enter Korea."
       ],
       "atTheBorder": "MFDS sends the permit to the agencies concerned, so carrying your copy isn't required, but it's useful to have. For questions about customs declarations, MFDS refers you to Korea Customs.",
-      "transit": "No permit is needed if you only change planes in Korea and don't go through immigration.",
       "sources": [
         {
           "name": "Ministry of Food and Drug Safety — Guideline on permit to bring in narcotics for self-treatment, with FAQ (attachment to the MFDS notice)",
@@ -7048,6 +7080,15 @@
       ],
       "verified_at": "2026-10-14",
       "verified_by": "agent:claude-opus-5-5"
+    },
+    "transit": {
+      "rule": "exempt_airside",
+      "description": "No permit is needed if you only change planes in Korea and don't go through immigration.",
+      "source": {
+        "name": "Ministry of Food and Drug Safety — Guideline on permit to bring in narcotics for self-treatment, with FAQ (attachment to the MFDS notice)",
+        "url": "https://www.mfds.go.kr/eng/brd/m_60/down.do?brd_id=eng0013&seq=75669&data_tp=A&file_seq=1"
+      },
+      "verified_at": "2026-10-14"
     }
   },
   {
@@ -7325,7 +7366,6 @@
         "Allow at least 10 working days for processing once your documents are complete."
       ],
       "atTheBorder": "Carry the doctor's certification letter and the Drug Office's written approval while you enter and stay in Hong Kong.",
-      "transit": "Approval is needed even if you're only transiting through Hong Kong, the Drug Office says.",
       "sources": [
         {
           "name": "Drug Office, Department of Health — Frequently Asked Questions (medicines carried by visitors)",
@@ -7334,6 +7374,15 @@
       ],
       "verified_at": "2026-10-14",
       "verified_by": "agent:claude-opus-5-5"
+    },
+    "transit": {
+      "rule": "applies",
+      "description": "You need the Drug Office's approval even if you're only transiting through Hong Kong.",
+      "source": {
+        "name": "Drug Office, Department of Health — Frequently Asked Questions (medicines carried by visitors)",
+        "url": "https://www.drugoffice.gov.hk/eps/do/en/consumer/news_informations/faq.html"
+      },
+      "verified_at": "2026-10-14"
     }
   },
   {
@@ -9167,7 +9216,16 @@
     },
     "verified_at": "2026-09-22",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "transit": {
+      "rule": "applies",
+      "description": "On a short layover in Taiwan, declare e-cigarettes and e-liquids at the red \"Goods to Declare\" counter when you arrive. Customs keeps them at the bonded luggage counter, and you collect them when you leave.",
+      "source": {
+        "name": "Customs Administration, Ministry of Finance (Taiwan) — Are Passengers Allowed to Bring Electronic Cigarettes into Taiwan?",
+        "url": "https://web.customs.gov.tw/en/singlehtml/3457?cntId=cus16_175758_3457"
+      },
+      "verified_at": "2026-10-15"
+    }
   },
   {
     "slug": "weapons-tw",
@@ -9350,7 +9408,16 @@
     },
     "verified_at": "2026-09-22",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "transit": {
+      "rule": "applies",
+      "description": "Albania's customs authority prohibits the transit of narcotics and psychotropic substances, as well as their import and export.",
+      "source": {
+        "name": "General Directorate of Customs (Republic of Albania) — Narcotics and Psychotropic Substances and human trafficking",
+        "url": "https://www.dogana.gov.al/english/c/177/239/narcotics-and-psychotropic-substances-and-human-trafficking"
+      },
+      "verified_at": "2026-10-15"
+    }
   },
   {
     "slug": "cannabis-al",
@@ -9376,7 +9443,16 @@
     },
     "verified_at": "2026-09-22",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "transit": {
+      "rule": "applies",
+      "description": "Albania's customs authority prohibits the transit of narcotics and psychotropic substances, including plants, as well as their import and export.",
+      "source": {
+        "name": "General Directorate of Customs (Republic of Albania) — Narcotics and Psychotropic Substances and human trafficking",
+        "url": "https://www.dogana.gov.al/english/c/177/239/narcotics-and-psychotropic-substances-and-human-trafficking"
+      },
+      "verified_at": "2026-10-15"
+    }
   },
   {
     "slug": "cbd-al",
@@ -9960,7 +10036,16 @@
     },
     "verified_at": "2026-10-09",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "transit": {
+      "rule": "applies",
+      "description": "UK government travel advice says to expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including cannabis, \"including when transiting through the airport\". Sri Lanka's airports scan transit passengers' baggage too.",
+      "source": {
+        "name": "GOV.UK (Foreign, Commonwealth & Development Office) — Sri Lanka travel advice: safety and security",
+        "url": "https://www.gov.uk/foreign-travel-advice/sri-lanka/safety-and-security"
+      },
+      "verified_at": "2026-10-15"
+    }
   },
   {
     "slug": "fresh-produce-lk",
@@ -10808,7 +10893,16 @@
     },
     "verified_at": "2026-10-09",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "transit": {
+      "rule": "applies",
+      "description": "Colombia's criminal code makes bringing cannabis into the country without a licence a crime \"even in transit\" (así sea en tránsito).",
+      "source": {
+        "name": "Ley 599 de 2000 (Código Penal), Art. 376 – Secretaría del Senado",
+        "url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0599_2000_pr014.html"
+      },
+      "verified_at": "2026-10-15"
+    }
   },
   {
     "slug": "meat-dairy-co",
@@ -11009,7 +11103,16 @@
     },
     "verified_at": "2026-10-09",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "transit": {
+      "rule": "applies",
+      "description": "If you're in transit through Argentina with medicine containing narcotic or psychotropic substances, carry a legal document with your name and address, the medicine, its active ingredient, strength, form, quantity and dosage, and your doctor's name, address, registration and signature. Show it to the health or police authorities at the airport or border.",
+      "source": {
+        "name": "Argentina.gob.ar Derecho Fácil — Mercosur: Traslado de medicamentos (Resolución GMC 66/2000)",
+        "url": "https://www.argentina.gob.ar/justicia/derechofacil/leysimple/mercosur-traslado-de-medicamentos"
+      },
+      "verified_at": "2026-10-15"
+    }
   },
   {
     "slug": "cannabis-ar",
@@ -11782,7 +11885,16 @@
     },
     "verified_at": "2026-10-09",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "transit": {
+      "rule": "applies",
+      "description": "UK government travel advice says to expect a long prison sentence, deportation and heavy fines for possessing, using or smuggling illegal drugs, including cannabis and even residual amounts, \"including when transiting through the airport\". Qatar's airports scan transit passengers' baggage too.",
+      "source": {
+        "name": "GOV.UK (Foreign, Commonwealth & Development Office) — Qatar travel advice: safety and security",
+        "url": "https://www.gov.uk/foreign-travel-advice/qatar/safety-and-security"
+      },
+      "verified_at": "2026-10-15"
+    }
   },
   {
     "slug": "e-cigarettes-qa",
@@ -13649,7 +13761,16 @@
     },
     "verified_at": "2026-10-10",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "transit": {
+      "rule": "applies",
+      "description": "UK government travel advice says possessing any illegal drug, including cannabis, is a serious offence in Cambodia, that travellers have been caught carrying cannabis while transiting, and that airports scan transit passengers' baggage.",
+      "source": {
+        "name": "GOV.UK (Foreign, Commonwealth & Development Office) — Cambodia travel advice: safety and security",
+        "url": "https://www.gov.uk/foreign-travel-advice/cambodia/safety-and-security"
+      },
+      "verified_at": "2026-10-15"
+    }
   },
   {
     "slug": "drones-kh",

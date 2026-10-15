@@ -31,6 +31,8 @@ export type EntryBasis =
 export interface TripCheckItemResult {
   query: string;
   match: CustomsItemRecord | null;
+  /** Only when a stopover was given: the stopover country's row for this item, if verified. */
+  transitMatch?: CustomsItemRecord | null;
 }
 
 export interface TripCheckResult {
@@ -52,6 +54,8 @@ export interface TripCheckResult {
   /** Set when `covered` is false and we at least know where to point the user. */
   officialAuthorityUrl?: string;
   items: TripCheckItemResult[];
+  /** The stopover country, when one was given and it's a verified destination. */
+  transit?: { code: string; name: string };
   /** True for EU-citizen travel within the EU/Schengen: the customs data covers
    * arrivals from outside the EU, so item verdicts are withheld rather than
    * shown for the wrong situation. */
@@ -270,6 +274,7 @@ export function resolveTripCheck(
   nationality: string,
   destination: string,
   itemQueries: string[],
+  transitCode?: string,
 ): TripCheckResult {
   const entry = resolveEntry(nationality, destination);
   const customsDestination = entry.isSchengen ? EU_CUSTOMS_CODE : entry.destination;
@@ -280,19 +285,25 @@ export function resolveTripCheck(
   // (Ireland and Cyprus have full rows of their own as destinations.)
   const picked = destination.toUpperCase();
   const nationalCode = isSchengenCode(picked) ? picked : null;
+  // A stopover only counts if it's a verified destination of its own, and not
+  // the destination itself (its rows are keyed by its code, never "EU").
+  const stop = transitCode ? destinationByCode(transitCode) : undefined;
+  const transit =
+    stop && stop.status === "verified" && stop.code !== picked ? { code: stop.code, name: stop.name } : undefined;
   const items: TripCheckItemResult[] = itemQueries
     .map((q) => q.trim())
     .filter(Boolean)
     .map((query) => {
       const national = nationalCode ? matchItem(query, nationalCode) : null;
-      if (national || intraEuCustoms) return { query, match: national };
-      return { query, match: matchItem(query, customsDestination) };
+      const match = national || intraEuCustoms ? national : matchItem(query, customsDestination);
+      return transit ? { query, match, transitMatch: matchItem(query, transit.code) } : { query, match };
     });
 
   return {
     nationality: nationality.toUpperCase(),
     ...entry,
     items,
+    ...(transit ? { transit } : {}),
     ...(intraEuCustoms ? { intraEuCustoms } : {}),
   };
 }

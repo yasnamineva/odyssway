@@ -415,3 +415,14 @@ gate was passed or missed, and why.
   - **Blog:** `/blog/kratom-phenibut-poppers-customs`.
   - **Not published:** sale-only bans on pouches in Belgium and the Netherlands
     (not traveller rules); poppers in Australia (TGA unreachable).
+- **2026-10-15. Step 1.5 started: transit.**
+  - Customs rows can now carry a **stated transit rule**: "applies in transit too"
+    or "not if you stay airside", with its own source and date.
+  - **Trip Check** has an optional "Changing planes in" field. Each item shows the
+    stopover's rule, or says honestly that the authority doesn't state one.
+  - **Covered:** Singapore, UAE, Korea (exempt airside); Hong Kong, Philippines,
+    Argentina, Albania, Colombia, Taiwan (apply in transit); cannabis in Qatar, Sri
+    Lanka and Cambodia (applies in transit, per UK government travel advice).
+  - **Blog:** `/blog/medication-transit-stopover`.
+  - **Next:** Doha, Istanbul and Tokyo transit rules; a "Can I bring it?" widget
+    and the printable border card (Horizon 1).

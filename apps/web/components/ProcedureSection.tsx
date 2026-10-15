@@ -60,11 +60,6 @@ export default async function ProcedureSection({ procedure }: { procedure: Custo
           <span className="font-semibold text-slate-800">{t("atTheBorder")}</span> {procedure.atTheBorder}
         </p>
       )}
-      {procedure.transit && (
-        <p className="mt-2 text-sm leading-relaxed text-slate-700">
-          <span className="font-semibold text-slate-800">{t("transit")}</span> {procedure.transit}
-        </p>
-      )}
       {procedure.applyUrl && (
         <a
           href={procedure.applyUrl}

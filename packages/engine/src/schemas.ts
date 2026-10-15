@@ -222,10 +222,22 @@ export const customsProcedureSchema = z.object({
   documents: z.array(z.string().min(1)).min(1).optional(),
   steps: z.array(z.string().min(1)).min(2),
   atTheBorder: z.string().min(1).optional(),
-  transit: z.string().min(1).optional(),
   sources: z.array(legalSourceSchema).min(1),
   verified_at: isoDateSchema,
   verified_by: z.string().min(1),
+});
+
+/**
+ * What the row's rule means for someone only changing planes in that country —
+ * only ever set when the authority states it (GROWTH_AND_ROADMAP.md §1.5).
+ * `applies`: the rule binds transit passengers too; `exempt_airside`: it doesn't
+ * if you stay airside and don't clear immigration.
+ */
+export const customsTransitSchema = z.object({
+  rule: z.enum(["applies", "exempt_airside"]),
+  description: z.string().min(1),
+  source: legalSourceSchema,
+  verified_at: isoDateSchema,
 });
 
 export const customsItemSchema = z
@@ -246,6 +258,7 @@ export const customsItemSchema = z
       .optional(),
     notes: z.string().optional(),
     procedure: customsProcedureSchema.optional(),
+    transit: customsTransitSchema.optional(),
     ...verificationFields,
   })
   .superRefine(requireVerifierWhenVerified);

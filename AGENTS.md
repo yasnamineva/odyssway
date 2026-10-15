@@ -341,9 +341,17 @@ customs rules (the same allowances apply across every Schengen member).
   verdict: "prohibited" | "allowed_with_limits" | "allowed" | "declaration_required" | "depends",
   limits?: { description: string, quantity?: string },
   notes?: string,
+  procedure?: CustomsProcedure,    // how to get a permit (2026-10-14)
+  transit?: {                      // only where the authority states it (2026-10-15)
+    rule: "applies" | "exempt_airside", description: string,
+    source: { name, url }, verified_at: string
+  },
   legal_source, verified_at, verified_by, status
 }
 ```
+A row keyed by a Schengen state's own code (e.g. `FR`) is a **national rule**: Trip
+Check checks it before the `EU` row, for EU citizens too (2026-10-15).
+
 **Possible future refinement, not a current requirement**: a more granular verdict
 model (e.g. splitting `depends` into `permit_required` vs.
 `unsure_confirm_with_authority`) could make results more actionable at a glance. Do

@@ -3350,3 +3350,24 @@ Not published, and why:
   (Kratom Plant Act B.E. 2565, traveller quantities left to ministerial
   regulations, not found), **UK**, **Ireland, Denmark, Finland**: no primary source
   read. The Swedish prosecutors' kratom PDF now redirects to their home page.
+
+## Transit (plan step 1.5, 2026-10-15)
+
+New optional row field `transit` {rule: applies | exempt_airside, description,
+source, verified_at}, set only where the authority states the rule. Replaces the
+free-text `procedure.transit`. Trip Check has an optional "Changing planes in"
+picker; each item shows the stopover's stated rule, "rule exists but transit not
+stated", or "not yet verified".
+
+Set: SG (controlled-medication-sg, medication-sg), AE, KR (exempt airside);
+HK, PH, AR, AL (controlled medication and cannabis), CO (cannabis), TW
+(e-cigarettes: declare and deposit) (applies).
+
+Also set (applies) for cannabis in Qatar, Sri Lanka and Cambodia, from the UK
+government's travel advice "safety and security" pages (the old "local laws and
+customs" URLs now redirect to the summary page, so re-check row notes against the
+new URL).
+
+Open: medication transit for Qatar (Doha), Japan, Turkey (Istanbul) — no stated
+transit rule on the pages read. Schengen hubs (Frankfurt, Amsterdam, Paris) aren't selectable as
+stopovers: Schengen customs rows describe arriving, not airside transit.

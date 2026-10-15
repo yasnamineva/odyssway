@@ -84,6 +84,7 @@ export const photos = {
   "blog-retatrutide": { width: 1280, height: 960, author: "Bru-nO", page: "https://pixabay.com/photos/syringe-1573024/" },
   "blog-legal-at-home": { width: 1280, height: 853, author: "HeungSoon", page: "https://pixabay.com/photos/tablets-medicine-supplement-vitamin-5620566/" },
   "blog-kratom": { width: 1280, height: 853, author: "Ninetechno", page: "https://pixabay.com/photos/moringa-moringa-oleifera-6582660/" },
+  "blog-transit": { width: 1280, height: 709, author: "Tumisu", page: "https://pixabay.com/photos/airport-flight-terminal-6553696/" },
 } as const satisfies Record<string, PhotoMeta>;
 
 /** The photo for a destination, if we have one (not yet for Nigeria). */

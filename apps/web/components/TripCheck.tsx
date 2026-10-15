@@ -39,6 +39,47 @@ function procedureHref(row: (typeof customsItems)[number]): string | undefined {
     : undefined;
 }
 
+/** What a stopover country's rule says about this item, for passengers only changing planes. */
+function TransitBlock({ country, row }: { country: string; row: (typeof customsItems)[number] | null }) {
+  const t = useTranslations("tripCheck");
+  const tt = useTranslations("transit");
+  const href = row ? procedureHref(row) : undefined;
+  return (
+    <div className="mt-2 rounded-lg bg-slate-50 p-2.5" data-testid="tc-item-transit">
+      <p className="text-xs font-semibold text-slate-800">
+        {t("transitHeading", { country })}
+        {row?.transit && (
+          <span className="ml-1.5 rounded-full bg-white px-2 py-0.5 text-[11px] font-semibold text-slate-700 ring-1 ring-inset ring-slate-200">
+            {tt(row.transit.rule)}
+          </span>
+        )}
+      </p>
+      {row?.transit ? (
+        <>
+          <p className="mt-1 text-xs leading-relaxed text-slate-700">{row.transit.description}</p>
+          <SourceNote
+            className="mt-1.5"
+            name={row.transit.source.name}
+            url={row.transit.source.url}
+            date={row.transit.verified_at}
+            sourceLabel={t("sourceLabel")}
+            checkedLabel={t("checkedOn", { date: row.transit.verified_at })}
+          />
+        </>
+      ) : (
+        <p className="mt-1 text-xs leading-relaxed text-amber-700">
+          {row ? t("transitNotStated", { country }) : t("transitNotCovered", { country })}
+        </p>
+      )}
+      {href && (
+        <a href={href} className="mt-1 inline-block text-xs font-semibold text-brand-700 underline underline-offset-2">
+          {t("transitRuleLink", { country })}
+        </a>
+      )}
+    </div>
+  );
+}
+
 const inputClass =
   "w-full min-w-0 rounded-lg border border-slate-300 bg-white px-3 py-2 text-base focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200";
 const labelClass = "block text-xs font-medium text-slate-600";
@@ -67,6 +108,7 @@ export default function TripCheck({
   const [itemInput, setItemInput] = useState("");
   const [itemSuggestOpen, setItemSuggestOpen] = useState(false);
   const [items, setItems] = useState<string[]>([]);
+  const [transit, setTransit] = useState("");
   const [submitted, setSubmitted] = useState(Boolean(initialNationality && initialDestination));
 
   // Every verified synonym for the chosen destination's customs items — the
@@ -98,8 +140,8 @@ export default function TripCheck({
 
   const result: TripCheckResult | null = useMemo(() => {
     if (!submitted || !nationality || !destination) return null;
-    return resolveTripCheck(nationality, destination, items);
-  }, [submitted, nationality, destination, items]);
+    return resolveTripCheck(nationality, destination, items, transit || undefined);
+  }, [submitted, nationality, destination, items, transit]);
 
   // Best-effort, fire-and-forget: report items nobody's verified yet so real
   // search demand — not guesswork — drives which niche items get researched
@@ -240,6 +282,34 @@ export default function TripCheck({
                 },
               ]}
             />
+          </div>
+
+          <div>
+            <label className={labelClass} htmlFor="tc-transit">
+              {t("transitLabel")}
+            </label>
+            <SearchableSelect
+              id="tc-transit"
+              data-testid="tc-transit"
+              value={transit}
+              onChange={(v) => {
+                setTransit(v);
+                setSubmitted(false);
+              }}
+              placeholder={t("transitPlaceholder")}
+              noResultsLabel={t("noMatches")}
+              groups={[
+                {
+                  options: [
+                    { value: "", label: t("transitPlaceholder") },
+                    ...destinations
+                      .filter((d) => d.status === "verified" && d.code !== destination)
+                      .map((d) => ({ value: d.code, label: d.name })),
+                  ],
+                },
+              ]}
+            />
+            <p className="mt-1 text-[11px] leading-snug text-slate-500">{t("transitHint")}</p>
           </div>
 
           <div>
@@ -523,9 +593,9 @@ function TripCheckResults({
               </p>
             )}
             <ul className="mt-2 divide-y divide-slate-100">
-              {/* Intra-EU: only national rules (which bind everyone) are shown;
-                  the note above covers every other item. */}
-              {result.items.filter((item) => !result.intraEuCustoms || item.match).map((item) => (
+              {/* Intra-EU: only national rules (which bind everyone) and any
+                  stopover's rules are shown; the note above covers the rest. */}
+              {result.items.filter((item) => !result.intraEuCustoms || item.match || result.transit).map((item) => (
                 <li key={item.query} data-testid="tc-item-result" className="py-3 first:pt-1 last:pb-0">
                   <p className="text-sm font-medium break-words text-slate-900">{item.query}</p>
                   {item.match ? (
@@ -561,12 +631,15 @@ function TripCheckResults({
                         }
                       />
                     </>
-                  ) : (
+                  ) : result.intraEuCustoms ? null : (
                     <p className="text-xs text-amber-700" data-testid="tc-item-not-found">
                       {t("itemNotFound", {
                         destination: result.destinationName,
                       })}
                     </p>
+                  )}
+                  {result.transit && item.transitMatch !== undefined && (
+                    <TransitBlock country={result.transit.name} row={item.transitMatch} />
                   )}
                 </li>
               ))}

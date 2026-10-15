@@ -172,3 +172,22 @@ test("a member state's national rule shows for visitors and for EU citizens", as
   // The German citizen also sees the intra-EU note for everything else.
   await expect(page.getByTestId("tc-intra-eu-customs")).toBeVisible();
 });
+
+test("a stopover shows that country's stated transit rule for each item", async ({ page }) => {
+  await page.goto("/trip-check");
+  await pickCombobox(page, "tc-nationality", "United States", "United States");
+  await pickCombobox(page, "tc-destination", "Australia", "Australia");
+  await pickCombobox(page, "tc-transit", "Hong Kong", "Hong Kong");
+  const itemInput = page.getByTestId("tc-item-input");
+  for (const q of ["adderall", "kava"]) {
+    await itemInput.fill(q);
+    await itemInput.press("Enter");
+  }
+  await page.getByTestId("tc-submit").click();
+
+  const transit = page.getByTestId("tc-item-transit");
+  await expect(transit).toHaveCount(2);
+  await expect(transit.first()).toContainText("Changing planes in Hong Kong");
+  await expect(transit.first()).toContainText("Applies in transit too");
+  await expect(transit.nth(1)).toContainText("Not yet verified for Hong Kong");
+});

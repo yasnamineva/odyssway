@@ -175,10 +175,17 @@ export interface CustomsProcedure {
   documents?: string[];
   steps: string[];
   atTheBorder?: string;
-  transit?: string;
   sources: { name: string; url: string }[];
   verified_at: string;
   verified_by: string;
+}
+
+/** What a row's rule means for passengers only changing planes there (schemas.ts). */
+export interface CustomsTransit {
+  rule: "applies" | "exempt_airside";
+  description: string;
+  source: { name: string; url: string };
+  verified_at: string;
 }
 
 /** Matches data/customs-items.json records (see schemas.ts / AGENTS.md §5.11). */
@@ -191,6 +198,7 @@ export interface CustomsItemRecord {
   limits?: { description: string; quantity?: string };
   notes?: string;
   procedure?: CustomsProcedure;
+  transit?: CustomsTransit;
   legal_source: { name: string; url: string };
   verified_at: string | null;
   verified_by: string | null;

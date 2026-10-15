@@ -319,9 +319,14 @@
     "documents": "What you'll need",
     "steps": "Steps",
     "atTheBorder": "At the border:",
-    "transit": "In transit:",
     "applyLink": "Go to the official application page →",
     "checkedOn": "Procedure checked {date}"
+  },
+  "transit": {
+    "heading": "If you're only changing planes here",
+    "applies": "Applies in transit too",
+    "exempt_airside": "Not if you stay airside",
+    "sourceLabel": "Transit rule:"
   },
   "bringDestinationPage": {
     "metaTitle": "Can you bring {item} to {destination}?",
@@ -738,6 +743,13 @@
     "assumption": "A short visit, such as a holiday, on a {origin} passport. Working, studying, staying longer or travelling on another passport can change the answer.",
     "itemsCardTitle": "Can you bring it?",
     "itemNotFound": "Not yet verified for {destination} — we won't guess. Check the destination's customs authority directly.",
+    "transitLabel": "Changing planes in (optional)",
+    "transitPlaceholder": "No stopover",
+    "transitHint": "A stopover can bring that country's rules into play. We only show a transit rule where the authority states one.",
+    "transitHeading": "Changing planes in {country}",
+    "transitNotStated": "{country} has a verified rule for this item, but its authority doesn't say whether it applies to passengers who only change planes. If you go through immigration and customs there, you're entering the country, so it does. Check with {country}'s authority before you fly.",
+    "transitNotCovered": "Not yet verified for {country} — we won't guess. Check its customs authority before you fly.",
+    "transitRuleLink": "{country}'s full rule →",
     "verdict": {
       "prohibited": "Prohibited — do not bring this.",
       "allowed_with_limits": "Allowed, within limits.",
@@ -803,6 +815,7 @@
     "blog-retatrutide": "A syringe with a drop on the tip of its needle",
     "blog-legal-at-home": "White tablets spilling from an open pill bottle onto a yellow surface",
     "blog-kratom": "A wooden bowl and spoon of green plant powder next to a sprig of fresh leaves",
+    "blog-transit": "A hand holding a phone showing a boarding pass, in front of airport departure boards",
     "dest-co": "Colourful colonial buildings with balconies in Cartagena, Colombia",
     "dest-cr": "A volcano rising above green forest in Costa Rica",
     "dest-do": "Palm trees on Bávaro beach, Punta Cana",

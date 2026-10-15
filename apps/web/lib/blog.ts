@@ -32,6 +32,24 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "medication-transit-stopover",
+    title: "Changing planes with medication: which stopovers count",
+    seoTitle: "Transiting With Medication: Singapore, Dubai, Hong Kong, Seoul",
+    seoDescription:
+      "Singapore, the UAE and Korea don't require a medication permit if you stay airside. Hong Kong and the Philippines apply their rules to transit passengers too.",
+    dek: "Stay airside in Singapore, Dubai or Seoul and you don't need their medication permits. In Hong Kong and the Philippines, the rules apply even if you're only changing planes.",
+    date: "2026-10-15",
+    category: "Medicine",
+    legalSource: {
+      name: "Drug Office, Department of Health (Hong Kong) — Frequently Asked Questions (medicines carried by visitors)",
+      url: "https://www.drugoffice.gov.hk/eps/do/en/consumer/news_informations/faq.html",
+    },
+    verifiedAt: "2026-10-15",
+    changelogDataset: "customs-items",
+    destinationCodes: ["SG", "AE", "KR", "HK", "PH", "TW", "AR"],
+    photo: "blog-transit",
+  },
+  {
     slug: "kratom-phenibut-poppers-customs",
     title: "Kratom, phenibut and poppers: easy to buy, banned at these borders",
     seoTitle: "Can You Bring Kratom Abroad? Australia, Japan, Singapore, Sweden, NZ",
