@@ -32,6 +32,24 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "kratom-phenibut-poppers-customs",
+    title: "Kratom, phenibut and poppers: easy to buy, banned at these borders",
+    seoTitle: "Can You Bring Kratom Abroad? Australia, Japan, Singapore, Sweden, NZ",
+    seoDescription:
+      "Kratom is banned at the Australian, Japanese, Singaporean and Swedish borders, and New Zealand holds it without a doctor's authority. Phenibut: Australia. Poppers: Japan.",
+    dek: "Kratom is banned in Australia, Japan, Singapore and Sweden, and held at New Zealand's border without a doctor's say-so. Australia also bans phenibut, and Japan bans poppers.",
+    date: "2026-10-15",
+    category: "Medicine",
+    legalSource: {
+      name: "Ministry of Health, Labour and Welfare — List of \"Designated Substances\" in Japan (as of 6 September 2026)",
+      url: "https://www.mhlw.go.jp/content/11120000/001743042.pdf",
+    },
+    verifiedAt: "2026-10-15",
+    changelogDataset: "customs-items",
+    destinationCodes: ["AU", "JP", "SG", "NZ"],
+    photo: "blog-kratom",
+  },
+  {
     slug: "melatonin-zyn-legal-at-home",
     title: "Legal at home, trouble at the border: melatonin and nicotine pouches",
     seoTitle: "Can You Bring Melatonin or Zyn Abroad? Australia, France, NZ, UK",

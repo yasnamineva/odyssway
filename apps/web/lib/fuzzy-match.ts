@@ -84,6 +84,13 @@ function toleranceFor(len: number): number {
 }
 
 /**
+ * Real everyday words that sit one or two letters from a controlled item's
+ * name ("pepper" vs "poppers"). Someone typing these means the word itself,
+ * so they must never be "corrected" into a prohibited item.
+ */
+const NOT_TYPOS = new Set(["pepper", "peppers", "copper", "paper", "cava", "hopper", "hoppers", "topper", "toppers"]);
+
+/**
  * True if `query` is close enough to `candidate` to treat as the same word.
  * Used as a last-resort pass, after exact and substring matching have both
  * failed — deliberately narrow (single-word comparison, length-scaled
@@ -94,6 +101,7 @@ export function isFuzzyMatch(query: string, candidate: string): boolean {
   const c = candidate.trim().toLowerCase();
   if (!q || !c) return false;
   if (q === c) return true;
+  if (NOT_TYPOS.has(q)) return false;
   // Only compare single-word candidates this way — multi-word names (e.g.
   // "opioid painkiller") already have substring matching; fuzzy-matching a
   // short query against a long phrase produces false positives.

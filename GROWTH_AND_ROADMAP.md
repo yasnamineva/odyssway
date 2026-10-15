@@ -405,3 +405,13 @@ gate was passed or missed, and why.
   - **Next:** more step 1.4 items (poppers and phenibut in Australia need TGA;
     kratom in more countries; nicotine pouches in other EU states), driven by the
     unmatched-search log once it's exported.
+- **2026-10-15. Step 1.4, batch 3: kratom, phenibut, poppers.**
+  - **Kratom** now covers 5 countries: Australia, Japan, Singapore and Sweden
+    (prohibited), and New Zealand (doctor's authority). Sweden is the second
+    national rule inside Schengen.
+  - **Phenibut:** prohibited in Australia. **Poppers:** prohibited in Japan.
+  - **Search safety:** everyday words like "pepper" no longer fuzzy-match
+    "poppers".
+  - **Blog:** `/blog/kratom-phenibut-poppers-customs`.
+  - **Not published:** sale-only bans on pouches in Belgium and the Netherlands
+    (not traveller rules); poppers in Australia (TGA unreachable).

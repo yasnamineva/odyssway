@@ -3324,3 +3324,29 @@ Open:
   exemption for therapeutic goods applies to poppers needs TGA's own page, which
   times out.
 - **Phenibut, Australia**: Schedule 9; not yet a row.
+
+## Step 1.4 batch 3: kratom, phenibut, poppers (2026-10-15)
+
+Published, agent:claude-opus-5-5:
+- `phenibut-au` (prohibited): Customs (Prohibited Imports) Regulations Sch 4 lists
+  4-amino-3-phenylbutyric acid; Poisons Standard Schedule 9.
+- `kratom-jp`, `poppers-jp` (prohibited): MHLW designated substances list (as of
+  6 Sep 2026; kratom is one of two plants on it; six alkyl nitrites designated
+  1 April 2007) and Japan Customs' prohibited imports page (Customs Act 69-11).
+- `kratom-se` (prohibited): Government of Sweden press release, 10 Feb 2025,
+  classified as narcotic from 11 March 2025. Second Schengen national rule.
+- Blog post `kratom-phenibut-poppers-customs`.
+- Trip Check: added a NOT_TYPOS list in fuzzy-match.ts, since "pepper", "hopper"
+  and "copper" fuzzy-matched "poppers"/"popper" (a dictionary scan of new names
+  found these). Dropped "popper" from names; substring matching still finds it.
+
+Not published, and why:
+- **Poppers, Australia**: TGA still times out (curl and WebFetch).
+- **Amyl nitrite, Japan**: not on the designated list by name; status unknown.
+- **Nicotine pouches, Belgium and Netherlands**: official material found only covers
+  sale ("placing on the market", NL's 0.035 g limit), not travellers' import or
+  possession. A sale ban alone isn't a traveller rule, so no row.
+- **Kratom, Malaysia** (Poisons Act 1952, per academic sources only), **Thailand**
+  (Kratom Plant Act B.E. 2565, traveller quantities left to ministerial
+  regulations, not found), **UK**, **Ireland, Denmark, Finland**: no primary source
+  read. The Swedish prosecutors' kratom PDF now redirects to their home page.

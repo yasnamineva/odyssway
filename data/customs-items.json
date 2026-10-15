@@ -5471,6 +5471,39 @@
     "status": "verified"
   },
   {
+    "slug": "phenibut-au",
+    "names": [
+      "phenibut",
+      "4-amino-3-phenylbutyric acid"
+    ],
+    "destination": "AU",
+    "category": "medication",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Don't bring it. Australia's customs rules list phenibut as a drug that can't be imported without a licence and a permit from the health department. The only traveller exception is for a drug a doctor prescribed to you and that was supplied under that prescription. Australia's Poisons Standard puts phenibut in Schedule 9, prohibited substances."
+    },
+    "notes": "Under the Poisons Standard, Schedule 9 substances should be available only for teaching, training, medical or scientific research, including clinical trials approved by health authorities.",
+    "legal_source": {
+      "name": "Customs (Prohibited Imports) Regulations 1956, regulation 5 and Schedule 4 (compilation No. 147, 13 July 2026)",
+      "url": "https://www.legislation.gov.au/F1996B03651/latest/text"
+    },
+    "_sources": [
+      {
+        "claim": "Schedule 4 (drugs) lists 4-amino-3-phenylbutyric acid (phenibut); reg 5(1) licence and permission; reg 5(2)(b) prescribed-to-passenger exception",
+        "name": "Customs (Prohibited Imports) Regulations 1956, regulation 5 and Schedule 4 (compilation No. 147, 13 July 2026)",
+        "url": "https://www.legislation.gov.au/F1996B03651/latest/text"
+      },
+      {
+        "claim": "Schedule 9 lists phenibut; Schedule 9 purpose statement",
+        "name": "Therapeutic Goods (Poisons Standard—October 2026) Instrument 2026, Schedule 9",
+        "url": "https://www.legislation.gov.au/F2026L01327/latest/text"
+      }
+    ],
+    "verified_at": "2026-10-15",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "kava-au",
     "names": [
       "kava",
@@ -6390,6 +6423,28 @@
     "status": "verified"
   },
   {
+    "slug": "kratom-se",
+    "names": [
+      "kratom",
+      "mitragyna speciosa",
+      "mitragynine"
+    ],
+    "destination": "SE",
+    "category": "medication",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Don't bring it. Sweden has classified kratom (Mitragyna speciosa) as a narcotic since 11 March 2025, and the government says Swedish Customs can now stop it at the border. Its main active substance, mitragynine, was already a classified narcotic."
+    },
+    "notes": "This is a Swedish national rule, on top of the EU's customs allowances. It applies to everyone, including travellers from other EU countries where kratom is legal.",
+    "legal_source": {
+      "name": "Government of Sweden, Ministry of Health and Social Affairs — Regeringen narkotikaklassar kratom (press release, 10 February 2025)",
+      "url": "https://regeringen.se/pressmeddelanden/2025/02/regeringen-narkotikaklassar-kratom/"
+    },
+    "verified_at": "2026-10-15",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "meat-dairy-ke",
     "names": ["meat", "dairy", "cheese", "milk"],
     "destination": "KE",
@@ -6735,6 +6790,82 @@
     },
     "verified_at": "2026-09-19",
     "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "kratom-jp",
+    "names": [
+      "kratom",
+      "mitragyna speciosa",
+      "mitragynine",
+      "7-hydroxymitragynine"
+    ],
+    "destination": "JP",
+    "category": "medication",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Don't bring it. Kratom (Mitragyna speciosa, in forms that can be used on the body directly), mitragynine and 7-hydroxymitragynine are \"designated substances\" in Japan. Japan Customs lists designated substances as goods that can't be imported, except for medical or similar uses. Their manufacture, import, sale, possession and use are generally prohibited."
+    },
+    "notes": "Japan designated kratom and its two main compounds in 2016, and they're still on the health ministry's list. The ban covers products containing them, such as kratom powder, capsules or extracts.",
+    "legal_source": {
+      "name": "Ministry of Health, Labour and Welfare — List of \"Designated Substances\" in Japan (as of 6 September 2026)",
+      "url": "https://www.mhlw.go.jp/content/11120000/001743042.pdf"
+    },
+    "_sources": [
+      {
+        "claim": "Kratom one of 2 plants on the list; mitragynine and 7-hydroxymitragynine entries; manufacture, import, sale, display, possession, use generally prohibited; products containing them covered",
+        "name": "Ministry of Health, Labour and Welfare — List of \"Designated Substances\" in Japan (as of 6 September 2026)",
+        "url": "https://www.mhlw.go.jp/content/11120000/001743042.pdf"
+      },
+      {
+        "claim": "Designation of mitragynine, 7-hydroxymitragynine and Mitragyna speciosa (Kratom), limited to forms usable directly on the body",
+        "name": "Ministry of Health, Labour and Welfare — newly designated substances (notice of 22 June 2016, annex)",
+        "url": "https://www.mhlw.go.jp/seisakunitsuite/bunya/kenkou_iryou/iyakuhin/yakubuturanyou/oshirase/dl/20160622.pdf"
+      },
+      {
+        "claim": "Designated substances prohibited imports, except those imported for medical or similar use",
+        "name": "Japan Customs — Goods prohibited or restricted from import and export (Customs Act Art. 69-11)",
+        "url": "https://www.customs.go.jp/mizugiwa/kinshi.htm"
+      }
+    ],
+    "verified_at": "2026-10-15",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "poppers-jp",
+    "names": [
+      "poppers",
+      "isobutyl nitrite",
+      "isopropyl nitrite",
+      "isopentyl nitrite",
+      "butyl nitrite"
+    ],
+    "destination": "JP",
+    "category": "other",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Don't bring them. The nitrites used in poppers (isobutyl, isopropyl, isopentyl or isoamyl, butyl, tert-butyl and cyclohexyl nitrite) are \"designated substances\" in Japan. Japan Customs lists designated substances as goods that can't be imported, except for medical or similar uses, and their possession and use are generally prohibited too."
+    },
+    "notes": "These nitrites have been designated since 1 April 2007, and the ban covers any product that contains them. Amyl nitrite (n-pentyl nitrite) isn't on the list by that name, and we haven't confirmed how Japan treats it, so check the label: most poppers contain one of the listed nitrites.",
+    "legal_source": {
+      "name": "Ministry of Health, Labour and Welfare — List of \"Designated Substances\" in Japan (as of 6 September 2026)",
+      "url": "https://www.mhlw.go.jp/content/11120000/001743042.pdf"
+    },
+    "_sources": [
+      {
+        "claim": "Isobutyl, isopropyl, isopentyl (isoamyl), tert-butyl, cyclohexyl and butyl nitrite designated from 1 April 2007; products containing them covered; possession and use generally prohibited",
+        "name": "Ministry of Health, Labour and Welfare — List of \"Designated Substances\" in Japan (as of 6 September 2026)",
+        "url": "https://www.mhlw.go.jp/content/11120000/001743042.pdf"
+      },
+      {
+        "claim": "Designated substances prohibited imports, except those imported for medical or similar use",
+        "name": "Japan Customs — Goods prohibited or restricted from import and export (Customs Act Art. 69-11)",
+        "url": "https://www.customs.go.jp/mizugiwa/kinshi.htm"
+      }
+    ],
+    "verified_at": "2026-10-15",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {

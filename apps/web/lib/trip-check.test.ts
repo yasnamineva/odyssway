@@ -116,6 +116,18 @@ describe("resolveTripCheck", () => {
     expect(resolveTripCheck("US", "AU", ["melatonin"]).items[0]!.match?.slug).toBe("melatonin-au");
   });
 
+  it("answers kratom and poppers in Japan, kratom in Sweden and phenibut in Australia", () => {
+    expect(resolveTripCheck("US", "JP", ["kratom"]).items[0]!.match?.slug).toBe("kratom-jp");
+    expect(resolveTripCheck("US", "JP", ["poppers"]).items[0]!.match?.verdict).toBe("prohibited");
+    expect(resolveTripCheck("US", "JP", ["pepper"]).items[0]!.match?.slug).not.toBe("poppers-jp");
+    expect(resolveTripCheck("US", "JP", ["peppers"]).items[0]!.match?.slug).not.toBe("poppers-jp");
+    expect(resolveTripCheck("US", "JP", ["popper"]).items[0]!.match?.slug).toBe("poppers-jp");
+    expect(resolveTripCheck("US", "JP", ["hoppers"]).items[0]!.match).toBeNull();
+    expect(resolveTripCheck("US", "SE", ["kratom"]).items[0]!.match?.slug).toBe("kratom-se");
+    expect(resolveTripCheck("DE", "SE", ["kratom"]).items[0]!.match?.slug).toBe("kratom-se");
+    expect(resolveTripCheck("US", "AU", ["phenibut"]).items[0]!.match?.slug).toBe("phenibut-au");
+  });
+
   it("answers kratom and kava, and keeps generic words from matching them", () => {
     expect(resolveTripCheck("US", "AU", ["kratom"]).items[0]!.match?.verdict).toBe("prohibited");
     expect(resolveTripCheck("US", "NZ", ["kratom"]).items[0]!.match?.slug).toBe("kratom-nz");
