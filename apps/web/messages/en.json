@@ -269,7 +269,7 @@
   },
   "widgetPage": {
     "metaTitle": "Free Schengen 90/180 calculator for your website",
-    "metaDescription": "Embed Odyssway's free Schengen 90/180-day calculator on your travel blog or expat site with one copy-paste snippet. No account, no tracking.",
+    "metaDescription": "Embed Odyssway's free Schengen 90/180-day calculator, or a \"Can I bring it?\" customs checker, on your travel blog or expat site with one copy-paste snippet. No account, no tracking.",
     "h1": "Add the Schengen calculator to your site",
     "intro": "Running a travel blog, expat guide or visa site? Give your readers the same 90/180-day calculator we run here. It's free, needs no account, and stays up to date when the rules or our engine change.",
     "snippetTitle": "Copy this into your page",
@@ -280,7 +280,13 @@
     "termPrivacy": "Your readers' trips stay in their own browser. Nothing is sent to us or to you, and there are no cookies or trackers.",
     "termUpdates": "When a rule changes, the embedded calculator updates automatically. There's nothing to maintain.",
     "previewTitle": "Preview",
-    "poweredBy": "Schengen calculator by Odyssway \u2192"
+    "poweredBy": "Schengen calculator by Odyssway \u2192",
+    "bringTitle": "Add a \"Can I bring it?\" box",
+    "bringIntro": "Writing about travel with medication, cannabis, drones or cash? Let readers check an item for a destination right in your article. The answer is the same verified, cited rule we show on Odyssway, with the date we checked it.",
+    "bringCredit": "Please keep the \"Can I bring it? by Odyssway\" line under the frame.",
+    "bringPreviewTitle": "Preview",
+    "bringPrivacy": "What your readers type stays in their own browser. Nothing is sent to us or to you, and there are no cookies or trackers.",
+    "bringUpdates": "When we verify a new rule or a rule changes, the box updates automatically. There's nothing to maintain."
   },
   "medicationsIndex": {
     "metaTitle": "Travelling with medication: Adderall, Xanax, Ozempic and more",
@@ -321,6 +327,18 @@
     "atTheBorder": "At the border:",
     "applyLink": "Go to the official application page →",
     "checkedOn": "Procedure checked {date}"
+  },
+  "canIBring": {
+    "title": "Can I bring it?",
+    "destinationLabel": "Going to",
+    "itemLabel": "Bringing",
+    "itemPlaceholder": "e.g. Adderall, melatonin, cash, a drone",
+    "submit": "Check",
+    "resultHeading": "{item} to {destination}",
+    "euNote": "This is the EU rule for arriving from outside the EU.",
+    "fullAnswer": "Full answer, with your nationality and route, on Odyssway →",
+    "disclaimer": "Informational only, not legal advice. Every answer is checked against an official source.",
+    "poweredBy": "Odyssway"
   },
   "borderCard": {
     "button": "Download border card (PDF)",

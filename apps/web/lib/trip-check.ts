@@ -270,6 +270,21 @@ function matchItem(query: string, destinationCode: string): CustomsItemRecord | 
   return null;
 }
 
+/**
+ * The customs row for one item at one destination, independent of nationality:
+ * a Schengen state's own national row first, then the harmonised EU row;
+ * anywhere else, that destination's rows. Shared by Trip Check and the
+ * embeddable "Can I bring it?" widget so both always give the same answer.
+ */
+export function resolveItem(destination: string, query: string): CustomsItemRecord | null {
+  const picked = destination.toUpperCase();
+  const q = query.trim();
+  if (!q) return null;
+  if (picked === SCHENGEN_DESTINATION) return matchItem(q, EU_CUSTOMS_CODE);
+  if (isSchengenCode(picked)) return matchItem(q, picked) ?? matchItem(q, EU_CUSTOMS_CODE);
+  return matchItem(q, picked);
+}
+
 export function resolveTripCheck(
   nationality: string,
   destination: string,

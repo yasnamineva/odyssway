@@ -432,3 +432,11 @@ gate was passed or missed, and why.
     tick-box checklist (this doubles as the doctor's letter checklist: it lists only
     what the verified rule asks for), who to contact, any transit rule, and the
     source with its check date. Built in the browser; nothing leaves the device.
+- **2026-10-15 (overnight). "Can I bring it?" widget (Horizon 1).**
+  - `/embed/can-i-bring` (noindex): destination + item → the verified verdict, its
+    source and check date, and a link to the full answer. Snippet and preview on
+    `/widget#can-i-bring`, with a credit link in the host page's HTML.
+  - Same matching as Trip Check (shared `resolveItem`), including national Schengen
+    rules. Nothing is sent anywhere; privacy policy and terms updated first.
+  - **Next (distribution, owner's call):** offer it to the bloggers, patient groups
+    and university travel offices in §2.5.

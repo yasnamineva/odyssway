@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { resolveTripCheck, SCHENGEN_DESTINATION } from "./trip-check";
+import { resolveItem, resolveTripCheck, SCHENGEN_DESTINATION } from "./trip-check";
 
 describe("resolveTripCheck", () => {
   it("returns the citizen shortcut when nationality equals destination", () => {
@@ -151,6 +151,14 @@ describe("resolveTripCheck", () => {
     // Neither another member state nor "Schengen Area, unspecified" picks up France's rule.
     expect(resolveTripCheck("US", "DE", ["zyn"]).items[0]!.match?.slug).not.toBe("nicotine-pouches-fr");
     expect(resolveTripCheck("US", "SCHENGEN", ["zyn"]).items[0]!.match?.slug).not.toBe("nicotine-pouches-fr");
+  });
+
+  it("resolveItem gives the widget the same answer Trip Check gives a non-EU traveller", () => {
+    for (const [dest, q] of [["JP", "adderall"], ["FR", "zyn"], ["DE", "cigarettes"], ["SCHENGEN", "cash"], ["AU", "kava"], ["IE", "cigarettes"]]) {
+      expect(resolveItem(dest!, q!)?.slug).toBe(resolveTripCheck("US", dest!, [q!]).items[0]!.match?.slug);
+    }
+    expect(resolveItem("FR", "zyn")?.slug).toBe("nicotine-pouches-fr");
+    expect(resolveItem("JP", "   ")).toBeNull();
   });
 
   it("adds a stopover country's stated transit rule for each item", () => {

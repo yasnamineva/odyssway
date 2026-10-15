@@ -289,8 +289,8 @@ test("embeddable calculator renders without site chrome; /widget shows the snipp
   await expect(page.locator("footer")).toHaveCount(0);
   await expect(page.getByRole("link", { name: /Schengen calculator by Odyssway/ })).toBeVisible();
   await page.goto("/widget");
-  await expect(page.locator("pre")).toContainText("/embed/calculator");
-  await expect(page.locator("pre")).toContainText("/calculator\">Odyssway</a>");
+  await expect(page.locator("pre").first()).toContainText("/embed/calculator");
+  await expect(page.locator("pre").first()).toContainText("/calculator\">Odyssway</a>");
 });
 
 test("info icons open a note on tap and close with Escape; detail dropdowns expand", async ({ page }) => {
@@ -319,4 +319,18 @@ test("a customs row downloads a printable border card", async ({ page }) => {
   ]);
   expect(download.suggestedFilename()).toMatch(/^border-card-[a-z0-9-]+\.pdf$/);
   await download.saveAs("test-results/border-card.pdf");
+});
+
+test("the Can I bring it? embed answers without site chrome; /widget shows its snippet", async ({ page }) => {
+  await page.goto("/embed/can-i-bring");
+  await expect(page.locator("header")).toHaveCount(0);
+  await page.getByTestId("cib-destination").fill("Japan");
+  await page.getByRole("option", { name: "Japan", exact: true }).click();
+  await page.getByTestId("cib-item").fill("adderall");
+  await page.getByTestId("cib-submit").click();
+  await expect(page.getByTestId("cib-result")).toContainText("adderall to Japan");
+  await expect(page.getByTestId("cib-result")).toContainText("Checked against the source on");
+
+  await page.goto("/widget");
+  await expect(page.getByTestId("widget-bring-snippet")).toContainText("/embed/can-i-bring");
 });
