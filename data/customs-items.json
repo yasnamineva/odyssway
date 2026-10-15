@@ -3283,6 +3283,31 @@
     "status": "verified"
   },
   {
+    "slug": "nicotine-pouches-au",
+    "names": [
+      "nicotine pouches",
+      "nicotine pouch",
+      "white snus",
+      "nicotine sachets",
+      "zyn",
+      "velo"
+    ],
+    "destination": "AU",
+    "category": "tobacco",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Since 24 July 2026 you can't bring nicotine pouches into Australia. The traveller's exemption no longer covers them, and a prescription doesn't help: personal importation is closed too. The Australian Border Force seizes them. Pouches could only be imported lawfully if they were on the Australian Register of Therapeutic Goods, and as at 24 July 2026 none were."
+    },
+    "notes": "This is separate from Australia's rules for tobacco (a 25-cigarette or 25 g allowance) and vapes (a small traveller's exemption). Import offences under the Therapeutic Goods Act can carry up to 5 years' imprisonment, a large fine, or both, depending on the circumstances.",
+    "legal_source": {
+      "name": "Australian Border Force — Australian Customs Notice No. 2026/29, Changes to nicotine pouch regulations (22 July 2026)",
+      "url": "https://www.abf.gov.au/help-and-support-subsite/CustomsNotices/2026-29.pdf"
+    },
+    "verified_at": "2026-10-15",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "cash-au",
     "names": [
       "cash",
@@ -4278,6 +4303,43 @@
     },
     "verified_at": "2026-09-02",
     "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "nicotine-pouches-sg",
+    "names": [
+      "nicotine pouches",
+      "nicotine pouch",
+      "white snus",
+      "nicotine sachets",
+      "zyn",
+      "velo"
+    ],
+    "destination": "SG",
+    "category": "tobacco",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Nicotine pouches are prohibited in Singapore. HSA lists them among prohibited items, alongside heated tobacco and vaporisers, and ICA's list for travellers bans chewing tobacco, oral snuff and imitation tobacco products as prohibited goods. There's no allowance for travellers."
+    },
+    "notes": "HSA says it works with ICA to step up enforcement at Singapore's checkpoints.",
+    "legal_source": {
+      "name": "Health Sciences Authority — Vaping enforcement (prohibited items include nicotine pouches; last updated 20 August 2026)",
+      "url": "https://www.hsa.gov.sg/tobacco-regulation/vaping-enforcement/"
+    },
+    "_sources": [
+      {
+        "claim": "Nicotine pouches named as prohibited items; enforcement with ICA at checkpoints",
+        "name": "Health Sciences Authority — Vaping enforcement (prohibited items include nicotine pouches; last updated 20 August 2026)",
+        "url": "https://www.hsa.gov.sg/tobacco-regulation/vaping-enforcement/"
+      },
+      {
+        "claim": "Chewing tobacco, imitation tobacco products, oral snuff listed as prohibited goods for travellers",
+        "name": "Immigration & Checkpoints Authority — Prohibited, controlled and dutiable goods (last updated 14 April 2026)",
+        "url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/what-you-can-bring/prohibited-controlled-dutiable-goods"
+      }
+    ],
+    "verified_at": "2026-10-15",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -13728,6 +13790,41 @@
     "status": "verified"
   },
   {
+    "slug": "melatonin-nz",
+    "names": [
+      "melatonin",
+      "melatonin gummies",
+      "sleep supplement",
+      "circadin"
+    ],
+    "destination": "NZ",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Melatonin bought overseas, such as a US supplement, is an unapproved medicine in New Zealand. Medsafe says you still need a prescription to import unapproved melatonin for personal use. With a prescription, New Zealand's normal rule for prescription medicine applies: bring no more than 3 months' supply, carry a copy of the prescription or a letter from your doctor, keep it in the original containers, and declare it on your arrival card."
+    },
+    "notes": "Since June 2025 New Zealand pharmacies can supply some approved melatonin medicines without a prescription: up to 10 days' supply for jet lag and up to 30 days for insomnia. That covers only products approved in New Zealand, not supplements you bring from abroad.",
+    "legal_source": {
+      "name": "Medsafe — Reclassification of melatonin (published 30 June 2025, revised 20 October 2025)",
+      "url": "https://www.medsafe.govt.nz/profs/class/ReclassificationOfMelatonin2025.asp"
+    },
+    "_sources": [
+      {
+        "claim": "Prescription needed to import unapproved melatonin for personal use; 2025 pharmacy reclassification, 10/30-day supplies",
+        "name": "Medsafe — Reclassification of melatonin (published 30 June 2025, revised 20 October 2025)",
+        "url": "https://www.medsafe.govt.nz/profs/class/ReclassificationOfMelatonin2025.asp"
+      },
+      {
+        "claim": "Traveller rule for prescription medicines: 3 months, prescription or doctor's letter, original containers, declare",
+        "name": "Medsafe — Importing medicines into New Zealand",
+        "url": "https://www.medsafe.govt.nz/Consumers/miet/importmedicines.asp"
+      }
+    ],
+    "verified_at": "2026-10-15",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "growth-hormone-gb",
     "names": [
       "growth hormone",
@@ -13770,6 +13867,41 @@
       }
     ],
     "verified_at": "2026-10-13",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "melatonin-gb",
+    "names": [
+      "melatonin",
+      "melatonin gummies",
+      "sleep supplement",
+      "circadin"
+    ],
+    "destination": "GB",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Melatonin is a prescription-only medicine in the UK. It's licensed for short-term insomnia and jet lag in adults, and for some sleep disorders in children aged 6 to 17. It isn't legally sold as a food supplement there: products containing it are regulated as medicines and need a marketing authorisation."
+    },
+    "notes": "UK government guidance on travelling with medicine covers controlled drugs. We found no official UK rule on how much of a prescription-only medicine that isn't a controlled drug, such as melatonin, you can bring for personal use, or what proof you need. So we can't confirm a limit. Don't plan on buying melatonin in UK shops.",
+    "legal_source": {
+      "name": "MHRA press release — undeclared prescription-only medicine (melatonin) in kids' magnesium gummies (18 August 2025)",
+      "url": "https://www.gov.uk/government/news/parents-and-caregivers-advised-to-stop-all-use-of-specific-brand-of-kids-magnesium-gummies-due-to-the-presence-of-an-undeclared-prescription-only-med"
+    },
+    "_sources": [
+      {
+        "claim": "Prescription-only status, authorised uses, marketing authorisation needed",
+        "name": "MHRA press release — undeclared prescription-only medicine (melatonin) in kids' magnesium gummies (18 August 2025)",
+        "url": "https://www.gov.uk/government/news/parents-and-caregivers-advised-to-stop-all-use-of-specific-brand-of-kids-magnesium-gummies-due-to-the-presence-of-an-undeclared-prescription-only-med"
+      },
+      {
+        "claim": "Traveller guidance covers controlled drugs only; no non-controlled rule given",
+        "name": "GOV.UK — Travelling with controlled drugs",
+        "url": "https://www.gov.uk/travelling-controlled-drugs"
+      }
+    ],
+    "verified_at": "2026-10-15",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },

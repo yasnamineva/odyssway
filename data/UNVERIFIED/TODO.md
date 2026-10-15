@@ -3226,3 +3226,39 @@ Not given a procedure, and why:
   already covers it.
 - **South Africa, Kenya, Maldives**: no traveller procedure on a reachable primary
   source (see those rows' notes).
+
+## Legal at home, controlled abroad: melatonin (2026-10-15)
+
+Plan step 1.4 (GROWTH_AND_ROADMAP.md). Published `melatonin-nz` (Medsafe
+reclassification page: importing unapproved melatonin needs a prescription) and
+`melatonin-gb` (MHRA: prescription-only; no official UK personal-import rule for
+non-controlled prescription medicines, which the row says rather than guessing).
+
+Still open:
+- **Australia**: melatonin is reported as Schedule 4, with a Schedule 3 entry for 2 mg
+  prolonged-release for people 55+ (TGA final decision notice, tga.gov.au). TGA timed
+  out again from this environment. Read the TGA notice and the "Entering Australia"
+  traveller page, then add `melatonin-au`.
+- **UK**: find MHRA's current wording on personal imports of non-controlled
+  prescription-only medicines. A 2015 MHRA email quoted on a blog said there's no
+  restriction up to about 3 months, but that's secondhand and old.
+- **Singapore, Japan**: no official page classifying melatonin for travellers was
+  found. HSA's pages don't name it; MHLW only lists it in personal-import tallies.
+- Competitor note: goodsacrossborders.com publishes melatonin rules for these countries
+  without primary citations, and contradicts Medsafe on NZ.
+
+## Legal at home, controlled abroad: nicotine pouches (2026-10-15)
+
+Published `nicotine-pouches-au` (ABF Customs Notice 2026/29: from 24 July 2026 the
+traveller exemption no longer applies; seized) and `nicotine-pouches-sg` (HSA vaping
+enforcement page names pouches as prohibited items; ICA prohibited goods list for
+travellers). Both are in the `tobacco` category, so they appear on /bring/tobacco/[country].
+
+Still open:
+- **Japan**: tobacco-free pouches are reportedly regulated as pharmaceuticals (MHLW,
+  quoted only in trade press). Needs an MHLW or Japan Customs page.
+- **France** (Schengen): "white snus" reportedly banned for everyone, travellers
+  included, from 1 April 2026 (Norwegian foreign ministry, via The Local). Needs the
+  French decree on Légifrance. Note that Schengen customs resolve to the `EU` rows, so
+  a France-only rule needs a design decision on how to show a member-state exception.
+- **UAE, Thailand, Turkey**: nothing official found.

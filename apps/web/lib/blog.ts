@@ -32,6 +32,24 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "melatonin-zyn-legal-at-home",
+    title: "Legal at home, trouble at the border: melatonin and nicotine pouches",
+    seoTitle: "Can You Bring Melatonin or Zyn Abroad? Australia, NZ, UK",
+    seoDescription:
+      "Australia banned nicotine pouches for travellers in July 2026; Singapore prohibits them. Melatonin needs a prescription for NZ and is prescription-only in the UK.",
+    dek: "Australia now seizes nicotine pouches at the border, and Singapore bans them. Melatonin, a US supplement, is a prescription medicine in New Zealand and the UK.",
+    date: "2026-10-15",
+    category: "Medicine",
+    legalSource: {
+      name: "Australian Border Force — Australian Customs Notice No. 2026/29, Changes to nicotine pouch regulations",
+      url: "https://www.abf.gov.au/help-and-support-subsite/CustomsNotices/2026-29.pdf",
+    },
+    verifiedAt: "2026-10-15",
+    changelogDataset: "customs-items",
+    destinationCodes: ["AU", "SG", "NZ", "GB", "JP"],
+    photo: "blog-legal-at-home",
+  },
+  {
     slug: "peptides-bpc-157-customs",
     title: "Travelling with peptides? \"Research use only\" won't get BPC-157 through customs",
     seoTitle: "Can You Travel With Peptides? BPC-157, TB-500 at Customs",

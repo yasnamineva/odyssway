@@ -96,6 +96,20 @@ describe("resolveTripCheck", () => {
     expect(result.items[0]!.match?.verdict).toBe("depends");
   });
 
+  it("matches named medicines to their own Japan rows: narcotics need a permit, psychotropics have limits", () => {
+    expect(resolveTripCheck("US", "JP", ["oxycodone"]).items[0]!.match?.slug).toBe("narcotic-medication-jp");
+    expect(resolveTripCheck("US", "JP", ["xanax"]).items[0]!.match?.slug).toBe("psychotropic-medication-jp");
+    expect(resolveTripCheck("US", "JP", ["adderall"]).items[0]!.match?.slug).toBe("amphetamine-medication-jp");
+  });
+
+  it("answers things legal at home but restricted abroad: melatonin and nicotine pouches", () => {
+    expect(resolveTripCheck("US", "NZ", ["melatonin"]).items[0]!.match?.slug).toBe("melatonin-nz");
+    const zyn = resolveTripCheck("US", "AU", ["zyn"]).items[0]!.match;
+    expect(zyn?.slug).toBe("nicotine-pouches-au");
+    expect(zyn?.verdict).toBe("prohibited");
+    expect(resolveTripCheck("US", "SG", ["nicotine pouches"]).items[0]!.match?.slug).toBe("nicotine-pouches-sg");
+  });
+
   it("gives EU citizens free movement within the EU, and withholds extra-EU customs verdicts", () => {
     for (const destination of ["SCHENGEN", "DE", "IE", "CY"]) {
       const result = resolveTripCheck("FR", destination, ["cigarettes"]);

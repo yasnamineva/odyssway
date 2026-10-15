@@ -377,3 +377,12 @@ gate was passed or missed, and why.
   - **Not given a procedure** (no published official application route, or no permit
     involved): Serbia, Sri Lanka and the document-only countries. The reasons are in
     `data/UNVERIFIED/TODO.md`.
+- **2026-10-15. Horizon 1, step 1.4 started: legal at home, restricted abroad.**
+  - **Melatonin:** New Zealand (prescription needed to import) and the UK
+    (prescription-only; no official personal-import limit, which the page says).
+  - **Nicotine pouches:** banned for travellers in Australia (since 24 July 2026)
+    and in Singapore.
+  - **Blog post:** `/blog/melatonin-zyn-legal-at-home`.
+  - **Next:** Australia melatonin (TGA unreachable from here), Japan nicotine
+    pouches, and France's "white snus" ban (April 2026). Then more items from the
+    unmatched-search log.

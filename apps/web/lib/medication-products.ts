@@ -35,6 +35,7 @@ const PRODUCTS: MedicationProduct[] = [
   { slug: "tb-500", name: "TB-500", term: "tb-500" },
   { slug: "melanotan-ii", name: "Melanotan II", term: "melanotan ii" },
   { slug: "hgh", name: "HGH (growth hormone)", term: "hgh" },
+  { slug: "melatonin", name: "Melatonin", term: "melatonin" },
 ];
 
 export interface ProductPair {
