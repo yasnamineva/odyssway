@@ -426,3 +426,9 @@ gate was passed or missed, and why.
   - **Blog:** `/blog/medication-transit-stopover`.
   - **Next:** Doha, Istanbul and Tokyo transit rules; a "Can I bring it?" widget
     and the printable border card (Horizon 1).
+- **2026-10-15 (overnight). Printable border card (Horizon 1, §2.8).**
+  - Every customs row on `/bring/...` and `/medications/...` pages has a "Download
+    border card (PDF)" button. The one-page PDF has the rule, what to carry as a
+    tick-box checklist (this doubles as the doctor's letter checklist: it lists only
+    what the verified rule asks for), who to contact, any transit rule, and the
+    source with its check date. Built in the browser; nothing leaves the device.

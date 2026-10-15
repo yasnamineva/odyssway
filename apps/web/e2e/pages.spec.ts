@@ -306,3 +306,17 @@ test("info icons open a note on tap and close with Escape; detail dropdowns expa
   await page.getByText("What exactly is the EES?").click();
   await expect(page.getByText("eu-LISA")).toBeVisible();
 });
+
+test("a customs row downloads a printable border card", async ({ page }) => {
+  await page.goto("/bring/medication/south-korea");
+  const button = page.getByTestId("border-card-button").first();
+  await expect(button).toBeVisible();
+  const [download] = await Promise.all([
+    page.waitForEvent("download"),
+    expect(async () => {
+      await button.click();
+    }).toPass(),
+  ]);
+  expect(download.suggestedFilename()).toMatch(/^border-card-[a-z0-9-]+\.pdf$/);
+  await download.saveAs("test-results/border-card.pdf");
+});

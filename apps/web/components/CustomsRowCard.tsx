@@ -1,6 +1,8 @@
 import type { CustomsItemRecord } from "@odyssway/engine";
 import { getTranslations } from "next-intl/server";
 import { rowLabel } from "../lib/bring-pages";
+import { destinationByCode } from "../lib/destinations";
+import BorderCardButton from "./BorderCardButton";
 import ProcedureSection from "./ProcedureSection";
 import SourceNote from "./SourceNote";
 
@@ -24,11 +26,14 @@ export default async function CustomsRowCard({
   const tv = await getTranslations("destinationPage.verdict");
   const ts = await getTranslations("tripCheck");
   const tt = await getTranslations("transit");
+  const tb = await getTranslations("borderCard");
+  const destinationName = destinationByCode(destinationCode)?.name ?? destinationCode;
+  const label = rowLabel(row.slug, destinationCode);
   return (
     <li className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
       <div className="flex flex-wrap items-center gap-2">
         <h2 className="font-display text-base font-bold text-slate-900">
-          {rowLabel(row.slug, destinationCode)}
+          {label}
         </h2>
         <span
           className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ring-1 ring-inset ${VERDICT_STYLES[row.verdict] ?? VERDICT_STYLES.depends}`}
@@ -63,6 +68,28 @@ export default async function CustomsRowCard({
       <p className="mt-3 text-xs leading-relaxed text-slate-500">
         <span className="font-semibold">{t("alsoCovers")}</span> {row.names.slice(0, 14).join(", ")}
       </p>
+      <BorderCardButton
+        row={row}
+        fileName={`border-card-${row.slug}.pdf`}
+        buttonLabel={tb("button")}
+        labels={{
+          title: tb("title", { item: label, destination: destinationName }),
+          verdict: tv(row.verdict),
+          rule: tb("rule"),
+          quantity: tb("quantity"),
+          notes: tb("notes"),
+          carry: tb("carry"),
+          apply: tb("apply"),
+          leadTime: tb("leadTime"),
+          applyUrl: tb("applyUrl"),
+          atTheBorder: tb("atTheBorder"),
+          transit: tb("transit"),
+          transitRule: row.transit ? tt(row.transit.rule) : "",
+          source: tb("source"),
+          checked: row.verified_at ? ts("checkedOn", { date: row.verified_at }) : "",
+          footer: tb("footer"),
+        }}
+      />
       <SourceNote
         className="mt-4"
         name={row.legal_source.name}
