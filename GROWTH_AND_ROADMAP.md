@@ -440,3 +440,7 @@ gate was passed or missed, and why.
     rules. Nothing is sent anywhere; privacy policy and terms updated first.
   - **Next (distribution, owner's call):** offer it to the bloggers, patient groups
     and university travel offices in §2.5.
+- **2026-10-16 (overnight). Transit, follow-up.** Scanned all 151 cited source pages
+  for transit wording. Added Georgia (applies in transit), Hong Kong prescription
+  medicine with dangerous drugs (applies), Singapore peptides (exempt airside), and
+  Albania CBD (applies). Istanbul still has no primary source.

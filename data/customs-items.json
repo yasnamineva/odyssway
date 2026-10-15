@@ -7322,7 +7322,16 @@
     "destination": "HK",
     "verified_at": "2026-09-21",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "transit": {
+      "rule": "applies",
+      "description": "If your medicine contains a dangerous drug under Hong Kong law, you need the Drug Office's prior written approval even if you're only transiting through Hong Kong. The Drug Office doesn't state a transit rule for other medicines.",
+      "source": {
+        "name": "Drug Office, Department of Health — Frequently Asked Questions",
+        "url": "https://www.drugoffice.gov.hk/eps/do/en/consumer/news_informations/faq.html"
+      },
+      "verified_at": "2026-10-16"
+    }
   },
   {
     "slug": "controlled-medication-hk",
@@ -8265,6 +8274,15 @@
     "legal_source": {
       "name": "Ministry of Foreign Affairs of Georgia — Bringing Narcotic Drugs and Psychotropic Substances to Georgia (official guidance PDF)",
       "url": "https://mfa.gov.ge/pfiles/files/Bringing%20Narcotic%20Drugs%20And%20Psychotropic%20Substances%20To%20Georgia.pdf"
+    },
+    "transit": {
+      "rule": "applies",
+      "description": "Passing through Georgia in transit, you need the same documents as for entering: the certified English translation of your prescription, your doctor's certified certificate and the legalised document from your home authority, presented with your customs declaration.",
+      "source": {
+        "name": "Ministry of Foreign Affairs of Georgia — Bringing Narcotic Drugs and Psychotropic Substances to Georgia (official guidance PDF)",
+        "url": "https://mfa.gov.ge/pfiles/files/Bringing%20Narcotic%20Drugs%20And%20Psychotropic%20Substances%20To%20Georgia.pdf"
+      },
+      "verified_at": "2026-10-16"
     }
   },
   {
@@ -9476,7 +9494,16 @@
     },
     "verified_at": "2026-09-22",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "transit": {
+      "rule": "applies",
+      "description": "Albania's customs authority prohibits the transit of narcotics and psychotropic substances and their preparations, as well as their import and export.",
+      "source": {
+        "name": "General Directorate of Customs (Republic of Albania) — Narcotics and Psychotropic Substances and human trafficking",
+        "url": "https://www.dogana.gov.al/english/c/177/239/narcotics-and-psychotropic-substances-and-human-trafficking"
+      },
+      "verified_at": "2026-10-16"
+    }
   },
   {
     "slug": "weapons-al",
@@ -14442,7 +14469,16 @@
     ],
     "verified_at": "2026-10-13",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "transit": {
+      "rule": "exempt_airside",
+      "description": "You don't need HSA approval for personal medication if you stay in the airport transit zone and don't clear immigration. Prohibited medicines are still not allowed, even in transit.",
+      "source": {
+        "name": "Health Sciences Authority — Travelling with medications to Singapore (last updated 15 June 2026)",
+        "url": "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-medications/"
+      },
+      "verified_at": "2026-10-16"
+    }
   },
   {
     "slug": "kratom-sg",

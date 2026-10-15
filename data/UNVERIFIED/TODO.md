@@ -3371,3 +3371,18 @@ new URL).
 Open: medication transit for Qatar (Doha), Japan, Turkey (Istanbul) — no stated
 transit rule on the pages read. Schengen hubs (Frankfurt, Amsterdam, Paris) aren't selectable as
 stopovers: Schengen customs rows describe arriving, not airside transit.
+
+### Transit follow-up (2026-10-16)
+
+Scanned every cited source page of medication, cannabis and e-cigarette rows for
+transit wording (151 URLs). Added: prescription-medication-hk (dangerous-drug
+medicines need approval in transit), peptides-sg (HSA airside exemption),
+cbd-al (Albanian Customs transit ban), controlled-medication-ge (same documents in
+transit). Not added:
+- **South Africa**: SARS says travellers booked through to outside SACU from outside
+  SACU needn't comply with customs formalities. That's a through-ticket rule, not
+  "stay airside", so neither transit label fits. Needs a third rule value if used.
+- **Qatar medication**: GOV.UK says transit passengers with even residual drugs may be
+  arrested, but that's about illegal drugs, not prescribed medicine.
+- **Turkey (Istanbul)**: no primary source for controlled medicine or transit found
+  (TİTCK and Customs pages searched).
