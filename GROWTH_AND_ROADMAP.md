@@ -448,3 +448,7 @@ gate was passed or missed, and why.
   (controlled drug: declare, 1 month, prescription or doctor's letter, even for
   over-the-counter cold tablets) and nicotine gum in Singapore (medicated gum can't
   be imported at all).
+- **2026-10-16 (overnight). Step 1.4, batch 5.** Heated tobacco (IQOS) and shisha
+  banned in Singapore; shisha banned in Kenya; modafinil needs HSA approval in
+  Singapore; heated-tobacco sticks and hookah tobacco now found in the UK and Serbia
+  allowances. All from official pages already cited, found by scanning them.

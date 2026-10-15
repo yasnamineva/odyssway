@@ -219,7 +219,9 @@
     "names": [
       "tobacco",
       "cigarettes",
-      "cigars"
+      "cigars",
+      "heated tobacco",
+      "heated tobacco sticks"
     ],
     "destination": "GB",
     "category": "tobacco",
@@ -231,8 +233,8 @@
       "name": "gov.uk — Bringing goods into the UK for personal use",
       "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
     },
-    "verified_at": "2026-08-10",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-16",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -1245,6 +1247,30 @@
     },
     "verified_at": "2026-08-11",
     "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "shisha-ke",
+    "names": [
+      "shisha",
+      "shisha flavours",
+      "shisha tobacco",
+      "hookah",
+      "hookah tobacco"
+    ],
+    "destination": "KE",
+    "category": "tobacco",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Don't bring them. The Kenya Revenue Authority lists \"shisha and shisha flavours\" among prohibited items for travellers."
+    },
+    "notes": "Ordinary tobacco is allowed within the duty-free limit of 250 g in total (cigarettes, cigars, tobacco and snuff).",
+    "legal_source": {
+      "name": "Kenya Revenue Authority — FAQs: Passenger terminal clearance in Kenya",
+      "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
+    },
+    "verified_at": "2026-10-16",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -4343,6 +4369,31 @@
     "status": "verified"
   },
   {
+    "slug": "heated-tobacco-sg",
+    "names": [
+      "heated tobacco",
+      "heat-not-burn",
+      "iqos",
+      "shisha",
+      "shisha tobacco",
+      "hookah tobacco"
+    ],
+    "destination": "SG",
+    "category": "tobacco",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Don't bring them. Singapore's Health Sciences Authority lists heated tobacco products (heat-not-burn products such as IQOS) and shisha tobacco among prohibited items, alongside vaporisers and nicotine pouches. Possessing them is an offence, and there's no allowance for travellers."
+    },
+    "notes": "Ordinary cigarettes and other tobacco aren't banned, but they get no duty-free allowance in Singapore: declare them and pay duty and GST.",
+    "legal_source": {
+      "name": "Health Sciences Authority — Vaping enforcement (prohibited items; last updated 20 August 2026)",
+      "url": "https://www.hsa.gov.sg/tobacco-regulation/vaping-enforcement/"
+    },
+    "verified_at": "2026-10-16",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "e-cigarettes-sg",
     "names": [
       "e-cigarette",
@@ -4830,7 +4881,9 @@
       "clonazepam",
       "opioid painkiller",
       "codeine",
-      "oxycodone"
+      "oxycodone",
+      "modafinil",
+      "armodafinil"
     ],
     "destination": "SG",
     "category": "medication",
@@ -4838,13 +4891,13 @@
     "limits": {
       "description": "Medicines containing a substance listed in Appendix A of HSA's 'Document guide for bringing in personal medications' — drawn from the Second and Third Schedules to the Misuse of Drugs Regulations, the First Schedule to the Health Products (Therapeutic Products) Regulations 2016, and other medications of concern — cannot be brought in under the ordinary 3-month traveller allowance. You must submit an online application for HSA approval at least 2 weeks before arrival, in English, attaching medical documentation (pharmacy dispensing label, doctor's prescription, or doctor's letter with patient/prescriber details, medication composition, dose, frequency and total quantity) plus photographs of the product showing its name, active ingredient(s), strength, directions for use, dosage form and dispensed quantity. Approved medications do not need to be declared at customs, but the approval email and supporting documents must be kept available for inspection by ICA officers on request."
     },
-    "notes": "Appendix A (edition dated 17 Mar 2026, fetched directly from HSA) explicitly names, among hundreds of substances: Alprazolam, Amphetamine (Amfetamine), Dexamphetamine, Lisdexamphetamine (Vyvanse), Methylphenidate, Dexmethylphenidate, Diazepam, Clonazepam, Codeine, and Oxycodone — so a traveler carrying medicine containing any of these needs HSA approval in advance. Tramadol was checked against the same list and was NOT found on it, so ordinary medicine (not the controlled-substances process) rules appear to apply to it — but confirm against the live Appendix A before travel, since HSA updates it periodically. Cannabis, cannabis extracts, THC, CBD and related cannabinoids are separately and absolutely prohibited under the Fourth Schedule to the Misuse of Drugs Regulations regardless of prescription or approval — Singapore enforces the Misuse of Drugs Act with severe penalties.",
+    "notes": "Appendix A (edition dated 17 Mar 2026, fetched directly from HSA) explicitly names, among hundreds of substances: Alprazolam, Amphetamine (Amfetamine), Dexamphetamine, Lisdexamphetamine (Vyvanse), Methylphenidate, Dexmethylphenidate, Diazepam, Clonazepam, Codeine, and Oxycodone — so a traveler carrying medicine containing any of these needs HSA approval in advance. Tramadol was checked against the same list and was NOT found on it, so ordinary medicine (not the controlled-substances process) rules appear to apply to it — but confirm against the live Appendix A before travel, since HSA updates it periodically. Cannabis, cannabis extracts, THC, CBD and related cannabinoids are separately and absolutely prohibited under the Fourth Schedule to the Misuse of Drugs Regulations regardless of prescription or approval — Singapore enforces the Misuse of Drugs Act with severe penalties. Modafinil and armodafinil (used for narcolepsy and shift-work sleepiness) are also on Appendix A, so they need HSA approval too.",
     "legal_source": {
       "name": "Health Sciences Authority (HSA) — Document guide for bringing in personal medications (Appendix A: List of controlled substances)",
       "url": "https://file.go.gov.sg/document-guide-for-bringing-in-personal-medications.pdf"
     },
-    "verified_at": "2026-09-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-16",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "procedure": {
       "title": "Get HSA approval before you arrive",
@@ -8714,7 +8767,9 @@
       "rolling tobacco",
       "smokeless tobacco",
       "snus",
-      "heated tobacco"
+      "heated tobacco",
+      "hookah tobacco",
+      "shisha tobacco"
     ],
     "destination": "RS",
     "category": "tobacco",
@@ -8727,8 +8782,8 @@
       "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
       "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
     },
-    "verified_at": "2026-09-22",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-16",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {

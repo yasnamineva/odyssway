@@ -3402,3 +3402,15 @@ Open:
   Whether that covers transdermal patches isn't stated; needs HSA confirmation.
 - **"Sudafed" brand for NZ**: not named by NZ Customs, and US "Sudafed PE" contains
   phenylephrine, so the brand isn't in the row's names.
+
+## Step 1.4 batch 5: from pages we already cite (2026-10-16)
+
+Scanned all 346 cited source pages for commonly restricted items with no row in
+that destination. Published: `heated-tobacco-sg` (HSA: heated tobacco/IQOS and
+shisha tobacco prohibited), `shisha-ke` (KRA prohibited list). Extended names:
+modafinil/armodafinil on `controlled-medication-sg` (HSA Appendix A), heated tobacco
+on `tobacco-gb` (gov.uk 200 sticks), hookah/shisha tobacco on `tobacco-rs`.
+Not used: Taiwan poppy seeds (the page is the departure list), Japan
+"O-desmethyltramadol" (not tramadol), Hong Kong pseudoephedrine (Control of
+Chemicals Ordinance precursor licensing; doesn't say how medicines are treated),
+Canada khat/poppy seeds (CBSA memo for commercial importers).

@@ -128,6 +128,14 @@ describe("resolveTripCheck", () => {
     expect(resolveTripCheck("US", "AU", ["phenibut"]).items[0]!.match?.slug).toBe("phenibut-au");
   });
 
+  it("answers heated tobacco and shisha, and modafinil in Singapore", () => {
+    expect(resolveItem("SG", "iqos")?.slug).toBe("heated-tobacco-sg");
+    expect(resolveItem("SG", "tobacco")?.slug).toBe("tobacco-sg");
+    expect(resolveItem("KE", "shisha")?.verdict).toBe("prohibited");
+    expect(resolveItem("GB", "heated tobacco")?.slug).toBe("tobacco-gb");
+    expect(resolveItem("SG", "modafinil")?.slug).toBe("controlled-medication-sg");
+  });
+
   it("answers pseudoephedrine in New Zealand and nicotine gum in Singapore", () => {
     expect(resolveItem("NZ", "pseudoephedrine")?.slug).toBe("pseudoephedrine-nz");
     expect(resolveItem("SG", "nicotine gum")?.verdict).toBe("prohibited");
