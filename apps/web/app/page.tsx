@@ -12,6 +12,7 @@ import RuleRuler from "../components/RuleRuler";
 import { More } from "../components/content/Blocks";
 import SampleAnswer from "../components/SampleAnswer";
 import { blogPostsByDate } from "../lib/blog";
+import { medicationProducts } from "../lib/medication-products";
 import { photos } from "../lib/photos";
 import { schengenCountries } from "../lib/countries";
 import { coveredDestinationCount, destinations, entryRequirements, queuedDestinations } from "../lib/destinations";
@@ -271,6 +272,41 @@ export default async function HomePage() {
               {t("home.coverageMap.cta")}
             </a>
           </div>
+        </section>
+      </Reveal>
+
+      <Reveal className="mt-20 sm:mt-28">
+        <section data-testid="home-medicines">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <SectionHeader
+              kicker={t("home.medicines.eyebrow")}
+              heading={t("home.medicines.heading")}
+              sub={t("home.medicines.sub")}
+            />
+            <a
+              href="/medications"
+              className="inline-flex items-center gap-1 text-sm font-semibold text-slate-900 underline-offset-4 hover:underline"
+            >
+              {t("home.medicines.cta")}
+            </a>
+          </div>
+          <ul className="mt-8 flex flex-wrap gap-2">
+            {medicationProducts.map((p) => (
+              <li key={p.slug}>
+                <a
+                  href={`/medications/${p.slug}`}
+                  className="inline-block rounded-full border border-slate-300 bg-white px-3.5 py-1.5 text-sm font-medium text-slate-800 hover:border-slate-500"
+                >
+                  {p.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-5 text-sm">
+            <a href="/bring" className="font-semibold text-slate-900 underline underline-offset-4">
+              {t("home.medicines.bring")}
+            </a>
+          </p>
         </section>
       </Reveal>
 

@@ -6,6 +6,7 @@ import TravelerTabs from "../../../components/TravelerTabs";
 /** The calculator alone, for other sites' iframes (/widget). Not indexed —
  * /calculator is the page search engines should rank. */
 export const metadata: Metadata = {
+  title: "Schengen 90/180 calculator (embed)",
   robots: { index: false, follow: true },
   alternates: { canonical: "/calculator" },
 };

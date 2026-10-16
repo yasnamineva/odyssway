@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import { clip, firstSentence } from "../../../lib/seo-text";
 import { notFound } from "next/navigation";
 import { BRING_CATEGORIES, bringCategoryBySlug } from "../../../lib/bring-categories";
 import { destinationSlug } from "../../../lib/bring-pages";
@@ -69,7 +70,14 @@ export default async function BringItemPage({ params }: { params: Promise<Params
       name: t("faqQuestion", { item: meta.searchLabel, destination: d!.name }),
       acceptedAnswer: {
         "@type": "Answer",
-        text: [tc(i.verdict), i.limits?.description, i.notes].filter(Boolean).join(" "),
+        // A short answer per country; the full rule lives on that country's
+        // own page, so the hub doesn't duplicate every page's text.
+        text: [
+          `${tc(i.verdict).charAt(0).toUpperCase()}${tc(i.verdict).slice(1)}.`,
+          i.limits?.description ? clip(firstSentence(i.limits.description), 220) : undefined,
+        ]
+          .filter(Boolean)
+          .join(" "),
       },
     })),
   };
@@ -136,9 +144,8 @@ export default async function BringItemPage({ params }: { params: Promise<Params
                   )}
                   <div>
                     <span className="font-medium text-slate-900">{tc(i.verdict)}</span>
-                    {i.limits?.description && <span> — {i.limits.description}</span>}
+                    {i.limits?.description && <span> — {clip(firstSentence(i.limits.description), 220)}</span>}
                   </div>
-                  {i.notes && <p className="mt-1 text-xs leading-relaxed text-slate-500">{i.notes}</p>}
                   <p className="mt-1 text-xs text-slate-500">
                     {t("verifiedLine", { date: i.verified_at ?? "" })}{" "}
                     <a href={i.legal_source.url} rel="noopener noreferrer" className="underline">

@@ -1,11 +1,11 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { schengenCountries } from "../lib/countries";
-import { destinations } from "../lib/destinations";
+import { destinations } from "../lib/destination-index";
 import { SITE_URL } from "../lib/site";
-import { resolveItem, SCHENGEN_DESTINATION } from "../lib/trip-check";
+import { SCHENGEN_DESTINATION } from "../lib/schengen-sentinel";
 import SearchableSelect from "./SearchableSelect";
 import SourceNote from "./SourceNote";
 
@@ -29,6 +29,17 @@ export default function CanIBringWidget() {
   const [destination, setDestination] = useState("");
   const [item, setItem] = useState("");
   const [asked, setAsked] = useState<{ destination: string; item: string } | null>(null);
+  // The rule corpus loads after first paint (see lib/trip-engine).
+  const [engine, setEngine] = useState<typeof import("../lib/trip-engine") | null>(null);
+  useEffect(() => {
+    let live = true;
+    void import("../lib/trip-engine").then((m) => {
+      if (live) setEngine(m);
+    });
+    return () => {
+      live = false;
+    };
+  }, []);
 
   const isSchengen = (code: string) =>
     code === SCHENGEN_DESTINATION || schengenCountries.some((c) => c.code === code);
@@ -39,7 +50,7 @@ export default function CanIBringWidget() {
         schengenCountries.find((c) => c.code === code)?.name ??
         code);
 
-  const match = asked ? resolveItem(asked.destination, asked.item) : null;
+  const match = asked && engine ? engine.resolveItem(asked.destination, asked.item) : null;
   const fullAnswer = asked
     ? `${SITE_URL}/trip-check?destination=${encodeURIComponent(asked.destination)}`
     : `${SITE_URL}/trip-check`;
@@ -111,7 +122,7 @@ export default function CanIBringWidget() {
         </button>
       </form>
 
-      {asked && (
+      {asked && engine && (
         <div className="mt-4 border-t border-slate-100 pt-3" data-testid="cib-result" aria-live="polite">
           <p className="text-sm font-medium break-words text-slate-900">
             {t("resultHeading", { item: asked.item, destination: destinationName(asked.destination) })}

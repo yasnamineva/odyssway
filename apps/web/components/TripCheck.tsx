@@ -7,22 +7,12 @@ import SourceNote from "./SourceNote";
 import { schengenCountries } from "../lib/countries";
 import { destinationLabelFor } from "../lib/destination-label";
 import { BRING_CATEGORIES } from "../lib/bring-categories";
-import {
-  EU_CUSTOMS_CODE,
-  customsItems,
-  destinationSlug,
-  destinations,
-  queuedDestinations,
-} from "../lib/destinations";
+import type { CustomsItemRecord } from "@odyssway/engine";
+import { EU_CUSTOMS_CODE, destinationSlug, destinations, queuedDestinations } from "../lib/destination-index";
 import { publishedNationalities } from "../lib/nationalities";
 import SearchableSelect from "./SearchableSelect";
-import {
-  resolveMapDestinationCode,
-  resolveTripCheck,
-  SCHENGEN_DESTINATION,
-  type EntryBasis,
-  type TripCheckResult,
-} from "../lib/trip-check";
+import { resolveMapDestinationCode, SCHENGEN_DESTINATION } from "../lib/schengen-sentinel";
+import type { EntryBasis, TripCheckResult } from "../lib/trip-check";
 
 /** The map bundles real country geometry (~100KB) — load it only once it's needed. */
 const WorldMap = dynamic(() => import("./WorldMap"), {
@@ -31,7 +21,7 @@ const WorldMap = dynamic(() => import("./WorldMap"), {
 });
 
 /** The page that shows a row's full permit procedure: its /bring item × destination page. */
-function procedureHref(row: (typeof customsItems)[number]): string | undefined {
+function procedureHref(row: CustomsItemRecord): string | undefined {
   if (row.category === "other") return undefined;
   const destination = destinations.find((d) => d.code === row.destination && d.status === "verified");
   return destination
@@ -40,7 +30,7 @@ function procedureHref(row: (typeof customsItems)[number]): string | undefined {
 }
 
 /** What a stopover country's rule says about this item, for passengers only changing planes. */
-function TransitBlock({ country, row }: { country: string; row: (typeof customsItems)[number] | null }) {
+function TransitBlock({ country, row }: { country: string; row: CustomsItemRecord | null }) {
   const t = useTranslations("tripCheck");
   const tt = useTranslations("transit");
   const href = row ? procedureHref(row) : undefined;
@@ -116,13 +106,26 @@ export default function TripCheck({
   // always allowed (Enter adds whatever was typed, in or out of this list);
   // suggestions are a shortcut, not a constraint (AGENTS.md §2: a pair not
   // being covered is a valid, honest answer, never a dead end).
+  // The resolver and rule corpus load just after first render, so the page
+  // paints and the pickers work without waiting for ~2.8 MB of data.
+  const [engine, setEngine] = useState<typeof import("../lib/trip-engine") | null>(null);
+  useEffect(() => {
+    let live = true;
+    void import("../lib/trip-engine").then((m) => {
+      if (live) setEngine(m);
+    });
+    return () => {
+      live = false;
+    };
+  }, []);
+
   const itemSuggestionPool = useMemo(() => {
-    if (!destination) return [];
+    if (!destination || !engine) return [];
     const isSchengen =
       destination === SCHENGEN_DESTINATION || schengenCountries.some((c) => c.code === destination);
     const customsDestination = isSchengen ? EU_CUSTOMS_CODE : destination;
     const pool = new Set<string>();
-    customsItems
+    engine.customsItems
       .filter(
         (it) =>
           (it.destination === customsDestination || it.destination === destination) &&
@@ -130,7 +133,7 @@ export default function TripCheck({
       )
       .forEach((it) => it.names.forEach((n) => pool.add(n)));
     return [...pool].sort();
-  }, [destination]);
+  }, [destination, engine]);
 
   const itemSuggestions = useMemo(() => {
     const q = itemInput.trim().toLowerCase();
@@ -139,9 +142,9 @@ export default function TripCheck({
   }, [itemInput, itemSuggestionPool, items]);
 
   const result: TripCheckResult | null = useMemo(() => {
-    if (!submitted || !nationality || !destination) return null;
-    return resolveTripCheck(nationality, destination, items, transit || undefined);
-  }, [submitted, nationality, destination, items, transit]);
+    if (!submitted || !nationality || !destination || !engine) return null;
+    return engine.resolveTripCheck(nationality, destination, items, transit || undefined);
+  }, [submitted, nationality, destination, items, transit, engine]);
 
   // Best-effort, fire-and-forget: report items nobody's verified yet so real
   // search demand — not guesswork — drives which niche items get researched

@@ -15,9 +15,9 @@ import {
 import { expandQuery, isFuzzyMatch } from "./fuzzy-match";
 import { nationalityBySlug } from "./nationalities";
 
-import { SCHENGEN_DESTINATION } from "./schengen-sentinel";
+import { resolveMapDestinationCode, SCHENGEN_DESTINATION, SCHENGEN_REPRESENTATIVE_CODE } from "./schengen-sentinel";
 
-export { SCHENGEN_DESTINATION };
+export { resolveMapDestinationCode, SCHENGEN_DESTINATION };
 
 export type EntryBasis =
   | "citizen"
@@ -87,8 +87,6 @@ function isFreeMovementDestination(code: string): boolean {
   return upper === SCHENGEN_DESTINATION || isSchengenCode(upper) || countries.some((c) => c.code === upper && c.euMember);
 }
 
-/** Symbolic member state used to place the map marker when "Schengen Area, unspecified" is picked. */
-const SCHENGEN_REPRESENTATIVE_CODE = "BE";
 
 function resolveEntry(
   nationality: string,
@@ -225,10 +223,6 @@ function resolveEntry(
  * Schengen-sentinel handling as resolveEntry, exposed standalone so the UI can
  * preview the map before a full trip check (nationality + items) is submitted.
  */
-export function resolveMapDestinationCode(destination: string): string {
-  const dest = destination.toUpperCase();
-  return dest === SCHENGEN_DESTINATION ? SCHENGEN_REPRESENTATIVE_CODE : dest;
-}
 
 /**
  * Case-insensitive match against an item's slug or its synonym list — tried

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import { checkedYear, describeRule, firstSentence, seoVerdictKey, titleWithAnswer } from "../../../../lib/seo-text";
 import { notFound } from "next/navigation";
 import BreadcrumbJsonLd from "../../../../components/BreadcrumbJsonLd";
 import CustomsRowCard, { VERDICT_STYLES } from "../../../../components/CustomsRowCard";
@@ -40,13 +41,19 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const pair = productPair(product, destination);
   if (!pair) return {};
   const t = await getTranslations("medicationPair");
+  const ts = await getTranslations("seo");
+  const tv = await getTranslations("destinationPage.verdict");
   const vars = { product: pair.product.name, destination: pair.destination.name };
-  const title = t("metaTitle", vars);
-  const description = t("metaDescription", {
-    ...vars,
-    answer: `${await shortAnswer(pair)}.`,
-    date: latestVerified(pair.rows) ?? "",
-  });
+  const single = pair.rows.length === 1 ? pair.rows[0]! : undefined;
+  const title = titleWithAnswer(
+    t("metaTitle", vars),
+    single ? ts(`verdict.${seoVerdictKey(single)}`) : undefined,
+    checkedYear(pair.rows),
+  );
+  const lead = single
+    ? firstSentence(single.limits?.description ?? single.notes ?? tv(single.verdict))
+    : pair.rows.map((r) => `${rowLabel(r.slug, pair.destination.code)}: ${tv(r.verdict)}`).join("; ") + ".";
+  const description = describeRule(lead, ts("tail", { date: latestVerified(pair.rows) ?? "" }));
   return {
     title,
     description,
@@ -73,6 +80,7 @@ export default async function MedicationPairPage({ params }: { params: Promise<P
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    ...(latestVerified(pair.rows) ? { dateModified: latestVerified(pair.rows) } : {}),
     mainEntity: [
       {
         "@type": "Question",

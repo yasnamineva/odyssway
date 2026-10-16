@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import BreadcrumbJsonLd from "../../../components/BreadcrumbJsonLd";
+import { DESCRIPTION_MAX, clip, firstSentence } from "../../../lib/seo-text";
+import { SITE_URL } from "../../../lib/site";
 import { VERDICT_STYLES } from "../../../components/CustomsRowCard";
 import {
   latestVerified,
@@ -16,6 +18,21 @@ interface Params {
 
 export const dynamicParams = false;
 
+/**
+ * One answer class per country: a country whose rows disagree (e.g. one form
+ * allowed, another banned) counts as conditional, never as allowed.
+ */
+function verdictCounts(pairs: ReturnType<typeof pairsForProduct>) {
+  const counts = { banned: 0, conditional: 0, allowed: 0 };
+  for (const pair of pairs) {
+    const verdicts = new Set(pair.rows.map((r) => r.verdict));
+    if (verdicts.size === 1 && verdicts.has("prohibited")) counts.banned += 1;
+    else if ([...verdicts].every((v) => v === "allowed" || v === "allowed_with_limits")) counts.allowed += 1;
+    else counts.conditional += 1;
+  }
+  return counts;
+}
+
 export function generateStaticParams(): Params[] {
   return medicationProducts.map((p) => ({ product: p.slug }));
 }
@@ -24,12 +41,14 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const product = productBySlug((await params).product);
   if (!product) return {};
   const t = await getTranslations("medicationProduct");
-  const vars = { product: product.name, count: pairsForProduct(product.slug).length };
+  const pairs = pairsForProduct(product.slug);
+  const vars = { product: product.name, count: pairs.length };
+  const description = clip(t("summary", { ...vars, ...verdictCounts(pairs) }), DESCRIPTION_MAX);
   return {
     title: t("metaTitle", vars),
-    description: t("metaDescription", vars),
+    description,
     alternates: { canonical: `/medications/${product.slug}` },
-    openGraph: { title: t("metaTitle", vars), description: t("metaDescription", vars), images: ["/opengraph-image"] },
+    openGraph: { title: t("metaTitle", vars), description, images: ["/opengraph-image"] },
   };
 }
 
@@ -42,8 +61,43 @@ export default async function MedicationProductPage({ params }: { params: Promis
   const tc = await getTranslations("common");
   const others = medicationProducts.filter((p) => p.slug !== product.slug);
 
+  const counts = verdictCounts(pairs);
+
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: t("h1", { product: product.name }),
+      itemListElement: pairs.map((pair, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: pair.destination.name,
+        url: `${SITE_URL}/medications/${product.slug}/${pair.destinationSlug}`,
+      })),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: pairs.map((pair) => ({
+        "@type": "Question",
+        name: t("faqQuestion", { product: product.name, destination: pair.destination.name }),
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: pair.rows
+            .map((r) => {
+              const v = tv(r.verdict);
+              const lead = r.limits?.description ? ` ${clip(firstSentence(r.limits.description), 220)}` : "";
+              return `${v.charAt(0).toUpperCase()}${v.slice(1)}.${lead}`;
+            })
+            .join(" "),
+        },
+      })),
+    },
+  ];
+
   return (
     <article className="mx-auto max-w-3xl space-y-6">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <BreadcrumbJsonLd
         trail={[
           { name: t("breadcrumbRoot"), path: "/medications" },
@@ -62,6 +116,9 @@ export default async function MedicationProductPage({ params }: { params: Promis
           {t("h1", { product: product.name })}
         </h1>
         <p className="mt-3 text-sm leading-relaxed text-slate-600">{t("intro", { product: product.name })}</p>
+        <p className="mt-3 rounded-xl bg-slate-50 p-3 text-sm leading-relaxed text-slate-800" data-testid="product-summary">
+          {t("summary", { product: product.name, count: pairs.length, ...counts })}
+        </p>
       </header>
 
       <table className="w-full border-y border-slate-200 text-left text-sm">

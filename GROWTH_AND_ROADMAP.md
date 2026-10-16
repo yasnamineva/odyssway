@@ -455,3 +455,19 @@ gate was passed or missed, and why.
 - **2026-10-16 (overnight). Medication holes.** The Bahamas now has a medication row
   (Bahamian embassy: carry a doctor's letter). Jordan, Nigeria and Cambodia still have
   none: no primary traveller source found (details in `data/UNVERIFIED/TODO.md`).
+- **2026-10-16. SEO sprint 1 (§2.2, §2.3).**
+  - **Answers in search snippets:** `/medications/[p]/[c]` and `/bring/[i]/[c]` titles now
+    carry the verdict and the year checked ("Can you bring Adderall to Japan? No, it's
+    banned (2026)"); descriptions open with the rule's own first sentence
+    (`lib/seo-text.ts`). Product hubs open with a counted summary ("banned in X of N
+    countries…") used as the meta description, plus ItemList and FAQPage markup.
+  - **Freshness markup:** `dateModified` (the date the rule was checked) on every
+    answer page's FAQPage.
+  - **Duplicate content cut:** `/bring/[item]` hubs show one sentence per country and
+    link to the full page; `/bring/medication` went from 800 KB to 388 KB of HTML.
+  - **Internal links:** homepage "Travelling with medicine" section linking every
+    medicine hub; "Medicines" in the header nav and footer.
+  - **AI citation:** `/llms.txt` lists tools, method, hubs, countries, articles, API.
+  - **Speed:** Trip Check and the widget load the 2.8 MB rule corpus after first paint
+    (`lib/trip-engine.ts`); first load 483 KB → 152 KB, Lighthouse mobile performance
+    79 → 91 on /trip-check. SEO and accessibility 100 on all tested pages.

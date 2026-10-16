@@ -85,6 +85,7 @@ export default async function TravelPairPage({ params }: { params: Promise<Param
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    ...(row.verified_at ? { dateModified: row.verified_at } : {}),
     mainEntity: [
       {
         "@type": "Question",

@@ -52,9 +52,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "kratom-phenibut-poppers-customs",
     title: "Kratom, phenibut and poppers: easy to buy, banned at these borders",
-    seoTitle: "Can You Bring Kratom Abroad? Australia, Japan, Singapore, Sweden, NZ",
+    seoTitle: "Can You Bring Kratom Abroad? Australia, Japan, Singapore, Sweden",
     seoDescription:
-      "Kratom is banned at the Australian, Japanese, Singaporean and Swedish borders, and New Zealand holds it without a doctor's authority. Phenibut: Australia. Poppers: Japan.",
+      "Kratom is banned in Australia, Japan, Singapore and Sweden; New Zealand holds it without a doctor's authority. Australia bans phenibut, Japan bans poppers.",
     dek: "Kratom is banned in Australia, Japan, Singapore and Sweden, and held at New Zealand's border without a doctor's say-so. Australia also bans phenibut, and Japan bans poppers.",
     date: "2026-10-15",
     category: "Medicine",
@@ -72,7 +72,7 @@ export const blogPosts: BlogPost[] = [
     title: "Legal at home, trouble at the border: melatonin and nicotine pouches",
     seoTitle: "Can You Bring Melatonin or Zyn Abroad? Australia, France, NZ, UK",
     seoDescription:
-      "Australia banned nicotine pouches for travellers in July 2026, France in April 2026; Singapore prohibits them. Melatonin needs a prescription for NZ and Australia.",
+      "Australia banned nicotine pouches for travellers in July 2026, France in April; Singapore bans them too. Melatonin needs a prescription in NZ and Australia.",
     dek: "Australia now seizes nicotine pouches at the border, and France and Singapore ban them. Melatonin, a US supplement, is a prescription medicine in New Zealand, Australia and the UK.",
     date: "2026-10-15",
     category: "Medicine",
@@ -90,7 +90,7 @@ export const blogPosts: BlogPost[] = [
     title: "Travelling with peptides? \"Research use only\" won't get BPC-157 through customs",
     seoTitle: "Can You Travel With Peptides? BPC-157, TB-500 at Customs",
     seoDescription:
-      "BPC-157, TB-500 and melanotan II are unapproved drugs at the US, Canadian and New Zealand borders, and need a prescription for Australia. Growth hormone and HCG: UK and Australia.",
+      "BPC-157, TB-500 and melanotan II are unapproved drugs in the US, Canada and New Zealand, and need a prescription in Australia. Plus growth hormone in the UK.",
     dek: "The US, Canada and New Zealand treat research peptides as unapproved medicines, and Australia needs a prescription. The UK lets you carry prescribed growth hormone and HCG, but only in person.",
     date: "2026-10-13",
     category: "Medicine",

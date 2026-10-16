@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import { checkedYear, describeRule, firstSentence, seoVerdictKey, titleWithAnswer } from "../../../../lib/seo-text";
 import { notFound } from "next/navigation";
 import { BRING_CATEGORIES } from "../../../../lib/bring-categories";
 import { bringPair, bringPairs, bringPairsForDestination, rowLabel } from "../../../../lib/bring-pages";
@@ -32,19 +33,19 @@ export async function generateMetadata({
   const pair = bringPair(item, destination);
   if (!pair) return {};
   const t = await getTranslations("bringDestinationPage");
+  const ts = await getTranslations("seo");
   const tv = await getTranslations("destinationPage.verdict");
   const meta = BRING_CATEGORIES[pair.category];
-  const answer =
-    pair.rows.length === 1
-      ? `${capitalize(tv(pair.rows[0]!.verdict))}.`
-      : t("answerMultiple").replace(/:$/, ".");
-  const title = t("metaTitle", { item: meta.searchLabel, destination: pair.destination.name });
-  const description = t("metaDescription", {
-    item: meta.searchLabel,
-    destination: pair.destination.name,
-    answer,
-    date: pair.lastVerified ?? "",
-  });
+  const single = pair.rows.length === 1 ? pair.rows[0]! : undefined;
+  const title = titleWithAnswer(
+    t("metaTitle", { item: meta.searchLabel, destination: pair.destination.name }),
+    single ? ts(`verdict.${seoVerdictKey(single)}`) : undefined,
+    checkedYear(pair.rows),
+  );
+  const lead = single
+    ? firstSentence(single.limits?.description ?? single.notes ?? tv(single.verdict))
+    : pair.rows.map((r) => `${rowLabel(r.slug, pair.destination.code)}: ${tv(r.verdict)}`).join("; ") + ".";
+  const description = describeRule(lead, ts("tail", { date: pair.lastVerified ?? "" }));
   return {
     title,
     description,
@@ -89,6 +90,7 @@ export default async function BringDestinationPage({ params }: { params: Promise
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
+      ...(pair.lastVerified ? { dateModified: pair.lastVerified } : {}),
       mainEntity: [
         {
           "@type": "Question",

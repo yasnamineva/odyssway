@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Odyssway — can you go, for how long, and what can you bring?",
-    "tripCheckTitle": "Trip Check — Odyssway",
+    "tripCheckTitle": "Trip Check: visa, stay and customs checker for your trip",
     "tripCheckDescription": "Tell us your nationality and destination: entry requirements, how long you can stay, documents needed and whether your items clear customs, all cited.",
     "calculatorTitle": "Schengen 90/180 Calculator — Odyssway",
     "calculatorDescription": "The EU's rolling 90/180-day rule, computed exactly: multiple trips, residence-permit exclusions, dual citizenship, a day-by-day timeline, and PDF export.",
@@ -11,6 +11,7 @@
     "brand": "Odyssway",
     "nav": {
       "tripCheck": "Trip Check",
+      "medicines": "Medicines",
       "calculator": "Calculator",
       "rule": "90/180 rule",
       "ees": "EES",
@@ -269,7 +270,7 @@
   },
   "widgetPage": {
     "metaTitle": "Free Schengen 90/180 calculator for your website",
-    "metaDescription": "Embed Odyssway's free Schengen 90/180-day calculator, or a \"Can I bring it?\" customs checker, on your travel blog or expat site with one copy-paste snippet. No account, no tracking.",
+    "metaDescription": "Embed a free Schengen 90/180 calculator or a \"Can I bring it?\" customs checker on your travel blog with one copy-paste snippet. No account, no tracking.",
     "h1": "Add the Schengen calculator to your site",
     "intro": "Running a travel blog, expat guide or visa site? Give your readers the same 90/180-day calculator we run here. It's free, needs no account, and stays up to date when the rules or our engine change.",
     "snippetTitle": "Copy this into your page",
@@ -306,6 +307,8 @@
     "colChecked": "Checked",
     "breadcrumbRoot": "Medicines",
     "missing": "Country not listed? We have not verified a rule that names {product} there yet. Trip Check shows what we do know.",
+    "summary": "{product} at the border: banned in {banned} of {count} countries we've checked, allowed with conditions in {conditional}, allowed within limits in {allowed}.",
+    "faqQuestion": "Can you bring {product} to {destination}?",
     "otherMedicines": "Other medicines"
   },
   "medicationPair": {
@@ -339,6 +342,17 @@
     "fullAnswer": "Full answer, with your nationality and route, on Odyssway →",
     "disclaimer": "Informational only, not legal advice. Every answer is checked against an official source.",
     "poweredBy": "Odyssway"
+  },
+  "seo": {
+    "verdict": {
+      "prohibited": "No, it's banned",
+      "allowed_with_limits": "Yes, with limits",
+      "allowed": "Yes",
+      "declaration_required": "Yes, but declare it",
+      "depends": "It depends",
+      "permit": "Only with a permit"
+    },
+    "tail": "Official source, checked {date}."
   },
   "borderCard": {
     "button": "Download border card (PDF)",
@@ -517,6 +531,13 @@
       "heading": "Ready to check your trip?",
       "sub": "Two fields, one answer — cited, dated, and free. No account, nothing stored."
     },
+    "medicines": {
+      "eyebrow": "Travelling with medicine",
+      "heading": "Can you bring your medicine?",
+      "sub": "Country-by-country rules for the medicines people ask about most, each from the official source and dated.",
+      "cta": "All medicines →",
+      "bring": "Everything you can bring, by item →"
+    },
     "blogTeaser": {
       "eyebrow": "Blog",
       "heading": "From the travel blog",
@@ -694,6 +715,7 @@
     "terms": "Terms",
     "blog": "Blog",
     "bring": "What can I bring?",
+    "medicines": "Medicines by name",
     "widget": "Embed the calculator",
     "developers": "API"
   },
