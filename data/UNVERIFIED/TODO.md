@@ -3425,3 +3425,33 @@ Destinations with no medication row: BS, JO, KH, NG.
 - **Nigeria**: NAFDAC pages found cover export and commercial import permits, not
   travellers; customs.gov.ng returns 403.
 - **Cambodia**: customs.gov.kh unreachable; only third-party sites.
+
+## Accuracy sweep: medication names and classifications (2026-10-16)
+
+Rule applied: a medicine name is in a row's `names` (and so gets a product page) only
+when the row's source names it, or an official schedule we cite does.
+- Verified national schedules and cited them: US (21 CFR 1308.12/1308.14), UK (Misuse of
+  Drugs Regs 2001 Sch 2–4), Canada (CDSA Sch I/III/IV; lisdexamfetamine via "amphetamines
+  … derivatives", marked as our reading), Ireland (S.I. 173/2017).
+- UN level: INCB Green List (36th ed., 2025) and Yellow List (65th ed., July 2026) cited
+  for amfetamine, methylphenidate, alprazolam, diazepam, clonazepam, codeine, oxycodone.
+  **Lisdexamfetamine, tramadol and modafinil are on neither list.**
+- **Errors fixed:** controlled-medication-eu said the UN conventions cover tramadol and
+  Vyvanse (they don't); the 30-day Schengen certificate figure is now cited to Irish
+  Revenue eBrief 219/23 instead of "understood to"; MX "should be sufficient" inference
+  replaced; UAE unsourced "detentions" sentence removed; SA "as commonly prescribed"
+  examples now cited to INCB; CN "very likely" and an unverified opium-import claim
+  removed; CN "3-month in practice" claim removed; RS "likely" advice reworded; NZ
+  unconfirmed classification replaced with INCB facts.
+- Removed unsupported names (Vyvanse/lisdexamfetamine/tramadol) from MX, CN, SA, BR, KR,
+  HK, MY, MV, RS, TW, CY, AU, PH, NZ, EU. 19 product pages withdrawn with 307 redirects
+  to the product hub (next.config.ts `withdrawnMedicationPairs`).
+- verified_at not bumped: these rows' main sources weren't re-read today.
+
+Open:
+- **Vietnam** (`controlled-medication-vn`): its own notes say the day-supply figures are
+  "search-engine-corroborated rather than read verbatim from a primary source". That
+  doesn't meet §3. Re-read kv17.customs.gov.vn or find the decree, or move the row to
+  UNVERIFIED.
+- **New Zealand** schedules: legislation.govt.nz returns 403 here.
+- **Mexico, Saudi Arabia, China, Serbia, Brazil** national schedules not read.

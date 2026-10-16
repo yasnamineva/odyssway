@@ -483,3 +483,10 @@ gate was passed or missed, and why.
   - **Share cards:** every `/medications/[p]/[c]` and `/bring/[i]/[c]` page has its own
     preview image ("Adderall to Japan — No, it's banned. Checked … on 2026-10-02"),
     prerendered at build.
+- **2026-10-16. Accuracy sweep of medication rows.** Every medicine name that creates a
+  product page must now be named by the row's source or by an official schedule we
+  cite (US, UK, Canada and Ireland schedules verified; INCB Green/Yellow Lists for
+  internationally controlled drugs). Fixed a real error: the EU row said tramadol and
+  Vyvanse are internationally controlled; they aren't. Removed unsupported inferences
+  and claims in 8 rows, and withdrew 19 product pages whose country source doesn't
+  name the medicine (temporary redirects to the product hub).

@@ -29,6 +29,38 @@ function destinationCodeRedirects() {
 
 // Blog posts retired in the 2026-10 rewrite, each sent to the post that now
 // covers its topic (or the blog index for the old coverage-milestone posts).
+/**
+ * Product × country pages withdrawn on 2026-10-16: the country's own source
+ * doesn't name the medicine, and lisdexamfetamine (Vyvanse) and tramadol aren't
+ * on the UN's international control lists, so the page's claim wasn't supported.
+ * Temporary (307) — a page can return once a primary source names the medicine.
+ */
+const withdrawnMedicationPairs = [
+    "vyvanse/mexico",
+    "vyvanse/china",
+    "vyvanse/saudi-arabia",
+    "vyvanse/brazil",
+    "vyvanse/south-korea",
+    "vyvanse/hong-kong",
+    "vyvanse/malaysia",
+    "vyvanse/maldives",
+    "vyvanse/serbia",
+    "vyvanse/taiwan",
+    "vyvanse/cyprus",
+    "tramadol/australia",
+    "tramadol/philippines",
+    "tramadol/new-zealand",
+    "tramadol/saudi-arabia",
+    "tramadol/brazil",
+    "tramadol/malaysia",
+    "tramadol/maldives",
+    "tramadol/cyprus",
+].map((pair) => ({
+  source: `/medications/${pair}`,
+  destination: `/medications/${pair.split("/")[0]}`,
+  permanent: false,
+}));
+
 const retiredBlogRedirects = (
   [
     ["ees-live-five-countries", "/blog/europe-counts-your-days"],
@@ -46,7 +78,7 @@ const retiredBlogRedirects = (
 
 const nextConfig: NextConfig = {
   async redirects() {
-    return [...destinationCodeRedirects(), ...retiredBlogRedirects];
+    return [...destinationCodeRedirects(), ...retiredBlogRedirects, ...withdrawnMedicationPairs];
   },
   transpilePackages: ["@odyssway/engine"],
   pageExtensions: ["ts", "tsx", "mdx"],

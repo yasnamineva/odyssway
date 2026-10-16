@@ -681,16 +681,28 @@
     "category": "medication",
     "verdict": "depends",
     "limits": {
-      "description": "Ordinary prescription medicine is a national-law matter, not EU-harmonized. Narcotic or psychotropic medication may be carried with a doctor's certificate valid for up to 30 days."
+      "description": "Ordinary prescription medicine is a national-law matter, not EU-harmonized. Narcotic or psychotropic medication needs an Article 75 certificate from your home country's authority; Ireland's Revenue says it covers a maximum 30-day supply."
     },
-    "summary": "Each EU country sets its own rules for ordinary medicine. Narcotic or psychotropic medicine needs a certificate covering up to 30 days.",
+    "summary": "Each EU country sets its own rules for ordinary medicine. Narcotic or psychotropic medicine needs an Article 75 certificate (up to 30 days' supply).",
     "legal_source": {
       "name": "Convention Implementing the Schengen Agreement, Art. 75",
       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02)"
     },
     "verified_at": "2026-08-10",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "The rule itself",
+        "name": "Convention Implementing the Schengen Agreement, Art. 75",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02)"
+      },
+      {
+        "claim": "Article 75 certificate covers a maximum 30-day supply",
+        "name": "Revenue (Ireland) — eBrief No. 219/23: Article 75 certificate (18 October 2023)",
+        "url": "https://revenue.ie/en/tax-professionals/ebrief/2023/no-2192023.aspx"
+      }
+    ]
   },
   {
     "slug": "meat-dairy-eu",
@@ -4460,8 +4472,6 @@
       "psychotropic medication",
       "adderall",
       "amphetamine",
-      "vyvanse",
-      "lisdexamfetamine",
       "ritalin",
       "methylphenidate",
       "xanax",
@@ -4472,25 +4482,46 @@
       "clonazepam",
       "codeine",
       "oxycodone",
-      "tramadol",
       "opioid painkiller"
     ],
     "destination": "EU",
     "category": "medication",
     "verdict": "depends",
     "limits": {
-      "description": "Article 75 of the Convention Implementing the Schengen Agreement (CISA) lets travelers carry 'the narcotic drugs and psychotropic substances that are necessary for their medical treatment' if, at any check, they can produce a certificate issued or authenticated by a competent authority of their state of residence. Article 75 itself leaves the certificate's exact form and the details on permitted quantity and journey duration to the Schengen Executive Committee; in practice the resulting 'Schengen certificate' is understood to cover only the quantity needed for a journey of up to 30 days.",
+      "description": "Article 75 of the Convention Implementing the Schengen Agreement (CISA) lets travelers carry 'the narcotic drugs and psychotropic substances that are necessary for their medical treatment' if, at any check, they can produce a certificate issued or authenticated by a competent authority of their state of residence. Article 75 itself leaves the certificate's exact form and the details on permitted quantity and journey duration to the Schengen Executive Committee. Ireland's Revenue describes the Article 75 certificate as covering a maximum 30-day supply of each prescribed product.",
       "quantity": "up to a 30-day supply, evidenced by the Schengen certificate"
     },
-    "notes": "This is a Schengen-wide legal basis (confirmed directly from Article 75's text), but the certificate itself is issued nationally — by a doctor, pharmacist, or health authority depending on the member state — before you travel; there is no single EU-wide online portal. Article 75 covers 'narcotic drugs and psychotropic substances' as legal classes rather than naming individual medicines, but these classes are the internationally scheduled categories (1961 and 1971 UN conventions) that cover common stimulants (Adderall/amphetamine, Vyvanse/lisdexamfetamine, Ritalin/methylphenidate), benzodiazepines (Xanax/alprazolam, Valium/diazepam, Klonopin/clonazepam), and opioid painkillers (codeine, oxycodone, tramadol). Some Schengen states still restrict or ban specific substances outright under their own national law regardless of the certificate — for example, the UK's own guidance (a non-Schengen state, cited here only as an illustration of the pattern) notes a Schengen certificate cannot be used to bring a Schedule 1 drug into Great Britain. Confirm with the specific member state's narcotics authority before traveling with an unusual medication.",
-    "summary": "Narcotic or psychotropic medicine is allowed with a certificate from your home country's authority, understood to cover up to 30 days.",
+    "notes": "This is a Schengen-wide legal basis (confirmed directly from Article 75's text), but the certificate itself is issued nationally — by a doctor, pharmacist, or health authority depending on the member state — before you travel; there is no single EU-wide online portal. Article 75 covers 'narcotic drugs and psychotropic substances' as classes rather than naming medicines. On the UN's international lists, amphetamine (Adderall) and methylphenidate (Ritalin) are psychotropic substances, as are alprazolam (Xanax), diazepam (Valium) and clonazepam (Klonopin); codeine and oxycodone are narcotic drugs. Lisdexamfetamine (Vyvanse) and tramadol are not on those lists, so whether they need a certificate depends on each country's own law. Some Schengen states still restrict or ban specific substances outright under their own national law regardless of the certificate — for example, the UK's own guidance (a non-Schengen state, cited here only as an illustration of the pattern) notes a Schengen certificate cannot be used to bring a Schedule 1 drug into Great Britain. Confirm with the specific member state's narcotics authority before traveling with an unusual medication.",
+    "summary": "Narcotic or psychotropic medicine needs a certificate from your home country's authority; Ireland says it covers up to 30 days' supply.",
     "legal_source": {
       "name": "Convention Implementing the Schengen Agreement, Art. 75",
       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02)"
     },
     "verified_at": "2026-09-13",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "The rule itself",
+        "name": "Convention Implementing the Schengen Agreement, Art. 75",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02)"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      },
+      {
+        "claim": "Article 75 certificate covers a maximum 30-day supply",
+        "name": "Revenue (Ireland) — eBrief No. 219/23: Article 75 certificate (18 October 2023)",
+        "url": "https://revenue.ie/en/tax-professionals/ebrief/2023/no-2192023.aspx"
+      }
+    ]
   },
   {
     "slug": "controlled-medication-ke",
@@ -4562,8 +4593,6 @@
       "psychotropic medication",
       "adderall",
       "amphetamine",
-      "vyvanse",
-      "lisdexamfetamine",
       "ritalin",
       "methylphenidate",
       "xanax",
@@ -4577,17 +4606,34 @@
     "category": "medication",
     "verdict": "depends",
     "limits": {
-      "description": "ANAM's personal-baggage guidance states that for psychotropic substances ('Tratándose de sustancias psicotrópicas deberá mostrarse la receta médica correspondiente') the traveler must show the corresponding medical prescription — no separate advance import permit is described for personal-use quantities of psychotropics. Under Mexico's Ley General de Salud, 'sustancias psicotrópicas' is the class that covers common controlled stimulants (e.g. amphetamine/Adderall, methylphenidate/Ritalin, lisdexamfetamine/Vyvanse) and benzodiazepines (e.g. alprazolam/Xanax, diazepam/Valium, clonazepam/Klonopin), so a doctor's prescription for these should be sufficient for personal-use quantities at the border."
+      "description": "ANAM's personal-baggage guidance states that for psychotropic substances ('Tratándose de sustancias psicotrópicas deberá mostrarse la receta médica correspondiente') the traveler must show the corresponding medical prescription — no separate advance import permit is described for personal-use quantities of psychotropics. ANAM doesn't list which medicines count as psychotropic. Amphetamine (Adderall), methylphenidate (Ritalin), alprazolam (Xanax), diazepam (Valium) and clonazepam (Klonopin) are psychotropic substances on the UN's international list; we haven't read Mexico's own schedule."
     },
     "notes": "ANAM's traveler-facing text names only 'sustancias psicotrópicas' (psychotropic substances) — it does not mention 'estupefacientes' (narcotic drugs), the separate Mexican legal category that covers opioid painkillers such as codeine, oxycodone, and tramadol. Whether the same simple prescription-only rule extends to opioid painkillers, or whether they instead require the more formal COFEPRIS sanitary import permit used for controlled narcotics (Permiso Sanitario COFEPRIS-03-023, aimed primarily at commercial/institutional importers), is not addressed by ANAM's page, so opioid painkillers are deliberately left out of this entry's name list. No numeric day-supply or unit-quantity cap is published for psychotropics either. Travelers carrying opioid painkillers should confirm with COFEPRIS (tel. 800 033 5050) or a Mexican consulate before travel.",
-    "summary": "Psychotropic medicines such as Adderall, Ritalin or Xanax: show the matching prescription at customs. No advance permit is described.",
+    "summary": "Psychotropic medicines: show the matching prescription at customs. ANAM describes no advance permit.",
     "legal_source": {
       "name": "ANAM (Agencia Nacional de Aduanas de México) — Equipaje y franquicia",
       "url": "https://www.anam.gob.mx/equipaje-y-franquicia/"
     },
     "verified_at": "2026-09-13",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "The rule itself",
+        "name": "ANAM (Agencia Nacional de Aduanas de México) — Equipaje y franquicia",
+        "url": "https://www.anam.gob.mx/equipaje-y-franquicia/"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
   },
   {
     "slug": "injectable-medication-mx",
@@ -4672,7 +4718,7 @@
       "description": "All of the following are listed by name on the UAE's official controlled/semi-controlled medicines schedule and are allowed for personal use ONLY with supporting documents, up to a maximum 3-month supply: amphetamine (Adderall), lisdexamfetamine (Vyvanse), methylphenidate (Ritalin) — Psychotropic Schedule II; alprazolam (Xanax), diazepam (Valium), clonazepam (Klonopin) — Psychotropic Schedule IV / 'CD'; codeine, oxycodone — Narcotic Schedule I/II; tramadol — 'CD'. None of these is flatly prohibited. Travelers must carry BOTH a dated, stamped prescription (issued within 3 months) AND an attested medical report (issued within 1 year) naming the medicine, dose, and treatment duration.",
       "quantity": "up to a 3-month supply (or the length of stay, whichever is less)"
     },
-    "notes": "The Emirates Drug Establishment (EDE) — which took over the Ministry of Health and Prevention's (MOHAP) controlled-medicines functions on 29 Dec 2025 under Federal Decree-Law No. 38 of 2024 — offers an optional electronic pre-approval permit before travel; it is NOT strictly mandatory, and travelers may instead simply declare the medicine with prescription + medical report at the port of entry. In practice, undeclared or undocumented controlled medication is what has led to detentions at UAE airports historically, even for drugs that are technically allowed with paperwork — this row corrects the common assumption (from older secondary press reporting) that these drugs are outright banned; per EDE's own current list they are not, but the documentation bar (prescription AND medical report, not just prescription alone) is stricter than most countries. This list is dated 15/09/2022 by EDE/MOHAP but remains the current published schedule as of Sept 2026; it explicitly states non-inclusion of a substance doesn't mean it's uncontrolled, so travelers with any other controlled medication should verify against EDE directly. MOHAP's own domain (mohap.gov.ae) was unreachable during this research (connection resets), so EDE.gov.ae — confirmed as the current regulator via the Federal Decree-Law — was used instead.",
+    "notes": "The Emirates Drug Establishment (EDE) — which took over the Ministry of Health and Prevention's (MOHAP) controlled-medicines functions on 29 Dec 2025 under Federal Decree-Law No. 38 of 2024 — offers an optional electronic pre-approval permit before travel; it is NOT strictly mandatory, and travelers may instead simply declare the medicine with prescription + medical report at the port of entry. This row corrects the common assumption (from older secondary press reporting) that these drugs are outright banned; per EDE's own current list they are not, but the documentation bar (prescription AND medical report, not just prescription alone) is stricter than most countries. This list is dated 15/09/2022 by EDE/MOHAP but remains the current published schedule as of Sept 2026; it explicitly states non-inclusion of a substance doesn't mean it's uncontrolled, so travelers with any other controlled medication should verify against EDE directly. MOHAP's own domain (mohap.gov.ae) was unreachable during this research (connection resets), so EDE.gov.ae — confirmed as the current regulator via the Federal Decree-Law — was used instead.",
     "summary": "Adderall, Ritalin, Xanax, codeine and similar: allowed up to 3 months only with a recent stamped prescription and an attested medical report.",
     "legal_source": {
       "name": "Emirates Drug Establishment (EDE) — Issue of Permit to Import Medicines for Personal Use / Controlled and Semi-Controlled Medicines List",
@@ -4749,8 +4795,6 @@
       "controlled substance",
       "adderall",
       "amphetamine",
-      "vyvanse",
-      "lisdexamfetamine",
       "ritalin",
       "methylphenidate",
       "xanax",
@@ -4761,8 +4805,7 @@
       "clonazepam",
       "opioid painkiller",
       "codeine",
-      "oxycodone",
-      "tramadol"
+      "oxycodone"
     ],
     "destination": "BR",
     "category": "medication",
@@ -4777,7 +4820,24 @@
     },
     "verified_at": "2026-09-13",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "The rule itself",
+        "name": "ANVISA — Importação de produtos controlados (Medicamentos)",
+        "url": "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/controlados/importacao"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
   },
   {
     "slug": "injectable-medication-br",
@@ -5153,7 +5213,7 @@
       "description": "Individuals may cross the U.S. border with a Schedule II-V controlled substance for personal medical use if (1) it is in the original container it was dispensed in, and (2) the traveler declares it to a CBP officer, stating either the trade/chemical name and schedule, or the prescribing practitioner/pharmacy and prescription number. U.S. residents bringing such medication back into the U.S. after obtaining it abroad are capped at 50 dosage units combined across all such medication; that cap does not apply to medication lawfully obtained in the U.S. before departure, and the source does not state it applying to non-resident visitors entering with their own foreign prescription.",
       "quantity": "50 dosage units (U.S. residents only, for meds obtained abroad)"
     },
-    "notes": "This is a DEA regulation (21 CFR 1301.26), separate from CBP's 90-day-supply guidance on the site's general 'prescription medication' entry -- the two operate together. By DEA scheduling (a well-established, separately-documented fact, not itself re-verified against a DEA scheduling page in this pass), Schedule II covers amphetamine/Adderall, methylphenidate/Ritalin, lisdexamfetamine/Vyvanse and oxycodone; Schedule IV covers alprazolam/Xanax, diazepam/Valium, clonazepam/Klonopin and tramadol; codeine spans Schedule II-V depending on formulation -- all fall within the II-V range this exemption covers. The regulation text itself does not name these drugs by brand, only by schedule.",
+    "notes": "This is a DEA regulation (21 CFR 1301.26), separate from CBP's 90-day-supply guidance on the site's general 'prescription medication' entry -- the two operate together. Under the DEA's schedules, Schedule II (21 CFR 1308.12) lists amphetamine (Adderall), methylphenidate (Ritalin), lisdexamfetamine (Vyvanse), oxycodone and codeine, and Schedule IV (21 CFR 1308.14) lists alprazolam (Xanax), diazepam (Valium), clonazepam (Klonopin), tramadol and modafinil, so all fall within the II-V range this exemption covers. The regulation text itself does not name these drugs by brand, only by schedule.",
     "summary": "Controlled medicine is allowed for personal use if it's in its original container and you declare it to CBP.",
     "legal_source": {
       "name": "U.S. Drug Enforcement Administration / eCFR -- 21 CFR 1301.26, Exemption of certain persons from registration for personal use of controlled substances",
@@ -5161,7 +5221,24 @@
     },
     "verified_at": "2026-09-13",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "The rule itself",
+        "name": "U.S. Drug Enforcement Administration / eCFR -- 21 CFR 1301.26, Exemption of certain persons from registration for personal use of controlled substances",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-II/part-1301/section-1301.26"
+      },
+      {
+        "claim": "Schedule II lists amphetamine, methylphenidate, lisdexamfetamine, oxycodone, codeine",
+        "name": "21 CFR 1308.12 — Schedule II (eCFR, current)",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-II/part-1308/section-1308.12"
+      },
+      {
+        "claim": "Schedule IV lists alprazolam, diazepam, clonazepam, tramadol, modafinil",
+        "name": "21 CFR 1308.14 — Schedule IV (eCFR, current)",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-II/part-1308/section-1308.14"
+      }
+    ]
   },
   {
     "slug": "injectable-medication-us",
@@ -5232,7 +5309,29 @@
     },
     "verified_at": "2026-09-13",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "The rule itself",
+        "name": "gov.uk -- Taking controlled drugs into the UK",
+        "url": "https://www.gov.uk/travelling-controlled-drugs"
+      },
+      {
+        "claim": "Schedule 2 lists amphetamine, methylphenidate, lisdexamphetamine, oxycodone, codeine",
+        "name": "Misuse of Drugs Regulations 2001, Schedule 2 (legislation.gov.uk)",
+        "url": "https://www.legislation.gov.uk/uksi/2001/3998/schedule/2"
+      },
+      {
+        "claim": "Schedule 3 lists tramadol",
+        "name": "Misuse of Drugs Regulations 2001, Schedule 3 (legislation.gov.uk)",
+        "url": "https://www.legislation.gov.uk/uksi/2001/3998/schedule/3"
+      },
+      {
+        "claim": "Schedule 4 Part 1 lists alprazolam, diazepam, clonazepam",
+        "name": "Misuse of Drugs Regulations 2001, Schedule 4 (legislation.gov.uk)",
+        "url": "https://www.legislation.gov.uk/uksi/2001/3998/schedule/4"
+      }
+    ]
   },
   {
     "slug": "injectable-medication-gb",
@@ -5296,7 +5395,7 @@
       "description": "Under CBSA's Section 56 Class Exemption, travelers may personally carry (in person only -- not by mail or courier) a prescribed narcotic or Food and Drug Regulations Part G controlled drug up to the lesser of a single course of treatment or a 30-day supply, and a prescribed benzodiazepine/targeted substance up to the lesser of a single course of treatment or a 90-day supply. Opioids (codeine, oxycodone, tramadol) and stimulants (amphetamine, methylphenidate/Ritalin, lisdexamfetamine/Vyvanse) fall under the narcotic/Part-G 30-day limit; benzodiazepines (diazepam/Valium, alprazolam/Xanax, clonazepam/Klonopin) get the 90-day limit. Medication must be in pharmacy- or hospital-dispensed packaging with proper labelling, and must be declared to a CBSA officer at the border.",
       "quantity": "30-day supply (stimulants/opioids); 90-day supply (benzodiazepines)"
     },
-    "notes": "No advance import permit is required for these amounts under the Class Exemption -- but it does not cover Annex I-listed substances unless separately approved by Health Canada or the source country's regulator, and it explicitly does not apply to shipping controlled substances by mail or courier, only carrying them in person.",
+    "notes": "No advance import permit is required for these amounts under the Class Exemption -- but it does not cover Annex I-listed substances unless separately approved by Health Canada or the source country's regulator, and it explicitly does not apply to shipping controlled substances by mail or courier, only carrying them in person. Lisdexamfetamine (Vyvanse) isn't named in the Act; we treat it as covered by Schedule I's \"amphetamines, their salts, derivatives…\" entry, which is our reading.",
     "summary": "Carry it in person: up to 30 days of stimulants or opioids, 90 days of benzodiazepines, in labelled packaging. Declare it.",
     "legal_source": {
       "name": "Canada Border Services Agency -- Memorandum D19-9-2, Importation and Exportation of Controlled Substances and Precursors",
@@ -5304,7 +5403,19 @@
     },
     "verified_at": "2026-09-13",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "The rule itself",
+        "name": "Canada Border Services Agency -- Memorandum D19-9-2, Importation and Exportation of Controlled Substances and Precursors",
+        "url": "https://www.cbsa-asfc.gc.ca/publications/dm-md/d19/d19-9-2-eng.html"
+      },
+      {
+        "claim": "Schedule I: amphetamines and their derivatives, oxycodone, codeine, tramadol; Schedule III: methylphenidate; Schedule IV: alprazolam, diazepam, clonazepam",
+        "name": "Controlled Drugs and Substances Act, Schedules I–IV (Justice Laws)",
+        "url": "https://laws-lois.justice.gc.ca/eng/acts/c-38.8/FullText.html"
+      }
+    ]
   },
   {
     "slug": "injectable-medication-ca",
@@ -5356,7 +5467,6 @@
       "clonazepam",
       "codeine",
       "oxycodone",
-      "tramadol",
       "opioid painkiller"
     ],
     "destination": "AU",
@@ -5374,7 +5484,24 @@
     },
     "verified_at": "2026-09-13",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "The rule itself",
+        "name": "Australian Government Office of Drug Control -- Travelling to Australia with medicines and medical devices",
+        "url": "https://www.odc.gov.au/travellers/travelling-or-australia-medicines-and-medical-devices"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
   },
   {
     "slug": "injectable-medication-au",
@@ -5654,7 +5781,6 @@
       "clonazepam",
       "codeine",
       "oxycodone",
-      "tramadol",
       "opioid painkiller"
     ],
     "destination": "NZ",
@@ -5664,7 +5790,7 @@
       "description": "Medicines that are controlled drugs under New Zealand's Misuse of Drugs Act must be declared on the New Zealand Traveller Declaration and are capped at one month's supply (versus three months for ordinary prescription medicines), carried in original packaging with a prescription copy or a doctor's letter confirming the treatment.",
       "quantity": "1-month supply"
     },
-    "notes": "Neither NZ Customs' nor Medsafe's traveller pages (as fetched in this pass) name which specific drugs count as 'controlled drugs' for this rule -- there's no breakdown by stimulant/benzodiazepine/opioid class or schedule number, unlike Thailand's or Canada's guidance for the same topic. Under NZ's Misuse of Drugs Act, amphetamine-type stimulants, benzodiazepines (diazepam, alprazolam, clonazepam) and many opioids (codeine above OTC strength, oxycodone, tramadol) are classified as controlled drugs, but that classification was not independently confirmed against a primary NZ legal source in this pass -- the Ministry of Health's controlled-drugs page returned an access error (403) when fetched. Verdict is marked 'depends' rather than 'allowed_with_limits' for that reason. Adderall and Vyvanse specifically were not checked and are omitted; treat their NZ status as unconfirmed.",
+    "notes": "Neither NZ Customs' nor Medsafe's traveller pages (as fetched in this pass) name which specific drugs count as 'controlled drugs' for this rule -- there's no breakdown by stimulant/benzodiazepine/opioid class or schedule number, unlike Thailand's or Canada's guidance for the same topic. Amphetamine, methylphenidate, alprazolam, diazepam, clonazepam, codeine and oxycodone are on the UN's international lists of controlled substances. New Zealand's own schedules couldn't be read from here (legislation.govt.nz and the Ministry of Health page both refused access), so confirm your specific medicine with Medsafe. Verdict is marked 'depends' rather than 'allowed_with_limits' for that reason. Adderall and Vyvanse specifically were not checked and are omitted; treat their NZ status as unconfirmed.",
     "summary": "Controlled drugs: declare them and bring at most one month's supply, with a prescription copy or doctor's letter.",
     "legal_source": {
       "name": "New Zealand Customs Service -- Prohibited and restricted items: medicines",
@@ -5672,7 +5798,24 @@
     },
     "verified_at": "2026-09-13",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "The rule itself",
+        "name": "New Zealand Customs Service -- Prohibited and restricted items: medicines",
+        "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
   },
   {
     "slug": "cannabis-nz",
@@ -5759,8 +5902,6 @@
       "psychotropic medication",
       "adderall",
       "amphetamine",
-      "vyvanse",
-      "lisdexamfetamine",
       "ritalin",
       "methylphenidate",
       "xanax",
@@ -5771,18 +5912,17 @@
       "clonazepam",
       "codeine",
       "oxycodone",
-      "tramadol",
       "opioid painkiller"
     ],
     "destination": "SA",
     "category": "medication",
     "verdict": "depends",
     "limits": {
-      "description": "Any narcotic drug or psychotropic substance carried by a traveler for personal treatment (the kind of medicine that, as commonly prescribed, includes stimulants such as Adderall/amphetamine and Ritalin/methylphenidate, benzodiazepines such as Xanax/alprazolam and Valium/diazepam, and opioid painkillers such as codeine and oxycodone) must be cleared in advance through SFDA's Controlled Drugs System (CDS) at cds.sfda.gov.sa before arrival in or departure from Saudi Arabia. Clearance requires either (a) a detailed medical report from a licensed medical institution, issued within the last 6 months, naming the diagnosis, treatment plan, and the drug's scientific name and dosage, or (b) a doctor's prescription in the patient's name, issued within the last 6 months, with diagnosis, drug details and the institution's seal — plus a copy of the patient's ID and a signed pledge that the medicine is for the named patient's own use at their own risk.",
+      "description": "Any narcotic drug or psychotropic substance carried by a traveler for personal treatment (SFDA's document doesn't name medicines; on the UN's international lists these include amphetamine (Adderall), methylphenidate (Ritalin), alprazolam (Xanax), diazepam (Valium), codeine and oxycodone) must be cleared in advance through SFDA's Controlled Drugs System (CDS) at cds.sfda.gov.sa before arrival in or departure from Saudi Arabia. Clearance requires either (a) a detailed medical report from a licensed medical institution, issued within the last 6 months, naming the diagnosis, treatment plan, and the drug's scientific name and dosage, or (b) a doctor's prescription in the patient's name, issued within the last 6 months, with diagnosis, drug details and the institution's seal — plus a copy of the patient's ID and a signed pledge that the medicine is for the named patient's own use at their own risk.",
       "quantity": "No published blanket days'-supply figure; each medicine/quantity is submitted individually through the CDS online request for SFDA approval."
     },
     "notes": "Drugs listed in Category (D) of Schedule I, Category (A) of Schedule II, or Paragraph (IV) of the Psychotropic Substances schedule under Saudi Arabia's Law of Combating Narcotic Drugs and Psychotropic Substances cannot be cleared for travelers under any circumstances, regardless of prescription — SFDA's traveler-clearance document does not name which specific brand-name medicines fall in these banned categories, only the schedule references, so travelers should confirm their specific medication's classification with SFDA before applying. Apply through the CDS system before travel; the guidance does not state a fixed processing time.",
-    "summary": "Narcotic and psychotropic medicines, such as Adderall, Xanax or codeine, need SFDA clearance online before you travel.",
+    "summary": "Narcotic and psychotropic medicines need SFDA clearance online before you travel. Some categories can't be cleared at all.",
     "legal_source": {
       "name": "Saudi Food and Drug Authority (SFDA) — Controlled Drugs System (CDS), User Manual for Traveler Clearance, Article (6): Procedures and Controls for Clearance",
       "url": "https://cds.sfda.gov.sa/HomeFiles/TravilerJourneyEnglish.pdf"
@@ -5815,7 +5955,24 @@
       ],
       "verified_at": "2026-10-14",
       "verified_by": "agent:claude-opus-5-5"
-    }
+    },
+    "_sources": [
+      {
+        "claim": "The rule itself",
+        "name": "Saudi Food and Drug Authority (SFDA) — Controlled Drugs System (CDS), User Manual for Traveler Clearance, Article (6): Procedures and Controls for Clearance",
+        "url": "https://cds.sfda.gov.sa/HomeFiles/TravilerJourneyEnglish.pdf"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
   },
   {
     "slug": "controlled-medication-ph",
@@ -5836,7 +5993,6 @@
       "clonazepam",
       "codeine",
       "oxycodone",
-      "tramadol",
       "opioid painkiller"
     ],
     "destination": "PH",
@@ -5888,7 +6044,24 @@
         "url": "https://ddb.gov.ph/images/Board_Regulation/2014/BD.REG1.14.pdf"
       },
       "verified_at": "2026-10-14"
-    }
+    },
+    "_sources": [
+      {
+        "claim": "The rule itself",
+        "name": "Philippine Dangerous Drugs Board — Board Regulation No. 1, Series of 2014 (Comprehensive Amendments to Board Regulation No. 3, Series 2003), Section 35: Carrying of Dangerous Drugs and/or Drug Preparation containing Controlled Chemical by International Travelers",
+        "url": "https://ddb.gov.ph/images/Board_Regulation/2014/BD.REG1.14.pdf"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
   },
   {
     "slug": "cannabis-ph",
@@ -7110,8 +7283,6 @@
       "psychotropic medication",
       "adderall",
       "amphetamine",
-      "vyvanse",
-      "lisdexamfetamine",
       "ritalin",
       "methylphenidate",
       "stimulant medication"
@@ -7141,6 +7312,16 @@
         "claim": "Documents, 10-business-day processing, 90-day cap, 5-day extra, hand luggage, no mail, transit exemption",
         "name": "Ministry of Food and Drug Safety — Guideline on permit to bring in narcotics for self-treatment, with FAQ (attachment to the MFDS notice)",
         "url": "https://www.mfds.go.kr/eng/brd/m_60/down.do?brd_id=eng0013&seq=75669&data_tp=A&file_seq=1"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
       }
     ],
     "procedure": {
@@ -7214,7 +7395,7 @@
     "category": "medication",
     "verdict": "allowed_with_limits",
     "limits": {
-      "description": "\"进出境人员随身携带的个人自用的少量药品，应当以自用、合理数量为限，并接受海关监管\" (\"Small quantities of medication for personal use carried by inbound/outbound persons shall be limited to self-use, reasonable quantities, and subject to customs supervision\") — Art. 39, Measures for the Administration of Drug Import. There's no fixed numeric cap in the regulation itself; it's a \"self-use, reasonable quantity\" standard applied at customs' discretion. Multiple municipal-government FAQ pages commonly describe this as interpreted around a 3-month supply in practice, with a prescription, doctor's certificate, or purchase receipts as proof of legitimate personal use."
+      "description": "\"进出境人员随身携带的个人自用的少量药品，应当以自用、合理数量为限，并接受海关监管\" (\"Small quantities of medication for personal use carried by inbound/outbound persons shall be limited to self-use, reasonable quantities, and subject to customs supervision\") — Art. 39, Measures for the Administration of Drug Import. There's no fixed numeric cap in the regulation itself; it's a \"self-use, reasonable quantity\" standard applied at customs' discretion."
     },
     "notes": "Narcotic drugs and psychotropic substances follow a separate, stricter framework — see the dedicated controlled-medication entry for China.",
     "summary": "Small, reasonable quantities for your own use are allowed, subject to customs checks. There's no fixed limit.",
@@ -7234,8 +7415,6 @@
       "psychotropic medication",
       "adderall",
       "amphetamine",
-      "vyvanse",
-      "lisdexamfetamine",
       "ritalin",
       "methylphenidate",
       "stimulant medication"
@@ -7246,7 +7425,7 @@
     "limits": {
       "description": "\"因治疗疾病需要，个人凭医疗机构出具的医疗诊断书、本人身份证明，可以携带单张处方最大用量以内的麻醉药品和第一类精神药品\" (\"For treatment of illness, an individual, upon presenting a medical diagnosis certificate issued by a medical institution and personal ID, may carry narcotic drugs and Category I psychotropic substances not exceeding the maximum quantity of a single prescription\") — Art. 44, Regulations on the Administration of Narcotic Drugs and Psychotropic Substances (State Council Order No. 442). Without this documentation, expect much stricter scrutiny. Healthcare workers carrying such drugs for medical duty need a certificate from a provincial drug-supervision department instead."
     },
-    "notes": "Which specific common Western medications (e.g. Adderall/amphetamine-class ADHD stimulants) count as \"Category I psychotropic substances\" under China's own drug schedule was not independently confirmed against a named-substance list in this pass — China's well-documented strict stance on ADHD stimulants makes it very likely they fall under this framework and require the same documentation, but don't assume a specific drug is covered or excluded without checking. Opium, morphine, heroin, cannabis and other addictive narcotics are separately absolutely prohibited for import/export under a different customs order, corroborated by search but not independently re-verified this pass.",
+    "notes": "Which specific common Western medications (e.g. Adderall/amphetamine-class ADHD stimulants) count as \"Category I psychotropic substances\" under China's own drug schedule was not independently confirmed against a named-substance list in this pass — Amphetamine and methylphenidate are psychotropic substances on the UN's international list, but we haven't read China's own category list, so don't assume which category a specific drug is in.",
     "summary": "Narcotic and Category I psychotropic medicines: up to one prescription's maximum, with a medical diagnosis certificate and ID.",
     "legal_source": {
       "name": "麻醉药品和精神药品管理条例 (Regulations on the Administration of Narcotic Drugs and Psychotropic Substances), State Council Order No. 442, Art. 44",
@@ -7254,7 +7433,24 @@
     },
     "verified_at": "2026-09-19",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "The rule itself",
+        "name": "麻醉药品和精神药品管理条例 (Regulations on the Administration of Narcotic Drugs and Psychotropic Substances), State Council Order No. 442, Art. 44",
+        "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/200803/t20080328_780477.html"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
   },
   {
     "slug": "alcohol-hk",
@@ -7455,7 +7651,6 @@
       "codeine",
       "adderall",
       "amphetamine",
-      "vyvanse",
       "dangerous drugs",
       "psychotropic medication",
       "stimulant medication"
@@ -7505,7 +7700,24 @@
         "url": "https://www.drugoffice.gov.hk/eps/do/en/consumer/news_informations/faq.html"
       },
       "verified_at": "2026-10-14"
-    }
+    },
+    "_sources": [
+      {
+        "claim": "The rule itself",
+        "name": "Drug Office, Department of Health — Frequently Asked Questions (medicines carried by visitors)",
+        "url": "https://www.drugoffice.gov.hk/eps/do/en/consumer/news_informations/faq.html"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
   },
   {
     "slug": "meat-dairy-hk",
@@ -7843,7 +8055,19 @@
     },
     "verified_at": "2026-09-21",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "The rule itself",
+        "name": "Department of Health (Ireland) — Travelling into Ireland with prescribed narcotics and/or psychotropic substances",
+        "url": "https://www.gov.ie/en/department-of-health/services/travelling-into-ireland-from-schengen-countries-with-prescribed-narcotics-andor-psychotropic-substances/"
+      },
+      {
+        "claim": "Lists amphetamine, lisdexamphetamine, methylphenidate, oxycodone, codeine; alprazolam, diazepam, clonazepam in Schedule 4",
+        "name": "Misuse of Drugs Regulations 2017 (S.I. 173/2017), Irish Statute Book",
+        "url": "https://www.irishstatutebook.ie/eli/2017/si/173/made/en/print"
+      }
+    ]
   },
   {
     "slug": "drones-ie",
@@ -8080,7 +8304,6 @@
       "psychotropic medication",
       "adderall",
       "amphetamine",
-      "vyvanse",
       "ritalin",
       "methylphenidate",
       "xanax",
@@ -8089,7 +8312,6 @@
       "diazepam",
       "klonopin",
       "codeine",
-      "tramadol",
       "morphine",
       "oxycodone",
       "sleeping pills",
@@ -8108,7 +8330,24 @@
     "destination": "MY",
     "verified_at": "2026-09-21",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "The rule itself",
+        "name": "Ministry of Health Malaysia, Pharmaceutical Services Programme — Traveller's Guide: Bringing Medication into Malaysia",
+        "url": "https://pharmacy.moh.gov.my/sites/default/files/document-upload/travellers-guide-bringing-medication-malaysia-personal-use-edited-16012019.pdf"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
   },
   {
     "slug": "e-cigarettes-my",
@@ -8647,7 +8886,6 @@
       "psychotropic medication",
       "adderall",
       "amphetamine",
-      "vyvanse",
       "ritalin",
       "methylphenidate",
       "xanax",
@@ -8655,7 +8893,6 @@
       "valium",
       "diazepam",
       "codeine",
-      "tramadol",
       "oxycodone",
       "opioid painkiller"
     ],
@@ -8673,7 +8910,24 @@
     },
     "verified_at": "2026-09-21",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "The rule itself",
+        "name": "Maldives Food and Drug Authority — Guideline on Good Import Practice (MTG/RE-IP/GLN-TE 007, 13.02.2020), §§4.7–4.9",
+        "url": "https://health.gov.mv/storage/uploads/50wNdLqA/bixuazbn.pdf"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
   },
   {
     "slug": "tobacco-mv",
@@ -8931,8 +9185,6 @@
       "psychotropic medication",
       "adderall",
       "amphetamine",
-      "vyvanse",
-      "lisdexamfetamine",
       "ritalin",
       "methylphenidate",
       "xanax",
@@ -8948,7 +9200,7 @@
     "limits": {
       "description": "Quoted directly from Customs: \"if medicines that you use contain controlled psychoactive substances and/or if their quantity exceeds one package of up to 30 dosage units, you should obtain the approval for import of medicines for personal needs from the competent ministry\" — i.e. the general 15-day/no-approval rule does not apply once a controlled substance is involved; approval from the Ministry of Health is needed regardless of how short the trip is."
     },
-    "notes": "Customs' own FAQ doesn't name which specific drugs count as \"controlled psychoactive substances\" — that's set by Serbia's Law on Psychoactive Controlled Substances (Zakon o psihoaktivnim kontrolisanim supstancama) schedules, which weren't read directly in this pass. Treat common stimulants (Adderall/Vyvanse/Ritalin) and benzodiazepines (Xanax/Valium) as likely to trigger this approval requirement, and apply for approval before travel rather than assuming a 15-day rule applies.",
+    "notes": "Customs' own FAQ doesn't name which specific drugs count as \"controlled psychoactive substances\" — that's set by Serbia's Law on Psychoactive Controlled Substances (Zakon o psihoaktivnim kontrolisanim supstancama) schedules, which weren't read directly in this pass. Amphetamine (Adderall), methylphenidate (Ritalin), alprazolam (Xanax) and diazepam (Valium) are on the UN's international lists of controlled substances. If you carry one, ask the Ministry of Health before you travel rather than relying on the 15-day rule.",
     "summary": "Medicines containing controlled substances need Ministry of Health approval, however short your trip.",
     "legal_source": {
       "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
@@ -8956,7 +9208,24 @@
     },
     "verified_at": "2026-09-22",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "The rule itself",
+        "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
+        "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
   },
   {
     "slug": "cannabis-rs",
@@ -9208,8 +9477,6 @@
       "psychotropic medication",
       "adderall",
       "amphetamine",
-      "vyvanse",
-      "lisdexamfetamine",
       "ritalin",
       "methylphenidate",
       "xanax",
@@ -9235,7 +9502,24 @@
     },
     "verified_at": "2026-09-22",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "The rule itself",
+        "name": "Ministry of Health and Welfare (Taiwan) — Pay Attention to Carrying Controlled Drugs Into and Out of a Country",
+        "url": "https://www.mohw.gov.tw/cp-6570-74684-2.html"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
   },
   {
     "slug": "cannabis-tw",
@@ -9895,12 +10179,10 @@
       "psychotropic medication",
       "adderall",
       "amphetamine",
-      "vyvanse",
       "ritalin",
       "methylphenidate",
       "stimulant medication",
       "codeine",
-      "tramadol",
       "oxycodone",
       "morphine",
       "opioid painkiller",
@@ -9949,7 +10231,24 @@
       ],
       "verified_at": "2026-10-14",
       "verified_by": "agent:claude-opus-5-5"
-    }
+    },
+    "_sources": [
+      {
+        "claim": "The rule itself",
+        "name": "Cyprus Ministry of Health, Pharmaceutical Services — Narcotics and Psychotropics (permits for visitors carrying controlled medicines)",
+        "url": "https://www.moh.gov.cy/moh/phs/phs.nsf/drugsphych_en/drugsphych_en"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
   },
   {
     "slug": "drones-cy",
