@@ -490,3 +490,8 @@ gate was passed or missed, and why.
   Vyvanse are internationally controlled; they aren't. Removed unsupported inferences
   and claims in 8 rows, and withdrew 19 product pages whose country source doesn't
   name the medicine (temporary redirects to the product hub).
+- **2026-10-16. Country medication pages upgraded.** `/bring/medication/[country]` (and
+  every multi-rule `/bring` page) now opens with an "At a glance" list (one line per
+  rule, linked to its card), a "Permits to arrange before you travel" box built from
+  the rules' procedures, and the named-medicine links up top. FAQ markup has one
+  question per rule.

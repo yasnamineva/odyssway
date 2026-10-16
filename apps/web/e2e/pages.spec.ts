@@ -334,3 +334,12 @@ test("the Can I bring it? embed answers without site chrome; /widget shows its s
   await page.goto("/widget");
   await expect(page.getByTestId("widget-bring-snippet")).toContainText("/embed/can-i-bring");
 });
+
+test("a country's medication page leads with an at-a-glance list and the permits to arrange", async ({ page }) => {
+  await page.goto("/bring/medication/japan");
+  const glance = page.getByTestId("at-a-glance");
+  await expect(glance).toContainText("Amphetamine medication");
+  await glance.getByRole("link", { name: "Narcotic medication" }).click();
+  await expect(page).toHaveURL(/#narcotic-medication-jp$/);
+  await expect(page.getByTestId("before-you-go")).toContainText("Narcotics Control Department");
+});

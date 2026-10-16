@@ -30,7 +30,7 @@ export default async function CustomsRowCard({
   const destinationName = destinationByCode(destinationCode)?.name ?? destinationCode;
   const label = rowLabel(row.slug, destinationCode);
   return (
-    <li className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+    <li id={row.slug} className="scroll-mt-20 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
       <div className="flex flex-wrap items-center gap-2">
         <h2 className="font-display text-base font-bold text-slate-900">
           {label}

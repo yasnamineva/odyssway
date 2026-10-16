@@ -1,5 +1,17 @@
 [
   {
+    "commit": "85f0e39e2dc4ffbfef9a4094abba59c3c9dc5072",
+    "date": "2026-10-16",
+    "dataset": "customs-items",
+    "summary": "Move Vietnam controlled-medication row to UNVERIFIED (figures never read from a primary source)",
+    "verified_at": "2026-10-16",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    }
+  },
+  {
     "commit": "2dad00279fccb33ba19b852edbf74ef5f67e4765",
     "date": "2026-10-16",
     "dataset": "customs-items",

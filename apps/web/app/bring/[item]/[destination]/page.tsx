@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { checkedYear, describeRule, rowLead, seoVerdictKey, titleWithAnswer } from "../../../../lib/seo-text";
+import { checkedYear, clip, describeRule, rowLead, seoVerdictKey, titleWithAnswer } from "../../../../lib/seo-text";
 import { notFound } from "next/navigation";
 import { BRING_CATEGORIES } from "../../../../lib/bring-categories";
 import { bringPair, bringPairs, bringPairsForDestination, rowLabel } from "../../../../lib/bring-pages";
@@ -91,13 +91,26 @@ export default async function BringDestinationPage({ params }: { params: Promise
       "@context": "https://schema.org",
       "@type": "FAQPage",
       ...(pair.lastVerified ? { dateModified: pair.lastVerified } : {}),
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: t("h1", { item: meta.searchLabel, destination: withArticle(destName) }),
-          acceptedAnswer: { "@type": "Answer", text: faqAnswer },
-        },
-      ],
+      mainEntity:
+        pair.rows.length === 1
+          ? [
+              {
+                "@type": "Question",
+                name: t("h1", { item: meta.searchLabel, destination: withArticle(destName) }),
+                acceptedAnswer: { "@type": "Answer", text: faqAnswer },
+              },
+            ]
+          : pair.rows.map((r) => ({
+              "@type": "Question",
+              name: t("rowQuestion", {
+                item: rowLabel(r.slug, pair.destination.code).toLowerCase(),
+                destination: withArticle(destName),
+              }),
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: [capitalize(tv(r.verdict)) + ".", rowLead(r)].filter(Boolean).join(" "),
+              },
+            })),
     },
   ];
 
@@ -123,13 +136,72 @@ export default async function BringDestinationPage({ params }: { params: Promise
         <h1 className="font-display text-2xl font-bold tracking-tight text-slate-900 lg:text-3xl">
           {t("h1", { item: meta.searchLabel, destination: withArticle(destName) })}
         </h1>
-        <p className="mt-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm">
-          <span className="text-xs font-semibold tracking-wide text-slate-500 uppercase">
-            {t("shortAnswer")}
-          </span>
-          <br />
-          <span className="font-medium text-slate-900">{headline}</span>
-        </p>
+        {pair.rows.length === 1 ? (
+          <p className="mt-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm">
+            <span className="text-xs font-semibold tracking-wide text-slate-500 uppercase">
+              {t("shortAnswer")}
+            </span>
+            <br />
+            <span className="font-medium text-slate-900">{headline}</span>
+          </p>
+        ) : (
+          <section
+            className="mt-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm"
+            data-testid="at-a-glance"
+          >
+            <h2 className="text-xs font-semibold tracking-wide text-slate-500 uppercase">{t("atAGlance")}</h2>
+            <ul className="mt-2 divide-y divide-slate-100">
+              {pair.rows.map((r) => (
+                <li key={r.slug} className="py-2">
+                  <a href={`#${r.slug}`} className="font-medium text-slate-900 underline-offset-2 hover:underline">
+                    {rowLabel(r.slug, pair.destination.code)}
+                  </a>
+                  <span className="text-slate-500"> — </span>
+                  <span className="font-medium text-slate-800">{tv(r.verdict)}</span>
+                  {rowLead(r) && <p className="mt-0.5 text-xs leading-relaxed text-slate-600">{clip(rowLead(r)!, 200)}</p>}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+        {pair.rows.some((r) => r.procedure) && (
+          <section className="mt-3 rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-950 ring-1 ring-amber-200" data-testid="before-you-go">
+            <h2 className="text-xs font-semibold tracking-wide uppercase">{t("beforeYouGo")}</h2>
+            <ul className="mt-2 space-y-1.5">
+              {pair.rows
+                .filter((r) => r.procedure)
+                .map((r) => (
+                  <li key={r.slug}>
+                    <span className="font-semibold">{rowLabel(r.slug, pair.destination.code)}: </span>
+                    <a href={`#${r.slug}`} className="underline underline-offset-2">
+                      {r.procedure!.title}
+                    </a>
+                    {r.procedure!.optional && <span className="text-amber-800"> ({t("beforeYouGoOptional")})</span>}
+                    {r.procedure!.leadTime && <span className="text-amber-900">: {r.procedure!.leadTime}</span>}
+                  </li>
+                ))}
+            </ul>
+          </section>
+        )}
+        {pair.category === "medication" && productsForDestination(pair.destination.code).length > 0 && (
+          <nav className="mt-3" aria-label={t("namedMedicines", { destination: withArticle(destName) })}>
+            <p className="text-xs font-semibold tracking-wide text-slate-500 uppercase">
+              {t("namedMedicines", { destination: withArticle(destName) })}
+            </p>
+            <ul className="mt-2 flex flex-wrap gap-2">
+              {productsForDestination(pair.destination.code).map((p) => (
+                <li key={p.slug}>
+                  <a
+                    href={`/medications/${p.slug}/${pair.destinationSlug}`}
+                    className="inline-block rounded-full border border-slate-300 bg-white px-3 py-1 text-xs font-medium text-slate-700 hover:border-slate-900 hover:bg-slate-900 hover:text-white"
+                  >
+                    {p.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
       </header>
 
       <ul className="space-y-4">
@@ -156,25 +228,6 @@ export default async function BringDestinationPage({ params }: { params: Promise
         </a>
       </p>
 
-      {pair.category === "medication" && productsForDestination(pair.destination.code).length > 0 && (
-        <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-          <h2 className="text-base font-semibold text-slate-900">
-            {t("namedMedicines", { destination: withArticle(destName) })}
-          </h2>
-          <ul className="mt-3 flex flex-wrap gap-2">
-            {productsForDestination(pair.destination.code).map((p) => (
-              <li key={p.slug}>
-                <a
-                  href={`/medications/${p.slug}/${pair.destinationSlug}`}
-                  className="inline-block rounded-full border border-slate-300 px-3 py-1 text-xs font-medium text-slate-700 hover:border-slate-900 hover:bg-slate-900 hover:text-white"
-                >
-                  {p.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
 
       {siblings.length > 0 && (
         <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
