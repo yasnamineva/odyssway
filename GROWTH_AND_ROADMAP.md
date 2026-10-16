@@ -452,3 +452,6 @@ gate was passed or missed, and why.
   banned in Singapore; shisha banned in Kenya; modafinil needs HSA approval in
   Singapore; heated-tobacco sticks and hookah tobacco now found in the UK and Serbia
   allowances. All from official pages already cited, found by scanning them.
+- **2026-10-16 (overnight). Medication holes.** The Bahamas now has a medication row
+  (Bahamian embassy: carry a doctor's letter). Jordan, Nigeria and Cambodia still have
+  none: no primary traveller source found (details in `data/UNVERIFIED/TODO.md`).

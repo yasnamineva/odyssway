@@ -3414,3 +3414,14 @@ Not used: Taiwan poppy seeds (the page is the departure list), Japan
 "O-desmethyltramadol" (not tramadol), Hong Kong pseudoephedrine (Control of
 Chemicals Ordinance precursor licensing; doesn't say how medicines are treated),
 Canada khat/poppy seeds (CBSA memo for commercial importers).
+
+## Medication holes (coverage report, 2026-10-16)
+
+Destinations with no medication row: BS, JO, KH, NG.
+- **Bahamas**: published `medication-bs` from the Embassy of The Bahamas FAQ (doctor's
+  letter suggested; no quantity or controlled-drug rule stated).
+- **Jordan**: only a news report of a JFDA statement (3 months, prescription). Need the
+  JFDA page itself (jfda.jo is reachable but Arabic-only; not found yet).
+- **Nigeria**: NAFDAC pages found cover export and commercial import permits, not
+  travellers; customs.gov.ng returns 403.
+- **Cambodia**: customs.gov.kh unreachable; only third-party sites.
