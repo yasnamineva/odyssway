@@ -61,6 +61,11 @@ const withdrawnMedicationPairs = [
   permanent: false,
 }));
 
+/** Withdrawn while its only row awaits primary-source verification (data/UNVERIFIED/TODO.md). */
+const withdrawnBringPages = [
+  { source: "/bring/medication/vietnam", destination: "/destinations/vietnam", permanent: false },
+];
+
 const retiredBlogRedirects = (
   [
     ["ees-live-five-countries", "/blog/europe-counts-your-days"],
@@ -78,7 +83,7 @@ const retiredBlogRedirects = (
 
 const nextConfig: NextConfig = {
   async redirects() {
-    return [...destinationCodeRedirects(), ...retiredBlogRedirects, ...withdrawnMedicationPairs];
+    return [...destinationCodeRedirects(), ...retiredBlogRedirects, ...withdrawnMedicationPairs, ...withdrawnBringPages];
   },
   transpilePackages: ["@odyssway/engine"],
   pageExtensions: ["ts", "tsx", "mdx"],

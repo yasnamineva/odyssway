@@ -7366,24 +7366,6 @@
     }
   },
   {
-    "slug": "controlled-medication-vn",
-    "names": ["controlled substance", "narcotic medication", "psychotropic medication", "stimulant medication"],
-    "destination": "VN",
-    "category": "medication",
-    "verdict": "allowed_with_limits",
-    "limits": {
-      "description": "Narcotic/addictive medication (thuốc gây nghiện): up to a 7-day supply per the accompanying prescription's dosage, carried without needing a separate export/import permit. Psychotropic drugs and precursor-containing medication (thuốc hướng thần, tiền chất): up to a 10-day supply. Combination medications containing narcotic, psychotropic, precursor, toxic or banned substances together: up to a 30-day supply. Exceeding these thresholds requires an export/import permit. A copy of the prescription and medical records, certified by a healthcare organization or bearing a signature/stamp, must accompany the medication."
-    },
-    "notes": "These figures are extremely well-established and consistently repeated across many independent Vietnamese sources, including a Vietnam Customs regional office (kv17.customs.gov.vn) page titled exactly on this topic — but that page (like most Vietnamese customs.gov.vn pages throughout this project's research) is JS-rendered and its body text couldn't be directly extracted, so the specific figures here are search-engine-corroborated rather than read verbatim from a primary source. The exact governing circular/decree number is also genuinely unresolved: one commonly-repeated attribution to Circular 19/2014/TT-BYT Art. 17 turned out to be a misattribution (that article is about export/import licensing procedures, not traveler carry limits) when checked directly, and neither of that circular's two known successors (20/2017/TT-BYT, 18/2026/TT-BYT) contain the traveler provision either — treat the day-supply figures as reliable, the specific legal citation as unconfirmed.",
-    "legal_source": {
-      "name": "Chi cục Hải quan khu vực XVII (Vietnam Customs, Region XVII) — Quy định về mang thuốc cá nhân khi xuất cảnh (Regulations on carrying personal medication when departing)",
-      "url": "https://kv17.customs.gov.vn/index.jsp?pageId=2&aid=1637&cid=43"
-    },
-    "verified_at": "2026-09-19",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
-  },
-  {
     "slug": "prescription-medication-cn",
     "names": [
       "medication",
