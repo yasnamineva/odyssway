@@ -222,6 +222,8 @@ export const customsProcedureSchema = z.object({
   documents: z.array(z.string().min(1)).min(1).optional(),
   steps: z.array(z.string().min(1)).min(2),
   atTheBorder: z.string().min(1).optional(),
+  /** True when not every traveller needs this permit (optional, or only above a quantity). */
+  optional: z.boolean().optional(),
   sources: z.array(legalSourceSchema).min(1),
   verified_at: isoDateSchema,
   verified_by: z.string().min(1),
@@ -257,6 +259,8 @@ export const customsItemSchema = z
       .object({ description: z.string().min(1), quantity: z.string().optional() })
       .optional(),
     notes: z.string().optional(),
+    /** One-line restatement of the row for search snippets and hub lists — never a new claim. */
+    summary: z.string().min(20).max(170).optional(),
     procedure: customsProcedureSchema.optional(),
     transit: customsTransitSchema.optional(),
     ...verificationFields,

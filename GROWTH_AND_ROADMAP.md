@@ -471,3 +471,15 @@ gate was passed or missed, and why.
   - **Speed:** Trip Check and the widget load the 2.8 MB rule corpus after first paint
     (`lib/trip-engine.ts`); first load 483 KB → 152 KB, Lighthouse mobile performance
     79 → 91 on /trip-check. SEO and accessibility 100 on all tested pages.
+- **2026-10-16. SEO sprint 2.**
+  - **Snippet summaries:** new optional `summary` on customs rows (a one-line
+    restatement, never a new claim), written for 63 medication rows whose opening was
+    long or hedged. Used for meta descriptions, hub lines and FAQ answers.
+  - **Accurate permit wording:** procedures can be marked `optional` (UAE; Philippines
+    only above 30 days), so titles say "Only with a permit" only when every traveller
+    needs one.
+  - **Natural titles:** "to the United States/Kingdom/Arab Emirates/Philippines…", and
+    generic medicines in lowercase mid-sentence ("bring melatonin to…").
+  - **Share cards:** every `/medications/[p]/[c]` and `/bring/[i]/[c]` page has its own
+    preview image ("Adderall to Japan — No, it's banned. Checked … on 2026-10-02"),
+    prerendered at build.

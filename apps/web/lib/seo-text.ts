@@ -24,8 +24,16 @@ export function firstSentence(text: string): string {
   const t = text.replace(/\s+/g, " ").trim();
   // A full stop followed by a space and a capital ends a sentence; "e.g. x" and
   // "U.S. citizens" don't, since what follows isn't capitalised or is an initial.
-  const m = t.match(/^(.+?[.!?])\s+(?=[A-Z"“(])/);
-  return m && m[1]!.length >= 25 ? m[1]! : t;
+  const sentences = t.match(/.+?[.!?](?=\s+[A-Z"“(]|$)/g) ?? [t];
+  // A short opener ("Don't bring it.") reads better with the sentence after it.
+  const first = sentences[0]!.trim();
+  return first.length < 40 && sentences[1] ? `${first} ${sentences[1].trim()}` : first;
+}
+
+/** The line a row shows in snippets and hub lists: its summary, else its rule's opening. */
+export function rowLead(row: CustomsItemRecord): string | undefined {
+  if (row.summary) return row.summary;
+  return row.limits?.description ? firstSentence(row.limits.description) : row.notes ? firstSentence(row.notes) : undefined;
 }
 
 /** Which short answer to put in a title for one row. */
@@ -38,7 +46,7 @@ export type SeoVerdictKey =
   | "permit";
 
 export function seoVerdictKey(row: CustomsItemRecord): SeoVerdictKey {
-  if (row.verdict === "depends" && row.procedure) return "permit";
+  if (row.verdict === "depends" && row.procedure && !row.procedure.optional) return "permit";
   return row.verdict;
 }
 

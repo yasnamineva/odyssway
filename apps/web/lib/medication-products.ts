@@ -13,6 +13,13 @@ export interface MedicationProduct {
   name: string;
   /** Lowercase search term that must appear verbatim in a row's `names`. */
   term: string;
+  /** How the name reads mid-sentence, for generic (non-brand) names: "bring melatonin to…". */
+  inSentence?: string;
+}
+
+/** The product's name as it reads mid-sentence. */
+export function productInSentence(p: MedicationProduct): string {
+  return p.inSentence ?? p.name;
 }
 
 const PRODUCTS: MedicationProduct[] = [
@@ -22,21 +29,21 @@ const PRODUCTS: MedicationProduct[] = [
   { slug: "xanax", name: "Xanax", term: "xanax" },
   { slug: "valium", name: "Valium", term: "valium" },
   { slug: "klonopin", name: "Klonopin", term: "klonopin" },
-  { slug: "codeine", name: "Codeine", term: "codeine" },
-  { slug: "tramadol", name: "Tramadol", term: "tramadol" },
-  { slug: "oxycodone", name: "Oxycodone", term: "oxycodone" },
+  { slug: "codeine", name: "Codeine", term: "codeine", inSentence: "codeine" },
+  { slug: "tramadol", name: "Tramadol", term: "tramadol", inSentence: "tramadol" },
+  { slug: "oxycodone", name: "Oxycodone", term: "oxycodone", inSentence: "oxycodone" },
   { slug: "ozempic", name: "Ozempic", term: "ozempic" },
   { slug: "wegovy", name: "Wegovy", term: "wegovy" },
   { slug: "mounjaro", name: "Mounjaro", term: "mounjaro" },
-  { slug: "insulin", name: "Insulin", term: "insulin" },
+  { slug: "insulin", name: "Insulin", term: "insulin", inSentence: "insulin" },
   { slug: "sudafed", name: "Sudafed", term: "sudafed" },
-  { slug: "peptides", name: "Peptides", term: "peptides" },
+  { slug: "peptides", name: "Peptides", term: "peptides", inSentence: "peptides" },
   { slug: "bpc-157", name: "BPC-157", term: "bpc-157" },
   { slug: "tb-500", name: "TB-500", term: "tb-500" },
   { slug: "melanotan-ii", name: "Melanotan II", term: "melanotan ii" },
-  { slug: "hgh", name: "HGH (growth hormone)", term: "hgh" },
-  { slug: "melatonin", name: "Melatonin", term: "melatonin" },
-  { slug: "kratom", name: "Kratom", term: "kratom" },
+  { slug: "hgh", name: "HGH (growth hormone)", term: "hgh", inSentence: "HGH" },
+  { slug: "melatonin", name: "Melatonin", term: "melatonin", inSentence: "melatonin" },
+  { slug: "kratom", name: "Kratom", term: "kratom", inSentence: "kratom" },
 ];
 
 export interface ProductPair {

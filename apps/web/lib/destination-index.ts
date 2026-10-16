@@ -46,3 +46,18 @@ export function destinationBySlug(slug: string): DestinationRecord | undefined {
  * resolveTripCheck() always returns `covered: false` for them.
  */
 export const queuedDestinations: Array<{ code: string; name: string; officialAuthorityUrl: string }> = [];
+
+/** Names that take "the" mid-sentence ("bring Xanax to the United Arab Emirates"). */
+const WITH_THE = new Set([
+  "United States",
+  "United Kingdom",
+  "United Arab Emirates",
+  "Philippines",
+  "Maldives",
+  "Dominican Republic",
+  "Bahamas",
+]);
+
+export function withArticle(name: string): string {
+  return WITH_THE.has(name) ? `the ${name}` : name;
+}

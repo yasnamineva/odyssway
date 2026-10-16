@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import BreadcrumbJsonLd from "../../../components/BreadcrumbJsonLd";
-import { DESCRIPTION_MAX, clip, firstSentence } from "../../../lib/seo-text";
+import { DESCRIPTION_MAX, clip, rowLead } from "../../../lib/seo-text";
 import { SITE_URL } from "../../../lib/site";
+import { withArticle } from "../../../lib/destinations";
 import { VERDICT_STYLES } from "../../../components/CustomsRowCard";
 import {
   latestVerified,
   medicationProducts,
   pairsForProduct,
-  productBySlug,
-} from "../../../lib/medication-products";
+  productBySlug, productInSentence } from "../../../lib/medication-products";
 
 interface Params {
   product: string;
@@ -80,13 +80,13 @@ export default async function MedicationProductPage({ params }: { params: Promis
       "@type": "FAQPage",
       mainEntity: pairs.map((pair) => ({
         "@type": "Question",
-        name: t("faqQuestion", { product: product.name, destination: pair.destination.name }),
+        name: t("faqQuestion", { product: productInSentence(product), destination: withArticle(pair.destination.name) }),
         acceptedAnswer: {
           "@type": "Answer",
           text: pair.rows
             .map((r) => {
               const v = tv(r.verdict);
-              const lead = r.limits?.description ? ` ${clip(firstSentence(r.limits.description), 220)}` : "";
+              const lead = rowLead(r) ? ` ${clip(rowLead(r)!, 220)}` : "";
               return `${v.charAt(0).toUpperCase()}${v.slice(1)}.${lead}`;
             })
             .join(" "),

@@ -175,6 +175,7 @@ export interface CustomsProcedure {
   documents?: string[];
   steps: string[];
   atTheBorder?: string;
+  optional?: boolean;
   sources: { name: string; url: string }[];
   verified_at: string;
   verified_by: string;
@@ -197,6 +198,8 @@ export interface CustomsItemRecord {
   verdict: "prohibited" | "allowed_with_limits" | "allowed" | "declaration_required" | "depends";
   limits?: { description: string; quantity?: string };
   notes?: string;
+  /** One-line restatement for search snippets and hub lists (schemas.ts). */
+  summary?: string;
   procedure?: CustomsProcedure;
   transit?: CustomsTransit;
   legal_source: { name: string; url: string };

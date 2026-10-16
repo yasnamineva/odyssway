@@ -10,6 +10,7 @@ export {
   destinations,
   destinationSlug,
   queuedDestinations,
+  withArticle,
 } from "./destination-index";
 
 

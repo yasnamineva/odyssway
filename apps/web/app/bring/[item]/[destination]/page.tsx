@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { checkedYear, describeRule, firstSentence, seoVerdictKey, titleWithAnswer } from "../../../../lib/seo-text";
+import { checkedYear, describeRule, rowLead, seoVerdictKey, titleWithAnswer } from "../../../../lib/seo-text";
 import { notFound } from "next/navigation";
 import { BRING_CATEGORIES } from "../../../../lib/bring-categories";
 import { bringPair, bringPairs, bringPairsForDestination, rowLabel } from "../../../../lib/bring-pages";
 import { SITE_URL } from "../../../../lib/site";
 import CustomsRowCard from "../../../../components/CustomsRowCard";
 import { productsForDestination } from "../../../../lib/medication-products";
-import { destinationPath } from "../../../../lib/destinations";
+import { destinationPath, withArticle } from "../../../../lib/destinations";
 
 interface Params {
   item: string;
@@ -38,19 +38,19 @@ export async function generateMetadata({
   const meta = BRING_CATEGORIES[pair.category];
   const single = pair.rows.length === 1 ? pair.rows[0]! : undefined;
   const title = titleWithAnswer(
-    t("metaTitle", { item: meta.searchLabel, destination: pair.destination.name }),
+    t("metaTitle", { item: meta.searchLabel, destination: withArticle(pair.destination.name) }),
     single ? ts(`verdict.${seoVerdictKey(single)}`) : undefined,
     checkedYear(pair.rows),
   );
   const lead = single
-    ? firstSentence(single.limits?.description ?? single.notes ?? tv(single.verdict))
+    ? (rowLead(single) ?? tv(single.verdict))
     : pair.rows.map((r) => `${rowLabel(r.slug, pair.destination.code)}: ${tv(r.verdict)}`).join("; ") + ".";
   const description = describeRule(lead, ts("tail", { date: pair.lastVerified ?? "" }));
   return {
     title,
     description,
     alternates: { canonical: `/bring/${pair.itemSlug}/${pair.destinationSlug}` },
-    openGraph: { title, description, images: ["/opengraph-image"] },
+    openGraph: { title, description },
   };
 }
 
@@ -94,7 +94,7 @@ export default async function BringDestinationPage({ params }: { params: Promise
       mainEntity: [
         {
           "@type": "Question",
-          name: t("h1", { item: meta.searchLabel, destination: destName }),
+          name: t("h1", { item: meta.searchLabel, destination: withArticle(destName) }),
           acceptedAnswer: { "@type": "Answer", text: faqAnswer },
         },
       ],
@@ -121,7 +121,7 @@ export default async function BringDestinationPage({ params }: { params: Promise
 
       <header>
         <h1 className="font-display text-2xl font-bold tracking-tight text-slate-900 lg:text-3xl">
-          {t("h1", { item: meta.searchLabel, destination: destName })}
+          {t("h1", { item: meta.searchLabel, destination: withArticle(destName) })}
         </h1>
         <p className="mt-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm">
           <span className="text-xs font-semibold tracking-wide text-slate-500 uppercase">
@@ -159,7 +159,7 @@ export default async function BringDestinationPage({ params }: { params: Promise
       {pair.category === "medication" && productsForDestination(pair.destination.code).length > 0 && (
         <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="text-base font-semibold text-slate-900">
-            {t("namedMedicines", { destination: destName })}
+            {t("namedMedicines", { destination: withArticle(destName) })}
           </h2>
           <ul className="mt-3 flex flex-wrap gap-2">
             {productsForDestination(pair.destination.code).map((p) => (
@@ -179,7 +179,7 @@ export default async function BringDestinationPage({ params }: { params: Promise
       {siblings.length > 0 && (
         <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="text-base font-semibold text-slate-900">
-            {t("moreForDestination", { destination: destName })}
+            {t("moreForDestination", { destination: withArticle(destName) })}
           </h2>
           <ul className="mt-3 flex flex-wrap gap-2">
             {siblings.map((s) => (
