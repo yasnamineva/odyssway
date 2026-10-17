@@ -504,3 +504,8 @@ gate was passed or missed, and why.
 - **2026-10-17. Internal links.** Destination hubs now link every named-medicine page
   for that country, and their customs list shows each rule's one-line summary.
   Medicine blog posts link the country medication pages they rely on.
+- **2026-10-17. Turkey controlled medicine, and re-checking August rows.** Turkey now has
+  a controlled-medicine answer from official Turkish sources. Ten medication rows from
+  August were re-read against their sources: eight still match (re-dated), and three
+  had wording the source doesn't support (UK "14 days", Mexico "treatment course",
+  India "must" vs "may"), now corrected.

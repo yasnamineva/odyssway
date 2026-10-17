@@ -3471,3 +3471,23 @@ Open:
 - Rows whose notes mention secondary figures as explicitly unconfirmed were left as is
   for now (cash-sg, meat-dairy-kr, drones-my, mv rows, etc.); a stricter pass could remove
   the numbers entirely.
+
+## Medication research and re-verification (2026-10-17)
+
+- **New `controlled-medication-tr`**: narcotic medicines allowed with the treating
+  doctor's report/prescription stating medicine and dose for the stay; methadone under
+  INCB guidelines (narcotics units notified; foreigners >15 days continue at a Turkish
+  centre). Sources: Consulate General in Rotterdam notice (19 Sep 2012), MFA customs
+  page (current general rule), INCB Yellow List. Stimulants/benzodiazepines not named
+  by the source, so not in `names`.
+- **Re-read and re-dated** (source still says the same): prescription-medication-jp,
+  -ke, -za, medication-th, -ma, -tr, prescription-medication-eu, controlled-medication-eu
+  (CISA Art. 75 text read on EUR-Lex).
+- **Corrected while re-reading:** prescription-medication-gb ("14 days ahead" isn't on
+  the cited page; added Schedule 1 / personal-licence wording from it), medication-mx
+  (removed "consistent with a personal treatment course", not in ANAM's text),
+  medication-in ("must seek" → the page says travellers "may" seek permission).
+- **Couldn't re-read** (left at their August dates): prescription-medication-us (CBP help
+  article is JS-only), medication-au (TGA unreachable), medication-ae (u.ae blocked),
+  prescription-medication-eg (no readable text), prescription-medication-rw and
+  controlled-substances-rw (the PDF URL redirects automated requests to the homepage).

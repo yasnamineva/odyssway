@@ -271,14 +271,14 @@
     "category": "medication",
     "verdict": "allowed_with_limits",
     "limits": {
-      "description": "Up to 3 months' supply without a licence; longer supplies, or any Schedule 1 controlled drug, require a Home Office licence applied for at least 14 days ahead"
+      "description": "Up to 3 months' supply without a licence; bringing more needs a personal licence from the Home Office Drug and Firearms Licensing Unit in exceptional circumstances, and Schedule 1 drugs can't be brought in without a licence (limited to research or special purposes)"
     },
     "legal_source": {
       "name": "gov.uk — Taking controlled drugs into the UK",
       "url": "https://www.gov.uk/travelling-controlled-drugs"
     },
-    "verified_at": "2026-08-10",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-17",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -696,8 +696,8 @@
       "name": "Convention Implementing the Schengen Agreement, Art. 75",
       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02)"
     },
-    "verified_at": "2026-08-10",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-17",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
       {
@@ -889,8 +889,8 @@
       "name": "Japan Customs — Private Importation of Drugs, Cosmetics, etc. (FAQ 1806)",
       "url": "https://www.customs.go.jp/english/c-answer_e/imtsukan/1806_e.htm"
     },
-    "verified_at": "2026-08-11",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-17",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -1357,8 +1357,8 @@
       "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
       "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
     },
-    "verified_at": "2026-08-11",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-17",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -1508,8 +1508,8 @@
       "name": "SARS — SC-PA-01-03 Duty Free Allowances for Travellers (External Guide, Rev. 8, eff. 1 July 2026)",
       "url": "https://www.sars.gov.za/wp-content/uploads/Docs/Customs/SC-PA-01-03-Duty-Free-Allowances-for-Travellers-External-Guide.pdf"
     },
-    "verified_at": "2026-08-11",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-17",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -1685,15 +1685,15 @@
     "category": "medication",
     "verdict": "allowed_with_limits",
     "limits": {
-      "description": "Personal-use medications (medicamentos de uso personal) are allowed in personal baggage. For psychotropic/controlled substances, a medical prescription must be presented; quantities should be consistent with a personal treatment course."
+      "description": "Personal-use medications (medicamentos de uso personal) are allowed in personal baggage. For psychotropic/controlled substances, a medical prescription must be presented."
     },
     "notes": "ANAM's own guidance does not publish an exact day-supply or unit limit the way Japan's does; treat prescription/controlled medication as requiring supporting documentation (prescription, and ideally a doctor's note) rather than assuming a specific numeric cap. See TODO for what remains unverified here.",
     "legal_source": {
       "name": "ANAM (Agencia Nacional de Aduanas de México) — Equipaje y franquicia",
       "url": "https://www.anam.gob.mx/equipaje-y-franquicia/"
     },
-    "verified_at": "2026-08-12",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-17",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -1916,8 +1916,8 @@
       "name": "Thai FDA — Passenger belongings related to health products into the Kingdom of Thailand (foods, cosmetics, herbal products)",
       "url": "https://en.fda.moph.go.th/guideline-of-importation-for-personal-use/bringing-of-health-products-into-the-kingdom-of-thailand-01/"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-17",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -2764,8 +2764,8 @@
       "name": "Kingdom of Morocco Ministry of Foreign Affairs — Consular guide: Customs facilities for non-residents visiting Morocco temporarily",
       "url": "https://fr.diplomatie.ma/visiter-le-maroc-facilit%C3%A9s-douani%C3%A8res-accord%C3%A9es-aux-personnes-ayant-leur-r%C3%A9sidence-%C3%A0-l%C3%A9tranger-et-s%C3%A9journant-temporairement"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-17",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -2970,16 +2970,16 @@
     "category": "medication",
     "verdict": "depends",
     "limits": {
-      "description": "Ordinary prescription and over-the-counter medication in personal-use quantities is not separately addressed by a primary CBIC baggage-rules source reachable in this pass. Medicines that are themselves narcotic drugs or psychotropic substances under the NDPS Act (e.g. many opioid painkillers, some ADHD stimulants, certain sedatives) are a distinct, stricter case: travellers must seek advance permission from India's Narcotics Commissioner before departure, submitting a doctor's prescription and supporting papers, before they may bring the drug into India."
+      "description": "Ordinary prescription and over-the-counter medication in personal-use quantities is not separately addressed by a primary CBIC baggage-rules source reachable in this pass. Medicines that are themselves narcotic drugs or psychotropic substances under the NDPS Act (e.g. many opioid painkillers, some ADHD stimulants, certain sedatives) are a distinct, stricter case: India's Department of Revenue says international travellers may, well before departure, seek the Narcotics Commissioner's permission to import them, with the prescription and other relevant papers, and may bring the drugs once permission is granted."
     },
     "notes": "No numeric day-supply or unit quantity cap for NDPS-scheduled medicines was found on a primary Indian government source in this pass (unlike Japan's or Thailand's dedicated schedules) — do not assume a specific number of days is pre-authorised; the advance-permission requirement itself is what's confirmed.",
-    "summary": "Narcotic and psychotropic medicines need advance permission from India's Narcotics Commissioner. We haven't found the rule for ordinary medicine.",
+    "summary": "Narcotic and psychotropic medicines: apply to India's Narcotics Commissioner for permission well before you travel. We haven't found the rule for ordinary medicine.",
     "legal_source": {
       "name": "Department of Revenue, Ministry of Finance — International travellers requiring NDPS drugs for medical use",
       "url": "https://dor.gov.in/international-travellers-requiring-ndps-medical-use"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-17",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -3234,8 +3234,51 @@
       "name": "T.C. Ticaret Bakanlığı (Turkish Ministry of Trade) — Gümrük Rehberi: can a traveler bring their medication to Türkiye",
       "url": "https://gumrukrehberi.gov.tr/sayfa/yolcunun-kulland%C4%B1%C4%9F%C4%B1-ila%C3%A7lar%C4%B1n%C4%B1-beraberinde-t%C3%BCrkiyeye-getirmesi-m%C3%BCmk%C3%BCn-m%C3%BCd%C3%BCr"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-17",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-tr",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "opioid painkiller",
+      "methadone",
+      "codeine",
+      "oxycodone"
+    ],
+    "destination": "TR",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "You can bring medicines with narcotic properties for your own treatment if you show customs a report or prescription from your treating doctor that states the medicine and the dose you'll take during your stay in Türkiye. The amount allowed is what's reasonable for the length of your stay."
+    },
+    "notes": "Methadone: allowed if you follow the INCB's international guidelines for travellers under treatment with controlled drugs. Customs reports your entry and exit dates and passport details to the narcotics units, and foreigners staying more than 15 days must continue treatment at a Turkish addiction treatment centre. This comes from a 2012 notice by Türkiye's Consulate General in Rotterdam; the Ministry of Foreign Affairs' current customs page states the same general rule for personal medicines. Codeine and oxycodone are narcotic drugs on the UN's international list.",
+    "summary": "Bring narcotic medicines with a report or prescription from your doctor stating the medicine and dose; a reasonable amount for your stay.",
+    "legal_source": {
+      "name": "Consulate General of Türkiye in Rotterdam (Ministry of Foreign Affairs) — Notice on bringing medicines to Türkiye (19 September 2012)",
+      "url": "https://rotterdam-bk.mfa.gov.tr/Mission/ShowAnnouncement/162584"
+    },
+    "_sources": [
+      {
+        "claim": "Narcotic medicines allowed with a doctor's report or prescription stating the medicine and dose for the stay; methadone under INCB guidelines; reporting to narcotics units; 15-day limit for foreigners",
+        "name": "Consulate General of Türkiye in Rotterdam (Ministry of Foreign Affairs) — Notice on bringing medicines to Türkiye (19 September 2012)",
+        "url": "https://rotterdam-bk.mfa.gov.tr/Mission/ShowAnnouncement/162584"
+      },
+      {
+        "claim": "Current general rule: reasonable quantity for the stay with a report or prescription; medicines may also arrive 1 month before or 3 months after the traveller",
+        "name": "Ministry of Foreign Affairs of Türkiye — Türkiye customs information (Q7: travellers' medicines)",
+        "url": "https://www.mfa.gov.tr/turkiye_ye-ait-gumruk-bilgileri.tr.mfa"
+      },
+      {
+        "claim": "Codeine, oxycodone and methadone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ],
+    "verified_at": "2026-10-17",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -4541,8 +4584,8 @@
       "name": "Convention Implementing the Schengen Agreement, Art. 75",
       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02)"
     },
-    "verified_at": "2026-09-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-17",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
       {
