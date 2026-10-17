@@ -501,3 +501,6 @@ gate was passed or missed, and why.
   repeated "10 disposables" was wrong; it's 3). Five rows whose core facts came from a
   newspaper, a law firm or news aggregation were taken off the site until an official
   source is read.
+- **2026-10-17. Internal links.** Destination hubs now link every named-medicine page
+  for that country, and their customs list shows each rule's one-line summary.
+  Medicine blog posts link the country medication pages they rely on.

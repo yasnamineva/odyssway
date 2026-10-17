@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { blogPosts } from "../../../lib/blog";
+import { productsForDestination } from "../../../lib/medication-products";
+import { rowLead } from "../../../lib/seo-text";
 import { BRING_CATEGORIES, type BringCategory } from "../../../lib/bring-categories";
 import { destinationSlug, rowLabel } from "../../../lib/bring-pages";
 import {
@@ -9,8 +11,7 @@ import {
   destinationBySlug,
   destinationPath,
   destinations,
-  entryRequirements,
-} from "../../../lib/destinations";
+  entryRequirements, withArticle } from "../../../lib/destinations";
 import { nationalityRules } from "../../../lib/nationalities";
 import { SITE_URL } from "../../../lib/site";
 import { travelPairPath } from "../../../lib/travel-pairs";
@@ -182,9 +183,9 @@ export default async function DestinationPage({ params }: { params: Promise<Para
                       {t(`verdict.${item.verdict}`)}
                     </span>
                   </span>
-                  {item.limits ? (
+                  {rowLead(item) ? (
                     <span className="mt-0.5 line-clamp-2 text-sm leading-relaxed text-slate-600">
-                      {item.limits.description}
+                      {rowLead(item)}
                     </span>
                   ) : null}
                 </>
@@ -204,6 +205,26 @@ export default async function DestinationPage({ params }: { params: Promise<Para
                 </li>
               );
             })}
+          </ul>
+        </section>
+      )}
+
+      {productsForDestination(dest.code).length > 0 && (
+        <section className="mt-10" data-testid="destination-named-medicines">
+          <h2 className="text-lg font-semibold text-slate-900">
+            {t("namedMedicinesTitle", { destination: withArticle(dest.name) })}
+          </h2>
+          <ul className="mt-3 flex flex-wrap gap-2">
+            {productsForDestination(dest.code).map((p) => (
+              <li key={p.slug}>
+                <a
+                  href={`/medications/${p.slug}/${destinationSlug(dest.name)}`}
+                  className="inline-block rounded-full border border-slate-300 bg-white px-3 py-1 text-sm font-medium text-slate-700 hover:border-slate-900 hover:bg-slate-900 hover:text-white"
+                >
+                  {p.name}
+                </a>
+              </li>
+            ))}
           </ul>
         </section>
       )}

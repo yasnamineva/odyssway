@@ -343,3 +343,16 @@ test("a country's medication page leads with an at-a-glance list and the permits
   await expect(page).toHaveURL(/#narcotic-medication-jp$/);
   await expect(page.getByTestId("before-you-go")).toContainText("Narcotics Control Department");
 });
+
+test("destination hubs link their named medicines, and medicine posts link country medication rules", async ({ page }) => {
+  await page.goto("/destinations/japan");
+  await expect(page.getByTestId("destination-named-medicines").getByRole("link", { name: "Adderall" })).toHaveAttribute(
+    "href",
+    "/medications/adderall/japan",
+  );
+  await page.goto("/blog/medication-transit-stopover");
+  await expect(page.getByTestId("blog-medication-rules").getByRole("link", { name: "Singapore" })).toHaveAttribute(
+    "href",
+    "/bring/medication/singapore",
+  );
+});

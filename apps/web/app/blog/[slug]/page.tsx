@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { bringPair } from "../../../lib/bring-pages";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { ComponentType } from "react";
 import { blogPostBySlug, blogPosts } from "../../../lib/blog";
-import { destinationByCode, destinationPath } from "../../../lib/destinations";
+import { destinationByCode, destinationPath, destinationSlug } from "../../../lib/destinations";
 import { SITE_URL } from "../../../lib/site";
 import { photos } from "../../../lib/photos";
 import Photo from "../../../components/content/Photo";
@@ -165,6 +166,29 @@ export default async function BlogPostPage({
           </ul>
         </div>
       )}
+
+      {post.category === "Medicine" &&
+        relatedDestinations.some((d) => bringPair("medication", destinationSlug(d.name))) && (
+          <div className="border-t border-slate-200 pt-6" data-testid="blog-medication-rules">
+            <h2 className="text-xs font-semibold tracking-wide text-slate-500 uppercase">
+              {t("relatedMedicationRules")}
+            </h2>
+            <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-2">
+              {relatedDestinations
+                .filter((d) => bringPair("medication", destinationSlug(d.name)))
+                .map((d) => (
+                  <li key={d.code}>
+                    <a
+                      href={`/bring/medication/${destinationSlug(d.name)}`}
+                      className="text-[15px] text-brand-800 underline decoration-brand-200 underline-offset-4 hover:decoration-brand-700"
+                    >
+                      {d.name}
+                    </a>
+                  </li>
+                ))}
+            </ul>
+          </div>
+        )}
 
       <div className="space-y-1 border-t border-slate-200 pt-4 text-xs leading-relaxed text-slate-500">
         <p>
