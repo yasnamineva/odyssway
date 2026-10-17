@@ -495,3 +495,9 @@ gate was passed or missed, and why.
   rule, linked to its card), a "Permits to arrange before you travel" box built from
   the rules' procedures, and the named-medicine links up top. FAQ markup has one
   question per rule.
+- **2026-10-17. Snippet summaries for all rules, and a non-medication accuracy sweep.**
+  144 more rules have a one-line summary for search results and hub lists. Turkey's
+  e-cigarette allowance was rewritten from the customs circular itself (the widely
+  repeated "10 disposables" was wrong; it's 3). Five rows whose core facts came from a
+  newspaper, a law firm or news aggregation were taken off the site until an official
+  source is read.

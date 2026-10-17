@@ -522,7 +522,14 @@
   },
   {
     "slug": "food-plant-ca",
-    "names": ["fruit", "vegetables", "plants", "seeds", "bulbs", "plant cuttings"],
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds",
+      "bulbs",
+      "plant cuttings"
+    ],
     "destination": "CA",
     "category": "food_plant",
     "verdict": "declaration_required",
@@ -530,6 +537,7 @@
       "description": "CBSA does not give a blanket allowed/prohibited answer for fruit, vegetables, plants, or seeds — it states plainly that \"importing a single piece of fruit\" can be harmful, and that food, plant, and animal items must always be declared \"whether they are regulated or not.\" Plant cuttings, seeds, and bulbs are named as examples of commonly restricted items. Travelers must verify the specific product against the Canadian Food Inspection Agency's Automated Import Reference System (AIRS) before travelling — the actual answer depends on the exact product, its country of origin, and the province of entry."
     },
     "notes": "This is the honest, if less satisfying, answer this source supports: there is no single rule to state, and CBSA's own guidance is to check the item-specific AIRS database in advance rather than assume. Treat any single piece of fruit or plant material as needing to be declared regardless of quantity.",
+    "summary": "Declare all food, plant and animal items. Whether they're allowed depends on the product, its origin and your province; check CFIA's AIRS tool first.",
     "legal_source": {
       "name": "CBSA — Food, plant and animal products",
       "url": "https://www.cbsa-asfc.gc.ca/services/fpa-apa/bringing-apporter-fpa-eng.html"
@@ -1753,7 +1761,13 @@
   },
   {
     "slug": "drones-mx",
-    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas"
+    ],
     "destination": "MX",
     "category": "drones",
     "verdict": "depends",
@@ -1762,6 +1776,7 @@
       "quantity": "~10 business days' advance registration"
     },
     "notes": "AFAC's own page does not distinguish between Mexican residents and foreign visitors — the same standard and process applies to everyone, with no visitor exemption or simplified tourist path found in this pass. Bringing the drone itself into Mexico isn't restricted, but flying it without completing this registration in advance is.",
+    "summary": "You can bring a drone, but it must be registered with Mexico's AFAC under NOM-107-SCT3-2019 before you fly it.",
     "legal_source": {
       "name": "Agencia Federal de Aviación Civil (AFAC) — RPAS/Drones, citing NOM-107-SCT3-2019",
       "url": "https://www.gob.mx/afac/acciones-y-programas/rpas-drones"
@@ -2038,6 +2053,7 @@
       "description": "Personal-use import allowance: milk/dairy products (ready-to-drink milk, powdered milk, ice cream, cheese, whey protein, yogurt, pudding) up to 2.5 kg/L; meat, processed meat, and animal products (sausages, ham, smoked meat, dried pork, smoked salmon) up to 5 kg. All food items combined must not exceed 10 kg/L, and none of the items may have been imported by the same traveler within the prior 3 months."
     },
     "notes": "This FDA personal-consumption allowance covers processed/shelf-stable meat and dairy. Fresh/uncooked meat and dairy are separately regulated by the Department of Livestock Development, which requires an import permit and (for meat) an export health certificate from the country of origin — not realistically obtainable by an individual tourist, so treat fresh/raw meat and dairy as effectively off-limits even though this row's quantity limits are for the processed-goods case.",
+    "summary": "Personal use only: up to 2.5 kg/L of dairy and 5 kg of meat products, 10 kg/L of food in total, not repeated within 3 months.",
     "legal_source": {
       "name": "Thai FDA — Passenger belongings related to health products into the Kingdom of Thailand (foods, cosmetics, herbal products)",
       "url": "https://en.fda.moph.go.th/guideline-of-importation-for-personal-use/bringing-of-health-products-into-the-kingdom-of-thailand-01/"
@@ -2083,6 +2099,7 @@
       "description": "Bringing a personal drone into Thailand in your luggage is allowed (no import permit needed for non-commercial personal use), but it cannot be legally operated until registered with both the National Broadcasting and Telecommunications Commission (NBTC, drone ownership/radio-frequency registration at anyregis.nbtc.go.th) and the Civil Aviation Authority of Thailand (CAAT, drone + pilot registration at uasportal.caat.or.th) — required for any drone with a camera, or weighing over 2 kg."
     },
     "notes": "CAAT registration can take up to roughly 14 days and generally needs a Thai mobile number and an entry stamp already in the passport, which effectively blocks legal flight for short trips even though bringing the drone itself is not restricted. Liability insurance (THB 1,000,000 minimum third-party cover) is required for CAAT registration. This entry covers the import/registration question; it is not a customs duty-free allowance in the same sense as alcohol/tobacco.",
+    "summary": "You can bring a personal drone without a permit, but must register it with the NBTC and CAAT before flying it.",
     "legal_source": {
       "name": "Thailand.go.th (Royal Thai Government official information portal) — Updated Guide for Tourists Regarding Flying a Drone in Thailand",
       "url": "https://thailand.go.th/issue-focus-detail/updated-guide-for-tourists-regarding-flying-a-drone-in-thailand"
@@ -2719,6 +2736,7 @@
       "quantity": "MAD 100,000 (foreign currency); MAD 2,000 (dirham banknotes)"
     },
     "notes": "Legal basis: Article 66 bis of the Customs and Indirect Taxes Code, added by the 2022 Finance Law. Declaring the imported amount also lets the traveler re-export unspent foreign currency later. Foreign currency itself (banknotes, cheques, cards) can otherwise be brought in without an amount limit — it is the >=100,000 MAD threshold that triggers a mandatory declaration, and the dirham import/export ban that is separate and absolute (2,000 MAD carve-out).",
+    "summary": "Declare foreign-currency instruments worth 100,000 dirhams or more. Dirham banknotes can't be brought in, except up to 2,000 dirhams.",
     "legal_source": {
       "name": "Office des Changes (Kingdom of Morocco foreign-exchange authority) — FAQ: mandatory declaration of imported banknotes",
       "url": "https://www.oc.gov.ma/fr/faq/la-declaration-aux-services-douaniers-a-l-entree-des-billets-de-banque-importes-est-elle"
@@ -2835,6 +2853,7 @@
       "description": "War weapons and their ammunition are strictly prohibited to all travelers. Ordinary hunting weapons and their ammunition may be temporarily imported by tourists only with authorization from the local Direction Générale de la Sûreté Nationale (DGSN) services (in practice: a port-of-arms permit from the provincial authority, then a DGSN import authorization), limited to 10 cartridges per weapon; rifled-barrel hunting weapons are absolutely prohibited outright. Edged weapons of any kind ('armes blanches') require a separate import license from the Foreign Trade department."
     },
     "notes": "Sourced from Moroccan Customs' own restrictions text (a compiled reference going back to a 1937 decree on hunting-weapon imports, still cited as current on douane.gov.ma) plus a 2024 Customs circular listing edged weapons among goods requiring an import license. A tourist bringing a hunting weapon must also separately hold a Moroccan hunting permit to actually hunt with it.",
+    "summary": "War weapons are banned. Hunting weapons need DGSN authorisation; rifled-barrel hunting weapons and unlicensed edged weapons aren't allowed.",
     "legal_source": {
       "name": "Administration des Douanes et Impôts Indirects (Moroccan Customs) — Recueil des Droits et Impôts à l'Importation, Titre XII, Section 02: Restrictions spécifiques d'importation et d'exportation",
       "url": "https://www.douane.gov.ma/dms/loadDocument?documentId=30835"
@@ -2929,6 +2948,7 @@
       "quantity": "USD 5,000 (cash) / USD 10,000 (aggregate foreign exchange)"
     },
     "notes": "These are the same thresholds confirmed on both the Reserve Bank of India's own Master Direction on Import and CBIC's Chennai Customs Zone passenger FAQ, so this is a cross-checked, high-confidence figure.",
+    "summary": "No limit, but declare foreign currency notes over USD 5,000 or foreign exchange over USD 10,000. Foreign visitors can't bring in rupees.",
     "legal_source": {
       "name": "Reserve Bank of India — Master Direction on Import (FED Master Direction No. 17/2016-17), Foreign Exchange Management (Export and Import of Currency) Regulations",
       "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201"
@@ -3006,6 +3026,7 @@
       "description": "The Prohibition of Electronic Cigarettes Act, 2019 makes it a criminal offence for any person to produce, manufacture, import, export, transport, sell, distribute, or advertise electronic cigarettes (or any part of one) in India — there is no personal-use or personal-baggage exemption in the Act's text."
     },
     "notes": "Section 7 penalty for a first offence: up to 1 year imprisonment and/or a fine up to Rs. 1,00,000 (one lakh); a second or subsequent offence carries up to 3 years imprisonment and a fine up to Rs. 5,00,000 (five lakh). This is a genuine, high-stakes traveler trap: a device that is legal and commonly carried in many other countries is a criminal offence to bring into India, not merely a confiscated item.",
+    "summary": "Banned: India's 2019 Act makes importing e-cigarettes a criminal offence, with no personal-use exemption.",
     "legal_source": {
       "name": "Prohibition of Electronic Cigarettes (Production, Manufacture, Import, Export, Transport, Sale, Distribution, Storage and Advertisement) Act, 2019 (Act No. 42 of 2019), Sections 4 and 7",
       "url": "https://www.indiacode.nic.in/bitstream/123456789/13078/1/A2019-42.pdf"
@@ -3029,6 +3050,7 @@
       "description": "Import of drones (Unmanned Aircraft Systems) in Completely-Built-Up (CBU), Semi-Knocked-Down (SKD), or Completely-Knocked-Down (CKD) form is classified \"Prohibited\" under India's ITC (HS) 2022 import policy (Chapter 88, Policy Condition No. 03, as revised by DGFT Notification No. 54/2015-20 dated 9 Feb 2022). The only stated exceptions are: (i) government entities, government-recognised educational/R&D institutions, and drone manufacturers importing for R&D, each requiring a DGFT import authorisation; and (ii) drones for defence and security purposes, also requiring DGFT authorisation. Import of drone components (not assembled units) is classified \"Free\"."
     },
     "notes": "No exception for tourists or personal/recreational use is stated anywhere in this notification — a foreign visitor's personal camera drone falls squarely within the prohibited CBU category, with no realistic path to a DGFT import authorisation. This is a genuinely high-risk item: many travelers assume a personal drone is fine to pack, and India's rule is stricter than most destinations already in this dataset.",
+    "summary": "Prohibited: India bans drone imports, except by government, R&D bodies and manufacturers with a DGFT authorisation.",
     "legal_source": {
       "name": "Directorate General of Foreign Trade — Notification No. 54/2015-20 dated 9 Feb 2022, ITC (HS) 2022, Chapter 88 Policy Condition No. 03 (import policy for Unmanned Aircraft Systems)",
       "url": "https://content.dgft.gov.in/Website/dgftprod/7d5fd1eb-ad39-4c99-b760-014223657469/Eng-Notification%2054%20dated%209%20Feb%202022%20ITC(HS)%202022%20_with%20Annexures.pdf"
@@ -3590,6 +3612,7 @@
       "description": "Arriving or departing passengers aged 18+ must declare cash, other bearer monetary instruments (cheques, promissory notes, payment orders), precious metals, or precious stones with an aggregate value exceeding AED 60,000 (or the equivalent in foreign currencies). Declaration is made via the designated form or the Afseh/iDeclare online platform. For travelers under 18, any amount they carry is added to their accompanying parent/guardian's threshold.",
       "quantity": "AED 60,000 (~USD 16,300)"
     },
+    "summary": "Travellers 18+ must declare cash, cheques, precious metals or stones worth over AED 60,000 in total.",
     "legal_source": {
       "name": "Dubai Customs — Declaring Money Procedure / Passenger Customs Guide, Version 6 (2025)",
       "url": "https://www.dubaicustoms.gov.ae/en/eServices/ServicesForIndividuals/ViewCustomsProcedure/Pages/DeclaringMoneyProcedure.aspx"
@@ -4028,6 +4051,7 @@
       "quantity": "RMB (CNY) cash: capped at 20,000 yuan per person per entry/exit — amounts above must be declared to Customs and undeclared excess can be turned back/confiscated. Foreign currency cash: no fixed maximum amount for bringing it INTO China, but any amount exceeding the equivalent of USD 5,000 must be declared in writing to Customs on arrival."
     },
     "notes": "The written-declaration trigger derives from the (国家外汇管理局/海关总署) Interim Measures for the Administration of Carrying Foreign Currency Cash Into and Out of the Country, read together with the Measures of the Customs of the PRC on the Supervision of Inbound and Outbound Passenger Baggage and Articles (effective 1 April 2025), whose Article 9 requires declaring 'currency exceeding the prescribed amount.' Note: China's own National Immigration Administration, when asked by a foreign traveler how much cash may be carried in, explicitly stated this is a Customs matter, not an immigration matter — confirming Customs (not NIA) is the correct authority for this fact. Undeclared cash above the threshold risks detention and penalties under Customs administrative-penalty rules.",
+    "summary": "Up to 20,000 yuan in cash per person; declare more. Declare foreign cash worth over USD 5,000.",
     "legal_source": {
       "name": "State Administration of Foreign Exchange (SAFE), Tianjin Branch — official notice reproducing the Interim Measures for the Administration of Carrying Foreign Currency Cash Into and Out of the Country",
       "url": "https://www.safe.gov.cn/tianjin/2024/0430/2466.html"
@@ -4102,6 +4126,7 @@
       "quantity": "IDR 100,000,000 equivalent (general customs declaration threshold)"
     },
     "notes": "Failure to declare, or under-declaring, cash/instruments at or above the threshold can result in administrative penalties and potential confiscation. Travelers carrying large sums should check both the Customs declaration requirement and the separate Bank Indonesia physical-banknote permit rule.",
+    "summary": "Declare cash or payment instruments worth IDR 100 million or more. Foreign banknotes worth IDR 1 billion or more need Bank Indonesia approval.",
     "legal_source": {
       "name": "Direktorat Jenderal Bea dan Cukai (Directorate General of Customs and Excise, Republic of Indonesia) — Selamat Datang (Arriving From Abroad)",
       "url": "https://www.beacukai.go.id/selamat-datang"
@@ -4147,6 +4172,7 @@
       "quantity": "200 cigarettes duty-free"
     },
     "notes": "Official ZATCA guidance sets a 200-cigarette duty-free personal allowance; larger personal quantities (up to 2,400) are allowed but taxed in full and require SFDA approval, and anything above 2,400 is treated as a commercial import.",
+    "summary": "200 cigarettes duty-free. Up to 2,400 with duty and SFDA approval; more needs a commercial import.",
     "legal_source": {
       "name": "ZATCA (Saudi Zakat, Tax and Customs Authority) – Personal Tobacco Import Quantity Limits for Travelers",
       "url": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Pages/customs-individual/Travel-pages/Quantity-Tobaacco.aspx"
@@ -4172,7 +4198,12 @@
   },
   {
     "slug": "drones-sa",
-    "names": ["drone", "uav", "quadcopter", "unmanned aircraft"],
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft"
+    ],
     "destination": "SA",
     "category": "drones",
     "verdict": "depends",
@@ -4180,6 +4211,7 @@
       "description": "ZATCA lists drones as one of its named examples of \"restricted materials that require approval from competent authorities\" (the other named example being medicines) — meaning a drone cannot simply be carried through like an ordinary personal item, but isn't outright banned either. Travelers must disclose the drone at customs and obtain the necessary authorisation before entry."
     },
     "notes": "ZATCA's page does not name the specific competent authority or describe the approval process/timeline for drones (unlike its more detailed treatment of medicines, which points to the SFDA clearance system cited elsewhere on this site). Saudi Arabia's General Authority of Civil Aviation (GACA) is the plausible drone/UAV regulator, but that could not be independently confirmed against a primary GACA source in this pass — treat the approval requirement as confirmed, but the exact process as unconfirmed.",
+    "summary": "Drones need approval from the competent authorities: declare yours at customs and get authorisation before entry.",
     "legal_source": {
       "name": "ZATCA (Saudi Zakat, Tax and Customs Authority) — prohibited and restricted items for travelers",
       "url": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Pages/customs-individual/Travel-pages/disclosure-amounts.aspx"
@@ -4190,7 +4222,16 @@
   },
   {
     "slug": "weapons-sa",
-    "names": ["weapons", "stun gun", "electric shock device", "taser", "laser pointer", "tear gas", "fireworks", "radar detector"],
+    "names": [
+      "weapons",
+      "stun gun",
+      "electric shock device",
+      "taser",
+      "laser pointer",
+      "tear gas",
+      "fireworks",
+      "radar detector"
+    ],
     "destination": "SA",
     "category": "weapons",
     "verdict": "prohibited",
@@ -4198,6 +4239,7 @@
       "description": "ZATCA's prohibited-items list bans \"all types of electric shock\" devices, laser devices (with one narrow exception: a single red laser pen not exceeding 5 milliwatts), fireworks, \"eavesdropping devices of all shapes and types,\" speed radar detectors, and items described as \"tear softeners\" (tear-gas-type irritants). Surveillance devices disguised as everyday objects — the source specifically names hidden-camera watches, pens, glasses, and toy airplanes — are also prohibited."
     },
     "notes": "This list is broader and more surveillance/security-focused than a typical 'weapons' list — it groups conventional self-defence items (stun devices, tear gas) with electronic surveillance/countermeasure gear (hidden cameras, radar detectors, eavesdropping devices) and laser pointers above a trivial power threshold. Travelers who wouldn't think of a laser pointer, a novelty pen camera, or a radar detector as a 'weapon' are exactly the ones likely to be caught out by this rule.",
+    "summary": "Banned: stun devices, most laser devices, fireworks, eavesdropping devices, radar detectors and hidden cameras.",
     "legal_source": {
       "name": "ZATCA (Saudi Zakat, Tax and Customs Authority) — prohibited and restricted items for travelers",
       "url": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Pages/customs-individual/Travel-pages/disclosure-amounts.aspx"
@@ -4295,6 +4337,7 @@
       "quantity": "Amounts exceeding US$10,000 (or the equivalent in any other currency) in physical paper currency"
     },
     "notes": "Declared via the Declaração Eletrônica de Bens de Viajante (e-DBV) at edbv.receita.fazenda.gov.br, filed with Receita Federal customs control before leaving the customs area on arrival. Applies to national or foreign paper currency in specie only — not credit instruments, personal checks, or traveler's checks. Legal basis: Lei nº 14.286/2021.",
+    "summary": "Declare paper currency worth over US$10,000 on Brazil's e-DBV form when you arrive.",
     "legal_source": {
       "name": "Receita Federal do Brasil – Guia do Viajante: Dinheiro em espécie na entrada no Brasil",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/dinheiro-em-especie"
@@ -4456,6 +4499,7 @@
       "quantity": "USD 10,000 or equivalent"
     },
     "notes": "Below USD 10,000, no declaration or permission is needed on arrival or departure. At or above USD 10,000 on arrival, travelers must mark item 3 on the Traveler Declaration Form, report it to Customs, and obtain a Certificate of Foreign Currency Declaration before passing immigration. On departure, Korean residents carrying USD 10,000+ must report to Customs (some purposes require bank confirmation instead); non-residents departing with more than they declared on arrival need a foreign exchange bank confirmation. Failure to report can carry imprisonment of up to 1 year or a fine of up to KRW 100 million (up to triple the violation amount in some cases).",
+    "summary": "Declare cash, cheques or other means of payment worth USD 10,000 or more, in any currency.",
     "legal_source": {
       "name": "Korea Customs Service - Declaration of Foreign Currency",
       "url": "https://www.customs.go.kr/english/cm/cntnts/cntntsView.do?mi=10800&cntntsId=5500"
@@ -4570,7 +4614,13 @@
   },
   {
     "slug": "drones-za",
-    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas"
+    ],
     "destination": "ZA",
     "category": "drones",
     "verdict": "depends",
@@ -4578,6 +4628,7 @@
       "description": "\"In accordance with Part 101.02.4(1) of the Civil Aviation Regulations, 2011, no remotely [piloted] UAS shall be operated within the Republic of South Africa, unless such UAS has been issued with a certificate of registration by the Director\" (South African Civil Aviation Authority). This is a flight-operation registration requirement, not a customs import ban — bringing a drone into the country isn't itself restricted, but legally switching it on to fly is."
     },
     "notes": "SACAA's own UAS guidance page does not address a visitor/tourist exemption, a temporary-registration path, or how a foreign-registered drone is treated — it describes private and commercial operator registration generally, with no carve-out found for short-stay travelers in this pass. Treat flying a personal drone in South Africa as requiring SACAA registration obtained in advance, not something sorted out on arrival; SACAA's own contact for this is rpasInbox@caa.co.za.",
+    "summary": "You can bring a drone, but you can't fly it until it has a South African Civil Aviation Authority registration certificate.",
     "legal_source": {
       "name": "South African Civil Aviation Authority (SACAA) — Unmanned Aircraft Systems, citing Civil Aviation Regulations 2011, Part 101.02.4(1)",
       "url": "https://www.caa.co.za/industry-information/uas/"
@@ -4872,7 +4923,17 @@
   },
   {
     "slug": "cannabis-br",
-    "names": ["cannabis", "marijuana", "maconha", "weed", "thc", "hashish", "cbd", "cannabidiol", "canabidiol"],
+    "names": [
+      "cannabis",
+      "marijuana",
+      "maconha",
+      "weed",
+      "thc",
+      "hashish",
+      "cbd",
+      "cannabidiol",
+      "canabidiol"
+    ],
     "destination": "BR",
     "category": "cbd_cannabis",
     "verdict": "depends",
@@ -4881,6 +4942,7 @@
       "quantity": "CBD: ANVISA exceptional-import authorization required in advance; recreational cannabis/THC: prohibited outright"
     },
     "notes": "The government's own official service page for requesting this CBD authorization is linked directly from the Receita Federal restrictions table, confirming it's a real, active process rather than a formality: gov.br/pt-br/servicos/solicitar-autorizacao-para-importacao-excepcional-de-produtos-a-base-de-canabidiol. No day-supply or product-quantity cap for approved CBD imports was found on the pages fetched in this pass.",
+    "summary": "Cannabis and THC products are banned. Cannabidiol products need ANVISA's exceptional import authorisation in advance.",
     "legal_source": {
       "name": "Receita Federal — Guia do Viajante: Proibições e Restrições (Entrada no Brasil)",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/proibicoes-restricoes"
@@ -4891,7 +4953,16 @@
   },
   {
     "slug": "weapons-br",
-    "names": ["weapons", "firearms", "guns", "ammunition", "airsoft", "replica gun", "toy gun", "air gun"],
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition",
+      "airsoft",
+      "replica gun",
+      "toy gun",
+      "air gun"
+    ],
     "destination": "BR",
     "category": "weapons",
     "verdict": "depends",
@@ -4899,6 +4970,7 @@
       "description": "Real firearms, ammunition, and other products controlled by the Army Command ('Armas, munições e demais produtos controlados pelo Comando do Exército') are restricted goods requiring prior approval from the Brazilian Army — not something arranged at the border. Separately, and more likely to catch a traveler off guard: toy guns, firearm replicas, and simulated firearms are listed as prohibited outright — the source explicitly includes air-compressed or gas-powered guns used for games or sporting competitions (i.e. airsoft) and toys merely shaped like a firearm."
     },
     "notes": "The airsoft/toy-gun prohibition is easy to miss because it reads like a real-weapons rule at first glance — a traveler bringing sporting airsoft equipment or a child's toy gun could reasonably assume it doesn't count as a 'weapon,' but Receita Federal's own wording names exactly this category as prohibited, not merely restricted.",
+    "summary": "Real firearms need Brazilian Army approval. Toy guns, replicas and airsoft guns are banned outright.",
     "legal_source": {
       "name": "Receita Federal — Guia do Viajante: Proibições e Restrições (Entrada no Brasil)",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/proibicoes-restricoes"
@@ -5042,7 +5114,12 @@
   },
   {
     "slug": "cash-sg",
-    "names": ["cash", "currency", "money", "bearer negotiable instruments"],
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "bearer negotiable instruments"
+    ],
     "destination": "SG",
     "category": "cash",
     "verdict": "declaration_required",
@@ -5050,6 +5127,7 @@
       "description": "The Singapore Police Force operates a real cross-border cash movement reporting scheme (Form NP 728, lodged with the Suspicious Transaction Reporting Office under the Corruption, Drug Trafficking and Other Serious Crimes (Confiscation of Benefits) Act) covering cash and bearer negotiable instruments above a threshold."
     },
     "notes": "The specific SGD threshold that triggers mandatory reporting could not be confirmed on a primary source in this pass — the Police e-Services page for lodging the report describes the process (an online form, ~10 minutes to complete) but doesn't state the dollar figure itself, and that page returned no other numeric threshold. A commonly-cited SGD 20,000 figure appears in secondary sources, but this site only publishes what it can verify directly — treat the exact threshold as unconfirmed and, if carrying a large sum, check with the Singapore Police Force or file the report regardless.",
+    "summary": "Cash and bearer negotiable instruments above the threshold must be reported to the Singapore Police Force on Form NP 728.",
     "legal_source": {
       "name": "Singapore Police Force — Lodge Cash Movement Report for Carriers, Recipients or Senders",
       "url": "https://www.police.gov.sg/E-Services/Lodge-Cash-Movement-Report-For-Carriers-Recipients-or-Senders"
@@ -5834,7 +5912,17 @@
   },
   {
     "slug": "weapons-nz",
-    "names": ["weapons", "firearms", "guns", "ammunition", "airgun", "stun gun", "pepper spray", "knife", "knives"],
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition",
+      "airgun",
+      "stun gun",
+      "pepper spray",
+      "knife",
+      "knives"
+    ],
     "destination": "NZ",
     "category": "weapons",
     "verdict": "prohibited",
@@ -5842,6 +5930,7 @@
       "description": "\"All firearms, weapons and ammunition are prohibited in New Zealand without a permit.\" Authorisation must be obtained from Te Tari Pūreke — Firearms Safety Authority (FSA) or New Zealand Police before travelling with firearms, weapons, ammunition, or firearm parts. The same permit requirement covers airguns, stun devices, pepper spray, and various knife types — none of these can simply be declared and allowed through; a permit obtained in advance is required."
     },
     "notes": "NZ Customs places the burden of verifying permit requirements on the traveller or importer before arrival — there is no on-arrival process to obtain a permit you didn't already have. Ordinary pocket/kitchen knives packed in checked luggage are typically a separate, lower-risk case in practice, but the source's own wording sets a wide 'various knife types' net without a clear-cut personal-use exemption, so travellers should not assume any knife is automatically fine.",
+    "summary": "Firearms, airguns, stun devices, pepper spray and some knives need a permit from the Firearms Safety Authority or Police before you travel.",
     "legal_source": {
       "name": "New Zealand Customs Service — Prohibited and restricted items",
       "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/"
@@ -5852,7 +5941,17 @@
   },
   {
     "slug": "wildlife-products-nz",
-    "names": ["ivory", "coral", "tortoiseshell", "animal skin souvenir", "fur", "endangered species products", "cites souvenir", "shells", "crocodile leather"],
+    "names": [
+      "ivory",
+      "coral",
+      "tortoiseshell",
+      "animal skin souvenir",
+      "fur",
+      "endangered species products",
+      "cites souvenir",
+      "shells",
+      "crocodile leather"
+    ],
     "destination": "NZ",
     "category": "other",
     "verdict": "prohibited",
@@ -5860,6 +5959,7 @@
       "description": "\"Some plants and animals are protected under international law. This includes items made from endangered species. You must not bring these items into New Zealand without the correct permits.\" NZ Customs names corals, clams, crocodile products, and certain traditional medicines as commonly seized items; the Department of Conservation issues permits (where obtainable at all) for ivory products, animal skins, leather goods, furs, shells, marine life items, protected timber, and live species."
     },
     "notes": "This is a CITES (Convention on International Trade in Endangered Species) enforcement matter, not a simple customs allowance — many categories named here (ivory in particular) have no realistic personal-import permit path even when a permit process technically exists. Souvenirs bought abroad (coral jewellery, tortoiseshell items, animal-skin goods) are a common, easy-to-miss trap for travellers who assume a small souvenir quantity is exempt; the source states no such exemption. Anyone uncertain should contact the Department of Conservation (cites@doc.govt.nz) before travel, not after purchasing the item.",
+    "summary": "Items from endangered species, such as some corals, shells, crocodile products and traditional medicines, need permits or are seized.",
     "legal_source": {
       "name": "New Zealand Customs Service — Prohibited and restricted items",
       "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/"
@@ -6121,7 +6221,13 @@
   },
   {
     "slug": "weapons-ph",
-    "names": ["weapons", "firearms", "guns", "ammunition", "war weapons"],
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition",
+      "war weapons"
+    ],
     "destination": "PH",
     "category": "weapons",
     "verdict": "prohibited",
@@ -6130,6 +6236,7 @@
       "quantity": "PNP-FEO Permit to Import required in advance"
     },
     "notes": "Contact for the PNP-FEO permit process, as published by the Bureau of Customs: +632 723 0401 loc. 4588 or feocsg@pnp.gov.ph. No exception for parts, replicas, or small ammunition quantities was found on this source — treat any firearm-related item as requiring the permit.",
+    "summary": "Firearms, ammunition and weapons need a PNP-FEO permit to import, arranged before you travel.",
     "legal_source": {
       "name": "Bureau of Customs Philippines — Guidelines on Arriving Travelers",
       "url": "https://customs.gov.ph/guidelines-on-arriving-travelers/"
@@ -6140,7 +6247,13 @@
   },
   {
     "slug": "drones-ph",
-    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpa"],
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpa"
+    ],
     "destination": "PH",
     "category": "drones",
     "verdict": "allowed_with_limits",
@@ -6148,6 +6261,7 @@
       "description": "The Civil Aviation Authority of the Philippines (CAAP) states plainly: \"There is no special permit required for flying drones for recreational purposes.\" Operating rules apply instead of a permit: keep the drone within visual line of sight, stay at or below 120m/400ft altitude, stay at least 10km from any airport's movement area, don't fly at night, over crowds, over national-security-sensitive government facilities, or in any area with an active fire/police/emergency response. Travelers should also check with the Local Government Unit (LGU) of the area for local drone ordinances, which CAAP notes can add restrictions on top of the national rules."
     },
     "notes": "A genuinely different, more permissive answer than most destinations checked for this category — Philippines has no registration or advance-permit requirement for personal/recreational drones, only in-flight operating rules. Commercial drone operations are separately gated behind a CAAP Certificate of Authorization (COA), which doesn't apply to a tourist's personal use.",
+    "summary": "No permit is needed to fly a drone for fun, but CAAP rules apply: line of sight, 120 m maximum, 10 km from airports, no night flights.",
     "legal_source": {
       "name": "Civil Aviation Authority of the Philippines (CAAP) — Do's and Don'ts for Flying Drones or Remotely Piloted Aircraft (RPA)",
       "url": "https://caap.gov.ph/wp-content/uploads/2025/05/Drone-Dos-and-Donts-Revised_final-scaled.jpg"
@@ -6158,7 +6272,15 @@
   },
   {
     "slug": "weapons-id",
-    "names": ["weapons", "firearms", "guns", "air rifle", "airsoft", "knife", "sharp weapon"],
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "air rifle",
+      "airsoft",
+      "knife",
+      "sharp weapon"
+    ],
     "destination": "ID",
     "category": "weapons",
     "verdict": "depends",
@@ -6166,6 +6288,7 @@
       "description": "Indonesian Customs' passenger-baggage guidance lists 'senjata api' (firearms), 'senjata angin' (air weapons, e.g. air rifles/airsoft) and 'senjata tajam' (sharp weapons) — alongside narcotics and explosives — as categories that trigger mandatory red-lane physical inspection. Firearms and air weapons realistically require a police-issued import/possession permit that ordinary tourists do not have access to; 'sharp weapons' is a broader, less-defined category that the source does not limit to combat knives, so an unusually large or blade-style knife risks being treated the same way."
     },
     "notes": "Bea Cukai's page does not give a numeric size/blade-length threshold for 'senjata tajam,' nor does it name an exception for ordinary pocket knives or multitools packed in checked luggage — travelers carrying anything that could be characterised as a weapon should expect inspection and be ready to justify it, not assume a small size makes it exempt.",
+    "summary": "Firearms, air weapons and sharp weapons trigger a red-lane inspection; firearms and air weapons need a police permit.",
     "legal_source": {
       "name": "Direktorat Jenderal Bea dan Cukai (Indonesian Customs) — Barang Penumpang (Passenger Goods)",
       "url": "https://www.beacukai.go.id/barang-penumpang"
@@ -6335,7 +6458,13 @@
   },
   {
     "slug": "drones-jp",
-    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas"
+    ],
     "destination": "JP",
     "category": "drones",
     "verdict": "depends",
@@ -6343,6 +6472,7 @@
       "description": "Registration with Japan's Ministry of Land, Infrastructure, Transport and Tourism (MLIT) is mandatory for any drone weighing 100g or more, with no exemption for foreign visitors, in force since June 20, 2022."
     },
     "notes": "In practice, MLIT's online registration system requires a Japanese address and typically takes 7-10 business days to process, which makes same-trip tourist registration impractical without advance planning through a local agent or rental company.",
+    "summary": "Drones of 100 g or more must be registered with MLIT before flying, including visitors' drones.",
     "legal_source": {
       "name": "MLIT (Ministry of Land, Infrastructure, Transport and Tourism) — Unmanned Aircraft Registration System",
       "url": "https://www.mlit.go.jp/koku/koku_ua_registration.html"
@@ -6353,7 +6483,13 @@
   },
   {
     "slug": "drones-ng",
-    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas"
+    ],
     "destination": "NG",
     "category": "drones",
     "verdict": "depends",
@@ -6361,6 +6497,7 @@
       "description": "Drones weighing more than 250g must be registered with the Nigeria Civil Aviation Authority (NCAA), and operators need a Remotely Piloted Aircraft Systems Certificate plus a per-flight authorization before flying."
     },
     "notes": "NCAA's advisory circular page is real and reachable, but its detailed procedural text lives in a linked PDF that wasn't retrievable in this pass, so the 250g threshold and certificate process should be treated as the general shape of the rule rather than a word-for-word confirmed figure — undeclared drones risk being held in bonded customs storage pending the paperwork.",
+    "summary": "Drones over 250 g must be registered with the NCAA, and you need a certificate plus authorisation for each flight.",
     "legal_source": {
       "name": "Nigeria Civil Aviation Authority (NCAA) — Unmanned Aircraft System Operations in Nigeria's Airspace (Guidance NCAA-GAD-AC-002)",
       "url": "https://ncaa.gov.ng/documents/advisory-circulars/unmanned-aircraft-system-operations-in-nigeria-s-airspace-guidance/"
@@ -6371,7 +6508,13 @@
   },
   {
     "slug": "drones-au",
-    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas"
+    ],
     "destination": "AU",
     "category": "drones",
     "verdict": "allowed_with_limits",
@@ -6379,6 +6522,7 @@
       "description": "No registration, licence or accreditation is required for recreational drone flying in Australia at any weight, but standard operating conditions apply: fly no higher than 120m, stay at least 30m from other people, and drones 250g or heavier can't be flown within 5.5km of a controlled airport."
     },
     "notes": "Foreign-registered drones can't be separately registered in Australia, but that only matters for commercial operation — casual recreational tourist flying doesn't require it.",
+    "summary": "No registration is needed for recreational flying, but stay below 120 m and 30 m from people, and away from controlled airports.",
     "legal_source": {
       "name": "Civil Aviation Safety Authority (CASA) — Drone rules",
       "url": "https://www.casa.gov.au/knowyourdrone/drone-rules"
@@ -6389,14 +6533,21 @@
   },
   {
     "slug": "drones-tr",
-    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas"
+    ],
     "destination": "TR",
     "category": "drones",
     "verdict": "depends",
     "limits": {
-      "description": "Drones under 500g are commonly described as exempt from registration, customs paperwork and Turkish ID requirements; drones 500g and over must go through SHGM's UAV registry and an import Technical Compliance Certificate application filed with the Customs Directorate (SHT-İHA Instruction, Art. 6). Legally flying as a foreign national separately requires a flight-permit application to SHGM at least 20 days in advance through diplomatic channels."
+      "description": "Importing a drone into Turkey involves registration in the civil aviation authority (SHGM) UAV registry and a Technical Compliance Certificate application filed with the Customs Directorate (SHT-İHA Instruction, Art. 6)."
     },
-    "notes": "The import/customs certificate mechanism is confirmed directly on SHGM's own import page; the specific 500g weight threshold and the 20-day foreign-national flight-permit lead time are corroborated by secondary sources, not read verbatim on that page.",
+    "notes": "SHGM's import page confirms the certificate procedure. Weight thresholds below which a drone is exempt, and the rules for foreign nationals flying in Turkey, weren't confirmed on an official page, so check with SHGM before you travel.",
+    "summary": "Importing a drone involves SHGM registration and a customs technical compliance certificate. Check exemptions with SHGM before you travel.",
     "legal_source": {
       "name": "SHGM (Sivil Havacılık Genel Müdürlüğü / Turkish Directorate General of Civil Aviation) — İnsansız Hava Aracı İthali (UAV Import)",
       "url": "https://web.shgm.gov.tr/tr/s/2227-insansiz-hava-araci-ithali"
@@ -6407,7 +6558,13 @@
   },
   {
     "slug": "drones-nz",
-    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas"
+    ],
     "destination": "NZ",
     "category": "drones",
     "verdict": "allowed_with_limits",
@@ -6415,6 +6572,7 @@
       "description": "Unmanned aircraft under 25kg are covered by Part 101 of New Zealand's civil aviation rules. Visitors may fly without registering, holding a licence, or a certificate, provided they follow Part 101's standard conditions: daylight only, within visual line of sight, yield to manned aircraft, get consent before flying over people or their property, and obtain ATC clearance in controlled airspace."
     },
     "notes": "New Zealand does not currently operate a drone registration scheme at all (one has been floated with no confirmed date) — this is a genuinely lighter-touch regime than most other destinations in this dataset.",
+    "summary": "Visitors can fly drones under 25 kg without registration, following Part 101 rules: daylight, line of sight, consent over people.",
     "legal_source": {
       "name": "Civil Aviation Authority of New Zealand — Part 101: Unmanned Aircraft and Rocket Operating Rules",
       "url": "https://www.aviation.govt.nz/rules/rule-part/part-101/"
@@ -6425,7 +6583,13 @@
   },
   {
     "slug": "drones-cn",
-    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas"
+    ],
     "destination": "CN",
     "category": "drones",
     "verdict": "depends",
@@ -6433,6 +6597,7 @@
       "description": "\"民用无人驾驶航空器所有者应当依法进行实名登记\" (\"Owners of civil unmanned aircraft shall carry out real-name registration in accordance with the law\") — Art. 10 of China's Interim Regulation on the Administration of Unmanned Aircraft Flights, in force since January 1, 2024. This real-name registration requirement applies to all civil drones regardless of weight."
     },
     "notes": "Bringing a personal consumer drone through Chinese customs is not itself restricted or specially declared. The registration requirement, however, is a genuine barrier for visitors in practice: the regulation doesn't spell out a foreign-operator registration path, and the platform is understood to require a Chinese phone number, which blocks straightforward tourist self-registration.",
+    "summary": "All civil drones must be registered under the owner's real name before flying, whatever their weight.",
     "legal_source": {
       "name": "State Council / Civil Aviation Administration of China (CAAC) — Interim Regulation on the Administration of Unmanned Aircraft Flights, Art. 10",
       "url": "https://www.caac.gov.cn/XXGK/XXGK/FLFG/202401/t20240115_222642.html"
@@ -6443,14 +6608,21 @@
   },
   {
     "slug": "drones-id",
-    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas"
+    ],
     "destination": "ID",
     "category": "drones",
     "verdict": "depends",
     "limits": {
-      "description": "Nationally, Indonesia doesn't restrict bringing a drone through customs and doesn't require registration or a licence for recreational flying of Open Category drones under 25kg, per Ministry of Transportation Regulation PM 37/2020. Bali is a documented exception: local reporting describes a 2025 directive requiring pre-arrival drone registration through the SIPP-TA/SIPUDI system for all drone weights before flying there."
+      "description": "Nationally, Indonesia doesn't restrict bringing a drone through customs and doesn't require registration or a licence for recreational flying of Open Category drones under 25 kg, per Ministry of Transportation Regulation PM 37/2020."
     },
-    "notes": "The national regulation (PM 37/2020) is confirmed via Indonesia's official legal-database domains, though not read as full primary text in this pass. The Bali-specific 2025 registration directive is secondary-sourced only and should be treated as unconfirmed until a primary DGCA Indonesia document is found — don't assume it applies outside Bali.",
+    "notes": "Regional rules may add requirements; we haven't confirmed any on an official page, so check with the local authority where you plan to fly.",
+    "summary": "Nationally, recreational drones under 25 kg need no customs restriction, registration or licence under PM 37/2020.",
     "legal_source": {
       "name": "Peraturan Menteri Perhubungan RI No. PM 37 Tahun 2020 — Pengoperasian Pesawat Udara Tanpa Awak di Ruang Udara yang Dilayani Indonesia",
       "url": "https://peraturan.go.id/id/permenhub-no-pm37-tahun-2020"
@@ -6460,26 +6632,14 @@
     "status": "verified"
   },
   {
-    "slug": "drones-br",
-    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
-    "destination": "BR",
-    "category": "drones",
-    "verdict": "depends",
-    "limits": {
-      "description": "Drones over 250g must be registered with Brazil's civil aviation authority (ANAC) through the SISANT system, which requires a Brazilian CPF or CNPJ taxpayer number — the real obstacle for tourists, who would need to obtain a CPF from a Brazilian consulate beforehand or have a Brazilian resident register the drone on their behalf. Drones of 250g or under don't need registration for recreational use, but must still follow altitude, visual-line-of-sight and people-distance rules."
-    },
-    "notes": "A direct fetch of ANAC's registration page was blocked by a CAPTCHA in this pass, so this is drawn from consistent secondary reporting rather than the primary page's own text — treat the CPF/CNPJ barrier as the well-corroborated headline fact, but re-verify against ANAC directly before treating exact figures as final.",
-    "legal_source": {
-      "name": "ANAC (Agência Nacional de Aviação Civil) — Cadastro de Drone (SISANT)",
-      "url": "https://www.gov.br/anac/pt-br/assuntos/drones/cadastro-de-drone"
-    },
-    "verified_at": "2026-09-16",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
-  },
-  {
     "slug": "drones-sg",
-    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas"
+    ],
     "destination": "SG",
     "category": "drones",
     "verdict": "depends",
@@ -6487,6 +6647,7 @@
       "description": "Drones over 250g must be registered through the Civil Aviation Authority of Singapore's (CAAS) UA Portal: a S$25 registration label plus online registration, using Singpass or a UAPass account for foreign visitors, taking about 5 working days to process. The minimum age to register is 16. Drones of 250g or under are exempt from registration for basic recreational use."
     },
     "notes": "Confirmed directly from CAAS's own registration page, including the UAPass pathway specifically built for foreign visitors — apply before arrival, since the processing time doesn't support a same-day registration on landing.",
+    "summary": "Drones over 250 g must be registered with CAAS (S$25 label, about 5 working days). Lighter drones are exempt for basic use.",
     "legal_source": {
       "name": "Civil Aviation Authority of Singapore (CAAS) — Registration / Deregistration (Unmanned Aircraft)",
       "url": "https://www.caas.gov.sg/unmanned-aircraft/registration-deregistration/"
@@ -6515,7 +6676,14 @@
   },
   {
     "slug": "meat-dairy-sg",
-    "names": ["meat", "dairy", "cheese", "milk", "beef", "pork"],
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "beef",
+      "pork"
+    ],
     "destination": "SG",
     "category": "food_animal",
     "verdict": "allowed_with_limits",
@@ -6523,6 +6691,7 @@
       "description": "Beef, mutton and pork are allowed only from Singapore Food Agency-approved source countries (the approved list includes Argentina, Australia, Belgium, Brazil, Canada, Denmark, Finland, France, Germany, Hungary, Ireland, Japan, Mexico, the Netherlands, New Zealand, Paraguay, Poland, Spain, Sweden, Uruguay and the USA for beef, with the exact list varying by meat type), capped at 5kg combined. Dairy and other processed food fall under the general non-commercial personal-food allowance of 5kg/5L/S$100 combined."
     },
     "notes": "The approved-country list differs by meat type (beef vs. pork vs. mutton) — check SFA's own list for the specific country and meat combination before assuming an origin is covered.",
+    "summary": "Beef, mutton and pork only from SFA-approved countries, up to 5 kg. Other food falls under the 5 kg/5 L/S$100 allowance.",
     "legal_source": {
       "name": "Singapore Food Agency — List of Food & Food Products Allowed",
       "url": "https://www.sfa.gov.sg/bringing-food-for-private-consumption-from-overseas/list-of-food---food-products-allowed"
@@ -6533,7 +6702,12 @@
   },
   {
     "slug": "fresh-produce-sg",
-    "names": ["fruit", "vegetables", "plants", "seeds"],
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds"
+    ],
     "destination": "SG",
     "category": "food_plant",
     "verdict": "allowed_with_limits",
@@ -6541,6 +6715,7 @@
       "description": "Fruit and vegetables are allowed from any country in a small, reasonable hand-carry quantity for personal consumption, within the general 5kg/5L/S$100 non-commercial food allowance."
     },
     "notes": "Importing at commercial scale without the required approvals carries a fine of up to S$10,000 and/or 3 years' imprisonment, per an Immigration & Checkpoints Authority enforcement release — that penalty applies to commercial-scale evasion, not an ordinary traveler's hand-carried snack.",
+    "summary": "Small, reasonable amounts of fruit and vegetables for your own use, within the 5 kg/5 L/S$100 food allowance.",
     "legal_source": {
       "name": "Singapore Food Agency — General Rule to Bring Food into Singapore (Non-commercial)",
       "url": "https://www.sfa.gov.sg/bringing-food-for-private-consumption-from-overseas/general-rule-to-bring-food-into-singapore-non-commercial"
@@ -6569,7 +6744,14 @@
   },
   {
     "slug": "meat-dairy-br",
-    "names": ["meat", "dairy", "cheese", "milk", "cured meat", "salami"],
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "cured meat",
+      "salami"
+    ],
     "destination": "BR",
     "category": "food_animal",
     "verdict": "depends",
@@ -6577,6 +6759,7 @@
       "description": "Raw or artisanally-processed meat, cured meats, and non-industrialized milk/dairy are prohibited. Cheese, salami and doce de leite ARE allowed if in original manufacturer packaging with identifying labels — the packaging and labeling is what distinguishes an allowed item from a prohibited one."
     },
     "notes": "Per Portaria MAPA n° 872/2025: any animal product brought in without sanitary proof is treated as prohibited by default. Items that do require import authorization can be pre-declared via a MAPA-issued document before travel.",
+    "summary": "Raw, cured or artisanal meat and unprocessed dairy are banned. Factory-packed, labelled cheese, salami and doce de leite are allowed.",
     "legal_source": {
       "name": "Ministério da Agricultura e Pecuária (MAPA) — Viajantes e Bagagens (Portaria MAPA n° 872/2025)",
       "url": "https://www.gov.br/agricultura/pt-br/assuntos/vigilancia-agropecuaria/viajantes-e-bagagens"
@@ -6602,7 +6785,13 @@
   },
   {
     "slug": "meat-dairy-ph",
-    "names": ["meat", "dairy", "cheese", "milk", "canned meat"],
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "canned meat"
+    ],
     "destination": "PH",
     "category": "food_animal",
     "verdict": "depends",
@@ -6610,6 +6799,7 @@
       "description": "Fully cooked/canned meat from disease-free countries needs no clearance. Processed-but-uncooked meat needs no SPS clearance but is capped at 10kg per passenger, with a veterinary health certificate or proof of purchase. Unprocessed meat requires an SPS Import Clearance for any quantity, however small."
     },
     "notes": "Per Bureau of Animal Industry Memorandum Circular 48, Series of 2021 — the cooked/canned-vs-uncooked-vs-unprocessed distinction is the whole rule; a canned corned beef and a raw steak are treated completely differently at the border.",
+    "summary": "Fully cooked or canned meat needs no clearance; uncooked processed meat up to 10 kg with papers; raw meat needs SPS clearance.",
     "legal_source": {
       "name": "Bureau of Animal Industry (BAI) — Meat Products Import (Memorandum Circular 48, s. 2021)",
       "url": "https://www.bai.gov.ph/Stakeholders/MeatProductsImport"
@@ -6745,7 +6935,12 @@
   },
   {
     "slug": "meat-dairy-ke",
-    "names": ["meat", "dairy", "cheese", "milk"],
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk"
+    ],
     "destination": "KE",
     "category": "food_animal",
     "verdict": "depends",
@@ -6753,6 +6948,7 @@
       "description": "Kenya's Meat Control (Importation of Meat and Meat Products) Regulations require an import permit from the Director of Veterinary Services for meat or meat-product imports, via written application, a fee, and 24 hours' advance notice to the port of entry."
     },
     "notes": "This regulation reads as built for commercial importers, not obviously for a tourist carrying a personal quantity of cured meat or cheese — don't assume an ordinary traveler needs to apply for a Director-of-Veterinary-Services permit before a trip, but also don't assume they're exempt; Kenya's own page doesn't draw that line explicitly. Found via a search-snippet quote of the regulation text, not a direct fetch (403'd).",
+    "summary": "Meat and meat products need an import permit from Kenya's Director of Veterinary Services, applied for in advance.",
     "legal_source": {
       "name": "Kenya Law — The Meat Control (Importation of Meat and Meat Products) Regulations",
       "url": "https://new.kenyalaw.org/akn/ke/act/ln/2001/28/eng@2022-12-31"
@@ -6763,7 +6959,12 @@
   },
   {
     "slug": "meat-dairy-id",
-    "names": ["meat", "dairy", "cheese", "milk"],
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk"
+    ],
     "destination": "ID",
     "category": "food_animal",
     "verdict": "declaration_required",
@@ -6771,6 +6972,7 @@
       "description": "All animal and fish product imports must carry quarantine documents from the country/region of origin, declared through Indonesia's \"All Indonesia\" app and inspected on arrival."
     },
     "notes": "Undocumented goods are confiscated and destroyed — enforcement was recently tightened specifically for goods originating from Malaysia amid Nipah-virus concerns, an example of how fast this can change by origin country.",
+    "summary": "Animal and fish products need quarantine documents from the country of origin and must be declared on the All Indonesia app.",
     "legal_source": {
       "name": "Badan Karantina Indonesia (Indonesian Quarantine Agency) — Pengawasan Produk Hewan dan Tumbuhan Asal Luar Negeri",
       "url": "https://karantinaindonesia.go.id/berita/pengawasan-produk-hewan-dan-tumbuhan-asal-luar-negeri-terus-diperketat"
@@ -6799,7 +7001,14 @@
   },
   {
     "slug": "drones-vn",
-    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas", "flycam"],
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas",
+      "flycam"
+    ],
     "destination": "VN",
     "category": "drones",
     "verdict": "depends",
@@ -6807,6 +7016,7 @@
       "description": "Decree No. 288/2025/ND-CP classifies drones into 5 weight tiers (under 0.25kg, 0.25–under 2kg, 2–under 25kg, 25–under 150kg, 150kg+). Recreational drones under 0.25kg (250g) flown outside prohibited/restricted airspace are exempt from a flight permit, but must still be reported to local military and public security agencies. Import licenses for drones are issued by the provincial-level People's Committee, after consulting the Ministry of National Defense or Ministry of Public Security — not a standalone military license, contrary to what's commonly claimed online. Flight-permit applications for drones that do need one must be submitted at least 7 days ahead; the competent agency must decide within 5 working days."
     },
     "notes": "The decree itself doesn't specify financial or criminal penalties for violations — it defers to other legal documents and the parent Law on People's Air Defense. Separately reported but not independently verified against primary text: registration has reportedly been mandatory for all drones regardless of weight since 1 July 2025, with a further 2026 circular adding a mandatory electronic ID-code stamp per drone — treat that specific claim as unconfirmed rather than settled.",
+    "summary": "Drones need a provincial import licence. Under 250 g, no flight permit is needed outside restricted airspace, but you must report to local authorities.",
     "legal_source": {
       "name": "Decree No. 288/2025/ND-CP (Government of Vietnam) — Management of Unmanned Aircraft and Other Aerial Vehicles, Arts. 4, 6, 21, 22",
       "url": "https://english.luatvietnam.vn/decree-no-288-2025-nd-cp-dated-november-5-2025-of-the-government-providing-the-management-of-unmanned-aircraft-and-other-aerial-vehicles-418028-doc1.html"
@@ -6832,25 +7042,58 @@
   },
   {
     "slug": "e-cigarettes-tr",
-    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping liquid",
+      "e-liquid"
+    ],
     "destination": "TR",
     "category": "e_cigarettes",
     "verdict": "allowed_with_limits",
     "limits": {
-      "description": "Presidential Decision No. 2149 (Resmi Gazete Issue 31050, 25 February 2020), Art. 1, bans commercial import of e-cigarettes and electronic hookahs outright, but Art. 2(2) explicitly authorizes the Ministry of Commerce to separately regulate traveler-accompanied entry of these goods. A Ministry of Commerce implementing circular is commonly cited elsewhere as setting the personal allowance at 1 device plus 30ml of e-liquid, or 10 disposable devices."
+      "description": "Travellers aged 18 or over may bring one e-cigarette device they already use, plus one of: up to 200 heated-tobacco units, cartridges or e-liquid totalling no more than 30 ml, or up to 3 disposable e-cigarettes. There is no duty-free exemption for these goods.",
+      "quantity": "1 device + 200 heated-tobacco units, or 30 ml, or 3 disposables"
     },
-    "notes": "The decree itself (directly fetched and quoted) only establishes that a personal-traveler exception exists and delegates it to the Ministry of Commerce — the specific 1-device/30ml figures come from secondary sources describing that ministry's implementing circular, not the decree text itself.",
+    "notes": "Anything over these amounts is held in the customs baggage store and returned to you when you leave Turkey; if you don't collect it in time, customs destroys it. Commercial import of e-cigarettes is banned under Presidential Decision 2149 (2020), which left the traveller rule to the Ministry of Trade.",
+    "summary": "Travellers 18+: one device in use, plus 200 heated-tobacco units, or 30 ml of liquid, or 3 disposables. Excess is held until you leave.",
     "legal_source": {
-      "name": "Presidential Decision No. 2149 (Resmi Gazete Issue 31050, 25 February 2020), Arts. 1-2",
-      "url": "https://www.lexpera.com.tr/resmi-gazete/metin/elektronik-sigara-ve-benzeri-cihazlar-ile-bazi-tutun-mamulleri-ve-tutun-mamulunu-taklit-eder-tarzda-3"
+      "name": "Ministry of Trade, Directorate General of Customs — Circular 2020/7 on travellers entering with e-cigarettes and similar goods (as amended by Circular 2024/18, 19 September 2024; consolidated text, Lexpera)",
+      "url": "https://www.lexpera.com.tr/mevzuat/genelgeler/elektronik-sigara-ve-benzeri-esyanin-yolcu-beraberi-girisi-ve-transiti-hakkinda-genelge-2020-7"
     },
-    "verified_at": "2026-09-18",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-17",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Traveller allowance (1 device + 200 HTP units / 30 ml / 3 disposables), no exemption, excess stored and destroyed if uncollected, transit rules",
+        "name": "Ministry of Trade, Directorate General of Customs — Circular 2020/7 on travellers entering with e-cigarettes and similar goods (as amended by Circular 2024/18, 19 September 2024; consolidated text, Lexpera)",
+        "url": "https://www.lexpera.com.tr/mevzuat/genelgeler/elektronik-sigara-ve-benzeri-esyanin-yolcu-beraberi-girisi-ve-transiti-hakkinda-genelge-2020-7"
+      },
+      {
+        "claim": "Commercial import ban; Ministry of Trade authorised to regulate traveller entry and transit",
+        "name": "Presidential Decision No. 2149 (Resmi Gazete Issue 31050, 25 February 2020), Arts. 1-2",
+        "url": "https://www.lexpera.com.tr/resmi-gazete/metin/elektronik-sigara-ve-benzeri-cihazlar-ile-bazi-tutun-mamulleri-ve-tutun-mamulunu-taklit-eder-tarzda-3"
+      }
+    ],
+    "transit": {
+      "rule": "exempt_airside",
+      "description": "Passengers transiting Turkey by air don't enter the customs territory, so these limits don't apply to them. Transit passengers arriving by land or sea are treated like arriving travellers.",
+      "source": {
+        "name": "Ministry of Trade, Directorate General of Customs — Circular 2020/7 on travellers entering with e-cigarettes and similar goods (as amended by Circular 2024/18, 19 September 2024; consolidated text, Lexpera)",
+        "url": "https://www.lexpera.com.tr/mevzuat/genelgeler/elektronik-sigara-ve-benzeri-esyanin-yolcu-beraberi-girisi-ve-transiti-hakkinda-genelge-2020-7"
+      },
+      "verified_at": "2026-10-17"
+    }
   },
   {
     "slug": "e-cigarettes-ma",
-    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping liquid",
+      "e-liquid"
+    ],
     "destination": "MA",
     "category": "e_cigarettes",
     "verdict": "allowed",
@@ -6858,6 +7101,7 @@
       "description": "No import or sale ban exists — Morocco's 2024 Finance Law (PLF-2024) raised the import duty on disposable e-cigarettes from 2.5% to 40%, and a further fixed internal consumption tax of 50 dirhams per disposable unit took effect in January 2025. A new IMANOR product safety/labeling standard for smoke-free products takes effect February 2026."
     },
     "notes": "Confirmed via consistent reporting across 7 independent Moroccan financial/business press outlets (Le Desk, La Vie Éco, H24info, Le360, Médias24, and others), not a direct Morocco Customs (douane.gov.ma) fetch — that domain and its specific circulars are bot-blocked from this environment. Treat the 'no ban, just rising duties' finding as solid; verify the exact current duty rate against douane.gov.ma directly when it becomes reachable.",
+    "summary": "Allowed: Morocco has no ban on importing e-cigarettes, though disposable ones carry high duty and tax.",
     "legal_source": {
       "name": "Le Desk — 'PLF 2024: le droit d'importation des cigarettes électroniques jetables augmenté à 40%'",
       "url": "https://ledesk.ma/encontinu/plf-2024-le-droit-dimportation-des-cigarettes-electroniques-jetables-augmente-a-40/"
@@ -6868,7 +7112,12 @@
   },
   {
     "slug": "e-cigarettes-ke",
-    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping liquid",
+      "e-liquid"
+    ],
     "destination": "KE",
     "category": "e_cigarettes",
     "verdict": "depends",
@@ -6876,27 +7125,10 @@
       "description": "Kenya's e-cigarette import status is actively contested in court, not settled. Health Cabinet Secretary Aden Duale announced a directive on 31 May 2025 suspending the manufacturing, importation, distribution, sale and promotion of nicotine products and requiring all existing licensees to reapply. On 4 June 2025, Justice Bahati Mwamuye of the High Court issued a conservatory order — following a petition by Susan Awino — restraining the government \"from implementing or enforcing the decision suspending all licences and import clearances,\" pending full determination of the case. A separate, broader ban announcement is also reported for 30 July 2025."
     },
     "notes": "No Kenya Gazette notice was found for either the ban or the court order — this is reported only through Kenyan mainstream press (The Standard), not a government-primary document. Given the active litigation, don't treat either 'banned' or 'allowed' as settled — check current status before relying on this for travel planning.",
+    "summary": "Uncertain: a 2025 government suspension of nicotine-product imports is on hold under a High Court order.",
     "legal_source": {
       "name": "The Standard (Kenya) — 'Court halts CS Duale's ban on nicotine product licences and importation'",
       "url": "https://www.standardmedia.co.ke/national/article/2001521132/court-halts-cs-duales-ban-on-nicotine-product-licences-and-importation"
-    },
-    "verified_at": "2026-09-18",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
-  },
-  {
-    "slug": "e-cigarettes-cn",
-    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
-    "destination": "CN",
-    "category": "e_cigarettes",
-    "verdict": "allowed_with_limits",
-    "limits": {
-      "description": "General Administration of Customs Announcement No. 102 of 2022 (effective 1 November 2022) allows passengers to duty-free carry 2 e-cigarette devices plus 6 cartridges/liquid products totaling 12ml or less. Travelers on Hong Kong/Macao routes get a lower allowance (1 device, 3 cartridges, up to 6ml); frequent cross-border travelers get less still (1 device, 1 cartridge, up to 2ml, once per day). Travelers under 16 may not carry e-cigarettes at all."
-    },
-    "notes": "The announcement number and exact figures are corroborated identically across multiple independent Chinese sources (news outlets, tax-law reference sites, industry sites) — a direct fetch of customs.gov.cn itself still fails on a self-signed certificate, the same block this project has hit on Chinese government domains throughout, so this is strong search-corroboration rather than a directly read government page.",
-    "legal_source": {
-      "name": "General Administration of Customs of China, Announcement No. 102 of 2022 (海关总署公告2022年第102号) — E-Cigarette Taxation",
-      "url": "http://www.customs.gov.cn/customs/302249/302266/302267/4666399/index.html"
     },
     "verified_at": "2026-09-18",
     "verified_by": "agent:claude-sonnet-5",
@@ -6955,7 +7187,12 @@
   },
   {
     "slug": "e-cigarettes-ph",
-    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping liquid",
+      "e-liquid"
+    ],
     "destination": "PH",
     "category": "e_cigarettes",
     "verdict": "depends",
@@ -6963,6 +7200,7 @@
       "description": "RA 11900 (\"Vaporized Nicotine and Non-Nicotine Products Regulation Act\", signed 25 July 2022) legalized and regulates vape products under the DTI, but sets no statutory personal-import quantity cap. Customs applies an informal, discretionary \"reasonable personal use\" standard instead of a fixed number."
     },
     "notes": "This is the genuine, honest answer rather than a research gap — the law's full text is directly reachable and doesn't specify a quantity, and no DTI or Bureau of Customs page with a concrete traveler allowance was found either. Don't assume a specific number applies; expect discretion at the border.",
+    "summary": "Vapes are legal and regulated; customs applies a reasonable personal-use standard rather than a fixed limit.",
     "legal_source": {
       "name": "Republic Act No. 11900 — Vaporized Nicotine and Non-Nicotine Products Regulation Act",
       "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/95621"
@@ -6973,7 +7211,12 @@
   },
   {
     "slug": "meat-dairy-rw",
-    "names": ["meat", "dairy", "cheese", "milk"],
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk"
+    ],
     "destination": "RW",
     "category": "food_animal",
     "verdict": "depends",
@@ -6981,6 +7224,7 @@
       "description": "\"Any person wishing to import fresh, chilled, frozen, salted, dried or smoked meat, other than that preserved by canning, is required to obtain from the national level veterinary authorities an import permit\" — Ministerial Order on Animal Slaughtering and Meat Inspection, Art. 16, quoted directly. The rule is written in broad \"any person\" language with no traveler-specific exemption stated."
     },
     "notes": "This specific order doesn't address dairy products — no dairy-specific rule was found in this pass, so treat dairy as an open question rather than assuming it follows the same permit rule as meat.",
+    "summary": "Fresh, chilled, frozen, salted, dried or smoked meat needs an import permit from the national veterinary authorities.",
     "legal_source": {
       "name": "Ministerial Order on Animal Slaughtering and Meat Inspection, Art. 16 (pursuant to Law n° 54/2008)",
       "url": "https://rwandalii.org/akn/rw/act/mo/2010/12/eng@2010-12-13"
@@ -6991,7 +7235,12 @@
   },
   {
     "slug": "fresh-produce-rw",
-    "names": ["fruit", "vegetables", "plants", "seeds"],
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds"
+    ],
     "destination": "RW",
     "category": "food_plant",
     "verdict": "declaration_required",
@@ -6999,6 +7248,7 @@
       "description": "\"Any person entering Rwanda by air or by road with plants or plant products whether as accompanied or checked-in baggage, must declare such items to a competent employee at the point of entry\" — Law on Plant Health Protection in Rwanda (2016), Art. 10, quoted directly. Art. 3 requires a license plus a phytosanitary certificate for plant/plant-product imports generally; Art. 4 allows exemptions via a Ministerial Order, but that order's exempt-items list wasn't read in this pass."
     },
     "notes": "The declaration duty applies broadly with no personal-quantity carve-out stated in the law itself.",
+    "summary": "Declare all plants and plant products when you arrive; imports generally need a licence and a phytosanitary certificate.",
     "legal_source": {
       "name": "Law on Plant Health Protection in Rwanda (2016), Arts. 3, 4, 10",
       "url": "https://rwandalii.org/akn/rw/act/law/2016/16/eng@2016-05-30"
@@ -7009,7 +7259,12 @@
   },
   {
     "slug": "fresh-produce-vn",
-    "names": ["fruit", "vegetables", "seeds", "plants"],
+    "names": [
+      "fruit",
+      "vegetables",
+      "seeds",
+      "plants"
+    ],
     "destination": "VN",
     "category": "food_plant",
     "verdict": "depends",
@@ -7017,6 +7272,7 @@
       "description": "Decree 214/2026/ND-CP, Art. 31, quoted directly: importing quarantine-subject plants without a plant quarantine import permit draws a fine of VND 3,000,000–5,000,000 (Khoản 2); importing without a phytosanitary certificate from the exporting country draws VND 10,000,000–20,000,000 (Khoản 4). Both carry forced re-export, or destruction if re-export isn't possible (Khoản 6)."
     },
     "notes": "Seeds not on Vietnam's protected-species list and free of soil are reported elsewhere as allowed to bring in without these documents — the permit/certificate requirement applies to quarantine-subject plants specifically, not every plant product.",
+    "summary": "Plants subject to quarantine need an import permit and a phytosanitary certificate; without them, fines and re-export apply.",
     "legal_source": {
       "name": "Nghị định 214/2026/NĐ-CP (Decree on administrative penalties in cultivation, plant protection and plant quarantine), Art. 31",
       "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/nghi-dinh-214-2026-nd-cp-xu-phat-vi-pham-hanh-chinh-trong-trong-trot-bao-ve-thuc-vat-438062-d1.html"
@@ -7027,7 +7283,12 @@
   },
   {
     "slug": "fresh-produce-ph",
-    "names": ["fruit", "vegetables", "plants", "seeds"],
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds"
+    ],
     "destination": "PH",
     "category": "food_plant",
     "verdict": "declaration_required",
@@ -7035,6 +7296,7 @@
       "description": "Travelers must file for a Plant Quarantine Clearance (PQC) prior to importation at the National Plant Quarantine Services Division (NPQSD) central office for personal-consumption plant, fruit and vegetable imports — a process explicitly distinct from the commercial import (SPSIC) pathway."
     },
     "notes": "The specific commodity categories this applies to (NPQSD's Category II/III/IV classification) weren't read in full in this pass — treat the PQC requirement itself as solid, but check NPQSD directly for whether a specific item needs it.",
+    "summary": "File for a Plant Quarantine Clearance with NPQSD before bringing in plants, fruit or vegetables.",
     "legal_source": {
       "name": "DA-Bureau of Plant Industry, National Plant Quarantine Services Division (NPQSD) — Import Requirements",
       "url": "https://npqsd.bpi-npqsd.com.ph/import/how-to-import/"
@@ -7075,7 +7337,12 @@
   },
   {
     "slug": "e-cigarettes-jp",
-    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping liquid",
+      "e-liquid"
+    ],
     "destination": "JP",
     "category": "e_cigarettes",
     "verdict": "allowed_with_limits",
@@ -7083,6 +7350,7 @@
       "description": "\"税関限りの確認で通関が可能なカートリッジの数量は、用法用量からみて1ヶ月分\" (\"The quantity of cartridges that can clear customs with only a customs check is one month's supply, based on directions for use\") — quoted directly from MHLW's own Q&A on pharmaceutical import procedures. Nicotine-containing e-cigarette cartridges and liquid are classified as pharmaceutical products under Japanese law (with the vaporizer device itself classified as a medical device), which is why this general pharmaceutical-import framework — the same one covering Japan's other medication rows in this dataset — applies to them."
     },
     "notes": "Above a 1-month supply, a Yakkan Shoumei (pharmaceutical import certificate) from a Regional Bureau of Health and Welfare is required, following the same process as Japan's other prescription/controlled-medication rows. Devices themselves (mods, pod systems, batteries) aren't restricted by this framework, though airline lithium-battery rules still apply. Disposable vapes were reportedly banned nationwide in April 2025 — a separate, more recent development not covered by the Q&A document cited here.",
+    "summary": "Nicotine e-cigarette cartridges are pharmaceuticals in Japan: up to one month's supply clears with a customs check only.",
     "legal_source": {
       "name": "Ministry of Health, Labour and Welfare (MHLW) — Q&A on Pharmaceutical Import Procedures (医薬品等輸入手続質疑応答集)",
       "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb9332&dataType=1&pageNo=2"
@@ -7168,26 +7436,13 @@
     "status": "verified"
   },
   {
-    "slug": "e-cigarettes-sa",
-    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
-    "destination": "SA",
-    "category": "e_cigarettes",
-    "verdict": "depends",
-    "limits": {
-      "description": "Since around August 2020, Saudi Customs has banned individuals from importing e-cigarettes, shisha and their accessories through shipping companies and personal website purchases — goods imported this way are confiscated, a fine is imposed, and a seizure record is registered. Companies licensed by the Saudi Food and Drug Authority (SFDA) may still import these products in commercial quantities."
-    },
-    "notes": "This measure is specifically about shipping/mail-order/online-purchase import channels for individuals — it does not clearly say whether it also restricts what a traveler personally carries in accompanied luggage, and that distinction wasn't confirmed either way in this pass. Don't assume it's safe to bring a personal vape in checked or carry-on baggage just because this rule targets shipping specifically — but also don't assume accompanied baggage is covered by the same ban. Corroborated identically across 5 independent outlets (Saudi Gazette, Zawya, Al Bawaba, Riyadh Xpress, Vaping Post); every direct fetch of the Saudi Gazette article itself returned HTTP 402 (paywalled), so this is strong multi-source corroboration rather than a directly read primary article. Separately, Arab News (directly fetched and quoted) traces the same underlying policy back further: the Ministry of Commerce and Investment banned e-cigarette/vaping sales in September 2015, and \"considers anyone bringing them in from abroad to be smuggling\" — broader phrasing than 'shipping only' — so the individual-import restriction isn't a one-off report, it's a long-standing, consistently-described policy, even though the accompanied-baggage question specifically remains unresolved. Domestic sale/possession has separately been legal since Royal Decree 38621 (2019) — don't confuse 'legal to own in Saudi Arabia' with 'legal to personally import.'",
-    "legal_source": {
-      "name": "Saudi Gazette — 'Customs ban individuals from importing electronic cigarettes' (c. August 2020)",
-      "url": "https://saudigazette.com.sa/article/597279/SAUDI-ARABIA/Customs-ban-individuals-from-importing-electronic-cigarettes"
-    },
-    "verified_at": "2026-09-19",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
-  },
-  {
     "slug": "e-cigarettes-nz",
-    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping liquid",
+      "e-liquid"
+    ],
     "destination": "NZ",
     "category": "e_cigarettes",
     "verdict": "allowed_with_limits",
@@ -7195,6 +7450,7 @@
       "description": "Vaping products aren't mentioned anywhere on NZ Customs' own duty-free FAQ page, and aren't covered by the tobacco-specific concession (limited to 50 cigarettes, or 50g of cigars/tobacco/a mixture) — so they fall under the general goods concession instead: \"You'll have to pay GST and duty if you bought more than NZ$700 in total\" of duty-free items and related purchases."
     },
     "notes": "This corrects a previously-uncorroborated claim of a '3 month supply' vape-specific allowance, which doesn't appear anywhere on NZ Customs' actual site — the real rule is simpler: no vape-specific concession exists, so the general $700 threshold governs instead. Vaping products are regulated inside New Zealand (a disposable-vape sales ban, retailer age-verification rules) rather than at the border specifically.",
+    "summary": "Vaping products fall under the general NZ$700 duty-free goods concession, not the tobacco allowance.",
     "legal_source": {
       "name": "New Zealand Customs Service — Duty-Free Shopping FAQs",
       "url": "https://www.customs.govt.nz/personal/travel-to-and-from-nz/duty-free-shopping/faqs/"
@@ -7205,7 +7461,16 @@
   },
   {
     "slug": "meat-dairy-sa",
-    "names": ["meat", "pork", "ham", "bacon", "dairy", "cheese", "milk", "live animals"],
+    "names": [
+      "meat",
+      "pork",
+      "ham",
+      "bacon",
+      "dairy",
+      "cheese",
+      "milk",
+      "live animals"
+    ],
     "destination": "SA",
     "category": "food_animal",
     "verdict": "depends",
@@ -7213,6 +7478,7 @@
       "description": "\"Saudi law prohibits importation of the following products: weapons, alcohol, narcotics, pork and pork products...\" — pork and pork products are absolutely prohibited, no exceptions. Separately, \"the importation of the following products requires special approval by Saudi authorities: ... live animals ...\" — live animals need advance authorization before import."
     },
     "notes": "Directly quoted from a U.S. government trade guide, not a Saudi government page itself (ZATCA's and SFDA's own prohibited-goods pages remain unreachable — 404s and unreadable scanned PDFs, a persistent block for this project on Saudi domains). This source is specific about pork and live animals but doesn't state a general rule for other meat or dairy products — don't assume non-pork meat or dairy is unrestricted just because it isn't named here; it simply wasn't confirmed either way in this pass.",
+    "summary": "Pork and pork products are banned outright. Live animals need special approval in advance.",
     "legal_source": {
       "name": "U.S. International Trade Administration — Saudi Arabia: Prohibited and Restricted Imports",
       "url": "https://www.trade.gov/country-commercial-guides/saudi-arabia-prohibited-and-restricted-imports"
@@ -7241,7 +7507,12 @@
   },
   {
     "slug": "meat-dairy-eg",
-    "names": ["meat", "dairy", "cheese", "milk"],
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk"
+    ],
     "destination": "EG",
     "category": "food_animal",
     "verdict": "depends",
@@ -7249,6 +7520,7 @@
       "description": "Ministry of Agriculture and Land Reclamation Decree 1647 (1997) requires importers to apply to the General Organization for Veterinary Services (GOVS) for a permit before bringing in meat/animal products, with the epidemiological status of the country of origin taken into account; a granted permit is valid for 1 month and is renewable."
     },
     "notes": "The decree's own text and the USDA report describing it are both unreadable in this environment (scanned/binary PDFs) — this is drawn from the report's search-indexed summary rather than a directly read document, similar in tier to how this project has cited a USDA GAIN report for a different country's regulation elsewhere. The permit mechanism reads as built for commercial importers, similar to Kenya's meat-import regulation already in this dataset — no traveler/personal-quantity carve-out was found, so don't assume it applies the same way to a tourist's suitcase as to a commercial shipment. Egypt's National Food Safety Authority took over food-safety regulation generally in 2020 but still relies on GOVS for this specific import-permit mechanism.",
+    "summary": "Meat and animal products need a permit from Egypt's General Organization for Veterinary Services before import.",
     "legal_source": {
       "name": "USDA FAS GAIN Report — FAIRS Country Report Annual, Cairo Egypt (EG2025-0025), re: Ministry of Agriculture and Land Reclamation Decree 1647 (1997)",
       "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=FAIRS+Country+Report+Annual_Cairo_Egypt_EG2025-0025.pdf"
@@ -7452,6 +7724,7 @@
       "quantity": "1 litre of liquor above 30% ABV"
     },
     "notes": "The 1-litre concession only matters for spirits: Hong Kong's duty schedule charges 0% on wine and on liquor other than wine of 30% ABV or less, so beer and wine aren't dutiable. Passengers who fail to declare, or make a false or incomplete declaration of, dutiable goods above the concession are liable to prosecution under the Dutiable Commodities Ordinance.",
+    "summary": "Travellers 18+ can bring 1 litre of alcohol over 30% duty-free; HK ID holders must have been away 24 hours or more.",
     "legal_source": {
       "name": "Hong Kong Customs and Excise Department — Duty-free Concessions",
       "url": "https://www.customs.gov.hk/en/service-enforcement-information/passenger-clearance/duty-free-concessions/index.html"
@@ -7502,6 +7775,7 @@
       "quantity": "HK$120,000 total value"
     },
     "notes": "Maximum penalty for failing to declare or disclose is a fine of HK$500,000 and two years' imprisonment. A first-time breach can be settled by paying HK$2,000 if the traveller has no prior money-laundering or terrorist-financing conviction and the money isn't suspected crime proceeds. Hong Kong has no currency import cap, only this declaration duty.",
+    "summary": "Declare cash and bearer instruments totalling more than HKD 120,000 in the Red Channel.",
     "legal_source": {
       "name": "Hong Kong Customs and Excise Department — Currency and Bearer Negotiable Instruments",
       "url": "https://www.customs.gov.hk/en/service-enforcement-information/passenger-clearance/currency-bearer-negotiable-instruments/index.html"
@@ -7529,6 +7803,7 @@
       "description": "\"No person may import an alternative smoking product by way of parcels, cargoes, and bringing in by incoming travellers.\" The ban covers e-cigarettes, heated tobacco (heat sticks), herbal cigarettes and their accessories, regardless of quantity or personal use. Import penalty on summary conviction: a fine of HK$500,000 and two years' imprisonment."
     },
     "notes": "Since 30 April 2026 it is also an offence to possess a specified alternative smoking product in a public place: a HK$3,000 fixed penalty for small non-commercial quantities (up to 5 capsules / 5 mL / 100 heat sticks / 100 rolls), or a fine of up to HK$10,000 on conviction, and up to HK$50,000 and six months' imprisonment for larger quantities. Don't pack a vape, pods or heat sticks for Hong Kong, even in checked luggage; the Tobacco and Alcohol Control Office page doesn't describe any personal-use exception.",
+    "summary": "Banned: travellers can't bring in e-cigarettes, heated tobacco or herbal cigarettes. Fines up to HK$500,000 and 2 years' prison.",
     "legal_source": {
       "name": "Tobacco and Alcohol Control Office, Department of Health — Ban on Alternative Smoking Products",
       "url": "https://www.taco.gov.hk/t/english/legislation/legislation_asp.html"
@@ -7554,6 +7829,7 @@
       "description": "Cannabis is a dangerous drug under the Dangerous Drugs Ordinance (Cap. 134). Hong Kong Customs \"reminds members of the public not to bring any cannabis products or products containing CBD into Hong Kong.\" Trafficking (including importing and exporting) carries a maximum penalty of a fine of HK$5 million and life imprisonment; possession and consumption carry up to HK$1 million and seven years' imprisonment."
     },
     "notes": "There is no medical or personal-use exception for travellers, and no THC threshold. Edibles, oils, vape cartridges and food or drinks containing cannabis all count.",
+    "summary": "Banned: cannabis and CBD are dangerous drugs in Hong Kong, with up to life imprisonment for importing.",
     "legal_source": {
       "name": "Hong Kong Customs and Excise Department — Customs takes strict enforcement action to control cannabidiol (CBD) from February 1 (press release)",
       "url": "https://www.info.gov.hk/gia/general/202301/27/P2023012700369.htm"
@@ -7579,6 +7855,7 @@
       "description": "\"CBD has been listed as a dangerous drug under the Dangerous Drugs Ordinance (DDO)\" since 1 February 2023. \"Importation of products (including food or drinks) containing CBD into Hong Kong is prohibited unless the relevant provisions in the DDO are complied with,\" with no exemption based on concentration. Maximum penalty for trafficking (including import): HK$5 million and life imprisonment; for possession or consumption: HK$1 million and seven years."
     },
     "notes": "Unlike most of the world, Hong Kong treats even zero-THC CBD as a dangerous drug: skin care, edible oils and supplements containing CBD are all covered. The Narcotics Division adds that CBD products can contain trace THC and that CBD can decompose into THC in storage.",
+    "summary": "Banned since 1 February 2023: CBD is a dangerous drug in Hong Kong, in any concentration, including food and drinks.",
     "legal_source": {
       "name": "Narcotics Division, Security Bureau — Legislative Control of Cannabidiol (CBD)",
       "url": "https://www.nd.gov.hk/en/CBD.html"
@@ -7721,6 +7998,7 @@
       "quantity": "15 kg meat/poultry, with an official certificate"
     },
     "notes": "The licence exemption up to 15 kg comes with a requirement for an official health certificate from the exporting country, which ordinary travellers rarely have — treat homemade or shop-bought meat as something to leave behind unless you hold one. Milk and milk beverages, and eggs, are listed as having their own specific legal requirements or administrative arrangements, which this page doesn't spell out, so no dairy allowance is stated here.",
+    "summary": "Frozen or chilled meat and poultry for your own use, up to 15 kg, needs no licence but does need an official certificate.",
     "legal_source": {
       "name": "Hong Kong Customs and Excise Department — Controlled Imports",
       "url": "https://www.customs.gov.hk/en/service-enforcement-information/trade-facilitation/prohibited-articles/controlled-imports/index.html"
@@ -7747,6 +8025,7 @@
       "description": "\"Under the Plant (Importation and Pest Control) Ordinance, Cap. 207, it is illegal to import plants, plant pests or soil into Hong Kong without a valid licence / authorization issued in advance by the Agriculture, Fisheries and Conservation Department. However, plants produced in and imported from any place in China outside Hong Kong are exempted from licensing requirement. The exemption also applies to the import of cut flowers, fruits and vegetables for consumption.\""
     },
     "notes": "So fresh fruit and vegetables for your own consumption and cut flowers need no plant licence, but live plants, seeds-for-planting and soil do (in advance). General food-safety law still applies to food you bring. Endangered plant species and derivatives need a separate advance licence under Cap. 586.",
+    "summary": "Plants need an AFCD licence in advance, but cut flowers, fruit and vegetables for consumption are exempt.",
     "legal_source": {
       "name": "Hong Kong Customs and Excise Department — Controlled Imports",
       "url": "https://www.customs.gov.hk/en/service-enforcement-information/trade-facilitation/prohibited-articles/controlled-imports/index.html"
@@ -7780,6 +8059,7 @@
       "description": "Under the Firearms and Ammunition Ordinance, Cap. 238, \"possession of arms and ammunition is subject to a licence for possession or a dealer's licence issued by the Hong Kong Police Force.\" \"Arms\" include pistols, air guns and air rifles with muzzle energy greater than 2 joules, electric stun guns, aerosols containing noxious gas, liquid or powder (e.g. dog repellents), harpoons, spear guns, and crossbows with a draw weight of more than 6 kg. Importing arms and ammunition on the Munitions List also requires a licence from the Trade and Industry Department. Separately, the Weapons Ordinance, Cap. 217, \"forbids the possession of the prohibited weapons, such as Chinese-style throwing dart, knuckleduster, spring-loaded steel baton, gravity knife and gravity-operated steel baton, as listed in the Schedule of the Ordinance.\""
     },
     "notes": "The page describes a licensing system for arms, not a route for tourists to obtain a licence — treat firearms, air guns, stun guns, pepper spray and crossbows as do-not-pack. The prohibited-weapons list is a possession ban with no licence route stated; it names knuckledusters, gravity knives and spring-loaded batons. Ordinary knives that aren't on the Schedule aren't addressed by this page.",
+    "summary": "Arms, including stun guns, pepper sprays, strong air guns and crossbows, need a Hong Kong Police licence.",
     "legal_source": {
       "name": "Hong Kong Customs and Excise Department — Controlled Imports",
       "url": "https://www.customs.gov.hk/en/service-enforcement-information/trade-facilitation/prohibited-articles/controlled-imports/index.html"
@@ -7806,6 +8086,7 @@
       "quantity": "250 g"
     },
     "notes": "Visitors are told to apply once they have concrete travel plans and their travel documents ready; registration labels are collected in person, through an authorised representative, or delivered by local surface mail to a Hong Kong address (no international courier). Anything over 250 g should be registered before you fly it, so plan ahead rather than sorting it out at the airport. The page excerpt read here doesn't detail the heavier categories' operating rules or insurance requirements.",
+    "summary": "Drones over 250 g, and their pilots, must be registered with the Civil Aviation Department; visitors use the eSUA portal.",
     "legal_source": {
       "name": "Civil Aviation Department (Hong Kong) — Small Unmanned Aircraft Order (Cap. 448G): tips for visitors",
       "url": "https://www.cad.gov.hk/english/sua_tipsforvisitors.html"
@@ -7832,6 +8113,7 @@
       "description": "From outside the EU (including the UK): 1 litre of spirits, or 2 litres of other alcoholic drinks up to 22% alcohol (e.g. port, sherry, sparkling wine, some liqueurs), plus 4 litres of still wine and 16 litres of beer. You can split the spirits/other-drinks allowance fractionally (e.g. 0.5 litres of spirits and 1 litre of port). Customs Duty, Excise Duty and VAT apply to anything above the allowance."
     },
     "notes": "Applies to travellers aged 17 or over (Revenue/Citizens Information: \"You are not entitled to alcohol or tobacco allowances if you are under 17\"). This is Ireland's own Revenue guidance for arrivals from outside the EU (including Great Britain). Reduced allowances apply to transport crews (0.35 L spirits, 0.75 L still wine, 4 L beer). Arrivals from within the EU follow different rules.",
+    "summary": "From outside the EU: 1 litre of spirits or 2 litres of drinks up to 22%, plus 4 litres of wine and 16 litres of beer.",
     "legal_source": {
       "name": "Revenue (Ireland) — Duty-free allowances (travelling from outside the EU)",
       "url": "https://www.revenue.ie/en/customs/individuals/info-travelling-duty-free/from-outside-eu/allowances.aspx"
@@ -7858,6 +8140,7 @@
       "description": "From outside the EU (including the UK): 200 cigarettes, or 100 cigarillos, or 50 cigars, or 250g of smoking tobacco. The allowance can be split fractionally (e.g. 100 cigarettes and 50 cigarillos). Duty and VAT apply above it."
     },
     "notes": "Revenue: \"The import of oral smokeless tobacco is generally prohibited\" (snus-type products) — see Ireland's prohibitions and restrictions list. Reduced allowances apply to transport crews (40 cigarettes, 20 cigarillos, 10 cigars or 50g).",
+    "summary": "From outside the EU: 200 cigarettes, or 100 cigarillos, or 50 cigars, or 250 g of tobacco.",
     "legal_source": {
       "name": "Revenue (Ireland) — Duty-free allowances (travelling from outside the EU)",
       "url": "https://www.revenue.ie/en/customs/individuals/info-travelling-duty-free/from-outside-eu/allowances.aspx"
@@ -7912,6 +8195,7 @@
       "description": "Personal consignments of meat, milk or their products are not allowed from non-EU countries (including Great Britain), with a narrow exception for products from the Faroe Islands or Greenland (10 kg combined). Allowed in luggage from outside the EU: powdered infant milk/infant formula and special foods required for medical reasons (combined 2 kg, sealed and branded); fish and shellfish up to 20 kg or the weight of one fish; other animal products such as honey up to 2 kg; and a defined list of low-risk products (bread, cakes, biscuits, chocolate and confectionery, pasta and noodles not mixed with meat, soup stocks and flavourings, coffee/tea extracts, liqueurs and cordials)."
     },
     "notes": "Live animals (including live insects) may not be brought in luggage from non-EU countries. The rule covers goods moving from Great Britain but not from Northern Ireland. Meat/milk personal imports can carry Foot and Mouth Disease and African Swine Fever, which is why the ban applies even to small quantities and to online orders by post or courier.",
+    "summary": "Meat and dairy from outside the EU, including Great Britain, aren't allowed, with small exceptions such as infant formula.",
     "legal_source": {
       "name": "Food Safety Authority of Ireland — Personal Imports (food that can be brought from a third country for personal use); Department of Agriculture, Food and the Marine — Personal Consignments in Luggage",
       "url": "https://www.fsai.ie/enforcement-and-legislation/legislation/food-legislation/imports/personal-imports"
@@ -7941,6 +8225,7 @@
       "description": "Plants, fruit, vegetables, cut flowers, seeds, soil and timber may not be brought in from a third country (including Great Britain) without a phytosanitary certificate presented to the Department of Agriculture, Food and the Marine at the point of entry. Bananas, durians, dates, pineapples and coconuts are exempt from phytosanitary certification. Separately, for food safety, foods of non-animal origin on the EU high-risk import-control list (Regulation (EU) 2019/1793) are limited to 5 kg of each fresh product and 2 kg of each other product in personal luggage; foods not on that list have no weight limit."
     },
     "notes": "The plant-health rule (certificate) and the food-safety rule (weight limits) are separate — a phytosanitary certificate is what a traveller would need for fresh produce and plants, which in practice means most fresh fruit, vegetables and plants should not be brought from outside the EU. Applies to Great Britain but not Northern Ireland.",
+    "summary": "Plants, fruit, vegetables and seeds from outside the EU need a phytosanitary certificate, except bananas, durians, dates, pineapples and coconuts.",
     "legal_source": {
       "name": "Department of Agriculture, Food and the Marine — Information on Personal Consignments in Luggage or through Postal, Courier & Online Services",
       "url": "https://www.gov.ie/en/department-of-agriculture-food-and-the-marine/publications/information-on-personal-consignments-in-luggage-or-through-postal-courier-online-services/"
@@ -8099,6 +8384,7 @@
       "description": "Firearms need an importation (transfer) licence from the Department of Justice obtained BEFORE bringing them into the country, plus firearms certification; a firearms certificate for a non-resident costs €40 for 1 year. CS gas spray, pepper spray and stun guns are totally prohibited: importation or possession is illegal. Crossbows, spearguns and all airguns with a muzzle velocity over 1 joule (including paintball markers) are legally firearms and must be licensed. The Firearms and Offensive Weapons Act 1990 prohibits importing offensive weapons (listed in the 1991 Order, as amended in 2009 — including flick knives and several disguised knives), with penalties of up to 10 years' imprisonment."
     },
     "notes": "Other types of knives can be imported, but carrying one in public without lawful reason is an offence under Section 9 of the 1990 Act, so a knife in luggage is not the same as a knife on your person. Antique firearms held as ornaments or curiosities are exempt from the Firearms Acts, but the licensing position for an ordinary traveller is: don't bring a firearm without written authorisation. Revenue also lists \"firearms, weapons, fireworks or explosives\" among goods that must be declared to a customs officer.",
+    "summary": "Firearms need an import licence before travel. Pepper spray, CS gas and stun guns are banned.",
     "legal_source": {
       "name": "Department of Justice, Home Affairs and Migration — Firearms: your questions answered",
       "url": "https://www.gov.ie/en/department-of-justice-home-affairs-and-migration/publications/firearms-your-questions-answered/"
@@ -8124,6 +8410,7 @@
       "description": "The Food Safety Authority of Ireland states CBD \"is not considered a narcotic drug and is not a controlled drug in Ireland under the Misuse of Drugs Act 1977\" — but THC is: \"There is no legal threshold or tolerance in Ireland under the Misuse of Drugs Act for the presence of THC in food, except for hemp seed and hemp seed derived food products\", so food products containing THC at any level (other than hemp seed products) are classified as controlled drugs. Separately, CBD as or in food or food supplements is an unauthorised novel food under EU Regulation 2015/2283 and cannot legally be placed on the EU market."
     },
     "notes": "The FSAI page is about placing products on the market and about what counts as a controlled drug; it does not give a traveller-specific rule for CBD in personal luggage. Practical reading: a CBD product with any measurable THC is a controlled-drug risk at the border; a genuinely THC-free product isn't a controlled drug, but can't be lawfully sold as a food supplement. Hemp seeds and hemp seed oil/flour are outside both the Misuse of Drugs Act and the novel food rules. Prescribed cannabis-based medicines are not permitted to be brought into Ireland (Department of Health).",
+    "summary": "CBD isn't a controlled drug in Ireland, but food containing THC is, and CBD food products are unauthorised novel foods.",
     "legal_source": {
       "name": "Food Safety Authority of Ireland — Regulation of Cannabidiol (CBD) and Hemp food products in Ireland",
       "url": "https://www.fsai.ie/business-advice/running-a-food-business/food-safety-and-hygiene/food-innovation/cbd-and-other-hemp-products"
@@ -8149,6 +8436,7 @@
       "description": "Revenue's traveller allowances for arrivals from outside the EU list allowances for cigarettes, cigarillos, cigars and smoking tobacco only — there is no vaping-specific allowance, and Revenue's list of prohibited/restricted goods in baggage does not mention e-cigarettes or vapes. Since 1 November 2025 Ireland charges an E-Liquid Products Tax of 50 cent per millilitre on e-liquid (nicotine and non-nicotine), but Revenue says it applies \"the first time an e-liquid product is supplied by a business in the State\", i.e. it falls on importers, manufacturers and suppliers, not on a traveller's own device."
     },
     "notes": "This row records what the traveller guidance does and doesn't say — no source found either sets a personal-import quantity for vapes or bans carrying one. Whether e-liquid in luggage is treated under the general €430 goods allowance is not stated by Revenue and is an inference, not a confirmed rule. Vapes are regulated at the point of sale (nicotine inhaling products licence, no sale to under-18s, under the Public Health (Tobacco Products and Nicotine Inhaling Products) Act 2023), which is a retail rule rather than a border one.",
+    "summary": "There's no vaping allowance for travellers, and vapes aren't on Revenue's list of prohibited or restricted goods.",
     "legal_source": {
       "name": "Revenue (Ireland) — Revenue publishes guidance on new 'Vape Tax' (E-Liquid Products Tax); traveller allowances page: https://www.revenue.ie/en/customs/individuals/info-travelling-duty-free/from-outside-eu/allowances.aspx",
       "url": "https://www.revenue.ie/en/corporate/press-office/press-releases/2025/pr-093025-vape-tax.aspx"
@@ -8197,6 +8485,7 @@
       "description": "Cigarettes and tobacco products are not on the Customs Department's list of duty-free goods for travellers — they are expressly excluded from the general exemption — so any quantity is dutiable and must be declared in the Red Lane."
     },
     "notes": "The Traveler's Guide gives no duty-free tobacco quantity and only says duty/tax on tobacco follows a 'specific' rate under the Sales Tax (Rate of Tax) Order 2018; the per-stick rate was not confirmed. Some secondary sources describe an older 200-cigarette allowance — the current official page does not list one.",
+    "summary": "No duty-free tobacco: declare all cigarettes and tobacco in the Red Lane and pay duty.",
     "legal_source": {
       "name": "Royal Malaysian Customs Department — Traveler's Guide",
       "url": "https://www.customs.gov.my/en/individu/pengembara/travelers-guide"
@@ -8348,6 +8637,7 @@
       "description": "Import of nicotine and of nicotine-containing preparations 'of a kind used for vaporizer smoking' (vape liquid/gel) is a conditional prohibition: it is prohibited except under an import licence from the Ministry of Health's Pharmaceutical Services Programme (Customs (Prohibition of Imports) Order 2023, Second Schedule Part I, item 4). Separately, the Customs Department's traveller duty-free list expressly excludes electronic cigarettes and vaporising devices and their liquids, so they are dutiable and must be declared in the Red Lane."
     },
     "notes": "Neither the Order nor the Traveler's Guide sets a personal-use quantity or grants travellers an exemption from the licence requirement — treat carrying nicotine vape liquid as risky and check with Malaysian Customs or the Ministry of Health first. Vaping products are also regulated under the Control of Smoking Products for Public Health Act 2024 (Act 852, in force 1 October 2024); that Act's own text and any traveller-specific provisions were not read in this pass.",
+    "summary": "Nicotine vape liquid needs a Ministry of Health import licence. E-cigarettes are dutiable and must be declared.",
     "legal_source": {
       "name": "Customs (Prohibition of Imports) Order 2023, P.U.(A) 117 — Malaysia Attorney General's Chambers",
       "url": "https://lom.agc.gov.my/ilims/upload/portal/akta/outputp/1809215/PUA117.pdf"
@@ -8381,6 +8671,7 @@
       "description": "Import is allowed only with a licence or approval from the Chief Police Officer: arms and ammunition as defined in the Arms Act 1960 (including paintball markers/pellets and Taser guns), shotgun cartridges, expandable batons, imitation arms including toy guns and pistols, and imitation hand grenades (Arms Act 1960); fireworks and explosives (Explosives Act 1957). A traveller without that licence cannot lawfully bring them in."
     },
     "notes": "From the Customs (Prohibition of Imports) Order 2023, Third Schedule items 44–50. Ordinary pocket knives and multitools are not addressed by these items and were not researched separately.",
+    "summary": "Arms, imitation and toy guns, batons and fireworks need a licence from the Chief Police Officer.",
     "legal_source": {
       "name": "Customs (Prohibition of Imports) Order 2023, P.U.(A) 117 — Malaysia Attorney General's Chambers",
       "url": "https://lom.agc.gov.my/ilims/upload/portal/akta/outputp/1809215/PUA117.pdf"
@@ -8410,6 +8701,7 @@
       "description": "Import of meat and edible meat offal, dairy produce, birds' eggs and honey, and of any domestic animal or its meat/eggs, requires prior official approval: a MAQIS import permit and inspection (Malaysian Quarantine and Inspection Services Act 2011) and, for food products, approval of the Ministry of Health's Food Safety and Quality Division (Customs (Prohibition of Imports) Order 2023)."
     },
     "notes": "No traveller exemption or personal-quantity allowance appears in the Order. Enforcement is real: Malaysia's state news reported MAQIS seizing 40 pork sausages and 10 chickens from a passenger at KLIA in 2025 for lacking a MAQIS import permit and an origin-country health certificate, under s.11(1) of Act 728. The Customs Traveler's Guide separately lists 'food preparations' up to RM150 as duty-exempt, which is a duty rule and does not override the permit requirement.",
+    "summary": "Meat, dairy, eggs and honey need a MAQIS import permit, and food products Ministry of Health approval.",
     "legal_source": {
       "name": "Customs (Prohibition of Imports) Order 2023, P.U.(A) 117 — Malaysia Attorney General's Chambers",
       "url": "https://lom.agc.gov.my/ilims/upload/portal/akta/outputp/1809215/PUA117.pdf"
@@ -8436,6 +8728,7 @@
       "description": "Edible vegetables and roots, fruit and nuts, coffee/tea/spices and cereals are food products whose import is subject to the approval of the Ministry of Health's Food Safety and Quality Division (Customs (Prohibition of Imports) Order 2023, Third Schedule item 35). Importing plants, agricultural produce or soil without a valid MAQIS import permit is an offence under the MAQIS Act 2011."
     },
     "notes": "No personal-luggage exemption or quantity allowance appears in the Order or on the MAQIS FAQ. Live plants, seeds and cut flowers were not separately confirmed on a primary page in this pass.",
+    "summary": "Plants and produce need a MAQIS import permit; food products need Ministry of Health approval.",
     "legal_source": {
       "name": "Customs (Prohibition of Imports) Order 2023, P.U.(A) 117 — Malaysia Attorney General's Chambers",
       "url": "https://lom.agc.gov.my/ilims/upload/portal/akta/outputp/1809215/PUA117.pdf"
@@ -8489,6 +8782,7 @@
       "quantity": "1 L spirits (22%+) or 2 L under 22%; plus 4 L wine and 16 L beer"
     },
     "notes": "Quoted from the Revenue Service's own brochure. It states the allowances \"per 30 calendar days\" for goods entering through land and marine checkpoints; the air-checkpoint paragraph prints \"per calendar days\" (the \"30\" appears to have been dropped), and the brochure states the same volumes for air, so treat 30 days as the intended period but confirm at the airport if you're near the limit. Anything above the allowance is dutiable and must be declared.",
+    "summary": "Per 30 days, travellers 18+: 1 litre of spirits or 2 litres under 22%, plus 4 litres of wine and 16 litres of beer.",
     "legal_source": {
       "name": "Revenue Service of Georgia — Exemption from import duties and the obligation of declaring goods carried by an individual (customs brochure)",
       "url": "https://www.rs.ge/Media/Default/Images/CustomsBrochures/Exemption%20of%20goods%20from%20duties%20and%20declaring.pdf"
@@ -8517,6 +8811,7 @@
       "quantity": "200 cigarettes, or 50 cigars, or 50 cigarillos, or 200 heated-tobacco sticks, or 250 g other tobacco"
     },
     "notes": "Quoted from the Revenue Service's own brochure. Electronic-cigarette liquid has its own separate 50 ml allowance inside the same tobacco allowance — see the e-cigarettes entry for Georgia.",
+    "summary": "Per 30 days, travellers 18+: 200 cigarettes, or 50 cigars, or 200 heated-tobacco sticks, or 250 g of tobacco.",
     "legal_source": {
       "name": "Revenue Service of Georgia — Exemption from import duties and the obligation of declaring goods carried by an individual (customs brochure)",
       "url": "https://www.rs.ge/Media/Default/Images/CustomsBrochures/Exemption%20of%20goods%20from%20duties%20and%20declaring.pdf"
@@ -8543,6 +8838,7 @@
       "quantity": "50 ml of e-liquid per 30 days"
     },
     "notes": "This covers the customs duty-free allowance for e-liquid only. The brochure doesn't address vaping devices themselves, nicotine strength limits, or Georgia's domestic tobacco-control rules for e-cigarettes, and no separate Georgian import ban on devices was found in this pass — confirm devices and pods with Georgian Customs if you're carrying more than a personal setup.",
+    "summary": "Up to 50 ml of e-cigarette liquid duty-free per 30 days, within the tobacco allowance.",
     "legal_source": {
       "name": "Revenue Service of Georgia — Exemption from import duties and the obligation of declaring goods carried by an individual (customs brochure)",
       "url": "https://www.rs.ge/Media/Default/Images/CustomsBrochures/Exemption%20of%20goods%20from%20duties%20and%20declaring.pdf"
@@ -8638,6 +8934,7 @@
     ],
     "verdict": "prohibited",
     "notes": "Georgia's Constitutional Court ruled on 30 July 2018 that consuming cannabis is protected private conduct, and a follow-up law limits consumption to adults 21+ at home — but that did not legalise acquiring, carrying or importing it, and the substances above remain on the strictly-restricted list. Press reporting on the follow-up law (OC Media) describes continuing penalties for possession and acquisition: fines from GEL 500 for a first offence, criminal fines of at least GEL 1,500 or community work for repeats within a year, GEL 800–1,500 for public consumption, and 6–10 years' imprisonment for supplying under-21s. Do not bring cannabis into Georgia.",
+    "summary": "Banned: cannabis and its extracts, oil and resin are strictly restricted narcotics in Georgia.",
     "legal_source": {
       "name": "Law of Georgia on Narcotic Drugs, Psychotropic Substances, Precursors and Narcological Assistance — Annex 1 List I and Art. 30(4) (matsne.gov.ge)",
       "url": "https://matsne.gov.ge/en/document/view/1670322"
@@ -8667,6 +8964,7 @@
       "description": "The Revenue Service brochure lists \"Plant and / or animal, their parts or derivatives\" among the goods for which permits and/or certificates must be submitted additionally at customs (it applies to any import that is restricted or requires a permit or license, which must be declared)."
     },
     "notes": "The brochure gives no personal-luggage quantity or exemption and doesn’t say which meat or dairy products are covered, so this row only establishes that animal products need permits/certificates in principle. The National Food Agency issues the veterinary-control import permits (reported as valid for one month, applied for electronically); its traveller-specific guidance and the Revenue Service’s \"Plants and Animals\" FAQ page are not readable without a browser, so confirm with the National Food Agency before bringing meat or dairy.",
+    "summary": "Animal products need permits or certificates at customs and must be declared.",
     "legal_source": {
       "name": "Revenue Service of Georgia — customs brochure \"Exemption of goods from duties and declaring\" (section: goods requiring permits and/or certificates)",
       "url": "https://www.rs.ge/Media/Default/Images/CustomsBrochures/Exemption%20of%20goods%20from%20duties%20and%20declaring.pdf"
@@ -8692,6 +8990,7 @@
       "description": "The Revenue Service brochure lists \"Plant and / or animal, their parts or derivatives\" among the goods for which permits and/or certificates must be submitted additionally at customs (any import that is restricted or requires a permit or license must be declared)."
     },
     "notes": "No personal-luggage quantity or exemption is stated, and the brochure doesn’t name which plant products are covered. Phytosanitary import permits are issued by the National Food Agency (reported validity up to 6 months); its traveller guidance and the Revenue Service’s \"Plants and Animals\" FAQ page could not be read, so check with the National Food Agency before bringing fruit, vegetables, seeds or plants.",
+    "summary": "Plants and plant products need permits or certificates at customs and must be declared.",
     "legal_source": {
       "name": "Revenue Service of Georgia — customs brochure \"Exemption of goods from duties and declaring\" (section: goods requiring permits and/or certificates)",
       "url": "https://www.rs.ge/Media/Default/Images/CustomsBrochures/Exemption%20of%20goods%20from%20duties%20and%20declaring.pdf"
@@ -8718,6 +9017,7 @@
       "description": "The Revenue Service brochure lists \"Weapons or explosive\" among the goods for which permits and/or certificates must be submitted at customs, and any import that is restricted or needs a permit must be declared."
     },
     "notes": "In practice this means firearms, ammunition and explosives cannot simply be carried in; a permit from the competent Georgian authority is required first. The brochure doesn’t say which authority issues permits for visitors, or how knives, air weapons and self-defence sprays are treated — don’t assume an ordinary tourist can obtain a permit, and check with Georgian authorities before travelling with anything that could be classed as a weapon.",
+    "summary": "Weapons need permits or certificates at customs and must be declared.",
     "legal_source": {
       "name": "Revenue Service of Georgia — customs brochure \"Exemption of goods from duties and declaring\" (section: goods requiring permits and/or certificates)",
       "url": "https://www.rs.ge/Media/Default/Images/CustomsBrochures/Exemption%20of%20goods%20from%20duties%20and%20declaring.pdf"
@@ -8742,6 +9042,7 @@
       "description": "Georgia’s Civil Aviation Agency drone portal uses the EU-style class system (class C0: MTOM under 250 g; C2: under 4 kg; C3/C4: under 25 kg), asks users to \"label your unmanned aircraft with your user registration number before heading out to fly\", limits several classes to \"a maximum attainable height above the take-off point limited to 120 m\", and states that \"Flying UAS within Restricted, Prohibited and Dangerous areas without authorization is not permitted\" (zone information at airspace.gov.ge)."
     },
     "notes": "The official portal page does not say who must register, or whether a foreign visitor can register or fly a drone brought from abroad; secondary sources say drones over 250 g need GCAA registration but that is unconfirmed here. Customs also treats high-frequency radio-electronic devices and communication equipment as permit goods (Revenue Service brochure) — whether that reaches consumer drones is not stated. Register or check with the Civil Aviation Agency before flying.",
+    "summary": "Label your drone with your registration number, stay below 120 m, and don't fly in restricted areas without authorisation.",
     "legal_source": {
       "name": "Georgian Civil Aviation Agency — UAS (drone) portal",
       "url": "https://uas.gov.ge/EN"
@@ -8927,6 +9228,7 @@
       "description": "Effective 9 November 2024, only travellers on a tourist visa may import limited tobacco for personal use, duty-exempt: \"Up to 200 cigarettes, or 25 cigars, or 250 grams of tobacco.\" Quantities above that \"will be retained by Customs for a maximum of 30 days\" and can be collected at the Velana International Airport departure customs counter before leaving."
     },
     "notes": "Per the Maldives Customs Service circular addressed to all passengers on a tourist visa. Tobacco brought by travellers who are not on a tourist visa that doesn't meet the Ministry of Health's labelling requirements is confiscated. Tobacco is one item: vaporizers are treated separately (see the e-cigarettes entry).",
+    "summary": "Tourist-visa holders only: up to 200 cigarettes, 25 cigars or 250 g of tobacco. Excess is held by customs for up to 30 days.",
     "legal_source": {
       "name": "Maldives Customs Service — Circular 14-VDS/CIR/2024/2 (9 Nov 2024): Revised Guidelines on Importation of Tobacco Products by Travellers",
       "url": "https://www.customs.gov.mv/d/Circular%202_2024%20-%20Revised%20Guidelines%20on%20Importation%20of%20Tobacco%20Products%20by%20Travellers.pdf"
@@ -8951,6 +9253,7 @@
       "description": "Flying a drone needs prior approvals, reviewed \"case-by-case\" by the Maldives Civil Aviation Authority: \"Depending on the area of operation, you may need approval from Maldives National Defence Force\" (MNDF); \"once approval has been obtained from MNDF, apply to the CAA\" with the application form and a copy of the MNDF permit; plus \"approval from any other relevant parties (e.g. resorts, island or city council)\". Operations must stay below 400 feet. The airport operator's customs page: \"Permits required in advance from MCAA + MNDF. Drones without permits may be held at customs.\""
     },
     "notes": "This CAA page sets out the flying-permit procedure only. It does not say whether tourists or small recreational drones are exempt, how far ahead to apply, what the penalties are, or how customs treats a drone in luggage, so none of that is asserted from the CAA page. The airport operator's customs page adds: \"Permits required in advance from MCAA + MNDF. Drones without permits may be held at customs\", and lists drones without permits among items given a retrieval receipt at the border.",
+    "summary": "Drones need approval in advance from the Maldives Civil Aviation Authority, and often the MNDF; without permits they may be held.",
     "legal_source": {
       "name": "Maldives Civil Aviation Authority — Flying Remotely Piloted Aircraft (Drones) in the Maldives",
       "url": "https://www.caa.gov.mv/operations/flying-remotely-piloted-aircraft-(drones)-in-the-maldives"
@@ -9024,6 +9327,7 @@
       "description": "Under the Plant Quarantine Regulation, \"all plants, parts of plants, plant products\" must be imported in accordance with the regulation (§3); plants and seeds brought for planting or ornamental purposes must be disease-free, clean of sand and water, correctly packed and labelled, and accompany a phytosanitary certificate. The regulation states that \"raw flora and bouquets and garlands made from fresh flora weighing less than 500 grams may be imported without a phytosanitary certificate\". Prohibited outright (§9): \"all parts of Maldivian coconut trees (cocos nucifera) except timber\", any plant prohibited by other law, and FAO-listed invasive species."
     },
     "notes": "This is a 2008 regulation aimed at plant imports generally; it does not say how a traveller's personal luggage is treated, and it says nothing specific about fresh fruit or vegetables brought as food. Whether it has since been amended was not checked. Treat live plants, seeds and unusual plant material as needing prior approval from the Plant and Animal Quarantine Unit and contact MFDA before bringing any.",
+    "summary": "Plants and seeds need a phytosanitary certificate; fresh flowers under 500 g are exempt. Some items are banned outright.",
     "legal_source": {
       "name": "Maldives Plant Quarantine Regulation (Ministry of Fisheries, Agriculture and Marine Resources, 2008), §§3–9 — copy hosted by Julius Kühn-Institut from the FAOLEX record",
       "url": "https://pflanzengesundheit.julius-kuehn.de/dokumente/upload/mv3-2008pqreg_en.pdf"
@@ -9049,6 +9353,7 @@
       "description": "Quoted directly from Customs: \"1 liter of spirits or 1 liter of sparkling and liqueur wines or suitable combination of mentioned drinks and 1 liter of other wines\" may be brought duty-free as personal luggage. Beer and olive oil have no precisely defined quantity, but Customs states it \"must be obviously intended for personal use and not for resale.\""
     },
     "notes": "This is the personal-luggage exemption, not a hard cap — goods above the duty-free allowance can still be brought in but are subject to duty/VAT (10% flat rate at the border if the total value of dutiable goods is under EUR 3,000; regular customs procedure above that).",
+    "summary": "1 litre of spirits or sparkling wine, plus 1 litre of other wine; beer only in obvious personal-use amounts.",
     "legal_source": {
       "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
       "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
@@ -9128,6 +9433,7 @@
       "quantity": "EUR 10,000"
     },
     "notes": "Applies per person, including children (Customs FAQ: \"It applies to each person, children included\"). Get and keep the Cash Declaration Form at entry if you're carrying a large sum you might need to take back out — without it, an amount over EUR 10,000 on departure risks seizure. Payment cards can be brought in/out freely with no limit.",
+    "summary": "Bring any amount, but declare EUR 10,000 or more. Taking more than that out needs proof of where it came from.",
     "legal_source": {
       "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
       "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
@@ -9210,52 +9516,6 @@
     ]
   },
   {
-    "slug": "cannabis-rs",
-    "names": [
-      "cannabis",
-      "marijuana",
-      "weed",
-      "thc",
-      "hashish"
-    ],
-    "destination": "RS",
-    "category": "cbd_cannabis",
-    "verdict": "prohibited",
-    "limits": {
-      "description": "Cannabis is classified as a Schedule I narcotic drug under Serbia's Law on Psychoactive Controlled Substances (Zakon o psihoaktivnim kontrolisanim supstancama); unauthorized production, sale and possession are criminalized under Criminal Code Arts. 246 and 246a, including for small personal-use quantities. There is no legal personal-import pathway or medical-use exception for travelers."
-    },
-    "notes": "This row is sourced to a law firm's country guide (CMS Expert Guides), not Serbia's own statute text directly — the Criminal Code articles and the Psychoactive Controlled Substances Law schedules weren't read verbatim in this pass. Reported penalty range for unauthorized possession of larger/dealing quantities is 3-12 years' imprisonment (Art. 246); simple possession of a small personal-use quantity (Art. 246a(1)) can draw a fine or up to 3 years, with a possibility of exemption from punishment in some cases. Do not bring cannabis into Serbia in any form.",
-    "legal_source": {
-      "name": "CMS Expert Guides — Cannabis Law and Legislation in Serbia",
-      "url": "https://cms.law/en/int/expert-guides/cms-expert-guide-to-a-legal-roadmap-to-cannabis/serbia"
-    },
-    "verified_at": "2026-09-22",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
-  },
-  {
-    "slug": "cbd-rs",
-    "names": [
-      "cbd",
-      "cbd oil",
-      "hemp extract"
-    ],
-    "destination": "RS",
-    "category": "cbd_cannabis",
-    "verdict": "depends",
-    "limits": {
-      "description": "Legal hemp cultivation exists in Serbia (fibre, seed and further-propagation use, THC capped at 0.3%, requiring Ministry of Agriculture authorisation), but according to CMS Expert Guides, \"the extraction of CBD oil is not regulated by law\" and Serbia's Commission for Psychoactive Controlled Substances has given an opinion that CBD itself is a psychoactive substance capable of unwanted effects."
-    },
-    "notes": "This is genuinely ambiguous, not a confirmed personal-import rule — sourced to a law firm's country guide (CMS Expert Guides) and a hemp-industry site (Hemppedia), not Serbia's own regulatory text read directly. Given the Commission's stated position, don't assume a CBD product is safe to bring into Serbia just because it's legal where you bought it; treat it with the same caution as cannabis until you've confirmed current status with Serbian authorities.",
-    "legal_source": {
-      "name": "CMS Expert Guides — Cannabis Law and Legislation in Serbia",
-      "url": "https://cms.law/en/int/expert-guides/cms-expert-guide-to-a-legal-roadmap-to-cannabis/serbia"
-    },
-    "verified_at": "2026-09-22",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
-  },
-  {
     "slug": "meat-dairy-rs",
     "names": [
       "meat",
@@ -9296,6 +9556,7 @@
       "description": "Customs' general food rule: goods \"may only be brought into/taken out of country in reasonable quantities for personal use and in the original manufacturer's wrapping.\" Unlike animal-origin food, no numeric cap is stated for plant products in this source, and no phytosanitary-certificate requirement for fresh fruit, vegetables, seeds or live plants is mentioned."
     },
     "notes": "This is the general food rule, not a plant-specific one — Customs' tourist FAQ doesn't separately address live plants, seeds for planting, or phytosanitary certificates, so treat this as an open question rather than a confirmed answer for anything beyond ordinary packaged food. Check with Serbian phytosanitary authorities (Ministry of Agriculture, Forestry and Water Management) before bringing live plants or seeds.",
+    "summary": "Plant food only in reasonable personal quantities and the manufacturer's packaging.",
     "legal_source": {
       "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
       "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
@@ -9320,6 +9581,7 @@
       "description": "Quoted directly from Customs: \"Passengers are not allowed to carry weapons across the border unless they possess the permit issued by a competent authority\" (the Ministry of Domestic and Foreign Trade). An exception exists for hunting weapons and ammunition, which may be brought in temporarily \"in appropriate quantities\" specifically for organized hunting tours or shooting-sport events."
     },
     "notes": "Ordinary tourists have no general route to bring a firearm without a permit obtained in advance. The hunting/shooting-sport exception is narrow — it applies to participation in an organized event, not general recreational carrying. Blades/knives aren't separately addressed in this source.",
+    "summary": "Weapons need a permit from the competent ministry; hunting weapons are allowed temporarily for organised hunts or events.",
     "legal_source": {
       "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
       "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
@@ -9343,6 +9605,7 @@
       "description": "Quoted directly from Customs: whether a permit is needed to import/export a drone \"depends on whether it, in terms of its technical characteristics, meets the conditions prescribed in the National Control List of Dual Use Items and the National Control List of Weapons and Military Equipment.\" The permit, if needed, is issued by the Ministry of Internal and Foreign Trade. A list of UAV models exempt from the permit requirement exists in the Ministry's own \"Instructions for the identification of UAV\" document, which wasn't read in this pass."
     },
     "notes": "This is a customs/export-control classification, not a flight-registration rule — it governs whether your specific drone model can cross the border with or without a permit, based on its technical specifications, not where or how you fly it once in Serbia. If your drone isn't clearly on the exempt list, Customs says to contact the Ministry directly for a classification opinion before travel.",
+    "summary": "Some drones need an import permit from the Ministry of Internal and Foreign Trade, depending on their technical specs.",
     "legal_source": {
       "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
       "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
@@ -9393,6 +9656,7 @@
       "description": "Passengers aged 20 or over may bring in duty-free: \"200 cigarettes, or 25 cigars, or 1 pound of tobacco, or 200 designated tobacco products\" (the last covering products like heated-tobacco sticks that aren't cigarettes/cigars/loose tobacco)."
     },
     "notes": "Passengers under 20 are not entitled to this concession at all. Fines for bringing in undeclared amounts above the allowance: NT$500 per carton of cigarettes, NT$3,000 per pound of tobacco, and NT$4,000 per 25 cigars. Vaping devices and e-liquid are a completely separate, much stricter rule — see the e-cigarettes entry for Taiwan; they are not covered by this tobacco allowance at all.",
+    "summary": "Travellers 20+: 200 cigarettes, or 25 cigars, or 1 pound of tobacco, or 200 heated-tobacco sticks.",
     "legal_source": {
       "name": "Customs Administration, Ministry of Finance (Taiwan) — Regulations for Inbound Passengers Carrying Tobacco or Liquor",
       "url": "https://web.customs.gov.tw/en/singlehtml/1865?cntId=cus16_87451_1865"
@@ -9419,6 +9683,7 @@
       "description": "Taiwan sets hard caps, not just declaration thresholds, on two currencies: \"Each passenger can't bring more than NT$100,000 with him/her when entering or leaving Taiwan\" and separately \"Renminbi is limited up to RMB$20,000\" — amounts above either cap cannot be brought in at all, even with a declaration. Other foreign currencies work differently: amounts \"in excess of US$10,000 (or its equivalent in other foreign currencies) must be declared,\" but there is no maximum once declared. Negotiable securities with a face value over US$10,000 must also be declared, with no cap."
     },
     "notes": "This is a genuinely unusual rule most travelers don't expect: New Taiwan Dollars and Renminbi are capped by law, while every other currency (USD, EUR, etc.) has no cap at all as long as it's declared above the USD 10,000-equivalent threshold. Failing to declare excess declarable currency results in confiscation of the excess portion.",
+    "summary": "Hard caps: NT$100,000 and RMB 20,000. Declare other foreign currency over US$10,000.",
     "legal_source": {
       "name": "Kaohsiung Customs, Ministry of Finance (Taiwan) — Limits on NTD, RMB, Foreign Currency and Negotiable Securities Carried by Passengers",
       "url": "https://web.customs.gov.tw/ekaohsiung/singlehtml/c718884d9be040dcb652112cdbabad3a?cntId=cb9e98e0aa664b4eb58f638076ddbeef"
@@ -9539,6 +9804,7 @@
       "description": "Taiwan applies an unusually strict THC threshold: if a CBD product's THC content exceeds 10 parts per million (0.001%) — far stricter than the 0.2-0.3% thresholds used in the US, EU, Japan or Thailand — it is classified as a Category 2 narcotic under Appendix 2 of the Narcotics Hazard Prevention Act and treated the same as cannabis itself. Even below that threshold, importing a CBD product without prior Taiwan FDA (TFDA) approval is illegal: \"violating the Pharmaceutical Affairs Act results in imprisonment up to 10 years and a fine up to 100 million NT dollars\" for unauthorized import of an unapproved drug."
     },
     "notes": "No CBD-containing product is currently approved for sale in Taiwan, so there is effectively no personal-use import pathway without a doctor's prescription and an advance TFDA application under the Regulations on Management of Medicament Samples and Gifts. Treat any CBD product as high-risk to bring into Taiwan, including hemp-derived products marketed as low-THC elsewhere.",
+    "summary": "Banned: CBD with over 10 ppm THC is a narcotic in Taiwan, and any CBD product needs TFDA approval to import.",
     "legal_source": {
       "name": "Taichung Customs, Ministry of Finance (Taiwan) — Importing CBD Products Without Permission Can Lead to Penalties",
       "url": "https://web.customs.gov.tw/taichung/singlehtml/274?cntId=523e44c77a674455b2385edfd0c24af3"
@@ -9567,6 +9833,7 @@
       "description": "\"Almost all kinds of meat products made from land animals are NOT permitted to carry into Taiwan.\" The fine for bringing in undeclared meat products generally is \"NTD 10,000 to NTD 1,000,000\" under infectious-disease-prevention law. Pork specifically is under a further, harsher rule: Taiwan has \"banned the import of all kinds of pork products from ASF [African Swine Fever]-infected areas,\" with a first-time violation fined at a flat \"NTD 200,000, regardless of nationality,\" rising toward NT$1 million for repeat violations; foreign nationals who don't pay the fine at the border are repatriated."
     },
     "notes": "Taiwan detected its first-ever domestic African Swine Fever case in October 2025, so enforcement has tightened further. This page does not separately address dairy products — treat dairy as an open question rather than assuming it's exempt from the general animal-product restriction.",
+    "summary": "Almost all meat products are banned. Pork from ASF-affected areas carries a NT$200,000 fine for a first offence.",
     "legal_source": {
       "name": "Taipei Customs, Ministry of Finance (Taiwan) — What Food Products Can I Bring Into Taiwan (African Swine Fever Prevention)",
       "url": "https://web.customs.gov.tw/etaipei/singlehtml/1367?cntId=df67c73ce2f449f09c487bf7f3ed88bb"
@@ -9591,6 +9858,7 @@
       "description": "\"禁止攜帶活植物及其生鮮產品\" (\"Bringing live plants and fresh plant products is prohibited\"), with an exception only for items that separately comply with plant quarantine regulations. Fresh fruit specifically has been banned from passenger baggage since 1 October 1998."
     },
     "notes": "Dried plant products (dried flowers, dried vegetables, dried fruit, dried spices) and some seeds (e.g. vegetable and spice seeds) can be brought in after declaring at the quarantine counter and passing inspection — this is a genuinely different, less strict rule than for fresh produce, so don't assume all plant matter is banned. The customs page mentions \"severe penalties\" for violations without stating an exact fine figure; a secondary source (Taiwan Ministry of Agriculture materials) cites NT$3,000 or more, but that specific figure wasn't independently confirmed on an official page in this pass.",
+    "summary": "Banned: live plants and fresh plant products, including fresh fruit, unless they meet plant quarantine rules.",
     "legal_source": {
       "name": "Taipei Customs, Ministry of Finance (Taiwan) — Agricultural, Livestock, Fishery Products and Food",
       "url": "https://web.customs.gov.tw/taipei/singlehtml/3392?cntId=cus2_3392_3392_1351"
@@ -9616,6 +9884,7 @@
       "description": "\"Passengers are NOT allowed to carry e-cigarettes and e-liquids into Taiwan.\" Violators \"may be fined between NT$50,000 and NT$5 million according to Paragraph 1 of Article 15 and Paragraph 2 of Article 26 of the Tobacco Hazards Prevention Act.\""
     },
     "notes": "Taiwan's amended Tobacco Hazards Prevention Act (in force since 22 March 2023) fully bans e-cigarettes — manufacture, import, sale and use — and separately regulates heated-tobacco products like IQOS, which are also barred for travelers to bring in. If merely transiting Taiwan for another destination, devices can be declared and deposited at the bonded luggage counter for collection on departure, rather than being confiscated outright.",
+    "summary": "Banned: e-cigarettes and e-liquids can't be brought into Taiwan. Fines range from NT$50,000 to NT$5 million.",
     "legal_source": {
       "name": "Customs Administration, Ministry of Finance (Taiwan) — Are Passengers Allowed to Bring Electronic Cigarettes into Taiwan?",
       "url": "https://web.customs.gov.tw/en/singlehtml/3457?cntId=cus16_175758_3457"
@@ -9652,6 +9921,7 @@
       "description": "\"Firearms (including shotguns, air guns, fishing guns, etc.), ammunition (including artillery shells, bullets, bombs, explosives, etc.), and knives referred to in the Act Governing the Control of Guns, Ammunition and Knives\" are prohibited, \"excluding those permitted by competent authorities.\""
     },
     "notes": "Taiwan has extremely strict, near-total gun control — private possession of firearms and ammunition is generally illegal outright, and there is no realistic tourist path to authorization. Secondary sources describe common traveler pitfalls beyond obvious firearms: switchblades, stun batons, gas-powered guns, cosplay prop knives, hunting knives, and toy guns with metal firing pins have all reportedly been confiscated; only plastic replica guns with no firing capability are generally treated as toys, though this specific distinction wasn't independently confirmed on the official customs page in this pass.",
+    "summary": "Banned: firearms, air guns, ammunition and controlled knives, unless authorised by the competent authorities.",
     "legal_source": {
       "name": "Kaohsiung Customs, Ministry of Finance (Taiwan) — Prohibited Articles",
       "url": "https://web.customs.gov.tw/ekaohsiung/singlehtml/9a18ddca4652423ba5e2f6801a8fe492?cntId=935f25ca5d15405a82a328b9f2813af0"
@@ -9676,6 +9946,7 @@
       "description": "Drones with a maximum take-off weight over 250g must be registered with Taiwan's Civil Aeronautics Administration (CAA) before flying (Regulations of Drone, Art. 6(1)); drones under 250g owned by an individual are exempt from registration. Foreign nationals bringing their own drone face an extra step regardless of weight class for anything requiring registration: under Art. 38(1)-(2), they must submit documents to the CAA and can only fly \"after CAA's certification,\" and a foreign visitor holding valid drone credentials from their home country can get that certification valid for \"a maximum of six month after the date of issuance.\""
     },
     "notes": "A tourist bringing a small recreational drone under 250g can fly without registering it at all, regardless of nationality. Operating a heavier drone (2-15kg with navigation systems, or anything over 15kg) also needs a Remote Pilot License with age/testing requirements on top of the registration/certification above — a materially higher bar than just registering the aircraft.",
+    "summary": "Drones over 250 g must be registered with the CAA, and foreign visitors need CAA certification before flying.",
     "legal_source": {
       "name": "Laws & Regulations Database of the Republic of China (Taiwan) — Regulations of Drone, Arts. 6, 38",
       "url": "https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=K0090083"
@@ -9703,6 +9974,7 @@
       "quantity": "1L spirits >22% ABV, or 2L ≤22% ABV/sparkling; plus 2L still wine and 10L beer"
     },
     "notes": "Quoted directly from the General Directorate of Customs' own traveler page. Amounts above this are dutiable and must be declared.",
+    "summary": "Travellers 17+: 1 litre of spirits or 2 litres up to 22%, plus 2 litres of still wine and 10 litres of beer.",
     "legal_source": {
       "name": "General Directorate of Customs (Republic of Albania) — Tobacco, alcoholic drinks and coffee",
       "url": "https://www.dogana.gov.al/english/c/174/193/tobacco-alcoholic-drinks-and-coffee"
@@ -9754,6 +10026,7 @@
       "quantity": "EUR 10,000 or equivalent"
     },
     "notes": "Quoted directly from the General Directorate of Customs' own traveler page. The threshold covers precious metals/stones and antiques as well as cash and negotiable instruments, and applies on both entry and exit.",
+    "summary": "Declare cash, bearer instruments, precious metals or valuables worth €10,000 or more.",
     "legal_source": {
       "name": "General Directorate of Customs (Republic of Albania) — Cash Declaration",
       "url": "https://www.dogana.gov.al/english/c/174/195/cash-declaration"
@@ -9878,6 +10151,7 @@
       "description": "Not named specifically, but falls under the Customs Authority's blanket ban on importing \"plants, narcotic medicaments and psychotropic substances of natural or synthetic nature, their materials and their preparations\" — the same provision covering cannabis generally."
     },
     "notes": "No Albanian government page found that names CBD specifically or draws a distinction by THC content, unlike some countries' customs authorities. Given the blanket wording covering cannabis-plant preparations generally and no confirmed exception, treat CBD products the same as cannabis: do not bring them. This inference (CBD swept in under the general cannabis/narcotic-plant provision, not a CBD-specific rule) should be treated as somewhat less certain than the cannabis row itself.",
+    "summary": "Treated as banned: CBD isn't named, but Albania's customs ban on narcotic plants and their preparations covers cannabis products.",
     "legal_source": {
       "name": "General Directorate of Customs (Republic of Albania) — Narcotics and Psychotropic Substances and human trafficking",
       "url": "https://www.dogana.gov.al/english/c/177/239/narcotics-and-psychotropic-substances-and-human-trafficking"
@@ -9912,6 +10186,7 @@
       "description": "\"Foreign citizens have the right to enter with firearms in the territory of the Republic of Albania only after they are equipped with a temporary authorization issued by the competent body of the State Police.\" Category B and C weapons separately require State Police authorization for trading, import/export, hunting, or sporting purposes."
     },
     "notes": "You cannot simply bring a firearm into Albania — a prior temporary authorization from the State Police is required. The Customs Authority's page doesn't address bladed weapons, air weapons, or self-defense items specifically, so don't assume those are unregulated; the U.S. ITA country guide separately confirms \"special import provisions are enforced for strategic sectors such as weapons, munitions.\"",
+    "summary": "Foreigners can bring firearms only with a temporary authorisation from the State Police.",
     "legal_source": {
       "name": "General Directorate of Customs (Republic of Albania) — Weapons",
       "url": "https://www.dogana.gov.al/english/c/177/236/weapons"
@@ -9937,6 +10212,7 @@
       "description": "Albania's tobacco-control law (Law No. 9636, as amended through 2024) defines \"smoking\" to include electronic cigarettes, and permits their retail sale (18+ only) subject to restrictions — but the law's provisions found in this pass are about domestic manufacture, marketing and retail-sale channels (e.g., a ban on selling tobacco products, including via the definition covering e-cigarettes, \"through the postal service\"), not a traveler-facing import quantity."
     },
     "notes": "The Customs Authority's own traveler duty-free page (used for the tobacco and alcohol allowances above) does not mention e-cigarettes, vapes, or e-liquid at all — unlike tobacco, there is no stated personal duty-free allowance or explicit ban for travelers bringing a vape. Domestically, nicotine liquid may only be placed on the market in refill containers up to 10ml or disposables up to 2ml, with nicotine concentration capped at 20mg/ml — whether this domestic market-placement rule is enforced against a traveler's personal device wasn't confirmed. Treat this as unresolved rather than clearly allowed or banned.",
+    "summary": "E-cigarettes are legal in Albania for adults; the law sets no traveller import limit.",
     "legal_source": {
       "name": "Law No. 9636, dated 6.11.2006 \"On the Protection of Health from Tobacco Products\" (as amended through 2024)",
       "url": "https://assets.tobaccocontrollaws.org/uploads/legislation/Albania/Albania-Law-No.-9636.pdf"
@@ -9965,6 +10241,7 @@
       "quantity": "1 L spirits or 2 L ≤22%; 4 L still wine; 16 L beer"
     },
     "notes": "These are the EU allowances for travellers entering the EU from a non-EU country (Your Europe, europa.eu), which Cyprus Customs lists as its general allowances. Other goods (not alcohol/tobacco) are duty-free up to €430 per person (€175 for travellers under 15, per Cyprus Customs).",
+    "summary": "From outside the EU: 1 litre over 22% or 2 litres up to 22%, plus 4 litres of wine and 16 litres of beer.",
     "legal_source": {
       "name": "Cyprus Customs & Excise Department — Travellers: dual channel system and general allowances",
       "url": "https://www.mof.gov.cy/mof/customs/customs.nsf/All/D8E0334067181B47C22572BF002DF37C"
@@ -10018,6 +10295,7 @@
       "quantity": "€10,000 or more"
     },
     "notes": "Cyprus Customs' page (last updated 2020) still cites the repealed Regulation (EC) 1889/2005; the current EU rule is Regulation (EU) 2018/1672 (EC DG TAXUD), which keeps the €10,000 threshold and defines cash as banknotes and coins, bearer negotiable instruments, gold coins of at least 90% gold and gold bars/nuggets of at least 99.5% gold. Cyprus' page also applies the declaration to travel to/from other EU member states (national Law 53(I)/2009).",
+    "summary": "Declare €10,000 or more in cash or gold in writing. Undeclared amounts are seized, with fines up to €50,000.",
     "legal_source": {
       "name": "Cyprus Customs & Excise Department — Cash Control; cross-checked with European Commission DG TAXUD — EU Cash Controls (Regulation (EU) 2018/1672)",
       "url": "https://www.mof.gov.cy/mof/customs/customs.nsf/0/E906CCB9D3760124C22572BF002DF9A1"
@@ -10068,6 +10346,7 @@
       "description": "Under EU rules you can bring, from outside the EU: fishery products up to 20 kg (or one fish, if heavier); other animal products such as honey up to 2 kg; and powdered infant milk, infant food or special foods needed for medical reasons up to 2 kg, if they don't need refrigeration before opening and are in unbroken branded packaging."
     },
     "notes": "Conflict between sources, recorded per AGENTS.md §3.8: the EU rule (Delegated Regulation (EU) 2019/2122, directly applicable) allows fish up to 20 kg and honey up to 2 kg, but Cyprus Customs' restrictions list says meat, fish and cheese need authorisation from the Director of Veterinary Services and honey needs a Veterinary Services licence. The list may refer to commercial imports; if you plan to bring fish or honey, check with Cyprus Veterinary Services first. These rules don't apply to products coming from other EU countries, Andorra, Iceland, Liechtenstein, Norway, San Marino or Switzerland.",
+    "summary": "From outside the EU: fish up to 20 kg, honey up to 2 kg, and infant or medical food up to 2 kg.",
     "legal_source": {
       "name": "European Commission — Personal imports of animal products (Commission Delegated Regulation (EU) 2019/2122)",
       "url": "https://food.ec.europa.eu/animals/animal-products-movements/personal-imports_en"
@@ -10145,6 +10424,7 @@
       "description": "Cyprus Customs lists cannabis derivatives under prohibited imports — explicitly including oil and flour from cannabis seeds, cannabis contained in foods and beverages, and other cannabis derivatives. The competent authority is the Chief of Police."
     },
     "notes": "Customs states its lists are not exhaustive and refers enquiries to the competent authority (Chief of Police).",
+    "summary": "Banned: Cyprus Customs lists cannabis derivatives, including oils and foods, as prohibited imports.",
     "legal_source": {
       "name": "Cyprus Customs & Excise Department — Prohibitions & restrictions (passengers)",
       "url": "https://www.mof.gov.cy/mof/customs/customs.nsf/All/0D56470143C54886C22572BF002D7648?OpenDocument="
@@ -10249,6 +10529,7 @@
       "description": "Bringing a drone is not restricted, but flying it is regulated under EU (EASA) rules. Visitors from outside the EU who have not flown in another EU country before must register as an operator with Cyprus's Department of Civil Aviation (age 18+, €15, VISA card only) and attach the operator registration number to every drone. Registration is needed if the drone weighs more than 250 g, or has a camera or other sensor able to capture personal data. Non-EU residents also need an A1/A3 remote pilot certificate (online training and exam, €15, valid 5 years) — not required for a C0 drone under 250 g. No flying in no-fly zones and keep at least 8 km from airports and heliports."
     },
     "notes": "If you already registered in another EU country (where you first flew), do not register again in Cyprus.",
+    "summary": "Drones over 250 g, or with a camera, need operator registration with Cyprus's Civil Aviation Department; visitors also need an A1/A3 certificate.",
     "legal_source": {
       "name": "Cyprus Department of Civil Aviation — Unmanned Aircraft (drones.gov.cy)",
       "url": "https://drones.gov.cy/"
@@ -10282,6 +10563,7 @@
       "description": "Prohibited: flick knives and daggers; automatic firearms, long-barrel semi-automatic or repeating firearms, ammunition, military explosive devices and projectile launchers (per Law 113(I)/2004, First Annex). Restricted — permit from the Chief of Police needed: air rifles up to 4.5 mm, hunting guns taking no more than two cartridges per loading, sporting pistols, sporting archery equipment and handcuffs. Explosives, hunting cartridges and fireworks need an import licence from the Inspector of Mines."
     },
     "notes": "Customs states its lists are not exhaustive; contact Customs Headquarters or the Police before travelling with any weapon.",
+    "summary": "Flick knives, daggers and automatic firearms are banned; air rifles and hunting guns need a Chief of Police permit.",
     "legal_source": {
       "name": "Cyprus Customs & Excise Department — Prohibitions & restrictions (passengers)",
       "url": "https://www.mof.gov.cy/mof/customs/customs.nsf/All/0D56470143C54886C22572BF002D7648?OpenDocument="
@@ -10716,6 +10998,7 @@
       "quantity": "Dairy 5 kg; sausages 10 kg; canned 2 kg; honey 1 kg; no pork"
     },
     "notes": "SENASA: every passenger must declare animal products on the passenger declaration and take meats, sausages, eggs and other livestock products to the SENASA office in the arrivals hall; 'SOLO PODRÁN INGRESAR AL PERÚ LOS PRODUCTOS DECLARADOS Y AUTORIZADOS POR EL SENASA'. Without an import permit, allowed only if properly packed and labelled and not from countries with sanitary restrictions: 'Lácteos pasteurizados hasta 5 kg. o un solo molde de queso no mayor a 10 kg', 'Embutidos (excepto de origen porcino) hasta 10 Kg', 'Comida rápida enlatada (excepto de porcino) hasta 2 Kg', 'Miel, jalea real, polen hasta 1 Kg'. Pork: Resolución Directoral 0012-2021-MIDAGRI-SENASA-DSA prohibits pig-origin goods entering Peru (African swine fever). In-flight food (cheese, ham, etc.) may not be taken off the plane and is confiscated.",
+    "summary": "Declare it. Packed, labelled dairy up to 5 kg, cured meats up to 10 kg and honey up to 1 kg are allowed; all pork is banned.",
     "legal_source": {
       "name": "¡Amigo viajero! — Servicio Nacional de Sanidad Agraria del Perú (SENASA), gob.pe campaign page (last changed 10 May 2024)",
       "url": "https://www.gob.pe/institucion/senasa/campa%C3%B1as/6969-amigo-viajero"
@@ -10746,6 +11029,7 @@
       "quantity": "1 kg of listed dried/processed items"
     },
     "notes": "SENASA 'Amigo viajero': products allowed in accompanied baggage and only checked by the SENASA inspector, 'Sólo hasta 1 kg': industrially dried medicinal and aromatic herbs; industrially dried cut flowers and foliage; industrially dried fruit and vegetables; ground herbs and spices; fresh or dried edible mushrooms; flours, starches, semolina; grains; whole spices. More than that requires meeting SENASA rules before travel. 'Los productos frescos o secos naturalmente (frutas y flores), maderas, insectos vivos, plantas o partes de ellas... requieren de una autorización previa por parte del SENASA y no pueden ingresar al país en tu equipaje sin cumplir los controles fitosanitarios. No está autorizado el ingreso de suelo o tierra.' Declare plant products on the customs declaration. Queries: scv@senasa.gob.pe. SUNAT also lists 'productos agropecuarios' as restricted goods.",
+    "summary": "Declare all plant products. Small amounts of dried, packaged items are allowed after inspection; fresh fruit needs SENASA authorisation.",
     "legal_source": {
       "name": "¡Amigo viajero! — Servicio Nacional de Sanidad Agraria del Perú (SENASA), gob.pe campaign page (last changed 10 May 2024)",
       "url": "https://www.gob.pe/institucion/senasa/campa%C3%B1as/6969-amigo-viajero"
@@ -10798,6 +11082,7 @@
       "quantity": "< 2 kg recreational: outside the regulation"
     },
     "notes": "D.S. N° 012-2026-MTC (Regulation of Law 30740, published 29 May 2026) applies to national and foreign persons operating RPAS. Art. 3.2(b) excludes 'La Aeronave Pilotada a Distancia de uso recreativo o aerodeportivo que tenga una masa máxima de despegue inferior a dos (2) kilogramos'. Art. 8: RPA/RPAS used in the Open or Specific category must be entered in the DGAC's Register of Remotely Piloted Aircraft (free, per NTC 001-2015) within 30 working days of acquisition. Art. 25/30: operations other than recreational use need an Open-category operating licence and a remote-pilot licence; the licence form asks for a DNI, passport or carné de extranjería. The regulation's Open/Specific-category provisions take effect only once the DGAC updates its technical rules (within two years), so NTC 001-2015 still governs in the meantime. Flights in Natural Protected Areas are supervised together with SERNANP (art. 7.2). This row covers flying rules; we found no SUNAT traveller rule specific to bringing a drone into Peru.",
+    "summary": "Recreational drones under 2 kg aren't covered by Peru's drone rules; heavier ones must be registered with the DGAC.",
     "legal_source": {
       "name": "Decreto Supremo N° 012-2026-MTC — Reglamento de la Ley N° 30740 (RPAS), El Peruano, 29 May 2026",
       "url": "https://busquedas.elperuano.pe/dispositivo/NL/2520332-3"
@@ -10905,6 +11190,7 @@
       "quantity": "US$10,000"
     },
     "notes": "DGA Manual del Viajero: under 'Que sí necesitan declaración aduanera' — 'Dinero en efectivo US$10,000 o su equivalente en pesos dominicanos u otra moneda extranjera, títulos o valores al portador, estás obligado a declararlo ... al momento de tu entrada o salida, utilizando el formulario habilitado ... y presentar los documentos que justifiquen la procedencia lícita'. FAQ 9 says 'No se cobran impuestos por portar dinero' and phrases the trigger as 'más de US$10,000'. Wording conflict on the same page (US$10,000 vs more than US$10,000) — we show the stricter reading: declare at US$10,000 or more. The declaration is part of the E-Ticket.",
+    "summary": "Declare US$10,000 or more in cash or bearer instruments, with documents showing where the money came from.",
     "legal_source": {
       "name": "Dirección General de Aduanas (DGA) — Manual del Viajero (traveller FAQ page)",
       "url": "https://www.aduanas.gob.do/manual-del-viajero/"
@@ -11126,6 +11412,7 @@
       "description": "Flying a drone is regulated by IDAC under RAD 107: the operator and the drone must be registered, prior permits are needed for flights in urban areas or near crowds, restricted zones and height limits apply, and you must keep visual line of sight."
     },
     "notes": "IDAC (Instituto Dominicano de Aviación Civil) notice 'Idac advierte sobre uso de drones sin autorización en el Centro Olímpico Juan Pablo Duarte' (2026): 'el Rad 107 establece obligaciones como el registro del operador y del dron, la solicitud previa de permisos para vuelos en áreas urbanas o cercanas a multitudes, el respeto a zonas restringidas y límites de altura, así como la obligación de mantener contacto visual con la aeronave en todo momento.' A separate 2026 IDAC notice banned unauthorised drone flights near all venues of the XXV Central American and Caribbean Games (Santo Domingo, Boca Chica, Baní, San Cristóbal, Bonao, Santiago, Puerto Plata, Punta Cana); misuse can bring administrative sanctions. An older IDAC notice (2024) lists airports, the National Palace, the Ministry of Defence, San Isidro Air Base, the oil refinery, Las Calderas naval base and military camps as restricted zones. Customs does not mention drones; the duty-free electronics allowance lists one camera, two phones, one laptop and one tablet, so a drone could be assessed for duty. No source states a weight threshold under RAD 107 (an older IDAC notice mentioned permits for drones over 4.4 lb under the former RAD-48).",
+    "summary": "The drone and operator must be registered with IDAC; urban flights need permits.",
     "legal_source": {
       "name": "IDAC — Idac advierte sobre uso de drones sin autorización en el Centro Olímpico Juan Pablo Duarte (RAD 107)",
       "url": "https://www.idac.gob.do/es/idac-advierte-sobre-uso-de-drones-sin-autorizacion-en-el-centro-olimpico-juan-pablo-duarte/"
@@ -11270,6 +11557,7 @@
       "quantity": "USD 2,000 duty-free"
     },
     "notes": "Decreto 1165 de 2019 Art. 268: duty-free accompanied baggage up to USD 2,000; personal effects are not counted. Art. 269: travellers abroad at least 5 calendar days may bring, paying the 15% single tax (Art. 270), up to 3 units each of household, sports and professional articles and up to 10 units of the same kind of other personal goods, up to USD 3,000 total, once per year per person. Art. 274: minors get a reduced quota (DIAN page: 50%). Art. 276: non-residents may temporarily import, tax-free and subject to re-export, items needed for personal or professional use during their stay if declared on arrival. DIAN's 'Trámites aduaneros' page repeats the USD 2,000 franchise and 15% tax. Note: the English version of DIAN's Form 530 page mentions a 'USD 5,000' quota that the Spanish page and the decree do not — the decree controls.",
+    "summary": "USD 2,000 of goods duty-free per adult; up to USD 3,000 more at a 15% single tax, once a year.",
     "legal_source": {
       "name": "Decreto 1165 de 2019 (Régimen de Aduanas), Arts. 266–270 – DIAN normograma",
       "url": "https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm"
@@ -11570,6 +11858,7 @@
       "description": "Do not bring cannabis. Customs prohibits narcotics ('Estupefacientes') in baggage, and ANMAT lists cannabis, its resin, and cannabis extracts and tinctures as Lista I narcotics under Ley 17.818."
     },
     "notes": "Sources: the ARCA 'Objetos permitidos y prohibiciones' page, plus the ANMAT controlled-substances list (argentina.gob.ar/sites/default/files/estupefacientes_2016.pdf, linked from the ANMAT 'Listados' page): 'CANNABIS (Marihuana), su resina (Haschisch) y los extractos y tinturas de Cannabis — LISTA I. LEY 17818/68'. No official page read deals with CBD-only products for travellers. Because 'extractos y tinturas' are listed, treat CBD oils as prohibited unless ANMAT confirms otherwise. Argentina's medical-cannabis programme is for registered patients in Argentina and does not give foreign travellers an allowance.",
+    "summary": "Banned: cannabis and its extracts are Lista I narcotics, and customs prohibits narcotics in baggage.",
     "legal_source": {
       "name": "ARCA (Aduana) — ¿Qué objetos se pueden ingresar? (Prohibiciones: Estupefacientes); ANMAT Listado de Sustancias Controladas — Estupefacientes",
       "url": "https://www.afip.gob.ar/viajeros/ayuda/objetos.asp"
@@ -11632,6 +11921,7 @@
       "description": "Allowed in personal quantities if packaged and labelled by the producer under official health control: pasteurised milk, condensed milk, milk powder, yogurt, butter, dulce de leche, and cheeses made from pasteurised milk. Other dairy products and derivatives are on the 'not permitted' list."
     },
     "notes": "SENASA 'Ingresar o regresar al país con alimentos' (Res. 295/1999). The page lists 'productos y derivados lácteos' as not permitted, apart from the authorised items above. Treat raw-milk cheese and unlabelled dairy as prohibited. Declare SENASA-regulated goods on arrival.",
+    "summary": "Packaged, labelled pasteurised dairy such as milk powder, yogurt, butter, dulce de leche and cheese is allowed.",
     "legal_source": {
       "name": "SENASA — Ingresar o regresar al país con alimentos",
       "url": "https://www.argentina.gob.ar/senasa/informacion-al-viajero/ingresar-o-regresar-al-pais"
@@ -11662,6 +11952,7 @@
       "description": "Prohibited: fresh fruit and vegetables; flowers and garden plants; fruit, ornamental and forestry plants; plant parts such as seeds, roots and buds. Allowed in personal quantities if packaged and labelled: processed fruit and vegetables (in syrup, pickled, canned), roasted or salted nuts, jams, candied fruit, juices, sugar and oil."
     },
     "notes": "SENASA 'Ingresar o regresar al país con alimentos' (Res. 295/1999). Also prohibited: animal feed, veterinary products, insects and microorganisms. A separate SENASA barrier also restricts some fruit and meat entering Patagonia from the rest of Argentina.",
+    "summary": "Fresh fruit, vegetables, plants and seeds are banned. Packaged processed fruit, nuts and jams are allowed.",
     "legal_source": {
       "name": "SENASA — Ingresar o regresar al país con alimentos",
       "url": "https://www.argentina.gob.ar/senasa/informacion-al-viajero/ingresar-o-regresar-al-pais"
@@ -11688,6 +11979,7 @@
       "description": "Firearms and explosives are prohibited in baggage unless the national firearms authority (RENAR, formerly ANMAC) has authorised them in advance. Flammables are also excluded."
     },
     "notes": "The ARCA 'Objetos permitidos y prohibiciones' page reads 'Armas, explosivos (salvo autorización del RENAR)'. ARCA's 2018 baggage infographic names the authority as ANMAC. Contact the firearms authority well before travel, for example for hunting trips. No authorisation procedure was read.",
+    "summary": "Firearms and explosives are banned in baggage without prior authorisation from the national firearms authority.",
     "legal_source": {
       "name": "ARCA (Aduana) — ¿Qué objetos se pueden ingresar?",
       "url": "https://www.afip.gob.ar/viajeros/ayuda/objetos.asp"
@@ -12102,6 +12394,7 @@
       "quantity": "up to 4 guns, 500 rounds (as baggage)"
     },
     "notes": "Art. 365(k) Decreto 44051-H: 'Escopeta o rifles de caza y quinientos tiros, incluso hasta cuatro armas diferentes para cacería o para tiro al blanco … siempre que se demuestre, en forma fehaciente, que el viajero es turista. El ingreso de armas y municiones estará sujeto a las regulaciones que sobre esta materia establece la Ley de Armas y Explosivos.' The customs rule only makes them duty-free baggage; the permit requirements under the Arms and Explosives Law were not verified here — do not travel with a firearm without confirming them with the Costa Rican authorities first. Handguns and other weapons are not covered by the baggage allowance.",
+    "summary": "Tourists may bring up to four hunting guns and 500 rounds, subject to permits under Costa Rica's firearms law.",
     "legal_source": {
       "name": "Reglamento a la Ley General de Aduanas, Decreto Ejecutivo N° 44051-H (18 May 2023), arts. 365–371 — SCIJ/Sinalevi, Procuraduría General de la República",
       "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=99648&param2=136510&param3=1"
@@ -12188,6 +12481,7 @@
       "quantity": "over QAR 50,000"
     },
     "notes": "GOV.UK: 'If you are taking money, precious metals or gems worth more than 50,000 Qatari riyals into Qatar, you must complete a declaration form', covering currency, travellers cheques, money orders, cheques, promissory notes, precious metals and precious stones; breaking the rules can mean fines, imprisonment or seizure. Cross-checked: Auswärtiges Amt says import or export above QAR 50,000 must be declared on the General Authority of Customs form on entry and exit, and violations are punished by imprisonment, fine or seizure; Government of Canada says the same for 'more than QAR50,000' when entering or leaving. Carrying it is legal; failing to declare is the offence.",
+    "summary": "Declare cash, bearer instruments, precious metals or stones worth more than QAR 50,000 in total.",
     "legal_source": {
       "name": "GOV.UK (FCDO) — Qatar travel advice: Entry requirements (updated 19 Aug 2026)",
       "url": "https://www.gov.uk/foreign-travel-advice/qatar/entry-requirements"
@@ -12743,6 +13037,7 @@
       "description": "All plant products — fresh, dried, dehydrated, frozen or processed — must be declared on the joint Aduana–SAG sworn declaration; an SAG inspector decides whether each item may enter."
     },
     "notes": "SAG 'Ingreso a Chile': declare every plant or animal product regardless of quantity; an SAG inspector decides admissibility. The joint Aduana–SAG form lists plant products to declare: 'Frutos y hortalizas (frescas, secas, deshidratadas, congeladas y agroindustrializadas)', live plants and plant parts, all grains and seeds (including for eating), legumes, spices/herbs/seasonings, flowers, soil or anything containing soil, plant-origin crafts, wood, conifer cones, biological material (live insects, spores), other packed or unpacked plant products, pesticides and fertilisers. False declaration is punishable by a fine. Declaring does not guarantee entry; non-compliant products are not allowed in.",
+    "summary": "Declare all plant products on the SAG sworn declaration; an inspector decides what may enter.",
     "legal_source": {
       "name": "Servicio Nacional de Aduanas / SAG — Bienvenido/a a Chile: Declaración Jurada (Welcome to Chile Affidavit), joint Aduana–SAG form, version 03",
       "url": "https://www.aduana.cl/aduana/site/docs/20080129/20080129131334/declaracion_conjunta_sag_aduanas.pdf"
@@ -12775,6 +13070,7 @@
       "description": "Firearms, ammunition, explosives and martial-arts implements (including bows, arrows, crossbows) need prior DGMN authorisation; foreign hunters and sport shooters apply for a temporary-import authorisation through a Chilean legal representative."
     },
     "notes": "Aduana 'Productos que requieren autorización o Visto Bueno': 'Armas de fuego, municiones, explosivos y sustancias químicas, inflamables y asfixiantes e implementos de artes marciales' require the Visto Bueno of the Dirección General de Movilización Nacional (DGMN); 'Los implementos para la realización de Artes Marciales ... requieren permisos de la DGMN, dentro de ellos arcos, flechas y ballestas, keibo, cadenas con puntas metálicas'. ChileAtiende/DGMN 'Autorización para la internación temporal de armas' (Ley 17.798; Decreto 83): available to foreign hunters, shooting federations and clubs, sportspeople, exhibitors and embassies; for hunting a legal representative must file a notarised document taking responsibility for the weapons while in Chile; applied for at DGMN offices; reply within 20 working days; validity 'En caso necesario, 180 días'; fee per DGMN schedule (amount not shown). Bringing a weapon without authorisation is an offence.",
+    "summary": "Firearms, ammunition, explosives, bows and crossbows need prior DGMN authorisation.",
     "legal_source": {
       "name": "ChileAtiende / Dirección General de Movilización Nacional (DGMN) — Autorización para la internación temporal de armas (Ley N° 17.798; Decreto N° 83)",
       "url": "https://www.chileatiende.gob.cl/fichas/949-autorizacion-para-la-internacion-temporal-de-armas"
@@ -12830,6 +13126,7 @@
       "quantity": "1 L spirits or 2 L ≤22% + 4 L still wine + 2 L beer"
     },
     "notes": "Montenegrin Customs Administration instruction (31 Oct 2025) applying Articles 8–9 of the Decree on exemption from import duties (Sl. list CG 31/25). People under 17 get no alcohol or tobacco allowance. The alcohol/tobacco quantities are duty-free regardless of value and are not counted toward the general goods allowance (EUR 430 for air and sea travellers, EUR 300 for other travellers, EUR 150 for under-15s). Above the allowance, full import duties are charged (up to the maximum quantities of excise goods individuals may import). Goods must be occasional and for personal/family use or gifts, not commercial.",
+    "summary": "Travellers 17+: 1 litre of spirits or 2 litres up to 22%, plus 4 litres of still wine and 2 litres of beer.",
     "legal_source": {
       "name": "Oslobođenje od plaćanja uvoznih dažbina na robu u ličnom prtljagu — Customs Administration of Montenegro (Uprava carina) instruction no. 14388/1-25 of 31 Oct 2025, applying the Decree on conditions and procedure for exemption from import duties (Sl. list CG 31/25)",
       "url": "https://www.gov.me/dokumenta/31c08da8-50ec-47ba-9975-a39fe4eca260"
@@ -12857,6 +13154,7 @@
       "quantity": "Air: 200 cigarettes; land/sea: 40 cigarettes"
     },
     "notes": "Customs Administration instruction of 31 Oct 2025 (Decree Sl. list CG 31/25, Art. 8 for air travel, Art. 9 for 'other types of traffic'). The lower allowance for non-air arrivals is a common surprise for travellers driving in from Croatia, Bosnia, Serbia or Albania or arriving by ferry. Under-17s get no tobacco allowance. Tobacco above the allowance is charged full import duties.",
+    "summary": "By air: 200 cigarettes or equivalent. By land or sea: only 40 cigarettes or equivalent.",
     "legal_source": {
       "name": "Oslobođenje od plaćanja uvoznih dažbina na robu u ličnom prtljagu — Customs Administration of Montenegro (Uprava carina) instruction no. 14388/1-25 of 31 Oct 2025, applying the Decree on conditions and procedure for exemption from import duties (Sl. list CG 31/25)",
       "url": "https://www.gov.me/dokumenta/31c08da8-50ec-47ba-9975-a39fe4eca260"
@@ -12887,6 +13185,7 @@
       "quantity": "EUR 10,000 or more"
     },
     "notes": "Customs Administration operational notice no. D-6425/1-25 of 8 May 2025: anyone carrying 'novac, čekovi, hartije od vrijednosti na donosioca, dragocjeni metali ili drago kamenje' worth EUR 10,000 or more across the border must declare it to customs and provide complete documentation on its origin. If undeclared money has no sign of illegal origin it is not seized, but a misdemeanour penalty order is issued. If there is suspicion about its origin (declared or not, and at any amount), customs may hold the money and the person for up to 6 hours while the police Financial Intelligence Unit and prosecutor decide. The Customs Administration's 2016 instruction (also published on the same page) cites the legal basis as Art. 10 of the Law on Current and Capital Transactions with Foreign Countries and the Decision setting EUR 10,000 as the limit for carrying cash without declaring it, and gives a fine of EUR 550–2,000 for individuals (that figure is from 2016 and may have changed). UK FCDO advice agrees: declare cash or travellers' cheques of EUR 10,000 or more, keep the certified declaration, or the money may be seized when you leave.",
+    "summary": "Declare €10,000 or more in cash, cheques, bearer securities or precious metals on entry and exit.",
     "legal_source": {
       "name": "Obavještenje o operativnom postupanju na graničnim prelazima u vezi sa prenosom sredstava plaćanja — Customs Administration of Montenegro (Uprava carina), 8 May 2025",
       "url": "https://www.gov.me/dokumenta/96ae60dd-9608-426d-ac08-adeb6c656bee"
@@ -13031,6 +13330,7 @@
       "description": "Visitors without permanent residence may bring hunting or sporting firearms and ammunition only to hunt or take part in sports competitions (or cultural events), and the weapon must be entered in your passport (by a Montenegrin embassy/consulate, or by the border police if you hold a licence to carry it in your home country). Declare it to the border police on arrival with your weapon document and proof of purpose (invitation letter, hunt or competition organiser's notice). Cross only at international border crossings, and you may not sell the weapon."
     },
     "notes": "Law on Weapons and Ammunition (Zakon o oružju i municiji), adopted 31 July 2026 and proclaimed 3 August 2026, which replaces the 2015 Law on Weapons: Art. 66 (foreigners without permanent residence may carry weapons across the border for hunting, sports competitions and cultural events, only at international crossings, and may not sell them), Art. 67 (must declare weapons and ammunition to the border police and show the weapon document and proof of purpose), Art. 72 (hunting/sporting weapons must be entered in the travel document; the border police issues an entry approval and cancels it on exit). Art. 75 (EU European Firearms Pass) applies only from Montenegro's EU accession. Other weapon types (self-defence weapons, knives, pepper spray, replicas) were not researched — treat them as not covered.",
+    "summary": "Hunting or sporting firearms only for hunts or competitions, entered in your passport and declared to border police.",
     "legal_source": {
       "name": "Zakon o oružju i municiji (Law on Weapons and Ammunition), Službeni list Crne Gore, 2026",
       "url": "https://www.sluzbenilist.me/propisi/397047/download"
@@ -13057,6 +13357,7 @@
       "description": "Bringing a drone is not restricted by customs rules we found, but flying is regulated. Near Podgorica and Tivat airports, flying inside the restricted areas around each airport needs prior approval from Montenegro's Airspace Management Cell (AMC), applied for at least two working days ahead (by 10:00 UTC) for each flight. Elsewhere inside the Podgorica and Tivat control zones you may fly up to 50 m above ground; 50–120 m needs AMC approval."
     },
     "notes": "Civil Aviation Agency of Montenegro Safety Order 2017/001 rev 03 (based on the Law on Air Transport and the Rulebook on safe use of unmanned aircraft systems, Sl. list CG 24/23 and 117/23). The Agency's unmanned-aircraft page lists this as revision 3, published 1 July 2024. Not verified here: Montenegro's general drone registration, operator/pilot training (an A1/A3 theory course is offered by the Agency) and rules outside the two airport control zones under Rulebook 24/23 — check caa.me before flying.",
+    "summary": "Flying near Podgorica and Tivat airports needs Airspace Management Cell approval; elsewhere in their zones, up to 50 m.",
     "legal_source": {
       "name": "Safety Order 2017/001 rev 03 laying down requirements for use of unmanned aircraft systems within CTR Podgorica and CTR Tivat — Civil Aviation Agency of Montenegro",
       "url": "https://www.caa.me/sites/default/files/so_2017-001_rev_03.pdf"
@@ -13086,6 +13387,7 @@
       "quantity": "1 L spirits + 1 L wine (18+)"
     },
     "notes": "Two official Jamaica Customs Agency (JCA) figures differ. The JCA FAQ (live page, no date shown) says 'All passengers, 18 years and over, are allowed the following without payment of duty, provided they do not exceed the amount indicated, and the items are properly declared: … Alcoholic beverages .. 2 litres'. The official Immigration/Customs C5 card (JCA PDF, 2020 upload, https://jca.gov.jm/wp-content/uploads/2020/07/C5new.x11699.pdf) says passengers and crew may import free of duty '1 litre of Spirits; 1 litre of Wine'. Both add up to 2 litres, but the C5 splits it by type, so the stricter reading (no more than 1 litre of spirits) is shown. Bringing alcohol in bulk is a matter for the Spirits Pool Association (JCA Prohibited & Restricted Items guide). Goods over your allowance must be declared on the C5 and you use the red line.",
+    "summary": "Travellers 18+: 1 litre of spirits and 1 litre of wine duty-free. Declare anything above that.",
     "legal_source": {
       "name": "What are my duty-free allowances and exemptions? — Jamaica Customs Agency FAQ",
       "url": "https://jca.gov.jm/faq/what-are-my-duty-free-allowances-and-exemptions"
@@ -13245,6 +13547,7 @@
       "description": "Do not bring cannabis into Jamaica. Small-amount possession inside Jamaica is a ticketable offence, and visitors can get a permit to buy medical ganja locally, but crossing the border with it is not allowed outside a narrow, regulated route for terminal or serious chronic illness."
     },
     "notes": "Ministry of Justice fact sheet on the Dangerous Drugs (Amendment) Act 2015: possession of 2 ounces or less is no longer an arrestable offence but police may issue a ticket (J$500, payable within 30 days); possession of over 2 ounces remains a criminal offence. Import: 'A person who is suffering from cancer or any other terminal or serious chronic illness may import medicine or a therapeutic product derived from or containing ganja' if a registered medical practitioner certifies the illness and recommends its use, and 'The importation … must comply with regulations which are to be made' — this route is not open to ordinary travellers. Visitors: 'Persons who do not ordinarily reside in Jamaica (for example, tourists …) may apply for a permit to allow them to lawfully purchase and possess up to 2 ounces of ganja at a time, for medical or therapeutic purposes', with evidence of a home-country medical recommendation or a voluntary declaration; 'The permit is issued by Jamaica's Ministry of Health, and a fee is payable' (the fact sheet is undated; the Cannabis Licensing Authority site was not checked). Government of Canada (https://travel.gc.ca/destinations/jamaica, 26 May 2026): 'Do not attempt to enter or depart Jamaica and cross international borders with any amount of cannabis.' GOV.UK: 'It's illegal to smoke marijuana (ganja) in Jamaica' and severe penalties apply to other drug offences including attempting to export narcotics. The C5 card asks you to declare illicit drugs or narcotics. CBD: hemp (under 1% THC) is excluded from the DDA ganja provisions but its import is to be regulated by the Cannabis Licensing Authority — no traveller rule for CBD products was found, so treat CBD as not confirmed allowed.",
+    "summary": "Banned: you can't bring cannabis into Jamaica, even though small amounts are decriminalised locally.",
     "legal_source": {
       "name": "Dangerous Drugs (Amendment) Act 2015 — Fact Sheet Booklet, Ministry of Justice, Government of Jamaica",
       "url": "https://moj.gov.jm/sites/default/files/pdf/Dangerous%20Drugs%20Act%20Fact%20Sheet%20Booklet.pdf"
@@ -13276,6 +13579,7 @@
       "description": "Do not bring meat (raw, cooked or processed) or milk products without an import permit from the Ministry of Agriculture's Veterinary Services Division; customs may destroy them."
     },
     "notes": "JCA Prohibited & Restricted Items guide (March 2025): 'All meat imports, regardless of type or quantity, require an import permit from the Ministry of Agriculture and Fisheries'; the Veterinary Services Division list covers 'Meat (Raw or Cooked)', 'Milk & its by-products', 'Pet & Animal Foods' and 'Processed Meats & Sausages' (contact: (876) 977-2489, vsdpermits@micaf.gov.jm). UK government advice (https://www.gov.uk/foreign-travel-advice/jamaica/entry-requirements): 'It is illegal to bring meat and dairy products into Jamaica. Customs officials may search your baggage and will destroy banned foodstuffs.' Spain's embassy also lists 'productos cárnicos' and honey as prohibited imports. The C5 card requires you to declare meat, food and animal products (question 13a). Shown as prohibited because a visitor without a prior permit cannot lawfully bring these in.",
+    "summary": "Meat and milk products need a Veterinary Services import permit; otherwise customs may destroy them.",
     "legal_source": {
       "name": "Prohibited & Restricted Items guide — Jamaica Customs Agency (March 2025)",
       "url": "https://jca.gov.jm/wp-content/uploads/2025/03/Prohibited-and-Restricted-Items.x68962.pdf"
@@ -13330,6 +13634,7 @@
       "description": "Fresh fruit, vegetables, plants, plant products and ground provisions need an import permit from the Ministry of Agriculture's Plant Quarantine Division; declare them on the C5."
     },
     "notes": "JCA Prohibited & Restricted Items guide (March 2025): 'Importing agricultural items can unknowingly bring along harmful pests and diseases … these items are restricted and require a permit from the Ministry of Agriculture and Fisheries.' Plant Quarantine list: 'Fresh Fruits & Vegetables', 'Plants & Plant products', 'Red Peas (in commercial quantities)', 'Ground Provisions', 'Honey (Prohibited Item)' (contact: Plant Quarantine Division, (876) 977-0637). The C5 card question 13a requires declaring fruits, plants, cut flowers, vegetables, soil, plant material and food. Without a permit, expect such items to be refused or confiscated. The guide says it is not exhaustive and the list may change.",
+    "summary": "Fresh fruit, vegetables and plants need a Plant Quarantine import permit; declare them on the C5 form.",
     "legal_source": {
       "name": "Prohibited & Restricted Items guide — Jamaica Customs Agency (March 2025)",
       "url": "https://jca.gov.jm/wp-content/uploads/2025/03/Prohibited-and-Restricted-Items.x68962.pdf"
@@ -13365,6 +13670,7 @@
       "description": "Do not bring firearms, ammunition or other listed weapons (including toy guns, pepper spray, tasers, swords, bows) without permits obtained in advance from the Trade Board and/or the Ministry of National Security."
     },
     "notes": "JCA Prohibited & Restricted Items guide (March 2025): firearms, explosives and fireworks are controlled by The Trade Board Limited; the Ministry of National Security (Protective Security & Small Arms Branch, protective.security@mns.gov.jm) controls 'Firearm Parts', 'Firearm Holsters', 'Ammunition', 'Bullet Proof Vests', 'Toy Guns', 'Bows & Arrows', 'Pepper Sprays', 'Taser / Stun Gun', 'Tactical Flashlights', 'Night Vision Goggles', 'Swords / Spears', 'Firearm Cleaning Kits', 'Handcuffs' and 'Camouflage Clothing & Materials'. On toy guns: 'importing any toy gun requires a permit from the Ministry of National Security.' Government of Canada (https://travel.gc.ca/destinations/jamaica): 'Entering the country with a firearm or even a single round of ammunition is considered a serious crime.' The C5 card requires declaring 'Arms ammunition, explosives, fireworks, toy guns or other weapons'. Shown as prohibited for ordinary travellers; the permit route exists but must be completed before arrival.",
+    "summary": "Firearms, toy guns, pepper spray, tasers, swords and bows need permits in advance from the Trade Board or Ministry of National Security.",
     "legal_source": {
       "name": "Prohibited & Restricted Items guide — Jamaica Customs Agency (March 2025)",
       "url": "https://jca.gov.jm/wp-content/uploads/2025/03/Prohibited-and-Restricted-Items.x68962.pdf"
@@ -13776,6 +14082,7 @@
       "quantity": "≥ USD 10,000 in or out"
     },
     "notes": "SENAE Resolution SENAE-SENAE-2025-0076-RE, Art. 2: 'El viajero deberá registrar y presentar el Formulario de Registro Aduanero (FRA) cuando la combinación del dinero en efectivo, instrumentos negociables al portador y los valores que representen los metales y piedras preciosas, igualen o superen los USD$10,000.00'. Applies to entry and exit (Art. 3; Art. 84 of the Ley Orgánica de Prevención, Detección y Combate del Delito de Lavado de Activos). Fill in the FRA before customs control and show the QR code or PDF with your passport. Penalties quoted in the resolution from that law: Art. 87 — administrative fine of 30% of the undeclared or falsely declared amount, without prejudice to criminal action; Art. 88 — 50% on reoffending. Leaving Ecuador: Ecuador charges a currency-outflow tax (ISD). SENAE quotes Art. 13.1 of the ISD regulation: foreign currency carried in by non-resident foreigners does not attract ISD on exit if the stay is no more than 90 calendar days and the amount was registered on entry — so register it on the FRA when you arrive. UK FCDO advice says amounts over USD 1,350 taken out are taxable (not checked against the SRI's own page).",
+    "summary": "Declare USD 10,000 or more in cash, bearer instruments, precious metals or stones, entering or leaving.",
     "legal_source": {
       "name": "Resolución Nro. SENAE-SENAE-2025-0076-RE (28 July 2025) — control of taxable goods and cash/bearer instruments/precious metals ≥ USD 10,000 — SENAE",
       "url": "https://www.aduana.gob.ec/wp-content/uploads/2025/09/SENAE-SENAE-2025-0076-RE-1.pdf"
@@ -13832,6 +14139,7 @@
       "quantity": "max 2 of each meter type"
     },
     "notes": "SENAE personal-effects list: 'Aparatos de medición de presión arterial, de temperatura y de glucosa, máximo 2 por cada uno, por pasajero o grupo familiar' and 'Ayudas técnicas para adultos mayores o personas con discapacidad... tales como: sillas de ruedas, muletas, aparatos ortopédicos y similares... en cantidades exclusivas para uso personal.' A 'grupo familiar' is minors plus one parent or guardian. Anything above an allowance, or not on SENAE's personal-effects list, is a 'bien tributable': declare it on the online Formulario de Registro Aduanero (FRA) and pay duties; taxable goods up to USD 2,000 can be cleared in the arrivals hall, above that they must go through a formal import. Goods not otherwise listed that have no volume/quantity restriction still count as personal effects up to USD 500 in total.",
+    "summary": "Duty-free: up to 2 each of blood-pressure monitors, thermometers and glucose meters, plus mobility aids for personal use.",
     "legal_source": {
       "name": "Listado de bienes que puede ingresar al Ecuador sin pago de impuesto (efectos personales del viajero) — SENAE, PDF uploaded May 2026",
       "url": "https://www.aduana.gob.ec/wp-content/uploads/2026/05/LISTADO-EFECTO-DE-VIAJEROS.pdf"
@@ -13886,6 +14194,7 @@
       "quantity": "1 new + 1 used of each"
     },
     "notes": "SENAE personal-effects list: 'También se consideran como efectos personales hasta una unidad nueva y una usada de los siguientes artículos: Teléfono celular. Cámara fotográfica... Computador portátil... Reloj inteligente o smartwatch... Audífonos inalámbricos.' More units are taxable. SENAE's air-travellers page also tells travellers to register a phone's IMEI (not detailed here). Anything above an allowance, or not on SENAE's personal-effects list, is a 'bien tributable': declare it on the online Formulario de Registro Aduanero (FRA) and pay duties; taxable goods up to USD 2,000 can be cleared in the arrivals hall, above that they must go through a formal import. Goods not otherwise listed that have no volume/quantity restriction still count as personal effects up to USD 500 in total.",
+    "summary": "Duty-free: one new and one used phone, camera, laptop, tablet, console and smartwatch each, plus up to 6 memory cards.",
     "legal_source": {
       "name": "Listado de bienes que puede ingresar al Ecuador sin pago de impuesto (efectos personales del viajero) — SENAE, PDF uploaded May 2026",
       "url": "https://www.aduana.gob.ec/wp-content/uploads/2026/05/LISTADO-EFECTO-DE-VIAJEROS.pdf"
@@ -13912,6 +14221,7 @@
       "quantity": "500 ml perfume; 2,500 ml lotions"
     },
     "notes": "SENAE personal-effects list: 'Máximo 500 mililitros de perfume por pasajero o 1.000 mililitros de perfume por grupo familiar, contenidos en frascos nuevos' and 'Máximo 2.500 mililitros en total por pasajero o 5.000 mililitros en total por grupo familiar, de cremas, lociones corporales, splash y similares'. Anything above an allowance, or not on SENAE's personal-effects list, is a 'bien tributable': declare it on the online Formulario de Registro Aduanero (FRA) and pay duties; taxable goods up to USD 2,000 can be cleared in the arrivals hall, above that they must go through a formal import. Goods not otherwise listed that have no volume/quantity restriction still count as personal effects up to USD 500 in total.",
+    "summary": "Duty-free: up to 500 ml of perfume and 2,500 ml of creams and lotions per traveller, in new containers.",
     "legal_source": {
       "name": "Listado de bienes que puede ingresar al Ecuador sin pago de impuesto (efectos personales del viajero) — SENAE, PDF uploaded May 2026",
       "url": "https://www.aduana.gob.ec/wp-content/uploads/2026/05/LISTADO-EFECTO-DE-VIAJEROS.pdf"
@@ -14453,6 +14763,7 @@
       "quantity": "approval + tax guarantee"
     },
     "notes": "Israel Tax Authority tourist customs guide, 'Items which Import is Conditional on the Approval of the Competent Authority': Drone — Ministry of Communications, Ministry of Transportation - Israel Airports Authority (03-5198282, requests@moc.gov.il; 03-9774521, gendela@mot.gov.il). An import approval can be obtained before or after the item arrives, but the item is only released after it is presented. An import licence must be obtained before arrival, and failing to do so is an offence that may bring a fine. 'Taxes and Guarantees' chapter: 'If you have brought with you one of the following items: a new personal computer, a UAV (drone), electric bicycle or similar items, you will be required to deposit a guarantee in the amount of taxes applicable to them - in cash or by credit card.' The guarantee is returned if you take the item out on time, and kept if you don't. Declare in the red channel. Flying rules inside Israel are not covered here.",
+    "summary": "Drones need approval from Israel's communications and transport authorities, and tourists leave a refundable tax guarantee.",
     "legal_source": {
       "name": "Customs Guide for Tourists and Foreign Residents — Israel Tax Authority (gov.il), chapter 'Items which Import is Conditional on the Approval of the Competent Authority' (updated 30.07.2026)",
       "url": "https://www.gov.il/en/pages/guide-tourist-customs?chapterIndex=8"
@@ -14541,6 +14852,7 @@
       "quantity": "US$200; perfume 250 ml"
     },
     "notes": "Israel Tax Authority: the exemption 'is strictly personal to each of the entrants' and allowances can't be combined. 'If the value of an imported item exceeds $200, it is not possible to get an exemption for $200 and pay taxes on the difference. Entrants will be charged taxes on the full value of the item.' Use the red channel if in doubt, or for portable work tools, diving equipment, e-bikes or a new computer. Customs may ask for a guarantee for some items. There is no exemption for items sent by parcel post.",
+    "summary": "Up to US$200 of goods duty-free per traveller aged 2+, including food up to 3 kg. New drones and laptops need a tax guarantee.",
     "legal_source": {
       "name": "Customs Guide for Tourists and Foreign Residents — Israel Tax Authority (gov.il), chapter 'The green channel Passage with Tax-Exempt Items' (updated 30.07.2026)",
       "url": "https://www.gov.il/en/pages/guide-tourist-customs?chapterIndex=3"

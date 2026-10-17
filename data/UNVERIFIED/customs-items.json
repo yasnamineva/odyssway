@@ -1720,5 +1720,121 @@
     "verified_at": "2026-09-19",
     "verified_by": "agent:claude-sonnet-5",
     "status": "needs_verification"
+  },
+  {
+    "slug": "cbd-rs",
+    "names": [
+      "cbd",
+      "cbd oil",
+      "hemp extract"
+    ],
+    "destination": "RS",
+    "category": "cbd_cannabis",
+    "verdict": "depends",
+    "limits": {
+      "description": "Legal hemp cultivation exists in Serbia (fibre, seed and further-propagation use, THC capped at 0.3%, requiring Ministry of Agriculture authorisation), but according to CMS Expert Guides, \"the extraction of CBD oil is not regulated by law\" and Serbia's Commission for Psychoactive Controlled Substances has given an opinion that CBD itself is a psychoactive substance capable of unwanted effects."
+    },
+    "notes": "This is genuinely ambiguous, not a confirmed personal-import rule — sourced to a law firm's country guide (CMS Expert Guides) and a hemp-industry site (Hemppedia), not Serbia's own regulatory text read directly. Given the Commission's stated position, don't assume a CBD product is safe to bring into Serbia just because it's legal where you bought it; treat it with the same caution as cannabis until you've confirmed current status with Serbian authorities. Moved to UNVERIFIED on 2026-10-17: the only sources are a law-firm guide and a hemp-industry site.",
+    "legal_source": {
+      "name": "CMS Expert Guides — Cannabis Law and Legislation in Serbia",
+      "url": "https://cms.law/en/int/expert-guides/cms-expert-guide-to-a-legal-roadmap-to-cannabis/serbia"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "needs_verification"
+  },
+  {
+    "slug": "cannabis-rs",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish"
+    ],
+    "destination": "RS",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Cannabis is classified as a Schedule I narcotic drug under Serbia's Law on Psychoactive Controlled Substances (Zakon o psihoaktivnim kontrolisanim supstancama); unauthorized production, sale and possession are criminalized under Criminal Code Arts. 246 and 246a, including for small personal-use quantities. There is no legal personal-import pathway or medical-use exception for travelers."
+    },
+    "notes": "This row is sourced to a law firm's country guide (CMS Expert Guides), not Serbia's own statute text directly — the Criminal Code articles and the Psychoactive Controlled Substances Law schedules weren't read verbatim in this pass. Reported penalty range for unauthorized possession of larger/dealing quantities is 3-12 years' imprisonment (Art. 246); simple possession of a small personal-use quantity (Art. 246a(1)) can draw a fine or up to 3 years, with a possibility of exemption from punishment in some cases. Do not bring cannabis into Serbia in any form. Moved to UNVERIFIED on 2026-10-17: the cited source is a law-firm guide (CMS Expert Guides); Serbian Customs pages don't mention cannabis.",
+    "legal_source": {
+      "name": "CMS Expert Guides — Cannabis Law and Legislation in Serbia",
+      "url": "https://cms.law/en/int/expert-guides/cms-expert-guide-to-a-legal-roadmap-to-cannabis/serbia"
+    },
+    "verified_at": "2026-09-22",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "needs_verification"
+  },
+  {
+    "slug": "e-cigarettes-sa",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping liquid",
+      "e-liquid"
+    ],
+    "destination": "SA",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "limits": {
+      "description": "Since around August 2020, Saudi Customs has banned individuals from importing e-cigarettes, shisha and their accessories through shipping companies and personal website purchases — goods imported this way are confiscated, a fine is imposed, and a seizure record is registered. Companies licensed by the Saudi Food and Drug Authority (SFDA) may still import these products in commercial quantities."
+    },
+    "notes": "This measure is specifically about shipping/mail-order/online-purchase import channels for individuals — it does not clearly say whether it also restricts what a traveler personally carries in accompanied luggage, and that distinction wasn't confirmed either way in this pass. Don't assume it's safe to bring a personal vape in checked or carry-on baggage just because this rule targets shipping specifically — but also don't assume accompanied baggage is covered by the same ban. Corroborated identically across 5 independent outlets (Saudi Gazette, Zawya, Al Bawaba, Riyadh Xpress, Vaping Post); every direct fetch of the Saudi Gazette article itself returned HTTP 402 (paywalled), so this is strong multi-source corroboration rather than a directly read primary article. Separately, Arab News (directly fetched and quoted) traces the same underlying policy back further: the Ministry of Commerce and Investment banned e-cigarette/vaping sales in September 2015, and \"considers anyone bringing them in from abroad to be smuggling\" — broader phrasing than 'shipping only' — so the individual-import restriction isn't a one-off report, it's a long-standing, consistently-described policy, even though the accompanied-baggage question specifically remains unresolved. Domestic sale/possession has separately been legal since Royal Decree 38621 (2019) — don't confuse 'legal to own in Saudi Arabia' with 'legal to personally import.' Moved to UNVERIFIED on 2026-10-17: the cited source is a newspaper (Saudi Gazette); ZATCA's own announcement wasn't read.",
+    "legal_source": {
+      "name": "Saudi Gazette — 'Customs ban individuals from importing electronic cigarettes' (c. August 2020)",
+      "url": "https://saudigazette.com.sa/article/597279/SAUDI-ARABIA/Customs-ban-individuals-from-importing-electronic-cigarettes"
+    },
+    "verified_at": "2026-09-19",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "needs_verification"
+  },
+  {
+    "slug": "e-cigarettes-cn",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping liquid",
+      "e-liquid"
+    ],
+    "destination": "CN",
+    "category": "e_cigarettes",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "General Administration of Customs Announcement No. 102 of 2022 (effective 1 November 2022) allows passengers to duty-free carry 2 e-cigarette devices plus 6 cartridges/liquid products totaling 12ml or less. Travelers on Hong Kong/Macao routes get a lower allowance (1 device, 3 cartridges, up to 6ml); frequent cross-border travelers get less still (1 device, 1 cartridge, up to 2ml, once per day). Travelers under 16 may not carry e-cigarettes at all."
+    },
+    "notes": "The announcement number and exact figures are corroborated identically across multiple independent Chinese sources (news outlets, tax-law reference sites, industry sites) — a direct fetch of customs.gov.cn itself still fails on a self-signed certificate, the same block this project has hit on Chinese government domains throughout, so this is strong search-corroboration rather than a directly read government page. Moved to UNVERIFIED on 2026-10-17: the figures were corroborated by news and reference sites; customs.gov.cn returns 412 to our fetches.",
+    "legal_source": {
+      "name": "General Administration of Customs of China, Announcement No. 102 of 2022 (海关总署公告2022年第102号) — E-Cigarette Taxation",
+      "url": "http://www.customs.gov.cn/customs/302249/302266/302267/4666399/index.html"
+    },
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "needs_verification"
+  },
+  {
+    "slug": "drones-br",
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas"
+    ],
+    "destination": "BR",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Drones over 250g must be registered with Brazil's civil aviation authority (ANAC) through the SISANT system, which requires a Brazilian CPF or CNPJ taxpayer number — the real obstacle for tourists, who would need to obtain a CPF from a Brazilian consulate beforehand or have a Brazilian resident register the drone on their behalf. Drones of 250g or under don't need registration for recreational use, but must still follow altitude, visual-line-of-sight and people-distance rules."
+    },
+    "notes": "A direct fetch of ANAC's registration page was blocked by a CAPTCHA in this pass, so this is drawn from consistent secondary reporting rather than the primary page's own text — treat the CPF/CNPJ barrier as the well-corroborated headline fact, but re-verify against ANAC directly before treating exact figures as final. Moved to UNVERIFIED on 2026-10-17: the facts came from secondary reporting; ANAC's page is behind a CAPTCHA.",
+    "legal_source": {
+      "name": "ANAC (Agência Nacional de Aviação Civil) — Cadastro de Drone (SISANT)",
+      "url": "https://www.gov.br/anac/pt-br/assuntos/drones/cadastro-de-drone"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "needs_verification"
   }
 ]

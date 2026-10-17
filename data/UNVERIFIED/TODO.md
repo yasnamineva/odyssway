@@ -3455,3 +3455,19 @@ Open:
   UNVERIFIED.
 - **New Zealand** schedules: legislation.govt.nz returns 403 here.
 - **Mexico, Saudi Arabia, China, Serbia, Brazil** national schedules not read.
+
+## Non-medication accuracy sweep (2026-10-17)
+
+- **Fixed from the primary text:** `e-cigarettes-tr` now cites Ministry of Trade Circular
+  2020/7 (as amended by 2024/18): 18+, one device in use plus 200 heated-tobacco units,
+  or 30 ml, or **3** disposables (the secondary "10 disposables" figure was wrong); excess
+  held until departure; air transit unrestricted (new `transit`: exempt_airside).
+- **Trimmed to what the official page says:** `drones-tr` (500 g threshold and 20-day
+  foreign permit lead time removed), `drones-id` (secondary Bali directive removed).
+- **Moved to UNVERIFIED** (core facts from non-official sources): `cbd-rs` and
+  `cannabis-rs` (law-firm guide), `e-cigarettes-sa` (newspaper), `e-cigarettes-cn`
+  (customs.gov.cn returns 412), `drones-br` (ANAC behind CAPTCHA). Their now-empty /bring
+  pages 307 to the destination page.
+- Rows whose notes mention secondary figures as explicitly unconfirmed were left as is
+  for now (cash-sg, meat-dairy-kr, drones-my, mv rows, etc.); a stricter pass could remove
+  the numbers entirely.

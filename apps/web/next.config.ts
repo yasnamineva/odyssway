@@ -61,9 +61,13 @@ const withdrawnMedicationPairs = [
   permanent: false,
 }));
 
-/** Withdrawn while its only row awaits primary-source verification (data/UNVERIFIED/TODO.md). */
+/** Withdrawn while its only row awaits primary-source verification (see the research TODO). */
 const withdrawnBringPages = [
   { source: "/bring/medication/vietnam", destination: "/destinations/vietnam", permanent: false },
+  { source: "/bring/cannabis/serbia", destination: "/destinations/serbia", permanent: false },
+  { source: "/bring/e-cigarettes/saudi-arabia", destination: "/destinations/saudi-arabia", permanent: false },
+  { source: "/bring/e-cigarettes/china", destination: "/destinations/china", permanent: false },
+  { source: "/bring/drones/brazil", destination: "/destinations/brazil", permanent: false },
 ];
 
 const retiredBlogRedirects = (
