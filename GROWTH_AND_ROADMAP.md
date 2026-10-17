@@ -516,3 +516,7 @@ gate was passed or missed, and why.
   "widely reported" figures (even when labelled unconfirmed), e.g. a Singapore cash
   threshold, Korean and Taiwanese fine amounts, Malaysian drone fees, Maldives press
   reports. Rows now state only what an official page says.
+- **2026-10-17. Blog: Vyvanse and tramadol.** `/blog/vyvanse-tramadol-controlled-abroad`
+  explains why their rules vary so much (neither is on the UN's control lists) and
+  compares the US, UK, Canada, Ireland, Japan, Singapore, UAE and Qatar, each from a
+  verified row.

@@ -32,6 +32,24 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "vyvanse-tramadol-controlled-abroad",
+    title: "Vyvanse and tramadol: why the rules change so much from country to country",
+    seoTitle: "Can You Travel With Vyvanse or Tramadol? Rules by Country",
+    seoDescription:
+      "Unlike Adderall, Vyvanse and tramadol aren't on the UN's control lists, so each country decides. US, UK, Canada, Japan, Singapore, UAE and Qatar compared.",
+    dek: "Unlike Adderall, neither is on the UN's international control lists, so each country sets its own rule, from 'not a narcotic' to 'permit only'.",
+    date: "2026-10-17",
+    category: "Medicine",
+    legalSource: {
+      name: "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+      url: "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf",
+    },
+    verifiedAt: "2026-10-17",
+    changelogDataset: "customs-items",
+    destinationCodes: ["US", "GB", "CA", "IE", "JP", "SG", "AE", "QA"],
+    photo: "blog-vyvanse",
+  },
+  {
     slug: "medication-transit-stopover",
     title: "Changing planes with medication: which stopovers count",
     seoTitle: "Transiting With Medication: Singapore, Dubai, Hong Kong, Seoul",
