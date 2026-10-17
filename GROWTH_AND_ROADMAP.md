@@ -512,3 +512,7 @@ gate was passed or missed, and why.
 - **2026-10-17. Step 1.4, batch 6.** Chewing gum is banned in Singapore (fines up to
   S$100,000, from the regulations themselves); vapes are allowed in the UAE for personal
   use at the inspector's discretion (Dubai guidance).
+- **2026-10-17. Strict cleanup.** Removed 17 claims that came from press, blogs or
+  "widely reported" figures (even when labelled unconfirmed), e.g. a Singapore cash
+  threshold, Korean and Taiwanese fine amounts, Malaysian drone fees, Maldives press
+  reports. Rows now state only what an official page says.
