@@ -3500,3 +3500,27 @@ SSO: import prohibited except registered therapeutic/dental gum; fines up to S$1
 for personal use at the inspector's discretion; Dubai only).
 Not published: Cyprus e-cigarettes (customs page only bans cross-border distance sales,
 not a traveller rule).
+
+## Melatonin, Japan (2026-10-17)
+
+Published `melatonin-jp`: melatonin is in Attachment 1 (ingredients used exclusively as
+medicines) of MHLW notice 医薬監麻発0805第1号 (5 Aug 2026); the 2023 working group kept
+it there (prescription-medicine use in Japan). Japan Customs Answer 1806 gives the
+personal limits (2 months; 1 month for prescription drugs). Which limit applies to a
+foreign melatonin supplement isn't stated, so the row presents 1 month as our cautious
+reading. Also removed stale UNVERIFIED drafts of peptides-au and growth-hormone-au
+(published from other sources on 2026-10-15).
+Still open: Singapore melatonin.
+
+## Source watcher report 2026-10-12 (reviewed 2026-10-17)
+
+The weekly watcher's report (branch `source-watch/report`) had 0 content changes (first
+snapshots) and 116 sources it couldn't read from the CI runner (mostly bot blocks). 404s
+acted on:
+- **u.ae drugs-and-controlled-medicines** page (medication-ae) is gone: the row now cites
+  EDE for controlled medicines (optional permit, 3 months) and says the ordinary-medicine
+  rule isn't confirmed. Its old notes' unsourced "history of detaining" claim was removed,
+  as was the outdated "requires advance MOHAP authorization" (EDE says optional).
+- **Rwanda FDA personal-effects guideline** PDF 404 (review date 14 Mar 2026 passed):
+  three RW rows now say so. Find the revised guideline.
+- ANAC drone page 404: drones-br already in UNVERIFIED.

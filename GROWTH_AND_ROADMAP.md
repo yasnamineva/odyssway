@@ -520,3 +520,8 @@ gate was passed or missed, and why.
   explains why their rules vary so much (neither is on the UN's control lists) and
   compares the US, UK, Canada, Ireland, Japan, Singapore, UAE and Qatar, each from a
   verified row.
+- **2026-10-17. Melatonin in Japan; source-watch follow-up.** Japan: melatonin is on the
+  health ministry's medicine-only list, so a supplement counts as a medicine (bring a
+  small supply). Reviewed the watcher's 12 October report: rewrote the UAE medication
+  row (its source page is gone, and it contradicted the verified controlled-medicine
+  row) and flagged Rwanda's offline guideline on three rows.

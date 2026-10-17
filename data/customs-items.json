@@ -2193,7 +2193,7 @@
       "description": "Personal-use importation of prescription-only medicines is allowed for up to a 90-day supply (at the maximum manufacturer/healthcare-provider-recommended dose), accompanied by a valid prescription or a written declaration/letter from an authorized practitioner",
       "quantity": "90-day supply"
     },
-    "notes": "Sourced from Rwanda FDA's 2023 Guidelines on personal-effects imports (Doc. No. FDISM/FDIEC/GDL/003), which explicitly define 'Visitor' and apply to travelers, not just residents. Suspended, recalled, or banned medicines are not allowed regardless of prescription. See the separate 'controlled substances' row for narcotic/psychotropic medicines, which carry a stricter 30-day limit.",
+    "notes": "Sourced from Rwanda FDA's 2023 Guidelines on personal-effects imports (Doc. No. FDISM/FDIEC/GDL/003), which explicitly define 'Visitor' and apply to travelers, not just residents. Suspended, recalled, or banned medicines are not allowed regardless of prescription. See the separate 'controlled substances' row for narcotic/psychotropic medicines, which carry a stricter 30-day limit. The cited Rwanda FDA guideline was due for review on 14 March 2026, and the file was offline when we re-checked on 17 October 2026, so confirm with Rwanda FDA before you travel.",
     "summary": "Up to a 90-day supply of prescription medicine, with a prescription or a letter from an authorized practitioner.",
     "legal_source": {
       "name": "Rwanda FDA — Guidelines on Control of Importation and Exportation of Regulated Products Declared as Personal Effects (Doc. No. FDISM/FDIEC/GDL/003, effective 15/03/2023)",
@@ -2219,7 +2219,7 @@
       "description": "Personal-use importation of controlled substances (narcotic drugs, psychotropic substances, or precursors under Law n° 03/2012) is allowed for up to a 30-day supply, for medical purposes only",
       "quantity": "30-day supply"
     },
-    "notes": "Must be accompanied by a prescription or authorization letter from a registered practitioner in the traveler's country of origin. Online purchase or courier importation of controlled substances is not allowed under any circumstances (Rwanda FDA Guidelines, s. 3.2.4-3.2.5). Verdict is 'depends' rather than 'allowed_with_limits' because the underlying substance must itself be legal/prescribable in Rwanda — the guideline does not name which specific drugs qualify.",
+    "notes": "Must be accompanied by a prescription or authorization letter from a registered practitioner in the traveler's country of origin. Online purchase or courier importation of controlled substances is not allowed under any circumstances (Rwanda FDA Guidelines, s. 3.2.4-3.2.5). Verdict is 'depends' rather than 'allowed_with_limits' because the underlying substance must itself be legal/prescribable in Rwanda — the guideline does not name which specific drugs qualify. The cited Rwanda FDA guideline was due for review on 14 March 2026, and the file was offline when we re-checked on 17 October 2026, so confirm with Rwanda FDA before you travel.",
     "legal_source": {
       "name": "Rwanda FDA — Guidelines on Control of Importation and Exportation of Regulated Products Declared as Personal Effects (Doc. No. FDISM/FDIEC/GDL/003, effective 15/03/2023)",
       "url": "https://rwandafda.gov.rw/wp-content/uploads/2023/03/Guidelines%20for%20import%20and%20export%20of%20regulated%20products%20declared%20as%20personal%20effects.pdf"
@@ -3677,17 +3677,29 @@
     "category": "medication",
     "verdict": "depends",
     "limits": {
-      "description": "Prescribed medicines for personal use may be brought in without a permit in what the government portal describes only as \"normal quantities\" (no numeric day-supply figure is stated on the primary page reached in this pass). Narcotic, psychotropic, and other controlled medicines classed A or B are not freely importable — they require advance authorization from the Ministry of Health and Prevention (MOHAP) before travel."
+      "description": "For narcotic and psychotropic (controlled) medicines, the Emirates Drug Establishment says travellers may bring up to 3 months' supply with a prescription (issued within the last 3 months) and a medical report; applying for its permit in advance is optional (see the controlled medication entry). For ordinary prescription and over-the-counter medicines, the UAE government page we used to cite is no longer online, and we haven't confirmed the current rule."
     },
-    "notes": "The UAE has a well-documented history of detaining and prosecuting travelers over common prescription and over-the-counter medications (including some antidepressants, ADHD medications, and codeine-containing painkillers) that are controlled substances under UAE law even though sold over the counter elsewhere. This pass could not independently verify MOHAP's specific named-medicines list or the often-cited \"3-month supply\" quantity figure against mohap.gov.ae itself — every fetch attempt (browser fetch, direct HTTP, and a text-extraction proxy) failed against that domain. Do not assume a common medication is fine to bring without checking the MOHAP permit service first — see data/UNVERIFIED/TODO.md.",
-    "summary": "Prescribed medicine in normal quantities needs no permit; narcotic, psychotropic and other controlled medicines need advance approval.",
+    "notes": "Carry your prescription for every medicine you bring, keep medicines in their original packaging, and bring only what you need for your stay. Dubai's customs guidance lists medicines among controlled items and bans narcotics of all kinds.",
+    "summary": "Controlled medicines: up to 3 months with a prescription and medical report (permit optional). The rule for ordinary medicines isn't confirmed.",
     "legal_source": {
-      "name": "U.ae (UAE Government Portal) — Drugs and Controlled Medicines",
-      "url": "https://u.ae/en/information-and-services/health-and-fitness/drugs-and-controlled-medicines"
+      "name": "Emirates Drug Establishment — Issue of permit to import medicines for personal use",
+      "url": "https://www.ede.gov.ae/en/w/issue-of-permit-to-import-medicines-for-personal-use"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-17",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Controlled medicines: optional permit; up to 3 months with prescription (≤3 months old) and medical report",
+        "name": "Emirates Drug Establishment — Issue of permit to import medicines for personal use",
+        "url": "https://www.ede.gov.ae/en/w/issue-of-permit-to-import-medicines-for-personal-use"
+      },
+      {
+        "claim": "Medicines listed as controlled items; narcotics prohibited",
+        "name": "Government of Dubai (dubai.ae) — Customs guidelines for travellers",
+        "url": "https://www.dubai.ae/visit/arriving-to-dubai/customs-guidelines-for-travelers"
+      }
+    ]
   },
   {
     "slug": "cannabis-ae",
@@ -5319,7 +5331,7 @@
       "description": "Insulin, GLP-1 injectable medicines and their delivery devices are covered by Rwanda FDA's personal-effects rule for 'pharmaceutical products and medical devices': the imported quantity must not exceed a 90-day supply (or a single course of treatment) at the maximum manufacturer/healthcare-provider-recommended dose, and import/export should be accompanied by a medical prescription from an authorized practitioner where applicable. The guidelines' definition of 'medical device' ('any instrument, machine, appliance, or material intended by the manufacturer to be used alone or in combination for the purpose of diagnosis, testing, vaccination, cure, surgery or for human or animal health protection') is broad enough to cover pen injectors, needles and syringes used for self-administered injections.",
       "quantity": "90-day supply"
     },
-    "notes": "Sourced directly from the same Rwanda FDA Guidelines (FDISM/FDIEC/GDL/003) already used for Rwanda's general prescription-medication and controlled-substances entries — confirmed by parsing the PDF text directly rather than a summarized fetch. The document does not use the words 'insulin,' 'semaglutide,' 'GLP-1' or 'injectable' anywhere — it addresses these products only through the general 'pharmaceutical product' and 'medical device' definitions and the 90-day personal-effects cap — so no insulin/GLP-1-specific guidance (e.g. a distinct sharps or needle-count rule) exists on this primary source. Products 'that require direct oversight or administration by a trained operator' additionally require the importer to provide the contact details of the Rwandan health facility/provider who will administer them — self-injected insulin/GLP-1 pens would not normally fall in that category, but this was not explicitly confirmed for these specific products.",
+    "notes": "Sourced directly from the same Rwanda FDA Guidelines (FDISM/FDIEC/GDL/003) already used for Rwanda's general prescription-medication and controlled-substances entries — confirmed by parsing the PDF text directly rather than a summarized fetch. The document does not use the words 'insulin,' 'semaglutide,' 'GLP-1' or 'injectable' anywhere — it addresses these products only through the general 'pharmaceutical product' and 'medical device' definitions and the 90-day personal-effects cap — so no insulin/GLP-1-specific guidance (e.g. a distinct sharps or needle-count rule) exists on this primary source. Products 'that require direct oversight or administration by a trained operator' additionally require the importer to provide the contact details of the Rwandan health facility/provider who will administer them — self-injected insulin/GLP-1 pens would not normally fall in that category, but this was not explicitly confirmed for these specific products. The cited Rwanda FDA guideline was due for review on 14 March 2026, and the file was offline when we re-checked on 17 October 2026, so confirm with Rwanda FDA before you travel.",
     "summary": "Insulin and GLP-1 pens: up to a 90-day supply or one course of treatment, with a prescription where applicable.",
     "legal_source": {
       "name": "Rwanda FDA — Guidelines on Control of Importation and Exportation of Regulated Products Declared as Personal Effects (Doc. No. FDISM/FDIEC/GDL/003, effective 15/03/2023)",
@@ -7438,6 +7450,45 @@
     },
     "verified_at": "2026-09-19",
     "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
+    "slug": "melatonin-jp",
+    "names": [
+      "melatonin"
+    ],
+    "destination": "JP",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "In Japan, melatonin is on the health ministry's list of ingredients used only in medicines, so a melatonin supplement counts as a medicine at the border. Japan Customs lets you bring medicines for your own use without an import certificate (Yakkan Shoumei) up to 2 months' supply, or 1 month for prescription drugs. The ministry describes melatonin as a prescription medicine in Japan, so 1 month is the cautious reading (ours). Bringing more needs a Yakkan Shoumei in advance.",
+      "quantity": "Up to 1 month's supply (cautious reading) without a Yakkan Shoumei"
+    },
+    "notes": "The ministry kept melatonin on its medicine-only list in 2023, citing its use as a prescription medicine in Japan and reported harm from supplements abroad.",
+    "summary": "Melatonin is a medicine in Japan. Bring a small personal supply (1 month is the cautious reading); more needs a Yakkan Shoumei.",
+    "legal_source": {
+      "name": "Ministry of Health, Labour and Welfare — Notice 医薬監麻発0805第1号 (5 August 2026), Attachment 1: list of ingredients used exclusively as medicines (melatonin)",
+      "url": "https://www.mhlw.go.jp/content/001734204.pdf"
+    },
+    "_sources": [
+      {
+        "claim": "Melatonin listed in Attachment 1 (ingredients used exclusively as medicines), current notice 5 Aug 2026",
+        "name": "Ministry of Health, Labour and Welfare — Notice 医薬監麻発0805第1号 (5 August 2026), Attachment 1: list of ingredients used exclusively as medicines (melatonin)",
+        "url": "https://www.mhlw.go.jp/content/001734204.pdf"
+      },
+      {
+        "claim": "Melatonin kept on the medicine-only list; used as a prescription medicine in Japan; reported harm from supplements abroad",
+        "name": "Ministry of Health, Labour and Welfare — Working group on pharmaceutical ingredients, summary of 26 June 2023 (melatonin kept on the medicine-only list)",
+        "url": "https://www.mhlw.go.jp/stf/newpage_34441.html"
+      },
+      {
+        "claim": "Personal-import limits: 2 months' supply, 1 month for prescription drugs; above that a Yakkan Shoumei",
+        "name": "Japan Customs — Customs Answer 1806: personal import of medicines and cosmetics",
+        "url": "https://www.customs.go.jp/english/c-answer_e/imtsukan/1806_e.htm"
+      }
+    ],
+    "verified_at": "2026-10-17",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {

@@ -1654,51 +1654,6 @@
     "status": "needs_verification"
   },
   {
-    "slug": "peptides-au",
-    "names": [
-      "peptides",
-      "peptide",
-      "research peptides",
-      "bpc-157",
-      "bpc 157",
-      "tb-500",
-      "cjc-1295",
-      "ghk-cu",
-      "retatrutide"
-    ],
-    "destination": "AU",
-    "category": "medication",
-    "verdict": "depends",
-    "notes": "NEEDS VERIFICATION (2026-10-13): tga.gov.au and odc.gov.au timed out from this environment (WebFetch and curl, HTTP/2 and HTTP/1.1). Search snippets indicate: BPC-157 added to Schedule 4 of the Poisons Standard from 1 June 2024 (TGA notice of final decisions, Nov 2023 meeting); TGA safety alert 'TGA warning on the risks of importing unapproved peptide products' (dated 2026-05-07) says peptides may come in under the Personal Importation Scheme only if clearly labelled with ingredient, strength and dose, otherwise ABF seizes them. Not read directly — do not publish until the TGA pages are read.",
-    "legal_source": {
-      "name": "TGA — TGA warning on the risks of importing unapproved peptide products",
-      "url": "https://www.tga.gov.au/safety/safety-monitoring-and-information/safety-alerts/tga-warning-risks-importing-unapproved-peptide-products"
-    },
-    "verified_at": null,
-    "verified_by": null,
-    "status": "needs_verification"
-  },
-  {
-    "slug": "growth-hormone-au",
-    "names": [
-      "growth hormone",
-      "human growth hormone",
-      "hgh",
-      "somatropin"
-    ],
-    "destination": "AU",
-    "category": "medication",
-    "verdict": "depends",
-    "notes": "NEEDS VERIFICATION (2026-10-13): search snippets of ODC 'Importing anabolic and androgenic substances into Australia' list HGH, FSH, IGF, gonadotropin and somatropin as needing an import permit per shipment (Customs (Prohibited Imports) Regulations 1956, Schedule 8 / reg 5H). Unresolved: whether the traveller's exemption covers growth hormone carried in person with a prescription, or a permit is still required. legislation.gov.au F1996B03651 only returned its table of contents (schedule body is loaded client-side).",
-    "legal_source": {
-      "name": "Office of Drug Control — Importing anabolic and androgenic substances into Australia",
-      "url": "https://www.odc.gov.au/anabolic-androgenic-hormones-and-other-controlled-substances/importing-anabolic-and-androgenic-substances-australia"
-    },
-    "verified_at": null,
-    "verified_by": null,
-    "status": "needs_verification"
-  },
-  {
     "slug": "controlled-medication-vn",
     "names": [
       "controlled substance",
