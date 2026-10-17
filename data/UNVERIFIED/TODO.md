@@ -3491,3 +3491,12 @@ Open:
   article is JS-only), medication-au (TGA unreachable), medication-ae (u.ae blocked),
   prescription-medication-eg (no readable text), prescription-medication-rw and
   controlled-substances-rw (the PDF URL redirects automated requests to the homepage).
+
+## Step 1.4 batch 6 (2026-10-17)
+
+Published `chewing-gum-sg` (Regulation of Imports and Exports (Chewing Gum) Regulations,
+SSO: import prohibited except registered therapeutic/dental gum; fines up to S$100,000 or
+2 years) and `e-cigarettes-ae` (dubai.ae customs guidelines: e-smoking devices permitted
+for personal use at the inspector's discretion; Dubai only).
+Not published: Cyprus e-cigarettes (customs page only bans cross-border distance sales,
+not a traveller rule).

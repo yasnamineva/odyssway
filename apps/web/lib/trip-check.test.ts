@@ -136,6 +136,12 @@ describe("resolveTripCheck", () => {
     expect(resolveItem("SG", "modafinil")?.slug).toBe("controlled-medication-sg");
   });
 
+  it("answers chewing gum in Singapore and vapes in the UAE", () => {
+    expect(resolveItem("SG", "gum")?.slug).toBe("chewing-gum-sg");
+    expect(resolveItem("SG", "nicotine gum")?.slug).toBe("medicated-gum-sg");
+    expect(resolveItem("AE", "vape")?.slug).toBe("e-cigarettes-ae");
+  });
+
   it("answers pseudoephedrine in New Zealand and nicotine gum in Singapore", () => {
     expect(resolveItem("NZ", "pseudoephedrine")?.slug).toBe("pseudoephedrine-nz");
     expect(resolveItem("SG", "nicotine gum")?.verdict).toBe("prohibited");

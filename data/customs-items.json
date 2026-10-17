@@ -4858,6 +4858,31 @@
     }
   },
   {
+    "slug": "e-cigarettes-ae",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping device",
+      "e-liquid",
+      "electronic cigarette"
+    ],
+    "destination": "AE",
+    "category": "e_cigarettes",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "E-smoking devices are permitted for personal use, at the customs inspector's discretion, according to Dubai's customs guidance for travellers. No quantity limit is stated."
+    },
+    "notes": "This is Dubai's guidance; we haven't checked other emirates' ports separately. Bring only what's clearly for your own use. The duty-free tobacco allowance is separate: up to 200 cigarettes, 50 cigars or 500 g of tobacco.",
+    "summary": "Allowed for personal use at the customs inspector's discretion (Dubai guidance); no quantity limit is stated.",
+    "legal_source": {
+      "name": "Government of Dubai (dubai.ae) — Customs guidelines for travellers (rules set by Dubai Customs; last modified 2026)",
+      "url": "https://www.dubai.ae/visit/arriving-to-dubai/customs-guidelines-for-travelers"
+    },
+    "verified_at": "2026-10-17",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "medication-br",
     "names": [
       "medication",
@@ -15331,12 +15356,35 @@
     "limits": {
       "description": "Don't bring it. Singapore's Health Sciences Authority doesn't allow personal imports of medications in chewing gum form under any circumstances. That includes nicotine gum used to quit smoking."
     },
-    "notes": "This entry covers medicated gum only. Ordinary chewing gum has separate import rules, and other forms of nicotine replacement such as patches have their own rules; we haven't verified either yet.",
+    "notes": "This entry covers medicated gum under HSA's personal-medication rules. Ordinary chewing gum is banned separately (see chewing gum). Other forms of nicotine replacement, such as patches, have their own rules that we haven't verified yet.",
     "legal_source": {
       "name": "Health Sciences Authority — Travelling with medications to Singapore (last updated 15 June 2026)",
       "url": "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-medications/"
     },
     "verified_at": "2026-10-16",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "chewing-gum-sg",
+    "names": [
+      "chewing gum",
+      "gum",
+      "bubble gum"
+    ],
+    "destination": "SG",
+    "category": "other",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Don't bring it. Singapore prohibits importing any chewing gum. The only exceptions are gum registered under the Health Products Act as a therapeutic product (other than a general-sale medicine) or as an oral dental gum meeting set composition rules. There's no allowance for travellers."
+    },
+    "notes": "Breaking the rules can mean a fine of up to S$100,000 or up to 2 years in prison on a first conviction, and up to S$200,000 or 3 years for a repeat offence. The only other permits are for commercial transit to Malaysia, transhipment and registered manufacturers' research. Medicated gum, such as nicotine gum, also can't be brought in under HSA's personal-medication rules.",
+    "summary": "Banned: you can't bring chewing gum into Singapore, apart from registered therapeutic or dental gums. Fines up to S$100,000.",
+    "legal_source": {
+      "name": "Regulation of Imports and Exports (Chewing Gum) Regulations, regs 3, 3A, 4 and 7 (Singapore Statutes Online, current version)",
+      "url": "https://sso.agc.gov.sg/SL/272A-RG4"
+    },
+    "verified_at": "2026-10-17",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   }

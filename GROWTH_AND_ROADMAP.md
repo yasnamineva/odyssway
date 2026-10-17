@@ -509,3 +509,6 @@ gate was passed or missed, and why.
   August were re-read against their sources: eight still match (re-dated), and three
   had wording the source doesn't support (UK "14 days", Mexico "treatment course",
   India "must" vs "may"), now corrected.
+- **2026-10-17. Step 1.4, batch 6.** Chewing gum is banned in Singapore (fines up to
+  S$100,000, from the regulations themselves); vapes are allowed in the UAE for personal
+  use at the inspector's discretion (Dubai guidance).
