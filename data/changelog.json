@@ -1,5 +1,29 @@
 [
   {
+    "commit": "6413b8adc7f65b800482b364b4055f2f1fb626aa",
+    "date": "2026-10-18",
+    "dataset": "customs-items",
+    "summary": "Re-check September medication rows against their sources",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
+      "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
+    }
+  },
+  {
+    "commit": "ef9992ea4da85c5b952709b309d4031eb11693bb",
+    "date": "2026-10-17",
+    "dataset": "customs-items",
+    "summary": "Melatonin in Japan; act on the source watcher's 2026-10-12 report",
+    "verified_at": "2026-10-17",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Taking controlled drugs into the UK",
+      "url": "https://www.gov.uk/travelling-controlled-drugs"
+    }
+  },
+  {
     "commit": "3f532d2cc9a5ad27b543b61536160ea9bdedbfc1",
     "date": "2026-10-17",
     "dataset": "customs-items",
