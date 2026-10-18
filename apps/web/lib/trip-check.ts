@@ -67,8 +67,13 @@ export interface TripCheckResult {
 }
 
 /** SBC Art. 6(1) entry conditions, already this project's foundational legal basis (see engine README / 90-180-rule content). */
+/** Passport line: Schengen Borders Code Art. 6(1)(a), as restated on Your Europe, "Travel
+ * documents for non-EU nationals" (checked 2026-10-18). */
+const SCHENGEN_PASSPORT_LINE =
+  "A passport valid for at least 3 months after the date you intend to leave, and issued within the last 10 years";
+const SCHENGEN_PASSPORT_VALIDITY: PassportValidityRule = { kind: "min_period", amount: 3, unit: "months", from: "departure" };
 const SCHENGEN_DOCUMENTS = [
-  "A valid travel document (passport) recognized for crossing the border",
+  SCHENGEN_PASSPORT_LINE,
   "A visa, if your nationality requires one for a Schengen short stay",
   "Proof of the purpose and conditions of your stay (e.g. accommodation, itinerary)",
   "Sufficient funds for your stay and return journey",
@@ -171,6 +176,8 @@ function resolveEntry(
       basis: rule.schengenVisaRequired ? "visa_required" : "visa_free",
       stayPolicy: { kind: "rolling_window", windowDays: WINDOW_DAYS, maxDays: MAX_DAYS_IN_WINDOW },
       documentsNeeded: SCHENGEN_DOCUMENTS,
+      passportLine: SCHENGEN_PASSPORT_LINE,
+      passportValidity: SCHENGEN_PASSPORT_VALIDITY,
       notes: rule.notes,
       legalSource: SCHENGEN_LEGAL_SOURCE,
       verifiedAt: rule.verified_at ?? undefined,
@@ -218,7 +225,7 @@ function resolveEntry(
     basis,
     stayPolicy: row.stayPolicy,
     documentsNeeded: row.documentsNeeded,
-    passportLine: row.documentsNeeded.find((d) => /passport|travel document/i.test(d) && /valid/i.test(d)),
+    passportLine: row.documentsNeeded.find((d) => /passport|travel document/i.test(d) && /valid|expiry/i.test(d)),
     passportValidity: row.passportValidity,
     notes: row.notes,
     legalSource: row.legal_source,

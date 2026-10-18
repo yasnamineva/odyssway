@@ -241,6 +241,12 @@ describe("resolveTripCheck — passport validity (§1.6)", () => {
     expect(result.passportValidity).toEqual({ kind: "min_period", amount: 6, unit: "months", from: "arrival" });
   });
 
+  it("applies the Schengen Borders Code rule: 3 months after you leave", () => {
+    const result = resolveTripCheck("US", SCHENGEN_DESTINATION, []);
+    expect(result.passportLine).toMatch(/3 months after the date you intend to leave/);
+    expect(result.passportValidity).toEqual({ kind: "min_period", amount: 3, unit: "months", from: "departure" });
+  });
+
   it("has no rule when the wording doesn't say which date the period counts from", () => {
     const result = resolveTripCheck("US", "AE", []);
     expect(result.passportLine).toMatch(/at least 6 months/);

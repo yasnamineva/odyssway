@@ -570,3 +570,8 @@ gate was passed or missed, and why.
   `checkPassportValidity`, calendar-month arithmetic with end-of-month clamping, 14 tests.
   The validator fails if a structured rule drifts from its row's wording. Dates never
   leave the browser.
+- **2026-10-18. Passport checker: Schengen and six more rows.** Schengen results now state
+  the Borders Code rule (passport valid 3 months after you leave, issued within 10 years;
+  confirmed on Your Europe today) and check it. The extractor also recognises "after the
+  date you plan to leave" and "expiry date … after the planned departure" (New Zealand,
+  Albania): 374 rows now carry a structured rule.

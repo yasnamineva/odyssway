@@ -157,7 +157,7 @@ function checkPassportValidityMatchesText(): void {
   for (const r of rows) {
     const pv = r.passportValidity;
     if (!pv) continue;
-    const line = r.documentsNeeded.find((d) => /passport|travel document/i.test(d) && /valid/i.test(d)) ?? "";
+    const line = r.documentsNeeded.find((d) => /passport|travel document/i.test(d) && /valid|expiry/i.test(d)) ?? "";
     const where = `${rel(file)}: ${r.nationality}→${r.destination} passportValidity`;
     if (pv.kind === "whole_stay") {
       if (!/\b(stay|visit)\b/i.test(line)) errors.push(`${where} says whole_stay but the passport line doesn't: "${line}"`);
@@ -165,7 +165,7 @@ function checkPassportValidityMatchesText(): void {
     }
     const amount = String(pv.amount);
     const hasAmount = new RegExp(`\\b(${amount}|${words[pv.amount ?? 0] ?? amount})[ -]${pv.unit === "days" ? "day" : "month"}`, "i").test(line);
-    const anchor = pv.from === "arrival" ? /\b(arrival|entry)\b/i : /\b(departure|stay)\b/i;
+    const anchor = pv.from === "arrival" ? /\b(arrival|entry)\b/i : /\b(departure|stay|leave)\b/i;
     if (!hasAmount || !anchor.test(line)) errors.push(`${where} doesn't match the passport line: "${line}"`);
   }
 }
