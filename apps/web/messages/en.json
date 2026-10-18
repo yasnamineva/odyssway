@@ -49,7 +49,7 @@
     },
     "eesMissingExit": {
       "title": "EES Missing Exit Record: How to Get It Fixed",
-      "description": "No exit recorded in the EU Entry/Exit System? Why it flags you as an overstayer, how to check your record, and how to get it corrected within 45 days under Article 52."
+      "description": "No exit recorded in the EU Entry/Exit System? Why it flags you as an overstayer, how to check your record, and how to get it corrected (Article 52, 45 days)."
     },
     "eesDispute": {
       "title": "EES Says You Overstayed But You Didn't? Your Rights",
@@ -57,11 +57,11 @@
     },
     "dualCitizens": {
       "title": "Dual Citizens: Which Passport for Schengen and the EES?",
-      "description": "If one of your nationalities is EU/EEA/Swiss, the 90/180-day rule doesn't apply to you — what the law says, what the EES records, and practical passport advice."
+      "description": "If one of your nationalities is EU/EEA/Swiss, the 90/180-day rule doesn't apply to you: what the law says, what the EES records, and passport advice."
     },
     "permitHolders": {
       "title": "Residence Permit Holders and the 90/180 Rule",
-      "description": "Your permit days don't consume the 90/180 allowance in the issuing country — but days in other Schengen states do. What the Schengen Borders Code actually says."
+      "description": "Your permit days don't use up the 90/180 allowance in the issuing country, but days in other Schengen states do. What the Schengen Borders Code says."
     },
     "about": {
       "title": "About Odyssway: How We Verify Travel Rules",
@@ -245,14 +245,14 @@
 
   "travelPair": {
     "metaTitle": "{destination} entry requirements for {citizens} citizens",
-    "metaDescription": "{answer} Stay, documents and official source, checked {date}.",
+    "metaDescriptionTail": "Stay, documents and source, checked {date}.",
     "h1": "{destination} entry requirements for {citizens} citizens",
     "shortAnswer": "Short answer",
     "answer": {
-      "visa_free": "{citizens} citizens can visit {destination} without a visa.",
-      "eta_required": "{citizens} citizens need an electronic travel authorisation (ETA) before travelling to {destination}.",
-      "visa_required": "{citizens} citizens need a visa to visit {destination}.",
-      "visa_on_arrival": "{citizens} citizens can get a visa on arrival in {destination}."
+      "visa_free": "{citizens} citizens can visit {place} without a visa.",
+      "eta_required": "{citizens} citizens need an electronic travel authorisation (ETA) before travelling to {place}.",
+      "visa_required": "{citizens} citizens need a visa to visit {place}.",
+      "visa_on_arrival": "{citizens} citizens can get a visa on arrival in {place}."
     },
     "stayTitle": "How long you can stay",
     "stayFixed": "Up to {days} days per visit.",
@@ -353,7 +353,9 @@
       "depends": "It depends",
       "permit": "Only with a permit"
     },
-    "tail": "Official source, checked {date}."
+    "tail": "Official source, checked {date}.",
+    "tailProduct": "Covers {product}. Official source, checked {date}.",
+    "inDestination": "In {destination}: {list}"
   },
   "borderCard": {
     "button": "Download border card (PDF)",

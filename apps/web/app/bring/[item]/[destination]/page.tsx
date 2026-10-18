@@ -44,7 +44,10 @@ export async function generateMetadata({
   );
   const lead = single
     ? (rowLead(single) ?? tv(single.verdict))
-    : pair.rows.map((r) => `${rowLabel(r.slug, pair.destination.code)}: ${tv(r.verdict)}`).join("; ") + ".";
+    : ts("inDestination", {
+        destination: withArticle(pair.destination.name),
+        list: pair.rows.map((r) => `${rowLabel(r.slug, pair.destination.code)}: ${tv(r.verdict)}`).join("; ") + ".",
+      });
   const description = describeRule(lead, ts("tail", { date: pair.lastVerified ?? "" }));
   return {
     title,

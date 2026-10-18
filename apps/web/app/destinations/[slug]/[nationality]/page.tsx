@@ -5,7 +5,8 @@ import BreadcrumbJsonLd from "../../../../components/BreadcrumbJsonLd";
 import SourceNote from "../../../../components/SourceNote";
 import Photo from "../../../../components/content/Photo";
 import { destinationPhoto, photoOgImage } from "../../../../lib/photos";
-import { destinationPath } from "../../../../lib/destinations";
+import { destinationPath, withArticle } from "../../../../lib/destinations";
+import { describeRule } from "../../../../lib/seo-text";
 import { travelPair, travelPairPath, travelPairs, type TravelPair } from "../../../../lib/travel-pairs";
 
 interface Params {
@@ -31,7 +32,8 @@ async function pairText(pair: TravelPair) {
         : pair.row.requirement === "visa_required"
           ? t("stayVisa")
           : t("stayUnconfirmed");
-  return { t, vars, answer: t(`answer.${pair.row.requirement}`, vars), stay };
+  const answer = t(`answer.${pair.row.requirement}`, { ...vars, place: withArticle(pair.destination.name) });
+  return { t, vars, answer, stay };
 }
 
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
@@ -40,7 +42,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   if (!pair) return {};
   const { t, vars, answer } = await pairText(pair);
   const title = t("metaTitle", vars);
-  const description = t("metaDescription", { ...vars, answer, date: pair.row.verified_at ?? "" });
+  const description = describeRule(answer, t("metaDescriptionTail", { date: pair.row.verified_at ?? "" }));
   const photo = destinationPhoto(pair.destination.code);
   return {
     title,

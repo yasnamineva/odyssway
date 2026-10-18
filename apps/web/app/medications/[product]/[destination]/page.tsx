@@ -52,8 +52,14 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   );
   const lead = single
     ? (rowLead(single) ?? tv(single.verdict))
-    : pair.rows.map((r) => `${rowLabel(r.slug, pair.destination.code)}: ${tv(r.verdict)}`).join("; ") + ".";
-  const description = describeRule(lead, ts("tail", { date: latestVerified(pair.rows) ?? "" }));
+    : ts("inDestination", {
+        destination: withArticle(pair.destination.name),
+        list: pair.rows.map((r) => `${rowLabel(r.slug, pair.destination.code)}: ${tv(r.verdict)}`).join("; ") + ".",
+      });
+  const description = describeRule(
+    lead,
+    ts("tailProduct", { product: pair.product.name, date: latestVerified(pair.rows) ?? "" }),
+  );
   return {
     title,
     description,

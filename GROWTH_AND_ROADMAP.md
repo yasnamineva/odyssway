@@ -542,3 +542,8 @@ gate was passed or missed, and why.
   amount with device information, a not-for-sale letter and a medical certificate) and
   Japan (one unit of home-use equipment; disposable contact lenses for two months). No
   source names CPAP machines or glucose monitors, so neither is used as a search name.
+- **2026-10-18. Metadata audit (1,892 pages).** Fixed 247 duplicate meta descriptions
+  (named-medicine pages for the same country now name the medicine; multi-rule pages
+  now start with the country) and 11 descriptions over 158 characters. Entry-requirement
+  answers now read "travelling to the United Kingdom". Audit is clean: no long, missing
+  or duplicate titles or descriptions.
