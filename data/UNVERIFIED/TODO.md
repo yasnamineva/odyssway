@@ -3544,10 +3544,11 @@ Not re-dated:
   medication-id, and the three Brazil rows (gov.br returned navigation only).
 - controlled-medication-ae: the EDE permit page confirms the 3-month limit, the documents
   and that pre-approval is optional, but the per-drug schedule list wasn't re-read.
-- injectable-medication-gb: **owner decision.** The whole row is gov.uk airport-security
-  guidance (liquids over 100 ml, syringes in hand luggage). AGENTS §2 keeps security
-  screening out of customs answers. Options: keep it as-is, or move it out and leave the
-  GB injectables question to prescription-medication-gb/controlled-medication-gb.
+- injectable-medication-gb: **resolved 2026-10-18 (owner chose rewrite).** It was gov.uk
+  airport-security guidance (AGENTS §2). Rewritten as a customs answer: HMRC bans controlled
+  drugs and restricts only CITES medicines; MDR 2001 Schedules 1–5 don't list semaglutide,
+  tirzepatide, liraglutide or insulin. Slug, names and the Ozempic/Wegovy/Mounjaro UK pages
+  kept; "needles" and "syringes" dropped from the search names.
 
 ## Medical devices (2026-10-18)
 

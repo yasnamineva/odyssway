@@ -5527,25 +5527,60 @@
       "semaglutide",
       "tirzepatide",
       "insulin",
-      "needles",
-      "syringes",
       "injection pen",
       "glp-1"
     ],
     "destination": "GB",
     "category": "medication",
-    "verdict": "allowed_with_limits",
+    "verdict": "allowed",
     "limits": {
-      "description": "Liquid medication over 100ml (which covers most injectable pens/vials) is allowed through UK airport security in hand luggage, but you must carry proof it's prescribed to you -- a prescription copy or a letter from your doctor. Hypodermic syringes are explicitly listed as permitted in hand luggage. No such proof is required for tablets or for liquid medicine in containers of 100ml or less."
+      "description": "Insulin and GLP-1 medicines (semaglutide, sold as Ozempic and Wegovy; tirzepatide, sold as Mounjaro) aren't controlled drugs in the UK: none of them is listed in Schedules 1 to 5 of the Misuse of Drugs Regulations 2001. UK customs (HMRC) bans controlled drugs, but doesn't list other medicines among banned or restricted goods, except medicines containing endangered species, which may need a CITES permit."
     },
-    "notes": "Cooling gel packs to keep injectable medication cold are allowed in both hand and hold luggage; ice packs specifically require contacting the airport in advance, per this same gov.uk page. This is UK airport-security screening guidance rather than a customs-import statute, but it's the primary UK government source found for the needle/cold-chain mechanics of carrying GLP-1s and insulin. It does not name Ozempic/Wegovy/Mounjaro or GLP-1 drugs by brand -- insulin and injectable medicines are covered only as a general liquid-medication category.",
-    "summary": "Injectable medicine over 100 ml is allowed in hand luggage with a prescription copy or doctor's letter. Syringes are allowed.",
+    "notes": "The Home Office's 'Take medicine in or out of the UK' page sets its rules — hand luggage, a letter from your prescriber, up to 3 months' supply — for medicine containing a controlled drug (see the controlled-medication entry). Taking pens, needles or syringes through airport security screening is a separate question, not covered here.",
+    "summary": "Insulin and GLP-1 pens like Ozempic and Mounjaro aren't controlled drugs in the UK, and customs doesn't restrict them.",
     "legal_source": {
-      "name": "gov.uk -- Hand luggage restrictions: essential medicines and medical equipment",
-      "url": "https://www.gov.uk/hand-luggage-restrictions/essential-medicines-and-medical-equipment"
+      "name": "GOV.UK (HMRC) — Bringing goods into the UK for personal use: banned and restricted goods",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/banned-and-restricted-goods"
     },
-    "verified_at": "2026-09-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "_sources": [
+      {
+        "claim": "Controlled drugs are banned; medicines are restricted only where they contain endangered species (CITES)",
+        "name": "GOV.UK (HMRC) — Bringing goods into the UK for personal use: banned and restricted goods",
+        "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/banned-and-restricted-goods"
+      },
+      {
+        "claim": "Schedule 1 doesn't list semaglutide, tirzepatide, liraglutide or insulin",
+        "name": "Misuse of Drugs Regulations 2001, Schedule 1 (legislation.gov.uk)",
+        "url": "https://www.legislation.gov.uk/uksi/2001/3998/schedule/1"
+      },
+      {
+        "claim": "Schedule 2 doesn't list semaglutide, tirzepatide, liraglutide or insulin",
+        "name": "Misuse of Drugs Regulations 2001, Schedule 2 (legislation.gov.uk)",
+        "url": "https://www.legislation.gov.uk/uksi/2001/3998/schedule/2"
+      },
+      {
+        "claim": "Schedule 3 doesn't list semaglutide, tirzepatide, liraglutide or insulin",
+        "name": "Misuse of Drugs Regulations 2001, Schedule 3 (legislation.gov.uk)",
+        "url": "https://www.legislation.gov.uk/uksi/2001/3998/schedule/3"
+      },
+      {
+        "claim": "Schedule 4 doesn't list semaglutide, tirzepatide, liraglutide or insulin",
+        "name": "Misuse of Drugs Regulations 2001, Schedule 4 (legislation.gov.uk)",
+        "url": "https://www.legislation.gov.uk/uksi/2001/3998/schedule/4"
+      },
+      {
+        "claim": "Schedule 5 doesn't list semaglutide, tirzepatide, liraglutide or insulin",
+        "name": "Misuse of Drugs Regulations 2001, Schedule 5 (legislation.gov.uk)",
+        "url": "https://www.legislation.gov.uk/uksi/2001/3998/schedule/5"
+      },
+      {
+        "claim": "The hand-luggage, prescriber-letter and 3-month rules apply to medicine containing a controlled drug",
+        "name": "GOV.UK (Home Office) — Take medicine in or out of the UK",
+        "url": "https://www.gov.uk/travelling-controlled-drugs"
+      }
+    ],
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
