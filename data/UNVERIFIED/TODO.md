@@ -3593,3 +3593,8 @@ now defers entirely to the Japanese government).
   by mail ("por valija") with a prescription from a Peruvian prescriber — not a traveller
   carrying their own medicine. It does say Lists IA/IB of Annex 2 (D.S. 023-2001-SA) are
   prohibited and psychotropics/narcotics are controlled. No traveller-specific page found.
+- Colombia (controlled): no FNE/INVIMA/DIAN traveller rule found (2026-10-18). The control
+  lists are in Ministry of Health Resolución 116 de 2026; traveller limits seen only on a
+  relocation blog — not usable.
+- Argentina (ordinary): ARCA/ANMAT pages cover postal imports only; ANMAT Disp. 3562/2025
+  covers cosmetics and hygiene products, not medicines.
