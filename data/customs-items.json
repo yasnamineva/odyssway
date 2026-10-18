@@ -4640,8 +4640,8 @@
       "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
       "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
     },
-    "verified_at": "2026-09-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -4663,8 +4663,8 @@
       "name": "SARS — SC-PA-01-03 Duty Free Allowances for Travellers (External Guide, Rev. 8, eff. 1 July 2026)",
       "url": "https://www.sars.gov.za/wp-content/uploads/Docs/Customs/SC-PA-01-03-Duty-Free-Allowances-for-Travellers-External-Guide.pdf"
     },
-    "verified_at": "2026-09-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -4720,8 +4720,8 @@
       "name": "ANAM (Agencia Nacional de Aduanas de México) — Equipaje y franquicia",
       "url": "https://www.anam.gob.mx/equipaje-y-franquicia/"
     },
-    "verified_at": "2026-09-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
       {
@@ -4768,8 +4768,8 @@
       "name": "ANAM (Agencia Nacional de Aduanas de México) — Equipaje y franquicia",
       "url": "https://www.anam.gob.mx/equipaje-y-franquicia/"
     },
-    "verified_at": "2026-09-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -5080,8 +5080,8 @@
       "name": "Health Sciences Authority (HSA) — Travelling with medications to Singapore",
       "url": "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-medications/"
     },
-    "verified_at": "2026-09-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "transit": {
       "rule": "exempt_airside",
@@ -5243,8 +5243,8 @@
       "name": "Health Sciences Authority (HSA) — Travelling with medications to Singapore / Travelling with medical devices to Singapore",
       "url": "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/"
     },
-    "verified_at": "2026-09-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -5305,8 +5305,8 @@
       "name": "Thai FDA — Passenger belongings related to health products into the Kingdom of Thailand (foods, cosmetics, herbal products)",
       "url": "https://en.fda.moph.go.th/guideline-of-importation-for-personal-use/bringing-of-health-products-into-the-kingdom-of-thailand-01/"
     },
-    "verified_at": "2026-09-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -5377,8 +5377,8 @@
       "name": "U.S. Drug Enforcement Administration / eCFR -- 21 CFR 1301.26, Exemption of certain persons from registration for personal use of controlled substances",
       "url": "https://www.ecfr.gov/current/title-21/chapter-II/part-1301/section-1301.26"
     },
-    "verified_at": "2026-09-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
       {
@@ -5417,17 +5417,17 @@
     "category": "medication",
     "verdict": "allowed_with_limits",
     "limits": {
-      "description": "As FDA-approved prescription drugs, GLP-1 medications (semaglutide/tirzepatide) and insulin follow the FDA's personal importation framework: foreign visitors may bring in roughly a 90-day supply, with the prescription or a doctor's letter. Separately, at TSA airport security screening, insulin is confirmed as a permitted 'medically necessary liquid' in carry-on above the standard 3.4oz limit -- travelers must tell the officer and place it in a bin separately for X-ray screening; the final decision rests with the TSA officer.",
+      "description": "As FDA-approved prescription drugs, GLP-1 medications (semaglutide/tirzepatide) and insulin follow the FDA's personal importation framework: the FDA \"will allow foreign nationals to bring or ship a 90-day supply of drug products\". For medication sent by mail or courier, the FDA suggests including documentation such as a copy of your visa/passport, a letter from your doctor, or a copy of the prescription in English.",
       "quantity": "~90-day supply (foreign visitors)"
     },
-    "notes": "Compounded or non-FDA-approved semaglutide/tirzepatide products are treated differently: FDA's personal importation policy only extends discretionary allowance to unapproved drugs when there's a serious condition, no domestic availability, no unreasonable risk, and written affirmation of personal use. Genuine brand-name Ozempic/Wegovy/Mounjaro/Zepbound are FDA-approved, so this stricter unapproved-drug pathway shouldn't apply to them, but a compounded version should expect more scrutiny. The TSA insulin page (https://www.tsa.gov/travel/security-screening/whatcanibring/items/insulin, checked 2026-09-13) doesn't separately name GLP-1 pens, syringes specifically, or give refrigeration/ice-pack rules -- a dedicated TSA syringes/needles/ice-pack page could not be located in this pass, so treat 'same handling as insulin' as a reasonable inference rather than a directly confirmed rule.",
-    "summary": "Visitors can bring about a 90-day supply of insulin or GLP-1 medicine, with the prescription or a doctor's letter.",
+    "notes": "Compounded or non-FDA-approved semaglutide/tirzepatide products are treated differently: FDA's personal importation policy only extends discretionary allowance to unapproved drugs when there's a serious condition, no domestic availability, no unreasonable risk, and written affirmation of personal use. Genuine brand-name Ozempic/Wegovy/Mounjaro/Zepbound are FDA-approved, so this stricter unapproved-drug pathway shouldn't apply to them, but a compounded version should expect more scrutiny. Airport security screening of pens and needles is a separate matter, handled by the TSA, and is not covered here.",
+    "summary": "Visitors can bring or ship up to a 90-day supply of insulin or FDA-approved GLP-1 medicine.",
     "legal_source": {
       "name": "U.S. Food and Drug Administration -- Personal Importation of Drugs",
       "url": "https://www.fda.gov/industry/import-basics/personal-importation"
     },
-    "verified_at": "2026-09-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -5465,8 +5465,8 @@
       "name": "gov.uk -- Taking controlled drugs into the UK",
       "url": "https://www.gov.uk/travelling-controlled-drugs"
     },
-    "verified_at": "2026-09-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
       {
@@ -5550,7 +5550,7 @@
     "category": "medication",
     "verdict": "allowed_with_limits",
     "limits": {
-      "description": "Under CBSA's Section 56 Class Exemption, travelers may personally carry (in person only -- not by mail or courier) a prescribed narcotic or Food and Drug Regulations Part G controlled drug up to the lesser of a single course of treatment or a 30-day supply, and a prescribed benzodiazepine/targeted substance up to the lesser of a single course of treatment or a 90-day supply. Opioids (codeine, oxycodone, tramadol) and stimulants (amphetamine, methylphenidate/Ritalin, lisdexamfetamine/Vyvanse) fall under the narcotic/Part-G 30-day limit; benzodiazepines (diazepam/Valium, alprazolam/Xanax, clonazepam/Klonopin) get the 90-day limit. Medication must be in pharmacy- or hospital-dispensed packaging with proper labelling, and must be declared to a CBSA officer at the border.",
+      "description": "Under CBSA's Section 56 Class Exemption, travelers may personally carry (in person only -- not by mail or courier) a prescribed narcotic or Food and Drug Regulations Part G controlled drug up to the lesser of a single course of treatment or a 30-day supply, and a prescribed benzodiazepine/targeted substance up to the lesser of a single course of treatment or a 90-day supply. If you don't live in Canada, the benzodiazepine limit is the lesser of the container's contents, a 90-day supply, or your usual daily dose multiplied by the number of days you plan to stay. Opioids (codeine, oxycodone, tramadol) and stimulants (amphetamine, methylphenidate/Ritalin, lisdexamfetamine/Vyvanse) fall under the narcotic/Part-G 30-day limit; benzodiazepines (diazepam/Valium, alprazolam/Xanax, clonazepam/Klonopin) get the 90-day limit. Medication must be in pharmacy- or hospital-dispensed packaging with proper labelling, and must be declared to a CBSA officer at the border.",
       "quantity": "30-day supply (stimulants/opioids); 90-day supply (benzodiazepines)"
     },
     "notes": "No advance import permit is required for these amounts under the Class Exemption -- but it does not cover Annex I-listed substances unless separately approved by Health Canada or the source country's regulator, and it explicitly does not apply to shipping controlled substances by mail or courier, only carrying them in person. Lisdexamfetamine (Vyvanse) isn't named in the Act; we treat it as covered by Schedule I's \"amphetamines, their salts, derivatives…\" entry, which is our reading.",
@@ -5559,8 +5559,8 @@
       "name": "Canada Border Services Agency -- Memorandum D19-9-2, Importation and Exportation of Controlled Substances and Precursors",
       "url": "https://www.cbsa-asfc.gc.ca/publications/dm-md/d19/d19-9-2-eng.html"
     },
-    "verified_at": "2026-09-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
       {
@@ -6179,7 +6179,7 @@
     "category": "medication",
     "verdict": "depends",
     "limits": {
-      "description": "Under Dangerous Drugs Board Regulation No. 1, Series of 2014, Section 35, a traveler entering, leaving, or passing through the Philippines who is under treatment for a medical condition may possess a dangerous drug or a drug preparation containing a controlled chemical, in a quantity reasonable for that treatment, when prescribed by a physician. For a supply of up to 30 days, the traveler must carry: (a) a letter from the attending physician describing the medical condition, (b) the physician's prescription listing the trade and generic names of the drug, and the medicine in its original, properly labeled container — no advance PDEA permit is required for this 30-day case.",
+      "description": "Under Dangerous Drugs Board Regulation No. 1, Series of 2014, Section 35, a traveler entering, leaving, or passing through the Philippines who is under treatment for a medical condition may possess a dangerous drug or a drug preparation containing a controlled chemical, in a quantity reasonable for that treatment, when prescribed by a valid PDEA S2-licensed physician. For a supply of up to 30 days, the traveler must carry: (a) a letter from the attending physician describing the medical condition, (b) the physician's prescription listing the trade and generic names of the drug, and the medicine in its original, properly labeled container — no advance PDEA permit is required for this 30-day case.",
       "quantity": "Up to 30 days' supply with physician's letter + prescription only. For a supply exceeding 30 days, the traveler additionally needs Certificates of Authorization from PDEA and from the National Competent Authority of their home country (incoming) or destination country (outgoing); the PDEA request must be submitted in writing at least 30 working days before travel, and PDEA replies within 15 working days."
     },
     "notes": "The regulation governs 'dangerous drugs' and 'drug preparations containing a controlled chemical' generally (as scheduled under RA 9165, the Comprehensive Dangerous Drugs Act of 2002) rather than naming specific brands like Adderall or Xanax; it does not itself state which named medicines fall in which schedule. Common stimulants (amphetamine, methylphenidate), benzodiazepines (diazepam, alprazolam, clonazepam) and opioid painkillers (codeine, oxycodone) are the general classes of substance this regime is understood to cover, but travelers should confirm their specific medicine's PH classification with PDEA before travel. Outgoing travelers must also check the destination country's own requirements.",
@@ -6188,8 +6188,8 @@
       "name": "Philippine Dangerous Drugs Board — Board Regulation No. 1, Series of 2014 (Comprehensive Amendments to Board Regulation No. 3, Series 2003), Section 35: Carrying of Dangerous Drugs and/or Drug Preparation containing Controlled Chemical by International Travelers",
       "url": "https://ddb.gov.ph/images/Board_Regulation/2014/BD.REG1.14.pdf"
     },
-    "verified_at": "2026-09-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "procedure": {
       "title": "For more than 30 days' supply: get PDEA authorization",
@@ -7663,7 +7663,12 @@
   },
   {
     "slug": "prescription-medication-kr",
-    "names": ["medication", "prescription medicine", "medicine", "otc medicine"],
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "otc medicine"
+    ],
     "destination": "KR",
     "category": "medication",
     "verdict": "allowed_with_limits",
@@ -7675,8 +7680,8 @@
       "name": "Ministry of Foreign Affairs of the Republic of Korea, Embassy Notice — Bringing Medicines into Korea by Travel",
       "url": "https://overseas.mofa.go.kr/lt-en/brd/m_28401/view.do?seq=18"
     },
-    "verified_at": "2026-09-19",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -7789,8 +7794,8 @@
       "name": "药品进口管理办法 (Measures for the Administration of Drug Import), Art. 39 — jointly issued by NMPA (formerly SFDA) and the General Administration of Customs",
       "url": "https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=47964"
     },
-    "verified_at": "2026-09-19",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -8019,8 +8024,8 @@
       "url": "https://www.drugoffice.gov.hk/eps/do/en/consumer/news_informations/faq.html"
     },
     "destination": "HK",
-    "verified_at": "2026-09-21",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "transit": {
       "rule": "applies",
@@ -8058,8 +8063,8 @@
       "url": "https://www.drugoffice.gov.hk/eps/do/en/consumer/news_informations/faq.html"
     },
     "destination": "HK",
-    "verified_at": "2026-09-21",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "procedure": {
       "title": "Get prior written approval from Hong Kong's Drug Office",
@@ -8097,6 +8102,11 @@
         "claim": "The rule itself",
         "name": "Drug Office, Department of Health — Frequently Asked Questions (medicines carried by visitors)",
         "url": "https://www.drugoffice.gov.hk/eps/do/en/consumer/news_informations/faq.html"
+      },
+      {
+        "claim": "Examples of dangerous drugs include opium, morphine, heroin, cannabis, cocaine and amphetamines; the list is in the First Schedule to the Dangerous Drugs Ordinance, Cap. 134",
+        "name": "Customs and Excise Department — Prohibited Articles: Controlled Imports",
+        "url": "https://www.customs.gov.hk/en/service-enforcement-information/trade-facilitation/prohibited-articles/controlled-imports/index.html"
       },
       {
         "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
@@ -8412,8 +8422,8 @@
       "name": "Department of Health (Ireland) — Travelling into Ireland with prescribed narcotics and/or psychotropic substances",
       "url": "https://www.gov.ie/en/department-of-health/services/travelling-into-ireland-from-schengen-countries-with-prescribed-narcotics-andor-psychotropic-substances/"
     },
-    "verified_at": "2026-09-21",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -8452,8 +8462,8 @@
       "name": "Department of Health (Ireland) — Travelling into Ireland with prescribed narcotics and/or psychotropic substances",
       "url": "https://www.gov.ie/en/department-of-health/services/travelling-into-ireland-from-schengen-countries-with-prescribed-narcotics-andor-psychotropic-substances/"
     },
-    "verified_at": "2026-09-21",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
       {
@@ -9011,8 +9021,8 @@
   {
     "destination": "GE",
     "category": "medication",
-    "verified_at": "2026-09-21",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "slug": "controlled-medication-ge",
     "names": [
@@ -9289,8 +9299,8 @@
       "name": "Maldives Food and Drug Authority — Guideline on Good Import Practice (MTG/RE-IP/GLN-TE 007, 13.02.2020), §§4.7–4.9",
       "url": "https://health.gov.mv/storage/uploads/50wNdLqA/bixuazbn.pdf"
     },
-    "verified_at": "2026-09-21",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -9323,8 +9333,8 @@
       "name": "Maldives Food and Drug Authority — Guideline on Good Import Practice (MTG/RE-IP/GLN-TE 007, 13.02.2020), §§4.7–4.9",
       "url": "https://health.gov.mv/storage/uploads/50wNdLqA/bixuazbn.pdf"
     },
-    "verified_at": "2026-09-21",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
       {
@@ -9593,8 +9603,8 @@
       "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
       "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
     },
-    "verified_at": "2026-09-22",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -9626,8 +9636,8 @@
       "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
       "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
     },
-    "verified_at": "2026-09-22",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
       {
@@ -10211,16 +10221,16 @@
     "category": "medication",
     "verdict": "prohibited",
     "limits": {
-      "description": "The Customs Authority's own prohibitions page states plainly: \"It is prohibited the import, export, transit of narcotics and psychotropic substances\" — a criminal offense under Albanian Criminal Law — and this explicitly extends to \"plants, narcotic medicaments and psychotropic substances of natural or synthetic nature, their materials and their preparations.\""
+      "description": "The Customs Authority's own prohibitions page states plainly: \"It is prohibited the import, export, transit of narcotics and psychotropic substances\" — a criminal offense under Albanian Criminal Law — and this explicitly extends to \"plants, narcotic medicaments and psychotropic substances of natural or synthetic nature, their materials and their preparations\", with reference to Law No. 7975 (26.07.1995) \"On the narcotic medicines and psychotropic substances\"."
     },
-    "notes": "Unlike ordinary medication, the Customs Authority's page describing narcotics/psychotropic substances states a blanket import prohibition with no traveler or personal-medical-use exception mentioned. Some secondary/travel-advisory sources describe a narrower personal-use allowance for controlled medicines with a medical certificate, but that specific carve-out was not found on an Albanian government page in this research pass — do not assume it applies. If you take a medication that is a controlled substance in your home country, verify directly with the Albanian Embassy before travelling.",
+    "notes": "Unlike ordinary medication, the Customs Authority's page describing narcotics/psychotropic substances states a blanket import prohibition with no traveler or personal-medical-use exception mentioned. No personal-use carve-out was found on an Albanian government page — do not assume one applies. If you take a medication that is a controlled substance in your home country, verify directly with the Albanian Embassy before travelling.",
     "summary": "Banned: Albanian Customs prohibits the import of narcotic and psychotropic medicines.",
     "legal_source": {
       "name": "General Directorate of Customs (Republic of Albania) — Narcotics and Psychotropic Substances and human trafficking",
       "url": "https://www.dogana.gov.al/english/c/177/239/narcotics-and-psychotropic-substances-and-human-trafficking"
     },
-    "verified_at": "2026-09-22",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "transit": {
       "rule": "applies",

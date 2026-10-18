@@ -3524,3 +3524,27 @@ acted on:
 - **Rwanda FDA personal-effects guideline** PDF 404 (review date 14 Mar 2026 passed):
   three RW rows now say so. Find the revised guideline.
 - ANAC drone page 404: drones-br already in UNVERIFIED.
+
+## September medication rows re-checked (2026-10-18)
+
+Re-dated 24 rows after re-reading their official source. Corrections: controlled-medication-ca
+(CBSA D19-9-2's foreign-resident benzodiazepine cap added), injectable-medication-us (FDA
+"bring or ship a 90-day supply"; the letter is only suggested for mailed medicine; TSA
+screening text removed, AGENTS §2), controlled-medication-ph (Section 35(1) says a "valid
+PDEA S2-licensed physician"), controlled-medication-al (Law No. 7975 named; secondary-source
+sentence removed), controlled-medication-hk (HK Customs controlled-imports page added to
+`_sources` for the amphetamines example).
+
+Not re-dated:
+- Source unreadable from here (JS shell, empty or blocked): controlled-medication-eg,
+  injectable-medication-jp, injectable-medication-rw, controlled-medication-au,
+  injectable-medication-au, controlled-medication-nz, medication-sa, controlled-medication-sa,
+  controlled-medication-cn, prescription-medication-my, controlled-medication-my,
+  controlled-medication-tw, prescription-medication-tw, prescription-medication-al,
+  medication-id, and the three Brazil rows (gov.br returned navigation only).
+- controlled-medication-ae: the EDE permit page confirms the 3-month limit, the documents
+  and that pre-approval is optional, but the per-drug schedule list wasn't re-read.
+- injectable-medication-gb: **owner decision.** The whole row is gov.uk airport-security
+  guidance (liquids over 100 ml, syringes in hand luggage). AGENTS §2 keeps security
+  screening out of customs answers. Options: keep it as-is, or move it out and leave the
+  GB injectables question to prescription-medication-gb/controlled-medication-gb.

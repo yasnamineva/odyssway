@@ -525,3 +525,10 @@ gate was passed or missed, and why.
   small supply). Reviewed the watcher's 12 October report: rewrote the UAE medication
   row (its source page is gone, and it contradicted the verified controlled-medicine
   row) and flagged Rwanda's offline guideline on three rows.
+- **2026-10-18. September medication rows re-checked; batched deploys.** Re-read the
+  official source for 24 medication rows and re-dated them. Corrected four: Canada now
+  gives the tighter benzodiazepine limit for visitors; the US injectables row restates
+  the FDA page only (the TSA screening text was out of scope); the Philippines row says
+  "PDEA S2-licensed physician", as the regulation does; Albania names the law its
+  prohibition refers to. Builds are now skipped for pushes that don't touch the site,
+  and pushes are batched after local verification.
