@@ -9478,6 +9478,12 @@
       "Proof of financial capacity",
       "Return or onward ticket to the next country of destination"
     ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "departure"
+    },
     "notes": "Effective 8 June 2025, Indian nationals may enter the Philippines without a visa for a non-extendible, non-convertible 14-day stay for tourism/business, per the Philippine e-Visa Portal's official policy page (quoted directly during this check). Separately, Indian nationals holding a valid and current American, Japanese, Australian, Canadian, Schengen, Singapore, or UK (\"AJACSSUK\") visa or residence permit may enter visa-free for a non-extendible 30 days. Longer stays require an appropriate visa obtained in advance from a Philippine Embassy/Consulate. This is a standing but discretionary government policy (not a permanent bilateral visa-waiver treaty) with no stated expiry, so it should be periodically re-checked.",
     "legal_source": {
       "name": "Philippine e-Visa Portal - Visa Policy (Non-Immigrant Visas)",
@@ -11022,6 +11028,12 @@
       "Malaysia Digital Arrival Card (MDAC), registered online from 3 days before departure (mandatory for international air arrivals since 1 December 2023)",
       "Biometric fingerprint enrolment at immigration (both thumbs and index fingers)"
     ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
     "notes": "Japan's Ministry of Foreign Affairs states (translated): because a visa-exemption arrangement exists between Japan and Malaysia, a visa is not required for stays of up to three months for tourism or visiting acquaintances, except for anyone doing paid work; a visa is still needed for religious activity, research or TV/film shooting even on a short stay, and for work before entry. The stay granted under the exemption arrangement is 'within 3 months' and the officer writes the permitted period in the passport. Sabah and Sarawak run separate entry control and require showing the passport even for travel from peninsular Malaysia.",
     "legal_source": {
       "name": "Japan MOFA — Overseas Safety: Malaysia (visas and immigration, 査証・出入国審査等)",
@@ -15300,6 +15312,12 @@
       "Passport valid for at least 6 months on arrival",
       "Return or onward travel ticket"
     ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
     "notes": "UAE Ministry of Foreign Affairs lists France as \"Visa Free\" (mofa.gov.ae/en/visa-exemptions-for-non-citizen, checked 2026-10-02). The stay limit comes from French government travel advice (the legal source): a free entry stamp on arrival allows at most 90 days in any 180-day period, in one or several visits — the EU–UAE short-stay visa waiver in force since May 2015 (per France's and Italy's travel advice). Working is not allowed on this entry. Since December 2023 the UAE may refuse passports that show 'X' in place of a name or date of birth (per French and German travel advice). For longer stays, a visa is needed via the official ICP/GDRFA channels.",
     "legal_source": {
       "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour (updated 2026-09-15)",
@@ -15322,6 +15340,12 @@
       "Passport valid for at least 6 months on arrival",
       "Return or onward travel ticket"
     ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
     "notes": "UAE Ministry of Foreign Affairs lists Spain as \"Visa Free\" (mofa.gov.ae/en/visa-exemptions-for-non-citizen, checked 2026-10-02). The stay limit comes from Spanish government travel advice (the legal source): a free entry stamp on arrival allows at most 90 days in any 180-day period, in one or several visits — the EU–UAE short-stay visa waiver in force since May 2015 (per France's and Italy's travel advice). Working is not allowed on this entry. Since December 2023 the UAE may refuse passports that show 'X' in place of a name or date of birth (per French and German travel advice). For longer stays, a visa is needed via the official ICP/GDRFA channels.",
     "legal_source": {
       "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje: Emiratos Árabes Unidos (updated 2026-07-15)",
@@ -15344,6 +15368,12 @@
       "Passport valid for at least 6 months on arrival (biometric passport; the German Personalausweis/ID card is not accepted)",
       "Return or onward travel ticket"
     ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
     "notes": "UAE Ministry of Foreign Affairs lists Germany as \"Visa Free\" (mofa.gov.ae/en/visa-exemptions-for-non-citizen, checked 2026-10-02). The stay limit comes from German government travel advice (the legal source): a free entry stamp on arrival allows at most 90 days in any 180-day period, in one or several visits — the EU–UAE short-stay visa waiver in force since May 2015 (per France's and Italy's travel advice). Working is not allowed on this entry. Since December 2023 the UAE may refuse passports that show 'X' in place of a name or date of birth (per French and German travel advice). For longer stays, a visa is needed via the official ICP/GDRFA channels.",
     "legal_source": {
       "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise (Stand 2026-10-02)",
@@ -15366,6 +15396,12 @@
       "Passport valid for at least 6 months on arrival",
       "Return or onward travel ticket"
     ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
     "notes": "UAE Ministry of Foreign Affairs lists Italy as \"Visa Free\" (mofa.gov.ae/en/visa-exemptions-for-non-citizen, checked 2026-10-02). The stay limit comes from Italian government travel advice (the legal source): a free entry stamp on arrival allows at most 90 days in any 180-day period, in one or several visits — the EU–UAE short-stay visa waiver in force since May 2015 (per France's and Italy's travel advice). Working is not allowed on this entry. Since December 2023 the UAE may refuse passports that show 'X' in place of a name or date of birth (per French and German travel advice). For longer stays, a visa is needed via the official ICP/GDRFA channels.",
     "legal_source": {
       "name": "Viaggiare Sicuri (Italian Ministry of Foreign Affairs) — Emirati Arabi Uniti, country sheet (updated 2026-07-05)",
@@ -15388,6 +15424,12 @@
       "Passport valid for at least 6 months on arrival",
       "Return or onward travel ticket"
     ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
     "notes": "UAE Ministry of Foreign Affairs lists Netherlands as \"Visa Free\" (mofa.gov.ae/en/visa-exemptions-for-non-citizen, checked 2026-10-02). The stay limit comes from Dutch government travel advice (the legal source): a free entry stamp on arrival allows at most 90 days in any 180-day period, in one or several visits — the EU–UAE short-stay visa waiver in force since May 2015 (per France's and Italy's travel advice). Working is not allowed on this entry. Since December 2023 the UAE may refuse passports that show 'X' in place of a name or date of birth (per French and German travel advice). For longer stays, a visa is needed via the official ICP/GDRFA channels.",
     "legal_source": {
       "name": "NederlandWereldwijd (Dutch Ministry of Foreign Affairs) — Reisadvies Verenigde Arabische Emiraten (updated 2026-09-08)",
@@ -16551,6 +16593,12 @@
       "Thai visa for the purpose of the trip, applied for through the e-Visa system at thaievisa.go.th",
       "Thailand Digital Arrival Card (TDAC), completed within the 3 days before arrival at tdac.immigration.go.th"
     ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
     "notes": "Royal Thai Embassy in Mexico City (Visa page, updated 2 Oct 2026): from 15 September 2026, Mexican ordinary-passport holders must obtain a Thai visa to enter Thailand, whatever the purpose of the trip, because the 60-day visa-exemption scheme was cancelled (Ministry of Interior notifications published 31 August 2026). All visa applications go through the e-Visa system. The immigration officer sets the permitted stay on arrival; for a tourist visa it is generally 60 days per entry, extendable by up to 30 days at a Thai Immigration Bureau office. Officers may ask for proof of accommodation, onward travel, or funds of at least THB 20,000 per person.",
     "legal_source": {
       "name": "Royal Thai Embassy, Mexico City — Visa (updated 2 Oct 2026)",
@@ -19374,6 +19422,12 @@
       "Free arrival visa (90-day stay permit) issued at the airport or land border",
       "Police registration within 13 days of arrival (arrival day counted) if staying 2 weeks or more"
     ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
     "notes": "Permitted length of stay is not stated by any Jordanian authority we could read: the Ministry of Interior's fee table lists visa VALIDITY tiers (3 months single entry JOD 40, 3 months double JOD 60, 6 months multiple JOD 120, 1 year, 5 years), not a stay length, and traveller governments disagree (Japan MOFA: 90-day stay permit; UK: visa 'valid for 3 months'; France and Spain: 1 month). We therefore show no day count — the stay is whatever your visa states; confirm at the border. Japan MOFA (updated 22 Apr 2026): there is no visa-exemption agreement, but Japanese passport holders get a 90-day stay permit (arrival visa) FREE OF CHARGE at airports or land border posts; passport needs 6+ months validity and at least 2 unused visa pages. Extension of up to 90 more days (maximum 180 days from entry) at the police station's foreigners office or the PSD Border and Residence Department in Amman. Overstay fine JOD 3 per day (JOD 90 for a month). The Jordan Pass FAQ also lists Japan among nationalities exempt from visa fees. None of this passport's country appears on Jordan's Ministry of Interior list of 'restricted' nationalities that need prior approval (the list covers 14 Asian, 37 African and 2 Latin American states — Belize and Cuba; page footer 'Last update: 09/11/2025'), so no prior approval is needed. Visa on arrival: the Ministry of Tourism and Antiquities' official Jordan Pass FAQ says non-restricted nationalities get a visa on arrival at Queen Alia International Airport and Sheikh Hussein Bridge (Jordan River crossing); at Wadi Araba (Eilat–Aqaba) it says a visa on arrival is given only to Jordan Pass holders who stay at least 2 nights, and that non-restricted nationals arriving at Aqaba airport need no visa (Aqaba Special Economic Zone). Several travellers' governments (UK, Canada, Germany, Spain) say no visa is issued on arrival at King Hussein/Allenby Bridge — get the e-visa first if you enter there. Optional e-visa in advance via the Ministry of Interior portal (eservices.moi.gov.jo). Ministry of Interior e-visa fees: 3 months single entry JOD 40; 3 months double entry JOD 60; 6 months multiple JOD 120; 1 year multiple JOD 200; 5 years multiple JOD 350. Visa fee waiver: the Jordan Pass (JOD 70–80, sold only at jordanpass.jo) waives the single-entry visa fee if you buy it before arrival and stay at least 2 consecutive nights (3 days); if you leave sooner you pay the fee on departure. Stay: the Ministry of Interior lists the standard single-entry visa as '3 months' (that is the visa's validity, not a stated stay). CONFLICT: Jordan's own Jordan Pass FAQ (© 2022) and the French (updated 15 Sep 2026) and Spanish (31 Mar 2026) travel advice still describe a 1-month/30-day initial stay extendable at a police station, while UK, Canada and Japan advice describe 3 months/90 days — check the period stamped in your passport on arrival. Stays over 14 days: since 1 October 2025 visitors staying more than 14 days must register at a police station within 14 days of arrival (biometrics), or pay a JOD 200 fine on departure; exemptions differ between sources (France, Netherlands and Spain say Jordan Pass/tourist visa, transit and Hajj visa holders are exempt; the UK says tourists are exempt). Passport must be valid at least 6 months on arrival. Land-border departure tax: UK advice says JOD 10 in cash at all land crossings (France says JOD 8).",
     "legal_source": {
       "name": "外務省 海外安全ホームページ — ヨルダン 安全対策基礎データ（査証、出入国審査等）",
@@ -19476,6 +19530,12 @@
       "Visa on arrival (JOD 40 single entry) or a Ministry of Interior e-visa obtained in advance (mandatory in advance if entering via King Hussein/Allenby Bridge)",
       "Police registration within 14 days if staying more than 14 days (since 1 October 2025; JOD 200 fine if missed)"
     ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
     "notes": "Permitted length of stay is not stated by any Jordanian authority we could read: the Ministry of Interior's fee table lists visa VALIDITY tiers (3 months single entry JOD 40, 3 months double JOD 60, 6 months multiple JOD 120, 1 year, 5 years), not a stay length, and traveller governments disagree (Japan MOFA: 90-day stay permit; UK: visa 'valid for 3 months'; France and Spain: 1 month). We therefore show no day count — the stay is whatever your visa states; confirm at the border. Germany (Stand 09.10.2026): Germans need a visa; applying online in advance is possible but not mandatory. Visa on arrival at Queen Alia and Aqaba airports, fee currently JOD 40 payable in JOD (card usually accepted); also obtainable at Aqaba/Yitzhak Rabin and Sheikh Hussein Bridge crossings; not at King Hussein Bridge (online visa required). Accepted documents: passport, temporary passport, child passport, valid 6+ months (strictly checked). Visa extension at the police costs JOD 40. Germany notes people with HIV may not enter or stay in Jordan. None of this passport's country appears on Jordan's Ministry of Interior list of 'restricted' nationalities that need prior approval (the list covers 14 Asian, 37 African and 2 Latin American states — Belize and Cuba; page footer 'Last update: 09/11/2025'), so no prior approval is needed. Visa on arrival: the Ministry of Tourism and Antiquities' official Jordan Pass FAQ says non-restricted nationalities get a visa on arrival at Queen Alia International Airport and Sheikh Hussein Bridge (Jordan River crossing); at Wadi Araba (Eilat–Aqaba) it says a visa on arrival is given only to Jordan Pass holders who stay at least 2 nights, and that non-restricted nationals arriving at Aqaba airport need no visa (Aqaba Special Economic Zone). Several travellers' governments (UK, Canada, Germany, Spain) say no visa is issued on arrival at King Hussein/Allenby Bridge — get the e-visa first if you enter there. Optional e-visa in advance via the Ministry of Interior portal (eservices.moi.gov.jo). Ministry of Interior e-visa fees: 3 months single entry JOD 40; 3 months double entry JOD 60; 6 months multiple JOD 120; 1 year multiple JOD 200; 5 years multiple JOD 350. Visa fee waiver: the Jordan Pass (JOD 70–80, sold only at jordanpass.jo) waives the single-entry visa fee if you buy it before arrival and stay at least 2 consecutive nights (3 days); if you leave sooner you pay the fee on departure. Stay: the Ministry of Interior lists the standard single-entry visa as '3 months' (that is the visa's validity, not a stated stay). CONFLICT: Jordan's own Jordan Pass FAQ (© 2022) and the French (updated 15 Sep 2026) and Spanish (31 Mar 2026) travel advice still describe a 1-month/30-day initial stay extendable at a police station, while UK, Canada and Japan advice describe 3 months/90 days — check the period stamped in your passport on arrival. Stays over 14 days: since 1 October 2025 visitors staying more than 14 days must register at a police station within 14 days of arrival (biometrics), or pay a JOD 200 fine on departure; exemptions differ between sources (France, Netherlands and Spain say Jordan Pass/tourist visa, transit and Hajj visa holders are exempt; the UK says tourists are exempt). Passport must be valid at least 6 months on arrival. Land-border departure tax: UK advice says JOD 10 in cash at all land crossings (France says JOD 8).",
     "legal_source": {
       "name": "Auswärtiges Amt — Jordanien: Reise- und Sicherheitshinweise (Einreise und Zoll)",
@@ -20315,6 +20375,12 @@
       "Proof of funds: at least US$100 per month or part-month of stay",
       "Customs traveller declaration (Declaración de Viajero) on arrival"
     ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 90,
+      "unit": "days",
+      "from": "arrival"
+    },
     "notes": "The 2025 directive (AJ-484-11-2025) lists MALASIA in the SECOND GROUP: 'INGRESO SIN VISA. PERMANENCIA MÁXIMA: HASTA LOS TREINTA DÍAS NATURALES (prorrogables hasta un total de noventa días naturales, conforme a la legislación aplicable). VIGENCIA MÍNIMA DE PASAPORTE: 90 DÍAS NATURALES.' So Malaysians need no visa, get up to 30 days (set by the officer), extendable with the immigration authority (DGME) to a total of 90 days, and need 90 days of passport validity. Note: the March 2023 directive had Malaysia in the first group — older pages showing 90/180 days for Malaysians are outdated. Entry requirements for every foreigner (Directrices, PRIMERO §4, citing art. 42 Ley General de Migración y Extranjería 8764 and art. 30 Reglamento de Control Migratorio 36769-G): a valid, machine-readable/biometric passport in good condition; a visa where required; proof of funds of at least US$100 per month or part-month of authorised stay; a return or onward ticket (or a navigation plan naming the destination port); and no bar to entry. Tourist (No Residente, subcategoría Turismo) status allows leisure, business or professional activities only if they involve no pay or profit in Costa Rica. Also on arrival: a customs traveller declaration (Declaración de Viajero) is required of every arriving traveller (art. 368 Reglamento a la Ley General de Aduanas, Decreto 44051-H). Per the UK FCDO page (cross-check), a yellow fever vaccination certificate is required if you are coming from a country listed as a yellow-fever transmission risk, an air departure tax of US$29 may apply (usually included in the ticket), and overstayers can be fined US$100 per month and refused future entry; travel.gc.ca (updated 31 Aug 2026) adds that people deported for overstaying may be barred from re-entering for 5 to 10 years.",
     "legal_source": {
       "name": "Dirección General de Migración y Extranjería, 'Directrices Generales de Visas de Ingreso y Permanencia para No Residentes' AJ-484-11-2025, Alcance N° 148 a La Gaceta N° 216 (17 Nov 2025) — official Imprenta Nacional gazette edition (copy hosted on icoder.go.cr; the migracion.go.cr copy is Cloudflare-blocked)",
@@ -20337,6 +20403,12 @@
       "Return or onward ticket",
       "Proof of funds: at least US$100 per month or part-month of stay"
     ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 180,
+      "unit": "days",
+      "from": "arrival"
+    },
     "notes": "The 2025 directive (AJ-484-11-2025) lists the People's Republic of China (REPÚBLICA POPULAR CHINA*) in the THIRD GROUP (consular visa): 'VIGENCIA DE LA VISA: UN ÚNICO INGRESO … PLAZO PARA ESTAMPAR LA VISA EN EL PASAPORTE: TRES MESES UNA VEZ AUTORIZADA … una vez estampada … deberá ser utilizada en un plazo máximo de sesenta días hábiles … VIGENCIA MÍNIMA DE PASAPORTE: 180 DÍAS NATURALES. PERMANENCIA MÁXIMA: HASTA 30 DÍAS NATURALES, PRORROGABLES HASTA LOS NOVENTA DÍAS NATURALES.' So a single-entry consular visa from a Costa Rican consulate is needed; the stay is up to 30 days (extendable to 90). Consular fees are set by the Ministry of Foreign Affairs (not stated in the directive). Exemptions (directive QUINTO) that let a third-group national enter WITHOUT a Costa Rican visa, provided the passport meets the 180-day validity rule: (I) a multiple-entry visa or residence of the United States or Canada in any category (including refugee/asylum and US D and C1/D visas; US C1, C2, C3 transit visas are NOT accepted), valid at least 1 day from the day of entry — the stay granted cannot exceed that visa's/residence's validity; (II) a residence permit of the UK (England, Scotland, Wales, Northern Ireland), Iceland, Norway, Switzerland or an EU country, multiple-entry or valid at least 90 days from entry (refugee/asylum residence excluded); (III) a multiple-entry Schengen 'C' visa or multiple-entry 'D' visa, valid at least 1 day from entry (visas whose validity starts after the entry date are not accepted). Visas/residence documents must be ICAO-compliant cards/stickers — stamps, handwritten papers, pending-residence or extension documents are rejected — and be in Spanish or English or translated. China-specific rules (TERCERO §IV): Hong Kong and Macao nationals travelling on valid British or Portuguese passports are treated as first group (no visa, up to 180 days), otherwise they follow PRC rules; Chinese public-affairs passports need no visa; visa applications for Chinese minors are decided only by the Comisión de Visas Restringidas and must be filed by parents/legal guardians; adult PRC nationals with passports issued in Beijing or Shanghai may exceptionally enter as tourists under the 'Protocolo Temporal para la promoción de Turismo de China', staying no longer than the purchased tour and never more than 30 days, with no change of status allowed. Entry requirements for every foreigner (Directrices, PRIMERO §4, citing art. 42 Ley General de Migración y Extranjería 8764 and art. 30 Reglamento de Control Migratorio 36769-G): a valid, machine-readable/biometric passport in good condition; a visa where required; proof of funds of at least US$100 per month or part-month of authorised stay; a return or onward ticket (or a navigation plan naming the destination port); and no bar to entry. Tourist (No Residente, subcategoría Turismo) status allows leisure, business or professional activities only if they involve no pay or profit in Costa Rica. Also on arrival: a customs traveller declaration (Declaración de Viajero) is required of every arriving traveller (art. 368 Reglamento a la Ley General de Aduanas, Decreto 44051-H). Per the UK FCDO page (cross-check), a yellow fever vaccination certificate is required if you are coming from a country listed as a yellow-fever transmission risk, an air departure tax of US$29 may apply (usually included in the ticket), and overstayers can be fined US$100 per month and refused future entry; travel.gc.ca (updated 31 Aug 2026) adds that people deported for overstaying may be barred from re-entering for 5 to 10 years.",
     "legal_source": {
       "name": "Dirección General de Migración y Extranjería, 'Directrices Generales de Visas de Ingreso y Permanencia para No Residentes' AJ-484-11-2025, Alcance N° 148 a La Gaceta N° 216 (17 Nov 2025) — official Imprenta Nacional gazette edition (copy hosted on icoder.go.cr; the migracion.go.cr copy is Cloudflare-blocked)",
@@ -20359,6 +20431,12 @@
       "Return or onward ticket",
       "Proof of funds: at least US$100 per month or part-month of stay"
     ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 180,
+      "unit": "days",
+      "from": "arrival"
+    },
     "notes": "The 2025 directive (AJ-484-11-2025) lists INDIA in the THIRD GROUP (consular visa): 'VIGENCIA DE LA VISA: UN ÚNICO INGRESO … PLAZO PARA ESTAMPAR LA VISA EN EL PASAPORTE: TRES MESES UNA VEZ AUTORIZADA … una vez estampada … deberá ser utilizada en un plazo máximo de sesenta días hábiles … VIGENCIA MÍNIMA DE PASAPORTE: 180 DÍAS NATURALES. PERMANENCIA MÁXIMA: HASTA 30 DÍAS NATURALES, PRORROGABLES HASTA LOS NOVENTA DÍAS NATURALES.' So a single-entry consular visa from a Costa Rican consulate is needed; the stay is up to 30 days (extendable to 90). Consular fees are set by the Ministry of Foreign Affairs (not stated in the directive). Exemptions (directive QUINTO) that let a third-group national enter WITHOUT a Costa Rican visa, provided the passport meets the 180-day validity rule: (I) a multiple-entry visa or residence of the United States or Canada in any category (including refugee/asylum and US D and C1/D visas; US C1, C2, C3 transit visas are NOT accepted), valid at least 1 day from the day of entry — the stay granted cannot exceed that visa's/residence's validity; (II) a residence permit of the UK (England, Scotland, Wales, Northern Ireland), Iceland, Norway, Switzerland or an EU country, multiple-entry or valid at least 90 days from entry (refugee/asylum residence excluded); (III) a multiple-entry Schengen 'C' visa or multiple-entry 'D' visa, valid at least 1 day from entry (visas whose validity starts after the entry date are not accepted). Visas/residence documents must be ICAO-compliant cards/stickers — stamps, handwritten papers, pending-residence or extension documents are rejected — and be in Spanish or English or translated. India is also on the directive's list (CUARTO) of nationalities that need an airport transit visa to change planes in Costa Rica, unless one of the QUINTO exemptions applies. Entry requirements for every foreigner (Directrices, PRIMERO §4, citing art. 42 Ley General de Migración y Extranjería 8764 and art. 30 Reglamento de Control Migratorio 36769-G): a valid, machine-readable/biometric passport in good condition; a visa where required; proof of funds of at least US$100 per month or part-month of authorised stay; a return or onward ticket (or a navigation plan naming the destination port); and no bar to entry. Tourist (No Residente, subcategoría Turismo) status allows leisure, business or professional activities only if they involve no pay or profit in Costa Rica. Also on arrival: a customs traveller declaration (Declaración de Viajero) is required of every arriving traveller (art. 368 Reglamento a la Ley General de Aduanas, Decreto 44051-H). Per the UK FCDO page (cross-check), a yellow fever vaccination certificate is required if you are coming from a country listed as a yellow-fever transmission risk, an air departure tax of US$29 may apply (usually included in the ticket), and overstayers can be fined US$100 per month and refused future entry; travel.gc.ca (updated 31 Aug 2026) adds that people deported for overstaying may be barred from re-entering for 5 to 10 years.",
     "legal_source": {
       "name": "Dirección General de Migración y Extranjería, 'Directrices Generales de Visas de Ingreso y Permanencia para No Residentes' AJ-484-11-2025, Alcance N° 148 a La Gaceta N° 216 (17 Nov 2025) — official Imprenta Nacional gazette edition (copy hosted on icoder.go.cr; the migracion.go.cr copy is Cloudflare-blocked)",
@@ -24173,6 +24251,12 @@
       "Visa (e-Visa online or tourist visa on arrival)",
       "Cambodia e-Arrival card when arriving by air (not earlier than 7 days before arrival)"
     ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
     "notes": "Netherlands government travel advice (Nederland Wereldwijd, still valid 10 Oct 2026): 'U heeft een visum nodig voor Cambodja als u met een Nederlands paspoort reist. Vraag online een visum aan op de website van de overheid van Cambodja ... Of vraag een toeristenvisum aan bij aankomst in Cambodja.' Passport must be valid at least 6 months on arrival; children also need a passport and visa. Air arrivals must also complete the e-Arrival Card, not earlier than 7 days before arrival. The Dutch page does not state the stay length; 30 days is used per the e-Visa portal ('Length of Stay: 1 month') and UK/Canadian advice ('30 days'). Alternative to the visa on arrival: the official Cambodia e-Visa (evisa.gov.kh, Ministry of Foreign Affairs) Visa T (tourist) costs USD 30, single entry, valid 3 months from issue (that is the window to enter, not the stay), length of stay 1 month, processed in 3 business days; requires passport valid more than six months at entry, a digital photo and a Visa/MasterCard. e-Visa is accepted only at Techo International (Phnom Penh), Siem Reap Angkor and Sihanoukville airports and the Bavet and Trapeang Kriel land borders; Cham Yeam and Poipet are listed as temporarily closed to e-Visa entry. Beware of unofficial lookalike e-visa websites.",
     "legal_source": {
       "name": "Reisadvies Cambodja — Nederland Wereldwijd (Ministerie van Buitenlandse Zaken)",
