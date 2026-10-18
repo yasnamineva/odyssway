@@ -66,7 +66,12 @@ export default function PassportValidityCheck({
         {field("departure", departure, setDeparture)}
         {field("expiry", expiry, setExpiry)}
       </div>
-      <p className="mt-2 text-xs text-slate-500">{t("privacy")}</p>
+      <p className="mt-2 text-xs text-slate-500">
+        {t("privacy")}{" "}
+        <a href="/blog/passport-validity-six-months-rule" className="text-blue-700 underline">
+          {t("learnMore")}
+        </a>
+      </p>
       {datesBackwards && (
         <p className="mt-3 text-sm text-amber-800" role="alert">
           {t("datesBackwards")}
