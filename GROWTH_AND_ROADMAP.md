@@ -582,3 +582,7 @@ gate was passed or missed, and why.
   "3 months beyond entry", which no source says; Albania's own visa rules say 3 months after
   you leave (row corrected and re-dated). Saudi rows citing the same, now unreachable, source
   disagree on the reference date, so they show remaining validity only until re-read.
+- **2026-10-18. Blog: "Six months from arrival, or after you leave?"** Passport validity
+  rules for 18 destinations and the Schengen Area, grouped by reference date, with a worked
+  example computed by the engine and a link to the new checker. Destinations whose rows
+  disagree (Malaysia, Cambodia, Argentina, Saudi Arabia) are left out.

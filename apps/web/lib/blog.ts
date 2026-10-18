@@ -32,6 +32,24 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "passport-validity-six-months-rule",
+    title: "Six months from arrival, or after you leave? Passport validity rules compared",
+    seoTitle: "Passport Validity Rules: 6 Months From Arrival or Departure?",
+    seoDescription:
+      "Six months from arrival or after you leave? Passport validity rules for 18 destinations and the Schengen Area, with a free check for your own dates.",
+    dek: "\"Valid for six months\" means different things in different countries. Here's which date each one counts from.",
+    date: "2026-10-18",
+    category: "Visa rules",
+    legalSource: {
+      name: "Your Europe — Travel documents for non-EU nationals (Schengen Borders Code, Art. 6(1)(a))",
+      url: "https://europa.eu/youreurope/citizens/travel/entry-exit/non-eu-nationals/index_en.htm",
+    },
+    verifiedAt: "2026-10-18",
+    changelogDataset: "entry-requirements",
+    destinationCodes: ["EG", "ID", "JO", "KE", "PE", "SG", "LK", "TW", "VN", "PH", "IL", "NZ", "ME", "AL", "TR", "GB", "CL", "CO"],
+    photo: "blog-passport",
+  },
+  {
     slug: "travelling-with-medical-devices",
     title: "Travelling with a medical device: what customs allows",
     seoTitle: "Travelling With Medical Devices: Customs Rules by Country",
