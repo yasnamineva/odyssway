@@ -3588,5 +3588,8 @@ now defers entirely to the Japanese government).
 - Blocked: Philippines ordinary medicine — dfa.gov.ph embassy pages (which cite DOH-FDA-BOC
   Joint Circular No. 1, 2015) return a Cloudflare challenge.
 - Still open: controlled-medicine rows for Indonesia, Peru, Colombia, Bahamas, Ecuador;
-  ordinary-medicine rows for Georgia, Cyprus, Argentina. Peru lead: DIGEMID
-  "Consideraciones 2026" PDF (exceptional import of controlled products).
+  ordinary-medicine rows for Georgia, Cyprus, Argentina.
+- Peru: the DIGEMID "Consideraciones 2026" PDF (read 2026-10-18) covers exceptional import
+  by mail ("por valija") with a prescription from a Peruvian prescriber — not a traveller
+  carrying their own medicine. It does say Lists IA/IB of Annex 2 (D.S. 023-2001-SA) are
+  prohibited and psychotropics/narcotics are controlled. No traveller-specific page found.
