@@ -3572,5 +3572,11 @@ now defers entirely to the Japanese government).
 - **Albania (US row):** said "3 months beyond entry", but the U.S. Embassy only says "at
   least three months of remaining validity"; Albania's own visa rules (MFA, section II) say
   3 months after you leave. Corrected to the Albanian rule and re-dated 2026-10-18.
+- **Malaysia:** Malaysia's own missions word it differently: Paris says "valid for more than
+  6 months upon arrival" for all foreign travellers; Ottawa (visa applicants) says "more than
+  six (6) months before the date of departure from Malaysia". The three rows with a structured
+  rule (GB, JP, MX) say arrival, matching the general rule. CA cites Canada's advice
+  (departure, stricter) and has no structured rule. Consider aligning all MY rows to the
+  Malaysian wording once Immigration Malaysia's own page can be read.
 - The extractor deliberately leaves out lines with advice, "cannot exceed", "more than", or
   both reference dates; those rows show remaining validity only.
