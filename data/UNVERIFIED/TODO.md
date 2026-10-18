@@ -3561,3 +3561,16 @@ from here); Korea, UAE, Saudi Arabia (no official traveller device page found).
 OTC products controlled abroad (§1.4), blocked: no current official page names Vicks
 inhalers / levmetamfetamine for Japan (NCD application page silent; US Embassy Japan page
 now defers entirely to the Japanese government).
+
+## Passport validity checker — conflicts found (2026-10-18)
+
+- **Saudi Arabia (SA):** rows citing the same source (visa.visitsaudi.com) disagree on the
+  reference date: 10 say "6 months beyond arrival" (US, GB, CA, AU, NZ, JP, KR, SG, MY, UA),
+  4 say "6 months validity beyond stay" (BR, MX, AR, CL). visa.visitsaudi.com returns 403
+  from here, so the structured `passportValidity` was removed from all 14 rows (Trip Check
+  shows remaining validity, no verdict). Re-read the source and align the wording.
+- **Albania (US row):** said "3 months beyond entry", but the U.S. Embassy only says "at
+  least three months of remaining validity"; Albania's own visa rules (MFA, section II) say
+  3 months after you leave. Corrected to the Albanian rule and re-dated 2026-10-18.
+- The extractor deliberately leaves out lines with advice, "cannot exceed", "more than", or
+  both reference dates; those rows show remaining validity only.

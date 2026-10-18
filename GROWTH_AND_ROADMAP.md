@@ -578,3 +578,7 @@ gate was passed or missed, and why.
 - **2026-10-18. Passport check on entry-requirement pages.** The same check now appears on
   every /destinations/[slug]/[nationality] page whose passport rule states a period
   (Lighthouse on Kenya/US: 97 / 100 / 100 / 100).
+- **2026-10-18. Two passport-rule corrections found by the checker work.** US→Albania said
+  "3 months beyond entry", which no source says; Albania's own visa rules say 3 months after
+  you leave (row corrected and re-dated). Saudi rows citing the same, now unreachable, source
+  disagree on the reference date, so they show remaining validity only until re-read.
