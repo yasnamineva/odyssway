@@ -3627,9 +3627,14 @@ weapons-ng, weapons-in, weapons-au, weapons-sa, controlled-medication-eg — inc
 press-sourced "reported detentions" claim — weapons-br, weapons-nz, controlled-medication-ph,
 weapons-id, drones-cn, drones-vn, fresh-produce-ie, cbd-cl).
 Flagged, not edited (need a source re-read first):
-- Verdict rests on our inference: cannabis-jp ("not realistically available — treat as
-  prohibited" for an MHLW Import Permission), meat-dairy-jp ("essentially never have … treat
-  as prohibited in practice"), meat-dairy-th ("effectively off-limits").
+- meat-dairy-jp: rewritten from MAFF's own wording (illegal; certificates "generally
+  difficult to get"; dairy in passenger baggage excluded; fine up to ¥3m) and re-dated.
+  meat-dairy-th: note now says only what the FDA page covers.
+- **HIGH PRIORITY — cannabis-jp:** the cited Tokyo Customs page says import "requires an
+  Import Permission" from MHLW, not "prohibited". The official English translation of the
+  Cannabis Control Act (Art. 4: import prohibited except licensed researchers) is the 1999
+  version; the law has since been amended and renamed. Verdict left as "prohibited" until the
+  current Japanese text (e-Gov) is read — flipping it to "depends" could mislead travellers.
 - "In practice" claims that may or may not be on the source: drones-jp (Japanese address,
   7–10 business days), drones-kr, weapons-ma (port-of-arms permit then DGSN), weapons-ge,
   plastic-bags-rw.

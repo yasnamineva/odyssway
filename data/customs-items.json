@@ -1202,14 +1202,15 @@
     ],
     "destination": "JP",
     "category": "food_animal",
-    "verdict": "prohibited",
-    "notes": "Meat and meat products (ham, sausage, jerky, etc.) generally cannot be brought in without an export health certificate issued by the exporting country's government — something individual travelers essentially never have, so treat meat as prohibited in practice. Small quantities of dairy products (roughly 10 kg or less, not for resale) carried in accompanied baggage are treated more leniently, but check with the Animal Quarantine Service counter on arrival. Violations carry up to 3 years' imprisonment or a ¥3,000,000 fine.",
+    "verdict": "depends",
+    "notes": "Japan's Animal Quarantine Service says it is illegal to bring meat and meat products into Japan. Items without a government-issued inspection certificate from the exporting country can't be brought in, even as souvenirs or for personal consumption, and it says such certificates are generally hard to get for personal-use products, so most animal products can't be brought in. This applies whether the products are for yourself, gifts, bought in a shop (including at an airport), home-made, heat-processed or vacuum-packed. Dairy products carried in passenger baggage are excluded from its list of products subject to animal quarantine. Violators can be arrested and are punishable with imprisonment or a fine; since 1 July 2020 the maximum fine has been ¥3 million.",
+    "summary": "Meat and meat products are illegal without a government inspection certificate. Dairy in your baggage isn't subject to animal quarantine.",
     "legal_source": {
       "name": "Animal Quarantine Service (MAFF) — Bringing animal products into Japan",
       "url": "https://www.maff.go.jp/aqs/english/product/import.html"
     },
-    "verified_at": "2026-08-11",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -2078,7 +2079,7 @@
     "limits": {
       "description": "Personal-use import allowance: milk/dairy products (ready-to-drink milk, powdered milk, ice cream, cheese, whey protein, yogurt, pudding) up to 2.5 kg/L; meat, processed meat, and animal products (sausages, ham, smoked meat, dried pork, smoked salmon) up to 5 kg. All food items combined must not exceed 10 kg/L, and none of the items may have been imported by the same traveler within the prior 3 months."
     },
-    "notes": "This FDA personal-consumption allowance covers processed/shelf-stable meat and dairy. Fresh/uncooked meat and dairy are separately regulated by the Department of Livestock Development, which requires an import permit and (for meat) an export health certificate from the country of origin — not realistically obtainable by an individual tourist, so treat fresh/raw meat and dairy as effectively off-limits even though this row's quantity limits are for the processed-goods case.",
+    "notes": "This Thai FDA allowance covers the products it lists: processed meat and animal products, and dairy. The page doesn't cover fresh or uncooked meat and dairy; check with Thailand's Department of Livestock Development before bringing them.",
     "summary": "Personal use only: up to 2.5 kg/L of dairy and 5 kg of meat products, 10 kg/L of food in total, not repeated within 3 months.",
     "legal_source": {
       "name": "Thai FDA — Passenger belongings related to health products into the Kingdom of Thailand (foods, cosmetics, herbal products)",
