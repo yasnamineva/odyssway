@@ -15,7 +15,9 @@ export default defineConfig({
     ...(process.env.CI ? {} : { channel: "chrome" as const }),
   },
   webServer: {
-    command: "pnpm build && pnpm start -p 4321",
+    // CI's "Build web app" step has already built; building again here pushed
+    // server start past the timeout on slower runners.
+    command: process.env.CI ? "pnpm start -p 4321" : "pnpm build && pnpm start -p 4321",
     url: "http://localhost:4321",
     timeout: 240_000,
     reuseExistingServer: !process.env.CI,
