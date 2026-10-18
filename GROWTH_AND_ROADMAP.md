@@ -592,3 +592,8 @@ gate was passed or missed, and why.
   national row: narcotic or psychotropic medicine needs an AEMPS permit (at least 10 days;
   up to 3 months of treatment, 15 days for cannabis), with the application as a procedure.
   Philippines (ordinary medicine): Philippine embassy pages are behind a bot challenge.
+- **2026-10-18. August customs rows re-checked.** Re-read the 86 sources behind the 146
+  customs rows last checked in August (65 readable). 54 rows re-dated where every figure
+  still matches; 9 corrected where the row said more than its source (Morocco and UAE cash,
+  Kenya and New Zealand alcohol, Philippine tobacco, US cash). US CBD is re-sourced to the
+  statutes and now includes the hemp redefinition taking effect on 12 November 2026.

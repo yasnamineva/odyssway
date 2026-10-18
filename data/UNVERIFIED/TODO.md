@@ -3599,3 +3599,23 @@ now defers entirely to the Japanese government).
   relocation blog — not usable.
 - Argentina (ordinary): ARCA/ANMAT pages cover postal imports only; ANMAT Disp. 3562/2025
   covers cosmetics and hygiene products, not medicines.
+
+## August customs rows re-checked (2026-10-18)
+
+86 distinct sources for the 146 customs rows last checked in August; 65 readable.
+- Re-dated after their figures matched the source: 50 rows, plus alcohol-mx, tobacco-mx
+  (figures written in words), alcohol-rw, tobacco-rw (EACCMA "Eighteen years").
+- Corrected to what the source says: cash-us (form name dropped), alcohol-ke ("aged 18"
+  not on KRA's page), tobacco-ph ("approx. 400 sticks" was our conversion), alcohol-nz
+  ("six 750ml bottles" was our conversion), cash-ma (dirham-banknote ban, 2,000 MAD and
+  Art. 66 bis aren't on the Office des Changes page — removed), cash-ae (departures,
+  instrument list, precious metals/stones and Afseh/iDeclare aren't on Dubai Customs' page —
+  removed), cbd-us (re-sourced to 7 U.S.C. 1639o and 21 U.S.C. 802(16); adds the
+  Public Law 119-37 sec. 781 change).
+- **Time-sensitive — cbd-us:** P.L. 119-37 sec. 781 takes effect 365 days after 12 Nov 2025
+  (12 Nov 2026). Secondary reports (Aug–Sep 2026) say a continuing resolution may delay it to
+  11 Dec 2026; not confirmed on congress.gov. Check before 12 Nov and update the row.
+- Not re-dated: 50 rows without figures (cannabis, weapons, food bans) — need a manual read;
+  their notes also contain hedges ("realistically", "essentially never", "in practice")
+  to clean up. 33 rows whose sources were unreadable (TGA/AU, help.cbp.gov, customs.gov.ng,
+  customs.gov.vn, thailand.go.th, gob.mx/senasica, chennaicustoms, rwandafda, mpi.govt.nz…).
