@@ -2983,7 +2983,30 @@
     },
     "verified_at": "2026-10-17",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "procedure": {
+      "title": "Get the Narcotics Commissioner's permission before you travel",
+      "authority": "Narcotics Commissioner, India",
+      "leadTime": "Well before you leave your country",
+      "documents": [
+        "Your prescription.",
+        "Any other relevant papers."
+      ],
+      "steps": [
+        "Well before you leave, apply to India's Narcotics Commissioner for permission to import the narcotic or psychotropic medicine.",
+        "Send your prescription and any other relevant papers with the application.",
+        "Once permission is granted, bring the medicine with you."
+      ],
+      "optional": true,
+      "sources": [
+        {
+          "name": "Department of Revenue, Ministry of Finance — International travellers requiring NDPS drugs for medical use",
+          "url": "https://dor.gov.in/international-travellers-requiring-ndps-medical-use"
+        }
+      ],
+      "verified_at": "2026-10-18",
+      "verified_by": "agent:claude-opus-5-5"
+    }
   },
   {
     "slug": "cannabis-in",
@@ -12487,7 +12510,31 @@
     },
     "verified_at": "2026-10-09",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "procedure": {
+      "title": "For more than one month's supply: get Ministry of Health authorisation",
+      "authority": "Ministry of Health (Ministerio de Salud), Costa Rica",
+      "leadTime": "At least one month before you travel",
+      "documents": [
+        "A copy of your ID (for digital filing).",
+        "Copies of your prescription and your epicrisis and/or medical report, issued no more than 3 months earlier, stating the diagnosis and the prescribed medicines.",
+        "A copy of the purchase invoice, if you bought the medicine abroad."
+      ],
+      "steps": [
+        "Up to one month of treatment, no authorisation is needed.",
+        "For more than one month, apply to the Ministry of Health at least one month before you travel.",
+        "Include your ID copy, your prescription, your epicrisis or medical report (no more than 3 months old) and, if you bought the medicine abroad, the purchase invoice."
+      ],
+      "optional": true,
+      "sources": [
+        {
+          "name": "Decreto Ejecutivo N° 45161-S, Reglamento para el control de drogas, estupefacientes y psicotrópicas (17 Jun 2025), art. 57 — SCIJ/Sinalevi, Procuraduría General de la República",
+          "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=105221&param2=147500&param3=1"
+        }
+      ],
+      "verified_at": "2026-10-09",
+      "verified_by": "agent:claude-opus-5-5"
+    }
   },
   {
     "slug": "injectable-medication-cr",

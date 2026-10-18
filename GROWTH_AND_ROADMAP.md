@@ -556,3 +556,9 @@ gate was passed or missed, and why.
   rows (Singapore approval, Malaysia one-of-each, Taiwan's capped list, Thailand's
   documents, Japan's one unit, Ecuador's duty-free meters) and links to each row on its
   destination page, which now gives every customs line an anchor.
+- **2026-10-18. Permit how-tos (§1.3): India and Costa Rica.** India: apply to the
+  Narcotics Commissioner well before departure with the prescription (Department of
+  Revenue page, read today). Costa Rica: Ministry of Health authorisation for more than
+  one month's supply, applied for a month ahead, with the documents Art. 57 of Decreto
+  45161-S lists. The decree couldn't be re-read today, so that procedure keeps the row's
+  own verification date.
