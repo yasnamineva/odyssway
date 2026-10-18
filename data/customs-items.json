@@ -5971,7 +5971,7 @@
     "category": "medication",
     "verdict": "depends",
     "limits": {
-      "description": "Medicines that are controlled drugs under New Zealand's Misuse of Drugs Act must be declared on the New Zealand Traveller Declaration and are capped at one month's supply (versus three months for ordinary prescription medicines), carried in original packaging with a prescription copy or a doctor's letter confirming the treatment.",
+      "description": "Controlled drugs must be declared on the New Zealand Traveller Declaration and are capped at one month's supply (versus three months for ordinary prescription medicines). Keep them in their original packaging, with a copy of your prescription or a doctor's letter confirming that you're being treated with them and giving their name and strength.",
       "quantity": "1-month supply"
     },
     "notes": "Neither NZ Customs' nor Medsafe's traveller pages (as fetched in this pass) name which specific drugs count as 'controlled drugs' for this rule -- there's no breakdown by stimulant/benzodiazepine/opioid class or schedule number, unlike Thailand's or Canada's guidance for the same topic. Amphetamine, methylphenidate, alprazolam, diazepam, clonazepam, codeine and oxycodone are on the UN's international lists of controlled substances. New Zealand's own schedules couldn't be read from here (legislation.govt.nz and the Ministry of Health page both refused access), so confirm your specific medicine with Medsafe. Verdict is marked 'depends' rather than 'allowed_with_limits' for that reason. Adderall and Vyvanse specifically were not checked and are omitted; treat their NZ status as unconfirmed.",
@@ -5980,8 +5980,8 @@
       "name": "New Zealand Customs Service -- Prohibited and restricted items: medicines",
       "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/"
     },
-    "verified_at": "2026-09-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
       {
@@ -15678,6 +15678,113 @@
       "name": "Taiwan Food and Drug Administration — Be careful when bringing medical devices into Taiwan for personal use (updated 6 July 2026)",
       "url": "https://www.fda.gov.tw/ENG/newsContent.aspx?id=31577"
     },
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-nz",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "drugs (prescription)",
+      "oral contraceptive",
+      "contraceptive pill"
+    ],
+    "destination": "NZ",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Prescription medicines that don't contain controlled drugs: bring a copy of your prescription or a letter from your doctor confirming you're being treated with the medicine, keep it in its original packaging, and bring no more than three months' supply. Oral contraceptives: up to six months' supply.",
+      "quantity": "3 months' supply (6 months for oral contraceptives)"
+    },
+    "notes": "NZ Customs says prescription medicines and controlled drugs must be declared on the New Zealand Traveller Declaration, and lists two cases where you must declare prescription medicine: you're carrying more than three months' supply, or the medicine isn't prescribed to you or a family member. Medicines containing controlled drugs, including all medicines containing pseudoephedrine, have stricter rules (see the controlled-medication and pseudoephedrine entries). Customs points to Medsafe for non-prescription medicines.",
+    "summary": "Up to 3 months' supply (6 for oral contraceptives), in original packaging, with a prescription copy or doctor's letter.",
+    "legal_source": {
+      "name": "New Zealand Customs Service -- Prohibited and restricted items: medicines",
+      "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/"
+    },
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-es",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "opioid painkiller"
+    ],
+    "destination": "ES",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Travellers may bring their personal medication into Spain (Art. 74, Royal Legislative Decree 1/2015), and AEMPS recommends carrying a prescription or doctor's report. Narcotic or psychotropic medicine under international control also needs a certificate or permit from the Spanish health authorities authorising its entry into Spain. AEMPS takes at least 10 days to process it, and it's valid for at most 3 months. The maximum quantity for travel to Spain is three months of treatment (15 days for cannabis or its derivatives).",
+      "quantity": "up to 3 months of treatment (15 days for cannabis)"
+    },
+    "notes": "This is Spain's national rule, set out by AEMPS. The page doesn't say how it applies to someone arriving from another Schengen country with an Article 75 certificate issued by their own country (see the EU entry). Patients on opioid substitution treatment (methadone or buprenorphine) apply through a drug-treatment centre (CAD) or another authorised body, not by themselves. Brand names are listed for search only: they map to substances on the UN's international control lists.",
+    "summary": "Narcotic or psychotropic medicine needs an AEMPS permit; apply at least 10 days ahead. Up to 3 months of treatment.",
+    "procedure": {
+      "title": "Get an AEMPS permit to bring narcotic or psychotropic medicine into Spain",
+      "authority": "Spanish Agency of Medicines and Medical Devices (AEMPS)",
+      "leadTime": "At least 10 days before you travel",
+      "processingTime": "At least 10 days, if everything is complete",
+      "documents": [
+        "The completed, signed application form.",
+        "An up-to-date medical certificate, signed and stamped, with the doctor's name, registration number, address and phone, your condition, the treatment and the daily dose.",
+        "Your current original prescription, signed by the prescriber.",
+        "A copy of your passport.",
+        "A copy of your travel tickets (train, plane, etc.)."
+      ],
+      "steps": [
+        "Prepare all documents as PDF files.",
+        "Email them to AEMPS at estupefacientes_viajeros@aemps.es at least 10 days before you travel.",
+        "The permit is valid for at most 3 months and covers up to 3 months of treatment (15 days for cannabis or its derivatives)."
+      ],
+      "sources": [
+        {
+          "name": "AEMPS (Spanish Agency of Medicines) — Certificates and permits for travellers carrying narcotic and psychotropic medicines (updated 28 August 2026)",
+          "url": "https://www.aemps.gob.es/medicamentos-de-uso-humano/estupefacientes-y-psicotropos/certificados-y-permisos-para-el-transporte-de-medicamentos-estupefacientes-y-psicotropos-por-viajeros-en-tratamiento-medico/"
+        }
+      ],
+      "verified_at": "2026-10-18",
+      "verified_by": "agent:claude-opus-5-5"
+    },
+    "legal_source": {
+      "name": "AEMPS (Spanish Agency of Medicines) — Certificates and permits for travellers carrying narcotic and psychotropic medicines (updated 28 August 2026)",
+      "url": "https://www.aemps.gob.es/medicamentos-de-uso-humano/estupefacientes-y-psicotropos/certificados-y-permisos-para-el-transporte-de-medicamentos-estupefacientes-y-psicotropos-por-viajeros-en-tratamiento-medico/"
+    },
+    "_sources": [
+      {
+        "claim": "The rule itself",
+        "name": "AEMPS (Spanish Agency of Medicines) — Certificates and permits for travellers carrying narcotic and psychotropic medicines (updated 28 August 2026)",
+        "url": "https://www.aemps.gob.es/medicamentos-de-uso-humano/estupefacientes-y-psicotropos/certificados-y-permisos-para-el-transporte-de-medicamentos-estupefacientes-y-psicotropos-por-viajeros-en-tratamiento-medico/"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ],
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"

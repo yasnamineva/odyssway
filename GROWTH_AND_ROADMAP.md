@@ -586,3 +586,9 @@ gate was passed or missed, and why.
   rules for 18 destinations and the Schengen Area, grouped by reference date, with a worked
   example computed by the engine and a link to the new checker. Destinations whose rows
   disagree (Malaysia, Cambodia, Argentina, Saudi Arabia) are left out.
+- **2026-10-18. Medication gaps: New Zealand and Spain.** New Zealand gets its ordinary
+  prescription-medicine row (3 months; 6 for oral contraceptives) from NZ Customs, and the
+  controlled-medicine row is re-checked against the same page and re-dated. Spain gets a
+  national row: narcotic or psychotropic medicine needs an AEMPS permit (at least 10 days;
+  up to 3 months of treatment, 15 days for cannabis), with the application as a procedure.
+  Philippines (ordinary medicine): Philippine embassy pages are behind a bot challenge.

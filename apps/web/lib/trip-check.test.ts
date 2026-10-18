@@ -125,6 +125,8 @@ describe("resolveTripCheck", () => {
     expect(resolveTripCheck("US", "JP", ["hoppers"]).items[0]!.match).toBeNull();
     expect(resolveTripCheck("US", "SE", ["kratom"]).items[0]!.match?.slug).toBe("kratom-se");
     expect(resolveTripCheck("DE", "SE", ["kratom"]).items[0]!.match?.slug).toBe("kratom-se");
+    expect(resolveTripCheck("US", "ES", ["xanax"]).items[0]!.match?.slug).toBe("controlled-medication-es");
+    expect(resolveTripCheck("US", "FR", ["xanax"]).items[0]!.match?.slug).toBe("controlled-medication-eu");
     expect(resolveTripCheck("US", "AU", ["phenibut"]).items[0]!.match?.slug).toBe("phenibut-au");
   });
 

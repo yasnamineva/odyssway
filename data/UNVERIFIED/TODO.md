@@ -3580,3 +3580,13 @@ now defers entirely to the Japanese government).
   Malaysian wording once Immigration Malaysia's own page can be read.
 - The extractor deliberately leaves out lines with advice, "cannot exceed", "more than", or
   both reference dates; those rows show remaining validity only.
+
+## Medication gaps (2026-10-18)
+
+- Added prescription-medication-nz and controlled-medication-es (AEMPS); re-dated
+  controlled-medication-nz.
+- Blocked: Philippines ordinary medicine — dfa.gov.ph embassy pages (which cite DOH-FDA-BOC
+  Joint Circular No. 1, 2015) return a Cloudflare challenge.
+- Still open: controlled-medicine rows for Indonesia, Peru, Colombia, Bahamas, Ecuador;
+  ordinary-medicine rows for Georgia, Cyprus, Argentina. Peru lead: DIGEMID
+  "Consideraciones 2026" PDF (exceptional import of controlled products).
