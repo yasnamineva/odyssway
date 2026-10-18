@@ -144,6 +144,8 @@ export interface EntryRequirementRecord {
   requirement: "visa_free" | "eta_required" | "visa_required" | "visa_on_arrival";
   stayPolicy: import("./stay-policy").StayPolicy;
   documentsNeeded: string[];
+  /** Structured form of the passport-validity line in documentsNeeded, when it names its reference date. */
+  passportValidity?: import("./passport-validity").PassportValidityRule;
   notes?: string;
   legal_source: { name: string; url: string };
   verified_at: string | null;

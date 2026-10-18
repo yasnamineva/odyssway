@@ -141,6 +141,35 @@ function checkNoUnverifiedReferences(): void {
   scanRoots.forEach(walk);
 }
 
+/**
+ * `passportValidity` restates a row's own documentsNeeded wording (§1.6). Fail if the
+ * wording no longer says what the structured field claims, so the two can't drift.
+ */
+function checkPassportValidityMatchesText(): void {
+  const file = join(DATA_DIR, "entry-requirements.json");
+  const rows = JSON.parse(readFileSync(file, "utf8")) as Array<{
+    nationality: string;
+    destination: string;
+    documentsNeeded: string[];
+    passportValidity?: { kind: string; amount?: number; unit?: string; from?: string };
+  }>;
+  const words: Record<number, string> = { 3: "three", 6: "six" };
+  for (const r of rows) {
+    const pv = r.passportValidity;
+    if (!pv) continue;
+    const line = r.documentsNeeded.find((d) => /passport|travel document/i.test(d) && /valid/i.test(d)) ?? "";
+    const where = `${rel(file)}: ${r.nationality}→${r.destination} passportValidity`;
+    if (pv.kind === "whole_stay") {
+      if (!/\b(stay|visit)\b/i.test(line)) errors.push(`${where} says whole_stay but the passport line doesn't: "${line}"`);
+      continue;
+    }
+    const amount = String(pv.amount);
+    const hasAmount = new RegExp(`\\b(${amount}|${words[pv.amount ?? 0] ?? amount})[ -]${pv.unit === "days" ? "day" : "month"}`, "i").test(line);
+    const anchor = pv.from === "arrival" ? /\b(arrival|entry)\b/i : /\b(departure|stay)\b/i;
+    if (!hasAmount || !anchor.test(line)) errors.push(`${where} doesn't match the passport line: "${line}"`);
+  }
+}
+
 // --- run ---
 const productionFiles = jsonFilesIn(DATA_DIR);
 const unverifiedFiles = jsonFilesIn(UNVERIFIED_DIR);
@@ -148,6 +177,7 @@ const unverifiedFiles = jsonFilesIn(UNVERIFIED_DIR);
 for (const f of productionFiles) validateFile(f, true);
 for (const f of unverifiedFiles) validateFile(f, false);
 checkNoUnverifiedReferences();
+checkPassportValidityMatchesText();
 
 console.log(
   `Checked ${productionFiles.length} production data file(s), ${unverifiedFiles.length} UNVERIFIED draft(s).`,

@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import dynamic from "next/dynamic";
 import { useEffect, useMemo, useState } from "react";
+import PassportValidityCheck from "./PassportValidityCheck";
 import SourceNote from "./SourceNote";
 import { schengenCountries } from "../lib/countries";
 import { destinationLabelFor } from "../lib/destination-label";
@@ -570,6 +571,10 @@ function TripCheckResults({
                 </ul>
               </div>
             )}
+            {result.passportLine &&
+              (result.passportValidity || /\b(\d+|one|two|three|six)[ -](months?|days?)\b/i.test(result.passportLine)) && (
+                <PassportValidityCheck rule={result.passportValidity} line={result.passportLine} />
+              )}
           </div>
 
           {result.legalSource && (

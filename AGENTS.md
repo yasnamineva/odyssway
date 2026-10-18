@@ -323,10 +323,17 @@ here — they resolve from the existing `nationality-rules.json` + `countries.js
   requirement: "visa_free" | "eta_required" | "visa_required" | "visa_on_arrival",
   stayPolicy: StayPolicy,        // §6.7
   documentsNeeded: string[],
+  passportValidity?: PassportValidityRule,  // §1.6 (2026-10-18), see below
   notes?: string,
   legal_source, verified_at, verified_by, status
 }
 ```
+`passportValidity` is a structured restatement of the row's own passport line in
+`documentsNeeded` — `{ kind: "min_period", amount, unit, from: "arrival" | "departure" }`
+or `{ kind: "whole_stay" }` — set only when that wording names its reference date.
+"Valid for at least 6 months" with no reference date gets no rule: Trip Check then shows
+remaining validity, never a guessed verdict. `validate-data` fails if the field and the
+wording disagree. Passport dates entered in Trip Check stay in the browser.
 
 ### 5.11 `data/customs-items.json` (destination × item category)
 Generalizes the never-built `eu-items.json` (5.7) to any destination, keyed by

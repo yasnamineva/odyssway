@@ -233,3 +233,17 @@ describe("resolveTripCheck", () => {
     expect(result.items[0]!.query).toBe("wine");
   });
 });
+
+describe("resolveTripCheck — passport validity (§1.6)", () => {
+  it("carries the structured rule when the wording names its reference date", () => {
+    const result = resolveTripCheck("US", "KE", []);
+    expect(result.passportLine).toMatch(/six months beyond your planned arrival/);
+    expect(result.passportValidity).toEqual({ kind: "min_period", amount: 6, unit: "months", from: "arrival" });
+  });
+
+  it("has no rule when the wording doesn't say which date the period counts from", () => {
+    const result = resolveTripCheck("US", "AE", []);
+    expect(result.passportLine).toMatch(/at least 6 months/);
+    expect(result.passportValidity).toBeUndefined();
+  });
+});

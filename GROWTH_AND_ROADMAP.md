@@ -562,3 +562,11 @@ gate was passed or missed, and why.
   one month's supply, applied for a month ahead, with the documents Art. 57 of Decreto
   45161-S lists. The decree couldn't be re-read today, so that procedure keeps the row's
   own verification date.
+- **2026-10-18. Passport validity checker (§1.6).** Trip Check now asks (optionally) for
+  arrival, departure and passport expiry dates and says whether the passport meets the
+  destination's rule — for the 368 entry rows whose wording names its reference date
+  ("6 months from arrival", "3 months beyond departure", "whole stay"). Rows that give a
+  period without a reference date show remaining validity instead of a verdict. Engine:
+  `checkPassportValidity`, calendar-month arithmetic with end-of-month clamping, 14 tests.
+  The validator fails if a structured rule drifts from its row's wording. Dates never
+  leave the browser.

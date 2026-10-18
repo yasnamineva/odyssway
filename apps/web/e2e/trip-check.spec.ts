@@ -191,3 +191,24 @@ test("a stopover shows that country's stated transit rule for each item", async 
   await expect(transit.first()).toContainText("Applies in transit too");
   await expect(transit.nth(1)).toContainText("Not yet verified for Hong Kong");
 });
+
+test("checks passport validity against a rule that names its reference date, without putting dates in the URL", async ({
+  page,
+}) => {
+  await page.goto("/trip-check");
+  await pickCombobox(page, "tc-nationality", "United States", "United States");
+  await pickCombobox(page, "tc-destination", "Kenya", "Kenya");
+  await page.getByTestId("tc-submit").click();
+
+  const panel = page.getByTestId("passport-check");
+  await expect(panel).toBeVisible();
+  await panel.getByLabel("Arrival date").fill("2027-01-10");
+  await panel.getByLabel("Departure date").fill("2027-01-20");
+  await panel.getByLabel("Passport expiry date").fill("2027-07-09");
+  await expect(page.getByTestId("passport-result")).toContainText("must be valid until at least 2027-07-10");
+  await expect(page.getByTestId("passport-result")).toContainText("1 day too early");
+
+  await panel.getByLabel("Passport expiry date").fill("2027-07-10");
+  await expect(page.getByTestId("passport-result")).toContainText("Meets the rule");
+  expect(page.url()).not.toContain("2027");
+});

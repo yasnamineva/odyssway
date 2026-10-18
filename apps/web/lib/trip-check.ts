@@ -3,6 +3,7 @@ import {
   WINDOW_DAYS,
   type CustomsItemRecord,
   type StayPolicy,
+  type PassportValidityRule,
 } from "@odyssway/engine";
 import { countries, countryName, schengenCountries } from "./countries";
 import {
@@ -47,6 +48,9 @@ export interface TripCheckResult {
   basis: EntryBasis;
   stayPolicy: StayPolicy | null;
   documentsNeeded: string[];
+  /** The documentsNeeded line about passport validity, and its structured rule when it names a reference date (§1.6). */
+  passportLine?: string;
+  passportValidity?: PassportValidityRule;
   notes?: string;
   legalSource?: { name: string; url: string };
   /** When the cited row was last checked against its source (YYYY-MM-DD). */
@@ -101,6 +105,8 @@ function resolveEntry(
   | "basis"
   | "stayPolicy"
   | "documentsNeeded"
+  | "passportLine"
+  | "passportValidity"
   | "notes"
   | "legalSource"
   | "verifiedAt"
@@ -212,6 +218,8 @@ function resolveEntry(
     basis,
     stayPolicy: row.stayPolicy,
     documentsNeeded: row.documentsNeeded,
+    passportLine: row.documentsNeeded.find((d) => /passport|travel document/i.test(d) && /valid/i.test(d)),
+    passportValidity: row.passportValidity,
     notes: row.notes,
     legalSource: row.legal_source,
     verifiedAt: row.verified_at ?? undefined,

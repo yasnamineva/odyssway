@@ -177,6 +177,19 @@ export const stayPolicySchema = z.discriminatedUnion("kind", [
   z.object({ kind: z.literal("visa_required") }),
 ]);
 
+// --- Passport validity (packages/engine/src/passport-validity.ts) as data ---
+// Structured restatement of a row's own documentsNeeded wording; only set when that
+// wording names the reference date (arrival/entry or departure/end of stay).
+export const passportValiditySchema = z.discriminatedUnion("kind", [
+  z.object({
+    kind: z.literal("min_period"),
+    amount: z.number().int().positive(),
+    unit: z.enum(["months", "days"]),
+    from: z.enum(["arrival", "departure"]),
+  }),
+  z.object({ kind: z.literal("whole_stay") }),
+]);
+
 // --- §5.10 data/entry-requirements.json (nationality × non-Schengen destination) ---
 export const entryRequirementSchema = z
   .object({
@@ -185,6 +198,7 @@ export const entryRequirementSchema = z
     requirement: z.enum(["visa_free", "eta_required", "visa_required", "visa_on_arrival"]),
     stayPolicy: stayPolicySchema,
     documentsNeeded: z.array(z.string().min(1)).min(1),
+    passportValidity: passportValiditySchema.optional(),
     notes: z.string().optional(),
     ...verificationFields,
   })
