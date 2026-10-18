@@ -15572,5 +15572,67 @@
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "medical-devices-my",
+    "names": [
+      "medical device",
+      "medical devices",
+      "medical equipment",
+      "glucose monitor",
+      "glucose monitoring device",
+      "hearing aid",
+      "hearing aids",
+      "contact lenses",
+      "test strips"
+    ],
+    "destination": "MY",
+    "category": "other",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Medical devices for personal use are exempt from device registration, the establishment licence and the customs import permit, under the Medical Device (Exemption) Order 2024. They must be for you or your immediate family only, not for sale or distribution, and keep all their original labels. Quantity depends on the type: low- or medium-risk devices (for example glucose monitoring devices, hearing aids, in-vitro diagnostic products): 1 piece of each type; consumables (for example contact lenses, test strips): up to 3 months' supply.",
+      "quantity": "1 piece of each low/medium-risk device; 3 months' supply of consumables"
+    },
+    "notes": "The Medical Device Authority (MDA) may ask for a formal prescription or a letter of recommendation from a registered healthcare professional; some device types don't need one. MDA also lists as a requirement that no same or similar device is registered in Malaysia (search the MDA register at mdar.mda.gov.my). Questions go to the MDA's Policy and Strategic Planning Division (+603 8230 0253).",
+    "summary": "Personal-use devices need no permit: 1 of each device (e.g. a glucose monitor or hearing aid), 3 months of consumables.",
+    "legal_source": {
+      "name": "Medical Device Authority (Malaysia) — Personal Use Medical Device (uploaded 10 July 2026)",
+      "url": "https://www.mda.gov.my/index.php/industry/exemption/personal-use-medical-device"
+    },
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "medical-devices-tw",
+    "names": [
+      "medical device",
+      "medical devices",
+      "contact lenses",
+      "daily disposable contact lenses",
+      "corrective lenses",
+      "medical masks",
+      "condoms",
+      "tampons",
+      "adhesive bandages",
+      "liquid bandage",
+      "cotton swabs"
+    ],
+    "destination": "TW",
+    "category": "other",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Travellers can bring these medical devices for personal use without special approval from the TFDA, each category at most once every 6 months: adhesive bandages, up to 60 pieces; liquid bandage, up to 4 tubes (jars, bottles, units); cotton swabs, up to 200; condoms, up to 60; tampons, up to 120; daily disposable contact lenses, 60 per diopter, one brand and two diopters per person; corrective lenses, 1 pair; medical masks, up to 250.",
+      "quantity": "per-item caps; each category once every 6 months"
+    },
+    "notes": "These limits come from Article 6, Paragraph 4 of the Regulations Governing Special Approval for Manufacture or Import of Specific Medical Devices. The TFDA's page lists only these items; it doesn't say how other devices (such as CPAP machines or glucose monitors) are treated. Devices brought in this way may not be sold, transferred or given to anyone else; selling them can mean a fine of NT$30,000 to NT$1,000,000 under the Medical Devices Act.",
+    "summary": "Listed items only, with caps (e.g. 60 daily contact lenses per diopter, 250 medical masks), once every 6 months per category.",
+    "legal_source": {
+      "name": "Taiwan Food and Drug Administration — Be careful when bringing medical devices into Taiwan for personal use (updated 6 July 2026)",
+      "url": "https://www.fda.gov.tw/ENG/newsContent.aspx?id=31577"
+    },
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]

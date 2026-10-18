@@ -547,3 +547,8 @@ gate was passed or missed, and why.
   now start with the country) and 11 descriptions over 158 characters. Entry-requirement
   answers now read "travelling to the United Kingdom". Audit is clean: no long, missing
   or duplicate titles or descriptions.
+- **2026-10-18. Medical devices: Malaysia and Taiwan.** Malaysia's Medical Device
+  Authority exempts personal-use devices from registration and the import permit (1 of
+  each low/medium-risk device such as a glucose monitor or hearing aid; 3 months of
+  consumables). Taiwan's TFDA lists the items travellers can bring without approval, each
+  with a cap. Lighthouse re-run: performance 95–98, accessibility/best practices/SEO 100.

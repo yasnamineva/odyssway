@@ -3554,7 +3554,9 @@ Not re-dated:
 Added medical-devices-sg (HSA personal-import page), medical-devices-th (Thai FDA health
 products page) and medical-devices-jp (Japan Customs FAQ 1806). Device types such as CPAP
 machines, insulin pumps and continuous glucose monitors are not named on any of these
-pages, so they aren't search names. Still open: Australia (TGA page unreachable from here).
+pages, so they aren't search names. Added later the same day: medical-devices-my (MDA personal-use exemption page) and
+medical-devices-tw (TFDA traveller notice). Still open: Australia (TGA page unreachable
+from here); Korea, UAE, Saudi Arabia (no official traveller device page found).
 
 OTC products controlled abroad (§1.4), blocked: no current official page names Vicks
 inhalers / levmetamfetamine for Japan (NCD application page silent; US Embassy Japan page
