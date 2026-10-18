@@ -32,6 +32,24 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "medication-supply-limits-by-country",
+    title: "How much medicine can you bring? Supply limits by country",
+    seoTitle: "How Much Medication Can You Bring Abroad? Limits by Country",
+    seoDescription:
+      "From 15 days in Serbia to 6 months in Montenegro: personal medicine limits in 30+ countries, and where controlled medicine needs a permit before you travel.",
+    dek: "The usual limit is 3 months, but it ranges from 15 days to 6 months, and some countries need a permit weeks before you arrive.",
+    date: "2026-10-18",
+    category: "Medicine",
+    legalSource: {
+      name: "Health Sciences Authority (Singapore) — Travelling with medications to Singapore",
+      url: "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-medications/",
+    },
+    verifiedAt: "2026-10-18",
+    changelogDataset: "customs-items",
+    destinationCodes: ["US", "GB", "CA", "AU", "SG", "KR", "JP", "TH", "RS", "TZ", "HK", "PH"],
+    photo: "blog-supply",
+  },
+  {
     slug: "vyvanse-tramadol-controlled-abroad",
     title: "Vyvanse and tramadol: why the rules change so much from country to country",
     seoTitle: "Can You Travel With Vyvanse or Tramadol? Rules by Country",

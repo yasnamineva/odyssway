@@ -532,3 +532,7 @@ gate was passed or missed, and why.
   "PDEA S2-licensed physician", as the regulation does; Albania names the law its
   prohibition refers to. Builds are now skipped for pushes that don't touch the site,
   and pushes are batched after local verification.
+- **2026-10-18. Data story: medicine supply limits by country (§2.6).** New post comparing
+  personal-medicine limits in 36 countries (15 days in Serbia to 6 months in Montenegro;
+  no fixed number in nine) and where controlled medicine needs a permit before you
+  arrive. Every figure restates a verified row and links to that country's page.
