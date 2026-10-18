@@ -15465,5 +15465,112 @@
     "verified_at": "2026-10-17",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "medical-devices-sg",
+    "names": [
+      "medical device",
+      "medical devices",
+      "medical equipment"
+    ],
+    "destination": "SG",
+    "category": "other",
+    "verdict": "depends",
+    "limits": {
+      "description": "Bringing a medical device into Singapore for personal use needs HSA approval first, unless it's already in use when you arrive (for example an implanted device, or one already in contact with your skin or eyes). Each approval covers at most 3 months' supply; larger imports are rejected. For a device your doctor or dentist prescribed, you need their letter confirming and justifying the need.",
+      "quantity": "max 3 months' supply per approval"
+    },
+    "notes": "Not allowed through personal import at all: HIV test kits; radiation-emitting devices (for example X-ray, laser or ultrasound) that are potentially hazardous or meant for use by trained medical personnel; and devices to be administered by a qualified practitioner. You don't need to declare approved devices on arrival, but keep the supporting documents and the approval email with you for customs checks during your stay, and take the devices with you when you leave. You may not sell or give them to anyone except the family members they were meant for. HSA's page doesn't list device types (such as CPAP machines or glucose monitors) by name.",
+    "summary": "Needs HSA approval at least 10 working days ahead, unless the device is already in use on you. Up to 3 months' supply.",
+    "procedure": {
+      "title": "Get HSA approval for a medical device",
+      "authority": "Health Sciences Authority (HSA)",
+      "applyUrl": "https://go.gov.sg/hsamdpersonalimport2",
+      "leadTime": "At least 10 working days before you arrive.",
+      "documents": [
+        "If the device was prescribed to you: a letter from your doctor or dentist confirming and justifying your need for it."
+      ],
+      "steps": [
+        "Check the device isn't one HSA excludes from personal import: HIV test kits, hazardous radiation-emitting devices, and devices to be administered by a qualified practitioner.",
+        "Submit HSA's online personal-import form for medical devices at least 10 working days before you arrive. Applications are reviewed case by case.",
+        "Get the approval before you start travelling. Each approval covers up to 3 months' supply.",
+        "Keep the approval email and your documents with you during your stay, and take the device with you when you leave."
+      ],
+      "atTheBorder": "You don't need to declare approved devices, but customs officers may ask to see the approval email and your documents.",
+      "sources": [
+        {
+          "name": "Health Sciences Authority — Travelling with medical devices to Singapore",
+          "url": "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-import/"
+        }
+      ],
+      "verified_at": "2026-10-18",
+      "verified_by": "agent:claude-opus-5-5"
+    },
+    "transit": {
+      "rule": "exempt_airside",
+      "description": "You don't need HSA approval for a medical device if you stay within the transit zones while transiting Singapore.",
+      "source": {
+        "name": "Health Sciences Authority — Travelling with medical devices to Singapore",
+        "url": "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-import/"
+      },
+      "verified_at": "2026-10-18"
+    },
+    "legal_source": {
+      "name": "Health Sciences Authority — Travelling with medical devices to Singapore",
+      "url": "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-import/"
+    },
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "medical-devices-th",
+    "names": [
+      "medical device",
+      "medical devices",
+      "medical equipment"
+    ],
+    "destination": "TH",
+    "category": "other",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "A medical device in the amount you need for personal use can be brought in as part of your personal effects, with three documents: (a) information about the device, such as its trade name, label, specifications and the manufacturer's name and location; (b) a letter explaining its purpose and certifying that it won't be sold; and (c) a medical certificate with your details, certifying that you have a condition for which the device is needed.",
+      "quantity": "amount required for personal use"
+    },
+    "notes": "The Thai FDA's page doesn't name device types or set a numeric limit. Products that are legally prohibited from import into Thailand can't be brought in this way.",
+    "summary": "Allowed in personal-use amounts with device information, a not-for-sale letter and a medical certificate.",
+    "legal_source": {
+      "name": "Thai FDA — Passenger belongings related to health products into the Kingdom of Thailand (foods, cosmetics, herbal products)",
+      "url": "https://en.fda.moph.go.th/guideline-of-importation-for-personal-use/bringing-of-health-products-into-the-kingdom-of-thailand-01/"
+    },
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "medical-devices-jp",
+    "names": [
+      "medical device",
+      "medical devices",
+      "medical equipment",
+      "contact lenses",
+      "disposable contact lenses"
+    ],
+    "destination": "JP",
+    "category": "other",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Medical equipment for home use by the general public: one unit (the minimum unit), for example electric massage equipment or a low-frequency therapy apparatus. Disposable contact lenses: up to two months' consumption.",
+      "quantity": "1 unit of home-use equipment; disposable contact lenses within 2 months' consumption"
+    },
+    "notes": "These are the personal-import limits under Japan's Pharmaceuticals and Medical Devices Act, which lets you import for personal use without a business licence only within these limits. Japan Customs refers questions about anything beyond them to a special pharmaceutical inspector at a Regional Bureau of Health and Welfare (for Tokyo, Yokohama and Hakodate: yakkan@mhlw.go.jp). The page doesn't name other device types, such as CPAP machines or glucose monitors.",
+    "summary": "One unit of home-use medical equipment, and disposable contact lenses for up to two months.",
+    "legal_source": {
+      "name": "Japan Customs — 1806 Private importation of drugs, cosmetics, etc. (FAQ)",
+      "url": "https://www.customs.go.jp/english/c-answer_e/imtsukan/1806_e.htm"
+    },
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]

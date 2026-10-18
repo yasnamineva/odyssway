@@ -536,3 +536,9 @@ gate was passed or missed, and why.
   personal-medicine limits in 36 countries (15 days in Serbia to 6 months in Montenegro;
   no fixed number in nine) and where controlled medicine needs a permit before you
   arrive. Every figure restates a verified row and links to that country's page.
+- **2026-10-18. Medical devices (§1.4, customs only).** New rows for Singapore (HSA
+  approval at least 10 working days ahead unless the device is already in use; up to 3
+  months' supply; airside transit exempt; procedure included), Thailand (personal-use
+  amount with device information, a not-for-sale letter and a medical certificate) and
+  Japan (one unit of home-use equipment; disposable contact lenses for two months). No
+  source names CPAP machines or glucose monitors, so neither is used as a search name.

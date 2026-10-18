@@ -3548,3 +3548,14 @@ Not re-dated:
   guidance (liquids over 100 ml, syringes in hand luggage). AGENTS §2 keeps security
   screening out of customs answers. Options: keep it as-is, or move it out and leave the
   GB injectables question to prescription-medication-gb/controlled-medication-gb.
+
+## Medical devices (2026-10-18)
+
+Added medical-devices-sg (HSA personal-import page), medical-devices-th (Thai FDA health
+products page) and medical-devices-jp (Japan Customs FAQ 1806). Device types such as CPAP
+machines, insulin pumps and continuous glucose monitors are not named on any of these
+pages, so they aren't search names. Still open: Australia (TGA page unreachable from here).
+
+OTC products controlled abroad (§1.4), blocked: no current official page names Vicks
+inhalers / levmetamfetamine for Japan (NCD application page silent; US Embassy Japan page
+now defers entirely to the Japanese government).
