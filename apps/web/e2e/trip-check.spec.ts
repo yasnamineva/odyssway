@@ -212,3 +212,13 @@ test("checks passport validity against a rule that names its reference date, wit
   await expect(page.getByTestId("passport-result")).toContainText("Meets the rule");
   expect(page.url()).not.toContain("2027");
 });
+
+test("entry-requirement pages carry the same passport check", async ({ page }) => {
+  await page.goto("/destinations/kenya/united-states");
+  const panel = page.getByTestId("passport-check");
+  await expect(panel).toBeVisible();
+  await panel.getByLabel("Arrival date").fill("2027-01-10");
+  await panel.getByLabel("Departure date").fill("2027-01-20");
+  await panel.getByLabel("Passport expiry date").fill("2028-01-01");
+  await expect(page.getByTestId("passport-result")).toContainText("Meets the rule");
+});

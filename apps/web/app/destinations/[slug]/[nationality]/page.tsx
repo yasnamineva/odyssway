@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import BreadcrumbJsonLd from "../../../../components/BreadcrumbJsonLd";
+import PassportValidityCheck from "../../../../components/PassportValidityCheck";
 import SourceNote from "../../../../components/SourceNote";
 import Photo from "../../../../components/content/Photo";
 import { destinationPhoto, photoOgImage } from "../../../../lib/photos";
@@ -65,6 +66,7 @@ export default async function TravelPairPage({ params }: { params: Promise<Param
   const tc = await getTranslations("common");
   const ts = await getTranslations("tripCheck");
   const { row } = pair;
+  const passportLine = row.documentsNeeded.find((d) => /passport|travel document/i.test(d) && /valid|expiry/i.test(d));
   const photo = destinationPhoto(pair.destination.code);
 
   // The comparisons are what make each page more than its one row: the same
@@ -150,6 +152,10 @@ export default async function TravelPairPage({ params }: { params: Promise<Param
             </div>
           )}
         </dl>
+        {passportLine &&
+          (row.passportValidity || /\b(\d+|one|two|three|six)[ -](months?|days?)\b/i.test(passportLine)) && (
+            <PassportValidityCheck rule={row.passportValidity} line={passportLine} headingLevel={2} />
+          )}
         <SourceNote
           className="mt-4"
           name={row.legal_source.name}

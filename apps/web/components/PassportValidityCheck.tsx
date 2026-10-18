@@ -19,10 +19,14 @@ import { useId, useState } from "react";
 export default function PassportValidityCheck({
   rule,
   line,
+  headingLevel = 3,
 }: {
   rule?: PassportValidityRule;
   line: string;
+  /** 3 inside a Trip Check result; 2 where the panel sits directly under the page's h1. */
+  headingLevel?: 2 | 3;
 }) {
+  const Heading = headingLevel === 2 ? "h2" : "h3";
   const t = useTranslations("tripCheck.passport");
   const id = useId();
   const [arrival, setArrival] = useState("");
@@ -55,7 +59,7 @@ export default function PassportValidityCheck({
 
   return (
     <div className="mt-4 rounded-xl border border-slate-200 bg-slate-50 p-4" data-testid="passport-check">
-      <h3 className="text-sm font-semibold text-slate-900">{t("title")}</h3>
+      <Heading className="text-sm font-semibold text-slate-900">{t("title")}</Heading>
       <p className="mt-1 text-xs text-slate-600">{t("rule", { line })}</p>
       <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-3">
         {field("arrival", arrival, setArrival)}

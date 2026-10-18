@@ -575,3 +575,6 @@ gate was passed or missed, and why.
   confirmed on Your Europe today) and check it. The extractor also recognises "after the
   date you plan to leave" and "expiry date … after the planned departure" (New Zealand,
   Albania): 374 rows now carry a structured rule.
+- **2026-10-18. Passport check on entry-requirement pages.** The same check now appears on
+  every /destinations/[slug]/[nationality] page whose passport rule states a period
+  (Lighthouse on Kenya/US: 97 / 100 / 100 / 100).
