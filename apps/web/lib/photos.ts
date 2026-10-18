@@ -86,6 +86,7 @@ export const photos = {
   "blog-kratom": { width: 1280, height: 853, author: "Ninetechno", page: "https://pixabay.com/photos/moringa-moringa-oleifera-6582660/" },
   "blog-vyvanse": { width: 1280, height: 853, author: "stux", page: "https://pixabay.com/photos/tablets-pills-donor-rationing-253160/" },
   "blog-supply": { width: 1280, height: 848, author: "ds_30", page: "https://pixabay.com/photos/pill-healthcare-medicine-packing-4878997/" },
+  "blog-devices": { width: 1280, height: 960, author: "liberatori", page: "https://pixabay.com/photos/glucometer-technology-device-5977173/" },
   "blog-transit": { width: 1280, height: 709, author: "Tumisu", page: "https://pixabay.com/photos/airport-flight-terminal-6553696/" },
 } as const satisfies Record<string, PhotoMeta>;
 

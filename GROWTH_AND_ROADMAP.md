@@ -552,3 +552,7 @@ gate was passed or missed, and why.
   each low/medium-risk device such as a glucose monitor or hearing aid; 3 months of
   consumables). Taiwan's TFDA lists the items travellers can bring without approval, each
   with a cap. Lighthouse re-run: performance 95–98, accessibility/best practices/SEO 100.
+- **2026-10-18. Blog: travelling with a medical device.** Compares the six verified device
+  rows (Singapore approval, Malaysia one-of-each, Taiwan's capped list, Thailand's
+  documents, Japan's one unit, Ecuador's duty-free meters) and links to each row on its
+  destination page, which now gives every customs line an anchor.

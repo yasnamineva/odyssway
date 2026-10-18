@@ -191,7 +191,7 @@ export default async function DestinationPage({ params }: { params: Promise<Para
                 </>
               );
               return (
-                <li key={item.slug}>
+                <li key={item.slug} id={item.slug} className="scroll-mt-20">
                   {category ? (
                     <a
                       href={`/bring/${category.slug}/${destinationSlug(dest.name)}`}

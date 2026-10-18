@@ -32,6 +32,24 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "travelling-with-medical-devices",
+    title: "Travelling with a medical device: what customs allows",
+    seoTitle: "Travelling With Medical Devices: Customs Rules by Country",
+    seoDescription:
+      "Singapore needs approval for devices not already in use; Malaysia allows one of each; Taiwan caps contact lenses. Customs rules for medical devices, compared.",
+    dek: "Glucose meters, hearing aids and contact lenses are regulated products. Some countries cap them; Singapore wants approval first.",
+    date: "2026-10-18",
+    category: "Medicine",
+    legalSource: {
+      name: "Health Sciences Authority — Travelling with medical devices to Singapore",
+      url: "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-import/",
+    },
+    verifiedAt: "2026-10-18",
+    changelogDataset: "customs-items",
+    destinationCodes: ["SG", "MY", "TW", "TH", "JP", "EC"],
+    photo: "blog-devices",
+  },
+  {
     slug: "medication-supply-limits-by-country",
     title: "How much medicine can you bring? Supply limits by country",
     seoTitle: "How Much Medication Can You Bring Abroad? Limits by Country",
