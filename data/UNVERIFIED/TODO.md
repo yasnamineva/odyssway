@@ -3619,3 +3619,17 @@ now defers entirely to the Japanese government).
   their notes also contain hedges ("realistically", "essentially never", "in practice")
   to clean up. 33 rows whose sources were unreadable (TGA/AU, help.cbp.gov, customs.gov.ng,
   customs.gov.vn, thailand.go.th, gob.mx/senasica, chennaicustoms, rwandafda, mpi.govt.nz…).
+
+## Hedge cleanup (2026-10-18)
+
+Removed inference/editorial wording from 16 rows (food-plant-mx, fresh-produce-th, weapons-eg,
+weapons-ng, weapons-in, weapons-au, weapons-sa, controlled-medication-eg — including a
+press-sourced "reported detentions" claim — weapons-br, weapons-nz, controlled-medication-ph,
+weapons-id, drones-cn, drones-vn, fresh-produce-ie, cbd-cl).
+Flagged, not edited (need a source re-read first):
+- Verdict rests on our inference: cannabis-jp ("not realistically available — treat as
+  prohibited" for an MHLW Import Permission), meat-dairy-jp ("essentially never have … treat
+  as prohibited in practice"), meat-dairy-th ("effectively off-limits").
+- "In practice" claims that may or may not be on the source: drones-jp (Japanese address,
+  7–10 business days), drones-kr, weapons-ma (port-of-arms permit then DGSN), weapons-ge,
+  plastic-bags-rw.
