@@ -73,8 +73,10 @@ handles this natively:
    e2e) runs on GitHub Actions in parallel — make Vercel wait on it via
    "Ignored Build Step"/checks if you want gating.
 5. Build cost: `apps/web/vercel.json` skips the build when a push doesn't touch
-   site inputs (`apps/web`, `packages`, `content`, `data`, workspace manifests)
-   and disables deployments for the `source-watch/report` and
+   site inputs (`apps/web`, `packages`, `content`, `data`, workspace manifests);
+   any error in that check, such as the previous commit missing from Vercel's
+   shallow clone, means "build". It also disables deployments for the
+   `source-watch/report` and
    `redesign-and-data-expansion` branches. Changes are verified on a local
    production build and pushed to `main` in batches, not one push per change.
    Keep **Settings → Build & Deployment → Build Machine** on Standard.
