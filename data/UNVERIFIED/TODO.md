@@ -3630,11 +3630,8 @@ Flagged, not edited (need a source re-read first):
 - meat-dairy-jp: rewritten from MAFF's own wording (illegal; certificates "generally
   difficult to get"; dairy in passenger baggage excluded; fine up to ¥3m) and re-dated.
   meat-dairy-th: note now says only what the FDA page covers.
-- **HIGH PRIORITY — cannabis-jp:** the cited Tokyo Customs page says import "requires an
-  Import Permission" from MHLW, not "prohibited". The official English translation of the
-  Cannabis Control Act (Art. 4: import prohibited except licensed researchers) is the 1999
-  version; the law has since been amended and renamed. Verdict left as "prohibited" until the
-  current Japanese text (e-Gov) is read — flipping it to "depends" could mislead travellers.
-- "In practice" claims that may or may not be on the source: drones-jp (Japanese address,
-  7–10 business days), drones-kr, weapons-ma (port-of-arms permit then DGSN), weapons-ge,
-  plastic-bags-rw.
+- cannabis-jp: **resolved 2026-10-18.** Read the current Narcotics and Psychotropics Control Act
+  on e-Gov: cannabis is a narcotic (Art. 2); only licensed importers may import narcotics,
+  except a traveller with MHLW permission to treat their own illness (Art. 13); Art. 12's
+  absolute bans cover heroin and opium powder only. Verdict now "depends", summary leads with
+  the illegality.

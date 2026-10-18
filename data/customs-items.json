@@ -1158,15 +1158,28 @@
     ],
     "destination": "JP",
     "category": "cbd_cannabis",
-    "verdict": "prohibited",
-    "notes": "Products extracted or manufactured from any part of the cannabis plant other than the stalks or seeds (leaves, buds, branches, roots) are regulated as 'cannabis' under the Cannabis Control Act. Importing them requires an Import Permission from the Ministry of Health, Labour and Welfare, which is not realistically available for personal travel use — treat as prohibited.",
+    "verdict": "depends",
+    "notes": "Under Japan's Narcotics and Psychotropics Control Act as it now stands, cannabis is a narcotic (Art. 2). Only licensed narcotics importers may import narcotics; the one exception for travellers is someone entering Japan with health ministry (MHLW) permission to carry them in to treat their own illness (Art. 13). For parcels, Tokyo Customs asks for a certificate of manufacture and a laboratory analysis report for products made only from the stalks or seeds of the plant. CBD products have their own entry.",
     "legal_source": {
-      "name": "Tokyo Customs — Cannabis Control Act",
-      "url": "https://www.customs.go.jp/tokyo/english/yuubin/taimatorishimari.htm"
+      "name": "Narcotics and Psychotropics Control Act (Act No. 14 of 1953, as amended), Arts. 2, 12 and 13 — e-Gov law database",
+      "url": "https://laws.e-gov.go.jp/law/328AC0000000014"
     },
-    "verified_at": "2026-08-11",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "summary": "Cannabis is a narcotic in Japan. Importing it is illegal unless you have health ministry permission to treat your own illness.",
+    "_sources": [
+      {
+        "claim": "Cannabis is a narcotic; import only by licensed importers, or by a traveller with MHLW permission to treat their own illness",
+        "name": "Narcotics and Psychotropics Control Act (Act No. 14 of 1953, as amended), Arts. 2, 12 and 13 — e-Gov law database",
+        "url": "https://laws.e-gov.go.jp/law/328AC0000000014"
+      },
+      {
+        "claim": "Parcels: Import Permission for cannabis products; certificate of manufacture and analysis report for stalk/seed products",
+        "name": "Tokyo Customs — Cannabis Control Act",
+        "url": "https://www.customs.go.jp/tokyo/english/yuubin/taimatorishimari.htm"
+      }
+    ]
   },
   {
     "slug": "cbd-jp",
