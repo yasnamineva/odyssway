@@ -646,3 +646,7 @@ gate was passed or missed, and why.
   with dextromethorphan up to 10 years or KRW 100 million. New pages answer "can I bring NyQuil /
   DayQuil / Robitussin / Mucinex / Delsym / Concerta / Medikinet to South Korea", and Ritalin's
   comparison now includes Korea.
+- **2026-10-19. UK medicine corrected; licence how-to (§1.3).** The UK's 3-month limit applies
+  to medicine containing a controlled drug, not to all prescription medicine; the ordinary
+  medicine row said otherwise and is fixed. The controlled row now has the Home Office's
+  step-by-step for a licence above 3 months (exceptional circumstances only).
