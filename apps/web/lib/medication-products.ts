@@ -44,6 +44,13 @@ const PRODUCTS: MedicationProduct[] = [
   { slug: "hgh", name: "HGH (growth hormone)", term: "hgh", inSentence: "HGH" },
   { slug: "melatonin", name: "Melatonin", term: "melatonin", inSentence: "melatonin" },
   { slug: "kratom", name: "Kratom", term: "kratom", inSentence: "kratom" },
+  { slug: "concerta", name: "Concerta", term: "concerta" },
+  { slug: "medikinet", name: "Medikinet", term: "medikinet" },
+  { slug: "nyquil", name: "NyQuil", term: "nyquil" },
+  { slug: "dayquil", name: "DayQuil", term: "dayquil" },
+  { slug: "robitussin", name: "Robitussin", term: "robitussin" },
+  { slug: "mucinex", name: "Mucinex", term: "mucinex" },
+  { slug: "delsym", name: "Delsym", term: "delsym" },
 ];
 
 export interface ProductPair {

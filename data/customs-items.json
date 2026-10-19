@@ -7815,7 +7815,13 @@
       "amphetamine",
       "ritalin",
       "methylphenidate",
-      "stimulant medication"
+      "stimulant medication",
+      "concerta",
+      "medikinet",
+      "alprazolam",
+      "zolpidem",
+      "codeine",
+      "oxycodone"
     ],
     "destination": "KR",
     "category": "medication",
@@ -7824,12 +7830,12 @@
       "description": "Anyone entering Korea with medicine containing a controlled substance needs a permit from the Ministry of Food and Drug Safety (MFDS) before arrival, whatever their nationality. You can bring only what you'll use during your stay, plus up to 5 days' extra for delays, and never more than a 90-day supply. Carry the medicine in your hand luggage.",
       "quantity": "What you'll use during your stay, plus up to 5 days' extra, never more than 90 days' supply"
     },
-    "notes": "Medicine containing controlled substances can't be posted to Korea: MFDS says shipped medicine is seized and destroyed or returned. The permit is only for the person who takes the medicine, not family or friends. MFDS's guide doesn't say whether amphetamine products such as Adderall can be permitted, so ask MFDS before you travel with one. If you're not eligible, or you'll stay longer than 3 months, MFDS suggests asking your doctor about alternatives you can get prescribed in Korea.",
+    "notes": "Medicine containing controlled substances can't be posted to Korea: MFDS says shipped medicine is seized and destroyed or returned. The permit is only for the person who takes the medicine, not family or friends. MFDS's guide doesn't say whether amphetamine products such as Adderall can be permitted, so ask MFDS before you travel with one. If you're not eligible, or you'll stay longer than 3 months, MFDS suggests asking your doctor about alternatives you can get prescribed in Korea. Korea Customs warns that bringing in medicine with controlled ingredients without that approval is punishable under the Narcotics Control Act, even if it was sold or prescribed abroad: life imprisonment or at least 5 years for ingredients such as codeine, morphine, oxycodone, methylphenidate (it names Ritalin, Concerta and Medikinet) and amphetamine isomers; up to 10 years or a fine of up to KRW 100 million for ingredients such as alprazolam, zolpidem, clonazepam and lorazepam.",
     "legal_source": {
       "name": "Ministry of Food and Drug Safety (Korea) — permit requirement for entering Korea with medicines containing controlled substances",
       "url": "https://www.mfds.go.kr/eng/brd/m_60/view.do?seq=75669"
     },
-    "verified_at": "2026-10-14",
+    "verified_at": "2026-10-19",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -7852,6 +7858,11 @@
         "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
         "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
         "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      },
+      {
+        "claim": "Penalties by ingredient; named products seized at customs; self-treatment exception with MFDS approval",
+        "name": "Korea Customs Service — Precautions for medicines containing narcotic ingredients (마약성분 함유 의약품 주의사항)",
+        "url": "https://www.customs.go.kr/kcs/cm/cntnts/cntntsView.do?mi=13807&cntntsId=7640"
       }
     ],
     "procedure": {
@@ -7894,6 +7905,34 @@
       },
       "verified_at": "2026-10-14"
     }
+  },
+  {
+    "slug": "dextromethorphan-kr",
+    "names": [
+      "dextromethorphan",
+      "dxm",
+      "cough medicine",
+      "nyquil",
+      "dayquil",
+      "robitussin",
+      "mucinex",
+      "delsym"
+    ],
+    "destination": "KR",
+    "category": "medication",
+    "verdict": "depends",
+    "summary": "Cough and cold medicines with dextromethorphan are controlled in Korea. Bring them only with prior approval from Korea's drug safety ministry.",
+    "limits": {
+      "description": "Korea Customs lists dextromethorphan as a psychotropic ingredient under the Narcotics Control Act: bringing it in without approval is punishable by up to 10 years' imprisonment or a fine of up to KRW 100 million. The exception is carrying medicine for your own treatment with prior approval from the Minister of Food and Drug Safety (apply through nedrug.mfds.go.kr; see Korea's controlled-medication entry)."
+    },
+    "notes": "Korea Customs names NyQuil, DayQuil, Robitussin, Mucinex and Delsym among dextromethorphan medicines it has found at the border. Not every version of these brands contains dextromethorphan: check the active ingredients on your pack.",
+    "legal_source": {
+      "name": "Korea Customs Service — Precautions for medicines containing narcotic ingredients (마약성분 함유 의약품 주의사항)",
+      "url": "https://www.customs.go.kr/kcs/cm/cntnts/cntntsView.do?mi=13807&cntntsId=7640"
+    },
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   },
   {
     "slug": "prescription-medication-cn",
