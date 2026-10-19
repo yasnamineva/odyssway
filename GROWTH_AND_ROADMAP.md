@@ -650,3 +650,8 @@ gate was passed or missed, and why.
   to medicine containing a controlled drug, not to all prescription medicine; the ordinary
   medicine row said otherwise and is fixed. The controlled row now has the Home Office's
   step-by-step for a licence above 3 months (exceptional circumstances only).
+- **2026-10-19. Indonesia medicine (Horizon 1 depth).** Indonesia now has real numbers from
+  its drug authority: 30 tablets or 3 creams/liquids per product without paperwork, or up to
+  90 days with an English prescription; psychotropic medicine only for foreign nationals, up
+  to 60 days; narcotic medicine not allowed. Also: EU → Montenegro rows now run the passport
+  check.
