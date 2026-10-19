@@ -78,15 +78,16 @@
     "category": "medication",
     "verdict": "allowed_with_limits",
     "limits": {
-      "description": "No more than roughly a 90-day supply for personal use, in original containers, with your prescription or a doctor's note"
+      "description": "CBP's rule of thumb: bring no more than a 90-day supply, for your personal use during your stay. Carry a valid prescription or doctor's note in English, and keep the medicine in its original container with the doctor's instructions on it (if you don't have it, bring a copy of the prescription or a doctor's letter).",
+      "quantity": "90-day supply (rule of thumb)"
     },
-    "notes": "FDA-unapproved medications may be refused entry even if legally prescribed abroad.",
+    "notes": "CBP says the FDA generally considers drugs from other countries, including foreign-made versions of drugs approved in the US, unapproved, and allows them only in limited circumstances (FDA Regulatory Procedures Manual, Chapter 9-2). Controlled substances must also meet Drug Enforcement Administration requirements. Staying longer than 90 days: more medicine can be sent to you by mail or courier, with documents showing it is for your own use.",
     "legal_source": {
-      "name": "U.S. Customs and Border Protection — Traveling with Medication to the United States",
-      "url": "https://help.cbp.gov/s/article/Article-1444"
+      "name": "U.S. Customs and Border Protection — Prohibited and Restricted Items (last modified 14 Mar 2025)",
+      "url": "https://www.cbp.gov/travel/us-citizens/know-before-you-go/prohibited-and-restricted-items"
     },
-    "verified_at": "2026-08-10",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -164,14 +165,14 @@
     ],
     "destination": "US",
     "category": "food_animal",
-    "verdict": "prohibited",
-    "notes": "Most fresh meat and dairy products are prohibited; not declaring items can result in a penalty of up to $1,000.",
+    "verdict": "depends",
+    "notes": "You may not import fresh, dried or canned meats or meat products from most foreign countries, or food products prepared with meat. You may bring bakery items and certain cheeses. Declare all agricultural items for inspection: failing to declare them costs $300 for a first offence and up to $500 for a second.",
     "legal_source": {
-      "name": "USDA APHIS — Don't Pack a Pest",
-      "url": "https://www.aphis.usda.gov"
+      "name": "U.S. Customs and Border Protection — Prohibited and Restricted Items (last modified 14 Mar 2025)",
+      "url": "https://www.cbp.gov/travel/us-citizens/know-before-you-go/prohibited-and-restricted-items"
     },
-    "verified_at": "2026-08-10",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -184,14 +185,14 @@
     ],
     "destination": "US",
     "category": "food_plant",
-    "verdict": "prohibited",
-    "notes": "Most fresh fruits, vegetables, plants, seeds and soil are prohibited or require inspection; not declaring items can result in a penalty of up to $1,000.",
+    "verdict": "depends",
+    "notes": "Whether CBP lets fresh fruit or vegetables in depends on where you got them and where you are going in the US. CBP says it is best not to bring them; if you plan to, contact CBP or check USDA-APHIS permits. Declare all agricultural items for inspection: failing to declare them costs $300 for a first offence and up to $500 for a second.",
     "legal_source": {
-      "name": "USDA APHIS — Don't Pack a Pest",
-      "url": "https://www.aphis.usda.gov"
+      "name": "U.S. Customs and Border Protection — Prohibited and Restricted Items (last modified 14 Mar 2025)",
+      "url": "https://www.cbp.gov/travel/us-citizens/know-before-you-go/prohibited-and-restricted-items"
     },
-    "verified_at": "2026-08-10",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
