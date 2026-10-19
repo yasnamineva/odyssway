@@ -602,3 +602,11 @@ gate was passed or missed, and why.
   the nationality's status still match the source. The other 124 (Canada, Japan, Kenya,
   Mexico, Rwanda, Nigeria, Australia, Vietnam, China, plus one each for the US, India and
   New Zealand) need the nationality-list pages re-read; listed in `data/UNVERIFIED/TODO.md`.
+- **2026-10-19. More August entry rows re-checked; per-visit caps.** 76 more rows re-checked
+  (Canada, Kenya, Rwanda, Nigeria, Australia, China, Vietnam, plus single rows). Corrections:
+  Mexico to US (a Border Crossing Card holder can fly in with a passport, no separate visa);
+  China visa-free rows now give the policy's 31 December 2026 end date; Nigeria, Australia and
+  China notes trimmed to what their sources say. 48 rows held with reasons in the TODO
+  (Japan's MOFA blocks fetches; Mexico's cited list is a 2012 PDF). Rolling stay windows can
+  now carry a per-visit cap, so Malaysia to China shows "30 days per visit, 90 in 180" and
+  Colombia "90 per visit, 180 in 365" instead of only the window total.
