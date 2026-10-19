@@ -6440,17 +6440,59 @@
     "category": "medication",
     "verdict": "declaration_required",
     "limits": {
-      "description": "Indonesian Customs (Direktorat Jenderal Bea dan Cukai) passenger-baggage guidance, citing regulation PMK 34/2025 (amending PMK 203/2017), lists 'obat-obatan' (medicines) — alongside narcotics, psychotropics, and precursors — as a category that must go through the red-lane (mandatory physical inspection) channel rather than the green (no-inspection) lane when declared via the passenger Electronic Customs Declaration (ECD) at ecd.beacukai.go.id.",
-      "quantity": "No specific numeric personal-use quantity cap for ordinary medicine is stated on this page."
+      "description": "Badan POM's rule for medicine in passenger baggage: tablets, capsules, pills and other solid forms, up to 30 per product; creams, liquids and aerosols, up to 3 per product. Above that, carry a doctor's prescription written in English, and bring no more than 90 days' supply. No Indonesian permit is needed for personal medicine. Declare medicines on the electronic customs declaration (ecd.beacukai.go.id): they go through the red lane for inspection, and you must show the prescription if asked.",
+      "quantity": "30 solid units or 3 other units per product; with an English prescription, up to 90 days"
     },
-    "notes": "Confirmed directly from Indonesian Customs' own passenger-baggage page, which names PMK 34/2025 and PMK 203/2017. It does not give a numeric quantity limit for non-controlled medicine, only that medicines trigger mandatory physical inspection; travelers should carry medicines in original packaging with a prescription/doctor's letter, especially for quantities that could look like more than personal use.",
-    "summary": "Medicines must be declared on Indonesia's electronic customs declaration and go through the red lane for inspection.",
+    "notes": "Medicine must be for your own use, not for sale or for others. The prescription must come from a doctor in the country the medicine comes from. Medicine containing psychotropic or narcotic substances follows separate rules (see Indonesia's controlled-medication entry).",
+    "summary": "Up to 30 tablets, or 3 creams, liquids or aerosols, per product. More needs an English prescription, up to 90 days. Declare it and use the red lane.",
     "legal_source": {
       "name": "Direktorat Jenderal Bea dan Cukai (Indonesian Customs) — Barang Penumpang (Passenger Goods), citing PMK 34/2025 and PMK 203/2017",
       "url": "https://www.beacukai.go.id/barang-penumpang"
     },
-    "verified_at": "2026-09-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Customs: medicines go through the red lane; electronic customs declaration",
+        "name": "Direktorat Jenderal Bea dan Cukai (Indonesian Customs) — Barang Penumpang (Passenger Goods), citing PMK 34/2025 and PMK 203/2017",
+        "url": "https://www.beacukai.go.id/barang-penumpang"
+      },
+      {
+        "claim": "Personal baggage quantities; English prescription; 90-day maximum; no permit needed",
+        "name": "Badan POM (Indonesian FDA) — Special Access Scheme: importing personal medicines to Indonesia",
+        "url": "https://sertifikasicdob.pom.go.id/wasdisobat/sas/"
+      },
+      {
+        "claim": "Quantity limits in regulation",
+        "name": "Peraturan BPOM No. 28 Tahun 2023, Annex: quantity limits for imports without a marketing authorisation via the special route",
+        "url": "https://standar-otskk.pom.go.id/storage/uploads/fca3dad9-0694-4e53-af49-d48e7910f1f7/PerBPOM-No.-28-tahun-2023.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "controlled-medication-id",
+    "names": [
+      "controlled substance",
+      "psychotropic medication",
+      "narcotic medication",
+      "controlled medication"
+    ],
+    "destination": "ID",
+    "category": "medication",
+    "verdict": "depends",
+    "summary": "Psychotropic medicine: foreign nationals only, with an English prescription, up to 60 days. Narcotic medicine can't be brought in.",
+    "limits": {
+      "description": "Badan POM: psychotropic medicines (only those in Categories II, III and IV may be used for treatment) are allowed in passenger baggage only for foreign nationals, with a doctor's prescription written in English, and no more than 60 days' supply. Narcotic medicines may not be brought in from abroad. Psychotropic medicines may not be sent by post or courier.",
+      "quantity": "Psychotropics: up to 60 days' supply"
+    },
+    "notes": "The prescription must come from a doctor in the country the medicine comes from. Declare the medicine on the electronic customs declaration. Badan POM publishes its lists of psychotropics and narcotics on the same page; check your medicine's ingredients against them. Contact: was.sas.bbo@pom.go.id.",
+    "legal_source": {
+      "name": "Badan POM (Indonesian FDA) — Special Access Scheme: importing personal medicines to Indonesia",
+      "url": "https://sertifikasicdob.pom.go.id/wasdisobat/sas/"
+    },
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
