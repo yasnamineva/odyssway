@@ -16,11 +16,11 @@
       "quantity": "1 liter"
     },
     "legal_source": {
-      "name": "19 CFR §148.43",
-      "url": "https://www.govinfo.gov/content/pkg/CFR-2023-title19-vol2/xml/CFR-2023-title19-vol2-sec148-43.xml"
+      "name": "19 CFR §148.43 (eCFR, current)",
+      "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
     },
-    "verified_at": "2026-08-10",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -36,13 +36,12 @@
     "limits": {
       "description": "200 cigarettes, or 50 cigars, or 2 kg of smoking tobacco (proportionate combinations allowed), duty-free per adult nonresident visitor"
     },
-    "notes": "Cigars of Cuban origin are separately restricted.",
     "legal_source": {
-      "name": "19 CFR §148.43",
-      "url": "https://www.govinfo.gov/content/pkg/CFR-2023-title19-vol2/xml/CFR-2023-title19-vol2-sec148-43.xml"
+      "name": "19 CFR §148.43 (eCFR, current)",
+      "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
     },
-    "verified_at": "2026-08-10",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -106,8 +105,8 @@
       "name": "U.S. Customs and Border Protection — marijuana remains illegal under federal law",
       "url": "https://www.cbp.gov/travel/clearing-cbp/cbp-reminds-travelers-canada-marijuana-remains-illegal-united-states"
     },
-    "verified_at": "2026-08-10",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -316,14 +315,21 @@
     "destination": "GB",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "Cannabis is a controlled drug and listed among banned goods. Some CBD products may be treated differently depending on their cannabinoid content — check before travelling if bringing CBD specifically.",
+    "notes": "Controlled drugs are on the UK's banned goods list and will be seized. Cannabis and cannabis resin are Class B controlled drugs under the Misuse of Drugs Act 1971 (Schedule 2, Part II).",
     "legal_source": {
       "name": "gov.uk — Banned and restricted goods",
       "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/banned-and-restricted-goods"
     },
-    "verified_at": "2026-08-10",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Cannabis and cannabis resin are Class B drugs",
+        "name": "Misuse of Drugs Act 1971, Schedule 2 (legislation.gov.uk)",
+        "url": "https://www.legislation.gov.uk/ukpga/1971/38/schedule/2"
+      }
+    ]
   },
   {
     "slug": "meat-dairy-gb",
@@ -399,13 +405,13 @@
     "destination": "GB",
     "category": "weapons",
     "verdict": "depends",
-    "notes": "Flick knives and several other specific knife types, self-defence sprays (including pepper spray and CS gas), knuckledusters and stun guns are banned outright. Firearms, explosives and ammunition require a special licence.",
+    "notes": "Offensive weapons, for example flick knives, and self-defence sprays, for example pepper spray and CS gas, are banned and will be seized. Firearms, explosives and ammunition are restricted: you need a special licence to bring them in.",
     "legal_source": {
       "name": "gov.uk — Banned and restricted goods",
       "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/banned-and-restricted-goods"
     },
-    "verified_at": "2026-08-10",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -513,13 +519,13 @@
     "destination": "CA",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "Illegal to bring cannabis or any cannabis product — including THC or CBD oils — into or out of Canada in any amount, even though cannabis is legal domestically and even with a medical authorization, unless you hold a rare Health Canada permit or exemption.",
+    "notes": "Taking cannabis across the border in any form, including oils containing THC or CBD, without a permit or exemption authorized by Health Canada is a serious criminal offence, whatever the amount, even with a medical document and even if you travel from a place where cannabis is legal. If you have cannabis with you when you arrive, you must declare it to the CBSA.",
     "legal_source": {
       "name": "CBSA — Bringing cannabis across the border",
       "url": "https://www.cbsa-asfc.gc.ca/travel-voyage/cannabis-eng.html"
     },
-    "verified_at": "2026-08-10",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -605,13 +611,13 @@
     "destination": "CA",
     "category": "weapons",
     "verdict": "depends",
-    "notes": "Most weapons are prohibited from entering Canada, including tasers, pepper spray and certain knives. A narrow exception exists for bear/dog repellent spray labelled strictly for use against animals.",
+    "notes": "Most weapons are prohibited from entering Canada, including tasers, pepper spray and certain knives. Declare all firearms and weapons: if you don't, officers may seize them and file criminal charges.",
     "legal_source": {
       "name": "CBSA — Travel checklist",
       "url": "https://www.cbsa-asfc.gc.ca/travel-voyage/checklist-aidememoire-eng.html"
     },
-    "verified_at": "2026-08-10",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -1192,15 +1198,15 @@
     "category": "cbd_cannabis",
     "verdict": "depends",
     "limits": {
-      "description": "Legal to import only if extracted solely from the stalks or seeds of the cannabis plant, accompanied by a Certificate of Manufacture and a Component Analysis Report from an accredited laboratory proving both the plant-part origin and absence of THC."
+      "description": "Products made only from the stalks or seeds of the cannabis plant: present a Certificate of Manufacture and a Component Analysis Report from an analytical laboratory, both stating that the product is made only from stalks or seeds."
     },
-    "notes": "Products made from leaves or flowers are treated as prohibited cannabis regardless of THC content or how the product is marketed abroad. Japan tightened cannabis-related enforcement under a revised Cannabis Control Act effective December 2024; we could not verify the exact post-revision THC detection threshold against a primary source in this pass (see data/UNVERIFIED/TODO.md). Do not bring CBD products into Japan without pre-clearing them.",
+    "notes": "Products made from other parts of the plant (leaves, buds, branches, roots) are \"cannabis\" under the Cannabis Control Act and need an import permission from the Ministry of Health, Labour and Welfare (ask its Narcotics Control Department by email). Tokyo Customs gives this guidance for international mail; the health ministry publishes a guide for anyone importing CBD products.",
     "legal_source": {
       "name": "Tokyo Customs — Cannabis Control Act",
       "url": "https://www.customs.go.jp/tokyo/english/yuubin/taimatorishimari.htm"
     },
-    "verified_at": "2026-08-11",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -1237,13 +1243,13 @@
     "destination": "JP",
     "category": "food_plant",
     "verdict": "prohibited",
-    "notes": "Most fresh fruits and vegetables cannot be brought in at all. Seeds, seedlings, cut flowers, beans and rice generally require a phytosanitary certificate issued by the exporting country's government. Soil, and plants with soil attached, are always prohibited. Violations carry up to 3 years' imprisonment or a ¥3,000,000 fine.",
+    "notes": "Most fruits and vegetables cannot be brought in, including in-flight meals with fresh fruit or vegetables. Plants that are not prohibited (seedlings, seeds, grains, beans) need a phytosanitary certificate from a government agency of the exporting country. Soil is prohibited. Penalties: up to 3 years' imprisonment or a fine of up to 3 million yen.",
     "legal_source": {
       "name": "Plant Protection Station (MAFF) — Request to people coming to Japan",
       "url": "https://www.maff.go.jp/pps/j/pqaqinfo_en.html"
     },
-    "verified_at": "2026-08-11",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -1257,13 +1263,13 @@
     "destination": "JP",
     "category": "weapons",
     "verdict": "depends",
-    "notes": "Firearms (pistols, rifles, machine guns), their ammunition, and pistol parts are prohibited outright. Hunting guns, air guns, and swords are restricted rather than banned — importing them requires import approval from the Minister of Economy, Trade and Industry plus a Permission to Possess Firearms/Swords issued by a Prefectural Public Safety Commission, verified at Customs. Not a realistic option for casual travelers.",
+    "notes": "Firearms, crossbows and swords are restricted under the Firearms and Swords Possession Control Law. To import one you need a Permission to Possess (firearms) or a Permit for the Possession of Swords from the Prefectural Public Safety Commission (antique firearms and art swords: a registration certificate from the Prefectural Board of Education), plus import approval from the Minister of Economy, Trade and Industry.",
     "legal_source": {
       "name": "Japan Customs — Customs' confirmation requirement under the Firearms and Swords Possession Control Law (FAQ 1809)",
       "url": "https://www.customs.go.jp/english/c-answer_e/imtsukan/1809_e.htm"
     },
-    "verified_at": "2026-08-11",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -1370,13 +1376,13 @@
     "destination": "KE",
     "category": "drones",
     "verdict": "depends",
-    "notes": "Drones may not be imported into Kenya without a permit issued by the Kenya Civil Aviation Authority (KCAA) (Civil Aviation (Unmanned Aircraft Systems) Regulations, 2020, reg. 7(1)). Visitors can apply for a temporary permit, valid for operation of the UAS for up to 30 days and renewable once (reg. 11(1)). KRA's own restricted-items list separately confirms drones require authorisation before customs release. Apply to KCAA before travelling — do not assume a drone can simply be carried through customs.",
+    "notes": "Drones may not be imported into Kenya without a permit issued by the Kenya Civil Aviation Authority (KCAA) (Civil Aviation (Unmanned Aircraft Systems) Regulations, 2020, reg. 7(1)). KCAA can grant a temporary permit to operate a UAS for up to 30 days, renewable once (reg. 11(1)). KRA also lists drones among restricted imports, which need authorization from the relevant government institution before Customs releases them. Apply to KCAA before travelling.",
     "legal_source": {
       "name": "Civil Aviation (Unmanned Aircraft Systems) Regulations, 2020 (Kenya Civil Aviation Authority)",
       "url": "https://www.kcaa.or.ke/sites/default/files/regulation/Civil%20Aviation%20(Unmanned%20Aircraft%20Systems)%20Regulations%202020.pdf"
     },
-    "verified_at": "2026-08-11",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -1411,14 +1417,21 @@
     "destination": "KE",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "\"Narcotic drugs\" are listed as prohibited imports under the Second/Third Schedule of the East African Community Customs Management Act, 2004, as cited in KRA's own passenger-clearance guidance. Cannabis/marijuana is a controlled narcotic drug in Kenya (Narcotic Drugs and Psychotropic Substances (Control) Act) and is not legal for recreational or medical use. CBD-specific treatment (e.g. a THC percentage threshold, as some other countries define) was not found on a primary Kenyan source in this research pass — treat any cannabis-derived product as prohibited until that is confirmed.",
+    "notes": "Kenya Revenue Authority lists narcotic drugs among prohibited imports under the East African Community Customs Management Act, 2004 (Second and Third Schedules). Cannabis, and cannabis resin and extracts, are narcotic drugs under international control (INCB Yellow List).",
     "legal_source": {
       "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
       "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
     },
-    "verified_at": "2026-08-11",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Cannabis and cannabis resin, extracts and tinctures are narcotic drugs under international control (1961 Single Convention)",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
   },
   {
     "slug": "weapons-ke",
@@ -1431,13 +1444,13 @@
     "destination": "KE",
     "category": "weapons",
     "verdict": "depends",
-    "notes": "Arms and ammunition are listed by KRA as restricted imports: they require authorisation/licence from the relevant government institution before Customs will release them. Spent cartridges are separately listed as restricted. KRA's guidance does not name the specific licensing body, so it is not stated here.",
+    "notes": "Arms and ammunition, and spent cartridges, are restricted imports: KRA says all restricted goods need authorization from the relevant government institution, through the necessary licences and permits, before Customs processes and releases them. Toy guns are on KRA's prohibited list. KRA doesn't name the licensing body.",
     "legal_source": {
       "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
       "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
     },
-    "verified_at": "2026-08-11",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -1451,13 +1464,13 @@
     "destination": "KE",
     "category": "food_plant",
     "verdict": "depends",
-    "notes": "\"Plants and Plant material\" are listed by KRA as restricted imports, requiring a permit/licence from the relevant government institution before Customs will release them. KRA's guidance does not name the specific licensing body, so it is not stated here. No blanket personal-use exemption is published on the primary source used here.",
+    "notes": "Plants and plant material are restricted imports: KRA says all restricted goods need authorization from the relevant government institution, through the necessary licences and permits, before Customs processes and releases them. KRA doesn't name the licensing body.",
     "legal_source": {
       "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
       "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
     },
-    "verified_at": "2026-08-11",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -1564,14 +1577,21 @@
     "destination": "ZA",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "SARS's traveller guide lists 'narcotics and habit-forming drugs' among goods that may not be imported at all, with no exception described for cannabis or CBD. South African domestic law separately decriminalises private personal cannabis use/cultivation within the country's borders, but that does not extend to importation across the border. We could not independently confirm, against a SAHPRA primary source, the low-dose (Schedule 0) CBD exemption some secondary sources describe — treat any cannabis or CBD product as prohibited for import until that is verified.",
+    "notes": "SARS's traveller guide lists narcotics and habit-forming drugs among prohibited goods, which may not be imported. Cannabis, and cannabis resin and extracts, are narcotic drugs under international control (INCB Yellow List).",
     "legal_source": {
       "name": "SARS — SC-PA-01-03 Duty Free Allowances for Travellers (External Guide, Rev. 8, eff. 1 July 2026)",
       "url": "https://www.sars.gov.za/wp-content/uploads/Docs/Customs/SC-PA-01-03-Duty-Free-Allowances-for-Travellers-External-Guide.pdf"
     },
-    "verified_at": "2026-08-11",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Cannabis and cannabis resin, extracts and tinctures are narcotic drugs under international control (1961 Single Convention)",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
   },
   {
     "slug": "meat-dairy-za",
@@ -1587,13 +1607,13 @@
     "limits": {
       "description": "Animal products, including meat and dairy, are restricted goods and may only be imported under permit or quota."
     },
-    "notes": "SARS's guide only confirms the general permit requirement, not itemised quantities or species-specific exceptions; check with the Department of Agriculture, Land Reform and Rural Development (DALRRD) before travelling with any animal product.",
+    "notes": "SARS lists animals, plants and their products among restricted goods, which may only be imported under certain circumstances, such as under permit or quota. The guide gives no quantities or species list.",
     "legal_source": {
       "name": "SARS — SC-PA-01-03 Duty Free Allowances for Travellers (External Guide, Rev. 8, eff. 1 July 2026)",
       "url": "https://www.sars.gov.za/wp-content/uploads/Docs/Customs/SC-PA-01-03-Duty-Free-Allowances-for-Travellers-External-Guide.pdf"
     },
-    "verified_at": "2026-08-11",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -1610,13 +1630,13 @@
     "limits": {
       "description": "Plants and plant products are restricted goods and may only be imported under permit or quota."
     },
-    "notes": "SARS's guide only confirms the general permit requirement, not itemised quantities or species-specific exceptions; check with DALRRD before travelling with any plant product.",
+    "notes": "SARS lists animals, plants and their products among restricted goods, which may only be imported under certain circumstances, such as under permit or quota. The guide gives no quantities or species list.",
     "legal_source": {
       "name": "SARS — SC-PA-01-03 Duty Free Allowances for Travellers (External Guide, Rev. 8, eff. 1 July 2026)",
       "url": "https://www.sars.gov.za/wp-content/uploads/Docs/Customs/SC-PA-01-03-Duty-Free-Allowances-for-Travellers-External-Guide.pdf"
     },
-    "verified_at": "2026-08-11",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -1628,17 +1648,17 @@
     ],
     "destination": "ZA",
     "category": "weapons",
-    "verdict": "allowed_with_limits",
+    "verdict": "depends",
     "limits": {
-      "description": "Firearms are restricted goods — they may only be imported under permit and are excluded from every traveller duty-free allowance."
+      "description": "Firearms are restricted goods: they may only be imported under certain circumstances, such as under permit, and cannot be claimed under any traveller allowance."
     },
-    "notes": "Military weapons are prohibited outright. Firearm import-permit process details (issuing authority, timelines) were not independently verified against a South African Police Service primary source in this pass.",
+    "notes": "Military weapons are prohibited goods. The SARS guide doesn't say who issues firearm permits.",
     "legal_source": {
       "name": "SARS — SC-PA-01-03 Duty Free Allowances for Travellers (External Guide, Rev. 8, eff. 1 July 2026)",
       "url": "https://www.sars.gov.za/wp-content/uploads/Docs/Customs/SC-PA-01-03-Duty-Free-Allowances-for-Travellers-External-Guide.pdf"
     },
-    "verified_at": "2026-08-11",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -1748,7 +1768,7 @@
     "destination": "MX",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "ANAM's own list of merchandise that cannot be brought into Mexico includes “estupefacientes” (narcotics/controlled substances), which covers cannabis and its extracts. No CBD-specific carve-out or THC threshold was found on a primary ANAM/COFEPRIS source in this pass — treat all cannabis-derived products, including CBD, as prohibited to bring across the border regardless of legality at origin or in Mexican domestic law.",
+    "notes": "ANAM's list of goods you cannot bring into Mexico starts with \"estupefacientes\" (narcotics).",
     "legal_source": {
       "name": "ANAM — Mercancía que no puedes ingresar a México",
       "url": "https://www.anam.gob.mx/mercancia-que-no-puedes-ingresar-a-mexico/"
@@ -1774,8 +1794,8 @@
       "name": "ANAM — Mercancía que no puedes ingresar a México",
       "url": "https://www.anam.gob.mx/mercancia-que-no-puedes-ingresar-a-mexico/"
     },
-    "verified_at": "2026-08-12",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -1788,14 +1808,14 @@
     ],
     "destination": "MX",
     "category": "weapons",
-    "verdict": "prohibited",
-    "notes": "Firearms, ammunition, explosives, gunpowder, and fireworks require prior authorization from the Secretaría de la Defensa Nacional (SEDENA) to import; ordinary tourists are not eligible — the only traveler exception is a SEDENA “permiso extraordinario” for hunting/sport-shooting visitors with firearms/ammunition covered by that specific permit. Bringing a firearm without authorization is a serious federal crime (penalties up to 5–30 years for restricted/military-grade items, 3–10 years for other firearms).",
+    "verdict": "depends",
+    "notes": "Arms, ammunition, cartridges and explosives are regulated by the Secretaría de la Defensa Nacional (SEDENA) under the Ley Federal de Armas de Fuego y Explosivos. ANAM sorts them into items that need no extraordinary import permit (still inspected by customs), items that need SEDENA's extraordinary import permit, and restricted-use items that may only be imported by public security bodies. Compressed-gas (CO2) rifles and pistols, including paintball, also need the permit. Bringing them in clandestinely: 5 to 30 years' prison for items reserved for the armed forces or subject to control; 3 to 10 years for other firearms.",
     "legal_source": {
       "name": "ANAM — Mercancía regulada por parte de la Secretaría de la Defensa Nacional",
       "url": "https://www.anam.gob.mx/mercancia-regulada-por-parte-de-la-secretaria-de-la-defensa-nacional/"
     },
-    "verified_at": "2026-08-12",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -2023,13 +2043,13 @@
     "destination": "TH",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "Thailand's domestic cannabis law has reversed direction multiple times (decriminalized for flower/products in 2022, reclassified as a medical-only 'controlled herb' from June 2025 with a PT 33 prescription required above 0.2% THC), and remains politically unsettled as of this verification — but that domestic-sale question is separate from importation. For bringing cannabis or hemp-based products INTO Thailand from abroad, the Thai FDA is explicit and unqualified: cannabis- or hemp-based foods, cosmetics containing cannabis/hemp extract, and herbal products containing cannabis or hemp are all listed as not allowed to import, with no personal-use carve-out and no exception for a foreign medical-cannabis prescription. Treat all CBD and cannabis products as prohibited for import regardless of THC content or how they are labeled/legal in the traveler's home country.",
+    "notes": "The Thai FDA's traveller guidance says cannabis- or hemp-based foods may not be imported, cosmetics containing cannabis extract or hemp may not be imported, and herbal products containing cannabis or hemp may not be imported.",
     "legal_source": {
       "name": "Thai FDA — Passenger belongings related to health products into the Kingdom of Thailand (foods, cosmetics, herbal products)",
       "url": "https://en.fda.moph.go.th/guideline-of-importation-for-personal-use/bringing-of-health-products-into-the-kingdom-of-thailand-01/"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -2066,13 +2086,13 @@
     "destination": "TH",
     "category": "weapons",
     "verdict": "depends",
-    "notes": "Firearms, ammunition, explosives, and equivalent items are restricted goods requiring a permit from the Department of Provincial Administration before import; Thai Customs' own traveler page does not spell out a separate tourist/personal-use process, and this is not a realistic option for ordinary tourists. No species/caliber-level detail or a stated blanket prohibition for non-residents was found in this pass — published at the general 'restricted, permit required' level rather than asserting an unverified full ban.",
+    "notes": "Thai Customs lists guns, bullets, explosives and their equivalents as restricted goods that need a permit from the Department of Provincial Administration, Ministry of Interior (www.dopa.go.th).",
     "legal_source": {
       "name": "Thai Customs Department — Restricted and Prohibited Goods for travelers",
       "url": "https://www.customs.go.th/cont_strc_simple.php?ini_content=individual_160426_01&lang=en&left_menu=menu_individual_submenu_03_01"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -2280,14 +2300,21 @@
     "destination": "RW",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "\"Narcotic drugs under international control\" are listed as prohibited imports under Part A(7) of the EAC Customs Management Act 2004 Second Schedule, as published on RRA's own prohibited-goods page. Cannabis is separately a controlled narcotic drug under Rwanda's domestic Law n° 03/2012 of 15/02/2012 governing narcotic drugs, psychotropic substances and precursors (referenced in Rwanda FDA's personal-effects guidelines). No CBD-specific carve-out (e.g. a THC percentage threshold, as some other countries define) was found on a primary Rwandan source in this research pass — treat any cannabis-derived product, including CBD, as prohibited pending a specific carve-out.",
+    "notes": "Rwanda Revenue Authority lists \"narcotic drugs under international control\" among prohibited imports (EAC Customs Management Act 2004, Second Schedule). Cannabis, and cannabis resin and extracts, are on that international list (INCB Yellow List).",
     "legal_source": {
       "name": "Rwanda Revenue Authority — Prohibited Goods for Travelers (EAC Customs Management Act 2004, Second Schedule)",
       "url": "https://www.rra.gov.rw/en/customs-services/travelers/prohibited-goods"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Cannabis and cannabis resin, extracts and tinctures are narcotic drugs under international control (1961 Single Convention)",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
   },
   {
     "slug": "weapons-rw",
@@ -2305,8 +2332,8 @@
       "name": "Rwanda Revenue Authority — Prohibited Goods for Travelers (EAC Customs Management Act 2004, Second Schedule)",
       "url": "https://www.rra.gov.rw/en/customs-services/travelers/prohibited-goods"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -2320,13 +2347,13 @@
     "destination": "RW",
     "category": "drones",
     "verdict": "depends",
-    "notes": "Rwanda Civil Aviation Authority (RCAA) requires every drone to be declared to Rwanda National Police at the point of entry into the country (\"Declare your drone to Rwanda National Police at any point of entry into the country, failure to abide calls for penalty as stipulated in the Regulations\" — caa.gov.rw). Before operating (flying) the drone, RCAA also requires a UAS Activity Permit and UAS registration under Rwanda Civil Aviation Regulations Part 27. This is a real, concrete border-declaration requirement (stronger than most other destinations in this dataset, where only a general operational-permit gap was found) — do not attempt to bring a drone into Rwanda without declaring it and applying for the RCAA permits in advance.",
+    "notes": "The Rwanda Civil Aviation Authority (RCAA) says to declare your drone to Rwanda National Police at any point of entry; failing to do so carries a penalty under the regulations. Drones must also be registered with RCAA, and operators need an RCAA UAS Activity Permit before flying (Rwanda Civil Aviation Regulations Part 27).",
     "legal_source": {
       "name": "Rwanda Civil Aviation Authority — Unmanned Aircraft (Drones)",
       "url": "https://www.caa.gov.rw/unmanned-aircraft"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -2340,13 +2367,13 @@
     "destination": "RW",
     "category": "other",
     "verdict": "prohibited",
-    "notes": "Rwanda has one of the world's strictest plastic-bag import bans: \"The manufacturing, use, importation or sale of plastic carry bags and single-use plastic items is prohibited\" (Law N° 17/2019, Art. 3, updating the original 2008 ban). Importation carries dispossession of the items plus an administrative fine equal to 10 times their value (Art. 10) — the law states no exemption for travelers or personal luggage. In practice, plastic bags (including shopping bags packed around purchased goods, and some single-use plastic packaging) are confiscated at Kigali International Airport and land borders. Home-compostable plastic items or woven polypropylene are exempt only with prior authorization from the competent authority (Art. 4).",
+    "notes": "\"The manufacturing, use, importation or sale of plastic carry bags and single-use plastic items is prohibited\" (Law N° 17/2019, Art. 3). Importing them leads to dispossession of the items and an administrative fine of ten times their value (Art. 10). Home-compostable plastic items and woven polypropylene are allowed only with prior authorisation from the competent authority (Art. 4).",
     "legal_source": {
       "name": "Law N° 17/2019 of 10/08/2019 Relating to the Prohibition of Manufacturing, Importation, Use and Sale of Plastic Carry Bags and Single-Use Plastic Items",
       "url": "https://rwandalii.org/akn/rw/act/law/2019/17/eng@2019-09-23"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -2408,14 +2435,14 @@
     "destination": "EG",
     "category": "medication",
     "verdict": "depends",
-    "notes": "The Egyptian Customs Authority's passenger-legislation page lists medications (\"الأدوية\") among common restricted-goods examples: allowed within the traveller's personal-use needs, supported by medical reports/a prescription where relevant; any quantity beyond personal use requires clearance from the competent control authority (the source names the Egyptian Drug Authority, هيئة الدواء المصرية, as an example) before Customs will release it. Medical instruments/devices are treated separately as \"special use\" (not \"personal use\") and likewise require Egyptian Drug Authority clearance. No numeric day-supply or unit quantity cap, and no named-drug restricted list (e.g. controlled stimulants), was published on the source used here.",
-    "summary": "Allowed in personal-use quantities with medical reports or a prescription; more needs Egyptian Drug Authority clearance.",
+    "notes": "The Egyptian Customs Authority's passenger page lists medicines among restricted goods: allowed within personal use when backed by medical reports; anything more needs clearance from the relevant control body (for example the Egyptian Drug Authority). Medical instruments and devices count as \"special use\", not personal use, and also need clearance (for example from the Egyptian Drug Authority). No quantity limit or list of named drugs is given.",
+    "summary": "Allowed in personal-use quantities backed by medical reports; more needs clearance from a control body such as the Egyptian Drug Authority.",
     "legal_source": {
       "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
       "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
     },
-    "verified_at": "2026-08-12",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -2430,14 +2457,21 @@
     "destination": "EG",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "The Egyptian Customs Authority's own general definitions (same Travel & Tourism / Passengers page) list \"narcotic drugs\" (المخدرات) as an example of \"prohibited goods\" (البضائع الممنوعة) under Customs Law No. 207/2020 — goods whose import or export is not permitted at all. Cannabis/marijuana is a controlled narcotic drug under Egyptian law generally. No CBD-specific quantity or THC-percentage carve-out (as some other countries define) was found on a primary Egyptian source in this pass — treat any cannabis-derived product, including CBD, as prohibited pending a specific carve-out.",
+    "notes": "The Egyptian Customs Authority's passenger page gives narcotic drugs as an example of prohibited goods, which may not be imported or exported (Customs Law No. 207 of 2020). Cannabis, and cannabis resin and extracts, are narcotic drugs under international control (INCB Yellow List).",
     "legal_source": {
       "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
       "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
     },
-    "verified_at": "2026-08-12",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Cannabis and cannabis resin, extracts and tinctures are narcotic drugs under international control (1961 Single Convention)",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
   },
   {
     "slug": "weapons-eg",
@@ -2453,13 +2487,13 @@
     "limits": {
       "description": "Daggers and other edged/bladed weapons require prior clearance from the competent control authority (the source names General Security, الأمن العام, as an example) before Customs will release them."
     },
-    "notes": "This verdict is scoped to what the source (Egyptian Customs Authority's restricted-goods examples for passengers) actually states: daggers/bladed weapons need security clearance, not an outright ban. The same page's general definitions separately list \"weapons\" (الأسلحة) as an example of \"prohibited goods\" not permitted for import or export at all. No passenger-specific firearms verdict distinct from bladed weapons was found, so no firearms-specific claim is published here. Treat firearms/ammunition as prohibited pending a dedicated source; this row covers knives/daggers only.",
+    "notes": "The same page gives weapons as an example of prohibited goods, which may not be imported or exported, and lists daggers and bladed weapons among restricted goods that need clearance from a control body (for example General Security). It doesn't say more about firearms.",
     "legal_source": {
       "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
       "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
     },
-    "verified_at": "2026-08-12",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -2477,13 +2511,13 @@
     "limits": {
       "description": "Remote-controlled/radio-controlled aircraft (drones) require prior clearance from the competent control authority (the source names the Ministry of Defence, وزارة الدفاع, as an example) before Customs will release them."
     },
-    "notes": "The Egyptian Customs Authority's restricted-goods examples list \"الطائرات الموجهة لاسلكيا\" (radio-controlled aircraft) as requiring control-agency clearance. No further detail (e.g. a specific permit process, fee, or weight-based exemption) was found on a primary source in this pass — apply for clearance in advance rather than assuming a drone can simply be carried through Customs.",
+    "notes": "The Egyptian Customs Authority lists radio-controlled aircraft among restricted goods that need clearance from a control body (for example the Ministry of Defence) before release. It gives no permit process or fee.",
     "legal_source": {
       "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
       "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
     },
-    "verified_at": "2026-08-12",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -2504,8 +2538,8 @@
       "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
       "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
     },
-    "verified_at": "2026-08-12",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -2523,13 +2557,13 @@
     "limits": {
       "description": "Agricultural seeds and pesticides require prior clearance from the competent control authority (the source names the Ministry of Agriculture, وزارة الزراعة, as an example) before Customs will release them."
     },
-    "notes": "The source used here (Egyptian Customs Authority's restricted-goods examples for passengers) covers seeds and pesticides specifically; it does not address general fresh produce, cut flowers, or other plant material, so no blanket food_plant verdict beyond seeds/pesticides is published — see data/UNVERIFIED/TODO.md.",
+    "notes": "The source covers agricultural seeds and pesticides; it does not cover fresh produce, cut flowers or other plant material.",
     "legal_source": {
       "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
       "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
     },
-    "verified_at": "2026-08-12",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -2640,14 +2674,21 @@
     "destination": "NG",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "Cannabis (\"Indian hemp\") is a controlled narcotic drug under Nigerian law. Importation, possession, cultivation, and use of cannabis/narcotic drugs are criminal offences under the National Drug Law Enforcement Agency Act (Cap. N30, Laws of the Federation of Nigeria 2004), ss. 11, 19-20 (life imprisonment for importation/trafficking; 15-25 years for possession/use) — confirmed directly from the Act's own text. No medical- or low-THC/CBD-specific exemption was found on a primary Nigerian source in this pass; treat any cannabis-derived product, including CBD, as prohibited.",
+    "notes": "Under the National Drug Law Enforcement Agency Act (Cap. N30), s. 20(1)(a), importing any narcotic drug contrary to the 1961 Single Convention without lawful authority is an offence punishable by life imprisonment (s. 20(2)(a)); possessing one for that purpose carries 15 to 25 years (s. 20(1)(c), 20(2)(b)). Cannabis, and cannabis resin and extracts, are narcotic drugs under the 1961 Convention (INCB Yellow List).",
     "legal_source": {
       "name": "National Drug Law Enforcement Agency Act (Cap. N30, Laws of the Federation of Nigeria 2004)",
       "url": "https://lawsofnigeria.placng.org/laws/NATIONAL%20DRUG%20LAW%20ENFORCEMENT%20AGENCY%20ACT.pdf"
     },
-    "verified_at": "2026-08-12",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Cannabis and cannabis resin, extracts and tinctures are narcotic drugs under international control (1961 Single Convention)",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
   },
   {
     "slug": "weapons-ng",
@@ -2681,13 +2722,13 @@
     "destination": "NG",
     "category": "food_animal",
     "verdict": "depends",
-    "notes": "The Nigeria Agricultural Quarantine Service (NAQS) requires a sanitary/health certificate, specific-disease laboratory test results, and an import permit for animal and animal-product imports. NAQS's own FAQ describes this in general commodity terms rather than stating a personal-baggage/traveler-specific exemption or quantity threshold, so no traveler-specific allowance is published here — assume meat/dairy products require prior NAQS authorisation and check with NAQS before bringing any.",
+    "notes": "The Nigeria Agricultural Quarantine Service (NAQS) says a sanitary/health certificate, laboratory test results for specific diseases and an import permit are essential requirements for importing animals and animal products; a permit takes 5 working days. NAQS's FAQ doesn't give a traveller allowance.",
     "legal_source": {
       "name": "Nigeria Agricultural Quarantine Service — Frequently Asked Questions",
       "url": "https://www.naqs.gov.ng/faq/"
     },
-    "verified_at": "2026-08-12",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -2703,13 +2744,13 @@
     "destination": "NG",
     "category": "food_plant",
     "verdict": "depends",
-    "notes": "NAQS requires a Phytosanitary Certificate for plant and plant-product imports (Nigeria is a signatory to the International Plant Protection Convention). NAQS's FAQ discusses this in general commodity terms rather than a personal-baggage/traveler-specific exemption, so no traveler-specific allowance is published here. NAQS has separately named specific prohibited plant material (e.g. cassava stem and plant parts, to guard against Cassava Brown Streak Disease) — treat fresh produce, seeds, and plant material as requiring prior NAQS clearance.",
+    "notes": "NAQS enforces phytosanitary certificates for importing plants and plant products, and has prohibited imports of cassava stem and plant parts (Cassava Brown Streak Disease). Its FAQ doesn't give a traveller allowance.",
     "legal_source": {
       "name": "Nigeria Agricultural Quarantine Service — Frequently Asked Questions",
       "url": "https://www.naqs.gov.ng/faq/"
     },
-    "verified_at": "2026-08-12",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -2822,14 +2863,21 @@
     "destination": "MA",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "Narcotics (\"stupéfiants\") are on Moroccan Customs' list of imports strictly prohibited to travelers, with no personal-use or quantity carve-out. Morocco's Law 13-21 (2021) legalized cannabis cultivation only for licensed domestic medical/pharmaceutical/industrial production under the ANRAC regulator — it created no exception for travelers importing or possessing cannabis, hashish, or kif, and no CBD-specific threshold (e.g. a THC percentage carve-out) was found on a primary Moroccan source. Treat CBD as covered by the same blanket prohibition pending a specific carve-out.",
+    "notes": "Narcotics (\"stupéfiants\") are on Morocco's list of goods prohibited from import for visitors. Cannabis, and cannabis resin and extracts, are narcotic drugs under international control (INCB Yellow List).",
     "legal_source": {
       "name": "Kingdom of Morocco Ministry of Foreign Affairs — Consular guide: Customs facilities for non-residents visiting Morocco temporarily",
       "url": "https://fr.diplomatie.ma/visiter-le-maroc-facilit%C3%A9s-douani%C3%A8res-accord%C3%A9es-aux-personnes-ayant-leur-r%C3%A9sidence-%C3%A0-l%C3%A9tranger-et-s%C3%A9journant-temporairement"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Cannabis and cannabis resin, extracts and tinctures are narcotic drugs under international control (1961 Single Convention)",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
   },
   {
     "slug": "food-animal-ma",
@@ -2845,13 +2893,13 @@
     "limits": {
       "description": "Products of animal origin require a veterinary certificate issued by Morocco's Office National de Sécurité Sanitaire des Produits Alimentaires (ONSSA) before import."
     },
-    "notes": "No species- or quantity-specific list (e.g. whether small personal quantities of cured meat or cheese are tolerated without a certificate) was found on a primary Moroccan source in this pass — published at the general 'certificate required' level only, not a blanket allow or prohibit.",
+    "notes": "The circular gives no species or quantity list.",
     "legal_source": {
       "name": "Administration des Douanes et Impôts Indirects (Moroccan Customs) — Circulaire N° 6568/311 (30 May 2024), Annex: general rules on personal effects, prohibited/restricted imports and personal medication",
       "url": "https://www.douane.gov.ma/dms/loadDocument?documentId=94052"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -2869,13 +2917,13 @@
     "limits": {
       "description": "Plant products require a phytosanitary certificate issued by Morocco's Office National de Sécurité Sanitaire des Produits Alimentaires (ONSSA) before import."
     },
-    "notes": "No species- or quantity-specific list was found on a primary Moroccan source in this pass — published at the general 'certificate required' level only.",
+    "notes": "The circular gives no species or quantity list.",
     "legal_source": {
       "name": "Administration des Douanes et Impôts Indirects (Moroccan Customs) — Circulaire N° 6568/311 (30 May 2024), Annex: general rules on personal effects, prohibited/restricted imports and personal medication",
       "url": "https://www.douane.gov.ma/dms/loadDocument?documentId=94052"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -2915,15 +2963,15 @@
     "category": "drones",
     "verdict": "depends",
     "limits": {
-      "description": "Drones are import-license goods, not ordinary duty-free personal effects. Morocco's Customs administration explicitly excludes drones and other remote-controlled flying objects from its duty-free children's-toys/personal-effects allowance. For a tourist's temporary stay, authorization is delivered by local DGSN (Sûreté Nationale) services; permanent import requires an import license from the Foreign Trade department, and equipment using radio transmission may also need ANRT (telecoms regulator) homologation."
+      "description": "Motorised, remote-controlled unmanned flying craft such as drones need an import licence from the foreign trade department. They are excluded from the duty-free allowance for children's toys."
     },
-    "notes": "The clearest primary citation found (a 2024 Moroccan Customs circular) is framed around the annual 'Marhaba' welcome campaign for Moroccans residing abroad, but its general-rules section (I.3, listing import-license goods and prohibited items) states rules of general application, not MRE-specific ones — treated as a valid general citation here. A dedicated foreign-tourist-specific drone circular was not located in this pass; re-verify with one if found. Secondary sources describe seizure and fines for unauthorized drone use, but no primary source for penalty amounts was fetched, so no penalty figure is published.",
+    "notes": "From Moroccan Customs' 2024 circular for the summer welcome operation; its general section (I.3) lists the goods that need an import licence and the prohibited goods. The licence list is in annex VII.01 of title VII of the RDII.",
     "legal_source": {
       "name": "Administration des Douanes et Impôts Indirects (Moroccan Customs) — Circulaire N° 6568/311 (30 May 2024), Annex: general rules on personal effects, prohibited/restricted imports and personal medication",
       "url": "https://www.douane.gov.ma/dms/loadDocument?documentId=94052"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -3270,13 +3318,13 @@
     "limits": {
       "description": "No mandatory threshold requires travelers to declare cash brought into Türkiye. Declaration is voluntary, but if made must be complete and accurate. Cash representing personal debts, gifts, dowries, inheritances, immigrants' assets, foreign loans, or uncut-diamond export proceeds may not be physically carried in — it must be transferred via a bank."
     },
-    "notes": "If customs officers ask a traveler to explain the amount or source of cash carried and the traveler gives no explanation, or a false/misleading one, the undisclosed amount is seized and a 10% administrative fine is applied, with the case referred to the public prosecutor and Türkiye's Financial Crimes Investigation Board (MASAK). This is Türkiye's rule for cash brought INTO the country; a separate, stricter rule applies to cash taken OUT of Türkiye (not researched in this pass — see data/UNVERIFIED/TODO.md).",
+    "notes": "Customs may ask you to explain the amount and source of the cash you carry. If you give no explanation, or a false or misleading one, a fine of 10% of the unexplained amount applies, all the cash you carry is held, and the case is reported to the public prosecutor and the Financial Crimes Investigation Board (MASAK). This page covers cash brought into Türkiye.",
     "legal_source": {
       "name": "T.C. Ticaret Bakanlığı (Turkish Ministry of Trade) — Gümrük Rehberi: Cash and Valuables Guide (basis: Decision No. 32 on the Protection of the Value of Turkish Currency)",
       "url": "https://gumrukrehberi.gov.tr/kategori/bireysel-slemler/nakit-ve-ziynet-esyasi-rehberi"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -3383,8 +3431,8 @@
       "name": "T.C. Ticaret Bakanlığı (Turkish Ministry of Trade) — Gümrük Rehberi: other food products travelers may bring to Türkiye (basis: Ministry of Agriculture and Forestry Communiqué No. 2012/11)",
       "url": "https://gumrukrehberi.gov.tr/sayfa/yolcu-beraberinde-t%C3%BCrkiyeye-getirilebilen-di%C4%9Fer-g%C4%B1da-%C3%BCr%C3%BCnleri-nelerdir"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -3630,13 +3678,13 @@
     "destination": "AU",
     "category": "weapons",
     "verdict": "depends",
-    "notes": "Firearms and firearm-related articles are prohibited imports under the Customs (Prohibited Imports) Regulations 1956 unless the importer first obtains written permission — either from the Attorney-General's Department or written confirmation/certification from the relevant state or territory Police Firearms Registry — via the Department of Home Affairs' Firearms Portal, before the item arrives. Requirements depend on the firearm's category, action type, magazine capacity, and fitted parts/accessories.",
+    "notes": "The Department of Home Affairs grants permission to import certain firearms and firearm-related articles under Schedule 6 to the Customs (Prohibited Imports) Regulations 1956; apply through its Firearms Portal. The portal notes 2026 firearms reforms (Combatting Antisemitism, Hate and Extremism Bill (Firearms and Customs Laws) 2026) being implemented with state and territory Firearms Registries.",
     "legal_source": {
       "name": "Department of Home Affairs — Firearms Portal (import firearms and firearms-related articles)",
       "url": "https://import.firearms.gov.au/landing/"
     },
-    "verified_at": "2026-08-12",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -3780,13 +3828,13 @@
     "destination": "AE",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "Dubai Customs' official passenger guide lists \"narcotics of all kinds\" among items not allowed for import by passengers under any circumstances. No CBD-specific carve-out (e.g. a THC percentage threshold) was found on a primary UAE source in this pass — treat CBD/hemp products the same as cannabis and do not bring them, regardless of their legal status in your home country or how they are labeled.",
+    "notes": "Dubai Customs' passenger guide lists \"narcotics of all kinds\" among items not allowed for import by passengers.",
     "legal_source": {
       "name": "Dubai Customs — Passenger Customs Guide, Version 6 (2025)",
       "url": "https://www.dubaicustoms.gov.ae/en/OpenData/Publications/PassengerCustomsGuide.pdf"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -3808,8 +3856,8 @@
       "name": "Dubai Customs — Passenger Customs Guide, Version 6 (2025)",
       "url": "https://www.dubaicustoms.gov.ae/en/OpenData/Publications/PassengerCustomsGuide.pdf"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -3829,8 +3877,8 @@
       "name": "Dubai Customs — Passenger Customs Guide, Version 6 (2025)",
       "url": "https://www.dubaicustoms.gov.ae/en/OpenData/Publications/PassengerCustomsGuide.pdf"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -3847,13 +3895,12 @@
     "limits": {
       "description": "The General Civil Aviation Authority (GCAA) states that all UAS/drones, regardless of weight, used by individuals for recreational purposes must be registered with the GCAA. Dubai Customs' passenger guide also lists drones among items accompanying passengers that are subject to permits from relevant authorities and must be declared on arrival."
     },
-    "notes": "Secondary reporting (a January 2025 news report on a GCAA policy update) describes recreational drone registration/use as currently limited to UAE residents with a valid UAE Pass account, which would effectively bar short-term tourists from legally registering a personal drone — this pass could not independently confirm that residency restriction against a primary GCAA page (the GCAA registration page itself does not address visitor/tourist status). Bringing a drone as a tourist carries real risk of it being held at the airport pending registration proof; check with the GCAA (drones@gcaa.gov.ae) before traveling with one.",
     "legal_source": {
       "name": "General Civil Aviation Authority (GCAA) — UAS Registration",
       "url": "https://www.gcaa.gov.ae/en/pages/UASRegistration.aspx/"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
