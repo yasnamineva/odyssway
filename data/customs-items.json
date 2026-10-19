@@ -298,17 +298,29 @@
     ],
     "destination": "GB",
     "category": "medication",
-    "verdict": "allowed_with_limits",
+    "verdict": "allowed",
     "limits": {
-      "description": "Up to 3 months' supply without a licence; bringing more needs a personal licence from the Home Office Drug and Firearms Licensing Unit in exceptional circumstances, and Schedule 1 drugs can't be brought in without a licence (limited to research or special purposes)"
+      "description": "UK customs (HMRC) bans controlled drugs but doesn't list other medicines among banned or restricted goods, except medicines containing endangered species, which may need a CITES permit. For medicine that doesn't contain a controlled drug, the Home Office points to the Medicines and Healthcare products Regulatory Agency (MHRA) import rules. Medicine containing a controlled drug: up to 3 months' supply, carried on your person (see the controlled-medication entry)."
     },
     "legal_source": {
-      "name": "gov.uk — Taking controlled drugs into the UK",
-      "url": "https://www.gov.uk/travelling-controlled-drugs"
+      "name": "GOV.UK — Bringing goods into the UK for personal use: banned and restricted goods",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/banned-and-restricted-goods"
     },
-    "verified_at": "2026-10-17",
+    "verified_at": "2026-10-19",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Banned and restricted goods: controlled drugs; endangered species (CITES)",
+        "name": "GOV.UK — Bringing goods into the UK for personal use: banned and restricted goods",
+        "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/banned-and-restricted-goods"
+      },
+      {
+        "claim": "Non-controlled medicine: check MHRA import rules",
+        "name": "Home Office — Travelling with medicine containing controlled drugs (guidance, updated 11 April 2023)",
+        "url": "https://www.gov.uk/guidance/controlled-drugs-personal-licences"
+      }
+    ]
   },
   {
     "slug": "cannabis-gb",
@@ -5548,12 +5560,12 @@
       "description": "Up to 3 months' supply of medicine containing a controlled drug can be carried in hand luggage without a Home Office licence. All of the stimulants, benzodiazepines and opioids named in this entry are Schedule 2-4 drugs under the Misuse of Drugs Regulations (amphetamine, methylphenidate and lisdexamfetamine: Schedule 2; oxycodone: Schedule 2; codeine: Schedule 2 or 5 depending on the preparation; tramadol: Schedule 3; diazepam, alprazolam and clonazepam: Schedule 4 Part 1), so the 3-month exemption applies to them -- only Schedule 1 drugs are barred without a special licence. Non-UK residents must carry a letter stating their name, travel dates, and a list of the medicine with dose/strength, signed by the prescriber; the medicine must travel in hand luggage, not hold luggage.",
       "quantity": "3-month supply"
     },
-    "notes": "UK residents needing more than 3 months, or anyone needing a Schedule 1 drug, must apply in advance to the Home Office's Drugs and Firearms Licensing Unit (DFLU) -- the source doesn't give a lead time for this specific case (a different gov.uk page about importing/exporting controlled drugs generally recommends applying at least 14 days ahead, which is what the site's general prescription-medication-gb entry cites). None of Adderall/Xanax/Valium/Klonopin/codeine/oxycodone/tramadol are Schedule 1 in the UK, so an outright ban shouldn't apply to them at ordinary personal-use quantities.",
+    "notes": "The Home Office's personal import policy covers medicine lawfully prescribed to you in the country where you normally live, carried on your person. It doesn't apply to UK residents who were prescribed controlled drugs while abroad: they must email the Drug and Firearms Licensing Unit (DFLU, dflu.ie@homeoffice.gov.uk) before returning. Staying longer than 3 months: bring up to 3 months' supply and see a UK clinician for more; medicine containing controlled drugs can't be posted to you, and excess quantities are seized. Schedule 1 drugs can't be imported without a licence, which is limited to research or special purposes; a Schengen certificate doesn't replace it.",
     "legal_source": {
       "name": "gov.uk -- Taking controlled drugs into the UK",
       "url": "https://www.gov.uk/travelling-controlled-drugs"
     },
-    "verified_at": "2026-10-18",
+    "verified_at": "2026-10-19",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -5576,8 +5588,42 @@
         "claim": "Schedule 4 Part 1 lists alprazolam, diazepam, clonazepam",
         "name": "Misuse of Drugs Regulations 2001, Schedule 4 (legislation.gov.uk)",
         "url": "https://www.legislation.gov.uk/uksi/2001/3998/schedule/4"
+      },
+      {
+        "claim": "Personal import policy scope; UK residents treated abroad; exceptional-circumstances licence process",
+        "name": "Home Office — Travelling with medicine containing controlled drugs (guidance, updated 11 April 2023)",
+        "url": "https://www.gov.uk/guidance/controlled-drugs-personal-licences"
       }
-    ]
+    ],
+    "procedure": {
+      "title": "Home Office licence for more than 3 months' supply (exceptional circumstances only)",
+      "authority": "Home Office Drug and Firearms Licensing Unit (DFLU)",
+      "applyUrl": "https://www.gov.uk/guidance/controlled-drugs-personal-licences",
+      "leadTime": "Email the DFLU 1 month before you travel",
+      "documents": [
+        "The name of the medicine and the controlled drugs it contains",
+        "The dose, strength and total quantity you want to bring",
+        "Your full travel details, your UK address and the purpose of your visit",
+        "Why you consider your circumstances exceptional",
+        "Proof you can legally travel from your home country with these medicines and quantities (an official document, webpage or licence, translated into English if needed)",
+        "A letter from your clinician, with their professional registration number, explaining why the medicine can't be obtained in the UK"
+      ],
+      "steps": [
+        "Check first whether you can instead see a UK healthcare professional before your medicine runs out: the Home Office says the cost of UK healthcare or medicines is unlikely to count as exceptional.",
+        "Email dflu.ie@homeoffice.gov.uk at least 1 month before you travel, with all the information and documents listed.",
+        "If the Home Office considers your circumstances exceptional, it sends you an application form; complete it and the Home Office then decides your application."
+      ],
+      "atTheBorder": "Carry the medicine on your person, with the letter from your prescriber. Requests missing any of the information or documents are rejected.",
+      "optional": true,
+      "sources": [
+        {
+          "name": "Home Office — Travelling with medicine containing controlled drugs (guidance, updated 11 April 2023)",
+          "url": "https://www.gov.uk/guidance/controlled-drugs-personal-licences"
+        }
+      ],
+      "verified_at": "2026-10-19",
+      "verified_by": "agent:claude-opus-5-5"
+    }
   },
   {
     "slug": "injectable-medication-gb",
