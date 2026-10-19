@@ -629,3 +629,10 @@ gate was passed or missed, and why.
   news, law-firm or NGO pages: overstay pages for Greece, Lithuania, Estonia, Denmark, Bulgaria
   and Switzerland, and e-cigarette rows for Morocco and Kenya (307 redirects). Still open:
   rows citing unofficial copies of statutes, to be re-cited to official legal portals.
+- **2026-10-19. Source audit, part 2.** Rows that cited unofficial copies of laws now cite the
+  official text or are withdrawn. Austria's overstay page is rebuilt from the federal legal
+  system; Vietnam's cannabis, drone, meat and plant rows cite the official gazette (with the
+  actual fines); Turkey's e-cigarette allowance cites the ministry's own circulars. Withdrawn
+  for now (307 redirects): overstay pages for Portugal, Romania, Slovenia, Czechia and
+  Slovakia, Nigeria cannabis and Albania e-cigarettes. The overstay explainer now lists 14
+  verified countries and names the rest.
