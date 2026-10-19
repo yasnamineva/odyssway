@@ -3635,3 +3635,13 @@ Flagged, not edited (need a source re-read first):
   except a traveller with MHLW permission to treat their own illness (Art. 13); Art. 12's
   absolute bans cover heroin and opium powder only. Verdict now "depends", summary leads with
   the illegality.
+
+## August entry rows re-checked (2026-10-19)
+
+252 rows last checked in August, 38 distinct sources (26 readable). Re-dated 128 rows where the
+stay limit appears in the source and, for list-type sources, the nationality is named (or, for
+the UK, absent from Appendix Visitor's visa-national list). Not re-dated: rows whose sources
+were unreadable (Canada ETA pages, Japan MOFA, NZ, China embassies, Vietnam, Australia
+visitor pages too thin) or general pages that don't name nationalities (Kenya ETA, Rwanda
+visa-on-arrival, Nigeria, Australia ETA) — these need a nationality-list source to confirm.
+China's nia.gov.cn page came back too thin to confirm the 30-day visa-free stay.
