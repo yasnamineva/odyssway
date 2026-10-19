@@ -597,3 +597,8 @@ gate was passed or missed, and why.
   still matches; 9 corrected where the row said more than its source (Morocco and UAE cash,
   Kenya and New Zealand alcohol, Philippine tobacco, US cash). US CBD is re-sourced to the
   statutes and now includes the hemp redefinition taking effect on 12 November 2026.
+- **2026-10-19. August entry rows re-checked.** Re-read the sources behind the 252
+  entry-requirement rows last checked in August. 128 rows re-dated where the stay limit and
+  the nationality's status still match the source. The other 124 (Canada, Japan, Kenya,
+  Mexico, Rwanda, Nigeria, Australia, Vietnam, China, plus one each for the US, India and
+  New Zealand) need the nationality-list pages re-read; listed in `data/UNVERIFIED/TODO.md`.
