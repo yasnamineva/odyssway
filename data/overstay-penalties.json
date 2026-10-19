@@ -1,15 +1,15 @@
 [
   {
     "country": "AT",
-    "fineRange": "EUR 500–2,500 for a first offense; EUR 2,500–7,500 for a repeat offense (or 2–4 weeks' imprisonment respectively if the fine can't be collected)",
-    "banRange": "No Austria-specific statutory range was confirmed; entry bans are issued case-by-case within the general EU framework (commonly around 3 years for straightforward cases, per the EU-wide explainer on this site)",
-    "enforcementNotes": "Unlawful stay is an administrative offense (Verwaltungsübertretung) under § 120(1a) of the Aliens Police Act (Fremdenpolizeigesetz 2005, FPG) — it is not punishable while a person is formally tolerated (geduldet), within a voluntary-departure period, or subject to a liberty restriction. Fine figures are quoted from a legal-database publisher citing the statute directly, not Austria's own RIS portal.",
+    "fineRange": "EUR 500–2,500 for unlawful stay (up to 2 weeks' imprisonment if the fine can't be collected); after a previous final conviction for the same offence, EUR 2,500–7,500 or up to 4 weeks' imprisonment",
+    "banRange": "Up to 5 years (FPG § 53(2)); up to 10 years, and in some cases indefinite, where the person is a serious danger to public order or security (§ 53(3))",
+    "enforcementNotes": "Unlawful stay is an administrative offence (Verwaltungsübertretung) under § 120(1a) of the Aliens Police Act 2005 (Fremdenpolizeigesetz, FPG). Under § 120(5) it is not an offence while the person is tolerated (geduldet, § 46a), deprived of liberty, within the voluntary-departure period (§ 55), or if departure would only be possible to a country to which removal is not allowed (§ 50).",
     "legal_source": {
-      "name": "Fremdenpolizeigesetz 2005 (FPG) § 120, via JUSLINE Österreich legal database",
-      "url": "https://www.jusline.at/gesetz/fpg/paragraf/120"
+      "name": "Fremdenpolizeigesetz 2005 (FPG), §§ 53 and 120 — Rechtsinformationssystem des Bundes (RIS), consolidated version",
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20004241"
     },
-    "verified_at": "2026-09-16",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -169,32 +169,6 @@
     "status": "verified"
   },
   {
-    "country": "PT",
-    "fineRange": "EUR 80–160 for an overstay up to 30 days, tiering up to EUR 500–700 for an overstay beyond 180 days",
-    "banRange": "No Portugal-specific figure was found this pass — not confirmed, and not guessed",
-    "enforcementNotes": "Legal basis is Lei n.º 23/2007 (Lei de Estrangeiros), Art. 192.º — the fine scales with how long the overstay lasted, and applies whether the person is caught in-country or at departure. Figures are quoted from a compiler site (Legispédia de Estrangeiros e Fronteiras) reproducing the article text; Portugal's official gazette (Diário da República) wasn't fetched directly this pass.",
-    "legal_source": {
-      "name": "Lei n.º 23/2007 (Lei de Estrangeiros), Art. 192.º, via Legispédia de Estrangeiros e Fronteiras",
-      "url": "https://sites.google.com/site/leximigratoria/artigo-192-o-permanencia-ilegal"
-    },
-    "verified_at": "2026-09-16",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
-  },
-  {
-    "country": "RO",
-    "fineRange": "Reported inconsistently across sources, roughly RON 400–1,000 depending on overstay duration — treat as approximate, not confirmed against the ordinance's exact penalty table",
-    "banRange": "1 year for an illegal stay of 30 days to 1 year; 2 years for over 1 year; a minimum of 5 years for repeat violations",
-    "enforcementNotes": "Legal basis is Emergency Ordinance (OUG) 194/2002 on the regime of foreigners in Romania. The ban-duration figures are consistent across multiple sources; the fine figure is not, and is reported here as approximate rather than precise. Sourced via a Romanian legal-database compiler (euroavocatura.ro) quoting the ordinance; Romania's own official legislative portals weren't fetched directly this pass.",
-    "legal_source": {
-      "name": "OUG 194/2002 privind regimul străinilor în România, via euroavocatura.ro",
-      "url": "https://www.euroavocatura.ro/print2.php?print2=lege&idItem=1696"
-    },
-    "verified_at": "2026-09-16",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
-  },
-  {
     "country": "SE",
     "fineRange": "Day-fines (dagsböter), not a flat amount — Swedish Prosecution Authority guidance sets 30 day-fines for overstays up to 1 month, rising to 50 day-fines for up to 5 months; each day-fine is scaled to the person's income, so there's no single SEK figure to quote",
     "banRange": "No Sweden-specific figure beyond the general EU Return Directive baseline was found this pass",
@@ -208,19 +182,6 @@
     "status": "verified"
   },
   {
-    "country": "SI",
-    "fineRange": "No specific fine amount was found for Slovenia in this pass",
-    "banRange": "6 months to 5 years (Aliens Act, ZTuj-2, entry-ban provision), with a 7–30 day voluntary-departure deadline set before removal or the ban takes effect",
-    "enforcementNotes": "Sources disagree on whether the entry-ban provision is numbered Art. 66 or Art. 67 of ZTuj-2 (likely reflecting renumbering between the ZTuj-1 and ZTuj-2 versions of the law) — treat the article number as approximate. Sourced via a Slovenian legal-text compiler (zakonodaja.com) plus the national police's (policija.si) description of the general mechanism; Slovenia's official consolidated-text portal (pisrs.si) wasn't fetched directly this pass.",
-    "legal_source": {
-      "name": "Zakon o tujcih (ZTuj-2), entry-ban provision, via zakonodaja.com",
-      "url": "https://zakonodaja.com/zakon/ztuj-2/66-clen-prepoved-vstopa"
-    },
-    "verified_at": "2026-09-16",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
-  },
-  {
     "country": "HR",
     "fineRange": "EUR 60–920 for a third-country national's unlawful stay",
     "banRange": "1–3 months when tied to a revoked short-term-residence case (Aliens Act, Art. 56(2)) — this is a reasonable proxy for overstay consequences, not a figure confirmed to be identical to a straightforward tourist overstay",
@@ -228,32 +189,6 @@
     "legal_source": {
       "name": "Narodne novine (Croatia's Official Gazette) — Zakon o strancima (Aliens Act), Art. 253(2)",
       "url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_151_2347.html"
-    },
-    "verified_at": "2026-09-18",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
-  },
-  {
-    "country": "CZ",
-    "fineRange": "Up to CZK 10,000, under § 157(1)(a)-(e) of Act No. 326/1999 Sb., tied to the illegal-stay obligation in § 103(n)",
-    "banRange": "5 years for an ordinary expulsion case under § 119(1); 10 years if the person is deemed a security threat; extendable by a further 5 years for non-compliance",
-    "enforcementNotes": "Figures are corroborated across two independent search-snippet queries with consistent results, not a direct full-text read — every direct-fetch attempt on the Czech Republic's own portals (e-sbirka.gov.cz, mzv.gov.cz, and a Refworld mirror) failed on JS-rendering, binary-PDF, or 403 issues.",
-    "legal_source": {
-      "name": "Act No. 326/1999 Sb., on the Residence of Foreign Nationals in the Czech Republic, §§ 103(n), 119(1), 157",
-      "url": "https://www.zakonyprolidi.cz/cs/1999-326"
-    },
-    "verified_at": "2026-09-18",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
-  },
-  {
-    "country": "SK",
-    "fineRange": "No fine amount was confirmed for Slovakia in this pass — not guessed",
-    "banRange": "Entry bans under Act No. 404/2011 Z.z. § 82(3) tier as 1 year, 1–3 years, 1–5 years, or 10 years depending on the grounds for expulsion; § 82(7) states that when multiple grounds apply, the strictest tier governs. Which tier applies to a straightforward first-time tourist overstay specifically was not confirmed against the statute's exact criteria.",
-    "enforcementNotes": "The tier structure and section numbers are corroborated across multiple independent Slovak legal-text sources, including the Slovak Supreme Administrative Court's own case law — but a direct read of the Ministry of Interior's own PDF of the act (linked from minv.sk) failed on both attempts (reported as compressed/undecodable), so the tier-to-scenario mapping remains the main open question here.",
-    "legal_source": {
-      "name": "Zákon č. 404/2011 Z.z. o pobyte cudzincov (Act on the Residence of Foreign Nationals), § 82, via zakonypreludi.sk",
-      "url": "https://www.zakonypreludi.sk/zz/2011-404"
     },
     "verified_at": "2026-09-18",
     "verified_by": "agent:claude-sonnet-5",

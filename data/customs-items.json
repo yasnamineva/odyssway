@@ -2653,43 +2653,14 @@
       "description": "Transportation of cash or negotiable instruments in excess of US$10,000 (or its equivalent) into or out of Nigeria by an individual must be declared to the Nigeria Customs Service",
       "quantity": "$10,000"
     },
-    "notes": "Basis: Money Laundering (Prevention and Prohibition) Act, 2022, s. 3(3)-(5) (read directly from the Act's own text). False declaration or failure to declare is an offence: forfeiture of the undeclared funds/instrument and/or imprisonment for at least two years. Declare via the Nigeria Customs Service's E-Currency Declaration Form (cdf.nigeriatradehub.gov.ng).",
+    "notes": "Basis: Money Laundering (Prevention and Prohibition) Act, 2022, s. 3(3)–(5). Customs reports declarations to the Central Bank and the Nigerian Financial Intelligence Unit. A false declaration or failure to declare is an offence: forfeiture of the undeclared funds or instrument, or imprisonment for at least two years, or both.",
     "legal_source": {
-      "name": "Money Laundering (Prevention and Prohibition) Act, 2022, s. 3",
-      "url": "https://placng.org/i/wp-content/uploads/2022/05/Money-Laundering-Prevention-and-Prohibition-Act-2022.pdf"
-    },
-    "verified_at": "2026-10-18",
-    "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
-  },
-  {
-    "slug": "cannabis-ng",
-    "names": [
-      "cannabis",
-      "marijuana",
-      "weed",
-      "thc",
-      "cbd",
-      "indian hemp"
-    ],
-    "destination": "NG",
-    "category": "cbd_cannabis",
-    "verdict": "prohibited",
-    "notes": "Under the National Drug Law Enforcement Agency Act (Cap. N30), s. 20(1)(a), importing any narcotic drug contrary to the 1961 Single Convention without lawful authority is an offence punishable by life imprisonment (s. 20(2)(a)); possessing one for that purpose carries 15 to 25 years (s. 20(1)(c), 20(2)(b)). Cannabis, and cannabis resin and extracts, are narcotic drugs under the 1961 Convention (INCB Yellow List).",
-    "legal_source": {
-      "name": "National Drug Law Enforcement Agency Act (Cap. N30, Laws of the Federation of Nigeria 2004)",
-      "url": "https://lawsofnigeria.placng.org/laws/NATIONAL%20DRUG%20LAW%20ENFORCEMENT%20AGENCY%20ACT.pdf"
+      "name": "Money Laundering (Prevention and Prohibition) Act, 2022, s. 3 — EFCC Special Control Unit against Money Laundering (SCUML) copy",
+      "url": "https://scuml.efcc.gov.ng/wp-content/uploads/2022/05/MONEY-LAUNDERING-publication.pdf"
     },
     "verified_at": "2026-10-19",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified",
-    "_sources": [
-      {
-        "claim": "Cannabis and cannabis resin, extracts and tinctures are narcotic drugs under international control (1961 Single Convention)",
-        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
-        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
-      }
-    ]
+    "status": "verified"
   },
   {
     "slug": "weapons-ng",
@@ -6526,32 +6497,41 @@
   },
   {
     "slug": "cannabis-vn",
-    "names": ["cannabis", "marijuana", "weed", "thc"],
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc"
+    ],
     "destination": "VN",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "Cannabis is a controlled narcotic plant under Vietnamese law with no exception for recreational, medical, or industrial use; possession, transport, or trade carries criminal penalties up to life imprisonment for large quantities.",
+    "notes": "Decree 57/2022/ND-CP puts \"cannabis and cannabis preparations\" and delta-9-tetrahydrocannabinol (THC) on List I: narcotic substances absolutely banned in medicine and social life, usable only in research, testing, forensic examination and criminal investigation under special rules of the competent authority.",
     "legal_source": {
-      "name": "Vietnam Law on Drug Prevention and Control No. 73/2021/QH14, Art. 2(6) & Art. 5 (English translation)",
-      "url": "https://english.luatvietnam.vn/law-on-drug-prevention-and-control-no-73-2021-qh14-dated-march-30-2021-of-the-national-assembly-201171-doc1.html"
+      "name": "Decree No. 57/2022/ND-CP on the lists of narcotic substances and precursors, List I (Official Gazette, Công báo No. 709+710, 5 Sept 2022)",
+      "url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2022/8/37734/41623-1-2022709-71057-2022-nd-cp.pdf"
     },
-    "verified_at": "2026-09-16",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
     "slug": "cbd-vn",
-    "names": ["cbd", "cbd oil", "hemp extract"],
+    "names": [
+      "cbd",
+      "cbd oil",
+      "hemp extract"
+    ],
     "destination": "VN",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "Decree 57/2022/ND-CP, which sets Vietnam's official schedules of controlled narcotic substances, places cannabis (plant, resin) and THC — the psychoactive compound in cannabis-derived CBD products — on List I, the highest-control tier absolutely prohibited for medical and social use; Vietnam draws no exception for low-THC or hemp-labeled formulations, so CBD oil has no legal personal-import route even with a foreign prescription. (The decree's detailed schedule appendix sits behind a subscriber paywall on the source used; its List-I placement of cannabis/THC is corroborated by multiple independent legal-industry analyses of the decree.)",
+    "notes": "Decree 57/2022/ND-CP puts \"cannabis and cannabis preparations\" and delta-9-THC on List I, the substances absolutely banned in medicine and social life. CBD is not named on its own; our reading is that CBD products made from cannabis count as cannabis preparations.",
     "legal_source": {
-      "name": "Decree No. 57/2022/ND-CP on the Lists of Narcotic Substances and Precursors",
-      "url": "https://english.luatvietnam.vn/decree-no-57-2022-nd-cp-dated-august-25-2022-of-the-government-on-the-lists-of-narcotic-substances-and-precursors-228744-doc1.html"
+      "name": "Decree No. 57/2022/ND-CP on the lists of narcotic substances and precursors, List I (Official Gazette, Công báo No. 709+710, 5 Sept 2022)",
+      "url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2022/8/37734/41623-1-2022709-71057-2022-nd-cp.pdf"
     },
-    "verified_at": "2026-09-16",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -7056,20 +7036,27 @@
   },
   {
     "slug": "meat-dairy-vn",
-    "names": ["meat", "dairy", "cheese", "milk", "pork", "beef"],
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "pork",
+      "beef"
+    ],
     "destination": "VN",
     "category": "food_animal",
     "verdict": "depends",
     "limits": {
-      "description": "Fresh or animal-origin products brought in without a veterinary quarantine certificate from the country of export risk confiscation and destruction on arrival."
+      "description": "Bringing in fresh or semi-processed land-animal products, or fresh aquatic products, carried on your person: fine of VND 5–6 million and the products are destroyed (Art. 16(1)(b), 16(11)(b)). Not registering or declaring animal products subject to quarantine on import: VND 4–5 million (Art. 14(2)(a))."
     },
-    "notes": "Administrative penalties for quarantine-registration and declaration violations run under Decree No. 204/2026/ND-CP (Vietnam's current veterinary administrative-penalty decree), broadly VND 1–50 million depending on the severity of the violation, with mandatory re-quarantine or destruction of the goods as a remedial measure. Found via a search-snippet quote of the decree, not a full direct fetch — treat the exact penalty figures as approximate.",
+    "notes": "Decree 204/2026 took effect on 1 August 2026.",
     "legal_source": {
-      "name": "Decree No. 204/2026/ND-CP on administrative penalties in veterinary medicine, via LuatVietnam",
-      "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/nghi-dinh-204-2026-nd-cp-quy-dinh-xu-phat-vi-pham-hanh-chinh-trong-linh-vuc-thu-y-437349-d1.html"
+      "name": "Decree No. 204/2026/ND-CP on administrative penalties in veterinary medicine, Arts. 14 and 16 (Official Gazette, Công báo No. 346, 24 June 2026)",
+      "url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/6/24/469748-1782185952_v1_1782262386_signed.pdf"
     },
-    "verified_at": "2026-09-16",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -7267,16 +7254,16 @@
     "category": "drones",
     "verdict": "depends",
     "limits": {
-      "description": "Decree No. 288/2025/ND-CP classifies drones into 5 weight tiers (under 0.25kg, 0.25–under 2kg, 2–under 25kg, 25–under 150kg, 150kg+). Recreational drones under 0.25kg (250g) flown outside prohibited/restricted airspace are exempt from a flight permit, but must still be reported to local military and public security agencies. Import licenses for drones are issued by the provincial-level People's Committee, after consulting the Ministry of National Defense or Ministry of Public Security — not a standalone military license. Flight-permit applications for drones that do need one must be submitted at least 7 days ahead; the competent agency must decide within 5 working days."
+      "description": "Decree No. 288/2025/ND-CP classifies drones by take-off weight in 5 tiers (under 0.25 kg, 0.25–under 2 kg, 2–under 25 kg, 25–under 150 kg, 150 kg and over). Import licences are issued by the provincial People's Committee after the Ministry of National Defence and the Ministry of Public Security give their views (Art. 6). Recreational drones under 0.25 kg flown outside no-fly and restricted zones are exempt from a flight permit, but must be notified to local military, police and air-traffic units if the flight affects military or civil flying (Art. 21). Flight-permit applications go in at least 7 days before the flight (Art. 22)."
     },
-    "notes": "The decree itself doesn't specify financial or criminal penalties for violations — it defers to other legal documents and the parent Law on People's Air Defense.",
-    "summary": "Drones need a provincial import licence. Under 250 g, no flight permit is needed outside restricted airspace, but you must report to local authorities.",
+    "notes": "The decree itself doesn't set fines or criminal penalties.",
+    "summary": "Drones need a provincial import licence. Recreational drones under 250 g flown outside no-fly and restricted zones need no flight permit.",
     "legal_source": {
-      "name": "Decree No. 288/2025/ND-CP (Government of Vietnam) — Management of Unmanned Aircraft and Other Aerial Vehicles, Arts. 4, 6, 21, 22",
-      "url": "https://english.luatvietnam.vn/decree-no-288-2025-nd-cp-dated-november-5-2025-of-the-government-providing-the-management-of-unmanned-aircraft-and-other-aerial-vehicles-418028-doc1.html"
+      "name": "Decree No. 288/2025/ND-CP on the management of unmanned aircraft and other aerial vehicles, Arts. 4, 6, 21–22 (Official Gazette, Công báo No. 1589+1590, 18 Nov 2025)",
+      "url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/11/46557/59692-1-20251589-1590288-2025-nd-cp.pdf"
     },
-    "verified_at": "2026-09-18",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -7312,22 +7299,22 @@
     "notes": "Anything over these amounts is held in the customs baggage store and returned to you when you leave Turkey; if you don't collect it in time, customs destroys it. Commercial import of e-cigarettes is banned under Presidential Decision 2149 (2020), which left the traveller rule to the Ministry of Trade.",
     "summary": "Travellers 18+: one device in use, plus 200 heated-tobacco units, or 30 ml of liquid, or 3 disposables. Excess is held until you leave.",
     "legal_source": {
-      "name": "Ministry of Trade, Directorate General of Customs — Circular 2020/7 on travellers entering with e-cigarettes and similar goods (as amended by Circular 2024/18, 19 September 2024; consolidated text, Lexpera)",
-      "url": "https://www.lexpera.com.tr/mevzuat/genelgeler/elektronik-sigara-ve-benzeri-esyanin-yolcu-beraberi-girisi-ve-transiti-hakkinda-genelge-2020-7"
+      "name": "Ministry of Trade, Directorate General of Customs — Circular 2020/7 on travellers entering with e-cigarettes and similar goods (31 March 2020)",
+      "url": "https://ticaret.gov.tr/data/5e206b7813b876856c9cf082/2020-7%20Say%C4%B1l%C4%B1%20Genelge%20(Elektronik%20Sigaralar%20hk).pdf"
     },
-    "verified_at": "2026-10-17",
+    "verified_at": "2026-10-19",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
       {
-        "claim": "Traveller allowance (1 device + 200 HTP units / 30 ml / 3 disposables), no exemption, excess stored and destroyed if uncollected, transit rules",
-        "name": "Ministry of Trade, Directorate General of Customs — Circular 2020/7 on travellers entering with e-cigarettes and similar goods (as amended by Circular 2024/18, 19 September 2024; consolidated text, Lexpera)",
-        "url": "https://www.lexpera.com.tr/mevzuat/genelgeler/elektronik-sigara-ve-benzeri-esyanin-yolcu-beraberi-girisi-ve-transiti-hakkinda-genelge-2020-7"
+        "claim": "Traveller allowance, no exemption, excess held until departure and destroyed if not collected, transit rules; commercial import ban under Presidential Decision 2149",
+        "name": "Ministry of Trade, Directorate General of Customs — Circular 2020/7 on travellers entering with e-cigarettes and similar goods (31 March 2020)",
+        "url": "https://ticaret.gov.tr/data/5e206b7813b876856c9cf082/2020-7%20Say%C4%B1l%C4%B1%20Genelge%20(Elektronik%20Sigaralar%20hk).pdf"
       },
       {
-        "claim": "Commercial import ban; Ministry of Trade authorised to regulate traveller entry and transit",
-        "name": "Presidential Decision No. 2149 (Resmi Gazete Issue 31050, 25 February 2020), Arts. 1-2",
-        "url": "https://www.lexpera.com.tr/resmi-gazete/metin/elektronik-sigara-ve-benzeri-cihazlar-ile-bazi-tutun-mamulleri-ve-tutun-mamulunu-taklit-eder-tarzda-3"
+        "claim": "Disposable allowance changed from 10 to 3",
+        "name": "Ministry of Trade — Circular 2024/18 amending Circular 2020/7",
+        "url": "https://ticaret.gov.tr/data/65966a8013b876fb4cb76a9d/2024-18%20Sayl%C4%B1%20Genelge.pdf"
       }
     ],
     "transit": {
@@ -7480,16 +7467,15 @@
     "category": "food_plant",
     "verdict": "depends",
     "limits": {
-      "description": "Decree 214/2026/ND-CP, Art. 31, quoted directly: importing quarantine-subject plants without a plant quarantine import permit draws a fine of VND 3,000,000–5,000,000 (Khoản 2); importing without a phytosanitary certificate from the exporting country draws VND 10,000,000–20,000,000 (Khoản 4). Both carry forced re-export, or destruction if re-export isn't possible (Khoản 6)."
+      "description": "Decree 214/2026/ND-CP, Art. 31: not declaring plants subject to quarantine carried in hand or checked baggage, VND 1–2 million (cl. 1); bringing them in without a plant quarantine import permit, VND 3–5 million (cl. 2); without a phytosanitary certificate from the exporting country, VND 10–20 million (cl. 4); with re-export or destruction as remedial measures (cl. 6)."
     },
-    "notes": "Seeds not on Vietnam's protected-species list and free of soil are reported elsewhere as allowed to bring in without these documents — the permit/certificate requirement applies to quarantine-subject plants specifically, not every plant product.",
-    "summary": "Plants subject to quarantine need an import permit and a phytosanitary certificate; without them, fines and re-export apply.",
+    "summary": "Plants subject to quarantine must be declared and need an import permit and a phytosanitary certificate; fines and re-export or destruction apply.",
     "legal_source": {
-      "name": "Nghị định 214/2026/NĐ-CP (Decree on administrative penalties in cultivation, plant protection and plant quarantine), Art. 31",
-      "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/nghi-dinh-214-2026-nd-cp-xu-phat-vi-pham-hanh-chinh-trong-trong-trot-bao-ve-thuc-vat-438062-d1.html"
+      "name": "Decree No. 214/2026/ND-CP on administrative penalties in cultivation, plant protection and plant quarantine, Art. 31 (government document portal)",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/6/214-ndcp.signed.pdf"
     },
-    "verified_at": "2026-09-18",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -10462,32 +10448,6 @@
     "legal_source": {
       "name": "General Directorate of Customs (Republic of Albania) — Weapons",
       "url": "https://www.dogana.gov.al/english/c/177/236/weapons"
-    },
-    "verified_at": "2026-09-22",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
-  },
-  {
-    "slug": "e-cigarettes-al",
-    "names": [
-      "e-cigarette",
-      "vape",
-      "vaping",
-      "e-liquid",
-      "vape juice",
-      "electronic cigarette"
-    ],
-    "destination": "AL",
-    "category": "e_cigarettes",
-    "verdict": "depends",
-    "limits": {
-      "description": "Albania's tobacco-control law (Law No. 9636, as amended through 2024) defines \"smoking\" to include electronic cigarettes, and permits their retail sale (18+ only) subject to restrictions — but the law's provisions found in this pass are about domestic manufacture, marketing and retail-sale channels (e.g., a ban on selling tobacco products, including via the definition covering e-cigarettes, \"through the postal service\"), not a traveler-facing import quantity."
-    },
-    "notes": "The Customs Authority's own traveler duty-free page (used for the tobacco and alcohol allowances above) does not mention e-cigarettes, vapes, or e-liquid at all — unlike tobacco, there is no stated personal duty-free allowance or explicit ban for travelers bringing a vape. Domestically, nicotine liquid may only be placed on the market in refill containers up to 10ml or disposables up to 2ml, with nicotine concentration capped at 20mg/ml — whether this domestic market-placement rule is enforced against a traveler's personal device wasn't confirmed. Treat this as unresolved rather than clearly allowed or banned.",
-    "summary": "E-cigarettes are legal in Albania for adults; the law sets no traveller import limit.",
-    "legal_source": {
-      "name": "Law No. 9636, dated 6.11.2006 \"On the Protection of Health from Tobacco Products\" (as amended through 2024)",
-      "url": "https://assets.tobaccocontrollaws.org/uploads/legislation/Albania/Albania-Law-No.-9636.pdf"
     },
     "verified_at": "2026-09-22",
     "verified_by": "agent:claude-sonnet-5",

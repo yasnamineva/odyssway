@@ -1839,5 +1839,60 @@
     "verified_at": null,
     "verified_by": null,
     "status": "needs_verification"
+  },
+  {
+    "slug": "cannabis-ng",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "cbd",
+      "indian hemp"
+    ],
+    "destination": "NG",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "notes": "Under the National Drug Law Enforcement Agency Act (Cap. N30), s. 20(1)(a), importing any narcotic drug contrary to the 1961 Single Convention without lawful authority is an offence punishable by life imprisonment (s. 20(2)(a)); possessing one for that purpose carries 15 to 25 years (s. 20(1)(c), 20(2)(b)). Cannabis, and cannabis resin and extracts, are narcotic drugs under the 1961 Convention (INCB Yellow List).",
+    "legal_source": {
+      "name": "National Drug Law Enforcement Agency Act (Cap. N30, Laws of the Federation of Nigeria 2004)",
+      "url": "https://lawsofnigeria.placng.org/laws/NATIONAL%20DRUG%20LAW%20ENFORCEMENT%20AGENCY%20ACT.pdf"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification",
+    "_sources": [
+      {
+        "claim": "Cannabis and cannabis resin, extracts and tinctures are narcotic drugs under international control (1961 Single Convention)",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "e-cigarettes-al",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping",
+      "e-liquid",
+      "vape juice",
+      "electronic cigarette"
+    ],
+    "destination": "AL",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "limits": {
+      "description": "Albania's tobacco-control law (Law No. 9636, as amended through 2024) defines \"smoking\" to include electronic cigarettes, and permits their retail sale (18+ only) subject to restrictions — but the law's provisions found in this pass are about domestic manufacture, marketing and retail-sale channels (e.g., a ban on selling tobacco products, including via the definition covering e-cigarettes, \"through the postal service\"), not a traveler-facing import quantity."
+    },
+    "notes": "The Customs Authority's own traveler duty-free page (used for the tobacco and alcohol allowances above) does not mention e-cigarettes, vapes, or e-liquid at all — unlike tobacco, there is no stated personal duty-free allowance or explicit ban for travelers bringing a vape. Domestically, nicotine liquid may only be placed on the market in refill containers up to 10ml or disposables up to 2ml, with nicotine concentration capped at 20mg/ml — whether this domestic market-placement rule is enforced against a traveler's personal device wasn't confirmed. Treat this as unresolved rather than clearly allowed or banned.",
+    "summary": "E-cigarettes are legal in Albania for adults; the law sets no traveller import limit.",
+    "legal_source": {
+      "name": "Law No. 9636, dated 6.11.2006 \"On the Protection of Health from Tobacco Products\" (as amended through 2024)",
+      "url": "https://assets.tobaccocontrollaws.org/uploads/legislation/Albania/Albania-Law-No.-9636.pdf"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
   }
 ]

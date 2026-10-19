@@ -70,6 +70,8 @@ const withdrawnBringPages = [
   { source: "/bring/drones/brazil", destination: "/destinations/brazil", permanent: false },
   { source: "/bring/e-cigarettes/morocco", destination: "/destinations/morocco", permanent: false },
   { source: "/bring/e-cigarettes/kenya", destination: "/destinations/kenya", permanent: false },
+  { source: "/bring/cannabis/nigeria", destination: "/destinations/nigeria", permanent: false },
+  { source: "/bring/e-cigarettes/albania", destination: "/destinations/albania", permanent: false },
   // Overstay rows sourced from NGO, news, law-firm or mirror sites (2026-10-19).
   { source: "/rules/overstay-penalties/gr", destination: "/rules/overstay-penalties", permanent: false },
   { source: "/rules/overstay-penalties/lt", destination: "/rules/overstay-penalties", permanent: false },
@@ -77,6 +79,11 @@ const withdrawnBringPages = [
   { source: "/rules/overstay-penalties/dk", destination: "/rules/overstay-penalties", permanent: false },
   { source: "/rules/overstay-penalties/bg", destination: "/rules/overstay-penalties", permanent: false },
   { source: "/rules/overstay-penalties/ch", destination: "/rules/overstay-penalties", permanent: false },
+  { source: "/rules/overstay-penalties/pt", destination: "/rules/overstay-penalties", permanent: false },
+  { source: "/rules/overstay-penalties/ro", destination: "/rules/overstay-penalties", permanent: false },
+  { source: "/rules/overstay-penalties/si", destination: "/rules/overstay-penalties", permanent: false },
+  { source: "/rules/overstay-penalties/cz", destination: "/rules/overstay-penalties", permanent: false },
+  { source: "/rules/overstay-penalties/sk", destination: "/rules/overstay-penalties", permanent: false },
 ];
 
 const retiredBlogRedirects = (
