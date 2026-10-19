@@ -37,5 +37,44 @@
     "verified_at": null,
     "verified_by": null,
     "status": "needs_verification"
+  },
+  {
+    "country": "BG",
+    "fineRange": "BGN 500–5,000 for a first offense; BGN 1,000–10,000 for a repeat offense",
+    "banRange": "Up to 5 years, tightened by a 2023 parliamentary amendment in force since 31 March 2024 (coinciding with Bulgaria's partial Schengen accession)",
+    "enforcementNotes": "Legal basis is the Law on Foreigners in the Republic of Bulgaria and its implementing regulations (Chapter 4). The 5-year figure is a general refusal ground covering any documented border/passport/visa/currency/customs violation in the prior 5 years, not an overstay-exclusive provision. Figures are quoted from a Bulgarian immigration-law firm citing the Act by name, corroborated by a second independent source describing the 2023 amendment.",
+    "legal_source": {
+      "name": "Law on Foreigners in the Republic of Bulgaria, as summarized by Elan Consulting (Bulgarian immigration law firm)",
+      "url": "https://www.elan-consulting-bg.com/en/post/globi-za-narusheniya-ot-chuzhdenci-v-blgariya-prez-2024g"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "country": "DK",
+    "fineRange": "DKK 1,500 flat fine",
+    "banRange": "Typically 2 years, registered Schengen-wide via SIS",
+    "enforcementNotes": "Administrative expulsion (udvisning) with an entry ban is imposed under the Aliens Act (Udlændingeloven) §§ 25b and 32; even a 1–5 day overstay can trigger expulsion. Figures are quoted from a Danish immigration-law firm citing these sections — a direct fetch of Denmark's official legal portal (retsinformation.dk) wasn't attempted this pass.",
+    "legal_source": {
+      "name": "Holm Thomsen Law (Danish immigration law firm) — 'Visa Overstays in Denmark', citing Udlændingeloven §§25b, 32",
+      "url": "https://holmthomsenlaw.com/article/visa-overstays-in-denmark-how-minor-overstays-can-lead-to-severe-penalties/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "country": "CH",
+    "fineRange": "No fixed national statutory amount — cantonal police impose fines case-by-case; real-world reported examples cluster around CHF 350–600, but this is anecdotal, not a confirmed statutory range",
+    "banRange": "Typically 12 months for a first-time, moderate overstay with no prior infringements; the State Secretariat for Migration (SEM) can impose up to 5 years for more serious cases under Art. 67(3) of the Federal Act on Foreign Nationals and Integration (FNIA/AIG)",
+    "enforcementNotes": "SEM decides bans, which are appealable within 30 days to the Federal Administrative Court in St. Gallen. Switzerland is Schengen-associated but not an EU member (EFTA); the ban is a Swiss domestic-law decision but is still enforced Schengen-wide via SIS II. Sourced via Swiss public broadcaster SWI swissinfo.ch and Swiss immigration-law firms; SEM's own site wasn't fetched directly this pass.",
+    "legal_source": {
+      "name": "Federal Act on Foreign Nationals and Integration (FNIA/AIG), Art. 67, as reported by SWI swissinfo.ch",
+      "url": "https://www.swissinfo.ch/eng/swiss-politics/overstaying-can-be-painfully-pricey/77086481"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
   }
 ]

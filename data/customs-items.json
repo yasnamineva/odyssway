@@ -6593,36 +6593,48 @@
   },
   {
     "slug": "cannabis-kr",
-    "names": ["cannabis", "marijuana", "weed", "thc"],
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc"
+    ],
     "destination": "KR",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "The Korea Customs Service has publicly warned that bringing in marijuana-related products without Ministry of Food and Drug Safety approval is punishable under the Narcotics Control Act — with penalties applying even to gifts from someone abroad or to use that occurred entirely outside Korea, regardless of home-country legality or a foreign prescription.",
+    "notes": "Korea Customs says this applies even to medicines sold abroad or prescribed, if they contain controlled ingredients. Its one exception: carrying controlled medicine for your own treatment with prior approval from the Minister of Food and Drug Safety (apply through nedrug.mfds.go.kr).",
     "limits": {
-      "description": "Marijuana-related offenses under the Narcotics Control Act carry up to 5 years' imprisonment or a fine of up to KRW 50 million."
+      "description": "Korea Customs lists cannabinol, tetrahydrocannabinol (THC) and cannabidiol (CBD) as cannabis ingredients under the Narcotics Control Act; bringing them in is punishable by life imprisonment or at least 5 years."
     },
     "legal_source": {
-      "name": "Korea Customs Service warning, reported by The Korea Times — 'Customs service warns against products containing marijuana'",
-      "url": "https://www.koreatimes.co.kr/southkorea/society/20240102/customs-service-warns-against-products-containing-marijuana"
+      "name": "Korea Customs Service — Precautions for medicines containing narcotic ingredients (마약성분 함유 의약품 주의사항)",
+      "url": "https://www.customs.go.kr/kcs/cm/cntnts/cntntsView.do?mi=13807&cntntsId=7640"
     },
-    "verified_at": "2026-09-16",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
     "slug": "cbd-kr",
-    "names": ["cbd", "cbd oil", "hemp extract"],
+    "names": [
+      "cbd",
+      "cbd oil",
+      "hemp extract"
+    ],
     "destination": "KR",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "The Korea Customs Service explicitly names CBD, CBN and THC together in its warning: products labeled or marketed with any of these cannabinoids brought in without prior Ministry of Food and Drug Safety approval are subject to Narcotics Control Act penalties, including for gifts and regardless of a foreign prescription. Korea does run a general controlled-substance entry-permit process (MFDS, in force since 2009), but travelers should not assume a low-THC or hemp label creates an exception.",
+    "notes": "Korea Customs says this applies even to medicines sold abroad or prescribed. Its one exception: carrying controlled medicine for your own treatment with prior approval from the Minister of Food and Drug Safety (apply through nedrug.mfds.go.kr).",
     "legal_source": {
-      "name": "Korea Customs Service warning, reported by The Korea Times — 'Customs service warns against products containing marijuana'",
-      "url": "https://www.koreatimes.co.kr/southkorea/society/20240102/customs-service-warns-against-products-containing-marijuana"
+      "name": "Korea Customs Service — Precautions for medicines containing narcotic ingredients (마약성분 함유 의약품 주의사항)",
+      "url": "https://www.customs.go.kr/kcs/cm/cntnts/cntntsView.do?mi=13807&cntntsId=7640"
     },
-    "verified_at": "2026-09-16",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "limits": {
+      "description": "Korea Customs lists cannabidiol (CBD) with cannabinol and THC as cannabis ingredients under the Narcotics Control Act; bringing them in is punishable by life imprisonment or at least 5 years."
+    }
   },
   {
     "slug": "e-cigarettes-vn",
@@ -7329,54 +7341,6 @@
     }
   },
   {
-    "slug": "e-cigarettes-ma",
-    "names": [
-      "e-cigarette",
-      "vape",
-      "vaping liquid",
-      "e-liquid"
-    ],
-    "destination": "MA",
-    "category": "e_cigarettes",
-    "verdict": "allowed",
-    "limits": {
-      "description": "No import or sale ban exists — Morocco's 2024 Finance Law (PLF-2024) raised the import duty on disposable e-cigarettes from 2.5% to 40%, and a further fixed internal consumption tax of 50 dirhams per disposable unit took effect in January 2025. A new IMANOR product safety/labeling standard for smoke-free products takes effect February 2026."
-    },
-    "notes": "Confirmed via consistent reporting across 7 independent Moroccan financial/business press outlets (Le Desk, La Vie Éco, H24info, Le360, Médias24, and others), not a direct Morocco Customs (douane.gov.ma) fetch — that domain and its specific circulars are bot-blocked from this environment. Treat the 'no ban, just rising duties' finding as solid; verify the exact current duty rate against douane.gov.ma directly when it becomes reachable.",
-    "summary": "Allowed: Morocco has no ban on importing e-cigarettes, though disposable ones carry high duty and tax.",
-    "legal_source": {
-      "name": "Le Desk — 'PLF 2024: le droit d'importation des cigarettes électroniques jetables augmenté à 40%'",
-      "url": "https://ledesk.ma/encontinu/plf-2024-le-droit-dimportation-des-cigarettes-electroniques-jetables-augmente-a-40/"
-    },
-    "verified_at": "2026-09-18",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
-  },
-  {
-    "slug": "e-cigarettes-ke",
-    "names": [
-      "e-cigarette",
-      "vape",
-      "vaping liquid",
-      "e-liquid"
-    ],
-    "destination": "KE",
-    "category": "e_cigarettes",
-    "verdict": "depends",
-    "limits": {
-      "description": "Kenya's e-cigarette import status is actively contested in court, not settled. Health Cabinet Secretary Aden Duale announced a directive on 31 May 2025 suspending the manufacturing, importation, distribution, sale and promotion of nicotine products and requiring all existing licensees to reapply. On 4 June 2025, Justice Bahati Mwamuye of the High Court issued a conservatory order — following a petition by Susan Awino — restraining the government \"from implementing or enforcing the decision suspending all licences and import clearances,\" pending full determination of the case. A separate, broader ban announcement is also reported for 30 July 2025."
-    },
-    "notes": "No Kenya Gazette notice was found for either the ban or the court order — this is reported only through Kenyan mainstream press (The Standard), not a government-primary document. Given the active litigation, don't treat either 'banned' or 'allowed' as settled — check current status before relying on this for travel planning.",
-    "summary": "Uncertain: a 2025 government suspension of nicotine-product imports is on hold under a High Court order.",
-    "legal_source": {
-      "name": "The Standard (Kenya) — 'Court halts CS Duale's ban on nicotine product licences and importation'",
-      "url": "https://www.standardmedia.co.ke/national/article/2001521132/court-halts-cs-duales-ban-on-nicotine-product-licences-and-importation"
-    },
-    "verified_at": "2026-09-18",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
-  },
-  {
     "slug": "e-cigarettes-id",
     "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
     "destination": "ID",
@@ -7554,32 +7518,44 @@
   },
   {
     "slug": "meat-dairy-cn",
-    "names": ["meat", "dairy", "cheese", "milk", "yoghurt", "butter"],
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "yoghurt",
+      "butter"
+    ],
     "destination": "CN",
     "category": "food_animal",
     "verdict": "prohibited",
     "notes": "\"(生或熟)肉类(含脏器类)及其制品\" (meat, raw or cooked, including organ meat and products thereof) and \"动物源性乳及乳制品，包括生乳、巴氏杀菌乳、灭菌乳、调制乳、发酵乳，奶油、黄油、奶酪、炼乳等乳制品\" (animal-origin dairy and dairy products, including raw milk, pasteurized milk, sterilized milk, flavored milk, fermented milk, cream, butter, cheese and condensed milk) are both listed as prohibited, quoted directly from Announcement No. 470's actual text.",
     "legal_source": {
-      "name": "Ministry of Agriculture and Rural Affairs & General Administration of Customs of China, Announcement No. 470 — List of Animals, Plants, Their Products and Other Quarantine Materials Prohibited from Being Carried or Mailed into the People's Republic of China (via China-Africa SPS Cooperation Information Network)",
-      "url": "https://www.chinaafricasps.org/zh/spsxx/yqqk/zgjjjyxyhswhdwybml/608451159900229.shtml"
+      "name": "Ministry of Agriculture and Rural Affairs & General Administration of Customs, Announcement No. 470 — list of animals, plants and their products prohibited from being carried or mailed into China (MOA gazette)",
+      "url": "https://www.moa.gov.cn/nybgb/2022/202202/202203/t20220324_6393815.htm"
     },
-    "verified_at": "2026-09-19",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
     "slug": "fresh-produce-cn",
-    "names": ["fruit", "vegetables", "seeds", "plants"],
+    "names": [
+      "fruit",
+      "vegetables",
+      "seeds",
+      "plants"
+    ],
     "destination": "CN",
     "category": "food_plant",
     "verdict": "prohibited",
     "notes": "\"新鲜水果、蔬菜\" (fresh fruit and vegetables) are listed as prohibited, quoted directly from Announcement No. 470's actual text — the same announcement that bars meat and dairy.",
     "legal_source": {
-      "name": "Ministry of Agriculture and Rural Affairs & General Administration of Customs of China, Announcement No. 470 — List of Animals, Plants, Their Products and Other Quarantine Materials Prohibited from Being Carried or Mailed into the People's Republic of China (via China-Africa SPS Cooperation Information Network)",
-      "url": "https://www.chinaafricasps.org/zh/spsxx/yqqk/zgjjjyxyhswhdwybml/608451159900229.shtml"
+      "name": "Ministry of Agriculture and Rural Affairs & General Administration of Customs, Announcement No. 470 — list of animals, plants and their products prohibited from being carried or mailed into China (MOA gazette)",
+      "url": "https://www.moa.gov.cn/nybgb/2022/202202/202203/t20220324_6393815.htm"
     },
-    "verified_at": "2026-09-19",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {

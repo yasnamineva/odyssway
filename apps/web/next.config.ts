@@ -68,10 +68,15 @@ const withdrawnBringPages = [
   { source: "/bring/e-cigarettes/saudi-arabia", destination: "/destinations/saudi-arabia", permanent: false },
   { source: "/bring/e-cigarettes/china", destination: "/destinations/china", permanent: false },
   { source: "/bring/drones/brazil", destination: "/destinations/brazil", permanent: false },
-  // Overstay rows sourced from an NGO report or third-party law mirrors (2026-10-19).
+  { source: "/bring/e-cigarettes/morocco", destination: "/destinations/morocco", permanent: false },
+  { source: "/bring/e-cigarettes/kenya", destination: "/destinations/kenya", permanent: false },
+  // Overstay rows sourced from NGO, news, law-firm or mirror sites (2026-10-19).
   { source: "/rules/overstay-penalties/gr", destination: "/rules/overstay-penalties", permanent: false },
   { source: "/rules/overstay-penalties/lt", destination: "/rules/overstay-penalties", permanent: false },
   { source: "/rules/overstay-penalties/ee", destination: "/rules/overstay-penalties", permanent: false },
+  { source: "/rules/overstay-penalties/dk", destination: "/rules/overstay-penalties", permanent: false },
+  { source: "/rules/overstay-penalties/bg", destination: "/rules/overstay-penalties", permanent: false },
+  { source: "/rules/overstay-penalties/ch", destination: "/rules/overstay-penalties", permanent: false },
 ];
 
 const retiredBlogRedirects = (

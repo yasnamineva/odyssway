@@ -1791,5 +1791,53 @@
     "verified_at": "2026-09-16",
     "verified_by": "agent:claude-sonnet-5",
     "status": "needs_verification"
+  },
+  {
+    "slug": "e-cigarettes-ma",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping liquid",
+      "e-liquid"
+    ],
+    "destination": "MA",
+    "category": "e_cigarettes",
+    "verdict": "allowed",
+    "limits": {
+      "description": "No import or sale ban exists — Morocco's 2024 Finance Law (PLF-2024) raised the import duty on disposable e-cigarettes from 2.5% to 40%, and a further fixed internal consumption tax of 50 dirhams per disposable unit took effect in January 2025. A new IMANOR product safety/labeling standard for smoke-free products takes effect February 2026."
+    },
+    "notes": "Confirmed via consistent reporting across 7 independent Moroccan financial/business press outlets (Le Desk, La Vie Éco, H24info, Le360, Médias24, and others), not a direct Morocco Customs (douane.gov.ma) fetch — that domain and its specific circulars are bot-blocked from this environment. Treat the 'no ban, just rising duties' finding as solid; verify the exact current duty rate against douane.gov.ma directly when it becomes reachable.",
+    "summary": "Allowed: Morocco has no ban on importing e-cigarettes, though disposable ones carry high duty and tax.",
+    "legal_source": {
+      "name": "Le Desk — 'PLF 2024: le droit d'importation des cigarettes électroniques jetables augmenté à 40%'",
+      "url": "https://ledesk.ma/encontinu/plf-2024-le-droit-dimportation-des-cigarettes-electroniques-jetables-augmente-a-40/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "e-cigarettes-ke",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping liquid",
+      "e-liquid"
+    ],
+    "destination": "KE",
+    "category": "e_cigarettes",
+    "verdict": "depends",
+    "limits": {
+      "description": "Kenya's e-cigarette import status is actively contested in court, not settled. Health Cabinet Secretary Aden Duale announced a directive on 31 May 2025 suspending the manufacturing, importation, distribution, sale and promotion of nicotine products and requiring all existing licensees to reapply. On 4 June 2025, Justice Bahati Mwamuye of the High Court issued a conservatory order — following a petition by Susan Awino — restraining the government \"from implementing or enforcing the decision suspending all licences and import clearances,\" pending full determination of the case. A separate, broader ban announcement is also reported for 30 July 2025."
+    },
+    "notes": "No Kenya Gazette notice was found for either the ban or the court order — this is reported only through Kenyan mainstream press (The Standard), not a government-primary document. Given the active litigation, don't treat either 'banned' or 'allowed' as settled — check current status before relying on this for travel planning.",
+    "summary": "Uncertain: a 2025 government suspension of nicotine-product imports is on hold under a High Court order.",
+    "legal_source": {
+      "name": "The Standard (Kenya) — 'Court halts CS Duale's ban on nicotine product licences and importation'",
+      "url": "https://www.standardmedia.co.ke/national/article/2001521132/court-halts-cs-duales-ban-on-nicotine-product-licences-and-importation"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
   }
 ]
