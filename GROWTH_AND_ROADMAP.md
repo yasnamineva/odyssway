@@ -641,3 +641,8 @@ gate was passed or missed, and why.
   12 November 2026, the total-THC and 0.4 mg-per-container limits from 11 December 2026. The
   US CBD page said everything started on 12 November. China and India → Argentina entry pages
   published after re-reading the Boletín Oficial resolutions.
+- **2026-10-19. Korea: ADHD and cold medicines.** From Korea Customs' own page: methylphenidate
+  and amphetamine carry life or at least 5 years without MFDS approval; cough and cold medicines
+  with dextromethorphan up to 10 years or KRW 100 million. New pages answer "can I bring NyQuil /
+  DayQuil / Robitussin / Mucinex / Delsym / Concerta / Medikinet to South Korea", and Ritalin's
+  comparison now includes Korea.
