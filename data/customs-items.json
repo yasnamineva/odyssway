@@ -121,17 +121,17 @@
     "category": "cbd_cannabis",
     "verdict": "depends",
     "limits": {
-      "description": "Under US federal law, hemp is not marijuana: cannabis, including its extracts and cannabinoids, with a delta-9 THC concentration of no more than 0.3% on a dry-weight basis (7 U.S.C. 1639o; 21 U.S.C. 802(16)(B)). From 12 November 2026 (Public Law 119-37, sec. 781, effective 365 days after 12 November 2025), the limit becomes 0.3% total THC, and finished hemp-derived cannabinoid products no longer count as hemp if they contain more than 0.4 mg of total THC (and similar cannabinoids) per container, or cannabinoids synthesized outside the plant."
+      "description": "Under US federal law, hemp is not marijuana: cannabis, including its extracts and cannabinoids, with a delta-9 THC concentration of no more than 0.3% on a dry-weight basis (7 U.S.C. 1639o; 21 U.S.C. 802(16)(B)). Public Law 119-37, sec. 781, rewrites the definition from 12 November 2026, but Public Law 119-103, sec. 2019, phases it in: from 12 November 2026, hemp-derived cannabinoid products containing cannabinoids that a cannabis plant cannot naturally produce no longer count as hemp; from 11 December 2026, the rest applies — 0.3% total THC, no more than 0.4 mg of total THC (and similar cannabinoids) per container for final products, and no plant-type cannabinoids synthesized outside the plant."
     },
     "legal_source": {
       "name": "7 U.S.C. 1639o — definition of hemp (govinfo, US Code 2024)",
       "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title7/pdf/USCODE-2024-title7-chap38-subchapVII-sec1639o.pdf"
     },
-    "verified_at": "2026-10-18",
+    "verified_at": "2026-10-19",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "notes": "CBP's own article on CBD warns that CBD products may contain more THC than their labels say, and that products advertised as 'pure' may contain illegal amounts of THC.",
-    "summary": "Hemp CBD under 0.3% delta-9 THC isn't marijuana under federal law. Stricter limits apply from 12 November 2026.",
+    "summary": "Hemp CBD under 0.3% delta-9 THC isn't marijuana under federal law. Stricter limits start on 12 November 2026 and fully on 11 December 2026.",
     "_sources": [
       {
         "claim": "Hemp definition (0.3% delta-9 THC, dry weight)",
@@ -144,7 +144,7 @@
         "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title21/pdf/USCODE-2023-title21-chap13-subchapI-partA-sec802.pdf"
       },
       {
-        "claim": "Amended definition from 12 November 2026: total THC; 0.4 mg per container for final products; no synthesized cannabinoids",
+        "claim": "Amended definition (sec. 781): total THC; 0.4 mg per container for final products; synthesized and non-natural cannabinoids excluded",
         "name": "Public Law 119-37 (12 November 2025), Division B, sec. 781 — amended hemp definition",
         "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ37/pdf/PLAW-119publ37.pdf"
       },
@@ -152,6 +152,11 @@
         "claim": "CBD products may contain more THC than labelled",
         "name": "U.S. Customs and Border Protection — CBD: know the facts",
         "url": "https://www.cbp.gov/employee-resources/health-wellness/substance-abuse-prevention/cbd-know-facts"
+      },
+      {
+        "claim": "Until 11 December 2026, sec. 781 applies only to products with cannabinoids not naturally produced by the plant (sec. 2019)",
+        "name": "Public Law 119-103 (Continuing Appropriations and Extensions Act, 2027), sec. 2019 (congress.gov)",
+        "url": "https://www.congress.gov/119/plaws/publ103/PLAW-119publ103.pdf"
       }
     ]
   },
