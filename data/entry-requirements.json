@@ -186,15 +186,16 @@
       "kind": "visa_required"
     },
     "documentsNeeded": [
-      "A B-1/B-2 visa, or a Border Crossing Card (Form DSP-150) for land entry within the border zone"
+      "A B-1/B-2 visa and passport, or a Border Crossing Card (Form DSP-150, B-1/B-2 Visa and Border Crossing Card)",
+      "With a Border Crossing Card: a passport as well, unless you arrive at a land port of entry or by pleasure vessel or ferry"
     ],
-    "notes": "Mexican nationals may enter for business/pleasure at land ports without a separate visa stamp if holding a valid Border Crossing Card; air travel requires a passport with a B-1/B-2 visa.",
+    "notes": "Under 8 CFR 212.1(c), a Mexican national visiting for business or pleasure needs no separate visa or passport at a land port of entry, or arriving by pleasure vessel or ferry, if they hold a Form DSP-150 (B-1/B-2 Visa and Border Crossing Card) with a machine-readable biometric identifier. Arriving any other way (for example by air), the Border Crossing Card replaces the visa but a passport is also required.",
     "legal_source": {
-      "name": "8 CFR §212.1(a) — documentary requirements for Mexican nationals",
-      "url": "https://www.govinfo.gov/content/pkg/CFR-2023-title8-vol1/xml/CFR-2023-title8-vol1-sec212-1.xml"
+      "name": "8 CFR §212.1(c) — documentary requirements for Mexican nationals (eCFR, current)",
+      "url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-212/section-212.1"
     },
-    "verified_at": "2026-08-10",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -3849,8 +3850,8 @@
       "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
       "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -6072,13 +6073,13 @@
       "unit": "months",
       "from": "arrival"
     },
-    "notes": "UK (and Northern Ireland) citizens are on Vietnam's unilateral visa-exemption list under Government Resolution No. 44/NQ-CP (7 March 2025), granting visa-free stays of up to 45 days regardless of passport type or purpose, effective 15 March 2025 to 14 March 2028. No fixed re-entry waiting period currently applies (the former 30-day gap requirement was removed under the 2019 Law on Entry, Exit, Transit and Residence of Foreigners, effective 1 July 2020). For stays beyond 45 days a visa/e-visa is required.",
+    "notes": "UK citizens are on Viet Nam's unilateral visa-exemption list under Government Resolution No. 44/NQ-CP (7 March 2025): visa-free stays of up to 45 days from the date of entry, regardless of passport type or purpose of entry, valid 15 March 2025 to 14 March 2028 (may be considered for extension). For longer stays apply for an e-visa (up to 90 days) before travel.",
     "legal_source": {
       "name": "Embassy of the Socialist Republic of Vietnam in Japan - \"Vietnam extends visa exemption policy\" (citing Resolution 44/NQ-CP)",
       "url": "https://vnembassy-jp.org/en/vietnam-extends-visa-exemption-policy"
     },
-    "verified_at": "2026-08-18",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -6186,13 +6187,13 @@
       "unit": "months",
       "from": "arrival"
     },
-    "notes": "Japan is on Vietnam's unilateral visa-exemption list under Government Resolution No. 44/NQ-CP (7 March 2025): visa-free stays of up to 45 days regardless of purpose, effective 15 March 2025 to 14 March 2028. For stays beyond 45 days a visa/e-visa is required.",
+    "notes": "Japanese citizens are on Viet Nam's unilateral visa-exemption list under Government Resolution No. 44/NQ-CP (7 March 2025): visa-free stays of up to 45 days from the date of entry, regardless of passport type or purpose of entry, valid 15 March 2025 to 14 March 2028 (may be considered for extension). For longer stays apply for an e-visa (up to 90 days) before travel.",
     "legal_source": {
       "name": "Embassy of the Socialist Republic of Vietnam in Japan - \"Vietnam extends visa exemption policy\" (citing Resolution 44/NQ-CP)",
       "url": "https://vnembassy-jp.org/en/vietnam-extends-visa-exemption-policy"
     },
-    "verified_at": "2026-08-18",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -6213,13 +6214,13 @@
       "unit": "months",
       "from": "arrival"
     },
-    "notes": "South Korea is on Vietnam's unilateral visa-exemption list under Government Resolution No. 44/NQ-CP (7 March 2025): visa-free stays of up to 45 days regardless of purpose, effective 15 March 2025 to 14 March 2028. For stays beyond 45 days a visa/e-visa is required.",
+    "notes": "South Korean citizens are on Viet Nam's unilateral visa-exemption list under Government Resolution No. 44/NQ-CP (7 March 2025): visa-free stays of up to 45 days from the date of entry, regardless of passport type or purpose of entry, valid 15 March 2025 to 14 March 2028 (may be considered for extension). For longer stays apply for an e-visa (up to 90 days) before travel.",
     "legal_source": {
       "name": "Embassy of the Socialist Republic of Vietnam in Japan - \"Vietnam extends visa exemption policy\" (citing Resolution 44/NQ-CP)",
       "url": "https://vnembassy-jp.org/en/vietnam-extends-visa-exemption-policy"
     },
-    "verified_at": "2026-08-18",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -6456,19 +6457,18 @@
       "kind": "visa_required"
     },
     "documentsNeeded": [
-      "Passport valid 6+ months with 2+ blank visa pages",
-      "China Online Visa Application (COVA) form completed online",
-      "Passport-style photo (white background)",
-      "Proof of US residence (driver's license, utility bill, etc.)",
-      "In-person submission of original passport at a Visa Application Service Center/Embassy visa office"
+      "Passport valid for more than 6 months with at least 2 blank visa pages",
+      "Visa application completed in the China Online Visa Application (COVA) system",
+      "Proof of residence (e.g. driver's license, utility bill, bank bill)",
+      "Original passport presented at the Visa Office"
     ],
-    "notes": "US ordinary-passport holders are not on China's unilateral visa-free list and must obtain an L (tourist) visa in advance. Since January 2024 the Embassy has simplified L-visa documentation so most applicants no longer need to submit air tickets, hotel bookings, itineraries, or invitation letters. Many US applicants are issued 10-year multiple-entry visas, but the permitted length of stay per entry is set on the visa itself (commonly up to 60 days) — this is not a self-service stay-length rule. Separately, a 144-hour/240-hour visa-free transit exists at some ports for onward travel to a third country/region, but that is transit-only and does not cover general tourism of China.",
+    "notes": "US ordinary-passport holders are not on China's unilateral visa-free list (NIA list dated 2026-02-17) and need a visa before travel. The Chinese Embassy in the US states that, from 1 January 2024, tourist (L) visa applicants in the US no longer need to submit a round-trip air ticket booking, hotel reservation, itinerary or invitation letter. Applications go through the new COVA system, launched at the Embassy on 30 September 2025. Regular processing is 4 business days.",
     "legal_source": {
       "name": "Embassy of the People's Republic of China in the United States of America — Requirements and Procedures for Chinese Visa Application (Updated September 2025)",
       "url": "https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202509/t20250920_11712385.htm"
     },
-    "verified_at": "2026-08-18",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -6506,13 +6506,13 @@
       "Proof of onward/return travel (may be requested by airline or border control)",
       "Proof of accommodation or travel itinerary (may be requested by border control)"
     ],
-    "notes": "Canada was added to China's unilateral 30-day visa-free list in February 2026, alongside the UK. Ordinary-passport holders may enter visa-free for business, tourism, family visits, cultural exchange, or transit up to 30 days per entry; stay is counted from 00:00 the day after entry. Work, study, and journalism are not covered. Policy currently runs through 31 December 2026 per NIA.",
+    "notes": "Canada is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states it runs until 31 December 2026 for this group of countries; China's embassy in Canada gives the same end date for Canada (from 17 February 2026).",
     "legal_source": {
       "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy",
       "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
     },
-    "verified_at": "2026-08-18",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -6528,13 +6528,13 @@
       "Proof of onward/return travel (may be requested by airline or border control)",
       "Proof of accommodation or travel itinerary (may be requested by border control)"
     ],
-    "notes": "Australia is on China's unilateral 30-day visa-free list (business, tourism, family visits, cultural exchange, transit); stay counted from 00:00 the day after entry, multiple entries permitted. Work, study, and journalism are excluded and require the applicable visa.",
+    "notes": "Australia is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states it runs until 31 December 2026 for this group of countries.",
     "legal_source": {
       "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy",
       "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
     },
-    "verified_at": "2026-08-18",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -6550,13 +6550,13 @@
       "Proof of onward/return travel (may be requested by airline or border control)",
       "Proof of accommodation or travel itinerary (may be requested by border control)"
     ],
-    "notes": "New Zealand is on China's unilateral 30-day visa-free list on the same terms as Australia. Work, study, and journalism are excluded and require the applicable visa.",
+    "notes": "New Zealand is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states it runs until 31 December 2026 for this group of countries.",
     "legal_source": {
       "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy",
       "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
     },
-    "verified_at": "2026-08-18",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -6572,13 +6572,13 @@
       "Proof of onward/return travel (may be requested by airline or border control)",
       "Proof of accommodation or travel itinerary (may be requested by border control)"
     ],
-    "notes": "Japan is on China's unilateral 30-day visa-free list. Stay counted from 00:00 the day after entry; multiple entries permitted; work, study, and journalism excluded.",
+    "notes": "Japan is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states it runs until 31 December 2026 for this group of countries.",
     "legal_source": {
       "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy",
       "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
     },
-    "verified_at": "2026-08-18",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -6594,13 +6594,13 @@
       "Proof of onward/return travel (may be requested by airline or border control)",
       "Proof of accommodation or travel itinerary (may be requested by border control)"
     ],
-    "notes": "South Korea is on China's unilateral 30-day visa-free list. Stay counted from 00:00 the day after entry; multiple entries permitted; work, study, and journalism excluded.",
+    "notes": "South Korea is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states it runs until 31 December 2026 for this group of countries.",
     "legal_source": {
       "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy",
       "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
     },
-    "verified_at": "2026-08-18",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -6638,13 +6638,13 @@
       "Proof of onward/return travel (may be requested by airline or border control)",
       "Proof of accommodation or travel itinerary (may be requested by border control)"
     ],
-    "notes": "Brazil is on China's unilateral 30-day visa-free list (business, tourism, family visits, cultural exchange, transit). Stay counted from 00:00 the day after entry; multiple entries permitted; work, study, and journalism excluded.",
+    "notes": "Brazil is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states it runs until 31 December 2026 for this group of countries.",
     "legal_source": {
       "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy",
       "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
     },
-    "verified_at": "2026-08-18",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -6666,8 +6666,8 @@
       "name": "Embajada de la República Popular China en México — Requisitos de solicitud de visa (actualizado a partir de septiembre de 2025)",
       "url": "https://mx.china-embassy.gov.cn/esp/LSFW/consular1/202510/t20251001_11722302.htm"
     },
-    "verified_at": "2026-08-18",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -6683,13 +6683,13 @@
       "Proof of onward/return travel (may be requested by airline or border control)",
       "Proof of accommodation or travel itinerary (may be requested by border control)"
     ],
-    "notes": "Argentina is on China's unilateral 30-day visa-free list (business, tourism, family visits, cultural exchange, transit). Stay counted from 00:00 the day after entry; multiple entries permitted; work, study, and journalism excluded.",
+    "notes": "Argentina is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states it runs until 31 December 2026 for this group of countries.",
     "legal_source": {
       "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy",
       "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
     },
-    "verified_at": "2026-08-18",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -6705,13 +6705,13 @@
       "Proof of onward/return travel (may be requested by airline or border control)",
       "Proof of accommodation or travel itinerary (may be requested by border control)"
     ],
-    "notes": "Chile is on China's unilateral 30-day visa-free list (business, tourism, family visits, cultural exchange, transit). Stay counted from 00:00 the day after entry; multiple entries permitted; work, study, and journalism excluded.",
+    "notes": "Chile is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states it runs until 31 December 2026 for this group of countries.",
     "legal_source": {
       "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy",
       "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
     },
-    "verified_at": "2026-08-18",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -6733,8 +6733,8 @@
       "name": "Embassy of the People's Republic of China in Malaysia — FAQs on the China-Malaysia Mutual Visa Exemption Agreement",
       "url": "https://my.china-embassy.gov.cn/eng/fwzc/lsyw/qz/202508/t20250801_11681401.htm"
     },
-    "verified_at": "2026-08-18",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
