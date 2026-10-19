@@ -617,3 +617,8 @@ gate was passed or missed, and why.
   Turkey cash (all cash carried is held when the explanation is missing or false), Nigeria
   cannabis penalties (NDLEA Act s. 20), Egypt medicine (medical reports, not a prescription).
   37 rows held, mostly because their official pages don't load from here.
+- **2026-10-19. Mexico entry and US customs sources replaced.** Mexico's 21 entry rows cited
+  a 2012 PDF; they now cite INM's current lists. Malaysian travellers no longer see a consular
+  stamp requirement the current list doesn't have. US customs medicine, meat/dairy and produce
+  rows now cite CBP's current page: the agriculture penalty is $300 (first offence), not
+  "up to $1,000", and cheese and produce are "depends", not "prohibited".
