@@ -6571,18 +6571,25 @@
   },
   {
     "slug": "cbd-cn",
-    "names": ["cbd", "cbd oil", "hemp extract"],
+    "names": [
+      "cbd",
+      "cbd oil",
+      "hemp extract"
+    ],
     "destination": "CN",
     "category": "cbd_cannabis",
-    "verdict": "prohibited",
-    "notes": "Since September 1, 2024, China regulates cannabidiol (CBD) as a Category II precursor chemical requiring import/export licensing (joint announcement by China's NMPA, customs authority GACC, and other ministries); there is no personal-use import pathway for travelers, and unlicensed CBD products are treated as contraband at the border regardless of THC content or legality abroad.",
+    "verdict": "depends",
+    "notes": "Joint announcement of 2 August 2024 by the Ministry of Public Security, Ministry of Commerce, National Health Commission, Ministry of Emergency Management, General Administration of Customs and National Medical Products Administration, adding CBD to the Regulations on the Administration of Precursor Chemicals. It does not mention a personal-use allowance for travellers.",
     "legal_source": {
-      "name": "USDA Foreign Agricultural Service, GAIN Report CH2024-0101 — 'China: Cannabidiol to be Regulated as Precursor Chemical'",
-      "url": "https://www.fas.usda.gov/data/china-cannabidiol-be-regulated-precursor-chemical"
+      "name": "Ministry of Emergency Management (joint announcement, 2 Aug 2024) — adding cannabidiol and six other substances to precursor-chemical control",
+      "url": "https://www.mem.gov.cn/gk/zfxxgkpt/fdzdgknr/202408/t20240808_497240.shtml"
     },
-    "verified_at": "2026-09-16",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "limits": {
+      "description": "Since 1 September 2024, cannabidiol (CBD, CAS 13956-29-1) is managed as a Category II precursor chemical: its import and export follow China's rules for non-pharmaceutical precursor chemicals."
+    }
   },
   {
     "slug": "cannabis-kr",

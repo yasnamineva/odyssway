@@ -65,19 +65,6 @@
     "status": "verified"
   },
   {
-    "country": "EE",
-    "fineRange": "Punishable as a misdemeanor (väärtegu) under Penal Code § 260; the statute's specific fine-unit amount was not confirmed against primary text this pass",
-    "banRange": "3 years if issued at a border checkpoint for an expired Schengen-authorized stay; 5 years for a standard precept-to-leave; up to 10 years for aggravated or repeat cases",
-    "enforcementNotes": "Governed by Estonia's Obligation to Leave and Prohibition on Entry Act. Ban-duration figures were read directly from the Act's English text via LegislationLine (an OSCE/ODIHR legal database mirroring official translations) — Estonia's own Official Gazette portal (riigiteataja.ee) is JS-rendered and didn't return text via automated fetch.",
-    "legal_source": {
-      "name": "Obligation to Leave and Prohibition on Entry Act of the Republic of Estonia, via LegislationLine (OSCE/ODIHR)",
-      "url": "https://legislationline.org/taxonomy/term/13346"
-    },
-    "verified_at": "2026-09-16",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
-  },
-  {
     "country": "ES",
     "fineRange": "EUR 501–10,000 — Spanish authorities choose between a fine and expulsion for a given case, they aren't applied together",
     "banRange": "3–10 years Schengen-wide if expulsion (rather than a fine) is the outcome chosen",
@@ -137,19 +124,6 @@
     "legal_source": {
       "name": "Normattiva (Italy's official legislative database) — Decreto Legislativo 25 luglio 1998, n. 286 (Testo Unico Immigrazione), Artt. 13, 13-bis",
       "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-07-25;286"
-    },
-    "verified_at": "2026-09-16",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
-  },
-  {
-    "country": "LT",
-    "fineRange": "EUR 70–300 (Code of Administrative Offences, Art. 538), for undocumented entry, stay, residence or transit",
-    "banRange": "General Schengen entry bans of 1–5 years; up to 5 years specifically for failing to pay fines or discharge customs obligations under the Law on the Legal Status of Aliens",
-    "enforcementNotes": "Irregular stay is classed as an administrative offense under Art. 538. Detention pending deportation is possible under the Law on the Legal Status of Aliens, Art. 113(2), if the person is assessed as a flight risk. Figures come from a UNHCR Refworld-hosted translation of the relevant Lithuanian statutes, not a direct fetch of Lithuania's own legislative portal.",
-    "legal_source": {
-      "name": "Code of Administrative Offences of the Republic of Lithuania, Art. 538; Law on the Legal Status of Aliens, via UNHCR Refworld",
-      "url": "https://www.refworld.org/sites/default/files/attachments/58a6e3d74.pdf"
     },
     "verified_at": "2026-09-16",
     "verified_by": "agent:claude-sonnet-5",
@@ -306,19 +280,6 @@
     "legal_source": {
       "name": "Act No. 326/1999 Sb., on the Residence of Foreign Nationals in the Czech Republic, §§ 103(n), 119(1), 157",
       "url": "https://www.zakonyprolidi.cz/cs/1999-326"
-    },
-    "verified_at": "2026-09-18",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
-  },
-  {
-    "country": "GR",
-    "fineRange": "At least EUR 5,000, as part of a criminal sentence (not a standalone administrative fine) — rising to EUR 10,000+ for a repeat offense after a prior deportation",
-    "banRange": "Not a fixed range — Greece treats a repeat offense (returning after deportation) as an aggravated version of the same criminal offense rather than issuing a separate administrative entry-ban duration figure",
-    "enforcementNotes": "Greece criminalized simple illegal stay via Law 5275/2026 (Government Gazette, published 6 February 2026) — converting what most other Schengen countries treat as an administrative matter into a criminal one. At least 2 years' imprisonment plus the fine above applies to a first offense; a repeat offense after deportation draws at least 3 years plus EUR 10,000+. This is a genuinely different, and much harsher, enforcement model than the administrative-fine approach used elsewhere in this dataset, and a recent, active policy shift (nearly 300 people were reported imprisoned under it as of this check) — don't assume Greece follows the same pattern as its neighbors. This supersedes the older Law 4251/2014, which an earlier research pass had been targeting for this question.",
-    "legal_source": {
-      "name": "R.S.A. (Refugee Support Aegean) — 'Criminalisation of illegal stay in Greece puts almost 300 people behind bars', re: Law 5275/2026",
-      "url": "https://rsaegean.org/en/criminalisation-of-illegal-stay-in-greece-puts-almost-300-people-behind-bars/"
     },
     "verified_at": "2026-09-18",
     "verified_by": "agent:claude-sonnet-5",
