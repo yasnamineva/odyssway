@@ -636,3 +636,8 @@ gate was passed or missed, and why.
   for now (307 redirects): overstay pages for Portugal, Romania, Slovenia, Czechia and
   Slovakia, Nigeria cannabis and Albania e-cigarettes. The overstay explainer now lists 14
   verified countries and names the rest.
+- **2026-10-19. US hemp dates corrected; two Argentina rows promoted.** Congress's September
+  stopgap law (P.L. 119-103) phases in the new hemp definition: non-natural cannabinoids from
+  12 November 2026, the total-THC and 0.4 mg-per-container limits from 11 December 2026. The
+  US CBD page said everything started on 12 November. China and India → Argentina entry pages
+  published after re-reading the Boletín Oficial resolutions.
