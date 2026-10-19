@@ -439,7 +439,8 @@ engine/src/stay-policy.ts` expresses this as a discriminated union so the trip-c
 resolver (§7 `/`) can share one type across destinations:
 ```ts
 type StayPolicy =
-  | { kind: "rolling_window"; windowDays: number; maxDays: number }  // Schengen: 180/90
+  | { kind: "rolling_window"; windowDays: number; maxDays: number;  // Schengen: 180/90
+      maxDaysPerEntry?: number }  // only when the source also caps each stay (2026-10-19)
   | { kind: "fixed_per_entry"; maxDays: number }
   | { kind: "visa_required" };                                       // no automatic duration
 ```

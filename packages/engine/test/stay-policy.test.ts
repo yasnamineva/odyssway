@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { stayPolicySchema } from "../src/schemas";
 import { evaluateSimpleStay, type StayPolicy } from "../src/stay-policy";
 
 const ninetyDays: Extract<StayPolicy, { kind: "fixed_per_entry" }> = {
@@ -42,5 +43,21 @@ describe("evaluateSimpleStay", () => {
     };
     expect(evaluateSimpleStay(uk, 180).compliant).toBe(true);
     expect(evaluateSimpleStay(uk, 181).compliant).toBe(false);
+  });
+});
+
+describe("stayPolicySchema maxDaysPerEntry", () => {
+  const base = { kind: "rolling_window", windowDays: 180, maxDays: 90 } as const;
+
+  it("accepts a rolling window without a per-entry cap", () => {
+    expect(stayPolicySchema.safeParse(base).success).toBe(true);
+  });
+
+  it("accepts a per-entry cap below the window total", () => {
+    expect(stayPolicySchema.safeParse({ ...base, maxDaysPerEntry: 30 }).success).toBe(true);
+  });
+
+  it("rejects a per-entry cap that is not below the window total", () => {
+    expect(stayPolicySchema.safeParse({ ...base, maxDaysPerEntry: 90 }).success).toBe(false);
   });
 });

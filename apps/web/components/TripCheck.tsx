@@ -542,10 +542,16 @@ function TripCheckResults({
                 <h3 className="text-sm font-semibold text-slate-900">{t("stayCardTitle")}</h3>
                 <p className="mt-1 text-sm text-slate-700" data-testid="tc-stay">
                   {result.stayPolicy.kind === "rolling_window"
-                    ? t("stayRollingWindow", {
-                        maxDays: result.stayPolicy.maxDays,
-                        windowDays: result.stayPolicy.windowDays,
-                      })
+                    ? result.stayPolicy.maxDaysPerEntry
+                      ? t("stayRollingWindowPerEntry", {
+                          perEntry: result.stayPolicy.maxDaysPerEntry,
+                          maxDays: result.stayPolicy.maxDays,
+                          windowDays: result.stayPolicy.windowDays,
+                        })
+                      : t("stayRollingWindow", {
+                          maxDays: result.stayPolicy.maxDays,
+                          windowDays: result.stayPolicy.windowDays,
+                        })
                     : result.stayPolicy.kind === "fixed_per_entry"
                       ? t("stayFixedPerEntry", {
                           maxDays: result.stayPolicy.maxDays,

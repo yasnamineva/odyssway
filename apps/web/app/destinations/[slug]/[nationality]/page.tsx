@@ -29,7 +29,13 @@ async function pairText(pair: TravelPair) {
     policy.kind === "fixed_per_entry"
       ? t("stayFixed", { days: policy.maxDays })
       : policy.kind === "rolling_window"
-        ? t("stayRolling", { maxDays: policy.maxDays, windowDays: policy.windowDays })
+        ? policy.maxDaysPerEntry
+          ? t("stayRollingPerEntry", {
+              perEntry: policy.maxDaysPerEntry,
+              maxDays: policy.maxDays,
+              windowDays: policy.windowDays,
+            })
+          : t("stayRolling", { maxDays: policy.maxDays, windowDays: policy.windowDays })
         : pair.row.requirement === "visa_required"
           ? t("stayVisa")
           : t("stayUnconfirmed");

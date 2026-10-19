@@ -168,11 +168,18 @@ export const destinationsFileSchema = z.array(destinationRecordSchema);
 
 // --- StayPolicy (packages/engine/src/stay-policy.ts) as data ---
 export const stayPolicySchema = z.discriminatedUnion("kind", [
-  z.object({
-    kind: z.literal("rolling_window"),
-    windowDays: z.number().int().positive(),
-    maxDays: z.number().int().positive(),
-  }),
+  z
+    .object({
+      kind: z.literal("rolling_window"),
+      windowDays: z.number().int().positive(),
+      maxDays: z.number().int().positive(),
+      /** Only when the source also caps each single stay below the window total. */
+      maxDaysPerEntry: z.number().int().positive().optional(),
+    })
+    .refine((p) => p.maxDaysPerEntry === undefined || p.maxDaysPerEntry < p.maxDays, {
+      message: "maxDaysPerEntry must be below maxDays (otherwise leave it out)",
+      path: ["maxDaysPerEntry"],
+    }),
   z.object({ kind: z.literal("fixed_per_entry"), maxDays: z.number().int().positive() }),
   z.object({ kind: z.literal("visa_required") }),
 ]);

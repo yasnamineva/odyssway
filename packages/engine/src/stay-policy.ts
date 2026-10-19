@@ -9,9 +9,12 @@
  * Canada's visitor status all work this way. `visa_required` means no
  * automatic duration exists — the visa terms decide it, so the engine does
  * not compute a number and callers must not display one.
+ *
+ * `maxDaysPerEntry` is set on a rolling window only when the source also caps
+ * each single stay (e.g. 30 days per entry inside 90 in 180); callers show both.
  */
 export type StayPolicy =
-  | { kind: "rolling_window"; windowDays: number; maxDays: number }
+  | { kind: "rolling_window"; windowDays: number; maxDays: number; maxDaysPerEntry?: number }
   | { kind: "fixed_per_entry"; maxDays: number }
   | { kind: "visa_required" };
 

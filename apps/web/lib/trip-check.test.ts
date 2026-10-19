@@ -19,6 +19,11 @@ describe("resolveTripCheck", () => {
     expect(result.legalSource?.name).toContain("Schengen Borders Code");
   });
 
+  it("passes a per-entry cap through with the rolling window", () => {
+    const result = resolveTripCheck("MY", "CN", []);
+    expect(result.stayPolicy).toEqual({ kind: "rolling_window", windowDays: 180, maxDays: 90, maxDaysPerEntry: 30 });
+  });
+
   it("resolves a specific Schengen member state the same way as the SCHENGEN sentinel", () => {
     const bySentinel = resolveTripCheck("US", SCHENGEN_DESTINATION, []);
     const byCountry = resolveTripCheck("US", "FR", []);
