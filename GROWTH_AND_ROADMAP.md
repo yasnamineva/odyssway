@@ -622,3 +622,10 @@ gate was passed or missed, and why.
   stamp requirement the current list doesn't have. US customs medicine, meat/dairy and produce
   rows now cite CBP's current page: the agriculture penalty is $300 (first offence), not
   "up to $1,000", and cheese and produce are "depends", not "prohibited".
+- **2026-10-19. Source audit after the first full source-watch baseline.** Scanned every
+  cited URL for non-government sources. Re-sourced Korea cannabis/CBD to Korea Customs (the
+  penalty is life imprisonment or at least 5 years, not "up to 5 years"), China food rows and
+  China CBD (a licensed precursor, so "depends") to official pages. Withdrew rows that rested on
+  news, law-firm or NGO pages: overstay pages for Greece, Lithuania, Estonia, Denmark, Bulgaria
+  and Switzerland, and e-cigarette rows for Morocco and Kenya (307 redirects). Still open:
+  rows citing unofficial copies of statutes, to be re-cited to official legal portals.
