@@ -610,3 +610,10 @@ gate was passed or missed, and why.
   (Japan's MOFA blocks fetches; Mexico's cited list is a 2012 PDF). Rolling stay windows can
   now carry a per-visit cap, so Malaysia to China shows "30 days per visit, 90 in 180" and
   Colombia "90 per visit, 180 in 365" instead of only the window total.
+- **2026-10-19. August customs rows: manual read.** Read the sources behind the 83 customs rows
+  still dated August. 46 re-dated, most with notes trimmed to what the source says. Corrected:
+  Morocco drones (an import licence from the foreign trade department; the police route the row
+  described is for hunting weapons), Mexico and South Africa weapons (permit-based, not banned),
+  Turkey cash (all cash carried is held when the explanation is missing or false), Nigeria
+  cannabis penalties (NDLEA Act s. 20), Egypt medicine (medical reports, not a prescription).
+  37 rows held, mostly because their official pages don't load from here.
