@@ -15984,5 +15984,215 @@
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "alcohol-am",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "vodka",
+      "whisky",
+      "liquor",
+      "brandy"
+    ],
+    "destination": "AM",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "summary": "Up to 3 litres duty-free; more than 5 litres from outside the EAEU is banned. Only for travellers 18 and over.",
+    "limits": {
+      "description": "Up to 3 litres of drinks over 0.5% alcohol duty-free. Above 3 litres, declare and pay duty of the AMD equivalent of EUR 10 per litre. Importing more than 5 litres from third countries is prohibited, as is any import by people under 18.",
+      "quantity": "3 litres duty-free; 5 litres maximum"
+    },
+    "legal_source": {
+      "name": "State Revenue Committee of Armenia — Guide for individuals crossing the RA border (2024)",
+      "url": "https://src.am/storage/menu_contents_266/tq_sahman_hatogh_fizandz_eng_6666aa46082b1.pdf"
+    },
+    "_sources": [
+      {
+        "claim": "3 L duty-free; 5 L maximum from third countries; under 18 banned; EUR 10/L above 3 L",
+        "name": "State Revenue Committee of Armenia — Guide for individuals crossing the RA border (2024)",
+        "url": "https://src.am/storage/menu_contents_266/tq_sahman_hatogh_fizandz_eng_6666aa46082b1.pdf"
+      },
+      {
+        "claim": "Alcohol excluded from the general allowance; 3 L",
+        "name": "State Revenue Committee of Armenia — Guide for individuals crossing the border: duty-free quantities (2024)",
+        "url": "https://src.am/storage/menu_contents_266/tv_without_payment_taxes_670fb8cf8e06c.pdf"
+      }
+    ],
+    "verified_at": "2026-10-20",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-am",
+    "names": [
+      "cigarettes",
+      "tobacco",
+      "cigars",
+      "cigarillos",
+      "heated tobacco",
+      "heat sticks",
+      "iqos",
+      "smoking"
+    ],
+    "destination": "AM",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "summary": "Up to 200 cigarettes, 50 cigars, 200 heated-tobacco sticks or 250 g of tobacco. Only for travellers 18 and over.",
+    "limits": {
+      "description": "Up to 200 cigarettes, or 50 cigars (cigarillos), or 200 heated-tobacco sticks, or 250 g of tobacco (or a mix weighing no more than 250 g). Importing more is prohibited, as is any import by people under 18.",
+      "quantity": "200 cigarettes / 50 cigars / 200 sticks / 250 g"
+    },
+    "legal_source": {
+      "name": "State Revenue Committee of Armenia — Guide for individuals crossing the RA border (2024)",
+      "url": "https://src.am/storage/menu_contents_266/tq_sahman_hatogh_fizandz_eng_6666aa46082b1.pdf"
+    },
+    "_sources": [
+      {
+        "claim": "Tobacco limits; under 18 banned",
+        "name": "State Revenue Committee of Armenia — Guide for individuals crossing the RA border (2024)",
+        "url": "https://src.am/storage/menu_contents_266/tq_sahman_hatogh_fizandz_eng_6666aa46082b1.pdf"
+      },
+      {
+        "claim": "Duty-free tobacco quantities",
+        "name": "State Revenue Committee of Armenia — Guide for individuals crossing the border: duty-free quantities (2024)",
+        "url": "https://src.am/storage/menu_contents_266/tv_without_payment_taxes_670fb8cf8e06c.pdf"
+      }
+    ],
+    "verified_at": "2026-10-20",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-am",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "cheques",
+      "checks",
+      "dram",
+      "amd"
+    ],
+    "destination": "AM",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "summary": "Declare cash or traveller's cheques over USD 10,000. Other monetary instruments must always be declared.",
+    "limits": {
+      "description": "Cash or traveller's cheques up to USD 10,000 in total don't need declaring. Monetary instruments other than traveller's cheques must be declared whatever the amount. Money on bank cards isn't declared. Declarations over USD 100,000 need documents showing where the money came from.",
+      "quantity": "USD 10,000"
+    },
+    "notes": "Failing to declare goods that must be declared, including monetary instruments, can lead to administrative or criminal penalties under Armenian law.",
+    "legal_source": {
+      "name": "State Revenue Committee of Armenia — Guide for individuals crossing the RA border (2024)",
+      "url": "https://src.am/storage/menu_contents_266/tq_sahman_hatogh_fizandz_eng_6666aa46082b1.pdf"
+    },
+    "verified_at": "2026-10-20",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-am",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "otc medicine"
+    ],
+    "destination": "AM",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "summary": "Up to 10 types of medicine, 3 packs each, for personal use. More if a prescription or doctor's document justifies it.",
+    "limits": {
+      "description": "For personal use or treatment, medicines registered or not registered in Armenia can be brought in without certification: up to 10 types, with three consumer packs each, unless a prescription, medical history or other document signed by a doctor justifies a larger quantity for the course of treatment.",
+      "quantity": "10 types × 3 packs"
+    },
+    "notes": "Medicine containing narcotic or psychotropic substances follows separate rules (see Armenia's controlled-medication entry).",
+    "legal_source": {
+      "name": "State Revenue Committee of Armenia — Guide for individuals crossing the RA border (2024)",
+      "url": "https://src.am/storage/menu_contents_266/tq_sahman_hatogh_fizandz_eng_6666aa46082b1.pdf"
+    },
+    "verified_at": "2026-10-20",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-am",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "controlled medication"
+    ],
+    "destination": "AM",
+    "category": "medication",
+    "verdict": "depends",
+    "summary": "No licence needed, but only medicines registered in Armenia, with medical documents translated into Armenian and notarised. Declare them.",
+    "limits": {
+      "description": "Narcotic and psychotropic medicines can be brought in without a licence if you show medical documents confirming the medical need, with the product name and quantity. The documents, or certified Armenian translations with notarisation, must be given to customs. Only narcotic and psychotropic medicines registered in Armenia may be imported. Fill in a customs declaration stating the quantity prescribed and that it was legally obtained."
+    },
+    "notes": "Failing to declare medicine containing narcotic or psychotropic substances can lead to administrative or criminal penalties under Armenian law.",
+    "legal_source": {
+      "name": "State Revenue Committee of Armenia — Guide for individuals crossing the RA border (2024)",
+      "url": "https://src.am/storage/menu_contents_266/tq_sahman_hatogh_fizandz_eng_6666aa46082b1.pdf"
+    },
+    "verified_at": "2026-10-20",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-am",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds",
+      "flowers",
+      "fresh produce"
+    ],
+    "destination": "AM",
+    "category": "food_plant",
+    "verdict": "allowed_with_limits",
+    "summary": "Up to 5 kg of plant products without a phytosanitary certificate, plus one melon or pumpkin and three bunches of flowers.",
+    "limits": {
+      "description": "Up to 5 kg of high phytosanitary-risk products without a phytosanitary certificate (excluding seed and production potatoes and material for growing or research), plus up to 1 pumpkin, melon or watermelon and up to 3 bunches of flowers of no more than 15 pieces in total.",
+      "quantity": "5 kg"
+    },
+    "legal_source": {
+      "name": "State Revenue Committee of Armenia — Guide for individuals crossing the RA border (2024)",
+      "url": "https://src.am/storage/menu_contents_266/tq_sahman_hatogh_fizandz_eng_6666aa46082b1.pdf"
+    },
+    "verified_at": "2026-10-20",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-am",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "sausage",
+      "animal products"
+    ],
+    "destination": "AM",
+    "category": "food_animal",
+    "verdict": "allowed_with_limits",
+    "summary": "Up to 5 kg of factory-packed animal products without a veterinary certificate.",
+    "limits": {
+      "description": "Up to 5 kg of pre-packaged animal products without a veterinary sanitary certificate or permission from the exporting country, as long as the factory packaging is intact.",
+      "quantity": "5 kg, factory-packed"
+    },
+    "notes": "Up to 2 dogs or cats can travel without a special permit if their international passport shows a clinical examination by an authorised body within 14 days before travel.",
+    "legal_source": {
+      "name": "State Revenue Committee of Armenia — Guide for individuals crossing the RA border (2024)",
+      "url": "https://src.am/storage/menu_contents_266/tq_sahman_hatogh_fizandz_eng_6666aa46082b1.pdf"
+    },
+    "verified_at": "2026-10-20",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]

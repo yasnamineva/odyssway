@@ -72,6 +72,7 @@ export const photos = {
   "dest-jm": { width: 1280, height: 853, author: "ivan_z", page: "https://pixabay.com/photos/sea-caribbean-island-jamaica-5926926/" },
   "dest-bs": { width: 1280, height: 743, author: "violetta", page: "https://pixabay.com/photos/lighthouse-bahamas-nassau-island-116954/" },
   "dest-me": { width: 1280, height: 960, author: "falco", page: "https://pixabay.com/photos/kotor-montenegro-balkan-1094388/" },
+  "dest-am": { width: 1280, height: 679, author: "Makalu", page: "https://pixabay.com/photos/armenia-the-monastery-of-khor-virap-3718710/" },
   "dest-tz": { width: 1280, height: 788, author: "klimentgrozdanoski", page: "https://pixabay.com/photos/africa-zanzibar-beach-tanzania-5135407/" },
   // Blog posts.
   "blog-ees": { width: 1280, height: 853, author: null, page: "https://pixabay.com/photos/airport-tourism-flying-air-traffic-1515431/" },

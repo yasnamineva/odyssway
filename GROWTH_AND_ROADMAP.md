@@ -704,3 +704,8 @@ gate was passed or missed, and why.
   90 days with an English prescription; psychotropic medicine only for foreign nationals, up
   to 60 days; narcotic medicine not allowed. Also: EU → Montenegro rows now run the passport
   check.
+- **2026-10-20. Batch 6 started: Armenia (51 destinations).** All 22 passports from Armenia's
+  Foreign Ministry lists (12 visa-free for 180 days a year, 4 under bilateral agreements, 6 need
+  a visa but can use the 2026–27 residence-permit exemption), and 7 customs rules from the State
+  Revenue Committee's traveller guides, including medicine (10 types × 3 packs; controlled
+  medicine must be registered in Armenia, with notarised Armenian translations).
