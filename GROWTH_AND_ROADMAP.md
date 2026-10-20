@@ -155,6 +155,31 @@ need data to decide what to build next. These sources need no cookies:
   medication pages and the blog.
 - **Yandex Webmaster** (owner's choice): add its verification tag next to the Google
   one in `layout.tsx`. IndexNow already notifies Yandex.
+- **Which engine serves which browser.** Browsers don't index anything themselves, so
+  covering a few engines covers nearly every browser:
+
+  | Where people search | Engine | What we need |
+  |---|---|---|
+  | Chrome, Android, Samsung Internet, Firefox, Safari (default) | Google | Search Console (verified) |
+  | Edge, Bing, Yahoo, DuckDuckGo, Ecosia, Copilot | Bing | Bing Webmaster + IndexNow (done) |
+  | Brave | Brave Search (own index) | Nothing to submit; it crawls on its own |
+  | Safari suggestions, Siri, Spotlight | Applebot | robots.txt already allows it |
+  | Yandex | Yandex | Optional Webmaster account |
+  | ChatGPT, Perplexity, Claude, Gemini | Own crawlers, plus Bing/Google | Being cited by trusted sites (§2.5) |
+
+- **Bing lags Google (2026-10-20: 1.9K URLs discovered, 4 impressions in 7 days).**
+  The site serves bingbot correctly (200, canonical, no noindex, robots allows all), so
+  the gap is most likely indexing depth and authority, not a block:
+  - "Discovered" isn't "indexed". In Bing Webmaster, check Site Explorer and URL
+    Inspection on 10 key pages to see how many are actually indexed.
+  - Bing indexes new domains slowly and leans more on backlinks and brand signals
+    than Google does. Many similar programmatic pages (pair pages) can sit in
+    "discovered, not indexed" until the domain earns trust.
+  - Check the Vercel firewall (Firewall → logs): bot protection or attack-challenge
+    mode must not challenge verified bingbot requests.
+  - Actions: "Request indexing" for ~20 hub pages (it accepts more than Google's
+    quota), keep IndexNow to changed URLs only, and earn links (§2.5). Re-check in
+    4 weeks; if indexing stays low, consolidate thin pair pages rather than adding more.
 - **Titles that match how people search:**
   - "Can I bring Adderall to Japan" beats "Stimulant medication: Japan".
   - Keep checking `seoTitle` against real Search Console queries.
@@ -197,6 +222,25 @@ The people asking our questions gather in a few predictable places:
 
 A reply that is correct and cited earns the link.
 
+### 2.4b Brand profiles and review sites
+
+Search engines and AI assistants trust a site more when it's a recognisable organisation
+with consistent profiles elsewhere.
+
+- **Profiles (owner creates):** LinkedIn company page, Bluesky, X, Mastodon. Same
+  name, logo and one-line description everywhere. Then add the URLs to the
+  Organization structured data as `sameAs`.
+- **Listings:** AlternativeTo (as an alternative to Sherpa and iVisa), Product Hunt
+  (save the launch for a notable feature), Crunchbase. Wikidata only after there is
+  independent coverage.
+- **Trustpilot / Sitejabber:** claim a free business profile, verified with a domain
+  email. Link to it with a plain link (footer or `/about`); **don't embed the widget**:
+  it loads third-party scripts and cookies, which breaks the no-cookies promise
+  (AGENTS.md §10, §13.5) unless the privacy policy is updated first.
+  - Reviews only from real users who choose to leave one: no incentives, no asking
+    friends, no review gating (AGENTS.md §2, and Trustpilot's own rules).
+  - Expect reviews to help visitor trust more than rankings; links matter more.
+
 ### 2.5 Partners who need exactly this content (backlinks that count)
 
 These groups already field these questions by hand. A free, cited page they can link to
@@ -212,7 +256,12 @@ saves them time.
   Build a second widget, "Can I bring it? for [destination]", for destination blogs.
 - **Journalists.** When a rule changes (Thailand, retatrutide, ETIAS), send a short,
   dated, cited note to travel and health reporters. The changelog is our press
-  release.
+  release. Source-request platforms (Qwoted, Featured.com) connect us with reporters
+  who need an expert source. Current hooks: the US hemp change (12 Nov / 11 Dec 2026),
+  China's visa-free policy ending 31 Dec 2026, Korea's penalties for cold medicine.
+- **Order of work for the owner:** search consoles first (§2.2), then university
+  offices and journalists, then profiles (§2.4b). These give the most visibility per
+  hour.
 
 ### 2.6 Data stories that earn links
 
