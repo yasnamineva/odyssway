@@ -709,3 +709,8 @@ gate was passed or missed, and why.
   a visa but can use the 2026–27 residence-permit exemption), and 7 customs rules from the State
   Revenue Committee's traveller guides, including medicine (10 types × 3 packs; controlled
   medicine must be registered in Armenia, with notarised Armenian translations).
+- **2026-10-21. Batch 6: Uruguay (52 destinations).** 22 passports from the Interior Ministry's
+  admission table (19 visa-free for 90 days, Malaysia 30 days, China and India need a visa, with a
+  US/Canada/UK/EU-visa exemption for China), and 6 customs rules from Aduanas (6 L of spirits and
+  4 cartons per adult, cash over USD 10,000 declared, medicines for your stay, fresh produce and
+  meat/dairy not allowed).

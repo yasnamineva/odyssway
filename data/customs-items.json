@@ -16194,5 +16194,175 @@
     "verified_at": "2026-10-20",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "alcohol-uy",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "vodka",
+      "whisky",
+      "liquor"
+    ],
+    "destination": "UY",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "summary": "Up to 6 litres of spirits per traveller, adults only.",
+    "limits": {
+      "description": "Only six (6) litres of distilled alcoholic beverages per traveller may be brought in, and only by travellers of legal age.",
+      "quantity": "6 litres of spirits"
+    },
+    "notes": "Goods within the general allowance (USD 500 by air or sea from outside the region, once a year) are duty-free; goods above it are held until a single 50% tax is paid.",
+    "legal_source": {
+      "name": "Dirección Nacional de Aduanas — Traveller baggage sworn declaration form (2016)",
+      "url": "https://www.aduanas.gub.uy/innovaportal/file/16133/1/declaracion_jurada_equipaje_08042016-002.pdf"
+    },
+    "_sources": [
+      {
+        "claim": "6 L spirits, adults only",
+        "name": "Dirección Nacional de Aduanas — Traveller baggage sworn declaration form (2016)",
+        "url": "https://www.aduanas.gub.uy/innovaportal/file/16133/1/declaracion_jurada_equipaje_08042016-002.pdf"
+      },
+      {
+        "claim": "Allowances; 50% tax on excess",
+        "name": "Dirección Nacional de Aduanas — Baggage of foreign tourists and returning Uruguayans (last updated 19/03/2014)",
+        "url": "https://www.aduanas.gub.uy/innovaportal/v/12000/8/innova.front/equipaje_de_turistas_extranjeros_o_uruguayos_que_retornan_de_viajes.html"
+      }
+    ],
+    "verified_at": "2026-10-21",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-uy",
+    "names": [
+      "cigarettes",
+      "tobacco",
+      "cigars",
+      "smoking"
+    ],
+    "destination": "UY",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "summary": "Up to 4 cartons of cigarettes per traveller, adults only.",
+    "limits": {
+      "description": "Only four (4) cartons of cigarettes per traveller may be brought in, and only by travellers of legal age.",
+      "quantity": "4 cartons"
+    },
+    "legal_source": {
+      "name": "Dirección Nacional de Aduanas — Traveller baggage sworn declaration form (2016)",
+      "url": "https://www.aduanas.gub.uy/innovaportal/file/16133/1/declaracion_jurada_equipaje_08042016-002.pdf"
+    },
+    "verified_at": "2026-10-21",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-uy",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "cheques",
+      "checks",
+      "pesos",
+      "uyu"
+    ],
+    "destination": "UY",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "summary": "Declare cash, precious metals or other monetary instruments over USD 10,000.",
+    "limits": {
+      "description": "Carrying cash and securities is legal and untaxed, but anyone carrying cash, precious metals or other monetary instruments over USD 10,000 (or the equivalent) across the border must declare it to customs on the sworn declaration form.",
+      "quantity": "USD 10,000"
+    },
+    "notes": "Not declaring leads to a fine set by the Executive Branch, up to the undeclared amount (Law 18.494, Art. 1).",
+    "legal_source": {
+      "name": "Dirección Nacional de Aduanas — Traveller baggage sworn declaration form (2016)",
+      "url": "https://www.aduanas.gub.uy/innovaportal/file/16133/1/declaracion_jurada_equipaje_08042016-002.pdf"
+    },
+    "verified_at": "2026-10-21",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-uy",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "otc medicine"
+    ],
+    "destination": "UY",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "summary": "Medicines in quantities that fit your needs and length of stay, over-the-counter or with a prescription.",
+    "limits": {
+      "description": "Customs counts as baggage medicines in quantities appropriate to the traveller's needs and length of stay, sold over the counter or, otherwise, with the corresponding prescription."
+    },
+    "notes": "From customs' baggage page, last updated 19/03/2014. It also lists narcotics (estupefacientes) among goods that may not be brought in.",
+    "legal_source": {
+      "name": "Dirección Nacional de Aduanas — Baggage of foreign tourists and returning Uruguayans (last updated 19/03/2014)",
+      "url": "https://www.aduanas.gub.uy/innovaportal/v/12000/8/innova.front/equipaje_de_turistas_extranjeros_o_uruguayos_que_retornan_de_viajes.html"
+    },
+    "verified_at": "2026-10-21",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-uy",
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds",
+      "flowers",
+      "fresh produce"
+    ],
+    "destination": "UY",
+    "category": "food_plant",
+    "verdict": "prohibited",
+    "summary": "Fresh fruit and vegetables, seeds, plants, flowers and soil may not be brought in.",
+    "limits": {
+      "description": "Customs doesn't allow: plants, their parts and related products; fresh fruit and vegetables; seeds, crafts with seeds and plant products; flowers, ornamental plants and in-vitro cultures; soil, and fruit, vegetable, forage or forest plants or their parts (branches, cuttings, buds, bulbs and similar)."
+    },
+    "notes": "From customs' baggage page, last updated 19/03/2014. Goods subject to specific controls are released only with the agreement of the competent body (such as the agriculture ministry, MGAP).",
+    "legal_source": {
+      "name": "Dirección Nacional de Aduanas — Baggage of foreign tourists and returning Uruguayans (last updated 19/03/2014)",
+      "url": "https://www.aduanas.gub.uy/innovaportal/v/12000/8/innova.front/equipaje_de_turistas_extranjeros_o_uruguayos_que_retornan_de_viajes.html"
+    },
+    "verified_at": "2026-10-21",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-uy",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "sausage",
+      "eggs",
+      "butter",
+      "animal products"
+    ],
+    "destination": "UY",
+    "category": "food_animal",
+    "verdict": "prohibited",
+    "summary": "Meat, sausages, cheese, butter, cream, eggs and fresh milk may not be brought in. Long-life (UHT) milk is the exception.",
+    "limits": {
+      "description": "Customs doesn't allow: fresh milk (long-life milk excepted), butter, eggs, cream and cheese; meat of any species, cold cuts and sausages; domestic animals, birds, exotic species and bees; animal feed and biological or veterinary products."
+    },
+    "notes": "From customs' baggage page, last updated 19/03/2014.",
+    "legal_source": {
+      "name": "Dirección Nacional de Aduanas — Baggage of foreign tourists and returning Uruguayans (last updated 19/03/2014)",
+      "url": "https://www.aduanas.gub.uy/innovaportal/v/12000/8/innova.front/equipaje_de_turistas_extranjeros_o_uruguayos_que_retornan_de_viajes.html"
+    },
+    "verified_at": "2026-10-21",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]

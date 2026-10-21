@@ -3709,3 +3709,9 @@ Sources: MFA visa page (mfa.am/en/visa/), unilateral visa-free list and bilatera
   - Bosnia and Herzegovina: SFA page states the rule (90 days in 6 months; EU/Schengen/neighbours with ID) but the country list is in the Decision on Visas, Art. 2, not linked; find the text (Službeni glasnik BiH).
   - North Macedonia: MFA "Do you need a visa?" is a JavaScript tool; the visa page gives categories only.
   - Oman (rop.gov.om) unreachable; Mauritius, Nepal, Fiji pages 404/403.
+
+## Batch 6, destination 2: Uruguay (2026-10-21)
+Sources: Ministerio del Interior "Régimen de visas de admisión" (19/08/2025; table by country × passport type, footnotes); MRREE embassy-in-Colombia page "Residencia legal en Uruguay" (13/08/2024: tourist stay 90 days, extendable); Aduanas sworn baggage declaration form (2016: 6 L spirits, 4 cartons, adults; cash > USD 10,000, Law 18.494) and Aduanas baggage page (last updated 19/03/2014: medicines, prohibited food).
+- 22 entry rows: 19 visa-free 90 days; MY visa-free 30 days (ATSV, footnote 2); CN visa (prior authorisation) with the US/CA/UK/EU-visa exemption via named ports (footnote 10); IN visa (prior authorisation).
+- 6 customs rows: alcohol, tobacco, cash, prescription medication, fresh produce (prohibited), meat/dairy (prohibited; UHT milk excepted).
+- Caveats: the 90-day figure comes from an embassy page (official MRREE); the customs baggage page is from 2014 — re-check MGAP's current traveller rules when reachable. Open: controlled medication (Uruguay rule for travellers), drones, e-cigarettes, cannabis (Uruguay's domestic cannabis regime does not cover visitors' imports — needs a source).
