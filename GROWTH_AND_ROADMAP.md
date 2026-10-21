@@ -714,3 +714,8 @@ gate was passed or missed, and why.
   US/Canada/UK/EU-visa exemption for China), and 6 customs rules from Aduanas (6 L of spirits and
   4 cartons per adult, cash over USD 10,000 declared, medicines for your stay, fresh produce and
   meat/dairy not allowed).
+- **2026-10-21. Batch 6: Mongolia (53 destinations).** 21 passports from Mongolia's Immigration
+  Agency (2026 tourist exemption, 30 days) and the Foreign Ministry's agreement list (US, Brazil,
+  Argentina, Chile, Korea 90 days; Japan, Germany, Canada, Singapore, Malaysia, Israel 30 days;
+  Mexico, China, India need a visa). Ukraine held (exemption only with an official invitation);
+  customs held (official figures conflict). Watch 31 Dec 2026, when the tourist exemption ends.

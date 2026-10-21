@@ -3715,3 +3715,10 @@ Sources: Ministerio del Interior "Régimen de visas de admisión" (19/08/2025; t
 - 22 entry rows: 19 visa-free 90 days; MY visa-free 30 days (ATSV, footnote 2); CN visa (prior authorisation) with the US/CA/UK/EU-visa exemption via named ports (footnote 10); IN visa (prior authorisation).
 - 6 customs rows: alcohol, tobacco, cash, prescription medication, fresh produce (prohibited), meat/dairy (prohibited; UHT milk excepted).
 - Caveats: the 90-day figure comes from an embassy page (official MRREE); the customs baggage page is from 2014 — re-check MGAP's current traveller rules when reachable. Open: controlled medication (Uruguay rule for travellers), drones, e-cigarettes, cannabis (Uruguay's domestic cannabis regime does not cover visitors' imports — needs a source).
+
+## Batch 6, destination 3: Mongolia (2026-10-21)
+Sources: Immigration Agency article 537 (34 countries, tourist visa exemption up to 30 days in 2026); MFA Consular Department list (consul.mn/visa/c/83: unilateral list "until the end of 2026" + bilateral agreements with passport types, durations, dates).
+- 21 entry rows: FR ES IT NL GB AU NZ 30 days (tourism, 2026); bilateral US BR AR CL 90, KR 90 (tourism, to 31 Dec 2026), JP DE CA SG MY IL 30; MX CN IN visa required (only diplomatic/official passports exempt).
+- **Held: UA** — listed as "All passports /with official invitation/, Up to 90 days"; our row model can't express "visa-free only with an official invitation". 
+- **DEADLINE 2026-12-31:** the 2026 tourist exemption (7 rows) and Korea's exemption both end on 31 Dec 2026 unless renewed — watch immigration.gov.mn in December.
+- Customs not published: airport and customs.gov.mn figures are undated and conflict (cash MNT 15 million vs USD 5,000). Find the current customs law/regulation text on legalinfo.mn.
