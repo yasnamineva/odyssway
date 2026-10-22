@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { rowLabel } from "../lib/bring-pages";
 import { destinationByCode } from "../lib/destinations";
 import BorderCardButton from "./BorderCardButton";
+import LetterChecklist from "./LetterChecklist";
 import ProcedureSection from "./ProcedureSection";
 import SourceNote from "./SourceNote";
 
@@ -46,6 +47,7 @@ export default async function CustomsRowCard({
       )}
       {row.notes && <p className="mt-2 text-sm leading-relaxed text-slate-600">{row.notes}</p>}
       {row.procedure && <ProcedureSection procedure={row.procedure} />}
+      {row.letter && <LetterChecklist letter={row.letter} destinationName={destinationName} />}
       {row.transit && (
         <div className="mt-4 rounded-xl bg-slate-50 p-3" data-testid="row-transit">
           <p className="text-sm font-semibold text-slate-800">

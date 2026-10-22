@@ -356,3 +356,13 @@ test("destination hubs link their named medicines, and medicine posts link count
     "/bring/medication/singapore",
   );
 });
+
+test("doctor's letter checklist lists only what the rule asks for, and ticks off", async ({ page }) => {
+  await page.goto("/bring/medication/japan");
+  const checklist = page.getByTestId("letter-checklist").first();
+  await expect(checklist).toBeVisible();
+  await expect(checklist).toContainText("The doctor's signature");
+  const box = checklist.getByRole("checkbox").first();
+  await box.check();
+  await expect(box).toBeChecked();
+});

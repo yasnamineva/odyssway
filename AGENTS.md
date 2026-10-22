@@ -353,6 +353,10 @@ customs rules (the same allowances apply across every Schengen member).
     rule: "applies" | "exempt_airside", description: string,
     source: { name, url }, verified_at: string
   },
+  letter?: {                       // doctor's letter checklist (2026-10-22)
+    items: string[],               // only what the cited source says the letter/prescription must contain
+    source: { name, url }, verified_at: string
+  },
   legal_source, verified_at, verified_by, status
 }
 ```

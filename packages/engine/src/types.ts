@@ -191,6 +191,14 @@ export interface CustomsTransit {
   verified_at: string;
 }
 
+/** What the destination's rule says a doctor's letter or prescription must contain —
+ * only set when the cited source lists it (GROWTH_AND_ROADMAP.md §2.8). */
+export interface CustomsLetter {
+  items: string[];
+  source: { name: string; url: string };
+  verified_at: string;
+}
+
 /** Matches data/customs-items.json records (see schemas.ts / AGENTS.md §5.11). */
 export interface CustomsItemRecord {
   slug: string;
@@ -204,6 +212,7 @@ export interface CustomsItemRecord {
   summary?: string;
   procedure?: CustomsProcedure;
   transit?: CustomsTransit;
+  letter?: CustomsLetter;
   legal_source: { name: string; url: string };
   verified_at: string | null;
   verified_by: string | null;

@@ -88,7 +88,18 @@
     },
     "verified_at": "2026-10-19",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "letter": {
+      "items": [
+        "A valid prescription or doctor's note, written in English",
+        "If the medicine isn't in its original container with the doctor's instructions, a copy of the prescription or a letter from your doctor explaining your condition and why you need the medicine"
+      ],
+      "source": {
+        "name": "U.S. Customs and Border Protection — Prohibited and Restricted Items (last modified 14 Mar 2025)",
+        "url": "https://www.cbp.gov/travel/us-citizens/know-before-you-go/prohibited-and-restricted-items"
+      },
+      "verified_at": "2026-10-19"
+    }
   },
   {
     "slug": "cannabis-us",
@@ -1169,7 +1180,22 @@
     ],
     "verified_at": "2026-10-14",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "letter": {
+      "items": [
+        "Your name",
+        "The disease",
+        "Why you need the medicine",
+        "Each medicine, with its dose and strength",
+        "The doctor's signature",
+        "The date"
+      ],
+      "source": {
+        "name": "Narcotics Control Department — Table (List of Psychotropics) with carry-in amounts",
+        "url": "https://www.ncd.mhlw.go.jp/dl_data/keitai/total.pdf"
+      },
+      "verified_at": "2026-10-14"
+    }
   },
   {
     "slug": "cannabis-jp",
@@ -4967,6 +4993,18 @@
         "url": "https://www.ede.gov.ae/en/w/issue-of-permit-to-import-medicines-for-personal-use"
       },
       "verified_at": "2026-10-14"
+    },
+    "letter": {
+      "items": [
+        "A dated, stamped prescription, issued within the last 3 months",
+        "An attested medical report, issued within the last year",
+        "The report names the medicine, the dose and how long the treatment lasts"
+      ],
+      "source": {
+        "name": "Emirates Drug Establishment (EDE) — Issue of Permit to Import Medicines for Personal Use / Controlled and Semi-Controlled Medicines List",
+        "url": "https://www.ede.gov.ae/en/w/issue-of-permit-to-import-medicines-for-personal-use"
+      },
+      "verified_at": "2026-09-13"
     }
   },
   {
@@ -5623,6 +5661,19 @@
       ],
       "verified_at": "2026-10-19",
       "verified_by": "agent:claude-opus-5-5"
+    },
+    "letter": {
+      "items": [
+        "Your name",
+        "A list of the medicine prescribed to you, with doses, strength and frequency",
+        "It must be clear from your travel dates and the quantities listed that you aren't carrying more than 3 months' supply",
+        "The signature of the person who prescribed it, and their professional registration details"
+      ],
+      "source": {
+        "name": "Home Office — Travelling with medicine containing controlled drugs (guidance, updated 11 April 2023)",
+        "url": "https://www.gov.uk/guidance/controlled-drugs-personal-licences"
+      },
+      "verified_at": "2026-10-19"
     }
   },
   {
@@ -5828,7 +5879,18 @@
         "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
         "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
       }
-    ]
+    ],
+    "letter": {
+      "items": [
+        "A valid prescription or a doctor's letter",
+        "Stating the medicine name and dosage"
+      ],
+      "source": {
+        "name": "Australian Government Office of Drug Control -- Travelling to Australia with medicines and medical devices",
+        "url": "https://www.odc.gov.au/travellers/travelling-or-australia-medicines-and-medical-devices"
+      },
+      "verified_at": "2026-09-13"
+    }
   },
   {
     "slug": "injectable-medication-au",
@@ -6142,7 +6204,19 @@
         "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
         "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
       }
-    ]
+    ],
+    "letter": {
+      "items": [
+        "A copy of your prescription or a doctor's letter",
+        "Confirming that you're being treated with the medicine",
+        "Giving its name and strength"
+      ],
+      "source": {
+        "name": "New Zealand Customs Service -- Prohibited and restricted items: medicines",
+        "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/"
+      },
+      "verified_at": "2026-10-18"
+    }
   },
   {
     "slug": "cannabis-nz",
@@ -6321,7 +6395,20 @@
         "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
         "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
       }
-    ]
+    ],
+    "letter": {
+      "items": [
+        "Either a detailed medical report from a licensed medical institution, issued within the last 6 months, naming the diagnosis, treatment plan, and the drug's scientific name and dosage",
+        "Or a doctor's prescription in your name, issued within the last 6 months, with the diagnosis, drug details and the institution's seal",
+        "A copy of your ID",
+        "A signed pledge that the medicine is for your own use"
+      ],
+      "source": {
+        "name": "Saudi Food and Drug Authority (SFDA) — Controlled Drugs System (CDS), User Manual for Traveler Clearance, Article (6): Procedures and Controls for Clearance",
+        "url": "https://cds.sfda.gov.sa/HomeFiles/TravilerJourneyEnglish.pdf"
+      },
+      "verified_at": "2026-09-13"
+    }
   },
   {
     "slug": "controlled-medication-ph",
@@ -6410,7 +6497,19 @@
         "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
         "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
       }
-    ]
+    ],
+    "letter": {
+      "items": [
+        "A letter from your attending physician describing your medical condition",
+        "The physician's prescription, listing the trade and generic names of the drug",
+        "The medicine in its original, properly labelled container (for up to 30 days' supply)"
+      ],
+      "source": {
+        "name": "Philippine Dangerous Drugs Board — Board Regulation No. 1, Series of 2014 (Comprehensive Amendments to Board Regulation No. 3, Series 2003), Section 35: Carrying of Dangerous Drugs and/or Drug Preparation containing Controlled Chemical by International Travelers",
+        "url": "https://ddb.gov.ph/images/Board_Regulation/2014/BD.REG1.14.pdf"
+      },
+      "verified_at": "2026-10-18"
+    }
   },
   {
     "slug": "cannabis-ph",
@@ -6468,7 +6567,18 @@
         "name": "Peraturan BPOM No. 28 Tahun 2023, Annex: quantity limits for imports without a marketing authorisation via the special route",
         "url": "https://standar-otskk.pom.go.id/storage/uploads/fca3dad9-0694-4e53-af49-d48e7910f1f7/PerBPOM-No.-28-tahun-2023.pdf"
       }
-    ]
+    ],
+    "letter": {
+      "items": [
+        "A doctor's prescription written in English (needed above 30 tablets or 3 other units per product)",
+        "From a doctor in the country the medicine comes from"
+      ],
+      "source": {
+        "name": "Direktorat Jenderal Bea dan Cukai (Indonesian Customs) — Barang Penumpang (Passenger Goods), citing PMK 34/2025 and PMK 203/2017",
+        "url": "https://www.beacukai.go.id/barang-penumpang"
+      },
+      "verified_at": "2026-10-19"
+    }
   },
   {
     "slug": "controlled-medication-id",
@@ -6493,7 +6603,19 @@
     },
     "verified_at": "2026-10-19",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "letter": {
+      "items": [
+        "A doctor's prescription written in English",
+        "From a doctor in the country the medicine comes from",
+        "No more than 60 days' supply"
+      ],
+      "source": {
+        "name": "Badan POM (Indonesian FDA) — Special Access Scheme: importing personal medicines to Indonesia",
+        "url": "https://sertifikasicdob.pom.go.id/wasdisobat/sas/"
+      },
+      "verified_at": "2026-10-19"
+    }
   },
   {
     "slug": "cannabis-id",
@@ -9008,7 +9130,19 @@
         "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
         "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
       }
-    ]
+    ],
+    "letter": {
+      "items": [
+        "A valid prescription or a doctor's letter",
+        "Written in English, or with a translation",
+        "Stating the medicine, the dosage and the quantity"
+      ],
+      "source": {
+        "name": "Ministry of Health Malaysia, Pharmaceutical Services Programme — Traveller's Guide: Bringing Medication into Malaysia",
+        "url": "https://pharmacy.moh.gov.my/sites/default/files/document-upload/travellers-guide-bringing-medication-malaysia-personal-use-edited-16012019.pdf"
+      },
+      "verified_at": "2026-09-21"
+    }
   },
   {
     "slug": "e-cigarettes-my",
@@ -9305,6 +9439,19 @@
         "url": "https://mfa.gov.ge/pfiles/files/Bringing%20Narcotic%20Drugs%20And%20Psychotropic%20Substances%20To%20Georgia.pdf"
       },
       "verified_at": "2026-10-16"
+    },
+    "letter": {
+      "items": [
+        "A photocopy of the prescription, translated into English and certified with an apostille",
+        "On it: your name, surname, gender and age, the diagnosis, the brand and generic names, the dosage form, quantity, method of use and duration of treatment",
+        "The prescribing doctor's certificate, translated into English and certified under the law of the country you travel from",
+        "A document signed and sealed by an authorised person and apostilled, giving the authority's name, address, contact person, phone and the destination country"
+      ],
+      "source": {
+        "name": "Ministry of Foreign Affairs of Georgia — Bringing Narcotic Drugs and Psychotropic Substances to Georgia (official guidance PDF)",
+        "url": "https://mfa.gov.ge/pfiles/files/Bringing%20Narcotic%20Drugs%20And%20Psychotropic%20Substances%20To%20Georgia.pdf"
+      },
+      "verified_at": "2026-10-18"
     }
   },
   {
@@ -9549,7 +9696,21 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "letter": {
+      "items": [
+        "A prescription no more than 3 months old, from a registered medical practitioner",
+        "Your full name and address",
+        "The date it was prescribed and the indication",
+        "The medicine's name (generic or brand), dosage form, strength, dosage and duration of treatment",
+        "The doctor's name, registration number, signature and official seal"
+      ],
+      "source": {
+        "name": "Maldives Food and Drug Authority — Guideline on Good Import Practice (MTG/RE-IP/GLN-TE 007, 13.02.2020), §§4.7–4.9",
+        "url": "https://health.gov.mv/storage/uploads/50wNdLqA/bixuazbn.pdf"
+      },
+      "verified_at": "2026-10-18"
+    }
   },
   {
     "slug": "controlled-medication-mv",
@@ -12979,6 +13140,20 @@
       ],
       "verified_at": "2026-10-14",
       "verified_by": "agent:claude-opus-5-5"
+    },
+    "letter": {
+      "items": [
+        "A detailed approved medical report or prescription, no more than 6 months old",
+        "Your details, the diagnosis, the treatment plan and duration, and recommendations",
+        "The scientific drug name, form, dose and quantity",
+        "Stamped, on the health facility's letterhead",
+        "A signed undertaking that only you will use the medicine, and a copy of your passport"
+      ],
+      "source": {
+        "name": "Ministry of Public Health Qatar, Pharmacy and Drug Control Department — 'Controls and Regulations for the release of narcotic drugs, psychotropic substances and psychoactive drugs in the possession of patients arriving in or departing the State of Qatar' (Guideline of Controlled Drugs for Travellers, PDF)",
+        "url": "https://www.moph.gov.qa/_layouts/15/download.aspx?SourceUrl=/Admin/Lists/PublicationsAttachments/Attachments/201/Guideline-of-Controlled-Drugs-for-Travellers%20-%20English.pdf"
+      },
+      "verified_at": "2026-10-15"
     }
   },
   {
@@ -13641,7 +13816,19 @@
     },
     "verified_at": "2026-10-10",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "letter": {
+      "items": [
+        "A certificate (report) from your chosen doctor or a specialist confirming you need the medicine",
+        "No older than 90 days",
+        "Covering at most 30 days of your treatment"
+      ],
+      "source": {
+        "name": "Zakon o sprječavanju zloupotrebe droga (Law on Prevention of Drug Abuse, Sl. list CG 28/11, 35/13) — consolidated text published by the Government of Montenegro",
+        "url": "https://www.gov.me/en/documents/eaa4743a-ed71-423c-b25c-324e228e6e10"
+      },
+      "verified_at": "2026-10-10"
+    }
   },
   {
     "slug": "cannabis-me",
@@ -14753,7 +14940,21 @@
     },
     "verified_at": "2026-10-10",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "letter": {
+      "items": [
+        "A prescription from a registered practitioner, written in English",
+        "Your name",
+        "The medicine's name (trade name and international non-proprietary name)",
+        "The dosage and the total amount prescribed",
+        "A treatment duration of no more than 30 days"
+      ],
+      "source": {
+        "name": "Guidelines for Dealing in Controlled Drugs (Third Edition, January 2021), Tanzania Medicines and Medical Devices Authority, s. 2.5.2",
+        "url": "https://www.tmda.go.tz/uploads/publications/en1626772669-en1626163951-GUIDELINES%20FOR%20DEALING%20IN%20CONTROLLED%20DRUGSpdf.pdf"
+      },
+      "verified_at": "2026-10-10"
+    }
   },
   {
     "slug": "injectable-medication-tz",
@@ -16140,7 +16341,19 @@
     },
     "verified_at": "2026-10-20",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "letter": {
+      "items": [
+        "Medical documents confirming that you need the medicine",
+        "The product name and quantity",
+        "The originals, or certified translations into Armenian with notarisation"
+      ],
+      "source": {
+        "name": "State Revenue Committee of Armenia — Guide for individuals crossing the RA border (2024)",
+        "url": "https://src.am/storage/menu_contents_266/tq_sahman_hatogh_fizandz_eng_6666aa46082b1.pdf"
+      },
+      "verified_at": "2026-10-20"
+    }
   },
   {
     "slug": "fresh-produce-am",

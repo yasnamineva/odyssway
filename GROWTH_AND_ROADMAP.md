@@ -725,3 +725,9 @@ gate was passed or missed, and why.
   declare / within limits / allowed / not verified yet), and each stop opens to its full cited
   result. Nothing is inferred across borders: every cell restates that country's own row. The
   footer links to the Trustpilot profile (plain link, no widget, so no third-party scripts).
+- **2026-10-22. Doctor's letter checklist (§2.8).** Medication rows can now carry a `letter`
+  field: only what the destination's cited rule says the letter or prescription must contain.
+  Shown as a tick-off list with "Copy the list for your doctor" on every page that shows the row.
+  First 17 rows: Japan (psychotropics), UAE, Georgia, Maldives, Tanzania, Qatar, Saudi Arabia,
+  Philippines, Malaysia, Armenia, Montenegro, Indonesia (×2), US, Australia, New Zealand, UK.
+  Each item restates the row's own verified text, with the same source and check date.

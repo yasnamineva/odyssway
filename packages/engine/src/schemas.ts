@@ -263,6 +263,17 @@ export const customsTransitSchema = z.object({
   verified_at: isoDateSchema,
 });
 
+/**
+ * What the destination's rule says a doctor's letter or prescription must contain.
+ * Each item restates the cited source; only set when the source lists it
+ * (GROWTH_AND_ROADMAP.md §2.8, doctor's letter checklist).
+ */
+export const customsLetterSchema = z.object({
+  items: z.array(z.string().min(1)).min(1),
+  source: legalSourceSchema,
+  verified_at: isoDateSchema,
+});
+
 export const customsItemSchema = z
   .object({
     slug: z.string().regex(/^[a-z0-9-]+$/),
@@ -284,6 +295,7 @@ export const customsItemSchema = z
     summary: z.string().min(20).max(170).optional(),
     procedure: customsProcedureSchema.optional(),
     transit: customsTransitSchema.optional(),
+    letter: customsLetterSchema.optional(),
     ...verificationFields,
   })
   .superRefine(requireVerifierWhenVerified);

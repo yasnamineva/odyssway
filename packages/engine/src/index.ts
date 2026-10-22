@@ -30,6 +30,7 @@ export type {
   CustomsItemRecord,
   CustomsProcedure,
   CustomsTransit,
+  CustomsLetter,
   DestinationRecord,
   EngineContext,
   EntryRequirementRecord,
