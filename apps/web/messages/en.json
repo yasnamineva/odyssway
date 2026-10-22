@@ -863,6 +863,15 @@
       "disclaimer": "An estimate from the rule as written. If you're close to the limit, confirm with the official source.",
       "learnMore": "Six months from arrival, or after you leave? How the rules compare"
     },
+    "routePassport": {
+      "title": "Is your passport valid long enough for every stop?",
+      "hint": "Enter your passport's expiry date once, then your dates in each country. Each stop is checked against that country's own rule.",
+      "notCovered": "We haven't verified this country for your passport yet, so we can't check it.",
+      "noRule": "We have no verified passport-validity rule for this country.",
+      "noPeriod": "The official wording doesn't name a minimum period, so we can't give a verdict. Here's how much validity you'll have:",
+      "summaryFail": "Your passport doesn't meet the rule for {country}. Check the dates there first.",
+      "summaryPass": "Your passport meets {count, plural, one {the rule we could check} other {all # rules we could check}} on this route."
+    },
     "documentsCardTitle": "What documents do you need?",
     "sourceLabel": "Source",
     "checkedOn": "Checked against the source on {date}",

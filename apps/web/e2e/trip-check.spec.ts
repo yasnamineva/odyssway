@@ -243,3 +243,25 @@ test("checks a multi-country route: one verdict per border, side by side", async
   await expect(page.getByTestId("tc-route-cell")).toHaveCount(2);
   await expect(page.getByTestId("tc-leg-details")).toHaveCount(2);
 });
+
+test("checks the passport against each stop's own rule across a route", async ({ page }) => {
+  await page.goto("/trip-check");
+  await pickCombobox(page, "tc-nationality", "United States", "United States");
+  await pickCombobox(page, "tc-destination", "United Kingdom", "United Kingdom");
+  await page.getByTestId("tc-add-leg").click();
+  await pickCombobox(page, "tc-leg-0", "Egypt", "Egypt");
+  await page.getByTestId("tc-submit").click();
+
+  const panel = page.getByTestId("tc-route-passport");
+  await expect(panel).toBeVisible();
+  await page.getByTestId("tc-route-passport-expiry").fill("2027-03-01");
+  await page.getByTestId("tc-route-passport-arrival-0").fill("2026-11-01");
+  await page.getByTestId("tc-route-passport-departure-0").fill("2026-11-10");
+  await page.getByTestId("tc-route-passport-arrival-1").fill("2026-11-12");
+  await page.getByTestId("tc-route-passport-departure-1").fill("2026-11-20");
+
+  const results = page.getByTestId("tc-route-passport-result");
+  await expect(results.nth(0)).toContainText("Meets the rule");
+  await expect(results.nth(1)).toContainText("2027-05-12");
+  await expect(page.getByTestId("tc-route-passport-summary")).toContainText("Egypt");
+});

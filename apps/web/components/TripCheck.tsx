@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import dynamic from "next/dynamic";
 import { useEffect, useMemo, useState } from "react";
 import PassportValidityCheck from "./PassportValidityCheck";
+import RoutePassportCheck from "./RoutePassportCheck";
 import SourceNote from "./SourceNote";
 import { schengenCountries } from "../lib/countries";
 import { destinationLabelFor } from "../lib/destination-label";
@@ -477,6 +478,7 @@ export default function TripCheck({
           {result && legResults.length > 1 && (
             <div id="tc-result" className="order-1 scroll-mt-4 lg:order-2">
               <RouteSummary legs={legResults} items={items} />
+              <RoutePassportCheck legs={legResults} />
               {legResults.map((leg, i) => (
                 <details key={leg.destination} open={i === 0} className="mt-4 rounded-2xl border border-slate-200 p-3" data-testid="tc-leg-details">
                   <summary className="cursor-pointer text-sm font-semibold text-slate-900">

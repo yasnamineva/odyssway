@@ -109,7 +109,7 @@ laws. Very few sources cover this.
 A day count or date that depends on the user's own data needs a deterministic tool.
 
 - **Already built:** the 90/180 calculator; the passport validity checker (2026-10-18);
-  the multi-country itinerary check in Trip Check (2026-10-22); the combined day counter
+  the multi-country itinerary check in Trip Check, with a passport check per stop (2026-10-22); the combined day counter
   at `/day-counter` (2026-10-22).
 
 **Priority:** depth in medication and controlled substances first (§14 says to test one
@@ -733,3 +733,9 @@ gate was passed or missed, and why.
   windows, or both (new engine function `evaluateStays`, overlaps counted once). Countries we
   haven't verified for that passport, or where a visa's own terms decide, say so instead of
   counting. Runs in the browser; nothing stored or sent.
+- **2026-10-22. Passport check across a route (§1.6).** When Trip Check has more than one country,
+  a panel under the route table takes the passport expiry once and each stop's own dates, then
+  checks each stop against that country's own verified rule ("whole stay", "6 months from
+  arrival", "3 months after leaving Schengen"…) and names the first stop that fails. Stops whose
+  wording names no reference date, or no period at all, show the validity left instead of a
+  verdict; stops we haven't verified say so. Dates stay in the browser.
