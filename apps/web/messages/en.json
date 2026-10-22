@@ -725,7 +725,8 @@
     "bring": "What can I bring?",
     "medicines": "Medicines by name",
     "widget": "Embed the calculator",
-    "developers": "API"
+    "developers": "API",
+    "trustpilot": "Review us on Trustpilot"
   },
   "destinationPage": {
     "namedMedicinesTitle": "Medicines named in {destination}'s rules",
@@ -776,6 +777,18 @@
     "bringingPlaceholder": "e.g. wine, cash, prescription medication",
     "addItem": "Add",
     "removeItem": "Remove {item}",
+    "addLeg": "+ Add another country on this trip",
+    "legLabel": "Then going to (stop {n})",
+    "removeLeg": "Remove stop {n}",
+    "legHeading": "Stop {n}: {country}",
+    "routeTitle": "Your route at a glance",
+    "routeHint": "Each country's own verified rule, side by side. Open a stop below for the limits, documents and sources.",
+    "routeColumnFirst": "",
+    "routeEntryRow": "Entry",
+    "routeNotCovered": "Not verified yet",
+    "routeIntraEu": "No EU customs check",
+    "routeVerdict": { "prohibited": "Prohibited", "allowed_with_limits": "Within limits", "allowed": "Allowed", "declaration_required": "Declare", "depends": "Depends" },
+    "routeBasis": { "citizen": "Your own country", "free_movement": "Free movement", "visa_free": "Visa-free", "eta_required": "Travel authorisation", "visa_required": "Visa needed", "visa_on_arrival": "Visa on arrival", "not_covered": "Not verified yet" },
     "submit": "Check my trip",
     "notCoveredTitle": "We haven't verified {destination} yet",
     "notCoveredBody": "Rather than guess, we're showing you this honestly: we don't yet have entry requirements for this pair, checked against an official source. Check directly with the destination's official authority below — we're adding new destinations regularly.",

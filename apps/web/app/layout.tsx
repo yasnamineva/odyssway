@@ -134,6 +134,13 @@ export default async function RootLayout({
                     <a href="/faq" className="text-white/60 transition hover:text-white">
                       {t("footer.faq")}
                     </a>
+                    <a
+                      href="https://www.trustpilot.com/review/odyssway.com"
+                      rel="noopener noreferrer"
+                      className="text-white/60 transition hover:text-white"
+                    >
+                      {t("footer.trustpilot")}
+                    </a>
                     <a href="/developers" className="text-white/60 transition hover:text-white">
                       {t("footer.developers")}
                     </a>

@@ -222,3 +222,24 @@ test("entry-requirement pages carry the same passport check", async ({ page }) =
   await panel.getByLabel("Passport expiry date").fill("2028-01-01");
   await expect(page.getByTestId("passport-result")).toContainText("Meets the rule");
 });
+
+test("checks a multi-country route: one verdict per border, side by side", async ({ page }) => {
+  await page.goto("/trip-check");
+  await pickCombobox(page, "tc-nationality", "United States", "United States");
+  await pickCombobox(page, "tc-destination", "Japan", "Japan");
+  await page.getByTestId("tc-add-leg").click();
+  await pickCombobox(page, "tc-leg-0", "South Korea", "South Korea");
+
+  const itemInput = page.getByTestId("tc-item-input");
+  await itemInput.fill("adderall");
+  await itemInput.press("Enter");
+  await page.getByTestId("tc-submit").click();
+
+  const summary = page.getByTestId("tc-route-summary");
+  await expect(summary).toBeVisible();
+  await expect(summary).toContainText("Japan");
+  await expect(summary).toContainText("South Korea");
+  await expect(page.getByTestId("tc-route-entry")).toHaveCount(2);
+  await expect(page.getByTestId("tc-route-cell")).toHaveCount(2);
+  await expect(page.getByTestId("tc-leg-details")).toHaveCount(2);
+});

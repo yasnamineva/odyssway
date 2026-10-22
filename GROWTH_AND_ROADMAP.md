@@ -719,3 +719,9 @@ gate was passed or missed, and why.
   Argentina, Chile, Korea 90 days; Japan, Germany, Canada, Singapore, Malaysia, Israel 30 days;
   Mexico, China, India need a visa). Ukraine held (exemption only with an official invitation);
   customs held (official figures conflict). Watch 31 Dec 2026, when the tourist exemption ends.
+- **2026-10-22. Itinerary check in Trip Check (Horizon 2 / §1.6), and a Trustpilot link.** Trip
+  Check now takes up to 5 countries on one trip ("+ Add another country"). A route table shows
+  each country's entry status and each item's verified verdict side by side (prohibited / depends /
+  declare / within limits / allowed / not verified yet), and each stop opens to its full cited
+  result. Nothing is inferred across borders: every cell restates that country's own row. The
+  footer links to the Trustpilot profile (plain link, no widget, so no third-party scripts).

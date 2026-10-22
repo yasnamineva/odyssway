@@ -100,6 +100,9 @@ export default function TripCheck({
   const [itemSuggestOpen, setItemSuggestOpen] = useState(false);
   const [items, setItems] = useState<string[]>([]);
   const [transit, setTransit] = useState("");
+  // Further countries on the same trip (Horizon 2, itinerary check): each is
+  // resolved with the same passport and items, one verdict per border.
+  const [extraLegs, setExtraLegs] = useState<string[]>([]);
   const [submitted, setSubmitted] = useState(Boolean(initialNationality && initialDestination));
 
   // Every verified synonym for the chosen destination's customs items — the
@@ -147,6 +150,14 @@ export default function TripCheck({
     return engine.resolveTripCheck(nationality, destination, items, transit || undefined);
   }, [submitted, nationality, destination, items, transit, engine]);
 
+  const legResults: TripCheckResult[] = useMemo(() => {
+    if (!result || !engine) return [];
+    const more = extraLegs
+      .filter((code, i) => code && code !== destination && extraLegs.indexOf(code) === i)
+      .map((code) => engine.resolveTripCheck(nationality, code, items));
+    return [result, ...more];
+  }, [result, engine, extraLegs, destination, nationality, items]);
+
   // Best-effort, fire-and-forget: report items nobody's verified yet so real
   // search demand — not guesswork — drives which niche items get researched
   // next. Never blocks or affects the result shown to this user.
@@ -185,6 +196,33 @@ export default function TripCheck({
   };
 
   const removeItem = (item: string) => setItems((prev) => prev.filter((i) => i !== item));
+
+  const destinationGroups = [
+    {
+      options: [{ value: SCHENGEN_DESTINATION, label: t("schengenArea") }],
+    },
+    {
+      label: t("toGroupDestinations"),
+      options: destinations
+        .filter((d) => d.status === "verified" && d.code !== nationality)
+        .map((d) => ({ value: d.code, label: d.name })),
+    },
+    {
+      label: t("toGroupSchengenStates"),
+      options: schengenCountries
+        .filter((c) => c.code !== nationality)
+        .map((c) => ({ value: c.code, label: c.name })),
+    },
+    {
+      label: t("toGroupComingSoon"),
+      options: queuedDestinations
+        .filter((d) => d.code !== nationality)
+        .map((d) => ({
+          value: d.code,
+          label: `${d.name} ${t("comingSoonSuffix")}`,
+        })),
+    },
+  ];
 
   const originLabel = publishedNationalities.find((n) => n.nationality === nationality)?.name;
   const destinationLabel = destinationLabelFor(destination);
@@ -259,34 +297,51 @@ export default function TripCheck({
               }}
               placeholder={t("toPlaceholder")}
               noResultsLabel={t("noMatches")}
-              groups={[
-                {
-                  options: [{ value: SCHENGEN_DESTINATION, label: t("schengenArea") }],
-                },
-                {
-                  label: t("toGroupDestinations"),
-                  options: destinations
-                    .filter((d) => d.status === "verified" && d.code !== nationality)
-                    .map((d) => ({ value: d.code, label: d.name })),
-                },
-                {
-                  label: t("toGroupSchengenStates"),
-                  options: schengenCountries
-                    .filter((c) => c.code !== nationality)
-                    .map((c) => ({ value: c.code, label: c.name })),
-                },
-                {
-                  label: t("toGroupComingSoon"),
-                  options: queuedDestinations
-                    .filter((d) => d.code !== nationality)
-                    .map((d) => ({
-                      value: d.code,
-                      label: `${d.name} ${t("comingSoonSuffix")}`,
-                    })),
-                },
-              ]}
+              groups={destinationGroups}
             />
           </div>
+
+          {extraLegs.map((leg, i) => (
+            <div key={i} data-testid="tc-extra-leg">
+              <label className={labelClass} htmlFor={`tc-leg-${i}`}>
+                {t("legLabel", { n: i + 2 })}
+              </label>
+              <div className="flex gap-2">
+                <div className="min-w-0 flex-1">
+                  <SearchableSelect
+                    id={`tc-leg-${i}`}
+                    data-testid={`tc-leg-${i}`}
+                    value={leg}
+                    onChange={(v) => {
+                      setExtraLegs((prev) => prev.map((x, j) => (j === i ? v : x)));
+                    }}
+                    placeholder={t("toPlaceholder")}
+                    noResultsLabel={t("noMatches")}
+                    groups={destinationGroups}
+                  />
+                </div>
+                <button
+                  type="button"
+                  aria-label={t("removeLeg", { n: i + 2 })}
+                  onClick={() => setExtraLegs((prev) => prev.filter((_, j) => j !== i))}
+                  className="shrink-0 rounded-lg border border-slate-300 px-3 text-sm text-slate-500 hover:bg-slate-50 hover:text-red-600"
+                >
+                  ×
+                </button>
+              </div>
+            </div>
+          ))}
+          {extraLegs.length < 4 && (
+            <button
+              type="button"
+              data-testid="tc-add-leg"
+              disabled={!destination}
+              onClick={() => setExtraLegs((prev) => [...prev, ""])}
+              className="text-xs font-semibold text-brand-700 underline underline-offset-2 disabled:cursor-not-allowed disabled:opacity-40"
+            >
+              {t("addLeg")}
+            </button>
+          )}
 
           <div>
             <label className={labelClass} htmlFor="tc-transit">
@@ -419,7 +474,24 @@ export default function TripCheck({
               destinationLabel={destinationLabel}
             />
           </div>
-          {result && (
+          {result && legResults.length > 1 && (
+            <div id="tc-result" className="order-1 scroll-mt-4 lg:order-2">
+              <RouteSummary legs={legResults} items={items} />
+              {legResults.map((leg, i) => (
+                <details key={leg.destination} open={i === 0} className="mt-4 rounded-2xl border border-slate-200 p-3" data-testid="tc-leg-details">
+                  <summary className="cursor-pointer text-sm font-semibold text-slate-900">
+                    {t("legHeading", { n: i + 1, country: leg.destinationName })}
+                  </summary>
+                  <TripCheckResults
+                    result={leg}
+                    originName={originLabel ?? nationality}
+                    onEdit={() => document.getElementById("tc-nationality")?.focus()}
+                  />
+                </details>
+              ))}
+            </div>
+          )}
+          {result && legResults.length <= 1 && (
             <div id="tc-result" className="order-1 scroll-mt-4 lg:order-2">
               <TripCheckResults
                 result={result}
@@ -436,6 +508,71 @@ export default function TripCheck({
             </div>
           )}
         </div>
+      </div>
+    </section>
+  );
+}
+
+const VERDICT_TONE: Record<string, string> = {
+  prohibited: "bg-red-50 text-red-800",
+  depends: "bg-amber-50 text-amber-800",
+  declaration_required: "bg-amber-50 text-amber-800",
+  allowed_with_limits: "bg-emerald-50 text-emerald-800",
+  allowed: "bg-emerald-50 text-emerald-800",
+};
+
+/** One row per item, one column per country: the whole route at a glance.
+ * Each cell restates that country's verified verdict; nothing is inferred
+ * across borders (AGENTS.md §3). */
+function RouteSummary({ legs, items }: { legs: TripCheckResult[]; items: string[] }) {
+  const t = useTranslations("tripCheck");
+  return (
+    <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm" data-testid="tc-route-summary">
+      <h2 className="text-sm font-semibold text-slate-900">{t("routeTitle")}</h2>
+      <p className="mt-1 text-xs text-slate-600">{t("routeHint")}</p>
+      <div className="mt-3 overflow-x-auto">
+        <table className="w-full min-w-[20rem] text-left text-xs">
+          <thead>
+            <tr className="border-b border-slate-200 text-slate-500">
+              <th className="py-2 pr-3 font-medium">{t("routeColumnFirst")}</th>
+              {legs.map((leg) => (
+                <th key={leg.destination} className="py-2 pr-3 font-medium text-slate-900">
+                  {leg.destinationName}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-slate-100">
+              <td className="py-2 pr-3 font-medium text-slate-700">{t("routeEntryRow")}</td>
+              {legs.map((leg) => (
+                <td key={leg.destination} className="py-2 pr-3 text-slate-800" data-testid="tc-route-entry">
+                  {t(`routeBasis.${leg.basis}`)}
+                </td>
+              ))}
+            </tr>
+            {items.map((item) => (
+              <tr key={item} className="border-b border-slate-100 last:border-0">
+                <td className="py-2 pr-3 font-medium break-words text-slate-700">{item}</td>
+                {legs.map((leg) => {
+                  const match = leg.items.find((i) => i.query === item)?.match;
+                  const intra = leg.intraEuCustoms && !match;
+                  return (
+                    <td key={leg.destination} className="py-2 pr-3" data-testid="tc-route-cell">
+                      {match ? (
+                        <span className={`inline-block rounded px-1.5 py-0.5 ${VERDICT_TONE[match.verdict] ?? ""}`}>
+                          {t(`routeVerdict.${match.verdict}`)}
+                        </span>
+                      ) : (
+                        <span className="text-slate-400">{intra ? t("routeIntraEu") : t("routeNotCovered")}</span>
+                      )}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </section>
   );
