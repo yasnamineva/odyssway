@@ -17,10 +17,10 @@ export {
   planTrip,
   status,
 } from "./engine";
-export { evaluateSimpleStay } from "./stay-policy";
+export { evaluateSimpleStay, evaluateStays } from "./stay-policy";
 export { addMonths, checkPassportValidity, remainingValidity } from "./passport-validity";
 export type { PassportValidityResult, PassportValidityRule, RemainingValidity } from "./passport-validity";
-export type { SimpleStayResult, StayPolicy } from "./stay-policy";
+export type { SimpleStayResult, Stay, StayCheck, StayPolicy, StaysResult } from "./stay-policy";
 export type {
   Basis,
   BilateralAgreementRecord,

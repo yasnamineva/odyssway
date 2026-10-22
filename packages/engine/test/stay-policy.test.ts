@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { stayPolicySchema } from "../src/schemas";
-import { evaluateSimpleStay, type StayPolicy } from "../src/stay-policy";
+import { evaluateSimpleStay, evaluateStays, type StayPolicy } from "../src/stay-policy";
 
 const ninetyDays: Extract<StayPolicy, { kind: "fixed_per_entry" }> = {
   kind: "fixed_per_entry",
@@ -59,5 +59,43 @@ describe("stayPolicySchema maxDaysPerEntry", () => {
 
   it("rejects a per-entry cap that is not below the window total", () => {
     expect(stayPolicySchema.safeParse({ ...base, maxDaysPerEntry: 90 }).success).toBe(false);
+  });
+});
+
+describe("evaluateStays", () => {
+  it("checks each stay against a per-entry limit, counting entry and exit days", () => {
+    const r = evaluateStays({ kind: "fixed_per_entry", maxDays: 90 }, [
+      { entry: "2026-01-01", exit: "2026-03-31" },
+      { entry: "2026-05-01", exit: "2026-08-01" },
+    ]);
+    expect(r.stays.map((s) => s.days)).toEqual([90, 93]);
+    expect(r.stays[1]?.overPerEntry).toBe(3);
+    expect(r.compliant).toBe(false);
+  });
+
+  it("finds the first day a rolling window goes over", () => {
+    const r = evaluateStays({ kind: "rolling_window", windowDays: 180, maxDays: 90 }, [
+      { entry: "2026-01-01", exit: "2026-02-28" },
+      { entry: "2026-04-01", exit: "2026-05-15" },
+    ]);
+    expect(r.peakInWindow).toBe(104);
+    expect(r.firstWindowViolation).toBe("2026-05-02");
+    expect(r.compliant).toBe(false);
+  });
+
+  it("counts overlapping stays once and respects a per-visit cap inside a window", () => {
+    const r = evaluateStays({ kind: "rolling_window", windowDays: 180, maxDays: 90, maxDaysPerEntry: 30 }, [
+      { entry: "2026-01-01", exit: "2026-01-20" },
+      { entry: "2026-01-15", exit: "2026-01-25" },
+      { entry: "2026-03-01", exit: "2026-04-05" },
+    ]);
+    expect(r.peakInWindow).toBe(61);
+    expect(r.stays[2]?.overPerEntry).toBe(6);
+    expect(r.firstWindowViolation).toBeNull();
+    expect(r.compliant).toBe(false);
+  });
+
+  it("rejects an exit before the entry", () => {
+    expect(() => evaluateStays({ kind: "fixed_per_entry", maxDays: 30 }, [{ entry: "2026-02-02", exit: "2026-02-01" }])).toThrow();
   });
 });

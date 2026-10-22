@@ -84,6 +84,7 @@ export default async function RootLayout({
                 links={[
                   { href: "/trip-check", label: t("header.nav.tripCheck") },
                   { href: "/calculator", label: t("header.nav.calculator") },
+                  { href: "/day-counter", label: t("header.nav.dayCounter") },
                   { href: "/medications", label: t("header.nav.medicines") },
                   { href: "/rules/90-180-rule", label: t("header.nav.rule") },
                   { href: "/ees", label: t("header.nav.ees") },
@@ -130,6 +131,9 @@ export default async function RootLayout({
                     </a>
                     <a href="/medications" className="text-white/60 transition hover:text-white">
                       {t("footer.medicines")}
+                    </a>
+                    <a href="/day-counter" className="text-white/60 transition hover:text-white">
+                      {t("footer.dayCounter")}
                     </a>
                     <a href="/faq" className="text-white/60 transition hover:text-white">
                       {t("footer.faq")}

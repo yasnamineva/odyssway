@@ -108,14 +108,9 @@ laws. Very few sources cover this.
 
 A day count or date that depends on the user's own data needs a deterministic tool.
 
-- **Already built:** the 90/180 calculator.
-- **Next candidates:**
-  - **Passport validity checker:** "valid for X months *beyond departure*", calculated
-    from the user's dates and each destination's verified rule.
-  - **Multi-country itinerary check:** the whole route, one verdict per leg, for each
-    medication.
-  - **Combined day count:** Schengen 90/180, plus the UK and US per-entry limits, on
-    one timeline.
+- **Already built:** the 90/180 calculator; the passport validity checker (2026-10-18);
+  the multi-country itinerary check in Trip Check (2026-10-22); the combined day counter
+  at `/day-counter` (2026-10-22).
 
 **Priority:** depth in medication and controlled substances first (§14 says to test one
 area at a time). Within it, the order is:
@@ -731,3 +726,10 @@ gate was passed or missed, and why.
   First 17 rows: Japan (psychotropics), UAE, Georgia, Maldives, Tanzania, Qatar, Saudi Arabia,
   Philippines, Malaysia, Armenia, Montenegro, Indonesia (×2), US, Australia, New Zealand, UK.
   Each item restates the row's own verified text, with the same source and check date.
+- **2026-10-22. Multi-country day counter (§1.6).** New tool at `/day-counter` (header, footer,
+  sitemap). Add every trip on one list; Schengen trips are pooled through the same engine as
+  `/calculator` (days used/left on a chosen date, first day over 90/180), and every other country
+  is checked against its own verified `stayPolicy` for the passport — per-visit limits, rolling
+  windows, or both (new engine function `evaluateStays`, overlaps counted once). Countries we
+  haven't verified for that passport, or where a visa's own terms decide, say so instead of
+  counting. Runs in the browser; nothing stored or sent.

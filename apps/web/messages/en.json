@@ -15,7 +15,8 @@
       "calculator": "Calculator",
       "rule": "90/180 rule",
       "ees": "EES",
-      "etias": "ETIAS"
+      "etias": "ETIAS",
+      "dayCounter": "Day counter"
     }
   },
   "pages": {
@@ -710,6 +711,34 @@
     "sourceLabel": "Source: European Commission, User Manual for the Short-Stay Schengen Calculator",
     "lastVerified": "Rules checked against the official sources linked above on {date}."
   },
+  "dayCounter": {
+    "metaTitle": "Multi-Country Day Counter: Schengen, UK, US and More",
+    "metaDescription": "Add all your trips and see, for each country, whether you're within its own verified stay limit — Schengen 90/180, per-visit limits and rolling windows, cited to official sources.",
+    "title": "Day counter for every country on your trips",
+    "subtitle": "Add your past and planned trips. Each country is checked against its own verified stay rule for your passport: Schengen trips are pooled into one 90/180 count, others are checked per visit or per window.",
+    "onDateLabel": "Count Schengen days as of",
+    "tripsTitle": "Your trips",
+    "countryLabel": "Country",
+    "entryLabel": "Entry date",
+    "exitLabel": "Exit date",
+    "addTrip": "+ Add another trip",
+    "removeTrip": "Remove trip {n}",
+    "reversed": "The exit date is before the entry date, so this trip isn't counted.",
+    "privacy": "Your trips stay in this page: nothing is stored or sent.",
+    "withinLimit": "Within the limit",
+    "overLimit": "Over the limit",
+    "schengenTitle": "Schengen Area",
+    "schengenUsed": "On {date}: {used} days used in the last 180, {remaining} left.",
+    "schengenViolation": "Your trips go over 90 days in 180 on {date}.",
+    "calculatorLink": "Plan Schengen trips in detail in the 90/180 calculator →",
+    "notCovered": "{country}: we haven't verified the stay rule for your passport yet, so these trips aren't counted.",
+    "noCount": "No day limit applies to you here.",
+    "stayLine": "{entry} to {exit}: {days} days",
+    "overBy": "({days} days over)",
+    "peak": "Most days in any {windowDays}-day window: {days}.",
+    "windowViolation": "Your trips go over the window limit on {date}.",
+    "disclaimer": "Estimates from each country's verified rule; border officers decide the stay you're actually granted. Not legal advice."
+  },
   "letter": {
     "title": "Doctor's letter checklist",
     "hint": "Only what {destination}'s rule asks the letter or prescription to include. Tick each one off with your doctor.",
@@ -733,6 +762,7 @@
     "blog": "Blog",
     "bring": "What can I bring?",
     "medicines": "Medicines by name",
+    "dayCounter": "Day counter",
     "widget": "Embed the calculator",
     "developers": "API",
     "trustpilot": "Review us on Trustpilot"
