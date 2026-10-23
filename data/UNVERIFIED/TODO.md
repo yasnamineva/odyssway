@@ -3706,7 +3706,7 @@ Sources: MFA visa page (mfa.am/en/visa/), unilateral visa-free list and bilatera
 - **Batch 6 candidates checked (2026-10-21), not added yet:**
   - Panama: Migración's "Requisitos Turistas" link goes to a login page; no current official country list found (Decreto 521/2018 as amended by Decreto 196/2024 is the basis). Spain's embassy says EU citizens get 90 days.
   - Uzbekistan: MFA list on gov.uz (page dated 27.11.2025): 90 countries, 30 days for most of our roster; US citizens only from age 55 (tourism, 30 days); China 10 days with onward ticket; India not listed. A Nov 2025 MFA news item says 94 countries — the list may lag; reconcile before publishing.
-  - Bosnia and Herzegovina: SFA page states the rule (90 days in 6 months; EU/Schengen/neighbours with ID) but the country list is in the Decision on Visas, Art. 2, not linked; find the text (Službeni glasnik BiH).
+  - Bosnia and Herzegovina: DONE 2026-10-23 from the MFA's per-country consular pages (see batch 6, destination 5).
   - North Macedonia: MFA "Do you need a visa?" is a JavaScript tool; the visa page gives categories only.
   - Oman (rop.gov.om) unreachable; Mauritius, Nepal, Fiji pages 404/403.
 
@@ -3731,3 +3731,8 @@ Sources: Cabinet Resolution No. 408 (1996), Annex 5 — consolidated visa-free l
 - Customs not researched yet (customs.uz).
 - Kazakhstan (2026-10-23): BLOCKED — gov.kz, egov.kz and adilet.zan.kz are all JS apps; Adilet's API needs credentials. Need another route to Government Decree No. 148 (2012) rules for immigrants or the MFA visa-free list.
 - Laos (2026-10-23): BLOCKED — laoevisa.gov.la gives eVisa rules (30-day stay, single entry, passport valid >180 days from arrival) but the visa-exemption list is on mofa.gov.la (unreachable); eligible-country article loads via an API that returned nothing.
+
+## Batch 6, destination 5: Bosnia and Herzegovina (2026-10-23)
+Sources: MFA BiH per-country consular pages (mvp.gov.ba/bs/org_…; one per nationality, reached from the country selector on /bs/vize) + the general visa page (/bs/vize: EU citizens may enter with an ID card; minimum funds 150 KM per day — funds not yet added to rows).
+- 22 entry rows: US GB CA AU NZ JP KR SG MX AR CL IL FR DE IT ES NL "90 days in a period of six months from the day of first entry" → rolling 180/90 (same model as Serbia/Montenegro); CN ordinary passports 90 in any 180 (explicitly rolling); BR 90 per stay, 180 per year from first entry → rolling 365/180 + maxDaysPerEntry 90; MY up to 90 days, no reference period → fixed 90; UA 30 days within two months from first entry → rolling 60/30 (two months counted as 60 days, stated in the note); IN visa required.
+- OPEN: the Decision on Visas text itself (Službeni glasnik BiH) still not found; customs not researched (uino.gov.ba).

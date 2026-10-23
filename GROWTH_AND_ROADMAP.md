@@ -746,3 +746,7 @@ gate was passed or missed, and why.
   Foreign Ministry list agrees. China held (the annex says 30 days, the Foreign Ministry page says
   10 days with an onward ticket); Ukraine held ("no time limit" doesn't fit the stay model).
   Kazakhstan and Laos tried and blocked (sources are JavaScript apps or unreachable; see TODO).
+- **2026-10-23. Bosnia and Herzegovina: 22 entry rows.** From the Foreign Ministry's per-country
+  consular pages (one official page per passport). Most passports: 90 days in a six-month period
+  from first entry; China 90 in any 180 days; Brazil 90 per stay and 180 a year; Malaysia 90 days;
+  Ukraine 30 days within two months; India needs a visa. EU citizens can enter with an ID card.
