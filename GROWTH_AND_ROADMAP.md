@@ -761,3 +761,6 @@ gate was passed or missed, and why.
 - **2026-10-23. Macao cash row.** From the Customs Service's cash declaration form (Law 6/2017):
   declare MOP 120,000 or more on arrival, no limit on the amount. Tobacco and alcohol allowances
   logged as candidates until the 2016 Chief Executive Order behind them is confirmed current.
+- **2026-10-23. Seychelles: 22 entry rows.** From the Immigration and Civil Status Department: no
+  visa for anyone, but an ETA before departure; a free Visitor's Permit on arrival for up to three
+  months (extendable to twelve); return ticket, accommodation and US$150 a day.

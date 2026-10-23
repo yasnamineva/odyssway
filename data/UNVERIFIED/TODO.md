@@ -3743,3 +3743,12 @@ Source: gov.mo PS-1474 Immigration page (Public Security Police; last modified 2
 - 21 entry rows: US CA AU SG MY AR CL IN 30 days; FR DE IT ES NL (EU/Schengen) and BR JP KR MX 90 days; IL NZ "3 months" (counted as 90 days); GB "6 months" (180 days, same convention as the UK rows); UA not exempt → Entry Permit on arrival, 30 days.
 - **Held: CN** — Chinese citizens travel to Macao on PRC permits (Two-way Exit Permit with endorsement; PRC passport only for transit, 7 days); our row model can't express that.
 - Customs: cash-mo DONE 2026-10-23 (customs form SA213, Law 6/2017: declare MOP 120,000+ on arrival). customs.gov.mo pages return a 112-byte shell. Tobacco/alcohol CANDIDATE, not published: AIP Macao GEN 1.3 (page dated 24 Nov 2016, in the 2026 AIP edition) quotes Chief Executive Order 255/2016 Annex 1 — per day: 19 cigarettes or 1 cigar or 25 g tobacco (25 g total), 1 L of drinks over 30%; food items 1 kg each, 5 kg total. Confirm the Order hasn't been amended (Boletim Oficial) before publishing.
+
+## Batch 6, destination 7: Seychelles (2026-10-23)
+Sources: Immigration and Civil Status (ics.gov.sc) — Visitor's Permit page and Visiting Seychelles page.
+- 22 entry rows, all nationalities: no visa; ETA before departure (Seychelles e-Border app / seychelles.govtas.com); Visitor's Permit free on arrival for up to three months (counted as 90 days), extendable by three months at a time to twelve (SCR 5,000 per extension). Documents: passport valid until arrival back home, return/onward ticket, confirmed accommodation, funds ≥ US$150/day. No passportValidity rule (the reference is arrival back home, not departure from Seychelles).
+- ETA fee not stated on ics.gov.sc; seychelles.govtas.com not read. Customs not researched (src.gov.sc).
+
+## Candidate: Moldova (2026-10-23) — HELD, stay length unsourced
+- MFA "Visa regime for foreigners" (mfa.gov.md/en/content/visa-regime-foreigners) lists as visa-exempt: US AR AU BR CA CL KR FR DE IL IT JP MY GB MX SG ES NL UA NZ (and others). Visa required: CN [2], IN [1,2] — footnote [2]: exempt while holding a valid residence permit or visa (not transit) from an EU/Schengen state, the UK, the US or Canada.
+- MISSING: the permitted stay (expected 90 days in any 180, Law 200/2010 on the regime of foreigners) is not on the MFA or IGM pages; legis.md returns 403. Publish once the stay rule is read on an official page.
