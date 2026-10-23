@@ -772,3 +772,6 @@ gate was passed or missed, and why.
 - **2026-10-23. Ghana: 22 entry rows and 2 customs rows.** From the Ghana Immigration Service's
   visa regime table (Singapore visa-free for 60 days; the rest of our passports need a visa) and
   the Revenue Authority's passenger page (alcohol and tobacco allowances).
+- **2026-10-23. Zambia: 22 entry rows.** From the Department of Immigration's three nationality
+  lists and its visitor page: 18 of our passports need no visa, Brazil, Mexico and Chile get a visa
+  on arrival, India needs approval before travel; everyone gets 90 days in any 12 months.

@@ -3768,3 +3768,8 @@ Sources: Immigration and Civil Status (ics.gov.sc) — Visitor's Permit page and
 Sources: Ghana Immigration Service visa page (gis.gov.gh/visas/, "Ghana visa regime" exemption table); Ghana Revenue Authority "Passengers' Obligations at Customs".
 - 22 entry rows: SG visa-free 60 days (table row 3); BR and DE exempt only for diplomatic/service passports (row 2) → ordinary passports need a visa; all other roster passports are not on the exemption table → visa required (missions; eVisa portal evisa.immigration.gov.gh). Note: the gis.gov.gh site also hosts unrelated blog-style posts — only the /visas/ table is cited.
 - Customs: alcohol-gh (375 ml spirits, 750 ml wine) and tobacco-gh (0.5 kg) from GRA. NOT published: cash — GRA says foreign currency above $1,000 "may be declared" on Bank of Ghana form CDF 4A; find the Bank of Ghana rule before writing a cash row.
+
+## Batch 6, destination 9: Zambia (2026-10-23)
+Sources: Zambia Department of Immigration — three nationality lists (don't require visa / visa on arrival or from missions / visa prior to travel) and the For Visitors page (90 free days in any 12 months from first entry; visa fees; visas valid 90 days from issue).
+- 22 entry rows: 18 visa-free (US GB CA AU NZ JP KR SG MY IL UA CN AR IT ES NL FR DE), rolling 365/90; BR MX CL visa on arrival (rolling 365/90); IN visa approved before travel. Visa-free list page also requires a return air ticket (air) or funds (land/water). The visa waiver for 53 countries took effect 1 Jan 2025 (S.I. No. 78 of 2024, not read).
+- Customs not researched (ZRA).
