@@ -775,3 +775,6 @@ gate was passed or missed, and why.
 - **2026-10-23. Zambia: 22 entry rows.** From the Department of Immigration's three nationality
   lists and its visitor page: 18 of our passports need no visa, Brazil, Mexico and Chile get a visa
   on arrival, India needs approval before travel; everyone gets 90 days in any 12 months.
+- **2026-10-23. Zambia customs: 2 rows.** Alcohol and tobacco allowances from the Revenue
+  Authority's importation page (from age 18: 2.5 L beer, 2.5 L wine, 1.5 L spirits; 400
+  cigarettes or 0.5 kg tobacco or cigars). Cash held until the 2024 border-form guide can be read.

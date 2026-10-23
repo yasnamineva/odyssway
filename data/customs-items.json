@@ -17162,5 +17162,54 @@
     "verified_at": "2026-10-23",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "alcohol-zm",
+    "names": [
+      "alcohol",
+      "beer",
+      "wine",
+      "spirits",
+      "liquor"
+    ],
+    "destination": "ZM",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "summary": "Duty-free from age 18: 2.5 litres of beer, 2.5 litres of wine and 1.5 litres of spirits.",
+    "limits": {
+      "description": "Travellers aged at least 18 may import duty-free 2.5 litres of clear beer, 2.5 litres of wine and 1.5 litres of spirits. The goods must be for your own use, not commercial and not bought for someone else. Anything above the allowance is declared on Form CE6, assessed by Customs and taxed.",
+      "quantity": "2.5 L beer + 2.5 L wine + 1.5 L spirits"
+    },
+    "notes": "Separately, travellers may import other goods worth up to USD 1,000 duty-free; gifts for family or friends aren't covered by the rebate.",
+    "legal_source": {
+      "name": "Zambia Revenue Authority — Importation of Goods (accompanied baggage: traveller's allowances)",
+      "url": "https://www.zra.org.zm/importation-of-goods/"
+    },
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-zm",
+    "names": [
+      "cigarettes",
+      "tobacco",
+      "cigars"
+    ],
+    "destination": "ZM",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "summary": "Duty-free from age 18: 400 cigarettes, or 0.5 kg of tobacco, or 0.5 kg of cigars.",
+    "limits": {
+      "description": "Travellers aged at least 18 may import duty-free 0.5 kg of tobacco, or 0.5 kg of cigars, or 400 cigarettes. Anything above the allowance is declared on Form CE6, assessed by Customs and taxed.",
+      "quantity": "400 cigarettes"
+    },
+    "legal_source": {
+      "name": "Zambia Revenue Authority — Importation of Goods (accompanied baggage: traveller's allowances)",
+      "url": "https://www.zra.org.zm/importation-of-goods/"
+    },
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]

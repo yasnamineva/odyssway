@@ -3772,4 +3772,4 @@ Sources: Ghana Immigration Service visa page (gis.gov.gh/visas/, "Ghana visa reg
 ## Batch 6, destination 9: Zambia (2026-10-23)
 Sources: Zambia Department of Immigration — three nationality lists (don't require visa / visa on arrival or from missions / visa prior to travel) and the For Visitors page (90 free days in any 12 months from first entry; visa fees; visas valid 90 days from issue).
 - 22 entry rows: 18 visa-free (US GB CA AU NZ JP KR SG MY IL UA CN AR IT ES NL FR DE), rolling 365/90; BR MX CL visa on arrival (rolling 365/90); IN visa approved before travel. Visa-free list page also requires a return air ticket (air) or funds (land/water). The visa waiver for 53 countries took effect 1 Jan 2025 (S.I. No. 78 of 2024, not read).
-- Customs not researched (ZRA).
+- Customs DONE 2026-10-23: alcohol-zm, tobacco-zm from ZRA Importation of Goods. Cash: ZRA's 2024 Integrated Border Declaration Form guide (PDF) reportedly says declare over USD 5,000, but the PDF downloads truncated — re-fetch before writing cash-zm.
