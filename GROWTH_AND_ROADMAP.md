@@ -750,3 +750,7 @@ gate was passed or missed, and why.
   consular pages (one official page per passport). Most passports: 90 days in a six-month period
   from first entry; China 90 in any 180 days; Brazil 90 per stay and 180 a year; Malaysia 90 days;
   Ukraine 30 days within two months; India needs a visa. EU citizens can enter with an ID card.
+- **2026-10-23. Bosnia and Herzegovina customs: 6 rows.** From the Indirect Taxation Authority's
+  traveller page: alcohol and tobacco allowances, the EUR 10,000 cash declaration, ordinary
+  medicines (with a doctor's-letter checklist) and psychotropic medicines (7 days' supply,
+  declared at the border), and meat and dairy (EU and listed European countries only).

@@ -3735,4 +3735,5 @@ Sources: Cabinet Resolution No. 408 (1996), Annex 5 — consolidated visa-free l
 ## Batch 6, destination 5: Bosnia and Herzegovina (2026-10-23)
 Sources: MFA BiH per-country consular pages (mvp.gov.ba/bs/org_…; one per nationality, reached from the country selector on /bs/vize) + the general visa page (/bs/vize: EU citizens may enter with an ID card; minimum funds 150 KM per day — funds not yet added to rows).
 - 22 entry rows: US GB CA AU NZ JP KR SG MX AR CL IL FR DE IT ES NL "90 days in a period of six months from the day of first entry" → rolling 180/90 (same model as Serbia/Montenegro); CN ordinary passports 90 in any 180 (explicitly rolling); BR 90 per stay, 180 per year from first entry → rolling 365/180 + maxDaysPerEntry 90; MY up to 90 days, no reference period → fixed 90; UA 30 days within two months from first entry → rolling 60/30 (two months counted as 60 days, stated in the note); IN visa required.
-- OPEN: the Decision on Visas text itself (Službeni glasnik BiH) still not found; customs not researched (uino.gov.ba).
+- Customs DONE 2026-10-23: 6 rows from the Indirect Taxation Authority's traveller page (alcohol, tobacco, cash EUR 10,000, ordinary and psychotropic medicine, meat/dairy). Not added: fresh produce (page silent), drones/weapons.
+- OPEN: the Decision on Visas text itself (Službeni glasnik BiH) still not found.

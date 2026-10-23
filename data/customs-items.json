@@ -16739,5 +16739,185 @@
     "verified_at": "2026-10-21",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "alcohol-ba",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "rakija"
+    ],
+    "destination": "BA",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "summary": "Duty-free per traveller per day: 1 litre of spirits over 22% or 2 litres of drinks up to 22%. Not for travellers under 17.",
+    "limits": {
+      "description": "Per traveller and per day: 1 litre of alcohol over 22% by volume (or undenatured ethyl alcohol of 80% or more), or 2 litres of drinks of 22% or less, or a proportional mix of the two. Travellers under 17 get no duty-free allowance for alcohol, still wine or beer.",
+      "quantity": "1 L spirits or 2 L under 22%"
+    },
+    "legal_source": {
+      "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
+      "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
+    },
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-ba",
+    "names": [
+      "cigarettes",
+      "tobacco",
+      "cigars",
+      "cigarillos",
+      "smoking tobacco"
+    ],
+    "destination": "BA",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "summary": "Duty-free per traveller per day: 200 cigarettes, or 100 cigarillos, or 50 cigars, or 250 g of tobacco. Not for travellers under 17.",
+    "limits": {
+      "description": "Per traveller and per day: 200 cigarettes, or 100 cigarillos (cigars of up to 3 g each), or 50 cigars, or 250 g of smoking tobacco, or a proportional mix. Travellers under 17 get no duty-free allowance for tobacco.",
+      "quantity": "200 cigarettes"
+    },
+    "legal_source": {
+      "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
+      "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
+    },
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-ba",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "cheques",
+      "checks",
+      "securities",
+      "convertible marks",
+      "bam",
+      "km"
+    ],
+    "destination": "BA",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "summary": "Declare cash, cheques or securities worth more than EUR 10,000 when you enter or leave, on a currency declaration form.",
+    "limits": {
+      "description": "Anyone bringing in or taking out cash or securities worth more than EUR 10,000 must declare it to customs at the border crossing, on a currency declaration form available from customs officers or online. This covers foreign currency, convertible marks, cheques, securities and other portable payment instruments. Carrying more than EUR 10,000 in cash also needs approval from the Ministry of Finance of the Republika Srpska or of the Federation of BiH.",
+      "quantity": "EUR 10,000"
+    },
+    "legal_source": {
+      "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
+      "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
+    },
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-ba",
+    "names": [
+      "prescription medication",
+      "medicine",
+      "medication",
+      "prescription drugs",
+      "pills"
+    ],
+    "destination": "BA",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "summary": "Bring the amount needed for a standard course of treatment, with medical documents such as a prescription or a doctor's note.",
+    "limits": {
+      "description": "You can bring medicines for your own use in the quantity needed for a standard therapy, if you carry relevant medical documentation: a medical history transcript, a doctor's permission or a prescription. Medicines you need for personal use don't count towards the 600 BAM duty-free limit on other goods."
+    },
+    "legal_source": {
+      "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
+      "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
+    },
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "letter": {
+      "items": [
+        "A medical document for the medicine: a transcript of your medical history, a doctor's permission or a prescription"
+      ],
+      "source": {
+        "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
+        "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
+      },
+      "verified_at": "2026-10-23"
+    }
+  },
+  {
+    "slug": "controlled-medication-ba",
+    "names": [
+      "controlled substance",
+      "psychotropic medication",
+      "narcotic medication",
+      "controlled medication"
+    ],
+    "destination": "BA",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "summary": "Psychotropic medicine: up to 7 days' supply, with medical documents, and declare its name and quantity at the border.",
+    "limits": {
+      "description": "Under the Law on the prevention and control of abuse of narcotic drugs, you may carry medicine containing psychotropic substances across the border only with medical documentation and only in the quantity needed for up to 7 days of personal use. People on substitution treatment for addiction, or on symptomatic treatment for terminal cancer, may carry up to 15 days' supply with medical documentation. You must declare the medicine's name and quantity to the customs officer and show the medical documents.",
+      "quantity": "7 days' supply (15 in listed cases)"
+    },
+    "legal_source": {
+      "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
+      "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
+    },
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "letter": {
+      "items": [
+        "Medical documentation for the medicine",
+        "The medicine's name and the quantity you carry, which you must also declare to the customs officer",
+        "A quantity of no more than 7 days' personal use (15 days for substitution treatment or terminal cancer care)"
+      ],
+      "source": {
+        "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
+        "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
+      },
+      "verified_at": "2026-10-23"
+    }
+  },
+  {
+    "slug": "meat-dairy-ba",
+    "names": [
+      "meat",
+      "dairy",
+      "milk",
+      "cheese",
+      "sausage",
+      "ham",
+      "salami",
+      "baby formula",
+      "infant milk",
+      "pet food"
+    ],
+    "destination": "BA",
+    "category": "food_animal",
+    "verdict": "depends",
+    "summary": "Meat and dairy only from the EU and a few listed European countries. Infant milk, infant food and special medical food: up to 1 kg from anywhere.",
+    "limits": {
+      "description": "Personal consignments of meat, milk and their products are allowed only if they come from EU countries, Andorra, Liechtenstein, Norway, San Marino, Switzerland, the Faroe Islands, Greenland, Iceland, Montenegro or North Macedonia. Powdered infant milk, infant food and special food needed for medical reasons are allowed up to 1 kg per traveller from any country, if they need no refrigeration before opening, are in branded retail packaging, and the packaging is unopened unless in use. Medical pet food: up to 2 kg from the EU and listed countries (including Serbia), 1 kg from elsewhere, on the same conditions. Products that don't meet these rules must be put in the bins provided on arrival, to be destroyed or taken back.",
+      "quantity": "1 kg infant/medical food"
+    },
+    "legal_source": {
+      "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
+      "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
+    },
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]
