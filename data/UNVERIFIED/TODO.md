@@ -3737,3 +3737,9 @@ Sources: MFA BiH per-country consular pages (mvp.gov.ba/bs/org_…; one per nati
 - 22 entry rows: US GB CA AU NZ JP KR SG MX AR CL IL FR DE IT ES NL "90 days in a period of six months from the day of first entry" → rolling 180/90 (same model as Serbia/Montenegro); CN ordinary passports 90 in any 180 (explicitly rolling); BR 90 per stay, 180 per year from first entry → rolling 365/180 + maxDaysPerEntry 90; MY up to 90 days, no reference period → fixed 90; UA 30 days within two months from first entry → rolling 60/30 (two months counted as 60 days, stated in the note); IN visa required.
 - Customs DONE 2026-10-23: 6 rows from the Indirect Taxation Authority's traveller page (alcohol, tobacco, cash EUR 10,000, ordinary and psychotropic medicine, meat/dairy). Not added: fresh produce (page silent), drones/weapons.
 - OPEN: the Decision on Visas text itself (Službeni glasnik BiH) still not found.
+
+## Batch 6, destination 6: Macao (2026-10-23)
+Source: gov.mo PS-1474 Immigration page (Public Security Police; last modified 2026-08-10): exemption list (88 countries), limit-of-stay table, entry requirements (passport 90 days beyond stay, onward ticket, MOP funds by length of stay), visa-on-arrival fees, overstay fines.
+- 21 entry rows: US CA AU SG MY AR CL IN 30 days; FR DE IT ES NL (EU/Schengen) and BR JP KR MX 90 days; IL NZ "3 months" (counted as 90 days); GB "6 months" (180 days, same convention as the UK rows); UA not exempt → Entry Permit on arrival, 30 days.
+- **Held: CN** — Chinese citizens travel to Macao on PRC permits (Two-way Exit Permit with endorsement; PRC passport only for transit, 7 days); our row model can't express that.
+- Customs not researched (customs.gov.mo).

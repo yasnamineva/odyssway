@@ -74,6 +74,7 @@ export const photos = {
   "dest-me": { width: 1280, height: 960, author: "falco", page: "https://pixabay.com/photos/kotor-montenegro-balkan-1094388/" },
   "dest-am": { width: 1280, height: 679, author: "Makalu", page: "https://pixabay.com/photos/armenia-the-monastery-of-khor-virap-3718710/" },
   "dest-uy": { width: 1280, height: 960, author: "pirizluz", page: "https://pixabay.com/photos/palacio-salvo-montevideo-uruguay-2830233/" },
+  "dest-mo": { width: 1280, height: 854, author: "AndyLeungHK", page: "https://pixabay.com/photos/macau-tower-macao-asia-tourism-3766162/" },
   "dest-ba": { width: 1280, height: 851, author: "kupisliku", page: "https://pixabay.com/photos/mostar-bridge-herzegovina-neretva-3752375/" },
   "dest-uz": { width: 1280, height: 853, author: "xusenru", page: "https://pixabay.com/photos/samarkand-registan-uzbekistan-2399795/" },
   "dest-mn": { width: 1280, height: 640, author: "Kanenori", page: "https://pixabay.com/photos/landscape-majestic-river-meadow-2162211/" },

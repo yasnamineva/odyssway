@@ -25,6 +25,7 @@ const alpha2ById = new Map(Object.entries(COUNTRY_GEO_IDS).map(([alpha2, id]) =>
 export const MICRO_STATE_COORDS: Record<string, [number, number]> = {
   SG: [103.82, 1.35],
   HK: [114.17, 22.32],
+  MO: [113.54, 22.19],
   MV: [73.5, 3.2],
 };
 

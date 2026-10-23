@@ -754,3 +754,7 @@ gate was passed or missed, and why.
   traveller page: alcohol and tobacco allowances, the EUR 10,000 cash declaration, ordinary
   medicines (with a doctor's-letter checklist) and psychotropic medicines (7 days' supply,
   declared at the border), and meat and dairy (EU and listed European countries only).
+- **2026-10-23. Macao: 21 entry rows.** From the Macao government's immigration page (Public
+  Security Police, updated August 2026): 30, 90 or 180 days depending on the passport, Ukraine
+  via an entry permit on arrival, and the passport (90 days beyond the stay), onward-ticket and
+  funds rules. China held (Chinese citizens use PRC travel permits, not passports).
