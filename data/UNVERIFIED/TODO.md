@@ -3728,7 +3728,7 @@ Sources: Cabinet Resolution No. 408 (1996), Annex 5 — consolidated visa-free l
 - 20 entry rows: AU AR IL IT CA ES NL MY NZ KR SG CL GB BR DE FR JP MX 30 days (annex and MFA agree); US 30 days (UP-203; the MFA page still shows the old "55+ tourists" rule); IN visa required (e-visa list + 5-day transit with an Uzbekistan Airways ticket).
 - **Held: CN** — conflict: the annex (LexUz translation, after Resolution 662) lists China among 30-day countries; the MFA page lists China under "up to 10 days" with an onward ticket. Resolve from the Uzbek text of Resolution 662 or an updated MFA page.
 - **Held: UA** — "unlimited duration" bilateral regime; our stay model can't express "no time limit".
-- Customs not researched yet (customs.uz).
+- Customs BLOCKED 2026-10-23: customs.uz is a JS app; on lex.uz, PP-4508 (2019, amended by UP-174 of 27 Aug 2026) sets the single customs payment but not the limits; Cabinet Resolution No. 44 (29 Jan 2025) and No. 244 (19 Apr 2025) are published only in Uzbek. Find the current duty-free limits (alcohol, tobacco, goods value) and the cash declaration threshold in a readable official text.
 - Kazakhstan (2026-10-23): BLOCKED — gov.kz, egov.kz and adilet.zan.kz are all JS apps; Adilet's API needs credentials. Need another route to Government Decree No. 148 (2012) rules for immigrants or the MFA visa-free list.
 - Laos (2026-10-23): BLOCKED — laoevisa.gov.la gives eVisa rules (30-day stay, single entry, passport valid >180 days from arrival) but the visa-exemption list is on mofa.gov.la (unreachable); eligible-country article loads via an API that returned nothing.
 
