@@ -739,3 +739,10 @@ gate was passed or missed, and why.
   arrival", "3 months after leaving Schengen"…) and names the first stop that fails. Stops whose
   wording names no reference date, or no period at all, show the validity left instead of a
   verdict; stops we haven't verified say so. Dates stay in the browser.
+- **2026-10-23. Uzbekistan: 20 entry rows.** From the Cabinet of Ministers' consolidated visa-free
+  list (Resolution No. 408, Annex 5, as amended 21 Oct 2025, on LexUz), the 2025 presidential
+  decree giving US citizens 30 days from 1 Jan 2026, and the Foreign Ministry's visa page (e-visa
+  and five-day transit lists, for India). 18 passports get 30 days from crossing the border; the
+  Foreign Ministry list agrees. China held (the annex says 30 days, the Foreign Ministry page says
+  10 days with an onward ticket); Ukraine held ("no time limit" doesn't fit the stay model).
+  Kazakhstan and Laos tried and blocked (sources are JavaScript apps or unreachable; see TODO).

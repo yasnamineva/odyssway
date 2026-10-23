@@ -3722,3 +3722,12 @@ Sources: Immigration Agency article 537 (34 countries, tourist visa exemption up
 - **Held: UA** — listed as "All passports /with official invitation/, Up to 90 days"; our row model can't express "visa-free only with an official invitation". 
 - **DEADLINE 2026-12-31:** the 2026 tourist exemption (7 rows) and Korea's exemption both end on 31 Dec 2026 unless renewed — watch immigration.gov.mn in December.
 - Customs not published: airport and customs.gov.mn figures are undated and conflict (cash MNT 15 million vs USD 5,000). Find the current customs law/regulation text on legalinfo.mn.
+
+## Batch 6, destination 4: Uzbekistan (2026-10-23)
+Sources: Cabinet Resolution No. 408 (1996), Annex 5 — consolidated visa-free list, as amended by Resolution No. 662 of 21 Oct 2025 (lex.uz/ru/docs/513096; the Russian text is LexUz's unofficial translation, Resolution 662 itself is published only in Uzbek); Presidential Decree UP-203 of 3 Nov 2025 (US, 30 days from 1 Jan 2026); MFA visa page on gov.uz (visa-free list, e-visa Appendix 1, transit Appendix 2; last updated 2025-03-06).
+- 20 entry rows: AU AR IL IT CA ES NL MY NZ KR SG CL GB BR DE FR JP MX 30 days (annex and MFA agree); US 30 days (UP-203; the MFA page still shows the old "55+ tourists" rule); IN visa required (e-visa list + 5-day transit with an Uzbekistan Airways ticket).
+- **Held: CN** — conflict: the annex (LexUz translation, after Resolution 662) lists China among 30-day countries; the MFA page lists China under "up to 10 days" with an onward ticket. Resolve from the Uzbek text of Resolution 662 or an updated MFA page.
+- **Held: UA** — "unlimited duration" bilateral regime; our stay model can't express "no time limit".
+- Customs not researched yet (customs.uz).
+- Kazakhstan (2026-10-23): BLOCKED — gov.kz, egov.kz and adilet.zan.kz are all JS apps; Adilet's API needs credentials. Need another route to Government Decree No. 148 (2012) rules for immigrants or the MFA visa-free list.
+- Laos (2026-10-23): BLOCKED — laoevisa.gov.la gives eVisa rules (30-day stay, single entry, passport valid >180 days from arrival) but the visa-exemption list is on mofa.gov.la (unreachable); eligible-country article loads via an API that returned nothing.
