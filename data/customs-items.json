@@ -16919,5 +16919,35 @@
     "verified_at": "2026-10-23",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "cash-mo",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "cheques",
+      "checks",
+      "traveller's cheques",
+      "bearer negotiable instruments",
+      "pataca",
+      "mop"
+    ],
+    "destination": "MO",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "summary": "Declare cash or bearer negotiable instruments worth MOP 120,000 or more when you arrive. There's no limit on the amount.",
+    "limits": {
+      "description": "Travellers bringing into Macao currency or bearer negotiable instruments (such as traveller's cheques, or cheques and promissory notes signed with the payee left blank) worth MOP 120,000 or more, or the equivalent in another currency, must declare them on the customs declaration form. When leaving, you only fill in the form if a customs officer asks. Law 6/2017 sets no limit on the type or amount you can bring in or take out.",
+      "quantity": "MOP 120,000"
+    },
+    "notes": "A missing, false or incomplete declaration is an administrative offence, fined 1% to 5% of the amount above the threshold, but never less than MOP 1,000 or more than MOP 500,000.",
+    "legal_source": {
+      "name": "Macao SAR Customs Service — Declaration for the Transportation of Currency and Bearer Negotiable Instruments (form SA213, general information; Law 6/2017)",
+      "url": "https://www.customs.gov.mo/download/form/en_SA213.pdf"
+    },
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]

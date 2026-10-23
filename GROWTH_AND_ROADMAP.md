@@ -758,3 +758,6 @@ gate was passed or missed, and why.
   Security Police, updated August 2026): 30, 90 or 180 days depending on the passport, Ukraine
   via an entry permit on arrival, and the passport (90 days beyond the stay), onward-ticket and
   funds rules. China held (Chinese citizens use PRC travel permits, not passports).
+- **2026-10-23. Macao cash row.** From the Customs Service's cash declaration form (Law 6/2017):
+  declare MOP 120,000 or more on arrival, no limit on the amount. Tobacco and alcohol allowances
+  logged as candidates until the 2016 Chief Executive Order behind them is confirmed current.
