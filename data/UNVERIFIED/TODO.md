@@ -3763,3 +3763,8 @@ Sources: Immigration and Civil Status (ics.gov.sc) — Visitor's Permit page and
 - Paraguay: migraciones.gov.py banned this client; mre.gov.py pages conflict (US listed both as exempt and as visa-on-arrival). Reconcile before publishing.
 - Barbados: immigration.gov.bb (requirements: passport valid for the trip, return ticket, online form) links a visa list on foreign.gov.bb dated August 2022, and foreign.gov.bb serves a server test page; no stay length found.
 - Medication research with no traveller rule found: Nigeria (NAFDAC covers importers and outbound personal exports only), Jordan (JFDA: mail-order personal imports only), Macao (ISAF/SSM: licensed importers).
+
+## Batch 6, destination 8: Ghana (2026-10-23)
+Sources: Ghana Immigration Service visa page (gis.gov.gh/visas/, "Ghana visa regime" exemption table); Ghana Revenue Authority "Passengers' Obligations at Customs".
+- 22 entry rows: SG visa-free 60 days (table row 3); BR and DE exempt only for diplomatic/service passports (row 2) → ordinary passports need a visa; all other roster passports are not on the exemption table → visa required (missions; eVisa portal evisa.immigration.gov.gh). Note: the gis.gov.gh site also hosts unrelated blog-style posts — only the /visas/ table is cited.
+- Customs: alcohol-gh (375 ml spirits, 750 ml wine) and tobacco-gh (0.5 kg) from GRA. NOT published: cash — GRA says foreign currency above $1,000 "may be declared" on Bank of Ghana form CDF 4A; find the Bank of Ghana rule before writing a cash row.

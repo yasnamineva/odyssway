@@ -769,3 +769,6 @@ gate was passed or missed, and why.
   (declare; narcotics 7 days with a medical document; psychotropics 5 × 2 packs), with
   doctor's-letter checklists, from the 2016 Cabinet regulation as amended in 2026. Seychelles:
   alcohol and tobacco allowances (2024 regulations) and the SCR 50,000 cash declaration.
+- **2026-10-23. Ghana: 22 entry rows and 2 customs rows.** From the Ghana Immigration Service's
+  visa regime table (Singapore visa-free for 60 days; the rest of our passports need a visa) and
+  the Revenue Authority's passenger page (alcohol and tobacco allowances).

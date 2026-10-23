@@ -17109,5 +17109,58 @@
     "verified_at": "2026-10-23",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "alcohol-gh",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer",
+      "perfumed spirits"
+    ],
+    "destination": "GH",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "summary": "Duty-free: up to 375 ml of spirits and 750 ml of wine. Use the red channel if you carry more.",
+    "limits": {
+      "description": "You can bring free of duty portable and perfumed spirits of up to 37.5 centilitres (375 ml) and wine of up to 75 centilitres (750 ml). Drinks above these quantities must go through the red channel and are subject to duties and taxes.",
+      "quantity": "375 ml spirits + 750 ml wine"
+    },
+    "notes": "Failing to produce dutiable items for examination makes them liable to forfeiture or a penalty.",
+    "legal_source": {
+      "name": "Ghana Revenue Authority — Passengers' Obligations at Customs",
+      "url": "https://gra.gov.gh/customs/passengers-obligations-at-customs/"
+    },
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-gh",
+    "names": [
+      "cigarettes",
+      "tobacco",
+      "cigars",
+      "cheroots",
+      "snuff"
+    ],
+    "destination": "GH",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "summary": "Duty-free: cigarettes, cigars and other tobacco up to 0.5 kg (one pound) in total.",
+    "limits": {
+      "description": "Cigarettes, cheroots, cigars, tobacco and snuff can be brought in free of duty up to one pound (0.5 kg) in weight in total. Anything above that is subject to duties and taxes and must be declared in the red channel.",
+      "quantity": "0.5 kg in total"
+    },
+    "notes": "Failing to produce dutiable items for examination makes them liable to forfeiture or a penalty.",
+    "legal_source": {
+      "name": "Ghana Revenue Authority — Passengers' Obligations at Customs",
+      "url": "https://gra.gov.gh/customs/passengers-obligations-at-customs/"
+    },
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]
