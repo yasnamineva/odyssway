@@ -764,3 +764,8 @@ gate was passed or missed, and why.
 - **2026-10-23. Seychelles: 22 entry rows.** From the Immigration and Civil Status Department: no
   visa for anyone, but an ETA before departure; a free Visitor's Permit on arrival for up to three
   months (extendable to twelve); return ticket, accommodation and US$150 a day.
+- **2026-10-23. Uzbekistan medicine and Seychelles customs: 5 rows.** Uzbekistan: ordinary
+  medicines (10 medicines, 5 packs each, pack-size limits) and narcotic/psychotropic medicines
+  (declare; narcotics 7 days with a medical document; psychotropics 5 × 2 packs), with
+  doctor's-letter checklists, from the 2016 Cabinet regulation as amended in 2026. Seychelles:
+  alcohol and tobacco allowances (2024 regulations) and the SCR 50,000 cash declaration.

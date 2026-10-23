@@ -16949,5 +16949,165 @@
     "verified_at": "2026-10-23",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-uz",
+    "names": [
+      "prescription medication",
+      "medicine",
+      "medication",
+      "pills",
+      "tablets",
+      "medical devices"
+    ],
+    "destination": "UZ",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "summary": "Without a medical document: up to 10 different medicines, at most 5 manufacturer's packs of each, for your own use.",
+    "limits": {
+      "description": "For personal use during your stay you can bring, without any document from a doctor, up to 10 different medicines and no more than 5 packs of each, plus up to 5 medical devices. Each pack may hold at most: 100 tablets, capsules or similar; 500 g of powder for making a solution; 50 g of homeopathic granules; 500 ml of infusion or oral solution; 10 ampoules or vials of injection; 200 ml or 200 g of a medicine for external use. Medicines must be in the manufacturer's packaging. Since 8 February 2026, customs also take into account the quantity, how often you travel with medicines, and the purpose and length of your trip.",
+      "quantity": "10 medicines, 5 packs each"
+    },
+    "notes": "Above these limits you declare the medicines to customs together with a document from a medical institution in your country of residence or stay. That clause was rewritten in 2025 and is published only in Uzbek; LexUz's Russian translation of it is unclear, so check the official text if you need to bring more. Medicines brought in for personal use may not be passed on or sold to anyone else.",
+    "legal_source": {
+      "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 191 of 8 June 2016 — Regulation on bringing in and taking out medicines and medical devices by individuals for personal use (as amended to 8 February 2026; LexUz Russian translation of the Uzbek original)",
+      "url": "https://lex.uz/ru/docs/2978666"
+    },
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "letter": {
+      "items": [
+        "Only needed above the limits: a document from a medical institution in your country of residence or stay naming the medicine"
+      ],
+      "source": {
+        "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 191 of 8 June 2016 — Regulation on bringing in and taking out medicines and medical devices by individuals for personal use (as amended to 8 February 2026; LexUz Russian translation of the Uzbek original)",
+        "url": "https://lex.uz/ru/docs/2978666"
+      },
+      "verified_at": "2026-10-23"
+    }
+  },
+  {
+    "slug": "controlled-medication-uz",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "controlled medication"
+    ],
+    "destination": "UZ",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "summary": "Declare narcotic and psychotropic medicines at the border. Narcotics: up to 7 days' supply with a medical document. Psychotropics: up to 5 medicines, 2 packs each.",
+    "limits": {
+      "description": "You must declare any narcotic or psychotropic medicines when you cross the border. Narcotic medicines: up to 7 days' supply, with a document from a medical institution in your country of residence or stay giving the medicine's name, its form and the recommended quantity for the course of treatment; show it to customs. Psychotropic medicines: up to 5 different medicines and no more than 2 packs of each, within a course of treatment, without a medical document. Which substances count as narcotic or psychotropic is set by the lists approved by Cabinet Resolution No. 330 of 12 November 2015.",
+      "quantity": "Narcotics 7 days; psychotropics 5 × 2 packs"
+    },
+    "notes": "Customs check the documents against what you carry and declare. Any quantity above what the medical document and your declaration show is seized and destroyed.",
+    "legal_source": {
+      "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 191 of 8 June 2016 — Regulation on bringing in and taking out medicines and medical devices by individuals for personal use (as amended to 8 February 2026; LexUz Russian translation of the Uzbek original)",
+      "url": "https://lex.uz/ru/docs/2978666"
+    },
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "letter": {
+      "items": [
+        "Issued by a medical institution in your country of residence or stay (required for narcotic medicines)",
+        "The medicine's name",
+        "Its form (tablets, capsules, solution…)",
+        "The recommended quantity for the course of treatment"
+      ],
+      "source": {
+        "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 191 of 8 June 2016 — Regulation on bringing in and taking out medicines and medical devices by individuals for personal use (as amended to 8 February 2026; LexUz Russian translation of the Uzbek original)",
+        "url": "https://lex.uz/ru/docs/2978666"
+      },
+      "verified_at": "2026-10-23"
+    }
+  },
+  {
+    "slug": "alcohol-sc",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "rum",
+      "whisky"
+    ],
+    "destination": "SC",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "summary": "Duty-free from age 18: 2 litres of drinks up to 16% plus 2 litres over 16%.",
+    "limits": {
+      "description": "Passengers aged 18 and over may bring duty-free 2 litres of alcoholic drinks of 16% or less (such as beer, wine and sparkling wine) and 2 litres of drinks over 16% (such as whisky, rum, gin and liqueurs). Duty-free goods must be for your own use. Anything above the allowance must be declared in the red channel and taxed.",
+      "quantity": "2 L up to 16% + 2 L over 16%"
+    },
+    "notes": "Set by the Customs Management (Passenger Allowance) (Amendment) Regulations 2024 (S.I. 94 of 2024). Not declaring goods above the allowance is a serious offence that can bring fines, seizure and prosecution.",
+    "legal_source": {
+      "name": "Seychelles Revenue Commission — Customs and Excises (duty-free allowances, cash declaration procedure)",
+      "url": "https://src.gov.sc/customs-and-excises/"
+    },
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-sc",
+    "names": [
+      "cigarettes",
+      "tobacco",
+      "cigars",
+      "cheroots",
+      "snuff",
+      "chewing tobacco"
+    ],
+    "destination": "SC",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "summary": "Duty-free from age 18: 200 cigarettes or 250 g of tobacco products.",
+    "limits": {
+      "description": "Passengers aged 18 and over may bring duty-free 250 g of tobacco products or 200 cigarettes, the allowance covering cigars, cheroots, snuff and smoking and chewing tobacco. Anything above the allowance must be declared in the red channel and taxed.",
+      "quantity": "200 cigarettes or 250 g"
+    },
+    "notes": "Set by the Customs Management (Passenger Allowance) (Amendment) Regulations 2024 (S.I. 94 of 2024). The allowance listed for passengers under 18 covers only SCR 8,000 of other goods, 200 ml of perfume and one electronic item.",
+    "legal_source": {
+      "name": "Seychelles Revenue Commission — Customs and Excises (duty-free allowances, cash declaration procedure)",
+      "url": "https://src.gov.sc/customs-and-excises/"
+    },
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-sc",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "cheques",
+      "checks",
+      "traveller's cheques",
+      "bearer negotiable instruments",
+      "rupee",
+      "scr"
+    ],
+    "destination": "SC",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "summary": "Declare cash worth SCR 50,000 or more (about USD 3,500) when you enter or leave, with proof of where it came from.",
+    "limits": {
+      "description": "Anyone carrying cash worth SCR 50,000 or more in total, or the equivalent in foreign currency, must declare it to Customs on entering and on leaving Seychelles. The question also covers monetary instruments such as cheques, bills of exchange, promissory notes, traveller's cheques, bearer bonds and money orders. On arrival, go to the red channel, fill in the Cash Declaration Form and show proof of the source of the funds. On departure, go to the Customs office at the VAT verification counter of the international airport.",
+      "quantity": "SCR 50,000"
+    },
+    "notes": "Under the Anti-Money Laundering and Countering Financing of Terrorism (Cross Border Declaration) Regulations 2022 (S.I. 11 of 2022), failing to declare, or knowingly making a false or misleading declaration, is an offence punishable by a fine on conviction.",
+    "legal_source": {
+      "name": "Seychelles Revenue Commission — Customs and Excises (duty-free allowances, cash declaration procedure)",
+      "url": "https://src.gov.sc/customs-and-excises/"
+    },
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]
