@@ -3755,3 +3755,11 @@ Sources: Immigration and Civil Status (ics.gov.sc) — Visitor's Permit page and
 - MISSING: the permitted stay (expected 90 days in any 180, Law 200/2010 on the regime of foreigners) is not on the MFA or IGM pages; legis.md returns 403. Publish once the stay rule is read on an official page.
 - Uzbekistan medication DONE 2026-10-23: prescription-medication-uz and controlled-medication-uz from Cabinet Resolution No. 191 (2016, as amended to 8 Feb 2026, lex.uz/ru/docs/2978666). Clause 6 (above the limits) is published only in Uzbek after Resolution 700 (6 Nov 2025); the row says so.
 - Macao medication: no personal-use rule found (ISAF/SSM pages cover licensed importers only).
+
+## Destination candidates tried 2026-10-23 (blocked)
+- North Macedonia: mfa.gov.mk refuses connections (curl and WebFetch).
+- Kosovo: mfa-ks.net restructured; visa info only on arkivi.mfa-ks.net (archive). The visa list is Annex 1 of Government Decision No. 12/108 (amended several times); Ukraine's visa suspension (2022) status unknown. Find the current consolidated annex.
+- Brunei: immigration.gov.bn visit-visa page links forms only; no exemption list found.
+- Paraguay: migraciones.gov.py banned this client; mre.gov.py pages conflict (US listed both as exempt and as visa-on-arrival). Reconcile before publishing.
+- Barbados: immigration.gov.bb (requirements: passport valid for the trip, return ticket, online form) links a visa list on foreign.gov.bb dated August 2022, and foreign.gov.bb serves a server test page; no stay length found.
+- Medication research with no traveller rule found: Nigeria (NAFDAC covers importers and outbound personal exports only), Jordan (JFDA: mail-order personal imports only), Macao (ISAF/SSM: licensed importers).
