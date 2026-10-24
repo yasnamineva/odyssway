@@ -778,3 +778,5 @@ gate was passed or missed, and why.
 - **2026-10-23. Zambia customs: 2 rows.** Alcohol and tobacco allowances from the Revenue
   Authority's importation page (from age 18: 2.5 L beer, 2.5 L wine, 1.5 L spirits; 400
   cigarettes or 0.5 kg tobacco or cigars). Cash held until the 2024 border-form guide can be read.
+- **2026-10-23. Fiji: 22 entry rows.** From the Ministry of Immigration: every passport we cover
+  is visa-exempt and gets a visitor permit on arrival for up to 4 months, extendable by 2.

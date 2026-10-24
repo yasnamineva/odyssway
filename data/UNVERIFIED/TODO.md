@@ -3773,3 +3773,12 @@ Sources: Ghana Immigration Service visa page (gis.gov.gh/visas/, "Ghana visa reg
 Sources: Zambia Department of Immigration — three nationality lists (don't require visa / visa on arrival or from missions / visa prior to travel) and the For Visitors page (90 free days in any 12 months from first entry; visa fees; visas valid 90 days from issue).
 - 22 entry rows: 18 visa-free (US GB CA AU NZ JP KR SG MY IL UA CN AR IT ES NL FR DE), rolling 365/90; BR MX CL visa on arrival (rolling 365/90); IN visa approved before travel. Visa-free list page also requires a return air ticket (air) or funds (land/water). The visa waiver for 53 countries took effect 1 Jan 2025 (S.I. No. 78 of 2024, not read).
 - Customs DONE 2026-10-23: alcohol-zm, tobacco-zm from ZRA Importation of Goods. Cash: ZRA's 2024 Integrated Border Declaration Form guide (PDF) reportedly says declare over USD 5,000, but the PDF downloads truncated — re-fetch before writing cash-zm.
+
+## Batch 6, destination 10: Fiji (2026-10-23)
+Sources: Fiji Ministry of Immigration — Visa exempted countries (list is in the page's embedded data, four regions; all 22 roster passports present), Visit Fiji (visitor permit on immigration clearance, up to 4 months, extendable by 2 months for a fee; medical-treatment visitors apply in advance), Entering Fiji (current valid passport).
+- 22 entry rows, all visa_free, fixed_per_entry 120 (4 months counted as 120 days).
+- Customs not researched (FRCS).
+
+## Candidate: Mauritius (2026-10-23) — HELD, stay model
+- Passport and Immigration Office "Visa Requirements" page (passport.govmu.org/passport/?page_id=605) + "Visa Requirement Country-wise" PDF (Visa-Requirement-Country-2025.pdf, created 2 Sep 2025): all 22 roster passports "No visa required". EU passports exempt from visa regulations.
+- Stay: tourist visa "maximum period of six months may be granted in a calendar year on a case to case basis"; the officer decides each visit. HELD because a calendar-year cap isn't a rolling window (a 365-day rolling model would flag some legal stays). Options: add a `calendar_year` StayPolicy kind, or publish with stayPolicy omitted. Owner decision.
