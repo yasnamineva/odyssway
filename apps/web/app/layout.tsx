@@ -79,7 +79,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <div className="flex min-h-dvh flex-col">
             <SiteChrome>
-            <header className="relative z-30 mx-auto w-full max-w-6xl px-4 pt-4 sm:px-6">
+            <header className="relative z-30 mx-auto w-full max-w-6xl px-4 pt-4 sm:px-6 print:hidden">
               <SiteNav
                 brand={t("header.brand")}
                 links={[
@@ -100,7 +100,7 @@ export default async function RootLayout({
               {children}
             </main>
             <SiteChrome>
-            <footer className="border-t border-slate-800 bg-slate-900 text-white">
+            <footer className="border-t border-slate-800 bg-slate-900 text-white print:hidden">
               <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
                 <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
                   <div className="max-w-xs">

@@ -275,3 +275,12 @@ test("a shared link reopens the same multi-stop result with its items", async ({
   await page.getByTestId("tc-share").first().click();
   await expect(page).toHaveURL(/#n=US&d=JP&l=TH&i=adderall$/);
 });
+
+test("the printout hides the form and carries a link back to the result", async ({ page }) => {
+  await page.goto("/trip-check#n=US&d=JP&l=TH&i=adderall");
+  await expect(page.getByTestId("tc-route-summary")).toBeVisible();
+  await page.emulateMedia({ media: "print" });
+  await expect(page.getByTestId("tc-print-note").first()).toBeVisible();
+  await expect(page.getByTestId("tc-print-note").first()).toContainText("#n=US&d=JP&l=TH&i=adderall");
+  await expect(page.locator("form").first()).toBeHidden();
+});

@@ -252,9 +252,9 @@ export default function TripCheck({
       </h1>
       <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600">{t("subtitle")}</p>
 
-      <div className="mt-6 lg:grid lg:grid-cols-[minmax(0,22rem)_minmax(0,1fr)] lg:items-start lg:gap-10">
+      <div className="mt-6 lg:grid lg:grid-cols-[minmax(0,22rem)_minmax(0,1fr)] lg:items-start lg:gap-10 print:block">
         <form
-          className="space-y-4"
+          className="space-y-4 print:hidden"
           onSubmit={(e) => {
             e.preventDefault();
             setSubmitted(true);
@@ -477,7 +477,7 @@ export default function TripCheck({
         {/* Phones: the answer comes straight after the form, the map after it.
             Desktop: map on top of the right column, answer beneath. */}
         <div className="mt-2 flex flex-col lg:mt-0" data-testid="tc-map-panel">
-          <div className="order-2 mt-6 lg:order-1 lg:mt-0">
+          <div className="order-2 mt-6 lg:order-1 lg:mt-0 print:hidden">
             <WorldMap
               originCode={nationality || undefined}
               destinationCode={mapDestinationCode}
@@ -642,7 +642,7 @@ function TripCheckResults({
       <button
         type="button"
         onClick={onEdit}
-        className="shrink-0 rounded-md border border-slate-300 px-3 py-1.5 text-xs font-medium text-slate-700 hover:bg-slate-50"
+        className="shrink-0 rounded-md border border-slate-300 px-3 py-1.5 text-xs font-medium text-slate-700 hover:bg-slate-50 print:hidden"
       >
         {t("editTrip")}
       </button>
@@ -839,9 +839,29 @@ function ShareTripLink({ state }: { state: Parameters<typeof encodeTripShare>[0]
       // Clipboard blocked: the address bar now holds the link, which can be copied by hand.
     }
   };
+  const print = () => {
+    // Expand every stop so the printout holds the whole trip, then print.
+    document.querySelectorAll<HTMLDetailsElement>("#tc-result details").forEach((d) => (d.open = true));
+    window.history.replaceState(null, "", `#${encodeTripShare(state)}`);
+    window.print();
+  };
+  const printedFrom =
+    typeof window === "undefined" ? "" : `${window.location.origin}${window.location.pathname}#${encodeTripShare(state)}`;
   return (
-    <div className="mt-6 flex flex-wrap items-center justify-end gap-2 text-xs">
+    <>
+    <p className="hidden text-xs text-slate-600 print:block" data-testid="tc-print-note">
+      {t("printNote", { url: printedFrom })}
+    </p>
+    <div className="mt-6 flex flex-wrap items-center justify-end gap-2 text-xs print:hidden">
       <span className="text-slate-500">{t("shareHint")}</span>
+      <button
+        type="button"
+        data-testid="tc-print"
+        onClick={print}
+        className="rounded-lg border border-slate-300 px-3 py-1.5 font-semibold text-slate-700 hover:bg-slate-50"
+      >
+        {t("printTrip")}
+      </button>
       <button
         type="button"
         data-testid="tc-share"
@@ -851,5 +871,6 @@ function ShareTripLink({ state }: { state: Parameters<typeof encodeTripShare>[0]
         {copied ? t("shareCopied") : t("shareCopy")}
       </button>
     </div>
+    </>
   );
 }

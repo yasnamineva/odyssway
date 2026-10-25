@@ -71,6 +71,18 @@
   }
 }
 
+/* Printouts (Trip Check "Print or save as PDF", the calculator): print
+   rendering doesn't run animations, so anything that fades in from
+   opacity 0 would print blank. */
+@media print {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
 @layer base {
   h1,
   h2,
