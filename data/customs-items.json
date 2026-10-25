@@ -17642,5 +17642,42 @@
     "verified_at": "2026-10-25",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-mu",
+    "names": [
+      "prescription medication",
+      "medicine",
+      "medication",
+      "prescription drugs",
+      "pills"
+    ],
+    "destination": "MU",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "summary": "Bring prescribed medicine in your luggage, in its original packaging, with your doctor's prescription covering the quantity for your stay.",
+    "limits": {
+      "description": "You may bring prescribed medicine in your accompanied luggage (or import it by post). Carry your doctor's prescription stating what the medicine is, the medical condition it's for and the quantity you'll need for your stay, and keep all medicine in its original packaging."
+    },
+    "notes": "The FAQ adds: \"Clearance from the government pharmacist, Ministry of Health and Wellness, is needed prior to delivery.\"",
+    "legal_source": {
+      "name": "Mauritius Revenue Authority — FAQs Travellers: Can I bring prescription medicine when I come on holiday?",
+      "url": "https://www.mra.mu/customs1/travellers/13-customs/159-faqs-travellers"
+    },
+    "verified_at": "2026-10-25",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "letter": {
+      "items": [
+        "What the medication is",
+        "The medical condition it's for",
+        "The quantity you'll need for the length of your stay"
+      ],
+      "source": {
+        "name": "Mauritius Revenue Authority — FAQs Travellers: Can I bring prescription medicine when I come on holiday?",
+        "url": "https://www.mra.mu/customs1/travellers/13-customs/159-faqs-travellers"
+      },
+      "verified_at": "2026-10-25"
+    }
   }
 ]
