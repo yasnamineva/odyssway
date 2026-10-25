@@ -3777,7 +3777,7 @@ Sources: Zambia Department of Immigration — three nationality lists (don't req
 ## Batch 6, destination 10: Fiji (2026-10-23)
 Sources: Fiji Ministry of Immigration — Visa exempted countries (list is in the page's embedded data, four regions; all 22 roster passports present), Visit Fiji (visitor permit on immigration clearance, up to 4 months, extendable by 2 months for a fee; medical-treatment visitors apply in advance), Entering Fiji (current valid passport).
 - 22 entry rows, all visa_free, fixed_per_entry 120 (4 months counted as 120 days).
-- Customs not researched (FRCS).
+- Customs DONE 2026-10-25: alcohol, tobacco, e-cigarettes, cash, prescription medicine (letter), food/biosecurity from FRCS 'Arriving in Fiji' (updated 18 Sep 2025).
 
 ## Mauritius (2026-10-23/25)
 - Passport and Immigration Office "Visa Requirements" page (passport.govmu.org/passport/?page_id=605) + "Visa Requirement Country-wise" PDF (Visa-Requirement-Country-2025.pdf, created 2 Sep 2025): all 22 roster passports "No visa required". EU passports exempt from visa regulations.

@@ -17373,5 +17373,170 @@
     "verified_at": "2026-10-25",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "alcohol-fj",
+    "names": [
+      "alcohol",
+      "spirits",
+      "wine",
+      "beer",
+      "liquor"
+    ],
+    "destination": "FJ",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "summary": "Duty-free from age 18: up to 3 L of spirits, or 4.5 L of wine, or 4.5 L of beer.",
+    "limits": {
+      "description": "Travellers aged 18 and over may bring duty-free up to 3 litres of spirits, or 4.5 litres of wine, or 4.5 litres of beer, or a combination not exceeding the total limit, as long as it travels with them and isn't for sale or for someone else. Anything over the allowance is subject to duty.",
+      "quantity": "3 L spirits or 4.5 L wine/beer"
+    },
+    "legal_source": {
+      "name": "Fiji Revenue and Customs Service — Arriving in Fiji (last updated 18 September 2025)",
+      "url": "https://frcs.org.fj/our-services/customs/travellers/visiting-fiji/arriving-in-fiji/"
+    },
+    "verified_at": "2026-10-25",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-fj",
+    "names": [
+      "cigarettes",
+      "tobacco",
+      "cigars",
+      "chewing tobacco"
+    ],
+    "destination": "FJ",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "summary": "Duty-free from age 18: 200 cigarettes or 200 g of cigars or tobacco. Chewing tobacco is prohibited.",
+    "limits": {
+      "description": "Travellers aged 18 and over may bring duty-free up to 200 cigarettes, or 200 g of cigars or tobacco, or a combination not exceeding 200 g, as long as it travels with them and isn't for sale or for someone else. Chewing tobacco is prohibited.",
+      "quantity": "200 cigarettes or 200 g"
+    },
+    "legal_source": {
+      "name": "Fiji Revenue and Customs Service — Arriving in Fiji (last updated 18 September 2025)",
+      "url": "https://frcs.org.fj/our-services/customs/travellers/visiting-fiji/arriving-in-fiji/"
+    },
+    "verified_at": "2026-10-25",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-fj",
+    "names": [
+      "e-cigarettes",
+      "vape",
+      "vapes",
+      "e-liquid",
+      "vape juice"
+    ],
+    "destination": "FJ",
+    "category": "e_cigarettes",
+    "verdict": "allowed_with_limits",
+    "summary": "Duty-free from age 18 within the tobacco allowance: e-cigarettes \"up to 200ml/mg\", as FRCS puts it.",
+    "limits": {
+      "description": "The duty-free tobacco allowance for travellers aged 18 and over lists e-cigarettes \"up to 200ml/mg\" (the page gives no clearer unit). They must travel with you and not be for sale or for someone else.",
+      "quantity": "up to 200ml/mg"
+    },
+    "legal_source": {
+      "name": "Fiji Revenue and Customs Service — Arriving in Fiji (last updated 18 September 2025)",
+      "url": "https://frcs.org.fj/our-services/customs/travellers/visiting-fiji/arriving-in-fiji/"
+    },
+    "verified_at": "2026-10-25",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-fj",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "fiji dollars",
+      "fjd",
+      "traveller's cheques",
+      "cheques"
+    ],
+    "destination": "FJ",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "summary": "Declare FJ$10,000 or more (or the foreign-currency equivalent, including negotiable instruments) on a Border Currency Reporting Form.",
+    "limits": {
+      "description": "If you carry FJ$10,000 or more, or the equivalent in foreign currency or negotiable instruments, you must declare it and complete a Border Currency Reporting Form.",
+      "quantity": "FJ$10,000"
+    },
+    "legal_source": {
+      "name": "Fiji Revenue and Customs Service — Arriving in Fiji (last updated 18 September 2025)",
+      "url": "https://frcs.org.fj/our-services/customs/travellers/visiting-fiji/arriving-in-fiji/"
+    },
+    "verified_at": "2026-10-25",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-fj",
+    "names": [
+      "prescription medication",
+      "medicine",
+      "medication",
+      "controlled medication",
+      "controlled substance"
+    ],
+    "destination": "FJ",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "summary": "Bring a doctor's prescription for prescription or controlled medicine, for your own use only.",
+    "limits": {
+      "description": "If you carry prescription or controlled drugs, bring a doctor's prescription, and make sure the medicine is for your personal use and medically necessary. The page sets no quantity limit."
+    },
+    "legal_source": {
+      "name": "Fiji Revenue and Customs Service — Arriving in Fiji (last updated 18 September 2025)",
+      "url": "https://frcs.org.fj/our-services/customs/travellers/visiting-fiji/arriving-in-fiji/"
+    },
+    "verified_at": "2026-10-25",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "letter": {
+      "items": [
+        "A doctor's prescription for each prescription or controlled medicine you carry"
+      ],
+      "source": {
+        "name": "Fiji Revenue and Customs Service — Arriving in Fiji (last updated 18 September 2025)",
+        "url": "https://frcs.org.fj/our-services/customs/travellers/visiting-fiji/arriving-in-fiji/"
+      },
+      "verified_at": "2026-10-25"
+    }
+  },
+  {
+    "slug": "food-fj",
+    "names": [
+      "food",
+      "fruit",
+      "vegetables",
+      "meat",
+      "dairy",
+      "eggs",
+      "honey",
+      "plants",
+      "seeds",
+      "biosecurity risk goods"
+    ],
+    "destination": "FJ",
+    "category": "food_plant",
+    "verdict": "declaration_required",
+    "summary": "Declare all food, animal and plant products to the Biosecurity Authority of Fiji, or put them in the amnesty bins.",
+    "limits": {
+      "description": "All biosecurity risk goods must be declared to the Biosecurity Authority of Fiji (BAF): food of any kind; animals and animal products such as fish, birds, eggs and honey; plants, fruit, seeds, flowers, wood and soil; used outdoor equipment such as camping gear, sports shoes and tools; and biological specimens. Undeclared items can be dropped in the Biosecurity Amnesty Bins at the border."
+    },
+    "notes": "Not declaring can bring a FJ$400 spot fine, or prosecution with a fine of up to FJ$20,000, six months' imprisonment, or both.",
+    "legal_source": {
+      "name": "Fiji Revenue and Customs Service — Arriving in Fiji (last updated 18 September 2025)",
+      "url": "https://frcs.org.fj/our-services/customs/travellers/visiting-fiji/arriving-in-fiji/"
+    },
+    "verified_at": "2026-10-25",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]
