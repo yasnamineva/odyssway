@@ -3782,3 +3782,10 @@ Sources: Fiji Ministry of Immigration — Visa exempted countries (list is in th
 ## Mauritius (2026-10-23/25)
 - Passport and Immigration Office "Visa Requirements" page (passport.govmu.org/passport/?page_id=605) + "Visa Requirement Country-wise" PDF (Visa-Requirement-Country-2025.pdf, created 2 Sep 2025): all 22 roster passports "No visa required". EU passports exempt from visa regulations.
 - PUBLISHED 2026-10-25 (22 rows) with no day count: the six-month calendar-year cap is stated only for the tourist VISA; for visa-free visitors the page says only that the Immigration Officer decides the stay. Applying the cap to exempt visitors would be inference. A tested `calendar_year` StayPolicy patch is saved (not merged) for when a source states such a cap for exempt visitors.
+
+## Zimbabwe (2026-10-25)
+Sources: Department of Immigration Zimbabwe — Category A (no visa), Category B (visa on arrival or eVisa), Category C (visa before travel) pages; Holiday Visa Requirements page (documents only).
+- 21 entry rows: SG MY Category A (visa-free); US GB CA AU NZ JP KR BR MX AR CL IL UA CN IN DE IT ES NL Category B (visa on arrival / eVisa). No stay length or fee stated on any official page → stayPolicy placeholder (stay "set at entry").
+- **Held: FR** — France isn't in any category (only French Polynesia and the French West Indies). Check the eVisa portal or MFA list.
+- Customs not researched (ZIMRA).
+- Bahrain (2026-10-25): evisa.gov.bh lists ~210 "on-arrival" and "online" countries, but says "terms and conditions apply, click the country name to check your eligibility" (a JS checker), omits the US and UK, and gives no stay lengths. Not publishable as is; needs the per-country eligibility text.
