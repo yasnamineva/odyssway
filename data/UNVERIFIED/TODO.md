@@ -3787,6 +3787,6 @@ Sources: Fiji Ministry of Immigration — Visa exempted countries (list is in th
 Sources: Department of Immigration Zimbabwe — Category A (no visa), Category B (visa on arrival or eVisa), Category C (visa before travel) pages; Holiday Visa Requirements page (documents only).
 - 21 entry rows: SG MY Category A (visa-free); US GB CA AU NZ JP KR BR MX AR CL IL UA CN IN DE IT ES NL Category B (visa on arrival / eVisa). No stay length or fee stated on any official page → stayPolicy placeholder (stay "set at entry").
 - **Held: FR** — France isn't in any category (only French Polynesia and the French West Indies). Check the eVisa portal or MFA list.
-- Customs not researched (ZIMRA).
+- Customs 2026-10-25: alcohol-zw from ZIMRA Traveller's Rebate (5 L, max 2 L spirits, 18+, within US$200, once a month). Tobacco: not in the rebate (dutiable) — no row. Cash: ZIMRA says import isn't restricted but asks for a Form 47 declaration; no threshold on a primary page — no row.
 - Bahrain (2026-10-25): evisa.gov.bh lists ~210 "on-arrival" and "online" countries, but says "terms and conditions apply, click the country name to check your eligibility" (a JS checker), omits the US and UK, and gives no stay lengths. Not publishable as is; needs the per-country eligibility text.
 - Guatemala (2026-10-25): category A/B/C country table is on minex.gob.gt (403 here) and an IGM news page (404); extranjeria.igm.gob.gt has only visa forms. Stay rule is CA-4 (IGM manual PDF). Retry for the table.

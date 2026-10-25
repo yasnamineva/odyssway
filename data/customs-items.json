@@ -17538,5 +17538,109 @@
     "verified_at": "2026-10-25",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "alcohol-zw",
+    "names": [
+      "alcohol",
+      "spirits",
+      "wine",
+      "beer",
+      "liquor"
+    ],
+    "destination": "ZW",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "summary": "Duty-free from age 18 within the US$200 rebate: up to 5 litres of alcohol, no more than 2 litres of it spirits. Declare it.",
+    "limits": {
+      "description": "Under the traveller's partial rebate, travellers aged 18 and over may bring up to 5 litres of alcoholic drinks, of which no more than 2 litres may be spirits, as part of goods worth up to US$200 for personal use. The rebate applies once a month, on your first entry into Zimbabwe in that calendar month, and only if the goods are properly declared and not for resale. Alcohol above 5 litres isn't covered by the rebate and is dutiable.",
+      "quantity": "5 L (max 2 L spirits)"
+    },
+    "notes": "Crew members of arriving aircraft or vehicles don't get the traveller's rebate.",
+    "legal_source": {
+      "name": "Zimbabwe Revenue Authority — Traveller's Rebate",
+      "url": "https://www.zimra.co.zw/customs/customs-rebates/traveler-s-rebate"
+    },
+    "verified_at": "2026-10-25",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-mu",
+    "names": [
+      "alcohol",
+      "spirits",
+      "wine",
+      "beer",
+      "ale",
+      "liquor",
+      "rum"
+    ],
+    "destination": "MU",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "summary": "Duty-free from age 18, one option only: 1 L spirits + 2 L wine/beer, or 2 L spirits, or 4 L wine/beer.",
+    "limits": {
+      "description": "Passengers aged 18 and over may bring alcohol and tobacco free of duty, excise duty and taxes. Choose ONE option: A) 250 g of tobacco (cigars and cigarettes included), 1 litre of spirits and 2 litres of wine, ale or beer; B) 250 g of tobacco and 2 litres of spirits, no wine or beer; C) 250 g of tobacco and 4 litres of wine, ale or beer, no spirits. Duty, excise duty and VAT are payable on anything above the allowance.",
+      "quantity": "1 L spirits + 2 L wine, or 2 L spirits, or 4 L wine"
+    },
+    "legal_source": {
+      "name": "Mauritius Revenue Authority — Customs: Allowances (alcohol and tobacco table in force from 1 September 2025)",
+      "url": "https://www.mra.mu/customs1/travellers/allowances"
+    },
+    "verified_at": "2026-10-25",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-mu",
+    "names": [
+      "cigarettes",
+      "tobacco",
+      "cigars"
+    ],
+    "destination": "MU",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "summary": "Duty-free from age 18: up to 250 g of tobacco, cigars and cigarettes included.",
+    "limits": {
+      "description": "Passengers aged 18 and over may bring up to 250 g of tobacco (including cigars and cigarettes) free of duty, excise duty and taxes, as part of one of the allowance options. Choose ONE option: A) 250 g of tobacco (cigars and cigarettes included), 1 litre of spirits and 2 litres of wine, ale or beer; B) 250 g of tobacco and 2 litres of spirits, no wine or beer; C) 250 g of tobacco and 4 litres of wine, ale or beer, no spirits. Duty, excise duty and VAT are payable on anything above the allowance.",
+      "quantity": "250 g"
+    },
+    "legal_source": {
+      "name": "Mauritius Revenue Authority — Customs: Allowances (alcohol and tobacco table in force from 1 September 2025)",
+      "url": "https://www.mra.mu/customs1/travellers/allowances"
+    },
+    "verified_at": "2026-10-25",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-mu",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "rupees",
+      "mur",
+      "traveller's cheques",
+      "gold",
+      "jewellery"
+    ],
+    "destination": "MU",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "summary": "No limit, but declare more than Rs 500,000 (or the equivalent) in cash, bearer instruments, gold, jewellery or other high-value goods.",
+    "limits": {
+      "description": "There's no limit on how much you can bring in or take out. Anyone entering, in transit or leaving Mauritius with more than Rs 500,000 (or its equivalent in foreign currency) in cash, bearer negotiable instruments, precious stones and metals including gold, diamonds and jewellery, or other high-value goods such as works of art, must declare it to Customs, online or on the Currency Declaration Form, stating where the money came from and what it's for.",
+      "quantity": "Rs 500,000"
+    },
+    "legal_source": {
+      "name": "Mauritius Revenue Authority — FAQs Travellers: How much cash can I bring into Mauritius?",
+      "url": "https://www.mra.mu/customs1/travellers/13-customs/159-faqs-travellers"
+    },
+    "verified_at": "2026-10-25",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]

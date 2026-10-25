@@ -82,7 +82,7 @@ South Africa, Nigeria, Poland, Portugal, Vietnam, Pakistan. Add one at a time, f
 ### 3.3 Customs depth
 
 - Customs rows for destinations that have none or very few: Mongolia, Seychelles medicine,
-  Zimbabwe (ZIMRA), Mauritius.
+  Zimbabwe tobacco and cash (ZIMRA gives no primary threshold), Mauritius medicine.
 - **Second vertical after medication**, chosen from data (§5): CBD and cannabis, food,
   nicotine and vapes, or drones. Go deep on one before starting the next.
 
