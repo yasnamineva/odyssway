@@ -229,11 +229,17 @@ export default async function HomePage() {
               href="/calculator"
             />
           </div>
-          <ul className="mt-6 grid gap-3 sm:grid-cols-2" data-testid="home-more-tools">
-            {(["medicationPlanner", "dayCounter"] as const).map((key) => (
+          <ul className="mt-6 grid gap-3 sm:grid-cols-3" data-testid="home-more-tools">
+            {(
+              [
+                ["medicationPlanner", "/medication-planner"],
+                ["whichPassport", "/which-passport"],
+                ["dayCounter", "/day-counter"],
+              ] as const
+            ).map(([key, href]) => (
               <li key={key}>
                 <a
-                  href={key === "medicationPlanner" ? "/medication-planner" : "/day-counter"}
+                  href={href}
                   className="block rounded-xl border border-slate-300/80 bg-white px-4 py-3 hover:border-slate-500"
                 >
                   <span className="flex items-center gap-1 text-sm font-semibold text-slate-900">

@@ -515,6 +515,10 @@
         "title": "Medication planner",
         "body": "Every medicine on every stop of your trip, with the permits you need and the date to apply by."
       },
+      "whichPassport": {
+        "title": "Which passport?",
+        "body": "For dual citizens: both passports' entry rules for one destination, side by side."
+      },
       "dayCounter": {
         "title": "Day counter",
         "body": "All your trips on one list, each country checked against its own stay limit."
@@ -730,6 +734,30 @@
     "sourceLabel": "Source: European Commission, User Manual for the Short-Stay Schengen Calculator",
     "lastVerified": "Rules checked against the official sources linked above on {date}."
   },
+  "whichPassport": {
+    "metaTitle": "Dual Citizens: Which Passport Should I Use? Compare Entry Rules",
+    "metaDescription": "Pick a destination and your two passports to compare entry requirements, stay limits and documents side by side, each from the official source.",
+    "title": "Which passport should I use?",
+    "subtitle": "For dual citizens: pick your two passports and where you're going. You'll see each passport's verified entry rule, stay limit and documents side by side.",
+    "passportA": "First passport",
+    "passportB": "Second passport",
+    "destination": "Going to",
+    "samePassport": "Pick two different passports to compare.",
+    "fewer": {
+      "requirement": "Your {passport} passport has fewer entry requirements for {destination}.",
+      "stay": "Your {passport} passport allows a longer stay in {destination} under the same kind of rule.",
+      "same": "Both passports have the same entry rule for {destination}. Compare the documents below.",
+      "compare": "The two rules work differently for {destination}, so we can't rank them. Compare the details below."
+    },
+    "columnHeading": "With your {passport} passport",
+    "stay": "How long you can stay",
+    "documents": "What you need",
+    "freeMovement": "Free movement: the 90/180 short-stay rule doesn't apply to you.",
+    "notCovered": "We haven't verified this passport for this destination yet.",
+    "sameDocument": "Going to Europe? Which passport you show at the EU border decides whether the EES and the 90/180 count apply to you.",
+    "guideLink": "Dual citizens: which passport for Schengen and the EES →",
+    "disclaimer": "A comparison of verified rules, not advice on which nationality to use. Some countries have their own rules for their citizens; check with the official source if you're unsure."
+  },
   "medicationPlanner": {
     "metaTitle": "Medication Travel Planner: Rules, Permits and Deadlines by Country",
     "metaDescription": "Add your medicines and your route: see each country's verified rule, the permits you need, the date to apply by, and what your doctor's letter must say.",
@@ -818,6 +846,7 @@
     "medicines": "Medicines by name",
     "dayCounter": "Day counter",
     "medicationPlanner": "Medication planner",
+    "whichPassport": "Which passport?",
     "widget": "Embed the calculator",
     "developers": "API",
     "trustpilot": "Review us on Trustpilot"

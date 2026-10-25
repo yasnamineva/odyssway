@@ -139,6 +139,9 @@ export default async function RootLayout({
                     <a href="/medication-planner" className="text-white/60 transition hover:text-white">
                       {t("footer.medicationPlanner")}
                     </a>
+                    <a href="/which-passport" className="text-white/60 transition hover:text-white">
+                      {t("footer.whichPassport")}
+                    </a>
                     <a href="/faq" className="text-white/60 transition hover:text-white">
                       {t("footer.faq")}
                     </a>

@@ -369,7 +369,7 @@ test("doctor's letter checklist lists only what the rule asks for, and ticks off
 
 test("the homepage links new tools and recently added destinations; the changelog has an RSS feed", async ({ page, request }) => {
   await page.goto("/");
-  await expect(page.getByTestId("home-more-tools").getByRole("link")).toHaveCount(2);
+  await expect(page.getByTestId("home-more-tools").getByRole("link")).toHaveCount(3);
   await expect(page.getByTestId("home-recent").getByRole("link").first()).toBeVisible();
   const feed = await request.get("/changelog.xml");
   expect(feed.status()).toBe(200);
@@ -377,4 +377,17 @@ test("the homepage links new tools and recently added destinations; the changelo
   expect(await feed.text()).toContain("<item>");
   await page.goto("/changelog");
   await expect(page.getByTestId("changelog-feed")).toHaveAttribute("href", "/changelog.xml");
+});
+
+test("which passport: compares two passports for one destination", async ({ page }) => {
+  await page.goto("/which-passport");
+  const pick = async (id: string, q: string, o: string) => {
+    await page.getByTestId(id).fill(q);
+    await page.getByRole("option", { name: o, exact: true }).click();
+  };
+  await pick("wp-a", "India", "India");
+  await pick("wp-b", "United Kingdom", "United Kingdom");
+  await pick("wp-dest", "Uzbekistan", "Uzbekistan");
+  await expect(page.getByTestId("wp-column")).toHaveCount(2);
+  await expect(page.getByTestId("wp-verdict")).toContainText("United Kingdom passport has fewer entry requirements");
 });

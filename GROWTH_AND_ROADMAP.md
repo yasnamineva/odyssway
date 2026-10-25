@@ -44,19 +44,15 @@ Japan?"). They are weak in five places, and each one is a direction for us:
 Tools are the part AI answers can't copy: they compute from the user's own dates and
 items, deterministically, from verified rows. In priority order:
 
-1. **Rule-change feeds, no account needed.** An RSS/Atom feed per destination and per item
-   category, generated from `changelog.json` at build time. People subscribe in their own
-   reader or email-to-RSS service; we store nothing. This is retention without accounts.
-2. **"Which passport should I use?" for dual citizens.** Pick two passports and a
-   destination; see both rows side by side (entry, stay, documents, passport validity).
-   Dual citizens are a named target audience (AGENTS.md §1) and nobody serves this well.
-3. **Shareable Trip Check links.** Encode the route and items in the URL (as the calculator
+1. **Per-country rule-change feeds.** The site-wide feed is live (`/changelog.xml`). Per-country
+   feeds need per-row change history (today the changelog is per commit and dataset).
+2. **Shareable Trip Check links.** Encode the route and items in the URL (as the calculator
    already does) so a result can be sent to a travel partner, a doctor or a study-abroad
    office. No server storage.
-4. **Whole-trip "before you go" pack.** One printable page per trip: entry requirement and
+3. **Whole-trip "before you go" pack.** One printable page per trip: entry requirement and
    documents per stop, passport check, item verdicts, letters and permits, all with
    sources and check dates. Built in the browser like the existing PDF export.
-5. **Calendar-year stay rule.** The engine type is written and tested (patch saved during
+4. **Calendar-year stay rule.** The engine type is written and tested (patch saved during
    the Mauritius work). Merge it the first time an official source states a
    calendar-year cap for visa-free visitors.
 
@@ -158,9 +154,8 @@ nothing, and it rises on its own as a page reaches the top 10.
   weights literal matches more than Google. Owner decision pending.
 - **Internal links:** every destination hub links its top item pages and named medicines;
   every pair page links the same passport's neighbouring destinations; no orphan pages.
-- **Homepage as a link source.** Add "Recently added" (newest destinations and tools,
-  generated from the data so it never needs hand edits) and "Most-checked" sections, so
-  new pages get links from the strongest page on the site the day they launch.
+- **Homepage as a link source.** "Recently added" and the tools row are live; new
+  tools go into the tools row the day they launch.
 - **Structured data:** FAQ on pair and medication pages (done for some), HowTo on every
   permit procedure, Dataset on `/developers`. Add `sameAs` to Organization once the
   brand profiles exist.
@@ -220,9 +215,8 @@ more than a Japanese page about the US). Translate the highest-traffic page type
 
 ### Horizon 1: now to 3 months. Prove the medication wedge.
 
-- Ship the rule-change feeds (§2.1); launch the medication planner on Product Hunt.
-- Build the homepage "Recently added" section (§5.2) and run the first monthly ranking
-  routine (§5.1) as soon as there's a Search Console export.
+- Launch the medication planner on Product Hunt.
+- Run the first monthly ranking routine (§5.1) as soon as there's a Search Console export.
 - More structured lead times: only 11 permits state a lead time with a number and a reference date; others (India, Saudi Arabia, Hong Kong, Cyprus, Jamaica) need their sources re-read.
 - Customs depth for the newest destinations; medication rows wherever an official
   traveller rule exists.
