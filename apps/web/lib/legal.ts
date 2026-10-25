@@ -13,4 +13,4 @@ export const OPERATOR = {
 
 /** Date the current Privacy Policy and Terms took effect (ISO). Bump it,
  * and say what changed, whenever either document changes. */
-export const LEGAL_UPDATED = "2026-10-15";
+export const LEGAL_UPDATED = "2026-10-26";

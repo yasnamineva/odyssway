@@ -265,3 +265,13 @@ test("checks the passport against each stop's own rule across a route", async ({
   await expect(results.nth(1)).toContainText("2027-05-12");
   await expect(page.getByTestId("tc-route-passport-summary")).toContainText("Egypt");
 });
+
+test("a shared link reopens the same multi-stop result with its items", async ({ page }) => {
+  await page.goto("/trip-check#n=US&d=JP&l=TH&i=adderall");
+  await expect(page.getByTestId("tc-route-summary")).toBeVisible();
+  await expect(page.getByTestId("tc-route-summary")).toContainText("Japan");
+  await expect(page.getByTestId("tc-route-summary")).toContainText("Thailand");
+  await expect(page.getByTestId("tc-route-cell")).toHaveCount(2);
+  await page.getByTestId("tc-share").first().click();
+  await expect(page).toHaveURL(/#n=US&d=JP&l=TH&i=adderall$/);
+});

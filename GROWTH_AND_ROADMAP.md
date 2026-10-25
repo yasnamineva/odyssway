@@ -46,13 +46,10 @@ items, deterministically, from verified rows. In priority order:
 
 1. **Per-country rule-change feeds.** The site-wide feed is live (`/changelog.xml`). Per-country
    feeds need per-row change history (today the changelog is per commit and dataset).
-2. **Shareable Trip Check links.** Encode the route and items in the URL (as the calculator
-   already does) so a result can be sent to a travel partner, a doctor or a study-abroad
-   office. No server storage.
-3. **Whole-trip "before you go" pack.** One printable page per trip: entry requirement and
+2. **Whole-trip "before you go" pack.** One printable page per trip: entry requirement and
    documents per stop, passport check, item verdicts, letters and permits, all with
    sources and check dates. Built in the browser like the existing PDF export.
-4. **Calendar-year stay rule.** The engine type is written and tested (patch saved during
+3. **Calendar-year stay rule.** The engine type is written and tested (patch saved during
    the Mauritius work). Merge it the first time an official source states a
    calendar-year cap for visa-free visitors.
 

@@ -15,6 +15,7 @@ import { publishedNationalities } from "../lib/nationalities";
 import SearchableSelect from "./SearchableSelect";
 import { resolveMapDestinationCode, SCHENGEN_DESTINATION } from "../lib/schengen-sentinel";
 import type { EntryBasis, TripCheckResult } from "../lib/trip-check";
+import { decodeTripShare, encodeTripShare } from "../lib/trip-share";
 
 /** The map bundles real country geometry (~100KB) — load it only once it's needed. */
 const WorldMap = dynamic(() => import("./WorldMap"), {
@@ -105,6 +106,18 @@ export default function TripCheck({
   // resolved with the same passport and items, one verdict per border.
   const [extraLegs, setExtraLegs] = useState<string[]>([]);
   const [submitted, setSubmitted] = useState(Boolean(initialNationality && initialDestination));
+
+  // A shared link (#n=…&d=…) restores the whole trip and shows the result.
+  useEffect(() => {
+    const shared = decodeTripShare(window.location.hash);
+    if (!shared) return;
+    setNationality(shared.nationality);
+    setDestination(shared.destination);
+    setExtraLegs(shared.legs);
+    setTransit(shared.transit);
+    setItems(shared.items);
+    setSubmitted(true);
+  }, []);
 
   // Every verified synonym for the chosen destination's customs items — the
   // pool suggestions are filtered from as the user types. Free text is still
@@ -477,6 +490,9 @@ export default function TripCheck({
           </div>
           {result && legResults.length > 1 && (
             <div id="tc-result" className="order-1 scroll-mt-4 lg:order-2">
+              <ShareTripLink
+                state={{ nationality, destination, legs: extraLegs, transit, items }}
+              />
               <RouteSummary legs={legResults} items={items} />
               <RoutePassportCheck legs={legResults} />
               {legResults.map((leg, i) => (
@@ -495,6 +511,9 @@ export default function TripCheck({
           )}
           {result && legResults.length <= 1 && (
             <div id="tc-result" className="order-1 scroll-mt-4 lg:order-2">
+              <ShareTripLink
+                state={{ nationality, destination, legs: extraLegs, transit, items }}
+              />
               <TripCheckResults
                 result={result}
                 originName={originLabel ?? nationality}
@@ -801,5 +820,36 @@ function TripCheckResults({
         )}
       </div>
     </>
+  );
+}
+
+/** Copies a link that reopens this exact result. The trip is in the URL fragment, never sent to a server. */
+function ShareTripLink({ state }: { state: Parameters<typeof encodeTripShare>[0] }) {
+  const t = useTranslations("tripCheck");
+  const [copied, setCopied] = useState(false);
+  const copy = async () => {
+    const hash = encodeTripShare(state);
+    const url = `${window.location.origin}${window.location.pathname}#${hash}`;
+    window.history.replaceState(null, "", `#${hash}`);
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    } catch {
+      // Clipboard blocked: the address bar now holds the link, which can be copied by hand.
+    }
+  };
+  return (
+    <div className="mt-6 flex flex-wrap items-center justify-end gap-2 text-xs">
+      <span className="text-slate-500">{t("shareHint")}</span>
+      <button
+        type="button"
+        data-testid="tc-share"
+        onClick={() => void copy()}
+        className="rounded-lg border border-slate-300 px-3 py-1.5 font-semibold text-slate-700 hover:bg-slate-50"
+      >
+        {copied ? t("shareCopied") : t("shareCopy")}
+      </button>
+    </div>
   );
 }
