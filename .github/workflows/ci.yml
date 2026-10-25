@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history: the changelog is derived from git (AGENTS.md §7).
+          fetch-depth: 0
       - uses: pnpm/action-setup@v4
         with:
           version: 10
@@ -24,6 +27,13 @@ jobs:
         run: pnpm test
       - name: Data validation (Accuracy Policy gate)
         run: pnpm validate:data
+      - name: Changelog is up to date with the data commits
+        run: |
+          pnpm generate:changelog
+          git diff --exit-code data/changelog.json data/destination-history.json || {
+            echo "::error::data/changelog.json is stale. Run 'pnpm generate:changelog' and commit it before pushing."
+            exit 1
+          }
       - name: Build web app
         run: pnpm build
       - name: Install Playwright browser

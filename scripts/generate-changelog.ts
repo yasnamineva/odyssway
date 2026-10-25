@@ -17,6 +17,8 @@ import { join } from "node:path";
 
 const ROOT = join(import.meta.dirname, "..");
 const OUTPUT = join(ROOT, "data", "changelog.json");
+/** When each destination first appeared in destinations.json — feeds the homepage "Recently added". */
+const HISTORY_OUTPUT = join(ROOT, "data", "destination-history.json");
 
 /** Production rule-data files (bookkeeping files like source-hashes are not rules). */
 const DATA_FILES = [
@@ -111,7 +113,26 @@ function generate(): ChangelogEntry[] {
   return entries;
 }
 
+/** First commit date at which each destination code appears in destinations.json. */
+function destinationHistory(): Record<string, string> {
+  const current = JSON.parse(readFileSync(join(ROOT, "data", "destinations.json"), "utf8")) as Array<{ code: string }>;
+  const out: Record<string, string> = {};
+  for (const { code } of current) {
+    const dates = git(["log", "--reverse", "--format=%cs", "-S", `"code": "${code}"`, "--", "data/destinations.json"])
+      .split("\n")
+      .filter(Boolean);
+    if (dates[0]) out[code] = dates[0];
+  }
+  return out;
+}
+
 try {
+  // A shallow clone (Vercel, default CI checkouts) only sees the last few
+  // commits: regenerating there would publish a truncated history.
+  if (git(["rev-parse", "--is-shallow-repository"]).trim() === "true") {
+    throw new Error("shallow clone");
+  }
+  writeFileSync(HISTORY_OUTPUT, `${JSON.stringify(destinationHistory(), null, 2)}\n`);
   const entries = generate();
   if (entries.length === 0) {
     throw new Error("git produced no entries (shallow clone?)");

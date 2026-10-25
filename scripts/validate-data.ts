@@ -51,7 +51,7 @@ function rel(path: string): string {
 }
 
 /** Non-rule bookkeeping files that carry no legal content. */
-const NON_RULE_FILES = new Set(["source-hashes.json", "changelog.json"]);
+const NON_RULE_FILES = new Set(["source-hashes.json", "changelog.json", "destination-history.json"]);
 
 function jsonFilesIn(dir: string): string[] {
   try {

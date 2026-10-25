@@ -19,7 +19,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: t("title"),
     description: t("description"),
-    alternates: { canonical: "/changelog" },
+    alternates: { canonical: "/changelog", types: { "application/rss+xml": "/changelog.xml" } },
   };
 }
 
@@ -35,6 +35,11 @@ export default async function ChangelogPage() {
       <header>
         <h1 className="text-2xl font-bold tracking-tight text-slate-900">{t("h1")}</h1>
         <p className="mt-2 text-sm leading-relaxed text-slate-600">{t("intro")}</p>
+        <p className="mt-2 text-sm">
+          <a href="/changelog.xml" className="font-semibold text-brand-700 underline underline-offset-2" data-testid="changelog-feed">
+            {t("feed")}
+          </a>
+        </p>
       </header>
 
       <ol className="space-y-4">

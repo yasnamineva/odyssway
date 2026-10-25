@@ -1,6 +1,8 @@
 import { schemas, type CustomsItemRecord, type EntryRequirementRecord } from "@odyssway/engine";
 import rawCustomsItems from "../../../data/customs-items.json";
 import rawEntryRequirements from "../../../data/entry-requirements.json";
+import destinationHistory from "../../../data/destination-history.json";
+import { destinations } from "./destination-index";
 
 export {
   EU_CUSTOMS_CODE,
@@ -32,3 +34,18 @@ export const customsItems: CustomsItemRecord[] =
 export const coveredDestinationCount = new Set(
   entryRequirements.filter((r) => r.status === "verified").map((r) => r.destination),
 ).size;
+
+/**
+ * The newest destinations, by the date each first appeared in destinations.json
+ * (derived from git by scripts/generate-changelog.ts, never hand-edited). Only
+ * destinations with verified entry rows are listed, so a stub never shows.
+ */
+export function recentlyAddedDestinations(count: number): Array<{ code: string; name: string; added: string }> {
+  const history = destinationHistory as Record<string, string>;
+  const covered = new Set(entryRequirements.filter((r) => r.status === "verified").map((r) => r.destination));
+  return destinations
+    .filter((d) => d.status === "verified" && covered.has(d.code) && history[d.code])
+    .map((d) => ({ code: d.code, name: d.name, added: history[d.code]! }))
+    .sort((a, b) => (a.added === b.added ? a.name.localeCompare(b.name) : b.added.localeCompare(a.added)))
+    .slice(0, count);
+}

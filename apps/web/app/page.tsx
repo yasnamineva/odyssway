@@ -15,7 +15,14 @@ import { blogPostsByDate } from "../lib/blog";
 import { medicationProducts } from "../lib/medication-products";
 import { photos } from "../lib/photos";
 import { schengenCountries } from "../lib/countries";
-import { coveredDestinationCount, destinations, entryRequirements, queuedDestinations } from "../lib/destinations";
+import {
+  coveredDestinationCount,
+  destinations,
+  entryRequirements,
+  queuedDestinations,
+  destinationPath,
+  recentlyAddedDestinations,
+} from "../lib/destinations";
 import { publishedNationalities } from "../lib/nationalities";
 import { SITE_URL } from "../lib/site";
 import heroImage from "../public/images/background.jpg";
@@ -222,6 +229,42 @@ export default async function HomePage() {
               href="/calculator"
             />
           </div>
+          <ul className="mt-6 grid gap-3 sm:grid-cols-2" data-testid="home-more-tools">
+            {(["medicationPlanner", "dayCounter"] as const).map((key) => (
+              <li key={key}>
+                <a
+                  href={key === "medicationPlanner" ? "/medication-planner" : "/day-counter"}
+                  className="block rounded-xl border border-slate-300/80 bg-white px-4 py-3 hover:border-slate-500"
+                >
+                  <span className="flex items-center gap-1 text-sm font-semibold text-slate-900">
+                    {t(`home.moreTools.${key}.title`)} <ArrowRightIcon className="h-3 w-3" />
+                  </span>
+                  <span className="mt-1 block text-sm text-slate-600">{t(`home.moreTools.${key}.body`)}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </Reveal>
+
+      <Reveal className="mt-20 sm:mt-28">
+        <section data-testid="home-recent">
+          <SectionHeader kicker={t("home.recent.eyebrow")} heading={t("home.recent.heading")} sub={t("home.recent.sub")} />
+          <ul className="mt-6 grid gap-x-8 border-y border-slate-300/80 sm:grid-cols-2">
+            {recentlyAddedDestinations(8).map((d) => (
+              <li key={d.code} className="border-b border-slate-200 last:border-b-0 sm:[&:nth-last-child(2):nth-child(odd)]:border-b-0">
+                <a href={destinationPath(d)} className="flex items-baseline justify-between gap-4 py-3">
+                  <span className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-2">{d.name}</span>
+                  <span className="text-xs text-slate-500 tabular-nums">{t("home.recent.added", { date: d.added })}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-4 text-sm">
+            <a href="/changelog" className="font-semibold text-slate-900 underline underline-offset-4">
+              {t("home.recent.changelog")}
+            </a>
+          </p>
         </section>
       </Reveal>
 

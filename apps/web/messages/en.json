@@ -171,6 +171,7 @@
   "changelogPage": {
     "h1": "Verification changelog",
     "intro": "Every change to the rule data behind this site, newest first — what changed, when it was verified against official sources, and by whom. This log is generated automatically from our version history; it cannot be edited by hand.",
+    "feed": "Follow changes in your feed reader (RSS) →",
     "verifiedLine": "Checked against official sources {date} · verified by {by}",
     "noStamp": "No verification stamp recorded for this revision",
     "footer": "Badges can be faked; a consistent public update history can't. If you find an error, the fastest fix is pointing us at the official source that contradicts us."
@@ -508,7 +509,24 @@
       ]
     },
     "toolsEyebrow": "How Odyssway helps",
-    "toolsHeading": "Two tools, two different jobs",
+    "toolsHeading": "Tools for every border question",
+    "moreTools": {
+      "medicationPlanner": {
+        "title": "Medication planner",
+        "body": "Every medicine on every stop of your trip, with the permits you need and the date to apply by."
+      },
+      "dayCounter": {
+        "title": "Day counter",
+        "body": "All your trips on one list, each country checked against its own stay limit."
+      }
+    },
+    "recent": {
+      "eyebrow": "Recently added",
+      "heading": "New on Odyssway",
+      "sub": "The newest countries we've verified, with every rule cited to an official source.",
+      "added": "Added {date}",
+      "changelog": "See every change in the update history →"
+    },
     "tools": {
       "tripCheck": {
         "title": "Trip Check",

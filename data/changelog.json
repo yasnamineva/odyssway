@@ -1,5 +1,575 @@
 [
   {
+    "commit": "0c14cd1a038a5e9297aa6a4b9adda943b54272a5",
+    "date": "2026-10-25",
+    "dataset": "customs-items",
+    "summary": "Medication travel planner, with permit 'apply by' dates",
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
+      "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
+    }
+  },
+  {
+    "commit": "eee833ca1adf3c5bd3a072a9ff53a4b2ef2ccf7f",
+    "date": "2026-10-25",
+    "dataset": "destinations",
+    "summary": "Add Mauritius: 22 entry rows; day counter: unstated stays aren't 'no limit'",
+    "verified_at": "2026-10-25",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Passport and Immigration Office, Mauritius — Visa Requirements, with the Visa Requirement Country-wise list (2025)",
+      "url": "https://passport.govmu.org/passport/?page_id=605"
+    }
+  },
+  {
+    "commit": "eee833ca1adf3c5bd3a072a9ff53a4b2ef2ccf7f",
+    "date": "2026-10-25",
+    "dataset": "entry-requirements",
+    "summary": "Add Mauritius: 22 entry rows; day counter: unstated stays aren't 'no limit'",
+    "verified_at": null,
+    "verified_by": null,
+    "source": null
+  },
+  {
+    "commit": "f79bdc337f985a8a02d1cb32f7e8812c89f669ef",
+    "date": "2026-10-24",
+    "dataset": "destinations",
+    "summary": "Add Fiji: 22 entry rows",
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministry of Foreign Affairs of Uzbekistan — Visa of the Republic of Uzbekistan (visa-free list; Appendix 1, e-visa countries; Appendix 2, five-day transit)",
+      "url": "https://gov.uz/en/mfa/activity_page/o-zbekiston-respublikasi-vizasi"
+    }
+  },
+  {
+    "commit": "f79bdc337f985a8a02d1cb32f7e8812c89f669ef",
+    "date": "2026-10-24",
+    "dataset": "entry-requirements",
+    "summary": "Add Fiji: 22 entry rows",
+    "verified_at": null,
+    "verified_by": null,
+    "source": null
+  },
+  {
+    "commit": "a63ab2e00143c7bb4c1b00abea3ff9ceeaa8d2b5",
+    "date": "2026-10-23",
+    "dataset": "customs-items",
+    "summary": "Zambia customs: alcohol and tobacco rows",
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
+      "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
+    }
+  },
+  {
+    "commit": "e00efdc7bafb2a4070e9394c544f4340f83a1b73",
+    "date": "2026-10-23",
+    "dataset": "destinations",
+    "summary": "Add Zambia: 22 entry rows",
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministry of Foreign Affairs of Uzbekistan — Visa of the Republic of Uzbekistan (visa-free list; Appendix 1, e-visa countries; Appendix 2, five-day transit)",
+      "url": "https://gov.uz/en/mfa/activity_page/o-zbekiston-respublikasi-vizasi"
+    }
+  },
+  {
+    "commit": "e00efdc7bafb2a4070e9394c544f4340f83a1b73",
+    "date": "2026-10-23",
+    "dataset": "entry-requirements",
+    "summary": "Add Zambia: 22 entry rows",
+    "verified_at": null,
+    "verified_by": null,
+    "source": null
+  },
+  {
+    "commit": "32f184c51468213849d4ad977e8ec851b91bb6da",
+    "date": "2026-10-23",
+    "dataset": "customs-items",
+    "summary": "Add Ghana: 22 entry rows, 2 customs rows",
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
+      "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
+    }
+  },
+  {
+    "commit": "32f184c51468213849d4ad977e8ec851b91bb6da",
+    "date": "2026-10-23",
+    "dataset": "destinations",
+    "summary": "Add Ghana: 22 entry rows, 2 customs rows",
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministry of Foreign Affairs of Uzbekistan — Visa of the Republic of Uzbekistan (visa-free list; Appendix 1, e-visa countries; Appendix 2, five-day transit)",
+      "url": "https://gov.uz/en/mfa/activity_page/o-zbekiston-respublikasi-vizasi"
+    }
+  },
+  {
+    "commit": "32f184c51468213849d4ad977e8ec851b91bb6da",
+    "date": "2026-10-23",
+    "dataset": "entry-requirements",
+    "summary": "Add Ghana: 22 entry rows, 2 customs rows",
+    "verified_at": null,
+    "verified_by": null,
+    "source": null
+  },
+  {
+    "commit": "d3e6750740d3b7092bb09e034e293d9eb49684f7",
+    "date": "2026-10-23",
+    "dataset": "customs-items",
+    "summary": "Uzbekistan medicine and Seychelles customs: 5 rows",
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
+      "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
+    }
+  },
+  {
+    "commit": "e30e67fecb906ee12262186fa02b47d56a30e822",
+    "date": "2026-10-23",
+    "dataset": "destinations",
+    "summary": "Add Seychelles: 22 entry rows",
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministry of Foreign Affairs of Uzbekistan — Visa of the Republic of Uzbekistan (visa-free list; Appendix 1, e-visa countries; Appendix 2, five-day transit)",
+      "url": "https://gov.uz/en/mfa/activity_page/o-zbekiston-respublikasi-vizasi"
+    }
+  },
+  {
+    "commit": "e30e67fecb906ee12262186fa02b47d56a30e822",
+    "date": "2026-10-23",
+    "dataset": "entry-requirements",
+    "summary": "Add Seychelles: 22 entry rows",
+    "verified_at": null,
+    "verified_by": null,
+    "source": null
+  },
+  {
+    "commit": "898966c8d76eb8be0f8a54b88e5ee5d6af71bb62",
+    "date": "2026-10-23",
+    "dataset": "customs-items",
+    "summary": "Macao customs: cash declaration row",
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
+      "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
+    }
+  },
+  {
+    "commit": "d0cc4f8f92ef58fb15170104d084beb2c53fe83c",
+    "date": "2026-10-23",
+    "dataset": "destinations",
+    "summary": "Add Macao: 21 entry rows",
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministry of Foreign Affairs of Uzbekistan — Visa of the Republic of Uzbekistan (visa-free list; Appendix 1, e-visa countries; Appendix 2, five-day transit)",
+      "url": "https://gov.uz/en/mfa/activity_page/o-zbekiston-respublikasi-vizasi"
+    }
+  },
+  {
+    "commit": "d0cc4f8f92ef58fb15170104d084beb2c53fe83c",
+    "date": "2026-10-23",
+    "dataset": "entry-requirements",
+    "summary": "Add Macao: 21 entry rows",
+    "verified_at": null,
+    "verified_by": null,
+    "source": null
+  },
+  {
+    "commit": "204441a51212353c845c1ab18bc07bff4dd4e8bd",
+    "date": "2026-10-23",
+    "dataset": "customs-items",
+    "summary": "Bosnia and Herzegovina customs: 6 rows",
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
+      "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
+    }
+  },
+  {
+    "commit": "6b9becefe0e84a490becc60ee7ebe02cee09ce78",
+    "date": "2026-10-23",
+    "dataset": "destinations",
+    "summary": "Add Bosnia and Herzegovina: 22 entry rows",
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministry of Foreign Affairs of Uzbekistan — Visa of the Republic of Uzbekistan (visa-free list; Appendix 1, e-visa countries; Appendix 2, five-day transit)",
+      "url": "https://gov.uz/en/mfa/activity_page/o-zbekiston-respublikasi-vizasi"
+    }
+  },
+  {
+    "commit": "6b9becefe0e84a490becc60ee7ebe02cee09ce78",
+    "date": "2026-10-23",
+    "dataset": "entry-requirements",
+    "summary": "Add Bosnia and Herzegovina: 22 entry rows",
+    "verified_at": null,
+    "verified_by": null,
+    "source": null
+  },
+  {
+    "commit": "eebe853794c94fabdd8d545db20d620a2382a7b8",
+    "date": "2026-10-23",
+    "dataset": "destinations",
+    "summary": "Add Uzbekistan: 20 entry rows",
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministry of Foreign Affairs of Uzbekistan — Visa of the Republic of Uzbekistan (visa-free list; Appendix 1, e-visa countries; Appendix 2, five-day transit)",
+      "url": "https://gov.uz/en/mfa/activity_page/o-zbekiston-respublikasi-vizasi"
+    }
+  },
+  {
+    "commit": "eebe853794c94fabdd8d545db20d620a2382a7b8",
+    "date": "2026-10-23",
+    "dataset": "entry-requirements",
+    "summary": "Add Uzbekistan: 20 entry rows",
+    "verified_at": null,
+    "verified_by": null,
+    "source": null
+  },
+  {
+    "commit": "6ae72f79cf576d0c4a80e465a091925c366cb796",
+    "date": "2026-10-22",
+    "dataset": "customs-items",
+    "summary": "Doctor's letter checklist: 14 more rows",
+    "verified_at": "2026-10-21",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Dirección Nacional de Aduanas — Traveller baggage sworn declaration form (2016)",
+      "url": "https://www.aduanas.gub.uy/innovaportal/file/16133/1/declaracion_jurada_equipaje_08042016-002.pdf"
+    }
+  },
+  {
+    "commit": "8de1528fce57905cd76a7fa1de45476c0fe56abe",
+    "date": "2026-10-22",
+    "dataset": "customs-items",
+    "summary": "Doctor's letter checklist on medication rows",
+    "verified_at": "2026-10-21",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Dirección Nacional de Aduanas — Traveller baggage sworn declaration form (2016)",
+      "url": "https://www.aduanas.gub.uy/innovaportal/file/16133/1/declaracion_jurada_equipaje_08042016-002.pdf"
+    }
+  },
+  {
+    "commit": "e44a18aebe3503bbb6851ee07371f1d3518e5fba",
+    "date": "2026-10-21",
+    "dataset": "destinations",
+    "summary": "Add Mongolia: 21 entry rows",
+    "verified_at": "2026-10-21",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministerio del Interior (Dirección Nacional de Migración) — Régimen de visas de admisión (published 19/08/2025)",
+      "url": "https://www.gub.uy/ministerio-interior/comunicacion/publicaciones/regimen-visas-admision"
+    }
+  },
+  {
+    "commit": "e44a18aebe3503bbb6851ee07371f1d3518e5fba",
+    "date": "2026-10-21",
+    "dataset": "entry-requirements",
+    "summary": "Add Mongolia: 21 entry rows",
+    "verified_at": null,
+    "verified_by": null,
+    "source": null
+  },
+  {
+    "commit": "626ed268bcef1c2a6ff5e7d6a270682a09da6d30",
+    "date": "2026-10-21",
+    "dataset": "customs-items",
+    "summary": "Add Uruguay: 22 entry rows and 6 customs rows",
+    "verified_at": "2026-10-21",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Dirección Nacional de Aduanas — Traveller baggage sworn declaration form (2016)",
+      "url": "https://www.aduanas.gub.uy/innovaportal/file/16133/1/declaracion_jurada_equipaje_08042016-002.pdf"
+    }
+  },
+  {
+    "commit": "626ed268bcef1c2a6ff5e7d6a270682a09da6d30",
+    "date": "2026-10-21",
+    "dataset": "destinations",
+    "summary": "Add Uruguay: 22 entry rows and 6 customs rows",
+    "verified_at": "2026-10-21",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministerio del Interior (Dirección Nacional de Migración) — Régimen de visas de admisión (published 19/08/2025)",
+      "url": "https://www.gub.uy/ministerio-interior/comunicacion/publicaciones/regimen-visas-admision"
+    }
+  },
+  {
+    "commit": "626ed268bcef1c2a6ff5e7d6a270682a09da6d30",
+    "date": "2026-10-21",
+    "dataset": "entry-requirements",
+    "summary": "Add Uruguay: 22 entry rows and 6 customs rows",
+    "verified_at": null,
+    "verified_by": null,
+    "source": null
+  },
+  {
+    "commit": "bf96c0eeccb2ff8e94cb08209d76126621873ed7",
+    "date": "2026-10-20",
+    "dataset": "customs-items",
+    "summary": "Add Armenia: 22 entry rows and 7 customs rows",
+    "verified_at": "2026-10-20",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "State Revenue Committee of Armenia — Guide for individuals crossing the RA border (2024)",
+      "url": "https://src.am/storage/menu_contents_266/tq_sahman_hatogh_fizandz_eng_6666aa46082b1.pdf"
+    }
+  },
+  {
+    "commit": "bf96c0eeccb2ff8e94cb08209d76126621873ed7",
+    "date": "2026-10-20",
+    "dataset": "destinations",
+    "summary": "Add Armenia: 22 entry rows and 7 customs rows",
+    "verified_at": "2026-10-20",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministry of Foreign Affairs of Armenia — Visa",
+      "url": "https://www.mfa.am/en/visa/"
+    }
+  },
+  {
+    "commit": "bf96c0eeccb2ff8e94cb08209d76126621873ed7",
+    "date": "2026-10-20",
+    "dataset": "entry-requirements",
+    "summary": "Add Armenia: 22 entry rows and 7 customs rows",
+    "verified_at": null,
+    "verified_by": null,
+    "source": null
+  },
+  {
+    "commit": "685c28c14ea6dc596f2110ad17e4c2f4447e9729",
+    "date": "2026-10-19",
+    "dataset": "customs-items",
+    "summary": "Turkey e-cigarettes: transit rule cites the ministry's circular",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "19 CFR §148.43 (eCFR, current)",
+      "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
+    }
+  },
+  {
+    "commit": "b7035c1d878f8ea4e55bbf3a082899dcf784967e",
+    "date": "2026-10-19",
+    "dataset": "customs-items",
+    "summary": "Indonesia: medicine quantities and a controlled-medicine row",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "19 CFR §148.43 (eCFR, current)",
+      "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
+    }
+  },
+  {
+    "commit": "f4c966e507581aa373f976442bc1d3daa79f3504",
+    "date": "2026-10-19",
+    "dataset": "entry-requirements",
+    "summary": "Passport check for EU citizens going to Montenegro",
+    "verified_at": null,
+    "verified_by": null,
+    "source": null
+  },
+  {
+    "commit": "c4de06d8332f2829309ce1f30a4b9fbc97be34d7",
+    "date": "2026-10-19",
+    "dataset": "customs-items",
+    "summary": "UK medicine: licence how-to; ordinary medicine isn't capped at 3 months",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "19 CFR §148.43 (eCFR, current)",
+      "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
+    }
+  },
+  {
+    "commit": "27cbe14fa74e65a6698339dc54b9c55a3377e7af",
+    "date": "2026-10-19",
+    "dataset": "customs-items",
+    "summary": "Korea: controlled-medicine penalties and cough medicines with DXM",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "19 CFR §148.43 (eCFR, current)",
+      "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
+    }
+  },
+  {
+    "commit": "22af3478f135aa46d5e37f1008163fd5b17811dc",
+    "date": "2026-10-19",
+    "dataset": "customs-items",
+    "summary": "US CBD: the hemp redefinition is phased in (12 Nov and 11 Dec 2026)",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "19 CFR §148.43 (eCFR, current)",
+      "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
+    }
+  },
+  {
+    "commit": "d035f1f417a1da3ad83b26fa5d22dc9067888882",
+    "date": "2026-10-19",
+    "dataset": "entry-requirements",
+    "summary": "Promote China and India to Argentina entry rows",
+    "verified_at": null,
+    "verified_by": null,
+    "source": null
+  },
+  {
+    "commit": "9af11bbadb6333790442e33e927885f2f2fba07e",
+    "date": "2026-10-19",
+    "dataset": "customs-items",
+    "summary": "Re-cite statute-mirror rows to official texts or withdraw them",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "19 CFR §148.43 (eCFR, current)",
+      "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
+    }
+  },
+  {
+    "commit": "9af11bbadb6333790442e33e927885f2f2fba07e",
+    "date": "2026-10-19",
+    "dataset": "overstay-penalties",
+    "summary": "Re-cite statute-mirror rows to official texts or withdraw them",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Fremdenpolizeigesetz 2005 (FPG), §§ 53 and 120 — Rechtsinformationssystem des Bundes (RIS), consolidated version",
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20004241"
+    }
+  },
+  {
+    "commit": "ddc433c820231259a8c4358127c6026dd6c7185e",
+    "date": "2026-10-19",
+    "dataset": "customs-items",
+    "summary": "Replace or withdraw rows cited to news, firm and consultancy pages",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "19 CFR §148.43 (eCFR, current)",
+      "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
+    }
+  },
+  {
+    "commit": "ddc433c820231259a8c4358127c6026dd6c7185e",
+    "date": "2026-10-19",
+    "dataset": "overstay-penalties",
+    "summary": "Replace or withdraw rows cited to news, firm and consultancy pages",
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Narodne novine (Croatia's Official Gazette) — Zakon o strancima (Aliens Act), Art. 253(2)",
+      "url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_151_2347.html"
+    }
+  },
+  {
+    "commit": "5ddf8f6d992cb3b22d3315f98cba5bd9da1b8a9d",
+    "date": "2026-10-19",
+    "dataset": "customs-items",
+    "summary": "Withdraw secondary-sourced overstay rows; re-source China CBD",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "19 CFR §148.43 (eCFR, current)",
+      "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
+    }
+  },
+  {
+    "commit": "5ddf8f6d992cb3b22d3315f98cba5bd9da1b8a9d",
+    "date": "2026-10-19",
+    "dataset": "overstay-penalties",
+    "summary": "Withdraw secondary-sourced overstay rows; re-source China CBD",
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Narodne novine (Croatia's Official Gazette) — Zakon o strancima (Aliens Act), Art. 253(2)",
+      "url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_151_2347.html"
+    }
+  },
+  {
+    "commit": "402a15cd75ec6a8adb61a07492c54789ad0ed499",
+    "date": "2026-10-19",
+    "dataset": "entry-requirements",
+    "summary": "Mexico entry rows: cite INM's current visa lists",
+    "verified_at": null,
+    "verified_by": null,
+    "source": null
+  },
+  {
+    "commit": "bc4557ad4776df1719d1e1e9f55d1ec8932afa13",
+    "date": "2026-10-19",
+    "dataset": "customs-items",
+    "summary": "US customs: re-source medicine, meat and produce rows to CBP",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "19 CFR §148.43 (eCFR, current)",
+      "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
+    }
+  },
+  {
+    "commit": "65a4da9e5a895181219f083031395d30d64f058e",
+    "date": "2026-10-19",
+    "dataset": "customs-items",
+    "summary": "Re-read August customs sources; correct and re-date 46 rows",
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "19 CFR §148.43 (eCFR, current)",
+      "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
+    }
+  },
+  {
+    "commit": "25de15cb6a4833ee0aa5f388ad4fe9c9d8b11520",
+    "date": "2026-10-19",
+    "dataset": "entry-requirements",
+    "summary": "Show per-visit caps inside rolling stay windows",
+    "verified_at": null,
+    "verified_by": null,
+    "source": null
+  },
+  {
+    "commit": "8cbbb5cb92fc07bd8433f290b6ddaec74b5d456f",
+    "date": "2026-10-19",
+    "dataset": "entry-requirements",
+    "summary": "Re-check August entry rows for China, Vietnam, Mexico-US and US-India",
+    "verified_at": null,
+    "verified_by": null,
+    "source": null
+  },
+  {
+    "commit": "66db08b96345e9540fe401e3197cb435d338d549",
+    "date": "2026-10-19",
+    "dataset": "entry-requirements",
+    "summary": "Re-check August entry rows for Canada, Kenya, Rwanda, Nigeria and Australia",
+    "verified_at": null,
+    "verified_by": null,
+    "source": null
+  },
+  {
+    "commit": "82987b9f068b6fe15f6d6649fb4079c9f715f183",
+    "date": "2026-10-19",
+    "dataset": "entry-requirements",
+    "summary": "Re-check August entry-requirement rows; re-date 128 confirmed against current sources",
+    "verified_at": null,
+    "verified_by": null,
+    "source": null
+  },
+  {
     "commit": "6ff6f26ef7bf1be55254b03a84d594354155a5c8",
     "date": "2026-10-18",
     "dataset": "customs-items",

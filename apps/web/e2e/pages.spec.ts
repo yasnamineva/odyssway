@@ -366,3 +366,15 @@ test("doctor's letter checklist lists only what the rule asks for, and ticks off
   await box.check();
   await expect(box).toBeChecked();
 });
+
+test("the homepage links new tools and recently added destinations; the changelog has an RSS feed", async ({ page, request }) => {
+  await page.goto("/");
+  await expect(page.getByTestId("home-more-tools").getByRole("link")).toHaveCount(2);
+  await expect(page.getByTestId("home-recent").getByRole("link").first()).toBeVisible();
+  const feed = await request.get("/changelog.xml");
+  expect(feed.status()).toBe(200);
+  expect(feed.headers()["content-type"]).toContain("rss");
+  expect(await feed.text()).toContain("<item>");
+  await page.goto("/changelog");
+  await expect(page.getByTestId("changelog-feed")).toHaveAttribute("href", "/changelog.xml");
+});
