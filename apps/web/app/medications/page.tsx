@@ -22,6 +22,13 @@ export default async function MedicationsIndexPage() {
       <header>
         <h1 className="font-display text-2xl font-bold tracking-tight text-slate-900 lg:text-3xl">{t("h1")}</h1>
         <p className="mt-3 text-sm leading-relaxed text-slate-600">{t("intro")}</p>
+        <a
+          href="/medication-planner"
+          className="mt-4 inline-block rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-800"
+          data-testid="planner-cta"
+        >
+          {t("plannerCta")}
+        </a>
       </header>
       <ul className="grid gap-x-8 border-y border-slate-200 sm:grid-cols-2">
         {medicationProducts.map((p) => (

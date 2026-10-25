@@ -172,6 +172,7 @@ export interface CustomsProcedure {
   authority: string;
   applyUrl?: string;
   leadTime?: string;
+  leadTimeRule?: import("./lead-time").LeadTimeRule;
   processingTime?: string;
   fee?: string;
   documents?: string[];

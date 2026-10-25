@@ -170,6 +170,35 @@ function checkPassportValidityMatchesText(): void {
   }
 }
 
+/**
+ * A procedure's `leadTimeRule` restates its own `leadTime` wording. Fail if the
+ * wording doesn't name the same amount, unit and reference date.
+ */
+function checkLeadTimeMatchesText(): void {
+  const file = join(DATA_DIR, "customs-items.json");
+  const rows = JSON.parse(readFileSync(file, "utf8")) as Array<{
+    slug: string;
+    procedure?: { leadTime?: string; leadTimeRule?: { amount: number; unit: string; before: string } };
+  }>;
+  const words: Record<number, string> = { 1: "one", 2: "two", 3: "three" };
+  const unitWord: Record<string, string> = {
+    days: "days?",
+    weeks: "weeks?",
+    months: "months?",
+    working_days: "(working|business) days?",
+  };
+  for (const r of rows) {
+    const rule = r.procedure?.leadTimeRule;
+    if (!rule) continue;
+    const text = r.procedure?.leadTime ?? "";
+    const where = `${rel(file)}: ${r.slug} procedure.leadTimeRule`;
+    const amount = `(${rule.amount}|${words[rule.amount] ?? rule.amount})`;
+    const hasAmount = new RegExp(`\\b${amount} ${unitWord[rule.unit]}\\b`, "i").test(text);
+    const anchor = rule.before === "arrival" ? /\b(arrive|arrival)\b/i : /\b(travel|leave)\b/i;
+    if (!hasAmount || !anchor.test(text)) errors.push(`${where} doesn't match the leadTime wording: "${text}"`);
+  }
+}
+
 // --- run ---
 const productionFiles = jsonFilesIn(DATA_DIR);
 const unverifiedFiles = jsonFilesIn(UNVERIFIED_DIR);
@@ -178,6 +207,7 @@ for (const f of productionFiles) validateFile(f, true);
 for (const f of unverifiedFiles) validateFile(f, false);
 checkNoUnverifiedReferences();
 checkPassportValidityMatchesText();
+checkLeadTimeMatchesText();
 
 console.log(
   `Checked ${productionFiles.length} production data file(s), ${unverifiedFiles.length} UNVERIFIED draft(s).`,

@@ -19,6 +19,8 @@ export {
 } from "./engine";
 export { evaluateSimpleStay, evaluateStays } from "./stay-policy";
 export { addMonths, checkPassportValidity, remainingValidity } from "./passport-validity";
+export { applyByDate } from "./lead-time";
+export type { LeadTimeRule } from "./lead-time";
 export type { PassportValidityResult, PassportValidityRule, RemainingValidity } from "./passport-validity";
 export type { SimpleStayResult, Stay, StayCheck, StayPolicy, StaysResult } from "./stay-policy";
 export type {

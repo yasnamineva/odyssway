@@ -34,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/trip-check`, lastModified: countriesVerifiedAt, priority: 1 },
     { url: `${BASE}/calculator`, lastModified: countriesVerifiedAt, priority: 0.9 },
     { url: `${BASE}/day-counter`, lastModified: countriesVerifiedAt, priority: 0.8 },
+    { url: `${BASE}/medication-planner`, lastModified: countriesVerifiedAt, priority: 0.8 },
     { url: `${BASE}/rules/90-180-rule`, lastModified: CONTENT_CHECKED, priority: 0.8 },
     { url: `${BASE}/rules/overstay-penalties`, lastModified: "2026-09-15", priority: 0.7 },
     ...publishedOverstayPenalties.map((r) => ({

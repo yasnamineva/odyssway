@@ -1017,6 +1017,11 @@
       "authority": "Narcotics Control Department (NCD), Ministry of Health, Labour and Welfare",
       "applyUrl": "https://www.ncd.mhlw.go.jp/en/application2.html",
       "leadTime": "Apply at least 14 days before you travel. NCD says its Tokyo office can't accept last-minute applications for any reason.",
+      "leadTimeRule": {
+        "amount": 14,
+        "unit": "days",
+        "before": "travel"
+      },
       "documents": [
         "The import application form from the NCD page. There are separate forms for narcotics and for stimulants' raw materials.",
         "The export application form as well, if you'll leave Japan with leftover medicine. If you won't, say in your email that you don't need an export permit.",
@@ -1095,6 +1100,11 @@
       "authority": "Narcotics Control Department (NCD), Ministry of Health, Labour and Welfare",
       "applyUrl": "https://www.ncd.mhlw.go.jp/en/application2.html",
       "leadTime": "Apply at least 14 days before you travel. NCD says its Tokyo office can't accept last-minute applications for any reason.",
+      "leadTimeRule": {
+        "amount": 14,
+        "unit": "days",
+        "before": "travel"
+      },
       "documents": [
         "The import application form from the NCD page. There are separate forms for narcotics and for stimulants' raw materials.",
         "The export application form as well, if you'll leave Japan with leftover medicine. If you won't, say in your email that you don't need an export permit.",
@@ -2056,6 +2066,11 @@
       "authority": "Thai Food and Drug Administration (FDA)",
       "applyUrl": "https://permitfortraveler.fda.moph.go.th/nct_permit_main/",
       "leadTime": "At least 15 days before you travel",
+      "leadTimeRule": {
+        "amount": 15,
+        "unit": "days",
+        "before": "travel"
+      },
       "processingTime": "About 3 working days after the FDA receives a complete application",
       "steps": [
         "Work out whether your medicine is a narcotic or a psychotropic under Thai law, and how many days' supply you're bringing. A permit is needed for any narcotic, and for psychotropics over a 30-day supply.",
@@ -5330,6 +5345,11 @@
       "authority": "Health Sciences Authority (HSA)",
       "applyUrl": "https://go.gov.sg/hsa-ptm",
       "leadTime": "At least 2 weeks before you arrive. HSA says later applications may not be processed in time.",
+      "leadTimeRule": {
+        "amount": 2,
+        "unit": "weeks",
+        "before": "arrival"
+      },
       "documents": [
         "Medical documents: a pharmacy dispensing label, a doctor's prescription or a doctor's letter. They must show your and the prescriber's details, the medicine's name and composition, the dose and frequency, and the total quantity prescribed.",
         "Clear photos of the product showing its name, active ingredients, strength, directions for use, dosage form and the quantity dispensed."
@@ -5706,6 +5726,11 @@
       "authority": "Home Office Drug and Firearms Licensing Unit (DFLU)",
       "applyUrl": "https://www.gov.uk/guidance/controlled-drugs-personal-licences",
       "leadTime": "Email the DFLU 1 month before you travel",
+      "leadTimeRule": {
+        "amount": 1,
+        "unit": "months",
+        "before": "travel"
+      },
       "documents": [
         "The name of the medicine and the controlled drugs it contains",
         "The dose, strength and total quantity you want to bring",
@@ -6519,6 +6544,11 @@
       "title": "For more than 30 days' supply: get PDEA authorization",
       "authority": "Philippine Drug Enforcement Agency (PDEA)",
       "leadTime": "30 working days before you arrive",
+      "leadTimeRule": {
+        "amount": 30,
+        "unit": "working_days",
+        "before": "arrival"
+      },
       "processingTime": "PDEA replies within 15 working days of receiving the request",
       "documents": [
         "A letter from your doctor describing your medical condition and the medicine, with its trade and generic names.",
@@ -8148,6 +8178,11 @@
       "authority": "Narcotics Policy Division, Ministry of Food and Drug Safety (MFDS)",
       "applyUrl": "https://nedrug.mfds.go.kr/eng/index",
       "leadTime": "At least 10 business days before you arrive. MFDS rejects applications made with less notice, and there's no way to speed it up.",
+      "leadTimeRule": {
+        "amount": 10,
+        "unit": "working_days",
+        "before": "arrival"
+      },
       "processingTime": "Up to 10 business days",
       "documents": [
         "A clear, full-size copy of your passport.",
@@ -12999,6 +13034,11 @@
       "title": "For more than one month's supply: get Ministry of Health authorisation",
       "authority": "Ministry of Health (Ministerio de Salud), Costa Rica",
       "leadTime": "At least one month before you travel",
+      "leadTimeRule": {
+        "amount": 1,
+        "unit": "months",
+        "before": "travel"
+      },
       "documents": [
         "A copy of your ID (for digital filing).",
         "Copies of your prescription and your epicrisis and/or medical report, issued no more than 3 months earlier, stating the diagnosis and the prescribed medicines.",
@@ -13244,6 +13284,11 @@
       "authority": "Pharmacy and Drug Control Department, Ministry of Public Health",
       "applyUrl": "https://fli.moph.gov.qa",
       "leadTime": "At least 5 working days before you travel",
+      "leadTimeRule": {
+        "amount": 5,
+        "unit": "working_days",
+        "before": "travel"
+      },
       "processingTime": "Approved or rejected within 3 working days once all requirements are met",
       "documents": [
         "A copy of your passport (or Qatar ID).",
@@ -16093,6 +16138,11 @@
       "authority": "Health Sciences Authority (HSA)",
       "applyUrl": "https://go.gov.sg/hsamdpersonalimport2",
       "leadTime": "At least 10 working days before you arrive.",
+      "leadTimeRule": {
+        "amount": 10,
+        "unit": "working_days",
+        "before": "arrival"
+      },
       "documents": [
         "If the device was prescribed to you: a letter from your doctor or dentist confirming and justifying your need for it."
       ],
@@ -16301,6 +16351,11 @@
       "title": "Get an AEMPS permit to bring narcotic or psychotropic medicine into Spain",
       "authority": "Spanish Agency of Medicines and Medical Devices (AEMPS)",
       "leadTime": "At least 10 days before you travel",
+      "leadTimeRule": {
+        "amount": 10,
+        "unit": "days",
+        "before": "travel"
+      },
       "processingTime": "At least 10 days, if everything is complete",
       "documents": [
         "The completed, signed application form.",

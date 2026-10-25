@@ -238,6 +238,14 @@ export const customsProcedureSchema = z.object({
   authority: z.string().min(1),
   applyUrl: z.url().optional(),
   leadTime: z.string().min(1).optional(),
+  /** Structured restatement of `leadTime`, only when it names an amount and a reference date. */
+  leadTimeRule: z
+    .object({
+      amount: z.number().int().positive(),
+      unit: z.enum(["days", "weeks", "months", "working_days"]),
+      before: z.enum(["travel", "arrival"]),
+    })
+    .optional(),
   processingTime: z.string().min(1).optional(),
   fee: z.string().min(1).optional(),
   documents: z.array(z.string().min(1)).min(1).optional(),

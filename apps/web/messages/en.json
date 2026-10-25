@@ -298,7 +298,8 @@
     "h1": "Travelling with a specific medicine",
     "intro": "Pick your medicine to see, country by country, whether you can bring it. A country only appears when its official customs rule names that medicine.",
     "countries": "{count, plural, one {# country} other {# countries}}",
-    "generalLink": "Looking for general rules on prescription medicine? Compare medication rules by country \u2192"
+    "generalLink": "Looking for general rules on prescription medicine? Compare medication rules by country \u2192",
+    "plannerCta": "Travelling with several medicines or countries? Plan them all at once \u2192"
   },
   "medicationProduct": {
     "metaTitle": "Travelling with {product}: rules in {count} countries",
@@ -711,6 +712,41 @@
     "sourceLabel": "Source: European Commission, User Manual for the Short-Stay Schengen Calculator",
     "lastVerified": "Rules checked against the official sources linked above on {date}."
   },
+  "medicationPlanner": {
+    "metaTitle": "Medication Travel Planner: Rules, Permits and Deadlines by Country",
+    "metaDescription": "Add your medicines and your route: see each country's verified rule, the permits you need, the date to apply by, and what your doctor's letter must say.",
+    "title": "Plan your medicines for every stop",
+    "subtitle": "Add your medicines and the countries on your trip. For each stop you'll see that country's own verified rule, any permit you need and the latest date to apply, and what your doctor's letter has to say.",
+    "leaveHomeLabel": "Date you leave home",
+    "medicinesTitle": "Your medicines",
+    "medicinePlaceholder": "e.g. Adderall, Xanax, codeine, insulin",
+    "removeMedicine": "Remove {name}",
+    "routeTitle": "Your route",
+    "stopLabel": "Stop {n}",
+    "arrivalLabel": "Arrival date",
+    "removeStop": "Remove stop {n}",
+    "addStop": "+ Add another stop",
+    "privacy": "Your medicines and dates stay in this page: nothing is stored or sent.",
+    "stopHeading": "{country}, arriving {date}",
+    "notCovered": "We haven't verified a rule for \"{medicine}\" in {country} yet. Check with the official source before you travel.",
+    "officialSource": "Official source →",
+    "deadlinesTitle": "Permit deadlines",
+    "noDeadlines": "None of the permits on this route has a lead time we can turn into a date. Check each permit below for its own timing.",
+    "deadline": {
+      "passed": "Apply by {date}: this date has passed",
+      "soon": "Apply by {date}: soon",
+      "ok": "Apply by {date}"
+    },
+    "deadlineLine": "{permit} ({country}, {medicine})",
+    "deadlinesNote": "Dates are worked out from the lead time each authority states. Working days skip weekends but not public holidays, so apply earlier if you can.",
+    "limit": "Limit: {quantity}",
+    "leadTime": "When to apply: {text}",
+    "leadTimeQuote": "The authority says: {text}",
+    "processing": "Processing: {text}",
+    "applyLink": "Apply on the official site →",
+    "fullRules": "All medicine rules for {country} →",
+    "disclaimer": "Based on each country's verified rule and the lead time its authority states. Authorities can change their rules and processing times; not legal or medical advice."
+  },
   "dayCounter": {
     "metaTitle": "Multi-Country Day Counter: Schengen, UK, US and More",
     "metaDescription": "Add all your trips and see, for each country, whether you're within its own verified stay limit — Schengen 90/180, per-visit limits and rolling windows, cited to official sources.",
@@ -763,6 +799,7 @@
     "bring": "What can I bring?",
     "medicines": "Medicines by name",
     "dayCounter": "Day counter",
+    "medicationPlanner": "Medication planner",
     "widget": "Embed the calculator",
     "developers": "API",
     "trustpilot": "Review us on Trustpilot"

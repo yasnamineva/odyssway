@@ -44,25 +44,19 @@ Japan?"). They are weak in five places, and each one is a direction for us:
 Tools are the part AI answers can't copy: they compute from the user's own dates and
 items, deterministically, from verified rows. In priority order:
 
-1. **Medication travel planner.** "My medicines + my route + my dates" → for each country:
-   the verdict, the supply limit, the merged doctor's-letter checklist, which permits are
-   needed and an **"apply by" date** computed from the travel date and the lead time the
-   authority states. It joins three things we already have (medication rows, letter
-   checklists, permit procedures) and it's the core of the medication wedge.
-   - Needs: a structured `leadTimeDays` on procedures (only where the source states it).
-2. **Rule-change feeds, no account needed.** An RSS/Atom feed per destination and per item
+1. **Rule-change feeds, no account needed.** An RSS/Atom feed per destination and per item
    category, generated from `changelog.json` at build time. People subscribe in their own
    reader or email-to-RSS service; we store nothing. This is retention without accounts.
-3. **"Which passport should I use?" for dual citizens.** Pick two passports and a
+2. **"Which passport should I use?" for dual citizens.** Pick two passports and a
    destination; see both rows side by side (entry, stay, documents, passport validity).
    Dual citizens are a named target audience (AGENTS.md §1) and nobody serves this well.
-4. **Shareable Trip Check links.** Encode the route and items in the URL (as the calculator
+3. **Shareable Trip Check links.** Encode the route and items in the URL (as the calculator
    already does) so a result can be sent to a travel partner, a doctor or a study-abroad
    office. No server storage.
-5. **Whole-trip "before you go" pack.** One printable page per trip: entry requirement and
+4. **Whole-trip "before you go" pack.** One printable page per trip: entry requirement and
    documents per stop, passport check, item verdicts, letters and permits, all with
    sources and check dates. Built in the browser like the existing PDF export.
-6. **Calendar-year stay rule.** The engine type is written and tested (patch saved during
+5. **Calendar-year stay rule.** The engine type is written and tested (patch saved during
    the Mauritius work). Merge it the first time an official source states a
    calendar-year cap for visa-free visitors.
 
@@ -194,7 +188,8 @@ more than a Japanese page about the US). Translate the highest-traffic page type
 
 ### Horizon 1: now to 3 months. Prove the medication wedge.
 
-- Ship the medication travel planner (§2.1) and the rule-change feeds (§2.2).
+- Ship the rule-change feeds (§2.1); launch the medication planner on Product Hunt.
+- More structured lead times: only 11 permits state a lead time with a number and a reference date; others (India, Saudi Arabia, Hong Kong, Cyprus, Jamaica) need their sources re-read.
 - Customs depth for the newest destinations; medication rows wherever an official
   traveller rule exists.
 - Outreach (§5.3) to 10–20 real backlinks; Bing impressions growing.

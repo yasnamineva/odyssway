@@ -349,6 +349,8 @@ customs rules (the same allowances apply across every Schengen member).
   limits?: { description: string, quantity?: string },
   notes?: string,
   procedure?: CustomsProcedure,    // how to get a permit (2026-10-14)
+                                   // procedure.leadTimeRule?: { amount, unit: days|weeks|months|working_days,
+                                   //   before: travel|arrival } — restates leadTime; validate-data checks the wording (2026-10-26)
   transit?: {                      // only where the authority states it (2026-10-15)
     rule: "applies" | "exempt_airside", description: string,
     source: { name, url }, verified_at: string
@@ -478,6 +480,7 @@ URL structure (locale-prefixed later: `/bg/…`, `/tr/…`, `hreflang` everywher
 | `/destinations/[slug]` | Programmatic per-destination hub (verified destinations only, §5.9): entry requirements by nationality + item verdicts for that destination. KW: "{destination} entry requirements", "what can I bring to {destination}" |
 | `/destinations/[slug]/[nationality]` | Programmatic, one page per verified `entry-requirements.json` row (approved 2026-10-05): requirement, stay, documents, notes, source — plus the same destination across passports and the same passport across destinations, so each page carries unique substance. Destination slugs are names (`/destinations/japan`); old code URLs 308-redirect. KW: "{destination} entry requirements for {nationality} citizens", "do {nationality} citizens need a visa for {destination}" |
 | `/day-counter` | Multi-country day counter (2026-10-22): one list of trips; Schengen pooled through the §6 engine, every other country checked against its own verified `stayPolicy` via `evaluateStays` (§6.6). Not-covered and visa-terms destinations are named, never counted. Client-only. KW: "travel day counter", "how many days have I spent in {country}" |
+| `/medication-planner` | Medication travel planner (2026-10-26): passport + medicines + route with arrival dates → each stop's verified medication row, permit with an "apply by" date computed from `procedure.leadTimeRule` (weekends skipped for working days; public holidays not known — the page says so), and the letter checklist. Unmatched medicines show the not-verified state with the official link. Client-only. KW: "travelling with medication to multiple countries", "how far in advance apply {country} medication permit" |
 | `/rules/90-180-rule` | Definitive plain-language explainer feeding the Schengen tool. KW: "schengen 90 180 rule explained" |
 | `/rules/overstay-penalties/[country]` | Programmatic, from verified data. KW: "overstay schengen fine {country}" |
 | `/guides/residence-permit-holders` | Edge case. KW: "residence permit travel other schengen countries 90 days" |
