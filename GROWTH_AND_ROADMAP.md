@@ -131,8 +131,25 @@ Ways to make that harder to copy and easier to trust:
 | Unmatched item searches | `/api/item-miss` | Research queue |
 | Referring domains | Search Console links, Bing backlinks | Whether outreach works |
 
-Monthly: export top queries; rewrite titles and descriptions for page-1/2 results with low
-CTR; add the most-requested unmatched items to research.
+**Monthly ranking routine.** Rank first, CTR second: a low CTR at position 30 means
+nothing, and it rises on its own as a page reaches the top 10.
+
+1. **Export.** The owner exports Search Console → Performance (Queries and Pages, last 28
+   days) as CSV into `seo/gsc/YYYY-MM/`. The agent turns it into a work list.
+2. **Striking distance first (position 11–20).** These are the cheapest wins. For each
+   page: make the H1 and title match the query wording; answer the query in the first
+   two sentences; add the facts our verified rows already hold but the page doesn't show
+   (limits, procedure, letter checklist, passport rule); link to it from 3+ related pages.
+3. **Position 21–40: depth.** Compare with the top 3 results. Close the gap only with
+   verified content: split rows by traveller situation, add a permit how-to, add the
+   tool that answers the query (planner, passport check), add a comparison across
+   countries or passports. Never filler text (AGENTS.md §13.7).
+4. **CTR only on page 1.** Rewrite titles and descriptions only for page-1 results whose
+   CTR is below what similar pages get.
+5. **Research queue.** Queries we rank for without a verified row, plus the top unmatched
+   item searches, go into `data/UNVERIFIED/TODO.md` as research leads.
+6. **Record** what changed and the positions before, then check the same queries next
+   month.
 
 ### 5.2 On-site
 
@@ -141,12 +158,27 @@ CTR; add the most-requested unmatched items to research.
   weights literal matches more than Google. Owner decision pending.
 - **Internal links:** every destination hub links its top item pages and named medicines;
   every pair page links the same passport's neighbouring destinations; no orphan pages.
+- **Homepage as a link source.** Add "Recently added" (newest destinations and tools,
+  generated from the data so it never needs hand edits) and "Most-checked" sections, so
+  new pages get links from the strongest page on the site the day they launch.
 - **Structured data:** FAQ on pair and medication pages (done for some), HowTo on every
   permit procedure, Dataset on `/developers`. Add `sameAs` to Organization once the
   brand profiles exist.
 - **Thin pages:** watch pair pages in "discovered, not indexed". If many stay there, make
   them more distinct (comparisons, passport check, related items) rather than adding more.
 - **Speed:** keep Lighthouse ≥ 95 on mobile; re-run after each feature.
+
+### 5.2b Definition of done for every new page or tool
+
+Nothing counts as shipped until:
+
+- it's in the sitemap, and linked from the homepage "Recently added" list and from at
+  least three related pages (hub, sibling pages, the relevant tool);
+- its H1, title and first two sentences use the words people search for;
+- it has the right structured data (FAQ, HowTo, WebApplication, BreadcrumbList);
+- after the deploy, its URLs go to IndexNow and into the next Bing submission batch
+  (`bing-url-batches.txt`);
+- it's on next month's ranking routine (§5.1) to check where it landed.
 
 ### 5.3 Off-site (links and brand)
 
@@ -189,6 +221,8 @@ more than a Japanese page about the US). Translate the highest-traffic page type
 ### Horizon 1: now to 3 months. Prove the medication wedge.
 
 - Ship the rule-change feeds (§2.1); launch the medication planner on Product Hunt.
+- Build the homepage "Recently added" section (§5.2) and run the first monthly ranking
+  routine (§5.1) as soon as there's a Search Console export.
 - More structured lead times: only 11 permits state a lead time with a number and a reference date; others (India, Saudi Arabia, Hong Kong, Cyprus, Jamaica) need their sources re-read.
 - Customs depth for the newest destinations; medication rows wherever an official
   traveller rule exists.
