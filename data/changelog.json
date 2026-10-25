@@ -1,5 +1,35 @@
 [
   {
+    "commit": "c780d7e5617c5c128a61acf65b702ef426bae4d1",
+    "date": "2026-10-25",
+    "dataset": "destinations",
+    "summary": "Add Zimbabwe: 21 entry rows",
+    "verified_at": "2026-10-25",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Passport and Immigration Office, Mauritius — Visa Requirements, with the Visa Requirement Country-wise list (2025)",
+      "url": "https://passport.govmu.org/passport/?page_id=605"
+    },
+    "destinations": [
+      "ZW"
+    ]
+  },
+  {
+    "commit": "c780d7e5617c5c128a61acf65b702ef426bae4d1",
+    "date": "2026-10-25",
+    "dataset": "entry-requirements",
+    "summary": "Add Zimbabwe: 21 entry rows",
+    "verified_at": "2026-10-25",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Passport and Immigration Office, Mauritius — Visa Requirements, with the Visa Requirement Country-wise list (2025)",
+      "url": "https://passport.govmu.org/passport/?page_id=605"
+    },
+    "destinations": [
+      "ZW"
+    ]
+  },
+  {
     "commit": "0c14cd1a038a5e9297aa6a4b9adda943b54272a5",
     "date": "2026-10-25",
     "dataset": "customs-items",
@@ -9,7 +39,18 @@
     "source": {
       "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
       "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
-    }
+    },
+    "destinations": [
+      "CR",
+      "ES",
+      "GB",
+      "JP",
+      "KR",
+      "PH",
+      "QA",
+      "SG",
+      "TH"
+    ]
   },
   {
     "commit": "eee833ca1adf3c5bd3a072a9ff53a4b2ef2ccf7f",
@@ -21,16 +62,25 @@
     "source": {
       "name": "Passport and Immigration Office, Mauritius — Visa Requirements, with the Visa Requirement Country-wise list (2025)",
       "url": "https://passport.govmu.org/passport/?page_id=605"
-    }
+    },
+    "destinations": [
+      "MU"
+    ]
   },
   {
     "commit": "eee833ca1adf3c5bd3a072a9ff53a4b2ef2ccf7f",
     "date": "2026-10-25",
     "dataset": "entry-requirements",
     "summary": "Add Mauritius: 22 entry rows; day counter: unstated stays aren't 'no limit'",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-25",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Passport and Immigration Office, Mauritius — Visa Requirements, with the Visa Requirement Country-wise list (2025)",
+      "url": "https://passport.govmu.org/passport/?page_id=605"
+    },
+    "destinations": [
+      "MU"
+    ]
   },
   {
     "commit": "f79bdc337f985a8a02d1cb32f7e8812c89f669ef",
@@ -42,16 +92,25 @@
     "source": {
       "name": "Ministry of Foreign Affairs of Uzbekistan — Visa of the Republic of Uzbekistan (visa-free list; Appendix 1, e-visa countries; Appendix 2, five-day transit)",
       "url": "https://gov.uz/en/mfa/activity_page/o-zbekiston-respublikasi-vizasi"
-    }
+    },
+    "destinations": [
+      "FJ"
+    ]
   },
   {
     "commit": "f79bdc337f985a8a02d1cb32f7e8812c89f669ef",
     "date": "2026-10-24",
     "dataset": "entry-requirements",
     "summary": "Add Fiji: 22 entry rows",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 408 of 21 November 1996, Annex 5 — countries whose citizens have a visa-free regime (as amended by Resolution No. 662 of 21 October 2025; LexUz Russian translation of the Uzbek original)",
+      "url": "https://lex.uz/ru/docs/513096"
+    },
+    "destinations": [
+      "FJ"
+    ]
   },
   {
     "commit": "a63ab2e00143c7bb4c1b00abea3ff9ceeaa8d2b5",
@@ -63,7 +122,10 @@
     "source": {
       "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
       "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
-    }
+    },
+    "destinations": [
+      "ZM"
+    ]
   },
   {
     "commit": "e00efdc7bafb2a4070e9394c544f4340f83a1b73",
@@ -75,16 +137,25 @@
     "source": {
       "name": "Ministry of Foreign Affairs of Uzbekistan — Visa of the Republic of Uzbekistan (visa-free list; Appendix 1, e-visa countries; Appendix 2, five-day transit)",
       "url": "https://gov.uz/en/mfa/activity_page/o-zbekiston-respublikasi-vizasi"
-    }
+    },
+    "destinations": [
+      "ZM"
+    ]
   },
   {
     "commit": "e00efdc7bafb2a4070e9394c544f4340f83a1b73",
     "date": "2026-10-23",
     "dataset": "entry-requirements",
     "summary": "Add Zambia: 22 entry rows",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 408 of 21 November 1996, Annex 5 — countries whose citizens have a visa-free regime (as amended by Resolution No. 662 of 21 October 2025; LexUz Russian translation of the Uzbek original)",
+      "url": "https://lex.uz/ru/docs/513096"
+    },
+    "destinations": [
+      "ZM"
+    ]
   },
   {
     "commit": "32f184c51468213849d4ad977e8ec851b91bb6da",
@@ -96,7 +167,10 @@
     "source": {
       "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
       "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
-    }
+    },
+    "destinations": [
+      "GH"
+    ]
   },
   {
     "commit": "32f184c51468213849d4ad977e8ec851b91bb6da",
@@ -108,16 +182,25 @@
     "source": {
       "name": "Ministry of Foreign Affairs of Uzbekistan — Visa of the Republic of Uzbekistan (visa-free list; Appendix 1, e-visa countries; Appendix 2, five-day transit)",
       "url": "https://gov.uz/en/mfa/activity_page/o-zbekiston-respublikasi-vizasi"
-    }
+    },
+    "destinations": [
+      "GH"
+    ]
   },
   {
     "commit": "32f184c51468213849d4ad977e8ec851b91bb6da",
     "date": "2026-10-23",
     "dataset": "entry-requirements",
     "summary": "Add Ghana: 22 entry rows, 2 customs rows",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 408 of 21 November 1996, Annex 5 — countries whose citizens have a visa-free regime (as amended by Resolution No. 662 of 21 October 2025; LexUz Russian translation of the Uzbek original)",
+      "url": "https://lex.uz/ru/docs/513096"
+    },
+    "destinations": [
+      "GH"
+    ]
   },
   {
     "commit": "d3e6750740d3b7092bb09e034e293d9eb49684f7",
@@ -129,7 +212,11 @@
     "source": {
       "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
       "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
-    }
+    },
+    "destinations": [
+      "SC",
+      "UZ"
+    ]
   },
   {
     "commit": "e30e67fecb906ee12262186fa02b47d56a30e822",
@@ -141,16 +228,25 @@
     "source": {
       "name": "Ministry of Foreign Affairs of Uzbekistan — Visa of the Republic of Uzbekistan (visa-free list; Appendix 1, e-visa countries; Appendix 2, five-day transit)",
       "url": "https://gov.uz/en/mfa/activity_page/o-zbekiston-respublikasi-vizasi"
-    }
+    },
+    "destinations": [
+      "SC"
+    ]
   },
   {
     "commit": "e30e67fecb906ee12262186fa02b47d56a30e822",
     "date": "2026-10-23",
     "dataset": "entry-requirements",
     "summary": "Add Seychelles: 22 entry rows",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 408 of 21 November 1996, Annex 5 — countries whose citizens have a visa-free regime (as amended by Resolution No. 662 of 21 October 2025; LexUz Russian translation of the Uzbek original)",
+      "url": "https://lex.uz/ru/docs/513096"
+    },
+    "destinations": [
+      "SC"
+    ]
   },
   {
     "commit": "898966c8d76eb8be0f8a54b88e5ee5d6af71bb62",
@@ -162,7 +258,10 @@
     "source": {
       "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
       "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
-    }
+    },
+    "destinations": [
+      "MO"
+    ]
   },
   {
     "commit": "d0cc4f8f92ef58fb15170104d084beb2c53fe83c",
@@ -174,16 +273,25 @@
     "source": {
       "name": "Ministry of Foreign Affairs of Uzbekistan — Visa of the Republic of Uzbekistan (visa-free list; Appendix 1, e-visa countries; Appendix 2, five-day transit)",
       "url": "https://gov.uz/en/mfa/activity_page/o-zbekiston-respublikasi-vizasi"
-    }
+    },
+    "destinations": [
+      "MO"
+    ]
   },
   {
     "commit": "d0cc4f8f92ef58fb15170104d084beb2c53fe83c",
     "date": "2026-10-23",
     "dataset": "entry-requirements",
     "summary": "Add Macao: 21 entry rows",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 408 of 21 November 1996, Annex 5 — countries whose citizens have a visa-free regime (as amended by Resolution No. 662 of 21 October 2025; LexUz Russian translation of the Uzbek original)",
+      "url": "https://lex.uz/ru/docs/513096"
+    },
+    "destinations": [
+      "MO"
+    ]
   },
   {
     "commit": "204441a51212353c845c1ab18bc07bff4dd4e8bd",
@@ -195,7 +303,10 @@
     "source": {
       "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
       "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
-    }
+    },
+    "destinations": [
+      "BA"
+    ]
   },
   {
     "commit": "6b9becefe0e84a490becc60ee7ebe02cee09ce78",
@@ -207,16 +318,25 @@
     "source": {
       "name": "Ministry of Foreign Affairs of Uzbekistan — Visa of the Republic of Uzbekistan (visa-free list; Appendix 1, e-visa countries; Appendix 2, five-day transit)",
       "url": "https://gov.uz/en/mfa/activity_page/o-zbekiston-respublikasi-vizasi"
-    }
+    },
+    "destinations": [
+      "BA"
+    ]
   },
   {
     "commit": "6b9becefe0e84a490becc60ee7ebe02cee09ce78",
     "date": "2026-10-23",
     "dataset": "entry-requirements",
     "summary": "Add Bosnia and Herzegovina: 22 entry rows",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 408 of 21 November 1996, Annex 5 — countries whose citizens have a visa-free regime (as amended by Resolution No. 662 of 21 October 2025; LexUz Russian translation of the Uzbek original)",
+      "url": "https://lex.uz/ru/docs/513096"
+    },
+    "destinations": [
+      "BA"
+    ]
   },
   {
     "commit": "eebe853794c94fabdd8d545db20d620a2382a7b8",
@@ -228,16 +348,25 @@
     "source": {
       "name": "Ministry of Foreign Affairs of Uzbekistan — Visa of the Republic of Uzbekistan (visa-free list; Appendix 1, e-visa countries; Appendix 2, five-day transit)",
       "url": "https://gov.uz/en/mfa/activity_page/o-zbekiston-respublikasi-vizasi"
-    }
+    },
+    "destinations": [
+      "UZ"
+    ]
   },
   {
     "commit": "eebe853794c94fabdd8d545db20d620a2382a7b8",
     "date": "2026-10-23",
     "dataset": "entry-requirements",
     "summary": "Add Uzbekistan: 20 entry rows",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 408 of 21 November 1996, Annex 5 — countries whose citizens have a visa-free regime (as amended by Resolution No. 662 of 21 October 2025; LexUz Russian translation of the Uzbek original)",
+      "url": "https://lex.uz/ru/docs/513096"
+    },
+    "destinations": [
+      "UZ"
+    ]
   },
   {
     "commit": "6ae72f79cf576d0c4a80e465a091925c366cb796",
@@ -249,7 +378,21 @@
     "source": {
       "name": "Dirección Nacional de Aduanas — Traveller baggage sworn declaration form (2016)",
       "url": "https://www.aduanas.gub.uy/innovaportal/file/16133/1/declaracion_jurada_equipaje_08042016-002.pdf"
-    }
+    },
+    "destinations": [
+      "AL",
+      "BR",
+      "CL",
+      "CY",
+      "DO",
+      "EU",
+      "HK",
+      "IE",
+      "JM",
+      "MA",
+      "SG",
+      "TR"
+    ]
   },
   {
     "commit": "8de1528fce57905cd76a7fa1de45476c0fe56abe",
@@ -261,7 +404,25 @@
     "source": {
       "name": "Dirección Nacional de Aduanas — Traveller baggage sworn declaration form (2016)",
       "url": "https://www.aduanas.gub.uy/innovaportal/file/16133/1/declaracion_jurada_equipaje_08042016-002.pdf"
-    }
+    },
+    "destinations": [
+      "AE",
+      "AM",
+      "AU",
+      "GB",
+      "GE",
+      "ID",
+      "JP",
+      "ME",
+      "MV",
+      "MY",
+      "NZ",
+      "PH",
+      "QA",
+      "SA",
+      "TZ",
+      "US"
+    ]
   },
   {
     "commit": "e44a18aebe3503bbb6851ee07371f1d3518e5fba",
@@ -273,16 +434,25 @@
     "source": {
       "name": "Ministerio del Interior (Dirección Nacional de Migración) — Régimen de visas de admisión (published 19/08/2025)",
       "url": "https://www.gub.uy/ministerio-interior/comunicacion/publicaciones/regimen-visas-admision"
-    }
+    },
+    "destinations": [
+      "MN"
+    ]
   },
   {
     "commit": "e44a18aebe3503bbb6851ee07371f1d3518e5fba",
     "date": "2026-10-21",
     "dataset": "entry-requirements",
     "summary": "Add Mongolia: 21 entry rows",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-21",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministerio del Interior (Dirección Nacional de Migración) — Régimen de visas de admisión (published 19/08/2025)",
+      "url": "https://www.gub.uy/ministerio-interior/comunicacion/publicaciones/regimen-visas-admision"
+    },
+    "destinations": [
+      "MN"
+    ]
   },
   {
     "commit": "626ed268bcef1c2a6ff5e7d6a270682a09da6d30",
@@ -294,7 +464,10 @@
     "source": {
       "name": "Dirección Nacional de Aduanas — Traveller baggage sworn declaration form (2016)",
       "url": "https://www.aduanas.gub.uy/innovaportal/file/16133/1/declaracion_jurada_equipaje_08042016-002.pdf"
-    }
+    },
+    "destinations": [
+      "UY"
+    ]
   },
   {
     "commit": "626ed268bcef1c2a6ff5e7d6a270682a09da6d30",
@@ -306,16 +479,25 @@
     "source": {
       "name": "Ministerio del Interior (Dirección Nacional de Migración) — Régimen de visas de admisión (published 19/08/2025)",
       "url": "https://www.gub.uy/ministerio-interior/comunicacion/publicaciones/regimen-visas-admision"
-    }
+    },
+    "destinations": [
+      "UY"
+    ]
   },
   {
     "commit": "626ed268bcef1c2a6ff5e7d6a270682a09da6d30",
     "date": "2026-10-21",
     "dataset": "entry-requirements",
     "summary": "Add Uruguay: 22 entry rows and 6 customs rows",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-21",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministerio del Interior (Dirección Nacional de Migración) — Régimen de visas de admisión (published 19/08/2025)",
+      "url": "https://www.gub.uy/ministerio-interior/comunicacion/publicaciones/regimen-visas-admision"
+    },
+    "destinations": [
+      "UY"
+    ]
   },
   {
     "commit": "bf96c0eeccb2ff8e94cb08209d76126621873ed7",
@@ -327,7 +509,10 @@
     "source": {
       "name": "State Revenue Committee of Armenia — Guide for individuals crossing the RA border (2024)",
       "url": "https://src.am/storage/menu_contents_266/tq_sahman_hatogh_fizandz_eng_6666aa46082b1.pdf"
-    }
+    },
+    "destinations": [
+      "AM"
+    ]
   },
   {
     "commit": "bf96c0eeccb2ff8e94cb08209d76126621873ed7",
@@ -339,16 +524,25 @@
     "source": {
       "name": "Ministry of Foreign Affairs of Armenia — Visa",
       "url": "https://www.mfa.am/en/visa/"
-    }
+    },
+    "destinations": [
+      "AM"
+    ]
   },
   {
     "commit": "bf96c0eeccb2ff8e94cb08209d76126621873ed7",
     "date": "2026-10-20",
     "dataset": "entry-requirements",
     "summary": "Add Armenia: 22 entry rows and 7 customs rows",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-20",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministry of Foreign Affairs of Armenia — countries whose citizens are unilaterally exempt from the visa requirement (updated 02.02.2024)",
+      "url": "https://www.mfa.am/en/visafreelist"
+    },
+    "destinations": [
+      "AM"
+    ]
   },
   {
     "commit": "685c28c14ea6dc596f2110ad17e4c2f4447e9729",
@@ -360,7 +554,10 @@
     "source": {
       "name": "19 CFR §148.43 (eCFR, current)",
       "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
-    }
+    },
+    "destinations": [
+      "TR"
+    ]
   },
   {
     "commit": "b7035c1d878f8ea4e55bbf3a082899dcf784967e",
@@ -372,16 +569,25 @@
     "source": {
       "name": "19 CFR §148.43 (eCFR, current)",
       "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
-    }
+    },
+    "destinations": [
+      "ID"
+    ]
   },
   {
     "commit": "f4c966e507581aa373f976442bc1d3daa79f3504",
     "date": "2026-10-19",
     "dataset": "entry-requirements",
     "summary": "Passport check for EU citizens going to Montenegro",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Visa Waiver Program, 8 U.S.C. §1187(a)(1) and (a)(3)",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title8/html/USCODE-2023-title8-chap12-subchapII-partII-sec1187.htm"
+    },
+    "destinations": [
+      "ME"
+    ]
   },
   {
     "commit": "c4de06d8332f2829309ce1f30a4b9fbc97be34d7",
@@ -393,7 +599,10 @@
     "source": {
       "name": "19 CFR §148.43 (eCFR, current)",
       "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
-    }
+    },
+    "destinations": [
+      "GB"
+    ]
   },
   {
     "commit": "27cbe14fa74e65a6698339dc54b9c55a3377e7af",
@@ -405,7 +614,10 @@
     "source": {
       "name": "19 CFR §148.43 (eCFR, current)",
       "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
-    }
+    },
+    "destinations": [
+      "KR"
+    ]
   },
   {
     "commit": "22af3478f135aa46d5e37f1008163fd5b17811dc",
@@ -417,16 +629,25 @@
     "source": {
       "name": "19 CFR §148.43 (eCFR, current)",
       "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
-    }
+    },
+    "destinations": [
+      "US"
+    ]
   },
   {
     "commit": "d035f1f417a1da3ad83b26fa5d22dc9067888882",
     "date": "2026-10-19",
     "dataset": "entry-requirements",
     "summary": "Promote China and India to Argentina entry rows",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Visa Waiver Program, 8 U.S.C. §1187(a)(1) and (a)(3)",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title8/html/USCODE-2023-title8-chap12-subchapII-partII-sec1187.htm"
+    },
+    "destinations": [
+      "AR"
+    ]
   },
   {
     "commit": "9af11bbadb6333790442e33e927885f2f2fba07e",
@@ -438,7 +659,13 @@
     "source": {
       "name": "19 CFR §148.43 (eCFR, current)",
       "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
-    }
+    },
+    "destinations": [
+      "AL",
+      "NG",
+      "TR",
+      "VN"
+    ]
   },
   {
     "commit": "9af11bbadb6333790442e33e927885f2f2fba07e",
@@ -462,7 +689,13 @@
     "source": {
       "name": "19 CFR §148.43 (eCFR, current)",
       "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
-    }
+    },
+    "destinations": [
+      "CN",
+      "KE",
+      "KR",
+      "MA"
+    ]
   },
   {
     "commit": "ddc433c820231259a8c4358127c6026dd6c7185e",
@@ -486,7 +719,10 @@
     "source": {
       "name": "19 CFR §148.43 (eCFR, current)",
       "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
-    }
+    },
+    "destinations": [
+      "CN"
+    ]
   },
   {
     "commit": "5ddf8f6d992cb3b22d3315f98cba5bd9da1b8a9d",
@@ -505,9 +741,15 @@
     "date": "2026-10-19",
     "dataset": "entry-requirements",
     "summary": "Mexico entry rows: cite INM's current visa lists",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Visa Waiver Program, 8 U.S.C. §1187(a)(1) and (a)(3)",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title8/html/USCODE-2023-title8-chap12-subchapII-partII-sec1187.htm"
+    },
+    "destinations": [
+      "MX"
+    ]
   },
   {
     "commit": "bc4557ad4776df1719d1e1e9f55d1ec8932afa13",
@@ -519,7 +761,10 @@
     "source": {
       "name": "19 CFR §148.43 (eCFR, current)",
       "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
-    }
+    },
+    "destinations": [
+      "US"
+    ]
   },
   {
     "commit": "65a4da9e5a895181219f083031395d30d64f058e",
@@ -531,43 +776,105 @@
     "source": {
       "name": "19 CFR §148.43 (eCFR, current)",
       "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-148/subpart-E/section-148.43"
-    }
+    },
+    "destinations": [
+      "AE",
+      "AU",
+      "CA",
+      "EG",
+      "GB",
+      "JP",
+      "KE",
+      "MA",
+      "MX",
+      "NG",
+      "RW",
+      "TH",
+      "TR",
+      "US",
+      "ZA"
+    ]
   },
   {
     "commit": "25de15cb6a4833ee0aa5f388ad4fe9c9d8b11520",
     "date": "2026-10-19",
     "dataset": "entry-requirements",
     "summary": "Show per-visit caps inside rolling stay windows",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Visa Waiver Program, 8 U.S.C. §1187(a)(1) and (a)(3)",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title8/html/USCODE-2023-title8-chap12-subchapII-partII-sec1187.htm"
+    },
+    "destinations": [
+      "CN",
+      "CO"
+    ]
   },
   {
     "commit": "8cbbb5cb92fc07bd8433f290b6ddaec74b5d456f",
     "date": "2026-10-19",
     "dataset": "entry-requirements",
     "summary": "Re-check August entry rows for China, Vietnam, Mexico-US and US-India",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Visa Waiver Program, 8 U.S.C. §1187(a)(1) and (a)(3)",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title8/html/USCODE-2023-title8-chap12-subchapII-partII-sec1187.htm"
+    },
+    "destinations": [
+      "CN",
+      "IN",
+      "US",
+      "VN"
+    ]
   },
   {
     "commit": "66db08b96345e9540fe401e3197cb435d338d549",
     "date": "2026-10-19",
     "dataset": "entry-requirements",
     "summary": "Re-check August entry rows for Canada, Kenya, Rwanda, Nigeria and Australia",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Visa Waiver Program, 8 U.S.C. §1187(a)(1) and (a)(3)",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title8/html/USCODE-2023-title8-chap12-subchapII-partII-sec1187.htm"
+    },
+    "destinations": [
+      "AU",
+      "CA",
+      "KE",
+      "NG",
+      "RW"
+    ]
   },
   {
     "commit": "82987b9f068b6fe15f6d6649fb4079c9f715f183",
     "date": "2026-10-19",
     "dataset": "entry-requirements",
     "summary": "Re-check August entry-requirement rows; re-date 128 confirmed against current sources",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-19",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Visa Waiver Program, 8 U.S.C. §1187(a)(1) and (a)(3)",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title8/html/USCODE-2023-title8-chap12-subchapII-partII-sec1187.htm"
+    },
+    "destinations": [
+      "AE",
+      "CN",
+      "EG",
+      "GB",
+      "IN",
+      "KE",
+      "MA",
+      "NG",
+      "PH",
+      "RW",
+      "TR",
+      "US",
+      "VN",
+      "ZA"
+    ]
   },
   {
     "commit": "6ff6f26ef7bf1be55254b03a84d594354155a5c8",
@@ -579,7 +886,10 @@
     "source": {
       "name": "31 U.S.C. §5316; 31 CFR §1010.340",
       "url": "https://www.govinfo.gov/content/pkg/USCODE-2020-title31/pdf/USCODE-2020-title31-subtitleIV-chap53-subchapII-sec5316.pdf"
-    }
+    },
+    "destinations": [
+      "JP"
+    ]
   },
   {
     "commit": "8c144cf95ee74fcdea921c5769c0f3b204c468de",
@@ -591,7 +901,11 @@
     "source": {
       "name": "31 U.S.C. §5316; 31 CFR §1010.340",
       "url": "https://www.govinfo.gov/content/pkg/USCODE-2020-title31/pdf/USCODE-2020-title31-subtitleIV-chap53-subchapII-sec5316.pdf"
-    }
+    },
+    "destinations": [
+      "JP",
+      "TH"
+    ]
   },
   {
     "commit": "cbb63de8a7718a08a6bf4238a3c603872e4a6ba6",
@@ -603,7 +917,24 @@
     "source": {
       "name": "31 U.S.C. §5316; 31 CFR §1010.340",
       "url": "https://www.govinfo.gov/content/pkg/USCODE-2020-title31/pdf/USCODE-2020-title31-subtitleIV-chap53-subchapII-sec5316.pdf"
-    }
+    },
+    "destinations": [
+      "AU",
+      "BR",
+      "CL",
+      "CN",
+      "EG",
+      "ID",
+      "IE",
+      "IN",
+      "MX",
+      "NG",
+      "NZ",
+      "PH",
+      "SA",
+      "TH",
+      "VN"
+    ]
   },
   {
     "commit": "13e4eb5795e0880438df77a6c117feec2e421c72",
@@ -615,7 +946,28 @@
     "source": {
       "name": "31 U.S.C. §5316; 31 CFR §1010.340",
       "url": "https://www.govinfo.gov/content/pkg/USCODE-2020-title31/pdf/USCODE-2020-title31-subtitleIV-chap53-subchapII-sec5316.pdf"
-    }
+    },
+    "destinations": [
+      "AE",
+      "AU",
+      "CA",
+      "EG",
+      "EU",
+      "GB",
+      "IN",
+      "JP",
+      "KE",
+      "MA",
+      "MX",
+      "NG",
+      "NZ",
+      "PH",
+      "RW",
+      "TH",
+      "TR",
+      "US",
+      "ZA"
+    ]
   },
   {
     "commit": "7e6a3cc3944938882ed65eaad5103127f2691444",
@@ -627,7 +979,10 @@
     "source": {
       "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
       "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
-    }
+    },
+    "destinations": [
+      "GB"
+    ]
   },
   {
     "commit": "c044f31a586ebde22e75a52bc6c51d72d3ff2f0b",
@@ -639,43 +994,102 @@
     "source": {
       "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
       "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
-    }
+    },
+    "destinations": [
+      "ES",
+      "NZ"
+    ]
   },
   {
     "commit": "2b65560534cddb0da6f6d353efb4d5c5b2210a3b",
     "date": "2026-10-18",
     "dataset": "entry-requirements",
     "summary": "Passport rules: correct US to Albania; no verdict for conflicting Saudi rows",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "U.S. Embassy in Albania — Entering and Residing",
+      "url": "https://al.usembassy.gov/entering-and-residing/"
+    },
+    "destinations": [
+      "AL",
+      "SA"
+    ]
   },
   {
     "commit": "f5ace8d2be07b4ad99f9518f5df5acd6083fc61f",
     "date": "2026-10-18",
     "dataset": "entry-requirements",
     "summary": "Passport checker: 14 more rows ('on arrival', 'on entry', 'contemplated stay')",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministerio de Relaciones Exteriores de Chile (Consulado.gob.cl) — Cuadro de aranceles de visas de permanencia transitoria simple y múltiple para ingresar a Chile (PDF dated 6 March 2026); Servicio Nacional de Migraciones — Permanencia Transitoria / Prórroga de Permanencia Transitoria",
+      "url": "https://www.consulado.gob.cl/consulados/site/docs/20190220/20190220161313/cuadro_de_visas_corregido060326.pdf"
+    },
+    "destinations": [
+      "AE",
+      "CR",
+      "JO",
+      "KH",
+      "MY",
+      "PH",
+      "TH"
+    ]
   },
   {
     "commit": "5dc419ff464d4d6d35c27062d16dcbb54d30f87f",
     "date": "2026-10-18",
     "dataset": "entry-requirements",
     "summary": "Passport checker: Schengen Borders Code rule; New Zealand and Albania wordings",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministerio de Relaciones Exteriores de Chile (Consulado.gob.cl) — Cuadro de aranceles de visas de permanencia transitoria simple y múltiple para ingresar a Chile (PDF dated 6 March 2026); Servicio Nacional de Migraciones — Permanencia Transitoria / Prórroga de Permanencia Transitoria",
+      "url": "https://www.consulado.gob.cl/consulados/site/docs/20190220/20190220161313/cuadro_de_visas_corregido060326.pdf"
+    },
+    "destinations": [
+      "AL",
+      "NZ"
+    ]
   },
   {
     "commit": "fefaf50da4c378e85e6ad47ed9b528f4024c32b8",
     "date": "2026-10-18",
     "dataset": "entry-requirements",
     "summary": "Trip Check: passport validity checker (§1.6)",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministerio de Relaciones Exteriores de Chile (Consulado.gob.cl) — Cuadro de aranceles de visas de permanencia transitoria simple y múltiple para ingresar a Chile (PDF dated 6 March 2026); Servicio Nacional de Migraciones — Permanencia Transitoria / Prórroga de Permanencia Transitoria",
+      "url": "https://www.consulado.gob.cl/consulados/site/docs/20190220/20190220161313/cuadro_de_visas_corregido060326.pdf"
+    },
+    "destinations": [
+      "AL",
+      "AR",
+      "CL",
+      "CO",
+      "CY",
+      "EG",
+      "GB",
+      "ID",
+      "IL",
+      "JO",
+      "JP",
+      "KE",
+      "KH",
+      "LK",
+      "ME",
+      "MY",
+      "NZ",
+      "PE",
+      "PH",
+      "SA",
+      "SG",
+      "TR",
+      "TW",
+      "VN"
+    ]
   },
   {
     "commit": "9d9931b6418ca3d9478794a1c2915428d9e2fbda",
@@ -687,7 +1101,11 @@
     "source": {
       "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
       "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
-    }
+    },
+    "destinations": [
+      "CR",
+      "IN"
+    ]
   },
   {
     "commit": "9faa2ce2a8a62517dfe8b94f3aae7576bc3c6d82",
@@ -699,7 +1117,11 @@
     "source": {
       "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
       "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
-    }
+    },
+    "destinations": [
+      "MY",
+      "TW"
+    ]
   },
   {
     "commit": "8ff7edf752dfed0fde92ca0daa3f39beb5d59dbe",
@@ -711,7 +1133,12 @@
     "source": {
       "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
       "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
-    }
+    },
+    "destinations": [
+      "JP",
+      "SG",
+      "TH"
+    ]
   },
   {
     "commit": "2525dd7e3b2ea824f1c36aa40b1200bc532082d3",
@@ -723,7 +1150,14 @@
     "source": {
       "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
       "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
-    }
+    },
+    "destinations": [
+      "AR",
+      "EG",
+      "KE",
+      "LK",
+      "TH"
+    ]
   },
   {
     "commit": "6413b8adc7f65b800482b364b4055f2f1fb626aa",
@@ -735,7 +1169,26 @@
     "source": {
       "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
       "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
-    }
+    },
+    "destinations": [
+      "AL",
+      "CA",
+      "CN",
+      "GB",
+      "GE",
+      "HK",
+      "IE",
+      "KE",
+      "KR",
+      "MV",
+      "MX",
+      "PH",
+      "RS",
+      "SG",
+      "TH",
+      "US",
+      "ZA"
+    ]
   },
   {
     "commit": "ef9992ea4da85c5b952709b309d4031eb11693bb",
@@ -747,7 +1200,12 @@
     "source": {
       "name": "gov.uk — Taking controlled drugs into the UK",
       "url": "https://www.gov.uk/travelling-controlled-drugs"
-    }
+    },
+    "destinations": [
+      "AE",
+      "JP",
+      "RW"
+    ]
   },
   {
     "commit": "3f532d2cc9a5ad27b543b61536160ea9bdedbfc1",
@@ -759,7 +1217,19 @@
     "source": {
       "name": "gov.uk — Taking controlled drugs into the UK",
       "url": "https://www.gov.uk/travelling-controlled-drugs"
-    }
+    },
+    "destinations": [
+      "BS",
+      "EC",
+      "GE",
+      "JP",
+      "KR",
+      "MV",
+      "MY",
+      "SG",
+      "TW",
+      "VN"
+    ]
   },
   {
     "commit": "8114a92e5602426cb4b72c1e1480e957ce436ee5",
@@ -771,7 +1241,11 @@
     "source": {
       "name": "gov.uk — Taking controlled drugs into the UK",
       "url": "https://www.gov.uk/travelling-controlled-drugs"
-    }
+    },
+    "destinations": [
+      "AE",
+      "SG"
+    ]
   },
   {
     "commit": "175691593442d847de2854f03439f1ea3f7710fa",
@@ -783,7 +1257,19 @@
     "source": {
       "name": "gov.uk — Taking controlled drugs into the UK",
       "url": "https://www.gov.uk/travelling-controlled-drugs"
-    }
+    },
+    "destinations": [
+      "EU",
+      "GB",
+      "IN",
+      "JP",
+      "KE",
+      "MA",
+      "MX",
+      "TH",
+      "TR",
+      "ZA"
+    ]
   },
   {
     "commit": "58bfb1e8881cb511f9a594b1bd75297d1ee26956",
@@ -795,7 +1281,52 @@
     "source": {
       "name": "Ministry of Trade, Directorate General of Customs — Circular 2020/7 on travellers entering with e-cigarettes and similar goods (as amended by Circular 2024/18, 19 September 2024; consolidated text, Lexpera)",
       "url": "https://www.lexpera.com.tr/mevzuat/genelgeler/elektronik-sigara-ve-benzeri-esyanin-yolcu-beraberi-girisi-ve-transiti-hakkinda-genelge-2020-7"
-    }
+    },
+    "destinations": [
+      "AE",
+      "AL",
+      "AR",
+      "AU",
+      "BR",
+      "CA",
+      "CL",
+      "CN",
+      "CO",
+      "CR",
+      "CY",
+      "DO",
+      "EC",
+      "EG",
+      "GE",
+      "HK",
+      "ID",
+      "IE",
+      "IL",
+      "IN",
+      "JM",
+      "JP",
+      "KE",
+      "KR",
+      "MA",
+      "ME",
+      "MV",
+      "MX",
+      "MY",
+      "NG",
+      "NZ",
+      "PE",
+      "PH",
+      "QA",
+      "RS",
+      "RW",
+      "SA",
+      "SG",
+      "TH",
+      "TR",
+      "TW",
+      "VN",
+      "ZA"
+    ]
   },
   {
     "commit": "85f0e39e2dc4ffbfef9a4094abba59c3c9dc5072",
@@ -807,7 +1338,10 @@
     "source": {
       "name": "gov.uk — Bringing goods into the UK for personal use",
       "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
-    }
+    },
+    "destinations": [
+      "VN"
+    ]
   },
   {
     "commit": "2dad00279fccb33ba19b852edbf74ef5f67e4765",
@@ -819,7 +1353,29 @@
     "source": {
       "name": "gov.uk — Bringing goods into the UK for personal use",
       "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
-    }
+    },
+    "destinations": [
+      "AE",
+      "AU",
+      "BR",
+      "CA",
+      "CN",
+      "CY",
+      "EU",
+      "GB",
+      "HK",
+      "IE",
+      "KR",
+      "MV",
+      "MX",
+      "MY",
+      "NZ",
+      "PH",
+      "RS",
+      "SA",
+      "TW",
+      "US"
+    ]
   },
   {
     "commit": "bd2c48948a88ca2bd6c5d43c2bf49871dddfb423",
@@ -831,7 +1387,45 @@
     "source": {
       "name": "gov.uk — Bringing goods into the UK for personal use",
       "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
-    }
+    },
+    "destinations": [
+      "AE",
+      "AL",
+      "AR",
+      "AU",
+      "BR",
+      "CA",
+      "CL",
+      "CN",
+      "CY",
+      "EG",
+      "EU",
+      "GB",
+      "GE",
+      "HK",
+      "ID",
+      "IE",
+      "IN",
+      "JM",
+      "JP",
+      "KE",
+      "LK",
+      "MA",
+      "ME",
+      "MV",
+      "MX",
+      "NZ",
+      "PH",
+      "QA",
+      "RS",
+      "RW",
+      "SA",
+      "SG",
+      "TH",
+      "TW",
+      "US",
+      "ZA"
+    ]
   },
   {
     "commit": "387dcd189e26fab87946d06d7f7ba9648a2502b2",
@@ -843,7 +1437,10 @@
     "source": {
       "name": "gov.uk — Bringing goods into the UK for personal use",
       "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
-    }
+    },
+    "destinations": [
+      "BS"
+    ]
   },
   {
     "commit": "58a69e17d8b6aa6b61c38d540e5db3cc0f645cdb",
@@ -855,7 +1452,13 @@
     "source": {
       "name": "gov.uk — Bringing goods into the UK for personal use",
       "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
-    }
+    },
+    "destinations": [
+      "GB",
+      "KE",
+      "RS",
+      "SG"
+    ]
   },
   {
     "commit": "bd6f2c0e27927ddd522a68b4a717aa71e9f13441",
@@ -867,7 +1470,11 @@
     "source": {
       "name": "New Zealand Customs Service — Prohibited and restricted items (travellers)",
       "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/"
-    }
+    },
+    "destinations": [
+      "NZ",
+      "SG"
+    ]
   },
   {
     "commit": "0aaec44dee517c0a1e6416839204268da4d4020d",
@@ -879,7 +1486,13 @@
     "source": {
       "name": "Australian Border Force — Australian Customs Notice No. 2026/29, Changes to nicotine pouch regulations (22 July 2026)",
       "url": "https://www.abf.gov.au/help-and-support-subsite/CustomsNotices/2026-29.pdf"
-    }
+    },
+    "destinations": [
+      "AL",
+      "GE",
+      "HK",
+      "SG"
+    ]
   },
   {
     "commit": "550bdeb21ff249160b8f5acec232d6f8949e74bf",
@@ -891,7 +1504,21 @@
     "source": {
       "name": "Australian Border Force — Australian Customs Notice No. 2026/29, Changes to nicotine pouch regulations (22 July 2026)",
       "url": "https://www.abf.gov.au/help-and-support-subsite/CustomsNotices/2026-29.pdf"
-    }
+    },
+    "destinations": [
+      "AE",
+      "AL",
+      "AR",
+      "CO",
+      "HK",
+      "KH",
+      "KR",
+      "LK",
+      "PH",
+      "QA",
+      "SG",
+      "TW"
+    ]
   },
   {
     "commit": "7b0bf5b8c58d1b13731404156911943eb196381c",
@@ -903,7 +1530,12 @@
     "source": {
       "name": "Australian Border Force — Australian Customs Notice No. 2026/29, Changes to nicotine pouch regulations (22 July 2026)",
       "url": "https://www.abf.gov.au/help-and-support-subsite/CustomsNotices/2026-29.pdf"
-    }
+    },
+    "destinations": [
+      "AU",
+      "JP",
+      "SE"
+    ]
   },
   {
     "commit": "4d7229ac53f0f508c5f52aa941ab86cdb9cb4792",
@@ -915,7 +1547,15 @@
     "source": {
       "name": "Australian Border Force — Australian Customs Notice No. 2026/29, Changes to nicotine pouch regulations (22 July 2026)",
       "url": "https://www.abf.gov.au/help-and-support-subsite/CustomsNotices/2026-29.pdf"
-    }
+    },
+    "destinations": [
+      "AU",
+      "FR",
+      "GB",
+      "NZ",
+      "QA",
+      "SG"
+    ]
   },
   {
     "commit": "9903222a49c87103780808d0daf439faeadf0bb2",
@@ -927,7 +1567,13 @@
     "source": {
       "name": "Australian Border Force — Australian Customs Notice No. 2026/29, Changes to nicotine pouch regulations (22 July 2026)",
       "url": "https://www.abf.gov.au/help-and-support-subsite/CustomsNotices/2026-29.pdf"
-    }
+    },
+    "destinations": [
+      "AU",
+      "GB",
+      "NZ",
+      "SG"
+    ]
   },
   {
     "commit": "3a7020360674d9d1a7238e5e6939b0d0d5160b50",
@@ -939,7 +1585,16 @@
     "source": {
       "name": "Narcotics Control Department, Ministry of Health, Labour and Welfare — Application Guidance (carrying medicine containing controlled substances)",
       "url": "https://www.ncd.mhlw.go.jp/en/application2.html"
-    }
+    },
+    "destinations": [
+      "CY",
+      "HK",
+      "JM",
+      "KR",
+      "PH",
+      "QA",
+      "SA"
+    ]
   },
   {
     "commit": "e17b28ea14f9ef7e833e097a11ea5fa3c6faea14",
@@ -951,7 +1606,13 @@
     "source": {
       "name": "Narcotics Control Department, Ministry of Health, Labour and Welfare — Application Guidance (carrying medicine containing controlled substances)",
       "url": "https://www.ncd.mhlw.go.jp/en/application2.html"
-    }
+    },
+    "destinations": [
+      "AE",
+      "JP",
+      "SG",
+      "TH"
+    ]
   },
   {
     "commit": "5e3fff8bc93c7b9f991306866c2eba884c9f6473",
@@ -963,7 +1624,11 @@
     "source": {
       "name": "Health Canada — Personal use health products guidance",
       "url": "https://www.canada.ca/en/health-canada/services/drugs-health-products/compliance-enforcement/importation-exportation/personal-use-health-products-guidance/document.html"
-    }
+    },
+    "destinations": [
+      "CA",
+      "SG"
+    ]
   },
   {
     "commit": "e2f3039109cd700d5231b5915f7c78d889d38f0b",
@@ -975,7 +1640,13 @@
     "source": {
       "name": "U.S. Food and Drug Administration — Personal Importation",
       "url": "https://www.fda.gov/industry/import-basics/personal-importation"
-    }
+    },
+    "destinations": [
+      "CA",
+      "GB",
+      "NZ",
+      "US"
+    ]
   },
   {
     "commit": "835257558e09ab3883b3229edecd0b49ffabcd56",
@@ -987,7 +1658,17 @@
     "source": {
       "name": "Servicio Nacional de Aduanas — Exempt Resolution No. 309 (Annex No. 5, Appendix XI, Chapter III of the Compendium of Customs Regulations: benefits for travellers; in force 13 March 2018), official English version; amounts updated by Exempt Resolution No. 1301",
       "url": "https://www.aduana.cl/aduana/site/docs/20241104/20241104131844/exempt_resolution_309.pdf"
-    }
+    },
+    "destinations": [
+      "BS",
+      "CL",
+      "EC",
+      "IL",
+      "JM",
+      "KH",
+      "ME",
+      "TZ"
+    ]
   },
   {
     "commit": "835257558e09ab3883b3229edecd0b49ffabcd56",
@@ -999,16 +1680,39 @@
     "source": {
       "name": "Servicio Nacional de Migraciones (SERMIG) — Personas que ingresan con fines turísticos, recreativos, de negocios, u otros similares (Ley N° 21.325 de Migración y Extranjería, art. 27)",
       "url": "https://serviciomigraciones.cl/permanencia-transitoria/subcategorias/turistas/"
-    }
+    },
+    "destinations": [
+      "BS",
+      "CL",
+      "EC",
+      "IL",
+      "JM",
+      "KH",
+      "ME",
+      "TZ"
+    ]
   },
   {
     "commit": "835257558e09ab3883b3229edecd0b49ffabcd56",
     "date": "2026-10-11",
     "dataset": "entry-requirements",
     "summary": "Eight more destinations: Chile, Montenegro, Jamaica, Bahamas, Ecuador, Tanzania, Cambodia, Israel",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministerio de Relaciones Exteriores de Chile (Consulado.gob.cl) — Cuadro de aranceles de visas de permanencia transitoria simple y múltiple para ingresar a Chile (PDF dated 6 March 2026); Servicio Nacional de Migraciones — Permanencia Transitoria / Prórroga de Permanencia Transitoria",
+      "url": "https://www.consulado.gob.cl/consulados/site/docs/20190220/20190220161313/cuadro_de_visas_corregido060326.pdf"
+    },
+    "destinations": [
+      "BS",
+      "CL",
+      "EC",
+      "IL",
+      "JM",
+      "KH",
+      "ME",
+      "TZ"
+    ]
   },
   {
     "commit": "e8a9a949ad96f0efcb0258015b8923f2c1df1daa",
@@ -1020,7 +1724,17 @@
     "source": {
       "name": "Travellers — Passenger Guide, Sri Lanka Customs",
       "url": "https://www.customs.gov.lk/personal/travellers/"
-    }
+    },
+    "destinations": [
+      "AR",
+      "CO",
+      "CR",
+      "DO",
+      "JO",
+      "LK",
+      "PE",
+      "QA"
+    ]
   },
   {
     "commit": "e8a9a949ad96f0efcb0258015b8923f2c1df1daa",
@@ -1032,16 +1746,39 @@
     "source": {
       "name": "Electronic Travel Authorization (ETA) official website — Department of Immigration & Emigration, Sri Lanka",
       "url": "https://www.eta.gov.lk/slvisa/visainfo/center.jsp?locale=en_US"
-    }
+    },
+    "destinations": [
+      "AR",
+      "CO",
+      "CR",
+      "DO",
+      "JO",
+      "LK",
+      "PE",
+      "QA"
+    ]
   },
   {
     "commit": "e8a9a949ad96f0efcb0258015b8923f2c1df1daa",
     "date": "2026-10-10",
     "dataset": "entry-requirements",
     "summary": "Eight new destinations: Sri Lanka, Peru, Dominican Republic, Colombia, Argentina, Jordan, Costa Rica, Qatar",
-    "verified_at": null,
-    "verified_by": null,
-    "source": null
+    "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Fees — Online Visa Application (ETA), Department of Immigration & Emigration, Sri Lanka",
+      "url": "https://www.eta.gov.lk/slvisa/visainfo/fees.jsp?locale=en_US"
+    },
+    "destinations": [
+      "AR",
+      "CO",
+      "CR",
+      "DO",
+      "JO",
+      "LK",
+      "PE",
+      "QA"
+    ]
   },
   {
     "commit": "9a4ce08d74d9188919f959c06114c08bbff99899",
@@ -1077,7 +1814,11 @@
     "source": {
       "name": "Narcotics Control Department, Ministry of Health, Labour and Welfare — bringing narcotics and stimulant raw materials into Japan",
       "url": "https://www.ncd.mhlw.go.jp/en/application2.html"
-    }
+    },
+    "destinations": [
+      "CY",
+      "JP"
+    ]
   },
   {
     "commit": "1f9989c4b781d6623386cf51f64a59e7fbbae274",
@@ -1089,7 +1830,10 @@
     "source": {
       "name": "Ministry of Foreign Affairs of Cyprus — Categories of persons and countries whose nationals do not require a visa",
       "url": "https://www.gov.cy/mfa/en/documents/categories-of-persons-and-countries-whose-nationals-do-not-require-a-visa/"
-    }
+    },
+    "destinations": [
+      "CY"
+    ]
   },
   {
     "commit": "1f9989c4b781d6623386cf51f64a59e7fbbae274",
@@ -1101,7 +1845,42 @@
     "source": {
       "name": "UK Foreign, Commonwealth & Development Office — Egypt travel advice: Entry requirements",
       "url": "https://www.gov.uk/foreign-travel-advice/egypt/entry-requirements"
-    }
+    },
+    "destinations": [
+      "AE",
+      "AL",
+      "AU",
+      "BR",
+      "CA",
+      "CN",
+      "CY",
+      "EG",
+      "GB",
+      "GE",
+      "HK",
+      "ID",
+      "IN",
+      "JP",
+      "KE",
+      "KR",
+      "MA",
+      "MV",
+      "MX",
+      "MY",
+      "NG",
+      "NZ",
+      "PH",
+      "RS",
+      "RW",
+      "SA",
+      "SG",
+      "TH",
+      "TR",
+      "TW",
+      "US",
+      "VN",
+      "ZA"
+    ]
   },
   {
     "commit": "1f9989c4b781d6623386cf51f64a59e7fbbae274",
@@ -1125,7 +1904,10 @@
     "source": {
       "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
       "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
-    }
+    },
+    "destinations": [
+      "AL"
+    ]
   },
   {
     "commit": "0c961df8a44441c4acfb38e79664f517ece94aff",
@@ -1137,7 +1919,10 @@
     "source": {
       "name": "Ministry of Foreign Affairs of Serbia",
       "url": "https://www.mfa.gov.rs/en"
-    }
+    },
+    "destinations": [
+      "AL"
+    ]
   },
   {
     "commit": "0c961df8a44441c4acfb38e79664f517ece94aff",
@@ -1149,7 +1934,10 @@
     "source": {
       "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
       "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/sjedinjene-americke-drzave"
-    }
+    },
+    "destinations": [
+      "AL"
+    ]
   },
   {
     "commit": "be32aee8ad02e186797aacf819d31e43e195be4a",
@@ -1161,7 +1949,11 @@
     "source": {
       "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
       "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
-    }
+    },
+    "destinations": [
+      "RS",
+      "TW"
+    ]
   },
   {
     "commit": "be32aee8ad02e186797aacf819d31e43e195be4a",
@@ -1173,7 +1965,11 @@
     "source": {
       "name": "Ministry of Foreign Affairs of Serbia",
       "url": "https://www.mfa.gov.rs/en"
-    }
+    },
+    "destinations": [
+      "RS",
+      "TW"
+    ]
   },
   {
     "commit": "be32aee8ad02e186797aacf819d31e43e195be4a",
@@ -1185,7 +1981,11 @@
     "source": {
       "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
       "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/sjedinjene-americke-drzave"
-    }
+    },
+    "destinations": [
+      "RS",
+      "TW"
+    ]
   },
   {
     "commit": "c9a4fdbe6320fe6fc6b5637f50347f9337acd39c",
@@ -1197,7 +1997,10 @@
     "source": {
       "name": "Hong Kong Customs and Excise Department — Duty-free Concessions",
       "url": "https://www.customs.gov.hk/en/service-enforcement-information/passenger-clearance/duty-free-concessions/index.html"
-    }
+    },
+    "destinations": [
+      "MV"
+    ]
   },
   {
     "commit": "c9a4fdbe6320fe6fc6b5637f50347f9337acd39c",
@@ -1209,7 +2012,10 @@
     "source": {
       "name": "Immigration Department (HKSAR) — Visit Visa / Entry Permit Requirements (visa-free periods table)",
       "url": "https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html"
-    }
+    },
+    "destinations": [
+      "MV"
+    ]
   },
   {
     "commit": "c9a4fdbe6320fe6fc6b5637f50347f9337acd39c",
@@ -1221,7 +2027,11 @@
     "source": {
       "name": "Immigration Department (HKSAR) — Visit Visa / Entry Permit Requirements (visa-free periods table)",
       "url": "https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html"
-    }
+    },
+    "destinations": [
+      "MV",
+      "MY"
+    ]
   },
   {
     "commit": "d33e1eb9840e5748ae5258287ec13acffcfb4744",
@@ -1233,7 +2043,10 @@
     "source": {
       "name": "Hong Kong Customs and Excise Department — Duty-free Concessions",
       "url": "https://www.customs.gov.hk/en/service-enforcement-information/passenger-clearance/duty-free-concessions/index.html"
-    }
+    },
+    "destinations": [
+      "GE"
+    ]
   },
   {
     "commit": "d33e1eb9840e5748ae5258287ec13acffcfb4744",
@@ -1245,7 +2058,10 @@
     "source": {
       "name": "Immigration Department (HKSAR) — Visit Visa / Entry Permit Requirements (visa-free periods table)",
       "url": "https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html"
-    }
+    },
+    "destinations": [
+      "GE"
+    ]
   },
   {
     "commit": "d33e1eb9840e5748ae5258287ec13acffcfb4744",
@@ -1257,7 +2073,10 @@
     "source": {
       "name": "Immigration Department (HKSAR) — Visit Visa / Entry Permit Requirements (visa-free periods table)",
       "url": "https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html"
-    }
+    },
+    "destinations": [
+      "GE"
+    ]
   },
   {
     "commit": "3ad556d32540c94a1283ebb93c3f1a41e0ee1552",
@@ -1269,7 +2088,11 @@
     "source": {
       "name": "Hong Kong Customs and Excise Department — Duty-free Concessions",
       "url": "https://www.customs.gov.hk/en/service-enforcement-information/passenger-clearance/duty-free-concessions/index.html"
-    }
+    },
+    "destinations": [
+      "IE",
+      "MY"
+    ]
   },
   {
     "commit": "3ad556d32540c94a1283ebb93c3f1a41e0ee1552",
@@ -1281,7 +2104,11 @@
     "source": {
       "name": "Immigration Department (HKSAR) — Visit Visa / Entry Permit Requirements (visa-free periods table)",
       "url": "https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html"
-    }
+    },
+    "destinations": [
+      "IE",
+      "MY"
+    ]
   },
   {
     "commit": "3ad556d32540c94a1283ebb93c3f1a41e0ee1552",
@@ -1293,7 +2120,11 @@
     "source": {
       "name": "Immigration Department (HKSAR) — Visit Visa / Entry Permit Requirements (visa-free periods table)",
       "url": "https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html"
-    }
+    },
+    "destinations": [
+      "IE",
+      "MY"
+    ]
   },
   {
     "commit": "1f60df906fa886d5293f51ee5b9d46d086ee293b",
@@ -1305,7 +2136,10 @@
     "source": {
       "name": "Hong Kong Customs and Excise Department — Duty-free Concessions",
       "url": "https://www.customs.gov.hk/en/service-enforcement-information/passenger-clearance/duty-free-concessions/index.html"
-    }
+    },
+    "destinations": [
+      "HK"
+    ]
   },
   {
     "commit": "1f60df906fa886d5293f51ee5b9d46d086ee293b",
@@ -1317,7 +2151,10 @@
     "source": {
       "name": "Immigration Department (HKSAR) — Visit Visa / Entry Permit Requirements (visa-free periods table)",
       "url": "https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html"
-    }
+    },
+    "destinations": [
+      "HK"
+    ]
   },
   {
     "commit": "1f60df906fa886d5293f51ee5b9d46d086ee293b",
@@ -1329,7 +2166,10 @@
     "source": {
       "name": "Immigration Department (HKSAR) — Visit Visa / Entry Permit Requirements (visa-free periods table)",
       "url": "https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html"
-    }
+    },
+    "destinations": [
+      "HK"
+    ]
   },
   {
     "commit": "d2ad20b83874c35e84c2f8ff0e16a68675b0d2ec",
@@ -1341,7 +2181,12 @@
     "source": {
       "name": "Ministry of Agriculture and Rural Affairs & General Administration of Customs of China, Announcement No. 470 — List of Animals, Plants, Their Products and Other Quarantine Materials Prohibited from Being Carried or Mailed into the People's Republic of China (via China-Africa SPS Cooperation Information Network)",
       "url": "https://www.chinaafricasps.org/zh/spsxx/yqqk/zgjjjyxyhswhdwybml/608451159900229.shtml"
-    }
+    },
+    "destinations": [
+      "CN",
+      "KR",
+      "VN"
+    ]
   },
   {
     "commit": "27d08525ebce203a2f354cbde4d403208f36c50c",
@@ -1353,7 +2198,14 @@
     "source": {
       "name": "Ministry of Agriculture and Rural Affairs & General Administration of Customs of China, Announcement No. 470 — List of Animals, Plants, Their Products and Other Quarantine Materials Prohibited from Being Carried or Mailed into the People's Republic of China (via China-Africa SPS Cooperation Information Network)",
       "url": "https://www.chinaafricasps.org/zh/spsxx/yqqk/zgjjjyxyhswhdwybml/608451159900229.shtml"
-    }
+    },
+    "destinations": [
+      "CN",
+      "EG",
+      "JP",
+      "NZ",
+      "SA"
+    ]
   },
   {
     "commit": "f5e1ff1f21ab1082b94c8846e0142b93e347eb0c",
@@ -1365,7 +2217,20 @@
     "source": {
       "name": "Decree No. 288/2025/ND-CP (Government of Vietnam) — Management of Unmanned Aircraft and Other Aerial Vehicles, Arts. 4, 6, 21, 22",
       "url": "https://english.luatvietnam.vn/decree-no-288-2025-nd-cp-dated-november-5-2025-of-the-government-providing-the-management-of-unmanned-aircraft-and-other-aerial-vehicles-418028-doc1.html"
-    }
+    },
+    "destinations": [
+      "CN",
+      "ID",
+      "KE",
+      "KR",
+      "MA",
+      "PH",
+      "RW",
+      "TR",
+      "US",
+      "VN",
+      "ZA"
+    ]
   },
   {
     "commit": "f5e1ff1f21ab1082b94c8846e0142b93e347eb0c",
@@ -1389,7 +2254,18 @@
     "source": {
       "name": "Transport Canada — Getting permission to fly a drone in Canada as a foreign pilot",
       "url": "https://tc.canada.ca/en/aviation/drone-safety/drone-pilot-licensing/get-permission-special-drone-operations/get-permission-fly-drone-foreign-pilot"
-    }
+    },
+    "destinations": [
+      "BR",
+      "EU",
+      "ID",
+      "KE",
+      "KR",
+      "NZ",
+      "PH",
+      "SG",
+      "VN"
+    ]
   },
   {
     "commit": "5f21898e22707298b2e1b0dbbe03f15a384ac84b",
@@ -1413,7 +2289,22 @@
     "source": {
       "name": "Transport Canada — Getting permission to fly a drone in Canada as a foreign pilot",
       "url": "https://tc.canada.ca/en/aviation/drone-safety/drone-pilot-licensing/get-permission-special-drone-operations/get-permission-fly-drone-foreign-pilot"
-    }
+    },
+    "destinations": [
+      "AU",
+      "BR",
+      "CN",
+      "GB",
+      "ID",
+      "JP",
+      "KR",
+      "NG",
+      "NZ",
+      "SG",
+      "TR",
+      "US",
+      "VN"
+    ]
   },
   {
     "commit": "56eb1f0dc9f56366bda662d5ea6c2579a169bb6d",
@@ -1425,7 +2316,13 @@
     "source": {
       "name": "Transport Canada — Getting permission to fly a drone in Canada as a foreign pilot",
       "url": "https://tc.canada.ca/en/aviation/drone-safety/drone-pilot-licensing/get-permission-special-drone-operations/get-permission-fly-drone-foreign-pilot"
-    }
+    },
+    "destinations": [
+      "CA",
+      "MX",
+      "PH",
+      "ZA"
+    ]
   },
   {
     "commit": "a6d7b595bed88c3962937742d5dc548830a28e3a",
@@ -1437,7 +2334,12 @@
     "source": {
       "name": "gov.uk — Bringing fruit, vegetables, nuts and seeds into Great Britain",
       "url": "https://www.gov.uk/bringing-food-into-great-britain/fruit-vegetables-nuts-seeds"
-    }
+    },
+    "destinations": [
+      "AE",
+      "CA",
+      "GB"
+    ]
   },
   {
     "commit": "570852c98b906c49cb6712830360df4e58e1064a",
@@ -1449,7 +2351,15 @@
     "source": {
       "name": "ZATCA (Saudi Zakat, Tax and Customs Authority) — prohibited items for travelers",
       "url": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Pages/customs-individual/Travel-pages/disclosure-amounts.aspx"
-    }
+    },
+    "destinations": [
+      "BR",
+      "ID",
+      "NZ",
+      "PH",
+      "SA",
+      "SG"
+    ]
   },
   {
     "commit": "3847959f788e87a16e889a22dbd64e69b480953c",
@@ -1461,7 +2371,15 @@
     "source": {
       "name": "ZATCA (Saudi Zakat, Tax and Customs Authority) — prohibited items for travelers",
       "url": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Pages/customs-individual/Travel-pages/disclosure-amounts.aspx"
-    }
+    },
+    "destinations": [
+      "BR",
+      "ID",
+      "NZ",
+      "PH",
+      "SA",
+      "SG"
+    ]
   },
   {
     "commit": "12f8cc95bdb39b1900ff0e4b882c9b682c2406cd",
@@ -1473,7 +2391,28 @@
     "source": {
       "name": "Convention Implementing the Schengen Agreement, Art. 75",
       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02)"
-    }
+    },
+    "destinations": [
+      "AE",
+      "AU",
+      "BR",
+      "CA",
+      "EG",
+      "EU",
+      "GB",
+      "ID",
+      "JP",
+      "KE",
+      "MX",
+      "NZ",
+      "PH",
+      "RW",
+      "SA",
+      "SG",
+      "TH",
+      "US",
+      "ZA"
+    ]
   },
   {
     "commit": "8ce002a89369bb51e2baf6a42163a89e6e5ef843",
@@ -1485,7 +2424,12 @@
     "source": {
       "name": "Panrotas (Brazilian travel-trade press, citing Diário Oficial da União exchange-of-notes publication)",
       "url": "https://www.panrotas.com.br/mercado/destinos/2026/07/brasil-e-japao-prorrogam-isencao-de-vistos-para-turistas-ate-2029_230682.html"
-    }
+    },
+    "destinations": [
+      "BR",
+      "SA",
+      "SG"
+    ]
   },
   {
     "commit": "e5157bfe3e1dd42c3afbacaa1c98225c6040e2f5",
@@ -1497,7 +2441,33 @@
     "source": {
       "name": "Australian Embassy China - Visas and Migration",
       "url": "https://china.embassy.gov.au/bjng/Visas_and_Migration.html"
-    }
+    },
+    "destinations": [
+      "AE",
+      "AU",
+      "BR",
+      "CA",
+      "CN",
+      "EG",
+      "GB",
+      "ID",
+      "IN",
+      "JP",
+      "KE",
+      "KR",
+      "MA",
+      "MX",
+      "NG",
+      "NZ",
+      "PH",
+      "RW",
+      "SA",
+      "SG",
+      "TH",
+      "TR",
+      "US",
+      "ZA"
+    ]
   },
   {
     "commit": "e5157bfe3e1dd42c3afbacaa1c98225c6040e2f5",
@@ -1521,7 +2491,18 @@
     "source": {
       "name": "Direktorat Jenderal Bea dan Cukai (Directorate General of Customs and Excise, Republic of Indonesia) — Barang Penumpang (Passenger Goods)",
       "url": "https://www.beacukai.go.id/barang-penumpang"
-    }
+    },
+    "destinations": [
+      "BR",
+      "CN",
+      "ID",
+      "KR",
+      "NZ",
+      "PH",
+      "SA",
+      "SG",
+      "VN"
+    ]
   },
   {
     "commit": "3bb443f6ca4a29fd9196f1009ef8b46ba9e314cb",
@@ -1533,7 +2514,18 @@
     "source": {
       "name": "Direktorat Jenderal Imigrasi (Directorate General of Immigration, Republic of Indonesia) — Daftar Subjek VoA, BVK & Calling Visa",
       "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa"
-    }
+    },
+    "destinations": [
+      "BR",
+      "CN",
+      "ID",
+      "KR",
+      "NZ",
+      "PH",
+      "SA",
+      "SG",
+      "VN"
+    ]
   },
   {
     "commit": "3bb443f6ca4a29fd9196f1009ef8b46ba9e314cb",
@@ -1545,7 +2537,18 @@
     "source": {
       "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
       "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
-    }
+    },
+    "destinations": [
+      "BR",
+      "CN",
+      "ID",
+      "KR",
+      "NZ",
+      "PH",
+      "SA",
+      "SG",
+      "VN"
+    ]
   },
   {
     "commit": "b85f10e5a355e7786d6a82482d4c64ad1313d807",
@@ -1557,7 +2560,26 @@
     "source": {
       "name": "Thai Customs Department — Individual travelers: duty-free allowance and restricted/prohibited goods",
       "url": "https://www.customs.go.th/list_strc_simple_neted.php?ini_content=individual_160503_03_160905_01&lang=en&left_menu=menu_individual_submenu_01_160421_01"
-    }
+    },
+    "destinations": [
+      "AE",
+      "AU",
+      "CA",
+      "EG",
+      "EU",
+      "GB",
+      "IN",
+      "JP",
+      "KE",
+      "MA",
+      "MX",
+      "NG",
+      "RW",
+      "TH",
+      "TR",
+      "US",
+      "ZA"
+    ]
   },
   {
     "commit": "b85f10e5a355e7786d6a82482d4c64ad1313d807",
@@ -1569,7 +2591,25 @@
     "source": {
       "name": "Ministry of Foreign Affairs of Thailand, Department of Consular Affairs — Visa Exemption Scheme for Tourism and Short-Term Business (\"ผ.60\"), effective 15 July 2024",
       "url": "https://image.mfa.go.th/mfa/0/zE6021nSnu/0303/%E0%B8%9C.60.pdf"
-    }
+    },
+    "destinations": [
+      "AE",
+      "AU",
+      "CA",
+      "EG",
+      "GB",
+      "IN",
+      "JP",
+      "KE",
+      "MA",
+      "MX",
+      "NG",
+      "RW",
+      "TH",
+      "TR",
+      "US",
+      "ZA"
+    ]
   },
   {
     "commit": "b85f10e5a355e7786d6a82482d4c64ad1313d807",
@@ -1581,7 +2621,25 @@
     "source": {
       "name": "Ministry of Foreign Affairs of Thailand, Department of Consular Affairs — List of Countries and Territories entitled to Visa Exemption Scheme for Tourism and Short-Term Business (up to 60 days) (“ผ.60”), effective 15 July 2024",
       "url": "https://image.mfa.go.th/mfa/0/zE6021nSnu/0303/%E0%B8%9C.60.pdf"
-    }
+    },
+    "destinations": [
+      "AE",
+      "AU",
+      "CA",
+      "EG",
+      "GB",
+      "IN",
+      "JP",
+      "KE",
+      "MA",
+      "MX",
+      "NG",
+      "RW",
+      "TH",
+      "TR",
+      "US",
+      "ZA"
+    ]
   },
   {
     "commit": "973faf44185d908ae57d2894d941f622e380e04f",

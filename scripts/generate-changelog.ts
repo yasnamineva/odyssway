@@ -40,10 +40,55 @@ interface ChangelogEntry {
   verified_at: string | null;
   verified_by: string | null;
   source: { name: string; url: string } | null;
+  /** Destination codes whose rows this commit added, changed or removed in this file ("EU" = harmonised EU customs). */
+  destinations?: string[];
+}
+
+/** Files whose rows map to a destination, and how to key and locate each row. */
+const ROW_KEYS: Record<string, { key: (r: Record<string, unknown>) => string; dest: (r: Record<string, unknown>) => string }> = {
+  "data/entry-requirements.json": { key: (r) => `${r.nationality}>${r.destination}`, dest: (r) => String(r.destination) },
+  "data/customs-items.json": { key: (r) => String(r.slug), dest: (r) => String(r.destination) },
+  "data/destinations.json": { key: (r) => String(r.code), dest: (r) => String(r.code) },
+};
+
+const parsedByBlob = new Map<string, Map<string, { dest: string; json: string }>>();
+
+/** Rows of a file at a commit, keyed; cached by blob id so unchanged versions are parsed once. */
+function rowsAt(commit: string, file: string): Map<string, { dest: string; json: string }> {
+  let blob: string;
+  try {
+    blob = git(["rev-parse", `${commit}:${file}`]).trim();
+  } catch {
+    return new Map(); // file didn't exist at that commit
+  }
+  const cached = parsedByBlob.get(blob);
+  if (cached) return cached;
+  const spec = ROW_KEYS[file]!;
+  const out = new Map<string, { dest: string; json: string }>();
+  try {
+    for (const r of JSON.parse(git(["cat-file", "blob", blob])) as Record<string, unknown>[]) {
+      out.set(spec.key(r), { dest: spec.dest(r), json: JSON.stringify(r) });
+    }
+  } catch {
+    // unparsable historical version: report no destinations rather than guess
+  }
+  parsedByBlob.set(blob, out);
+  return out;
+}
+
+function changedDestinations(commit: string, file: string): string[] | undefined {
+  if (!ROW_KEYS[file]) return undefined;
+  const before = rowsAt(`${commit}^`, file);
+  const after = rowsAt(commit, file);
+  const dests = new Set<string>();
+  for (const [k, v] of after) if (before.get(k)?.json !== v.json) dests.add(v.dest);
+  for (const [k, v] of before) if (!after.has(k)) dests.add(v.dest);
+  return [...dests].sort();
 }
 
 function git(args: string[]): string {
-  return execFileSync("git", args, { cwd: ROOT, encoding: "utf8" });
+  // Data files are several MB; the default 1 MB output buffer would fail silently.
+  return execFileSync("git", args, { cwd: ROOT, encoding: "utf8", maxBuffer: 64 * 1024 * 1024 });
 }
 
 function extractStamp(json: string): Pick<ChangelogEntry, "verified_at" | "verified_by" | "source"> {
@@ -100,12 +145,14 @@ function generate(): ChangelogEntry[] {
         // File deleted in this commit — record the change without a stamp.
         stamp = { verified_at: null, verified_by: null, source: null };
       }
+      const destinations = changedDestinations(commit, file);
       entries.push({
         commit,
         date,
         dataset: file.replace("data/", "").replace(".json", ""),
         summary,
         ...stamp,
+        ...(destinations && destinations.length > 0 ? { destinations } : {}),
       });
     }
   }

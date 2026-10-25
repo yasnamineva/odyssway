@@ -44,9 +44,7 @@ Japan?"). They are weak in five places, and each one is a direction for us:
 Tools are the part AI answers can't copy: they compute from the user's own dates and
 items, deterministically, from verified rows. In priority order:
 
-1. **Per-country rule-change feeds.** The site-wide feed is live (`/changelog.xml`). Per-country
-   feeds need per-row change history (today the changelog is per commit and dataset).
-2. **Calendar-year stay rule.** The engine type is written and tested (patch saved during
+1. **Calendar-year stay rule.** The engine type is written and tested (patch saved during
    the Mauritius work). Merge it the first time an official source states a
    calendar-year cap for visa-free visitors.
 
@@ -211,7 +209,7 @@ more than a Japanese page about the US). Translate the highest-traffic page type
 
 - Launch the medication planner on Product Hunt.
 - Run the first monthly ranking routine (§5.1) as soon as there's a Search Console export.
-- More structured lead times: only 11 permits state a lead time with a number and a reference date; others (India, Saudi Arabia, Hong Kong, Cyprus, Jamaica) need their sources re-read.
+- More structured lead times: 11 permits have one; India, Saudi Arabia, Cyprus and Jamaica state none, and Hong Kong gives only a processing time (re-checked 2026-10-25). Revisit when their sources change.
 - Customs depth for the newest destinations; medication rows wherever an official
   traveller rule exists.
 - Outreach (§5.3) to 10–20 real backlinks; Bing impressions growing.

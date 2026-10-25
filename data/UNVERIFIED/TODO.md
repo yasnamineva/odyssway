@@ -3789,3 +3789,4 @@ Sources: Department of Immigration Zimbabwe — Category A (no visa), Category B
 - **Held: FR** — France isn't in any category (only French Polynesia and the French West Indies). Check the eVisa portal or MFA list.
 - Customs not researched (ZIMRA).
 - Bahrain (2026-10-25): evisa.gov.bh lists ~210 "on-arrival" and "online" countries, but says "terms and conditions apply, click the country name to check your eligibility" (a JS checker), omits the US and UK, and gives no stay lengths. Not publishable as is; needs the per-country eligibility text.
+- Guatemala (2026-10-25): category A/B/C country table is on minex.gob.gt (403 here) and an IGM news page (404); extranjeria.igm.gob.gt has only visa forms. Stay rule is CA-4 (IGM manual PDF). Retry for the table.

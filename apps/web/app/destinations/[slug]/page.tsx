@@ -19,6 +19,7 @@ import { InShort } from "../../../components/content/Blocks";
 import Photo from "../../../components/content/Photo";
 import { destinationPhoto, photoOgImage } from "../../../lib/photos";
 import { VERDICT_STYLES } from "../../../components/CustomsRowCard";
+import { changesForDestination } from "../../../lib/changelog";
 
 interface Params {
   slug: string;
@@ -46,7 +47,12 @@ export async function generateMetadata({
   return {
     title,
     description,
-    alternates: { canonical: destinationPath(dest) },
+    alternates: {
+      canonical: destinationPath(dest),
+      ...(changesForDestination(dest.code).length > 0
+        ? { types: { "application/rss+xml": `${destinationPath(dest)}/feed.xml` } }
+        : {}),
+    },
     // Shared links show the destination's own photo; the brand card otherwise.
     openGraph: { title, description, images: [photo ? photoOgImage(photo) : "/opengraph-image"] },
   };
@@ -242,6 +248,25 @@ export default async function DestinationPage({ params }: { params: Promise<Para
             ))}
           </ul>
         </section>
+      )}
+
+      {changesForDestination(dest.code).length > 0 && (
+      <section className="mt-10" data-testid="destination-changes">
+        <h2 className="text-lg font-semibold text-slate-900">{t("changesTitle", { destination: dest.name })}</h2>
+        <ul className="mt-3 space-y-2 text-sm">
+          {changesForDestination(dest.code, 5).map((c) => (
+            <li key={c.commit} className="flex gap-3">
+              <span className="shrink-0 text-slate-500 tabular-nums">{c.date}</span>
+              <span className="text-slate-800">{c.summary}</span>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-3 text-sm">
+          <a href={`${destinationPath(dest)}/feed.xml`} className="font-semibold text-brand-700 underline underline-offset-2">
+            {t("changesFeed", { destination: dest.name })}
+          </a>
+        </p>
+      </section>
       )}
 
       <section className="mt-12 border-t border-slate-200 pt-4 text-xs leading-relaxed text-slate-500">

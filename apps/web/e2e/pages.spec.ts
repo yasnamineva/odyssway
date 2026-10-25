@@ -391,3 +391,12 @@ test("which passport: compares two passports for one destination", async ({ page
   await expect(page.getByTestId("wp-column")).toHaveCount(2);
   await expect(page.getByTestId("wp-verdict")).toContainText("United Kingdom passport has fewer entry requirements");
 });
+
+test("a destination hub lists its own recent rule changes and has a per-country feed", async ({ page, request }) => {
+  await page.goto("/destinations/zimbabwe");
+  const changes = page.getByTestId("destination-changes");
+  await expect(changes).toContainText("Add Zimbabwe");
+  const feed = await request.get("/destinations/zimbabwe/feed.xml");
+  expect(feed.status()).toBe(200);
+  expect(await feed.text()).toContain("rule changes for Zimbabwe");
+});
