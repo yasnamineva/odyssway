@@ -26,3 +26,14 @@ test("pools Schengen trips and checks a UK stay against its own per-visit limit"
   await expect(page.getByTestId("dc-card")).toHaveCount(2);
   await expect(page.getByTestId("dc-stay")).toContainText("41 days");
 });
+
+test("a visa-free country with no stated stay length says so, not 'no limit'", async ({ page }) => {
+  await page.goto("/day-counter");
+  await pickCombobox(page, "dc-nationality", "United States", "United States");
+  await pickCombobox(page, "dc-dest-0", "United Arab Emirates", "United Arab Emirates");
+  await page.getByTestId("dc-entry-0").fill("2026-03-01");
+  await page.getByTestId("dc-exit-0").fill("2026-03-20");
+  const card = page.getByTestId("dc-card");
+  await expect(card).toContainText("No fixed number of days is stated");
+  await expect(card).not.toContainText("No day limit");
+});

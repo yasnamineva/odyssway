@@ -28,6 +28,7 @@ export const MICRO_STATE_COORDS: Record<string, [number, number]> = {
   MO: [113.54, 22.19],
   MV: [73.5, 3.2],
   SC: [55.45, -4.62],
+  MU: [57.55, -20.25],
 };
 
 /** The country's geometry, or undefined if this alpha-2 code isn't in our crosswalk or the atlas. */

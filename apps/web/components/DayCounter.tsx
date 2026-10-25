@@ -208,7 +208,11 @@ function ResultCard({ r }: { r: DestinationCount }) {
     return (
       <section className="rounded-2xl border border-slate-200 p-4" data-testid="dc-card">
         <h3 className="font-display text-base font-bold text-slate-900">{r.destinationName}</h3>
-        <p className="mt-1 text-sm text-slate-700">{r.basis === "visa_required" ? tc("stayVisaRequired") : t("noCount")}</p>
+        <p className="mt-1 text-sm text-slate-700">{r.basis === "visa_required"
+            ? tc("stayVisaRequired")
+            : r.basis === "citizen" || r.basis === "free_movement"
+              ? t("noCount")
+              : tc("stayUnconfirmed")}</p>
         {r.legalSource && (
           <SourceNote className="mt-2" name={r.legalSource.name} url={r.legalSource.url} date={r.verifiedAt} sourceLabel={tc("sourceLabel")} checkedLabel={r.verifiedAt ? tc("checkedOn", { date: r.verifiedAt }) : undefined} />
         )}

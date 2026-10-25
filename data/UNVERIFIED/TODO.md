@@ -3779,6 +3779,6 @@ Sources: Fiji Ministry of Immigration — Visa exempted countries (list is in th
 - 22 entry rows, all visa_free, fixed_per_entry 120 (4 months counted as 120 days).
 - Customs not researched (FRCS).
 
-## Candidate: Mauritius (2026-10-23) — HELD, stay model
+## Mauritius (2026-10-23/25)
 - Passport and Immigration Office "Visa Requirements" page (passport.govmu.org/passport/?page_id=605) + "Visa Requirement Country-wise" PDF (Visa-Requirement-Country-2025.pdf, created 2 Sep 2025): all 22 roster passports "No visa required". EU passports exempt from visa regulations.
-- Stay: tourist visa "maximum period of six months may be granted in a calendar year on a case to case basis"; the officer decides each visit. HELD because a calendar-year cap isn't a rolling window (a 365-day rolling model would flag some legal stays). Options: add a `calendar_year` StayPolicy kind, or publish with stayPolicy omitted. Owner decision.
+- PUBLISHED 2026-10-25 (22 rows) with no day count: the six-month calendar-year cap is stated only for the tourist VISA; for visa-free visitors the page says only that the Immigration Officer decides the stay. Applying the cap to exempt visitors would be inference. A tested `calendar_year` StayPolicy patch is saved (not merged) for when a source states such a cap for exempt visitors.

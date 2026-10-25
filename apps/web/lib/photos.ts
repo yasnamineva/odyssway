@@ -74,6 +74,7 @@ export const photos = {
   "dest-me": { width: 1280, height: 960, author: "falco", page: "https://pixabay.com/photos/kotor-montenegro-balkan-1094388/" },
   "dest-am": { width: 1280, height: 679, author: "Makalu", page: "https://pixabay.com/photos/armenia-the-monastery-of-khor-virap-3718710/" },
   "dest-uy": { width: 1280, height: 960, author: "pirizluz", page: "https://pixabay.com/photos/palacio-salvo-montevideo-uruguay-2830233/" },
+  "dest-mu": { width: 1280, height: 693, author: "nike159", page: "https://pixabay.com/photos/mauritius-le-morne-le-morne-brabant-3853467/" },
   "dest-fj": { width: 1280, height: 853, author: "plutozoom", page: "https://pixabay.com/photos/fiji-island-kuata-island-mountain-9963510/" },
   "dest-zm": { width: 1280, height: 853, author: "8moments", page: "https://pixabay.com/photos/waterfall-victoria-falls-spray-2227010/" },
   "dest-gh": { width: 1280, height: 853, author: "bwellen", page: "https://pixabay.com/photos/elmina-slave-castle-cape-coast-3614110/" },

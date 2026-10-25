@@ -780,3 +780,9 @@ gate was passed or missed, and why.
   cigarettes or 0.5 kg tobacco or cigars). Cash held until the 2024 border-form guide can be read.
 - **2026-10-23. Fiji: 22 entry rows.** From the Ministry of Immigration: every passport we cover
   is visa-exempt and gets a visitor permit on arrival for up to 4 months, extendable by 2.
+- **2026-10-25. Mauritius: 22 entry rows; day-counter fix.** From the Passport and Immigration
+  Office's 2025 country list: no visa needed for any passport we cover; the stay is decided by
+  the officer on arrival (no day count shown — the six-month calendar-year cap is stated only for
+  tourist visas). Fix: the day counter said "No day limit applies" for visa-free countries whose
+  stay length isn't stated (93 rows, e.g. UAE, Bahamas); it now says the stay is set on arrival,
+  and keeps "no limit" for citizens and free-movement travellers only. E2E test added.
