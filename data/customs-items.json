@@ -113,6 +113,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "Federally illegal at the border regardless of state or foreign-country legality, including for medical use.",
+    "summary": "Banned: cannabis is federally illegal at the US border, even if legal in a US state or abroad, and even for medical use.",
     "legal_source": {
       "name": "U.S. Customs and Border Protection — marijuana remains illegal under federal law",
       "url": "https://www.cbp.gov/travel/clearing-cbp/cbp-reminds-travelers-canada-marijuana-remains-illegal-united-states"
@@ -343,6 +344,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "Controlled drugs are on the UK's banned goods list and will be seized. Cannabis and cannabis resin are Class B controlled drugs under the Misuse of Drugs Act 1971 (Schedule 2, Part II).",
+    "summary": "Banned: cannabis and cannabis resin are Class B controlled drugs and on the UK's banned goods list; they will be seized.",
     "legal_source": {
       "name": "gov.uk — Banned and restricted goods",
       "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/banned-and-restricted-goods"
@@ -559,6 +561,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "Taking cannabis across the border in any form, including oils containing THC or CBD, without a permit or exemption authorized by Health Canada is a serious criminal offence, whatever the amount, even with a medical document and even if you travel from a place where cannabis is legal. If you have cannabis with you when you arrive, you must declare it to the CBSA.",
+    "summary": "Banned without a Health Canada permit: cannabis in any form, including THC or CBD oils, even with a medical document. Declare any you have.",
     "legal_source": {
       "name": "CBSA — Bringing cannabis across the border",
       "url": "https://www.cbsa-asfc.gc.ca/travel-voyage/cannabis-eng.html"
@@ -631,6 +634,7 @@
       "quantity": "120 mL / 120 g"
     },
     "notes": "Minimum age 18 to bring tobacco or vaping products into Canada.",
+    "summary": "Duty-free from age 18: up to 120 ml of vaping liquid or 120 g of solid vaping product.",
     "legal_source": {
       "name": "CBSA — Alcohol and tobacco limits",
       "url": "https://www.cbsa-asfc.gc.ca/travel-voyage/atl-lat-eng.html"
@@ -818,6 +822,7 @@
     "limits": {
       "description": "Falls under the general personal-goods value threshold: €300 for land travellers, €430 for air/sea travellers"
     },
+    "summary": "No separate vape allowance: e-cigarettes count toward the general personal-goods limit (€300 by land, €430 by air or sea).",
     "legal_source": {
       "name": "Council Directive 2007/74/EC, Art. 7",
       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32007L0074"
@@ -1265,6 +1270,7 @@
       "description": "Products made only from the stalks or seeds of the cannabis plant: present a Certificate of Manufacture and a Component Analysis Report from an analytical laboratory, both stating that the product is made only from stalks or seeds."
     },
     "notes": "Products made from other parts of the plant (leaves, buds, branches, roots) are \"cannabis\" under the Cannabis Control Act and need an import permission from the Ministry of Health, Labour and Welfare (ask its Narcotics Control Department by email). Tokyo Customs gives this guidance for international mail; the health ministry publishes a guide for anyone importing CBD products.",
+    "summary": "Stalk- or seed-only products need a manufacturer's certificate and lab report saying so. Anything else counts as cannabis and needs the health ministry's permission.",
     "legal_source": {
       "name": "Tokyo Customs — Cannabis Control Act",
       "url": "https://www.customs.go.jp/tokyo/english/yuubin/taimatorishimari.htm"
@@ -1481,6 +1487,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "Kenya Revenue Authority lists narcotic drugs among prohibited imports under the East African Community Customs Management Act, 2004 (Second and Third Schedules). Cannabis, and cannabis resin and extracts, are narcotic drugs under international control (INCB Yellow List).",
+    "summary": "Banned: narcotic drugs, including cannabis, are prohibited imports into Kenya.",
     "legal_source": {
       "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
       "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
@@ -1636,6 +1643,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "SARS's traveller guide lists narcotics and habit-forming drugs among prohibited goods, which may not be imported. Cannabis, and cannabis resin and extracts, are narcotic drugs under international control (INCB Yellow List). CBD isn't named on the pages read, so this row doesn't cover CBD products; ask the authority before travelling with them.",
+    "summary": "Banned: narcotics and habit-forming drugs, including cannabis, are prohibited imports into South Africa.",
     "legal_source": {
       "name": "SARS — SC-PA-01-03 Duty Free Allowances for Travellers (External Guide, Rev. 8, eff. 1 July 2026)",
       "url": "https://www.sars.gov.za/wp-content/uploads/Docs/Customs/SC-PA-01-03-Duty-Free-Allowances-for-Travellers-External-Guide.pdf"
@@ -1827,6 +1835,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "ANAM's list of goods you cannot bring into Mexico starts with \"estupefacientes\" (narcotics). CBD isn't named on the pages read, so this row doesn't cover CBD products; ask the authority before travelling with them.",
+    "summary": "Banned: narcotics, including cannabis, are on the list of goods you can't bring into Mexico.",
     "legal_source": {
       "name": "ANAM — Mercancía que no puedes ingresar a México",
       "url": "https://www.anam.gob.mx/mercancia-que-no-puedes-ingresar-a-mexico/"
@@ -1848,6 +1857,7 @@
     "category": "e_cigarettes",
     "verdict": "prohibited",
     "notes": "E-cigarettes and similar personal electronic/electric vaporization devices — including heated-tobacco and nicotine-delivery systems — are explicitly listed by ANAM as merchandise that cannot be brought into Mexico (tariff classification 8543.40.01 LIGIE).",
+    "summary": "Banned: e-cigarettes, vaping and heated-tobacco devices are on the list of goods you can't bring into Mexico.",
     "legal_source": {
       "name": "ANAM — Mercancía que no puedes ingresar a México",
       "url": "https://www.anam.gob.mx/mercancia-que-no-puedes-ingresar-a-mexico/"
@@ -2110,6 +2120,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "The Thai FDA's traveller guidance says cannabis- or hemp-based foods may not be imported, cosmetics containing cannabis extract or hemp may not be imported, and herbal products containing cannabis or hemp may not be imported. The guidance doesn't name CBD (cannabidiol); our reading is that CBD oils and other CBD products made from cannabis or hemp are covered as cannabis- or hemp-extract products.",
+    "summary": "Banned: foods, cosmetics and herbal products containing cannabis or hemp may not be brought into Thailand.",
     "legal_source": {
       "name": "Thai FDA — Passenger belongings related to health products into the Kingdom of Thailand (foods, cosmetics, herbal products)",
       "url": "https://en.fda.moph.go.th/guideline-of-importation-for-personal-use/bringing-of-health-products-into-the-kingdom-of-thailand-01/"
@@ -2382,6 +2393,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "Rwanda Revenue Authority lists \"narcotic drugs under international control\" among prohibited imports (EAC Customs Management Act 2004, Second Schedule). Cannabis, and cannabis resin and extracts, are on that international list (INCB Yellow List). CBD isn't named on the pages read, so this row doesn't cover CBD products; ask the authority before travelling with them.",
+    "summary": "Banned: narcotic drugs under international control, including cannabis, are prohibited imports into Rwanda.",
     "legal_source": {
       "name": "Rwanda Revenue Authority — Prohibited Goods for Travelers (EAC Customs Management Act 2004, Second Schedule)",
       "url": "https://www.rra.gov.rw/en/customs-services/travelers/prohibited-goods"
@@ -2537,6 +2549,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "The Egyptian Customs Authority's passenger page gives narcotic drugs as an example of prohibited goods, which may not be imported or exported (Customs Law No. 207 of 2020). Cannabis, and cannabis resin and extracts, are narcotic drugs under international control (INCB Yellow List). CBD isn't named on the pages read, so this row doesn't cover CBD products; ask the authority before travelling with them.",
+    "summary": "Banned: narcotic drugs, including cannabis, may not be imported into or exported from Egypt.",
     "legal_source": {
       "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
       "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
@@ -2613,6 +2626,7 @@
     "limits": {
       "description": "Electronic cigarettes require prior clearance from the competent control authority (the source names the General Authority for Export & Import Control, GOEIC / الهيئة العامة للرقابة على الصادرات والواردات, as an example) before Customs will release them."
     },
+    "summary": "E-cigarettes need prior clearance from the competent control authority (such as GOEIC) before Customs releases them.",
     "legal_source": {
       "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
       "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
@@ -2921,6 +2935,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "Narcotics (\"stupéfiants\") are on Morocco's list of goods prohibited from import for visitors. Cannabis, and cannabis resin and extracts, are narcotic drugs under international control (INCB Yellow List). CBD isn't named on the pages read, so this row doesn't cover CBD products; ask the authority before travelling with them.",
+    "summary": "Banned: narcotics, including cannabis, are prohibited imports for visitors to Morocco.",
     "legal_source": {
       "name": "Kingdom of Morocco Ministry of Foreign Affairs — Consular guide: Customs facilities for non-residents visiting Morocco temporarily",
       "url": "https://fr.diplomatie.ma/visiter-le-maroc-facilit%C3%A9s-douani%C3%A8res-accord%C3%A9es-aux-personnes-ayant-leur-r%C3%A9sidence-%C3%A0-l%C3%A9tranger-et-s%C3%A9journant-temporairement"
@@ -3177,6 +3192,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "The Narcotic Drugs and Psychotropic Substances Act, 1985 defines \"cannabis (hemp)\" to cover charas (resin/hashish/hash oil) and ganja (the flowering or fruiting tops) — both are prohibited narcotic drugs, and importing them into India carries severe criminal penalties. The statutory definition of cannabis excludes seeds and leaves when not accompanied by the flowering/fruiting tops (the basis for bhang, a leaf-based preparation, being treated differently under Indian law domestically) — but this carve-out is about domestic cultivation/sale, not a confirmed customs import allowance, and no primary CBIC/NDPS source describing a personal-import allowance for CBD oil or hemp-derived products (with or without a foreign prescription) was found in this pass. Whether CBD oil or hemp-derived products can be brought in isn't answered by any official page read; ask Indian Customs (CBIC) before travelling with them.",
+    "summary": "Banned: cannabis resin (charas) and flowering tops (ganja) are prohibited narcotic drugs in India, with severe criminal penalties for importing them.",
     "legal_source": {
       "name": "Narcotic Drugs and Psychotropic Substances Act, 1985, Section 2(iii) (definition of cannabis)",
       "url": "https://dor.gov.in/files/acts_files/Narcotic-Drugs-and-Psychotropic-Substances-Act-1985_0.pdf"
@@ -3706,6 +3722,7 @@
     "category": "cbd_cannabis",
     "verdict": "depends",
     "notes": "Cannabis and cannabis-containing therapeutic goods are excluded from the general personal-importation scheme and are prohibited imports under the Customs (Prohibited Imports) Regulations 1956, EXCEPT under the traveller's exemption: a traveller may import medicinal cannabis for their own medical treatment (or that of someone they're caring for) if it was prescribed by a medical practitioner and supplied through a pharmacy, up to a 3-month supply per the prescription (or, for medicinal cannabis vapes, without the 3-month cap under a separate exemption). Recreational/non-prescribed cannabis is prohibited outright, with no CBD-specific carve-out confirmed for travellers. Evidence (prescription/label) may be required on entry.",
+    "summary": "Only prescribed medicinal cannabis, supplied through a pharmacy, up to 3 months' supply under the traveller's exemption. Anything else is a prohibited import.",
     "legal_source": {
       "name": "Therapeutic Goods Administration — Medicinal cannabis: importation and the traveller's exemption",
       "url": "https://www.tga.gov.au/resources/explore-topic/medicinal-cannabis-hub/medicinal-cannabis-information-patients/medicinal-cannabis-importation-and-travellers-exemption"
@@ -3730,6 +3747,7 @@
       "quantity": "2 vapes / 20 accessories / 200 mL liquid"
     },
     "notes": "Vapes cannot otherwise be purchased from overseas retailers or websites and mailed/couriered into Australia for personal use, even with a prescription — that route is prohibited outright. Vapes containing controlled drugs (e.g. cannabis) are not covered by these quantity limits and are treated as prohibited drugs instead. Significant penalties apply for unlawfully importing vaping goods.",
+    "summary": "Traveller's exemption, by air or sea, for your own use: up to 2 vapes, 20 accessories (pods, cartridges) and 200 ml of vape liquid.",
     "legal_source": {
       "name": "Therapeutic Goods Administration — Vapes: information for individuals and patients",
       "url": "https://www.tga.gov.au/products/unapproved-therapeutic-goods/therapeutic-vaping-goods/vaping-hub/vapes-information-individuals-and-patients"
@@ -3941,6 +3959,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "Dubai Customs' passenger guide lists \"narcotics of all kinds\" among items not allowed for import by passengers. CBD isn't named on the pages read, so this row doesn't cover CBD products; ask the authority before travelling with them.",
+    "summary": "Banned: narcotics of all kinds, including cannabis, are not allowed into the UAE by passengers.",
     "legal_source": {
       "name": "Dubai Customs — Passenger Customs Guide, Version 6 (2025)",
       "url": "https://www.dubaicustoms.gov.ae/en/OpenData/Publications/PassengerCustomsGuide.pdf"
@@ -4479,6 +4498,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "ZATCA's own traveler-facing customs guidance lists 'alcohol and drugs of all kinds' among prohibited items, warning that smuggling any prohibited item carries penalties including imprisonment and a fine — the page does not name individual drugs. Saudi Arabia's controlled-substance clearance system (Saudi Food and Drug Authority, per the traveler user manual already cited on this site's medication entries for SA) governs prescribed narcotic/psychotropic medicines specifically. CBD isn't named on the pages read, so this row doesn't cover CBD products; ask the authority before travelling with them.",
+    "summary": "Banned: drugs of all kinds are prohibited imports into Saudi Arabia, with prison and fines for smuggling.",
     "legal_source": {
       "name": "ZATCA (Saudi Zakat, Tax and Customs Authority) — prohibited items for travelers",
       "url": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Pages/customs-individual/Travel-pages/disclosure-amounts.aspx"
@@ -4767,6 +4787,7 @@
       "quantity": "0"
     },
     "notes": "Confirmed via Singapore Customs' prohibited/controlled goods listing, citing the Health Sciences Authority (HSA) Tobacco Regulation Branch: 'Imitation tobacco products (electronic cigarettes, vaporisers) and components of imitation tobacco products' are prohibited, as is 'any solution or substance...intended to be used with an electronic nicotine delivery system or vaporizers.' HSA actively enforces this at the border and reports frequent seizures/prosecutions, including for adulterated vape pods (e.g. etomidate-laced products) in 2026.",
+    "summary": "Banned: e-cigarettes, vaporisers, their parts and e-liquids can't be imported, owned or used in Singapore. There's no personal allowance.",
     "legal_source": {
       "name": "Singapore Customs - Controlled and Prohibited Goods for Imports",
       "url": "https://www.customs.gov.sg/doing-business/import-operations/import-procedures/controlled-and-prohibited-goods-for-imports/"
@@ -5484,6 +5505,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "Cannabis, cannabis extracts, THC, CBD and related cannabinoids are separately and absolutely prohibited under the Fourth Schedule to the Misuse of Drugs Regulations, regardless of prescription or approval — this is a distinct, harder line than the ordinary controlled-medication approval process (HSA Appendix A), which does not apply here. Singapore enforces the Misuse of Drugs Act with severe penalties, including for personal-use quantities.",
+    "summary": "Banned: cannabis, its extracts, THC and CBD are absolutely prohibited in Singapore, even with a prescription.",
     "legal_source": {
       "name": "Health Sciences Authority (HSA) — Document guide for bringing in personal medications, citing the Fourth Schedule to the Misuse of Drugs Regulations",
       "url": "https://file.go.gov.sg/document-guide-for-bringing-in-personal-medications.pdf"
@@ -6729,6 +6751,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "RA 9165 (Comprehensive Dangerous Drugs Act of 2002), Sec. 3(j), defines 'Dangerous Drugs' as those listed in the Schedules annexed to the 1961 Single Convention on Narcotic Drugs (as amended by the 1972 Protocol) and the 1971 Single Convention on Psychotropic Substances — both of which schedule cannabis and its resin. The Board Regulation 1/2014 medical-travel exception cited on this site's 'controlled medication' entry for the Philippines applies to prescribed pharmaceutical drug preparations with a physician's letter and prescription; no personal-travel carve-out for cannabis was found on the sources checked. CBD isn't named on the pages read, so this row doesn't cover CBD products.",
+    "summary": "Banned: cannabis is a dangerous drug in the Philippines, with no personal-travel exception found.",
     "legal_source": {
       "name": "Republic Act No. 9165 — Comprehensive Dangerous Drugs Act of 2002, Sec. 3(j) (Dangerous Drugs)",
       "url": "https://ddb.gov.ph/wp-content/uploads/2022/01/RA-9165.pdf"
@@ -6846,6 +6869,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "Indonesian Customs' own passenger-baggage guidance names 'narkotika' (narcotics) — alongside psychotropics, precursors, and medicines — as a category that triggers mandatory red-lane physical inspection; cannabis (ganja) is classified as a Golongan I (Schedule I, the strictest category) narcotic under Indonesia's Narcotics Law (UU No. 35 Tahun 2009), covering personal possession and import with no traveler exception found on this source. The UK government's travel advice adds that cannabis and cannabis-based products, 'including medicinal cannabis, cannabis-based oils and creams, hemp-based products, CBD, THC, hash and edibles, are illegal in Indonesia', in a bottle, vape or any other form.",
+    "summary": "Banned: cannabis and cannabis-based products, including CBD, hemp products and medicinal cannabis, are illegal in Indonesia in any form.",
     "legal_source": {
       "name": "Direktorat Jenderal Bea dan Cukai (Indonesian Customs) — Barang Penumpang (Passenger Goods)",
       "url": "https://www.beacukai.go.id/barang-penumpang"
@@ -6951,6 +6975,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "Decree 57/2022/ND-CP puts \"cannabis and cannabis preparations\" and delta-9-tetrahydrocannabinol (THC) on List I: narcotic substances absolutely banned in medicine and social life, usable only in research, testing, forensic examination and criminal investigation under special rules of the competent authority.",
+    "summary": "Banned: cannabis, cannabis preparations and THC are on Vietnam's List I of narcotics, banned outside research and investigation.",
     "legal_source": {
       "name": "Decree No. 57/2022/ND-CP on the lists of narcotic substances and precursors, List I (Official Gazette, Công báo No. 709+710, 5 Sept 2022)",
       "url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2022/8/37734/41623-1-2022709-71057-2022-nd-cp.pdf"
@@ -6970,6 +6995,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "Decree 57/2022/ND-CP puts \"cannabis and cannabis preparations\" and delta-9-THC on List I, the substances absolutely banned in medicine and social life. CBD is not named on its own; our reading is that CBD products made from cannabis count as cannabis preparations.",
+    "summary": "Banned in our reading: cannabis preparations are on Vietnam's banned List I; CBD isn't named on its own, but products made from cannabis count.",
     "legal_source": {
       "name": "Decree No. 57/2022/ND-CP on the lists of narcotic substances and precursors, List I (Official Gazette, Công báo No. 709+710, 5 Sept 2022)",
       "url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2022/8/37734/41623-1-2022709-71057-2022-nd-cp.pdf"
@@ -7034,6 +7060,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "Korea Customs says this applies even to medicines sold abroad or prescribed, if they contain controlled ingredients. Its one exception: carrying controlled medicine for your own treatment with prior approval from the Minister of Food and Drug Safety (apply through nedrug.mfds.go.kr).",
+    "summary": "Banned: THC, CBD and cannabinol count as cannabis ingredients in Korea; bringing them in can mean life imprisonment or at least 5 years.",
     "limits": {
       "description": "Korea Customs lists cannabinol, tetrahydrocannabinol (THC) and cannabidiol (CBD) as cannabis ingredients under the Narcotics Control Act; bringing them in is punishable by life imprisonment or at least 5 years."
     },
@@ -7056,6 +7083,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "Korea Customs says this applies even to medicines sold abroad or prescribed. Its one exception: carrying controlled medicine for your own treatment with prior approval from the Minister of Food and Drug Safety (apply through nedrug.mfds.go.kr).",
+    "summary": "Banned: Korea treats CBD as a cannabis ingredient, even in medicines bought or prescribed abroad, unless you hold prior MFDS approval.",
     "legal_source": {
       "name": "Korea Customs Service — Precautions for medicines containing narcotic ingredients (마약성분 함유 의약품 주의사항)",
       "url": "https://www.customs.go.kr/kcs/cm/cntnts/cntntsView.do?mi=13807&cntntsId=7640"
@@ -7081,6 +7109,7 @@
     "category": "e_cigarettes",
     "verdict": "prohibited",
     "notes": "National Assembly Resolution 173/2024/QH15 bans the production, trade, importation, possession, transportation and use of e-cigarettes and heated-tobacco products nationwide, in force since 1 January 2025; Vietnam Customs directed all customs departments (Official Letter No. 17/TCHQ-GSQL) to halt clearance of these products, and a December 2025 follow-up resolution closed related loopholes.",
+    "summary": "Banned since 1 January 2025: e-cigarettes and heated-tobacco products can't be imported, carried, owned or used in Vietnam.",
     "legal_source": {
       "name": "WHO Viet Nam — National Assembly Resolution 173/2024/QH15 banning e-cigarettes and heated tobacco",
       "url": "https://www.who.int/vietnam/news/detail/11-12-2025-world-health-organization-welcomes-national-assembly-s-strong-stance-on-banned-e-cigarettes-and-heated-tobacco-products"
@@ -7757,21 +7786,6 @@
     "status": "verified"
   },
   {
-    "slug": "e-cigarettes-za",
-    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
-    "destination": "ZA",
-    "category": "e_cigarettes",
-    "verdict": "allowed",
-    "notes": "South Africa has no dedicated vaping law yet — the Tobacco Products and Electronic Delivery Systems Control Bill (B33-2022), which would introduce vape-specific regulation, is still in committee and hasn't passed the National Assembly or NCOP or been signed into law. E-cigarettes fall under the general personal-goods customs allowance, not a vape-specific rule, for now.",
-    "legal_source": {
-      "name": "Parliament of South Africa — Tobacco Products and Electronic Delivery Systems Control Bill (B33-2022)",
-      "url": "https://www.parliament.gov.za/bill/2307574"
-    },
-    "verified_at": "2026-09-18",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
-  },
-  {
     "slug": "e-cigarettes-tr",
     "names": [
       "e-cigarette",
@@ -7877,21 +7891,6 @@
         "url": "https://www.customs.go.kr/call/ad/crmcc/selectFaqViewPage.do?mi=6822&cnslKnwlSrno=436"
       }
     ]
-  },
-  {
-    "slug": "e-cigarettes-us",
-    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid"],
-    "destination": "US",
-    "category": "e_cigarettes",
-    "verdict": "allowed",
-    "notes": "CBP's own prohibited-and-restricted-items page (which does cover alcohol, firearms, food, plants, medication and more) doesn't mention e-cigarettes or vapes anywhere — the absence is the finding. FDA/CBP material about e-cigarette import compliance (marketing authorization, Submission Tracking Numbers, import alerts) addresses commercial importers, not a traveler carrying their own already-owned device; a personal vape falls under the general personal-goods rules, not a dedicated restriction.",
-    "legal_source": {
-      "name": "U.S. Customs and Border Protection — Prohibited and Restricted Items",
-      "url": "https://www.cbp.gov/travel/us-citizens/know-before-you-go/prohibited-and-restricted-items"
-    },
-    "verified_at": "2026-09-18",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
   },
   {
     "slug": "e-cigarettes-ph",
@@ -9070,6 +9069,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "Citizens Information: \"It is an offence to import or carry on your person, controlled substances (drugs) when travelling to or from Ireland. Examples of controlled substances are cannabis, cocaine, heroin, and amphetamines.\" Customs runs a National Drugs Team with detector-dog units at airports and ferry ports. Revenue lists \"illegal or dangerous drugs\" among goods that must be declared to a customs officer. Medicines containing controlled drugs are handled separately (see the controlled-medication entry).",
+    "summary": "Banned: it's an offence to bring controlled drugs such as cannabis into Ireland. Customs uses detector dogs at airports and ferry ports.",
     "legal_source": {
       "name": "Citizens Information — Customs regulations for travellers to Ireland (drugs)",
       "url": "https://www.citizensinformation.ie/en/travel-and-recreation/travel-to-ireland/customs-regulations-for-travellers/"
@@ -9363,6 +9363,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "Import and export of drugs including morphine, heroin, opium and cannabis is strictly prohibited. Under the Customs Act 1967 and the Dangerous Drugs Act 1952 the penalty for drug trafficking is a mandatory death penalty. There is no recreational or medical-cannabis exception for travellers on this page; prescription drugs may only be imported under Ministry of Health licences/permits.",
+    "summary": "Banned: importing cannabis into Malaysia is strictly prohibited; drug trafficking carries a mandatory death penalty.",
     "legal_source": {
       "name": "Royal Malaysian Customs Department — Traveler's Guide",
       "url": "https://www.customs.gov.my/en/individu/pengembara/travelers-guide"
@@ -9937,6 +9938,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "The airport operator's customs page: narcotics — \"Zero-tolerance policy. Penalties include life imprisonment. Applies regardless of legal status in the country of origin.\" UK FCDO: \"Possession, trafficking and manufacture of any illegal drugs are serious offences in Maldives and penalties can be severe\" — arrest and detention, long prison sentences, corporal punishment (whipping) in some cases, and the death penalty for the most serious offences. No recreational or medical-cannabis exception for travellers was found, and CBD-specific treatment was not confirmed.",
+    "summary": "Banned: zero tolerance for narcotics in the Maldives, whatever their status where you come from; penalties include life imprisonment.",
     "legal_source": {
       "name": "Maldives Airports Company — Velana International Airport: Customs & Security, Prohibited & Restricted Items",
       "url": "https://maldivesairport.com/customs-security"
@@ -10656,6 +10658,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "\"Marijuana is still listed under the Category two narcotics in accordance with 'Narcotics Hazard Prevention Act' in Taiwan.\" \"Offenders of manufacturing, transporting, selling, cultivating, transferring, possessing or taking Category two narcotics are subject to life imprisonment or a minimum ten-year fixed-term imprisonment, and may also be subject to a fine of no more than fifteen million New Taiwan dollars.\" There is no recreational or medical exception, and Taiwanese customs authorities have specifically warned travelers not to bring in cannabis products even from countries where cannabis is legal (e.g. Thailand).",
+    "summary": "Banned: marijuana is a Category 2 narcotic in Taiwan; possessing or transporting it can mean life or at least 10 years in prison.",
     "legal_source": {
       "name": "Taipei Customs, Ministry of Finance (Taiwan) — Taipei Customs Urges the Public Not to Import Cannabis and Its Related Products",
       "url": "https://web.customs.gov.tw/etaipei/singlehtml/1373?cntId=4a12960866294b029ad6bea2fa4ff4da"
@@ -11004,6 +11007,7 @@
       "description": "Covered by the same blanket ban as other narcotics: \"It is prohibited the import, export, transit of narcotics and psychotropic substances,\" which explicitly extends to \"plants, narcotic medicaments and psychotropic substances of natural or synthetic nature.\" A criminal offense under Albanian Criminal Law."
     },
     "notes": "Albania has had major real-world cannabis cultivation and trafficking enforcement over the past decade, and the Customs Authority's page names no medical or personal-use exception for travelers. There is no THC threshold or de minimis carve-out stated.",
+    "summary": "Banned: Albania prohibits importing narcotics, including narcotic plants; it's a criminal offence with no personal-use exception.",
     "legal_source": {
       "name": "General Directorate of Customs (Republic of Albania) — Narcotics and Psychotropic Substances and human trafficking",
       "url": "https://www.dogana.gov.al/english/c/177/239/narcotics-and-psychotropic-substances-and-human-trafficking"
@@ -11223,6 +11227,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "Cyprus Customs lists narcotic drugs, psychotropic substances and other controlled pharmaceuticals among goods whose importation is prohibited.",
+    "summary": "Banned: narcotic drugs and psychotropic substances are prohibited imports into Cyprus.",
     "legal_source": {
       "name": "Cyprus Customs & Excise Department — Prohibitions & restrictions (passengers)",
       "url": "https://www.mof.gov.cy/mof/customs/customs.nsf/All/0D56470143C54886C22572BF002D7648?OpenDocument="
@@ -11584,6 +11589,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "Poisons, Opium and Dangerous Drugs Ordinance s.28: 'No poppy plant, coca plant, or hemp plant [Cannabis sativa L], or seeds, pods, leaves, flowers, or any part of any such plant or any preparation thereof, shall be imported or brought into or exported from Sri Lanka.' s.29 bans possession or use of hemp resin and preparations 'commonly known as bhang, hashish or ganja' except as licensed (s.30 exempts licensed galenical preparations and hemp rope/fibre). GOV.UK travel advice: 'Illegal drugs, including cannabis, carry severe penalties' and 'You should expect a long jail sentence and heavy fines', including in transit; airports use technology to detect illegal items. Medical-cannabis prescriptions from other countries are not recognised anywhere in these sources. CBD products are not specifically addressed by an official traveller page (see unverified).",
+    "summary": "Banned: no part of the hemp (cannabis) plant, or any preparation of it, may be brought into Sri Lanka.",
     "legal_source": {
       "name": "Poisons, Opium and Dangerous Drugs Ordinance (as amended to Act No. 26 of 1986), ss. 28–29 — text published by NMRA",
       "url": "https://cdn.prod.website-files.com/666d0695ca3ba7fa496a5068/66d0118a99a826f61299405c_podd_drugs_ordinance_06.pdf"
@@ -12459,6 +12465,7 @@
       "description": "Bringing cannabis into Colombia without a licence is a crime, even in transit and even in small amounts."
     },
     "notes": "Código Penal (Ley 599 de 2000) Art. 376 as modified by Ley 1453 de 2011: anyone who 'sin permiso de autoridad competente, introduzca al país, así sea en tránsito o saque de él' narcotic or psychotropic substances faces 128–360 months' prison; if the quantity does not exceed 1,000 g of marijuana or 200 g of hashish the penalty is 64–108 months. The only carve-out (added by Ley 1787 de 2016) is medical/scientific cannabis use under licences from the Ministry of Health or Ministry of Justice. Domestic 'personal dose' rules do not authorise import. CBD products are not specifically addressed by this source — treat as unverified. Travel advice (gov.uk) also stresses severe penalties for drug possession and trafficking.",
+    "summary": "Banned: bringing cannabis into Colombia without a licence is a crime, even in transit and in small amounts.",
     "legal_source": {
       "name": "Ley 599 de 2000 (Código Penal), Art. 376 – Secretaría del Senado",
       "url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0599_2000_pr014.html"
@@ -12986,6 +12993,7 @@
       "description": "Narcotics, including cannabis, may not be imported; drug offences are punished severely even for tiny amounts."
     },
     "notes": "German Foreign Office: import of 'Rauschgift' is prohibited, and drug offences are punished 'schon bei geringsten Mengen und bei jeder Art von Drogen mit langjährigen Haftstrafen (bis lebenslänglich)'. Japan MOFA: narcotics may not be brought in and their import, possession and use are severely punished. France: drug possession/use/trade severely punished, with prison plus permanent ban from the territory. CBD products are not specifically addressed by any source read — do not assume CBD is allowed.",
+    "summary": "Banned: narcotics, including cannabis, may not be imported into Jordan; drug offences are punished severely even for tiny amounts.",
     "legal_source": {
       "name": "Auswärtiges Amt — Jordanien: Reise- und Sicherheitshinweise (Einreise und Zoll)",
       "url": "https://www.auswaertiges-amt.de/de/service/laender/jordanien-node/jordaniensicherheit-218008"
@@ -13535,6 +13543,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "Ministry of Public Health 'Items Prohibited from Entering the State of Qatar' (covering active raw materials or 'any pharmaceutical dosage forms i.e tablets, capsules, syrup, injection, oils, etc.') lists CANNABIS, CANNABIS RESIN and DRONABINOL (synthetic THC). Medical cannabis prescriptions do not make them allowed. The General Authority of Customs' list of goods forbidden by tariff also includes Cannabis sativa, Hashish and hemp seeds. GOV.UK: zero tolerance; possession of drugs 'including cannabis, (even residual amounts)' brings severe penalties, also in transit, and airports scan transit baggage. CBD is not named on any page read: CBD extracted from cannabis falls within 'cannabis … in any pharmaceutical dosage form … oils', but no source addresses hemp-derived CBD by name, so 'cbd' is not in names; ask MOPH before travelling with any CBD product.",
+    "summary": "Banned: cannabis, cannabis resin and synthetic THC (dronabinol) are prohibited in Qatar, even with a medical prescription.",
     "legal_source": {
       "name": "Ministry of Public Health Qatar, Pharmacy and Drug Control Department — 'Controls and Regulations for the release of narcotic drugs, psychotropic substances and psychoactive drugs in the possession of patients arriving in or departing the State of Qatar' (Guideline of Controlled Drugs for Travellers, PDF)",
       "url": "https://www.moph.gov.qa/_layouts/15/download.aspx?SourceUrl=/Admin/Lists/PublicationsAttachments/Attachments/201/Guideline-of-Controlled-Drugs-for-Travellers%20-%20English.pdf"
@@ -13573,6 +13582,7 @@
     "category": "e_cigarettes",
     "verdict": "prohibited",
     "notes": "The General Authority of Customs' 'Goods forbidden by Tariff' list includes 'Electronic devices for cigarettes', 'Electronic water pipe \"shisha\"', 'Electrically heated devices for cigarettes' (heated-tobacco devices) and their parts. GOV.UK: 'It is illegal to import and sell vapes and electronic cigarette products. This includes the sale and purchase of related liquids and other similar products, including electronic shisha pipes. The law applies regardless of quantity and intended use. Customs officials may confiscate any such items from your luggage', and 'It is illegal to vape or use an e-cigarette. Police can arrest you and courts can impose a fine, a prison sentence or deportation.'",
+    "summary": "Banned: e-cigarettes, e-liquids, heated-tobacco devices and electronic shisha can't be imported into Qatar, whatever the quantity.",
     "legal_source": {
       "name": "General Authority of Customs (Qatar) — Goods forbidden by Tariff (Prohibited Goods in the Unified GCC Customs Tariff)",
       "url": "https://www.customs.gov.qa/English/Tariff/Pages/Prohibited-Goods.aspx"
@@ -13895,6 +13905,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "ISP's 2023 cannabis guide: 'Cannabis es Estupefaciente', THC is a psychotropic, and any cannabis extract with more than 0.2% THC is a narcotic; foods may not contain cannabis or derivatives; import of controlled cannabis raw material is allowed only for manufacturing pharmaceutical products. Aduana 'Viajeros que ingresan al país': 'En Chile, está prohibido y penado por ley la tenencia y el tráfico de drogas y sustancias psicotrópicas'. Law 20.000 art. 3 treats importing such substances without authorisation as trafficking. Law 20.000's medical-cannabis provision (art. 8, as quoted by ISP) concerns cultivation justified by a prescription from a treating doctor; nothing read authorises travellers to import cannabis. Do not bring cannabis or THC products, including medical cannabis prescribed abroad, without first checking with ISP.",
+    "summary": "Banned: cannabis is a narcotic in Chile, and possessing or trafficking drugs is a crime.",
     "legal_source": {
       "name": "Instituto de Salud Pública de Chile — Cannabis: uso medicinal, vigilancia y control (Versión 2023); Ley N° 20.000 (latest version in force from 23 May 2026, Biblioteca del Congreso Nacional); Aduana — Viajeros que ingresan al país",
       "url": "https://www.ispch.cl/wp-content/uploads/2023/10/04-Cannabis.pdf"
@@ -13920,6 +13931,7 @@
       "description": "CBD products are treated as medicines; products with >0.2% THC are narcotics (prohibited); ISP has authorised no cannabis cosmetics and foods may not contain cannabis."
     },
     "notes": "ISP 2023 cannabis guide: 'Todo producto con cannabis y derivados es MEDICAMENTO'; cannabis extract with under 0.2% THC and CBD (cannabidiol) are pharmaceutical raw materials 'no sujetas a control legal' as narcotics, but 'Todo producto en base a extracto de cannabis que contenga un porcentaje mayor al 0,2 de THC es un estupefaciente'; 'El ISP no ha autorizado cosméticos con cannabis y derivados'; 'Los alimentos NO pueden contener cannabis y derivados' (hemp seed foods are subject to THC contaminant limits in DS 977/1966 art. 170 bis). No source read says whether a traveller may carry a CBD product for personal use. Treat CBD gummies, creams and oils as risky; check with ISP before travelling.",
+    "summary": "CBD products count as medicines in Chile; anything over 0.2% THC is a narcotic. No cannabis cosmetics are authorised, and foods may not contain cannabis.",
     "legal_source": {
       "name": "Instituto de Salud Pública de Chile — Cannabis: uso medicinal, vigilancia y control (Versión 2023); Ley N° 20.000 (latest version in force from 23 May 2026, Biblioteca del Congreso Nacional); Aduana — Viajeros que ingresan al país",
       "url": "https://www.ispch.cl/wp-content/uploads/2023/10/04-Cannabis.pdf"
@@ -14228,6 +14240,7 @@
       "description": "Using, producing, trading or possessing drugs for personal use is prohibited. Do not bring cannabis into Montenegro."
     },
     "notes": "Law on Prevention of Drug Abuse, Art. 45: 'Zabranjena je upotreba, proizvodnja, promet, posjedovanje droga za ličnu upotrebu...' Possessing drugs for personal use is a misdemeanour fined EUR 100–2,000 (Art. 52); larger amounts and trafficking are criminal offences. UK FCDO: 'Illegal drugs, including cannabis, carry severe penalties.' Not covered here: CBD products and any Montenegrin medical-cannabis rules — we found no primary source on those, so don't assume CBD is allowed.",
+    "summary": "Banned: using, trading or possessing drugs, even for personal use, is prohibited in Montenegro.",
     "legal_source": {
       "name": "Zakon o sprječavanju zloupotrebe droga (Law on Prevention of Drug Abuse, Sl. list CG 28/11, 35/13) — consolidated text published by the Government of Montenegro",
       "url": "https://www.gov.me/en/documents/eaa4743a-ed71-423c-b25c-324e228e6e10"
@@ -14795,6 +14808,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "Official Bahamas visitor guidance (Ministry of Tourism FAQ, health and safety tips): 'The purchase and usage of marijuana is illegal and enforced with strict penalties.' Do not bring cannabis in any form. A foreign medical-cannabis card does not let you import it. Cross-checks: Auswärtiges Amt says drug use and trafficking, 'auch in geringsten Mengen' (even in the smallest amounts), are prosecuted very strictly, with heavy fines and prison and usually no bail. GOV.UK says 'Penalties for possessing or trafficking drugs are severe'. Legislative context: the Cannabis Act, 2024 was published in the Extraordinary Official Gazette (26 July 2024). It creates a licensed medical/religious cannabis regime, including a provision that 'A pharmacist may dispense medical cannabis to a visitor' who holds a medical card from a recognised jurisdiction and a prescription. It also contains a section titled 'Unlawful import and export of cannabis' (s.58). We could not confirm that the visitor-dispensing scheme is in operation, and nothing in it allows a traveller to bring their own supply. CBD: no official source addresses CBD separately, so this row doesn't cover CBD products.",
+    "summary": "Banned: buying and using marijuana is illegal in the Bahamas, and a foreign medical-cannabis card doesn't let you bring it in.",
     "legal_source": {
       "name": "The Islands of The Bahamas official tourism site (bahamas.com, Bahamas Ministry of Tourism) — Frequently Asked Questions: health and safety tips",
       "url": "https://www.bahamas.com/plan-your-trip/island-faq"
@@ -15382,6 +15396,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "DCEA (in Swahili): under the Drugs Control and Enforcement Act, Cap. 95, involvement of any kind with cannabis (\"kulima, kuuza, kuhifadhi, kutumia, kuichakata\" — growing, selling, storing/possessing, using, processing) is a criminal offence, \"adhabu yake inafikia hadi KIFUNGO CHA MAISHA JELA\" (the penalty can be up to life imprisonment). Canada's travel advice adds that drug penalties are severe, with long prison sentences. The UK government's travel advice says 'some herbal highs and products containing cannabidiol (CBD) are illegal in Tanzania' and advises not to enter with skincare products or e-cigarette refills containing CBD.",
+    "summary": "Banned: any involvement with cannabis is a crime in Tanzania, with up to life imprisonment. The UK government says some CBD products are illegal too.",
     "legal_source": {
       "name": "Ukweli kuhusu Bangi (Facts about cannabis), Drug Control and Enforcement Authority (DCEA)",
       "url": "https://www.dcea.go.tz/pages/fact-about-marijuana"
@@ -15512,6 +15527,7 @@
     "category": "cbd_cannabis",
     "verdict": "prohibited",
     "notes": "UK FCDO (Cambodia safety and security): 'Possession, trafficking and manufacture of any illegal drugs are serious offences in Cambodia. This includes cannabis.' Zero tolerance; even very small amounts can bring arrest and a long jail sentence, up to life. Spain's MFA (updated 22 Jul 2026) adds that both trafficking and consumption of all drugs, 'incluido el cannabis', are banned with penalties 'de entre 10 años a cadena perpetua'. Japan MOFA lists narcotics among items prohibited from import and warns of life imprisonment. France's MFA states 10–20 years' prison and fines up to USD 10,000 for use, possession and trafficking. Airport scanning also covers transit passengers' baggage. CBD products are not specifically addressed by any source read, so CBD is not covered by this row.",
+    "summary": "Banned: possessing or trafficking any illegal drug, including cannabis, is a serious offence in Cambodia, with zero tolerance.",
     "legal_source": {
       "name": "Cambodia travel advice: safety and security (illegal drugs) — GOV.UK Foreign travel advice (FCDO)",
       "url": "https://www.gov.uk/foreign-travel-advice/cambodia/safety-and-security"
