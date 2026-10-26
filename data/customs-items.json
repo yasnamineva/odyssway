@@ -6809,19 +6809,30 @@
       "ganja",
       "weed",
       "thc",
-      "hashish"
+      "hashish",
+      "cbd",
+      "cbd oil",
+      "cannabidiol",
+      "hemp"
     ],
     "destination": "ID",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "Indonesian Customs' own passenger-baggage guidance names 'narkotika' (narcotics) — alongside psychotropics, precursors, and medicines — as a category that triggers mandatory red-lane physical inspection; cannabis (ganja) is classified as a Golongan I (Schedule I, the strictest category) narcotic under Indonesia's Narcotics Law (UU No. 35 Tahun 2009), covering personal possession and import with no traveler exception found on this source. CBD isn't named on the pages read, so this row doesn't cover CBD products; ask Indonesian Customs before travelling with them.",
+    "notes": "Indonesian Customs' own passenger-baggage guidance names 'narkotika' (narcotics) — alongside psychotropics, precursors, and medicines — as a category that triggers mandatory red-lane physical inspection; cannabis (ganja) is classified as a Golongan I (Schedule I, the strictest category) narcotic under Indonesia's Narcotics Law (UU No. 35 Tahun 2009), covering personal possession and import with no traveler exception found on this source. The UK government's travel advice adds that cannabis and cannabis-based products, 'including medicinal cannabis, cannabis-based oils and creams, hemp-based products, CBD, THC, hash and edibles, are illegal in Indonesia', in a bottle, vape or any other form.",
     "legal_source": {
       "name": "Direktorat Jenderal Bea dan Cukai (Indonesian Customs) — Barang Penumpang (Passenger Goods)",
       "url": "https://www.beacukai.go.id/barang-penumpang"
     },
     "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Cannabis-based products incl. CBD, hemp-based products and medicinal cannabis are illegal, in any form",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Safety and security (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/safety-and-security"
+      }
+    ]
   },
   {
     "slug": "weapons-ph",
@@ -7031,7 +7042,14 @@
   },
   {
     "slug": "e-cigarettes-vn",
-    "names": ["e-cigarette", "vape", "vaping liquid", "e-liquid", "heated tobacco", "iqos"],
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping liquid",
+      "e-liquid",
+      "heated tobacco",
+      "iqos"
+    ],
     "destination": "VN",
     "category": "e_cigarettes",
     "verdict": "prohibited",
@@ -7040,9 +7058,16 @@
       "name": "WHO Viet Nam — National Assembly Resolution 173/2024/QH15 banning e-cigarettes and heated tobacco",
       "url": "https://www.who.int/vietnam/news/detail/11-12-2025-world-health-organization-welcomes-national-assembly-s-strong-stance-on-banned-e-cigarettes-and-heated-tobacco-products"
     },
-    "verified_at": "2026-09-16",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Vapes and related products are banned; you cannot buy vapes in Vietnam or bring them into the country",
+        "name": "GOV.UK (FCDO) — Vietnam travel advice: Safety and security (updated 2026-09-21)",
+        "url": "https://www.gov.uk/foreign-travel-advice/vietnam/safety-and-security"
+      }
+    ]
   },
   {
     "slug": "e-cigarettes-br",
@@ -15292,19 +15317,29 @@
       "bangi",
       "ganja",
       "hashish",
-      "thc"
+      "thc",
+      "cbd",
+      "cbd oil",
+      "cannabidiol"
     ],
     "destination": "TZ",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "DCEA (in Swahili): under the Drugs Control and Enforcement Act, Cap. 95, involvement of any kind with cannabis (\"kulima, kuuza, kuhifadhi, kutumia, kuichakata\" — growing, selling, storing/possessing, using, processing) is a criminal offence, \"adhabu yake inafikia hadi KIFUNGO CHA MAISHA JELA\" (the penalty can be up to life imprisonment). Canada's travel advice adds that drug penalties are severe, with long prison sentences. No primary source on CBD products was found, so 'cbd' is not in names; ask DCEA before travelling with any cannabis-derived product.",
+    "notes": "DCEA (in Swahili): under the Drugs Control and Enforcement Act, Cap. 95, involvement of any kind with cannabis (\"kulima, kuuza, kuhifadhi, kutumia, kuichakata\" — growing, selling, storing/possessing, using, processing) is a criminal offence, \"adhabu yake inafikia hadi KIFUNGO CHA MAISHA JELA\" (the penalty can be up to life imprisonment). Canada's travel advice adds that drug penalties are severe, with long prison sentences. The UK government's travel advice says 'some herbal highs and products containing cannabidiol (CBD) are illegal in Tanzania' and advises not to enter with skincare products or e-cigarette refills containing CBD.",
     "legal_source": {
       "name": "Ukweli kuhusu Bangi (Facts about cannabis), Drug Control and Enforcement Authority (DCEA)",
       "url": "https://www.dcea.go.tz/pages/fact-about-marijuana"
     },
     "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Products containing CBD are illegal; don't bring skincare or e-cigarette refills containing CBD",
+        "name": "GOV.UK (FCDO) — Tanzania travel advice: Safety and security (updated 2026-10-20)",
+        "url": "https://www.gov.uk/foreign-travel-advice/tanzania/safety-and-security"
+      }
+    ]
   },
   {
     "slug": "drones-tz",
@@ -18131,6 +18166,58 @@
     "legal_source": {
       "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Safety and security, 'Illegal drugs penalties' (updated 24 July 2026)",
       "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/safety-and-security"
+    },
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-rw",
+    "names": [
+      "e-cigarette",
+      "e-cigarettes",
+      "vape",
+      "vapes",
+      "vaping device"
+    ],
+    "destination": "RW",
+    "category": "e_cigarettes",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Vapes and e-cigarettes are banned in Rwanda. If you're found with them, they're confiscated and you could be fined."
+    },
+    "summary": "Banned: vapes and e-cigarettes are confiscated, and you could be fined.",
+    "notes": "Rwanda's own customs pages read for this site don't mention e-cigarettes; this row rests on the UK government's travel advice.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Rwanda travel advice: Safety and security (updated 2026-09-04)",
+      "url": "https://www.gov.uk/foreign-travel-advice/rwanda/safety-and-security"
+    },
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-am",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "cbd",
+      "cbd oil",
+      "cannabidiol"
+    ],
+    "destination": "AM",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "It is illegal to use, possess or trade marijuana, cannabidiol (CBD) or tetrahydrocannabinol (THC) products in Armenia."
+    },
+    "summary": "Banned: marijuana, CBD and THC products are illegal to use, possess or trade in Armenia.",
+    "notes": "No Armenian government page read addresses cannabis for travellers; this row rests on the UK government's travel advice.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Armenia travel advice: Safety and security (updated 2026-03-01)",
+      "url": "https://www.gov.uk/foreign-travel-advice/armenia/safety-and-security"
     },
     "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",

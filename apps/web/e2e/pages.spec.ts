@@ -102,8 +102,8 @@ test("changelog lists dated, sourced entries with dataset anchors", async ({ pag
 });
 
 test("unpublished item/destination pairs 404 instead of rendering thin content", async ({ page }) => {
-  // No verified e-cigarettes row exists for Rwanda (the claim couldn't be sourced).
-  const response = await page.goto("/bring/e-cigarettes/rwanda");
+  // No verified drones row exists for Uzbekistan (customs.uz is unreadable).
+  const response = await page.goto("/bring/drones/uzbekistan");
   expect(response?.status()).toBe(404);
 });
 
