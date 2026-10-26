@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { checkedYear, clip, describeRule, firstSentence, seoVerdictKey, titleWithAnswer, TITLE_MAX } from "./seo-text";
+import { checkedYear, clip, describeRule, firstSentence, multiRowLead, seoVerdictKey, titleWithAnswer, TITLE_MAX } from "./seo-text";
 import { customsItems } from "./destinations";
 
 describe("seo text", () => {
@@ -47,5 +47,22 @@ describe("titleWithAnswer with a preferred and a fallback answer", () => {
     expect(
       titleWithAnswer("Can you bring tobacco or cigarettes to Morocco?", ["Yes, limit: 200 cigarettes / 250g", "Yes, with limits"], "2026"),
     ).toBe("Can you bring tobacco or cigarettes to Morocco? Yes, with limits");
+  });
+});
+
+describe("multiRowLead", () => {
+  const rows = customsItems.filter((r) => r.slug === "pisco-pe" || r.slug === "alcohol-pe");
+
+  it("gives each row's own line under its label", () => {
+    const lead = multiRowLead(rows, (r) => r.slug)!;
+    for (const r of rows) expect(lead).toContain(`${r.slug}: ${r.summary!.replace(/\.$/, "")}.`);
+  });
+
+  it("leads with the allowance, not the ban", () => {
+    expect(multiRowLead(rows, (r) => r.slug)!.startsWith("alcohol-pe:")).toBe(true);
+  });
+
+  it("falls back when a row has nothing to quote", () => {
+    expect(multiRowLead([{ ...rows[0]!, summary: undefined, limits: undefined, notes: undefined }], (r) => r.slug)).toBeUndefined();
   });
 });

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { checkedYear, clip, describeRule, rowLead, titleAnswer, titleWithAnswer } from "../../../../lib/seo-text";
+import { checkedYear, clip, describeRule, multiRowLead, rowLead, titleAnswer, titleWithAnswer } from "../../../../lib/seo-text";
 import { notFound } from "next/navigation";
 import { BRING_CATEGORIES } from "../../../../lib/bring-categories";
 import { bringPair, bringPairs, bringPairsForDestination, rowLabel } from "../../../../lib/bring-pages";
@@ -44,10 +44,11 @@ export async function generateMetadata({
   );
   const lead = single
     ? (rowLead(single) ?? tv(single.verdict))
-    : ts("inDestination", {
+    : (multiRowLead(pair.rows, (r) => rowLabel(r.slug, pair.destination.code)) ??
+      ts("inDestination", {
         destination: withArticle(pair.destination.name),
         list: pair.rows.map((r) => `${rowLabel(r.slug, pair.destination.code)}: ${tv(r.verdict)}`).join("; ") + ".",
-      });
+      }));
   const description = describeRule(lead, ts("tail", { date: pair.lastVerified ?? "" }));
   return {
     title,

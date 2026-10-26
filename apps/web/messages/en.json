@@ -73,8 +73,8 @@
       "description": "Our source policy: primary official sources only, per-claim citations, dated checks, automated freshness monitoring — and its limits, stated plainly."
     },
     "sources": {
-      "title": "Sources: Every Official Page Behind Our Data",
-      "description": "Every official source behind our rule data and guides, with the date each value was last checked."
+      "title": "Official Sources Behind Every Travel Rule We Publish",
+      "description": "The government, customs and border-authority pages behind every entry and customs rule on Odyssway, by destination, with the date each was last checked."
     },
     "changelog": {
       "title": "Verification Changelog: Every Rule Change, Dated",
@@ -334,6 +334,7 @@
     "otherDestinations": "Other destinations for {citizens} citizens",
     "ctaTripCheck": "Check your trip, including what you can bring \u2192",
     "destinationGuide": "Full {destination} guide \u2192",
+    "relatedPosts": "Recent {destination} rule changes",
     "disclaimer": "Informational only \u2014 not legal advice. Entry rules change; confirm with the official source above before you travel."
   },
   "widgetPage": {
@@ -519,8 +520,10 @@
     "sourceLine": "Visa-exemption source:"
   },
   "sourcesPage": {
-    "h1": "Sources",
-    "intro": "Every value we publish is checked against a primary official source and dated. This page lists them all.",
+    "h1": "Official sources behind every travel rule",
+    "intro": "Every value we publish is checked against a primary official source (a government, customs or border authority, or the law itself) and dated. This page lists them all, by destination.",
+    "stats": "{sources} official pages back {rules} verified rules across {destinations} destinations. Oldest check: {oldest}. Most recent: {newest}.",
+    "hubLink": "{destination} entry and customs rules",
     "dataTitle": "Rule data",
     "contentTitle": "Guides and pages",
     "checkedLabel": "Checked {date}",

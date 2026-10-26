@@ -78,6 +78,8 @@ test("sources page cites the promoted destination and EU customs data", async ({
   await expect(page.locator("body")).toContainText("United Kingdom");
   await expect(page.locator("body")).toContainText("Canada");
   await expect(page.locator("body")).toContainText("EU/Schengen-harmonized customs rules");
+  await expect(page.getByTestId("sources-stats")).toContainText(/\d[\d,]* official pages back \d[\d,]* verified rules/);
+  await expect(page.getByRole("link", { name: "Japan entry and customs rules" })).toHaveAttribute("href", "/destinations/japan");
 });
 
 test("EES country page shows both template letters with downloads", async ({ page }) => {
@@ -270,6 +272,9 @@ test("nationality × destination pages render the verified row with comparisons"
   await expect(page.locator("body")).toContainText("United States for other passports");
   await page.goto("/destinations/japan");
   await expect(page.locator('a[href="/destinations/japan/united-states"]')).toBeVisible();
+  // Entry-rule posts are linked from the destination's passport pages.
+  await page.goto("/destinations/thailand/united-kingdom");
+  await expect(page.getByTestId("pair-related-posts").locator('a[href="/blog/thailand-visa-free-cut-2026"]')).toBeVisible();
 });
 
 test("EES guides cover all 29 EES countries and the missing-exit guide", async ({ page }) => {

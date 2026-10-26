@@ -36,6 +36,23 @@ export function rowLead(row: CustomsItemRecord): string | undefined {
   return row.limits?.description ? firstSentence(row.limits.description) : row.notes ? firstSentence(row.notes) : undefined;
 }
 
+/**
+ * The lead for a page that holds several rows: each row's own line under its
+ * label ("Prescription medication: Up to 90 days' supply…"), so the snippet
+ * gives answers rather than a list of verdicts. Undefined if a row has no line.
+ */
+export function multiRowLead(rows: CustomsItemRecord[], label: (row: CustomsItemRecord) => string): string | undefined {
+  // The everyday rule first (the allowance, then permits, then bans): the snippet is
+  // cut at ~155 characters, so the row most travellers need must lead.
+  const order = ["allowed_with_limits", "allowed", "declaration_required", "depends", "prohibited"];
+  const sorted = [...rows].sort((a, b) => order.indexOf(a.verdict) - order.indexOf(b.verdict));
+  const lines = sorted.map((r) => {
+    const lead = rowLead(r);
+    return lead ? `${label(r)}: ${lead.replace(/[.\s]+$/, "")}.` : undefined;
+  });
+  return lines.every(Boolean) ? lines.join(" ") : undefined;
+}
+
 /** Which short answer to put in a title for one row. */
 export type SeoVerdictKey =
   | "prohibited"

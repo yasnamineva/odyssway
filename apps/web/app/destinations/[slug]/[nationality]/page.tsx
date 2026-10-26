@@ -7,6 +7,7 @@ import SourceNote from "../../../../components/SourceNote";
 import Photo from "../../../../components/content/Photo";
 import { destinationPhoto, photoOgImage } from "../../../../lib/photos";
 import { destinationPath, withArticle } from "../../../../lib/destinations";
+import { blogPosts } from "../../../../lib/blog";
 import { describeRule } from "../../../../lib/seo-text";
 import { travelPair, travelPairPath, travelPairs, type TravelPair } from "../../../../lib/travel-pairs";
 
@@ -71,6 +72,11 @@ export default async function TravelPairPage({ params }: { params: Promise<Param
   const tr = await getTranslations("destinationPage.requirement");
   const tc = await getTranslations("common");
   const ts = await getTranslations("tripCheck");
+  // Posts about entry rules for this destination (a medicine post isn't what a
+  // visa searcher came for).
+  const relatedPosts = blogPosts.filter(
+    (p) => p.changelogDataset === "entry-requirements" && p.destinationCodes?.includes(pair.destination.code),
+  );
   const { row } = pair;
   const passportLine = row.documentsNeeded.find((d) => /passport|travel document/i.test(d) && /valid|expiry/i.test(d));
   const photo = destinationPhoto(pair.destination.code);
@@ -186,6 +192,21 @@ export default async function TravelPairPage({ params }: { params: Promise<Param
           {t("destinationGuide", vars)}
         </a>
       </p>
+
+      {relatedPosts.length > 0 && (
+        <section data-testid="pair-related-posts">
+          <h2 className="text-base font-semibold text-slate-900">{t("relatedPosts", vars)}</h2>
+          <ul className="mt-2 space-y-1 text-sm">
+            {relatedPosts.map((p) => (
+              <li key={p.slug}>
+                <a href={`/blog/${p.slug}`} className="text-blue-700 underline">
+                  {p.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {sameDestination.length > 0 && (
         <section>

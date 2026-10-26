@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { withArticle } from "../../../../lib/destinations";
-import { checkedYear, describeRule, rowLead, titleAnswer, titleWithAnswer } from "../../../../lib/seo-text";
+import { checkedYear, describeRule, multiRowLead, rowLead, titleAnswer, titleWithAnswer } from "../../../../lib/seo-text";
 import { notFound } from "next/navigation";
 import BreadcrumbJsonLd from "../../../../components/BreadcrumbJsonLd";
 import CustomsRowCard, { VERDICT_STYLES } from "../../../../components/CustomsRowCard";
@@ -52,10 +52,11 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   );
   const lead = single
     ? (rowLead(single) ?? tv(single.verdict))
-    : ts("inDestination", {
+    : (multiRowLead(pair.rows, (r) => rowLabel(r.slug, pair.destination.code)) ??
+      ts("inDestination", {
         destination: withArticle(pair.destination.name),
         list: pair.rows.map((r) => `${rowLabel(r.slug, pair.destination.code)}: ${tv(r.verdict)}`).join("; ") + ".",
-      });
+      }));
   const description = describeRule(
     lead,
     ts("tailProduct", { product: pair.product.name, date: latestVerified(pair.rows) ?? "" }),

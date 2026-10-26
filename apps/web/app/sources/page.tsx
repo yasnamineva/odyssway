@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import rawCountriesFile from "../../../../data/countries.json";
 import { countriesVerifiedAt } from "../../lib/countries";
-import { customsItems, destinations, entryRequirements } from "../../lib/destinations";
+import { customsItems, destinationPath, destinations, entryRequirements } from "../../lib/destinations";
 import { etias, etiasSources, type SourceNote } from "../../lib/etias";
 import { publishedNationalities } from "../../lib/nationalities";
 
@@ -87,14 +87,37 @@ function SourceList({ sources }: { sources: SourceNote[] }) {
   );
 }
 
+/** Counts for the summary line, from the same verified rows the lists below show. */
+function sourceStats() {
+  const rows = [...entryRequirements, ...customsItems].filter((r) => r.status === "verified");
+  const dates = rows.map((r) => r.verified_at).filter((d): d is string => Boolean(d)).sort();
+  return {
+    sources: new Set(rows.map((r) => r.legal_source.url)).size,
+    rules: rows.length,
+    destinations: destinations.filter((d) => d.status === "verified").length,
+    oldest: dates[0] ?? "",
+    newest: dates.at(-1) ?? "",
+  };
+}
+
 export default async function SourcesPage() {
   const t = await getTranslations("sourcesPage");
+  const stats = sourceStats();
 
   return (
     <article className="mx-auto max-w-2xl space-y-6">
       <header>
         <h1 className="text-2xl font-bold tracking-tight text-slate-900">{t("h1")}</h1>
         <p className="mt-2 text-sm leading-relaxed text-slate-600">{t("intro")}</p>
+        <p className="mt-2 text-sm leading-relaxed text-slate-600" data-testid="sources-stats">
+          {t("stats", {
+            sources: stats.sources.toLocaleString("en"),
+            rules: stats.rules.toLocaleString("en"),
+            destinations: stats.destinations,
+            oldest: stats.oldest,
+            newest: stats.newest,
+          })}
+        </p>
       </header>
 
       <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
@@ -150,7 +173,10 @@ export default async function SourcesPage() {
                 <h3 className="mt-6 text-sm font-semibold text-slate-800">
                   {d.name}{" "}
                   <span className="font-normal text-xs text-slate-500">
-                    — {t("verifiedLabel", { date: d.verified_at ?? "" })}
+                    — {t("verifiedLabel", { date: d.verified_at ?? "" })} ·{" "}
+                    <a href={destinationPath(d)} className="underline">
+                      {t("hubLink", { destination: d.name })}
+                    </a>
                   </span>
                 </h3>
                 <ul className="mt-2 space-y-2 text-sm leading-relaxed text-slate-700">

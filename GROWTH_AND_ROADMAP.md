@@ -40,7 +40,7 @@ numbers is local (`seo/gsc/2026-10/worklist.md`, git-ignored because the repo is
    can you bring?"), with a counted summary and an at-a-glance limits table. Every
    `/bring/{item}/{country}` page now also links the same item in up to 12 other countries,
    same region first (the Malaysia cluster was already linked by country).
-2. (In progress.) ✔ 2026-10-26: titles on item and medicine pages now give the limit when it's
+2. ✔ 2026-10-26: titles on item and medicine pages now give the limit when it's
    short ("Yes, limit: 1 litre", "Yes; declaration limit ¥1,000,000"), falling back to the plain
    answer. ✔ 2026-10-26: answer-first summaries for 15 priority rows whose text opened with a source
    attribution (Serbia, UAE, Maldives, Mexico, Hong Kong tobacco); UK vaping allowance updated
@@ -55,6 +55,12 @@ numbers is local (`seo/gsc/2026-10/worklist.md`, git-ignored because the repo is
    - Fresh produce: Singapore, United Kingdom, Taiwan.
    - Medication: Argentina, Maldives; Ozempic and Wegovy in Mexico, Wegovy in Thailand.
    - `/blog/thailand-visa-free-cut-2026`, `/sources`.
+   ✔ 2026-10-26 pass over the list above: snippets on pages with several rules now quote each
+   rule (allowance first) instead of listing verdicts; Malaysia tobacco re-labelled "declaration
+   required" (no duty-free, declare all); the Thailand post is linked from every Thailand passport
+   page (entry-rule posts now show on their destinations' passport pages); `/sources` has a
+   search-worded title, counts, the oldest check date and links to each destination hub. The
+   "can you buy Wegovy in Mexico" queries stay ignored (buying, not bringing).
 3. Position 21–40 with volume: ✔ Thailand e-cigarettes re-sourced to the Royal Thai Embassy
    with a summary (2026-10-26; exact penalties need the Customs Act text). ✔ Turkey alcohol and
    tobacco corrected (2026-10-26): each product has its own allowance (1 L spirits *and* 2 L
