@@ -224,6 +224,36 @@ function warnPassedAnnouncements(): void {
   }
 }
 
+/**
+ * A row's `names` decide which searches it answers. A specific product in `names`
+ * that the row's own text never mentions (a firearms rule answering "knife", a meat
+ * rule answering "cheese", a narcotics ban answering "cbd") gives a confident answer
+ * the source didn't make. Warn so the name is removed or the text sourced (2026-10-26).
+ */
+const SPECIFIC_NAMES: Record<string, RegExp> = {
+  knife: /knife|knives|blade|dagger|sword/, knives: /knife|knives|blade|dagger/,
+  "stun gun": /stun|electr|shock|taser/, taser: /taser|stun|electr|shock/,
+  "pepper spray": /pepper|spray|gas|irritant/, airsoft: /airsoft|air gun|air-gun|pneumatic/,
+  "air rifle": /air rifle|air gun|air-gun|pneumatic/, nunchaku: /nunchak/,
+  cbd: /cbd|cannabidiol/, "cbd oil": /cbd|cannabidiol/, cannabidiol: /cbd|cannabidiol/,
+  "heated tobacco": /heat/, iqos: /iqos|heat/, "nicotine pouches": /pouch/, snus: /snus|pouch/,
+  "shisha tobacco": /shisha|hookah|molasses|water pipe/,
+  cheese: /chees|dairy|milk/, milk: /milk|dairy/, eggs: /\begg/, seeds: /seed/,
+  flowers: /flower/, soil: /soil/, nuts: /\bnut/, gold: /gold/,
+};
+function warnUnsupportedNames(): void {
+  const file = join(DATA_DIR, "customs-items.json");
+  const rows = JSON.parse(readFileSync(file, "utf8")) as Array<Record<string, unknown>>;
+  for (const r of rows) {
+    if (r.status !== "verified") continue;
+    const text = JSON.stringify([r.limits, r.notes, r.summary, r._sources, r.procedure]).toLowerCase();
+    for (const n of (r.names as string[]) ?? []) {
+      const re = SPECIFIC_NAMES[n.toLowerCase()];
+      if (re && !re.test(text)) console.warn(`⚠ ${rel(file)}: ${r.slug} answers searches for "${n}", which its text never mentions.`);
+    }
+  }
+}
+
 // --- run ---
 const productionFiles = jsonFilesIn(DATA_DIR);
 const unverifiedFiles = jsonFilesIn(UNVERIFIED_DIR);
@@ -234,6 +264,7 @@ checkNoUnverifiedReferences();
 checkPassportValidityMatchesText();
 checkLeadTimeMatchesText();
 warnPassedAnnouncements();
+warnUnsupportedNames();
 
 console.log(
   `Checked ${productionFiles.length} production data file(s), ${unverifiedFiles.length} UNVERIFIED draft(s).`,
