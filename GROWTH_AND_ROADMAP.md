@@ -136,6 +136,11 @@ South Africa, Nigeria, Poland, Portugal, Vietnam, Pakistan. Add one at a time, f
 
 ### 3.3 Customs depth
 
+- ✔ 2026-10-26: South Korea alcohol, tobacco and weapons; Egypt cash; Qatar tobacco (read from
+  the customs PDF's page image, since its text layer is broken); weapons for Singapore, Türkiye,
+  UAE and China. Still blocked: Mongolia (customs figures conflict, undated), Uzbekistan
+  (customs.uz is a JavaScript app), China e-cigarettes (source unreachable), Australia drones
+  depth (CASA unreachable).
 - Customs rows for destinations that have none or very few: Mongolia, Seychelles medicine,
   Zimbabwe tobacco and cash (ZIMRA gives no primary threshold).
 - **Second vertical after medication**, chosen from data (§5): CBD and cannabis, food,
@@ -316,6 +321,9 @@ more than a Japanese page about the US). Translate the highest-traffic page type
 - Turning on cookie-free Plausible (needs a privacy-policy update first).
 - Brand profiles and `sameAs` (§5.3).
 - Accounts and email alerts (Horizon 2).
+- A data licence for the Dataset markup on `/developers` (§5.4). Google Dataset Search wants a
+  `license`; the terms already allow free reuse with a link back, but none has been formally
+  chosen (e.g. CC BY 4.0, or "see /terms"), so the markup declares none.
 
 ---
 
