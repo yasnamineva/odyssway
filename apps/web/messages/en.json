@@ -166,7 +166,71 @@
     "namedMedicinesLink": "Travelling with a specific medicine, like Adderall or Ozempic? See it country by country \u2192",
     "h1item": "Bringing {item} Into a Country — What Each Destination Requires",
     "introItem": "What's allowed, limited, or prohibited for {item} in every destination we've verified, cited to each country's own customs authority.",
-    "verifiedLine": "Checked {date} —"
+    "verifiedLine": "Checked {date} —",
+    "inShortLead": "{rules, plural, one {# verified rule} other {# verified rules}} across {countries, plural, one {# country} other {# countries}}:",
+    "inShortPart": {
+      "prohibited": "{n, plural, one {# bans it} other {# ban it}}",
+      "allowed_with_limits": "{n, plural, one {# allows it within limits} other {# allow it within limits}}",
+      "declaration_required": "{n, plural, one {# allows it with a declaration} other {# allow it with a declaration}}",
+      "depends": "{n, plural, one {# depends on your situation} other {# depend on your situation}}",
+      "allowed": "{n, plural, one {# allows it freely} other {# allow it freely}}"
+    },
+    "glanceTitle": "At a glance",
+    "glanceCountry": "Country",
+    "glanceVerdict": "Rule",
+    "glanceLimit": "Limit",
+    "byCategory": {
+      "tobacco": {
+        "metaTitle": "How Many Cigarettes Can You Bring? Duty-Free Tobacco by Country",
+        "h1": "How many cigarettes can you bring? Duty-free tobacco allowances by country",
+        "metaDescription": "Duty-free cigarette and tobacco allowances country by country, from each customs authority: how many cigarettes, cigars or grams of tobacco you can bring."
+      },
+      "alcohol": {
+        "metaTitle": "How Much Alcohol Can You Bring? Duty-Free Allowance by Country",
+        "h1": "How much alcohol can you bring? Duty-free allowances by country",
+        "metaDescription": "How many litres of spirits, wine and beer you can bring duty-free, country by country, from each customs authority."
+      },
+      "cash": {
+        "metaTitle": "How Much Cash Can You Carry? Declaration Limits by Country",
+        "h1": "How much cash can you carry? Declaration limits by country",
+        "metaDescription": "The amount of cash you can carry before you must declare it, country by country, from each customs or central bank authority."
+      },
+      "medication": {
+        "metaTitle": "Can You Bring Medication Abroad? Prescription Rules by Country",
+        "h1": "Can you bring your medication? Prescription medicine rules by country",
+        "metaDescription": "Whether you can bring prescription and controlled medicine, how much, and which documents or permits you need, country by country, from official sources."
+      },
+      "cannabis": {
+        "metaTitle": "Can You Bring CBD or Cannabis Abroad? Rules by Country",
+        "h1": "Can you bring CBD or cannabis? Rules by country",
+        "metaDescription": "Whether CBD oil, cannabis or THC products are allowed through customs, country by country, from official sources."
+      },
+      "meat-and-dairy": {
+        "metaTitle": "Can You Bring Meat, Cheese or Dairy? Food Rules by Country",
+        "h1": "Can you bring meat, cheese or dairy? Food rules by country",
+        "metaDescription": "Whether you can bring meat, cheese, milk and other animal products in your luggage, country by country, from official sources."
+      },
+      "fresh-produce": {
+        "metaTitle": "Can You Bring Fruit and Vegetables? Rules by Country",
+        "h1": "Can you bring fresh fruit or vegetables? Rules by country",
+        "metaDescription": "Whether fresh fruit, vegetables, plants and seeds are allowed in your luggage, country by country, from official sources."
+      },
+      "e-cigarettes": {
+        "metaTitle": "Can You Bring a Vape? E-Cigarette Rules by Country",
+        "h1": "Can you bring a vape or e-cigarette? Rules by country",
+        "metaDescription": "Whether vapes and e-cigarettes are allowed, banned or limited, country by country, from each country's official source."
+      },
+      "weapons": {
+        "metaTitle": "Can You Bring a Weapon Abroad? Customs Rules by Country",
+        "h1": "Can you bring a weapon? Customs rules by country",
+        "metaDescription": "Customs rules on weapons, firearms and similar items country by country, from official sources."
+      },
+      "drones": {
+        "metaTitle": "Can You Bring a Drone Abroad? Rules by Country",
+        "h1": "Can you bring a drone? Customs and import rules by country",
+        "metaDescription": "Whether you can bring a drone into the country and what permits or registration you need, country by country, from official sources."
+      }
+    }
   },
   "changelogPage": {
     "h1": "Verification changelog",
@@ -396,6 +460,7 @@
     "sourceLine": "Source:",
     "verifiedLine": "Checked {date} —",
     "moreForDestination": "Other things to check for {destination}",
+    "sameItemElsewhere": "Rules for {item} in other countries",
     "namedMedicines": "Specific medicines named in {destination}'s rules",
     "compareEverywhere": "Compare {item} in every destination →",
     "fullGuide": "Full {destination} guide →",

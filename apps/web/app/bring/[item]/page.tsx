@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { BRING_CATEGORIES, bringCategoryBySlug } from "../../../lib/bring-categories";
 import { destinationSlug } from "../../../lib/bring-pages";
 import { customsItems, destinationByCode, withArticle } from "../../../lib/destinations";
+import { InShort } from "../../../components/content/Blocks";
 
 interface Params {
   item: string;
@@ -38,14 +39,19 @@ export async function generateMetadata({
   const found = rowsForCategory(item);
   if (!found) return {};
   const t = await getTranslations("bringPage");
-  const title = t("metaTitle", { item: found.meta.label });
+  // Titles in the words people search with (GROWTH_AND_ROADMAP.md §0).
+  const key = `byCategory.${found.meta.slug}`;
+  const title = t.has(`${key}.metaTitle`) ? t(`${key}.metaTitle`) : t("metaTitle", { item: found.meta.label });
+  const description = t.has(`${key}.metaDescription`)
+    ? t(`${key}.metaDescription`)
+    : t("metaDescription", { item: found.meta.searchLabel });
   return {
     title,
-    description: t("metaDescription", { item: found.meta.searchLabel }),
+    description,
     alternates: { canonical: `/bring/${found.meta.slug}` },
     openGraph: {
       title,
-      description: t("metaDescription", { item: found.meta.searchLabel }),
+      description,
       images: ["/opengraph-image"],
     },
   };
@@ -106,8 +112,17 @@ export default async function BringItemPage({ params }: { params: Promise<Params
 
       <header>
         <h1 className="font-display text-2xl font-bold tracking-tight text-slate-900 lg:text-3xl">
-          {t("h1item", { item: meta.label })}
+          {t.has(`byCategory.${meta.slug}.h1`) ? t(`byCategory.${meta.slug}.h1`) : t("h1item", { item: meta.label })}
         </h1>
+        <InShort>
+          {t("inShortLead", { rules: rows.length, countries: byDestination.size })}{" "}
+          {(["prohibited", "allowed_with_limits", "declaration_required", "depends", "allowed"] as const)
+            .map((v) => [v, rows.filter((r) => r.item.verdict === v).length] as const)
+            .filter(([, n]) => n > 0)
+            .map(([v, n]) => t(`inShortPart.${v}`, { n }))
+            .join(", ")}
+          .
+        </InShort>
         <p className="mt-2 text-sm leading-relaxed text-slate-600">
           {t("introItem", { item: meta.searchLabel })}
         </p>
@@ -124,6 +139,35 @@ export default async function BringItemPage({ params }: { params: Promise<Params
           </p>
         ) : null}
       </header>
+
+      <section data-testid="bring-glance">
+        <h2 className="text-sm font-semibold text-slate-900">{t("glanceTitle")}</h2>
+        <div className="mt-2 overflow-x-auto">
+          <table className="w-full min-w-[22rem] text-left text-sm">
+            <thead>
+              <tr className="border-b border-slate-200 text-xs text-slate-500">
+                <th className="py-2 pr-3 font-medium">{t("glanceCountry")}</th>
+                <th className="py-2 pr-3 font-medium">{t("glanceVerdict")}</th>
+                <th className="py-2 font-medium">{t("glanceLimit")}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map(({ item: i, destination: d }) => (
+                <tr key={i.slug} className="border-b border-slate-100 last:border-0">
+                  <td className="py-2 pr-3">
+                    <a href={`/bring/${meta.slug}/${destinationSlug(d!.name)}`} className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-2">
+                      {d!.name}
+                    </a>
+                    {byDestination.get(d!.code)!.items.length > 1 && <span className="ml-1 text-xs text-slate-500">({i.names[0]})</span>}
+                  </td>
+                  <td className="py-2 pr-3 text-slate-700">{tc(i.verdict)}</td>
+                  <td className="py-2 text-slate-700">{i.limits?.quantity ?? "—"}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
 
       <ul className="space-y-3">
         {[...byDestination.values()].map((d) => (

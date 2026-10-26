@@ -400,3 +400,12 @@ test("a destination hub lists its own recent rule changes and has a per-country 
   expect(feed.status()).toBe(200);
   expect(await feed.text()).toContain("rule changes for Zimbabwe");
 });
+
+test("item hubs lead with the search wording, a count summary and a limits table; pairs link the same item elsewhere", async ({ page }) => {
+  await page.goto("/bring/tobacco");
+  await expect(page.locator("h1")).toContainText("How many cigarettes can you bring?");
+  await expect(page).toHaveTitle(/How Many Cigarettes Can You Bring/);
+  await expect(page.getByTestId("bring-glance").locator("tbody tr").first()).toBeVisible();
+  await page.goto("/bring/tobacco/malaysia");
+  await expect(page.getByTestId("same-item-elsewhere").getByRole("link").first()).toBeVisible();
+});

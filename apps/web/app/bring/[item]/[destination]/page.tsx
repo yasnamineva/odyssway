@@ -70,6 +70,16 @@ export default async function BringDestinationPage({ params }: { params: Promise
   const siblings = bringPairsForDestination(pair.destination.code).filter(
     (p) => p.category !== pair.category,
   );
+  // The same item in other countries, same region first (internal links for
+  // the striking-distance pages, GROWTH_AND_ROADMAP.md §0).
+  const sameItemElsewhere = bringPairs
+    .filter((p) => p.category === pair.category && p.destination.code !== pair.destination.code)
+    .sort(
+      (a, b) =>
+        Number(b.destination.region === pair.destination.region) - Number(a.destination.region === pair.destination.region) ||
+        a.destination.name.localeCompare(b.destination.name),
+    )
+    .slice(0, 12);
 
   const headline =
     pair.rows.length === 1
@@ -245,6 +255,26 @@ export default async function BringDestinationPage({ params }: { params: Promise
                   className="inline-block rounded-full border border-slate-300 px-3 py-1 text-xs font-medium text-slate-700 hover:border-slate-900 hover:bg-slate-900 hover:text-white"
                 >
                   {BRING_CATEGORIES[s.category].label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {sameItemElsewhere.length > 0 && (
+        <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm" data-testid="same-item-elsewhere">
+          <h2 className="text-base font-semibold text-slate-900">
+            {t("sameItemElsewhere", { item: meta.searchLabel })}
+          </h2>
+          <ul className="mt-3 flex flex-wrap gap-2">
+            {sameItemElsewhere.map((s) => (
+              <li key={s.destination.code}>
+                <a
+                  href={`/bring/${s.itemSlug}/${s.destinationSlug}`}
+                  className="inline-block rounded-full border border-slate-300 px-3 py-1 text-xs font-medium text-slate-700 hover:border-slate-900 hover:bg-slate-900 hover:text-white"
+                >
+                  {s.destination.name}
                 </a>
               </li>
             ))}

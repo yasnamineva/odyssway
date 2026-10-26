@@ -20,6 +20,45 @@ Where we are today (2026-10-25):
 
 ---
 
+## 0. Current priority: SEO (from the October 2026 Search Console review)
+
+SEO comes first until the striking-distance pages below reach page 1. The full work list with
+numbers is local (`seo/gsc/2026-10/worklist.md`, git-ignored because the repo is public).
+
+**What the data says (last 28 days to 24 Oct 2026):**
+- "Can I bring X to Y" pages (`/bring/{item}/{country}`) and named-medicine pages earn about 70%
+  of clicks and rank around position 14: the item niche works. Invest here.
+- Passport × destination pages get as many impressions but rank around position 49 for generic
+  visa searches ("israel visa for us citizens", "thailand visa for indians"). Don't chase those
+  (§14); improve pair pages only where they're already close.
+- Hub pages (`/bring/tobacco`, `/bring/medication`) reach position 10–11 but get almost no
+  clicks: their titles are generic.
+- Mobile ranks much better than desktop (position ~19 vs ~40).
+
+**Work, in order** (✔ = done):
+1. ✔ (2026-10-26) "Can I bring it?" item hubs retitled in search wording ("How many cigarettes
+   can you bring?"), with a counted summary and an at-a-glance limits table. Every
+   `/bring/{item}/{country}` page now also links the same item in up to 12 other countries,
+   same region first (the Malaysia cluster was already linked by country).
+2. Striking distance (position 8–20): for each page, a title and H1 in the search wording, the
+   answer in the first two sentences, facts the row has but the page hides, and links from 3+
+   related pages. Priority pages:
+   - Malaysia cluster: tobacco, e-cigarettes, meat and dairy, fresh produce.
+   - Hong Kong alcohol and cash; Philippines alcohol; Thailand tobacco; UAE meat and dairy;
+     Indonesia e-cigarettes; Morocco tobacco; Serbia alcohol; Taiwan tobacco.
+   - Fresh produce: Singapore, United Kingdom, Taiwan.
+   - Medication: Argentina, Maldives; Ozempic and Wegovy in Mexico, Wegovy in Thailand.
+   - `/blog/thailand-visa-free-cut-2026`, `/sources`.
+3. Position 21–40 with volume: Thailand e-cigarettes (add depth from verified rows), Australia
+   drones, Turkey alcohol, South Korea e-cigarettes.
+4. Each month: new export → compare positions for the pages above → next list (§5.1).
+
+**Deliberately ignored queries:** airport-security wording ("tobacco in hand luggage", §2), buying
+medicine abroad ("can you buy wegovy in mexico"), exporting ("import fresh fruit from thailand"),
+"global entry", generic visa queries at position 60+.
+
+---
+
 ## 1. Where we can win
 
 General AI answers handle the generic question well ("Do Americans need a visa for
@@ -205,6 +244,8 @@ more than a Japanese page about the US). Translate the highest-traffic page type
 > kept up to date.
 
 ### Horizon 1: now to 3 months. Prove the medication wedge.
+
+- **SEO first** (§0): get the striking-distance item and medication pages onto page 1.
 
 - Launch the medication planner on Product Hunt.
 - Run the first monthly ranking routine (§5.1) as soon as there's a Search Console export.
