@@ -52,7 +52,8 @@ numbers is local (`seo/gsc/2026-10/worklist.md`, git-ignored because the repo is
    - Fresh produce: Singapore, United Kingdom, Taiwan.
    - Medication: Argentina, Maldives; Ozempic and Wegovy in Mexico, Wegovy in Thailand.
    - `/blog/thailand-visa-free-cut-2026`, `/sources`.
-3. Position 21–40 with volume: Thailand e-cigarettes (add depth from verified rows), Australia
+3. Position 21–40 with volume: ✔ Thailand e-cigarettes re-sourced to the Royal Thai Embassy
+   with a summary (2026-10-26; exact penalties need the Customs Act text). Still: Australia
    drones, Turkey alcohol, South Korea e-cigarettes.
 4. Each month: new export → compare positions for the pages above → next list (§5.1).
 
