@@ -18366,5 +18366,57 @@
     "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "cash-uz",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "foreign currency declaration",
+      "us dollars"
+    ],
+    "destination": "UZ",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Complete a customs declaration on entry if you bring US$10,000 or more, or more than 65 grams of precious metals and gemstones. Fill in 2 copies and make sure customs officials sign and stamp both. You can't leave Uzbekistan with more foreign currency than you brought in.",
+      "quantity": "US$10,000"
+    },
+    "notes": "If you carry currency or valuables that you didn't declare on arrival, officials may confiscate them. Uzbekistan's customs site (customs.uz) couldn't be read; this row rests on the UK government's travel advice, which gives the threshold as '10,000 US dollars'.",
+    "summary": "Declare US$10,000 or more on arrival, on 2 stamped copies. You can't leave with more foreign currency than you brought in.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Uzbekistan travel advice: Entry requirements (updated 19 March 2026)",
+      "url": "https://www.gov.uk/foreign-travel-advice/uzbekistan/entry-requirements"
+    },
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-zw",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "foreign currency declaration",
+      "us dollars"
+    ],
+    "destination": "ZW",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declare cash or travellers cheques worth US$10,000 or more. It is illegal to leave Zimbabwe with cash worth more than US$2,000.",
+      "quantity": "US$10,000 in; US$2,000 out"
+    },
+    "notes": "ZIMRA (Zimbabwe's revenue authority) says importing cash isn't restricted and asks for a declaration on Form 47, but gives no threshold on a page we could read; the US$10,000 and US$2,000 figures come from the UK government's travel advice.",
+    "summary": "Declare US$10,000 or more on arrival. Leaving with more than US$2,000 in cash is illegal.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Zimbabwe travel advice: Entry requirements, 'Taking money into and out of Zimbabwe' (updated 15 July 2026)",
+      "url": "https://www.gov.uk/foreign-travel-advice/zimbabwe/entry-requirements"
+    },
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]
