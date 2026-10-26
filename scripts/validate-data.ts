@@ -199,6 +199,31 @@ function checkLeadTimeMatchesText(): void {
   }
 }
 
+/**
+ * Rows that announce a future change ("takes effect from 1 October 2026") go stale
+ * the day it happens. Warn (not fail) once such a date has passed, so the row is
+ * re-checked against its source.
+ */
+const MONTHS = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+function warnPassedAnnouncements(): void {
+  const today = new Date().toISOString().slice(0, 10);
+  const re = /\b(take|takes|will take|comes? into|will come into|will start|starts|will apply|will end|will be replaced)\b[^.]{0,40}?\b(\d{1,2}) (january|february|march|april|may|june|july|august|september|october|november|december) (\d{4})/gi;
+  for (const name of ["customs-items.json", "entry-requirements.json"]) {
+    const rows = JSON.parse(readFileSync(join(DATA_DIR, name), "utf8")) as Array<Record<string, unknown>>;
+    for (const r of rows) {
+      if (r.status !== "verified") continue;
+      const text = JSON.stringify([r.summary, r.limits, r.notes, r.documentsNeeded]);
+      for (const m of text.matchAll(re)) {
+        const date = `${m[4]}-${String(MONTHS.indexOf(m[3]!.toLowerCase()) + 1).padStart(2, "0")}-${m[2]!.padStart(2, "0")}`;
+        if (date < today) {
+          const id = (r.slug as string) ?? `${r.nationality}→${r.destination}`;
+          console.warn(`⚠ ${name}: ${id} announces a change on ${date}, which has passed: "${m[0]}" — re-check the source.`);
+        }
+      }
+    }
+  }
+}
+
 // --- run ---
 const productionFiles = jsonFilesIn(DATA_DIR);
 const unverifiedFiles = jsonFilesIn(UNVERIFIED_DIR);
@@ -208,6 +233,7 @@ for (const f of unverifiedFiles) validateFile(f, false);
 checkNoUnverifiedReferences();
 checkPassportValidityMatchesText();
 checkLeadTimeMatchesText();
+warnPassedAnnouncements();
 
 console.log(
   `Checked ${productionFiles.length} production data file(s), ${unverifiedFiles.length} UNVERIFIED draft(s).`,
