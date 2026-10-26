@@ -1321,6 +1321,10 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
 
 ## Blocked on research (no primary source identified yet)
 
+- [ ] `e-cigarettes-us`, `e-cigarettes-za` (moved to UNVERIFIED 2026-10-26: 'allowed' rested on silence).
+      US leads: CBP's customs duty page gives tobacco limits only; CBP news releases concern
+      unauthorised commercial ENDS (Operation Red Mist, May 2026); help.cbp.gov is JS-rendered.
+      Need a CBP or FDA statement on a traveller's own vape. ZA: a SARS statement on personal vapes.
 - [ ] **DEADLINE 2027-01-16 — Israel tobacco/vape allowance cut** (lead found 2026-10-26, news only:
       Calcalist, Ynet, Maariv; smokefree.org.il summary of "Amendment No. 9 to the Customs Tariff,
       Exemptions and Purchase Tax on Goods Order"). Reported: from 16 Jan 2027 the traveller

@@ -46,6 +46,16 @@ export function GET(): Response {
       .filter((p) => p.category === "medication")
       .map((p) => `- [${p.destination.name}](${SITE_URL}/bring/medication/${p.destinationSlug})`),
     "",
+    "## Cannabis and CBD rules by country",
+    ...bringPairs
+      .filter((p) => p.category === "cbd_cannabis")
+      .map((p) => `- [${p.destination.name}](${SITE_URL}/bring/${p.itemSlug}/${p.destinationSlug})`),
+    "",
+    "## Vape and e-cigarette rules by country",
+    ...bringPairs
+      .filter((p) => p.category === "e_cigarettes")
+      .map((p) => `- [${p.destination.name}](${SITE_URL}/bring/${p.itemSlug}/${p.destinationSlug})`),
+    "",
     "## Destinations",
     ...destinations
       .filter((d) => d.status === "verified")
