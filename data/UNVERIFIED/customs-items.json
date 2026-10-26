@@ -1870,5 +1870,39 @@
     "verified_at": null,
     "verified_by": null,
     "status": "needs_verification"
+  },
+  {
+    "slug": "cbd-al",
+    "names": [
+      "cbd",
+      "cbd oil",
+      "cannabidiol",
+      "hemp extract",
+      "cbd gummies"
+    ],
+    "destination": "AL",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Not named specifically, but falls under the Customs Authority's blanket ban on importing \"plants, narcotic medicaments and psychotropic substances of natural or synthetic nature, their materials and their preparations\" — the same provision covering cannabis generally."
+    },
+    "notes": "Moved to UNVERIFIED 2026-10-26: the CBD verdict was an inference from the Customs Authority's general ban on narcotic plant preparations; no Albanian page names CBD. No Albanian government page found that names CBD specifically or draws a distinction by THC content, unlike some countries' customs authorities. Given the blanket wording covering cannabis-plant preparations generally and no confirmed exception, treat CBD products the same as cannabis: do not bring them. This inference (CBD swept in under the general cannabis/narcotic-plant provision, not a CBD-specific rule) should be treated as somewhat less certain than the cannabis row itself.",
+    "summary": "Treated as banned: CBD isn't named, but Albania's customs ban on narcotic plants and their preparations covers cannabis products.",
+    "legal_source": {
+      "name": "General Directorate of Customs (Republic of Albania) — Narcotics and Psychotropic Substances and human trafficking",
+      "url": "https://www.dogana.gov.al/english/c/177/239/narcotics-and-psychotropic-substances-and-human-trafficking"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification",
+    "transit": {
+      "rule": "applies",
+      "description": "Albania's customs authority prohibits the transit of narcotics and psychotropic substances and their preparations, as well as their import and export.",
+      "source": {
+        "name": "General Directorate of Customs (Republic of Albania) — Narcotics and Psychotropic Substances and human trafficking",
+        "url": "https://www.dogana.gov.al/english/c/177/239/narcotics-and-psychotropic-substances-and-human-trafficking"
+      },
+      "verified_at": "2026-10-16"
+    }
   }
 ]

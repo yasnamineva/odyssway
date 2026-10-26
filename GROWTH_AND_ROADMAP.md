@@ -147,6 +147,12 @@ South Africa, Nigeria, Poland, Portugal, Vietnam, Pakistan. Add one at a time, f
   Zimbabwe tobacco and cash (ZIMRA gives no primary threshold).
 - **Second vertical after medication**, chosen from data (§5): CBD and cannabis, food,
   nicotine and vapes, or drones. Go deep on one before starting the next.
+  ✔ 2026-10-26 CBD audit: 12 cannabis rows answered CBD searches with "banned" by inference
+  (from "narcotics" or silence). Their CBD search names were removed (CBD now shows "not
+  verified" there) and Albania's CBD row moved to UNVERIFIED; New Zealand (prescribed medicinal
+  cannabis allowed) and Taiwan CBD (TFDA permit) corrected from official pages. CBD is sourced
+  for CA, TH, SG, KR, HK, CY, IE, US, JP, CN, NZ, TW, CL. Researching CBD for the rest is a good
+  start for the CBD vertical.
 
 ---
 
