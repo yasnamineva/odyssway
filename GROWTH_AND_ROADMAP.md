@@ -42,7 +42,9 @@ numbers is local (`seo/gsc/2026-10/worklist.md`, git-ignored because the repo is
    same region first (the Malaysia cluster was already linked by country).
 2. (In progress.) ✔ 2026-10-26: titles on item and medicine pages now give the limit when it's
    short ("Yes, limit: 1 litre", "Yes; declaration limit ¥1,000,000"), falling back to the plain
-   answer. Still to do per page: answer-first wording and facts the page hides.
+   answer. ✔ 2026-10-26: answer-first summaries for 15 priority rows whose text opened with a source
+   attribution (Serbia, UAE, Maldives, Mexico, Hong Kong tobacco); UK vaping allowance updated
+   (50 ml). Still to do: ~55 more priority rows without a summary (their openings already answer).
    Striking distance (position 8–20): for each page, a title and H1 in the search wording, the
    answer in the first two sentences, facts the row has but the page hides, and links from 3+
    related pages. Priority pages:

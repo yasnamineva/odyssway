@@ -411,15 +411,17 @@
     "destination": "GB",
     "category": "e_cigarettes",
     "verdict": "allowed_with_limits",
+    "summary": "Duty-free: up to 50 ml of vaping liquid. Above that, tax and duty are due on all of it.",
     "limits": {
-      "description": "Counted under the general personal-goods allowance of £390 (no separate vape category yet)"
+      "description": "You can bring in up to 50 ml of vaping liquid duty-free when arriving in Great Britain. If you bring more, you pay tax and duty on all of it (for example, all 100 ml if you bring 100 ml), not just the excess. There's no allowance for under-17s: they must declare vaping products before arriving.",
+      "quantity": "50 ml vaping liquid"
     },
-    "notes": "A dedicated Vaping Products Duty and a distinct duty-free allowance take effect from 1 October 2026 — check gov.uk closer to your travel date.",
+    "notes": "Vaping products have their own allowance, separate from tobacco and from the £390 allowance for other goods.",
     "legal_source": {
       "name": "gov.uk — Bringing goods into the UK for personal use",
       "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
     },
-    "verified_at": "2026-10-18",
+    "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -1863,6 +1865,7 @@
     "destination": "MX",
     "category": "weapons",
     "verdict": "depends",
+    "summary": "Firearms, ammunition and explosives need a SEDENA import permit, or can't be imported at all. Smuggling them carries long prison terms.",
     "notes": "Arms, ammunition, cartridges and explosives are regulated by the Secretaría de la Defensa Nacional (SEDENA) under the Ley Federal de Armas de Fuego y Explosivos. ANAM sorts them into items that need no extraordinary import permit (still inspected by customs), items that need SEDENA's extraordinary import permit, and restricted-use items that may only be imported by public security bodies. Compressed-gas (CO2) rifles and pistols, including paintball, also need the permit. Bringing them in clandestinely: 5 to 30 years' prison for items reserved for the armed forces or subject to control; 3 to 10 years for other firearms.",
     "legal_source": {
       "name": "ANAM — Mercancía regulada por parte de la Secretaría de la Defensa Nacional",
@@ -1909,6 +1912,7 @@
     "destination": "MX",
     "category": "food_animal",
     "verdict": "prohibited",
+    "summary": "Don't bring fresh meat, fresh cheese, or homemade meat and dairy products.",
     "notes": "SENASICA's traveler-facing prohibited list includes fresh meat of any species/origin, fresh cheeses (e.g. asadero, cottage, mozzarella, panela), home-made/artisanal meat and dairy products, and pork products/derivatives from countries with African Swine Fever — none of these may be brought in personal baggage. The list is explicitly stated as illustrative, not exhaustive (“ensunciativa, más no limitativa”).",
     "legal_source": {
       "name": "SENASICA — Productos prohibidos (información para viajeros)",
@@ -1930,6 +1934,7 @@
     "destination": "MX",
     "category": "food_plant",
     "verdict": "prohibited",
+    "summary": "Fresh fruit, vegetables, plants, seeds and grains aren't allowed without phytosanitary documents. Soil is banned outright.",
     "notes": "SENASICA's traveler-facing prohibited list includes fresh fruits and vegetables, cut flowers/plants/in-vitro plantlets, fresh foliage, propagative material (seeds, bulbs, cuttings, buds), grains/seeds (corn, beans, rice, quinoa, wheat, sesame, sunflower), green coffee and green tobacco, and fresh chestnuts, unless accompanied by the required phytosanitary documentation. Soil/earth is prohibited outright with no exception. The list is explicitly stated as illustrative, not exhaustive.",
     "legal_source": {
       "name": "SENASICA — Productos prohibidos (información para viajeros)",
@@ -3796,6 +3801,7 @@
     "destination": "AE",
     "category": "tobacco",
     "verdict": "prohibited",
+    "summary": "Banned: nasvaar and betel leaves (paan) of any kind can't be brought in.",
     "notes": "Dubai Customs' Passenger Customs Guide lists 'Nasvaar and Betel leaves (paan) of any kind' as an example of items not allowed for import by passengers — a distinct, absolute prohibition separate from the ordinary duty-free tobacco allowance (200 cigarettes / 50 cigars / 500g pipe tobacco). This is easy for travelers from South Asia to miss, since paan and nasvaar are common, everyday items at home that don't register as 'tobacco products' the way cigarettes do, and the ordinary tobacco allowance gives no hint that a specific product within that category is banned outright rather than just limited.",
     "legal_source": {
       "name": "Dubai Customs — Passenger Customs Guide, Version 6 (2025), \"Examples of items not allowed for import by passengers\"",
@@ -3904,6 +3910,7 @@
     "destination": "AE",
     "category": "food_animal",
     "verdict": "depends",
+    "summary": "Food products need a permit from the relevant authority, and commercial quantities aren't allowed under a traveller's name.",
     "notes": "Dubai Customs' official passenger guide lists both \"Food Products\" and \"Domestic Animals\" among goods accompanying passengers that are subject to permits from relevant authorities, and separately notes food items are not allowed in under a traveler's name if the quantity is commercial. The guide does not name the issuing agency or give species/quantity specifics for personal-quantity meat and dairy, so this is published at the general \"permit required\" level rather than a more specific but unverified claim.",
     "legal_source": {
       "name": "Dubai Customs — Passenger Customs Guide, Version 6 (2025)",
@@ -3925,6 +3932,7 @@
     "destination": "AE",
     "category": "food_plant",
     "verdict": "depends",
+    "summary": "Plants and seedlings need a permit from the relevant authority. Seedlings with soil aren't allowed at all.",
     "notes": "Dubai Customs' official passenger guide lists \"Plants and Seedlings\" among goods accompanying passengers that are subject to permits from relevant authorities, and explicitly states that agricultural seedlings containing soil are not allowed to be brought in by a traveler at all. The guide does not name the issuing agency or give species-level specifics beyond the soil rule.",
     "legal_source": {
       "name": "Dubai Customs — Passenger Customs Guide, Version 6 (2025)",
@@ -8356,6 +8364,7 @@
     ],
     "category": "tobacco",
     "verdict": "allowed_with_limits",
+    "summary": "Duty-free from age 18: only 19 cigarettes, or 1 cigar (or 25 g of cigars), or 25 g of other tobacco. A pack of 20 is over the limit.",
     "limits": {
       "description": "\"A passenger aged 18 or above is allowed to bring into Hong Kong, for his own use, the following quantity of tobacco products exempted from duty: 19 cigarettes; or 1 cigar or 25 grams of cigars; or 25 grams of other manufactured tobacco.\"",
       "quantity": "19 cigarettes, or 1 cigar / 25 g of cigars, or 25 g other manufactured tobacco"
@@ -9727,6 +9736,7 @@
     "destination": "MV",
     "category": "alcohol",
     "verdict": "prohibited",
+    "summary": "Don't bring it: all alcohol, including duty-free purchases, is confiscated on arrival. Foreign nationals get it back when they leave.",
     "notes": "The airport operator's customs page states: \"All alcohol is confiscated on arrival, including duty-free purchases from departure airports or in-flight\"; prohibited items other than narcotics are released to foreign nationals only when they leave. The Maldives consulate page adds that prior licences are required to import alcohol and that alcohol is only available at tourist resorts and hotels (none is sold in Malé or on inhabited islands). UK FCDO warns you can be arrested and deported for possessing or drinking alcohol, or being intoxicated, outside resorts and on inhabited islands — do not take alcohol out of your resort.",
     "legal_source": {
       "name": "Maldives Airports Company — Velana International Airport: Customs & Security, Prohibited & Restricted Items",
@@ -9769,6 +9779,7 @@
     "destination": "MV",
     "category": "weapons",
     "verdict": "prohibited",
+    "summary": "Banned: firearms, ammunition, replicas, explosives, fireworks, bladed weapons, toxic substances and poisons are confiscated.",
     "notes": "The airport operator's customs page lists under weapons and chemicals: \"Firearms, ammunition, replicas, explosives, fireworks, bladed weapons, toxic substances, and poisons\" — so replicas and bladed weapons are covered, not just firearms. Prohibited items other than narcotics are confiscated and released to foreign nationals only at departure. The Maldives consulate page also states the import of firearms is strictly prohibited.",
     "legal_source": {
       "name": "Maldives Airports Company — Velana International Airport: Customs & Security, Prohibited & Restricted Items",
@@ -9956,6 +9967,7 @@
     "destination": "MV",
     "category": "e_cigarettes",
     "verdict": "prohibited",
+    "summary": "Banned since 15 November 2024: vapes and e-cigarettes are confiscated at customs, with a receipt to collect them when you leave.",
     "notes": "Airport operator's customs page: \"Since 15 November 2024, the Maldives has banned the import of all vaping devices — both disposable and reusable — e-cigarettes, and related accessories. Devices and accessories are confiscated at customs. A receipt is issued and items can be collected on departure.\" Vaporizers appear on its list of retrievable items given a receipt.",
     "legal_source": {
       "name": "Maldives Airports Company — Velana International Airport: Customs & Security, Prohibited & Restricted Items",
@@ -9977,6 +9989,7 @@
     "destination": "MV",
     "category": "cash",
     "verdict": "declaration_required",
+    "summary": "No limit, but declare currency over US$10,000 in the red channel.",
     "limits": {
       "description": "Passengers carrying currency over US$10,000 use the red channel to declare it: the airport operator's customs page lists \"currency over $10,000\" among goods to declare at Customs."
     },
@@ -10059,6 +10072,7 @@
     "destination": "RS",
     "category": "tobacco",
     "verdict": "depends",
+    "summary": "Duty-free: 50 cigarettes, or 25 cigarillos, or 10 cigars, or 50 g of tobacco. Snus (oral tobacco) is banned.",
     "limits": {
       "description": "Quoted directly from Customs: \"50 cigarettes, 25 cigarillos (cigars up to 3g), 10 cigars, 50g of tobacco or suitable combination of all mentioned products.\" This covers cut tobacco, pipe tobacco, hookah tobacco, chewing tobacco, snuff, and heated (non-burning) tobacco products. Oral tobacco (snus) is explicitly excluded: \"tobacco for oral use (snus) whose import and distribution in the Republic of Serbia is prohibited.\""
     },
@@ -10084,6 +10098,7 @@
     "destination": "RS",
     "category": "e_cigarettes",
     "verdict": "allowed_with_limits",
+    "summary": "Allowed in quantities for personal use. Customs gives no number of devices or volume of e-liquid.",
     "limits": {
       "description": "Quoted directly from Customs: passengers \"are also allowed to carry related tobacco products in their luggage in quantities for personal use (electronic cigarettes, vapes, nicotine pouches and hookah aromas)\". No specific numeric limit (device count or e-liquid volume) is given — only the general \"personal use, not for resale\" standard that applies to the whole tobacco-products allowance."
     },
@@ -10133,6 +10148,7 @@
     "destination": "RS",
     "category": "medication",
     "verdict": "allowed_with_limits",
+    "summary": "Up to 15 days' supply without a medical opinion. More, up to six months' supply, needs prior approval from the Ministry of Health.",
     "limits": {
       "description": "Quoted directly from Customs: medicines may be brought in \"for personal passenger's use and for animals accompanying the passenger, in quantity needed for regular therapy not longer than 15 days. In that case medical opinion won't be necessary.\" For a longer stay, \"a larger quantity of medicines required for the implementation of usual therapy during several months of stay (more than 15 days, but no more than six months)\" is allowed but needs prior approval from \"the competent ministry\" (the Ministry of Health)."
     },
@@ -10208,6 +10224,7 @@
     "destination": "RS",
     "category": "food_animal",
     "verdict": "allowed_with_limits",
+    "summary": "Reasonable amounts for personal use, in the manufacturer's original packaging. Food of animal origin is capped at 1 kg.",
     "limits": {
       "description": "Quoted directly from Customs: food \"may only be brought into/taken out of country in reasonable quantities for personal use and in the original manufacturer's wrapping. If you are importing food of animal origin, its quantity is limited to a maximum of one kilogram.\"",
       "quantity": "1 kg (animal-origin food)"
