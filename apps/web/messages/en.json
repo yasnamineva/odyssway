@@ -421,6 +421,10 @@
       "depends": "It depends",
       "permit": "Only with a permit"
     },
+    "withQuantity": {
+      "allowed_with_limits": "Yes, limit: {quantity}",
+      "declaration_required": "Yes; declaration limit {quantity}"
+    },
     "tail": "Official source, checked {date}.",
     "tailProduct": "Covers {product}. Official source, checked {date}.",
     "inDestination": "In {destination}: {list}"

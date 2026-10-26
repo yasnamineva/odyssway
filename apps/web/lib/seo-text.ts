@@ -60,10 +60,16 @@ export function checkedYear(rows: CustomsItemRecord[]): string | undefined {
  * "Can you bring X to Y? No, it's banned (2026)", dropping the year and then
  * the answer if the title would run long.
  */
-export function titleWithAnswer(question: string, answer: string | undefined, year: string | undefined): string {
+export function titleWithAnswer(
+  question: string,
+  answer: string | string[] | undefined,
+  year: string | undefined,
+): string {
+  // Answers in order of preference (e.g. the limit, then the plain verdict):
+  // each is tried with and without the year before giving up on an answer.
+  const answers = answer === undefined ? [] : Array.isArray(answer) ? answer : [answer];
   const candidates = [
-    answer && year ? `${question} ${answer} (${year})` : undefined,
-    answer ? `${question} ${answer}` : undefined,
+    ...answers.flatMap((a) => [year ? `${question} ${a} (${year})` : undefined, `${question} ${a}`]),
     year ? `${question} ${year} rules` : undefined,
     question,
   ].filter((c): c is string => Boolean(c));
@@ -74,4 +80,24 @@ export function titleWithAnswer(question: string, answer: string | undefined, ye
 export function describeRule(lead: string, tail: string): string {
   const room = DESCRIPTION_MAX - tail.length - 1;
   return `${clip(lead, Math.max(room, 60))} ${tail}`.trim();
+}
+
+/** Longest limit worth putting in a title; longer ones read badly and get cut. */
+const QUANTITY_IN_TITLE_MAX = 26;
+
+/**
+ * The title answer for one row: the limit itself ("Yes, limit: 200 cigarettes")
+ * when the row has a short quantity, otherwise the plain verdict. Searchers ask
+ * "how much", so the number in the result is the answer (GROWTH_AND_ROADMAP.md §0).
+ */
+export function titleAnswer(
+  row: CustomsItemRecord,
+  t: (key: string, values?: Record<string, string>) => string,
+): string[] {
+  const plain = t(`verdict.${seoVerdictKey(row)}`);
+  const q = row.limits?.quantity;
+  if (q && q.length <= QUANTITY_IN_TITLE_MAX && (row.verdict === "allowed_with_limits" || row.verdict === "declaration_required")) {
+    return [t(`withQuantity.${row.verdict}`, { quantity: q }), plain];
+  }
+  return [plain];
 }

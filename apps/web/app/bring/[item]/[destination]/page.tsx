@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { checkedYear, clip, describeRule, rowLead, seoVerdictKey, titleWithAnswer } from "../../../../lib/seo-text";
+import { checkedYear, clip, describeRule, rowLead, titleAnswer, titleWithAnswer } from "../../../../lib/seo-text";
 import { notFound } from "next/navigation";
 import { BRING_CATEGORIES } from "../../../../lib/bring-categories";
 import { bringPair, bringPairs, bringPairsForDestination, rowLabel } from "../../../../lib/bring-pages";
@@ -39,7 +39,7 @@ export async function generateMetadata({
   const single = pair.rows.length === 1 ? pair.rows[0]! : undefined;
   const title = titleWithAnswer(
     t("metaTitle", { item: meta.searchLabel, destination: withArticle(pair.destination.name) }),
-    single ? ts(`verdict.${seoVerdictKey(single)}`) : undefined,
+    single ? titleAnswer(single, ts) : undefined,
     checkedYear(pair.rows),
   );
   const lead = single

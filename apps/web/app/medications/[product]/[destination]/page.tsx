@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { withArticle } from "../../../../lib/destinations";
-import { checkedYear, describeRule, rowLead, seoVerdictKey, titleWithAnswer } from "../../../../lib/seo-text";
+import { checkedYear, describeRule, rowLead, titleAnswer, titleWithAnswer } from "../../../../lib/seo-text";
 import { notFound } from "next/navigation";
 import BreadcrumbJsonLd from "../../../../components/BreadcrumbJsonLd";
 import CustomsRowCard, { VERDICT_STYLES } from "../../../../components/CustomsRowCard";
@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const single = pair.rows.length === 1 ? pair.rows[0]! : undefined;
   const title = titleWithAnswer(
     t("metaTitle", vars),
-    single ? ts(`verdict.${seoVerdictKey(single)}`) : undefined,
+    single ? titleAnswer(single, ts) : undefined,
     checkedYear(pair.rows),
   );
   const lead = single

@@ -40,7 +40,10 @@ numbers is local (`seo/gsc/2026-10/worklist.md`, git-ignored because the repo is
    can you bring?"), with a counted summary and an at-a-glance limits table. Every
    `/bring/{item}/{country}` page now also links the same item in up to 12 other countries,
    same region first (the Malaysia cluster was already linked by country).
-2. Striking distance (position 8–20): for each page, a title and H1 in the search wording, the
+2. (In progress.) ✔ 2026-10-26: titles on item and medicine pages now give the limit when it's
+   short ("Yes, limit: 1 litre", "Yes; declaration limit ¥1,000,000"), falling back to the plain
+   answer. Still to do per page: answer-first wording and facts the page hides.
+   Striking distance (position 8–20): for each page, a title and H1 in the search wording, the
    answer in the first two sentences, facts the row has but the page hides, and links from 3+
    related pages. Priority pages:
    - Malaysia cluster: tobacco, e-cigarettes, meat and dairy, fresh produce.

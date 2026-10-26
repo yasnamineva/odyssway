@@ -38,3 +38,14 @@ describe("seo text", () => {
     expect(d.endsWith("checked 2026-10-16.")).toBe(true);
   });
 });
+
+describe("titleWithAnswer with a preferred and a fallback answer", () => {
+  it("uses the limit when it fits, otherwise the plain verdict, before dropping the answer", () => {
+    expect(titleWithAnswer("Can you bring alcohol to Japan?", ["Yes, limit: 1 liter", "Yes, with limits"], "2026")).toBe(
+      "Can you bring alcohol to Japan? Yes, limit: 1 liter (2026)",
+    );
+    expect(
+      titleWithAnswer("Can you bring tobacco or cigarettes to Morocco?", ["Yes, limit: 200 cigarettes / 250g", "Yes, with limits"], "2026"),
+    ).toBe("Can you bring tobacco or cigarettes to Morocco? Yes, with limits");
+  });
+});
