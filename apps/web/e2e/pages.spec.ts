@@ -437,3 +437,13 @@ test("per-country EES, overstay and ETIAS pages link each other and their siblin
   await page.goto("/etias/us");
   await expect(page.getByTestId("sibling-links").locator('a[href^="/etias/"]').first()).toBeVisible();
 });
+
+test("the CBD post renders and is linked from cannabis pages, not medication pages", async ({ page }) => {
+  const res = await page.goto("/blog/cbd-travel-rules");
+  expect(res?.status()).toBe(200);
+  await expect(page.locator("h1")).toContainText("Travelling with CBD");
+  await page.goto("/bring/cannabis/hong-kong");
+  await expect(page.getByTestId("bring-related-posts").locator('a[href="/blog/cbd-travel-rules"]')).toBeVisible();
+  await page.goto("/bring/medication/japan");
+  await expect(page.locator('a[href="/blog/cbd-travel-rules"]')).toHaveCount(0);
+});

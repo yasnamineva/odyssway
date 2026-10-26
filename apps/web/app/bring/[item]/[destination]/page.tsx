@@ -82,12 +82,13 @@ export default async function BringDestinationPage({ params }: { params: Promise
         a.destination.name.localeCompare(b.destination.name),
     )
     .slice(0, 12);
-  // Medicine posts that cover this country, on its medication page only (a
-  // medicine post isn't what a tobacco or cash searcher came for).
-  const relatedPosts =
-    pair.category === "medication"
-      ? blogPosts.filter((p) => p.category === "Medicine" && p.destinationCodes?.includes(pair.destination.code))
-      : [];
+  // Posts that cover this country and this item (medicine posts default to the
+  // medication pages; a medicine post isn't what a tobacco or cash searcher came for).
+  const relatedPosts = blogPosts.filter(
+    (p) =>
+      (p.bringCategories ?? (p.category === "Medicine" ? ["medication"] : [])).includes(pair.category) &&
+      p.destinationCodes?.includes(pair.destination.code),
+  );
 
   const headline =
     pair.rows.length === 1

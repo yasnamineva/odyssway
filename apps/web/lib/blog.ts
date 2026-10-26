@@ -28,9 +28,31 @@ export interface BlogPost {
   destinationCodes?: string[];
   /** Pixabay photo shown on the card, the post and its social preview (lib/photos.ts). */
   photo: PhotoKey;
+  /** "Can I bring it?" item pages (customs categories) that list this post. Medicine
+   * posts default to the medication pages. */
+  bringCategories?: string[];
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "cbd-travel-rules",
+    title: "Travelling with CBD: where it's banned, and where you need a prescription",
+    seoTitle: "Can You Travel With CBD? Country Rules Checked (2026)",
+    seoDescription:
+      "CBD is banned even without THC in Hong Kong, Singapore, South Korea and the UAE; New Zealand, Australia, Taiwan and Brazil need a prescription or permit.",
+    dek: "A CBD oil that's sold next to vitamins at home can be treated like cannabis at the border. Where it's banned outright, where a prescription or permit works, and where THC is the line.",
+    date: "2026-10-26",
+    category: "Medicine",
+    legalSource: {
+      name: "Narcotics Division, Security Bureau (Hong Kong) — Legislative Control of Cannabidiol (CBD)",
+      url: "https://www.nd.gov.hk/en/CBD.html",
+    },
+    verifiedAt: "2026-10-26",
+    changelogDataset: "customs-items",
+    destinationCodes: ["HK", "SG", "KR", "AE", "ID", "AM", "TZ", "CA", "TH", "CY", "VN", "NZ", "AU", "TW", "BR", "JP", "CL", "CN", "US", "IE"],
+    photo: "blog-kratom",
+    bringCategories: ["cbd_cannabis"],
+  },
   {
     slug: "passport-validity-six-months-rule",
     title: "Six months from arrival, or after you leave? Passport validity rules compared",

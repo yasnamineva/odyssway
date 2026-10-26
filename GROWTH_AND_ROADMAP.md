@@ -159,6 +159,9 @@ South Africa, Nigeria, Poland, Portugal, Vietnam, Pakistan. Add one at a time, f
   cannabis allowed) and Taiwan CBD (TFDA permit) corrected from official pages. CBD is sourced
   for CA, TH, SG, KR, HK, CY, IE, US, JP, CN, NZ, TW, CL. Researching CBD for the rest is a good
   start for the CBD vertical.
+  ✔ Post `/blog/cbd-travel-rules` (2026-10-26), linked from each covered country's cannabis page.
+  It reuses the kratom post's plant photo; swap in a CBD-specific Pixabay photo (pixabay.com blocks
+  scripted downloads, so the owner or a browser session needs to fetch it).
 
 ---
 
