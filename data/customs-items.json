@@ -2109,7 +2109,7 @@
     "destination": "TH",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "The Thai FDA's traveller guidance says cannabis- or hemp-based foods may not be imported, cosmetics containing cannabis extract or hemp may not be imported, and herbal products containing cannabis or hemp may not be imported.",
+    "notes": "The Thai FDA's traveller guidance says cannabis- or hemp-based foods may not be imported, cosmetics containing cannabis extract or hemp may not be imported, and herbal products containing cannabis or hemp may not be imported. The guidance doesn't name CBD (cannabidiol); our reading is that CBD oils and other CBD products made from cannabis or hemp are covered as cannabis- or hemp-extract products.",
     "legal_source": {
       "name": "Thai FDA — Passenger belongings related to health products into the Kingdom of Thailand (foods, cosmetics, herbal products)",
       "url": "https://en.fda.moph.go.th/guideline-of-importation-for-personal-use/bringing-of-health-products-into-the-kingdom-of-thailand-01/"
@@ -18110,5 +18110,30 @@
         "url": "http://www.enghunan.gov.cn/hneng/Services/EntryExit/LuggageInstructions/202607/t20260714_34026189.html"
       }
     ]
+  },
+  {
+    "slug": "cbd-ae",
+    "names": [
+      "cbd",
+      "cbd oil",
+      "cannabidiol",
+      "cbd vape",
+      "cbd cream"
+    ],
+    "destination": "AE",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "CBD oil is an ingredient that is illegal in the UAE, and some products containing CBD are illegal. Skincare products and e-cigarette refills containing it are confiscated if found, and you could face criminal charges."
+    },
+    "notes": "The UK government's advice doesn't list which CBD products are legal, if any. UAE airports scan baggage, including transit passengers' bags, and possessing even residual amounts of illegal drugs can lead to arrest; for cannabis, possession of the smallest amount can mean at least 3 months in prison or a fine of AED 20,000–100,000. No UAE government page read names CBD, so this row rests on the UK government's travel advice.",
+    "summary": "Don't bring CBD: CBD oil is illegal in the UAE, and skincare or vape refills containing it are confiscated, with possible criminal charges.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Safety and security, 'Illegal drugs penalties' (updated 24 July 2026)",
+      "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/safety-and-security"
+    },
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]
