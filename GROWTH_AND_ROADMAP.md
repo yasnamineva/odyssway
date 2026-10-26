@@ -138,6 +138,12 @@ South Africa, Nigeria, Poland, Portugal, Vietnam, Pakistan. Add one at a time, f
 
 ### 3.3 Customs depth
 
+- **Method that works where national sites don't (2026-10-26):** the UK government's travel
+  advice is readable through `https://www.gov.uk/api/content/foreign-travel-advice/{country}`
+  and often states vape, CBD, drone, cash and medicine rules. It filled 10 gaps in one pass
+  (Rwanda vapes, Armenia cannabis, Uzbekistan drones and cash, Zimbabwe cash, Vietnam
+  medication, CBD for Indonesia, Tanzania and the UAE, Jordan's drone lead time). Cite it as a
+  foreign government's advice, note when no local page was read, and record conflicts.
 - ✔ 2026-10-26: South Korea alcohol, tobacco and weapons; Egypt cash; Qatar tobacco (read from
   the customs PDF's page image, since its text layer is broken); weapons for Singapore, Türkiye,
   UAE and China. Still blocked: Mongolia (customs figures conflict, undated), Uzbekistan
