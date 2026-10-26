@@ -18119,13 +18119,16 @@
       "switchblade",
       "dagger",
       "sword",
-      "brass knuckles"
+      "brass knuckles",
+      "pepper spray",
+      "self-defence spray",
+      "flick knife"
     ],
     "destination": "TR",
     "category": "weapons",
     "verdict": "prohibited",
     "limits": {
-      "description": "Bringing firearms, their ammunition or main parts into Türkiye is prohibited, and so are knives and other tools made specially for attack and defence only. The law's exceptions cover only diplomats and certain officials, not ordinary travellers."
+      "description": "Bringing firearms, their ammunition or main parts into Türkiye is prohibited, and so are knives and other tools made specially for attack and defence only, such as flick knives and self-defence sprays. The law's exceptions cover only diplomats and certain officials, not ordinary travellers."
     },
     "notes": "Law 6136 Art. 4 names such tools: daggers, switchblades, swords, machetes, bayonets, pointed and grooved knives, maces, garrottes and brass knuckles. It also says the law doesn't govern the use of air guns used only in sport, smoothbore shotguns and their cartridges, or knives that are household items or needed for medicine, industry, farming, sport or a trade. The import ban in Art. 2 is without prejudice to Law 6551 on hunting equipment, whose rules for travellers we haven't checked: ask Turkish customs before travelling with a shotgun.",
     "summary": "Banned: firearms, ammunition, and knives made for attack or defence (daggers, switchblades, swords, brass knuckles). Shotguns fall under a separate law.",
@@ -18135,7 +18138,19 @@
     },
     "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Import ban on firearms, ammunition, main parts and attack/defence knives and tools; exceptions; Art. 4 list",
+        "name": "Law No. 6136 on Firearms, Knives and Other Tools (Ateşli Silahlar ve Bıçaklar ile Diğer Aletler Hakkında Kanun), Arts. 2 and 4 — mevzuat.gov.tr",
+        "url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.6136.pdf"
+      },
+      {
+        "claim": "Prohibited to take into or out of Turkey: firearms and offensive weapons, 'for example flick knives and self-defence sprays' (advice updated 19 Oct 2026)",
+        "name": "GOV.UK (FCDO) — Turkey travel advice: Entry requirements, 'Customs rules'",
+        "url": "https://www.gov.uk/foreign-travel-advice/turkey/entry-requirements"
+      }
+    ]
   },
   {
     "slug": "weapons-ae",
