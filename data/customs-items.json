@@ -18276,5 +18276,30 @@
     "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "prescription-medication-vn",
+    "names": [
+      "prescription medication",
+      "prescription medicine",
+      "medication",
+      "medicine",
+      "pills"
+    ],
+    "destination": "VN",
+    "category": "medication",
+    "verdict": "allowed",
+    "limits": {
+      "description": "You can take prescription medication into Vietnam. Carry it in your hand luggage with a copy of the prescription."
+    },
+    "notes": "Medicines Vietnam classifies as 'addictive' or 'psychotropic' (for example for addiction, anxiety, depression or insomnia) are limited to 7 days' supply and need a doctor's letter: see controlled medication.",
+    "summary": "Allowed: carry prescription medicine in your hand luggage with a copy of the prescription. Addictive or psychotropic medicine: 7 days at most.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Vietnam travel advice: Entry requirements (updated 21 September 2026)",
+      "url": "https://www.gov.uk/foreign-travel-advice/vietnam/entry-requirements"
+    },
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]
