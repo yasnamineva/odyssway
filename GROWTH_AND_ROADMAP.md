@@ -121,8 +121,10 @@ Pick by traffic and source reachability, not by map coverage.
     legal-database text unblocks each.
   - Moldova: list readable, stay rule only in Law 200/2010 (legis.md blocked).
   - Kosovo, Paraguay, Barbados, Brunei, Uganda: list missing, archived or contradictory.
-- **Next candidates to probe:** Bahrain, Oman, Tunisia, Namibia, Botswana, Zimbabwe,
-  Ethiopia, Cuba, Guatemala, Panama, Bolivia, Kyrgyzstan, Azerbaijan, Brunei.
+- **Next candidates to probe:** Kyrgyzstan (eVisa portal reachable) and Ethiopia first; Oman,
+  Guatemala, Brunei. Probed 2026-10-26 and unreachable from here: Panama, Namibia, Botswana,
+  Azerbaijan, Cuba, Bolivia; Tunisia's MFA site is an empty shell; Bahrain's lists still lack
+  stay lengths (see TODO).
 - **Held rows inside covered destinations** (China in Uzbekistan and Macao, Ukraine in
   Uzbekistan and Mongolia, 48 August rows with unreachable sources): see
   `data/UNVERIFIED/TODO.md`.
