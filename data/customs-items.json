@@ -18418,5 +18418,55 @@
     "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "cannabis-ng",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "indian hemp"
+    ],
+    "destination": "NG",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Cannabis is an illegal drug in Nigeria: possessing or using it carries severe penalties."
+    },
+    "notes": "From the UK government's travel advice; Nigerian legal texts weren't readable here. CBD isn't named, so this row doesn't cover CBD products.",
+    "summary": "Banned: possessing or using cannabis carries severe penalties in Nigeria.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Nigeria travel advice: Safety and security, 'Illegal drugs' (updated 2026-10-21)",
+      "url": "https://www.gov.uk/foreign-travel-advice/nigeria/safety-and-security"
+    },
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-rs",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish"
+    ],
+    "destination": "RS",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Cannabis is an illegal drug in Serbia: there are strict penalties for possessing and trafficking it."
+    },
+    "notes": "From the UK government's travel advice; Serbia's Law on Psychoactive Controlled Substances and Criminal Code weren't read here. CBD isn't named, so this row doesn't cover CBD products.",
+    "summary": "Banned: there are strict penalties for possessing or trafficking cannabis in Serbia.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Serbia travel advice: Safety and security, 'Illegal drugs' (updated 2026-10-22)",
+      "url": "https://www.gov.uk/foreign-travel-advice/serbia/safety-and-security"
+    },
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]
