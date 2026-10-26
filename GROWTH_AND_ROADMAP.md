@@ -44,7 +44,8 @@ numbers is local (`seo/gsc/2026-10/worklist.md`, git-ignored because the repo is
    short ("Yes, limit: 1 litre", "Yes; declaration limit ¥1,000,000"), falling back to the plain
    answer. ✔ 2026-10-26: answer-first summaries for 15 priority rows whose text opened with a source
    attribution (Serbia, UAE, Maldives, Mexico, Hong Kong tobacco); UK vaping allowance updated
-   (50 ml). Still to do: ~55 more priority rows without a summary (their openings already answer).
+   (50 ml). ✔ 2026-10-26: summaries for the other 61 rows on pages with 20+ impressions in the October
+   export. Remaining rows without one get fewer impressions; add summaries as pages start ranking.
    Striking distance (position 8–20): for each page, a title and H1 in the search wording, the
    answer in the first two sentences, facts the row has but the page hides, and links from 3+
    related pages. Priority pages:
@@ -55,8 +56,11 @@ numbers is local (`seo/gsc/2026-10/worklist.md`, git-ignored because the repo is
    - Medication: Argentina, Maldives; Ozempic and Wegovy in Mexico, Wegovy in Thailand.
    - `/blog/thailand-visa-free-cut-2026`, `/sources`.
 3. Position 21–40 with volume: ✔ Thailand e-cigarettes re-sourced to the Royal Thai Embassy
-   with a summary (2026-10-26; exact penalties need the Customs Act text). Still: Australia
-   drones, Turkey alcohol, South Korea e-cigarettes.
+   with a summary (2026-10-26; exact penalties need the Customs Act text). ✔ Turkey alcohol and
+   tobacco corrected (2026-10-26): each product has its own allowance (1 L spirits *and* 2 L
+   wine/beer), per the Ministry of Trade and the Foreign Ministry; the rows said "or". ✔ South Korea
+   e-cigarettes re-read: age 19, declaration discount and undeclared-goods surcharge added. Still:
+   Australia drones (casa.gov.au unreachable from here; see TODO).
 4. Each month: new export → compare positions for the pages above → next list (§5.1).
 
 **Deliberately ignored queries:** airport-security wording ("tobacco in hand luggage", §2), buying

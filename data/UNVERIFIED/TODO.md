@@ -1321,6 +1321,12 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
 
 ## Blocked on research (no primary source identified yet)
 
+- [ ] `drones-au` depth (2026-10-26, SEO page at position ~37): casa.gov.au timed out
+      from this environment on every URL (drone-rules, drone-safety-rules,
+      travelling-your-drone, AC 101-03 PDF). A search snippet suggests CASA also
+      requires one drone at a time, daylight only, visual line of sight, never
+      over people, and online myCASA permission for overseas-registered drones,
+      but none of that was read on the page. Add it only after reading CASA directly.
 - [ ] Bilateral visa-waiver agreements (`bilateral-candidates.json`): NZ with
       many Schengen states; reported US arrangements with DK / NO / PL; possible
       CA / AU / JP. Need the actual agreement texts or official state
