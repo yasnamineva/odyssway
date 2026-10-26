@@ -1321,6 +1321,14 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
 
 ## Blocked on research (no primary source identified yet)
 
+- [ ] **DEADLINE 2027-01-16 — Israel tobacco/vape allowance cut** (lead found 2026-10-26, news only:
+      Calcalist, Ynet, Maariv; smokefree.org.il summary of "Amendment No. 9 to the Customs Tariff,
+      Exemptions and Purchase Tax on Goods Order"). Reported: from 16 Jan 2027 the traveller
+      exemption halves to 100 cigarettes or 125 g tobacco, and 5 ml e-liquid or 3 disposables
+      (today, per news: 10 ml / 5 disposables); in 2028 it ends — reports disagree between
+      1 Jan 2028 (residual 20 cigarettes / 40 g) and 1 Jun 2028 (abolished). gov.il returns 403
+      here. Before 16 Jan 2027: read the order in Reshumot or the Tax Authority page, then update
+      `tobacco-il` (and publish `e-cigarettes-il` if the order states the vape allowance).
 - [ ] `e-cigarettes-cn` (held; 2026-10-26 retry): `tobacco-cn` cites english.cq.gov.cn for "2
       e-cigarette devices, 12 mL", but the page was unreachable on retry (connection refused), and
       the GACC passenger guide and Hunan's July 2026 entry list give no e-cigarette figure. Re-read
