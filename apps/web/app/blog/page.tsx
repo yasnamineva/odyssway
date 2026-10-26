@@ -22,6 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function BlogIndexPage() {
   const t = await getTranslations("blogPage");
+  const tp = await getTranslations("photos");
 
   const SITE_URL =
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.invalid";
@@ -68,7 +69,7 @@ export default async function BlogIndexPage() {
               >
                 <Image
                   src={`/images/photos/${post.photo}.jpg`}
-                  alt=""
+                  alt={tp(post.photo)}
                   width={photos[post.photo].width}
                   height={photos[post.photo].height}
                   priority={i === 0}

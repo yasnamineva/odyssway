@@ -116,7 +116,7 @@ export default async function HomePage() {
         <div className="relative flex min-h-[calc(100svh-5.5rem)] items-center lg:static lg:block lg:min-h-0">
           <Image
             src={heroImage}
-            alt=""
+            alt={t("photos.home-hero")}
             fill
             priority
             sizes="100vw"
@@ -383,7 +383,7 @@ export default async function HomePage() {
                 >
                   <Image
                     src={`/images/photos/${post.photo}.jpg`}
-                    alt=""
+                    alt={t(`photos.${post.photo}`)}
                     width={photos[post.photo].width}
                     height={photos[post.photo].height}
                     sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw"

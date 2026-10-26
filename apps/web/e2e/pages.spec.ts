@@ -414,3 +414,12 @@ test("item hubs lead with the search wording, a count summary and a limits table
   await page.goto("/bring/tobacco/malaysia");
   await expect(page.getByTestId("same-item-elsewhere").getByRole("link").first()).toBeVisible();
 });
+
+test("every image on the homepage and blog has descriptive alt text (Bing site scan)", async ({ page }) => {
+  for (const path of ["/", "/blog"]) {
+    await page.goto(path);
+    const alts = await page.locator("img").evaluateAll((imgs) => imgs.map((i) => i.getAttribute("alt")));
+    expect(alts.length).toBeGreaterThan(0);
+    for (const alt of alts) expect(alt?.trim()).toBeTruthy();
+  }
+});
