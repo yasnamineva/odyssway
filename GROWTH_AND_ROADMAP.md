@@ -215,6 +215,9 @@ nothing, and it rises on its own as a page reaches the top 10.
 6. **Record** what changed and the positions before, then check the same queries next
    month.
 
+`pnpm gsc:compare <previous> <new>` does steps 2 and 6 from the two exports
+(`seo/gsc/<new>/compare.md`).
+
 ### 5.2 On-site
 
 - **Headings that match searches.** Test putting the query words in hub H1s

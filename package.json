@@ -13,6 +13,7 @@
     "watch:sources": "tsx scripts/watch-sources.ts",
     "coverage": "tsx scripts/coverage-report.ts",
     "indexnow": "tsx scripts/indexnow.ts",
+    "gsc:compare": "tsx scripts/gsc-compare.ts",
     "ci": "pnpm typecheck && pnpm test && pnpm validate:data && pnpm build"
   },
   "devDependencies": {

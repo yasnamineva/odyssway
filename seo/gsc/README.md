@@ -14,3 +14,8 @@ How to export (Google Search Console → odyssway.com):
 Then ask for the monthly ranking routine (GROWTH_AND_ROADMAP.md §5.1): the
 agent turns the CSVs into a work list, starting with striking-distance pages
 (position 11–20).
+
+To compare two months, run `pnpm gsc:compare 2026-10 2026-11`. It writes
+`seo/gsc/2026-11/compare.md` (also git-ignored): totals, each page type's position,
+the biggest movers, pages that reached or fell off page 1, and the next
+striking-distance work list.
