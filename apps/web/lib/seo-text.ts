@@ -42,9 +42,9 @@ export function rowLead(row: CustomsItemRecord): string | undefined {
  * gives answers rather than a list of verdicts. Undefined if a row has no line.
  */
 export function multiRowLead(rows: CustomsItemRecord[], label: (row: CustomsItemRecord) => string): string | undefined {
-  // The everyday rule first (the allowance, then permits, then bans): the snippet is
+  // The everyday rule first (allowed, then limits, then permits, then bans): the snippet is
   // cut at ~155 characters, so the row most travellers need must lead.
-  const order = ["allowed_with_limits", "allowed", "declaration_required", "depends", "prohibited"];
+  const order = ["allowed", "allowed_with_limits", "declaration_required", "depends", "prohibited"];
   const sorted = [...rows].sort((a, b) => order.indexOf(a.verdict) - order.indexOf(b.verdict));
   const lines = sorted.map((r) => {
     const lead = rowLead(r);
