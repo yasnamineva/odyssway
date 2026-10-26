@@ -3169,21 +3169,18 @@
       "thc",
       "hashish",
       "charas",
-      "ganja",
-      "cbd",
-      "cbd oil",
-      "hemp extract"
+      "ganja"
     ],
     "destination": "IN",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "The Narcotic Drugs and Psychotropic Substances Act, 1985 defines \"cannabis (hemp)\" to cover charas (resin/hashish/hash oil) and ganja (the flowering or fruiting tops) — both are prohibited narcotic drugs, and importing them into India carries severe criminal penalties. The statutory definition of cannabis excludes seeds and leaves when not accompanied by the flowering/fruiting tops (the basis for bhang, a leaf-based preparation, being treated differently under Indian law domestically) — but this carve-out is about domestic cultivation/sale, not a confirmed customs import allowance, and no primary CBIC/NDPS source describing a personal-import allowance for CBD oil or hemp-derived products (with or without a foreign prescription) was found in this pass. Treat all cannabis-derived products, including CBD oil, as prohibited to import.",
+    "notes": "The Narcotic Drugs and Psychotropic Substances Act, 1985 defines \"cannabis (hemp)\" to cover charas (resin/hashish/hash oil) and ganja (the flowering or fruiting tops) — both are prohibited narcotic drugs, and importing them into India carries severe criminal penalties. The statutory definition of cannabis excludes seeds and leaves when not accompanied by the flowering/fruiting tops (the basis for bhang, a leaf-based preparation, being treated differently under Indian law domestically) — but this carve-out is about domestic cultivation/sale, not a confirmed customs import allowance, and no primary CBIC/NDPS source describing a personal-import allowance for CBD oil or hemp-derived products (with or without a foreign prescription) was found in this pass. Whether CBD oil or hemp-derived products can be brought in isn't answered by any official page read; ask Indian Customs (CBIC) before travelling with them.",
     "legal_source": {
       "name": "Narcotic Drugs and Psychotropic Substances Act, 1985, Section 2(iii) (definition of cannabis)",
       "url": "https://dor.gov.in/files/acts_files/Narcotic-Drugs-and-Psychotropic-Substances-Act-1985_0.pdf"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -3273,8 +3270,8 @@
     "destination": "IN",
     "category": "food_animal",
     "verdict": "depends",
-    "notes": "CBIC's own passenger FAQ lists \"Meat and meat products / fish / Dairy products / poultry products\" together with several other categories as \"prohibited/restricted\" without distinguishing, item by item, which are outright banned versus importable under a permit/health certificate. Given that ambiguity, and no dedicated Food Safety and Standards Authority of India (FSSAI) or Department of Animal Husbandry traveler-specific page was found in this pass, treat animal-origin food as high-risk to bring rather than assuming a personal-consumption exemption applies.",
-    "summary": "Unclear: Indian Customs lists meat, fish, dairy and poultry products as \"prohibited/restricted\" without item-by-item detail. Treat them as high-risk.",
+    "notes": "CBIC's own passenger FAQ lists \"Meat and meat products / fish / Dairy products / poultry products\" together with several other categories as \"prohibited/restricted\" without distinguishing, item by item, which are outright banned versus importable under a permit/health certificate. No dedicated Food Safety and Standards Authority of India (FSSAI) or Department of Animal Husbandry traveler-specific page was found in this pass, so no personal-consumption allowance is confirmed; ask Indian Customs before bringing any.",
+    "summary": "Unclear: Indian Customs lists meat, fish, dairy and poultry products as \"prohibited/restricted\" without item-by-item detail, and no allowance is confirmed.",
     "legal_source": {
       "name": "Chennai Customs Zone (CBIC) — Passenger Clearance FAQ (duty-free allowances, prohibited/restricted goods)",
       "url": "https://chennaicustoms.gov.in/passenger-clearance-faq/"
@@ -3515,21 +3512,19 @@
       "cannabis",
       "marijuana",
       "weed",
-      "thc",
-      "cbd",
-      "cbd oil"
+      "thc"
     ],
     "destination": "TR",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "Narcotic and stimulant-effect substances are barred from entering Türkiye — confirmed for postal/courier shipment specifically, under Law No. 2313 on the Supervision of Narcotic Substances. No CBD- or low-THC-specific carve-out was found in this pass; treat all cannabis/CBD products as prohibited pending a dedicated primary source on personal/accompanied-baggage import (see data/UNVERIFIED/TODO.md).",
+    "notes": "Narcotic and stimulant-effect substances are barred from entering Türkiye — confirmed for postal/courier shipment specifically, under Law No. 2313 on the Supervision of Narcotic Substances. No CBD- or low-THC-specific carve-out was found in this pass. Whether CBD products can be brought in isn't answered by any official page read; ask Turkish customs before travelling with them.",
     "summary": "Banned: narcotic substances can't enter Türkiye under Law No. 2313. No exception for CBD or low-THC products was found.",
     "legal_source": {
       "name": "T.C. Ticaret Bakanlığı (Turkish Ministry of Trade) — Gümrük Rehberi: items travelers cannot send to Türkiye by post or courier (Law No. 2313 on the Supervision of Narcotic Substances)",
       "url": "https://gumrukrehberi.gov.tr/sayfa/posta-ya-da-h%C4%B1zl%C4%B1-kargo-ta%C5%9F%C4%B1mac%C4%B1l%C4%B1%C4%9F%C4%B1-yoluyla-t%C3%BCrkiyeye-getirilemeyecek-e%C5%9Fyalar-hangileridir"
     },
-    "verified_at": "2026-08-13",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -6393,18 +6388,51 @@
   },
   {
     "slug": "cannabis-nz",
-    "names": ["cannabis", "marijuana", "weed", "thc", "hashish", "cbd", "cannabidiol"],
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish",
+      "cbd",
+      "cannabidiol",
+      "cbd oil",
+      "hemp oil",
+      "medicinal cannabis"
+    ],
     "destination": "NZ",
     "category": "cbd_cannabis",
-    "verdict": "prohibited",
-    "notes": "NZ Customs' prohibited-and-restricted-items page explicitly bans 'cannabis utensils' (bongs, vaporisers, hash pipes) as drug paraphernalia, and does not list cannabis or CBD anywhere among the medicines a traveller may bring under the ordinary prescription-medicine or controlled-drugs provisions (which are capped at 3 months' and 1 month's supply respectively, with no cannabis-specific carve-out named). New Zealand's 2020 cannabis-legalisation referendum failed, so recreational cannabis remains illegal; Medsafe's own site (medsafe.govt.nz) was checked in this pass and surfaced no traveller-facing guidance on medicinal cannabis import either. Treat any cannabis or CBD product, including hemp-derived, as prohibited for personal import absent a specific NZ medicinal-cannabis import authorisation obtained in advance.",
+    "verdict": "depends",
+    "notes": "Without a prescription, it isn't allowed: Medsafe treats any product containing CBD or hemp extracts ('hemp oil', 'full spectrum hemp oil') as a prescription medicine, so you can't import it for personal use, including cosmetics, beauty products or jewellery. Ordering CBD or other medicinal cannabis from overseas by post isn't allowed either. Hemp seed oil that meets the food rules is a food, not a medicinal cannabis product. Customs separately bans cannabis utensils (bongs, vaporisers, hash pipes) as drug paraphernalia.",
+    "summary": "Only if prescribed to you: up to 3 months of a CBD product or 1 month of other medicinal cannabis, declared, with the prescription. US-supplied products aren't allowed.",
     "legal_source": {
-      "name": "New Zealand Customs Service -- Prohibited and restricted items",
-      "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/"
+      "name": "New Zealand Customs Service — Major Events Travel Advisory (October 2025), 'Medicinal Cannabis'",
+      "url": "https://www.customs.govt.nz/media/cjlfsav2/major-events-travel-advisory-1.pdf"
     },
-    "verified_at": "2026-09-14",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "limits": {
+      "description": "Only prescribed medicinal cannabis. You may bring a medicinal cannabis product if it was prescribed to you by a doctor, you carry a copy of the prescription or a doctor's letter saying you're being treated with it, you declare it on your New Zealand Traveller Declaration, it's in its original container, and you bring no more than a 3-month supply of a CBD product or a 1-month supply of any other medicinal cannabis product. Cannabis-based products supplied in the United States can't be brought in.",
+      "quantity": "3 months (CBD) / 1 month (other), prescribed"
+    },
+    "_sources": [
+      {
+        "claim": "Traveller conditions: prescribed, prescription or doctor's letter, declared on the NZTD, original container, 3 months CBD / 1 month other; US-supplied cannabis products can't be carried",
+        "name": "New Zealand Customs Service — Major Events Travel Advisory (October 2025)",
+        "url": "https://www.customs.govt.nz/media/cjlfsav2/major-events-travel-advisory-1.pdf"
+      },
+      {
+        "claim": "CBD and hemp-extract products are prescription medicines; personal importation (incl. cosmetics) not allowed; hemp seed oil meeting food rules is a food; 'travellers may bring CBD products under certain conditions'",
+        "name": "Medsafe — Importing Medicines",
+        "url": "https://www.medsafe.govt.nz/consumers/miet/importmedicines.asp"
+      },
+      {
+        "claim": "Cannabis utensils (bongs, vaporisers, hash pipes) prohibited",
+        "name": "New Zealand Customs Service — Prohibited and restricted items",
+        "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/"
+      }
+    ]
   },
   {
     "slug": "weapons-nz",
@@ -10630,18 +10658,18 @@
     ],
     "destination": "TW",
     "category": "cbd_cannabis",
-    "verdict": "prohibited",
+    "verdict": "depends",
     "limits": {
-      "description": "Taiwan applies an unusually strict THC threshold: if a CBD product's THC content exceeds 10 parts per million (0.001%) — far stricter than the 0.2-0.3% thresholds used in the US, EU, Japan or Thailand — it is classified as a Category 2 narcotic under Appendix 2 of the Narcotics Hazard Prevention Act and treated the same as cannabis itself. Even below that threshold, importing a CBD product without prior Taiwan FDA (TFDA) approval is illegal: \"violating the Pharmaceutical Affairs Act results in imprisonment up to 10 years and a fine up to 100 million NT dollars\" for unauthorized import of an unapproved drug."
+      "description": "CBD is regulated in Taiwan as an ordinary drug, and no CBD medicine is approved for sale there. To bring a CBD medicine prescribed to you, you must first apply to the Taiwan FDA for a special personal import under the Regulations on Management of Medicament Samples and Gifts, and show that permit at customs. A product with more than 10 ppm THC counts as a Category 2 narcotic, the same as cannabis."
     },
-    "notes": "No CBD-containing product is currently approved for sale in Taiwan, so there is effectively no personal-use import pathway without a doctor's prescription and an advance TFDA application under the Regulations on Management of Medicament Samples and Gifts. Treat any CBD product as high-risk to bring into Taiwan, including hemp-derived products marketed as low-THC elsewhere.",
-    "summary": "Banned: CBD with over 10 ppm THC is a narcotic in Taiwan, and any CBD product needs TFDA approval to import.",
+    "notes": "Without the TFDA permit at clearance, Customs treats a CBD product as an illegal import of a prohibited drug under the Pharmaceutical Affairs Act: up to 10 years' imprisonment and a fine of up to NT$100 million. The page doesn't address products sold as cosmetics or food.",
+    "summary": "Only with a TFDA special-import permit for a CBD medicine prescribed to you, applied for before travel. Over 10 ppm THC it counts as a narcotic.",
     "legal_source": {
       "name": "Taichung Customs, Ministry of Finance (Taiwan) — Importing CBD Products Without Permission Can Lead to Penalties",
       "url": "https://web.customs.gov.tw/taichung/singlehtml/274?cntId=523e44c77a674455b2385edfd0c24af3"
     },
-    "verified_at": "2026-09-22",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -12715,13 +12743,13 @@
     "limits": {
       "description": "Do not bring cannabis. Customs prohibits narcotics ('Estupefacientes') in baggage, and ANMAT lists cannabis, its resin, and cannabis extracts and tinctures as Lista I narcotics under Ley 17.818."
     },
-    "notes": "Sources: the ARCA 'Objetos permitidos y prohibiciones' page, plus the ANMAT controlled-substances list (argentina.gob.ar/sites/default/files/estupefacientes_2016.pdf, linked from the ANMAT 'Listados' page): 'CANNABIS (Marihuana), su resina (Haschisch) y los extractos y tinturas de Cannabis — LISTA I. LEY 17818/68'. No official page read deals with CBD-only products for travellers. Because 'extractos y tinturas' are listed, treat CBD oils as prohibited unless ANMAT confirms otherwise. Argentina's medical-cannabis programme is for registered patients in Argentina and does not give foreign travellers an allowance.",
+    "notes": "Sources: the ARCA 'Objetos permitidos y prohibiciones' page, plus the ANMAT controlled-substances list (argentina.gob.ar/sites/default/files/estupefacientes_2016.pdf, linked from the ANMAT 'Listados' page): 'CANNABIS (Marihuana), su resina (Haschisch) y los extractos y tinturas de Cannabis — LISTA I. LEY 17818/68'. No official page read deals with CBD-only products for travellers. The list's 'extractos y tinturas de Cannabis' covers oils extracted from cannabis, which is how most CBD oils are made; for a CBD product made another way, ask ANMAT. Argentina's medical-cannabis programme is for registered patients in Argentina and does not give foreign travellers an allowance.",
     "summary": "Banned: cannabis and its extracts are Lista I narcotics, and customs prohibits narcotics in baggage.",
     "legal_source": {
       "name": "ARCA (Aduana) — ¿Qué objetos se pueden ingresar? (Prohibiciones: Estupefacientes); ANMAT Listado de Sustancias Controladas — Estupefacientes",
       "url": "https://www.afip.gob.ar/viajeros/ayuda/objetos.asp"
     },
-    "verified_at": "2026-10-09",
+    "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -13515,12 +13543,12 @@
     "destination": "QA",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "Ministry of Public Health 'Items Prohibited from Entering the State of Qatar' (covering active raw materials or 'any pharmaceutical dosage forms i.e tablets, capsules, syrup, injection, oils, etc.') lists CANNABIS, CANNABIS RESIN and DRONABINOL (synthetic THC). Medical cannabis prescriptions do not make them allowed. The General Authority of Customs' list of goods forbidden by tariff also includes Cannabis sativa, Hashish and hemp seeds. GOV.UK: zero tolerance; possession of drugs 'including cannabis, (even residual amounts)' brings severe penalties, also in transit, and airports scan transit baggage. CBD is not named on any page read: CBD extracted from cannabis falls within 'cannabis … in any pharmaceutical dosage form … oils', but no source addresses hemp-derived CBD by name, so 'cbd' is not in names — treat CBD products as prohibited unless MOPH confirms otherwise.",
+    "notes": "Ministry of Public Health 'Items Prohibited from Entering the State of Qatar' (covering active raw materials or 'any pharmaceutical dosage forms i.e tablets, capsules, syrup, injection, oils, etc.') lists CANNABIS, CANNABIS RESIN and DRONABINOL (synthetic THC). Medical cannabis prescriptions do not make them allowed. The General Authority of Customs' list of goods forbidden by tariff also includes Cannabis sativa, Hashish and hemp seeds. GOV.UK: zero tolerance; possession of drugs 'including cannabis, (even residual amounts)' brings severe penalties, also in transit, and airports scan transit baggage. CBD is not named on any page read: CBD extracted from cannabis falls within 'cannabis … in any pharmaceutical dosage form … oils', but no source addresses hemp-derived CBD by name, so 'cbd' is not in names; ask MOPH before travelling with any CBD product.",
     "legal_source": {
       "name": "Ministry of Public Health Qatar, Pharmacy and Drug Control Department — 'Controls and Regulations for the release of narcotic drugs, psychotropic substances and psychoactive drugs in the possession of patients arriving in or departing the State of Qatar' (Guideline of Controlled Drugs for Travellers, PDF)",
       "url": "https://www.moph.gov.qa/_layouts/15/download.aspx?SourceUrl=/Admin/Lists/PublicationsAttachments/Attachments/201/Guideline-of-Controlled-Drugs-for-Travellers%20-%20English.pdf"
     },
-    "verified_at": "2026-10-09",
+    "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "transit": {
@@ -15375,12 +15403,12 @@
     "destination": "TZ",
     "category": "cbd_cannabis",
     "verdict": "prohibited",
-    "notes": "DCEA (in Swahili): under the Drugs Control and Enforcement Act, Cap. 95, involvement of any kind with cannabis (\"kulima, kuuza, kuhifadhi, kutumia, kuichakata\" — growing, selling, storing/possessing, using, processing) is a criminal offence, \"adhabu yake inafikia hadi KIFUNGO CHA MAISHA JELA\" (the penalty can be up to life imprisonment). Canada's travel advice adds that drug penalties are severe, with long prison sentences. No primary source on CBD products was found, so treat any cannabis-derived product, CBD included, as prohibited.",
+    "notes": "DCEA (in Swahili): under the Drugs Control and Enforcement Act, Cap. 95, involvement of any kind with cannabis (\"kulima, kuuza, kuhifadhi, kutumia, kuichakata\" — growing, selling, storing/possessing, using, processing) is a criminal offence, \"adhabu yake inafikia hadi KIFUNGO CHA MAISHA JELA\" (the penalty can be up to life imprisonment). Canada's travel advice adds that drug penalties are severe, with long prison sentences. No primary source on CBD products was found, so 'cbd' is not in names; ask DCEA before travelling with any cannabis-derived product.",
     "legal_source": {
       "name": "Ukweli kuhusu Bangi (Facts about cannabis), Drug Control and Enforcement Authority (DCEA)",
       "url": "https://www.dcea.go.tz/pages/fact-about-marijuana"
     },
-    "verified_at": "2026-10-10",
+    "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
