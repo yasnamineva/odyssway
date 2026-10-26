@@ -203,3 +203,22 @@ export function Compare({
     </div>
   );
 }
+
+/** A compact list of sibling pages ("the same guide for other countries"). */
+export function SiblingLinks({ title, links }: { title: string; links: Array<{ href: string; label: string }> }) {
+  if (links.length === 0) return null;
+  return (
+    <section className="mt-10" data-testid="sibling-links">
+      <h2 className="text-base font-semibold text-slate-900">{title}</h2>
+      <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+        {links.map((l) => (
+          <li key={l.href}>
+            <a href={l.href} className="text-slate-700 underline decoration-slate-300 underline-offset-2 hover:text-slate-900">
+              {l.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}

@@ -8,6 +8,7 @@ import { SITE_URL } from "../../../../lib/site";
 import CustomsRowCard from "../../../../components/CustomsRowCard";
 import { productsForDestination } from "../../../../lib/medication-products";
 import { destinationPath, withArticle } from "../../../../lib/destinations";
+import { blogPosts } from "../../../../lib/blog";
 
 interface Params {
   item: string;
@@ -81,6 +82,12 @@ export default async function BringDestinationPage({ params }: { params: Promise
         a.destination.name.localeCompare(b.destination.name),
     )
     .slice(0, 12);
+  // Medicine posts that cover this country, on its medication page only (a
+  // medicine post isn't what a tobacco or cash searcher came for).
+  const relatedPosts =
+    pair.category === "medication"
+      ? blogPosts.filter((p) => p.category === "Medicine" && p.destinationCodes?.includes(pair.destination.code))
+      : [];
 
   const headline =
     pair.rows.length === 1
@@ -256,6 +263,21 @@ export default async function BringDestinationPage({ params }: { params: Promise
                   className="inline-block rounded-full border border-slate-300 px-3 py-1 text-xs font-medium text-slate-700 hover:border-slate-900 hover:bg-slate-900 hover:text-white"
                 >
                   {BRING_CATEGORIES[s.category].label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {relatedPosts.length > 0 && (
+        <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm" data-testid="bring-related-posts">
+          <h2 className="text-base font-semibold text-slate-900">{t("relatedPosts")}</h2>
+          <ul className="mt-2 space-y-1 text-sm">
+            {relatedPosts.map((p) => (
+              <li key={p.slug}>
+                <a href={`/blog/${p.slug}`} className="text-blue-700 underline">
+                  {p.title}
                 </a>
               </li>
             ))}

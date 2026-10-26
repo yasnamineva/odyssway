@@ -423,3 +423,17 @@ test("every image on the homepage and blog has descriptive alt text (Bing site s
     for (const alt of alts) expect(alt?.trim()).toBeTruthy();
   }
 });
+
+test("per-country EES, overstay and ETIAS pages link each other and their siblings", async ({ page }) => {
+  await page.goto("/rules/overstay-penalties/de");
+  await expect(page.locator('a[href="/ees/data-access/de"]')).toBeVisible();
+  await expect(page.getByTestId("sibling-links").locator('a[href="/rules/overstay-penalties/fr"]')).toBeVisible();
+  await page.goto("/ees/data-access/de");
+  await expect(page.locator('a[href="/rules/overstay-penalties/de"]')).toBeVisible();
+  await expect(page.getByTestId("sibling-links").locator('a[href="/ees/data-access/fr"]')).toBeVisible();
+  await expect(page.locator('a[href="/blog/europe-counts-your-days"]')).toBeVisible();
+  await page.goto("/bring/medication/japan");
+  await expect(page.getByTestId("bring-related-posts").locator('a[href="/blog/adhd-medication-japan"]')).toBeVisible();
+  await page.goto("/etias/us");
+  await expect(page.getByTestId("sibling-links").locator('a[href^="/etias/"]').first()).toBeVisible();
+});

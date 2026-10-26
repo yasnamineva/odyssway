@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import BreadcrumbJsonLd from "../../../../components/BreadcrumbJsonLd";
-import { InShort, LinkCard, LinkCards, More, Step, Steps } from "../../../../components/content/Blocks";
+import { InShort, LinkCard, LinkCards, More, SiblingLinks, Step, Steps } from "../../../../components/content/Blocks";
 import { ChevronDownIcon, LetterIcon } from "../../../../components/icons";
 import Photo from "../../../../components/content/Photo";
 import SourceNote from "../../../../components/SourceNote";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { eesCountryName, eesRecordBySlug, publishedEesRecords } from "../../../../lib/ees";
+import { publishedOverstayPenalties } from "../../../../lib/overstay-penalties";
 import { letterEnglish, lettersByCountry, type LetterTemplate } from "../../../../lib/ees-letters";
 
 interface Params {
@@ -184,7 +185,19 @@ export default async function EesDataAccessPage({
       <LinkCards>
         <LinkCard href="/ees/missing-exit-record" title={t("linkMissingExit")} />
         <LinkCard href="/ees/dispute-overstay" title={t("disputeLink")} />
+        <LinkCard href="/blog/europe-counts-your-days" title={t("blogLink")} />
+        {publishedOverstayPenalties.some((r) => r.country === record.country) && (
+          <LinkCard href={`/rules/overstay-penalties/${record.country.toLowerCase()}`} title={t("overstayLink", { country })} />
+        )}
       </LinkCards>
+
+      <SiblingLinks
+        title={t("otherCountries")}
+        links={publishedEesRecords
+          .filter((r) => r.country !== record.country)
+          .map((r) => ({ href: `/ees/data-access/${r.country.toLowerCase()}`, label: eesCountryName(r.country) }))
+          .sort((a, b) => a.label.localeCompare(b.label))}
+      />
 
       <div className="mt-10">
         <SourceNote

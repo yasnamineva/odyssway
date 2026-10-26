@@ -205,6 +205,10 @@ nothing, and it rises on its own as a page reaches the top 10.
   weights literal matches more than Google. Owner decision pending.
 - **Internal links:** every destination hub links its top item pages and named medicines;
   every pair page links the same passport's neighbouring destinations; no orphan pages.
+  ✔ 2026-10-26 crawl of all 2,217 sitemap URLs: no orphans; pages with under 3 in-content
+  links cut from 70 to ~10 (EES, overstay and ETIAS pages now link their siblings and each
+  other; medication pages link the medicine posts that cover the country). The rest are tools
+  reached from the site nav.
 - **Homepage as a link source.** "Recently added" and the tools row are live; new
   tools go into the tools row the day they launch.
 - **Structured data:** FAQ on pair and medication pages (done for some), HowTo on every

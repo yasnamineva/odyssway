@@ -4,6 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { etias } from "../../../lib/etias";
 import { etiasNationalities, nationalityBySlug } from "../../../lib/nationalities";
 import BreadcrumbJsonLd from "../../../components/BreadcrumbJsonLd";
+import { SiblingLinks } from "../../../components/content/Blocks";
 
 interface Params {
   nationality: string;
@@ -98,6 +99,14 @@ export default async function EtiasNationalityPage({
           </a>
         </p>
       </section>
+
+      <SiblingLinks
+        title={t("otherNationalities")}
+        links={etiasNationalities
+          .filter((r) => r.nationality !== rule.nationality)
+          .map((r) => ({ href: `/etias/${r.nationality.toLowerCase()}`, label: r.name }))
+          .sort((a, b) => a.label.localeCompare(b.label))}
+      />
 
       <section className="rounded-2xl border border-slate-200 bg-slate-100 p-4 text-xs leading-relaxed text-slate-600">
         <p>

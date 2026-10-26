@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Fact, InShort, LinkCard, LinkCards } from "../../../../components/content/Blocks";
+import { Fact, InShort, LinkCard, LinkCards, SiblingLinks } from "../../../../components/content/Blocks";
 import Photo from "../../../../components/content/Photo";
 import SourceNote from "../../../../components/SourceNote";
+import { publishedEesRecords } from "../../../../lib/ees";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import {
@@ -99,7 +100,19 @@ export default async function OverstayCountryPage({
       <LinkCards>
         <LinkCard href="/rules/overstay-penalties" title={t("backLink")} />
         <LinkCard href="/ees/dispute-overstay" title={t("disputeLink")} />
+        <LinkCard href="/blog/overstay-europe-what-happens" title={t("blogLink")} />
+        {publishedEesRecords.some((r) => r.country === record.country) && (
+          <LinkCard href={`/ees/data-access/${record.country.toLowerCase()}`} title={t("eesLink", { country })} />
+        )}
       </LinkCards>
+
+      <SiblingLinks
+        title={t("otherCountries")}
+        links={publishedOverstayPenalties
+          .filter((r) => r.country !== record.country)
+          .map((r) => ({ href: `/rules/overstay-penalties/${r.country.toLowerCase()}`, label: overstayCountryName(r.country) }))
+          .sort((a, b) => a.label.localeCompare(b.label))}
+      />
 
       <div className="mt-10 space-y-3">
         <SourceNote
