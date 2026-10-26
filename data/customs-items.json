@@ -18070,7 +18070,34 @@
     },
     "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "procedure": {
+      "title": "Get Police Regulatory Department approval before you bring a controlled item",
+      "authority": "Police Regulatory Department (PRD), Singapore Police Force",
+      "applyUrl": "https://www.police.gov.sg/Business-E-Services/Apply-for-Gun-Licence/Overview-of-Gun-Explosive-Weapon-Licences",
+      "leadTime": "Apply at least 2 weeks before you travel.",
+      "leadTimeRule": {
+        "amount": 2,
+        "unit": "weeks",
+        "before": "travel"
+      },
+      "processingTime": "Typically 2–3 weeks.",
+      "steps": [
+        "Check the item against the guideline's annexes: Annex A items are prohibited and can't be imported at all; Annex B items need PRD approval, and many are not allowed for individuals.",
+        "If the item is controlled and allowed for individuals, apply to PRD through its website. Approvals for individuals are case by case, for specific approved activities, and you must show a clear legitimate need.",
+        "Travel only after you have PRD's written approval.",
+        "On arrival, declare the item to Customs/ICA and show the approval document when asked."
+      ],
+      "atTheBorder": "Items without approval are seized. If you arrive with a prohibited item, declare it to Customs/ICA officers immediately.",
+      "sources": [
+        {
+          "name": "Singapore Police Force, Police Regulatory Department — Guideline on Prohibited, Controlled and Non-Regulated Items (current as of 22 December 2025)",
+          "url": "https://www.police.gov.sg/-/media/SPF/E-services/AE-Files/Guideline-on-Prohibited-Controlled-and-Non-Regulated-Items-_26-Dec-2025.pdf"
+        }
+      ],
+      "verified_at": "2026-10-26",
+      "verified_by": "agent:claude-opus-5-5"
+    }
   },
   {
     "slug": "weapons-tr",
