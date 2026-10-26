@@ -20,3 +20,7 @@ coverage/
 # playwright
 playwright-report/
 test-results/
+
+# Search Console exports: private, local only (seo/gsc/README.md)
+seo/gsc/*
+!seo/gsc/README.md
