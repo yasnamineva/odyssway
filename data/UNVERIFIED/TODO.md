@@ -1321,6 +1321,10 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
 
 ## Blocked on research (no primary source identified yet)
 
+- [ ] `e-cigarettes-cn` (held; 2026-10-26 retry): `tobacco-cn` cites english.cq.gov.cn for "2
+      e-cigarette devices, 12 mL", but the page was unreachable on retry (connection refused), and
+      the GACC passenger guide and Hunan's July 2026 entry list give no e-cigarette figure. Re-read
+      the Chongqing page (or GACC Announcement 102/2022 on customs.gov.cn) before publishing.
 - [ ] `drones-au` depth (2026-10-26, SEO page at position ~37): casa.gov.au timed out
       from this environment on every URL (drone-rules, drone-safety-rules,
       travelling-your-drone, AC 101-03 PDF). A search snippet suggests CASA also

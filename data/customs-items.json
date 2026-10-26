@@ -17998,5 +17998,172 @@
     "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "weapons-kr",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "knives",
+      "swords",
+      "pepper spray",
+      "taser",
+      "stun gun",
+      "crossbow"
+    ],
+    "destination": "KR",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "Firearms are restricted goods: they can only be cleared if every customs requirement for them is met. You must declare firearms, swords, explosives, gas sprayers (such as pepper spray), Taser guns and crossbows; the list adds 'including parts and imitation or ornamental' items."
+    },
+    "notes": "Korea Customs lists these under 'goods to be declared' and firearms under 'restricted goods', which 'need to fulfill all the requirements for customs clearance regardless of tax exemption threshold'. The page doesn't say which permit is needed or from which authority, so check before you travel.",
+    "summary": "Declare firearms, swords, explosives, gas sprayers such as pepper spray, Taser guns and crossbows. Firearms are restricted: all clearance requirements apply.",
+    "legal_source": {
+      "name": "Korea Customs Service (English site) — Duty-Free Allowance for Travelers: prohibited and restricted goods, goods to be declared",
+      "url": "https://www.customs.go.kr/english/cm/cntnts/cntntsView.do?mi=8069&cntntsId=2743"
+    },
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Restricted goods (firearms); goods to be declared (firearms, swords, explosives, gas sprayers, Taser guns, crossbows incl. parts and imitation/ornamental)",
+        "name": "Korea Customs Service (English site) — Duty-Free Allowance for Travelers: prohibited and restricted goods, goods to be declared",
+        "url": "https://www.customs.go.kr/english/cm/cntnts/cntntsView.do?mi=8069&cntntsId=2743"
+      },
+      {
+        "claim": "Korean text: 총포·도검·화약류·분사기·전자 충격기·석궁(부분품, 모의 또는 장식용을 포함한다) to be declared",
+        "name": "Korea Customs Service — 여행자 휴대품 통관 (traveller baggage clearance)",
+        "url": "https://customs.go.kr/kcs/cm/cntnts/cntntsView.do?mi=2837&cntntsId=829"
+      }
+    ]
+  },
+  {
+    "slug": "weapons-sg",
+    "names": [
+      "weapons",
+      "knives",
+      "pepper spray",
+      "stun gun",
+      "taser",
+      "knuckle duster",
+      "replica gun",
+      "toy gun",
+      "sword",
+      "crossbow",
+      "firearms",
+      "fireworks"
+    ],
+    "destination": "SG",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "Prohibited outright: concealed weapons, catapults and slingshots. Everything else on the police list needs Police Regulatory Department approval before import, and for individuals most of it is 'not allowed' at all: pepper spray, stun and Taser guns, crossbows, flick, butterfly and throwing knives, knuckledusters, nunchaku, ammunition, explosives and fireworks, and toy or replica guns. Swords, spears and daggers can be approved case by case. Real guns are allowed for individuals only for sports shooting at a licensed club, kept at an approved armoury."
+    },
+    "notes": "Travellers bringing a controlled item must apply for approval at least 2 weeks before travel (processing typically takes 2–3 weeks), declare it to Customs/ICA on arrival and show the approval; items without approval are seized. If you arrive with a prohibited item, declare it to Customs/ICA officers immediately. Importing without approval may lead to seizure, prosecution, fines and/or imprisonment. Toy or replica guns that closely resemble a real gun are not allowed, and personal collection or self-defence don't count as legitimate purposes.",
+    "summary": "Most weapons need police approval before import, and many aren't allowed for individuals at all: pepper spray, stun guns, flick knives, knuckledusters, replica guns.",
+    "legal_source": {
+      "name": "Singapore Police Force, Police Regulatory Department — Guideline on Prohibited, Controlled and Non-Regulated Items (current as of 22 December 2025), Annexes A and B",
+      "url": "https://www.police.gov.sg/-/media/SPF/E-services/AE-Files/Guideline-on-Prohibited-Controlled-and-Non-Regulated-Items-_26-Dec-2025.pdf"
+    },
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-tr",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition",
+      "knives",
+      "switchblade",
+      "dagger",
+      "sword",
+      "brass knuckles"
+    ],
+    "destination": "TR",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Bringing firearms, their ammunition or main parts into Türkiye is prohibited, and so are knives and other tools made specially for attack and defence only. The law's exceptions cover only diplomats and certain officials, not ordinary travellers."
+    },
+    "notes": "Law 6136 Art. 4 names such tools: daggers, switchblades, swords, machetes, bayonets, pointed and grooved knives, maces, garrottes and brass knuckles. It also says the law doesn't govern the use of air guns used only in sport, smoothbore shotguns and their cartridges, or knives that are household items or needed for medicine, industry, farming, sport or a trade. The import ban in Art. 2 is without prejudice to Law 6551 on hunting equipment, whose rules for travellers we haven't checked: ask Turkish customs before travelling with a shotgun.",
+    "summary": "Banned: firearms, ammunition, and knives made for attack or defence (daggers, switchblades, swords, brass knuckles). Shotguns fall under a separate law.",
+    "legal_source": {
+      "name": "Law No. 6136 on Firearms, Knives and Other Tools (Ateşli Silahlar ve Bıçaklar ile Diğer Aletler Hakkında Kanun), Arts. 2 and 4 — mevzuat.gov.tr",
+      "url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.6136.pdf"
+    },
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-ae",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition",
+      "explosives",
+      "fireworks"
+    ],
+    "destination": "AE",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "Weapons, ammunition, explosives and fireworks are restricted goods: they need prior approval from the authorities concerned (the Ministry of Defence, the Armed Forces and the Ministry of Interior) before they can be imported."
+    },
+    "notes": "Restricted goods are restricted under the Common Customs Law of the GCC States and UAE regulations. The portal doesn't say how a visitor applies for approval, and doesn't mention knives or self-defence sprays specifically; check with the Ministry of Interior before travelling with any weapon.",
+    "summary": "Weapons, ammunition, explosives and fireworks are restricted: you need prior approval from the Ministry of Defence, Armed Forces or Ministry of Interior.",
+    "legal_source": {
+      "name": "UAE Government portal (u.ae) — Customs clearance: banned and restricted goods",
+      "url": "https://u.ae/en/information-and-services/visiting-and-exploring-the-uae/Tourist-services-and-information/Customs-clearance"
+    },
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-cn",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "replica guns",
+      "toy guns",
+      "ammunition",
+      "explosives"
+    ],
+    "destination": "CN",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Arms, imitation arms, ammunition and explosives of all kinds are prohibited from importation into China."
+    },
+    "notes": "The same prohibition applies on exit. The customs guide doesn't list knives or self-defence sprays separately.",
+    "summary": "Banned: weapons of all kinds, imitation (replica) weapons, ammunition and explosives.",
+    "legal_source": {
+      "name": "General Administration of Customs of China (GACC) — Customs Clearance Guide for International Passengers: articles prohibited from importation",
+      "url": "http://english.customs.gov.cn/statics/88707c1e-aa4e-40ca-a968-bdbdbb565e4f.html"
+    },
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "'Arms, imitation arms, ammunition and explosives of all kinds' prohibited from importation; all import prohibitions also apply to export",
+        "name": "General Administration of Customs of China (GACC) — Customs Clearance Guide for International Passengers: articles prohibited from importation",
+        "url": "http://english.customs.gov.cn/statics/88707c1e-aa4e-40ca-a968-bdbdbb565e4f.html"
+      },
+      {
+        "claim": "Cross-check: 'Various weapons, simulated weapons, ammunition and explosives' prohibited from entry",
+        "name": "Hunan Provincial Government — Prohibited and Restricted Items from Entry (14 July 2026)",
+        "url": "http://www.enghunan.gov.cn/hneng/Services/EntryExit/LuggageInstructions/202607/t20260714_34026189.html"
+      }
+    ]
   }
 ]
