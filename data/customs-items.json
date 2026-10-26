@@ -2126,20 +2126,35 @@
       "vape pen",
       "e-liquid",
       "pod system",
-      "disposable vape"
+      "disposable vape",
+      "heated tobacco",
+      "heat-not-burn",
+      "iqos"
     ],
     "destination": "TH",
     "category": "e_cigarettes",
     "verdict": "prohibited",
     "summary": "Banned. Don't bring vapes, e-cigarettes or e-liquid: using one can mean arrest, jail time or a fine several times their value.",
-    "notes": "Thailand banned e-cigarettes in 2014, for health reasons. Anyone found using one (vaping) in Thailand can be arrested and face jail time, or a fine of several times the value of the items; this applies to foreigners and Thais alike. The Royal Thai Embassy reports recent cases of foreign travellers who didn't know about the ban being fined on the spot or arrested, and advises travellers not to bring any e-cigarette, or anything used with one, such as the liquid.",
+    "notes": "Thailand banned e-cigarettes in 2014, for health reasons. Anyone found using one (vaping) in Thailand can be arrested and face jail time, or a fine of several times the value of the items; this applies to foreigners and Thais alike. The Royal Thai Embassy reports recent cases of foreign travellers who didn't know about the ban being fined on the spot or arrested, and advises travellers not to bring any e-cigarette, or anything used with one, such as the liquid. The UK government's travel advice adds that it is illegal to possess or use any vape, e-cigarette, pod, e-liquid or heat-not-burn device in Thailand.",
     "legal_source": {
       "name": "Royal Thai Embassy, London (Ministry of Foreign Affairs of Thailand) — Prohibition of e-cigarettes",
       "url": "https://london.thaiembassy.org/en/publicservice/86207-prohibition-of-e-cigarettes"
     },
     "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Ban, penalties and advice not to bring e-cigarettes or liquid",
+        "name": "Royal Thai Embassy, London (Ministry of Foreign Affairs of Thailand) — Prohibition of e-cigarettes",
+        "url": "https://london.thaiembassy.org/en/publicservice/86207-prohibition-of-e-cigarettes"
+      },
+      {
+        "claim": "'It is illegal to possess or use any vape, e-cigarette, pod, e-liquid, or heat-not-burn device in Thailand' (advice updated 12 Oct 2026)",
+        "name": "GOV.UK (FCDO) — Thailand travel advice: Safety and security",
+        "url": "https://www.gov.uk/foreign-travel-advice/thailand/safety-and-security"
+      }
+    ]
   },
   {
     "slug": "weapons-th",
@@ -18218,6 +18233,45 @@
     "legal_source": {
       "name": "GOV.UK (FCDO) — Armenia travel advice: Safety and security (updated 2026-03-01)",
       "url": "https://www.gov.uk/foreign-travel-advice/armenia/safety-and-security"
+    },
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "controlled-medication-vn",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "addictive medication"
+    ],
+    "destination": "VN",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Vietnam restricts medicines it classifies as 'addictive' or 'psychotropic', which include medicines used to treat addiction, anxiety, depression, insomnia and other conditions. It is illegal to have more than 7 days of such medicine prescribed by a doctor. Carry the prescription with the medicine, and a letter from your doctor stating how much you need during your trip.",
+      "quantity": "7 days' supply"
+    },
+    "notes": "If you're unsure whether your medicine falls into these categories, or you need to bring more than usually allowed, ask a Vietnamese embassy before travelling. Unofficial summaries of Vietnam's Decree 163/2025/ND-CP give 7 days for addictive medicines and 10 days for psychotropic and precursor medicines (more needs an import permit); the decree text itself couldn't be read here, so this row uses the UK government's single 7-day figure.",
+    "summary": "Up to 7 days' supply of addictive or psychotropic medicine (e.g. for anxiety, depression, insomnia), with the prescription and a doctor's letter.",
+    "letter": {
+      "items": [
+        "Your name and age",
+        "Each medicine's name, volume and dosage",
+        "How much of the medicine you need during your trip",
+        "The doctor's signature and address",
+        "It can be in English"
+      ],
+      "source": {
+        "name": "GOV.UK (FCDO) — Vietnam travel advice: Health, 'Medication' (updated 21 September 2026)",
+        "url": "https://www.gov.uk/foreign-travel-advice/vietnam/health"
+      },
+      "verified_at": "2026-10-26"
+    },
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Vietnam travel advice: Health, 'Medication' (updated 21 September 2026)",
+      "url": "https://www.gov.uk/foreign-travel-advice/vietnam/health"
     },
     "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
