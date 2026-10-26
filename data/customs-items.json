@@ -3021,14 +3021,26 @@
     "limits": {
       "description": "Motorised, remote-controlled unmanned flying craft such as drones need an import licence from the foreign trade department. They are excluded from the duty-free allowance for children's toys."
     },
-    "notes": "From Moroccan Customs' 2024 circular for the summer welcome operation; its general section (I.3) lists the goods that need an import licence and the prohibited goods. The licence list is in annex VII.01 of title VII of the RDII.",
+    "notes": "From Moroccan Customs' 2024 circular for the summer welcome operation; its general section (I.3) lists the goods that need an import licence and the prohibited goods. The licence list is in annex VII.01 of title VII of the RDII. To fly a drone in Morocco you also need permission from the Directorate General for Civil Aviation (UK government travel advice).",
     "legal_source": {
       "name": "Administration des Douanes et Impôts Indirects (Moroccan Customs) — Circulaire N° 6568/311 (30 May 2024), Annex: general rules on personal effects, prohibited/restricted imports and personal medication",
       "url": "https://www.douane.gov.ma/dms/loadDocument?documentId=94052"
     },
-    "verified_at": "2026-10-19",
+    "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Import licence needed; excluded from the toys allowance",
+        "name": "Administration des Douanes et Impôts Indirects (Moroccan Customs) — Circulaire N° 6568/311 (30 May 2024), Annex: general rules on personal effects, prohibited/restricted imports and personal medication",
+        "url": "https://www.douane.gov.ma/dms/loadDocument?documentId=94052"
+      },
+      {
+        "claim": "Permission from the Directorate General for Civil Aviation needed to fly a drone",
+        "name": "GOV.UK (FCDO) — Morocco travel advice: Safety and security, 'Flying drones' (updated 19 August 2026)",
+        "url": "https://www.gov.uk/foreign-travel-advice/morocco/safety-and-security"
+      }
+    ]
   },
   {
     "slug": "alcohol-in",
@@ -12925,7 +12937,36 @@
     },
     "verified_at": "2026-10-09",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "procedure": {
+      "title": "Get drone approval from Jordan's Civil Aviation Regulatory Commission",
+      "authority": "Civil Aviation Regulatory Commission (CARC)",
+      "applyUrl": "https://carc.gov.jo/en/drones",
+      "leadTime": "Apply at least 10 working days before you travel.",
+      "leadTimeRule": {
+        "amount": 10,
+        "unit": "working_days",
+        "before": "travel"
+      },
+      "steps": [
+        "Fill in CARC's Drones Operations Approval Application Form, published on its drones page.",
+        "Apply at least 10 working days before you travel.",
+        "Travel with the permit. Without one, the authorities hold your drone at the airport, and you collect it when you leave Jordan."
+      ],
+      "atTheBorder": "If you haven't received a permit before you arrive, your drone is held at the airport until you leave.",
+      "sources": [
+        {
+          "name": "GOV.UK (FCDO) — Jordan travel advice: Entry requirements, 'Drones' (updated 25 October 2026)",
+          "url": "https://www.gov.uk/foreign-travel-advice/jordan/entry-requirements"
+        },
+        {
+          "name": "Civil Aviation Regulatory Commission (Jordan) — Drones",
+          "url": "https://carc.gov.jo/en/drones"
+        }
+      ],
+      "verified_at": "2026-10-26",
+      "verified_by": "agent:claude-opus-5-5"
+    }
   },
   {
     "slug": "cannabis-jo",
@@ -18297,6 +18338,30 @@
     "legal_source": {
       "name": "GOV.UK (FCDO) — Vietnam travel advice: Entry requirements (updated 21 September 2026)",
       "url": "https://www.gov.uk/foreign-travel-advice/vietnam/entry-requirements"
+    },
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-uz",
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft"
+    ],
+    "destination": "UZ",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "Importing and using drones in Uzbekistan is largely prohibited, with some limited exceptions. You must get a licence to import a drone and permission to use it before you arrive."
+    },
+    "notes": "Importing or using a drone without permission can mean a fine or a prison sentence. The advice doesn't name the licensing authority, and Uzbekistan's customs site (customs.uz) couldn't be read here; ask an Uzbek embassy before travelling with a drone.",
+    "summary": "Largely prohibited: you need an import licence and permission to fly before you arrive, or face a fine or prison.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Uzbekistan travel advice: Entry requirements, 'Drones' (updated 19 March 2026)",
+      "url": "https://www.gov.uk/foreign-travel-advice/uzbekistan/entry-requirements"
     },
     "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",

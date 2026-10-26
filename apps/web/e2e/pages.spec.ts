@@ -102,8 +102,8 @@ test("changelog lists dated, sourced entries with dataset anchors", async ({ pag
 });
 
 test("unpublished item/destination pairs 404 instead of rendering thin content", async ({ page }) => {
-  // No verified drones row exists for Uzbekistan (customs.uz is unreadable).
-  const response = await page.goto("/bring/drones/uzbekistan");
+  // No verified drones row exists for Mongolia (customs figures conflict).
+  const response = await page.goto("/bring/drones/mongolia");
   expect(response?.status()).toBe(404);
 });
 
