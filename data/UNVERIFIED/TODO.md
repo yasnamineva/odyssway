@@ -871,7 +871,7 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
       portal and was not independently confirmed elsewhere in this pass;
       `documentsNeeded` intentionally omits a specific blank-page claim.
 
-- [ ] EG: cash-declaration threshold — an extremely consistent set of
+- [x] EG: cash-declaration threshold — PUBLISHED 2026-10-26 as `cash-eg` on GOV.UK + Canada + Qatar embassy (two foreign governments disagree at exactly US$10,000; recorded). Still worth finding the Egyptian text. — an extremely consistent set of
       secondary sources (news outlets, travel-agency sites) states
       travelers may carry up to USD 10,000 (or equivalent) without
       declaring, and up to EGP 5,000 in local currency, with a formal

@@ -4792,17 +4792,17 @@
     "category": "cash",
     "verdict": "declaration_required",
     "limits": {
-      "description": "Declaration to Korea Customs is required when carrying means of payment (cash, checks, etc.), in Korean won or any foreign currency, equal to or exceeding USD 10,000 (or equivalent) into or out of South Korea.",
-      "quantity": "USD 10,000 or equivalent"
+      "description": "Declaration to Korea Customs is required when carrying means of payment (cash, checks, etc.), in Korean won or any foreign currency, worth more than USD 10,000 (or equivalent) in total into or out of South Korea.",
+      "quantity": "over USD 10,000"
     },
-    "notes": "Below USD 10,000, no declaration or permission is needed on arrival or departure. At or above USD 10,000 on arrival, travelers must mark item 3 on the Traveler Declaration Form, report it to Customs, and obtain a Certificate of Foreign Currency Declaration before passing immigration. On departure, Korean residents carrying USD 10,000+ must report to Customs (some purposes require bank confirmation instead); non-residents departing with more than they declared on arrival need a foreign exchange bank confirmation. Failure to report can carry imprisonment of up to 1 year or a fine of up to KRW 100 million (up to triple the violation amount in some cases).",
-    "summary": "Declare cash, cheques or other means of payment worth USD 10,000 or more, in any currency.",
+    "notes": "Up to USD 10,000, no declaration or permission is needed on arrival or departure. Above USD 10,000 on arrival, travelers must mark item 3 on the Traveler Declaration Form, report it to Customs, and obtain a Certificate of Foreign Currency Declaration before passing immigration. On departure, Korean residents carrying more than USD 10,000 must report to Customs (some purposes require bank confirmation instead); non-residents departing with more than they declared on arrival need a foreign exchange bank confirmation. Failure to report can carry imprisonment of up to 1 year or a fine of up to KRW 100 million (up to triple the violation amount in some cases).",
+    "summary": "Declare cash, cheques or other means of payment worth more than USD 10,000 in total, in any currency.",
     "legal_source": {
       "name": "Korea Customs Service - Declaration of Foreign Currency",
       "url": "https://www.customs.go.kr/english/cm/cntnts/cntntsView.do?mi=10800&cntntsId=5500"
     },
-    "verified_at": "2026-09-02",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -7797,18 +7797,30 @@
     "category": "e_cigarettes",
     "verdict": "allowed_with_limits",
     "limits": {
-      "description": "Duty-free: 20 ml of e-cigarette liquid nicotine with a nicotine content under 1%, per the Korea Customs Service allowance list (which also lists 200 cigarettes).",
+      "description": "Duty-free from age 19, as your one kind of duty-free tobacco: 20 ml of nicotine liquid with under 1% nicotine, or 200 heated-tobacco sticks, or 110 g of other e-cigarette types.",
       "quantity": "20 ml (nicotine under 1%)"
     },
     "notes": "Travellers under 19 (counted by year of birth) get no duty-free allowance for liquor or tobacco. Declare anything over the allowance: declaring it yourself takes 30% off the standard duty; if it is found undeclared, an extra 40% tax is added (60% if it happens twice or more within 2 years).",
-    "summary": "Duty-free from age 19: 20 ml of e-cigarette liquid nicotine with under 1% nicotine. Declare more; undeclared goods face an extra 40% tax.",
+    "summary": "Duty-free from age 19, one kind of tobacco only: 20 ml of nicotine liquid (under 1%), or 200 heated-tobacco sticks, or 110 g of other types.",
     "legal_source": {
       "name": "Korea Customs Service (English site) — Duty-Free Allowance for Travelers",
       "url": "https://www.customs.go.kr/english/cm/cntnts/cntntsView.do?mi=8069&cntntsId=2743"
     },
     "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "20 ml nicotine liquid (under 1%); no allowance under 19; 30% reduction; 40%/60% penalty",
+        "name": "Korea Customs Service (English site) — Duty-Free Allowance for Travelers",
+        "url": "https://www.customs.go.kr/english/cm/cntnts/cntntsView.do?mi=8069&cntntsId=2743"
+      },
+      {
+        "claim": "Heated-tobacco sticks 200, other e-cigarette types 110 g; one kind of tobacco only",
+        "name": "Korea Customs Service call centre FAQ — 면세범위를 초과하는 담배에 부과되는 세금 (tobacco allowances by type and taxes above them)",
+        "url": "https://www.customs.go.kr/call/ad/crmcc/selectFaqViewPage.do?mi=6822&cnslKnwlSrno=436"
+      }
+    ]
   },
   {
     "slug": "e-cigarettes-us",
@@ -17843,5 +17855,148 @@
       },
       "verified_at": "2026-10-25"
     }
+  },
+  {
+    "slug": "alcohol-kr",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer",
+      "soju"
+    ],
+    "destination": "KR",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free from age 19 (counted by year of birth), separately from the US$800 general allowance: alcohol up to 2 litres in total, worth no more than US$400 in total.",
+      "quantity": "2 L, up to US$400"
+    },
+    "notes": "Declare anything above the allowance. If you declare it yourself, customs duty is reduced by 30%; if undeclared goods are found, a penalty of 40% of the tax due is added (60% if it happens twice or more within 2 years).",
+    "summary": "Duty-free from age 19: up to 2 litres of alcohol in total, worth up to US$400, on top of the US$800 allowance. Declare more.",
+    "legal_source": {
+      "name": "Korea Customs Service — 여행자 휴대품 통관 (traveller baggage clearance: duty-free allowances, declaration)",
+      "url": "https://customs.go.kr/kcs/cm/cntnts/cntntsView.do?mi=2837&cntntsId=829"
+    },
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "2 L / US$400 alcohol allowance separate from US$800; no allowance under 19; 30% reduction on self-declaration; 40%/60% penalty",
+        "name": "Korea Customs Service — 여행자 휴대품 통관 (traveller baggage clearance: duty-free allowances, declaration)",
+        "url": "https://customs.go.kr/kcs/cm/cntnts/cntntsView.do?mi=2837&cntntsId=829"
+      },
+      {
+        "claim": "Cross-check: alcohol 'combined 2 L or less and US$400 or less', separate from the basic allowance",
+        "name": "Korea Customs Service call centre FAQ — 여행자휴대품의 면세범위 (duty-free allowances; Enforcement Rules of the Customs Act, Art. 48)",
+        "url": "https://www.customs.go.kr/call/ad/crmcc/selectFaqViewPage.do?mi=6822&cnslKnwlSrno=411"
+      }
+    ]
+  },
+  {
+    "slug": "tobacco-kr",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "heated tobacco"
+    ],
+    "destination": "KR",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free from age 19 (counted by year of birth), separately from the US$800 general allowance, one kind only: 200 cigarettes, or 50 cigars, or 200 heated-tobacco sticks, or 20 ml of nicotine liquid (under 1% nicotine), or 110 g of other e-cigarette types, or 250 g of other tobacco.",
+      "quantity": "200 cigarettes"
+    },
+    "notes": "Declare anything above the allowance. If you declare it yourself, customs duty is reduced by 30%; if undeclared goods are found, a penalty of 40% of the tax due is added (60% if it happens twice or more within 2 years). Tobacco above the allowance is charged customs duty, VAT and individual consumption tax, plus local taxes (tobacco consumption tax and local education tax) billed separately.",
+    "summary": "Duty-free from age 19, one kind only: 200 cigarettes, or 50 cigars, or 250 g of other tobacco. Declare more; local tobacco taxes apply too.",
+    "legal_source": {
+      "name": "Korea Customs Service — 여행자 휴대품 통관 (traveller baggage clearance: duty-free allowances, declaration)",
+      "url": "https://customs.go.kr/kcs/cm/cntnts/cntntsView.do?mi=2837&cntntsId=829"
+    },
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "200 cigarettes separate from US$800; no allowance under 19; 30% reduction; 40%/60% penalty",
+        "name": "Korea Customs Service — 여행자 휴대품 통관 (traveller baggage clearance: duty-free allowances, declaration)",
+        "url": "https://customs.go.kr/kcs/cm/cntnts/cntntsView.do?mi=2837&cntntsId=829"
+      },
+      {
+        "claim": "Allowance by tobacco type (cigars, heated sticks, nicotine liquid, other e-cigarettes, other tobacco), one kind only, and the taxes charged above it",
+        "name": "Korea Customs Service call centre FAQ — 면세범위를 초과하는 담배에 부과되는 세금 (tobacco allowances by type and taxes above them)",
+        "url": "https://www.customs.go.kr/call/ad/crmcc/selectFaqViewPage.do?mi=6822&cnslKnwlSrno=436"
+      }
+    ]
+  },
+  {
+    "slug": "cash-eg",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "foreign currency declaration",
+      "egyptian pounds"
+    ],
+    "destination": "EG",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declare foreign currency worth more than US$10,000 on arrival; there is no upper limit on foreign currency. You can bring at most EGP 5,000 in Egyptian pounds into or out of Egypt.",
+      "quantity": "US$10,000; EGP 5,000 max"
+    },
+    "notes": "Conflict between sources, recorded per AGENTS.md §3.8: the UK says to declare foreign currency worth 'more than 10,000 US dollars'; Canada says 'US$10,000 or more'. Declaring at exactly US$10,000 avoids the question. No Egyptian government page stating the rule could be read (customs.gov.eg's currency page is an exchange-rate table; the Central Bank's circulars need a JavaScript app), so this row rests on two foreign governments' travel advice and the Qatari embassy in Cairo.",
+    "summary": "Declare foreign currency over US$10,000 on arrival (no upper limit). Egyptian pounds: at most EGP 5,000 in or out.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Egypt travel advice: Entry requirements, 'Taking money into or out of Egypt'",
+      "url": "https://www.gov.uk/foreign-travel-advice/egypt/entry-requirements"
+    },
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Declare foreign currency over US$10,000 on arrival; no limit on foreign currency; EGP 5,000 in or out (page updated 4 Aug 2026)",
+        "name": "GOV.UK (FCDO) — Egypt travel advice: Entry requirements, 'Taking money into or out of Egypt'",
+        "url": "https://www.gov.uk/foreign-travel-advice/egypt/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: EGP 5,000 maximum; declare US$10,000 or more",
+        "name": "Government of Canada — Travel advice: Egypt, Money",
+        "url": "https://travel.gc.ca/destinations/egypt"
+      },
+      {
+        "claim": "Cross-check: US$10,000 or equivalent; EGP 5,000",
+        "name": "Embassy of the State of Qatar in Cairo — Travel tips: Egypt (currency)",
+        "url": "https://cairo.embassy.qa/en/egypt/travel-tips"
+      }
+    ]
+  },
+  {
+    "slug": "tobacco-qa",
+    "names": [
+      "cigarettes",
+      "tobacco",
+      "duty free cigarettes"
+    ],
+    "destination": "QA",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free up to 200 cigarettes, as part of the exemption for personal effects and gifts carried by the traveller (total value up to SAR 3,000 or the equivalent in GCC currencies), in personal, non-commercial quantities. Anything that doesn't meet these conditions pays customs duty under the tariff.",
+      "quantity": "200 cigarettes"
+    },
+    "notes": "The exemption doesn't apply to frequent visitors to customs, traders, or members of transport crews. The guide names only cigarettes, not cigars or loose tobacco. E-cigarettes are banned in Qatar (see e-cigarettes). Some unofficial sites give 400 cigarettes; Qatar Customs' own guide says 200.",
+    "summary": "Duty-free: up to 200 cigarettes, within the SAR 3,000 personal-goods exemption, for personal use. Above that, customs duty applies.",
+    "legal_source": {
+      "name": "Qatar General Authority of Customs — GCC Unified Guide for Customs Procedures at First Entry Points (Arabic, hosted on customs.gov.qa), item 050402: exemption of travellers' personal effects and gifts, p. 45",
+      "url": "https://www.customs.gov.qa/Arabic/Documents/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF%20%D9%84%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AC%D9%85%D8%B1%D9%83%D9%8A%D8%A9%20%D8%A8%D9%85%D9%86%D8%A7%D9%81%D8%B0%20%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84%20%D8%A7%D9%84%D8%A7%D9%88%D9%84%D9%89%20%D8%A8%D8%AF%D9%88%D9%84%20%D9%85%D8%AC%D9%84%D8%B3%20%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%20%D9%84%D8%AF%D9%88%D9%84%20%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9.pdf"
+    },
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]

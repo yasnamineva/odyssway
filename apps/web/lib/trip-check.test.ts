@@ -75,9 +75,9 @@ describe("resolveTripCheck", () => {
   });
 
   it("never fabricates an item match when no customs data exists for the queried items", () => {
-    // South Korea's only verified customs row is the cash-declaration
-    // threshold — alcohol/weapons must never fall back to a guess.
-    const result = resolveTripCheck("US", "KR", ["alcohol", "weapons"]);
+    // Uzbekistan has no verified alcohol or weapons rows — they must never
+    // fall back to a guess.
+    const result = resolveTripCheck("US", "UZ", ["alcohol", "weapons"]);
     expect(result.items).toHaveLength(2);
     expect(result.items.every((i) => i.match === null)).toBe(true);
   });
