@@ -60,6 +60,7 @@
       "description": "You must file a report if you carry more than $10,000 in currency or other monetary instruments into or out of the United States at one time (31 U.S.C. 5316).",
       "quantity": "$10,000"
     },
+    "summary": "Report more than US$10,000 in cash or monetary instruments carried into or out of the US at one time.",
     "legal_source": {
       "name": "31 U.S.C. §5316; 31 CFR §1010.340",
       "url": "https://www.govinfo.gov/content/pkg/USCODE-2020-title31/pdf/USCODE-2020-title31-subtitleIV-chap53-subchapII-sec5316.pdf"
@@ -315,6 +316,7 @@
       "description": "Must declare cash of £10,000 or more (any currency) when crossing the Great Britain border; a €10,000 threshold applies for Northern Ireland",
       "quantity": "£10,000"
     },
+    "summary": "Declare cash of £10,000 or more in any currency when crossing the Great Britain border (€10,000 for Northern Ireland).",
     "legal_source": {
       "name": "gov.uk — Bringing cash into the UK",
       "url": "https://www.gov.uk/bringing-cash-into-uk"
@@ -542,6 +544,7 @@
       "description": "Must declare currency or monetary instruments valued at CAD $10,000 or more",
       "quantity": "CAD $10,000"
     },
+    "summary": "Declare currency or monetary instruments worth CA$10,000 or more.",
     "legal_source": {
       "name": "CBSA — Travellers and their goods",
       "url": "https://www.cbsa-asfc.gc.ca/travel-voyage/ttd-vdd-eng.html"
@@ -710,7 +713,13 @@
   },
   {
     "slug": "drones-ca",
-    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas"
+    ],
     "destination": "CA",
     "category": "drones",
     "verdict": "depends",
@@ -719,6 +728,7 @@
       "quantity": "250g threshold; ~30 business days' advance processing for a Foreign SFOC-RPAS"
     },
     "notes": "Most consumer camera drones (e.g. a standard DJI Mini is one of the few common models under 250g; most other popular models are well above it) fall into the registration-required category, making the 30-business-day advance application a real, easy-to-miss trap for a short trip — a tourist who decides to bring their drone a week before departure will not receive approval in time. Transport Canada's own drone-pilot certificate is also required, separate from the SFOC-RPAS application.",
+    "summary": "Drones of 250 g or more need registration to fly, but visitors can't register: apply for a Foreign SFOC-RPAS from Transport Canada (about 30 business days) first.",
     "legal_source": {
       "name": "Transport Canada — Getting permission to fly a drone in Canada as a foreign pilot",
       "url": "https://tc.canada.ca/en/aviation/drone-safety/drone-pilot-licensing/get-permission-special-drone-operations/get-permission-fly-drone-foreign-pilot"
@@ -789,6 +799,7 @@
       "description": "Must declare cash of €10,000 or more (including bearer instruments and highly liquid stores of value) when entering or leaving the EU",
       "quantity": "€10,000"
     },
+    "summary": "Declare cash of €10,000 or more, including bearer instruments and gold, when entering or leaving the EU.",
     "legal_source": {
       "name": "Regulation (EU) 2018/1672, Art. 3(1)",
       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32018R1672"
@@ -913,6 +924,7 @@
       "description": "No dedicated customs rule; falls under the general personal-goods value threshold: €300 for land travellers, €430 for air/sea travellers"
     },
     "notes": "Separate EASA rules govern where and how you may fly a drone in the EU — this entry covers customs entry only, not flight operation.",
+    "summary": "No customs rule: a drone counts toward the personal-goods allowance (€300 by land, €430 by air or sea). EASA rules govern flying.",
     "legal_source": {
       "name": "Council Directive 2007/74/EC, Art. 7",
       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32007L0074"
@@ -985,6 +997,7 @@
       "description": "Must submit a \"Declaration of Carrying of Means of Payment, etc.\" when carrying cash, checks (incl. traveler's checks), promissory notes, or securities exceeding ¥1,000,000 (or equivalent) into or out of Japan; also applies to over 1 kg of gold at 90%+ purity",
       "quantity": "¥1,000,000"
     },
+    "summary": "Declare cash, cheques or securities worth more than ¥1,000,000 entering or leaving Japan (and over 1 kg of gold).",
     "legal_source": {
       "name": "Japan Customs — Export/Import of Means of Payment, etc. (FAQ 7305)",
       "url": "https://www.customs.go.jp/english/c-answer_e/keitaibetsuso/7305_e.htm"
@@ -1496,6 +1509,7 @@
       "quantity": "$10,000"
     },
     "notes": "A separate, older Central Bank of Kenya regulation (Legal Notice No. 118 of 1998, still in force and unamended) sets a lower threshold — currency exceeding KSh 500,000 or the equivalent of USD 5,000 must be declared to a Customs Officer on Form CBK/C.D./1. The two official sources do not agree on the figure; to stay on the safe side, declare at the lower USD 5,000 threshold if in doubt.",
+    "summary": "Declare US$10,000 or more on the Passenger Declaration Form (F88) on arrival. An older Central Bank rule sets a lower threshold.",
     "legal_source": {
       "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
       "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
@@ -1516,6 +1530,7 @@
     "category": "drones",
     "verdict": "depends",
     "notes": "Drones may not be imported into Kenya without a permit issued by the Kenya Civil Aviation Authority (KCAA) (Civil Aviation (Unmanned Aircraft Systems) Regulations, 2020, reg. 7(1)). KCAA can grant a temporary permit to operate a UAS for up to 30 days, renewable once (reg. 11(1)). KRA also lists drones among restricted imports, which need authorization from the relevant government institution before Customs releases them. Apply to KCAA before travelling.",
+    "summary": "Drones can't be imported without a Kenya Civil Aviation Authority permit; apply before you travel.",
     "legal_source": {
       "name": "Civil Aviation (Unmanned Aircraft Systems) Regulations, 2020 (Kenya Civil Aviation Authority)",
       "url": "https://www.kcaa.or.ke/sites/default/files/regulation/Civil%20Aviation%20(Unmanned%20Aircraft%20Systems)%20Regulations%202020.pdf"
@@ -1673,6 +1688,7 @@
       "description": "South African bank notes must be declared on arrival. Currency — Rand, or foreign currency convertible to Rand — in excess of R100,000 requires National Treasury/SARB permission and must be reported under the Financial Intelligence Centre Act; undeclared excess currency is subject to search and seizure.",
       "quantity": "R100,000"
     },
+    "summary": "Declare South African bank notes on arrival. More than R100,000 in rand or convertible currency needs Treasury/SARB permission.",
     "legal_source": {
       "name": "SARS — SC-PA-01-06 Excess Currency External Policy (Rev. 11, eff. 1 July 2026)",
       "url": "https://www.sars.gov.za/wp-content/uploads/Ops/Policies/SC-PA-01-06-Excess-Currency-External-Policy.pdf"
@@ -2095,6 +2111,7 @@
       "quantity": "THB 450,000 / USD 15,000"
     },
     "notes": "Figures per the Bank of Thailand's exchange control regulation page; the page does not itself cite the underlying Ministerial Regulation/Currency Act section number, so treat the legal citation as the regulator's own summary rather than the statute text.",
+    "summary": "Declare more than THB 450,000 in Thai baht or more than US$15,000 in foreign currency, entering or leaving.",
     "legal_source": {
       "name": "Bank of Thailand — Exchange Control Regulation (currency declaration thresholds)",
       "url": "https://www.bot.or.th/en/our-roles/financial-markets/foreign-exchange-regulations/exchange-control-regulation.html"
@@ -2402,6 +2419,7 @@
       "quantity": "$10,000"
     },
     "notes": "Failure to declare, or a false declaration, triggers an administrative fine of 5% of the transported cash/instrument value, without prejudice to criminal sanctions (Art. 7). This is a national Rwandan regulation distinct from — and more specific than — the general EAC/RRA traveler goods-declaration process.",
+    "summary": "Up to US$10,000 needs no declaration; declare anything more on entry, transit or exit, or face a 5% fine.",
     "legal_source": {
       "name": "Regulations Relating to the Declaration of Cross Border Cash or Bearer Negotiable Instruments, No 02/2021",
       "url": "https://rwandalii.org/akn/rw/act/reg/2021/2"
@@ -2520,6 +2538,7 @@
     "category": "drones",
     "verdict": "depends",
     "notes": "The Rwanda Civil Aviation Authority (RCAA) says to declare your drone to Rwanda National Police at any point of entry; failing to do so carries a penalty under the regulations. Drones must also be registered with RCAA, and operators need an RCAA UAS Activity Permit before flying (Rwanda Civil Aviation Regulations Part 27).",
+    "summary": "Declare your drone to Rwanda National Police at the point of entry; drones must also be registered with the civil aviation authority.",
     "legal_source": {
       "name": "Rwanda Civil Aviation Authority — Unmanned Aircraft (Drones)",
       "url": "https://www.caa.gov.rw/unmanned-aircraft"
@@ -2686,6 +2705,7 @@
       "description": "Remote-controlled/radio-controlled aircraft (drones) require prior clearance from the competent control authority (the source names the Ministry of Defence, وزارة الدفاع, as an example) before Customs will release them."
     },
     "notes": "The Egyptian Customs Authority lists radio-controlled aircraft among restricted goods that need clearance from a control body (for example the Ministry of Defence) before release. It gives no permit process or fee.",
+    "summary": "Drones need prior clearance from the competent authority, such as the Ministry of Defence, before Customs releases them.",
     "legal_source": {
       "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
       "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
@@ -2830,6 +2850,7 @@
       "quantity": "$10,000"
     },
     "notes": "Basis: Money Laundering (Prevention and Prohibition) Act, 2022, s. 3(3)–(5). Customs reports declarations to the Central Bank and the Nigerian Financial Intelligence Unit. A false declaration or failure to declare is an offence: forfeiture of the undeclared funds or instrument, or imprisonment for at least two years, or both.",
+    "summary": "Declare cash or negotiable instruments over US$10,000 to the Nigeria Customs Service when entering or leaving.",
     "legal_source": {
       "name": "Money Laundering (Prevention and Prohibition) Act, 2022, s. 3 — EFCC Special Control Unit against Money Laundering (SCUML) copy",
       "url": "https://scuml.efcc.gov.ng/wp-content/uploads/2022/05/MONEY-LAUNDERING-publication.pdf"
@@ -3122,6 +3143,7 @@
       "description": "Motorised, remote-controlled unmanned flying craft such as drones need an import licence from the foreign trade department. They are excluded from the duty-free allowance for children's toys."
     },
     "notes": "From Moroccan Customs' 2024 circular for the summer welcome operation; its general section (I.3) lists the goods that need an import licence and the prohibited goods. The licence list is in annex VII.01 of title VII of the RDII. To fly a drone in Morocco you also need permission from the Directorate General for Civil Aviation (UK government travel advice).",
+    "summary": "Drones need an import licence from the foreign trade department, and permission from civil aviation to fly.",
     "legal_source": {
       "name": "Administration des Douanes et Impôts Indirects (Moroccan Customs) — Circulaire N° 6568/311 (30 May 2024), Annex: general rules on personal effects, prohibited/restricted imports and personal medication",
       "url": "https://www.douane.gov.ma/dms/loadDocument?documentId=94052"
@@ -3525,6 +3547,7 @@
       "description": "No mandatory threshold requires travelers to declare cash brought into Türkiye. Declaration is voluntary, but if made must be complete and accurate. Cash representing personal debts, gifts, dowries, inheritances, immigrants' assets, foreign loans, or uncut-diamond export proceeds may not be physically carried in — it must be transferred via a bank."
     },
     "notes": "Customs may ask you to explain the amount and source of the cash you carry. If you give no explanation, or a false or misleading one, a fine of 10% of the unexplained amount applies, all the cash you carry is held, and the case is reported to the public prosecutor and the Financial Crimes Investigation Board (MASAK). This page covers cash brought into Türkiye.",
+    "summary": "No declaration threshold: declaring cash is voluntary, but Customs may ask about its source, and unexplained cash can be fined 10%.",
     "legal_source": {
       "name": "T.C. Ticaret Bakanlığı (Turkish Ministry of Trade) — Gümrük Rehberi: Cash and Valuables Guide (basis: Decision No. 32 on the Protection of the Value of Turkish Currency)",
       "url": "https://gumrukrehberi.gov.tr/kategori/bireysel-slemler/nakit-ve-ziynet-esyasi-rehberi"
@@ -3766,6 +3789,7 @@
       "quantity": "AUD 10,000"
     },
     "notes": "Applies to citizens, residents, and visitors alike, in both directions. Splitting cash among travellers to stay under the threshold (\"structuring\") is a criminal offence. Money transferred via a bank or remittance provider does not need to be declared.",
+    "summary": "Declare AUD 10,000 or more in cash and bearer instruments combined, entering or leaving. There's no limit on how much you carry.",
     "legal_source": {
       "name": "AUSTRAC — Moving money overseas",
       "url": "https://www.austrac.gov.au/general-public/moving-money-overseas"
@@ -4141,6 +4165,7 @@
     "limits": {
       "description": "The General Civil Aviation Authority (GCAA) states that all UAS/drones, regardless of weight, used by individuals for recreational purposes must be registered with the GCAA. Dubai Customs' passenger guide also lists drones among items accompanying passengers that are subject to permits from relevant authorities and must be declared on arrival."
     },
+    "summary": "All drones, whatever their weight, must be registered with the GCAA for recreational use.",
     "legal_source": {
       "name": "General Civil Aviation Authority (GCAA) — UAS Registration",
       "url": "https://www.gcaa.gov.ae/en/pages/UASRegistration.aspx/"
@@ -4216,6 +4241,7 @@
       "quantity": "USD 10,000 equivalent (foreign currency); PHP 50,000 (Philippine peso)"
     },
     "notes": "No upper limit on the amount that may be carried, but anything above the threshold must be declared; the Foreign Currency Declaration Form is available from Customs Officers at arrival/departure desks or via the BSP website. Declaration may also be completed through the e-Travel system prior to arrival.",
+    "summary": "Declare foreign currency or bearer instruments over US$10,000, or more than PHP 50,000, on the Foreign Currency Declaration Form.",
     "legal_source": {
       "name": "Bureau of Customs Philippines - Foreign Currency",
       "url": "https://customs.gov.ph/foreign-currency/"
@@ -4290,6 +4316,7 @@
       "quantity": "NZD 10,000 or equivalent"
     },
     "notes": "\"Cash\" covers physical currency, travellers' cheques, cheques, money/postal orders, bearer bonds, bills of exchange, promissory notes, and other instruments prescribed under the Anti-Money Laundering Act 2009. The report can be filed online (within 72 hours of travel) or on the paper NZCS 337 form at the border. There is no cap on how much cash may be carried — this is a reporting obligation, not a fee — but failing to declare is a criminal offence that can lead to fines, imprisonment, and seizure of the cash.",
+    "summary": "File a Border Cash Report for NZ$10,000 or more in cash or equivalent, entering or leaving New Zealand.",
     "legal_source": {
       "name": "New Zealand Customs Service — Border Cash Report",
       "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/border-cash-report"
@@ -4392,6 +4419,7 @@
       "quantity": "Foreign currency cash equivalent to USD 5,000 or more, OR Vietnamese dong cash of VND 15,000,000 or more"
     },
     "notes": "Threshold set under State Bank of Vietnam Circular No. 15/2011/TT-NHNN. Declaration is also required below the threshold if the traveler intends to deposit foreign currency exceeding USD 5,000 into a Vietnamese bank account, since the stamped declaration form is needed as supporting documentation for the bank. Traveler's checks, bank/payment cards, and securities are not subject to this cash threshold.",
+    "summary": "Declare foreign cash worth US$5,000 or more, or VND 15,000,000 or more, on arrival or departure.",
     "legal_source": {
       "name": "State Bank of Vietnam Circular No. 15/2011/TT-NHNN, as summarized by Vietnam Customs / Vietnam Law Magazine (official gazette text)",
       "url": "https://www.customs.gov.vn/index.jsp?pageId=2281&aid=157007&cid=4208"
@@ -4693,6 +4721,7 @@
       "quantity": "SAR 40,000"
     },
     "notes": "Under Saudi Arabia's anti-money-laundering framework (Royal Decree No. M/39), travelers entering or leaving the Kingdom must declare currencies/negotiable instruments/precious metals worth SAR 40,000 or more via ZATCA's Customs Declaration for Travelers e-service; failure to declare can result in penalties.",
+    "summary": "Declare cash, bearer instruments, gold, gemstones or jewellery worth SAR 40,000 or more. There's no upper limit.",
     "legal_source": {
       "name": "ZATCA (Saudi Zakat, Tax and Customs Authority) – Customs Declaration for Travelers / disclosure threshold guidance",
       "url": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Pages/customs-individual/Travel-pages/disclosure-amounts.aspx"
@@ -7277,7 +7306,13 @@
   },
   {
     "slug": "drones-us",
-    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas"
+    ],
     "destination": "US",
     "category": "drones",
     "verdict": "depends",
@@ -7285,6 +7320,7 @@
       "description": "Any drone weighing 250g or more must be registered with the FAA (DroneZone) before flying; recreational flyers must also pass the free TRUST knowledge test. Most drones must broadcast Remote ID; foreign-registered drones with Remote ID capability need to file a Notice of Identification with the FAA before flying in US airspace."
     },
     "notes": "This is a flight-operation requirement, not a customs import restriction — bringing a drone into the US isn't itself limited, but legally flying it (even recreationally) requires FAA registration completed in advance; there is no same-day tourist workaround described.",
+    "summary": "Bringing one in isn't restricted, but drones of 250 g or more must be registered with the FAA to fly, and recreational flyers need the TRUST test.",
     "legal_source": {
       "name": "FAA — Information for International UAS Operators in the United States",
       "url": "https://www.faa.gov/uas/resources/foreign_operators"
@@ -7520,7 +7556,13 @@
   },
   {
     "slug": "drones-kr",
-    "names": ["drone", "uav", "quadcopter", "unmanned aircraft", "rpas"],
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft",
+      "rpas"
+    ],
     "destination": "KR",
     "category": "drones",
     "verdict": "depends",
@@ -7528,6 +7570,7 @@
       "description": "Drones under 250g are exempt from registration. Drones of 250g or heavier must be registered through the Drone One-Stop portal, a Ministry of Land, Infrastructure and Transport administrative system that lists a roughly 7-business-day processing time for aircraft registration."
     },
     "notes": "The Drone One-Stop portal itself was reachable and confirmed real in this pass (Korean government domains have historically been unreachable from this environment, so this is a genuine access breakthrough), but its registration process requires Korean-resident identity verification with no stated tourist exemption or workaround — in practice this blocks visitors from registering anything 250g or heavier. The specific 250g threshold comes from secondary sources, not the portal's own text.",
+    "summary": "Under 250 g: no registration. 250 g or more must be registered through the Drone One-Stop portal, which needs Korean identity verification.",
     "legal_source": {
       "name": "Drone One-Stop (드론원스톱 민원서비스) — Ministry of Land, Infrastructure and Transport drone administrative portal",
       "url": "https://drone.onestop.go.kr"
@@ -9119,6 +9162,7 @@
       "quantity": "€10,000"
     },
     "notes": "A Customs officer may search for, seize and retain cash of €1,000 or more if there are reasonable grounds to believe it is proceeds of crime or intended for criminal conduct. Incorrect or incomplete declarations carry penalties.",
+    "summary": "Declare cash of €10,000 or more when entering or leaving the EU through Ireland.",
     "legal_source": {
       "name": "Revenue (Ireland) — Travelling with, or sending, cash",
       "url": "https://www.revenue.ie/en/customs/individuals/travelling-with-sending-cash/index.aspx"
@@ -9477,6 +9521,7 @@
       "quantity": "USD 10,000"
     },
     "notes": "Legal basis: s.28B(1) Anti-Money Laundering, Anti-Terrorism Financing and Proceeds of Unlawful Activities Act 2001 and Regulation 55, Customs Regulations 2019. Failure to declare is an offence punishable by a fine of up to RM3 million or up to 5 years' imprisonment, or both.",
+    "summary": "Declare US$10,000 or more on Customs Form No. 7. Ringgit above set limits needs Bank Negara permission.",
     "legal_source": {
       "name": "Royal Malaysian Customs Department — Traveler's Guide",
       "url": "https://www.customs.gov.my/en/individu/pengembara/travelers-guide"
@@ -9733,6 +9778,7 @@
       "description": "Under regulation 140 of the Civil Aviation Regulations 2016, anyone intending to operate an Unmanned Aircraft System must obtain prior authorisation from CAAM. For low-risk operations (visual line of sight, under 400 ft above ground, no spraying) that authorisation is an Authorisation to Fly (ATF) permit, applied for by email to drone.atf@caam.gov.my at least 14 working days before the flight; flying without the required permit is a violation penalised under regulation 206(3)."
     },
     "notes": "This is a flight-operation requirement, not a customs import ban. CAAM's notice says nothing about a tourist or recreational exemption, so plan on an ATF permit for any flight. Fees, registration thresholds and fine amounts weren't confirmed on a CAAM page, and whether importing a consumer drone needs a separate approval (e.g. radio-equipment certification) was also not confirmed.",
+    "summary": "Flying any drone needs prior authorisation from CAAM (Malaysia's civil aviation authority).",
     "legal_source": {
       "name": "Civil Aviation Authority of Malaysia (CAAM) — Safety Information 01/2025: Authorisation to Fly (ATF) application for UAS operations",
       "url": "https://www.caam.gov.my/wp-content/uploads/2025/02/SI-01_2025-ATF-Application-for-UAS-Operations-Including-Operations-Related-to-Training.pdf"
@@ -9846,6 +9892,7 @@
       "quantity": "GEL 30,000 or equivalent"
     },
     "notes": "The threshold applies to both bringing money in and taking it out, and covers cheques and securities as well as banknotes. Quoted from the Revenue Service's brochure ('When is an individual obliged to declare goods?'). Penalties for failing to declare aren't stated in the brochure, so none are asserted here.",
+    "summary": "Declare cash, cheques or securities worth more than GEL 30,000 when entering or leaving Georgia.",
     "legal_source": {
       "name": "Revenue Service of Georgia — Exemption from import duties and the obligation of declaring goods carried by an individual (customs brochure)",
       "url": "https://www.rs.ge/Media/Default/Images/CustomsBrochures/Exemption%20of%20goods%20from%20duties%20and%20declaring.pdf"
@@ -11630,6 +11677,7 @@
       "quantity": "> US$15,000 in / > US$10,000 out"
     },
     "notes": "Sri Lanka Customs: 'Any passenger may bring in or take out any amount of money in the form of currency' provided it is legally acquired. Bringing in currency exceeding US$15,000 or equivalent 'Must be declared to Customs — a currency declaration receipt will be issued'. Taking out currency exceeding US$10,000 must be declared. If you want to take previously brought-in currency back out, declare it on arrival even if it is below US$15,000. The Customs passenger guide also lists foreign currencies, gold jewellery and gems among items to declare to the Customs Arrival officer. GOV.UK separately notes you cannot transfer money without an exchange control permit from the Central Bank of Sri Lanka.",
+    "summary": "Declare more than US$15,000 on arrival, and more than US$10,000 when leaving.",
     "legal_source": {
       "name": "Passenger Services Directorate — Sri Lanka Customs",
       "url": "https://www.customs.gov.lk/about-us/directorates-and-divisions/passenger-services-directorate/"
@@ -11793,6 +11841,7 @@
     "category": "drones",
     "verdict": "depends",
     "notes": "CAASL: the drone import procedure (MOD, CAASL, TRCSL and Import & Export Control Department no-objections) 'is exclusively relevant to drones imported into the country for permanent use. For drones brought in by visiting tourists for temporary use within the country, there is no need to adhere to the outlined process. Instead, for such visitors, please proceed to submit a request for flying approval through our online portal.' So you may bring a drone for temporary use, but you need CAASL flying approval before flying. CAASL lists minimum third-party liability cover by take-off weight (not required at 0.25 kg or below; LKR 100,000 above 0.25–0.9 kg; LKR 400,000 above 0.9–4 kg; higher above). Its model-aircraft procedure starts with a mandatory security clearance from the Ministry of Defence. CAASL publishes restricted and archaeological area maps. GOV.UK advises not to fly drones near military bases, government buildings or VIP vehicles.",
+    "summary": "The full import procedure is for drones brought in permanently; drones brought in temporarily follow a separate route.",
     "legal_source": {
       "name": "Drones — Civil Aviation Authority of Sri Lanka (CAASL)",
       "url": "https://caa.lk/en/drones"
@@ -12532,6 +12581,7 @@
       "quantity": "Over USD 10,000"
     },
     "notes": "DIAN: travellers must file the 'Declaración de Equipaje, de Dinero o Títulos representativos de Dinero – Viajeros' (Form 530) when the amount in foreign currency, Colombian cash or monetary instruments exceeds 'USD 10.000 ... o su equivalente en otras monedas'; amounts up to USD 10,000 need no declaration. DIAN's Form 530 page states the same threshold. Cross-checked: gov.uk ('You can bring up to 10,000 US dollars-worth of any currency ... declare anything above this amount with ... DIAN'). Undeclared excess may be retained by customs (per DIAN Form 530 page; exact sanction not re-read).",
+    "summary": "Declare more than US$10,000 in cash or monetary instruments on DIAN Form 530, entering or leaving.",
     "legal_source": {
       "name": "Trámites aduaneros – Viajeros – DIAN",
       "url": "https://www.dian.gov.co/tramitesservicios/tramites-y-servicios/Paginas/tramites-aduaneros.aspx"
@@ -12731,6 +12781,7 @@
       "description": "Drones may only be brought in through El Dorado International Airport (Bogotá), with a customs form on arrival stating the drone's use."
     },
     "notes": "Government of Canada travel advice for Colombia (updated 2026-10-06): 'You may only bring drones into Colombia through El Dorado International Airport in Bogotá' and you must complete a customs form on arrival confirming the drone's intended use. Flying rules (Aerocivil RAC 100 registration/operation requirements) were not verified in this pass.",
+    "summary": "Drones may only come in through El Dorado airport in Bogotá, with a customs form stating their use.",
     "legal_source": {
       "name": "Travel advice and advisories for Colombia (updated 2026-10-06) – Government of Canada",
       "url": "https://travel.gc.ca/destinations/colombia"
@@ -13087,6 +13138,7 @@
       "description": "Only with prior approval from Jordan's Civil Aviation Regulatory Commission; without a permit the drone is held/confiscated at the border."
     },
     "notes": "UK FCDO: 'You must apply for approval to take a drone into Jordan at least 10 working days before you travel. If you have not received a permit before you arrive, the authorities will hold your drone at the airport. You can collect it when you leave Jordan.' Canada: 'You must obtain authorization before importing or operating a drone'; violations can mean imprisonment, fines or confiscation. CONFLICT: France Diplomatie says drones 'sont interdits à l'arrivée en Jordanie et sont systématiquement confisqués', and Germany lists drones among prohibited imports. The CARC publishes a 'Drones Operations Approval Application Form' (https://carc.gov.jo/en/drones). Treat a drone as not importable unless you hold CARC approval before you travel.",
+    "summary": "Only with approval from Jordan's Civil Aviation Regulatory Commission, applied for 10 working days ahead; otherwise it's held at the airport.",
     "legal_source": {
       "name": "GOV.UK (FCDO) — Jordan travel advice: Entry requirements (Customs rules, Drones)",
       "url": "https://www.gov.uk/foreign-travel-advice/jordan/entry-requirements"
@@ -13302,6 +13354,7 @@
       "quantity": "≥ US$10,000"
     },
     "notes": "Art. 35 Ley 8204 as quoted in Decreto 44096: 'Al ingresar en el país o salir de él, toda persona, nacional o extranjera, estará obligada a declarar el dinero efectivo o los títulos valores que porte, si la cantidad es igual o superior a los diez mil dólares … (US$10.000,00) o su equivalente en otra moneda.' The 'Declaración de dinero en efectivo y/o títulos valores' form (issued by the Instituto Costarricense sobre Drogas) is available at the migration posts; it must be completed and signed before finishing immigration and handed to Customs (arts. 4, 8, 11, 17). Failing to declare, or declaring a different amount, means 'la pérdida inmediata del dinero en efectivo y/o títulos valores a favor del Instituto Costarricense sobre Drogas' (art. 5) — it does not stop you entering or leaving. The threshold is 'igual o superior' — exactly US$10,000 must be declared. Cross-check: GOV.UK also says declare cash/travellers cheques of US$10,000 or more.",
+    "summary": "Declare cash or securities of US$10,000 or more when entering or leaving Costa Rica.",
     "legal_source": {
       "name": "Decreto Ejecutivo N° 44096-MP-H-MAG-MOPT-MGP-MSP, Reglamento al artículo 35 de la Ley N° 8204 (cash and bearer-instrument declarations) — SCIJ/Sinalevi, Procuraduría General de la República",
       "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=99936&param2=136926&param3=1"
@@ -13808,6 +13861,7 @@
     "category": "drones",
     "verdict": "depends",
     "notes": "Government of Canada (14 Sep 2026): 'You must obtain authorization before importing or operating a drone.' GOV.UK: 'Drone use, including aerial photography and filming, is regulated in Qatar. You may need licences or permits before importing or operating a drone. Breaching drone regulations may result in fines, imprisonment and confiscation of equipment.' The Qatar Civil Aviation Authority's own drone rules (who issues the authorization, how to apply) were not read — get authorization before you fly with a drone.",
+    "summary": "You need authorisation before importing or flying a drone in Qatar.",
     "legal_source": {
       "name": "Government of Canada — Travel advice and advisories: Qatar (last updated 14 Sep 2026)",
       "url": "https://travel.gc.ca/destinations/qatar"
@@ -14210,6 +14264,7 @@
       "description": "No customs ban was found; flying is regulated by DGAC. Over populated areas DAN 151 requires DGAC registration, a remote-pilot credential and an operating authorisation; key limits: max 120 m (400 ft), visual line of sight, not within 2 km of a runway axis extension or 1 km parallel to a runway, never over military sites or prisons."
     },
     "notes": "DGAC DAN 151 Ed. 3 (May 2024) applies to anyone operating an RPA 'sobre áreas pobladas' for public-interest matters or aerial work, alongside DAN 91 'Reglas del Aire'. It requires: prior DGAC authorisation (151.101) with the RPA registration card, the remote-pilot credential, insurance, a KMZ of the site and the landowner's permission; registration in the DGAC RPA registry (151.201, the application form asks for a Chilean ID card/RUT); a credential requiring age 18+ and a written exam (151.303); max take-off weight 9 kg and an emergency parachute (151.005). Operating limits (151.103): VLOS only, max 500 m distance and 400 ft (120 m) height, not within 2 km of the runway extension or 1 km parallel to a runway, no prohibited/dangerous zones, no night flights without authorisation, one RPA at a time. 151.105: all flights over military installations, prisons and strategic installations are prohibited. Rules for purely recreational flying over unpopulated areas (DAN 91) and whether a tourist can register a drone were not confirmed — check with DGAC before flying. Aduana treats radio-transmitting equipment as needing SUBTEL authorisation in general imports; not confirmed for traveller drones.",
+    "summary": "No customs ban; DGAC regulates flying: max 120 m, visual line of sight, and away from runways. Over populated areas you need DGAC approval.",
     "legal_source": {
       "name": "Dirección General de Aeronáutica Civil (DGAC) — DAN 151 Operaciones de aeronaves pilotadas a distancia (RPAS) en asuntos de interés público o trabajos aéreos, Ed. 3, May 2024",
       "url": "https://www.dgac.gob.cl/wp-content/uploads/2024/05/DAN-151-ED3-27MAY2024.pdf"
@@ -14571,6 +14626,7 @@
       "quantity": "over US$10,000 equivalent"
     },
     "notes": "JCA press release (13 October 2025): 'while carrying cash across borders is not illegal, travellers must declare any amount over US$10,000 (or its equivalent) and must be able to verify its source and purpose.' The C5 card, question 14: 'I am carrying currency or monetary instruments over US$10,000 or equivalent'. The UK government's advice (https://www.gov.uk/foreign-travel-advice/jamaica/entry-requirements) phrases it as 'Declare cash or travellers cheques if the value is 10,000 US dollars or more', on the C5, and says you will also complete the Financial Investigation Division Cross Border Form provided by a customs officer — so declare at exactly US$10,000 too, to be safe. Separately, Section 101A of the Proceeds of Crime Act prohibits cash payments of J$1,000,000 or more in Jamaica (two travellers were fined J$200,000 each in 2025 under that section). The C5 states failure to make a full declaration is an offence that may result in fines, forfeiture and/or imprisonment. Spain's embassy also lists importing local currency (Jamaican dollars) among prohibited imports (exteriores.gob.es, June 2026) — not confirmed on a JCA page.",
+    "summary": "Declare more than US$10,000 on the C5 form and be ready to show the money's source and purpose.",
     "legal_source": {
       "name": "Joint enforcement at NMIA leads to POCA convictions; travellers fined after declaring large cash sums — Jamaica Customs Agency press release, 13 October 2025",
       "url": "https://jca.gov.jm/wp-content/uploads/2025/10/Adjusted-JCA-and-FID-collaborate-under-POCA5.x37584.pdf"
@@ -14858,6 +14914,7 @@
       "description": "Recreational drone flying needs no JCAA permit but strict rules apply (max 400 ft, within 500 m and line of sight, not within 5 km of aerodromes, no night/FPV flights). Any non-recreational use (e.g. paid photography) needs a JCAA Special Aerial Work Permit. Customs/radio-equipment rules for bringing a drone in were not confirmed."
     },
     "notes": "Jamaica Civil Aviation Authority, 'Unmanned Aircraft' (jcaa.gov.jm/unmanned-aircraft/): 'Professional operators, whether commercial or non-commercial, require a Special Aerial Work Permit from the JCAA … Recreational operators do not require a permit but must comply with the relevant operating guidelines.' Recreational guidelines (this page): not above 400 feet (122 m); not beyond 1,640 feet (500 m) or the operator's unaided visual range; no First-Person View; not over or within 500 ft (152 m) of an open-air assembly or 165 ft (50 m) of any person; not over private or public property without permission; not in restricted/prohibited airspace; not within 16,500 ft (5,000 m) of any aerodrome or helipad; must have fail-safe return/land; no autonomous flights, no night or low-visibility flights, no dropping items. Contact: Flight Safety Division, 876 960-3948, uavrequests@jcaa.gov.jm. NOT CONFIRMED: whether Jamaica Customs requires an import permit or Spectrum Management Authority type approval for a visitor's personal drone (radio equipment) — no official page addressing travellers was found, hence 'depends'. Check with JCA/SMA before travelling.",
+    "summary": "Recreational flying needs no permit but has strict limits (400 ft, line of sight, 5 km from aerodromes). Paid work needs a JCAA permit.",
     "legal_source": {
       "name": "Recreational UA Operators or Hobbyists — Jamaica Civil Aviation Authority",
       "url": "https://www.jcaa.gov.jm/recreational-ua-operators-or-hobbyists/"
@@ -14946,6 +15003,7 @@
       "quantity": "BSD 10,000 or more"
     },
     "notes": "Bahamas Customs General Traveler's Questions (2 Jan 2026), Q6 'Must I declare how much cash I am carrying?': 'Any person carrying cash and negotiable instruments of a value equivalent to $10,000.00 or more, loose or uncut precious stones or jewelery with intention to trade of a value equivalent to $10,000.00 or more; and precious metals in bullion'. 'Cash' includes coins and bank notes in any currency; 'Negotiable Instruments' includes cheques, travellers cheques, promissory notes, money orders and instruments in bearer form. On departure, the Customs 'Departing' page (Travellers Currency Declaration) says each person or responsible family member must declare cash, negotiable instruments, precious metals or stones 'of a value equivalent to BS $10,000.00'. 'Penalties for non-compliance can include forfeiture of the cash, plus up to a $2,000 fine.' Cross-check: Government of Canada travel advice says 'It's illegal to leave The Bahamas with more than 10,000 BSD.' The official tourism site says the Bahamian dollar 'is maintained at the same level as the U.S. dollar'.",
+    "summary": "Declare cash and negotiable instruments worth BSD 10,000 (US$10,000) or more, arriving or leaving.",
     "legal_source": {
       "name": "The Bahamas Customs Department — General Traveler's Questions (updated 2 Jan 2026)",
       "url": "https://www.bahamascustoms.gov.bs/accordions/general-travelers-questions/"
@@ -15084,6 +15142,7 @@
       "description": "Every drone must be registered with the Civil Aviation Authority Bahamas (CAA-B) before you fly. Recreational registration costs $30 (5 business days) or $50 expedited (2 business days). Drones over 249 g also need your home-country registration certificate."
     },
     "notes": "CAA-B Drone FAQs: 'The CAA-B requires that all drones be registered. Drones over 249 grams requires a UAS certificate or Certification from the country of origin.' Register through the online form (https://caabahamas.com/drone-registration/). You'll need: name, address, email, phone, drone make, model and weight, home-country registration for drones over 249 g, a colour scan of your passport photo page, intended purpose and island of operation. Allow at least five business days. The letter of authorization is valid from your arrival date to your departure date. Commercial use needs a separate application (dronesupport@caabahamas.com). Operating limits: no higher than 400 ft (122 m); no further than 1,640 ft (500 m); within unaided visual line of sight; not over or within 500 ft (152 m) of an organised open-air assembly; not within 165 ft (50 m) of any person (take-off and landing no closer than 100 ft / 30 m); not over private or public property without permission; not within 16,500 ft (5,000 m) of any aerodrome or helipad; not at night or in low visibility; not in restricted or prohibited airspace. CAA-B notes that Bahamas Customs 'is a separate government entity' and may have additional rules on arrival with a drone. Government of Canada travel advice confirms drones must be registered with the CAA-B. Source-quality note: the old domain bcaa.gov.bs now serves unrelated gambling spam — use caabahamas.com only.",
+    "summary": "Every drone must be registered with CAA Bahamas before flying ($30, 5 business days). Over 249 g also needs your home-country certificate.",
     "legal_source": {
       "name": "Civil Aviation Authority Bahamas (CAA-B) — Drone FAQs",
       "url": "https://caabahamas.com/drone-faqs/"
@@ -15304,6 +15363,7 @@
       "quantity": "1 drone ≤ USD 1,000"
     },
     "notes": "SENAE personal-effects list: 'se consideran como efectos personales hasta 1 unidad, nueva o usada de los siguientes artículos: ... Dron, cuyo valor no supere los USD 1.000,00. En caso de encontrarse dos o más unidades... se la considerará bienes tributables'. This row covers customs only. Rules for flying a drone in Ecuador (civil aviation authority DGAC, protected areas such as Galápagos) were not verified — check with DGAC before you fly. Anything above an allowance, or not on SENAE's personal-effects list, is a 'bien tributable': declare it on the online Formulario de Registro Aduanero (FRA) and pay duties; taxable goods up to USD 2,000 can be cleared in the arrivals hall, above that they must go through a formal import. Goods not otherwise listed that have no volume/quantity restriction still count as personal effects up to USD 500 in total.",
+    "summary": "One drone worth up to US$1,000 enters duty-free as a personal effect; a second, or a pricier one, is taxed.",
     "legal_source": {
       "name": "Listado de bienes que puede ingresar al Ecuador sin pago de impuesto (efectos personales del viajero) — SENAE, PDF uploaded May 2026",
       "url": "https://www.aduana.gob.ec/wp-content/uploads/2026/05/LISTADO-EFECTO-DE-VIAJEROS.pdf"
@@ -15444,6 +15504,7 @@
       "quantity": "USD 10,000"
     },
     "notes": "Canada's official travel advice (last updated 7 October 2026): \"You must declare any amount over 10,000 U.S. dollars on arrival and departure.\" TRA separately lists a \"Cross Border Declaration of Currency and Bearer Negotiable Instruments\" among customs documents (https://www.tra.go.tz/page/import-procedures), but no Tanzanian page stating the threshold could be read in this pass, so the figure rests on the Canadian government page.",
+    "summary": "Declare more than US$10,000 on arrival and on departure.",
     "legal_source": {
       "name": "Travel advice and advisories for Tanzania, Government of Canada (travel.gc.ca)",
       "url": "https://travel.gc.ca/destinations/tanzania"
@@ -15602,6 +15663,7 @@
       "quantity": "permit required"
     },
     "notes": "TCAA: \"Any person travelling to Tanzania with a drone\" must apply for a TCAA import permit (\"Without TCAA Import Permit, the drone will be confiscated at the entry point upon arrival\") and register the operator (drone pilot), at least THREE WEEKS before travel. To get access to the online system, email drones@tcaa.go.tz with your phone number, address, and the drone model and purpose. No refund if the applications are not completed in time. Non-resident fees (TCAA 'Drone charges' page, https://www.tcaa.go.tz/pages/drone-charges-in-tanzania), for drones under 5 kg: registration USD 100, operations permit USD 10 per day, import permit USD 50 per drone. Fees are higher for 5.1–25 kg and over 25 kg. Canada's travel advice also says a permit is needed to import a drone.",
+    "summary": "Get a TCAA import permit and operator registration at least 3 weeks before arrival, or the drone is confiscated.",
     "legal_source": {
       "name": "Drones — requirements for non-residents, Tanzania Civil Aviation Authority",
       "url": "https://www.tcaa.go.tz/pages/drones"
@@ -15651,6 +15713,7 @@
       "quantity": "USD 10,000 equivalent"
     },
     "notes": "Japan MOFA (updated 25 Mar 2025), 外貨申告: '1万米ドル相当額以上の現金の持ち込みは申告が必要です' (cash of USD 10,000 equivalent or more must be declared on entry) and '1万米ドル相当額以上の現金を国外に持ち出す場合には、中央銀行および関係機関から事前に持ち出し許可を得る必要があります' (to take USD 10,000 or more out, get prior export permission from the central bank and relevant agencies). Declarations are made in the customs section of the Cambodia e-Arrival. Possible conflict: the airport operator's pages (Cambodia Airports, not a government source, not cited) word the threshold as sums 'over US$10,000' and say an export permit from the National Bank of Cambodia is needed only if the cash was not declared on entry. We follow the stricter reading (declare at USD 10,000 or more). The Cambodian customs site (customs.gov.kh) was unreachable, so the national text could not be read directly.",
+    "summary": "Declare US$10,000 or more on arrival. Taking that much out needs prior central bank permission.",
     "legal_source": {
       "name": "安全対策基礎データ：カンボジア (Basic safety data: Cambodia) — 外務省 海外安全ホームページ, Ministry of Foreign Affairs of Japan (updated 25 Mar 2025)",
       "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_004.html"
@@ -15733,6 +15796,7 @@
       "description": "Flying drones is banned in Phnom Penh and within the Angkor Wat grounds in Siem Reap; get permission in advance for any drone filming."
     },
     "notes": "Japan MOFA (updated 25 Mar 2025), 写真撮影の制限: 'プノンペンおよびシェムリアップのアンコールワットの敷地内でのドローンの使用は禁止されています。ドローンによる撮影を行う場合には、事前に許可を取得してください。' (Drone use is prohibited in Phnom Penh and within the Angkor Wat grounds in Siem Reap; obtain permission before filming with a drone.) The source covers use, not import; it does not name the permitting authority. Photography near military/security sites and airports marked 'no photography' is also restricted. Note that 'radio equipment' (無線機) is on the same page's list of prohibited imports — whether that captures drone controllers is not stated.",
+    "summary": "Flying drones is banned in Phnom Penh and at Angkor Wat; get permission in advance for any drone filming.",
     "legal_source": {
       "name": "安全対策基礎データ：カンボジア (Basic safety data: Cambodia) — 外務省 海外安全ホームページ, Ministry of Foreign Affairs of Japan (updated 25 Mar 2025)",
       "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_004.html"
@@ -15845,6 +15909,7 @@
       "quantity": "50,000 NIS"
     },
     "notes": "Israel Tax Authority, 'Money laundering' (Required Reporting of Transfer of Money into and out of Israel; page updated 28.06.2021), under the Prohibition of Money Laundering Law, 2000 and its 2001 reporting regulations. 'Money' means cash, cashier's cheques, traveller's cheques, bearer securities, negotiable instruments and payment cards. You declare on Customs form 84a. Not declaring is an offence: up to 6 months in prison or a fine of up to ten times the undeclared amount, whichever is higher. Police and customs can seize the amount above the threshold. The 50,000 NIS general threshold dates from the 7 December 2017 amendment to section 4 of the law. Carrying money is allowed; only the declaration is required.",
+    "summary": "Declare 50,000 NIS or more entering or leaving Israel (12,000 NIS at some land crossings and for Gaza).",
     "legal_source": {
       "name": "Money laundering — Required Reporting of Transfer of Money into and out of Israel, Israel Tax Authority (gov.il)",
       "url": "https://www.gov.il/en/departments/general/money-laundering"
