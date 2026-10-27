@@ -2550,15 +2550,27 @@
     "destination": "RW",
     "category": "drones",
     "verdict": "depends",
-    "notes": "The Rwanda Civil Aviation Authority (RCAA) says to declare your drone to Rwanda National Police at any point of entry; failing to do so carries a penalty under the regulations. Drones must also be registered with RCAA, and operators need an RCAA UAS Activity Permit before flying (Rwanda Civil Aviation Regulations Part 27).",
+    "notes": "The Rwanda Civil Aviation Authority (RCAA) says to declare your drone to Rwanda National Police at any point of entry; failing to do so carries a penalty under the regulations. Drones must also be registered with RCAA, and operators need an RCAA UAS Activity Permit before flying (Rwanda Civil Aviation Regulations Part 27). Conflict recorded: Germany's travel advice says importing drones into Rwanda is not allowed ('Die Einfuhr von Drohnen … ist nicht erlaubt'); the civil aviation authority describes a declare-and-register route instead.",
     "summary": "Declare your drone to Rwanda National Police at the point of entry; drones must also be registered with the civil aviation authority.",
     "legal_source": {
       "name": "Rwanda Civil Aviation Authority — Unmanned Aircraft (Drones)",
       "url": "https://www.caa.gov.rw/unmanned-aircraft"
     },
-    "verified_at": "2026-10-19",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Existing rule",
+        "name": "Rwanda Civil Aviation Authority — Unmanned Aircraft (Drones)",
+        "url": "https://www.caa.gov.rw/unmanned-aircraft"
+      },
+      {
+        "claim": "Import of drones and e-cigarettes not allowed",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/ruandasicherheit-212026"
+      }
+    ]
   },
   {
     "slug": "plastic-bags-rw",
@@ -3004,15 +3016,27 @@
       "description": "Commercial paper, means of payment and financial instruments must be declared to Customs on entry when their value is 100,000 Moroccan dirhams or more; below that, declaring is optional. Whatever the amount, a declaration is required to show where foreign currency came from, for example to re-export it or to pay it into a foreign-currency or convertible-dirham account.",
       "quantity": "MAD 100,000 (foreign currency); MAD 2,000 (dirham banknotes)"
     },
-    "notes": "The declaration is valid for up to one month for residents and up to six months for non-residents. The Office des Changes page doesn't cover bringing Moroccan dirham banknotes in or out of the country.",
+    "notes": "The declaration is valid for up to one month for residents and up to six months for non-residents. The Office des Changes page doesn't cover bringing Moroccan dirham banknotes in or out of the country. Germany's travel advice adds that at most 2,000 dirhams in cash may be carried into or out of Morocco.",
     "summary": "Declare means of payment worth 100,000 dirhams or more on arrival; declaring is optional below that.",
     "legal_source": {
       "name": "Office des Changes (Kingdom of Morocco foreign-exchange authority) — FAQ: mandatory declaration of imported banknotes",
       "url": "https://www.oc.gov.ma/fr/faq/la-declaration-aux-services-douaniers-a-l-entree-des-billets-de-banque-importes-est-elle"
     },
-    "verified_at": "2026-10-18",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Existing rule",
+        "name": "Office des Changes (Kingdom of Morocco foreign-exchange authority) — FAQ: mandatory declaration of imported banknotes",
+        "url": "https://www.oc.gov.ma/fr/faq/la-declaration-aux-services-douaniers-a-l-entree-des-billets-de-banque-importes-est-elle"
+      },
+      {
+        "claim": "Declare foreign currency from 100,000 MAD; at most 2,000 MAD in cash in or out",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/marokkosicherheit-224080"
+      }
+    ]
   },
   {
     "slug": "medication-ma",
@@ -3162,13 +3186,13 @@
     "limits": {
       "description": "Motorised, remote-controlled unmanned flying craft such as drones need an import licence from the foreign trade department. They are excluded from the duty-free allowance for children's toys."
     },
-    "notes": "From Moroccan Customs' 2024 circular for the summer welcome operation; its general section (I.3) lists the goods that need an import licence and the prohibited goods. The licence list is in annex VII.01 of title VII of the RDII. To fly a drone in Morocco you also need permission from the Directorate General for Civil Aviation (UK government travel advice).",
+    "notes": "From Moroccan Customs' 2024 circular for the summer welcome operation; its general section (I.3) lists the goods that need an import licence and the prohibited goods. The licence list is in annex VII.01 of title VII of the RDII. To fly a drone in Morocco you also need permission from the Directorate General for Civil Aviation (UK government travel advice). Conflict recorded: Germany's travel advice says importing drones of any kind into Morocco is strictly prohibited ('Die Einfuhr von Flugdrohnen aller Art ist streng verboten'), which is stricter than the import-licence rule in the customs circular.",
     "summary": "Drones need an import licence from the foreign trade department, and permission from civil aviation to fly.",
     "legal_source": {
       "name": "Administration des Douanes et Impôts Indirects (Moroccan Customs) — Circulaire N° 6568/311 (30 May 2024), Annex: general rules on personal effects, prohibited/restricted imports and personal medication",
       "url": "https://www.douane.gov.ma/dms/loadDocument?documentId=94052"
     },
-    "verified_at": "2026-10-26",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -3181,6 +3205,11 @@
         "claim": "Permission from the Directorate General for Civil Aviation needed to fly a drone",
         "name": "GOV.UK (FCDO) — Morocco travel advice: Safety and security, 'Flying drones' (updated 19 August 2026)",
         "url": "https://www.gov.uk/foreign-travel-advice/morocco/safety-and-security"
+      },
+      {
+        "claim": "Import of drones of all kinds strictly prohibited",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/marokkosicherheit-224080"
       }
     ]
   },
@@ -18604,9 +18633,21 @@
       "name": "GOV.UK (FCDO) — Rwanda travel advice: Safety and security (updated 2026-09-04)",
       "url": "https://www.gov.uk/foreign-travel-advice/rwanda/safety-and-security"
     },
-    "verified_at": "2026-10-26",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Existing rule",
+        "name": "GOV.UK (FCDO) — Rwanda travel advice: Safety and security (updated 2026-09-04)",
+        "url": "https://www.gov.uk/foreign-travel-advice/rwanda/safety-and-security"
+      },
+      {
+        "claim": "Cross-check: import of drones and e-cigarettes not allowed",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/ruandasicherheit-212026"
+      }
+    ]
   },
   {
     "slug": "cannabis-am",
