@@ -1825,16 +1825,34 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid for at least 30 days after the date you leave South Africa, with at least 2 blank pages"
     ],
     "notes": "South Africa's Electronic Travel Authorisation (ETA) launched 12 Aug 2026 at OR Tambo International Airport (per DHA's own press release). Secondary reporting indicates it is initially optional for nationalities already on the visa-exemption list, expanding more broadly in September 2026 — DHA's own press release does not state eligibility or mandatory/optional status, so this could not be confirmed against a primary source in this pass. Re-verify before relying on this long-term (see data/UNVERIFIED/TODO.md).",
     "legal_source": {
       "name": "Department of Home Affairs — Visa Exemption List (Immigration Act 13 of 2002)",
       "url": "https://www.dha.gov.za/index.php/immigration-services/exempt-countries"
     },
-    "verified_at": "2026-10-19",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 30,
+      "unit": "days",
+      "from": "departure"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Department of Home Affairs — Visa Exemption List (Immigration Act 13 of 2002)",
+        "url": "https://www.dha.gov.za/index.php/immigration-services/exempt-countries"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements Your passport must have an ‘expiry date’ at least 30 days after the date you leave South Africa and have at least 2 blank pages.",
+        "name": "GOV.UK (FCDO) — South Africa travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-07-08)",
+        "url": "https://www.gov.uk/foreign-travel-advice/south-africa/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "CA",
@@ -2416,7 +2434,7 @@
       "maxDays": 30
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for at least 6 months after your arrival date, with at least 1 blank page",
       "Thailand Digital Arrival Card (TDAC) — submitted online at tdac.immigration.go.th within 72 hours before arrival"
     ],
     "notes": "Tourism visa exemption of 30 days under Thailand's revised scheme effective 15 September 2026, which replaced the former 60-day scheme.",
@@ -2424,9 +2442,27 @@
       "name": "Ministry of Foreign Affairs of Thailand — Summary: The revision of Thailand's visa exemption and VoA schemes, 2026 (ordinary passports; status as of 31 August 2026, effective 15 September 2026)",
       "url": "https://image.mfa.go.th/mfa/0/umufy3EgqL/Con0926/Visa_Exemption_(EN)_0.jpg"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Thailand — Summary: The revision of Thailand's visa exemption and VoA schemes, 2026 (ordinary passports; status as of 31 August 2026, effective 15 September 2026)",
+        "url": "https://image.mfa.go.th/mfa/0/umufy3EgqL/Con0926/Visa_Exemption_(EN)_0.jpg"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter Thailand, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and have at least 1 blank page.",
+        "name": "GOV.UK (FCDO) — Thailand travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-10-12)",
+        "url": "https://www.gov.uk/foreign-travel-advice/thailand/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "CA",
@@ -3827,16 +3863,34 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid for at least 3 months after your arrival date"
     ],
     "legal_source": {
       "name": "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates — List of countries whose citizens are exempted from entry visa into Morocco",
       "url": "https://www.consulat.ma/en/list-countries-whose-citizens-are-exempted-entry-visa-morocco"
     },
-    "verified_at": "2026-10-19",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
-    "notes": "Morocco grants visa-exempt nationals a tourist stay of up to 90 days per entry (Moroccan National Tourist Office / ONMT, visitmorocco.com: \"For all nationalities, the maximum duration of the tourist trip is 90 days\"); a one-time 90-day extension can be requested at the nearest police station before the initial period expires. No visa is required, but the traveler must still receive an entry stamp from a Direction Générale de la Sûreté Nationale (DGSN) border-police officer on arrival."
+    "notes": "Morocco grants visa-exempt nationals a tourist stay of up to 90 days per entry (Moroccan National Tourist Office / ONMT, visitmorocco.com: \"For all nationalities, the maximum duration of the tourist trip is 90 days\"); a one-time 90-day extension can be requested at the nearest police station before the initial period expires. No visa is required, but the traveler must still receive an entry stamp from a Direction Générale de la Sûreté Nationale (DGSN) border-police officer on arrival.",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates — List of countries whose citizens are exempted from entry visa into Morocco",
+        "url": "https://www.consulat.ma/en/list-countries-whose-citizens-are-exempted-entry-visa-morocco"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter Morocco, your passport must have an ‘expiry date’ at least 3 months after the date you arrive.",
+        "name": "GOV.UK (FCDO) — Morocco travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-19)",
+        "url": "https://www.gov.uk/foreign-travel-advice/morocco/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "CA",
@@ -4506,14 +4560,26 @@
       "unit": "days",
       "from": "departure"
     },
-    "notes": "Applies to ordinary British Citizen passport holders travelling for touristic purposes; UK diplomatic/official passport holders require a visa. British National (Overseas), British Subject, and British Protected Person passport holders are NOT covered by this exemption and must obtain a visa in advance from a Turkish mission.",
+    "notes": "Applies to ordinary British Citizen passport holders travelling for touristic purposes; UK diplomatic/official passport holders require a visa. British National (Overseas), British Subject, and British Protected Person passport holders are NOT covered by this exemption and must obtain a visa in advance from a Turkish mission. Conflict recorded (AGENTS.md §3.8): GOV.UK (19 October 2026) says the passport must have an expiry date at least 150 days after the date you arrive, with at least 1 blank page. Turkish law (Law 6458 Art. 7.1(b), 60 days beyond the stay) is the controlling text and is what this row checks; for stays shorter than 90 days the UK figure is stricter.",
     "legal_source": {
       "name": "Republic of Türkiye Ministry of Foreign Affairs — Visa Information for Foreigners",
       "url": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
     },
-    "verified_at": "2026-10-19",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Republic of Türkiye Ministry of Foreign Affairs — Visa Information for Foreigners",
+        "url": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
+      },
+      {
+        "claim": "Passport: expiry date at least 150 days after arrival, at least 1 blank page",
+        "name": "GOV.UK (FCDO) — Turkey travel advice: Entry requirements, passport validity (updated 19 October 2026)",
+        "url": "https://www.gov.uk/foreign-travel-advice/turkey/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "CA",
@@ -5187,7 +5253,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Passport valid for at least 6 months",
+      "Passport valid for at least 6 months after your arrival date",
       "Return or onward travel ticket",
       "Valid health insurance"
     ],
@@ -5196,9 +5262,27 @@
       "name": "UK Foreign, Commonwealth & Development Office — UAE travel advice: Entry requirements",
       "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
     },
-    "verified_at": "2026-10-05",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "UK Foreign, Commonwealth & Development Office — UAE travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter the UAE , your passport must have an ‘expiry date’ at least 6 months after the date you arrive.",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-07-24)",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "CA",
@@ -5524,14 +5608,26 @@
       "unit": "months",
       "from": "departure"
     },
-    "notes": "UK nationals are visa-free under Executive Order No. 408 for an initial stay of 30 days, extendable at a Bureau of Immigration office (first extension adds 29 days for a fee).",
+    "notes": "UK nationals are visa-free under Executive Order No. 408 for an initial stay of 30 days, extendable at a Bureau of Immigration office (first extension adds 29 days for a fee). Conflict recorded: GOV.UK (15 July 2026) says the passport must have an expiry date at least 6 months after the date you arrive; this row keeps the stricter rule from its source (6 months beyond the intended stay).",
     "legal_source": {
       "name": "eVisaPH (Bureau of Immigration) - Free to Enter the Philippines Without Visa",
       "url": "https://evisa.gov.ph/page/policy?l1=Non-Immigrant+Visas&l2=Free+to+enter+the+Philippines+without+Visa"
     },
-    "verified_at": "2026-10-19",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "eVisaPH (Bureau of Immigration) - Free to Enter the Philippines Without Visa",
+        "url": "https://evisa.gov.ph/page/policy?l1=Non-Immigrant+Visas&l2=Free+to+enter+the+Philippines+without+Visa"
+      },
+      {
+        "claim": "Passport: expiry date at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — Philippines travel advice: Entry requirements, passport validity (updated 15 July 2026)",
+        "url": "https://www.gov.uk/foreign-travel-advice/philippines/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "CA",
@@ -6751,7 +6847,7 @@
       "maxDays": 30
     },
     "documentsNeeded": [
-      "Valid ordinary (British citizen) passport",
+      "Passport valid for at least 6 months after your arrival date, with 2 blank pages for visas and stamps",
       "Proof of onward/return travel (may be requested by airline or border control)",
       "Proof of accommodation or travel itinerary (may be requested by border control)"
     ],
@@ -6760,9 +6856,27 @@
       "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
       "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
     },
-    "verified_at": "2026-10-05",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "CA",
@@ -8480,7 +8594,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for your whole stay: its expiry date must be after the date you leave South Korea (tourist visits up to 90 days)",
       "e-Arrival Card (submit online up to 72 hours before arrival, or on arrival)",
       "Proof of onward/return ticket",
       "K-ETA approval if traveling after the temporary exemption ends"
@@ -8492,7 +8606,22 @@
     },
     "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "whole_stay"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "K-ETA Official Portal - Eligible Countries / Allowed Period of Stay",
+        "url": "https://www.k-eta.go.kr/portal/guide/viewetaalification.do"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter South Korea as a tourist for up to 90 days, your passport must have an ‘expiry date’ after the date you are leaving South Korea.",
+        "name": "GOV.UK (FCDO) — South Korea travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-05-14)",
+        "url": "https://www.gov.uk/foreign-travel-advice/south-korea/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "CA",
@@ -10006,7 +10135,7 @@
       "maxDays": 180
     },
     "documentsNeeded": [
-      "Valid passport or travel document",
+      "Passport valid for at least 1 month after the date you plan to leave Hong Kong",
       "Onward or return ticket (unless in transit to Chinese Mainland or Macao)",
       "Adequate funds to cover the stay without working"
     ],
@@ -10015,9 +10144,27 @@
       "name": "Immigration Department (HKSAR) — Visit Visa / Entry Permit Requirements (visa-free periods table)",
       "url": "https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html"
     },
-    "verified_at": "2026-09-21",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-27",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 1,
+      "unit": "months",
+      "from": "departure"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Immigration Department (HKSAR) — Visit Visa / Entry Permit Requirements (visa-free periods table)",
+        "url": "https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements Your passport must be valid for at least one month after the date you plan to leave Hong Kong.",
+        "name": "GOV.UK (FCDO) — Hong Kong travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-04-01)",
+        "url": "https://www.gov.uk/foreign-travel-advice/hong-kong/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "UA",
@@ -11499,7 +11646,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport (or valid ID card if a bilateral agreement/government decision allows it)",
+      "Passport valid for at least 90 days after the date you plan to leave Serbia",
       "Proof of sufficient funds — 50 EUR per day of stay (cash, bank statement, or equivalent)",
       "Recommended: travel/health insurance covering at least 20,000 EUR of medical costs for the stay",
       "May be requested at the border: return/onward ticket, hotel booking or accommodation proof, invitation letter, or other proof of the purpose of the visit"
@@ -11509,9 +11656,27 @@
       "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
       "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/ujedinjeno-kraljevstvo"
     },
-    "verified_at": "2026-09-22",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-27",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 90,
+      "unit": "days",
+      "from": "departure"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/ujedinjeno-kraljevstvo"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements Your passport must have an ‘expiry date’ at least 90 days after the date you plan to leave Serbia.",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "CA",
@@ -16926,16 +17091,34 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid for at least 6 months after your arrival date"
     ],
     "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
     "legal_source": {
       "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
       "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
     },
-    "verified_at": "2026-10-05",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter Brazil, your passport must have an ‘expiry date’ at least 6 months after the date you arrive.",
+        "name": "GOV.UK (FCDO) — Brazil travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-09-29)",
+        "url": "https://www.gov.uk/foreign-travel-advice/brazil/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "CN",
@@ -17645,14 +17828,26 @@
       "unit": "months",
       "from": "arrival"
     },
-    "notes": "United Kingdom ordinary passport holders are visa-exempt for tourism in Peru (Peru's Foreign Ministry table, PDF dated 16 Jul 2026, legal basis D.S. N° 23-95-RE). The table marks the tourist term as '90*', defined as '90 days, extendable once for an equal period, within a period of 365 days counted from the first entry into national territory'. So the automatic allowance is 90 days, and one extension of up to 90 more days (180 total) within the 365 days that start on your first entry is possible; we model the stricter 90 days per 365-day window. The extension is applied for with Migraciones while your stay is still valid; we did not find a current Migraciones page giving the fee and procedure for non-Andean tourists, so check with Migraciones. Business visits that are not visa-exempt in the table need a business visa. Conflict: the UK FCDO page (updated 2 Oct 2026) says British visitors 'will normally get permission to stay for up to 90 days in a 180 day period... calculated from the date of your first entry', with up to 183 days in 365 as a visitor. The Peruvian Foreign Ministry table (the controlling source) lists the UK under the '90*' rule (90 days extendable once within 365 days). The 90-day initial grant is the same either way. Passport validity: the Embassy of Peru in Singapore's visa FAQ (gob.pe, 22 Mar 2026) says the passport 'must have a minimum of 6 months validity from the date of entry to Peru'; the UK FCDO and Global Affairs Canada travel advice say the same. Air arrivals are not stamped; Migraciones records entry digitally (virtual TAM) and you can check your authorised stay online at Migraciones; land arrivals must get an entry stamp (FCDO, Global Affairs Canada). Global Affairs Canada says officials may ask for a return/onward ticket, proof of accommodation and proof of funds, and that overstaying incurs a fine for each day, payable on exit. Law: Decreto Legislativo 1350 (Migraciones) as amended by D.Leg. 1582 (El Peruano) sets the tourist stay at 'up to 183 calendar days, cumulative over a 365-day period counted from the first regular entry', or the shorter term fixed in a visa-waiver agreement; where less than 183 days is granted an extension can be granted up to that limit unless the agreement sets a lower term or forbids extension. Tourist status does not allow paid work.",
+    "notes": "United Kingdom ordinary passport holders are visa-exempt for tourism in Peru (Peru's Foreign Ministry table, PDF dated 16 Jul 2026, legal basis D.S. N° 23-95-RE). The table marks the tourist term as '90*', defined as '90 days, extendable once for an equal period, within a period of 365 days counted from the first entry into national territory'. So the automatic allowance is 90 days, and one extension of up to 90 more days (180 total) within the 365 days that start on your first entry is possible; we model the stricter 90 days per 365-day window. The extension is applied for with Migraciones while your stay is still valid; we did not find a current Migraciones page giving the fee and procedure for non-Andean tourists, so check with Migraciones. Business visits that are not visa-exempt in the table need a business visa. Conflict: the UK FCDO page (updated 2 Oct 2026) says British visitors 'will normally get permission to stay for up to 90 days in a 180 day period... calculated from the date of your first entry', with up to 183 days in 365 as a visitor. The Peruvian Foreign Ministry table (the controlling source) lists the UK under the '90*' rule (90 days extendable once within 365 days). The 90-day initial grant is the same either way. Passport validity: the Embassy of Peru in Singapore's visa FAQ (gob.pe, 22 Mar 2026) says the passport 'must have a minimum of 6 months validity from the date of entry to Peru'; the UK FCDO and Global Affairs Canada travel advice say the same. Air arrivals are not stamped; Migraciones records entry digitally (virtual TAM) and you can check your authorised stay online at Migraciones; land arrivals must get an entry stamp (FCDO, Global Affairs Canada). Global Affairs Canada says officials may ask for a return/onward ticket, proof of accommodation and proof of funds, and that overstaying incurs a fine for each day, payable on exit. Law: Decreto Legislativo 1350 (Migraciones) as amended by D.Leg. 1582 (El Peruano) sets the tourist stay at 'up to 183 calendar days, cumulative over a 365-day period counted from the first regular entry', or the shorter term fixed in a visa-waiver agreement; where less than 183 days is granted an extension can be granted up to that limit unless the agreement sets a lower term or forbids extension. Tourist status does not allow paid work. Conflict recorded: GOV.UK (9 October 2026) says British visitors can stay 'up to 90 days in a 180 day period', counted from the first entry; Peru's Foreign Ministry table, which this row follows, gives 90 days over 365 days.",
     "legal_source": {
       "name": "Requerimientos y exoneración de visas para ciudadanos extranjeros que cuenten con pasaportes ordinarios (PDF version 16-07-2026 v2) — Ministerio de Relaciones Exteriores del Perú",
       "url": "https://www.gob.pe/institucion/rree/informes-publicaciones/2315744-requerimientos-y-exoneracion-de-visas-para-ciudadanos-extranjeros-que-cuenten-con-pasaportes-ordinarios"
     },
-    "verified_at": "2026-10-09",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Requerimientos y exoneración de visas para ciudadanos extranjeros que cuenten con pasaportes ordinarios (PDF version 16-07-2026 v2) — Ministerio de Relaciones Exteriores del Perú",
+        "url": "https://www.gob.pe/institucion/rree/informes-publicaciones/2315744-requerimientos-y-exoneracion-de-visas-para-ciudadanos-extranjeros-que-cuenten-con-pasaportes-ordinarios"
+      },
+      {
+        "claim": "Stay: up to 90 days in a 180-day period from first entry",
+        "name": "GOV.UK (FCDO) — Peru travel advice: Entry requirements (updated 9 October 2026)",
+        "url": "https://www.gov.uk/foreign-travel-advice/peru/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "CA",
@@ -22995,7 +23190,7 @@
       "maxDays": 30
     },
     "documentsNeeded": [
-      "Passport valid for at least 6 months (Bahamas Immigration: 'present a passport that is valid for at least six months'; passport cards are not accepted)",
+      "Passport valid for at least 6 months after the date you plan to leave",
       "Return ticket or other means of departing The Bahamas",
       "Proof of sufficient funds for the stay (or a local sponsor who will receive you)",
       "Completed Bahamas Immigration Disembarkation/Embarkation Card",
@@ -23006,9 +23201,27 @@
       "name": "GOV.UK (FCDO) — Bahamas travel advice: Entry requirements (updated 28 May 2026)",
       "url": "https://www.gov.uk/foreign-travel-advice/bahamas/entry-requirements"
     },
-    "verified_at": "2026-10-10",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "departure"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "GOV.UK (FCDO) — Bahamas travel advice: Entry requirements (updated 28 May 2026)",
+        "url": "https://www.gov.uk/foreign-travel-advice/bahamas/entry-requirements"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter The Bahamas, your passport must have an ‘expiry date’ at least 6 months after the date you plan to leave.",
+        "name": "GOV.UK (FCDO) — Bahamas travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-05-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/bahamas/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "CA",
@@ -26245,16 +26458,34 @@
       "maxDays": 30
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid for at least 6 months after your arrival date"
     ],
     "notes": "The Government of Mongolia exempts nationals of 34 countries from visas for tourism of up to 30 days in 2026; the Foreign Ministry's consular list says this temporary exemption runs until the end of 2026. Travel for other purposes needs a visa.",
     "legal_source": {
       "name": "Immigration Agency of Mongolia — countries exempted from tourist visa requirements to visit Mongolia up to 30 days in 2026",
       "url": "https://immigration.gov.mn/en/articles/537/"
     },
-    "verified_at": "2026-10-21",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Immigration Agency of Mongolia — countries exempted from tourist visa requirements to visit Mongolia up to 30 days in 2026",
+        "url": "https://immigration.gov.mn/en/articles/537/"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter Mongolia, your passport must have an ‘expiry date’ at least 6 months after the date you arrive.",
+        "name": "GOV.UK (FCDO) — Mongolia travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/mongolia/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "AU",
@@ -26825,16 +27056,34 @@
       "maxDays": 30
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid for at least 3 months after your arrival date"
     ],
     "notes": "Uzbekistan lists your country among those whose citizens can stay up to 30 days without a visa. The 30 days run from the moment you cross the border, and you must leave when they end; for a longer stay you need a visa. The rule covers all passport types and any purpose of travel. The Foreign Ministry's own list gives the same 30 days.",
     "legal_source": {
       "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 408 of 21 November 1996, Annex 5 — countries whose citizens have a visa-free regime (as amended by Resolution No. 662 of 21 October 2025; LexUz Russian translation of the Uzbek original)",
       "url": "https://lex.uz/ru/docs/513096"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 408 of 21 November 1996, Annex 5 — countries whose citizens have a visa-free regime (as amended by Resolution No. 662 of 21 October 2025; LexUz Russian translation of the Uzbek original)",
+        "url": "https://lex.uz/ru/docs/513096"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter Uzbekistan, your passport must have an ‘expiry date’ at least 3 months after the date you arrive.",
+        "name": "GOV.UK (FCDO) — Uzbekistan travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-03-19)",
+        "url": "https://www.gov.uk/foreign-travel-advice/uzbekistan/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "BR",
@@ -27007,16 +27256,34 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport issued less than 10 years before you arrive and valid for at least 90 days after the date you plan to leave"
     ],
     "notes": "The Ministry of Foreign Affairs of Bosnia and Herzegovina says citizens of the United Kingdom are exempt from visas for up to 90 days in a period of six months, counted from the day of first entry. For a longer stay, or to work, you need a visa or permit.",
     "legal_source": {
       "name": "Ministry of Foreign Affairs of Bosnia and Herzegovina — consular information: United Kingdom",
       "url": "https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638887699851222851"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 90,
+      "unit": "days",
+      "from": "departure"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Bosnia and Herzegovina — consular information: United Kingdom",
+        "url": "https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638887699851222851"
+      },
+      {
+        "claim": "Passport validity for British passport holders: have a ‘date of issue’ less than 10 years before the date you arrive – if you renewed your passport before 1 October 2018, it may have a date of issue that is more than 10 years ago have an ‘expiry date’ at least 90 days after the date you plan to leave Check with your travel provider that your pass",
+        "name": "GOV.UK (FCDO) — Bosnia And Herzegovina travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/bosnia-and-herzegovina/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "CA",
@@ -28583,16 +28850,34 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Valid passport"
+      "Passport valid for at least 6 months after your arrival date"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
       "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
       "url": "https://gis.gov.gh/visas/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
+        "url": "https://gis.gov.gh/visas/"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter Ghana, your passport must have an expiry date at least 6 months after the date you arrive.",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "CA",
@@ -29026,7 +29311,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for at least 6 months after your arrival date, with at least 2 blank pages",
       "A valid return air ticket if you arrive by air; if you arrive by land or water, enough money for your stay and departure"
     ],
     "notes": "Your country is on Zambia's list of nationals who don't need a visa. All ordinary visitors, business visitors and tourists get 90 free days in any 12 months, counted from the day of first entry. The days may not all be given at once; you can have them extended free of charge at the nearest Immigration Office.",
@@ -29034,9 +29319,27 @@
       "name": "Zambia Department of Immigration — Nationals Who Do Not Require Visa (with For Visitors)",
       "url": "https://www.zambiaimmigration.gov.zm/nationals-who-dont-require-visa/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Zambia Department of Immigration — Nationals Who Do Not Require Visa (with For Visitors)",
+        "url": "https://www.zambiaimmigration.gov.zm/nationals-who-dont-require-visa/"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter Zambia, your passport must have an ‘expiry date’ at least 6 months after the date you arrive.",
+        "name": "GOV.UK (FCDO) — Zambia travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-06-01)",
+        "url": "https://www.gov.uk/foreign-travel-advice/zambia/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "CA",
@@ -29506,16 +29809,34 @@
       "maxDays": 120
     },
     "documentsNeeded": [
-      "A current, valid passport"
+      "Passport valid for at least 6 months after your arrival date in Fiji"
     ],
     "notes": "Your country is on Fiji's list of visa-exempt nationalities. Visitors are given a visitor permit at immigration clearance for up to 4 months (we count that as 120 days); it can be extended by 2 months if you apply and pay the fee. Visitors coming for medical treatment must apply for their permit before arriving.",
     "legal_source": {
       "name": "Fiji Ministry of Immigration — Visa exempted countries (with Visit Fiji)",
       "url": "https://www.immigration.gov.fj/visa-exempted-countries"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Fiji Ministry of Immigration — Visa exempted countries (with Visit Fiji)",
+        "url": "https://www.immigration.gov.fj/visa-exempted-countries"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements Your passport must have an ‘expiry date’ at least 6 months after the date you arrive in Fiji.",
+        "name": "GOV.UK (FCDO) — Fiji travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-10)",
+        "url": "https://www.gov.uk/foreign-travel-advice/fiji/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "CA",
@@ -29946,14 +30267,26 @@
     "documentsNeeded": [
       "Valid passport"
     ],
-    "notes": "Mauritius's country list marks your country \"No visa required\". No fixed stay is stated for visa-free visitors: the Immigration Officer at the port of entry decides how long you can stay on each visit. (For tourist visas, the office says a maximum of six months may be granted in a calendar year, case by case.) Staying beyond the period granted is an offence liable to prosecution.",
+    "notes": "Mauritius's country list marks your country \"No visa required\". No fixed stay is stated for visa-free visitors: the Immigration Officer at the port of entry decides how long you can stay on each visit. (For tourist visas, the office says a maximum of six months may be granted in a calendar year, case by case.) Staying beyond the period granted is an offence liable to prosecution. The UK government's travel advice (19 October 2026) says British visitors can visit without a visa for up to 60 days; Mauritius's own office leaves the length to the Immigration Officer, so no day count is shown.",
     "legal_source": {
       "name": "Passport and Immigration Office, Mauritius — Visa Requirements, with the Visa Requirement Country-wise list (2025)",
       "url": "https://passport.govmu.org/passport/?page_id=605"
     },
-    "verified_at": "2026-10-25",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Passport and Immigration Office, Mauritius — Visa Requirements, with the Visa Requirement Country-wise list (2025)",
+        "url": "https://passport.govmu.org/passport/?page_id=605"
+      },
+      {
+        "claim": "British visitors can visit without a visa for up to 60 days",
+        "name": "GOV.UK (FCDO) — Mauritius travel advice: Entry requirements (updated 19 October 2026)",
+        "url": "https://www.gov.uk/foreign-travel-advice/mauritius/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "CA",
@@ -30402,16 +30735,39 @@
     },
     "documentsNeeded": [
       "A Zimbabwe visa: on arrival at the port of entry after paying the visa fee, or online in advance at evisa.gov.zw (the Department encourages applying online first)",
-      "Valid passport"
+      "Passport valid for at least 6 months after your arrival date; GOV.UK suggests 3 blank pages in case you exit through a neighbouring country"
     ],
-    "notes": "Your country is in Zimbabwe's Category B: you need a visa, which you can get at the port of entry after paying the fee or apply for online before you travel. The Department encourages completing the Zimbabwe Entry Declaration Form before travelling. The official pages don't state the visa fee or how long the stay lasts; check them on the eVisa portal.",
+    "notes": "Your country is in Zimbabwe's Category B: you need a visa, which you can get at the port of entry after paying the fee or apply for online before you travel. The Department encourages completing the Zimbabwe Entry Declaration Form before travelling. The official pages don't state the visa fee or how long the stay lasts; check them on the eVisa portal. The UK government's travel advice (15 July 2026) says the visa on arrival 'is usually granted for 30 days'.",
     "legal_source": {
       "name": "Department of Immigration Zimbabwe — Category B countries (visa on arrival or eVisa)",
       "url": "https://www.zimimmigration.gov.zw/?p=7186"
     },
-    "verified_at": "2026-10-25",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Department of Immigration Zimbabwe — Category B countries (visa on arrival or eVisa)",
+        "url": "https://www.zimimmigration.gov.zw/?p=7186"
+      },
+      {
+        "claim": "Passport validity for British passport holders: an ‘expiry date’ at least 6 months after the date you arrive 3 blank pages, in case you need to enter Zimbabwe and exit through one of the neighbouring countries or if you need to leave at short notice Check with your travel provider that your passport and other travel documents meet their requireme",
+        "name": "GOV.UK (FCDO) — Zimbabwe travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-07-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/zimbabwe/entry-requirements"
+      },
+      {
+        "claim": "Visa on arrival usually granted for 30 days; visa costs 50 US dollars",
+        "name": "GOV.UK (FCDO) — Zimbabwe travel advice: Entry requirements (updated 15 July 2026)",
+        "url": "https://www.gov.uk/foreign-travel-advice/zimbabwe/entry-requirements"
+      }
+    ]
   },
   {
     "nationality": "CA",
