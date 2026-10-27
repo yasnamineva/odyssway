@@ -17399,16 +17399,31 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid for your whole stay"
     ],
     "notes": "\"Italy\" appears on the Moroccan Ministry of Foreign Affairs' list of countries whose citizens are exempted from an entry visa (consulat.ma, checked 2026-10-02), with no stay-limit annotation. The Moroccan National Tourist Office (visitmorocco.com, Formalities) states: \"For all nationalities, the maximum duration of the tourist trip is 90 days. A request for an extension can be made at the nearest police station to stay an additional 90 days.\"",
     "legal_source": {
       "name": "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates — List of countries whose citizens are exempted from entry visa into Morocco",
       "url": "https://www.consulat.ma/en/list-countries-whose-citizens-are-exempted-entry-visa-morocco"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "whole_stay"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates — List of countries whose citizens are exempted from entry visa into Morocco",
+        "url": "https://www.consulat.ma/en/list-countries-whose-citizens-are-exempted-entry-visa-morocco"
+      },
+      {
+        "claim": "Passport validity for Italian passport holders: Passport valid for your whole stay",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/MAR"
+      }
+    ]
   },
   {
     "nationality": "IT",
@@ -17430,7 +17445,7 @@
       "unit": "months",
       "from": "arrival"
     },
-    "notes": "Italy is not on either of Kenya's eTA-exemption lists (the 90-day and 60-day national lists under the Kenya Citizenship and Immigration (Amendment) Rules, 2025, as reproduced on etakenya.go.ke's How to Apply page, checked 2026-10-02), so Italian nationals need an approved eTA before travel. The eTA is valid for travel within 90 days of issuance; \"once you arrive, the duration of your stay is determined at the point of entry\" — no fixed number of days is guaranteed, so none is shown. The Standard (single-entry) eTA is listed at USD 30 on the official eligibility page; a One Year Multi-Entry eTA is listed at USD 300.",
+    "notes": "Italy is not on either of Kenya's eTA-exemption lists (the 90-day and 60-day national lists under the Kenya Citizenship and Immigration (Amendment) Rules, 2025, as reproduced on etakenya.go.ke's How to Apply page, checked 2026-10-02), so Italian nationals need an approved eTA before travel. The eTA is valid for travel within 90 days of issuance; \"once you arrive, the duration of your stay is determined at the point of entry\" — no fixed number of days is guaranteed, so none is shown. The Standard (single-entry) eTA is listed at USD 30 on the official eligibility page; a One Year Multi-Entry eTA is listed at USD 300. Italy's travel advice says the Kenyan insurance costs US$44 plus taxes (cover of at least US$50,000, valid 3 months from entry) and that a return ticket is required.",
     "legal_source": {
       "name": "Directorate of Immigration Services — Kenya eTA: How to Apply / Eligibility",
       "url": "https://www.etakenya.go.ke/form/apply/how-to-apply"
@@ -17453,6 +17468,11 @@
         "claim": "Cross-check: 'As of October 5, 2026, the eTA application includes a mandatory travel health insurance provided by a national insurer for stays of less than 12 months'",
         "name": "Government of Canada — Travel advice: Kenya, Entry and exit requirements (updated 15 October 2026)",
         "url": "https://travel.gc.ca/destinations/kenya"
+      },
+      {
+        "claim": "Italy's travel advice says the Kenyan insurance costs US$44 plus taxes (cover of at least US$50,000, valid 3 months from entry) and that a return ticket is required.",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/KEN"
       }
     ]
   },
@@ -18250,7 +18270,7 @@
     },
     "documentsNeeded": [
       "ESTA travel authorization approved before departure",
-      "E-passport with a digital chip (machine-readable, biometric)"
+      "Passport valid for your whole stay (expiry after your planned return)"
     ],
     "notes": "Italy is a designated Visa Waiver Program country (DHS program-country list, checked 2026-10-02). VWP permits business or tourism stays of up to 90 days without a visa; all VWP travelers must have an e-passport. Ebola: the US has temporary entry restrictions for travellers recently in the Democratic Republic of the Congo, Uganda or South Sudan; Germany's advice says that since 18 May 2026 anyone who was in those countries in the 21 days before travel is refused entry.",
     "legal_source": {
@@ -18275,8 +18295,16 @@
         "claim": "Temporary entry restrictions for travellers recently in the DRC, Uganda or South Sudan (Ebola)",
         "name": "Auswärtiges Amt — USA: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/usavereinigtestaatensicherheit-201382"
+      },
+      {
+        "claim": "Passport validity for Italian passport holders: Passport valid for your whole stay (expiry after your planned return)",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/USA"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "whole_stay"
+    }
   },
   {
     "nationality": "IT",
@@ -18288,16 +18316,31 @@
     },
     "documentsNeeded": [
       "Canadian Electronic Travel Authorization (eTA) approved before travel (CAD $7)",
-      "Valid passport"
+      "Passport valid for your whole stay"
     ],
     "notes": "Italy is listed among eTA-required countries for travelers arriving by air (IRCC, checked 2026-10-02). IRCC: most visitors can stay up to 6 months; the border services officer may allow a shorter or longer stay and will then mark the leave-by date in the passport (IRCC Help Centre, qnum=1198).",
     "legal_source": {
       "name": "IRCC — Find out if you need a visa or eTA to visit Canada (eTA-required countries or territories)",
       "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/check-visa-eta.html"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "whole_stay"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "IRCC — Find out if you need a visa or eTA to visit Canada (eTA-required countries or territories)",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/check-visa-eta.html"
+      },
+      {
+        "claim": "Passport validity for Italian passport holders: Passport valid for your whole stay",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/CAN"
+      }
+    ]
   },
   {
     "nationality": "IT",
@@ -18308,7 +18351,7 @@
       "maxDays": 180
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for at least 6 months on your arrival date in Mexico",
       "FMM (Forma Migratoria Múltiple) tourist permit — generated electronically/on arrival for air travelers, or completed at land border crossings"
     ],
     "notes": "Italy is on INM's list of countries whose nationals don't need a visa to visit Mexico as a visitor without permission for paid activities (tourism). At an international airport the FMM is generated on entry; by land you fill it in. INM's FMM page says the form is valid for up to 180 calendar days from the entry stamp and covers one entry. Officers may ask for a hotel booking, return or onward tickets, and means of support. Visiting Quintana Roo (Cancún, Tulum, Playa del Carmen): the state charges foreign tourists an entry tax, payable online before or during the stay; France says proof is checked on leaving.",
@@ -18334,8 +18377,19 @@
         "claim": "Entry tax for visitors to the state of Quintana Roo (Cancún, Tulum), payable online",
         "name": "France Diplomatie — Conseils aux voyageurs: mexique, Entrée / séjour",
         "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/mexique/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport validity for Italian passport holders: Passport valid for at least 6 months on your arrival date in Mexico",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/MEX"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    }
   },
   {
     "nationality": "IT",
@@ -18347,16 +18401,34 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid for at least 6 months from your arrival date, plus a return ticket"
     ],
     "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
     "legal_source": {
       "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
       "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
     },
-    "verified_at": "2026-10-05",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      },
+      {
+        "claim": "Passport validity for Italian passport holders: Passport valid for at least 6 months from your arrival date, plus a return ticket",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/BRA"
+      }
+    ]
   },
   {
     "nationality": "NL",
@@ -19406,14 +19478,26 @@
       "Passport valid for the whole of your stay — a national ID card is only accepted if you have EU Settlement Scheme status, an EUSS family permit, a frontier worker permit, S2 Healthcare Visitor status, or a pending EUSS application",
       "Proof you can support yourself and pay for your return or onward journey"
     ],
-    "notes": "Italy is on the UK's ETA National List for travel on or after 2 April 2025. GOV.UK: citizens of the EU (except Irish citizens) need an ETA to visit without a visa; visitors can usually stay up to 6 months but may not live in the UK through frequent or successive visits.",
+    "notes": "Italy is on the UK's ETA National List for travel on or after 2 April 2025. GOV.UK: citizens of the EU (except Irish citizens) need an ETA to visit without a visa; visitors can usually stay up to 6 months but may not live in the UK through frequent or successive visits. Italy's travel advice for Italian passports: valid for your whole stay.",
     "legal_source": {
       "name": "GOV.UK — Visiting the UK as an EU, EEA or Swiss citizen; Immigration Rules Appendix ETA National List",
       "url": "https://www.gov.uk/guidance/visiting-the-uk-as-an-eu-eea-or-swiss-citizen"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "GOV.UK — Visiting the UK as an EU, EEA or Swiss citizen; Immigration Rules Appendix ETA National List",
+        "url": "https://www.gov.uk/guidance/visiting-the-uk-as-an-eu-eea-or-swiss-citizen"
+      },
+      {
+        "claim": "Different passport rule from Italy's advice: see notes",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GBR"
+      }
+    ]
   },
   {
     "nationality": "NL",
@@ -19449,14 +19533,26 @@
     "documentsNeeded": [
       "Passport or electronic ID card (CIE), valid for at least 3 months beyond your return date from Albania and in good condition"
     ],
-    "notes": "Italy's Foreign Ministry: EU citizens need no entry visa; the limit for staying in Albania without a visa is 90 days within 6 months, and overstaying risks refusal of entry, expulsion with a re-entry ban, and a fine of about €700. Since 30 July 2026 Albania also accepts the temporary paper ID issued by Italian municipalities while a CIE is being produced. Holders of older renewed ID cards are advised to replace them before travelling.",
+    "notes": "Italy's Foreign Ministry: EU citizens need no entry visa; the limit for staying in Albania without a visa is 90 days within 6 months, and overstaying risks refusal of entry, expulsion with a re-entry ban, and a fine of about €700. Since 30 July 2026 Albania also accepts the temporary paper ID issued by Italian municipalities while a CIE is being produced. Holders of older renewed ID cards are advised to replace them before travelling. Italy's travel advice for Italian passports: valid for at least 3 months after your departure (return) date.",
     "legal_source": {
       "name": "Ministero degli Affari Esteri — Viaggiare Sicuri: Albania (scheda paese, aggiornata 30/7/2026)",
       "url": "https://www.viaggiaresicuri.it/find-country/country/ALB"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministero degli Affari Esteri — Viaggiare Sicuri: Albania (scheda paese, aggiornata 30/7/2026)",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/ALB"
+      },
+      {
+        "claim": "Different passport rule from Italy's advice: see notes",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/ALB"
+      }
+    ]
   },
   {
     "nationality": "FR",
@@ -19673,16 +19769,34 @@
       "maxDays": 365
     },
     "documentsNeeded": [
-      "Valid passport or a national identity card issued by an EU member state"
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
     ],
     "notes": "France is on Georgia's visa-free list. Note 1 to Ordinance No. 255: citizens of listed countries \"may enter and stay in Georgia without visa for one full year\" (recorded as 365 days — don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state.",
     "legal_source": {
       "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (consolidated 24/02/2026, matsne.gov.ge)",
       "url": "https://matsne.gov.ge/en/document/view/2867361"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (consolidated 24/02/2026, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
   },
   {
     "nationality": "ES",
@@ -19693,16 +19807,34 @@
       "maxDays": 365
     },
     "documentsNeeded": [
-      "Valid passport or a national identity card issued by an EU member state"
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
     ],
     "notes": "Spain is on Georgia's visa-free list. Note 1 to Ordinance No. 255: citizens of listed countries \"may enter and stay in Georgia without visa for one full year\" (recorded as 365 days — don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state.",
     "legal_source": {
       "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (consolidated 24/02/2026, matsne.gov.ge)",
       "url": "https://matsne.gov.ge/en/document/view/2867361"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (consolidated 24/02/2026, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
   },
   {
     "nationality": "DE",
@@ -19713,7 +19845,8 @@
       "maxDays": 365
     },
     "documentsNeeded": [
-      "Valid passport or a national identity card issued by an EU member state"
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
     ],
     "notes": "Germany is on Georgia's visa-free list. Note 1 to Ordinance No. 255: citizens of listed countries \"may enter and stay in Georgia without visa for one full year\" (recorded as 365 days — don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. Germany's travel advice says up to 360 days without a visa; this row follows the Georgian ordinance's 'one full year'.",
     "legal_source": {
@@ -19733,6 +19866,16 @@
         "claim": "Germany's travel advice says up to 360 days without a visa; this row follows the Georgian ordinance's 'one full year'.",
         "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/georgiensicherheit-201918"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
       }
     ]
   },
@@ -19745,16 +19888,45 @@
       "maxDays": 365
     },
     "documentsNeeded": [
-      "Valid passport or a national identity card issued by an EU member state"
+      "Passport valid for at least 6 months after your arrival date (ID cards are sometimes refused)",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
     ],
     "notes": "Italy is on Georgia's visa-free list. Note 1 to Ordinance No. 255: citizens of listed countries \"may enter and stay in Georgia without visa for one full year\" (recorded as 365 days — don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state.",
     "legal_source": {
       "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (consolidated 24/02/2026, matsne.gov.ge)",
       "url": "https://matsne.gov.ge/en/document/view/2867361"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (consolidated 24/02/2026, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      },
+      {
+        "claim": "Passport validity for Italian passport holders: Passport valid for at least 6 months after your arrival date (ID cards are sometimes refused)",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    }
   },
   {
     "nationality": "NL",
@@ -19765,7 +19937,8 @@
       "maxDays": 365
     },
     "documentsNeeded": [
-      "Passport valid for your whole stay"
+      "Passport valid for your whole stay",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
     ],
     "notes": "The Netherlands is on Georgia's visa-free list. Note 1 to Ordinance No. 255: citizens of listed countries \"may enter and stay in Georgia without visa for one full year\" (recorded as 365 days — don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state.",
     "legal_source": {
@@ -19788,6 +19961,16 @@
         "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort of ID-kaart moet geldig zijn tijdens de hele periode dat u in het land bent.",
         "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 24-06-2026), Paspoort",
         "url": "https://www.nederlandwereldwijd.nl/reisadvies/georgie"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
       }
     ]
   },
@@ -20346,7 +20529,7 @@
       "Thailand Digital Arrival Card (TDAC), submitted online within 3 days before arrival — required for every entry",
       "Proof of accommodation and of onward travel within 30 days of arrival; officers may also ask for proof of funds (THB 20,000 per person) or interview you"
     ],
-    "notes": "Italian ordinary-passport holders are on Thailand's 30-day visa-exemption list (60 countries/territories, EU listed as a bloc) that replaced the former 60-day scheme from 15 September 2026, after Ministry of Interior notifications were published in the Royal Gazette on 31 August 2026 (Gazette site itself not reachable for automated checks). Tourism only — other purposes need a visa. An extension of up to 30 days may be requested from the Immigration Bureau (Royal Thai Embassy London). Entries under the exemption are limited to twice per calendar year: the Royal Thai Embassy London states this generally, while TAT describes the limit as applying to land-border entries — check before planning repeat visits. People who entered under the old 60-day scheme before 15 September 2026 keep the stay they were granted. Note: Italy's travel-advice page (viaggiaresicuri.it, checked 2 Oct 2026) still partly reflects the old 60-day scheme while also stating a visa is needed for tourist stays over 30 days; Thai official sources control. You may be asked to show enough money for your stay: the UK's advice says at least THB 10,000 per person (20,000 per family); Germany's says at least THB 20,000 in cash.",
+    "notes": "Italian ordinary-passport holders are on Thailand's 30-day visa-exemption list (60 countries/territories, EU listed as a bloc) that replaced the former 60-day scheme from 15 September 2026, after Ministry of Interior notifications were published in the Royal Gazette on 31 August 2026 (Gazette site itself not reachable for automated checks). Tourism only — other purposes need a visa. An extension of up to 30 days may be requested from the Immigration Bureau (Royal Thai Embassy London). Entries under the exemption are limited to twice per calendar year: the Royal Thai Embassy London states this generally, while TAT describes the limit as applying to land-border entries — check before planning repeat visits. People who entered under the old 60-day scheme before 15 September 2026 keep the stay they were granted. Note: Italy's travel-advice page (viaggiaresicuri.it, checked 2 Oct 2026) still partly reflects the old 60-day scheme while also stating a visa is needed for tourist stays over 30 days; Thai official sources control. You may be asked to show enough money for your stay: the UK's advice says at least THB 10,000 per person (20,000 per family); Germany's says at least THB 20,000 in cash. Italy's travel advice says the passport must have at least 6 months' validity on entry and two blank pages.",
     "legal_source": {
       "name": "Ministry of Foreign Affairs of Thailand — Summary: The revision of Thailand's visa exemption and VoA schemes, 2026 (ordinary passports; status as of 31 August 2026, effective 15 September 2026)",
       "url": "https://image.mfa.go.th/mfa/0/umufy3EgqL/Con0926/Visa_Exemption_(EN)_0.jpg"
@@ -20369,6 +20552,11 @@
         "claim": "Proof of funds may be requested: UK says at least THB 10,000 per person or 20,000 per family; Germany says at least THB 20,000 in cash",
         "name": "Auswärtiges Amt — Thailand: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/thailandsicherheit-201558"
+      },
+      {
+        "claim": "Italy's travel advice says the passport must have at least 6 months' validity on entry and two blank pages.",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/THA"
       }
     ]
   },
@@ -20566,7 +20754,7 @@
       "unit": "months",
       "from": "arrival"
     },
-    "notes": "Italian citizens are on Viet Nam's unilateral visa-exemption list under Government Resolution No. 44/NQ-CP (7 March 2025): visa-free stays of up to 45 days from the date of entry, regardless of passport type or purpose of entry, valid 15 March 2025 to 14 March 2028 (may be considered for extension). Confirmed on the Government portal and by the Vietnamese Embassy in Japan, and cross-checked against the Italian foreign ministry's travel advice (checked 2 Oct 2026). The exemption cannot be extended in Viet Nam (French MFA); for longer stays apply for an e-visa (up to 90 days) before travel. Arrival card: from 15 April 2026 Vietnam encourages foreign nationals arriving at Tan Son Nhat (Ho Chi Minh City) to complete a digital arrival card online; the UK's advice says it isn't mandatory, while the Netherlands' says it's required at Ho Chi Minh City, Hanoi, Da Nang and Phu Quoc airports.",
+    "notes": "Italian citizens are on Viet Nam's unilateral visa-exemption list under Government Resolution No. 44/NQ-CP (7 March 2025): visa-free stays of up to 45 days from the date of entry, regardless of passport type or purpose of entry, valid 15 March 2025 to 14 March 2028 (may be considered for extension). Confirmed on the Government portal and by the Vietnamese Embassy in Japan, and cross-checked against the Italian foreign ministry's travel advice (checked 2 Oct 2026). The exemption cannot be extended in Viet Nam (French MFA); for longer stays apply for an e-visa (up to 90 days) before travel. Arrival card: from 15 April 2026 Vietnam encourages foreign nationals arriving at Tan Son Nhat (Ho Chi Minh City) to complete a digital arrival card online; the UK's advice says it isn't mandatory, while the Netherlands' says it's required at Ho Chi Minh City, Hanoi, Da Nang and Phu Quoc airports. Italy's travel advice says international health insurance is required, and that the online pre-arrival registration at Hanoi, Ho Chi Minh City, Da Nang and Phu Quoc applies to Italians too.",
     "legal_source": {
       "name": "Government of Viet Nam — Resolution No. 44/NQ-CP of 7 March 2025 on visa exemption for citizens of 12 countries (Government news portal baochinhphu.vn)",
       "url": "https://baochinhphu.vn/mien-thi-thuc-nhap-canh-viet-nam-cho-cong-dan-12-nuoc-102250307195144569.htm"
@@ -20589,6 +20777,11 @@
         "claim": "Digital arrival card: UK says encouraged, not mandatory (Tan Son Nhat); Netherlands says required at four airports",
         "name": "Nederland Wereldwijd — Reisadvies Vietnam (Reisdocumenten en inreisregels)",
         "url": "https://www.nederlandwereldwijd.nl/reisadvies/vietnam"
+      },
+      {
+        "claim": "Italy's travel advice says international health insurance is required, and that the online pre-arrival registration at Hanoi, Ho Chi Minh City, Da Nang and Phu Quoc applies to Italians too.",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/VNM"
       }
     ]
   },
@@ -20711,14 +20904,26 @@
       "Passport valid for more than 6 months on arrival",
       "Malaysia Digital Arrival Card (MDAC), submitted online within 3 days before arrival"
     ],
-    "notes": "The Embassy of Malaysia in Rome states Italian citizens do not need a visa for tourism and business up to 90 days. The length of stay is granted by the immigration officer at entry. East Malaysia controls its own entry: Sabah and Sarawak issue a separate entry permit (the French MFA says Sarawak grants 30 days on arrival; the German MFA says the separate permit is usually valid 90 days) — check before travelling there. Cross-checked against the Italian foreign ministry's travel advice (checked 2 Oct 2026).",
+    "notes": "The Embassy of Malaysia in Rome states Italian citizens do not need a visa for tourism and business up to 90 days. The length of stay is granted by the immigration officer at entry. East Malaysia controls its own entry: Sabah and Sarawak issue a separate entry permit (the French MFA says Sarawak grants 30 days on arrival; the German MFA says the separate permit is usually valid 90 days) — check before travelling there. Cross-checked against the Italian foreign ministry's travel advice (checked 2 Oct 2026). Italy's travel advice for Italian passports: valid for at least 6 months from your arrival date.",
     "legal_source": {
       "name": "Embassy of Malaysia, Rome (Ministry of Foreign Affairs Malaysia) — Visa requirement for foreigners",
       "url": "https://www.kln.gov.my/web/ita_rome/requirement_foreigner"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassy of Malaysia, Rome (Ministry of Foreign Affairs Malaysia) — Visa requirement for foreigners",
+        "url": "https://www.kln.gov.my/web/ita_rome/requirement_foreigner"
+      },
+      {
+        "claim": "Different passport rule from Italy's advice: see notes",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/MYS"
+      }
+    ]
   },
   {
     "nationality": "NL",
@@ -21255,14 +21460,26 @@
       "unit": "months",
       "from": "departure"
     },
-    "notes": "Italian nationals are on the DFA's list of countries whose nationals may enter visa-free for an initial stay of 30 days under Executive Order No. 408 (checked 2 Oct 2026); they are not on the separate 59-day bilateral list (only Brazil and Israel). The stay can be extended at a Bureau of Immigration office (the French MFA cites up to 29 more days, 59 in total, for a fee). Cross-checked against the Italian foreign ministry's travel advice (checked 2 Oct 2026).",
+    "notes": "Italian nationals are on the DFA's list of countries whose nationals may enter visa-free for an initial stay of 30 days under Executive Order No. 408 (checked 2 Oct 2026); they are not on the separate 59-day bilateral list (only Brazil and Israel). The stay can be extended at a Bureau of Immigration office (the French MFA cites up to 29 more days, 59 in total, for a fee). Cross-checked against the Italian foreign ministry's travel advice (checked 2 Oct 2026). Italy's travel advice says the passport must be valid for at least 6 months from the day you arrive (this row follows its source's 6 months beyond the stay), and that a return or onward ticket must be shown.",
     "legal_source": {
       "name": "eVisaPH (Department of Foreign Affairs) — Free to Enter the Philippines Without Visa (Executive Order No. 408, as amended)",
       "url": "https://evisa.gov.ph/page/policy?l1=Non-Immigrant+Visas&l2=Free+to+enter+the+Philippines+without+Visa"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "eVisaPH (Department of Foreign Affairs) — Free to Enter the Philippines Without Visa (Executive Order No. 408, as amended)",
+        "url": "https://evisa.gov.ph/page/policy?l1=Non-Immigrant+Visas&l2=Free+to+enter+the+Philippines+without+Visa"
+      },
+      {
+        "claim": "Italy's travel advice says the passport must be valid for at least 6 months from the day you arrive (this row follows its source's 6 months beyond the stay), and that a return or onward ticket must be shown.",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/PHL"
+      }
+    ]
   },
   {
     "nationality": "NL",
@@ -21732,14 +21949,26 @@
       "Confirmed return ticket, prepaid confirmed booking at a registered facility, and sufficient funds for the stay (or a Maldives Immigration–approved sponsorship)",
       "IMUGA Traveller Declaration, submitted free of charge within 96 hours before arrival (imuga.immigration.gov.mv)"
     ],
-    "notes": "Maldives Immigration (immigration.gov.mv/visa/tourist-visa, updated 2026-09-10, checked 2026-10-02) grants a tourist visa on arrival with no pre-approval, subject to the entry requirements listed; entry is decided by the immigration officer under Sections 7 and 8 of the Maldives Immigration Act 2007, and is refused on Israeli passports (since 15 April 2025). The 30-day length is from Italian government travel advice (the legal source). Extensions are possible on application in the Maldives; working on a tourist visa is prohibited. A yellow-fever certificate is required if arriving from, or recently via, a yellow-fever risk country.",
+    "notes": "Maldives Immigration (immigration.gov.mv/visa/tourist-visa, updated 2026-09-10, checked 2026-10-02) grants a tourist visa on arrival with no pre-approval, subject to the entry requirements listed; entry is decided by the immigration officer under Sections 7 and 8 of the Maldives Immigration Act 2007, and is refused on Israeli passports (since 15 April 2025). The 30-day length is from Italian government travel advice (the legal source). Extensions are possible on application in the Maldives; working on a tourist visa is prohibited. A yellow-fever certificate is required if arriving from, or recently via, a yellow-fever risk country. Italy's travel advice for Italian passports: valid for at least 30 days after your departure (return) date; an electronic passport with a chip is required.",
     "legal_source": {
       "name": "Viaggiare Sicuri (Italian Ministry of Foreign Affairs) — Maldive, country sheet (updated 2026-06-14)",
       "url": "https://www.viaggiaresicuri.it/schede_paese/pdf/MDV.pdf"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Viaggiare Sicuri (Italian Ministry of Foreign Affairs) — Maldive, country sheet (updated 2026-06-14)",
+        "url": "https://www.viaggiaresicuri.it/schede_paese/pdf/MDV.pdf"
+      },
+      {
+        "claim": "Different passport rule from Italy's advice: see notes",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/MDV"
+      }
+    ]
   },
   {
     "nationality": "NL",
@@ -21990,14 +22219,26 @@
       "unit": "months",
       "from": "arrival"
     },
-    "notes": "The Egypt e-Visa Portal (Ministry of Interior, visa2egypt.gov.eg/eVisa/FAQ, checked 2026-10-02) lists Italy among nationalities eligible for an e-Visa (tourism: single entry US$30, multiple entries US$65; passport valid 6 months from arrival). On arrival: Italian travel advice says the tourist visa can be obtained on arrival at Egyptian airports for a maximum stay of 28 days, paid in cash (legal source). For tourism only, Italian nationals may also enter with an electronic ID card valid for travel abroad and for more than 6 months (per Italian travel advice); bring passport photos. No fixed day count is published here: Egypt's own portal does not state the permitted stay, and EU governments describe it differently (30 days for NL/ES, 'one month' for FR, 28 days for IT, not stated by DE) — check the date on the visa you are given. Working, including journalism, is not allowed on a tourist visa.",
+    "notes": "The Egypt e-Visa Portal (Ministry of Interior, visa2egypt.gov.eg/eVisa/FAQ, checked 2026-10-02) lists Italy among nationalities eligible for an e-Visa (tourism: single entry US$30, multiple entries US$65; passport valid 6 months from arrival). On arrival: Italian travel advice says the tourist visa can be obtained on arrival at Egyptian airports for a maximum stay of 28 days, paid in cash (legal source). For tourism only, Italian nationals may also enter with an electronic ID card valid for travel abroad and for more than 6 months (per Italian travel advice); bring passport photos. No fixed day count is published here: Egypt's own portal does not state the permitted stay, and EU governments describe it differently (30 days for NL/ES, 'one month' for FR, 28 days for IT, not stated by DE) — check the date on the visa you are given. Working, including journalism, is not allowed on a tourist visa. Italy's travel advice gives the visa on arrival as up to 28 days for US$25 (Japan's advice also says US$25).",
     "legal_source": {
       "name": "Viaggiare Sicuri (Italian Ministry of Foreign Affairs) — Egitto, country sheet (updated 2026-07-20)",
       "url": "https://www.viaggiaresicuri.it/schede_paese/pdf/EGY.pdf"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Viaggiare Sicuri (Italian Ministry of Foreign Affairs) — Egitto, country sheet (updated 2026-07-20)",
+        "url": "https://www.viaggiaresicuri.it/schede_paese/pdf/EGY.pdf"
+      },
+      {
+        "claim": "Italy's travel advice gives the visa on arrival as up to 28 days for US$25 (Japan's advice also says US$25).",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/EGY"
+      }
+    ]
   },
   {
     "nationality": "NL",
@@ -24140,14 +24381,26 @@
       "unit": "months",
       "from": "arrival"
     },
-    "notes": "Italy ordinary passport holders are visa-exempt for tourism and business in Peru (Foreign Ministry table, PDF dated 16 Jul 2026, legal basis listed as bilateral agreement N° B-3929; the table also cites D.S. N° 022-2016-RE ratifying the Peru–EU short-stay visa-waiver agreement). The term is '90***', defined as '90 days every 180 days from the first entry into national territory' — a 90-in-180-day rule like Schengen's, which we model as a 180-day rolling window. No extension is mentioned for this category. Passport validity: the Embassy of Peru in Singapore's visa FAQ (gob.pe, 22 Mar 2026) says the passport 'must have a minimum of 6 months validity from the date of entry to Peru'; the UK FCDO and Global Affairs Canada travel advice say the same. Air arrivals are not stamped; Migraciones records entry digitally (virtual TAM) and you can check your authorised stay online at Migraciones; land arrivals must get an entry stamp (FCDO, Global Affairs Canada). Global Affairs Canada says officials may ask for a return/onward ticket, proof of accommodation and proof of funds, and that overstaying incurs a fine for each day, payable on exit. Law: Decreto Legislativo 1350 (Migraciones) as amended by D.Leg. 1582 (El Peruano) sets the tourist stay at 'up to 183 calendar days, cumulative over a 365-day period counted from the first regular entry', or the shorter term fixed in a visa-waiver agreement; where less than 183 days is granted an extension can be granted up to that limit unless the agreement sets a lower term or forbids extension. Tourist status does not allow paid work.",
+    "notes": "Italy ordinary passport holders are visa-exempt for tourism and business in Peru (Foreign Ministry table, PDF dated 16 Jul 2026, legal basis listed as bilateral agreement N° B-3929; the table also cites D.S. N° 022-2016-RE ratifying the Peru–EU short-stay visa-waiver agreement). The term is '90***', defined as '90 days every 180 days from the first entry into national territory' — a 90-in-180-day rule like Schengen's, which we model as a 180-day rolling window. No extension is mentioned for this category. Passport validity: the Embassy of Peru in Singapore's visa FAQ (gob.pe, 22 Mar 2026) says the passport 'must have a minimum of 6 months validity from the date of entry to Peru'; the UK FCDO and Global Affairs Canada travel advice say the same. Air arrivals are not stamped; Migraciones records entry digitally (virtual TAM) and you can check your authorised stay online at Migraciones; land arrivals must get an entry stamp (FCDO, Global Affairs Canada). Global Affairs Canada says officials may ask for a return/onward ticket, proof of accommodation and proof of funds, and that overstaying incurs a fine for each day, payable on exit. Law: Decreto Legislativo 1350 (Migraciones) as amended by D.Leg. 1582 (El Peruano) sets the tourist stay at 'up to 183 calendar days, cumulative over a 365-day period counted from the first regular entry', or the shorter term fixed in a visa-waiver agreement; where less than 183 days is granted an extension can be granted up to that limit unless the agreement sets a lower term or forbids extension. Tourist status does not allow paid work. Italy's travel advice gives the window as 90 days within 183 days.",
     "legal_source": {
       "name": "Requerimientos y exoneración de visas para ciudadanos extranjeros que cuenten con pasaportes ordinarios (PDF version 16-07-2026 v2) — Ministerio de Relaciones Exteriores del Perú",
       "url": "https://www.gob.pe/institucion/rree/informes-publicaciones/2315744-requerimientos-y-exoneracion-de-visas-para-ciudadanos-extranjeros-que-cuenten-con-pasaportes-ordinarios"
     },
-    "verified_at": "2026-10-09",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Requerimientos y exoneración de visas para ciudadanos extranjeros que cuenten con pasaportes ordinarios (PDF version 16-07-2026 v2) — Ministerio de Relaciones Exteriores del Perú",
+        "url": "https://www.gob.pe/institucion/rree/informes-publicaciones/2315744-requerimientos-y-exoneracion-de-visas-para-ciudadanos-extranjeros-que-cuenten-con-pasaportes-ordinarios"
+      },
+      {
+        "claim": "Italy's travel advice gives the window as 90 days within 183 days.",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/PER"
+      }
+    ]
   },
   {
     "nationality": "NL",
@@ -24783,14 +25036,26 @@
       "Tourist Card (US$10; included in the airfare for air arrivals) unless exempt by bilateral agreement",
       "Proof of onward or return travel (may be requested)"
     ],
-    "notes": "The Dominican Foreign Ministry (MIREX) visa-requirements tool, queried for Italy / ordinary passport / tourist visa (TS), answers '¿Requiere visa? NO'. UK and Canadian government advice both say tourists can visit visa-free for up to 30 days. Stay: the Dirección General de Migración (DGM) service page 'Prórroga de estadía para turistas' (migracion.gob.do/servicio/prorroga-de-estadia/) says tourists are allowed '30 días establecidos para los turistas' and that a stay of more than 30 days can be authorised 'a través de una prórroga extensible hasta 120 días'. Extension: apply online at the DGM portal (personal.migracion.gob.do / servicios.migracion.gob.do) with a copy of the passport data page, the stamp/date of last entry, a return air ticket, proof of own funds and a medical certificate; processing three working days; the application is free but the stay fee is charged: RD$3,500 for 30–90 days and RD$5,600 for 90–120 days, payable online or at the airport. Overstay: DGM's 'Servicio de cálculo y pago de tasas de estadía' says foreigners who exceed their authorised stay regularise it on departure by paying the stay fee (table: 30–90 days RD$3,500; 3–9 months RD$5,600; 9–12 months RD$7,000; rising to RD$98,000 for 10 years plus RD$7,000 per extra year), calculated at stayfee.migracion.gob.do. DGM's FAQ adds that if the stay fee is paid in advance at DGM you then have 30 days to leave. Canada's travel advice (travel.gc.ca, updated 26 May 2026) says to request the extension before the tourist card expires and that overstayers 'could be deported or refused re-entry'. Arrival form: DGM states the electronic E-Ticket (eticket.migracion.gob.do) is mandatory for every passenger on entry and on exit (combined migration and customs declaration, laws 285-04, 115-17, 72-02 and 226-06); UK advice says it can be completed up to 7 days before arrival and gives a QR code. Tourist card: the tax authority DGII says foreigners entering without a consular visa must have a Tourist Card (US$10, or €10 at sea/land ports only), with exemptions for nationals covered by bilateral agreements ratified by Congress; for air arrivals its cost is included in the airline ticket. The MIREX tool does not say whether this nationality is card-exempt. UK and Canadian advice both say you may be asked for proof of onward/return travel; Canada adds proof of adequate funds and your address in the country. Passport: under DGM's measure announced 2 December 2025 (memorandum continuing Resolución DGM-01-2024 of 31 May 2024), citizens of Argentina, Brazil, Canada, Chile, Colombia, Ecuador, the USA, 'Inglaterra' and EU countries travelling exclusively for tourism need a passport valid only for the length of their stay and departure, instead of the 6-month minimum 'que usualmente se exige'. This applies from 1 Dec 2025 to 31 Dec 2026 — re-check for travel in 2027. ",
+    "notes": "The Dominican Foreign Ministry (MIREX) visa-requirements tool, queried for Italy / ordinary passport / tourist visa (TS), answers '¿Requiere visa? NO'. UK and Canadian government advice both say tourists can visit visa-free for up to 30 days. Stay: the Dirección General de Migración (DGM) service page 'Prórroga de estadía para turistas' (migracion.gob.do/servicio/prorroga-de-estadia/) says tourists are allowed '30 días establecidos para los turistas' and that a stay of more than 30 days can be authorised 'a través de una prórroga extensible hasta 120 días'. Extension: apply online at the DGM portal (personal.migracion.gob.do / servicios.migracion.gob.do) with a copy of the passport data page, the stamp/date of last entry, a return air ticket, proof of own funds and a medical certificate; processing three working days; the application is free but the stay fee is charged: RD$3,500 for 30–90 days and RD$5,600 for 90–120 days, payable online or at the airport. Overstay: DGM's 'Servicio de cálculo y pago de tasas de estadía' says foreigners who exceed their authorised stay regularise it on departure by paying the stay fee (table: 30–90 days RD$3,500; 3–9 months RD$5,600; 9–12 months RD$7,000; rising to RD$98,000 for 10 years plus RD$7,000 per extra year), calculated at stayfee.migracion.gob.do. DGM's FAQ adds that if the stay fee is paid in advance at DGM you then have 30 days to leave. Canada's travel advice (travel.gc.ca, updated 26 May 2026) says to request the extension before the tourist card expires and that overstayers 'could be deported or refused re-entry'. Arrival form: DGM states the electronic E-Ticket (eticket.migracion.gob.do) is mandatory for every passenger on entry and on exit (combined migration and customs declaration, laws 285-04, 115-17, 72-02 and 226-06); UK advice says it can be completed up to 7 days before arrival and gives a QR code. Tourist card: the tax authority DGII says foreigners entering without a consular visa must have a Tourist Card (US$10, or €10 at sea/land ports only), with exemptions for nationals covered by bilateral agreements ratified by Congress; for air arrivals its cost is included in the airline ticket. The MIREX tool does not say whether this nationality is card-exempt. UK and Canadian advice both say you may be asked for proof of onward/return travel; Canada adds proof of adequate funds and your address in the country. Passport: under DGM's measure announced 2 December 2025 (memorandum continuing Resolución DGM-01-2024 of 31 May 2024), citizens of Argentina, Brazil, Canada, Chile, Colombia, Ecuador, the USA, 'Inglaterra' and EU countries travelling exclusively for tourism need a passport valid only for the length of their stay and departure, instead of the 6-month minimum 'que usualmente se exige'. This applies from 1 Dec 2025 to 31 Dec 2026 — re-check for travel in 2027. Italy's travel advice for Italian passports: valid for your whole stay.",
     "legal_source": {
       "name": "MIREX — Consulta de requisitos para extranjeros ingresar a la República Dominicana (Italy, pasaporte ordinario, Visa Turismo TS)",
       "url": "https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=121&tipoPasaporte=Ordinario&tipoVisa=visa_ts"
     },
-    "verified_at": "2026-10-09",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "MIREX — Consulta de requisitos para extranjeros ingresar a la República Dominicana (Italy, pasaporte ordinario, Visa Turismo TS)",
+        "url": "https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=121&tipoPasaporte=Ordinario&tipoVisa=visa_ts"
+      },
+      {
+        "claim": "Different passport rule from Italy's advice: see notes",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/DOM"
+      }
+    ]
   },
   {
     "nationality": "NL",
@@ -27242,14 +27507,26 @@
       "Proof of funds: at least US$100 per month or part-month of stay",
       "Customs traveller declaration (Declaración de Viajero) on arrival"
     ],
-    "notes": "Costa Rica's current visa directive (AJ-484-11-2025, in force since publication 17 Nov 2025; it repealed the Oct 2023 directive DG-30-10-2023-AJ) lists Italy in the FIRST GROUP: 'INGRESO SIN VISA. PERMANENCIA MÁXIMA: HASTA 180 DÍAS NATURALES NO PRORROGABLES. (Únicamente se prorrogará a quienes se le otorguen menos de 90 días y hasta por un máximo de 90 días). VIGENCIA MÍNIMA DE PASAPORTE: HASTA UN DÍA (el plazo de permanencia otorgado por el oficial de control migratorio, no será mayor al de la vigencia del pasaporte).' So: no visa; the border officer decides the stay, up to 180 calendar days counted from entry (per entry — the directive sets no cumulative cap across trips), and never beyond the passport's expiry; your passport only needs to be valid on the day of entry, but a longer validity buys a longer stay. The stay cannot be extended unless the officer granted fewer than 90 days, in which case an extension of up to 90 days can be requested (the text does not say whether 90 is the extra time or the total). Check the stamp: the days granted are what count, not the 180-day ceiling. Entry requirements for every foreigner (Directrices, PRIMERO §4, citing art. 42 Ley General de Migración y Extranjería 8764 and art. 30 Reglamento de Control Migratorio 36769-G): a valid, machine-readable/biometric passport in good condition; a visa where required; proof of funds of at least US$100 per month or part-month of authorised stay; a return or onward ticket (or a navigation plan naming the destination port); and no bar to entry. Tourist (No Residente, subcategoría Turismo) status allows leisure, business or professional activities only if they involve no pay or profit in Costa Rica. Also on arrival: a customs traveller declaration (Declaración de Viajero) is required of every arriving traveller (art. 368 Reglamento a la Ley General de Aduanas, Decreto 44051-H). Per the UK FCDO page (cross-check), a yellow fever vaccination certificate is required if you are coming from a country listed as a yellow-fever transmission risk, an air departure tax of US$29 may apply (usually included in the ticket), and overstayers can be fined US$100 per month and refused future entry; travel.gc.ca (updated 31 Aug 2026) adds that people deported for overstaying may be barred from re-entering for 5 to 10 years.",
+    "notes": "Costa Rica's current visa directive (AJ-484-11-2025, in force since publication 17 Nov 2025; it repealed the Oct 2023 directive DG-30-10-2023-AJ) lists Italy in the FIRST GROUP: 'INGRESO SIN VISA. PERMANENCIA MÁXIMA: HASTA 180 DÍAS NATURALES NO PRORROGABLES. (Únicamente se prorrogará a quienes se le otorguen menos de 90 días y hasta por un máximo de 90 días). VIGENCIA MÍNIMA DE PASAPORTE: HASTA UN DÍA (el plazo de permanencia otorgado por el oficial de control migratorio, no será mayor al de la vigencia del pasaporte).' So: no visa; the border officer decides the stay, up to 180 calendar days counted from entry (per entry — the directive sets no cumulative cap across trips), and never beyond the passport's expiry; your passport only needs to be valid on the day of entry, but a longer validity buys a longer stay. The stay cannot be extended unless the officer granted fewer than 90 days, in which case an extension of up to 90 days can be requested (the text does not say whether 90 is the extra time or the total). Check the stamp: the days granted are what count, not the 180-day ceiling. Entry requirements for every foreigner (Directrices, PRIMERO §4, citing art. 42 Ley General de Migración y Extranjería 8764 and art. 30 Reglamento de Control Migratorio 36769-G): a valid, machine-readable/biometric passport in good condition; a visa where required; proof of funds of at least US$100 per month or part-month of authorised stay; a return or onward ticket (or a navigation plan naming the destination port); and no bar to entry. Tourist (No Residente, subcategoría Turismo) status allows leisure, business or professional activities only if they involve no pay or profit in Costa Rica. Also on arrival: a customs traveller declaration (Declaración de Viajero) is required of every arriving traveller (art. 368 Reglamento a la Ley General de Aduanas, Decreto 44051-H). Per the UK FCDO page (cross-check), a yellow fever vaccination certificate is required if you are coming from a country listed as a yellow-fever transmission risk, an air departure tax of US$29 may apply (usually included in the ticket), and overstayers can be fined US$100 per month and refused future entry; travel.gc.ca (updated 31 Aug 2026) adds that people deported for overstaying may be barred from re-entering for 5 to 10 years. Conflict recorded: Italy's travel advice says the passport must have at least 90 days' validity from entry; this row follows Costa Rica's own directive.",
     "legal_source": {
       "name": "Dirección General de Migración y Extranjería, 'Directrices Generales de Visas de Ingreso y Permanencia para No Residentes' AJ-484-11-2025, Alcance N° 148 a La Gaceta N° 216 (17 Nov 2025) — official Imprenta Nacional gazette edition (copy hosted on icoder.go.cr; the migracion.go.cr copy is Cloudflare-blocked)",
       "url": "https://www.icoder.go.cr/fileadmin/documentos/tramites/visas/Directrices-Generales-de-Visas-Noviembre-2025-Alcance-148-Gaceta-N_-216-17-11-2025.pdf"
     },
-    "verified_at": "2026-10-09",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Dirección General de Migración y Extranjería, 'Directrices Generales de Visas de Ingreso y Permanencia para No Residentes' AJ-484-11-2025, Alcance N° 148 a La Gaceta N° 216 (17 Nov 2025) — official Imprenta Nacional gazette edition (copy hosted on icoder.go.cr; the migracion.go.cr copy is Cloudflare-blocked)",
+        "url": "https://www.icoder.go.cr/fileadmin/documentos/tramites/visas/Directrices-Generales-de-Visas-Noviembre-2025-Alcance-148-Gaceta-N_-216-17-11-2025.pdf"
+      },
+      {
+        "claim": "Conflict recorded: Italy's travel advice says the passport must have at least 90 days' validity from entry; this row follows Costa Rica's own directive.",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/CRI"
+      }
+    ]
   },
   {
     "nationality": "NL",
@@ -27470,14 +27747,26 @@
       "Confirmed hotel reservation in Qatar for the visit, or a clear address of a friend/relative where you will stay",
       "Health insurance from an insurance company accredited by Qatar's Ministry of Public Health (MOI lists it as a condition of the on-arrival visa; GOV.UK/Auswärtiges Amt describe it as mandatory for stays over 30 days)"
     ],
-    "notes": "Qatar MOI page 'Free On-arrival Tourist Visa for 90 Days Non-extendable for (43) Countries' lists Italy. Conditions: '1- Passport valid for at least three months 2- Availability of confirmed return ticket 3- Hotel reservation at any hotel in Qatar during the visit period, or a clear address of a friend or relative. 4- Health insurance from an accredited insurance company.' The stay is free of charge and NOT extendable. The Auswärtiges Amt (Germany, Stand 09.10.2026) describes this same waiver as valid for 180 days from issue, multiple entry, allowing at most 90 days of stay within that validity, and Nederland Wereldwijd says 'maximaal 90 dagen binnen 180 dagen'. Modelled as a rolling 90-days-in-180 window, the stricter representation of '90 days within a 180-day validity period'. Conflict noted: MOI requires passport validity of 3 months, but several travellers' governments (GOV.UK, Auswärtiges Amt, France, Canada, NZ) say 6 months; MOI is the controlling authority, documentsNeeded flags both. Health insurance: MOI lists 'Health insurance from an accredited insurance company' as a condition of every on-arrival category and its Entry Permits page says 'A valid health insurance policy from insurance companies registered with the Ministry of Public Health is required to enter Qatar', while GOV.UK and Auswärtiges Amt say it is compulsory for stays over 30 days (GOV.UK: standard premium QAR 50 per person per month). VisitQatar notes 'Visa-free entry is now the new term defining previously visa on arrival. Nothing changed except the name.' Entry is at the discretion of the border officer.",
+    "notes": "Qatar MOI page 'Free On-arrival Tourist Visa for 90 Days Non-extendable for (43) Countries' lists Italy. Conditions: '1- Passport valid for at least three months 2- Availability of confirmed return ticket 3- Hotel reservation at any hotel in Qatar during the visit period, or a clear address of a friend or relative. 4- Health insurance from an accredited insurance company.' The stay is free of charge and NOT extendable. The Auswärtiges Amt (Germany, Stand 09.10.2026) describes this same waiver as valid for 180 days from issue, multiple entry, allowing at most 90 days of stay within that validity, and Nederland Wereldwijd says 'maximaal 90 dagen binnen 180 dagen'. Modelled as a rolling 90-days-in-180 window, the stricter representation of '90 days within a 180-day validity period'. Conflict noted: MOI requires passport validity of 3 months, but several travellers' governments (GOV.UK, Auswärtiges Amt, France, Canada, NZ) say 6 months; MOI is the controlling authority, documentsNeeded flags both. Health insurance: MOI lists 'Health insurance from an accredited insurance company' as a condition of every on-arrival category and its Entry Permits page says 'A valid health insurance policy from insurance companies registered with the Ministry of Public Health is required to enter Qatar', while GOV.UK and Auswärtiges Amt say it is compulsory for stays over 30 days (GOV.UK: standard premium QAR 50 per person per month). VisitQatar notes 'Visa-free entry is now the new term defining previously visa on arrival. Nothing changed except the name.' Entry is at the discretion of the border officer. Italy's travel advice describes the entry permit as a visa issued on arrival, normally for 30 days and extendable to 90 after paying for health insurance, and says insurance is required only for stays over 30 days.",
     "legal_source": {
       "name": "Ministry of Interior of the State of Qatar — 'Entry Permits (Visit Visas)' and 'On Arrival Visas' (General Directorate of Nationality, Borders & Expatriates Affairs) category pages",
       "url": "https://portal.moi.gov.qa/qatarvisas/"
     },
-    "verified_at": "2026-10-09",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Interior of the State of Qatar — 'Entry Permits (Visit Visas)' and 'On Arrival Visas' (General Directorate of Nationality, Borders & Expatriates Affairs) category pages",
+        "url": "https://portal.moi.gov.qa/qatarvisas/"
+      },
+      {
+        "claim": "Italy's travel advice describes the entry permit as a visa issued on arrival, normally for 30 days and extendable to 90 after paying for health insurance, and says insurance is required only for stays over 30 days.",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/QAT"
+      }
+    ]
   },
   {
     "nationality": "NL",
@@ -29934,7 +30223,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport — the Embassy of Jamaica in Washington says it should have at least six months' validity (UK, Canadian, French and Spanish government advice say valid for the duration of the stay; the six-month figure is the stricter one)",
+      "Passport valid for at least 6 months on your arrival date",
       "Return or round-trip ticket to a country you are admissible to",
       "Evidence of sufficient funds to support yourself during the stay",
       "Completed Immigration/Customs C5 form (online at enterjamaica.gov.jm, run by PICA and Jamaica Customs, or on paper on arrival)"
@@ -29944,9 +30233,27 @@
       "name": "Jamaica Immigration Unit — Visa Requirements for Jamaicans Travelling Overseas & Foreigners and Commonwealth Nationals Entering Jamaica (PICA Visa Unit country listing, last updated 13 March 2025), published by the Embassy of Jamaica, Washington DC",
       "url": "https://embwashington.mfaft.gov.jm/pdf/Country-Listing-March-3-2025.pdf"
     },
-    "verified_at": "2026-10-10",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Jamaica Immigration Unit — Visa Requirements for Jamaicans Travelling Overseas & Foreigners and Commonwealth Nationals Entering Jamaica (PICA Visa Unit country listing, last updated 13 March 2025), published by the Embassy of Jamaica, Washington DC",
+        "url": "https://embwashington.mfaft.gov.jm/pdf/Country-Listing-March-3-2025.pdf"
+      },
+      {
+        "claim": "Passport validity for Italian passport holders: Passport valid for at least 6 months on your arrival date",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/JAM"
+      }
+    ]
   },
   {
     "nationality": "NL",
@@ -30511,14 +30818,26 @@
       "Completed Bahamas Immigration Disembarkation/Embarkation Card",
       "Yellow fever vaccination certificate only if arriving from (or transiting >12 hours through) a country with yellow fever risk"
     ],
-    "notes": "Stay length: Bahamas Immigration only says visa-exempt visitors may remain 'for a period not exceeding three (3) months or eight (8) months as each individual agreement may dictate', and the immigration officer stamps the actual period on arrival. No source states which applies to this passport, so we show no day count — check the date stamped in your passport. Visa-free. Bahamas Immigration lists this nationality among those whose 'Bahamian visa requirements are waived ... to visit and remain in The Bahamas for a period not exceeding three (3) months or eight (8) months as each individual agreement may dictate', and advises 'all visitors intending to remain in The Bahamas for an excess of ninety (90) days [to] review the visa requirement for their specific country.' The specific agreement for this nationality (3 vs 8 months) is not published, so we model 90 days (the source states '3 months'; 90 used as the safe figure) — the period stamped in your passport by the officer is what counts. Also on the Ministry of Foreign Affairs 'Who DOES NOT need a visa to enter The Bahamas' list (modified 2026-03-03). Bahamas Immigration 'Before Your Arrival' (updated 2026-08-10) sets the entry criteria under the Immigration Act (Ch. 191) s.22: a valid return ticket/means of departure, no intention to work, financial means (or a local sponsor), a passport valid for at least six months (passport cards not accepted) and a completed Disembarkation/Embarkation Card. 'Admittance is not automatic' — the officer can refuse leave to land. The officer also decides how long you may stay; the period is documented in your passport ('the maximum period of stay, documented in visitors' passports, may vary, as this is dependent upon the discretion of the immigration officer at the port of entry'), and the absolute maximum for a visitor is 8 months. Extensions: apply to the Department of Immigration before the granted time expires; in-person interview with an extension officer; $200.00 non-refundable processing fee since 18 September 2024; bring return ticket, valid passport, local address, the Immigration landing card, reason for extension, sponsor's passport and address (Immigration 'Extension of Stay' page). Overstaying is a punishable offence. Yellow fever certificate required from travellers over 1 year arriving from (or transiting more than 12 hours through) a listed risk country (including Argentina, Brazil, Colombia, Peru, Kenya and others), vaccinated at least 10 days before entry. ",
+    "notes": "Stay length: Bahamas Immigration only says visa-exempt visitors may remain 'for a period not exceeding three (3) months or eight (8) months as each individual agreement may dictate', and the immigration officer stamps the actual period on arrival. No source states which applies to this passport, so we show no day count — check the date stamped in your passport. Visa-free. Bahamas Immigration lists this nationality among those whose 'Bahamian visa requirements are waived ... to visit and remain in The Bahamas for a period not exceeding three (3) months or eight (8) months as each individual agreement may dictate', and advises 'all visitors intending to remain in The Bahamas for an excess of ninety (90) days [to] review the visa requirement for their specific country.' The specific agreement for this nationality (3 vs 8 months) is not published, so we model 90 days (the source states '3 months'; 90 used as the safe figure) — the period stamped in your passport by the officer is what counts. Also on the Ministry of Foreign Affairs 'Who DOES NOT need a visa to enter The Bahamas' list (modified 2026-03-03). Bahamas Immigration 'Before Your Arrival' (updated 2026-08-10) sets the entry criteria under the Immigration Act (Ch. 191) s.22: a valid return ticket/means of departure, no intention to work, financial means (or a local sponsor), a passport valid for at least six months (passport cards not accepted) and a completed Disembarkation/Embarkation Card. 'Admittance is not automatic' — the officer can refuse leave to land. The officer also decides how long you may stay; the period is documented in your passport ('the maximum period of stay, documented in visitors' passports, may vary, as this is dependent upon the discretion of the immigration officer at the port of entry'), and the absolute maximum for a visitor is 8 months. Extensions: apply to the Department of Immigration before the granted time expires; in-person interview with an extension officer; $200.00 non-refundable processing fee since 18 September 2024; bring return ticket, valid passport, local address, the Immigration landing card, reason for extension, sponsor's passport and address (Immigration 'Extension of Stay' page). Overstaying is a punishable offence. Yellow fever certificate required from travellers over 1 year arriving from (or transiting more than 12 hours through) a listed risk country (including Argentina, Brazil, Colombia, Peru, Kenya and others), vaccinated at least 10 days before entry. Italy's travel advice says no visa is needed for stays under 90 days.",
     "legal_source": {
       "name": "Bahamas Department of Immigration — Before Your Arrival (Entry Criteria and Visa Requirements; page updated 2026-08-10)",
       "url": "https://www.immigration.gov.bs/entry-requirements/before-your-arrival/"
     },
-    "verified_at": "2026-10-10",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bahamas Department of Immigration — Before Your Arrival (Entry Criteria and Visa Requirements; page updated 2026-08-10)",
+        "url": "https://www.immigration.gov.bs/entry-requirements/before-your-arrival/"
+      },
+      {
+        "claim": "Italy's travel advice says no visa is needed for stays under 90 days.",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/BHS"
+      }
+    ]
   },
   {
     "nationality": "NL",
@@ -31030,14 +31349,26 @@
       "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
       "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
     ],
-    "notes": "Visa-free: Italy is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "notes": "Visa-free: Italy is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE). Italy's travel advice for Italian passports: valid for at least 6 months on your arrival date, plus a return ticket (one-way tickets are refused).",
     "legal_source": {
       "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
       "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
     },
-    "verified_at": "2026-10-10",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+        "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+      },
+      {
+        "claim": "Different passport rule from Italy's advice: see notes",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/ECU"
+      }
+    ]
   },
   {
     "nationality": "NL",
@@ -32999,16 +33330,31 @@
       "maxDays": 180
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid for your whole stay"
     ],
     "notes": "Italian citizens are on Armenia's list of countries whose citizens, with all types of passports, are unilaterally exempt from the visa requirement and \"can stay in the territory of the Republic of Armenia up to 180 days per year\". Armenia counts 180 days in one year; we show the stricter reading, 180 days in any 365-day window.",
     "legal_source": {
       "name": "Ministry of Foreign Affairs of Armenia — countries whose citizens are unilaterally exempt from the visa requirement (updated 02.02.2024)",
       "url": "https://www.mfa.am/en/visafreelist"
     },
-    "verified_at": "2026-10-20",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "whole_stay"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Armenia — countries whose citizens are unilaterally exempt from the visa requirement (updated 02.02.2024)",
+        "url": "https://www.mfa.am/en/visafreelist"
+      },
+      {
+        "claim": "Passport validity for Italian passport holders: Passport valid for your whole stay",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/ARM"
+      }
+    ]
   },
   {
     "nationality": "ES",
@@ -37470,14 +37816,26 @@
       "Confirmed accommodation",
       "Enough money for your stay (at least US$150 or equivalent per day)"
     ],
-    "notes": "Seychelles needs no visa. A Visitor's Permit is issued free on arrival for holidays, business or visiting friends and family, for up to three months (we count that as 90 days). It can be extended in three-month steps to a maximum of twelve months, for SCR 5,000 per extension, at permits.ics.gov.sc or the Immigration office in Victoria.",
+    "notes": "Seychelles needs no visa. A Visitor's Permit is issued free on arrival for holidays, business or visiting friends and family, for up to three months (we count that as 90 days). It can be extended in three-month steps to a maximum of twelve months, for SCR 5,000 per extension, at permits.ics.gov.sc or the Immigration office in Victoria. Italy's travel advice for Italian passports: valid for your whole stay. Italy's travel advice says the permit issued on arrival is never more than 30 days at first, extendable up to 3 months.",
     "legal_source": {
       "name": "Seychelles Immigration and Civil Status — Visitor's Permit (with Visiting Seychelles)",
       "url": "https://www.ics.gov.sc/permits/visitors-permit"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Seychelles Immigration and Civil Status — Visitor's Permit (with Visiting Seychelles)",
+        "url": "https://www.ics.gov.sc/permits/visitors-permit"
+      },
+      {
+        "claim": "Different passport rule from Italy's advice: see notes",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/SYC"
+      }
+    ]
   },
   {
     "nationality": "ES",
@@ -37548,16 +37906,34 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Valid passport"
+      "Valid passport",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
       "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
       "url": "https://gis.gov.gh/visas/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
+        "url": "https://gis.gov.gh/visas/"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
+      }
+    ]
   },
   {
     "nationality": "GB",
@@ -37568,7 +37944,8 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Passport valid for at least 6 months after your arrival date"
+      "Passport valid for at least 6 months after your arrival date",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
@@ -37594,6 +37971,16 @@
         "claim": "Passport validity for British passport holders: Passport validity requirements To enter Ghana, your passport must have an expiry date at least 6 months after the date you arrive.",
         "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-07-02)",
         "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
       }
     ]
   },
@@ -37606,7 +37993,8 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Passport valid for at least 6 months after your departure date from Ghana"
+      "Passport valid for at least 6 months after your departure date from Ghana",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
@@ -37632,6 +38020,16 @@
         "claim": "Passport validity for Canadian passport holders: Your passport must be valid for at least 6 months beyond the date you expect to leave Ghana.",
         "name": "Government of Canada — Travel advice: Ghana, Entry and exit requirements (last updated 26 May 2026)",
         "url": "https://travel.gc.ca/destinations/ghana"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
       }
     ]
   },
@@ -37644,16 +38042,34 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Valid passport"
+      "Valid passport",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
       "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
       "url": "https://gis.gov.gh/visas/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
+        "url": "https://gis.gov.gh/visas/"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
+      }
+    ]
   },
   {
     "nationality": "NZ",
@@ -37664,16 +38080,34 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Valid passport"
+      "Valid passport",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
       "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
       "url": "https://gis.gov.gh/visas/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
+        "url": "https://gis.gov.gh/visas/"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
+      }
+    ]
   },
   {
     "nationality": "JP",
@@ -37684,7 +38118,8 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Valid passport"
+      "Valid passport",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions. Japan's MOFA says the entry stamp allows a stay of 30 or 60 days whatever the purpose, and that visas can't be obtained at the airport.",
     "legal_source": {
@@ -37704,6 +38139,16 @@
         "claim": "Japan's MOFA says the entry stamp allows a stay of 30 or 60 days whatever the purpose, and that visas can't be obtained at the airport.",
         "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ (査証、出入国審査等)",
         "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_096.html"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
       }
     ]
   },
@@ -37716,16 +38161,34 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Valid passport"
+      "Valid passport",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
       "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
       "url": "https://gis.gov.gh/visas/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
+        "url": "https://gis.gov.gh/visas/"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
+      }
+    ]
   },
   {
     "nationality": "SG",
@@ -37736,16 +38199,34 @@
       "maxDays": 60
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Valid passport",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Ghana's visa regime table lists Singapore (with Trinidad and Tobago and Mauritius) as not needing a visa, for all passport types, for up to 60 days. Entry is still subject to the conditions checked at the border.",
     "legal_source": {
       "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
       "url": "https://gis.gov.gh/visas/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
+        "url": "https://gis.gov.gh/visas/"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
+      }
+    ]
   },
   {
     "nationality": "BR",
@@ -37756,16 +38237,34 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Valid passport"
+      "Valid passport",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Ghana's visa regime table exempts only diplomatic and service passport holders of your country (for 90 days), so ordinary passport holders need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
       "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
       "url": "https://gis.gov.gh/visas/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
+        "url": "https://gis.gov.gh/visas/"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
+      }
+    ]
   },
   {
     "nationality": "MX",
@@ -37776,16 +38275,34 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Valid passport"
+      "Valid passport",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
       "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
       "url": "https://gis.gov.gh/visas/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
+        "url": "https://gis.gov.gh/visas/"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
+      }
+    ]
   },
   {
     "nationality": "AR",
@@ -37796,16 +38313,34 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Valid passport"
+      "Valid passport",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
       "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
       "url": "https://gis.gov.gh/visas/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
+        "url": "https://gis.gov.gh/visas/"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
+      }
+    ]
   },
   {
     "nationality": "CL",
@@ -37816,16 +38351,34 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Valid passport"
+      "Valid passport",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
       "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
       "url": "https://gis.gov.gh/visas/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
+        "url": "https://gis.gov.gh/visas/"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
+      }
+    ]
   },
   {
     "nationality": "MY",
@@ -37836,16 +38389,34 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Valid passport"
+      "Valid passport",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
       "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
       "url": "https://gis.gov.gh/visas/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
+        "url": "https://gis.gov.gh/visas/"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
+      }
+    ]
   },
   {
     "nationality": "IL",
@@ -37856,16 +38427,34 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Valid passport"
+      "Valid passport",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
       "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
       "url": "https://gis.gov.gh/visas/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
+        "url": "https://gis.gov.gh/visas/"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
+      }
+    ]
   },
   {
     "nationality": "UA",
@@ -37876,16 +38465,34 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Valid passport"
+      "Valid passport",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
       "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
       "url": "https://gis.gov.gh/visas/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
+        "url": "https://gis.gov.gh/visas/"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
+      }
+    ]
   },
   {
     "nationality": "CN",
@@ -37896,16 +38503,34 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Valid passport"
+      "Valid passport",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
       "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
       "url": "https://gis.gov.gh/visas/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
+        "url": "https://gis.gov.gh/visas/"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
+      }
+    ]
   },
   {
     "nationality": "IN",
@@ -37916,16 +38541,34 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Valid passport"
+      "Valid passport",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
       "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
       "url": "https://gis.gov.gh/visas/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
+        "url": "https://gis.gov.gh/visas/"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
+      }
+    ]
   },
   {
     "nationality": "FR",
@@ -37936,7 +38579,8 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Valid passport"
+      "Valid passport",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions. France's travel advice says the entry stamp allows a stay of at most 60 days.",
     "legal_source": {
@@ -37956,6 +38600,16 @@
         "claim": "France's travel advice says the entry stamp allows a stay of at most 60 days.",
         "name": "France Diplomatie — Conseils aux voyageurs, Entrée / séjour",
         "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/ghana/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
       }
     ]
   },
@@ -37968,16 +38622,34 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Valid passport"
+      "Valid passport",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Ghana's visa regime table exempts only diplomatic and service passport holders of your country (for 90 days), so ordinary passport holders need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
       "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
       "url": "https://gis.gov.gh/visas/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
+        "url": "https://gis.gov.gh/visas/"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
+      }
+    ]
   },
   {
     "nationality": "IT",
@@ -37988,16 +38660,34 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Valid passport"
+      "Valid passport",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
       "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
       "url": "https://gis.gov.gh/visas/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
+        "url": "https://gis.gov.gh/visas/"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
+      }
+    ]
   },
   {
     "nationality": "ES",
@@ -38008,16 +38698,34 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Valid passport"
+      "Valid passport",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
       "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
       "url": "https://gis.gov.gh/visas/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
+        "url": "https://gis.gov.gh/visas/"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
+      }
+    ]
   },
   {
     "nationality": "NL",
@@ -38028,7 +38736,8 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Passport valid for at least 6 months on your arrival date"
+      "Passport valid for at least 6 months on your arrival date",
+      "Yellow fever vaccination certificate"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
@@ -38054,6 +38763,16 @@
         "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van aankomst in het land.",
         "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 23-06-2026), Paspoort",
         "url": "https://www.nederlandwereldwijd.nl/reisadvies/ghana"
+      },
+      {
+        "claim": "To enter Ghana, you must have a certificate to prove you've had a yellow fever vaccination",
+        "name": "GOV.UK (FCDO) — Ghana travel advice: Entry requirements, vaccine requirements (updated 2026-07-02)",
+        "url": "https://www.gov.uk/foreign-travel-advice/ghana/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: yellow fever vaccination certificate required for entry",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Ghana, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GHA"
       }
     ]
   },
@@ -38394,17 +39113,35 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for at least 6 months from your arrival date, with 3 completely blank pages",
       "A valid return air ticket if you arrive by air; if you arrive by land or water, enough money for your stay and departure"
     ],
-    "notes": "Your country is on Zambia's list of nationals who don't need a visa. All ordinary visitors, business visitors and tourists get 90 free days in any 12 months, counted from the day of first entry. The days may not all be given at once; you can have them extended free of charge at the nearest Immigration Office.",
+    "notes": "Your country is on Zambia's list of nationals who don't need a visa. All ordinary visitors, business visitors and tourists get 90 free days in any 12 months, counted from the day of first entry. The days may not all be given at once; you can have them extended free of charge at the nearest Immigration Office. Italy's travel advice says the entry stamp gives 30 days, extendable twice by 30 days, up to 90 days from first entry.",
     "legal_source": {
       "name": "Zambia Department of Immigration — Nationals Who Do Not Require Visa (with For Visitors)",
       "url": "https://www.zambiaimmigration.gov.zm/nationals-who-dont-require-visa/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Zambia Department of Immigration — Nationals Who Do Not Require Visa (with For Visitors)",
+        "url": "https://www.zambiaimmigration.gov.zm/nationals-who-dont-require-visa/"
+      },
+      {
+        "claim": "Passport validity for Italian passport holders: Passport valid for at least 6 months from your arrival date, with 3 completely blank pages",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/ZMB"
+      }
+    ]
   },
   {
     "nationality": "ES",
@@ -39912,10 +40649,10 @@
       "kind": "visa_required"
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for your whole stay (expiry after your return date), with at least 1 blank page",
       "Mauritius All in One Travel Form, completed online before you arrive (keep the QR code)"
     ],
-    "notes": "Holders of passports issued by EU countries are exempt from Mauritius's visa regulations, and the country list marks your country \"No visa required\". No fixed stay is stated for visa-free visitors: the Immigration Officer at the port of entry decides how long you can stay on each visit. (For tourist visas, the office says a maximum of six months may be granted in a calendar year, case by case.) Staying beyond the period granted is an offence liable to prosecution.",
+    "notes": "Holders of passports issued by EU countries are exempt from Mauritius's visa regulations, and the country list marks your country \"No visa required\". No fixed stay is stated for visa-free visitors: the Immigration Officer at the port of entry decides how long you can stay on each visit. (For tourist visas, the office says a maximum of six months may be granted in a calendar year, case by case.) Staying beyond the period granted is an offence liable to prosecution. Italy's travel advice says no visa is needed for up to 90 days, and a return ticket is required.",
     "legal_source": {
       "name": "Passport and Immigration Office, Mauritius — Visa Requirements, with the Visa Requirement Country-wise list (2025)",
       "url": "https://passport.govmu.org/passport/?page_id=605"
@@ -39938,8 +40675,16 @@
         "claim": "Fill in the Mauritius All in One travel form online before you arrive",
         "name": "Nederland Wereldwijd — Reisadvies Mauritius (Reisdocumenten en inreisregels)",
         "url": "https://www.nederlandwereldwijd.nl/reisadvies/mauritius"
+      },
+      {
+        "claim": "Passport validity for Italian passport holders: Passport valid for your whole stay (expiry after your return date), with at least 1 blank page",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/MUS"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "whole_stay"
+    }
   },
   {
     "nationality": "ES",
@@ -40747,7 +41492,7 @@
     },
     "documentsNeeded": [
       "A Zimbabwe visa: on arrival at the port of entry after paying the visa fee, or online in advance at evisa.gov.zw (the Department encourages applying online first)",
-      "Valid passport"
+      "Passport valid for at least 6 months on your arrival date"
     ],
     "notes": "Your country is in Zimbabwe's Category B: you need a visa, which you can get at the port of entry after paying the fee or apply for online before you travel. The Department encourages completing the Zimbabwe Entry Declaration Form before travelling. The official pages don't state the visa fee or how long the stay lasts; check them on the eVisa portal. Entry declaration: the Netherlands' and Japan's advice say the online Zimbabwe Entry Declaration Form is needed to enter, not just encouraged.",
     "legal_source": {
@@ -40772,8 +41517,19 @@
         "claim": "Completed entry declaration form needed to enter Zimbabwe",
         "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ",
         "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_106.html"
+      },
+      {
+        "claim": "Passport validity for Italian passport holders: Passport valid for at least 6 months on your arrival date",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — scheda paese, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/ZWE"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    }
   },
   {
     "nationality": "ES",
