@@ -123,7 +123,7 @@
     },
     "documentsNeeded": [
       "ESTA travel authorization approved before departure",
-      "E-passport with a digital chip (machine-readable, biometric)"
+      "Passport valid for your whole stay (from entry until your planned departure)"
     ],
     "legal_source": {
       "name": "Visa Waiver Program, 8 U.S.C. §1187(a)(1) and (a)(3)",
@@ -148,8 +148,16 @@
         "claim": "Temporary entry restrictions for travellers recently in the DRC, Uganda or South Sudan (Ebola)",
         "name": "Auswärtiges Amt — USA: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/usavereinigtestaatensicherheit-201382"
+      },
+      {
+        "claim": "Passport validity for Japanese passport holders: Passport valid for your whole stay (from entry until your planned departure)",
+        "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ (査証、出入国審査等)",
+        "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_221.html"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "whole_stay"
+    }
   },
   {
     "nationality": "KR",
@@ -910,9 +918,22 @@
       "name": "IRCC: entry requirements by country or territory (eTA-required list)",
       "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/entry-requirements-country.html"
     },
-    "verified_at": "2026-10-19",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "notes": " Japan's MOFA says the Japan–Canada visa-exemption arrangement covers stays of up to 3 months, and that the eTA applies to arrivals by air only (not land or sea).",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "IRCC: entry requirements by country or territory (eTA-required list)",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/entry-requirements-country.html"
+      },
+      {
+        "claim": "Japan's MOFA says the Japan–Canada visa-exemption arrangement covers stays of up to 3 months, and that the eTA applies to arrivals by air only (not land or sea).",
+        "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ (査証、出入国審査等)",
+        "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_222.html"
+      }
+    ]
   },
   {
     "nationality": "KR",
@@ -2254,7 +2275,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for at least 30 days beyond your planned stay (after departure), with at least 2 blank visa pages",
       "Online traveller declaration, submitted before you travel (required for all travellers entering or leaving South Africa since 1 July 2026)"
     ],
     "notes": "South Africa's Electronic Travel Authorisation (ETA) launched 12 Aug 2026 at OR Tambo International Airport (per DHA's own press release). Secondary reporting indicates it is initially optional for nationalities already on the visa-exemption list, expanding more broadly in September 2026 — DHA's own press release does not state eligibility or mandatory/optional status, so this could not be confirmed against a primary source in this pass. Re-verify before relying on this long-term (see data/UNVERIFIED/TODO.md).",
@@ -2280,8 +2301,19 @@
         "claim": "Cross-check: 'You must complete and submit an online traveller declaration before entering or leaving South Africa'",
         "name": "Government of Canada — Travel advice: South Africa, Entry and exit requirements",
         "url": "https://travel.gc.ca/destinations/south-africa"
+      },
+      {
+        "claim": "Passport validity for Japanese passport holders: Passport valid for at least 30 days beyond your planned stay (after departure), with at least 2 blank visa pages",
+        "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ (査証、出入国審査等)",
+        "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_122.html"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 30,
+      "unit": "days",
+      "from": "departure"
+    }
   },
   {
     "nationality": "KR",
@@ -4461,14 +4493,26 @@
       "unit": "months",
       "from": "arrival"
     },
-    "notes": "Japanese passport holders are on the Egypt e-Visa Portal's own list of nationalities eligible to apply for an e-Visa (the FAQ page states \"a visa is required prior to entry into The Arab Republic of Egypt\" and that eligible nationals \"may be issued with an e-Visa upon application on the Egypt e-Visa Portal\" — this is legally a visa, issued entirely online without an embassy visit, not a lighter-weight travel authorisation, so it is modeled here as visa_required rather than eta_required). The e-Visa portal does not publish a specific permitted-stay length (number of days) anywhere in its publicly reachable FAQ, About, How-to-Apply, Disclaimer or Terms pages — the commonly repeated \"30 days\" figure on travel-blog and visa-agency sites was not confirmed against this or any other primary Egyptian government source in this pass, so no fixed maxDays is published (stayPolicy stays at visa_required / no computable duration) rather than guessed. The e-Visa is not available to holders of Diplomatic, Service, Special, Official, Temporary, Nansen, Refugee, Mission, Alien's, or July-51-Agreement passports — those travelers must apply at an Egyptian embassy or consulate instead.",
+    "notes": "Japanese passport holders are on the Egypt e-Visa Portal's own list of nationalities eligible to apply for an e-Visa (the FAQ page states \"a visa is required prior to entry into The Arab Republic of Egypt\" and that eligible nationals \"may be issued with an e-Visa upon application on the Egypt e-Visa Portal\" — this is legally a visa, issued entirely online without an embassy visit, not a lighter-weight travel authorisation, so it is modeled here as visa_required rather than eta_required). The e-Visa portal does not publish a specific permitted-stay length (number of days) anywhere in its publicly reachable FAQ, About, How-to-Apply, Disclaimer or Terms pages — the commonly repeated \"30 days\" figure on travel-blog and visa-agency sites was not confirmed against this or any other primary Egyptian government source in this pass, so no fixed maxDays is published (stayPolicy stays at visa_required / no computable duration) rather than guessed. The e-Visa is not available to holders of Diplomatic, Service, Special, Official, Temporary, Nansen, Refugee, Mission, Alien's, or July-51-Agreement passports — those travelers must apply at an Egyptian embassy or consulate instead. Japan's MOFA (as of June 2024) lists a visa on arrival for ordinary Japanese passports at Cairo and other airports: 30 days, US$25 in cash, passport valid 6 months or more; at Sharm El-Sheikh a 15-day Sinai-only permit is given.",
     "legal_source": {
       "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
       "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
     },
-    "verified_at": "2026-10-19",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+        "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+      },
+      {
+        "claim": "Japan's MOFA (as of June 2024) lists a visa on arrival for ordinary Japanese passports at Cairo and other airports: 30 days, US$25 in cash, passport valid 6 months or more; at Sharm El-Sheikh a 15-day Sinai-only permit is given.",
+        "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ (査証、出入国審査等)",
+        "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_094.html"
+      }
+    ]
   },
   {
     "nationality": "KR",
@@ -5749,16 +5793,31 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid until at least the end of your planned stay"
     ],
     "legal_source": {
       "name": "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates — List of countries whose citizens are exempted from entry visa into Morocco",
       "url": "https://www.consulat.ma/en/list-countries-whose-citizens-are-exempted-entry-visa-morocco"
     },
-    "verified_at": "2026-10-19",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
-    "notes": "Morocco grants visa-exempt nationals a tourist stay of up to 90 days per entry (Moroccan National Tourist Office / ONMT, visitmorocco.com: \"For all nationalities, the maximum duration of the tourist trip is 90 days\"); a one-time 90-day extension can be requested at the nearest police station before the initial period expires. No visa is required, but the traveler must still receive an entry stamp from a Direction Générale de la Sûreté Nationale (DGSN) border-police officer on arrival."
+    "notes": "Morocco grants visa-exempt nationals a tourist stay of up to 90 days per entry (Moroccan National Tourist Office / ONMT, visitmorocco.com: \"For all nationalities, the maximum duration of the tourist trip is 90 days\"); a one-time 90-day extension can be requested at the nearest police station before the initial period expires. No visa is required, but the traveler must still receive an entry stamp from a Direction Générale de la Sûreté Nationale (DGSN) border-police officer on arrival.",
+    "passportValidity": {
+      "kind": "whole_stay"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates — List of countries whose citizens are exempted from entry visa into Morocco",
+        "url": "https://www.consulat.ma/en/list-countries-whose-citizens-are-exempted-entry-visa-morocco"
+      },
+      {
+        "claim": "Passport validity for Japanese passport holders: Passport valid until at least the end of your planned stay",
+        "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ (査証、出入国審査等)",
+        "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_124.html"
+      }
+    ]
   },
   {
     "nationality": "KR",
@@ -6194,7 +6253,7 @@
       "Recent passport-style photograph (uploaded with the online application)",
       "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)"
     ],
-    "notes": "India's e-Tourist Visa (e-T1 V) is issued as an Electronic Travel Authorization (ETA): duration \"One Month (30 Days)\" from the date of first arrival, multiple entries permitted within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries), but both cap total stay at 180 days per calendar year rather than granting a longer single visit — this row reflects the standard 30-day option. Applicants must hold a passport valid at least 6 months from the date of application and show a return/onward ticket and sufficient funds; apply online at least 4 days before arrival. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "notes": "India's e-Tourist Visa (e-T1 V) is issued as an Electronic Travel Authorization (ETA): duration \"One Month (30 Days)\" from the date of first arrival, multiple entries permitted within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries), but both cap total stay at 180 days per calendar year rather than granting a longer single visit — this row reflects the standard 30-day option. Applicants must hold a passport valid at least 6 months from the date of application and show a return/onward ticket and sufficient funds; apply online at least 4 days before arrival. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category. Japan's MOFA says Japanese nationals can get a visa on arrival at designated airports for tourism and similar purposes, for stays of up to 60 days.",
     "legal_source": {
       "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
       "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
@@ -6217,6 +6276,11 @@
         "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
         "name": "France Diplomatie — Conseils aux voyageurs: inde, Entrée / séjour",
         "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/inde/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Japan's MOFA says Japanese nationals can get a visa on arrival at designated airports for tourism and similar purposes, for stays of up to 60 days.",
+        "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ (査証、出入国審査等)",
+        "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_001.html"
       }
     ]
   },
@@ -6775,14 +6839,26 @@
       "unit": "days",
       "from": "departure"
     },
-    "notes": "MFA's country list states this exemption as \"up to 90 days\" without repeating the \"180-day period\" wording used for some other nationalities on the same page; applied here under Türkiye's general 90-days-in-180-days visa-exemption rule (Law No. 6458), which the same MFA page states explicitly for other exempt nationalities (e.g. United States, Canada, Australia). See data/UNVERIFIED/TODO.md for this caveat.",
+    "notes": "MFA's country list states this exemption as \"up to 90 days\" without repeating the \"180-day period\" wording used for some other nationalities on the same page; applied here under Türkiye's general 90-days-in-180-days visa-exemption rule (Law No. 6458), which the same MFA page states explicitly for other exempt nationalities (e.g. United States, Canada, Australia). See data/UNVERIFIED/TODO.md for this caveat. Japan's MOFA says 150 days' remaining passport validity is required.",
     "legal_source": {
       "name": "Republic of Türkiye Ministry of Foreign Affairs — Visa Information for Foreigners",
       "url": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
     },
-    "verified_at": "2026-10-19",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Republic of Türkiye Ministry of Foreign Affairs — Visa Information for Foreigners",
+        "url": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
+      },
+      {
+        "claim": "Japan's MOFA says 150 days' remaining passport validity is required.",
+        "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ (査証、出入国審査等)",
+        "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_052.html"
+      }
+    ]
   },
   {
     "nationality": "KR",
@@ -7474,14 +7550,26 @@
       "Return or onward travel ticket",
       "Valid health insurance"
     ],
-    "notes": "UAE Ministry of Foreign Affairs lists Japanese passport holders as \"Visa Free\" (checked 2026-10-05). The permitted stay could not be confirmed on a primary source in this pass: the UAE's own portals (u.ae, ICP, GDRFA) were unreachable or no longer list it, and Japanese government travel advice was unreachable or gives no stay length. Every nationality where a government source states it (UK, Canada, Singapore, and the EU states) gets 90 days within a 180-day period from first entry, so don't assume a fresh 90 days per visit. (Corrected 2026-10-05: previously a fresh 90 days per entry, which no source supports.)",
+    "notes": "UAE Ministry of Foreign Affairs lists Japanese passport holders as \"Visa Free\" (checked 2026-10-05). The permitted stay could not be confirmed on a primary source in this pass: the UAE's own portals (u.ae, ICP, GDRFA) were unreachable or no longer list it, and Japanese government travel advice was unreachable or gives no stay length. Every nationality where a government source states it (UK, Canada, Singapore, and the EU states) gets 90 days within a 180-day period from first entry, so don't assume a fresh 90 days per visit. (Corrected 2026-10-05: previously a fresh 90 days per entry, which no source supports.) Japan's MOFA (as of January 2024) says a 30-day stay permit is given on entry, with a 10-day grace period to leave.",
     "legal_source": {
       "name": "UAE Ministry of Foreign Affairs — Visa Exemptions for Non-Citizens",
       "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
     },
-    "verified_at": "2026-10-05",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "UAE Ministry of Foreign Affairs — Visa Exemptions for Non-Citizens",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Japan's MOFA (as of January 2024) says a 30-day stay permit is given on entry, with a 10-day grace period to leave.",
+        "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ (査証、出入国審査等)",
+        "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_042.html"
+      }
+    ]
   },
   {
     "nationality": "KR",
@@ -7845,14 +7933,26 @@
       "unit": "months",
       "from": "departure"
     },
-    "notes": "Japanese nationals are visa-free under Executive Order No. 408 for an initial stay of 30 days, extendable at a Bureau of Immigration office (first extension adds 29 days for a fee). Note: Japan is separately listed as one of the eVisaPH-eligible nationalities for other visa categories, but for ordinary tourism the standard 30-day visa waiver applies.",
+    "notes": "Japanese nationals are visa-free under Executive Order No. 408 for an initial stay of 30 days, extendable at a Bureau of Immigration office (first extension adds 29 days for a fee). Note: Japan is separately listed as one of the eVisaPH-eligible nationalities for other visa categories, but for ordinary tourism the standard 30-day visa waiver applies. Japan's MOFA says the Philippine government allows passports from certain countries, including Japan, with less than 6 months' validity, but still recommends 6 months beyond the stay because of airline and entry refusals.",
     "legal_source": {
       "name": "eVisaPH (Bureau of Immigration) - Free to Enter the Philippines Without Visa",
       "url": "https://evisa.gov.ph/page/policy?l1=Non-Immigrant+Visas&l2=Free+to+enter+the+Philippines+without+Visa"
     },
-    "verified_at": "2026-10-19",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "eVisaPH (Bureau of Immigration) - Free to Enter the Philippines Without Visa",
+        "url": "https://evisa.gov.ph/page/policy?l1=Non-Immigrant+Visas&l2=Free+to+enter+the+Philippines+without+Visa"
+      },
+      {
+        "claim": "Japan's MOFA says the Philippine government allows passports from certain countries, including Japan, with less than 6 months' validity, but still recommends 6 months beyond the stay because of airline and entry refusals.",
+        "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ (査証、出入国審査等)",
+        "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_013.html"
+      }
+    ]
   },
   {
     "nationality": "KR",
@@ -11525,14 +11625,26 @@
       "unit": "months",
       "from": "arrival"
     },
-    "notes": "Embassy of Singapore in Tokyo confirms Japanese nationals do not need a visa for leisure/business travel, but its page does not state an exact day count. 90 days is used as the standard figure widely reported for Japan (consistent with reciprocal treatment for Japan/South Korea/Five Eyes nationals) - not independently confirmed with an explicit day figure on a live official page this session; flagged for follow-up. Re-checked 2026-09-10: no primary source states a fixed day count. Singapore's own Embassy in Tokyo confirms visa-exempt entry but does not state a duration, and no MOFA Japan or Japanese-Embassy-in-Singapore page specifying an exact figure could be located. The commonly-cited \"90 days\" figure remains unconfirmed against any primary source.",
+    "notes": "Embassy of Singapore in Tokyo confirms Japanese nationals do not need a visa for leisure/business travel, but its page does not state an exact day count. 90 days is used as the standard figure widely reported for Japan (consistent with reciprocal treatment for Japan/South Korea/Five Eyes nationals) - not independently confirmed with an explicit day figure on a live official page this session; flagged for follow-up. Re-checked 2026-09-10: no primary source states a fixed day count. Singapore's own Embassy in Tokyo confirms visa-exempt entry but does not state a duration, and no MOFA Japan or Japanese-Embassy-in-Singapore page specifying an exact figure could be located. The commonly-cited \"90 days\" figure remains unconfirmed against any primary source. Japan's MOFA says no visa is needed for stays within 3 months, and that a 14–30-day stay permit is stamped on entry.",
     "legal_source": {
       "name": "Embassy of the Republic of Singapore in Tokyo - Visa Information",
       "url": "https://tokyo.mfa.gov.sg/visa-information/"
     },
-    "verified_at": "2026-09-10",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-27",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassy of the Republic of Singapore in Tokyo - Visa Information",
+        "url": "https://tokyo.mfa.gov.sg/visa-information/"
+      },
+      {
+        "claim": "Japan's MOFA says no visa is needed for stays within 3 months, and that a 14–30-day stay permit is stamped on entry.",
+        "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ (査証、出入国審査等)",
+        "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_005.html"
+      }
+    ]
   },
   {
     "nationality": "KR",
@@ -16053,7 +16165,7 @@
       "unit": "months",
       "from": "arrival"
     },
-    "notes": "Japan is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "notes": "Japan is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable. Japan's MOFA says that while 6 months' validity is generally required, Japanese passports can be accepted if valid for at least the planned stay.",
     "legal_source": {
       "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
       "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
@@ -16076,6 +16188,11 @@
         "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
         "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
         "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Japan's MOFA says that while 6 months' validity is generally required, Japanese passports can be accepted if valid for at least the planned stay.",
+        "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ (査証、出入国審査等)",
+        "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_008.html"
       }
     ]
   },
@@ -17483,16 +17600,31 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid for your whole stay"
     ],
     "notes": "\"Netherlands\" appears on the Moroccan Ministry of Foreign Affairs' list of countries whose citizens are exempted from an entry visa (consulat.ma, checked 2026-10-02), with no stay-limit annotation. The Moroccan National Tourist Office (visitmorocco.com, Formalities) states: \"For all nationalities, the maximum duration of the tourist trip is 90 days. A request for an extension can be made at the nearest police station to stay an additional 90 days.\"",
     "legal_source": {
       "name": "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates — List of countries whose citizens are exempted from entry visa into Morocco",
       "url": "https://www.consulat.ma/en/list-countries-whose-citizens-are-exempted-entry-visa-morocco"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "whole_stay"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates — List of countries whose citizens are exempted from entry visa into Morocco",
+        "url": "https://www.consulat.ma/en/list-countries-whose-citizens-are-exempted-entry-visa-morocco"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet geldig zijn tijdens de hele periode dat u in het land bent.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 30-07-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/marokko"
+      }
+    ]
   },
   {
     "nationality": "NL",
@@ -17514,7 +17646,7 @@
       "unit": "months",
       "from": "arrival"
     },
-    "notes": "The Netherlands is not on either of Kenya's eTA-exemption lists (the 90-day and 60-day national lists under the Kenya Citizenship and Immigration (Amendment) Rules, 2025, as reproduced on etakenya.go.ke's How to Apply page, checked 2026-10-02), so Dutch nationals need an approved eTA before travel. The eTA is valid for travel within 90 days of issuance; \"once you arrive, the duration of your stay is determined at the point of entry\" — no fixed number of days is guaranteed, so none is shown. The Standard (single-entry) eTA is listed at USD 30 on the official eligibility page; a One Year Multi-Entry eTA is listed at USD 300.",
+    "notes": "The Netherlands is not on either of Kenya's eTA-exemption lists (the 90-day and 60-day national lists under the Kenya Citizenship and Immigration (Amendment) Rules, 2025, as reproduced on etakenya.go.ke's How to Apply page, checked 2026-10-02), so Dutch nationals need an approved eTA before travel. The eTA is valid for travel within 90 days of issuance; \"once you arrive, the duration of your stay is determined at the point of entry\" — no fixed number of days is guaranteed, so none is shown. The Standard (single-entry) eTA is listed at USD 30 on the official eligibility page; a One Year Multi-Entry eTA is listed at USD 300. The Netherlands' advice for Dutch passports says at least 6 months' validity on the day you leave, and 1 blank page; this row keeps the rule from its own source.",
     "legal_source": {
       "name": "Directorate of Immigration Services — Kenya eTA: How to Apply / Eligibility",
       "url": "https://www.etakenya.go.ke/form/apply/how-to-apply"
@@ -17537,6 +17669,11 @@
         "claim": "Cross-check: 'As of October 5, 2026, the eTA application includes a mandatory travel health insurance provided by a national insurer for stays of less than 12 months'",
         "name": "Government of Canada — Travel advice: Kenya, Entry and exit requirements (updated 15 October 2026)",
         "url": "https://travel.gc.ca/destinations/kenya"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van vertrek uit het land. In uw paspoort moet 1 lege pagina staan.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 20-10-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/kenia"
       }
     ]
   },
@@ -17558,7 +17695,7 @@
       "Online landing and departure cards, completed before entry and exit (Nigeria Immigration Service)",
       "Online health declaration (Nigeria Health Declaration Form), completed before you travel"
     ],
-    "notes": "The Nigeria Immigration Service states the Tourism Visa (F5A) is for \"citizens of all countries except ECOWAS member States and other countries which Nigeria has entered into visa abolition/waiver agreements\". The Netherlands is not an ECOWAS member, and no primary source found in this pass names it as having a visa-waiver agreement with Nigeria for ordinary passports (NIS publishes no such list). F5A terms (checked 2026-10-02): validity 90 days from issuance, single entry, stay of 30 days, not extendable, no employment. Fees were not verified — confirm on the official e-Visa portal (evisa.immigration.gov.ng). Health declaration: Canada's travel advice says all travellers must complete an online health declaration form before travelling to Nigeria; the UK's says it's required for travellers coming from countries with Ebola transmission.",
+    "notes": "The Nigeria Immigration Service states the Tourism Visa (F5A) is for \"citizens of all countries except ECOWAS member States and other countries which Nigeria has entered into visa abolition/waiver agreements\". The Netherlands is not an ECOWAS member, and no primary source found in this pass names it as having a visa-waiver agreement with Nigeria for ordinary passports (NIS publishes no such list). F5A terms (checked 2026-10-02): validity 90 days from issuance, single entry, stay of 30 days, not extendable, no employment. Fees were not verified — confirm on the official e-Visa portal (evisa.immigration.gov.ng). Health declaration: Canada's travel advice says all travellers must complete an online health declaration form before travelling to Nigeria; the UK's says it's required for travellers coming from countries with Ebola transmission. The Netherlands' advice for Dutch passports says at least 6 months' validity on the day you leave; this row keeps the rule from its own source.",
     "legal_source": {
       "name": "Nigeria Immigration Service — Tourism Visa (F5A)",
       "url": "https://immigration.gov.ng/info-center/tourism-visa-f5a/"
@@ -17596,6 +17733,11 @@
         "claim": "Complete the online health declaration before travelling to Nigeria",
         "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ",
         "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_115.html"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van vertrek uit het land.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 06-07-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/nigeria"
       }
     ]
   },
@@ -17612,7 +17754,7 @@
       "url": "https://www.migration.gov.rw/visa-on-arrival"
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for at least 6 months on your arrival date",
       "Visa fee payable on arrival or online in advance (not exceeding USD 50 for a single-entry visa, USD 70 for multiple entry)"
     ],
     "notes": "Rwanda's DGIE grants visa on arrival to citizens of all countries (since 1 Jan 2018). The Netherlands is not a member of the African Union or the Commonwealth, and is not among La Francophonie's members, associate members or observers (OIF official list, francophonie.org, checked 2026-10-02), nor on Rwanda's named 90-day free-visa list — so the fee-paying visa on arrival applies, for a 30-day visit. The DGIE states visa fees \"must not exceed 50 USD for single entry visa or 70 USD for multiple entry\". The visa can also be applied for online in advance via the Irembo government portal. Ebola: Rwanda screens arrivals at Kigali airport and restricts its border with the DRC; Germany's advice says foreign travellers who were in the DRC in the 30 days before arrival, even in transit, are refused entry.",
@@ -17634,8 +17776,19 @@
         "claim": "Ebola-related health screening and border restrictions with the DRC",
         "name": "Auswärtiges Amt — Ruanda: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/ruandasicherheit-212026"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van aankomst in het land.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 15-09-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/rwanda"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    }
   },
   {
     "nationality": "NL",
@@ -17646,7 +17799,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for at least 30 days after your departure date from South Africa",
       "Online traveller declaration, submitted before you travel (required for all travellers entering or leaving South Africa since 1 July 2026)"
     ],
     "notes": "DHA's Visa Exemption List shows \"Netherlands (The Kingdom of)\" with 90 Days in the Ordinary passport column (checked 2026-10-02). South Africa's Electronic Travel Authorisation (ETA) launched 12 Aug 2026; per the Minister of Home Affairs' launch address (DHA, 12 Aug 2026), it \"will progressively become compulsory for short stay visits from countries that require port-of-entry visas\", while for visa-exempt travellers it is available \"on a voluntary basis\" (for the faster ETA queue, or to apply to extend a stay by up to 90 days). It is not required for visa-exempt nationals as of that address. Re-verify as the ETA rollout progresses.",
@@ -17672,8 +17825,19 @@
         "claim": "Cross-check: 'You must complete and submit an online traveller declaration before entering or leaving South Africa'",
         "name": "Government of Canada — Travel advice: South Africa, Entry and exit requirements",
         "url": "https://travel.gc.ca/destinations/south-africa"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 30 dagen geldig zijn op het moment van vertrek uit het land.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 07-07-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/zuid-afrika"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 30,
+      "unit": "days",
+      "from": "departure"
+    }
   },
   {
     "nationality": "FR",
@@ -18204,7 +18368,7 @@
     },
     "documentsNeeded": [
       "ESTA travel authorization approved before departure",
-      "E-passport with a digital chip (machine-readable, biometric)"
+      "Passport valid for your whole stay"
     ],
     "notes": "Netherlands is a designated Visa Waiver Program country (DHS program-country list, checked 2026-10-02). VWP permits business or tourism stays of up to 90 days without a visa; all VWP travelers must have an e-passport. Ebola: the US has temporary entry restrictions for travellers recently in the Democratic Republic of the Congo, Uganda or South Sudan; Germany's advice says that since 18 May 2026 anyone who was in those countries in the 21 days before travel is refused entry.",
     "legal_source": {
@@ -18229,8 +18393,16 @@
         "claim": "Temporary entry restrictions for travellers recently in the DRC, Uganda or South Sudan (Ebola)",
         "name": "Auswärtiges Amt — USA: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/usavereinigtestaatensicherheit-201382"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog geldig zijn op het moment dat u uit het land vertrekt.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 03-06-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/verenigde-staten-van-amerika"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "whole_stay"
+    }
   },
   {
     "nationality": "NL",
@@ -18242,16 +18414,31 @@
     },
     "documentsNeeded": [
       "Canadian Electronic Travel Authorization (eTA) approved before travel (CAD $7)",
-      "Valid passport"
+      "Passport valid for your whole stay"
     ],
     "notes": "Netherlands is listed among eTA-required countries for travelers arriving by air (IRCC, checked 2026-10-02). IRCC: most visitors can stay up to 6 months; the border services officer may allow a shorter or longer stay and will then mark the leave-by date in the passport (IRCC Help Centre, qnum=1198).",
     "legal_source": {
       "name": "IRCC — Find out if you need a visa or eTA to visit Canada (eTA-required countries or territories)",
       "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/check-visa-eta.html"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "whole_stay"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "IRCC — Find out if you need a visa or eTA to visit Canada (eTA-required countries or territories)",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/check-visa-eta.html"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet geldig zijn tijdens de hele periode dat u in het land bent.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 19-08-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/canada"
+      }
+    ]
   },
   {
     "nationality": "NL",
@@ -18262,7 +18449,7 @@
       "maxDays": 180
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for your whole stay",
       "FMM (Forma Migratoria Múltiple) tourist permit — generated electronically/on arrival for air travelers, or completed at land border crossings"
     ],
     "notes": "The Netherlands is on INM's list of countries whose nationals don't need a visa to visit Mexico as a visitor without permission for paid activities (tourism). At an international airport the FMM is generated on entry; by land you fill it in. INM's FMM page says the form is valid for up to 180 calendar days from the entry stamp and covers one entry. Officers may ask for a hotel booking, return or onward tickets, and means of support. Visiting Quintana Roo (Cancún, Tulum, Playa del Carmen): the state charges foreign tourists an entry tax, payable online before or during the stay; France says proof is checked on leaving.",
@@ -18288,8 +18475,16 @@
         "claim": "Entry tax for visitors to the state of Quintana Roo (Cancún, Tulum), payable online",
         "name": "France Diplomatie — Conseils aux voyageurs: mexique, Entrée / séjour",
         "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/mexique/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet geldig zijn tijdens de hele periode dat u in het land bent.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 16-10-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/mexico"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "whole_stay"
+    }
   },
   {
     "nationality": "NL",
@@ -18301,16 +18496,31 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid for your whole stay"
     ],
     "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
     "legal_source": {
       "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
       "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
     },
-    "verified_at": "2026-10-05",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "whole_stay"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw paspoort moet geldig zijn tijdens uw hele verblijf. - Sommige vliegmaatschappijen of reisorganisaties vragen dat uw paspoort nog minstens 6 maanden geldig is vanaf de dag dat u in Brazilië aankomt. Check dit bij het boeken van uw reis of vlucht. D",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 25-08-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/brazilie"
+      }
+    ]
   },
   {
     "nationality": "FR",
@@ -18499,7 +18709,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for your whole stay",
       "e-Arrival Card (unless you hold an approved K-ETA)",
       "K-ETA approval if travelling after the temporary exemption ends"
     ],
@@ -18510,7 +18720,22 @@
     },
     "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "whole_stay"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "K-ETA Official Portal — Eligible Countries / Allowed Period of Stay; Korean MOFA notices on the K-ETA temporary exemption (22 countries; extended to 2026-12-31 KST)",
+        "url": "https://www.k-eta.go.kr/portal/guide/viewetaalification.do"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog geldig zijn op het moment dat u uit het land vertrekt.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 03-06-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/zuid-korea"
+      }
+    ]
   },
   {
     "nationality": "FR",
@@ -18692,7 +18917,7 @@
       "maxDays": 30
     },
     "documentsNeeded": [
-      "Valid ordinary passport",
+      "Passport valid for your whole stay",
       "Proof of onward/return travel (may be requested by airline or border control)",
       "Proof of accommodation or travel itinerary (may be requested by border control)",
       "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
@@ -18720,8 +18945,16 @@
         "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
         "name": "France Diplomatie — Conseils aux voyageurs: chine, Entrée / séjour",
         "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/chine/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet geldig zijn tijdens de hele periode dat u in het land bent.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 28-08-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/china"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "whole_stay"
+    }
   },
   {
     "nationality": "FR",
@@ -18838,7 +19071,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport or travel document",
+      "Passport valid for at least 1 month after your departure date from Hong Kong",
       "Onward or return ticket (unless in transit to Chinese Mainland or Macao)",
       "Adequate funds to cover the stay without working"
     ],
@@ -18847,9 +19080,27 @@
       "name": "Immigration Department (HKSAR) — Visit Visa / Entry Permit Requirements (visa-free periods table)",
       "url": "https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 1,
+      "unit": "months",
+      "from": "departure"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Immigration Department (HKSAR) — Visit Visa / Entry Permit Requirements (visa-free periods table)",
+        "url": "https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 1 maand geldig zijn op het moment van vertrek uit Hongkong SAR.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 12-06-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/hongkong"
+      }
+    ]
   },
   {
     "nationality": "FR",
@@ -19373,7 +19624,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Passport or ID card valid for at least 3 months after your departure date",
       "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
     ],
     "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for the Netherlands: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
@@ -19399,8 +19650,19 @@
         "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
         "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort of ID-kaart moet nog minimaal 3 maanden geldig zijn op het moment van vertrek uit het land.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 14-07-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/servie"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    }
   },
   {
     "nationality": "FR",
@@ -19503,16 +19765,31 @@
       "maxDays": 365
     },
     "documentsNeeded": [
-      "Valid passport or a national identity card issued by an EU member state"
+      "Passport valid for your whole stay"
     ],
     "notes": "The Netherlands is on Georgia's visa-free list. Note 1 to Ordinance No. 255: citizens of listed countries \"may enter and stay in Georgia without visa for one full year\" (recorded as 365 days — don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state.",
     "legal_source": {
       "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (consolidated 24/02/2026, matsne.gov.ge)",
       "url": "https://matsne.gov.ge/en/document/view/2867361"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "whole_stay"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (consolidated 24/02/2026, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort of ID-kaart moet geldig zijn tijdens de hele periode dat u in het land bent.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 24-06-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/georgie"
+      }
+    ]
   },
   {
     "nationality": "ES",
@@ -19547,14 +19824,26 @@
     "documentsNeeded": [
       "Passport valid for at least 60 days beyond the length of your permitted stay (Law No. 6458 Art. 7.1(b)); Türkiye's MFA advises 6 months' validity from arrival"
     ],
-    "notes": "Türkiye's MFA entry for the Netherlands: \"Ordinary and official passport holders are exempted from visa up to 90 days in any 180-day period.\" Türkiye's MFA also links a separate list of countries whose citizens may enter with a national ID card; that list could not be retrieved for this check, so only the passport route is shown.",
+    "notes": "Türkiye's MFA entry for the Netherlands: \"Ordinary and official passport holders are exempted from visa up to 90 days in any 180-day period.\" Türkiye's MFA also links a separate list of countries whose citizens may enter with a national ID card; that list could not be retrieved for this check, so only the passport route is shown. The Netherlands' advice says a Dutch passport or ID card must be valid for at least 150 days on arrival in Türkiye; this row checks Turkish law (60 days beyond the stay).",
     "legal_source": {
       "name": "Republic of Türkiye Ministry of Foreign Affairs — Visa Information for Foreigners",
       "url": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Republic of Türkiye Ministry of Foreign Affairs — Visa Information for Foreigners",
+        "url": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort of ID-kaart moet nog minimaal 150 dagen geldig zijn op het moment dat u aankomt in Turkije.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 16-10-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/turkije"
+      }
+    ]
   },
   {
     "nationality": "FR",
@@ -19649,7 +19938,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport from the Netherlands (an eVisitor-eligible country)",
+      "Passport valid for your whole stay",
       "eVisitor (subclass 651) granted before travel — apply online while outside Australia"
     ],
     "notes": "The Netherlands is on Home Affairs' eVisitor (subclass 651) eligible-passport list. The eVisitor is free, multiple entry, and valid for 12 months from grant; you can stay up to 3 months after each entry. Classified as eta_required for consistency with the existing Australian ETA (subclass 601) rows: both are electronic authorisations granted before travel with no embassy application, even though Australian law treats both as visas. Home Affairs states the stay as '3 months' (not a day count) — maxDays: 90 is the same day-equivalent used for the ETA rows. You must be outside Australia when you apply and when it is decided.",
@@ -19657,9 +19946,24 @@
       "name": "Department of Home Affairs — eVisitor (subclass 651)",
       "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/evisitor-651"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "whole_stay"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Department of Home Affairs — eVisitor (subclass 651)",
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/evisitor-651"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet geldig zijn tijdens de hele periode dat u in Australië bent.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 09-09-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/australie"
+      }
+    ]
   },
   {
     "nationality": "FR",
@@ -20081,7 +20385,7 @@
       "Thailand Digital Arrival Card (TDAC), submitted online within 3 days before arrival — required for every entry",
       "Proof of accommodation and of onward travel within 30 days of arrival; officers may also ask for proof of funds (THB 20,000 per person) or interview you"
     ],
-    "notes": "Dutch ordinary-passport holders are on Thailand's 30-day visa-exemption list (60 countries/territories, EU listed as a bloc) that replaced the former 60-day scheme from 15 September 2026, after Ministry of Interior notifications were published in the Royal Gazette on 31 August 2026 (Gazette site itself not reachable for automated checks). Tourism only — other purposes need a visa. An extension of up to 30 days may be requested from the Immigration Bureau (Royal Thai Embassy London). Entries under the exemption are limited to twice per calendar year: the Royal Thai Embassy London states this generally, while TAT describes the limit as applying to land-border entries — check before planning repeat visits. People who entered under the old 60-day scheme before 15 September 2026 keep the stay they were granted. Cross-checked: the Dutch government (nederlandwereldwijd.nl, updated 24 Sep 2026) confirms the 30-day limit from 15 September 2026. You may be asked to show enough money for your stay: the UK's advice says at least THB 10,000 per person (20,000 per family); Germany's says at least THB 20,000 in cash.",
+    "notes": "Dutch ordinary-passport holders are on Thailand's 30-day visa-exemption list (60 countries/territories, EU listed as a bloc) that replaced the former 60-day scheme from 15 September 2026, after Ministry of Interior notifications were published in the Royal Gazette on 31 August 2026 (Gazette site itself not reachable for automated checks). Tourism only — other purposes need a visa. An extension of up to 30 days may be requested from the Immigration Bureau (Royal Thai Embassy London). Entries under the exemption are limited to twice per calendar year: the Royal Thai Embassy London states this generally, while TAT describes the limit as applying to land-border entries — check before planning repeat visits. People who entered under the old 60-day scheme before 15 September 2026 keep the stay they were granted. Cross-checked: the Dutch government (nederlandwereldwijd.nl, updated 24 Sep 2026) confirms the 30-day limit from 15 September 2026. You may be asked to show enough money for your stay: the UK's advice says at least THB 10,000 per person (20,000 per family); Germany's says at least THB 20,000 in cash. The Netherlands' advice for Dutch passports says at least 6 months' validity on arrival; this row keeps the rule from its own source.",
     "legal_source": {
       "name": "Ministry of Foreign Affairs of Thailand — Summary: The revision of Thailand's visa exemption and VoA schemes, 2026 (ordinary passports; status as of 31 August 2026, effective 15 September 2026)",
       "url": "https://image.mfa.go.th/mfa/0/umufy3EgqL/Con0926/Visa_Exemption_(EN)_0.jpg"
@@ -20104,6 +20408,11 @@
         "claim": "Proof of funds may be requested: UK says at least THB 10,000 per person or 20,000 per family; Germany says at least THB 20,000 in cash",
         "name": "Auswärtiges Amt — Thailand: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/thailandsicherheit-201558"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van aankomst in Thailand.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 24-09-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/thailand"
       }
     ]
   },
@@ -20423,14 +20732,26 @@
       "Passport valid for more than 6 months on arrival",
       "Malaysia Digital Arrival Card (MDAC), submitted online within 3 days before arrival"
     ],
-    "notes": "The Embassy of Malaysia in The Hague lists the Netherlands as entering without a visa for 3 months; Malaysia's Immigration Department also lists the Netherlands among countries that need no visa for any purpose of entry. The length of stay is granted by the immigration officer at entry. East Malaysia controls its own entry: Sabah and Sarawak issue a separate entry permit (the French MFA says Sarawak grants 30 days on arrival; the German MFA says the separate permit is usually valid 90 days) — check before travelling there. Cross-checked against the Dutch foreign ministry's travel advice (checked 2 Oct 2026).",
+    "notes": "The Embassy of Malaysia in The Hague lists the Netherlands as entering without a visa for 3 months; Malaysia's Immigration Department also lists the Netherlands among countries that need no visa for any purpose of entry. The length of stay is granted by the immigration officer at entry. East Malaysia controls its own entry: Sabah and Sarawak issue a separate entry permit (the French MFA says Sarawak grants 30 days on arrival; the German MFA says the separate permit is usually valid 90 days) — check before travelling there. Cross-checked against the Dutch foreign ministry's travel advice (checked 2 Oct 2026). The Netherlands' advice for Dutch passports says at least 6 months' validity on the day you leave; this row keeps the rule from its own source.",
     "legal_source": {
       "name": "Embassy of Malaysia, The Hague (Ministry of Foreign Affairs Malaysia) — Visa requirement for foreigners",
       "url": "https://www.kln.gov.my/web/nld_the-hague/requirement_foreigner"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassy of Malaysia, The Hague (Ministry of Foreign Affairs Malaysia) — Visa requirement for foreigners",
+        "url": "https://www.kln.gov.my/web/nld_the-hague/requirement_foreigner"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van vertrek uit het land.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 09-09-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/maleisie"
+      }
+    ]
   },
   {
     "nationality": "FR",
@@ -20575,14 +20896,26 @@
       "unit": "months",
       "from": "arrival"
     },
-    "notes": "Dutch passports are not on Singapore ICA's list of travel documents that require an entry visa (checked 2 Oct 2026). ICA itself does not publish a fixed stay length: the period is set by the electronic visit pass (e-Pass) issued at the checkpoint and emailed to you — check it before leaving the checkpoint. The Dutch foreign ministry states Dutch passport holders need no visa for stays of 90 days or less; 90 days is used here on that basis. Extensions are applied for online with ICA (Short-Term Visit Pass extension).",
+    "notes": "Dutch passports are not on Singapore ICA's list of travel documents that require an entry visa (checked 2 Oct 2026). ICA itself does not publish a fixed stay length: the period is set by the electronic visit pass (e-Pass) issued at the checkpoint and emailed to you — check it before leaving the checkpoint. The Dutch foreign ministry states Dutch passport holders need no visa for stays of 90 days or less; 90 days is used here on that basis. Extensions are applied for online with ICA (Short-Term Visit Pass extension). The Netherlands' advice for Dutch passports says at least 6 months' validity on the day you leave; this row keeps the rule from its own source.",
     "legal_source": {
       "name": "NederlandWereldwijd (Dutch Ministry of Foreign Affairs) — Reisadvies Singapore: Paspoort, visum (updated 9 Sep 2026)",
       "url": "https://www.nederlandwereldwijd.nl/reisadvies/singapore"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "NederlandWereldwijd (Dutch Ministry of Foreign Affairs) — Reisadvies Singapore: Paspoort, visum (updated 9 Sep 2026)",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/singapore"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van vertrek uit het land.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 09-09-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/singapore"
+      }
+    ]
   },
   {
     "nationality": "FR",
@@ -21136,7 +21469,7 @@
       "maxDays": 30
     },
     "documentsNeeded": [
-      "Valid passport with at least 6 months validity from the date of application",
+      "Passport valid for at least 6 months on your arrival date",
       "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
       "Return or onward journey ticket",
       "Proof of sufficient funds for the stay",
@@ -21166,8 +21499,19 @@
         "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
         "name": "France Diplomatie — Conseils aux voyageurs: inde, Entrée / séjour",
         "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/inde/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van aankomst in India.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 09-09-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/india"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    }
   },
   {
     "nationality": "FR",
@@ -21410,14 +21754,26 @@
       "Confirmed return ticket, prepaid confirmed booking at a registered facility, and sufficient funds for the stay (or a Maldives Immigration–approved sponsorship)",
       "IMUGA Traveller Declaration, submitted free of charge within 96 hours before arrival (imuga.immigration.gov.mv)"
     ],
-    "notes": "Maldives Immigration (immigration.gov.mv/visa/tourist-visa, updated 2026-09-10, checked 2026-10-02) grants a tourist visa on arrival with no pre-approval, subject to the entry requirements listed; entry is decided by the immigration officer under Sections 7 and 8 of the Maldives Immigration Act 2007, and is refused on Israeli passports (since 15 April 2025). The 30-day length is from Dutch government travel advice (the legal source). Extensions are possible on application in the Maldives; working on a tourist visa is prohibited. A yellow-fever certificate is required if arriving from, or recently via, a yellow-fever risk country.",
+    "notes": "Maldives Immigration (immigration.gov.mv/visa/tourist-visa, updated 2026-09-10, checked 2026-10-02) grants a tourist visa on arrival with no pre-approval, subject to the entry requirements listed; entry is decided by the immigration officer under Sections 7 and 8 of the Maldives Immigration Act 2007, and is refused on Israeli passports (since 15 April 2025). The 30-day length is from Dutch government travel advice (the legal source). Extensions are possible on application in the Maldives; working on a tourist visa is prohibited. A yellow-fever certificate is required if arriving from, or recently via, a yellow-fever risk country. The Netherlands' advice for Dutch passports says at least 6 months' validity on the day you leave; this row keeps the rule from its own source.",
     "legal_source": {
       "name": "NederlandWereldwijd (Dutch Ministry of Foreign Affairs) — Reisadvies Maldiven (updated 2026-09-09)",
       "url": "https://www.nederlandwereldwijd.nl/reisadvies/maldiven"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "NederlandWereldwijd (Dutch Ministry of Foreign Affairs) — Reisadvies Maldiven (updated 2026-09-09)",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/maldiven"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van vertrek van de Maldiven.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 09-09-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/maldiven"
+      }
+    ]
   },
   {
     "nationality": "ES",
@@ -21502,14 +21858,26 @@
       "Tourist eVisa applied for online at visa.visitsaudi.com before travel (recommended), or a tourist visa issued on arrival",
       "Medical insurance (required for the tourist visa)"
     ],
-    "notes": "The official Saudi eVisa portal (visa.visitsaudi.com, checked 2026-10-02) lists Netherlands among its eligible countries and describes the tourist eVisa as \"a one-year, multiple entry visa, allowing tourists to spend up to 90 days in the country\". On-arrival issuance: Dutch travel advice states the tourist visa can be bought on arrival at Saudi airports or applied for online, valid for up to 90 days within a 1-year period (legal source). The tourist visa covers tourism, family visits, events and Umrah (not Hajj, not study or work). Entry is refused to holders of passports bearing Israeli stamps or visas (per French travel advice).",
+    "notes": "The official Saudi eVisa portal (visa.visitsaudi.com, checked 2026-10-02) lists Netherlands among its eligible countries and describes the tourist eVisa as \"a one-year, multiple entry visa, allowing tourists to spend up to 90 days in the country\". On-arrival issuance: Dutch travel advice states the tourist visa can be bought on arrival at Saudi airports or applied for online, valid for up to 90 days within a 1-year period (legal source). The tourist visa covers tourism, family visits, events and Umrah (not Hajj, not study or work). Entry is refused to holders of passports bearing Israeli stamps or visas (per French travel advice). The Netherlands' advice for Dutch passports says at least 6 months' validity on the day you leave; this row keeps the rule from its own source.",
     "legal_source": {
       "name": "NederlandWereldwijd (Dutch Ministry of Foreign Affairs) — Reisadvies Saoedi-Arabië (updated 2026-09-16)",
       "url": "https://www.nederlandwereldwijd.nl/reisadvies/saoedi-arabie"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "NederlandWereldwijd (Dutch Ministry of Foreign Affairs) — Reisadvies Saoedi-Arabië (updated 2026-09-16)",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/saoedi-arabie"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van vertrek uit het land.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 22-10-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/saoedi-arabie"
+      }
+    ]
   },
   {
     "nationality": "FR",
@@ -22779,14 +23147,26 @@
       "unit": "months",
       "from": "arrival"
     },
-    "notes": "Sri Lanka requires an ETA for all foreign visitors. Japan ('JAPAN') is one of the 40 countries whose nationals, with effect from 25.05.2026, 'are eligible to obtain tourist visa (ETA) free-of-charge for a period of 30 days' (diplomatic, official, service and ordinary passports). ETA fees paid before 25.05.2026 are non-refundable. The ETA gives a 30-day tourist visa with double entry: the second entry must fall within the 30 days from first arrival, and only the balance of those 30 days is granted on the second visit. Extension: the DI&E 'How to Extend Short Visit ETA' page says a short visit visa can be extended up to a maximum of 270 days from arrival (30 days on entry, 60 days at the first extension, 90 days at the second and third), applied for at the Visa Section of the Department of Immigration & Emigration head office (Battaramulla) or via the online e-Visa Extension portal (eservices.immigration.gov.lk) 'for extension up to 6 months'; the 'How to submit an ETA application' page instead says the ETA 'can be extended for up to six months' — the two DI&E pages conflict, so the safe reading is up to 6 months unless the department confirms more. Extension fees are charged even for holders of a free ETA. Other ETA rules from DI&E: an ETA holder must enter within three months of the ETA's issue (the FAQ separately says an ETA 'is valid for six months' — a conflict on the same site); you cannot obtain a fresh ETA while inside Sri Lanka; fees are non-refundable. A visa on arrival is also listed in the fee table (US$60 tourist for non-South-Asian nationals), but DI&E states all foreign nationals 'are required to obtain an Electronic Travel Authorization (ETA) prior to their arrival', so apply in advance. Beware lookalike paid ETA sites — the only official portal is eta.gov.lk. Children under 12 of any nationality get a free 30-day tourist ETA. Documents and extension rules are from the same eta.gov.lk site: visainfo/apply.jsp (port-of-entry requirements), visainfo/extsheta.jsp (extensions), visainfo/center.jsp and visainfo/faq.jsp.",
+    "notes": "Sri Lanka requires an ETA for all foreign visitors. Japan ('JAPAN') is one of the 40 countries whose nationals, with effect from 25.05.2026, 'are eligible to obtain tourist visa (ETA) free-of-charge for a period of 30 days' (diplomatic, official, service and ordinary passports). ETA fees paid before 25.05.2026 are non-refundable. The ETA gives a 30-day tourist visa with double entry: the second entry must fall within the 30 days from first arrival, and only the balance of those 30 days is granted on the second visit. Extension: the DI&E 'How to Extend Short Visit ETA' page says a short visit visa can be extended up to a maximum of 270 days from arrival (30 days on entry, 60 days at the first extension, 90 days at the second and third), applied for at the Visa Section of the Department of Immigration & Emigration head office (Battaramulla) or via the online e-Visa Extension portal (eservices.immigration.gov.lk) 'for extension up to 6 months'; the 'How to submit an ETA application' page instead says the ETA 'can be extended for up to six months' — the two DI&E pages conflict, so the safe reading is up to 6 months unless the department confirms more. Extension fees are charged even for holders of a free ETA. Other ETA rules from DI&E: an ETA holder must enter within three months of the ETA's issue (the FAQ separately says an ETA 'is valid for six months' — a conflict on the same site); you cannot obtain a fresh ETA while inside Sri Lanka; fees are non-refundable. A visa on arrival is also listed in the fee table (US$60 tourist for non-South-Asian nationals), but DI&E states all foreign nationals 'are required to obtain an Electronic Travel Authorization (ETA) prior to their arrival', so apply in advance. Beware lookalike paid ETA sites — the only official portal is eta.gov.lk. Children under 12 of any nationality get a free 30-day tourist ETA. Documents and extension rules are from the same eta.gov.lk site: visainfo/apply.jsp (port-of-entry requirements), visainfo/extsheta.jsp (extensions), visainfo/center.jsp and visainfo/faq.jsp. Japan's MOFA says getting the ETA in advance is encouraged, and that Japanese tourists staying 30 days or less can also get a visa on arrival at the airport.",
     "legal_source": {
       "name": "Fees — Online Visa Application (ETA), Department of Immigration & Emigration, Sri Lanka",
       "url": "https://www.eta.gov.lk/slvisa/visainfo/fees.jsp?locale=en_US"
     },
-    "verified_at": "2026-10-09",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Fees — Online Visa Application (ETA), Department of Immigration & Emigration, Sri Lanka",
+        "url": "https://www.eta.gov.lk/slvisa/visainfo/fees.jsp?locale=en_US"
+      },
+      {
+        "claim": "Japan's MOFA says getting the ETA in advance is encouraged, and that Japanese tourists staying 30 days or less can also get a visa on arrival at the airport.",
+        "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ (査証、出入国審査等)",
+        "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_006.html"
+      }
+    ]
   },
   {
     "nationality": "KR",
@@ -24038,14 +24418,26 @@
       "Tourist Card (US$10; included in the airfare for air arrivals) unless exempt by bilateral agreement",
       "Proof of onward or return travel (may be requested)"
     ],
-    "notes": "The Dominican Foreign Ministry (MIREX) visa-requirements tool, queried for Japan / ordinary passport / tourist visa (TS), answers '¿Requiere visa? NO'. UK and Canadian government advice both say tourists can visit visa-free for up to 30 days. Stay: the Dirección General de Migración (DGM) service page 'Prórroga de estadía para turistas' (migracion.gob.do/servicio/prorroga-de-estadia/) says tourists are allowed '30 días establecidos para los turistas' and that a stay of more than 30 days can be authorised 'a través de una prórroga extensible hasta 120 días'. Extension: apply online at the DGM portal (personal.migracion.gob.do / servicios.migracion.gob.do) with a copy of the passport data page, the stamp/date of last entry, a return air ticket, proof of own funds and a medical certificate; processing three working days; the application is free but the stay fee is charged: RD$3,500 for 30–90 days and RD$5,600 for 90–120 days, payable online or at the airport. Overstay: DGM's 'Servicio de cálculo y pago de tasas de estadía' says foreigners who exceed their authorised stay regularise it on departure by paying the stay fee (table: 30–90 days RD$3,500; 3–9 months RD$5,600; 9–12 months RD$7,000; rising to RD$98,000 for 10 years plus RD$7,000 per extra year), calculated at stayfee.migracion.gob.do. DGM's FAQ adds that if the stay fee is paid in advance at DGM you then have 30 days to leave. Canada's travel advice (travel.gc.ca, updated 26 May 2026) says to request the extension before the tourist card expires and that overstayers 'could be deported or refused re-entry'. Arrival form: DGM states the electronic E-Ticket (eticket.migracion.gob.do) is mandatory for every passenger on entry and on exit (combined migration and customs declaration, laws 285-04, 115-17, 72-02 and 226-06); UK advice says it can be completed up to 7 days before arrival and gives a QR code. Tourist card: the tax authority DGII says foreigners entering without a consular visa must have a Tourist Card (US$10, or €10 at sea/land ports only), with exemptions for nationals covered by bilateral agreements ratified by Congress; for air arrivals its cost is included in the airline ticket. The MIREX tool does not say whether this nationality is card-exempt. UK and Canadian advice both say you may be asked for proof of onward/return travel; Canada adds proof of adequate funds and your address in the country. Passport: DGM describes a minimum passport validity of six (6) months as the usual requirement; the 2025–2026 relaxation (passport valid only for the stay) covers only Argentina, Brazil, Canada, Chile, Colombia, Ecuador, the USA, the UK ('Inglaterra') and EU citizens — plus other nationals who hold documents allowing them to enter those countries. Canada's advice phrases the standard rule as 6 months after the date of arrival. ",
+    "notes": "The Dominican Foreign Ministry (MIREX) visa-requirements tool, queried for Japan / ordinary passport / tourist visa (TS), answers '¿Requiere visa? NO'. UK and Canadian government advice both say tourists can visit visa-free for up to 30 days. Stay: the Dirección General de Migración (DGM) service page 'Prórroga de estadía para turistas' (migracion.gob.do/servicio/prorroga-de-estadia/) says tourists are allowed '30 días establecidos para los turistas' and that a stay of more than 30 days can be authorised 'a través de una prórroga extensible hasta 120 días'. Extension: apply online at the DGM portal (personal.migracion.gob.do / servicios.migracion.gob.do) with a copy of the passport data page, the stamp/date of last entry, a return air ticket, proof of own funds and a medical certificate; processing three working days; the application is free but the stay fee is charged: RD$3,500 for 30–90 days and RD$5,600 for 90–120 days, payable online or at the airport. Overstay: DGM's 'Servicio de cálculo y pago de tasas de estadía' says foreigners who exceed their authorised stay regularise it on departure by paying the stay fee (table: 30–90 days RD$3,500; 3–9 months RD$5,600; 9–12 months RD$7,000; rising to RD$98,000 for 10 years plus RD$7,000 per extra year), calculated at stayfee.migracion.gob.do. DGM's FAQ adds that if the stay fee is paid in advance at DGM you then have 30 days to leave. Canada's travel advice (travel.gc.ca, updated 26 May 2026) says to request the extension before the tourist card expires and that overstayers 'could be deported or refused re-entry'. Arrival form: DGM states the electronic E-Ticket (eticket.migracion.gob.do) is mandatory for every passenger on entry and on exit (combined migration and customs declaration, laws 285-04, 115-17, 72-02 and 226-06); UK advice says it can be completed up to 7 days before arrival and gives a QR code. Tourist card: the tax authority DGII says foreigners entering without a consular visa must have a Tourist Card (US$10, or €10 at sea/land ports only), with exemptions for nationals covered by bilateral agreements ratified by Congress; for air arrivals its cost is included in the airline ticket. The MIREX tool does not say whether this nationality is card-exempt. UK and Canadian advice both say you may be asked for proof of onward/return travel; Canada adds proof of adequate funds and your address in the country. Passport: DGM describes a minimum passport validity of six (6) months as the usual requirement; the 2025–2026 relaxation (passport valid only for the stay) covers only Argentina, Brazil, Canada, Chile, Colombia, Ecuador, the USA, the UK ('Inglaterra') and EU citizens — plus other nationals who hold documents allowing them to enter those countries. Canada's advice phrases the standard rule as 6 months after the date of arrival. Japan's MOFA says Japanese nationals may stay up to 90 days visa-free under a bilateral agreement, and that a stay tax is charged on departure for visa-free stays of more than 30 days.",
     "legal_source": {
       "name": "MIREX — Consulta de requisitos para extranjeros ingresar a la República Dominicana (Japan, pasaporte ordinario, Visa Turismo TS)",
       "url": "https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=123&tipoPasaporte=Ordinario&tipoVisa=visa_ts"
     },
-    "verified_at": "2026-10-09",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "MIREX — Consulta de requisitos para extranjeros ingresar a la República Dominicana (Japan, pasaporte ordinario, Visa Turismo TS)",
+        "url": "https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=123&tipoPasaporte=Ordinario&tipoVisa=visa_ts"
+      },
+      {
+        "claim": "Japan's MOFA says Japanese nationals may stay up to 90 days visa-free under a bilateral agreement, and that a stay tax is charged on departure for visa-free stays of more than 30 days.",
+        "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ (査証、出入国審査等)",
+        "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_252.html"
+      }
+    ]
   },
   {
     "nationality": "KR",
@@ -24414,14 +24806,26 @@
       "Tourist Card (US$10; included in the airfare for air arrivals) unless exempt by bilateral agreement",
       "Proof of onward or return travel (may be requested)"
     ],
-    "notes": "The Dominican Foreign Ministry (MIREX) visa-requirements tool, queried for Netherlands / ordinary passport / tourist visa (TS), answers '¿Requiere visa? NO'. UK and Canadian government advice both say tourists can visit visa-free for up to 30 days. Stay: the Dirección General de Migración (DGM) service page 'Prórroga de estadía para turistas' (migracion.gob.do/servicio/prorroga-de-estadia/) says tourists are allowed '30 días establecidos para los turistas' and that a stay of more than 30 days can be authorised 'a través de una prórroga extensible hasta 120 días'. Extension: apply online at the DGM portal (personal.migracion.gob.do / servicios.migracion.gob.do) with a copy of the passport data page, the stamp/date of last entry, a return air ticket, proof of own funds and a medical certificate; processing three working days; the application is free but the stay fee is charged: RD$3,500 for 30–90 days and RD$5,600 for 90–120 days, payable online or at the airport. Overstay: DGM's 'Servicio de cálculo y pago de tasas de estadía' says foreigners who exceed their authorised stay regularise it on departure by paying the stay fee (table: 30–90 days RD$3,500; 3–9 months RD$5,600; 9–12 months RD$7,000; rising to RD$98,000 for 10 years plus RD$7,000 per extra year), calculated at stayfee.migracion.gob.do. DGM's FAQ adds that if the stay fee is paid in advance at DGM you then have 30 days to leave. Canada's travel advice (travel.gc.ca, updated 26 May 2026) says to request the extension before the tourist card expires and that overstayers 'could be deported or refused re-entry'. Arrival form: DGM states the electronic E-Ticket (eticket.migracion.gob.do) is mandatory for every passenger on entry and on exit (combined migration and customs declaration, laws 285-04, 115-17, 72-02 and 226-06); UK advice says it can be completed up to 7 days before arrival and gives a QR code. Tourist card: the tax authority DGII says foreigners entering without a consular visa must have a Tourist Card (US$10, or €10 at sea/land ports only), with exemptions for nationals covered by bilateral agreements ratified by Congress; for air arrivals its cost is included in the airline ticket. The MIREX tool does not say whether this nationality is card-exempt. UK and Canadian advice both say you may be asked for proof of onward/return travel; Canada adds proof of adequate funds and your address in the country. Passport: under DGM's measure announced 2 December 2025 (memorandum continuing Resolución DGM-01-2024 of 31 May 2024), citizens of Argentina, Brazil, Canada, Chile, Colombia, Ecuador, the USA, 'Inglaterra' and EU countries travelling exclusively for tourism need a passport valid only for the length of their stay and departure, instead of the 6-month minimum 'que usualmente se exige'. This applies from 1 Dec 2025 to 31 Dec 2026 — re-check for travel in 2027. ",
+    "notes": "The Dominican Foreign Ministry (MIREX) visa-requirements tool, queried for Netherlands / ordinary passport / tourist visa (TS), answers '¿Requiere visa? NO'. UK and Canadian government advice both say tourists can visit visa-free for up to 30 days. Stay: the Dirección General de Migración (DGM) service page 'Prórroga de estadía para turistas' (migracion.gob.do/servicio/prorroga-de-estadia/) says tourists are allowed '30 días establecidos para los turistas' and that a stay of more than 30 days can be authorised 'a través de una prórroga extensible hasta 120 días'. Extension: apply online at the DGM portal (personal.migracion.gob.do / servicios.migracion.gob.do) with a copy of the passport data page, the stamp/date of last entry, a return air ticket, proof of own funds and a medical certificate; processing three working days; the application is free but the stay fee is charged: RD$3,500 for 30–90 days and RD$5,600 for 90–120 days, payable online or at the airport. Overstay: DGM's 'Servicio de cálculo y pago de tasas de estadía' says foreigners who exceed their authorised stay regularise it on departure by paying the stay fee (table: 30–90 days RD$3,500; 3–9 months RD$5,600; 9–12 months RD$7,000; rising to RD$98,000 for 10 years plus RD$7,000 per extra year), calculated at stayfee.migracion.gob.do. DGM's FAQ adds that if the stay fee is paid in advance at DGM you then have 30 days to leave. Canada's travel advice (travel.gc.ca, updated 26 May 2026) says to request the extension before the tourist card expires and that overstayers 'could be deported or refused re-entry'. Arrival form: DGM states the electronic E-Ticket (eticket.migracion.gob.do) is mandatory for every passenger on entry and on exit (combined migration and customs declaration, laws 285-04, 115-17, 72-02 and 226-06); UK advice says it can be completed up to 7 days before arrival and gives a QR code. Tourist card: the tax authority DGII says foreigners entering without a consular visa must have a Tourist Card (US$10, or €10 at sea/land ports only), with exemptions for nationals covered by bilateral agreements ratified by Congress; for air arrivals its cost is included in the airline ticket. The MIREX tool does not say whether this nationality is card-exempt. UK and Canadian advice both say you may be asked for proof of onward/return travel; Canada adds proof of adequate funds and your address in the country. Passport: under DGM's measure announced 2 December 2025 (memorandum continuing Resolución DGM-01-2024 of 31 May 2024), citizens of Argentina, Brazil, Canada, Chile, Colombia, Ecuador, the USA, 'Inglaterra' and EU countries travelling exclusively for tourism need a passport valid only for the length of their stay and departure, instead of the 6-month minimum 'que usualmente se exige'. This applies from 1 Dec 2025 to 31 Dec 2026 — re-check for travel in 2027. The Netherlands' advice for Dutch passports says at least 6 months' validity on the day you leave; this row keeps the rule from its own source.",
     "legal_source": {
       "name": "MIREX — Consulta de requisitos para extranjeros ingresar a la República Dominicana (Netherlands, pasaporte ordinario, Visa Turismo TS)",
       "url": "https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=171&tipoPasaporte=Ordinario&tipoVisa=visa_ts"
     },
-    "verified_at": "2026-10-09",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "MIREX — Consulta de requisitos para extranjeros ingresar a la República Dominicana (Netherlands, pasaporte ordinario, Visa Turismo TS)",
+        "url": "https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=171&tipoPasaporte=Ordinario&tipoVisa=visa_ts"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van vertrek uit het land.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 10-06-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/dominicaanse-republiek"
+      }
+    ]
   },
   {
     "nationality": "US",
@@ -26861,14 +27265,26 @@
       "Proof of funds: at least US$100 per month or part-month of stay",
       "Customs traveller declaration (Declaración de Viajero) on arrival"
     ],
-    "notes": "Costa Rica's current visa directive (AJ-484-11-2025, in force since publication 17 Nov 2025; it repealed the Oct 2023 directive DG-30-10-2023-AJ) lists the Netherlands (and Aruba, Curaçao, Bonaire, Netherlands Antilles) in the FIRST GROUP: 'INGRESO SIN VISA. PERMANENCIA MÁXIMA: HASTA 180 DÍAS NATURALES NO PRORROGABLES. (Únicamente se prorrogará a quienes se le otorguen menos de 90 días y hasta por un máximo de 90 días). VIGENCIA MÍNIMA DE PASAPORTE: HASTA UN DÍA (el plazo de permanencia otorgado por el oficial de control migratorio, no será mayor al de la vigencia del pasaporte).' So: no visa; the border officer decides the stay, up to 180 calendar days counted from entry (per entry — the directive sets no cumulative cap across trips), and never beyond the passport's expiry; your passport only needs to be valid on the day of entry, but a longer validity buys a longer stay. The stay cannot be extended unless the officer granted fewer than 90 days, in which case an extension of up to 90 days can be requested (the text does not say whether 90 is the extra time or the total). Check the stamp: the days granted are what count, not the 180-day ceiling. Entry requirements for every foreigner (Directrices, PRIMERO §4, citing art. 42 Ley General de Migración y Extranjería 8764 and art. 30 Reglamento de Control Migratorio 36769-G): a valid, machine-readable/biometric passport in good condition; a visa where required; proof of funds of at least US$100 per month or part-month of authorised stay; a return or onward ticket (or a navigation plan naming the destination port); and no bar to entry. Tourist (No Residente, subcategoría Turismo) status allows leisure, business or professional activities only if they involve no pay or profit in Costa Rica. Also on arrival: a customs traveller declaration (Declaración de Viajero) is required of every arriving traveller (art. 368 Reglamento a la Ley General de Aduanas, Decreto 44051-H). Per the UK FCDO page (cross-check), a yellow fever vaccination certificate is required if you are coming from a country listed as a yellow-fever transmission risk, an air departure tax of US$29 may apply (usually included in the ticket), and overstayers can be fined US$100 per month and refused future entry; travel.gc.ca (updated 31 Aug 2026) adds that people deported for overstaying may be barred from re-entering for 5 to 10 years. Cross-check: Nederland Wereldwijd reisadvies (last changed 22 May 2026): no visa for stays of 180 days or less on a Dutch passport; passport valid at least 1 day.",
+    "notes": "Costa Rica's current visa directive (AJ-484-11-2025, in force since publication 17 Nov 2025; it repealed the Oct 2023 directive DG-30-10-2023-AJ) lists the Netherlands (and Aruba, Curaçao, Bonaire, Netherlands Antilles) in the FIRST GROUP: 'INGRESO SIN VISA. PERMANENCIA MÁXIMA: HASTA 180 DÍAS NATURALES NO PRORROGABLES. (Únicamente se prorrogará a quienes se le otorguen menos de 90 días y hasta por un máximo de 90 días). VIGENCIA MÍNIMA DE PASAPORTE: HASTA UN DÍA (el plazo de permanencia otorgado por el oficial de control migratorio, no será mayor al de la vigencia del pasaporte).' So: no visa; the border officer decides the stay, up to 180 calendar days counted from entry (per entry — the directive sets no cumulative cap across trips), and never beyond the passport's expiry; your passport only needs to be valid on the day of entry, but a longer validity buys a longer stay. The stay cannot be extended unless the officer granted fewer than 90 days, in which case an extension of up to 90 days can be requested (the text does not say whether 90 is the extra time or the total). Check the stamp: the days granted are what count, not the 180-day ceiling. Entry requirements for every foreigner (Directrices, PRIMERO §4, citing art. 42 Ley General de Migración y Extranjería 8764 and art. 30 Reglamento de Control Migratorio 36769-G): a valid, machine-readable/biometric passport in good condition; a visa where required; proof of funds of at least US$100 per month or part-month of authorised stay; a return or onward ticket (or a navigation plan naming the destination port); and no bar to entry. Tourist (No Residente, subcategoría Turismo) status allows leisure, business or professional activities only if they involve no pay or profit in Costa Rica. Also on arrival: a customs traveller declaration (Declaración de Viajero) is required of every arriving traveller (art. 368 Reglamento a la Ley General de Aduanas, Decreto 44051-H). Per the UK FCDO page (cross-check), a yellow fever vaccination certificate is required if you are coming from a country listed as a yellow-fever transmission risk, an air departure tax of US$29 may apply (usually included in the ticket), and overstayers can be fined US$100 per month and refused future entry; travel.gc.ca (updated 31 Aug 2026) adds that people deported for overstaying may be barred from re-entering for 5 to 10 years. Cross-check: Nederland Wereldwijd reisadvies (last changed 22 May 2026): no visa for stays of 180 days or less on a Dutch passport; passport valid at least 1 day. The Netherlands' advice says the passport must be valid for at least 1 day on your planned departure date.",
     "legal_source": {
       "name": "Dirección General de Migración y Extranjería, 'Directrices Generales de Visas de Ingreso y Permanencia para No Residentes' AJ-484-11-2025, Alcance N° 148 a La Gaceta N° 216 (17 Nov 2025) — official Imprenta Nacional gazette edition (copy hosted on icoder.go.cr; the migracion.go.cr copy is Cloudflare-blocked)",
       "url": "https://www.icoder.go.cr/fileadmin/documentos/tramites/visas/Directrices-Generales-de-Visas-Noviembre-2025-Alcance-148-Gaceta-N_-216-17-11-2025.pdf"
     },
-    "verified_at": "2026-10-09",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Dirección General de Migración y Extranjería, 'Directrices Generales de Visas de Ingreso y Permanencia para No Residentes' AJ-484-11-2025, Alcance N° 148 a La Gaceta N° 216 (17 Nov 2025) — official Imprenta Nacional gazette edition (copy hosted on icoder.go.cr; the migracion.go.cr copy is Cloudflare-blocked)",
+        "url": "https://www.icoder.go.cr/fileadmin/documentos/tramites/visas/Directrices-Generales-de-Visas-Noviembre-2025-Alcance-148-Gaceta-N_-216-17-11-2025.pdf"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 1 dag geldig zijn op het moment van het geplande vertrek uit het land.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 22-05-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/costa-rica"
+      }
+    ]
   },
   {
     "nationality": "MY",
@@ -29005,7 +29421,7 @@
       "unit": "months",
       "from": "departure"
     },
-    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Netherlands states that nationals of the Netherlands 'may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' The same page adds that nationals of the Netherlands may also enter and stay up to 30 days without a visa using a valid national identity card. Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Netherlands states that nationals of the Netherlands 'may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' The same page adds that nationals of the Netherlands may also enter and stay up to 30 days without a visa using a valid national identity card. Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit. The Netherlands' advice for Dutch passports says valid for the whole stay (until you leave); this row keeps the rule from its own source.",
     "legal_source": {
       "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Netherlands (Government of Montenegro, Ministry of Foreign Affairs)",
       "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/netherlands"
@@ -29028,6 +29444,11 @@
         "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
         "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort of ID-kaart moet geldig zijn tijdens de hele periode dat u in het land bent.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 14-07-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/montenegro"
       }
     ]
   },
@@ -29536,7 +29957,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport — the Embassy of Jamaica in Washington says it should have at least six months' validity (UK, Canadian, French and Spanish government advice say valid for the duration of the stay; the six-month figure is the stricter one)",
+      "Passport valid for your whole stay",
       "Return or round-trip ticket to a country you are admissible to",
       "Evidence of sufficient funds to support yourself during the stay",
       "Completed Immigration/Customs C5 form (online at enterjamaica.gov.jm, run by PICA and Jamaica Customs, or on paper on arrival)"
@@ -29546,9 +29967,24 @@
       "name": "Jamaica Immigration Unit — Visa Requirements for Jamaicans Travelling Overseas & Foreigners and Commonwealth Nationals Entering Jamaica (PICA Visa Unit country listing, last updated 13 March 2025), published by the Embassy of Jamaica, Washington DC",
       "url": "https://embwashington.mfaft.gov.jm/pdf/Country-Listing-March-3-2025.pdf"
     },
-    "verified_at": "2026-10-10",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "whole_stay"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Jamaica Immigration Unit — Visa Requirements for Jamaicans Travelling Overseas & Foreigners and Commonwealth Nationals Entering Jamaica (PICA Visa Unit country listing, last updated 13 March 2025), published by the Embassy of Jamaica, Washington DC",
+        "url": "https://embwashington.mfaft.gov.jm/pdf/Country-Listing-March-3-2025.pdf"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog geldig zijn op het moment van vertrek uit Jamaica.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 02-09-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/jamaica"
+      }
+    ]
   },
   {
     "nationality": "US",
@@ -29700,14 +30136,26 @@
       "Completed Bahamas Immigration Disembarkation/Embarkation Card",
       "Yellow fever vaccination certificate only if arriving from (or transiting >12 hours through) a country with yellow fever risk"
     ],
-    "notes": "Stay length: Bahamas Immigration only says visa-exempt visitors may remain 'for a period not exceeding three (3) months or eight (8) months as each individual agreement may dictate', and the immigration officer stamps the actual period on arrival. No source states which applies to this passport, so we show no day count — check the date stamped in your passport. Visa-free. Bahamas Immigration lists this nationality among those whose 'Bahamian visa requirements are waived ... to visit and remain in The Bahamas for a period not exceeding three (3) months or eight (8) months as each individual agreement may dictate', and advises 'all visitors intending to remain in The Bahamas for an excess of ninety (90) days [to] review the visa requirement for their specific country.' The specific agreement for this nationality (3 vs 8 months) is not published, so we model 90 days (the source states '3 months'; 90 used as the safe figure) — the period stamped in your passport by the officer is what counts. Also on the Ministry of Foreign Affairs 'Who DOES NOT need a visa to enter The Bahamas' list (modified 2026-03-03). Bahamas Immigration 'Before Your Arrival' (updated 2026-08-10) sets the entry criteria under the Immigration Act (Ch. 191) s.22: a valid return ticket/means of departure, no intention to work, financial means (or a local sponsor), a passport valid for at least six months (passport cards not accepted) and a completed Disembarkation/Embarkation Card. 'Admittance is not automatic' — the officer can refuse leave to land. The officer also decides how long you may stay; the period is documented in your passport ('the maximum period of stay, documented in visitors' passports, may vary, as this is dependent upon the discretion of the immigration officer at the port of entry'), and the absolute maximum for a visitor is 8 months. Extensions: apply to the Department of Immigration before the granted time expires; in-person interview with an extension officer; $200.00 non-refundable processing fee since 18 September 2024; bring return ticket, valid passport, local address, the Immigration landing card, reason for extension, sponsor's passport and address (Immigration 'Extension of Stay' page). Overstaying is a punishable offence. Yellow fever certificate required from travellers over 1 year arriving from (or transiting more than 12 hours through) a listed risk country (including Argentina, Brazil, Colombia, Peru, Kenya and others), vaccinated at least 10 days before entry. ",
+    "notes": "Stay length: Bahamas Immigration only says visa-exempt visitors may remain 'for a period not exceeding three (3) months or eight (8) months as each individual agreement may dictate', and the immigration officer stamps the actual period on arrival. No source states which applies to this passport, so we show no day count — check the date stamped in your passport. Visa-free. Bahamas Immigration lists this nationality among those whose 'Bahamian visa requirements are waived ... to visit and remain in The Bahamas for a period not exceeding three (3) months or eight (8) months as each individual agreement may dictate', and advises 'all visitors intending to remain in The Bahamas for an excess of ninety (90) days [to] review the visa requirement for their specific country.' The specific agreement for this nationality (3 vs 8 months) is not published, so we model 90 days (the source states '3 months'; 90 used as the safe figure) — the period stamped in your passport by the officer is what counts. Also on the Ministry of Foreign Affairs 'Who DOES NOT need a visa to enter The Bahamas' list (modified 2026-03-03). Bahamas Immigration 'Before Your Arrival' (updated 2026-08-10) sets the entry criteria under the Immigration Act (Ch. 191) s.22: a valid return ticket/means of departure, no intention to work, financial means (or a local sponsor), a passport valid for at least six months (passport cards not accepted) and a completed Disembarkation/Embarkation Card. 'Admittance is not automatic' — the officer can refuse leave to land. The officer also decides how long you may stay; the period is documented in your passport ('the maximum period of stay, documented in visitors' passports, may vary, as this is dependent upon the discretion of the immigration officer at the port of entry'), and the absolute maximum for a visitor is 8 months. Extensions: apply to the Department of Immigration before the granted time expires; in-person interview with an extension officer; $200.00 non-refundable processing fee since 18 September 2024; bring return ticket, valid passport, local address, the Immigration landing card, reason for extension, sponsor's passport and address (Immigration 'Extension of Stay' page). Overstaying is a punishable offence. Yellow fever certificate required from travellers over 1 year arriving from (or transiting more than 12 hours through) a listed risk country (including Argentina, Brazil, Colombia, Peru, Kenya and others), vaccinated at least 10 days before entry. Japan's MOFA says no visa is needed in advance for tourist stays of up to 3 months.",
     "legal_source": {
       "name": "Bahamas Department of Immigration — Before Your Arrival (Entry Criteria and Visa Requirements; page updated 2026-08-10)",
       "url": "https://www.immigration.gov.bs/entry-requirements/before-your-arrival/"
     },
-    "verified_at": "2026-10-10",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bahamas Department of Immigration — Before Your Arrival (Entry Criteria and Visa Requirements; page updated 2026-08-10)",
+        "url": "https://www.immigration.gov.bs/entry-requirements/before-your-arrival/"
+      },
+      {
+        "claim": "Japan's MOFA says no visa is needed in advance for tourist stays of up to 3 months.",
+        "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ (査証、出入国審査等)",
+        "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_257.html"
+      }
+    ]
   },
   {
     "nationality": "KR",
@@ -30086,14 +30534,26 @@
       "Completed Bahamas Immigration Disembarkation/Embarkation Card",
       "Yellow fever vaccination certificate only if arriving from (or transiting >12 hours through) a country with yellow fever risk"
     ],
-    "notes": "Stay length: Bahamas Immigration only says visa-exempt visitors may remain 'for a period not exceeding three (3) months or eight (8) months as each individual agreement may dictate', and the immigration officer stamps the actual period on arrival. No source states which applies to this passport, so we show no day count — check the date stamped in your passport. Visa-free. Listed by Bahamas Immigration among visa-waived nationalities. Nederland Wereldwijd (7 Oct 2026): with a Dutch passport no visa is needed for stays of 90 days or shorter; stays over 90 days need a visa; passport must be valid at least 6 months at departure from the country. Bahamas Immigration 'Before Your Arrival' (updated 2026-08-10) sets the entry criteria under the Immigration Act (Ch. 191) s.22: a valid return ticket/means of departure, no intention to work, financial means (or a local sponsor), a passport valid for at least six months (passport cards not accepted) and a completed Disembarkation/Embarkation Card. 'Admittance is not automatic' — the officer can refuse leave to land. The officer also decides how long you may stay; the period is documented in your passport ('the maximum period of stay, documented in visitors' passports, may vary, as this is dependent upon the discretion of the immigration officer at the port of entry'), and the absolute maximum for a visitor is 8 months. Extensions: apply to the Department of Immigration before the granted time expires; in-person interview with an extension officer; $200.00 non-refundable processing fee since 18 September 2024; bring return ticket, valid passport, local address, the Immigration landing card, reason for extension, sponsor's passport and address (Immigration 'Extension of Stay' page). Overstaying is a punishable offence. Yellow fever certificate required from travellers over 1 year arriving from (or transiting more than 12 hours through) a listed risk country (including Argentina, Brazil, Colombia, Peru, Kenya and others), vaccinated at least 10 days before entry. ",
+    "notes": "Stay length: Bahamas Immigration only says visa-exempt visitors may remain 'for a period not exceeding three (3) months or eight (8) months as each individual agreement may dictate', and the immigration officer stamps the actual period on arrival. No source states which applies to this passport, so we show no day count — check the date stamped in your passport. Visa-free. Listed by Bahamas Immigration among visa-waived nationalities. Nederland Wereldwijd (7 Oct 2026): with a Dutch passport no visa is needed for stays of 90 days or shorter; stays over 90 days need a visa; passport must be valid at least 6 months at departure from the country. Bahamas Immigration 'Before Your Arrival' (updated 2026-08-10) sets the entry criteria under the Immigration Act (Ch. 191) s.22: a valid return ticket/means of departure, no intention to work, financial means (or a local sponsor), a passport valid for at least six months (passport cards not accepted) and a completed Disembarkation/Embarkation Card. 'Admittance is not automatic' — the officer can refuse leave to land. The officer also decides how long you may stay; the period is documented in your passport ('the maximum period of stay, documented in visitors' passports, may vary, as this is dependent upon the discretion of the immigration officer at the port of entry'), and the absolute maximum for a visitor is 8 months. Extensions: apply to the Department of Immigration before the granted time expires; in-person interview with an extension officer; $200.00 non-refundable processing fee since 18 September 2024; bring return ticket, valid passport, local address, the Immigration landing card, reason for extension, sponsor's passport and address (Immigration 'Extension of Stay' page). Overstaying is a punishable offence. Yellow fever certificate required from travellers over 1 year arriving from (or transiting more than 12 hours through) a listed risk country (including Argentina, Brazil, Colombia, Peru, Kenya and others), vaccinated at least 10 days before entry. The Netherlands' advice for Dutch passports says at least 6 months' validity on the day you leave; this row keeps the rule from its own source.",
     "legal_source": {
       "name": "Nederland Wereldwijd — Reisadvies Bahama's (Paspoort, visum; updated 7 Oct 2026)",
       "url": "https://www.nederlandwereldwijd.nl/reisadvies/bahamas"
     },
-    "verified_at": "2026-10-10",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Nederland Wereldwijd — Reisadvies Bahama's (Paspoort, visum; updated 7 Oct 2026)",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/bahamas"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van vertrek uit het land.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 12-06-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/bahamas"
+      }
+    ]
   },
   {
     "nationality": "US",
@@ -30592,14 +31052,26 @@
       "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
       "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
     ],
-    "notes": "Visa-free: Netherlands is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "notes": "Visa-free: Netherlands is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE). The Netherlands' advice for Dutch passports says at least 6 months' validity on arrival; this row keeps the rule from its own source.",
     "legal_source": {
       "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
       "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
     },
-    "verified_at": "2026-10-10",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+        "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van aankomst in het land.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 26-06-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/ecuador"
+      }
+    ]
   },
   {
     "nationality": "GB",
@@ -31354,7 +31826,7 @@
       "Mandatory Tanzanian inbound travel insurance (NIC for mainland entry, ZIC for entry via Zanzibar)",
       "Yellow fever vaccination certificate if arriving from or transiting a yellow-fever country"
     ],
-    "notes": "Netherlands appears on Tanzania Immigration's list of \"Countries whose nationals can obtain a visa upon arrival\" — eligible for \"both the online and the on arrival Visa facility\"; Immigration recommends applying online at visa.immigration.go.tz (processed within ten days). Tourists need an Ordinary (single-entry) Visa, USD 50, non-refundable. Stay: the guidelines give the Ordinary Visa \"a validity of up to 90 days\" (a validity figure); Canada's official travel advice (updated 7 Oct 2026) describes it as a \"3-month tourist ... single entry visa on arrival\" and says stays over 90 days require applying for an eVisa in advance — so 90 days is used here. Holders who visit other East African countries may re-enter on the same visa while it is still valid. No work or business allowed. A visa grant is not a final authority to enter; the officer at the border may refuse entry. One visa covers both Mainland and Zanzibar. Mandatory inbound travel insurance: NIC's official FAQ states the cover \"is mandatory to all foreigners traveling in Tanzania Mainland\", entering by land, sea or air, premium the TZS equivalent of USD 44 per person, valid 92 days with multiple entries, buy online at inbound.nicinsurance.co.tz or at the entry point; residents of EAC/SADC partner states are excluded (https://inbound.nicinsurance.co.tz/faqs). Canada's travel advice (updated 7 Oct 2026) confirms the insurer is NIC for mainland entry and the Zanzibar Insurance Corporation (ZIC) for entry via Zanzibar. Yellow fever: Immigration's tourist-info page says visitors must follow the Ministry of Health's yellow fever requirements; Canada's advice says proof of vaccination is required if arriving from, or transiting an airport in, a yellow-fever country. Guidelines PDF dated September 2026 (immigration.go.tz upload of 2026-09-10). Ebola: since 17 October 2026 Tanzania applies heightened health screening at all points of entry for travellers from high-risk regions; the Netherlands' advice says all travellers must fill in a health form within 24 hours before arrival or on arrival.",
+    "notes": "Netherlands appears on Tanzania Immigration's list of \"Countries whose nationals can obtain a visa upon arrival\" — eligible for \"both the online and the on arrival Visa facility\"; Immigration recommends applying online at visa.immigration.go.tz (processed within ten days). Tourists need an Ordinary (single-entry) Visa, USD 50, non-refundable. Stay: the guidelines give the Ordinary Visa \"a validity of up to 90 days\" (a validity figure); Canada's official travel advice (updated 7 Oct 2026) describes it as a \"3-month tourist ... single entry visa on arrival\" and says stays over 90 days require applying for an eVisa in advance — so 90 days is used here. Holders who visit other East African countries may re-enter on the same visa while it is still valid. No work or business allowed. A visa grant is not a final authority to enter; the officer at the border may refuse entry. One visa covers both Mainland and Zanzibar. Mandatory inbound travel insurance: NIC's official FAQ states the cover \"is mandatory to all foreigners traveling in Tanzania Mainland\", entering by land, sea or air, premium the TZS equivalent of USD 44 per person, valid 92 days with multiple entries, buy online at inbound.nicinsurance.co.tz or at the entry point; residents of EAC/SADC partner states are excluded (https://inbound.nicinsurance.co.tz/faqs). Canada's travel advice (updated 7 Oct 2026) confirms the insurer is NIC for mainland entry and the Zanzibar Insurance Corporation (ZIC) for entry via Zanzibar. Yellow fever: Immigration's tourist-info page says visitors must follow the Ministry of Health's yellow fever requirements; Canada's advice says proof of vaccination is required if arriving from, or transiting an airport in, a yellow-fever country. Guidelines PDF dated September 2026 (immigration.go.tz upload of 2026-09-10). Ebola: since 17 October 2026 Tanzania applies heightened health screening at all points of entry for travellers from high-risk regions; the Netherlands' advice says all travellers must fill in a health form within 24 hours before arrival or on arrival. The Netherlands' advice for Dutch passports says at least 6 months' validity on arrival; this row keeps the rule from its own source.",
     "legal_source": {
       "name": "Tanzania Visa Guidelines — Immigration Services Department, Ministry of Home Affairs (official e-Visa portal)",
       "url": "https://visa.immigration.go.tz/guidelines"
@@ -31376,6 +31848,11 @@
       {
         "claim": "Heightened Ebola screening at all points of entry; health form within 24 hours before arrival",
         "name": "Nederland Wereldwijd — Reisadvies Tanzania (Reisdocumenten en inreisregels)",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/tanzania"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn na afgifte van het visum en op het moment van aankomst in het land.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 19-10-2026), Paspoort",
         "url": "https://www.nederlandwereldwijd.nl/reisadvies/tanzania"
       }
     ]
@@ -32564,16 +33041,31 @@
       "maxDays": 180
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid for your whole stay"
     ],
     "notes": "Dutch citizens are on Armenia's list of countries whose citizens, with all types of passports, are unilaterally exempt from the visa requirement and \"can stay in the territory of the Republic of Armenia up to 180 days per year\". Armenia counts 180 days in one year; we show the stricter reading, 180 days in any 365-day window.",
     "legal_source": {
       "name": "Ministry of Foreign Affairs of Armenia — countries whose citizens are unilaterally exempt from the visa requirement (updated 02.02.2024)",
       "url": "https://www.mfa.am/en/visafreelist"
     },
-    "verified_at": "2026-10-20",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "whole_stay"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Armenia — countries whose citizens are unilaterally exempt from the visa requirement (updated 02.02.2024)",
+        "url": "https://www.mfa.am/en/visafreelist"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet geldig zijn tijdens de hele periode dat u in Armenië bent.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 31-07-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/armenie"
+      }
+    ]
   },
   {
     "nationality": "AR",
@@ -33020,16 +33512,31 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid for your whole stay"
     ],
     "notes": "The Interior Ministry's admission table lists this country's ordinary passports as not needing a visa. Uruguay's Foreign Ministry gives the legal tourist stay as 90 days, extendable: apply to the Dirección Nacional de Migración for a prórroga de permanencia temporaria.",
     "legal_source": {
       "name": "Ministerio del Interior (Dirección Nacional de Migración) — Régimen de visas de admisión (published 19/08/2025)",
       "url": "https://www.gub.uy/ministerio-interior/comunicacion/publicaciones/regimen-visas-admision"
     },
-    "verified_at": "2026-10-21",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "whole_stay"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministerio del Interior (Dirección Nacional de Migración) — Régimen de visas de admisión (published 19/08/2025)",
+        "url": "https://www.gub.uy/ministerio-interior/comunicacion/publicaciones/regimen-visas-admision"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet geldig zijn tijdens de hele periode dat u in het land bent.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 15-05-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/uruguay"
+      }
+    ]
   },
   {
     "nationality": "AR",
@@ -33349,7 +33856,7 @@
       "maxDays": 30
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for at least 6 months on your departure date",
       "Registration with the Mongolian Immigration Agency: hotels and landlords register you; if you travel independently or stay with friends you must register yourself"
     ],
     "notes": "The Government of Mongolia exempts nationals of 34 countries from visas for tourism of up to 30 days in 2026; the Foreign Ministry's consular list says this temporary exemption runs until the end of 2026. Travel for other purposes needs a visa. Canada's travel advice says visitors must register through the Immigration Agency website within 48 hours of arrival if their stay will exceed 30 days. Japan's advice says foreigners staying more than 30 days must register within one week of arrival and deregister when leaving.",
@@ -33380,8 +33887,19 @@
         "claim": "Stays over 30 days: register within 1 week; deregister on exit",
         "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ",
         "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_019.html"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van vertrek uit het land.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 28-08-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/mongolie"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "departure"
+    }
   },
   {
     "nationality": "GB",
@@ -34395,7 +34913,7 @@
       "maxDays": 30
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for at least 6 months on your departure date",
       "Registration within 3 days of arrival: hotels register their guests; otherwise your host registers you, or you register online through Emehmon (a tourist tax is charged per day)"
     ],
     "notes": "Uzbekistan lists your country among those whose citizens can stay up to 30 days without a visa. The 30 days run from the moment you cross the border, and you must leave when they end; for a longer stay you need a visa. The rule covers all passport types and any purpose of travel. The Foreign Ministry's own list gives the same 30 days. Failing to register can mean a fine for each missing day and possible deportation (UK advice); Canada's advice says registration applies if you stay more than 3 days.",
@@ -34421,8 +34939,19 @@
         "claim": "'You must register with the local authorities if you intend to stay for more than 3 days'",
         "name": "Government of Canada — Travel advice: Uzbekistan, Entry and exit requirements",
         "url": "https://travel.gc.ca/destinations/uzbekistan"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van vertrek uit het land.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 15-07-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/oezbekistan"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "departure"
+    }
   },
   {
     "nationality": "MY",
@@ -34811,7 +35340,7 @@
       "Valid passport",
       "Registration within 3 days of arrival: hotels register their guests; otherwise your host registers you, or you register online through Emehmon (a tourist tax is charged per day)"
     ],
-    "notes": "Uzbekistan lists your country among those whose citizens can stay up to 30 days without a visa. The 30 days run from the moment you cross the border, and you must leave when they end; for a longer stay you need a visa. The rule covers all passport types and any purpose of travel. The Foreign Ministry's own list gives the same 30 days. Failing to register can mean a fine for each missing day and possible deportation (UK advice); Canada's advice says registration applies if you stay more than 3 days.",
+    "notes": "Uzbekistan lists your country among those whose citizens can stay up to 30 days without a visa. The 30 days run from the moment you cross the border, and you must leave when they end; for a longer stay you need a visa. The rule covers all passport types and any purpose of travel. The Foreign Ministry's own list gives the same 30 days. Failing to register can mean a fine for each missing day and possible deportation (UK advice); Canada's advice says registration applies if you stay more than 3 days. Japan's MOFA says the visa exemption covers short stays of under 30 days; stays of 30 days or more need a visa.",
     "legal_source": {
       "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 408 of 21 November 1996, Annex 5 — countries whose citizens have a visa-free regime (as amended by Resolution No. 662 of 21 October 2025; LexUz Russian translation of the Uzbek original)",
       "url": "https://lex.uz/ru/docs/513096"
@@ -34834,6 +35363,11 @@
         "claim": "'You must register with the local authorities if you intend to stay for more than 3 days'",
         "name": "Government of Canada — Travel advice: Uzbekistan, Entry and exit requirements",
         "url": "https://travel.gc.ca/destinations/uzbekistan"
+      },
+      {
+        "claim": "Japan's MOFA says the visa exemption covers short stays of under 30 days; stays of 30 days or more need a visa.",
+        "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ (査証、出入国審査等)",
+        "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_183.html"
       }
     ]
   },
@@ -35618,7 +36152,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport or national ID card (the Ministry's visa page says citizens of EU member states can enter with a valid ID card)",
+      "Passport or ID card valid for at least 3 months after your departure date",
       "Registration with the police after arrival (hotels and some hostels usually do it for their guests)"
     ],
     "notes": "The Ministry of Foreign Affairs of Bosnia and Herzegovina says citizens of the Netherlands are exempt from visas for up to 90 days in a period of six months, counted from the day of first entry. For a longer stay, or to work, you need a visa or permit. Conflict recorded: the UK government's advice says all foreign nationals must register with the police within 72 hours of arrival; Canada's says within 48 hours if you visit for 3 or more days.",
@@ -35644,8 +36178,19 @@
         "claim": "Register with local police within 48 hours if visiting 3 or more days",
         "name": "Government of Canada — Travel advice: Bosnia And Herzegovina, Entry and exit requirements",
         "url": "https://travel.gc.ca/destinations/bosnia-and-herzegovina"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort of ID-kaart moet nog minimaal 3 maanden geldig zijn op het moment van vertrek uit het land.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 15-10-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/bosnie-en-herzegovina"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    }
   },
   {
     "nationality": "CN",
@@ -36208,14 +36753,26 @@
       "unit": "days",
       "from": "departure"
     },
-    "notes": "Your country is on Macao's list of nationalities exempt from a visa or entry permit. Holders of a passport issued by an EU or Schengen member state are granted up to 90 days on arrival. Overstaying is fined MOP 500 to 800 per day, up to MOP 15,000.",
+    "notes": "Your country is on Macao's list of nationalities exempt from a visa or entry permit. Holders of a passport issued by an EU or Schengen member state are granted up to 90 days on arrival. Overstaying is fined MOP 500 to 800 per day, up to MOP 15,000. The Netherlands' advice for Dutch passports says at least 6 months' validity on the day you leave; this row keeps the rule from its own source.",
     "legal_source": {
       "name": "Macao SAR Government Portal — Immigration (Public Security Police Force): visa and entry permit exemption, limit of stay (last modified 2026-08-10)",
       "url": "https://www.gov.mo/en/services/ps-1474/ps-1474b/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Macao SAR Government Portal — Immigration (Public Security Police Force): visa and entry permit exemption, limit of stay (last modified 2026-08-10)",
+        "url": "https://www.gov.mo/en/services/ps-1474/ps-1474b/"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van vertrek uit Macau SAR.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 12-06-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/macau-sar"
+      }
+    ]
   },
   {
     "nationality": "BR",
@@ -36961,14 +37518,26 @@
       "Confirmed accommodation",
       "Enough money for your stay (at least US$150 or equivalent per day)"
     ],
-    "notes": "Seychelles needs no visa. A Visitor's Permit is issued free on arrival for holidays, business or visiting friends and family, for up to three months (we count that as 90 days). It can be extended in three-month steps to a maximum of twelve months, for SCR 5,000 per extension, at permits.ics.gov.sc or the Immigration office in Victoria.",
+    "notes": "Seychelles needs no visa. A Visitor's Permit is issued free on arrival for holidays, business or visiting friends and family, for up to three months (we count that as 90 days). It can be extended in three-month steps to a maximum of twelve months, for SCR 5,000 per extension, at permits.ics.gov.sc or the Immigration office in Victoria. The Netherlands' advice for Dutch passports says valid for the whole stay (until you leave); this row keeps the rule from its own source.",
     "legal_source": {
       "name": "Seychelles Immigration and Civil Status — Visitor's Permit (with Visiting Seychelles)",
       "url": "https://www.ics.gov.sc/permits/visitors-permit"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Seychelles Immigration and Civil Status — Visitor's Permit (with Visiting Seychelles)",
+        "url": "https://www.ics.gov.sc/permits/visitors-permit"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet geldig zijn tijdens de hele periode dat u in het land bent.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 09-09-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/seychellen"
+      }
+    ]
   },
   {
     "nationality": "US",
@@ -37117,14 +37686,26 @@
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
       "Valid passport"
     ],
-    "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
+    "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions. Japan's MOFA says the entry stamp allows a stay of 30 or 60 days whatever the purpose, and that visas can't be obtained at the airport.",
     "legal_source": {
       "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
       "url": "https://gis.gov.gh/visas/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
+        "url": "https://gis.gov.gh/visas/"
+      },
+      {
+        "claim": "Japan's MOFA says the entry stamp allows a stay of 30 or 60 days whatever the purpose, and that visas can't be obtained at the airport.",
+        "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ (査証、出入国審査等)",
+        "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_096.html"
+      }
+    ]
   },
   {
     "nationality": "KR",
@@ -37447,16 +38028,34 @@
     },
     "documentsNeeded": [
       "A Ghana visa, issued by a Ghana diplomatic mission abroad (the Ghana Immigration Service also runs an eVisa portal: evisa.immigration.gov.gh)",
-      "Valid passport"
+      "Passport valid for at least 6 months on your arrival date"
     ],
     "notes": "Your country is not on Ghana's visa regime table of exemptions, so you need a visa. Visas issued by Ghana's missions abroad cover single or multiple journeys, valid from six months to five years. A visa does not guarantee entry: conditions are checked at the border. Someone who arrives without a visa may be granted an Emergency Entry Visa, subject to conditions.",
     "legal_source": {
       "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
       "url": "https://gis.gov.gh/visas/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ghana Immigration Service — Visas (Ghana visa regime table)",
+        "url": "https://gis.gov.gh/visas/"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van aankomst in het land.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 23-06-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/ghana"
+      }
+    ]
   },
   {
     "nationality": "US",
@@ -37839,7 +38438,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for at least 6 months on your arrival date",
       "A valid return air ticket if you arrive by air; if you arrive by land or water, enough money for your stay and departure"
     ],
     "notes": "Your country is on Zambia's list of nationals who don't need a visa. All ordinary visitors, business visitors and tourists get 90 free days in any 12 months, counted from the day of first entry. The days may not all be given at once; you can have them extended free of charge at the nearest Immigration Office.",
@@ -37847,9 +38446,27 @@
       "name": "Zambia Department of Immigration — Nationals Who Do Not Require Visa (with For Visitors)",
       "url": "https://www.zambiaimmigration.gov.zm/nationals-who-dont-require-visa/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Zambia Department of Immigration — Nationals Who Do Not Require Visa (with For Visitors)",
+        "url": "https://www.zambiaimmigration.gov.zm/nationals-who-dont-require-visa/"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van aankomst in het land.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 29-05-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/zambia"
+      }
+    ]
   },
   {
     "nationality": "FR",
@@ -38157,16 +38774,34 @@
       "maxDays": 120
     },
     "documentsNeeded": [
-      "A current, valid passport"
+      "Passport valid for at least 6 months on your arrival date"
     ],
     "notes": "Your country is on Fiji's list of visa-exempt nationalities. Visitors are given a visitor permit at immigration clearance for up to 4 months (we count that as 120 days); it can be extended by 2 months if you apply and pay the fee. Visitors coming for medical treatment must apply for their permit before arriving.",
     "legal_source": {
       "name": "Fiji Ministry of Immigration — Visa exempted countries (with Visit Fiji)",
       "url": "https://www.immigration.gov.fj/visa-exempted-countries"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Fiji Ministry of Immigration — Visa exempted countries (with Visit Fiji)",
+        "url": "https://www.immigration.gov.fj/visa-exempted-countries"
+      },
+      {
+        "claim": "Passport validity for Japanese passport holders: Passport valid for at least 6 months on your arrival date",
+        "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ (査証、出入国審査等)",
+        "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_076.html"
+      }
+    ]
   },
   {
     "nationality": "KR",
@@ -38489,16 +39124,34 @@
       "maxDays": 120
     },
     "documentsNeeded": [
-      "A current, valid passport"
+      "Passport valid for at least 6 months on your departure date"
     ],
     "notes": "Your country is on Fiji's list of visa-exempt nationalities. Visitors are given a visitor permit at immigration clearance for up to 4 months (we count that as 120 days); it can be extended by 2 months if you apply and pay the fee. Visitors coming for medical treatment must apply for their permit before arriving.",
     "legal_source": {
       "name": "Fiji Ministry of Immigration — Visa exempted countries (with Visit Fiji)",
       "url": "https://www.immigration.gov.fj/visa-exempted-countries"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "departure"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Fiji Ministry of Immigration — Visa exempted countries (with Visit Fiji)",
+        "url": "https://www.immigration.gov.fj/visa-exempted-countries"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van vertrek uit het land.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 28-09-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/fiji"
+      }
+    ]
   },
   {
     "nationality": "US",
@@ -38709,7 +39362,7 @@
       "kind": "visa_required"
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for your whole stay",
       "Mauritius All in One Travel Form, completed online before you arrive (keep the QR code)"
     ],
     "notes": "Mauritius's country list marks your country \"No visa required\". No fixed stay is stated for visa-free visitors: the Immigration Officer at the port of entry decides how long you can stay on each visit. (For tourist visas, the office says a maximum of six months may be granted in a calendar year, case by case.) Staying beyond the period granted is an offence liable to prosecution.",
@@ -38735,8 +39388,16 @@
         "claim": "Fill in the Mauritius All in One travel form online before you arrive",
         "name": "Nederland Wereldwijd — Reisadvies Mauritius (Reisdocumenten en inreisregels)",
         "url": "https://www.nederlandwereldwijd.nl/reisadvies/mauritius"
+      },
+      {
+        "claim": "Passport validity for Japanese passport holders: Passport valid for your whole stay",
+        "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ (査証、出入国審査等)",
+        "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_279.html"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "whole_stay"
+    }
   },
   {
     "nationality": "KR",
@@ -39325,7 +39986,7 @@
       "kind": "visa_required"
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for at least 6 months on your departure date",
       "Mauritius All in One Travel Form, completed online before you arrive (keep the QR code)"
     ],
     "notes": "Holders of passports issued by EU countries are exempt from Mauritius's visa regulations, and the country list marks your country \"No visa required\". No fixed stay is stated for visa-free visitors: the Immigration Officer at the port of entry decides how long you can stay on each visit. (For tourist visas, the office says a maximum of six months may be granted in a calendar year, case by case.) Staying beyond the period granted is an offence liable to prosecution.",
@@ -39351,8 +40012,19 @@
         "claim": "Fill in the Mauritius All in One travel form online before you arrive",
         "name": "Nederland Wereldwijd — Reisadvies Mauritius (Reisdocumenten en inreisregels)",
         "url": "https://www.nederlandwereldwijd.nl/reisadvies/mauritius"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van vertrek uit het land.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 09-09-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/mauritius"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "departure"
+    }
   },
   {
     "nationality": "SG",
@@ -39654,7 +40326,7 @@
       "A Zimbabwe visa: on arrival at the port of entry after paying the visa fee, or online in advance at evisa.gov.zw (the Department encourages applying online first)",
       "Valid passport"
     ],
-    "notes": "Your country is in Zimbabwe's Category B: you need a visa, which you can get at the port of entry after paying the fee or apply for online before you travel. The Department encourages completing the Zimbabwe Entry Declaration Form before travelling. The official pages don't state the visa fee or how long the stay lasts; check them on the eVisa portal. Entry declaration: the Netherlands' and Japan's advice say the online Zimbabwe Entry Declaration Form is needed to enter, not just encouraged.",
+    "notes": "Your country is in Zimbabwe's Category B: you need a visa, which you can get at the port of entry after paying the fee or apply for online before you travel. The Department encourages completing the Zimbabwe Entry Declaration Form before travelling. The official pages don't state the visa fee or how long the stay lasts; check them on the eVisa portal. Entry declaration: the Netherlands' and Japan's advice say the online Zimbabwe Entry Declaration Form is needed to enter, not just encouraged. Japan's MOFA (fees as of June 2026): single-entry visa US$30, double US$45, multiple US$55 (immigration office only), KAZA UNIVISA US$50; the online entry declaration is listed among what's needed.",
     "legal_source": {
       "name": "Department of Immigration Zimbabwe — Category B countries (visa on arrival or eVisa)",
       "url": "https://www.zimimmigration.gov.zw/?p=7186"
@@ -39676,6 +40348,11 @@
       {
         "claim": "Completed entry declaration form needed to enter Zimbabwe",
         "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ",
+        "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_106.html"
+      },
+      {
+        "claim": "Japan's MOFA (fees as of June 2026): single-entry visa US$30, double US$45, multiple US$55 (immigration office only), KAZA UNIVISA US$50; the online entry declaration is listed among what's needed.",
+        "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ (査証、出入国審査等)",
         "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_106.html"
       }
     ]
@@ -40144,7 +40821,7 @@
     },
     "documentsNeeded": [
       "A Zimbabwe visa: on arrival at the port of entry after paying the visa fee, or online in advance at evisa.gov.zw (the Department encourages applying online first)",
-      "Valid passport"
+      "Passport valid for at least 6 months on your arrival date, with at least 3 blank pages"
     ],
     "notes": "Your country is in Zimbabwe's Category B: you need a visa, which you can get at the port of entry after paying the fee or apply for online before you travel. The Department encourages completing the Zimbabwe Entry Declaration Form before travelling. The official pages don't state the visa fee or how long the stay lasts; check them on the eVisa portal. Entry declaration: the Netherlands' and Japan's advice say the online Zimbabwe Entry Declaration Form is needed to enter, not just encouraged.",
     "legal_source": {
@@ -40169,7 +40846,18 @@
         "claim": "Completed entry declaration form needed to enter Zimbabwe",
         "name": "Ministry of Foreign Affairs of Japan — 海外安全ホームページ, 安全対策基礎データ",
         "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_106.html"
+      },
+      {
+        "claim": "Passport validity for Dutch passport holders: Uw Nederlandse paspoort moet nog minimaal 6 maanden geldig zijn op het moment van aankomst in het land.",
+        "name": "Nederland Wereldwijd — Reisadvies (laatst gewijzigd 30-06-2026), Paspoort",
+        "url": "https://www.nederlandwereldwijd.nl/reisadvies/zimbabwe"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    }
   }
 ]
