@@ -1,5 +1,405 @@
 [
   {
+    "commit": "e70e20be94e7c3549d4dfb5d5bb1564e87ec9804",
+    "date": "2026-10-26",
+    "dataset": "customs-items",
+    "summary": "Summaries for 46 cannabis and vape rows; US and South Africa vapes moved to UNVERIFIED ('allowed' rested on silence)",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "destinations": [
+      "AE",
+      "AL",
+      "AU",
+      "BS",
+      "CA",
+      "CL",
+      "CO",
+      "CY",
+      "EG",
+      "EU",
+      "GB",
+      "ID",
+      "IE",
+      "IN",
+      "JO",
+      "JP",
+      "KE",
+      "KH",
+      "KR",
+      "LK",
+      "MA",
+      "ME",
+      "MV",
+      "MX",
+      "MY",
+      "PH",
+      "QA",
+      "RW",
+      "SA",
+      "SG",
+      "TH",
+      "TW",
+      "TZ",
+      "US",
+      "VN",
+      "ZA"
+    ]
+  },
+  {
+    "commit": "13ecf7412e3abefdb05073a210c9856c29aac08f",
+    "date": "2026-10-26",
+    "dataset": "customs-items",
+    "summary": "weapons-tr: flick knives and self-defence sprays named (GOV.UK cross-check)",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "destinations": [
+      "TR"
+    ]
+  },
+  {
+    "commit": "29f22948bf5bfa26db14f449f4d19f11037b4d21",
+    "date": "2026-10-26",
+    "dataset": "customs-items",
+    "summary": "Cannabis rows for Nigeria and Serbia from GOV.UK (were held: law-firm/unreadable sources); redirects removed",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "destinations": [
+      "NG",
+      "RS"
+    ]
+  },
+  {
+    "commit": "460f967f0e58e143a503e4d5393292f4fc386eea",
+    "date": "2026-10-26",
+    "dataset": "customs-items",
+    "summary": "cash-uz: use the advice's own threshold wording (not 'or more')",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "destinations": [
+      "UZ"
+    ]
+  },
+  {
+    "commit": "a456e5259e02b06316a8abdee86d8b91e26436b5",
+    "date": "2026-10-26",
+    "dataset": "customs-items",
+    "summary": "Cash rows for Uzbekistan and Zimbabwe from GOV.UK; Mongolia cash still held (three conflicting figures)",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "destinations": [
+      "UZ",
+      "ZW"
+    ]
+  },
+  {
+    "commit": "f2d5ee21c35243cc00b606b8330d3f2b6b7206b2",
+    "date": "2026-10-26",
+    "dataset": "customs-items",
+    "summary": "Drones from GOV.UK: Uzbekistan (licence + permission before arrival); Jordan approval procedure (10 working days); Morocco flight permission",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "destinations": [
+      "JO",
+      "MA",
+      "UZ"
+    ]
+  },
+  {
+    "commit": "e011c65a61797fd56ff1518122514eb3934da3d0",
+    "date": "2026-10-26",
+    "dataset": "customs-items",
+    "summary": "Vietnam: ordinary prescription medication row (GOV.UK), so the 7-day limit reads as the controlled-medicine rule only",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "destinations": [
+      "VN"
+    ]
+  },
+  {
+    "commit": "73bfeec65be705f9e5788e1baf7c69bac2ffed1f",
+    "date": "2026-10-26",
+    "dataset": "customs-items",
+    "summary": "Vietnam controlled medication back, from GOV.UK (7 days, prescription + doctor's letter); Thailand vapes cross-cited",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "destinations": [
+      "TH",
+      "VN"
+    ]
+  },
+  {
+    "commit": "083833153f630a346b5de2b3848981616318cddd",
+    "date": "2026-10-26",
+    "dataset": "customs-items",
+    "summary": "From GOV.UK travel advice: Rwanda vapes banned, Armenia cannabis/CBD banned; CBD sourced for Indonesia and Tanzania; Vietnam vapes cross-checked",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "destinations": [
+      "AM",
+      "ID",
+      "RW",
+      "TZ",
+      "VN"
+    ]
+  },
+  {
+    "commit": "6123a779e5d9dacee48cd8688176f5878c90ba61",
+    "date": "2026-10-26",
+    "dataset": "customs-items",
+    "summary": "CBD: UAE row from GOV.UK (CBD oil illegal; products confiscated); Thailand states its CBD reading",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "destinations": [
+      "AE",
+      "TH"
+    ]
+  },
+  {
+    "commit": "6eeb37c6142fb0b36f41953c5f06385c543a8107",
+    "date": "2026-10-26",
+    "dataset": "customs-items",
+    "summary": "Search names audit: 62 rows stop answering searches their text doesn't cover",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "destinations": [
+      "AM",
+      "AR",
+      "AU",
+      "BR",
+      "BS",
+      "CL",
+      "CN",
+      "CO",
+      "CY",
+      "DO",
+      "EC",
+      "EG",
+      "GE",
+      "ID",
+      "IE",
+      "IL",
+      "IN",
+      "JM",
+      "JP",
+      "KE",
+      "KR",
+      "LK",
+      "MA",
+      "ME",
+      "MX",
+      "MY",
+      "NG",
+      "PE",
+      "PH",
+      "QA",
+      "RW",
+      "SA",
+      "SG",
+      "TH",
+      "TR",
+      "TW",
+      "US",
+      "VN",
+      "ZA"
+    ]
+  },
+  {
+    "commit": "55277d3d9870eba118b817200e74a6ec3b1cb656",
+    "date": "2026-10-26",
+    "dataset": "customs-items",
+    "summary": "CBD audit: stop answering CBD searches with inferred bans",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "destinations": [
+      "AE",
+      "AL",
+      "BS",
+      "DO",
+      "EG",
+      "ID",
+      "MA",
+      "MX",
+      "PH",
+      "RW",
+      "SA",
+      "ZA"
+    ]
+  },
+  {
+    "commit": "7c396abbebfa79822f0e1f843ada8f8eb3448b62",
+    "date": "2026-10-26",
+    "dataset": "customs-items",
+    "summary": "Cannabis/CBD accuracy: New Zealand allows prescribed medicinal cannabis; Taiwan CBD needs a TFDA permit; no more 'treat as prohibited' from silence",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "destinations": [
+      "AR",
+      "IN",
+      "NZ",
+      "QA",
+      "TR",
+      "TW",
+      "TZ"
+    ]
+  },
+  {
+    "commit": "215997c47cfbd8e0c9797366ddd15a2713caff25",
+    "date": "2026-10-26",
+    "dataset": "customs-items",
+    "summary": "weapons-sg: Police Regulatory Department approval procedure (apply 2+ weeks before travel)",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "destinations": [
+      "SG"
+    ]
+  },
+  {
+    "commit": "5d1ac684404c9b13dd4082c23239f50e834acedc",
+    "date": "2026-10-26",
+    "dataset": "customs-items",
+    "summary": "Customs: weapons rows for South Korea, Singapore, Türkiye, UAE and China",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "destinations": [
+      "AE",
+      "CN",
+      "KR",
+      "SG",
+      "TR"
+    ]
+  },
+  {
+    "commit": "4d46b1e9cc6ffc477d320e851d2ce1885c75d5db",
+    "date": "2026-10-26",
+    "dataset": "customs-items",
+    "summary": "Customs: South Korea alcohol and tobacco, Egypt cash, Qatar tobacco; Korea cash threshold corrected",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "destinations": [
+      "EG",
+      "KR",
+      "QA"
+    ]
+  },
+  {
+    "commit": "679bf75514ea9c5beb507799da15986d5e485192",
+    "date": "2026-10-26",
+    "dataset": "customs-items",
+    "summary": "SEO: per-rule snippets on multi-rule pages, visa posts on passport pages, a fuller /sources",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "destinations": [
+      "MY"
+    ]
+  },
+  {
+    "commit": "a45bbec95c1da3d8a74b530a683bf04a187bac21",
+    "date": "2026-10-26",
+    "dataset": "customs-items",
+    "summary": "SEO: summaries for 61 ranking rows; Turkey alcohol/tobacco allowances are per product; Korea vapes re-read",
+    "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing goods into the UK for personal use",
+      "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain"
+    },
+    "destinations": [
+      "AR",
+      "AU",
+      "BR",
+      "CL",
+      "CN",
+      "CY",
+      "DO",
+      "GB",
+      "ID",
+      "IE",
+      "IN",
+      "KR",
+      "MA",
+      "ME",
+      "MX",
+      "NZ",
+      "PE",
+      "PH",
+      "QA",
+      "SG",
+      "TH",
+      "TR",
+      "TW",
+      "VN",
+      "ZA"
+    ]
+  },
+  {
     "commit": "a99d22acd92ae215f8b31bd0529c748390a1cab2",
     "date": "2026-10-26",
     "dataset": "customs-items",
