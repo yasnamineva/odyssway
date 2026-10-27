@@ -303,9 +303,26 @@ function contentHash(contentType: string, body: Buffer): string {
   return createHash("sha256").update(bytes).digest("hex");
 }
 
-async function fetchHash(url: string): Promise<string> {
+/**
+ * eur-lex.europa.eu blocks automated fetching, but the Publications Office serves the
+ * same documents through CELLAR (data/UNVERIFIED/TODO.md, "EUR-Lex access"). A
+ * EUR-Lex link with a CELEX number is fetched from there instead (2026-10-27).
+ */
+function fetchTarget(url: string): { url: string; headers: Record<string, string> } {
+  const celex = /eur-lex\.europa\.eu\/legal-content\/[A-Z]{2}\/(?:TXT|ALL)\/\?uri=CELEX(?:%3A|:)([0-9A-Z()-]+)/i.exec(url)?.[1];
+  if (celex) {
+    return {
+      url: `http://publications.europa.eu/resource/celex/${celex}`,
+      headers: { accept: "application/xhtml+xml", "accept-language": "en" },
+    };
+  }
+  return { url, headers: {} };
+}
+
+async function fetchHash(original: string): Promise<string> {
+  const { url, headers } = fetchTarget(original);
   const res = await fetch(url, {
-    headers: { "user-agent": "odyssway-source-watch/0.2 (change detection for compliance data)" },
+    headers: { "user-agent": "odyssway-source-watch/0.2 (change detection for compliance data)", ...headers },
     redirect: "follow",
     signal: AbortSignal.timeout(30_000),
   });
