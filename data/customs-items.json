@@ -187,6 +187,7 @@
     "category": "food_animal",
     "verdict": "depends",
     "notes": "You may not import fresh, dried or canned meats or meat products from most foreign countries, or food products prepared with meat. You may bring bakery items and certain cheeses. Declare all agricultural items for inspection: failing to declare them costs $300 for a first offence and up to $500 for a second.",
+    "summary": "Fresh, dried or canned meat and meat products from most countries can't be brought into the US. Some bakery items and cheeses are allowed; declare all food.",
     "legal_source": {
       "name": "U.S. Customs and Border Protection — Prohibited and Restricted Items (last modified 14 Mar 2025)",
       "url": "https://www.cbp.gov/travel/us-citizens/know-before-you-go/prohibited-and-restricted-items"
@@ -206,6 +207,7 @@
     "category": "food_plant",
     "verdict": "depends",
     "notes": "Whether CBP lets fresh fruit or vegetables in depends on where you got them and where you are going in the US. CBP says it is best not to bring them; if you plan to, contact CBP or check USDA-APHIS permits. Declare all agricultural items for inspection: failing to declare them costs $300 for a first offence and up to $500 for a second.",
+    "summary": "Depends on where it's from and where you're going in the US; CBP says it's best not to bring fresh fruit or vegetables. Declare any you have.",
     "legal_source": {
       "name": "U.S. Customs and Border Protection — Prohibited and Restricted Items (last modified 14 Mar 2025)",
       "url": "https://www.cbp.gov/travel/us-citizens/know-before-you-go/prohibited-and-restricted-items"
@@ -402,6 +404,7 @@
     "limits": {
       "description": "From the EU/EEA/Switzerland: cheese, milk, dairy, and most red meats are banned, but fish, poultry, eggs and honey are allowed. From all other countries: all meat and dairy products are banned outright, with narrow exceptions for honey and infant/medical foods up to 2kg."
     },
+    "summary": "From outside the EU, EEA and Switzerland, all meat and dairy is banned, with narrow exceptions. From the EU, cheese, milk and most red meat are banned too.",
     "legal_source": {
       "name": "gov.uk — Bringing meat, dairy, fish and other animal products into Great Britain",
       "url": "https://www.gov.uk/bringing-food-into-great-britain/meat-dairy-fish-animal-products"
@@ -475,6 +478,7 @@
     "category": "weapons",
     "verdict": "depends",
     "notes": "Offensive weapons, for example flick knives, and self-defence sprays, for example pepper spray and CS gas, are banned and will be seized. Firearms, explosives and ammunition are restricted: you need a special licence to bring them in.",
+    "summary": "Banned: offensive weapons such as flick knives, and self-defence sprays such as pepper spray. Firearms and ammunition need a special licence.",
     "legal_source": {
       "name": "gov.uk — Banned and restricted goods",
       "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/banned-and-restricted-goods"
@@ -615,6 +619,7 @@
     "limits": {
       "description": "Meat from the US: allowed up to 20kg if hand-carried. Fresh, dried or cured meat from other countries: generally not permitted. Dairy from any country: only ice cream, yogurt, kashk and pasteurized cheese are permitted."
     },
+    "summary": "Meat from the US: up to 20 kg hand-carried. Meat from elsewhere: generally not allowed. Dairy: only ice cream, yogurt, kashk and pasteurised cheese.",
     "legal_source": {
       "name": "CBSA — Food, plant and animal products",
       "url": "https://www.cbsa-asfc.gc.ca/services/fpa-apa/bringing-apporter-fpa-eng.html"
@@ -858,6 +863,7 @@
       "description": "Meat and dairy products are excluded from the general personal-import exemption and are effectively banned from most third countries. Other animal-origin products (e.g. honey), fishery products, and infant/medical foods have narrow exemptions up to 2–20kg."
     },
     "notes": "Andorra, Iceland, Liechtenstein, Norway, San Marino and Switzerland are exempt from these controls.",
+    "summary": "Meat and dairy from most non-EU countries are banned in luggage. Honey, fish and infant or medical foods have small separate limits.",
     "legal_source": {
       "name": "Commission Delegated Regulation (EU) 2019/2122, Art. 7 and Annex I",
       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R2122"
@@ -903,6 +909,7 @@
       "description": "Carrying a firearm through two or more Schengen states generally requires each state's prior authorisation, recorded on a European Firearms Pass, with a narrow exception for hunters/target shooters/re-enactors travelling with a valid Pass."
     },
     "notes": "Knife possession is not EU-harmonized — it varies by national law.",
+    "summary": "Carrying a firearm through two or more Schengen states needs each state's authorisation on a European Firearms Pass. Knife rules are national.",
     "legal_source": {
       "name": "Directive (EU) 2021/555, Art. 17",
       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32021L0555"
@@ -1378,6 +1385,7 @@
     "category": "food_plant",
     "verdict": "prohibited",
     "notes": "Most fruits and vegetables cannot be brought in, including in-flight meals with fresh fruit or vegetables. Plants that are not prohibited (seedlings, seeds, grains, beans) need a phytosanitary certificate from a government agency of the exporting country. Soil is prohibited. Penalties: up to 3 years' imprisonment or a fine of up to 3 million yen.",
+    "summary": "Banned: most fresh fruit and vegetables, including from in-flight meals, and soil. Seeds and other permitted plants need a phytosanitary certificate.",
     "legal_source": {
       "name": "Plant Protection Station (MAFF) — Request to people coming to Japan",
       "url": "https://www.maff.go.jp/pps/j/pqaqinfo_en.html"
@@ -1599,6 +1607,7 @@
     "category": "weapons",
     "verdict": "depends",
     "notes": "Arms and ammunition, and spent cartridges, are restricted imports: KRA says all restricted goods need authorization from the relevant government institution, through the necessary licences and permits, before Customs processes and releases them. Toy guns are on KRA's prohibited list. KRA doesn't name the licensing body.",
+    "summary": "Arms, ammunition and spent cartridges are restricted: you need authorisation from the relevant government institution before Customs releases them.",
     "legal_source": {
       "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
       "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
@@ -1617,6 +1626,7 @@
     "category": "food_plant",
     "verdict": "depends",
     "notes": "Plants and plant material are restricted imports: KRA says all restricted goods need authorization from the relevant government institution, through the necessary licences and permits, before Customs processes and releases them. KRA doesn't name the licensing body.",
+    "summary": "Plants and plant material are restricted imports: you need a licence or permit from the relevant government institution.",
     "legal_source": {
       "name": "Kenya Revenue Authority — Passenger Terminal Clearance in Kenya (FAQs)",
       "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya"
@@ -1808,6 +1818,7 @@
       "description": "Firearms are restricted goods: they may only be imported under certain circumstances, such as under permit, and cannot be claimed under any traveller allowance."
     },
     "notes": "Military weapons are prohibited goods. The SARS guide doesn't say who issues firearm permits.",
+    "summary": "Firearms can only be imported under a permit, not under a traveller allowance. Military weapons are prohibited.",
     "legal_source": {
       "name": "SARS — SC-PA-01-03 Duty Free Allowances for Travellers (External Guide, Rev. 8, eff. 1 July 2026)",
       "url": "https://www.sars.gov.za/wp-content/uploads/Docs/Customs/SC-PA-01-03-Duty-Free-Allowances-for-Travellers-External-Guide.pdf"
@@ -2273,6 +2284,7 @@
     "category": "weapons",
     "verdict": "depends",
     "notes": "Thai Customs lists guns, bullets, explosives and their equivalents as restricted goods that need a permit from the Department of Provincial Administration, Ministry of Interior (www.dopa.go.th).",
+    "summary": "Guns, bullets and explosives need a permit from the Ministry of Interior before you bring them into Thailand.",
     "legal_source": {
       "name": "Thai Customs Department — Restricted and Prohibited Goods for travelers",
       "url": "https://www.customs.go.th/cont_strc_simple.php?ini_content=individual_160426_01&lang=en&left_menu=menu_individual_submenu_03_01"
@@ -2518,6 +2530,7 @@
     "category": "weapons",
     "verdict": "depends",
     "notes": "\"Arms and ammunition specified under Chapter 93 of the Customs Nomenclature\" are listed as restricted imports under Part B(5) of the EAC Customs Management Act 2004 Second Schedule — importable only in accordance with a written permit granted by the competent authority of the Partner State. RRA's published list does not name the specific licensing body, so it is not stated here.",
+    "summary": "Arms and ammunition are restricted imports into Rwanda: you need authorisation before Customs releases them.",
     "legal_source": {
       "name": "Rwanda Revenue Authority — Prohibited Goods for Travelers (EAC Customs Management Act 2004, Second Schedule)",
       "url": "https://www.rra.gov.rw/en/customs-services/travelers/prohibited-goods"
@@ -2559,6 +2572,7 @@
     "category": "other",
     "verdict": "prohibited",
     "notes": "\"The manufacturing, use, importation or sale of plastic carry bags and single-use plastic items is prohibited\" (Law N° 17/2019, Art. 3). Importing them leads to dispossession of the items and an administrative fine of ten times their value (Art. 10). Home-compostable plastic items and woven polypropylene are allowed only with prior authorisation from the competent authority (Art. 4).",
+    "summary": "Banned: plastic carry bags and single-use plastic items can't be brought into Rwanda; they're taken from you at the border.",
     "legal_source": {
       "name": "Law N° 17/2019 of 10/08/2019 Relating to the Prohibition of Manufacturing, Importation, Use and Sale of Plastic Carry Bags and Single-Use Plastic Items",
       "url": "https://rwandalii.org/akn/rw/act/law/2019/17/eng@2019-09-23"
@@ -2681,6 +2695,7 @@
       "description": "Daggers and other edged/bladed weapons require prior clearance from the competent control authority (the source names General Security, الأمن العام, as an example) before Customs will release them."
     },
     "notes": "The same page gives weapons as an example of prohibited goods, which may not be imported or exported, and lists daggers and bladed weapons among restricted goods that need clearance from a control body (for example General Security). It doesn't say more about firearms.",
+    "summary": "Weapons are prohibited imports. Daggers and other bladed weapons need prior clearance from General Security before Customs releases them.",
     "legal_source": {
       "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
       "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
@@ -2753,6 +2768,7 @@
       "description": "Agricultural seeds and pesticides require prior clearance from the competent control authority (the source names the Ministry of Agriculture, وزارة الزراعة, as an example) before Customs will release them."
     },
     "notes": "The source covers agricultural seeds and pesticides; it does not cover fresh produce, cut flowers or other plant material.",
+    "summary": "Agricultural seeds need prior clearance from the Ministry of Agriculture before Customs releases them.",
     "legal_source": {
       "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
       "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
@@ -2777,6 +2793,7 @@
       "description": "New (non-personal-use) items such as gifts and souvenirs brought by a tourist/transit passenger or returning resident are duty-free up to EGP 15,000 in total value, provided they are not intended for trade; customs duty and other taxes apply to the value above that threshold.",
       "quantity": "EGP 15,000"
     },
+    "summary": "Gifts and souvenirs are duty-free up to EGP 15,000 in total, if not for trade.",
     "legal_source": {
       "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations (Minister of Finance Decree No. 430 of 2021)",
       "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
@@ -2871,6 +2888,7 @@
     "category": "weapons",
     "verdict": "prohibited",
     "notes": "The Nigeria Customs Service's list of goods whose importation is absolutely prohibited explicitly bans air pistols, pistols disguised in any form, and weapons/ammunition designed to discharge noxious liquid or gas. Ordinary firearms and ammunition generally require a Presidential import licence under separate Nigerian firearms legislation, which could not be fetched from a live, directly-accessible primary government source in this pass.",
+    "summary": "Banned: air pistols, disguised pistols, and many weapons and ammunition are on Nigeria's absolute import ban list.",
     "legal_source": {
       "name": "Nigeria Customs Service — Goods the Importation of Which is Absolutely Prohibited",
       "url": "https://customs.gov.ng/?page_id=3077"
@@ -2890,6 +2908,7 @@
     "category": "food_animal",
     "verdict": "depends",
     "notes": "The Nigeria Agricultural Quarantine Service (NAQS) says a sanitary/health certificate, laboratory test results for specific diseases and an import permit are essential requirements for importing animals and animal products; a permit takes 5 working days. NAQS's FAQ doesn't give a traveller allowance.",
+    "summary": "Animal products need a health certificate, lab test results and an import permit from Nigeria's Agricultural Quarantine Service.",
     "legal_source": {
       "name": "Nigeria Agricultural Quarantine Service — Frequently Asked Questions",
       "url": "https://www.naqs.gov.ng/faq/"
@@ -2910,6 +2929,7 @@
     "category": "food_plant",
     "verdict": "depends",
     "notes": "NAQS enforces phytosanitary certificates for importing plants and plant products, and has prohibited imports of cassava stem and plant parts (Cassava Brown Streak Disease). Its FAQ doesn't give a traveller allowance.",
+    "summary": "Plants and plant products need a phytosanitary certificate; cassava stems and plant parts are banned.",
     "legal_source": {
       "name": "Nigeria Agricultural Quarantine Service — Frequently Asked Questions",
       "url": "https://www.naqs.gov.ng/faq/"
@@ -3375,6 +3395,7 @@
       "description": "Import of firearms is prohibited. Import of cartridges/ammunition in excess of 50 rounds is also prohibited. A narrow exception exists for 0.177 bore air guns and air pistols, which may be imported free of restriction only by shooters registered with a Rifle Club or a District/State/National Rifle Association."
     },
     "notes": "The air-gun exception requires registered-shooter status with a recognised Indian rifle association.",
+    "summary": "Firearms are banned, and so is ammunition over 50 rounds. Air guns are allowed only for registered competitive shooters.",
     "legal_source": {
       "name": "Chennai Customs Zone (CBIC) — Passenger Clearance FAQ (duty-free allowances, prohibited/restricted goods)",
       "url": "https://chennaicustoms.gov.in/passenger-clearance-faq/"
@@ -3441,6 +3462,7 @@
       "description": "Any kind of satellite phone may be brought into and used in India only after obtaining a licence from the Department of Telecommunications. Unauthorised possession/use attracts penal provisions under Sections 20 and 21 of the Indian Telegraph Act, 1885."
     },
     "notes": "A well-known real traveler trap: satellite phones that are legal to carry freely in most countries (e.g. for trekking or maritime use) require advance Indian government licensing — ordinary tourists do not have a realistic path to that licence, so treat a satellite phone as something you cannot simply pack for a trip to India.",
+    "summary": "Satellite phones need a licence from India's Department of Telecommunications before you bring or use one; without it you face penalties.",
     "legal_source": {
       "name": "Chennai Customs Zone (CBIC) — Passenger Clearance FAQ (duty-free allowances, prohibited/restricted goods)",
       "url": "https://chennaicustoms.gov.in/passenger-clearance-faq/"
@@ -3885,6 +3907,7 @@
     "category": "food_animal",
     "verdict": "depends",
     "notes": "Strict, product-specific biosecurity import conditions apply and can change quickly with disease outbreaks (check BICON before travelling). Broadly: canned/retorted meat is permitted if commercially manufactured, shelf-stable, and (except canned poultry) labelled as made in a country free from foot-and-mouth disease. Uncanned/fresh meat, ham, bacon, salami and sausages from any country other than New Zealand are NOT allowed without an import permit; New Zealand-sourced uncanned meat (excluding pork and poultry) is allowed if declared and correctly labelled. Pork-derived jerky/biltong is never permitted for personal use; non-pork jerky is allowed up to 1 kg under specific labelling/packaging conditions. Cheese, butter and other dairy products are permitted for personal use up to 10 kg/10 litres if commercially packaged and made in a foot-and-mouth-disease-free country; must be declared and inspected on arrival. Non-compliant goods are exported or destroyed at the traveller's expense.",
+    "summary": "Canned shelf-stable meat and packaged dairy (up to 10 kg) from foot-and-mouth-free countries are allowed; fresh meat, ham and sausages need a permit. Declare all.",
     "legal_source": {
       "name": "Department of Agriculture, Fisheries and Forestry — Bringing or mailing goods to Australia",
       "url": "https://www.agriculture.gov.au/biosecurity-trade/travelling/bringing-mailing-goods"
@@ -3906,6 +3929,7 @@
     "category": "food_plant",
     "verdict": "prohibited",
     "notes": "Official traveller advice: \"do not carry any fresh fruit or vegetables, plants, seeds, meat and animal or wood products\" into Australia — for faster border clearance, travellers are told simply not to bring these. Most live plants require a Department-issued import permit; seeds must be a permitted species, phytosanitary-certified, and free of contamination, or they will be exported/destroyed. Declare any risk goods on arrival or dispose of them in terminal bins. Providing false/misleading declarations or failing to comply with a biosecurity officer's directions can draw an infringement notice of up to AUD 6,600, civil penalty proceedings, or criminal prosecution, and can lead to visa cancellation and a re-entry ban of up to 3 years.",
+    "summary": "Don't bring fresh fruit, vegetables, plants or seeds into Australia. Declare all food, plant and animal products.",
     "legal_source": {
       "name": "Department of Agriculture, Fisheries and Forestry — Travelling to Australia",
       "url": "https://www.agriculture.gov.au/biosecurity-trade/travelling/to-australia"
@@ -4343,6 +4367,7 @@
       "quantity": "N/A — declaration mandatory regardless of quantity"
     },
     "notes": "New Zealand's Ministry for Primary Industries (MPI) enforces very strict biosecurity controls to keep out pests and diseases. Declare via the New Zealand Traveller Declaration (app or travellerdeclaration.govt.nz), the paper arrival card, or directly to a biosecurity officer; undeclared items can also be placed in airport disposal bins before the declaration point. Failing to declare a risk item — even accidentally or 'because you forgot' — can trigger an instant NZD $400 infringement fine, with further prosecution possible for serious cases.",
+    "summary": "Declare all fruit, vegetables, seeds, spices and other risk goods on arrival; undeclared items can mean an instant NZ$400 fine.",
     "legal_source": {
       "name": "Ministry for Primary Industries (MPI) — Travelling to New Zealand: biosecurity declarations",
       "url": "https://www.mpi.govt.nz/bring-send-to-nz/bringing-and-posting-items-to-nz/travelling-to-new-zealand"
@@ -6490,6 +6515,7 @@
       "quantity": "Up to 4 kg, travellers aged 18 or over"
     },
     "notes": "The allowance doesn't cover kava sent by post or courier, or in unaccompanied baggage: those need an import permit from the Office of Drug Control. Biosecurity rules may also stop some kinds of kava; check BICON, the Department of Agriculture's import conditions database.",
+    "summary": "From age 18: up to 4 kg of kava root, dried kava or kava-and-water drink for your own use, in your baggage, declared. Posting it needs a permit.",
     "legal_source": {
       "name": "Australian Border Force — Can you bring it in? List of items (Kava)",
       "url": "https://www.abf.gov.au/entering-and-leaving-australia/can-you-bring-it-in/list-of-items"
@@ -7630,7 +7656,14 @@
   },
   {
     "slug": "meat-dairy-nz",
-    "names": ["meat", "dairy", "cheese", "milk", "honey", "eggs"],
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "honey",
+      "eggs"
+    ],
     "destination": "NZ",
     "category": "food_animal",
     "verdict": "declaration_required",
@@ -7638,6 +7671,7 @@
       "description": "All animal products — meat, dairy, fish, honey, eggs, feathers, shells, wool, skins, bones — must be declared on arrival. Some (pork, trout, whole eggs) are banned outright; others are allowed only after inspection by Biosecurity New Zealand."
     },
     "notes": "Failing to declare, even accidentally, draws an instant NZD 400 infringement fine — New Zealand runs the strictest biosecurity enforcement in this dataset. A proposal to raise this to NZD 800 for high-risk items (meat, fresh fruit) was reported as of February 2026 but had not taken effect as law at the time of writing — don't assume it's in force.",
+    "summary": "Declare all animal products on arrival. Some, like pork, trout and whole eggs, are banned; others pass after a biosecurity inspection.",
     "legal_source": {
       "name": "New Zealand Customs Service — What you can and can't bring (food and other risk items)",
       "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/food-and-other-risk-items"
@@ -7756,6 +7790,7 @@
     "category": "food_animal",
     "verdict": "prohibited",
     "notes": "Meat and poultry (beef, pork, lamb, chicken and processed forms like ham, sausage and jerky) and dairy (milk, cheese, butter) are barred from entry — even an in-flight meal containing these can't be carried off the plane.",
+    "summary": "Banned: meat, poultry, ham, sausage, jerky and dairy such as milk, cheese and butter, even from in-flight meals.",
     "legal_source": {
       "name": "Korea Tourism Organization (official) — Animal/Plant Quarantine",
       "url": "https://english1.visitkorea.or.kr/enu/TRV/TV_ENG_2_4.jsp"
@@ -7788,7 +7823,13 @@
   },
   {
     "slug": "fresh-produce-eu",
-    "names": ["fruit", "vegetables", "plants", "seeds", "flowers"],
+    "names": [
+      "fruit",
+      "vegetables",
+      "plants",
+      "seeds",
+      "flowers"
+    ],
     "destination": "EU",
     "category": "food_plant",
     "verdict": "depends",
@@ -7796,6 +7837,7 @@
       "description": "Plants for planting — seeds, bulbs, tubers, cuttings, grafts, rooted plants — are banned outright from non-EU countries in personal luggage. Fruit, vegetables, flowers and other plant products need a phytosanitary certificate issued in the country of origin, except for a short exempt list (pineapple, coconut, durian, banana, and dates, per Annex XI of Implementing Regulation (EU) 2019/2072), which need no certificate."
     },
     "notes": "Undocumented plant goods that don't fall on the exempt list are confiscated and destroyed at the EU external border, not just fined.",
+    "summary": "Seeds, bulbs, cuttings and plants for planting are banned from outside the EU. Fruit, vegetables and flowers need a certificate, except a short exempt list.",
     "legal_source": {
       "name": "European Commission — Your Europe: Taking animal products, food or plants with you in the EU",
       "url": "https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm"
@@ -8196,6 +8238,7 @@
     "category": "food_animal",
     "verdict": "prohibited",
     "notes": "\"(生或熟)肉类(含脏器类)及其制品\" (meat, raw or cooked, including organ meat and products thereof) and \"动物源性乳及乳制品，包括生乳、巴氏杀菌乳、灭菌乳、调制乳、发酵乳，奶油、黄油、奶酪、炼乳等乳制品\" (animal-origin dairy and dairy products, including raw milk, pasteurized milk, sterilized milk, flavored milk, fermented milk, cream, butter, cheese and condensed milk) are both listed as prohibited, quoted directly from Announcement No. 470's actual text.",
+    "summary": "Banned: raw or cooked meat and meat products, and dairy such as milk, cheese, butter and cream.",
     "legal_source": {
       "name": "Ministry of Agriculture and Rural Affairs & General Administration of Customs, Announcement No. 470 — list of animals, plants and their products prohibited from being carried or mailed into China (MOA gazette)",
       "url": "https://www.moa.gov.cn/nybgb/2022/202202/202203/t20220324_6393815.htm"
@@ -8215,6 +8258,7 @@
     "category": "food_plant",
     "verdict": "prohibited",
     "notes": "\"新鲜水果、蔬菜\" (fresh fruit and vegetables) are listed as prohibited, quoted directly from Announcement No. 470's actual text — the same announcement that bars meat and dairy.",
+    "summary": "Banned: fresh fruit and vegetables can't be brought into mainland China.",
     "legal_source": {
       "name": "Ministry of Agriculture and Rural Affairs & General Administration of Customs, Announcement No. 470 — list of animals, plants and their products prohibited from being carried or mailed into China (MOA gazette)",
       "url": "https://www.moa.gov.cn/nybgb/2022/202202/202203/t20220324_6393815.htm"
@@ -8343,6 +8387,7 @@
       "description": "Don't bring them. The nitrites used in poppers (isobutyl, isopropyl, isopentyl or isoamyl, butyl, tert-butyl and cyclohexyl nitrite) are \"designated substances\" in Japan. Japan Customs lists designated substances as goods that can't be imported, except for medical or similar uses, and their possession and use are generally prohibited too."
     },
     "notes": "These nitrites have been designated since 1 April 2007, and the ban covers any product that contains them. Amyl nitrite (n-pentyl nitrite) isn't on the list by that name, and we haven't confirmed how Japan treats it, so check the label: most poppers contain one of the listed nitrites.",
+    "summary": "Banned: the nitrites used in poppers are designated substances in Japan, and any product containing them is prohibited.",
     "legal_source": {
       "name": "Ministry of Health, Labour and Welfare — List of \"Designated Substances\" in Japan (as of 6 September 2026)",
       "url": "https://www.mhlw.go.jp/content/11120000/001743042.pdf"
@@ -8417,7 +8462,11 @@
   },
   {
     "slug": "fresh-produce-sa",
-    "names": ["seeds", "plants", "agricultural seeds"],
+    "names": [
+      "seeds",
+      "plants",
+      "agricultural seeds"
+    ],
     "destination": "SA",
     "category": "food_plant",
     "verdict": "depends",
@@ -8425,6 +8474,7 @@
       "description": "\"The importation of the following products requires special approval by Saudi authorities: agricultural seeds ...\" — quoted directly. Seeds need advance authorization from Saudi authorities before import."
     },
     "notes": "This source confirms a special-approval requirement for agricultural seeds specifically — it doesn't separately address general fresh fruit and vegetables, so treat this row as covering seeds only, not a blanket fresh-produce rule, until a broader source is found.",
+    "summary": "Agricultural seeds need special approval from Saudi authorities before import.",
     "legal_source": {
       "name": "U.S. International Trade Administration — Saudi Arabia: Prohibited and Restricted Imports",
       "url": "https://www.trade.gov/country-commercial-guides/saudi-arabia-prohibited-and-restricted-imports"
@@ -10169,6 +10219,7 @@
     "category": "other",
     "verdict": "prohibited",
     "notes": "Airport operator's customs page: pork — \"all pork-based food and products containing pork derivatives\"; pornographic material — \"all forms — printed, digital, or physical. Also includes sex toys\"; religious materials — \"non-Islamic items intended for distribution or public worship\", while \"small personal items for private use such as a worn cross or personal Bible are generally tolerated\". UK FCDO: it is illegal to bring in anything deemed contrary to Islam, including 'idols for worship', bibles, pork and pork products, and alcohol. Resorts serve pork and alcohol; the ban is on bringing them in.",
+    "summary": "Banned in the Maldives: pork and pork products, pornography of any kind, and alcohol, plus non-Islamic items for public worship.",
     "legal_source": {
       "name": "Maldives Airports Company — Velana International Airport: Customs & Security, Prohibited & Restricted Items",
       "url": "https://maldivesairport.com/customs-security"
@@ -11818,6 +11869,7 @@
     "category": "food_plant",
     "verdict": "prohibited",
     "notes": "Sri Lanka Customs: 'All fruits including Apples, Grapes, Mangoes, Peaches, Kiwi etc. are not allowed to be imported by air in personal baggage. All such items will be referred to the plant quarantine unit at BIA and will be destroyed.' Plants need a permit from the Department of Agriculture – Plant Quarantine Unit (Katunayake) obtained before leaving for Sri Lanka, plus a phytosanitary certificate from the exporting country; otherwise they are detained. Some plants (Orchids, Adeniums, Hoya, Ixora) are allowed with a licence; Anthurium, palm, Ficus, citrus and conifer families are not allowed. 'Any part of a plant (including fresh or dried fruits, leaves, seeds, twigs, roots etc.)' is restricted without prior approval. The page does not specifically address vegetables or processed plant foods.",
+    "summary": "Banned: fruit can't be brought into Sri Lanka by air in personal baggage; it's refused at the airport.",
     "legal_source": {
       "name": "Passenger Services Directorate — Sri Lanka Customs",
       "url": "https://www.customs.gov.lk/about-us/directorates-and-divisions/passenger-services-directorate/"
@@ -11871,6 +11923,7 @@
       "quantity": "gems: declare + US$200 fee"
     },
     "notes": "Sri Lanka Customs: 'If a person wishes to import gemstones as passenger baggage, it should be declared to Customs. A service fee of USD 200 will be charged per person.' Exporting gemstones must go through the National Gem and Jewellery Authority; otherwise it is treated as smuggling. 'Only bona fide personal jewellery in reasonable quantity is allowed to be imported and exported'; 'Rough and unfinished jewellery, Ingots and Gold Biscuits are not allowed to be imported or exported as passenger baggage.' Antiques over 100 years old need Department of Archaeology approval to export.",
+    "summary": "Declare gemstones on arrival (US$200 fee). Gold: only personal jewellery in reasonable amounts, no ingots or unfinished pieces.",
     "legal_source": {
       "name": "Passenger Services Directorate — Sri Lanka Customs",
       "url": "https://www.customs.gov.lk/about-us/directorates-and-divisions/passenger-services-directorate/"
@@ -12494,6 +12547,7 @@
       "quantity": "Gifts US$500"
     },
     "notes": "DGA Manual del Viajero (FAQ 8, 11, 13) and PDF manual: '1 laptop y 1 tablet (nuevas o usadas). Si llevas una segunda laptop o más, deberás pagar los impuestos'; 'Una cámara fotográfica y de video por viajero. Dos teléfonos celulares'; gifts 'por un valor total de hasta USD$500.00 ... solo puede ser utilizada y aplicada una vez cada (3) meses' (PDF: 2–3 units per gift type, not repeated). Children: a stroller, car seat, playpen and 5 toys each. Personal sports equipment in reasonable, non-commercial quantities is duty-free.",
+    "summary": "Personal effects and a set of electronics (laptop, tablet, 2 phones, camera) are duty-free; gifts up to US$500 once every 3 months.",
     "legal_source": {
       "name": "Dirección General de Aduanas (DGA) — Manual del Viajero (traveller FAQ page)",
       "url": "https://www.aduanas.gob.do/manual-del-viajero/"
@@ -12704,6 +12758,7 @@
       "quantity": "6 kg per item type (honey 3 kg)"
     },
     "notes": "ICA (12 Apr 2017 notice, under Resolución ICA 3865 de 2005): animal-origin food may enter without an import document only in its original sealed packaging labelled with country, establishment, packing and expiry dates: cooked or cured hermetically packed sausages/meat products up to 6 kg; boneless hams up to 6 kg each (Spanish serrano aged >190 days, ibérico >365 days, Italian >400 days, others >180 days); aged, processed or spreadable sealed cheeses up to 6 kg; processed/pasteurised honey up to 3 kg; pre-cooked sealed shrimp up to 3 kg. Excluded: bovine meat products from BSE countries; cured pork from Italy and from countries with African or classical swine fever. Current restriction: ICA Resolución 00031675 (4 Dec 2025) Art. 3 prohibits pork products from Spain carried as accompanied baggage 'independientemente de la cantidad' (unless meeting OMSA Code art. 15.1.2), and Resolución 00034883 (30 Dec 2025) does the same for Germany, both until lifted. Non-compliant goods are held for re-shipment within 5 days or seized and incinerated. Declare animal products on the DIAN baggage declaration. Caveat: the quantity list comes from a 2017 ICA notice; no newer consolidated traveller list was found.",
+    "summary": "Sealed, labelled cured meats, aged hams and processed cheeses up to 6 kg each; honey up to 3 kg. Pork from Spain and Germany is banned.",
     "legal_source": {
       "name": "El ICA hace recomendaciones a viajeros internacionales sobre el ingreso al país de productos de origen vegetal y animal (12 Apr 2017) – Instituto Colombiano Agropecuario (ICA)",
       "url": "https://www.ica.gov.co/noticias/agricola-y-pecuaria/ica-hace-recomendaciones-a-viajeros-internacionale.aspx"
@@ -12731,6 +12786,7 @@
       "description": "Plants, seeds, propagation material and fresh fruit/vegetables need a phytosanitary certificate from the origin country; otherwise they may be seized."
     },
     "notes": "ICA (12 Apr 2017 notice): products must arrive with 'el correspondiente certificado zoosanitario o fitosanitario' from the country of origin; plants of all species, planting/propagation material and fresh fruits and vegetables that don't comply may be seized because they can carry pests. Non-compliant goods are held for re-shipment within 5 days or seized and incinerated. Travellers must declare plants and plant products on the baggage declaration (DIAN lists 'vegetales, animales y productos reglamentados' among cases requiring Form 530). Caveat: 2017 notice; no newer traveller page found.",
+    "summary": "Plants, seeds and fresh fruit or vegetables need a phytosanitary certificate from the origin country, or they may be seized.",
     "legal_source": {
       "name": "El ICA hace recomendaciones a viajeros internacionales sobre el ingreso al país de productos de origen vegetal y animal (12 Apr 2017) – Instituto Colombiano Agropecuario (ICA)",
       "url": "https://www.ica.gov.co/noticias/agricola-y-pecuaria/ica-hace-recomendaciones-a-viajeros-internacionale.aspx"
@@ -12757,6 +12813,7 @@
       "description": "Importing firearms into Colombia is illegal."
     },
     "notes": "Government of Canada travel advice for Colombia (updated 2026-10-06): 'It's illegal to import firearms into Colombia.' Other weapons (knives, pepper spray, etc.) are not covered by this source. The underlying Colombian statute (Decreto 2535 de 1993 on arms) was not read in this pass.",
+    "summary": "Banned: it's illegal to import firearms into Colombia.",
     "legal_source": {
       "name": "Travel advice and advisories for Colombia (updated 2026-10-06) – Government of Canada",
       "url": "https://travel.gc.ca/destinations/colombia"
@@ -12810,6 +12867,7 @@
       "quantity": "USD 500 (air/sea)"
     },
     "notes": "ARCA (customs) pages 'Franquicias', 'Objetos permitidos' and 'Régimen de equipaje' (read 2026-10-09). Families (spouses, partners, children under 16) may pool allowances. Goods for commercial purposes are prohibited under the baggage regime. You only have to declare if you exceed the allowance, carry SENASA-regulated goods, or carry USD 10,000+ in cash; use the digital baggage declaration (mobile app / self-service kiosks) or form OM-2087/G5 or G6. ARCA gives no separate litre/stick limits for alcohol or tobacco on these pages — see unverified rows.",
+    "summary": "Personal items, a phone and a laptop are duty-free. Other goods: US$500 by air or sea (plus US$500 at arrival duty-free), US$300 by land.",
     "legal_source": {
       "name": "ARCA (Aduana) — ¿Cuál es la franquicia de ingreso?",
       "url": "https://www.afip.gob.ar/viajeros/ayuda/franquicia.asp"
@@ -12947,6 +13005,7 @@
       "description": "Prohibited: meat of any species, cured/processed meats, sausages, hams, honey and other bee products, homemade food, and any food without a label. Exceptions: canned fish, pork or poultry. Boneless Spanish serrano/ibérico ham, sliced or in pieces, is allowed if it is factory vacuum-packed and labelled. Allowed items must be packaged, labelled and in personal quantities."
     },
     "notes": "SENASA page 'Ingresar o regresar al país con alimentos' (Resolution 295/1999). The Spanish-ham exception comes from Res. 655/2017. Ibérico loin (lomo) from Spain has been suspended (Res. 940/2025). SENASA may confiscate products without the required authorisation. ARCA says SENASA-regulated goods must be declared.",
+    "summary": "Banned: meat, cured meats, honey, homemade food and unlabelled food. Exceptions include canned fish, pork or poultry and some Spanish hams.",
     "legal_source": {
       "name": "SENASA — Ingresar o regresar al país con alimentos",
       "url": "https://www.argentina.gob.ar/senasa/informacion-al-viajero/ingresar-o-regresar-al-pais"
@@ -13114,6 +13173,7 @@
       "description": "Import of weapons is prohibited."
     },
     "notes": "German Foreign Office: 'Die Einfuhr von Waffen, Drohnen, Funkgeräten, Rauschgift und pornografischen Schriften ist verboten.' Japan MOFA (22 Apr 2026): narcotics, firearms and pornography may not be brought in. Knives specifically are not addressed by either source; the verdict covers weapons/firearms generally.",
+    "summary": "Banned: weapons, drones, radio devices, narcotics and pornography can't be imported into Jordan.",
     "legal_source": {
       "name": "Auswärtiges Amt — Jordanien: Reise- und Sicherheitshinweise (Einreise und Zoll)",
       "url": "https://www.auswaertiges-amt.de/de/service/laender/jordanien-node/jordaniensicherheit-218008"
@@ -13218,6 +13278,7 @@
       "description": "Pornographic material may not be imported — Japan notes even weekly magazines with semi-nude photos can be refused."
     },
     "notes": "Japan MOFA (22 Apr 2026): pornography may not be brought in, including magazines carrying semi-nude photos. Germany also lists 'pornografische Schriften' as prohibited imports.",
+    "summary": "Banned: pornographic material, which can include magazines with semi-nude photos.",
     "legal_source": {
       "name": "外務省 海外安全ホームページ — ヨルダン 安全対策基礎データ（通関・外貨申告）",
       "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_054.html"
@@ -13241,6 +13302,7 @@
       "description": "Import of radio transceivers (Funkgeräte) is prohibited."
     },
     "notes": "German Foreign Office lists 'Funkgeräte' (radio devices) among prohibited imports. Single source; no Jordanian telecom-regulator page was read, so licensed exceptions are unknown.",
+    "summary": "Banned: radio transceivers can't be brought into Jordan.",
     "legal_source": {
       "name": "Auswärtiges Amt — Jordanien: Reise- und Sicherheitshinweise (Einreise und Zoll)",
       "url": "https://www.auswaertiges-amt.de/de/service/laender/jordanien-node/jordaniensicherheit-218008"
@@ -13264,6 +13326,7 @@
       "description": "Travel items including a laptop and camera may be brought in duty-free but must be taken out again."
     },
     "notes": "German Foreign Office: 'Reisebedarf inklusive Laptop und Kamera darf zollfrei eingeführt werden, muss aber wieder ausgeführt werden.' Separately, Jordan strictly bans exporting antiquities without Department of Antiquities authorisation (France Diplomatie, Law 21/1998) and Germany also mentions corals.",
+    "summary": "Travel items including a laptop and camera come in duty-free but must leave with you.",
     "legal_source": {
       "name": "Auswärtiges Amt — Jordanien: Reise- und Sicherheitshinweise (Einreise und Zoll)",
       "url": "https://www.auswaertiges-amt.de/de/service/laender/jordanien-node/jordaniensicherheit-218008"
@@ -13543,6 +13606,7 @@
       "quantity": "500 Central American pesos / 6 months"
     },
     "notes": "Art. 115 Ley 7557: 'Las mercancías que la persona traiga consigo, que no constituyan equipaje, no estarán sujetas al pago de tributos hasta por un monto de quinientos pesos centroamericanos … Para estos efectos, la persona deberá permanecer un mínimo de setenta y dos horas fuera del país y no tendrá derecho a disfrutar, de nuevo, de este beneficio hasta que hayan transcurrido los seis meses siguientes a su arribo.' Reglamento 44051-H arts. 370–371: proved with your passport; not cumulative, personal, not for commercial quantities or prohibited goods. The Central American peso is a regional unit of account; the texts read do not give a dollar figure. Above the limit, customs prepares the declaration and you pay the taxes (art. 366). Normal personal baggage (clothes, one laptop, one phone, one camera, sports gear, etc., art. 365) is duty-free on top of this.",
+    "summary": "Goods other than baggage are tax-free up to 500 Central American pesos once every 6 months, if you've been away 72+ hours.",
     "legal_source": {
       "name": "Ley General de Aduanas N° 7557, arts. 114–115 (current consolidated version 11 of 11), Sistema Costarricense de Información Jurídica (SCIJ/Sinalevi), Procuraduría General de la República",
       "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=25886&param2=131179&param3=1"
@@ -13817,6 +13881,7 @@
     "category": "food_animal",
     "verdict": "prohibited",
     "notes": "Auswärtiges Amt: 'Die Einfuhr von Schweinefleisch ist ebenfalls nicht gestattet.' Cross-checked: Japan MOFA lists 豚肉及び豚肉の加工品（ハム、ソーセージ、ベーコン、ラード等） — pork and processed pork such as ham, sausage, bacon and lard — among prohibited imports; Nederland Wereldwijd: 'Neem geen alcohol en varkensvlees(producten) mee'; France Diplomatie lists pork as prohibited. Rules for other meat and dairy were not found on a primary source (see meat-dairy-qa in unverified).",
+    "summary": "Banned: pork and pork products such as ham, sausage, bacon and lard can't be brought into Qatar.",
     "legal_source": {
       "name": "Auswärtiges Amt — Katar: Reise- und Sicherheitshinweise, 'Einreise und Zoll' (Stand 09.10.2026)",
       "url": "https://www.auswaertiges-amt.de/de/service/laender/katar-node/katarsicherheit-202280"
@@ -13839,6 +13904,7 @@
     "category": "weapons",
     "verdict": "prohibited",
     "notes": "Japan MOFA (Qatar safety basics) lists 銃火器類 (firearms) among items prohibited from import, and says possessing or importing drugs or firearms brings severe penalties (麻薬や銃器の所持、持込みは厳罰が科せられます). Qatar Customs publishes a separate procedure for importing weapons and high-risk materials (Unified Guide), which applies to licensed imports, not tourists' luggage; it was not read. Knives, pepper spray and replica weapons are not covered by a source read.",
+    "summary": "Banned: firearms are prohibited imports into Qatar, with severe penalties.",
     "legal_source": {
       "name": "外務省 海外安全ホームページ — カタール 安全対策基礎データ (Japan MOFA)",
       "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_048.html"
@@ -13886,6 +13952,7 @@
     "category": "other",
     "verdict": "prohibited",
     "notes": "The General Authority of Customs' 'Goods forbidden by Tariff' list (Unified GCC Customs Tariff) includes poppy seeds and poppy, poppy straw, black poppy, coca leaf, khat (catha edulis), opium, hashish, prepared chewable Indian paan (betel) with or without tobacco, and chewable/sniffing tobacco preparations (Sahmmah, Suwaikah). Cooking or baking poppy seeds are included — don't pack them.",
+    "summary": "Banned: poppy seeds, poppy straw, coca leaf and khat are on Qatar's list of forbidden goods.",
     "legal_source": {
       "name": "General Authority of Customs (Qatar) — Goods forbidden by Tariff (Prohibited Goods in the Unified GCC Customs Tariff)",
       "url": "https://www.customs.gov.qa/English/Tariff/Pages/Prohibited-Goods.aspx"
@@ -14174,6 +14241,7 @@
       "description": "All animal products must be declared on the joint Aduana–SAG sworn declaration; an SAG inspector decides whether each item may enter."
     },
     "notes": "SAG 'Ingreso a Chile' (page read 2026-10-10; sag.gob.cl itself was down for maintenance, read via sag.cl): every person entering Chile must declare under oath any animal or plant products carried 'sin importar su cantidad o tiempo desde que lo obtuvo'; 'Un/a inspector/a SAG evaluará si el producto está en condiciones de ingresar al país'. The joint Aduana–SAG form lists animal products to declare: live animals (birds, bees, pets), 'Carne o derivados (jamón, embutidos, otros)', 'Leche y sus derivados (queso, yogurt, otros)', bee products (honey, royal jelly, propolis), veterinary medicines, semen/embryos, animal feed, 'Productos de origen animal y comida de uso personal, que los contenga', animal-origin crafts (antlers, horns, hooves), trophies and insect collections; CITES species need documentation. 'Declaring YES does not necessarily imply authorization'; a false SAG declaration 'constituye falta y será sancionado con multa' (no amount verified — see unverified). Luggage may be X-rayed or checked by SAG detector dogs. Which specific products are refused was not readable (SAG product pages unavailable), so the verdict is declaration rather than a ban.",
+    "summary": "Declare all animal products on the joint Aduana–SAG form; an SAG inspector decides what may enter.",
     "legal_source": {
       "name": "Servicio Agrícola y Ganadero (SAG) — Ingreso a Chile: declara todos los productos vegetales y animales que traigas a Chile",
       "url": "https://www.sag.cl/ambitos-de-accion/ingreso-chile"
@@ -14801,6 +14869,7 @@
       "description": "Honey is a prohibited import."
     },
     "notes": "JCA Prohibited & Restricted Items guide (March 2025), under the Ministry of Agriculture & Fisheries (Plant Quarantine): 'Honey (Prohibited Item)'. Spain's embassy in Kingston (exteriores.gob.es, June 2026) also lists 'miel' among prohibited imports. Honey is also listed on the C5 card's declaration question 13a.",
+    "summary": "Banned: honey is a prohibited import into Jamaica.",
     "legal_source": {
       "name": "Prohibited & Restricted Items guide — Jamaica Customs Agency (March 2025)",
       "url": "https://jca.gov.jm/wp-content/uploads/2025/03/Prohibited-and-Restricted-Items.x68962.pdf"
@@ -14889,6 +14958,7 @@
       "description": "Camouflage clothing and materials (and denim resembling police uniform) are restricted to military/police use; do not pack them."
     },
     "notes": "JCA Prohibited & Restricted Items guide (March 2025): 'Importing camouflage clothing and denim similar to the apparel of the Jamaica Constabulary Force is restricted in Jamaica. This type of apparel is reserved for military personnel only. Wearing of this type of apparel can be mistaken for impersonation of the Jamaica Defense Force or the Jamaica Constabulary Force.' 'Camouflage Clothing & Materials' are listed under the Ministry of National Security. Shown as prohibited because there is no visitor permit route described.",
+    "summary": "Don't pack camouflage clothing or denim resembling police uniform: it's restricted to Jamaica's military and police.",
     "legal_source": {
       "name": "Prohibited & Restricted Items guide — Jamaica Customs Agency (March 2025)",
       "url": "https://jca.gov.jm/wp-content/uploads/2025/03/Prohibited-and-Restricted-Items.x68962.pdf"
@@ -15059,6 +15129,7 @@
       "description": "Declare all food. Some dairy items are restricted. Meat and other food unfit for human consumption is prohibited."
     },
     "notes": "Bahamas Customs General Traveler's Questions (2 Jan 2026), Q14 'Can I bring food as a traveler?': 'Yes, you are allowed to travel with certain foods. There are restrictions when importing fruits, vegetables and some dairy items ... to prevent the introduction of certain diseases that are contracted from plants and animals. You must declare all food products. Failure to declare food products can result in forfeiture and or fines.' Customs' prohibited list includes 'Meat, provisions, fruits and vegetables, and any articles intended for human food, which are unfit for human consumption.' Customs gives no item-by-item list of which meat or dairy products are allowed. Separate Animal Contagious Diseases orders (meat, poultry and live-bird import prohibitions) exist on laws.bahamas.gov.bs, but we have not reviewed their current scope, so declare every meat, poultry or dairy item and expect it may be refused. The Bahamas Agricultural Health and Food Safety Authority (BAHFSA) site did not respond during research.",
+    "summary": "Declare all food. Some dairy is restricted, and meat or other food unfit for human consumption is banned.",
     "legal_source": {
       "name": "The Bahamas Customs Department — General Traveler's Questions (updated 2 Jan 2026)",
       "url": "https://www.bahamascustoms.gov.bs/accordions/general-travelers-questions/"
@@ -15084,6 +15155,7 @@
       "description": "Fresh fruit, vegetables, plants and flowers need an import permit from the Department of Agriculture before you travel. Without one, don't bring them. Declare all food."
     },
     "notes": "Bahamas Customs General Traveler's Questions (2 Jan 2026), Q14: 'permits are required to import fruits, vegetables and plant/flowers from the Department of Agriculture prior to importation.' All food must be declared; 'Failure to declare food products can result in forfeiture and or fines.' Verdict is 'prohibited' because, without a permit obtained in advance, you may not bring these items. With a permit, they may be imported under its terms.",
+    "summary": "Fresh fruit, vegetables, plants and flowers need a Department of Agriculture import permit before you travel.",
     "legal_source": {
       "name": "The Bahamas Customs Department — General Traveler's Questions (updated 2 Jan 2026)",
       "url": "https://www.bahamascustoms.gov.bs/accordions/general-travelers-questions/"
@@ -15116,6 +15188,7 @@
       "description": "You may not bring firearms (or fireworks) without special authorization from the Commissioner of Police. Underwater guns of any kind except a Hawaiian sling are prohibited outright."
     },
     "notes": "Bahamas Customs 'Prohibited and Restricted Imports and Exports': restricted goods include 'Firearms, fireworks, unless special authorization by the Commissioner of Police'. The prohibited list includes 'Underwater gun being any manufacture or device other than the device known as a Hawaiian Sling whereby a missile may be discharged under water', so spearguns are banned. Cross-check: Auswärtiges Amt says import of weapons, including starter/blank pistols and diving and boat signal (flare) pistols, 'ist nur mit besonderer Einfuhrgenehmigung erlaubt' (only allowed with a special import permit). Check every bag for stray ammunition before you travel.",
+    "summary": "Firearms and fireworks need special authorisation from the Commissioner of Police. Underwater guns, except a Hawaiian sling, are banned.",
     "legal_source": {
       "name": "The Bahamas Customs Department — Prohibited and Restricted Imports and Exports",
       "url": "https://www.bahamascustoms.gov.bs/imports-and-exports/prohibited-and-restricted-imports-and-exports/"
@@ -15168,6 +15241,7 @@
       "description": "To bring an animal you need a current single-use import permit from the Department of Agriculture and a current veterinary health certificate. The animal must be at least six months old."
     },
     "notes": "Bahamas Customs General Traveler's Questions (2 Jan 2026), Q1 'What are the requirements for travelling to the Bahamas with an animal?': 'A current permit from the Department of Agriculture (one time use only); The animal must be at least six months of age; A current Veterinary Health Certificate (vaccination records must be up to date)'. The Customs 'Arriving' page points to the Department of Agriculture's Bahamas Animal Import Requirements for the application. We did not verify further conditions such as rabies-vaccine timing.",
+    "summary": "Pets need a single-use Department of Agriculture import permit, a recent veterinary health certificate, and must be at least 6 months old.",
     "legal_source": {
       "name": "The Bahamas Customs Department — General Traveler's Questions (updated 2 Jan 2026)",
       "url": "https://www.bahamascustoms.gov.bs/accordions/general-travelers-questions/"
@@ -15684,6 +15758,7 @@
     "category": "other",
     "verdict": "prohibited",
     "notes": "Canada's official travel advice (updated 7 October 2026): using, making or importing plastic bags is illegal in Tanzania, and offenders, tourists included, can face heavy fines, up to 7 days in prison, or both. Remove plastic carrier bags from your luggage before arrival. The Tanzanian regulation text (Vice President's Office / NEMC) was not read in this pass, and the exact scope (e.g. zip-lock toiletry bags) is not confirmed here.",
+    "summary": "Banned: using, making or importing plastic bags is illegal in Tanzania, and tourists can face heavy fines.",
     "legal_source": {
       "name": "Travel advice and advisories for Tanzania, Government of Canada (travel.gc.ca)",
       "url": "https://travel.gc.ca/destinations/tanzania"
@@ -15737,6 +15812,7 @@
     "category": "weapons",
     "verdict": "prohibited",
     "notes": "Japan MOFA (updated 25 Mar 2025), 通関: 'weapons and ammunition (武器・弾薬), narcotics, pornographic products, radio equipment, and chemicals that can be used to make explosives are prohibited from being brought into Cambodia.' The source does not mention knives specifically or any permit route for firearms; 'knives' is listed as a search term only so travellers find this row — check with Cambodian authorities before carrying any blade. Large quantities of any product may be treated as commercial and seized or taxed.",
+    "summary": "Banned: weapons and ammunition can't be brought into Cambodia.",
     "legal_source": {
       "name": "安全対策基礎データ：カンボジア (Basic safety data: Cambodia) — 外務省 海外安全ホームページ, Ministry of Foreign Affairs of Japan (updated 25 Mar 2025)",
       "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_004.html"
@@ -15824,6 +15900,7 @@
       "description": "A permit is needed to buy, export or possess cultural or archaeological artefacts; carry the legal paperwork."
     },
     "notes": "Government of Canada travel advice (last updated 26 May 2026), Cultural heritage and antiquities: 'A permit is required to purchase, export or possess cultural or archaeological artefacts. To avoid any difficulties, make sure you obtain and carry the required legal paperwork to purchase or export antiquities.' The source does not name the issuing authority.",
+    "summary": "A permit is needed to buy, export or own cultural or archaeological artefacts in Cambodia; keep the paperwork.",
     "legal_source": {
       "name": "Travel advice and advisories for Cambodia (Laws and culture) — Government of Canada (travel.gc.ca)",
       "url": "https://travel.gc.ca/destinations/cambodia"
@@ -16033,6 +16110,7 @@
       "quantity": "permit; some items banned"
     },
     "notes": "Israel Tax Authority tourist customs guide: 'Weapon and parts — Ministry of Public Security, 077-2324444' is on the list of items whose import needs a competent authority's approval. The prohibited-items chapter lists, among others: 'A knife, other than a pocket knife and other than a knife intended for the usage in a profession, craft, business, household or any other legitimate purpose; A Radar Laser Jammer Detector; A wrap-like firearm (gun wrap pistol skin) or starting pistol-like or a gas-operated firearm or any similar tools; A tear gas canister, shaped like a firearm; ... Explosives and flammable substances'. The guide calls these 'examples', so the list is not complete. Pepper spray in non-firearm form and tasers are not specifically addressed.",
+    "summary": "Weapons and parts need Ministry of Public Security approval. Knives other than pocket, trade or household knives are banned.",
     "legal_source": {
       "name": "Customs Guide for Tourists and Foreign Residents — Israel Tax Authority (gov.il), chapter 'Items that are prohibited for importation' (updated 30.07.2026)",
       "url": "https://www.gov.il/en/pages/guide-tourist-customs?chapterIndex=9"
@@ -16061,6 +16139,7 @@
       "quantity": "approval required"
     },
     "notes": "Israel Tax Authority tourist customs guide, approvals list: 'Plants, seeds — Ministry of Agriculture – plant protection certificate, 03-9681587, Beit Dagan'. The prohibited-items list includes 'Used sacks or any other wrapping material that were used for packaging vegetative material' and 'Used apiculture (beekeeping) equipment'. The guide does not specifically say how fresh fruit and vegetables are treated, and the Ministry of Agriculture's own traveller page could not be found, so fruit and vegetables are left out of this row (see unverified). Separately, the green channel allows food within the $200 personal allowance, up to 3 kg in total and no more than 1 kg of each type, but only for food that needs no approval.",
+    "summary": "Plants and seeds need a Ministry of Agriculture plant protection certificate before Customs releases them.",
     "legal_source": {
       "name": "Customs Guide for Tourists and Foreign Residents — Israel Tax Authority (gov.il), chapter 'Items which Import is Conditional on the Approval of the Competent Authority' (updated 30.07.2026)",
       "url": "https://www.gov.il/en/pages/guide-tourist-customs?chapterIndex=8"
@@ -16121,6 +16200,7 @@
       "quantity": "prohibited"
     },
     "notes": "Israel Tax Authority tourist customs guide, 'Items that are prohibited for importation' (these are 'examples', so the list is not complete): 'Goods that are hacked or obscene; Counterfeits and imitations of coins and of documents; Tickets and advertisements for lotteries or gambling, for which performance no permit has been issued in advance; ... Forbidden games; Explosives and flammable substances, living creatures such as vipers and similar dangerous goods; Used apiculture (beekeeping) equipment; Goods, which are tools of the kind used to make or consume a dangerous drug; Goods, which have the potential to incite violence, terrorism or racism; Goods, which have a manifestation of identification with or sympathy for a terrorist organization.'",
+    "summary": "Banned examples: counterfeit or obscene goods, fake money or documents, gambling items, dangerous animals and drug paraphernalia.",
     "legal_source": {
       "name": "Customs Guide for Tourists and Foreign Residents — Israel Tax Authority (gov.il), chapter 'Items that are prohibited for importation' (updated 30.07.2026)",
       "url": "https://www.gov.il/en/pages/guide-tourist-customs?chapterIndex=9"
