@@ -217,19 +217,39 @@
       "weapons",
       "knives",
       "firearms",
-      "switchblade"
+      "switchblade",
+      "butterfly knife",
+      "balisong",
+      "gravity knife",
+      "pocket knife"
     ],
     "destination": "US",
     "category": "weapons",
     "verdict": "depends",
-    "notes": "Switchblade and other spring-loaded knives are generally prohibited. Firearms require advance ATF authorization (Form 6NIA for nonimmigrant visitors) and must be declared on CBP Form 4457.",
+    "notes": "The switchblade rule has narrow exceptions in 15 U.S.C. 1244, which we haven't read.",
+    "summary": "Switchblade, butterfly (balisong) and gravity knives are banned and forfeited; ordinary pocketknives are fine. Firearms need ATF authorisation in advance.",
     "legal_source": {
       "name": "U.S. Customs and Border Protection — prohibited and restricted items",
       "url": "https://help.cbp.gov/s/article/Article-1123"
     },
-    "verified_at": "2026-08-10",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-27",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "limits": {
+      "description": "Switchblade knives can't be imported: federal rules count switchblade, balisong (butterfly), gravity and ballistic knives as switchblades, and treat importing them as contrary to law, with the knife forfeited. Ordinary pocketknives and other knives with a blade designed for utilitarian use enter without restriction, as long as they aren't switchblades. Firearms need advance ATF authorisation (Form 6NIA for nonimmigrant visitors) and must be declared on CBP Form 4457."
+    },
+    "_sources": [
+      {
+        "claim": "Existing rule",
+        "name": "U.S. Customs and Border Protection — prohibited and restricted items",
+        "url": "https://help.cbp.gov/s/article/Article-1123"
+      },
+      {
+        "claim": "Switchblade definition incl. balisong, butterfly, gravity and ballistic knives (19 CFR 12.95); utilitarian knives admitted unrestricted (12.96); switchblade imports contrary to law and forfeited (12.97)",
+        "name": "eCFR — 19 CFR 12.95–12.97 (Switchblade knives)",
+        "url": "https://www.ecfr.gov/current/title-19/section-12.95"
+      }
+    ]
   },
   {
     "slug": "alcohol-gb",
@@ -651,19 +671,36 @@
       "weapons",
       "knives",
       "pepper spray",
-      "taser"
+      "taser",
+      "switchblade",
+      "butterfly knife",
+      "gravity knife",
+      "push dagger"
     ],
     "destination": "CA",
     "category": "weapons",
     "verdict": "depends",
-    "notes": "Most weapons are prohibited from entering Canada, including tasers, pepper spray and certain knives. Declare all firearms and weapons: if you don't, officers may seize them and file criminal charges.",
+    "notes": "Most weapons are prohibited from entering Canada, including tasers, pepper spray and certain knives. Declare all firearms and weapons: if you don't, officers may seize them and file criminal charges. Prohibited knives include any knife whose blade opens automatically by gravity or centrifugal force or by pressing a button or spring (so switchblades, gravity knives and butterfly/balisong knives) and push-daggers. A weapon that isn't specifically prohibited by law will generally be admissible.",
+    "summary": "Tasers, pepper spray and certain knives (switchblades, gravity and butterfly knives, push-daggers) are prohibited. Declare all weapons.",
     "legal_source": {
       "name": "CBSA — Travel checklist",
       "url": "https://www.cbsa-asfc.gc.ca/travel-voyage/checklist-aidememoire-eng.html"
     },
-    "verified_at": "2026-10-19",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Existing rule",
+        "name": "CBSA — Travel checklist",
+        "url": "https://www.cbsa-asfc.gc.ca/travel-voyage/checklist-aidememoire-eng.html"
+      },
+      {
+        "claim": "Criminal Code 84(1) knife definition; centrifugal (butterfly/balisong), gravity knives and push-daggers prohibited; non-prohibited weapons generally admissible (modified 2026-06-25)",
+        "name": "CBSA Memorandum D19-13-2 — Importing and exporting firearms, weapons and devices",
+        "url": "https://www.cbsa-asfc.gc.ca/publications/dm-md/d19/d19-13-2-eng.html"
+      }
+    ]
   },
   {
     "slug": "drones-ca",
@@ -3814,19 +3851,40 @@
     "names": [
       "weapons",
       "firearms",
-      "ammunition"
+      "ammunition",
+      "knives",
+      "switchblade",
+      "flick knife"
     ],
     "destination": "AU",
     "category": "weapons",
     "verdict": "depends",
-    "notes": "The Department of Home Affairs grants permission to import certain firearms and firearm-related articles under Schedule 6 to the Customs (Prohibited Imports) Regulations 1956; apply through its Firearms Portal. The portal notes 2026 firearms reforms (Combatting Antisemitism, Hate and Extremism Bill (Firearms and Customs Laws) 2026) being implemented with state and territory Firearms Registries.",
+    "notes": "The Department of Home Affairs grants permission to import certain firearms and firearm-related articles under Schedule 6 to the Customs (Prohibited Imports) Regulations 1956; apply through its Firearms Portal. The portal notes 2026 firearms reforms (Combatting Antisemitism, Hate and Extremism Bill (Firearms and Customs Laws) 2026) being implemented with state and territory Firearms Registries. Other weapons are prohibited on entry unless permission has been granted under Schedule 13 of the same Regulations; the penalty for importing a prohibited weapon without a permit can be up to 2,500 penalty units, 10 years' imprisonment, or both. Automatic and assisted-opening knives (switchblades and flick knives) stay controlled; 'flipper knives' were removed from import control in 2015.",
+    "summary": "Weapons need permission before import, including switchblades and flick knives (flipper knives no longer). Firearms go through the Home Affairs portal.",
     "legal_source": {
       "name": "Department of Home Affairs — Firearms Portal (import firearms and firearms-related articles)",
       "url": "https://import.firearms.gov.au/landing/"
     },
-    "verified_at": "2026-10-19",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Existing rule",
+        "name": "Department of Home Affairs — Firearms Portal (import firearms and firearms-related articles)",
+        "url": "https://import.firearms.gov.au/landing/"
+      },
+      {
+        "claim": "Weapons prohibited on entry unless permitted under Schedule 13; penalties",
+        "name": "Australian Border Force — Australian Customs Notice No. 2022/06",
+        "url": "https://www.abf.gov.au/help-and-support-subsite/CustomsNotices/2022-06.pdf"
+      },
+      {
+        "claim": "Flipper knives removed from import control; controls remain on automatic and assisted opening knives (switchblades, flick knives)",
+        "name": "Australian Border Force — Australian Customs Notice No. 2015/40",
+        "url": "https://www.abf.gov.au/help-and-support-subsite/CustomsNotices/2015-40.pdf"
+      }
+    ]
   },
   {
     "slug": "alcohol-ae",
@@ -6478,23 +6536,25 @@
       "airgun",
       "stun gun",
       "pepper spray",
-      "knife",
-      "knives"
+      "switchblade",
+      "butterfly knife",
+      "knuckle-duster",
+      "swordstick"
     ],
     "destination": "NZ",
     "category": "weapons",
     "verdict": "prohibited",
     "limits": {
-      "description": "\"All firearms, weapons and ammunition are prohibited in New Zealand without a permit.\" Authorisation must be obtained from Te Tari Pūreke — Firearms Safety Authority (FSA) or New Zealand Police before travelling with firearms, weapons, ammunition, or firearm parts. The same permit requirement covers airguns, stun devices, pepper spray, and various knife types — none of these can simply be declared and allowed through; a permit obtained in advance is required."
+      "description": "\"All firearms, weapons and ammunition are prohibited in New Zealand without a permit.\" NZ Customs lists, as examples and not a complete list, airguns, stun devices, pepper spray, automatic opening knives, gravity or butterfly knives, swordsticks and knuckle-dusters as weapons that need a permit. Get authorisation from the Firearms Safety Authority (Te Tari Pūreke) or New Zealand Police before travelling."
     },
-    "notes": "NZ Customs places the burden of verifying permit requirements on the traveller or importer before arrival — there is no on-arrival process to obtain a permit you didn't already have. The source's own wording sets a wide 'various knife types' net without a clear-cut personal-use exemption, so travellers should not assume any knife is automatically fine.",
-    "summary": "Firearms, airguns, stun devices, pepper spray and some knives need a permit from the Firearms Safety Authority or Police before you travel.",
+    "notes": "Checking whether a permit is needed is the traveller's responsibility; if unsure, contact the Firearms Safety Authority or Police before travelling. The page doesn't address ordinary knives.",
+    "summary": "Permit needed in advance for weapons, including airguns, stun guns, pepper spray, switchblades, butterfly knives and knuckle-dusters.",
     "legal_source": {
       "name": "New Zealand Customs Service — Prohibited and restricted items",
       "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/"
     },
-    "verified_at": "2026-09-14",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-27",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
