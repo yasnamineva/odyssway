@@ -172,6 +172,15 @@ Ways to make that harder to copy and easier to trust:
 
 1. **Freshness as a promise.** Publish a target ("rule changes reflected within 7 days of
    the official source") and measure it from the source watcher against `/changelog`.
+1b. **Foreign-ministry cross-check (started 2026-10-27).** Each traveller government's own advice
+   (GOV.UK API, travel.gc.ca, France Diplomatie, Auswärtiges Amt) is compared with that
+   nationality's rows by a read-only subagent; every quote is re-read before an edit. Where two
+   governments agree, the rule goes on every nationality's row; where sources disagree, the row
+   keeps the destination's own text and records the conflict. First pass fixed: Kenya's mandatory
+   insurance (5 Oct 2026), Korea K-ETA exemption shown as visa-free, Taiwan arrival card 3 days,
+   India e-Arrival Card, South Africa traveller declaration, 24h registration (China, Serbia,
+   Montenegro), US/Rwanda Ebola restrictions, ~100 passport-validity rules. Repeat quarterly;
+   next passports: ES, NL, JP (running), then IT, AU, NZ, KR.
 2. **Re-verification cadence.** Every row re-read at least every 6 months; show the
    oldest check date on `/sources`. A competitor can copy today's data, not the history.
 3. **Exception awareness.** Keep splitting by situation (resident vs visitor, carried vs
