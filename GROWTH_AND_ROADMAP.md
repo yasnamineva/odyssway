@@ -179,8 +179,9 @@ Ways to make that harder to copy and easier to trust:
    keeps the destination's own text and records the conflict. First pass fixed: Kenya's mandatory
    insurance (5 Oct 2026), Korea K-ETA exemption shown as visa-free, Taiwan arrival card 3 days,
    India e-Arrival Card, South Africa traveller declaration, 24h registration (China, Serbia,
-   Montenegro), US/Rwanda Ebola restrictions, ~100 passport-validity rules. Repeat quarterly;
-   next passports: ES, NL, JP (running), then IT, AU, NZ, KR.
+   Montenegro), US/Rwanda Ebola restrictions, ~100 passport-validity rules. Second pass (NL, JP) added the New Zealand Traveller Declaration,
+   the Mauritius All in One form and Nigeria's health declaration for everyone, and each
+   passport's own validity rules. Repeat quarterly; still to do: ES (running), IT, AU, NZ, KR.
 2. **Re-verification cadence.** Every row re-read at least every 6 months; show the
    oldest check date on `/sources`. A competitor can copy today's data, not the history.
 3. **Exception awareness.** Keep splitting by situation (resident vs visitor, carried vs
