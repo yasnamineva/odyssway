@@ -1368,19 +1368,35 @@
     "names": [
       "weapons",
       "firearms",
-      "swords"
+      "swords",
+      "switchblade",
+      "dagger",
+      "katana"
     ],
     "destination": "JP",
     "category": "weapons",
     "verdict": "depends",
-    "notes": "Firearms, crossbows and swords are restricted under the Firearms and Swords Possession Control Law. To import one you need a Permission to Possess (firearms) or a Permit for the Possession of Swords from the Prefectural Public Safety Commission (antique firearms and art swords: a registration certificate from the Prefectural Board of Education), plus import approval from the Minister of Economy, Trade and Industry.",
+    "notes": "Firearms, crossbows and swords are restricted under the Firearms and Swords Possession Control Law. To import one you need a Permission to Possess (firearms) or a Permit for the Possession of Swords from the Prefectural Public Safety Commission (antique firearms and art swords: a registration certificate from the Prefectural Board of Education), plus import approval from the Minister of Economy, Trade and Industry. Under Art. 2(2) of the Act, 'swords' means katanas, spears and naginata with a blade of 15 cm or more, double-edged swords and daggers (aikuchi) with a blade of 5.5 cm or more, and switchblades that open automatically to 45 degrees or more (with a narrow exception for some switchblades up to 5.5 cm). Other knives aren't in this definition.",
+    "summary": "Firearms and 'swords' (katanas and spears from 15 cm, daggers from 5.5 cm, switchblades) need a possession permit before import.",
     "legal_source": {
       "name": "Japan Customs — Customs' confirmation requirement under the Firearms and Swords Possession Control Law (FAQ 1809)",
       "url": "https://www.customs.go.jp/english/c-answer_e/imtsukan/1809_e.htm"
     },
-    "verified_at": "2026-10-19",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Import needs a Permission to Possess / Permit for the Possession of Swords plus METI approval",
+        "name": "Japan Customs — Customs' confirmation requirement under the Firearms and Swords Possession Control Law (FAQ 1809)",
+        "url": "https://www.customs.go.jp/english/c-answer_e/imtsukan/1809_e.htm"
+      },
+      {
+        "claim": "Definition of swords (刀剣類), Art. 2(2): blade lengths and automatic-opening switchblades",
+        "name": "e-Gov — Firearms and Swords Possession Control Act (銃砲刀剣類所持等取締法), Art. 2(2)",
+        "url": "https://laws.e-gov.go.jp/law/333AC0000000006"
+      }
+    ]
   },
   {
     "slug": "alcohol-ke",
