@@ -18598,5 +18598,30 @@
     "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-us",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vapes",
+      "vaping device",
+      "e-liquid"
+    ],
+    "destination": "US",
+    "category": "e_cigarettes",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Yes, with limitations: you must be at least 21, and you must declare all tobacco and vape products to CBP when you arrive. Vapes without FDA premarket tobacco authorization may be refused admission; FDA's searchable list shows which vapes are authorized."
+    },
+    "notes": "The FDA guide is written for international visitors attending special events, but states the rule generally. It gives no quantity limit, and says tobacco products brought in for personal use must comply with CBP regulations.",
+    "summary": "Allowed from age 21 if you declare them to CBP on arrival. Vapes without FDA premarket authorization may be refused admission.",
+    "legal_source": {
+      "name": "U.S. Food and Drug Administration, Office of Inspections and Investigations — Special Events: What You Need to Know for Importing FDA-Regulated Products (June 2026)",
+      "url": "https://www.fda.gov/media/192967/download"
+    },
+    "verified_at": "2026-10-27",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]
