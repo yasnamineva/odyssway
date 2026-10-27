@@ -15783,16 +15783,31 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid for your whole stay"
     ],
     "notes": "\"France + Monaco\" appears on the Moroccan Ministry of Foreign Affairs' list of countries whose citizens are exempted from an entry visa (consulat.ma, checked 2026-10-02), with no stay-limit annotation. The Moroccan National Tourist Office (visitmorocco.com, Formalities) states: \"For all nationalities, the maximum duration of the tourist trip is 90 days. A request for an extension can be made at the nearest police station to stay an additional 90 days.\"",
     "legal_source": {
       "name": "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates — List of countries whose citizens are exempted from entry visa into Morocco",
       "url": "https://www.consulat.ma/en/list-countries-whose-citizens-are-exempted-entry-visa-morocco"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "whole_stay"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates — List of countries whose citizens are exempted from entry visa into Morocco",
+        "url": "https://www.consulat.ma/en/list-countries-whose-citizens-are-exempted-entry-visa-morocco"
+      },
+      {
+        "claim": "Passport validity for French passport holders: « passeport en cours de validité couvrant la totalité du séjour »",
+        "name": "France Diplomatie — Conseils aux voyageurs, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/maroc/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
   },
   {
     "nationality": "FR",
@@ -15850,7 +15865,7 @@
     },
     "documentsNeeded": [
       "Approved Nigeria e-Visa (Tourism Visa – F5A) obtained online before travel, or an embassy-issued visa",
-      "Passport valid for at least 6 months",
+      "Passport valid for at least 6 months after your departure date (your return)",
       "Passport-size photo",
       "Evidence of return ticket",
       "Evidence of hotel reservation or host address in Nigeria",
@@ -15880,8 +15895,19 @@
         "claim": "Online landing/exit form before entering or exiting; online health declaration form before travelling",
         "name": "Government of Canada — Travel advice: Nigeria, Entry and exit requirements",
         "url": "https://travel.gc.ca/destinations/nigeria"
+      },
+      {
+        "claim": "Passport validity for French passport holders: « validité de six mois au minimum après la date de retour »",
+        "name": "France Diplomatie — Conseils aux voyageurs, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/nigeria/conseils-aux-voyageurs-entree-sejour"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "departure"
+    }
   },
   {
     "nationality": "FR",
@@ -15896,7 +15922,7 @@
       "url": "https://www.migration.gov.rw/visa-on-arrival"
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid for at least 6 months after your arrival date"
     ],
     "notes": "France is a full member of the Organisation internationale de la Francophonie (OIF's official list of 53 members, francophonie.org, checked 2026-10-02). Rwanda's DGIE states that citizens of La Francophonie member countries \"get visa upon arrival and are waived visa fees for a visit of 30 days\". The visa can also be applied for in advance via the Irembo government portal or a Rwandan diplomatic mission. Ebola: Rwanda screens arrivals at Kigali airport and restricts its border with the DRC; Germany's advice says foreign travellers who were in the DRC in the 30 days before arrival, even in transit, are refused entry.",
     "verified_at": "2026-10-27",
@@ -15917,8 +15943,19 @@
         "claim": "Ebola-related health screening and border restrictions with the DRC",
         "name": "Auswärtiges Amt — Ruanda: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/ruandasicherheit-212026"
+      },
+      {
+        "claim": "Passport validity for French passport holders: « valable au moins six mois après la date d'entrée »",
+        "name": "France Diplomatie — Conseils aux voyageurs, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/rwanda/conseils-aux-voyageurs-entree-sejour"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    }
   },
   {
     "nationality": "FR",
@@ -15929,7 +15966,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for at least 30 days after your departure date from South Africa, with 2 blank pages",
       "Online traveller declaration, submitted before you travel (required for all travellers entering or leaving South Africa since 1 July 2026)"
     ],
     "notes": "DHA's Visa Exemption List shows \"France (Republic of)\" with 90 Days in the Ordinary passport column (checked 2026-10-02). South Africa's Electronic Travel Authorisation (ETA) launched 12 Aug 2026; per the Minister of Home Affairs' launch address (DHA, 12 Aug 2026), it \"will progressively become compulsory for short stay visits from countries that require port-of-entry visas\", while for visa-exempt travellers it is available \"on a voluntary basis\" (for the faster ETA queue, or to apply to extend a stay by up to 90 days). It is not required for visa-exempt nationals as of that address. Re-verify as the ETA rollout progresses.",
@@ -15955,8 +15992,19 @@
         "claim": "Cross-check: 'You must complete and submit an online traveller declaration before entering or leaving South Africa'",
         "name": "Government of Canada — Travel advice: South Africa, Entry and exit requirements",
         "url": "https://travel.gc.ca/destinations/south-africa"
+      },
+      {
+        "claim": "Passport validity for French passport holders: « deux pages vierges et être encore valable 30 jours après la date prévue de sortie »",
+        "name": "France Diplomatie — Conseils aux voyageurs, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/afrique-du-sud/conseils-aux-voyageurs-entree-sejour"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 30,
+      "unit": "days",
+      "from": "departure"
+    }
   },
   {
     "nationality": "ES",
@@ -16152,16 +16200,34 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid for at least 6 months on your arrival date"
     ],
     "notes": "\"Germany\" appears on the Moroccan Ministry of Foreign Affairs' list of countries whose citizens are exempted from an entry visa (consulat.ma, checked 2026-10-02), with no stay-limit annotation. The Moroccan National Tourist Office (visitmorocco.com, Formalities) states: \"For all nationalities, the maximum duration of the tourist trip is 90 days. A request for an extension can be made at the nearest police station to stay an additional 90 days.\"",
     "legal_source": {
       "name": "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates — List of countries whose citizens are exempted from entry visa into Morocco",
       "url": "https://www.consulat.ma/en/list-countries-whose-citizens-are-exempted-entry-visa-morocco"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates — List of countries whose citizens are exempted from entry visa into Morocco",
+        "url": "https://www.consulat.ma/en/list-countries-whose-citizens-are-exempted-entry-visa-morocco"
+      },
+      {
+        "claim": "Passport validity for German passport holders: „mindestens sechs Monate gültig“ (bei Einreise)",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/marokkosicherheit-224080"
+      }
+    ]
   },
   {
     "nationality": "DE",
@@ -16183,7 +16249,7 @@
       "unit": "months",
       "from": "arrival"
     },
-    "notes": "Germany is not on either of Kenya's eTA-exemption lists (the 90-day and 60-day national lists under the Kenya Citizenship and Immigration (Amendment) Rules, 2025, as reproduced on etakenya.go.ke's How to Apply page, checked 2026-10-02), so German nationals need an approved eTA before travel. The eTA is valid for travel within 90 days of issuance; \"once you arrive, the duration of your stay is determined at the point of entry\" — no fixed number of days is guaranteed, so none is shown. The Standard (single-entry) eTA is listed at USD 30 on the official eligibility page; a One Year Multi-Entry eTA is listed at USD 300.",
+    "notes": "Germany is not on either of Kenya's eTA-exemption lists (the 90-day and 60-day national lists under the Kenya Citizenship and Immigration (Amendment) Rules, 2025, as reproduced on etakenya.go.ke's How to Apply page, checked 2026-10-02), so German nationals need an approved eTA before travel. The eTA is valid for travel within 90 days of issuance; \"once you arrive, the duration of your stay is determined at the point of entry\" — no fixed number of days is guaranteed, so none is shown. The Standard (single-entry) eTA is listed at USD 30 on the official eligibility page; a One Year Multi-Entry eTA is listed at USD 300. Conflict recorded: Germany's travel advice says the passport must be valid at least six months beyond the end of the stay, and that a return or onward ticket is required; this row follows Kenya's eTA page (6 months from arrival).",
     "legal_source": {
       "name": "Directorate of Immigration Services — Kenya eTA: How to Apply / Eligibility",
       "url": "https://www.etakenya.go.ke/form/apply/how-to-apply"
@@ -16206,6 +16272,11 @@
         "claim": "Cross-check: 'As of October 5, 2026, the eTA application includes a mandatory travel health insurance provided by a national insurer for stays of less than 12 months'",
         "name": "Government of Canada — Travel advice: Kenya, Entry and exit requirements (updated 15 October 2026)",
         "url": "https://travel.gc.ca/destinations/kenya"
+      },
+      {
+        "claim": "Different passport rule from the traveller's own government: see notes",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/keniasicherheit-208058"
       }
     ]
   },
@@ -16265,7 +16336,7 @@
       "url": "https://www.migration.gov.rw/visa-on-arrival"
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for at least 6 months beyond your stay (after departure)",
       "Visa fee payable on arrival or online in advance (not exceeding USD 50 for a single-entry visa, USD 70 for multiple entry)"
     ],
     "notes": "Rwanda's DGIE grants visa on arrival to citizens of all countries (since 1 Jan 2018). Germany is not a member of the African Union or the Commonwealth, and is not among La Francophonie's members, associate members or observers (OIF official list, francophonie.org, checked 2026-10-02), nor on Rwanda's named 90-day free-visa list — so the fee-paying visa on arrival applies, for a 30-day visit. The DGIE states visa fees \"must not exceed 50 USD for single entry visa or 70 USD for multiple entry\". The visa can also be applied for online in advance via the Irembo government portal. Ebola: Rwanda screens arrivals at Kigali airport and restricts its border with the DRC; Germany's advice says foreign travellers who were in the DRC in the 30 days before arrival, even in transit, are refused entry.",
@@ -16287,8 +16358,19 @@
         "claim": "Ebola-related health screening and border restrictions with the DRC",
         "name": "Auswärtiges Amt — Ruanda: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/ruandasicherheit-212026"
+      },
+      {
+        "claim": "Passport validity for German passport holders: „mindestens sechs Monate über die Reise hinaus“",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/ruandasicherheit-212026"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "departure"
+    }
   },
   {
     "nationality": "DE",
@@ -16299,7 +16381,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for at least 30 days after your departure date, with at least 2 blank pages",
       "Online traveller declaration, submitted before you travel (required for all travellers entering or leaving South Africa since 1 July 2026)"
     ],
     "notes": "DHA's Visa Exemption List shows \"Germany (Federal Republic of)\" with 90 Days in the Ordinary passport column (checked 2026-10-02). South Africa's Electronic Travel Authorisation (ETA) launched 12 Aug 2026; per the Minister of Home Affairs' launch address (DHA, 12 Aug 2026), it \"will progressively become compulsory for short stay visits from countries that require port-of-entry visas\", while for visa-exempt travellers it is available \"on a voluntary basis\" (for the faster ETA queue, or to apply to extend a stay by up to 90 days). It is not required for visa-exempt nationals as of that address. Re-verify as the ETA rollout progresses.",
@@ -16325,8 +16407,19 @@
         "claim": "Cross-check: 'You must complete and submit an online traveller declaration before entering or leaving South Africa'",
         "name": "Government of Canada — Travel advice: South Africa, Entry and exit requirements",
         "url": "https://travel.gc.ca/destinations/south-africa"
+      },
+      {
+        "claim": "Passport validity for German passport holders: „mindestens 30 Tage über den Tag der Ausreise hinaus … mindestens zwei freie Seiten“",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/suedafrikasicherheit-208400"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 30,
+      "unit": "days",
+      "from": "departure"
+    }
   },
   {
     "nationality": "IT",
@@ -16805,16 +16898,34 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid for at least 6 months from your return date (departure), plus a return ticket"
     ],
     "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
     "legal_source": {
       "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
       "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
     },
-    "verified_at": "2026-10-05",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "departure"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      },
+      {
+        "claim": "Passport validity for French passport holders: « validité de six mois au minimum à partir de la date de retour du voyage »",
+        "name": "France Diplomatie — Conseils aux voyageurs, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/bresil/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
   },
   {
     "nationality": "ES",
@@ -17002,7 +17113,7 @@
       "maxDays": 180
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for at least 6 months on your arrival date in Mexico",
       "FMM (Forma Migratoria Múltiple) tourist permit — generated electronically/on arrival for air travelers, or completed at land border crossings"
     ],
     "notes": "Germany is on INM's list of countries whose nationals don't need a visa to visit Mexico as a visitor without permission for paid activities (tourism). At an international airport the FMM is generated on entry; by land you fill it in. INM's FMM page says the form is valid for up to 180 calendar days from the entry stamp and covers one entry. Officers may ask for a hotel booking, return or onward tickets, and means of support. Visiting Quintana Roo (Cancún, Tulum, Playa del Carmen): the state charges foreign tourists an entry tax, payable online before or during the stay; France says proof is checked on leaving.",
@@ -17028,8 +17139,19 @@
         "claim": "Entry tax for visitors to the state of Quintana Roo (Cancún, Tulum), payable online",
         "name": "France Diplomatie — Conseils aux voyageurs: mexique, Entrée / séjour",
         "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/mexique/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport validity for German passport holders: „zum Zeitpunkt der Einreise noch mindestens für sechs Monate gültig“",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/mexikosicherheit-213648"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    }
   },
   {
     "nationality": "DE",
@@ -17041,16 +17163,34 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid for at least 6 months on your arrival date in Brazil"
     ],
     "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
     "legal_source": {
       "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
       "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
     },
-    "verified_at": "2026-10-05",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      },
+      {
+        "claim": "Passport validity for German passport holders: „bei Einreise noch mindestens sechs Monate gültig“",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/brasiliensicherheit-201092"
+      }
+    ]
   },
   {
     "nationality": "IT",
@@ -17497,7 +17637,7 @@
       "maxDays": 30
     },
     "documentsNeeded": [
-      "Valid ordinary passport",
+      "Passport valid for at least 6 months after your departure date from China",
       "Proof of onward/return travel (may be requested by airline or border control)",
       "Proof of accommodation or travel itinerary (may be requested by border control)",
       "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
@@ -17525,8 +17665,19 @@
         "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
         "name": "France Diplomatie — Conseils aux voyageurs: chine, Entrée / séjour",
         "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/chine/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport validity for French passport holders: « Le passeport doit être valide au moins six mois après la date de sortie du territoire »",
+        "name": "France Diplomatie — Conseils aux voyageurs, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/chine/conseils-aux-voyageurs-entree-sejour"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "departure"
+    }
   },
   {
     "nationality": "ES",
@@ -17741,7 +17892,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport or travel document",
+      "Passport valid for at least 1 month beyond your stay in Hong Kong (after departure)",
       "Onward or return ticket (unless in transit to Chinese Mainland or Macao)",
       "Adequate funds to cover the stay without working"
     ],
@@ -17750,9 +17901,27 @@
       "name": "Immigration Department (HKSAR) — Visit Visa / Entry Permit Requirements (visa-free periods table)",
       "url": "https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 1,
+      "unit": "months",
+      "from": "departure"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Immigration Department (HKSAR) — Visit Visa / Entry Permit Requirements (visa-free periods table)",
+        "url": "https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html"
+      },
+      {
+        "claim": "Passport validity for German passport holders: „einen Monat länger gültig … als die beabsichtigte Aufenthaltsdauer“",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/hongkongsicherheit-200854"
+      }
+    ]
   },
   {
     "nationality": "IT",
@@ -18674,14 +18843,26 @@
       "unit": "months",
       "from": "departure"
     },
-    "notes": "Germany is on Immigration New Zealand's visa waiver countries and territories list with no passport conditions attached. Visa-waiver visitors get a Visa Waiver Visitor Visa on arrival for up to 3 months, but must request an NZeTA first (from NZD $17; allow 72 hours; valid 2 years). Overall cap: up to 6 months in any 12-month period. Source for stay/validity/fee: https://www.immigration.govt.nz/visas/new-zealand-electronic-travel-authority-nzeta/. The NZeTA request also includes the International Visitor Conservation and Tourism Levy (IVL) of NZD $100, paid together (Immigration New Zealand, Visa Waiver Visitor Visa page, checked 2026-10-05).",
+    "notes": "Germany is on Immigration New Zealand's visa waiver countries and territories list with no passport conditions attached. Visa-waiver visitors get a Visa Waiver Visitor Visa on arrival for up to 3 months, but must request an NZeTA first (from NZD $17; allow 72 hours; valid 2 years). Overall cap: up to 6 months in any 12-month period. Source for stay/validity/fee: https://www.immigration.govt.nz/visas/new-zealand-electronic-travel-authority-nzeta/. The NZeTA request also includes the International Visitor Conservation and Tourism Levy (IVL) of NZD $100, paid together (Immigration New Zealand, Visa Waiver Visitor Visa page, checked 2026-10-05). Germany's travel advice says one month beyond the stay; this row keeps Immigration New Zealand's stricter 3 months after you leave.",
     "legal_source": {
       "name": "Immigration New Zealand — Visa waiver countries and territories",
       "url": "https://www.immigration.govt.nz/visit/what-you-need-to-visit-new-zealand/visa-waiver-countries-and-territories/"
     },
-    "verified_at": "2026-10-05",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Immigration New Zealand — Visa waiver countries and territories",
+        "url": "https://www.immigration.govt.nz/visit/what-you-need-to-visit-new-zealand/visa-waiver-countries-and-territories/"
+      },
+      {
+        "claim": "Different passport rule from the traveller's own government: see notes",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/neuseelandsicherheit-220146"
+      }
+    ]
   },
   {
     "nationality": "IT",
@@ -18828,7 +19009,7 @@
       "maxDays": 30
     },
     "documentsNeeded": [
-      "Passport valid for the whole stay (French, Spanish and Italian foreign ministries advise at least 6 months' validity from entry)",
+      "Passport valid for at least 6 months on your arrival date in Thailand",
       "Thailand Digital Arrival Card (TDAC), submitted online within 3 days before arrival — required for every entry",
       "Proof of accommodation and of onward travel within 30 days of arrival; officers may also ask for proof of funds (THB 20,000 per person) or interview you"
     ],
@@ -18855,8 +19036,19 @@
         "claim": "Proof of funds may be requested: UK says at least THB 10,000 per person or 20,000 per family; Germany says at least THB 20,000 in cash",
         "name": "Auswärtiges Amt — Thailand: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/thailandsicherheit-201558"
+      },
+      {
+        "claim": "Passport validity for German passport holders: „zum Zeitpunkt der Einreise mindestens noch sechs Monate gültig“",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/thailandsicherheit-201558"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    }
   },
   {
     "nationality": "IT",
@@ -19185,7 +19377,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Passport valid for at least 6 months from entry",
+      "Passport valid for at least 6 months after your planned departure date from Singapore, plus a return ticket",
       "SG Arrival Card (SGAC) submitted online within 3 days before arrival",
       "Proof of onward/return travel and sufficient funds may be requested by the ICA officer at entry"
     ],
@@ -19193,16 +19385,28 @@
       "kind": "min_period",
       "amount": 6,
       "unit": "months",
-      "from": "arrival"
+      "from": "departure"
     },
     "notes": "French passports are not on Singapore ICA's list of travel documents that require an entry visa (checked 2 Oct 2026). ICA itself does not publish a fixed stay length: the period is set by the electronic visit pass (e-Pass) issued at the checkpoint and emailed to you — check it before leaving the checkpoint. The French foreign ministry states the maximum tourist stay is 90 days, with the social visit pass issued by email on arrival; 90 days is used here on that basis. Extensions are applied for online with ICA (Short-Term Visit Pass extension).",
     "legal_source": {
       "name": "Ministère de l'Europe et des Affaires étrangères — Conseils aux voyageurs: Singapour, Entrée/Séjour (updated 15 Sep 2026)",
       "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/singapour/conseils-aux-voyageurs-entree-sejour"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministère de l'Europe et des Affaires étrangères — Conseils aux voyageurs: Singapour, Entrée/Séjour (updated 15 Sep 2026)",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/singapour/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport validity for French passport holders: « un passeport valable six mois après la date prévue de leur départ de Singapour et un billet retour »",
+        "name": "France Diplomatie — Conseils aux voyageurs, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/singapour/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
   },
   {
     "nationality": "ES",
@@ -19417,7 +19621,7 @@
       "maxDays": 30
     },
     "documentsNeeded": [
-      "Passport valid for at least 6 months from date of arrival",
+      "Passport valid for at least 6 months on both your arrival and departure dates",
       "Return or onward ticket",
       "VOA fee (IDR 500,000), paid on arrival or bought in advance online as an e-VOA",
       "All Indonesia arrival declaration (allindonesia.imigrasi.go.id), which can be filled in from 3 days before arrival — mandatory for every arriving international passenger since 1 October 2025"
@@ -19426,7 +19630,7 @@
       "kind": "min_period",
       "amount": 6,
       "unit": "months",
-      "from": "arrival"
+      "from": "departure"
     },
     "notes": "German citizens (Jerman) are on Indonesia's official Visa on Arrival subject list and are not on the visa-free (Bebas Visa Kunjungan) list, including after Permenimipas No. 10/2026 (9 July 2026), which added only Türkiye, Brazil, Peru, Kazakhstan, Macao and Belarus. The B1 VOA is single-entry for tourism, family visits, meetings, conventions, exhibitions or transit: initial stay up to 30 days from arrival, extendable once for a total of 60 days (online for e-VOA holders, otherwise at an immigration office); per imigrasi.go.id it can also be converted to another stay permit. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
     "legal_source": {
@@ -19451,6 +19655,11 @@
         "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
         "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
         "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport validity for German passport holders: „zum Zeitpunkt der Ein- und Ausreise noch mindestens sechs Monate gültig“",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/indonesiensicherheit-212396"
       }
     ]
   },
@@ -20246,7 +20455,7 @@
       "kind": "visa_required"
     },
     "documentsNeeded": [
-      "Passport valid for at least 6 months from arrival (a national ID card is also accepted for tourism — see notes)",
+      "Passport valid for at least 6 months after your return date (departure) (a national ID card is also accepted for some travel)",
       "Tourist visa bought on arrival at an Egyptian international airport (single entry US$30, cash), or an e-Visa obtained in advance at visa2egypt.gov.eg (printed)",
       "Travel itinerary and hotel booking details"
     ],
@@ -20254,16 +20463,28 @@
       "kind": "min_period",
       "amount": 6,
       "unit": "months",
-      "from": "arrival"
+      "from": "departure"
     },
     "notes": "The Egypt e-Visa Portal (Ministry of Interior, visa2egypt.gov.eg/eVisa/FAQ, checked 2026-10-02) lists France among nationalities eligible for an e-Visa (tourism: single entry US$30, multiple entries US$65; passport valid 6 months from arrival). On arrival: French travel advice says the tourist visa can be bought on arrival at every Egyptian international airport (24-hour counters, cash in USD or EUR; US$30 single / US$60 multiple) and runs for an initial one month, extendable (legal source). French nationals may also enter with a national ID card valid at least 6 months after the return date (per French travel advice). No fixed day count is published here: Egypt's own portal does not state the permitted stay, and EU governments describe it differently (30 days for NL/ES, 'one month' for FR, 28 days for IT, not stated by DE) — check the date on the visa you are given. Working, including journalism, is not allowed on a tourist visa.",
     "legal_source": {
       "name": "France Diplomatie — Conseils aux voyageurs, Égypte: Entrée / séjour (updated 2026-09-21)",
       "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/egypte/conseils-aux-voyageurs-entree-sejour"
     },
-    "verified_at": "2026-10-02",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "France Diplomatie — Conseils aux voyageurs, Égypte: Entrée / séjour (updated 2026-09-21)",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/egypte/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport validity for French passport holders: « passeport valide encore au moins six mois après la date de retour en France »",
+        "name": "France Diplomatie — Conseils aux voyageurs, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/egypte/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
   },
   {
     "nationality": "ES",
@@ -24293,14 +24514,26 @@
     "passportValidity": {
       "kind": "whole_stay"
     },
-    "notes": "Argentina's immigration authority (Dirección Nacional de Migraciones, DNM) lists no visa requirement for ordinary passports of this nationality in its 'Régimen de Visas' table (read 2026-10-09). Argentina's official tourist-entry page (argentina.gob.ar/migraciones/documentacion-para-ingresar-al-pais-como-turista) says tourists may stay 'hasta TRES (3) MESES PRORROGABLE POR OTRO PERÍODO SIMILAR' (up to 3 months, extendable once for a similar period) and may not do paid work; the Cancillería tourist-visa page and consulates express the tourist stay as 90 days, so it is modelled as 90 days per entry. Extension: request it from Migraciones before your permitted stay ends; no fee was stated on the pages read. Health insurance: Decreto 366/2025 (Boletín Oficial 29/05/2025) changed art. 34 of Migration Law 25.871 so that foreigners must present a sworn declaration of the purpose of entry and that they hold health insurance, but its new art. 123 bis says that declaration 'será exigible una vez reglamentada su implementación' (only enforceable once regulated); no implementing regulation was found as of 2026-10-09, so it is not listed as a required document. Outside emergencies, national public hospitals may charge foreigners without permanent residence (new art. 8), so insurance is strongly advisable.",
+    "notes": "Argentina's immigration authority (Dirección Nacional de Migraciones, DNM) lists no visa requirement for ordinary passports of this nationality in its 'Régimen de Visas' table (read 2026-10-09). Argentina's official tourist-entry page (argentina.gob.ar/migraciones/documentacion-para-ingresar-al-pais-como-turista) says tourists may stay 'hasta TRES (3) MESES PRORROGABLE POR OTRO PERÍODO SIMILAR' (up to 3 months, extendable once for a similar period) and may not do paid work; the Cancillería tourist-visa page and consulates express the tourist stay as 90 days, so it is modelled as 90 days per entry. Extension: request it from Migraciones before your permitted stay ends; no fee was stated on the pages read. Health insurance: Decreto 366/2025 (Boletín Oficial 29/05/2025) changed art. 34 of Migration Law 25.871 so that foreigners must present a sworn declaration of the purpose of entry and that they hold health insurance, but its new art. 123 bis says that declaration 'será exigible una vez reglamentada su implementación' (only enforceable once regulated); no implementing regulation was found as of 2026-10-09, so it is not listed as a required document. Outside emergencies, national public hospitals may charge foreigners without permanent residence (new art. 8), so insurance is strongly advisable. Germany's travel advice says the passport only has to be valid on entry (longer validity recommended), and that proof of valid travel or health insurance must be shown at entry, with boarding possibly refused without it; this row keeps the stricter whole-stay rule.",
     "legal_source": {
       "name": "Dirección Nacional de Migraciones — Régimen de Visas; Migraciones — Documentación para ingresar al país como turista",
       "url": "https://www.migraciones.gob.ar/accesible/indexdnm.php?visas"
     },
-    "verified_at": "2026-10-09",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Dirección Nacional de Migraciones — Régimen de Visas; Migraciones — Documentación para ingresar al país como turista",
+        "url": "https://www.migraciones.gob.ar/accesible/indexdnm.php?visas"
+      },
+      {
+        "claim": "Different passport rule from the traveller's own government: see notes",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/argentiniensicherheit-201326"
+      }
+    ]
   },
   {
     "nationality": "ES",
@@ -26454,14 +26687,26 @@
     "passportValidity": {
       "kind": "whole_stay"
     },
-    "notes": "Chile's Foreign Ministry visa table (Cuadro de aranceles de visas de permanencia transitoria, PDF created 6 March 2026, linked from consulado.gob.cl and from SERMIG's tourist page) lists ALEMANIA as 'NO' under '¿Requiere visa de permanencia transitoria?' with a maximum stay ('plazo máximo estadía') of 90 days, fee US$0. So ordinary-passport holders visit visa-free for up to 90 days per entry. General rules (Servicio Nacional de Migraciones, 'Permanencia Transitoria', updated 14 Oct 2025): visitors enter as holders of a Permanencia Transitoria permit, which allows a stay 'por hasta 90 días' and cannot run past the validity of the travel document; the PDI (Policía de Investigaciones) records the permitted period on the Tarjeta Única Migratoria (TUM) at entry; visitors must have 'los medios económicos suficientes para sustentar su estadía' and may not do paid work. Extension (SERMIG 'Prórroga de Permanencia Transitoria', updated 30 Jun 2026): 'hasta noventa días corridos', 'por una sola vez', applied for online in SERMIG's Portal de Trámites Digitales before the period on your TUM expires; fee USD 100 (children and adolescents exempt); you must show means of support for the extension period and explain the reasons. Arrival: the joint Aduana–SAG sworn declaration form states 'ESTA DECLARACIÓN DEBE SER LLENADA POR TODA PERSONA QUE INGRESE AL PAÍS' (adults 18+ sign and include minors' baggage); see the customs rows. The table's 'plazo máximo estadía' is the stay allowed on the permit; the 30/60/90-day figures are stated as days, not months.",
+    "notes": "Chile's Foreign Ministry visa table (Cuadro de aranceles de visas de permanencia transitoria, PDF created 6 March 2026, linked from consulado.gob.cl and from SERMIG's tourist page) lists ALEMANIA as 'NO' under '¿Requiere visa de permanencia transitoria?' with a maximum stay ('plazo máximo estadía') of 90 days, fee US$0. So ordinary-passport holders visit visa-free for up to 90 days per entry. General rules (Servicio Nacional de Migraciones, 'Permanencia Transitoria', updated 14 Oct 2025): visitors enter as holders of a Permanencia Transitoria permit, which allows a stay 'por hasta 90 días' and cannot run past the validity of the travel document; the PDI (Policía de Investigaciones) records the permitted period on the Tarjeta Única Migratoria (TUM) at entry; visitors must have 'los medios económicos suficientes para sustentar su estadía' and may not do paid work. Extension (SERMIG 'Prórroga de Permanencia Transitoria', updated 30 Jun 2026): 'hasta noventa días corridos', 'por una sola vez', applied for online in SERMIG's Portal de Trámites Digitales before the period on your TUM expires; fee USD 100 (children and adolescents exempt); you must show means of support for the extension period and explain the reasons. Arrival: the joint Aduana–SAG sworn declaration form states 'ESTA DECLARACIÓN DEBE SER LLENADA POR TODA PERSONA QUE INGRESE AL PAÍS' (adults 18+ sign and include minors' baggage); see the customs rows. The table's 'plazo máximo estadía' is the stay allowed on the permit; the 30/60/90-day figures are stated as days, not months. Conflict recorded: Germany's travel advice says the passport must have at least six months' validity at entry; this row follows Chile's consular page (valid for the whole stay).",
     "legal_source": {
       "name": "Ministerio de Relaciones Exteriores de Chile (Consulado.gob.cl) — Cuadro de aranceles de visas de permanencia transitoria simple y múltiple para ingresar a Chile (PDF dated 6 March 2026); Servicio Nacional de Migraciones — Permanencia Transitoria / Prórroga de Permanencia Transitoria",
       "url": "https://www.consulado.gob.cl/consulados/site/docs/20190220/20190220161313/cuadro_de_visas_corregido060326.pdf"
     },
-    "verified_at": "2026-10-10",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministerio de Relaciones Exteriores de Chile (Consulado.gob.cl) — Cuadro de aranceles de visas de permanencia transitoria simple y múltiple para ingresar a Chile (PDF dated 6 March 2026); Servicio Nacional de Migraciones — Permanencia Transitoria / Prórroga de Permanencia Transitoria",
+        "url": "https://www.consulado.gob.cl/consulados/site/docs/20190220/20190220161313/cuadro_de_visas_corregido060326.pdf"
+      },
+      {
+        "claim": "Different passport rule from the traveller's own government: see notes",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/chilesicherheit-201230"
+      }
+    ]
   },
   {
     "nationality": "ES",
@@ -27966,7 +28211,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport — the Embassy of Jamaica in Washington says it should have at least six months' validity (UK, Canadian, French and Spanish government advice say valid for the duration of the stay; the six-month figure is the stricter one)",
+      "Passport valid for at least 6 months beyond the end of your stay (after departure)",
       "Return or round-trip ticket to a country you are admissible to",
       "Evidence of sufficient funds to support yourself during the stay",
       "Completed Immigration/Customs C5 form (online at enterjamaica.gov.jm, run by PICA and Jamaica Customs, or on paper on arrival)"
@@ -27976,9 +28221,27 @@
       "name": "Jamaica Immigration Unit — Visa Requirements for Jamaicans Travelling Overseas & Foreigners and Commonwealth Nationals Entering Jamaica (PICA Visa Unit country listing, last updated 13 March 2025), published by the Embassy of Jamaica, Washington DC",
       "url": "https://embwashington.mfaft.gov.jm/pdf/Country-Listing-March-3-2025.pdf"
     },
-    "verified_at": "2026-10-10",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "departure"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Jamaica Immigration Unit — Visa Requirements for Jamaicans Travelling Overseas & Foreigners and Commonwealth Nationals Entering Jamaica (PICA Visa Unit country listing, last updated 13 March 2025), published by the Embassy of Jamaica, Washington DC",
+        "url": "https://embwashington.mfaft.gov.jm/pdf/Country-Listing-March-3-2025.pdf"
+      },
+      {
+        "claim": "Passport validity for German passport holders: „sechs Monate über das Ende des beabsichtigten Aufenthalts“",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/jamaikasicherheit-226490"
+      }
+    ]
   },
   {
     "nationality": "ES",
@@ -28469,7 +28732,7 @@
       "kind": "visa_required"
     },
     "documentsNeeded": [
-      "Passport valid for at least 6 months (Bahamas Immigration: 'present a passport that is valid for at least six months'; passport cards are not accepted)",
+      "Passport valid for at least 6 months after your departure date from the Bahamas",
       "Return ticket or other means of departing The Bahamas",
       "Proof of sufficient funds for the stay (or a local sponsor who will receive you)",
       "Completed Bahamas Immigration Disembarkation/Embarkation Card",
@@ -28480,9 +28743,27 @@
       "name": "Bahamas Department of Immigration — Before Your Arrival (Entry Criteria and Visa Requirements; page updated 2026-08-10)",
       "url": "https://www.immigration.gov.bs/entry-requirements/before-your-arrival/"
     },
-    "verified_at": "2026-10-10",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "departure"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bahamas Department of Immigration — Before Your Arrival (Entry Criteria and Visa Requirements; page updated 2026-08-10)",
+        "url": "https://www.immigration.gov.bs/entry-requirements/before-your-arrival/"
+      },
+      {
+        "claim": "Passport validity for French passport holders: « valide six mois après la date de départ des Bahamas »",
+        "name": "France Diplomatie — Conseils aux voyageurs, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/bahamas/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
   },
   {
     "nationality": "DE",
@@ -28964,7 +29245,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Passport valid for more than 6 months after your departure date from Ecuador",
       "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
     ],
     "notes": "Visa-free: France is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
@@ -28972,9 +29253,27 @@
       "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
       "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
     },
-    "verified_at": "2026-10-10",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "departure"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+        "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+      },
+      {
+        "claim": "Passport validity for French passport holders: « validité … de plus de 6 mois après la date de sortie »",
+        "name": "France Diplomatie — Conseils aux voyageurs, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/equateur/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
   },
   {
     "nationality": "DE",
@@ -30181,14 +30480,26 @@
       "unit": "months",
       "from": "arrival"
     },
-    "notes": "Israel's Population and Immigration Authority (PIBA) lists France as visa-exempt: the official ETA-IL eligibility checker, run on 2026-10-10 for a France regular (national) passport with purpose 'Visit (Tourism)', returned 'Eligible — Based on your answers, you can apply for an ETA-IL' (the checker's country data also flags this nationality NEED_PERMIT=0). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "notes": "Israel's Population and Immigration Authority (PIBA) lists France as visa-exempt: the official ETA-IL eligibility checker, run on 2026-10-10 for a France regular (national) passport with purpose 'Visit (Tourism)', returned 'Eligible — Based on your answers, you can apply for an ETA-IL' (the checker's country data also flags this nationality NEED_PERMIT=0). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL. Conflict recorded: France's travel advice says the passport must be valid for at least 6 months on the date you apply for the ETA-IL; this row follows Israel's own PIBA page (3 months from arrival).",
     "legal_source": {
       "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
       "url": "https://israel-entry.piba.gov.il/learn-about"
     },
-    "verified_at": "2026-10-10",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+        "url": "https://israel-entry.piba.gov.il/learn-about"
+      },
+      {
+        "claim": "Different passport rule from the traveller's own government: see notes",
+        "name": "France Diplomatie — Conseils aux voyageurs, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/israel-palestine/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
   },
   {
     "nationality": "DE",
@@ -30208,14 +30519,26 @@
       "unit": "months",
       "from": "arrival"
     },
-    "notes": "Israel's Population and Immigration Authority (PIBA) lists Germany as visa-exempt: the official ETA-IL eligibility checker, run on 2026-10-10 for a Germany regular (national) passport with purpose 'Visit (Tourism)', returned 'Eligible — Based on your answers, you can apply for an ETA-IL' (the checker's country data also flags this nationality NEED_PERMIT=0). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "notes": "Israel's Population and Immigration Authority (PIBA) lists Germany as visa-exempt: the official ETA-IL eligibility checker, run on 2026-10-10 for a Germany regular (national) passport with purpose 'Visit (Tourism)', returned 'Eligible — Based on your answers, you can apply for an ETA-IL' (the checker's country data also flags this nationality NEED_PERMIT=0). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL. Conflict recorded: Germany's travel advice says three months beyond the end of the trip (with an ETA-IL); this row follows Israel's PIBA page (3 months from arrival).",
     "legal_source": {
       "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
       "url": "https://israel-entry.piba.gov.il/learn-about"
     },
-    "verified_at": "2026-10-10",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+        "url": "https://israel-entry.piba.gov.il/learn-about"
+      },
+      {
+        "claim": "Different passport rule from the traveller's own government: see notes",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/israelsicherheit-203814"
+      }
+    ]
   },
   {
     "nationality": "ES",
@@ -30530,16 +30853,31 @@
       "maxDays": 180
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid for your whole planned stay"
     ],
     "notes": "French citizens are on Armenia's list of countries whose citizens, with all types of passports, are unilaterally exempt from the visa requirement and \"can stay in the territory of the Republic of Armenia up to 180 days per year\". Armenia counts 180 days in one year; we show the stricter reading, 180 days in any 365-day window.",
     "legal_source": {
       "name": "Ministry of Foreign Affairs of Armenia — countries whose citizens are unilaterally exempt from the visa requirement (updated 02.02.2024)",
       "url": "https://www.mfa.am/en/visafreelist"
     },
-    "verified_at": "2026-10-20",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "whole_stay"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Armenia — countries whose citizens are unilaterally exempt from the visa requirement (updated 02.02.2024)",
+        "url": "https://www.mfa.am/en/visafreelist"
+      },
+      {
+        "claim": "Passport validity for French passport holders: « passeport valide pour la durée du séjour envisagée »",
+        "name": "France Diplomatie — Conseils aux voyageurs, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/armenie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
   },
   {
     "nationality": "DE",
@@ -31775,7 +32113,7 @@
       "maxDays": 30
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for at least 6 months on your arrival date in Mongolia",
       "Registration with the Mongolian Immigration Agency: hotels and landlords register you; if you travel independently or stay with friends you must register yourself"
     ],
     "notes": "Mongolia's Foreign Ministry lists a visa exemption for this country covering all passports, up to 30 days (in force since 2013). Canada's travel advice says visitors must register through the Immigration Agency website within 48 hours of arrival if their stay will exceed 30 days.",
@@ -31801,8 +32139,19 @@
         "claim": "Register within 48 hours if staying more than 30 days",
         "name": "Government of Canada — Travel advice: Mongolia, Entry and exit requirements",
         "url": "https://travel.gc.ca/destinations/mongolia"
+      },
+      {
+        "claim": "Passport validity for German passport holders: „bei Einreise noch mindestens sechs Monate gültig“",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/mongoleisicherheit-222842"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    }
   },
   {
     "nationality": "CA",
@@ -32644,7 +32993,7 @@
       "maxDays": 30
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for at least 3 months on your arrival date, even without a visa",
       "Registration within 3 days of arrival: hotels register their guests; otherwise your host registers you, or you register online through Emehmon (a tourist tax is charged per day)"
     ],
     "notes": "Uzbekistan lists your country among those whose citizens can stay up to 30 days without a visa. The 30 days run from the moment you cross the border, and you must leave when they end; for a longer stay you need a visa. The rule covers all passport types and any purpose of travel. The Foreign Ministry's own list gives the same 30 days. Failing to register can mean a fine for each missing day and possible deportation (UK advice); Canada's advice says registration applies if you stay more than 3 days.",
@@ -32670,8 +33019,19 @@
         "claim": "'You must register with the local authorities if you intend to stay for more than 3 days'",
         "name": "Government of Canada — Travel advice: Uzbekistan, Entry and exit requirements",
         "url": "https://travel.gc.ca/destinations/uzbekistan"
+      },
+      {
+        "claim": "Passport validity for German passport holders: „Auch ohne Visum … mindestens drei Monate gültig“",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/usbekistansicherheit-206790"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    }
   },
   {
     "nationality": "FR",
@@ -32682,7 +33042,7 @@
       "maxDays": 30
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for at least 6 months from your planned return date (departure)",
       "Registration within 3 days of arrival: hotels register their guests; otherwise your host registers you, or you register online through Emehmon (a tourist tax is charged per day)"
     ],
     "notes": "Uzbekistan lists your country among those whose citizens can stay up to 30 days without a visa. The 30 days run from the moment you cross the border, and you must leave when they end; for a longer stay you need a visa. The rule covers all passport types and any purpose of travel. The Foreign Ministry's own list gives the same 30 days. Failing to register can mean a fine for each missing day and possible deportation (UK advice); Canada's advice says registration applies if you stay more than 3 days.",
@@ -32708,8 +33068,19 @@
         "claim": "'You must register with the local authorities if you intend to stay for more than 3 days'",
         "name": "Government of Canada — Travel advice: Uzbekistan, Entry and exit requirements",
         "url": "https://travel.gc.ca/destinations/uzbekistan"
+      },
+      {
+        "claim": "Passport validity for French passport holders: « au moins 6 mois à compter de la date de retour prévue »",
+        "name": "France Diplomatie — Conseils aux voyageurs, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/ouzbekistan/conseils-aux-voyageurs-entree-sejour"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "departure"
+    }
   },
   {
     "nationality": "JP",
@@ -33363,7 +33734,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport or national ID card (the Ministry's visa page says citizens of EU member states can enter with a valid ID card)",
+      "Passport valid for at least 3 months after your planned return date (departure)",
       "Registration with the police after arrival (hotels and some hostels usually do it for their guests)"
     ],
     "notes": "The Ministry of Foreign Affairs of Bosnia and Herzegovina says citizens of France are exempt from visas for up to 90 days in a period of six months, counted from the day of first entry. For a longer stay, or to work, you need a visa or permit. Conflict recorded: the UK government's advice says all foreign nationals must register with the police within 72 hours of arrival; Canada's says within 48 hours if you visit for 3 or more days.",
@@ -33389,8 +33760,19 @@
         "claim": "Register with local police within 48 hours if visiting 3 or more days",
         "name": "Government of Canada — Travel advice: Bosnia And Herzegovina, Entry and exit requirements",
         "url": "https://travel.gc.ca/destinations/bosnia-and-herzegovina"
+      },
+      {
+        "claim": "Passport validity for French passport holders: « passeport valable 3 mois après la date de retour prévue »",
+        "name": "France Diplomatie — Conseils aux voyageurs, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/bosnie-herzegovine/conseils-aux-voyageurs-entree-sejour"
       }
-    ]
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    }
   },
   {
     "nationality": "DE",
@@ -35772,7 +36154,7 @@
       "maxDays": 90
     },
     "documentsNeeded": [
-      "Valid passport",
+      "Passport valid for at least 6 months on your arrival date in Zambia",
       "A valid return air ticket if you arrive by air; if you arrive by land or water, enough money for your stay and departure"
     ],
     "notes": "Your country is on Zambia's list of nationals who don't need a visa. All ordinary visitors, business visitors and tourists get 90 free days in any 12 months, counted from the day of first entry. The days may not all be given at once; you can have them extended free of charge at the nearest Immigration Office.",
@@ -35780,9 +36162,27 @@
       "name": "Zambia Department of Immigration — Nationals Who Do Not Require Visa (with For Visitors)",
       "url": "https://www.zambiaimmigration.gov.zm/nationals-who-dont-require-visa/"
     },
-    "verified_at": "2026-10-23",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Zambia Department of Immigration — Nationals Who Do Not Require Visa (with For Visitors)",
+        "url": "https://www.zambiaimmigration.gov.zm/nationals-who-dont-require-visa/"
+      },
+      {
+        "claim": "Passport validity for German passport holders: „zum Zeitpunkt der Einreise noch mindestens sechs Monate gültig“",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/sambiasicherheit-208606"
+      }
+    ]
   },
   {
     "nationality": "BR",
@@ -36708,16 +37108,31 @@
       "kind": "visa_required"
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid for your whole stay, plus a return ticket (you may be asked to show about US$100 a day)"
     ],
     "notes": "Holders of passports issued by EU countries are exempt from Mauritius's visa regulations, and the country list marks your country \"No visa required\". No fixed stay is stated for visa-free visitors: the Immigration Officer at the port of entry decides how long you can stay on each visit. (For tourist visas, the office says a maximum of six months may be granted in a calendar year, case by case.) Staying beyond the period granted is an offence liable to prosecution.",
     "legal_source": {
       "name": "Passport and Immigration Office, Mauritius — Visa Requirements, with the Visa Requirement Country-wise list (2025)",
       "url": "https://passport.govmu.org/passport/?page_id=605"
     },
-    "verified_at": "2026-10-25",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "whole_stay"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Passport and Immigration Office, Mauritius — Visa Requirements, with the Visa Requirement Country-wise list (2025)",
+        "url": "https://passport.govmu.org/passport/?page_id=605"
+      },
+      {
+        "claim": "Passport validity for French passport holders: « passeport valide pour toute la durée du séjour et d'un billet retour »",
+        "name": "France Diplomatie — Conseils aux voyageurs, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/maurice/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
   },
   {
     "nationality": "DE",
@@ -36727,16 +37142,34 @@
       "kind": "visa_required"
     },
     "documentsNeeded": [
-      "Valid passport"
+      "Passport valid for at least 6 months beyond the end of your trip (after departure)"
     ],
     "notes": "Holders of passports issued by EU countries are exempt from Mauritius's visa regulations, and the country list marks your country \"No visa required\". No fixed stay is stated for visa-free visitors: the Immigration Officer at the port of entry decides how long you can stay on each visit. (For tourist visas, the office says a maximum of six months may be granted in a calendar year, case by case.) Staying beyond the period granted is an offence liable to prosecution.",
     "legal_source": {
       "name": "Passport and Immigration Office, Mauritius — Visa Requirements, with the Visa Requirement Country-wise list (2025)",
       "url": "https://passport.govmu.org/passport/?page_id=605"
     },
-    "verified_at": "2026-10-25",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "departure"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Passport and Immigration Office, Mauritius — Visa Requirements, with the Visa Requirement Country-wise list (2025)",
+        "url": "https://passport.govmu.org/passport/?page_id=605"
+      },
+      {
+        "claim": "Passport validity for German passport holders: „sechs Monate über das Reiseende hinaus“",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/mauritiussicherheit-206994"
+      }
+    ]
   },
   {
     "nationality": "IT",
@@ -37188,16 +37621,34 @@
     },
     "documentsNeeded": [
       "A Zimbabwe visa: on arrival at the port of entry after paying the visa fee, or online in advance at evisa.gov.zw (the Department encourages applying online first)",
-      "Valid passport"
+      "Passport valid for at least 6 months beyond your stay (after departure)"
     ],
     "notes": "Your country is in Zimbabwe's Category B: you need a visa, which you can get at the port of entry after paying the fee or apply for online before you travel. The Department encourages completing the Zimbabwe Entry Declaration Form before travelling. The official pages don't state the visa fee or how long the stay lasts; check them on the eVisa portal.",
     "legal_source": {
       "name": "Department of Immigration Zimbabwe — Category B countries (visa on arrival or eVisa)",
       "url": "https://www.zimimmigration.gov.zw/?p=7186"
     },
-    "verified_at": "2026-10-25",
+    "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "departure"
+    },
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Department of Immigration Zimbabwe — Category B countries (visa on arrival or eVisa)",
+        "url": "https://www.zimimmigration.gov.zw/?p=7186"
+      },
+      {
+        "claim": "Passport validity for German passport holders: „sechs Monate über den beabsichtigen Aufenthalt hinaus“",
+        "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/simbabwesicherheit-208948"
+      }
+    ]
   },
   {
     "nationality": "IT",
