@@ -181,7 +181,9 @@ Ways to make that harder to copy and easier to trust:
    India e-Arrival Card, South Africa traveller declaration, 24h registration (China, Serbia,
    Montenegro), US/Rwanda Ebola restrictions, ~100 passport-validity rules. Second pass (NL, JP) added the New Zealand Traveller Declaration,
    the Mauritius All in One form and Nigeria's health declaration for everyone, and each
-   passport's own validity rules. Repeat quarterly; still to do: ES and IT (running), KR; NZ (SafeTravel) and AU (Smartraveller) need a browser.
+   passport's own validity rules. Repeat quarterly; Third pass (IT, ES) added Georgia's insurance where it was missing, Ghana's
+   yellow fever certificate, India's Air Suvidha form and Thailand's land-entry limit. Still to do:
+   KR; NZ (SafeTravel) and AU (Smartraveller) need a browser.
 2. **Re-verification cadence.** Every row re-read at least every 6 months; show the
    oldest check date on `/sources`. A competitor can copy today's data, not the history.
 3. **Exception awareness.** Keep splitting by situation (resident vs visitor, carried vs
