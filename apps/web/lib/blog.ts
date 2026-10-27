@@ -35,6 +35,24 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "border-changes-late-2026",
+    title: "Border rules that changed this year, and three deadlines before 2027",
+    seoTitle: "Travel Rule Changes 2026: Kenya, Thailand, China, Korea Deadlines",
+    seoDescription:
+      "Kenya now requires its own travel insurance and Thailand cut visa-free stays to 30 days; China's visa-free policy and Korea's K-ETA exemption end 31 Dec 2026.",
+    dek: "Kenya's compulsory insurance, new arrival forms, Australia's nicotine-pouch ban, and the end-of-year deadlines for China's visa-free policy, Korea's K-ETA exemption and US hemp CBD.",
+    date: "2026-10-27",
+    category: "Visa rules",
+    legalSource: {
+      name: "GOV.UK (FCDO) — Kenya travel advice: Entry requirements, 'Mandatory travel insurance'",
+      url: "https://www.gov.uk/foreign-travel-advice/kenya/entry-requirements",
+    },
+    verifiedAt: "2026-10-27",
+    changelogDataset: "entry-requirements",
+    destinationCodes: ["KE", "TH", "ZA", "TW", "IN", "CN", "KR", "MN"],
+    photo: "blog-eta",
+  },
+  {
     slug: "cbd-travel-rules",
     title: "Travelling with CBD: where it's banned, and where you need a prescription",
     seoTitle: "Can You Travel With CBD? Country Rules Checked (2026)",
