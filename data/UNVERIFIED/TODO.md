@@ -1321,6 +1321,7 @@ consolidated CELEX, e.g. `02018R1806-20251230`). All former blockers resolved
 
 ## Blocked on research (no primary source identified yet)
 
+- [ ] Foreign-ministry cross-check, NZ passports (2026-10-27): safetravel.govt.nz answers every request with a Cloudflare JavaScript challenge (HTTP 403, cf-mitigated: challenge). Needs a real browser session; the 59 NZ rows to compare are listed by the cross-check script. Australia's smartraveller.gov.au timed out the same day.
 - [ ] `e-cigarettes-us`, `e-cigarettes-za` (moved to UNVERIFIED 2026-10-26: 'allowed' rested on silence).
       US leads: CBP's customs duty page gives tobacco limits only; CBP news releases concern
       unauthorised commercial ENDS (Operation Red Mist, May 2026); help.cbp.gov is JS-rendered.
