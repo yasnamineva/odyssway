@@ -224,6 +224,35 @@ export const entryRequirementSchema = z
   .superRefine(requireVerifierWhenVerified);
 export const entryRequirementsFileSchema = z.array(entryRequirementSchema);
 
+// --- data/trip-charges.json (government charges a visitor pays: levies, taxes, compulsory insurance) ---
+// Amounts as the charging government states them; never prices of private services.
+export const tripChargeSchema = z
+  .object({
+    id: z.string().regex(/^[a-z0-9-]+$/),
+    destination: countryCodeSchema,
+    kind: z.enum(["entry_levy", "departure_tax", "tourist_tax", "mandatory_insurance", "tourist_card"]),
+    title: z.string().min(1),
+    amount: z.number().positive().optional(),
+    currency: z.string().regex(/^[A-Z]{3}$/).optional(),
+    /** The amount as the source states it, with its conditions ("up to USD 44 per person"). */
+    amountText: z.string().min(1).optional(),
+    whoPays: z.string().min(1),
+    /** Set when the charge applies to only part of the country (Bali, the Galápagos). */
+    area: z.string().min(1).optional(),
+    howToPay: z.string().min(1).optional(),
+    /** In force since, when the source gives a start date. */
+    from: isoDateSchema.optional(),
+    notes: z.string().optional(),
+    ...verificationFields,
+  })
+  .superRefine(requireVerifierWhenVerified)
+  .superRefine((rec, ctx) => {
+    if (rec.status === "verified" && (rec.amount === undefined || !rec.currency || !rec.amountText)) {
+      ctx.addIssue({ code: "custom", message: "a verified charge needs amount, currency and amountText" });
+    }
+  });
+export const tripChargesFileSchema = z.array(tripChargeSchema);
+
 // --- §5.11 data/customs-items.json (destination × item category) ---
 export const customsItemCategorySchema = z.enum([
   "alcohol",

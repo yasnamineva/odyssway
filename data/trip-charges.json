@@ -1,0 +1,152 @@
+[
+  {
+    "id": "bali-tourist-levy",
+    "destination": "ID",
+    "kind": "entry_levy",
+    "title": "Bali tourist levy",
+    "amount": 150000,
+    "currency": "IDR",
+    "amountText": "IDR 150,000",
+    "whoPays": "International tourists visiting Bali. The same portal has an exemption application.",
+    "area": "Bali only",
+    "howToPay": "Online through the Bali provincial government's Love Bali portal.",
+    "legal_source": {
+      "name": "Love Bali (Bali Provincial Government), Bali Provincial Regulation No. 2 of 2025 amending Regional Regulation No. 6 of 2023",
+      "url": "https://lovebali.baliprov.go.id/"
+    },
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "id": "japan-international-tourist-tax",
+    "destination": "JP",
+    "kind": "departure_tax",
+    "title": "International Tourist Tax",
+    "amount": 3000,
+    "currency": "JPY",
+    "amountText": "JPY 3,000 per departure from Japan (JPY 1,000 if you depart on an eligible ticket issued on or before 30 June 2026)",
+    "whoPays": "International tourists leaving Japan by aircraft or ship, whatever their purpose or nationality. Exempt include transit passengers who leave Japan within 24 hours after entry and passengers under the age of 2.",
+    "howToPay": "Airlines and cruise lines collect it from their passengers.",
+    "notes": "The same page's introduction still mentions JPY 1,000; its tax-rate section gives JPY 3,000 with the transitional rule.",
+    "legal_source": {
+      "name": "National Tax Agency, International Tourist Tax: basic knowledge",
+      "url": "https://www.nta.go.jp/english/taxes/indirect/basic_knowledge.htm"
+    },
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "id": "kenya-inbound-travel-health-insurance",
+    "destination": "KE",
+    "kind": "mandatory_insurance",
+    "title": "Kenyan Government inbound travel health insurance",
+    "amount": 44,
+    "currency": "USD",
+    "amountText": "Up to USD 44 per person, covering up to 3 months with multiple entries",
+    "whoPays": "Non-Kenyans visiting for less than 3 months (tourism, business, conferences, family visits), each traveller with their own policy, including travellers who don't need an eTA. Your own travel insurance doesn't replace it. Exempt: Kenyan citizens and residents, citizens of East African Community states, asylum seekers, holders of diplomatic, official and service passports, some crew, and transit passengers who don't enter Kenya.",
+    "howToPay": "Travellers who need an eTA are asked to buy it during the eTA application; others buy it on the eCitizen insurance portal.",
+    "legal_source": {
+      "name": "Government of Kenya, eCitizen Inbound Travel Health Insurance",
+      "url": "https://insurance.ecitizen.go.ke/dashboard/travel"
+    },
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "id": "tanzania-inbound-travel-insurance",
+    "destination": "TZ",
+    "kind": "mandatory_insurance",
+    "title": "Inbound Travel Insurance (mainland Tanzania)",
+    "amount": 44,
+    "currency": "USD",
+    "amountText": "USD 44 per visitor, valid up to 92 days",
+    "whoPays": "Foreign visitors entering through mainland Tanzania (Government Notice No. 256 of 2026). Visitors entering through Zanzibar buy theirs from the Zanzibar Insurance Corporation instead.",
+    "area": "Arrivals through mainland Tanzania",
+    "howToPay": "From the National Insurance Corporation (NIC). The Ministry of Finance advises buying it before you travel.",
+    "from": "2026-10-01",
+    "legal_source": {
+      "name": "Ministry of Finance public notice on Inbound Travel Insurance (GN No. 256 of 2026), published by the Embassy of Tanzania in Italy",
+      "url": "https://www.it.tzembassy.go.tz/resources/view/implementation-of-inbound-travel-insurance-for-foreign-visitors-entering-mainland-tanzania"
+    },
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "id": "qatar-visitor-health-insurance",
+    "destination": "QA",
+    "kind": "mandatory_insurance",
+    "title": "Visitor health insurance",
+    "amount": 50,
+    "currency": "QAR",
+    "amountText": "QAR 50 for a 30-day policy, the minimum length (other visas vary)",
+    "whoPays": "Visitors who need a visa before arriving: the visa isn't granted until you've bought it. Visitors eligible for a visa on arrival are exempt for their first 30 days, but must buy it to stay longer.",
+    "howToPay": "From an insurer registered with the Ministry of Public Health, through the ministry's website, before arriving.",
+    "legal_source": {
+      "name": "Ministry of Public Health, Health Financing and Insurance Department FAQs",
+      "url": "https://www.moph.gov.qa/english/departments/ministeroffice/hfid/Pages/FAQs.aspx"
+    },
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "id": "galapagos-protected-areas-entry-fee",
+    "destination": "EC",
+    "kind": "entry_levy",
+    "title": "Galápagos protected areas entry fee",
+    "amount": 200,
+    "currency": "USD",
+    "amountText": "US$200 for foreign tourists over 12, US$100 under 12; nationals of Andean Community or Mercosur countries pay US$100 and US$50",
+    "whoPays": "Foreign tourists entering the Galápagos protected areas (Provincial Ordinance No. 001-CGREG-30-06-2025).",
+    "area": "Galápagos only",
+    "howToPay": "Park rangers collect it at Baltra and San Cristóbal airports.",
+    "legal_source": {
+      "name": "Galápagos National Park Directorate, Tributo de ingreso (Ordenanza Provincial No. 001-CGREG-30-06-2025)",
+      "url": "https://galapagos.gob.ec/tributo-de-ingreso/"
+    },
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "id": "galapagos-transit-control-card",
+    "destination": "EC",
+    "kind": "tourist_card",
+    "title": "Galápagos Transit Control Card (TCT)",
+    "amount": 20,
+    "currency": "USD",
+    "amountText": "US$20",
+    "whoPays": "Visitors flying to the Galápagos. Keep the card until you leave the islands (stays of up to 2 months).",
+    "area": "Galápagos only",
+    "howToPay": "At the Galápagos Government Council office at Quito or Guayaquil airport, before checking in with your airline.",
+    "legal_source": {
+      "name": "Galápagos National Park Directorate, Información de interés para la llegada a las islas",
+      "url": "https://galapagos.gob.ec/informacion-de-interes-para-la-llegada-a-las-islas/"
+    },
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "id": "dominican-republic-tourist-card",
+    "destination": "DO",
+    "kind": "tourist_card",
+    "title": "Tourist Card",
+    "amount": 10,
+    "currency": "USD",
+    "amountText": "US$10, for a single entry",
+    "whoPays": "Visitors entering for tourism without a consular visa. The source lists exempt categories.",
+    "howToPay": "Since 25 April 2018 it's included in every air ticket issued outside the Dominican Republic. Arriving by land or sea, you buy it at the tax authority's (DGII) points of sale there.",
+    "legal_source": {
+      "name": "Dirección General de Impuestos Internos (DGII), Sobre la Tarjeta de Turista",
+      "url": "https://dgii.gov.do/sobreTarjetaTurista/Paginas/default.aspx"
+    },
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  }
+]

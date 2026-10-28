@@ -46,6 +46,7 @@ export type {
   StatusResult,
   TimelineResult,
   Trip,
+  TripChargeRecord,
   TripExclusion,
 } from "./types";
 export * as schemas from "./schemas";

@@ -3817,3 +3817,18 @@ Sources: Department of Immigration Zimbabwe — Category A (no visa), Category B
 - Guatemala (2026-10-25): category A/B/C country table is on minex.gob.gt (403 here) and an IGM news page (404); extranjeria.igm.gob.gt has only visa forms. Stay rule is CA-4 (IGM manual PDF). Retry for the table.
 - e-cigarettes-th RE-SOURCED 2026-10-26: thailand.go.th returns an empty JS shell; now cites the Royal Thai Embassy, London page (MFA network). Removed figures the embassy pages don't state ("up to 10 years / 5x value", "4x value for possession", "enforcement intensified 2025–2026"). Find the Customs Act B.E. 2560 s.244/246 text or the 2014 Commerce notification if exact penalties are wanted.
 - e-cigarettes-gb UPDATED 2026-10-26: gov.uk now gives a separate vaping products allowance (50 ml of vaping liquid; duty on all of it above that; none under 17). The row's earlier note said the change 'takes effect 1 October 2026' — it was stale after that date. Lesson: rows that announce a future change need a dated watch entry.
+
+## Trip charges (2026-10-28)
+
+`data/UNVERIFIED/trip-charges.json` holds the charges not yet confirmed on the charging
+government's own page: GOV.UK-only amounts (Egypt visa on arrival and Taba border tax,
+Philippines Cebu departure tax, Zambia departure tax, Jordan land departure tax), conflicts
+(Costa Rica US$29 vs Ley 8316 US$27; Bahamas BS$15/20/25/18/29), stale sources (Malaysia
+departure levy guide "until 20 August 2019", tourism tax guide 2018), no amount (NZ IVL,
+Quintana Roo Visitax, Mexico and Indonesia departure taxes, Jamaica, San Andrés card,
+Uzbekistan tourist tax), unreachable (Maldives green tax) and not in force (Thailand entry
+fee, a proposal at public hearing). Zanzibar insurance price: zic.co.tz unreachable.
+
+Kenya entry rows say the government insurance applies to visitors "staying under 12 months"
+(GOV.UK/Canada); Kenya's own insurance portal says "A non-Kenyan visiting for less than
+3 months" must buy it. Recheck the entry rows' wording against the Kenyan portal.

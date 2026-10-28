@@ -1,0 +1,294 @@
+[
+  {
+    "id": "id-departure-tax-1",
+    "destination": "ID",
+    "kind": "departure_tax",
+    "title": "Departure tax",
+    "whoPays": "Some international departures; domestic flights always include it.",
+    "notes": "needs_verification (partial_no_amount). Research quote: Airport tax is included in the cost of all domestic flights within Indonesia. For some international flights departing Indonesia, airport departure tax might not be included in the price of the ticket. | Research notes: None",
+    "legal_source": {
+      "name": "fallback (GOV.UK FCDO)",
+      "url": "https://www.gov.uk/foreign-travel-advice/indonesia"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "id": "mx-tourist-tax-2",
+    "destination": "MX",
+    "kind": "tourist_tax",
+    "title": "Tourist tax",
+    "currency": "MXN",
+    "whoPays": "All foreign tourists visiting the state of Quintana Roo (Cancún, Tulum, Cozumel etc.) regardless of age or departure route; state-level only. Proof required at airport before leaving (GOV.UK).",
+    "notes": "needs_verification (partial_no_amount). Research quote: Visitax is the State Government application for the payment of contributions from foreign tourists. ... This tax is mandatory and must be paid by all foreign tourists. The article falls under the Law of Rights Article 51 octies of the State of Quintana Roo. ... all foreign tourists must pay for this. | Research notes: Amount not shown on the reachable Visitax page. State press pages (cgc.qroo.gob.mx, qroo.gob.mx) refused connections (ECONNREFUSED); a search snippet suggested MXN 285 for 2026 — NOT verified, do not publish.",
+    "legal_source": {
+      "name": "primary (Servicio de Administración Tributaria de Quintana Roo)",
+      "url": "https://www.visitax.gob.mx/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "id": "mx-departure-tax-3",
+    "destination": "MX",
+    "kind": "departure_tax",
+    "title": "Departure tax",
+    "whoPays": "Air or land departures; usually included in airline ticket; varies.",
+    "notes": "needs_verification (partial_no_amount). Research quote: You may need to pay a departure tax when leaving Mexico by air or land. The cost can vary, and some airports or border crossings only accept cash. Most airlines include the cost within the ticket price. | Research notes: None",
+    "legal_source": {
+      "name": "fallback (GOV.UK FCDO)",
+      "url": "https://www.gov.uk/foreign-travel-advice/mexico"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "id": "nz-entry-levy-8",
+    "destination": "NZ",
+    "kind": "entry_levy",
+    "title": "Entry levy",
+    "currency": "NZD",
+    "whoPays": "Paid with NZeTA application (and visa applications); exemptions exist (e.g. Australian passports, many Pacific nationals).",
+    "notes": "needs_verification (partial_no_amount). Research quote: If you are entering without a visa, you need a New Zealand Electronic Travel Authority (NZeTA) before you travel. You will also need to pay an International Visitor Conservation and Tourism Levy when you apply. | Research notes: Immigration NZ / MBIE / govt.nz IVL pages are JS-rendered or returned stubs (212–946 bytes); amount not read verbatim. Search snippets indicate NZD 100 since Oct 2024 — NOT verified, re-check via browser.",
+    "legal_source": {
+      "name": "fallback (GOV.UK FCDO)",
+      "url": "https://www.gov.uk/foreign-travel-advice/new-zealand"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "id": "eg-visa-on-arrival-fee-9",
+    "destination": "EG",
+    "kind": "entry_levy",
+    "title": "Visa on arrival fee",
+    "amount": 30,
+    "currency": "USD",
+    "whoPays": "Eligible nationalities arriving at Egyptian airports; physical visa at bank counters, cash only; valid up to 30 days. From 2026-08-01 Cairo airport digital VOA USD 36 incl. USD 6 service fee (card only).",
+    "notes": "needs_verification (fallback_only). Research quote: ...counters where you can buy a physical visa for 30 US dollars (cash only). Visas on arrival are valid for up to 30 days. Starting from 1 August 2026, travellers arriving at Cairo International Airport can also purchase digital visas on arrival (card payment only) via self-service machines or the Visa on Arrival portal for 36 US dollars, including a 6 US dollar digital service fee. | Research notes: visa2egypt.gov.eg returned an 86-byte block page.",
+    "legal_source": {
+      "name": "fallback (GOV.UK FCDO)",
+      "url": "https://www.gov.uk/foreign-travel-advice/egypt"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "id": "eg-entry-levy-10",
+    "destination": "EG",
+    "kind": "entry_levy",
+    "title": "Entry levy",
+    "amount": 120,
+    "currency": "USD",
+    "whoPays": "Taba land crossing (from Israel): travelling beyond Taba but within Sinai = USD 120 border tax (15-day stamp); beyond Sinai = USD 120 + USD 30 visa.",
+    "notes": "needs_verification (fallback_only). Research quote: If travelling further than Taba, including to Sharm El-Sheikh, but remaining within the Sinai Peninsula, travellers will need to pay a border tax of 120 US dollars. ... If travelling beyond the Sinai Peninsula, including to fly from airports such as Cairo and Hurghada, travellers will need to pay a border tax of 120 US dollars and purchase a standard entry visa for 30 US dollars. | Research notes: None",
+    "legal_source": {
+      "name": "fallback (GOV.UK FCDO)",
+      "url": "https://www.gov.uk/foreign-travel-advice/egypt"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "id": "jo-departure-tax-11",
+    "destination": "JO",
+    "kind": "departure_tax",
+    "title": "Departure tax",
+    "amount": 10,
+    "currency": "JOD",
+    "whoPays": "Land border crossings only (not airports).",
+    "notes": "needs_verification (confirmed_with_conflict). Research quote: You must pay a departure tax of 10 Jordanian dinars in cash at all land border crossings. There are usually ATMs at the border. | Research notes: Jordan Tourism Board (international.visitjordan.com/page/21/border-crossing/): 'A departure tax of 10 JDs ($15) is paid at any border crossings except the airports.' A Public Security Directorate PDF (psd.gov.jo, unreachable by curl) reportedly lists 4 JD for land/sea — unverified conflict.",
+    "legal_source": {
+      "name": "fallback (GOV.UK FCDO)",
+      "url": "https://www.gov.uk/foreign-travel-advice/jordan"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "id": "cr-departure-tax-12",
+    "destination": "CR",
+    "kind": "departure_tax",
+    "title": "Departure tax",
+    "amount": 29,
+    "currency": "USD",
+    "whoPays": "Air departures; most airlines include it in ticket price.",
+    "notes": "needs_verification (fallback_only_conflict). Research quote: When leaving the country by air, you may need to pay a departure tax of 29 US dollars. Most airlines include this in ticket prices. If you need to pay it, you can use cash or card. | Research notes: Primary law (Ley 8316, migracion.go.cr PDF) behind Cloudflare challenge; SCIJ text is JS-loaded. Search snippet of Ley 8316 shows US$27 — conflicts with GOV.UK US$29; unresolved.",
+    "legal_source": {
+      "name": "fallback (GOV.UK FCDO)",
+      "url": "https://www.gov.uk/foreign-travel-advice/costa-rica"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "id": "my-departure-tax-15",
+    "destination": "MY",
+    "kind": "departure_tax",
+    "title": "Departure tax",
+    "currency": "MYR",
+    "whoPays": "Everyone departing Malaysia by air (other modes currently exempt). Economy: RM8 to ASEAN, RM20 elsewhere; other than economy: RM50 ASEAN, RM150 elsewhere. Rate set by final destination. Exemptions incl. under-2s and transit ≤12h.",
+    "notes": "needs_verification (confirmed_dated). Research quote: The departure levi rate has been fixed by Minister of Finance as stated in the Departure Levy Regulations (Levy Rate) 2019 ... Other Than Economy 50.00 150.00 Economy 8.00 20.00 [ASEAN / OTHER THAN ASEAN, RM] ... the price ticket will include the departure levy and other charges imposed by the flight company. | Research notes: amount varies by class/destination: economy 8 (ASEAN) / 20 (non-ASEAN) MYR. Guide dated 20 Aug 2019 — no newer rate found, but check currency.",
+    "legal_source": {
+      "name": "primary (Royal Malaysian Customs Department)",
+      "url": "https://mydlv.customs.gov.my/www/admin/files/JKDM/resources/assets/pdf/General_Guide_of_Departure_Levy.pdf"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "id": "my-tourist-tax-16",
+    "destination": "MY",
+    "kind": "tourist_tax",
+    "title": "Tourist tax",
+    "amount": 10,
+    "currency": "MYR",
+    "whoPays": "Foreign tourists staying in registered accommodation: RM10 per room per night (not per person); Malaysians exempt.",
+    "notes": "needs_verification (confirmed_dated). Research quote: TTx is a tax charged and levied on a tourist staying at any accommodation premises made available by an operator at the rate of tax fixed at RM 10.00 per room per night. It is the duty of the tourist to pay TTx to the operator. | Research notes: Guide revised 17 May 2018.",
+    "legal_source": {
+      "name": "primary (Royal Malaysian Customs Department)",
+      "url": "https://www.myttx.customs.gov.my/wp-content/uploads/2022/05/APPENDIX-A-General-Guide.pdf"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "id": "bs-departure-tax-18",
+    "destination": "BS",
+    "kind": "departure_tax",
+    "title": "Departure tax",
+    "amount": 15,
+    "currency": "BSD",
+    "whoPays": "All persons aged 6+ departing for a port outside the Bahamas.",
+    "notes": "needs_verification (conflict). Research quote: Departure Tax or Passenger Tax is collected from all persons departing for a port outside the Bahamas. This tax of BS$15.00 is collected from every person 6 years and older. | Research notes: Other bahamas.gov.bs pages (per search) cite $20, BS$25 / BS$18 (cruise); bahamas.com cites $29 for private aviation. Whether included in airfare not stated. Do not publish until reconciled.",
+    "legal_source": {
+      "name": "primary (Government of The Bahamas)",
+      "url": "https://www.bahamas.gov.bs/departure-tax"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "id": "ph-departure-tax-19",
+    "destination": "PH",
+    "kind": "departure_tax",
+    "title": "Departure tax",
+    "amount": 850,
+    "currency": "PHP",
+    "whoPays": "Departures from Cebu Mactan airport only; none at Manila.",
+    "notes": "needs_verification (fallback_only). Research quote: If you're leaving the country from Cebu Mactan airport, you must pay a departure tax of 850 Philippine pesos in local currency or the equivalent in US dollars. There's no longer a departure tax at Manila airport. | Research notes: Not checked against MCIAA/primary source.",
+    "legal_source": {
+      "name": "fallback (GOV.UK FCDO)",
+      "url": "https://www.gov.uk/foreign-travel-advice/philippines"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "id": "zm-departure-tax-20",
+    "destination": "ZM",
+    "kind": "departure_tax",
+    "title": "Departure tax",
+    "amount": 25,
+    "currency": "USD",
+    "whoPays": "All international air departures (equivalent of USD 25); normally included in ticket; USD 3 security charge applies to domestic travel.",
+    "notes": "needs_verification (fallback_only). Research quote: On leaving Zambia, all air passengers must pay the equivalent to 25 US dollars for international travel and a security charge of 3 US dollars for domestic travel. Both charges are normally included in the cost of an air ticket, but you will have to pay in cash with Zambian kwacha if they are not. | Research notes: None",
+    "legal_source": {
+      "name": "fallback (GOV.UK FCDO)",
+      "url": "https://www.gov.uk/foreign-travel-advice/zambia"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "id": "co-other-21",
+    "destination": "CO",
+    "kind": "tourist_card",
+    "title": "Other",
+    "whoPays": "San Andrés, Providencia, Santa Catalina only: tourist card required unless staying <24h. National departure tax usually in ticket.",
+    "notes": "needs_verification (partial_no_amount). Research quote: If you're travelling to the islands of San Andres, Providencia or Santa Catalina, you must buy a tourist card from the boarding gate, on the day of the flight. You do not need one if you're staying less than 24 hours. ... Departure tax is usually included in the price of the airline ticket, but check with your airline. | Research notes: None",
+    "legal_source": {
+      "name": "fallback (GOV.UK FCDO)",
+      "url": "https://www.gov.uk/foreign-travel-advice/colombia"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "id": "uz-tourist-tax-22",
+    "destination": "UZ",
+    "kind": "tourist_tax",
+    "title": "Tourist tax",
+    "currency": "UZS",
+    "whoPays": "Per day of stay; normally in hotel bill / paid by private host; self-registering campers pay online via Emehmon.",
+    "notes": "needs_verification (partial_no_amount). Research quote: Tourist tax is usually included in the hotel bill, and private hosts pay the tourist tax on behalf of the guest. ... When registering online, you'll have to pay a tourist tax charge for each day of your stay. At the moment you can only pay the tourist tax online with an Uzbek debit card in local currency. | Research notes: None",
+    "legal_source": {
+      "name": "fallback (GOV.UK FCDO)",
+      "url": "https://www.gov.uk/foreign-travel-advice/uzbekistan"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "id": "jm-departure-tax-23",
+    "destination": "JM",
+    "kind": "departure_tax",
+    "title": "Departure tax",
+    "whoPays": "Arrival and departure taxes usually included in ticket.",
+    "notes": "needs_verification (partial_no_amount). Research quote: Arrival and departure taxes are usually included in the cost of your ticket. | Research notes: None",
+    "legal_source": {
+      "name": "fallback (GOV.UK FCDO)",
+      "url": "https://www.gov.uk/foreign-travel-advice/jamaica"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "id": "th-entry-levy-24",
+    "destination": "TH",
+    "kind": "entry_levy",
+    "title": "Entry levy",
+    "currency": "THB",
+    "whoPays": "PROPOSED ONLY, not in force: flat THB 450 per foreign visitor (air/land/sea) going to public hearing; earlier THB 300 plan was scrapped.",
+    "notes": "needs_verification (not_in_force). Research quote: Thailand's Ministry of Tourism and Sports is preparing to launch a public hearing on a new tourism entry fee for foreign visitors, and the numbers have changed. The proposed rate is now a flat 450 baht (~US$13.50) per person, regardless of how you arrive (air, land, or sea). | Research notes: Do not present as a current charge. GOV.UK Thailand (2026-10-12) mentions no entry fee.",
+    "legal_source": {
+      "name": "primary (Government Public Relations Department, Thailand)",
+      "url": "https://thailand.prd.go.th/en/content/category/detail/id/2078/iid/532128"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "id": "mv-tourist-tax-25",
+    "destination": "MV",
+    "kind": "tourist_tax",
+    "title": "Tourist tax",
+    "currency": "USD",
+    "whoPays": "Green Tax per tourist per day (resorts/hotels/vessels; reduced rate on small inhabited-island guesthouses).",
+    "notes": "needs_verification (unreachable). Research quote: None | Research notes: MIRA returned a Cloudflare JS challenge; not circumvented. Search snippets say USD 12/day (USD 6 small inhabited-island guesthouses) from 2025-01-01 — NOT verified.",
+    "legal_source": {
+      "name": "primary (Maldives Inland Revenue Authority) — UNREACHABLE",
+      "url": "https://www.mira.gov.mv/ContentItems/View/circular-re-changes-to-grt-rates-on-20250101-news"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  }
+]

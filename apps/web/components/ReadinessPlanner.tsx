@@ -15,7 +15,9 @@ import {
   type ReadinessStopInput,
   type ReadinessTraveller,
 } from "../lib/readiness";
+import { chargesForDestination } from "../lib/trip-charges";
 import { StopStatus } from "./RoutePassportCheck";
+import TripChargeList from "./TripChargeList";
 import SearchableSelect from "./SearchableSelect";
 import SourceNote from "./SourceNote";
 
@@ -455,6 +457,13 @@ export default function ReadinessPlanner({ changeDates }: { changeDates: Record<
                             ))}
                           </ul>
                           {stop.notes && <p className="mt-2 text-xs leading-relaxed text-slate-600">{stop.notes}</p>}
+                          {chargesForDestination(stop.destination).length > 0 && (
+                            <>
+                              <h4 className="mt-3 text-xs font-semibold uppercase tracking-wide text-slate-500">{t("chargesTitle")}</h4>
+                              <p className="mt-1 text-xs text-slate-600">{t("chargesNote", { country: stop.destinationName })}</p>
+                              <TripChargeList charges={chargesForDestination(stop.destination)} compact />
+                            </>
+                          )}
                         </>
                       )}
                       {stop.legalSource && (

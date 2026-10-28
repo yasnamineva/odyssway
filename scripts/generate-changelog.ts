@@ -30,6 +30,7 @@ const DATA_FILES = [
   "data/entry-requirements.json",
   "data/customs-items.json",
   "data/overstay-penalties.json",
+  "data/trip-charges.json",
 ];
 
 interface ChangelogEntry {
@@ -49,6 +50,7 @@ const ROW_KEYS: Record<string, { key: (r: Record<string, unknown>) => string; de
   "data/entry-requirements.json": { key: (r) => `${r.nationality}>${r.destination}`, dest: (r) => String(r.destination) },
   "data/customs-items.json": { key: (r) => String(r.slug), dest: (r) => String(r.destination) },
   "data/destinations.json": { key: (r) => String(r.code), dest: (r) => String(r.code) },
+  "data/trip-charges.json": { key: (r) => String(r.id), dest: (r) => String(r.destination) },
 };
 
 const parsedByBlob = new Map<string, Map<string, { dest: string; json: string }>>();

@@ -20,6 +20,8 @@ import Photo from "../../../components/content/Photo";
 import { destinationPhoto, photoOgImage } from "../../../lib/photos";
 import { VERDICT_STYLES } from "../../../components/CustomsRowCard";
 import { changesForDestination } from "../../../lib/changelog";
+import { chargesForDestination } from "../../../lib/trip-charges";
+import TripChargeList from "../../../components/TripChargeList";
 
 interface Params {
   slug: string;
@@ -64,6 +66,7 @@ export default async function DestinationPage({ params }: { params: Promise<Para
 
   const t = await getTranslations("destinationPage");
   const tc = await getTranslations("common");
+  const tCharges = await getTranslations("tripCharges");
 
   const nationalityRows = entryRequirements
     .filter((r) => r.destination === dest.code && r.status === "verified")
@@ -212,6 +215,14 @@ export default async function DestinationPage({ params }: { params: Promise<Para
               );
             })}
           </ul>
+        </section>
+      )}
+
+      {chargesForDestination(dest.code).length > 0 && (
+        <section className="mt-10" data-testid="destination-charges">
+          <h2 className="text-lg font-semibold text-slate-900">{tCharges("title")}</h2>
+          <p className="mt-1 text-sm text-slate-600">{tCharges("hint", { destination: dest.name })}</p>
+          <TripChargeList charges={chargesForDestination(dest.code)} />
         </section>
       )}
 

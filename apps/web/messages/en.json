@@ -842,6 +842,19 @@
     "guideLink": "Dual citizens: which passport for Schengen and the EES →",
     "disclaimer": "A comparison of verified rules, not advice on which nationality to use. Some countries have their own rules for their citizens; check with the official source if you're unsure."
   },
+  "tripCharges": {
+    "title": "Government charges for visitors",
+    "hint": "Levies, departure taxes and compulsory insurance that {destination}'s government sets for visitors, each from the official source. Visa and travel-authorisation fees aren't listed here.",
+    "kind": {
+      "entry_levy": "Entry levy",
+      "departure_tax": "Departure tax",
+      "tourist_tax": "Tourist tax",
+      "mandatory_insurance": "Compulsory insurance",
+      "tourist_card": "Tourist card"
+    },
+    "area": "Applies to: {area}",
+    "from": "In force since {date}"
+  },
   "readiness": {
     "metaTitle": "Trip Readiness Planner: Visas, Arrival Cards and Deadlines",
     "metaDescription": "Add everyone travelling and every stop: who needs a visa or travel authorisation, when each arrival card opens, passport checks and the dates to act by. Cited to official sources.",
@@ -908,6 +921,8 @@
     "notCovered": "We haven't verified {country} for this passport yet, so we won't guess.",
     "officialSource": "Official source",
     "fullRules": "{country} entry requirements and change history →",
+    "chargesTitle": "Government charges",
+    "chargesNote": "Charges set by {country}'s government for visitors. Visa and travel-authorisation fees aren't included.",
     "authorisationGuides": "Before you apply: use the official website. Unofficial sites charge extra for the same form.",
     "disclaimer": "Informational only, not legal advice. Rules change: check each official source before you travel. The border officer makes the final decision on entry."
   },

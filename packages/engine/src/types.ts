@@ -221,3 +221,25 @@ export interface CustomsItemRecord {
   verified_by: string | null;
   status: "verified" | "needs_verification";
 }
+
+/** data/trip-charges.json: a government charge a visitor pays (levy, departure tax, compulsory insurance). */
+export interface TripChargeRecord {
+  id: string;
+  destination: CountryCode;
+  kind: "entry_levy" | "departure_tax" | "tourist_tax" | "mandatory_insurance" | "tourist_card";
+  title: string;
+  amount?: number;
+  currency?: string;
+  /** The amount as the source states it, with its conditions. */
+  amountText?: string;
+  whoPays: string;
+  /** Set when the charge applies to only part of the country. */
+  area?: string;
+  howToPay?: string;
+  from?: string;
+  notes?: string;
+  legal_source: { name: string; url: string };
+  verified_at: string | null;
+  verified_by: string | null;
+  status: "verified" | "needs_verification";
+}

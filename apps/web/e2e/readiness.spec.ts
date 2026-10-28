@@ -39,3 +39,18 @@ test("a saved plan remembers when it was checked", async ({ page }) => {
   await expect(page.getByTestId("rd-recheck")).toContainText("No rule changes");
   await expect(page.getByTestId("rd-action")).toHaveCount(1);
 });
+
+test("lists the destination government's charges for each stop, with a source", async ({ page }) => {
+  await page.goto("/readiness");
+  await pickCombobox(page, "rd-nat-0", "United States", "United States");
+  await pickCombobox(page, "rd-dest-0", "Kenya", "Kenya");
+  await page.getByTestId("rd-arrival-0").fill("2030-03-10");
+  const charge = page.getByTestId("trip-charge").first();
+  await expect(charge).toContainText("Up to USD 44 per person");
+  await expect(charge.getByRole("link")).toHaveAttribute("href", /ecitizen\.go\.ke/);
+});
+
+test("a destination hub lists government charges for visitors", async ({ page }) => {
+  await page.goto("/destinations/japan");
+  await expect(page.getByTestId("destination-charges")).toContainText("JPY 3,000 per departure");
+});
