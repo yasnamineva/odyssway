@@ -20,8 +20,8 @@ const verifiedDates = [...customsItems, ...entryRequirements, ...destinations]
 
 /** Dataset markup (schema.org) so the verified corpus — the product's actual
  * moat — is discoverable in Google Dataset Search, with counts derived from
- * the data files rather than hand-typed. No `license` is declared: none has
- * been chosen, and asserting one here would be a legal claim. */
+ * the data files rather than hand-typed. The rule data is licensed CC BY 4.0
+ * (owner decision, 2026-10-28; /terms "Our content and data"). */
 const datasetJsonLd = {
   "@context": "https://schema.org",
   "@type": "Dataset",
@@ -30,6 +30,7 @@ const datasetJsonLd = {
   url: `${SITE_URL}/developers`,
   keywords: ["customs rules", "entry requirements", "travel compliance", "Schengen", "90/180 rule"],
   isAccessibleForFree: true,
+  license: "https://creativecommons.org/licenses/by/4.0/",
   dateModified: verifiedDates.at(-1),
   creator: { "@type": "Organization", name: "Odyssway", url: SITE_URL },
   distribution: ["trip-check", "destinations", "customs-items"].map((endpoint) => ({

@@ -65,7 +65,7 @@ export function GET(): Response {
     ...blogPostsByDate.map((b) => `- [${b.title}](${SITE_URL}/blog/${b.slug})`),
     "",
     "## Data",
-    `- [JSON API](${SITE_URL}/developers): /api/v1/customs-items, /api/v1/destinations, /api/v1/trip-check. Free with attribution.`,
+    `- [JSON API](${SITE_URL}/developers): /api/v1/customs-items, /api/v1/destinations, /api/v1/trip-check. Data licensed CC BY 4.0 (credit Odyssway with a link).`,
     "",
   ];
   return new Response(lines.join("\n"), {

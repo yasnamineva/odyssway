@@ -354,12 +354,10 @@ more than a Japanese page about the US). Translate the highest-traffic page type
 ## 7. Open decisions for the owner
 
 - Keyword-matching H1s on destination hubs (§5.2).
-- Turning on cookie-free Plausible (needs a privacy-policy update first).
+- Turning on cookie-free Plausible (needs a privacy-policy update first). Owner, 2026-10-28: not now (cost).
 - Brand profiles and `sameAs` (§5.3).
 - Accounts and email alerts (Horizon 2).
-- A data licence for the Dataset markup on `/developers` (§5.4). Google Dataset Search wants a
-  `license`; the terms already allow free reuse with a link back, but none has been formally
-  chosen (e.g. CC BY 4.0, or "see /terms"), so the markup declares none.
+- ✔ Data licence: CC BY 4.0 (decided 2026-10-28).
 
 ---
 
