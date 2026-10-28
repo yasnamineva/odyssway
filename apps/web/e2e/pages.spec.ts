@@ -400,10 +400,14 @@ test("which passport: compares two passports for one destination", async ({ page
 test("a destination hub lists its own recent rule changes and has a per-country feed", async ({ page, request }) => {
   await page.goto("/destinations/zimbabwe");
   const changes = page.getByTestId("destination-changes");
-  await expect(changes).toContainText("Add Zimbabwe");
+  // The newest five change; check the list's shape, and that the full feed still has the oldest.
+  await expect(changes.locator("li").first()).toBeVisible();
+  expect(await changes.locator("li").count()).toBeLessThanOrEqual(5);
   const feed = await request.get("/destinations/zimbabwe/feed.xml");
   expect(feed.status()).toBe(200);
-  expect(await feed.text()).toContain("rule changes for Zimbabwe");
+  const xml = await feed.text();
+  expect(xml).toContain("rule changes for Zimbabwe");
+  expect(xml).toContain("Add Zimbabwe");
 });
 
 test("item hubs lead with the search wording, a count summary and a limits table; pairs link the same item elsewhere", async ({ page }) => {
