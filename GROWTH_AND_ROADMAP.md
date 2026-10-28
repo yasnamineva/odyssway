@@ -99,7 +99,40 @@ Japan?"). They are weak in five places, and each one is a direction for us:
 Tools are the part AI answers can't copy: they compute from the user's own dates and
 items, deterministically, from verified rows. In priority order:
 
-1. **Calendar-year stay rule.** The engine type is written and tested (patch saved during
+**Travel readiness (agreed 2026-10-28, after review of an external expansion brief).**
+The connected workflow is *can I go → am I ready → what will entry cost → what changed
+since I checked*. Built client-side from verified rows; no accounts.
+
+1. **Trip readiness planner** (`/readiness`). Per traveller (mixed nationalities allowed):
+   passport check per stop, travel authorisations needed, arrival forms with their time
+   windows, permits with lead times. Two kinds of date, never mixed up: the **legal
+   deadline** (from a verified rule) and a **recommended action date** (deadline minus a
+   buffer the user chooses; we don't model home-country passport processing times). One
+   `.ics` for everything. Saved only in the browser, opt-in.
+2. **Travel-authorisation guides** (`/authorisations/[scheme]`, ~10 schemes: ESTA, eTA,
+   UK ETA, K-ETA, AU ETA/eVisitor, NZeTA, Kenya eTA, India e-visa, Sri Lanka ETA, ETIAS,
+   ETA-IL, Egypt e-visa): official link, fee, validity, processing time, apply-ahead
+   advice, and a warning about unofficial sites. Data: `data/travel-authorisations.json`.
+3. **Entry costs per trip**: authorisation fees, mandatory insurance, tourist levies and
+   departure taxes, from `data/trip-charges.json` (government charges only, never prices
+   of services).
+4. **Pre-departure recheck**: a saved trip remembers when it was checked; on return it
+   lists the rule changes for its destinations since then (from the per-destination
+   changelog).
+5. **Cookie-free event counter**: anonymous counts of tool actions (no cookies, no
+   personal data) so the next phase can be decided on evidence (§12 validation rule).
+6. Later, only with the owner's go-ahead: accounts, email alerts, an annual plan for
+   saved trips and alerts (sells persistent state, not facts).
+
+**Deliberately not building:** live flight/hotel pricing, "cheapest month" or "similar
+destination" optimisation, study/work/residence routing, a document vault, or submitting
+applications for users. Reasons: no advantage against funded price-comparison sites,
+unverifiable numbers would undermine the cited-and-dated brand, and immigration routing is
+a non-goal (AGENTS.md §2).
+
+**Other:**
+
+- **Calendar-year stay rule.** The engine type is written and tested (patch saved during
    the Mauritius work). Merge it the first time an official source states a
    calendar-year cap for visa-free visitors.
 
