@@ -3829,6 +3829,6 @@ Quintana Roo Visitax, Mexico and Indonesia departure taxes, Jamaica, San Andrés
 Uzbekistan tourist tax), unreachable (Maldives green tax) and not in force (Thailand entry
 fee, a proposal at public hearing). Zanzibar insurance price: zic.co.tz unreachable.
 
-Kenya entry rows say the government insurance applies to visitors "staying under 12 months"
-(GOV.UK/Canada); Kenya's own insurance portal says "A non-Kenyan visiting for less than
-3 months" must buy it. Recheck the entry rows' wording against the Kenyan portal.
+Kenya insurance scope: done 2026-10-28. The 22 Kenya rows now quote Kenya's portal ("less
+than 3 months") and record GOV.UK/Canada's "under 12 months" as a conflict. Open: what
+Kenya requires for stays of 3–12 months (the portal doesn't say).
