@@ -3832,3 +3832,28 @@ fee, a proposal at public hearing). Zanzibar insurance price: zic.co.tz unreacha
 Kenya insurance scope: done 2026-10-28. The 22 Kenya rows now quote Kenya's portal ("less
 than 3 months") and record GOV.UK/Canada's "under 12 months" as a conflict. Open: what
 Kenya requires for stays of 3–12 months (the portal doesn't say).
+
+## Batch 7, destination 1: Kyrgyzstan (2026-10-28)
+Source: MFA e-Visa portal, "Do I need visa?" tool (evisa.e-gov.kg/get_information.php; per-passport
+answers from the page's own api.php?method=getVisaTypeInfo). mfa.gov.kg returned 502.
+- 22 entry rows: US GB CA AU NZ JP KR SG BR MX AR CL MY IL FR DE IT ES NL visa-free "up to 30 days"
+  → rolling 60/30, because GOV.UK ("up to 30 calendar days ... for each 60-day period") and
+  Viaggiare Sicuri ("30 giorni, nell'arco di 60 giorni dalla data di ingresso") agree; UA "up to
+  90 days", no period → fixed 90; CN IN ordinary passports not visa-free → visa required (IN note:
+  simplified tourist visa with a GCC/Brunei residence card).
+- Passport 6 months from arrival on every row (GOV.UK and Viaggiare Sicuri agree; the portal is silent).
+- Registration within 5 working days of entry "except countries included in a list": the list
+  isn't on the portal, so it's a note only, not a timed step.
+- OPEN: customs (no readable official text found yet); destination photo.
+
+## Ethiopia (2026-10-28): BLOCKED
+evisa.gov.et and mfa.gov.et are React shells; reading the e-visa portal's data services was
+refused as access circumvention, so not pursued. ics.gov.et has no visitor-visa page (business
+and student only). GOV.UK (2026-10-26) and Viaggiare Sicuri have full advice (visa required,
+30-day tourist e-visa, passport 6 months from arrival, cash rules), but there is no primary
+Ethiopian source we can read. Retry when an official page with the visa rules is readable.
+
+## Retries 2026-10-28: Canada eTA, NZeTA, ETA-IL still blocked
+canada.ca: connection timeout/reset (curl, HTTP/1.1). immigration.govt.nz: bot challenge
+(212 bytes), not circumvented. israel-entry.piba.gov.il: JS-only; the bundle text conflicts
+(25 NIS vs "free during the pilot"). All three stay in UNVERIFIED/travel-authorisations.json.
