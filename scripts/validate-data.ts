@@ -26,6 +26,7 @@ import {
   nationalityRulesFileSchema,
   overstayPenaltiesFileSchema,
   tripChargesFileSchema,
+  travelAuthorisationsFileSchema,
 } from "../packages/engine/src/schemas";
 
 const ROOT = join(import.meta.dirname, "..");
@@ -44,6 +45,7 @@ const SCHEMA_BY_FILE: Record<string, ZodType> = {
   "entry-requirements.json": entryRequirementsFileSchema,
   "customs-items.json": customsItemsFileSchema,
   "trip-charges.json": tripChargesFileSchema,
+  "travel-authorisations.json": travelAuthorisationsFileSchema,
 };
 
 const errors: string[] = [];

@@ -224,6 +224,36 @@ export const entryRequirementSchema = z
   .superRefine(requireVerifierWhenVerified);
 export const entryRequirementsFileSchema = z.array(entryRequirementSchema);
 
+// --- data/travel-authorisations.json (ETAs and e-visas: how to apply, from the issuing government) ---
+const sourceClaimSchema = z.object({ claim: z.string().min(1), name: z.string().min(1), url: z.url() });
+export const travelAuthorisationSchema = z
+  .object({
+    slug: z.string().regex(/^[a-z0-9-]+$/),
+    name: z.string().min(1),
+    shortName: z.string().min(1),
+    destination: countryCodeSchema,
+    kind: z.enum(["travel_authorisation", "e_visa"]),
+    issuer: z.string().min(1),
+    /** The issuing government's own site. */
+    applyUrl: z.url(),
+    fee: z.object({
+      amount: z.number().nonnegative().optional(),
+      currency: z.string().regex(/^[A-Z]{3}$/).optional(),
+      text: z.string().min(1),
+    }),
+    validity: z.string().min(1).optional(),
+    processing: z.string().min(1).optional(),
+    applyAhead: z.string().min(1).optional(),
+    maxStay: z.string().min(1).optional(),
+    /** What the issuer says about unofficial websites or fees. */
+    officialOnly: z.string().min(1).optional(),
+    notes: z.string().optional(),
+    _sources: z.array(sourceClaimSchema).optional(),
+    ...verificationFields,
+  })
+  .superRefine(requireVerifierWhenVerified);
+export const travelAuthorisationsFileSchema = z.array(travelAuthorisationSchema);
+
 // --- data/trip-charges.json (government charges a visitor pays: levies, taxes, compulsory insurance) ---
 // Amounts as the charging government states them; never prices of private services.
 export const tripChargeSchema = z

@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "canada-eta",
+    "name": "Canada Electronic Travel Authorization (eTA)",
+    "shortName": "Canada eTA",
+    "destination": "CA",
+    "kind": "travel_authorisation",
+    "issuer": "Immigration, Refugees and Citizenship Canada",
+    "applyUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html",
+    "fee": {
+      "amount": 7,
+      "currency": "CAD",
+      "text": "CAN$7 (research lead)"
+    },
+    "notes": "needs_verification: canada.ca timed out for direct fetch (2026-10-28); wording only via a summarising fetch tool. Research leads: valid up to 5 years or until passport expires; most approved within minutes; get it before booking; stays normally up to 6 months; apply only on canada.ca.",
+    "legal_source": {
+      "name": "IRCC, eTA",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/facts.html"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "israel-eta-il",
+    "name": "Israel ETA-IL",
+    "shortName": "ETA-IL",
+    "destination": "IL",
+    "kind": "travel_authorisation",
+    "issuer": "Population and Immigration Authority",
+    "applyUrl": "https://israel-entry.piba.gov.il/",
+    "fee": {
+      "amount": 25,
+      "currency": "ILS",
+      "text": "25 NIS (research lead)"
+    },
+    "notes": "needs_verification: site is JavaScript-only; text read from its code bundle, which also says the application is free during the pilot. Confirm the displayed fee in a browser. Leads: valid up to 2 years or until passport expires; usually immediate, up to 72 hours; apply at least 72 hours before booking; up to 90 days per visit.",
+    "legal_source": {
+      "name": "PIBA, ETA-IL",
+      "url": "https://israel-entry.piba.gov.il/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  },
+  {
+    "slug": "nzeta",
+    "name": "New Zealand Electronic Travel Authority (NZeTA) and visitor levy (IVL)",
+    "shortName": "NZeTA",
+    "destination": "NZ",
+    "kind": "travel_authorisation",
+    "issuer": "Immigration New Zealand",
+    "applyUrl": "https://www.immigration.govt.nz/",
+    "fee": {
+      "text": "Unknown: immigration.govt.nz returns a bot challenge"
+    },
+    "notes": "needs_verification: NZeTA fee and IVL amount unread. GOV.UK only: valid up to 2 years, allow up to 72 hours.",
+    "legal_source": {
+      "name": "Immigration New Zealand",
+      "url": "https://www.immigration.govt.nz/"
+    },
+    "verified_at": null,
+    "verified_by": null,
+    "status": "needs_verification"
+  }
+]

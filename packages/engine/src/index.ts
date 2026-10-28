@@ -46,6 +46,7 @@ export type {
   StatusResult,
   TimelineResult,
   Trip,
+  TravelAuthorisationRecord,
   TripChargeRecord,
   TripExclusion,
 } from "./types";

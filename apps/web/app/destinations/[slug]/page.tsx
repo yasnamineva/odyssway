@@ -21,6 +21,7 @@ import { destinationPhoto, photoOgImage } from "../../../lib/photos";
 import { VERDICT_STYLES } from "../../../components/CustomsRowCard";
 import { changesForDestination } from "../../../lib/changelog";
 import { chargesForDestination } from "../../../lib/trip-charges";
+import { authorisationPath, authorisationsForDestination } from "../../../lib/travel-authorisations";
 import TripChargeList from "../../../components/TripChargeList";
 
 interface Params {
@@ -214,6 +215,21 @@ export default async function DestinationPage({ params }: { params: Promise<Para
                 </li>
               );
             })}
+          </ul>
+        </section>
+      )}
+
+      {authorisationsForDestination(dest.code).length > 0 && (
+        <section className="mt-10" data-testid="destination-authorisations">
+          <h2 className="text-lg font-semibold text-slate-900">{tCharges("guidesTitle")}</h2>
+          <ul className="mt-3 space-y-1 text-sm">
+            {authorisationsForDestination(dest.code).map((a) => (
+              <li key={a.slug}>
+                <a href={authorisationPath(a)} className="font-semibold text-brand-700 underline underline-offset-2">
+                  {tCharges("guideLink", { name: a.name })}
+                </a>
+              </li>
+            ))}
           </ul>
         </section>
       )}

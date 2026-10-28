@@ -1,0 +1,312 @@
+[
+  {
+    "slug": "esta",
+    "name": "ESTA (Electronic System for Travel Authorization)",
+    "shortName": "ESTA",
+    "destination": "US",
+    "kind": "travel_authorisation",
+    "issuer": "U.S. Customs and Border Protection",
+    "applyUrl": "https://esta.cbp.dhs.gov/",
+    "fee": {
+      "amount": 40.62,
+      "currency": "USD",
+      "text": "US$40.62 per application. If you are refused, you pay only the US$10.62 processing part."
+    },
+    "validity": "2 years from approval, or until your passport expires, whichever comes first, unless it is revoked.",
+    "applyAhead": "Any time before you travel. CBP recommends applying as soon as you start planning, or before you buy your ticket.",
+    "maxStay": "Visa Waiver Program visits of up to 90 days, for business or tourism.",
+    "officialOnly": "Some websites charge a fee to submit your application for you. CBP can't refund money you paid to them.",
+    "legal_source": {
+      "name": "U.S. Customs and Border Protection, Official ESTA Application Website (FAQ)",
+      "url": "https://esta.cbp.dhs.gov/"
+    },
+    "_sources": [
+      {
+        "claim": "Fee, validity, unofficial websites",
+        "name": "U.S. Customs and Border Protection, Official ESTA Application Website (FAQ)",
+        "url": "https://esta.cbp.dhs.gov/"
+      },
+      {
+        "claim": "When to apply",
+        "name": "U.S. Customs and Border Protection, ESTA",
+        "url": "https://www.cbp.gov/travel/international-visitors/esta"
+      },
+      {
+        "claim": "Length of stay",
+        "name": "U.S. Customs and Border Protection, Visa Waiver Program",
+        "url": "https://www.cbp.gov/travel/international-visitors/visa-waiver-program"
+      }
+    ],
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "uk-eta",
+    "name": "UK Electronic Travel Authorisation (ETA)",
+    "shortName": "UK ETA",
+    "destination": "GB",
+    "kind": "travel_authorisation",
+    "issuer": "UK Home Office",
+    "applyUrl": "https://www.gov.uk/eta/apply",
+    "fee": {
+      "amount": 20,
+      "currency": "GBP",
+      "text": "£20, online or in the UK ETA app. You can't get a refund after you apply."
+    },
+    "validity": "2 years, or until your passport expires, whichever is sooner. You can travel to the UK as many times as you want while it is valid.",
+    "processing": "Usually a decision by email within a day. It can take up to 3 working days.",
+    "applyAhead": "Don't travel until you get the email confirming you have an ETA.",
+    "maxStay": "Up to 6 months, for tourism, visiting family and friends, business or short-term study.",
+    "officialOnly": "Other websites may charge more, and you can't get a faster decision through them. Avoid websites that imitate government services.",
+    "legal_source": {
+      "name": "GOV.UK, Get an electronic travel authorisation (ETA)",
+      "url": "https://www.gov.uk/eta"
+    },
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "k-eta",
+    "name": "Korea Electronic Travel Authorization (K-ETA)",
+    "shortName": "K-ETA",
+    "destination": "KR",
+    "kind": "travel_authorisation",
+    "issuer": "Republic of Korea Ministry of Justice",
+    "applyUrl": "https://www.k-eta.go.kr/",
+    "fee": {
+      "amount": 10000,
+      "currency": "KRW",
+      "text": "KRW 10,000 per person (about US$7–8), plus an online payment fee of about 3%."
+    },
+    "validity": "3 years, or until your passport expires if that is sooner.",
+    "processing": "Usually 72 hours or less, but it can take longer. There is no expedited service.",
+    "applyAhead": "You need approval before you board the flight or ship.",
+    "maxStay": "K-ETA doesn't set your stay: the visa-free period for your nationality applies.",
+    "officialOnly": "Korea hasn't delegated K-ETA applications to any agency. Apply only at www.k-eta.go.kr or in the K-ETA app.",
+    "notes": "Temporary exemption: the passports that are currently exempt from K-ETA stay exempt until 31 December 2026 (Korean time). The K-ETA site doesn't publish that list as text; our South Korea entry page shows the rule for your passport.",
+    "legal_source": {
+      "name": "Korea Immigration Service, K-ETA official website",
+      "url": "https://www.k-eta.go.kr/portal/guide/viewetaapplication.do"
+    },
+    "_sources": [
+      {
+        "claim": "Fee",
+        "name": "K-ETA, fee information",
+        "url": "https://www.k-eta.go.kr/portal/guide/viewetafeeinformation.do"
+      },
+      {
+        "claim": "Validity, processing, when to apply, length of stay",
+        "name": "K-ETA, application guide",
+        "url": "https://www.k-eta.go.kr/portal/guide/viewetaapplication.do"
+      },
+      {
+        "claim": "Temporary exemption until 31 December 2026",
+        "name": "K-ETA, Notice on Extension of K-ETA Temporary Exemption (23 December 2025)",
+        "url": "https://www.k-eta.go.kr/portal/board/viewboarddetail.do?bbsSn=299707"
+      },
+      {
+        "claim": "Apply only on the official site",
+        "name": "K-ETA notice on unofficial agencies",
+        "url": "https://www.k-eta.go.kr/portal/board/viewboarddetail.do?bbsSn=114771&esntlPnotiMtYn=Y"
+      }
+    ],
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "australia-eta",
+    "name": "Australian Electronic Travel Authority (subclass 601)",
+    "shortName": "Australian ETA",
+    "destination": "AU",
+    "kind": "travel_authorisation",
+    "issuer": "Australian Government Department of Home Affairs",
+    "applyUrl": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601",
+    "fee": {
+      "amount": 20,
+      "currency": "AUD",
+      "text": "No visa application charge, but an AUD 20 service fee to use the Australian ETA app."
+    },
+    "validity": "12 months, or until your passport expires if that is sooner. If you get a new passport, you need a new ETA.",
+    "processing": "In most cases you get the result immediately.",
+    "applyAhead": "Home Affairs suggests not making travel arrangements until your ETA is granted.",
+    "maxStay": "Visit as often as you like in the 12 months, staying up to 3 months each time.",
+    "legal_source": {
+      "name": "Department of Home Affairs, Electronic Travel Authority (subclass 601)",
+      "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601"
+    },
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "australia-evisitor",
+    "name": "Australian eVisitor (subclass 651)",
+    "shortName": "eVisitor",
+    "destination": "AU",
+    "kind": "e_visa",
+    "issuer": "Australian Government Department of Home Affairs",
+    "applyUrl": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/evisitor-651",
+    "fee": {
+      "amount": 0,
+      "currency": "AUD",
+      "text": "Free."
+    },
+    "validity": "12 months from the date it is granted.",
+    "applyAhead": "Don't arrange your trip until Home Affairs tells you in writing that the visa is granted.",
+    "maxStay": "Visit as often as you like in the 12 months, staying up to 3 months each time.",
+    "legal_source": {
+      "name": "Department of Home Affairs, eVisitor (subclass 651)",
+      "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/evisitor-651"
+    },
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "kenya-eta",
+    "name": "Kenya Electronic Travel Authorisation (eTA)",
+    "shortName": "Kenya eTA",
+    "destination": "KE",
+    "kind": "travel_authorisation",
+    "issuer": "Republic of Kenya, Directorate of Immigration Services",
+    "applyUrl": "https://www.etakenya.go.ke/",
+    "fee": {
+      "amount": 30,
+      "currency": "USD",
+      "text": "From US$30 with normal processing (up to 72 hours). Expedited, immediate processing costs an extra US$100."
+    },
+    "processing": "Generally within 3 business days (72 hours), longer if verification takes time. Expedited applications are processed immediately.",
+    "applyAhead": "Apply at least 2 weeks before you travel.",
+    "officialOnly": "Apply only on the official website or the official \"Kenya Travel Authorisation\" app, with one application for each traveller.",
+    "notes": "If you need an eTA, the application also asks you to buy Kenya's compulsory government travel health insurance.",
+    "legal_source": {
+      "name": "Republic of Kenya, eTA official website (FAQs)",
+      "url": "https://www.etakenya.go.ke/faqs"
+    },
+    "_sources": [
+      {
+        "claim": "Fee, processing, official channels",
+        "name": "Kenya eTA, FAQs",
+        "url": "https://www.etakenya.go.ke/faqs"
+      },
+      {
+        "claim": "When to apply",
+        "name": "Kenya eTA, general information",
+        "url": "https://www.etakenya.go.ke/general-information"
+      },
+      {
+        "claim": "Insurance bought with the eTA",
+        "name": "Government of Kenya, eCitizen Inbound Travel Health Insurance",
+        "url": "https://insurance.ecitizen.go.ke/dashboard/travel"
+      }
+    ],
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "india-e-tourist-visa",
+    "name": "India e-Tourist Visa",
+    "shortName": "India e-Visa",
+    "destination": "IN",
+    "kind": "e_visa",
+    "issuer": "Government of India, Ministry of Home Affairs",
+    "applyUrl": "https://indianvisaonline.gov.in/evisa/tvoa.html",
+    "fee": {
+      "text": "Depends on your nationality: see the official fee table. Banks add a 3% transaction charge, and the fee isn't refunded."
+    },
+    "validity": "Three kinds: 30 days (multiple entry, can't be extended or converted), 1 year or 5 years from the date it is granted.",
+    "applyAhead": "Apply at least 4 days before your arrival date, and pay the fee at least 4 days before you travel.",
+    "maxStay": "With the 1-year and 5-year visas, no more than 180 days in India in a calendar year.",
+    "officialOnly": "The Government of India charges no emergency or express fee for an e-Visa.",
+    "legal_source": {
+      "name": "Government of India, e-Visa information",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "sri-lanka-eta",
+    "name": "Sri Lanka Electronic Travel Authorization (ETA)",
+    "shortName": "Sri Lanka ETA",
+    "destination": "LK",
+    "kind": "travel_authorisation",
+    "issuer": "Department of Immigration and Emigration, Sri Lanka",
+    "applyUrl": "https://www.eta.gov.lk/slvisa/",
+    "fee": {
+      "text": "Free since 25 May 2026 for tourists from 40 listed countries, for 30 days. Other nationalities pay the amounts on the official fee page."
+    },
+    "validity": "An ETA is valid for six months. You can't get a new one on the same passport until it expires.",
+    "applyAhead": "Every foreign national needs one before arriving in Sri Lanka, including the 40 free-of-charge nationalities.",
+    "maxStay": "30 days, with a second entry allowed within those 30 days (90 days for Maldivian nationals).",
+    "legal_source": {
+      "name": "Department of Immigration and Emigration, Sri Lanka ETA",
+      "url": "https://www.eta.gov.lk/slvisa/"
+    },
+    "_sources": [
+      {
+        "claim": "Free ETA for 40 countries, when to apply, length of stay",
+        "name": "Sri Lanka ETA, Alert 01 (from 25 May 2026)",
+        "url": "https://www.eta.gov.lk/slvisa/"
+      },
+      {
+        "claim": "Validity",
+        "name": "Sri Lanka ETA, FAQ",
+        "url": "https://www.eta.gov.lk/slvisa/visainfo/faq.jsp?locale=en_US"
+      },
+      {
+        "claim": "Fees for other nationalities",
+        "name": "Sri Lanka ETA, fees",
+        "url": "https://www.eta.gov.lk/slvisa/visainfo/fees.jsp?locale=en_US"
+      }
+    ],
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "egypt-e-visa",
+    "name": "Egypt e-Visa",
+    "shortName": "Egypt e-Visa",
+    "destination": "EG",
+    "kind": "e_visa",
+    "issuer": "Ministry of Interior, Arab Republic of Egypt",
+    "applyUrl": "https://visa2egypt.gov.eg/eVisa/Home",
+    "fee": {
+      "amount": 30,
+      "currency": "USD",
+      "text": "US$30 single entry or US$65 multiple entry (tourism). The fee isn't refunded."
+    },
+    "processing": "No time is given: you get an email once it is processed.",
+    "applyAhead": "Create your application at least 7 days before you leave.",
+    "legal_source": {
+      "name": "Arab Republic of Egypt, e-Visa portal",
+      "url": "https://visa2egypt.gov.eg/eVisa/Home"
+    },
+    "_sources": [
+      {
+        "claim": "Fees",
+        "name": "Egypt e-Visa, FAQ",
+        "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+      },
+      {
+        "claim": "No refund",
+        "name": "Egypt e-Visa, disclaimer",
+        "url": "https://visa2egypt.gov.eg/eVisa/Disclaimer"
+      },
+      {
+        "claim": "Processing, when to apply",
+        "name": "Egypt e-Visa, home",
+        "url": "https://visa2egypt.gov.eg/eVisa/Home"
+      }
+    ],
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  }
+]

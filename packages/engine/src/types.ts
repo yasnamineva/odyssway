@@ -243,3 +243,26 @@ export interface TripChargeRecord {
   verified_by: string | null;
   status: "verified" | "needs_verification";
 }
+
+/** data/travel-authorisations.json: an ETA or e-visa, as its issuing government describes it. */
+export interface TravelAuthorisationRecord {
+  slug: string;
+  name: string;
+  shortName: string;
+  destination: CountryCode;
+  kind: "travel_authorisation" | "e_visa";
+  issuer: string;
+  applyUrl: string;
+  fee: { amount?: number; currency?: string; text: string };
+  validity?: string;
+  processing?: string;
+  applyAhead?: string;
+  maxStay?: string;
+  officialOnly?: string;
+  notes?: string;
+  _sources?: Array<{ claim: string; name: string; url: string }>;
+  legal_source: { name: string; url: string };
+  verified_at: string | null;
+  verified_by: string | null;
+  status: "verified" | "needs_verification";
+}

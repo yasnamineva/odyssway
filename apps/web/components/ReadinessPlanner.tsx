@@ -16,6 +16,7 @@ import {
   type ReadinessTraveller,
 } from "../lib/readiness";
 import { chargesForDestination } from "../lib/trip-charges";
+import { authorisationPath, authorisationsForDestination } from "../lib/travel-authorisations";
 import { StopStatus } from "./RoutePassportCheck";
 import TripChargeList from "./TripChargeList";
 import SearchableSelect from "./SearchableSelect";
@@ -416,6 +417,18 @@ export default function ReadinessPlanner({ changeDates }: { changeDates: Record<
                         </p>
                         {a.kind === "passport" && <p className="text-xs text-red-800">{t("passportFix")}</p>}
                         {a.line && <p className="mt-0.5 text-xs text-slate-500">“{a.line}”</p>}
+                        {a.kind === "authorisation" && authorisationsForDestination(a.destination).length > 0 && (
+                          <p className="mt-0.5 text-xs" data-testid="rd-guide">
+                            {authorisationsForDestination(a.destination).map((g, gi) => (
+                              <span key={g.slug}>
+                                {gi > 0 && " · "}
+                                <a href={authorisationPath(g)} className="font-semibold text-brand-700 underline underline-offset-2">
+                                  {t("guideLink", { name: g.shortName })}
+                                </a>
+                              </span>
+                            ))}
+                          </p>
+                        )}
                       </li>
                     );
                   })}

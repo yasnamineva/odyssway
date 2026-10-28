@@ -26,6 +26,7 @@ test("keeps official deadlines apart from suggested dates, for each traveller", 
   await expect(page.getByText(/Opens 2030-03-07/).first()).toBeVisible();
   await expect(page.getByTestId("rd-stop")).toHaveCount(2);
   await expect(page.getByTestId("rd-calendar")).toBeVisible();
+  await expect(page.getByTestId("rd-guide").first().getByRole("link")).toHaveAttribute("href", "/authorisations/india-e-tourist-visa");
 });
 
 test("a saved plan remembers when it was checked", async ({ page }) => {

@@ -26,6 +26,7 @@ export function GET(): Response {
     `- [Trip Check](${SITE_URL}/trip-check): nationality + destination + items (+ optional stopover) → entry, stay, documents, customs verdict per item, transit rule.`,
     `- [Schengen 90/180 calculator](${SITE_URL}/calculator): rolling-window day count.`,
     `- [Trip readiness planner](${SITE_URL}/readiness): travellers (mixed passports) + route + dates → visas, travel authorisations, arrival-card windows, passport checks, with official deadlines kept apart from suggested dates; .ics export.`,
+    `- [Travel authorisations](${SITE_URL}/authorisations): ESTA, UK ETA, K-ETA, Australia ETA/eVisitor, Kenya eTA, India e-Visa, Sri Lanka ETA, Egypt e-Visa: official website, fee, validity, when to apply, cited to the issuing government.`,
     `- [Medication planner](${SITE_URL}/medication-planner): medicines + route + dates → each country's verified medication rule, permits and the date to apply by, doctor's-letter checklist.`,
     `- [Which passport?](${SITE_URL}/which-passport): two passports + one destination → both verified entry rules side by side, for dual citizens.`,
     `- [Day counter](${SITE_URL}/day-counter): several trips → each country's own stay limit (Schengen pooled 90/180, per-visit limits, rolling windows).`,

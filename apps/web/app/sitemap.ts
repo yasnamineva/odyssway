@@ -8,6 +8,7 @@ import { etias } from "../lib/etias";
 import { publishedEesRecords } from "../lib/ees";
 import { latestVerified, medicationProducts, pairsForProduct, productPairs } from "../lib/medication-products";
 import { etiasNationalities } from "../lib/nationalities";
+import { travelAuthorisations } from "../lib/travel-authorisations";
 import { travelPairPath, travelPairs } from "../lib/travel-pairs";
 import { publishedOverstayPenalties } from "../lib/overstay-penalties";
 import { SITE_URL as BASE } from "../lib/site";
@@ -35,6 +36,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/calculator`, lastModified: countriesVerifiedAt, priority: 0.9 },
     { url: `${BASE}/day-counter`, lastModified: countriesVerifiedAt, priority: 0.8 },
     { url: `${BASE}/readiness`, lastModified: countriesVerifiedAt, priority: 0.8 },
+    { url: `${BASE}/authorisations`, lastModified: countriesVerifiedAt, priority: 0.7 },
+    ...travelAuthorisations.map((a) => ({
+      url: `${BASE}/authorisations/${a.slug}`,
+      lastModified: a.verified_at ?? undefined,
+      priority: 0.7,
+    })),
     { url: `${BASE}/medication-planner`, lastModified: countriesVerifiedAt, priority: 0.8 },
     { url: `${BASE}/which-passport`, lastModified: countriesVerifiedAt, priority: 0.7 },
     { url: `${BASE}/rules/90-180-rule`, lastModified: CONTENT_CHECKED, priority: 0.8 },

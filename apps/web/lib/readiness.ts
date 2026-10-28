@@ -35,6 +35,7 @@ export type ActionStatus = "passed" | "now" | "soon" | "ok";
 export interface ReadinessAction {
   id: string;
   traveller: string;
+  destination: string;
   destinationName: string;
   kind: ActionKind;
   basis: EntryBasis;
@@ -133,8 +134,19 @@ export function planReadiness(input: ReadinessInput, today: string, resolve: Res
         },
         tr.passportExpiry,
       );
-      const add = (a: Omit<ReadinessAction, "id" | "traveller" | "destinationName" | "basis" | "arrival" | "status">, n: number) => {
-        const base = { ...a, id: `odyssway-${ti}-${si}-${a.kind}-${n}`, traveller: who, destinationName: r.destinationName, basis: r.basis, arrival: stop.arrival };
+      const add = (
+        a: Omit<ReadinessAction, "id" | "traveller" | "destination" | "destinationName" | "basis" | "arrival" | "status">,
+        n: number,
+      ) => {
+        const base = {
+          ...a,
+          id: `odyssway-${ti}-${si}-${a.kind}-${n}`,
+          traveller: who,
+          destination: stop.destination,
+          destinationName: r.destinationName,
+          basis: r.basis,
+          arrival: stop.arrival,
+        };
         actions.push({ ...base, status: actionStatus(base, today) });
       };
 
