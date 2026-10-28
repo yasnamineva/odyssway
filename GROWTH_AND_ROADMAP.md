@@ -353,7 +353,7 @@ more than a Japanese page about the US). Translate the highest-traffic page type
 
 ## 7. Open decisions for the owner
 
-- Keyword-matching H1s on destination hubs (§5.2).
+- ✔ Keyword-matching H1s on destination hubs: done 2026-10-28 ("{Country} entry requirements and customs rules"); compare hub positions in the November export.
 - Turning on cookie-free Plausible (needs a privacy-policy update first). Owner, 2026-10-28: not now (cost).
 - Brand profiles and `sameAs` (§5.3).
 - Accounts and email alerts (Horizon 2).

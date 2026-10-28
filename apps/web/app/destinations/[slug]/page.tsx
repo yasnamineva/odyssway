@@ -42,7 +42,7 @@ export async function generateMetadata({
   if (!dest) return {};
   const t = await getTranslations("destinationPage");
   const title = t("metaTitle", { destination: dest.name });
-  const description = t("metaDescription", { destination: dest.name });
+  const description = t("metaDescription", { destination: dest.name, destinationArticle: withArticle(dest.name) });
   const photo = destinationPhoto(dest.code);
   return {
     title,
