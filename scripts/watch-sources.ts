@@ -6,13 +6,22 @@
  * Run weekly via GitHub Action (.github/workflows/watch-sources.yml) or
  * manually: pnpm watch:sources
  *
- * Besides the hand-curated SOURCES below, every distinct `legal_source.url` in
- * the production data files is watched automatically (deriveDataSources), so a
- * newly verified row is covered without touching this file. `--list` prints
- * what would be watched without fetching anything.
+ * Besides the hand-curated SOURCES below, every cited source URL in the
+ * production data files (`legal_source`, `_sources` claims, transit and letter
+ * sources) is watched automatically (deriveDataSources), so a newly verified row
+ * is covered without touching this file. `--list` prints what would be watched
+ * without fetching anything; `--only <text>` checks just the sources whose URL
+ * contains <text>.
+ *
+ * GOV.UK pages are read through its content API and only the cited section is
+ * hashed (a travel-advice "entry-requirements" link watches that section alone).
+ * The readable text of each source is kept as a snapshot outside the repo
+ * (.cache/source-snapshots locally, a workflow artifact in CI: these are copies
+ * of other governments' pages), so a confirmed change is reported with the
+ * sentences that were added and removed rather than as a bare "changed".
  */
 import { createHash } from "node:crypto";
-import { mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 interface WatchedSource {
@@ -222,22 +231,25 @@ const ROOT = join(import.meta.dirname, "..");
 const DATA_DIR = join(ROOT, "data");
 const HASHES_FILE = join(DATA_DIR, "source-hashes.json");
 const REPORT_DIR = join(DATA_DIR, "UNVERIFIED");
+const SNAPSHOT_DIR = process.env.SOURCE_SNAPSHOT_DIR ?? join(ROOT, ".cache", "source-snapshots");
 const NON_RULE_FILES = new Set(["source-hashes.json", "changelog.json"]);
 
-/** Recursively collect every object carrying a `legal_source.url`. */
-function collectLegalSources(node: unknown, file: string, out: Map<string, string[]>): void {
+/**
+ * Recursively collect every cited source: any `{ name, url }` object (legal_source,
+ * `_sources` claims, transit and letter sources), labelled with the row it sits in.
+ */
+function collectSources(node: unknown, file: string, out: Map<string, string[]>, row = "row"): void {
   if (Array.isArray(node)) {
-    for (const item of node) collectLegalSources(item, file, out);
+    for (const item of node) collectSources(item, file, out, row);
   } else if (node !== null && typeof node === "object") {
     const rec = node as Record<string, unknown>;
-    const src = rec.legal_source as { url?: unknown } | undefined;
-    if (src && typeof src.url === "string") {
-      const label = String(rec.slug ?? rec.country ?? rec.nationality ?? rec.code ?? "row");
-      const list = out.get(src.url) ?? [];
-      list.push(`${file}:${label}`);
-      out.set(src.url, list);
+    const label = String(rec.slug ?? rec.id ?? rec.country ?? (rec.nationality && rec.destination ? `${rec.nationality}>${rec.destination}` : undefined) ?? rec.code ?? row);
+    if (typeof rec.url === "string" && typeof rec.name === "string") {
+      const list = out.get(rec.url) ?? [];
+      if (!list.includes(`${file}:${row}`)) list.push(`${file}:${row}`);
+      out.set(rec.url, list);
     }
-    for (const value of Object.values(rec)) collectLegalSources(value, file, out);
+    for (const value of Object.values(rec)) collectSources(value, file, out, label);
   }
 }
 
@@ -246,12 +258,14 @@ function deriveDataSources(): WatchedSource[] {
   const curated = new Set(SOURCES.map((s) => s.url));
   const byUrl = new Map<string, string[]>();
   for (const f of readdirSync(DATA_DIR).filter((f) => f.endsWith(".json") && !NON_RULE_FILES.has(f))) {
-    collectLegalSources(JSON.parse(readFileSync(join(DATA_DIR, f), "utf8")), f, byUrl);
+    collectSources(JSON.parse(readFileSync(join(DATA_DIR, f), "utf8")), f, byUrl);
   }
   return [...byUrl.entries()]
     .filter(([url]) => !curated.has(url))
     .map(([url, uses]) => ({
-      id: `data-${createHash("sha1").update(url).digest("hex").slice(0, 10)}`,
+      // Section-hashed GOV.UK sources get their own id, so switching them from
+      // whole-page to section hashing starts a fresh baseline instead of a false alarm.
+      id: `data-${createHash("sha1").update(url).digest("hex").slice(0, 10)}${govukTarget(url) ? "-s" : ""}`,
       url,
       usedBy: `${uses.slice(0, 3).join(", ")}${uses.length > 3 ? ` (+${uses.length - 3} more)` : ""}`,
     }));
@@ -283,8 +297,30 @@ function loadStore(): HashStore {
  */
 const MIN_TEXT_CHARS = 300;
 
-function contentHash(contentType: string, body: Buffer): string {
-  let bytes: Buffer = body;
+function htmlToText(html: string): string {
+  return html
+    .replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<!--[\s\S]*?-->/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&rsquo;|&#8217;/g, "'")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+interface Readable {
+  hash: string;
+  /** The readable text, when the source is a page (kept as the snapshot for diffs). */
+  text?: string;
+}
+
+function readable(contentType: string, body: Buffer, select?: (json: unknown) => string): Readable {
+  if (select) {
+    const text = htmlToText(select(JSON.parse(body.toString("utf8"))));
+    if (text.length < MIN_TEXT_CHARS) throw new Error(`cited section not found or empty (${text.length} chars)`);
+    return { hash: createHash("sha256").update(text).digest("hex"), text };
+  }
   if (/html|xml/i.test(contentType)) {
     const text = body
       .toString("utf8")
@@ -298,9 +334,48 @@ function contentHash(contentType: string, body: Buffer): string {
     if (text.length < MIN_TEXT_CHARS) {
       throw new Error(`no readable content (${text.length} chars: JS-rendered page or bot challenge)`);
     }
-    bytes = Buffer.from(text, "utf8");
+    return { hash: createHash("sha256").update(text).digest("hex"), text };
   }
-  return createHash("sha256").update(bytes).digest("hex");
+  return { hash: createHash("sha256").update(body).digest("hex") };
+}
+
+/**
+ * A GOV.UK travel-advice link, read through the content API: the cited part
+ * (e.g. "entry-requirements") or, for the country's main page, every part.
+ */
+function govukTarget(url: string): { api: string; select: (json: unknown) => string } | undefined {
+  const m = /^https:\/\/www\.gov\.uk\/foreign-travel-advice\/([a-z0-9-]+)(?:\/([a-z0-9-]+))?\/?(?:[?#].*)?$/.exec(url);
+  if (!m) return undefined;
+  const [, country, part] = m;
+  return {
+    api: `https://www.gov.uk/api/content/foreign-travel-advice/${country}`,
+    select: (json) => {
+      const parts = ((json as { details?: { parts?: Array<{ slug: string; body: string }> } }).details?.parts ?? []);
+      const chosen = part ? parts.filter((p) => p.slug === part) : parts;
+      return chosen.map((p) => p.body).join(" ");
+    },
+  };
+}
+
+/** Sentences in `after` but not `before` and vice versa, for the review report. */
+function sentenceDiff(before: string, after: string, max = 8): string[] {
+  const split = (t: string) => new Set(t.split(/(?<=[.!?])\s+/).map((x) => x.trim()).filter((x) => x.length > 20));
+  const a = split(before);
+  const b = split(after);
+  const removed = [...a].filter((x) => !b.has(x));
+  const added = [...b].filter((x) => !a.has(x));
+  const clip = (x: string) => (x.length > 280 ? `${x.slice(0, 277)}…` : x);
+  const lines = [
+    ...removed.slice(0, max).map((x) => `  - Removed: “${clip(x)}”`),
+    ...(removed.length > max ? [`  - …and ${removed.length - max} more removed`] : []),
+    ...added.slice(0, max).map((x) => `  - Added: “${clip(x)}”`),
+    ...(added.length > max ? [`  - …and ${added.length - max} more added`] : []),
+  ];
+  return lines.length > 0 ? lines : ["  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)"];
+}
+
+function snapshotPath(id: string): string {
+  return join(SNAPSHOT_DIR, `${id}.txt`);
 }
 
 /**
@@ -308,7 +383,9 @@ function contentHash(contentType: string, body: Buffer): string {
  * same documents through CELLAR (data/UNVERIFIED/TODO.md, "EUR-Lex access"). A
  * EUR-Lex link with a CELEX number is fetched from there instead (2026-10-27).
  */
-function fetchTarget(url: string): { url: string; headers: Record<string, string> } {
+function fetchTarget(url: string): { url: string; headers: Record<string, string>; select?: (json: unknown) => string } {
+  const govuk = govukTarget(url);
+  if (govuk) return { url: govuk.api, headers: { accept: "application/json" }, select: govuk.select };
   const celex = /eur-lex\.europa\.eu\/legal-content\/[A-Z]{2}\/(?:TXT|ALL)\/\?uri=CELEX(?:%3A|:)([0-9A-Z()-]+)/i.exec(url)?.[1];
   if (celex) {
     return {
@@ -319,15 +396,15 @@ function fetchTarget(url: string): { url: string; headers: Record<string, string
   return { url, headers: {} };
 }
 
-async function fetchHash(original: string): Promise<string> {
-  const { url, headers } = fetchTarget(original);
+async function fetchReadable(original: string): Promise<Readable> {
+  const { url, headers, select } = fetchTarget(original);
   const res = await fetch(url, {
     headers: { "user-agent": "odyssway-source-watch/0.2 (change detection for compliance data)", ...headers },
     redirect: "follow",
     signal: AbortSignal.timeout(30_000),
   });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  return contentHash(res.headers.get("content-type") ?? "", Buffer.from(await res.arrayBuffer()));
+  return readable(res.headers.get("content-type") ?? "", Buffer.from(await res.arrayBuffer()), select);
 }
 
 async function pool<T>(items: T[], size: number, fn: (item: T) => Promise<void>): Promise<void> {
@@ -339,7 +416,10 @@ async function pool<T>(items: T[], size: number, fn: (item: T) => Promise<void>)
   );
 }
 
-const allSources = [...SOURCES, ...deriveDataSources()];
+const everySource = [...SOURCES, ...deriveDataSources()];
+const onlyIndex = process.argv.indexOf("--only");
+const only = onlyIndex >= 0 ? process.argv[onlyIndex + 1] : undefined;
+const allSources = only ? everySource.filter((s) => s.url.includes(only)) : everySource;
 
 // Wrapped in main(): tsx compiles this file as CJS, where top-level await is a syntax
 // error — the original script failed to start at all, so the weekly CI job never ran.
@@ -352,18 +432,27 @@ async function main(): Promise<void> {
 
   const today = new Date().toISOString().slice(0, 10);
   const previous = loadStore();
-  const hashes: Record<string, string> = { ...previous.hashes };
+  // A full run keeps only sources still cited; an --only run leaves the rest alone.
+  const current = new Set(everySource.map((s) => s.id));
+  const hashes: Record<string, string> = Object.fromEntries(
+    Object.entries(previous.hashes).filter(([id]) => only !== undefined || current.has(id)),
+  );
+  mkdirSync(SNAPSHOT_DIR, { recursive: true });
   const wasUnreachable = new Set(previous.unreachable);
   const unreachable = new Set<string>();
   const changes: string[] = [];
   const newFailures: string[] = [];
+  let changedCount = 0;
   let firstSnapshots = 0;
   let volatile = 0;
 
   await pool(allSources, 8, async (source) => {
     try {
-      const hash = await fetchHash(source.url);
+      const { hash, text } = await fetchReadable(source.url);
       const old = previous.hashes[source.id];
+      const snap = snapshotPath(source.id);
+      const before = existsSync(snap) ? readFileSync(snap, "utf8") : undefined;
+      if (text !== undefined && (old === undefined || old === hash || before === undefined)) writeFileSync(snap, text);
       if (old === undefined) {
         firstSnapshots++;
         hashes[source.id] = hash;
@@ -372,9 +461,12 @@ async function main(): Promise<void> {
         // refetch is real. A page that differs from itself is volatile (rotating
         // banners, per-request tokens) and can't be monitored by whole-page hash.
         await new Promise((resolve) => setTimeout(resolve, 1500));
-        const again = await fetchHash(source.url);
-        if (again === hash) {
+        const again = await fetchReadable(source.url);
+        if (again.hash === hash) {
+          changedCount++;
           changes.push(`- **${source.id}** — CONTENT CHANGED. Review ${source.url} and re-verify: ${source.usedBy}.`);
+          if (before !== undefined && text !== undefined) changes.push(...sentenceDiff(before, text));
+          if (text !== undefined) writeFileSync(snap, text);
           hashes[source.id] = hash;
         } else {
           volatile++;
@@ -390,11 +482,12 @@ async function main(): Promise<void> {
     }
   });
 
-  const store: HashStore = { hashes, unreachable: [...unreachable].sort() };
+  const keptUnreachable = only !== undefined ? previous.unreachable.filter((id) => !allSources.some((s) => s.id === id)) : [];
+  const store: HashStore = { hashes, unreachable: [...new Set([...keptUnreachable, ...unreachable])].sort() };
   writeFileSync(HASHES_FILE, `${JSON.stringify(store, null, 2)}\n`);
 
   const stillBlocked = [...unreachable].filter((id) => wasUnreachable.has(id)).length;
-  const summary = `Watched ${allSources.length} sources: ${changes.length} changed, ${firstSnapshots} first snapshots, ${volatile} volatile (differ between fetches, not flagged), ${newFailures.length} newly unmonitorable, ${stillBlocked} still unmonitorable (unreachable, JS-rendered or bot-challenged).`;
+  const summary = `Watched ${allSources.length} sources: ${changedCount} changed, ${firstSnapshots} first snapshots, ${volatile} volatile (differ between fetches, not flagged), ${newFailures.length} newly unmonitorable, ${stillBlocked} still unmonitorable (unreachable, JS-rendered or bot-challenged).`;
 
   if (changes.length > 0 || newFailures.length > 0) {
     mkdirSync(REPORT_DIR, { recursive: true });

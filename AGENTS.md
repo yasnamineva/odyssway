@@ -606,6 +606,16 @@ subscription before real checkout/price experiments say otherwise.
   challenge (under 300 characters of text) — are counted in the report summary
   rather than listed weekly; those ~55 need a manual or targeted-extraction check.
   `pnpm watch:sources -- --list` prints what would be watched.
+- **Cross-check sources and section diffs (2026-10-28).** The watcher also derives
+  every `_sources` claim and transit/letter source (not only `legal_source`), about
+  1,030 pages in all, so the foreign-ministry travel advice we cross-check against is
+  watched too. GOV.UK travel-advice links are read through the content API and only
+  the cited part (e.g. `entry-requirements`) is hashed. Each page's text is kept as a
+  snapshot outside the repo (`.cache/source-snapshots` locally, a 90-day workflow
+  artifact in CI — copies of other governments' pages don't belong in a public repo),
+  and a confirmed change is reported with the sentences added and removed, so review
+  starts from the diff instead of re-reading the page. `-- --only <text>` checks a
+  subset.
 - **The script used to fail at startup** (top-level `await` under tsx's CJS
   output), so the weekly job had never run and no baseline `source-hashes.json`
   existed. Fixed the same day; the first CI run will open a PR that commits the

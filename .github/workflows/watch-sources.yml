@@ -8,6 +8,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  actions: read # download the previous run's snapshots
 
 jobs:
   watch:
@@ -22,7 +23,24 @@ jobs:
           node-version: 24
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      # Last week's page text, so a change is reported with the sentences that changed.
+      # Kept as an artifact, not in the repo: these are copies of other governments' pages.
+      - name: Restore previous snapshots
+        uses: dawidd6/action-download-artifact@v6
+        with:
+          workflow: watch-sources.yml
+          name: source-snapshots
+          path: source-snapshots
+          if_no_artifact_found: warn
       - run: pnpm watch:sources
+        env:
+          SOURCE_SNAPSHOT_DIR: ${{ github.workspace }}/source-snapshots
+      - name: Keep snapshots for next week
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-snapshots
+          path: source-snapshots
+          retention-days: 90
       - name: Open PR when sources changed
         uses: peter-evans/create-pull-request@v7
         with:

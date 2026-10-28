@@ -24,3 +24,6 @@ test-results/
 # Search Console exports: private, local only (seo/gsc/README.md)
 seo/gsc/*
 !seo/gsc/README.md
+
+# source-watch snapshots: copies of official pages, kept out of the public repo
+.cache/
