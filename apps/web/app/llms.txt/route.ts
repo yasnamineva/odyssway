@@ -25,6 +25,7 @@ export function GET(): Response {
     "## Tools",
     `- [Trip Check](${SITE_URL}/trip-check): nationality + destination + items (+ optional stopover) → entry, stay, documents, customs verdict per item, transit rule.`,
     `- [Schengen 90/180 calculator](${SITE_URL}/calculator): rolling-window day count.`,
+    `- [Trip readiness planner](${SITE_URL}/readiness): travellers (mixed passports) + route + dates → visas, travel authorisations, arrival-card windows, passport checks, with official deadlines kept apart from suggested dates; .ics export.`,
     `- [Medication planner](${SITE_URL}/medication-planner): medicines + route + dates → each country's verified medication rule, permits and the date to apply by, doctor's-letter checklist.`,
     `- [Which passport?](${SITE_URL}/which-passport): two passports + one destination → both verified entry rules side by side, for dual citizens.`,
     `- [Day counter](${SITE_URL}/day-counter): several trips → each country's own stay limit (Schengen pooled 90/180, per-visit limits, rolling windows).`,

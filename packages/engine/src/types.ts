@@ -146,6 +146,8 @@ export interface EntryRequirementRecord {
   documentsNeeded: string[];
   /** Structured form of the passport-validity line in documentsNeeded, when it names its reference date. */
   passportValidity?: import("./passport-validity").PassportValidityRule;
+  /** Structured forms of documentsNeeded lines tied to the arrival date (arrival cards, registration). */
+  timedSteps?: import("./timed-step").TimedStep[];
   notes?: string;
   legal_source: { name: string; url: string };
   verified_at: string | null;

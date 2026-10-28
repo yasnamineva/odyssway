@@ -171,6 +171,40 @@ function checkPassportValidityMatchesText(): void {
 }
 
 /**
+ * `timedSteps` restate documentsNeeded lines tied to the arrival date. Fail if a
+ * step's line isn't in the row, or doesn't state that amount and direction.
+ */
+const TIMED_STEP_PATTERNS: Record<string, (n: string, u: string) => RegExp> = {
+  opens_before_arrival: (n, u) =>
+    new RegExp(`\\b(within|up to|from|not earlier than)\\b[^.;]*?\\b${n} ${u}\\b before (your flight arrives|you arrive|(the )?arrival)`, "i"),
+  due_before_arrival: (n, u) => new RegExp(`\\bat least ${n} ${u} before (your flight arrives|you arrive|(the )?arrival)`, "i"),
+  // Registration only ("within 7 days of arrival" can also mean before), and not
+  // when the line counts the arrival day itself, which shifts the date by one.
+  due_after_arrival: (n, u) => new RegExp(`^(?=.*\\bregist)(?!.*\\bcounted\\b).*\\bwithin ${n} ${u} of arrival\\b`, "i"),
+};
+function checkTimedStepsMatchText(): void {
+  const file = join(DATA_DIR, "entry-requirements.json");
+  const rows = JSON.parse(readFileSync(file, "utf8")) as Array<{
+    nationality: string;
+    destination: string;
+    documentsNeeded: string[];
+    timedSteps?: Array<{ line: string; window: { kind: string; amount: number; unit: string } }>;
+  }>;
+  for (const r of rows) {
+    for (const step of r.timedSteps ?? []) {
+      const where = `${rel(file)}: ${r.nationality}→${r.destination} timedSteps`;
+      if (!r.documentsNeeded.includes(step.line)) {
+        errors.push(`${where}: line isn't in documentsNeeded: "${step.line}"`);
+        continue;
+      }
+      const unit = step.window.unit === "hours" ? "hours?" : "days?";
+      const pattern = TIMED_STEP_PATTERNS[step.window.kind]?.(String(step.window.amount), unit);
+      if (!pattern?.test(step.line)) errors.push(`${where} (${step.window.kind}) doesn't match its line: "${step.line}"`);
+    }
+  }
+}
+
+/**
  * A procedure's `leadTimeRule` restates its own `leadTime` wording. Fail if the
  * wording doesn't name the same amount, unit and reference date.
  */
@@ -263,6 +297,7 @@ for (const f of unverifiedFiles) validateFile(f, false);
 checkNoUnverifiedReferences();
 checkPassportValidityMatchesText();
 checkLeadTimeMatchesText();
+checkTimedStepsMatchText();
 warnPassedAnnouncements();
 warnUnsupportedNames();
 

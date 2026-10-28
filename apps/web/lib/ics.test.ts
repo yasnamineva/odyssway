@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { buildIcs } from "./ics";
+import { buildIcs, buildIcsCalendar } from "./ics";
 
 describe("buildIcs", () => {
   it("produces a valid single-event all-day VCALENDAR", () => {
@@ -39,5 +39,17 @@ describe("buildIcs", () => {
     });
     expect(ics).toContain("DTSTART;VALUE=DATE:20260131");
     expect(ics).toContain("DTEND;VALUE=DATE:20260201");
+  });
+});
+
+describe("buildIcsCalendar", () => {
+  it("puts every event in one calendar", () => {
+    const ics = buildIcsCalendar([
+      { id: "a", title: "One", description: "x", date: "2026-11-01" },
+      { id: "b", title: "Two", description: "y", date: "2026-12-31" },
+    ]);
+    expect(ics.match(/BEGIN:VCALENDAR/g)).toHaveLength(1);
+    expect(ics.match(/BEGIN:VEVENT/g)).toHaveLength(2);
+    expect(ics).toContain("DTSTART;VALUE=DATE:20261231\r\nDTEND;VALUE=DATE:20270101");
   });
 });

@@ -100,7 +100,7 @@ export default function RoutePassportCheck({ legs }: { legs: TripCheckResult[] }
   );
 }
 
-function StopStatus({ status: s }: { status: StopPassportStatus }) {
+export function StopStatus({ status: s }: { status: StopPassportStatus }) {
   const t = useTranslations("tripCheck.routePassport");
   const tp = useTranslations("tripCheck.passport");
   const remaining = (a: { months: number; days: number }, d: { months: number; days: number }) =>

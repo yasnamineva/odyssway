@@ -136,6 +136,9 @@ export default async function RootLayout({
                     <a href="/day-counter" className="text-white/60 transition hover:text-white">
                       {t("footer.dayCounter")}
                     </a>
+                    <a href="/readiness" className="text-white/60 transition hover:text-white">
+                      {t("footer.readiness")}
+                    </a>
                     <a href="/medication-planner" className="text-white/60 transition hover:text-white">
                       {t("footer.medicationPlanner")}
                     </a>

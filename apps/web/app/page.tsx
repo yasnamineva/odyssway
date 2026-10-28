@@ -229,9 +229,10 @@ export default async function HomePage() {
               href="/calculator"
             />
           </div>
-          <ul className="mt-6 grid gap-3 sm:grid-cols-3" data-testid="home-more-tools">
+          <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4" data-testid="home-more-tools">
             {(
               [
+                ["readiness", "/readiness"],
                 ["medicationPlanner", "/medication-planner"],
                 ["whichPassport", "/which-passport"],
                 ["dayCounter", "/day-counter"],

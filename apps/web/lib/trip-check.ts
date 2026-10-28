@@ -4,6 +4,7 @@ import {
   type CustomsItemRecord,
   type StayPolicy,
   type PassportValidityRule,
+  type TimedStep,
 } from "@odyssway/engine";
 import { countries, countryName, schengenCountries } from "./countries";
 import {
@@ -51,6 +52,8 @@ export interface TripCheckResult {
   /** The documentsNeeded line about passport validity, and its structured rule when it names a reference date (§1.6). */
   passportLine?: string;
   passportValidity?: PassportValidityRule;
+  /** documentsNeeded lines tied to the arrival date, structured (arrival cards, registration). */
+  timedSteps?: TimedStep[];
   notes?: string;
   legalSource?: { name: string; url: string };
   /** When the cited row was last checked against its source (YYYY-MM-DD). */
@@ -112,6 +115,7 @@ function resolveEntry(
   | "documentsNeeded"
   | "passportLine"
   | "passportValidity"
+  | "timedSteps"
   | "notes"
   | "legalSource"
   | "verifiedAt"
@@ -227,6 +231,7 @@ function resolveEntry(
     documentsNeeded: row.documentsNeeded,
     passportLine: row.documentsNeeded.find((d) => /passport|travel document/i.test(d) && /valid|expiry/i.test(d)),
     passportValidity: row.passportValidity,
+    timedSteps: row.timedSteps,
     notes: row.notes,
     legalSource: row.legal_source,
     verifiedAt: row.verified_at ?? undefined,

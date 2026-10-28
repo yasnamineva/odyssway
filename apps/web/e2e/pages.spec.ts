@@ -374,7 +374,7 @@ test("doctor's letter checklist lists only what the rule asks for, and ticks off
 
 test("the homepage links new tools and recently added destinations; the changelog has an RSS feed", async ({ page, request }) => {
   await page.goto("/");
-  await expect(page.getByTestId("home-more-tools").getByRole("link")).toHaveCount(3);
+  await expect(page.getByTestId("home-more-tools").getByRole("link")).toHaveCount(4);
   await expect(page.getByTestId("home-recent").getByRole("link").first()).toBeVisible();
   const feed = await request.get("/changelog.xml");
   expect(feed.status()).toBe(200);

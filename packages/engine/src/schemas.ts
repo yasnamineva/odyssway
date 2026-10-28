@@ -197,6 +197,17 @@ export const passportValiditySchema = z.discriminatedUnion("kind", [
   z.object({ kind: z.literal("whole_stay") }),
 ]);
 
+// --- Timed steps (packages/engine/src/timed-step.ts) as data ---
+// Structured restatement of a documentsNeeded line tied to the arrival date.
+export const timedStepSchema = z.object({
+  line: z.string().min(1),
+  window: z.object({
+    kind: z.enum(["opens_before_arrival", "due_before_arrival", "due_after_arrival"]),
+    amount: z.number().int().positive(),
+    unit: z.enum(["hours", "days"]),
+  }),
+});
+
 // --- §5.10 data/entry-requirements.json (nationality × non-Schengen destination) ---
 export const entryRequirementSchema = z
   .object({
@@ -206,6 +217,7 @@ export const entryRequirementSchema = z
     stayPolicy: stayPolicySchema,
     documentsNeeded: z.array(z.string().min(1)).min(1),
     passportValidity: passportValiditySchema.optional(),
+    timedSteps: z.array(timedStepSchema).min(1).optional(),
     notes: z.string().optional(),
     ...verificationFields,
   })
