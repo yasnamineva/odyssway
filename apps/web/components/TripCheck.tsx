@@ -16,6 +16,7 @@ import SearchableSelect from "./SearchableSelect";
 import { resolveMapDestinationCode, SCHENGEN_DESTINATION } from "../lib/schengen-sentinel";
 import type { EntryBasis, TripCheckResult } from "../lib/trip-check";
 import { decodeTripShare, encodeTripShare } from "../lib/trip-share";
+import { count } from "../lib/count";
 
 /** The map bundles real country geometry (~100KB) — load it only once it's needed. */
 const WorldMap = dynamic(() => import("./WorldMap"), {
@@ -258,6 +259,7 @@ export default function TripCheck({
           onSubmit={(e) => {
             e.preventDefault();
             setSubmitted(true);
+            count("tripcheck_run");
             // On phones the answer is below the fold — bring it into view.
             if (window.matchMedia("(max-width: 1023px)").matches) {
               const smooth = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;

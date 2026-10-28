@@ -27,6 +27,7 @@ import {
   nonSchengenCountries,
   schengenCountries,
 } from "../lib/countries";
+import { count } from "../lib/count";
 import { downloadIcs } from "../lib/ics";
 import { buildReportLines } from "../lib/report-lines";
 import { decodeShareState, encodeShareState } from "../lib/share";
@@ -378,6 +379,7 @@ export default function Calculator({ storageKey = STORAGE_KEY }: { storageKey?: 
 
   const addPassportReminderToCalendar = () => {
     if (!isValidISODate(passportExpiry)) return;
+    count("calculator_ics");
     const reminderDate = addDays(passportExpiry, -EXPIRY_REMINDER_LEAD_DAYS);
     downloadIcs({
       id: `passport-renewal-${passportExpiry}`,
@@ -390,6 +392,7 @@ export default function Calculator({ storageKey = STORAGE_KEY }: { storageKey?: 
   const addLimitReminderToCalendar = () => {
     const lastAllowed = results.data?.maxStay.lastAllowedDay;
     if (!lastAllowed) return;
+    count("calculator_ics");
     downloadIcs({
       id: `schengen-limit-${lastAllowed}`,
       title: t("reminders.limitEventTitle"),

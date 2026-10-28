@@ -452,3 +452,10 @@ test("the CBD post renders and is linked from cannabis pages, not medication pag
   await page.goto("/bring/medication/japan");
   await expect(page.locator('a[href="/blog/cbd-travel-rules"]')).toHaveCount(0);
 });
+
+test("the anonymous counter accepts only listed events", async ({ request }) => {
+  const ok = await request.post("/api/count", { data: { event: "tripcheck_run" } });
+  expect(ok.status()).toBe(200);
+  const bad = await request.post("/api/count", { data: { event: "anything-else" } });
+  expect(bad.status()).toBe(400);
+});
