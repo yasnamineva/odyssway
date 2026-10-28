@@ -3857,3 +3857,31 @@ Ethiopian source we can read. Retry when an official page with the visa rules is
 canada.ca: connection timeout/reset (curl, HTTP/1.1). immigration.govt.nz: bot challenge
 (212 bytes), not circumvented. israel-entry.piba.gov.il: JS-only; the bundle text conflicts
 (25 NIS vs "free during the pilot"). All three stay in UNVERIFIED/travel-authorisations.json.
+
+## Batch 7, destination 2: Oman (2026-10-28)
+Source: MFA Oman "Entry visas" (fm.gov.om/en/visitors/entry-visas, last updated 22 Sep 2026):
+14-day exemption, first and second groups, with the conditions (passport 6 months, return
+ticket, confirmed hotel, health insurance, funds; not extendable). evisa.rop.gov.om pages are JS.
+- 21 entry rows: first group (US GB CA AU NZ JP KR SG BR AR CL MY CN UA FR DE IT ES NL) visa-free
+  14 days per entry; second group (IN MX) visa required unless resident in / holding a visa for
+  US, CA, AU, UK, Schengen or Japan, or GCC resident (then 14 days).
+- Passport 6 months from arrival on every row (GOV.UK and Viaggiare Sicuri agree).
+- **Held: IL** — in neither group; the MFA page sends other nationalities to the ROP e-Visa site,
+  which isn't readable.
+- OPEN: customs (GOV.UK points to a ROP customs page), destination photo.
+
+## Batch 7, destination 3: Brunei (2026-10-28)
+Source: MFA Brunei "Visa Information" (mfa.gov.bn/Pages/Visa-Information.aspx) with per-country
+links to category pages: D1 90 days (US GB CA FR DE IT ES NL), D2 30 days (JP KR MY NZ SG UA),
+D3 14 days (CN ordinary), C1 visa on arrival 30 days, BND 20/30 (AU), A visa required, 14 working
+days (BR MX), B visa required, 3 working days (AR CL IN ordinary). The pages are undated; GOV.UK
+(UK 90 days) and Viaggiare Sicuri (Italy 90 days, citing this MFA page) match.
+- 21 entry rows; e-arrival declaration on every row (GOV.UK and Viaggiare Sicuri agree).
+- Passport: "at least 6 months" without a reference date (GOV.UK says from arrival, Italy and the
+  MFA visa pages don't), so no passportValidity rule.
+- **Held: IL** — not in the MFA country list.
+- immigration.gov.bn has visa forms only. OPEN: customs, destination photo.
+
+## Guatemala (2026-10-28): not found
+igm.gob.gt home is readable but /visas/ is a 404 and minex.gob.gt returns 403; no visa-exemption
+list found. Retry with the IGM "categorías de visas" PDF or the minex consular page.
