@@ -3844,7 +3844,8 @@ answers from the page's own api.php?method=getVisaTypeInfo). mfa.gov.kg returned
 - Passport 6 months from arrival on every row (GOV.UK and Viaggiare Sicuri agree; the portal is silent).
 - Registration within 5 working days of entry "except countries included in a list": the list
   isn't on the portal, so it's a note only, not a timed step.
-- OPEN: customs (no readable official text found yet); destination photo.
+- OPEN: destination photo; customs — customs.gov.kg is a React app with no readable traveller
+  pages; the EAEU allowances (EEC Council Decision No. 107 of 2017) need a readable official text.
 
 ## Ethiopia (2026-10-28): BLOCKED
 evisa.gov.et and mfa.gov.et are React shells; reading the e-visa portal's data services was
@@ -3868,7 +3869,9 @@ ticket, confirmed hotel, health insurance, funds; not extendable). evisa.rop.gov
 - Passport 6 months from arrival on every row (GOV.UK and Viaggiare Sicuri agree).
 - **Held: IL** — in neither group; the MFA page sends other nationalities to the ROP e-Visa site,
   which isn't readable.
-- OPEN: customs (GOV.UK points to a ROP customs page), destination photo.
+- Customs DONE 2026-10-28: alcohol (2 L wine + 48 cans beer, non-Muslims only), tobacco (400
+  cigarettes), cash (declare OMR 6,000 or more) from customs.gov.om/en/traveller-services (EN + AR agree).
+- OPEN: destination photo; prohibited/restricted goods list (the page refers to BAYAN approvals only).
 
 ## Batch 7, destination 3: Brunei (2026-10-28)
 Source: MFA Brunei "Visa Information" (mfa.gov.bn/Pages/Visa-Information.aspx) with per-country
@@ -3880,7 +3883,8 @@ days (BR MX), B visa required, 3 working days (AR CL IN ordinary). The pages are
 - Passport: "at least 6 months" without a reference date (GOV.UK says from arrival, Italy and the
   MFA visa pages don't), so no passportValidity rule.
 - **Held: IL** — not in the MFA country list.
-- immigration.gov.bn has visa forms only. OPEN: customs, destination photo.
+- immigration.gov.bn has visa forms only. OPEN: destination photo; customs — customs.gov.bn
+  notices are image-only and its FAQ covers business imports, no traveller allowances found.
 
 ## Guatemala (2026-10-28): not found
 igm.gob.gt home is readable but /visas/ is a 404 and minex.gob.gt returns 403; no visa-exemption

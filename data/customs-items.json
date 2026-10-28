@@ -18890,5 +18890,83 @@
     "verified_at": "2026-10-27",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "alcohol-om",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "duty free alcohol"
+    ],
+    "destination": "OM",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "summary": "Non-Muslims may bring up to 2 litres of wine and 48 cans of beer duty-free. Muslims may not bring alcohol.",
+    "limits": {
+      "description": "The customs exemption covers alcohol of no more than 2 litres of wine and 48 cans of beer, for non-Muslims. Oman Customs says Muslims are not allowed to bring alcohol. The exemption doesn't apply to travellers who pass through customs frequently.",
+      "quantity": "2 litres of wine and 48 cans of beer"
+    },
+    "notes": "The Arabic version of the same page says the same: up to 2 litres of wine and 48 cans of beer for non-Muslims, and Muslims are not permitted.",
+    "legal_source": {
+      "name": "Royal Oman Police, Directorate General of Customs — Traveller services (prohibited and restricted goods, exemptions, currency declaration)",
+      "url": "https://www.customs.gov.om/en/traveller-services/"
+    },
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-om",
+    "names": [
+      "cigarettes",
+      "tobacco"
+    ],
+    "destination": "OM",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "summary": "Up to 400 cigarettes duty-free.",
+    "limits": {
+      "description": "The traveller's customs exemption covers up to 400 cigarettes. It doesn't apply to travellers who pass through customs frequently. The page gives no allowance for cigars or loose tobacco.",
+      "quantity": "400 cigarettes"
+    },
+    "legal_source": {
+      "name": "Royal Oman Police, Directorate General of Customs — Traveller services (prohibited and restricted goods, exemptions, currency declaration)",
+      "url": "https://www.customs.gov.om/en/traveller-services/"
+    },
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-om",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "traveller's cheques",
+      "bearer securities",
+      "precious metals",
+      "omani rial",
+      "omr"
+    ],
+    "destination": "OM",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "summary": "Declare cash, bearer securities, precious metals or gemstones worth OMR 6,000 or more, arriving or leaving.",
+    "limits": {
+      "description": "Travellers arriving or departing must declare currency, bearer securities, banknotes, precious metals or gemstones convertible into cash worth OMR 6,000 or more, or the equivalent, on the customs declaration form. Not declaring is an offence under Article 53 of the Money Laundering and Terrorism Financing Law.",
+      "quantity": "OMR 6,000"
+    },
+    "notes": "The page's general rule says amounts that \"exceed\" OMR 6,000, while its declaration section says the form is for \"whoever carries 6,000 (six thousand) Omani Rials or more\"; we use the stricter \"or more\".",
+    "legal_source": {
+      "name": "Royal Oman Police, Directorate General of Customs — Traveller services (prohibited and restricted goods, exemptions, currency declaration)",
+      "url": "https://www.customs.gov.om/en/traveller-services/"
+    },
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]
