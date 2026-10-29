@@ -3903,3 +3903,14 @@ AMN-04-2025), but the PDF link returns an HTML 404 on extranjeria., www. and bar
 ## Guatemala (2026-10-28): not found
 igm.gob.gt home is readable but /visas/ is a 404 and minex.gob.gt returns 403; no visa-exemption
 list found. Retry with the IGM "categorías de visas" PDF or the minex consular page.
+
+## Medication pass for destinations without a medication row (2026-10-29)
+- Zimbabwe: MCAZ, SI 57 of 2008 (Import and Export of Medicines Regulations), s. 3(d): the permit
+  regime doesn't apply to "medicines imported by an individual for personal use". That's an
+  exclusion, not a traveller rule (no limits, no documents); controlled drugs fall under the
+  Dangerous Drugs Act [Chapter 15:02], not read. Not published: it would be inference from silence.
+- Ghana (FDA import/export page), Zambia (ZAMRA import/export): business imports only.
+- Oman: the MOH page GOV.UK links (moh.gov.om/en/-/---276) returns 404.
+- Brunei: moh.gov.bn Pharmacy Enforcement page 403. Cambodia (DDF) and Mongolia (MOH) homepages
+  have nothing for travellers.
+- Destination photos for KG, OM, BN: pixabay.com returns 403 here; ask the owner for links.
