@@ -1,5 +1,167 @@
 [
   {
+    "commit": "6f1c0444c39e27d12ae63289ce066cc20922757c",
+    "date": "2026-10-28",
+    "dataset": "customs-items",
+    "summary": "Oman customs: alcohol (2 L wine and 48 cans of beer for non-Muslims; Muslims not allowed), 400 cigarettes, cash declaration from OMR 6,000, from Oman Customs' traveller guide (English and Arabic agree)",
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Royal Oman Police, Directorate General of Customs — Traveller services (prohibited and restricted goods, exemptions, currency declaration)",
+      "url": "https://www.customs.gov.om/en/traveller-services/"
+    },
+    "destinations": [
+      "OM"
+    ]
+  },
+  {
+    "commit": "0a627824aff949ee4edc4e782fa68494ea3b19ac",
+    "date": "2026-10-28",
+    "dataset": "destinations",
+    "summary": "Add Oman and Brunei (65 destinations): Oman 14-day exemption from the MFA list (updated 22 Sep 2026), second group (India, Mexico) only with a qualifying visa or residence; Brunei categories D1/D2/D3 (90/30/14 days), C1 visa on arrival (Australia) and A/B visa required, with the e-arrival declaration; Israel held for both",
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministry of Foreign Affairs of the Kyrgyz Republic, e-Visa portal: Do I need visa? (visa regime by passport)",
+      "url": "https://www.evisa.e-gov.kg/get_information.php?lng=en"
+    },
+    "destinations": [
+      "BN",
+      "OM"
+    ]
+  },
+  {
+    "commit": "0a627824aff949ee4edc4e782fa68494ea3b19ac",
+    "date": "2026-10-28",
+    "dataset": "entry-requirements",
+    "summary": "Add Oman and Brunei (65 destinations): Oman 14-day exemption from the MFA list (updated 22 Sep 2026), second group (India, Mexico) only with a qualifying visa or residence; Brunei categories D1/D2/D3 (90/30/14 days), C1 visa on arrival (Australia) and A/B visa required, with the e-arrival declaration; Israel held for both",
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Directorate of Immigration Services — Kenya eTA: How to Apply / Eligibility",
+      "url": "https://www.etakenya.go.ke/form/apply/how-to-apply"
+    },
+    "destinations": [
+      "BN",
+      "OM"
+    ]
+  },
+  {
+    "commit": "c536b7f4ae72573f6d88660f04fd3c545aedcd48",
+    "date": "2026-10-28",
+    "dataset": "destinations",
+    "summary": "Add Kyrgyzstan (63 destinations): 22 passport rows from the MFA e-Visa portal's visa-regime tool; 30 days in 60 and passport 6 months from arrival where GOV.UK and Viaggiare Sicuri agree; Ukraine 90 days; China and India visa required. Ethiopia and the Canada/NZ/Israel retries recorded as blocked",
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministry of Foreign Affairs of the Kyrgyz Republic, e-Visa portal: Do I need visa? (visa regime by passport)",
+      "url": "https://www.evisa.e-gov.kg/get_information.php?lng=en"
+    },
+    "destinations": [
+      "KG"
+    ]
+  },
+  {
+    "commit": "c536b7f4ae72573f6d88660f04fd3c545aedcd48",
+    "date": "2026-10-28",
+    "dataset": "entry-requirements",
+    "summary": "Add Kyrgyzstan (63 destinations): 22 passport rows from the MFA e-Visa portal's visa-regime tool; 30 days in 60 and passport 6 months from arrival where GOV.UK and Viaggiare Sicuri agree; Ukraine 90 days; China and India visa required. Ethiopia and the Canada/NZ/Israel retries recorded as blocked",
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Directorate of Immigration Services — Kenya eTA: How to Apply / Eligibility",
+      "url": "https://www.etakenya.go.ke/form/apply/how-to-apply"
+    },
+    "destinations": [
+      "KG"
+    ]
+  },
+  {
+    "commit": "2d918b105fec62265bd4e4547f25f9d3a48849f3",
+    "date": "2026-10-28",
+    "dataset": "entry-requirements",
+    "summary": "Kenya insurance: the 22 Kenya rows and the late-2026 post now follow Kenya's own insurance portal (visiting less than 3 months, up to USD 44 including levies, one policy per traveller, up to 3 months); GOV.UK and Canada's 'under 12 months' recorded as a conflict",
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Directorate of Immigration Services — Kenya eTA: How to Apply / Eligibility",
+      "url": "https://www.etakenya.go.ke/form/apply/how-to-apply"
+    },
+    "destinations": [
+      "KE"
+    ]
+  },
+  {
+    "commit": "b08074ea2380d1df053f2fe3750129588439351b",
+    "date": "2026-10-28",
+    "dataset": "travel-authorisations",
+    "summary": "Travel authorisation guides (/authorisations): 9 ETAs and e-visas from data/travel-authorisations.json (ESTA, UK ETA, K-ETA, Australia ETA and eVisitor, Kenya eTA, India e-Tourist Visa, Sri Lanka ETA, Egypt e-Visa), each claim checked against the issuing government's page; linked from destination hubs and the readiness planner; Canada, Israel and NZ held in UNVERIFIED",
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "U.S. Customs and Border Protection, Official ESTA Application Website (FAQ)",
+      "url": "https://esta.cbp.dhs.gov/"
+    },
+    "destinations": [
+      "AU",
+      "EG",
+      "GB",
+      "IN",
+      "KE",
+      "KR",
+      "LK",
+      "US"
+    ]
+  },
+  {
+    "commit": "e848ded81f383fcc1032c3bbad0cc09451a75e31",
+    "date": "2026-10-28",
+    "dataset": "trip-charges",
+    "summary": "Government charges for visitors: data/trip-charges.json (8 charges, each confirmed on the charging government's own page: Bali levy, Japan departure tax, Kenya and Tanzania compulsory insurance, Qatar visitor insurance, Galápagos entry fee and transit card, Dominican Republic tourist card), shown on destination hubs and per stop in the readiness planner; 18 unconfirmed leads in UNVERIFIED",
+    "verified_at": "2026-10-28",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Love Bali (Bali Provincial Government), Bali Provincial Regulation No. 2 of 2025 amending Regional Regulation No. 6 of 2023",
+      "url": "https://lovebali.baliprov.go.id/"
+    },
+    "destinations": [
+      "DO",
+      "EC",
+      "ID",
+      "JP",
+      "KE",
+      "QA",
+      "TZ"
+    ]
+  },
+  {
+    "commit": "c1539fb608e8902aecc2246e8c88cf17abf10113",
+    "date": "2026-10-28",
+    "dataset": "entry-requirements",
+    "summary": "Trip readiness planner (/readiness): travellers with mixed passports, every stop, official deadlines kept apart from suggested dates, arrival-form windows, passport checks, one .ics, opt-in saved plan with a recheck of rule changes since; timedSteps restate arrival-dated documentsNeeded lines (251 rows, checked by validate-data)",
+    "verified_at": "2026-10-27",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Visa Waiver Program, 8 U.S.C. §1187(a)(1) and (a)(3)",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title8/html/USCODE-2023-title8-chap12-subchapII-partII-sec1187.htm"
+    },
+    "destinations": [
+      "CN",
+      "ID",
+      "IN",
+      "KH",
+      "KR",
+      "ME",
+      "MV",
+      "MY",
+      "RS",
+      "SG",
+      "TH",
+      "TW",
+      "UZ"
+    ]
+  },
+  {
     "commit": "e7a29fa734aaff8c56397161d8a5e7970b417fa0",
     "date": "2026-10-27",
     "dataset": "entry-requirements",
