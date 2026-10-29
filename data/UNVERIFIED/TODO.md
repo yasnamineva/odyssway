@@ -3750,6 +3750,10 @@ Sources: Immigration Agency article 537 (34 countries, tourist visa exemption up
 Sources: Cabinet Resolution No. 408 (1996), Annex 5 — consolidated visa-free list, as amended by Resolution No. 662 of 21 Oct 2025 (lex.uz/ru/docs/513096; the Russian text is LexUz's unofficial translation, Resolution 662 itself is published only in Uzbek); Presidential Decree UP-203 of 3 Nov 2025 (US, 30 days from 1 Jan 2026); MFA visa page on gov.uz (visa-free list, e-visa Appendix 1, transit Appendix 2; last updated 2025-03-06).
 - 20 entry rows: AU AR IL IT CA ES NL MY NZ KR SG CL GB BR DE FR JP MX 30 days (annex and MFA agree); US 30 days (UP-203; the MFA page still shows the old "55+ tourists" rule); IN visa required (e-visa list + 5-day transit with an Uzbekistan Airways ticket).
 - **Held: CN** — conflict: the annex (LexUz translation, after Resolution 662) lists China among 30-day countries; the MFA page lists China under "up to 10 days" with an onward ticket. Resolve from the Uzbek text of Resolution 662 or an updated MFA page.
+  Rechecked 2026-10-29: in LexUz's consolidated Annex 5 (Russian, unofficial) China is item 85⁶, added
+  with Bahrain, Saudi Arabia, Oman, Qatar, Kuwait and Jordan (85¹–85⁷) under the 30-day heading. The
+  /uz/ URL serves the same Russian text; Resolution 662's own page (lex.uz/docs/7786731, 70 KB) doesn't
+  contain the annex. Still need the official Uzbek annex text or an MFA page updated after 21 Oct 2025.
 - **Held: UA** — "unlimited duration" bilateral regime; our stay model can't express "no time limit".
 - Customs BLOCKED 2026-10-23: customs.uz is a JS app; on lex.uz, PP-4508 (2019, amended by UP-174 of 27 Aug 2026) sets the single customs payment but not the limits; Cabinet Resolution No. 44 (29 Jan 2025) and No. 244 (19 Apr 2025) are published only in Uzbek. Find the current duty-free limits (alcohol, tobacco, goods value) and the cash declaration threshold in a readable official text.
 - Kazakhstan (2026-10-23): BLOCKED — gov.kz, egov.kz and adilet.zan.kz are all JS apps; Adilet's API needs credentials. Need another route to Government Decree No. 148 (2012) rules for immigrants or the MFA visa-free list.
