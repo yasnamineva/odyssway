@@ -3890,6 +3890,14 @@ days (BR MX), B visa required, 3 working days (AR CL IN ordinary). The pages are
 - immigration.gov.bn has visa forms only. OPEN: destination photo; customs — customs.gov.bn
   notices are image-only and its FAQ covers business imports, no traveller allowances found.
 
+## Guatemala (2026-10-29 retry)
+extranjeria.igm.gob.gt is readable: "Visas" page (category C countries need a tourist visa beforehand,
+US$25, passport 6 months, Guatemalan guarantor; forms IGM-01-2026 as PDFs under /files/visa/). Its
+"Clasificación de países" page (/index.php/clasificacion-paises) has an empty body, so which countries
+are A/B/C is still unread. Next: the category C form PDFs or the "Normativa" page.
+
+## Moldova (2026-10-29 retry): legis.md still 403; MFA visa page has no stay length.
+
 ## Guatemala (2026-10-28): not found
 igm.gob.gt home is readable but /visas/ is a 404 and minex.gob.gt returns 403; no visa-exemption
 list found. Retry with the IGM "categorías de visas" PDF or the minex consular page.
