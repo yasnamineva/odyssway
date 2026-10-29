@@ -3894,7 +3894,9 @@ days (BR MX), B visa required, 3 working days (AR CL IN ordinary). The pages are
 extranjeria.igm.gob.gt is readable: "Visas" page (category C countries need a tourist visa beforehand,
 US$25, passport 6 months, Guatemalan guarantor; forms IGM-01-2026 as PDFs under /files/visa/). Its
 "Clasificación de países" page (/index.php/clasificacion-paises) has an empty body, so which countries
-are A/B/C is still unread. Next: the category C form PDFs or the "Normativa" page.
+are A/B/C is still unread. Checked 2026-10-29: the category C forms (IGM-01-2026) don't list
+countries; the Normativa page links the "Reglamento de Visas Guatemaltecas" (Acuerdo IGM-015-2025,
+AMN-04-2025), but the PDF link returns an HTML 404 on extranjeria., www. and bare igm.gob.gt. Retry later.
 
 ## Moldova (2026-10-29 retry): legis.md still 403; MFA visa page has no stay length.
 
