@@ -21270,5 +21270,69 @@
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "alcohol-bn",
+    "names": [
+      "alcohol",
+      "liquor",
+      "beer",
+      "wine",
+      "spirits"
+    ],
+    "destination": "BN",
+    "category": "alcohol",
+    "verdict": "depends",
+    "limits": {
+      "description": "Only non-Muslims aged 17 and over may bring in alcohol, and only a limited amount. Declare it to customs on arrival and drink it in private. Selling alcohol and tobacco is illegal in Brunei."
+    },
+    "summary": "Non-Muslims aged 17+ may bring a limited amount of alcohol: declare it on arrival and drink it in private. The amount isn't given here.",
+    "notes": "The UK advice doesn't state the amount, and the Brunei customs page it links to (BDNSW prohibited and restricted goods) returned 404 for this site. You can declare through the Customs.BN app or at the airport.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Brunei travel advice: Safety and security (updated 2026-03-19)",
+      "url": "https://www.gov.uk/foreign-travel-advice/brunei/safety-and-security"
+    },
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Non-Muslims 17+ may import a limited amount; declare on arrival; drink in private; sale illegal",
+        "name": "GOV.UK (FCDO) — Brunei travel advice: Safety and security (updated 2026-03-19)",
+        "url": "https://www.gov.uk/foreign-travel-advice/brunei/safety-and-security",
+        "checked": "2026-10-30"
+      },
+      {
+        "claim": "Declare anything prohibited or dutiable, via the Customs.BN app or on arrival",
+        "name": "GOV.UK (FCDO) — Brunei travel advice: Entry requirements, 'Customs rules' (updated 2026-03-19)",
+        "url": "https://www.gov.uk/foreign-travel-advice/brunei/entry-requirements",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "slug": "cannabis-bn",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish"
+    ],
+    "destination": "BN",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Drug offences in Brunei carry severe penalties, in some cases the death penalty."
+    },
+    "summary": "Banned: drug offences in Brunei carry severe penalties, in some cases death.",
+    "notes": "No Brunei narcotics or customs page was read for this site; this row rests on the UK government's travel advice. It says nothing specific about CBD products, so CBD isn't covered here.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Brunei travel advice: Safety and security (updated 2026-03-19)",
+      "url": "https://www.gov.uk/foreign-travel-advice/brunei/safety-and-security"
+    },
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]
