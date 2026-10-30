@@ -8465,10 +8465,10 @@
     "category": "drones",
     "verdict": "depends",
     "limits": {
-      "description": "Drones under 250g are exempt from registration. Drones of 250g or heavier must be registered through the Drone One-Stop portal, a Ministry of Land, Infrastructure and Transport administrative system that lists a roughly 7-business-day processing time for aircraft registration."
+      "description": "Drones are registered through the Drone One-Stop portal, a Ministry of Land, Infrastructure and Transport system that lists about 7 business days for aircraft registration. Registration requires Korean-resident identity verification, with no stated exemption for visitors."
     },
-    "notes": "The Drone One-Stop portal itself was reachable and confirmed real in this pass (Korean government domains have historically been unreachable from this environment, so this is a genuine access breakthrough), but its registration process requires Korean-resident identity verification with no stated tourist exemption or workaround — in practice this blocks visitors from registering anything 250g or heavier. The specific 250g threshold comes from secondary sources, not the portal's own text.",
-    "summary": "Under 250 g: no registration. 250 g or more must be registered through the Drone One-Stop portal, which needs Korean identity verification.",
+    "notes": "The portal was reachable for this site, but its text read here doesn't state which drones (by weight or use) must be registered, so no weight limit is given.",
+    "summary": "Drone registration goes through the Drone One-Stop portal and needs Korean identity verification; which drones must register isn't confirmed here.",
     "legal_source": {
       "name": "Drone One-Stop (드론원스톱 민원서비스) — Ministry of Land, Infrastructure and Transport drone administrative portal",
       "url": "https://drone.onestop.go.kr"

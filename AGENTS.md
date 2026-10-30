@@ -659,10 +659,10 @@ subscription before real checkout/price experiments say otherwise.
   existed. Fixed the same day; the first CI run will open a PR that commits the
   baseline. Do not commit a baseline generated from a restricted network — it
   would record blocked sources as unmonitorable.
-- Two destinations flagged their own rules as unusually time-sensitive and worth
-  checking sooner than the weekly cadence regardless: Thailand (a cabinet-approved
-  visa-exemption cut not yet gazetted) and South Africa (its ETA launched
-  2026-08-12 with eligibility/fee still unconfirmed on any primary source).
+- Time-sensitive rules to check sooner than the weekly cadence: South Africa (its ETA
+  launched 2026-08-12; eligibility and fee still unconfirmed on any primary source, so
+  rows don't list it as a requirement). Thailand's cut to a 30-day exemption took effect
+  15 Sep 2026 and is in the rows (re-checked against GOV.UK 2026-10-30).
 - The `/changelog` (§7) is part of this moat: cloned competitors can fake a
   "verified" badge but cannot fake a consistent public update history. The
   changelog makes our verification legible to users, journalists, search engines,
