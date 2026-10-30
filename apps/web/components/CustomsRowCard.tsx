@@ -2,6 +2,7 @@ import type { CustomsItemRecord } from "@odyssway/engine";
 import { getTranslations } from "next-intl/server";
 import { rowLabel } from "../lib/bring-pages";
 import { destinationByCode } from "../lib/destinations";
+import { reportProblemHref } from "../lib/report-problem";
 import BorderCardButton from "./BorderCardButton";
 import LetterChecklist from "./LetterChecklist";
 import ProcedureSection from "./ProcedureSection";
@@ -19,9 +20,12 @@ export const VERDICT_STYLES: Record<string, string> = {
 export default async function CustomsRowCard({
   row,
   destinationCode,
+  pagePath,
 }: {
   row: CustomsItemRecord;
   destinationCode: string;
+  /** The page this card is on, for the pre-filled problem report. */
+  pagePath?: string;
 }) {
   const t = await getTranslations("bringDestinationPage");
   const tv = await getTranslations("destinationPage.verdict");
@@ -99,6 +103,19 @@ export default async function CustomsRowCard({
         date={row.verified_at}
         sourceLabel={ts("sourceLabel")}
         checkedLabel={row.verified_at ? ts("checkedOn", { date: row.verified_at }) : undefined}
+        report={
+          pagePath
+            ? {
+                label: ts("reportProblem"),
+                href: reportProblemHref({
+                  rule: `${row.slug} (${destinationName})`,
+                  path: pagePath,
+                  sourceUrl: row.legal_source.url,
+                  verifiedAt: row.verified_at,
+                }),
+              }
+            : undefined
+        }
       />
     </li>
   );

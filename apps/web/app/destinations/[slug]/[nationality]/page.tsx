@@ -8,6 +8,7 @@ import Photo from "../../../../components/content/Photo";
 import { destinationPhoto, photoOgImage } from "../../../../lib/photos";
 import { destinationPath, withArticle } from "../../../../lib/destinations";
 import { blogPosts } from "../../../../lib/blog";
+import { reportProblemHref } from "../../../../lib/report-problem";
 import { describeRule } from "../../../../lib/seo-text";
 import { travelPair, travelPairPath, travelPairs, type TravelPair } from "../../../../lib/travel-pairs";
 
@@ -175,6 +176,15 @@ export default async function TravelPairPage({ params }: { params: Promise<Param
           date={row.verified_at}
           sourceLabel={ts("sourceLabel")}
           checkedLabel={row.verified_at ? ts("checkedOn", { date: row.verified_at }) : undefined}
+          report={{
+            label: ts("reportProblem"),
+            href: reportProblemHref({
+              rule: `${pair.nationality.nationality} passport to ${pair.destination.name}`,
+              path: travelPairPath(pair),
+              sourceUrl: row.legal_source.url,
+              verifiedAt: row.verified_at,
+            }),
+          }}
         />
       </section>
 

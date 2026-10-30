@@ -326,6 +326,17 @@ test("a customs row downloads a printable border card", async ({ page }) => {
   await download.saveAs("test-results/border-card.pdf");
 });
 
+test("rule cards link a pre-filled problem report", async ({ page }) => {
+  await page.goto("/bring/medication/south-korea");
+  const link = page.getByTestId("report-problem").first();
+  await expect(link).toBeVisible();
+  const href = (await link.getAttribute("href")) ?? "";
+  expect(href).toMatch(/^mailto:support@odyssway\.com\?subject=Rule%20check/);
+  expect(decodeURIComponent(href)).toContain("/bring/medication/south-korea");
+  await page.goto("/destinations/japan/united-states");
+  await expect(page.getByTestId("report-problem")).toHaveCount(1);
+});
+
 test("the Can I bring it? embed answers without site chrome; /widget shows its snippet", async ({ page }) => {
   await page.goto("/embed/can-i-bring");
   await expect(page.locator("header")).toHaveCount(0);

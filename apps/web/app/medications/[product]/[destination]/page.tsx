@@ -142,7 +142,7 @@ export default async function MedicationPairPage({ params }: { params: Promise<P
 
       <ul className="space-y-4">
         {pair.rows.map((r) => (
-          <CustomsRowCard key={r.slug} row={r} destinationCode={pair.destination.code} />
+          <CustomsRowCard key={r.slug} row={r} destinationCode={pair.destination.code} pagePath={`/medications/${product}/${destination}`} />
         ))}
       </ul>
 

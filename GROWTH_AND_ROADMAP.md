@@ -239,6 +239,40 @@ Ways to make that harder to copy and easier to trust:
 
 ---
 
+### 4.1 Competitor watch (2026-10-30)
+
+Searched three of our striking-distance queries (Malaysia cigarettes, Thailand vapes, ADHD
+medication in Argentina) and read the niche sites that outrank us. Structure only; nothing copied.
+
+- **goodsacrossborders.com** is the closest competitor and has adopted our positioning:
+  per-rule "verified" dates, official-source links, a confidence grade, printable rule cards,
+  an export ("leaving X") side, a quantity check, a correction link per rule, an API and
+  pricing. It claims 85 countries, 111 items, 5,339 rules (we have 65 destinations, 630 rows).
+  Its pages contradict themselves (Malaysia tobacco: 225 g vs 250 g on one page; penalties
+  "MYR 500–100,000" next to "civil penalty only"; a vape guide dated 2024 describing 2025–26
+  changes, and transit advice to pack a vape in checked luggage after saying that's banned).
+  **Our answer is accuracy, not breadth** (§14): one contradiction-free row per rule, the
+  public changelog, cross-checks between governments.
+- **canibringto.com**: one page per item variant (cigarettes, cigars, loose tobacco, vape
+  pods, e-liquids), versions in Chinese, Japanese and Vietnamese, short misconception FAQs
+  ("does a duty-free purchase change the allowance?"), an Airalo affiliate banner. On Malaysia
+  tobacco it agrees with our row (no duty-free allowance) against goodsacrossborders.
+
+Gaps worth closing, in order:
+1. ✔ 2026-10-30: "Something wrong or out of date? Report it" on every customs rule card and
+   passport page: a pre-filled email (rule, page, our source, check date) to the support
+   address. The FAQ said "point us at the source" but gave no way to do it.
+2. **Misconception FAQs from verified rows only**: where a source states it (duty-free
+   purchases, transit airside, carrying for someone else), add a question to the pair page's
+   FAQ markup. No new facts, only questions our rows already answer.
+3. **Translated item and medicine pages** (§5.5): canibringto ranks in zh/ja/vi. Our Search
+   Console top countries include India and Singapore; pick locales from the November export.
+4. **Quantity check** on allowance pages (enter how many you carry, see within/over the
+   limit). Needs structured quantities on alcohol/tobacco rows first (like `passportValidity`
+   restating prose, checked by validate-data).
+5. Export direction ("leaving X with Y") stays out for now (§0 ignored queries); revisit if
+   Search Console shows real demand.
+
 ## 5. SEO and reach
 
 ### 5.1 Measure without breaking the privacy promise

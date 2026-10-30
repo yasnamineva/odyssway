@@ -10,6 +10,7 @@ export default function SourceNote({
   date,
   sourceLabel,
   checkedLabel,
+  report,
   className = "",
 }: {
   name: string;
@@ -19,6 +20,8 @@ export default function SourceNote({
   sourceLabel: string;
   /** e.g. "Checked 2026-10-05" — already formatted by the caller's i18n. */
   checkedLabel?: string;
+  /** Pre-filled "report a problem" email (lib/report-problem.ts). */
+  report?: { label: string; href: string };
   className?: string;
 }) {
   return (
@@ -36,6 +39,15 @@ export default function SourceNote({
         {name}
       </a>
       {date && checkedLabel ? <span className="block text-slate-500">{checkedLabel}</span> : null}
+      {report ? (
+        <a
+          href={report.href}
+          className="mt-1 inline-block text-slate-500 underline decoration-slate-300 underline-offset-2 hover:text-slate-700"
+          data-testid="report-problem"
+        >
+          {report.label}
+        </a>
+      ) : null}
     </p>
   );
 }

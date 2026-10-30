@@ -228,7 +228,7 @@ export default async function BringDestinationPage({ params }: { params: Promise
 
       <ul className="space-y-4">
         {pair.rows.map((r) => (
-          <CustomsRowCard key={r.slug} row={r} destinationCode={pair.destination.code} />
+          <CustomsRowCard key={r.slug} row={r} destinationCode={pair.destination.code} pagePath={`/bring/${item}/${destination}`} />
         ))}
       </ul>
 
