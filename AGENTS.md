@@ -25,6 +25,12 @@ important calls; everything else is yours to drive.
   handling or the privacy/terms pages, adds accounts, tracking, affiliates or paid
   services, changes positioning or scope (§2), or publishes outside the site (social,
   outreach, press). List open decisions in the roadmap's "Open decisions" section.
+- **Don't stop between tasks.** Finishing a task is not a reason to stop or to report and
+  wait: go straight to the next roadmap item. Never defer *work* to "tomorrow"; only
+  deploys are batched (at most one push to `main` a day, to limit build costs). Stop only
+  for a real stopper: an owner decision, a permission denial, or nothing actionable left.
+  If a session ends on a usage limit, the next session resumes from the roadmap without
+  being asked.
 - §3 (accuracy) and §13 (guardrails) still override all of this. Being proactive never
   means publishing an unverified rule.
 
