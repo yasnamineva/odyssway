@@ -2026,13 +2026,13 @@
     "category": "food_animal",
     "verdict": "prohibited",
     "summary": "Don't bring fresh meat, fresh cheese, or homemade meat and dairy products.",
-    "notes": "SENASICA's traveler-facing prohibited list includes fresh meat of any species/origin, fresh cheeses (e.g. asadero, cottage, mozzarella, panela), home-made/artisanal meat and dairy products, and pork products/derivatives from countries with African Swine Fever — none of these may be brought in personal baggage. The list is explicitly stated as illustrative, not exhaustive (“ensunciativa, más no limitativa”).",
+    "notes": "SENASICA's traveler-facing prohibited list includes fresh meat of any species/origin, fresh cheeses (e.g. asadero, cottage, mozzarella, panela), home-made/artisanal meat and dairy products, and pork products/derivatives from countries with African Swine Fever — none of these may be brought in personal baggage. It also lists sandwiches, burgers, pizzas and similar food containing meat or dairy unless in intact packaging with an official sanitary seal, raw crustaceans, and live animals. The list is explicitly stated as illustrative, not exhaustive (“ensunciativa, más no limitativa”).",
     "legal_source": {
       "name": "SENASICA — Productos prohibidos (información para viajeros)",
       "url": "https://www.gob.mx/senasica/documentos/productos-prohibidos?state=published"
     },
-    "verified_at": "2026-08-12",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -2053,8 +2053,8 @@
       "name": "SENASICA — Productos prohibidos (información para viajeros)",
       "url": "https://www.gob.mx/senasica/documentos/productos-prohibidos?state=published"
     },
-    "verified_at": "2026-08-12",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -4061,7 +4061,15 @@
   },
   {
     "slug": "paan-nasvaar-ae",
-    "names": ["paan", "betel leaf", "betel nut", "nasvaar", "naswar", "gutka", "chewing tobacco"],
+    "names": [
+      "paan",
+      "betel leaf",
+      "betel nut",
+      "nasvaar",
+      "naswar",
+      "gutka",
+      "chewing tobacco"
+    ],
     "destination": "AE",
     "category": "tobacco",
     "verdict": "prohibited",
@@ -4549,17 +4557,17 @@
     "category": "cash",
     "verdict": "declaration_required",
     "limits": {
-      "description": "Cash declaration thresholds for travelers entering mainland China",
-      "quantity": "RMB (CNY) cash: capped at 20,000 yuan per person per entry/exit — amounts above must be declared to Customs and undeclared excess can be turned back/confiscated. Foreign currency cash: no fixed maximum amount for bringing it INTO China, but any amount exceeding the equivalent of USD 5,000 must be declared in writing to Customs on arrival."
+      "description": "Foreign currency cash entering mainland China",
+      "quantity": "No maximum for bringing foreign currency cash in, but any amount above the equivalent of USD 5,000 must be declared to Customs in writing on arrival. People crossing several times in one day, or more than once within 15 days, must declare foreign cash in writing on every entry."
     },
-    "notes": "The written-declaration trigger derives from the (国家外汇管理局/海关总署) Interim Measures for the Administration of Carrying Foreign Currency Cash Into and Out of the Country, read together with the Measures of the Customs of the PRC on the Supervision of Inbound and Outbound Passenger Baggage and Articles (effective 1 April 2025), whose Article 9 requires declaring 'currency exceeding the prescribed amount.' Note: China's own National Immigration Administration, when asked by a foreign traveler how much cash may be carried in, explicitly stated this is a Customs matter, not an immigration matter — confirming Customs (not NIA) is the correct authority for this fact. Undeclared cash above the threshold risks detention and penalties under Customs administrative-penalty rules.",
-    "summary": "Up to 20,000 yuan in cash per person; declare more. Declare foreign cash worth over USD 5,000.",
+    "notes": "Interim Measures for the Administration of Carrying Foreign Currency Cash Into and Out of the Country (Huifa [2003] No. 102), Article 3 (written declaration above USD 5,000 on entry) and Article 6 (frequent crossers declare on every entry). Leaving China: up to USD 5,000 (or the amount declared on your last entry) needs no permit; more needs a carrying permit from a bank or SAFE, and above USD 10,000 is in principle not allowed (Articles 4, 5 and 7). Limits on carrying Chinese yuan (RMB) cash are set by a separate People's Bank of China rule that we have not been able to read on an official site, so they are not shown here.",
+    "summary": "Declare foreign cash worth over USD 5,000 in writing when you arrive. Limits for Chinese yuan cash are not verified here.",
     "legal_source": {
-      "name": "State Administration of Foreign Exchange (SAFE), Tianjin Branch — official notice reproducing the Interim Measures for the Administration of Carrying Foreign Currency Cash Into and Out of the Country",
+      "name": "State Administration of Foreign Exchange (SAFE) and General Administration of Customs — Interim Measures for the Administration of Carrying Foreign Currency Cash Into and Out of the Country (Huifa [2003] No. 102), notice and attached text on SAFE's Tianjin branch site",
       "url": "https://www.safe.gov.cn/tianjin/2024/0430/2466.html"
     },
-    "verified_at": "2026-08-18",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {

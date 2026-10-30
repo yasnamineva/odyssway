@@ -223,6 +223,11 @@ Ways to make that harder to copy and easier to trust:
    pages: membership and Annex I/II status unchanged for all 22 passports). Oldest data is
    now the August customs, destination and entry rows: re-read them in check-date order,
    a batch per session, before 2027-02 (6 months).
+   ✔ 2026-10-30 August pass: 18 destination records, Mexico food (2) and China cash re-read
+   (China's RMB 20,000 limit removed: no official text reachable). Still August-dated because
+   the sources don't load from here: 15 Japan rows (all `.go.jp` 403), 26 customs rows
+   (Australia, India, Vietnam, Nigeria, Rwanda, China alcohol/tobacco, EU weapons, NZ, TH
+   drones); list in `data/UNVERIFIED/TODO.md`. Next: September rows.
 3. **Exception awareness.** Keep splitting by situation (resident vs visitor, carried vs
    posted). Each split is an answer nobody else gives correctly.
 4. **Computation on top of data.** The tools in §2 turn rows into personal answers with

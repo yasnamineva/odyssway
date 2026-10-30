@@ -3914,3 +3914,9 @@ list found. Retry with the IGM "categorías de visas" PDF or the minex consular 
 - Brunei: moh.gov.bn Pharmacy Enforcement page 403. Cambodia (DDF) and Mongolia (MOH) homepages
   have nothing for travellers.
 - Destination photos for KG, OM, BN: pixabay.com returns 403 here; ask the owner for links.
+
+## 2026-10-30 — August-dated rows, re-read pass
+
+- **Re-read and re-dated:** food-animal-mx, food-plant-mx (SENASICA list dated 27 Apr 2026, unchanged; added sandwiches/burgers with meat or dairy without sealed packaging, raw crustaceans, live animals). cash-cn now cites the attached text of Huifa [2003] No. 102 (SAFE Tianjin .doc attachment): Art. 3 confirms the USD 5,000 written declaration on entry, Art. 6 the frequent-crosser rule.
+- **Removed from production (unsourced):** the RMB 20,000 cash limit in cash-cn. Needs PBOC Announcement [2004] No. 18 on an official site: pbc.gov.cn path unknown, gov.cn gazette search 403, customs.gov.cn has a TLS error. Taiwan's own RMB 20,000 entry cap (cash-tw) is a different rule and stays.
+- **Still unreachable today:** all `.go.jp` (MOFA and embassies, 403) for the 15 Japan entry rows; agriculture.gov.au, TGA, AUSTRAC (timeouts); chennaicustoms.gov.in, indiacode (timeouts); customs.gov.vn (timeout); customs.gov.ng and the Rwanda FDA PDF (403); english.cq.gov.cn (timeout).
