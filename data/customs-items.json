@@ -20933,5 +20933,57 @@
     "verified_at": "2026-10-28",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-om",
+    "names": [
+      "e-cigarette",
+      "e-cigarettes",
+      "vape",
+      "vapes",
+      "vaping device",
+      "e-liquid"
+    ],
+    "destination": "OM",
+    "category": "e_cigarettes",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "It's illegal to import or use e-cigarettes or vape products in Oman."
+    },
+    "summary": "Banned: you can't bring in or use e-cigarettes or vapes in Oman.",
+    "notes": "Oman Customs' traveller guide read for this site doesn't mention e-cigarettes; this row rests on the UK government's travel advice. France's travel advice doesn't mention them either.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Oman travel advice: Safety and security (updated 2026-10-27)",
+      "url": "https://www.gov.uk/foreign-travel-advice/oman/safety-and-security"
+    },
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-kg",
+    "names": [
+      "e-cigarette",
+      "e-cigarettes",
+      "vape",
+      "vapes",
+      "vaping device",
+      "e-liquid"
+    ],
+    "destination": "KG",
+    "category": "e_cigarettes",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "It's illegal to bring e-cigarettes, vaping devices or vaping liquids into Kyrgyzstan, or to buy or sell them there. Customs will confiscate them, and you could be fined or detained."
+    },
+    "summary": "Banned: e-cigarettes, vapes and e-liquids are confiscated at the border, and you could be fined or detained.",
+    "notes": "No Kyrgyz customs page was readable for this site (customs sites in the region are JavaScript apps); this row rests on the UK government's travel advice.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Kyrgyzstan travel advice: Safety and security (updated 2026-09-14)",
+      "url": "https://www.gov.uk/foreign-travel-advice/kyrgyzstan/safety-and-security"
+    },
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]
