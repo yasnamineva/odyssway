@@ -3955,3 +3955,19 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
   block scripts. Next try: the foreign-ministry cross-check route (GOV.UK content API,
   travel.gc.ca) per nationality, which re-reads the rule from a second government, and a
   browser-capable check for the JS portals.
+- **Lead (2026-10-30), Brunei vehicle entry/exit charge:** RCED notice image (customs.gov.bn,
+  /wp-content/uploads/2026/03/3.png) gives entry and exit charges per vehicle from 12 Dec 2022
+  (cars up to 7 seats $3.00 each way; 8–25 seats $6.00; over 25 seats $10.00; commercial
+  $6.00/$10.00). Not published: the image doesn't name the currency, and trip-charges.json has
+  no vehicle-charge kind yet.
+- **North Macedonia (2026-10-30): ADDED, 22 rows.** mfa.gov.mk now loads (it refused
+  connections before). Its "Do you need a visa?" page is a Livewire component: POST
+  /livewire/update with the page's wire:snapshot and CSRF token, calling
+  changeRegion('<region>') then changeHardcodedRecord(<id>), returns each country's
+  "Visa for foreign citizens: Needed / Not needed". Stay (90 in any 180, Arts 2, 11, 21),
+  passport (3 months after departure, issued within 10 years, Art. 11) and registration
+  (12/48 hours, Art. 190) from the Law on Foreigners consolidated text on mvr.gov.mk.
+  China and India need a visa; the pages read mention no exemption for holders of
+  Schengen/US/UK visas, so none is claimed. No customs rows yet.
+- Retry 2026-10-30: mofa.gov.la now loads (64 KB) but has no visa links on its home page;
+  legis.md and visa.nadra.gov.pk still 403; dip.gov.np times out.
