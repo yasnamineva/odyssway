@@ -85,6 +85,10 @@ export const photos = {
   "dest-uz": { width: 1280, height: 853, author: "xusenru", page: "https://pixabay.com/photos/samarkand-registan-uzbekistan-2399795/" },
   "dest-mn": { width: 1280, height: 640, author: "Kanenori", page: "https://pixabay.com/photos/landscape-majestic-river-meadow-2162211/" },
   "dest-tz": { width: 1280, height: 788, author: "klimentgrozdanoski", page: "https://pixabay.com/photos/africa-zanzibar-beach-tanzania-5135407/" },
+  // Destinations added in research batch 7 (2026-10).
+  "dest-kg": { width: 1280, height: 853, author: "Makalu", page: "https://pixabay.com/photos/kyrgyzstan-4652109/" },
+  "dest-om": { width: 1280, height: 847, author: "Makalu", page: "https://pixabay.com/photos/sultan-qaboos-grand-mosque-5963722/" },
+  "dest-bn": { width: 1280, height: 853, author: "vyngor", page: "https://pixabay.com/photos/ship-523587/" },
   // Blog posts.
   "blog-ees": { width: 1280, height: 853, author: null, page: "https://pixabay.com/photos/airport-tourism-flying-air-traffic-1515431/" },
   "blog-eta": { width: 1280, height: 853, author: "stocksnap", page: "https://pixabay.com/photos/window-airplane-airline-travel-2600716/" },
