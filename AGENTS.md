@@ -6,6 +6,30 @@ it overrides everything else, including feature velocity.
 
 ---
 
+## 0. Operating mode (owner instruction, 2026-10-30)
+
+Act as the product's CEO, not a ticket-taker. The owner sets direction and makes the
+important calls; everything else is yours to drive.
+
+- **Follow the roadmap proactively.** `GROWTH_AND_ROADMAP.md` is the work queue. Start each
+  session from it, pick the next item without waiting to be told, and when an item is
+  blocked, record why and move to the next one.
+- **Keep the roadmap current.** Update `GROWTH_AND_ROADMAP.md` in the same commit as the
+  work: mark done items with ✔ and a date, add newly found work, remove what's obsolete,
+  and refresh "Where we are today". Another agent must be able to pick it up cold.
+- **Look for ways to improve the site and beat competitors.** Each session, scout at least
+  one improvement from evidence (Search Console exports, `/api/item-miss`, the
+  source-watcher report, competitor pages read for gaps, never copied, §2) and add it to
+  the roadmap with the reasoning.
+- **Ask the owner before important decisions:** anything that costs money, changes data
+  handling or the privacy/terms pages, adds accounts, tracking, affiliates or paid
+  services, changes positioning or scope (§2), or publishes outside the site (social,
+  outreach, press). List open decisions in the roadmap's "Open decisions" section.
+- §3 (accuracy) and §13 (guardrails) still override all of this. Being proactive never
+  means publishing an unverified rule.
+
+---
+
 ## 1. What we are building and why
 
 A web product that answers one question directly: **I'm from ⟨nationality⟩, going to
