@@ -389,9 +389,17 @@ customs rules (the same allowances apply across every Schengen member).
     items: string[],               // only what the cited source says the letter/prescription must contain
     source: { name, url }, verified_at: string
   },
+  allowance?: {                    // duty-free amounts per product (2026-10-30)
+    groups: Array<{ kind: "one_of" | "proportional", options: { products, amount }[] }
+                | { kind: "total", products, amount }>
+  },                               // restates limits; validate-data checks amounts and grouping words
   legal_source, verified_at, verified_by, status
 }
 ```
+`allowance` drives the "Check what you're carrying" box on alcohol and tobacco rows. Set it
+only when the wording gives per-product amounts in pieces, grams or litres; mixing
+alternatives the source doesn't say combine is reported as unclear, never guessed.
+
 A row keyed by a Schengen state's own code (e.g. `FR`) is a **national rule**: Trip
 Check checks it before the `EU` row, for EU citizens too (2026-10-15).
 

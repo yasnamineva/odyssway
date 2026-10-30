@@ -353,6 +353,36 @@ export const customsLetterSchema = z.object({
   verified_at: isoDateSchema,
 });
 
+/**
+ * A duty-free allowance restating the row's own `limits` wording, per product
+ * (allowance.ts). validate-data checks every amount against that wording.
+ */
+const allowanceProductSchema = z.enum([
+  "cigarettes",
+  "cigarillos",
+  "cigars",
+  "smoking_tobacco",
+  "heated_tobacco_sticks",
+  "spirits",
+  "intermediate",
+  "still_wine",
+  "beer",
+]);
+const allowanceOptionSchema = z.object({
+  products: z.array(allowanceProductSchema).min(1),
+  amount: z.number().positive(),
+});
+export const customsAllowanceSchema = z.object({
+  groups: z
+    .array(
+      z.discriminatedUnion("kind", [
+        z.object({ kind: z.enum(["one_of", "proportional"]), options: z.array(allowanceOptionSchema).min(1) }),
+        z.object({ kind: z.literal("total"), products: z.array(allowanceProductSchema).min(1), amount: z.number().positive() }),
+      ]),
+    )
+    .min(1),
+});
+
 export const customsItemSchema = z
   .object({
     slug: z.string().regex(/^[a-z0-9-]+$/),
@@ -375,6 +405,7 @@ export const customsItemSchema = z
     procedure: customsProcedureSchema.optional(),
     transit: customsTransitSchema.optional(),
     letter: customsLetterSchema.optional(),
+    allowance: customsAllowanceSchema.optional(),
     ...verificationFields,
   })
   .superRefine(requireVerifierWhenVerified);

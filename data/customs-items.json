@@ -22,7 +22,25 @@
     },
     "verified_at": "2026-10-19",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits",
+                "intermediate",
+                "still_wine",
+                "beer"
+              ],
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-us",
@@ -44,7 +62,34 @@
     },
     "verified_at": "2026-10-19",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "proportional",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 50
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 2000
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-us",
@@ -278,7 +323,50 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "beer"
+              ],
+              "amount": 42
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "still_wine"
+              ],
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 4
+            },
+            {
+              "products": [
+                "intermediate"
+              ],
+              "amount": 9
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-gb",
@@ -302,7 +390,46 @@
     },
     "verified_at": "2026-10-16",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "proportional",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "cigarillos"
+              ],
+              "amount": 100
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 50
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 250
+            },
+            {
+              "products": [
+                "heated_tobacco_sticks"
+              ],
+              "amount": 200
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-gb",
@@ -510,7 +637,35 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "still_wine",
+                "intermediate"
+              ],
+              "amount": 1.5
+            },
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 1.14
+            },
+            {
+              "products": [
+                "beer"
+              ],
+              "amount": 8.5
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-ca",
@@ -532,7 +687,55 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "heated_tobacco_sticks"
+              ],
+              "amount": 200
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-ca",
@@ -765,7 +968,50 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "proportional",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 1
+            },
+            {
+              "products": [
+                "intermediate"
+              ],
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "still_wine"
+              ],
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "beer"
+              ],
+              "amount": 16
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-eu",
@@ -788,7 +1034,40 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "proportional",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "cigarillos"
+              ],
+              "amount": 100
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 50
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 250
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-eu",
@@ -1452,7 +1731,29 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 1
+            },
+            {
+              "products": [
+                "still_wine",
+                "intermediate"
+              ],
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-ke",
@@ -1682,7 +1983,34 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 20
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 250
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-za",
@@ -1851,7 +2179,34 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "still_wine",
+                "intermediate"
+              ],
+              "amount": 6
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-mx",
@@ -2081,7 +2436,25 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits",
+                "intermediate",
+                "still_wine",
+                "beer"
+              ],
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-th",
@@ -2390,7 +2763,29 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 1
+            },
+            {
+              "products": [
+                "still_wine",
+                "intermediate"
+              ],
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-rw",
@@ -2641,7 +3036,34 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 25
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 200
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "prescription-medication-eg",
@@ -2838,7 +3260,34 @@
     },
     "verified_at": "2026-08-12",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "still_wine",
+                "intermediate"
+              ],
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-ng",
@@ -2974,7 +3423,34 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "still_wine",
+                "intermediate"
+              ],
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-ma",
@@ -2999,7 +3475,40 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "cigarillos"
+              ],
+              "amount": 100
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 25
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 250
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-ma",
@@ -3237,7 +3746,25 @@
     },
     "verified_at": "2026-08-13",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits",
+                "intermediate",
+                "still_wine",
+                "beer"
+              ],
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-in",
@@ -3260,7 +3787,34 @@
     },
     "verified_at": "2026-08-13",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 100
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 25
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 125
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-in",
@@ -3541,7 +4095,35 @@
         "name": "Ministry of Trade — FAQ: Passenger transactions",
         "url": "https://trade.gov.tr/customs-formalities/frequently-asked-questions/passenger-transactions"
       }
-    ]
+    ],
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "intermediate",
+                "still_wine",
+                "beer"
+              ],
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-tr",
@@ -3773,7 +4355,25 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits",
+                "intermediate",
+                "still_wine",
+                "beer"
+              ],
+              "amount": 2.25
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-au",
@@ -4057,7 +4657,34 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 50
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 500
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "paan-nasvaar-ae",
@@ -4284,7 +4911,34 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 400
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 50
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 250
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-ph",
@@ -4462,7 +5116,34 @@
     },
     "verified_at": "2026-08-18",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 20
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 250
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-vn",
@@ -4541,7 +5222,35 @@
     },
     "verified_at": "2026-08-18",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes",
+                "heated_tobacco_sticks"
+              ],
+              "amount": 400
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 20
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 500
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-cn",
@@ -4594,7 +5303,25 @@
     },
     "verified_at": "2026-09-02",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits",
+                "intermediate",
+                "still_wine",
+                "beer"
+              ],
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-id",
@@ -4620,7 +5347,34 @@
     },
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "proportional",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 25
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 100
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-id",
@@ -4691,7 +5445,22 @@
     },
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cannabis-sa",
@@ -4816,7 +5585,25 @@
     },
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits",
+                "intermediate",
+                "still_wine",
+                "beer"
+              ],
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-br",
@@ -4841,7 +5628,35 @@
     },
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "cigars",
+                "cigarillos"
+              ],
+              "amount": 25
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 250
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-br",
@@ -8856,7 +9671,34 @@
     "destination": "HK",
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 19
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 1
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 25
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-hk",
@@ -9237,7 +10079,50 @@
     },
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "proportional",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 1
+            },
+            {
+              "products": [
+                "intermediate"
+              ],
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "still_wine"
+              ],
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "beer"
+              ],
+              "amount": 16
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-ie",
@@ -9264,7 +10149,40 @@
     },
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "proportional",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "cigarillos"
+              ],
+              "amount": 100
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 50
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 250
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-ie",
@@ -9599,7 +10517,25 @@
     "destination": "MY",
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits",
+                "intermediate",
+                "still_wine",
+                "beer"
+              ],
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-my",
@@ -9936,7 +10872,50 @@
     "destination": "GE",
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "proportional",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 1
+            },
+            {
+              "products": [
+                "intermediate"
+              ],
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "still_wine"
+              ],
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "beer"
+              ],
+              "amount": 16
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-ge",
@@ -9965,7 +10944,46 @@
     "destination": "GE",
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 50
+            },
+            {
+              "products": [
+                "cigarillos"
+              ],
+              "amount": 50
+            },
+            {
+              "products": [
+                "heated_tobacco_sticks"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 250
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "e-cigarettes-ge",
@@ -10412,7 +11430,34 @@
     },
     "verified_at": "2026-09-21",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 25
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 250
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "drones-mv",
@@ -10539,7 +11584,39 @@
     },
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "proportional",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 1
+            },
+            {
+              "products": [
+                "intermediate"
+              ],
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "still_wine"
+              ],
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-rs",
@@ -10822,7 +11899,25 @@
     },
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits",
+                "intermediate",
+                "still_wine",
+                "beer"
+              ],
+              "amount": 1.5
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-tw",
@@ -11179,7 +12274,50 @@
     },
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 1
+            },
+            {
+              "products": [
+                "intermediate"
+              ],
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "still_wine"
+              ],
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "beer"
+              ],
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-al",
@@ -11206,7 +12344,40 @@
     },
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "cigarillos"
+              ],
+              "amount": 100
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 50
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 250
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-al",
@@ -11400,7 +12571,50 @@
     },
     "verified_at": "2026-10-02",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 1
+            },
+            {
+              "products": [
+                "intermediate"
+              ],
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "still_wine"
+              ],
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "beer"
+              ],
+              "amount": 16
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-cy",
@@ -11427,7 +12641,40 @@
     },
     "verified_at": "2026-10-02",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "cigarillos"
+              ],
+              "amount": 100
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 50
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 250
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-cy",
@@ -12044,7 +13291,25 @@
     },
     "verified_at": "2026-10-09",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits",
+                "intermediate",
+                "still_wine",
+                "beer"
+              ],
+              "amount": 3
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-pe",
@@ -12320,7 +13585,25 @@
     },
     "verified_at": "2026-10-09",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits",
+                "intermediate",
+                "still_wine",
+                "beer"
+              ],
+              "amount": 5
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-do",
@@ -13212,7 +14495,25 @@
     },
     "verified_at": "2026-10-09",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits",
+                "intermediate",
+                "still_wine",
+                "beer"
+              ],
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-jo",
@@ -13238,7 +14539,33 @@
     },
     "verified_at": "2026-10-09",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 200
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "weapons-jo",
@@ -13450,7 +14777,24 @@
     },
     "verified_at": "2026-10-09",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits",
+                "intermediate",
+                "still_wine"
+              ],
+              "amount": 5
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-cr",
@@ -14075,7 +15419,25 @@
     },
     "verified_at": "2026-10-10",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits",
+                "intermediate",
+                "still_wine",
+                "beer"
+              ],
+              "amount": 2.5
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-cl",
@@ -14102,7 +15464,44 @@
     },
     "verified_at": "2026-10-10",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 400
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 500
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-cl",
@@ -14455,7 +15854,50 @@
     },
     "verified_at": "2026-10-10",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "proportional",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 1
+            },
+            {
+              "products": [
+                "intermediate"
+              ],
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "still_wine"
+              ],
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "beer"
+              ],
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-me",
@@ -14730,7 +16172,34 @@
     },
     "verified_at": "2026-10-10",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "still_wine",
+                "intermediate"
+              ],
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-jm",
@@ -14757,7 +16226,34 @@
     },
     "verified_at": "2026-10-10",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 50
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 230
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-jm",
@@ -15387,7 +16883,25 @@
     },
     "verified_at": "2026-10-10",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits",
+                "intermediate",
+                "still_wine",
+                "beer"
+              ],
+              "amount": 3
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-ec",
@@ -15615,7 +17129,24 @@
     },
     "verified_at": "2026-10-10",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits",
+                "intermediate",
+                "still_wine"
+              ],
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-tz",
@@ -16021,7 +17552,34 @@
     },
     "verified_at": "2026-10-10",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "still_wine",
+                "intermediate"
+              ],
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-il",
@@ -17055,7 +18613,25 @@
     ],
     "verified_at": "2026-10-20",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits",
+                "intermediate",
+                "still_wine",
+                "beer"
+              ],
+              "amount": 3
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-am",
@@ -17095,7 +18671,41 @@
     ],
     "verified_at": "2026-10-20",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "cigars",
+                "cigarillos"
+              ],
+              "amount": 50
+            },
+            {
+              "products": [
+                "heated_tobacco_sticks"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 250
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-am",
@@ -17275,7 +18885,22 @@
     ],
     "verified_at": "2026-10-21",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 6
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-uy",
@@ -17431,7 +19056,28 @@
     },
     "verified_at": "2026-10-23",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "proportional",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 1
+            },
+            {
+              "products": [
+                "intermediate"
+              ],
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-ba",
@@ -17456,7 +19102,40 @@
     },
     "verified_at": "2026-10-23",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "proportional",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "cigarillos"
+              ],
+              "amount": 100
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 50
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 250
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-ba",
@@ -17802,7 +19481,34 @@
     },
     "verified_at": "2026-10-23",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 0.375
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "still_wine",
+                "intermediate"
+              ],
+              "amount": 0.75
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-gh",
@@ -17854,7 +19560,45 @@
     },
     "verified_at": "2026-10-23",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "beer"
+              ],
+              "amount": 2.5
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "still_wine",
+                "intermediate"
+              ],
+              "amount": 2.5
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 1.5
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-zm",
@@ -17902,7 +19646,34 @@
     },
     "verified_at": "2026-10-25",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 19
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 1
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 25
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "alcohol-mo",
@@ -18009,7 +19780,35 @@
     },
     "verified_at": "2026-10-25",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "proportional",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 3
+            },
+            {
+              "products": [
+                "still_wine",
+                "intermediate"
+              ],
+              "amount": 4.5
+            },
+            {
+              "products": [
+                "beer"
+              ],
+              "amount": 4.5
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-fj",
@@ -18175,7 +19974,36 @@
     },
     "verified_at": "2026-10-25",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits",
+                "intermediate",
+                "still_wine",
+                "beer"
+              ],
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits"
+              ],
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "alcohol-mu",
@@ -18329,7 +20157,25 @@
         "name": "Korea Customs Service call centre FAQ — 여행자휴대품의 면세범위 (duty-free allowances; Enforcement Rules of the Customs Act, Art. 48)",
         "url": "https://www.customs.go.kr/call/ad/crmcc/selectFaqViewPage.do?mi=6822&cnslKnwlSrno=411"
       }
-    ]
+    ],
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "spirits",
+                "intermediate",
+                "still_wine",
+                "beer"
+              ],
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "tobacco-kr",
@@ -18366,7 +20212,40 @@
         "name": "Korea Customs Service call centre FAQ — 면세범위를 초과하는 담배에 부과되는 세금 (tobacco allowances by type and taxes above them)",
         "url": "https://www.customs.go.kr/call/ad/crmcc/selectFaqViewPage.do?mi=6822&cnslKnwlSrno=436"
       }
-    ]
+    ],
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 50
+            },
+            {
+              "products": [
+                "heated_tobacco_sticks"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 250
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-eg",
@@ -18433,7 +20312,22 @@
     },
     "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "weapons-kr",
@@ -18994,7 +20888,22 @@
     },
     "verified_at": "2026-10-28",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 400
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "slug": "cash-om",

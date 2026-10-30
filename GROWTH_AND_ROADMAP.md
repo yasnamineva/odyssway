@@ -272,7 +272,10 @@ Gaps worth closing, in order:
    FAQ markup. No new facts, only questions our rows already answer.
 3. **Translated item and medicine pages** (§5.5): canibringto ranks in zh/ja/vi. Our Search
    Console top countries include India and Singapore; pick locales from the November export.
-4. **Quantity check** on allowance pages (enter how many you carry, see within/over the
+4. ✔ 2026-10-30 **Quantity check** ("Check what you're carrying") on 70 alcohol and tobacco rows. Not yet
+   structured (wording gives packs, bottles, cans, weight shared with cigarettes, or 16/20/30%
+   strength lines): ~40 rows, e.g. Japan, Mexico tobacco, Seychelles, Vietnam alcohol, Hong Kong
+   alcohol, Mauritius. Original note: quantity check on allowance pages (enter how many you carry, see within/over the
    limit). Needs structured quantities on alcohol/tobacco rows first (like `passportValidity`
    restating prose, checked by validate-data).
 5. Export direction ("leaving X with Y") stays out for now (§0 ignored queries); revisit if

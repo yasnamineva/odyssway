@@ -1289,5 +1289,36 @@
     "dest-om": "The Sultan Qaboos Grand Mosque behind flowering gardens, Muscat, Oman",
     "dest-bn": "A royal barge in front of the Omar Ali Saifuddien Mosque, Bandar Seri Begawan, Brunei",
     "creditAnonymous": "Photo: Pixabay"
+  },
+  "allowanceCheck": {
+    "title": "Check what you're carrying",
+    "intro": "Enter how much you're bringing. We compare it with the duty-free amounts in the rule above.",
+    "product": {
+      "cigarettes": "Cigarettes",
+      "cigarillos": "Cigarillos",
+      "cigars": "Cigars",
+      "heated_tobacco_sticks": "Heated-tobacco sticks",
+      "smoking_tobacco": "Loose or pipe tobacco",
+      "spirits": "Spirits over 22%",
+      "intermediate": "Fortified or sparkling wine, other drinks up to 22%",
+      "still_wine": "Still wine",
+      "beer": "Beer"
+    },
+    "unit": {
+      "pieces": "number",
+      "g": "grams",
+      "l": "litres"
+    },
+    "bottleHint": "A standard wine bottle is 0.75 litres; a can of beer is usually 0.33 to 0.5 litres.",
+    "invalid": "Enter numbers only, for example 1.5.",
+    "status": {
+      "within": "Within the duty-free allowance.",
+      "over": "Over the duty-free allowance. See what the rule above says about amounts over it.",
+      "unclear": "You're mixing products the rule lists as alternatives (\"or\"), and it doesn't say whether they can be combined. Carry one kind, or ask customs.",
+      "not_covered": "Part of what you're carrying has no duty-free amount in this rule."
+    },
+    "uncovered": "No duty-free amount stated for: {products}.",
+    "groupUsed": "{names}: {percent}% of that allowance.",
+    "disclaimer": "Checks amounts only. Age, value and other conditions in the rule above still apply. What you enter stays in your browser."
   }
 }

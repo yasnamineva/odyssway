@@ -216,6 +216,8 @@ export interface CustomsItemRecord {
   procedure?: CustomsProcedure;
   transit?: CustomsTransit;
   letter?: CustomsLetter;
+  /** Duty-free allowance per product, restating `limits` (allowance.ts). */
+  allowance?: import("./allowance").Allowance;
   legal_source: { name: string; url: string };
   verified_at: string | null;
   verified_by: string | null;

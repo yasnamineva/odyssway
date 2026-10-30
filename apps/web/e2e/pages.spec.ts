@@ -326,6 +326,21 @@ test("a customs row downloads a printable border card", async ({ page }) => {
   await download.saveAs("test-results/border-card.pdf");
 });
 
+test("the allowance check compares what you carry with the duty-free amounts", async ({ page }) => {
+  await page.goto("/bring/alcohol/united-kingdom");
+  const check = page.getByTestId("allowance-check").first();
+  await expect(check).toBeVisible();
+  const spirits = check.locator('input[data-product="spirits"]');
+  await spirits.fill("4");
+  await expect(check.getByTestId("allowance-result")).toContainText("Within the duty-free allowance");
+  await spirits.fill("5");
+  await expect(check.getByTestId("allowance-result")).toContainText("Over the duty-free allowance");
+  // Spirits and drinks up to 22% are alternatives ("either ... or") in the UK rule.
+  await spirits.fill("1");
+  await check.locator('input[data-product="intermediate"]').fill("1");
+  await expect(check.getByTestId("allowance-result")).toContainText("doesn't say whether they can be combined");
+});
+
 test("rule cards link a pre-filled problem report", async ({ page }) => {
   await page.goto("/bring/medication/south-korea");
   const link = page.getByTestId("report-problem").first();
