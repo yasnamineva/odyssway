@@ -3941,6 +3941,9 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
   drones-ph (source is a JPG), controlled-medication-br (ANVISA page now thin),
   fresh-produce-ie (gov.ie page no longer gives the 5 kg/2 kg EU 2019/1793 limits),
   fresh-produce-mv (JKI PDF now 404 — find the regulation elsewhere).
-- **Not checked yet:** 12 rows with only small figures, 48 rows without figures (verdicts
-  like "prohibited" need reading), 12 rows whose sources didn't load, and 134 September
-  entry rows.
+- **Figureless rows read against the best-matching source sentence:** 31 confirmed and
+  re-dated (alcohol-my: both the air and non-air tables give 1 litre, row right). Still
+  September-dated (48): Brazil and Indonesia rows (Portuguese/Indonesian pages, need a
+  proper read), weak or partial matches (e.g. e-cigarettes-sg, tobacco-my, meat-dairy-nz,
+  prohibited-items-mv, meat-dairy-rs 1 kg), rows whose sources didn't load, plus the 134
+  September entry rows.
