@@ -1,5 +1,71 @@
 [
   {
+    "commit": "05015b01e6665c82943d38b8a40f3cf8974e0ae5",
+    "date": "2026-10-30",
+    "dataset": "customs-items",
+    "summary": "September customs re-read, part 2: 31 figureless rows confirmed against their source pages and re-dated",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing fruit, vegetables, nuts and seeds into Great Britain",
+      "url": "https://www.gov.uk/bringing-food-into-great-britain/fruit-vegetables-nuts-seeds"
+    },
+    "destinations": [
+      "AE",
+      "AL",
+      "BR",
+      "CN",
+      "GB",
+      "IE",
+      "JP",
+      "KR",
+      "MV",
+      "MY",
+      "NZ",
+      "RS",
+      "SA",
+      "SG",
+      "TW"
+    ]
+  },
+  {
+    "commit": "24c302e5fb991eb3daae591b4644061e86a910f8",
+    "date": "2026-10-30",
+    "dataset": "customs-items",
+    "summary": "September customs re-read: 66 rows re-dated against current pages; Singapore food rows corrected to SFA's per-type limits (no 5 kg/5 L/S$100 combined allowance); Taiwan e-cigarette fine cited to the Tobacco Hazards Prevention Act; US drones cite FAA registration pages",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Transport Canada — Getting permission to fly a drone in Canada as a foreign pilot",
+      "url": "https://tc.canada.ca/en/aviation/drone-safety/drone-pilot-licensing/get-permission-special-drone-operations/get-permission-fly-drone-foreign-pilot"
+    },
+    "destinations": [
+      "AE",
+      "AL",
+      "BR",
+      "CA",
+      "CN",
+      "EG",
+      "GB",
+      "GE",
+      "HK",
+      "ID",
+      "IE",
+      "MV",
+      "MX",
+      "MY",
+      "NZ",
+      "PH",
+      "RS",
+      "RW",
+      "SA",
+      "SG",
+      "TW",
+      "US",
+      "ZA"
+    ]
+  },
+  {
     "commit": "a70d92d33de1a86acbc03e80e80d374fc1338780",
     "date": "2026-10-30",
     "dataset": "customs-items",

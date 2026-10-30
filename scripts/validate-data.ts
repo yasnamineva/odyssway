@@ -238,6 +238,63 @@ function checkLeadTimeMatchesText(): void {
 }
 
 /**
+ * A customs row's `allowance` restates its own `limits` wording. Fail if an amount
+ * (in its unit, or as kg/ml) doesn't appear there, or if the grouping claims more
+ * than the wording says: `proportional` needs the wording to allow combining,
+ * `total` needs "total"/"combined", and alternatives need an "or".
+ */
+function checkAllowanceMatchesText(): void {
+  const file = join(DATA_DIR, "customs-items.json");
+  type Option = { products: string[]; amount: number };
+  type Group = { kind: "one_of" | "proportional"; options: Option[] } | { kind: "total"; products: string[]; amount: number };
+  const rows = JSON.parse(readFileSync(file, "utf8")) as Array<{
+    slug: string;
+    limits?: { description: string; quantity?: string };
+    allowance?: { groups: Group[] };
+  }>;
+  const unitOf = (p: string) =>
+    ["cigarettes", "cigarillos", "cigars", "heated_tobacco_sticks"].includes(p) ? "pieces" : p === "smoking_tobacco" ? "g" : "l";
+  const words: Record<number, string> = { 1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 10: "ten" };
+  const num = (n: number) => `(?:${String(n).replace(".", "[.,]")}${words[n] ? `|${words[n]}` : ""})`;
+  const patterns = (amount: number, unit: string): RegExp[] => {
+    if (unit === "pieces") return [new RegExp(`(?<![\\d.,])${num(amount)}(?![\\d.,]*\\d)`, "i")];
+    if (unit === "g")
+      return [
+        new RegExp(`(?<![\\d.,])${num(amount)}\\s?(g|grams?|grammes?)\\b`, "i"),
+        new RegExp(`(?<![\\d.,])${num(amount / 1000)}\\s?(kg|kilograms?)\\b`, "i"),
+      ];
+    return [
+      new RegExp(`(?<![\\d.,])${num(amount)}\\s?(l|litres?|liters?)\\b`, "i"),
+      new RegExp(`(?<![\\d.,])${num(Math.round(amount * 1000))}\\s?(ml|millilitres?|milliliters?)\\b`, "i"),
+    ];
+  };
+  for (const r of rows) {
+    if (!r.allowance) continue;
+    const text = `${r.limits?.quantity ?? ""} ${r.limits?.description ?? ""}`.replace(/(?<=\d),(?=\d{3}\b)/g, "");
+    const where = `${rel(file)}: ${r.slug} allowance`;
+    for (const g of r.allowance.groups) {
+      const amounts =
+        g.kind === "total"
+          ? [{ amount: g.amount, unit: unitOf(g.products[0]!) }]
+          : g.options.map((o) => ({ amount: o.amount, unit: unitOf(o.products[0]!) }));
+      for (const { amount, unit } of amounts) {
+        if (!patterns(amount, unit).some((re) => re.test(text))) errors.push(`${where}: ${amount} ${unit} isn't in the limits wording`);
+      }
+      if (g.kind === "proportional" && !/proportion|combin|split|assortment/i.test(text))
+        errors.push(`${where}: "proportional" but the wording doesn't say amounts can be combined`);
+      if (g.kind === "total" && !/\btotal\b|combined|in all|altogether/i.test(text))
+        errors.push(`${where}: "total" but the wording doesn't say the amount is shared`);
+      if (g.kind === "one_of" && g.options.length > 1 && !/\bor\b|one of|either/i.test(text))
+        errors.push(`${where}: alternatives but the wording has no "or"`);
+      const all = g.kind === "total" ? [g.products] : g.options.map((o) => o.products);
+      for (const products of all) {
+        if (new Set(products.map(unitOf)).size > 1) errors.push(`${where}: an option mixes units (${products.join(", ")})`);
+      }
+    }
+  }
+}
+
+/**
  * Rows that announce a future change ("takes effect from 1 October 2026") go stale
  * the day it happens. Warn (not fail) once such a date has passed, so the row is
  * re-checked against its source.
@@ -301,6 +358,7 @@ for (const f of unverifiedFiles) validateFile(f, false);
 checkNoUnverifiedReferences();
 checkPassportValidityMatchesText();
 checkLeadTimeMatchesText();
+checkAllowanceMatchesText();
 checkTimedStepsMatchText();
 warnPassedAnnouncements();
 warnUnsupportedNames();
