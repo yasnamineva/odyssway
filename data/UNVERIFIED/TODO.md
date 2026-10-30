@@ -3971,3 +3971,8 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
   Schengen/US/UK visas, so none is claimed. No customs rows yet.
 - Retry 2026-10-30: mofa.gov.la now loads (64 KB) but has no visa links on its home page;
   legis.md and visa.nadra.gov.pk still 403; dip.gov.np times out.
+- Laos (2026-10-30): mofa.gov.la loads; its consular legislation (contents id=46) has the
+  entry-exit decree (detail 566) and a list of diplomatic/official-passport exemption
+  agreements (detail 563), but no ordinary-passport visa-exemption list. Still blocked.
+- Ireland September rows (16): irishimmigration.ie's visa/non-visa lists aren't in the served
+  HTML, and its WordPress API (wp-json/wp/v2/pages/19078) returns 403. Held.
