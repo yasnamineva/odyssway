@@ -21334,5 +21334,56 @@
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "cash-mk",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "foreign currency",
+      "euros"
+    ],
+    "destination": "MK",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declare foreign currency worth 10,000 euros or more when you enter North Macedonia.",
+      "quantity": "EUR 10,000 or more"
+    },
+    "summary": "Declare foreign currency worth EUR 10,000 or more on arrival. Undeclared cash can be seized when you leave.",
+    "notes": "If you don't declare it, customs officers may detain you and seize the cash when you try to leave. North Macedonia's customs site didn't load for this site; this row rests on the UK government's travel advice.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — North Macedonia travel advice: Entry requirements, 'Taking money into North Macedonia' (updated 2026-08-13)",
+      "url": "https://www.gov.uk/foreign-travel-advice/north-macedonia/entry-requirements"
+    },
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-mk",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish"
+    ],
+    "destination": "MK",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Illegal drugs, including cannabis, carry severe penalties in North Macedonia: expect a long prison sentence and heavy fines for possessing, using or smuggling them."
+    },
+    "summary": "Banned: cannabis is an illegal drug in North Macedonia, with long prison sentences and heavy fines for bringing it in.",
+    "notes": "No North Macedonian customs or drug-law page was read for this site; this row rests on the UK government's travel advice, which says the penalties apply when transiting through the airport too and that transit baggage is scanned. It says nothing specific about CBD products, so CBD isn't covered here.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — North Macedonia travel advice: Safety and security (updated 2026-08-13)",
+      "url": "https://www.gov.uk/foreign-travel-advice/north-macedonia/safety-and-security"
+    },
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]
