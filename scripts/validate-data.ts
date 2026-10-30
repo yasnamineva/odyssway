@@ -295,6 +295,27 @@ function checkAllowanceMatchesText(): void {
 }
 
 /**
+ * Published rows rest on official sources only (AGENTS.md §3.2). Fail when a verified
+ * row's text leans on secondary material ("commonly reported", "secondary sources",
+ * "travel-industry"): such claims belong in data/UNVERIFIED, not in a published note.
+ */
+function checkNoSecondarySourcing(): void {
+  const re = /commonly[- ]reported|commonly cited|secondary (source|sourc|report|press|news)|travel-industry|third-party sources|news reporting/i;
+  for (const name of ["customs-items.json", "entry-requirements.json"]) {
+    const rows = JSON.parse(readFileSync(join(DATA_DIR, name), "utf8")) as Array<Record<string, unknown>>;
+    for (const r of rows) {
+      if (r.status !== "verified") continue;
+      const text = JSON.stringify([r.summary, r.limits, r.notes, r.documentsNeeded]);
+      const m = text.match(re);
+      if (m) {
+        const id = (r.slug as string) ?? `${r.nationality}→${r.destination}`;
+        errors.push(`data/${name}: ${id} cites secondary material ("${m[0]}"); keep only what an official source states`);
+      }
+    }
+  }
+}
+
+/**
  * Rows that announce a future change ("takes effect from 1 October 2026") go stale
  * the day it happens. Warn (not fail) once such a date has passed, so the row is
  * re-checked against its source.
@@ -359,6 +380,7 @@ checkNoUnverifiedReferences();
 checkPassportValidityMatchesText();
 checkLeadTimeMatchesText();
 checkAllowanceMatchesText();
+checkNoSecondarySourcing();
 checkTimedStepsMatchText();
 warnPassedAnnouncements();
 warnUnsupportedNames();
