@@ -3976,3 +3976,9 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
   agreements (detail 563), but no ordinary-passport visa-exemption list. Still blocked.
 - Ireland September rows (16): irishimmigration.ie's visa/non-visa lists aren't in the served
   HTML, and its WordPress API (wp-json/wp/v2/pages/19078) returns 403. Held.
+- September customs holds, read 2026-10-30: 11 more confirmed and re-dated (Singapore vapes,
+  Saudi alcohol and weapons, Serbia meat/dairy 1 kg, Hong Kong CBD, Brazil cannabis and
+  weapons, Indonesia weapons, Japan e-cigarette cartridges, Canada plant declaration,
+  Malaysia tobacco). Corrected: fresh-produce-eu (plants for planting need a certificate,
+  not 'banned outright'; now cites DG SANTE; Your Europe intro conflict recorded) and
+  alcohol-id (allowance is for passengers aged 21+, per beacukai.go.id).

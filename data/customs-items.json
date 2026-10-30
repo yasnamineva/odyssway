@@ -853,8 +853,8 @@
       "name": "CBSA — Food, plant and animal products",
       "url": "https://www.cbsa-asfc.gc.ca/services/fpa-apa/bringing-apporter-fpa-eng.html"
     },
-    "verified_at": "2026-09-14",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -5292,17 +5292,17 @@
     "category": "alcohol",
     "verdict": "allowed_with_limits",
     "limits": {
-      "description": "Duty-free allowance for adult passengers arriving in Indonesia is 1 liter of beverages containing ethyl alcohol. Quantities exceeding this are subject to import duty/excise, or may be seized/destroyed by customs.",
-      "quantity": "1 liter per adult passenger"
+      "description": "Duty-free allowance for passengers aged 21 or over arriving in Indonesia: at most 1 liter of drinks containing ethyl alcohol. Quantities exceeding this are subject to import duty/excise, or may be seized/destroyed by customs.",
+      "quantity": "1 liter, passengers aged 21+"
     },
     "notes": "Applies per adult traveler on arrival; excess alcohol beyond the 1-liter allowance is dutiable or subject to confiscation.",
-    "summary": "Duty-free: 1 litre of alcoholic drinks per adult. More is subject to duty and excise, or may be seized or destroyed.",
+    "summary": "Duty-free: 1 litre of alcoholic drinks for passengers aged 21 or over. More is subject to duty and excise, or may be seized or destroyed.",
     "legal_source": {
       "name": "Direktorat Jenderal Bea dan Cukai (Directorate General of Customs and Excise, Republic of Indonesia) — Barang Penumpang (Passenger Goods)",
       "url": "https://www.beacukai.go.id/barang-penumpang"
     },
-    "verified_at": "2026-09-02",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "allowance": {
       "groups": [
@@ -5419,8 +5419,8 @@
       "name": "ZATCA (Saudi Zakat, Tax and Customs Authority) – Traveler disclosure & prohibited items guidance",
       "url": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Pages/customs-individual/Travel-pages/disclosure-amounts.aspx"
     },
-    "verified_at": "2026-09-02",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -5532,8 +5532,8 @@
       "name": "ZATCA (Saudi Zakat, Tax and Customs Authority) — prohibited and restricted items for travelers",
       "url": "https://zatca.gov.sa/en/RulesRegulations/Taxes/Pages/customs-individual/Travel-pages/disclosure-amounts.aspx"
     },
-    "verified_at": "2026-09-14",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -5821,8 +5821,8 @@
       "name": "Singapore Customs - Controlled and Prohibited Goods for Imports",
       "url": "https://www.customs.gov.sg/doing-business/import-operations/import-procedures/controlled-and-prohibited-goods-for-imports/"
     },
-    "verified_at": "2026-09-02",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -6349,8 +6349,8 @@
       "name": "Receita Federal — Guia do Viajante: Proibições e Restrições (Entrada no Brasil)",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/proibicoes-restricoes"
     },
-    "verified_at": "2026-09-14",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -6376,8 +6376,8 @@
       "name": "Receita Federal — Guia do Viajante: Proibições e Restrições (Entrada no Brasil)",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/proibicoes-restricoes"
     },
-    "verified_at": "2026-09-14",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -7995,8 +7995,8 @@
       "name": "Direktorat Jenderal Bea dan Cukai (Indonesian Customs) — Barang Penumpang (Passenger Goods)",
       "url": "https://www.beacukai.go.id/barang-penumpang"
     },
-    "verified_at": "2026-09-14",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -8720,17 +8720,31 @@
     "category": "food_plant",
     "verdict": "depends",
     "limits": {
-      "description": "Plants for planting — seeds, bulbs, tubers, cuttings, grafts, rooted plants — are banned outright from non-EU countries in personal luggage. Fruit, vegetables, flowers and other plant products need a phytosanitary certificate issued in the country of origin, except for a short exempt list (pineapple, coconut, durian, banana, and dates, per Annex XI of Implementing Regulation (EU) 2019/2072), which need no certificate."
+      "description": "In personal luggage from outside the EU, plants (including plants for planting), plant products, fruit, vegetables and cut flowers must come with a phytosanitary certificate. No certificate is needed for five fruits: pineapple, coconut, durian, banana and dates. Some plants and plant products from non-EU countries are banned outright (Annex VI of Implementing Regulation (EU) 2019/2072)."
     },
-    "notes": "Undocumented plant goods that don't fall on the exempt list are confiscated and destroyed at the EU external border, not just fined.",
-    "summary": "Seeds, bulbs, cuttings and plants for planting are banned from outside the EU. Fruit, vegetables and flowers need a certificate, except a short exempt list.",
+    "notes": "Plant goods without the required certificate are confiscated at the EU border. The EU's Your Europe page opens by saying travellers may bring 'a limited quantity of fruit and vegetables', but its own table and the Commission's plant-health page both require a phytosanitary certificate for plant products; this row follows the plant-health rules (Implementing Regulation (EU) 2019/2072).",
+    "summary": "Fruit, vegetables, flowers and plants need a phytosanitary certificate from outside the EU. Pineapple, coconut, durian, banana and dates don't.",
     "legal_source": {
-      "name": "European Commission — Your Europe: Taking animal products, food or plants with you in the EU",
-      "url": "https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm"
+      "name": "European Commission (DG SANTE) — Plant health: trade of plants and plant products with non-EU countries, 'Passengers' luggage'",
+      "url": "https://food.ec.europa.eu/plants/plant-health-and-biosecurity/trade-plants-plant-products-non-eu-countries_en"
     },
-    "verified_at": "2026-09-16",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Certificate needed for plants to be planted, fruits, vegetables, cut flowers in passengers' luggage; exemption for pineapple, coconut, durian, banana, date (Annex XI, Reg. 2019/2072); some commodities prohibited (Annex VI)",
+        "name": "European Commission (DG SANTE) — Plant health: trade of plants and plant products with non-EU countries, 'Passengers' luggage'",
+        "url": "https://food.ec.europa.eu/plants/plant-health-and-biosecurity/trade-plants-plant-products-non-eu-countries_en",
+        "checked": "2026-10-30"
+      },
+      {
+        "claim": "Conflict: intro says a limited quantity of fruit and vegetables may be brought; the table requires a phytosanitary certificate for plants or plant products (last checked 21/10/2026)",
+        "name": "European Commission — Your Europe: Taking animal products, food or plants with you in the EU",
+        "url": "https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm",
+        "checked": "2026-10-30"
+      }
+    ]
   },
   {
     "slug": "nicotine-pouches-fr",
@@ -9173,8 +9187,8 @@
       "name": "Ministry of Health, Labour and Welfare (MHLW) — Q&A on Pharmaceutical Import Procedures (医薬品等輸入手続質疑応答集)",
       "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb9332&dataType=1&pageNo=2"
     },
-    "verified_at": "2026-09-19",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -9802,8 +9816,8 @@
       "url": "https://www.nd.gov.hk/en/CBD.html"
     },
     "destination": "HK",
-    "verified_at": "2026-09-21",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -10558,8 +10572,8 @@
       "url": "https://www.customs.gov.my/en/individu/pengembara/travelers-guide"
     },
     "destination": "MY",
-    "verified_at": "2026-09-21",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
@@ -11797,8 +11811,8 @@
       "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
       "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
     },
-    "verified_at": "2026-09-22",
-    "verified_by": "agent:claude-sonnet-5",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
   {
