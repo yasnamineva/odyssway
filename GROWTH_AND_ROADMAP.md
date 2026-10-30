@@ -99,7 +99,8 @@ Japan?"). They are weak in five places, and each one is a direction for us:
 Tools are the part AI answers can't copy: they compute from the user's own dates and
 items, deterministically, from verified rows. In priority order:
 
-**Travel readiness (agreed 2026-10-28, after review of an external expansion brief).**
+**Travel readiness (agreed 2026-10-28, after review of an external expansion brief,
+kept with a status table in `odyssway_product_expansion_brief.md`).**
 The connected workflow is *can I go → am I ready → what will entry cost → what changed
 since I checked*. Built client-side from verified rows; no accounts.
 
