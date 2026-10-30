@@ -1,5 +1,184 @@
 [
   {
+    "commit": "1bbb15ec173336538473f9b8b7b390a0ee851327",
+    "date": "2026-10-30",
+    "dataset": "customs-items",
+    "summary": "North Macedonia customs: cash declaration from EUR 10,000 and cannabis penalties, from GOV.UK (customs.gov.mk unreachable)",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing fruit, vegetables, nuts and seeds into Great Britain",
+      "url": "https://www.gov.uk/bringing-food-into-great-britain/fruit-vegetables-nuts-seeds"
+    },
+    "destinations": [
+      "MK"
+    ]
+  },
+  {
+    "commit": "2b398a3bae7b5e14b991bc3bcb52f965430cee1f",
+    "date": "2026-10-30",
+    "dataset": "destinations",
+    "summary": "Add North Macedonia (66 destinations): visa status for 22 passports from the MFA's per-country tool (China and India need a visa), 90 days in any 180, passport 3 months after departure and issued within 10 years, police registration within 48 hours, from the Law on Foreigners",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "U.S. Visa Waiver Program, 8 U.S.C. §1187",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title8/html/USCODE-2023-title8-chap12-subchapII-partII-sec1187.htm"
+    },
+    "destinations": [
+      "MK"
+    ]
+  },
+  {
+    "commit": "2b398a3bae7b5e14b991bc3bcb52f965430cee1f",
+    "date": "2026-10-30",
+    "dataset": "entry-requirements",
+    "summary": "Add North Macedonia (66 destinations): visa status for 22 passports from the MFA's per-country tool (China and India need a visa), 90 days in any 180, passport 3 months after departure and issued within 10 years, police registration within 48 hours, from the Law on Foreigners",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "destinations": [
+      "MK"
+    ]
+  },
+  {
+    "commit": "302d390e9fa0b888b84ef3230540bb8629ca5495",
+    "date": "2026-10-30",
+    "dataset": "customs-items",
+    "summary": "Brunei: first customs rows (alcohol for non-Muslims 17+, declared and drunk in private, amount not stated; drug penalties up to death), from GOV.UK; Brunei's linked customs page returns 404",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing fruit, vegetables, nuts and seeds into Great Britain",
+      "url": "https://www.gov.uk/bringing-food-into-great-britain/fruit-vegetables-nuts-seeds"
+    },
+    "destinations": [
+      "BN"
+    ]
+  },
+  {
+    "commit": "18500bfe8596906675630a12391a95f50a595571",
+    "date": "2026-10-30",
+    "dataset": "customs-items",
+    "summary": "Macao e-cigarettes (import banned) and Zambia drones (ZCAA authorisation), from Canada's travel advice",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing fruit, vegetables, nuts and seeds into Great Britain",
+      "url": "https://www.gov.uk/bringing-food-into-great-britain/fruit-vegetables-nuts-seeds"
+    },
+    "destinations": [
+      "MO",
+      "ZM"
+    ]
+  },
+  {
+    "commit": "f16813961b695809dcec3faacc3a4cce44129ad0",
+    "date": "2026-10-30",
+    "dataset": "customs-items",
+    "summary": "Customs gaps from GOV.UK travel advice: cannabis (Ghana, Mongolia, Bosnia and Herzegovina, Mauritius, Zimbabwe), cash declaration (Mongolia, USD 10,000), drones (Oman licence), medication (Oman, Kyrgyzstan); Mauritius cigarette papers",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing fruit, vegetables, nuts and seeds into Great Britain",
+      "url": "https://www.gov.uk/bringing-food-into-great-britain/fruit-vegetables-nuts-seeds"
+    },
+    "destinations": [
+      "BA",
+      "GH",
+      "KG",
+      "MN",
+      "MU",
+      "OM",
+      "ZW"
+    ]
+  },
+  {
+    "commit": "1733e880fb1e6008820fb29d42f639e8a0543f41",
+    "date": "2026-10-30",
+    "dataset": "customs-items",
+    "summary": "E-cigarettes: Oman (import and use illegal) and Kyrgyzstan (import, sale and purchase illegal; confiscation, fine or detention), from GOV.UK travel advice; no local page states it",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing fruit, vegetables, nuts and seeds into Great Britain",
+      "url": "https://www.gov.uk/bringing-food-into-great-britain/fruit-vegetables-nuts-seeds"
+    },
+    "destinations": [
+      "KG",
+      "OM"
+    ]
+  },
+  {
+    "commit": "d434dbdcff35844f3fd70671a9c0f5ed16d94e61",
+    "date": "2026-10-30",
+    "dataset": "customs-items",
+    "summary": "Check what you're carrying: duty-free allowance check on 70 alcohol and tobacco rows (allowance groups: one of, proportional, shared total; mixing alternatives reported as unclear); validate-data checks every amount and grouping word against the row's wording",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing fruit, vegetables, nuts and seeds into Great Britain",
+      "url": "https://www.gov.uk/bringing-food-into-great-britain/fruit-vegetables-nuts-seeds"
+    },
+    "destinations": [
+      "AE",
+      "AL",
+      "AM",
+      "AU",
+      "BA",
+      "BR",
+      "CA",
+      "CL",
+      "CN",
+      "CR",
+      "CY",
+      "DO",
+      "EC",
+      "EG",
+      "EU",
+      "FJ",
+      "GB",
+      "GE",
+      "GH",
+      "HK",
+      "ID",
+      "IE",
+      "IL",
+      "IN",
+      "JM",
+      "JO",
+      "KE",
+      "KR",
+      "MA",
+      "ME",
+      "MO",
+      "MV",
+      "MX",
+      "MY",
+      "NG",
+      "OM",
+      "PE",
+      "PH",
+      "QA",
+      "RS",
+      "RW",
+      "SA",
+      "TH",
+      "TR",
+      "TW",
+      "TZ",
+      "US",
+      "UY",
+      "VN",
+      "ZA",
+      "ZM",
+      "ZW"
+    ]
+  },
+  {
     "commit": "05015b01e6665c82943d38b8a40f3cf8974e0ae5",
     "date": "2026-10-30",
     "dataset": "customs-items",
