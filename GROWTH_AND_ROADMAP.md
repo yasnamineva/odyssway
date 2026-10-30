@@ -227,7 +227,11 @@ Ways to make that harder to copy and easier to trust:
    (China's RMB 20,000 limit removed: no official text reachable). Still August-dated because
    the sources don't load from here: 15 Japan rows (all `.go.jp` 403), 26 customs rows
    (Australia, India, Vietnam, Nigeria, Rwanda, China alcohol/tobacco, EU weapons, NZ, TH
-   drones); list in `data/UNVERIFIED/TODO.md`. Next: September rows.
+   drones); list in `data/UNVERIFIED/TODO.md`.
+   ✔ 2026-10-30 September customs pass: 97 of 148 rows re-dated (figures re-found on the
+   current page, or read by hand); Singapore food rows corrected (SFA's per-type limits);
+   Taiwan e-cigarette fine cited to the Act. Held: 48 customs rows and the 134 September
+   entry rows (JS portals, paywalled Georgian register), see TODO for the route.
 3. **Exception awareness.** Keep splitting by situation (resident vs visitor, carried vs
    posted). Each split is an answer nobody else gives correctly.
 4. **Computation on top of data.** The tools in §2 turn rows into personal answers with
@@ -262,7 +266,8 @@ Gaps worth closing, in order:
 1. ✔ 2026-10-30: "Something wrong or out of date? Report it" on every customs rule card and
    passport page: a pre-filled email (rule, page, our source, check date) to the support
    address. The FAQ said "point us at the source" but gave no way to do it.
-2. **Misconception FAQs from verified rows only**: where a source states it (duty-free
+2. ✗ Dropped 2026-10-30: pair pages already show transit, permit and letter facts, and Google
+   now limits FAQ rich results mostly to government and health sites. **Misconception FAQs from verified rows only**: where a source states it (duty-free
    purchases, transit airside, carrying for someone else), add a question to the pair page's
    FAQ markup. No new facts, only questions our rows already answer.
 3. **Translated item and medicine pages** (§5.5): canibringto ranks in zh/ja/vi. Our Search
