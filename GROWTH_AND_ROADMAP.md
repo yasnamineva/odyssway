@@ -6,13 +6,13 @@ anything gets built, and its Accuracy Policy (§3) comes before everything here.
 listed as *candidates* are research leads, not verified rules, and none can be published
 without a primary official source.
 
-Where we are today (2026-10-25):
+Where we are today (2026-10-30):
 
-- 61 destinations plus the Schengen Area; 1,275 verified entry rows; 595 customs rows
-  (131 medication, 35 with a doctor's-letter checklist, 17 with a permit how-to, 20 with
-  a transit rule); 400 entry rows with a structured passport-validity rule.
-- Tools: Trip Check (multi-country route, passport check per stop), the 90/180
-  calculator, the multi-country day counter, named-medicine pages, border cards,
+- 65 destinations plus the Schengen Area; 1,360 verified entry rows; 630 customs rows
+  (135 medication, 38 with a doctor's-letter checklist, 19 with a permit how-to, 19 with
+  a transit rule); 555 entry rows with a structured passport-validity rule.
+- Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
+  planner, travel-authorisation guides, the 90/180 calculator, the multi-country day counter, named-medicine pages, border cards,
   embeddable calculator and "Can I bring it?" widgets, the public JSON API.
 - About 2,000 URLs in the sitemap. Google indexes well; Bing indexes the pages but shows
   them rarely (young domain, few links).
@@ -218,6 +218,10 @@ Ways to make that harder to copy and easier to trust:
    KR; NZ (SafeTravel) and AU (Smartraveller) need a browser.
 2. **Re-verification cadence.** Every row re-read at least every 6 months; show the
    oldest check date on `/sources`. A competitor can copy today's data, not the history.
+   ✔ 2026-10-30: the July-dated Schengen files re-read (EC Schengen-area and visa-policy
+   pages: membership and Annex I/II status unchanged for all 22 passports). Oldest data is
+   now the August customs, destination and entry rows: re-read them in check-date order,
+   a batch per session, before 2027-02 (6 months).
 3. **Exception awareness.** Keep splitting by situation (resident vs visitor, carried vs
    posted). Each split is an answer nobody else gives correctly.
 4. **Computation on top of data.** The tools in §2 turn rows into personal answers with
