@@ -3920,3 +3920,27 @@ list found. Retry with the IGM "categorías de visas" PDF or the minex consular 
 - **Re-read and re-dated:** food-animal-mx, food-plant-mx (SENASICA list dated 27 Apr 2026, unchanged; added sandwiches/burgers with meat or dairy without sealed packaging, raw crustaceans, live animals). cash-cn now cites the attached text of Huifa [2003] No. 102 (SAFE Tianjin .doc attachment): Art. 3 confirms the USD 5,000 written declaration on entry, Art. 6 the frequent-crosser rule.
 - **Removed from production (unsourced):** the RMB 20,000 cash limit in cash-cn. Needs PBOC Announcement [2004] No. 18 on an official site: pbc.gov.cn path unknown, gov.cn gazette search 403, customs.gov.cn has a TLS error. Taiwan's own RMB 20,000 entry cap (cash-tw) is a different rule and stays.
 - **Still unreachable today:** all `.go.jp` (MOFA and embassies, 403) for the 15 Japan entry rows; agriculture.gov.au, TGA, AUSTRAC (timeouts); chennaicustoms.gov.in, indiacode (timeouts); customs.gov.vn (timeout); customs.gov.ng and the Rwanda FDA PDF (403); english.cq.gov.cn (timeout).
+
+## 2026-10-30 — September customs rows, re-read pass
+
+Method: fetched every reachable legal_source (and _sources) page and required every figure of
+10 or more in the row's limits to appear in the current page text; mismatches read by hand.
+- **Re-dated (66):** 57 rows whose figures all appear on the current page, 8 read by hand
+  (tobacco-br "10 packs of 20", cash-my "USD 10,000.00", alcohol-al spelled-out litres,
+  cannabis-hk, controlled-medication-ae "three months", meat-dairy-tw, controlled-medication-sa,
+  controlled-medication-cn), and drones-us (now cites FAA registration and recreational pages).
+- **Corrected:** meat-dairy-sg and fresh-produce-sg. SFA's list (updated 28 Oct 2026) has no
+  "5 kg/5 L/S$100 combined" allowance: meat 5 kg from approved sources (poultry now listed),
+  other processed food incl. milk 5 kg combined, eggs 30 from listed sources, fruit and veg a
+  hand-carry quantity. Unsourced ICA penalty note on fresh-produce-sg removed.
+  e-cigarettes-tw: fine NT$50,000–5,000,000 now cited to the Tobacco Hazards Prevention Act
+  Art. 26(2) (law.moj.gov.tw, amended 2023-02-15). Watch: a June 2026 Cabinet proposal
+  (Focus Taiwan) would change traveller fines; not law yet.
+- **Held, need reading:** drones-jp (MLIT page no longer states 100 g in its text),
+  drones-kr (portal is a JS shell), drones-ng (NCAA guidance page has no 250 g in text),
+  drones-ph (source is a JPG), controlled-medication-br (ANVISA page now thin),
+  fresh-produce-ie (gov.ie page no longer gives the 5 kg/2 kg EU 2019/1793 limits),
+  fresh-produce-mv (JKI PDF now 404 — find the regulation elsewhere).
+- **Not checked yet:** 12 rows with only small figures, 48 rows without figures (verdicts
+  like "prohibited" need reading), 12 rows whose sources didn't load, and 134 September
+  entry rows.
