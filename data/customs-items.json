@@ -19728,6 +19728,33 @@
     "status": "verified"
   },
   {
+    "slug": "e-cigarettes-mo",
+    "names": [
+      "e-cigarette",
+      "e-cigarettes",
+      "vape",
+      "vapes",
+      "vaporizer",
+      "vaping device",
+      "e-liquid"
+    ],
+    "destination": "MO",
+    "category": "e_cigarettes",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "It's prohibited to import, export or distribute e-cigarettes, vaporizers and their refills in Macao."
+    },
+    "summary": "Banned: you can't bring e-cigarettes, vaporizers or refills into Macao.",
+    "notes": "Macao's customs and health sites didn't load for this site; this row rests on the Government of Canada's travel advice.",
+    "legal_source": {
+      "name": "Government of Canada — Macao travel advice: Laws and culture, 'Electronic cigarettes and vaporizers' (last updated 9 October 2026)",
+      "url": "https://travel.gc.ca/destinations/macao"
+    },
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "cash-zm",
     "names": [
       "cash",
@@ -19750,6 +19777,30 @@
       "url": "https://www.zra.org.zm/wp-content/uploads/2024/02/User-Guide-for-the-Integrated-Border-Declaration-Form-Process-on-the-Customs-Portal-and-TaxOnApp.pdf"
     },
     "verified_at": "2026-10-25",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-zm",
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft"
+    ],
+    "destination": "ZM",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "To fly a drone in Zambia, you must get the necessary authorisations from the Zambia Civil Aviation Authority. Photographing sensitive installations is prohibited."
+    },
+    "summary": "You need authorisation from the Zambia Civil Aviation Authority to fly a drone.",
+    "notes": "The advice covers flying, not bringing a drone in. No Zambian aviation or customs page was read for this site; this row rests on the Government of Canada's travel advice.",
+    "legal_source": {
+      "name": "Government of Canada — Zambia travel advice: Laws and culture, 'Photography and drones' (last updated 13 October 2026)",
+      "url": "https://travel.gc.ca/destinations/zambia"
+    },
+    "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
