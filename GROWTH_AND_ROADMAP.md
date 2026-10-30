@@ -183,6 +183,11 @@ South Africa, Nigeria, Poland, Portugal, Vietnam, Pakistan. Add one at a time, f
   UAE and China. Still blocked: Mongolia (customs figures conflict, undated), Uzbekistan
   (customs.uz is a JavaScript app), China e-cigarettes (source unreachable), Australia drones
   depth (CASA unreachable).
+- ✔ 2026-10-30 GOV.UK pass over the gaps: e-cigarettes (Oman, Kyrgyzstan), cannabis (Ghana,
+  Mongolia, Bosnia and Herzegovina, Mauritius, Zimbabwe; no CBD inferred), cash (Mongolia),
+  drones (Oman), medication (Oman, Kyrgyzstan); Mauritius cigarette papers. GOV.UK says nothing
+  usable on vapes for the other 35 destinations without a vape row, on drones for 16, on CBD
+  for 18; those need each country's own customs or health pages.
 - Customs rows for destinations that have none or very few: Mongolia, Seychelles medicine,
   Zimbabwe tobacco and cash (ZIMRA gives no primary threshold).
 - **Second vertical after medication**, chosen from data (§5): CBD and cannabis, food,

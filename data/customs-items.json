@@ -19267,6 +19267,31 @@
     "status": "verified"
   },
   {
+    "slug": "cannabis-ba",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish"
+    ],
+    "destination": "BA",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Illegal drugs, including cannabis, carry severe penalties in Bosnia and Herzegovina: expect a long prison sentence and heavy fines for possessing, using or smuggling them."
+    },
+    "summary": "Banned: cannabis is an illegal drug in Bosnia and Herzegovina, with long prison sentences and heavy fines for bringing it in.",
+    "notes": "No Bosnia and Herzegovina customs or drug-law page was read for this site; this row rests on the UK government's travel advice, which says the penalties apply when transiting through the airport too and that transit baggage is scanned. It says nothing specific about CBD products, so CBD isn't covered here.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Bosnia and Herzegovina travel advice: Safety and security (updated 2026-08-13)",
+      "url": "https://www.gov.uk/foreign-travel-advice/bosnia-and-herzegovina/safety-and-security"
+    },
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "cash-mo",
     "names": [
       "cash",
@@ -19758,6 +19783,31 @@
     "status": "verified"
   },
   {
+    "slug": "cannabis-gh",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish"
+    ],
+    "destination": "GH",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Illegal drugs, including cannabis, carry severe penalties in Ghana: expect a long prison sentence and heavy fines for possessing, using or smuggling them. Even a small amount of cannabis can lead to more than 5 years in prison, and bail is not normally granted."
+    },
+    "summary": "Banned: cannabis is an illegal drug in Ghana, with long prison sentences and heavy fines for bringing it in.",
+    "notes": "No Ghana customs or drug-law page was read for this site; this row rests on the UK government's travel advice, which says the penalties apply when transiting through the airport too and that transit baggage is scanned. It says nothing specific about CBD products, so CBD isn't covered here.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Ghana travel advice: Safety and security (updated 2026-07-02)",
+      "url": "https://www.gov.uk/foreign-travel-advice/ghana/safety-and-security"
+    },
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "alcohol-fj",
     "names": [
       "alcohol",
@@ -20053,7 +20103,16 @@
     },
     "verified_at": "2026-10-25",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "notes": "Possessing or importing cigarette papers is illegal in Mauritius (UK government travel advice).",
+    "_sources": [
+      {
+        "claim": "Possessing or importing cigarette papers is illegal",
+        "name": "GOV.UK (FCDO) — Mauritius travel advice: Safety and security (updated 2026-10-19)",
+        "url": "https://www.gov.uk/foreign-travel-advice/mauritius/safety-and-security",
+        "checked": "2026-10-30"
+      }
+    ]
   },
   {
     "slug": "cash-mu",
@@ -20119,6 +20178,31 @@
       },
       "verified_at": "2026-10-25"
     }
+  },
+  {
+    "slug": "cannabis-mu",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish"
+    ],
+    "destination": "MU",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Illegal drugs, including cannabis, carry severe penalties in Mauritius: expect a long prison sentence and heavy fines for possessing, using or smuggling them. If you're found with any drugs, you're unlikely to get bail, and cases take a year or more to reach court."
+    },
+    "summary": "Banned: cannabis is an illegal drug in Mauritius, with long prison sentences and heavy fines for bringing it in.",
+    "notes": "No Mauritius customs or drug-law page was read for this site; this row rests on the UK government's travel advice, which says the penalties apply when transiting through the airport too and that transit baggage is scanned. It says nothing specific about CBD products, so CBD isn't covered here.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Mauritius travel advice: Safety and security (updated 2026-10-19)",
+      "url": "https://www.gov.uk/foreign-travel-advice/mauritius/safety-and-security"
+    },
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   },
   {
     "slug": "alcohol-kr",
@@ -20767,6 +20851,31 @@
     "status": "verified"
   },
   {
+    "slug": "cannabis-zw",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish"
+    ],
+    "destination": "ZW",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Illegal drugs, including cannabis, carry severe penalties in Zimbabwe: expect a long prison sentence and heavy fines for possessing, using or smuggling them."
+    },
+    "summary": "Banned: cannabis is an illegal drug in Zimbabwe, with long prison sentences and heavy fines for bringing it in.",
+    "notes": "No Zimbabwe customs or drug-law page was read for this site; this row rests on the UK government's travel advice, which says the penalties apply when transiting through the airport too and that transit baggage is scanned. It says nothing specific about CBD products, so CBD isn't covered here.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Zimbabwe travel advice: Safety and security (updated 2026-07-15)",
+      "url": "https://www.gov.uk/foreign-travel-advice/zimbabwe/safety-and-security"
+    },
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "cannabis-ng",
     "names": [
       "cannabis",
@@ -20961,6 +21070,55 @@
     "status": "verified"
   },
   {
+    "slug": "drones-om",
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft"
+    ],
+    "destination": "OM",
+    "category": "drones",
+    "verdict": "depends",
+    "limits": {
+      "description": "It's illegal to fly a drone or any other remote-controlled flying device in Oman without a valid licence, or in restricted airspace."
+    },
+    "summary": "You need a valid licence to fly a drone in Oman, and you can't fly in restricted airspace.",
+    "notes": "The advice covers flying, not bringing a drone in; Oman Customs' traveller guide read for this site doesn't mention drones. This row rests on the UK government's travel advice.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Oman travel advice: Safety and security, 'Drones' (updated 2026-10-27)",
+      "url": "https://www.gov.uk/foreign-travel-advice/oman/safety-and-security"
+    },
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "medication-om",
+    "names": [
+      "medication",
+      "medicine",
+      "prescription medicine",
+      "prescription",
+      "over-the-counter medicine"
+    ],
+    "destination": "OM",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Some prescription and over-the-counter medicines are illegal in Oman. Carry a copy of your prescription, declare anything that may be prohibited, and check with Oman's Ministry of Health well before you travel."
+    },
+    "summary": "Some prescription and over-the-counter medicines are illegal in Oman: carry your prescription and check with the Ministry of Health first.",
+    "notes": "The advice doesn't list which medicines are illegal. No Omani health ministry page was readable for this site (it returned 404/403); this row rests on the UK government's travel advice.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Oman travel advice: Entry requirements, 'Taking medicines into Oman' (updated 2026-10-27)",
+      "url": "https://www.gov.uk/foreign-travel-advice/oman/entry-requirements"
+    },
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "e-cigarettes-kg",
     "names": [
       "e-cigarette",
@@ -20981,6 +21139,82 @@
     "legal_source": {
       "name": "GOV.UK (FCDO) — Kyrgyzstan travel advice: Safety and security (updated 2026-09-14)",
       "url": "https://www.gov.uk/foreign-travel-advice/kyrgyzstan/safety-and-security"
+    },
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "medication-kg",
+    "names": [
+      "medication",
+      "medicine",
+      "prescription medicine",
+      "prescription",
+      "over-the-counter medicine"
+    ],
+    "destination": "KG",
+    "category": "medication",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Bring a doctor's prescription for prescription medicines and declare them on your customs declaration form. Some medicines sold without a prescription elsewhere need one in Kyrgyzstan, and some cause problems on entry."
+    },
+    "summary": "Bring your prescription and declare your medicines on the customs form; undeclared medicines can lead to civil or criminal proceedings.",
+    "notes": "Possessing medicines you didn't declare on arrival can lead to civil or criminal proceedings. The advice suggests asking a Kyrgyz embassy whether your medicines are restricted. No Kyrgyz customs or health page was readable for this site; this row rests on the UK government's travel advice.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Kyrgyzstan travel advice: Entry requirements, 'Medication' (updated 2026-09-14)",
+      "url": "https://www.gov.uk/foreign-travel-advice/kyrgyzstan/entry-requirements"
+    },
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cannabis-mn",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish"
+    ],
+    "destination": "MN",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "It's illegal to possess or use any type of drugs in Mongolia, including cannabis. Drug trafficking can carry a life sentence."
+    },
+    "summary": "Banned: possessing or using cannabis is illegal in Mongolia, and drug trafficking can mean a life sentence.",
+    "notes": "No Mongolian customs or drug-law page was read for this site; this row rests on the UK government's travel advice. It says nothing specific about CBD products, so CBD isn't covered here.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Mongolia travel advice: Safety and security (updated 2026-08-07)",
+      "url": "https://www.gov.uk/foreign-travel-advice/mongolia/safety-and-security"
+    },
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-mn",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "tugrik",
+      "travellers cheques"
+    ],
+    "destination": "MN",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declare cash or travellers cheques worth 10,000 US dollars or more when you arrive. You can bring in up to 15 million Mongolian tugriks.",
+      "quantity": "Declare USD 10,000 or more; up to MNT 15 million"
+    },
+    "summary": "Declare cash or travellers cheques worth USD 10,000 or more on arrival; keep the certified declaration to take the money out again.",
+    "notes": "You get a certified declaration showing you brought the money in. Without it, the money could be seized when you leave. No Mongolian customs page was read for this site; this row rests on the UK government's travel advice.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Mongolia travel advice: Entry requirements, 'Taking money into Mongolia' (updated 2026-08-07)",
+      "url": "https://www.gov.uk/foreign-travel-advice/mongolia/entry-requirements"
     },
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
