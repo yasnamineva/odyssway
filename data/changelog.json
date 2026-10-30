@@ -1,5 +1,77 @@
 [
   {
+    "commit": "a70d92d33de1a86acbc03e80e80d374fc1338780",
+    "date": "2026-10-30",
+    "dataset": "customs-items",
+    "summary": "August rows re-read: 18 destination records (UK link updated), Mexico food rows (SENASICA list of 27 Apr 2026, adds sealed-packaging and crustacean items), China cash now cites Huifa [2003] No. 102 Arts 3 and 6; unsourced RMB 20,000 limit removed",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "SENASICA — Productos prohibidos (información para viajeros)",
+      "url": "https://www.gob.mx/senasica/documentos/productos-prohibidos?state=published"
+    },
+    "destinations": [
+      "CN",
+      "MX"
+    ]
+  },
+  {
+    "commit": "a70d92d33de1a86acbc03e80e80d374fc1338780",
+    "date": "2026-10-30",
+    "dataset": "destinations",
+    "summary": "August rows re-read: 18 destination records (UK link updated), Mexico food rows (SENASICA list of 27 Apr 2026, adds sealed-packaging and crustacean items), China cash now cites Huifa [2003] No. 102 Arts 3 and 6; unsourced RMB 20,000 limit removed",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "U.S. Visa Waiver Program, 8 U.S.C. §1187",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title8/html/USCODE-2023-title8-chap12-subchapII-partII-sec1187.htm"
+    },
+    "destinations": [
+      "AE",
+      "AU",
+      "CA",
+      "CN",
+      "EG",
+      "GB",
+      "IN",
+      "KE",
+      "MA",
+      "MX",
+      "NG",
+      "NZ",
+      "PH",
+      "RW",
+      "TR",
+      "US",
+      "VN",
+      "ZA"
+    ]
+  },
+  {
+    "commit": "13a33c4cedf213f7176d48e56b5f031f039fe3b8",
+    "date": "2026-10-30",
+    "dataset": "countries",
+    "summary": "Schengen membership and visa-list status rechecked against the EC Schengen-area and visa-policy pages (unchanged for all 22 passports; 2026 suspensions cover only Georgian diplomatic/service passports); roadmap status refreshed",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-fable-5",
+    "source": {
+      "name": "EC Migration & Home Affairs — Schengen area (membership); Council Decisions (EU) 2022/2451 and 2024/210 (accessions); EC short-stay calculator manual §1 (day-counting exclusions)",
+      "url": "https://home-affairs.ec.europa.eu/policies/schengen/schengen-area_en"
+    }
+  },
+  {
+    "commit": "13a33c4cedf213f7176d48e56b5f031f039fe3b8",
+    "date": "2026-10-30",
+    "dataset": "nationality-rules",
+    "summary": "Schengen membership and visa-list status rechecked against the EC Schengen-area and visa-policy pages (unchanged for all 22 passports; 2026 suspensions cover only Georgian diplomatic/service passports); roadmap status refreshed",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-fable-5",
+    "source": {
+      "name": "Regulation (EU) 2018/1806, Annex II (consolidated version of 30 December 2025, CELEX 02018R1806-20251230)",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018R1806-20251230"
+    }
+  },
+  {
     "commit": "78e7cec76e7ea42f5a70e117a5a12568d7670415",
     "date": "2026-10-29",
     "dataset": "etias",
