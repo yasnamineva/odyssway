@@ -11754,6 +11754,31 @@
     "status": "verified"
   },
   {
+    "slug": "meat-dairy-mv",
+    "names": [
+      "meat",
+      "poultry",
+      "fish",
+      "eggs",
+      "egg products"
+    ],
+    "destination": "MV",
+    "category": "food_animal",
+    "verdict": "depends",
+    "limits": {
+      "description": "Since 15 January 2026, meat, poultry, fish and egg products may only be brought into the Maldives with an import health certificate."
+    },
+    "summary": "Meat, poultry, fish and egg products need an import health certificate (since 15 January 2026).",
+    "notes": "Maldives Customs can give details. No customs or biosecurity page of the Maldives stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Malediven: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 13.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/maledivensicherheit-220382"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "alcohol-rs",
     "names": [
       "alcohol",
@@ -15335,6 +15360,52 @@
       "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=25886&param2=131179&param3=1"
     },
     "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-cr",
+    "names": [
+      "meat",
+      "sausage",
+      "dairy",
+      "dairy products"
+    ],
+    "destination": "CR",
+    "category": "food_animal",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Meat and sausage products and dairy products may not be brought into Costa Rica in luggage (canned goods are the exception)."
+    },
+    "summary": "Banned in luggage: meat, sausages and dairy products, unless canned.",
+    "notes": "No customs or biosecurity page of Costa Rica stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Costa Rica: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 13.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/costaricasicherheit-224816"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-cr",
+    "names": [
+      "fruit",
+      "vegetables"
+    ],
+    "destination": "CR",
+    "category": "food_plant",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Fruit and vegetables may not be brought into Costa Rica in luggage (canned goods are the exception). Taking plants, animals and shells out of Costa Rica is also banned."
+    },
+    "summary": "Banned in luggage: fresh fruit and vegetables, unless canned.",
+    "notes": "No customs or biosecurity page of Costa Rica stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Costa Rica: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 13.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/costaricasicherheit-224816"
+    },
+    "verified_at": "2026-10-31",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -19955,6 +20026,49 @@
     "status": "verified"
   },
   {
+    "slug": "meat-dairy-sc",
+    "names": [
+      "animal products"
+    ],
+    "destination": "SC",
+    "category": "food_animal",
+    "verdict": "depends",
+    "limits": {
+      "description": "Importing animals and animal products into Seychelles needs a permit from the relevant authority."
+    },
+    "summary": "Animal products need an import permit from the relevant authority.",
+    "notes": "No customs or biosecurity page of Seychelles stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Seychellen: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 13.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/seychellensicherheit-226912"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-sc",
+    "names": [
+      "plants",
+      "plant parts"
+    ],
+    "destination": "SC",
+    "category": "food_plant",
+    "verdict": "depends",
+    "limits": {
+      "description": "Importing plants and parts of plants into Seychelles needs a permit from the relevant authority."
+    },
+    "summary": "Plants and plant parts need an import permit from the relevant authority.",
+    "notes": "No customs or biosecurity page of Seychelles stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Seychellen: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 13.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/seychellensicherheit-226912"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "alcohol-gh",
     "names": [
       "alcohol",
@@ -21823,6 +21937,50 @@
     "status": "verified"
   },
   {
+    "slug": "meat-dairy-om",
+    "names": [
+      "fresh food",
+      "pork",
+      "pork products"
+    ],
+    "destination": "OM",
+    "category": "food_animal",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Importing fresh food into Oman is prohibited, above all pork products."
+    },
+    "summary": "Banned: fresh food, especially pork products.",
+    "notes": "No customs or biosecurity page of Oman stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Oman: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 29.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/omansicherheit-204160"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-om",
+    "names": [
+      "fresh food"
+    ],
+    "destination": "OM",
+    "category": "food_plant",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Importing fresh food into Oman is prohibited."
+    },
+    "summary": "Banned: fresh food, including fresh fruit and vegetables.",
+    "notes": "No customs or biosecurity page of Oman stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Oman: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 29.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/omansicherheit-204160"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "e-cigarettes-kg",
     "names": [
       "e-cigarette",
@@ -21986,6 +22144,50 @@
     },
     "summary": "Declare your drone to customs when you enter Kyrgyzstan.",
     "notes": "The UK government's advice adds that using drones near anything military or security-related, including border checkpoints, is illegal. No Kyrgyzstan customs page stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Kirgisistan: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 13.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/kirgisistansicherheit-206738"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-kg",
+    "names": [
+      "unpackaged food",
+      "food"
+    ],
+    "destination": "KG",
+    "category": "food_animal",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Unpackaged food may not be brought into Kyrgyzstan."
+    },
+    "summary": "Unpackaged food, including meat and dairy, can't be brought in.",
+    "notes": "No customs or biosecurity page of Kyrgyzstan stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Kirgisistan: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 13.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/kirgisistansicherheit-206738"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "fresh-produce-kg",
+    "names": [
+      "unpackaged food",
+      "food"
+    ],
+    "destination": "KG",
+    "category": "food_plant",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Unpackaged food may not be brought into Kyrgyzstan."
+    },
+    "summary": "Unpackaged food, including fresh fruit and vegetables, can't be brought in.",
+    "notes": "No customs or biosecurity page of Kyrgyzstan stating this was read for this site; this row rests on the German government's travel advice.",
     "legal_source": {
       "name": "Auswärtiges Amt — Kirgisistan: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 13.10.2026)",
       "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/kirgisistansicherheit-206738"
