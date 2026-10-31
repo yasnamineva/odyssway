@@ -1,5 +1,96 @@
 [
   {
+    "commit": "2bc0f98cf615e8d1f547842d8762413928ea8637",
+    "date": "2026-10-30",
+    "dataset": "customs-items",
+    "summary": "September customs holds: 11 rows confirmed; EU fresh produce corrected from DG SANTE (plants for planting need a certificate rather than being banned; five fruits exempt; Your Europe conflict recorded); Indonesia alcohol allowance is for passengers aged 21+",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing fruit, vegetables, nuts and seeds into Great Britain",
+      "url": "https://www.gov.uk/bringing-food-into-great-britain/fruit-vegetables-nuts-seeds"
+    },
+    "destinations": [
+      "BR",
+      "CA",
+      "EU",
+      "HK",
+      "ID",
+      "JP",
+      "MY",
+      "RS",
+      "SA",
+      "SG"
+    ]
+  },
+  {
+    "commit": "7adad12ce7b3fc36719b248b17e963b554c0e36f",
+    "date": "2026-10-30",
+    "dataset": "customs-items",
+    "summary": "validate-data: fail when a published row leans on secondary material; reword the UAE medication and Ukraine-to-Singapore notes",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing fruit, vegetables, nuts and seeds into Great Britain",
+      "url": "https://www.gov.uk/bringing-food-into-great-britain/fruit-vegetables-nuts-seeds"
+    },
+    "destinations": [
+      "AE"
+    ]
+  },
+  {
+    "commit": "7adad12ce7b3fc36719b248b17e963b554c0e36f",
+    "date": "2026-10-30",
+    "dataset": "entry-requirements",
+    "summary": "validate-data: fail when a published row leans on secondary material; reword the UAE medication and Ukraine-to-Singapore notes",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "destinations": [
+      "SG"
+    ]
+  },
+  {
+    "commit": "3304798d45919c9798d61a5989176ab005acaa63",
+    "date": "2026-10-30",
+    "dataset": "customs-items",
+    "summary": "Remove claims resting on secondary sources: South Africa ETA 'optional at first' (12 rows), Sinai-only stamp (Israel to Egypt), Singapore 30-day 'commonly reported' figures (Argentina, Chile, Malaysia), corroboration-by-news clauses (Morocco, Saudi Arabia), unconfirmed carve-outs (UAE, Georgia), Philippines visa fee, South Korea's 250 g drone threshold; AGENTS §11 time-sensitive note updated",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing fruit, vegetables, nuts and seeds into Great Britain",
+      "url": "https://www.gov.uk/bringing-food-into-great-britain/fruit-vegetables-nuts-seeds"
+    },
+    "destinations": [
+      "KR"
+    ]
+  },
+  {
+    "commit": "3304798d45919c9798d61a5989176ab005acaa63",
+    "date": "2026-10-30",
+    "dataset": "entry-requirements",
+    "summary": "Remove claims resting on secondary sources: South Africa ETA 'optional at first' (12 rows), Sinai-only stamp (Israel to Egypt), Singapore 30-day 'commonly reported' figures (Argentina, Chile, Malaysia), corroboration-by-news clauses (Morocco, Saudi Arabia), unconfirmed carve-outs (UAE, Georgia), Philippines visa fee, South Korea's 250 g drone threshold; AGENTS §11 time-sensitive note updated",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "destinations": [
+      "AE",
+      "EG",
+      "GE",
+      "MA",
+      "PH",
+      "SA",
+      "SG",
+      "ZA"
+    ]
+  },
+  {
     "commit": "1bbb15ec173336538473f9b8b7b390a0ee851327",
     "date": "2026-10-30",
     "dataset": "customs-items",
