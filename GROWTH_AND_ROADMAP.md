@@ -376,13 +376,50 @@ Answer-first summary boxes, visible source names and check dates, `llms.txt`, th
 Dataset markup are in place. Next: get the dataset listed in Google Dataset Search and
 open-data directories; keep the monthly change report as the page AI answers quote.
 
-### 5.5 Languages
+### 5.5 Languages (plan approved by the owner 2026-10-31)
 
-Choose the first locales from Search Console country data. For medication pages the reader
-is usually the *inbound* traveller (a Korean page about bringing medicine to Japan helps
-more than a Japanese page about the US). Translate the highest-traffic page types first.
+**Goal:** reach travellers searching in their own language for the item and medication
+questions we already answer well, without weakening the accuracy policy.
 
----
+**Evidence so far (October export, English-only site):** Japan is the best-ranking
+non-English country (position 10.6, 246 impressions, CTR 1.2%), and Japanese queries already
+reach us ("シンガポール お酒 持ち込み", position 62). Smaller signals: French (Maldives
+arrival form), Russian (vapes in Korea), German (drones), Chinese (cigarettes). Competitor
+canibringto.com ranks with zh, ja and vi pages. The reader of an item page is the *inbound*
+traveller, so the language follows who travels, not the destination.
+
+**Decision rule (November export):** pick the first locale by impressions from that country
+plus non-English queries in that language, weighted toward item and medication pages.
+Current favourite: **Japanese**; runners-up German and Chinese (Traditional, for Taiwan and
+Hong Kong, where Google is used).
+
+**Scope of the pilot (one locale, ~8 weeks):**
+1. `/xx/bring/{item}/{country}` and `/xx/medications/...` pairs, the item hubs, destination
+   hubs, Trip Check and the "Check what you're carrying" box. Not the blog, EES or legal
+   pages at first.
+2. English URLs stay unchanged (no `/en` prefix); hreflang pairs and sitemap alternates for
+   every translated page; untranslated pages aren't generated in the locale (no thin copies).
+
+**How translations stay accurate (no human review, AGENTS.md §3):**
+- Translations restate verified English rows; they never add facts. Stored in
+  `data/i18n/{locale}/*.json`, keyed by row id, each with a hash of the English text it
+  translates.
+- `validate-data` fails a translation when the English row changed (stale hash) — the page
+  falls back to English until it's retranslated — and when any figure in the English text
+  (amounts, days, ages, currencies) is missing from the translation.
+- Each translated page says it's translated from the verified English text, links the
+  English page and keeps source names and check dates as they are.
+- Where the source itself is in that language (e.g. Japanese ministry pages), quote it in
+  the original instead of translating back.
+
+**Success measure:** impressions and position for the locale's queries in the 8 weeks after
+launch vs. the English pages for that country's traffic; go on to a second locale only if
+the first earns clicks.
+
+**Build order:** (1) translation data schema + validator (locale-agnostic, can start now);
+(2) locale routing with hreflang and sitemap; (3) UI strings for the pilot pages; (4) data
+translations for the top 100 pair pages by impressions in that country; (5) launch, IndexNow,
+measure.
 
 ## 6. Long-term goals
 
@@ -442,6 +479,8 @@ more than a Japanese page about the US). Translate the highest-traffic page type
 ---
 
 ## 7. Open decisions for the owner
+
+- ✔ Translations: plan approved 2026-10-31 (§5.5). First locale chosen from the November export; Japanese is the current favourite.
 
 - ✔ Keyword-matching H1s on destination hubs: done 2026-10-28 ("{Country} entry requirements and customs rules"); compare hub positions in the November export.
 - Turning on cookie-free Plausible (needs a privacy-policy update first). Owner, 2026-10-28: not now (cost).
