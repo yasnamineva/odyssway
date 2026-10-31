@@ -189,6 +189,14 @@ South Africa, Nigeria, Poland, Portugal, Vietnam, Pakistan. Add one at a time, f
   drones (Oman), medication (Oman, Kyrgyzstan); Mauritius cigarette papers. GOV.UK says nothing
   usable on vapes for the other 35 destinations without a vape row, on drones for 16, on CBD
   for 18; those need each country's own customs or health pages.
+- ✔ 2026-10-31 two more foreign-ministry routes for customs gaps: **Germany's Auswärtiges Amt open
+  data** (`/opendata/travelwarning` lists content ids; `/opendata/travelwarning/{id}` gives each
+  country's full advice incl. 'Einreise und Zoll'; the public page resolves from the id) and
+  **Korea's 0404.go.kr** entry notes. Added: Brunei cash/tobacco/e-cigarettes, Singapore cash
+  threshold (SGD 20,000), Kyrgyzstan cash/tobacco/alcohol/drones, e-cigarettes for Uzbekistan,
+  Mauritius and Seychelles (allowed), Jordan medication, weapons for Mauritius, Seychelles, North
+  Macedonia, Bosnia, Sri Lanka, Tanzania and Oman; conflicts recorded (Uzbekistan drones, Oman
+  alcohol). Re-run both scans after each destination batch.
 - Customs rows for destinations that have none or very few: Mongolia, Seychelles medicine,
   Zimbabwe tobacco and cash (ZIMRA gives no primary threshold).
 - **Second vertical after medication**, chosen from data (§5): CBD and cannabis, food,

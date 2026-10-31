@@ -13293,6 +13293,30 @@
     "status": "verified"
   },
   {
+    "slug": "weapons-lk",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition"
+    ],
+    "destination": "LK",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Importing or exporting weapons and drugs is strictly prohibited in Sri Lanka."
+    },
+    "summary": "Banned: weapons can't be brought into or taken out of Sri Lanka.",
+    "notes": "No Sri Lanka customs page stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Sri Lanka: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 13.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/srilankasicherheit-212254"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "alcohol-pe",
     "names": [
       "alcohol",
@@ -14772,6 +14796,30 @@
       "url": "https://www.auswaertiges-amt.de/de/service/laender/jordanien-node/jordaniensicherheit-218008"
     },
     "verified_at": "2026-10-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "medication-jo",
+    "names": [
+      "medication",
+      "medicine",
+      "prescription medicine",
+      "prescription"
+    ],
+    "destination": "JO",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "If you carry medicines that fall under drug laws for medical reasons, you must have their medical necessity documented in English. Drug offences carry long prison sentences, even for tiny amounts."
+    },
+    "summary": "Carry an English doctor's document for medicines covered by drug laws; drug offences carry long prison sentences.",
+    "notes": "No Jordan customs page stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Jordanien: Reise- und Sicherheitshinweise, Reiseinfos (Stand 29.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/jordaniensicherheit-218008"
+    },
+    "verified_at": "2026-10-31",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -17412,6 +17460,31 @@
     "status": "verified"
   },
   {
+    "slug": "weapons-tz",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition",
+      "hunting rifle"
+    ],
+    "destination": "TZ",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Hunting weapons must be declared on import; importing any other weapons is prohibited in Tanzania."
+    },
+    "summary": "Other weapons are banned; hunting weapons must be declared when you arrive.",
+    "notes": "No Tanzania customs page stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Tansania: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 30.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/tansaniasicherheit-208662"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "cash-kh",
     "names": [
       "cash",
@@ -19320,6 +19393,30 @@
     "status": "verified"
   },
   {
+    "slug": "weapons-ba",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition"
+    ],
+    "destination": "BA",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "People carrying a weapon are turned back at the border of Bosnia and Herzegovina (exceptions exist for EUFOR members)."
+    },
+    "summary": "Don't bring weapons: people carrying one are turned back at the border.",
+    "notes": "No Bosnia and Herzegovina customs page stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Bosnien und Herzegowina: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 13.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/bosnienundherzegowinasicherheit-207694"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "cash-mo",
     "names": [
       "cash",
@@ -19506,6 +19603,58 @@
       "url": "https://src.gov.sc/customs-and-excises/"
     },
     "verified_at": "2026-10-23",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-sc",
+    "names": [
+      "e-cigarette",
+      "e-cigarettes",
+      "vape",
+      "vapes",
+      "vaping device",
+      "e-liquid"
+    ],
+    "destination": "SC",
+    "category": "e_cigarettes",
+    "verdict": "allowed",
+    "limits": {
+      "description": "E-cigarettes for personal use may be brought into Seychelles."
+    },
+    "summary": "Allowed: you can bring e-cigarettes for your own use.",
+    "notes": "Tobacco substitute products are on the list of banned imports. No Seychelles customs page stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Seychellen: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 13.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/seychellensicherheit-226912"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-sc",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition",
+      "blank-firing gun",
+      "camouflage clothing"
+    ],
+    "destination": "SC",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Importing weapons, ammunition and blank-firing guns is banned in Seychelles, along with drugs, poisons, counterfeit money, pornography, camouflage clothing, vehicle parts, animal skins, palms and tobacco substitute products."
+    },
+    "summary": "Banned: weapons, ammunition, blank-firing guns and camouflage clothing can't be brought into Seychelles.",
+    "notes": "Plants, animals and animal products, fireworks, pharmaceutical items and radio equipment need a permit from the relevant authority. No Seychelles customs page stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Seychellen: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 13.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/seychellensicherheit-226912"
+    },
+    "verified_at": "2026-10-31",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -21135,14 +21284,22 @@
       "description": "The customs exemption covers alcohol of no more than 2 litres of wine and 48 cans of beer, for non-Muslims. Oman Customs says Muslims are not allowed to bring alcohol. The exemption doesn't apply to travellers who pass through customs frequently.",
       "quantity": "2 litres of wine and 48 cans of beer"
     },
-    "notes": "The Arabic version of the same page says the same: up to 2 litres of wine and 48 cans of beer for non-Muslims, and Muslims are not permitted.",
+    "notes": "The Arabic version of the same page says the same: up to 2 litres of wine and 48 cans of beer for non-Muslims, and Muslims are not permitted. Germany's travel advice gives a stricter figure (no more than two bottles, two litres at most); this row follows Oman Customs' own guide.",
     "legal_source": {
       "name": "Royal Oman Police, Directorate General of Customs — Traveller services (prohibited and restricted goods, exemptions, currency declaration)",
       "url": "https://www.customs.gov.om/en/traveller-services/"
     },
     "verified_at": "2026-10-28",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Conflict: Germany's advice says importing more than two bottles of alcohol (max. two litres) is prohibited; Oman Customs' own guide (2 L of wine and 48 cans of beer) is kept",
+        "name": "Auswärtiges Amt — Oman: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 29.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/omansicherheit-204160",
+        "checked": "2026-10-31"
+      }
+    ]
   },
   {
     "slug": "tobacco-om",
@@ -21286,6 +21443,30 @@
     "status": "verified"
   },
   {
+    "slug": "weapons-om",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition"
+    ],
+    "destination": "OM",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Importing weapons into Oman is prohibited."
+    },
+    "summary": "Banned: weapons can't be brought into Oman.",
+    "notes": "Oman Customs' traveller guide read for this site doesn't list prohibited goods by name. No Oman customs page stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Oman: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 29.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/omansicherheit-204160"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "e-cigarettes-kg",
     "names": [
       "e-cigarette",
@@ -21333,6 +21514,122 @@
       "url": "https://www.gov.uk/foreign-travel-advice/kyrgyzstan/entry-requirements"
     },
     "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-kg",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "foreign currency"
+    ],
+    "destination": "KG",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "There's no limit on bringing foreign currency in or out, but amounts worth USD 10,000 or more per person must be declared.",
+      "quantity": "USD 10,000 or more"
+    },
+    "summary": "Declare foreign currency worth USD 10,000 or more per person when you enter or leave Kyrgyzstan.",
+    "notes": "No Kyrgyzstan customs page stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Kirgisistan: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 13.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/kirgisistansicherheit-206738"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-kg",
+    "names": [
+      "cigarettes",
+      "tobacco"
+    ],
+    "destination": "KG",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free: 200 cigarettes or 200 g of tobacco, as part of goods for personal use."
+    },
+    "summary": "Duty-free: 200 cigarettes or 200 g of tobacco.",
+    "notes": "No Kyrgyzstan customs page stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Kirgisistan: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 13.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/kirgisistansicherheit-206738"
+    },
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 200
+            }
+          ]
+        }
+      ]
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "alcohol-kg",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "beer"
+    ],
+    "destination": "KG",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free: 1.5 litres of alcohol and 2 litres of wine, as part of goods for personal use."
+    },
+    "summary": "Duty-free: 1.5 litres of alcohol and 2 litres of wine.",
+    "notes": "The advice doesn't say which drinks count as 'alcohol' rather than wine. No Kyrgyzstan customs page stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Kirgisistan: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 13.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/kirgisistansicherheit-206738"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "drones-kg",
+    "names": [
+      "drone",
+      "uav",
+      "quadcopter",
+      "unmanned aircraft"
+    ],
+    "destination": "KG",
+    "category": "drones",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declare drones (and valuable items) when you enter Kyrgyzstan."
+    },
+    "summary": "Declare your drone to customs when you enter Kyrgyzstan.",
+    "notes": "The UK government's advice adds that using drones near anything military or security-related, including border checkpoints, is illegal. No Kyrgyzstan customs page stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Kirgisistan: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 13.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/kirgisistansicherheit-206738"
+    },
+    "verified_at": "2026-10-31",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -21573,6 +21870,30 @@
       "url": "https://www.gov.uk/foreign-travel-advice/north-macedonia/safety-and-security"
     },
     "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-mk",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition"
+    ],
+    "destination": "MK",
+    "category": "weapons",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declare weapons when you enter North Macedonia, for a visit or in transit. You need a valid firearms licence; the police then issue a permit for your stay. You can also leave the weapon at the border for the duration of your stay."
+    },
+    "summary": "Declare weapons on entry; with a valid firearms licence the police issue a permit for your stay.",
+    "notes": "No North Macedonia customs page stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Nordmazedonien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 15.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/mazedoniensicherheit-207612"
+    },
+    "verified_at": "2026-10-31",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   }
