@@ -20284,6 +20284,60 @@
     "status": "verified"
   },
   {
+    "slug": "e-cigarettes-mu",
+    "names": [
+      "e-cigarette",
+      "e-cigarettes",
+      "vape",
+      "vapes",
+      "vaping device",
+      "e-liquid",
+      "shisha",
+      "hookah",
+      "water pipe"
+    ],
+    "destination": "MU",
+    "category": "e_cigarettes",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "E-cigarettes, water pipes (shisha) and their parts and accessories are banned in Mauritius under Government Notice No. 139/2022; breaking the ban can mean heavy fines or prison."
+    },
+    "summary": "Banned: e-cigarettes, shisha pipes and their parts can't be brought into Mauritius.",
+    "notes": "The Government Notice itself wasn't read for this site; this row rests on the German government's travel advice, which names it. The UK government's advice separately says cigarette papers are banned.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Mauritius: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 31.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/mauritiussicherheit-206994"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-mu",
+    "names": [
+      "weapons",
+      "firearms",
+      "pepper spray",
+      "spearfishing equipment",
+      "harpoon"
+    ],
+    "destination": "MU",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Importing weapons, pepper spray and spearfishing (harpoon) equipment into Mauritius is strictly prohibited."
+    },
+    "summary": "Banned: weapons, pepper spray and spearfishing equipment can't be brought into Mauritius.",
+    "notes": "Mauritius customs pages read for this site don't list these; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Mauritius: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 31.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/mauritiussicherheit-206994"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "alcohol-kr",
     "names": [
       "alcohol",
@@ -20867,7 +20921,7 @@
     "limits": {
       "description": "Importing and using drones in Uzbekistan is largely prohibited, with some limited exceptions. You must get a licence to import a drone and permission to use it before you arrive."
     },
-    "notes": "Importing or using a drone without permission can mean a fine or a prison sentence. The advice doesn't name the licensing authority, and Uzbekistan's customs site (customs.uz) couldn't be read here; ask an Uzbek embassy before travelling with a drone.",
+    "notes": "Importing or using a drone without permission can mean a fine or a prison sentence. The advice doesn't name the licensing authority, and Uzbekistan's customs site (customs.uz) couldn't be read here; ask an Uzbek embassy before travelling with a drone. Germany's travel advice is stricter: it says importing drones of any kind is banned and using them is generally not allowed.",
     "summary": "Largely prohibited: you need an import licence and permission to fly before you arrive, or face a fine or prison.",
     "legal_source": {
       "name": "GOV.UK (FCDO) — Uzbekistan travel advice: Entry requirements, 'Drones' (updated 19 March 2026)",
@@ -20875,7 +20929,15 @@
     },
     "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Conflict: Germany's advice says importing drones of any kind is banned and using them is generally not allowed; GOV.UK describes a licence route. The GOV.UK wording is kept, with this warning",
+        "name": "Auswärtiges Amt — Usbekistan: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 31.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/usbekistansicherheit-206790",
+        "checked": "2026-10-31"
+      }
+    ]
   },
   {
     "slug": "cash-uz",
@@ -20900,6 +20962,32 @@
       "url": "https://www.gov.uk/foreign-travel-advice/uzbekistan/entry-requirements"
     },
     "verified_at": "2026-10-26",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-uz",
+    "names": [
+      "e-cigarette",
+      "e-cigarettes",
+      "vape",
+      "vapes",
+      "vaping device",
+      "e-liquid"
+    ],
+    "destination": "UZ",
+    "category": "e_cigarettes",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Importing, selling and making e-cigarettes (vapes) has been banned in Uzbekistan since 1 March 2026."
+    },
+    "summary": "Banned: you can't bring e-cigarettes or vapes into Uzbekistan (since 1 March 2026).",
+    "notes": "Uzbek customs pages weren't readable for this site (customs.uz is a JavaScript app); this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Usbekistan: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 31.10.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/usbekistansicherheit-206790"
+    },
+    "verified_at": "2026-10-31",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
