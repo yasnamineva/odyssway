@@ -1,5 +1,17 @@
 [
   {
+    "commit": "c699b4f5ef747d3fbff7f6cd26444b78ff28e1db",
+    "date": "2026-10-31",
+    "dataset": "nationality-rules",
+    "summary": "All 27 EU passports selectable (EU free movement in the EU/Schengen; Your Europe re-read; 'not verified yet' outside Europe until rows exist); destination pickers list every Schengen country by name in one alphabetical list (shared helper), unspecified 'Schengen Area' option removed from pickers (sentinel links still resolve)",
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Your Europe (European Commission) — Travel documents for EU citizens; Directive 2004/38/EC (free movement)",
+      "url": "https://europa.eu/youreurope/citizens/travel/entry-exit/eu-citizen/index_en.htm"
+    }
+  },
+  {
     "commit": "d7b177c28338b765cbbd5f84ab337e38591e42d0",
     "date": "2026-10-31",
     "dataset": "customs-items",

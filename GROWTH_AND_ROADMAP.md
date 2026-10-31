@@ -181,11 +181,14 @@ Pick by traffic and source reachability, not by map coverage.
 EU/Schengen, Your Europe source re-read); outside Europe the 22 new ones show "not verified yet"
 until rows are added. Destination pickers list every Schengen country by name (one alphabetical
 list, shared helper `lib/destination-options.ts`); the unspecified "Schengen Area" option is gone
-from pickers. **Next for 'Europe overall'**: non-EU European passports (Serbia, Albania, North
-Macedonia, Bosnia, Montenegro, Moldova, Georgia, Armenia, Türkiye, Kosovo, Iceland, Norway,
-Switzerland, Liechtenstein, Andorra, Monaco, San Marino) need their own verified rows
-(Schengen status from Reg. (EU) 2018/1806 Annex II, plus EEA/Swiss free movement), then the
-destination matrix.
+from pickers. ✔ Same day: 17 non-EU European passports added with their Schengen status from Reg. (EU)
+2018/1806 (Annex II: Albania, Andorra, Bosnia, Georgia, Kosovo, Moldova, Monaco, Montenegro, North
+Macedonia, San Marino, Serbia, Holy See, with biometric-passport footnotes; Annex I: Türkiye,
+Armenia, Azerbaijan, Belarus, Russia). EUR-Lex blocks scripts, but the Publications Office serves
+the consolidated text: `curl -H 'Accept: application/xhtml+xml' -H 'Accept-Language: eng'
+http://publications.europa.eu/resource/celex/02018R1806-20251230`. **Still to do**: Iceland, Norway,
+Switzerland, Liechtenstein (EEA/Swiss free movement needs an official source); destination rows
+for all the new passports, starting with the most-travelled pairs.
 
 Each new passport adds a row in every destination, so this multiplies coverage. Choose
 from Search Console country data. Likely candidates: Philippines, Indonesia, Turkey,
