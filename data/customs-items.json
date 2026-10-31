@@ -22638,5 +22638,60 @@
     "verified_at": "2026-10-31",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "cash-sv",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "us dollars"
+    ],
+    "destination": "SV",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Local and foreign currency can be brought in and taken out without limit, but amounts of USD 10,000 or more must be declared.",
+      "quantity": "USD 10,000 or more"
+    },
+    "summary": "No limit on cash, but declare USD 10,000 or more when you enter or leave El Salvador.",
+    "notes": "No Salvadoran customs page stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — El Salvador: Reise- und Sicherheitshinweise, Einreise und Zoll",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/elsalvadorsicherheit-221864"
+    },
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "at_least"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "meat-dairy-sv",
+    "names": [
+      "meat",
+      "sausage",
+      "dairy",
+      "dairy products",
+      "raw wool"
+    ],
+    "destination": "SV",
+    "category": "food_animal",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Importing fresh products of animal origin, such as meat and sausage products, dairy products and raw wool, into El Salvador is prohibited."
+    },
+    "summary": "Banned: fresh animal products such as meat, sausages and dairy.",
+    "notes": "No Salvadoran customs page stating this was read for this site; this row rests on the German government's travel advice.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — El Salvador: Reise- und Sicherheitshinweise, Einreise und Zoll",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/elsalvadorsicherheit-221864"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]

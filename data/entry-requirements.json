@@ -50165,5 +50165,999 @@
         "checked": "2026-10-31"
       }
     ]
+  },
+  {
+    "nationality": "US",
+    "destination": "SV",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'Estados Unidos de América' ordinary passports as exempt from visas (category A). El Salvador publishes no day count; the UK and Canadian governments both say visitors can stay up to 180 days without a visa, and the UK's advice says you can extend through the General Directorate of Migration and Immigration. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Estados Unidos de América: ordinary passports exempt from visa (category A)",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Up to 180 days without a visa for tourism or business; passport at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — El Salvador travel advice: Entry requirements (updated 2026-10-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/entry-requirements",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Tourist visa not required for stays up to 180 days; CA-4 travel up to 90 days set at first entry",
+        "name": "Government of Canada — El Salvador travel advice: Entry and exit requirements",
+        "url": "https://travel.gc.ca/destinations/el-salvador",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "nationality": "GB",
+    "destination": "SV",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport with an expiry date at least 6 months after the day you arrive (UK government advice; arrival is the reference date)"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'Reino Unido' ordinary passports as exempt from visas (category A). El Salvador publishes no day count; the UK and Canadian governments both say visitors can stay up to 180 days without a visa, and the UK's advice says you can extend through the General Directorate of Migration and Immigration. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Reino Unido: ordinary passports exempt from visa (category A)",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Up to 180 days without a visa for tourism or business; passport at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — El Salvador travel advice: Entry requirements (updated 2026-10-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/entry-requirements",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Tourist visa not required for stays up to 180 days; CA-4 travel up to 90 days set at first entry",
+        "name": "Government of Canada — El Salvador travel advice: Entry and exit requirements",
+        "url": "https://travel.gc.ca/destinations/el-salvador",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    }
+  },
+  {
+    "nationality": "CA",
+    "destination": "SV",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'Canadá' ordinary passports as exempt from visas (category A). El Salvador publishes no day count; the UK and Canadian governments both say visitors can stay up to 180 days without a visa, and the UK's advice says you can extend through the General Directorate of Migration and Immigration. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Canadá: ordinary passports exempt from visa (category A)",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Up to 180 days without a visa for tourism or business; passport at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — El Salvador travel advice: Entry requirements (updated 2026-10-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/entry-requirements",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Tourist visa not required for stays up to 180 days; CA-4 travel up to 90 days set at first entry",
+        "name": "Government of Canada — El Salvador travel advice: Entry and exit requirements",
+        "url": "https://travel.gc.ca/destinations/el-salvador",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "nationality": "AU",
+    "destination": "SV",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'Australia' ordinary passports as exempt from visas (category A). El Salvador publishes no day count; the UK and Canadian governments both say visitors can stay up to 180 days without a visa, and the UK's advice says you can extend through the General Directorate of Migration and Immigration. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Australia: ordinary passports exempt from visa (category A)",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Up to 180 days without a visa for tourism or business; passport at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — El Salvador travel advice: Entry requirements (updated 2026-10-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/entry-requirements",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Tourist visa not required for stays up to 180 days; CA-4 travel up to 90 days set at first entry",
+        "name": "Government of Canada — El Salvador travel advice: Entry and exit requirements",
+        "url": "https://travel.gc.ca/destinations/el-salvador",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "nationality": "NZ",
+    "destination": "SV",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'Nueva Zelandia' ordinary passports as exempt from visas (category A). El Salvador publishes no day count; the UK and Canadian governments both say visitors can stay up to 180 days without a visa, and the UK's advice says you can extend through the General Directorate of Migration and Immigration. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Nueva Zelandia: ordinary passports exempt from visa (category A)",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Up to 180 days without a visa for tourism or business; passport at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — El Salvador travel advice: Entry requirements (updated 2026-10-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/entry-requirements",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Tourist visa not required for stays up to 180 days; CA-4 travel up to 90 days set at first entry",
+        "name": "Government of Canada — El Salvador travel advice: Entry and exit requirements",
+        "url": "https://travel.gc.ca/destinations/el-salvador",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "nationality": "JP",
+    "destination": "SV",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'Japón' ordinary passports as exempt from visas (category A). El Salvador publishes no day count; the UK and Canadian governments both say visitors can stay up to 180 days without a visa, and the UK's advice says you can extend through the General Directorate of Migration and Immigration. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Japón: ordinary passports exempt from visa (category A)",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Up to 180 days without a visa for tourism or business; passport at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — El Salvador travel advice: Entry requirements (updated 2026-10-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/entry-requirements",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Tourist visa not required for stays up to 180 days; CA-4 travel up to 90 days set at first entry",
+        "name": "Government of Canada — El Salvador travel advice: Entry and exit requirements",
+        "url": "https://travel.gc.ca/destinations/el-salvador",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "nationality": "KR",
+    "destination": "SV",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'Corea del Sur' ordinary passports as exempt from visas (category A). El Salvador publishes no day count; the UK and Canadian governments both say visitors can stay up to 180 days without a visa, and the UK's advice says you can extend through the General Directorate of Migration and Immigration. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Corea del Sur: ordinary passports exempt from visa (category A)",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Up to 180 days without a visa for tourism or business; passport at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — El Salvador travel advice: Entry requirements (updated 2026-10-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/entry-requirements",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Tourist visa not required for stays up to 180 days; CA-4 travel up to 90 days set at first entry",
+        "name": "Government of Canada — El Salvador travel advice: Entry and exit requirements",
+        "url": "https://travel.gc.ca/destinations/el-salvador",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "nationality": "SG",
+    "destination": "SV",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'Singapur' ordinary passports as exempt from visas (category A). El Salvador publishes no day count; the UK and Canadian governments both say visitors can stay up to 180 days without a visa, and the UK's advice says you can extend through the General Directorate of Migration and Immigration. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Singapur: ordinary passports exempt from visa (category A)",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Up to 180 days without a visa for tourism or business; passport at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — El Salvador travel advice: Entry requirements (updated 2026-10-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/entry-requirements",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Tourist visa not required for stays up to 180 days; CA-4 travel up to 90 days set at first entry",
+        "name": "Government of Canada — El Salvador travel advice: Entry and exit requirements",
+        "url": "https://travel.gc.ca/destinations/el-salvador",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "nationality": "BR",
+    "destination": "SV",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'Brasil' ordinary passports as exempt from visas (category A). El Salvador publishes no day count; the UK and Canadian governments both say visitors can stay up to 180 days without a visa, and the UK's advice says you can extend through the General Directorate of Migration and Immigration. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Brasil: ordinary passports exempt from visa (category A)",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Up to 180 days without a visa for tourism or business; passport at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — El Salvador travel advice: Entry requirements (updated 2026-10-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/entry-requirements",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Tourist visa not required for stays up to 180 days; CA-4 travel up to 90 days set at first entry",
+        "name": "Government of Canada — El Salvador travel advice: Entry and exit requirements",
+        "url": "https://travel.gc.ca/destinations/el-salvador",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "nationality": "MX",
+    "destination": "SV",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'México' ordinary passports as exempt from visas (category A). El Salvador publishes no day count; the UK and Canadian governments both say visitors can stay up to 180 days without a visa, and the UK's advice says you can extend through the General Directorate of Migration and Immigration. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "México: ordinary passports exempt from visa (category A)",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Up to 180 days without a visa for tourism or business; passport at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — El Salvador travel advice: Entry requirements (updated 2026-10-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/entry-requirements",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Tourist visa not required for stays up to 180 days; CA-4 travel up to 90 days set at first entry",
+        "name": "Government of Canada — El Salvador travel advice: Entry and exit requirements",
+        "url": "https://travel.gc.ca/destinations/el-salvador",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "nationality": "AR",
+    "destination": "SV",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'Argentina' ordinary passports as exempt from visas (category A). El Salvador publishes no day count; the UK and Canadian governments both say visitors can stay up to 180 days without a visa, and the UK's advice says you can extend through the General Directorate of Migration and Immigration. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Argentina: ordinary passports exempt from visa (category A)",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Up to 180 days without a visa for tourism or business; passport at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — El Salvador travel advice: Entry requirements (updated 2026-10-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/entry-requirements",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Tourist visa not required for stays up to 180 days; CA-4 travel up to 90 days set at first entry",
+        "name": "Government of Canada — El Salvador travel advice: Entry and exit requirements",
+        "url": "https://travel.gc.ca/destinations/el-salvador",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "nationality": "CL",
+    "destination": "SV",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'Chile' ordinary passports as exempt from visas (category A). El Salvador publishes no day count; the UK and Canadian governments both say visitors can stay up to 180 days without a visa, and the UK's advice says you can extend through the General Directorate of Migration and Immigration. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Chile: ordinary passports exempt from visa (category A)",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Up to 180 days without a visa for tourism or business; passport at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — El Salvador travel advice: Entry requirements (updated 2026-10-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/entry-requirements",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Tourist visa not required for stays up to 180 days; CA-4 travel up to 90 days set at first entry",
+        "name": "Government of Canada — El Salvador travel advice: Entry and exit requirements",
+        "url": "https://travel.gc.ca/destinations/el-salvador",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "nationality": "MY",
+    "destination": "SV",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'Malasia' ordinary passports as exempt from visas (category A). El Salvador publishes no day count; the UK and Canadian governments both say visitors can stay up to 180 days without a visa, and the UK's advice says you can extend through the General Directorate of Migration and Immigration. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Malasia: ordinary passports exempt from visa (category A)",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Up to 180 days without a visa for tourism or business; passport at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — El Salvador travel advice: Entry requirements (updated 2026-10-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/entry-requirements",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Tourist visa not required for stays up to 180 days; CA-4 travel up to 90 days set at first entry",
+        "name": "Government of Canada — El Salvador travel advice: Entry and exit requirements",
+        "url": "https://travel.gc.ca/destinations/el-salvador",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "nationality": "IL",
+    "destination": "SV",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'Israel' ordinary passports as exempt from visas (category A). El Salvador publishes no day count; the UK and Canadian governments both say visitors can stay up to 180 days without a visa, and the UK's advice says you can extend through the General Directorate of Migration and Immigration. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Israel: ordinary passports exempt from visa (category A)",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Up to 180 days without a visa for tourism or business; passport at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — El Salvador travel advice: Entry requirements (updated 2026-10-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/entry-requirements",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Tourist visa not required for stays up to 180 days; CA-4 travel up to 90 days set at first entry",
+        "name": "Government of Canada — El Salvador travel advice: Entry and exit requirements",
+        "url": "https://travel.gc.ca/destinations/el-salvador",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "nationality": "UA",
+    "destination": "SV",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'Ucrania' ordinary passports as exempt from visas (category A). El Salvador publishes no day count; the UK and Canadian governments both say visitors can stay up to 180 days without a visa, and the UK's advice says you can extend through the General Directorate of Migration and Immigration. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Ucrania: ordinary passports exempt from visa (category A)",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Up to 180 days without a visa for tourism or business; passport at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — El Salvador travel advice: Entry requirements (updated 2026-10-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/entry-requirements",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Tourist visa not required for stays up to 180 days; CA-4 travel up to 90 days set at first entry",
+        "name": "Government of Canada — El Salvador travel advice: Entry and exit requirements",
+        "url": "https://travel.gc.ca/destinations/el-salvador",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "nationality": "CN",
+    "destination": "SV",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Salvadoran consular visa issued before travel (category B: issued by a consulate without prior consultation)",
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'China, República Popular' ordinary passports in category B ('consular o sin consulta') for El Salvador. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "China, República Popular: ordinary passports category B (consular visa without consultation) for El Salvador",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "nationality": "IN",
+    "destination": "SV",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Salvadoran consular visa issued before travel (category B: issued by a consulate without prior consultation)",
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'India' ordinary passports in category B ('consular o sin consulta') for El Salvador. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "India: ordinary passports category B (consular visa without consultation) for El Salvador",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "nationality": "FR",
+    "destination": "SV",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'Francia' ordinary passports as exempt from visas (category A). El Salvador publishes no day count; the UK and Canadian governments both say visitors can stay up to 180 days without a visa, and the UK's advice says you can extend through the General Directorate of Migration and Immigration. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Francia: ordinary passports exempt from visa (category A)",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Up to 180 days without a visa for tourism or business; passport at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — El Salvador travel advice: Entry requirements (updated 2026-10-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/entry-requirements",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Tourist visa not required for stays up to 180 days; CA-4 travel up to 90 days set at first entry",
+        "name": "Government of Canada — El Salvador travel advice: Entry and exit requirements",
+        "url": "https://travel.gc.ca/destinations/el-salvador",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "nationality": "DE",
+    "destination": "SV",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'Alemania' ordinary passports as exempt from visas (category A). El Salvador publishes no day count; the UK and Canadian governments both say visitors can stay up to 180 days without a visa, and the UK's advice says you can extend through the General Directorate of Migration and Immigration. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Alemania: ordinary passports exempt from visa (category A)",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Up to 180 days without a visa for tourism or business; passport at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — El Salvador travel advice: Entry requirements (updated 2026-10-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/entry-requirements",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Tourist visa not required for stays up to 180 days; CA-4 travel up to 90 days set at first entry",
+        "name": "Government of Canada — El Salvador travel advice: Entry and exit requirements",
+        "url": "https://travel.gc.ca/destinations/el-salvador",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "nationality": "IT",
+    "destination": "SV",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'Italia' ordinary passports as exempt from visas (category A). El Salvador publishes no day count; the UK and Canadian governments both say visitors can stay up to 180 days without a visa, and the UK's advice says you can extend through the General Directorate of Migration and Immigration. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Italia: ordinary passports exempt from visa (category A)",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Up to 180 days without a visa for tourism or business; passport at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — El Salvador travel advice: Entry requirements (updated 2026-10-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/entry-requirements",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Tourist visa not required for stays up to 180 days; CA-4 travel up to 90 days set at first entry",
+        "name": "Government of Canada — El Salvador travel advice: Entry and exit requirements",
+        "url": "https://travel.gc.ca/destinations/el-salvador",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "nationality": "ES",
+    "destination": "SV",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'España' ordinary passports as exempt from visas (category A). El Salvador publishes no day count; the UK and Canadian governments both say visitors can stay up to 180 days without a visa, and the UK's advice says you can extend through the General Directorate of Migration and Immigration. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "España: ordinary passports exempt from visa (category A)",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Up to 180 days without a visa for tourism or business; passport at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — El Salvador travel advice: Entry requirements (updated 2026-10-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/entry-requirements",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Tourist visa not required for stays up to 180 days; CA-4 travel up to 90 days set at first entry",
+        "name": "Government of Canada — El Salvador travel advice: Entry and exit requirements",
+        "url": "https://travel.gc.ca/destinations/el-salvador",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "nationality": "NL",
+    "destination": "SV",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 180
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "The CA-4 visa classification linked by El Salvador's migration service lists 'Países Bajos (Holanda)' ordinary passports as exempt from visas (category A). El Salvador publishes no day count; the UK and Canadian governments both say visitors can stay up to 180 days without a visa, and the UK's advice says you can extend through the General Directorate of Migration and Immigration. El Salvador, Guatemala, Honduras and Nicaragua form the CA-4 region: El Salvador's migration service says a foreigner arriving from inside the region keeps the stay granted by the first CA-4 country entered, and Canada's advice says travel between the four is limited to 90 days in total, set by the officer at the first entry.",
+    "legal_source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Países Bajos (Holanda): ordinary passports exempt from visa (category A)",
+        "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+        "url": "https://www.migracion.gob.sv/servicios/listado-visa/",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Up to 180 days without a visa for tourism or business; passport at least 6 months after arrival",
+        "name": "GOV.UK (FCDO) — El Salvador travel advice: Entry requirements (updated 2026-10-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/entry-requirements",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Tourist visa not required for stays up to 180 days; CA-4 travel up to 90 days set at first entry",
+        "name": "Government of Canada — El Salvador travel advice: Entry and exit requirements",
+        "url": "https://travel.gc.ca/destinations/el-salvador",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Stay within CA-4 counted from the first country entered",
+        "name": "Dirección General de Migración y Extranjería — Control migratorio: preguntas frecuentes",
+        "url": "https://www.migracion.gob.sv/control-migratorio-preguntas/",
+        "checked": "2026-10-31"
+      }
+    ]
   }
 ]

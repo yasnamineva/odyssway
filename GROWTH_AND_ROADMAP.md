@@ -8,7 +8,7 @@ without a primary official source.
 
 Where we are today (2026-10-30):
 
-- 67 destinations plus the Schengen Area; 1,404 verified entry rows; 630 customs rows
+- 68 destinations plus the Schengen Area; 1,426 verified entry rows; 630 customs rows
   (135 medication, 38 with a doctor's-letter checklist, 19 with a permit how-to, 19 with
   a transit rule); 555 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
@@ -156,7 +156,11 @@ Pick by traffic and source reachability, not by map coverage.
 - **Blocked, with what would unblock them:**
   - ✔ North Macedonia added 2026-10-30 (MFA tool + Law on Foreigners, 22 rows).
   - ✔ Belize added 2026-10-31 (immigration.gov.bz country table; 30 days, UK and Canada agree).
-  - Newly reachable, to research next: El Salvador, Bhutan, Cape Verde, Paraguay, Nepal; Bolivia's
+  - ✔ El Salvador added 2026-10-31 (CA-4 visa classification PDF linked by migracion.gob.sv via its
+    WordPress API `wp-json/wp/v2/servicios`; 180 days, UK and Canada agree; CA-4 90-day regional note).
+    The same CA-4 list covers Guatemala, Honduras and Nicaragua: reuse it once each country's stay
+    rule is sourced.
+  - Newly reachable, to research next: Bhutan, Cape Verde, Paraguay, Nepal; Bolivia's
     visa portal has an API (servicios.cancilleria.gob.bo/visas/api), routes not found yet.
   - Kazakhstan, Laos, Kuwait, Pakistan, Nepal: official sites are
     JavaScript apps or refuse connections. Retry periodically; a readable official PDF or
