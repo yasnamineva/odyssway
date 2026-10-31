@@ -22608,5 +22608,35 @@
     "verified_at": "2026-10-31",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "cash-bz",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "belize dollars"
+    ],
+    "destination": "BZ",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Local and foreign currency can be brought in and taken out without limit, but amounts of BZD 20,000 or more must be declared.",
+      "quantity": "BZD 20,000 or more"
+    },
+    "summary": "No limit on cash, but declare BZD 20,000 or more (or the equivalent) when you enter or leave Belize.",
+    "notes": "Belize Customs' own page wasn't read for this site; this row rests on the German government's travel advice. The UK's advice says to declare anything that may be prohibited or dutiable on the customs form.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Belize: Reise- und Sicherheitshinweise, Einreise und Zoll",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/belizesicherheit-220284"
+    },
+    "cashThreshold": {
+      "amount": 20000,
+      "currency": "BZD",
+      "comparison": "at_least"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]

@@ -3995,3 +3995,4 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
   visas.cancilleria.gob.bo is a Quasar SPA backed by https://servicios.cancilleria.gob.bo/visas/api
   (routes not yet found in js/app.*.js; WordPress API needs auth). Next: Belize, El Salvador,
   Bhutan, Cape Verde, Paraguay, Nepal.
+- Lead (2026-10-31), Belize departure tax: BZ$40 / US$20 when leaving by land or by water to Guatemala or Mexico (GOV.UK). Needs a Belize government page before trip-charges.json.
