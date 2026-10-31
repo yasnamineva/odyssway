@@ -3988,3 +3988,10 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
   and 90 days', officer's discretion). MX→SG still rests on the Mexican embassy's post on X
   (its consular page blocks scripts): find a web page. fresh-produce-eu no longer answers
   "seeds" searches: the DG SANTE page doesn't name seeds; Reg. (EU) 2016/2031 would.
+- Destination probe 2026-10-31: now reachable — Belize (immigration.gov.bz), El Salvador
+  (migracion.gob.sv), Bhutan (immi.gov.bt), Cape Verde (ease.gov.cv), Paraguay
+  (migraciones.gov.py), Bolivia (cancilleria.gob.bo), Panama (mire.gob.pa), Nepal (mofa.gov.np).
+  Panama: visa lists are with migracion.gob.pa (unreachable). Bolivia: the visa portal
+  visas.cancilleria.gob.bo is a Quasar SPA backed by https://servicios.cancilleria.gob.bo/visas/api
+  (routes not yet found in js/app.*.js; WordPress API needs auth). Next: Belize, El Salvador,
+  Bhutan, Cape Verde, Paraguay, Nepal.
