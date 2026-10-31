@@ -221,8 +221,11 @@ Ways to make that harder to copy and easier to trust:
    Montenegro), US/Rwanda Ebola restrictions, ~100 passport-validity rules. Second pass (NL, JP) added the New Zealand Traveller Declaration,
    the Mauritius All in One form and Nigeria's health declaration for everyone, and each
    passport's own validity rules. Repeat quarterly; Third pass (IT, ES) added Georgia's insurance where it was missing, Ghana's
-   yellow fever certificate, India's Air Suvidha form and Thailand's land-entry limit. Still to do:
-   KR; NZ (SafeTravel) and AU (Smartraveller) need a browser.
+   yellow fever certificate, India's Air Suvidha form and Thailand's land-entry limit. ✔ 2026-10-31 KR: Korea's Foreign Ministry
+   (0404.go.kr, per-country 'visa-free entry' section, scriptable) cross-checks 61 KR rows; 4
+   conflicts recorded (Dominican Republic 30 vs 90 days, Oman 14 vs 30, Seychelles 3 months vs
+   30 days, Zambia 90/12 months vs 30 per entry), destination's own source kept. Still to do: NZ
+   (SafeTravel) and AU (Smartraveller) need a browser.
 2. **Re-verification cadence.** Every row re-read at least every 6 months; show the
    oldest check date on `/sources`. A competitor can copy today's data, not the history.
    ✔ 2026-10-30: the July-dated Schengen files re-read (EC Schengen-area and visa-policy
