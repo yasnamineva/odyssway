@@ -218,6 +218,8 @@ export interface CustomsItemRecord {
   letter?: CustomsLetter;
   /** Duty-free allowance per product, restating `limits` (allowance.ts). */
   allowance?: import("./allowance").Allowance;
+  /** Cash declaration threshold, restating `limits` (cash-threshold.ts). */
+  cashThreshold?: import("./cash-threshold").CashThreshold;
   legal_source: { name: string; url: string };
   verified_at: string | null;
   verified_by: string | null;

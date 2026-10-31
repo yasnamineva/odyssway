@@ -4,6 +4,8 @@ import { rowLabel } from "../lib/bring-pages";
 import { destinationByCode } from "../lib/destinations";
 import { reportProblemHref } from "../lib/report-problem";
 import AllowanceCheck from "./AllowanceCheck";
+import CashCheck from "./CashCheck";
+import { getEuroRates } from "../lib/ecb-rates";
 import BorderCardButton from "./BorderCardButton";
 import LetterChecklist from "./LetterChecklist";
 import ProcedureSection from "./ProcedureSection";
@@ -52,6 +54,7 @@ export default async function CustomsRowCard({
       )}
       {row.notes && <p className="mt-2 text-sm leading-relaxed text-slate-600">{row.notes}</p>}
       {row.allowance && <AllowanceCheck allowance={row.allowance} />}
+      {row.cashThreshold && <CashCheck threshold={row.cashThreshold} rates={await getEuroRates()} />}
       {row.procedure && <ProcedureSection procedure={row.procedure} />}
       {row.letter && <LetterChecklist letter={row.letter} destinationName={destinationName} />}
       {row.transit && (

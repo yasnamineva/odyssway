@@ -406,6 +406,15 @@ export const customsItemSchema = z
     transit: customsTransitSchema.optional(),
     letter: customsLetterSchema.optional(),
     allowance: customsAllowanceSchema.optional(),
+    /** Cash declaration threshold restating `limits` (cash-threshold.ts). */
+    cashThreshold: z
+      .object({
+        amount: z.number().positive(),
+        currency: z.string().regex(/^[A-Z]{3}$/),
+        comparison: z.enum(["over", "at_least"]),
+        foreignOnly: z.boolean().optional(),
+      })
+      .optional(),
     ...verificationFields,
   })
   .superRefine(requireVerifierWhenVerified);

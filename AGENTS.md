@@ -396,6 +396,11 @@ customs rules (the same allowances apply across every Schengen member).
   legal_source, verified_at, verified_by, status
 }
 ```
+`cashThreshold?: { amount, currency, comparison: "over" | "at_least", foreignOnly? }` (2026-10-31)
+restates a cash row's declaration threshold and drives the "Do I need to declare my cash?" box,
+which converts with the ECB's daily reference rates fetched at build time (`apps/web/lib/ecb-rates.ts`);
+validate-data checks the amount, a currency marker and the over/or-more wording.
+
 `allowance` drives the "Check what you're carrying" box on alcohol and tobacco rows. Set it
 only when the wording gives per-product amounts in pieces, grams or litres; mixing
 alternatives the source doesn't say combine is reported as unclear, never guessed.

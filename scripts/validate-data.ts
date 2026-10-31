@@ -304,6 +304,42 @@ function checkAllowanceMatchesText(): void {
 }
 
 /**
+ * A cash row's `cashThreshold` restates its wording: the amount and a marker of its
+ * currency must appear, and "over" needs over-wording ("more than", "exceeding")
+ * while "at_least" needs or-more wording ("or more", "from", "≥").
+ */
+function checkCashThresholds(): void {
+  const file = join(DATA_DIR, "customs-items.json");
+  const rows = JSON.parse(readFileSync(file, "utf8")) as Array<{
+    slug: string;
+    limits?: { description: string; quantity?: string };
+    summary?: string;
+    cashThreshold?: { amount: number; currency: string; comparison: string };
+  }>;
+  const markers: Record<string, string[]> = {
+    USD: ["USD", "US$", "$", "dollar"], EUR: ["EUR", "€", "euro"], GBP: ["GBP", "£"], JPY: ["JPY", "¥"],
+    CAD: ["CAD"], AUD: ["AUD"], NZD: ["NZD", "NZ$"], SGD: ["SGD", "S$"], HKD: ["HKD", "HK$"], AED: ["AED"],
+    SAR: ["SAR"], QAR: ["QAR"], MAD: ["MAD", "dirham"], ILS: ["NIS", "ILS"], MOP: ["MOP"], SCR: ["SCR"],
+    FJD: ["FJD", "FJ$"], MUR: ["MUR", "Rs"], OMR: ["OMR"], BND: ["BND"], GEL: ["GEL"], IDR: ["IDR"], BSD: ["BSD"],
+  };
+  for (const r of rows) {
+    const t = r.cashThreshold;
+    if (!t) continue;
+    const where = `${rel(file)}: ${r.slug} cashThreshold`;
+    const text = `${r.limits?.quantity ?? ""} ${r.limits?.description ?? ""}`;
+    const plain = text.replace(/(?<=\d)[,.](?=\d{3}\b)/g, "");
+    if (!new RegExp(`(?<![\\d.])${t.amount}(?!\\d)`).test(plain)) errors.push(`${where}: ${t.amount} isn't in the limits wording`);
+    const m = markers[t.currency];
+    if (!m) errors.push(`${where}: no currency markers defined for ${t.currency}`);
+    else if (!m.some((x) => text.includes(x))) errors.push(`${where}: ${t.currency} isn't named in the limits wording`);
+    const overRe = /more than|exceed|\bover\b|above|in excess|>/i;
+    const atLeastRe = /or more|at least|starting from|\bfrom\b|≥/i;
+    if (t.comparison === "over" && !overRe.test(text)) errors.push(`${where}: "over" but the wording has no over-wording`);
+    if (t.comparison === "at_least" && !atLeastRe.test(text)) errors.push(`${where}: "at_least" but the wording has no or-more wording`);
+  }
+}
+
+/**
  * Published rows rest on official sources only (AGENTS.md §3.2). Fail when a verified
  * row's text leans on secondary material ("commonly reported", "secondary sources",
  * "travel-industry"): such claims belong in data/UNVERIFIED, not in a published note.
@@ -458,6 +494,7 @@ checkNoUnverifiedReferences();
 checkPassportValidityMatchesText();
 checkLeadTimeMatchesText();
 checkAllowanceMatchesText();
+checkCashThresholds();
 checkNoSecondarySourcing();
 checkTranslations();
 checkTimedStepsMatchText();

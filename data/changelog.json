@@ -1,5 +1,256 @@
 [
   {
+    "commit": "913ae89e6eeaa0fe9dfa26e0ec8daaa4730f0e85",
+    "date": "2026-10-31",
+    "dataset": "customs-items",
+    "summary": "Tobacco and alcohol allowances cross-checked against Germany's travel advice: conflicts recorded for Ghana, Fiji, Maldives and Serbia (each country's own figure kept); Brunei alcohol amounts added (2 bottles of wine or spirits plus 12 cans of beer)",
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Singapore Police Force — Lodge Cash Movement Report for Carriers, Recipients or Senders",
+      "url": "https://www.police.gov.sg/E-Services/Lodge-Cash-Movement-Report-For-Carriers-Recipients-or-Senders"
+    },
+    "destinations": [
+      "BN",
+      "FJ",
+      "GH",
+      "MV",
+      "RS"
+    ]
+  },
+  {
+    "commit": "9b17b0408feaecc7bcca4b70d2fd8c6cb5c0c7c6",
+    "date": "2026-10-31",
+    "dataset": "customs-items",
+    "summary": "Cash thresholds cross-checked against Germany's travel advice for 40 destinations: conflicts recorded for Saudi Arabia, Seychelles and Thailand (each country's own figure kept); Mongolia shows both foreign governments' thresholds; China yuan limit (RMB 20,000) restored, credited to Germany's advice",
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Singapore Police Force — Lodge Cash Movement Report for Carriers, Recipients or Senders",
+      "url": "https://www.police.gov.sg/E-Services/Lodge-Cash-Movement-Report-For-Carriers-Recipients-or-Senders"
+    },
+    "destinations": [
+      "CN",
+      "MN",
+      "SA",
+      "SC",
+      "TH"
+    ]
+  },
+  {
+    "commit": "a7ec7fbf35d2b6a61f03277d772a95dd843f3c35",
+    "date": "2026-10-31",
+    "dataset": "customs-items",
+    "summary": "Customs gaps from Germany's travel-advice open data: Kyrgyzstan cash, tobacco, alcohol and drones; Seychelles e-cigarettes (allowed) and banned items; Jordan medication; weapons for North Macedonia, Bosnia and Herzegovina, Sri Lanka, Tanzania and Oman; Oman alcohol conflict recorded",
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Singapore Police Force — Lodge Cash Movement Report for Carriers, Recipients or Senders",
+      "url": "https://www.police.gov.sg/E-Services/Lodge-Cash-Movement-Report-For-Carriers-Recipients-or-Senders"
+    },
+    "destinations": [
+      "BA",
+      "JO",
+      "KG",
+      "LK",
+      "MK",
+      "OM",
+      "SC",
+      "TZ"
+    ]
+  },
+  {
+    "commit": "718f7753709ccbce9c671b79d06bc2a4f579a065",
+    "date": "2026-10-31",
+    "dataset": "customs-items",
+    "summary": "From Germany's travel advice: e-cigarettes banned in Uzbekistan (since 1 March 2026) and Mauritius (GN 139/2022, with shisha), weapons/pepper spray/spearfishing gear banned in Mauritius; Uzbekistan drone conflict recorded",
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Singapore Police Force — Lodge Cash Movement Report for Carriers, Recipients or Senders",
+      "url": "https://www.police.gov.sg/E-Services/Lodge-Cash-Movement-Report-For-Carriers-Recipients-or-Senders"
+    },
+    "destinations": [
+      "MU",
+      "UZ"
+    ]
+  },
+  {
+    "commit": "d516f5ef239d9275f16ef6f3fa4afbff8af900a8",
+    "date": "2026-10-31",
+    "dataset": "customs-items",
+    "summary": "Brunei cash (declare BND 13,000+), tobacco (no duty-free; packs without health warnings refused) and e-cigarettes (banned); Singapore cash threshold SGD 20,000 with penalties; all from Korea's Foreign Ministry advice",
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Singapore Police Force — Lodge Cash Movement Report for Carriers, Recipients or Senders",
+      "url": "https://www.police.gov.sg/E-Services/Lodge-Cash-Movement-Report-For-Carriers-Recipients-or-Senders"
+    },
+    "destinations": [
+      "BN",
+      "SG"
+    ]
+  },
+  {
+    "commit": "0ff198b1969b6a979db0a3f18cd1431f3c915a58",
+    "date": "2026-10-31",
+    "dataset": "customs-items",
+    "summary": "Notes rewritten for readers (no field names, 'this session' or TODO pointers; validate-data now fails on them); UK passports to Singapore show no fixed day count (GOV.UK: normally 30 to 90 days at the officer's discretion); Singapore notes no longer repeat unconfirmed 90-day figures",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "gov.uk — Bringing fruit, vegetables, nuts and seeds into Great Britain",
+      "url": "https://www.gov.uk/bringing-food-into-great-britain/fruit-vegetables-nuts-seeds"
+    },
+    "destinations": [
+      "AU",
+      "BR",
+      "BS",
+      "CL",
+      "CN",
+      "CO",
+      "DO",
+      "EC",
+      "EU",
+      "GE",
+      "HK",
+      "IL",
+      "IN",
+      "JM",
+      "JO",
+      "JP",
+      "KE",
+      "LK",
+      "MX",
+      "MY",
+      "NG",
+      "NZ",
+      "PH",
+      "RS",
+      "RW",
+      "SA",
+      "SG",
+      "TH",
+      "TR",
+      "TW",
+      "TZ",
+      "ZA"
+    ]
+  },
+  {
+    "commit": "0ff198b1969b6a979db0a3f18cd1431f3c915a58",
+    "date": "2026-10-31",
+    "dataset": "entry-requirements",
+    "summary": "Notes rewritten for readers (no field names, 'this session' or TODO pointers; validate-data now fails on them); UK passports to Singapore show no fixed day count (GOV.UK: normally 30 to 90 days at the officer's discretion); Singapore notes no longer repeat unconfirmed 90-day figures",
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "UK Government - Foreign travel advice: Singapore, Entry requirements",
+      "url": "https://www.gov.uk/foreign-travel-advice/singapore/entry-requirements"
+    },
+    "destinations": [
+      "AE",
+      "AU",
+      "BS",
+      "CA",
+      "CO",
+      "DO",
+      "EG",
+      "IL",
+      "IN",
+      "JM",
+      "KE",
+      "KH",
+      "MA",
+      "ME",
+      "MY",
+      "NG",
+      "NZ",
+      "SA",
+      "SG",
+      "TR",
+      "TW",
+      "TZ",
+      "US",
+      "ZA"
+    ]
+  },
+  {
+    "commit": "4310ea34a2d4eef7024425633053931b72ed4699",
+    "date": "2026-10-31",
+    "dataset": "entry-requirements",
+    "summary": "Korean passport rows cross-checked against Korea's Foreign Ministry (0404.go.kr) for 61 destinations; four conflicts recorded (Dominican Republic, Oman, Seychelles, Zambia), each keeping the destination's own source",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "destinations": [
+      "AE",
+      "AL",
+      "AM",
+      "AR",
+      "AU",
+      "BA",
+      "BN",
+      "BR",
+      "BS",
+      "CA",
+      "CL",
+      "CN",
+      "CO",
+      "CY",
+      "DO",
+      "EC",
+      "EG",
+      "GB",
+      "GE",
+      "GH",
+      "HK",
+      "ID",
+      "IE",
+      "IL",
+      "IN",
+      "JM",
+      "JO",
+      "JP",
+      "KE",
+      "KG",
+      "LK",
+      "MA",
+      "MK",
+      "MN",
+      "MO",
+      "MU",
+      "MV",
+      "MX",
+      "MY",
+      "NG",
+      "NZ",
+      "OM",
+      "PE",
+      "PH",
+      "QA",
+      "RS",
+      "RW",
+      "SA",
+      "SC",
+      "SG",
+      "TH",
+      "TR",
+      "TW",
+      "TZ",
+      "US",
+      "UY",
+      "UZ",
+      "VN",
+      "ZA",
+      "ZM",
+      "ZW"
+    ]
+  },
+  {
     "commit": "2bc0f98cf615e8d1f547842d8762413928ea8637",
     "date": "2026-10-30",
     "dataset": "customs-items",

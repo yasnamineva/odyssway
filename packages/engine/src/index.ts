@@ -20,6 +20,8 @@ export {
 export { evaluateSimpleStay, evaluateStays } from "./stay-policy";
 export { addMonths, checkPassportValidity, remainingValidity } from "./passport-validity";
 export { evaluateAllowance, productsOf, PRODUCT_UNIT } from "./allowance";
+export { checkCash, CLOSE_MARGIN } from "./cash-threshold";
+export type { CashCheckResult, CashThreshold, EuroRates } from "./cash-threshold";
 export type { Allowance, AllowanceGroup, AllowanceOption, AllowanceProduct, AllowanceResult, AllowanceUnit, GroupResult, Quantities } from "./allowance";
 export { customsRowFields, entryRowFields, entryRowId, figuresIn, missingFigures, translationSourceHash } from "./translation";
 export type { TranslatableFields } from "./translation";

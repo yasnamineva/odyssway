@@ -137,9 +137,13 @@ a non-goal (AGENTS.md §2).
    the Mauritius work). Merge it the first time an official source states a
    calendar-year cap for visa-free visitors.
 
+✔ 2026-10-31 **Cash declaration check** on 59 cash rows ("Do I need to declare my cash?"):
+structured thresholds checked by validate-data, ECB reference rates (official) for conversion,
+"close" within 5% below a converted threshold. Not structured: India, South Africa, Vietnam,
+Uzbekistan, Turkey, Taiwan, Mongolia (split or unclear wording).
+
 Later, if demand shows up in Search Console or item-miss data: an overstay-consequences
-page per country (needs verified penalty data), and a cash-declaration converter
-(threshold in local currency vs. what you carry; exchange rates would need a cited source).
+page per country (needs verified penalty data).
 
 ---
 

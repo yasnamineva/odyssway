@@ -112,7 +112,12 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "over"
+    }
   },
   {
     "slug": "prescription-medication-us",
@@ -452,7 +457,12 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "GBP",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "prescription-medication-gb",
@@ -758,7 +768,12 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "CAD",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "prescription-medication-ca",
@@ -1090,7 +1105,12 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "EUR",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "prescription-medication-eu",
@@ -1290,7 +1310,12 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 1000000,
+      "currency": "JPY",
+      "comparison": "over"
+    }
   },
   {
     "slug": "prescription-medication-jp",
@@ -1825,7 +1850,12 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "drones-ke",
@@ -2254,7 +2284,12 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "over"
+    }
   },
   {
     "slug": "medication-mx",
@@ -2510,7 +2545,13 @@
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/thailandsicherheit-201558",
         "checked": "2026-10-31"
       }
-    ]
+    ],
+    "cashThreshold": {
+      "amount": 15000,
+      "currency": "USD",
+      "comparison": "over",
+      "foreignOnly": true
+    }
   },
   {
     "slug": "medication-th",
@@ -2841,7 +2882,12 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "over"
+    }
   },
   {
     "slug": "prescription-medication-rw",
@@ -3343,7 +3389,12 @@
     },
     "verified_at": "2026-10-19",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "over"
+    }
   },
   {
     "slug": "weapons-ng",
@@ -3553,7 +3604,12 @@
         "name": "Auswärtiges Amt — Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/marokkosicherheit-224080"
       }
-    ]
+    ],
+    "cashThreshold": {
+      "amount": 100000,
+      "currency": "MAD",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "medication-ma",
@@ -4455,7 +4511,12 @@
     },
     "verified_at": "2026-08-12",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "AUD",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "medication-au",
@@ -4740,7 +4801,12 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 60000,
+      "currency": "AED",
+      "comparison": "over"
+    }
   },
   {
     "slug": "medication-ae",
@@ -4971,7 +5037,13 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "over",
+      "foreignOnly": true
+    }
   },
   {
     "slug": "alcohol-nz",
@@ -5046,7 +5118,12 @@
     },
     "verified_at": "2026-10-18",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "NZD",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "food-plant-nz",
@@ -5293,7 +5370,13 @@
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/chinasicherheit-200466",
         "checked": "2026-10-31"
       }
-    ]
+    ],
+    "cashThreshold": {
+      "amount": 5000,
+      "currency": "USD",
+      "comparison": "over",
+      "foreignOnly": true
+    }
   },
   {
     "slug": "alcohol-id",
@@ -5415,7 +5498,12 @@
     },
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 100000000,
+      "currency": "IDR",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "alcohol-sa",
@@ -5583,7 +5671,12 @@
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/saudiarabiensicherheit-202298",
         "checked": "2026-10-31"
       }
-    ]
+    ],
+    "cashThreshold": {
+      "amount": 40000,
+      "currency": "SAR",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "alcohol-br",
@@ -5705,7 +5798,12 @@
     },
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "over"
+    }
   },
   {
     "slug": "alcohol-sg",
@@ -5872,7 +5970,12 @@
     },
     "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "over"
+    }
   },
   {
     "slug": "controlled-medication-eu",
@@ -6604,7 +6707,12 @@
         "url": "https://0404.go.kr/ntnSafetyInfo/134/detail",
         "checked": "2026-10-31"
       }
-    ]
+    ],
+    "cashThreshold": {
+      "amount": 20000,
+      "currency": "SGD",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "injectable-medication-sg",
@@ -9776,7 +9884,12 @@
     "destination": "HK",
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 120000,
+      "currency": "HKD",
+      "comparison": "over"
+    }
   },
   {
     "slug": "e-cigarettes-hk",
@@ -10260,7 +10373,12 @@
     },
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "EUR",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "meat-dairy-ie",
@@ -10638,7 +10756,12 @@
     "destination": "MY",
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "cannabis-my",
@@ -11091,7 +11214,12 @@
     "destination": "GE",
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 30000,
+      "currency": "GEL",
+      "comparison": "over"
+    }
   },
   {
     "destination": "GE",
@@ -11591,7 +11719,12 @@
     },
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "over"
+    }
   },
   {
     "slug": "fresh-produce-mv",
@@ -11766,7 +11899,12 @@
     },
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "EUR",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "prescription-medication-rs",
@@ -12471,7 +12609,12 @@
     },
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "EUR",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "prescription-medication-al",
@@ -12770,7 +12913,12 @@
     },
     "verified_at": "2026-10-02",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "EUR",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "meat-dairy-cy",
@@ -13135,7 +13283,12 @@
     },
     "verified_at": "2026-10-09",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 15000,
+      "currency": "USD",
+      "comparison": "over"
+    }
   },
   {
     "slug": "prescription-medication-lk",
@@ -13455,7 +13608,12 @@
     },
     "verified_at": "2026-10-09",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "over"
+    }
   },
   {
     "slug": "prescription-medication-pe",
@@ -13752,7 +13910,12 @@
     },
     "verified_at": "2026-10-09",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "prescription-medication-do",
@@ -14102,7 +14265,12 @@
     },
     "verified_at": "2026-10-09",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "over"
+    }
   },
   {
     "slug": "goods-allowance-co",
@@ -14363,7 +14531,12 @@
     },
     "verified_at": "2026-10-09",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "controlled-medication-ar",
@@ -14969,7 +15142,12 @@
     },
     "verified_at": "2026-10-09",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "prescription-medication-cr",
@@ -15219,7 +15397,12 @@
     },
     "verified_at": "2026-10-09",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 50000,
+      "currency": "QAR",
+      "comparison": "over"
+    }
   },
   {
     "slug": "prescription-medication-qa",
@@ -15648,7 +15831,12 @@
     },
     "verified_at": "2026-10-10",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "over"
+    }
   },
   {
     "slug": "prescription-medication-cl",
@@ -16071,7 +16259,12 @@
     },
     "verified_at": "2026-10-10",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "EUR",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "prescription-medication-me",
@@ -16398,7 +16591,12 @@
     },
     "verified_at": "2026-10-10",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "over"
+    }
   },
   {
     "slug": "prescription-medication-jm",
@@ -16777,7 +16975,12 @@
     },
     "verified_at": "2026-10-10",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "BSD",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "cannabis-bs",
@@ -17075,7 +17278,12 @@
     },
     "verified_at": "2026-10-10",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "prescription-medication-ec",
@@ -17317,7 +17525,12 @@
     },
     "verified_at": "2026-10-10",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "over"
+    }
   },
   {
     "slug": "prescription-medication-tz",
@@ -17552,7 +17765,12 @@
     },
     "verified_at": "2026-10-10",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "weapons-kh",
@@ -17777,7 +17995,12 @@
     },
     "verified_at": "2026-10-10",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 50000,
+      "currency": "ILS",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "prescription-medication-il",
@@ -18874,7 +19097,12 @@
     },
     "verified_at": "2026-10-20",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "over"
+    }
   },
   {
     "slug": "prescription-medication-am",
@@ -19093,7 +19321,12 @@
     },
     "verified_at": "2026-10-21",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "over"
+    }
   },
   {
     "slug": "prescription-medication-uy",
@@ -19305,7 +19538,12 @@
     },
     "verified_at": "2026-10-23",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "EUR",
+      "comparison": "over"
+    }
   },
   {
     "slug": "prescription-medication-ba",
@@ -19484,7 +19722,12 @@
     },
     "verified_at": "2026-10-23",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 120000,
+      "currency": "MOP",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "prescription-medication-uz",
@@ -19652,7 +19895,12 @@
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/seychellensicherheit-226912",
         "checked": "2026-10-31"
       }
-    ]
+    ],
+    "cashThreshold": {
+      "amount": 50000,
+      "currency": "SCR",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "e-cigarettes-sc",
@@ -20019,7 +20267,12 @@
     },
     "verified_at": "2026-10-25",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 5000,
+      "currency": "USD",
+      "comparison": "over"
+    }
   },
   {
     "slug": "drones-zm",
@@ -20072,7 +20325,12 @@
     },
     "verified_at": "2026-10-25",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "over"
+    }
   },
   {
     "slug": "cannabis-gh",
@@ -20234,7 +20492,12 @@
     },
     "verified_at": "2026-10-25",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "FJD",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "prescription-medication-fj",
@@ -20440,7 +20703,12 @@
     },
     "verified_at": "2026-10-25",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 500000,
+      "currency": "MUR",
+      "comparison": "over"
+    }
   },
   {
     "slug": "prescription-medication-mu",
@@ -20726,7 +20994,13 @@
         "name": "Embassy of the State of Qatar in Cairo — Travel tips: Egypt (currency)",
         "url": "https://cairo.embassy.qa/en/egypt/travel-tips"
       }
-    ]
+    ],
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "over",
+      "foreignOnly": true
+    }
   },
   {
     "slug": "tobacco-qa",
@@ -21236,7 +21510,12 @@
     },
     "verified_at": "2026-10-26",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "cannabis-zw",
@@ -21437,7 +21716,12 @@
     },
     "verified_at": "2026-10-28",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 6000,
+      "currency": "OMR",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "e-cigarettes-om",
@@ -21612,7 +21896,12 @@
     },
     "verified_at": "2026-10-31",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "tobacco-kg",
@@ -21858,7 +22147,12 @@
     },
     "verified_at": "2026-10-31",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 13000,
+      "currency": "BND",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "tobacco-bn",
@@ -21933,7 +22227,12 @@
     },
     "verified_at": "2026-10-30",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "EUR",
+      "comparison": "at_least"
+    }
   },
   {
     "slug": "cannabis-mk",

@@ -1320,5 +1320,22 @@
     "uncovered": "No duty-free amount stated for: {products}.",
     "groupUsed": "{names}: {percent}% of that allowance.",
     "disclaimer": "Checks amounts only. Age, value and other conditions in the rule above still apply. What you enter stays in your browser."
+  },
+  "cashCheck": {
+    "title": "Do I need to declare my cash?",
+    "ruleOver": "The rule: declare amounts over {limit} (or the equivalent).",
+    "ruleAtLeast": "The rule: declare {limit} or more (or the equivalent).",
+    "foreignOnly": "This threshold is for foreign currency; rules for the local currency are in the text above.",
+    "amountLabel": "How much are you carrying in total?",
+    "currencyLabel": "Currency",
+    "invalid": "Enter a number, for example 9500.",
+    "status": {
+      "declare": "Declare it: that's about {converted}, which reaches the {limit} threshold.",
+      "close": "About {converted}: just under {limit}. Customs may use a different exchange rate, so you could be over; check with customs or declare.",
+      "below": "No declaration needed for this amount: about {converted}, under {limit}.",
+      "unknown": "We don't have an exchange rate for {currency}, so compare it with {limit} yourself."
+    },
+    "rateNote": "Converted with the European Central Bank's reference rates of {date}.",
+    "disclaimer": "Count everything the rule above lists (cash, and often cheques or other instruments). What you enter stays in your browser."
   }
 }

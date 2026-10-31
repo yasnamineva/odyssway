@@ -341,6 +341,17 @@ test("the allowance check compares what you carry with the duty-free amounts", a
   await expect(check.getByTestId("allowance-result")).toContainText("doesn't say whether they can be combined");
 });
 
+test("the cash check says when an amount must be declared", async ({ page }) => {
+  await page.goto("/bring/cash/hong-kong");
+  const box = page.getByTestId("cash-check").first();
+  await expect(box).toContainText("HKD 120,000");
+  await box.getByTestId("cash-amount").fill("130000");
+  await expect(box.getByTestId("cash-result")).toContainText("Declare it");
+  await box.getByTestId("cash-amount").fill("120000");
+  await expect(box.getByTestId("cash-result")).toContainText("No declaration needed");
+  await expect(box.getByTestId("cash-currency").locator("option")).not.toHaveCount(1);
+});
+
 test("rule cards link a pre-filled problem report", async ({ page }) => {
   await page.goto("/bring/medication/south-korea");
   const link = page.getByTestId("report-problem").first();
