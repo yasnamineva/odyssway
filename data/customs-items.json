@@ -11509,7 +11509,15 @@
           ]
         }
       ]
-    }
+    },
+    "_sources": [
+      {
+        "claim": "Conflict: Germany's advice says the 2024 ban covers importing tobacco of any kind; Maldives Customs' own circular (limited tobacco for tourists) is kept",
+        "name": "Auswärtiges Amt — Malediven: Reise- und Sicherheitshinweise, Einreise und Zoll",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/maledivensicherheit-220382",
+        "checked": "2026-10-31"
+      }
+    ]
   },
   {
     "slug": "drones-mv",
@@ -11698,7 +11706,15 @@
     },
     "verified_at": "2026-10-16",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Conflict: Germany's advice gives 200 cigarettes; Serbian Customs' own page (50 cigarettes) is kept",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502",
+        "checked": "2026-10-31"
+      }
+    ]
   },
   {
     "slug": "e-cigarettes-rs",
@@ -19742,7 +19758,15 @@
           ]
         }
       ]
-    }
+    },
+    "_sources": [
+      {
+        "claim": "Conflict: Germany's advice gives 2 L of wine and 1 L of spirits; the Ghana Revenue Authority's own page (375 ml spirits, 750 ml wine) is kept",
+        "name": "Auswärtiges Amt — Ghana: Reise- und Sicherheitshinweise, Einreise und Zoll",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/ghanasicherheit-203372",
+        "checked": "2026-10-31"
+      }
+    ]
   },
   {
     "slug": "tobacco-gh",
@@ -19768,7 +19792,15 @@
     },
     "verified_at": "2026-10-23",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Conflict: Germany's advice gives 200 cigarettes or 50 cigars or 100 cigarillos or 250 g of tobacco; the Ghana Revenue Authority's own page (0.5 kg in total) is kept",
+        "name": "Auswärtiges Amt — Ghana: Reise- und Sicherheitshinweise, Einreise und Zoll",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/ghanasicherheit-203372",
+        "checked": "2026-10-31"
+      }
+    ]
   },
   {
     "slug": "alcohol-zm",
@@ -20118,7 +20150,15 @@
           ]
         }
       ]
-    }
+    },
+    "_sources": [
+      {
+        "claim": "Conflict: Germany's advice gives 2.25 L of spirits or 4.5 L of wine or beer; the Fiji Revenue and Customs Service's own page (3 L of spirits) is kept",
+        "name": "Auswärtiges Amt — Fidschi: Reise- und Sicherheitshinweise, Einreise und Zoll",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/fidschisicherheit-226626",
+        "checked": "2026-10-31"
+      }
+    ]
   },
   {
     "slug": "tobacco-fj",
@@ -21737,15 +21777,16 @@
     "category": "alcohol",
     "verdict": "depends",
     "limits": {
-      "description": "Only non-Muslims aged 17 and over may bring in alcohol, and only a limited amount. Declare it to customs on arrival and drink it in private. Selling alcohol and tobacco is illegal in Brunei."
+      "description": "Only non-Muslims over 17 may bring in alcohol: two 1-litre bottles of wine or two 1-litre bottles of spirits, plus twelve 330 ml cans of beer per person. Declare it to customs on arrival and drink it in private. Selling alcohol and tobacco is illegal in Brunei.",
+      "quantity": "2 bottles of wine or spirits (1 L each) + 12 cans of beer (330 ml)"
     },
-    "summary": "Non-Muslims aged 17+ may bring a limited amount of alcohol: declare it on arrival and drink it in private. The amount isn't given here.",
-    "notes": "The UK advice doesn't state the amount, and the Brunei customs page it links to (BDNSW prohibited and restricted goods) returned 404 for this site. You can declare through the Customs.BN app or at the airport.",
+    "summary": "Non-Muslims over 17: two 1-litre bottles of wine or spirits plus 12 cans of beer. Declare it on arrival and drink it in private.",
+    "notes": "The amounts are from Germany's travel advice; the UK's says only 'a limited amount', and the Brunei customs page it links to returned 404 for this site. You can declare through the Customs.BN app or at the airport.",
     "legal_source": {
       "name": "GOV.UK (FCDO) — Brunei travel advice: Safety and security (updated 2026-03-19)",
       "url": "https://www.gov.uk/foreign-travel-advice/brunei/safety-and-security"
     },
-    "verified_at": "2026-10-30",
+    "verified_at": "2026-10-31",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -21760,6 +21801,12 @@
         "name": "GOV.UK (FCDO) — Brunei travel advice: Entry requirements, 'Customs rules' (updated 2026-03-19)",
         "url": "https://www.gov.uk/foreign-travel-advice/brunei/entry-requirements",
         "checked": "2026-10-30"
+      },
+      {
+        "claim": "Non-Muslims over 17: two 1-litre bottles of wine or two of higher-strength drinks, plus twelve 330 ml cans of beer per person",
+        "name": "Auswärtiges Amt — Brunei Darussalam: Reise- und Sicherheitshinweise, Einreise und Zoll",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/bruneidarussalamsicherheit-224526",
+        "checked": "2026-10-31"
       }
     ]
   },
