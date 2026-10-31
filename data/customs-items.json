@@ -17956,6 +17956,29 @@
     "status": "verified"
   },
   {
+    "slug": "medication-kh",
+    "names": [
+      "medication",
+      "medicine",
+      "medical supplies"
+    ],
+    "destination": "KH",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Customs checks on medicines are strict in Cambodia. If you're bringing medicines for medical volunteer work, get permission from the relevant Cambodian authority before you travel."
+    },
+    "summary": "Customs are strict about medicines; for medical volunteer trips, get permission from the Cambodian authority first.",
+    "notes": "No Cambodian customs or health page stating this was read for this site; this row rests on the Korean government's travel advice. It doesn't address medicines carried for your own use.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of the Republic of Korea — 해외안전여행 (0404.go.kr), Cambodia: entry notes",
+      "url": "https://0404.go.kr/ntnSafetyInfo/259/detail"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "alcohol-il",
     "names": [
       "alcohol",
@@ -20358,6 +20381,53 @@
     "status": "verified"
   },
   {
+    "slug": "cannabis-mo",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "narcotic medicine"
+    ],
+    "destination": "MO",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Narcotic medicines, including cannabis, can't be brought into Macao."
+    },
+    "summary": "Banned: narcotic medicines, including cannabis, can't be brought into Macao.",
+    "notes": "No Macao customs or health page stating this was read for this site; this row rests on the Korean government's travel advice. It says nothing specific about CBD products, so CBD isn't covered here.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of the Republic of Korea — 해외안전여행 (0404.go.kr), Macao: entry notes",
+      "url": "https://0404.go.kr/ntnSafetyInfo/378/detail"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-mo",
+    "names": [
+      "self-defence items",
+      "self-defense items"
+    ],
+    "destination": "MO",
+    "category": "weapons",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Self-defence items can't be brought into Macao."
+    },
+    "summary": "Banned: self-defence items can't be brought into Macao.",
+    "notes": "No Macao customs or health page stating this was read for this site; this row rests on the Korean government's travel advice.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of the Republic of Korea — 해외안전여행 (0404.go.kr), Macao: entry notes",
+      "url": "https://0404.go.kr/ntnSafetyInfo/378/detail"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "cash-zm",
     "names": [
       "cash",
@@ -22234,10 +22304,10 @@
     "category": "cash",
     "verdict": "declaration_required",
     "limits": {
-      "description": "Declare cash on arrival: the UK government's advice says from 10,000 US dollars (cash or travellers cheques), while Germany's says from MNT 15 million. You can bring in up to 15 million Mongolian tugriks (UK advice).",
-      "quantity": "UK advice: USD 10,000 or more; German advice: MNT 15 million or more"
+      "description": "Declare cash on arrival: the German and Korean governments' advice says above MNT 15 million (or the foreign-currency equivalent), while the UK government's says from 10,000 US dollars (cash or travellers cheques).",
+      "quantity": "German and Korean advice: over MNT 15 million; UK advice: USD 10,000 or more"
     },
-    "summary": "Declare large amounts of cash on arrival; the UK and German governments give different thresholds (USD 10,000 vs MNT 15 million).",
+    "summary": "Declare large amounts of cash on arrival; Germany and Korea say above MNT 15 million, the UK says from USD 10,000.",
     "notes": "You get a certified declaration showing you brought the money in. Without it, the money could be seized when you leave. No Mongolian customs page was read for this site; the two foreign governments' figures differ, so both are shown.",
     "legal_source": {
       "name": "GOV.UK (FCDO) — Mongolia travel advice: Entry requirements, 'Taking money into Mongolia' (updated 2026-08-07)",
@@ -22252,8 +22322,62 @@
         "name": "Auswärtiges Amt — Mongolei: Reise- und Sicherheitshinweise, Einreise und Zoll",
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/mongoleisicherheit-222842",
         "checked": "2026-10-31"
+      },
+      {
+        "claim": "Customs declaration needed when entering with more than MNT 15 million in cash or the foreign-currency equivalent",
+        "name": "Ministry of Foreign Affairs of the Republic of Korea — 해외안전여행 (0404.go.kr), Mongolia: entry notes",
+        "url": "https://0404.go.kr/ntnSafetyInfo/68/detail",
+        "checked": "2026-10-31"
       }
     ]
+  },
+  {
+    "slug": "medication-mn",
+    "names": [
+      "medication",
+      "medicine",
+      "narcotic medicine",
+      "psychotropic medicine"
+    ],
+    "destination": "MN",
+    "category": "medication",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declare narcotic and psychotropic substances on the customs declaration when you enter Mongolia."
+    },
+    "summary": "Declare narcotic and psychotropic medicines on the customs form when you arrive.",
+    "notes": "No Mongolian customs or health page stating this was read for this site; this row rests on the Korean government's travel advice. It doesn't say whether a prescription or permit is needed.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of the Republic of Korea — 해외안전여행 (0404.go.kr), Mongolia: entry notes",
+      "url": "https://0404.go.kr/ntnSafetyInfo/68/detail"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "weapons-mn",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "ammunition"
+    ],
+    "destination": "MN",
+    "category": "weapons",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declare firearms, ammunition and similar equipment on the customs declaration when you enter Mongolia."
+    },
+    "summary": "Declare firearms and ammunition on the customs form when you arrive.",
+    "notes": "No Mongolian customs or health page stating this was read for this site; this row rests on the Korean government's travel advice.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of the Republic of Korea — 해외안전여행 (0404.go.kr), Mongolia: entry notes",
+      "url": "https://0404.go.kr/ntnSafetyInfo/68/detail"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   },
   {
     "slug": "alcohol-bn",
