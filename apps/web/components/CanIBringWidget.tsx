@@ -6,6 +6,7 @@ import { schengenCountries } from "../lib/countries";
 import { destinations } from "../lib/destination-index";
 import { SITE_URL } from "../lib/site";
 import { SCHENGEN_DESTINATION } from "../lib/schengen-sentinel";
+import { destinationOptionGroups } from "../lib/destination-options";
 import SearchableSelect from "./SearchableSelect";
 import SourceNote from "./SourceNote";
 
@@ -79,19 +80,11 @@ export default function CanIBringWidget() {
             }}
             placeholder={tc("toPlaceholder")}
             noResultsLabel={tc("noMatches")}
-            groups={[
-              { options: [{ value: SCHENGEN_DESTINATION, label: tc("schengenArea") }] },
-              {
-                label: tc("toGroupDestinations"),
-                options: destinations
-                  .filter((d) => d.status === "verified")
-                  .map((d) => ({ value: d.code, label: d.name })),
-              },
-              {
-                label: tc("toGroupSchengenStates"),
-                options: schengenCountries.map((c) => ({ value: c.code, label: c.name })),
-              },
-            ]}
+            groups={destinationOptionGroups({
+              destinations: destinations.filter((d) => d.status === "verified"),
+              schengenStates: schengenCountries,
+              labels: { destinations: tc("toGroupDestinations"), schengenSuffix: tc("schengenSuffix"), comingSoon: tc("toGroupComingSoon"), comingSoonSuffix: tc("comingSoonSuffix") },
+            })}
           />
         </div>
         <div>

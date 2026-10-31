@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { SCHENGEN_DESTINATION } from "../lib/schengen-sentinel";
+import { destinationOptionGroups } from "../lib/destination-options";
 import SearchableSelect from "./SearchableSelect";
 
 export interface QuickCheckPlace {
@@ -84,30 +84,13 @@ export default function HeroQuickCheck({ options }: { options: QuickCheckOptions
               onChange={setDestination}
               placeholder={t("toPlaceholder")}
               noResultsLabel={t("noMatches")}
-              groups={[
-                { options: [{ value: SCHENGEN_DESTINATION, label: t("schengenArea") }] },
-                {
-                  label: t("toGroupDestinations"),
-                  options: options.destinations
-                    .filter((d) => d.code !== nationality)
-                    .map((d) => ({ value: d.code, label: d.name })),
-                },
-                {
-                  label: t("toGroupSchengenStates"),
-                  options: options.schengenStates
-                    .filter((c) => c.code !== nationality)
-                    .map((c) => ({ value: c.code, label: c.name })),
-                },
-                {
-                  label: t("toGroupComingSoon"),
-                  options: options.comingSoon
-                    .filter((d) => d.code !== nationality)
-                    .map((d) => ({
-                      value: d.code,
-                      label: `${d.name} ${t("comingSoonSuffix")}`,
-                    })),
-                },
-              ]}
+              groups={destinationOptionGroups({
+                destinations: options.destinations,
+                schengenStates: options.schengenStates,
+                comingSoon: options.comingSoon,
+                exclude: nationality,
+                labels: { destinations: t("toGroupDestinations"), schengenSuffix: t("schengenSuffix"), comingSoon: t("toGroupComingSoon"), comingSoonSuffix: t("comingSoonSuffix") },
+              })}
             />
           </div>
         </div>

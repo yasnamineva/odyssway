@@ -14,6 +14,7 @@ import { EU_CUSTOMS_CODE, destinationSlug, destinations, queuedDestinations } fr
 import { publishedNationalities } from "../lib/nationalities";
 import SearchableSelect from "./SearchableSelect";
 import { resolveMapDestinationCode, SCHENGEN_DESTINATION } from "../lib/schengen-sentinel";
+import { destinationOptionGroups } from "../lib/destination-options";
 import type { EntryBasis, TripCheckResult } from "../lib/trip-check";
 import { decodeTripShare, encodeTripShare } from "../lib/trip-share";
 import { count } from "../lib/count";
@@ -212,32 +213,13 @@ export default function TripCheck({
 
   const removeItem = (item: string) => setItems((prev) => prev.filter((i) => i !== item));
 
-  const destinationGroups = [
-    {
-      options: [{ value: SCHENGEN_DESTINATION, label: t("schengenArea") }],
-    },
-    {
-      label: t("toGroupDestinations"),
-      options: destinations
-        .filter((d) => d.status === "verified" && d.code !== nationality)
-        .map((d) => ({ value: d.code, label: d.name })),
-    },
-    {
-      label: t("toGroupSchengenStates"),
-      options: schengenCountries
-        .filter((c) => c.code !== nationality)
-        .map((c) => ({ value: c.code, label: c.name })),
-    },
-    {
-      label: t("toGroupComingSoon"),
-      options: queuedDestinations
-        .filter((d) => d.code !== nationality)
-        .map((d) => ({
-          value: d.code,
-          label: `${d.name} ${t("comingSoonSuffix")}`,
-        })),
-    },
-  ];
+  const destinationGroups = destinationOptionGroups({
+    destinations: destinations.filter((d) => d.status === "verified"),
+    schengenStates: schengenCountries,
+    comingSoon: queuedDestinations,
+    exclude: nationality,
+    labels: { destinations: t("toGroupDestinations"), schengenSuffix: t("schengenSuffix"), comingSoon: t("toGroupComingSoon"), comingSoonSuffix: t("comingSoonSuffix") },
+  });
 
   const originLabel = publishedNationalities.find((n) => n.nationality === nationality)?.name;
   const destinationLabel = destinationLabelFor(destination);

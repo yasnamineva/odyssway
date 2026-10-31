@@ -177,6 +177,16 @@ Pick by traffic and source reachability, not by map coverage.
 
 ### 3.2 Nationalities
 
+✔ 2026-10-31 (owner request): all 27 EU passports can be picked (EU free movement in the
+EU/Schengen, Your Europe source re-read); outside Europe the 22 new ones show "not verified yet"
+until rows are added. Destination pickers list every Schengen country by name (one alphabetical
+list, shared helper `lib/destination-options.ts`); the unspecified "Schengen Area" option is gone
+from pickers. **Next for 'Europe overall'**: non-EU European passports (Serbia, Albania, North
+Macedonia, Bosnia, Montenegro, Moldova, Georgia, Armenia, Türkiye, Kosovo, Iceland, Norway,
+Switzerland, Liechtenstein, Andorra, Monaco, San Marino) need their own verified rows
+(Schengen status from Reg. (EU) 2018/1806 Annex II, plus EEA/Swiss free movement), then the
+destination matrix.
+
 Each new passport adds a row in every destination, so this multiplies coverage. Choose
 from Search Console country data. Likely candidates: Philippines, Indonesia, Turkey,
 South Africa, Nigeria, Poland, Portugal, Vietnam, Pakistan. Add one at a time, filling all

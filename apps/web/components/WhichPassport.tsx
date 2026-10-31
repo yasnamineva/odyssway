@@ -6,7 +6,7 @@ import { useEffect, useMemo, useState } from "react";
 import { schengenCountries } from "../lib/countries";
 import { destinations } from "../lib/destination-index";
 import { publishedNationalities } from "../lib/nationalities";
-import { SCHENGEN_DESTINATION } from "../lib/schengen-sentinel";
+import { destinationOptionGroups } from "../lib/destination-options";
 import type { TripCheckResult } from "../lib/trip-check";
 import { comparePassports } from "../lib/which-passport";
 import SearchableSelect from "./SearchableSelect";
@@ -41,14 +41,11 @@ export default function WhichPassport() {
     );
   }, [engine, destination, passportA, passportB]);
 
-  const destinationGroups = [
-    { options: [{ value: SCHENGEN_DESTINATION, label: tc("schengenArea") }] },
-    { label: tc("toGroupSchengenStates"), options: schengenCountries.map((c) => ({ value: c.code, label: c.name })) },
-    {
-      label: tc("toGroupDestinations"),
-      options: destinations.filter((d) => d.status === "verified").map((d) => ({ value: d.code, label: d.name })),
-    },
-  ];
+  const destinationGroups = destinationOptionGroups({
+    destinations: destinations.filter((d) => d.status === "verified"),
+    schengenStates: schengenCountries,
+    labels: { destinations: tc("toGroupDestinations"), schengenSuffix: tc("schengenSuffix"), comingSoon: tc("toGroupComingSoon"), comingSoonSuffix: tc("comingSoonSuffix") },
+  });
 
   const nameOf = (code: string) => publishedNationalities.find((n) => n.nationality === code)?.name ?? code;
 

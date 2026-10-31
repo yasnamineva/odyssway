@@ -14,7 +14,7 @@ test("resolves the Schengen path via the rolling-window engine and links the ful
 }) => {
   await page.goto("/trip-check");
   await pickCombobox(page, "tc-nationality", "United States", "United States");
-  await pickCombobox(page, "tc-destination", "Schengen Area", "Schengen Area (any country, unspecified)");
+  await pickCombobox(page, "tc-destination", "Austria", "Austria (Schengen)");
   await page.getByTestId("tc-submit").click();
 
   await expect(page.getByTestId("tc-results")).toBeVisible();
@@ -31,7 +31,7 @@ test("resolving a specific Schengen member state behaves the same as the Schenge
 }) => {
   await page.goto("/trip-check");
   await pickCombobox(page, "tc-nationality", "United Kingdom", "United Kingdom");
-  await pickCombobox(page, "tc-destination", "France", "France");
+  await pickCombobox(page, "tc-destination", "France", "France (Schengen)");
   await page.getByTestId("tc-submit").click();
 
   await expect(page.getByTestId("tc-results")).toBeVisible();
@@ -80,7 +80,7 @@ test("item tags can be added, removed, and are looked up per destination without
 }) => {
   await page.goto("/trip-check");
   await pickCombobox(page, "tc-nationality", "United States", "United States");
-  await pickCombobox(page, "tc-destination", "Schengen Area", "Schengen Area (any country, unspecified)");
+  await pickCombobox(page, "tc-destination", "Austria", "Austria (Schengen)");
 
   const itemInput = page.getByTestId("tc-item-input");
   await itemInput.fill("definitely-not-a-real-item-xyz");
@@ -97,7 +97,7 @@ test("submit is disabled until both nationality and destination are chosen", asy
   await expect(page.getByTestId("tc-submit")).toBeDisabled();
   await pickCombobox(page, "tc-nationality", "United States", "United States");
   await expect(page.getByTestId("tc-submit")).toBeDisabled();
-  await pickCombobox(page, "tc-destination", "Schengen Area", "Schengen Area (any country, unspecified)");
+  await pickCombobox(page, "tc-destination", "Austria", "Austria (Schengen)");
   await expect(page.getByTestId("tc-submit")).toBeEnabled();
 });
 
@@ -159,7 +159,7 @@ test("a member state's national rule shows for visitors and for EU citizens", as
   for (const nationality of ["United States", "Germany"]) {
     await page.goto("/trip-check");
     await pickCombobox(page, "tc-nationality", nationality, nationality);
-    await pickCombobox(page, "tc-destination", "France", "France");
+    await pickCombobox(page, "tc-destination", "France", "France (Schengen)");
     const itemInput = page.getByTestId("tc-item-input");
     await itemInput.fill("zyn");
     await itemInput.press("Enter");
@@ -283,4 +283,15 @@ test("the printout hides the form and carries a link back to the result", async 
   await expect(page.getByTestId("tc-print-note").first()).toBeVisible();
   await expect(page.getByTestId("tc-print-note").first()).toContainText("#n=US&d=JP&l=TH&i=adderall");
   await expect(page.locator("form").first()).toBeHidden();
+});
+
+test("every EU passport can be picked, and Schengen countries are listed by name", async ({ page }) => {
+  await page.goto("/trip-check");
+  await pickCombobox(page, "tc-nationality", "Poland", "Poland");
+  await page.getByTestId("tc-destination").fill("Schengen Area");
+  await expect(page.getByRole("option", { name: /unspecified/ })).toHaveCount(0);
+  await pickCombobox(page, "tc-destination", "Spain", "Spain (Schengen)");
+  await page.getByTestId("tc-submit").click();
+  await expect(page.getByTestId("tc-results")).toBeVisible();
+  await expect(page.getByTestId("tc-basis")).toContainText(/free movement/i);
 });
