@@ -3982,3 +3982,9 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
   Malaysia tobacco). Corrected: fresh-produce-eu (plants for planting need a certificate,
   not 'banned outright'; now cites DG SANTE; Your Europe intro conflict recorded) and
   alcohol-id (allowance is for passengers aged 21+, per beacukai.go.id).
+- 2026-10-31 wording pass: ~60 published notes rewritten to drop internal wording (field
+  names like maxDays/stayPolicy, "this session", "this pass", TODO pointers); validate-data
+  now fails on it. GB→SG changed from 90 days to no day count (GOV.UK: 'normally between 30
+  and 90 days', officer's discretion). MX→SG still rests on the Mexican embassy's post on X
+  (its consular page blocks scripts): find a web page. fresh-produce-eu no longer answers
+  "seeds" searches: the DG SANTE page doesn't name seeds; Reg. (EU) 2016/2031 would.

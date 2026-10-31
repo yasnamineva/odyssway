@@ -310,11 +310,18 @@ function checkAllowanceMatchesText(): void {
  */
 function checkNoSecondarySourcing(): void {
   const re = /commonly[- ]reported|commonly cited|secondary (source|sourc|report|press|news)|travel-industry|third-party sources|news reporting/i;
+  // Internal wording that doesn't belong on a public page.
+  const internal = /\b(this agent|this session|research session|this (research )?pass(?!port)|I could not|flagged for follow-up|data\/UNVERIFIED|TODO|stayPolicy|maxDays|eta_required|visa_required|visa_free)\b/;
   for (const name of ["customs-items.json", "entry-requirements.json"]) {
     const rows = JSON.parse(readFileSync(join(DATA_DIR, name), "utf8")) as Array<Record<string, unknown>>;
     for (const r of rows) {
       if (r.status !== "verified") continue;
       const text = JSON.stringify([r.summary, r.limits, r.notes, r.documentsNeeded]);
+      const inner = text.match(internal);
+      if (inner) {
+        const id = (r.slug as string) ?? `${r.nationality}→${r.destination}`;
+        errors.push(`data/${name}: ${id} contains internal wording ("${inner[0]}"); rewrite it for readers`);
+      }
       const m = text.match(re);
       if (m) {
         const id = (r.slug as string) ?? `${r.nationality}→${r.destination}`;
