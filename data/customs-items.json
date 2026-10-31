@@ -6555,17 +6555,32 @@
     "category": "cash",
     "verdict": "declaration_required",
     "limits": {
-      "description": "The Singapore Police Force operates a real cross-border cash movement reporting scheme (Form NP 728, lodged with the Suspicious Transaction Reporting Office under the Corruption, Drug Trafficking and Other Serious Crimes (Confiscation of Benefits) Act) covering cash and bearer negotiable instruments above a threshold."
+      "description": "Declare cash and bearer negotiable instruments worth SGD 20,000 or more (or the equivalent) when you enter or leave Singapore, using the Singapore Police Force's cash movement report (Form NP 728). Not declaring can mean a fine of up to SGD 50,000, up to 3 years in prison, or both.",
+      "quantity": "SGD 20,000 or more"
     },
-    "notes": "The specific SGD threshold that triggers mandatory reporting could not be confirmed on a primary source — the Police e-Services page for lodging the report describes the process (an online form, ~10 minutes to complete) but doesn't state the dollar figure itself, and that page returned no other numeric threshold. If you're carrying a large sum, check the threshold with the Singapore Police Force or file the report anyway.",
-    "summary": "Cash and bearer negotiable instruments above the threshold must be reported to the Singapore Police Force on Form NP 728.",
+    "notes": "The specific SGD threshold that triggers mandatory reporting could not be confirmed on a primary source — the Police e-Services page for lodging the report describes the process (an online form, ~10 minutes to complete) but doesn't state the dollar figure itself, and that page returned no other numeric threshold. If you're carrying a large sum, check the threshold with the Singapore Police Force or file the report anyway. The SGD 20,000 threshold and the penalties are from the Korean government's travel advice; the Singapore Police and ICA pages render in a browser only and weren't readable for this site.",
+    "summary": "Declare cash worth SGD 20,000 or more when you enter or leave, on the police cash movement report (Form NP 728).",
     "legal_source": {
       "name": "Singapore Police Force — Lodge Cash Movement Report for Carriers, Recipients or Senders",
       "url": "https://www.police.gov.sg/E-Services/Lodge-Cash-Movement-Report-For-Carriers-Recipients-or-Senders"
     },
-    "verified_at": "2026-10-30",
+    "verified_at": "2026-10-31",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Report form NP 728 lodged with the Singapore Police Force",
+        "name": "Singapore Police Force — Lodge Cash Movement Report for Carriers, Recipients or Senders",
+        "url": "https://www.police.gov.sg/E-Services/Lodge-Cash-Movement-Report-For-Carriers-Recipients-or-Senders",
+        "checked": "2026-10-31"
+      },
+      {
+        "claim": "Declare SGD 20,000 or more when entering or leaving; fine up to SGD 50,000, up to 3 years in prison, or both",
+        "name": "Ministry of Foreign Affairs of the Republic of Korea — 해외안전여행 (0404.go.kr), Singapore: entry notes",
+        "url": "https://0404.go.kr/ntnSafetyInfo/134/detail",
+        "checked": "2026-10-31"
+      }
+    ]
   },
   {
     "slug": "injectable-medication-sg",
@@ -21345,6 +21360,80 @@
       "url": "https://www.gov.uk/foreign-travel-advice/brunei/safety-and-security"
     },
     "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "cash-bn",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "brunei dollars"
+    ],
+    "destination": "BN",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Declare cash of BND 13,000 or more to customs when you arrive.",
+      "quantity": "BND 13,000 or more"
+    },
+    "summary": "Declare cash of BND 13,000 or more to customs when you arrive in Brunei.",
+    "notes": "No Brunei customs page stating this was readable for this site (the customs page GOV.UK links returns 404); this row rests on the Korean government's travel advice.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of the Republic of Korea — 해외안전여행 (0404.go.kr), Brunei: entry notes",
+      "url": "https://0404.go.kr/ntnSafetyInfo/105/detail"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "tobacco-bn",
+    "names": [
+      "cigarettes",
+      "tobacco",
+      "cigars"
+    ],
+    "destination": "BN",
+    "category": "tobacco",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "There's no duty-free allowance for tobacco: declare all the tobacco you bring and pay tax on it. Cigarette packs without a health warning can't be brought in."
+    },
+    "summary": "No duty-free tobacco: declare all of it and pay tax. Packs without a health warning are refused.",
+    "notes": "Tobacco isn't sold in Brunei and smoking in public places is banned. No Brunei customs page stating this was readable for this site (the customs page GOV.UK links returns 404); this row rests on the Korean government's travel advice.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of the Republic of Korea — 해외안전여행 (0404.go.kr), Brunei: entry notes",
+      "url": "https://0404.go.kr/ntnSafetyInfo/105/detail"
+    },
+    "verified_at": "2026-10-31",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "e-cigarettes-bn",
+    "names": [
+      "e-cigarette",
+      "e-cigarettes",
+      "vape",
+      "vapes",
+      "vaping device",
+      "e-liquid"
+    ],
+    "destination": "BN",
+    "category": "e_cigarettes",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "E-cigarettes can't be brought into Brunei."
+    },
+    "summary": "Banned: you can't bring e-cigarettes or vapes into Brunei.",
+    "notes": "No Brunei customs page stating this was readable for this site (the customs page GOV.UK links returns 404); this row rests on the Korean government's travel advice.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of the Republic of Korea — 해외안전여행 (0404.go.kr), Brunei: entry notes",
+      "url": "https://0404.go.kr/ntnSafetyInfo/105/detail"
+    },
+    "verified_at": "2026-10-31",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
