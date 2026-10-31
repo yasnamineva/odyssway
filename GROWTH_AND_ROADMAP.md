@@ -404,9 +404,9 @@ Hong Kong, where Google is used).
 - Translations restate verified English rows; they never add facts. Stored in
   `data/i18n/{locale}/*.json`, keyed by row id, each with a hash of the English text it
   translates.
-- `validate-data` fails a translation when the English row changed (stale hash) — the page
-  falls back to English until it's retranslated — and when any figure in the English text
-  (amounts, days, ages, currencies) is missing from the translation.
+- When the English row changes (stale hash), `validate-data` warns and the page falls back to
+  English until it's retranslated; it fails when any figure in the English text (amounts,
+  days, ages) is missing from the translation, in ASCII digits.
 - Each translated page says it's translated from the verified English text, links the
   English page and keeps source names and check dates as they are.
 - Where the source itself is in that language (e.g. Japanese ministry pages), quote it in
@@ -416,7 +416,9 @@ Hong Kong, where Google is used).
 launch vs. the English pages for that country's traffic; go on to a second locale only if
 the first earns clicks.
 
-**Build order:** (1) translation data schema + validator (locale-agnostic, can start now);
+**Build order:** (1) ✔ 2026-10-31 translation data schema + validator (`data/i18n/{locale}/`,
+`packages/engine/src/translation.ts`; a stale hash warns and falls back to English, a lost
+figure or an unknown/unverified row fails);
 (2) locale routing with hreflang and sitemap; (3) UI strings for the pilot pages; (4) data
 translations for the top 100 pair pages by impressions in that country; (5) launch, IndexNow,
 measure.

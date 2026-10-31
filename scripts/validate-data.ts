@@ -27,7 +27,16 @@ import {
   overstayPenaltiesFileSchema,
   tripChargesFileSchema,
   travelAuthorisationsFileSchema,
+  translationFileSchema,
 } from "../packages/engine/src/schemas";
+import {
+  customsRowFields,
+  entryRowFields,
+  entryRowId,
+  missingFigures,
+  translationSourceHash,
+  type TranslatableFields,
+} from "../packages/engine/src/translation";
 
 const ROOT = join(import.meta.dirname, "..");
 const DATA_DIR = join(ROOT, "data");
@@ -316,6 +325,68 @@ function checkNoSecondarySourcing(): void {
 }
 
 /**
+ * Translations in data/i18n/{locale}/ restate verified English rows (§5.5). Fail on a
+ * translation of an unknown or unverified row, on fields the English row doesn't have,
+ * and on any figure lost in translation. A changed English row (stale hash) only warns:
+ * the site shows English for that row until it's retranslated.
+ */
+function checkTranslations(): void {
+  const dir = join(DATA_DIR, "i18n");
+  let locales: string[] = [];
+  try {
+    locales = readdirSync(dir).filter((d) => statSync(join(dir, d)).isDirectory());
+  } catch {
+    return;
+  }
+  const english: Record<string, Map<string, { status: unknown; fields: TranslatableFields }>> = {
+    "customs-items.json": new Map(
+      (JSON.parse(readFileSync(join(DATA_DIR, "customs-items.json"), "utf8")) as Array<Record<string, any>>).map((r) => [
+        r.slug as string,
+        { status: r.status, fields: customsRowFields(r) },
+      ]),
+    ),
+    "entry-requirements.json": new Map(
+      (JSON.parse(readFileSync(join(DATA_DIR, "entry-requirements.json"), "utf8")) as Array<Record<string, any>>).map((r) => [
+        entryRowId(r as { nationality: string; destination: string }),
+        { status: r.status, fields: entryRowFields(r as { documentsNeeded: string[]; notes?: string }) },
+      ]),
+    ),
+  };
+  for (const locale of locales) {
+    for (const name of readdirSync(join(dir, locale))) {
+      const file = join(dir, locale, name);
+      const source = english[name];
+      if (!source) {
+        errors.push(`${rel(file)}: no translations are defined for ${name}`);
+        continue;
+      }
+      const parsed = translationFileSchema.safeParse(JSON.parse(readFileSync(file, "utf8")));
+      if (!parsed.success) {
+        errors.push(`${rel(file)}: ${parsed.error.issues.map((i) => `${i.path.join(".")} — ${i.message}`).join("; ")}`);
+        continue;
+      }
+      for (const t of parsed.data) {
+        const where = `${rel(file)}: ${t.id}`;
+        const en = source.get(t.id);
+        if (!en || en.status !== "verified") {
+          errors.push(`${where} translates a row that isn't a verified English row`);
+          continue;
+        }
+        for (const k of Object.keys(t.fields) as (keyof TranslatableFields)[]) {
+          if (en.fields[k] === undefined) errors.push(`${where}: "${k}" isn't in the English row`);
+        }
+        if (translationSourceHash(en.fields) !== t.sourceHash) {
+          console.warn(`⚠ ${where}: the English row changed since it was translated — English is shown until it's retranslated.`);
+          continue;
+        }
+        const lost = missingFigures(en.fields, t.fields as TranslatableFields);
+        if (lost.length) errors.push(`${where}: figures missing from the translation (${lost.join(", ")})`);
+      }
+    }
+  }
+}
+
+/**
  * Rows that announce a future change ("takes effect from 1 October 2026") go stale
  * the day it happens. Warn (not fail) once such a date has passed, so the row is
  * re-checked against its source.
@@ -381,6 +452,7 @@ checkPassportValidityMatchesText();
 checkLeadTimeMatchesText();
 checkAllowanceMatchesText();
 checkNoSecondarySourcing();
+checkTranslations();
 checkTimedStepsMatchText();
 warnPassedAnnouncements();
 warnUnsupportedNames();

@@ -21,6 +21,8 @@ export { evaluateSimpleStay, evaluateStays } from "./stay-policy";
 export { addMonths, checkPassportValidity, remainingValidity } from "./passport-validity";
 export { evaluateAllowance, productsOf, PRODUCT_UNIT } from "./allowance";
 export type { Allowance, AllowanceGroup, AllowanceOption, AllowanceProduct, AllowanceResult, AllowanceUnit, GroupResult, Quantities } from "./allowance";
+export { customsRowFields, entryRowFields, entryRowId, figuresIn, missingFigures, translationSourceHash } from "./translation";
+export type { TranslatableFields } from "./translation";
 export { applyByDate } from "./lead-time";
 export type { LeadTimeRule } from "./lead-time";
 export { timedStepDate } from "./timed-step";

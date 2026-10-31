@@ -411,6 +411,27 @@ export const customsItemSchema = z
   .superRefine(requireVerifierWhenVerified);
 export const customsItemsFileSchema = z.array(customsItemSchema);
 
+// --- data/i18n/{locale}/*.json (translations of verified rows, GROWTH_AND_ROADMAP.md §5.5) ---
+const translatableFieldsSchema = z
+  .object({
+    summary: z.string().min(1).optional(),
+    limitsDescription: z.string().min(1).optional(),
+    limitsQuantity: z.string().min(1).optional(),
+    notes: z.string().min(1).optional(),
+    documentsNeeded: z.array(z.string().min(1)).min(1).optional(),
+  })
+  .strict();
+export const translationRowSchema = z.object({
+  /** Customs slug, or "US>JP" for an entry row. */
+  id: z.string().min(1),
+  /** translationSourceHash() of the English fields this translates. */
+  sourceHash: z.string().regex(/^[0-9a-f]{8}$/),
+  fields: translatableFieldsSchema,
+  translated_at: isoDateSchema,
+  translated_by: z.string().min(1),
+});
+export const translationFileSchema = z.array(translationRowSchema);
+
 // --- Engine input schemas (useful for validating URL-shared calculator state) ---
 export const basisSchema = z.discriminatedUnion("kind", [
   z.object({ kind: z.literal("visa_free") }),
