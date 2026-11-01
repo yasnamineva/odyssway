@@ -189,6 +189,10 @@ the consolidated text: `curl -H 'Accept: application/xhtml+xml' -H 'Accept-Langu
 http://publications.europa.eu/resource/celex/02018R1806-20251230`. **Still to do**: Iceland, Norway,
 Switzerland, Liechtenstein (EEA/Swiss free movement needs an official source); destination rows
 for all the new passports, starting with the most-travelled pairs.
+✔ 2026-11-01: UK (Appendix ETA National List / visa national list), US (DHS VWP list; non-EU
+Europeans held pending the entry-proclamation check), Canada (IRPR Schedule 1.1) and Australia
+(eVisitor/ETA lists) rows for the new passports: 142 rows. Next: Japan (blocked .go.jp), Thailand,
+Türkiye, UAE, then the Western Balkans' own neighbours.
 
 Each new passport adds a row in every destination, so this multiplies coverage. Choose
 from Search Console country data. Likely candidates: Philippines, Indonesia, Turkey,
