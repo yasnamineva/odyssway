@@ -3996,3 +3996,6 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
   (routes not yet found in js/app.*.js; WordPress API needs auth). Next: Belize, El Salvador,
   Bhutan, Cape Verde, Paraguay, Nepal.
 - Lead (2026-10-31), Belize departure tax: BZ$40 / US$20 when leaving by land or by water to Guatemala or Mexico (GOV.UK). Needs a Belize government page before trip-charges.json.
+- US rows for non-EU European passports (AL AM AZ BY BA GE XK MD ME MK RU RS TR) and the Holy
+  See (2026-11-01): not VWP (DHS list of 28 Oct 2026), so a visitor visa is needed, but held until
+  the current presidential entry proclamations can be checked (travel.state.gov blocks scripts).
