@@ -23176,5 +23176,85 @@
       "currency": "NOK",
       "comparison": "over"
     }
+  },
+  {
+    "slug": "meat-dairy-ch",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "butter",
+      "cream",
+      "sausage",
+      "ham",
+      "salami",
+      "jerky",
+      "meat products",
+      "dairy products"
+    ],
+    "destination": "CH",
+    "category": "food_animal",
+    "verdict": "depends",
+    "limits": {
+      "description": "From countries outside the EU, bringing meat and dairy products into Switzerland is prohibited. From the EU, they're allowed, duty-free up to 1 kg of meat and meat preparations (game excluded) and 1 kg or litre of butter or cream per person per day; above that, duty is charged (meat CHF 17 per kg up to 10 kg, CHF 23 per kg above; butter or cream CHF 16 per kg or litre).",
+      "quantity": "Non-EU: prohibited; EU: 1 kg meat, 1 kg/l butter or cream duty-free"
+    },
+    "notes": "Check with the Federal Food Safety and Veterinary Office (FSVO) before you travel: it sets the rules on foods brought in by private travellers. Ready-to-eat food for the day of travel counts as travelling provisions and is tax- and duty-free.",
+    "summary": "Meat and dairy from outside the EU are banned. From the EU: 1 kg of meat and 1 kg of butter or cream duty-free per day.",
+    "legal_source": {
+      "name": "FOCBS — General information on duty-free allowances and value limits",
+      "url": "https://www.bazg.admin.ch/en/general-information-on-duty-free-allowances-and-value-limits"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Meat and dairy products from third (non-EU) countries prohibited; check FSVO; travelling provisions",
+        "name": "FOCBS — General information on duty-free allowances and value limits",
+        "url": "https://www.bazg.admin.ch/en/general-information-on-duty-free-allowances-and-value-limits"
+      },
+      {
+        "claim": "Duty-free quantities and duty rates for meat and butter/cream",
+        "name": "Federal Office for Customs and Border Security (FOCBS/BAZG) — Private goods: tax-free limit and quantity allowances (factsheet, 23 June 2025)",
+        "url": "https://www.bazg.admin.ch/dam/en/sd-web/Mv9dMMMmYzCG/Info-Zoll-Wertfreigrenze-Freimengen_e.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "fresh-produce-ch",
+    "names": [
+      "fruit",
+      "fruits",
+      "vegetables",
+      "fresh produce",
+      "plants",
+      "apples",
+      "oranges",
+      "mangoes"
+    ],
+    "destination": "CH",
+    "category": "food_plant",
+    "verdict": "depends",
+    "limits": {
+      "description": "Most fruits and vegetables from countries outside the EU can't be brought into Switzerland. Check with the Federal Food Safety and Veterinary Office (FSVO) before you travel for what is allowed."
+    },
+    "notes": "The Swiss customs page doesn't list which fruits and vegetables are exceptions; the FSVO's page on foods brought in by private travellers does.",
+    "summary": "Most fruit and vegetables from outside the EU are banned; check the FSVO's list before you travel.",
+    "legal_source": {
+      "name": "FOCBS — General information on duty-free allowances and value limits",
+      "url": "https://www.bazg.admin.ch/en/general-information-on-duty-free-allowances-and-value-limits"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Most fruits and vegetables from third (non-EU) countries prohibited; check FSVO",
+        "name": "FOCBS — General information on duty-free allowances and value limits",
+        "url": "https://www.bazg.admin.ch/en/general-information-on-duty-free-allowances-and-value-limits"
+      }
+    ]
   }
 ]
