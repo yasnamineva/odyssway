@@ -59861,7 +59861,8 @@
     "destination": "AE",
     "requirement": "visa_free",
     "stayPolicy": {
-      "kind": "visa_required"
+      "kind": "fixed_per_entry",
+      "maxDays": 90
     },
     "documentsNeeded": [
       "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
@@ -59872,7 +59873,7 @@
       "unit": "months",
       "from": "arrival"
     },
-    "notes": "The UAE Ministry of Foreign Affairs lists Montenegro as \"Visa Free\" (checked 2026-11-02). The permitted stay couldn't be confirmed on a primary source: the Ministry's list gives no duration, and the UAE's own portals (u.ae, ICP, GDRFA) were unreachable or don't list it, so no day count is shown. Check the stay with the UAE embassy or ICP before you go.",
+    "notes": "The UAE Ministry of Foreign Affairs lists Montenegro as \"Visa Free\" (checked 2026-11-02). Montenegro's government says nationals of Montenegro 'may enter, pass through and stay in the United Arab Emirates for up to 90 days, with a valid travel document, without a visa'.",
     "legal_source": {
       "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
       "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
@@ -59900,6 +59901,11 @@
         "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
         "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      },
+      {
+        "claim": "Stay up to 90 days without a visa",
+        "name": "Government of Montenegro, Ministry of Foreign Affairs — Diplomatic missions to Montenegro and visa regimes for citizens of Montenegro: United Arab Emirates",
+        "url": "https://www.gov.me/en/diplomatic-missions/diplomatic-missions-to-montenegro/united-arab-emirates"
       }
     ]
   },
@@ -60003,7 +60009,8 @@
     "destination": "AE",
     "requirement": "visa_free",
     "stayPolicy": {
-      "kind": "visa_required"
+      "kind": "fixed_per_entry",
+      "maxDays": 90
     },
     "documentsNeeded": [
       "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
@@ -60014,7 +60021,7 @@
       "unit": "months",
       "from": "arrival"
     },
-    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Serbia as \"Visa Free\" (checked 2026-11-02). The permitted stay couldn't be confirmed on a primary source: the Ministry's list gives no duration, and the UAE's own portals (u.ae, ICP, GDRFA) were unreachable or don't list it, so no day count is shown. Check the stay with the UAE embassy or ICP before you go.",
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Serbia as \"Visa Free\" (checked 2026-11-02). Serbia's Foreign Ministry says the two countries have signed an agreement on a visa-free regime: holders of national passports 'have the right to enter, exit, transit through and stay in the territory of the United Arab Emirates for up to 90 days'; exceeding this is punishable with a fine, and for tourist travel the passport must have at least 6 months' validity left. An emergency travel document needs a visa even in transit.",
     "legal_source": {
       "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
       "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
@@ -60042,6 +60049,11 @@
         "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
         "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      },
+      {
+        "claim": "Visa-free agreement: stay up to 90 days; fine for overstaying; passport valid 6 months for tourist travel",
+        "name": "Ministry of Foreign Affairs of the Republic of Serbia — Visas and travel advisory: United Arab Emirates",
+        "url": "https://www.mfa.gov.rs/en/citizens/travel-abroad/visas-and-states-travel-advisory/united-arab-emirates"
       }
     ]
   },
@@ -60239,7 +60251,9 @@
     "destination": "AE",
     "requirement": "visa_free",
     "stayPolicy": {
-      "kind": "visa_required"
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
     },
     "documentsNeeded": [
       "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
@@ -60250,7 +60264,7 @@
       "unit": "months",
       "from": "arrival"
     },
-    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Belarus as \"Visa Free\" (checked 2026-11-02). The permitted stay couldn't be confirmed on a primary source: the Ministry's list gives no duration, and the UAE's own portals (u.ae, ICP, GDRFA) were unreachable or don't list it, so no day count is shown. Check the stay with the UAE embassy or ICP before you go.",
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Belarus as \"Visa Free\" (checked 2026-11-02). Belarus's Consulate General in Dubai says Belarusian citizens may stay in the UAE without a visa for no more than 90 days from the date of entry, granted within 180 days from entry ('не превышающего 90 дней с даты их въезда. Указанный максимальный срок пребывания предоставляется в течение 180 дней с даты въезда'), modelled as 90 days in any 180. Border officers may ask for a return ticket and hotel booking; for longer stays apply for a visa through an Amer centre (GDRFA).",
     "legal_source": {
       "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
       "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
@@ -60278,6 +60292,11 @@
         "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
         "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      },
+      {
+        "claim": "90 days from entry within 180 days; passport valid 6 months from the start of the visit",
+        "name": "Consulate General of the Republic of Belarus in Dubai — О безвизовом въезде в ОАЭ (visa-free entry to the UAE)",
+        "url": "https://dubai.mfa.gov.by/ru/consular_issues/s/bezviz/"
       }
     ]
   },

@@ -23,7 +23,6 @@
           "AZ",
           "BA",
           "BR",
-          "BY",
           "CH",
           "CL",
           "GE",
@@ -34,12 +33,10 @@
           "KR",
           "LI",
           "MC",
-          "ME",
           "MX",
           "MY",
           "NO",
           "NZ",
-          "RS",
           "RU",
           "SM",
           "UA",
@@ -61,6 +58,7 @@
           "AT",
           "BE",
           "BG",
+          "BY",
           "CA",
           "CY",
           "CZ",
@@ -101,6 +99,19 @@
           "MD",
           "MK",
           "TR"
+        ]
+      },
+      {
+        "label": "visa free, 90 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "RS",
+        "nationalities": [
+          "ME",
+          "RS"
         ]
       }
     ]
