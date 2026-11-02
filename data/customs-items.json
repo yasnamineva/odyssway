@@ -22835,5 +22835,116 @@
         "url": "https://www.toll.no/en/goods/alcohol-and-tobacco/quotas"
       }
     ]
+  },
+  {
+    "slug": "alcohol-ch",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer",
+      "cider"
+    ],
+    "destination": "CH",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free per person per day, from age 17: 5 litres of alcoholic drinks up to 18% alcohol and 1 litre of drinks over 18%. Over that, duty is CHF 2 per litre (up to 18%) or CHF 15 per litre (over 18%) on the excess.",
+      "quantity": "5 L up to 18% + 1 L over 18%"
+    },
+    "notes": "Allowances are per person and per day, for goods for your own use or as gifts, from age 17. Duty is charged only on the amount over the allowance. Separately, VAT is due once all your goods together are worth CHF 150 or more. Switzerland is in Schengen but outside the EU customs union, so EU allowances don't apply here.",
+    "summary": "Duty-free per day from age 17: 5 litres of drinks up to 18% (wine, beer) and 1 litre over 18% (spirits).",
+    "legal_source": {
+      "name": "Federal Office for Customs and Border Security (FOCBS/BAZG) — Private goods: tax-free limit and quantity allowances (factsheet, 23 June 2025)",
+      "url": "https://www.bazg.admin.ch/dam/en/sd-web/Mv9dMMMmYzCG/Info-Zoll-Wertfreigrenze-Freimengen_e.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Alcohol allowances, duty rates on the excess, age 17, per person per day",
+        "name": "Federal Office for Customs and Border Security (FOCBS/BAZG) — Private goods: tax-free limit and quantity allowances (factsheet, 23 June 2025)",
+        "url": "https://www.bazg.admin.ch/dam/en/sd-web/Mv9dMMMmYzCG/Info-Zoll-Wertfreigrenze-Freimengen_e.pdf"
+      },
+      {
+        "claim": "CHF 150 VAT tax-free limit; duties on alcohol over the allowances",
+        "name": "FOCBS — General information on duty-free allowances and value limits",
+        "url": "https://www.bazg.admin.ch/en/general-information-on-duty-free-allowances-and-value-limits"
+      }
+    ]
+  },
+  {
+    "slug": "tobacco-ch",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "cigarillos",
+      "rolling tobacco",
+      "heated tobacco",
+      "iqos",
+      "heets"
+    ],
+    "destination": "CH",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free per person per day, from age 17: 250 cigarettes, cigars or heated tobacco products, or 250 grams of other tobacco products. Over that, duty is CHF 0.25 per cigarette (or similar unit) and CHF 0.10 per gram of other tobacco.",
+      "quantity": "250 pieces or 250 g"
+    },
+    "notes": "Allowances are per person and per day, for goods for your own use or as gifts, from age 17. Duty is charged only on the amount over the allowance. Separately, VAT is due once all your goods together are worth CHF 150 or more. Switzerland is in Schengen but outside the EU customs union, so EU allowances don't apply here. The same 250 allowance also covers nicotine cartridges for e-cigarettes; see the e-cigarette row for liquids and disposables.",
+    "summary": "Duty-free per day from age 17: 250 cigarettes, cigars or heated tobacco sticks, or 250 grams of other tobacco.",
+    "legal_source": {
+      "name": "Federal Office for Customs and Border Security (FOCBS/BAZG) — Private goods: tax-free limit and quantity allowances (factsheet, 23 June 2025)",
+      "url": "https://www.bazg.admin.ch/dam/en/sd-web/Mv9dMMMmYzCG/Info-Zoll-Wertfreigrenze-Freimengen_e.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Tobacco allowance, duty rates on the excess, age 17",
+        "name": "Federal Office for Customs and Border Security (FOCBS/BAZG) — Private goods: tax-free limit and quantity allowances (factsheet, 23 June 2025)",
+        "url": "https://www.bazg.admin.ch/dam/en/sd-web/Mv9dMMMmYzCG/Info-Zoll-Wertfreigrenze-Freimengen_e.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "e-cigarettes-ch",
+    "names": [
+      "e-cigarettes",
+      "e-cigarette",
+      "vape",
+      "vapes",
+      "vaping",
+      "e-liquid",
+      "disposable vape",
+      "nicotine liquid"
+    ],
+    "destination": "CH",
+    "category": "e_cigarettes",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free per person per day, from age 17, as part of the tobacco allowance: 250 nicotine cartridges for e-cigarettes, or 250 ml of nicotine liquid, or 25 disposable e-cigarettes. Over that, duty is CHF 0.25 per cartridge, CHF 0.25 per ml of liquid, or CHF 2.50 per disposable.",
+      "quantity": "250 cartridges, or 250 ml liquid, or 25 disposables"
+    },
+    "notes": "Allowances are per person and per day, for goods for your own use or as gifts, from age 17. Duty is charged only on the amount over the allowance. Separately, VAT is due once all your goods together are worth CHF 150 or more. Switzerland is in Schengen but outside the EU customs union, so EU allowances don't apply here.",
+    "summary": "Allowed duty-free per day from age 17: 250 nicotine cartridges, or 250 ml of nicotine liquid, or 25 disposable e-cigarettes.",
+    "legal_source": {
+      "name": "Federal Office for Customs and Border Security (FOCBS/BAZG) — Private goods: tax-free limit and quantity allowances (factsheet, 23 June 2025)",
+      "url": "https://www.bazg.admin.ch/dam/en/sd-web/Mv9dMMMmYzCG/Info-Zoll-Wertfreigrenze-Freimengen_e.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "E-cigarette cartridges, nicotine liquid and disposable allowances and duty rates, age 17",
+        "name": "Federal Office for Customs and Border Security (FOCBS/BAZG) — Private goods: tax-free limit and quantity allowances (factsheet, 23 June 2025)",
+        "url": "https://www.bazg.admin.ch/dam/en/sd-web/Mv9dMMMmYzCG/Info-Zoll-Wertfreigrenze-Freimengen_e.pdf"
+      }
+    ]
   }
 ]
