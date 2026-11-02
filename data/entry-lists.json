@@ -5708,6 +5708,217 @@
     ]
   },
   {
+    "destination": "VN",
+    "source": {
+      "name": "Vietnam National e-Visa Portal (Immigration Department)",
+      "url": "https://evisa.xuatnhapcanh.gov.vn/trang-chu-ttdt"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "eta required, 90 days",
+        "requirement": "eta_required",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "US",
+        "nationalities": [
+          "AR",
+          "AU",
+          "BR",
+          "CA",
+          "IL",
+          "MX",
+          "NZ",
+          "UA",
+          "US"
+        ]
+      },
+      {
+        "label": "visa free, 30 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "SG",
+        "nationalities": [
+          "MY",
+          "SG"
+        ]
+      },
+      {
+        "label": "visa free, 90 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "CL",
+        "nationalities": [
+          "CL"
+        ]
+      },
+      {
+        "label": "Resolution 44/NQ-CP: 45 days, any purpose (15 Mar 2025 – 14 Mar 2028)",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 45
+        },
+        "template": "DK",
+        "nationalities": [
+          "DE",
+          "DK",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "IT",
+          "JP",
+          "KR",
+          "NO",
+          "RU",
+          "SE"
+        ]
+      },
+      {
+        "label": "Resolution 229/NQ-CP: 45 days, tourism (15 Aug 2025 – 14 Aug 2028)",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 45
+        },
+        "template": "BE",
+        "nationalities": [
+          "BE",
+          "BG",
+          "CH",
+          "CZ",
+          "HR",
+          "HU",
+          "LU",
+          "NL",
+          "PL",
+          "RO",
+          "SI",
+          "SK"
+        ]
+      }
+    ],
+    "held": [
+      {
+        "nationality": "AT",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "EE",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "GR",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "LV",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "LT",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "MT",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "PT",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "CY",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "IE",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "IS",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "LI",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "AL",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "AD",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "BA",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "GE",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "XK",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "MD",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "MC",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "ME",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "MK",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "SM",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "RS",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "VA",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "TR",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "AM",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "AZ",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      },
+      {
+        "nationality": "BY",
+        "reason": "Not in Resolutions 44 or 229; Viet Nam also has bilateral exemptions, so absence isn't proof of a visa requirement, and the e-visa portal names no nationalities."
+      }
+    ]
+  },
+  {
     "destination": "ZA",
     "source": {
       "name": "Department of Home Affairs — Visa Exemption List (Immigration Act 13 of 2002)",
