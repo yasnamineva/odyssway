@@ -753,6 +753,128 @@
     ]
   },
   {
+    "destination": "BS",
+    "source": {
+      "name": "Bahamas Department of Immigration — Before Your Arrival (Entry Criteria and Visa Requirements; page updated 2026-08-10)",
+      "url": "https://www.immigration.gov.bs/entry-requirements/before-your-arrival/"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 240 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 240
+        },
+        "template": "US",
+        "nationalities": [
+          "CA",
+          "US"
+        ]
+      },
+      {
+        "label": "visa free, 30 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "GB",
+        "nationalities": [
+          "GB"
+        ]
+      },
+      {
+        "label": "visa free",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AM",
+          "AR",
+          "AT",
+          "AU",
+          "AZ",
+          "BA",
+          "BE",
+          "BG",
+          "BR",
+          "CH",
+          "CL",
+          "CN",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GE",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MD",
+          "MK",
+          "MT",
+          "MX",
+          "MY",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RU",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SM",
+          "TR",
+          "VA"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AL",
+        "nationalities": [
+          "AL",
+          "BY",
+          "IN",
+          "ME",
+          "RS",
+          "UA"
+        ]
+      }
+    ],
+    "held": [
+      {
+        "nationality": "XK",
+        "reason": "On neither of Bahamas Immigration's lists"
+      }
+    ]
+  },
+  {
     "destination": "BZ",
     "source": {
       "name": "Belize Immigration and Nationality Department — Do you need a visa to visit Belize? (country table)",
