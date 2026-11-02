@@ -633,6 +633,139 @@
     ]
   },
   {
+    "destination": "BN",
+    "source": {
+      "name": "Ministry of Foreign Affairs of Brunei Darussalam — Visa Information (country categories A–D)",
+      "url": "https://www.mfa.gov.bn/Pages/D1---D90.aspx"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 90 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "AT",
+        "nationalities": [
+          "AT",
+          "BE",
+          "BG",
+          "CA",
+          "CH",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IS",
+          "IT",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MT",
+          "NL",
+          "NO",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
+          "SI",
+          "SK",
+          "US"
+        ]
+      },
+      {
+        "label": "visa free, 30 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "TR",
+        "nationalities": [
+          "JP",
+          "KR",
+          "MY",
+          "NZ",
+          "SG",
+          "TR",
+          "UA"
+        ]
+      },
+      {
+        "label": "visa free, 14 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 14
+        },
+        "template": "RU",
+        "nationalities": [
+          "CN",
+          "RU"
+        ]
+      },
+      {
+        "label": "visa on arrival, 30 days",
+        "requirement": "visa_on_arrival",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "AU",
+        "nationalities": [
+          "AU"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AL",
+        "nationalities": [
+          "AD",
+          "AL",
+          "AM",
+          "AR",
+          "AZ",
+          "BA",
+          "BR",
+          "BY",
+          "CL",
+          "GE",
+          "IN",
+          "MC",
+          "MD",
+          "ME",
+          "MK",
+          "MX",
+          "RS",
+          "SM",
+          "VA"
+        ]
+      }
+    ],
+    "held": [
+      {
+        "nationality": "XK",
+        "reason": "Kosovo's entry on the MFA page splits into passport-type sub-pages; not read yet"
+      }
+    ]
+  },
+  {
     "destination": "BR",
     "source": {
       "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
