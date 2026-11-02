@@ -8,9 +8,9 @@ without a primary official source.
 
 Where we are today (2026-11-02):
 
-- 68 destinations plus the Schengen Area; 1,998 verified entry rows; 697 customs rows
+- 68 destinations plus the Schengen Area; 2,352 verified entry rows; 697 customs rows
   (135 medication, 38 with a doctor's-letter checklist, 19 with a permit how-to, 19 with
-  a transit rule); 741 entry rows with a structured passport-validity rule.
+  a transit rule); 845 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
   planner, travel-authorisation guides, the 90/180 calculator, the multi-country day counter, named-medicine pages, border cards,
   embeddable calculator and "Can I bring it?" widgets, the public JSON API.
@@ -212,7 +212,18 @@ the row said visa required. Re-check other rows built from an initial matsne tex
 free movement in the EU from EEA Joint Committee Decision 158/2007 (Directive 2004/38 for EFTA-State nationals) and the
 EU–Swiss agreement (Annex I Art. 1); among the four from the EFTA Convention Annex K App. 1 Art. 1. Destination rows
 outside Europe: ✔ UK, US, Canada, Australia, Thailand, Türkiye, UAE and the seven Balkan/Caucasus
-destinations (2026-11-02). **Customs fix, same day:** Trip Check answered for Norway, Iceland, Switzerland
+destinations (2026-11-02).
+✔ 2026-11-02 second batch, all 43 newer passports: Kenya (eTA; Cyprus, San Marino exempt), South Africa (DHA table,
+Ordinary column), New Zealand (waiver list), Seychelles (no visa for anyone), Zambia (three lists), Fiji (list in the
+page data, all tabs), Ghana (none exempt), Mauritius (2025 country-wise PDF). Mexico: only the 13 on INM's text
+visa-required list (visa-free list is an image that 404s). Destinations now covering (nearly) all 65 passports: GB CA
+KE ZA TH TR AU AE NZ GE RS ME AM BA SC GH ZM FJ MU MK (+ US 49, AL 58). **Next, by the same method** (one official
+list per destination): Philippines (evisa.gov.ph policy page), Jamaica (country listing PDF), Bahamas, Tanzania,
+Sri Lanka (ETA fees page), Uruguay, El Salvador and Belize (country tables), Chile, Peru, Costa Rica (directrices PDF),
+Dominican Republic, Argentina, Taiwan (BOCA), Indonesia (VoA list), Malaysia, Oman, Brunei, Macao, Israel, India, Korea.
+Blocked today: Morocco (firewall), Japan (.go.jp 403), Hong Kong and Saudi Arabia (JS).
+**Quote check** (advice from an external review, 2026-11-02): `pnpm check:quotes` runs weekly after the watcher and
+reports quoted passages not found on the saved source text. **Customs fix, same day:** Trip Check answered for Norway, Iceland, Switzerland
 and Liechtenstein with the EU allowances (Schengen isn't customs membership); now `customsCodeFor()` sends them to
 their own rows, which don't exist yet, so they show 'not verified'. ✔ Customs rows added the same day: Norway (alcohol, tobacco,
 vapes, pouches, cash NOK 25,000), Switzerland (alcohol, tobacco, vapes, meat/dairy, produce), Iceland (alcohol units,
