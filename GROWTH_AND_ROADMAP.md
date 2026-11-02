@@ -215,8 +215,8 @@ outside Europe: ✔ UK, US, Canada, Australia, Thailand, Türkiye, UAE and the s
 destinations (2026-11-02).
 ✔ 2026-11-02 second batch, all 43 newer passports: Kenya (eTA; Cyprus, San Marino exempt), South Africa (DHA table,
 Ordinary column), New Zealand (waiver list), Seychelles (no visa for anyone), Zambia (three lists), Fiji (list in the
-page data, all tabs), Ghana (none exempt), Mauritius (2025 country-wise PDF). Mexico: only the 13 on INM's text
-visa-required list (visa-free list is an image that 404s). Destinations now covering (nearly) all 65 passports: GB CA
+page data, all tabs), Ghana (none exempt), Mauritius (2025 country-wise PDF). Mexico: the 13 on INM's text
+visa-required list, and (✔ later the same day) 29 from the SRE consulate's text visa-free list (Kosovo held). Destinations now covering (nearly) all 65 passports: GB CA
 KE ZA TH TR AU AE NZ GE RS ME AM BA SC GH ZM FJ MU MK (+ US 49, AL 58). **Next, by the same method** (one official
 list per destination): Philippines (evisa.gov.ph policy page), Jamaica (country listing PDF), Bahamas, Tanzania,
 Sri Lanka (ETA fees page), Uruguay, El Salvador and Belize (country tables), Chile, Peru, Costa Rica (directrices PDF),

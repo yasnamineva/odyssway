@@ -3699,30 +3699,59 @@
     "checked": "2026-11-02",
     "groups": [
       {
-        "label": "visa free, 180 days",
+        "label": "Visa-free list, up to 180 days (SRE)",
         "requirement": "visa_free",
         "stayPolicy": {
           "kind": "fixed_per_entry",
           "maxDays": 180
         },
-        "template": "US",
+        "template": "AT",
         "nationalities": [
+          "AD",
           "AR",
+          "AT",
           "AU",
+          "BE",
+          "BG",
           "CA",
+          "CH",
           "CL",
+          "CY",
+          "CZ",
           "DE",
+          "DK",
+          "EE",
           "ES",
+          "FI",
           "FR",
           "GB",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
           "IL",
+          "IS",
           "IT",
           "JP",
           "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MT",
           "MY",
           "NL",
+          "NO",
           "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
           "SG",
+          "SI",
+          "SK",
+          "SM",
           "US"
         ]
       },
@@ -3752,6 +3781,12 @@
           "UA",
           "VA"
         ]
+      }
+    ],
+    "held": [
+      {
+        "nationality": "XK",
+        "reason": "Kosovo is on neither the SRE visa-free list nor INM's visa-required list."
       }
     ]
   },
