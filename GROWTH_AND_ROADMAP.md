@@ -8,7 +8,7 @@ without a primary official source.
 
 Where we are today (2026-11-02):
 
-- 68 destinations plus the Schengen Area; 1,904 verified entry rows; 682 customs rows
+- 68 destinations plus the Schengen Area; 1,942 verified entry rows; 682 customs rows
   (135 medication, 38 with a doctor's-letter checklist, 19 with a permit how-to, 19 with
   a transit rule); 725 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
@@ -204,7 +204,11 @@ Belarus, Russia). ✔ 2026-11-02 Albania (33: EU and Annex II passports via the 
 Türkiye, Armenia, Azerbaijan, Belarus, Russia held, per-country table behind a bot check). ✔ 2026-11-02 Armenia (38:
 180 days a year for EU, Andorra, Monaco, Montenegro, San Marino, Holy See; bilateral visa-free, no day count, for
 Albania, Belarus, Georgia, Moldova, Russia, Serbia; visa for Bosnia, North Macedonia, Kosovo, Türkiye, Azerbaijan).
-Next: Georgia, then Japan (blocked .go.jp). **Pushed 2026-11-02** (through the Bosnia rows); IndexNow 383 URLs.
+✔ 2026-11-02 Georgia (38: one full year for 36 listed passports; Kosovo, North Macedonia need a visa or
+the Ordinance 256 route). The consolidated Ordinance 255 is paid on matsne, but each amending ordinance's text is
+free (Georgian): read all eight. **China corrected**: visa-free 30 days, tourism only, since Ordinance 359 (11 Sep 2023);
+the row said visa required. Re-check other rows built from an initial matsne text the same way. Next: Japan
+(blocked .go.jp), then Iceland/Norway/Switzerland/Liechtenstein passports (EEA source needed). **Pushed 2026-11-02** (through the Bosnia rows); IndexNow 383 URLs.
 
 Each new passport adds a row in every destination, so this multiplies coverage. Choose
 from Search Console country data. Likely candidates: Philippines, Indonesia, Turkey,

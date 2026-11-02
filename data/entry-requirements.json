@@ -16189,26 +16189,50 @@
   {
     "nationality": "CN",
     "destination": "GE",
-    "requirement": "visa_required",
+    "requirement": "visa_free",
     "stayPolicy": {
-      "kind": "visa_required"
+      "kind": "fixed_per_entry",
+      "maxDays": 30
     },
     "documentsNeeded": [
-      "Valid passport (valid at least 3 months beyond the requested visa period, with at least 2 blank pages)",
-      "Georgian e-visa — OR a valid visa/residence permit from a country on Ordinance No. 256's list (see notes) for visa-free entry",
-      "Passport-style photo taken within the last 6 months (e-visa)",
-      "Travel/health insurance",
-      "Proof of accommodation for the whole stay",
-      "Proof of sufficient funds"
+      "Valid passport",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
     ],
-    "notes": "China is not on Georgia's visa-free list; the Georgian National Tourism Administration says only holders of diplomatic or official/service passports from China (and a few other countries) are exempt. Two routes for ordinary passports: (1) the e-visa at evisa.gov.ge for short stays — \"20 USD + 2% service fee\", and \"not less than 5 working days\" to decide; validity/stay varies by passport country (the portal cites 120/30 and 180/90 formats), so confirm China's figures in the application; or (2) visa-free entry for 90 calendar days in any 180-day period if you hold a valid visa or residence permit from a country on Ordinance No. 256's list (which includes the US, UK, Canada, Australia, New Zealand, Japan, South Korea, Israel, Ireland, the GCC states and most EU/EEA states) — it must be valid on the day you cross the border.",
+    "notes": "China was added to Georgia's visa-free list by Government Ordinance No. 359 of 11 September 2023 (entry 96 of Ordinance No. 255). Its note 1² gives citizens of the People's Republic of China the right to enter Georgia without a visa and stay for a full 30 days, only for tourism purposes. Other purposes, or longer stays, need a visa (including the e-visa at evisa.gov.ge) or the route for holders of visas and residence permits from countries on Ordinance No. 256's list (90 days in any 180). (Corrected 2026-11-02: this row previously said a visa was required, from the 2015 text of the ordinance.)",
     "legal_source": {
-      "name": "Government of Georgia Ordinance No. 256 — Countries whose visa and/or residence permit holders may enter Georgia without a visa (matsne.gov.ge)",
-      "url": "https://matsne.gov.ge/en/document/view/2867377"
+      "name": "Government of Georgia Ordinance No. 359 of 11 September 2023, amending Ordinance No. 255 (matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/ka/document/view/5916029"
     },
-    "verified_at": "2026-09-21",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "China added to the visa-free list: 30 days, tourism only",
+        "name": "Government of Georgia Ordinance No. 359 of 11 September 2023, amending Ordinance No. 255 (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/ka/document/view/5916029"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "Visa-free entry for holders of visas or residence permits from listed countries, 90 days in 180",
+        "name": "Government of Georgia Ordinance No. 256 — Countries whose visa and/or residence permit holders may enter Georgia without a visa (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867377"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
   },
   {
     "nationality": "IN",
@@ -69333,5 +69357,1635 @@
     "verified_at": "2026-11-02",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "nationality": "AT",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Austria is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "BE",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Belgium is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "BG",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Bulgaria is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "HR",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Croatia is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "CY",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Cyprus is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "CZ",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Czech Republic is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "DK",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Denmark is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "EE",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Estonia is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "FI",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Finland is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "GR",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Greece is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "HU",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Hungary is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "IE",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Ireland is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "LV",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Latvia is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "LT",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Lithuania is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "LU",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Luxembourg is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "MT",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Malta is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "PL",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Poland is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "PT",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Portugal is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "RO",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Romania is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "SK",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Slovakia is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "SI",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Slovenia is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "SE",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport or a national identity card issued by an EU member state",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Sweden is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The ordinance also says EU citizens may enter with an identity card issued by an EU member state. The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "AL",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Albania is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "AD",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Andorra is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "BA",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Bosnia and Herzegovina is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "MD",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Moldova is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "MC",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Monaco is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "ME",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Montenegro is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "SM",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "San Marino is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "RS",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Serbia is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "VA",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "The Holy See is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "TR",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Türkiye is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "AM",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Armenia is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "AZ",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Azerbaijan is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "BY",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Belarus is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "RU",
+    "destination": "GE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 365
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Health and accident insurance covering your whole stay, including arrival and departure days, with cover of at least 30,000 GEL (Georgian or foreign insurer)"
+    ],
+    "notes": "Russia is on Georgia's visa-free list (Government Ordinance No. 255). Note 1 to the ordinance: citizens of listed countries may enter and stay in Georgia without a visa for one full year (recorded as 365 days; don't plan to the last day). The 2015 list was checked together with all eight amending ordinances (2017–2026): they add Jordan and China and change the notes for Ukraine and China, and none removes a country.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "All visitors need health and accident insurance; cover of at least 30,000 GEL for the whole stay",
+        "name": "GOV.UK (FCDO) — Georgia travel advice: Entry requirements, 'Insurance upon entry' (updated 2026-09-15)",
+        "url": "https://www.gov.uk/foreign-travel-advice/georgia/entry-requirements"
+      },
+      {
+        "claim": "Cross-check: health insurance required to enter Georgia from 1 January 2026, minimum 30,000 GEL",
+        "name": "Viaggiare Sicuri (Ministero degli Affari Esteri, Italy) — Georgia, Requisiti d'ingresso",
+        "url": "https://www.viaggiaresicuri.it/find-country/country/GEO"
+      }
+    ]
+  },
+  {
+    "nationality": "XK",
+    "destination": "GE",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid passport (valid at least 3 months beyond the requested visa period, with at least 2 blank pages)",
+      "Georgian e-visa — OR a valid visa/residence permit from a country on Ordinance No. 256's list (see notes) for visa-free entry",
+      "Passport-style photo taken within the last 6 months (e-visa)",
+      "Travel/health insurance",
+      "Proof of accommodation for the whole stay",
+      "Proof of sufficient funds"
+    ],
+    "notes": "Kosovo is not on Georgia's visa-free list (Government Ordinance No. 255, checked with all eight amending ordinances to 24 Feb 2026). Two routes for ordinary passports: (1) a Georgian visa, including the e-visa at evisa.gov.ge where your passport is eligible; or (2) visa-free entry for 90 calendar days in any 180-day period if you hold a valid visa or residence permit from a country on Government Ordinance No. 256's list (which includes the US, UK, Canada, Australia, New Zealand, Japan, South Korea, Israel, Ireland, the GCC states and most EU/EEA states); it must be valid on the day you cross the border.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 256 — Countries whose visa and/or residence permit holders may enter Georgia without a visa (matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867377"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Not on the visa-free list",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "Visa-free entry for holders of visas or residence permits from listed countries, 90 days in 180",
+        "name": "Government of Georgia Ordinance No. 256 — Countries whose visa and/or residence permit holders may enter Georgia without a visa (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867377"
+      }
+    ]
+  },
+  {
+    "nationality": "MK",
+    "destination": "GE",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid passport (valid at least 3 months beyond the requested visa period, with at least 2 blank pages)",
+      "Georgian e-visa — OR a valid visa/residence permit from a country on Ordinance No. 256's list (see notes) for visa-free entry",
+      "Passport-style photo taken within the last 6 months (e-visa)",
+      "Travel/health insurance",
+      "Proof of accommodation for the whole stay",
+      "Proof of sufficient funds"
+    ],
+    "notes": "North Macedonia is not on Georgia's visa-free list (Government Ordinance No. 255, checked with all eight amending ordinances to 24 Feb 2026). Two routes for ordinary passports: (1) a Georgian visa, including the e-visa at evisa.gov.ge where your passport is eligible; or (2) visa-free entry for 90 calendar days in any 180-day period if you hold a valid visa or residence permit from a country on Government Ordinance No. 256's list (which includes the US, UK, Canada, Australia, New Zealand, Japan, South Korea, Israel, Ireland, the GCC states and most EU/EEA states); it must be valid on the day you cross the border.",
+    "legal_source": {
+      "name": "Government of Georgia Ordinance No. 256 — Countries whose visa and/or residence permit holders may enter Georgia without a visa (matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867377"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Not on the visa-free list",
+        "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867361"
+      },
+      {
+        "claim": "Amending ordinances 2017–2026 (all eight read): they add Jordan and China and change notes on ID cards and on Ukraine's and China's stays; none removes a country",
+        "name": "Government of Georgia — ordinances amending Ordinance No. 255 (2017–2026; latest No. 80 of 24 Feb 2026), matsne.gov.ge",
+        "url": "https://matsne.gov.ge/ka/document/view/6793257"
+      },
+      {
+        "claim": "Visa-free entry for holders of visas or residence permits from listed countries, 90 days in 180",
+        "name": "Government of Georgia Ordinance No. 256 — Countries whose visa and/or residence permit holders may enter Georgia without a visa (matsne.gov.ge)",
+        "url": "https://matsne.gov.ge/en/document/view/2867377"
+      }
+    ]
   }
 ]
