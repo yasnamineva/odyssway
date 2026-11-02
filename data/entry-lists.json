@@ -1338,9 +1338,13 @@
         },
         "template": "US",
         "nationalities": [
+          "CZ",
           "IL",
           "IN",
+          "LT",
+          "MD",
           "MX",
+          "TR",
           "UA",
           "US"
         ]
@@ -1413,64 +1417,35 @@
         "nationalities": [
           "MY"
         ]
+      },
+      {
+        "label": "Mutual visa exemption, ordinary passports (MFA list; 30 days per entry)",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "AL",
+        "nationalities": [
+          "AL",
+          "AM",
+          "AZ",
+          "BA",
+          "BY",
+          "GE",
+          "RS",
+          "SM"
+        ]
       }
     ],
     "held": [
       {
-        "nationality": "CZ",
-        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
-      },
-      {
-        "nationality": "LT",
-        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
-      },
-      {
-        "nationality": "AL",
-        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
-      },
-      {
-        "nationality": "BA",
-        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
-      },
-      {
-        "nationality": "GE",
-        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
-      },
-      {
         "nationality": "XK",
-        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
-      },
-      {
-        "nationality": "MD",
-        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
-      },
-      {
-        "nationality": "SM",
-        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
-      },
-      {
-        "nationality": "RS",
-        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
+        "reason": "Not on the unilateral visa-free list or the MFA mutual visa-exemption list (July 2026); no primary Chinese page states the visa route for this passport."
       },
       {
         "nationality": "VA",
-        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
-      },
-      {
-        "nationality": "TR",
-        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
-      },
-      {
-        "nationality": "AM",
-        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
-      },
-      {
-        "nationality": "AZ",
-        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
-      },
-      {
-        "nationality": "BY",
-        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
+        "reason": "Not on the unilateral visa-free list or the MFA mutual visa-exemption list (July 2026); no primary Chinese page states the visa route for this passport."
       }
     ]
   },

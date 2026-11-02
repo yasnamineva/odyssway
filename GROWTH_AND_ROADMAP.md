@@ -229,7 +229,7 @@ Republic (one MIREX query per passport), Argentina, Brazil (QGRV codes), Bahamas
 Indonesia, Malaysia, Oman, Brunei, Macao, Israel, India, Korea, Vietnam, Mongolia, Egypt, Jordan, Nigeria, Rwanda,
 Cambodia, Maldives, Uzbekistan, China; Colombia's own list (Res. 5488/2022) for non-EU passports.
 ✔ 2026-11-02 fourth batch (same method): Ecuador, Taiwan, Indonesia, Oman, Brunei, Macao, Israel, India, Mongolia,
-Rwanda, Maldives, Nigeria, China (29; 14 wait for the mutual-exemption list), Uzbekistan (42; Kosovo unlisted), Egypt (40 on the e-Visa list; Andorra,
+Rwanda, Maldives, Nigeria, China (41; mutual-exemption list read; Kosovo, Holy See held), Uzbekistan (42; Kosovo unlisted), Egypt (40 on the e-Visa list; Andorra,
 Liechtenstein, Türkiye unlisted; 13 rows re-quoted to the FAQ's current wording). **Blocked, retry later:** Jordan
 (Ministry of Interior restricted list, host refuses connections), Japan (mofa.go.jp 403 to every fetch), Cambodia
 (e-visa list behind a captcha), Korea (JS), Vietnam, Malaysia (no central list), Hong Kong, Saudi Arabia, Qatar,
