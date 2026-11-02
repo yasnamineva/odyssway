@@ -35,6 +35,24 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "montenegro-visa-turkey-russia-belarus-2026",
+    title: "Montenegro now requires a visa from Turkish, Russian and Belarusian citizens",
+    seoTitle: "Montenegro Visa for Turkish, Russian, Belarusian Citizens (Nov 2026)",
+    seoDescription:
+      "Since 1 November 2026, Turkish, Russian and Belarusian citizens need a visa for Montenegro. The 30-day exemption for Schengen, US and UK visa holders, and the neighbours that are still visa-free.",
+    dek: "Visa-free entry ended on 1 November 2026. Who can still get in for 30 days on another country's visa, and which neighbouring countries still let you in without one.",
+    date: "2026-11-02",
+    category: "Visa rules",
+    legalSource: {
+      name: "Government of Montenegro, Ministry of Foreign Affairs — 'Montenegro fully aligns its visa policy with the European Union' (27 July 2026)",
+      url: "https://www.gov.me/en/article/montenegro-fully-aligns-its-visa-policy-with-the-european-union-citizens-of-numerous-countries-can-now-apply-for-a-montenegrin-visa",
+    },
+    verifiedAt: "2026-11-02",
+    changelogDataset: "entry-requirements",
+    destinationCodes: ["ME", "RS", "BA", "MK", "GE", "AM"],
+    photo: "dest-me",
+  },
+  {
     slug: "border-changes-late-2026",
     title: "Border rules that changed this year, and three deadlines before 2027",
     seoTitle: "Travel Rule Changes 2026: Kenya, Thailand, China, Korea Deadlines",
