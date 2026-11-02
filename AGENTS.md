@@ -365,6 +365,14 @@ or `{ kind: "whole_stay" }` — set only when that wording names its reference d
 remaining validity, never a guessed verdict. `validate-data` fails if the field and the
 wording disagree. Passport dates entered in Trip Check stay in the browser.
 
+**Entry lists (2026-11-02)**: `data/entry-lists.json` stores a destination's official list once, as groups
+of passports sharing a requirement and stay rule (`label`, `requirement`, `stayPolicy`, `template`,
+`nationalities`, optional `labels` with the list's own wording per passport), plus `held` passports with a
+reason. `validate-data` fails when a row disagrees with its group or a group member has no row. To add a
+passport, add its code to the right group and run `pnpm entry:lists --apply` (creates the row from the
+group's template; refuses when the template quotes its list label and `labels` is missing). `pnpm entry:lists
+--init XX` derives a new destination's groups from its rows. Seeded for SC KE ZA NZ ZM FJ GH MU PH TZ.
+
 ### 5.11 `data/customs-items.json` (destination × item category)
 Generalizes the never-built `eu-items.json` (5.7) to any destination, keyed by
 destination code. The sentinel code `"EU"` is used for the EU/Schengen-harmonized

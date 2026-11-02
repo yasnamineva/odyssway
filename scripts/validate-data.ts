@@ -12,7 +12,8 @@
  *
  * Run: pnpm validate:data
  */
-import { readdirSync, readFileSync, statSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
+import { checkEntryLists, type EntryList } from "./entry-lists";
 import { join, relative } from "node:path";
 import type { ZodType } from "zod";
 import {
@@ -64,7 +65,7 @@ function rel(path: string): string {
 }
 
 /** Non-rule bookkeeping files that carry no legal content. */
-const NON_RULE_FILES = new Set(["source-hashes.json", "changelog.json", "destination-history.json", "source-registry.json"]);
+const NON_RULE_FILES = new Set(["source-hashes.json", "changelog.json", "destination-history.json", "source-registry.json", "entry-lists.json"]);
 
 function jsonFilesIn(dir: string): string[] {
   try {
@@ -488,6 +489,15 @@ function warnUnsupportedNames(): void {
 const productionFiles = jsonFilesIn(DATA_DIR);
 const unverifiedFiles = jsonFilesIn(UNVERIFIED_DIR);
 
+/** Rows must agree with the group their passport is in (data/entry-lists.json; scripts/entry-lists.ts). */
+function checkEntryListsAgree(): void {
+  const file = join(DATA_DIR, "entry-lists.json");
+  if (!existsSync(file)) return;
+  const lists = JSON.parse(readFileSync(file, "utf8")) as EntryList[];
+  const rows = JSON.parse(readFileSync(join(DATA_DIR, "entry-requirements.json"), "utf8"));
+  for (const p of checkEntryLists(lists, rows)) errors.push(`data/entry-lists.json: ${p}`);
+}
+
 for (const f of productionFiles) validateFile(f, true);
 for (const f of unverifiedFiles) validateFile(f, false);
 checkNoUnverifiedReferences();
@@ -495,6 +505,7 @@ checkPassportValidityMatchesText();
 checkLeadTimeMatchesText();
 checkAllowanceMatchesText();
 checkCashThresholds();
+checkEntryListsAgree();
 checkNoSecondarySourcing();
 checkTranslations();
 checkTimedStepsMatchText();
