@@ -2667,6 +2667,124 @@
     ]
   },
   {
+    "destination": "MO",
+    "source": {
+      "name": "Macao SAR Government Portal — Immigration (Public Security Police Force): visa and entry permit exemption, limit of stay (last modified 2026-08-10)",
+      "url": "https://www.gov.mo/en/services/ps-1474/ps-1474b/"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 30 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "TR",
+        "nationalities": [
+          "AR",
+          "AU",
+          "BY",
+          "CA",
+          "CL",
+          "IN",
+          "MY",
+          "RU",
+          "SG",
+          "SM",
+          "TR",
+          "US"
+        ]
+      },
+      {
+        "label": "visa free, 90 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AL",
+          "AM",
+          "AT",
+          "BA",
+          "BE",
+          "BG",
+          "BR",
+          "CH",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MD",
+          "ME",
+          "MK",
+          "MT",
+          "MX",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RS",
+          "SE",
+          "SI",
+          "SK"
+        ]
+      },
+      {
+        "label": "visa free, 180 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 180
+        },
+        "template": "GB",
+        "nationalities": [
+          "GB"
+        ]
+      },
+      {
+        "label": "visa on arrival, 30 days",
+        "requirement": "visa_on_arrival",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "GE",
+        "nationalities": [
+          "AZ",
+          "GE",
+          "UA",
+          "VA",
+          "XK"
+        ]
+      }
+    ]
+  },
+  {
     "destination": "MU",
     "source": {
       "name": "Passport and Immigration Office, Mauritius — Visa Requirements, with the Visa Requirement Country-wise list (2025)",
