@@ -4,6 +4,7 @@ import { BRING_CATEGORIES } from "../lib/bring-categories";
 import { bringPairs } from "../lib/bring-pages";
 import { countriesVerifiedAt } from "../lib/countries";
 import { customsItems, destinationPath, destinations, entryRequirements } from "../lib/destinations";
+import { schengenCustomsRows, schengenDestinations } from "../lib/schengen-destinations";
 import { etias } from "../lib/etias";
 import { publishedEesRecords } from "../lib/ees";
 import { latestVerified, medicationProducts, pairsForProduct, productPairs } from "../lib/medication-products";
@@ -84,6 +85,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ]),
         priority: 0.7,
       })),
+    ...schengenDestinations.map((d) => ({
+      url: `${BASE}${destinationPath(d)}`,
+      lastModified: latest([d.verified_at, ...schengenCustomsRows(d.code).map((i) => i.verified_at)]),
+      priority: 0.7,
+    })),
     { url: `${BASE}/bring`, lastModified: DATA_LAST_UPDATED, priority: 0.5 },
     ...travelPairs.map((pair) => ({
       url: `${BASE}${travelPairPath(pair)}`,

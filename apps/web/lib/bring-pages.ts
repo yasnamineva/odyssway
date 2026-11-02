@@ -1,6 +1,8 @@
 import type { CustomsItemRecord, DestinationRecord } from "@odyssway/engine";
 import { BRING_CATEGORIES, type BringCategory } from "./bring-categories";
+import { customsCodeFor } from "./countries";
 import { customsItems, destinationSlug, destinations } from "./destinations";
+import { schengenCustomsRows, schengenDestinations } from "./schengen-destinations";
 
 /**
  * One page per (item category × destination) that has at least one verified
@@ -26,10 +28,13 @@ export const bringPairs: BringPair[] = (() => {
   for (const [category, meta] of Object.entries(BRING_CATEGORIES) as Array<
     [BringCategory, { slug: string }]
   >) {
-    for (const destination of verifiedDestinations) {
-      const rows = customsItems
-        .filter((i) => i.category === category && i.destination === destination.code && i.status === "verified")
-        .sort((a, b) => a.slug.localeCompare(b.slug));
+    for (const destination of [...verifiedDestinations, ...schengenDestinations]) {
+      const schengen = schengenDestinations.includes(destination);
+      const rows = schengen
+        ? schengenCustomsRows(destination.code).filter((i) => i.category === category)
+        : customsItems
+            .filter((i) => i.category === category && i.destination === destination.code && i.status === "verified")
+            .sort((a, b) => a.slug.localeCompare(b.slug));
       if (rows.length === 0) continue;
       const dates = rows.map((r) => r.verified_at).filter((d): d is string => Boolean(d));
       pairs.push({
@@ -73,7 +78,9 @@ const ROW_LABEL_OVERRIDES: Record<string, string> = {
  * (the Japan stimulant row leads with "pseudoephedrine" but also covers Adderall).
  */
 export function rowLabel(slug: string, destinationCode: string): string {
-  const base = slug.replace(new RegExp(`-${destinationCode.toLowerCase()}$`), "");
+  // A Schengen state's page also shows its customs territory's rows (`alcohol-eu`).
+  const suffixes = [destinationCode, customsCodeFor(destinationCode)].map((c) => c.toLowerCase()).join("|");
+  const base = slug.replace(new RegExp(`-(${suffixes})$`), "");
   const label = ROW_LABEL_OVERRIDES[base] ?? base.replace(/-/g, " ");
   return label.charAt(0).toUpperCase() + label.slice(1);
 }

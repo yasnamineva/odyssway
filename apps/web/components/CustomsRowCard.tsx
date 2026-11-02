@@ -1,3 +1,4 @@
+import { countryName } from "../lib/countries";
 import type { CustomsItemRecord } from "@odyssway/engine";
 import { getTranslations } from "next-intl/server";
 import { rowLabel } from "../lib/bring-pages";
@@ -35,7 +36,7 @@ export default async function CustomsRowCard({
   const ts = await getTranslations("tripCheck");
   const tt = await getTranslations("transit");
   const tb = await getTranslations("borderCard");
-  const destinationName = destinationByCode(destinationCode)?.name ?? destinationCode;
+  const destinationName = destinationByCode(destinationCode)?.name ?? countryName(destinationCode);
   const label = rowLabel(row.slug, destinationCode);
   return (
     <li id={row.slug} className="scroll-mt-20 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">

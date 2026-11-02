@@ -554,12 +554,8 @@ measure.
 - Turning on cookie-free Plausible (needs a privacy-policy update first). Owner, 2026-10-28: not now (cost).
 - Brand profiles and `sameAs` (§5.3).
 - Accounts and email alerts (Horizon 2).
-- **Pages for each Schengen country (raised 2026-11-02, from an external review).** No `/destinations/germany`,
-  pair pages (`/destinations/germany/united-states`) or `/bring/{item}/germany` exist for any of the 29 Schengen states,
-  though the data does (Schengen status for 65 passports, 10 EU customs rows, national rows, EES authority for all 29,
-  overstay penalties for 15). Not in AGENTS.md §7's route table, so §13.7 needs approval. Recommendation: per-country
-  hubs and item pages (each has unique national data: EES authority, penalties, national customs rows), pair pages
-  only after watching how the hubs index, to avoid ~1,900 near-duplicate pages.
+- ✔ **Pages for each Schengen country**: owner chose hubs + item pages (2026-11-02); built the same day
+  (`lib/schengen-destinations.ts`). Passport-pair pages for Schengen states wait for indexing data from the hubs.
 - ✔ Data licence: CC BY 4.0 (decided 2026-10-28).
 
 ---

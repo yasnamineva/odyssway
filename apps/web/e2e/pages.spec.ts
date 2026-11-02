@@ -496,3 +496,16 @@ test("the anonymous counter accepts only listed events", async ({ request }) => 
   const bad = await request.post("/api/count", { data: { event: "anything-else" } });
   expect(bad.status()).toBe(400);
 });
+
+test("Schengen countries have a hub and item pages built from the shared Schengen and EU rules", async ({ page }) => {
+  await page.goto("/destinations/germany", { waitUntil: "domcontentloaded" });
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Germany entry requirements");
+  const entry = page.getByTestId("schengen-entry");
+  await expect(entry).toContainText("90 days in any 180");
+  await expect(entry.getByRole("link", { name: "United States" })).toHaveAttribute("href", "/etias/us");
+  await expect(page.locator('a[href="/bring/alcohol/germany"]')).toBeVisible();
+  await page.goto("/bring/alcohol/germany", { waitUntil: "domcontentloaded" });
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Germany");
+  await page.goto("/destinations/france", { waitUntil: "domcontentloaded" });
+  await expect(page.locator('a[href="/bring/tobacco/france"]')).toBeVisible();
+});

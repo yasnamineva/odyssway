@@ -23,6 +23,15 @@ import { changesForDestination } from "../../../lib/changelog";
 import { chargesForDestination } from "../../../lib/trip-charges";
 import { authorisationPath, authorisationsForDestination } from "../../../lib/travel-authorisations";
 import TripChargeList from "../../../components/TripChargeList";
+import { isSchengenHub, schengenCustomsRows, schengenDestinations, schengenEntryGroups } from "../../../lib/schengen-destinations";
+import { publishedEesRecords } from "../../../lib/ees";
+import { publishedOverstayPenalties } from "../../../lib/overstay-penalties";
+import { etiasNationalities } from "../../../lib/nationalities";
+
+/** A destinations.json record, or a Schengen state derived from countries.json. */
+function hubBySlug(slug: string) {
+  return destinationBySlug(slug) ?? schengenDestinations.find((d) => destinationSlug(d.name) === slug);
+}
 
 interface Params {
   slug: string;
@@ -31,9 +40,9 @@ interface Params {
 export const dynamicParams = false;
 
 export function generateStaticParams(): Params[] {
-  return destinations
-    .filter((d) => d.status === "verified")
-    .map((d) => ({ slug: destinationSlug(d.name) }));
+  return [...destinations.filter((d) => d.status === "verified"), ...schengenDestinations].map((d) => ({
+    slug: destinationSlug(d.name),
+  }));
 }
 
 export async function generateMetadata({
@@ -41,7 +50,7 @@ export async function generateMetadata({
 }: {
   params: Promise<Params>;
 }): Promise<Metadata> {
-  const dest = destinationBySlug((await params).slug);
+  const dest = hubBySlug((await params).slug);
   if (!dest) return {};
   const t = await getTranslations("destinationPage");
   const title = t("metaTitle", { destination: dest.name });
@@ -62,8 +71,13 @@ export async function generateMetadata({
 }
 
 export default async function DestinationPage({ params }: { params: Promise<Params> }) {
-  const dest = destinationBySlug((await params).slug);
+  const dest = hubBySlug((await params).slug);
   if (!dest || dest.status !== "verified") notFound();
+  const schengen = isSchengenHub(dest.code);
+  const schengenGroups = schengen ? schengenEntryGroups() : [];
+  const ees = schengen ? publishedEesRecords.find((r) => r.country === dest.code) : undefined;
+  const overstay = schengen ? publishedOverstayPenalties.find((r) => r.country === dest.code) : undefined;
+  const etiasCodes = new Set(etiasNationalities.map((n) => n.nationality));
 
   const t = await getTranslations("destinationPage");
   const tc = await getTranslations("common");
@@ -77,9 +91,11 @@ export default async function DestinationPage({ params }: { params: Promise<Para
     }))
     .sort((a, b) => a.name.localeCompare(b.name));
 
-  const items = customsItems
-    .filter((i) => i.destination === dest.code && i.status === "verified")
-    .sort((a, b) => a.slug.localeCompare(b.slug));
+  const items = schengen
+    ? schengenCustomsRows(dest.code)
+    : customsItems
+        .filter((i) => i.destination === dest.code && i.status === "verified")
+        .sort((a, b) => a.slug.localeCompare(b.slug));
 
   const relatedPosts = blogPosts.filter((p) => p.destinationCodes?.includes(dest.code));
 
@@ -132,6 +148,15 @@ export default async function DestinationPage({ params }: { params: Promise<Para
       </h1>
       {photo ? <Photo name={photo} hero /> : null}
 
+      {schengen && (
+        <InShort>
+          {t("schengenSummary", {
+            destination: dest.name,
+            free: schengenGroups.filter((g) => g.group !== "visa_required").reduce((n, g) => n + g.nationalities.length, 0),
+            total: schengenGroups.reduce((n, g) => n + g.nationalities.length, 0),
+          })}
+        </InShort>
+      )}
       {nationalityRows.length > 0 && (
         <InShort>
           {t("summary", { free: visaFreeCount, total: nationalityRows.length, destination: dest.name })}
@@ -176,9 +201,69 @@ export default async function DestinationPage({ params }: { params: Promise<Para
         </section>
       )}
 
+      {schengen && (
+        <section className="mt-10" data-testid="schengen-entry">
+          <h2 className="text-lg font-semibold text-slate-900">{t("entryTitle")}</h2>
+          <p className="mt-1 text-sm text-slate-600">
+            {t("schengenEntryHint", { destination: dest.name })}{" "}
+            <a href="/rules/90-180-rule" className="text-blue-700 underline">
+              {t("schengenRuleLink")}
+            </a>
+          </p>
+          <div className="mt-5 space-y-6">
+            {schengenGroups.map((g) => (
+              <div key={g.group}>
+                <p className="flex items-center gap-2 text-[15px] font-semibold text-slate-900">
+                  <span
+                    aria-hidden="true"
+                    className={`h-2.5 w-2.5 shrink-0 rounded-full ${g.group === "visa_required" ? "bg-slate-400" : "bg-brand-600"}`}
+                  />
+                  <span className="first-letter:uppercase">{t(`schengenGroup.${g.group}`)}</span>
+                </p>
+                <ul className="mt-2 flex flex-wrap gap-2 pl-[18px]">
+                  {g.nationalities.map((n) => (
+                    <li key={n.nationality}>
+                      <a
+                        href={
+                          g.group === "visa_free" && etiasCodes.has(n.nationality)
+                            ? `/etias/${n.nationality.toLowerCase()}`
+                            : `/trip-check?nationality=${n.nationality}&destination=${dest.code}`
+                        }
+                        className="inline-block rounded-full border border-slate-300 bg-white px-3 py-1 text-xs font-medium text-slate-800 hover:border-slate-900"
+                      >
+                        {n.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          {(ees || overstay) && (
+            <ul className="mt-6 space-y-1 text-sm">
+              {ees && (
+                <li>
+                  <a href={`/ees/data-access/${dest.code.toLowerCase()}`} className="font-semibold text-brand-700 underline underline-offset-2">
+                    {t("schengenEesLink", { destination: dest.name })}
+                  </a>
+                </li>
+              )}
+              {overstay && (
+                <li>
+                  <a href={`/rules/overstay-penalties/${dest.code.toLowerCase()}`} className="font-semibold text-brand-700 underline underline-offset-2">
+                    {t("schengenOverstayLink", { destination: dest.name })}
+                  </a>
+                </li>
+              )}
+            </ul>
+          )}
+        </section>
+      )}
+
       {items.length > 0 && (
         <section className="mt-10">
           <h2 className="text-lg font-semibold text-slate-900">{t("itemsTitle")}</h2>
+          {schengen && <p className="mt-1 text-sm text-slate-600">{t("schengenItemsHint", { destination: dest.name })}</p>}
           <p className="mt-1 text-sm text-slate-600">{t("itemsHint")}</p>
           <ul className="mt-4 divide-y divide-slate-200 border-y border-slate-200">
             {items.map((item) => {
