@@ -1937,6 +1937,117 @@
     ]
   },
   {
+    "destination": "ID",
+    "source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa on arrival, 30 days",
+        "requirement": "visa_on_arrival",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AL",
+          "AM",
+          "AR",
+          "AT",
+          "AU",
+          "AZ",
+          "BA",
+          "BE",
+          "BG",
+          "CA",
+          "CH",
+          "CL",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IN",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MT",
+          "MX",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RS",
+          "RU",
+          "SE",
+          "SI",
+          "SK",
+          "UA",
+          "US",
+          "VA"
+        ]
+      },
+      {
+        "label": "visa free, 30 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "TR",
+        "nationalities": [
+          "BR",
+          "BY",
+          "MY",
+          "SG",
+          "TR"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "GE",
+        "nationalities": [
+          "GE",
+          "IL",
+          "MD",
+          "ME",
+          "MK",
+          "XK"
+        ]
+      }
+    ],
+    "held": [
+      {
+        "nationality": "SM",
+        "reason": "Not on the dedicated VoA page; appears only in a combined list on the calling-visa page"
+      }
+    ]
+  },
+  {
     "destination": "JM",
     "source": {
       "name": "Jamaica Immigration Unit — Visa Requirements for Jamaicans Travelling Overseas & Foreigners and Commonwealth Nationals Entering Jamaica (PICA Visa Unit country listing, last updated 13 March 2025), published by the Embassy of Jamaica, Washington DC",

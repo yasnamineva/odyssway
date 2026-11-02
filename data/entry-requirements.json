@@ -107813,5 +107813,2330 @@
     "verified_at": "2026-11-02",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "nationality": "AT",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Austria ('Austria') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "BE",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Belgium ('Belgia') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "BG",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Bulgaria ('Bulgaria') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "HR",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Croatia ('Kroasia') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "CZ",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Czech Republic ('Ceko') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "DK",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Denmark ('Denmark') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "EE",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Estonia ('Estonia') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "FI",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Finland ('Finlandia') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "GR",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Greece ('Yunani') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "HU",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Hungary ('Hungaria') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "LV",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Latvia ('Latvia') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "LT",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Lithuania ('Lithuania') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "LU",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Luxembourg ('Luksemburg') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "MT",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Malta ('Malta') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "PL",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Poland ('Polandia') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "PT",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Portugal ('Portugal') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "RO",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Romania ('Rumania') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "SK",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Slovakia ('Slovakia') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "SI",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Slovenia ('Slovenia') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "SE",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Sweden ('Swedia') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "CY",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Cyprus ('Siprus') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "IE",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Ireland ('Irlandia') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "IS",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Iceland ('Islandia') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "NO",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Norway ('Norwegia') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "LI",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Liechtenstein ('Liechtenstein') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "CH",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Switzerland ('Swiss') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "AL",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Albania ('Albania') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "AD",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Andorra ('Andorra') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "BA",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Bosnia and Herzegovina ('Bosnia Herzegovina') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "GE",
+    "destination": "ID",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Indonesian visit visa obtained before travel (e-Visa at evisa.imigrasi.go.id)",
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Georgia isn't on Indonesia's Visa on Arrival list, its visa-free visit (BVK) list or its calling-visa list (imigrasi.go.id, checked 2026-11-02), so you need a visit visa before travelling; Indonesia issues e-Visas online. This is a negative-confirmation finding: no page states the rule for Georgia directly. Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "XK",
+    "destination": "ID",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Indonesian visit visa obtained before travel (e-Visa at evisa.imigrasi.go.id)",
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Kosovo isn't on Indonesia's Visa on Arrival list, its visa-free visit (BVK) list or its calling-visa list (imigrasi.go.id, checked 2026-11-02), so you need a visit visa before travelling; Indonesia issues e-Visas online. This is a negative-confirmation finding: no page states the rule for Kosovo directly. Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "MD",
+    "destination": "ID",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Indonesian visit visa obtained before travel (e-Visa at evisa.imigrasi.go.id)",
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Moldova isn't on Indonesia's Visa on Arrival list, its visa-free visit (BVK) list or its calling-visa list (imigrasi.go.id, checked 2026-11-02), so you need a visit visa before travelling; Indonesia issues e-Visas online. This is a negative-confirmation finding: no page states the rule for Moldova directly. Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "MC",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Monaco ('Monako') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "ME",
+    "destination": "ID",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Indonesian visit visa obtained before travel (e-Visa at evisa.imigrasi.go.id)",
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Montenegro isn't on Indonesia's Visa on Arrival list, its visa-free visit (BVK) list or its calling-visa list (imigrasi.go.id, checked 2026-11-02), so you need a visit visa before travelling; Indonesia issues e-Visas online. This is a negative-confirmation finding: no page states the rule for Montenegro directly. Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "MK",
+    "destination": "ID",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Indonesian visit visa obtained before travel (e-Visa at evisa.imigrasi.go.id)",
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "North Macedonia isn't on Indonesia's Visa on Arrival list, its visa-free visit (BVK) list or its calling-visa list (imigrasi.go.id, checked 2026-11-02), so you need a visit visa before travelling; Indonesia issues e-Visas online. This is a negative-confirmation finding: no page states the rule for North Macedonia directly. Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "RS",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Serbia ('Serbia') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "VA",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "The Holy See ('Vatikan') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "TR",
+    "destination": "ID",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Türkiye ('Turki') is on Indonesia's visa-free visit (Bebas Visa Kunjungan, BVK) list (imigrasi.go.id 'Daftar Subjek Bebas Visa Kunjungan'). The visa-free visit allows up to 30 days, free of charge, and can't be extended or converted to another stay permit. Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Negara Bebas Visa Kunjungan",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-bebas-visa-kunjungan"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "On the visa-free visit (BVK) list",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Negara Bebas Visa Kunjungan",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-bebas-visa-kunjungan"
+      }
+    ]
+  },
+  {
+    "nationality": "AM",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Armenia ('Armenia') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "AZ",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Azerbaijan ('Azerbaijan') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "BY",
+    "destination": "ID",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Belarus ('Belarus') is on Indonesia's visa-free visit (Bebas Visa Kunjungan, BVK) list (imigrasi.go.id 'Daftar Subjek Bebas Visa Kunjungan'). The visa-free visit allows up to 30 days, free of charge, and can't be extended or converted to another stay permit. Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Negara Bebas Visa Kunjungan",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-bebas-visa-kunjungan"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "On the visa-free visit (BVK) list",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Negara Bebas Visa Kunjungan",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-bebas-visa-kunjungan"
+      }
+    ]
+  },
+  {
+    "nationality": "RU",
+    "destination": "ID",
+    "requirement": "visa_on_arrival",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of arrival",
+      "Return or onward ticket",
+      "VOA fee (IDR 500,000), paid on arrival or purchased in advance via the eVOA online system",
+      "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "All Indonesia arrival declaration (allindonesia.imigrasi.go.id or the All Indonesia app), free, can be filled in from 3 days before arrival — mandatory for every passenger arriving from abroad since 1 October 2025",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Russia ('Rusia') is on Indonesia's official Visa on Arrival subject list. VOA gives an initial 30-day stay and can be extended once at a local immigration office for a further 30 days (60 days total) and can be converted to another stay permit through the bridging-visa mechanism (imigrasi.go.id, B1 visa page). VOA can be obtained on arrival at designated airports/seaports/land crossings or purchased in advance online via the eVOA portal (evisa.imigrasi.go.id). Arrival declaration: Ministry of Immigration and Corrections (Kemenimipas), 'Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia' (1 Oct 2025), https://kemenimipas.go.id/berita-utama/mulai-1-oktober-deklarasi-kedatangan-penumpang-wajib-dilakukan-di-aplikasi-all-indonesia, checked 2026-10-05. If you visit Bali, the provincial government charges foreign tourists a levy of IDR 150,000 on arrival.",
+    "legal_source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+        "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "GOV.UK (FCDO) — Indonesia travel advice: Entry requirements, Bali tourist levy (updated 2026-09-18)",
+        "url": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+      },
+      {
+        "claim": "Bali tourist levy of IDR 150,000 for foreign tourists arriving in Bali",
+        "name": "France Diplomatie — Conseils aux voyageurs: indonesie, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
   }
 ]
