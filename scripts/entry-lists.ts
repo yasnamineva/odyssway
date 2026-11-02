@@ -133,7 +133,8 @@ function apply(lists: EntryList[], rows: Row[]): number {
         // A template that quotes its country's label from the list ("'Poland (Republic of)'")
         // can't be reused by swapping names: the new row would misquote the source. Use the
         // list's own label for both passports (group.labels), or refuse.
-        const quoted = new RegExp(`["'‘“][^"'’”]*${from.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}[^"'’”]*["'’”]`);
+        // An opening quote never follows a letter, so possessives ("Uzbekistan's") don't count.
+        const quoted = new RegExp(`(?<![\\p{L}])["'‘“][^"'’”]*${from.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}[^"'’”]*["'’”]`, "u");
         const fromLabel = g.labels?.[g.template];
         const toLabel = g.labels?.[nat];
         if (tpl.notes && quoted.test(tpl.notes) && !(fromLabel && toLabel))

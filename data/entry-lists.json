@@ -5108,6 +5108,123 @@
     ]
   },
   {
+    "destination": "UZ",
+    "source": {
+      "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 408 of 21 November 1996, Annex 5 — countries whose citizens have a visa-free regime (as amended by Resolution No. 662 of 21 October 2025; LexUz Russian translation of the Uzbek original)",
+      "url": "https://lex.uz/ru/docs/513096"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "Annex 5 visa-free list, 30 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AR",
+          "AT",
+          "AU",
+          "BA",
+          "BE",
+          "BG",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "ME",
+          "MT",
+          "MX",
+          "MY",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RS",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SM",
+          "TR",
+          "US",
+          "VA"
+        ]
+      },
+      {
+        "label": "Not visa-free; e-visa list (MFA Appendix 1)",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "IN",
+        "nationalities": [
+          "AL",
+          "IN",
+          "MK"
+        ]
+      }
+    ],
+    "held": [
+      {
+        "nationality": "XK",
+        "reason": "Kosovo is on neither the Annex 5 visa-free list nor the MFA e-visa or transit appendices; no visa route for Kosovo passports is stated."
+      },
+      {
+        "nationality": "AZ",
+        "reason": "Annex 5 lists it under 'without a time limit' (bilateral agreement); the stay model has no unlimited kind and registration rules for these passports aren't checked yet."
+      },
+      {
+        "nationality": "GE",
+        "reason": "Annex 5 lists it under 'without a time limit' (bilateral agreement); the stay model has no unlimited kind and registration rules for these passports aren't checked yet."
+      },
+      {
+        "nationality": "AM",
+        "reason": "Annex 5 lists it under 'without a time limit' (bilateral agreement); the stay model has no unlimited kind and registration rules for these passports aren't checked yet."
+      },
+      {
+        "nationality": "BY",
+        "reason": "Annex 5 lists it under 'without a time limit' (bilateral agreement); the stay model has no unlimited kind and registration rules for these passports aren't checked yet."
+      },
+      {
+        "nationality": "MD",
+        "reason": "Annex 5 lists it under 'without a time limit' (bilateral agreement); the stay model has no unlimited kind and registration rules for these passports aren't checked yet."
+      },
+      {
+        "nationality": "RU",
+        "reason": "Annex 5 lists it under 'without a time limit' (bilateral agreement); the stay model has no unlimited kind and registration rules for these passports aren't checked yet."
+      }
+    ]
+  },
+  {
     "destination": "ZA",
     "source": {
       "name": "Department of Home Affairs — Visa Exemption List (Immigration Act 13 of 2002)",
