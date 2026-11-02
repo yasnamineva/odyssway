@@ -1,3 +1,4 @@
+import SuggestSource from "../../components/SuggestSource";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import rawCountriesFile from "../../../../data/countries.json";
@@ -102,6 +103,7 @@ function sourceStats() {
 
 export default async function SourcesPage() {
   const t = await getTranslations("sourcesPage");
+  const ts = await getTranslations("suggestSource");
   const stats = sourceStats();
 
   return (
@@ -234,6 +236,11 @@ export default async function SourcesPage() {
             </li>
           ))}
         </ul>
+      </section>
+      <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm" id="suggest">
+        <h2 className="text-lg font-semibold text-slate-900">{ts("title")}</h2>
+        <p className="mt-1 mb-4 text-sm leading-relaxed text-slate-600">{ts("intro")}</p>
+        <SuggestSource />
       </section>
     </article>
   );

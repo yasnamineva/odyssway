@@ -36,3 +36,35 @@ export function reportProblemHref({
     .join("\n");
   return `mailto:${OPERATOR.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
+
+/**
+ * A pre-filled email suggesting an official source we don't have yet: country, topic,
+ * the official link and the exact sentence. Like reportProblemHref it opens the
+ * reader's own mail app, so nothing passes through the site. Every suggestion still
+ * goes through the same checks as our own research (AGENTS.md §3) before anything is
+ * published: the link must be a government, customs or border authority page, and
+ * the quote must be on it.
+ */
+export function suggestSourceHref({
+  country,
+  topic,
+  link,
+  quote,
+}: {
+  country: string;
+  topic: string;
+  link: string;
+  quote: string;
+}): string {
+  const subject = `Source suggestion: ${country || "?"} (${topic})`;
+  const body = [
+    `Country: ${country}`,
+    `Topic: ${topic}`,
+    `Official link: ${link}`,
+    "",
+    "Exact sentence on that page:",
+    quote,
+    "",
+  ].join("\n");
+  return `mailto:${OPERATOR.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}

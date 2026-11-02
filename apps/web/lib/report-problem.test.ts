@@ -26,3 +26,16 @@ describe("reportProblemHref", () => {
     expect(body).not.toContain("Last checked");
   });
 });
+
+describe("suggestSourceHref", () => {
+  it("fills in country, topic, link and quote, and sends nothing through the site", async () => {
+    const { suggestSourceHref } = await import("./report-problem");
+    const href = suggestSourceHref({ country: "Morocco", topic: "Entry rules", link: "https://www.consulat.ma/x", quote: "No visa needed." });
+    expect(href.startsWith("mailto:")).toBe(true);
+    const body = decodeURIComponent(href.split("&body=")[1]!);
+    expect(body).toContain("Country: Morocco");
+    expect(body).toContain("Official link: https://www.consulat.ma/x");
+    expect(body).toContain("No visa needed.");
+    expect(decodeURIComponent(href)).toContain("Source suggestion: Morocco (Entry rules)");
+  });
+});
