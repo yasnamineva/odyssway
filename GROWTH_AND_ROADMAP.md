@@ -236,6 +236,11 @@ Liechtenstein, Türkiye unlisted; 13 rows re-quoted to the FAQ's current wording
 Kyrgyzstan, Ireland, Morocco. Uzbekistan's six "no time limit" passports added as visa-free with no day count (the
 pattern Armenia's bilateral rows use); their registration rules are still open. ✔ Colombia completed from Res.
 12189 de 2026 (current exempt list; Israel exempt since 4 Sep 2026).
+✔ Same day, later: Malaysia (16 from embassy pages), Jamaica (11 conditional rows: vaccination proof, plus a US/CA/UK/
+Schengen visa for some; Bulgaria, Croatia, Romania held as the visa condition can't apply to them), Mexico (29 from the
+SRE visa-free list). New guard: validate-data fails when a row cites a source claim written for another passport (it
+caught 106 rows, fixed). **Deploy pending:** about 90 local commits; full e2e passed (121) on 2026-11-02. On 2026-11-03:
+rerun build + e2e, push once, then `pnpm indexnow -- --since 2026-11-02`.
 **External review follow-ups (2026-11-02)**: ✔ source registry with re-check intervals (`data/source-registry.json`,
 `pnpm sources:registry`; `pnpm coverage` lists rows due); ✔ entry lists stored by group (`data/entry-lists.json`, 26
 destinations, `pnpm entry:lists --apply` to add a passport); ✔ "Suggest an official source" mail form on /sources (no
