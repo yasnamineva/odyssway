@@ -4023,3 +4023,6 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
 
 ## Egypt — held passports (2026-11-02)
 - AD, LI, TR: not on the e-Visa Portal FAQ's eligible-nationality list; no primary Egyptian page states the consular route for them. (The FAQ's older sentence "a visa is required prior to entry" is gone; the 13 rows that quoted it now quote the current wording.)
+
+## Jordan — 43 newer passports not added (2026-11-02)
+- Each Jordan row rests on the passport not being on the Ministry of Interior's restricted-nationalities list (moi.gov.jo/EN/Pages/Restricted_and_Non_Restricted_Countries_Nationalities). The host refused connections today (ECONNREFUSED), and the list's contents weren't saved when the existing rows were checked. Retry; save the list in the source registry note when read (Armenia, Azerbaijan and Georgia need a specific check against its "14 Asian" states).
