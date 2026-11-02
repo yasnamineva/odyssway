@@ -56786,7 +56786,7 @@
     "documentsNeeded": [
       "Passport valid at least 60 days beyond the stay you're allowed (150 days from entry for a 90-day stay), under Article 7.1(b) of Law No. 6458; the Ministry's page lists nationalities exempt from this rule"
     ],
-    "notes": "Türkiye's Ministry of Foreign Affairs, for Albania: 'Official and ordinary passport holders are exempted from visa for their travels with touristic purposes and transit from Türkiye, up to 90 days within six months starting from .'",
+    "notes": "Türkiye's Ministry of Foreign Affairs, for Albania: 'Official and ordinary passport holders are exempted from visa for their travels with touristic purposes and transit from Türkiye, up to 90 days within six months starting from the first entry date.'",
     "legal_source": {
       "name": "Republic of Türkiye Ministry of Foreign Affairs — Visa information for foreigners",
       "url": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
@@ -57557,5 +57557,1988 @@
     "verified_at": "2026-11-01",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "nationality": "AT",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Federal Republic of Austria as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Federal Republic of Austria listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "BE",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Kingdom of Belgium as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Kingdom of Belgium listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "BG",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Bulgaria as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Republic of Bulgaria listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "HR",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Croatia as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Republic of Croatia listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "CY",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Cyprus as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Republic of Cyprus listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "CZ",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Czech Republic as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Czech Republic listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "DK",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Kingdom of Denmark as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Kingdom of Denmark listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "EE",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Estonia as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Republic of Estonia listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "FI",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Finland as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Republic of Finland listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "GR",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Greece as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Greece listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "HU",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Hungary as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Hungary listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "LV",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Latvia as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Republic of Latvia listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "LT",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Lithuania as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Republic of Lithuania listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "LU",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Grand Duchy of Luxembourg as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Grand Duchy of Luxembourg listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "MT",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Malta as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Republic of Malta listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "PL",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Poland as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Republic of Poland listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "PT",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Portuguese Republic as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Portuguese Republic listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "RO",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Romania as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Romania listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "SK",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Slovak Republic as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Slovak Republic listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "SI",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Slovenia as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Republic of Slovenia listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "SE",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Kingdom of Sweden as \"Visa Free\" (checked 2026-11-02). The stay limit comes from the EU–UAE short-stay visa waiver agreement: citizens of an EU Member State (all except Ireland) 'may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period' (Article 4(1)), in one or several visits. The agreement doesn't cover travel to carry out a paid activity (Article 3(2)); the UAE decides those cases under its own law. Longer stays need a visa via the official ICP or GDRFA channels.",
+    "legal_source": {
+      "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Stay: 90 days in any 180-day period; paid activity excluded",
+        "name": "Agreement between the European Union and the United Arab Emirates on the short-stay visa waiver (OJ L 125, 21.5.2015), Articles 2–4",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01)"
+      },
+      {
+        "claim": "Kingdom of Sweden listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "IE",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Ireland as \"Visa Free\" (checked 2026-11-02). The permitted stay couldn't be confirmed on a primary source: the Ministry's list gives no duration, and the UAE's own portals (u.ae, ICP, GDRFA) were unreachable or don't list it, so no day count is shown. Ireland is outside the EU–UAE visa waiver agreement (Article 2(a) excludes it), so the agreement's 90-in-180 rule doesn't settle the Irish stay, and Ireland's own travel advice couldn't be read from here. Check the stay with the UAE embassy or ICP before you go.",
+    "legal_source": {
+      "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+      "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Ireland listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "AL",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Albania as \"Visa Free\" (checked 2026-11-02). The permitted stay couldn't be confirmed on a primary source: the Ministry's list gives no duration, and the UAE's own portals (u.ae, ICP, GDRFA) were unreachable or don't list it, so no day count is shown. Check the stay with the UAE embassy or ICP before you go.",
+    "legal_source": {
+      "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+      "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Republic of Albania listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "AD",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Principality of Andorra as \"Visa Free\" (checked 2026-11-02). The permitted stay couldn't be confirmed on a primary source: the Ministry's list gives no duration, and the UAE's own portals (u.ae, ICP, GDRFA) were unreachable or don't list it, so no day count is shown. Check the stay with the UAE embassy or ICP before you go.",
+    "legal_source": {
+      "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+      "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Principality of Andorra listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "BA",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Bosnia and Herzegovina as \"Visa Free\" (checked 2026-11-02). The permitted stay couldn't be confirmed on a primary source: the Ministry's list gives no duration, and the UAE's own portals (u.ae, ICP, GDRFA) were unreachable or don't list it, so no day count is shown. Check the stay with the UAE embassy or ICP before you go.",
+    "legal_source": {
+      "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+      "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Bosnia and Herzegovina listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "GE",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Georgia as \"Visa Free\" (checked 2026-11-02). The permitted stay couldn't be confirmed on a primary source: the Ministry's list gives no duration, and the UAE's own portals (u.ae, ICP, GDRFA) were unreachable or don't list it, so no day count is shown. Check the stay with the UAE embassy or ICP before you go.",
+    "legal_source": {
+      "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+      "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Georgia listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "XK",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Kosovo as \"Visa Free\" (checked 2026-11-02). The permitted stay couldn't be confirmed on a primary source: the Ministry's list gives no duration, and the UAE's own portals (u.ae, ICP, GDRFA) were unreachable or don't list it, so no day count is shown. Check the stay with the UAE embassy or ICP before you go.",
+    "legal_source": {
+      "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+      "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Republic of Kosovo listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "MD",
+    "destination": "AE",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)",
+      "UAE entry permit or visa obtained before travel, through the official ICP (federal) or GDRFA (Dubai) channels"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Moldova as \"Visa Required\" (checked 2026-11-02), so citizens of Moldova need a visa before travelling. The visa's own terms decide how long you can stay, so no day count is shown.",
+    "legal_source": {
+      "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+      "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Republic of Moldova listed as Visa Required",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "MC",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Principality of Monaco as \"Visa Free\" (checked 2026-11-02). The permitted stay couldn't be confirmed on a primary source: the Ministry's list gives no duration, and the UAE's own portals (u.ae, ICP, GDRFA) were unreachable or don't list it, so no day count is shown. Check the stay with the UAE embassy or ICP before you go.",
+    "legal_source": {
+      "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+      "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Principality of Monaco listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "ME",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Montenegro as \"Visa Free\" (checked 2026-11-02). The permitted stay couldn't be confirmed on a primary source: the Ministry's list gives no duration, and the UAE's own portals (u.ae, ICP, GDRFA) were unreachable or don't list it, so no day count is shown. Check the stay with the UAE embassy or ICP before you go.",
+    "legal_source": {
+      "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+      "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Montenegro listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "MK",
+    "destination": "AE",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)",
+      "UAE entry permit or visa obtained before travel, through the official ICP (federal) or GDRFA (Dubai) channels"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of North Macedonia as \"Visa Required\" (checked 2026-11-02), so citizens of North Macedonia need a visa before travelling. The visa's own terms decide how long you can stay, so no day count is shown.",
+    "legal_source": {
+      "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+      "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Republic of North Macedonia listed as Visa Required",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "SM",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of San Marino as \"Visa Free\" (checked 2026-11-02). The permitted stay couldn't be confirmed on a primary source: the Ministry's list gives no duration, and the UAE's own portals (u.ae, ICP, GDRFA) were unreachable or don't list it, so no day count is shown. Check the stay with the UAE embassy or ICP before you go.",
+    "legal_source": {
+      "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+      "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Republic of San Marino listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "RS",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Serbia as \"Visa Free\" (checked 2026-11-02). The permitted stay couldn't be confirmed on a primary source: the Ministry's list gives no duration, and the UAE's own portals (u.ae, ICP, GDRFA) were unreachable or don't list it, so no day count is shown. Check the stay with the UAE embassy or ICP before you go.",
+    "legal_source": {
+      "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+      "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Republic of Serbia listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "VA",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Vatican as \"Visa Free\" (checked 2026-11-02). The permitted stay couldn't be confirmed on a primary source: the Ministry's list gives no duration, and the UAE's own portals (u.ae, ICP, GDRFA) were unreachable or don't list it, so no day count is shown. Check the stay with the UAE embassy or ICP before you go.",
+    "legal_source": {
+      "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+      "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Vatican listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "TR",
+    "destination": "AE",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)",
+      "UAE entry permit or visa obtained before travel, through the official ICP (federal) or GDRFA (Dubai) channels"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Turkiye as \"Visa Required\" (checked 2026-11-02), so citizens of Türkiye need a visa before travelling. The visa's own terms decide how long you can stay, so no day count is shown.",
+    "legal_source": {
+      "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+      "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Republic of Turkiye listed as Visa Required",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "AM",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Armenia as \"Visa Free\" (checked 2026-11-02). The permitted stay couldn't be confirmed on a primary source: the Ministry's list gives no duration, and the UAE's own portals (u.ae, ICP, GDRFA) were unreachable or don't list it, so no day count is shown. Check the stay with the UAE embassy or ICP before you go.",
+    "legal_source": {
+      "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+      "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Republic of Armenia listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "AZ",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Azerbaijan as \"Visa Free\" (checked 2026-11-02). The permitted stay couldn't be confirmed on a primary source: the Ministry's list gives no duration, and the UAE's own portals (u.ae, ICP, GDRFA) were unreachable or don't list it, so no day count is shown. Check the stay with the UAE embassy or ICP before you go.",
+    "legal_source": {
+      "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+      "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Republic of Azerbaijan listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "BY",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Republic of Belarus as \"Visa Free\" (checked 2026-11-02). The permitted stay couldn't be confirmed on a primary source: the Ministry's list gives no duration, and the UAE's own portals (u.ae, ICP, GDRFA) were unreachable or don't list it, so no day count is shown. Check the stay with the UAE embassy or ICP before you go.",
+    "legal_source": {
+      "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+      "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Republic of Belarus listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
+  },
+  {
+    "nationality": "RU",
+    "destination": "AE",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months on arrival (UK, French and German travel advice agree)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "The UAE Ministry of Foreign Affairs lists Russian Federation as \"Visa Free\" (checked 2026-11-02). The permitted stay couldn't be confirmed on a primary source: the Ministry's list gives no duration, and the UAE's own portals (u.ae, ICP, GDRFA) were unreachable or don't list it, so no day count is shown. Check the stay with the UAE embassy or ICP before you go.",
+    "legal_source": {
+      "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+      "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Russian Federation listed as Visa Free",
+        "name": "UAE Ministry of Foreign Affairs — Visa information to enter the country (visa exemptions for non-citizens)",
+        "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "GOV.UK (FCDO) — United Arab Emirates travel advice: Entry requirements",
+        "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/entry-requirements"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "France Diplomatie — Conseils aux voyageurs, Émirats arabes unis: Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Passport valid for at least 6 months from arrival (three governments' advice agree)",
+        "name": "Auswärtiges Amt — Vereinigte Arabische Emirate: Reise- und Sicherheitshinweise, Einreise",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
+      }
+    ]
   }
 ]

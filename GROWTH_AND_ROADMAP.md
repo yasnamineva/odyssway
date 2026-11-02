@@ -6,11 +6,11 @@ anything gets built, and its Accuracy Policy (§3) comes before everything here.
 listed as *candidates* are research leads, not verified rules, and none can be published
 without a primary official source.
 
-Where we are today (2026-10-30):
+Where we are today (2026-11-02):
 
-- 68 destinations plus the Schengen Area; 1,426 verified entry rows; 630 customs rows
+- 68 destinations plus the Schengen Area; 1,684 verified entry rows; 630 customs rows
   (135 medication, 38 with a doctor's-letter checklist, 19 with a permit how-to, 19 with
-  a transit rule); 555 entry rows with a structured passport-validity rule.
+  a transit rule); 617 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
   planner, travel-authorisation guides, the 90/180 calculator, the multi-country day counter, named-medicine pages, border cards,
   embeddable calculator and "Can I bring it?" widgets, the public JSON API.
@@ -191,8 +191,13 @@ Switzerland, Liechtenstein (EEA/Swiss free movement needs an official source); d
 for all the new passports, starting with the most-travelled pairs.
 ✔ 2026-11-01: UK (Appendix ETA National List / visa national list), US (DHS VWP list; non-EU
 Europeans held pending the entry-proclamation check), Canada (IRPR Schedule 1.1) and Australia
-(eVisitor/ETA lists) rows for the new passports: 142 rows. Next: Japan (blocked .go.jp), Thailand,
-Türkiye, UAE, then the Western Balkans' own neighbours.
+(eVisitor/ETA lists) rows for the new passports: 142 rows. ✔ 2026-11-01 Thailand (MFA revised-scheme
+summary) and Türkiye (MFA per-country list), 39 rows each. ✔ 2026-11-02 UAE, 39 rows: statuses from MOFA's
+country cards (Moldova, North Macedonia and Türkiye need a visa); 90 in 180 for the 21 EU passports from
+the EU–UAE visa waiver agreement (CELEX 22015A0521(01), Art. 4(1); Ireland excluded by Art. 2(a)); stay
+not shown for Ireland and the 14 visa-free non-EU passports (no primary source gives it; ireland.ie
+returns 403). Next: Japan (blocked .go.jp), then the Western Balkans' own neighbours (Serbia, Montenegro,
+Bosnia and Herzegovina, North Macedonia, Armenia already covered as destinations).
 
 Each new passport adds a row in every destination, so this multiplies coverage. Choose
 from Search Console country data. Likely candidates: Philippines, Indonesia, Turkey,
