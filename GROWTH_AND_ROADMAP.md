@@ -8,7 +8,7 @@ without a primary official source.
 
 Where we are today (2026-11-02):
 
-- 68 destinations plus the Schengen Area; 3,572 verified entry rows; 697 customs rows
+- 68 destinations plus the Schengen Area; 3,629 verified entry rows; 697 customs rows
   (135 medication, 38 with a doctor's-letter checklist, 19 with a permit how-to, 19 with
   a transit rule); 1,125 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
@@ -232,7 +232,7 @@ Cambodia, Maldives, Uzbekistan, China; Colombia's own list (Res. 5488/2022) for 
 Rwanda, Maldives, Nigeria, China (41; mutual-exemption list read; Kosovo, Holy See held), Uzbekistan (42; Kosovo unlisted), Egypt (40 on the e-Visa list; Andorra,
 Liechtenstein, Türkiye unlisted; 13 rows re-quoted to the FAQ's current wording). **Blocked, retry later:** Jordan
 (Ministry of Interior restricted list, host refuses connections), Japan (mofa.go.jp 403 to every fetch), Cambodia
-(e-visa list behind a captcha), Korea (JS), Vietnam, Malaysia (no central list), Hong Kong, Saudi Arabia, Qatar,
+(e-visa list behind a captcha), Korea (JS), Vietnam, Malaysia (16 added from embassy pages; 27 have no readable embassy statement), Hong Kong, Saudi Arabia, Qatar,
 Kyrgyzstan, Ireland, Morocco. Uzbekistan's six "no time limit" passports added as visa-free with no day count (the
 pattern Armenia's bilateral rows use); their registration rules are still open. ✔ Colombia completed from Res.
 12189 de 2026 (current exempt list; Israel exempt since 4 Sep 2026).
