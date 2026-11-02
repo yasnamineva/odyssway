@@ -22946,5 +22946,195 @@
         "url": "https://www.bazg.admin.ch/dam/en/sd-web/Mv9dMMMmYzCG/Info-Zoll-Wertfreigrenze-Freimengen_e.pdf"
       }
     ]
+  },
+  {
+    "slug": "alcohol-is",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer",
+      "cider"
+    ],
+    "destination": "IS",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free in your luggage from age 20: 6 units of alcohol, where 1 unit is 0.25 litres of spirits (over 21%), 0.75 litres of other alcohol under 21% (such as wine), or 3 litres of beer or sparkling drinks under 6%. Import charges are due on anything over this.",
+      "quantity": "6 units (spirits 0.25 L, wine 0.75 L, beer 3 L per unit)"
+    },
+    "notes": "Travellers can't pool allowances. By post or shipment, alcohol tax and 11% VAT are always due. Iceland is in Schengen but outside the EU customs union, so EU allowances don't apply here.",
+    "summary": "Duty-free from age 20: 6 units of alcohol, where a unit is 0.25 L of spirits, 0.75 L of wine or 3 L of beer.",
+    "legal_source": {
+      "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+      "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Alcohol: 6 units, unit sizes by strength, minimum age 20, charges on the excess",
+        "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+        "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+      },
+      {
+        "claim": "Allowances are for goods carried on arrival, for personal use or gifts; travellers can't combine allowances",
+        "name": "Ísland.is (Skatturinn) — Conditions for duty-free allowances",
+        "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland/conditions-for-duty-free-allowances"
+      }
+    ]
+  },
+  {
+    "slug": "tobacco-is",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "cigarillos",
+      "rolling tobacco",
+      "snus",
+      "snuff"
+    ],
+    "destination": "IS",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free in your luggage from age 18: 200 cigarettes (one carton) or 250 grams of other tobacco. Oral tobacco (snus) and finely ground nasal snuff can't be imported at all.",
+      "quantity": "200 cigarettes or 250 g"
+    },
+    "notes": "Import charges are due on anything over the allowance. You can't order tobacco to Iceland by post, though small amounts for personal use sent by another individual are allowed. Iceland is in Schengen but outside the EU customs union, so EU allowances don't apply here.",
+    "summary": "Duty-free from age 18: 200 cigarettes or 250 grams of other tobacco. Snus and fine nasal snuff are banned.",
+    "legal_source": {
+      "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+      "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Tobacco allowance, age 18, snus and nasal snuff banned, postal rules",
+        "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+        "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+      },
+      {
+        "claim": "Allowances are for goods carried on arrival, for personal use or gifts; travellers can't combine allowances",
+        "name": "Ísland.is (Skatturinn) — Conditions for duty-free allowances",
+        "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland/conditions-for-duty-free-allowances"
+      }
+    ]
+  },
+  {
+    "slug": "e-cigarettes-is",
+    "names": [
+      "e-cigarettes",
+      "e-cigarette",
+      "vape",
+      "vapes",
+      "vaping",
+      "e-liquid",
+      "disposable vape",
+      "nicotine pouches",
+      "nicotine pouch",
+      "zyn",
+      "velo",
+      "white snus"
+    ],
+    "destination": "IS",
+    "category": "e_cigarettes",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free in your luggage from age 18: 20 units of nicotine products, or 20 disposable e-cigarettes with 2 ml tanks, or 40 ml of refill e-liquid (with or without nicotine). Nicotine products include nicotine pouches, e-cigarettes and e-liquid. Import charges are due on anything over this.",
+      "quantity": "20 units, or 20 disposables, or 40 ml e-liquid"
+    },
+    "notes": "These limits don't apply to nicotine products classified as medicines or food. Adults can also order nicotine products by post for personal use, paying import charges. CBD in nicotine products is prohibited. Iceland is in Schengen but outside the EU customs union, so EU allowances don't apply here.",
+    "summary": "Duty-free from age 18: 20 nicotine products (such as pouches), or 20 disposable vapes, or 40 ml of e-liquid.",
+    "legal_source": {
+      "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+      "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Nicotine products: definition, allowances, age 18, CBD in nicotine products prohibited",
+        "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+        "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+      }
+    ]
+  },
+  {
+    "slug": "medication-is",
+    "names": [
+      "medication",
+      "medicine",
+      "medicines",
+      "prescription medicine",
+      "prescription drugs",
+      "pills",
+      "tablets"
+    ],
+    "destination": "IS",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "You can bring medicines for personal use in your luggage, up to 100 days' use, if the amount is clearly justified. Customs may ask for proof, such as a medical certificate, that you need that quantity. Anabolic steroids, peptide hormones and similar substances are limited to 30 days' use.",
+      "quantity": "Up to 100 days' supply (30 days for anabolic steroids and peptide hormones)"
+    },
+    "notes": "Medicines for personal use can't be posted or shipped to Iceland from countries outside the EEA. Narcotic and addictive substances can't be imported, including cannabis for medicinal use. The Icelandic Medicines Agency publishes the detailed rules.",
+    "summary": "Allowed for personal use: up to 100 days' supply (30 days for anabolic steroids and peptide hormones); customs may ask for a medical certificate.",
+    "legal_source": {
+      "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+      "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Medicines in luggage: 100 days, 30 days for anabolic steroids and peptide hormones, proof may be required; no postal import from outside the EEA",
+        "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+        "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+      }
+    ]
+  },
+  {
+    "slug": "cannabis-is",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "medical cannabis",
+      "medicinal cannabis",
+      "cbd",
+      "cbd oil",
+      "cbd gummies",
+      "thc"
+    ],
+    "destination": "IS",
+    "category": "cbd_cannabis",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Narcotic and addictive substances can't be imported into Iceland, and that includes cannabis for medicinal use. CBD depends on the product: CBD in food and in nicotine products is prohibited, CBD in medicinal products needs a permit from the Icelandic Medicines Agency, and CBD in cosmetics is allowed."
+    },
+    "notes": "For CBD medicines, apply to the Icelandic Medicines Agency before travelling; for food products, check the Icelandic Food and Veterinary Authority.",
+    "summary": "Banned, including medical cannabis. CBD in food or nicotine products is banned too; CBD medicines need a permit; CBD cosmetics are allowed.",
+    "legal_source": {
+      "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+      "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Narcotics and controlled substances not permitted, including medicinal cannabis; CBD by product type",
+        "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+        "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+      }
+    ]
   }
 ]
