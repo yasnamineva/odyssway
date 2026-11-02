@@ -8,7 +8,7 @@ without a primary official source.
 
 Where we are today (2026-11-02):
 
-- 68 destinations plus the Schengen Area; 1,684 verified entry rows; 630 customs rows
+- 68 destinations plus the Schengen Area; 1,684 verified entry rows; 682 customs rows
   (135 medication, 38 with a doctor's-letter checklist, 19 with a permit how-to, 19 with
   a transit rule); 617 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness

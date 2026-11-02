@@ -3999,3 +3999,7 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
 - US rows for non-EU European passports (AL AM AZ BY BA GE XK MD ME MK RU RS TR) and the Holy
   See (2026-11-01): not VWP (DHS list of 28 Oct 2026), so a visitor visa is needed, but held until
   the current presidential entry proclamations can be checked (travel.state.gov blocks scripts).
+
+## 2026-11-02 — new passports in the UAE and Serbia
+- UAE: Ireland and 14 visa-free non-EU passports (AL, AD, AM, AZ, BY, BA, GE, XK, MC, ME, RU, SM, RS, VA) show no day count. MOFA's country list gives status only; the EU–UAE agreement (CELEX 22015A0521(01)) covers EU passports except Ireland. ireland.ie advice returns CloudFront 403. Unblock with each country's own foreign-ministry advice on the UAE, or a readable ICP page.
+- Serbia: no row for Kosovo passports. mfa.gov.rs has no Kosovo page (Serbia doesn't recognise Kosovo's passports as a state's). Don't infer; needs an explicit Serbian government statement on entry with Kosovo documents.

@@ -59540,5 +59540,1814 @@
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332"
       }
     ]
+  },
+  {
+    "nationality": "AT",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Austria: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/austrija"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/austrija"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "BE",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Belgium: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/belgija"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/belgija"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "BG",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Bulgaria: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/bugarska"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/bugarska"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "HR",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Croatia: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"From 1 July 2013 ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/hrvatska"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/hrvatska"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "CY",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Cyprus: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/kipar"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/kipar"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "CZ",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for the Czech Republic: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/ceska"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/ceska"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "DK",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Denmark: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/danska"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/danska"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "EE",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Estonia: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/estonija"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/estonija"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "FI",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Finland: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/finska"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/finska"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "GR",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Greece: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/grcka"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/grcka"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "HU",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Hungary: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/madjarska"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/madjarska"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "IE",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Ireland: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/irska"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/irska"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "LV",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Latvia: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/letonija"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/letonija"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "LT",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Lithuania: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/litvanija"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/litvanija"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "LU",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Luxembourg: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/luksemburg"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/luksemburg"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "MT",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Malta: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/malta"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/malta"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "PL",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Poland: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/poljska"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/poljska"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "PT",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Portugal: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/portugalija"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/portugalija"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "RO",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Romania: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/rumunija"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/rumunija"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "SK",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Slovakia: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/slovacka"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/slovacka"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "SI",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Slovenia: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/slovenija"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/slovenija"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "SE",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Sweden: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/svedska"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/svedska"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "AL",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Albania: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/albanija"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/albanija"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "AD",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Andorra: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/andora"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/andora"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "BA",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Bosnia and Herzegovina: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/bosna-i-hercegovina"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/bosna-i-hercegovina"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "GE",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Georgia: \"No visas required for visits of up to ninety (90) days, in period of one hundred and eighty (180) days from the date of entry\" for ordinary passport holders.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/gruzija"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/gruzija"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "MD",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid biometric passport (Serbia's visa exemption covers biometric passports only)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Moldova: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry(for biometric passports only)\" for ordinary passport holders.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/moldavija"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/moldavija"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "MC",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Monaco: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/monako"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/monako"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "ME",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport, or an ID card or other document proving identity and citizenship (Serbia's Ministry of Foreign Affairs)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Montenegro: \"No visas required for visits of up to 90 days\" for ordinary passport holders, and \"Citizens of Montenegro can travel to Serbia with ID card or other document which can be used for identity and citizenship\". The page gives no period over which visits are counted, so the limit is shown per visit.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/crna-gora"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/crna-gora"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "MK",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport or national ID card (Serbia's Ministry of Foreign Affairs states an ID card can also be used)",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for North Macedonia: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders, and \"ID card can also be used to travel to Serbia\".",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/severna-makedonija"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/severna-makedonija"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "SM",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for San Marino: \"No visas required for visits of up to 90 days in a 6 months period starting from the date of the first entry\" for ordinary passport holders.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/san-marino"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/san-marino"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "VA",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for the Holy See: \"No visas required for visits of up to 90 days\" for ordinary passport holders. The page gives no period over which visits are counted, so the limit is shown per visit.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/sveta-stolica"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/sveta-stolica"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "TR",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Türkiye: \"No visas required for visits of up to 90 days in 6 months period from first entrance\" for ordinary passport holders.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/turska"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/turska"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "AM",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Armenia: \"No visas required for visits of up to ninety (90) days, in period of one hundred and eighty (180) days from the date of entry\" for ordinary passport holders.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/jermenija"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/jermenija"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "AZ",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Azerbaijan: \"No visas required for visits of up to 9o days, within period of 180 days\" for ordinary passport holders.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/azerbejdzan"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/azerbejdzan"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "BY",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Belarus: \"No visas required for visits of up to 30 days\" for ordinary passport holders. The page gives no period over which visits are counted, so the limit is shown per visit.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/belorusija"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/belorusija"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "RU",
+    "destination": "RS",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Registration with the local police within 24 hours of arrival (hotels do it for you; not registering can mean a fine)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Serbia's Ministry of Foreign Affairs visa-regime page for Russia: \"No visas required for visits of up to 30 days\" for ordinary passport holders. The page gives no period over which visits are counted, so the limit is shown per visit.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/ruska-federacija"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+        "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/ruska-federacija"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "GOV.UK (FCDO) — Serbia travel advice: Entry requirements, registering with the police (updated 2026-10-22)",
+        "url": "https://www.gov.uk/foreign-travel-advice/serbia/entry-requirements"
+      },
+      {
+        "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
+        "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
   }
 ]
