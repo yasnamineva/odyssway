@@ -3823,6 +3823,103 @@
     ]
   },
   {
+    "destination": "RW",
+    "source": {
+      "name": "Rwanda Directorate General of Immigration and Emigration (DGIE) — Visa on Arrival policy",
+      "url": "https://www.migration.gov.rw/visa-on-arrival"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa on arrival, 30 days",
+        "requirement": "visa_on_arrival",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AL",
+          "AM",
+          "AR",
+          "AT",
+          "AU",
+          "AZ",
+          "BA",
+          "BE",
+          "BG",
+          "BR",
+          "BY",
+          "CA",
+          "CH",
+          "CL",
+          "CN",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GE",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IN",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MD",
+          "ME",
+          "MK",
+          "MT",
+          "MX",
+          "MY",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RS",
+          "RU",
+          "SE",
+          "SI",
+          "SK",
+          "SM",
+          "TR",
+          "UA",
+          "US",
+          "VA",
+          "XK"
+        ]
+      },
+      {
+        "label": "visa on arrival, 90 days",
+        "requirement": "visa_on_arrival",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "SG",
+        "nationalities": [
+          "SG"
+        ]
+      }
+    ]
+  },
+  {
     "destination": "SC",
     "source": {
       "name": "Seychelles Immigration and Civil Status — Visitor's Permit (with Visiting Seychelles)",
