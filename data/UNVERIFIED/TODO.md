@@ -3950,7 +3950,7 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
 - **September entry rows (134), 2026-10-30:** a scripted re-read doesn't work for most of
   them. Georgia (17): matsne shows only the 2015 initial text for free; the consolidated
   version (last amended 24 Feb 2026) is paid, and geoconsul/mfa.gov.ge pages are 404.
-  Hong Kong (14): ImmD's country table isn't in the served HTML. Saudi Arabia (13):
+  Hong Kong (14): ~~ImmD's country table isn't in the served HTML~~ — wrong: it is (rows `<tr class="table-mt1-trN">`, names upper-case); all 21 rows re-checked against the table revised 22 Sep 2026 and re-dated 2026-11-02, and 42 newer passports added (Kosovo held: not named). Saudi Arabia (13):
   visa.visitsaudi.com is a JS app. K-ETA (7): JS app. Smartraveller and travel.state.gov
   block scripts. Next try: the foreign-ministry cross-check route (GOV.UK content API,
   travel.gc.ca) per nationality, which re-reads the rule from a second government, and a

@@ -2445,6 +2445,139 @@
     ]
   },
   {
+    "destination": "HK",
+    "source": {
+      "name": "Immigration Department (HKSAR) — Visit Visa / Entry Permit Requirements (visa-free periods table)",
+      "url": "https://www.immd.gov.hk/eng/services/visas/visit-transit/visit-visa-entry-permit.html"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 90 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MT",
+          "MX",
+          "MY",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SM",
+          "TR",
+          "US"
+        ]
+      },
+      {
+        "label": "visa free, 180 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 180
+        },
+        "template": "GB",
+        "nationalities": [
+          "GB"
+        ]
+      },
+      {
+        "label": "visa free, 14 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 14
+        },
+        "template": "BA",
+        "nationalities": [
+          "AL",
+          "BA",
+          "IN",
+          "ME",
+          "MK",
+          "RS",
+          "RU",
+          "UA",
+          "VA"
+        ]
+      },
+      {
+        "label": "visa free, 30 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "AM",
+        "nationalities": [
+          "AM",
+          "BY",
+          "GE"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AZ",
+        "nationalities": [
+          "AZ",
+          "MD"
+        ]
+      }
+    ],
+    "held": [
+      {
+        "nationality": "XK",
+        "reason": "Kosovo is not listed by name in the ImmD table (only the catch-all row for other foreign nationals, 7 days); not applied without a source naming it."
+      }
+    ]
+  },
+  {
     "destination": "ID",
     "source": {
       "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
