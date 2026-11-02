@@ -8,7 +8,7 @@ without a primary official source.
 
 Where we are today (2026-11-02):
 
-- 68 destinations plus the Schengen Area; 2,953 verified entry rows; 697 customs rows
+- 68 destinations plus the Schengen Area; 3,572 verified entry rows; 697 customs rows
   (135 medication, 38 with a doctor's-letter checklist, 19 with a permit how-to, 19 with
   a transit rule); 1,125 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
@@ -228,6 +228,14 @@ Republic (one MIREX query per passport), Argentina, Brazil (QGRV codes), Bahamas
 (EU–Colombia agreement). Holds in `data/entry-lists.json` (`held`) and TODO. Next by the same method: Ecuador, Taiwan,
 Indonesia, Malaysia, Oman, Brunei, Macao, Israel, India, Korea, Vietnam, Mongolia, Egypt, Jordan, Nigeria, Rwanda,
 Cambodia, Maldives, Uzbekistan, China; Colombia's own list (Res. 5488/2022) for non-EU passports.
+✔ 2026-11-02 fourth batch (same method): Ecuador, Taiwan, Indonesia, Oman, Brunei, Macao, Israel, India, Mongolia,
+Rwanda, Maldives, Nigeria, China (29; 14 wait for the mutual-exemption list), Uzbekistan (36; the six "no time limit"
+bilateral passports need an unlimited stay kind, Kosovo unlisted), Egypt (40 on the e-Visa list; Andorra,
+Liechtenstein, Türkiye unlisted; 13 rows re-quoted to the FAQ's current wording). **Blocked, retry later:** Jordan
+(Ministry of Interior restricted list, host refuses connections), Japan (mofa.go.jp 403 to every fetch), Cambodia
+(e-visa list behind a captcha), Korea (JS), Vietnam, Malaysia (no central list), Hong Kong, Saudi Arabia, Qatar,
+Kyrgyzstan, Ireland, Morocco. **New work found:** decide how to model a no-time-limit bilateral stay (Uzbekistan for
+AZ GE AM BY MD RU); it is a StayPolicy change (§6.6), so do it with tests, not ad hoc.
 **External review follow-ups (2026-11-02)**: ✔ source registry with re-check intervals (`data/source-registry.json`,
 `pnpm sources:registry`; `pnpm coverage` lists rows due); ✔ entry lists stored by group (`data/entry-lists.json`, 26
 destinations, `pnpm entry:lists --apply` to add a passport); ✔ "Suggest an official source" mail form on /sources (no
