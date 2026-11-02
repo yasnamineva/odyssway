@@ -507,5 +507,7 @@ test("Schengen countries have a hub and item pages built from the shared Schenge
   await page.goto("/bring/alcohol/germany", { waitUntil: "domcontentloaded" });
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Germany");
   await page.goto("/destinations/france", { waitUntil: "domcontentloaded" });
-  await expect(page.locator('a[href="/bring/tobacco/france"]')).toBeVisible();
+  // France's own nicotine-pouch ban is listed alongside the EU tobacco allowance.
+  await expect(page.getByRole("link", { name: /Nicotine pouches/ })).toHaveAttribute("href", "/bring/tobacco/france");
+  await expect(page.getByRole("link", { name: /^Tobacco/ })).toHaveAttribute("href", "/bring/tobacco/france");
 });
