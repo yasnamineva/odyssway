@@ -1084,6 +1084,112 @@
     ]
   },
   {
+    "destination": "CL",
+    "source": {
+      "name": "Ministerio de Relaciones Exteriores de Chile (Consulado.gob.cl) — Cuadro de aranceles de visas de permanencia transitoria simple y múltiple para ingresar a Chile (PDF dated 6 March 2026); Servicio Nacional de Migraciones — Permanencia Transitoria / Prórroga de Permanencia Transitoria",
+      "url": "https://www.consulado.gob.cl/consulados/site/docs/20190220/20190220161313/cuadro_de_visas_corregido060326.pdf"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 90 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AL",
+          "AR",
+          "AT",
+          "AU",
+          "BA",
+          "BE",
+          "BG",
+          "BR",
+          "CA",
+          "CH",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GE",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MD",
+          "ME",
+          "MK",
+          "MT",
+          "MX",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RS",
+          "RU",
+          "SE",
+          "SI",
+          "SK",
+          "SM",
+          "TR",
+          "UA",
+          "US",
+          "VA"
+        ]
+      },
+      {
+        "label": "visa free, 30 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "SG",
+        "nationalities": [
+          "MY",
+          "SG"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AM",
+        "nationalities": [
+          "AM",
+          "AZ",
+          "BY",
+          "CN",
+          "IN",
+          "XK"
+        ]
+      }
+    ]
+  },
+  {
     "destination": "CR",
     "source": {
       "name": "Dirección General de Migración y Extranjería, 'Directrices Generales de Visas de Ingreso y Permanencia para No Residentes' AJ-484-11-2025, Alcance N° 148 a La Gaceta N° 216 (17 Nov 2025) — official Imprenta Nacional gazette edition (copy hosted on icoder.go.cr; the migracion.go.cr copy is Cloudflare-blocked)",
