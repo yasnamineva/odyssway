@@ -4018,7 +4018,7 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
 - China (2026-11-02): 29 new passports added from the NIA unilateral visa-free list (17 Feb 2026). Held: CZ, LT, AL, BA, GE, XK, MD, SM, RS, VA, TR, AM, AZ, BY — not on the unilateral list, but some have mutual visa-exemption agreements with China; the MFA mutual-exemption page (cs.mfa.gov.cn ...t20251023_11739051.shtml) now says the page doesn't exist. Find the current 互免签证协定一览表 before marking any as visa-required.
 
 ## Uzbekistan — held passports (2026-11-02)
-- AZ, GE, AM, BY, MD, RU: Resolution No. 408 Annex 5 lists them "без ограничения срока" (no time limit, bilateral). The StayPolicy union has no unlimited kind; decide how to model it (and check registration rules for these passports) before adding rows.
+- AZ, GE, AM, BY, MD, RU: Resolution No. 408 Annex 5 lists them "без ограничения срока" (no time limit, bilateral). Added 2026-11-02 as visa-free with no day count (same as Armenia's bilateral rows). Open: registration rules for these passports (rows say they weren't checked).
 - XK: not on Annex 5, nor on the MFA e-visa (Appendix 1) or 5-day transit (Appendix 2) lists; no visa route for Kosovo passports stated on a primary source.
 
 ## Egypt — held passports (2026-11-02)

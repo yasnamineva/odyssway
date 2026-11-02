@@ -229,13 +229,13 @@ Republic (one MIREX query per passport), Argentina, Brazil (QGRV codes), Bahamas
 Indonesia, Malaysia, Oman, Brunei, Macao, Israel, India, Korea, Vietnam, Mongolia, Egypt, Jordan, Nigeria, Rwanda,
 Cambodia, Maldives, Uzbekistan, China; Colombia's own list (Res. 5488/2022) for non-EU passports.
 ✔ 2026-11-02 fourth batch (same method): Ecuador, Taiwan, Indonesia, Oman, Brunei, Macao, Israel, India, Mongolia,
-Rwanda, Maldives, Nigeria, China (29; 14 wait for the mutual-exemption list), Uzbekistan (36; the six "no time limit"
-bilateral passports need an unlimited stay kind, Kosovo unlisted), Egypt (40 on the e-Visa list; Andorra,
+Rwanda, Maldives, Nigeria, China (29; 14 wait for the mutual-exemption list), Uzbekistan (42; Kosovo unlisted), Egypt (40 on the e-Visa list; Andorra,
 Liechtenstein, Türkiye unlisted; 13 rows re-quoted to the FAQ's current wording). **Blocked, retry later:** Jordan
 (Ministry of Interior restricted list, host refuses connections), Japan (mofa.go.jp 403 to every fetch), Cambodia
 (e-visa list behind a captcha), Korea (JS), Vietnam, Malaysia (no central list), Hong Kong, Saudi Arabia, Qatar,
-Kyrgyzstan, Ireland, Morocco. **New work found:** decide how to model a no-time-limit bilateral stay (Uzbekistan for
-AZ GE AM BY MD RU); it is a StayPolicy change (§6.6), so do it with tests, not ad hoc.
+Kyrgyzstan, Ireland, Morocco. Uzbekistan's six "no time limit" passports added as visa-free with no day count (the
+pattern Armenia's bilateral rows use); their registration rules are still open. ✔ Colombia completed from Res.
+12189 de 2026 (current exempt list; Israel exempt since 4 Sep 2026).
 **External review follow-ups (2026-11-02)**: ✔ source registry with re-check intervals (`data/source-registry.json`,
 `pnpm sources:registry`; `pnpm coverage` lists rows due); ✔ entry lists stored by group (`data/entry-lists.json`, 26
 destinations, `pnpm entry:lists --apply` to add a passport); ✔ "Suggest an official source" mail form on /sources (no
