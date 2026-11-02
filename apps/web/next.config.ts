@@ -101,7 +101,14 @@ const retiredBlogRedirects = (
 
 const nextConfig: NextConfig = {
   async redirects() {
-    return [...destinationCodeRedirects(), ...retiredBlogRedirects, ...withdrawnMedicationPairs, ...withdrawnBringPages];
+    return [
+      ...destinationCodeRedirects(),
+      ...retiredBlogRedirects,
+      ...withdrawnMedicationPairs,
+      ...withdrawnBringPages,
+      // Türkiye passport pages were briefly served at …/t-rkiye (the slug dropped the 'ü'; fixed 2026-11-02).
+      { source: "/destinations/:dest/t-rkiye", destination: "/destinations/:dest/turkiye", permanent: true },
+    ];
   },
   transpilePackages: ["@odyssway/engine"],
   pageExtensions: ["ts", "tsx", "mdx"],

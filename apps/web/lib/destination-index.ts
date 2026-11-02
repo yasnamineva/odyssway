@@ -19,9 +19,12 @@ export function destinationByCode(code: string): DestinationRecord | undefined {
   return destinations.find((d) => d.code === upper);
 }
 
-/** URL slug from a display name: "United States" → "united-states". */
+/** URL slug from a display name: "United States" → "united-states", "Türkiye" → "turkiye"
+ * (accents folded to ASCII, not dropped). */
 export function destinationSlug(name: string): string {
   return name
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "");
