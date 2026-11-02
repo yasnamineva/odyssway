@@ -2254,6 +2254,107 @@
     ]
   },
   {
+    "destination": "SV",
+    "source": {
+      "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",
+      "url": "https://www.migracion.gob.sv/servicios/listado-visa/"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 180 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 180
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MK",
+          "MT",
+          "MX",
+          "MY",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RU",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SM",
+          "TR",
+          "UA",
+          "US",
+          "VA"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AZ",
+        "nationalities": [
+          "AM",
+          "AZ",
+          "BA",
+          "BY",
+          "CN",
+          "GE",
+          "IN",
+          "MD",
+          "ME",
+          "RS",
+          "XK"
+        ]
+      }
+    ],
+    "held": [
+      {
+        "nationality": "AL",
+        "reason": "Albania's cells in the CA-4 classification PDF overlap (ordinary vs diplomatic column unclear)"
+      }
+    ]
+  },
+  {
     "destination": "TH",
     "source": {
       "name": "Ministry of Foreign Affairs of Thailand — Summary: The revision of Thailand's visa exemption and VoA schemes, 2026 (ordinary passports; status as of 31 August 2026, effective 15 September 2026)",
