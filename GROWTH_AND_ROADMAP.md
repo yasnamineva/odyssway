@@ -8,9 +8,9 @@ without a primary official source.
 
 Where we are today (2026-11-02):
 
-- 68 destinations plus the Schengen Area; 1,942 verified entry rows; 682 customs rows
+- 68 destinations plus the Schengen Area; 1,998 verified entry rows; 697 customs rows
   (135 medication, 38 with a doctor's-letter checklist, 19 with a permit how-to, 19 with
-  a transit rule); 725 entry rows with a structured passport-validity rule.
+  a transit rule); 741 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
   planner, travel-authorisation guides, the 90/180 calculator, the multi-country day counter, named-medicine pages, border cards,
   embeddable calculator and "Can I bring it?" widgets, the public JSON API.
@@ -211,10 +211,15 @@ the row said visa required. Re-check other rows built from an initial matsne tex
 (blocked .go.jp). ✔ 2026-11-02 Iceland, Norway, Switzerland, Liechtenstein passports selectable (`eeaSwissNational`):
 free movement in the EU from EEA Joint Committee Decision 158/2007 (Directive 2004/38 for EFTA-State nationals) and the
 EU–Swiss agreement (Annex I Art. 1); among the four from the EFTA Convention Annex K App. 1 Art. 1. Destination rows
-outside Europe for them are still to do. **Customs fix, same day:** Trip Check answered for Norway, Iceland, Switzerland
+outside Europe: ✔ UK, US, Canada, Australia, Thailand, Türkiye, UAE and the seven Balkan/Caucasus
+destinations (2026-11-02). **Customs fix, same day:** Trip Check answered for Norway, Iceland, Switzerland
 and Liechtenstein with the EU allowances (Schengen isn't customs membership); now `customsCodeFor()` sends them to
-their own rows, which don't exist yet, so they show 'not verified'. **Next research:** customs rows for NO and CH
-(toll.no, bazg.admin.ch), high traffic and very different alcohol limits. **Pushed 2026-11-02** (through the Bosnia rows); IndexNow 383 URLs.
+their own rows, which don't exist yet, so they show 'not verified'. ✔ Customs rows added the same day: Norway (alcohol, tobacco,
+vapes, pouches, cash NOK 25,000), Switzerland (alcohol, tobacco, vapes, meat/dairy, produce), Iceland (alcohol units,
+tobacco, nicotine, medicines, cannabis); Liechtenstein answers from the Swiss rows (`customsTerritory`, 1923 treaty).
+Still missing: Swiss cash and medication, Norwegian food and medication (helsedirektoratet/dmp pages).
+✔ 2026-11-02 Türkiye passport URLs: slugs dropped the 'ü' (`/t-rkiye`); fixed to `/turkiye` with 308 redirects.
+✔ Post `/blog/montenegro-visa-turkey-russia-belarus-2026`. **Pushed 2026-11-02** (through the Bosnia rows); IndexNow 383 URLs.
 
 Each new passport adds a row in every destination, so this multiplies coverage. Choose
 from Search Console country data. Likely candidates: Philippines, Indonesia, Turkey,
