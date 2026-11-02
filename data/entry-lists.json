@@ -4652,6 +4652,139 @@
     ]
   },
   {
+    "destination": "QA",
+    "source": {
+      "name": "Ministry of Interior of the State of Qatar — 'Entry Permits (Visit Visas)' and 'On Arrival Visas' (General Directorate of Nationality, Borders & Expatriates Affairs) category pages",
+      "url": "https://portal.moi.gov.qa/qatarvisas/"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "MOI: free on-arrival tourist visa, 90 days, non-extendable (43 countries)",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 180,
+          "maxDays": 90
+        },
+        "template": "AT",
+        "nationalities": [
+          "AM",
+          "AR",
+          "AT",
+          "BE",
+          "BG",
+          "BR",
+          "CH",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GR",
+          "HR",
+          "HU",
+          "IS",
+          "IT",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MT",
+          "MY",
+          "NL",
+          "NO",
+          "PL",
+          "PT",
+          "RO",
+          "RS",
+          "RU",
+          "SE",
+          "SI",
+          "SK",
+          "TR"
+        ]
+      },
+      {
+        "label": "MOI: free on-arrival tourist visa, 30 days (39-country list; India on its own list)",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "AD",
+        "nationalities": [
+          "AD",
+          "AU",
+          "AZ",
+          "BA",
+          "CA",
+          "CL",
+          "CN",
+          "GB",
+          "GE",
+          "IE",
+          "IN",
+          "JP",
+          "MC",
+          "MD",
+          "MK",
+          "MX",
+          "NZ",
+          "SG",
+          "SM",
+          "VA"
+        ]
+      },
+      {
+        "label": "visa on arrival, 90 days",
+        "requirement": "visa_on_arrival",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "US",
+        "nationalities": [
+          "US"
+        ]
+      },
+      {
+        "label": "visa free, 90 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "UA",
+        "nationalities": [
+          "UA"
+        ]
+      }
+    ],
+    "held": [
+      {
+        "nationality": "AL",
+        "reason": "On neither MOI on-arrival list (90-day, 30-day); other routes (e.g. the Hayya visa) not checked."
+      },
+      {
+        "nationality": "XK",
+        "reason": "On neither MOI on-arrival list (90-day, 30-day); other routes (e.g. the Hayya visa) not checked."
+      },
+      {
+        "nationality": "ME",
+        "reason": "On neither MOI on-arrival list (90-day, 30-day); other routes (e.g. the Hayya visa) not checked."
+      },
+      {
+        "nationality": "BY",
+        "reason": "On neither MOI on-arrival list (90-day, 30-day); other routes (e.g. the Hayya visa) not checked."
+      }
+    ]
+  },
+  {
     "destination": "RS",
     "source": {
       "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
