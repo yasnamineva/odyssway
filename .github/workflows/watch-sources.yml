@@ -35,6 +35,10 @@ jobs:
       - run: pnpm watch:sources
         env:
           SOURCE_SNAPSHOT_DIR: ${{ github.workspace }}/source-snapshots
+      # Quoted passages in our rows, checked against this week's saved page text.
+      - run: pnpm check:quotes -- --out "data/UNVERIFIED/quote-check-$(date +%F).md"
+        env:
+          SOURCE_SNAPSHOT_DIR: ${{ github.workspace }}/source-snapshots
       - name: Keep snapshots for next week
         uses: actions/upload-artifact@v4
         with:
@@ -54,3 +58,4 @@ jobs:
           add-paths: |
             data/source-hashes.json
             data/UNVERIFIED/source-changes-*.md
+            data/UNVERIFIED/quote-check-*.md

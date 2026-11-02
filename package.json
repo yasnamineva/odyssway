@@ -11,6 +11,7 @@
     "test:e2e": "pnpm --filter web test:e2e",
     "validate:data": "tsx scripts/validate-data.ts",
     "watch:sources": "tsx scripts/watch-sources.ts",
+    "check:quotes": "tsx scripts/check-quotes.ts",
     "coverage": "tsx scripts/coverage-report.ts",
     "indexnow": "tsx scripts/indexnow.ts",
     "gsc:compare": "tsx scripts/gsc-compare.ts",

@@ -1,5 +1,323 @@
 [
   {
+    "commit": "e1d6b1cc5f57c0c7ff728b25ce2e4a559facacd7",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Mexico rows for 13 passports on INM's visa-required list (Albania, Armenia, Azerbaijan, Belarus, Bosnia, Russia, Georgia, North Macedonia, Moldova, Montenegro, Holy See, Serbia, Türkiye) with INM's visa alternatives; visa-free passports held (INM's list is an unreadable image)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "MX"
+    ]
+  },
+  {
+    "commit": "b6fa7dc0af3308fa9d5aec1406a8a29cf29b26bd",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "South Africa rows for 43 more passports from DHA's Visa Exemption List (issued 9 Dec 2025, Ordinary column): 90 days for most EU/EFTA passports, Andorra, Monaco, San Marino and Russia; 30 days for Cyprus, Poland and Türkiye; visa needed for Albania and Belarus (no ordinary exemption) and for the 10 passports not on the list",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "ZA"
+    ]
+  },
+  {
+    "commit": "eca364f9c4c8aff35e6db41a705983bb45273e57",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Kenya rows for 43 more passports from the eTA How to Apply page: eTA for all except Cyprus and San Marino (90-day exemption list); mandatory Kenyan travel health insurance as on the other rows",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "KE"
+    ]
+  },
+  {
+    "commit": "b6f40d074e6c03866fc4a12ffd0d219eaa7b0753",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Thailand rows for Iceland, Liechtenstein, Norway and Switzerland: on the MFA's 30-day visa-exemption list (effective 15 Sep 2026)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "TH"
+    ]
+  },
+  {
+    "commit": "113238129938a7a3126a12324f9eecd13d0978e6",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "UAE rows for Iceland, Norway, Liechtenstein and Switzerland: visa-free per MOFA, no day count (not covered by the EU–UAE agreement; no primary source gives the stay)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "AE"
+    ]
+  },
+  {
+    "commit": "a26c8855ce5f1d493ea906397c5508ff8e9557ed",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Türkiye rows for Iceland, Liechtenstein and Switzerland (90 days per visit) and Norway (90 in any 180), quoted from the MFA list; Montenegro post uses its own blog photo key (blog-montenegro, same Kotor photo) as the blog card convention requires",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "TR"
+    ]
+  },
+  {
+    "commit": "e0c000e8956a8d97eb22f60b5e4c67ba860adcfb",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Iceland, Norway, Liechtenstein and Switzerland passports in Serbia, Montenegro, Bosnia and Herzegovina, North Macedonia, Albania, Armenia and Georgia (same official sources as the other new passports; Swiss and Liechtenstein ID cards accepted in Georgia under the 2019 and 2022 amendments)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "AL",
+      "AM",
+      "BA",
+      "GE",
+      "ME",
+      "MK",
+      "RS"
+    ]
+  },
+  {
+    "commit": "5e97420abe0dd8664ded07babcd8ae8a59b1f309",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "UK, US, Canada and Australia entry rows for Iceland, Norway, Liechtenstein and Switzerland passports: UK ETA (ETA National List, GOV.UK EU/EEA/Swiss visitor guidance), US ESTA (DHS VWP list), Canada eTA (IRPR Schedule 1.1), Australia eVisitor (Home Affairs list)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "AU",
+      "CA",
+      "GB",
+      "US"
+    ]
+  },
+  {
+    "commit": "d53e4849953b7224e6bdd668e0c8e97688fdae67",
+    "date": "2026-11-02",
+    "dataset": "customs-items",
+    "summary": "fresh-produce-ch: don't claim what the FSVO page lists (not read)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Norwegian Customs (Tolletaten) — Alcohol and tobacco quotas (updated 29/06/2026)",
+      "url": "https://www.toll.no/en/goods/alcohol-and-tobacco/quotas"
+    },
+    "destinations": [
+      "CH"
+    ]
+  },
+  {
+    "commit": "1424694b615a885f1316d3aa3776d0a48cfdcef4",
+    "date": "2026-11-02",
+    "dataset": "customs-items",
+    "summary": "Switzerland food rows (FOCBS): meat and dairy from outside the EU prohibited, from the EU 1 kg meat and 1 kg/l butter or cream duty-free per day; most fruit and vegetables from outside the EU prohibited (FSVO list)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Norwegian Customs (Tolletaten) — Alcohol and tobacco quotas (updated 29/06/2026)",
+      "url": "https://www.toll.no/en/goods/alcohol-and-tobacco/quotas"
+    },
+    "destinations": [
+      "CH"
+    ]
+  },
+  {
+    "commit": "09384db74dc22db585304deaaf2db9becc5b431a",
+    "date": "2026-11-02",
+    "dataset": "customs-items",
+    "summary": "Norway cash row: declare over NOK 25,000 in the red channel, 20% penalty on the whole amount if you don't (Norwegian Customs); declaration check works for it (NOK, CHF, ISK currency markers)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Norwegian Customs (Tolletaten) — Alcohol and tobacco quotas (updated 29/06/2026)",
+      "url": "https://www.toll.no/en/goods/alcohol-and-tobacco/quotas"
+    },
+    "destinations": [
+      "NO"
+    ]
+  },
+  {
+    "commit": "e9698ded841450398859c63927df737abf5c0899",
+    "date": "2026-11-02",
+    "dataset": "countries",
+    "summary": "Liechtenstein customs answered from the Swiss rows: it is part of the Swiss customs area (1923 customs treaty, Art. 1(1) and 4), recorded as customsTerritory in countries.json; resolveItem and Trip Check follow it",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-fable-5",
+    "source": {
+      "name": "EC Migration & Home Affairs — Schengen area (membership); Council Decisions (EU) 2022/2451 and 2024/210 (accessions); EC short-stay calculator manual §1 (day-counting exclusions)",
+      "url": "https://home-affairs.ec.europa.eu/policies/schengen/schengen-area_en"
+    }
+  },
+  {
+    "commit": "a9abfc1ccb35e85b3f4e8dfa14d73fdf1f19d571",
+    "date": "2026-11-02",
+    "dataset": "customs-items",
+    "summary": "Iceland customs rows from Ísland.is (Skatturinn): alcohol 6 units from age 20 (0.25 L spirits / 0.75 L wine / 3 L beer per unit); tobacco 200 cigarettes or 250 g, snus banned; nicotine products 20 units, 20 disposables or 40 ml; medicines up to 100 days (30 for anabolic steroids and peptide hormones); cannabis banned incl. medicinal, CBD by product type",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Norwegian Customs (Tolletaten) — Alcohol and tobacco quotas (updated 29/06/2026)",
+      "url": "https://www.toll.no/en/goods/alcohol-and-tobacco/quotas"
+    },
+    "destinations": [
+      "IS"
+    ]
+  },
+  {
+    "commit": "c294eecf9156551eb12890b7fcc3afaa419fc41c",
+    "date": "2026-11-02",
+    "dataset": "customs-items",
+    "summary": "Switzerland customs rows from the FOCBS allowance factsheet (23 Jun 2025): per person per day from age 17, 5 L of drinks up to 18% + 1 L over 18%; 250 cigarettes/cigars/heated tobacco or 250 g; 250 nicotine cartridges, 250 ml liquid or 25 disposable e-cigarettes; duty rates on the excess",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Norwegian Customs (Tolletaten) — Alcohol and tobacco quotas (updated 29/06/2026)",
+      "url": "https://www.toll.no/en/goods/alcohol-and-tobacco/quotas"
+    },
+    "destinations": [
+      "CH"
+    ]
+  },
+  {
+    "commit": "9532d80be30c9c37b6187ab47bb5ada70c4ab0cf",
+    "date": "2026-11-02",
+    "dataset": "customs-items",
+    "summary": "Norway customs rows from Norwegian Customs' quota page (updated 29 Jun 2026): alcohol 1 L spirits + 1.5 L wine + 2 L beer with exchange rules, nothing over 60%; tobacco 200 cigarettes/250 g for tourists (100/125 g residents); nicotine vapes (without a quit-smoking certificate), heated tobacco, shisha and nicotine pouches banned",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Norwegian Customs (Tolletaten) — Alcohol and tobacco quotas (updated 29/06/2026)",
+      "url": "https://www.toll.no/en/goods/alcohol-and-tobacco/quotas"
+    },
+    "destinations": [
+      "NO"
+    ]
+  },
+  {
+    "commit": "799cf3955110fc4da9694a237b4bacf6fd7c8bd8",
+    "date": "2026-11-02",
+    "dataset": "nationality-rules",
+    "summary": "Iceland, Norway, Switzerland and Liechtenstein passports: free movement in the EU (EEA Joint Committee Decision 158/2007; EU–Swiss free movement agreement, Annex I Art. 1) and among the four (EFTA Convention Annex K App. 1 Art. 1); Trip Check no longer answers for Norway, Iceland, Switzerland or Liechtenstein with EU customs rows (outside the EU customs union); tests added",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "EEA Joint Committee Decision No 158/2007 (Directive 2004/38/EC incorporated into Annexes V and VIII of the EEA Agreement; 'Union citizen(s)' read as 'national(s) of EC Member States and EFTA States')",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A22007D0158"
+    }
+  },
+  {
+    "commit": "c3422ce56d41ce2745adaf3f378b5617958e0a9c",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Georgia: source labels say '2015 text' (the consolidated text is paid and wasn't read) and cite the eight amending ordinances; 14 September rows re-checked against the list and given the GEL 30,000 insurance minimum (GOV.UK, Italy)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "GE"
+    ]
+  },
+  {
+    "commit": "4b4873c0abd44e59e7c05a56374d030f7cc3e93b",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Georgia entry rules for 38 more passports (one full year visa-free for 36 on Ordinance No. 255's list, checked with all eight amending ordinances 2017–2026; visa or the Ordinance 256 route for Kosovo and North Macedonia); China corrected to 30 days visa-free for tourism under Ordinance No. 359 of 11 Sep 2023",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 359 of 11 September 2023, amending Ordinance No. 255 (matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/ka/document/view/5916029"
+    },
+    "destinations": [
+      "GE"
+    ]
+  },
+  {
+    "commit": "9034d13b57b945cb975481c8180f18b1ed8b34f4",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Armenia entry rules for 38 more passports from the MFA's lists: up to 180 days a year for EU passports, Andorra, Monaco, Montenegro, San Marino and the Holy See (unilateral list); visa-free under bilateral agreements for Albania, Belarus, Georgia, Moldova, Russia and Serbia (term not published, no day count); visa for Bosnia, North Macedonia, Kosovo, Türkiye and Azerbaijan, with the 2026–27 residence-permit exemption where listed",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — China (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/china"
+    },
+    "destinations": [
+      "AM"
+    ]
+  },
+  {
+    "commit": "550d41416ee7751e1cdf3eb4da572cb5e60e1fd6",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Albania entry rules for 33 more passports: the MFA's visa-regime sheet makes nationals who enter Schengen without a visa visa-free in Albania (all EU passports; Annex II passports, biometric only where the EU exemption is), 90 days within 180 under Law 79/2021 Art. 29(2); Annex I passports held",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — China (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/china"
+    },
+    "destinations": [
+      "AL"
+    ]
+  },
+  {
+    "commit": "9560668164974c73f8f36044d7cd38e6ddece58a",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "North Macedonia entry rules for 38 more passports from the MFA's 'Do you need a visa?' tool: visa not needed for EU countries, the Western Balkans, Andorra, Georgia, Moldova, Monaco, San Marino, the Holy See and Türkiye (90 days in any 180, Law on Foreigners); visa needed for Armenia, Azerbaijan, Belarus and Russia",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — China (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/china"
+    },
+    "destinations": [
+      "MK"
+    ]
+  },
+  {
     "commit": "63b03cbab831dd987eb1f2758036611fd7676806",
     "date": "2026-11-02",
     "dataset": "entry-requirements",

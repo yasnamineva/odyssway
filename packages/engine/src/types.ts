@@ -28,6 +28,8 @@ export interface CountryRecord {
   schengenSince?: string;
   euMember: boolean;
   etiasRequired: boolean;
+  /** Customs territory this country belongs to when it isn't its own (Liechtenstein → CH). */
+  customsTerritory?: CountryCode;
   notes?: string;
 }
 
