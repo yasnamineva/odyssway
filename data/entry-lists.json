@@ -3716,6 +3716,201 @@
     ]
   },
   {
+    "destination": "MY",
+    "source": {
+      "name": "Ministry of Foreign Affairs Malaysia — embassy pages, Visa requirement for foreigners (one per mission)",
+      "url": "https://www.kln.gov.my/web/fra_paris/requirement_foreigner"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 90 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "AT",
+        "nationalities": [
+          "AR",
+          "AT",
+          "AU",
+          "BA",
+          "BE",
+          "BR",
+          "CA",
+          "CZ",
+          "DE",
+          "ES",
+          "FR",
+          "GB",
+          "HR",
+          "HU",
+          "IT",
+          "JP",
+          "KR",
+          "NL",
+          "RO",
+          "TR",
+          "US"
+        ]
+      },
+      {
+        "label": "visa free, 30 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "AM",
+        "nationalities": [
+          "AM",
+          "BY",
+          "CL",
+          "CN",
+          "GE",
+          "IN",
+          "MX",
+          "RU",
+          "SG"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "RS",
+        "nationalities": [
+          "RS"
+        ]
+      }
+    ],
+    "held": [
+      {
+        "nationality": "BG",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "DK",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "EE",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "FI",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "GR",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "LV",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "LT",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "LU",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "MT",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "PL",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "PT",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "SK",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "SI",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "SE",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "CY",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "IE",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "IS",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "NO",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "LI",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "CH",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "AL",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "AD",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "XK",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "MD",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "MC",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "ME",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "MK",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "SM",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "VA",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      },
+      {
+        "nationality": "AZ",
+        "reason": "No Malaysian mission page read states the rule for this passport (pages exist per embassy; several have no table, and there is no central list)."
+      }
+    ]
+  },
+  {
     "destination": "NG",
     "source": {
       "name": "Nigeria Immigration Service — Tourism Visa (F5A)",
