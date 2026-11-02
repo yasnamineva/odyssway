@@ -222,6 +222,12 @@ list per destination): Philippines (evisa.gov.ph policy page), Jamaica (country 
 Sri Lanka (ETA fees page), Uruguay, El Salvador and Belize (country tables), Chile, Peru, Costa Rica (directrices PDF),
 Dominican Republic, Argentina, Taiwan (BOCA), Indonesia (VoA list), Malaysia, Oman, Brunei, Macao, Israel, India, Korea.
 Blocked today: Morocco (firewall), Japan (.go.jp 403), Hong Kong and Saudi Arabia (JS).
+✔ 2026-11-02 third batch (all 43 newer passports unless held): Sri Lanka, Uruguay, Belize, El Salvador (CA-4 PDF via the
+Drive link on migracion.gob.sv), Peru (each row cites its own legal basis), Costa Rica (directive groups), Dominican
+Republic (one MIREX query per passport), Argentina, Brazil (QGRV codes), Bahamas, Chile; Colombia for 21 EU passports
+(EU–Colombia agreement). Holds in `data/entry-lists.json` (`held`) and TODO. Next by the same method: Ecuador, Taiwan,
+Indonesia, Malaysia, Oman, Brunei, Macao, Israel, India, Korea, Vietnam, Mongolia, Egypt, Jordan, Nigeria, Rwanda,
+Cambodia, Maldives, Uzbekistan, China; Colombia's own list (Res. 5488/2022) for non-EU passports.
 **External review follow-ups (2026-11-02)**: ✔ source registry with re-check intervals (`data/source-registry.json`,
 `pnpm sources:registry`; `pnpm coverage` lists rows due); ✔ entry lists stored by group (`data/entry-lists.json`, 26
 destinations, `pnpm entry:lists --apply` to add a passport); ✔ "Suggest an official source" mail form on /sources (no
