@@ -1323,6 +1323,158 @@
     ]
   },
   {
+    "destination": "CN",
+    "source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "US",
+        "nationalities": [
+          "IL",
+          "IN",
+          "MX",
+          "UA",
+          "US"
+        ]
+      },
+      {
+        "label": "visa free, 30 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CY",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LU",
+          "LV",
+          "MC",
+          "ME",
+          "MK",
+          "MT",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RU",
+          "SE",
+          "SG",
+          "SI",
+          "SK"
+        ]
+      },
+      {
+        "label": "visa free, 90 in 180 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 180,
+          "maxDays": 90,
+          "maxDaysPerEntry": 30
+        },
+        "template": "MY",
+        "nationalities": [
+          "MY"
+        ]
+      }
+    ],
+    "held": [
+      {
+        "nationality": "CZ",
+        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
+      },
+      {
+        "nationality": "LT",
+        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
+      },
+      {
+        "nationality": "AL",
+        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
+      },
+      {
+        "nationality": "BA",
+        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
+      },
+      {
+        "nationality": "GE",
+        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
+      },
+      {
+        "nationality": "XK",
+        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
+      },
+      {
+        "nationality": "MD",
+        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
+      },
+      {
+        "nationality": "SM",
+        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
+      },
+      {
+        "nationality": "RS",
+        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
+      },
+      {
+        "nationality": "VA",
+        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
+      },
+      {
+        "nationality": "TR",
+        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
+      },
+      {
+        "nationality": "AM",
+        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
+      },
+      {
+        "nationality": "AZ",
+        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
+      },
+      {
+        "nationality": "BY",
+        "reason": "Not on the unilateral list; mutual-exemption agreement status unknown (MFA page gone)"
+      }
+    ]
+  },
+  {
     "destination": "CR",
     "source": {
       "name": "Dirección General de Migración y Extranjería, 'Directrices Generales de Visas de Ingreso y Permanencia para No Residentes' AJ-484-11-2025, Alcance N° 148 a La Gaceta N° 216 (17 Nov 2025) — official Imprenta Nacional gazette edition (copy hosted on icoder.go.cr; the migracion.go.cr copy is Cloudflare-blocked)",

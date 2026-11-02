@@ -126894,5 +126894,1455 @@
         "url": "https://www.anzen.mofa.go.jp/info/pcsafetymeasure_115.html"
       }
     ]
+  },
+  {
+    "nationality": "CH",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Switzerland ('瑞士') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "IE",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Ireland ('爱尔兰') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "HU",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Hungary ('匈牙利') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "AT",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Austria ('奥地利') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "BE",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Belgium ('比利时') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "LU",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Luxembourg ('卢森堡') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "PL",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Poland ('波兰') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "SI",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Slovenia ('斯洛文尼亚') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "PT",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Portugal ('葡萄牙') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "GR",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Greece ('希腊') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "CY",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Cyprus ('塞浦路斯') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "SK",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Slovakia ('斯洛伐克') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "NO",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Norway ('挪威') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "FI",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Finland ('芬兰') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "DK",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Denmark ('丹麦') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "IS",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Iceland ('冰岛') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "AD",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Andorra ('安道尔') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "MC",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Monaco ('摩纳哥') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "LI",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Liechtenstein ('列支敦士登') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "BG",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Bulgaria ('保加利亚') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "RO",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Romania ('罗马尼亚') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "HR",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Croatia ('克罗地亚') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "ME",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Montenegro ('黑山') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "MK",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "North Macedonia ('北马其顿') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "MT",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Malta ('马耳他') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "EE",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Estonia ('爱沙尼亚') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "LV",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Latvia ('拉脱维亚') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "RU",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Russia ('俄罗斯') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
+  },
+  {
+    "nationality": "SE",
+    "destination": "CN",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Proof of onward/return travel (may be requested by airline or border control)",
+      "Proof of accommodation or travel itinerary (may be requested by border control)",
+      "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)"
+    ],
+    "notes": "Sweden ('瑞典') is on China's unilateral visa-free list (NIA list dated 2026-02-17). Ordinary-passport holders entering for business, tourism, family or friend visits, exchange visits or transit may stay up to 30 days without a visa; the stay is counted from 00:00 the day after entry. Work, study and journalism need the corresponding visa. Time-limited: China's Ministry of Foreign Affairs FAQ on the unilateral visa-free policy states the unilateral visa-free policy remains in effect until 31 December 2026 (the NIA list itself gives no end date).",
+    "legal_source": {
+      "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+      "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "timedSteps": [
+      {
+        "line": "Registration of your place of residence with the local Public Security Bureau within 24 hours of arrival (hotels do it at check-in)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "National Immigration Administration of China (NIA) — List of Countries with Unilateral Visa-Free Policy; MFA Consular Department — FAQs on Visa-free Entry into China (end date 2026-12-31)",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html"
+      },
+      {
+        "claim": "Passport validity for British passport holders: Passport validity requirements To enter China, your passport must have an ‘expiry date’ at least 6 months after the date you arrive and 2 blank pages for visas and stamping.",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, 'Passport validity requirements' (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      },
+      {
+        "claim": "Register your place of residence with the local Public Security Bureau within 24 hours of arrival; hotels do it at check-in",
+        "name": "GOV.UK (FCDO) — China travel advice: Entry requirements, registering with the authorities (updated 2026-08-27)",
+        "url": "https://www.gov.uk/foreign-travel-advice/china/entry-requirements"
+      }
+    ]
   }
 ]
