@@ -134035,5 +134035,134 @@
         "url": "https://www.kln.gov.my/web/bih_sarajevo/requirement_foreigner"
       }
     ]
+  },
+  {
+    "nationality": "AZ",
+    "destination": "MY",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Passport valid for more than 6 months on arrival",
+      "Malaysia Digital Arrival Card (MDAC), submitted online within 3 days before arrival"
+    ],
+    "timedSteps": [
+      {
+        "line": "Malaysia Digital Arrival Card (MDAC), submitted online within 3 days before arrival",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "The Embassy of Malaysia in Baku says citizens of Azerbaijan 'do not require a visa to visit Malaysia for business or social purposes' and that their stay 'must not exceed 30 days'. They must complete the Malaysia Digital Arrival Card (MDAC) before arrival, and are eligible for autogate entry at Malaysian airports.",
+    "legal_source": {
+      "name": "Embassy of Malaysia, Baku (Ministry of Foreign Affairs Malaysia) — Visa requirement for foreigners",
+      "url": "https://www.kln.gov.my/web/aze_baku/requirement_foreigner"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement and stay",
+        "name": "Embassy of Malaysia, Baku (Ministry of Foreign Affairs Malaysia) — Visa requirement for foreigners",
+        "url": "https://www.kln.gov.my/web/aze_baku/requirement_foreigner"
+      },
+      {
+        "claim": "Requirements for all foreign travellers: passport valid more than 6 months on arrival; MDAC 3 days before",
+        "name": "Embassy of Malaysia, Paris (Ministry of Foreign Affairs Malaysia) — Visa requirement for foreigners ('All foreign travellers must meet the following requirements')",
+        "url": "https://www.kln.gov.my/web/fra_paris/requirement_foreigner"
+      }
+    ]
+  },
+  {
+    "nationality": "CH",
+    "destination": "MY",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for more than 6 months on arrival",
+      "Malaysia Digital Arrival Card (MDAC), submitted online within 3 days before arrival"
+    ],
+    "timedSteps": [
+      {
+        "line": "Malaysia Digital Arrival Card (MDAC), submitted online within 3 days before arrival",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "The Embassy of Malaysia in Berne says Switzerland and Liechtenstein passport holders can enter Malaysia (including Sabah and Sarawak) without a visa 'for a period of ninety (90) days for leisure or business'. The MDAC is mandatory and must be submitted within 3 days before arrival.",
+    "legal_source": {
+      "name": "Embassy of Malaysia, Berne (Ministry of Foreign Affairs Malaysia) — Visa requirement for foreigners",
+      "url": "https://www.kln.gov.my/web/che_berne/requirement_foreigner"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement and stay",
+        "name": "Embassy of Malaysia, Berne (Ministry of Foreign Affairs Malaysia) — Visa requirement for foreigners",
+        "url": "https://www.kln.gov.my/web/che_berne/requirement_foreigner"
+      },
+      {
+        "claim": "Requirements for all foreign travellers: passport valid more than 6 months on arrival; MDAC 3 days before",
+        "name": "Embassy of Malaysia, Paris (Ministry of Foreign Affairs Malaysia) — Visa requirement for foreigners ('All foreign travellers must meet the following requirements')",
+        "url": "https://www.kln.gov.my/web/fra_paris/requirement_foreigner"
+      }
+    ]
+  },
+  {
+    "nationality": "LI",
+    "destination": "MY",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for more than 6 months on arrival",
+      "Malaysia Digital Arrival Card (MDAC), submitted online within 3 days before arrival"
+    ],
+    "timedSteps": [
+      {
+        "line": "Malaysia Digital Arrival Card (MDAC), submitted online within 3 days before arrival",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "The Embassy of Malaysia in Berne says Switzerland and Liechtenstein passport holders can enter Malaysia (including Sabah and Sarawak) without a visa 'for a period of ninety (90) days for leisure or business'. The MDAC is mandatory and must be submitted within 3 days before arrival.",
+    "legal_source": {
+      "name": "Embassy of Malaysia, Berne (Ministry of Foreign Affairs Malaysia) — Visa requirement for foreigners",
+      "url": "https://www.kln.gov.my/web/che_berne/requirement_foreigner"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement and stay",
+        "name": "Embassy of Malaysia, Berne (Ministry of Foreign Affairs Malaysia) — Visa requirement for foreigners",
+        "url": "https://www.kln.gov.my/web/che_berne/requirement_foreigner"
+      },
+      {
+        "claim": "Requirements for all foreign travellers: passport valid more than 6 months on arrival; MDAC 3 days before",
+        "name": "Embassy of Malaysia, Paris (Ministry of Foreign Affairs Malaysia) — Visa requirement for foreigners ('All foreign travellers must meet the following requirements')",
+        "url": "https://www.kln.gov.my/web/fra_paris/requirement_foreigner"
+      }
+    ]
   }
 ]
