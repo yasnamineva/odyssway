@@ -185,6 +185,33 @@ function checkPassportValidityMatchesText(): void {
 }
 
 /**
+ * A row generated from another passport's template can keep that passport's source
+ * claims ("Passport validity for French passport holders" on an Austrian row). Fail
+ * when a claim says it is for another roster passport's holders or travellers.
+ */
+function checkSourceClaimsMatchPassport(): void {
+  const file = join(DATA_DIR, "entry-requirements.json");
+  const rows = JSON.parse(readFileSync(file, "utf8")) as Array<{
+    nationality: string;
+    destination: string;
+    _sources?: Array<{ claim: string }>;
+  }>;
+  const nats = JSON.parse(readFileSync(join(DATA_DIR, "nationality-rules.json"), "utf8")) as Array<{
+    nationality: string;
+    citizenLabel: string;
+  }>;
+  const patterns = nats.map((n) => ({
+    code: n.nationality,
+    re: new RegExp(`\\bfor ${n.citizenLabel} passport holders\\b|\\b${n.citizenLabel} travellers\\b`),
+  }));
+  for (const r of rows)
+    for (const s of r._sources ?? [])
+      for (const p of patterns)
+        if (p.code !== r.nationality && p.re.test(s.claim))
+          errors.push(`${rel(file)}: ${r.nationality}→${r.destination} cites a claim for another passport: "${s.claim.slice(0, 80)}"`);
+}
+
+/**
  * `timedSteps` restate documentsNeeded lines tied to the arrival date. Fail if a
  * step's line isn't in the row, or doesn't state that amount and direction.
  */
@@ -502,6 +529,7 @@ for (const f of productionFiles) validateFile(f, true);
 for (const f of unverifiedFiles) validateFile(f, false);
 checkNoUnverifiedReferences();
 checkPassportValidityMatchesText();
+checkSourceClaimsMatchPassport();
 checkLeadTimeMatchesText();
 checkAllowanceMatchesText();
 checkCashThresholds();
