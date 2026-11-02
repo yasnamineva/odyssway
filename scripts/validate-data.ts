@@ -320,7 +320,7 @@ function checkCashThresholds(): void {
     USD: ["USD", "US$", "$", "dollar"], EUR: ["EUR", "€", "euro"], GBP: ["GBP", "£"], JPY: ["JPY", "¥"],
     CAD: ["CAD"], AUD: ["AUD"], NZD: ["NZD", "NZ$"], SGD: ["SGD", "S$"], HKD: ["HKD", "HK$"], AED: ["AED"],
     SAR: ["SAR"], QAR: ["QAR"], MAD: ["MAD", "dirham"], ILS: ["NIS", "ILS"], MOP: ["MOP"], SCR: ["SCR"],
-    FJD: ["FJD", "FJ$"], MUR: ["MUR", "Rs"], OMR: ["OMR"], BND: ["BND"], GEL: ["GEL"], IDR: ["IDR"], BSD: ["BSD"], BZD: ["BZD", "BZ$"],
+    FJD: ["FJD", "FJ$"], MUR: ["MUR", "Rs"], OMR: ["OMR"], BND: ["BND"], GEL: ["GEL"], IDR: ["IDR"], BSD: ["BSD"], BZD: ["BZD", "BZ$"], NOK: ["NOK"], CHF: ["CHF"], ISK: ["ISK"],
   };
   for (const r of rows) {
     const t = r.cashThreshold;

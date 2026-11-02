@@ -23136,5 +23136,45 @@
         "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
       }
     ]
+  },
+  {
+    "slug": "cash-no",
+    "names": [
+      "cash",
+      "money",
+      "currency",
+      "banknotes",
+      "coins",
+      "gift cards",
+      "traveller's cheques"
+    ],
+    "destination": "NO",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "You must declare cash and other means of payment (Norwegian or foreign notes and coins, gift cards and similar) worth more than NOK 25,000 when travelling to Norway: go through the red channel and hand in two copies of the declaration form. There's no tax on the amount.",
+      "quantity": "Declare over NOK 25,000"
+    },
+    "notes": "If you don't declare an amount over NOK 25,000, Norwegian Customs fines you 20% of the entire amount (e.g. NOK 5,200 for NOK 26,000), or reports you to the police. If the money is suspected to be linked to crime, the whole amount is confiscated pending investigation. The same rule applies when leaving Norway.",
+    "summary": "Declare cash over NOK 25,000 in the red channel. Not declaring costs 20% of the whole amount.",
+    "legal_source": {
+      "name": "Norwegian Customs (Tolletaten) — Currency (updated 27/11/2025)",
+      "url": "https://www.toll.no/en/goods/currency"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Declare over NOK 25,000; red channel and form on arrival; 20% penalty on the entire amount; confiscation on suspicion of crime",
+        "name": "Norwegian Customs (Tolletaten) — Currency (updated 27/11/2025)",
+        "url": "https://www.toll.no/en/goods/currency"
+      }
+    ],
+    "cashThreshold": {
+      "amount": 25000,
+      "currency": "NOK",
+      "comparison": "over"
+    }
   }
 ]
