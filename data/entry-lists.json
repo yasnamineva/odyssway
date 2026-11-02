@@ -2181,6 +2181,101 @@
     ]
   },
   {
+    "destination": "IL",
+    "source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "eta required, 90 days",
+        "requirement": "eta_required",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AL",
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BR",
+          "BY",
+          "CA",
+          "CH",
+          "CL",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GE",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MD",
+          "ME",
+          "MK",
+          "MT",
+          "MX",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RS",
+          "RU",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SM",
+          "UA",
+          "US",
+          "XK"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AM",
+        "nationalities": [
+          "AM",
+          "AZ",
+          "BA",
+          "CN",
+          "IN",
+          "MY",
+          "TR",
+          "VA"
+        ]
+      }
+    ]
+  },
+  {
     "destination": "JM",
     "source": {
       "name": "Jamaica Immigration Unit — Visa Requirements for Jamaicans Travelling Overseas & Foreigners and Commonwealth Nationals Entering Jamaica (PICA Visa Unit country listing, last updated 13 March 2025), published by the Embassy of Jamaica, Washington DC",

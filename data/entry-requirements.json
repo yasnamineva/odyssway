@@ -114963,5 +114963,1458 @@
     "verified_at": "2026-11-02",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "nationality": "AT",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Austria as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "BE",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Belgium as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "BG",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Bulgaria as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "HR",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Croatia as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "CZ",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Czech Republic as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "DK",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Denmark as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "EE",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Estonia as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "FI",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Finland as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "GR",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Greece as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "HU",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Hungary as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "LV",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Latvia as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "LT",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Lithuania as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "LU",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Luxembourg as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "MT",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Malta as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "PL",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Poland as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "PT",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Portugal as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "RO",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Romania as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "SK",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Slovakia as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "SI",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Slovenia as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "SE",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Sweden as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "CY",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Cyprus as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "IE",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Ireland as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "IS",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Iceland as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "NO",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Norway as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "LI",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Liechtenstein as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "CH",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Switzerland as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "AL",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Albania as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "AD",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Andorra as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "BA",
+    "destination": "IL",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "B/2 tourist visa issued before travel (eVisa-B2 online or via an Israeli consulate); handling fee 105 NIS for eVisa-B2, non-refundable",
+      "Passport/travel document valid for at least the period of the visa and no less than the departure date from Israel",
+      "Recent passport photo (white background)",
+      "Round-trip tickets",
+      "Health insurance valid in Israel for the whole visit",
+      "Proof of accommodation (hotel booking, or a signed host letter with full address, phone number and ID number)",
+      "Proof of funds (e.g. bank statements for the last three months)"
+    ],
+    "notes": "Bosnia and Herzegovina is not visa-exempt for Israel: PIBA's ETA-IL country data flags this nationality NEED_PERMIT=1 (a visa is needed for regular passports, biometric or not), so you can't apply for an ETA-IL. A B/2 visitor visa is for tourism, medical tourism, business meetings or short non-academic study; no work. PIBA: the B/2 'usually grants single entry and is valid for three months from the day it's granted'; on the eVisa-B2 page, validity is 'up to 90 days according the consul's decision' and duration 'up to 90 days, determined by Border Control, upon arrival'. Some applicants may be asked to attend the nearest Israeli consulate. A visa does not guarantee entry. The eVisa-B2 online system is open to visa-required nationalities; otherwise apply through an Israeli diplomatic mission. Malaysia and Israel have no diplomatic relations and Malaysia's own rules on travel to Israel were not verified here — check with Malaysian authorities before planning travel.",
+    "legal_source": {
+      "name": "Learn about eVisa-B2 and Visas and ETA-IL — Israel Population & Immigration Authority; per-nationality result from the official ETA-IL eligibility checker",
+      "url": "https://israel-entry.piba.gov.il/learn-about-evisa-b2"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "GE",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Georgia as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "XK",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Kosovo as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "MD",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Biometric passport (non-biometric Moldovan passports need a visa)",
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Moldova: PIBA's ETA-IL country data flags regular passports NEED_PERMIT=1 but biometric passports NEED_PERMIT_BIOMETRIC=0, so holders of a biometric Moldovan passport are visa-exempt and apply for an ETA-IL, while non-biometric passports need a visa. PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "MC",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Monaco as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "ME",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Montenegro as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "MK",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats North Macedonia as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "SM",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats San Marino as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "RS",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Serbia as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "VA",
+    "destination": "IL",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "B/2 tourist visa issued before travel (eVisa-B2 online or via an Israeli consulate); handling fee 105 NIS for eVisa-B2, non-refundable",
+      "Passport/travel document valid for at least the period of the visa and no less than the departure date from Israel",
+      "Recent passport photo (white background)",
+      "Round-trip tickets",
+      "Health insurance valid in Israel for the whole visit",
+      "Proof of accommodation (hotel booking, or a signed host letter with full address, phone number and ID number)",
+      "Proof of funds (e.g. bank statements for the last three months)"
+    ],
+    "notes": "Vatican (Holy See) is not visa-exempt for Israel: PIBA's ETA-IL country data flags this nationality NEED_PERMIT=1 (a visa is needed for regular passports, biometric or not), so you can't apply for an ETA-IL. A B/2 visitor visa is for tourism, medical tourism, business meetings or short non-academic study; no work. PIBA: the B/2 'usually grants single entry and is valid for three months from the day it's granted'; on the eVisa-B2 page, validity is 'up to 90 days according the consul's decision' and duration 'up to 90 days, determined by Border Control, upon arrival'. Some applicants may be asked to attend the nearest Israeli consulate. A visa does not guarantee entry. The eVisa-B2 online system is open to visa-required nationalities; otherwise apply through an Israeli diplomatic mission. Malaysia and Israel have no diplomatic relations and Malaysia's own rules on travel to Israel were not verified here — check with Malaysian authorities before planning travel.",
+    "legal_source": {
+      "name": "Learn about eVisa-B2 and Visas and ETA-IL — Israel Population & Immigration Authority; per-nationality result from the official ETA-IL eligibility checker",
+      "url": "https://israel-entry.piba.gov.il/learn-about-evisa-b2"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "TR",
+    "destination": "IL",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "B/2 tourist visa issued before travel (eVisa-B2 online or via an Israeli consulate); handling fee 105 NIS for eVisa-B2, non-refundable",
+      "Passport/travel document valid for at least the period of the visa and no less than the departure date from Israel",
+      "Recent passport photo (white background)",
+      "Round-trip tickets",
+      "Health insurance valid in Israel for the whole visit",
+      "Proof of accommodation (hotel booking, or a signed host letter with full address, phone number and ID number)",
+      "Proof of funds (e.g. bank statements for the last three months)"
+    ],
+    "notes": "Türkiye is not visa-exempt for Israel: PIBA's ETA-IL country data flags this nationality NEED_PERMIT=1 (a visa is needed for regular passports, biometric or not), so you can't apply for an ETA-IL. A B/2 visitor visa is for tourism, medical tourism, business meetings or short non-academic study; no work. PIBA: the B/2 'usually grants single entry and is valid for three months from the day it's granted'; on the eVisa-B2 page, validity is 'up to 90 days according the consul's decision' and duration 'up to 90 days, determined by Border Control, upon arrival'. Some applicants may be asked to attend the nearest Israeli consulate. A visa does not guarantee entry. The eVisa-B2 online system is open to visa-required nationalities; otherwise apply through an Israeli diplomatic mission. Malaysia and Israel have no diplomatic relations and Malaysia's own rules on travel to Israel were not verified here — check with Malaysian authorities before planning travel.",
+    "legal_source": {
+      "name": "Learn about eVisa-B2 and Visas and ETA-IL — Israel Population & Immigration Authority; per-nationality result from the official ETA-IL eligibility checker",
+      "url": "https://israel-entry.piba.gov.il/learn-about-evisa-b2"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "AM",
+    "destination": "IL",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "B/2 tourist visa issued before travel (eVisa-B2 online or via an Israeli consulate); handling fee 105 NIS for eVisa-B2, non-refundable",
+      "Passport/travel document valid for at least the period of the visa and no less than the departure date from Israel",
+      "Recent passport photo (white background)",
+      "Round-trip tickets",
+      "Health insurance valid in Israel for the whole visit",
+      "Proof of accommodation (hotel booking, or a signed host letter with full address, phone number and ID number)",
+      "Proof of funds (e.g. bank statements for the last three months)"
+    ],
+    "notes": "Armenia is not visa-exempt for Israel: PIBA's ETA-IL country data flags this nationality NEED_PERMIT=1 (a visa is needed for regular passports, biometric or not), so you can't apply for an ETA-IL. A B/2 visitor visa is for tourism, medical tourism, business meetings or short non-academic study; no work. PIBA: the B/2 'usually grants single entry and is valid for three months from the day it's granted'; on the eVisa-B2 page, validity is 'up to 90 days according the consul's decision' and duration 'up to 90 days, determined by Border Control, upon arrival'. Some applicants may be asked to attend the nearest Israeli consulate. A visa does not guarantee entry. The eVisa-B2 online system is open to visa-required nationalities; otherwise apply through an Israeli diplomatic mission. Malaysia and Israel have no diplomatic relations and Malaysia's own rules on travel to Israel were not verified here — check with Malaysian authorities before planning travel.",
+    "legal_source": {
+      "name": "Learn about eVisa-B2 and Visas and ETA-IL — Israel Population & Immigration Authority; per-nationality result from the official ETA-IL eligibility checker",
+      "url": "https://israel-entry.piba.gov.il/learn-about-evisa-b2"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "AZ",
+    "destination": "IL",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "B/2 tourist visa issued before travel (eVisa-B2 online or via an Israeli consulate); handling fee 105 NIS for eVisa-B2, non-refundable",
+      "Passport/travel document valid for at least the period of the visa and no less than the departure date from Israel",
+      "Recent passport photo (white background)",
+      "Round-trip tickets",
+      "Health insurance valid in Israel for the whole visit",
+      "Proof of accommodation (hotel booking, or a signed host letter with full address, phone number and ID number)",
+      "Proof of funds (e.g. bank statements for the last three months)"
+    ],
+    "notes": "Azerbaijan is not visa-exempt for Israel: PIBA's ETA-IL country data flags this nationality NEED_PERMIT=1 (a visa is needed for regular passports, biometric or not), so you can't apply for an ETA-IL. A B/2 visitor visa is for tourism, medical tourism, business meetings or short non-academic study; no work. PIBA: the B/2 'usually grants single entry and is valid for three months from the day it's granted'; on the eVisa-B2 page, validity is 'up to 90 days according the consul's decision' and duration 'up to 90 days, determined by Border Control, upon arrival'. Some applicants may be asked to attend the nearest Israeli consulate. A visa does not guarantee entry. The eVisa-B2 online system is open to visa-required nationalities; otherwise apply through an Israeli diplomatic mission. Malaysia and Israel have no diplomatic relations and Malaysia's own rules on travel to Israel were not verified here — check with Malaysian authorities before planning travel.",
+    "legal_source": {
+      "name": "Learn about eVisa-B2 and Visas and ETA-IL — Israel Population & Immigration Authority; per-nationality result from the official ETA-IL eligibility checker",
+      "url": "https://israel-entry.piba.gov.il/learn-about-evisa-b2"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "BY",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Belarus as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
+  },
+  {
+    "nationality": "RU",
+    "destination": "IL",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least three months from the date of arrival in Israel",
+      "Approved ETA-IL electronic travel authorisation obtained before departure (fee 25 NIS, non-refundable)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "notes": "Israel's Population and Immigration Authority (PIBA) treats Russia as visa-exempt: its ETA-IL country data flags this nationality NEED_PERMIT=0 (checked 2026-11-02). PIBA: 'As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey.' An approved ETA-IL lets you travel to Israel and 'stay for up to 90 days per visit'; it is valid for up to 2 years or until the passport expires, whichever comes first, and a new one (another 25 NIS) is needed with a new passport or a change of name, gender or citizenship. Every traveller including minors needs their own ETA-IL (an adult applies for a minor). Replies usually come within 24–72 hours; PIBA recommends applying at least 72 hours before booking flights or hotels. Apply only on the official site israel-entry.piba.gov.il. An ETA-IL 'does not constitute a guarantee of entry' — a border control officer decides at arrival, and it can be revoked for immigration or security reasons. Not exempt: people with Israeli citizenship (including dual nationals travelling on a foreign passport — they must show proof of Israeli citizenship to the airline) or holders of a valid Israeli visa. Stays beyond 90 days need an extension request under PIBA procedures (no fee or maximum stated on the pages read). Work is not allowed on an ETA-IL.",
+    "legal_source": {
+      "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",
+      "url": "https://israel-entry.piba.gov.il/learn-about"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Per-country flags in PIBA's public country data (NEED_PERMIT, NEED_PERMIT_BIOMETRIC), as used by the ETA-IL eligibility checker",
+        "name": "Israel Population and Immigration Authority — ETA-IL site country data (/api/getalldata)",
+        "url": "https://israel-entry.piba.gov.il/api/getalldata"
+      }
+    ]
   }
 ]
