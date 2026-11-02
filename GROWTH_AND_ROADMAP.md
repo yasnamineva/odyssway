@@ -8,7 +8,7 @@ without a primary official source.
 
 Where we are today (2026-11-02):
 
-- 68 destinations plus the Schengen Area; 1,866 verified entry rows; 682 customs rows
+- 68 destinations plus the Schengen Area; 1,904 verified entry rows; 682 customs rows
   (135 medication, 38 with a doctor's-letter checklist, 19 with a permit how-to, 19 with
   a transit rule); 725 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
@@ -201,8 +201,10 @@ returns 403). ✔ 2026-11-02 Serbia (37, MFA per-country pages; Kosovo held), Mo
 Bosnia and Herzegovina (37, mvp.gov.ba pages; Russia 30 days in 60 by bilateral agreement; Armenia, Belarus
 visa; Kosovo held). ✔ 2026-11-02 North Macedonia (38, MFA Livewire tool: visa for Armenia, Azerbaijan,
 Belarus, Russia). ✔ 2026-11-02 Albania (33: EU and Annex II passports via the MFA sheet's Schengen-exempt rule;
-Türkiye, Armenia, Azerbaijan, Belarus, Russia held, per-country table behind a bot check). Next: Armenia,
-Georgia, then Japan (blocked .go.jp). **Pushed 2026-11-02** (through the Bosnia rows); IndexNow 383 URLs.
+Türkiye, Armenia, Azerbaijan, Belarus, Russia held, per-country table behind a bot check). ✔ 2026-11-02 Armenia (38:
+180 days a year for EU, Andorra, Monaco, Montenegro, San Marino, Holy See; bilateral visa-free, no day count, for
+Albania, Belarus, Georgia, Moldova, Russia, Serbia; visa for Bosnia, North Macedonia, Kosovo, Türkiye, Azerbaijan).
+Next: Georgia, then Japan (blocked .go.jp). **Pushed 2026-11-02** (through the Bosnia rows); IndexNow 383 URLs.
 
 Each new passport adds a row in every destination, so this multiplies coverage. Choose
 from Search Console country data. Likely candidates: Philippines, Indonesia, Turkey,
