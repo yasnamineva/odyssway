@@ -22693,5 +22693,147 @@
     "verified_at": "2026-10-31",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "alcohol-no",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer",
+      "cider",
+      "alcopops"
+    ],
+    "destination": "NO",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free per person after a trip abroad: 1 litre of spirits (over 22% up to 60%), 1.5 litres of wine (over 2.5% up to 22%) and 2 litres of beer, or alcopops/cider up to 4.7%. You can swap the spirits quota for 1.5 litres of wine or beer, and the wine quota for the same amount of beer, but never the other way round. Age 18+ for beer and wine, 20+ for drinks over 22%. Drinks over 60% alcohol can't be imported at all.",
+      "quantity": "1 L spirits + 1.5 L wine + 2 L beer (with exchange rules)"
+    },
+    "notes": "The quota is the same for residents and tourists, and it sits outside Norway's general value limit. If your trip abroad was shorter than 24 hours, you can bring the quota only once in those 24 hours, only if you can show you paid local taxes in an EEA country, and you can't buy it tax-free. To bring more, declare the amount over the quota and pay duty. Norway is in Schengen but outside the EU customs union, so EU allowances don't apply here.",
+    "summary": "Duty-free per person: 1 litre of spirits, 1.5 litres of wine and 2 litres of beer (spirits or wine can be swapped for weaker drinks). Nothing over 60% alcohol.",
+    "legal_source": {
+      "name": "Norwegian Customs (Tolletaten) — Alcohol and tobacco quotas (updated 29/06/2026)",
+      "url": "https://www.toll.no/en/goods/alcohol-and-tobacco/quotas"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Quotas, exchange rules, age limits, 60% ban, under-24-hours rule, declaring amounts over the quota",
+        "name": "Norwegian Customs (Tolletaten) — Alcohol and tobacco quotas (updated 29/06/2026)",
+        "url": "https://www.toll.no/en/goods/alcohol-and-tobacco/quotas"
+      }
+    ]
+  },
+  {
+    "slug": "tobacco-no",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "cigarillos",
+      "snus",
+      "snuff",
+      "rolling tobacco",
+      "cigarette papers"
+    ],
+    "destination": "NO",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free per person: tourists who live outside Norway may bring 200 cigarettes or 250 grams of other tobacco products, plus 200 cigarette papers; residents of Norway may bring 100 cigarettes or 125 grams, plus 100 sheets of cigarette paper. Snuff, cigars and cigarillos are counted in grams. Age 18+. You can't swap the tobacco quota for alcohol.",
+      "quantity": "Tourists: 200 cigarettes or 250 g; residents: 100 cigarettes or 125 g"
+    },
+    "notes": "Even with the larger tourist quota, airport duty-free shops on arrival in Norway sell only the ordinary quota (100 cigarettes or 125 g and 100 papers). Bringing more is possible if you declare the excess and pay duty. Banned outright: nicotine pouches, heated tobacco (e.g. IQOS sticks), shisha tobacco and unapproved new nicotine products, and covers that hide health warnings.",
+    "summary": "Tourists: 200 cigarettes or 250 g of other tobacco, plus 200 papers, duty-free (residents: half that). Heated tobacco and shisha are banned.",
+    "legal_source": {
+      "name": "Norwegian Customs (Tolletaten) — Alcohol and tobacco quotas (updated 29/06/2026)",
+      "url": "https://www.toll.no/en/goods/alcohol-and-tobacco/quotas"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Tobacco quotas for tourists and residents, duty-free shop limit, banned products",
+        "name": "Norwegian Customs (Tolletaten) — Alcohol and tobacco quotas (updated 29/06/2026)",
+        "url": "https://www.toll.no/en/goods/alcohol-and-tobacco/quotas"
+      }
+    ]
+  },
+  {
+    "slug": "e-cigarettes-no",
+    "names": [
+      "e-cigarettes",
+      "e-cigarette",
+      "vape",
+      "vapes",
+      "vaping",
+      "e-liquid",
+      "heated tobacco",
+      "iqos",
+      "heets",
+      "shisha",
+      "waterpipe tobacco"
+    ],
+    "destination": "NO",
+    "category": "e_cigarettes",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Banned: e-cigarettes with nicotine, including e-liquid, unless you have a medical certificate documenting that you use them to stop smoking; e-cigarettes without nicotine that have added flavours; heated tobacco products such as IQOS with HEETS sticks; and waterpipe (shisha) tobacco."
+    },
+    "notes": "These count as new tobacco and nicotine products that aren't approved for import or sale in Norway. Norwegian Customs lists them as examples; other unapproved new products are banned too.",
+    "summary": "Banned: nicotine vapes and e-liquid (unless a medical certificate shows you use them to quit smoking), flavoured nicotine-free vapes, heated tobacco and shisha.",
+    "legal_source": {
+      "name": "Norwegian Customs (Tolletaten) — Alcohol and tobacco quotas (updated 29/06/2026)",
+      "url": "https://www.toll.no/en/goods/alcohol-and-tobacco/quotas"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Import restrictions: unapproved new tobacco and nicotine products, with the medical-certificate exception for nicotine e-cigarettes",
+        "name": "Norwegian Customs (Tolletaten) — Alcohol and tobacco quotas (updated 29/06/2026)",
+        "url": "https://www.toll.no/en/goods/alcohol-and-tobacco/quotas"
+      }
+    ]
+  },
+  {
+    "slug": "nicotine-pouches-no",
+    "names": [
+      "nicotine pouches",
+      "nicotine pouch",
+      "white snus",
+      "tobacco-free snus",
+      "zyn",
+      "velo"
+    ],
+    "destination": "NO",
+    "category": "tobacco",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Nicotine pouches (tobacco-free snus) can't be imported into Norway: they are a new nicotine product not approved for import or sale."
+    },
+    "notes": "Ordinary snus made with tobacco is different: it counts towards the tobacco quota (in grams).",
+    "summary": "Banned: nicotine pouches (tobacco-free snus) can't be brought into Norway. Tobacco snus counts towards the tobacco quota.",
+    "legal_source": {
+      "name": "Norwegian Customs (Tolletaten) — Alcohol and tobacco quotas (updated 29/06/2026)",
+      "url": "https://www.toll.no/en/goods/alcohol-and-tobacco/quotas"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Nicotine pouches (tobacco-free snus) listed as unapproved new products; snuff counted in grams in the tobacco quota",
+        "name": "Norwegian Customs (Tolletaten) — Alcohol and tobacco quotas (updated 29/06/2026)",
+        "url": "https://www.toll.no/en/goods/alcohol-and-tobacco/quotas"
+      }
+    ]
   }
 ]
