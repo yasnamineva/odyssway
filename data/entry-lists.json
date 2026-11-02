@@ -2689,6 +2689,70 @@
     ]
   },
   {
+    "destination": "IE",
+    "source": {
+      "name": "Immigration Service Delivery (Ireland) — Visa & Non-Visa Required Nationalities",
+      "url": "https://www.irishimmigration.ie/visa-non-visa-required-nationalities/"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "Non-visa-required list (ISD table)",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "AD",
+        "nationalities": [
+          "AD",
+          "AR",
+          "AU",
+          "BR",
+          "CA",
+          "CL",
+          "IL",
+          "JP",
+          "KR",
+          "MC",
+          "MX",
+          "MY",
+          "NZ",
+          "SG",
+          "SM",
+          "UA",
+          "US",
+          "VA"
+        ]
+      },
+      {
+        "label": "Visa-required list (ISD table)",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AL",
+        "nationalities": [
+          "AL",
+          "AM",
+          "AZ",
+          "BA",
+          "BY",
+          "CN",
+          "GE",
+          "IN",
+          "MD",
+          "ME",
+          "MK",
+          "RS",
+          "RU",
+          "TR",
+          "XK"
+        ]
+      }
+    ]
+  },
+  {
     "destination": "IL",
     "source": {
       "name": "Learn about ETA-IL — Israel Population & Immigration Authority (official ETA-IL site); per-nationality result from the official ETA-IL eligibility checker (israel-entry.piba.gov.il/form/#/EligibilityNational)",

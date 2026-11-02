@@ -233,7 +233,7 @@ Rwanda, Maldives, Nigeria, China (41; mutual-exemption list read; Kosovo, Holy S
 Liechtenstein, Türkiye unlisted; 13 rows re-quoted to the FAQ's current wording). **Blocked, retry later:** Jordan
 (Ministry of Interior restricted list, host refuses connections), Japan (mofa.go.jp 403 to every fetch), Cambodia
 (e-visa list behind a captcha), Korea (JS), Vietnam (✔ 16 added from the signed Resolutions 44 and 229; 27 held), Malaysia (16 added from embassy pages; 27 have no readable embassy statement), Hong Kong (✔ 42 added from ImmD's table, which is in the served HTML after all), Saudi Arabia, Qatar (✔ 39 added from the MOI's two on-arrival lists, reached through the portal's sub-pages),
-Kyrgyzstan, Ireland, Morocco. Uzbekistan's six "no time limit" passports added as visa-free with no day count (the
+Kyrgyzstan, Ireland (✔ 17 added from ISD's table), Morocco. Uzbekistan's six "no time limit" passports added as visa-free with no day count (the
 pattern Armenia's bilateral rows use); their registration rules are still open. ✔ Colombia completed from Res.
 12189 de 2026 (current exempt list; Israel exempt since 4 Sep 2026).
 ✔ Same day, later: Malaysia (16 from embassy pages), Jamaica (14 conditional rows: visa-free with vaccination proof for

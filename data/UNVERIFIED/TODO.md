@@ -4029,3 +4029,6 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
 
 ## Qatar (2026-11-02)
 - 39 newer passports added from the MOI's on-arrival lists (sub-pages of portal.moi.gov.qa ganationalborderexpatriateaffairs, '?1dmy&urile=wcm:path:...' links: c05d27ca… 90-day list, ec2e78be… 30-day list). Held: AL, XK, ME, BY (on neither list). All list-based rows re-cited to the sub-pages the same day (the landing page stays as a second source for the health-insurance rule).
+
+## Ireland (2026-11-02)
+- The ISD visa/non-visa table is loaded from the page's public Ninja Tables endpoint (wp-admin/admin-ajax.php?action=wp_ajax_ninja_tables_public_action&table_id=19077&target_action=get-all-data, with the nonce printed in the page): 206 rows. 17 newer non-EU passports added (EU/EEA/Swiss resolve through free movement). The older 'not in the served HTML' note was only half right.
