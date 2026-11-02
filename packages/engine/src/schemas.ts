@@ -80,6 +80,10 @@ export const nationalityRuleSchema = z
      * Schengen Area, so the third-country flags above are all false — the
      * row's legal_source is the free-movement rule, not Annex II. */
     euCitizen: z.boolean().optional(),
+    /** Iceland, Liechtenstein, Norway (EEA Agreement, Directive 2004/38/EC as incorporated by
+     * EEA Joint Committee Decision 158/2007) or Switzerland (EU–Swiss free movement agreement):
+     * the same free movement in the EU, EEA and Switzerland as an EU citizen. */
+    eeaSwissNational: z.boolean().optional(),
     /** Conditions/caveats from Annex II footnotes (e.g. biometric passports only). */
     notes: z.string().optional(),
     ...verificationFields,

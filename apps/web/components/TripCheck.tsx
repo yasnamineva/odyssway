@@ -6,11 +6,11 @@ import { useEffect, useMemo, useState } from "react";
 import PassportValidityCheck from "./PassportValidityCheck";
 import RoutePassportCheck from "./RoutePassportCheck";
 import SourceNote from "./SourceNote";
-import { schengenCountries } from "../lib/countries";
+import { customsCodeFor, schengenCountries } from "../lib/countries";
 import { destinationLabelFor } from "../lib/destination-label";
 import { BRING_CATEGORIES } from "../lib/bring-categories";
 import type { CustomsItemRecord } from "@odyssway/engine";
-import { EU_CUSTOMS_CODE, destinationSlug, destinations, queuedDestinations } from "../lib/destination-index";
+import { destinationSlug, destinations, queuedDestinations } from "../lib/destination-index";
 import { publishedNationalities } from "../lib/nationalities";
 import SearchableSelect from "./SearchableSelect";
 import { resolveMapDestinationCode, SCHENGEN_DESTINATION } from "../lib/schengen-sentinel";
@@ -141,9 +141,7 @@ export default function TripCheck({
 
   const itemSuggestionPool = useMemo(() => {
     if (!destination || !engine) return [];
-    const isSchengen =
-      destination === SCHENGEN_DESTINATION || schengenCountries.some((c) => c.code === destination);
-    const customsDestination = isSchengen ? EU_CUSTOMS_CODE : destination;
+    const customsDestination = customsCodeFor(destination);
     const pool = new Set<string>();
     engine.customsItems
       .filter(
@@ -181,7 +179,7 @@ export default function TripCheck({
     if (!result || !result.covered || result.intraEuCustoms) return;
     const misses = result.items.filter((i) => i.match === null);
     if (misses.length === 0) return;
-    const customsDestination = result.isSchengen ? EU_CUSTOMS_CODE : result.destination;
+    const customsDestination = result.isSchengen ? customsCodeFor(result.mapDestinationCode) : result.destination;
     for (const miss of misses) {
       fetch("/api/item-miss", {
         method: "POST",

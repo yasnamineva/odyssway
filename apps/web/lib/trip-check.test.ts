@@ -223,6 +223,32 @@ describe("resolveTripCheck", () => {
     }
   });
 
+  it("gives EEA and Swiss nationals free movement in the EU and in each other's countries", () => {
+    for (const [nationality, destination] of [["NO", "FR"], ["IS", "DE"], ["LI", "AT"], ["CH", "IE"], ["CH", "NO"], ["IS", "CH"]]) {
+      const result = resolveTripCheck(nationality!, destination!, []);
+      expect(result.basis).toBe("free_movement");
+      expect(result.stayPolicy).toBeNull();
+    }
+    expect(resolveTripCheck("NO", "JP", []).basis).not.toBe("free_movement");
+  });
+
+  it("never answers for Norway, Iceland, Switzerland or Liechtenstein with EU customs rows", () => {
+    for (const destination of ["NO", "IS", "CH", "LI"]) {
+      const visitor = resolveTripCheck("US", destination, ["wine", "cigarettes"]);
+      expect(visitor.items.every((i) => i.match === null || i.match.destination === destination)).toBe(true);
+      const euCitizen = resolveTripCheck("FR", destination, ["wine"]);
+      expect(euCitizen.intraEuCustoms).toBeUndefined();
+    }
+    // An EU member state in Schengen still uses the harmonised EU rows.
+    expect(resolveTripCheck("US", "DE", ["wine"]).items[0]!.match?.destination).toBe("EU");
+  });
+
+  it("shows EU customs verdicts to EEA and Swiss nationals arriving in the EU", () => {
+    const result = resolveTripCheck("NO", "DE", ["wine"]);
+    expect(result.intraEuCustoms).toBeUndefined();
+    expect(result.items[0]!.match?.destination).toBe("EU");
+  });
+
   it("does not apply free movement to an EU citizen leaving the EU", () => {
     expect(resolveTripCheck("FR", "JP", []).basis).not.toBe("free_movement");
   });

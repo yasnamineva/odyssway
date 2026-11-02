@@ -6,7 +6,7 @@ import {
   type PassportValidityRule,
   type TimedStep,
 } from "@odyssway/engine";
-import { countries, countryName, schengenCountries } from "./countries";
+import { countries, countryName, customsCodeFor, schengenCountries } from "./countries";
 import {
   EU_CUSTOMS_CODE,
   customsItems,
@@ -139,7 +139,7 @@ function resolveEntry(
   }
 
   const natRule = nationalityBySlug(nat);
-  if (natRule?.euCitizen && natRule.status === "verified" && isFreeMovementDestination(dest)) {
+  if ((natRule?.euCitizen || natRule?.eeaSwissNational) && natRule.status === "verified" && isFreeMovementDestination(dest)) {
     const schengen = dest === SCHENGEN_DESTINATION || isSchengenCode(dest);
     return {
       destination: schengen ? SCHENGEN_DESTINATION : dest,
@@ -295,8 +295,19 @@ export function resolveItem(destination: string, query: string): CustomsItemReco
   const q = query.trim();
   if (!q) return null;
   if (picked === SCHENGEN_DESTINATION) return matchItem(q, EU_CUSTOMS_CODE);
-  if (isSchengenCode(picked)) return matchItem(q, picked) ?? matchItem(q, EU_CUSTOMS_CODE);
+  if (isSchengenCode(picked)) {
+    const national = matchItem(q, picked);
+    return national ?? (customsCodeFor(picked) === EU_CUSTOMS_CODE ? matchItem(q, EU_CUSTOMS_CODE) : null);
+  }
   return matchItem(q, picked);
+}
+
+
+
+/** An EU member state (in Schengen or not, e.g. Ireland, Cyprus) or the Schengen sentinel. */
+function isEuCustomsDestination(code: string): boolean {
+  const upper = code.toUpperCase();
+  return upper === SCHENGEN_DESTINATION || countries.some((c) => c.code === upper && c.euMember);
 }
 
 export function resolveTripCheck(
@@ -306,8 +317,15 @@ export function resolveTripCheck(
   transitCode?: string,
 ): TripCheckResult {
   const entry = resolveEntry(nationality, destination);
-  const customsDestination = entry.isSchengen ? EU_CUSTOMS_CODE : entry.destination;
-  const intraEuCustoms = entry.basis === "free_movement";
+  const customsDestination = entry.isSchengen ? customsCodeFor(destination) : entry.destination;
+  // Our customs rows cover arrivals from outside the EU. An EU citizen moving within the
+  // EU is in a situation they don't describe, so verdicts are withheld. Not so for EEA or
+  // Swiss nationals (they usually arrive from outside the EU customs union), or for anyone
+  // arriving in a non-EU Schengen state.
+  const intraEuCustoms =
+    entry.basis === "free_movement" &&
+    nationalityBySlug(nationality)?.euCitizen === true &&
+    isEuCustomsDestination(destination);
   // A Schengen state's own national rule (a row keyed by its code, e.g.
   // France's nicotine pouch ban) applies to everyone arriving there, EU
   // citizens included, and takes precedence over the harmonised EU row.

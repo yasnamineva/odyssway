@@ -208,13 +208,13 @@ Albania, Belarus, Georgia, Moldova, Russia, Serbia; visa for Bosnia, North Maced
 the Ordinance 256 route). The consolidated Ordinance 255 is paid on matsne, but each amending ordinance's text is
 free (Georgian): read all eight. **China corrected**: visa-free 30 days, tourism only, since Ordinance 359 (11 Sep 2023);
 the row said visa required. Re-check other rows built from an initial matsne text the same way. Next: Japan
-(blocked .go.jp), then Iceland/Norway/Switzerland/Liechtenstein passports. EEA/Swiss research so far (2026-11-02):
-Schengen Borders Code (Reg. 2016/399, Publications Office CELEX 32016R0399) Art. 2(5)(b) defines free-movement persons
-as third-country nationals with equivalent rights under agreements, but names no countries; Your Europe's travel page
-covers EU nationals only. Still needed: a text naming them (EEA Agreement Art. 28 + Annex V/VIII incorporating
-Directive 2004/38; EU–Swiss Agreement on the Free Movement of Persons, OJ L 114, 30.4.2002). Code: `trip-check.ts`
-free-movement branch keys off `euCitizen`, and `basisFreeMovement` says "As an EU citizen"; add an EEA/Swiss flag
-and neutral wording. **Pushed 2026-11-02** (through the Bosnia rows); IndexNow 383 URLs.
+(blocked .go.jp). ✔ 2026-11-02 Iceland, Norway, Switzerland, Liechtenstein passports selectable (`eeaSwissNational`):
+free movement in the EU from EEA Joint Committee Decision 158/2007 (Directive 2004/38 for EFTA-State nationals) and the
+EU–Swiss agreement (Annex I Art. 1); among the four from the EFTA Convention Annex K App. 1 Art. 1. Destination rows
+outside Europe for them are still to do. **Customs fix, same day:** Trip Check answered for Norway, Iceland, Switzerland
+and Liechtenstein with the EU allowances (Schengen isn't customs membership); now `customsCodeFor()` sends them to
+their own rows, which don't exist yet, so they show 'not verified'. **Next research:** customs rows for NO and CH
+(toll.no, bazg.admin.ch), high traffic and very different alcohol limits. **Pushed 2026-11-02** (through the Bosnia rows); IndexNow 383 URLs.
 
 Each new passport adds a row in every destination, so this multiplies coverage. Choose
 from Search Console country data. Likely candidates: Philippines, Indonesia, Turkey,
