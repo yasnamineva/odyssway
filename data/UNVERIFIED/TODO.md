@@ -4020,3 +4020,6 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
 ## Uzbekistan — held passports (2026-11-02)
 - AZ, GE, AM, BY, MD, RU: Resolution No. 408 Annex 5 lists them "без ограничения срока" (no time limit, bilateral). The StayPolicy union has no unlimited kind; decide how to model it (and check registration rules for these passports) before adding rows.
 - XK: not on Annex 5, nor on the MFA e-visa (Appendix 1) or 5-day transit (Appendix 2) lists; no visa route for Kosovo passports stated on a primary source.
+
+## Egypt — held passports (2026-11-02)
+- AD, LI, TR: not on the e-Visa Portal FAQ's eligible-nationality list; no primary Egyptian page states the consular route for them. (The FAQ's older sentence "a visa is required prior to entry" is gone; the 13 rows that quoted it now quote the current wording.)

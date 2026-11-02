@@ -1808,6 +1808,122 @@
     ]
   },
   {
+    "destination": "EG",
+    "source": {
+      "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "Visa required (rows researched before the lists)",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "US",
+        "nationalities": [
+          "AR",
+          "AU",
+          "BR",
+          "CL",
+          "CN",
+          "IL",
+          "IN",
+          "JP",
+          "KR",
+          "MX",
+          "MY",
+          "NZ",
+          "SG",
+          "UA",
+          "US"
+        ]
+      },
+      {
+        "label": "visa on arrival",
+        "requirement": "visa_on_arrival",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "GB",
+        "nationalities": [
+          "CA",
+          "DE",
+          "ES",
+          "FR",
+          "GB",
+          "IT",
+          "NL"
+        ]
+      },
+      {
+        "label": "e-Visa list (Egypt e-Visa Portal FAQ)",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AT",
+        "nationalities": [
+          "AL",
+          "AM",
+          "AT",
+          "AZ",
+          "BA",
+          "BE",
+          "BG",
+          "BY",
+          "CH",
+          "CY",
+          "CZ",
+          "DK",
+          "EE",
+          "FI",
+          "GE",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IS",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MD",
+          "ME",
+          "MK",
+          "MT",
+          "NO",
+          "PL",
+          "PT",
+          "RO",
+          "RS",
+          "RU",
+          "SE",
+          "SI",
+          "SK",
+          "SM",
+          "VA",
+          "XK"
+        ]
+      }
+    ],
+    "held": [
+      {
+        "nationality": "AD",
+        "reason": "Not on the Egypt e-Visa Portal's eligible-nationality list; no primary Egyptian source says how these passports get a visa."
+      },
+      {
+        "nationality": "LI",
+        "reason": "Not on the Egypt e-Visa Portal's eligible-nationality list; no primary Egyptian source says how these passports get a visa."
+      },
+      {
+        "nationality": "TR",
+        "reason": "Not on the Egypt e-Visa Portal's eligible-nationality list; no primary Egyptian source says how these passports get a visa."
+      }
+    ]
+  },
+  {
     "destination": "FJ",
     "source": {
       "name": "Fiji Ministry of Immigration — Visa exempted countries (with Visit Fiji)",
