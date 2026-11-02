@@ -3507,6 +3507,129 @@
     ]
   },
   {
+    "destination": "TW",
+    "source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 90 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AL",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "CA",
+          "CH",
+          "CL",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MK",
+          "MT",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
+          "SI",
+          "SK",
+          "SM",
+          "US",
+          "VA",
+          "XK"
+        ]
+      },
+      {
+        "label": "visa free, 30 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "SG",
+        "nationalities": [
+          "MY",
+          "SG"
+        ]
+      },
+      {
+        "label": "eta required, 30 days",
+        "requirement": "eta_required",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "IN",
+        "nationalities": [
+          "IN"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "TR",
+        "nationalities": [
+          "AM",
+          "AR",
+          "AZ",
+          "BA",
+          "BR",
+          "BY",
+          "GE",
+          "MD",
+          "ME",
+          "MX",
+          "RS",
+          "RU",
+          "TR",
+          "UA"
+        ]
+      }
+    ],
+    "held": [
+      {
+        "nationality": "CN",
+        "reason": "Mainland Chinese travellers enter Taiwan on entry permits under cross-strait rules, not visas; the row model doesn't express it"
+      }
+    ]
+  },
+  {
     "destination": "TZ",
     "source": {
       "name": "Tanzania Visa Guidelines — Immigration Services Department, Ministry of Home Affairs (official e-Visa portal)",

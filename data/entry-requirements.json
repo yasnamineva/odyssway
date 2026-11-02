@@ -105808,5 +105808,2010 @@
     "verified_at": "2026-11-02",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "nationality": "AT",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Austria is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "BE",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Belgium is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "BG",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Bulgaria is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "HR",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Croatia is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "CZ",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Czech Republic is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "DK",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Denmark is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "EE",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Estonia is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "FI",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Finland is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "GR",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Greece is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "HU",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Hungary is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "LV",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Latvia is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "LT",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Lithuania is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "LU",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Luxembourg is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "MT",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Malta is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "PL",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Poland is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "PT",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Portugal is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "RO",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Romania is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "SK",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Slovakia is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "SI",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Slovenia is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "SE",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Sweden is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "CY",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Cyprus is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "IE",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Ireland is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "IS",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Iceland is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "NO",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Norway is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "LI",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Liechtenstein is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "CH",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Switzerland is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "AL",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Albania is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "AD",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Andorra is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "BA",
+    "destination": "TW",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Apply for a visitor visa at a Taiwan Representative Office before travelling"
+    ],
+    "notes": "Bosnia and Herzegovina does not appear on the Bureau of Consular Affairs' visa-exempt entry list, nor on the Travel Authorization Certificate list (Cambodia, India, Indonesia, Laos, Myanmar, Philippines, Vietnam) or the landing-visa reciprocal scheme. This is a negative-confirmation finding — absence from every exemption list Taiwan publishes — not a citation to an explicit \"Bosnia and Herzegovina needs a visa\" statement, since no such single-sentence statement was found.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "GE",
+    "destination": "TW",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Apply for a visitor visa at a Taiwan Representative Office before travelling"
+    ],
+    "notes": "Georgia does not appear on the Bureau of Consular Affairs' visa-exempt entry list, nor on the Travel Authorization Certificate list (Cambodia, India, Indonesia, Laos, Myanmar, Philippines, Vietnam) or the landing-visa reciprocal scheme. This is a negative-confirmation finding — absence from every exemption list Taiwan publishes — not a citation to an explicit \"Georgia needs a visa\" statement, since no such single-sentence statement was found.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "XK",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Kosovo is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "MD",
+    "destination": "TW",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Apply for a visitor visa at a Taiwan Representative Office before travelling"
+    ],
+    "notes": "Moldova does not appear on the Bureau of Consular Affairs' visa-exempt entry list, nor on the Travel Authorization Certificate list (Cambodia, India, Indonesia, Laos, Myanmar, Philippines, Vietnam) or the landing-visa reciprocal scheme. This is a negative-confirmation finding — absence from every exemption list Taiwan publishes — not a citation to an explicit \"Moldova needs a visa\" statement, since no such single-sentence statement was found.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "MC",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Monaco is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "ME",
+    "destination": "TW",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Apply for a visitor visa at a Taiwan Representative Office before travelling"
+    ],
+    "notes": "Montenegro does not appear on the Bureau of Consular Affairs' visa-exempt entry list, nor on the Travel Authorization Certificate list (Cambodia, India, Indonesia, Laos, Myanmar, Philippines, Vietnam) or the landing-visa reciprocal scheme. This is a negative-confirmation finding — absence from every exemption list Taiwan publishes — not a citation to an explicit \"Montenegro needs a visa\" statement, since no such single-sentence statement was found.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "MK",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "North Macedonia is listed at 90 days (effective until March 31, 2030) visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "SM",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "San Marino is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "RS",
+    "destination": "TW",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Apply for a visitor visa at a Taiwan Representative Office before travelling"
+    ],
+    "notes": "Serbia does not appear on the Bureau of Consular Affairs' visa-exempt entry list, nor on the Travel Authorization Certificate list (Cambodia, India, Indonesia, Laos, Myanmar, Philippines, Vietnam) or the landing-visa reciprocal scheme. This is a negative-confirmation finding — absence from every exemption list Taiwan publishes — not a citation to an explicit \"Serbia needs a visa\" statement, since no such single-sentence statement was found.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "VA",
+    "destination": "TW",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months from date of entry",
+      "Confirmed return/onward air or sea ticket, or onward visa for next destination",
+      "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "Online arrival card (TWAC) completed within 3 days before arrival at twac.immigration.gov.tw",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Holy See is listed at 90 days visa-exempt entry. Duration of stay starts the day after arrival and is not extendable.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+        "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "GOV.UK (FCDO) — Taiwan travel advice: Entry requirements, arrival cards (updated 2026-08-28)",
+        "url": "https://www.gov.uk/foreign-travel-advice/taiwan/entry-requirements"
+      },
+      {
+        "claim": "Taiwan Arrival Card (TWAC) within three days before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: taiwan, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/taiwan/conseils-aux-voyageurs-entree-sejour"
+      }
+    ]
+  },
+  {
+    "nationality": "TR",
+    "destination": "TW",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Apply for a visitor visa at a Taiwan Representative Office before travelling"
+    ],
+    "notes": "Türkiye does not appear on the Bureau of Consular Affairs' visa-exempt entry list, nor on the Travel Authorization Certificate list (Cambodia, India, Indonesia, Laos, Myanmar, Philippines, Vietnam) or the landing-visa reciprocal scheme. This is a negative-confirmation finding — absence from every exemption list Taiwan publishes — not a citation to an explicit \"Türkiye needs a visa\" statement, since no such single-sentence statement was found.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "AM",
+    "destination": "TW",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Apply for a visitor visa at a Taiwan Representative Office before travelling"
+    ],
+    "notes": "Armenia does not appear on the Bureau of Consular Affairs' visa-exempt entry list, nor on the Travel Authorization Certificate list (Cambodia, India, Indonesia, Laos, Myanmar, Philippines, Vietnam) or the landing-visa reciprocal scheme. This is a negative-confirmation finding — absence from every exemption list Taiwan publishes — not a citation to an explicit \"Armenia needs a visa\" statement, since no such single-sentence statement was found.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "AZ",
+    "destination": "TW",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Apply for a visitor visa at a Taiwan Representative Office before travelling"
+    ],
+    "notes": "Azerbaijan does not appear on the Bureau of Consular Affairs' visa-exempt entry list, nor on the Travel Authorization Certificate list (Cambodia, India, Indonesia, Laos, Myanmar, Philippines, Vietnam) or the landing-visa reciprocal scheme. This is a negative-confirmation finding — absence from every exemption list Taiwan publishes — not a citation to an explicit \"Azerbaijan needs a visa\" statement, since no such single-sentence statement was found.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "BY",
+    "destination": "TW",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Apply for a visitor visa at a Taiwan Representative Office before travelling"
+    ],
+    "notes": "Belarus does not appear on the Bureau of Consular Affairs' visa-exempt entry list, nor on the Travel Authorization Certificate list (Cambodia, India, Indonesia, Laos, Myanmar, Philippines, Vietnam) or the landing-visa reciprocal scheme. This is a negative-confirmation finding — absence from every exemption list Taiwan publishes — not a citation to an explicit \"Belarus needs a visa\" statement, since no such single-sentence statement was found.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "RU",
+    "destination": "TW",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Apply for a visitor visa at a Taiwan Representative Office before travelling"
+    ],
+    "notes": "Russia does not appear on the Bureau of Consular Affairs' visa-exempt entry list, nor on the Travel Authorization Certificate list (Cambodia, India, Indonesia, Laos, Myanmar, Philippines, Vietnam) or the landing-visa reciprocal scheme. This is a negative-confirmation finding — absence from every exemption list Taiwan publishes — not a citation to an explicit \"Russia needs a visa\" statement, since no such single-sentence statement was found.",
+    "legal_source": {
+      "name": "Bureau of Consular Affairs, Ministry of Foreign Affairs (Taiwan) — Visa-Exempt Entry",
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]
