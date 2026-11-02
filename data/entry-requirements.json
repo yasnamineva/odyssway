@@ -104860,5 +104860,953 @@
     "verified_at": "2026-11-02",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "nationality": "AT",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Austria is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "BE",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Belgium is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "BG",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Bulgaria is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "HR",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Croatia is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CZ",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Czech Republic is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "DK",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Denmark is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "EE",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Estonia is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "FI",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Finland is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "GR",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Greece is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "HU",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Hungary is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "LV",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Latvia is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "LT",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Lithuania is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "LU",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Luxembourg is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "MT",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Malta is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "PL",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Poland is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "PT",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Portugal is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "RO",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Romania is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "SK",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Slovakia is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "SI",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Slovenia is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "SE",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Sweden is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CY",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Cyprus is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IE",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Ireland is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IS",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Iceland is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "NO",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Norway is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "LI",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Liechtenstein is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CH",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Switzerland is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "AL",
+    "destination": "EC",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Tourist visa (Visa de visitante temporal turista, 90 días) obtained before travel through the Cancillería e-VISAS platform",
+      "Passport valid for at least 6 months",
+      "Criminal-record certificate from country of origin or residence for the last 5 years, translated and apostilled/legalised (applicants over 18)",
+      "Proof of lawful means of subsistence (Acuerdo Ministerial No. 70 of 28 June 2024)",
+      "Travel itinerary and return ticket",
+      "Colour photo 5x5 cm, white background"
+    ],
+    "notes": "Albania is on Ecuador's list of 'Países de Régimen Especial' whose nationals need a tourist visa before arrival (MREMH gob.ec trámite 'Concesión de visa de visitante temporal turista 90 días'). The visa is issued by Ecuador's diplomatic missions and consulates; requirements include a passport valid at least six months, a criminal-record certificate (over-18s) and proof of lawful means of support.",
+    "legal_source": {
+      "name": "Concesión de visa de visitante temporal turista 90 días — Ministerio de Relaciones Exteriores y Movilidad Humana (MREMH), gob.ec trámite page (last updated 2024-12-31)",
+      "url": "https://www.gob.ec/mremh/tramites/concesion-visa-visitante-temporal-turista-90-dias"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "AD",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Andorra is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "BA",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Bosnia and Herzegovina is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "GE",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Georgia is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "XK",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Kosovo is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "MD",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Moldova is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "MC",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Monaco is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "ME",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Montenegro is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "MK",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: North Macedonia is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "SM",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: San Marino is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "RS",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Serbia is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "VA",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: The Holy See is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "TR",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Türkiye is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "AM",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Armenia is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "AZ",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Azerbaijan is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "BY",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Belarus is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "RU",
+    "destination": "EC",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid for at least 6 months (UK FCDO: from arrival; Canada: beyond your planned departure)",
+      "Entry stamp / authorised-stay record from migration control on arrival (keep it — needed when leaving)"
+    ],
+    "notes": "Visa-free: Russia is not on Ecuador's official list of nationalities that must have a visa to enter (MREMH 'Países de Régimen Especial' list on gob.ec and Cancillería 'Lista de países que deben presentar visa al ingresar al Ecuador'). Under LOMH Art. 66(6), tourists who do not need a visa receive an 'autorización de permanencia' at the official migration control point. LOMH Art. 56 (as reformed 24-X-2025): 'El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su año cronológico, prorrogable en territorio ecuatoriano, por una sola vez hasta por 90 dias continuos adicionales, previa solicitud y pago de la tarifa respectiva'. Counting: the year starts on your first entry (not 1 January); the 90 days are a total for that year, not per entry. We model it as 90 days in any 365-day window (stricter than the law, and without the optional extension). Extension (Ministerio del Interior, gob.ec 'Emisión de prórroga de autorización de permanencia en territorio para extranjeros', updated 2025-10-31): up to 90 extra days, apply online or at a Servicio de Apoyo Migratorio with a valid passport and the extension form; cost 'el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador'. With the extension the yearly maximum is 180 days. Overstay (LOMH Art. 169, falta migratoria leve 2.b): a tourist who stays past the authorised 90 days without an extension, past 180 days with one, or past 180 days when admitted for 180, is fined one 'remuneración básica unificada' (one Ecuadorian basic monthly wage). Health insurance: since the 2021 reform the LOMH (Art. 52) only says residents must hold public or private health insurance; no general insurance requirement for mainland tourists appears in the consolidated law. Galápagos (per UK FCDO and Global Affairs Canada travel advice, not an Ecuadorian page we could load): tourists may stay up to 60 days (Canada: '60 days in a 1-year period'); you need a Transit Control Card bought at Quito or Guayaquil airport before check-in, a return ticket to the mainland, proof of a hotel booking or host invitation, and (UK) travel health insurance. The Galápagos national-park entry fee is not stated here because no official Ecuadorian source for it could be loaded. Land arrivals: Global Affairs Canada (updated 2026-10-09) says travellers entering by land or river must present an apostilled criminal-record check covering the past five years (with a Spanish translation); minors travelling with family are generally exempt. Customs: you must file the online Formulario de Registro Aduanero (FRA) only if you bring taxable goods or USD 10,000+ in cash/bearer instruments (SENAE).",
+    "legal_source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]

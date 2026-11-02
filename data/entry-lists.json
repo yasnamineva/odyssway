@@ -1414,6 +1414,115 @@
     ]
   },
   {
+    "destination": "EC",
+    "source": {
+      "name": "Ley Orgánica de Movilidad Humana, consolidated text with last reform R.O. 151-7S of 24-X-2025 (Art. 56 Turista; Art. 66 Tipos de visa; Art. 169 faltas migratorias) — published on gob.ec (Plataforma Gubernamental, Gobierno del Ecuador)",
+      "url": "https://www.gob.ec/sites/default/files/regulations/2026-03/LEY_ORG%C3%81NICA_DE_MOVILIDAD_HUMANA_-_LOMH%20ultima%20reforma%202025%20RO%20151.pdf"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 90 in 365 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 365,
+          "maxDays": 90
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AM",
+          "AT",
+          "AU",
+          "AZ",
+          "BA",
+          "BE",
+          "BG",
+          "BY",
+          "CA",
+          "CH",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GE",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MD",
+          "ME",
+          "MK",
+          "MT",
+          "MX",
+          "MY",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RS",
+          "RU",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SM",
+          "TR",
+          "UA",
+          "US",
+          "VA",
+          "XK"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AL",
+        "nationalities": [
+          "AL",
+          "CN",
+          "IN"
+        ]
+      },
+      {
+        "label": "visa free, 180 in 365 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 365,
+          "maxDays": 180
+        },
+        "template": "BR",
+        "nationalities": [
+          "AR",
+          "BR",
+          "CL"
+        ]
+      }
+    ]
+  },
+  {
     "destination": "FJ",
     "source": {
       "name": "Fiji Ministry of Immigration — Visa exempted countries (with Visit Fiji)",
