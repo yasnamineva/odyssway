@@ -13,6 +13,8 @@
  *  3. "depends" share per destination — a high share often means one row is
  *     covering items with different outcomes and should be split.
  *  4. Stale rows: verified_at older than --stale-days (default 90).
+ *  5. Due for re-check: rows older than their destination's `recheckDays` in
+ *     data/source-registry.json (shorter for volatile rules).
  *
  * Read-only; never writes to /data.
  */
@@ -25,7 +27,7 @@ const read = <T>(file: string): T => JSON.parse(readFileSync(join(ROOT, "data", 
 type Verified = { status: string; verified_at?: string | null };
 type EntryRow = Verified & { nationality: string; destination: string };
 type CustomsRow = Verified & { destination: string; category: string; verdict: string };
-type NationalityRow = Verified & { nationality: string; euCitizen?: boolean };
+type NationalityRow = Verified & { nationality: string; euCitizen?: boolean; eeaSwissNational?: boolean };
 type DestinationRow = Verified & { code: string; name: string };
 type CountryRow = { code: string; schengenMember: boolean; euMember: boolean };
 
@@ -53,7 +55,8 @@ const destinations = verified(read<DestinationRow[]>("destinations.json"));
 const countries = read<{ countries: CountryRow[] }>("countries.json").countries;
 
 const freeMovement = new Set(countries.filter((c) => c.euMember || c.schengenMember).map((c) => c.code));
-const euNationals = new Set(nationalities.filter((n) => n.euCitizen).map((n) => n.nationality));
+// EU, EEA and Swiss nationals: free movement in the EU/Schengen, resolved in code.
+const euNationals = new Set(nationalities.filter((n) => n.euCitizen || n.eeaSwissNational).map((n) => n.nationality));
 const has = new Set(entries.map((r) => `${r.nationality}>${r.destination}`));
 
 const pct = (n: number, d: number) => (d === 0 ? "—" : `${Math.round((n / d) * 100)}%`);
@@ -116,5 +119,19 @@ const staleBy = (rows: Verified[]) =>
 line(`- entry-requirements: ${staleBy(entries)} of ${entries.length}`);
 line(`- customs-items: ${staleBy(customs)} of ${customs.length}`);
 line(`- nationality-rules: ${staleBy(nationalities)} of ${nationalities.length}`);
+
+// --- 5. Due for re-check (data/source-registry.json recheckDays) ---
+line();
+line("## Due for re-check (per-destination interval from data/source-registry.json)");
+const registry = read<Array<{ code: string; recheckDays: number; recheckReason?: string }>>("source-registry.json");
+for (const r of registry) {
+  const due = [...entries, ...customs].filter(
+    (row) =>
+      (row as { destination?: string }).destination === r.code &&
+      row.verified_at &&
+      (today - Date.parse(row.verified_at)) / 86_400_000 > r.recheckDays,
+  ).length;
+  if (due > 0) line(`- ${r.code}: ${due} rows older than ${r.recheckDays} days${r.recheckReason ? ` (${r.recheckReason})` : ""}`);
+}
 
 console.log(out.join("\n"));

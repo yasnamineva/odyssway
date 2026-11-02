@@ -232,7 +232,7 @@ const DATA_DIR = join(ROOT, "data");
 const HASHES_FILE = join(DATA_DIR, "source-hashes.json");
 const REPORT_DIR = join(DATA_DIR, "UNVERIFIED");
 const SNAPSHOT_DIR = process.env.SOURCE_SNAPSHOT_DIR ?? join(ROOT, ".cache", "source-snapshots");
-const NON_RULE_FILES = new Set(["source-hashes.json", "changelog.json"]);
+const NON_RULE_FILES = new Set(["source-hashes.json", "changelog.json", "source-registry.json"]);
 
 /**
  * Recursively collect every cited source: any `{ name, url }` object (legal_source,

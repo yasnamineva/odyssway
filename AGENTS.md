@@ -669,6 +669,14 @@ subscription before real checkout/price experiments say otherwise.
   launched 2026-08-12; eligibility and fee still unconfirmed on any primary source, so
   rows don't list it as a requirement). Thailand's cut to a 30-day exemption took effect
   15 Sep 2026 and is in the rows (re-checked against GOV.UK 2026-10-30).
+- **Source registry (2026-11-02)**: `data/source-registry.json` lists, per destination, the official pages
+  for entry, customs and medicines, how each is read (`method`), whether it's blocked (`status`, `note`), pages
+  known but not yet usable (`known`), and `recheckDays` (30–60 for volatile rules, 180 otherwise, with
+  `recheckReason`). Start research for a destination there. `pnpm sources:registry` regenerates the derived
+  part (URLs, row counts, last check) and keeps the hand-kept fields; CI fails if it's out of date. `pnpm
+  coverage` lists rows past their destination's `recheckDays`.
+- **Quote check (2026-11-02)**: `pnpm check:quotes` (weekly, after the watcher) looks up every quoted passage
+  in a row in the saved text of its cited pages and reports the ones not found.
 - The `/changelog` (§7) is part of this moat: cloned competitors can fake a
   "verified" badge but cannot fake a consistent public update history. The
   changelog makes our verification legible to users, journalists, search engines,

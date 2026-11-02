@@ -12,10 +12,11 @@
     "validate:data": "tsx scripts/validate-data.ts",
     "watch:sources": "tsx scripts/watch-sources.ts",
     "check:quotes": "tsx scripts/check-quotes.ts",
+    "sources:registry": "tsx scripts/source-registry.ts",
     "coverage": "tsx scripts/coverage-report.ts",
     "indexnow": "tsx scripts/indexnow.ts",
     "gsc:compare": "tsx scripts/gsc-compare.ts",
-    "ci": "pnpm typecheck && pnpm test && pnpm validate:data && pnpm build"
+    "ci": "pnpm typecheck && pnpm test && pnpm validate:data && pnpm sources:registry --check && pnpm build"
   },
   "devDependencies": {
     "tsx": "^4.20.0",
