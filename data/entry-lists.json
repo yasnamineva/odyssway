@@ -2855,6 +2855,46 @@
           "GE",
           "XK"
         ]
+      },
+      {
+        "label": "30 days as tourists, with conditions (vaccination proof; for some also a US, Canada, UK or Schengen visa)",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "EE",
+        "nationalities": [
+          "AL",
+          "BA",
+          "BY",
+          "EE",
+          "LT",
+          "LV",
+          "MD",
+          "ME",
+          "MK",
+          "RS",
+          "SI"
+        ]
+      }
+    ],
+    "held": [
+      {
+        "nationality": "BG",
+        "reason": "The March 2025 listing makes visa-free entry conditional on holding a US, Canada, UK or Schengen visa, which can't apply to EU citizens of Schengen states; needs a second official source before publishing."
+      },
+      {
+        "nationality": "HR",
+        "reason": "The March 2025 listing makes visa-free entry conditional on holding a US, Canada, UK or Schengen visa, which can't apply to EU citizens of Schengen states; needs a second official source before publishing."
+      },
+      {
+        "nationality": "RO",
+        "reason": "The March 2025 listing makes visa-free entry conditional on holding a US, Canada, UK or Schengen visa, which can't apply to EU citizens of Schengen states; needs a second official source before publishing."
+      },
+      {
+        "nationality": "VA",
+        "reason": "The listing has only \"HOLY SEE(VATICAN) NO- Dip & Off PP\" (diplomatic and official passports); nothing for other passports."
       }
     ]
   },
