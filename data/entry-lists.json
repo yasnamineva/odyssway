@@ -2276,6 +2276,101 @@
     ]
   },
   {
+    "destination": "IN",
+    "source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "eta required, 30 days",
+        "requirement": "eta_required",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AL",
+          "AM",
+          "AR",
+          "AT",
+          "AU",
+          "AZ",
+          "BA",
+          "BE",
+          "BG",
+          "BR",
+          "BY",
+          "CA",
+          "CH",
+          "CL",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GE",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MD",
+          "ME",
+          "MK",
+          "MT",
+          "MX",
+          "MY",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RS",
+          "RU",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SM",
+          "UA",
+          "US",
+          "VA"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "TR",
+        "nationalities": [
+          "CN",
+          "TR",
+          "XK"
+        ]
+      }
+    ]
+  },
+  {
     "destination": "JM",
     "source": {
       "name": "Jamaica Immigration Unit — Visa Requirements for Jamaicans Travelling Overseas & Foreigners and Commonwealth Nationals Entering Jamaica (PICA Visa Unit country listing, last updated 13 March 2025), published by the Embassy of Jamaica, Washington DC",

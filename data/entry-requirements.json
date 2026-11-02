@@ -116416,5 +116416,2831 @@
         "url": "https://israel-entry.piba.gov.il/api/getalldata"
       }
     ]
+  },
+  {
+    "nationality": "AT",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Austria' is on India's official e-Visa eligible-country list (entry 10 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "BE",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Belgium' is on India's official e-Visa eligible-country list (entry 17 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "BG",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Bulgaria' is on India's official e-Visa eligible-country list (entry 25 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "HR",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Croatia' is on India's official e-Visa eligible-country list (entry 38 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "CZ",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Czech Republic' is on India's official e-Visa eligible-country list (entry 41 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "DK",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Denmark' is on India's official e-Visa eligible-country list (entry 42 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "EE",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Estonia' is on India's official e-Visa eligible-country list (entry 50 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "FI",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Finland' is on India's official e-Visa eligible-country list (entry 53 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "GR",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Greece' is on India's official e-Visa eligible-country list (entry 61 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "HU",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Hungary' is on India's official e-Visa eligible-country list (entry 69 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "LV",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Latvia' is on India's official e-Visa eligible-country list (entry 87 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "LT",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Lithuania' is on India's official e-Visa eligible-country list (entry 91 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "LU",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Luxembourg' is on India's official e-Visa eligible-country list (entry 92 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "MT",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Malta' is on India's official e-Visa eligible-country list (entry 98 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "PL",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Poland' is on India's official e-Visa eligible-country list (entry 128 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "PT",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Portugal' is on India's official e-Visa eligible-country list (entry 129 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "RO",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Romania' is on India's official e-Visa eligible-country list (entry 132 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "SK",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Slovakia' is on India's official e-Visa eligible-country list (entry 145 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "SI",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Slovenia' is on India's official e-Visa eligible-country list (entry 146 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "SE",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Sweden' is on India's official e-Visa eligible-country list (entry 152 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "CY",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Cyprus' is on India's official e-Visa eligible-country list (entry 40 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "IE",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Ireland' is on India's official e-Visa eligible-country list (entry 72 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "IS",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Iceland' is on India's official e-Visa eligible-country list (entry 70 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "NO",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Norway' is on India's official e-Visa eligible-country list (entry 119 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "LI",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Liechtenstein' is on India's official e-Visa eligible-country list (entry 90 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "CH",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Switzerland' is on India's official e-Visa eligible-country list (entry 153 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "AL",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Albania' is on India's official e-Visa eligible-country list (entry 1 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "AD",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Andorra' is on India's official e-Visa eligible-country list (entry 2 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "BA",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Bosnia & Herzegovina' is on India's official e-Visa eligible-country list (entry 21 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "GE",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Georgia' is on India's official e-Visa eligible-country list (entry 57 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "XK",
+    "destination": "IN",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Regular visa application submitted through an Indian Mission/Consulate (not via e-Visa)",
+      "Supporting documents per Indian Mission requirements (photograph, itinerary, invitation where applicable)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Kosovo is not on India's e-Visa eligible-country list (indianvisaonline.gov.in, checked 2026-11-02). The portal's guidance is that travellers who don't qualify for an e-Visa must 'apply for regular Visa at Indian Mission'.",
+    "legal_source": {
+      "name": "Indian Visa Online (Bureau of Immigration, Ministry of Home Affairs) - e-Visa / eTV information",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Indian Visa Online (Bureau of Immigration, Ministry of Home Affairs) - e-Visa / eTV information",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: inde, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/inde/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "MD",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Moldova' is on India's official e-Visa eligible-country list (entry 104 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "MC",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Monaco' is on India's official e-Visa eligible-country list (entry 105 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "ME",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Montenegro' is on India's official e-Visa eligible-country list (entry 107 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "MK",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Macedonia' is on India's official e-Visa eligible-country list (entry 93 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "SM",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'San Marino' is on India's official e-Visa eligible-country list (entry 139 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "RS",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Serbia' is on India's official e-Visa eligible-country list (entry 141 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "VA",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Vatican City-Holy See' is on India's official e-Visa eligible-country list (entry 171 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "TR",
+    "destination": "IN",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Regular visa application submitted through an Indian Mission/Consulate (not via e-Visa)",
+      "Supporting documents per Indian Mission requirements (photograph, itinerary, invitation where applicable)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Türkiye is not on India's e-Visa eligible-country list (indianvisaonline.gov.in, checked 2026-11-02). The portal's guidance is that travellers who don't qualify for an e-Visa must 'apply for regular Visa at Indian Mission'.",
+    "legal_source": {
+      "name": "Indian Visa Online (Bureau of Immigration, Ministry of Home Affairs) - e-Visa / eTV information",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Indian Visa Online (Bureau of Immigration, Ministry of Home Affairs) - e-Visa / eTV information",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "France Diplomatie — Conseils aux voyageurs: inde, Entrée / séjour",
+        "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/inde/conseils-aux-voyageurs-entree-sejour"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "AM",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Armenia' is on India's official e-Visa eligible-country list (entry 7 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "AZ",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Azerbaijan' is on India's official e-Visa eligible-country list (entry 11 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "BY",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Belarus' is on India's official e-Visa eligible-country list (entry 16 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
+  },
+  {
+    "nationality": "RU",
+    "destination": "IN",
+    "requirement": "eta_required",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 30
+    },
+    "documentsNeeded": [
+      "Valid passport with at least 6 months validity from the date of application",
+      "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+      "Return or onward journey ticket",
+      "Proof of sufficient funds for the stay",
+      "Recent passport-style photograph (uploaded with the online application)",
+      "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+      "Ebola Self-Declaration Form on the Air Suvidha portal, completed before arrival (the UK says up to 24 hours before; Spain says at least 72 hours before)"
+    ],
+    "timedSteps": [
+      {
+        "line": "Approved e-Tourist Visa / Electronic Travel Authorization (ETA), applied for online at indianvisaonline.gov.in at least 4 days before arrival",
+        "window": {
+          "kind": "due_before_arrival",
+          "amount": 4,
+          "unit": "days"
+        }
+      },
+      {
+        "line": "e-Arrival Card, completed online up to 72 hours before you arrive (it isn't a visa)",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 72,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "'Russia' is on India's official e-Visa eligible-country list (entry 133 on indianvisaonline.gov.in, checked 2026-11-02). The 30-day e-Tourist Visa (ETA) runs \"One Month (30 Days)\" from first arrival, multiple entries within that window, non-extendable and non-convertible. Longer 1-year and 5-year e-Tourist Visa options also exist (multiple entries, total stay capped at 180 days per calendar year); this row reflects the standard 30-day option. Apply online at least 4 days before arrival; passport must be valid at least 6 months from the date of application. Diplomatic/official passport holders, and applicants of Pakistani origin or holding a Pakistani passport, are not eligible for any e-Visa category.",
+    "legal_source": {
+      "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Bureau of Immigration, Ministry of Home Affairs, Government of India — e-Visa: eligible countries, e-Tourist Visa categories, and Country/Territory-wise e-Tourist Visa Fee schedule",
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html"
+      },
+      {
+        "claim": "Foreign nationals must complete an e-Arrival Card online before immigration, up to 72 hours before arrival",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, e-arrival card (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "GOV.UK (FCDO) — India travel advice: Entry requirements, Ebola (updated 2026-10-07)",
+        "url": "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+      },
+      {
+        "claim": "Mandatory Ebola Self-Declaration Form for all international passengers via Air Suvidha",
+        "name": "Ministerio de Asuntos Exteriores (Spain) — Recomendaciones de viaje, Documentación y visados",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=India"
+      }
+    ]
   }
 ]
