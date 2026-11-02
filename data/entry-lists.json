@@ -1,5 +1,649 @@
 [
   {
+    "destination": "AE",
+    "source": {
+      "name": "UAE Ministry of Foreign Affairs — Visa Exemptions for Non-Citizens",
+      "url": "https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "IE",
+        "nationalities": [
+          "AD",
+          "AL",
+          "AM",
+          "AR",
+          "AU",
+          "AZ",
+          "BA",
+          "BR",
+          "BY",
+          "CH",
+          "CL",
+          "GE",
+          "IE",
+          "IL",
+          "IS",
+          "JP",
+          "KR",
+          "LI",
+          "MC",
+          "ME",
+          "MX",
+          "MY",
+          "NO",
+          "NZ",
+          "RS",
+          "RU",
+          "SM",
+          "UA",
+          "US",
+          "VA",
+          "XK"
+        ]
+      },
+      {
+        "label": "visa free, 90 in 180 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 180,
+          "maxDays": 90
+        },
+        "template": "AT",
+        "nationalities": [
+          "AT",
+          "BE",
+          "BG",
+          "CA",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "HR",
+          "HU",
+          "IT",
+          "LT",
+          "LU",
+          "LV",
+          "MT",
+          "NL",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
+          "SG",
+          "SI",
+          "SK"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "MD",
+        "nationalities": [
+          "IN",
+          "MD",
+          "MK",
+          "TR"
+        ]
+      }
+    ]
+  },
+  {
+    "destination": "AL",
+    "source": {
+      "name": "Ministry for Europe and Foreign Affairs of Albania — Regjimi i vizave për të huajt (visa regime for foreigners, information sheet)",
+      "url": "https://punetejashtme.gov.al/wp-content/uploads/2024/09/II-NR.3-REGJIMI-I-VIZAVE-PER-TE-HUAJT-INFO-PER-TE-HUAJT.pdf"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 365 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 365
+        },
+        "template": "US",
+        "nationalities": [
+          "US"
+        ]
+      },
+      {
+        "label": "visa free, 90 in 180 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 180,
+          "maxDays": 90
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AR",
+          "AT",
+          "AU",
+          "BA",
+          "BE",
+          "BG",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CN",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GE",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MD",
+          "ME",
+          "MK",
+          "MT",
+          "MX",
+          "MY",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RS",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SM",
+          "UA",
+          "VA",
+          "XK"
+        ]
+      }
+    ]
+  },
+  {
+    "destination": "AM",
+    "source": {
+      "name": "Ministry of Foreign Affairs of Armenia — countries whose citizens are unilaterally exempt from the visa requirement (updated 02.02.2024)",
+      "url": "https://www.mfa.am/en/visafreelist"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 180 in 365 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 365,
+          "maxDays": 180
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "CH",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "ME",
+          "MT",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SM",
+          "US",
+          "VA"
+        ]
+      },
+      {
+        "label": "visa free",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AL",
+        "nationalities": [
+          "AL",
+          "AR",
+          "BR",
+          "BY",
+          "CN",
+          "GE",
+          "MD",
+          "RS",
+          "RU",
+          "UA"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "BA",
+        "nationalities": [
+          "AZ",
+          "BA",
+          "CA",
+          "CL",
+          "IL",
+          "IN",
+          "MK",
+          "MX",
+          "MY",
+          "TR",
+          "XK"
+        ]
+      }
+    ]
+  },
+  {
+    "destination": "AU",
+    "source": {
+      "name": "Department of Home Affairs — eVisitor (subclass 651)",
+      "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/evisitor-651"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "eta required, 90 days",
+        "requirement": "eta_required",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AT",
+          "BE",
+          "BG",
+          "CA",
+          "CH",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MT",
+          "MY",
+          "NL",
+          "NO",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SM",
+          "US",
+          "VA"
+        ]
+      },
+      {
+        "label": "visa on arrival",
+        "requirement": "visa_on_arrival",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "NZ",
+        "nationalities": [
+          "NZ"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AL",
+        "nationalities": [
+          "AL",
+          "AM",
+          "AR",
+          "AZ",
+          "BA",
+          "BR",
+          "BY",
+          "CL",
+          "CN",
+          "GE",
+          "IL",
+          "IN",
+          "MD",
+          "ME",
+          "MK",
+          "MX",
+          "RS",
+          "RU",
+          "TR",
+          "UA",
+          "XK"
+        ]
+      }
+    ]
+  },
+  {
+    "destination": "BA",
+    "source": {
+      "name": "Ministry of Foreign Affairs of Bosnia and Herzegovina — consular information: United States",
+      "url": "https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886938490742978"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 90 in 180 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 180,
+          "maxDays": 90
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AL",
+          "AR",
+          "AT",
+          "AU",
+          "AZ",
+          "BE",
+          "BG",
+          "CA",
+          "CH",
+          "CL",
+          "CN",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GE",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MD",
+          "ME",
+          "MK",
+          "MT",
+          "MX",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RS",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SM",
+          "TR",
+          "US",
+          "VA"
+        ]
+      },
+      {
+        "label": "visa free, 180 in 365 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 365,
+          "maxDays": 180,
+          "maxDaysPerEntry": 90
+        },
+        "template": "BR",
+        "nationalities": [
+          "BR"
+        ]
+      },
+      {
+        "label": "visa free, 90 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "MY",
+        "nationalities": [
+          "MY"
+        ]
+      },
+      {
+        "label": "visa free, 30 in 60 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 60,
+          "maxDays": 30
+        },
+        "template": "RU",
+        "nationalities": [
+          "RU",
+          "UA"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AM",
+        "nationalities": [
+          "AM",
+          "BY",
+          "IN"
+        ]
+      }
+    ]
+  },
+  {
+    "destination": "CA",
+    "source": {
+      "name": "Immigration and Refugee Protection Regulations (SOR/2002-227), s. 190 and Schedule 1.1 (visa exemptions), s. 7.1 (eTA), s. 183(2) (six-month stay) — Justice Laws Website",
+      "url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/FullText.html"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 180 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 180
+        },
+        "template": "US",
+        "nationalities": [
+          "US"
+        ]
+      },
+      {
+        "label": "eta required, 180 days",
+        "requirement": "eta_required",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 180
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "CH",
+          "CL",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MT",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SM",
+          "VA"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AL",
+        "nationalities": [
+          "AL",
+          "AM",
+          "AR",
+          "AZ",
+          "BA",
+          "BR",
+          "BY",
+          "CN",
+          "GE",
+          "IN",
+          "MD",
+          "ME",
+          "MK",
+          "MX",
+          "MY",
+          "RS",
+          "RU",
+          "TR",
+          "XK"
+        ]
+      }
+    ]
+  },
+  {
     "destination": "FJ",
     "source": {
       "name": "Fiji Ministry of Immigration — Visa exempted countries (with Visit Fiji)",
@@ -91,6 +735,228 @@
           "MK",
           "SM",
           "XK"
+        ]
+      }
+    ]
+  },
+  {
+    "destination": "GB",
+    "source": {
+      "name": "GOV.UK — Visiting the UK as an EU, EEA or Swiss citizen; Immigration Rules Appendix ETA National List",
+      "url": "https://www.gov.uk/guidance/visiting-the-uk-as-an-eu-eea-or-swiss-citizen"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "eta required, 180 days",
+        "requirement": "eta_required",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 180
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GR",
+          "HR",
+          "HU",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MT",
+          "MX",
+          "MY",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SM",
+          "US",
+          "VA"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "UA",
+        "nationalities": [
+          "UA"
+        ]
+      },
+      {
+        "label": "visa required, 180 days",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 180
+        },
+        "template": "AL",
+        "nationalities": [
+          "AL",
+          "AM",
+          "AZ",
+          "BA",
+          "BY",
+          "CN",
+          "GE",
+          "IN",
+          "MD",
+          "ME",
+          "MK",
+          "RS",
+          "RU",
+          "TR",
+          "XK"
+        ]
+      },
+      {
+        "label": "visa free",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "IE",
+        "nationalities": [
+          "IE"
+        ]
+      }
+    ]
+  },
+  {
+    "destination": "GE",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 365 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 365
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AL",
+          "AM",
+          "AR",
+          "AT",
+          "AU",
+          "AZ",
+          "BA",
+          "BE",
+          "BG",
+          "BR",
+          "BY",
+          "CA",
+          "CH",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MD",
+          "ME",
+          "MT",
+          "MX",
+          "MY",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RS",
+          "RU",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SM",
+          "TR",
+          "UA",
+          "US",
+          "VA"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "XK",
+        "nationalities": [
+          "CL",
+          "IN",
+          "MK",
+          "XK"
+        ]
+      },
+      {
+        "label": "visa free, 30 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "CN",
+        "nationalities": [
+          "CN"
         ]
       }
     ]
@@ -192,6 +1058,119 @@
     ]
   },
   {
+    "destination": "JM",
+    "source": {
+      "name": "Jamaica Immigration Unit — Visa Requirements for Jamaicans Travelling Overseas & Foreigners and Commonwealth Nationals Entering Jamaica (PICA Visa Unit country listing, last updated 13 March 2025), published by the Embassy of Jamaica, Washington DC",
+      "url": "https://embwashington.mfaft.gov.jm/pdf/Country-Listing-March-3-2025.pdf"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 180 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 180
+        },
+        "template": "US",
+        "nationalities": [
+          "US"
+        ]
+      },
+      {
+        "label": "visa free, 90 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "BE",
+        "nationalities": [
+          "BE",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "DE",
+          "DK",
+          "ES",
+          "FI",
+          "GB",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "KR",
+          "LI",
+          "LU",
+          "MX",
+          "NL",
+          "NO",
+          "RU",
+          "SE",
+          "SM",
+          "TR"
+        ]
+      },
+      {
+        "label": "visa free",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "MT",
+        "nationalities": [
+          "AU",
+          "CY",
+          "IN",
+          "MT",
+          "MY",
+          "NZ",
+          "SG"
+        ]
+      },
+      {
+        "label": "visa free, 30 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "AT",
+        "nationalities": [
+          "AR",
+          "AT",
+          "CN",
+          "CZ",
+          "FR",
+          "GR",
+          "HU",
+          "JP",
+          "MC",
+          "PL",
+          "PT",
+          "SK",
+          "UA"
+        ]
+      },
+      {
+        "label": "visa on arrival",
+        "requirement": "visa_on_arrival",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AD",
+        "nationalities": [
+          "AD",
+          "AM",
+          "AZ",
+          "GE",
+          "XK"
+        ]
+      }
+    ]
+  },
+  {
     "destination": "KE",
     "source": {
       "name": "Directorate of Immigration Services — Kenya eTA: How to Apply / Eligibility",
@@ -283,6 +1262,197 @@
           "MY",
           "SG",
           "SM"
+        ]
+      }
+    ]
+  },
+  {
+    "destination": "ME",
+    "source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — United States of America (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/united-states-of-america"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 90 in 180 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 180,
+          "maxDays": 90
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AL",
+          "AR",
+          "AT",
+          "AU",
+          "BA",
+          "BE",
+          "BG",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GE",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MD",
+          "MK",
+          "MT",
+          "MX",
+          "MY",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RS",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SM",
+          "UA",
+          "US",
+          "XK"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "TR",
+        "nationalities": [
+          "AM",
+          "AZ",
+          "BY",
+          "CN",
+          "IN",
+          "RU",
+          "TR"
+        ]
+      }
+    ]
+  },
+  {
+    "destination": "MK",
+    "source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 90 in 180 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 180,
+          "maxDays": 90
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AL",
+          "AR",
+          "AT",
+          "AU",
+          "BA",
+          "BE",
+          "BG",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GE",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MD",
+          "ME",
+          "MT",
+          "MX",
+          "MY",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RS",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SM",
+          "TR",
+          "UA",
+          "US",
+          "VA",
+          "XK"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AM",
+        "nationalities": [
+          "AM",
+          "AZ",
+          "BY",
+          "CN",
+          "IN",
+          "RU"
         ]
       }
     ]
@@ -388,6 +1558,71 @@
       {
         "nationality": "XK",
         "reason": "Not in the 2025 country list"
+      }
+    ]
+  },
+  {
+    "destination": "MX",
+    "source": {
+      "name": "Instituto Nacional de Migración — Países y regiones que no requieren visa para viajar a México (published 1 Mar 2024)",
+      "url": "https://www.inm.gob.mx/gobmx/word/index.php/paises-no-requieren-visa-para-mexico/"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 180 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 180
+        },
+        "template": "US",
+        "nationalities": [
+          "AR",
+          "AU",
+          "CA",
+          "CL",
+          "DE",
+          "ES",
+          "FR",
+          "GB",
+          "IL",
+          "IT",
+          "JP",
+          "KR",
+          "MY",
+          "NL",
+          "NZ",
+          "SG",
+          "US"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AL",
+        "nationalities": [
+          "AL",
+          "AM",
+          "AZ",
+          "BA",
+          "BR",
+          "BY",
+          "CN",
+          "GE",
+          "IN",
+          "MD",
+          "ME",
+          "MK",
+          "RS",
+          "RU",
+          "TR",
+          "UA",
+          "VA"
+        ]
       }
     ]
   },
@@ -626,6 +1861,123 @@
     ]
   },
   {
+    "destination": "RS",
+    "source": {
+      "name": "Ministry of Foreign Affairs of Serbia — Visa regime for entering Serbia",
+      "url": "https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/sjedinjene-americke-drzave"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 90 in 180 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 180,
+          "maxDays": 90
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AL",
+          "AM",
+          "AR",
+          "AT",
+          "AU",
+          "AZ",
+          "BA",
+          "BE",
+          "BG",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GE",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MD",
+          "MK",
+          "MT",
+          "MX",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SM",
+          "TR",
+          "UA",
+          "US"
+        ]
+      },
+      {
+        "label": "visa free, 90 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "ME",
+        "nationalities": [
+          "KR",
+          "ME",
+          "VA"
+        ]
+      },
+      {
+        "label": "visa free, 30 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "BY",
+        "nationalities": [
+          "BY",
+          "CN",
+          "RU"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "MY",
+        "nationalities": [
+          "IN",
+          "MY"
+        ]
+      }
+    ]
+  },
+  {
     "destination": "SC",
     "source": {
       "name": "Seychelles Immigration and Civil Status — Visitor's Permit (with Visiting Seychelles)",
@@ -707,6 +2059,262 @@
           "US",
           "VA",
           "XK"
+        ]
+      }
+    ]
+  },
+  {
+    "destination": "TH",
+    "source": {
+      "name": "Ministry of Foreign Affairs of Thailand — Summary: The revision of Thailand's visa exemption and VoA schemes, 2026 (ordinary passports; status as of 31 August 2026, effective 15 September 2026)",
+      "url": "https://image.mfa.go.th/mfa/0/umufy3EgqL/Con0926/Visa_Exemption_(EN)_0.jpg"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 30 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "AT",
+        "nationalities": [
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "CA",
+          "CH",
+          "CN",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GE",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IN",
+          "IS",
+          "IT",
+          "JP",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MT",
+          "MY",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RU",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "TR",
+          "UA",
+          "US"
+        ]
+      },
+      {
+        "label": "visa free, 90 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "KR",
+        "nationalities": [
+          "AR",
+          "BR",
+          "CL",
+          "KR"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AL",
+        "nationalities": [
+          "AD",
+          "AL",
+          "AM",
+          "BA",
+          "MC",
+          "MD",
+          "ME",
+          "MK",
+          "MX",
+          "SM",
+          "VA",
+          "XK"
+        ]
+      },
+      {
+        "label": "visa on arrival",
+        "requirement": "visa_on_arrival",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "RS",
+        "nationalities": [
+          "AZ",
+          "BY",
+          "RS"
+        ]
+      }
+    ]
+  },
+  {
+    "destination": "TR",
+    "source": {
+      "name": "Republic of Türkiye Ministry of Foreign Affairs — Visa Information for Foreigners",
+      "url": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 90 in 180 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 180,
+          "maxDays": 90
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AL",
+          "AR",
+          "AT",
+          "AU",
+          "AZ",
+          "BA",
+          "BE",
+          "BG",
+          "BR",
+          "CA",
+          "CL",
+          "CN",
+          "DE",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IT",
+          "JP",
+          "KR",
+          "LT",
+          "LV",
+          "MD",
+          "ME",
+          "MT",
+          "MY",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RS",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "UA",
+          "US",
+          "XK"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AM",
+        "nationalities": [
+          "AM",
+          "IN",
+          "MX"
+        ]
+      },
+      {
+        "label": "visa free, 30 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "BY",
+        "nationalities": [
+          "BY"
+        ]
+      },
+      {
+        "label": "visa free",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "CY",
+        "nationalities": [
+          "CY"
+        ]
+      },
+      {
+        "label": "visa free, 90 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "CZ",
+        "nationalities": [
+          "CH",
+          "CZ",
+          "DK",
+          "GE",
+          "GR",
+          "IS",
+          "LI",
+          "LU",
+          "MC",
+          "MK",
+          "SM",
+          "VA"
+        ]
+      },
+      {
+        "label": "visa free, 60 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 60
+        },
+        "template": "RU",
+        "nationalities": [
+          "RU"
         ]
       }
     ]
@@ -821,6 +2429,86 @@
       {
         "nationality": "RO",
         "reason": "On neither the Commonwealth exemption nor the visa-on-arrival list in the Visa Guidelines"
+      }
+    ]
+  },
+  {
+    "destination": "US",
+    "source": {
+      "name": "U.S. Department of Homeland Security — Visa Waiver Program (current program countries)",
+      "url": "https://www.dhs.gov/visa-waiver-program"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "eta required, 90 days",
+        "requirement": "eta_required",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AT",
+          "AU",
+          "BE",
+          "CH",
+          "CL",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MT",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SM"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "BG",
+        "nationalities": [
+          "AR",
+          "BG",
+          "BR",
+          "CN",
+          "CY",
+          "IN",
+          "MX",
+          "MY",
+          "RO",
+          "UA"
+        ]
       }
     ]
   },
