@@ -296,8 +296,8 @@ export function resolveItem(destination: string, query: string): CustomsItemReco
   if (!q) return null;
   if (picked === SCHENGEN_DESTINATION) return matchItem(q, EU_CUSTOMS_CODE);
   if (isSchengenCode(picked)) {
-    const national = matchItem(q, picked);
-    return national ?? (customsCodeFor(picked) === EU_CUSTOMS_CODE ? matchItem(q, EU_CUSTOMS_CODE) : null);
+    const territory = customsCodeFor(picked);
+    return matchItem(q, picked) ?? (territory !== picked ? matchItem(q, territory) : null);
   }
   return matchItem(q, picked);
 }

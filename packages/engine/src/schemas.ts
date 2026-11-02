@@ -55,6 +55,9 @@ export const countryRecordSchema = z.object({
   schengenSince: isoDateSchema.optional(),
   euMember: z.boolean(),
   etiasRequired: z.boolean(),
+  /** Customs territory this country belongs to when it isn't its own (Liechtenstein is part of
+   * the Swiss customs area); customs answers come from that country's rows. Cite it in _sources. */
+  customsTerritory: countryCodeSchema.optional(),
   notes: z.string().optional(),
 });
 

@@ -232,13 +232,14 @@ describe("resolveTripCheck", () => {
     expect(resolveTripCheck("NO", "JP", []).basis).not.toBe("free_movement");
   });
 
-  it("never answers for Norway, Iceland, Switzerland or Liechtenstein with EU customs rows", () => {
-    for (const destination of ["NO", "IS", "CH", "LI"]) {
+  it("answers for Norway, Iceland, Switzerland and Liechtenstein (Swiss customs area) with their own rows, never EU ones", () => {
+    for (const [destination, rows] of [["NO", "NO"], ["IS", "IS"], ["CH", "CH"], ["LI", "CH"]] as const) {
       const visitor = resolveTripCheck("US", destination, ["wine", "cigarettes"]);
-      expect(visitor.items.every((i) => i.match === null || i.match.destination === destination)).toBe(true);
+      expect(visitor.items.every((i) => i.match?.destination === rows)).toBe(true);
       const euCitizen = resolveTripCheck("FR", destination, ["wine"]);
       expect(euCitizen.intraEuCustoms).toBeUndefined();
     }
+    expect(resolveItem("LI", "wine")?.destination).toBe("CH");
     // An EU member state in Schengen still uses the harmonised EU rows.
     expect(resolveTripCheck("US", "DE", ["wine"]).items[0]!.match?.destination).toBe("EU");
   });

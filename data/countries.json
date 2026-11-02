@@ -11,6 +11,7 @@
     "schengenSince = the date the state began fully applying the Schengen acquis (visas, day counting) — for BG/RO that is 2024-03-31 per Council Decision (EU) 2024/210, NOT the 2025-01-01 land-border date."
   ],
   "_sources": [
+    { "claim": "Liechtenstein forms part of the Swiss customs area (Art. 1(1)); Swiss customs legislation applies there (Art. 4)", "name": "Treaty of 29 March 1923 between Switzerland and Liechtenstein on accession of Liechtenstein to the Swiss customs area (LR 0.631.112, Liechtenstein Government English translation, last change 9 April 2020)", "url": "https://www.regierung.li/files/medienarchiv/0_631_112_08_10_2020_en_rev_.pdf", "checked": "2026-11-02" },
     { "claim": "29 Schengen members: 25 EU + IS/NO/CH/LI; Cyprus integration underway; Ireland opt-out", "name": "EC Migration & Home Affairs — Schengen area", "url": "https://home-affairs.ec.europa.eu/policies/schengen/schengen-area_en", "checked": "2026-10-30" },
     { "claim": "Croatia: full application of the Schengen acquis from 2023-01-01", "name": "Council Decision (EU) 2022/2451", "url": "https://eur-lex.europa.eu/eli/dec/2022/2451/oj", "checked": "2026-07-13" },
     { "claim": "Bulgaria & Romania: full application of the Schengen acquis from 2024-03-31 (air/sea internal checks lifted)", "name": "Council Decision (EU) 2024/210; Council press release 2023-12-30", "url": "https://www.consilium.europa.eu/en/press/press-releases/2023/12/30/schengen-area-council-takes-move-towards-lifting-border-controls-with-bulgaria-and-romania/", "checked": "2026-07-13" },
@@ -34,7 +35,7 @@
     { "code": "IS", "name": "Iceland", "schengenMember": true, "euMember": false, "etiasRequired": true, "notes": "Non-EU Schengen member — short stays count toward 90/180 (EC manual §1)." },
     { "code": "IT", "name": "Italy", "schengenMember": true, "euMember": true, "etiasRequired": true },
     { "code": "LV", "name": "Latvia", "schengenMember": true, "euMember": true, "etiasRequired": true },
-    { "code": "LI", "name": "Liechtenstein", "schengenMember": true, "euMember": false, "etiasRequired": true, "notes": "Non-EU Schengen member — short stays count toward 90/180 (EC manual §1)." },
+    { "code": "LI", "name": "Liechtenstein", "schengenMember": true, "euMember": false, "etiasRequired": true, "customsTerritory": "CH", "notes": "Non-EU Schengen member — short stays count toward 90/180 (EC manual §1)." },
     { "code": "LT", "name": "Lithuania", "schengenMember": true, "euMember": true, "etiasRequired": true },
     { "code": "LU", "name": "Luxembourg", "schengenMember": true, "euMember": true, "etiasRequired": true },
     { "code": "MT", "name": "Malta", "schengenMember": true, "euMember": true, "etiasRequired": true },

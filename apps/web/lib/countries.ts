@@ -44,6 +44,7 @@ export function customsCodeFor(destination: string): string {
   const upper = destination.toUpperCase();
   if (upper === SCHENGEN_SENTINEL) return EU_CUSTOMS;
   const country = countries.find((c) => c.code === upper);
+  if (country?.customsTerritory) return country.customsTerritory;
   if (country?.schengenMember) return country.euMember ? EU_CUSTOMS : upper;
   return upper;
 }
