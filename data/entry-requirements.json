@@ -64877,5 +64877,2015 @@
         "url": "https://travel.gc.ca/destinations/bosnia-and-herzegovina"
       }
     ]
+  },
+  {
+    "nationality": "AT",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Austria states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Austria: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "BE",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Belgium states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Belgium: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "BG",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Bulgaria states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Bulgaria: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "HR",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Croatia states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Croatia: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "CY",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Cyprus states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Cyprus: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "CZ",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Czechia states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Czechia: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "DK",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Denmark states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Denmark: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "EE",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Estonia states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Estonia: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "FI",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Finland states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Finland: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "GR",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Greece states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Greece: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "HU",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Hungary states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Hungary: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "IE",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Ireland states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Ireland: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "LV",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Latvia states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Latvia: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "LT",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Lithuania states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Lithuania: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "LU",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Luxembourg states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Luxembourg: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "MT",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Malta states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Malta: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "PL",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Poland states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Poland: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "PT",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Portugal states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Portugal: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "RO",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Romania states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Romania: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "SK",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Slovakia states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Slovakia: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "SI",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Slovenia states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Slovenia: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "SE",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Sweden states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Sweden: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "AL",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Albania states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Albania: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "AD",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Andorra states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Andorra: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "BA",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Bosnia and Hercegovina states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Bosnia and Hercegovina: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "GE",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Georgia states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Georgia: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "XK",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Kosovo states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Kosovo: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "MD",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Moldova states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Moldova: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "MC",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Monaco states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Monaco: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "ME",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Montenegro states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Montenegro: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "SM",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for San Marino states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "San Marino: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "RS",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Serbia states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Serbia: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "VA",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Vatican City states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Vatican City: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "TR",
+    "destination": "MK",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Proof of the purpose and conditions of your stay, and enough money for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Turkey states: 'Visa for foreign citizens: Not needed'. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Turkey: visa not needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "AM",
+    "destination": "MK",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "North Macedonian short-stay (C) visa issued before travel",
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Travel health insurance (a C visa can be refused without it)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Armenia states: 'Visa for foreign citizens: Needed'. Stays on a C visa may not exceed 90 days in any 180 (Law on Foreigners, Art. 26(2)); a visa application is refused if the applicant has no health or travel insurance (Art. 37). The pages read don't mention any exemption for holders of other countries' visas or residence permits. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Armenia: visa needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "AZ",
+    "destination": "MK",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "North Macedonian short-stay (C) visa issued before travel",
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Travel health insurance (a C visa can be refused without it)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Azerbaijan states: 'Visa for foreign citizens: Needed *Holders of diplomatic and official passports do not require a visa for short-term stays.' Stays on a C visa may not exceed 90 days in any 180 (Law on Foreigners, Art. 26(2)); a visa application is refused if the applicant has no health or travel insurance (Art. 37). The pages read don't mention any exemption for holders of other countries' visas or residence permits. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Azerbaijan: visa needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "BY",
+    "destination": "MK",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "North Macedonian short-stay (C) visa issued before travel",
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Travel health insurance (a C visa can be refused without it)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Belarus states: 'Visa for foreign citizens: Needed'. Stays on a C visa may not exceed 90 days in any 180 (Law on Foreigners, Art. 26(2)); a visa application is refused if the applicant has no health or travel insurance (Art. 37). The pages read don't mention any exemption for holders of other countries' visas or residence permits. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Belarus: visa needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "nationality": "RU",
+    "destination": "MK",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "North Macedonian short-stay (C) visa issued before travel",
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure from North Macedonia",
+      "Travel health insurance (a C visa can be refused without it)",
+      "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your address with the police within 48 hours of arrival if you're not in paid accommodation or staying with a host (paid accommodation registers you within 12 hours, a private host within 48 hours)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 48,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Ministry of Foreign Affairs page for Russia states: 'Visa for foreign citizens: Needed'. Stays on a C visa may not exceed 90 days in any 180 (Law on Foreigners, Art. 26(2)); a visa application is refused if the applicant has no health or travel insurance (Art. 37). The pages read don't mention any exemption for holders of other countries' visas or residence permits. Law on Foreigners: a short stay, with or without a visa, is 'не подолго од 90 дена во кој било период од 180 дена' (no longer than 90 days in any 180-day period preceding each day of the stay; Art. 2(9), Art. 11(1)), and a visa-free foreigner must leave 'најдоцна до истекот на рокот од 90 дена во текот на 180 дена' (Art. 21). Art. 11(1)(a): the passport must be valid at least three months after the planned departure and issued in the previous 10 years. Art. 190: paid accommodation registers a foreigner's stay within 12 hours, other hosts within 48 hours, and otherwise the foreigner registers within 48 hours of crossing the border.",
+    "legal_source": {
+      "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+      "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Russia: visa needed",
+        "name": "Ministry of Foreign Affairs and Foreign Trade of North Macedonia — Do you need a visa? (per-country visa regime for foreign citizens)",
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/dali-ti-e-potrebna-viza",
+        "checked": "2026-11-02"
+      },
+      {
+        "claim": "90 days in any 180 (Arts 2, 11, 21); passport 3 months after departure, issued within 10 years (Art. 11); registration 12/48 hours (Art. 190)",
+        "name": "Law on Foreigners (Закон за странци), consolidated text, Ministry of Internal Affairs of North Macedonia",
+        "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-mvr-file-UtsW.pdf",
+        "checked": "2026-10-30"
+      }
+    ]
   }
 ]
