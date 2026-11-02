@@ -539,6 +539,110 @@
     ]
   },
   {
+    "destination": "BZ",
+    "source": {
+      "name": "Belize Immigration and Nationality Department — Do you need a visa to visit Belize? (country table)",
+      "url": "https://immigration.gov.bz/visa/visa-who-qualify/"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa free, 30 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MT",
+          "MX",
+          "MY",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RU",
+          "SE",
+          "SG",
+          "SM",
+          "TR",
+          "US",
+          "VA"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AL",
+        "nationalities": [
+          "AL",
+          "AM",
+          "AZ",
+          "BA",
+          "BY",
+          "CN",
+          "GE",
+          "IN",
+          "MD",
+          "ME",
+          "MK",
+          "RS",
+          "UA",
+          "XK"
+        ]
+      }
+    ],
+    "held": [
+      {
+        "nationality": "SK",
+        "reason": "Not in Immigration's country table"
+      },
+      {
+        "nationality": "SI",
+        "reason": "Not in Immigration's country table"
+      }
+    ]
+  },
+  {
     "destination": "CA",
     "source": {
       "name": "Immigration and Refugee Protection Regulations (SOR/2002-227), s. 190 and Schedule 1.1 (visa exemptions), s. 7.1 (eTA), s. 183(2) (six-month stay) — Justice Laws Website",
