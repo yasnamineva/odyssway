@@ -8,9 +8,9 @@ without a primary official source.
 
 Where we are today (2026-11-02):
 
-- 68 destinations plus the Schengen Area; 2,352 verified entry rows; 697 customs rows
+- 68 destinations plus the Schengen Area; 2,953 verified entry rows; 697 customs rows
   (135 medication, 38 with a doctor's-letter checklist, 19 with a permit how-to, 19 with
-  a transit rule); 845 entry rows with a structured passport-validity rule.
+  a transit rule); 1,125 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
   planner, travel-authorisation guides, the 90/180 calculator, the multi-country day counter, named-medicine pages, border cards,
   embeddable calculator and "Can I bring it?" widgets, the public JSON API.
