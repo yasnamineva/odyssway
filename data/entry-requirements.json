@@ -101066,5 +101066,1046 @@
         "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:22015A1219(01)"
       }
     ]
+  },
+  {
+    "nationality": "AL",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      }
+    ]
+  },
+  {
+    "nationality": "AD",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "AM",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "AT",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      }
+    ]
+  },
+  {
+    "nationality": "AZ",
+    "destination": "BR",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Brazilian visit visa (VIVIS) obtained before travel"
+    ],
+    "notes": "Code 1 (visa required) for ordinary passports in Brazil's current QGRV (26 Aug 2026), confirming the visa requirement reinstated in April 2025 is still in force.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "BY",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "BE",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      }
+    ]
+  },
+  {
+    "nationality": "BA",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "BG",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      }
+    ]
+  },
+  {
+    "nationality": "CY",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      }
+    ]
+  },
+  {
+    "nationality": "HR",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "DK",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      }
+    ]
+  },
+  {
+    "nationality": "SK",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "SI",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      }
+    ]
+  },
+  {
+    "nationality": "EE",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      }
+    ]
+  },
+  {
+    "nationality": "FI",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "GE",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      }
+    ]
+  },
+  {
+    "nationality": "GR",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      }
+    ]
+  },
+  {
+    "nationality": "HU",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      }
+    ]
+  },
+  {
+    "nationality": "IE",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IS",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "XK",
+    "destination": "BR",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Valid passport",
+      "Brazilian visit visa (VIVIS) obtained before travel"
+    ],
+    "notes": "Code 12 in Brazil's current QGRV (26 Aug 2026): 'O Brasil não mantém relações diplomáticas. Visto concedido por até 90 dias.' Brazil has no diplomatic relations with Kosovo; a visit visa is granted for up to 90 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "LV",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      }
+    ]
+  },
+  {
+    "nationality": "LI",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "LT",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      }
+    ]
+  },
+  {
+    "nationality": "LU",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      }
+    ]
+  },
+  {
+    "nationality": "MK",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      }
+    ]
+  },
+  {
+    "nationality": "MT",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      }
+    ]
+  },
+  {
+    "nationality": "MC",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "ME",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      }
+    ]
+  },
+  {
+    "nationality": "NO",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "PL",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "PT",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CZ",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      }
+    ]
+  },
+  {
+    "nationality": "RO",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "RU",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "SM",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "RS",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "SE",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      }
+    ]
+  },
+  {
+    "nationality": "CH",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4* in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days, with '*' = maximum 90 days of stay in every 180 days.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+        "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+      }
+    ]
+  },
+  {
+    "nationality": "TR",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "VA",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "MD",
+    "destination": "BR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 365,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Valid passport"
+    ],
+    "notes": "Code 4 in Brazil's current QGRV (26 Aug 2026): visa exemption for up to 90 days (no 90/180 marker). Counting: Brazil's Decreto 9.199/2017 (art. 20 §1, applicable to visa-exempt visitors under art. 23) counts a visitor's stay from the first entry and pauses it while you are outside Brazil, so days add up across visits within a 12-month 'migratory year' starting at your first entry; the Federal Police may extend the stay by up to 90 days, to a maximum of 180 days per migratory year (https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm). We show the stricter limit of 90 days in any 365 so a plan that fits here also fits the rule — check with the Federal Police if you need longer.",
+    "legal_source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]

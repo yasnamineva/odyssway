@@ -633,6 +633,126 @@
     ]
   },
   {
+    "destination": "BR",
+    "source": {
+      "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",
+      "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/qgrv-simples-port-26ago26.pdf"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AZ",
+        "nationalities": [
+          "AU",
+          "AZ",
+          "CA",
+          "IN",
+          "US",
+          "XK"
+        ]
+      },
+      {
+        "label": "visa free, 90 in 365 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 365,
+          "maxDays": 90
+        },
+        "template": "AD",
+        "nationalities": [
+          "AD",
+          "AM",
+          "AR",
+          "BA",
+          "BY",
+          "CL",
+          "ES",
+          "FI",
+          "GB",
+          "HR",
+          "IE",
+          "IL",
+          "IS",
+          "JP",
+          "KR",
+          "LI",
+          "MC",
+          "MD",
+          "MX",
+          "MY",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RS",
+          "RU",
+          "SK",
+          "SM",
+          "TR",
+          "VA"
+        ]
+      },
+      {
+        "label": "visa free, 30 in 365 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 365,
+          "maxDays": 30
+        },
+        "template": "SG",
+        "nationalities": [
+          "CN",
+          "SG"
+        ]
+      },
+      {
+        "label": "visa free, 90 in 180 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 180,
+          "maxDays": 90
+        },
+        "template": "AT",
+        "nationalities": [
+          "AL",
+          "AT",
+          "BE",
+          "BG",
+          "CH",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "FR",
+          "GE",
+          "GR",
+          "HU",
+          "IT",
+          "LT",
+          "LU",
+          "LV",
+          "ME",
+          "MK",
+          "MT",
+          "NL",
+          "SE",
+          "SI",
+          "UA"
+        ]
+      }
+    ]
+  },
+  {
     "destination": "BZ",
     "source": {
       "name": "Belize Immigration and Nationality Department — Do you need a visa to visit Belize? (country table)",
