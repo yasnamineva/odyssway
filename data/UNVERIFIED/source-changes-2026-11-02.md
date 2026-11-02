@@ -1,0 +1,242 @@
+# Source changes — 2026-11-02
+
+Official sources changed (or could not be checked). A human must review
+each item, update the affected data, and bump `verified_at`.
+
+Watched 1263 sources: 124 changed, 500 first snapshots, 13 volatile (differ between fetches, not flagged), 106 newly unmonitorable, 133 still unmonitorable (unreachable, JS-rendered or bot-challenged).
+
+## Changed
+
+- **ec-ees-policy-page** — CONTENT CHANGED. Review https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/entry-exit-system_en and re-verify: /ees and /ees/what-to-expect content (rollout dates, data collected).
+- **ec-short-stay-calculator-page** — CONTENT CHANGED. Review https://home-affairs.ec.europa.eu/policies/schengen/border-crossing/short-stay-calculator_en and re-verify: engine rules, /rules/90-180-rule.
+- **ec-schengen-area-page** — CONTENT CHANGED. Review https://home-affairs.ec.europa.eu/policies/schengen/schengen-area_en and re-verify: data/countries.json (membership list, Cyprus status).
+- **ca-eta-eligibility** — CONTENT CHANGED. Review https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=1016&top=16 and re-verify: data/entry-requirements.json (Canada eTA eligibility, stay length).
+- **ng-tourism-visa** — CONTENT CHANGED. Review https://immigration.gov.ng/info-center/tourism-visa-f5a/ and re-verify: data/entry-requirements.json (Nigeria Tourism Visa F5A e-Visa terms).
+- **cn-nia-visa-free-list** — CONTENT CHANGED. Review https://www.nia.gov.cn/ and re-verify: data/entry-requirements.json (China NIA unilateral visa-free list).
+- **data-f2acc12473** — CONTENT CHANGED. Review https://www.cbp.gov/travel/us-citizens/know-before-you-go/prohibited-and-restricted-items and re-verify: customs-items.json:prescription-medication-us, customs-items.json:meat-dairy-us, customs-items.json:fresh-produce-us.
+- **data-8915f944e3** — CONTENT CHANGED. Review https://www.cbp.gov/travel/clearing-cbp/cbp-reminds-travelers-canada-marijuana-remains-illegal-united-states and re-verify: customs-items.json:cannabis-us.
+- **sg-ica-entering-singapore** — CONTENT CHANGED. Review https://www.ica.gov.sg/enter-transit-depart/entering-singapore and re-verify: data/entry-requirements.json (Singapore ICA visa-required country list — exact per-nationality stay lengths for several countries are not published by ICA and were sourced from converging secondary reporting; recheck if precision matters).
+- **data-64ef24d6ed** — CONTENT CHANGED. Review https://www.ncd.mhlw.go.jp/en/application2.html and re-verify: customs-items.json:amphetamine-medication-jp, customs-items.json:stimulant-medication-jp, customs-items.json:narcotic-medication-jp (+1 more).
+- **data-25660e47c7** — CONTENT CHANGED. Review https://www.gob.mx/senasica/documentos/productos-prohibidos?state=published and re-verify: customs-items.json:food-animal-mx, customs-items.json:food-plant-mx.
+- **data-1db569ad6b** — CONTENT CHANGED. Review https://www.customs.go.th/list_strc_simple_neted.php?ini_content=individual_160503_03_160905_01&lang=en&left_menu=menu_individual_submenu_01_160421_01 and re-verify: customs-items.json:alcohol-th, customs-items.json:tobacco-th.
+- **data-0372b66884** — CONTENT CHANGED. Review https://en.fda.moph.go.th/guideline-of-importation-for-personal-use/bringing-of-health-products-into-the-kingdom-of-thailand-01/ and re-verify: customs-items.json:medication-th, customs-items.json:cannabis-th, customs-items.json:meat-dairy-th (+3 more).
+- **data-ea582cfddd** — CONTENT CHANGED. Review https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1 and re-verify: customs-items.json:alcohol-eg, customs-items.json:tobacco-eg, customs-items.json:prescription-medication-eg (+7 more).
+- **data-1123fae2b5** — CONTENT CHANGED. Review https://dor.gov.in/international-travellers-requiring-ndps-medical-use and re-verify: customs-items.json:medication-in.
+- **data-eb0cf7663e** — CONTENT CHANGED. Review https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201 and re-verify: customs-items.json:cash-in.
+- **data-94ecd36525** — CONTENT CHANGED. Review https://www.gcaa.gov.ae/en/pages/UASRegistration.aspx/ and re-verify: customs-items.json:drones-ae.
+- **data-7fda14a6fe** — CONTENT CHANGED. Review https://www.mpi.govt.nz/bring-send-to-nz/bringing-and-posting-items-to-nz/travelling-to-new-zealand and re-verify: customs-items.json:food-plant-nz.
+- **data-24609addbf** — CONTENT CHANGED. Review https://www.auswaertiges-amt.de/de/reiseundsicherheit/saudiarabiensicherheit-202298 and re-verify: customs-items.json:cash-sa, entry-requirements.json:DE>SA.
+- **data-0effffcdb0** — CONTENT CHANGED. Review https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/cota-de-isencao-duty-free-e-bagagem-tributavel and re-verify: customs-items.json:alcohol-br, customs-items.json:tobacco-br.
+- **data-e2b2401231** — CONTENT CHANGED. Review https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/dinheiro-em-especie and re-verify: customs-items.json:cash-br.
+- **data-04d902e5f4** — CONTENT CHANGED. Review https://www.customs.gov.sg/at-customs/arriving-in-singapore/duty-free-concession-gst-relief/ and re-verify: customs-items.json:alcohol-sg, customs-items.json:tobacco-sg.
+- **data-292ac2145e** — CONTENT CHANGED. Review https://www.hsa.gov.sg/tobacco-regulation/vaping-enforcement/ and re-verify: customs-items.json:nicotine-pouches-sg, customs-items.json:heated-tobacco-sg.
+- **data-6fe2dd5fce** — CONTENT CHANGED. Review https://www.customs.gov.sg/doing-business/import-operations/import-procedures/controlled-and-prohibited-goods-for-imports/ and re-verify: customs-items.json:e-cigarettes-sg.
+- **data-df6449938f** — CONTENT CHANGED. Review https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/proibicoes-restricoes and re-verify: customs-items.json:cannabis-br, customs-items.json:weapons-br.
+- **data-d8a9ae5704** — CONTENT CHANGED. Review https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-medications/ and re-verify: customs-items.json:medication-sg, customs-items.json:peptides-sg, customs-items.json:medicated-gum-sg.
+- **data-f61f4b51ba** — CONTENT CHANGED. Review https://www.police.gov.sg/E-Services/Lodge-Cash-Movement-Report-For-Carriers-Recipients-or-Senders and re-verify: customs-items.json:cash-sg.
+- **data-f01601b567** — CONTENT CHANGED. Review https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/ and re-verify: customs-items.json:injectable-medication-sg.
+- **data-5cc9ad4661** — CONTENT CHANGED. Review https://www.caa.co.za/industry-information/uas/ and re-verify: customs-items.json:drones-za.
+- **data-f71e1212b6** — CONTENT CHANGED. Review https://www.legislation.gov.au/F1996B03651/latest/text and re-verify: customs-items.json:growth-hormone-au, customs-items.json:kratom-au, customs-items.json:phenibut-au.
+- **data-093068cb1a** — CONTENT CHANGED. Review https://www.legislation.gov.au/F2026L01327/latest/text and re-verify: customs-items.json:peptides-au, customs-items.json:melatonin-au, customs-items.json:kratom-au (+1 more).
+- **data-9390a51ecc** — CONTENT CHANGED. Review https://sertifikasicdob.pom.go.id/wasdisobat/sas/ and re-verify: customs-items.json:medication-id, customs-items.json:controlled-medication-id.
+- **data-70472d00ac** — CONTENT CHANGED. Review https://www.mem.gov.cn/gk/zfxxgkpt/fdzdgknr/202408/t20240808_497240.shtml and re-verify: customs-items.json:cbd-cn.
+- **data-4b0be3075a** — CONTENT CHANGED. Review https://www.casa.gov.au/knowyourdrone/drone-rules and re-verify: customs-items.json:drones-au.
+- **data-c95335fbfc** — CONTENT CHANGED. Review https://www.caas.gov.sg/unmanned-aircraft/registration-deregistration/ and re-verify: customs-items.json:drones-sg.
+- **data-01f92af026** — CONTENT CHANGED. Review https://www.sfa.gov.sg/bringing-food-for-private-consumption-from-overseas/list-of-food---food-products-allowed and re-verify: customs-items.json:meat-dairy-sg, customs-items.json:fresh-produce-sg.
+- **data-749e9a9d61** — CONTENT CHANGED. Review https://www.sfa.gov.sg/bringing-food-for-private-consumption-from-overseas/general-rule-to-bring-food-into-singapore-non-commercial and re-verify: customs-items.json:fresh-produce-sg.
+- **data-873f33ef3b** — CONTENT CHANGED. Review https://www.gov.br/agricultura/pt-br/assuntos/vigilancia-agropecuaria/viajantes-e-bagagens and re-verify: customs-items.json:meat-dairy-br, customs-items.json:fresh-produce-br.
+- **data-c50563ba1a** — CONTENT CHANGED. Review https://english1.visitkorea.or.kr/enu/TRV/TV_ENG_2_4.jsp and re-verify: customs-items.json:meat-dairy-kr, customs-items.json:fresh-produce-kr.
+- **data-856d7742d9** — CONTENT CHANGED. Review https://regeringen.se/pressmeddelanden/2025/02/regeringen-narkotikaklassar-kratom/ and re-verify: customs-items.json:kratom-se.
+- **data-7a2936c2df** — CONTENT CHANGED. Review https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=47964 and re-verify: customs-items.json:prescription-medication-cn.
+- **data-173780e8cc** — CONTENT CHANGED. Review https://web.customs.gov.tw/en/singlehtml/1865?cntId=cus16_87451_1865 and re-verify: customs-items.json:alcohol-tw, customs-items.json:tobacco-tw.
+- **data-11b6f457eb** — CONTENT CHANGED. Review https://web.customs.gov.tw/ekaohsiung/singlehtml/c718884d9be040dcb652112cdbabad3a?cntId=cb9e98e0aa664b4eb58f638076ddbeef and re-verify: customs-items.json:cash-tw.
+- **data-c86bb2a170** — CONTENT CHANGED. Review https://web.customs.gov.tw/taipei/singlehtml/3392?cntId=cus2_3392_3392_1351 and re-verify: customs-items.json:fresh-produce-tw.
+- **data-a5f9b31a99** — CONTENT CHANGED. Review https://www.mohw.gov.tw/cp-6649-79226-1.html and re-verify: customs-items.json:prescription-medication-tw.
+- **data-706f5e9ee2** — CONTENT CHANGED. Review https://web.customs.gov.tw/etaipei/singlehtml/1373?cntId=4a12960866294b029ad6bea2fa4ff4da and re-verify: customs-items.json:cannabis-tw.
+- **data-10dfe4d4ba** — CONTENT CHANGED. Review https://web.customs.gov.tw/taichung/singlehtml/274?cntId=523e44c77a674455b2385edfd0c24af3 and re-verify: customs-items.json:cbd-tw.
+- **data-d8e49e1dbe** — CONTENT CHANGED. Review https://web.customs.gov.tw/etaipei/singlehtml/1367?cntId=df67c73ce2f449f09c487bf7f3ed88bb and re-verify: customs-items.json:meat-dairy-tw.
+- **data-68132d9734** — CONTENT CHANGED. Review https://web.customs.gov.tw/en/singlehtml/3457?cntId=cus16_175758_3457 and re-verify: customs-items.json:e-cigarettes-tw.
+- **data-75713189f8** — CONTENT CHANGED. Review https://web.customs.gov.tw/ekaohsiung/singlehtml/9a18ddca4652423ba5e2f6801a8fe492?cntId=935f25ca5d15405a82a328b9f2813af0 and re-verify: customs-items.json:weapons-tw.
+- **data-1ca7f9b7aa** — CONTENT CHANGED. Review https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm and re-verify: customs-items.json:alcohol-co, customs-items.json:tobacco-co, customs-items.json:goods-allowance-co.
+- **data-4b40ab3390** — CONTENT CHANGED. Review https://www.auswaertiges-amt.de/de/service/laender/jordanien-node/jordaniensicherheit-218008 and re-verify: customs-items.json:alcohol-jo, customs-items.json:tobacco-jo, customs-items.json:weapons-jo (+4 more).
+- **data-2471313d9d** — CONTENT CHANGED. Review https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=99648&param2=136510&param3=1 and re-verify: customs-items.json:alcohol-cr, customs-items.json:tobacco-cr, customs-items.json:prescription-medication-cr (+2 more).
+- **data-c4888ac556** — CONTENT CHANGED. Review https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=99936&param2=136926&param3=1 and re-verify: customs-items.json:cash-cr.
+- **data-885c42c4ef** — CONTENT CHANGED. Review https://www.auswaertiges-amt.de/de/service/laender/katar-node/katarsicherheit-202280 and re-verify: customs-items.json:alcohol-qa, customs-items.json:pork-products-qa.
+- **data-308abda122** — CONTENT CHANGED. Review https://jca.gov.jm/faq/what-are-my-duty-free-allowances-and-exemptions and re-verify: customs-items.json:alcohol-jm, customs-items.json:tobacco-jm.
+- **data-62c453de71** — CONTENT CHANGED. Review https://travel.gc.ca/destinations/tanzania and re-verify: customs-items.json:cash-tz, customs-items.json:plastic-bags-tz.
+- **data-ee94711958** — CONTENT CHANGED. Review https://www.jcaa.gov.jm/recreational-ua-operators-or-hobbyists/ and re-verify: customs-items.json:drones-jm.
+- **data-02ca25db1c** — CONTENT CHANGED. Review https://www.tcaa.go.tz/pages/drones and re-verify: customs-items.json:drones-tz.
+- **data-349401efa3** — CONTENT CHANGED. Review https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-import/ and re-verify: customs-items.json:medical-devices-sg.
+- **data-ff8d4489f7** — CONTENT CHANGED. Review https://www.aemps.gob.es/medicamentos-de-uso-humano/estupefacientes-y-psicotropos/certificados-y-permisos-para-el-transporte-de-medicamentos-estupefacientes-y-psicotropos-por-viajeros-en-tratamiento-medico/ and re-verify: customs-items.json:controlled-medication-es.
+- **data-108b02f0ff** — CONTENT CHANGED. Review https://www.mda.gov.my/index.php/industry/exemption/personal-use-medical-device and re-verify: customs-items.json:medical-devices-my.
+- **data-11d23308cf** — CONTENT CHANGED. Review https://www.cnb.gov.sg/singapore-drug-situation/drugs--psychoactive-substances--and-inhalants/kratom/ and re-verify: customs-items.json:kratom-sg.
+- **data-8859b7069a** — CONTENT CHANGED. Review https://frcs.org.fj/our-services/customs/travellers/visiting-fiji/arriving-in-fiji/ and re-verify: customs-items.json:alcohol-fj, customs-items.json:tobacco-fj, customs-items.json:e-cigarettes-fj (+3 more).
+- **data-3b21236f0d** — CONTENT CHANGED. Review https://www.legislation.gov.uk/uksi/2001/3998/regulation/4 and re-verify: customs-items.json:growth-hormone-gb.
+- **data-8000258802** — CONTENT CHANGED. Review https://www.immigration.govt.nz/ and re-verify: destinations.json:NZ.
+- **data-d0545f932b** — CONTENT CHANGED. Review https://immigration.gov.ph/ and re-verify: destinations.json:PH.
+- **data-650fb19b4b** — CONTENT CHANGED. Review https://www.hikorea.go.kr/Main.pt and re-verify: destinations.json:KR.
+- **data-9ddbcf051b** — CONTENT CHANGED. Review https://www.mfa.gov.rs/en and re-verify: destinations.json:RS.
+- **data-66e35a45f6** — CONTENT CHANGED. Review https://www.imi.gov.my/index.php/en/main-services/visa/visa-requirement-by-country/ and re-verify: destinations.json:MY.
+- **data-d4f37f4649** — CONTENT CHANGED. Review https://www.boca.gov.tw/cp-149-4486-7785a-2.html and re-verify: destinations.json:TW, entry-requirements.json:US>TW, entry-requirements.json:GB>TW (+18 more).
+- **data-8231b49067** — CONTENT CHANGED. Review https://www.mfa.am/en/visa/ and re-verify: destinations.json:AM, entry-requirements.json:CA>AM, entry-requirements.json:MX>AM (+4 more).
+- **data-cd08948d7d** — CONTENT CHANGED. Review https://www.gub.uy/ministerio-interior/comunicacion/publicaciones/regimen-visas-admision and re-verify: destinations.json:UY, entry-requirements.json:US>UY, entry-requirements.json:GB>UY (+20 more).
+- **data-d36a48c46d** — CONTENT CHANGED. Review https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-visitor-visa-national-list and re-verify: entry-requirements.json:UA>GB, entry-requirements.json:IN>GB, entry-requirements.json:AL>GB (+12 more).
+- **data-75fc7ce0aa** — CONTENT CHANGED. Review https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/eligibility/eta-x.html and re-verify: entry-requirements.json:BR>CA, entry-requirements.json:MX>CA, entry-requirements.json:AR>CA (+3 more).
+- **data-7b66b413cb** — CONTENT CHANGED. Review https://image.mfa.go.th/mfa/0/umufy3EgqL/Con0926/Visa_Exemption_(EN)_0.jpg and re-verify: entry-requirements.json:US>TH, entry-requirements.json:GB>TH, entry-requirements.json:CA>TH (+57 more).
+- **data-5393933587** — CONTENT CHANGED. Review https://www.mfa.gov.sg/Countries-Regions/U/United-Arab-Emirates/Travel-Page and re-verify: entry-requirements.json:SG>AE.
+- **data-64692f38bb** — CONTENT CHANGED. Review https://www.immigration.govt.nz/visas/visitor-visa/ and re-verify: entry-requirements.json:UA>NZ, entry-requirements.json:CN>NZ.
+- **data-36d3e3eff3** — CONTENT CHANGED. Review https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen and re-verify: entry-requirements.json:US>AE, entry-requirements.json:AU>AE, entry-requirements.json:NZ>AE (+49 more).
+- **data-b9247b2304** — CONTENT CHANGED. Review https://washington.mfa.gov.sg/visa-and-entry-requirements/ and re-verify: entry-requirements.json:US>SG.
+- **data-d5a3b3a276** — CONTENT CHANGED. Review https://travel.gc.ca/destinations/saudi-arabia and re-verify: entry-requirements.json:CA>SA.
+- **data-56c0bd7029** — CONTENT CHANGED. Review https://travel.gc.ca/destinations/brazil and re-verify: entry-requirements.json:CA>BR.
+- **data-f038010c28** — CONTENT CHANGED. Review https://www.gov.br/mre/pt-br/embaixada-mexico/requisitos-para-entrada-de-ciudanos-mexicanos-en-brasil-para-turismo-o-negocios and re-verify: entry-requirements.json:MX>BR.
+- **data-a1a9234753** — CONTENT CHANGED. Review https://www.smartraveller.gov.au/destinations/asia/singapore and re-verify: entry-requirements.json:AU>SG.
+- **data-5d83519904** — CONTENT CHANGED. Review https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa_requirements and re-verify: entry-requirements.json:NZ>SG, entry-requirements.json:CL>SG, entry-requirements.json:IN>SG.
+- **data-4c97db00ca** — CONTENT CHANGED. Review https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa_requirements/visa-detail-page/ukraine and re-verify: entry-requirements.json:UA>SG.
+- **data-8feaf957ba** — CONTENT CHANGED. Review https://www.cbp.gov/travel/international-visitors/visa-waiver-program and re-verify: entry-requirements.json:IN>US, travel-authorisations.json:esta.
+- **data-8ca9822bd2** — CONTENT CHANGED. Review https://www.mfa.gov.sg/Overseas-Mission/Beijing/consular-services/visa-information/ and re-verify: entry-requirements.json:CN>SG.
+- **data-20c8ba6c40** — CONTENT CHANGED. Review https://www.irishimmigration.ie/coming-to-visit-ireland/short-stay-visa-waiver-programme/ and re-verify: entry-requirements.json:CN>IE, entry-requirements.json:IN>IE.
+- **data-3ad0dfaece** — CONTENT CHANGED. Review https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/malaysia/ and re-verify: entry-requirements.json:SG>MY.
+- **data-4344672611** — CONTENT CHANGED. Review https://www.smartraveller.gov.au/destinations/asia/malaysia and re-verify: entry-requirements.json:AU>MY.
+- **data-c6bc242831** — CONTENT CHANGED. Review https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/pengecualian-visa-malaysia-china-bagi-lawatan-jangka-pendek-berkuat-kuasa-esok/ and re-verify: entry-requirements.json:CN>MY.
+- **data-3034246cd4** — CONTENT CHANGED. Review https://www.boca.gov.tw/cp-220-1885-b6ae7-2.html and re-verify: entry-requirements.json:IN>TW.
+- **data-6501597386** — CONTENT CHANGED. Review https://www.mfa.gov.sg/Countries-Regions/A/Albania/Travel-Page and re-verify: entry-requirements.json:SG>AL.
+- **data-06e3e2936a** — CONTENT CHANGED. Review https://www.dhs.gov/visa-waiver-program and re-verify: entry-requirements.json:FR>US, entry-requirements.json:ES>US, entry-requirements.json:DE>US (+27 more).
+- **data-b6a0622af6** — CONTENT CHANGED. Review https://www.nederlandwereldwijd.nl/reisadvies/japan and re-verify: entry-requirements.json:NL>JP.
+- **data-359fff9c7a** — CONTENT CHANGED. Review https://www.auswaertiges-amt.de/de/reiseundsicherheit/japansicherheit-213032 and re-verify: entry-requirements.json:DE>JP.
+- **data-74c4d8cdf2** — CONTENT CHANGED. Review https://www.auswaertiges-amt.de/de/service/laender/singapur-node/singapursicherheit-225412 and re-verify: entry-requirements.json:DE>SG.
+- **data-5f9aa0495a** — CONTENT CHANGED. Review https://www.nederlandwereldwijd.nl/reisadvies/singapore and re-verify: entry-requirements.json:NL>SG.
+- **data-57f4a46ee5** — CONTENT CHANGED. Review https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332 and re-verify: entry-requirements.json:DE>AE, entry-requirements.json:AT>AE, entry-requirements.json:BE>AE (+37 more).
+- **data-5f314004bc** — CONTENT CHANGED. Review https://www.nederlandwereldwijd.nl/reisadvies/verenigde-arabische-emiraten and re-verify: entry-requirements.json:NL>AE.
+- **data-3464f208cc** — CONTENT CHANGED. Review https://www.nederlandwereldwijd.nl/reisadvies/maldiven and re-verify: entry-requirements.json:NL>MV.
+- **data-fc8d8e971d** — CONTENT CHANGED. Review https://www.auswaertiges-amt.de/de/service/laender/malediven-node/maledivensicherheit/220382 and re-verify: entry-requirements.json:DE>MV.
+- **data-194db24629** — CONTENT CHANGED. Review https://www.nederlandwereldwijd.nl/reisadvies/saoedi-arabie and re-verify: entry-requirements.json:NL>SA.
+- **data-4e97fc29d1** — CONTENT CHANGED. Review https://www.auswaertiges-amt.de/de/reiseundsicherheit/aegyptensicherheit-212622 and re-verify: entry-requirements.json:DE>EG.
+- **data-60adf2dadc** — CONTENT CHANGED. Review https://www.nederlandwereldwijd.nl/reisadvies/egypte and re-verify: entry-requirements.json:NL>EG.
+- **data-e1c353988d** — CONTENT CHANGED. Review https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=Maldivas and re-verify: entry-requirements.json:ES>MV.
+- **data-83bb1acff8** — CONTENT CHANGED. Review https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=Egipto and re-verify: entry-requirements.json:ES>EG.
+- **data-9001f1414d** — CONTENT CHANGED. Review https://www.auswaertiges-amt.de/de/service/laender/tuerkei-node/tuerkeisicherheit-201962 and re-verify: entry-requirements.json:DE>TR.
+- **data-2755a8eee2** — CONTENT CHANGED. Review https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=Singapur and re-verify: entry-requirements.json:ES>SG.
+- **data-91ef7d5549** — CONTENT CHANGED. Review https://www.diplomatie.gouv.fr/fr/information-par-pays/jordanie/conseils-aux-voyageurs-entree-sejour and re-verify: entry-requirements.json:FR>JO.
+- **data-9434f31edc** — CONTENT CHANGED. Review https://www.nederlandwereldwijd.nl/reisadvies/jordanie and re-verify: entry-requirements.json:NL>JO.
+- **data-aa82802f5b** — CONTENT CHANGED. Review https://travel.gc.ca/destinations/jordan and re-verify: entry-requirements.json:CA>JO.
+- **data-67b9008b4f** — CONTENT CHANGED. Review https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=Arabia+Saud%C3%AD and re-verify: entry-requirements.json:ES>SA.
+- **data-f8baeafbc9** — CONTENT CHANGED. Review https://www.nederlandwereldwijd.nl/reisadvies/bahamas and re-verify: entry-requirements.json:NL>BS.
+- **data-1401e7be28** — CONTENT CHANGED. Review https://www.gob.ec/mremh/tramites/concesion-visa-visitante-temporal-turista-90-dias and re-verify: entry-requirements.json:CN>EC, entry-requirements.json:IN>EC.
+- **data-ece01c8323** — CONTENT CHANGED. Review https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/tanzania/ and re-verify: entry-requirements.json:SG>TZ.
+- **data-c4191cfa4f** — CONTENT CHANGED. Review https://www.nederlandwereldwijd.nl/reisadvies/cambodja and re-verify: entry-requirements.json:NL>KH.
+- **data-fe18f110aa** — CONTENT CHANGED. Review https://www.mfa.am/en/visafreelist and re-verify: entry-requirements.json:US>AM, entry-requirements.json:GB>AM, entry-requirements.json:AU>AM (+9 more).
+- **data-c881091efd** — CONTENT CHANGED. Review https://www.mfa.am/en/whoneedvisa and re-verify: entry-requirements.json:AR>AM, entry-requirements.json:BR>AM, entry-requirements.json:CN>AM (+1 more).
+- **data-1340d49844** — CONTENT CHANGED. Review https://lex.uz/ru/docs/513096 and re-verify: entry-requirements.json:AU>UZ, entry-requirements.json:AR>UZ, entry-requirements.json:IL>UZ (+15 more).
+- **data-86539c20bd** — CONTENT CHANGED. Review https://mofa.gov.bs/?p=35506 and re-verify: entry-requirements.json:IN>BS.
+- **data-3605d636a0** — CONTENT CHANGED. Review https://europa.eu/youreurope/citizens/travel/entry-exit/eu-citizen/index_en.htm and re-verify: nationality-rules.json:row.
+- **data-67e9ad9dd5** — CONTENT CHANGED. Review https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-07-25;286 and re-verify: overstay-penalties.json:IT.
+
+## Newly unreachable (URL moved? blocked?)
+
+- **rw-visa-on-arrival** — fetch failed (fetch failed): https://www.migration.gov.rw/visa-on-arrival — used by data/entry-requirements.json (Rwanda DGIE visa-on-arrival terms by nationality group)
+- **data-432c6b3ae9** — fetch failed (no readable content (0 chars: JS-rendered page or bot challenge)): https://eur-lex.europa.eu/eli/dec/2022/2451/oj — used by countries.json:row
+- **data-891842a052** — fetch failed (HTTP 403): https://www.consilium.europa.eu/en/press/press-releases/2023/12/30/schengen-area-council-takes-move-towards-lifting-border-controls-with-bulgaria-and-romania/ — used by countries.json:row
+- **za-visa-exemption-list** — fetch failed (fetch failed): https://www.dha.gov.za/index.php/immigration-services/exempt-countries — used by data/entry-requirements.json (South Africa DHA visa exemption list — also watch for the new ETA's eligibility/fee terms once published)
+- **data-51bc433d5a** — fetch failed (no readable content (10 chars: JS-rendered page or bot challenge)): https://laws.e-gov.go.jp/law/333AC0000000006 — used by customs-items.json:weapons-jp
+- **data-f5410229e7** — fetch failed (fetch failed): https://trade.gov.tr/customs-formalities/frequently-asked-questions/passenger-transactions — used by customs-items.json:alcohol-tr, customs-items.json:tobacco-tr
+- **data-7002dc421f** — fetch failed (fetch failed): https://www.abf.gov.au/help-and-support-subsite/CustomsNotices/2026-29.pdf — used by customs-items.json:nicotine-pouches-au
+- **data-0467ff9207** — fetch failed (fetch failed): https://www.austrac.gov.au/general-public/moving-money-overseas — used by customs-items.json:cash-au
+- **data-d45b75858a** — fetch failed (fetch failed): https://www.tga.gov.au/resources/explore-topic/medicinal-cannabis-hub/medicinal-cannabis-information-patients/medicinal-cannabis-importation-and-travellers-exemption — used by customs-items.json:cannabis-au
+- **data-a0eb4b6659** — fetch failed (fetch failed): https://www.tga.gov.au/resources/consumer-information-and-resources/travelling-medicines-and-medical-devices/entering-australia — used by customs-items.json:medication-au, customs-items.json:injectable-medication-au
+- **data-68336cdeb9** — fetch failed (fetch failed): https://www.tga.gov.au/products/unapproved-therapeutic-goods/therapeutic-vaping-goods/vaping-hub/vapes-information-individuals-and-patients — used by customs-items.json:e-cigarettes-au
+- **data-a0b151e50b** — fetch failed (fetch failed): https://www.agriculture.gov.au/biosecurity-trade/travelling/bringing-mailing-goods — used by customs-items.json:meat-dairy-au
+- **data-a1a325946a** — fetch failed (fetch failed): https://www.agriculture.gov.au/biosecurity-trade/travelling/to-australia — used by customs-items.json:fresh-produce-au
+- **data-98146a831e** — fetch failed (fetch failed): https://import.firearms.gov.au/landing/ — used by customs-items.json:weapons-au
+- **data-24f9b6018f** — fetch failed (fetch failed): https://www.abf.gov.au/help-and-support-subsite/CustomsNotices/2022-06.pdf — used by customs-items.json:weapons-au
+- **data-92b7cc36f4** — fetch failed (fetch failed): https://www.dubaicustoms.gov.ae/en/OpenData/Publications/PassengerCustomsGuide.pdf — used by customs-items.json:alcohol-ae, customs-items.json:tobacco-ae, customs-items.json:paan-nasvaar-ae (+3 more)
+- **data-a7c9364427** — fetch failed (fetch failed): https://www.abf.gov.au/help-and-support-subsite/CustomsNotices/2015-40.pdf — used by customs-items.json:weapons-au
+- **data-f7707d880d** — fetch failed (fetch failed): https://www.ede.gov.ae/en/w/issue-of-permit-to-import-medicines-for-personal-use — used by customs-items.json:medication-ae, customs-items.json:controlled-medication-ae
+- **data-b34a87124c** — fetch failed (fetch failed): https://www.dubaicustoms.gov.ae/en/eServices/ServicesForIndividuals/ViewCustomsProcedure/Pages/DeclaringMoneyProcedure.aspx — used by customs-items.json:cash-ae
+- **data-cdecc379f4** — fetch failed (HTTP 403): https://customs.gov.ph/guidelines-on-arriving-travelers/ — used by customs-items.json:alcohol-ph, customs-items.json:tobacco-ph, customs-items.json:weapons-ph
+- **data-e232714112** — fetch failed (HTTP 403): https://customs.gov.ph/foreign-currency/ — used by customs-items.json:cash-ph
+- **data-1886c61160** — fetch failed (HTTP 404): https://www.customs.govt.nz/media/cjlfsav2/major-events-travel-advisory-1.pdf — used by customs-items.json:cannabis-nz
+- **data-4bad156f24** — fetch failed (HTTP 500): https://www.legislation.gov.uk/uksi/2001/3998/schedule/4 — used by customs-items.json:controlled-medication-gb, customs-items.json:injectable-medication-gb, customs-items.json:growth-hormone-gb
+- **data-8738643d43** — fetch failed (The operation was aborted due to timeout): https://www.legislation.gov.uk/uksi/2001/3998/schedule/3 — used by customs-items.json:controlled-medication-gb, customs-items.json:injectable-medication-gb
+- **data-de64db291e** — fetch failed (fetch failed): https://ticaret.gov.tr/data/65966a8013b876fb4cb76a9d/2024-18%20Sayl%C4%B1%20Genelge.pdf — used by customs-items.json:e-cigarettes-tr
+- **data-1a9d10e124** — fetch failed (fetch failed): https://rwandalii.org/akn/rw/act/mo/2010/12/eng@2010-12-13 — used by customs-items.json:meat-dairy-rw
+- **data-c62a85d1c0** — fetch failed (fetch failed): https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/95621 — used by customs-items.json:e-cigarettes-ph
+- **data-a818353981** — fetch failed (fetch failed): https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/6/214-ndcp.signed.pdf — used by customs-items.json:fresh-produce-vn
+- **data-99552ea7bd** — fetch failed (HTTP 404): https://www.mhlw.go.jp/content/11120000/001743042.pdf — used by customs-items.json:kratom-jp, customs-items.json:poppers-jp
+- **data-2ff18e07bd** — fetch failed (HTTP 404): https://jca.gov.jm/wp-content/uploads/2025/10/Adjusted-JCA-and-FID-collaborate-under-POCA5.x37584.pdf — used by customs-items.json:cash-jm
+- **data-6245bdc4a1** — fetch failed (HTTP 404): https://jca.gov.jm/wp-content/uploads/2025/03/Prohibited-and-Restricted-Items.x68962.pdf — used by customs-items.json:meat-dairy-jm, customs-items.json:honey-jm, customs-items.json:fresh-produce-jm (+2 more)
+- **data-931f388c0a** — fetch failed (fetch failed): https://carc.gov.jo/en/drones — used by customs-items.json:drones-jo
+- **data-e1a50f635e** — fetch failed (fetch failed): https://www.customs.gov.qa/Arabic/Documents/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF%20%D9%84%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AC%D9%85%D8%B1%D9%83%D9%8A%D8%A9%20%D8%A8%D9%85%D9%86%D8%A7%D9%81%D8%B0%20%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84%20%D8%A7%D9%84%D8%A7%D9%88%D9%84%D9%89%20%D8%A8%D8%AF%D9%88%D9%84%20%D9%85%D8%AC%D9%84%D8%B3%20%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%20%D9%84%D8%AF%D9%88%D9%84%20%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9.pdf — used by customs-items.json:tobacco-qa
+- **data-f5fa644ce6** — fetch failed (fetch failed): https://cairo.embassy.qa/en/egypt/travel-tips — used by customs-items.json:cash-eg
+- **data-69f3ba7658** — fetch failed (fetch failed): https://www.pica.gov.jm/immigration/entry-visa-requirements — used by destinations.json:JM
+- **data-a152aa1e7a** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/MAR — used by entry-requirements.json:IT>MA
+- **data-a1dc4d0ce9** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/KEN — used by entry-requirements.json:IT>KE
+- **data-118a7feb85** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/USA — used by entry-requirements.json:IT>US
+- **data-ab5996880b** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/CAN — used by entry-requirements.json:IT>CA
+- **data-e7df2e75ab** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/MEX — used by entry-requirements.json:IT>MX
+- **data-a05217e6aa** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/BRA — used by entry-requirements.json:IT>BR
+- **data-7d48e8f65f** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/GBR — used by entry-requirements.json:IT>GB
+- **data-946955f5b2** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/GEO — used by entry-requirements.json:FR>GE, entry-requirements.json:ES>GE, entry-requirements.json:DE>GE (+2 more)
+- **data-5022615ac4** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/THA — used by entry-requirements.json:IT>TH
+- **data-953901a7a6** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/VNM — used by entry-requirements.json:IT>VN
+- **data-6280b1b793** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/MYS — used by entry-requirements.json:IT>MY
+- **data-d6ac40722f** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/PHL — used by entry-requirements.json:IT>PH
+- **data-6ef6931142** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/MDV — used by entry-requirements.json:IT>MV
+- **data-941c891848** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/EGY — used by entry-requirements.json:IT>EG
+- **data-0386daca21** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/PER — used by entry-requirements.json:IT>PE
+- **data-2ca0acbbb6** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/DOM — used by entry-requirements.json:IT>DO
+- **data-284517d5a3** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/CRI — used by entry-requirements.json:IT>CR
+- **data-9ba9931111** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/QAT — used by entry-requirements.json:IT>QA
+- **data-ae729a022f** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/JAM — used by entry-requirements.json:IT>JM
+- **data-209aaf3388** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/BHS — used by entry-requirements.json:IT>BS
+- **data-4e9ce1b1cc** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/ECU — used by entry-requirements.json:IT>EC
+- **data-94a7f52fb0** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/ARM — used by entry-requirements.json:IT>AM
+- **data-b7558e9e70** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/SYC — used by entry-requirements.json:IT>SC
+- **data-ce3c601101** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/GHA — used by entry-requirements.json:US>GH, entry-requirements.json:GB>GH, entry-requirements.json:CA>GH (+19 more)
+- **data-bfaefcf71b** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/ZMB — used by entry-requirements.json:IT>ZM
+- **data-98815954bb** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/MUS — used by entry-requirements.json:IT>MU
+- **data-7d011ab762** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/ZWE — used by entry-requirements.json:IT>ZW
+- **data-b98679dd5c** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/KGZ — used by entry-requirements.json:US>KG, entry-requirements.json:GB>KG, entry-requirements.json:CA>KG (+19 more)
+- **data-e70bd92df3** — fetch failed (fetch failed): https://0404.go.kr/ntnSafetyInfo/301/detail — used by entry-requirements.json:KR>KG
+- **data-d0e8ade46e** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/OMN — used by entry-requirements.json:US>OM, entry-requirements.json:GB>OM, entry-requirements.json:CA>OM (+18 more)
+- **data-b05150a0c4** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/BRN — used by entry-requirements.json:US>BN, entry-requirements.json:GB>BN, entry-requirements.json:CA>BN (+18 more)
+- **data-a83d8f6297** — fetch failed (HTTP 404): https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01) — used by entry-requirements.json:AT>AE, entry-requirements.json:BE>AE, entry-requirements.json:BG>AE (+18 more)
+- **data-b6f1899fa4** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638883494519747547 — used by entry-requirements.json:AT>BA
+- **data-c4fdd77467** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638883511753966503 — used by entry-requirements.json:BE>BA
+- **data-6281cd3460** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638883531345686936 — used by entry-requirements.json:BG>BA
+- **data-a5f1c033b4** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638887761830659875 — used by entry-requirements.json:CY>BA
+- **data-1dff563512** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638884180185942653 — used by entry-requirements.json:DK>BA
+- **data-f43decca3e** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638884251050581867 — used by entry-requirements.json:HR>BA
+- **data-07f3491e61** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638884175022732022 — used by entry-requirements.json:CZ>BA
+- **data-99a5de82a3** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638884225425865092 — used by entry-requirements.json:GR>BA
+- **data-f6c3a29709** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886780972585765 — used by entry-requirements.json:HU>BA
+- **data-aad59a44d1** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638884194892215809 — used by entry-requirements.json:EE>BA
+- **data-f5746e5848** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638884209011970465 — used by entry-requirements.json:FI>BA
+- **data-0f59311f5a** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886875439854778 — used by entry-requirements.json:PL>BA
+- **data-adcb9b4e5e** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886775887040221 — used by entry-requirements.json:LU>BA
+- **data-6e03e7207e** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886773596241280 — used by entry-requirements.json:LT>BA
+- **data-e7c4a660ea** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638884397584823001 — used by entry-requirements.json:LV>BA
+- **data-56b5b6e10f** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_639222101785307612 — used by entry-requirements.json:IE>BA
+- **data-b32bce4154** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886790875262202 — used by entry-requirements.json:MT>BA
+- **data-a29c2902b6** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638887765301578339 — used by entry-requirements.json:RO>BA
+- **data-933abda1e5** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886876828018609 — used by entry-requirements.json:PT>BA
+- **data-f545406a7d** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886946546990155 — used by entry-requirements.json:SI>BA
+- **data-98f121d8c0** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886945200626735 — used by entry-requirements.json:SK>BA
+- **data-96b2efd7d1** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638887656343958811 — used by entry-requirements.json:SE>BA
+- **data-b5e262cf42** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638883481060049996 — used by entry-requirements.json:AD>BA
+- **data-94f376861e** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638975086772324997 — used by entry-requirements.json:AL>BA
+- **data-72b36a39d0** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886943611766628 — used by entry-requirements.json:MK>BA
+- **data-3a6d088af9** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_639050098700037188 — used by entry-requirements.json:GE>BA
+- **data-9ef89dc098** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886811835502138 — used by entry-requirements.json:MC>BA
+- **data-11828de50d** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886809407303595 — used by entry-requirements.json:MD>BA
+- **data-71c3dbfef8** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638884171543811588 — used by entry-requirements.json:ME>BA
+- **data-9939f02849** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886917376997574 — used by entry-requirements.json:SM>BA
+- **data-1b281232e8** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886957200216716 — used by entry-requirements.json:RS>BA
+- **data-3c35205b77** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638887640244282053 — used by entry-requirements.json:VA>BA
+- **data-2303bec854** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_639215238587178303 — used by entry-requirements.json:AZ>BA
+- **data-2f1697b34c** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886911908205123 — used by entry-requirements.json:RU>BA
+- **data-e4bfa1171c** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638883518204682391 — used by entry-requirements.json:BY>BA
+- **data-9adf7c68c5** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638883490864830189 — used by entry-requirements.json:AM>BA
+- **data-94f89deaf6** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_639222210020811154 — used by entry-requirements.json:TR>BA
+- **data-ecea9d34fb** — fetch failed (no readable content (69 chars: JS-rendered page or bot challenge)): https://esta.cbp.dhs.gov/ — used by travel-authorisations.json:esta
+- **data-ab3888a94a** — fetch failed (HTTP 403): https://lovebali.baliprov.go.id/ — used by trip-charges.json:bali-tourist-levy
