@@ -32245,12 +32245,12 @@
         }
       }
     ],
-    "notes": "The Government of Montenegro page states: 'Citizens of China must have a visa for Montenegro. Visas are issued by the Montenegrin diplomatic and consular missions.' Two narrow exemptions apply only until 31 October 2026: Chinese citizens travelling 'as an organized tourist group entering, staying, and leaving Montenegro together', with proof of a paid tourist arrangement and of guaranteed return, may stay up to 30 days; and holders of a valid Chinese business passport with an invitation letter may stay up to 30 days. From 1 November 2026 these end (Government decree of 23 July 2026, announced by the Ministry of Foreign Affairs on 27 July 2026: nationals of China will require a visa as of 1 November 2026). Independent tourists need a visa now. Exception for visa holders (stated on the same page): holders of travel documents with a valid Schengen visa, a valid visa of the United States, the United Kingdom or Ireland, or a residence permit of those countries, 'may enter and stay in, or transit through, the territory of Montenegro for up to 30 days, but no longer than the expiration of their visa if the validity period is shorter than 30 days.' A short-stay (C) visa applicant must show travel health insurance (Law on Foreigners Art. 23), and the passport must be valid at least 3 months after departure, have two blank pages and have been issued within 10 years (Art. 24). A C visa allows at most 90 days in 180 (Art. 34). Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "notes": "The Government of Montenegro page states: 'Citizens of China must have a visa for Montenegro. Visas are issued by the Montenegrin diplomatic and consular missions.' Two narrow exemptions the page still lists (organised tourist groups, and business-passport holders with an invitation, up to 30 days each) applied only 'until October 31, 2026'; from 1 November 2026 those two exemptions no longer apply (Government decree of 23 July 2026, announced by the Ministry of Foreign Affairs on 27 July 2026). Exception for visa holders (stated on the same page): holders of travel documents with a valid Schengen visa, a valid visa of the United States, the United Kingdom or Ireland, or a residence permit of those countries, 'may enter and stay in, or transit through, the territory of Montenegro for up to 30 days, but no longer than the expiration of their visa if the validity period is shorter than 30 days.' A short-stay (C) visa applicant must show travel health insurance (Law on Foreigners Art. 23), and the passport must be valid at least 3 months after departure, have two blank pages and have been issued within 10 years (Art. 24). A C visa allows at most 90 days in 180 (Art. 34). Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
     "legal_source": {
       "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — China (Government of Montenegro, Ministry of Foreign Affairs)",
       "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/china"
     },
-    "verified_at": "2026-10-27",
+    "verified_at": "2026-11-02",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -32258,6 +32258,11 @@
         "claim": "Entry requirement, stay and documents",
         "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — China (Government of Montenegro, Ministry of Foreign Affairs)",
         "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/china"
+      },
+      {
+        "claim": "Visa required from 1 November 2026 (decree of 23 July 2026)",
+        "name": "Government of Montenegro, Ministry of Foreign Affairs — 'Montenegro fully aligns its visa policy with the European Union' (27 July 2026)",
+        "url": "https://www.gov.me/en/article/montenegro-fully-aligns-its-visa-policy-with-the-european-union-citizens-of-numerous-countries-can-now-apply-for-a-montenegrin-visa"
       },
       {
         "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
@@ -61347,6 +61352,2088 @@
         "claim": "Register with the local police within 24 hours of arrival; hotels do it automatically; fines if you don't",
         "name": "Auswärtiges Amt — Serbien: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/serbiensicherheit-207502"
+      }
+    ]
+  },
+  {
+    "nationality": "AT",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Austria states: 'Nationals of Austria may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Nationals of Austria may enter, pass through the territory of and stay in Montenegro up to 30 days, without a visa, with a valid identity card issued by the competent authority of Austria.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Austria (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/austria"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Austria (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/austria"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "BE",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Belgium states: 'Nationals of Belgium may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Nationals of Belgium may enter, pass through the territory of and stay in Montenegro up to 30 days, without a visa, with a valid identity card issued by the competent authority of Belgium.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Belgium (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/belgium"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Belgium (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/belgium"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "BG",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Bulgaria states: 'Nationals of Bulgaria may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Nationals of Bulgaria may enter, pass through the territory of and stay in Montenegro up to 30 days, without a visa, with a valid identity card issued by the competent authority of Bulgaria.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Bulgaria (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/bulgaria"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Bulgaria (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/bulgaria"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "HR",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Croatia states: 'Nationals of Croatia may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Nationals of Croatia may enter, pass through the territory of and stay in Montenegro up to 30 days, without a visa, with a valid identity card issued by the competent authority of Croatia.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Croatia (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/croatia"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Croatia (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/croatia"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "CY",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Cyprus states: 'Nationals of the Republic of Cyprus may enter, cross the territory and stay in Montenegro up to 90 days without visa, with valid travel document.' The same page adds: 'Nationals of the Republic of Cyprus may enter, cross the territory and stay in Montenegro up to 30 days without visa, with valid Identity Card isued by relevant authority of the Republic of Cyprus.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Cyprus (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/cyprus"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Cyprus (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/cyprus"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "CZ",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Czech Republic states: 'Nationals of Czech may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Nationals of Czech may enter, pass through the territory of and stay in Montenegro up to 30 days, without a visa, with a valid identity card issued by the competent authority of Czech.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Czech Republic (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/czech-republic"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Czech Republic (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/czech-republic"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "DK",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Denmark states: 'Citizens of Denmark can enter, transit through the territory and stay in Montenegro for up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Citizens of Denmark can enter, transit through the territory and stay in Montenegro for up to 30 days, without a visa, with a valid identity card issued by the competent authority of Denmark.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Denmark (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/denmark"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Denmark (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/denmark"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "EE",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Estonia states: 'Nationals of the Republic of Estonia may enter, cross the territory and stay in Montenegro up to 90 days without visa, with valid travel document.' The same page adds: 'Nationals of the Republic of Estonia may enter, cross the territory and stay in Montenegro up to 30 days without visa, with valid Identity Card isued by relevant authority of the Republic of Estonia.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Estonia (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/estonia"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Estonia (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/estonia"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "FI",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Finland states: 'Citizens of Finland can enter, transit, and stay in Montenegro for up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Citizens of Finland can enter, transit through the territory and stay in Montenegro for up to 30 days, with a valid identity card issued by the competent authority of Finland.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Finland (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/finland"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Finland (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/finland"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "GR",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Greece states: 'Nationals of the Hellenic Republic may enter, cross the territory and stay in Montenegro up to 90 days without visa, with valid travel document.' The same page adds: 'Nationals of the Hellenic Republic may enter, cross the territory and stay in Montenegro up to 30 days without visa, with valid Identity Card isued by relevant authority of the Hellenic Republic.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Greece (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/greece"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Greece (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/greece"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "HU",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Hungary states: 'Nationals of Hungary may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Nationals of Hungary may enter, pass through the territory of and stay in Montenegro up to 30 days, without a visa, with a valid identity card issued by the competent authority of Hungary.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Hungary (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/hungary"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Hungary (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/hungary"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "IE",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Ireland states: 'Nationals of Ireland may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Nationals of Ireland may enter, pass through the territory of and stay in Montenegro up to 30 days, without a visa, with a valid identity card issued by the competent authority of Ireland.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Ireland (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/ireland"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Ireland (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/ireland"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "LV",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Latvia states: 'Nationals of the Republic of Latvia may enter, cross the territory and stay in Montenegro up to 90 days without visa, with valid travel document.' The same page adds: 'Nationals of the Republic of Latvia may enter, cross the territory and stay in Montenegro up to 30 days without visa, with valid Identity Card isued by relevant authority of the Republic of Latvia.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Latvia (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/latvia"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Latvia (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/latvia"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "LT",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Lithuania states: 'Nationals of the Republic of Lithuania may enter, cross the territory and stay in Montenegro up to 90 days without visa, with valid travel document.' The same page adds: 'Nationals of the Republic of Lithuania may enter, cross the territory and stay in Montenegro up to 30 days without visa, with valid Identity Card isued by relevant authority of the Republic of Lithuania.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Lithuania (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/lithuania"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Lithuania (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/lithuania"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "LU",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Luxembourg states: 'Nationals of Luxembourg may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Nationals of Luxembourg may enter, pass through the territory of and stay in Montenegro up to 30 days, without a visa, with a valid identity card issued by the competent authority of Luxembourg.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Luxembourg (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/luxembourg"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Luxembourg (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/luxembourg"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "MT",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Malta states: 'Nationals of Malta may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Nationals of Malta may enter, pass through the territory of and stay in Montenegro up to 30 days, without a visa, with a valid identity card issued by the competent authority of Malta.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Malta (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/malta"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Malta (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/malta"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "PL",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Poland states: 'Nationals of Poland may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Poland (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/poland"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Poland (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/poland"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "PT",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Portugal states: 'Nationals of the Portuguese Republic may enter, cross the territory and stay in Montenegro up to 90 days without visa, with valid travel document.' The same page adds: 'Nationals of the Portuguese Republic may enter, cross the territory and stay in Montenegro up to 30 days without visa, with valid Identity Card isued by relevant authority of the Hellenic Republic.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Portugal (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/portugal"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Portugal (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/portugal"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "RO",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Romania states: 'Nationals of Romania may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Nationals of Romania may enter, pass through the territory of and stay in Montenegro up to 30 days, without a visa, with a valid identity card issued by the competent authority of Romania.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Romania (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/romania"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Romania (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/romania"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "SK",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Slovakia states: 'Citizens of the Republic of Slovakia may enter, pass through the territory and stay in Montenegro for up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Citizens of Slovakia may enter, pass through the territory and stay in Montenegro for up to 30 days, without a visa, with a valid identity card issued by the competent authority of Slovakia.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Slovakia (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/slovakia"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Slovakia (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/slovakia"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "SI",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Slovenia states: 'Nationals of Slovenia may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Nationals of Slovenia may enter, pass through the territory of and stay in Montenegro up to 30 days, without a visa, with a valid identity card issued by the competent authority of Slovenia.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Slovenia (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/slovenia"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Slovenia (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/slovenia"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "SE",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Sweden states: 'Citizens of Sweden can enter, transit through the territory and stay in Montenegro for up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Citizens of Sweden can enter, transit through the territory and stay in Montenegro for up to 30 days, without a visa, with a valid identity card issued by the competent authority of Sweden.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Sweden (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/sweden"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Sweden (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/sweden"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "AL",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (a valid national identity card is also accepted for the same 90 days)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Albania states: 'Nationals of Albania may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Nationals of Albania may enter, pass through the territory of and stay in Montenegro up to 90 days, without a visa, with a valid identity card issued by the competent authority of Albania.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Albania (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/albania"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Albania (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/albania"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "AD",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Andorra states: 'Nationals of Andorra may may enter, pass through the territory of and stay in Montenegro for up to 90 days, with valid travel document, without a visa.' The same page adds: 'Nationals of Andorra may may enter, pass through the territory of and stay in Montenegro for up to 30, without visa, with a valid Identity Card issued by the competent authority of Andorra.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Andorra (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/andorra"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Andorra (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/andorra"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "BA",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Bosnia and Herzegovina states: 'Nationals of Bosnia and Herzegovina may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Nationals of Bosnia and Herzegovina may enter, pass through the territory of and stay in Montenegro up to 30 days, without a visa, with a valid identity card issued by the competent authority of Bosnia and Herzegovina.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Bosnia and Herzegovina (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/bosnia-and-herzegovina"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Bosnia and Herzegovina (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/bosnia-and-herzegovina"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "GE",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Georgia states: 'Nationals of Georgia may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Georgia (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/georgia"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Georgia (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/georgia"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "XK",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Kosovo states: 'Nationals of Kosovo may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Nationals of Kosovo may enter, pass through the territory of and stay in Montenegro up to 30 days, without a visa, with a valid identity card issued by the competent authority of Kosovo.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Kosovo (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/kosovo"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Kosovo (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/kosovo"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "MD",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Moldova states: 'Nationals of Moldova may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Moldova (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/moldova"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Moldova (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/moldova"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "MC",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Monaco states: 'Nationals of Monaco may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Nationals of Monaco may enter, pass through the territory of and stay in Montenegro up to 30 days, without a visa, with a valid identity card issued by the competent authority of Monaco.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Monaco (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/monaco"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Monaco (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/monaco"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "MK",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for North Macedonia states: 'Nationals of the Republic of North Macedonia may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Nationals of the Republic of North Macedonia may enter, pass through the territory of and stay in Montenegro up to 30 days, without a visa, with a valid identity card issued by the competent authority of the Republic of North Macedonia.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — North Macedonia (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/north-macedonia"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — North Macedonia (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/north-macedonia"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "SM",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for San Marino states: 'Nationals of San Marino may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Nationals of San Marino may enter, pass through the territory of and stay in Montenegro up to 30 days, without a visa, with a valid identity card issued by the competent authority of San Marino.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — San Marino (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/san-marino"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — San Marino (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/san-marino"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "RS",
+    "destination": "ME",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport issued within the last 10 years and valid for at least 3 months after your planned departure (or a valid national identity card, which allows up to 30 days only)",
+      "Proof of the purpose of your stay and sufficient funds for the stay and your return or onward journey (may be requested at the border)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels/accommodation providers usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro (Ministry of Foreign Affairs) page for Serbia states: 'Nationals of Serbia may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa.' The same page adds: 'Nationals of Serbia may enter, pass through the territory of and stay in Montenegro up to 30 days, without a visa, with a valid identity card issued by the competent authority of Serbia.' Law on Foreigners (Zakon o strancima, Official Gazette of Montenegro 12/18), Art. 34: a foreigner may stay in Montenegro 'najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska' (at most 90 days within a 180-day period, counted from the day of first entry), and may re-enter only after that 180-day period has passed; Art. 8 refuses entry to anyone who 'je već boravio 90 dana u periodu od 180 dana'. The law counts the 180-day period from the first entry rather than as a strictly rolling window; we model it as a rolling 90/180 window, which is the stricter reading (it never allows more days than the first-entry reading does). The UK FCDO page also states 'up to 90 days in any 180-day period'. Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Serbia (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/serbia"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Serbia (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/serbia"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "AM",
+    "destination": "ME",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Montenegrin short-stay (C) visa issued before travel — or a valid Schengen, US, UK or Irish visa/residence permit, which allows up to 30 days visa-free (no longer than that visa's validity)",
+      "Passport issued within the last 10 years, valid at least 3 months after your planned departure, with at least two blank pages",
+      "Travel health insurance (required for a C visa application)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro page for Armenia states: 'Citizens of Armenia must possess a visa to enter Montenegro.' Exception for visa holders (stated on the same page): holders of travel documents with a valid Schengen visa, a valid visa of the United States, the United Kingdom or Ireland, or a residence permit of those countries, 'may enter and stay in, or transit through, the territory of Montenegro for up to 30 days, but no longer than the expiration of their visa if the validity period is shorter than 30 days.' A short-stay (C) visa applicant must show travel health insurance (Law on Foreigners Art. 23), and the passport must be valid at least 3 months after departure, have two blank pages and have been issued within 10 years (Art. 24). A C visa allows at most 90 days in 180 (Art. 34). Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Armenia (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/armenia"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Armenia (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/armenia"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "AZ",
+    "destination": "ME",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Montenegrin short-stay (C) visa issued before travel — or a valid Schengen, US, UK or Irish visa/residence permit, which allows up to 30 days visa-free (no longer than that visa's validity)",
+      "Passport issued within the last 10 years, valid at least 3 months after your planned departure, with at least two blank pages",
+      "Travel health insurance (required for a C visa application)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "The Government of Montenegro page for Azerbaijan states: 'Citizens of the Republic of Azerbaijan need a visa to enter, transit through the territory, and stay in Montenegro.' Exception for visa holders (stated on the same page): holders of travel documents with a valid Schengen visa, a valid visa of the United States, the United Kingdom or Ireland, or a residence permit of those countries, 'may enter and stay in, or transit through, the territory of Montenegro for up to 30 days, but no longer than the expiration of their visa if the validity period is shorter than 30 days.' A short-stay (C) visa applicant must show travel health insurance (Law on Foreigners Art. 23), and the passport must be valid at least 3 months after departure, have two blank pages and have been issued within 10 years (Art. 24). A C visa allows at most 90 days in 180 (Art. 34). Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Azerbaijan (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/azerbaijan"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entry requirement, stay and documents",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Azerbaijan (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/azerbaijan"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "BY",
+    "destination": "ME",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Montenegrin short-stay (C) visa issued before travel — or a valid Schengen, US, UK or Irish visa/residence permit, which allows up to 30 days visa-free (no longer than that visa's validity)",
+      "Passport issued within the last 10 years, valid at least 3 months after your planned departure, with at least two blank pages",
+      "Travel health insurance (required for a C visa application)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Since 1 November 2026, citizens of Belarus need a visa for Montenegro: the Government's decree of 23 July 2026 ended the visa-free regime for nationals of Belarus, China, Russia, Saudi Arabia and Türkiye 'as of 1 November 2026' (Ministry of Foreign Affairs announcement, 27 July 2026). The Government of Montenegro page for Belarus still describes the earlier rule: 'Citizens of Belarus can, until October 31, 2026, in accordance with concluded international agreements on mutual travel of citizens, enter, pass through the territory, and stay in Montenegro for up to 30 days, with a valid travel document issued by the competent authority of Belarus.' It doesn't state the rule from 1 November; the Ministry's announcement does. Exception for visa holders (stated on the same page): holders of travel documents with a valid Schengen visa, a valid visa of the United States, the United Kingdom or Ireland, or a residence permit of those countries, 'may enter and stay in, or transit through, the territory of Montenegro for up to 30 days, but no longer than the expiration of their visa if the validity period is shorter than 30 days.' A short-stay (C) visa applicant must show travel health insurance (Law on Foreigners Art. 23), and the passport must be valid at least 3 months after departure, have two blank pages and have been issued within 10 years (Art. 24). A C visa allows at most 90 days in 180 (Art. 34). Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Government of Montenegro, Ministry of Foreign Affairs — 'Montenegro fully aligns its visa policy with the European Union' (27 July 2026)",
+      "url": "https://www.gov.me/en/article/montenegro-fully-aligns-its-visa-policy-with-the-european-union-citizens-of-numerous-countries-can-now-apply-for-a-montenegrin-visa"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Visa required from 1 November 2026 (decree of 23 July 2026)",
+        "name": "Government of Montenegro, Ministry of Foreign Affairs — 'Montenegro fully aligns its visa policy with the European Union' (27 July 2026)",
+        "url": "https://www.gov.me/en/article/montenegro-fully-aligns-its-visa-policy-with-the-european-union-citizens-of-numerous-countries-can-now-apply-for-a-montenegrin-visa"
+      },
+      {
+        "claim": "Entry requirement and visa application channels",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Belarus (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/belarus"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "RU",
+    "destination": "ME",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Montenegrin short-stay (C) visa issued before travel — or a valid Schengen, US, UK or Irish visa/residence permit, which allows up to 30 days visa-free (no longer than that visa's validity)",
+      "Passport issued within the last 10 years, valid at least 3 months after your planned departure, with at least two blank pages",
+      "Travel health insurance (required for a C visa application)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Since 1 November 2026, citizens of Russia need a visa for Montenegro: the Government's decree of 23 July 2026 ended the visa-free regime for nationals of Belarus, China, Russia, Saudi Arabia and Türkiye 'as of 1 November 2026' (Ministry of Foreign Affairs announcement, 27 July 2026). The Government of Montenegro page for Russian Federation still describes the earlier rule: 'Citizens of the Russian Federation may, until October 31, 2026, enter, transit through, and stay in Montenegro for up to 30 days with a valid travel document, without a visa. Starting from November 1, 2026, a visa will be required to enter Montenegro.' Exception for visa holders (stated on the same page): holders of travel documents with a valid Schengen visa, a valid visa of the United States, the United Kingdom or Ireland, or a residence permit of those countries, 'may enter and stay in, or transit through, the territory of Montenegro for up to 30 days, but no longer than the expiration of their visa if the validity period is shorter than 30 days.' A short-stay (C) visa applicant must show travel health insurance (Law on Foreigners Art. 23), and the passport must be valid at least 3 months after departure, have two blank pages and have been issued within 10 years (Art. 24). A C visa allows at most 90 days in 180 (Art. 34). Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Russian Federation (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/russian-federation"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Visa required from 1 November 2026 (decree of 23 July 2026)",
+        "name": "Government of Montenegro, Ministry of Foreign Affairs — 'Montenegro fully aligns its visa policy with the European Union' (27 July 2026)",
+        "url": "https://www.gov.me/en/article/montenegro-fully-aligns-its-visa-policy-with-the-european-union-citizens-of-numerous-countries-can-now-apply-for-a-montenegrin-visa"
+      },
+      {
+        "claim": "Entry requirement and visa application channels",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Russian Federation (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/russian-federation"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
+      }
+    ]
+  },
+  {
+    "nationality": "TR",
+    "destination": "ME",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Montenegrin short-stay (C) visa issued before travel — or a valid Schengen, US, UK or Irish visa/residence permit, which allows up to 30 days visa-free (no longer than that visa's validity)",
+      "Passport issued within the last 10 years, valid at least 3 months after your planned departure, with at least two blank pages",
+      "Travel health insurance (required for a C visa application)",
+      "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels usually do this for you)"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 3,
+      "unit": "months",
+      "from": "departure"
+    },
+    "timedSteps": [
+      {
+        "line": "Registration of your stay with the police within 24 hours of arrival at each place of stay (hotels usually do this for you)",
+        "window": {
+          "kind": "due_after_arrival",
+          "amount": 24,
+          "unit": "hours"
+        }
+      }
+    ],
+    "notes": "Since 1 November 2026, citizens of Türkiye need a visa for Montenegro: the Government's decree of 23 July 2026 ended the visa-free regime for nationals of Belarus, China, Russia, Saudi Arabia and Türkiye 'as of 1 November 2026' (Ministry of Foreign Affairs announcement, 27 July 2026). The Government of Montenegro page for Turkey still describes the earlier rule: 'Citizens of the Republic of Turkey may, until October 31, 2026, enter, transit through, and stay in Montenegro for up to 30 days without a visa. Starting from November 1, 2026, a visa will be required to enter Montenegro.' Exception for visa holders (stated on the same page): holders of travel documents with a valid Schengen visa, a valid visa of the United States, the United Kingdom or Ireland, or a residence permit of those countries, 'may enter and stay in, or transit through, the territory of Montenegro for up to 30 days, but no longer than the expiration of their visa if the validity period is shorter than 30 days.' A short-stay (C) visa applicant must show travel health insurance (Law on Foreigners Art. 23), and the passport must be valid at least 3 months after departure, have two blank pages and have been issued within 10 years (Art. 24). A C visa allows at most 90 days in 180 (Art. 34). Passport: Art. 9 of the Law on Foreigners treats a foreign passport as valid only if it was 'issued in the last ten years' and will not expire for at least three months after the planned departure from Montenegro. Art. 8 also allows entry to be refused if you cannot show the purpose and conditions of your stay or have insufficient means of subsistence for the stay and the return or onward journey. Registration: Art. 96 requires a foreigner staying up to 90 days to register their stay with the police within 24 hours of arriving at each place of stay (and to deregister within 24 hours before leaving); hotels and accommodation providers register guests (Art. 101: within 12 hours), and in private accommodation you can register through the local tourist organisation free of charge. FCDO warns failure to register can lead to a fine, detention or a court appearance. Montenegro is not in the Schengen Area, so days here and in Schengen are counted separately. Staying longer than 90 days needs a long-stay (D) visa or residence permit.",
+    "legal_source": {
+      "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Turkey (Government of Montenegro, Ministry of Foreign Affairs)",
+      "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/turkey"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Visa required from 1 November 2026 (decree of 23 July 2026)",
+        "name": "Government of Montenegro, Ministry of Foreign Affairs — 'Montenegro fully aligns its visa policy with the European Union' (27 July 2026)",
+        "url": "https://www.gov.me/en/article/montenegro-fully-aligns-its-visa-policy-with-the-european-union-citizens-of-numerous-countries-can-now-apply-for-a-montenegrin-visa"
+      },
+      {
+        "claim": "Entry requirement and visa application channels",
+        "name": "Embassies and consulates of Montenegro and visa regimes for foreign citizens — Turkey (Government of Montenegro, Ministry of Foreign Affairs)",
+        "url": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/turkey"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "GOV.UK (FCDO) — Montenegro travel advice: Entry requirements, registering with the authorities (updated 2026-08-13)",
+        "url": "https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements"
+      },
+      {
+        "claim": "All visitors register with the local tourism office or police within 24 hours of arrival",
+        "name": "Auswärtiges Amt — Montenegro: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 27.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/montenegrosicherheit-216330"
       }
     ]
   }

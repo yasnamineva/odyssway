@@ -4003,3 +4003,4 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
 ## 2026-11-02 — new passports in the UAE and Serbia
 - UAE: Ireland and 14 visa-free non-EU passports (AL, AD, AM, AZ, BY, BA, GE, XK, MC, ME, RU, SM, RS, VA) show no day count. MOFA's country list gives status only; the EU–UAE agreement (CELEX 22015A0521(01)) covers EU passports except Ireland. ireland.ie advice returns CloudFront 403. Unblock with each country's own foreign-ministry advice on the UAE, or a readable ICP page.
 - Serbia: no row for Kosovo passports. mfa.gov.rs has no Kosovo page (Serbia doesn't recognise Kosovo's passports as a state's). Don't infer; needs an explicit Serbian government statement on entry with Kosovo documents.
+- Montenegro: no row for Holy See passports (gov.me page's visa-regime section is empty). Saudi Arabia also needs a visa from 1 Nov 2026 (MFA announcement 27 Jul 2026) if Saudi passports are ever added.
