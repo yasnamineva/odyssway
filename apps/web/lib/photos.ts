@@ -94,6 +94,7 @@ export const photos = {
   "blog-eta": { width: 1280, height: 853, author: "stocksnap", page: "https://pixabay.com/photos/window-airplane-airline-travel-2600716/" },
   "blog-japan": { width: 1280, height: 720, author: "edo_tokyo_", page: "https://pixabay.com/photos/tokyo-night-street-japan-city-7086446/" },
   "blog-glp1": { width: 1280, height: 880, author: "alexas_fotos", page: "https://pixabay.com/photos/suitcase-antique-leather-1645229/" },
+  "blog-montenegro": { width: 1280, height: 960, author: "falco", page: "https://pixabay.com/photos/kotor-montenegro-balkan-1094388/" },
   "blog-thailand": { width: 1280, height: 853, author: "solenec1", page: "https://pixabay.com/photos/thailand-koh-phi-phi-beach-island-2419443/" },
   "blog-overstay": { width: 1280, height: 859, author: "clickerhappy", page: "https://pixabay.com/photos/antwerp-station-hall-building-2428766/" },
   "blog-peptides": { width: 1280, height: 853, author: "multifacetedgirl", page: "https://pixabay.com/photos/medicine-1309148/" },

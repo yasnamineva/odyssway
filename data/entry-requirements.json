@@ -73057,5 +73057,86 @@
         "checked": "2026-11-02"
       }
     ]
+  },
+  {
+    "nationality": "IS",
+    "destination": "TR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid at least 60 days beyond the stay you're allowed (150 days from entry for a 90-day stay), under Article 7.1(b) of Law No. 6458; the Ministry's page lists nationalities exempt from this rule"
+    ],
+    "notes": "Türkiye's Ministry of Foreign Affairs, for Iceland: 'Ordinary and Official passport holders are exempt from visa for their travels up to 90 days.'",
+    "legal_source": {
+      "name": "Republic of Türkiye Ministry of Foreign Affairs — Visa information for foreigners",
+      "url": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "LI",
+    "destination": "TR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid at least 60 days beyond the stay you're allowed (150 days from entry for a 90-day stay), under Article 7.1(b) of Law No. 6458; the Ministry's page lists nationalities exempt from this rule"
+    ],
+    "notes": "Türkiye's Ministry of Foreign Affairs, for Liechtenstein: 'Ordinary and official passport holders are exempt from visa for their travels up to 90 days.'",
+    "legal_source": {
+      "name": "Republic of Türkiye Ministry of Foreign Affairs — Visa information for foreigners",
+      "url": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CH",
+    "destination": "TR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "fixed_per_entry",
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid at least 60 days beyond the stay you're allowed (150 days from entry for a 90-day stay), under Article 7.1(b) of Law No. 6458; the Ministry's page lists nationalities exempt from this rule"
+    ],
+    "notes": "Türkiye's Ministry of Foreign Affairs, for Switzerland: 'Ordinary and official passport holders are exempted from visa for their travels up to 90 days.'",
+    "legal_source": {
+      "name": "Republic of Türkiye Ministry of Foreign Affairs — Visa information for foreigners",
+      "url": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "NO",
+    "destination": "TR",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "rolling_window",
+      "windowDays": 180,
+      "maxDays": 90
+    },
+    "documentsNeeded": [
+      "Passport valid at least 60 days beyond the stay you're allowed (150 days from entry for a 90-day stay), under Article 7.1(b) of Law No. 6458; the Ministry's page lists nationalities exempt from this rule"
+    ],
+    "notes": "Türkiye's Ministry of Foreign Affairs, for Norway: 'Ordinary and official passport holders are exempted from visa up to 90 days in any 180-day period.'",
+    "legal_source": {
+      "name": "Republic of Türkiye Ministry of Foreign Affairs — Visa information for foreigners",
+      "url": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
+    },
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]

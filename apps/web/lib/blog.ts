@@ -50,7 +50,7 @@ export const blogPosts: BlogPost[] = [
     verifiedAt: "2026-11-02",
     changelogDataset: "entry-requirements",
     destinationCodes: ["ME", "RS", "BA", "MK", "GE", "AM"],
-    photo: "dest-me",
+    photo: "blog-montenegro",
   },
   {
     slug: "border-changes-late-2026",
