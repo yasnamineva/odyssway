@@ -8,9 +8,9 @@ without a primary official source.
 
 Where we are today (2026-11-02):
 
-- 68 destinations plus the Schengen Area; 1,684 verified entry rows; 682 customs rows
+- 68 destinations plus the Schengen Area; 1,795 verified entry rows; 682 customs rows
   (135 medication, 38 with a doctor's-letter checklist, 19 with a permit how-to, 19 with
-  a transit rule); 617 entry rows with a structured passport-validity rule.
+  a transit rule); 654 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
   planner, travel-authorisation guides, the 90/180 calculator, the multi-country day counter, named-medicine pages, border cards,
   embeddable calculator and "Can I bring it?" widgets, the public JSON API.
@@ -196,8 +196,10 @@ summary) and Türkiye (MFA per-country list), 39 rows each. ✔ 2026-11-02 UAE, 
 country cards (Moldova, North Macedonia and Türkiye need a visa); 90 in 180 for the 21 EU passports from
 the EU–UAE visa waiver agreement (CELEX 22015A0521(01), Art. 4(1); Ireland excluded by Art. 2(a)); stay
 not shown for Ireland and the 14 visa-free non-EU passports (no primary source gives it; ireland.ie
-returns 403). Next: Japan (blocked .go.jp), then the Western Balkans' own neighbours (Serbia, Montenegro,
-Bosnia and Herzegovina, North Macedonia, Armenia already covered as destinations).
+returns 403). ✔ 2026-11-02 Serbia (37, MFA per-country pages; Kosovo held), Montenegro (37, gov.me pages;
+**visa required for Belarus, Russia, Türkiye since 1 Nov 2026** per the decree of 23 July 2026; Holy See held),
+Bosnia and Herzegovina (37, mvp.gov.ba pages; Russia 30 days in 60 by bilateral agreement; Armenia, Belarus
+visa; Kosovo held). Next: North Macedonia, Albania, Armenia, Georgia, then Japan (blocked .go.jp).
 
 Each new passport adds a row in every destination, so this multiplies coverage. Choose
 from Search Console country data. Likely candidates: Philippines, Indonesia, Turkey,
