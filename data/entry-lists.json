@@ -1475,6 +1475,138 @@
     ]
   },
   {
+    "destination": "CO",
+    "source": {
+      "name": "Resolución 5488 de 2022 Art. 3 (literal A as replaced by Res. 12189 de 2026; B and C by Res. 3717 de 2023) – Cancillería",
+      "url": "https://cancilleria.gov.co/normograma/compilacion/docs/resolucion_minrelaciones_12189_2026.htm"
+    },
+    "checked": "2026-11-02",
+    "groups": [
+      {
+        "label": "Literal A: exempt for short stays (Res. 12189 de 2026)",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 365,
+          "maxDays": 180,
+          "maxDaysPerEntry": 90
+        },
+        "template": "AL",
+        "nationalities": [
+          "AD",
+          "AL",
+          "AR",
+          "AU",
+          "AZ",
+          "BA",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "GB",
+          "GE",
+          "IE",
+          "IL",
+          "IS",
+          "JP",
+          "KR",
+          "LI",
+          "MC",
+          "MD",
+          "ME",
+          "MK",
+          "MX",
+          "NO",
+          "NZ",
+          "RS",
+          "RU",
+          "SG",
+          "SM",
+          "TR",
+          "UA",
+          "US",
+          "VA"
+        ],
+        "labels": {
+          "AL": "Albania",
+          "AD": "Andorra",
+          "AZ": "Azerbaiyán",
+          "BA": "Bosnia y Herzegovina",
+          "GE": "Georgia",
+          "IE": "Irlanda",
+          "IS": "Islandia",
+          "LI": "Liechtenstein",
+          "MK": "Macedonia del Norte",
+          "MD": "Moldova",
+          "MC": "Mónaco",
+          "ME": "Montenegro",
+          "NO": "Noruega",
+          "RU": "Rusia (Federación de)",
+          "SM": "San Marino",
+          "VA": "Santa Sede",
+          "RS": "Serbia",
+          "CH": "Suiza",
+          "TR": "Turquía",
+          "IL": "Israel"
+        }
+      },
+      {
+        "label": "Visa required (literal C conditional exemption, or not listed)",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AM",
+        "nationalities": [
+          "AM",
+          "BY",
+          "CN",
+          "IN",
+          "MY",
+          "XK"
+        ]
+      },
+      {
+        "label": "EU–Colombia short-stay visa waiver agreement (90 days in 180)",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 180,
+          "maxDays": 90
+        },
+        "template": "FR",
+        "nationalities": [
+          "AT",
+          "BE",
+          "BG",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GR",
+          "HR",
+          "HU",
+          "IT",
+          "LT",
+          "LU",
+          "LV",
+          "MT",
+          "NL",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
+          "SI",
+          "SK"
+        ]
+      }
+    ]
+  },
+  {
     "destination": "CR",
     "source": {
       "name": "Dirección General de Migración y Extranjería, 'Directrices Generales de Visas de Ingreso y Permanencia para No Residentes' AJ-484-11-2025, Alcance N° 148 a La Gaceta N° 216 (17 Nov 2025) — official Imprenta Nacional gazette edition (copy hosted on icoder.go.cr; the migracion.go.cr copy is Cloudflare-blocked)",
