@@ -24252,5 +24252,96 @@
         "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
       }
     ]
+  },
+  {
+    "destination": "FR",
+    "category": "medication",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "French Customs (DGDDI) — Le transport de médicaments en France par des particuliers (updated 19 March 2026)",
+      "url": "https://www.douane.gouv.fr/fiche/le-transport-de-medicaments-en-france-par-des-particuliers"
+    },
+    "slug": "controlled-medication-fr",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "opioid painkiller"
+    ],
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "You may bring narcotic or psychotropic medicine into France only if you carry it yourself, in a quantity compatible with your personal treatment for the length set by the prescription, or one month of treatment if the prescription gives no length. Arriving from outside the Schengen Area, you must show customs the doctor's prescription. Arriving from another Schengen country, you must show the certificate issued by that country's authorities (the Article 75 certificate, see the EU entry).",
+      "quantity": "the treatment length on the prescription, or one month"
+    },
+    "notes": "This is France's national rule, from French Customs. Above the personal-use quantity, import is prohibited outright. French Customs' own page is in French; the English version is a machine translation and says the original valid prescription is mandatory. Brand names are listed for search only: they map to substances on the UN's international control lists.",
+    "summary": "Allowed if you carry it yourself: the treatment length on your prescription, or one month. Show the prescription (Schengen residents: the Article 75 certificate).",
+    "_sources": [
+      {
+        "claim": "Narcotic or psychotropic medicines: only if carried personally; quantity for the prescribed treatment length or one month; from a non-Schengen country the doctor's prescription is mandatory; from a Schengen country the certificate from that country's authorities is mandatory; above personal use, import prohibited outright",
+        "name": "French Customs (DGDDI) — Le transport de médicaments en France par des particuliers (updated 19 March 2026)",
+        "url": "https://www.douane.gouv.fr/fiche/le-transport-de-medicaments-en-france-par-des-particuliers"
+      },
+      {
+        "claim": "Original valid prescription mandatory when travelling to France with narcotic or psychotropic medicines",
+        "name": "French Customs (DGDDI) — You are traveling with medicines (English page, machine-translated by the site)",
+        "url": "https://www.douane.gouv.fr/en/demarche/you-are-traveling-medicines"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
+  },
+  {
+    "destination": "FR",
+    "category": "medication",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "French Customs (DGDDI) — Le transport de médicaments en France par des particuliers (updated 19 March 2026)",
+      "url": "https://www.douane.gouv.fr/fiche/le-transport-de-medicaments-en-france-par-des-particuliers"
+    },
+    "slug": "prescription-medication-fr",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "drugs (prescription)"
+    ],
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Ordinary medicine (not narcotic or psychotropic) carried by you for personal use: the quantity for the treatment length on your prescription, or three months of treatment without one. You need to show the prescription only if the treatment is longer than three months. Above the personal-use quantity, import is prohibited outright.",
+      "quantity": "the treatment length on the prescription, or three months"
+    },
+    "notes": "This is France's national rule, from French Customs, and it applies to travellers arriving from any country. Narcotic and psychotropic medicines have their own rule (see the controlled-medication entry).",
+    "summary": "Allowed for personal use: your prescription's treatment length, or three months. Show the prescription only for more than three months.",
+    "_sources": [
+      {
+        "claim": "Non-narcotic, non-psychotropic medicines, travellers from all countries: quantity for the prescribed treatment or three months; prescription needed only if over three months; above personal use, import prohibited outright",
+        "name": "French Customs (DGDDI) — Le transport de médicaments en France par des particuliers (updated 19 March 2026)",
+        "url": "https://www.douane.gouv.fr/fiche/le-transport-de-medicaments-en-france-par-des-particuliers"
+      }
+    ]
   }
 ]
