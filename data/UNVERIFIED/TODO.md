@@ -4042,3 +4042,4 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
 - Cambodia alcohol/tobacco/food/vapes: customs.gov.kh is a Nuxt app; its FAQ and procedure pages carry no traveller allowance text in the served payload.
 - 2026-11-03 retry of held authorisation guides: canada.ca doesn't connect, immigration.govt.nz serves a 212-byte JS shell, gov.il is behind a Cloudflare block (israel-entry.piba.gov.il loads but is an app). Still held.
 - Macao food: AIP GEN 1.3 (passengers) lets travellers bring 1 kg a day of fruit, dairy etc. without declaration, but GEN 1.4 §2.1 says meat, animal and vegetal products can't come in on any aircraft without an IAM permit. Conflict unresolved; no food row until IAM's own page is read.
+- Brunei medication/food/weapons: customs.gov.bn's import and FAQ pages are for commercial importers (BDNSW permits, licences); nothing on what a traveller may carry. No rows built from them.
