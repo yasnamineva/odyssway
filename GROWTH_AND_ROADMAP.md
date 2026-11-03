@@ -289,6 +289,7 @@ South Africa, Nigeria, Poland, Portugal, Vietnam, Pakistan. Add one at a time, f
   Mauritius and Seychelles (allowed), Jordan medication, weapons for Mauritius, Seychelles, North
   Macedonia, Bosnia, Sri Lanka, Tanzania and Oman; conflicts recorded (Uzbekistan drones, Oman
   alcohol). Re-run both scans after each destination batch.
+- **Gap scan (2026-11-03)**: categories still missing, worst first (FR/SE/ES fall back to the EU rows, so they're fine): El Salvador 8 (aduana.gob.sv unreachable, mh.gob.sv 403), North Macedonia 7 (customs.gov.mk DNS fails), Belize 7, Uzbekistan 6, Ghana 6, Zambia 6, Mongolia 6, Ecuador 5, Cambodia 5, Brunei 5. Next: Ghana and Zambia revenue-authority pages, then Ecuador (SENAE).
 - Customs rows for destinations that have none or very few: Mongolia, Seychelles medicine,
   Zimbabwe tobacco and cash (ZIMRA gives no primary threshold).
 - **Second vertical after medication**, chosen from data (§5): CBD and cannabis, food,
