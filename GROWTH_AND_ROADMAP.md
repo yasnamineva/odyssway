@@ -125,6 +125,8 @@ since I checked*. Built client-side from verified rows; no accounts.
 6. Later, only with the owner's go-ahead: accounts, email alerts, an annual plan for
    saved trips and alerts (sells persistent state, not facts).
 
+✔ 2026-11-03 (owner feedback) **Pickers and route map**: country pickers match codes and common names ("USA", "UK", "UAE", "Holland", "Türkiye" without accents, small typos), rank the best match first, and Tab picks it. The Trip Check map draws the whole route (passport country → stopover → destination → further countries) with numbered pins, arrows and a legend, zooms to the route, and is taller on phones. A stopover now shows the passport's entry rule there (what applies if you leave the airport) and says plainly that airside transit rules aren't verified; Schengen hubs can be picked as stopovers. Next for transit: verified airside/transit-visa rules for the main hubs (UK DATV, Schengen airport transit visa, US no-transit-without-visa, Dubai, Doha, Istanbul, Singapore), from each authority's page.
+
 **Deliberately not building:** live flight/hotel pricing, "cheapest month" or "similar
 destination" optimisation, study/work/residence routing, a document vault, or submitting
 applications for users. Reasons: no advantage against funded price-comparison sites,

@@ -18,11 +18,12 @@ import { destinationOptionGroups } from "../lib/destination-options";
 import type { EntryBasis, TripCheckResult } from "../lib/trip-check";
 import { decodeTripShare, encodeTripShare } from "../lib/trip-share";
 import { count } from "../lib/count";
+import type { MapStop } from "./WorldMap";
 
 /** The map bundles real country geometry (~100KB) — load it only once it's needed. */
 const WorldMap = dynamic(() => import("./WorldMap"), {
   ssr: false,
-  loading: () => <div className="aspect-[16/9] w-full animate-pulse rounded-xl bg-slate-100" />,
+  loading: () => <div className="aspect-[16/10] w-full animate-pulse rounded-2xl bg-slate-100 sm:aspect-[720/380]" />,
 });
 
 /** The page that shows a row's full permit procedure: its /bring item × destination page. */
@@ -222,6 +223,26 @@ export default function TripCheck({
   const originLabel = publishedNationalities.find((n) => n.nationality === nationality)?.name;
   const destinationLabel = destinationLabelFor(destination);
   const mapDestinationCode = destination ? resolveMapDestinationCode(destination) : undefined;
+  // The whole route for the map, in travel order: passport country, stopover,
+  // destination, then any further countries.
+  const mapStops: MapStop[] = [
+    ...(nationality ? [{ code: nationality, label: originLabel, kind: "origin" as const }] : []),
+    ...(transit && transit !== destination
+      ? [{ code: transit, label: destinationLabelFor(transit), kind: "transit" as const }]
+      : []),
+    ...(mapDestinationCode ? [{ code: mapDestinationCode, label: destinationLabel, kind: "destination" as const }] : []),
+    ...extraLegs
+      .filter((code) => code && code !== destination)
+      .map((code) => ({ code: resolveMapDestinationCode(code), label: destinationLabelFor(code), kind: "destination" as const })),
+  ];
+  const transitGroups = [
+    { options: [{ value: "", label: t("transitPlaceholder") }] },
+    ...destinationOptionGroups({
+      destinations: destinations.filter((d) => d.status === "verified" && d.code !== destination),
+      schengenStates: schengenCountries.filter((c) => c.code !== destination),
+      labels: { destinations: t("toGroupDestinations"), schengenSuffix: t("schengenSuffix"), comingSoon: t("toGroupComingSoon"), comingSoonSuffix: t("comingSoonSuffix") },
+    }),
+  ];
 
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm lg:p-8">
@@ -353,16 +374,7 @@ export default function TripCheck({
               }}
               placeholder={t("transitPlaceholder")}
               noResultsLabel={t("noMatches")}
-              groups={[
-                {
-                  options: [
-                    { value: "", label: t("transitPlaceholder") },
-                    ...destinations
-                      .filter((d) => d.status === "verified" && d.code !== destination)
-                      .map((d) => ({ value: d.code, label: d.name })),
-                  ],
-                },
-              ]}
+              groups={transitGroups}
             />
             <p className="mt-1 text-[11px] leading-snug text-slate-500">{t("transitHint")}</p>
           </div>
@@ -461,13 +473,16 @@ export default function TripCheck({
         <div className="mt-2 flex flex-col lg:mt-0" data-testid="tc-map-panel">
           <div className="order-2 mt-6 lg:order-1 lg:mt-0 print:hidden">
             <WorldMap
-              originCode={nationality || undefined}
-              destinationCode={mapDestinationCode}
+              stops={mapStops}
               highlightCodes={
                 destination === SCHENGEN_DESTINATION ? schengenCountries.map((c) => c.code) : []
               }
-              originLabel={originLabel}
-              destinationLabel={destinationLabel}
+              legend={{ origin: t("mapLegendOrigin"), transit: t("mapLegendTransit"), destination: t("mapLegendDestination") }}
+              ariaLabel={
+                mapStops.length > 1
+                  ? t("mapAria", { route: mapStops.map((s) => s.label ?? s.code).join(" → ") })
+                  : undefined
+              }
             />
           </div>
           {result && legResults.length > 1 && (
@@ -612,6 +627,11 @@ function TripCheckResults({
           </span>
           <span className="sr-only">{t("scenarioTo")}</span>
           <span>{result.destinationName}</span>
+          {result.transit && (
+            <span className="text-xs font-normal text-slate-600" data-testid="tc-scenario-via">
+              {t("scenarioVia", { country: result.transit.name })}
+            </span>
+          )}
         </p>
         {result.items.length > 0 && (
           <p className="mt-0.5 text-xs break-words text-slate-600">
@@ -650,6 +670,9 @@ function TripCheckResults({
               {t("notCoveredLink")}
             </a>
           )}
+        </div>
+        <div className="mt-4">
+          <TransitEntryCard result={result} originName={originName} />
         </div>
       </>
     );
@@ -735,6 +758,8 @@ function TripCheckResults({
           )}
         </section>
 
+        <TransitEntryCard result={result} originName={originName} />
+
         {result.items.length > 0 && (
           <section
             className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
@@ -802,6 +827,80 @@ function TripCheckResults({
         )}
       </div>
     </>
+  );
+}
+
+/**
+ * Changing planes: what the passport needs if the traveller goes through
+ * immigration at the stopover (the verified entry row), kept apart from the
+ * airside rule, which our data doesn't cover and the card says so.
+ */
+function TransitEntryCard({ result, originName }: { result: TripCheckResult; originName: string }) {
+  const t = useTranslations("tripCheck");
+  const entry = result.transitEntry;
+  const stop = result.transit;
+  if (!entry || !stop) return null;
+  return (
+    <section className="rounded-2xl border border-blue-200 bg-blue-50/40 p-4 shadow-sm" data-testid="tc-transit-entry">
+      <h2 className="flex items-center gap-2 text-sm font-semibold text-slate-900">
+        <span aria-hidden="true" className="inline-block h-2.5 w-2.5 rounded-full bg-blue-600" />
+        {t("transitHeading", { country: stop.name })}
+      </h2>
+      <div className="mt-2 rounded-lg bg-white p-3 text-xs leading-relaxed text-slate-700">
+        <p className="font-medium text-slate-900">{t("transitAirsideTitle")}</p>
+        <p className="mt-0.5">{t("transitAirsideBody", { country: stop.name })}</p>
+      </div>
+      <div className="mt-3">
+        <p className="text-xs font-medium text-slate-900">
+          {t("transitLeaveTitle", { country: stop.name, origin: originName })}
+        </p>
+        {entry.covered ? (
+          <>
+            <p className="mt-1 text-sm text-slate-800" data-testid="tc-transit-basis">
+              <span className="mr-1.5 inline-block rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-900">
+                {t(`routeBasis.${entry.basis}`)}
+              </span>
+            </p>
+            {entry.documentsNeeded.length > 0 && (
+              <ul className="mt-2 list-disc space-y-1 pl-4 text-sm text-slate-700">
+                {entry.documentsNeeded.map((doc) => (
+                  <li key={doc}>{doc}</li>
+                ))}
+              </ul>
+            )}
+            {entry.transitNotes.length > 0 && (
+              <ul className="mt-2 space-y-1 text-xs leading-relaxed text-slate-600">
+                {entry.transitNotes.map((n) => (
+                  <li key={n}>{n}</li>
+                ))}
+              </ul>
+            )}
+            {entry.legalSource && (
+              <SourceNote
+                className="mt-3"
+                name={entry.legalSource.name}
+                url={entry.legalSource.url}
+                date={entry.verifiedAt}
+                sourceLabel={t("sourceLabel")}
+                checkedLabel={entry.verifiedAt ? t("checkedOn", { date: entry.verifiedAt }) : undefined}
+              />
+            )}
+          </>
+        ) : (
+          <p className="mt-1 text-xs text-amber-800">
+            {t("transitEntryNotCovered", { country: stop.name })}
+            {entry.officialAuthorityUrl && (
+              <>
+                {" "}
+                <a href={entry.officialAuthorityUrl} rel="noopener noreferrer" className="underline">
+                  {t("notCoveredLink")}
+                </a>
+              </>
+            )}
+          </p>
+        )}
+      </div>
+    </section>
   );
 }
 

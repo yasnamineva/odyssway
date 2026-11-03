@@ -295,3 +295,16 @@ test("every EU passport can be picked, and Schengen countries are listed by name
   await expect(page.getByTestId("tc-results")).toBeVisible();
   await expect(page.getByTestId("tc-basis")).toContainText(/free movement/i);
 });
+
+test("country pickers accept abbreviations and pick the top match with Tab", async ({ page }) => {
+  await page.goto("/trip-check");
+  const from = page.getByTestId("tc-nationality");
+  await from.fill("USA");
+  await expect(page.getByRole("option").first()).toHaveText("United States");
+  await from.press("Tab");
+  await expect(from).toHaveValue("United States");
+  const to = page.getByTestId("tc-destination");
+  await to.fill("uk");
+  await to.press("Tab");
+  await expect(to).toHaveValue("United Kingdom");
+});

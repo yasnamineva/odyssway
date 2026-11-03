@@ -61,12 +61,42 @@ export interface TripCheckResult {
   /** Set when `covered` is false and we at least know where to point the user. */
   officialAuthorityUrl?: string;
   items: TripCheckItemResult[];
-  /** The stopover country, when one was given and it's a verified destination. */
+  /** The stopover country, when one was given (a verified destination or a Schengen state). */
   transit?: { code: string; name: string };
+  /**
+   * The passport's entry rule for the stopover country: what applies if the
+   * traveller goes through immigration there (leaving the airport, an overnight
+   * layover, re-checking bags). Airside transit rules are not in our data, so
+   * the UI never presents this as the rule for staying airside.
+   */
+  transitEntry?: TransitEntry;
   /** True for EU-citizen travel within the EU/Schengen: the customs data covers
    * arrivals from outside the EU, so item verdicts are withheld rather than
    * shown for the wrong situation. */
   intraEuCustoms?: boolean;
+}
+
+export interface TransitEntry {
+  covered: boolean;
+  basis: EntryBasis;
+  isSchengen: boolean;
+  documentsNeeded: string[];
+  /** Sentences of the row's notes that mention transit, layovers or airside. */
+  transitNotes: string[];
+  legalSource?: { name: string; url: string };
+  verifiedAt?: string;
+  officialAuthorityUrl?: string;
+}
+
+const TRANSIT_WORDS = /\b(transit|transits|airside|layover|layovers|stopover|stopovers|connecting flight|changing planes)\b/i;
+
+/** Sentences of a row's notes that speak about transit. */
+export function transitSentences(notes: string | undefined): string[] {
+  if (!notes) return [];
+  return notes
+    .split(/(?<=[.!?])\s+(?=[A-Z])/)
+    .map((s) => s.trim())
+    .filter((s) => TRANSIT_WORDS.test(s));
 }
 
 /** SBC Art. 6(1) entry conditions, already this project's foundational legal basis (see engine README / 90-180-rule content). */
@@ -334,23 +364,48 @@ export function resolveTripCheck(
   const nationalCode = isSchengenCode(picked) ? picked : null;
   // A stopover only counts if it's a verified destination of its own, and not
   // the destination itself (its rows are keyed by its code, never "EU").
-  const stop = transitCode ? destinationByCode(transitCode) : undefined;
+  const stopCode = transitCode?.toUpperCase();
+  const stop = stopCode ? destinationByCode(stopCode) : undefined;
   const transit =
-    stop && stop.status === "verified" && stop.code !== picked ? { code: stop.code, name: stop.name } : undefined;
+    stopCode && stopCode !== picked
+      ? stop && stop.status === "verified"
+        ? { code: stop.code, name: stop.name }
+        : isSchengenCode(stopCode)
+          ? { code: stopCode, name: countryName(stopCode) }
+          : undefined
+      : undefined;
+  const transitCustoms = transit ? (isSchengenCode(transit.code) ? customsCodeFor(transit.code) : transit.code) : undefined;
+  const transitEntry: TransitEntry | undefined = transit
+    ? (() => {
+        const e = resolveEntry(nationality, transit.code);
+        return {
+          covered: e.covered,
+          basis: e.basis,
+          isSchengen: e.isSchengen,
+          documentsNeeded: e.documentsNeeded,
+          transitNotes: transitSentences(e.notes),
+          ...(e.legalSource ? { legalSource: e.legalSource } : {}),
+          ...(e.verifiedAt ? { verifiedAt: e.verifiedAt } : {}),
+          ...(e.officialAuthorityUrl ? { officialAuthorityUrl: e.officialAuthorityUrl } : {}),
+        };
+      })()
+    : undefined;
   const items: TripCheckItemResult[] = itemQueries
     .map((q) => q.trim())
     .filter(Boolean)
     .map((query) => {
       const national = nationalCode ? matchItem(query, nationalCode) : null;
       const match = national || intraEuCustoms ? national : matchItem(query, customsDestination);
-      return transit ? { query, match, transitMatch: matchItem(query, transit.code) } : { query, match };
+      if (!transit || !transitCustoms) return { query, match };
+      const transitNational = isSchengenCode(transit.code) ? matchItem(query, transit.code) : null;
+      return { query, match, transitMatch: transitNational ?? matchItem(query, transitCustoms) };
     });
 
   return {
     nationality: nationality.toUpperCase(),
     ...entry,
     items,
-    ...(transit ? { transit } : {}),
+    ...(transit ? { transit, transitEntry } : {}),
     ...(intraEuCustoms ? { intraEuCustoms } : {}),
   };
 }

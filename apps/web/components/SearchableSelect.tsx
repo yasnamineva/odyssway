@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import { normalize, searchOptions } from "../lib/option-search";
 
 export interface SearchableSelectOption {
   value: string;
@@ -19,6 +20,10 @@ export interface SearchableSelectGroup {
  * instead of scrolling a long list. Native `<select>` only jumps to options
  * matching a type-ahead buffer; it doesn't show a filtered list, which is
  * what actually makes a 50+ option list usable.
+ *
+ * Typing ranks the options (lib/option-search.ts): codes and abbreviations
+ * ("USA", "UK", "UAE") first, then name starts, other names, and small typos.
+ * Enter or Tab picks the highlighted option; Tab then moves on to the next field.
  */
 export default function SearchableSelect({
   id,
@@ -46,18 +51,29 @@ export default function SearchableSelect({
   const flatOptions = useMemo(() => groups.flatMap((g) => g.options), [groups]);
   const selectedLabel = flatOptions.find((o) => o.value === value)?.label ?? "";
 
-  const filteredGroups = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    if (!q) return groups;
-    return groups
-      .map((g) => ({ ...g, options: g.options.filter((o) => o.label.toLowerCase().includes(q)) }))
-      .filter((g) => g.options.length > 0);
-  }, [groups, query]);
+  const hasQuery = query.trim() !== "";
+  // With a query, one ranked list (best match first, so Tab/Enter picks it);
+  // without one, the grouped list as given.
+  const filteredGroups = useMemo<SearchableSelectGroup[]>(() => {
+    if (!hasQuery) return groups;
+    const ranked = searchOptions(query, flatOptions);
+    return ranked.length ? [{ options: ranked }] : [];
+  }, [groups, flatOptions, query, hasQuery]);
   const filteredFlat = useMemo(() => filteredGroups.flatMap((g) => g.options), [filteredGroups]);
 
   useEffect(() => {
-    setActiveIndex(0);
+    // Opening with no query starts on the current choice; typing starts on the best match.
+    const current = hasQuery ? -1 : filteredFlat.findIndex((o) => o.value === value);
+    setActiveIndex(current >= 0 ? current : 0);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query, open]);
+
+  useEffect(() => {
+    if (!open) return;
+    const opt = filteredFlat[activeIndex];
+    if (!opt) return;
+    document.getElementById(`${id}-opt-${opt.value}`)?.scrollIntoView({ block: "nearest" });
+  }, [activeIndex, open, filteredFlat, id]);
 
   function commit(optValue: string) {
     onChange(optValue);
@@ -71,9 +87,23 @@ export default function SearchableSelect({
       return;
     }
     if (!open) return;
+    if (e.key === "Tab") {
+      // Tab picks the highlighted match when something was typed, then lets
+      // focus move on as usual. With nothing typed it keeps the current choice.
+      const opt = filteredFlat[activeIndex];
+      if (hasQuery && opt) commit(opt.value);
+      else setOpen(false);
+      return;
+    }
     if (e.key === "ArrowDown") {
       e.preventDefault();
       setActiveIndex((i) => Math.min(i + 1, filteredFlat.length - 1));
+    } else if (e.key === "PageDown") {
+      e.preventDefault();
+      setActiveIndex((i) => Math.min(i + 8, filteredFlat.length - 1));
+    } else if (e.key === "PageUp") {
+      e.preventDefault();
+      setActiveIndex((i) => Math.max(i - 8, 0));
     } else if (e.key === "ArrowUp") {
       e.preventDefault();
       setActiveIndex((i) => Math.max(i - 1, 0));
@@ -102,7 +132,8 @@ export default function SearchableSelect({
         aria-activedescendant={open && activeOption ? `${id}-opt-${activeOption.value}` : undefined}
         autoComplete="off"
         className="w-full min-w-0 rounded-lg border border-slate-300 bg-white px-3 py-2 text-base focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
-        placeholder={placeholder}
+        placeholder={open && selectedLabel ? selectedLabel : placeholder}
+        aria-autocomplete="list"
         value={open ? query : selectedLabel}
         onFocus={() => {
           setOpen(true);
@@ -118,7 +149,10 @@ export default function SearchableSelect({
             setQuery("");
           }
         }}
-        onChange={(e) => setQuery(e.target.value)}
+        onChange={(e) => {
+          setQuery(e.target.value);
+          if (!open) setOpen(true);
+        }}
         onKeyDown={handleKeyDown}
         onBlur={() => {
           setOpen(false);
@@ -158,7 +192,7 @@ export default function SearchableSelect({
                         active ? "bg-blue-50 text-blue-900" : "text-slate-700"
                       } ${opt.value === value ? "font-medium" : ""}`}
                     >
-                      {opt.label}
+                      <Highlighted label={opt.label} query={query} />
                     </li>
                   );
                 })}
@@ -168,5 +202,23 @@ export default function SearchableSelect({
         </ul>
       )}
     </div>
+  );
+}
+
+/** The option label with the typed text in bold, when the label contains it. */
+function Highlighted({ label, query }: { label: string; query: string }) {
+  const q = normalize(query);
+  if (!q) return <>{label}</>;
+  // Match on the accent-free form; positions line up because normalize() on a
+  // single label keeps one character per letter for these names.
+  const plain = label.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const at = plain.indexOf(q);
+  if (at < 0 || plain.length !== label.length) return <>{label}</>;
+  return (
+    <>
+      {label.slice(0, at)}
+      <strong className="font-semibold">{label.slice(at, at + q.length)}</strong>
+      {label.slice(at + q.length)}
+    </>
   );
 }

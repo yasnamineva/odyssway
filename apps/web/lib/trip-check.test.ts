@@ -213,6 +213,21 @@ describe("resolveTripCheck", () => {
     );
   });
 
+  it("gives the stopover's entry rule for the passport, with or without items", () => {
+    const viaAe = resolveTripCheck("US", "TH", [], "AE");
+    expect(viaAe.transit).toEqual({ code: "AE", name: "United Arab Emirates" });
+    expect(viaAe.transitEntry?.covered).toBe(true);
+    expect(viaAe.transitEntry?.basis).toBe("visa_free");
+    expect(viaAe.transitEntry?.documentsNeeded.length).toBeGreaterThan(0);
+    expect(viaAe.transitEntry?.legalSource?.url).toBeTruthy();
+
+    // A Schengen hub works as a stopover too.
+    const viaDe = resolveTripCheck("IN", "US", [], "DE");
+    expect(viaDe.transit?.code).toBe("DE");
+    expect(viaDe.transitEntry?.isSchengen).toBe(true);
+    expect(viaDe.transitEntry?.basis).toBe("visa_required");
+  });
+
   it("gives EU citizens free movement within the EU, and withholds extra-EU customs verdicts", () => {
     for (const destination of ["SCHENGEN", "DE", "IE", "CY"]) {
       const result = resolveTripCheck("FR", destination, ["cigarettes"]);
