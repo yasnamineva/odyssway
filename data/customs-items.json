@@ -24701,5 +24701,76 @@
         "url": "https://www.drogues.gouv.fr/sites/default/files/2026-09/Ce%20que%20dit%20la%20loi%20CBD_sept_2026_0.pdf"
       }
     ]
+  },
+  {
+    "destination": "NL",
+    "category": "cbd_cannabis",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "Opiumwet (Dutch Opium Act), Articles 2 and 3 and Lists I and II (version in force from 17 September 2026)",
+      "url": "https://wetten.overheid.nl/BWBR0001941/2026-09-17"
+    },
+    "slug": "cannabis-nl",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish",
+      "hash"
+    ],
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Bringing cannabis into the Netherlands is prohibited. Hemp (any part of the cannabis plant that still has its resin, except the seeds) and hashish are on List II of the Opium Act, and Article 3 bans bringing List II substances into or out of Dutch territory. Hemp oil (any concentrate extracted from hemp or hashish) and THC, including preparations containing THC, are on List I, banned the same way by Article 2."
+    },
+    "notes": "The Dutch toleration policy only means that possessing up to 5 grams for personal use usually isn't prosecuted inside the country, and coffee shops may sell small amounts under conditions; possession is still a criminal offence, and the policy doesn't apply to under-18s. It doesn't make bringing cannabis across the border legal. Medicinal cannabis falls under separate Opium Act exemptions; check with the Dutch authorities before travelling with it.",
+    "summary": "Bringing cannabis into the Netherlands is prohibited under the Opium Act. The coffee-shop toleration policy doesn't cover importing it.",
+    "_sources": [
+      {
+        "claim": "Art. 3: prohibited to bring List II substances into or out of the Netherlands; List II includes hasjiesj and hennep (every part of the plant with the resin, except the seeds). Art. 2: same for List I; List I includes hennepolie (concentrate extracted from hemp or hashish) and tetrahydrocannabinol and preparations containing it",
+        "name": "Opiumwet (Dutch Opium Act), Articles 2 and 3 and Lists I and II (version in force from 17 September 2026)",
+        "url": "https://wetten.overheid.nl/BWBR0001941/2026-09-17"
+      },
+      {
+        "claim": "Possession of soft drugs is a criminal offence; up to 5 grams for personal use is tolerated and usually not prosecuted; coffee-shop sales tolerated under conditions; not for under-18s",
+        "name": "Government of the Netherlands — Am I committing a criminal offence if I possess, produce or deal in drugs?",
+        "url": "https://www.government.nl/themes/family-health-and-care/drugs/am-i-committing-a-criminal-offence-if-i-possess-produce-or-deal-in-drugs"
+      }
+    ]
+  },
+  {
+    "destination": "NL",
+    "category": "cbd_cannabis",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "Opiumwet (Dutch Opium Act), Articles 2 and 3 and Lists I and II (version in force from 17 September 2026)",
+      "url": "https://wetten.overheid.nl/BWBR0001941/2026-09-17"
+    },
+    "slug": "cbd-nl",
+    "names": [
+      "cbd",
+      "cbd oil",
+      "cannabidiol",
+      "cbd gummies",
+      "hemp extract",
+      "hemp oil"
+    ],
+    "verdict": "depends",
+    "limits": {
+      "description": "CBD (cannabidiol) itself isn't on the Opium Act's lists. But the Act puts hemp oil, meaning any concentrate extracted from the cannabis plant or hashish, on List I, and also any preparation containing THC; bringing List I substances into the Netherlands is prohibited (Article 2). A CBD oil made by extracting hemp, or a product with THC, can therefore fall under the ban."
+    },
+    "notes": "This is our reading of the Opium Act's lists; the Dutch government publishes no traveller guidance on CBD. A product that is pure, isolated CBD with no THC is outside the lists. Hemp plant material with its resin (flowers, leaves) is on List II and can't be brought in either.",
+    "summary": "Pure CBD isn't on the Opium Act lists, but hemp extracts and anything with THC are, and can't be brought into the Netherlands.",
+    "_sources": [
+      {
+        "claim": "List I includes hennepolie (concentrate obtained by extraction of hemp or hashish, with or without oil) and tetrahydrocannabinol and preparations containing it; Art. 2 bans bringing List I substances into the Netherlands; List II includes hennep (plant parts with resin, except seeds); CBD isn't listed",
+        "name": "Opiumwet (Dutch Opium Act), Articles 2 and 3 and Lists I and II (version in force from 17 September 2026)",
+        "url": "https://wetten.overheid.nl/BWBR0001941/2026-09-17"
+      }
+    ]
   }
 ]
