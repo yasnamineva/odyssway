@@ -9,7 +9,7 @@ without a primary official source.
 Where we are today (2026-11-02):
 
 - 68 destinations plus the Schengen Area; 3,786 verified entry rows; 710 customs rows
-  (138 medication, 38 with a doctor's-letter checklist, 20 with a permit how-to, 19 with
+  (144 medication, 39 with a doctor's-letter checklist, 21 with a permit how-to, 19 with
   a transit rule); 1,125 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
   planner, travel-authorisation guides, the 90/180 calculator, the multi-country day counter, named-medicine pages, border cards,
@@ -239,8 +239,7 @@ pattern Armenia's bilateral rows use); their registration rules are still open. 
 ✔ Same day, later: Malaysia (16 from embassy pages), Jamaica (14 conditional rows: visa-free with vaccination proof for
 the Baltics and Slovenia; visa on arrival for ten others, visa-free only with a US/CA/UK/Schengen visa plus vaccination), Mexico (29 from the
 SRE visa-free list). New guard: validate-data fails when a row cites a source claim written for another passport (it
-caught 106 rows, fixed). **Deploy pending:** about 100 local commits; full e2e passed (121) on 2026-11-02 before the later data batches. On 2026-11-03:
-rerun build + e2e, push once, then `pnpm indexnow -- --since 2026-11-02`.
+caught 106 rows, fixed). **Pushed 2026-11-03** (106 commits; build, unit tests and 121 e2e passed); IndexNow `--since 2026-11-02` after the deploy.
 **External review follow-ups (2026-11-02)**: ✔ source registry with re-check intervals (`data/source-registry.json`,
 `pnpm sources:registry`; `pnpm coverage` lists rows due); ✔ entry lists stored by group (`data/entry-lists.json`, 26
 destinations, `pnpm entry:lists --apply` to add a passport); ✔ "Suggest an official source" mail form on /sources (no
