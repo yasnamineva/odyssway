@@ -4036,3 +4036,8 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
 ## 2026-11-03 customs gaps: Belize, North Macedonia
 - Belize cannabis/weapons: customs.gov.bz's "Restricted and Prohibited Goods" PDF is the Customs Regulation (Cap. 49) schedule, Revised Edition 2003 (a scan). It lists cannabis as prohibited "as defined in the Misuse of Drugs Act", but that Act has been amended since 2003; no cannabis or weapons row until a current text of the Act or a current customs page is read.
 - North Macedonia: customs.gov.mk doesn't resolve from here (DNS). Alcohol, tobacco, medication and food rows need it or another official page.
+- Ghana medication: FDA Ghana's import pages cover shipments (FD16 personal-effects permit via ICUMS), not medicines carried by travellers; no row until a traveller rule is found.
+- Zambia: ZRA has no restricted-goods or passenger page (the "passenger clearance" post is empty); ZAMRA has no traveller guidance. Medication, food, weapons, vapes still open.
+- Ecuador food and plants: Agrocalidad (agrocalidad.gob.ec) returns 403; SENAE's traveller page only points to it for pets.
+- Cambodia alcohol/tobacco/food/vapes: customs.gov.kh is a Nuxt app; its FAQ and procedure pages carry no traveller allowance text in the served payload.
+- 2026-11-03 retry of held authorisation guides: canada.ca doesn't connect, immigration.govt.nz serves a 212-byte JS shell, gov.il is behind a Cloudflare block (israel-entry.piba.gov.il loads but is an app). Still held.

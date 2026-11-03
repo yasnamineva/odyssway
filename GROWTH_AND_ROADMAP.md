@@ -8,7 +8,7 @@ without a primary official source.
 
 Where we are today (2026-11-02):
 
-- 68 destinations plus the Schengen Area; 3,786 verified entry rows; 715 customs rows
+- 68 destinations plus the Schengen Area; 3,786 verified entry rows; 717 customs rows
   (144 medication, 39 with a doctor's-letter checklist, 21 with a permit how-to, 19 with
   a transit rule); 1,125 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
@@ -289,7 +289,7 @@ South Africa, Nigeria, Poland, Portugal, Vietnam, Pakistan. Add one at a time, f
   Mauritius and Seychelles (allowed), Jordan medication, weapons for Mauritius, Seychelles, North
   Macedonia, Bosnia, Sri Lanka, Tanzania and Oman; conflicts recorded (Uzbekistan drones, Oman
   alcohol). Re-run both scans after each destination batch.
-- **Gap scan (2026-11-03)**: categories still missing, worst first (FR/SE/ES fall back to the EU rows, so they're fine): El Salvador 8 (aduana.gob.sv unreachable, mh.gob.sv 403), North Macedonia 7 (customs.gov.mk DNS fails), Belize 7, Uzbekistan 6, Ghana 6, Zambia 6, Mongolia 6, Ecuador 5, Cambodia 5, Brunei 5. Next: Ghana and Zambia revenue-authority pages, then Ecuador (SENAE).
+- **Gap scan (2026-11-03)**: categories still missing, worst first (FR/SE/ES fall back to the EU rows, so they're fine): El Salvador 8 (aduana.gob.sv unreachable, mh.gob.sv 403), North Macedonia 7 (customs.gov.mk DNS fails), Belize 7, Uzbekistan 6, Ghana 6, Zambia 6, Mongolia 6, Ecuador 5, Cambodia 5, Brunei 5. ✔ Same day: Ghana weapons and plants (GRA). Blocked: Ghana medication (FDA covers shipments only), Zambia (no ZRA passenger page), Ecuador food (Agrocalidad 403), Cambodia (Nuxt app, no allowance text); details in TODO. Next: Uzbekistan and Mongolia via the foreign-ministry routes, Brunei and Macao customs pages.
 - Customs rows for destinations that have none or very few: Mongolia, Seychelles medicine,
   Zimbabwe tobacco and cash (ZIMRA gives no primary threshold).
 - **Second vertical after medication**, chosen from data (§5): CBD and cannabis, food,
