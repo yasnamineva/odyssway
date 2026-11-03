@@ -1,5 +1,50 @@
 [
   {
+    "commit": "08ac6ff1015ccf9ab8256c808411ed481986060b",
+    "date": "2026-11-03",
+    "dataset": "customs-items",
+    "summary": "Iceland meat and dairy: drop the cheese search name the row's text doesn't mention",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+      "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+    },
+    "destinations": [
+      "IS"
+    ]
+  },
+  {
+    "commit": "18e8f4b5a5763f53997ee2d20e943a6e8f01a3c5",
+    "date": "2026-11-03",
+    "dataset": "customs-items",
+    "summary": "Iceland: cash (declare EUR 10,000 or more), meat and dairy and fresh produce (no food from outside the EEA, no raw meat), weapons (police permit), from island.is",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+      "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+    },
+    "destinations": [
+      "IS"
+    ]
+  },
+  {
+    "commit": "47e99c2f9739a9d509c5b81476a0ad8cd3e6aae3",
+    "date": "2026-11-03",
+    "dataset": "customs-items",
+    "summary": "Norway: medication (3 months from outside the EEA), narcotic medication (30 days for visitors, permit for longer), CBD (a narcotic whatever its THC), meat and dairy, fruit and vegetables, from the Medical Products Agency and Norwegian Customs",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Norwegian Medical Products Agency (DMP/NOMA) — Bringing medicines into Norway by travel (updated 28/10/2026)",
+      "url": "https://www.dmp.no/en/manufacturing-import-and-retailing-of-medicines/importing-medicines-for-personal-use/bringing-medicines-into-norway-by-travel"
+    },
+    "destinations": [
+      "NO"
+    ]
+  },
+  {
     "commit": "9de52b14727da6ecd0ebd363fd28c029ccfc87ca",
     "date": "2026-11-03",
     "dataset": "customs-items",
