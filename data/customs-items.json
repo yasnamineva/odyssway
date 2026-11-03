@@ -24507,5 +24507,126 @@
         "url": "https://www.zoll.de/DE/Privatpersonen/Reisen/Reisen-nach-Deutschland-aus-einem-nicht-eu-Staat/Einschraenkungen/Arznei-Betaeubungsmittel/arznei-betaeubungsmittel_node.html"
       }
     ]
+  },
+  {
+    "destination": "DE",
+    "category": "cbd_cannabis",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "slug": "cannabis-de",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish",
+      "hash"
+    ],
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Importing cannabis into Germany is prohibited (§ 2(1) No. 5 of the Consumer Cannabis Act, KCanG), and so is carrying it through in transit (No. 6). The adult possession allowance inside Germany (§ 3) doesn't extend to bringing cannabis across the border. 'Cannabis' covers the plants, flowers, other plant parts and resin, their cannabinoids, and preparations of them."
+    },
+    "notes": "Medical cannabis is outside this law: since 1 April 2024 it falls under the Medical Cannabis Act and is no longer a narcotic in Germany. BfArM's travel guidance for medical cannabis is written for patients travelling from Germany (an Article 75 certificate within Schengen, an authenticated multilingual doctor's certificate elsewhere); it doesn't say what a visitor bringing medical cannabis into Germany needs, so check with BfArM before you travel.",
+    "summary": "Bringing cannabis into Germany is prohibited, even though adults may possess some inside the country. Medical cannabis falls under a separate law.",
+    "legal_source": {
+      "name": "Konsumcannabisgesetz (KCanG), § 2 — handling of cannabis",
+      "url": "https://www.gesetze-im-internet.de/kcang/__2.html"
+    },
+    "_sources": [
+      {
+        "claim": "Prohibited to import or export cannabis (§ 2(1) No. 5) and to carry it in transit (No. 6); adult exceptions in § 2(3) cover possession under § 3, home growing and clubs, not import",
+        "name": "Konsumcannabisgesetz (KCanG), § 2 — handling of cannabis",
+        "url": "https://www.gesetze-im-internet.de/kcang/__2.html"
+      },
+      {
+        "claim": "Definition of cannabis: plants, flowers, plant parts, resin, cannabinoids and preparations, excluding medical cannabis, CBD, propagation material and industrial hemp",
+        "name": "Konsumcannabisgesetz (KCanG), § 1 — definitions",
+        "url": "https://www.gesetze-im-internet.de/kcang/__1.html"
+      },
+      {
+        "claim": "Medical cannabis no longer a narcotic in Germany since 1 April 2024; travel certificates described for patients travelling from Germany",
+        "name": "BfArM (Federal Opium Agency) — Reisen mit medizinischem Cannabis",
+        "url": "https://www.bfarm.de/DE/Bundesopiumstelle/Medizinisches-Cannabis/Reisen-mit-medizinischem-Cannabis/_node.html"
+      }
+    ]
+  },
+  {
+    "destination": "DE",
+    "category": "cbd_cannabis",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "slug": "cbd-de",
+    "names": [
+      "cbd",
+      "cbd oil",
+      "cannabidiol",
+      "cbd gummies",
+      "hemp extract",
+      "hemp oil"
+    ],
+    "verdict": "depends",
+    "limits": {
+      "description": "CBD (cannabidiol) itself is excluded from the definition of cannabis in the Consumer Cannabis Act, so the import ban doesn't apply to it. But products made from the hemp plant, such as full-spectrum oils, flowers or extracts that still contain other cannabinoids like THC, count as 'cannabis' unless they qualify as industrial hemp. Industrial hemp only qualifies when it's used purely for commercial or scientific purposes that rule out use as an intoxicant, and its THC is no more than 0.3% (or it comes from EU-certified varieties)."
+    },
+    "notes": "This is our reading of the law's definitions (§ 1 KCanG); neither German Customs nor BfArM publishes guidance for travellers carrying CBD. A product that is pure CBD is outside the cannabis rules; anything with plant material or THC risks being treated as cannabis, which can't be imported. CBD sold as a medicine or food may fall under other rules.",
+    "summary": "Pure CBD isn't covered by Germany's cannabis import ban, but hemp products with THC or plant material can count as cannabis, which you can't bring in.",
+    "legal_source": {
+      "name": "Konsumcannabisgesetz (KCanG), § 1 — definitions",
+      "url": "https://www.gesetze-im-internet.de/kcang/__1.html"
+    },
+    "_sources": [
+      {
+        "claim": "CBD excluded from the definition of cannabis (§ 1 No. 8(b)); industrial hemp (§ 1 No. 9) only for commercial or scientific purposes excluding intoxicant use, from EU-certified varieties or with THC not above 0.3%",
+        "name": "Konsumcannabisgesetz (KCanG), § 1 — definitions",
+        "url": "https://www.gesetze-im-internet.de/kcang/__1.html"
+      },
+      {
+        "claim": "Import of cannabis prohibited",
+        "name": "Konsumcannabisgesetz (KCanG), § 2 — handling of cannabis",
+        "url": "https://www.gesetze-im-internet.de/kcang/__2.html"
+      }
+    ]
+  },
+  {
+    "slug": "weapons-de",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "rifles",
+      "shotguns",
+      "ammunition",
+      "hunting rifle",
+      "pistol"
+    ],
+    "destination": "DE",
+    "category": "weapons",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "Bringing a firearm or ammunition into Germany from outside the EU needs a permit issued before you travel by the German weapons authority, both to bring it in for good and to carry it temporarily (for example for a competition or a hunt). Declare all weapons and ammunition to customs without being asked, and show them if requested. Some weapons sold freely elsewhere can't be brought in at all, or only under conditions."
+    },
+    "notes": "This is Germany's national rule, from German Customs. If you don't live in Germany, the permit comes from the local weapons authority (Ordnungsamt or Landratsamt) for the place you'll stay or use the weapon, such as the hunting ground or event; in transit, the authority where you cross the border. Holders of a German weapons ownership licence need no further documents. Iceland, Norway, Switzerland and Liechtenstein count as EU countries for this rule; arriving from the EU, the European Firearms Pass rules apply (see the EU entry). Illegally bringing in weapons or ammunition can be punished with up to five years in prison, or up to ten in particularly serious cases.",
+    "summary": "Firearms and ammunition from outside the EU need a German permit before you travel, and must be declared at customs. Some weapons are banned outright.",
+    "legal_source": {
+      "name": "German Customs (Zoll) — Waffen und Munition (returning from or travelling from a non-EU country)",
+      "url": "https://www.zoll.de/DE/Privatpersonen/Reisen/Rueckkehr-aus-einem-Nicht-EU-Staat/Einschraenkungen/Waffen-und-Munition/waffen-und-munition_node.html"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Permit needed to bring in (Verbringen) or carry temporarily (Mitnahme) weapons and ammunition from a non-EU country, issued before travel by the German weapons authority; holders of German licences need no more; IS, NO, CH, LI treated as EU; some weapons banned; up to 5 years in prison (10 in serious cases); declare unprompted and present at customs; competent authority for non-residents",
+        "name": "German Customs (Zoll) — Waffen und Munition (returning from or travelling from a non-EU country)",
+        "url": "https://www.zoll.de/DE/Privatpersonen/Reisen/Rueckkehr-aus-einem-Nicht-EU-Staat/Einschraenkungen/Waffen-und-Munition/waffen-und-munition_node.html"
+      },
+      {
+        "claim": "Tourists bringing weapons from a non-EU country follow the same rules as returning residents; from an EU state the intra-EU rules apply; competent authority for non-residents",
+        "name": "German Customs (Zoll) — Waffen und Munition: travelling to Germany as a tourist from a non-EU country",
+        "url": "https://www.zoll.de/DE/Privatpersonen/Reisen/Reisen-nach-Deutschland-aus-einem-nicht-eu-Staat/Einschraenkungen/Waffen-und-Munition/waffen-und-munition_node.html"
+      }
+    ]
   }
 ]
