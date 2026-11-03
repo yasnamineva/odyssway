@@ -8,8 +8,8 @@ without a primary official source.
 
 Where we are today (2026-11-02):
 
-- 68 destinations plus the Schengen Area; 3,786 verified entry rows; 697 customs rows
-  (135 medication, 38 with a doctor's-letter checklist, 19 with a permit how-to, 19 with
+- 68 destinations plus the Schengen Area; 3,786 verified entry rows; 699 customs rows
+  (136 medication, 38 with a doctor's-letter checklist, 19 with a permit how-to, 19 with
   a transit rule); 1,125 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
   planner, travel-authorisation guides, the 90/180 calculator, the multi-country day counter, named-medicine pages, border cards,
@@ -255,7 +255,7 @@ and Liechtenstein with the EU allowances (Schengen isn't customs membership); no
 their own rows, which don't exist yet, so they show 'not verified'. ✔ Customs rows added the same day: Norway (alcohol, tobacco,
 vapes, pouches, cash NOK 25,000), Switzerland (alcohol, tobacco, vapes, meat/dairy, produce), Iceland (alcohol units,
 tobacco, nicotine, medicines, cannabis); Liechtenstein answers from the Swiss rows (`customsTerritory`, 1923 treaty).
-Still missing: Swiss cash and medication, Norwegian food and medication (helsedirektoratet/dmp pages).
+✔ 2026-11-03 Swiss cash (no limit, no declaration; CHF 10,000 disclosure on questioning) and medication (30 days' supply of narcotic/psychotropic medicines, no doping substances), from BAZG pages; Swissmedic's site times out from here. Still missing: Norwegian food and medication (helsedirektoratet/dmp pages).
 ✔ 2026-11-02 Türkiye passport URLs: slugs dropped the 'ü' (`/t-rkiye`); fixed to `/turkiye` with 308 redirects.
 ✔ Post `/blog/montenegro-visa-turkey-russia-belarus-2026`. **Pushed 2026-11-02** (through the Bosnia rows); IndexNow 383 URLs.
 

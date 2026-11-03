@@ -23256,5 +23256,78 @@
         "url": "https://www.bazg.admin.ch/en/general-information-on-duty-free-allowances-and-value-limits"
       }
     ]
+  },
+  {
+    "slug": "cash-ch",
+    "names": [
+      "cash",
+      "money",
+      "currency",
+      "banknotes",
+      "coins",
+      "cheques",
+      "bearer instruments"
+    ],
+    "destination": "CH",
+    "category": "cash",
+    "verdict": "allowed",
+    "limits": {
+      "description": "There is no limit on cash, foreign currency or bearer instruments (shares, bonds, cheques) carried into, through or out of Switzerland, and no duty to declare it. If customs staff ask about cash during a check, you must answer truthfully; for CHF 10,000 or more you will be asked your identity, where the money comes from, what it is for and who owns it.",
+      "quantity": "No limit; no declaration"
+    },
+    "notes": "Refusing to answer or giving false information is a customs offence and can be fined. Amounts of CHF 10,000 or more are recorded in the customs information system. If money laundering or terrorist financing is suspected, the cash can be seized temporarily and handed to the police. Switzerland is in Schengen but outside the EU, so the EU cash-declaration rule does not apply at its borders.",
+    "summary": "No limit and no declaration. If customs ask, answer truthfully; for CHF 10,000 or more you must say where the money comes from and what it is for.",
+    "legal_source": {
+      "name": "Federal Office for Customs and Border Security (FOCBS/BAZG) — Notes and coins, foreign currencies, bearer negotiable instruments",
+      "url": "https://www.bazg.admin.ch/en/cash-foreign-currency-securities"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "No limit, no duty to declare; truthful answers when questioned; CHF 10,000 disclosure and recording; penalties and temporary seizure",
+        "name": "Federal Office for Customs and Border Security (FOCBS/BAZG) — Notes and coins, foreign currencies, bearer negotiable instruments",
+        "url": "https://www.bazg.admin.ch/en/cash-foreign-currency-securities"
+      }
+    ]
+  },
+  {
+    "slug": "medication-ch",
+    "names": [
+      "medication",
+      "medicine",
+      "medicines",
+      "prescription medicine",
+      "prescription drugs",
+      "pills",
+      "tablets",
+      "controlled medication",
+      "narcotic medication",
+      "psychotropic medication"
+    ],
+    "destination": "CH",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "You can carry medicines containing narcotic or psychotropic substances without an import permit if the amount is no more than you need for 30 days and is for your own use, not for someone else. Doping substances are not allowed in any quantity.",
+      "quantity": "Up to 30 days’ supply of narcotic or psychotropic medicines"
+    },
+    "notes": "Customs check whether medicines are licensed or compliant and whether the quantity is within the maximum monthly amount for one person; suspicious goods are held and passed to Swissmedic, which alone decides. Doping substances are those in Annex I of the Sport Promotion Ordinance; Swiss Sport Integrity publishes the prohibited list. Swissmedic’s own travel page could not be read from here, so certificates it may recommend are not listed.",
+    "summary": "Narcotic or psychotropic medicines: up to 30 days’ supply for your own use, no permit needed. Doping substances are banned.",
+    "legal_source": {
+      "name": "Federal Office for Customs and Border Security (FOCBS/BAZG) — Medicines (medicinal products) and doping",
+      "url": "https://www.bazg.admin.ch/en/import-of-medicines-and-doping-substances"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "30-day supply of narcotic/psychotropic medicines without permit, own use only; no doping substances for individuals; customs check monthly limit and refer to Swissmedic",
+        "name": "Federal Office for Customs and Border Security (FOCBS/BAZG) — Medicines (medicinal products) and doping",
+        "url": "https://www.bazg.admin.ch/en/import-of-medicines-and-doping-substances"
+      }
+    ]
   }
 ]
