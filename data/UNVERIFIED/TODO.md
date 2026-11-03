@@ -4065,3 +4065,8 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
 - Service/diplomatic passports differ for CH EE LT ME PL RO (up to 90 days) and GR (diplomatic "no"); rows cover ordinary passports only.
 - Held: MD (ordinary "no" under visa-free regime but "free visa regime" under facilitated; contradictory), XK (not in the portal's list).
 
+## 2026-11-03 Zimbabwe, remaining passports (entry-lists.json ZW)
+- Category A (?p=7176) adds CY, MT; Category B (?p=7186) adds 37 European passports. Rows via `pnpm entry:lists --apply` (templates SG, CN).
+- Held: FI, FR, LI, ME, XK, on neither list. Find the Category C page (visa before travel) on zimimmigration.gov.zw, or confirm the omissions with the eVisa portal (evisa.gov.zw).
+- Cyprus (CY destination): gov.cy MFA visa-exempt list returns 403 from here (2026-11-03); 17 rows only.
+

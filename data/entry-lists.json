@@ -6757,5 +6757,117 @@
         "reason": "Not on any of Zambia's three nationality lists"
       }
     ]
+  },
+  {
+    "destination": "ZW",
+    "source": {
+      "name": "Department of Immigration Zimbabwe — Category B countries (visa on arrival or eVisa)",
+      "url": "https://www.zimimmigration.gov.zw/?p=7186"
+    },
+    "checked": "2026-11-03",
+    "groups": [
+      {
+        "label": "visa free",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "SG",
+        "nationalities": [
+          "CY",
+          "MT",
+          "MY",
+          "SG"
+        ]
+      },
+      {
+        "label": "visa on arrival",
+        "requirement": "visa_on_arrival",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "CN",
+        "nationalities": [
+          "AD",
+          "AL",
+          "AM",
+          "AR",
+          "AT",
+          "AU",
+          "AZ",
+          "BA",
+          "BE",
+          "BG",
+          "BR",
+          "BY",
+          "CA",
+          "CH",
+          "CL",
+          "CN",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "GB",
+          "GE",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IN",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MD",
+          "MK",
+          "MX",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RS",
+          "RU",
+          "SE",
+          "SI",
+          "SK",
+          "SM",
+          "TR",
+          "UA",
+          "US",
+          "VA"
+        ]
+      }
+    ],
+    "held": [
+      {
+        "nationality": "FI",
+        "reason": "Finland isn't on the Department of Immigration's Category A or B list (2026-11-03); the Category C page wasn't found."
+      },
+      {
+        "nationality": "FR",
+        "reason": "France isn't on the Department of Immigration's Category A or B list (2026-11-03); the Category C page wasn't found."
+      },
+      {
+        "nationality": "LI",
+        "reason": "Liechtenstein isn't on the Department of Immigration's Category A or B list (2026-11-03); the Category C page wasn't found."
+      },
+      {
+        "nationality": "ME",
+        "reason": "Montenegro isn't on the Department of Immigration's Category A or B list (2026-11-03); the Category C page wasn't found."
+      },
+      {
+        "nationality": "XK",
+        "reason": "Kosovo isn't on the Department of Immigration's Category A or B list (2026-11-03); the Category C page wasn't found."
+      }
+    ]
   }
 ]
