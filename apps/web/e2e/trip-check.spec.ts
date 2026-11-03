@@ -61,13 +61,12 @@ test("resolves a verified non-Schengen destination end to end, with a matched cu
 test("a nationality/destination pair with no verified row shows the honest not-covered state, never a guess", async ({
   page,
 }) => {
-  // Israel -> Singapore: both individually verified, but that specific pair's
-  // entry-requirement row was withheld from production data (only
-  // secondary-sourced, not primary-confirmed) — must resolve honestly, not
-  // fall back to a guess.
+  // Israel -> Cambodia: both individually verified, but there's no row for
+  // that pair (Cambodia's list sits behind a captcha) — must resolve
+  // honestly, not fall back to a guess.
   await page.goto("/trip-check");
   await pickCombobox(page, "tc-nationality", "Israel", "Israel");
-  await pickCombobox(page, "tc-destination", "Singapore", "Singapore");
+  await pickCombobox(page, "tc-destination", "Cambodia", "Cambodia");
   await page.getByTestId("tc-submit").click();
 
   await expect(page.getByTestId("tc-not-covered")).toBeVisible();
@@ -345,4 +344,24 @@ test("an uncovered passport and destination pair sends only the two country code
   await page.getByTestId("tc-submit").click();
   const body = (await sent).postDataJSON() as Record<string, unknown>;
   expect(body).toEqual({ nationality: "IL", destination: "KH" });
+});
+
+test("a stopover belongs to one flight: shown on the map in order and in the route table with its item verdict", async ({ page }) => {
+  await page.goto("/trip-check");
+  await pickCombobox(page, "tc-nationality", "Bulgaria", "Bulgaria");
+  await pickCombobox(page, "tc-destination", "Armenia", "Armenia");
+  await page.getByTestId("tc-add-leg").click();
+  await pickCombobox(page, "tc-leg-0", "USA", "United States");
+  await expect(page.getByText("Changing planes on the way to United States? (optional)")).toBeVisible();
+  await pickCombobox(page, "tc-leg-transit-0", "Canada", "Canada");
+  await page.getByTestId("tc-item-input").fill("adderall");
+  await page.getByTestId("tc-item-input").press("Enter");
+  await page.getByTestId("tc-submit").click();
+  await expect(page.locator('svg[aria-label*="Bulgaria → Armenia → Canada → United States"]')).toBeVisible();
+  const summary = page.getByTestId("tc-route-summary");
+  await expect(summary.getByTestId("tc-route-via")).toContainText("Canada");
+  await expect(summary.getByTestId("tc-route-via")).toContainText("to United States");
+  await expect(summary.getByTestId("tc-route-via-cell")).toHaveCount(1);
+  // The shared link keeps the stopover on the second flight.
+  expect(page.url()).not.toContain("s=CA");
 });

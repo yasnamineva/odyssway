@@ -109,6 +109,9 @@ export default function TripCheck({
   // Further countries on the same trip (Horizon 2, itinerary check): each is
   // resolved with the same passport and items, one verdict per border.
   const [extraLegs, setExtraLegs] = useState<string[]>([]);
+  // The stopover on the way to each further country, same order as extraLegs
+  // (`transit` is the one on the way to the first destination).
+  const [legTransits, setLegTransits] = useState<string[]>([]);
   const [submitted, setSubmitted] = useState(Boolean(initialNationality && initialDestination));
 
   // A shared link (#n=…&d=…) restores the whole trip and shows the result.
@@ -119,6 +122,7 @@ export default function TripCheck({
     setDestination(shared.destination);
     setExtraLegs(shared.legs);
     setTransit(shared.transit);
+    setLegTransits(shared.legTransits);
     setItems(shared.items);
     setSubmitted(true);
   }, []);
@@ -169,10 +173,11 @@ export default function TripCheck({
   const legResults: TripCheckResult[] = useMemo(() => {
     if (!result || !engine) return [];
     const more = extraLegs
-      .filter((code, i) => code && code !== destination && extraLegs.indexOf(code) === i)
-      .map((code) => engine.resolveTripCheck(nationality, code, items));
+      .map((code, i) => ({ code, via: legTransits[i] ?? "" }))
+      .filter(({ code }, i) => code && code !== destination && extraLegs.indexOf(code) === i)
+      .map(({ code, via }) => engine.resolveTripCheck(nationality, code, items, via && via !== code ? via : undefined));
     return [result, ...more];
-  }, [result, engine, extraLegs, destination, nationality, items]);
+  }, [result, engine, extraLegs, legTransits, destination, nationality, items]);
 
   // Best-effort, fire-and-forget: count passport × destination pairs we don't
   // cover yet (two country codes, nothing else; /privacy section 2), once per
@@ -244,26 +249,55 @@ export default function TripCheck({
   const originLabel = publishedNationalities.find((n) => n.nationality === nationality)?.name;
   const destinationLabel = destinationLabelFor(destination);
   const mapDestinationCode = destination ? resolveMapDestinationCode(destination) : undefined;
-  // The whole route for the map, in travel order: passport country, stopover,
-  // destination, then any further countries.
+  // The whole route for the map, in travel order: passport country, then each
+  // country on the trip, each preceded by the stopover on the way to it.
+  const viaStop = (via: string, to: string): MapStop[] =>
+    via && via !== to ? [{ code: via, label: destinationLabelFor(via), kind: "transit" as const }] : [];
   const mapStops: MapStop[] = [
     ...(nationality ? [{ code: nationality, label: originLabel, kind: "origin" as const }] : []),
-    ...(transit && transit !== destination
-      ? [{ code: transit, label: destinationLabelFor(transit), kind: "transit" as const }]
+    ...(mapDestinationCode
+      ? [...viaStop(transit, destination), { code: mapDestinationCode, label: destinationLabel, kind: "destination" as const }]
       : []),
-    ...(mapDestinationCode ? [{ code: mapDestinationCode, label: destinationLabel, kind: "destination" as const }] : []),
-    ...extraLegs
-      .filter((code) => code && code !== destination)
-      .map((code) => ({ code: resolveMapDestinationCode(code), label: destinationLabelFor(code), kind: "destination" as const })),
+    ...extraLegs.flatMap((code, i) =>
+      code && code !== destination
+        ? [
+            ...viaStop(legTransits[i] ?? "", code),
+            { code: resolveMapDestinationCode(code), label: destinationLabelFor(code), kind: "destination" as const },
+          ]
+        : [],
+    ),
   ];
-  const transitGroups = [
+  const transitGroupsFor = (stop: string) => [
     { options: [{ value: "", label: t("transitPlaceholder") }] },
     ...destinationOptionGroups({
-      destinations: destinations.filter((d) => d.status === "verified" && d.code !== destination),
-      schengenStates: schengenCountries.filter((c) => c.code !== destination),
+      destinations: destinations.filter((d) => d.status === "verified" && d.code !== stop),
+      schengenStates: schengenCountries.filter((c) => c.code !== stop),
       labels: { destinations: t("toGroupDestinations"), schengenSuffix: t("schengenSuffix"), comingSoon: t("toGroupComingSoon"), comingSoonSuffix: t("comingSoonSuffix") },
     }),
   ];
+  // "Changing planes on the way to {country}": one per country on the trip, so a
+  // stopover always belongs to a specific flight.
+  const viaPicker = (stop: string, value: string, onPick: (v: string) => void, id: string, hint: boolean) =>
+    stop ? (
+      <div className="mt-2 border-l-2 border-slate-200 pl-3">
+        <label className="mb-1 block text-xs font-medium text-slate-600" htmlFor={id}>
+          {t("viaLabel", { country: destinationLabelFor(stop) ?? stop })}
+        </label>
+        <SearchableSelect
+          id={id}
+          data-testid={id}
+          value={value}
+          onChange={(v) => {
+            onPick(v);
+            setSubmitted(false);
+          }}
+          placeholder={t("transitPlaceholder")}
+          noResultsLabel={t("noMatches")}
+          groups={transitGroupsFor(stop)}
+        />
+        {hint && <p className="mt-1 text-[11px] leading-snug text-slate-500">{t("transitHint")}</p>}
+      </div>
+    ) : null;
 
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm lg:p-8">
@@ -337,6 +371,7 @@ export default function TripCheck({
               noResultsLabel={t("noMatches")}
               groups={destinationGroups}
             />
+            {viaPicker(destination === SCHENGEN_DESTINATION ? "" : destination, transit, setTransit, "tc-transit", true)}
           </div>
 
           {extraLegs.map((leg, i) => (
@@ -361,12 +396,22 @@ export default function TripCheck({
                 <button
                   type="button"
                   aria-label={t("removeLeg", { n: i + 2 })}
-                  onClick={() => setExtraLegs((prev) => prev.filter((_, j) => j !== i))}
+                  onClick={() => {
+                    setExtraLegs((prev) => prev.filter((_, j) => j !== i));
+                    setLegTransits((prev) => prev.filter((_, j) => j !== i));
+                  }}
                   className="shrink-0 rounded-lg border border-slate-300 px-3 text-sm text-slate-500 hover:bg-slate-50 hover:text-red-600"
                 >
                   ×
                 </button>
               </div>
+              {viaPicker(
+                leg,
+                legTransits[i] ?? "",
+                (v) => setLegTransits((prev) => extraLegs.map((_, j) => (j === i ? v : (prev[j] ?? "")))),
+                `tc-leg-transit-${i}`,
+                false,
+              )}
             </div>
           ))}
           {extraLegs.length < 4 && (
@@ -374,31 +419,15 @@ export default function TripCheck({
               type="button"
               data-testid="tc-add-leg"
               disabled={!destination}
-              onClick={() => setExtraLegs((prev) => [...prev, ""])}
+              onClick={() => {
+                setExtraLegs((prev) => [...prev, ""]);
+                setLegTransits((prev) => [...prev, ""]);
+              }}
               className="text-xs font-semibold text-brand-700 underline underline-offset-2 disabled:cursor-not-allowed disabled:opacity-40"
             >
               {t("addLeg")}
             </button>
           )}
-
-          <div>
-            <label className={labelClass} htmlFor="tc-transit">
-              {t("transitLabel")}
-            </label>
-            <SearchableSelect
-              id="tc-transit"
-              data-testid="tc-transit"
-              value={transit}
-              onChange={(v) => {
-                setTransit(v);
-                setSubmitted(false);
-              }}
-              placeholder={t("transitPlaceholder")}
-              noResultsLabel={t("noMatches")}
-              groups={transitGroups}
-            />
-            <p className="mt-1 text-[11px] leading-snug text-slate-500">{t("transitHint")}</p>
-          </div>
 
           <div>
             <label className={labelClass} htmlFor="tc-item">
@@ -506,10 +535,10 @@ export default function TripCheck({
               }
             />
           </div>
-          {result && legResults.length > 1 && (
+          {result && (legResults.length > 1 || legResults.some((l) => l.transit)) && (
             <div id="tc-result" className="order-1 scroll-mt-4 lg:order-2">
               <ShareTripLink
-                state={{ nationality, destination, legs: extraLegs, transit, items }}
+                state={{ nationality, destination, legs: extraLegs, transit, legTransits, items }}
               />
               <RouteSummary legs={legResults} items={items} />
               <RoutePassportCheck legs={legResults} />
@@ -527,10 +556,10 @@ export default function TripCheck({
               ))}
             </div>
           )}
-          {result && legResults.length <= 1 && (
+          {result && legResults.length <= 1 && !result.transit && (
             <div id="tc-result" className="order-1 scroll-mt-4 lg:order-2">
               <ShareTripLink
-                state={{ nationality, destination, legs: extraLegs, transit, items }}
+                state={{ nationality, destination, legs: extraLegs, transit, legTransits, items }}
               />
               <TripCheckResults
                 result={result}
@@ -565,6 +594,19 @@ const VERDICT_TONE: Record<string, string> = {
  * across borders (AGENTS.md §3). */
 function RouteSummary({ legs, items }: { legs: TripCheckResult[]; items: string[] }) {
   const t = useTranslations("tripCheck");
+  const tt = useTranslations("transit");
+  // Travel order: each stopover comes just before the country it leads to.
+  const columns = legs.flatMap((leg) => [
+    ...(leg.transit ? [{ kind: "via" as const, leg, key: `via-${leg.destination}-${leg.transit.code}` }] : []),
+    { kind: "stop" as const, leg, key: leg.destination },
+  ]);
+  const airsideLabel = (leg: TripCheckResult): string => {
+    const a = leg.transitEntry?.airside?.rule;
+    if (!a) return t("routeAirsideUnverified");
+    if (a.airside === "no_visa") return t("airsideNoVisa");
+    if (a.airside === "transit_visa_required") return t("airsideVisaRequired", { visa: a.visaName ?? "" });
+    return t("airsideDepends", { visa: a.visaName ?? "" });
+  };
   return (
     <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm" data-testid="tc-route-summary">
       <h2 className="text-sm font-semibold text-slate-900">{t("routeTitle")}</h2>
@@ -574,30 +616,67 @@ function RouteSummary({ legs, items }: { legs: TripCheckResult[]; items: string[
           <thead>
             <tr className="border-b border-slate-200 text-slate-500">
               <th className="py-2 pr-3 font-medium">{t("routeColumnFirst")}</th>
-              {legs.map((leg) => (
-                <th key={leg.destination} className="py-2 pr-3 font-medium text-slate-900">
-                  {leg.destinationName}
-                </th>
-              ))}
+              {columns.map((c) =>
+                c.kind === "via" ? (
+                  <th key={c.key} className="py-2 pr-3 font-medium text-slate-700" data-testid="tc-route-via">
+                    <span className="block text-[10px] font-semibold tracking-wide text-blue-700 uppercase">
+                      {t("routeViaHeading", { country: c.leg.destinationName })}
+                    </span>
+                    {c.leg.transit?.name}
+                  </th>
+                ) : (
+                  <th key={c.key} className="py-2 pr-3 font-medium text-slate-900">
+                    {c.leg.destinationName}
+                  </th>
+                ),
+              )}
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-slate-100">
               <td className="py-2 pr-3 font-medium text-slate-700">{t("routeEntryRow")}</td>
-              {legs.map((leg) => (
-                <td key={leg.destination} className="py-2 pr-3 text-slate-800" data-testid="tc-route-entry">
-                  {t(`routeBasis.${leg.basis}`)}
-                </td>
-              ))}
+              {columns.map((c) =>
+                c.kind === "via" ? (
+                  <td key={c.key} className="py-2 pr-3 text-slate-800" data-testid="tc-route-via-entry">
+                    {airsideLabel(c.leg)}
+                  </td>
+                ) : (
+                  <td key={c.key} className="py-2 pr-3 text-slate-800" data-testid="tc-route-entry">
+                    {t(`routeBasis.${c.leg.basis}`)}
+                  </td>
+                ),
+              )}
             </tr>
             {items.map((item) => (
               <tr key={item} className="border-b border-slate-100 last:border-0">
                 <td className="py-2 pr-3 font-medium break-words text-slate-700">{item}</td>
-                {legs.map((leg) => {
-                  const match = leg.items.find((i) => i.query === item)?.match;
-                  const intra = leg.intraEuCustoms && !match;
+                {columns.map((c) => {
+                  const it = c.leg.items.find((i) => i.query === item);
+                  if (c.kind === "via") {
+                    const row = it?.transitMatch;
+                    return (
+                      <td key={c.key} className="py-2 pr-3" data-testid="tc-route-via-cell">
+                        {!row ? (
+                          <span className="text-slate-400">{t("routeNotCovered")}</span>
+                        ) : row.transit?.rule === "exempt_airside" ? (
+                          <span className="text-slate-600">{tt("exempt_airside")}</span>
+                        ) : (
+                          <>
+                            <span className={`inline-block rounded px-1.5 py-0.5 ${VERDICT_TONE[row.verdict] ?? ""}`}>
+                              {t(`routeVerdict.${row.verdict}`)}
+                            </span>
+                            <span className="mt-0.5 block text-[10px] text-slate-500">
+                              {row.transit?.rule === "applies" ? t("routeViaApplies") : t("routeViaIfYouLeave")}
+                            </span>
+                          </>
+                        )}
+                      </td>
+                    );
+                  }
+                  const match = it?.match;
+                  const intra = c.leg.intraEuCustoms && !match;
                   return (
-                    <td key={leg.destination} className="py-2 pr-3" data-testid="tc-route-cell">
+                    <td key={c.key} className="py-2 pr-3" data-testid="tc-route-cell">
                       {match ? (
                         <span className={`inline-block rounded px-1.5 py-0.5 ${VERDICT_TONE[match.verdict] ?? ""}`}>
                           {t(`routeVerdict.${match.verdict}`)}
