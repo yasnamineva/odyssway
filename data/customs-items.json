@@ -17979,6 +17979,70 @@
     "status": "verified"
   },
   {
+    "slug": "alcohol-kh",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "beer"
+    ],
+    "destination": "KH",
+    "category": "alcohol",
+    "verdict": "allowed",
+    "limits": {
+      "description": "There are no import limits on alcohol for personal use, according to the German Foreign Office. In practice, usually no more than 1.5 litres of alcohol is let through on entry.",
+      "quantity": "In practice up to 1.5 L"
+    },
+    "notes": "No Cambodian customs page stating this was read for this site (customs.gov.kh shows no traveller allowance); this row rests on the German government’s travel advice.",
+    "summary": "No legal limit for personal use, but in practice usually only 1.5 litres of alcohol is let through on entry.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Kambodscha: Reise- und Sicherheitshinweise, Einreisebestimmungen (Stand 18.08.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/kambodschasicherheit-220008"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "No import restrictions on alcohol for personal use; in practice max 1.5 l admitted on entry",
+        "name": "Auswärtiges Amt — Kambodscha: Reise- und Sicherheitshinweise, Einreisebestimmungen (Stand 18.08.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/kambodschasicherheit-220008"
+      }
+    ]
+  },
+  {
+    "slug": "tobacco-kh",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars"
+    ],
+    "destination": "KH",
+    "category": "tobacco",
+    "verdict": "allowed",
+    "limits": {
+      "description": "There are no import limits on cigarettes for personal use, according to the German Foreign Office. In practice, usually no more than ten packs of cigarettes are let through on entry.",
+      "quantity": "In practice up to 10 packs"
+    },
+    "notes": "No Cambodian customs page stating this was read for this site (customs.gov.kh shows no traveller allowance); this row rests on the German government’s travel advice.",
+    "summary": "No legal limit for personal use, but in practice usually only ten packs of cigarettes are let through on entry.",
+    "legal_source": {
+      "name": "Auswärtiges Amt — Kambodscha: Reise- und Sicherheitshinweise, Einreisebestimmungen (Stand 18.08.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/kambodschasicherheit-220008"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "No import restrictions on cigarettes for personal use; in practice max ten packs admitted on entry",
+        "name": "Auswärtiges Amt — Kambodscha: Reise- und Sicherheitshinweise, Einreisebestimmungen (Stand 18.08.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/kambodschasicherheit-220008"
+      }
+    ]
+  },
+  {
     "slug": "alcohol-il",
     "names": [
       "alcohol",
