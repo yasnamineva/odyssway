@@ -4080,4 +4080,7 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
 - Held: GR (aade.gr and mfa.gr 403; eof.gr has no travel page; GOV.UK gives only best practice: doctor's letter, contact OKANA). BE (famhp.be serves a captcha). PT (no travel page found on infarmed.pt; try the Portuguese customs portal or SICAD).
 - FR weapons: douane.gouv.fr SAMIA fiche is commercial licensing; the traveller rule (categories, European Firearms Pass) needs Légifrance (Code de la sécurité intérieure) — not started.
 - Next: CBD for DE/FR/NL (none of the customs pages read so far mention it), drones (EU rules already in the EU row; national registration for visitors), then Italy again if salute.gov.it opens.
+- ✔ 2026-11-03 CBD/cannabis: DE (KCanG §§ 1–2 on gesetze-im-internet.de: import banned; CBD excluded from 'cannabis', industrial hemp only for commercial/scientific use), FR (MILDECA PDF 'Ce que dit la loi en matière de CBD', Sept 2026: ≤0.3% THC from catalogued varieties), NL (Opiumwet via wetten.overheid.nl, readable: List II hennep/hasjiesj, List I hennepolie/THC; Art. 2–3 import bans). DE weapons from Zoll's 'Rückkehr aus einem Nicht-EU-Staat' page.
+- Légifrance returns a Cloudflare challenge (403) to scripts: French decree texts need another official mirror.
+- NL medicines for visitors: the Opium Act puts many medicines on List II (alprazolam, diazepam, zolpidem…) and bans import (Art. 3); find the traveller exemption (Opiumwet-besluit / CAK guidance for visitors) before writing a medicine row.
 
