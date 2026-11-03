@@ -308,3 +308,14 @@ test("country pickers accept abbreviations and pick the top match with Tab", asy
   await to.press("Tab");
   await expect(to).toHaveValue("United Kingdom");
 });
+
+test("a stopover shows the verified airside transit rule", async ({ page }) => {
+  await page.goto("/trip-check");
+  await pickCombobox(page, "tc-nationality", "India", "India");
+  await pickCombobox(page, "tc-destination", "United States", "United States");
+  await page.getByTestId("tc-transit").fill("uk");
+  await page.getByTestId("tc-transit").press("Tab");
+  await page.getByTestId("tc-submit").click();
+  await expect(page.getByTestId("tc-airside-verdict")).toContainText("Direct Airside Transit Visa needed");
+  await expect(page.getByTestId("tc-transit-entry")).toContainText("Changing planes in United Kingdom");
+});

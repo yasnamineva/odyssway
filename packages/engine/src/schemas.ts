@@ -261,6 +261,54 @@ export const travelAuthorisationSchema = z
   .superRefine(requireVerifierWhenVerified);
 export const travelAuthorisationsFileSchema = z.array(travelAuthorisationSchema);
 
+// --- data/transit-rules.json (changing planes without leaving the airport) ---
+// One record per hub: a country, or "SCHENGEN" for the Schengen-wide rule plus
+// member states' own lists (a rule's `states`). Each rule covers listed
+// passports, or `others: true` for every passport the source's list leaves out.
+export const transitRuleSchema = z
+  .object({
+    airside: z.enum(["no_visa", "transit_visa_required", "depends"]),
+    /** The visa's own name, e.g. "Direct Airside Transit Visa". */
+    visaName: z.string().min(1).optional(),
+    nationalities: z.array(countryCodeSchema).min(1).optional(),
+    others: z.literal(true).optional(),
+    /** Schengen hub only: the member states whose national list this rule comes from. */
+    states: z.array(countryCodeSchema).min(1).optional(),
+    /** What a passenger must meet to stay airside without a visa. */
+    conditions: z.array(z.string().min(1)).optional(),
+    /** Who doesn't need the transit visa (only for transit_visa_required / depends). */
+    exemptions: z.array(z.string().min(1)).optional(),
+    notes: z.string().min(1).optional(),
+  })
+  .superRefine((r, ctx) => {
+    if (Boolean(r.nationalities) === Boolean(r.others)) {
+      ctx.addIssue({ code: "custom", message: "a rule lists `nationalities` or sets `others: true`, not both" });
+    }
+    if (r.airside !== "no_visa" && !r.visaName) {
+      ctx.addIssue({ code: "custom", message: "a transit visa rule names the visa (`visaName`)" });
+    }
+  });
+export const transitHubSchema = z
+  .object({
+    hub: z.union([countryCodeSchema, z.literal("SCHENGEN")]),
+    name: z.string().min(1),
+    rules: z.array(transitRuleSchema).min(1),
+    /** Applies to every passenger at this hub. */
+    notes: z.string().min(1).optional(),
+    _sources: z.array(sourceClaimSchema).optional(),
+    ...verificationFields,
+  })
+  .superRefine(requireVerifierWhenVerified)
+  .superRefine((h, ctx) => {
+    if (h.rules.filter((r) => r.others).length !== 1) {
+      ctx.addIssue({ code: "custom", message: "each hub has exactly one `others: true` rule" });
+    }
+    if (h.hub !== "SCHENGEN" && h.rules.some((r) => r.states)) {
+      ctx.addIssue({ code: "custom", message: "`states` is only for the SCHENGEN hub" });
+    }
+  });
+export const transitRulesFileSchema = z.array(transitHubSchema);
+
 // --- data/trip-charges.json (government charges a visitor pays: levies, taxes, compulsory insurance) ---
 // Amounts as the charging government states them; never prices of private services.
 export const tripChargeSchema = z

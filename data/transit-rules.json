@@ -1,0 +1,214 @@
+[
+  {
+    "hub": "GB",
+    "name": "United Kingdom",
+    "notes": "You can’t transit airside to Ireland or anywhere else in the Common Travel Area. An immigration officer at the UK border decides whether you can transit without a visa.",
+    "rules": [
+      {
+        "airside": "transit_visa_required",
+        "visaName": "Direct Airside Transit Visa",
+        "nationalities": [
+          "AL",
+          "BY",
+          "CN",
+          "GE",
+          "IN",
+          "XK",
+          "MD",
+          "MK",
+          "RU",
+          "RS",
+          "TR"
+        ],
+        "exemptions": [
+          "A valid visa for Australia, Canada, New Zealand or the USA, whether or not you’re travelling to or from there",
+          "A visa for Australia, Canada, New Zealand or the USA, when you’re on a reasonable journey from that country and last entered it with the visa less than 6 months ago",
+          "A valid permanent residence permit from Australia, Canada (issued after 28 June 2002), New Zealand or the USA (issued after 21 April 1998, or the other US documents the Home Office lists)",
+          "A valid residence permit in the common format issued by an EEA country or Switzerland, or a valid category D visa for one",
+          "A valid Irish biometric visa endorsed BC or BC BIVS, when going on to a destination outside Ireland and the Common Travel Area",
+          "A UK Standard Visitor visa, Marriage Visitor visa or EU Settlement Scheme family permit"
+        ],
+        "conditions": [
+          "Arrive and leave by air",
+          "Have a confirmed onward flight leaving the same day from the same airport",
+          "Hold the documents your final destination requires (for example its visa)"
+        ],
+        "notes": "If you’re exempt, you can transit airside without a visa when you meet the conditions. Otherwise apply for a Direct Airside Transit Visa: it costs £41.50 and a decision usually takes 3 weeks."
+      },
+      {
+        "airside": "no_visa",
+        "nationalities": [
+          "AM",
+          "AZ",
+          "BA",
+          "ME",
+          "UA"
+        ],
+        "conditions": [
+          "Arrive and leave by air",
+          "Have a confirmed onward flight leaving the same day from the same airport",
+          "Hold the documents your final destination requires (for example its visa)"
+        ],
+        "notes": "Your passport needs a UK visa only to pass through border control (for example to change airport or collect bags), not to change planes airside."
+      },
+      {
+        "airside": "no_visa",
+        "others": true,
+        "notes": "Your passport isn’t on the UK’s visa lists, and you don’t need an ETA to change planes without passing through border control. You need one to pass through border control."
+      }
+    ],
+    "legal_source": {
+      "name": "Home Office — UK visa requirements for international carriers (updated 3 August 2026)",
+      "url": "https://www.gov.uk/government/publications/uk-visa-requirements-list-for-carriers/uk-visa-requirements-for-international-carriers"
+    },
+    "_sources": [
+      {
+        "claim": "Visa nationals who need a visa to enter or transit (DATV list) and those who need one only landside; airside TWOV conditions and exemptions; immigration officer decides; no airside transit to Ireland/CTA",
+        "name": "Home Office — UK visa requirements for international carriers (updated 3 August 2026)",
+        "url": "https://www.gov.uk/government/publications/uk-visa-requirements-list-for-carriers/uk-visa-requirements-for-international-carriers"
+      },
+      {
+        "claim": "No transit visa needed with ETA, EUSS family permit, Home Office travel document, Standard or Marriage Visitor visa; DATV costs £41.50; decision usually within 3 weeks",
+        "name": "GOV.UK — Visa to pass through the UK in transit",
+        "url": "https://www.gov.uk/transit-visa"
+      },
+      {
+        "claim": "No ETA needed when transiting a UK airport without passing through border control",
+        "name": "GOV.UK — Apply for an electronic travel authorisation (ETA): when you do not need one",
+        "url": "https://www.gov.uk/eta/when-not-need-eta"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "hub": "SCHENGEN",
+    "name": "Schengen Area",
+    "notes": "An airport transit visa covers only the international transit area. Leaving it means entering the Schengen Area, which needs the documents in the entry rule.",
+    "rules": [
+      {
+        "airside": "transit_visa_required",
+        "visaName": "Airport transit visa (ATV)",
+        "nationalities": [
+          "TR"
+        ],
+        "states": [
+          "BE",
+          "CZ",
+          "DE",
+          "ES",
+          "FR",
+          "NL",
+          "NO",
+          "CH"
+        ],
+        "exemptions": [
+          "A valid Schengen visa, national long-stay visa or residence permit issued by a Schengen country",
+          "A valid residence permit from an EU country that doesn’t fully apply the Schengen rules, or one of the residence permits from Andorra, Canada, Japan, San Marino or the United States listed in Annex V of the Visa Code",
+          "A valid visa for an EU country that doesn’t fully apply the Schengen rules, or for Canada, Japan or the United States, when travelling to that country or another non-EU country, or returning from it after using the visa",
+          "Family members of EU citizens covered by the Visa Code",
+          "Holders of diplomatic passports"
+        ],
+        "notes": "Belgium, Spain, the Netherlands and Switzerland don’t apply it to service or special passports. The Netherlands also exempts seafarers with a valid seafarer’s identity document."
+      },
+      {
+        "airside": "transit_visa_required",
+        "visaName": "Airport transit visa (ATV)",
+        "nationalities": [
+          "AM"
+        ],
+        "states": [
+          "CZ",
+          "PL"
+        ],
+        "exemptions": [
+          "A valid Schengen visa, national long-stay visa or residence permit issued by a Schengen country",
+          "A valid residence permit from an EU country that doesn’t fully apply the Schengen rules, or one of the residence permits from Andorra, Canada, Japan, San Marino or the United States listed in Annex V of the Visa Code",
+          "A valid visa for an EU country that doesn’t fully apply the Schengen rules, or for Canada, Japan or the United States, when travelling to that country or another non-EU country, or returning from it after using the visa",
+          "Family members of EU citizens covered by the Visa Code",
+          "Holders of diplomatic passports"
+        ]
+      },
+      {
+        "airside": "transit_visa_required",
+        "visaName": "Airport transit visa (ATV)",
+        "nationalities": [
+          "IN"
+        ],
+        "states": [
+          "CZ",
+          "RO"
+        ],
+        "exemptions": [
+          "A valid Schengen visa, national long-stay visa or residence permit issued by a Schengen country",
+          "A valid residence permit from an EU country that doesn’t fully apply the Schengen rules, or one of the residence permits from Andorra, Canada, Japan, San Marino or the United States listed in Annex V of the Visa Code",
+          "A valid visa for an EU country that doesn’t fully apply the Schengen rules, or for Canada, Japan or the United States, when travelling to that country or another non-EU country, or returning from it after using the visa",
+          "Family members of EU citizens covered by the Visa Code",
+          "Holders of diplomatic passports"
+        ]
+      },
+      {
+        "airside": "transit_visa_required",
+        "visaName": "Airport transit visa (ATV)",
+        "nationalities": [
+          "RU"
+        ],
+        "states": [
+          "CZ",
+          "ES"
+        ],
+        "exemptions": [
+          "A valid Schengen visa, national long-stay visa or residence permit issued by a Schengen country",
+          "A valid residence permit from an EU country that doesn’t fully apply the Schengen rules, or one of the residence permits from Andorra, Canada, Japan, San Marino or the United States listed in Annex V of the Visa Code",
+          "A valid visa for an EU country that doesn’t fully apply the Schengen rules, or for Canada, Japan or the United States, when travelling to that country or another non-EU country, or returning from it after using the visa",
+          "Family members of EU citizens covered by the Visa Code",
+          "Holders of diplomatic passports"
+        ],
+        "notes": "Spain doesn’t apply it to service or special passports."
+      },
+      {
+        "airside": "depends",
+        "visaName": "Airport transit visa (ATV)",
+        "nationalities": [
+          "RU"
+        ],
+        "states": [
+          "FR"
+        ],
+        "exemptions": [
+          "A valid Schengen visa, national long-stay visa or residence permit issued by a Schengen country",
+          "A valid residence permit from an EU country that doesn’t fully apply the Schengen rules, or one of the residence permits from Andorra, Canada, Japan, San Marino or the United States listed in Annex V of the Visa Code",
+          "A valid visa for an EU country that doesn’t fully apply the Schengen rules, or for Canada, Japan or the United States, when travelling to that country or another non-EU country, or returning from it after using the visa",
+          "Family members of EU citizens covered by the Visa Code",
+          "Holders of diplomatic passports"
+        ],
+        "notes": "France requires it only when you’re travelling from an airport in Armenia, Azerbaijan, Georgia, Ukraine, Belarus, Moldova, Türkiye or Egypt."
+      },
+      {
+        "airside": "no_visa",
+        "others": true,
+        "notes": "Your passport isn’t on the EU-wide airport transit visa list or on this country’s own list, so you can change planes in the international transit area without a visa."
+      }
+    ],
+    "legal_source": {
+      "name": "Regulation (EC) No 810/2009 (Visa Code), Article 3 and Annex IV (consolidated text of 2 February 2020)",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R0810-20200202"
+    },
+    "_sources": [
+      {
+        "claim": "Annex IV nationals need an ATV for international transit areas; Member States may add nationalities (Art. 3(2)); exemptions (Art. 3(5))",
+        "name": "Regulation (EC) No 810/2009 (Visa Code), Article 3 and Annex IV (consolidated text of 2 February 2020)",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R0810-20200202"
+      },
+      {
+        "claim": "National ATV lists: Armenia (CZ, PL), India (CZ, RO), Russia (CZ, ES, FR with footnote 12), Turkey (BE, CZ, DE, ES, FR, CY, NL, NO, CH); footnotes on service passports and seafarers",
+        "name": "European Commission — List of third countries whose nationals need an airport transit visa for one or some Member States (30 June 2026)",
+        "url": "https://home-affairs.ec.europa.eu/document/download/7337515c-60a1-4510-b639-80de714f543e_en"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  }
+]

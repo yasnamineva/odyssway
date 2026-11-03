@@ -4043,3 +4043,11 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
 - 2026-11-03 retry of held authorisation guides: canada.ca doesn't connect, immigration.govt.nz serves a 212-byte JS shell, gov.il is behind a Cloudflare block (israel-entry.piba.gov.il loads but is an app). Still held.
 - Macao food: AIP GEN 1.3 (passengers) lets travellers bring 1 kg a day of fruit, dairy etc. without declaration, but GEN 1.4 §2.1 says meat, animal and vegetal products can't come in on any aircraft without an IAM permit. Conflict unresolved; no food row until IAM's own page is read.
 - Brunei medication/food/weapons: customs.gov.bn's import and FAQ pages are for commercial importers (BDNSW permits, licences); nothing on what a traveller may carry. No rows built from them.
+
+## 2026-11-03 airside transit hubs (data/transit-rules.json)
+- Done: United Kingdom (Home Office carriers list, 3 Aug 2026), Schengen Area (Visa Code Art. 3 + Annex IV; Commission national ATV list, 30 Jun 2026).
+- Singapore: ica.gov.sg "Transit through Singapore" serves only the menu; content is client-rendered.
+- Türkiye: mfa.gov.tr covers transit only as entry ("touristic purposes and transit"), no airside rule found.
+- United States: travel.state.gov transit page 403; CBP's ESTA page says nothing about transit. The US has no airside transit; needs a primary statement before we say so.
+- UAE, Qatar: not probed yet (u.ae / MOI portal).
+- Cyprus keeps a national ATV for Türkiye (Commission list) but isn't a transit hub in the picker; add a CY record if it becomes one.

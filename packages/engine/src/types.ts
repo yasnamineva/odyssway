@@ -272,3 +272,27 @@ export interface TravelAuthorisationRecord {
   verified_by: string | null;
   status: "verified" | "needs_verification";
 }
+
+/** data/transit-rules.json: changing planes without passing immigration. */
+export interface TransitRuleRecord {
+  airside: "no_visa" | "transit_visa_required" | "depends";
+  visaName?: string;
+  nationalities?: string[];
+  others?: true;
+  states?: string[];
+  conditions?: string[];
+  exemptions?: string[];
+  notes?: string;
+}
+
+export interface TransitHubRecord {
+  hub: string;
+  name: string;
+  rules: TransitRuleRecord[];
+  notes?: string;
+  _sources?: Array<{ claim: string; name: string; url: string }>;
+  legal_source: { name: string; url: string };
+  verified_at: string | null;
+  verified_by: string | null;
+  status: "verified" | "needs_verification";
+}

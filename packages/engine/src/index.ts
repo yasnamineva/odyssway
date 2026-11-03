@@ -53,6 +53,8 @@ export type {
   TimelineResult,
   Trip,
   TravelAuthorisationRecord,
+  TransitHubRecord,
+  TransitRuleRecord,
   TripChargeRecord,
   TripExclusion,
 } from "./types";

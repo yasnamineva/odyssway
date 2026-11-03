@@ -15,6 +15,7 @@ import {
   queuedDestinations,
 } from "./destinations";
 import { expandQuery, isFuzzyMatch } from "./fuzzy-match";
+import { resolveAirsideTransit, type AirsideTransit } from "./transit-rules";
 import { nationalityBySlug } from "./nationalities";
 
 import { resolveMapDestinationCode, SCHENGEN_DESTINATION, SCHENGEN_REPRESENTATIVE_CODE } from "./schengen-sentinel";
@@ -86,6 +87,8 @@ export interface TransitEntry {
   legalSource?: { name: string; url: string };
   verifiedAt?: string;
   officialAuthorityUrl?: string;
+  /** The verified rule for staying airside, when we have the hub (data/transit-rules.json). */
+  airside?: AirsideTransit;
 }
 
 const TRANSIT_WORDS = /\b(transit|transits|airside|layover|layovers|stopover|stopovers|connecting flight|changing planes)\b/i;
@@ -378,6 +381,7 @@ export function resolveTripCheck(
   const transitEntry: TransitEntry | undefined = transit
     ? (() => {
         const e = resolveEntry(nationality, transit.code);
+        const airside = resolveAirsideTransit(nationality, transit.code);
         return {
           covered: e.covered,
           basis: e.basis,
@@ -387,6 +391,7 @@ export function resolveTripCheck(
           ...(e.legalSource ? { legalSource: e.legalSource } : {}),
           ...(e.verifiedAt ? { verifiedAt: e.verifiedAt } : {}),
           ...(e.officialAuthorityUrl ? { officialAuthorityUrl: e.officialAuthorityUrl } : {}),
+          ...(airside ? { airside } : {}),
         };
       })()
     : undefined;

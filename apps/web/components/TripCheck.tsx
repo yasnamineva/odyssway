@@ -19,6 +19,7 @@ import type { EntryBasis, TripCheckResult } from "../lib/trip-check";
 import { decodeTripShare, encodeTripShare } from "../lib/trip-share";
 import { count } from "../lib/count";
 import type { MapStop } from "./WorldMap";
+import type { AirsideTransit } from "../lib/transit-rules";
 
 /** The map bundles real country geometry (~100KB) — load it only once it's needed. */
 const WorldMap = dynamic(() => import("./WorldMap"), {
@@ -830,6 +831,61 @@ function TripCheckResults({
   );
 }
 
+const AIRSIDE_TONE: Record<string, string> = {
+  no_visa: "bg-emerald-50 text-emerald-800",
+  transit_visa_required: "bg-red-50 text-red-800",
+  depends: "bg-amber-50 text-amber-800",
+};
+
+/** The verified airside rule: verdict, who's exempt, conditions, source. */
+function AirsideRule({ airside }: { airside: AirsideTransit }) {
+  const t = useTranslations("tripCheck");
+  const { rule } = airside;
+  return (
+    <div className="mt-1">
+      <p className="text-sm">
+        <span className={`inline-block rounded px-1.5 py-0.5 text-xs font-medium ${AIRSIDE_TONE[rule.airside] ?? ""}`} data-testid="tc-airside-verdict">
+          {rule.airside === "no_visa"
+            ? t("airsideNoVisa")
+            : rule.airside === "depends"
+              ? t("airsideDepends", { visa: rule.visaName ?? "" })
+              : t("airsideVisaRequired", { visa: rule.visaName ?? "" })}
+        </span>
+      </p>
+      {rule.notes && <p className="mt-1.5">{rule.notes}</p>}
+      {rule.exemptions && rule.exemptions.length > 0 && (
+        <>
+          <p className="mt-2 font-medium text-slate-900">{t("airsideExemptTitle")}</p>
+          <ul className="mt-0.5 list-disc space-y-0.5 pl-4">
+            {rule.exemptions.map((x) => (
+              <li key={x}>{x}</li>
+            ))}
+          </ul>
+        </>
+      )}
+      {rule.conditions && rule.conditions.length > 0 && (
+        <>
+          <p className="mt-2 font-medium text-slate-900">{t("airsideConditionsTitle")}</p>
+          <ul className="mt-0.5 list-disc space-y-0.5 pl-4">
+            {rule.conditions.map((x) => (
+              <li key={x}>{x}</li>
+            ))}
+          </ul>
+        </>
+      )}
+      {airside.hubNotes && <p className="mt-2 text-slate-600">{airside.hubNotes}</p>}
+      <SourceNote
+        className="mt-2"
+        name={airside.legalSource.name}
+        url={airside.legalSource.url}
+        date={airside.verifiedAt}
+        sourceLabel={t("sourceLabel")}
+        checkedLabel={airside.verifiedAt ? t("checkedOn", { date: airside.verifiedAt }) : undefined}
+      />
+    </div>
+  );
+}
+
 /**
  * Changing planes: what the passport needs if the traveller goes through
  * immigration at the stopover (the verified entry row), kept apart from the
@@ -846,9 +902,9 @@ function TransitEntryCard({ result, originName }: { result: TripCheckResult; ori
         <span aria-hidden="true" className="inline-block h-2.5 w-2.5 rounded-full bg-blue-600" />
         {t("transitHeading", { country: stop.name })}
       </h2>
-      <div className="mt-2 rounded-lg bg-white p-3 text-xs leading-relaxed text-slate-700">
+      <div className="mt-2 rounded-lg bg-white p-3 text-xs leading-relaxed text-slate-700" data-testid="tc-transit-airside">
         <p className="font-medium text-slate-900">{t("transitAirsideTitle")}</p>
-        <p className="mt-0.5">{t("transitAirsideBody", { country: stop.name })}</p>
+        {entry.airside ? <AirsideRule airside={entry.airside} /> : <p className="mt-0.5">{t("transitAirsideBody", { country: stop.name })}</p>}
       </div>
       <div className="mt-3">
         <p className="text-xs font-medium text-slate-900">

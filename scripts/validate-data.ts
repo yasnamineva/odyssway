@@ -28,6 +28,7 @@ import {
   overstayPenaltiesFileSchema,
   tripChargesFileSchema,
   travelAuthorisationsFileSchema,
+  transitRulesFileSchema,
   translationFileSchema,
 } from "../packages/engine/src/schemas";
 import {
@@ -56,6 +57,7 @@ const SCHEMA_BY_FILE: Record<string, ZodType> = {
   "customs-items.json": customsItemsFileSchema,
   "trip-charges.json": tripChargesFileSchema,
   "travel-authorisations.json": travelAuthorisationsFileSchema,
+  "transit-rules.json": transitRulesFileSchema,
 };
 
 const errors: string[] = [];
