@@ -1,5 +1,96 @@
 [
   {
+    "commit": "d70b07eabce8a252ed9d77fbfa00c1a56e0e285f",
+    "date": "2026-11-03",
+    "dataset": "customs-items",
+    "summary": "Cambodia: alcohol and tobacco (no legal limit for personal use; in practice 1.5 litres and ten packs let through), from the German Foreign Office's travel advice",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Auswärtiges Amt — Kambodscha: Reise- und Sicherheitshinweise, Einreisebestimmungen (Stand 18.08.2026)",
+      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/kambodschasicherheit-220008"
+    },
+    "destinations": [
+      "KH"
+    ]
+  },
+  {
+    "commit": "527f4952727eddcc866002e60d913d30adb437b8",
+    "date": "2026-11-03",
+    "dataset": "customs-items",
+    "summary": "Macao: medication (non-narcotic medicines for personal use in a reasonable amount need no authorisation; narcotic and psychotropic need prior authorisation), from AIP Macao GEN 1.4",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Civil Aviation Authority – Macao (AACM) — AIP Macao, GEN 1.4 Entry, transit and departure of cargo, §1.2 (AMDT 26, 19 Nov 2020; publication updated 12 Mar 2026)",
+      "url": "https://www.aacm.gov.mo/static/2026/03/12/75ad92ac-bd21-4eb1-b3a8-24b81836d6fb.pdf"
+    },
+    "destinations": [
+      "MO"
+    ]
+  },
+  {
+    "commit": "dadd3f357cba4a280f45ff23a2ac3d3001179a33",
+    "date": "2026-11-03",
+    "dataset": "customs-items",
+    "summary": "Ghana: weapons (declare; Ministry of the Interior permit; flick knives and knuckle dusters banned) and plants and produce (Ministry of Food and Agriculture permit), from GRA customs pages",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ghana Revenue Authority (GRA) — Import Prohibitions and Restrictions",
+      "url": "https://gra.gov.gh/customs/import-prohibitions-and-restrictions/"
+    },
+    "destinations": [
+      "GH"
+    ]
+  },
+  {
+    "commit": "7a826840d6d70be264d875c3dc05df684afbbd19",
+    "date": "2026-11-03",
+    "dataset": "customs-items",
+    "summary": "Zimbabwe: medication (MCAZ permit), weapons (Registrar of Firearms permit; flick knives banned) and fresh produce (Ministry of Agriculture permit), from ZIMRA's restricted-goods page",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Zimbabwe Revenue Authority (ZIMRA) — Restricted and prohibited goods",
+      "url": "https://www.zimra.co.zw/customs/restricted-and-prohibited-goods"
+    },
+    "destinations": [
+      "ZW"
+    ]
+  },
+  {
+    "commit": "9fd88f58e568d73a4e5c4d63f60cbe7149d9d2be",
+    "date": "2026-11-03",
+    "dataset": "customs-items",
+    "summary": "Belize: duty-free alcohol (1 litre of wine or spirits) and tobacco (200 cigarettes, 50 cigars or 250 g), from the customs passenger-exemptions sheet",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Belize Customs and Excise Department — Conditional Duty Exemptions (passengers)",
+      "url": "https://www.customs.gov.bz/added_files/Conditional%20Exemptions%20Duties%20and%20Taxes.pdf"
+    },
+    "destinations": [
+      "BZ"
+    ]
+  },
+  {
+    "commit": "811f1361ac630b0c52097acb609ef2e8171797e9",
+    "date": "2026-11-03",
+    "dataset": "customs-items",
+    "summary": "Weapons: Switzerland (declare everything; permit; prohibited list) and Norway (European Firearms Pass, or a police licence applied for two months before arrival)",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+      "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+    },
+    "destinations": [
+      "CH",
+      "NO"
+    ]
+  },
+  {
     "commit": "08ac6ff1015ccf9ab8256c808411ed481986060b",
     "date": "2026-11-03",
     "dataset": "customs-items",
