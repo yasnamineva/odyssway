@@ -1220,7 +1220,10 @@
   {
     "slug": "drones-eu",
     "names": [
+      "dji",
       "drone",
+      "drones",
+      "fpv drone",
       "quadcopter"
     ],
     "destination": "EU",
@@ -1229,15 +1232,32 @@
     "limits": {
       "description": "No dedicated customs rule; falls under the general personal-goods value threshold: €300 for land travellers, €430 for air/sea travellers"
     },
-    "notes": "Separate EASA rules govern where and how you may fly a drone in the EU — this entry covers customs entry only, not flight operation.",
-    "summary": "No customs rule: a drone counts toward the personal-goods allowance (€300 by land, €430 by air or sea). EASA rules govern flying.",
+    "notes": "Customs is only half of it: flying a drone in the EU follows the EU Drone Regulation, whatever your nationality. If you live outside the EU, you must register with the national aviation authority of the first EU country where you plan to fly. You then get a drone operator registration number, which goes on a sticker on every drone you own and into each drone's remote identification system; the registration is then valid across Europe. Training or qualifications from your home country aren't recognised, so you need to complete the EU training before flying. In the 'open' category you must keep the drone in sight, fly no higher than 120 metres, carry no dangerous goods and drop nothing, and not fly directly over people unless the drone has a class label or weighs under 250 g. Flying in the 'specific' category needs a declaration or authorisation from the aviation authority where you registered.",
+    "summary": "No customs rule (counts toward the personal-goods allowance). To fly, non-EU residents register with the first EU country's aviation authority.",
     "legal_source": {
       "name": "Council Directive 2007/74/EC, Art. 7",
       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32007L0074"
     },
-    "verified_at": "2026-10-18",
+    "verified_at": "2026-11-03",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Personal-goods value thresholds",
+        "name": "Council Directive 2007/74/EC, Art. 7",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32007L0074"
+      },
+      {
+        "claim": "Non-EU residents must register with the NAA of the first EU country where they intend to operate; registration number on a sticker on all drones and in the remote ID; valid across Europe; specific category needs a declaration or authorisation; home-country training not recognised (Art. 41(1)-(2) Reg. 2019/945 cited by EASA)",
+        "name": "EASA — FAQ: I am a non-EU visitor and I want to fly a drone in Europe",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/i-am-non-eu-visitor-and-i-want-fly-drone-europe"
+      },
+      {
+        "claim": "Open category conditions: VLOS, max 120 m, no dangerous goods or dropping material, not over people unless class-labelled or under 250 g",
+        "name": "EASA — FAQ: 'open' category",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/open-category"
+      }
+    ]
   },
   {
     "slug": "alcohol-jp",
