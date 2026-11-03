@@ -22640,6 +22640,113 @@
     "status": "verified"
   },
   {
+    "slug": "alcohol-bz",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "liquor",
+      "rum",
+      "whisky",
+      "vodka"
+    ],
+    "destination": "BZ",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free for passengers aged 18 and over: wines or spirits not exceeding one litre in all.",
+      "quantity": "1 litre of wine or spirits in total"
+    },
+    "allowance": {
+      "groups": [
+        {
+          "kind": "total",
+          "products": [
+            "still_wine",
+            "spirits"
+          ],
+          "amount": 1
+        }
+      ]
+    },
+    "notes": "Passengers aged 18 and over. Not available to passengers returning from a visit to a neighbouring border town or city. The allowance can be claimed twice a year through an international airport and once a month through other entry points. Amounts over the allowance are not exempt.",
+    "summary": "Duty-free from age 18: 1 litre of wine or spirits in total. Can be claimed twice a year at an international airport.",
+    "legal_source": {
+      "name": "Belize Customs and Excise Department — Conditional Duty Exemptions (passengers)",
+      "url": "https://www.customs.gov.bz/added_files/Conditional%20Exemptions%20Duties%20and%20Taxes.pdf"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "1 litre wines or spirits in all; age 18; border-town exclusion; frequency",
+        "name": "Belize Customs and Excise Department — Conditional Duty Exemptions (passengers)",
+        "url": "https://www.customs.gov.bz/added_files/Conditional%20Exemptions%20Duties%20and%20Taxes.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "tobacco-bz",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "rolling tobacco",
+      "pipe tobacco"
+    ],
+    "destination": "BZ",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free for passengers aged 18 and over: tobacco not exceeding 250 grams, or cigars not exceeding fifty, or cigarettes not exceeding two hundred.",
+      "quantity": "250 g tobacco, or 50 cigars, or 200 cigarettes"
+    },
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 250
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 50
+            },
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "Passengers aged 18 and over. Not available to passengers returning from a visit to a neighbouring border town or city. The allowance can be claimed twice a year through an international airport and once a month through other entry points. Amounts over the allowance are not exempt.",
+    "summary": "Duty-free from age 18: 200 cigarettes, or 50 cigars, or 250 g of tobacco (one of the three).",
+    "legal_source": {
+      "name": "Belize Customs and Excise Department — Conditional Duty Exemptions (passengers)",
+      "url": "https://www.customs.gov.bz/added_files/Conditional%20Exemptions%20Duties%20and%20Taxes.pdf"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "250 g tobacco or 50 cigars or 200 cigarettes; age 18; border-town exclusion; frequency",
+        "name": "Belize Customs and Excise Department — Conditional Duty Exemptions (passengers)",
+        "url": "https://www.customs.gov.bz/added_files/Conditional%20Exemptions%20Duties%20and%20Taxes.pdf"
+      }
+    ]
+  },
+  {
     "slug": "cash-sv",
     "names": [
       "cash",

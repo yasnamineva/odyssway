@@ -4032,3 +4032,7 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
 
 ## Ireland (2026-11-02)
 - The ISD visa/non-visa table is loaded from the page's public Ninja Tables endpoint (wp-admin/admin-ajax.php?action=wp_ajax_ninja_tables_public_action&table_id=19077&target_action=get-all-data, with the nonce printed in the page): 206 rows. 17 newer non-EU passports added (EU/EEA/Swiss resolve through free movement). The older 'not in the served HTML' note was only half right.
+
+## 2026-11-03 customs gaps: Belize, North Macedonia
+- Belize cannabis/weapons: customs.gov.bz's "Restricted and Prohibited Goods" PDF is the Customs Regulation (Cap. 49) schedule, Revised Edition 2003 (a scan). It lists cannabis as prohibited "as defined in the Misuse of Drugs Act", but that Act has been amended since 2003; no cannabis or weapons row until a current text of the Act or a current customs page is read.
+- North Macedonia: customs.gov.mk doesn't resolve from here (DNS). Alcohol, tobacco, medication and food rows need it or another official page.
