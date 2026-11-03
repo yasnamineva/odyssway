@@ -4071,3 +4071,9 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
 - Held: FI, FR, LI, ME, XK, on neither list. Find the Category C page (visa before travel) on zimimmigration.gov.zw, or confirm the omissions with the eVisa portal (evisa.gov.zw).
 - Cyprus (CY destination): gov.cy MFA visa-exempt list returns 403 from here (2026-11-03); 17 rows only.
 
+## 2026-11-03 Schengen national medicine rules (customs-items.json)
+- ✔ EU controlled-medication row re-sourced: Executive Committee decision SCH/Com-ex (94) 28 rev (via publications.europa.eu, `Accept: text/html`, CELEX 41994D0028): certificate for residents of a Schengen state, max 30 days, one per substance. Replaced the Irish Revenue citation.
+- ✔ DE: BtMAHV § 15(1) No. 2 (gesetze-im-internet.de) + BfArM EN page. ✔ FR: French Customs fiche (updated 19 Mar 2026), controlled + ordinary medicine.
+- Held: IT (salute.gov.it behind a Gcore bot wall; adm.gov.it traveller page 404). NL (government.nl and CAK pages cover residents travelling out only; nothing on what a visitor arriving in NL must carry: find the IGJ/Opium Act rule for entry).
+- Next: AT (BASG / Sozialministerium), GR (EOF), PT (INFARMED), BE (FAMHP), then CBD, drones, weapons for DE/FR/IT/ES/NL.
+
