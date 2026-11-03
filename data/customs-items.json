@@ -24628,5 +24628,78 @@
         "url": "https://www.zoll.de/DE/Privatpersonen/Reisen/Reisen-nach-Deutschland-aus-einem-nicht-eu-Staat/Einschraenkungen/Waffen-und-Munition/waffen-und-munition_node.html"
       }
     ]
+  },
+  {
+    "destination": "FR",
+    "category": "cbd_cannabis",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "MILDECA (French government drugs agency) — Ce que dit la loi en matière de CBD (September 2026)",
+      "url": "https://www.drogues.gouv.fr/sites/default/files/2026-09/Ce%20que%20dit%20la%20loi%20CBD_sept_2026_0.pdf"
+    },
+    "slug": "cbd-fr",
+    "names": [
+      "cbd",
+      "cbd oil",
+      "cannabidiol",
+      "cbd gummies",
+      "cbd flowers",
+      "hemp extract",
+      "hemp oil"
+    ],
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "CBD products are exempt from France's narcotics ban, whatever their form (including raw hemp flowers and leaves), if they come from plant varieties in the EU common catalogue or the French official catalogue with no more than 0.3% THC, and any hemp extract in them has no more than 0.3% THC (decree of 30 December 2021). Products that don't meet these conditions fall under the narcotics law.",
+      "quantity": "THC no more than 0.3%"
+    },
+    "notes": "This is France's legal status for CBD products, from the government drugs agency (MILDECA); French Customs publishes no traveller-specific CBD rule. CBD bought abroad may contain more THC than its label says: products found to exceed 0.3% THC, or to contain other controlled substances, are illegal. CBD vaping products can't be sold to under-18s, and products can't claim to treat illness.",
+    "summary": "Allowed if the product has no more than 0.3% THC and comes from catalogued hemp varieties. Anything stronger counts as a narcotic.",
+    "_sources": [
+      {
+        "claim": "CBD products exempt from the narcotics ban whatever their presentation if from catalogued varieties with THC ≤0.3% and extracts with THC ≤0.3% (arrêté of 30 Dec 2021, CSP L.5132-86, R.5132-86 II); otherwise narcotics law; adulterated CBD illegal; CBD vape products banned for under-18s",
+        "name": "MILDECA (French government drugs agency) — Ce que dit la loi en matière de CBD (September 2026)",
+        "url": "https://www.drogues.gouv.fr/sites/default/files/2026-09/Ce%20que%20dit%20la%20loi%20CBD_sept_2026_0.pdf"
+      },
+      {
+        "claim": "Products over 0.3% THC fall under narcotics legislation",
+        "name": "MILDECA — Cannabidiol (CBD): cadre légal, usages autorisés et risques sanitaires en bref (30 October 2026)",
+        "url": "https://www.drogues.gouv.fr/cannabidiol-cbd-cadre-legal-usages-autorises-et-risques-sanitaires-en-bref"
+      }
+    ]
+  },
+  {
+    "destination": "FR",
+    "category": "cbd_cannabis",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "MILDECA (French government drugs agency) — Ce que dit la loi en matière de CBD (September 2026)",
+      "url": "https://www.drogues.gouv.fr/sites/default/files/2026-09/Ce%20que%20dit%20la%20loi%20CBD_sept_2026_0.pdf"
+    },
+    "slug": "cannabis-fr",
+    "names": [
+      "cannabis",
+      "marijuana",
+      "weed",
+      "thc",
+      "hashish",
+      "hash"
+    ],
+    "verdict": "prohibited",
+    "limits": {
+      "description": "THC is classified as a narcotic in France, and cannabis plants and products that don't meet the hemp conditions (catalogued varieties, no more than 0.3% THC) fall under the narcotics law."
+    },
+    "notes": "From the French government drugs agency (MILDECA). Cannabis-based medicines are a separate case supplied under the narcotics rules; see the controlled-medication entry for what French Customs requires when you carry narcotic medicines.",
+    "summary": "Cannabis with more than 0.3% THC is a narcotic in France; you can't bring it in.",
+    "_sources": [
+      {
+        "claim": "THC classified as a narcotic; hemp products outside the 30 Dec 2021 conditions fall under narcotics penal policy; all cannabis flowers are narcotics under the international conventions",
+        "name": "MILDECA (French government drugs agency) — Ce que dit la loi en matière de CBD (September 2026)",
+        "url": "https://www.drogues.gouv.fr/sites/default/files/2026-09/Ce%20que%20dit%20la%20loi%20CBD_sept_2026_0.pdf"
+      }
+    ]
   }
 ]
