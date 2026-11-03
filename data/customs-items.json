@@ -21727,6 +21727,113 @@
     "status": "verified"
   },
   {
+    "slug": "medication-zw",
+    "names": [
+      "medication",
+      "medicine",
+      "medicines",
+      "prescription medicine",
+      "prescription drugs",
+      "pills",
+      "tablets"
+    ],
+    "destination": "ZW",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "ZIMRA lists medicines as restricted goods, which can only be imported under a permit issued by the Medicines Control Authority of Zimbabwe (MCAZ). The page does not say whether a traveller’s own medicines in their luggage are covered, so check with MCAZ before you travel."
+    },
+    "notes": "Expired drugs and dangerous or harmful drugs are among the things these controls protect against. No primary page read here gives a personal-use quantity for travellers.",
+    "summary": "Medicines are restricted: ZIMRA says importing them needs an MCAZ permit. Check with MCAZ whether that covers your own medicines.",
+    "legal_source": {
+      "name": "Zimbabwe Revenue Authority (ZIMRA) — Restricted and prohibited goods",
+      "url": "https://www.zimra.co.zw/customs/restricted-and-prohibited-goods"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Medicines are restricted goods; permit authority MCAZ",
+        "name": "Zimbabwe Revenue Authority (ZIMRA) — Restricted and prohibited goods",
+        "url": "https://www.zimra.co.zw/customs/restricted-and-prohibited-goods"
+      }
+    ]
+  },
+  {
+    "slug": "weapons-zw",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "rifles",
+      "shotguns",
+      "ammunition",
+      "hunting rifle",
+      "knives",
+      "flick knife"
+    ],
+    "destination": "ZW",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "Firearms and ammunition can only be imported with a permit from the Registrar of Firearms. Flick knives and lockable blades are prohibited."
+    },
+    "notes": "ZIMRA enforces these import restrictions and prohibitions at the border.",
+    "summary": "Firearms and ammunition need a Registrar of Firearms permit. Flick knives and lockable blades are banned.",
+    "legal_source": {
+      "name": "Zimbabwe Revenue Authority (ZIMRA) — Restricted and prohibited goods",
+      "url": "https://www.zimra.co.zw/customs/restricted-and-prohibited-goods"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Firearms and ammunition restricted, permit from the Registrar of Firearms; flick knives/lockable blades prohibited",
+        "name": "Zimbabwe Revenue Authority (ZIMRA) — Restricted and prohibited goods",
+        "url": "https://www.zimra.co.zw/customs/restricted-and-prohibited-goods"
+      }
+    ]
+  },
+  {
+    "slug": "fresh-produce-zw",
+    "names": [
+      "fruit",
+      "fruits",
+      "vegetables",
+      "fresh produce",
+      "plants",
+      "seeds",
+      "soil",
+      "potatoes",
+      "tomatoes",
+      "onions"
+    ],
+    "destination": "ZW",
+    "category": "food_plant",
+    "verdict": "depends",
+    "limits": {
+      "description": "Agricultural and horticultural produce, plants and plant products, soil and invertebrates are restricted goods: they can only be imported with a permit from the Ministry of Agriculture."
+    },
+    "notes": "Potatoes, tomatoes and onions are also on the list of goods that need a licence from the Ministry of Industry and Commerce.",
+    "summary": "Fruit, vegetables, plants and seeds need a Ministry of Agriculture import permit.",
+    "legal_source": {
+      "name": "Zimbabwe Revenue Authority (ZIMRA) — Restricted and prohibited goods",
+      "url": "https://www.zimra.co.zw/customs/restricted-and-prohibited-goods"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Agricultural/horticultural produce and plants restricted, permit from Ministry of Agriculture; potatoes, tomatoes, onions need Ministry of Industry and Commerce licence",
+        "name": "Zimbabwe Revenue Authority (ZIMRA) — Restricted and prohibited goods",
+        "url": "https://www.zimra.co.zw/customs/restricted-and-prohibited-goods"
+      }
+    ]
+  },
+  {
     "slug": "cannabis-ng",
     "names": [
       "cannabis",
