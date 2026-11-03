@@ -20542,6 +20542,83 @@
     "status": "verified"
   },
   {
+    "slug": "weapons-gh",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "rifles",
+      "shotguns",
+      "ammunition",
+      "hunting rifle",
+      "knives",
+      "flick knife",
+      "pepper spray",
+      "explosives",
+      "handcuffs"
+    ],
+    "destination": "GH",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "All arms and ammunition must be declared to customs, and they can only be imported with a permit from the Ministry of the Interior (Arms and Ammunition Act, 1972). Flick knives and other knives the police consider dangerous, and knuckle dusters, are prohibited."
+    },
+    "notes": "Weapons that discharge noxious liquids or gas (and their ammunition), explosives and handcuffs also need a licence from the Ministry of the Interior. Arms and ammunition are excluded from the passenger baggage concession.",
+    "summary": "Declare all arms and ammunition; importing them needs a Ministry of the Interior permit. Flick knives and knuckle dusters are banned.",
+    "legal_source": {
+      "name": "Ghana Revenue Authority (GRA) — Import Prohibitions and Restrictions",
+      "url": "https://gra.gov.gh/customs/import-prohibitions-and-restrictions/"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Arms and ammunition permit from Ministry of Interior (NRCD 9); flick knives, knuckle dusters prohibited; noxious-liquid weapons, explosives, handcuffs licensed",
+        "name": "Ghana Revenue Authority (GRA) — Import Prohibitions and Restrictions",
+        "url": "https://gra.gov.gh/customs/import-prohibitions-and-restrictions/"
+      },
+      {
+        "claim": "All arms and ammunition must be declared; restricted, special permit only; excluded from baggage concession",
+        "name": "Ghana Revenue Authority (GRA) — Passengers’ Obligations at Customs",
+        "url": "https://gra.gov.gh/customs/passengers-obligations-at-customs/"
+      }
+    ]
+  },
+  {
+    "slug": "fresh-produce-gh",
+    "names": [
+      "fruit",
+      "fruits",
+      "vegetables",
+      "fresh produce",
+      "plants",
+      "soil"
+    ],
+    "destination": "GH",
+    "category": "food_plant",
+    "verdict": "depends",
+    "limits": {
+      "description": "Plants, plant products, soil, manure and other material that may carry plant diseases or pests need a permit from the Ministry of Food and Agriculture (Prevention and Control of Pests and Diseases of Plants Act, 1965)."
+    },
+    "notes": "Food declared unfit for human consumption by a health officer, including vegetables, is prohibited outright.",
+    "summary": "Plants and plant products, including fresh produce, need a Ministry of Food and Agriculture permit.",
+    "legal_source": {
+      "name": "Ghana Revenue Authority (GRA) — Import Prohibitions and Restrictions",
+      "url": "https://gra.gov.gh/customs/import-prohibitions-and-restrictions/"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Plants, plant products, soil: permit from Ministry of Food and Agriculture (Act 307); contaminated food prohibited",
+        "name": "Ghana Revenue Authority (GRA) — Import Prohibitions and Restrictions",
+        "url": "https://gra.gov.gh/customs/import-prohibitions-and-restrictions/"
+      }
+    ]
+  },
+  {
     "slug": "alcohol-fj",
     "names": [
       "alcohol",
