@@ -20428,6 +20428,41 @@
     "status": "verified"
   },
   {
+    "slug": "medication-mo",
+    "names": [
+      "medication",
+      "medicine",
+      "medicines",
+      "prescription medicine",
+      "prescription drugs",
+      "pills",
+      "tablets"
+    ],
+    "destination": "MO",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Pharmaceutical products need prior authorisation, except medicines that are not narcotic or psychotropic substances, carried by travellers in accompanied luggage, for personal use and in a reasonable amount. Narcotic and psychotropic substances need prior authorisation.",
+      "quantity": "A reasonable amount for personal use (non-narcotic)"
+    },
+    "notes": "The list of goods needing prior authorisation is set by Chief Executive Order (Despacho do Chefe do Executivo) No. 487/2016. The source does not define a reasonable amount or say how to apply for authorisation for narcotic or psychotropic medicines; ask Macao Customs Service before you travel.",
+    "summary": "Ordinary medicines for personal use in a reasonable amount need no authorisation. Narcotic or psychotropic medicines need prior authorisation.",
+    "legal_source": {
+      "name": "Civil Aviation Authority – Macao (AACM) — AIP Macao, GEN 1.4 Entry, transit and departure of cargo, §1.2 (AMDT 26, 19 Nov 2020; publication updated 12 Mar 2026)",
+      "url": "https://www.aacm.gov.mo/static/2026/03/12/75ad92ac-bd21-4eb1-b3a8-24b81836d6fb.pdf"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Pharmaceutical products need prior authorisation unless non-narcotic/psychotropic, accompanied luggage, personal use, reasonable amount; narcotics and psychotropics need authorisation (CE Order 487/2016)",
+        "name": "Civil Aviation Authority – Macao (AACM) — AIP Macao, GEN 1.4 Entry, transit and departure of cargo, §1.2 (AMDT 26, 19 Nov 2020; publication updated 12 Mar 2026)",
+        "url": "https://www.aacm.gov.mo/static/2026/03/12/75ad92ac-bd21-4eb1-b3a8-24b81836d6fb.pdf"
+      }
+    ]
+  },
+  {
     "slug": "cash-zm",
     "names": [
       "cash",
