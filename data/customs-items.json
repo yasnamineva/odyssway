@@ -24343,5 +24343,120 @@
         "url": "https://www.douane.gouv.fr/fiche/le-transport-de-medicaments-en-france-par-des-particuliers"
       }
     ]
+  },
+  {
+    "destination": "AT",
+    "category": "medication",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "Austrian Ministry of Health (BMASGPK) — Mitnahme von suchtmittelhaltigen Arzneimitteln nach Österreich (updated 5 May 2025)",
+      "url": "https://www.sozialministerium.gv.at/Themen/Gesundheit/Drogen-und-Sucht/Suchtmittel-NPS-Drogenausgangsstoffe/Suchtmittelhaltige-Arzneimittel-im-Reiseverkehr/Mitnahme-von-Medikamenten-nach-%C3%96sterreich.html"
+    },
+    "slug": "controlled-medication-at",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "opioid painkiller"
+    ],
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Medicine containing narcotic or psychotropic substances, for your own use: for stays of up to five days you need no extra certificate, but prescription medicine always needs proof of personal need (a doctor's confirmation, see the ordinary-medicine entry). For stays of more than five days and up to 30 days, you may bring it only with a prescription from your doctor at home, and no more than 30 days' supply. The ministry recommends the form in Annex IX of the Addictive Drugs Ordinance (Suchtgiftverordnung) for people from the Schengen Area and Annex X for people from outside it. For longer stays, have the medicine prescribed by a doctor in Austria.",
+      "quantity": "up to 30 days' supply"
+    },
+    "notes": "This is Austria's national rule, from the Ministry of Health. Unlawful possession of these substances is prosecuted. The ministry's English page (2019) gives the same rule; the German page (May 2025) adds which prescription form to use from inside or outside the Schengen Area. Brand names are listed for search only: they map to substances on the UN's international control lists.",
+    "summary": "Up to 5 days: no extra certificate, but proof of personal need. 5–30 days: a prescription from your doctor at home, up to 30 days' supply.",
+    "letter": {
+      "items": [
+        "Your personal details",
+        "That the treatment needs to continue",
+        "The generic name of the medicine and its dosage"
+      ],
+      "source": {
+        "name": "Austrian Ministry of Health (BMASGPK) — Mitnahme von suchtmittelhaltigen Arzneimitteln nach Österreich (updated 5 May 2025)",
+        "url": "https://www.sozialministerium.gv.at/Themen/Gesundheit/Drogen-und-Sucht/Suchtmittel-NPS-Drogenausgangsstoffe/Suchtmittelhaltige-Arzneimittel-im-Reiseverkehr/Mitnahme-von-Medikamenten-nach-%C3%96sterreich.html"
+      },
+      "verified_at": "2026-11-03"
+    },
+    "_sources": [
+      {
+        "claim": "Up to five days without further confirmation (personal need must still be shown for prescription medicine); five to 30 days only with a prescription from the home doctor; Annex IX form recommended for Schengen, Annex X for non-Schengen; no more than 30 days' supply; longer stays: prescription by a doctor in Austria; unlawful possession prosecuted",
+        "name": "Austrian Ministry of Health (BMASGPK) — Mitnahme von suchtmittelhaltigen Arzneimitteln nach Österreich (updated 5 May 2025)",
+        "url": "https://www.sozialministerium.gv.at/Themen/Gesundheit/Drogen-und-Sucht/Suchtmittel-NPS-Drogenausgangsstoffe/Suchtmittelhaltige-Arzneimittel-im-Reiseverkehr/Mitnahme-von-Medikamenten-nach-%C3%96sterreich.html"
+      },
+      {
+        "claim": "Same five-day and 30-day rules (English version)",
+        "name": "Austrian Ministry of Health — Bringing medication into Austria (English version, updated 14 October 2019)",
+        "url": "https://www.sozialministerium.gv.at/Themen/Gesundheit/Drogen-und-Sucht/Suchtmittel-NPS-Drogenausgangsstoffe/Suchtmittelhaltige-Arzneimittel-im-Reiseverkehr/Bringing-medication-into-Austria---English-Version.html"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
+  },
+  {
+    "destination": "AT",
+    "category": "medication",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "Austrian Ministry of Health (BMASGPK) — Mitnahme von suchtmittelhaltigen Arzneimitteln nach Österreich (updated 5 May 2025)",
+      "url": "https://www.sozialministerium.gv.at/Themen/Gesundheit/Drogen-und-Sucht/Suchtmittel-NPS-Drogenausgangsstoffe/Suchtmittelhaltige-Arzneimittel-im-Reiseverkehr/Mitnahme-von-Medikamenten-nach-%C3%96sterreich.html"
+    },
+    "slug": "prescription-medication-at",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "drugs (prescription)"
+    ],
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Medicine for your usual personal needs needs no permit, up to three retail packs of the smallest size. For prescription medicine you must prove personal need with a confirmation from your treating doctor giving your personal details, that the treatment needs to continue, and the generic name and dosage of the medicine.",
+      "quantity": "up to three retail packs of the smallest size"
+    },
+    "notes": "This is Austria's national rule, from the Ministry of Health. It recommends a certified translation if the doctor's confirmation isn't in German, and keeping medicines in their original packaging. Medicines containing narcotic or psychotropic substances have their own rule (see the controlled-medication entry).",
+    "summary": "No permit for your usual personal needs, up to three of the smallest retail packs. Prescription medicine: carry a doctor's confirmation.",
+    "letter": {
+      "items": [
+        "Your personal details",
+        "That the treatment needs to continue",
+        "The generic name of the medicine and its dosage"
+      ],
+      "source": {
+        "name": "Austrian Ministry of Health (BMASGPK) — Mitnahme von suchtmittelhaltigen Arzneimitteln nach Österreich (updated 5 May 2025)",
+        "url": "https://www.sozialministerium.gv.at/Themen/Gesundheit/Drogen-und-Sucht/Suchtmittel-NPS-Drogenausgangsstoffe/Suchtmittelhaltige-Arzneimittel-im-Reiseverkehr/Mitnahme-von-Medikamenten-nach-%C3%96sterreich.html"
+      },
+      "verified_at": "2026-11-03"
+    },
+    "_sources": [
+      {
+        "claim": "Personal needs, max. three retail packs of the smallest size, no permit (except addictive substances); prescription medicine needs a doctor's confirmation with personal details, need to continue treatment, generic name and dosage; certified translation recommended if not in German; keep original packaging",
+        "name": "Austrian Ministry of Health (BMASGPK) — Mitnahme von suchtmittelhaltigen Arzneimitteln nach Österreich (updated 5 May 2025)",
+        "url": "https://www.sozialministerium.gv.at/Themen/Gesundheit/Drogen-und-Sucht/Suchtmittel-NPS-Drogenausgangsstoffe/Suchtmittelhaltige-Arzneimittel-im-Reiseverkehr/Mitnahme-von-Medikamenten-nach-%C3%96sterreich.html"
+      }
+    ]
   }
 ]
