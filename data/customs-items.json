@@ -24792,5 +24792,105 @@
         "url": "https://wetten.overheid.nl/BWBR0001941/2026-09-17"
       }
     ]
+  },
+  {
+    "destination": "NL",
+    "category": "medication",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "Netherlands Worldwide (Dutch government) — Mag ik medicijnen meenemen naar Nederland?",
+      "url": "https://www.nederlandwereldwijd.nl/reizen-naar-nederland/medicijnen-meenemen-nederland"
+    },
+    "slug": "controlled-medication-nl",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "opioid painkiller",
+      "zolpidem",
+      "medicinal cannabis"
+    ],
+    "verdict": "depends",
+    "limits": {
+      "description": "Medicines containing a substance on List I or II of the Dutch Opium Act, for example sleeping pills, strong painkillers, ADHD medicines and medicinal cannabis, need a certificate when you bring them into the Netherlands. Which certificate you need, and whether it must be legalised, depends on the country you're travelling from: ask your doctor or pharmacy, or check that country's entry on the INCB website. Carry the certificate, and keep the medicine in its original packaging and in your hand luggage."
+    },
+    "notes": "This is the Dutch government's guidance for travellers. If you live in another Schengen country, the certificate is the Article 75 certificate from your own country (see the EU entry). The Dutch Opium Act lists many common medicines on List II, including alprazolam, diazepam, clonazepam, lorazepam and zolpidem; check yours in Lists I and II, and also ask whether it's controlled in the country you're leaving. Brand names are listed for search only: they map to substances on the UN's international control lists.",
+    "summary": "Opium Act medicines (sleeping pills, strong painkillers, ADHD medicines, medicinal cannabis) need a certificate from the country you travel from.",
+    "transit": {
+      "rule": "applies",
+      "description": "Changing planes at a Dutch airport? Bring the certificate too: Dutch Customs can check it.",
+      "source": {
+        "name": "Netherlands Worldwide (Dutch government) — Mag ik medicijnen meenemen naar Nederland?",
+        "url": "https://www.nederlandwereldwijd.nl/reizen-naar-nederland/medicijnen-meenemen-nederland"
+      },
+      "verified_at": "2026-11-03"
+    },
+    "_sources": [
+      {
+        "claim": "Most medicines may be brought; Opium Act List I/II medicines (sleeping pills, strong painkillers, ADHD medicines, medicinal cannabis) need a certificate depending on the country of departure (ask doctor/pharmacy or see INCB); legalisation sometimes needed; carry certificate, original packaging, hand luggage; also needed when only transferring at a Dutch airport (customs may check)",
+        "name": "Netherlands Worldwide (Dutch government) — Mag ik medicijnen meenemen naar Nederland?",
+        "url": "https://www.nederlandwereldwijd.nl/reizen-naar-nederland/medicijnen-meenemen-nederland"
+      },
+      {
+        "claim": "List II includes alprazolam, clonazepam, diazepam, lorazepam, zolpidem and other benzodiazepines; List I includes narcotic drugs",
+        "name": "Opiumwet (Dutch Opium Act), Lists I and II (version in force from 17 September 2026)",
+        "url": "https://wetten.overheid.nl/BWBR0001941/2026-09-17"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
+  },
+  {
+    "destination": "NL",
+    "category": "medication",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "Netherlands Worldwide (Dutch government) — Mag ik medicijnen meenemen naar Nederland?",
+      "url": "https://www.nederlandwereldwijd.nl/reizen-naar-nederland/medicijnen-meenemen-nederland"
+    },
+    "slug": "prescription-medication-nl",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "drugs (prescription)"
+    ],
+    "verdict": "allowed",
+    "limits": {
+      "description": "Most medicines can be brought into the Netherlands without a certificate. You should be able to show they're for you, for example with a medicine passport or a list of your medication; this isn't compulsory but helps if you lose them or need a doctor. Keep medicines in their original packaging, and in your hand luggage when you fly."
+    },
+    "notes": "From the Dutch government's guidance for travellers. Medicines with a substance on the Opium Act lists (sleeping pills, strong painkillers, ADHD medicines, medicinal cannabis) need a certificate: see the controlled-medication entry.",
+    "summary": "Most medicines are fine without a certificate. Keep them in original packaging and carry proof they're yours, such as a medication list.",
+    "_sources": [
+      {
+        "claim": "Most medicines may simply be brought; no certificate needed unless under the Opium Act; proof they are for you (medicine passport or medication overview) advised but not compulsory; original packaging; hand luggage",
+        "name": "Netherlands Worldwide (Dutch government) — Mag ik medicijnen meenemen naar Nederland?",
+        "url": "https://www.nederlandwereldwijd.nl/reizen-naar-nederland/medicijnen-meenemen-nederland"
+      }
+    ]
   }
 ]

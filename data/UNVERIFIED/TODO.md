@@ -4083,4 +4083,7 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
 - ✔ 2026-11-03 CBD/cannabis: DE (KCanG §§ 1–2 on gesetze-im-internet.de: import banned; CBD excluded from 'cannabis', industrial hemp only for commercial/scientific use), FR (MILDECA PDF 'Ce que dit la loi en matière de CBD', Sept 2026: ≤0.3% THC from catalogued varieties), NL (Opiumwet via wetten.overheid.nl, readable: List II hennep/hasjiesj, List I hennepolie/THC; Art. 2–3 import bans). DE weapons from Zoll's 'Rückkehr aus einem Nicht-EU-Staat' page.
 - Légifrance returns a Cloudflare challenge (403) to scripts: French decree texts need another official mirror.
 - NL medicines for visitors: the Opium Act puts many medicines on List II (alprazolam, diazepam, zolpidem…) and bans import (Art. 3); find the traveller exemption (Opiumwet-besluit / CAK guidance for visitors) before writing a medicine row.
+- ✔ 2026-11-03 NL medicines: Netherlands Worldwide 'Mag ik medicijnen meenemen naar Nederland?' (linked from CAK's FAQ, which covers residents only). Transit rule 'applies' (certificate needed when only transferring).
+- ✔ EU drones: EASA FAQ 'I am a non-EU visitor…' and 'open category'. publications.europa.eu returns Reg. 2019/947 only as xhtml (Accept: application/xhtml+xml), and Article 14 wasn't located in that rendering; registration thresholds (250 g / camera) not yet cited.
+- Held: FR weapons (Légifrance Cloudflare 403; service-public.gouv.fr search is client-side, page ids unknown).
 
