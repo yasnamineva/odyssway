@@ -4075,5 +4075,9 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
 - ✔ EU controlled-medication row re-sourced: Executive Committee decision SCH/Com-ex (94) 28 rev (via publications.europa.eu, `Accept: text/html`, CELEX 41994D0028): certificate for residents of a Schengen state, max 30 days, one per substance. Replaced the Irish Revenue citation.
 - ✔ DE: BtMAHV § 15(1) No. 2 (gesetze-im-internet.de) + BfArM EN page. ✔ FR: French Customs fiche (updated 19 Mar 2026), controlled + ordinary medicine.
 - Held: IT (salute.gov.it behind a Gcore bot wall; adm.gov.it traveller page 404). NL (government.nl and CAK pages cover residents travelling out only; nothing on what a visitor arriving in NL must carry: find the IGJ/Opium Act rule for entry).
-- Next: AT (BASG / Sozialministerium), GR (EOF), PT (INFARMED), BE (FAMHP), then CBD, drones, weapons for DE/FR/IT/ES/NL.
+- ✔ AT: Ministry of Health page "Mitnahme von suchtmittelhaltigen Arzneimitteln nach Österreich" (updated 5 May 2025; found via sozialministerium.gv.at/sitemap.xml), controlled + ordinary medicine with letter checklist.
+- ✔ DE strengthened from German Customs' traveller page (zoll.de …/Reisen-nach-Deutschland-aus-einem-nicht-eu-Staat/Einschraenkungen/Arznei-Betaeubungsmittel/): visitor rule from outside Schengen, ordinary medicine 3 months per medicine. Zoll's weapons page only refers to local weapons authorities: no row.
+- Held: GR (aade.gr and mfa.gr 403; eof.gr has no travel page; GOV.UK gives only best practice: doctor's letter, contact OKANA). BE (famhp.be serves a captcha). PT (no travel page found on infarmed.pt; try the Portuguese customs portal or SICAD).
+- FR weapons: douane.gouv.fr SAMIA fiche is commercial licensing; the traveller rule (categories, European Firearms Pass) needs Légifrance (Code de la sécurité intérieure) — not started.
+- Next: CBD for DE/FR/NL (none of the customs pages read so far mention it), drones (EU rules already in the EU row; national registration for visitors), then Italy again if salute.gov.it opens.
 
