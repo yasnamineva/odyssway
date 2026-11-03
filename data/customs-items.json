@@ -23138,6 +23138,156 @@
     ]
   },
   {
+    "slug": "cash-is",
+    "names": [
+      "cash",
+      "money",
+      "currency",
+      "banknotes",
+      "coins",
+      "traveller's cheques",
+      "bearer instruments"
+    ],
+    "destination": "IS",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "limits": {
+      "description": "You must declare cash and bearer negotiable instruments (such as traveller’s cheques) worth 10,000 euros or more in total, when arriving in or leaving Iceland, on form E-29 handed to customs.",
+      "quantity": "Declare €10,000 or more"
+    },
+    "notes": "Customs can seize funds suspected of being linked to criminal offences (Customs Act No. 88/2005, Article 162); such cases go to the police.",
+    "summary": "Declare cash and traveller’s cheques worth €10,000 or more on form E-29 when you arrive or leave.",
+    "legal_source": {
+      "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+      "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Declare funds of EUR 10,000 or more in or out; form E-29; seizure on suspicion (Customs Act 88/2005 Art. 162)",
+        "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+        "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+      }
+    ],
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "EUR",
+      "comparison": "at_least"
+    }
+  },
+  {
+    "slug": "meat-dairy-is",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "butter",
+      "sausage",
+      "ham",
+      "salami",
+      "jerky",
+      "meat products",
+      "dairy products",
+      "raw meat"
+    ],
+    "destination": "IS",
+    "category": "food_animal",
+    "verdict": "depends",
+    "limits": {
+      "description": "Food from countries outside the EEA can’t be brought in, and raw meat products can’t be brought in from anywhere. Other food from the EEA is duty-free up to ISK 25,000 in value and 10 kg in weight.",
+      "quantity": "None from outside the EEA; raw meat never"
+    },
+    "notes": "Duty is charged on food above ISK 25,000 or 10 kg; you can pay it before arrival at rautthlid.is. The Icelandic Food and Veterinary Authority publishes the detailed import requirements.",
+    "summary": "No food from outside the EEA, and no raw meat from anywhere. Other EEA food: duty-free up to ISK 25,000 and 10 kg.",
+    "legal_source": {
+      "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+      "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "No food from outside the EEA; no raw meat; luggage food allowance ISK 25,000 and 10 kg",
+        "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+        "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+      }
+    ]
+  },
+  {
+    "slug": "fresh-produce-is",
+    "names": [
+      "fruit",
+      "fruits",
+      "vegetables",
+      "fresh produce",
+      "plants",
+      "flowers",
+      "bulbs",
+      "potted plants"
+    ],
+    "destination": "IS",
+    "category": "food_plant",
+    "verdict": "depends",
+    "limits": {
+      "description": "Food, including fruit and vegetables, can’t be brought in from countries outside the EEA. Food from the EEA is duty-free up to ISK 25,000 and 10 kg. Plants: up to 25 cut flowers and branches, 2 kg of bulbs and tubers from Europe in unopened retail packs, and 3 potted plants from Europe.",
+      "quantity": "None from outside the EEA; plants: 25 cut flowers, 2 kg bulbs, 3 potted plants"
+    },
+    "notes": "Plants sent by post need a phytosanitary certificate and a permit from the Icelandic Food and Veterinary Authority.",
+    "summary": "No fruit or vegetables from outside the EEA. From the EEA, food is duty-free up to ISK 25,000 and 10 kg; small amounts of flowers and plants allowed.",
+    "legal_source": {
+      "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+      "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "No food from outside the EEA; food allowance; plant allowances in luggage; post requires phytosanitary certificate and permit",
+        "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+        "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+      }
+    ]
+  },
+  {
+    "slug": "weapons-is",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "rifles",
+      "shotguns",
+      "ammunition",
+      "explosives",
+      "hunting rifle"
+    ],
+    "destination": "IS",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "Firearms, ammunition and explosives need a permit from the police before import. Holders of a European Firearms Pass may bring the firearms listed in it and a reasonable amount of ammunition, if their use is permitted in Iceland and the stay is no longer than three months."
+    },
+    "notes": "Sport shooters may be asked for an invitation from a shooting club; hunters for confirmation from a landowner or a reindeer-hunting permit. Contact the police in your district before travelling. Legal basis: Act No. 16/1998 on Firearms.",
+    "summary": "Police permit needed before import. European Firearms Pass holders can bring the listed guns for stays up to three months.",
+    "legal_source": {
+      "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+      "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Police permit; European Firearms Pass conditions (3 months); shooter/hunter confirmations; Act 16/1998",
+        "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+        "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+      }
+    ]
+  },
+  {
     "slug": "cash-no",
     "names": [
       "cash",
