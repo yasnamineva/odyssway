@@ -24218,11 +24218,11 @@
     "category": "medication",
     "verdict": "allowed_with_limits",
     "limits": {
-      "description": "German law lets travellers carry preparations of narcotic drugs listed in Annexes II and III of the Narcotics Act (BtMG) across the border without an import permit, in a quantity appropriate for the length of the trip, for their own use, on the basis of a medical prescription or a doctor's certificate (§ 15(1) No. 2 BtMAHV). The medicine may only be carried by the person it was prescribed for. If you live in another Schengen country, bring the Article 75 certificate from your own country (see the EU entry); BfArM says this also covers medicines that can be prescribed in your country but not in Germany.",
+      "description": "You may bring narcotic medicine obtained on a prescription for your own use, in a quantity appropriate for the length of the trip, without an import permit (§ 15(1) No. 2 BtMAHV); the prescription is the proof that no permit is needed. Arriving from outside the Schengen Area, German Customs advises carrying a multilingual certificate from your prescribing doctor giving the single and daily doses, the active substance and the length of the trip; its form isn't prescribed. Arriving from another Schengen country for up to 30 days, bring the Article 75 certificate filled in by your doctor and authenticated by your health authority before the trip (see the EU entry); German Customs says this also covers medicines prescribable in your country but not in Germany. The medicine may only be carried by the person it was prescribed for.",
       "quantity": "enough for the length of your trip, for your own use"
     },
-    "notes": "This is Germany's national rule. BfArM's page is written for travellers leaving Germany; for visitors arriving from outside the Schengen Area, the rule above comes from the ordinance itself, which accepts a prescription or a doctor's certificate. A doctor's certificate in English with the active substance and the daily dose avoids problems at the border; neither BfArM nor the ordinance prescribes its form. Substances in Annex I (not prescribable in Germany) aren't covered. Brand names are listed for search only: they map to substances on the UN's international control lists.",
-    "summary": "Allowed without a permit: enough for your trip, for your own use, with a prescription or doctor's certificate. Schengen residents bring the Article 75 certificate.",
+    "notes": "This is Germany's national rule, from German Customs and the ordinance itself. Check the rules of any transit country too. Substances in Annex I (not prescribable in Germany) aren't covered. Brand names are listed for search only: they map to substances on the UN's international control lists.",
+    "summary": "Allowed without a permit: enough for your trip, for your own use. Show the prescription; from outside Schengen also bring a multilingual doctor's certificate.",
     "legal_source": {
       "name": "Betäubungsmittel-Außenhandelsverordnung (BtMAHV), § 15(1) No. 2 — simplified cross-border traffic",
       "url": "https://www.gesetze-im-internet.de/btmahv/__15.html"
@@ -24235,6 +24235,11 @@
         "claim": "Preparations of Annex II and III substances carried by persons in quantities appropriate to the journey, on a medical prescription or certificate, for their own use, are exempt from the import/export authorisation rules (§§ 1–12)",
         "name": "Betäubungsmittel-Außenhandelsverordnung (BtMAHV), § 15(1) No. 2 — simplified cross-border traffic",
         "url": "https://www.gesetze-im-internet.de/btmahv/__15.html"
+      },
+      {
+        "claim": "Prescribed narcotic medicines for own use may be imported in the quantity appropriate for the trip; the prescription is the proof of the permit exemption; from Schengen states: Article 75 certificate authenticated before the trip, also for drugs prescribable only in the home country; from outside Schengen: a multilingual certificate from the prescribing doctor with single and daily dosage, active substance and trip length (form not prescribed); check transit countries",
+        "name": "German Customs (Zoll) — Arzneimittel und Betäubungsmittel: travelling to Germany from a non-EU country",
+        "url": "https://www.zoll.de/DE/Privatpersonen/Reisen/Reisen-nach-Deutschland-aus-einem-nicht-eu-Staat/Einschraenkungen/Arznei-Betaeubungsmittel/arznei-betaeubungsmittel_node.html"
       },
       {
         "claim": "Patients may import or export prescribed controlled drugs in quantities appropriate for the journey; only the person they were prescribed for may carry them; Article 75 certificate for Schengen residents also covers drugs prescribable in their country but not in Germany; only Annex III drugs can be prescribed in Germany",
@@ -24251,7 +24256,19 @@
         "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
         "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
       }
-    ]
+    ],
+    "letter": {
+      "items": [
+        "Single and daily doses",
+        "The active substance",
+        "The length of the trip"
+      ],
+      "source": {
+        "name": "German Customs (Zoll) — Arzneimittel und Betäubungsmittel: travelling to Germany from a non-EU country",
+        "url": "https://www.zoll.de/DE/Privatpersonen/Reisen/Reisen-nach-Deutschland-aus-einem-nicht-eu-Staat/Einschraenkungen/Arznei-Betaeubungsmittel/arznei-betaeubungsmittel_node.html"
+      },
+      "verified_at": "2026-11-03"
+    }
   },
   {
     "destination": "FR",
@@ -24456,6 +24473,38 @@
         "claim": "Personal needs, max. three retail packs of the smallest size, no permit (except addictive substances); prescription medicine needs a doctor's confirmation with personal details, need to continue treatment, generic name and dosage; certified translation recommended if not in German; keep original packaging",
         "name": "Austrian Ministry of Health (BMASGPK) — Mitnahme von suchtmittelhaltigen Arzneimitteln nach Österreich (updated 5 May 2025)",
         "url": "https://www.sozialministerium.gv.at/Themen/Gesundheit/Drogen-und-Sucht/Suchtmittel-NPS-Drogenausgangsstoffe/Suchtmittelhaltige-Arzneimittel-im-Reiseverkehr/Mitnahme-von-Medikamenten-nach-%C3%96sterreich.html"
+      }
+    ]
+  },
+  {
+    "slug": "prescription-medication-de",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "drugs (prescription)"
+    ],
+    "destination": "DE",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "You may bring medicine in the quantity of your usual personal need: up to three months' supply of each medicine, at the recommended dose. It doesn't matter whether it was bought abroad or whether it's authorised in Germany. Counterfeit medicines can't be brought in even for personal use, and substances listed in the Anti-Doping Act (for example testosterone, nandrolone, clenbuterol) are banned in a 'not small quantity' for doping in sport.",
+      "quantity": "up to three months' supply per medicine"
+    },
+    "notes": "This is Germany's national rule, from German Customs, for travellers arriving from outside the EU. Products sold freely abroad, such as supplements, high-dose vitamins or herbal remedies presented as treating illness, may count as medicines in Germany. Medicines under the Narcotics Act have their own rule (see the controlled-medication entry).",
+    "summary": "Allowed: up to three months' supply of each medicine for personal use. No counterfeit medicines; doping substances restricted.",
+    "legal_source": {
+      "name": "German Customs (Zoll) — Arzneimittel und Betäubungsmittel: travelling to Germany from a non-EU country",
+      "url": "https://www.zoll.de/DE/Privatpersonen/Reisen/Reisen-nach-Deutschland-aus-einem-nicht-eu-Staat/Einschraenkungen/Arznei-Betaeubungsmittel/arznei-betaeubungsmittel_node.html"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Usual personal need, max. three months per medicine at recommended dosage; regardless of where bought or whether authorised in Germany; counterfeit medicines and Anti-Doping Act substances (not small quantity) prohibited; supplements, high-dose vitamins, herbal remedies may count as medicines",
+        "name": "German Customs (Zoll) — Arzneimittel und Betäubungsmittel: travelling to Germany from a non-EU country",
+        "url": "https://www.zoll.de/DE/Privatpersonen/Reisen/Reisen-nach-Deutschland-aus-einem-nicht-eu-Staat/Einschraenkungen/Arznei-Betaeubungsmittel/arznei-betaeubungsmittel_node.html"
       }
     ]
   }
