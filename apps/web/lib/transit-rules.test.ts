@@ -22,6 +22,13 @@ describe("resolveAirsideTransit", () => {
     expect(resolveAirsideTransit("US", "NL")?.hubName).toBe("Schengen Area");
   });
 
+  it("Singapore: no visa airside for anyone; the 96-hour transit facility is noted for its passports", () => {
+    expect(resolveAirsideTransit("IN", "SG")?.rule.airside).toBe("no_visa");
+    expect(resolveAirsideTransit("IN", "SG")?.rule.notes).toContain("96-hour");
+    expect(resolveAirsideTransit("UA", "SG")?.rule.notes).toContain("96-hour");
+    expect(resolveAirsideTransit("US", "SG")?.rule.others).toBe(true);
+  });
+
   it("returns nothing for hubs we haven't verified", () => {
     expect(resolveAirsideTransit("US", "AE")).toBeUndefined();
   });

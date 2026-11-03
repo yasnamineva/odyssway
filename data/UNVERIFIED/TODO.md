@@ -4046,8 +4046,9 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
 
 ## 2026-11-03 airside transit hubs (data/transit-rules.json)
 - Done: United Kingdom (Home Office carriers list, 3 Aug 2026), Schengen Area (Visa Code Art. 3 + Annex IV; Commission national ATV list, 30 Jun 2026).
-- Singapore: ica.gov.sg "Transit through Singapore" serves only the menu; content is client-rendered.
+- ✔ Singapore (2026-11-03, later): the current ICA URLs (/information-and-e-services/entry-and-departure/entering-singapore/transit-through-singapore and …/entry-requirements/visa-free-transit-facility) serve full text. No requirements airside; 96-hour VFTF for India (with AU/CA/DE/JP/NZ/CH/GB/US visa), CIS, Georgia, Turkmenistan, Ukraine recorded as landside notes.
 - Türkiye: mfa.gov.tr covers transit only as entry ("touristic purposes and transit"), no airside rule found.
 - United States: travel.state.gov transit page 403; CBP's ESTA page says nothing about transit. The US has no airside transit; needs a primary statement before we say so.
-- UAE, Qatar: not probed yet (u.ae / MOI portal).
+- UAE: transit pages on u.ae return 404 (2026-11-03).
+- Qatar: portal.moi.gov.qa/qatarvisas/ is a 245-byte shell; visitqatar.com (Qatar Tourism) covers only the landside transit visa for Discover Qatar tours (6+ hours, Qatar Airways), nothing on airside. Held.
 - Cyprus keeps a national ATV for Türkiye (Commission list) but isn't a transit hub in the picker; add a CY record if it becomes one.

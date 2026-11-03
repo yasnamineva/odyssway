@@ -210,5 +210,73 @@
     "verified_at": "2026-11-03",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "hub": "SG",
+    "name": "Singapore",
+    "notes": "Singapore has no specific requirements for transit passengers who stay in the transit area. If you have to clear arrival immigration, you must meet Singapore’s entry requirements. Check your destination’s own rules for travellers coming through Singapore.",
+    "rules": [
+      {
+        "airside": "no_visa",
+        "nationalities": [
+          "IN"
+        ],
+        "conditions": [
+          "Stay in the transit area: don’t clear Singapore arrival immigration",
+          "Check with your airline that you can stay in the transit area. Several low-cost carriers require you to clear immigration to collect your onward boarding pass, and collecting baggage to check it in again also means entering Singapore"
+        ],
+        "notes": "To leave the airport during a connection without a Singapore visa, you may qualify for the 96-hour Visa Free Transit Facility: an onward air, ferry or cruise ticket leaving Singapore within 96 hours, and a visa or long-term pass valid for at least 1 month from entry, issued by or valid for Australia, Canada, Germany, Japan, New Zealand, Switzerland, the United Kingdom or the United States. Meeting these criteria doesn’t guarantee entry: ICA officers decide at the checkpoint, and the stay can’t be extended."
+      },
+      {
+        "airside": "no_visa",
+        "nationalities": [
+          "AM",
+          "AZ",
+          "BY",
+          "KZ",
+          "KG",
+          "MD",
+          "RU",
+          "TJ",
+          "UZ",
+          "GE",
+          "TM",
+          "UA"
+        ],
+        "conditions": [
+          "Stay in the transit area: don’t clear Singapore arrival immigration",
+          "Check with your airline that you can stay in the transit area. Several low-cost carriers require you to clear immigration to collect your onward boarding pass, and collecting baggage to check it in again also means entering Singapore"
+        ],
+        "notes": "To leave the airport during a connection without a Singapore visa, you may qualify for the 96-hour Visa Free Transit Facility: you must leave Singapore by air, with an onward air ticket departing within 96 hours. Meeting these criteria doesn’t guarantee entry: ICA officers decide at the checkpoint, and the stay can’t be extended."
+      },
+      {
+        "airside": "no_visa",
+        "others": true,
+        "conditions": [
+          "Stay in the transit area: don’t clear Singapore arrival immigration",
+          "Check with your airline that you can stay in the transit area. Several low-cost carriers require you to clear immigration to collect your onward boarding pass, and collecting baggage to check it in again also means entering Singapore"
+        ],
+        "notes": "You don’t need a visa to change planes in Singapore’s transit area. Clearing immigration means entering Singapore, which needs the documents in the entry rule."
+      }
+    ],
+    "legal_source": {
+      "name": "ICA — Transit through Singapore (last updated 27 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/transit-through-singapore"
+    },
+    "_sources": [
+      {
+        "claim": "No specific requirements to transit; a transit traveller doesn’t clear arrival immigration; clearing immigration (incl. to collect boarding pass or baggage; several low-cost carriers) means meeting entry requirements; check destination’s rules",
+        "name": "ICA — Transit through Singapore (last updated 27 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/transit-through-singapore"
+      },
+      {
+        "claim": "96-hour Visa Free Transit Facility: CIS (Armenia, Azerbaijan, Belarus, Kazakhstan, Kyrgyzstan, Moldova, Russia, Tajikistan, Uzbekistan), Georgia, India, Turkmenistan, Ukraine; India needs a visa/long-term pass valid 1 month from AU CA DE JP NZ CH GB US; onward ticket within 96 hours; no guarantee of entry; no extension",
+        "name": "ICA — Visa Free Transit Facility (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/entry-requirements/visa-free-transit-facility"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]
