@@ -1,5 +1,836 @@
 [
   {
+    "commit": "9de52b14727da6ecd0ebd363fd28c029ccfc87ca",
+    "date": "2026-11-03",
+    "dataset": "customs-items",
+    "summary": "Switzerland: cash (no limit or declaration; truthful answers and CHF 10,000 disclosure when questioned) and medication (30 days' supply of narcotic or psychotropic medicines, no doping substances), from the federal customs office",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Federal Office for Customs and Border Security (FOCBS/BAZG) — Notes and coins, foreign currencies, bearer negotiable instruments",
+      "url": "https://www.bazg.admin.ch/en/cash-foreign-currency-securities"
+    },
+    "destinations": [
+      "CH"
+    ]
+  },
+  {
+    "commit": "b9833257981c787123649e3181f12801197233f4",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "UAE: day counts for Serbia and Montenegro (up to 90 days, per their foreign ministries) and Belarus (90 days within 180, per its consulate in Dubai)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "destinations": [
+      "AE"
+    ]
+  },
+  {
+    "commit": "9b13ad2fb2594f19aa979271c4d4bce50eb19547",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Ireland: the 16 September rows re-checked against the ISD table (all match) and re-dated",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "destinations": [
+      "IE"
+    ]
+  },
+  {
+    "commit": "5e780debaa17895ba401ea5fdd625db46b138cd6",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Ireland rows for 17 more passports from Immigration Service Delivery's visa/non-visa table: no visa for Andorra, Monaco, San Marino, Holy See; visa for 13, with the UK short-stay visa waiver route for Bosnia, Kosovo, Montenegro, North Macedonia, Serbia, Türkiye",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "destinations": [
+      "IE"
+    ]
+  },
+  {
+    "commit": "dc5fe6c3415839c36b7435a7e8b47e198d178d64",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Qatar: US, India and Ukraine rows cite their own Interior Ministry sub-pages (re-read, unchanged)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "destinations": [
+      "QA"
+    ]
+  },
+  {
+    "commit": "bb69593abfdab1381aaee88bfd7a88506375d809",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Qatar: list-based rows cite the Interior Ministry sub-page that names the country (the landing page no longer carries the lists)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "destinations": [
+      "QA"
+    ]
+  },
+  {
+    "commit": "68f0b8b023a0ac1293cbd5756c783ef1b7cceb96",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Qatar rows for 39 more passports from the Interior Ministry's on-arrival lists: 90 days in 180 for 29 (EU, EFTA, Armenia, Russia, Serbia, Türkiye), 30 days extendable for 10; Albania, Kosovo, Montenegro, Belarus held",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "destinations": [
+      "QA"
+    ]
+  },
+  {
+    "commit": "c9a98b49ce72b0870bfcbcdd3a8bea38d86094fe",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Hong Kong rows for 42 more passports from the Immigration Department's visa-free table (revised 22 Sep 2026): 90 days for EU/EFTA, Andorra, Monaco, San Marino, Türkiye; 30 for Armenia, Belarus, Georgia; 14 for the Western Balkans, Russia, Vatican (biometric passports only for Albania, Serbia); visa for Azerbaijan, Moldova. Existing 21 rows re-checked",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "destinations": [
+      "HK"
+    ]
+  },
+  {
+    "commit": "16e293f0044ec989efa4a39556be9389d223920b",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Vietnam rows for 16 more passports from the signed Resolutions 44/NQ-CP and 229/NQ-CP (45 days); France, Spain, Germany, Italy re-cited from a removed news article to the signed Resolution 44",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "destinations": [
+      "VN"
+    ]
+  },
+  {
+    "commit": "e28412ea00d2445e5edce8d278915a68db17bea0",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Jamaica: passports marked '(poe)' with the other-visa condition are visa on arrival, with 30 days visa-free as the alternative (the listing's key: 'visa issued at Port of Entry'); Bulgaria, Croatia, Romania added on the same wording",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "destinations": [
+      "JM"
+    ]
+  },
+  {
+    "commit": "59c6183f38c35f297c47b6ae61042f7e24139544",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Mexico rows for 29 more passports from the Foreign Ministry's visa-free list (Consulate in Leamington, up to 180 days); Kosovo held",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "destinations": [
+      "MX"
+    ]
+  },
+  {
+    "commit": "423ac0057f00501469adf8a808dce0b8e6a4dad0",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Jamaica: 11 passports with conditional visa-free entry (30 days as tourists): vaccination proof for Estonia, Latvia, Lithuania, Slovenia; also a US, Canadian, UK or Schengen visa for Albania, Belarus, North Macedonia, Moldova, Montenegro, Bosnia, Serbia. Bulgaria, Croatia, Romania, Holy See held",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "destinations": [
+      "JM"
+    ]
+  },
+  {
+    "commit": "a23bb6009b134f1db35468daca52b2a6519be9c0",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Malaysia: Azerbaijan (30 days, Embassy in Baku), Switzerland and Liechtenstein (90 days, Embassy in Berne)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "destinations": [
+      "MY"
+    ]
+  },
+  {
+    "commit": "134572f82c5eb2f716e5f6bb85509abd7d9e8cd2",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Malaysia rows for 13 more passports from Malaysian embassy pages: 3 months without a visa for Austria, Belgium, Czechia, Croatia, Hungary, Romania, Türkiye and Bosnia; 1 month for Armenia, Belarus, Georgia, Russia (Moscow table); visa for Serbia. 30 held (no mission page states their rule)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "destinations": [
+      "MY"
+    ]
+  },
+  {
+    "commit": "6dbe002b87f3cb54b3ec72a8013c9c76e85aeeef",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Source claims: South Africa and Bahamas passport-validity rules on generated rows now cite the rule as stated alike by several governments, not France's advice for French passports; French-only stay sentence removed from 37 Zambia rows",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "destinations": [
+      "BS",
+      "ZA",
+      "ZM"
+    ]
+  },
+  {
+    "commit": "8009d36efac1c923719d668b35bde8b2cad69807",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "China: 12 more passports from the MFA's July 2026 mutual visa-exemption list (8 ordinary-passport exemptions, 30 days per entry; visa for Czechia, Lithuania, Türkiye, Moldova); Singapore re-cited to the current page; stray UK source claim removed from 29 rows",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "destinations": [
+      "CN"
+    ]
+  },
+  {
+    "commit": "900598b4a61a7d33955a87773b55f30124f9e5b4",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Uzbekistan: six bilateral 'no time limit' passports added as visa-free with no day count; roadmap updated",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "destinations": [
+      "UZ"
+    ]
+  },
+  {
+    "commit": "1efc64505e18ad56e4bf1377f364a76d5926d5a4",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Colombia: 21 more passports from Resolución 12189 de 2026 (current visa-exempt list, in force 4 Sep 2026), including Israel, newly exempt; Armenia, Belarus, Kosovo on no list, visa required. Existing rows re-cited from the repealed Res. 8558",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "destinations": [
+      "CO"
+    ]
+  },
+  {
+    "commit": "64a44afeaedfd33d260d29d0c1ab1af66da51547",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Egypt rows for 40 more passports on the e-Visa Portal's eligible list; Andorra, Liechtenstein and Türkiye held (not listed). Thirteen Egypt rows now quote the FAQ's current wording",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Egypt e-Visa Portal — Ministry of Interior, Arab Republic of Egypt (FAQ: eligible nationalities, visa types and fees)",
+      "url": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    },
+    "destinations": [
+      "EG"
+    ]
+  },
+  {
+    "commit": "11d932ee9fe80ea7871812691231ee3ad23c8a6d",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Uzbekistan rows for 36 more passports: 34 on the Annex 5 visa-free list (30 days), Albania and North Macedonia on the MFA e-visa list; 6 no-time-limit bilateral passports and Kosovo held. Label guard ignores possessive apostrophes",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "UZ"
+    ]
+  },
+  {
+    "commit": "cdcf26315483fd603f13593e6de1e07a34b12c3f",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "China rows for 29 more passports from the NIA unilateral visa-free list (17 Feb 2026, 30 days, until 31 Dec 2026); 14 held pending the mutual-exemption agreement list (MFA page removed)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "CN"
+    ]
+  },
+  {
+    "commit": "620054548c1417c10f71a8cba261af35eff5e14f",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Nigeria rows for 43 more passports: Tourism Visa (F5A, 30 days, e-Visa) — the NIS applies it to all non-ECOWAS nationals without a waiver agreement",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "NG"
+    ]
+  },
+  {
+    "commit": "e0c18d2fe609dbf6ac60ecdf9942e19e821a72ee",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Maldives rows for 43 more passports: free 30-day tourist visa on arrival for all nationalities except Israeli passports",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "MV"
+    ]
+  },
+  {
+    "commit": "d678a834630c354bdeba93bce0eb71596ec21a2d",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Rwanda rows for 43 more passports: visa on arrival for 30 days for all (DGIE); fee waived for Commonwealth members Cyprus and Malta; for the others the fee waiver for Francophonie members is stated without asserting membership (OIF member page unreachable)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "RW"
+    ]
+  },
+  {
+    "commit": "02f5bec628ee00ef1891f7f807e2101672bd38a0",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Mongolia rows for 43 more passports from the MFA's exemption lists: 2026 tourist exemption (30 days) for EU/EFTA passports and Monaco; bilateral exemptions for Belarus (90 days), Türkiye and Russia (30 days); visa for the 13 not listed; Ukraine kept held (invitation-only exemption)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "MN"
+    ]
+  },
+  {
+    "commit": "52a84f598fd18976d3b09d337550dd03c355bc62",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "India rows for 43 more passports from the e-Visa eligibility list: e-Tourist Visa (ETA, 30 days) for 41 European passports; regular visa from an Indian mission for Türkiye and Kosovo (not eligible)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "IN"
+    ]
+  },
+  {
+    "commit": "a0e0c27ccaadea46c453030dc556b1a2a1c119da",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Israel rows for 43 more passports from PIBA's ETA-IL country data (NEED_PERMIT flags): ETA-IL for 37 European passports (Moldova biometric passports only); B/2 visa for Armenia, Azerbaijan, Bosnia, Türkiye and the Holy See",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "IL"
+    ]
+  },
+  {
+    "commit": "18e28bb959d340b7ba5518191d15a1bc4478d15e",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Macao rows for 43 more passports from the Public Security Police page: exempt with 90 days for EU/Schengen passports and Albania, Andorra, Armenia, Bosnia, Moldova, Monaco, Montenegro, North Macedonia, Serbia; 3 months Cyprus; 30 days San Marino, Russia, Türkiye, Belarus; entry permit on arrival (30 days) for Georgia, Azerbaijan, Kosovo and the Holy See",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "MO"
+    ]
+  },
+  {
+    "commit": "8983203ae385d298143cab5138057628fe6db29c",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Brunei rows for 42 more passports from the MFA's per-country category pages: D1 (90 days visa-free) for EU/EFTA passports, D2 (30 days) Türkiye, D3 (14 days) Russia, Category B (visa via a Brunei mission) for Albania, Andorra, Armenia, Azerbaijan, Belarus, Bosnia, Georgia, Moldova, Monaco, Montenegro, North Macedonia, San Marino, Serbia; Category A Holy See; Kosovo held",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "BN"
+    ]
+  },
+  {
+    "commit": "96bcefb67c1e0ebfd8b8de7f272624580dabb793",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Oman rows for 43 more passports from the Foreign Ministry's exemption groups (updated 22 Sep 2026): 14 days visa-free (first group) for 40 European passports; Azerbaijan in the second group (exempt only with a US/CA/AU/UK/Schengen/Japan visa or residence, or GCC residence); Kosovo and Montenegro need a ROP e-Visa",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "OM"
+    ]
+  },
+  {
+    "commit": "4433d7316d5f506d499b57a90f63bf1d65256a5a",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Indonesia rows for 42 more passports from Imigrasi's lists: visa on arrival (30 days, extendable once) for 35 European passports; visa-free visit (BVK, 30 days) for Türkiye and Belarus; e-Visa needed for Georgia, Kosovo, Moldova, Montenegro and North Macedonia (on no list); San Marino held",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "ID"
+    ]
+  },
+  {
+    "commit": "ef1ee7776f7d41009d60d142e1900ea5939dd5c1",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Taiwan rows for 43 more passports from BOCA's visa-exempt list (17 Jul 2026): 90 days for EU/EFTA passports, Albania, Andorra, Holy See, Kosovo, Monaco, San Marino and North Macedonia (until 31 Mar 2030); visitor visa for the 10 not on any exemption list",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "TW"
+    ]
+  },
+  {
+    "commit": "eeaa7b052634936e640e42f5911cd7298ba5fb54",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Ecuador rows for 43 more passports: only Albania is on MREMH's 'Países de Régimen Especial' visa list; all others visa-free, 90 days per year from first entry (LOMH Art. 56)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "EC"
+    ]
+  },
+  {
+    "commit": "df02e4ca9fcec08e18e4db9d1c03e7f831d3c14f",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Chile rows for 43 more passports from the Foreign Ministry's visa chart (6 Mar 2026): no visa, 90 days, for all but Armenia, Azerbaijan, Belarus (Pacific Alliance residence exemption) and Kosovo, which need a Permanencia Transitoria visa (fees and maximum stays as listed)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "CL"
+    ]
+  },
+  {
+    "commit": "0c2d169d98f86031042cbc6af0f6f53d133a2b99",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Bahamas rows for 42 more passports from Bahamas Immigration's lists: visa waived (stay set at the border, 3 or 8 months by agreement) for EU/EFTA passports and most of Europe; visa required for Albania, Belarus, Montenegro and Serbia; Kosovo held (on neither list)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "BS"
+    ]
+  },
+  {
+    "commit": "c98c1c4768cac1b49a989222c00f3acbe99305a7",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Brazil rows for 43 more passports from the Foreign Ministry's QGRV (26 Aug 2026, VIVIS column): 90 days in any 180 (code 4*) or 90 days counted per migratory year (code 4) for all except Azerbaijan (visa) and Kosovo (code 12: no diplomatic relations, visa up to 90 days)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "BR"
+    ]
+  },
+  {
+    "commit": "019835e917e989bf9c6fec31ef2d992c66564baa",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Colombia rows for 21 more EU passports under the EU–Colombia short-stay visa waiver agreement (90 days in any 180; Ireland excluded by Art. 2(a)); Ireland and non-EU passports wait for Colombia's own list",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "CO"
+    ]
+  },
+  {
+    "commit": "0f0b0a2f4b22a5c92f592e90abba3d5491032db0",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Argentina rows for 43 more passports from DNM's Régimen de Visas table: no visa (90 days) for all except Albania, Azerbaijan, Kosovo and Moldova (consular visa; AVE marked available for Albania and Moldova; Kosovo 'visa / travel certificate')",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "AR"
+    ]
+  },
+  {
+    "commit": "c07f3b780294092adf0b84e7e163d62f12d309cd",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Dominican Republic rows for 42 more passports, one MIREX visa-tool query each: no visa (30 days, Tourist Card, E-Ticket) for EU/EFTA passports and most of Europe, with the 2025-26 passport relaxation only on EU rows; visa (or the Decreto 691-07 visa/residence route) for Armenia, Azerbaijan, Belarus and Moldova; Kosovo held (no option in the tool)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "DO"
+    ]
+  },
+  {
+    "commit": "cf723b880e70dccca345cca8d7270bf85d160dfe",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Costa Rica rows for 42 more passports from visa directive AJ-484-11-2025: first group (no visa, up to 180 days) for EU/EFTA passports, Andorra, Monaco, Montenegro, San Marino, Serbia, Holy See; second group for Türkiye (30 days, extendable to 90) and Russia (90 days under the 2019 agreement); third group (consular visa, 30 days, with the directive's visa/residence exemptions) for Albania, Armenia, Belarus, Bosnia, Georgia, Kosovo, Moldova, North Macedonia; Azerbaijan (restricted visa) held",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "CR"
+    ]
+  },
+  {
+    "commit": "ae38ab353edadd146d0f12b8778cbf7ff384c766",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Peru rows for 43 more passports from the Foreign Ministry's exemption table (16 Jul 2026): 90 in 180 days for EU/EFTA passports (Peru–EU agreement), Georgia, Russia and Türkiye; 90 days (extendable once) per 365 for Andorra, Belarus, Ireland, Moldova, Monaco, Montenegro, North Macedonia, San Marino, Serbia and the Holy See; visa for Albania, Armenia, Azerbaijan, Bosnia and Kosovo; each row cites its own legal basis",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "PE"
+    ]
+  },
+  {
+    "commit": "cb2521c47ac0642e045a16ec3df46dd6d566755f",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "El Salvador rows for 42 more passports from the CA-4 visa classification (23 Jan 2019, linked by the migration service): exempt (A) for EU/EFTA passports, Andorra, Monaco, San Marino, Holy See, North Macedonia, Russia and Türkiye; consular visa (B) for Azerbaijan, Belarus, Georgia, Moldova, Montenegro, Serbia, Kosovo; consulted visa (C) for Armenia and Bosnia; Albania held (garbled cells)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "SV"
+    ]
+  },
+  {
+    "commit": "f7989cabe437f9b1e0518290e14df8cdaa4c77c2",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Belize rows for 41 more passports from Immigration's country table: no visa (30 days, extension needed beyond) for EU/EFTA passports, Andorra, Monaco, San Marino, Holy See, Russia and Türkiye (table's longer thresholds noted for San Marino, Switzerland, Türkiye); visa for Albania, Armenia, Azerbaijan, Belarus, Bosnia, Georgia, Kosovo, North Macedonia, Moldova, Montenegro and Serbia; Slovakia and Slovenia held (not in the table)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "BZ"
+    ]
+  },
+  {
+    "commit": "088dcd463a0ba2b864c03064815e8c4e2071a92d",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Uruguay rows for 43 more passports from the Interior Ministry's admission table: no visa (90 days) for EU/EFTA passports, Andorra, Armenia, Georgia, Monaco, Montenegro, San Marino, Holy See, Serbia and Türkiye (Latvia and Russia with footnote 6); visa with prior authorisation for Albania, Azerbaijan, Belarus, Bosnia, North Macedonia and Moldova; Kosovo not listed (visa); entry list added",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "UY"
+    ]
+  },
+  {
+    "commit": "c586927f3d00929fad48059664eda2488c48eaa4",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Sri Lanka rows for 43 more passports from the DI&E fees page: ETA for all; free for the 12 on the 40-country list (Austria, Belarus, Belgium, Czechia, Denmark, Finland, Norway, Poland, Russia, Sweden, Switzerland, Türkiye), US$50 tourist ETA for the rest; entry list added",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "LK"
+    ]
+  },
+  {
+    "commit": "0764acae9e5d6ab4a934ed3af8bff0e6512a7f48",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Mercosur ID-card travel: Argentine DNI (to Uruguay, Chile, Peru, Ecuador, Colombia), Chilean cédula (to Uruguay, Peru, Ecuador, Colombia) and Brazilian identity card for tourism (to Uruguay) added as alternatives to a passport, from each traveller government's official page; roadmap records the external-review follow-ups",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "CL",
+      "CO",
+      "EC",
+      "PE",
+      "UY"
+    ]
+  },
+  {
+    "commit": "11f9918dc3640dac95ea0b4b641924885c55d15e",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Tanzania rows for 42 more passports from Tanzania Immigration's Visa Guidelines: visa on arrival or online for 40 European passports, Commonwealth exemption for Cyprus and Malta (no stay stated); Romania held (on neither list)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "TZ"
+    ]
+  },
+  {
+    "commit": "f8802427339476235875a8f86c590862f036330d",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Jamaica rows for 28 more passports from the PICA country listing (13 Mar 2025): 30 or 90 days visa-free as listed (Ireland up to 90 days since 5 Mar 2024), Cyprus and Malta visa-free as Commonwealth, visa at the port of entry for Andorra, Armenia, Azerbaijan, Georgia and Kosovo; 15 conditional entries held",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "JM"
+    ]
+  },
+  {
+    "commit": "78eacad98b82a87e73877a58aded9c4e3fb80f6a",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Philippines rows for 43 more passports from the eVisa portal's EO 408 list: 30 days visa-free for EU/EFTA passports, Andorra, Monaco, San Marino, Vatican, Russia and Türkiye; visitor visa for the 11 not listed",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "PH"
+    ]
+  },
+  {
+    "commit": "625e20908de3499a2fa35668be31cbc937c50e18",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Mauritius rows for 41 more passports from the Passport and Immigration Office's country-wise list (2025): no visa for EU/EFTA passports, Georgia, Monaco, Russia, San Marino, Türkiye and the Vatican; 60-day visa on arrival for Albania, Andorra, Armenia, Azerbaijan, Belarus, Bosnia, North Macedonia, Moldova and Serbia; Montenegro and Kosovo held",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "MU"
+    ]
+  },
+  {
+    "commit": "44920ed782ebdf7072b6e7d903d1bc1315a78611",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Ghana rows for 43 more passports: none is on the Ghana Immigration Service's visa regime exemption table, so a visa is needed (yellow fever certificate as on the other rows)",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "GH"
+    ]
+  },
+  {
+    "commit": "f48cc9add0fc60c0652f3eb3372b179ad9478f14",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Fiji rows for 43 more passports from the Ministry of Immigration's visa-exempt list (all tabs read from the page data): up to 4 months for EU/EFTA passports, Monaco, Holy See, Georgia, Russia, Serbia, Türkiye and Moldova; visa for the 10 not listed",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "FJ"
+    ]
+  },
+  {
+    "commit": "3938eeafb5210c66a97b0e12d41252f24408c728",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Zambia rows for 42 more passports from the Department of Immigration's three lists (visa-free for EU/EFTA, Western Balkans, Andorra, Moldova, Monaco, San Marino, Vatican and Türkiye; visa on arrival for Georgia, Belarus and Russia; prior clearance for Armenia and Azerbaijan; Kosovo on no list); e2e: Schengen hub test asserts both French tobacco rows",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "ZM"
+    ]
+  },
+  {
+    "commit": "246f4bd2a202c84bb8eaa23bb142b724ae7b2d47",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "Seychelles rows for 43 more passports: no visa for any passport (ICS 'Visiting Seychelles'), ETA before travel, Visitor's Permit up to three months",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "SC"
+    ]
+  },
+  {
+    "commit": "4130bb113275bd0581293c964dded55c93371a0a",
+    "date": "2026-11-02",
+    "dataset": "entry-requirements",
+    "summary": "New Zealand rows for 43 more passports from Immigration NZ's visa waiver list: NZeTA for all EU and EFTA passports, Andorra, Monaco, San Marino and Vatican City (with the list's conditions for Estonia, Latvia, Lithuania, Greece and Portugal); visitor visa for the 13 passports not on the list",
+    "verified_at": "2026-11-02",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Government of Georgia Ordinance No. 255 — List of Countries Whose Citizens May Enter Georgia without a Visa (2015 text, matsne.gov.ge)",
+      "url": "https://matsne.gov.ge/en/document/view/2867361"
+    },
+    "destinations": [
+      "NZ"
+    ]
+  },
+  {
     "commit": "e1d6b1cc5f57c0c7ff728b25ce2e4a559facacd7",
     "date": "2026-11-02",
     "dataset": "entry-requirements",

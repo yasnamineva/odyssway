@@ -23178,6 +23178,228 @@
     }
   },
   {
+    "slug": "medication-no",
+    "names": [
+      "medication",
+      "medicine",
+      "medicines",
+      "prescription medicine",
+      "prescription drugs",
+      "pills",
+      "tablets",
+      "non-prescription medicine",
+      "over-the-counter medicine"
+    ],
+    "destination": "NO",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "For your own use you can bring up to 3 months’ use of each medicine when arriving from outside the EEA, or up to 1 year’s use from within the EEA, prescription or not. Medicines with narcotic substances and doping products have separate, lower limits (30 days).",
+      "quantity": "3 months from outside the EEA; 1 year from the EEA"
+    },
+    "notes": "You must be able to show at border control that the medicines are for your personal use, for example with a prescription, medical certificate or pharmacy label; you may also be asked for a receipt or other proof they were bought lawfully. Keeping medicines in their original packaging is recommended. Doping products: up to 30 days’ use, prescribed for you, with proof of medical need. Narcotic medicines: see the separate row.",
+    "summary": "Up to 3 months’ use of each medicine from outside the EEA (1 year from the EEA), with proof it’s for your own use. Narcotic and doping medicines: 30 days.",
+    "legal_source": {
+      "name": "Norwegian Medical Products Agency (DMP/NOMA) — Bringing medicines into Norway by travel (updated 28/10/2026)",
+      "url": "https://www.dmp.no/en/manufacturing-import-and-retailing-of-medicines/importing-medicines-for-personal-use/bringing-medicines-into-norway-by-travel"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Quantity table (1 year EEA / 3 months outside, 30 days doping); proof of personal use; original packaging",
+        "name": "Norwegian Medical Products Agency (DMP/NOMA) — Bringing medicines into Norway by travel (updated 28/10/2026)",
+        "url": "https://www.dmp.no/en/manufacturing-import-and-retailing-of-medicines/importing-medicines-for-personal-use/bringing-medicines-into-norway-by-travel"
+      }
+    ]
+  },
+  {
+    "slug": "controlled-medication-no",
+    "names": [
+      "controlled medication",
+      "narcotic medication",
+      "narcotic medicine",
+      "medicine containing narcotics",
+      "controlled drugs",
+      "prescription narcotics"
+    ],
+    "destination": "NO",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Visitors without a registered address in Norway can bring up to 30 days’ use of medicines containing narcotic substances, prescribed by a doctor or dentist for their own medical use, from any country. For more than 30 days, apply to the Norwegian Medical Products Agency for permission before travelling. Use the red “goods to declare” channel where there is one.",
+      "quantity": "Up to 30 days’ use (visitors)"
+    },
+    "notes": "Residents of Norway have different limits: up to 7 days’ use with documentation from abroad only, or 30 days with a medical certificate from a doctor in Norway. Visitors resident in another Schengen country can use a Schengen certificate as documentation. A granted permit is sent by post, so the agency recommends applying well before you travel; applications are not accepted by email.",
+    "summary": "Visitors: up to 30 days’ use with a copy of the prescription or a doctor’s letter, declared in the red channel. Longer: apply to the Medicines Agency first.",
+    "procedure": {
+      "title": "For more than 30 days: apply to the Norwegian Medical Products Agency",
+      "authority": "Norwegian Medical Products Agency (DMP/NOMA)",
+      "applyUrl": "https://www.dmp.no/en/manufacturing-import-and-retailing-of-medicines/importing-medicines-for-personal-use/bringing-medicines-into-norway-by-travel",
+      "documents": [
+        "A cover letter describing the purpose of the application and your stay in Norway",
+        "Medical documentation from your doctor confirming that the doctor prescribed the medicine to you, the medical need including strength and dosage, and that the doctor approves your travel with that amount"
+      ],
+      "steps": [
+        "Submit the application through the agency’s electronic form portal, or by post to The Norwegian Medical Products Agency, PO Box 240 Skøyen, 0213 Oslo, Norway (not by email).",
+        "Wait for the permit, which is sent by post; apply well before your date of entry."
+      ],
+      "atTheBorder": "Only for visitors without a registered address in Norway. Up to 30 days’ use needs no permit, only the prescription documentation.",
+      "optional": false,
+      "sources": [
+        {
+          "name": "Norwegian Medical Products Agency (DMP/NOMA) — Bringing medicines into Norway by travel (updated 28/10/2026)",
+          "url": "https://www.dmp.no/en/manufacturing-import-and-retailing-of-medicines/importing-medicines-for-personal-use/bringing-medicines-into-norway-by-travel"
+        }
+      ],
+      "verified_at": "2026-11-03",
+      "verified_by": "agent:claude-opus-5-5"
+    },
+    "letter": {
+      "items": [
+        "A copy of the prescription or a letter of confirmation from your doctor showing the medicine was prescribed to you",
+        "Documentation of your medical need and the dosage"
+      ],
+      "source": {
+        "name": "Norwegian Medical Products Agency (DMP/NOMA) — Bringing medicines into Norway by travel (updated 28/10/2026)",
+        "url": "https://www.dmp.no/en/manufacturing-import-and-retailing-of-medicines/importing-medicines-for-personal-use/bringing-medicines-into-norway-by-travel"
+      },
+      "verified_at": "2026-11-03"
+    },
+    "legal_source": {
+      "name": "Norwegian Medical Products Agency (DMP/NOMA) — Bringing medicines into Norway by travel (updated 28/10/2026)",
+      "url": "https://www.dmp.no/en/manufacturing-import-and-retailing-of-medicines/importing-medicines-for-personal-use/bringing-medicines-into-norway-by-travel"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "30 days for visitors; 7/30 days for residents; red channel; Schengen certificate; permit application for over 30 days with documents, post delivery, no email",
+        "name": "Norwegian Medical Products Agency (DMP/NOMA) — Bringing medicines into Norway by travel (updated 28/10/2026)",
+        "url": "https://www.dmp.no/en/manufacturing-import-and-retailing-of-medicines/importing-medicines-for-personal-use/bringing-medicines-into-norway-by-travel"
+      }
+    ]
+  },
+  {
+    "slug": "cbd-no",
+    "names": [
+      "cbd",
+      "cbd oil",
+      "cannabidiol",
+      "cbd products",
+      "cannabis",
+      "marijuana",
+      "weed",
+      "hemp"
+    ],
+    "destination": "NO",
+    "category": "cbd_cannabis",
+    "verdict": "depends",
+    "limits": {
+      "description": "Norway classifies all CBD products made from cannabis extracts as narcotics, whatever their THC content. They can only come in as narcotic medication for your own medical use, within the narcotic-medicine limits (30 days’ use for visitors, with prescription documentation)."
+    },
+    "notes": "A CBD product bought legally in another country may still be illegal in Norway. See the narcotic-medication row for the documentation and permit for longer stays.",
+    "summary": "CBD counts as a narcotic in Norway, whatever the THC content. Only prescribed CBD medicine for your own use, within the 30-day narcotic limit.",
+    "legal_source": {
+      "name": "Norwegian Medical Products Agency (DMP/NOMA) — Bringing medicines into Norway by travel (updated 28/10/2026)",
+      "url": "https://www.dmp.no/en/manufacturing-import-and-retailing-of-medicines/importing-medicines-for-personal-use/bringing-medicines-into-norway-by-travel"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "All CBD products from cannabis extracts are narcotics regardless of THC; narcotic medications for personal medical use allowed within limits; legality abroad irrelevant",
+        "name": "Norwegian Medical Products Agency (DMP/NOMA) — Bringing medicines into Norway by travel (updated 28/10/2026)",
+        "url": "https://www.dmp.no/en/manufacturing-import-and-retailing-of-medicines/importing-medicines-for-personal-use/bringing-medicines-into-norway-by-travel"
+      }
+    ]
+  },
+  {
+    "slug": "meat-dairy-no",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese",
+      "milk",
+      "butter",
+      "sausage",
+      "ham",
+      "salami",
+      "jerky",
+      "meat products",
+      "dairy products"
+    ],
+    "destination": "NO",
+    "category": "food_animal",
+    "verdict": "depends",
+    "limits": {
+      "description": "From outside the EEA you cannot bring meat or dairy products in your luggage (or by post) without a special permit from the Norwegian Food Safety Authority. From the EEA, up to 10 kg in total of meat, meat products, cheese and animal feed per person aged 12 or over. No permit is needed from Switzerland, Liechtenstein, Iceland, Andorra or San Marino.",
+      "quantity": "10 kg total from the EEA; none from elsewhere without a permit"
+    },
+    "notes": "Above the 10 kg quota, the general value limit decides how much food you can bring without paying Norwegian taxes. Children can bring only soft drinks, chocolate and sweets duty-free; other products from age 12. Dog and cat food is not counted in the 10 kg.",
+    "summary": "Not allowed from outside the EEA without a Food Safety Authority permit. From the EEA: up to 10 kg of meat, cheese and animal feed per person.",
+    "legal_source": {
+      "name": "Norwegian Customs (Tolletaten) — Regulations for meat, milk, cheese and other foods (updated 27/11/2025)",
+      "url": "https://www.toll.no/en/goods/food/regulations-for-meat-milk-cheese-and-other-foods"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "10 kg EEA quota from age 12; no meat/dairy from outside EEA without permit; exemptions CH, LI, IS, AD, SM; potatoes need permission; child age limits",
+        "name": "Norwegian Customs (Tolletaten) — Regulations for meat, milk, cheese and other foods (updated 27/11/2025)",
+        "url": "https://www.toll.no/en/goods/food/regulations-for-meat-milk-cheese-and-other-foods"
+      }
+    ]
+  },
+  {
+    "slug": "fresh-produce-no",
+    "names": [
+      "fruit",
+      "fruits",
+      "vegetables",
+      "fresh produce",
+      "berries",
+      "plants",
+      "flowers",
+      "seeds",
+      "potatoes",
+      "bulbs"
+    ],
+    "destination": "NO",
+    "category": "food_plant",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "For personal use without a permit: up to 10 kg of fruit, berries and vegetables, 25 cut flowers, 3 kg of flower bulbs, 5 potted house plants from European countries and 50 packets of seeds. Potatoes need a special permit in any quantity.",
+      "quantity": "10 kg fruit and vegetables; 25 cut flowers; 50 seed packets"
+    },
+    "notes": "Larger amounts need a phytosanitary certificate. Pesticides may not be brought in, even for your own garden.",
+    "summary": "Up to 10 kg of fruit, berries and vegetables for personal use. Potatoes need a permit in any amount.",
+    "legal_source": {
+      "name": "Norwegian Customs (Tolletaten) — Regulations for fruits, vegetables, plants, flowers and seeds (updated 27/11/2025)",
+      "url": "https://www.toll.no/en/goods/plants-and-seeds/regulations-for-fruits-vegetables-plants-flowers-and-seeds"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Personal allowances for fruit, flowers, bulbs, plants, seeds; phytosanitary certificate above; potatoes permit; pesticides banned",
+        "name": "Norwegian Customs (Tolletaten) — Regulations for fruits, vegetables, plants, flowers and seeds (updated 27/11/2025)",
+        "url": "https://www.toll.no/en/goods/plants-and-seeds/regulations-for-fruits-vegetables-plants-flowers-and-seeds"
+      },
+      {
+        "claim": "Potatoes not permitted without special permission",
+        "name": "Norwegian Customs (Tolletaten) — Regulations for meat, milk, cheese and other foods (updated 27/11/2025)",
+        "url": "https://www.toll.no/en/goods/food/regulations-for-meat-milk-cheese-and-other-foods"
+      }
+    ]
+  },
+  {
     "slug": "meat-dairy-ch",
     "names": [
       "meat",
