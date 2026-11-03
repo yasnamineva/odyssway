@@ -3210,6 +3210,132 @@
     ]
   },
   {
+    "destination": "KG",
+    "source": {
+      "name": "Ministry of Foreign Affairs of the Kyrgyz Republic, e-Visa portal: Do I need visa? (visa regime by passport)",
+      "url": "https://www.evisa.e-gov.kg/get_information.php?lng=en"
+    },
+    "checked": "2026-11-03",
+    "groups": [
+      {
+        "label": "visa free, 30 in 60 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 60,
+          "maxDays": 30
+        },
+        "template": "FR",
+        "nationalities": [
+          "AD",
+          "AL",
+          "AR",
+          "AT",
+          "AU",
+          "BA",
+          "BE",
+          "BG",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "ME",
+          "MK",
+          "MT",
+          "MX",
+          "MY",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SM",
+          "US",
+          "VA"
+        ]
+      },
+      {
+        "label": "visa free, 90 days",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "UA",
+        "nationalities": [
+          "RS",
+          "TR",
+          "UA"
+        ]
+      },
+      {
+        "label": "visa required",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "CN",
+        "nationalities": [
+          "CN",
+          "IN"
+        ]
+      },
+      {
+        "label": "visa free, no day limit stated",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AM",
+        "nationalities": [
+          "AM",
+          "AZ",
+          "BY",
+          "GE",
+          "RU"
+        ]
+      }
+    ],
+    "held": [
+      {
+        "nationality": "MD",
+        "reason": "The e-Visa portal answers 'no' for visa-free travel on ordinary Moldovan passports but 'free visa regime' under the facilitated regime (2026-11-03): contradictory, needs a second official source."
+      },
+      {
+        "nationality": "XK",
+        "reason": "Kosovo isn't in the e-Visa portal's country list (2026-11-03)."
+      }
+    ]
+  },
+  {
     "destination": "LK",
     "source": {
       "name": "Fees — Online Visa Application (ETA), Department of Immigration & Emigration, Sri Lanka",

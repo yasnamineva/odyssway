@@ -4060,3 +4060,8 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
 - Open: the September rows give fixed 30/90 days for CA BR MX AR MY CN AU KR FR ES DE IT NL from the traveller's own government, while ICA says the checkpoint sets the stay. Recorded as separate groups in entry-lists.json; reconcile on the next re-check.
 - The IL→SG row was withheld in September (secondary sources only); now added from ICA's list.
 
+## 2026-11-03 Kyrgyzstan, remaining passports (entry-lists.json KG)
+- e-Visa portal checker (api.php?method=getVisaTypeInfo, POST doc_issued_by) re-queried for 43 passports; 41 rows added via `pnpm entry:lists --apply` (templates FR, UA) plus 5 hand-written CIS/Georgia rows ("yes", no day limit → visa-free, no day count).
+- Service/diplomatic passports differ for CH EE LT ME PL RO (up to 90 days) and GR (diplomatic "no"); rows cover ordinary passports only.
+- Held: MD (ordinary "no" under visa-free regime but "free visa regime" under facilitated; contradictory), XK (not in the portal's list).
+
