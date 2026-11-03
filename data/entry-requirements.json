@@ -139351,5 +139351,2115 @@
         "url": "https://www.irishimmigration.ie/coming-to-visit-ireland/short-stay-visa-waiver-programme/"
       }
     ]
+  },
+  {
+    "nationality": "AD",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Andorra isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Andorran passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Andorra not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "AL",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Albania isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Albanian passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Albania not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "AM",
+    "destination": "SG",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Singapore entry visa before you travel: Form 14A signed by you, a recent colour passport photo (taken within the last three months) and a copy of your passport biodata page; ICA may ask for more, such as a Letter of Introduction (Form V39A)",
+      "Passport valid for at least six months from the date of your entry into Singapore",
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "ICA's Armenia visa guideline says you need a visa to enter Singapore with a travel document issued by Armenia; holders of diplomatic passports don't. Apply online through a strategic partner or a local contact in Singapore, or at the nearest Singapore Overseas Mission or its authorised visa agent. ICA advises applying within 30 days before arrival. A visa doesn't guarantee entry, and the stay is set by the e-Pass issued at the checkpoint, not by the visa. Passing through Singapore to or from a third country? You may qualify for the 96-hour Visa Free Transit Facility instead: leave by air with an onward air ticket departing within 96 hours.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: Armenia",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines/visa-guideline-detail/armenia"
+    },
+    "_sources": [
+      {
+        "claim": "Visa needed for Armenia travel documents; diplomatic passports exempt; Form 14A, photo, biodata page valid six months from entry; apply within 30 days prior to arrival",
+        "name": "ICA — Visa Guidelines: Armenia (last updated 26 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines/visa-guideline-detail/armenia"
+      },
+      {
+        "claim": "A visa does not guarantee entry; the period of stay is set by the e-Pass at the checkpoint, not tied to the visa's validity",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "96-hour Visa Free Transit Facility for CIS nationals (incl. Armenia, Azerbaijan, Belarus, Moldova, Russia) and Georgia: depart by air with an onward air ticket within 96 hours",
+        "name": "ICA — Visa Free Transit Facility (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/entry-requirements/visa-free-transit-facility"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "AT",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Austria isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Austrian passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Austria not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "AZ",
+    "destination": "SG",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Singapore entry visa before you travel: Form 14A signed by you, a recent colour passport photo (taken within the last three months) and a copy of your passport biodata page; ICA may ask for more, such as a Letter of Introduction (Form V39A)",
+      "Passport valid for at least six months from the date of your entry into Singapore",
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "ICA's Azerbaijan visa guideline says you need a visa to enter Singapore with a travel document issued by Azerbaijan; holders of diplomatic, official and service passports don't. Apply online through a strategic partner or a local contact in Singapore, or at the nearest Singapore Overseas Mission or its authorised visa agent. ICA advises applying within 30 days before arrival. A visa doesn't guarantee entry, and the stay is set by the e-Pass issued at the checkpoint, not by the visa. Passing through Singapore to or from a third country? You may qualify for the 96-hour Visa Free Transit Facility instead: leave by air with an onward air ticket departing within 96 hours.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: Azerbaijan",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines/visa-guideline-detail/azerbaijan"
+    },
+    "_sources": [
+      {
+        "claim": "Visa needed for Azerbaijan travel documents; diplomatic, official and service passports exempt; Form 14A, photo, biodata page valid six months from entry; apply within 30 days prior to arrival",
+        "name": "ICA — Visa Guidelines: Azerbaijan (last updated 26 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines/visa-guideline-detail/azerbaijan"
+      },
+      {
+        "claim": "A visa does not guarantee entry; the period of stay is set by the e-Pass at the checkpoint, not tied to the visa's validity",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "96-hour Visa Free Transit Facility for CIS nationals (incl. Armenia, Azerbaijan, Belarus, Moldova, Russia) and Georgia: depart by air with an onward air ticket within 96 hours",
+        "name": "ICA — Visa Free Transit Facility (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/entry-requirements/visa-free-transit-facility"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "BA",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Bosnia and Herzegovina isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Bosnian passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Bosnia and Herzegovina not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "BE",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Belgium isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Belgian passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Belgium not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "BG",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Bulgaria isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Bulgarian passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Bulgaria not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "BY",
+    "destination": "SG",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Singapore entry visa before you travel: Form 14A signed by you, a recent colour passport photo (taken within the last three months) and a copy of your passport biodata page; ICA may ask for more, such as a Letter of Introduction (Form V39A)",
+      "Passport valid for at least six months from the date of your entry into Singapore",
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "ICA's Belarus visa guideline says you need a visa to enter Singapore with a travel document issued by Belarus; holders of diplomatic and official passports don't. Apply online through a strategic partner or a local contact in Singapore, or at the nearest Singapore Overseas Mission or its authorised visa agent. ICA advises applying within 30 days before arrival. A visa doesn't guarantee entry, and the stay is set by the e-Pass issued at the checkpoint, not by the visa. Passing through Singapore to or from a third country? You may qualify for the 96-hour Visa Free Transit Facility instead: leave by air with an onward air ticket departing within 96 hours.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: Belarus",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines/visa-guideline-detail/belarus"
+    },
+    "_sources": [
+      {
+        "claim": "Visa needed for Belarus travel documents; diplomatic and official passports exempt; Form 14A, photo, biodata page valid six months from entry; apply within 30 days prior to arrival",
+        "name": "ICA — Visa Guidelines: Belarus (last updated 26 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines/visa-guideline-detail/belarus"
+      },
+      {
+        "claim": "A visa does not guarantee entry; the period of stay is set by the e-Pass at the checkpoint, not tied to the visa's validity",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "96-hour Visa Free Transit Facility for CIS nationals (incl. Armenia, Azerbaijan, Belarus, Moldova, Russia) and Georgia: depart by air with an onward air ticket within 96 hours",
+        "name": "ICA — Visa Free Transit Facility (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/entry-requirements/visa-free-transit-facility"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CH",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Switzerland isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Swiss passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Switzerland not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CY",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Cyprus isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Cypriot passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Cyprus not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "CZ",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Czech Republic isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Czech passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Czech Republic not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "DK",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Denmark isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Danish passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Denmark not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "EE",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Estonia isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Estonian passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Estonia not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "FI",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Finland isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Finnish passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Finland not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "GE",
+    "destination": "SG",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Singapore entry visa before you travel: Form 14A signed by you, a recent colour passport photo (taken within the last three months) and a copy of your passport biodata page; ICA may ask for more, such as a Letter of Introduction (Form V39A)",
+      "Passport valid for at least six months from the date of your entry into Singapore",
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "ICA's Georgia visa guideline says you need a visa to enter Singapore with a travel document issued by Georgia; holders of diplomatic and service passports don't. Apply online through a strategic partner or a local contact in Singapore, or at the nearest Singapore Overseas Mission or its authorised visa agent. ICA advises applying within 30 days before arrival. A visa doesn't guarantee entry, and the stay is set by the e-Pass issued at the checkpoint, not by the visa. Passing through Singapore to or from a third country? You may qualify for the 96-hour Visa Free Transit Facility instead: leave by air with an onward air ticket departing within 96 hours.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: Georgia",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines/visa-guideline-detail/georgia"
+    },
+    "_sources": [
+      {
+        "claim": "Visa needed for Georgia travel documents; diplomatic and service passports exempt; Form 14A, photo, biodata page valid six months from entry; apply within 30 days prior to arrival",
+        "name": "ICA — Visa Guidelines: Georgia (last updated 26 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines/visa-guideline-detail/georgia"
+      },
+      {
+        "claim": "A visa does not guarantee entry; the period of stay is set by the e-Pass at the checkpoint, not tied to the visa's validity",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "96-hour Visa Free Transit Facility for CIS nationals (incl. Armenia, Azerbaijan, Belarus, Moldova, Russia) and Georgia: depart by air with an onward air ticket within 96 hours",
+        "name": "ICA — Visa Free Transit Facility (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/entry-requirements/visa-free-transit-facility"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "GR",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Greece isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Greek passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Greece not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "HR",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Croatia isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Croatian passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Croatia not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "HU",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Hungary isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Hungarian passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Hungary not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IE",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Ireland isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Irish passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Ireland not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IL",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Israel isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Israeli passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Israel not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "IS",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Iceland isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Icelandic passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Iceland not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "LI",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Liechtenstein isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Liechtenstein passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Liechtenstein not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "LT",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Lithuania isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Lithuanian passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Lithuania not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "LU",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Luxembourg isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Luxembourgish passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Luxembourg not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "LV",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Latvia isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Latvian passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Latvia not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "MC",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Monaco isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Monegasque passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Monaco not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "MD",
+    "destination": "SG",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Singapore entry visa before you travel: Form 14A signed by you, a recent colour passport photo (taken within the last three months) and a copy of your passport biodata page; ICA may ask for more, such as a Letter of Introduction (Form V39A)",
+      "Passport valid for at least six months from the date of your entry into Singapore",
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "ICA's Moldova visa guideline says you need a visa to enter Singapore with a travel document issued by Moldova; holders of diplomatic, official and service passports don't. Apply online through a strategic partner or a local contact in Singapore, or at the nearest Singapore Overseas Mission or its authorised visa agent. ICA advises applying within 30 days before arrival. A visa doesn't guarantee entry, and the stay is set by the e-Pass issued at the checkpoint, not by the visa. Passing through Singapore to or from a third country? You may qualify for the 96-hour Visa Free Transit Facility instead: leave by air with an onward air ticket departing within 96 hours.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: Moldova",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines/visa-guideline-detail/moldova"
+    },
+    "_sources": [
+      {
+        "claim": "Visa needed for Moldova travel documents; diplomatic, official and service passports exempt; Form 14A, photo, biodata page valid six months from entry; apply within 30 days prior to arrival",
+        "name": "ICA — Visa Guidelines: Moldova (last updated 26 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines/visa-guideline-detail/moldova"
+      },
+      {
+        "claim": "A visa does not guarantee entry; the period of stay is set by the e-Pass at the checkpoint, not tied to the visa's validity",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "96-hour Visa Free Transit Facility for CIS nationals (incl. Armenia, Azerbaijan, Belarus, Moldova, Russia) and Georgia: depart by air with an onward air ticket within 96 hours",
+        "name": "ICA — Visa Free Transit Facility (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/entry-requirements/visa-free-transit-facility"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "ME",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Montenegro isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Montenegrin passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Montenegro not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "MK",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "North Macedonia isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so North Macedonian passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "North Macedonia not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "MT",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Malta isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Maltese passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Malta not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "NO",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Norway isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Norwegian passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Norway not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "PL",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Poland isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Polish passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Poland not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "PT",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Portugal isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Portuguese passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Portugal not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "RO",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Romania isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Romanian passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Romania not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "RS",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Serbia isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Serbian passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Serbia not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "RU",
+    "destination": "SG",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Singapore entry visa before you travel: Form 14A signed by you, a recent colour passport photo (taken within the last three months) and a copy of your passport biodata page; ICA may ask for more, such as a Letter of Introduction (Form V39A)",
+      "Passport valid for at least six months from the date of your entry into Singapore",
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "ICA's Russia visa guideline says you need a visa to enter Singapore with a travel document issued by Russia; holders of diplomatic and service passports don't. Apply online through a strategic partner or a local contact in Singapore, or at the nearest Singapore Overseas Mission or its authorised visa agent. ICA advises applying within 30 days before arrival. A visa doesn't guarantee entry, and the stay is set by the e-Pass issued at the checkpoint, not by the visa. Passing through Singapore to or from a third country? You may qualify for the 96-hour Visa Free Transit Facility instead: leave by air with an onward air ticket departing within 96 hours.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: Russia",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines/visa-guideline-detail/russia"
+    },
+    "_sources": [
+      {
+        "claim": "Visa needed for Russia travel documents; diplomatic and service passports exempt; Form 14A, photo, biodata page valid six months from entry; apply within 30 days prior to arrival",
+        "name": "ICA — Visa Guidelines: Russia (last updated 26 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines/visa-guideline-detail/russia"
+      },
+      {
+        "claim": "A visa does not guarantee entry; the period of stay is set by the e-Pass at the checkpoint, not tied to the visa's validity",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "96-hour Visa Free Transit Facility for CIS nationals (incl. Armenia, Azerbaijan, Belarus, Moldova, Russia) and Georgia: depart by air with an onward air ticket within 96 hours",
+        "name": "ICA — Visa Free Transit Facility (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/entry-requirements/visa-free-transit-facility"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "SE",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Sweden isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Swedish passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Sweden not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "SI",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Slovenia isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Slovenian passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Slovenia not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "SK",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Slovakia isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Slovak passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Slovakia not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "SM",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "San Marino isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Sammarinese passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "San Marino not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "TR",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Türkiye isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Turkish passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Türkiye not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "VA",
+    "destination": "SG",
+    "requirement": "visa_free",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Holy See isn't on ICA's list of countries and places whose travel documents need a Singapore visa, so Vatican passport holders don't need one for a visit. ICA gives no fixed number of days: the officer at the checkpoint decides, and the e-Pass emailed to you after immigration shows the maximum days and your last day in Singapore. The ICA pages read for this row state no passport-validity rule for visa-free visitors.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "_sources": [
+      {
+        "claim": "Holy See not on the list of countries and places that require a visa",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      },
+      {
+        "claim": "An e-Pass emailed after immigration shows the maximum number of days and the last day you may stay",
+        "name": "ICA — Electronic Visit Pass (e-Pass) retrieval for short-term visitors (last updated 3 Nov 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/short-term-visit-pass/electronic-visit-pass-(e-pass)-retrieval-for-short-term-visitors"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "nationality": "XK",
+    "destination": "SG",
+    "requirement": "visa_required",
+    "stayPolicy": {
+      "kind": "visa_required"
+    },
+    "documentsNeeded": [
+      "Singapore entry visa before you travel: Form 14A signed by you, a recent colour passport photo (taken within the last three months) and a copy of your passport biodata page; a Letter of Introduction (Form V39A) from a local contact in Singapore, or one issued by your embassy",
+      "Passport valid for at least six months from the date of your entry into Singapore",
+      "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free"
+    ],
+    "passportValidity": {
+      "kind": "min_period",
+      "amount": 6,
+      "unit": "months",
+      "from": "arrival"
+    },
+    "timedSteps": [
+      {
+        "line": "SG Arrival Card (SGAC) submitted online within 3 days before arrival (including the day of arrival); submitting it is free",
+        "window": {
+          "kind": "opens_before_arrival",
+          "amount": 3,
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "ICA's Kosovo visa guideline says you need a visa to enter Singapore with a travel document issued by Kosovo; holders of diplomatic and official passports don't. Apply online through a strategic partner or a local contact in Singapore, or at the nearest Singapore Overseas Mission or its authorised visa agent. ICA advises applying within 30 days before arrival. A visa doesn't guarantee entry, and the stay is set by the e-Pass issued at the checkpoint, not by the visa.",
+    "legal_source": {
+      "name": "ICA — Visa Guidelines: Kosovo",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines/visa-guideline-detail/kosovo"
+    },
+    "_sources": [
+      {
+        "claim": "Visa needed for Kosovo travel documents; diplomatic and official passports exempt; Form 14A, photo, biodata page valid six months from entry; Form V39A (LOI) from a local contact or embassy; apply within 30 days prior to arrival",
+        "name": "ICA — Visa Guidelines: Kosovo (last updated 26 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines/visa-guideline-detail/kosovo"
+      },
+      {
+        "claim": "A visa does not guarantee entry; the period of stay is set by the e-Pass at the checkpoint, not tied to the visa's validity",
+        "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+      },
+      {
+        "claim": "All travellers must submit the SGAC within 3 days (including the day of arrival) before arriving; it is free; the SGAC is not a visa",
+        "name": "ICA — SG Arrival Card with Electronic Health Declaration (last updated 28 Oct 2026)",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/sg-arrival-card-with-electronic-health-declaration"
+      }
+    ],
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]

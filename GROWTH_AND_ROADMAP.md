@@ -6,9 +6,9 @@ anything gets built, and its Accuracy Policy (§3) comes before everything here.
 listed as *candidates* are research leads, not verified rules, and none can be published
 without a primary official source.
 
-Where we are today (2026-11-02):
+Where we are today (2026-11-03):
 
-- 68 destinations plus the Schengen Area; 3,786 verified entry rows; 720 customs rows
+- 68 destinations plus the Schengen Area; 3,830 verified entry rows; 720 customs rows
   (145 medication, 39 with a doctor's-letter checklist, 21 with a permit how-to, 19 with
   a transit rule); 1,125 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
@@ -257,6 +257,7 @@ their own rows, which don't exist yet, so they show 'not verified'. ✔ Customs 
 vapes, pouches, cash NOK 25,000), Switzerland (alcohol, tobacco, vapes, meat/dairy, produce), Iceland (alcohol units,
 tobacco, nicotine, medicines, cannabis); Liechtenstein answers from the Swiss rows (`customsTerritory`, 1923 treaty).
 ✔ 2026-11-03 Swiss cash (no limit, no declaration; CHF 10,000 disclosure on questioning) and medication (30 days' supply of narcotic/psychotropic medicines, no doping substances), from BAZG pages; Swissmedic's site times out from here. ✔ 2026-11-03 Norway: medication (3 months from outside the EEA, 1 year from it), narcotic medication (30 days for visitors; permit how-to for longer stays from the Medical Products Agency page), CBD (a narcotic whatever its THC), meat and dairy (none from outside the EEA without a permit; 10 kg from it), fruit and vegetables (10 kg; potatoes need a permit). ✔ Same day, Iceland from island.is: cash (declare €10,000 or more, form E-29), meat and dairy and fruit and vegetables (no food from outside the EEA, no raw meat), weapons (police permit; European Firearms Pass for up to 3 months). ✔ Weapons for Switzerland (declare all; permit; banned list incl. switchblades, stun guns, silencers) and Norway (Firearms Pass, or police licence two months before arrival, with an apply-by date). ✔ Belize alcohol (1 L wine or spirits) and tobacco (200 cigarettes or 50 cigars or 250 g) from the customs passenger-exemptions sheet; cannabis held (2003 schedule), North Macedonia customs unreachable (see TODO). ✔ Zimbabwe medication (MCAZ permit per ZIMRA; personal-use coverage unstated, said so), weapons, fresh produce from ZIMRA's restricted-goods page.
+✔ 2026-11-03 Singapore completed (44 rows, all 64 other passports now covered): ICA's visa guidelines list, readable again at the new `/information-and-e-services/...` URLs. Seven need a visa (Armenia, Azerbaijan, Belarus, Georgia, Moldova, Russia, Kosovo), each citing its own ICA page (6 months' passport validity from entry, Form 14A, apply within 30 days); the rest are visa-free with the stay set at the checkpoint (e-Pass). No passport-validity rule shown for visa-free rows: ICA states none. Still under 25 rows: Cambodia, Cyprus, Saudi Arabia, Korea, Japan, Morocco, Jordan, Zimbabwe, Kyrgyzstan.
 ✔ 2026-11-02 Türkiye passport URLs: slugs dropped the 'ü' (`/t-rkiye`); fixed to `/turkiye` with 308 redirects.
 ✔ Post `/blog/montenegro-visa-turkey-russia-belarus-2026`. **Pushed 2026-11-02** (through the Bosnia rows); IndexNow 383 URLs.
 

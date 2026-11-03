@@ -4052,3 +4052,11 @@ Method: fetched every reachable legal_source (and _sources) page and required ev
 - UAE: transit pages on u.ae return 404 (2026-11-03).
 - Qatar: portal.moi.gov.qa/qatarvisas/ is a 245-byte shell; visitqatar.com (Qatar Tourism) covers only the landside transit visa for Discover Qatar tours (6+ hours, Qatar Airways), nothing on airside. Held.
 - Cyprus keeps a national ATV for Türkiye (Commission list) but isn't a transit hub in the picker; add a CY record if it becomes one.
+
+## 2026-11-03 Singapore, all passports (entry-requirements.json, entry-lists.json SG)
+- Source: ICA Visa Guidelines (https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines, updated 28 Oct 2026) plus each listed country's visa-guideline-detail page (26 Oct 2026). The old `/enter-transit-depart/...` URLs cited by the September rows still redirect; re-point them when those rows are next re-checked.
+- 37 visa-free rows (EU, EEA, Swiss, Balkan, IL, TR, AD, MC, SM, VA): not on the list. No passport-validity rule: ICA's visa-free pages state none (only the visa-required pages say six months from entry).
+- 7 visa-required rows: AM AZ BY GE MD RU XK; Kosovo also needs Form V39A from a local contact or its embassy. CIS and Georgia rows mention the 96-hour VFTF.
+- Open: the September rows give fixed 30/90 days for CA BR MX AR MY CN AU KR FR ES DE IT NL from the traveller's own government, while ICA says the checkpoint sets the stay. Recorded as separate groups in entry-lists.json; reconcile on the next re-check.
+- The IL→SG row was withheld in September (secondary sources only); now added from ICA's list.
+

@@ -5160,6 +5160,122 @@
     ]
   },
   {
+    "destination": "SG",
+    "source": {
+      "name": "ICA — Visa Guidelines: countries and places that require a visa (last updated 28 Oct 2026)",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "checked": "2026-11-03",
+    "groups": [
+      {
+        "label": "not on ICA's visa list; stay set at the checkpoint",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AT",
+        "nationalities": [
+          "AD",
+          "AL",
+          "AT",
+          "BA",
+          "BE",
+          "BG",
+          "CH",
+          "CL",
+          "CY",
+          "CZ",
+          "DK",
+          "EE",
+          "FI",
+          "GB",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "JP",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "ME",
+          "MK",
+          "MT",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "RS",
+          "SE",
+          "SI",
+          "SK",
+          "SM",
+          "TR",
+          "US",
+          "VA"
+        ]
+      },
+      {
+        "label": "visa-free, 30 days (from the traveller's own government; ICA itself sets the stay at the checkpoint)",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 30
+        },
+        "template": "CA",
+        "nationalities": [
+          "AR",
+          "BR",
+          "CA",
+          "CN",
+          "MX",
+          "MY"
+        ]
+      },
+      {
+        "label": "visa-free, 90 days (from the traveller's own government; ICA itself sets the stay at the checkpoint)",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "fixed_per_entry",
+          "maxDays": 90
+        },
+        "template": "AU",
+        "nationalities": [
+          "AU",
+          "DE",
+          "ES",
+          "FR",
+          "IT",
+          "KR",
+          "NL"
+        ]
+      },
+      {
+        "label": "on ICA's visa list (each row cites its own ICA visa-guideline page: add new passports by hand, not with --apply)",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AM",
+        "nationalities": [
+          "AM",
+          "AZ",
+          "BY",
+          "GE",
+          "IN",
+          "MD",
+          "RU",
+          "UA",
+          "XK"
+        ]
+      }
+    ]
+  },
+  {
     "destination": "SV",
     "source": {
       "name": "Dirección General de Migración y Extranjería de El Salvador — Países que requieren visa para ingresar a El Salvador (CA-4 classification of 23 January 2019, linked as the current list)",

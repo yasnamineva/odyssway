@@ -38,13 +38,13 @@ describe("resolveTripCheck", () => {
   });
 
   it("is honestly not-covered for a nationality/destination pair with no verified entry-requirements row yet", () => {
-    // Singapore is a verified destination, but the IL->SG row was withheld
-    // from production data (only secondary-sourced, not primary-confirmed) —
-    // this must still resolve to an honest not-covered result, not a guess.
-    const result = resolveTripCheck("IL", "SG", []);
+    // Cambodia is a verified destination, but there's no IL->KH row (its e-visa
+    // list sits behind a captcha) — this must still resolve to an honest
+    // not-covered result, not a guess.
+    const result = resolveTripCheck("IL", "KH", []);
     expect(result.covered).toBe(false);
     expect(result.basis).toBe("not_covered");
-    expect(result.officialAuthorityUrl).toContain("ica.gov.sg");
+    expect(result.officialAuthorityUrl).toContain("immigration.gov.kh");
   });
 
   it("resolves a verified non-Schengen destination (UK ETA route)", () => {
