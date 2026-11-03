@@ -6001,16 +6001,16 @@
     "category": "medication",
     "verdict": "depends",
     "limits": {
-      "description": "Article 75 of the Convention Implementing the Schengen Agreement (CISA) lets travelers carry 'the narcotic drugs and psychotropic substances that are necessary for their medical treatment' if, at any check, they can produce a certificate issued or authenticated by a competent authority of their state of residence. Article 75 itself leaves the certificate's exact form and the details on permitted quantity and journey duration to the Schengen Executive Committee. Ireland's Revenue describes the Article 75 certificate as covering a maximum 30-day supply of each prescribed product.",
-      "quantity": "up to a 30-day supply, evidenced by the Schengen certificate"
+      "description": "Article 75 of the Convention Implementing the Schengen Agreement (CISA) lets travellers carry 'the narcotic drugs and psychotropic substances that are necessary for their medical treatment' if, at any check, they can produce a certificate issued or authenticated by a competent authority of their state of residence. The Schengen Executive Committee's 1994 decision sets the certificate out: Schengen states issue it to people resident on their territory who travel to another Schengen state, on the basis of a medical prescription; it is valid for at most 30 days, and each narcotic or psychotropic medicine needs its own certificate. Doctors may prescribe narcotic drugs for travel needs of up to 30 days.",
+      "quantity": "up to 30 days' supply, one certificate per medicine (residents of a Schengen country)"
     },
-    "notes": "This is a Schengen-wide legal basis (confirmed directly from Article 75's text), but the certificate itself is issued nationally — by a doctor, pharmacist, or health authority depending on the member state — before you travel; there is no single EU-wide online portal. Article 75 covers 'narcotic drugs and psychotropic substances' as classes rather than naming medicines. On the UN's international lists, amphetamine (Adderall) and methylphenidate (Ritalin) are psychotropic substances, as are alprazolam (Xanax), diazepam (Valium) and clonazepam (Klonopin); codeine and oxycodone are narcotic drugs. Lisdexamfetamine (Vyvanse) and tramadol are not on those lists, so whether they need a certificate depends on each country's own law. Some Schengen states still restrict or ban specific substances outright under their own national law regardless of the certificate — for example, the UK's own guidance (a non-Schengen state, cited here only as an illustration of the pattern) notes a Schengen certificate cannot be used to bring a Schedule 1 drug into Great Britain. Confirm with the specific member state's narcotics authority before traveling with an unusual medication.",
-    "summary": "Narcotic or psychotropic medicine needs a certificate from your home country's authority; Ireland says it covers up to 30 days' supply.",
+    "notes": "The Article 75 certificate is for residents of a Schengen country travelling to another one: it's issued in your country of residence, in its own language, with English and French headings. If you live outside the Schengen Area, it isn't available to you, and the rules of the country you're visiting apply (see its own entry where we have one). Article 75 covers 'narcotic drugs and psychotropic substances' as classes rather than naming medicines. On the UN's international lists, amphetamine (Adderall) and methylphenidate (Ritalin) are psychotropic substances, as are alprazolam (Xanax), diazepam (Valium) and clonazepam (Klonopin); codeine and oxycodone are narcotic drugs. Lisdexamfetamine (Vyvanse) and tramadol are not on those lists, so whether they need a certificate depends on each country's own law. Some countries restrict specific substances outright under their own law regardless of the certificate. Confirm with the narcotics authority of the country you're visiting before travelling with an unusual medicine.",
+    "summary": "Schengen residents: a certificate from your own country, one per medicine, up to 30 days. From outside Schengen: the destination's own rule applies.",
     "legal_source": {
       "name": "Convention Implementing the Schengen Agreement, Art. 75",
       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02)"
     },
-    "verified_at": "2026-10-17",
+    "verified_at": "2026-11-03",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -6018,6 +6018,11 @@
         "claim": "The rule itself",
         "name": "Convention Implementing the Schengen Agreement, Art. 75",
         "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02)"
+      },
+      {
+        "claim": "Certificate issued to residents travelling to another Schengen State, on a medical prescription; valid at most 30 days; a separate certificate for each narcotic drug/psychotropic substance; doctors may prescribe for travel needs of up to 30 days; national languages with English and French headings",
+        "name": "Schengen Executive Committee decision SCH/Com-ex (94) 28 rev of 22 December 1994 on the certificate provided for in Article 75 (OJ L 239, 22.9.2000)",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A41994D0028"
       },
       {
         "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
@@ -6028,11 +6033,6 @@
         "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
         "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
         "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
-      },
-      {
-        "claim": "Article 75 certificate covers a maximum 30-day supply",
-        "name": "Revenue (Ireland) — eBrief No. 219/23: Article 75 certificate (18 October 2023)",
-        "url": "https://revenue.ie/en/tax-professionals/ebrief/2023/no-2192023.aspx"
       }
     ],
     "letter": {
@@ -24191,6 +24191,65 @@
         "claim": "Notification duty; Weapons Act categories; prohibited list; permit requirement; tax relief for two hunting/shooting weapons; fedpol ZSW contact",
         "name": "Federal Office for Customs and Border Security (FOCBS/BAZG) — Weapons: obligation to notify at the border",
         "url": "https://www.bazg.admin.ch/en/weapons-notification-requirement-border"
+      }
+    ]
+  },
+  {
+    "slug": "controlled-medication-de",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "opioid painkiller"
+    ],
+    "destination": "DE",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "German law lets travellers carry preparations of narcotic drugs listed in Annexes II and III of the Narcotics Act (BtMG) across the border without an import permit, in a quantity appropriate for the length of the trip, for their own use, on the basis of a medical prescription or a doctor's certificate (§ 15(1) No. 2 BtMAHV). The medicine may only be carried by the person it was prescribed for. If you live in another Schengen country, bring the Article 75 certificate from your own country (see the EU entry); BfArM says this also covers medicines that can be prescribed in your country but not in Germany.",
+      "quantity": "enough for the length of your trip, for your own use"
+    },
+    "notes": "This is Germany's national rule. BfArM's page is written for travellers leaving Germany; for visitors arriving from outside the Schengen Area, the rule above comes from the ordinance itself, which accepts a prescription or a doctor's certificate. A doctor's certificate in English with the active substance and the daily dose avoids problems at the border; neither BfArM nor the ordinance prescribes its form. Substances in Annex I (not prescribable in Germany) aren't covered. Brand names are listed for search only: they map to substances on the UN's international control lists.",
+    "summary": "Allowed without a permit: enough for your trip, for your own use, with a prescription or doctor's certificate. Schengen residents bring the Article 75 certificate.",
+    "legal_source": {
+      "name": "Betäubungsmittel-Außenhandelsverordnung (BtMAHV), § 15(1) No. 2 — simplified cross-border traffic",
+      "url": "https://www.gesetze-im-internet.de/btmahv/__15.html"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Preparations of Annex II and III substances carried by persons in quantities appropriate to the journey, on a medical prescription or certificate, for their own use, are exempt from the import/export authorisation rules (§§ 1–12)",
+        "name": "Betäubungsmittel-Außenhandelsverordnung (BtMAHV), § 15(1) No. 2 — simplified cross-border traffic",
+        "url": "https://www.gesetze-im-internet.de/btmahv/__15.html"
+      },
+      {
+        "claim": "Patients may import or export prescribed controlled drugs in quantities appropriate for the journey; only the person they were prescribed for may carry them; Article 75 certificate for Schengen residents also covers drugs prescribable in their country but not in Germany; only Annex III drugs can be prescribed in Germany",
+        "name": "BfArM (Federal Opium Agency) — Travelling with controlled drugs",
+        "url": "https://www.bfarm.de/EN/Federal-Opium-Agency/Narcotic-drugs/Travelling-with-narcotic-drugs/_node.html"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
       }
     ]
   }
