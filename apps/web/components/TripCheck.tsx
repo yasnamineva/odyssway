@@ -174,6 +174,26 @@ export default function TripCheck({
     return [result, ...more];
   }, [result, engine, extraLegs, destination, nationality, items]);
 
+  // Best-effort, fire-and-forget: count passport × destination pairs we don't
+  // cover yet (two country codes, nothing else; /privacy section 2), once per
+  // pair per page view, so demand decides what gets researched next.
+  const [reportedPairs] = useState(() => new Set<string>());
+  useEffect(() => {
+    if (!nationality) return;
+    for (const leg of legResults) {
+      if (leg.covered || leg.basis !== "not_covered") continue;
+      const pair = `${nationality}-${leg.destination}`;
+      if (reportedPairs.has(pair)) continue;
+      reportedPairs.add(pair);
+      fetch("/api/pair-miss", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ nationality, destination: leg.destination }),
+        keepalive: true,
+      }).catch(() => {});
+    }
+  }, [legResults, nationality, reportedPairs]);
+
   // Best-effort, fire-and-forget: report items nobody's verified yet so real
   // search demand — not guesswork — drives which niche items get researched
   // next. Never blocks or affects the result shown to this user.

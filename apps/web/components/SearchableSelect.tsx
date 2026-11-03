@@ -45,6 +45,8 @@ export default function SearchableSelect({
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [activeIndex, setActiveIndex] = useState(0);
+  // Set once the user moves the highlight (arrows, PageUp/Down, mouse), so Tab picks it even with nothing typed.
+  const [moved, setMoved] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const listboxId = `${id}-listbox`;
 
@@ -65,6 +67,7 @@ export default function SearchableSelect({
     // Opening with no query starts on the current choice; typing starts on the best match.
     const current = hasQuery ? -1 : filteredFlat.findIndex((o) => o.value === value);
     setActiveIndex(current >= 0 ? current : 0);
+    setMoved(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query, open]);
 
@@ -88,13 +91,15 @@ export default function SearchableSelect({
     }
     if (!open) return;
     if (e.key === "Tab") {
-      // Tab picks the highlighted match when something was typed, then lets
-      // focus move on as usual. With nothing typed it keeps the current choice.
+      // Tab picks the highlighted option when something was typed or the
+      // highlight was moved, then lets focus move on as usual. Tabbing straight
+      // through an untouched field keeps the current choice.
       const opt = filteredFlat[activeIndex];
-      if (hasQuery && opt) commit(opt.value);
+      if ((hasQuery || moved) && opt) commit(opt.value);
       else setOpen(false);
       return;
     }
+    if (["ArrowDown", "ArrowUp", "PageDown", "PageUp"].includes(e.key)) setMoved(true);
     if (e.key === "ArrowDown") {
       e.preventDefault();
       setActiveIndex((i) => Math.min(i + 1, filteredFlat.length - 1));
@@ -186,7 +191,10 @@ export default function SearchableSelect({
                       role="option"
                       aria-selected={opt.value === value}
                       onMouseDown={(e) => e.preventDefault()}
-                      onMouseEnter={() => setActiveIndex(flatIndex)}
+                      onMouseEnter={() => {
+                        setActiveIndex(flatIndex);
+                        setMoved(true);
+                      }}
                       onClick={() => commit(opt.value)}
                       className={`cursor-pointer px-3 py-1.5 text-sm ${
                         active ? "bg-blue-50 text-blue-900" : "text-slate-700"

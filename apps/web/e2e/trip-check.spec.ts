@@ -309,6 +309,23 @@ test("country pickers accept abbreviations and pick the top match with Tab", asy
   await expect(to).toHaveValue("United Kingdom");
 });
 
+test("Tab selects a country typed key by key, or highlighted with the arrow keys", async ({ page }) => {
+  await page.goto("/trip-check");
+  const from = page.getByTestId("tc-nationality");
+  await from.click();
+  await from.pressSequentially("germ");
+  await from.press("Tab");
+  await expect(from).toHaveValue("Germany");
+  await expect(page.getByTestId("tc-destination")).toBeFocused();
+  const to = page.getByTestId("tc-destination");
+  await to.press("ArrowDown");
+  await to.press("ArrowDown");
+  const highlighted = await page.locator('[role="option"].bg-blue-50').textContent();
+  await to.press("Tab");
+  await expect(to).toHaveValue(highlighted ?? "");
+  await expect(to).not.toHaveValue("");
+});
+
 test("a stopover shows the verified airside transit rule", async ({ page }) => {
   await page.goto("/trip-check");
   await pickCombobox(page, "tc-nationality", "India", "India");
@@ -318,4 +335,14 @@ test("a stopover shows the verified airside transit rule", async ({ page }) => {
   await page.getByTestId("tc-submit").click();
   await expect(page.getByTestId("tc-airside-verdict")).toContainText("Direct Airside Transit Visa needed");
   await expect(page.getByTestId("tc-transit-entry")).toContainText("Changing planes in United Kingdom");
+});
+
+test("an uncovered passport and destination pair sends only the two country codes", async ({ page }) => {
+  await page.goto("/trip-check");
+  await pickCombobox(page, "tc-nationality", "Israel", "Israel");
+  await pickCombobox(page, "tc-destination", "Cambodia", "Cambodia");
+  const sent = page.waitForRequest((r) => r.url().endsWith("/api/pair-miss") && r.method() === "POST");
+  await page.getByTestId("tc-submit").click();
+  const body = (await sent).postDataJSON() as Record<string, unknown>;
+  expect(body).toEqual({ nationality: "IL", destination: "KH" });
 });

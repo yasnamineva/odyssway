@@ -14,6 +14,7 @@
     "check:quotes": "tsx scripts/check-quotes.ts",
     "sources:registry": "tsx scripts/source-registry.ts",
     "entry:lists": "tsx scripts/entry-lists.ts",
+    "pair:misses": "tsx scripts/pair-misses.ts",
     "coverage": "tsx scripts/coverage-report.ts",
     "indexnow": "tsx scripts/indexnow.ts",
     "gsc:compare": "tsx scripts/gsc-compare.ts",

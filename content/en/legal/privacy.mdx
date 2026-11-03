@@ -46,12 +46,19 @@ browser type. This is needed to deliver the site and keep it secure.
   under its own policy. We don't copy or analyse these logs, and we don't
   build profiles from them.
 
-**2. Item searches with no answer.** If you search Trip Check for an item we
-have no verified rule for, we record the text you typed (up to 100
-characters) and the destination code, and nothing else, so we know what to
-research next. Please don't type personal information into that box.
+**2. Searches with no answer.** We record these so we know what to research
+next:
+- *Items:* if you search Trip Check for an item we have no verified rule for,
+  we record the text you typed (up to 100 characters) and the destination
+  code, and nothing else. Please don't type personal information into that
+  box. These stay in the same short-lived logs as above.
+- *Countries:* if Trip Check has no verified entry rule for your passport and
+  destination, your browser sends us the two country codes (for example
+  "IN" and "KH"), and we add 1 to a counter for that pair and that month.
+  Nothing else is sent or stored: no IP address, no dates, no identifier. We
+  can only see how often a pair was searched, not who searched it. Monthly
+  counts are kept for up to 24 months.
 - *Legal basis:* legitimate interest in improving our coverage (Art. 6(1)(f)).
-- *Retention:* in the same short-lived logs as above.
 
 **3. Anonymous tool counts.** When you use one of our tools (for example,
 you download a calendar file or run a readiness check), your browser sends
