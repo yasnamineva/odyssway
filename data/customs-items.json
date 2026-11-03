@@ -23549,6 +23549,70 @@
     ]
   },
   {
+    "slug": "weapons-no",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "rifles",
+      "shotguns",
+      "ammunition",
+      "hunting rifle"
+    ],
+    "destination": "NO",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "To bring a firearm for hunting, a shooting competition or a collector event, you need either a European Firearms Pass from your country of residence (stays up to three months; use the green channel but show the gun and pass on request), or a temporary import licence from the police. Apply on the police’s official form to the police district where you will stay, no later than two months before arrival."
+    },
+    "notes": "Without a Firearms Pass you must report to customs on arrival and present the firearm and licence. Carry your firearm licence from your country of residence, proof of identity, and proof of why you’re bringing it (such as a competition invitation or access to hunting grounds). The same licence rule applies to firearm parts, ammunition and deactivated firearms.",
+    "summary": "Bring a European Firearms Pass (stays up to 3 months) or a police import licence, applied for at least two months before arrival.",
+    "procedure": {
+      "title": "Without a European Firearms Pass: get a temporary import licence from the police",
+      "authority": "Norwegian Police (district where you will stay)",
+      "applyUrl": "https://www.toll.no/en/goods/weapons/travelling-to-norway-with-a-firearm",
+      "leadTime": "Apply no later than two months before arrival",
+      "leadTimeRule": {
+        "amount": 2,
+        "unit": "months",
+        "before": "arrival"
+      },
+      "documents": [
+        "The police’s official application form",
+        "A valid firearm licence from your country of residence"
+      ],
+      "steps": [
+        "Fill in the official application form from the police’s website.",
+        "Send it to the police district where you will be staying, no later than two months before arrival.",
+        "On arrival, report to customs and present the firearm and the licence."
+      ],
+      "atTheBorder": "Not needed if you hold a European Firearms Pass listing every firearm and stay up to three months.",
+      "optional": false,
+      "sources": [
+        {
+          "name": "Norwegian Customs (Tolletaten) — Travelling to Norway with a firearm (updated 27/11/2025)",
+          "url": "https://www.toll.no/en/goods/weapons/travelling-to-norway-with-a-firearm"
+        }
+      ],
+      "verified_at": "2026-11-03",
+      "verified_by": "agent:claude-opus-5-5"
+    },
+    "legal_source": {
+      "name": "Norwegian Customs (Tolletaten) — Travelling to Norway with a firearm (updated 27/11/2025)",
+      "url": "https://www.toll.no/en/goods/weapons/travelling-to-norway-with-a-firearm"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "European Firearms Pass for stays up to 3 months; police licence otherwise, applied for 2 months before arrival (Firearm Regulations ss. 10-14, 14-1 no. 16); documents to carry",
+        "name": "Norwegian Customs (Tolletaten) — Travelling to Norway with a firearm (updated 27/11/2025)",
+        "url": "https://www.toll.no/en/goods/weapons/travelling-to-norway-with-a-firearm"
+      }
+    ]
+  },
+  {
     "slug": "meat-dairy-ch",
     "names": [
       "meat",
@@ -23698,6 +23762,45 @@
         "claim": "30-day supply of narcotic/psychotropic medicines without permit, own use only; no doping substances for individuals; customs check monthly limit and refer to Swissmedic",
         "name": "Federal Office for Customs and Border Security (FOCBS/BAZG) — Medicines (medicinal products) and doping",
         "url": "https://www.bazg.admin.ch/en/import-of-medicines-and-doping-substances"
+      }
+    ]
+  },
+  {
+    "slug": "weapons-ch",
+    "names": [
+      "weapons",
+      "firearms",
+      "guns",
+      "rifles",
+      "shotguns",
+      "ammunition",
+      "hunting rifle",
+      "knives",
+      "pepper spray",
+      "stun gun",
+      "taser",
+      "airsoft gun"
+    ],
+    "destination": "CH",
+    "category": "weapons",
+    "verdict": "depends",
+    "limits": {
+      "description": "All weapons, weapon parts, ammunition and ammunition parts must be declared to customs when you bring them in, take them out or pass through. Weapons that aren’t prohibited need an import permit. Prohibited: automatic firearms, daggers, throwing, butterfly and switchblade knives (and other knives with automatic or spring-assisted opening), beating and throwing weapons, electric shock devices, weapons disguised as everyday objects, silencers, and laser and night-vision devices."
+    },
+    "notes": "Weapons under the Weapons Act include firearms, air and CO2 guns of at least 7.5 joules or that look like real firearms, realistic imitation, blank and airsoft guns, and self-defence sprays with CA, CS, CN or CR (pepper spray is excluded). Two hunting or target-shooting weapons with their ammunition, brought temporarily with supporting evidence (invitation, hunting permit), are admitted free of tax. Import permits come from fedpol’s Central Office for Weapons in Bern.",
+    "summary": "Declare every weapon and all ammunition. Non-prohibited weapons need a permit; switchblades, butterfly knives, stun guns and silencers are banned.",
+    "legal_source": {
+      "name": "Federal Office for Customs and Border Security (FOCBS/BAZG) — Weapons: obligation to notify at the border",
+      "url": "https://www.bazg.admin.ch/en/weapons-notification-requirement-border"
+    },
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Notification duty; Weapons Act categories; prohibited list; permit requirement; tax relief for two hunting/shooting weapons; fedpol ZSW contact",
+        "name": "Federal Office for Customs and Border Security (FOCBS/BAZG) — Weapons: obligation to notify at the border",
+        "url": "https://www.bazg.admin.ch/en/weapons-notification-requirement-border"
       }
     ]
   }
