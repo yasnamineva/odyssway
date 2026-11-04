@@ -24951,6 +24951,146 @@
     ]
   },
   {
+    "destination": "PL",
+    "category": "medication",
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "Rozporządzenie Ministra Zdrowia z dnia 8 czerwca 2026 r. (Dz.U. 2026 poz. 827), § 6 — documents for importing narcotic and psychotropic medicines for own medical needs",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2026/827/text.pdf"
+    },
+    "slug": "controlled-medication-pl",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "opioid painkiller"
+    ],
+    "verdict": "depends",
+    "limits": {
+      "description": "Medicines containing a narcotic or psychotropic substance can be brought into Poland from outside the EU only with a document from Poland's Chief Pharmaceutical Inspector (GIF). You apply with your prescription or medical records at least 15 days before you cross the Polish border. The document is valid for up to 30 days and is issued separately for each medicine.",
+      "quantity": "up to 30 days, one document per medicine"
+    },
+    "notes": "This is Poland's national rule, from the Ministry of Health regulation of 8 June 2026 and the Chief Pharmaceutical Inspectorate. Polish Customs says the document is needed whether you travel within the Schengen Area or from outside it. If you live in another Schengen country, see the EU entry for the Article 75 certificate from your own country. GIF's page is written mainly for people living in Poland (it mentions Polish e-prescriptions and sends documents by Polish post), so allow time for post to reach you. Brand names are listed for search only: they map to substances on the UN's international control lists.",
+    "summary": "Needs a document from Poland's Chief Pharmaceutical Inspector: apply at least 15 days before you cross the border. Valid up to 30 days.",
+    "procedure": {
+      "title": "Get a document from Poland's Chief Pharmaceutical Inspector (GIF)",
+      "authority": "Chief Pharmaceutical Inspectorate (Główny Inspektorat Farmaceutyczny), Warsaw",
+      "applyUrl": "https://www.gov.pl/web/gif/substancje-kontrolowane-info-pacjenci2",
+      "leadTime": "Apply at least 15 days before you arrive in Poland (the regulation counts from the day you cross the Polish border).",
+      "leadTimeRule": {
+        "amount": 15,
+        "unit": "days",
+        "before": "arrival"
+      },
+      "documents": [
+        "The completed and signed application. GIF's template is on its page; your own version is accepted if it has all the required information.",
+        "Your prescription, or a doctor's certificate giving the doctor's and your details, the names of the medicines with their active substances, and the dosage (for example per day). It should be signed and stamped so its authenticity is clear."
+      ],
+      "steps": [
+        "Fill in GIF's application. One document is issued per medicine.",
+        "Send it with your prescription or doctor's certificate by post or courier to ul. Chmielna 85/87, 00-805 Warszawa, Poland, hand it in at GIF's office, or send it through Poland's e-Delivery service with an electronic signature. Applications sent by email are not considered.",
+        "GIF issues the document on paper only, with its seal and a handwritten signature, and sends it by Polish post to the address in your application. You can ask to collect it in person at GIF in Warsaw instead.",
+        "Travel with the paper document. Only the original allows you to cross the border."
+      ],
+      "atTheBorder": "Show the paper document from GIF. It covers crossing Poland's border only; check the rules of the other countries on your trip.",
+      "sources": [
+        {
+          "name": "Chief Pharmaceutical Inspectorate (GIF) — Przewóz leków kontrolowanych przez granicę (version 20, 2 November 2026)",
+          "url": "https://www.gov.pl/web/gif/substancje-kontrolowane-info-pacjenci2"
+        },
+        {
+          "name": "Rozporządzenie Ministra Zdrowia z dnia 8 czerwca 2026 r. (Dz.U. 2026 poz. 827), § 6 — documents for importing narcotic and psychotropic medicines for own medical needs",
+          "url": "https://api.sejm.gov.pl/eli/acts/DU/2026/827/text.pdf"
+        }
+      ],
+      "verified_at": "2026-11-04",
+      "verified_by": "agent:claude-opus-5-5"
+    },
+    "_sources": [
+      {
+        "claim": "§ 6: the Chief Pharmaceutical Inspector issues the document allowing import or export of narcotic or psychotropic substances for own medical needs, on the application of the person taking the medicine, with a prescription or medical records attached; valid for a fixed period of no more than 30 days; application at least 15 days before crossing the Polish border; pink security paper (Annex 3)",
+        "name": "Rozporządzenie Ministra Zdrowia z dnia 8 czerwca 2026 r. (Dz.U. 2026 poz. 827), § 6 — documents for importing narcotic and psychotropic medicines for own medical needs",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2026/827/text.pdf"
+      },
+      {
+        "claim": "Import ('przywóz') means any introduction into the EU customs territory; import for own medical needs is made on the basis of the documents set by the regulation under Art. 37(12)",
+        "name": "Ustawa o przeciwdziałaniu narkomanii (Dz.U. 2023 poz. 1939), Art. 2 pt 21 and Art. 37(10)",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1939/text.html"
+      },
+      {
+        "claim": "Narcotic and psychotropic medicines: import only with a certificate from the Chief Pharmaceutical Inspector, valid at most 30 days, issued on the basis of a prescription, required separately for each medicine; applies to travel within and from outside Schengen",
+        "name": "Polish Customs (National Revenue Administration) — Produkty lecznicze: informacje o przywozie (published 15 December 2025)",
+        "url": "https://www.podatki.gov.pl/informacje-o-cle/podstawowe-informacje-o-cle/informacje-dla-osob-fizycznych/towary-objete-ograniczeniami-i-zakazami/produkty-lecznicze-informacje-o-przywozie"
+      },
+      {
+        "claim": "Apply at least 15 days before travel; application plus e-prescription or a doctor's certificate (doctor and patient details, product and active substance names, dosage); submit by post/courier to ul. Chmielna 85/87 Warsaw, in person or via e-Delivery (AE:PL-41413-98175-HHEAF-19); email applications not considered; paper document only, sent by Poczta Polska or collected in Warsaw; covers crossing Polish borders only",
+        "name": "Chief Pharmaceutical Inspectorate (GIF) — Przewóz leków kontrolowanych przez granicę (version 20, 2 November 2026)",
+        "url": "https://www.gov.pl/web/gif/substancje-kontrolowane-info-pacjenci2"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
+  },
+  {
+    "destination": "PL",
+    "category": "medication",
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "Prawo farmaceutyczne (consolidated text, Dz.U. 2026 poz. 612), Art. 68(5)–(6)",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2026/612/text.pdf"
+    },
+    "slug": "prescription-medication-pl",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "drugs (prescription)"
+    ],
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "You can bring medicine into Poland for your own treatment without permission from the Office for Registration of Medicinal Products, up to five of the smallest packs. This doesn't cover medicines with narcotic or psychotropic substances, which need a document from the Chief Pharmaceutical Inspector (see the controlled-medication entry). Medicines may not be sent to you by post from abroad.",
+      "quantity": "up to five of the smallest packs"
+    },
+    "notes": "This is Poland's national rule (Pharmaceutical Law, Art. 68(5)), as Polish Customs explains it for people arriving in Poland.",
+    "summary": "Up to five of the smallest packs for your own use, no permit. Narcotic and psychotropic medicines need a separate document.",
+    "_sources": [
+      {
+        "claim": "Art. 68(5): importing a medicinal product from abroad for own medical needs, up to five of the smallest packages, needs no consent of the President of the Office (URPL); (6): not for narcotic and psychotropic substances, whose import is governed by the Act on Counteracting Drug Addiction",
+        "name": "Prawo farmaceutyczne (consolidated text, Dz.U. 2026 poz. 612), Art. 68(5)–(6)",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2026/612/text.pdf"
+      },
+      {
+        "claim": "Up to 5 of the smallest packs of medicine without URPL consent, for people coming to Poland (Pharmaceutical Law); importing medicines by post from abroad is prohibited",
+        "name": "Polish Customs (National Revenue Administration) — Produkty lecznicze: informacje o przywozie (published 15 December 2025)",
+        "url": "https://www.podatki.gov.pl/informacje-o-cle/podstawowe-informacje-o-cle/informacje-dla-osob-fizycznych/towary-objete-ograniczeniami-i-zakazami/produkty-lecznicze-informacje-o-przywozie"
+      }
+    ]
+  },
+  {
     "destination": "NL",
     "category": "medication",
     "verified_at": "2026-11-03",
