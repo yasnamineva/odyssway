@@ -1265,6 +1265,63 @@
     ]
   },
   {
+    "slug": "drones-it",
+    "names": [
+      "dji",
+      "drone",
+      "drones",
+      "fpv drone",
+      "quadcopter"
+    ],
+    "destination": "IT",
+    "category": "drones",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "No dedicated customs rule (the drone counts toward the EU personal-goods allowance: €300 by land, €430 by air or sea). To fly, the EU drone rules apply, and Italy's aviation authority ENAC adds two duties: insure the drone for third-party liability, and if you register in Italy, do it on the d-flight portal and stick the QR code it gives you on every drone you fly."
+    },
+    "notes": "ENAC lists third-party liability insurance as an operator duty under national and EU rules. If Italy is the first EU country you fly in and you live outside the EU, you register with ENAC through d-flight (fees are paid there); registration isn't needed for toys or for drones under 250 g with no camera, microphone or other device that collects personal data. ENAC's FAQ says the QR code holds your EASA operator number and must go on every drone you operate, and that operators registered in another EU state still need ENAC's authorisation when airspace must be reserved. The EU rules also apply (see the EU entry): register once, valid across Europe; complete the EU training, since home-country qualifications aren't recognised; in the 'open' category keep the drone in sight, fly no higher than 120 metres, carry or drop nothing dangerous, and don't fly over people unless the drone has a class label or weighs under 250 g; check geographical zones before each flight.",
+    "summary": "No customs rule. To fly: EU drone rules, plus Italian third-party insurance and, if you register in Italy, d-flight's QR code on each drone.",
+    "legal_source": {
+      "name": "ENAC (Italian Civil Aviation Authority) — Operatori di droni (UAS) (last updated 15 May 2024)",
+      "url": "https://www.enac.gov.it/sicurezza-aerea/droni/operatori-di-droni-uas/"
+    },
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Operator duties under national and EU regulation: train remote pilots; insure drones for third-party civil liability; GDPR; maintenance; all operators register on d-flight and get a European ID code as a QR code to affix to each drone; fees paid on d-flight; exempt: toys (Directive 2009/48/EC) and drones under 250 g with no camera, microphone or other personal-data devices",
+        "name": "ENAC (Italian Civil Aviation Authority) — Operatori di droni (UAS) (last updated 15 May 2024)",
+        "url": "https://www.enac.gov.it/sicurezza-aerea/droni/operatori-di-droni-uas/"
+      },
+      {
+        "claim": "The operator's QR code must be printed and affixed to all UAS it operates (it contains the EASA operator code); operators registered in Italy or another member state need ENAC authorisation where airspace reservation is needed, plus any other required permits",
+        "name": "ENAC — FAQ droni",
+        "url": "https://www.enac.gov.it/sicurezza-aerea/droni/faq-droni/"
+      },
+      {
+        "claim": "Personal-goods value thresholds",
+        "name": "Council Directive 2007/74/EC, Art. 7",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32007L0074"
+      },
+      {
+        "claim": "Non-EU residents must register with the NAA of the first EU country where they intend to operate; registration number on a sticker on all drones and in the remote ID; valid across Europe; specific category needs a declaration or authorisation; home-country training not recognised (Art. 41(1)-(2) Reg. 2019/945 cited by EASA)",
+        "name": "EASA — FAQ: I am a non-EU visitor and I want to fly a drone in Europe",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/i-am-non-eu-visitor-and-i-want-fly-drone-europe"
+      },
+      {
+        "claim": "Open category conditions: VLOS, max 120 m, no dangerous goods or dropping material, not over people unless class-labelled or under 250 g",
+        "name": "EASA — FAQ: 'open' category",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/open-category"
+      },
+      {
+        "claim": "No operator registration needed if the drone weighs less than 250 g and has no camera or other sensor able to detect personal data, or weighs less than 250 g and complies with the Toy Directive 2009/48/EC (EASA cites Art. 21 of Reg. 2019/947); before operating in another state, check whether the area is covered by a geographical zone published by that state",
+        "name": "EASA — Drones (UAS) FAQs: 'Do I need to register my drone?' and 'Conduct an operation in the open category in a state other than the one I am registered'",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/drones-uas"
+      }
+    ]
+  },
+  {
     "slug": "alcohol-jp",
     "names": [
       "alcohol",
