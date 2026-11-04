@@ -23509,16 +23509,16 @@
     "category": "medication",
     "verdict": "allowed_with_limits",
     "limits": {
-      "description": "You can bring medicines for personal use in your luggage, up to 100 days' use, if the amount is clearly justified. Customs may ask for proof, such as a medical certificate, that you need that quantity. Anabolic steroids, peptide hormones and similar substances are limited to 30 days' use.",
+      "description": "You can bring medicines for personal use in your luggage, up to 100 days' use (the Icelandic Medicines Agency allows a year's use when you arrive from within the EEA), if the amount is clearly justified. Customs may ask for proof, such as a medical certificate, that you need that quantity. Anabolic steroids, peptide hormones and similar substances are limited to 30 days' use, and so are medicines with narcotic or addictive substances (see the controlled-medication entry).",
       "quantity": "Up to 100 days' supply (30 days for anabolic steroids and peptide hormones)"
     },
-    "notes": "Medicines for personal use can't be posted or shipped to Iceland from countries outside the EEA. Narcotic and addictive substances can't be imported, including cannabis for medicinal use. The Icelandic Medicines Agency publishes the detailed rules.",
+    "notes": "Medicines for personal use can't be posted or shipped to Iceland from countries outside the EEA. Iceland's customs page says narcotic and addictive substances can't be imported, including cannabis for medicinal use; prescribed medicines with narcotic or addictive substances follow the Medicines Agency's 30-day rule (see the controlled-medication entry). The Icelandic Medicines Agency publishes the detailed rules.",
     "summary": "Allowed for personal use: up to 100 days' supply (30 days for anabolic steroids and peptide hormones); customs may ask for a medical certificate.",
     "legal_source": {
       "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
       "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
     },
-    "verified_at": "2026-11-02",
+    "verified_at": "2026-11-04",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -23526,6 +23526,76 @@
         "claim": "Medicines in luggage: 100 days, 30 days for anabolic steroids and peptide hormones, proof may be required; no postal import from outside the EEA",
         "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
         "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+      },
+      {
+        "claim": "Ordinary medicines in luggage: a year's use from within the EEA, 100 days' use from outside it; medicines with narcotic or addictive substances: 30 days' supply in luggage for people not domiciled in Iceland",
+        "name": "Icelandic Medicines Agency (Lyfjastofnun) — Lyf í farangri eða pósti (medicines in luggage or post; Regulations No. 1277/2022 and 233/2001)",
+        "url": "https://www.lyfjastofnun.is/lyf/lyf-i-farangri-eda-post-og-vorusendingum/"
+      }
+    ]
+  },
+  {
+    "destination": "IS",
+    "category": "medication",
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "Icelandic Medicines Agency (Lyfjastofnun) — Lyf í farangri eða pósti (medicines in luggage or post; Regulations No. 1277/2022 and 233/2001)",
+      "url": "https://www.lyfjastofnun.is/lyf/lyf-i-farangri-eda-post-og-vorusendingum/"
+    },
+    "slug": "controlled-medication-is",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "addictive medication",
+      "adderall",
+      "amphetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "opioid painkiller"
+    ],
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "If you don't live in Iceland, you may bring medicine containing narcotic or addictive substances in your luggage, up to 30 days' supply based on the defined daily dose, whether you arrive from inside or outside the EEA. Carry a doctor's certificate (for example a doctor's letter with your full name, the medicine's name and how to take it), the original prescription, or the pharmacy label on the pack, and show it to customs if asked. These medicines can't be sent to Iceland by post. To bring more, the Icelandic Medicines Agency must approve an exemption before you arrive.",
+      "quantity": "up to 30 days' supply (defined daily dose)"
+    },
+    "notes": "From the Icelandic Medicines Agency, which applies Regulation No. 1277/2022 on importation of medicines by individuals and Regulation No. 233/2001 (its Appendix 1 lists the controlled substances); its information for the International Narcotics Control Board gives the same 30 days. Iceland's customs page on island.is says narcotic and addictive substances may not be imported, including cannabis for medicinal use: for prescribed medicines the agency's rule is the specific one, but don't bring medicinal cannabis. Brand names are listed for search only: they map to substances on the UN's international control lists.",
+    "summary": "Visitors: up to 30 days' supply in luggage, with a prescription, doctor's letter or pharmacy label. Not by post. Medicinal cannabis is banned.",
+    "_sources": [
+      {
+        "claim": "Narcotic/addictive medicines (Appendix 1 of Reg. 233/2001) in luggage: persons without registered domicile in Iceland may bring 30 days' supply by defined daily dose, from inside or outside the EEA; documents to show customs if requested: doctor's certificate (full name, medicine name, instructions), original prescription, or pharmacy label; import by post or shipment prohibited; exemptions for narcotic medicines must be approved by the agency before arrival (Regs. 1277/2022 and 233/2001)",
+        "name": "Icelandic Medicines Agency (Lyfjastofnun) — Lyf í farangri eða pósti (medicines in luggage or post; Regulations No. 1277/2022 and 233/2001)",
+        "url": "https://www.lyfjastofnun.is/lyf/lyf-i-farangri-eda-post-og-vorusendingum/"
+      },
+      {
+        "claim": "Narcotic and psychotropic: 30 days based on defined daily dose, for individuals not domiciled in Iceland; on arrival present a medical certificate or prescription with instructions, or a label proving lawful acquisition and need; prohibited list: Appendix 1 to Regulation No. 233/2001",
+        "name": "Icelandic Medicines Agency — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (16 January 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Travellers/files/ICE_2025_ENG.pdf"
+      },
+      {
+        "claim": "Conflict recorded: 'It is not permitted to import narcotic or addictive substances to Iceland. That including cannabis for medicinal use.' (customs page, no medicine exception stated)",
+        "name": "Ísland.is (service provider: Skatturinn, Iceland Revenue and Customs) — What you can bring or order to Iceland: Common goods",
+        "url": "https://island.is/en/what-you-can-bring-or-order-to-iceland"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
       }
     ]
   },
