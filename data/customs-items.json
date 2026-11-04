@@ -24863,6 +24863,89 @@
     ]
   },
   {
+    "destination": "IT",
+    "category": "medication",
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "Decreto del Ministero della Salute 16 novembre 2007 (G.U. Serie Generale n. 278, 29 November 2007), Articles 3–4 and Annex 2",
+      "url": "http://www.trovanorme.salute.gov.it/dettaglioAtto?id=23922&completo=true"
+    },
+    "slug": "controlled-medication-it",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "lorazepam",
+      "codeine",
+      "oxycodone",
+      "morphine",
+      "fentanyl",
+      "methadone",
+      "buprenorphine",
+      "opioid painkiller"
+    ],
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "If you live outside Italy and take medicine containing a narcotic or psychotropic substance under the UN conventions (for example opioids such as morphine, fentanyl, codeine, oxycodone or methadone, and benzodiazepines such as diazepam or lorazepam), carry a certificate or prescription from the health authority of the country you travel from. It must give your personal details, the medicine's trade name, the name and total quantity of the active substance, and the number of units. Customs lets the medicine in after checking it. You need only a valid prescription if you carry a single pack of each medicine, or a low-strength preparation listed in Annex 2 of the decree (for example codeine combined with other ingredients, at no more than 100 mg per dose unit and 2.5% per pack).",
+      "quantity": "a single pack of each medicine needs only a prescription"
+    },
+    "notes": "This is Italy's national rule (Ministry of Health decree of 16 November 2007). The ministry's English page lists more fields for the certificate (date and place of issue with a validity of at most 30 days, the doctor's name, address and licence number, your passport or ID number and destination, the dosage form, concentration, length of treatment in days, and the issuing authority's name, address and seal); the decree itself requires the items in the checklist. Keep the document with you during your stay and show it to customs or police if asked. If you live in another Schengen country, the certificate can be the Article 75 certificate from your own country (see the EU entry). Brand names are listed for search only: they map to substances on the UN's international control lists.",
+    "summary": "Bring a certificate or prescription from your home country's health authority. One pack of each medicine needs only a valid prescription.",
+    "letter": {
+      "items": [
+        "Your personal details",
+        "The trade name of the medicine",
+        "The name and total quantity of the active substance",
+        "The number of dose units (tablets, ampoules and so on)",
+        "Issued by the competent health authority of the country you travel from"
+      ],
+      "source": {
+        "name": "Decreto del Ministero della Salute 16 novembre 2007 (G.U. Serie Generale n. 278, 29 November 2007), Articles 3–4 and Annex 2",
+        "url": "http://www.trovanorme.salute.gov.it/dettaglioAtto?id=23922&completo=true"
+      },
+      "verified_at": "2026-11-04"
+    },
+    "_sources": [
+      {
+        "claim": "Art. 3: residents abroad treated with 1961 Convention narcotic or 1971 Convention psychotropic medicines entering Italy must carry a certificate or medical prescription giving the patient's details, the trade name, the name and total quantity of the active substance and the number of dosage units, prepared by the competent health authority of the country of origin; customs admits the medicines after checking the documents. Art. 4: the decree does not apply to a single pack of each preparation or to the Annex 2 preparations (e.g. codeine, dihydrocodeine, ethylmorphine, pholcodine in combination, max 100 mg per dosage unit and 2.5% per pack)",
+        "name": "Decreto del Ministero della Salute 16 novembre 2007 (G.U. Serie Generale n. 278, 29 November 2007), Articles 3–4 and Annex 2",
+        "url": "http://www.trovanorme.salute.gov.it/dettaglioAtto?id=23922&completo=true"
+      },
+      {
+        "claim": "Residents abroad coming to Italy need a certificate or prescription with the information required by the decree; covered medicines include opioids (morphine, fentanyl, codeine, buprenorphine, oxycodone, methadone) and benzodiazepines (flunitrazepam, diazepam, oxazepam, lorazepam, bromazepam) and barbiturates; a single pack or Annex 2 preparations need only the prescription required in Italy",
+        "name": "Italian Ministry of Health — Medicinali stupefacenti al seguito dei viaggiatori (updated 10 January 2025)",
+        "url": "https://www.salute.gov.it/new/it/tema/medicinali-stupefacenti-e-precursori-di-droghe/medicinali-stupefacenti-al-seguito-dei/"
+      },
+      {
+        "claim": "Travellers entering Italy hold a certificate from the health authorities of the country of residence or the Annex 1 certificate, with fields A–E (validity max 30 days; physician; patient incl. passport/ID number; preparation incl. dosage form, concentration, duration in days; issuing authority seal); keep it during the stay and show it on request; a single pack or Annex 2 preparations need only a valid prescription",
+        "name": "Italian Ministry of Health — Travelling internationally with medicines containing controlled substances (updated 13 May 2024)",
+        "url": "https://www.salute.gov.it/new/en/tema/medicinali-stupefacenti-e-precursori-di-droghe/travelling-internationally-medicines-containing/"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
+  },
+  {
     "destination": "NL",
     "category": "medication",
     "verified_at": "2026-11-03",
