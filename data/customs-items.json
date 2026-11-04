@@ -6104,17 +6104,30 @@
     "category": "medication",
     "verdict": "depends",
     "limits": {
-      "description": "SARS's traveller guide lists 'Narcotics and habit-forming drugs' among prohibited goods that 'may not be imported' at all, while separately stating that 'Travellers may import their personal medicines provided it is for not more than three (3) months' use,' accompanied by a doctor's prescription, under its restricted-goods rule for 'Medicine.' The guide does not specify which rule governs a specific controlled prescription medicine — e.g. an ADHD stimulant, a benzodiazepine, or an opioid painkiller — so it cannot be confirmed from this source alone whether such medication is treated as an allowed personal medicine or a prohibited habit-forming drug."
+      "description": "SAHPRA, South Africa's medicines regulator, sets up to 30 days' supply for medicine containing a narcotic or psychotropic substance. It lists these documents: a valid prescription, a doctor's certificate endorsed by the health authorities of your country of residence, a certificate issued by South Africa's health authorities, a copy of your passport and your itinerary; show the original prescription to customs. Contact SAHPRA before you travel to get the South African certificate.",
+      "quantity": "up to 30 days' supply"
     },
-    "notes": "South Africa separately schedules narcotics/psychotropics under the Medicines and Related Substances Act (Schedules 5 and 6) and the Drugs and Drug Trafficking Act, administered by SAHPRA and SAPS respectively, but no SAHPRA or SAPS page addressing a traveler's personal-use import of scheduled substances could be reached — SAHPRA's public import-permit pages (importation-of-medical-products-border-control) describe commercial/institutional importation processes, not personal baggage. Given SARS's own guide leaves the 'habit-forming drug' vs 'personal medicine' classification unresolved for controlled prescription drugs, travelers carrying stimulants, benzodiazepines, or opioid painkillers should carry the original prescription plus a doctor's letter and confirm status with SAHPRA or a South African diplomatic mission before travel.",
-    "summary": "Personal medicine for up to 3 months is allowed with a prescription, but habit-forming drugs are prohibited; the guide doesn't say which applies.",
+    "notes": "From SAHPRA's information for the International Narcotics Control Board (January 2025). SARS's traveller guide lists 'narcotics and habit-forming drugs' among goods that may not be imported, and separately allows personal medicines for up to three months' use with a prescription (see the general medication entry); SAHPRA's 30-day rule and certificate are what apply to controlled medicines. SAHPRA's own website describes only commercial import permits, so the contact is the one on its INCB sheet: Mokgadi.fafudi@sahpra.org.za, +27 12 501 0300.",
+    "summary": "Up to 30 days' supply, with a prescription, an endorsed doctor's certificate and a certificate from South Africa's health authorities (SAHPRA).",
     "legal_source": {
-      "name": "SARS — SC-PA-01-03 Duty Free Allowances for Travellers (External Guide, Rev. 8, eff. 1 July 2026)",
-      "url": "https://www.sars.gov.za/wp-content/uploads/Docs/Customs/SC-PA-01-03-Duty-Free-Allowances-for-Travellers-External-Guide.pdf"
+      "name": "South African Health Products Regulatory Authority (SAHPRA) — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (13 January 2025)",
+      "url": "https://www.incb.org/incb/uploads/documents/Travellers/files/SAF-2025-ENG.pdf"
     },
-    "verified_at": "2026-10-18",
+    "verified_at": "2026-11-04",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Narcotic drugs and psychotropic substances: 30 days; documents a) valid prescription, b) doctor's certificate endorsed by the health authorities of the country of residence, c) certificate issued by the health authorities of the country of destination, d) presentation of the original prescription at customs: all 'Yes'; e) copy of passport and itinerary; contact Ms Mokgadi Fafudi (SAHPRA)",
+        "name": "South African Health Products Regulatory Authority (SAHPRA) — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (13 January 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Travellers/files/SAF-2025-ENG.pdf"
+      },
+      {
+        "claim": "'Narcotics and habit-forming drugs' listed among prohibited goods; travellers may import personal medicines for not more than three (3) months' use with a doctor's prescription",
+        "name": "SARS — SC-PA-01-03 Duty Free Allowances for Travellers (External Guide, Rev. 8, eff. 1 July 2026)",
+        "url": "https://www.sars.gov.za/wp-content/uploads/Docs/Customs/SC-PA-01-03-Duty-Free-Allowances-for-Travellers-External-Guide.pdf"
+      }
+    ]
   },
   {
     "slug": "drones-za",
