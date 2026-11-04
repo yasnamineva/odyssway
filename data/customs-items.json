@@ -8687,17 +8687,29 @@
     "category": "drones",
     "verdict": "depends",
     "limits": {
-      "description": "Drones are registered through the Drone One-Stop portal, a Ministry of Land, Infrastructure and Transport system that lists about 7 business days for aircraft registration. Registration requires Korean-resident identity verification, with no stated exemption for visitors."
+      "description": "Korea's drone portal doesn't set an import rule for travellers; it sets flying rules. You need flight approval to fly above 150 m, or anywhere with a drone over 25 kg maximum take-off weight, and inside no-fly zones, restricted areas or the 9.3 km control zones around airports. Much of central and southern Seoul is a no-fly zone (P-73, P-75). Taking photos or video from a drone needs an aerial-photography application at least 4 working days before, except in open areas clearly without restricted facilities."
     },
-    "notes": "The portal was reachable for this site, but its text read here doesn't state which drones (by weight or use) must be registered, so no weight limit is given.",
-    "summary": "Drone registration goes through the Drone One-Stop portal and needs Korean identity verification; which drones must register isn't confirmed here.",
+    "notes": "Other rules on the portal: fly within sight, not at night (sunset to sunrise), not over crowds and not after drinking; label the drone with the owner's name and contact; use a radio-certified product. Within 3 km of an airfield or landing site, consult its operator first. Registering a drone (비행장치 신고) takes about 7 working days through the portal; the pages read here don't say which drones must be registered or whether visitors can register.",
+    "summary": "Flying needs approval above 150 m, over 25 kg or in no-fly zones (much of Seoul); drone photos need an application 4 working days ahead.",
     "legal_source": {
-      "name": "Drone One-Stop (드론원스톱 민원서비스) — Ministry of Land, Infrastructure and Transport drone administrative portal",
-      "url": "https://drone.onestop.go.kr"
+      "name": "Drone One-Stop (Ministry of Land, Infrastructure and Transport) — 민원 유형별 처리 안내 (guide by application type)",
+      "url": "https://drone.onestop.go.kr/introduce/systemintro2"
     },
-    "verified_at": "2026-09-16",
+    "verified_at": "2026-11-04",
     "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Flight approval needed: altitude 150 m or above; unmanned powered aircraft over 25 kg MTOW (regardless of altitude); prohibited areas (P73, P65 etc.), restricted area (R-75), civil and military control zones (radius 9.3 km); P-73 and P-75 cover listed Seoul districts; aerial photography application at least 4 working days before, except open areas clearly without prohibited facilities (validity 1 year); consultation within 3 km of an airfield or landing site; operator rules: owner name and contact on the device, visual line of sight, no night flying, no flying over crowds, no flying while drunk, no dropping objects, radio-certified product",
+        "name": "Drone One-Stop (Ministry of Land, Infrastructure and Transport) — 민원 유형별 처리 안내 (guide by application type)",
+        "url": "https://drone.onestop.go.kr/introduce/systemintro2"
+      },
+      {
+        "claim": "Aircraft registration (비행장치 신고서 등록) takes about 7 working days (checked 2026-11-04)",
+        "name": "Drone One-Stop (드론원스톱 민원서비스) — Ministry of Land, Infrastructure and Transport drone administrative portal",
+        "url": "https://drone.onestop.go.kr"
+      }
+    ]
   },
   {
     "slug": "meat-dairy-sg",
