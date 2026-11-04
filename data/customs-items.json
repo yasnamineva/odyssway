@@ -2608,8 +2608,6 @@
       "narcotics",
       "psychotropic medication",
       "controlled substance",
-      "adderall",
-      "amphetamine",
       "opioid painkiller",
       "codeine",
       "xanax",
@@ -2621,7 +2619,7 @@
     "limits": {
       "description": "Psychotropic medicines (Thai Schedules II, III and IV): you can carry up to a 30-day supply with a certificate or prescription from your doctor, without a permit. For a 31–90 day supply you need a Thai FDA permit, obtained at least 15 days before you travel. Narcotic medicines (Schedules II and III): up to a 90-day supply, and only with a Thai FDA permit obtained at least 15 days before you travel."
     },
-    "notes": "The FDA's guidance doesn't name individual drugs, so it doesn't say whether a given medicine (for example Adderall) is a narcotic, a psychotropic, or something that can't be brought in at all. If you have a stimulant or opioid prescription, confirm its schedule with the Thai FDA before you travel. The rules come from Ministerial Regulation B.E. 2567 (2024), in force since 21 September 2024.",
+    "notes": "The FDA's guidance doesn't name individual drugs. In its information for the International Narcotics Control Board the FDA lists Category 1 narcotics, such as amphetamine, dexamphetamine and methamphetamine, as prohibited: see the amphetamine entry. If you have a stimulant or opioid prescription, confirm its schedule with the Thai FDA before you travel. The rules come from Ministerial Regulation B.E. 2567 (2024), in force since 21 September 2024.",
     "summary": "Psychotropics: up to 30 days with a doctor's prescription. More, or any narcotic, needs a Thai FDA permit 15 days ahead.",
     "legal_source": {
       "name": "Thai FDA — Guidance for Travelers under Treatment Carrying Personal Medications Containing Narcotic Drugs/Psychotropic Substances into Thailand",
@@ -2654,7 +2652,46 @@
       ],
       "verified_at": "2026-10-14",
       "verified_by": "agent:claude-opus-5-5"
-    }
+    },
+    "_sources": [
+      {
+        "claim": "Prohibited: Category 1 narcotics (e.g. amphetamine, dexamphetamine, methamphetamine), Category 4 and 5 narcotics, Category 1 psychotropics (e.g. GHB, cathinone, THC); narcotic medicines need a permit applied for online at least 15 days before arrival; psychotropics for stays under 30 days need no permit, only a prescription and presentation at customs",
+        "name": "Thai Food and Drug Administration, Narcotics Control Division — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (September 2024)",
+        "url": "https://www.incb.org/incb/uploads/documents/Travellers/files/THA_ENG_2024.pdf"
+      }
+    ]
+  },
+  {
+    "destination": "TH",
+    "category": "medication",
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "Thai Food and Drug Administration, Narcotics Control Division — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (September 2024)",
+      "url": "https://www.incb.org/incb/uploads/documents/Travellers/files/THA_ENG_2024.pdf"
+    },
+    "slug": "amphetamine-th",
+    "names": [
+      "amphetamine",
+      "adderall",
+      "dexamphetamine",
+      "dextroamphetamine",
+      "methamphetamine"
+    ],
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Amphetamine, dexamphetamine and methamphetamine are Category 1 narcotics in Thailand, which the Thai FDA lists as prohibited for travellers: you can't bring them in, even with a prescription. That includes ADHD medicines such as Adderall (mixed amphetamine salts)."
+    },
+    "notes": "From the Thai FDA's Narcotics Control Division, in the information it gave the International Narcotics Control Board (September 2024). The FDA's traveller guidance (see the controlled-medication entry) doesn't name individual drugs. Ask your doctor about an alternative for your trip, and confirm with the Thai FDA (tnarcotics@fda.moph.go.th) before you travel. Brand names are listed for search only: Adderall contains amphetamine.",
+    "summary": "Prohibited, even with a prescription: amphetamine (including Adderall), dexamphetamine and methamphetamine are Category 1 narcotics.",
+    "_sources": [
+      {
+        "claim": "List of prohibited substances: Narcotic drugs in Category 1, e.g. amphetamine, dexamphetamine, methamphetamine",
+        "name": "Thai Food and Drug Administration, Narcotics Control Division — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (September 2024)",
+        "url": "https://www.incb.org/incb/uploads/documents/Travellers/files/THA_ENG_2024.pdf"
+      }
+    ]
   },
   {
     "slug": "cannabis-th",
@@ -8990,6 +9027,60 @@
     "verified_at": "2026-10-15",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "destination": "SE",
+    "category": "medication",
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "Swedish Medical Products Agency (Läkemedelsverket) — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (6 December 2024)",
+      "url": "https://www.incb.org/incb/uploads/documents/Travellers/files/SWE_ENG_2024.pdf"
+    },
+    "slug": "controlled-medication-se",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "opioid painkiller"
+    ],
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Arriving from outside the Schengen Area, you may bring no more than 5 days' supply of medicine containing a narcotic drug. For psychotropic medicines the limit is 5, 21 or 90 days' supply, depending on the substance's Swedish schedule. Carry a valid prescription or other proof that the medicine is for medical use and for you, such as a doctor's certificate or a pharmacy label with your and your doctor's names. Narcotics in Sweden's schedule I (for example cannabis plant material) need a special permit from the Swedish Medical Products Agency.",
+      "quantity": "narcotics up to 5 days' supply from outside Schengen"
+    },
+    "notes": "From the Swedish Medical Products Agency, in the information it gave the International Narcotics Control Board; the agency's own traveller page loads only in a browser and couldn't be read from here. People living in another Schengen country may bring up to 30 days' supply (Article 5a of Ordinance 1992:1554); a Schengen certificate is needed for substances in appendix 2 of the Ordinance (see the EU entry). If you need more than 5 days' supply, ask the agency (registrator@lakemedelsverket.se) before you travel. Brand names are listed for search only: they map to substances on the UN's international control lists.",
+    "summary": "From outside Schengen: narcotic medicines up to 5 days' supply; psychotropics 5, 21 or 90 days by schedule. Carry your prescription.",
+    "_sources": [
+      {
+        "claim": "Valid medical prescription or other proof of medicinal purpose and personal use (doctor's certificate, pharmaceutical label with patient's and doctor's names); narcotic drugs: maximum 5 days' supply; schedule I narcotics (e.g. cannabis plant material, heroin) need a special permit from the Medical Products Agency; psychotropic substances: maximum 5, 21 or 90 days' supply depending on national schedule; Art. 5a Ordinance (1992:1554): residents of other Schengen countries up to 30 days' supply, Schengen certification needed for substances in appendix 2",
+        "name": "Swedish Medical Products Agency (Läkemedelsverket) — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (6 December 2024)",
+        "url": "https://www.incb.org/incb/uploads/documents/Travellers/files/SWE_ENG_2024.pdf"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
   },
   {
     "slug": "meat-dairy-ke",
@@ -24412,7 +24503,7 @@
       "description": "You may bring narcotic or psychotropic medicine into France only if you carry it yourself, in a quantity compatible with your personal treatment for the length set by the prescription, or one month of treatment if the prescription gives no length. Arriving from outside the Schengen Area, you must show customs the doctor's prescription. Arriving from another Schengen country, you must show the certificate issued by that country's authorities (the Article 75 certificate, see the EU entry).",
       "quantity": "the treatment length on the prescription, or one month"
     },
-    "notes": "This is France's national rule, from French Customs. Above the personal-use quantity, import is prohibited outright. French Customs' own page is in French; the English version is a machine translation and says the original valid prescription is mandatory. Brand names are listed for search only: they map to substances on the UN's international control lists.",
+    "notes": "This is France's national rule, from French Customs. Above the personal-use quantity, import is prohibited outright. French Customs' own page is in French; the English version is a machine translation and says the original valid prescription is mandatory. Brand names are listed for search only: they map to substances on the UN's international control lists. France's medicines agency (ANSM) also told the International Narcotics Control Board the maximum supplies it applies: narcotic medicines 28 days (injectable morphine 7 days, oral methadone syrup 14 days), psychotropic medicines 3 months, but 28 days for high-dose buprenorphine, clorazepate dipotassium 20 mg, tianeptine and zolpidem.",
     "summary": "Allowed if you carry it yourself: the treatment length on your prescription, or one month. Show the prescription (Schengen residents: the Article 75 certificate).",
     "_sources": [
       {
@@ -24434,6 +24525,11 @@
         "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
         "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
         "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      },
+      {
+        "claim": "Valid medical prescription; narcotic drugs 28 days (injectable morphine 7 days, methadone syrup 14 days); psychotropic substances 3 months, exceptions limited to 28 days: high-dose buprenorphine, clorazepate dipotassium 20 mg/unit, tianeptine, zolpidem",
+        "name": "French National Agency for the Safety of Medicines and Health Products (ANSM) — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (May 2024)",
+        "url": "https://www.incb.org/incb/uploads/documents/Travellers/files/FRA_ENG_2024.pdf"
       }
     ]
   },
