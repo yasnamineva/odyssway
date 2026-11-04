@@ -25559,6 +25559,107 @@
     ]
   },
   {
+    "destination": "HR",
+    "category": "medication",
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "Croatian Customs Administration — Bringing in medicine and narcotics (information for passengers)",
+      "url": "https://carina.gov.hr/featured/information-for-passengers-natural-persons/bringing-in-medicine-and-narcotics/6745"
+    },
+    "slug": "controlled-medication-hr",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "opioid painkiller"
+    ],
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "You may bring medicine containing a narcotic drug for your own use only in the amount you need for up to 5 days of treatment, with medical documentation showing you need it (copies of the prescriptions, a transcript of your medical history or a certified doctor's certificate). If you are in substitution treatment for addiction or in treatment for a malignant disease, the limit is 15 days.",
+      "quantity": "up to 5 days' supply (15 days for substitution or cancer treatment)"
+    },
+    "notes": "This is Croatia's national rule, as Croatian Customs and the government portal gov.hr both state it for passengers. The 30-day limit on the same pages is only for people who live in Croatia and travel to other Schengen countries, with a certificate on the prescribed form. Croatia's Ministry of Health lists the same 5, 15 and 30 days for narcotic drugs and psychotropic substances in the information it gave the International Narcotics Control Board. Brand names are listed for search only: they map to substances on the UN's international control lists.",
+    "summary": "Narcotic or psychotropic medicines: up to 5 days' supply, with your prescription or medical records. 15 days if you're in substitution or cancer treatment.",
+    "_sources": [
+      {
+        "claim": "Medicine containing narcotics, also for passengers' personal needs: quantities for treatment of max 5 days, with medical documentation (copies of prescriptions, transcripts of history of illness or certified physician's certificate); addiction substitution therapy or treatment of malignant diseases: 15 days; exception for persons domiciled or resident in Croatia travelling to Schengen countries: 30 days with a certificate on a prescribed form",
+        "name": "Croatian Customs Administration — Bringing in medicine and narcotics (information for passengers)",
+        "url": "https://carina.gov.hr/featured/information-for-passengers-natural-persons/bringing-in-medicine-and-narcotics/6745"
+      },
+      {
+        "claim": "Same rule: 5 days with medical documentation; 15 days for substitution treatment, addiction treatment or symptomatic treatment of terminal malignant disease; 30 days only for Croatian permanent or temporary residents travelling to Schengen States",
+        "name": "gov.hr (Government of the Republic of Croatia) — Bringing in medicine",
+        "url": "https://gov.hr/en/bringing-in-medicine/1530"
+      },
+      {
+        "claim": "Narcotic drugs and psychotropic substances: 5/15/30 days; documents: valid medical prescription, doctor's certificate, certificate of destination health authority, presentation of original prescription at customs; prohibited list: Official Gazette No. 19/23",
+        "name": "Croatian Ministry of Health — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (8 March 2024)",
+        "url": "https://www.incb.org/incb/uploads/documents/Travellers/files/CRO_ENG_2024.pdf"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
+  },
+  {
+    "destination": "HR",
+    "category": "medication",
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "Croatian Customs Administration — Bringing in medicine and narcotics (information for passengers)",
+      "url": "https://carina.gov.hr/featured/information-for-passengers-natural-persons/bringing-in-medicine-and-narcotics/6745"
+    },
+    "slug": "prescription-medication-hr",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "drugs (prescription)"
+    ],
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "You may bring finished medicines for your own use in the amount you need for up to one month of treatment, if the medicine is approved by the authorities of the country where it was made, with medical documentation (a transcript of your medical history or a doctor's certificate). Medicines containing a narcotic drug have a lower limit (see the controlled-medication entry).",
+      "quantity": "up to one month of treatment"
+    },
+    "notes": "This is Croatia's national rule, as Croatian Customs and the government portal gov.hr both state it for passengers.",
+    "summary": "Up to one month's supply for your own use, with your medical records or a doctor's certificate.",
+    "_sources": [
+      {
+        "claim": "Prepared medicine for passengers' personal needs: quantities for treatment of max one month, approved by the competent bodies of the manufacturer's country, with medical documentation (history of illness, physician's certificate)",
+        "name": "Croatian Customs Administration — Bringing in medicine and narcotics (information for passengers)",
+        "url": "https://carina.gov.hr/featured/information-for-passengers-natural-persons/bringing-in-medicine-and-narcotics/6745"
+      },
+      {
+        "claim": "Finished medicine for personal use: max one month of treatment, approved by the competent authorities of the country of manufacture, with medical documentation",
+        "name": "gov.hr (Government of the Republic of Croatia) — Bringing in medicine",
+        "url": "https://gov.hr/en/bringing-in-medicine/1530"
+      }
+    ]
+  },
+  {
     "destination": "HU",
     "category": "medication",
     "verified_at": "2026-11-04",
