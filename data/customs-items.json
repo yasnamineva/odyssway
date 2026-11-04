@@ -1265,6 +1265,63 @@
     ]
   },
   {
+    "slug": "drones-de",
+    "names": [
+      "dji",
+      "drone",
+      "drones",
+      "fpv drone",
+      "quadcopter"
+    ],
+    "destination": "DE",
+    "category": "drones",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "No dedicated customs rule (the drone counts toward the EU personal-goods allowance: €300 by land, €430 by air or sea). To fly, the EU drone rules apply. If you live outside the EU and Germany is the first EU country you fly in, you register with the Federal Aviation Office (LBA): it costs €20 for an individual and asks for an ID scan and your insurer's name and policy number, so arrange drone liability insurance first."
+    },
+    "notes": "Registration is needed for drones of 250 g or more, and for lighter drones with a camera or other sensor that can capture personal data; the registration number goes on every drone. For flights in the 'specific' category, operators from outside the EU apply to the LBA for an operational authorisation, and operators from other EU countries apply for a cross-border confirmation (from €100 for up to 5 locations); the LBA says processing currently takes well over six months. The EU rules also apply (see the EU entry): EU training (home-country qualifications aren't recognised), keep the drone in sight, no higher than 120 metres, nothing dangerous carried or dropped, not over people unless class-labelled or under 250 g, and check geographical zones before each flight.",
+    "summary": "No customs rule. To fly: EU drone rules; non-EU visitors who start in Germany register with the LBA (€20, insurance details needed).",
+    "legal_source": {
+      "name": "Luftfahrt-Bundesamt (German Federal Aviation Office) — UAS-Betreiberregistrierung",
+      "url": "https://www.lba.de/DE/Drohnen/UAS_Betreiberregistrierung/UAS_Betreiberregistrierung_node.html"
+    },
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Registration required from 31.12.2020 for UAS of 250 g or more, and under 250 g with a sensor able to capture personal data (e.g. camera); registration number affixed to each UAS; natural persons provide full name, date of birth, scan of ID or passport, address, email, phone, insurer name and policy number; fee EUR 20 (natural person), EUR 50 (legal person)",
+        "name": "Luftfahrt-Bundesamt (German Federal Aviation Office) — UAS-Betreiberregistrierung",
+        "url": "https://www.lba.de/DE/Drohnen/UAS_Betreiberregistrierung/UAS_Betreiberregistrierung_node.html"
+      },
+      {
+        "claim": "Foreign operators (non-EU) register in Germany and apply for an operating licence under Article 12 of IR 2019/947; EU operators' Article 13 cross-border confirmation in the specific category: EUR 100 up to 5 locations, EUR 20 per additional location, EUR 500 over 25; estimated processing time significantly more than six months",
+        "name": "Luftfahrt-Bundesamt — Cross-Border Operations (English)",
+        "url": "https://www.lba.de/EN/Drones/Cross_Border_Operations/Cross_Border_Operations_hilfs_node.html"
+      },
+      {
+        "claim": "Personal-goods value thresholds",
+        "name": "Council Directive 2007/74/EC, Art. 7",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32007L0074"
+      },
+      {
+        "claim": "Non-EU residents must register with the NAA of the first EU country where they intend to operate; registration number on a sticker on all drones and in the remote ID; valid across Europe; specific category needs a declaration or authorisation; home-country training not recognised (Art. 41(1)-(2) Reg. 2019/945 cited by EASA)",
+        "name": "EASA — FAQ: I am a non-EU visitor and I want to fly a drone in Europe",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/i-am-non-eu-visitor-and-i-want-fly-drone-europe"
+      },
+      {
+        "claim": "Open category conditions: VLOS, max 120 m, no dangerous goods or dropping material, not over people unless class-labelled or under 250 g",
+        "name": "EASA — FAQ: 'open' category",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/open-category"
+      },
+      {
+        "claim": "No operator registration needed if the drone weighs less than 250 g and has no camera or other sensor able to detect personal data, or weighs less than 250 g and complies with the Toy Directive 2009/48/EC (EASA cites Art. 21 of Reg. 2019/947); before operating in another state, check whether the area is covered by a geographical zone published by that state",
+        "name": "EASA — Drones (UAS) FAQs: 'Do I need to register my drone?' and 'Conduct an operation in the open category in a state other than the one I am registered'",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/drones-uas"
+      }
+    ]
+  },
+  {
     "slug": "drones-es",
     "names": [
       "dji",
