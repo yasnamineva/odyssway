@@ -1265,6 +1265,58 @@
     ]
   },
   {
+    "slug": "drones-es",
+    "names": [
+      "dji",
+      "drone",
+      "drones",
+      "fpv drone",
+      "quadcopter"
+    ],
+    "destination": "ES",
+    "category": "drones",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "No dedicated customs rule (the drone counts toward the EU personal-goods allowance: €300 by land, €430 by air or sea). To fly, the EU drone rules apply, plus Spain's national conditions: geographical zones under Royal Decree 517/2024 (check the ENAIRE Drones app), a minimum age of 16 for operators, and third-party liability insurance for subcategory A2, for A3 with a drone of 20 kg or more, and for the specific and certified categories."
+    },
+    "notes": "From AESA's page for operators not registered in Spain. If you live outside the EU and Spain is the first EU country you fly in, you register in Spain under the same rules as a Spanish operator; if you're already registered in another EU country, that registration applies. Remote pilots must generally be 16 (12 or 14 for some light or class-labelled drones in the open category). Minimum insurance cover is 220,000 SDR for drones under 20 kg. Fines for breaking the rules start at €4,500 for minor infringements (Law 21/2003 on Aviation Safety). AESA's summary at the top of the page lists insurance among the open-category requirements without these limits; its detailed section, used here, sets out when insurance is required. The EU rules also apply (see the EU entry): EU training (home-country qualifications aren't recognised), keep the drone in sight, no higher than 120 metres, nothing dangerous carried or dropped, not over people unless class-labelled or under 250 g.",
+    "summary": "No customs rule. To fly: EU drone rules plus Spain's zones (ENAIRE Drones app), age 16, and insurance for A2, heavier A3 and specific flights.",
+    "legal_source": {
+      "name": "AESA (Spanish Aviation Safety Agency) — How to fly a UAS in Spain (last modified 1 October 2026)",
+      "url": "https://www.seguridadaerea.gob.es/es/ambitos/drones/how-to-fly-a-uas-in-spain"
+    },
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Third-country operators register in the first member state where they intend to operate (if Spain, same procedures as a Spanish operator); geographical zones under Royal Decree 517/2024, shown in ENAIRE Drones; minimum age 16 for operators, remote pilots 16 (12 for A1 with C0 non-toy or legacy under 250 g; 14 for listed cases); third-party liability insurance required for open A2, open A3 with MTOM 20 kg or more, specific and certified categories; minimum cover 220,000 SDR under 20 kg (Royal Decree 37/2001); infringements Art. 45 ter and sanctions Art. 55 of Law 21/2003, minor EUR 4,500–70,000",
+        "name": "AESA (Spanish Aviation Safety Agency) — How to fly a UAS in Spain (last modified 1 October 2026)",
+        "url": "https://www.seguridadaerea.gob.es/es/ambitos/drones/how-to-fly-a-uas-in-spain"
+      },
+      {
+        "claim": "Personal-goods value thresholds",
+        "name": "Council Directive 2007/74/EC, Art. 7",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32007L0074"
+      },
+      {
+        "claim": "Non-EU residents must register with the NAA of the first EU country where they intend to operate; registration number on a sticker on all drones and in the remote ID; valid across Europe; specific category needs a declaration or authorisation; home-country training not recognised (Art. 41(1)-(2) Reg. 2019/945 cited by EASA)",
+        "name": "EASA — FAQ: I am a non-EU visitor and I want to fly a drone in Europe",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/i-am-non-eu-visitor-and-i-want-fly-drone-europe"
+      },
+      {
+        "claim": "Open category conditions: VLOS, max 120 m, no dangerous goods or dropping material, not over people unless class-labelled or under 250 g",
+        "name": "EASA — FAQ: 'open' category",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/open-category"
+      },
+      {
+        "claim": "No operator registration needed if the drone weighs less than 250 g and has no camera or other sensor able to detect personal data, or weighs less than 250 g and complies with the Toy Directive 2009/48/EC (EASA cites Art. 21 of Reg. 2019/947); before operating in another state, check whether the area is covered by a geographical zone published by that state",
+        "name": "EASA — Drones (UAS) FAQs: 'Do I need to register my drone?' and 'Conduct an operation in the open category in a state other than the one I am registered'",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/drones-uas"
+      }
+    ]
+  },
+  {
     "slug": "drones-it",
     "names": [
       "dji",
