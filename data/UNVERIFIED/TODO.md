@@ -3418,8 +3418,11 @@ controlled drugs; declare, hand luggage, 1 month, prescription or doctor's lette
 permitted under any circumstances, so nicotine gum is out).
 
 Open:
-- **Singapore ordinary chewing gum**: the ICA prohibited goods page (now JS-rendered)
-  doesn't mention it; need Singapore Customs or the Chewing Gum Regulations on SSO.
+- ✔ **Singapore ordinary chewing gum**: done (chewing-gum-sg, from the Chewing Gum Regulations,
+  2026-10-17); 2026-11-04 Singapore Customs' import prohibited-goods list added as a second source
+  (it agrees). SSO now returns 403 from here. Cambodia customs (2026-11-04): content sits behind
+  api.customs.gov.kh, which needs an OAuth token; not pursued (the site's search page renders nothing
+  server-side). Still held.
 - **Singapore nicotine patches**: ICA lists "any product containing nicotine ... that
   may be used topically for application, by implant or injected" as prohibited.
   Whether that covers transdermal patches isn't stated; needs HSA confirmation.
