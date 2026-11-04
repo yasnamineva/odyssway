@@ -23333,6 +23333,49 @@
     "status": "verified"
   },
   {
+    "slug": "prescription-medication-bn",
+    "names": [
+      "prescription medication",
+      "medicine",
+      "medication",
+      "prescription medicine",
+      "prescription"
+    ],
+    "destination": "BN",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Medicine you bring in your personal luggage for your own use doesn't need an import licence, as long as it is no more than one month's use for one person. Larger amounts need an import licence from the Ministry of Health.",
+      "quantity": "up to one month's use"
+    },
+    "notes": "Under the Medicines Order, 2007. This covers ordinary medicines only: medicines containing a controlled drug or a listed poison fall under the Misuse of Drugs Regulations and the Poisons Act, and no current Brunei page read for this site says what travellers may carry. The Ministry of Health's 2016 information for the International Narcotics Control Board said narcotic medicines were not allowed and psychotropic medicines were limited to 30 days with a prescription and a doctor's certificate. That sheet is old, so contact the Pharmaceutical Services Department (+673 2381640) before travelling with any controlled medicine.",
+    "summary": "Up to one month's supply of your own medicine in your luggage needs no import licence. Controlled medicines: ask the Ministry of Health first.",
+    "legal_source": {
+      "name": "Department of Pharmaceutical Services, Ministry of Health Brunei Darussalam — Guideline on Application for an Import Licence and Wholesaler's Licence for Medicinal Products (3rd edition, October 2017), section 1.4.1",
+      "url": "https://moh.gov.bn/wp-content/uploads/2025/05/1.6.1.1-Guideline-on-Application-for-an-Import-Licence-and-Wholesalers-Licence-for-MP-2017.pdf"
+    },
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "An Import Licence is required for the importation of medicinal products into Brunei Darussalam with the exception of medicinal products imported for: a) Personal use as part of his personal luggage (with a quantity not exceeding one month's use by one person); medicinal products are regulated under the Medicines Order, 2007; applicants comply with the Poisons Act 1956 and the Misuse of Drugs Regulations",
+        "name": "Department of Pharmaceutical Services, Ministry of Health Brunei Darussalam — Guideline on Application for an Import Licence and Wholesaler's Licence for Medicinal Products (3rd edition, October 2017), section 1.4.1",
+        "url": "https://moh.gov.bn/wp-content/uploads/2025/05/1.6.1.1-Guideline-on-Application-for-an-Import-Licence-and-Wholesalers-Licence-for-MP-2017.pdf"
+      },
+      {
+        "claim": "Medicines, herbal products and cosmetics are restricted goods for which the Ministry of Health (Pharmaceutical Services Department, +673-2381640) is the authority",
+        "name": "Royal Customs and Excise Department, Brunei — Import (restricted and controlled goods)",
+        "url": "https://www.customs.gov.bn/import/"
+      },
+      {
+        "claim": "Narcotic drugs: not allowed; psychotropic substances: 30 days; documents: valid medical prescription, doctor's certificate endorsed by the health authorities of the country of residence, certificate from the health authorities of the destination, original prescription shown at customs (sheet dated 08.11.2016)",
+        "name": "Ministry of Health Brunei Darussalam — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (8 November 2016)",
+        "url": "https://www.incb.org/documents/Travellers/files/BRU_ENG_2016.pdf"
+      }
+    ]
+  },
+  {
     "slug": "cash-mk",
     "names": [
       "cash",
