@@ -17,7 +17,7 @@ Where we are today (2026-11-04):
 - About 2,000 URLs in the sitemap. Google indexes well; Bing indexes the pages but shows
   them rarely (young domain, few links).
 - No analytics, by design.
-- **Pushed 2026-11-04** (17 commits: Italy medicines, EU drone registration exemption; build, unit tests and 126 e2e passed). ✔ IndexNow sent 2026-11-04 (`--since 2026-11-03`, 188 URLs, HTTP 200). Since then, committed locally for the next push: Croatia controlled and ordinary medicine rows, Sweden cross-check and ordinary-medicine row; send IndexNow again after that deploy.
+- **Pushed 2026-11-04** (17 commits: Italy medicines, EU drone registration exemption; build, unit tests and 126 e2e passed). ✔ IndexNow sent 2026-11-04 (`--since 2026-11-03`, 188 URLs, HTTP 200). Since then, committed locally for the next push: Croatia controlled and ordinary medicine rows, Sweden cross-check and ordinary-medicine row, Singapore nicotine replacement (patches, lozenges, sprays: banned per HSA) and a second source for its gum ban; send IndexNow again after that deploy.
 
 ---
 

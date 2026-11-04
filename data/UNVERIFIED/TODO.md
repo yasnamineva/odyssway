@@ -3423,9 +3423,9 @@ Open:
   (it agrees). SSO now returns 403 from here. Cambodia customs (2026-11-04): content sits behind
   api.customs.gov.kh, which needs an OAuth token; not pursued (the site's search page renders nothing
   server-side). Still held.
-- **Singapore nicotine patches**: ICA lists "any product containing nicotine ... that
-  may be used topically for application, by implant or injected" as prohibited.
-  Whether that covers transdermal patches isn't stated; needs HSA confirmation.
+- ✔ **Singapore nicotine patches** (2026-11-04): HSA's page (updated 23 Oct 2026) now lists
+  nicotine medicines obtained outside Singapore, including NRT gum, lozenges, patches, sprays and
+  inhalers, as prohibited personal imports; medicated-gum-sg extended to cover them.
 - **"Sudafed" brand for NZ**: not named by NZ Customs, and US "Sudafed PE" contains
   phenylephrine, so the brand isn't in the row's names.
 

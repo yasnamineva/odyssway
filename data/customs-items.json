@@ -18936,23 +18936,37 @@
     "slug": "medicated-gum-sg",
     "names": [
       "nicotine gum",
-      "medicated gum"
+      "medicated gum",
+      "nicotine patches",
+      "nicotine patch",
+      "nicotine lozenges",
+      "nicotine spray",
+      "nicotine inhaler",
+      "nicotine replacement therapy",
+      "nrt"
     ],
     "destination": "SG",
     "category": "medication",
     "verdict": "prohibited",
     "limits": {
-      "description": "Don't bring it. Singapore's Health Sciences Authority doesn't allow personal imports of medications in chewing gum form under any circumstances. That includes nicotine gum used to quit smoking."
+      "description": "Don't bring it. Singapore's Health Sciences Authority doesn't allow personal imports of medicines in chewing gum form, or of nicotine medicines obtained outside Singapore, under any circumstances. That includes nicotine replacement therapy: gum, lozenges, patches, sprays and inhalers."
     },
-    "notes": "This entry covers medicated gum under HSA's personal-medication rules. Ordinary chewing gum is banned separately (see chewing gum). Other forms of nicotine replacement, such as patches, have their own rules that we haven't verified yet.",
-    "summary": "Banned: Singapore doesn't allow personal imports of medicines in chewing-gum form, including nicotine gum.",
+    "notes": "This entry covers medicated gum and nicotine medicines under HSA's personal-medication rules. Ordinary chewing gum is banned separately (see chewing gum). Nicotine replacement products approved in Singapore can be bought from licensed pharmacies there, after talking to a pharmacist.",
+    "summary": "Banned: medicines in chewing-gum form and nicotine replacement products bought abroad (gum, lozenges, patches, sprays, inhalers).",
     "legal_source": {
-      "name": "Health Sciences Authority — Travelling with medications to Singapore (last updated 15 June 2026)",
+      "name": "Health Sciences Authority — Travelling with medications to Singapore (last updated 23 October 2026)",
       "url": "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-medications/"
     },
-    "verified_at": "2026-10-16",
+    "verified_at": "2026-11-04",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Personal imports not permitted under any circumstances: medications in chewing gum form; medications containing nicotine obtained outside Singapore, including Nicotine Replacement Therapies (e.g. nicotine chewing gums, lozenges, patches, sprays, inhalers); approved NRTs available from licensed retail pharmacies in Singapore after a pharmacist consultation",
+        "name": "Health Sciences Authority — Travelling with medications to Singapore (last updated 23 October 2026)",
+        "url": "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-medications/"
+      }
+    ]
   },
   {
     "slug": "chewing-gum-sg",
