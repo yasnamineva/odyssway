@@ -1,5 +1,156 @@
 [
   {
+    "commit": "a862e1bbcfc05dc034785fd69e2ddb4b55597cef",
+    "date": "2026-11-04",
+    "dataset": "customs-items",
+    "summary": "Italy: controlled medicines from the Ministry of Health decree of 16 Nov 2007 (certificate or prescription from the home health authority; one pack of each medicine or Annex 2 low-dose codeine combinations need only a prescription); roadmap and TODO",
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Decreto del Ministero della Salute 16 novembre 2007 (G.U. Serie Generale n. 278, 29 November 2007), Articles 3–4 and Annex 2",
+      "url": "http://www.trovanorme.salute.gov.it/dettaglioAtto?id=23922&completo=true"
+    },
+    "destinations": [
+      "IT"
+    ]
+  },
+  {
+    "commit": "f9304dc7e267854c2432e9a7cb8a87c8b32d5559",
+    "date": "2026-11-03",
+    "dataset": "customs-items",
+    "summary": "Netherlands: medication rules from Netherlands Worldwide (Opium Act medicines need a certificate from the departure country, also in transit; other medicines need none); roadmap and TODO",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Council Directive 2007/74/EC, Art. 7",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32007L0074"
+    },
+    "destinations": [
+      "NL"
+    ]
+  },
+  {
+    "commit": "272203d23f122c6118d45ecc8e41d94b74b01341",
+    "date": "2026-11-03",
+    "dataset": "customs-items",
+    "summary": "EU drones: flying rules for visitors from EASA (non-EU residents register with the first EU country's aviation authority; home training not recognised; open-category limits)",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Council Directive 2007/74/EC, Art. 7",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32007L0074"
+    },
+    "destinations": [
+      "EU"
+    ]
+  },
+  {
+    "commit": "77898d0d3d0384b7762afa0ab7730ccf60328369",
+    "date": "2026-11-03",
+    "dataset": "customs-items",
+    "summary": "Netherlands: cannabis (import prohibited, Opium Act Art. 3 and List II; toleration policy doesn't cover import) and CBD (pure CBD unlisted; hemp extracts and THC preparations on List I), from the Opium Act text",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Convention Implementing the Schengen Agreement, Art. 75",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02)"
+    },
+    "destinations": [
+      "NL"
+    ]
+  },
+  {
+    "commit": "1de4cc1d55f62bfff0db408bd1e992121e6aae6e",
+    "date": "2026-11-03",
+    "dataset": "customs-items",
+    "summary": "France: CBD (allowed at no more than 0.3% THC from catalogued hemp varieties) and cannabis (narcotic), from the government drugs agency MILDECA",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Convention Implementing the Schengen Agreement, Art. 75",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02)"
+    },
+    "destinations": [
+      "FR"
+    ]
+  },
+  {
+    "commit": "8e4052b0bde8ff531944c7b11dd470a815a6a281",
+    "date": "2026-11-03",
+    "dataset": "customs-items",
+    "summary": "Germany: cannabis (import prohibited under the Consumer Cannabis Act), CBD (pure CBD outside the ban; hemp products with THC can count as cannabis) and weapons (German permit before travel, declare at customs) from the statutes and German Customs",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Convention Implementing the Schengen Agreement, Art. 75",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02)"
+    },
+    "destinations": [
+      "DE"
+    ]
+  },
+  {
+    "commit": "3609a0489c6e96e56584869f458867f83a577483",
+    "date": "2026-11-03",
+    "dataset": "customs-items",
+    "summary": "Germany: medication rows from German Customs (narcotic medicine: prescription as proof, multilingual doctor's certificate from outside Schengen; ordinary medicine: three months per medicine, no counterfeits or doping substances)",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Convention Implementing the Schengen Agreement, Art. 75",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02)"
+    },
+    "destinations": [
+      "DE"
+    ]
+  },
+  {
+    "commit": "dff0b7ec83c00a89b9be0b11c9ea7422a7ebda0b",
+    "date": "2026-11-03",
+    "dataset": "customs-items",
+    "summary": "Austria: medication rules from the Ministry of Health (narcotic or psychotropic: up to 5 days with proof of need, 5-30 days with a home prescription, at most 30 days' supply; ordinary medicine: three smallest packs, doctor's confirmation checklist)",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Convention Implementing the Schengen Agreement, Art. 75",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02)"
+    },
+    "destinations": [
+      "AT"
+    ]
+  },
+  {
+    "commit": "90ab4cd5c5a8f674a7ff12adbb4413e197f598f4",
+    "date": "2026-11-03",
+    "dataset": "customs-items",
+    "summary": "France: medication rules from French Customs (narcotic or psychotropic: carried yourself, the prescribed treatment length or one month, prescription from outside Schengen or the Article 75 certificate from inside; ordinary medicine: treatment length or three months)",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Convention Implementing the Schengen Agreement, Art. 75",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02)"
+    },
+    "destinations": [
+      "FR"
+    ]
+  },
+  {
+    "commit": "e61be9d8976296adc75b07f33b9a94258a0cf402",
+    "date": "2026-11-03",
+    "dataset": "customs-items",
+    "summary": "Controlled medication: EU row re-sourced to the Schengen Executive Committee's 1994 decision (certificate for residents of a Schengen country, one per medicine, up to 30 days); Germany's national rule (BtMAHV § 15: enough for the trip, own use, prescription or doctor's certificate, no permit)",
+    "verified_at": "2026-11-03",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Convention Implementing the Schengen Agreement, Art. 75",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02)"
+    },
+    "destinations": [
+      "DE",
+      "EU"
+    ]
+  },
+  {
     "commit": "6f93be616f519966c3ecf2bfad9a7ed980da7c2f",
     "date": "2026-11-03",
     "dataset": "entry-requirements",
