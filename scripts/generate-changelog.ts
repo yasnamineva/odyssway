@@ -80,14 +80,21 @@ function rowsAt(commit: string, file: string): Map<string, { dest: string; json:
   return out;
 }
 
-function changedDestinations(commit: string, file: string): string[] | undefined {
+/** Destinations and changed rows (as JSON) of a keyed file in one commit; undefined for envelope files. */
+function changedRows(commit: string, file: string): { destinations: string[]; rows: string[] } | undefined {
   if (!ROW_KEYS[file]) return undefined;
   const before = rowsAt(`${commit}^`, file);
   const after = rowsAt(commit, file);
   const dests = new Set<string>();
-  for (const [k, v] of after) if (before.get(k)?.json !== v.json) dests.add(v.dest);
+  const rows: string[] = [];
+  for (const [k, v] of after) {
+    if (before.get(k)?.json !== v.json) {
+      dests.add(v.dest);
+      rows.push(v.json);
+    }
+  }
   for (const [k, v] of before) if (!after.has(k)) dests.add(v.dest);
-  return [...dests].sort();
+  return { destinations: [...dests].sort(), rows };
 }
 
 function git(args: string[]): string {
@@ -142,14 +149,24 @@ function generate(): ChangelogEntry[] {
       [commit = "", date = "", summary = ""] = line.split("\t");
     } else if (DATA_FILES.includes(line.trim())) {
       const file = line.trim();
+      const changed = changedRows(commit, file);
+      const destinations = changed?.destinations;
       let stamp: ReturnType<typeof extractStamp>;
-      try {
-        stamp = extractStamp(git(["show", `${commit}:${file}`]));
-      } catch {
-        // File deleted in this commit — record the change without a stamp.
-        stamp = { verified_at: null, verified_by: null, source: null };
+      if (changed) {
+        // Keyed files: stamp from the rows this commit changed, so the cited
+        // source belongs to the change (a file-wide pick cited unrelated rows).
+        // Removal-only commits have no current row to cite.
+        stamp = changed.rows.length > 0
+          ? extractStamp(`[${changed.rows.join(",")}]`)
+          : { verified_at: null, verified_by: null, source: null };
+      } else {
+        try {
+          stamp = extractStamp(git(["show", `${commit}:${file}`]));
+        } catch {
+          // File deleted in this commit — record the change without a stamp.
+          stamp = { verified_at: null, verified_by: null, source: null };
+        }
       }
-      const destinations = changedDestinations(commit, file);
       entries.push({
         commit,
         date,
