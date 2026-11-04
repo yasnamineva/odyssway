@@ -8,7 +8,7 @@ without a primary official source.
 
 Where we are today (2026-11-04):
 
-- 68 destinations plus the Schengen Area; 3,924 verified entry rows; 756 customs rows
+- 68 destinations plus the Schengen Area; 3,924 verified entry rows; 755 customs rows
   (175 medication, 43 with a doctor's-letter checklist, 22 with a permit how-to, 19 with
   a transit rule); 1,125 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
@@ -17,7 +17,7 @@ Where we are today (2026-11-04):
 - About 2,000 URLs in the sitemap. Google indexes well; Bing indexes the pages but shows
   them rarely (young domain, few links).
 - No analytics, by design.
-- **Pushed 2026-11-04** (17 commits: Italy medicines, EU drone registration exemption; build, unit tests and 126 e2e passed). ✔ IndexNow sent 2026-11-04 (`--since 2026-11-03`, 188 URLs, HTTP 200). Since then, committed locally for the next push: Croatia controlled and ordinary medicine rows, Sweden cross-check and ordinary-medicine row, Singapore nicotine replacement (patches, lozenges, sprays: banned per HSA) and a second source for its gum ban; send IndexNow again after that deploy.
+- **Pushed 2026-11-04** (17 commits: Italy medicines, EU drone registration exemption; build, unit tests and 126 e2e passed). ✔ IndexNow sent 2026-11-04 (`--since 2026-11-03`, 188 URLs, HTTP 200). Since then, committed locally for the next push: Croatia controlled and ordinary medicine rows, Sweden cross-check and ordinary-medicine row, Singapore nicotine replacement (patches, lozenges, sprays: banned per HSA) and a second source for its gum ban; re-check of overdue rows (Korea, UK, UAE unchanged; Kenya meat and dairy withdrawn to UNVERIFIED because it rested on a search snippet, its page redirects to the Kenya hub; China tobacco/alcohol and Thailand/Korea drones held, sources blocked); send IndexNow again after that deploy.
 
 ---
 

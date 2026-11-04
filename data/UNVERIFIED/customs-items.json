@@ -1848,5 +1848,28 @@
     "verified_at": null,
     "verified_by": null,
     "status": "needs_verification"
+  },
+  {
+    "slug": "meat-dairy-ke",
+    "names": [
+      "meat",
+      "dairy",
+      "cheese"
+    ],
+    "destination": "KE",
+    "category": "food_animal",
+    "verdict": "depends",
+    "limits": {
+      "description": "Kenya's Meat Control (Importation of Meat and Meat Products) Regulations require an import permit from the Director of Veterinary Services for meat or meat-product imports, via written application, a fee, and 24 hours' advance notice to the port of entry."
+    },
+    "notes": "NEEDS VERIFICATION (withdrawn 2026-11-04): the text was taken from a search-snippet quote of the regulation, never read directly (Kenya Law answers automated requests with a bot check). Read the Meat Control (Importation of Meat and Meat Products) Regulations, or a KRA/Directorate of Veterinary Services passenger page, before republishing. Earlier note: This regulation reads as built for commercial importers, not obviously for a tourist carrying a personal quantity of cured meat or cheese — don't assume an ordinary traveler needs to apply for a Director-of-Veterinary-Services permit before a trip, but also don't assume they're exempt; Kenya's own page doesn't draw that line explicitly. Found via a search-snippet quote of the regulation text, not a direct fetch (403'd).",
+    "summary": "Meat and meat products need an import permit from Kenya's Director of Veterinary Services, applied for in advance.",
+    "legal_source": {
+      "name": "Kenya Law — The Meat Control (Importation of Meat and Meat Products) Regulations",
+      "url": "https://new.kenyalaw.org/akn/ke/act/ln/2001/28/eng@2022-12-31"
+    },
+    "verified_at": "2026-09-16",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "needs_verification"
   }
 ]
