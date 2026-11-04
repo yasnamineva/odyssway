@@ -132,7 +132,8 @@ describe("resolveTripCheck", () => {
     expect(resolveTripCheck("DE", "SE", ["kratom"]).items[0]!.match?.slug).toBe("kratom-se");
     expect(resolveTripCheck("US", "ES", ["xanax"]).items[0]!.match?.slug).toBe("controlled-medication-es");
     expect(resolveTripCheck("US", "FR", ["xanax"]).items[0]!.match?.slug).toBe("controlled-medication-fr");
-    expect(resolveTripCheck("US", "IT", ["xanax"]).items[0]!.match?.slug).toBe("controlled-medication-eu");
+    expect(resolveTripCheck("US", "IT", ["xanax"]).items[0]!.match?.slug).toBe("controlled-medication-it");
+    expect(resolveTripCheck("US", "GR", ["xanax"]).items[0]!.match?.slug).toBe("controlled-medication-eu");
     expect(resolveTripCheck("US", "AU", ["phenibut"]).items[0]!.match?.slug).toBe("phenibut-au");
   });
 
