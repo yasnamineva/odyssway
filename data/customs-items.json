@@ -1265,6 +1265,125 @@
     ]
   },
   {
+    "slug": "drones-at",
+    "names": [
+      "dji",
+      "drone",
+      "drones",
+      "fpv drone",
+      "quadcopter"
+    ],
+    "destination": "AT",
+    "category": "drones",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "No dedicated customs rule (the drone counts toward the EU personal-goods allowance: €300 by land, €430 by air or sea). To fly, the EU drone rules apply, and Austria adds: drone insurance is compulsory under the Aviation Act, and registering with Austro Control costs €46.80, lasts 3 years, needs your insurance policy number and is open only to operators aged 18 or over."
+    },
+    "notes": "From Austro Control's drone platform (dronespace.at). Austro Control says registration and the pilot's competency certificate are needed even for a short stay by operators from outside the EU. Registration is needed for drones over 250 g, lighter drones with a camera or other personal-data sensor, and lighter 'high-speed' drones able to transfer over 80 J of kinetic energy; Austro Control says even DJI Mini drones need registration and so insurance. The online drone test is free (minimum age 16 for pilots). Check flight-ban zones on Austro Control's map before flying. The EU rules also apply (see the EU entry): if you live outside the EU, register in the first EU country you fly in; keep the drone in sight, no higher than 120 metres, not over people unless class-labelled or under 250 g.",
+    "summary": "No customs rule. To fly: EU drone rules, compulsory insurance, and Austro Control registration (€46.80, 3 years, age 18+).",
+    "legal_source": {
+      "name": "Austro Control Dronespace — Registrierung (registration FAQ)",
+      "url": "https://www.dronespace.at/registrierung"
+    },
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Registration required for drones over 250 g, under 250 g with a personal-data sensor, under 250 g able to transfer over 80 J; insurance policy number must be given during registration; DJI Mini series need registration and therefore insurance; valid 3 years; minimum age 18; cost EUR 46.80",
+        "name": "Austro Control Dronespace — Registrierung (registration FAQ)",
+        "url": "https://www.dronespace.at/registrierung"
+      },
+      {
+        "claim": "Insurance obligations remain under the EU rules and are set in the Luftfahrtgesetz; operation in the EU requires operator registration and pilot competency, also for short stays by operators from third countries; drone licence free, pilot minimum age 16, operator minimum age 18; flight-ban zones on Austro Control's map",
+        "name": "Austro Control Dronespace — FAQ",
+        "url": "https://www.dronespace.at/faq"
+      },
+      {
+        "claim": "Personal-goods value thresholds",
+        "name": "Council Directive 2007/74/EC, Art. 7",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32007L0074"
+      },
+      {
+        "claim": "Non-EU residents must register with the NAA of the first EU country where they intend to operate; registration number on a sticker on all drones and in the remote ID; valid across Europe; specific category needs a declaration or authorisation; home-country training not recognised (Art. 41(1)-(2) Reg. 2019/945 cited by EASA)",
+        "name": "EASA — FAQ: I am a non-EU visitor and I want to fly a drone in Europe",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/i-am-non-eu-visitor-and-i-want-fly-drone-europe"
+      },
+      {
+        "claim": "Open category conditions: VLOS, max 120 m, no dangerous goods or dropping material, not over people unless class-labelled or under 250 g",
+        "name": "EASA — FAQ: 'open' category",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/open-category"
+      },
+      {
+        "claim": "No operator registration needed if the drone weighs less than 250 g and has no camera or other sensor able to detect personal data, or weighs less than 250 g and complies with the Toy Directive 2009/48/EC (EASA cites Art. 21 of Reg. 2019/947); before operating in another state, check whether the area is covered by a geographical zone published by that state",
+        "name": "EASA — Drones (UAS) FAQs: 'Do I need to register my drone?' and 'Conduct an operation in the open category in a state other than the one I am registered'",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/drones-uas"
+      }
+    ]
+  },
+  {
+    "slug": "drones-nl",
+    "names": [
+      "dji",
+      "drone",
+      "drones",
+      "fpv drone",
+      "quadcopter"
+    ],
+    "destination": "NL",
+    "category": "drones",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "No dedicated customs rule (the drone counts toward the EU personal-goods allowance: €300 by land, €430 by air or sea). To fly, the EU drone rules apply. In the Netherlands, operator registration is with the RDW, and the operator number is valid for one year. No-fly zones for the open category are on the Aeret map viewer."
+    },
+    "notes": "From the Dutch government's drone pages. The operator number goes on the drone as a plate, sticker or QR code, and into its software (Remote ID), except for drones labelled C0 or C4, where the sticker is enough. Anyone you lend your drone to needs their own operator number. You don't need one for a drone under 250 g without a camera, or for a toy drone under 250 g (even with a camera), if you fly by the A1 subcategory rules. Open-category flights need no permit from the Human Environment and Transport Inspectorate (ILT); specific-category flights, and any drone of 25 kg or more, need one. Land at once if other air traffic is near, and keep away from emergency services. The EU rules also apply (see the EU entry): if you live outside the EU, register in the first EU country you fly in; EU training (home qualifications aren't recognised); keep the drone in sight, no higher than 120 metres, not over people unless class-labelled or under 250 g.",
+    "summary": "No customs rule. To fly: EU drone rules; register with the RDW (number valid 1 year) and check no-fly zones on the Aeret map.",
+    "legal_source": {
+      "name": "Rijksoverheid (Government of the Netherlands) — Hoe registreer ik mij als eigenaar van een drone (exploitant)?",
+      "url": "https://www.rijksoverheid.nl/themas/verkeer-en-vervoer/drone/vraag-en-antwoord/drone/registreren-eigenaar-drone"
+    },
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Owners register by applying for an operator number at the RDW; not needed for drones without camera under 250 g, or toy drones under 250 g with camera; number shown on the drone (plate, sticker or QR code) and in its software (Remote ID) except C0/C4; valid 1 year, then renew at the RDW; borrowers need their own number",
+        "name": "Rijksoverheid (Government of the Netherlands) — Hoe registreer ik mij als eigenaar van een drone (exploitant)?",
+        "url": "https://www.rijksoverheid.nl/themas/verkeer-en-vervoer/drone/vraag-en-antwoord/drone/registreren-eigenaar-drone"
+      },
+      {
+        "claim": "European rules apply; open category needs no ILT permit; specific category needs an ILT flight permit; drones of 25 kg or more fall automatically in the specific category; land immediately when other air traffic is near; do not fly near emergency services",
+        "name": "Rijksoverheid — Regels voor vliegen met drones",
+        "url": "https://www.rijksoverheid.nl/themas/verkeer-en-vervoer/drone/regels-voor-vliegen-met-drones"
+      },
+      {
+        "claim": "No-fly zones for the open category (A1, A2, A3) are shown on the Aeret Kaartviewer",
+        "name": "Rijksoverheid — Hoe vraag ik een uitbreiding of inperking van een no-flyzone voor drones aan?",
+        "url": "https://www.rijksoverheid.nl/themas/verkeer-en-vervoer/drone/vraag-en-antwoord/drone/uitbreiding-inperking-no-fly-zone-drones-aanvragen"
+      },
+      {
+        "claim": "Personal-goods value thresholds",
+        "name": "Council Directive 2007/74/EC, Art. 7",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32007L0074"
+      },
+      {
+        "claim": "Non-EU residents must register with the NAA of the first EU country where they intend to operate; registration number on a sticker on all drones and in the remote ID; valid across Europe; specific category needs a declaration or authorisation; home-country training not recognised (Art. 41(1)-(2) Reg. 2019/945 cited by EASA)",
+        "name": "EASA — FAQ: I am a non-EU visitor and I want to fly a drone in Europe",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/i-am-non-eu-visitor-and-i-want-fly-drone-europe"
+      },
+      {
+        "claim": "Open category conditions: VLOS, max 120 m, no dangerous goods or dropping material, not over people unless class-labelled or under 250 g",
+        "name": "EASA — FAQ: 'open' category",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/open-category"
+      },
+      {
+        "claim": "No operator registration needed if the drone weighs less than 250 g and has no camera or other sensor able to detect personal data, or weighs less than 250 g and complies with the Toy Directive 2009/48/EC (EASA cites Art. 21 of Reg. 2019/947); before operating in another state, check whether the area is covered by a geographical zone published by that state",
+        "name": "EASA — Drones (UAS) FAQs: 'Do I need to register my drone?' and 'Conduct an operation in the open category in a state other than the one I am registered'",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/drones-uas"
+      }
+    ]
+  },
+  {
     "slug": "drones-de",
     "names": [
       "dji",
