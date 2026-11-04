@@ -8,8 +8,8 @@ without a primary official source.
 
 Where we are today (2026-11-04):
 
-- 68 destinations plus the Schengen Area; 3,924 verified entry rows; 760 customs rows
-  (175 medication, 43 with a doctor's-letter checklist, 22 with a permit how-to, 19 with
+- 68 destinations plus the Schengen Area; 3,924 verified entry rows; 761 customs rows
+  (176 medication, 43 with a doctor's-letter checklist, 22 with a permit how-to, 19 with
   a transit rule); 1,125 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
   planner, travel-authorisation guides, the 90/180 calculator, the multi-country day counter, named-medicine pages, border cards,
@@ -17,7 +17,7 @@ Where we are today (2026-11-04):
 - About 2,000 URLs in the sitemap. Google indexes well; Bing indexes the pages but shows
   them rarely (young domain, few links).
 - No analytics, by design.
-- **Pushed 2026-11-04** (17 commits: Italy medicines, EU drone registration exemption; build, unit tests and 126 e2e passed). ✔ IndexNow sent 2026-11-04 (`--since 2026-11-03`, 188 URLs, HTTP 200). Since then, committed locally for the next push: Croatia controlled and ordinary medicine rows, Sweden cross-check and ordinary-medicine row, Singapore nicotine replacement (patches, lozenges, sprays: banned per HSA) and a second source for its gum ban; re-check of overdue rows (Korea, UK, UAE unchanged; Kenya meat and dairy withdrawn to UNVERIFIED because it rested on a search snippet, its page redirects to the Kenya hub; China tobacco/alcohol and Thailand drones held, sources blocked; Korea drones rewritten from the drone portal's guide: approval above 150 m, over 25 kg or in no-fly zones, photography application 4 working days ahead); national drone rows for Italy, Spain, Germany, the Netherlands and Austria; ✔ 2026-11-04 changelog citation fix: for row files the generator took the source from the most recently verified row in the whole file, so 229 of 365 public changelog entries cited an unrelated source (Fiji's change cited a Georgian ordinance, the drone rows the EU alcohol directive); it now cites the rows the commit changed, and removal-only commits show no source. Send IndexNow again after that deploy.
+- **Pushed 2026-11-04** (17 commits: Italy medicines, EU drone registration exemption; build, unit tests and 126 e2e passed). ✔ IndexNow sent 2026-11-04 (`--since 2026-11-03`, 188 URLs, HTTP 200). Since then, committed locally for the next push: Croatia controlled and ordinary medicine rows, Sweden cross-check and ordinary-medicine row, Singapore nicotine replacement (patches, lozenges, sprays: banned per HSA) and a second source for its gum ban; re-check of overdue rows (Korea, UK, UAE unchanged; Kenya meat and dairy withdrawn to UNVERIFIED because it rested on a search snippet, its page redirects to the Kenya hub; China tobacco/alcohol and Thailand drones held, sources blocked; Korea drones rewritten from the drone portal's guide: approval above 150 m, over 25 kg or in no-fly zones, photography application 4 working days ahead); national drone rows for Italy, Spain, Germany, the Netherlands and Austria; ✔ 2026-11-04 changelog citation fix: for row files the generator took the source from the most recently verified row in the whole file, so 229 of 365 public changelog entries cited an unrelated source (Fiji's change cited a Georgian ordinance, the drone rows the EU alcohol directive); it now cites the rows the commit changed, and removal-only commits show no source. Jordan controlled medicines (JFDA's INCB sheet, 2025: authorisation from the Drug Directorate, at most six months' use). Send IndexNow again after that deploy.
 
 ---
 

@@ -15502,6 +15502,60 @@
     "status": "verified"
   },
   {
+    "slug": "controlled-medication-jo",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "opioid painkiller"
+    ],
+    "destination": "JO",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "For narcotic and psychotropic medicines you need authorisation from the Drug Directorate of the Jordan Food and Drug Administration (JFDA) to carry them into or out of Jordan, for your personal use. The amount is limited to no more than six months' use and no more than the quantity set in the JFDA's international passenger manual.",
+      "quantity": "up to six months' use, within the JFDA's quantity limits"
+    },
+    "notes": "From the JFDA's own entry in the information it gave the International Narcotics Control Board. The sheet doesn't tick any document boxes or list prohibited substances, and the passenger manual it mentions wasn't found online: contact the JFDA's Narcotic & Psychotropic Substances Control Department (tel. +962 6 5632000) before you travel. Brand names are listed for search only: they map to substances on the UN's international control lists.",
+    "summary": "Narcotic and psychotropic medicines need JFDA authorisation to bring in; at most six months' use, within the JFDA's quantity limits.",
+    "legal_source": {
+      "name": "Jordan Food and Drug Administration (Narcotic & Psychotropic Substances Control Department) — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (2025)",
+      "url": "https://www.incb.org/documents/Travellers/files/JOR_2025_ENG.pdf"
+    },
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Drug narcotic and psychotropic substances: use for no more than six months and not more than the quantity in the international passenger authority manual; the patient must obtain the necessary authorizations from the Drug Directorate, Food and Drug Administration, to carry such drugs or psychotropic substances on exiting or entering the country, and for his personal use; national competent authority: Narcotic & Psychotropic Substances Control Department, JFDA, tel +96265632000",
+        "name": "Jordan Food and Drug Administration (Narcotic & Psychotropic Substances Control Department) — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (2025)",
+        "url": "https://www.incb.org/documents/Travellers/files/JOR_2025_ENG.pdf"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
+  },
+  {
     "slug": "alcohol-cr",
     "names": [
       "alcohol",
