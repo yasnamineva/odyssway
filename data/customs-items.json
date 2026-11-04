@@ -1232,13 +1232,13 @@
     "limits": {
       "description": "No dedicated customs rule; falls under the general personal-goods value threshold: €300 for land travellers, €430 for air/sea travellers"
     },
-    "notes": "Customs is only half of it: flying a drone in the EU follows the EU Drone Regulation, whatever your nationality. If you live outside the EU, you must register with the national aviation authority of the first EU country where you plan to fly. You then get a drone operator registration number, which goes on a sticker on every drone you own and into each drone's remote identification system; the registration is then valid across Europe. Training or qualifications from your home country aren't recognised, so you need to complete the EU training before flying. In the 'open' category you must keep the drone in sight, fly no higher than 120 metres, carry no dangerous goods and drop nothing, and not fly directly over people unless the drone has a class label or weighs under 250 g. Flying in the 'specific' category needs a declaration or authorisation from the aviation authority where you registered.",
+    "notes": "Customs is only half of it: flying a drone in the EU follows the EU Drone Regulation, whatever your nationality. If you live outside the EU, you must register with the national aviation authority of the first EU country where you plan to fly. You then get a drone operator registration number, which goes on a sticker on every drone you own and into each drone's remote identification system; the registration is then valid across Europe. You don't need to register if your drone weighs under 250 g and has no camera or other sensor that can capture personal data, or weighs under 250 g and is certified as a toy. Before each flight, check whether the area is in a geographical zone where the country restricts drones. Training or qualifications from your home country aren't recognised, so you need to complete the EU training before flying. In the 'open' category you must keep the drone in sight, fly no higher than 120 metres, carry no dangerous goods and drop nothing, and not fly directly over people unless the drone has a class label or weighs under 250 g. Flying in the 'specific' category needs a declaration or authorisation from the aviation authority where you registered.",
     "summary": "No customs rule (counts toward the personal-goods allowance). To fly, non-EU residents register with the first EU country's aviation authority.",
     "legal_source": {
       "name": "Council Directive 2007/74/EC, Art. 7",
       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32007L0074"
     },
-    "verified_at": "2026-11-03",
+    "verified_at": "2026-11-04",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -1256,6 +1256,11 @@
         "claim": "Open category conditions: VLOS, max 120 m, no dangerous goods or dropping material, not over people unless class-labelled or under 250 g",
         "name": "EASA — FAQ: 'open' category",
         "url": "https://www.easa.europa.eu/en/the-agency/faqs/open-category"
+      },
+      {
+        "claim": "No operator registration needed if the drone weighs less than 250 g and has no camera or other sensor able to detect personal data, or weighs less than 250 g and complies with the Toy Directive 2009/48/EC (EASA cites Art. 21 of Reg. 2019/947); before operating in another state, check whether the area is covered by a geographical zone published by that state",
+        "name": "EASA — Drones (UAS) FAQs: 'Do I need to register my drone?' and 'Conduct an operation in the open category in a state other than the one I am registered'",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/drones-uas"
       }
     ]
   },
