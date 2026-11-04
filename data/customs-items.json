@@ -25541,6 +25541,196 @@
     ]
   },
   {
+    "destination": "PE",
+    "category": "medication",
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "Peru's General Directorate of Medicines, Supplies and Drugs (DIGEMID), Ministry of Health — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (27 January 2025)",
+      "url": "https://www.incb.org/incb/uploads/documents/Travellers/files/PER-_2025-ENG.pdf"
+    },
+    "slug": "controlled-medication-pe",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "opioid painkiller"
+    ],
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "For medicine containing a narcotic or psychotropic substance, carry a valid medical prescription and a doctor's certificate endorsed by the health authorities of your country of residence, and show the original prescription to customs when you arrive. Narcotic medicines: up to 5 days' supply. Psychotropic medicines: the amount on your prescription. Substances on Lists IA and IB of Annex 2 to Supreme Decree No. 023-2001-SA are prohibited.",
+      "quantity": "narcotics up to 5 days; psychotropics as prescribed"
+    },
+    "notes": "From DIGEMID, Peru's medicines authority, in the information it gave the International Narcotics Control Board. Its sheet marks the 5-day limit and the prohibited lists with a note for terminally ill travellers, who are covered by the fifth supplementary, transitional and final provision of Supreme Decree No. 023-2001-SA: ask DIGEMID if that applies to you. Brand names are listed for search only: they map to substances on the UN's international control lists.",
+    "summary": "Prescription plus a doctor's certificate endorsed at home; show the prescription at customs. Narcotics: 5 days' supply at most.",
+    "_sources": [
+      {
+        "claim": "Documents: a) valid medical prescription, b) doctor's certificate endorsed by the health authorities of the country of residence, d) presentation of the original prescription at customs; narcotic drugs 5 days*; psychotropic substances according to medical prescription; prohibited: Lists I A* and I B* of annex 2 to Supreme Decree No. 023-2001-SA; * terminally ill international travellers: fifth supplementary, transitional and final provision of DS 023-2001-SA",
+        "name": "Peru's General Directorate of Medicines, Supplies and Drugs (DIGEMID), Ministry of Health — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (27 January 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Travellers/files/PER-_2025-ENG.pdf"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
+  },
+  {
+    "destination": "MA",
+    "category": "medication",
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "Morocco's Agency for Medicines and Health Products (AMMPS), Controlled Substances Unit — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (10 August 2026)",
+      "url": "https://www.incb.org/incb/uploads/documents/Travellers/files/MOR_ENG_2026.pdf"
+    },
+    "slug": "controlled-medication-ma",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "opioid painkiller"
+    ],
+    "verdict": "depends",
+    "limits": {
+      "description": "For medicine containing a narcotic or psychotropic substance, Morocco's medicines agency (AMMPS) lists: a valid medical prescription, a doctor's certificate endorsed by the health authorities of your country of residence, a certificate issued by Morocco's health authorities, and your written request. For a medicine not sold in Morocco you also need an authorisation for release for consumption from the Moroccan health authorities, and a transport certificate or authorisation where one applies. Contact AMMPS's Controlled Substances Unit before you travel: stupefiant@ammps.gov.ma."
+    },
+    "notes": "From AMMPS, in the information it gave the International Narcotics Control Board (August 2026). It matches Moroccan Customs' rule in the general medication entry, that substances on Table B need a narcotics import certificate from the health authorities whatever the quantity. AMMPS gives no day or quantity limit. Brand names are listed for search only: they map to substances on the UN's international control lists.",
+    "summary": "Needs a certificate from Morocco's health authorities as well as your prescription and an endorsed doctor's certificate. Contact AMMPS first.",
+    "_sources": [
+      {
+        "claim": "Documents: a) valid medical prescription, b) doctor's certificate endorsed by the health authorities of the country of residence, c) certificate issued by the health authorities of the country of destination, e) patient's written request; authorization of release for consumption issued by the Moroccan health authorities for medicines not sold in Morocco; certificate/authorization for transportation (if applicable); contact stupefiant@ammps.gov.ma",
+        "name": "Morocco's Agency for Medicines and Health Products (AMMPS), Controlled Substances Unit — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (10 August 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Travellers/files/MOR_ENG_2026.pdf"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
+  },
+  {
+    "destination": "SV",
+    "category": "medication",
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "El Salvador's Office of the Superintendent for Regulation in the Area of Health (SRS) — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (6 March 2025)",
+      "url": "https://www.incb.org/incb/uploads/documents/Travellers/files/ELS_2025_ENG.pdf"
+    },
+    "slug": "controlled-medication-sv",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "opioid painkiller"
+    ],
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "You may bring medicine containing a narcotic or psychotropic substance in the doses your doctor at home prescribed, for the days of your stay. The SRS prefers you to apply before you arrive for a written authorisation, supported by your prescription, a doctor's certificate endorsed by your home health authorities, or a certificate from El Salvador's health authorities. If you haven't applied, show one of those documents, or the original prescription, when you enter the country.",
+      "quantity": "the prescribed doses, for the days of your stay"
+    },
+    "notes": "From El Salvador's health regulator (SRS), in the information it gave the International Narcotics Control Board. Oral medicines containing ephedrine and any medicine containing pseudoephedrine are prohibited (see the pseudoephedrine entry). Brand names are listed for search only: they map to substances on the UN's international control lists.",
+    "summary": "Allowed in the prescribed doses for your stay. Best to get SRS authorisation before arrival; otherwise show your prescription at entry.",
+    "_sources": [
+      {
+        "claim": "Days: as required for treatment for the number of days of stay; doses prescribed by the attending physician in the country of origin permitted; documents a)–d) may support an application for authorization, preferably submitted before arrival so a written SRS authorization can be obtained; if not applied for, the traveller may present any of the documents on entering the country",
+        "name": "El Salvador's Office of the Superintendent for Regulation in the Area of Health (SRS) — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (6 March 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Travellers/files/ELS_2025_ENG.pdf"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
+  },
+  {
+    "destination": "SV",
+    "category": "medication",
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "legal_source": {
+      "name": "El Salvador's Office of the Superintendent for Regulation in the Area of Health (SRS) — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (6 March 2025)",
+      "url": "https://www.incb.org/incb/uploads/documents/Travellers/files/ELS_2025_ENG.pdf"
+    },
+    "slug": "pseudoephedrine-sv",
+    "names": [
+      "pseudoephedrine",
+      "ephedrine"
+    ],
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Medicines containing pseudoephedrine, in any form, can't be brought into El Salvador. Neither can medicines taken by mouth that contain ephedrine as a declared ingredient."
+    },
+    "notes": "From El Salvador's health regulator (SRS), in the information it gave the International Narcotics Control Board (March 2025): these are the only substances it lists as prohibited. Pseudoephedrine is common in cold and allergy decongestants; check the ingredients of anything you pack.",
+    "summary": "Prohibited: any medicine with pseudoephedrine, and oral medicines with ephedrine.",
+    "_sources": [
+      {
+        "claim": "The only prohibited substances at present: oral pharmaceutical forms containing ephedrine as a declared ingredient, and all pharmaceutical forms of, and raw material used to produce, pseudoephedrine",
+        "name": "El Salvador's Office of the Superintendent for Regulation in the Area of Health (SRS) — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (6 March 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Travellers/files/ELS_2025_ENG.pdf"
+      }
+    ]
+  },
+  {
     "destination": "NL",
     "category": "medication",
     "verified_at": "2026-11-03",
