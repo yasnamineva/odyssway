@@ -22597,6 +22597,133 @@
     "status": "verified"
   },
   {
+    "slug": "alcohol-uz",
+    "names": [
+      "alcohol",
+      "wine",
+      "spirits",
+      "beer",
+      "vodka",
+      "liquor"
+    ],
+    "destination": "UZ",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free: 2 litres of alcohol in total, beer included, if you're 21 or over.",
+      "quantity": "2 litres in total"
+    },
+    "notes": "Duty-free norms for goods for personal, non-commercial use from 1 May 2025: USD 1,000 by air, USD 500 by rail or river, USD 300 through road or pedestrian crossings. Above the quantity, goods for non-commercial use pay the single customs payment at double the rate. People under 21 may not bring alcohol or tobacco in, and neither may be sent in by international post or courier. These norms replaced the 2018 presidential resolution PP-3512 (also 2 litres), repealed in May 2025.",
+    "summary": "Duty-free: 2 litres of alcohol in total, beer included, for travellers aged 21 or over. More pays double the usual customs payment.",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "total",
+          "products": [
+            "spirits",
+            "intermediate",
+            "still_wine",
+            "beer"
+          ],
+          "amount": 2
+        }
+      ]
+    },
+    "legal_source": {
+      "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 244 of 19 April 2025 'On measures to further improve the procedure for moving certain goods across the customs border', Annex 1 (current edition, LexUz)",
+      "url": "https://lex.uz/ru/docs/7484114"
+    },
+    "verified_at": "2026-11-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Para. 1: from 1 May 2025 duty-free import norms for personal non-commercial goods: air USD 1000, rail and river USD 500, road (pedestrian) USD 300. Annex 1 (quantitative norms): 1. alcohol products incl. beer (HS 2203-2208) 2 litres; 2. one of the following tobacco products: cigarettes (HS 2402 20) 200 pieces; cigars (HS 2402 10) 5 pieces; tobacco (HS 2403) 100 g. Note a) items 1 and 2 may not be brought in by persons under 21 or by international post and courier; b) above the norms, for non-commercial purposes, items 1 and 2 pay the single customs payment at double rate",
+        "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 244 of 19 April 2025 'On measures to further improve the procedure for moving certain goods across the customs border', Annex 1 (current edition, LexUz)",
+        "url": "https://lex.uz/ru/docs/7484114"
+      },
+      {
+        "claim": "Russian text of the same resolution; date of entry into force 20.07.2025; edition of 09.04.2026",
+        "name": "Resolution No. 244 of 19 April 2025 — Russian text (LexUz); in force 20 July 2025, duty-free norms from 1 May 2025",
+        "url": "https://lex.uz/ru/docs/7486538"
+      },
+      {
+        "claim": "Act repealed 03.05.2025 by Presidential Decree UP-74 of 30 April 2025; its Annex 1 had set 2 litres of alcohol and 10 packs of tobacco",
+        "name": "Resolution of the President No. PP-3512 of 6 February 2018 (LexUz: repealed 3 May 2025 by Decree UP-74)",
+        "url": "https://lex.uz/ru/docs/3551107"
+      }
+    ]
+  },
+  {
+    "slug": "tobacco-uz",
+    "names": [
+      "cigarettes",
+      "tobacco",
+      "cigars",
+      "rolling tobacco"
+    ],
+    "destination": "UZ",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free, one of: 200 cigarettes, or 5 cigars, or 100 g of tobacco, if you're 21 or over.",
+      "quantity": "200 cigarettes or 5 cigars or 100 g tobacco"
+    },
+    "notes": "Duty-free norms for goods for personal, non-commercial use from 1 May 2025: USD 1,000 by air, USD 500 by rail or river, USD 300 through road or pedestrian crossings. Above the quantity, goods for non-commercial use pay the single customs payment at double the rate. People under 21 may not bring alcohol or tobacco in, and neither may be sent in by international post or courier. These norms replaced the 2018 presidential resolution PP-3512 (10 packs), repealed in May 2025.",
+    "summary": "Duty-free, one of: 200 cigarettes, 5 cigars or 100 g of tobacco, for travellers aged 21 or over.",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "one_of",
+          "options": [
+            {
+              "products": [
+                "cigarettes"
+              ],
+              "amount": 200
+            },
+            {
+              "products": [
+                "cigars"
+              ],
+              "amount": 5
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 100
+            }
+          ]
+        }
+      ]
+    },
+    "legal_source": {
+      "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 244 of 19 April 2025 'On measures to further improve the procedure for moving certain goods across the customs border', Annex 1 (current edition, LexUz)",
+      "url": "https://lex.uz/ru/docs/7484114"
+    },
+    "verified_at": "2026-11-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Para. 1: from 1 May 2025 duty-free import norms for personal non-commercial goods: air USD 1000, rail and river USD 500, road (pedestrian) USD 300. Annex 1 (quantitative norms): 1. alcohol products incl. beer (HS 2203-2208) 2 litres; 2. one of the following tobacco products: cigarettes (HS 2402 20) 200 pieces; cigars (HS 2402 10) 5 pieces; tobacco (HS 2403) 100 g. Note a) items 1 and 2 may not be brought in by persons under 21 or by international post and courier; b) above the norms, for non-commercial purposes, items 1 and 2 pay the single customs payment at double rate",
+        "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 244 of 19 April 2025 'On measures to further improve the procedure for moving certain goods across the customs border', Annex 1 (current edition, LexUz)",
+        "url": "https://lex.uz/ru/docs/7484114"
+      },
+      {
+        "claim": "Russian text of the same resolution; date of entry into force 20.07.2025; edition of 09.04.2026",
+        "name": "Resolution No. 244 of 19 April 2025 — Russian text (LexUz); in force 20 July 2025, duty-free norms from 1 May 2025",
+        "url": "https://lex.uz/ru/docs/7486538"
+      },
+      {
+        "claim": "Act repealed 03.05.2025 by Presidential Decree UP-74 of 30 April 2025",
+        "name": "Resolution of the President No. PP-3512 of 6 February 2018 (LexUz: repealed 3 May 2025 by Decree UP-74)",
+        "url": "https://lex.uz/ru/docs/3551107"
+      }
+    ]
+  },
+  {
     "slug": "cash-zw",
     "names": [
       "cash",
