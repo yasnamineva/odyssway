@@ -483,10 +483,19 @@ const translatableFieldsSchema = z
     limitsQuantity: z.string().min(1).optional(),
     notes: z.string().min(1).optional(),
     documentsNeeded: z.array(z.string().min(1)).min(1).optional(),
+    letterItems: z.array(z.string().min(1)).min(1).optional(),
+    procedureTitle: z.string().min(1).optional(),
+    procedureLeadTime: z.string().min(1).optional(),
+    procedureProcessingTime: z.string().min(1).optional(),
+    procedureFee: z.string().min(1).optional(),
+    procedureDocuments: z.array(z.string().min(1)).min(1).optional(),
+    procedureSteps: z.array(z.string().min(1)).min(1).optional(),
+    procedureAtTheBorder: z.string().min(1).optional(),
+    transitDescription: z.string().min(1).optional(),
   })
   .strict();
 export const translationRowSchema = z.object({
-  /** Customs slug, or "US>JP" for an entry row. */
+  /** Customs slug, "{slug}#details" for its procedure/letter/transit text, or "US>JP" for an entry row. */
   id: z.string().min(1),
   /** translationSourceHash() of the English fields this translates. */
   sourceHash: z.string().regex(/^[0-9a-f]{8}$/),

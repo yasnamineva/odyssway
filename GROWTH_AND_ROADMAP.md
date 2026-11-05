@@ -17,6 +17,7 @@ Where we are today (2026-11-04):
 - About 2,000 URLs in the sitemap. Google indexes well; Bing indexes the pages but shows
   them rarely (young domain, few links).
 - No analytics, by design.
+- German pilot: 301 pages under `/de/bring` (2026-11-05), machine-translated from the verified English rows (§5.5).
 - **Pushed 2026-11-05** (28 commits: Croatia and Sweden medicine rows, Singapore nicotine replacement, re-check of overdue rows with Kenya meat and dairy withdrawn, national drone rows for Italy, Spain, Germany, the Netherlands and Austria, the changelog citation fix, Jordan controlled medicines, Brunei's first medicine row; build, unit tests and 126 e2e passed). ✔ IndexNow sent 2026-11-05 (`--since 2026-11-04`, 136 URLs, HTTP 200). Committed locally since (re-verified 2026-11-05 late, after the German pages, cost guardrails and 404 page: build, 232 unit tests and 128 e2e passed) (first verified 2026-11-05: build, 224 unit tests, 126 e2e passed; push 2026-11-06, then `pnpm indexnow -- --since 2026-11-05`): UK CBD row (Home Office factsheet) and CBD post update; Seychelles medicines (S.I. 87 of 2023: prior approval from the Ministry of Health, controlled drugs prohibited); Uruguay e-cigarettes banned (Decree 125/025); Portugal drones (compulsory insurance over 900 g, ANAC registration needs a Chave Móvel Digital); France drones (DGAC guide of 26 Jul 2026: AlphaTango registration and electronic signalling at 800 g or more, no open-category flying in towns); Latvia controlled and ordinary medicine rows (State Agency of Medicines: Lists II/III without a permit up to 14/30 days from outside Schengen; 6 months' ordinary medicine); Slovenia controlled and ordinary medicine rows (Medicinal Products Act art. 16: 3 weeks acute, 3 months chronic; certificate from home authorities for controlled medicines); ✔ correction: Brunei alcohol is 2 bottles *or* 12 cans (Customs; the German advice said plus), tobacco re-sourced, plant-food row added; ✔ correction: Kyrgyzstan alcohol 3 L and tobacco 250 g (EAEU Decision 107 via Kyrgyz Customs; the German advice we used said 1.5 L + 2 L wine and 200 g); Uzbekistan alcohol (2 L) and tobacco (200 cigarettes or 5 cigars or 100 g) from Cabinet Resolution 244 of 2025; supply-limits post updated with Croatia, Sweden, Latvia, Slovenia and Brunei; post `/blog/drone-rules-europe-visitors` (EU rules plus the seven national rows; photo reuses the passport-gate image under `blog-drones` because Pixabay blocks automated downloads: swap in a drone photo when one can be fetched); TODO holds for Seychelles, Belize, North Macedonia, Nigeria and Zambia medicines.
 
 ---
@@ -566,6 +567,17 @@ Betäubungsmittel and Bescheinigung (BfArM) apply to medicine rows only; matchin
 entries. Known gaps: the site header and footer stay English (they live in the shared root layout); slugs stay
 English. Next: German translations for the medication and alcohol/tobacco rows of the destinations German
 travellers visit most (from the November export), then the item hubs and destination hubs.
+✔ 2026-11-05 (later): **301 German pages**. Medicine pages for 49 countries (adds Australia, New Zealand, every
+Schengen country through the EU Article 75 rows plus 22 national rows), the EU allowance rows (alcohol, tobacco, cash,
+meat and dairy, e-cigarettes, fresh produce, weapons) so every Schengen country has those pages, and Switzerland,
+Norway and Iceland in full. Permit how-tos, doctor's-letter checklists and transit rules are now translated too, as a
+separate `{slug}#details` entry with its own hash (`customsRowDetails`); a row that has them gets no German page
+unless they're translated, so German pages never drop what the English page shows. Figures in German must use a
+decimal comma or a space as thousands separator (`1.200` reads as a decimal to the figure check; write `1200` or
+`1 200`). Still English-only: France's nicotine-pouch row (blocks `/de/bring/tobacco/france`), the national CBD and
+cannabis rows (DE, FR, NL), Germany's weapons row, and every non-European destination outside the medicine set.
+Next: those rows, then alcohol and tobacco for the remaining long-haul destinations German travellers visit
+(Indonesia, Vietnam, Sri Lanka, Maldives, Mauritius, Morocco, Japan, Mexico).
 
 ## 6. Long-term goals
 

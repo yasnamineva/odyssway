@@ -13,9 +13,36 @@ export interface TranslatableFields {
   limitsQuantity?: string;
   notes?: string;
   documentsNeeded?: string[];
+  // A customs row's details (permit how-to, doctor's-letter checklist, transit rule) are
+  // translated in a separate entry, id "{slug}#details", so the main row's hash is
+  // unaffected by them (see customsRowDetails).
+  letterItems?: string[];
+  procedureTitle?: string;
+  procedureLeadTime?: string;
+  procedureProcessingTime?: string;
+  procedureFee?: string;
+  procedureDocuments?: string[];
+  procedureSteps?: string[];
+  procedureAtTheBorder?: string;
+  transitDescription?: string;
 }
 
-const ORDER: (keyof TranslatableFields)[] = ["summary", "limitsDescription", "limitsQuantity", "notes", "documentsNeeded"];
+const ORDER: (keyof TranslatableFields)[] = [
+  "summary",
+  "limitsDescription",
+  "limitsQuantity",
+  "notes",
+  "documentsNeeded",
+  "letterItems",
+  "procedureTitle",
+  "procedureLeadTime",
+  "procedureProcessingTime",
+  "procedureFee",
+  "procedureDocuments",
+  "procedureSteps",
+  "procedureAtTheBorder",
+  "transitDescription",
+];
 
 /** FNV-1a (32-bit) over the fields that exist; enough to notice a changed row. */
 export function translationSourceHash(fields: TranslatableFields): string {
@@ -70,6 +97,42 @@ export function customsRowFields(row: {
     limitsDescription: row.limits?.description,
     limitsQuantity: row.limits?.quantity,
     notes: row.notes,
+  };
+}
+
+/** Id of a customs row's details translation (procedure, letter checklist, transit rule). */
+export const detailsId = (slug: string) => `${slug}#details`;
+
+/**
+ * The translatable English text of a customs row's procedure, letter checklist and
+ * transit rule, or null when the row has none. Authority names, URLs and sources stay
+ * as published.
+ */
+export function customsRowDetails(row: {
+  letter?: { items: string[] };
+  procedure?: {
+    title: string;
+    leadTime?: string;
+    processingTime?: string;
+    fee?: string;
+    documents?: string[];
+    steps: string[];
+    atTheBorder?: string;
+  };
+  transit?: { description: string };
+}): TranslatableFields | null {
+  const p = row.procedure;
+  if (!row.letter && !p && !row.transit) return null;
+  return {
+    letterItems: row.letter?.items,
+    procedureTitle: p?.title,
+    procedureLeadTime: p?.leadTime,
+    procedureProcessingTime: p?.processingTime,
+    procedureFee: p?.fee,
+    procedureDocuments: p?.documents,
+    procedureSteps: p?.steps,
+    procedureAtTheBorder: p?.atTheBorder,
+    transitDescription: row.transit?.description,
   };
 }
 

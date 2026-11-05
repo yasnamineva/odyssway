@@ -23,7 +23,7 @@ export { evaluateAllowance, productsOf, PRODUCT_UNIT } from "./allowance";
 export { checkCash, CLOSE_MARGIN } from "./cash-threshold";
 export type { CashCheckResult, CashThreshold, EuroRates } from "./cash-threshold";
 export type { Allowance, AllowanceGroup, AllowanceOption, AllowanceProduct, AllowanceResult, AllowanceUnit, GroupResult, Quantities } from "./allowance";
-export { customsRowFields, entryRowFields, entryRowId, figuresIn, missingFigures, translationSourceHash } from "./translation";
+export { customsRowDetails, customsRowFields, detailsId, entryRowFields, entryRowId, figuresIn, missingFigures, translationSourceHash } from "./translation";
 export type { TranslatableFields } from "./translation";
 export { applyByDate } from "./lead-time";
 export type { LeadTimeRule } from "./lead-time";

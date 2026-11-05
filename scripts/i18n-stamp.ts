@@ -11,17 +11,19 @@
  */
 import { readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { customsRowFields, entryRowFields, entryRowId, translationSourceHash } from "../packages/engine/src/translation";
+import { customsRowDetails, customsRowFields, detailsId, entryRowFields, entryRowId, translationSourceHash } from "../packages/engine/src/translation";
 
 const DATA = join(import.meta.dirname, "..", "data");
 const only = process.argv[2];
 
 const english: Record<string, Map<string, ReturnType<typeof customsRowFields>>> = {
   "customs-items.json": new Map(
-    (JSON.parse(readFileSync(join(DATA, "customs-items.json"), "utf8")) as Array<Record<string, any>>).map((r) => [
-      r.slug as string,
-      customsRowFields(r),
-    ]),
+    (JSON.parse(readFileSync(join(DATA, "customs-items.json"), "utf8")) as Array<Record<string, any>>).flatMap((r) => {
+      // A row's procedure, letter checklist and transit rule are a separate entry ("{slug}#details").
+      const details = customsRowDetails(r);
+      const main = [r.slug as string, customsRowFields(r)] as const;
+      return details ? [main, [detailsId(r.slug as string), details] as const] : [main];
+    }),
   ),
   "entry-requirements.json": new Map(
     (JSON.parse(readFileSync(join(DATA, "entry-requirements.json"), "utf8")) as Array<Record<string, any>>).map((r) => [

@@ -1,4 +1,4 @@
-import { customsRowFields, translationSourceHash, type CustomsItemRecord, type TranslatableFields } from "@odyssway/engine";
+import { customsRowDetails, customsRowFields, detailsId, translationSourceHash, type CustomsItemRecord, type TranslatableFields } from "@odyssway/engine";
 import deCustomsItems from "../../../data/i18n/de/customs-items.json";
 import { bringPairs, type BringPair } from "./bring-pages";
 import { customsCodeFor } from "./countries";
@@ -39,16 +39,36 @@ function byId(locale: TranslatedLocale): Map<string, TranslationRow> {
   return m;
 }
 
-/** The row's fields in `locale`, or null when there's no fresh, complete translation. */
-export function translatedCustomsRow(row: CustomsItemRecord, locale: TranslatedLocale): TranslatedCustomsFields | null {
-  if (row.status !== "verified") return null;
-  const t = byId(locale).get(row.slug);
-  if (!t) return null;
-  const english = customsRowFields(row);
-  if (translationSourceHash(english) !== t.sourceHash) return null;
+/** The translation with this id if it's fresh (hash matches) and complete, else null. */
+function freshTranslation(id: string, english: TranslatableFields, locale: TranslatedLocale): TranslationRow | null {
+  const t = byId(locale).get(id);
+  if (!t || translationSourceHash(english) !== t.sourceHash) return null;
   for (const k of Object.keys(english) as (keyof TranslatableFields)[]) {
     if (english[k] !== undefined && t.fields[k] === undefined) return null;
   }
+  return t;
+}
+
+/**
+ * The row's procedure, letter checklist and transit text in `locale`, or null when the
+ * row has none or its "{slug}#details" translation isn't fresh and complete.
+ */
+export function translatedCustomsDetails(row: CustomsItemRecord, locale: TranslatedLocale): TranslatableFields | null {
+  const english = customsRowDetails(row);
+  if (!english || row.status !== "verified") return null;
+  return freshTranslation(detailsId(row.slug), english, locale)?.fields ?? null;
+}
+
+/**
+ * The row's fields in `locale`, or null when there's no fresh, complete translation.
+ * A row with a procedure, letter checklist or transit rule also needs those translated:
+ * a German page never drops what the English page shows.
+ */
+export function translatedCustomsRow(row: CustomsItemRecord, locale: TranslatedLocale): TranslatedCustomsFields | null {
+  if (row.status !== "verified") return null;
+  const t = freshTranslation(row.slug, customsRowFields(row), locale);
+  if (!t) return null;
+  if (customsRowDetails(row) && !translatedCustomsDetails(row, locale)) return null;
   return {
     summary: t.fields.summary,
     limitsDescription: t.fields.limitsDescription,

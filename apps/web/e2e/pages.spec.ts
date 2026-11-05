@@ -525,12 +525,22 @@ test("German drone pages: translated rules, machine-translation notice, hreflang
   await page.goto("/bring/drones/france");
   await expect(page.locator('link[rel=alternate][hreflang=de]')).toHaveAttribute("href", /\/de\/bring\/drones\/france$/);
   await expect(page.getByTestId("german-version-link")).toHaveAttribute("href", "/de/bring/drones/france");
-  const missing = await page.goto("/de/bring/alcohol/france");
+  // France's tobacco page includes its own nicotine-pouch row, which isn't translated yet.
+  const missing = await page.goto("/de/bring/tobacco/france");
   expect(missing?.status()).toBe(404);
   await expect(page.getByTestId("de-not-found").getByRole("link", { name: "Zur englischen Fassung" })).toHaveAttribute(
     "href",
-    "/bring/alcohol/france",
+    "/bring/tobacco/france",
   );
+});
+
+test("German medicine page shows the permit how-to, letter checklist and transit rule in German", async ({ page }) => {
+  await page.goto("/de/bring/medication/singapore");
+  const procedure = page.getByTestId("de-procedure");
+  await expect(procedure).toContainText("Vor der Ankunft eine Genehmigung der HSA einholen");
+  await expect(procedure.locator("ol li")).toHaveCount(4);
+  await expect(page.getByTestId("de-letter-checklist").first()).toContainText("Checkliste für das ärztliche Schreiben");
+  await expect(page.getByTestId("de-transit").first()).toContainText("Transitbereich");
 });
 
 test("German index and hubs list only German pages and link back to English", async ({ page }) => {
@@ -542,6 +552,10 @@ test("German index and hubs list only German pages and link back to English", as
     "/de/bring/drones/france",
   );
   await expect(page.locator('link[rel=alternate][hreflang=en]')).toHaveAttribute("href", /\/bring\/drones$/);
-  const missing = await page.goto("/de/bring/weapons");
+  // A hub lists only countries with a German page: France's tobacco page isn't translated.
+  await page.goto("/de/bring/tobacco");
+  await expect(page.getByTestId("de-hub-list").getByRole("link", { name: "Spanien" })).toBeVisible();
+  await expect(page.getByTestId("de-hub-list").getByRole("link", { name: "Frankreich" })).toHaveCount(0);
+  const missing = await page.goto("/de/bring/pets");
   expect(missing?.status()).toBe(404);
 });

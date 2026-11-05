@@ -32,7 +32,9 @@ import {
   translationFileSchema,
 } from "../packages/engine/src/schemas";
 import {
+  customsRowDetails,
   customsRowFields,
+  detailsId,
   entryRowFields,
   entryRowId,
   missingFigures,
@@ -413,10 +415,17 @@ function checkTranslations(): void {
   }
   const english: Record<string, Map<string, { status: unknown; fields: TranslatableFields; category?: string }>> = {
     "customs-items.json": new Map(
-      (JSON.parse(readFileSync(join(DATA_DIR, "customs-items.json"), "utf8")) as Array<Record<string, any>>).map((r) => [
-        r.slug as string,
-        { status: r.status, fields: customsRowFields(r), category: r.category as string },
-      ]),
+      (JSON.parse(readFileSync(join(DATA_DIR, "customs-items.json"), "utf8")) as Array<Record<string, any>>).flatMap((r) => {
+        const main = { status: r.status, fields: customsRowFields(r), category: r.category as string };
+        const details = customsRowDetails(r);
+        // A row's procedure, letter checklist and transit rule are a separate entry ("{slug}#details").
+        return details
+          ? [
+              [r.slug as string, main] as const,
+              [detailsId(r.slug as string), { status: r.status, fields: details, category: r.category as string }] as const,
+            ]
+          : [[r.slug as string, main] as const];
+      }),
     ),
     "entry-requirements.json": new Map(
       (JSON.parse(readFileSync(join(DATA_DIR, "entry-requirements.json"), "utf8")) as Array<Record<string, any>>).map((r) => [

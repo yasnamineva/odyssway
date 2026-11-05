@@ -3,7 +3,15 @@ import { createTranslator } from "next-intl";
 import { notFound } from "next/navigation";
 import deMessages from "../../../../../messages/de.json";
 import { bringPair, type BringPair } from "../../../../../lib/bring-pages";
-import { countryName, germanPairs, germanRowHeading, isSharedRow, translatedCustomsRow } from "../../../../../lib/translations";
+import {
+  countryName,
+  germanPairs,
+  germanRowHeading,
+  isSharedRow,
+  translatedCustomsDetails,
+  translatedCustomsRow,
+} from "../../../../../lib/translations";
+import GermanRowDetails from "./GermanRowDetails";
 import { translationProblemHref } from "../../../../../lib/report-problem";
 
 /**
@@ -168,6 +176,10 @@ export default async function GermanBringPage({ params }: { params: Promise<Para
                   {tr.notes}
                 </p>
               )}
+              {(() => {
+                const details = translatedCustomsDetails(r, LOCALE);
+                return details ? <GermanRowDetails row={r} details={details} country={country} formatDate={germanDate} /> : null;
+              })()}
               <div className="mt-4 border-t border-slate-100 pt-3 text-xs text-slate-500">
                 <p>
                   <span className="font-semibold">{t("source")}: </span>

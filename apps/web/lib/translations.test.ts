@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { customsItems } from "./destinations";
-import { allRowsTranslated, countryName, germanPairs, translatedCustomsRow } from "./translations";
+import { allRowsTranslated, countryName, germanPairs, translatedCustomsDetails, translatedCustomsRow } from "./translations";
 
 const euDrones = customsItems.find((r) => r.slug === "drones-eu")!;
 
@@ -17,9 +17,9 @@ describe("German translations", () => {
   });
 
   it("has no translation for a row nobody translated", () => {
-    const alcohol = customsItems.find((r) => r.slug === "alcohol-eu")!;
-    expect(translatedCustomsRow(alcohol, "de")).toBeNull();
-    expect(allRowsTranslated([euDrones, alcohol], "de")).toBe(false);
+    const pouches = customsItems.find((r) => r.slug === "nicotine-pouches-fr")!;
+    expect(translatedCustomsRow(pouches, "de")).toBeNull();
+    expect(allRowsTranslated([euDrones, pouches], "de")).toBe(false);
   });
 
   it("builds German pages only for fully translated pairs", () => {
@@ -30,8 +30,24 @@ describe("German translations", () => {
     expect(pages.some((p) => p.category === "medication" && p.destinationSlug === "turkey")).toBe(true);
     expect(pages.some((p) => p.category === "alcohol" && p.destinationSlug === "turkey")).toBe(true);
     expect(pages.some((p) => p.category === "tobacco" && p.destinationSlug === "united-arab-emirates")).toBe(true);
-    // Weapons aren't translated anywhere yet.
-    expect(pages.some((p) => p.category === "weapons")).toBe(false);
+    // France's tobacco page includes its untranslated nicotine-pouch row.
+    expect(pages.some((p) => p.category === "tobacco" && p.destinationSlug === "france")).toBe(false);
+  });
+
+  it("translates a row's permit how-to, letter checklist and transit rule separately", () => {
+    const sg = customsItems.find((r) => r.slug === "controlled-medication-sg")!;
+    const d = translatedCustomsDetails(sg, "de");
+    expect(d?.procedureSteps?.length).toBe(sg.procedure!.steps.length);
+    expect(d?.letterItems?.length).toBe(sg.letter!.items.length);
+    expect(d?.transitDescription).toMatch(/Transitbereich/);
+    // A changed procedure step withdraws the details and with them the whole row,
+    // so a German page never drops what the English page shows.
+    const changed = { ...sg, procedure: { ...sg.procedure!, steps: [...sg.procedure!.steps, "New step."] } };
+    expect(translatedCustomsDetails(changed, "de")).toBeNull();
+    expect(translatedCustomsRow(changed, "de")).toBeNull();
+    // A row without details has none to translate.
+    expect(translatedCustomsDetails(euDrones, "de")).toBeNull();
+    expect(translatedCustomsRow(euDrones, "de")).not.toBeNull();
   });
 
   it("names countries in German, with short forms where CLDR is long", () => {
