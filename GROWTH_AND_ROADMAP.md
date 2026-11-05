@@ -554,7 +554,9 @@ pairs 404), with canonical, hreflang en/de/x-default both ways and sitemap alter
 `messages/de.json`; country names from CLDR (`Intl.DisplayNames`); the machine-translation notice, English link and
 "Übersetzungsfehler melden" email on every page. First content: the EU and seven national drone rows → 25 pages
 (every Schengen drone page). Then medicine pages for destinations German travellers visit most: Turkey, Egypt,
-Thailand, UAE, Morocco, Indonesia, Maldives, Vietnam, Sri Lanka, Mauritius (35 German pages in all, 2026-11-05);
+Thailand, UAE, Morocco, Indonesia, Maldives, Vietnam, Sri Lanka, Mauritius, Japan, the US and the UK, plus
+alcohol, tobacco and cash for Türkiye, Egypt, Thailand, the UAE and the US (53 German pages in all, 2026-11-05;
+English pairs with a German version link to it, "Auf Deutsch lesen");
 German row labels (`rowLabels`) decide how rows are headed, and a page isn't built if a row has none. Glossary terms
 Betäubungsmittel and Bescheinigung (BfArM) apply to medicine rows only; matching is case-insensitive for compounds. Glossary `data/i18n/de/glossary.json` (LBA terms: Betreiber, Fernpilot, „offen“,
 „speziell“) is enforced by validate-data, which also rejects incomplete translations; `pnpm i18n:stamp` hashes new
