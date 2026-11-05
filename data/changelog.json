@@ -1,5 +1,80 @@
 [
   {
+    "commit": "52b2083bf6a9caf5736cfe6edccec0b52305ab00",
+    "date": "2026-11-05",
+    "dataset": "customs-items",
+    "summary": "Correction, Brunei alcohol: 2 bottles or 12 cans (Brunei Customs; the row had bottles plus cans), 48 hours between imports; tobacco re-sourced to Customs (BND 0.50 excise per cigarette); new plant-food row (6 kg per category)",
+    "verified_at": "2026-11-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Royal Customs and Excise Department, Brunei — Passenger Concession",
+      "url": "https://www.customs.gov.bn/ref-rced-passenger-concession/"
+    },
+    "destinations": [
+      "BN"
+    ]
+  },
+  {
+    "commit": "5d137361c6f3005b1334df0bb3477a13cd02e09e",
+    "date": "2026-11-05",
+    "dataset": "customs-items",
+    "summary": "Correction, Kyrgyzstan alcohol and tobacco: re-sourced to Kyrgyz Customs and EEC Council Decision 107 (3 litres of alcohol, EUR 10 per litre from 3 to 5; 200 cigarettes or 50 cigars or 200 sticks or 250 g of tobacco); the foreign-ministry figures were out of line",
+    "verified_at": "2026-11-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "State Customs Service of the Kyrgyz Republic — Правила ввоза товаров для личного пользования на территорию Евразийского экономического союза (rules for importing goods for personal use into the EAEU, 11 February 2025)",
+      "url": "https://customs.gov.kg/site/ru/master/customskg/jeke-adamdar-ucun/pravila-vvoza-tovarov-dlja-lichnogo-polzovanija-na-territoriju-evrazijskogo-ehkonomicheskogo-sojuza"
+    },
+    "destinations": [
+      "KG"
+    ]
+  },
+  {
+    "commit": "483bba5a558214c74279982149d23031d4ba8f45",
+    "date": "2026-11-05",
+    "dataset": "customs-items",
+    "summary": "Uzbekistan alcohol and tobacco: rows from Cabinet Resolution No. 244 of 19 April 2025 (2 litres of alcohol; 200 cigarettes or 5 cigars or 100 g of tobacco; age 21; double payment above the norms), replacing the repealed 2018 norms",
+    "verified_at": "2026-11-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 244 of 19 April 2025 'On measures to further improve the procedure for moving certain goods across the customs border', Annex 1 (current edition, LexUz)",
+      "url": "https://lex.uz/ru/docs/7484114"
+    },
+    "destinations": [
+      "UZ"
+    ]
+  },
+  {
+    "commit": "9cc1150d47cb433ec59fb2074d7c45391355d06d",
+    "date": "2026-11-05",
+    "dataset": "customs-items",
+    "summary": "Slovenia medicines: ordinary row from Article 16 of the Medicinal Products Act (3 weeks acute, 3 months chronic) and controlled row from Customs (certificate from home-country authorities); customs/Act conflict recorded",
+    "verified_at": "2026-11-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Financial Administration of the Republic of Slovenia (FURS) — Import of medications (refreshed 23 September 2020)",
+      "url": "https://www.fu.gov.si/en/life_events_individuals/import_of_medications"
+    },
+    "destinations": [
+      "SI"
+    ]
+  },
+  {
+    "commit": "69d504633ed6e2e5f6e1f1c41fdef40899536fee",
+    "date": "2026-11-05",
+    "dataset": "customs-items",
+    "summary": "Latvia medicines: controlled and ordinary rows from the State Agency of Medicines (from outside Schengen, List II up to 14 days and List III up to 30 days without a permit; ordinary medicines up to 6 months' use in original packs)",
+    "verified_at": "2026-11-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "State Agency of Medicines of Latvia (Zāļu valsts aģentūra) — Zāļu ievešana, izvešana un saņemšana pa pastu (bringing in, taking out and receiving medicines by post)",
+      "url": "https://www.zva.gov.lv/lv/pacientiem-un-sabiedribai/zales/zalu-iegade/zalu-ievesana-izvesana-un-sanemsana-pa-pastu"
+    },
+    "destinations": [
+      "LV"
+    ]
+  },
+  {
     "commit": "d42fd873fdf818cc38fed677d8873e57177fbaac",
     "date": "2026-11-05",
     "dataset": "customs-items",
