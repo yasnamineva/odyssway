@@ -885,5 +885,87 @@
     },
     "translated_at": "2026-11-05",
     "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "prescription-medication-ca",
+    "sourceHash": "aac515ea",
+    "fields": {
+      "summary": "Besucher dürfen einen Vorrat für 90 Tage oder eine Behandlungsdauer mitbringen, je nachdem, was weniger ist, in beschrifteter Verpackung. Für Einwohner gelten strengere Regeln.",
+      "limitsDescription": "Besucher: ein Vorrat für 90 Tage oder eine einzelne Behandlungsdauer, je nachdem, was weniger ist, eines verschreibungspflichtigen Arzneimittels für den eigenen Gebrauch, in der Originalverpackung oder klar beschrifteter Verpackung. Einwohner Kanadas: Sie dürfen dieselbe Menge eines Arzneimittels zurückbringen, das in Kanada verschrieben und abgegeben wurde. Einwohner dürfen im Ausland verschriebene oder gekaufte verschreibungspflichtige Arzneimittel grundsätzlich nicht einführen; Health Canada erlaubt Ausnahmen nur für eine Behandlung, die im Ausland beginnen musste, für vom Ausland geförderte klinische Studien und für neu eingetroffene Einwanderer oder Flüchtlinge, die eine Behandlung fortsetzen.",
+      "limitsQuantity": "Vorrat für 90 Tage",
+      "notes": "Kontrollierte Substanzen müssen immer beim Beamten der Grenzbehörde CBSA angemeldet werden. Laut Health Canada dürfen im Ausland ausgestellte Rezepte in Kanada nicht eingelöst werden. Besucher, die länger als drei Monate bleiben, dürfen alle drei Monate einen weiteren Vorrat für 90 Tage mitbringen und sollten ihren Besucherstatus nachweisen können, etwa mit Reisepass, Studien- oder Arbeitsvisum oder einem Schreiben des Arbeitgebers oder der Universität."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-ca",
+    "sourceHash": "1a3c6132",
+    "fields": {
+      "summary": "Persönlich mitführen: bis zu 30 Tage Stimulanzien oder Opioide, 90 Tage Benzodiazepine, in beschrifteter Verpackung. Anmelden.",
+      "limitsDescription": "Nach der Sammelausnahme der CBSA nach Section 56 dürfen Reisende ein verschriebenes Betäubungsmittel oder eine kontrollierte Droge nach Teil G der Food and Drug Regulations persönlich mitführen (nur persönlich – nicht per Post oder Kurier), bis zur kleineren Menge aus einer einzelnen Behandlungsdauer oder einem Vorrat für 30 Tage, und ein verschriebenes Benzodiazepin bzw. einen gezielten Stoff (targeted substance) bis zur kleineren Menge aus einer einzelnen Behandlungsdauer oder einem Vorrat für 90 Tage. Wenn Sie nicht in Kanada wohnen, gilt für Benzodiazepine die kleinste Menge aus dem Packungsinhalt, einem Vorrat für 90 Tage oder Ihrer üblichen Tagesdosis mal die Zahl der geplanten Aufenthaltstage. Opioide (Codein, Oxycodon, Tramadol) und Stimulanzien (Amphetamin, Methylphenidat/Ritalin, Lisdexamfetamin/Vyvanse) fallen unter die 30-Tage-Grenze für Betäubungsmittel bzw. Teil G; Benzodiazepine (Diazepam/Valium, Alprazolam/Xanax, Clonazepam/Klonopin) haben die 90-Tage-Grenze. Das Arzneimittel muss in von Apotheke oder Krankenhaus abgegebener, richtig beschrifteter Verpackung sein und an der Grenze bei einem CBSA-Beamten angemeldet werden.",
+      "limitsQuantity": "Vorrat für 30 Tage (Stimulanzien, Opioide); Vorrat für 90 Tage (Benzodiazepine)",
+      "notes": "Für diese Mengen ist nach der Sammelausnahme keine Einfuhrgenehmigung vorab nötig – sie gilt aber nicht für Stoffe aus Annex I, außer Health Canada oder die Behörde des Herkunftslandes hat sie gesondert genehmigt, und sie gilt ausdrücklich nicht für den Versand kontrollierter Substanzen per Post oder Kurier, nur für das persönliche Mitführen. Lisdexamfetamin (Vyvanse) wird im Gesetz nicht genannt; wir ordnen es dem Eintrag „Amphetamine, ihre Salze, Derivate…“ in Schedule I zu, das ist unsere Lesart."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "injectable-medication-ca",
+    "sourceHash": "3eca0c11",
+    "fields": {
+      "summary": "Insulin- und GLP-1-Pens: ein Vorrat für 90 Tage oder eine Behandlungsdauer, je nachdem, was weniger ist, in beschrifteter Apothekenverpackung.",
+      "limitsDescription": "GLP-1-Arzneimittel und Insulin sind in Kanada gewöhnliche (nicht kontrollierte) verschreibungspflichtige Arzneimittel, daher gilt die allgemeine Regel für den persönlichen Gebrauch: eine einzelne Behandlungsdauer oder ein Vorrat für 90 Tage, je nachdem, was weniger ist, im Handgepäck in der Originalverpackung oder klar beschrifteter Apothekenverpackung. Das gilt für Besucher und für Einwohner Kanadas, die mit in Kanada verschriebenen und abgegebenen Pens oder Insulin zurückkehren; Einwohner dürfen im Ausland verschriebene oder gekaufte verschreibungspflichtige Arzneimittel grundsätzlich nicht einführen. Laut den Hinweisen von Health Canada sind Medizinprodukte zum persönlichen Gebrauch – dazu gehören Injektionspens, Spritzen und Nadeln zur Selbstanwendung – nach dem Food and Drugs Act und den Medical Devices Regulations nicht eingeschränkt, sofern das Gerät keine geschulte Bedienperson braucht, also zur Selbstanwendung durch den Patienten gedacht ist.",
+      "limitsQuantity": "Vorrat für 90 Tage",
+      "notes": "Diese Hinweise nennen Insulin, GLP-1-Arzneimittel, Nadeln oder Spritzen nicht namentlich – die 90-Tage-Regel ist dieselbe allgemeine Vorschrift für verschreibungspflichtige Arzneimittel wie im allgemeinen Eintrag zu verschreibungspflichtigen Arzneimitteln in Kanada, und die Behandlung von Nadeln und Spritzen ist aus dem allgemeinen Abschnitt über Medizinprodukte für den persönlichen Gebrauch abgeleitet, nicht aus einer eigenen Regel für scharfe Gegenstände. Hinweise zu Kühlung oder Kühlkette wurden in dieser Quelle nicht gefunden."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "peptides-ca",
+    "sourceHash": "f0461795",
+    "fields": {
+      "summary": "Nicht mitnehmen: Peptide sind in Kanada grundsätzlich verschreibungspflichtige Arzneimittel, und nicht zugelassene Produkte wie BPC-157 oder TB-500 sind verboten.",
+      "notes": "Health Canada sagt, dass Peptide in Kanada grundsätzlich als verschreibungspflichtige Arzneimittel geregelt sind und nicht zugelassene Arzneimittel verboten sind. Ihre Warnung vom April 2026 nennt BPC-157, CJC-1295, DSIP, Epitalon, GHK-Cu, Ipamorelin, KPV, Melanotan I und II, MOTS-c, SS-31, TB-500 und Retatrutid unter den beschlagnahmten Produkten und sagt, dass ein Etikett „nur für Forschungszwecke“ ein Produkt nicht legal macht. Ein zugelassenes Arzneimittel trägt auf dem Etikett eine achtstellige Drug Identification Number (DIN). Health Canada arbeitet mit der Grenzbehörde CBSA zusammen, um nicht zugelassene Sendungen zu stoppen. Ein zugelassenes, Ihnen verschriebenes Peptid-Arzneimittel ist ein anderer Fall: Besucher dürfen eine Menge eines verschreibungspflichtigen Arzneimittels für den eigenen Gebrauch mitbringen (höchstens einen Vorrat für 90 Tage oder eine Behandlungsdauer, je nachdem, was weniger ist), und Einwohner Kanadas dürfen ein in Kanada verschriebenes und abgegebenes Arzneimittel zurückbringen, grundsätzlich aber keines, das im Ausland verschrieben oder gekauft wurde. Siehe den Eintrag zu verschreibungspflichtigen Arzneimitteln."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "prescription-medication-pe",
+    "sourceHash": "4ec9dec4",
+    "fields": {
+      "summary": "Arzneimittel für den eigenen Gebrauch gelten als persönliche Gegenstände: keine Steuer, keine Anmeldung. Betäubungsmittel und psychotrope Arzneimittel werden gesondert kontrolliert.",
+      "limitsDescription": "Arzneimittel für den eigenen persönlichen Gebrauch gelten als persönliche Gegenstände und müssen nicht angemeldet werden.",
+      "limitsQuantity": "Persönlicher Gebrauch",
+      "notes": "Die Steuer- und Zollbehörde SUNAT führt 'medicamentos' unter den Waren für den persönlichen Gebrauch, die keine Steuer zahlen und keine Gepäckanmeldung brauchen, 'siempre que sean para tu uso personal'. Medizinische Hilfsmittel und Geräte, die Sie brauchen (Rollstühle, Krücken, Blutdruck-, Temperatur- oder Blutzuckermessgeräte usw.), sind ebenfalls frei, in einer für die Reise angemessenen Menge. Betäubungsmittel und psychotrope Arzneimittel sind in Peru kontrollierte Stoffe (DIGEMID, D.S. 023-2001-SA) und fallen NICHT unter diesen Eintrag – siehe den Eintrag zu kontrollierten Arzneimitteln. Für mitgeführtes Gepäck nennt die SUNAT keine Rezeptpflicht; das Rezept mitzuführen ist vernünftig, aber keine belegte Regel."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "injectable-medication-pe",
+    "sourceHash": "1113b487",
+    "fields": {
+      "summary": "Spritzbare Arzneimittel für den persönlichen Gebrauch wie Insulin und Geräte wie Blutzuckermessgeräte dürfen als persönliche Gegenstände eingeführt werden, in angemessener Menge.",
+      "limitsDescription": "Spritzbare Arzneimittel für den persönlichen Gebrauch (z. B. Insulin) und die medizinischen Geräte, die Sie brauchen (z. B. Blutzuckermessgeräte), dürfen als persönliche Gegenstände mitgebracht werden.",
+      "limitsQuantity": "Persönlicher Gebrauch / angemessene Menge",
+      "notes": "Dieselbe Regel der SUNAT wie für persönliche Arzneimittel: 'medicamentos' für den persönlichen Gebrauch brauchen keine Anmeldung, und 'medios auxiliares y equipos necesarios para tu control médico... medidores de presión arterial, temperatura o glucosa, entre otros' sind für kranke oder behinderte Reisende in einer Menge erlaubt, die 'razonable para tu viaje' ist. Die SUNAT nennt keine bestimmten Marken (daher keine GLP-1-Markennamen hier) und erwähnt Spritzen oder Nadeln nicht gesondert."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-pe",
+    "sourceHash": "bf3420dc",
+    "fields": {
+      "summary": "Rezept und eine im Heimatland beglaubigte ärztliche Bescheinigung; das Rezept beim Zoll vorzeigen. Betäubungsmittel: höchstens 5 Tage Vorrat.",
+      "limitsDescription": "Für Arzneimittel mit einem Betäubungsmittel oder psychotropen Stoff führen Sie ein gültiges ärztliches Rezept und eine ärztliche Bescheinigung mit, beglaubigt von den Gesundheitsbehörden Ihres Wohnsitzlandes, und zeigen bei der Ankunft dem Zoll das Originalrezept. Betäubungsmittel: bis zu 5 Tage Vorrat. Psychotrope Arzneimittel: die Menge auf Ihrem Rezept. Stoffe der Listen IA und IB in Anhang 2 des Obersten Dekrets Nr. 023-2001-SA sind verboten.",
+      "limitsQuantity": "Betäubungsmittel bis zu 5 Tage; psychotrope Arzneimittel laut Rezept",
+      "notes": "Von der DIGEMID, Perus Arzneimittelbehörde, aus ihren Angaben für das Internationale Suchtstoffkontrollamt. Ihr Blatt versieht die 5-Tage-Grenze und die verbotenen Listen mit einem Hinweis für unheilbar kranke Reisende, für die die fünfte ergänzende, Übergangs- und Schlussbestimmung des Obersten Dekrets Nr. 023-2001-SA gilt: Fragen Sie die DIGEMID, ob das auf Sie zutrifft. Markennamen dienen nur der Suche: Sie entsprechen Stoffen auf den internationalen Kontrolllisten der UN."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
   }
 ]

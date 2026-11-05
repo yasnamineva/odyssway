@@ -5,7 +5,10 @@
     "source": {
       "name": "Luftfahrt-Bundesamt — UAS-Betreiberregistrierung (Betriebskategorien \"offen\" und \"speziell\")",
       "url": "https://www.lba.de/DE/Drohnen/UAS_Betreiberregistrierung/UAS_Betreiberregistrierung_node.html"
-    }
+    },
+    "categories": [
+      "drones"
+    ]
   },
   {
     "en": "\\bspecific['’]?[- ]categor",
@@ -13,7 +16,10 @@
     "source": {
       "name": "Luftfahrt-Bundesamt — UAS-Betreiberregistrierung (Betriebskategorien \"offen\" und \"speziell\")",
       "url": "https://www.lba.de/DE/Drohnen/UAS_Betreiberregistrierung/UAS_Betreiberregistrierung_node.html"
-    }
+    },
+    "categories": [
+      "drones"
+    ]
   },
   {
     "en": "\\bremote pilots?\\b",
@@ -21,7 +27,10 @@
     "source": {
       "name": "Luftfahrt-Bundesamt — UAS-Betreiberregistrierung (Fernpilot)",
       "url": "https://www.lba.de/DE/Drohnen/UAS_Betreiberregistrierung/UAS_Betreiberregistrierung_node.html"
-    }
+    },
+    "categories": [
+      "drones"
+    ]
   },
   {
     "en": "\\boperators?\\b",
@@ -29,10 +38,13 @@
     "source": {
       "name": "Luftfahrt-Bundesamt — UAS-Betreiberregistrierung (UAS-Betreiber)",
       "url": "https://www.lba.de/DE/Drohnen/UAS_Betreiberregistrierung/UAS_Betreiberregistrierung_node.html"
-    }
+    },
+    "categories": [
+      "drones"
+    ]
   },
   {
-    "en": "\\bnarcotic",
+    "en": "\\bnarcotic(?!s Control Board)",
     "de": "Betäubungsmittel",
     "source": {
       "name": "Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM), Bundesopiumstelle — Reisen mit Betäubungsmitteln",
@@ -40,7 +52,8 @@
     },
     "categories": [
       "medication"
-    ]
+    ],
+    "note": "The International Narcotics Control Board is officially 'Internationales Suchtstoffkontrollamt' in German."
   },
   {
     "en": "(?<!expired-)\\bcertificate\\b",
