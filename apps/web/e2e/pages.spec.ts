@@ -524,6 +524,7 @@ test("German drone pages: translated rules, machine-translation notice, hreflang
   await expect(page.getByTestId("de-same-item-elsewhere").getByRole("link", { name: "Deutschland" })).toBeVisible();
   await page.goto("/bring/drones/france");
   await expect(page.locator('link[rel=alternate][hreflang=de]')).toHaveAttribute("href", /\/de\/bring\/drones\/france$/);
+  await expect(page.getByTestId("german-version-link")).toHaveAttribute("href", "/de/bring/drones/france");
   const missing = await page.goto("/de/bring/alcohol/france");
   expect(missing?.status()).toBe(404);
 });

@@ -171,6 +171,19 @@ export default async function BringDestinationPage({ params }: { params: Promise
         <h1 className="font-display text-2xl font-bold tracking-tight text-slate-900 lg:text-3xl">
           {t("h1", { item: meta.searchLabel, destination: withArticle(destName) })}
         </h1>
+        {hasGermanPage(pair) && (
+          <p className="mt-1 text-xs">
+            <a
+              href={`/de/bring/${pair.itemSlug}/${pair.destinationSlug}`}
+              hrefLang="de"
+              lang="de"
+              className="text-blue-700 underline"
+              data-testid="german-version-link"
+            >
+              {t("germanVersion")}
+            </a>
+          </p>
+        )}
         {pair.rows.length === 1 ? (
           <p className="mt-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm">
             <span className="text-xs font-semibold tracking-wide text-slate-500 uppercase">
