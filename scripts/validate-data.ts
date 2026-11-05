@@ -479,6 +479,19 @@ function checkTranslations(): void {
           }
           const enText = Array.isArray(enValue) ? enValue.join("\n") : enValue;
           const trText = Array.isArray(trValue) ? trValue.join("\n") : trValue;
+          // A translation restates, it never adds: noticeably more sentences than the English
+          // is the usual sign of an added claim. Warn so a person or agent re-reads it.
+          const sentences = (x: string) =>
+            x
+              // Not sentence ends: ordinal dates ("26. Juli"), section numbers and common abbreviations.
+              .replace(/(\d)\.(?=\s)/g, "$1")
+              .replace(/\b(z|d|u)\. (B|h|a)\./g, "$1$2")
+              .replace(/\b(Mio|Nr|Art|bzw|ca|usw|Tel|Abs|vgl|e\.g|i\.e|No|St)\./g, "$1")
+              .split(/[.!?](?:\s|$)/)
+              .filter((p) => p.trim().length > 3).length;
+          if (sentences(trText) > sentences(enText) + 1) {
+            console.warn(`⚠ ${where}: "${k}" has ${sentences(trText)} sentences vs ${sentences(enText)} in English — check nothing was added.`);
+          }
           for (const g of glossary) {
             // A term can be scoped to customs categories (a medicine term isn't a drone term).
             if (g.categories && !(en.category && g.categories.includes(en.category))) continue;
