@@ -1298,6 +1298,58 @@
     ]
   },
   {
+    "slug": "drones-fr",
+    "names": [
+      "dji",
+      "drone",
+      "drones",
+      "fpv drone",
+      "quadcopter"
+    ],
+    "destination": "FR",
+    "category": "drones",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "No dedicated customs rule (the drone counts toward the EU personal-goods allowance: €300 by land, €430 by air or sea). To fly, the EU drone rules apply, and France adds: a drone of 800 g or more must be registered by its owner on the AlphaTango portal and carry an electronic signalling device. In the open category you can't fly in public space in built-up areas unless it's professional activity."
+    },
+    "notes": "From the French civil aviation authority's guide to the open category (26 July 2026). The 800 g aircraft registration is a national public-security rule (decree of 11 October 2018 and order of 19 October 2018), separate from EU operator registration; it gives a UAS-FR number valid for five years, and the guide says operators from other EU countries flying in France must comply too. If you live outside the EU and France is the first EU country you fly in, you register there as an EU operator and follow the same rules as any French operator; licences from home aren't recognised for the open category. Minimum age in France is 14 (lower for toy drones). You're strictly liable for damage to people and property on the ground, so check that your liability insurance covers drones. Unsafe use can bring a year in prison and a €75,000 fine; flying over a no-fly zone by negligence, six months and €15,000 (a year and €45,000 if deliberate), and the drone can be confiscated. Check restrictions on Géoportail's open-category map before flying.",
+    "summary": "No customs rule. To fly: EU drone rules, plus AlphaTango registration and electronic signalling for drones of 800 g or more; no flying in town.",
+    "legal_source": {
+      "name": "DGAC (French Civil Aviation Authority) — Guide DSAC: usages de loisir et professionnels simplifiés des aéronefs sans équipage à bord, catégorie Ouverte (edition 2, version 1.1, 26 July 2026)",
+      "url": "https://www.ecologie.gouv.fr/sites/default/files/documents/Guide_categorie_Ouverte.pdf"
+    },
+    "verified_at": "2026-11-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "§4.2: all aircraft of 800 g or more (incl. equipment and battery) or fitted with an electronic signalling device must be registered by their owner on AlphaTango; number UAS-FR-…, valid five years; national public-security rule from the decree of 11 Oct 2018 and order of 19 Oct 2018, distinct from EU operator registration. §4.4: national electronic signalling obligation for aircraft of 800 g or more, fully applicable. §5.1: minimum age 14 in France for the open category. EU-state operators flying in France: all drones over 800 g must be registered on AlphaTango and fitted with electronic signalling; no open-category flight in public space in built-up areas outside professional activity; restrictions map on geoportail.gouv.fr. Non-EU operators: register as EU UAS operator in the first EU country where you plan to operate, then apply the same rules as any operator of that country; no equivalence of home licences for the open category. §10.1: strict liability for damage on the ground (Code des transports L. 6131-1, L. 6131-2), check liability cover. §10.3: 1 year and €75,000 (L. 6232-4); negligent overflight of a prohibited zone 6 months and €15,000, deliberate 1 year and €45,000 (L. 6232-12); confiscation possible",
+        "name": "DGAC (French Civil Aviation Authority) — Guide DSAC: usages de loisir et professionnels simplifiés des aéronefs sans équipage à bord, catégorie Ouverte (edition 2, version 1.1, 26 July 2026)",
+        "url": "https://www.ecologie.gouv.fr/sites/default/files/documents/Guide_categorie_Ouverte.pdf"
+      },
+      {
+        "claim": "Personal-goods value thresholds",
+        "name": "Council Directive 2007/74/EC, Art. 7",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32007L0074"
+      },
+      {
+        "claim": "Non-EU residents must register with the NAA of the first EU country where they intend to operate; registration number on a sticker on all drones and in the remote ID; valid across Europe; specific category needs a declaration or authorisation; home-country training not recognised (Art. 41(1)-(2) Reg. 2019/945 cited by EASA)",
+        "name": "EASA — FAQ: I am a non-EU visitor and I want to fly a drone in Europe",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/i-am-non-eu-visitor-and-i-want-fly-drone-europe"
+      },
+      {
+        "claim": "Open category conditions: VLOS, max 120 m, no dangerous goods or dropping material, not over people unless class-labelled or under 250 g",
+        "name": "EASA — FAQ: 'open' category",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/open-category"
+      },
+      {
+        "claim": "No operator registration needed if the drone weighs less than 250 g and has no camera or other sensor able to detect personal data, or weighs less than 250 g and complies with the Toy Directive 2009/48/EC (EASA cites Art. 21 of Reg. 2019/947); before operating in another state, check whether the area is covered by a geographical zone published by that state",
+        "name": "EASA — Drones (UAS) FAQs: 'Do I need to register my drone?' and 'Conduct an operation in the open category in a state other than the one I am registered'",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/drones-uas"
+      }
+    ]
+  },
+  {
     "slug": "drones-pt",
     "names": [
       "dji",
