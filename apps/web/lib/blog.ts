@@ -85,7 +85,7 @@ export const blogPosts: BlogPost[] = [
     },
     verifiedAt: "2026-10-26",
     changelogDataset: "customs-items",
-    destinationCodes: ["HK", "SG", "KR", "AE", "ID", "AM", "TZ", "CA", "TH", "CY", "VN", "NZ", "AU", "TW", "BR", "JP", "CL", "CN", "US", "IE"],
+    destinationCodes: ["HK", "SG", "KR", "AE", "ID", "AM", "TZ", "CA", "TH", "CY", "VN", "NZ", "AU", "TW", "BR", "JP", "CL", "CN", "US", "IE", "GB"],
     photo: "blog-cbd",
     bringCategories: ["cbd_cannabis"],
   },

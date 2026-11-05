@@ -8,7 +8,7 @@ without a primary official source.
 
 Where we are today (2026-11-04):
 
-- 68 destinations plus the Schengen Area; 3,924 verified entry rows; 762 customs rows
+- 68 destinations plus the Schengen Area; 3,924 verified entry rows; 763 customs rows
   (177 medication, 43 with a doctor's-letter checklist, 22 with a permit how-to, 19 with
   a transit rule); 1,125 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
@@ -17,7 +17,7 @@ Where we are today (2026-11-04):
 - About 2,000 URLs in the sitemap. Google indexes well; Bing indexes the pages but shows
   them rarely (young domain, few links).
 - No analytics, by design.
-- **Pushed 2026-11-05** (28 commits: Croatia and Sweden medicine rows, Singapore nicotine replacement, re-check of overdue rows with Kenya meat and dairy withdrawn, national drone rows for Italy, Spain, Germany, the Netherlands and Austria, the changelog citation fix, Jordan controlled medicines, Brunei's first medicine row; build, unit tests and 126 e2e passed). ✔ IndexNow sent 2026-11-05 (`--since 2026-11-04`, 136 URLs, HTTP 200). Committed locally since: TODO holds for Seychelles, Belize, North Macedonia, Nigeria and Zambia medicines.
+- **Pushed 2026-11-05** (28 commits: Croatia and Sweden medicine rows, Singapore nicotine replacement, re-check of overdue rows with Kenya meat and dairy withdrawn, national drone rows for Italy, Spain, Germany, the Netherlands and Austria, the changelog citation fix, Jordan controlled medicines, Brunei's first medicine row; build, unit tests and 126 e2e passed). ✔ IndexNow sent 2026-11-05 (`--since 2026-11-04`, 136 URLs, HTTP 200). Committed locally since: UK CBD row (Home Office factsheet) and CBD post update; TODO holds for Seychelles, Belize, North Macedonia, Nigeria and Zambia medicines.
 
 ---
 
@@ -307,7 +307,7 @@ South Africa, Nigeria, Poland, Portugal, Vietnam, Pakistan. Add one at a time, f
   (from "narcotics" or silence). Their CBD search names were removed (CBD now shows "not
   verified" there) and Albania's CBD row moved to UNVERIFIED; New Zealand (prescribed medicinal
   cannabis allowed) and Taiwan CBD (TFDA permit) corrected from official pages. CBD is sourced
-  for CA, TH, SG, KR, HK, CY, IE, US, JP, CN, NZ, TW, CL, NO, DE, FR, NL (2026-11-03). Researching CBD for the rest is a good
+  for CA, TH, SG, KR, HK, CY, IE, US, JP, CN, NZ, TW, CL, NO, DE, FR, NL (2026-11-03), GB (2026-11-05, Home Office factsheet: pure CBD uncontrolled, products with THC are Class B unless an exempt product, ≤1 mg per container; added to the CBD post). Researching CBD for the rest is a good
   start for the CBD vertical.
   ✔ Post `/blog/cbd-travel-rules` (2026-10-26), linked from each covered country's cannabis page.
   Photo: CBD-Infos-com on Pixabay (added 2026-10-28).
