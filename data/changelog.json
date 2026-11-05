@@ -1,5 +1,35 @@
 [
   {
+    "commit": "f23a96c6b756aa34b951ba123cfd0fadaa1e5bfe",
+    "date": "2026-11-04",
+    "dataset": "customs-items",
+    "summary": "Brunei: first medicine row (Ministry of Health: up to one month's use in personal luggage needs no import licence; controlled medicines not confirmed by a current page, dated INCB information quoted in the notes)",
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Department of Pharmaceutical Services, Ministry of Health Brunei Darussalam — Guideline on Application for an Import Licence and Wholesaler's Licence for Medicinal Products (3rd edition, October 2017), section 1.4.1",
+      "url": "https://moh.gov.bn/wp-content/uploads/2025/05/1.6.1.1-Guideline-on-Application-for-an-Import-Licence-and-Wholesalers-Licence-for-MP-2017.pdf"
+    },
+    "destinations": [
+      "BN"
+    ]
+  },
+  {
+    "commit": "f1815c06ae53de0302ec8ed93210e32149f1265b",
+    "date": "2026-11-04",
+    "dataset": "customs-items",
+    "summary": "Jordan controlled medicines: new row from the JFDA's sheet for the INCB (Drug Directorate authorisation to carry narcotic or psychotropic medicines; at most six months' use within its quantity limits)",
+    "verified_at": "2026-11-04",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Jordan Food and Drug Administration (Narcotic & Psychotropic Substances Control Department) — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (2025)",
+      "url": "https://www.incb.org/documents/Travellers/files/JOR_2025_ENG.pdf"
+    },
+    "destinations": [
+      "JO"
+    ]
+  },
+  {
     "commit": "e47cea64a05b72cf5606bd7235652a965aa7abab",
     "date": "2026-11-04",
     "dataset": "customs-items",
