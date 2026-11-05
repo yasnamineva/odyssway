@@ -17,9 +17,9 @@ describe("German translations", () => {
   });
 
   it("has no translation for a row nobody translated", () => {
-    const pouches = customsItems.find((r) => r.slug === "nicotine-pouches-fr")!;
-    expect(translatedCustomsRow(pouches, "de")).toBeNull();
-    expect(allRowsTranslated([euDrones, pouches], "de")).toBe(false);
+    const untranslated = customsItems.find((r) => r.slug === "alcohol-ng")!;
+    expect(translatedCustomsRow(untranslated, "de")).toBeNull();
+    expect(allRowsTranslated([euDrones, untranslated], "de")).toBe(false);
   });
 
   it("builds German pages only for fully translated pairs", () => {
@@ -30,8 +30,8 @@ describe("German translations", () => {
     expect(pages.some((p) => p.category === "medication" && p.destinationSlug === "turkey")).toBe(true);
     expect(pages.some((p) => p.category === "alcohol" && p.destinationSlug === "turkey")).toBe(true);
     expect(pages.some((p) => p.category === "tobacco" && p.destinationSlug === "united-arab-emirates")).toBe(true);
-    // France's tobacco page includes its untranslated nicotine-pouch row.
-    expect(pages.some((p) => p.category === "tobacco" && p.destinationSlug === "france")).toBe(false);
+    // Nigeria's rows aren't translated.
+    expect(pages.some((p) => p.category === "alcohol" && p.destinationSlug === "nigeria")).toBe(false);
   });
 
   it("translates a row's permit how-to, letter checklist and transit rule separately", () => {

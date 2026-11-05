@@ -525,12 +525,12 @@ test("German drone pages: translated rules, machine-translation notice, hreflang
   await page.goto("/bring/drones/france");
   await expect(page.locator('link[rel=alternate][hreflang=de]')).toHaveAttribute("href", /\/de\/bring\/drones\/france$/);
   await expect(page.getByTestId("german-version-link")).toHaveAttribute("href", "/de/bring/drones/france");
-  // France's tobacco page includes its own nicotine-pouch row, which isn't translated yet.
-  const missing = await page.goto("/de/bring/tobacco/france");
+  // Nigeria's rows aren't translated.
+  const missing = await page.goto("/de/bring/alcohol/nigeria");
   expect(missing?.status()).toBe(404);
   await expect(page.getByTestId("de-not-found").getByRole("link", { name: "Zur englischen Fassung" })).toHaveAttribute(
     "href",
-    "/bring/tobacco/france",
+    "/bring/alcohol/nigeria",
   );
 });
 
@@ -552,10 +552,10 @@ test("German index and hubs list only German pages and link back to English", as
     "/de/bring/drones/france",
   );
   await expect(page.locator('link[rel=alternate][hreflang=en]')).toHaveAttribute("href", /\/bring\/drones$/);
-  // A hub lists only countries with a German page: France's tobacco page isn't translated.
-  await page.goto("/de/bring/tobacco");
+  // A hub lists only countries with a German page: Nigeria's alcohol page isn't translated.
+  await page.goto("/de/bring/alcohol");
   await expect(page.getByTestId("de-hub-list").getByRole("link", { name: "Spanien" })).toBeVisible();
-  await expect(page.getByTestId("de-hub-list").getByRole("link", { name: "Frankreich" })).toHaveCount(0);
+  await expect(page.getByTestId("de-hub-list").getByRole("link", { name: "Nigeria" })).toHaveCount(0);
   const missing = await page.goto("/de/bring/pets");
   expect(missing?.status()).toBe(404);
 });
