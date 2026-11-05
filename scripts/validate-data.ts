@@ -521,6 +521,26 @@ function checkTranslations(): void {
  * re-checked against its source.
  */
 const MONTHS = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+/**
+ * Row text is read by travellers: research-log phrases ("in this dataset", "see
+ * unverified", "as fetched") make sense to us, not to them. Fail on them in verified rows.
+ */
+const RESEARCH_LOG = /\b(this dataset|in this environment|this project|see unverified|as fetched|pages fetched|requested drug list)\b/i;
+function checkReaderFacingText(): void {
+  for (const name of ["customs-items.json", "entry-requirements.json"]) {
+    const rows = JSON.parse(readFileSync(join(DATA_DIR, name), "utf8")) as Array<Record<string, any>>;
+    for (const r of rows) {
+      if (r.status !== "verified") continue;
+      const text = JSON.stringify([r.summary, r.limits, r.notes, r.documentsNeeded, r.procedure, r.letter?.items, r.transit?.description]);
+      const m = text.match(RESEARCH_LOG);
+      if (m) {
+        const id = (r.slug as string) ?? `${r.nationality}→${r.destination}`;
+        errors.push(`${name}: ${id} has research-log wording ("${m[0]}"); rewrite it for travellers`);
+      }
+    }
+  }
+}
+
 function warnPassedAnnouncements(): void {
   const today = new Date().toISOString().slice(0, 10);
   const re = /\b(take|takes|will take|comes? into|will come into|will start|starts|will apply|will end|will be replaced)\b[^.]{0,40}?\b(\d{1,2}) (january|february|march|april|may|june|july|august|september|october|november|december) (\d{4})/gi;
@@ -596,6 +616,7 @@ checkNoSecondarySourcing();
 checkTranslations();
 checkTimedStepsMatchText();
 warnPassedAnnouncements();
+checkReaderFacingText();
 warnUnsupportedNames();
 
 console.log(
