@@ -420,5 +420,51 @@
     },
     "translated_at": "2026-11-05",
     "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "prescription-medication-us",
+    "sourceHash": "d34f68d8",
+    "fields": {
+      "summary": "Faustregel der CBP: bis zu 90 Tage Vorrat für den persönlichen Gebrauch, mit Rezept oder ärztlichem Schreiben auf Englisch, in der Originalverpackung.",
+      "limitsDescription": "Faustregel der CBP: Nehmen Sie höchstens einen Vorrat für 90 Tage mit, für Ihren persönlichen Gebrauch während des Aufenthalts. Führen Sie ein gültiges Rezept oder ein ärztliches Schreiben auf Englisch mit und lassen Sie das Arzneimittel in der Originalverpackung mit den Anweisungen des Arztes (falls Sie diese nicht haben, nehmen Sie eine Kopie des Rezepts oder ein Schreiben Ihres Arztes mit).",
+      "limitsQuantity": "Vorrat für 90 Tage (Faustregel)",
+      "notes": "Laut CBP betrachtet die FDA Arzneimittel aus anderen Ländern, auch im Ausland hergestellte Fassungen von in den USA zugelassenen Arzneimitteln, grundsätzlich als nicht zugelassen und erlaubt sie nur in begrenzten Fällen (FDA Regulatory Procedures Manual, Kapitel 9-2). Kontrollierte Substanzen müssen zusätzlich die Anforderungen der Drogenbehörde DEA erfüllen. Bei einem Aufenthalt von mehr als 90 Tagen können Ihnen weitere Arzneimittel per Post oder Kurier geschickt werden, mit Unterlagen, die zeigen, dass sie für Ihren eigenen Gebrauch sind."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-us",
+    "sourceHash": "cc41d0c7",
+    "fields": {
+      "summary": "Kontrollierte Arzneimittel sind für den persönlichen Gebrauch erlaubt, wenn sie in der Originalverpackung sind und Sie sie bei der CBP anmelden.",
+      "limitsDescription": "Privatpersonen dürfen mit einer kontrollierten Substanz der Listen II–V für den persönlichen medizinischen Gebrauch die US-Grenze überqueren, wenn (1) sie in der Originalverpackung ist, in der sie abgegeben wurde, und (2) die reisende Person sie bei einem CBP-Beamten anmeldet und dabei entweder den Handels- oder chemischen Namen und die Liste oder den verschreibenden Arzt bzw. die Apotheke und die Rezeptnummer angibt. Für Personen mit Wohnsitz in den USA, die solche im Ausland erhaltenen Arzneimittel in die USA mitbringen, gilt eine Obergrenze von 50 Dosiseinheiten für alle diese Arzneimittel zusammen; sie gilt nicht für Arzneimittel, die vor der Abreise rechtmäßig in den USA erhalten wurden, und die Quelle sagt nicht, dass sie für Besucher ohne Wohnsitz gilt, die mit ihrem eigenen ausländischen Rezept einreisen.",
+      "limitsQuantity": "50 Dosiseinheiten (nur Personen mit Wohnsitz in den USA, für im Ausland erhaltene Arzneimittel)",
+      "notes": "Das ist eine Vorschrift der DEA (21 CFR 1301.26), getrennt von der 90-Tage-Faustregel der CBP im allgemeinen Eintrag zu verschreibungspflichtigen Arzneimitteln – beide gelten zusammen. In den Listen der DEA führt Liste II (21 CFR 1308.12) Amphetamin (Adderall), Methylphenidat (Ritalin), Lisdexamfetamin (Vyvanse), Oxycodon und Codein auf und Liste IV (21 CFR 1308.14) Alprazolam (Xanax), Diazepam (Valium), Clonazepam (Klonopin), Tramadol und Modafinil; alle fallen also in den Bereich II–V, den diese Ausnahme abdeckt. Der Text der Vorschrift nennt diese Wirkstoffe nicht mit Markennamen, sondern nur nach Liste."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "injectable-medication-us",
+    "sourceHash": "2c80d9de",
+    "fields": {
+      "summary": "Besucher dürfen bis zu 90 Tage Vorrat an Insulin oder von der FDA zugelassenen GLP-1-Arzneimitteln mitbringen oder schicken lassen.",
+      "limitsDescription": "Als von der FDA zugelassene verschreibungspflichtige Arzneimittel folgen GLP-1-Arzneimittel (Semaglutid, Tirzepatid) und Insulin dem Rahmen der FDA für die persönliche Einfuhr: Die FDA erlaubt ausländischen Staatsangehörigen, einen Vorrat für 90 Tage mitzubringen oder schicken zu lassen. Für Arzneimittel, die per Post oder Kurier kommen, empfiehlt die FDA Unterlagen wie eine Kopie Ihres Visums oder Reisepasses, ein Schreiben Ihres Arztes oder eine Kopie des Rezepts auf Englisch.",
+      "limitsQuantity": "etwa 90 Tage Vorrat (ausländische Besucher)",
+      "notes": "Rezepturarzneimittel oder nicht von der FDA zugelassene Semaglutid- oder Tirzepatid-Produkte werden anders behandelt: Die Politik der FDA zur persönlichen Einfuhr lässt nicht zugelassene Arzneimittel nur nach Ermessen zu, wenn eine ernste Erkrankung vorliegt, es im Inland keine Versorgung gibt, kein unvertretbares Risiko besteht und der persönliche Gebrauch schriftlich bestätigt wird. Echtes Ozempic, Wegovy, Mounjaro oder Zepbound ist von der FDA zugelassen, dieser strengere Weg für nicht zugelassene Arzneimittel sollte dafür also nicht gelten; bei einer Rezepturzubereitung ist mit genauerer Prüfung zu rechnen. Die Sicherheitskontrolle von Pens und Nadeln am Flughafen ist eine eigene Frage, für die die TSA zuständig ist, und wird hier nicht behandelt."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "peptides-us",
+    "sourceHash": "af24abff",
+    "fields": {
+      "summary": "Nicht mitnehmen: Die Einfuhr von in den USA nicht zugelassenen Arzneimitteln wie BPC-157 oder TB-500 ist verboten, auch für den persönlichen Gebrauch.",
+      "notes": "Das betrifft Peptide, die keine von der FDA zugelassenen Arzneimittel sind, etwa BPC-157, TB-500, Melanotan II, CJC-1295, Ipamorelin und Retatrutid. Die FDA sagt, dass die Einfuhr eines in den USA nicht zugelassenen Arzneimittels verboten ist, auch für den persönlichen Gebrauch und auch wenn es in einem anderen Land zugelassen ist. Ein Etikett „nur für Forschungszwecke“ oder „nicht für den menschlichen Verzehr“ ändert daran nichts: In einem Warnschreiben vom März 2026 erklärte die FDA, dass solche Etiketten nicht verhindern, dass ein Produkt als Arzneimittel für Menschen behandelt wird. Die FDA kann einen persönlichen Vorrat in begrenzten Fällen durchlassen (in der Regel höchstens 3 Monate, für den eigenen Gebrauch und bei einer ernsten Erkrankung ohne Behandlungsmöglichkeit in den USA oder bei einem Produkt ohne bekanntes erhebliches Gesundheitsrisiko). Das liegt im Ermessen der FDA und ist kein Anspruch, und die FDA hat bei den meisten hier genannten Peptiden auf Sicherheitsbedenken hingewiesen. Von der FDA zugelassene Peptid-Arzneimittel wie Ozempic, Wegovy, Mounjaro oder Insulin sind ein anderer Fall: siehe den Eintrag zu spritzbaren Arzneimitteln."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
   }
 ]
