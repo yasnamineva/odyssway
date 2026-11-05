@@ -23295,19 +23295,24 @@
     "slug": "tobacco-kg",
     "names": [
       "cigarettes",
-      "tobacco"
+      "tobacco",
+      "cigars",
+      "cigarillos",
+      "heated tobacco",
+      "iqos sticks"
     ],
     "destination": "KG",
     "category": "tobacco",
     "verdict": "allowed_with_limits",
     "limits": {
-      "description": "Duty-free: 200 cigarettes or 200 g of tobacco, as part of goods for personal use."
+      "description": "Duty-free, one of: 200 cigarettes, or 50 cigars or cigarillos, or 200 heated-tobacco sticks, or 250 g of tobacco, or an assortment weighing no more than 250 g in total.",
+      "quantity": "200 cigarettes or 50 cigars or 200 sticks or 250 g"
     },
-    "summary": "Duty-free: 200 cigarettes or 200 g of tobacco.",
-    "notes": "No Kyrgyzstan customs page stating this was read for this site; this row rests on the German government's travel advice.",
+    "summary": "Duty-free, one of: 200 cigarettes, 50 cigars, 200 heated-tobacco sticks or 250 g of tobacco.",
+    "notes": "Kyrgyzstan applies the Eurasian Economic Union's common rules (EEC Council Decision No. 107); the same tobacco norm applies whether you arrive by air or overland. The German Foreign Office's advice had given 200 g of tobacco; Kyrgyz Customs and the EAEU decision say 250 g, and those are used.",
     "legal_source": {
-      "name": "Auswärtiges Amt — Kirgisistan: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 13.10.2026)",
-      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/kirgisistansicherheit-206738"
+      "name": "State Customs Service of the Kyrgyz Republic — Правила ввоза товаров для личного пользования на территорию Евразийского экономического союза (rules for importing goods for personal use into the EAEU, 11 February 2025)",
+      "url": "https://customs.gov.kg/site/ru/master/customskg/jeke-adamdar-ucun/pravila-vvoza-tovarov-dlja-lichnogo-polzovanija-na-territoriju-evrazijskogo-ehkonomicheskogo-sojuza"
     },
     "allowance": {
       "groups": [
@@ -23322,41 +23327,107 @@
             },
             {
               "products": [
-                "smoking_tobacco"
+                "cigars",
+                "cigarillos"
+              ],
+              "amount": 50
+            },
+            {
+              "products": [
+                "heated_tobacco_sticks"
               ],
               "amount": 200
+            },
+            {
+              "products": [
+                "smoking_tobacco"
+              ],
+              "amount": 250
             }
           ]
         }
       ]
     },
-    "verified_at": "2026-10-31",
+    "verified_at": "2026-11-05",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Tobacco products are also limited to: 200 cigarettes or 50 cigars (cigarillos), or 200 heated-tobacco products ('sticks'), or 250 g of tobacco, or an assortment with a total weight of no more than 250 g (by air, overland and by carrier)",
+        "name": "State Customs Service of the Kyrgyz Republic — Правила ввоза товаров для личного пользования на территорию Евразийского экономического союза (rules for importing goods for personal use into the EAEU, 11 February 2025)",
+        "url": "https://customs.gov.kg/site/ru/master/customskg/jeke-adamdar-ucun/pravila-vvoza-tovarov-dlja-lichnogo-polzovanija-na-territoriju-evrazijskogo-ehkonomicheskogo-sojuza"
+      },
+      {
+        "claim": "Annex 1 items 1-4: 200 cigarettes, or 50 cigars (cigarillos), or 200 heated-tobacco sticks, or 250 g of tobacco, or an assortment of total weight no more than 250 g",
+        "name": "Eurasian Economic Commission Council Decision No. 107 of 20 December 2017, Annex 1 (as amended to Decision No. 87 of 18 October 2024)",
+        "url": "https://eec.eaeunion.org/upload/medialibrary/f10/20q0ib40qipuw2rqxux3giq629afbkij/Prilozhenie-1_107.pdf"
+      },
+      {
+        "claim": "Conflict recorded: says 200 cigarettes or 200 g of tobacco; superseded here by the customs authority and the EAEU decision",
+        "name": "Auswärtiges Amt — Kirgisistan: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 13.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/kirgisistansicherheit-206738"
+      }
+    ]
   },
   {
     "slug": "alcohol-kg",
     "names": [
       "alcohol",
       "wine",
+      "beer",
       "spirits",
-      "beer"
+      "vodka",
+      "whisky",
+      "liquor",
+      "brandy"
     ],
     "destination": "KG",
     "category": "alcohol",
     "verdict": "allowed_with_limits",
     "limits": {
-      "description": "Duty-free: 1.5 litres of alcohol and 2 litres of wine, as part of goods for personal use."
+      "description": "Up to 3 litres of drinks over 0.5% alcohol duty-free in your baggage (beer, wine and spirits all count, 3 litres in total). Between 3 and 5 litres, you pay duty of EUR 10 for each litre above 3.",
+      "quantity": "3 litres duty-free; duty from 3 to 5 litres"
     },
-    "summary": "Duty-free: 1.5 litres of alcohol and 2 litres of wine.",
-    "notes": "The advice doesn't say which drinks count as 'alcohol' rather than wine. No Kyrgyzstan customs page stating this was read for this site; this row rests on the German government's travel advice.",
+    "summary": "Up to 3 litres of alcohol duty-free; between 3 and 5 litres you pay EUR 10 for each extra litre.",
+    "notes": "Kyrgyzstan applies the Eurasian Economic Union's common rules for goods for personal use (EEC Council Decision No. 107). The 3 litres sit outside the general value allowance. The German Foreign Office's advice had given 1.5 litres of alcohol and 2 litres of wine; Kyrgyz Customs and the EAEU decision say 3 litres in total, and those are used.",
     "legal_source": {
-      "name": "Auswärtiges Amt — Kirgisistan: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 13.10.2026)",
-      "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/kirgisistansicherheit-206738"
+      "name": "State Customs Service of the Kyrgyz Republic — Правила ввоза товаров для личного пользования на территорию Евразийского экономического союза (rules for importing goods for personal use into the EAEU, 11 February 2025)",
+      "url": "https://customs.gov.kg/site/ru/master/customskg/jeke-adamdar-ucun/pravila-vvoza-tovarov-dlja-lichnogo-polzovanija-na-territoriju-evrazijskogo-ehkonomicheskogo-sojuza"
     },
-    "verified_at": "2026-10-31",
+    "verified_at": "2026-11-05",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "allowance": {
+      "groups": [
+        {
+          "kind": "total",
+          "products": [
+            "spirits",
+            "intermediate",
+            "still_wine",
+            "beer"
+          ],
+          "amount": 3
+        }
+      ]
+    },
+    "_sources": [
+      {
+        "claim": "Alcoholic drinks over 0.5% vol (HS 2203 00, 2206 00 and 2208, except ethyl alcohol and kvass): accompanied/unaccompanied baggage up to 3 litres per person without duties and taxes; above 3 litres but not more than 5 litres, EUR 10 per additional litre; by carrier or post, up to 5 litres at EUR 10 per litre",
+        "name": "State Customs Service of the Kyrgyz Republic — Правила ввоза товаров для личного пользования на территорию Евразийского экономического союза (rules for importing goods for personal use into the EAEU, 11 February 2025)",
+        "url": "https://customs.gov.kg/site/ru/master/customskg/jeke-adamdar-ucun/pravila-vvoza-tovarov-dlja-lichnogo-polzovanija-na-territoriju-evrazijskogo-ehkonomicheskogo-sojuza"
+      },
+      {
+        "claim": "Annex 1 item 5: alcoholic drinks over 0.5% vol imported in accompanied and/or unaccompanied baggage: 3 l (edition including Decisions No. 91/2018 to No. 87/2024)",
+        "name": "Eurasian Economic Commission Council Decision No. 107 of 20 December 2017, Annex 1 (as amended to Decision No. 87 of 18 October 2024)",
+        "url": "https://eec.eaeunion.org/upload/medialibrary/f10/20q0ib40qipuw2rqxux3giq629afbkij/Prilozhenie-1_107.pdf"
+      },
+      {
+        "claim": "Conflict recorded: says 1.5 litres of alcohol and 2 litres of wine; superseded here by the customs authority and the EAEU decision",
+        "name": "Auswärtiges Amt — Kirgisistan: Reise- und Sicherheitshinweise, Einreise und Zoll (Stand 13.10.2026)",
+        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/kirgisistansicherheit-206738"
+      }
+    ]
   },
   {
     "slug": "drones-kg",
