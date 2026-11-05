@@ -611,8 +611,8 @@ measure.
 - **Cost guardrails (owner request 2026-11-05: about EUR 5 a day at most).** Code side done
   2026-11-05: every API route has a per-instance request budget (429 with Retry-After, no
   IP or identifier kept), counter routes refuse bodies over 1 KB, the data API is cached at
-  the CDN for a day (each deploy starts a fresh cache), and the blog feed and destinations
-  API are built at deploy time. Only `/trip-check` and the API routes still run a function
+  the CDN for a day (each deploy starts a fresh cache), and the blog feed is built at
+  deploy time. Only `/trip-check` and the API routes still run a function
   per request. **Dashboard steps only the owner can take** (Vercel has no daily cap):
   1. Check the plan. Hobby (free): there is no bill; over the limits the site pauses. Pro:
      Settings → Billing → Spend Management, set the on-demand budget (Vercel counts per

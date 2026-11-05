@@ -2,9 +2,6 @@ import { NextResponse } from "next/server";
 import { DATA_API_BUDGET, retryAfterSeconds, withinBudget } from "../../../../lib/rate-limit";
 import { destinations } from "../../../../lib/destinations";
 
-/** No inputs: built once at deploy time and served from the CDN. */
-export const dynamic = "force-static";
-
 /** Data only changes with a deploy, and each deploy starts a fresh CDN cache. */
 const CDN_CACHE = "public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800";
 
