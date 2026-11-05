@@ -1298,6 +1298,73 @@
     ]
   },
   {
+    "slug": "drones-pt",
+    "names": [
+      "dji",
+      "drone",
+      "drones",
+      "fpv drone",
+      "quadcopter"
+    ],
+    "destination": "PT",
+    "category": "drones",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "No dedicated customs rule (the drone counts toward the EU personal-goods allowance: €300 by land, €430 by air or sea). To fly, the EU drone rules apply, and Portugal adds compulsory civil liability insurance for drones over 900 g, with minimum cover from 0.26 million SDR (900 g–1.5 kg) to 0.75 million SDR (over 20 kg)."
+    },
+    "notes": "Portugal's insurance rule is Article 10 of Decree-Law 58/2018, which stayed in force when Decree-Law 87/2021 repealed its national registration rules in favour of the EU regulation. It doesn't apply if you already have civil liability insurance for sport. Minimum cover: 0.26 million SDR (900 g–1.5 kg), 0.38 million (1.5–4 kg), 0.56 million (4–20 kg), 0.75 million (over 20 kg), per year, for damage in flight or on the ground (Portaria 2/2021). If you live outside the EU and Portugal is the first EU country you fly in, ANAC says you can register as a UAS operator with it at uas.anac.pt; you need an active Chave Móvel Digital (Portugal's digital ID, activated at a Loja do Cidadão) before you start. If you already registered in another EU country, you don't register again. The EU rules also apply (see the EU entry): keep the drone in sight, no higher than 120 metres, not over people unless class-labelled or under 250 g.",
+    "summary": "No customs rule. To fly: EU drone rules, plus compulsory liability insurance for drones over 900 g; register with ANAC if Portugal is your first EU country.",
+    "legal_source": {
+      "name": "Decree-Law No. 58/2018 of 23 July (Diário da República, 1st series, No. 140), Article 10 — compulsory civil liability insurance for UAS",
+      "url": "https://files.diariodarepublica.pt/1s/2018/07/14000/0367903684.pdf"
+    },
+    "verified_at": "2026-11-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Art. 10(1): UAS operators must take out compulsory civil liability insurance for damage caused by UAS whose aircraft has a maximum operating mass above 900 g; (2) not applicable to operators with civil liability insurance for sports practice",
+        "name": "Decree-Law No. 58/2018 of 23 July (Diário da República, 1st series, No. 140), Article 10 — compulsory civil liability insurance for UAS",
+        "url": "https://files.diariodarepublica.pt/1s/2018/07/14000/0367903684.pdf"
+      },
+      {
+        "claim": "Art. 23(1): repealed are articles 3 to 8 and 11, paragraphs a) to g) of no. 2 and nos. 3 and 4 of article 12, and nos. 1 to 3 of article 16 of Decree-Law 58/2018 (article 10 is not repealed); recital: registration provisions repealed as the matter is governed by Implementing Regulation (EU) 2019/947",
+        "name": "Decree-Law No. 87/2021 of 20 October (UAS sanctions regime), Article 23 — repealed provisions of Decree-Law 58/2018 (ANAC copy)",
+        "url": "https://www.anac.pt/SiteCollectionDocuments/UAS_DRONES/D.L.%20n.%C2%BA%2087_2021%20Regime%20sancionat%C3%B3rio%20UAS.pdf"
+      },
+      {
+        "claim": "Art. 2: minimum insured capital per year: >900 g to 1.5 kg 0.26 million SDR; >1.5 to 4 kg 0.38 million; >4 to 20 kg 0.56 million; >20 kg 0.75 million; covers accidents in flight and on the ground. Art. 3: covers claims from use in national territory. Art. 11: obligation applies from 30 days after publication",
+        "name": "Portaria No. 2/2021 of 4 January — coverage, conditions and minimum sums of UAS civil liability insurance",
+        "url": "https://files.diariodarepublica.pt/1s/2021/01/00100/0000500008.pdf"
+      },
+      {
+        "claim": "Third-country operator: if Portugal is the first member state where you will operate, you may register as a UAS operator with ANAC; if already registered in another member state, no need to register in Portugal; before registering you must have an active Chave Móvel Digital (activation at any Loja do Cidadão); platform https://uas.anac.pt; select 'Portugal' as country of origin",
+        "name": "ANAC (Portuguese Civil Aviation Authority) — 'Comprei um drone e pretendo operar em Portugal' (open-category guide)",
+        "url": "https://www.anac.pt/sitecollectiondocuments/UAS_DRONES/guia-cat-aberta-pt.pdf"
+      },
+      {
+        "claim": "Personal-goods value thresholds",
+        "name": "Council Directive 2007/74/EC, Art. 7",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32007L0074"
+      },
+      {
+        "claim": "Non-EU residents must register with the NAA of the first EU country where they intend to operate; registration number on a sticker on all drones and in the remote ID; valid across Europe; specific category needs a declaration or authorisation; home-country training not recognised (Art. 41(1)-(2) Reg. 2019/945 cited by EASA)",
+        "name": "EASA — FAQ: I am a non-EU visitor and I want to fly a drone in Europe",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/i-am-non-eu-visitor-and-i-want-fly-drone-europe"
+      },
+      {
+        "claim": "Open category conditions: VLOS, max 120 m, no dangerous goods or dropping material, not over people unless class-labelled or under 250 g",
+        "name": "EASA — FAQ: 'open' category",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/open-category"
+      },
+      {
+        "claim": "No operator registration needed if the drone weighs less than 250 g and has no camera or other sensor able to detect personal data, or weighs less than 250 g and complies with the Toy Directive 2009/48/EC (EASA cites Art. 21 of Reg. 2019/947); before operating in another state, check whether the area is covered by a geographical zone published by that state",
+        "name": "EASA — Drones (UAS) FAQs: 'Do I need to register my drone?' and 'Conduct an operation in the open category in a state other than the one I am registered'",
+        "url": "https://www.easa.europa.eu/en/the-agency/faqs/drones-uas"
+      }
+    ]
+  },
+  {
     "slug": "drones-at",
     "names": [
       "dji",
