@@ -489,7 +489,7 @@ function checkTranslations(): void {
               .replace(/\b(Mio|Nr|Art|bzw|ca|usw|Tel|Abs|vgl|e\.g|i\.e|No|St)\./g, "$1")
               .split(/[.!?](?:\s|$)/)
               .filter((p) => p.trim().length > 3).length;
-          if (sentences(trText) > sentences(enText) + 1) {
+          if (sentences(trText) > sentences(enText)) {
             console.warn(`⚠ ${where}: "${k}" has ${sentences(trText)} sentences vs ${sentences(enText)} in English — check nothing was added.`);
           }
           for (const g of glossary) {
