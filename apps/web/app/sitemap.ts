@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { blogPosts } from "../lib/blog";
 import { BRING_CATEGORIES } from "../lib/bring-categories";
 import { bringPairs } from "../lib/bring-pages";
+import { allRowsTranslated, germanPairs } from "../lib/translations";
 import { countriesVerifiedAt } from "../lib/countries";
 import { customsItems, destinationPath, destinations, entryRequirements } from "../lib/destinations";
 import { schengenCustomsRows, schengenDestinations } from "../lib/schengen-destinations";
@@ -107,11 +108,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: latestVerified(pair.rows) ?? DATA_LAST_UPDATED,
       priority: 0.5,
     })),
-    ...bringPairs.map((p) => ({
-      url: `${BASE}/bring/${p.itemSlug}/${p.destinationSlug}`,
-      lastModified: p.lastVerified ?? CONTENT_CHECKED,
-      priority: 0.6,
-    })),
+    ...bringPairs.map((p) => {
+      const en = `${BASE}/bring/${p.itemSlug}/${p.destinationSlug}`;
+      const de = `${BASE}/de/bring/${p.itemSlug}/${p.destinationSlug}`;
+      const translated = allRowsTranslated(p.rows, "de");
+      return {
+        url: en,
+        lastModified: p.lastVerified ?? CONTENT_CHECKED,
+        priority: 0.6,
+        ...(translated ? { alternates: { languages: { en, de } } } : {}),
+      };
+    }),
+    // German pages (pilot locale): only where every row is translated.
+    ...germanPairs().map((p) => {
+      const en = `${BASE}/bring/${p.itemSlug}/${p.destinationSlug}`;
+      const de = `${BASE}/de/bring/${p.itemSlug}/${p.destinationSlug}`;
+      return { url: de, lastModified: p.lastVerified ?? CONTENT_CHECKED, priority: 0.5, alternates: { languages: { en, de } } };
+    }),
     ...Object.entries(BRING_CATEGORIES).map(([category, meta]) => {
       const dates = customsItems
         .filter((i) => i.category === category && i.status === "verified" && i.verified_at)

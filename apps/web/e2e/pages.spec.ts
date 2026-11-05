@@ -511,3 +511,19 @@ test("Schengen countries have a hub and item pages built from the shared Schenge
   await expect(page.getByRole("link", { name: /Nicotine pouches/ })).toHaveAttribute("href", "/bring/tobacco/france");
   await expect(page.getByRole("link", { name: /^Tobacco/ })).toHaveAttribute("href", "/bring/tobacco/france");
 });
+
+test("German drone pages: translated rules, machine-translation notice, hreflang both ways; untranslated pairs 404", async ({ page }) => {
+  await page.goto("/de/bring/drones/france");
+  await expect(page.locator("article[lang=de] h1")).toHaveText("Frankreich: Darf man eine Drohne mitnehmen?");
+  await expect(page.getByTestId("de-translation-notice")).toContainText("maschinelle Übersetzung");
+  await expect(page.getByTestId("de-translation-notice").getByRole("link", { name: "Englische Fassung" })).toHaveAttribute(
+    "href",
+    "/bring/drones/france",
+  );
+  await expect(page.locator('link[rel=alternate][hreflang=en]')).toHaveAttribute("href", /\/bring\/drones\/france$/);
+  await expect(page.getByTestId("de-same-item-elsewhere").getByRole("link", { name: "Deutschland" })).toBeVisible();
+  await page.goto("/bring/drones/france");
+  await expect(page.locator('link[rel=alternate][hreflang=de]')).toHaveAttribute("href", /\/de\/bring\/drones\/france$/);
+  const missing = await page.goto("/de/bring/alcohol/france");
+  expect(missing?.status()).toBe(404);
+});

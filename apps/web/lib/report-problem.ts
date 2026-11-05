@@ -68,3 +68,20 @@ export function suggestSourceHref({
   ].join("\n");
   return `mailto:${OPERATOR.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
+
+/**
+ * A pre-filled email for reporting a problem with a machine translation: names the
+ * translated page and its English original, so the wording can be compared with the
+ * verified English text. Opens the reader's own mail app, like reportProblemHref.
+ */
+export function translationProblemHref({ path, englishPath, locale }: { path: string; englishPath: string; locale: string }): string {
+  const subject = `Translation check (${locale}): ${path}`;
+  const body = [
+    `Translated page: ${SITE_URL}${path}`,
+    `English original: ${SITE_URL}${englishPath}`,
+    "",
+    "What reads wrong or unclear (quote the sentence):",
+    "",
+  ].join("\n");
+  return `mailto:${OPERATOR.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}

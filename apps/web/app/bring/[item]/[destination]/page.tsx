@@ -9,6 +9,7 @@ import CustomsRowCard from "../../../../components/CustomsRowCard";
 import { productsForDestination } from "../../../../lib/medication-products";
 import { destinationPath, withArticle } from "../../../../lib/destinations";
 import { blogPosts } from "../../../../lib/blog";
+import { allRowsTranslated } from "../../../../lib/translations";
 
 interface Params {
   item: string;
@@ -54,7 +55,19 @@ export async function generateMetadata({
   return {
     title,
     description,
-    alternates: { canonical: `/bring/${pair.itemSlug}/${pair.destinationSlug}` },
+    alternates: {
+      canonical: `/bring/${pair.itemSlug}/${pair.destinationSlug}`,
+      // A German page exists only when every row is translated (lib/translations.ts).
+      ...(allRowsTranslated(pair.rows, "de")
+        ? {
+            languages: {
+              en: `/bring/${pair.itemSlug}/${pair.destinationSlug}`,
+              de: `/de/bring/${pair.itemSlug}/${pair.destinationSlug}`,
+              "x-default": `/bring/${pair.itemSlug}/${pair.destinationSlug}`,
+            },
+          }
+        : {}),
+    },
     openGraph: { title, description },
   };
 }
