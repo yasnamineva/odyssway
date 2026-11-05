@@ -9,7 +9,7 @@ import CustomsRowCard from "../../../../components/CustomsRowCard";
 import { productsForDestination } from "../../../../lib/medication-products";
 import { destinationPath, withArticle } from "../../../../lib/destinations";
 import { blogPosts } from "../../../../lib/blog";
-import { allRowsTranslated } from "../../../../lib/translations";
+import { hasGermanPage } from "../../../../lib/translations";
 
 interface Params {
   item: string;
@@ -57,8 +57,8 @@ export async function generateMetadata({
     description,
     alternates: {
       canonical: `/bring/${pair.itemSlug}/${pair.destinationSlug}`,
-      // A German page exists only when every row is translated (lib/translations.ts).
-      ...(allRowsTranslated(pair.rows, "de")
+      // A German page exists only when every row is translated and headed (lib/translations.ts).
+      ...(hasGermanPage(pair)
         ? {
             languages: {
               en: `/bring/${pair.itemSlug}/${pair.destinationSlug}`,

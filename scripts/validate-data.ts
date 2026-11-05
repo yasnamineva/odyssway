@@ -411,11 +411,11 @@ function checkTranslations(): void {
   } catch {
     return;
   }
-  const english: Record<string, Map<string, { status: unknown; fields: TranslatableFields }>> = {
+  const english: Record<string, Map<string, { status: unknown; fields: TranslatableFields; category?: string }>> = {
     "customs-items.json": new Map(
       (JSON.parse(readFileSync(join(DATA_DIR, "customs-items.json"), "utf8")) as Array<Record<string, any>>).map((r) => [
         r.slug as string,
-        { status: r.status, fields: customsRowFields(r) },
+        { status: r.status, fields: customsRowFields(r), category: r.category as string },
       ]),
     ),
     "entry-requirements.json": new Map(
@@ -428,12 +428,14 @@ function checkTranslations(): void {
   for (const locale of locales) {
     // Official terms for this locale: when the English uses a term, the translation
     // must use the official equivalent (GROWTH_AND_ROADMAP.md §5.5, quality checks).
-    let glossary: Array<{ en: RegExp; de: string; label: string }> = [];
+    let glossary: Array<{ en: RegExp; de: string; label: string; categories?: string[] }> = [];
     const glossaryFile = join(dir, locale, "glossary.json");
     try {
-      glossary = (JSON.parse(readFileSync(glossaryFile, "utf8")) as Array<{ en: string; de: string; source?: { url?: string } }>).map((g) => {
+      glossary = (
+        JSON.parse(readFileSync(glossaryFile, "utf8")) as Array<{ en: string; de: string; categories?: string[]; source?: { url?: string } }>
+      ).map((g) => {
         if (!g.source?.url) errors.push(`${rel(glossaryFile)}: "${g.de}" has no official source`);
-        return { en: new RegExp(g.en, "i"), de: g.de, label: g.en };
+        return { en: new RegExp(g.en, "i"), de: g.de, label: g.en, categories: g.categories };
       });
     } catch {
       // no glossary for this locale
@@ -478,6 +480,8 @@ function checkTranslations(): void {
           const enText = Array.isArray(enValue) ? enValue.join("\n") : enValue;
           const trText = Array.isArray(trValue) ? trValue.join("\n") : trValue;
           for (const g of glossary) {
+            // A term can be scoped to customs categories (a medicine term isn't a drone term).
+            if (g.categories && !(en.category && g.categories.includes(en.category))) continue;
             if (g.en.test(enText) && !trText.includes(g.de)) {
               errors.push(`${where}: "${k}" uses /${g.label}/ but the translation lacks the official term "${g.de}"`);
             }

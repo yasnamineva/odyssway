@@ -1,6 +1,8 @@
 import { customsRowFields, translationSourceHash, type CustomsItemRecord, type TranslatableFields } from "@odyssway/engine";
 import deCustomsItems from "../../../data/i18n/de/customs-items.json";
 import { bringPairs, type BringPair } from "./bring-pages";
+import { customsCodeFor } from "./countries";
+import deMessages from "../messages/de.json";
 
 /**
  * Machine translations of verified English rows (GROWTH_AND_ROADMAP.md §5.5).
@@ -75,7 +77,42 @@ export function countryName(code: string, locale: TranslatedLocale, fallback: st
   }
 }
 
-/** "Can I bring it?" pairs whose every row is translated in German (the /de pages). */
+/** Kind of heading a row gets on a German page with several rows. */
+export type GermanRowHeading = { kind: "shared" } | { kind: "label"; label: string } | { kind: "national" };
+
+const DE_ROW_LABELS = (deMessages.dePages as { rowLabels: Record<string, string> }).rowLabels;
+
+/** True for a customs-territory row shown on a member state's page (e.g. drones-eu on France). */
+export function isSharedRow(slug: string, destinationCode: string): boolean {
+  const territory = customsCodeFor(destinationCode);
+  return territory !== destinationCode && slug.endsWith(`-${territory.toLowerCase()}`);
+}
+
+/**
+ * How a row is headed on a German page: the shared EU row, a German label for the
+ * row's kind (rowLabels in messages/de.json), or "additional rules in {country}" for a
+ * national row shown next to the EU one. Null when none fits: that page isn't built.
+ */
+export function germanRowHeading(slug: string, pair: BringPair): GermanRowHeading | null {
+  const code = pair.destination.code;
+  if (isSharedRow(slug, code)) return { kind: "shared" };
+  const base = slug.replace(new RegExp(`-(${code.toLowerCase()})$`), "");
+  const label = DE_ROW_LABELS[base];
+  if (label) return { kind: "label", label };
+  if (pair.rows.some((r) => isSharedRow(r.slug, code))) return { kind: "national" };
+  return null;
+}
+
+/** "Can I bring it?" pairs whose every row is translated in German and can be headed (the /de pages). */
 export function germanPairs(): BringPair[] {
-  return bringPairs.filter((p) => allRowsTranslated(p.rows, "de"));
+  return bringPairs.filter(
+    (p) => allRowsTranslated(p.rows, "de") && (p.rows.length === 1 || p.rows.every((r) => germanRowHeading(r.slug, p) !== null)),
+  );
+}
+
+let germanSet: Set<BringPair> | null = null;
+/** True when the pair has a German page (the same rule the /de route uses). */
+export function hasGermanPage(pair: BringPair): boolean {
+  germanSet ??= new Set(germanPairs());
+  return germanSet.has(pair);
 }

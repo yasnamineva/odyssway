@@ -25,8 +25,11 @@ describe("German translations", () => {
   it("builds German pages only for fully translated pairs", () => {
     const pages = germanPairs();
     expect(pages.length).toBeGreaterThan(0);
-    expect(pages.every((p) => p.category === "drones")).toBe(true);
-    expect(pages.some((p) => p.destinationSlug === "france")).toBe(true);
+    expect(pages.some((p) => p.category === "drones" && p.destinationSlug === "france")).toBe(true);
+    // Turkey's medicine page: both rows translated and both have German row labels.
+    expect(pages.some((p) => p.category === "medication" && p.destinationSlug === "turkey")).toBe(true);
+    // Alcohol isn't translated anywhere yet.
+    expect(pages.some((p) => p.category === "alcohol")).toBe(false);
   });
 
   it("names countries in German, with short forms where CLDR is long", () => {

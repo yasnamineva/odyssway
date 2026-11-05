@@ -3,9 +3,8 @@ import { createTranslator } from "next-intl";
 import { notFound } from "next/navigation";
 import deMessages from "../../../../../messages/de.json";
 import { bringPair, type BringPair } from "../../../../../lib/bring-pages";
-import { allRowsTranslated, countryName, germanPairs, translatedCustomsRow } from "../../../../../lib/translations";
+import { countryName, germanPairs, germanRowHeading, isSharedRow, translatedCustomsRow } from "../../../../../lib/translations";
 import { translationProblemHref } from "../../../../../lib/report-problem";
-import { customsCodeFor } from "../../../../../lib/countries";
 
 /**
  * German pages for "Can I bring it?" pairs (GROWTH_AND_ROADMAP.md §5.5, pilot locale).
@@ -35,7 +34,7 @@ function germanDate(iso: string | null | undefined): string {
 
 function pairFor(item: string, destination: string): BringPair | undefined {
   const pair = bringPair(item, destination);
-  return pair && allRowsTranslated(pair.rows, LOCALE) ? pair : undefined;
+  return pair && germanPairs().some((p) => p === pair) ? pair : undefined;
 }
 
 const englishPath = (p: BringPair) => `/bring/${p.itemSlug}/${p.destinationSlug}`;
@@ -68,12 +67,14 @@ export default async function GermanBringPage({ params }: { params: Promise<Para
 
   const country = countryName(pair.destination.code, LOCALE, pair.destination.name);
   const categoryLabel = t(`categories.${pair.category}.label`);
-  const territory = customsCodeFor(pair.destination.code);
-  const isSharedRow = (slug: string) => territory !== pair.destination.code && slug.endsWith(`-${territory.toLowerCase()}`);
-  const rowHeading = (slug: string) =>
-    pair.rows.length === 1 ? categoryLabel : isSharedRow(slug) ? t("euRows") : t("nationalRows", { country });
+  const shared = (slug: string) => isSharedRow(slug, pair.destination.code);
+  const rowHeading = (slug: string) => {
+    if (pair.rows.length === 1) return categoryLabel;
+    const h = germanRowHeading(slug, pair)!;
+    return h.kind === "shared" ? t("euRows") : h.kind === "label" ? h.label : t("nationalRows", { country });
+  };
   // National rows first, then the EU-wide row they add to.
-  const rows = [...pair.rows].sort((a, b) => Number(isSharedRow(a.slug)) - Number(isSharedRow(b.slug)));
+  const rows = [...pair.rows].sort((a, b) => Number(shared(a.slug)) - Number(shared(b.slug)));
   const elsewhere = germanPairs()
     .filter((p) => p.category === pair.category && p.destination.code !== pair.destination.code)
     .map((p) => ({ p, name: countryName(p.destination.code, LOCALE, p.destination.name) }))

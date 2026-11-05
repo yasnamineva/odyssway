@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { blogPosts } from "../lib/blog";
 import { BRING_CATEGORIES } from "../lib/bring-categories";
 import { bringPairs } from "../lib/bring-pages";
-import { allRowsTranslated, germanPairs } from "../lib/translations";
+import { germanPairs, hasGermanPage } from "../lib/translations";
 import { countriesVerifiedAt } from "../lib/countries";
 import { customsItems, destinationPath, destinations, entryRequirements } from "../lib/destinations";
 import { schengenCustomsRows, schengenDestinations } from "../lib/schengen-destinations";
@@ -111,7 +111,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...bringPairs.map((p) => {
       const en = `${BASE}/bring/${p.itemSlug}/${p.destinationSlug}`;
       const de = `${BASE}/de/bring/${p.itemSlug}/${p.destinationSlug}`;
-      const translated = allRowsTranslated(p.rows, "de");
+      const translated = hasGermanPage(p);
       return {
         url: en,
         lastModified: p.lastVerified ?? CONTENT_CHECKED,

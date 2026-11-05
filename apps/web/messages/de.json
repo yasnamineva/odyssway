@@ -20,16 +20,46 @@
     "checkYourTrip": "Ganze Reise prüfen (englisch)",
     "disclaimer": "Nur zur Information, keine Rechtsberatung. Prüfen Sie die Regeln vor der Reise bei den zuständigen Behörden.",
     "categories": {
-      "alcohol": { "label": "Alkohol", "item": "Alkohol" },
-      "tobacco": { "label": "Tabak und Zigaretten", "item": "Tabak oder Zigaretten" },
-      "cash": { "label": "Bargeld", "item": "Bargeld" },
-      "medication": { "label": "Medikamente", "item": "Medikamente" },
-      "cbd_cannabis": { "label": "Cannabis und CBD", "item": "Cannabis oder CBD" },
-      "food_animal": { "label": "Fleisch und Milchprodukte", "item": "Fleisch oder Milchprodukte" },
-      "food_plant": { "label": "Obst und Gemüse", "item": "frisches Obst oder Gemüse" },
-      "e_cigarettes": { "label": "E-Zigaretten", "item": "E-Zigaretten" },
-      "weapons": { "label": "Waffen", "item": "eine Waffe" },
-      "drones": { "label": "Drohnen", "item": "eine Drohne" }
+      "alcohol": {
+        "label": "Alkohol",
+        "item": "Alkohol"
+      },
+      "tobacco": {
+        "label": "Tabak und Zigaretten",
+        "item": "Tabak oder Zigaretten"
+      },
+      "cash": {
+        "label": "Bargeld",
+        "item": "Bargeld"
+      },
+      "medication": {
+        "label": "Medikamente",
+        "item": "Medikamente"
+      },
+      "cbd_cannabis": {
+        "label": "Cannabis und CBD",
+        "item": "Cannabis oder CBD"
+      },
+      "food_animal": {
+        "label": "Fleisch und Milchprodukte",
+        "item": "Fleisch oder Milchprodukte"
+      },
+      "food_plant": {
+        "label": "Obst und Gemüse",
+        "item": "frisches Obst oder Gemüse"
+      },
+      "e_cigarettes": {
+        "label": "E-Zigaretten",
+        "item": "E-Zigaretten"
+      },
+      "weapons": {
+        "label": "Waffen",
+        "item": "eine Waffe"
+      },
+      "drones": {
+        "label": "Drohnen",
+        "item": "eine Drohne"
+      }
     },
     "verdict": {
       "prohibited": "Verboten",
@@ -37,6 +67,11 @@
       "allowed": "Erlaubt",
       "declaration_required": "Erlaubt, muss beim Zoll angemeldet werden",
       "depends": "Kommt auf den Einzelfall an"
+    },
+    "rowLabels": {
+      "medication": "Arzneimittel",
+      "prescription-medication": "Verschreibungspflichtige Arzneimittel",
+      "controlled-medication": "Kontrollierte Arzneimittel (Betäubungsmittel und psychotrope Stoffe)"
     }
   }
 }
