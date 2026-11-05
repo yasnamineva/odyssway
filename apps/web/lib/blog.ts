@@ -159,7 +159,7 @@ export const blogPosts: BlogPost[] = [
     },
     verifiedAt: "2026-10-18",
     changelogDataset: "customs-items",
-    destinationCodes: ["US", "GB", "CA", "AU", "SG", "KR", "JP", "TH", "RS", "TZ", "HK", "PH"],
+    destinationCodes: ["US", "GB", "CA", "AU", "SG", "KR", "JP", "TH", "RS", "TZ", "HK", "PH", "HR", "SE", "LV", "SI", "BN"],
     photo: "blog-supply",
   },
   {
