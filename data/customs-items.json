@@ -23623,36 +23623,28 @@
     "category": "alcohol",
     "verdict": "depends",
     "limits": {
-      "description": "Only non-Muslims over 17 may bring in alcohol: two 1-litre bottles of wine or two 1-litre bottles of spirits, plus twelve 330 ml cans of beer per person. Declare it to customs on arrival and drink it in private. Selling alcohol and tobacco is illegal in Brunei.",
-      "quantity": "2 bottles of wine or spirits (1 L each) + 12 cans of beer (330 ml)"
+      "description": "Only non-Muslims aged 17 or over may bring in alcohol: 2 bottles of liquor (1 litre each) or up to 12 cans of beer (330 ml each) per person. Declare it to customs on arrival. You can bring more only 48 hours after your last import.",
+      "quantity": "2 × 1 L bottles or 12 × 330 ml cans"
     },
-    "summary": "Non-Muslims over 17: two 1-litre bottles of wine or spirits plus 12 cans of beer. Declare it on arrival and drink it in private.",
-    "notes": "The amounts are from Germany's travel advice; the UK's says only 'a limited amount', and the Brunei customs page it links to returned 404 for this site. You can declare through the Customs.BN app or at the airport.",
+    "summary": "Non-Muslims aged 17+ only: 2 one-litre bottles or 12 cans of beer, declared on arrival; the next import has to be at least 48 hours later.",
+    "notes": "From Brunei Customs. The alcohol is for your personal use only: it can't be given, transferred or sold to anyone, and may only be stored and drunk at your private residence. A false declaration is an offence under the Customs Order 2006 and the Excise Order 2006. Germany's travel advice had said bottles plus 12 cans; Customs says bottles or cans, and that's used here.",
     "legal_source": {
-      "name": "GOV.UK (FCDO) — Brunei travel advice: Safety and security (updated 2026-03-19)",
-      "url": "https://www.gov.uk/foreign-travel-advice/brunei/safety-and-security"
+      "name": "Royal Customs and Excise Department, Brunei — Passenger Concession",
+      "url": "https://www.customs.gov.bn/ref-rced-passenger-concession/"
     },
-    "verified_at": "2026-10-31",
+    "verified_at": "2026-11-05",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
       {
-        "claim": "Non-Muslims 17+ may import a limited amount; declare on arrival; drink in private; sale illegal",
+        "claim": "Liquor: must be non-Muslim aged 17 years and above; each person can only bring in 2 bottles of liqueurs (1 litre per bottle) or beer not exceeding 12 cans (330ml per can); every importer must declare to the proper officer of customs; subsequent importation must be 48 hours from the last importation; for the importer's personal use, not given, transferred or sold; stored and consumed only at the importer's private residence; false declaration an offence under s. 138 Customs Order 2006 and s. 144 Excise Order 2006",
+        "name": "Royal Customs and Excise Department, Brunei — Passenger Concession",
+        "url": "https://www.customs.gov.bn/ref-rced-passenger-concession/"
+      },
+      {
+        "claim": "Conflict recorded: says two 1-litre bottles plus twelve 330 ml cans; Customs says or",
         "name": "GOV.UK (FCDO) — Brunei travel advice: Safety and security (updated 2026-03-19)",
-        "url": "https://www.gov.uk/foreign-travel-advice/brunei/safety-and-security",
-        "checked": "2026-10-30"
-      },
-      {
-        "claim": "Declare anything prohibited or dutiable, via the Customs.BN app or on arrival",
-        "name": "GOV.UK (FCDO) — Brunei travel advice: Entry requirements, 'Customs rules' (updated 2026-03-19)",
-        "url": "https://www.gov.uk/foreign-travel-advice/brunei/entry-requirements",
-        "checked": "2026-10-30"
-      },
-      {
-        "claim": "Non-Muslims over 17: two 1-litre bottles of wine or two of higher-strength drinks, plus twelve 330 ml cans of beer per person",
-        "name": "Auswärtiges Amt — Brunei Darussalam: Reise- und Sicherheitshinweise, Einreise und Zoll",
-        "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/bruneidarussalamsicherheit-224526",
-        "checked": "2026-10-31"
+        "url": "https://www.gov.uk/foreign-travel-advice/brunei/safety-and-security"
       }
     ]
   },
@@ -23722,17 +23714,29 @@
     "category": "tobacco",
     "verdict": "declaration_required",
     "limits": {
-      "description": "There's no duty-free allowance for tobacco: declare all the tobacco you bring and pay tax on it. Cigarette packs without a health warning can't be brought in."
+      "description": "There's no duty-free allowance for cigarettes: declare all the cigarettes you bring. Each one is charged excise duty of BND 0.50."
     },
-    "summary": "No duty-free tobacco: declare all of it and pay tax. Packs without a health warning are refused.",
-    "notes": "Tobacco isn't sold in Brunei and smoking in public places is banned. No Brunei customs page stating this was readable for this site (the customs page GOV.UK links returns 404); this row rests on the Korean government's travel advice.",
+    "summary": "No duty-free allowance: declare all cigarettes and pay excise duty of BND 0.50 per cigarette.",
+    "notes": "From Brunei Customs. Tobacco isn't sold in Brunei and smoking in public places is banned; cigarette packs without a health warning can't be brought in (Korean government's travel advice).",
     "legal_source": {
-      "name": "Ministry of Foreign Affairs of the Republic of Korea — 해외안전여행 (0404.go.kr), Brunei: entry notes",
-      "url": "https://0404.go.kr/ntnSafetyInfo/105/detail"
+      "name": "Royal Customs and Excise Department, Brunei — Passenger Concession",
+      "url": "https://www.customs.gov.bn/ref-rced-passenger-concession/"
     },
-    "verified_at": "2026-10-31",
+    "verified_at": "2026-11-05",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "There is no personal concession granted for importing cigarettes into Brunei Darussalam. Any person importing cigarettes must declare such goods and it is subject to an excise duty of BND0.50 per stick",
+        "name": "Royal Customs and Excise Department, Brunei — Passenger Concession",
+        "url": "https://www.customs.gov.bn/ref-rced-passenger-concession/"
+      },
+      {
+        "claim": "No duty-free allowance; declare and pay tax; packs without a health warning can't be brought in",
+        "name": "Ministry of Foreign Affairs of the Republic of Korea — 해외안전여행 (0404.go.kr), Brunei: entry notes",
+        "url": "https://0404.go.kr/ntnSafetyInfo/105/detail"
+      }
+    ]
   },
   {
     "slug": "e-cigarettes-bn",
@@ -23800,6 +23804,40 @@
         "claim": "Narcotic drugs: not allowed; psychotropic substances: 30 days; documents: valid medical prescription, doctor's certificate endorsed by the health authorities of the country of residence, certificate from the health authorities of the destination, original prescription shown at customs (sheet dated 08.11.2016)",
         "name": "Ministry of Health Brunei Darussalam — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (8 November 2016)",
         "url": "https://www.incb.org/documents/Travellers/files/BRU_ENG_2016.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "fresh-produce-bn",
+    "names": [
+      "fruit",
+      "vegetables",
+      "fresh produce",
+      "plants",
+      "spices",
+      "flowers"
+    ],
+    "destination": "BN",
+    "category": "food_plant",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Per person: up to 6 kg each of fruit, vegetables, spices, legumes, cereals, tubers (such as potatoes), rhizomes (such as ginger) and plant products (such as banana leaves); one flower bouquet; up to 6 flasks or jars of tissue cultures.",
+      "quantity": "6 kg per category"
+    },
+    "notes": "From Brunei Customs' passenger concession page, which refers to the Department of Agriculture's rules. Processed food has its own limits: no more than 3 pieces of each item, under 5 kg and under BND 100 in total per import.",
+    "summary": "Up to 6 kg each of fruit, vegetables, spices and other plant products per person, plus one bouquet of flowers.",
+    "legal_source": {
+      "name": "Royal Customs and Excise Department, Brunei — Passenger Concession",
+      "url": "https://www.customs.gov.bn/ref-rced-passenger-concession/"
+    },
+    "verified_at": "2026-11-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Imported plants and plant products, maximum quantity per person: fruits, vegetables, spices, legumes, cereals, tubers, rhizomes, plant products not more than 6 kg each; flower bouquet 1; tissue cultures not more than 6 flasks/jars. Processed food: each item ≤3 pieces, total weight <5 kg, total declared value <BND100 per import",
+        "name": "Royal Customs and Excise Department, Brunei — Passenger Concession",
+        "url": "https://www.customs.gov.bn/ref-rced-passenger-concession/"
       }
     ]
   },
