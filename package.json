@@ -18,7 +18,8 @@
     "coverage": "tsx scripts/coverage-report.ts",
     "indexnow": "tsx scripts/indexnow.ts",
     "gsc:compare": "tsx scripts/gsc-compare.ts",
-    "ci": "pnpm typecheck && pnpm test && pnpm validate:data && pnpm sources:registry --check && pnpm build"
+    "ci": "pnpm typecheck && pnpm test && pnpm validate:data && pnpm sources:registry --check && pnpm build",
+    "i18n:stamp": "tsx scripts/i18n-stamp.ts"
   },
   "devDependencies": {
     "tsx": "^4.20.0",

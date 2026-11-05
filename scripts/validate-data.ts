@@ -426,7 +426,20 @@ function checkTranslations(): void {
     ),
   };
   for (const locale of locales) {
+    // Official terms for this locale: when the English uses a term, the translation
+    // must use the official equivalent (GROWTH_AND_ROADMAP.md §5.5, quality checks).
+    let glossary: Array<{ en: RegExp; de: string; label: string }> = [];
+    const glossaryFile = join(dir, locale, "glossary.json");
+    try {
+      glossary = (JSON.parse(readFileSync(glossaryFile, "utf8")) as Array<{ en: string; de: string; source?: { url?: string } }>).map((g) => {
+        if (!g.source?.url) errors.push(`${rel(glossaryFile)}: "${g.de}" has no official source`);
+        return { en: new RegExp(g.en, "i"), de: g.de, label: g.en };
+      });
+    } catch {
+      // no glossary for this locale
+    }
     for (const name of readdirSync(join(dir, locale))) {
+      if (name === "glossary.json") continue;
       const file = join(dir, locale, name);
       const source = english[name];
       if (!source) {
@@ -454,6 +467,22 @@ function checkTranslations(): void {
         }
         const lost = missingFigures(en.fields, t.fields as TranslatableFields);
         if (lost.length) errors.push(`${where}: figures missing from the translation (${lost.join(", ")})`);
+        for (const k of Object.keys(en.fields) as (keyof TranslatableFields)[]) {
+          const enValue = en.fields[k];
+          if (enValue === undefined) continue;
+          const trValue = (t.fields as TranslatableFields)[k];
+          if (trValue === undefined) {
+            errors.push(`${where}: "${k}" isn't translated (a page can't mix languages)`);
+            continue;
+          }
+          const enText = Array.isArray(enValue) ? enValue.join("\n") : enValue;
+          const trText = Array.isArray(trValue) ? trValue.join("\n") : trValue;
+          for (const g of glossary) {
+            if (g.en.test(enText) && !trText.includes(g.de)) {
+              errors.push(`${where}: "${k}" uses /${g.label}/ but the translation lacks the official term "${g.de}"`);
+            }
+          }
+        }
       }
     }
   }
