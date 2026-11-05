@@ -527,6 +527,10 @@ test("German drone pages: translated rules, machine-translation notice, hreflang
   await expect(page.getByTestId("german-version-link")).toHaveAttribute("href", "/de/bring/drones/france");
   const missing = await page.goto("/de/bring/alcohol/france");
   expect(missing?.status()).toBe(404);
+  await expect(page.getByTestId("de-not-found").getByRole("link", { name: "Zur englischen Fassung" })).toHaveAttribute(
+    "href",
+    "/bring/alcohol/france",
+  );
 });
 
 test("German index and hubs list only German pages and link back to English", async ({ page }) => {
