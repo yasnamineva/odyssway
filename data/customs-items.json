@@ -5381,7 +5381,7 @@
     "category": "food_animal",
     "verdict": "depends",
     "summary": "Food products need a permit from the relevant authority, and commercial quantities aren't allowed under a traveller's name.",
-    "notes": "Dubai Customs' official passenger guide lists both \"Food Products\" and \"Domestic Animals\" among goods accompanying passengers that are subject to permits from relevant authorities, and separately notes food items are not allowed in under a traveler's name if the quantity is commercial. The guide does not name the issuing agency or give species/quantity specifics for personal-quantity meat and dairy, so this is published at the general \"permit required\" level rather than a more specific but unverified claim.",
+    "notes": "Dubai Customs' official passenger guide lists both \"Food Products\" and \"Domestic Animals\" among goods accompanying passengers that are subject to permits from relevant authorities, and separately notes food items are not allowed in under a traveler's name if the quantity is commercial. The guide doesn't name the issuing agency or give limits for personal quantities of meat and dairy, so this entry says only that a permit is required.",
     "legal_source": {
       "name": "Dubai Customs — Passenger Customs Guide, Version 6 (2025)",
       "url": "https://www.dubaicustoms.gov.ae/en/OpenData/Publications/PassengerCustomsGuide.pdf"
@@ -9917,7 +9917,7 @@
     "category": "e_cigarettes",
     "verdict": "allowed_with_limits",
     "limits": {
-      "description": "\"税関限りの確認で通関が可能なカートリッジの数量は、用法用量からみて1ヶ月分\" (\"The quantity of cartridges that can clear customs with only a customs check is one month's supply, based on directions for use\") — quoted directly from MHLW's own Q&A on pharmaceutical import procedures. Nicotine-containing e-cigarette cartridges and liquid are classified as pharmaceutical products under Japanese law (with the vaporizer device itself classified as a medical device), which is why this general pharmaceutical-import framework — the same one covering Japan's other medication rows in this dataset — applies to them."
+      "description": "\"税関限りの確認で通関が可能なカートリッジの数量は、用法用量からみて1ヶ月分\" (\"The quantity of cartridges that can clear customs with only a customs check is one month's supply, based on directions for use\") — quoted directly from MHLW's own Q&A on pharmaceutical import procedures. Nicotine-containing e-cigarette cartridges and liquid are pharmaceutical products under Japanese law (the vaporizer device itself is a medical device), so Japan's general rules for importing medicines apply to them."
     },
     "notes": "Above a 1-month supply, a Yakkan Shoumei (pharmaceutical import certificate) from a Regional Bureau of Health and Welfare is required, following the same process as Japan's other prescription/controlled-medication rows. Devices themselves (mods, pod systems, batteries) aren't restricted by this framework, though airline lithium-battery rules still apply.",
     "summary": "Nicotine e-cigarette cartridges are pharmaceuticals in Japan: up to one month's supply clears with a customs check only.",
@@ -10133,7 +10133,7 @@
     "limits": {
       "description": "Ministry of Agriculture and Land Reclamation Decree 1647 (1997) requires importers to apply to the General Organization for Veterinary Services (GOVS) for a permit before bringing in meat/animal products, with the epidemiological status of the country of origin taken into account; a granted permit is valid for 1 month and is renewable."
     },
-    "notes": "The decree's own text and the USDA report describing it are both unreadable in this environment (scanned/binary PDFs) — this is drawn from the report's search-indexed summary rather than a directly read document, similar in tier to how this project has cited a USDA GAIN report for a different country's regulation elsewhere. The permit mechanism reads as built for commercial importers, similar to Kenya's meat-import regulation already in this dataset — no traveler/personal-quantity carve-out was found, so don't assume it applies the same way to a tourist's suitcase as to a commercial shipment. Egypt's National Food Safety Authority took over food-safety regulation generally in 2020 but still relies on GOVS for this specific import-permit mechanism.",
+    "notes": "We couldn't read the decree's own text or the USDA report describing it (both are scanned PDFs); this entry rests on the report's published summary. The permit system reads as built for commercial importers, and no rule for travellers or personal quantities was found, so don't assume it applies the same way to a tourist's suitcase as to a commercial shipment. Egypt's National Food Safety Authority took over food-safety regulation generally in 2020 but still relies on GOVS for this import permit.",
     "summary": "Meat and animal products need a permit from Egypt's General Organization for Veterinary Services before import.",
     "legal_source": {
       "name": "USDA FAS GAIN Report — FAIRS Country Report Annual, Cairo Egypt (EG2025-0025), re: Ministry of Agriculture and Land Reclamation Decree 1647 (1997)",
