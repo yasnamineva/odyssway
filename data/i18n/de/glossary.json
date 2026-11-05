@@ -43,7 +43,7 @@
     ]
   },
   {
-    "en": "\\bcertificate\\b",
+    "en": "(?<!expired-)\\bcertificate\\b",
     "de": "Bescheinigung",
     "source": {
       "name": "Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM), Bundesopiumstelle — Reisen mit Betäubungsmitteln",
@@ -51,6 +51,7 @@
     },
     "categories": [
       "medication"
-    ]
+    ],
+    "note": "A website's expired TLS certificate is a Zertifikat, not a Bescheinigung."
   }
 ]
