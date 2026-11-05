@@ -5,7 +5,7 @@ can query the same engine directly instead of scraping our pages or
 re-researching the rules yourself.
 
 > **The short version:** three read-only GET endpoints, no API key, no
-> account, no rate-limit headache — just don't hammer it, and link back to
+> account. Cache what you fetch, keep request rates modest, and link back to
 > us. That's the whole deal.
 
 ## `GET /api/v1/trip-check`
@@ -64,6 +64,9 @@ GET /api/v1/customs-items?destination=TH&category=cbd_cannabis
 - **Cache it.** Responses carry an hour-long `Cache-Control` header; the
   underlying data doesn't change minute to minute, so please cache on your
   end rather than re-fetching per page view.
+- **Rate limits.** To keep the service free, busy periods are capped. Over the
+  cap you get HTTP `429 Too Many Requests` with a `Retry-After` header (in
+  seconds): wait that long, then retry.
 - **Cite what we cite.** Every row carries its own `legalSource` /
   `legal_source` — if you're making a claim to your own users, point them
   at the primary source the same way we do, not just at us.

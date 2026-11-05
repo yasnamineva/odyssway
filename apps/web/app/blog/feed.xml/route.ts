@@ -11,6 +11,9 @@ function escapeXml(value: string): string {
     .replace(/'/g, "&apos;");
 }
 
+/** Built once at deploy time: it only changes when posts do. */
+export const dynamic = "force-static";
+
 /** RSS 2.0 feed for the blog — standard discoverability surface for feed
  * readers and search engines, generated from the same post data as the
  * index/sitemap so it can't drift out of sync. */

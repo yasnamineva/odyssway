@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { bodySizeOk, COUNTER_BUDGET, retryAfterSeconds, withinBudget } from "../../../lib/rate-limit";
 
 /**
  * Logs a "bringing X?" search that found no verified customs-item match, so
@@ -16,6 +17,15 @@ import { NextResponse } from "next/server";
  * for a real table once one exists.
  */
 export async function POST(request: Request): Promise<NextResponse> {
+  if (!withinBudget("item-miss", COUNTER_BUDGET)) {
+    return NextResponse.json(
+      { ok: false },
+      { status: 429, headers: { "Retry-After": String(retryAfterSeconds("item-miss", COUNTER_BUDGET)) } },
+    );
+  }
+  if (!bodySizeOk(request)) {
+    return NextResponse.json({ ok: false }, { status: 413 });
+  }
   let body: unknown;
   try {
     body = await request.json();

@@ -501,10 +501,23 @@ arrival form), Russian (vapes in Korea), German (drones), Chinese (cigarettes). 
 canibringto.com ranks with zh, ja and vi pages. The reader of an item page is the *inbound*
 traveller, so the language follows who travels, not the destination.
 
-**Decision rule (November export):** pick the first locale by impressions from that country
-plus non-English queries in that language, weighted toward item and medication pages.
-Current favourite: **Japanese**; runners-up German and Chinese (Traditional, for Taiwan and
-Hong Kong, where Google is used).
+**Decision rule (owner, 2026-11-05):** start with the languages the translating model writes
+most naturally, and add a paid native-speaker review later. The owner found the model's
+Bulgarian unnatural, so quality is not assumed for every language. **First locale: German**;
+next Spanish and French (the model's strongest non-English languages, each with a demand
+signal: German drone queries, Latin-American and Spanish-speaking traffic, the French
+Maldives query). The November export picks the order among these three. Japanese and Chinese
+wait for the native review: the formal register of rules is where machine translation sounds
+least natural. A paid freelancer review is a later step (owner decision, cost) and becomes a
+launch gate for Japanese and Chinese.
+
+**Quality checks for every locale (2026-11-05):** a glossary of official terms taken from that
+language's government pages (e.g. German Zoll/BMG terms such as *Betäubungsmittel*,
+*Reisefreimenge*), enforced by validate-data; short templated sentences for row text; a
+visible note that the page is a machine translation of the verified English text, with a link
+to the English page and a "report a translation problem" link; and the pilot's 8-week
+click and bounce comparison. Back-translation or a second model grading the text don't count
+as checks: they catch changed meaning, not unnatural wording.
 
 **Scope of the pilot (one locale, ~8 weeks):**
 1. `/xx/bring/{item}/{country}` and `/xx/medications/...` pairs, the item hubs, destination
@@ -594,6 +607,24 @@ measure.
 ---
 
 ## 7. Open decisions for the owner
+
+- **Cost guardrails (owner request 2026-11-05: about EUR 5 a day at most).** Code side done
+  2026-11-05: every API route has a per-instance request budget (429 with Retry-After, no
+  IP or identifier kept), counter routes refuse bodies over 1 KB, the data API is cached at
+  the CDN for a day (each deploy starts a fresh cache), and the blog feed and destinations
+  API are built at deploy time. Only `/trip-check` and the API routes still run a function
+  per request. **Dashboard steps only the owner can take** (Vercel has no daily cap):
+  1. Check the plan. Hobby (free): there is no bill; over the limits the site pauses. Pro:
+     Settings → Billing → Spend Management, set the on-demand budget (Vercel counts per
+     billing cycle; EUR 5 a day is about USD 160 a month, but a lower amount such as USD 30
+     is safer while traffic is small, since an attack could spend a month's amount in a
+     day before the pause) and turn on **Pause production deployments** and SMS alerts.
+     CLI alternative: `vercel billing budgets set --amount 30 --pause` (Owner or Billing role).
+  2. Firewall → add one rate-limit rule for `/api/*` and `/trip-check` (for example 60
+     requests a minute per IP, action deny). Hobby allows one such rule; requests the
+     firewall blocks aren't billed.
+  3. If an attack starts: turn on Attack Challenge Mode (free; challenged traffic isn't billed).
+  4. Upstash: stay on the free plan or set a budget, so a flood of counter writes can't bill.
 
 - ✔ Translations: plan approved 2026-10-31 (§5.5). First locale chosen from the November export; Japanese is the current favourite.
 

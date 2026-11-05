@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import rawNationalities from "../../../../../data/nationality-rules.json";
+import { bodySizeOk, COUNTER_BUDGET, retryAfterSeconds, withinBudget } from "../../../lib/rate-limit";
 
 /**
  * Counts Trip Check searches for a passport × destination pair we don't cover yet
@@ -16,6 +17,15 @@ const NATIONALITIES = new Set((rawNationalities as Array<{ nationality: string }
 const CODE = /^[A-Z]{2}$/;
 
 export async function POST(request: Request): Promise<NextResponse> {
+  if (!withinBudget("pair-miss", COUNTER_BUDGET)) {
+    return NextResponse.json(
+      { ok: false },
+      { status: 429, headers: { "Retry-After": String(retryAfterSeconds("pair-miss", COUNTER_BUDGET)) } },
+    );
+  }
+  if (!bodySizeOk(request)) {
+    return NextResponse.json({ ok: false }, { status: 413 });
+  }
   let body: unknown;
   try {
     body = await request.json();

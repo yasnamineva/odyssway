@@ -1,5 +1,9 @@
 import { NextResponse } from "next/server";
+import { DATA_API_BUDGET, retryAfterSeconds, withinBudget } from "../../../../lib/rate-limit";
 import { customsItems } from "../../../../lib/destinations";
+
+/** Data only changes with a deploy, and each deploy starts a fresh CDN cache. */
+const CDN_CACHE = "public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800";
 
 const CORS_HEADERS = {
   "Access-Control-Allow-Origin": "*",
@@ -14,6 +18,12 @@ const CORS_HEADERS = {
  * weapons, drones, other — same set /bring/[item] uses).
  */
 export async function GET(request: Request): Promise<NextResponse> {
+  if (!withinBudget("v1-customs-items", DATA_API_BUDGET)) {
+    return NextResponse.json(
+      { error: "Too many requests. Please retry shortly, or cache responses on your side." },
+      { status: 429, headers: { ...CORS_HEADERS, "Retry-After": String(retryAfterSeconds("v1-customs-items", DATA_API_BUDGET)) } },
+    );
+  }
   const { searchParams } = new URL(request.url);
   const destination = searchParams.get("destination")?.toUpperCase();
   const category = searchParams.get("category");
@@ -31,7 +41,7 @@ export async function GET(request: Request): Promise<NextResponse> {
       license:
         "Free to use with attribution (a visible link back to odyssway.com). Terms: https://odyssway.com/terms",
     },
-    { headers: { ...CORS_HEADERS, "Cache-Control": "public, max-age=3600" } },
+    { headers: { ...CORS_HEADERS, "Cache-Control": CDN_CACHE } },
   );
 }
 

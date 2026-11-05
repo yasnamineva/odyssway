@@ -1,5 +1,12 @@
 import { NextResponse } from "next/server";
+import { DATA_API_BUDGET, retryAfterSeconds, withinBudget } from "../../../../lib/rate-limit";
 import { destinations } from "../../../../lib/destinations";
+
+/** No inputs: built once at deploy time and served from the CDN. */
+export const dynamic = "force-static";
+
+/** Data only changes with a deploy, and each deploy starts a fresh CDN cache. */
+const CDN_CACHE = "public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800";
 
 const CORS_HEADERS = {
   "Access-Control-Allow-Origin": "*",
@@ -9,6 +16,12 @@ const CORS_HEADERS = {
 
 /** GET /api/v1/destinations — every verified destination, with its citation. */
 export async function GET(): Promise<NextResponse> {
+  if (!withinBudget("v1-destinations", DATA_API_BUDGET)) {
+    return NextResponse.json(
+      { error: "Too many requests. Please retry shortly, or cache responses on your side." },
+      { status: 429, headers: { ...CORS_HEADERS, "Retry-After": String(retryAfterSeconds("v1-destinations", DATA_API_BUDGET)) } },
+    );
+  }
   const verified = destinations
     .filter((d) => d.status === "verified")
     .map((d) => ({
@@ -28,7 +41,7 @@ export async function GET(): Promise<NextResponse> {
       license:
         "Free to use with attribution (a visible link back to odyssway.com). Terms: https://odyssway.com/terms",
     },
-    { headers: { ...CORS_HEADERS, "Cache-Control": "public, max-age=3600" } },
+    { headers: { ...CORS_HEADERS, "Cache-Control": CDN_CACHE } },
   );
 }
 

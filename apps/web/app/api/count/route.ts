@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { COUNT_EVENTS, type CountEvent } from "../../../lib/count";
+import { bodySizeOk, COUNTER_BUDGET, retryAfterSeconds, withinBudget } from "../../../lib/rate-limit";
 
 /**
  * Anonymous, cookie-free usage counts (GROWTH_AND_ROADMAP.md §2, item 5): the body
@@ -10,6 +11,15 @@ import { COUNT_EVENTS, type CountEvent } from "../../../lib/count";
  * otherwise only to the hosting log, which keeps entries for about a day.
  */
 export async function POST(request: Request): Promise<NextResponse> {
+  if (!withinBudget("count", COUNTER_BUDGET)) {
+    return NextResponse.json(
+      { ok: false },
+      { status: 429, headers: { "Retry-After": String(retryAfterSeconds("count", COUNTER_BUDGET)) } },
+    );
+  }
+  if (!bodySizeOk(request)) {
+    return NextResponse.json({ ok: false }, { status: 413 });
+  }
   let event: unknown;
   try {
     event = ((await request.json()) as { event?: unknown }).event;
