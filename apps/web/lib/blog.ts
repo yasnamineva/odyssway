@@ -35,6 +35,25 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "drone-rules-europe-visitors",
+    title: "Flying a drone in Europe as a visitor: the EU rules, and what seven countries add",
+    seoTitle: "Flying a Drone in Europe as a Tourist: Rules by Country (2026)",
+    seoDescription:
+      "Register in the first EU country you fly in. France adds AlphaTango registration from 800 g, Portugal insurance over 900 g, Austria €46.80 registration and insurance.",
+    dek: "One EU registration covers Europe, but France, Portugal, Austria, Germany, Italy, Spain and the Netherlands each add their own rules on registration, insurance or where you can fly.",
+    date: "2026-11-05",
+    category: "Customs",
+    legalSource: {
+      name: "DGAC (French Civil Aviation Authority) — Guide DSAC catégorie Ouverte (26 July 2026)",
+      url: "https://www.ecologie.gouv.fr/sites/default/files/documents/Guide_categorie_Ouverte.pdf",
+    },
+    verifiedAt: "2026-11-05",
+    changelogDataset: "customs-items",
+    destinationCodes: ["FR", "PT", "AT", "DE", "IT", "ES", "NL"],
+    photo: "blog-drones",
+    bringCategories: ["drones"],
+  },
+  {
     slug: "montenegro-visa-turkey-russia-belarus-2026",
     title: "Montenegro now requires a visa from Turkish, Russian and Belarusian citizens",
     seoTitle: "Montenegro Visa for Turkish, Russian, Belarusian Citizens (Nov 2026)",
