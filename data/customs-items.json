@@ -26709,5 +26709,92 @@
         "url": "https://www.nederlandwereldwijd.nl/reizen-naar-nederland/medicijnen-meenemen-nederland"
       }
     ]
+  },
+  {
+    "slug": "controlled-medication-lv",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "opioid painkiller"
+    ],
+    "destination": "LV",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Arriving from a country outside the Schengen area, you can bring medicines containing substances on Latvia's Lists II and III for your own use without a special permit: List II medicines for a course of treatment of up to 14 days, List III for up to 30 days. Carry a prescription, a copy of it or another document showing you need them. From a Schengen country, you need that country's certificate for carrying narcotic or psychotropic medicines.",
+      "quantity": "List II: 14 days; List III: 30 days"
+    },
+    "notes": "From Latvia's State Agency of Medicines. The same page also says private persons may not bring in narcotic analgesics, without explaining how this fits with the List II rule: if your medicine is an opioid painkiller, ask the agency before you travel. Brand names are listed for search only: they map to substances on the UN's international control lists, but which of Latvia's lists (II or III) each is on is set by Latvian law and isn't stated here.",
+    "summary": "From outside Schengen, no permit: List II medicines up to 14 days, List III up to 30 days, with a prescription. Opioid painkillers: ask first.",
+    "legal_source": {
+      "name": "State Agency of Medicines of Latvia (Zāļu valsts aģentūra) — Zāļu ievešana, izvešana un saņemšana pa pastu (bringing in, taking out and receiving medicines by post)",
+      "url": "https://www.zva.gov.lv/lv/pacientiem-un-sabiedribai/zales/zalu-iegade/zalu-ievesana-izvesana-un-sanemsana-pa-pastu"
+    },
+    "verified_at": "2026-11-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Entering from or leaving for a non-Schengen country: without a special permit, bring in or take out for personal use medicines with List II and III substances, if List II medicines are for a course of treatment of no more than 14 days and List III for no more than 30 days; the need must be shown with a prescription, a copy of it or other supporting documents. Entering from a Schengen state: List II and III medicines with a certificate from that state's competent authority. Not allowed for personal import: narcotic analgesics",
+        "name": "State Agency of Medicines of Latvia (Zāļu valsts aģentūra) — Zāļu ievešana, izvešana un saņemšana pa pastu (bringing in, taking out and receiving medicines by post)",
+        "url": "https://www.zva.gov.lv/lv/pacientiem-un-sabiedribai/zales/zalu-iegade/zalu-ievesana-izvesana-un-sanemsana-pa-pastu"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "prescription-medication-lv",
+    "names": [
+      "prescription medication",
+      "medicine",
+      "medication",
+      "prescription medicine",
+      "prescription"
+    ],
+    "destination": "LV",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "You can bring medicines for your own use in your luggage if they're in their original packaging, show the manufacturer and country of manufacture, and you have the receipt or a similar proof of purchase. From outside the EEA: up to 6 months' use (12 months from an EEA country). More than three packs of one medicine needs a written statement that it's for personal use.",
+      "quantity": "6 months' use from outside the EEA"
+    },
+    "notes": "From Latvia's State Agency of Medicines. Not allowed for personal import: narcotic analgesics, new psychoactive substances and active substances, and, from outside the EEA, anabolic steroids, testosterone and growth hormones. Medicines containing narcotic or psychotropic substances follow separate rules (see the controlled-medication entry).",
+    "summary": "Up to 6 months' use from outside the EEA, in original packs with a receipt. Over three packs of one medicine: a written personal-use statement.",
+    "legal_source": {
+      "name": "State Agency of Medicines of Latvia (Zāļu valsts aģentūra) — Zāļu ievešana, izvešana un saņemšana pa pastu (bringing in, taking out and receiving medicines by post)",
+      "url": "https://www.zva.gov.lv/lv/pacientiem-un-sabiedribai/zales/zalu-iegade/zalu-ievesana-izvesana-un-sanemsana-pa-pastu"
+    },
+    "verified_at": "2026-11-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "A natural person may bring in from abroad for personal use (e.g. in a traveller's baggage) medicines in original packaging with the manufacturer and country of manufacture identifiable and a purchase receipt or equivalent document (except narcotic and Latvia-controlled psychotropic medicines); quantity at one time: 12 months' use from an EEA country, 6 months' use from a third country, 14 days for anabolic steroids, testosterone, growth hormones from the EEA; above three packaging units per medicine a written personal-use declaration is required; not allowed: narcotic analgesics, new psychoactive substances and active substances; from third countries anabolic steroids, testosterones, growth hormones or analogues",
+        "name": "State Agency of Medicines of Latvia (Zāļu valsts aģentūra) — Zāļu ievešana, izvešana un saņemšana pa pastu (bringing in, taking out and receiving medicines by post)",
+        "url": "https://www.zva.gov.lv/lv/pacientiem-un-sabiedribai/zales/zalu-iegade/zalu-ievesana-izvesana-un-sanemsana-pa-pastu"
+      }
+    ]
   }
 ]
