@@ -528,3 +528,16 @@ test("German drone pages: translated rules, machine-translation notice, hreflang
   const missing = await page.goto("/de/bring/alcohol/france");
   expect(missing?.status()).toBe(404);
 });
+
+test("German index and hubs list only German pages and link back to English", async ({ page }) => {
+  await page.goto("/de/bring");
+  await expect(page.getByTestId("de-index-list").getByRole("link", { name: /Drohnen/ })).toBeVisible();
+  await page.goto("/de/bring/drones");
+  await expect(page.getByTestId("de-hub-list").getByRole("link", { name: "Frankreich" })).toHaveAttribute(
+    "href",
+    "/de/bring/drones/france",
+  );
+  await expect(page.locator('link[rel=alternate][hreflang=en]')).toHaveAttribute("href", /\/bring\/drones$/);
+  const missing = await page.goto("/de/bring/weapons");
+  expect(missing?.status()).toBe(404);
+});

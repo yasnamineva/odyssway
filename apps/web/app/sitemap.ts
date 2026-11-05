@@ -119,6 +119,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ...(translated ? { alternates: { languages: { en, de } } } : {}),
       };
     }),
+    // German index and category hubs (only categories with German pages).
+    ...(germanPairs().length > 0
+      ? [
+          { url: `${BASE}/de/bring`, lastModified: DATA_LAST_UPDATED, priority: 0.4, alternates: { languages: { en: `${BASE}/bring`, de: `${BASE}/de/bring` } } },
+          ...[...new Set(germanPairs().map((p) => p.itemSlug))].map((item) => ({
+            url: `${BASE}/de/bring/${item}`,
+            lastModified: DATA_LAST_UPDATED,
+            priority: 0.4,
+            alternates: { languages: { en: `${BASE}/bring/${item}`, de: `${BASE}/de/bring/${item}` } },
+          })),
+        ]
+      : []),
     // German pages (pilot locale): only where every row is translated.
     ...germanPairs().map((p) => {
       const en = `${BASE}/bring/${p.itemSlug}/${p.destinationSlug}`;

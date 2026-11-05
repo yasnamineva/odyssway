@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { germanPairs } from "../../lib/translations";
 import { getTranslations } from "next-intl/server";
 import { BRING_CATEGORIES } from "../../lib/bring-categories";
 
@@ -7,7 +8,10 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: t("title"),
     description: t("description"),
-    alternates: { canonical: "/bring" },
+    alternates: {
+      canonical: "/bring",
+      ...(germanPairs().length > 0 ? { languages: { en: "/bring", de: "/de/bring", "x-default": "/bring" } } : {}),
+    },
   };
 }
 

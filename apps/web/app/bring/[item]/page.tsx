@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { germanPairs } from "../../../lib/translations";
 import { getTranslations } from "next-intl/server";
 import { clip, rowLead } from "../../../lib/seo-text";
 import { notFound } from "next/navigation";
@@ -48,7 +49,12 @@ export async function generateMetadata({
   return {
     title,
     description,
-    alternates: { canonical: `/bring/${found.meta.slug}` },
+    alternates: {
+      canonical: `/bring/${found.meta.slug}`,
+      ...(germanPairs().some((p) => p.itemSlug === found.meta.slug)
+        ? { languages: { en: `/bring/${found.meta.slug}`, de: `/de/bring/${found.meta.slug}`, "x-default": `/bring/${found.meta.slug}` } }
+        : {}),
+    },
     openGraph: {
       title,
       description,

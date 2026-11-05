@@ -105,9 +105,13 @@ export default async function GermanBringPage({ params }: { params: Promise<Para
     <article lang="de" className="mx-auto max-w-3xl space-y-6">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
-        <span>{t("breadcrumbRoot")}</span>
+        <a href="/de/bring" className="hover:text-slate-900">
+          {t("breadcrumbRoot")}
+        </a>
         <span aria-hidden="true"> / </span>
-        <span>{categoryLabel}</span>
+        <a href={`/de/bring/${pair.itemSlug}`} className="hover:text-slate-900">
+          {categoryLabel}
+        </a>
         <span aria-hidden="true"> / </span>
         <span className="text-slate-700">{country}</span>
       </nav>
