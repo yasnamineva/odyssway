@@ -20118,6 +20118,47 @@
     "status": "verified"
   },
   {
+    "slug": "e-cigarettes-uy",
+    "names": [
+      "e-cigarette",
+      "e-cigarettes",
+      "vape",
+      "vapes",
+      "vaping",
+      "e-liquid",
+      "heated tobacco",
+      "iqos",
+      "electronic cigarette"
+    ],
+    "destination": "UY",
+    "category": "e_cigarettes",
+    "verdict": "prohibited",
+    "limits": {
+      "description": "Uruguay prohibits the import, sale and advertising of any electronic smoking device, including e-cigarettes and devices offered to help people quit smoking. Heated-tobacco products are included. Customs has applied the import ban \"in any regime\" since 24 November 2025."
+    },
+    "notes": "Decree 125/025 also repealed Decree 87/021, which had regulated heated-tobacco devices under the tobacco law. The decree and the Customs resolution don't mention travellers' luggage and give no personal-use exception; no Customs page for passengers on vapes was found.",
+    "summary": "Banned: Uruguay prohibits importing e-cigarettes, vapes and heated-tobacco devices, with no personal-use exception stated.",
+    "legal_source": {
+      "name": "Decree No. 125/025 of 10 June 2025, replacing article 1 of Decree No. 534/009 (IMPO, Uruguay's official legal database)",
+      "url": "https://www.impo.com.uy/bases/decretos/125-2025"
+    },
+    "verified_at": "2026-11-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Art. 1 (new text of art. 1 of Decree 534/009, quoted in RG 37/2025): 'Prohíbese la comercialización, importación, registro como marca o patente y publicidad, de cualquier dispositivo electrónico para fumar, conocidos como \"cigarrillo electrónico\", \"e-cigarettes\"... incluidos aquellos que se ofrezcan como alternativa en el tratamiento contra el tabaquismo. También se encuentran incluidos ... los productos para la administración de nicotina que emplean la tecnología de tabaco calentado.' Art. 2 repeals Decrees 299/017 and 87/021. Promulgated 10/06/2025, published 18/06/2025",
+        "name": "Decree No. 125/025 of 10 June 2025, replacing article 1 of Decree No. 534/009 (IMPO, Uruguay's official legal database)",
+        "url": "https://www.impo.com.uy/bases/decretos/125-2025"
+      },
+      {
+        "claim": "2°) under Decree 125/025, the import ban 'en cualquier régimen' of the tariff items in Annex III is configured in LUCIA; 3°) in force for DUAs numbered from 24 November 2025",
+        "name": "Dirección Nacional de Aduanas (Uruguay Customs) — General Resolution 37/2025 of 14 November 2025",
+        "url": "https://www.aduanas.gub.uy/innovaportal/file/28020/1/rg-37-impo-tabaco-firmada.pdf"
+      }
+    ]
+  },
+  {
     "slug": "alcohol-ba",
     "names": [
       "alcohol",
@@ -20707,6 +20748,43 @@
     "verified_at": "2026-10-31",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "medication-sc",
+    "names": [
+      "medication",
+      "medicine",
+      "prescription medication",
+      "prescription medicine",
+      "prescription"
+    ],
+    "destination": "SC",
+    "category": "medication",
+    "verdict": "depends",
+    "limits": {
+      "description": "Pharmaceutical products are restricted goods in Seychelles: anyone importing them needs written approval from the Ministry responsible for Health before the import. Controlled drugs, as defined in the Misuse of Drugs Act 2016, are prohibited goods and may not be imported."
+    },
+    "notes": "The regulations set no amount and don't exempt medicines in a traveller's luggage, and no Seychelles page read for this site says how the approval applies to personal medicines. Ask the Ministry of Health before you travel, especially for any medicine that contains a controlled drug: the regulations don't say whether prescribed medicines are treated differently.",
+    "summary": "Medicines need prior written approval from the Ministry of Health to import; controlled drugs are prohibited. No traveller exemption is stated.",
+    "legal_source": {
+      "name": "Customs Management (Prohibited and Restricted Goods) Regulations, 2023 (S.I. 87 of 2023), Seychelles Official Gazette, 30 October 2023 — regulations 3–4, First and Second Schedules",
+      "url": "https://src.gov.sc/wp-content/uploads/2023/11/SI-87-Customs-Management-Prohibited-and-Restricted-Goods-Regulations-2023.pdf"
+    },
+    "verified_at": "2026-11-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Reg. 3: First Schedule goods are prohibited and shall not be imported; First Schedule: CONTROLLED DRUGS — all drugs as defined under the Misuse of Drugs Act, 2016 (Act 5 of 2016). Reg. 4: Second Schedule goods are restricted; a person importing them shall, prior to import, obtain approval in writing from the Authority in column (1). Second Schedule: Ministry responsible for Health — Pharmaceutical and Veterinary products, HS 30.01 to 30.04 and 3006.1000 to 3006.7000",
+        "name": "Customs Management (Prohibited and Restricted Goods) Regulations, 2023 (S.I. 87 of 2023), Seychelles Official Gazette, 30 October 2023 — regulations 3–4, First and Second Schedules",
+        "url": "https://src.gov.sc/wp-content/uploads/2023/11/SI-87-Customs-Management-Prohibited-and-Restricted-Goods-Regulations-2023.pdf"
+      },
+      {
+        "claim": "Prohibited imports are banned completely (such as illicit drugs); restricted imports require an import permit; passengers are cleared through the red and green channels",
+        "name": "Seychelles Revenue Commission — Customs and Excises (prohibited and restricted imports)",
+        "url": "https://src.gov.sc/customs-and-excises/"
+      }
+    ]
   },
   {
     "slug": "alcohol-gh",
