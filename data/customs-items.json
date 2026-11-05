@@ -26796,5 +26796,101 @@
         "url": "https://www.zva.gov.lv/lv/pacientiem-un-sabiedribai/zales/zalu-iegade/zalu-ievesana-izvesana-un-sanemsana-pa-pastu"
       }
     ]
+  },
+  {
+    "slug": "controlled-medication-si",
+    "names": [
+      "controlled substance",
+      "narcotic medication",
+      "psychotropic medication",
+      "adderall",
+      "amphetamine",
+      "ritalin",
+      "methylphenidate",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "klonopin",
+      "clonazepam",
+      "codeine",
+      "oxycodone",
+      "opioid painkiller"
+    ],
+    "destination": "SI",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "You may carry medicines containing illicit drugs (narcotic or psychotropic substances) that you need for your own treatment, but you must have a medical certificate issued or endorsed by a competent authority of your country of permanent residence showing you're allowed to have them."
+    },
+    "notes": "From the Slovenian customs page (refreshed 2020). The quantity follows the general personal-use rule (up to three weeks for acute and three months for chronic conditions) unless drug rules say otherwise; the page sets no separate limit. Ask your home country's health authority which certificate it issues before you travel. Brand names are listed for search only: they map to substances on the UN's international control lists.",
+    "summary": "Allowed for your own treatment with a medical certificate issued or endorsed by the health authorities of your home country.",
+    "legal_source": {
+      "name": "Financial Administration of the Republic of Slovenia (FURS) — Import of medications (refreshed 23 September 2020)",
+      "url": "https://www.fu.gov.si/en/life_events_individuals/import_of_medications"
+    },
+    "verified_at": "2026-11-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "It is allowed for travellers entering the territories of the contracting parties of the Schengen Agreement or moving there to carry illicit drugs which are used as medications according to special regulations and which are necessary for their medical treatment; travellers must have a medical certificate issued or endorsed by a competent authority of the country of their permanent residence proving that they are eligible to possess illicit drugs",
+        "name": "Financial Administration of the Republic of Slovenia (FURS) — Import of medications (refreshed 23 September 2020)",
+        "url": "https://www.fu.gov.si/en/life_events_individuals/import_of_medications"
+      },
+      {
+        "claim": "Personal-use quantities (three weeks acute, three months chronic) apply unless illicit-drug regulations provide otherwise (Art. 16(2))",
+        "name": "JAZMP (Slovenian Agency for Medicinal Products and Medical Devices) — Uvoz zdravil za osebno uporabo, quoting Article 16 of the Medicinal Products Act (Official Gazette 17/14 and 66/19) (last updated 18 April 2025)",
+        "url": "https://www.jazmp.si/nadzor/proizvodnja-promet-in-posrednistvo-z-zdravili-in-ucinkovinami/uvoz-zdravil-za-osebno-uporabo/"
+      },
+      {
+        "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
+        "name": "International Narcotics Control Board — Green List: psychotropic substances under international control (36th edition, 2025)",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
+        "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
+        "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "prescription-medication-si",
+    "names": [
+      "prescription medication",
+      "medicine",
+      "medication",
+      "prescription medicine",
+      "prescription"
+    ],
+    "destination": "SI",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "You can bring medicine in your personal luggage for your own use (or a close family member's) in an amount that fits the treatment: up to three weeks' supply for an acute condition, and up to three months' supply at the prescribed dose for a chronic condition. Customs can ask for proof of the prescription for prescription medicines.",
+      "quantity": "3 weeks (acute), 3 months (chronic)"
+    },
+    "notes": "From Article 16 of Slovenia's Medicinal Products Act, as published by the medicines agency JAZMP. Up to 12 months is possible if you show customs proof that you're allowed to stay in the destination country for that period. The customs page (refreshed 2020) says three weeks for chronic conditions too; the Act says three months, and the Act is used here. Medicines containing illicit drugs follow separate rules (see the controlled-medication entry). JAZMP doesn't issue opinions or permits to individuals for bringing in medicines.",
+    "summary": "Up to 3 weeks' supply for acute conditions and 3 months at the prescribed dose for chronic ones; customs can ask for the prescription.",
+    "legal_source": {
+      "name": "JAZMP (Slovenian Agency for Medicinal Products and Medical Devices) — Uvoz zdravil za osebno uporabo, quoting Article 16 of the Medicinal Products Act (Official Gazette 17/14 and 66/19) (last updated 18 April 2025)",
+      "url": "https://www.jazmp.si/nadzor/proizvodnja-promet-in-posrednistvo-z-zdravili-in-ucinkovinami/uvoz-zdravil-za-osebno-uporabo/"
+    },
+    "verified_at": "2026-11-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Art. 16(1) import and export of medicines by individuals is prohibited; (2) notwithstanding, an individual may bring in personal luggage medicine for personal use in a quantity matching the therapeutic use: acute conditions max three weeks; chronic conditions max three months per prescribed dosage, exceptionally up to 12 months with proof of permitted residence in the destination country for that period, unless illicit-drug rules provide otherwise; (3) customs may request proof of the prescription; JAZMP does not issue opinions or permits to individuals",
+        "name": "JAZMP (Slovenian Agency for Medicinal Products and Medical Devices) — Uvoz zdravil za osebno uporabo, quoting Article 16 of the Medicinal Products Act (Official Gazette 17/14 and 66/19) (last updated 18 April 2025)",
+        "url": "https://www.jazmp.si/nadzor/proizvodnja-promet-in-posrednistvo-z-zdravili-in-ucinkovinami/uvoz-zdravil-za-osebno-uporabo/"
+      },
+      {
+        "claim": "Conflict recorded: FURS page says 'for a maximum of three weeks according to the prescribed dosage for chronic diseases'; the Act quoted by JAZMP says three months; the Act is used",
+        "name": "Financial Administration of the Republic of Slovenia (FURS) — Import of medications (refreshed 23 September 2020)",
+        "url": "https://www.fu.gov.si/en/life_events_individuals/import_of_medications"
+      }
+    ]
   }
 ]
