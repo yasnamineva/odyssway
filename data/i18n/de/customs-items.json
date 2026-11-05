@@ -1055,5 +1055,107 @@
     },
     "translated_at": "2026-11-05",
     "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "medication-sg",
+    "sourceHash": "128fb4eb",
+    "fields": {
+      "summary": "Bis zu 3 Monate Vorrat, Ihnen verschrieben, mit Rezeptkopie und von der Apotheke beschrifteter Verpackung. Kontrollierte Arzneimittel brauchen eine Genehmigung der HSA.",
+      "limitsDescription": "Bis zu 3 Monate Vorrat für den eigenen Gebrauch oder den eines engen Familienangehörigen, sofern das Arzneimittel Ihnen in Ihrem Wohnsitzland rechtmäßig verschrieben wurde, keinen kontrollierten Stoff (siehe den Eintrag zu kontrollierten Arzneimitteln) oder verbotenen Stoff enthält und kein Kaugummi ist. Sie müssen eine Kopie des gültigen Rezepts oder ärztlichen Schreibens mitführen, und jedes Arzneimittel muss in der Originalpackung sein, von der abgebenden Apotheke mit Name des Patienten, Name des Arzneimittels und Menge beschriftet. Einfuhren über 3 Monate Vorrat sind unter keinen Umständen erlaubt.",
+      "limitsQuantity": "Vorrat für 3 Monate",
+      "notes": "Reisende, die Singapur nur im Transit passieren, ohne die Einreisekontrolle zu durchlaufen (also im Transitbereich bleiben), brauchen für persönliche Arzneimittel keine Genehmigung der HSA, verbotene Arzneimittel sind aber auch im Transit nicht erlaubt. Arzneimittel für andere als sich selbst oder einen engen Familienangehörigen einzuführen, ist nicht erlaubt und kann zur Beschlagnahme oder zu Maßnahmen der Behörden führen."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-sg",
+    "sourceHash": "68fae961",
+    "fields": {
+      "summary": "Arzneimittel auf der Kontrollliste der HSA brauchen eine Genehmigung der HSA, online beantragt mindestens 2 Wochen vor der Ankunft.",
+      "limitsDescription": "Arzneimittel mit einem Stoff aus Anhang A des HSA-Leitfadens zur Mitnahme persönlicher Arzneimittel – zusammengestellt aus dem Second und Third Schedule der Misuse of Drugs Regulations, dem First Schedule der Health Products (Therapeutic Products) Regulations 2016 und weiteren bedenklichen Arzneimitteln – dürfen nicht unter der gewöhnlichen Freimenge für Reisende von 3 Monaten mitgebracht werden. Sie müssen mindestens 2 Wochen vor der Ankunft online eine Genehmigung der HSA beantragen, auf Englisch, mit medizinischen Unterlagen (Apothekenetikett, ärztliches Rezept oder ärztliches Schreiben mit Angaben zu Patient und verschreibender Person, Zusammensetzung, Dosis, Häufigkeit und Gesamtmenge) sowie Fotos des Produkts, die Name, Wirkstoff(e), Stärke, Anwendungshinweise, Darreichungsform und abgegebene Menge zeigen. Genehmigte Arzneimittel müssen beim Zoll nicht angemeldet werden, aber die Genehmigungs-E-Mail und die Unterlagen müssen den Beamten der Einwanderungs- und Grenzbehörde ICA auf Nachfrage vorgezeigt werden können.",
+      "notes": "Anhang A (Ausgabe vom 17. März 2026, direkt bei der HSA abgerufen) nennt unter Hunderten von Stoffen ausdrücklich: Alprazolam, Amphetamin (Amfetamin), Dexamphetamin, Lisdexamphetamin (Vyvanse), Methylphenidat, Dexmethylphenidat, Diazepam, Clonazepam, Codein und Oxycodon – wer ein Arzneimittel mit einem dieser Stoffe mitführt, braucht also vorab eine Genehmigung der HSA. Tramadol wurde in derselben Liste gesucht und NICHT gefunden, dafür scheinen also die Regeln für gewöhnliche Arzneimittel (nicht das Verfahren für kontrollierte Stoffe) zu gelten – prüfen Sie vor der Reise aber den aktuellen Anhang A, da die HSA ihn regelmäßig aktualisiert. Cannabis, Cannabisextrakte, THC, CBD und verwandte Cannabinoide sind nach dem Fourth Schedule der Misuse of Drugs Regulations gesondert und ausnahmslos verboten, unabhängig von Rezept oder Genehmigung – Singapur setzt den Misuse of Drugs Act mit harten Strafen durch. Modafinil und Armodafinil (gegen Narkolepsie und Schläfrigkeit bei Schichtarbeit) stehen ebenfalls in Anhang A und brauchen also auch eine Genehmigung der HSA."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "injectable-medication-sg",
+    "sourceHash": "c98be134",
+    "fields": {
+      "summary": "Insulin und GLP-1-Arzneimittel: bis zu 3 Monate mit Rezept. Ersatz-Pens, Nadeln und Spritzen können eine eigene Genehmigung der HSA brauchen.",
+      "limitsDescription": "Insulin und GLP-1-Arzneimittel (Semaglutid, Tirzepatid) stehen nicht auf der Liste kontrollierter Stoffe in Anhang A der HSA; für das Arzneimittel selbst gilt also die gewöhnliche Regel für persönliche Arzneimittel: bis zu 3 Monate Vorrat mit Rezept oder ärztlichem Schreiben und in der beschrifteten Originalverpackung. Daneben können die Geräte zur Anwendung – Injektionspens, Nadeln und Spritzen, die bei der Ankunft nicht bereits am Körper in Gebrauch sind – unter das Verfahren der HSA für die persönliche Einfuhr von Medizinprodukten fallen, das eine eigene vorherige Genehmigung verlangt (Antrag mindestens 10 Arbeitstage vorher, mit einem Schreiben eines Arztes oder Zahnarztes, das den Bedarf bestätigt und begründet), begrenzt auf einen Vorrat an Geräten für 3 Monate.",
+      "notes": "Die Seite der HSA zu Medizinprodukten nennt Insulinpens, Injektionspens, Spritzen oder Nadeln nicht ausdrücklich und nimmt von der Genehmigungspflicht nur Geräte aus, die bei der Ankunft bereits in Gebrauch sind, etwa implantierte Geräte oder solche, die bereits Haut oder Augen berühren. Aus der amtlichen Quelle geht nicht hervor, ob eine eigene, in Gebrauch befindliche Insulinpumpe oder ein GLP-1-Pen deshalb befreit ist oder ob ungeöffnete Ersatz-Pens, Nadeln und Spritzen gesondert durch die Genehmigung für Medizinprodukte müssen – diese Unklarheit konnten wir aus dem veröffentlichten Text nicht auflösen. Klären Sie es vor der Reise direkt mit der HSA (PTM_Enquiry@hsa.gov.sg), besonders wenn Sie mehrere ungeöffnete Pens oder einen Vorrat an Nadeln mitführen."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "prescription-medication-kr",
+    "sourceHash": "c79fa4eb",
+    "fields": {
+      "summary": "Bis zu 6 Flaschen oder 3 Monate Vorrat an gewöhnlichen Arzneimitteln, mit Rezept, ärztlicher Bescheinigung oder Apothekenetikett, in der Originalverpackung.",
+      "limitsDescription": "Erlaubt sind höchstens 6 Flaschen oder ein Vorrat für drei Monate. Reisende müssen nachweisen, dass die Arzneimittel für den persönlichen Gebrauch sind – mit einem Rezept, einer ärztlichen Bescheinigung oder einem Apothekenetikett auf der Verpackung – und können auch nach einer Quittung oder einem anderen Nachweis des rechtmäßigen Kaufs gefragt werden. Lassen Sie Arzneimittel in der Originalverpackung.",
+      "notes": "Das gilt für gewöhnliche Arzneimittel ohne Betäubungsmittel – für Arzneimittel mit kontrollierten Stoffen gibt es ein eigenes Genehmigungsverfahren vorab (siehe den Eintrag zu kontrollierten Arzneimitteln für Korea)."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-kr",
+    "sourceHash": "d221a737",
+    "fields": {
+      "summary": "Braucht vor der Ankunft eine Genehmigung des MFDS: nur, was Sie während des Aufenthalts brauchen, plus 5 Tage, nie mehr als 90 Tage Vorrat, im Handgepäck.",
+      "limitsDescription": "Wer mit einem Arzneimittel mit einem kontrollierten Stoff nach Korea einreist, braucht vor der Ankunft eine Genehmigung des Ministeriums für Lebensmittel- und Arzneimittelsicherheit (MFDS), unabhängig von der Staatsangehörigkeit. Sie dürfen nur mitbringen, was Sie während Ihres Aufenthalts brauchen, plus bis zu 5 Tage Reserve für Verspätungen, und nie mehr als einen Vorrat für 90 Tage. Führen Sie das Arzneimittel im Handgepäck mit.",
+      "limitsQuantity": "Was Sie während des Aufenthalts brauchen, plus bis zu 5 Tage Reserve, nie mehr als 90 Tage Vorrat",
+      "notes": "Arzneimittel mit kontrollierten Stoffen dürfen nicht per Post nach Korea geschickt werden: Laut MFDS werden verschickte Arzneimittel beschlagnahmt und vernichtet oder zurückgeschickt. Die Genehmigung gilt nur für die Person, die das Arzneimittel einnimmt, nicht für Familie oder Freunde. Der Leitfaden des MFDS sagt nicht, ob Amphetaminprodukte wie Adderall genehmigt werden können; fragen Sie daher vor einer Reise damit beim MFDS nach. Wenn Sie nicht berechtigt sind oder länger als 3 Monate bleiben, rät das MFDS, Ihren Arzt nach Alternativen zu fragen, die Sie sich in Korea verschreiben lassen können. Der koreanische Zoll warnt, dass die Einfuhr von Arzneimitteln mit kontrollierten Wirkstoffen ohne diese Genehmigung nach dem Betäubungsmittelgesetz (Narcotics Control Act) strafbar ist, auch wenn sie im Ausland verkauft oder verschrieben wurden: lebenslange Haft oder mindestens 5 Jahre für Wirkstoffe wie Codein, Morphin, Oxycodon, Methylphenidat (genannt werden Ritalin, Concerta und Medikinet) und Amphetamin-Isomere; bis zu 10 Jahre oder eine Geldstrafe bis zu 100 Mio. KRW für Wirkstoffe wie Alprazolam, Zolpidem, Clonazepam und Lorazepam."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "dextromethorphan-kr",
+    "sourceHash": "4b260617",
+    "fields": {
+      "summary": "Husten- und Erkältungsmittel mit Dextromethorphan sind in Korea kontrolliert. Bringen Sie sie nur mit vorheriger Genehmigung des koreanischen Arzneimittelsicherheitsministeriums mit.",
+      "limitsDescription": "Der koreanische Zoll führt Dextromethorphan als psychotropen Wirkstoff nach dem Betäubungsmittelgesetz (Narcotics Control Act): Die Einfuhr ohne Genehmigung wird mit bis zu 10 Jahren Haft oder einer Geldstrafe bis zu 100 Mio. KRW bestraft. Ausgenommen ist das Mitführen eines Arzneimittels zur eigenen Behandlung mit vorheriger Genehmigung des Ministers für Lebensmittel- und Arzneimittelsicherheit (Antrag über nedrug.mfds.go.kr; siehe den Eintrag zu kontrollierten Arzneimitteln für Korea).",
+      "notes": "Der koreanische Zoll nennt NyQuil, DayQuil, Robitussin, Mucinex und Delsym unter den Dextromethorphan-Arzneimitteln, die er an der Grenze gefunden hat. Nicht jede Variante dieser Marken enthält Dextromethorphan: Prüfen Sie die Wirkstoffe auf Ihrer Packung."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "peptides-sg",
+    "sourceHash": "063b44fb",
+    "fields": {
+      "summary": "Nur wenn Ihnen verschrieben: bis zu 3 Monate Vorrat, mit Rezeptkopie oder ärztlichem Schreiben, in der von der Apotheke beschrifteten Originalpackung.",
+      "limitsDescription": "Nur wenn ein Arzt es Ihnen verschrieben hat. Die HSA erlaubt Reisenden bis zu 3 Monate Vorrat eines Arzneimittels ohne vorherige Genehmigung, wenn es Ihnen in Ihrem Wohnsitzland rechtmäßig verschrieben wurde, Sie eine Kopie des Rezepts oder ein ärztliches Schreiben mitführen und es in der Originalpackung mit dem Etikett der abgebenden Apotheke bleibt. Mehr als 3 Monate Vorrat sind nicht erlaubt. Online ohne Rezept gekaufte Peptid-Fläschchen erfüllen diese Bedingungen nicht.",
+      "limitsQuantity": "Vorrat für 3 Monate, mit Rezept",
+      "notes": "Laut HSA sind Retatrutid und Cagrilintid nicht zugelassene spritzbare Peptide, die sich noch in der klinischen Entwicklung befinden, und keine Behörde, auch nicht die HSA, hat sie als Arzneimittel zugelassen. Sie sagt auch, dass Etiketten wie „nur für Forschungszwecke“ oder „nicht für den menschlichen Verzehr“ als Warnsignal zu verstehen sind. Zugelassene GLP-1-Arzneimittel wie Semaglutid und Tirzepatid sind ein anderer Fall: siehe den Eintrag zu spritzbaren Arzneimitteln, der auch die Mitnahme von Pens, Nadeln und Spritzen behandelt."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "kratom-sg",
+    "sourceHash": "17615a7e",
+    "fields": {
+      "summary": "Verboten: Die Wirkstoffe von Kratom sind in Singapur Drogen der Klasse A. Auf die Einfuhr stehen mindestens 5 Jahre Haft und 5 Stockhiebe.",
+      "limitsDescription": "Nicht mitnehmen. Die Wirkstoffe von Kratom, Mitragynin und 7-Hydroxymitragynin, sind nach dem Misuse of Drugs Act Singapurs kontrollierte Drogen der Klasse A. Auf die Einfuhr von Kratom stehen mindestens 5 Jahre Haft und 5 Stockhiebe, und bis zu 30 Jahre oder lebenslange Haft und 15 Stockhiebe.",
+      "notes": "Der Besitz von Kratom kann bis zu 10 Jahre Haft, eine Geldstrafe bis zu 20 000 S$ oder beides bedeuten. Der Konsum ist eine eigene Straftat: mindestens 1 Jahr und bis zu 10 Jahre Haft und eine Geldstrafe bis zu 20 000 S$."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "medicated-gum-sg",
+    "sourceHash": "e3b3506d",
+    "fields": {
+      "summary": "Verboten: Arzneimittel in Kaugummiform und im Ausland gekaufte Nikotinersatzprodukte (Kaugummi, Lutschtabletten, Pflaster, Sprays, Inhalatoren).",
+      "limitsDescription": "Nicht mitnehmen. Die Gesundheitsbehörde HSA Singapurs erlaubt die persönliche Einfuhr von Arzneimitteln in Kaugummiform und von außerhalb Singapurs erworbenen Nikotinarzneimitteln unter keinen Umständen. Das gilt auch für Nikotinersatztherapie: Kaugummi, Lutschtabletten, Pflaster, Sprays und Inhalatoren.",
+      "notes": "Dieser Eintrag betrifft medizinischen Kaugummi und Nikotinarzneimittel nach den Regeln der HSA für persönliche Arzneimittel. Gewöhnlicher Kaugummi ist gesondert verboten (siehe Kaugummi). In Singapur zugelassene Nikotinersatzprodukte können dort nach einem Gespräch mit einem Apotheker in zugelassenen Apotheken gekauft werden."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
   }
 ]
