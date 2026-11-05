@@ -196,5 +196,51 @@
     },
     "translated_at": "2026-11-05",
     "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "medication-ma",
+    "sourceHash": "9f7ae30b",
+    "fields": {
+      "summary": "Kleine Mengen für den persönlichen Bedarf sind zugelassen; der Zoll kann ein Rezept verlangen. Kontrollierte Stoffe brauchen eine Bescheinigung des Gesundheitsministeriums.",
+      "limitsDescription": "Arzneimittel in kleinen Mengen, erkennbar für den eigenen Gebrauch, sind bei Bedarf ohne besondere Formalitäten zugelassen; der marokkanische Zoll kann verlangen, dass Reisende eine Erklärung zum persönlichen Gebrauch unterschreiben und medizinische Nachweise vorlegen (ärztliche Bescheinigung oder Rezept). Die Einfuhr zu einem anderen Zweck als dem persönlichen Gebrauch braucht eine Genehmigung des Gesundheitsministeriums und die Zahlung von Zöllen und Steuern. Stoffe der Tabelle B des marokkanischen Verzeichnisses kontrollierter und giftiger Stoffe brauchen zusätzlich eine amtliche Einfuhrbescheinigung der Betäubungsmittelstelle des Gesundheitsministeriums, unabhängig von der Menge.",
+      "notes": "Aus dem Zollleitfaden des Außenministeriums für Reisende ohne Wohnsitz in Marokko und einem Zollrundschreiben von 2024, das dieselbe Regel zum persönlichen Gebrauch wiederholt (ärztliche Bescheinigung oder Rezept und eine unterschriebene Erklärung, nicht verbrauchte Mengen wieder auszuführen). Eine Liste bestimmter Wirkstoffe (etwa kontrollierter Stimulanzien) oder eine Höchstmenge in Tagesrationen wurde für Marokko nicht gefunden, anders als bei manchen anderen Reisezielen in diesem Datensatz – das ist eine offene Lücke, keine Erlaubnis ohne Einschränkung."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-ma",
+    "sourceHash": "e54e6b9b",
+    "fields": {
+      "summary": "Braucht eine Bescheinigung der marokkanischen Gesundheitsbehörden sowie Ihr Rezept und eine beglaubigte ärztliche Bescheinigung. Wenden Sie sich zuerst an die AMMPS.",
+      "limitsDescription": "Für Arzneimittel mit einem Betäubungsmittel oder psychotropen Stoff nennt die marokkanische Arzneimittelbehörde (AMMPS): ein gültiges ärztliches Rezept, eine ärztliche Bescheinigung, beglaubigt von den Gesundheitsbehörden Ihres Wohnsitzlandes, eine Bescheinigung der marokkanischen Gesundheitsbehörden und Ihren schriftlichen Antrag. Für ein Arzneimittel, das in Marokko nicht verkauft wird, brauchen Sie außerdem eine Genehmigung zur Freigabe für den Verbrauch durch die marokkanischen Gesundheitsbehörden und, falls vorgesehen, eine Transportbescheinigung oder -genehmigung. Wenden Sie sich vor der Reise an die Abteilung für kontrollierte Stoffe der AMMPS: stupefiant@ammps.gov.ma.",
+      "notes": "Von der AMMPS, aus ihren Angaben für das Internationale Suchtstoffkontrollamt (August 2026). Das stimmt mit der Regel des marokkanischen Zolls im allgemeinen Arzneimitteleintrag überein, dass Stoffe der Tabelle B unabhängig von der Menge eine Einfuhrbescheinigung der Gesundheitsbehörden für Betäubungsmittel brauchen. Die AMMPS nennt keine Grenze in Tagen oder Mengen. Markennamen dienen nur der Suche: Sie entsprechen Stoffen auf den internationalen Kontrolllisten der UN."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "medication-id",
+    "sourceHash": "d2216109",
+    "fields": {
+      "summary": "Bis zu 30 Tabletten oder 3 Cremes, Flüssigkeiten oder Sprays je Produkt. Für mehr braucht es ein Rezept auf Englisch, bis zu 90 Tage. Anmelden und den roten Ausgang nehmen.",
+      "limitsDescription": "Die Regel der Badan POM für Arzneimittel im Reisegepäck: Tabletten, Kapseln, Pillen und andere feste Formen bis zu 30 Stück je Produkt; Cremes, Flüssigkeiten und Sprays bis zu 3 Stück je Produkt. Darüber hinaus brauchen Sie ein ärztliches Rezept auf Englisch und dürfen höchstens einen Vorrat für 90 Tage mitnehmen. Für persönliche Arzneimittel ist keine indonesische Genehmigung nötig. Melden Sie Arzneimittel in der elektronischen Zollanmeldung an (ecd.beacukai.go.id): Sie gehen zur Kontrolle durch den roten Ausgang, und auf Nachfrage müssen Sie das Rezept vorzeigen.",
+      "limitsQuantity": "30 feste Einheiten oder 3 andere Einheiten je Produkt; mit Rezept auf Englisch bis zu 90 Tage",
+      "notes": "Die Arzneimittel müssen für Ihren eigenen Gebrauch sein, nicht zum Verkauf oder für andere. Das Rezept muss von einem Arzt aus dem Land stammen, aus dem das Arzneimittel kommt. Arzneimittel mit psychotropen Stoffen oder Betäubungsmitteln unterliegen eigenen Regeln (siehe den Eintrag zu kontrollierten Arzneimitteln in Indonesien)."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-id",
+    "sourceHash": "3ebe5fd9",
+    "fields": {
+      "summary": "Psychotrope Arzneimittel: nur für ausländische Staatsangehörige, mit Rezept auf Englisch, bis zu 60 Tage. Betäubungsmittel dürfen nicht eingeführt werden.",
+      "limitsDescription": "Badan POM: Psychotrope Arzneimittel (zur Behandlung dürfen nur solche der Kategorien II, III und IV verwendet werden) sind im Reisegepäck nur für ausländische Staatsangehörige erlaubt, mit einem ärztlichen Rezept auf Englisch und höchstens einem Vorrat für 60 Tage. Betäubungsmittel dürfen nicht aus dem Ausland eingeführt werden. Psychotrope Arzneimittel dürfen nicht per Post oder Kurier geschickt werden.",
+      "limitsQuantity": "Psychotrope Arzneimittel: bis zu 60 Tage Vorrat",
+      "notes": "Das Rezept muss von einem Arzt aus dem Land stammen, aus dem das Arzneimittel kommt. Melden Sie das Arzneimittel in der elektronischen Zollanmeldung an. Die Badan POM veröffentlicht auf derselben Seite ihre Listen psychotroper Stoffe und Betäubungsmittel; prüfen Sie die Wirkstoffe Ihres Arzneimittels anhand dieser Listen. Kontakt: was.sas.bbo@pom.go.id."
+    },
+    "translated_at": "2026-11-05",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
   }
 ]

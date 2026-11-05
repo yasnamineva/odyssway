@@ -482,7 +482,8 @@ function checkTranslations(): void {
           for (const g of glossary) {
             // A term can be scoped to customs categories (a medicine term isn't a drone term).
             if (g.categories && !(en.category && g.categories.includes(en.category))) continue;
-            if (g.en.test(enText) && !trText.includes(g.de)) {
+            // Case-insensitive, so German compounds count ("Einfuhrbescheinigung" has "Bescheinigung").
+            if (g.en.test(enText) && !trText.toLowerCase().includes(g.de.toLowerCase())) {
               errors.push(`${where}: "${k}" uses /${g.label}/ but the translation lacks the official term "${g.de}"`);
             }
           }
