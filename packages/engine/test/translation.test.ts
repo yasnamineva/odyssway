@@ -27,4 +27,11 @@ describe("missingFigures", () => {
   it("treats a missing translated field as missing all its figures", () => {
     expect(missingFigures({ notes: "Within 48 hours" }, {})).toEqual(["notes: 48"]);
   });
+
+  it("accepts a German decimal comma and still accepts thousands separators", () => {
+    expect(missingFigures({ notes: "max 1.125 litres each" }, { notes: "je höchstens 1,125 Liter" })).toEqual([]);
+    expect(missingFigures({ notes: "NZ$10,000 or more" }, { notes: "ab NZ$10\u00a0000" })).toEqual([]);
+    expect(missingFigures({ notes: "NZ$10,000 or more" }, { notes: "ab NZ$10,000" })).toEqual([]);
+    expect(missingFigures({ notes: "1.125 litres" }, { notes: "1,5 Liter" })).toEqual(["notes: 1.125"]);
+  });
 });

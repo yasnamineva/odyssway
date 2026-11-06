@@ -77,6 +77,12 @@ export function missingFigures(english: TranslatableFields, translated: Translat
     const trText = tr === undefined ? "" : Array.isArray(tr) ? tr.join("\n") : tr;
     const have = new Map<string, number>();
     for (const n of figuresIn(trText)) have.set(n, (have.get(n) ?? 0) + 1);
+    // German writes decimals with a comma: "1,125 l" is 1.125 litres, which figuresIn
+    // reads as a thousands separator. Count that reading too.
+    for (const m of trText.matchAll(/(?<![\d.,])(\d+),(\d{3})(?![\d.,])/g)) {
+      const n = `${m[1]}.${m[2]}`;
+      have.set(n, (have.get(n) ?? 0) + 1);
+    }
     for (const n of figuresIn(enText)) {
       const left = have.get(n) ?? 0;
       if (left > 0) have.set(n, left - 1);
