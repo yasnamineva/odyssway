@@ -5,4 +5,4 @@
  * parsed. Answers are still computed entirely in the browser (AGENTS.md §10).
  */
 export { customsItems } from "./destinations";
-export { resolveItem, resolveTripCheck } from "./trip-check";
+export { readItemQuery, resolveItem, resolveTripCheck } from "./trip-check";

@@ -237,6 +237,8 @@ export default function TripCheck({
   };
 
   const removeItem = (item: string) => setItems((prev) => prev.filter((i) => i !== item));
+  const replaceItem = (from: string, to: string) =>
+    setItems((prev) => [...new Set(prev.map((i) => (i === from ? to : i)))]);
 
   const destinationGroups = destinationOptionGroups({
     destinations: destinations.filter((d) => d.status === "verified"),
@@ -551,6 +553,7 @@ export default function TripCheck({
                     result={leg}
                     originName={originLabel ?? nationality}
                     onEdit={() => document.getElementById("tc-nationality")?.focus()}
+                    onReplaceItem={replaceItem}
                   />
                 </details>
               ))}
@@ -564,6 +567,7 @@ export default function TripCheck({
               <TripCheckResults
                 result={result}
                 originName={originLabel ?? nationality}
+                onReplaceItem={replaceItem}
                 onEdit={() => {
                   const field = document.getElementById("tc-nationality");
                   field?.scrollIntoView({
@@ -696,14 +700,66 @@ function RouteSummary({ legs, items }: { legs: TripCheckResult[]; items: string[
   );
 }
 
+/** "adderall" → "Adderall", for item names shown back to the reader. */
+const capitalise = (s: string) => (s ? s[0]!.toUpperCase() + s.slice(1) : s);
+
+/** How the search read an item ("We read “Addy” as Adderall"), or that it didn't, with suggestions. */
+function ItemReadingNote({
+  item,
+  onReplaceItem,
+}: {
+  item: TripCheckResult["items"][number];
+  onReplaceItem?: (from: string, to: string) => void;
+}) {
+  const t = useTranslations("tripCheck");
+  const r = item.reading;
+  if (!r || r.kind === "as_typed") return null;
+  if (r.kind === "alias" || r.kind === "typo") {
+    const term = capitalise(r.term);
+    return (
+      <p className="mt-0.5 text-xs text-slate-600" data-testid="tc-item-reading">
+        {r.kind === "alias" ? t("itemReadAsAlias", { query: item.query, term }) : t("itemReadAsTypo", { term })}
+      </p>
+    );
+  }
+  return (
+    <div className="mt-0.5" data-testid="tc-item-unrecognised">
+      <p className="text-xs text-amber-700">{t("itemNotRecognised", { query: item.query })}</p>
+      {r.suggestions.length > 0 && (
+        <p className="mt-1 flex flex-wrap items-center gap-1.5 text-xs text-slate-600">
+          <span>{t("itemDidYouMean")}</span>
+          {r.suggestions.map((s) =>
+            onReplaceItem ? (
+              <button
+                key={s}
+                type="button"
+                onClick={() => onReplaceItem(item.query, s)}
+                aria-label={t("itemUseSuggestion", { term: capitalise(s) })}
+                className="rounded-full border border-brand-200 bg-brand-50 px-2 py-0.5 font-semibold text-brand-800 hover:bg-brand-100"
+                data-testid="tc-item-suggestion"
+              >
+                {capitalise(s)}
+              </button>
+            ) : (
+              <span key={s} className="font-semibold">{capitalise(s)}</span>
+            ),
+          )}
+        </p>
+      )}
+    </div>
+  );
+}
+
 function TripCheckResults({
   result,
   originName,
   onEdit,
+  onReplaceItem,
 }: {
   result: TripCheckResult;
   originName: string;
   onEdit: () => void;
+  onReplaceItem?: (from: string, to: string) => void;
 }) {
   const t = useTranslations("tripCheck");
   const checked = result.verifiedAt ? t("checkedOn", { date: result.verifiedAt }) : undefined;
@@ -877,6 +933,7 @@ function TripCheckResults({
               {result.items.filter((item) => !result.intraEuCustoms || item.match || result.transit).map((item) => (
                 <li key={item.query} data-testid="tc-item-result" className="py-3 first:pt-1 last:pb-0">
                   <p className="text-sm font-medium break-words text-slate-900">{item.query}</p>
+                  <ItemReadingNote item={item} onReplaceItem={onReplaceItem} />
                   {item.match ? (
                     <>
                       <p className="text-sm text-slate-700">{t(`verdict.${item.match.verdict}`)}</p>
@@ -910,14 +967,14 @@ function TripCheckResults({
                         }
                       />
                     </>
-                  ) : result.intraEuCustoms ? null : (
+                  ) : result.intraEuCustoms || item.reading?.kind === "unknown" ? null : (
                     <p className="text-xs text-amber-700" data-testid="tc-item-not-found">
-                      {t("itemNotFound", {
-                        destination: result.destinationName,
-                      })}
+                      {item.reading && item.reading.kind !== "as_typed"
+                        ? t("itemNotFoundKnown", { item: capitalise(item.reading.term), destination: result.destinationName })
+                        : t("itemNotFound", { destination: result.destinationName })}
                     </p>
                   )}
-                  {result.transit && item.transitMatch !== undefined && (
+                  {result.transit && item.transitMatch !== undefined && item.reading?.kind !== "unknown" && (
                     <TransitBlock country={result.transit.name} row={item.transitMatch} />
                   )}
                 </li>

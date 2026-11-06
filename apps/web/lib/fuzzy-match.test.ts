@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { expandQuery, isFuzzyMatch, levenshtein } from "./fuzzy-match";
+import { aliasFor, expandQuery, isFuzzyMatch, levenshtein, suggestNames } from "./fuzzy-match";
+import { readItemQuery, resolveTripCheck } from "./trip-check";
 
 describe("levenshtein", () => {
   it("is 0 for identical strings", () => {
@@ -52,5 +53,37 @@ describe("expandQuery", () => {
     // "roxy" (oxycodone slang) has no entry — it must resolve to itself only,
     // not silently match against an unrelated drug's data.
     expect(expandQuery("roxy")).toEqual(["roxy"]);
+  });
+});
+
+describe("readItemQuery (what the item search understood)", () => {
+  it("says when slang was read as a known medicine", () => {
+    expect(aliasFor("Addy")).toBe("adderall");
+    expect(readItemQuery("Addy")).toEqual({ kind: "alias", term: "adderall" });
+  });
+
+  it("offers a correction for a typo of a covered item", () => {
+    expect(readItemQuery("ozempik")).toEqual({ kind: "typo", term: "ozempic" });
+  });
+
+  it("recognises an item typed correctly", () => {
+    expect(readItemQuery("melatonin")).toEqual({ kind: "as_typed" });
+  });
+
+  it("says it doesn't recognise nonsense, with suggestions only when something is close", () => {
+    expect(readItemQuery("xyzzy")).toEqual({ kind: "unknown", suggestions: [] });
+    const r = readItemQuery("ritlain");
+    expect(r.kind).toBe("unknown");
+    expect(r.kind === "unknown" && r.suggestions).toContain("ritalin");
+  });
+
+  it("never suggests for very short queries or real words that aren't typos", () => {
+    expect(suggestNames("ab", ["abc"])).toEqual([]);
+    expect(suggestNames("copper", ["poppers"])).toEqual([]);
+  });
+
+  it("puts the reading on Trip Check item results", () => {
+    const res = resolveTripCheck("US", "UY", ["Addy"]);
+    expect(res.items[0]?.reading).toEqual({ kind: "alias", term: "adderall" });
   });
 });

@@ -52,6 +52,8 @@ export default function CanIBringWidget() {
         code);
 
   const match = asked && engine ? engine.resolveItem(asked.destination, asked.item) : null;
+  const reading = asked && engine ? engine.readItemQuery(asked.item) : null;
+  const readTerm = reading && (reading.kind === "alias" || reading.kind === "typo") ? reading.term[0]!.toUpperCase() + reading.term.slice(1) : null;
   const fullAnswer = asked
     ? `${SITE_URL}/trip-check?destination=${encodeURIComponent(asked.destination)}`
     : `${SITE_URL}/trip-check`;
@@ -120,6 +122,13 @@ export default function CanIBringWidget() {
           <p className="text-sm font-medium break-words text-slate-900">
             {t("resultHeading", { item: asked.item, destination: destinationName(asked.destination) })}
           </p>
+          {readTerm && (
+            <p className="mt-0.5 text-xs text-slate-600" data-testid="widget-item-reading">
+              {reading?.kind === "alias"
+                ? tc("itemReadAsAlias", { query: asked.item, term: readTerm })
+                : tc("itemReadAsTypo", { term: readTerm })}
+            </p>
+          )}
           {match ? (
             <>
               <p className={`mt-1 text-sm font-semibold ${VERDICT_TONE[match.verdict] ?? ""}`}>
@@ -142,7 +151,11 @@ export default function CanIBringWidget() {
             </>
           ) : (
             <p className="mt-1 text-xs text-amber-700">
-              {tc("itemNotFound", { destination: destinationName(asked.destination) })}
+              {reading?.kind === "unknown"
+                ? `${tc("itemNotRecognised", { query: asked.item })}${reading.suggestions.length ? ` ${tc("itemDidYouMean")} ${reading.suggestions.map((s) => s[0]!.toUpperCase() + s.slice(1)).join(", ")}?` : ""}`
+                : readTerm
+                  ? tc("itemNotFoundKnown", { item: readTerm, destination: destinationName(asked.destination) })
+                  : tc("itemNotFound", { destination: destinationName(asked.destination) })}
             </p>
           )}
           <a

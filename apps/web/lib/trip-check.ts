@@ -14,7 +14,7 @@ import {
   entryRequirements,
   queuedDestinations,
 } from "./destinations";
-import { expandQuery, isFuzzyMatch } from "./fuzzy-match";
+import { aliasFor, expandQuery, isFuzzyMatch, suggestNames } from "./fuzzy-match";
 import { resolveAirsideTransit, type AirsideTransit } from "./transit-rules";
 import { nationalityBySlug } from "./nationalities";
 
@@ -31,8 +31,23 @@ export type EntryBasis =
   | "visa_on_arrival"
   | "not_covered";
 
+/**
+ * How the item search read a query, across every verified row (not just this
+ * destination's): recognised as typed, read through a known slang word or
+ * abbreviation ("addy" → Adderall), corrected from a typo, or not recognised
+ * at all (with close names to suggest). Lets the UI say what it understood
+ * instead of a bare "not verified".
+ */
+export type ItemReading =
+  | { kind: "as_typed" }
+  | { kind: "alias"; term: string }
+  | { kind: "typo"; term: string }
+  | { kind: "unknown"; suggestions: string[] };
+
 export interface TripCheckItemResult {
   query: string;
+  /** How the query was understood; absent only for results built before this existed. */
+  reading?: ItemReading;
   match: CustomsItemRecord | null;
   /** Only when a stopover was given: the stopover country's row for this item, if verified. */
   transitMatch?: CustomsItemRecord | null;
@@ -317,6 +332,36 @@ function matchItem(query: string, destinationCode: string): CustomsItemRecord | 
   return null;
 }
 
+let verifiedNames: string[] | null = null;
+function allVerifiedNames(): string[] {
+  verifiedNames ??= [
+    ...new Set(
+      customsItems
+        .filter((i) => i.status === "verified")
+        .flatMap((i) => [...i.names, i.slug.replace(/-[a-z]{2}$/, "").replace(/-/g, " ")])
+        .map((n) => n.toLowerCase()),
+    ),
+  ];
+  return verifiedNames;
+}
+
+/** True when the text names something in a verified row, exactly or as a substring either way. */
+function namesSomething(q: string): boolean {
+  return allVerifiedNames().some((n) => n === q || n.includes(q) || (n.length >= 4 && q.includes(n)));
+}
+
+/** How the item search reads `query`, across all destinations (see ItemReading). */
+export function readItemQuery(query: string): ItemReading {
+  const q = query.trim().toLowerCase();
+  if (!q) return { kind: "as_typed" };
+  const alias = aliasFor(q);
+  if (alias && namesSomething(alias)) return { kind: "alias", term: alias };
+  if (namesSomething(q)) return { kind: "as_typed" };
+  const typo = allVerifiedNames().find((n) => isFuzzyMatch(q, n));
+  if (typo) return { kind: "typo", term: typo };
+  return { kind: "unknown", suggestions: suggestNames(q, allVerifiedNames()) };
+}
+
 /**
  * The customs row for one item at one destination, independent of nationality:
  * a Schengen state's own national row first, then the harmonised EU row;
@@ -399,11 +444,12 @@ export function resolveTripCheck(
     .map((q) => q.trim())
     .filter(Boolean)
     .map((query) => {
+      const reading = readItemQuery(query);
       const national = nationalCode ? matchItem(query, nationalCode) : null;
       const match = national || intraEuCustoms ? national : matchItem(query, customsDestination);
-      if (!transit || !transitCustoms) return { query, match };
+      if (!transit || !transitCustoms) return { query, reading, match };
       const transitNational = isSchengenCode(transit.code) ? matchItem(query, transit.code) : null;
-      return { query, match, transitMatch: transitNational ?? matchItem(query, transitCustoms) };
+      return { query, reading, match, transitMatch: transitNational ?? matchItem(query, transitCustoms) };
     });
 
   return {

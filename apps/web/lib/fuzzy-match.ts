@@ -108,3 +108,32 @@ export function isFuzzyMatch(query: string, candidate: string): boolean {
   if (c.includes(" ")) return false;
   return levenshtein(q, c) <= toleranceFor(Math.max(q.length, c.length));
 }
+
+/** The alias target for a known slang word or misspelling ("addy" → "adderall"), if any. */
+export function aliasFor(raw: string): string | undefined {
+  return ABBREVIATIONS[raw.trim().toLowerCase()];
+}
+
+/**
+ * Up to `limit` item names close to an unrecognised query, nearest first, for a
+ * "Did you mean …?" line. Looser than `isFuzzyMatch` (it only suggests, it never
+ * answers), and it also compares against each word of multi-word names. Never
+ * suggests for a real word listed in NOT_TYPOS, or for queries under 3 letters.
+ */
+export function suggestNames(raw: string, names: readonly string[], limit = 3): string[] {
+  const q = raw.trim().toLowerCase();
+  if (q.length < 3 || NOT_TYPOS.has(q)) return [];
+  const max = Math.max(2, Math.ceil(q.length * 0.4));
+  const scored = new Map<string, number>();
+  for (const name of names) {
+    const n = name.trim().toLowerCase();
+    if (!n || n === q) continue;
+    const words = n.split(/\s+/);
+    const d = Math.min(levenshtein(q, n), ...words.filter((w) => w.length >= 3).map((w) => levenshtein(q, w)));
+    if (d <= max && (scored.get(n) ?? Infinity) > d) scored.set(n, d);
+  }
+  return [...scored.entries()]
+    .sort((a, b) => a[1] - b[1] || a[0].length - b[0].length)
+    .slice(0, limit)
+    .map(([n]) => n);
+}
