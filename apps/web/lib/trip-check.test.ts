@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { resolveItem, resolveTripCheck, SCHENGEN_DESTINATION } from "./trip-check";
+import { customsItems } from "./destinations";
 
 describe("resolveTripCheck", () => {
   it("returns the citizen shortcut when nationality equals destination", () => {
@@ -302,5 +303,33 @@ describe("resolveTripCheck — passport validity (§1.6)", () => {
     const result = resolveTripCheck("US", "AE", []);
     expect(result.passportLine).toMatch(/at least 6 months/);
     expect(result.passportValidity).toBeUndefined();
+  });
+});
+
+describe("controlled medicines people actually search for", () => {
+  const destinations = [...new Set(customsItems.filter((r) => r.status === "verified").map((r) => r.destination))];
+
+  it("only ever answer from a medicine row, never e.g. an illegal-drugs row", () => {
+    for (const d of destinations) {
+      for (const q of ["adderall", "addy", "amphetamine", "oxy", "oxycodone", "morphine"]) {
+        const m = resolveItem(d, q);
+        if (m) expect(`${d} ${q} ${m.category}`).toBe(`${d} ${q} medication`);
+      }
+    }
+  });
+
+  it("show the ban where a country bans amphetamine, not its general allowance", () => {
+    for (const [d, slug] of [
+      ["TH", "amphetamine-th"],
+      ["JP", "amphetamine-medication-jp"],
+      ["ID", "narcotic-medication-id"],
+      ["LV", "amphetamine-medication-lv"],
+      ["AM", "amphetamine-medication-am"],
+      ["MU", "amphetamine-mu"],
+    ] as const) {
+      const m = resolveItem(d, "adderall");
+      expect(m?.slug).toBe(slug);
+      expect(m?.verdict).toBe("prohibited");
+    }
   });
 });
