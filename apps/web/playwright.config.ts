@@ -19,7 +19,8 @@ export default defineConfig({
     // server start past the timeout on slower runners.
     command: process.env.CI ? "pnpm start -p 4321" : "pnpm build && pnpm start -p 4321",
     url: "http://localhost:4321",
-    timeout: 240_000,
+    // Locally this includes a full build, which takes longer as the German pages grow.
+    timeout: 600_000,
     reuseExistingServer: !process.env.CI,
   },
 });

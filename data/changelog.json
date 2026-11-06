@@ -1,5 +1,108 @@
 [
   {
+    "commit": "7415d59b3aa6bf68120661a65e6b3ddf8eb10e92",
+    "date": "2026-11-05",
+    "dataset": "customs-items",
+    "summary": "Correction: New Zealand's general duty-free concession is NZ$700, not NZ$1000 (alcohol note; NZ Customs duty-free page, re-read 2026-11-05); tobacco note rewritten from the same page (first 50 cigarettes or 50 g duty-free, duty and GST on the rest or disposal bins); vape note rewritten for readers",
+    "verified_at": "2026-11-05",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "New Zealand Customs Service — Duty-free shopping (personal allowances)",
+      "url": "https://www.customs.govt.nz/personal/travel-to-and-from-nz/duty-free-shopping/"
+    },
+    "destinations": [
+      "NZ"
+    ]
+  },
+  {
+    "commit": "279a6c99ae425464d5c5fe3be5ebd675f070123d",
+    "date": "2026-11-05",
+    "dataset": "customs-items",
+    "summary": "German: every Canada page (alcohol, tobacco, cash, cannabis and CBD, meat and dairy, plants, vapes, weapons, drones); Canada plant note rewritten for readers",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "CBSA — Food, plant and animal products",
+      "url": "https://www.cbsa-asfc.gc.ca/services/fpa-apa/bringing-apporter-fpa-eng.html"
+    },
+    "destinations": [
+      "CA"
+    ]
+  },
+  {
+    "commit": "4a7a5336b0e9363a3e67708610e65050d1b56b1b",
+    "date": "2026-11-05",
+    "dataset": "entry-requirements",
+    "summary": "validate-data fails on research-log wording in verified rows (\"this dataset\", \"see unverified\", \"as fetched\"...); India→Indonesia note rewritten for readers",
+    "verified_at": "2026-10-27",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Direktorat Jenderal Imigrasi — Daftar Subjek Visa on Arrival (VOA)",
+      "url": "https://www.imigrasi.go.id/wna/daftar-negara-voa-bvk-calling-visa/daftar-negara-subjek-visa-on-arrival"
+    },
+    "destinations": [
+      "ID"
+    ]
+  },
+  {
+    "commit": "58c5ba1a6a05e7e763f3e9b582b55793e6a05566",
+    "date": "2026-11-05",
+    "dataset": "customs-items",
+    "summary": "Reader-facing wording for 14 English rows that still read like research notes (\"in this dataset\", \"see unverified\"), facts unchanged; the two German translations of affected rows updated and restamped",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Receita Federal — Guia do Viajante: Proibições e Restrições (Entrada no Brasil)",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/proibicoes-restricoes"
+    },
+    "destinations": [
+      "AR",
+      "BR",
+      "CL",
+      "CR",
+      "DO",
+      "IL",
+      "IN",
+      "LK",
+      "MA",
+      "NZ",
+      "SA"
+    ]
+  },
+  {
+    "commit": "3de9d538ee1623eee04c4639a9e310556d8b5175",
+    "date": "2026-11-05",
+    "dataset": "customs-items",
+    "summary": "German: e-cigarette, meat and dairy, and plant pages for Japan, Mexico, Morocco, Indonesia, Vietnam, the Maldives, Sri Lanka, Mauritius, Thailand, Türkiye, Egypt and the UAE (360 German pages); research-log wording in three English rows rewritten for readers, facts unchanged",
+    "verified_at": "2026-10-30",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministry of Health, Labour and Welfare (MHLW) — Q&A on Pharmaceutical Import Procedures (医薬品等輸入手続質疑応答集)",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb9332&dataType=1&pageNo=2"
+    },
+    "destinations": [
+      "AE",
+      "EG",
+      "JP"
+    ]
+  },
+  {
+    "commit": "cb689f4691721bc3213cd75702defe24c1b2129c",
+    "date": "2026-11-05",
+    "dataset": "customs-items",
+    "summary": "German: Australia and New Zealand medicine pages; research-note wording in three English rows (AU controlled and injectable, NZ controlled) rewritten for readers, facts unchanged",
+    "verified_at": "2026-10-18",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "New Zealand Customs Service -- Prohibited and restricted items: medicines",
+      "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/"
+    },
+    "destinations": [
+      "AU",
+      "NZ"
+    ]
+  },
+  {
     "commit": "52b2083bf6a9caf5736cfe6edccec0b52305ab00",
     "date": "2026-11-05",
     "dataset": "customs-items",
