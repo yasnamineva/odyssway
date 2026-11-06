@@ -697,14 +697,14 @@
   },
   {
     "id": "cash-eg",
-    "sourceHash": "f7ff4582",
+    "sourceHash": "d89af889",
     "fields": {
       "summary": "Fremdwährung über 10 000 US-Dollar bei der Ankunft anmelden (keine Obergrenze). Ägyptische Pfund: höchstens 5 000 EGP ein oder aus.",
       "limitsDescription": "Melden Sie Fremdwährung im Wert von mehr als 10 000 US-Dollar bei der Ankunft an; eine Obergrenze für Fremdwährung gibt es nicht. In ägyptischen Pfund dürfen Sie höchstens 5 000 EGP nach Ägypten ein- oder aus Ägypten ausführen.",
       "limitsQuantity": "10 000 US-Dollar; höchstens 5 000 EGP",
-      "notes": "Widerspruch zwischen Quellen, festgehalten nach AGENTS.md §3.8: Das Vereinigte Königreich sagt, Fremdwährung im Wert von „mehr als 10 000 US-Dollar“ sei anzumelden, Kanada sagt „10 000 US-Dollar oder mehr“. Wer genau 10 000 US-Dollar anmeldet, umgeht die Frage. Keine ägyptische Regierungsseite mit dieser Regel war lesbar (die Währungsseite von customs.gov.eg ist eine Wechselkurstabelle, die Rundschreiben der Zentralbank brauchen eine JavaScript-Anwendung), daher stützt sich dieser Eintrag auf die Reisehinweise zweier ausländischer Regierungen und der Botschaft Katars in Kairo."
+      "notes": "Die Quellen widersprechen sich: Das Vereinigte Königreich sagt, Fremdwährung im Wert von „mehr als 10 000 US-Dollar“ sei anzumelden, Kanada sagt „10 000 US-Dollar oder mehr“. Wer genau 10 000 US-Dollar anmeldet, umgeht die Frage. Keine ägyptische Regierungsseite mit dieser Regel war lesbar (die Währungsseite von customs.gov.eg ist eine Wechselkurstabelle, die Rundschreiben der Zentralbank brauchen eine JavaScript-Anwendung), daher stützt sich dieser Eintrag auf die Reisehinweise zweier ausländischer Regierungen und der Botschaft Katars in Kairo."
     },
-    "translated_at": "2026-11-05",
+    "translated_at": "2026-11-06",
     "translated_by": "agent:claude-opus-5-5 (machine translation)"
   },
   {
@@ -5812,6 +5812,297 @@
       "summary": "Kein Zollverbot; das Fliegen regelt die DGAC: höchstens 120 m, Sichtweite und Abstand zu Start- und Landebahnen. Über bewohnten Gebieten brauchen Sie eine DGAC-Genehmigung.",
       "limitsDescription": "Ein Zollverbot wurde nicht gefunden; das Fliegen regelt die Luftfahrtbehörde DGAC. Über bewohnten Gebieten verlangt die DAN 151 eine DGAC-Registrierung, einen Fernpilotennachweis und eine Betriebsgenehmigung; wichtigste Grenzen: höchstens 120 m (400 Fuß), Sichtweite, nicht innerhalb von 2 km in der Verlängerung einer Bahnachse oder 1 km parallel zu einer Bahn, nie über Militärgelände oder Gefängnissen.",
       "notes": "Die DGAC-Vorschrift DAN 151, Ausg. 3 (Mai 2024), gilt für alle, die ein RPA „sobre áreas pobladas“ (über bewohnten Gebieten) für Zwecke des öffentlichen Interesses oder für Luftarbeiten betreiben, neben der DAN 91 „Reglas del Aire“ (Luftverkehrsregeln). Sie verlangt: eine vorherige Genehmigung der DGAC (151.101) mit der Registrierungskarte des RPA, dem Fernpilotennachweis, einer Versicherung, einer KMZ-Datei des Einsatzorts und der Erlaubnis des Grundstückseigentümers; die Eintragung in das RPA-Register der DGAC (151.201; das Antragsformular verlangt einen chilenischen Ausweis bzw. eine RUT); einen Nachweis, der ein Mindestalter von 18 Jahren und eine schriftliche Prüfung voraussetzt (151.303); eine maximale Startmasse von 9 kg und einen Notfallschirm (151.005). Betriebsgrenzen (151.103): nur in Sichtweite (VLOS), höchstens 500 m Entfernung und 400 Fuß (120 m) Höhe, nicht innerhalb von 2 km in der Bahnverlängerung oder 1 km parallel zu einer Bahn, keine Sperr- oder Gefahrengebiete, keine Nachtflüge ohne Genehmigung, nur ein RPA gleichzeitig. 151.105: Alle Flüge über militärischen Einrichtungen, Gefängnissen und strategischen Einrichtungen sind verboten. Die Regeln für reine Freizeitflüge über unbewohnten Gebieten (DAN 91) und ob Touristen eine Drohne registrieren können, wurden nicht bestätigt; fragen Sie vor dem Fliegen bei der DGAC nach. Bei allgemeinen Einfuhren verlangt der Zoll für Funksendegeräte eine Genehmigung der SUBTEL; für Drohnen von Reisenden ist das nicht bestätigt."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "alcohol-ie",
+    "sourceHash": "89b03d56",
+    "fields": {
+      "summary": "Von außerhalb der EU: 1 Liter Spirituosen oder 2 Liter Getränke bis 22 %, dazu 4 Liter Wein und 16 Liter Bier.",
+      "limitsDescription": "Von außerhalb der EU (auch aus dem Vereinigten Königreich): 1 Liter Spirituosen oder 2 Liter andere alkoholische Getränke bis 22 % Alkohol (z. B. Portwein, Sherry, Schaumwein, manche Liköre), dazu 4 Liter nicht schäumender Wein und 16 Liter Bier. Die Menge für Spirituosen und andere Getränke lässt sich anteilig aufteilen (z. B. 0,5 Liter Spirituosen und 1 Liter Portwein). Auf alles über der Freimenge fallen Zoll, Verbrauchsteuer und Mehrwertsteuer an.",
+      "notes": "Gilt für Reisende ab 17 Jahren (Revenue/Citizens Information: „You are not entitled to alcohol or tobacco allowances if you are under 17“: unter 17 Jahren gibt es keine Freimengen für Alkohol oder Tabak). Das sind die eigenen Hinweise der irischen Steuer- und Zollbehörde Revenue für Ankünfte von außerhalb der EU (auch aus Großbritannien). Für Verkehrspersonal gelten geringere Mengen (0,35 l Spirituosen, 0,75 l nicht schäumender Wein, 4 l Bier). Für Ankünfte aus der EU gelten andere Regeln."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "tobacco-ie",
+    "sourceHash": "be34564a",
+    "fields": {
+      "summary": "Von außerhalb der EU: 200 Zigaretten oder 100 Zigarillos oder 50 Zigarren oder 250 g Tabak.",
+      "limitsDescription": "Von außerhalb der EU (auch aus dem Vereinigten Königreich): 200 Zigaretten oder 100 Zigarillos oder 50 Zigarren oder 250 g Rauchtabak. Die Freimenge lässt sich anteilig aufteilen (z. B. 100 Zigaretten und 50 Zigarillos). Darüber fallen Zoll und Mehrwertsteuer an.",
+      "notes": "Revenue: „The import of oral smokeless tobacco is generally prohibited“ (die Einfuhr von rauchlosem Tabak zum oralen Gebrauch, etwa Snus, ist grundsätzlich verboten); siehe Irlands Liste der Verbote und Beschränkungen. Für Verkehrspersonal gelten geringere Mengen (40 Zigaretten, 20 Zigarillos, 10 Zigarren oder 50 g)."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cash-ie",
+    "sourceHash": "6ff4cbbf",
+    "fields": {
+      "summary": "Melden Sie Bargeld ab 10 000 € an, wenn Sie über Irland in die EU einreisen oder sie verlassen.",
+      "limitsDescription": "Wenn Sie über einen irischen Flughafen oder Hafen in die EU einreisen oder sie verlassen und Bargeld von 10 000 € oder mehr (oder den Gegenwert in einer anderen Währung) dabeihaben, müssen Sie es beim Zoll anmelden. Als „Bargeld“ gelten Banknoten und Münzen, Schecks, Reiseschecks, Schuldscheine und Zahlungsanweisungen ohne benannten Empfänger, Goldmünzen mit mindestens 90 % Gold und Goldbarren oder -nuggets mit mindestens 99,5 % Gold. Die Regel gilt für Reisen in das oder aus dem Vereinigten Königreich (auch Isle of Man und Kanalinseln), aber nicht nach oder aus Nordirland.",
+      "limitsQuantity": "10 000 €",
+      "notes": "Ein Zollbeamter darf Bargeld ab 1000 € suchen, beschlagnahmen und einbehalten, wenn begründeter Verdacht besteht, dass es aus Straftaten stammt oder für Straftaten bestimmt ist. Falsche oder unvollständige Anmeldungen werden bestraft."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "meat-dairy-ie",
+    "sourceHash": "dcb69d07",
+    "fields": {
+      "summary": "Fleisch und Milchprodukte von außerhalb der EU, auch aus Großbritannien, sind nicht erlaubt, mit kleinen Ausnahmen wie Säuglingsnahrung.",
+      "limitsDescription": "Fleisch, Milch und Produkte daraus sind als persönliche Sendung aus Nicht-EU-Ländern (auch Großbritannien) nicht erlaubt, mit einer engen Ausnahme für Produkte von den Färöern oder aus Grönland (zusammen 10 kg). Im Gepäck von außerhalb der EU erlaubt: Säuglingsmilchpulver bzw. Säuglingsnahrung und aus medizinischen Gründen nötige Spezialnahrung (zusammen 2 kg, versiegelt und mit Markenverpackung); Fisch und Meeresfrüchte bis 20 kg oder das Gewicht eines Fisches; andere tierische Erzeugnisse wie Honig bis 2 kg; und eine festgelegte Liste von Produkten mit geringem Risiko (Brot, Kuchen, Kekse, Schokolade und Süßwaren, Nudeln ohne Fleisch, Suppenbrühen und Würzmittel, Kaffee- und Teeextrakte, Liköre und Sirupe).",
+      "notes": "Lebende Tiere (auch lebende Insekten) dürfen nicht im Gepäck aus Nicht-EU-Ländern mitgebracht werden. Die Regel gilt für Waren aus Großbritannien, aber nicht aus Nordirland. Private Einfuhren von Fleisch und Milch können Maul- und Klauenseuche und Afrikanische Schweinepest übertragen; deshalb gilt das Verbot auch für kleine Mengen und für Online-Bestellungen per Post oder Kurier."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "fresh-produce-ie",
+    "sourceHash": "14fccf35",
+    "fields": {
+      "summary": "Pflanzen, Obst, Gemüse und Samen von außerhalb der EU brauchen ein Pflanzengesundheitszeugnis, außer Bananen, Durians, Datteln, Ananas und Kokosnüsse.",
+      "limitsDescription": "Pflanzen, Obst, Gemüse, Schnittblumen, Samen, Erde und Holz dürfen aus einem Drittland (auch Großbritannien) nicht ohne ein Pflanzengesundheitszeugnis eingeführt werden, das bei der Einreise dem Department of Agriculture, Food and the Marine vorgelegt wird. Bananen, Durians, Datteln, Ananas und Kokosnüsse brauchen kein Pflanzengesundheitszeugnis. Unabhängig davon sind aus Gründen der Lebensmittelsicherheit Lebensmittel nicht tierischen Ursprungs auf der EU-Liste für Hochrisiko-Einfuhren (Verordnung (EU) 2019/1793) im persönlichen Gepäck auf 5 kg je frischem Produkt und 2 kg je anderem Produkt begrenzt; für Lebensmittel, die nicht auf dieser Liste stehen, gibt es keine Gewichtsgrenze.",
+      "notes": "Die Pflanzengesundheitsregel (Zeugnis) und die Lebensmittelsicherheitsregel (Gewichtsgrenzen) sind getrennt; für frisches Obst und Gemüse und für Pflanzen bräuchten Reisende ein Pflanzengesundheitszeugnis. Gilt für Großbritannien, aber nicht für Nordirland."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cannabis-ie",
+    "sourceHash": "0712e3d1",
+    "fields": {
+      "summary": "Verboten: Kontrollierte Drogen wie Cannabis nach Irland zu bringen ist strafbar. Der Zoll setzt an Flughäfen und Fährhäfen Spürhunde ein.",
+      "notes": "Citizens Information: „It is an offence to import or carry on your person, controlled substances (drugs) when travelling to or from Ireland. Examples of controlled substances are cannabis, cocaine, heroin, and amphetamines.“ (Es ist strafbar, bei Reisen nach oder aus Irland kontrollierte Stoffe einzuführen oder bei sich zu tragen, etwa Cannabis, Kokain, Heroin und Amphetamine.) Der Zoll hat ein nationales Drogenteam mit Spürhundeeinheiten an Flughäfen und Fährhäfen. Revenue führt „illegal or dangerous drugs“ (illegale oder gefährliche Drogen) unter den Waren, die einem Zollbeamten angemeldet werden müssen. Arzneimittel mit kontrollierten Stoffen werden getrennt behandelt (siehe den Eintrag zu kontrollierten Arzneimitteln)."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "prescription-medication-ie",
+    "sourceHash": "1b56f2d1",
+    "fields": {
+      "summary": "Besucher von außerhalb des Schengen-Raums: bis zu 3 Monate Vorrat an verschreibungspflichtigen Arzneimitteln für den persönlichen Gebrauch, mit Rezept oder ärztlichem Schreiben.",
+      "limitsDescription": "Besucher aus Nicht-Schengen-Ländern dürfen bis zu 3 Monate Vorrat an verschreibungspflichtigen Arzneimitteln für den eigenen Gebrauch mitbringen. Das Gesundheitsministerium empfiehlt die Originalverpackung mit gut sichtbarem Namen sowie das Rezept (oder eine Kopie) und/oder ein Schreiben Ihres Arztes oder der abgebenden Apotheke, das Ihre Erkrankung beschreibt und bestätigt, dass die Arzneimittel für den persönlichen Gebrauch sind, in der Packung als Nachweis.",
+      "limitsQuantity": "3 Monate Vorrat",
+      "notes": "„In Ireland, the current practice is that the customs officer must be satisfied that the documentation supports the amount and personal use of the medical products in the possession of the traveller“ (in Irland muss der Zollbeamte überzeugt sein, dass die Unterlagen die Menge und den persönlichen Gebrauch belegen) und „the Irish Customs Authority has the final say in all such matters“ (das letzte Wort hat der irische Zoll). Revenue führt Arzneimittel unter den anmeldepflichtigen Waren. Arzneimittel mit kontrollierten Stoffen werden getrennt behandelt (siehe den Eintrag zu kontrollierten Arzneimitteln)."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "prescription-medication-ie#details",
+    "sourceHash": "a2de3b0e",
+    "fields": {
+      "letterItems": [
+        "Das Rezept (oder eine Kopie) und/oder ein Schreiben Ihres Arztes oder der abgebenden Apotheke",
+        "Mit Beschreibung Ihrer Erkrankung und der Bestätigung, dass die Arzneimittel für den persönlichen Gebrauch sind",
+        "In der Packung, mit Ihrem gut sichtbaren Namen auf der Originalverpackung"
+      ]
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-ie",
+    "sourceHash": "2c3f3d63",
+    "fields": {
+      "summary": "Von außerhalb des Schengen-Raums: bis zu 3 Monate mit Rezept oder ärztlichem Schreiben. Aus dem Schengen-Raum: eine Bescheinigung nach Artikel 75 für Betäubungsmittel der Anhänge II–III.",
+      "limitsDescription": "Aus Nicht-Schengen-Ländern (z. B. USA, Vereinigtes Königreich, Kanada, Australien, Asien) gilt die allgemeine Regel des Gesundheitsministeriums: bis zu 3 Monate Vorrat für den persönlichen Gebrauch, Originalverpackung und ein Rezept oder ein Schreiben des Arztes oder der Apotheke in der Packung; der Zollbeamte muss überzeugt sein, dass die Unterlagen Menge und persönlichen Gebrauch belegen. Aus Schengen-Ländern (seit dem 1. April 2023) ist für jedes verschriebene Produkt mit einem Betäubungsmittel aus Anhang II oder III der Misuse of Drugs Regulations 2017 eine Bescheinigung nach Artikel 75 nötig, ausgestellt oder beglaubigt von der zuständigen Behörde Ihres Landes, mit einer eigenen Bescheinigung für jedes Arzneimittel. Verschriebene Produkte auf Cannabisbasis dürfen nicht nach Irland mitgebracht werden.",
+      "notes": "Irlands eigene Verordnung (Misuse of Drugs Regulations 2017, S.I. 173/2017) führt Amphetamin, Dexamphetamin, Lisdexamfetamin, Methylphenidat (Ritalin/Concerta), Oxycodon, Methadon, Buprenorphin und Fentanyl in Anhang 2; ADHS-Stimulanzien und starke Opioide sind also Betäubungsmittel des Anhangs 2 und brauchen bei der Ankunft aus einem Schengen-Land die Bescheinigung nach Artikel 75. Alprazolam (Xanax), Diazepam (Valium) und Zolpidem stehen in Anhang 4, den die Artikel-75-Regel des Ministeriums nicht erfasst. Methadon und Buprenorphin zur Substitution dürfen mit einer Bescheinigung nach Artikel 75 aus dem Schengen-Raum mitgebracht werden. Den Anhang eines bestimmten Produkts prüfen Sie mit der Arzneimittelsuche der HPRA; für Fragen zu persönlichen Arzneimitteln verweist das Ministerium auf enforcementcontrol@hpra.ie. Die Seite des Ministeriums beschreibt die Regel für Nicht-Schengen-Länder nur allgemein und nennt keine eigene Bescheinigung für Besucher von außerhalb des Schengen-Raums; führen Sie trotzdem vollständige Unterlagen mit, denn das letzte Wort hat der irische Zoll."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "drones-ie",
+    "sourceHash": "9d636850",
+    "fields": {
+      "summary": "Eine Drohne mitzubringen ist nicht beschränkt. Zum Fliegen einer Drohne über 250 g oder mit Kamera brauchen Sie eine Betreiberregistrierung bei der IAA (41 €, 2 Jahre); über 250 g auch eine Schulung.",
+      "limitsDescription": "Wer in Irland eine Drohne über 250 Gramm oder mit Kamera oder Sensor fliegt, muss sich als Betreiber bei der Irish Aviation Authority (IAA) registrieren. Die Registrierung kostet 41 € und gilt 2 Jahre; danach kennzeichnen Sie die Drohne mit Ihrer Betreiber-Registrierungsnummer und laden sie in die direkte Fernidentifizierung der Drohne. Drohnen über 250 g brauchen außerdem einen Nachweis über eine Online-Schulung (gültig 5 Jahre). Flüge in der Kategorie „offen“ sind für Drohnen unter 25 kg (oder mit Klassenkennzeichnung 0–4); schwerere Drohnen dürfen nicht ohne Genehmigung der IAA fliegen. Wenn Sie in der EU wohnen, registrieren Sie sich nur in Ihrem Wohnsitzland, nicht in jedem Land, in dem Sie fliegen.",
+      "notes": "Das ist eine Regel für den Flugbetrieb, kein Zollverbot: Eine Drohne nach Irland mitzubringen ist nicht beschränkt, sie legal zu fliegen dagegen schon. Die IAA oder die Polizei (Gardaí) können eine Drohne wegnehmen, wenn sie annehmen, dass sie wahrscheinlich regelwidrig eingesetzt wird, und wer mit einer Kameradrohne über erkennbare Personen fliegt, kann Datenschutzdelikte begehen. Die Seiten von Citizens Information und IAA beschreiben keinen eigenen Weg für Besucher von außerhalb der EU, die in keinem EU-Staat registriert sind; klären Sie das Verfahren vor der Reise mit der IAA (MySRS), statt anzunehmen, dass die Registrierung bei der Ankunft möglich ist."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "weapons-ie",
+    "sourceHash": "bd80d354",
+    "fields": {
+      "summary": "Schusswaffen brauchen vor der Reise eine Einfuhrlizenz. Pfefferspray, CS-Gas und Elektroschocker sind verboten.",
+      "limitsDescription": "Schusswaffen brauchen eine Einfuhr- bzw. Verbringungslizenz des Justizministeriums, die VOR der Einfuhr eingeholt werden muss, und eine Waffenerlaubnis; eine Waffenerlaubnis für Nichtansässige kostet 40 € für 1 Jahr. CS-Gas-Spray, Pfefferspray und Elektroschocker sind ganz verboten: Einfuhr und Besitz sind illegal. Armbrüste, Harpunen und alle Luftdruckwaffen mit einer Mündungsenergie über 1 Joule (auch Paintball-Markierer) gelten rechtlich als Schusswaffen und brauchen eine Erlaubnis. Der Firearms and Offensive Weapons Act 1990 verbietet die Einfuhr von Angriffswaffen (aufgeführt in der Verordnung von 1991, geändert 2009, darunter Springmesser und mehrere getarnte Messer), mit Strafen bis zu 10 Jahren Haft.",
+      "notes": "Andere Messer dürfen eingeführt werden, aber eines ohne rechtmäßigen Grund in der Öffentlichkeit bei sich zu tragen ist nach Section 9 des Gesetzes von 1990 strafbar; ein Messer im Gepäck ist also etwas anderes als ein Messer am Körper. Antike Schusswaffen, die als Zierstücke oder Kuriositäten gehalten werden, sind von den Waffengesetzen ausgenommen, aber für gewöhnliche Reisende gilt: Bringen Sie keine Schusswaffe ohne schriftliche Genehmigung mit. Revenue führt außerdem „firearms, weapons, fireworks or explosives“ (Schusswaffen, Waffen, Feuerwerk oder Sprengstoffe) unter den Waren, die einem Zollbeamten angemeldet werden müssen."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cbd-ie",
+    "sourceHash": "0adb323c",
+    "fields": {
+      "summary": "CBD ist in Irland kein kontrollierter Stoff, wohl aber Lebensmittel mit THC, und CBD-Lebensmittel sind nicht zugelassene neuartige Lebensmittel.",
+      "limitsDescription": "Die irische Lebensmittelsicherheitsbehörde FSAI sagt, CBD „is not considered a narcotic drug and is not a controlled drug in Ireland under the Misuse of Drugs Act 1977“ (gilt nicht als Betäubungsmittel und ist in Irland nach dem Misuse of Drugs Act 1977 kein kontrollierter Stoff), THC aber schon: „There is no legal threshold or tolerance in Ireland under the Misuse of Drugs Act for the presence of THC in food, except for hemp seed and hemp seed derived food products“ (für THC in Lebensmitteln gibt es nach dem Gesetz keinen Grenzwert und keine Toleranz, außer bei Hanfsamen und daraus hergestellten Lebensmitteln); Lebensmittel mit THC in jeder Menge (außer Hanfsamenprodukten) gelten daher als kontrollierte Stoffe. Unabhängig davon ist CBD als oder in Lebensmitteln oder Nahrungsergänzungsmitteln ein nicht zugelassenes neuartiges Lebensmittel nach der EU-Verordnung 2015/2283 und darf in der EU nicht legal in Verkehr gebracht werden.",
+      "notes": "Die FSAI-Seite behandelt das Inverkehrbringen von Produkten und die Frage, was als kontrollierter Stoff gilt; eine Regel speziell für CBD im persönlichen Gepäck von Reisenden nennt sie nicht. Praktisch heißt das: Ein CBD-Produkt mit messbarem THC ist an der Grenze ein Risiko als kontrollierter Stoff; ein wirklich THC-freies Produkt ist kein kontrollierter Stoff, darf aber nicht legal als Nahrungsergänzungsmittel verkauft werden. Hanfsamen sowie Hanfsamenöl und -mehl fallen weder unter den Misuse of Drugs Act noch unter die Regeln für neuartige Lebensmittel. Verschriebene Arzneimittel auf Cannabisbasis dürfen nicht nach Irland mitgebracht werden (Gesundheitsministerium)."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "e-cigarettes-ie",
+    "sourceHash": "57a91520",
+    "fields": {
+      "summary": "Eine Freimenge für Vapes gibt es für Reisende nicht, und Vapes stehen nicht auf der Liste verbotener oder beschränkter Waren von Revenue.",
+      "limitsDescription": "Die Reisefreimengen von Revenue für Ankünfte von außerhalb der EU nennen nur Mengen für Zigaretten, Zigarillos, Zigarren und Rauchtabak; eine eigene Freimenge für Vapes gibt es nicht, und die Liste verbotener bzw. beschränkter Waren im Gepäck erwähnt E-Zigaretten oder Vapes nicht. Seit dem 1. November 2025 erhebt Irland eine Steuer auf E-Liquids von 50 Cent je Milliliter (mit und ohne Nikotin), die nach Revenue aber „the first time an e-liquid product is supplied by a business in the State“ (bei der ersten Abgabe eines E-Liquid-Produkts durch ein Unternehmen im Staat) anfällt, also für Importeure, Hersteller und Händler, nicht für das eigene Gerät eines Reisenden.",
+      "notes": "Dieser Eintrag hält fest, was die Hinweise für Reisende sagen und was nicht: Keine gefundene Quelle legt eine Menge für die private Einfuhr von Vapes fest oder verbietet es, eines mitzuführen. Ob E-Liquid im Gepäck unter die allgemeine Wertgrenze von 430 € für Waren fällt, sagt Revenue nicht; das ist eine Schlussfolgerung, keine bestätigte Regel. Vapes sind beim Verkauf geregelt (Lizenz für Nikotin-Inhalationsprodukte, kein Verkauf an unter 18-Jährige, nach dem Public Health (Tobacco Products and Nicotine Inhaling Products) Act 2023); das ist eine Regel für den Einzelhandel, nicht für die Grenze."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "alcohol-cy",
+    "sourceHash": "aa6342f8",
+    "fields": {
+      "summary": "Von außerhalb der EU: 1 Liter über 22 % oder 2 Liter bis 22 %, dazu 4 Liter Wein und 16 Liter Bier.",
+      "limitsDescription": "Zollfrei von außerhalb der EU: 1 Liter Getränke über 22 % Alkohol (oder unvergällter Ethylalkohol ab 80 % vol.) oder 2 Liter Getränke bis 22 %; dazu 4 Liter nicht schäumender Wein und 16 Liter Bier. Reisende unter 17 Jahren erhalten keine Alkoholfreimenge. Alles über der Freimenge muss im roten Ausgang angemeldet werden.",
+      "limitsQuantity": "1 l Spirituosen oder 2 l bis 22 %; 4 l nicht schäumender Wein; 16 l Bier",
+      "notes": "Das sind die EU-Freimengen für Reisende, die aus einem Nicht-EU-Land in die EU einreisen (Ihr Europa, europa.eu), die der zyprische Zoll als seine allgemeinen Freimengen nennt. Andere Waren (nicht Alkohol oder Tabak) sind bis 430 € je Person zollfrei (175 € für Reisende unter 15 Jahren, laut zyprischem Zoll)."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "tobacco-cy",
+    "sourceHash": "2679d11e",
+    "fields": {
+      "summary": "Zollfrei ab 17 Jahren: 200 Zigaretten oder 100 Zigarillos oder 50 Zigarren oder 250 g Tabak. Mehr im roten Ausgang anmelden.",
+      "limitsDescription": "Zollfrei von außerhalb der EU: 200 Zigaretten oder 100 Zigarillos (höchstens 3 g je Stück) oder 50 Zigarren oder 250 g Rauchtabak. Reisende unter 17 Jahren erhalten keine Tabakfreimenge. Melden Sie alles über der Freimenge im roten Ausgang an.",
+      "limitsQuantity": "200 Zigaretten / 100 Zigarillos / 50 Zigarren / 250 g",
+      "notes": "Zypern wendet die höhere EU-Grenze für Tabak an (Ihr Europa nennt die Länder mit der niedrigeren Grenze; Zypern gehört nicht dazu)."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cash-cy",
+    "sourceHash": "b6b25d8a",
+    "fields": {
+      "summary": "Melden Sie 10 000 € oder mehr in Bargeld oder Gold schriftlich an. Nicht angemeldete Beträge werden beschlagnahmt, mit Geldstrafen bis 50 000 €.",
+      "limitsDescription": "Wer mit 10 000 € oder mehr in bar (oder dem Gegenwert in anderen Währungen oder Inhaberpapieren wie Reiseschecks) oder mit Gold im Wert von 10 000 € oder mehr nach Zypern einreist oder es verlässt, muss dies an der Ein- oder Ausreisestelle schriftlich beim Zoll anmelden. Wer nicht anmeldet, begeht eine Straftat: Bargeld oder Gold werden beschlagnahmt, und es droht eine Geldstrafe bis 50 000 €.",
+      "limitsQuantity": "10 000 € oder mehr",
+      "notes": "Die Seite des zyprischen Zolls (zuletzt aktualisiert 2020) zitiert noch die aufgehobene Verordnung (EG) 1889/2005; die geltende EU-Regel ist die Verordnung (EU) 2018/1672 (GD TAXUD der Europäischen Kommission), die die Schwelle von 10 000 € beibehält und als Bargeld Banknoten und Münzen, übertragbare Inhaberpapiere, Goldmünzen mit mindestens 90 % Gold und Goldbarren oder -nuggets mit mindestens 99,5 % Gold bestimmt. Die zyprische Seite wendet die Anmeldung auch auf Reisen in andere oder aus anderen EU-Mitgliedstaaten an (nationales Gesetz 53(I)/2009)."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "meat-dairy-cy",
+    "sourceHash": "535b029f",
+    "fields": {
+      "summary": "Von außerhalb der EU verboten: Fleisch, Milch und Produkte daraus, auch Käse. Für Fisch und Honig gelten eigene Grenzen; fragen Sie vorher beim Veterinärdienst nach.",
+      "limitsDescription": "Fleisch, Milch oder Produkte daraus (auch Käse) dürfen Sie von außerhalb der EU nicht im Gepäck nach Zypern bringen. Für Fisch, Honig und Säuglingsmilchpulver gelten eigene, großzügigere EU-Grenzen.",
+      "notes": "Die Quellen widersprechen sich: Die EU-Regel (Delegierte Verordnung (EU) 2019/2122, unmittelbar anwendbar) erlaubt Fisch bis 20 kg und Honig bis 2 kg, aber die Beschränkungsliste des zyprischen Zolls sagt, dass Fleisch, Fisch und Käse eine Genehmigung des Direktors der Veterinärdienste brauchen und Honig eine Lizenz der Veterinärdienste. Die Liste bezieht sich möglicherweise auf gewerbliche Einfuhren; wenn Sie Fisch oder Honig mitbringen wollen, fragen Sie vorher bei den zyprischen Veterinärdiensten nach. Diese Regeln gelten nicht für Produkte aus anderen EU-Ländern, Andorra, Island, Liechtenstein, Norwegen, San Marino oder der Schweiz."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "animal-product-allowances-cy",
+    "sourceHash": "d437e48c",
+    "fields": {
+      "summary": "Von außerhalb der EU: Fisch bis 20 kg, Honig bis 2 kg und Säuglings- oder Spezialnahrung bis 2 kg.",
+      "limitsDescription": "Nach EU-Regeln dürfen Sie von außerhalb der EU mitbringen: Fischereierzeugnisse bis 20 kg (oder einen Fisch, wenn er schwerer ist); andere tierische Erzeugnisse wie Honig bis 2 kg; und Säuglingsmilchpulver, Säuglingsnahrung oder aus medizinischen Gründen nötige Spezialnahrung bis 2 kg, wenn sie vor dem Öffnen nicht gekühlt werden müssen und in unversehrter Markenverpackung sind.",
+      "notes": "Die Quellen widersprechen sich: Die EU-Regel (Delegierte Verordnung (EU) 2019/2122, unmittelbar anwendbar) erlaubt Fisch bis 20 kg und Honig bis 2 kg, aber die Beschränkungsliste des zyprischen Zolls sagt, dass Fleisch, Fisch und Käse eine Genehmigung des Direktors der Veterinärdienste brauchen und Honig eine Lizenz der Veterinärdienste. Die Liste bezieht sich möglicherweise auf gewerbliche Einfuhren; wenn Sie Fisch oder Honig mitbringen wollen, fragen Sie vorher bei den zyprischen Veterinärdiensten nach. Diese Regeln gelten nicht für Produkte aus anderen EU-Ländern, Andorra, Island, Liechtenstein, Norwegen, San Marino oder der Schweiz."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "fresh-produce-cy",
+    "sourceHash": "f5862a8b",
+    "fields": {
+      "summary": "Von außerhalb der EU brauchen Pflanzen, Obst, Gemüse und Schnittblumen ein Pflanzengesundheitszeugnis. Ananas, Kokosnüsse, Durians, Bananen und Datteln nicht.",
+      "limitsDescription": "Pflanzen, Obst, Gemüse und Schnittblumen von außerhalb der EU dürfen nur mit einem Pflanzengesundheitszeugnis im Gepäck mitgebracht werden. Für Ananas, Kokosnüsse, Durians, Bananen und Datteln ist kein Zeugnis nötig. Der zyprische Zoll verlangt für Blumen und Pflanzen zusätzlich eine Lizenz des Direktors des Landwirtschaftsamts und eine pflanzengesundheitliche Kontrolle."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cannabis-cy",
+    "sourceHash": "86685c44",
+    "fields": {
+      "summary": "Verboten: Betäubungsmittel und psychotrope Stoffe sind verbotene Einfuhren nach Zypern.",
+      "notes": "Der zyprische Zoll führt Betäubungsmittel, psychotrope Stoffe und andere kontrollierte Arzneimittel unter den Waren, deren Einfuhr verboten ist."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cbd-cy",
+    "sourceHash": "493baf41",
+    "fields": {
+      "summary": "Verboten: Der zyprische Zoll führt Cannabisderivate, auch Öle und Lebensmittel, als verbotene Einfuhren.",
+      "limitsDescription": "Der zyprische Zoll führt Cannabisderivate unter den verbotenen Einfuhren, ausdrücklich auch Öl und Mehl aus Cannabissamen, Cannabis in Lebensmitteln und Getränken und andere Cannabisderivate. Zuständig ist der Polizeichef.",
+      "notes": "Der Zoll sagt, dass seine Listen nicht abschließend sind, und verweist Anfragen an die zuständige Behörde (den Polizeichef). CBD (Cannabidiol) wird in der Liste nicht genannt; nach unserer Lesart sind CBD-Öle und andere CBD-Produkte aus Cannabis „Cannabisderivate“ im Sinne der Liste."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-cy",
+    "sourceHash": "b3ecdbb5",
+    "fields": {
+      "summary": "Kontrollierte Arzneimittel brauchen eine Genehmigung der zyprischen Pharmazeutischen Dienste; ohne sie behandelt der Zoll sie als verboten.",
+      "limitsDescription": "Besucher dürfen kleine Mengen international kontrollierter Arzneimittel (Betäubungsmittel oder psychotrope Stoffe) für die eigene Behandlung nur mit einer Genehmigung der zyprischen Pharmazeutischen Dienste (Gesundheitsministerium) mitbringen. Der Antrag fragt nach Ihrer Passnummer, dem Ankunfts- und Abreisedatum sowie Name, Darreichungsform, Stärke, Tagesdosis und verordneter Menge jedes Arzneimittels und muss eine Kopie Ihres Rezepts mit Name, Adresse, Telefon/Fax und Zulassungsnummer des Arztes enthalten. Ohne Genehmigung behandelt der Zoll Betäubungsmittel, psychotrope Stoffe und andere kontrollierte Arzneimittel als verbotene Einfuhren.",
+      "notes": "Stellen Sie den Antrag vor der Reise bei den Pharmazeutischen Diensten (phscentral@phs.moh.gov.cy). Das Antragsformular für die Einfuhr zum persönlichen Gebrauch ist auf der Quellseite verlinkt."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-cy#details",
+    "sourceHash": "68f04211",
+    "fields": {
+      "letterItems": [
+        "Ihre Passnummer sowie Ihr Ankunfts- und Abreisedatum",
+        "Name, Darreichungsform, Stärke, Tagesdosis und verordnete Menge jedes Arzneimittels",
+        "Eine Kopie Ihres Rezepts mit Name, Adresse, Telefon/Fax und Zulassungsnummer des Arztes"
+      ],
+      "procedureTitle": "Genehmigung der zyprischen Pharmazeutischen Dienste einholen",
+      "procedureDocuments": [
+        "Das Antragsformular für Patienten, die kontrollierte Arzneimittel mitführen: Ihr Name, Postanschrift, Telefon, E-Mail oder Fax, Geburtsort und -datum, Pass- oder Ausweisnummer, Ankunfts- und Abreisedatum sowie Name, Darreichungsform, Stärke, Tagesdosis und verordnete Menge jedes Arzneimittels, von Ihnen unterschrieben.",
+        "Eine Kopie des Rezepts mit Name, Adresse, Telefon- und Faxnummer und Zulassungsnummer des Arztes."
+      ],
+      "procedureSteps": [
+        "Laden Sie das Antragsformular von der Seite der Pharmazeutischen Dienste herunter und füllen Sie es aus.",
+        "Legen Sie eine Kopie Ihres Rezepts bei.",
+        "Schicken Sie es vor der Reise an die Pharmazeutischen Dienste. Die Seite nennt als Kontakte phscentral@phs.moh.gov.cy, Tel. +357 22 608620 und Fax +357 22 608649, aber keine Vorlauf- oder Bearbeitungszeit; stellen Sie den Antrag daher früh."
+      ]
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "drones-cy",
+    "sourceHash": "e1423cf7",
+    "fields": {
+      "summary": "Drohnen über 250 g oder mit Kamera brauchen eine Betreiberregistrierung bei der zyprischen Zivilluftfahrtbehörde; Besucher brauchen außerdem einen A1/A3-Kompetenznachweis.",
+      "limitsDescription": "Eine Drohne mitzubringen ist nicht beschränkt, aber das Fliegen ist nach EU-Regeln (EASA) geregelt. Besucher von außerhalb der EU, die noch in keinem anderen EU-Land geflogen sind, müssen sich als Betreiber beim zyprischen Department of Civil Aviation registrieren (ab 18 Jahren, 15 €, nur mit VISA-Karte) und die Betreiber-Registrierungsnummer an jeder Drohne anbringen. Die Registrierung ist nötig, wenn die Drohne mehr als 250 g wiegt oder eine Kamera oder einen anderen Sensor hat, der personenbezogene Daten erfassen kann. Personen mit Wohnsitz außerhalb der EU brauchen außerdem einen A1/A3-Kompetenznachweis für Fernpiloten (Online-Schulung und Prüfung, 15 €, gültig 5 Jahre); für eine C0-Drohne unter 250 g ist er nicht nötig. Nicht in Flugverbotszonen fliegen und mindestens 8 km Abstand zu Flughäfen und Hubschrauberlandeplätzen halten.",
+      "notes": "Wenn Sie sich bereits in einem anderen EU-Land registriert haben (dort, wo Sie zuerst geflogen sind), registrieren Sie sich in Zypern nicht erneut."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "weapons-cy",
+    "sourceHash": "14ffae07",
+    "fields": {
+      "summary": "Springmesser, Dolche und automatische Schusswaffen sind verboten; Luftgewehre und Jagdwaffen brauchen eine Genehmigung des Polizeichefs.",
+      "limitsDescription": "Verboten: Springmesser und Dolche; automatische Schusswaffen, halbautomatische oder Repetier-Langwaffen, Munition, militärische Sprengkörper und Werfer (nach dem Gesetz 113(I)/2004, erster Anhang). Beschränkt, mit Genehmigung des Polizeichefs: Luftgewehre bis 4,5 mm, Jagdwaffen für höchstens zwei Patronen je Ladung, Sportpistolen, Sportbogenausrüstung und Handschellen. Sprengstoffe, Jagdpatronen und Feuerwerk brauchen eine Einfuhrlizenz des Inspector of Mines.",
+      "notes": "Der Zoll sagt, dass seine Listen nicht abschließend sind; wenden Sie sich vor einer Reise mit einer Waffe an die Zollzentrale oder die Polizei."
     },
     "translated_at": "2026-11-06",
     "translated_by": "agent:claude-opus-5-5 (machine translation)"
