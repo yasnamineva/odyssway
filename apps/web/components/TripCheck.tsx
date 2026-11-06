@@ -530,6 +530,7 @@ export default function TripCheck({
                 destination === SCHENGEN_DESTINATION ? schengenCountries.map((c) => c.code) : []
               }
               legend={{ origin: t("mapLegendOrigin"), transit: t("mapLegendTransit"), destination: t("mapLegendDestination") }}
+              controls={{ open: t("mapOpen"), hint: t("mapZoomHint"), close: t("mapClose"), zoomIn: t("mapZoomIn"), zoomOut: t("mapZoomOut"), reset: t("mapReset") }}
               ariaLabel={
                 mapStops.length > 1
                   ? t("mapAria", { route: mapStops.map((s) => s.label ?? s.code).join(" → ") })

@@ -365,3 +365,30 @@ test("a stopover belongs to one flight: shown on the map in order and in the rou
   // The shared link keeps the stopover on the second flight.
   expect(page.url()).not.toContain("s=CA");
 });
+
+test("says how it read an item, suggests close names for unknown ones, and opens a zoomable map", async ({ page }) => {
+  await page.goto("/trip-check");
+  await pickCombobox(page, "tc-nationality", "USA", "United States");
+  await pickCombobox(page, "tc-destination", "Uruguay", "Uruguay");
+  for (const item of ["Addy", "ritlain"]) {
+    await page.getByTestId("tc-item-input").fill(item);
+    await page.getByTestId("tc-item-input").press("Enter");
+  }
+  await page.getByTestId("tc-submit").click();
+  const items = page.getByTestId("tc-items");
+  await expect(items.getByTestId("tc-item-reading")).toHaveText("We read “Addy” as Adderall.");
+  await expect(items.getByTestId("tc-item-not-found")).toContainText("We know Adderall");
+  await expect(items.getByTestId("tc-item-unrecognised")).toContainText("We don't recognise “ritlain”");
+  await items.getByTestId("tc-item-suggestion").filter({ hasText: "Ritalin" }).click();
+  await expect(items.getByText("ritalin", { exact: true })).toBeVisible();
+
+  await page.getByTestId("world-map-open").click();
+  const dialog = page.getByTestId("world-map-dialog");
+  await expect(dialog).toBeVisible();
+  const svg = dialog.locator("svg").first();
+  const before = await svg.getAttribute("viewBox");
+  await dialog.getByTestId("world-map-zoom-in").click();
+  expect(await svg.getAttribute("viewBox")).not.toBe(before);
+  await dialog.getByTestId("world-map-close").click();
+  await expect(dialog).toHaveCount(0);
+});

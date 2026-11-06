@@ -34,9 +34,100 @@ export interface WorldMapProps {
   /** Legend labels; the legend lists only kinds present on the route. */
   legend?: Partial<Record<MapStopKind, string>>;
   ariaLabel?: string;
+  /** Labels for the zoom controls (translated by the caller). */
+  controls?: { open: string; hint: string; close: string; zoomIn: string; zoomOut: string; reset: string };
 }
 
-export default function WorldMap({ stops = [], highlightCodes = [], legend, ariaLabel }: WorldMapProps) {
+const DEFAULT_CONTROLS = { open: "Open a larger map you can zoom", hint: "Zoom", close: "Close", zoomIn: "Zoom in", zoomOut: "Zoom out", reset: "Reset" };
+
+export default function WorldMap(props: WorldMapProps) {
+  const { stops = [], legend } = props;
+  const c = props.controls ?? DEFAULT_CONTROLS;
+  const [expanded, setExpanded] = useState(false);
+  useEffect(() => {
+    if (!expanded) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setExpanded(false);
+    window.addEventListener("keydown", onKey);
+    const overflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = overflow;
+    };
+  }, [expanded]);
+
+  const legendKinds = (["origin", "transit", "destination"] as MapStopKind[]).filter(
+    (kind) => legend?.[kind] && stops.some((s) => s.kind === kind),
+  );
+  const legendRow = legendKinds.length > 0 && (
+    <figcaption className="flex flex-wrap gap-x-4 gap-y-1 border-t border-slate-100 px-3 py-2 text-xs text-slate-600">
+      {legendKinds.map((kind) => (
+        <span key={kind} className="inline-flex items-center gap-1.5">
+          <span className="inline-block h-2.5 w-2.5 rounded-full" style={{ background: KIND_STYLE[kind].pin }} />
+          {legend![kind]}
+        </span>
+      ))}
+    </figcaption>
+  );
+
+  return (
+    <>
+      <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <button
+          type="button"
+          onClick={() => setExpanded(true)}
+          className="group relative block aspect-[4/3] w-full cursor-zoom-in sm:aspect-[16/11]"
+          aria-label={`${props.ariaLabel ?? "World map"}. ${c.open}`}
+          data-testid="world-map-open"
+        >
+          <MapCanvas {...props} />
+          <span className="pointer-events-none absolute right-2 bottom-2 rounded-md bg-white/90 px-2 py-1 text-[11px] font-medium text-slate-700 shadow-sm group-hover:bg-white">
+            ⤢ {c.hint}
+          </span>
+        </button>
+        {legendRow}
+      </figure>
+      {expanded && (
+        <div
+          className="fixed inset-0 z-50 flex flex-col bg-slate-900/60 p-2 sm:p-6"
+          role="dialog"
+          aria-modal="true"
+          aria-label={props.ariaLabel ?? "World map"}
+          onClick={(e) => e.target === e.currentTarget && setExpanded(false)}
+          data-testid="world-map-dialog"
+        >
+          <figure className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-2xl bg-white shadow-xl">
+            <div className="relative min-h-0 flex-1">
+              <MapCanvas {...props} interactive />
+              <button
+                type="button"
+                onClick={() => setExpanded(false)}
+                className="absolute top-2 right-2 rounded-lg bg-white px-3 py-1.5 text-sm font-semibold text-slate-800 shadow"
+                data-testid="world-map-close"
+              >
+                {c.close} ✕
+              </button>
+            </div>
+            {legendRow}
+          </figure>
+        </div>
+      )}
+    </>
+  );
+}
+
+const MIN_ZOOM = 1;
+const MAX_ZOOM = 12;
+
+/** The map itself. `interactive` adds zoom buttons, wheel zoom and drag-to-pan. */
+function MapCanvas({
+  stops = [],
+  highlightCodes = [],
+  ariaLabel,
+  interactive = false,
+  controls,
+}: WorldMapProps & { interactive?: boolean }) {
+  const c = controls ?? DEFAULT_CONTROLS;
   const projection = useMemo(() => geoEquirectangular().fitSize([WIDTH, HEIGHT], WORLD_COUNTRIES), []);
   const path = useMemo(() => geoPath(projection), [projection]);
   const graticule = useMemo(() => path(geoGraticule10()) ?? undefined, [path]);
@@ -54,7 +145,7 @@ export default function WorldMap({ stops = [], highlightCodes = [], legend, aria
   // The rendered size, so the view fits the box's real shape (taller on phones)
   // and pins and labels keep a readable size in screen pixels.
   const frameRef = useRef<HTMLDivElement>(null);
-  const [size, setSize] = useState<{ w: number; h: number }>({ w: 640, h: 338 });
+  const [size, setSize] = useState<{ w: number; h: number }>({ w: 640, h: 440 });
   useEffect(() => {
     const el = frameRef.current;
     if (!el || typeof ResizeObserver === "undefined") return;
@@ -67,26 +158,42 @@ export default function WorldMap({ stops = [], highlightCodes = [], legend, aria
   }, []);
 
   // Zoom to the route: a box around the stops, padded, at least a third of
-  // the world wide and at most the whole world.
-  const box = viewBoxFor(placed.map((s) => s.point), size.w / size.h);
+  // the world wide and at most the whole world. In the large view the reader
+  // can zoom further (z) and pan (offset, in map units).
+  const fitted = viewBoxFor(placed.map((s) => s.point), size.w / size.h);
+  const [z, setZ] = useState(1);
+  const [offset, setOffset] = useState<[number, number]>([0, 0]);
+  const box = zoomBox(fitted, z, offset);
   const k = box.w / size.w; // map units per screen pixel
 
-  // Labels sit above their pin unless that would overlap an earlier label; then below.
-  const labelBelow = placeLabels(placed, k);
-  // Keep each label inside the visible frame.
-  const labelX = placed.map((s) => {
-    const half = ((s.label?.length ?? 0) * 7.2 * k) / 2 + 4 * k;
-    return Math.min(Math.max(s.point[0], box.x + half), box.x + box.w - half);
-  });
+  const zoomBy = (factor: number) => setZ((v) => Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, v * factor)));
+  const drag = useRef<{ x: number; y: number; ox: number; oy: number } | null>(null);
+  const handlers = interactive
+    ? {
+        onWheel: (e: React.WheelEvent) => zoomBy(e.deltaY < 0 ? 1.25 : 0.8),
+        onPointerDown: (e: React.PointerEvent) => {
+          (e.currentTarget as Element).setPointerCapture(e.pointerId);
+          drag.current = { x: e.clientX, y: e.clientY, ox: offset[0], oy: offset[1] };
+        },
+        onPointerMove: (e: React.PointerEvent) => {
+          const d = drag.current;
+          if (!d) return;
+          setOffset([d.ox - (e.clientX - d.x) * k, d.oy - (e.clientY - d.y) * k]);
+        },
+        onPointerUp: () => (drag.current = null),
+        onPointerCancel: () => (drag.current = null),
+      }
+    : {};
 
+  const labels = placeLabels(placed, k, box);
   const arcs = placed.slice(1).map((s, i) => buildArc(placed[i]!.point, s.point, k));
-  const legendKinds = (["origin", "transit", "destination"] as MapStopKind[]).filter(
-    (kind) => legend?.[kind] && placed.some((s) => s.kind === kind),
-  );
 
   return (
-    <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-      <div ref={frameRef} className="aspect-[16/10] w-full sm:aspect-[720/380]">
+    <div
+      ref={frameRef}
+      className={`h-full w-full ${interactive ? "cursor-grab touch-none active:cursor-grabbing" : ""}`}
+      {...handlers}
+    >
       <svg
         viewBox={`${box.x} ${box.y} ${box.w} ${box.h}`}
         role="img"
@@ -148,8 +255,7 @@ export default function WorldMap({ stops = [], highlightCodes = [], legend, aria
             color={KIND_STYLE[s.kind].pin}
             n={placed.length > 2 ? i + 1 : undefined}
             label={s.label}
-            below={labelBelow[i]}
-            labelX={labelX[i]}
+            place={labels[i]!}
             k={k}
           />
         ))}
@@ -159,20 +265,40 @@ export default function WorldMap({ stops = [], highlightCodes = [], legend, aria
           @media (prefers-reduced-motion: reduce) { .wm-route { animation: none; } }
         `}</style>
       </svg>
-      </div>
-      {legendKinds.length > 0 && (
-        <figcaption className="flex flex-wrap gap-x-4 gap-y-1 border-t border-slate-100 px-3 py-2 text-xs text-slate-600">
-          {legendKinds.map((kind) => (
-            <span key={kind} className="inline-flex items-center gap-1.5">
-              <span className="inline-block h-2.5 w-2.5 rounded-full" style={{ background: KIND_STYLE[kind].pin }} />
-              {legend![kind]}
-            </span>
-          ))}
-        </figcaption>
+      {interactive && (
+        <div className="absolute bottom-3 left-3 flex flex-col overflow-hidden rounded-lg bg-white shadow" onPointerDown={(e) => e.stopPropagation()}>
+          <button type="button" onClick={() => zoomBy(1.5)} className="px-3 py-1.5 text-lg font-semibold text-slate-800 hover:bg-slate-100" aria-label={c.zoomIn} data-testid="world-map-zoom-in">+</button>
+          <button type="button" onClick={() => zoomBy(1 / 1.5)} className="border-t border-slate-200 px-3 py-1.5 text-lg font-semibold text-slate-800 hover:bg-slate-100" aria-label={c.zoomOut} data-testid="world-map-zoom-out">−</button>
+          <button
+            type="button"
+            onClick={() => {
+              setZ(1);
+              setOffset([0, 0]);
+            }}
+            className="border-t border-slate-200 px-2 py-1.5 text-[11px] font-medium text-slate-700 hover:bg-slate-100"
+          >
+            {c.reset}
+          </button>
+        </div>
       )}
-    </figure>
+    </div>
   );
 }
+
+/** The fitted route view, zoomed in by `z` around its centre and panned by `offset` (map units). */
+function zoomBox(
+  fitted: { x: number; y: number; w: number; h: number },
+  z: number,
+  [ox, oy]: [number, number],
+): { x: number; y: number; w: number; h: number } {
+  const w = fitted.w / z;
+  const h = fitted.h / z;
+  const cx = fitted.x + fitted.w / 2 + ox;
+  const cy = fitted.y + fitted.h / 2 + oy;
+  return { x: cx - w / 2, y: cy - h / 2, w, h };
+}
+
+type LabelPlace = { x: number; y: number; anchor: "start" | "end" | "middle" };
 
 /** Pin with a white ring; `n` numbers the stop when the route has three or more. */
 function Pin({
@@ -180,16 +306,14 @@ function Pin({
   color,
   n,
   label,
-  below,
-  labelX,
+  place,
   k,
 }: {
   point: [number, number];
   color: string;
   n?: number;
   label?: string;
-  below?: boolean;
-  labelX?: number;
+  place: LabelPlace;
   k: number;
 }) {
   const [x, y] = point;
@@ -212,9 +336,9 @@ function Pin({
       )}
       {label && (
         <text
-          x={labelX ?? x}
-          y={below ? y + 16 * k : y - lift - r - 4 * k}
-          textAnchor="middle"
+          x={place.x}
+          y={place.y}
+          textAnchor={place.anchor}
           className="font-sans"
           fontSize={13 * k}
           fontWeight={600}
@@ -231,19 +355,37 @@ function Pin({
   );
 }
 
-/** Rough label boxes in map units; true for each label that should go below its pin. */
-function placeLabels(stops: Array<{ point: [number, number]; label?: string }>, k: number): boolean[] {
+/**
+ * Where each label goes, in map units. A label sits beside its own pin head
+ * (right, else left), so it never lands on the country above the pin; below
+ * the pin only when both sides clash with an earlier label or the frame edge.
+ */
+function placeLabels(
+  stops: Array<{ point: [number, number]; label?: string }>,
+  k: number,
+  frame: { x: number; y: number; w: number; h: number },
+): LabelPlace[] {
   const boxes: Array<[number, number, number, number]> = [];
-  const overlaps = (a: [number, number, number, number]) =>
-    boxes.some((b) => a[0] < b[2] && b[0] < a[2] && a[1] < b[3] && b[1] < a[3]);
-  return stops.map(({ point: [x, y], label }) => {
-    if (!label) return false;
-    const half = (label.length * 7.2 * k) / 2;
-    const above: [number, number, number, number] = [x - half, y - 50 * k, x + half, y - 30 * k];
-    const under: [number, number, number, number] = [x - half, y + 3 * k, x + half, y + 20 * k];
-    const below = overlaps(above) && !overlaps(under);
-    boxes.push(below ? under : above);
-    return below;
+  const pins: Array<[number, number, number, number]> = stops.map(({ point: [x, y] }) => [x - 11 * k, y - 32 * k, x + 11 * k, y]);
+  const clash = (a: [number, number, number, number], self: number) =>
+    boxes.some((b) => a[0] < b[2] && b[0] < a[2] && a[1] < b[3] && b[1] < a[3]) ||
+    pins.some((p, i) => i !== self && a[0] < p[2] && p[0] < a[2] && a[1] < p[3] && p[1] < a[3]);
+  const inside = (a: [number, number, number, number]) =>
+    a[0] >= frame.x && a[2] <= frame.x + frame.w && a[1] >= frame.y && a[3] <= frame.y + frame.h;
+  return stops.map(({ point: [x, y], label }, i) => {
+    const headY = y - 20 * k;
+    if (!label) return { x, y: headY, anchor: "middle" };
+    const w = label.length * 7.4 * k;
+    const gap = 13 * k;
+    const baseline = headY + 4.5 * k;
+    const options: Array<{ place: LabelPlace; box: [number, number, number, number] }> = [
+      { place: { x: x + gap, y: baseline, anchor: "start" }, box: [x + gap, baseline - 12 * k, x + gap + w, baseline + 4 * k] },
+      { place: { x: x - gap, y: baseline, anchor: "end" }, box: [x - gap - w, baseline - 12 * k, x - gap, baseline + 4 * k] },
+      { place: { x, y: y + 16 * k, anchor: "middle" }, box: [x - w / 2, y + 3 * k, x + w / 2, y + 20 * k] },
+    ];
+    const pick = options.find((o) => inside(o.box) && !clash(o.box, i)) ?? options.find((o) => !clash(o.box, i)) ?? options[0]!;
+    boxes.push(pick.box);
+    return pick.place;
   });
 }
 
