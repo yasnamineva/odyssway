@@ -6,7 +6,7 @@ anything gets built, and its Accuracy Policy (§3) comes before everything here.
 listed as *candidates* are research leads, not verified rules, and none can be published
 without a primary official source.
 
-Where we are today (2026-11-04):
+Where we are today (2026-11-06):
 
 - 68 destinations plus the Schengen Area; 3,924 verified entry rows; 774 customs rows
   (182 medication, 43 with a doctor's-letter checklist, 22 with a permit how-to, 19 with
@@ -17,7 +17,7 @@ Where we are today (2026-11-04):
 - About 2,000 URLs in the sitemap. Google indexes well; Bing indexes the pages but shows
   them rarely (young domain, few links).
 - No analytics, by design.
-- German pilot: 402 pages under `/de/bring` (2026-11-05), machine-translated from the verified English rows (§5.5).
+- German pilot: 619 pages under `/de/bring` (2026-11-06), machine-translated from the verified English rows (§5.5).
 - **Pushed 2026-11-06** (73 commits: the German pilot from 53 to 402 pages, with translated permit how-tos, letter
   checklists and transit rules; the cost guardrails; the site-wide 404; corrections to Brunei alcohol, Kyrgyzstan
   alcohol and tobacco and New Zealand's NZ$700 concession; Seychelles, Latvia, Slovenia, Uruguay, Uzbekistan, Portugal
@@ -587,8 +587,19 @@ Sri Lanka and Mauritius, and alcohol and tobacco for Vietnam (329 pages; Vietnam
 threshold wording). ✔ E-cigarettes, meat and dairy, and plants for those destinations plus Thailand, Türkiye,
 Egypt and the UAE (360 pages); research-log wording in three English rows (Egypt meat, Japan vapes, UAE meat)
 rewritten for readers. ✔ Every UK page (alcohol, tobacco, cash, cannabis and CBD, food, plants, vapes, weapons,
-drones), and every Canada, Australia, New Zealand and US page (402 pages). The figure check now accepts a German decimal comma (`1,125 l`). Next, then alcohol and tobacco for the remaining long-haul destinations German travellers visit
-(Indonesia, Vietnam, Sri Lanka, Maldives, Mauritius, Morocco, Japan, Mexico).
+drones), and every Canada, Australia, New Zealand and US page (402 pages). The figure check now accepts a German decimal comma (`1,125 l`).
+✔ 2026-11-06: **619 German pages.** Every remaining page for Japan, Egypt, the UAE, Thailand, Mexico, Morocco, Vietnam
+(except cash, TODO), Indonesia, Kenya, South Africa, Tanzania, the Seychelles, Sri Lanka, the Maldives, Mauritius, Türkiye,
+Singapore, Peru, the Dominican Republic, Costa Rica, Oman, Brazil, Argentina, Chile, Colombia, Cyprus, Ireland, Serbia,
+Albania, Montenegro, North Macedonia, Bosnia and Herzegovina, Georgia, the Philippines and Malaysia. New German row labels
+(alcohol, foreign pisco, heated tobacco, shisha, meat, dairy, meat and dairy, Cyprus's fish/honey/infant-food allowances).
+While translating, 10 English rows turned out to still carry research-note wording ("recorded per AGENTS.md §3.8", "Marked
+'depends' because…", "during this research", "the genuine, honest answer rather than a research gap"); rewritten for
+readers (facts unchanged) and validate-data now rejects those phrases. **Next:** the remaining ~200 English-only pairs (Hong
+Kong, Korea, Taiwan, China, India, Qatar, Jordan, Israel, Saudi Arabia, Ecuador, Jamaica, the Bahamas, Uruguay, Cambodia,
+Armenia, Uzbekistan, Kyrgyzstan, Mongolia, Macao, Brunei, Rwanda, Nigeria, Ghana, Zambia, Zimbabwe, Fiji, Belize, El
+Salvador), then German destination hubs. Use a scratch export of untranslated rows per destination (fields from
+`customsRowFields`/`customsRowDetails`), write `{id, fields}` entries, append with `sourceHash: "pending"`, `pnpm i18n:stamp de`.
 
 ## 6. Long-term goals
 
