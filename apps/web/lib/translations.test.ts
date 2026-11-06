@@ -17,7 +17,7 @@ describe("German translations", () => {
   });
 
   it("has no translation for a row nobody translated", () => {
-    const untranslated = customsItems.find((r) => r.slug === "alcohol-ng")!;
+    const untranslated = customsItems.find((r) => r.slug === "cash-vn")!;
     expect(translatedCustomsRow(untranslated, "de")).toBeNull();
     expect(allRowsTranslated([euDrones, untranslated], "de")).toBe(false);
   });
@@ -30,8 +30,8 @@ describe("German translations", () => {
     expect(pages.some((p) => p.category === "medication" && p.destinationSlug === "turkey")).toBe(true);
     expect(pages.some((p) => p.category === "alcohol" && p.destinationSlug === "turkey")).toBe(true);
     expect(pages.some((p) => p.category === "tobacco" && p.destinationSlug === "united-arab-emirates")).toBe(true);
-    // Nigeria's rows aren't translated.
-    expect(pages.some((p) => p.category === "alcohol" && p.destinationSlug === "nigeria")).toBe(false);
+    // Vietnam cash waits on its threshold wording, so it has no German page.
+    expect(pages.some((p) => p.category === "cash" && p.destinationSlug === "vietnam")).toBe(false);
   });
 
   it("translates a row's permit how-to, letter checklist and transit rule separately", () => {

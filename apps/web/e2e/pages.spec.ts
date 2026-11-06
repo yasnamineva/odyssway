@@ -525,12 +525,12 @@ test("German drone pages: translated rules, machine-translation notice, hreflang
   await page.goto("/bring/drones/france");
   await expect(page.locator('link[rel=alternate][hreflang=de]')).toHaveAttribute("href", /\/de\/bring\/drones\/france$/);
   await expect(page.getByTestId("german-version-link")).toHaveAttribute("href", "/de/bring/drones/france");
-  // Nigeria's rows aren't translated.
-  const missing = await page.goto("/de/bring/alcohol/nigeria");
+  // Vietnam cash isn't translated (it waits on its threshold wording).
+  const missing = await page.goto("/de/bring/cash/vietnam");
   expect(missing?.status()).toBe(404);
   await expect(page.getByTestId("de-not-found").getByRole("link", { name: "Zur englischen Fassung" })).toHaveAttribute(
     "href",
-    "/bring/alcohol/nigeria",
+    "/bring/cash/vietnam",
   );
 });
 
