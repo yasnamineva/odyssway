@@ -6106,5 +6106,391 @@
     },
     "translated_at": "2026-11-06",
     "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "alcohol-rs",
+    "sourceHash": "a2a3dded",
+    "fields": {
+      "summary": "1 Liter Spirituosen oder Schaumwein und 1 Liter anderer Wein; Bier nur in Mengen, die offensichtlich für den eigenen Gebrauch sind.",
+      "limitsDescription": "Wörtlich vom Zoll: „1 liter of spirits or 1 liter of sparkling and liqueur wines or suitable combination of mentioned drinks and 1 liter of other wines“ (1 Liter Spirituosen oder 1 Liter Schaum- und Likörweine oder eine entsprechende Kombination und 1 Liter andere Weine) dürfen zollfrei als persönliches Gepäck mitgebracht werden. Für Bier und Olivenöl gibt es keine genau festgelegte Menge, aber der Zoll sagt, sie „must be obviously intended for personal use and not for resale“ (müssen offensichtlich für den eigenen Gebrauch und nicht zum Weiterverkauf bestimmt sein).",
+      "notes": "Das ist die Befreiung für persönliches Gepäck, keine feste Obergrenze: Waren über der zollfreien Menge dürfen weiter mitgebracht werden, sind aber zoll- bzw. mehrwertsteuerpflichtig (Pauschalsatz von 10 % an der Grenze, wenn der Gesamtwert der abgabepflichtigen Waren unter 3000 EUR liegt; darüber das normale Zollverfahren)."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "tobacco-rs",
+    "sourceHash": "c1459714",
+    "fields": {
+      "summary": "Zollfrei: 50 Zigaretten oder 25 Zigarillos oder 10 Zigarren oder 50 g Tabak. Snus (Tabak zum oralen Gebrauch) ist verboten.",
+      "limitsDescription": "Wörtlich vom Zoll: „50 cigarettes, 25 cigarillos (cigars up to 3g), 10 cigars, 50g of tobacco or suitable combination of all mentioned products.“ (50 Zigaretten, 25 Zigarillos (Zigarren bis 3 g), 10 Zigarren, 50 g Tabak oder eine entsprechende Kombination.) Das umfasst Feinschnitt, Pfeifentabak, Shisha-Tabak, Kautabak, Schnupftabak und Tabakerhitzer. Tabak zum oralen Gebrauch (Snus) ist ausdrücklich ausgenommen: „tobacco for oral use (snus) whose import and distribution in the Republic of Serbia is prohibited.“ (Tabak zum oralen Gebrauch, dessen Einfuhr und Vertrieb in Serbien verboten ist.)",
+      "notes": "Die Freimenge umfasst die meisten Tabakarten, aber Snus ist ganz verboten, nicht nur begrenzt. Über der Freimenge fallen Zoll und Mehrwertsteuer an (Pauschalsatz von 10 % bei einem abgabepflichtigen Gesamtwert unter 3000 EUR; darüber das normale Verfahren)."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "e-cigarettes-rs",
+    "sourceHash": "028595c4",
+    "fields": {
+      "summary": "In Mengen für den eigenen Gebrauch erlaubt. Der Zoll nennt keine Anzahl an Geräten und keine Menge an Liquid.",
+      "limitsDescription": "Wörtlich vom Zoll: Reisende „are also allowed to carry related tobacco products in their luggage in quantities for personal use (electronic cigarettes, vapes, nicotine pouches and hookah aromas)“ (dürfen auch verwandte Tabakprodukte in Mengen für den eigenen Gebrauch im Gepäck mitführen: E-Zigaretten, Vapes, Nikotinbeutel und Shisha-Aromen). Eine bestimmte Zahl (Geräte oder Liquid-Menge) wird nicht genannt, nur der allgemeine Maßstab „für den eigenen Gebrauch, nicht zum Weiterverkauf“, der für die gesamte Freimenge für Tabakprodukte gilt.",
+      "notes": "Nikotinbeutel werden zusammen mit E-Zigaretten und Vapes als erlaubt genannt; davon getrennt ist Snus (rauchloser Tabak zum oralen Gebrauch), das einzige tabakverwandte Produkt, das der Zoll ausdrücklich verbietet."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cash-rs",
+    "sourceHash": "7ff7591e",
+    "fields": {
+      "summary": "Beliebige Beträge erlaubt, aber ab 10 000 EUR anmelden. Wer mehr wieder ausführt, braucht einen Herkunftsnachweis.",
+      "limitsDescription": "Wörtlich vom Zoll: „You may bring into Serbia as much money as you wish, but if it is EUR 10.000 or more (in dinars or other foreign currency) your obligation is to DECLARE it to Customs, the same as you would do when entering/leaving EU.“ (Sie dürfen so viel Geld nach Serbien bringen, wie Sie wollen, aber ab 10 000 EUR, in Dinar oder anderer Währung, müssen Sie es beim Zoll ANMELDEN, wie bei der Ein- oder Ausreise in die EU.) Bei der Ausreise dürfen alle Reisenden bis 10 000 EUR frei mitnehmen; Einwohner Serbiens dürfen das nur mit Nachweis der vorherigen Einfuhr oder Abhebung überschreiten, Nichtansässige nur mit bestimmten Belegen (ein Bargeldanmeldeformular des Zolls von der Einreise, ein Beleg über eine Abhebung bei einer serbischen Bank oder ein Wechselstubenbeleg über RSD, die mit Karte in Serbien bezogen wurden).",
+      "limitsQuantity": "10 000 EUR",
+      "notes": "Gilt je Person, auch für Kinder (FAQ des Zolls: „It applies to each person, children included“). Lassen Sie sich bei der Einreise das Bargeldanmeldeformular geben und bewahren Sie es auf, wenn Sie eine große Summe dabeihaben, die Sie vielleicht wieder ausführen; ohne es droht bei der Ausreise mit mehr als 10 000 EUR die Beschlagnahme. Zahlungskarten dürfen unbegrenzt ein- und ausgeführt werden."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "prescription-medication-rs",
+    "sourceHash": "94968dc8",
+    "fields": {
+      "summary": "Bis zu 15 Tage Vorrat ohne ärztliche Stellungnahme. Mehr, bis zu sechs Monate Vorrat, braucht eine vorherige Genehmigung des Gesundheitsministeriums.",
+      "limitsDescription": "Wörtlich vom Zoll: Arzneimittel dürfen „for personal passenger's use and for animals accompanying the passenger, in quantity needed for regular therapy not longer than 15 days. In that case medical opinion won't be necessary.“ (für den eigenen Gebrauch und für mitreisende Tiere in der Menge, die für eine regelmäßige Behandlung von höchstens 15 Tagen nötig ist; dann ist keine ärztliche Stellungnahme nötig) mitgebracht werden. Für einen längeren Aufenthalt ist „a larger quantity of medicines required for the implementation of usual therapy during several months of stay (more than 15 days, but no more than six months)“ (eine größere Menge für die übliche Behandlung während eines mehrmonatigen Aufenthalts, mehr als 15 Tage, aber höchstens sechs Monate) erlaubt, braucht aber eine vorherige Genehmigung „the competent ministry“ (des zuständigen Ministeriums, des Gesundheitsministeriums).",
+      "notes": "Bei mehr als 15 Tagen Vorrat, bei Arzneimitteln mit einem kontrollierten psychoaktiven Stoff oder wenn eine einzelne Packung mehr als 30 Dosiseinheiten enthält, weist der Zoll ausdrücklich darauf hin, dass eine vorherige Genehmigung nötig ist; siehe den eigenen Eintrag zu kontrollierten Arzneimitteln für Serbien für diesen strengeren Fall."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-rs",
+    "sourceHash": "a17563a5",
+    "fields": {
+      "summary": "Arzneimittel mit kontrollierten Stoffen brauchen eine Genehmigung des Gesundheitsministeriums, egal wie kurz Ihre Reise ist.",
+      "limitsDescription": "Wörtlich vom Zoll: „if medicines that you use contain controlled psychoactive substances and/or if their quantity exceeds one package of up to 30 dosage units, you should obtain the approval for import of medicines for personal needs from the competent ministry“ (wenn Ihre Arzneimittel kontrollierte psychoaktive Stoffe enthalten und/oder die Menge eine Packung mit bis zu 30 Dosiseinheiten übersteigt, holen Sie beim zuständigen Ministerium die Genehmigung zur Einfuhr für den persönlichen Bedarf ein); die allgemeine 15-Tage-Regel ohne Genehmigung gilt also nicht, sobald ein kontrollierter Stoff beteiligt ist, und die Genehmigung des Gesundheitsministeriums ist unabhängig von der Reisedauer nötig.",
+      "notes": "Die FAQ des Zolls nennt nicht, welche Arzneimittel als „kontrollierte psychoaktive Stoffe“ gelten; das legen die Anlagen des serbischen Gesetzes über psychoaktive kontrollierte Stoffe (Zakon o psihoaktivnim kontrolisanim supstancama) fest, die nicht direkt gelesen wurden. Amphetamin (Adderall), Methylphenidat (Ritalin), Alprazolam (Xanax) und Diazepam (Valium) stehen auf den internationalen Listen kontrollierter Stoffe der Vereinten Nationen. Wenn Sie eines davon mitführen, fragen Sie vor der Reise beim Gesundheitsministerium nach, statt sich auf die 15-Tage-Regel zu verlassen."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "meat-dairy-rs",
+    "sourceHash": "8dc4948d",
+    "fields": {
+      "summary": "Angemessene Mengen für den eigenen Gebrauch, in der Originalverpackung des Herstellers. Lebensmittel tierischen Ursprungs sind auf 1 kg begrenzt.",
+      "limitsDescription": "Wörtlich vom Zoll: Lebensmittel „may only be brought into/taken out of country in reasonable quantities for personal use and in the original manufacturer's wrapping. If you are importing food of animal origin, its quantity is limited to a maximum of one kilogram.“ (dürfen nur in angemessenen Mengen für den eigenen Gebrauch und in der Originalverpackung des Herstellers ein- oder ausgeführt werden; Lebensmittel tierischen Ursprungs sind auf höchstens ein Kilogramm begrenzt.)",
+      "limitsQuantity": "1 kg (Lebensmittel tierischen Ursprungs)",
+      "notes": "Die Grenze von 1 kg gilt eigens für Lebensmittel tierischen Ursprungs (Fleisch, Milchprodukte usw.); sie müssen außerdem in der versiegelten Originalverpackung des Herstellers sein, nicht selbst gemacht oder umverpackt."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "fresh-produce-rs",
+    "sourceHash": "200b04e5",
+    "fields": {
+      "summary": "Pflanzliche Lebensmittel nur in angemessenen Mengen für den eigenen Gebrauch und in der Verpackung des Herstellers.",
+      "limitsDescription": "Die allgemeine Lebensmittelregel des Zolls: Waren „may only be brought into/taken out of country in reasonable quantities for personal use and in the original manufacturer's wrapping.“ (dürfen nur in angemessenen Mengen für den eigenen Gebrauch und in der Originalverpackung des Herstellers ein- oder ausgeführt werden.) Anders als bei Lebensmitteln tierischen Ursprungs nennt diese Quelle für pflanzliche Erzeugnisse keine Zahl, und ein Pflanzengesundheitszeugnis für frisches Obst, Gemüse, Samen oder lebende Pflanzen wird nicht erwähnt.",
+      "notes": "Das ist die allgemeine Lebensmittelregel, keine eigene Pflanzenregel: Die Touristen-FAQ des Zolls behandelt lebende Pflanzen, Saatgut oder Pflanzengesundheitszeugnisse nicht eigens; betrachten Sie das daher als offene Frage und nicht als bestätigte Antwort für alles, was über gewöhnliche verpackte Lebensmittel hinausgeht. Fragen Sie vor dem Mitbringen lebender Pflanzen oder Samen bei den serbischen Pflanzenschutzbehörden nach (Ministerium für Landwirtschaft, Forstwirtschaft und Wasserwirtschaft)."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "weapons-rs",
+    "sourceHash": "76594190",
+    "fields": {
+      "summary": "Waffen brauchen eine Genehmigung des zuständigen Ministeriums; Jagdwaffen sind für organisierte Jagden oder Veranstaltungen vorübergehend erlaubt.",
+      "limitsDescription": "Wörtlich vom Zoll: „Passengers are not allowed to carry weapons across the border unless they possess the permit issued by a competent authority“ (Reisende dürfen ohne Genehmigung der zuständigen Behörde keine Waffen über die Grenze bringen; zuständig ist das Ministerium für Binnen- und Außenhandel). Eine Ausnahme gilt für Jagdwaffen und Munition, die „in appropriate quantities“ (in angemessenen Mengen) vorübergehend eigens für organisierte Jagdreisen oder Sportschießveranstaltungen mitgebracht werden dürfen.",
+      "notes": "Gewöhnliche Touristen haben keinen allgemeinen Weg, eine Schusswaffe ohne vorher eingeholte Genehmigung mitzubringen. Die Ausnahme für Jagd und Sportschießen ist eng: Sie gilt für die Teilnahme an einer organisierten Veranstaltung, nicht für das Mitführen in der Freizeit. Klingen und Messer behandelt diese Quelle nicht eigens."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "drones-rs",
+    "sourceHash": "a2f11dc0",
+    "fields": {
+      "summary": "Manche Drohnen brauchen je nach technischen Daten eine Einfuhrgenehmigung des Ministeriums für Binnen- und Außenhandel.",
+      "limitsDescription": "Wörtlich vom Zoll: Ob für die Ein- oder Ausfuhr einer Drohne eine Genehmigung nötig ist, „depends on whether it, in terms of its technical characteristics, meets the conditions prescribed in the National Control List of Dual Use Items and the National Control List of Weapons and Military Equipment.“ (hängt davon ab, ob sie nach ihren technischen Merkmalen die Bedingungen der nationalen Kontrollliste für Güter mit doppeltem Verwendungszweck und der nationalen Kontrollliste für Waffen und militärische Ausrüstung erfüllt.) Die Genehmigung erteilt, falls nötig, das Ministerium für Binnen- und Außenhandel. Eine Liste der von der Genehmigungspflicht befreiten Drohnenmodelle steht im eigenen Dokument des Ministeriums „Instructions for the identification of UAV“, das für diese Website nicht gelesen wurde.",
+      "notes": "Das ist eine Einstufung nach Zoll- und Ausfuhrkontrollrecht, keine Registrierungsregel für das Fliegen: Sie entscheidet anhand der technischen Daten, ob Ihr Drohnenmodell mit oder ohne Genehmigung die Grenze passieren darf, nicht, wo oder wie Sie in Serbien fliegen. Wenn Ihre Drohne nicht eindeutig auf der Liste der befreiten Modelle steht, sollen Sie sich laut Zoll vor der Reise für eine Einstufung direkt an das Ministerium wenden."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "alcohol-al",
+    "sourceHash": "4a69a21b",
+    "fields": {
+      "summary": "Reisende ab 17: 1 Liter Spirituosen oder 2 Liter bis 22 %, dazu 2 Liter nicht schäumender Wein und 10 Liter Bier.",
+      "limitsDescription": "Zollfrei je Reisendem ab 17 Jahren: 1 Liter Spirituosen über 22 % Alkohol ODER 2 Liter Getränke bis 22 % Alkohol und Schaumweine, DAZU (gesondert) 2 Liter nicht schäumender Wein und 10 Liter Bier. „No relief for alcohol and tobacco shall be granted to travellers under 17 years old.“ (Reisende unter 17 Jahren erhalten keine Befreiung für Alkohol und Tabak.)",
+      "limitsQuantity": "1 l Spirituosen über 22 % oder 2 l bis 22 % bzw. Schaumwein; dazu 2 l nicht schäumender Wein und 10 l Bier",
+      "notes": "Wörtlich von der Seite der Generaldirektion des Zolls für Reisende. Mengen darüber sind abgabepflichtig und müssen angemeldet werden."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "tobacco-al",
+    "sourceHash": "bf88c05e",
+    "fields": {
+      "summary": "Zollfrei ab 17 Jahren: 200 Zigaretten oder 100 Zigarillos oder 50 Zigarren oder 250 g Tabak.",
+      "limitsDescription": "Zollfrei je Reisendem ab 17 Jahren: „200 cigarette“ oder „100 cigarillos“ oder „50 cigars“ oder „250 grams of smoking tobacco“ (200 Zigaretten, 100 Zigarillos, 50 Zigarren oder 250 Gramm Rauchtabak). „No relief for alcohol and tobacco shall be granted to travellers under 17 years old.“ (Reisende unter 17 Jahren erhalten keine Befreiung für Alkohol und Tabak.)",
+      "limitsQuantity": "200 Zigaretten oder 100 Zigarillos oder 50 Zigarren oder 250 g Rauchtabak",
+      "notes": "Wörtlich von der Seite der Generaldirektion des Zolls für Reisende. E-Zigaretten sind eine eigene Frage; siehe den Eintrag zu E-Zigaretten für Albanien, für die es keine vergleichbare ausdrückliche Freimenge gibt."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cash-al",
+    "sourceHash": "4f22511f",
+    "fields": {
+      "summary": "Melden Sie Bargeld, Inhaberpapiere, Edelmetalle oder Wertgegenstände ab 10 000 € an.",
+      "limitsDescription": "Reisende, die nach Albanien einreisen oder es verlassen, „are obliged to declare the amounts in cash, any type of instrument negotiable of the holder, metals or precious stones, valuables and antiques, starting from the amount of 10,000 euros or its equivalent in other currencies.“ (müssen Bargeld, Inhaberpapiere jeder Art, Edelmetalle und Edelsteine, Wertgegenstände und Antiquitäten ab einem Betrag von 10 000 Euro oder dem Gegenwert in anderen Währungen anmelden.)",
+      "limitsQuantity": "10 000 EUR oder Gegenwert",
+      "notes": "Wörtlich von der Seite der Generaldirektion des Zolls für Reisende. Die Schwelle umfasst Edelmetalle und Edelsteine sowie Antiquitäten ebenso wie Bargeld und Inhaberpapiere und gilt bei der Ein- und bei der Ausreise."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "prescription-medication-al",
+    "sourceHash": "4aaec2fb",
+    "fields": {
+      "summary": "Bis zu 2 Monate Vorrat, mit Rezept und einer unterschriebenen Erklärung zum persönlichen Gebrauch, die beim Zoll hinterlegt wird.",
+      "limitsDescription": "Ausländische Reisende dürfen begrenzte Mengen Arzneimittel für den persönlichen Gebrauch mitführen, wenn: (1) sie nicht der Werbung oder Vermarktung dienen, (2) sie eine schriftliche Erklärung abgeben, dass das Arzneimittel für den persönlichen Gebrauch ist, mit den Kontaktdaten des verschreibenden Arztes (albanisch oder ausländisch), die an der Einreisestelle beim Zoll hinterlegt wird, und (3) die Menge höchstens 2 Monate Behandlung deckt, belegt durch das beiliegende ärztliche Rezept mit der Tagesdosis. Bei Nichtansässigen soll die Menge zur Dauer ihres Aufenthalts in Albanien passen.",
+      "limitsQuantity": "Bis zu 2 Monate Vorrat, mit Rezept und Zollerklärung",
+      "notes": "Wörtlich bzw. sinngemäß von der eigenen Seite des Ministeriums für Europa und Auswärtige Angelegenheiten zu genau diesem Thema. Das ist die Regel für gewöhnliche Arzneimittel; Arzneimittel, die als Betäubungsmittel oder psychotrope Stoffe gelten, sind viel stärker beschränkt; siehe den Eintrag zu kontrollierten Arzneimitteln für Albanien."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "prescription-medication-al#details",
+    "sourceHash": "e3d6ecf8",
+    "fields": {
+      "letterItems": [
+        "Das ärztliche Rezept mit der Tagesdosis (für höchstens 2 Monate Behandlung)",
+        "Eine schriftliche Erklärung, dass das Arzneimittel für den persönlichen Gebrauch ist, bei der Einreise beim Zoll hinterlegt",
+        "Die Kontaktdaten des verschreibenden Arztes"
+      ]
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-al",
+    "sourceHash": "4d21ecad",
+    "fields": {
+      "summary": "Verboten: Der albanische Zoll verbietet die Einfuhr von Arzneimitteln mit Betäubungsmitteln und psychotropen Stoffen.",
+      "limitsDescription": "Die Verbotsseite der Zollbehörde sagt klar: „It is prohibited the import, export, transit of narcotics and psychotropic substances“ (Einfuhr, Ausfuhr und Durchfuhr von Betäubungsmitteln und psychotropen Stoffen sind verboten), eine Straftat nach albanischem Strafrecht, und das umfasst ausdrücklich „plants, narcotic medicaments and psychotropic substances of natural or synthetic nature, their materials and their preparations“ (Pflanzen, Betäubungsmittel als Arzneimittel und psychotrope Stoffe natürlicher oder synthetischer Art, ihre Ausgangsstoffe und Zubereitungen), mit Verweis auf das Gesetz Nr. 7975 (26.07.1995) „On the narcotic medicines and psychotropic substances“ (über Betäubungsmittel und psychotrope Stoffe).",
+      "notes": "Anders als bei gewöhnlichen Arzneimitteln nennt die Seite der Zollbehörde zu Betäubungsmitteln und psychotropen Stoffen ein pauschales Einfuhrverbot ohne Ausnahme für Reisende oder den persönlichen medizinischen Gebrauch. Auf keiner albanischen Regierungsseite wurde eine Ausnahme für den Eigenbedarf gefunden; gehen Sie nicht davon aus, dass eine gilt. Wenn Sie ein Arzneimittel nehmen, das in Ihrem Heimatland ein kontrollierter Stoff ist, klären Sie es vor der Reise direkt mit der albanischen Botschaft."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-al#details",
+    "sourceHash": "2531f9c1",
+    "fields": {
+      "transitDescription": "Die albanische Zollbehörde verbietet die Durchfuhr von Betäubungsmitteln und psychotropen Stoffen ebenso wie ihre Ein- und Ausfuhr."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cannabis-al",
+    "sourceHash": "ce211c86",
+    "fields": {
+      "summary": "Verboten: Albanien verbietet die Einfuhr von Betäubungsmitteln, auch von Betäubungsmittelpflanzen; es ist eine Straftat ohne Ausnahme für den Eigenbedarf.",
+      "limitsDescription": "Fällt unter dasselbe pauschale Verbot wie andere Betäubungsmittel: „It is prohibited the import, export, transit of narcotics and psychotropic substances“ (Einfuhr, Ausfuhr und Durchfuhr von Betäubungsmitteln und psychotropen Stoffen sind verboten), was ausdrücklich „plants, narcotic medicaments and psychotropic substances of natural or synthetic nature“ (Pflanzen, Betäubungsmittel als Arzneimittel und psychotrope Stoffe natürlicher oder synthetischer Art) umfasst. Eine Straftat nach albanischem Strafrecht.",
+      "notes": "Albanien geht seit rund zehn Jahren in großem Umfang gegen Cannabisanbau und -handel vor, und die Seite der Zollbehörde nennt keine Ausnahme für Reisende zu medizinischen Zwecken oder für den Eigenbedarf. Ein THC-Grenzwert oder eine Bagatellgrenze wird nicht genannt."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cannabis-al#details",
+    "sourceHash": "11fefbd6",
+    "fields": {
+      "transitDescription": "Die albanische Zollbehörde verbietet die Durchfuhr von Betäubungsmitteln und psychotropen Stoffen, auch von Pflanzen, ebenso wie ihre Ein- und Ausfuhr."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "weapons-al",
+    "sourceHash": "95c2707c",
+    "fields": {
+      "summary": "Ausländer dürfen Schusswaffen nur mit einer vorübergehenden Genehmigung der Staatspolizei mitbringen.",
+      "limitsDescription": "„Foreign citizens have the right to enter with firearms in the territory of the Republic of Albania only after they are equipped with a temporary authorization issued by the competent body of the State Police.“ (Ausländische Staatsangehörige dürfen nur mit einer vorübergehenden Genehmigung der zuständigen Stelle der Staatspolizei mit Schusswaffen nach Albanien einreisen.) Waffen der Kategorien B und C brauchen außerdem für Handel, Ein- und Ausfuhr, Jagd oder Sport eine Genehmigung der Staatspolizei.",
+      "notes": "Eine Schusswaffe dürfen Sie nicht einfach nach Albanien mitbringen: Eine vorherige vorübergehende Genehmigung der Staatspolizei ist nötig. Die Seite der Zollbehörde behandelt Hieb- und Stichwaffen, Luftdruckwaffen oder Selbstverteidigungsmittel nicht eigens; gehen Sie also nicht davon aus, dass sie ungeregelt sind. Der Länderleitfaden der US-Handelsbehörde ITA bestätigt gesondert, dass „special import provisions are enforced for strategic sectors such as weapons, munitions“ (für strategische Bereiche wie Waffen und Munition besondere Einfuhrbestimmungen gelten)."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "alcohol-me",
+    "sourceHash": "231f3d70",
+    "fields": {
+      "summary": "Reisende ab 17: 1 Liter Spirituosen oder 2 Liter bis 22 %, dazu 4 Liter nicht schäumender Wein und 2 Liter Bier.",
+      "limitsDescription": "Zollfrei für Reisende ab 17 Jahren: 1 Liter Spirituosen über 22 % vol (oder unvergällter Ethylalkohol ab 80 % vol) ODER 2 Liter alkoholische Getränke bis 22 % vol (oder eine anteilige Mischung aus beiden), dazu 4 Liter nicht schäumender Wein und 2 Liter Bier. Dieselben Mengen gelten bei Ankunft auf dem Luft-, Land- oder Seeweg.",
+      "limitsQuantity": "1 l Spirituosen oder 2 l bis 22 % + 4 l nicht schäumender Wein + 2 l Bier",
+      "notes": "Anweisung der montenegrinischen Zollverwaltung (31. Oktober 2025) zur Anwendung der Artikel 8–9 der Verordnung über die Befreiung von Einfuhrabgaben (Sl. list CG 31/25). Personen unter 17 Jahren erhalten keine Freimenge für Alkohol oder Tabak. Die Mengen für Alkohol und Tabak sind unabhängig vom Wert zollfrei und zählen nicht zur allgemeinen Wertgrenze für Waren (430 EUR für Flug- und Seereisende, 300 EUR für andere Reisende, 150 EUR für unter 15-Jährige). Über der Freimenge werden die vollen Einfuhrabgaben erhoben (bis zu den Höchstmengen an verbrauchsteuerpflichtigen Waren, die Privatpersonen einführen dürfen). Die Waren müssen gelegentlich und für den persönlichen oder familiären Gebrauch oder als Geschenk sein, nicht gewerblich."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "tobacco-me",
+    "sourceHash": "211b008e",
+    "fields": {
+      "summary": "Auf dem Luftweg: 200 Zigaretten oder Gleichwertiges. Auf dem Land- oder Seeweg: nur 40 Zigaretten oder Gleichwertiges.",
+      "limitsDescription": "Zollfrei für Reisende ab 17 Jahren. Bei Ankunft auf dem LUFTWEG: 200 Zigaretten oder 100 Zigarillos (Zigarren bis je 3 g) oder 50 Zigarren oder 250 g Rauchtabak (oder eine anteilige Mischung). Bei Ankunft auf jedem ANDEREN Weg (Land, See, Bahn): nur 40 Zigaretten oder 20 Zigarillos oder 10 Zigarren oder 50 g Rauchtabak.",
+      "limitsQuantity": "Luftweg: 200 Zigaretten; Land-/Seeweg: 40 Zigaretten",
+      "notes": "Anweisung der Zollverwaltung vom 31. Oktober 2025 (Verordnung Sl. list CG 31/25, Art. 8 für Flugreisen, Art. 9 für „andere Verkehrsarten“). Die geringere Freimenge bei Ankunft auf anderem Weg als per Flugzeug überrascht oft Reisende, die aus Kroatien, Bosnien, Serbien oder Albanien mit dem Auto oder mit der Fähre kommen. Unter 17-Jährige erhalten keine Tabakfreimenge. Auf Tabak über der Freimenge werden die vollen Einfuhrabgaben erhoben."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cash-me",
+    "sourceHash": "b75277c3",
+    "fields": {
+      "summary": "Melden Sie 10 000 € oder mehr in Bargeld, Schecks, Inhaberpapieren oder Edelmetallen bei der Ein- und Ausreise an.",
+      "limitsDescription": "Bei der Ein- und Ausreise müssen Sie Bargeld von 10 000 EUR oder mehr (oder den Gegenwert in anderen Währungen) beim Zoll anmelden, ebenso Schecks, Inhaberpapiere, Edelmetalle und Edelsteine in diesem Wert. Der Zoll verlangt vollständige Unterlagen über die Herkunft des Geldes.",
+      "limitsQuantity": "10 000 EUR oder mehr",
+      "notes": "Operative Mitteilung der Zollverwaltung Nr. D-6425/1-25 vom 8. Mai 2025: Wer „novac, čekovi, hartije od vrijednosti na donosioca, dragocjeni metali ili drago kamenje“ (Geld, Schecks, Inhaberpapiere, Edelmetalle oder Edelsteine) im Wert von 10 000 EUR oder mehr über die Grenze bringt, muss es beim Zoll anmelden und vollständige Unterlagen über die Herkunft vorlegen. Hat nicht angemeldetes Geld keinen Hinweis auf illegale Herkunft, wird es nicht beschlagnahmt, aber es ergeht ein Bußgeldbescheid. Besteht Verdacht zur Herkunft (angemeldet oder nicht, bei jedem Betrag), kann der Zoll Geld und Person bis zu 6 Stunden festhalten, während die Finanzermittlungseinheit der Polizei und die Staatsanwaltschaft entscheiden. Die Anweisung der Zollverwaltung von 2016 (auf derselben Seite veröffentlicht) nennt als Rechtsgrundlage Art. 10 des Gesetzes über laufende und Kapitaltransaktionen mit dem Ausland und den Beschluss, der 10 000 EUR als Grenze für das Mitführen von Bargeld ohne Anmeldung festlegt, und nennt eine Geldstrafe von 550–2000 EUR für Privatpersonen (dieser Betrag ist von 2016 und kann sich geändert haben). Das britische Außenministerium (FCDO) stimmt überein: Bargeld oder Reiseschecks ab 10 000 EUR anmelden und die bestätigte Anmeldung aufbewahren, sonst kann das Geld bei der Ausreise beschlagnahmt werden."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "prescription-medication-me",
+    "sourceHash": "bd6b4a83",
+    "fields": {
+      "summary": "Eine angemessene Menge für den persönlichen Gebrauch, bis zu 6 Monate Vorrat. Arzneimittel mit Betäubungsmitteln: höchstens 30 Tage, angemeldet, mit ärztlicher Bescheinigung.",
+      "limitsDescription": "Sie dürfen eine angemessene Menge Arzneimittel für den persönlichen Gebrauch mitbringen, höchstens 6 Monate Vorrat. Für Arzneimittel mit Betäubungsmitteln oder kontrollierten Stoffen gelten strengere Regeln (30 Tage Vorrat, ärztliche Bescheinigung, Anmeldung); siehe den Eintrag zu kontrollierten Arzneimitteln.",
+      "limitsQuantity": "Bis zu 6 Monate Vorrat",
+      "notes": "Britisches Außenministerium (FCDO): „When travelling to Montenegro, you may carry a reasonable amount of medication needed for personal use for a maximum of 6 months.“ (Bei Reisen nach Montenegro dürfen Sie eine angemessene Menge Arzneimittel für den persönlichen Gebrauch für höchstens 6 Monate mitführen.) Auch die montenegrinische Zollverordnung (Sl. list CG 31/25, Art. 7) bestimmt, dass der Wert der Arzneimittel und Medizinprodukte für den persönlichen Bedarf des Reisenden nicht auf die zollfreie Wertgrenze angerechnet wird. Die 6 Monate stammen von der britischen Regierungsseite; in einem montenegrinischen Rechtstext haben wir sie nicht gefunden. Lassen Sie Arzneimittel in der Originalverpackung und führen Sie Ihr Rezept mit."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-me",
+    "sourceHash": "3c8b86c1",
+    "fields": {
+      "summary": "Bis zu 30 Tage Vorrat, mit einer ärztlichen Bescheinigung, die höchstens 90 Tage alt ist.",
+      "limitsDescription": "Ein Arzneimittel mit einem Betäubungsmittel dürfen Sie nur in der Menge mitführen, die Sie für Ihre eigene Behandlung von höchstens 30 Tagen brauchen, und Sie müssen eine Bescheinigung (einen Bericht) Ihres Arztes dabeihaben, die den Bedarf bestätigt. Die Bescheinigung darf höchstens 90 Tage alt sein. Die britische Regierung sagt außerdem, dass solche Arzneimittel bei der Ankunft beim Zoll anzumelden sind.",
+      "limitsQuantity": "Höchstens 30 Tage Vorrat + ärztliche Bescheinigung unter 90 Tage alt",
+      "notes": "Gesetz zur Verhütung des Drogenmissbrauchs, Art. 43: „Lice koje prelazi državnu granicu može da posjeduje lijek koji sadrži drogu u količini potrebnoj za ličnu terapiju, za period od najviše 30 dana na osnovu potvrde (izvještaja) izabranog doktora ili doktora medicine specijaliste...“ (Wer die Staatsgrenze überquert, darf ein Arzneimittel mit einem Betäubungsmittel in der für die eigene Behandlung nötigen Menge für höchstens 30 Tage besitzen, auf Grundlage einer Bescheinigung des gewählten Arztes oder eines Facharztes) und „Potvrda o neophodnosti posjedovanja lijeka ne može biti starija od 90 dana.“ (Die Bescheinigung über die Notwendigkeit darf nicht älter als 90 Tage sein.) Dieselbe Regel (30 Tage, Bescheinigung eines Tierarztes, unter 90 Tage alt) gilt für Arzneimittel für ein mitreisendes Tier, und dafür verlangt das Gesetz ausdrücklich, die Bescheinigung dem Zoll zu melden (sonst Geldstrafe 100 EUR, Art. 52a). Für Arzneimittel für Menschen verlangt das Gesetz, dass Sie die Bescheinigung mitführen; das britische Außenministerium (FCDO) sagt zusätzlich „You must declare any prescription medication containing narcotics to customs on arrival“ (verschreibungspflichtige Arzneimittel mit Betäubungsmitteln müssen bei der Ankunft beim Zoll angemeldet werden) und dass Arzneimittel ohne Unterlagen oder ohne Anmeldung „may lead to confiscation and legal action“ (zu Beschlagnahme und rechtlichen Schritten führen können); die Anmeldung ist der sichere Weg. Wer mehr als die ärztlich verordnete Menge besitzt, begeht eine Ordnungswidrigkeit (100–2000 EUR, Art. 52). Das Gesetz nennt keine bestimmten Arzneimittel; ob ein Arzneimittel erfasst ist, hängt von Montenegros amtlicher Liste der Betäubungsmittel und psychotropen Stoffe ab, die wir nicht geprüft haben. Die eigene Mitteilung des Ministeriums für Reisende von 2020 (gov.me, Artikel 222598, inzwischen archiviert) nennt dieselbe Regel."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-me#details",
+    "sourceHash": "8076311c",
+    "fields": {
+      "letterItems": [
+        "Eine Bescheinigung (ein Bericht) Ihres gewählten Arztes oder eines Facharztes, die bestätigt, dass Sie das Arzneimittel brauchen",
+        "Höchstens 90 Tage alt",
+        "Für höchstens 30 Tage Ihrer Behandlung"
+      ]
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cannabis-me",
+    "sourceHash": "ae23d695",
+    "fields": {
+      "summary": "Verboten: Gebrauch, Handel oder Besitz von Drogen, auch für den Eigenbedarf, ist in Montenegro verboten.",
+      "limitsDescription": "Gebrauch, Herstellung, Handel oder Besitz von Drogen für den Eigenbedarf sind verboten. Bringen Sie kein Cannabis nach Montenegro mit.",
+      "notes": "Gesetz zur Verhütung des Drogenmissbrauchs, Art. 45: „Zabranjena je upotreba, proizvodnja, promet, posjedovanje droga za ličnu upotrebu...“ (Gebrauch, Herstellung, Handel und Besitz von Drogen für den Eigenbedarf sind verboten). Besitz von Drogen für den Eigenbedarf ist eine Ordnungswidrigkeit mit einer Geldstrafe von 100–2000 EUR (Art. 52); größere Mengen und Handel sind Straftaten. Britisches Außenministerium (FCDO): „Illegal drugs, including cannabis, carry severe penalties.“ (Auf illegale Drogen, auch Cannabis, stehen harte Strafen.) Nicht abgedeckt: CBD-Produkte und etwaige montenegrinische Regeln zu medizinischem Cannabis; dazu haben wir keine Primärquelle gefunden, gehen Sie also nicht davon aus, dass CBD erlaubt ist."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "meat-dairy-me",
+    "sourceHash": "e32d56c0",
+    "fields": {
+      "summary": "Verboten: Fleisch, Milch und Produkte, die sie enthalten. Ausnahmen: Säuglingsmilchpulver, Babynahrung und medizinisch nötige Lebensmittel, versiegelt und etikettiert.",
+      "limitsDescription": "Fleisch, Milch oder Produkte, die sie enthalten, dürfen Sie nicht nach Montenegro mitbringen. Ausnahmen: Säuglingsmilchpulver, Babynahrung und aus medizinischen Gründen nötige Spezialnahrung (versiegelt, etikettiert, ohne besondere Lagerung).",
+      "notes": "Britisches Außenministerium (FCDO): „You cannot take meat, milk or products containing them into Montenegro. There are some exceptions such as powdered baby milk, baby food and special foods or pet feed required for medical reasons.“ (Fleisch, Milch oder Produkte daraus dürfen nicht nach Montenegro gebracht werden; Ausnahmen sind etwa Säuglingsmilchpulver, Babynahrung und aus medizinischen Gründen nötige Spezialnahrung oder Tierfutter.) Das stimmt mit der Verordnung des Landwirtschaftsministeriums über Lebensmittel überein, die Reisende nach Montenegro mitbringen (Sl. list CG 27/2008, Art. 4–5): Danach sind Fleisch, Fleischprodukte, Fisch, Weichtiere, Milch und Milchprodukte, Eier, tierisches Fett, Gelatine und Kollagen ohne Veterinärzeugnis nicht erlaubt, Milchpulver bzw. Babynahrung und medizinisch nötige Lebensmittel dagegen schon, ebenso bis zu 1 kg wärmebehandeltes (Dosen-)Tierfutter (Art. 8). Diese Verordnung haben wir nur über die Kopie in der Rechtsdatenbank der FAO gelesen und konnten nicht bestätigen, dass sie noch gilt; zitierte Quelle ist daher die aktuelle britische Seite. Waren, die die Regeln nicht erfüllen, werden an der Grenze beschlagnahmt und vernichtet."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "weapons-me",
+    "sourceHash": "94b26ab9",
+    "fields": {
+      "summary": "Jagd- oder Sportwaffen nur für Jagden oder Wettkämpfe, in den Pass eingetragen und bei der Grenzpolizei angemeldet.",
+      "limitsDescription": "Besucher ohne ständigen Wohnsitz dürfen Jagd- oder Sportwaffen und Munition nur zur Jagd oder zur Teilnahme an Sportwettkämpfen (oder kulturellen Veranstaltungen) mitbringen, und die Waffe muss in Ihren Pass eingetragen sein (von einer montenegrinischen Botschaft bzw. einem Konsulat oder von der Grenzpolizei, wenn Sie in Ihrem Heimatland eine Erlaubnis zum Führen haben). Melden Sie sie bei der Ankunft bei der Grenzpolizei an, mit Ihrem Waffendokument und einem Nachweis des Zwecks (Einladungsschreiben, Mitteilung des Veranstalters der Jagd oder des Wettkampfs). Überqueren Sie die Grenze nur an internationalen Grenzübergängen; die Waffe dürfen Sie nicht verkaufen.",
+      "notes": "Gesetz über Waffen und Munition (Zakon o oružju i municiji), verabschiedet am 31. Juli 2026 und verkündet am 3. August 2026, das das Waffengesetz von 2015 ersetzt: Art. 66 (Ausländer ohne ständigen Wohnsitz dürfen Waffen für Jagd, Sportwettkämpfe und kulturelle Veranstaltungen über die Grenze bringen, nur an internationalen Übergängen, und dürfen sie nicht verkaufen), Art. 67 (Waffen und Munition müssen bei der Grenzpolizei angemeldet und das Waffendokument sowie der Nachweis des Zwecks vorgelegt werden), Art. 72 (Jagd- und Sportwaffen müssen im Reisedokument eingetragen sein; die Grenzpolizei erteilt eine Einreisegenehmigung und löscht sie bei der Ausreise). Art. 75 (Europäischer Feuerwaffenpass) gilt erst ab Montenegros EU-Beitritt. Andere Waffenarten (Selbstverteidigungswaffen, Messer, Pfefferspray, Nachbildungen) wurden nicht recherchiert; betrachten Sie sie als nicht abgedeckt."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "drones-me",
+    "sourceHash": "e2f910e6",
+    "fields": {
+      "summary": "Flüge nahe den Flughäfen Podgorica und Tivat brauchen eine Genehmigung der Airspace Management Cell; sonst in deren Zonen bis 50 m.",
+      "limitsDescription": "Das Mitbringen einer Drohne ist nach den gefundenen Zollregeln nicht beschränkt, aber das Fliegen ist geregelt. Nahe den Flughäfen Podgorica und Tivat braucht jeder Flug in den Sperrgebieten um den Flughafen eine vorherige Genehmigung der montenegrinischen Airspace Management Cell (AMC), die mindestens zwei Werktage vorher (bis 10:00 UTC) zu beantragen ist. Sonst dürfen Sie in den Kontrollzonen von Podgorica und Tivat bis 50 m über Grund fliegen; für 50–120 m ist eine AMC-Genehmigung nötig.",
+      "notes": "Sicherheitsanordnung 2017/001 Rev. 03 der Zivilluftfahrtagentur Montenegros (auf Grundlage des Luftverkehrsgesetzes und der Verordnung über den sicheren Einsatz unbemannter Luftfahrzeugsysteme, Sl. list CG 24/23 und 117/23). Die Seite der Agentur zu unbemannten Luftfahrzeugen führt dies als Revision 3, veröffentlicht am 1. Juli 2024. Hier nicht geprüft: Montenegros allgemeine Drohnenregistrierung, die Schulung von Betreibern und Fernpiloten (die Agentur bietet einen A1/A3-Theoriekurs an) und die Regeln außerhalb der beiden Flughafen-Kontrollzonen nach der Verordnung 24/23; prüfen Sie caa.me vor dem Fliegen."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cannabis-rs",
+    "sourceHash": "1ddcf563",
+    "fields": {
+      "summary": "Verboten: Auf Besitz und Handel mit Cannabis stehen in Serbien harte Strafen.",
+      "limitsDescription": "Cannabis ist in Serbien eine illegale Droge: Auf Besitz und Handel stehen harte Strafen.",
+      "notes": "Aus den Reisehinweisen der britischen Regierung; das serbische Gesetz über psychoaktive kontrollierte Stoffe und das Strafgesetzbuch wurden hier nicht gelesen. CBD wird nicht genannt, daher gilt dieser Eintrag nicht für CBD-Produkte."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cash-mk",
+    "sourceHash": "8a44de29",
+    "fields": {
+      "summary": "Melden Sie Fremdwährung im Wert von 10 000 EUR oder mehr bei der Ankunft an. Nicht angemeldetes Bargeld kann bei der Ausreise beschlagnahmt werden.",
+      "limitsDescription": "Melden Sie Fremdwährung im Wert von 10 000 Euro oder mehr bei der Einreise nach Nordmazedonien an.",
+      "limitsQuantity": "10 000 EUR oder mehr",
+      "notes": "Wer nicht anmeldet, kann bei der Ausreise von Zollbeamten festgehalten werden, und das Bargeld kann beschlagnahmt werden. Die Website des nordmazedonischen Zolls ließ sich für diese Website nicht laden; dieser Eintrag stützt sich auf die Reisehinweise der britischen Regierung."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cannabis-mk",
+    "sourceHash": "1090c862",
+    "fields": {
+      "summary": "Verboten: Cannabis ist in Nordmazedonien eine illegale Droge; wer es mitbringt, riskiert lange Haftstrafen und hohe Geldstrafen.",
+      "limitsDescription": "Auf illegale Drogen, auch Cannabis, stehen in Nordmazedonien harte Strafen: Rechnen Sie bei Besitz, Gebrauch oder Schmuggel mit langer Haft und hohen Geldstrafen.",
+      "notes": "Für diese Website wurde keine Seite des nordmazedonischen Zolls oder Drogenrechts gelesen; dieser Eintrag stützt sich auf die Reisehinweise der britischen Regierung. Danach gelten die Strafen auch beim Transit über den Flughafen, und Transitgepäck wird durchleuchtet. Zu CBD-Produkten sagen sie nichts Bestimmtes, daher gilt dieser Eintrag nicht für CBD."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "weapons-mk",
+    "sourceHash": "113f7cbf",
+    "fields": {
+      "summary": "Melden Sie Waffen bei der Einreise an; mit gültigem Waffenschein stellt die Polizei eine Erlaubnis für Ihren Aufenthalt aus.",
+      "limitsDescription": "Melden Sie Waffen bei der Einreise nach Nordmazedonien an, für einen Besuch oder im Transit. Sie brauchen einen gültigen Waffenschein; die Polizei stellt dann eine Erlaubnis für Ihren Aufenthalt aus. Sie können die Waffe für die Dauer Ihres Aufenthalts auch an der Grenze hinterlegen.",
+      "notes": "Für diese Website wurde keine Seite des nordmazedonischen Zolls gelesen, die das sagt; dieser Eintrag stützt sich auf die Reise- und Sicherheitshinweise des Auswärtigen Amts."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
   }
 ]
