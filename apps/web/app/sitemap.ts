@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { blogPosts } from "../lib/blog";
 import { BRING_CATEGORIES } from "../lib/bring-categories";
 import { bringPairs } from "../lib/bring-pages";
-import { germanPairs, hasGermanPage } from "../lib/translations";
+import { germanPairs, hasGermanPage, translatedCustomsRow } from "../lib/translations";
 import { countriesVerifiedAt } from "../lib/countries";
 import { customsItems, destinationPath, destinations, entryRequirements } from "../lib/destinations";
 import { schengenCustomsRows, schengenDestinations } from "../lib/schengen-destinations";
@@ -135,7 +135,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...germanPairs().map((p) => {
       const en = `${BASE}/bring/${p.itemSlug}/${p.destinationSlug}`;
       const de = `${BASE}/de/bring/${p.itemSlug}/${p.destinationSlug}`;
-      return { url: de, lastModified: p.lastVerified ?? CONTENT_CHECKED, priority: 0.5, alternates: { languages: { en, de } } };
+      // A German page changes when its English rows are re-checked *or* retranslated:
+      // take the later date, so a newly translated page is picked up by `indexnow --since`.
+      const translated = p.rows.map((r) => translatedCustomsRow(r, "de")?.translatedAt ?? "");
+      const lastModified = [p.lastVerified ?? CONTENT_CHECKED, ...translated].sort().at(-1)!;
+      return { url: de, lastModified, priority: 0.5, alternates: { languages: { en, de } } };
     }),
     ...Object.entries(BRING_CATEGORIES).map(([category, meta]) => {
       const dates = customsItems

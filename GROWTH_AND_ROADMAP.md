@@ -24,7 +24,7 @@ Where we are today (2026-11-04):
   and France rows; validate-data now rejects research-log wording in rows. Build, 234 unit tests and 129 e2e passed).
   ✔ IndexNow 2026-11-06: `--since 2026-11-05` (56 URLs) plus the 413 German URLs listed explicitly (both HTTP 200).
   **Gap found:** German pages take their sitemap `lastmod` from the English rows' check dates, so `--since` misses
-  newly translated pages. Next: use the later of `verified_at` and `translated_at` for `/de` URLs.
+  newly translated pages. ✔ Fixed 2026-11-06 (ships next push): `/de` URLs use the later of `verified_at` and `translated_at`.
 
 ---
 
