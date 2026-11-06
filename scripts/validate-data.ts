@@ -525,7 +525,7 @@ const MONTHS = ["january", "february", "march", "april", "may", "june", "july", 
  * Row text is read by travellers: research-log phrases ("in this dataset", "see
  * unverified", "as fetched") make sense to us, not to them. Fail on them in verified rows.
  */
-const RESEARCH_LOG = /\b(AGENTS\.md|Shown as (?:prohibited|allowed)|Verdict is|Source-quality note|during research|the unverified|our environment|in unverified|IP-blocked|high-confidence|not in names|during this research|research gap|genuinely different|this dataset|in this environment|this project|see unverified|as fetched|pages fetched|requested drug list)\b/i;
+const RESEARCH_LOG = /\b(AGENTS\.md|Wayback|summari[sz]ed fetch|parsing the PDF|could not be fetched|automated fetches|Shown as (?:prohibited|allowed)|Verdict is|Source-quality note|during research|the unverified|our environment|in unverified|IP-blocked|high-confidence|not in names|during this research|research gap|genuinely different|this dataset|in this environment|this project|see unverified|as fetched|pages fetched|requested drug list)\b/i;
 function checkReaderFacingText(): void {
   for (const name of ["customs-items.json", "entry-requirements.json"]) {
     const rows = JSON.parse(readFileSync(join(DATA_DIR, name), "utf8")) as Array<Record<string, any>>;
