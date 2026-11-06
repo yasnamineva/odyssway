@@ -8682,5 +8682,352 @@
     },
     "translated_at": "2026-11-06",
     "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "alcohol-am",
+    "sourceHash": "47664779",
+    "fields": {
+      "summary": "Bis zu 3 Liter zollfrei; mehr als 5 Liter aus Ländern außerhalb der EAWU sind verboten. Nur für Reisende ab 18 Jahren.",
+      "limitsDescription": "Bis zu 3 Liter Getränke mit über 0,5 % Alkohol zollfrei. Über 3 Liter anmelden und Zoll im Gegenwert von 10 EUR je Liter in AMD zahlen. Mehr als 5 Liter aus Drittländern einzuführen ist verboten, ebenso jede Einfuhr durch Personen unter 18 Jahren.",
+      "limitsQuantity": "3 Liter zollfrei; höchstens 5 Liter"
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "tobacco-am",
+    "sourceHash": "126f6f30",
+    "fields": {
+      "summary": "Bis zu 200 Zigaretten, 50 Zigarren, 200 Tabaksticks zum Erhitzen oder 250 g Tabak. Nur für Reisende ab 18 Jahren.",
+      "limitsDescription": "Bis zu 200 Zigaretten oder 50 Zigarren (Zigarillos) oder 200 Tabaksticks zum Erhitzen oder 250 g Tabak (oder eine Mischung bis insgesamt 250 g). Mehr einzuführen ist verboten, ebenso jede Einfuhr durch Personen unter 18 Jahren.",
+      "limitsQuantity": "200 Zigaretten / 50 Zigarren / 200 Sticks / 250 g"
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cash-am",
+    "sourceHash": "c3777a3e",
+    "fields": {
+      "summary": "Melden Sie Bargeld oder Reiseschecks über 10 000 USD an. Andere Zahlungsmittel müssen immer angemeldet werden.",
+      "limitsDescription": "Bargeld oder Reiseschecks bis insgesamt 10 000 USD müssen nicht angemeldet werden. Andere Zahlungsmittel als Reiseschecks müssen unabhängig vom Betrag angemeldet werden. Guthaben auf Bankkarten wird nicht angemeldet. Für Anmeldungen über 100 000 USD sind Unterlagen über die Herkunft des Geldes nötig.",
+      "limitsQuantity": "10 000 USD",
+      "notes": "Wer anmeldepflichtige Waren, auch Zahlungsmittel, nicht anmeldet, riskiert nach armenischem Recht Verwaltungs- oder Strafsanktionen."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "prescription-medication-am",
+    "sourceHash": "81d24401",
+    "fields": {
+      "summary": "Bis zu 10 Arzneimittelarten, je 3 Packungen, für den persönlichen Gebrauch. Mehr, wenn ein Rezept oder ärztliches Dokument es begründet.",
+      "limitsDescription": "Für den persönlichen Gebrauch oder die Behandlung dürfen in Armenien registrierte oder nicht registrierte Arzneimittel ohne Zertifizierung mitgebracht werden: bis zu 10 Arten mit je drei Verkaufspackungen, es sei denn, ein Rezept, eine Krankengeschichte oder ein anderes ärztlich unterschriebenes Dokument begründet eine größere Menge für die Behandlung.",
+      "limitsQuantity": "10 Arten × 3 Packungen",
+      "notes": "Für Arzneimittel mit Betäubungsmitteln oder psychotropen Stoffen gelten eigene Regeln (siehe den Eintrag zu kontrollierten Arzneimitteln für Armenien)."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-am",
+    "sourceHash": "f2fa140a",
+    "fields": {
+      "summary": "Keine Lizenz nötig, aber nur in Armenien registrierte Arzneimittel, mit medizinischen Unterlagen ins Armenische übersetzt und notariell beglaubigt. Melden Sie sie an.",
+      "limitsDescription": "Arzneimittel mit Betäubungsmitteln und psychotropen Stoffen dürfen ohne Lizenz mitgebracht werden, wenn Sie medizinische Unterlagen vorlegen, die den medizinischen Bedarf mit Produktname und Menge bestätigen. Die Unterlagen oder beglaubigte armenische Übersetzungen mit notarieller Beglaubigung müssen dem Zoll übergeben werden. Nur in Armenien registrierte Arzneimittel mit Betäubungsmitteln oder psychotropen Stoffen dürfen eingeführt werden. Füllen Sie eine Zollanmeldung mit der verordneten Menge und der Angabe aus, dass sie rechtmäßig erworben wurden.",
+      "notes": "Wer Arzneimittel mit Betäubungsmitteln oder psychotropen Stoffen nicht anmeldet, riskiert nach armenischem Recht Verwaltungs- oder Strafsanktionen."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-am#details",
+    "sourceHash": "a23cd519",
+    "fields": {
+      "letterItems": [
+        "Medizinische Unterlagen, die bestätigen, dass Sie das Arzneimittel brauchen",
+        "Produktname und Menge",
+        "Die Originale oder beglaubigte Übersetzungen ins Armenische mit notarieller Beglaubigung"
+      ]
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "fresh-produce-am",
+    "sourceHash": "30c812b9",
+    "fields": {
+      "summary": "Bis zu 5 kg pflanzliche Erzeugnisse ohne Pflanzengesundheitszeugnis, dazu eine Melone oder ein Kürbis und drei Blumensträuße.",
+      "limitsDescription": "Bis zu 5 kg Erzeugnisse mit hohem pflanzengesundheitlichem Risiko ohne Pflanzengesundheitszeugnis (außer Saat- und Pflanzkartoffeln und Material für Anbau oder Forschung), dazu bis zu 1 Kürbis, eine Melone oder Wassermelone und bis zu 3 Blumensträuße mit insgesamt höchstens 15 Stück.",
+      "limitsQuantity": "5 kg"
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "meat-dairy-am",
+    "sourceHash": "6eb5216e",
+    "fields": {
+      "summary": "Bis zu 5 kg werkseitig verpackte tierische Erzeugnisse ohne Veterinärzeugnis.",
+      "limitsDescription": "Bis zu 5 kg vorverpackte tierische Erzeugnisse ohne Veterinärzeugnis oder Genehmigung des Ausfuhrlands, solange die Werksverpackung unversehrt ist.",
+      "limitsQuantity": "5 kg, werkseitig verpackt",
+      "notes": "Bis zu 2 Hunde oder Katzen dürfen ohne besondere Genehmigung reisen, wenn ihr internationaler Heimtierausweis eine klinische Untersuchung durch eine befugte Stelle innerhalb von 14 Tagen vor der Reise zeigt."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "prescription-medication-uz",
+    "sourceHash": "76391211",
+    "fields": {
+      "summary": "Ohne medizinisches Dokument: bis zu 10 verschiedene Arzneimittel, höchstens 5 Herstellerpackungen je Arzneimittel, für den eigenen Gebrauch.",
+      "limitsDescription": "Für den persönlichen Gebrauch während Ihres Aufenthalts dürfen Sie ohne ärztliches Dokument bis zu 10 verschiedene Arzneimittel mit höchstens je 5 Packungen sowie bis zu 5 Medizinprodukte mitbringen. Jede Packung darf höchstens enthalten: 100 Tabletten, Kapseln oder Ähnliches; 500 g Pulver zur Herstellung einer Lösung; 50 g homöopathische Globuli; 500 ml Infusions- oder Trinklösung; 10 Ampullen oder Fläschchen zur Injektion; 200 ml oder 200 g eines Arzneimittels zur äußeren Anwendung. Die Arzneimittel müssen in der Herstellerverpackung sein. Seit dem 8. Februar 2026 berücksichtigt der Zoll außerdem die Menge, wie oft Sie mit Arzneimitteln reisen, sowie Zweck und Dauer Ihrer Reise.",
+      "limitsQuantity": "10 Arzneimittel, je 5 Packungen",
+      "notes": "Über diesen Grenzen melden Sie die Arzneimittel beim Zoll zusammen mit einem Dokument einer medizinischen Einrichtung Ihres Wohnsitz- oder Aufenthaltslands an. Diese Bestimmung wurde 2025 neu gefasst und ist nur auf Usbekisch veröffentlicht; die russische Übersetzung auf LexUz ist unklar, prüfen Sie daher den amtlichen Text, wenn Sie mehr mitbringen müssen. Für den persönlichen Gebrauch eingeführte Arzneimittel dürfen nicht weitergegeben oder verkauft werden."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "prescription-medication-uz#details",
+    "sourceHash": "77e95a2c",
+    "fields": {
+      "letterItems": [
+        "Nur über den Grenzen nötig: ein Dokument einer medizinischen Einrichtung Ihres Wohnsitz- oder Aufenthaltslands, das das Arzneimittel nennt"
+      ]
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-uz",
+    "sourceHash": "4210aafb",
+    "fields": {
+      "summary": "Melden Sie Arzneimittel mit Betäubungsmitteln und psychotropen Stoffen an der Grenze an. Betäubungsmittel: bis zu 7 Tage Vorrat mit medizinischem Dokument. Psychotrope Stoffe: bis zu 5 Arzneimittel, je 2 Packungen.",
+      "limitsDescription": "Arzneimittel mit Betäubungsmitteln oder psychotropen Stoffen müssen Sie beim Grenzübertritt anmelden. Arzneimittel mit Betäubungsmitteln: bis zu 7 Tage Vorrat, mit einem Dokument einer medizinischen Einrichtung Ihres Wohnsitz- oder Aufenthaltslands mit Name, Darreichungsform und empfohlener Menge für die Behandlung; zeigen Sie es dem Zoll. Psychotrope Arzneimittel: bis zu 5 verschiedene Arzneimittel mit höchstens je 2 Packungen im Rahmen einer Behandlung, ohne medizinisches Dokument. Welche Stoffe als Betäubungsmittel oder psychotrop gelten, legen die mit dem Kabinettsbeschluss Nr. 330 vom 12. November 2015 genehmigten Listen fest.",
+      "limitsQuantity": "Betäubungsmittel 7 Tage; psychotrope Stoffe 5 × 2 Packungen",
+      "notes": "Der Zoll gleicht die Unterlagen mit dem ab, was Sie mitführen und anmelden. Jede Menge über dem, was das medizinische Dokument und Ihre Anmeldung ausweisen, wird beschlagnahmt und vernichtet."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-uz#details",
+    "sourceHash": "89fcec0f",
+    "fields": {
+      "letterItems": [
+        "Ausgestellt von einer medizinischen Einrichtung Ihres Wohnsitz- oder Aufenthaltslands (für Arzneimittel mit Betäubungsmitteln nötig)",
+        "Name des Arzneimittels",
+        "Darreichungsform (Tabletten, Kapseln, Lösung …)",
+        "Die empfohlene Menge für die Behandlung"
+      ]
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cannabis-am",
+    "sourceHash": "2390fd7f",
+    "fields": {
+      "summary": "Verboten: Marihuana, CBD- und THC-Produkte zu gebrauchen, zu besitzen oder damit zu handeln ist in Armenien illegal.",
+      "limitsDescription": "Gebrauch, Besitz und Handel mit Marihuana, Cannabidiol (CBD) oder Tetrahydrocannabinol (THC) sind in Armenien illegal.",
+      "notes": "Keine gelesene armenische Regierungsseite behandelt Cannabis für Reisende; dieser Eintrag stützt sich auf die Reisehinweise der britischen Regierung."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "drones-uz",
+    "sourceHash": "781396e8",
+    "fields": {
+      "summary": "Weitgehend verboten: Sie brauchen vor der Ankunft eine Einfuhrlizenz und eine Fluggenehmigung, sonst drohen Geldstrafe oder Haft.",
+      "limitsDescription": "Einfuhr und Einsatz von Drohnen sind in Usbekistan weitgehend verboten, mit wenigen Ausnahmen. Vor der Ankunft brauchen Sie eine Lizenz für die Einfuhr und eine Genehmigung für den Einsatz.",
+      "notes": "Wer eine Drohne ohne Genehmigung einführt oder einsetzt, riskiert eine Geldstrafe oder Haft. Die Hinweise nennen die zuständige Behörde nicht, und die Website des usbekischen Zolls (customs.uz) ließ sich nicht lesen; fragen Sie vor einer Reise mit Drohne bei einer usbekischen Botschaft nach. Die Reise- und Sicherheitshinweise des Auswärtigen Amts sind strenger: Danach ist die Einfuhr von Drohnen jeder Art verboten und ihr Einsatz grundsätzlich nicht erlaubt."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cash-uz",
+    "sourceHash": "f6942de6",
+    "fields": {
+      "summary": "Melden Sie größere Geldbeträge bei der Ankunft an (Schwelle 10 000 US-Dollar), auf 2 gestempelten Exemplaren. Sie dürfen nicht mit mehr Fremdwährung ausreisen, als Sie mitgebracht haben.",
+      "limitsDescription": "Füllen Sie bei der Einreise eine Zollanmeldung aus, wenn Sie größere Geldbeträge (die Schwelle liegt bei 10 000 US-Dollar) oder mehr als 65 Gramm Edelmetalle und Edelsteine mitbringen. Füllen Sie 2 Exemplare aus und achten Sie darauf, dass die Zollbeamten beide unterschreiben und stempeln. Sie dürfen Usbekistan nicht mit mehr Fremdwährung verlassen, als Sie mitgebracht haben.",
+      "limitsQuantity": "10 000 US-Dollar",
+      "notes": "Wenn Sie Geld oder Wertgegenstände mitführen, die Sie bei der Ankunft nicht angemeldet haben, können die Beamten sie beschlagnahmen. Die Website des usbekischen Zolls (customs.uz) ließ sich nicht lesen; dieser Eintrag stützt sich auf die Reisehinweise der britischen Regierung, die die Schwelle mit „10,000 US dollars“ angeben."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "e-cigarettes-uz",
+    "sourceHash": "e223f00a",
+    "fields": {
+      "summary": "Verboten: E-Zigaretten und Vapes dürfen Sie nicht nach Usbekistan mitbringen (seit 1. März 2026).",
+      "limitsDescription": "Einfuhr, Verkauf und Herstellung von E-Zigaretten (Vapes) sind in Usbekistan seit dem 1. März 2026 verboten.",
+      "notes": "Die Seiten des usbekischen Zolls waren für diese Website nicht lesbar (customs.uz ist eine JavaScript-Anwendung); dieser Eintrag stützt sich auf die Reise- und Sicherheitshinweise des Auswärtigen Amts."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "alcohol-uz",
+    "sourceHash": "d8d1a9aa",
+    "fields": {
+      "summary": "Zollfrei: insgesamt 2 Liter Alkohol, Bier eingeschlossen, für Reisende ab 21 Jahren. Mehr kostet die doppelte übliche Zollzahlung.",
+      "limitsDescription": "Zollfrei: insgesamt 2 Liter Alkohol, Bier eingeschlossen, wenn Sie 21 Jahre oder älter sind.",
+      "limitsQuantity": "2 Liter insgesamt",
+      "notes": "Zollfreie Grenzen für Waren zum persönlichen, nicht gewerblichen Gebrauch seit dem 1. Mai 2025: 1000 USD auf dem Luftweg, 500 USD per Bahn oder Fluss, 300 USD an Straßen- oder Fußgängerübergängen. Über der Menge zahlen Waren für den nicht gewerblichen Gebrauch die einheitliche Zollzahlung zum doppelten Satz. Personen unter 21 Jahren dürfen weder Alkohol noch Tabak mitbringen, und beides darf nicht per internationaler Post oder Kurier geschickt werden. Diese Grenzen ersetzten den Präsidialbeschluss PP-3512 von 2018 (ebenfalls 2 Liter), der im Mai 2025 aufgehoben wurde."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "tobacco-uz",
+    "sourceHash": "d07119d6",
+    "fields": {
+      "summary": "Zollfrei, eines davon: 200 Zigaretten, 5 Zigarren oder 100 g Tabak, für Reisende ab 21 Jahren.",
+      "limitsDescription": "Zollfrei, eines davon: 200 Zigaretten oder 5 Zigarren oder 100 g Tabak, wenn Sie 21 Jahre oder älter sind.",
+      "limitsQuantity": "200 Zigaretten oder 5 Zigarren oder 100 g Tabak",
+      "notes": "Zollfreie Grenzen für Waren zum persönlichen, nicht gewerblichen Gebrauch seit dem 1. Mai 2025: 1000 USD auf dem Luftweg, 500 USD per Bahn oder Fluss, 300 USD an Straßen- oder Fußgängerübergängen. Über der Menge zahlen Waren für den nicht gewerblichen Gebrauch die einheitliche Zollzahlung zum doppelten Satz. Personen unter 21 Jahren dürfen weder Alkohol noch Tabak mitbringen, und beides darf nicht per internationaler Post oder Kurier geschickt werden. Diese Grenzen ersetzten den Präsidialbeschluss PP-3512 von 2018 (10 Schachteln), der im Mai 2025 aufgehoben wurde."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "e-cigarettes-kg",
+    "sourceHash": "a129d08d",
+    "fields": {
+      "summary": "Verboten: E-Zigaretten, Vapes und Liquids werden an der Grenze beschlagnahmt, und es drohen Geldstrafe oder Festnahme.",
+      "limitsDescription": "E-Zigaretten, Vape-Geräte oder Liquids nach Kirgisistan zu bringen oder dort zu kaufen oder zu verkaufen ist verboten. Der Zoll beschlagnahmt sie, und es drohen Geldstrafe oder Festnahme.",
+      "notes": "Keine Seite des kirgisischen Zolls war für diese Website lesbar (die Zollwebsites der Region sind JavaScript-Anwendungen); dieser Eintrag stützt sich auf die Reisehinweise der britischen Regierung."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "medication-kg",
+    "sourceHash": "f955cc37",
+    "fields": {
+      "summary": "Bringen Sie Ihr Rezept mit und melden Sie Ihre Arzneimittel auf dem Zollformular an; nicht angemeldete Arzneimittel können zu zivil- oder strafrechtlichen Verfahren führen.",
+      "limitsDescription": "Führen Sie für verschreibungspflichtige Arzneimittel ein ärztliches Rezept mit und melden Sie sie auf Ihrer Zollanmeldung an. Manche Arzneimittel, die anderswo ohne Rezept verkauft werden, brauchen in Kirgisistan eines, und manche machen bei der Einreise Probleme.",
+      "notes": "Der Besitz von Arzneimitteln, die Sie bei der Ankunft nicht angemeldet haben, kann zu zivil- oder strafrechtlichen Verfahren führen. Die Hinweise empfehlen, bei einer kirgisischen Botschaft nachzufragen, ob Ihre Arzneimittel beschränkt sind. Keine Seite des kirgisischen Zolls oder Gesundheitswesens war für diese Website lesbar; dieser Eintrag stützt sich auf die Reisehinweise der britischen Regierung."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cash-kg",
+    "sourceHash": "b40be33d",
+    "fields": {
+      "summary": "Melden Sie Fremdwährung im Wert von 10 000 USD oder mehr je Person bei der Ein- oder Ausreise in Kirgisistan an.",
+      "limitsDescription": "Für die Ein- oder Ausfuhr von Fremdwährung gibt es keine Obergrenze, aber Beträge im Wert von 10 000 USD oder mehr je Person müssen angemeldet werden.",
+      "limitsQuantity": "10 000 USD oder mehr",
+      "notes": "Für diese Website wurde keine Seite des kirgisischen Zolls gelesen, die das sagt; dieser Eintrag stützt sich auf die Reise- und Sicherheitshinweise des Auswärtigen Amts."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "tobacco-kg",
+    "sourceHash": "cbc45b08",
+    "fields": {
+      "summary": "Zollfrei, eines davon: 200 Zigaretten, 50 Zigarren, 200 Tabaksticks zum Erhitzen oder 250 g Tabak.",
+      "limitsDescription": "Zollfrei, eines davon: 200 Zigaretten oder 50 Zigarren oder Zigarillos oder 200 Tabaksticks zum Erhitzen oder 250 g Tabak oder eine Mischung bis insgesamt 250 g.",
+      "limitsQuantity": "200 Zigaretten oder 50 Zigarren oder 200 Sticks oder 250 g",
+      "notes": "Kirgisistan wendet die gemeinsamen Regeln der Eurasischen Wirtschaftsunion an (Beschluss Nr. 107 des Rates der Eurasischen Wirtschaftskommission); dieselbe Tabakmenge gilt bei Ankunft per Flugzeug oder auf dem Landweg. Die Reise- und Sicherheitshinweise des Auswärtigen Amts hatten 200 g Tabak genannt; der kirgisische Zoll und der EAWU-Beschluss sagen 250 g, und diese Angabe wird verwendet."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "alcohol-kg",
+    "sourceHash": "504655d8",
+    "fields": {
+      "summary": "Bis zu 3 Liter Alkohol zollfrei; zwischen 3 und 5 Litern zahlen Sie 10 EUR je zusätzlichem Liter.",
+      "limitsDescription": "Bis zu 3 Liter Getränke mit über 0,5 % Alkohol zollfrei im Gepäck (Bier, Wein und Spirituosen zählen alle mit, insgesamt 3 Liter). Zwischen 3 und 5 Litern zahlen Sie 10 EUR Zoll je Liter über 3.",
+      "limitsQuantity": "3 Liter zollfrei; Zoll von 3 bis 5 Liter",
+      "notes": "Kirgisistan wendet die gemeinsamen Regeln der Eurasischen Wirtschaftsunion für Waren zum persönlichen Gebrauch an (Beschluss Nr. 107 des Rates der Eurasischen Wirtschaftskommission). Die 3 Liter zählen nicht zur allgemeinen Wertgrenze. Die Reise- und Sicherheitshinweise des Auswärtigen Amts hatten 1,5 Liter Alkohol und 2 Liter Wein genannt; der kirgisische Zoll und der EAWU-Beschluss sagen insgesamt 3 Liter, und diese Angabe wird verwendet."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "drones-kg",
+    "sourceHash": "d561f2bf",
+    "fields": {
+      "summary": "Melden Sie Ihre Drohne bei der Einreise nach Kirgisistan beim Zoll an.",
+      "limitsDescription": "Melden Sie Drohnen (und wertvolle Gegenstände) bei der Einreise nach Kirgisistan an.",
+      "notes": "Die Hinweise der britischen Regierung ergänzen, dass der Einsatz von Drohnen in der Nähe militärischer oder sicherheitsrelevanter Anlagen, auch an Grenzübergängen, verboten ist. Für diese Website wurde keine Seite des kirgisischen Zolls gelesen, die das sagt; dieser Eintrag stützt sich auf die Reise- und Sicherheitshinweise des Auswärtigen Amts."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "meat-dairy-kg",
+    "sourceHash": "9167d2ec",
+    "fields": {
+      "summary": "Unverpackte Lebensmittel, auch Fleisch und Milchprodukte, dürfen nicht mitgebracht werden.",
+      "limitsDescription": "Unverpackte Lebensmittel dürfen nicht nach Kirgisistan gebracht werden.",
+      "notes": "Für diese Website wurde keine Seite des Zolls oder der Biosicherheit Kirgisistans gelesen, die das sagt; dieser Eintrag stützt sich auf die Reise- und Sicherheitshinweise des Auswärtigen Amts."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "fresh-produce-kg",
+    "sourceHash": "df1ab59c",
+    "fields": {
+      "summary": "Unverpackte Lebensmittel, auch frisches Obst und Gemüse, dürfen nicht mitgebracht werden.",
+      "limitsDescription": "Unverpackte Lebensmittel dürfen nicht nach Kirgisistan gebracht werden.",
+      "notes": "Für diese Website wurde keine Seite des Zolls oder der Biosicherheit Kirgisistans gelesen, die das sagt; dieser Eintrag stützt sich auf die Reise- und Sicherheitshinweise des Auswärtigen Amts."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cannabis-mn",
+    "sourceHash": "2545d2ef",
+    "fields": {
+      "summary": "Verboten: Besitz und Konsum von Cannabis sind in der Mongolei illegal, und auf Drogenhandel kann lebenslange Haft stehen.",
+      "limitsDescription": "Besitz und Konsum jeder Art von Drogen, auch Cannabis, sind in der Mongolei illegal. Auf Drogenhandel kann lebenslange Haft stehen.",
+      "notes": "Für diese Website wurde keine Seite des mongolischen Zolls oder Drogenrechts gelesen; dieser Eintrag stützt sich auf die Reisehinweise der britischen Regierung. Zu CBD-Produkten sagen sie nichts Bestimmtes, daher gilt dieser Eintrag nicht für CBD."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cash-mn",
+    "sourceHash": "25ccecb0",
+    "fields": {
+      "summary": "Melden Sie größere Bargeldbeträge bei der Ankunft an; Deutschland und Korea nennen über 15 Mio. MNT, das Vereinigte Königreich ab 10 000 USD.",
+      "limitsDescription": "Melden Sie Bargeld bei der Ankunft an: Nach den Hinweisen der deutschen und der koreanischen Regierung über 15 Mio. MNT (oder dem Gegenwert in Fremdwährung), nach denen der britischen Regierung ab 10 000 US-Dollar (Bargeld oder Reiseschecks).",
+      "limitsQuantity": "Deutsche und koreanische Hinweise: über 15 Mio. MNT; britische Hinweise: 10 000 USD oder mehr",
+      "notes": "Sie erhalten eine bestätigte Anmeldung, die zeigt, dass Sie das Geld eingeführt haben. Ohne sie kann das Geld bei der Ausreise beschlagnahmt werden. Für diese Website wurde keine Seite des mongolischen Zolls gelesen; die Beträge der beiden ausländischen Regierungen unterscheiden sich, daher werden beide gezeigt."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "medication-mn",
+    "sourceHash": "b52fc713",
+    "fields": {
+      "summary": "Melden Sie Arzneimittel mit Betäubungsmitteln und psychotropen Stoffen bei der Ankunft auf dem Zollformular an.",
+      "limitsDescription": "Melden Sie Betäubungsmittel und psychotrope Stoffe bei der Einreise in die Mongolei auf der Zollanmeldung an.",
+      "notes": "Für diese Website wurde keine Seite des mongolischen Zolls oder Gesundheitswesens gelesen, die das sagt; dieser Eintrag stützt sich auf die Reisehinweise der koreanischen Regierung. Er sagt nicht, ob ein Rezept oder eine Genehmigung nötig ist."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "weapons-mn",
+    "sourceHash": "eeb9de31",
+    "fields": {
+      "summary": "Melden Sie Schusswaffen und Munition bei der Ankunft auf dem Zollformular an.",
+      "limitsDescription": "Melden Sie Schusswaffen, Munition und ähnliche Ausrüstung bei der Einreise in die Mongolei auf der Zollanmeldung an.",
+      "notes": "Für diese Website wurde keine Seite des mongolischen Zolls oder Gesundheitswesens gelesen, die das sagt; dieser Eintrag stützt sich auf die Reisehinweise der koreanischen Regierung."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
   }
 ]
