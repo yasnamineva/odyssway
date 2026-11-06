@@ -7440,5 +7440,431 @@
     },
     "translated_at": "2026-11-06",
     "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "alcohol-in",
+    "sourceHash": "2cd1e95d",
+    "fields": {
+      "summary": "Zollfrei: bis zu 2 Liter Spirituosen oder Wein, innerhalb der allgemeinen Freigrenze. Mehr wird hoch besteuert.",
+      "limitsDescription": "Bis zu 2 Liter Spirituosen oder Wein sind in der allgemeinen zollfreien Freigrenze für Reisende enthalten. Mengen über 2 Liter werden mit 150 % (Whisky) bzw. 110 % (Bier) oder dem geltenden Tarifsatz verzollt.",
+      "limitsQuantity": "2 Liter",
+      "notes": "Die Alkoholmenge von 2 Litern ist Teil derselben allgemeinen Freigrenze wie die Tabakmenge und die Wertgrenze für Waren (50 000 Rs. für die meisten Touristen), keine eigene Freimenge."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "tobacco-in",
+    "sourceHash": "6ddbee46",
+    "fields": {
+      "summary": "Zollfrei, eines davon: 100 Zigaretten, 25 Zigarren oder 125 g Tabak, innerhalb der allgemeinen Freigrenze. Zusätzliche Zigaretten werden mit 256 % verzollt.",
+      "limitsDescription": "Eines davon: 100 Zigaretten oder 25 Zigarren oder 125 g Tabak, in der allgemeinen zollfreien Freigrenze für Reisende enthalten. Zigaretten darüber werden mit 256 % verzollt.",
+      "limitsQuantity": "100 Zigaretten (oder Gleichwertiges)"
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cash-in",
+    "sourceHash": "92e6faeb",
+    "fields": {
+      "summary": "Keine Obergrenze, aber Fremdwährung in bar über 5000 USD oder Devisen insgesamt über 10 000 USD anmelden. Ausländische Besucher dürfen keine Rupien mitbringen.",
+      "limitsDescription": "Devisen dürfen unbegrenzt nach Indien gebracht werden, aber beim Zoll muss ein Currency Declaration Form (CDF) abgegeben werden, wenn Banknoten in Fremdwährung allein 5000 USD übersteigen oder der Gesamtwert der Devisen (Banknoten, Reiseschecks) 10 000 USD übersteigt. Außerdem dürfen ausländische Besucher keine indischen Rupien-Banknoten einführen; nur aus dem Ausland zurückkehrende Einwohner Indiens dürfen bis 25 000 Rs. mitbringen.",
+      "limitsQuantity": "5000 USD (Bargeld) / 10 000 USD (Devisen insgesamt)",
+      "notes": "Dieselben Schwellen stehen sowohl in der Master Direction on Import der indischen Zentralbank als auch in der Passagier-FAQ der Zollzone Chennai der Zollbehörde CBIC."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "medication-in",
+    "sourceHash": "5291df9a",
+    "fields": {
+      "summary": "Arzneimittel mit Betäubungsmitteln oder psychotropen Stoffen: Beantragen Sie lange vor der Reise eine Genehmigung des indischen Narcotics Commissioner. Die Regel für gewöhnliche Arzneimittel haben wir nicht gefunden.",
+      "limitsDescription": "Gewöhnliche verschreibungspflichtige und frei verkäufliche Arzneimittel in Mengen für den persönlichen Gebrauch behandelt keine für diese Website gelesene Primärquelle der CBIC zu den Gepäckregeln gesondert. Arzneimittel, die selbst Betäubungsmittel oder psychotrope Stoffe nach dem NDPS Act sind (z. B. viele opioidhaltige Schmerzmittel, manche ADHS-Stimulanzien, bestimmte Beruhigungsmittel), sind ein eigener, strengerer Fall: Nach dem indischen Finanzministerium (Department of Revenue) können internationale Reisende lange vor der Abreise beim Narcotics Commissioner die Genehmigung zur Einfuhr beantragen, mit dem Rezept und anderen einschlägigen Unterlagen, und die Arzneimittel nach Erteilung der Genehmigung mitbringen.",
+      "notes": "Eine Grenze in Tagesvorräten oder Stückzahl für Arzneimittel nach dem NDPS Act wurde auf keiner indischen Regierungsquelle gefunden (anders als in den eigenen Listen Japans oder Thailands); gehen Sie nicht davon aus, dass eine bestimmte Zahl von Tagen vorab erlaubt ist. Bestätigt ist die Pflicht zur vorherigen Genehmigung selbst."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "medication-in#details",
+    "sourceHash": "d3a5e564",
+    "fields": {
+      "procedureTitle": "Vor der Reise die Genehmigung des Narcotics Commissioner (Behörde für Betäubungsmittel) einholen",
+      "procedureLeadTime": "Lange bevor Sie Ihr Land verlassen",
+      "procedureDocuments": [
+        "Ihr Rezept.",
+        "Alle anderen einschlägigen Unterlagen."
+      ],
+      "procedureSteps": [
+        "Beantragen Sie lange vor der Abreise beim indischen Narcotics Commissioner die Genehmigung zur Einfuhr des Arzneimittels mit Betäubungsmitteln oder psychotropen Stoffen.",
+        "Legen Sie dem Antrag Ihr Rezept und alle anderen einschlägigen Unterlagen bei.",
+        "Bringen Sie das Arzneimittel mit, sobald die Genehmigung erteilt ist."
+      ]
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cannabis-in",
+    "sourceHash": "6778ed8b",
+    "fields": {
+      "summary": "Verboten: Cannabisharz (Charas) und Blütenstände (Ganja) sind in Indien verbotene Betäubungsmittel; auf die Einfuhr stehen harte Strafen.",
+      "notes": "Der Narcotic Drugs and Psychotropic Substances Act von 1985 bestimmt „cannabis (hemp)“ so, dass Charas (Harz, Haschisch, Haschischöl) und Ganja (die blühenden oder fruchttragenden Spitzen) erfasst sind; beide sind verbotene Betäubungsmittel, und ihre Einfuhr nach Indien wird hart bestraft. Die gesetzliche Begriffsbestimmung von Cannabis nimmt Samen und Blätter aus, wenn sie nicht mit den Blüten- oder Fruchtständen verbunden sind (daher wird Bhang, eine Zubereitung aus Blättern, im indischen Inlandsrecht anders behandelt); diese Ausnahme betrifft aber Anbau und Verkauf im Inland, nicht eine bestätigte Zollfreimenge, und keine Primärquelle von CBIC oder zum NDPS Act beschreibt eine Freimenge für die private Einfuhr von CBD-Öl oder Hanfprodukten (mit oder ohne ausländisches Rezept). Ob CBD-Öl oder Hanfprodukte mitgebracht werden dürfen, beantwortet keine gelesene amtliche Seite; fragen Sie vor der Reise beim indischen Zoll (CBIC) nach."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "e-cigarettes-in",
+    "sourceHash": "082b0261",
+    "fields": {
+      "summary": "Verboten: Nach Indiens Gesetz von 2019 ist die Einfuhr von E-Zigaretten eine Straftat, ohne Ausnahme für den persönlichen Gebrauch.",
+      "limitsDescription": "Der Prohibition of Electronic Cigarettes Act von 2019 macht es für jede Person zur Straftat, in Indien E-Zigaretten (oder Teile davon) zu produzieren, herzustellen, einzuführen, auszuführen, zu transportieren, zu verkaufen, zu vertreiben oder zu bewerben; eine Ausnahme für den persönlichen Gebrauch oder das persönliche Gepäck enthält der Gesetzestext nicht.",
+      "notes": "Strafe nach Section 7 beim ersten Verstoß: bis zu 1 Jahr Haft und/oder eine Geldstrafe bis Rs. 1,00,000 (ein Lakh, also 100 000 Rs.); bei weiteren Verstößen bis zu 3 Jahre Haft und eine Geldstrafe bis Rs. 5,00,000 (fünf Lakh). Beachten Sie: Ein Gerät, das in vielen anderen Ländern legal ist und oft mitgeführt wird, nach Indien mitzubringen ist eine Straftat, nicht nur ein Fall für die Beschlagnahme."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "drones-in",
+    "sourceHash": "21f98836",
+    "fields": {
+      "summary": "Verboten: Indien verbietet die Einfuhr von Drohnen, außer durch Behörden, Forschungseinrichtungen und Hersteller mit einer Genehmigung der DGFT.",
+      "limitsDescription": "Die Einfuhr von Drohnen (unbemannten Luftfahrzeugsystemen) in fertig montierter (CBU), teilzerlegter (SKD) oder vollständig zerlegter (CKD) Form ist nach Indiens Einfuhrpolitik ITC (HS) 2022 als „Prohibited“ (verboten) eingestuft (Kapitel 88, Policy Condition No. 03, geändert durch die DGFT-Notification No. 54/2015-20 vom 9. Februar 2022). Die einzigen genannten Ausnahmen sind: (i) Behörden, staatlich anerkannte Bildungs- und Forschungseinrichtungen und Drohnenhersteller, die für Forschung und Entwicklung einführen, jeweils mit einer Einfuhrgenehmigung der Außenhandelsbehörde DGFT; und (ii) Drohnen für Verteidigungs- und Sicherheitszwecke, ebenfalls mit DGFT-Genehmigung. Die Einfuhr von Drohnenbauteilen (nicht montierten Geräten) ist als „Free“ (frei) eingestuft.",
+      "notes": "Eine Ausnahme für Touristen oder private bzw. Freizeitnutzung nennt diese Mitteilung nirgends; die private Kameradrohne eines ausländischen Besuchers fällt eindeutig unter die verbotene Kategorie CBU, ohne realistischen Weg zu einer DGFT-Einfuhrgenehmigung. Viele Reisende nehmen an, eine private Drohne könne ins Gepäck; Indiens Regel ist strenger als in den meisten Ländern, die wir abdecken."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "weapons-in",
+    "sourceHash": "ab60ccd8",
+    "fields": {
+      "summary": "Schusswaffen sind verboten, ebenso Munition über 50 Schuss. Luftdruckwaffen sind nur für registrierte Sportschützen erlaubt.",
+      "limitsDescription": "Die Einfuhr von Schusswaffen ist verboten. Auch die Einfuhr von Patronen bzw. Munition über 50 Schuss ist verboten. Eine enge Ausnahme gilt für Luftgewehre und Luftpistolen im Kaliber 0.177, die nur Schützen, die bei einem Schützenverein oder einer Schützenvereinigung auf Bezirks-, Landes- oder nationaler Ebene registriert sind, ohne Beschränkung einführen dürfen.",
+      "notes": "Die Ausnahme für Luftdruckwaffen setzt den Status als registrierter Schütze bei einer anerkannten indischen Schützenvereinigung voraus."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "meat-dairy-in",
+    "sourceHash": "b708db9f",
+    "fields": {
+      "summary": "Unklar: Der indische Zoll führt Fleisch-, Fisch-, Milch- und Geflügelprodukte als „verboten/beschränkt“, ohne Einzelheiten, und eine Freimenge ist nicht bestätigt.",
+      "notes": "Die eigene Passagier-FAQ der CBIC führt „Meat and meat products / fish / Dairy products / poultry products“ (Fleisch und Fleischprodukte, Fisch, Milchprodukte, Geflügelprodukte) zusammen mit mehreren anderen Kategorien als „prohibited/restricted“ (verboten/beschränkt), ohne für jede Ware zu unterscheiden, was ganz verboten und was mit Genehmigung oder Gesundheitszeugnis einführbar ist. Eine eigene Seite der Lebensmittelbehörde FSSAI oder des Department of Animal Husbandry für Reisende wurde nicht gefunden; eine Freimenge für den eigenen Verbrauch ist daher nicht bestätigt. Fragen Sie vor dem Mitbringen beim indischen Zoll nach."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "fresh-produce-in",
+    "sourceHash": "e6ce6af1",
+    "fields": {
+      "summary": "Unklar: Der indische Zoll führt Samen, Pflanzen, Obst und Blumen als „verboten/beschränkt“, ohne zu sagen, was verboten ist und was eine Genehmigung braucht.",
+      "notes": "Die eigene Passagier-FAQ der CBIC führt „Seeds / Plants / Fruits / Flowers and other planting material“ (Samen, Pflanzen, Obst, Blumen und anderes Pflanzmaterial) zusammen mit mehreren anderen Kategorien als „prohibited/restricted“ (verboten/beschränkt), ohne für jede Ware zu unterscheiden, was ganz verboten und was mit Pflanzengesundheitsgenehmigung einführbar ist. Eine eigene Seite der Pflanzenquarantäne (Directorate of Plant Protection, Quarantine & Storage) für Reisende, die das klärt, wurde nicht gefunden."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "satellite-phone-in",
+    "sourceHash": "d7fc5667",
+    "fields": {
+      "summary": "Satellitentelefone brauchen eine Lizenz des indischen Telekommunikationsministeriums, bevor Sie eines mitbringen oder benutzen; ohne sie drohen Strafen.",
+      "limitsDescription": "Satellitentelefone jeder Art dürfen nur mit einer Lizenz des Department of Telecommunications nach Indien gebracht und dort benutzt werden. Unerlaubter Besitz oder Gebrauch wird nach Sections 20 und 21 des Indian Telegraph Act von 1885 bestraft.",
+      "notes": "Eine bekannte Falle für Reisende: Satellitentelefone, die in den meisten Ländern frei mitgeführt werden dürfen (z. B. für Trekking oder auf See), brauchen in Indien eine vorherige staatliche Lizenz; gewöhnliche Touristen haben keinen realistischen Weg dorthin, packen Sie für eine Indienreise also kein Satellitentelefon ein."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "alcohol-jo",
+    "sourceHash": "5a970f72",
+    "fields": {
+      "summary": "Zollfrei: 1 Liter Alkohol. Mehr ist zollpflichtig.",
+      "limitsDescription": "Bis zu 1 Liter Alkohol zollfrei je Reisendem; mehr als 1 Liter ist zollpflichtig.",
+      "limitsQuantity": "1 l",
+      "notes": "Auswärtiges Amt (Stand 09.10.2026): „Bis zu 1 l Alkohol... dürfen zollfrei mitgeführt werden.“ Abgeglichen mit dem japanischen Außenministerium (aktualisiert am 22. April 2026): Wer mehr als 1 Liter Alkohol nach Jordanien bringt, zahlt Zoll; wer auf dem Landweg mit mehr als 1 Liter einreist und ihn später per Flugzeug wieder ausführen will, hinterlegt an der Grenze eine Barkaution (nur in JOD), die erstattet wird, wenn der Zoll den Alkohol bei der Ausreise prüft. Die eigene Website des jordanischen Zolls (customs.gov.jo) war nicht erreichbar, daher wurde der maßgebliche Zolltext nicht gelesen. Alkoholkonsum in der Öffentlichkeit ist außerhalb mancher Hotels und Restaurants verboten (France Diplomatie)."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "tobacco-jo",
+    "sourceHash": "b3e0d4be",
+    "fields": {
+      "summary": "Zollfrei: 200 Zigaretten und 200 g Tabak.",
+      "limitsDescription": "200 Zigaretten und 200 g Tabak zollfrei je Reisendem.",
+      "limitsQuantity": "200 Zigaretten + 200 g Tabak",
+      "notes": "Auswärtiges Amt (Stand 09.10.2026): „außerdem 200 Zigaretten und 200 g Tabak dürfen zollfrei mitgeführt werden.“ Die 200 Zigaretten stehen auch in Jordaniens Luftfahrthandbuch AIP GEN 1.3 (Civil Aviation Regulatory Commission, vom 01. November 2006, also alt). Die eigene Website des jordanischen Zolls war nicht erreichbar. Eine eigene Freimenge für Zigarren wurde nicht bestätigt."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "weapons-jo",
+    "sourceHash": "48b02718",
+    "fields": {
+      "summary": "Verboten: Waffen, Drohnen, Funkgeräte, Rauschgift und Pornografie dürfen nicht nach Jordanien eingeführt werden.",
+      "limitsDescription": "Die Einfuhr von Waffen ist verboten.",
+      "notes": "Auswärtiges Amt: „Die Einfuhr von Waffen, Drohnen, Funkgeräten, Rauschgift und pornografischen Schriften ist verboten.“ Japanisches Außenministerium (22. April 2026): Betäubungsmittel, Schusswaffen und Pornografie dürfen nicht mitgebracht werden. Messer behandelt keine der beiden Quellen eigens; die Einstufung gilt für Waffen und Schusswaffen allgemein."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "drones-jo",
+    "sourceHash": "cbe5de85",
+    "fields": {
+      "summary": "Nur mit Genehmigung der jordanischen Zivilluftfahrtbehörde, 10 Werktage vorher beantragt; sonst wird die Drohne am Flughafen einbehalten.",
+      "limitsDescription": "Nur mit vorheriger Genehmigung der jordanischen Civil Aviation Regulatory Commission; ohne Genehmigung wird die Drohne an der Grenze einbehalten bzw. beschlagnahmt.",
+      "notes": "Britisches Außenministerium (FCDO): „You must apply for approval to take a drone into Jordan at least 10 working days before you travel. If you have not received a permit before you arrive, the authorities will hold your drone at the airport. You can collect it when you leave Jordan.“ (Die Genehmigung muss mindestens 10 Werktage vor der Reise beantragt werden; ohne Genehmigung bei der Ankunft wird die Drohne am Flughafen einbehalten und kann bei der Ausreise abgeholt werden.) Kanada: „You must obtain authorization before importing or operating a drone“ (vor Einfuhr oder Betrieb einer Drohne ist eine Genehmigung nötig); Verstöße können Haft, Geldstrafen oder Beschlagnahme bedeuten. WIDERSPRUCH: France Diplomatie sagt, Drohnen „sont interdits à l'arrivée en Jordanie et sont systématiquement confisqués“ (sind bei der Einreise nach Jordanien verboten und werden grundsätzlich beschlagnahmt), und das Auswärtige Amt führt Drohnen unter den verbotenen Einfuhren. Die CARC veröffentlicht ein Antragsformular „Drones Operations Approval Application Form“ (https://carc.gov.jo/en/drones). Gehen Sie davon aus, dass eine Drohne nicht eingeführt werden kann, wenn Sie nicht vor der Reise eine CARC-Genehmigung haben."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "drones-jo#details",
+    "sourceHash": "4e69cfd0",
+    "fields": {
+      "procedureTitle": "Drohnengenehmigung der jordanischen Civil Aviation Regulatory Commission einholen",
+      "procedureLeadTime": "Beantragen Sie sie mindestens 10 Werktage vor der Reise.",
+      "procedureSteps": [
+        "Füllen Sie das Formular „Drones Operations Approval Application Form“ der CARC aus, das auf ihrer Drohnenseite veröffentlicht ist.",
+        "Stellen Sie den Antrag mindestens 10 Werktage vor der Reise.",
+        "Reisen Sie mit der Genehmigung. Ohne sie behalten die Behörden Ihre Drohne am Flughafen ein, und Sie holen sie bei der Ausreise aus Jordanien ab."
+      ],
+      "procedureAtTheBorder": "Wenn Sie vor der Ankunft keine Genehmigung erhalten haben, wird Ihre Drohne bis zu Ihrer Ausreise am Flughafen einbehalten."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cannabis-jo",
+    "sourceHash": "d5999606",
+    "fields": {
+      "summary": "Verboten: Betäubungsmittel, auch Cannabis, dürfen nicht nach Jordanien eingeführt werden; Drogendelikte werden schon bei kleinsten Mengen hart bestraft.",
+      "limitsDescription": "Betäubungsmittel, auch Cannabis, dürfen nicht eingeführt werden; Drogendelikte werden schon bei kleinsten Mengen hart bestraft.",
+      "notes": "Auswärtiges Amt: Die Einfuhr von „Rauschgift“ ist verboten, und Drogendelikte werden „schon bei geringsten Mengen und bei jeder Art von Drogen mit langjährigen Haftstrafen (bis lebenslänglich)“ bestraft. Japanisches Außenministerium: Betäubungsmittel dürfen nicht mitgebracht werden, und Einfuhr, Besitz und Gebrauch werden hart bestraft. Frankreich: Besitz, Gebrauch und Handel mit Drogen werden hart bestraft, mit Haft und dauerhaftem Einreiseverbot. CBD-Produkte behandelt keine gelesene Quelle eigens; gehen Sie nicht davon aus, dass CBD erlaubt ist."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "pornography-jo",
+    "sourceHash": "4e6f65aa",
+    "fields": {
+      "summary": "Verboten: pornografisches Material, wozu auch Zeitschriften mit halbnackten Fotos gehören können.",
+      "limitsDescription": "Pornografisches Material darf nicht eingeführt werden; Japan weist darauf hin, dass selbst Wochenzeitschriften mit halbnackten Fotos zurückgewiesen werden können.",
+      "notes": "Japanisches Außenministerium (22. April 2026): Pornografie darf nicht mitgebracht werden, auch keine Zeitschriften mit halbnackten Fotos. Auch das Auswärtige Amt führt „pornografische Schriften“ unter den verbotenen Einfuhren."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "radio-equipment-jo",
+    "sourceHash": "2a39c3a7",
+    "fields": {
+      "summary": "Verboten: Funkgeräte dürfen nicht nach Jordanien gebracht werden.",
+      "limitsDescription": "Die Einfuhr von Funkgeräten ist verboten.",
+      "notes": "Das Auswärtige Amt führt „Funkgeräte“ unter den verbotenen Einfuhren. Einzige Quelle; keine Seite der jordanischen Telekommunikationsbehörde wurde gelesen, daher sind genehmigte Ausnahmen unbekannt."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "personal-effects-jo",
+    "sourceHash": "73fac7f2",
+    "fields": {
+      "summary": "Reisebedarf einschließlich Laptop und Kamera ist zollfrei, muss aber wieder mit Ihnen ausreisen.",
+      "limitsDescription": "Reisebedarf einschließlich Laptop und Kamera darf zollfrei eingeführt werden, muss aber wieder ausgeführt werden.",
+      "notes": "Auswärtiges Amt: „Reisebedarf inklusive Laptop und Kamera darf zollfrei eingeführt werden, muss aber wieder ausgeführt werden.“ Außerdem verbietet Jordanien streng die Ausfuhr von Antiquitäten ohne Genehmigung des Department of Antiquities (France Diplomatie, Gesetz 21/1998), und das Auswärtige Amt nennt auch Korallen."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "medication-jo",
+    "sourceHash": "7d7fb104",
+    "fields": {
+      "summary": "Führen Sie für Arzneimittel, die unter das Betäubungsmittelrecht fallen, ein ärztliches Dokument auf Englisch mit; auf Drogendelikte stehen lange Haftstrafen.",
+      "limitsDescription": "Wenn Sie aus medizinischen Gründen Arzneimittel mitführen, die unter das Betäubungsmittelrecht fallen, muss ihre medizinische Notwendigkeit auf Englisch belegt sein. Auf Drogendelikte stehen lange Haftstrafen, auch bei kleinsten Mengen.",
+      "notes": "Für diese Website wurde keine Seite des jordanischen Zolls gelesen, die das sagt; dieser Eintrag stützt sich auf die Reise- und Sicherheitshinweise des Auswärtigen Amts."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-jo",
+    "sourceHash": "1ccc84b8",
+    "fields": {
+      "summary": "Arzneimittel mit Betäubungsmitteln und psychotropen Stoffen brauchen zur Einfuhr eine Genehmigung der JFDA; höchstens sechs Monate Bedarf, innerhalb der Mengengrenzen der JFDA.",
+      "limitsDescription": "Für Arzneimittel mit Betäubungsmitteln und psychotropen Stoffen brauchen Sie eine Genehmigung der Arzneimitteldirektion der jordanischen Lebensmittel- und Arzneimittelbehörde (JFDA), um sie für den persönlichen Gebrauch nach Jordanien zu bringen oder auszuführen. Die Menge ist auf höchstens sechs Monate Bedarf und höchstens die Menge im internationalen Passagierhandbuch der JFDA begrenzt.",
+      "limitsQuantity": "bis zu sechs Monate Bedarf, innerhalb der Mengengrenzen der JFDA",
+      "notes": "Aus dem eigenen Eintrag der JFDA in den Angaben, die sie dem Internationalen Suchtstoffkontrollrat (INCB) gemacht hat. Das Blatt kreuzt keine Unterlagen an und nennt keine verbotenen Stoffe, und das erwähnte Passagierhandbuch wurde online nicht gefunden: Wenden Sie sich vor der Reise an die Abteilung für die Kontrolle von Betäubungsmitteln und psychotropen Stoffen der JFDA (Tel. +962 6 5632000). Markennamen stehen nur für die Suche hier: Sie entsprechen Stoffen auf den internationalen Kontrolllisten der Vereinten Nationen."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "alcohol-qa",
+    "sourceHash": "5253ce31",
+    "fields": {
+      "summary": "Verboten: Reisende dürfen keinen Alkohol nach Katar mitbringen.",
+      "notes": "Reisende dürfen keinen Alkohol nach Katar mitbringen. Auswärtiges Amt (Stand 09.10.2026): „Die Einfuhr von Drogen, Alkohol, pornografischen Materials sowie religiöser Bücher und Materialien ist strengstens untersagt.“ Abgeglichen: Das japanische Außenministerium führt 酒類（みりん等の調味料を含む） (alkoholische Getränke, auch Würzmittel wie Mirin) unter den verbotenen Einfuhren; Nederland Wereldwijd: „Neem geen alcohol en varkensvlees(producten) mee naar Qatar“ (nehmen Sie keinen Alkohol und kein Schweinefleisch mit nach Katar); auch France Diplomatie führt Alkohol als verboten. In Katar wird Alkohol nur in lizenzierten Hotels, Restaurants und Bars sowie an Einwohner mit Genehmigung verkauft (GOV.UK); Trinken in der Öffentlichkeit kann bis zu 6 Monate Haft oder eine Geldstrafe von 3000 QAR bedeuten. Hinweis: Alkohol steht nicht auf der Verbotsliste des Zolltarifs auf customs.gov.qa, und keine Seite einer katarischen Behörde mit dem Einfuhrverbot wurde gelesen; die Einstufung stützt sich auf drei Regierungen von Reisenden, die übereinstimmen."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cash-qa",
+    "sourceHash": "80c98c4c",
+    "fields": {
+      "summary": "Melden Sie Bargeld, Inhaberpapiere, Edelmetalle oder Edelsteine im Gesamtwert von mehr als 50 000 QAR an.",
+      "limitsDescription": "Melden Sie Bargeld (katarische Riyal oder Fremdwährung), Inhaberpapiere (Reiseschecks, Schecks, Zahlungsanweisungen, Schuldscheine), Edelmetalle (Gold, Silber, Platin) oder Edelsteine im Gesamtwert von mehr als 50 000 QAR bei der Ein- oder Ausreise in Katar auf dem Zollanmeldeformular an.",
+      "limitsQuantity": "über 50 000 QAR",
+      "notes": "GOV.UK: „If you are taking money, precious metals or gems worth more than 50,000 Qatari riyals into Qatar, you must complete a declaration form“ (wer Geld, Edelmetalle oder Edelsteine im Wert von mehr als 50 000 katarischen Riyal nach Katar bringt, muss ein Anmeldeformular ausfüllen), für Bargeld, Reiseschecks, Zahlungsanweisungen, Schecks, Schuldscheine, Edelmetalle und Edelsteine; Verstöße können Geldstrafen, Haft oder Beschlagnahme bedeuten. Abgeglichen: Das Auswärtige Amt sagt, Ein- oder Ausfuhr über 50 000 QAR muss bei Ein- und Ausreise auf dem Formular der Zollbehörde (General Authority of Customs) angemeldet werden, und Verstöße werden mit Haft, Geldstrafe oder Beschlagnahme geahndet; die kanadische Regierung sagt dasselbe für „more than QAR50,000“ bei Ein- oder Ausreise. Das Mitführen ist legal; strafbar ist die fehlende Anmeldung."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "prescription-medication-qa",
+    "sourceHash": "6b8bb393",
+    "fields": {
+      "summary": "Führen Sie ein Rezept und einen ärztlichen Bericht mit, die höchstens 6 Monate alt sind. Manche Arzneimittel brauchen eine Genehmigung des Gesundheitsministeriums.",
+      "limitsDescription": "Führen Sie ein Rezept und einen ärztlichen Bericht auf Englisch oder Arabisch mit, ausgestellt in den letzten 6 Monaten, mit Angaben zu Ihren Arzneimitteln und Ihrer Behandlung. Manche verschreibungspflichtigen und frei verkäuflichen Arzneimittel sind in Katar kontrolliert und brauchen eine Genehmigung des Ministry of Public Health (siehe den Eintrag zu kontrollierten Arzneimitteln).",
+      "notes": "GOV.UK (Gesundheitsseite, aktualisiert am 19. August 2026): „Some prescribed and over-the-counter medicines may be controlled substances in Qatar. If you need to bring controlled or prescription medication into Qatar, make sure you follow the steps required by the Qatar Ministry of Public Health, including carrying a prescription and medical report in English or Arabic containing details of your medication and treatment, issued within the last 6 months.“ (Manche verschriebenen und frei verkäuflichen Arzneimittel können in Katar kontrollierte Stoffe sein; wer kontrollierte oder verschreibungspflichtige Arzneimittel mitbringt, folgt den Schritten des Gesundheitsministeriums, etwa ein Rezept und einen ärztlichen Bericht auf Englisch oder Arabisch mit Angaben zu Arzneimitteln und Behandlung, nicht älter als 6 Monate.) Das Auswärtige Amt nennt, was der Bericht enthalten soll: Angaben zum Patienten, Diagnose, Behandlungsplan und -dauer, Dosierungsempfehlungen, wissenschaftlichen und Markennamen, Dosis und Menge, einen lesbaren Stempel des Arztes bzw. der Klinik, auf Briefpapier der Klinik, dazu eine Kopie des Reisepasses. Nederland Wereldwijd: Arzneimittel in der Originalverpackung lassen. Prüfen Sie vor der Reise, ob Ihr Arzneimittel auf Katars Kontrolllisten steht."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-qa",
+    "sourceHash": "7f9d3e3c",
+    "fields": {
+      "summary": "Braucht eine Genehmigung des Gesundheitsministeriums: bis zu 30 Tage Betäubungsmittel (oder Ihr Aufenthalt, wenn kürzer) oder 2 Monate psychotrope Arzneimittel. Manche sind verboten.",
+      "limitsDescription": "Arzneimittel mit Betäubungsmitteln und psychoaktiven Stoffen: bis zu 30 Tage Vorrat oder die Dauer Ihres Aufenthalts, je nachdem, was kürzer ist. Psychotrope Arzneimittel: bis zu 2 Monate Vorrat. Nötig sind eine Genehmigung des Ministry of Public Health, ein Rezept oder ärztlicher Bericht, der höchstens 6 Monate alt ist, und eine Passkopie. Manche Stoffe sind ganz verboten.",
+      "limitsQuantity": "30 Tage (Betäubungsmittel/psychoaktive Stoffe) / 2 Monate (psychotrope Stoffe)",
+      "notes": "Leitlinie des Ministry of Public Health (Pharmacy and Drug Control Department): International und national verbotene Arzneimittel und die Stoffe in den Unterlisten A und B der Liste 1 des Gesetzes Nr. 9 von 1987 dürfen nicht freigegeben werden. Zu den verbotenen Stoffen gehören Cannabis, Cannabisharz, Heroin, LSD, Psilocybin, Cathinon, MDA und Dronabinol. Für Patienten, die zum persönlichen Gebrauch einreisen, sind nötig: ein ausführlicher, bestätigter ärztlicher Bericht oder ein Rezept, höchstens sechs Monate alt, mit Angaben zum Patienten, Diagnose, Behandlungsplan und -dauer, Empfehlungen, wissenschaftlichem Namen, Darreichungsform, Dosis und Menge, gestempelt und auf Briefpapier der Gesundheitseinrichtung; eine unterschriebene Verpflichtung, dass nur Sie es verwenden; und eine Passkopie. „An amount of narcotic and psychoactive substances sufficient for a maximum of thirty days or the duration of the patient's stay in the State of Qatar, whichever is shorter, is allowed“ (erlaubt ist eine Menge an Betäubungsmitteln und psychoaktiven Stoffen für höchstens dreißig Tage oder die Dauer des Aufenthalts in Katar, je nachdem, was kürzer ist) und „An amount of psychotropic substances sufficient for a maximum of two months is allowed“ (erlaubt ist eine Menge an psychotropen Stoffen für höchstens zwei Monate). Jeder Überschuss wird von der Abteilung vernichtet. Die Liste der Betäubungsmittel und psychoaktiven Stoffe umfasst Amfetamin, Dexamfetamin, Codein, Dihydrocodein, Fentanyl, Hydrocodon, Hydromorphon, Methadon, Morphin, Oxycodon und Pethidin. Die Liste der psychotropen Stoffe umfasst Alprazolam, Bromazepam, Buprenorphin, Clonazepam, Diazepam, Lorazepam, Midazolam, Temazepam, Zolpidem, Phentermin, Phenobarbital, Tramadol, Pregabalin und Gabapentin. Der Leitfaden verweist für Aktualisierungen auf die Gelbe und Grüne Liste des INCB. Methylphenidat (Ritalin/Concerta) und Lisdexamfetamin (Vyvanse) stehen nicht auf den Listen, daher sagt dieser Eintrag nicht, wie sie behandelt werden. Genehmigung: Das Controlled Medicines System des Ministeriums (https://fli.moph.gov.qa/traveller/home; Benutzerhandbuch v1.0, 2025) nimmt Anträge von Reisenden an, die Arzneimittel mit Betäubungsmitteln oder psychotropen Stoffen für den persönlichen Gebrauch mitführen. Sie laden Pass, Rezept, ärztlichen Bericht und Fotos des Arzneimittels hoch; Anträge werden „approved or rejected within three working days after all requirements have been met“ (innerhalb von drei Werktagen genehmigt oder abgelehnt, wenn alle Voraussetzungen erfüllt sind), und das Ministerium empfiehlt, mindestens fünf Werktage vor der Reise zu beantragen; ein genehmigtes Schreiben ist „valid for 90 days from date of approval“ (90 Tage ab Genehmigung gültig) und „must be printed and carried along with the original medical prescription and medical report during travel“ (muss ausgedruckt und mit dem Originalrezept und dem ärztlichen Bericht auf der Reise mitgeführt werden). GOV.UK bestätigt das Online-Genehmigungssystem. Das PDF der Leitlinie ist vom November 2022; maßgeblich ist das Gesetz Nr. 9 von 1987."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "controlled-medication-qa#details",
+    "sourceHash": "8051a3ec",
+    "fields": {
+      "letterItems": [
+        "Ein ausführlicher, bestätigter ärztlicher Bericht oder ein Rezept, höchstens 6 Monate alt",
+        "Ihre Angaben, die Diagnose, Behandlungsplan und -dauer sowie Empfehlungen",
+        "Wissenschaftlicher Name, Darreichungsform, Dosis und Menge des Arzneimittels",
+        "Gestempelt, auf Briefpapier der Gesundheitseinrichtung",
+        "Eine unterschriebene Verpflichtung, dass nur Sie das Arzneimittel verwenden, und eine Kopie Ihres Reisepasses"
+      ],
+      "procedureTitle": "Controlled Medication Permit des katarischen Gesundheitsministeriums einholen",
+      "procedureLeadTime": "Mindestens 5 Werktage vor der Reise",
+      "procedureProcessingTime": "Genehmigt oder abgelehnt innerhalb von 3 Werktagen, wenn alle Voraussetzungen erfüllt sind",
+      "procedureDocuments": [
+        "Eine Kopie Ihres Reisepasses (oder Ihrer katarischen ID).",
+        "Das ärztliche Rezept.",
+        "Der ärztliche Bericht.",
+        "Fotos des Arzneimittels."
+      ],
+      "procedureSteps": [
+        "Registrieren Sie sich im National Authentication System (NAS) Katars mit Passnummer, Mobilnummer und E-Mail und melden Sie sich dann im Controlled Medicines System an.",
+        "Legen Sie einen Antrag an und füllen Sie das Patientenprofil aus, auch für alle, die mit Ihnen reisen.",
+        "Geben Sie Ihre Reise (Ankunft, Daten, Einreiseort, Notfallkontakt) und jedes Arzneimittel ein: Diagnose, Wirkstoff, Darreichungsform, Verordnungsdauer in Tagen, Konzentration, Packungsgröße, Zahl der Packungen und Handelsname. Sie können bis zu 5 Wirkstoffe angeben.",
+        "Laden Sie die Unterlagen hoch, bestätigen Sie die Erklärungen und reichen Sie ein.",
+        "Bei Genehmigung stellt das System ein Genehmigungsschreiben mit Genehmigungsnummer aus. Es gilt 90 Tage ab Genehmigung; nutzen Sie es nicht rechtzeitig, beantragen Sie es neu."
+      ],
+      "procedureAtTheBorder": "Drucken Sie die Genehmigung aus und führen Sie sie mit dem Originalrezept und dem ärztlichen Bericht mit. Das Ministerium kann trotzdem nur einen Teil des Arzneimittels freigeben oder es ablehnen, wenn es die Genehmigungskriterien nicht erfüllt."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cannabis-qa",
+    "sourceHash": "a38de19a",
+    "fields": {
+      "summary": "Verboten: Cannabis, Cannabisharz und synthetisches THC (Dronabinol) sind in Katar verboten, auch mit ärztlicher Verschreibung.",
+      "notes": "Die Liste „Items Prohibited from Entering the State of Qatar“ des Ministry of Public Health (für Wirkstoffe oder „any pharmaceutical dosage forms i.e tablets, capsules, syrup, injection, oils, etc.“: jede Darreichungsform, also Tabletten, Kapseln, Sirup, Injektionen, Öle usw.) nennt CANNABIS, CANNABIS RESIN und DRONABINOL (synthetisches THC). Ärztliche Verschreibungen für medizinisches Cannabis machen sie nicht erlaubt. Auch die Liste der nach dem Tarif verbotenen Waren der Zollbehörde (General Authority of Customs) enthält Cannabis sativa, Haschisch und Hanfsamen. GOV.UK: null Toleranz; der Besitz von Drogen, „including cannabis, (even residual amounts)“ (auch Cannabis, selbst Rückstände), wird hart bestraft, auch im Transit, und die Flughäfen durchleuchten Transitgepäck. CBD wird auf keiner gelesenen Seite genannt: Aus Cannabis extrahiertes CBD fällt unter „cannabis … in any pharmaceutical dosage form … oils“, aber keine Quelle behandelt CBD aus Hanf beim Namen, daher gilt dieser Eintrag nicht für CBD; fragen Sie vor einer Reise mit CBD-Produkten beim Gesundheitsministerium nach."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "cannabis-qa#details",
+    "sourceHash": "6a6086d9",
+    "fields": {
+      "transitDescription": "Nach den Reisehinweisen der britischen Regierung drohen für Besitz, Gebrauch oder Schmuggel illegaler Drogen, auch Cannabis und selbst Rückständen, lange Haft, Abschiebung und hohe Geldstrafen, „including when transiting through the airport“ (auch beim Transit über den Flughafen). Die Flughäfen Katars durchleuchten auch das Gepäck von Transitreisenden."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "e-cigarettes-qa",
+    "sourceHash": "bbaeba5b",
+    "fields": {
+      "summary": "Verboten: E-Zigaretten, Liquids, Tabakerhitzer und elektronische Shishas dürfen in keiner Menge nach Katar eingeführt werden.",
+      "notes": "Die Liste „Goods forbidden by Tariff“ der Zollbehörde enthält „Electronic devices for cigarettes“ (elektronische Geräte für Zigaretten), „Electronic water pipe \"shisha\"“ (elektronische Wasserpfeifen) und „Electrically heated devices for cigarettes“ (Tabakerhitzer) sowie ihre Teile. GOV.UK: „It is illegal to import and sell vapes and electronic cigarette products. This includes the sale and purchase of related liquids and other similar products, including electronic shisha pipes. The law applies regardless of quantity and intended use. Customs officials may confiscate any such items from your luggage“ (Einfuhr und Verkauf von Vapes und E-Zigaretten sind verboten, auch von Liquids und ähnlichen Produkten wie elektronischen Shishas, unabhängig von Menge und Zweck; der Zoll kann solche Gegenstände aus dem Gepäck beschlagnahmen) und „It is illegal to vape or use an e-cigarette. Police can arrest you and courts can impose a fine, a prison sentence or deportation.“ (Vapen oder E-Zigaretten zu benutzen ist verboten; die Polizei kann Sie festnehmen, und Gerichte können Geldstrafe, Haft oder Abschiebung verhängen.)"
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "pork-products-qa",
+    "sourceHash": "09716bb4",
+    "fields": {
+      "summary": "Verboten: Schweinefleisch und Produkte daraus wie Schinken, Wurst, Speck und Schmalz dürfen nicht nach Katar gebracht werden.",
+      "notes": "Auswärtiges Amt: „Die Einfuhr von Schweinefleisch ist ebenfalls nicht gestattet.“ Abgeglichen: Das japanische Außenministerium führt 豚肉及び豚肉の加工品（ハム、ソーセージ、ベーコン、ラード等） (Schweinefleisch und verarbeitetes Schweinefleisch wie Schinken, Wurst, Speck und Schmalz) unter den verbotenen Einfuhren; Nederland Wereldwijd: „Neem geen alcohol en varkensvlees(producten) mee“; France Diplomatie führt Schweinefleisch als verboten. Regeln für anderes Fleisch und Milchprodukte wurden auf keiner Primärquelle gefunden."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "weapons-qa",
+    "sourceHash": "34740a0e",
+    "fields": {
+      "summary": "Verboten: Schusswaffen sind verbotene Einfuhren nach Katar, mit harten Strafen.",
+      "notes": "Das japanische Außenministerium (Grundregeln zur Sicherheit in Katar) führt 銃火器類 (Schusswaffen) unter den verbotenen Einfuhren und sagt, dass Besitz oder Einfuhr von Drogen oder Schusswaffen hart bestraft werden (麻薬や銃器の所持、持込みは厳罰が科せられます). Der katarische Zoll veröffentlicht ein eigenes Verfahren für die Einfuhr von Waffen und Hochrisikomaterialien (Unified Guide), das für lizenzierte Einfuhren gilt, nicht für das Gepäck von Touristen; es wurde nicht gelesen. Messer, Pfefferspray und Waffennachbildungen deckt keine gelesene Quelle ab."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "drones-qa",
+    "sourceHash": "c31a2e03",
+    "fields": {
+      "summary": "Vor der Einfuhr oder dem Fliegen einer Drohne in Katar brauchen Sie eine Genehmigung.",
+      "notes": "Kanadische Regierung (14. September 2026): „You must obtain authorization before importing or operating a drone.“ (Vor Einfuhr oder Betrieb einer Drohne ist eine Genehmigung nötig.) GOV.UK: „Drone use, including aerial photography and filming, is regulated in Qatar. You may need licences or permits before importing or operating a drone. Breaching drone regulations may result in fines, imprisonment and confiscation of equipment.“ (Der Einsatz von Drohnen, auch für Luftaufnahmen, ist in Katar geregelt; vor Einfuhr oder Betrieb können Lizenzen oder Genehmigungen nötig sein; Verstöße können Geldstrafen, Haft und Beschlagnahme bedeuten.) Die eigenen Drohnenregeln der katarischen Zivilluftfahrtbehörde (wer die Genehmigung erteilt, wie man sie beantragt) wurden nicht gelesen; holen Sie die Genehmigung ein, bevor Sie mit einer Drohne fliegen."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "poppy-seeds-qa",
+    "sourceHash": "6fe26d66",
+    "fields": {
+      "summary": "Verboten: Mohnsamen, Mohnstroh, Kokablätter und Kath stehen auf Katars Liste verbotener Waren.",
+      "notes": "Die Liste „Goods forbidden by Tariff“ der Zollbehörde (Einheitlicher Zolltarif der GCC) enthält Mohnsamen und Mohn, Mohnstroh, schwarzen Mohn, Kokablätter, Kath (Catha edulis), Opium, Haschisch, zubereitetes indisches Paan (Betel) zum Kauen mit oder ohne Tabak sowie Tabakzubereitungen zum Kauen oder Schnupfen (Sahmmah, Suwaikah). Auch Mohnsamen zum Kochen oder Backen sind erfasst; packen Sie sie nicht ein."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "tobacco-qa",
+    "sourceHash": "a0025532",
+    "fields": {
+      "summary": "Zollfrei: bis zu 200 Zigaretten, innerhalb der Befreiung für persönliche Waren bis 3000 SAR, für den eigenen Gebrauch. Darüber fällt Zoll an.",
+      "limitsDescription": "Zollfrei bis 200 Zigaretten, als Teil der Befreiung für persönliche Gegenstände und Geschenke, die der Reisende mitführt (Gesamtwert bis 3000 SAR oder Gegenwert in GCC-Währungen), in persönlichen, nicht gewerblichen Mengen. Alles, was diese Bedingungen nicht erfüllt, wird nach dem Tarif verzollt.",
+      "limitsQuantity": "200 Zigaretten",
+      "notes": "Die Befreiung gilt nicht für Personen, die häufig den Zoll passieren, für Händler oder für Besatzungsmitglieder. Der Leitfaden nennt nur Zigaretten, keine Zigarren und keinen losen Tabak. E-Zigaretten sind in Katar verboten (siehe E-Zigaretten). Manche nicht amtlichen Websites nennen 400 Zigaretten; der eigene Leitfaden des katarischen Zolls sagt 200."
+    },
+    "translated_at": "2026-11-06",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
   }
 ]
