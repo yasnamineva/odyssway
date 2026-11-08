@@ -252,11 +252,13 @@ test("named-medicine pages answer the brand query from the verified row", async 
   await expect(page.locator("body")).toContainText("Prohibited");
   await expect(page.locator("body")).toContainText("Adderall in other countries");
 
-  // Single-country medicines get the pair page but no thin one-row hub.
+  // A medicine gets a hub once two or more countries name it (every one does today; a one-country medicine
+  // would get only its pair page).
   const sudafed = await page.goto("/medications/sudafed/japan");
   expect(sudafed?.status()).toBe(200);
   const hub = await page.goto("/medications/sudafed");
-  expect(hub?.status()).toBe(404);
+  expect(hub?.status()).toBe(200);
+  await expect(page.locator("table")).toContainText("Japan");
 
   await page.goto("/medications/adderall");
   await expect(page.locator("table")).toContainText("Japan");
