@@ -553,9 +553,10 @@ test("German index and hubs list only German pages and link back to English", as
   );
   await expect(page.locator('link[rel=alternate][hreflang=en]')).toHaveAttribute("href", /\/bring\/drones$/);
   // A hub lists only countries with a German page: Nigeria's alcohol page isn't translated.
-  await page.goto("/de/bring/alcohol");
+  // Vietnam cash isn't translated yet, so the German cash hub doesn't list it.
+  await page.goto("/de/bring/cash");
   await expect(page.getByTestId("de-hub-list").getByRole("link", { name: "Spanien" })).toBeVisible();
-  await expect(page.getByTestId("de-hub-list").getByRole("link", { name: "Nigeria" })).toHaveCount(0);
+  await expect(page.getByTestId("de-hub-list").getByRole("link", { name: "Vietnam" })).toHaveCount(0);
   const missing = await page.goto("/de/bring/pets");
   expect(missing?.status()).toBe(404);
 });

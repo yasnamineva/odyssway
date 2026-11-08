@@ -88,7 +88,9 @@ test("item tags can be added, removed, and are looked up per destination without
 
   await page.getByTestId("tc-submit").click();
   await expect(page.getByTestId("tc-item-result")).toContainText("definitely-not-a-real-item-xyz");
-  await expect(page.getByTestId("tc-item-not-found")).toBeVisible();
+  // Nothing we cover matches, so it says it doesn't recognise the item rather than "not verified".
+  await expect(page.getByTestId("tc-item-unrecognised")).toContainText("We don't recognise");
+  await expect(page.getByTestId("tc-item-not-found")).toHaveCount(0);
 });
 
 test("submit is disabled until both nationality and destination are chosen", async ({ page }) => {
@@ -369,7 +371,8 @@ test("a stopover belongs to one flight: shown on the map in order and in the rou
 test("says how it read an item, suggests close names for unknown ones, and opens a zoomable map", async ({ page }) => {
   await page.goto("/trip-check");
   await pickCombobox(page, "tc-nationality", "USA", "United States");
-  await pickCombobox(page, "tc-destination", "Uruguay", "Uruguay");
+  // Vietnam has no verified Adderall rule yet, so the known-item message shows.
+  await pickCombobox(page, "tc-destination", "Vietnam", "Vietnam");
   for (const item of ["Addy", "ritlain"]) {
     await page.getByTestId("tc-item-input").fill(item);
     await page.getByTestId("tc-item-input").press("Enter");
