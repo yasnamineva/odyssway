@@ -4186,3 +4186,10 @@ Coverage after it: Xanax/Valium 89, Ritalin 86, codeine 90, Vyvanse 17, tramadol
 - **Nigeria codeine**: a 2018 codeine import embargo appears on NAFDAC crackdown pages not read. **Ghana tramadol** above 100 mg: search snippets only.
 - **Denmark low-dose codeine** (List C): exemption conditions not parsed from the order's layout.
 - Tramadol and Vyvanse unread in most other schedules; Jamaica (benzodiazepines, Ritalin), Indonesia and Macao (Ritalin), Cambodia (everything).
+
+## Controlled-medicine pass 3, 2026-11-08 (Ambien, Klonopin, Lyrica, Sudafed, melatonin)
+Coverage after it: Ambien 85, Klonopin 89, Lyrica 12, Sudafed 11, melatonin 5 of 91. Pregabalin, pseudoephedrine and melatonin aren't on the UN narcotic/psychotropic lists, so they're named only where a national list or official source names them.
+- **Pregabalin**: read in the national lists of GB, US, BR, ZA, LV, IS, HR, GE, AM, AE, SA, QA. Sweden: only an EU (TRIS) notification of a 2025 amendment, in translation; Finland lists it as licence-exempt (fit with the 14-day rule unclear). Elsewhere unread.
+- **Pseudoephedrine**: a controlled precursor (not a traveller rule) in BR, PE, CO, SA, TW, FJ, MU; rows tell travellers to ask. Mexico reported banned (no source read). Rwanda lists it with "very severe" Schedule I precursors (warning note on the row).
+- **Melatonin**: only ZA (Schedule 4, Schedule 2 at 6 mg/day for jet lag), plus the existing JP, AU, NZ, CL rows. No EU state's classification was read for travellers.
+- **Zolpidem**: not in the Dominican Republic's Ley 50-88 (as read), Belize's schedules or Fiji's Schedule 1, so no name there; Canada's 90-day "targeted substance" status not read.
