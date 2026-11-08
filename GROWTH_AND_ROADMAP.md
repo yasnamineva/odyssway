@@ -6,7 +6,7 @@ anything gets built, and its Accuracy Policy (§3) comes before everything here.
 listed as *candidates* are research leads, not verified rules, and none can be published
 without a primary official source.
 
-Where we are today (2026-11-06):
+Where we are today (2026-11-08):
 
 - 68 destinations plus the Schengen Area; 3,924 verified entry rows; 774 customs rows
   (182 medication, 43 with a doctor's-letter checklist, 22 with a permit how-to, 19 with
@@ -17,7 +17,8 @@ Where we are today (2026-11-06):
 - About 2,000 URLs in the sitemap. Google indexes well; Bing indexes the pages but shows
   them rarely (young domain, few links).
 - No analytics, by design.
-- German pilot: 619 pages under `/de/bring` (2026-11-06), machine-translated from the verified English rows (§5.5).
+- German pilot: 822 pages under `/de/bring` (2026-11-08), machine-translated from the verified English rows (§5.5).
+- **Pushed 2026-11-08** (38 commits: German to 822 pages, the controlled-medicine pass, item-search wording, zoomable route map; build, 242 unit tests and 130 e2e passed). ✔ IndexNow `--since 2026-11-06`: 959 URLs (HTTP 200).
 - **Pushed 2026-11-06** (73 commits: the German pilot from 53 to 402 pages, with translated permit how-tos, letter
   checklists and transit rules; the cost guardrails; the site-wide 404; corrections to Brunei alcohol, Kyrgyzstan
   alcohol and tobacco and New Zealand's NZ$700 concession; Seychelles, Latvia, Slovenia, Uruguay, Uzbekistan, Portugal
