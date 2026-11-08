@@ -4176,3 +4176,13 @@ Coverage after the pass: Adderall 84, oxycodone and morphine 90 of 91 customs te
 - **EG** (mena): Answered from Canada, UK and Germany travel advice plus the Egyptian Customs page. Local rule and schedule still unread. Tried: edaegypt.gov.eg: already recorded as having no traveller guidance, not retried at length; INCB country list: no Egypt sheet; Web search for an Egyptian ministry or consulate page: only blogs, news and competitor sites
 - **IL** (mena): Amphetamine position rests on the 2026 INCB form only. Tried: https://www.gov.il/en/pages/carrying-medication: 403 today; http://www.health.gov.il/LegislationLibrary/Samim_01_EN.pdf (ordinance, linked from UNODC): 202 with empty bod; https://www.unodc.org/LSS/Country/DetailsLegalSystem?code=DLIL&country=IL: no amphetamine entry
 - **OM** (mena): Oman's schedule unread and its law changed in September 2026. Follow-up: read the new law's text and any new executive regulation. Tried: https://decree.om/?p=43543: decree readable, attached law members-only; Web search for the schedule of Royal Decree 17/99 or 67/2026: nothing official
+
+## Controlled-medicine pass 2, 2026-11-08 (Xanax, Valium, Ritalin, Vyvanse, codeine, tramadol)
+Coverage after it: Xanax/Valium 89, Ritalin 86, codeine 90, Vyvanse 17, tramadol 25 of 91. Vyvanse (lisdexamfetamine) and tramadol aren't on the UN lists, so they're named only where a national schedule names them.
+- **Canada**: Vyvanse names removed; the Controlled Drugs and Substances Act covers amphetamine "derivatives", but no entry naming lisdexamfetamine was read.
+- **Qatar**: methylphenidate isn't on Qatar's own lists; Ritalin left unanswered until the Ministry of Public Health says how it's treated.
+- **Egypt tramadol**: reported (news) as a narcotic under Ministry of Health decree 125/2012 and replaced schedules in 2026 (44/2026); no official text read.
+- **Kenya tramadol**: reported in the 2022 Act; kenyalaw copies came back empty.
+- **Nigeria codeine**: a 2018 codeine import embargo appears on NAFDAC crackdown pages not read. **Ghana tramadol** above 100 mg: search snippets only.
+- **Denmark low-dose codeine** (List C): exemption conditions not parsed from the order's layout.
+- Tramadol and Vyvanse unread in most other schedules; Jamaica (benzodiazepines, Ritalin), Indonesia and Macao (Ritalin), Cambodia (everything).

@@ -1785,7 +1785,8 @@
       "medication",
       "prescription medicine",
       "medicine",
-      "otc medicine"
+      "otc medicine",
+      "tramadol"
     ],
     "destination": "JP",
     "category": "medication",
@@ -1799,9 +1800,16 @@
       "name": "Japan Customs — Private Importation of Drugs, Cosmetics, etc. (FAQ 1806)",
       "url": "https://www.customs.go.jp/english/c-answer_e/imtsukan/1806_e.htm"
     },
-    "verified_at": "2026-10-17",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
-    "status": "verified"
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "TORAMADOL is not a narcotic.",
+        "name": "ncd.mhlw.go.jp",
+        "url": "https://www.ncd.mhlw.go.jp/en/application2.html"
+      }
+    ]
   },
   {
     "slug": "amphetamine-medication-jp",
@@ -1834,7 +1842,8 @@
       "decongestant",
       "vyvanse",
       "lisdexamfetamine",
-      "stimulant medication"
+      "stimulant medication",
+      "elvanse"
     ],
     "destination": "JP",
     "category": "medication",
@@ -1848,7 +1857,7 @@
       "name": "Narcotics Control Department, Ministry of Health, Labour and Welfare — Application Guidance (carrying medicine containing controlled substances)",
       "url": "https://www.ncd.mhlw.go.jp/en/application2.html"
     },
-    "verified_at": "2026-10-14",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -3054,7 +3063,12 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate"
     ],
     "destination": "TH",
     "category": "medication",
@@ -3062,13 +3076,13 @@
     "limits": {
       "description": "Psychotropic medicines (Thai Schedules II, III and IV): you can carry up to a 30-day supply with a certificate or prescription from your doctor, without a permit. For a 31–90 day supply you need a Thai FDA permit, obtained at least 15 days before you travel. Narcotic medicines (Schedules II and III): up to a 90-day supply, and only with a Thai FDA permit obtained at least 15 days before you travel."
     },
-    "notes": "The Thai FDA's guidance lists morphine, oxycodone, codeine and fentanyl as Schedule II narcotics. Medicine with these needs the permit. In its information for the International Narcotics Control Board the FDA lists Category 1 narcotics, such as amphetamine, dexamphetamine and methamphetamine, as prohibited: see the amphetamine entry. If your medicine isn't named, check its schedule with the Thai FDA before you travel. Brand names are listed for search only: OxyContin contains oxycodone. The rules come from Ministerial Regulation B.E. 2567 (2024), in force since 21 September 2024.",
+    "notes": "The Thai FDA's guidance lists morphine, oxycodone, codeine and fentanyl as Schedule II narcotics. Medicine with these needs the permit. In its information for the International Narcotics Control Board the FDA lists Category 1 narcotics, such as amphetamine, dexamphetamine and methamphetamine, as prohibited: see the amphetamine entry. If your medicine isn't named, check its schedule with the Thai FDA before you travel. Brand names are listed for search only: OxyContin contains oxycodone. The rules come from Ministerial Regulation B.E. 2567 (2024), in force since 21 September 2024. Medicines that mix a Schedule II narcotic such as codeine with other ingredients can be Schedule III narcotics, which also need the Thai FDA permit. Check your product's schedule with the FDA's online search before you travel.",
     "summary": "Psychotropics: up to 30 days with a doctor's prescription. More, or any narcotic, needs a Thai FDA permit 15 days ahead.",
     "legal_source": {
       "name": "Thai FDA — Guidance for Travelers under Treatment Carrying Personal Medications Containing Narcotic Drugs/Psychotropic Substances into Thailand",
       "url": "https://en.fda.moph.go.th/entrepreneurs-narcotic-drugs-and-psychotropic-substances/category/guidance-for-travelers-under-treatment-carrying-personal-medications-containing-narcotic-drugs-into-/"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "procedure": {
@@ -3442,7 +3456,15 @@
       "oxycodone",
       "oxycontin",
       "oxy",
-      "morphine"
+      "morphine",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "RW",
     "category": "medication",
@@ -3457,7 +3479,7 @@
       "name": "Rwanda FDA — Guidelines on Control of Importation and Exportation of Regulated Products Declared as Personal Effects (Doc. No. FDISM/FDIEC/GDL/003, effective 15/03/2023)",
       "url": "https://rwandafda.gov.rw/wp-content/uploads/2023/03/Guidelines%20for%20import%20and%20export%20of%20regulated%20products%20declared%20as%20personal%20effects.pdf"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -4446,7 +4468,16 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine",
+      "tramadol"
     ],
     "destination": "IN",
     "category": "medication",
@@ -4460,7 +4491,7 @@
       "name": "Department of Revenue, Ministry of Finance — International travellers requiring NDPS drugs for medical use",
       "url": "https://dor.gov.in/international-travellers-requiring-ndps-medical-use"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "procedure": {
@@ -4836,7 +4867,14 @@
       "oxycontin",
       "oxy",
       "adderall",
-      "amphetamine"
+      "amphetamine",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate"
     ],
     "destination": "TR",
     "category": "medication",
@@ -4872,7 +4910,7 @@
         "url": "https://www.incb.org/documents/Travellers/files/TUR_ENG_2017.pdf"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "letter": {
@@ -6554,7 +6592,8 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "destination": "EU",
     "category": "medication",
@@ -6569,7 +6608,7 @@
       "name": "Convention Implementing the Schengen Agreement, Art. 75",
       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A42000A0922(02)"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -6615,7 +6654,15 @@
       "oxycodone",
       "oxycontin",
       "oxy",
-      "morphine"
+      "morphine",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "KE",
     "category": "medication",
@@ -6630,7 +6677,7 @@
       "name": "Pharmacy and Poisons Board (Kenya): country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (18 March 2024)",
       "url": "https://www.incb.org/documents/Travellers/files/KEN_ENG_2024.pdf"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -6655,7 +6702,11 @@
       "oxycodone",
       "oxycontin",
       "oxy",
-      "morphine"
+      "morphine",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "ZA",
     "category": "medication",
@@ -6664,13 +6715,13 @@
       "description": "South Africa's regulations let you carry up to 30 days' supply of a Schedule 6 medicine, such as morphine or oxycodone, for your own use. You need one of these: the original prescription, a certified copy, or a letter from the person who prescribed or dispensed it, giving that person's name, physical address and email address. SAHPRA's information for the International Narcotics Control Board asks for more: a prescription, a doctor's certificate endorsed by your home health authorities, a certificate from South Africa's health authorities, a copy of your passport and your itinerary, with the original prescription shown at customs.",
       "quantity": "up to 30 days' supply"
     },
-    "notes": "The sources conflict on documents: the regulation (2017) and SAHPRA's information for the International Narcotics Control Board (January 2025) both give 30 days but list different papers. The regulation is the legal text; carrying what SAHPRA lists as well is the safer course. This 30-day rule doesn't cover amphetamine or Adderall (see the amphetamine entry). SARS's traveller guide lists 'narcotics and habit-forming drugs' among goods that may not be imported, and separately allows personal medicines for up to three months' use with a prescription (see the general medication entry); that three months doesn't apply to Schedule 6 medicines. SAHPRA contact: Mokgadi.fafudi@sahpra.org.za, +27 12 501 0300.",
+    "notes": "The sources conflict on documents: the regulation (2017) and SAHPRA's information for the International Narcotics Control Board (January 2025) both give 30 days but list different papers. The regulation is the legal text; carrying what SAHPRA lists as well is the safer course. This 30-day rule doesn't cover amphetamine or Adderall (see the amphetamine entry). SARS's traveller guide lists 'narcotics and habit-forming drugs' among goods that may not be imported, and separately allows personal medicines for up to three months' use with a prescription (see the general medication entry); that three months doesn't apply to Schedule 6 medicines. SAHPRA contact: Mokgadi.fafudi@sahpra.org.za, +27 12 501 0300. Methylphenidate (Ritalin, Concerta) is Schedule 6. Codeine is Schedule 6 when it's the only active ingredient, or in a combination product that isn't registered in South Africa, which is the case for most codeine bought abroad. Low-dose combinations registered in South Africa are Schedule 2 or 3. Alprazolam, diazepam and tramadol are Schedule 5 and have a six-month allowance (see that entry).",
     "summary": "Up to 30 days' supply of morphine or oxycodone with your prescription or a prescriber's letter. SAHPRA asks for more documents, so check first.",
     "legal_source": {
       "name": "South African Health Products Regulatory Authority (SAHPRA) — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (13 January 2025)",
       "url": "https://www.incb.org/incb/uploads/documents/Travellers/files/SAF-2025-ENG.pdf"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -6735,7 +6786,8 @@
       "valium",
       "diazepam",
       "klonopin",
-      "clonazepam"
+      "clonazepam",
+      "concerta"
     ],
     "destination": "MX",
     "category": "medication",
@@ -6749,7 +6801,7 @@
       "name": "ANAM (Agencia Nacional de Aduanas de México) — Equipaje y franquicia",
       "url": "https://www.anam.gob.mx/equipaje-y-franquicia/"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -6816,7 +6868,15 @@
       "oxycodone",
       "oxycontin",
       "oxy",
-      "morphine"
+      "morphine",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "EG",
     "category": "medication",
@@ -6824,13 +6884,13 @@
     "limits": {
       "description": "The sources conflict, and no Egyptian rule naming these medicines was found. Canada says Egyptian authorities will seize all narcotic and psychotropic medicines, even with the original prescription. The UK says you may need permission from Egypt's Ministry of Health before you arrive, and that without it or the required documents the medicine won't be allowed in and you may be prosecuted. Germany says to ask an Egyptian mission before you travel whether and how strong painkillers or ADHD medicines can be brought in. Egypt's Customs Authority lists narcotics among prohibited goods and allows medicines for personal use with medical reports, without saying which rule covers a prescribed controlled medicine."
     },
-    "notes": "This rests on the travel advice of Canada (updated 26 May 2026), the UK and Germany. No Egyptian health ministry or Egyptian Drug Authority page stating the rule was read. Amphetamine (Adderall), oxycodone and morphine are on the UN's international control lists. Egypt's own schedule isn't confirmed here. Don't assume they are covered by the general 'medicines for personal use' allowance. Get an answer from an Egyptian consulate or the Egyptian Drug Authority (hotline 15301) before you travel.",
+    "notes": "This rests on the travel advice of Canada (updated 26 May 2026), the UK and Germany. No Egyptian health ministry or Egyptian Drug Authority page stating the rule was read. Amphetamine (Adderall), methylphenidate (Ritalin), alprazolam (Xanax), diazepam (Valium), codeine, oxycodone and morphine are on the UN's international control lists. Tramadol isn't covered here: no Egyptian text naming it was read. Egypt's own schedule isn't confirmed here. Don't assume they are covered by the general 'medicines for personal use' allowance. Get an answer from an Egyptian consulate or the Egyptian Drug Authority (hotline 15301) before you travel.",
     "summary": "Ask an Egyptian consulate first. Canada warns all narcotic and psychotropic medicines are seized even with a prescription; the UK says you may need permission.",
     "legal_source": {
       "name": "Egyptian Customs Authority (Ministry of Finance) — Legislations: Travel & Tourism / Passengers, under Customs Law No. 207 of 2020 and its Executive Regulations",
       "url": "https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -6890,13 +6950,15 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta",
+      "elvanse"
     ],
     "destination": "AE",
     "category": "medication",
     "verdict": "depends",
     "limits": {
-      "description": "All of the following are listed by name on the UAE's official controlled/semi-controlled medicines schedule and are allowed for personal use ONLY with supporting documents, up to a maximum 3-month supply: amphetamine (Adderall), lisdexamfetamine (Vyvanse), methylphenidate (Ritalin) — Psychotropic Schedule II; alprazolam (Xanax), diazepam (Valium), clonazepam (Klonopin) — Psychotropic Schedule IV / 'CD'; codeine, morphine, oxycodone (OxyContin) — Narcotic Schedule I/II; tramadol — 'CD'. None of these is flatly prohibited. The sources conflict on the documents: one answer on the Emirates Drug Establishment's service page says you must carry both the prescription and the medical report for narcotic or psychotropic medicines, while another answer there and its medicines list accept a prescription or an attested medical report. Carry both to be safe: a dated, stamped prescription (issued within 3 months) and an attested medical report (issued within 1 year) naming the medicine, dose, and treatment duration.",
+      "description": "All of the following are listed by name on the UAE's official controlled/semi-controlled medicines schedule and are allowed for personal use ONLY with supporting documents, up to a maximum 3-month supply: amphetamine (Adderall), lisdexamfetamine (Vyvanse), methylphenidate (Ritalin) — Psychotropic Schedule II; alprazolam (Xanax), diazepam (Valium), clonazepam (Klonopin) — Psychotropic Schedule IV / 'CD'; codeine, morphine, oxycodone (OxyContin) — Narcotic Schedule I/II; codeine combinations over 30 mg per unit and tramadol — 'CD'. The list doesn't say how lower-dose codeine combinations are treated. None of these is flatly prohibited. The sources conflict on the documents: one answer on the Emirates Drug Establishment's service page says you must carry both the prescription and the medical report for narcotic or psychotropic medicines, while another answer there and its medicines list accept a prescription or an attested medical report. Carry both to be safe: a dated, stamped prescription (issued within 3 months) and an attested medical report (issued within 1 year) naming the medicine, dose, and treatment duration.",
       "quantity": "up to a 3-month supply (or the length of stay, whichever is less)"
     },
     "notes": "The Emirates Drug Establishment (EDE) — which took over the Ministry of Health and Prevention's controlled-medicines functions on 29 Dec 2025 under Federal Decree-Law No. 38 of 2024 — offers an optional electronic pre-approval permit before travel. It is not strictly mandatory: you may instead carry the medicine with your documents and declare it at the port of entry. The list is dated 15/09/2022 and remains EDE's published schedule. It says a substance's absence from the list doesn't mean it's uncontrolled, so check any other controlled medicine with EDE directly.",
@@ -6905,7 +6967,7 @@
       "name": "Emirates Drug Establishment (EDE) — Issue of Permit to Import Medicines for Personal Use / Controlled and Semi-Controlled Medicines List",
       "url": "https://www.ede.gov.ae/en/w/issue-of-permit-to-import-medicines-for-personal-use"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "procedure": {
@@ -7233,7 +7295,9 @@
       "armodafinil",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta",
+      "elvanse"
     ],
     "destination": "SG",
     "category": "medication",
@@ -7247,7 +7311,7 @@
       "name": "Health Sciences Authority (HSA) — Document guide for bringing in personal medications (Appendix A: List of controlled substances)",
       "url": "https://file.go.gov.sg/document-guide-for-bringing-in-personal-medications.pdf"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "procedure": {
@@ -7522,7 +7586,9 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta",
+      "elvanse"
     ],
     "destination": "US",
     "category": "medication",
@@ -7537,7 +7603,7 @@
       "name": "U.S. Drug Enforcement Administration / eCFR -- 21 CFR 1301.26, Exemption of certain persons from registration for personal use of controlled substances",
       "url": "https://www.ecfr.gov/current/title-21/chapter-II/part-1301/section-1301.26"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -7614,7 +7680,9 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta",
+      "elvanse"
     ],
     "destination": "GB",
     "category": "medication",
@@ -7629,7 +7697,7 @@
       "name": "gov.uk -- Taking controlled drugs into the UK",
       "url": "https://www.gov.uk/travelling-controlled-drugs"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -7787,8 +7855,6 @@
       "psychotropic medication",
       "amphetamine",
       "adderall",
-      "vyvanse",
-      "lisdexamfetamine",
       "ritalin",
       "methylphenidate",
       "xanax",
@@ -7803,7 +7869,8 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "destination": "CA",
     "category": "medication",
@@ -7818,7 +7885,7 @@
       "name": "Canada Border Services Agency -- Memorandum D19-9-2, Importation and Exportation of Controlled Substances and Precursors",
       "url": "https://www.cbsa-asfc.gc.ca/publications/dm-md/d19/d19-9-2-eng.html"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -7887,7 +7954,8 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "destination": "AU",
     "category": "medication",
@@ -7902,7 +7970,7 @@
       "name": "Australian Government Office of Drug Control -- Travelling to Australia with medicines and medical devices",
       "url": "https://www.odc.gov.au/travellers/travelling-or-australia-medicines-and-medical-devices"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -8225,7 +8293,8 @@
       "adderall",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "destination": "NZ",
     "category": "medication",
@@ -8240,7 +8309,7 @@
       "name": "New Zealand Customs Service -- Prohibited and restricted items: medicines",
       "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -8433,7 +8502,12 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "tramadol",
+      "vyvanse",
+      "elvanse",
+      "lisdexamfetamine",
+      "concerta"
     ],
     "destination": "SA",
     "category": "medication",
@@ -8442,13 +8516,13 @@
       "description": "Any narcotic drug or psychotropic substance carried by a traveler for personal treatment must be cleared in advance through SFDA's Controlled Drugs System (CDS) at cds.sfda.gov.sa before arrival in or departure from Saudi Arabia, and declared. Saudi Arabia's schedules list morphine and oxycodone as narcotics and amphetamine (Adderall) as a psychotropic substance; on the UN's international lists these medicines also include methylphenidate (Ritalin), alprazolam (Xanax), diazepam (Valium) and codeine. Clearance requires either (a) a detailed medical report from a licensed medical institution, issued within the last 6 months, naming the diagnosis, treatment plan, and the drug's scientific name and dosage, or (b) a doctor's prescription in the patient's name, issued within the last 6 months, with diagnosis, drug details and the institution's seal — plus a copy of the patient's ID and a signed pledge that the medicine is for the named patient's own use at their own risk.",
       "quantity": "up to 30 days' use or your stay, whichever is shorter; SFDA can make an exception if the drug or an alternative isn't sold in Saudi Arabia"
     },
-    "notes": "These can't be cleared for travelers under any circumstances, even with a prescription: Category D of Schedule I, Category A of Schedule II, and the psychotropics fenetylline, methaqualone and secobarbital. Morphine and oxycodone are in Schedule I Category A, and amphetamine is in Schedule II Category B, so they are outside those bans. For any other medicine, check its category with SFDA before you apply (Narcotic.Drug@sfda.gov.sa). Apply through the CDS system before travel; the guidance doesn't state a fixed processing time.",
+    "notes": "These can't be cleared for travelers under any circumstances, even with a prescription: Category D of Schedule I, Category A of Schedule II, and the psychotropics fenetylline, methaqualone and secobarbital. Morphine and oxycodone are in Schedule I Category A, amphetamine and methylphenidate in Schedule II Category B, and alprazolam and diazepam in Schedule II Category D. Saudi Arabia also controls tramadol as a narcotic and lisdexamfetamine (Vyvanse) as a psychotropic. All of these are outside the bans, so they need clearance. Codeine is a controlled narcotic, but tablets or capsules with 8 mg of codeine or less are treated as prescription medicines, not under the narcotics law. For any other medicine, check its category with SFDA before you apply (Narcotic.Drug@sfda.gov.sa). Apply through the CDS system before travel; the guidance doesn't state a fixed processing time.",
     "summary": "Narcotic and psychotropic medicines need SFDA clearance online before you travel: up to 30 days' use, or your stay if shorter. Some categories can't be cleared.",
     "legal_source": {
       "name": "Saudi Food and Drug Authority (SFDA) — Controlled Drugs System (CDS), User Manual for Traveler Clearance, Article (6): Procedures and Controls for Clearance",
       "url": "https://cds.sfda.gov.sa/HomeFiles/TravilerJourneyEnglish.pdf"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "procedure": {
@@ -8507,6 +8581,11 @@
         "claim": "Days: 30 days; quantity per prescription or medical report; medicines must be disclosed",
         "name": "Saudi Food and Drug Authority, Controlled Product Department — country information submitted to the International Narcotics Control Board (1 January 2025)",
         "url": "https://www.incb.org/documents/Travellers/files/SAU_ENG_2025.pdf"
+      },
+      {
+        "claim": "of their components contain 8 milligrams of Codeine or less in the",
+        "name": "Saudi Food and Drug Authority",
+        "url": "https://sfda.gov.sa/sites/default/files/2024-12/Schedules%20KSA.pdf"
       }
     ],
     "letter": {
@@ -8545,7 +8624,8 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "destination": "PH",
     "category": "medication",
@@ -8560,7 +8640,7 @@
       "name": "Philippine Dangerous Drugs Board — Board Regulation No. 1, Series of 2014 (Comprehensive Amendments to Board Regulation No. 3, Series 2003), Section 35: Carrying of Dangerous Drugs and/or Drug Preparation containing Controlled Chemical by International Travelers",
       "url": "https://ddb.gov.ph/images/Board_Regulation/2014/BD.REG1.14.pdf"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "procedure": {
@@ -8719,7 +8799,11 @@
       "controlled substance",
       "psychotropic medication",
       "narcotic medication",
-      "controlled medication"
+      "controlled medication",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam"
     ],
     "destination": "ID",
     "category": "medication",
@@ -8734,7 +8818,7 @@
       "name": "Badan POM (Indonesian FDA) — Special Access Scheme: importing personal medicines to Indonesia",
       "url": "https://sertifikasicdob.pom.go.id/wasdisobat/sas/"
     },
-    "verified_at": "2026-10-19",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "letter": {
@@ -9684,7 +9768,7 @@
   {
     "destination": "SE",
     "category": "medication",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "legal_source": {
@@ -9711,7 +9795,8 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "verdict": "allowed_with_limits",
     "limits": {
@@ -10393,7 +10478,10 @@
       "oxycodone",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "xanax",
+      "valium",
+      "diazepam"
     ],
     "destination": "KR",
     "category": "medication",
@@ -10408,7 +10496,7 @@
       "name": "Ministry of Food and Drug Safety (Korea) — permit requirement for entering Korea with medicines containing controlled substances",
       "url": "https://www.mfds.go.kr/eng/brd/m_60/view.do?seq=75669"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -10550,7 +10638,9 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "codeine",
+      "concerta"
     ],
     "destination": "CN",
     "category": "medication",
@@ -10558,13 +10648,13 @@
     "limits": {
       "description": "\"因治疗疾病需要，个人凭医疗机构出具的医疗诊断书、本人身份证明，可以携带单张处方最大用量以内的麻醉药品和第一类精神药品\" (\"For treatment of illness, an individual, upon presenting a medical diagnosis certificate issued by a medical institution and personal ID, may carry narcotic drugs and Category I psychotropic substances not exceeding the maximum quantity of a single prescription\") — Art. 44, Regulations on the Administration of Narcotic Drugs and Psychotropic Substances (State Council Order No. 442). If you carry these medicines into or out of China, customs releases them on the basis of personal use and a reasonable amount. Healthcare workers carrying such drugs for medical duty need a certificate from a provincial drug-supervision department instead."
     },
-    "notes": "Which specific common Western medications (e.g. Adderall/amphetamine-class ADHD stimulants) count as \"Category I psychotropic substances\" under China's own drug schedule was not independently confirmed against a named-substance list — Amphetamine and methylphenidate are psychotropic substances on the UN's international list, but we haven't read China's own category list, so don't assume which category a specific drug is in. Morphine and oxycodone are named in China's narcotic drugs catalogue. Brand names are listed for search only: OxyContin contains oxycodone.",
+    "notes": "Which specific common Western medications (e.g. Adderall/amphetamine-class ADHD stimulants) count as \"Category I psychotropic substances\" under China's own drug schedule was not independently confirmed against a named-substance list — Amphetamine and methylphenidate are psychotropic substances on the UN's international list, but we haven't read China's own category list, so don't assume which category a specific drug is in. China's psychotropic catalogue lists amphetamine and methylphenidate in Category I, and codeine, morphine and oxycodone are on its narcotic drugs list, so this rule covers them. Brand names are listed for search only: Adderall contains amphetamine, Ritalin and Concerta contain methylphenidate, and OxyContin contains oxycodone. Benzodiazepines such as alprazolam and diazepam, and tramadol, are Category II: see the separate entry. The catalogue is the 2013 edition and has been amended since.",
     "summary": "Narcotic and Category I psychotropic medicines: up to one prescription's maximum, with a medical diagnosis certificate and ID.",
     "legal_source": {
       "name": "麻醉药品和精神药品管理条例 (Regulations on the Administration of Narcotic Drugs and Psychotropic Substances), State Council Order No. 442, Art. 44",
       "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/200803/t20080328_780477.html"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -10832,7 +10922,14 @@
       "stimulant medication",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "valium",
+      "diazepam",
+      "xanax",
+      "alprazolam",
+      "ritalin",
+      "concerta",
+      "methylphenidate"
     ],
     "category": "medication",
     "verdict": "depends",
@@ -10846,7 +10943,7 @@
       "url": "https://www.drugoffice.gov.hk/eps/do/en/consumer/news_informations/faq.html"
     },
     "destination": "HK",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "procedure": {
@@ -11353,7 +11450,9 @@
       "diazepam",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "codeine",
+      "elvanse"
     ],
     "destination": "IE",
     "category": "medication",
@@ -11361,13 +11460,13 @@
     "limits": {
       "description": "From non-Schengen countries (e.g. US, UK, Canada, Australia, Asia): the Department of Health's general rule applies — up to 3 months' supply for personal use, original packaging, and a prescription or doctor's/pharmacist's letter inside the package; a customs officer must be satisfied the documents support the amount and personal use. From Schengen countries (since 1 April 2023): an Article 75 Certificate issued or authenticated by your own country's competent authority is required for any prescribed product containing a controlled drug in Schedule II or III of the Misuse of Drugs Regulations 2017, with a separate certificate for each drug. Prescribed cannabis-based products are not permitted to be brought into Ireland. The sources conflict. The Department of Health's page (last updated April 2023) says visitors may bring up to 3 months' supply of prescription medicines. Ireland's statement to the International Narcotics Control Board (31 March 2025) gives a 30-day supply for narcotic and psychotropic drugs. Customs has the final say."
     },
-    "notes": "Ireland's own statute (Misuse of Drugs Regulations 2017, S.I. 173/2017) lists amphetamine, dexamphetamine, lisdexamfetamine, methylphenidate (Ritalin/Concerta), oxycodone, methadone, buprenorphine and fentanyl in Schedule 2, so ADHD stimulants and strong opioids are Schedule 2 drugs — and need the Article 75 Certificate when arriving from a Schengen country. Alprazolam (Xanax), diazepam (Valium) and zolpidem are in Schedule 4, which the Department's Article 75 rule does not cover. Methadone and buprenorphine for opioid substitution may be brought in from the Schengen Area with an Article 75 Certificate. To check a specific product's schedule, use the HPRA 'search for a medicine' tool; for personal-medication queries the Department points to enforcementcontrol@hpra.ie. The Department page describes the non-Schengen rule in general terms only and does not name a separate certificate for non-Schengen visitors — carry full documentation regardless, since Irish Customs has the final say.",
+    "notes": "Ireland's own statute (Misuse of Drugs Regulations 2017, S.I. 173/2017) lists amphetamine, dexamphetamine, lisdexamfetamine, methylphenidate (Ritalin/Concerta), oxycodone, methadone, buprenorphine and fentanyl in Schedule 2, so ADHD stimulants and strong opioids are Schedule 2 drugs — and need the Article 75 Certificate when arriving from a Schengen country. Alprazolam (Xanax), diazepam (Valium) and zolpidem are in Schedule 4, which the Department's Article 75 rule does not cover. Methadone and buprenorphine for opioid substitution may be brought in from the Schengen Area with an Article 75 Certificate. To check a specific product's schedule, use the HPRA 'search for a medicine' tool; for personal-medication queries the Department points to enforcementcontrol@hpra.ie. The Department page describes the non-Schengen rule in general terms only and does not name a separate certificate for non-Schengen visitors — carry full documentation regardless, since Irish Customs has the final say. Codeine is a Schedule 2 drug. Combination medicines with no more than 100 mg of codeine per dose unit (2.5% in liquids and other undivided forms) are in Schedule 5, the least controlled schedule. Tramadol isn't named in the 2017 Regulations as made, so check later amendments with the HPRA.",
     "summary": "From outside Schengen: the sources conflict, 3 months or 30 days. Bring 30 days' supply or ask first. From Schengen: an Article 75 certificate for Schedule II–III drugs.",
     "legal_source": {
       "name": "Department of Health (Ireland) — Travelling into Ireland with prescribed narcotics and/or psychotropic substances",
       "url": "https://www.gov.ie/en/department-of-health/services/travelling-into-ireland-from-schengen-countries-with-prescribed-narcotics-andor-psychotropic-substances/"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -11666,7 +11765,8 @@
       "sleeping pills",
       "stimulant medication",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "category": "medication",
     "verdict": "depends",
@@ -11680,7 +11780,7 @@
       "url": "https://pharmacy.moh.gov.my/sites/default/files/document-upload/travellers-guide-bringing-medication-malaysia-personal-use-edited-16012019.pdf"
     },
     "destination": "MY",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -12069,7 +12169,7 @@
   {
     "destination": "GE",
     "category": "medication",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "slug": "controlled-medication-ge",
@@ -12089,13 +12189,16 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "valium",
+      "concerta",
+      "tramadol"
     ],
     "verdict": "depends",
     "limits": {
       "description": "\"A person can bring into the territory of Georgia 31 days’ supply of narcotic drugs and psychotropic substances for personal use (except of “narcotic drugs strictly restricted for free circulation” included in the list 1 of annex 1 of law of Georgia on “Narcotic drugs, psychotropic substances, Precursors and Narcological Assistance”).\" You must present, together with your customs declaration: a photocopy of the prescription translated into English and certified by an apostille (name, surname, gender and age, diagnosis, brand and generic names, dosage form, quantity, method of use and duration of treatment); the prescribing physician’s certificate, translated into English and certified per the law of the departure country; and a document signed and sealed by an authorised person and apostilled (authority name, address, contact person, phone, country of destination)."
     },
-    "notes": "Customs checks the documents against what you carry, signs and seals them and returns them to you; keep them for your whole stay (handing them in on departure is not mandatory). Anything on List 1 of Annex 1 cannot be brought in even with a prescription. Amphetamine, methylphenidate, morphine and oxycodone are on List II of the law's annex, not the banned List I. Georgia told the International Narcotics Control Board in 2024 that substances in Schedule IV of the 1961 Convention and Schedule I of the 1971 Convention are prohibited. The Revenue Service’s brochure also lists narcotic drugs, psychotropic substances and \"medications subject to the special control\" among goods needing permits/certificates. The UK government warns that foreign nationals have been detained, prosecuted and fined even with a valid prescription, so check your medicine with the Georgian authorities (drugcontrol@moh.gov.ge) before you travel.",
+    "notes": "Customs checks the documents against what you carry, signs and seals them and returns them to you; keep them for your whole stay (handing them in on departure is not mandatory). Anything on List 1 of Annex 1 cannot be brought in even with a prescription. Amphetamine, methylphenidate, morphine and oxycodone are on List II of the law's annex, not the banned List I. Georgia told the International Narcotics Control Board in 2024 that substances in Schedule IV of the 1961 Convention and Schedule I of the 1971 Convention are prohibited. The Revenue Service’s brochure also lists narcotic drugs, psychotropic substances and \"medications subject to the special control\" among goods needing permits/certificates. The UK government warns that foreign nationals have been detained, prosecuted and fined even with a valid prescription, so check your medicine with the Georgian authorities (drugcontrol@moh.gov.ge) before you travel. Georgia treats codeine-containing medicines, tramadol, pregabalin and pseudoephedrine as controlled. The UK government warns that non-prescription medicines containing codeine are illegal in Georgia. Alprazolam (Xanax) and diazepam (Valium) are on List III, and tramadol, codeine and methylphenidate (Ritalin) are on List II.",
     "summary": "Up to 31 days' supply of narcotic or psychotropic medicine, with an apostilled prescription, doctor's certificate and legalised document.",
     "legal_source": {
       "name": "Ministry of Foreign Affairs of Georgia — Bringing Narcotic Drugs and Psychotropic Substances to Georgia (official guidance PDF)",
@@ -12421,7 +12524,8 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "destination": "MV",
     "category": "medication",
@@ -12435,7 +12539,7 @@
       "name": "Maldives Food and Drug Authority — Guideline on Good Import Practice (MTG/RE-IP/GLN-TE 007, 13.02.2020), §§4.7–4.9",
       "url": "https://health.gov.mv/storage/uploads/50wNdLqA/bixuazbn.pdf"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -12843,7 +12947,9 @@
       "oxycodone",
       "oxycontin",
       "oxy",
-      "morphine"
+      "morphine",
+      "valium",
+      "concerta"
     ],
     "destination": "RS",
     "category": "medication",
@@ -12857,7 +12963,7 @@
       "name": "Customs Administration of the Republic of Serbia — Passenger Customs Clearance FAQ (Tourists)",
       "url": "https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -13124,7 +13230,14 @@
       "stimulant medication",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "valium",
+      "diazepam",
+      "concerta",
+      "vyvanse",
+      "elvanse",
+      "lisdexamfetamine",
+      "tramadol"
     ],
     "destination": "TW",
     "category": "medication",
@@ -13132,13 +13245,13 @@
     "limits": {
       "description": "For personal Schedule 1-3 controlled drugs (examples the Ministry gives: sleeping pills like zolpidem, triazolam, flunitrazepam, and opioids like morphine and fentanyl), \"the amount cannot exceed that on the prescription,\" a medical institution certificate or a diagnostic certificate/prescription copy from the attending physician is required, and the total is capped at a 6-month supply. For Schedule 1-3 controlled drugs specifically, travelers may send TFDA \"a declaration and medical diagnostic certificate to apply for a certification document\" in advance under Article 18 of the Enforcement Rules for the Controlled Drugs Act."
     },
-    "notes": "Taiwan's list of controlled drugs puts morphine in Schedule 1, and amphetamine and oxycodone in Schedule 2, so this process applies to them. Brand names are listed for search only: Adderall contains amphetamine and OxyContin contains oxycodone. The Ministry's guidance doesn't say how it treats ADHD medicines in practice, so check with TFDA before you travel with one. Controlled drugs must be carried on the person at all times and cannot be sent by mail or courier.",
+    "notes": "Taiwan's list of controlled drugs puts morphine in Schedule 1, and amphetamine and oxycodone in Schedule 2, so this process applies to them. Brand names are listed for search only: Adderall contains amphetamine and OxyContin contains oxycodone. The Ministry's guidance doesn't say how it treats ADHD medicines in practice, so check with TFDA before you travel with one. Controlled drugs must be carried on the person at all times and cannot be sent by mail or courier. Codeine products with more than 1 gram of codeine per 100 ml (or 100 g) are controlled drugs in Taiwan, Schedule 2 or 3 by strength. Weaker products aren't on the list of controlled drugs.",
     "summary": "Schedule 1–3 controlled drugs: no more than prescribed, with a doctor's certificate, up to 6 months' supply.",
     "legal_source": {
       "name": "Ministry of Health and Welfare (Taiwan) — Pay Attention to Carrying Controlled Drugs Into and Out of a Country",
       "url": "https://www.mohw.gov.tw/cp-6570-74684-2.html"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -13580,7 +13693,12 @@
       "stimulant medication",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate"
     ],
     "destination": "AL",
     "category": "medication",
@@ -13594,7 +13712,7 @@
       "name": "General Directorate of Customs (Republic of Albania) — Narcotics and Psychotropic Substances and human trafficking",
       "url": "https://www.dogana.gov.al/english/c/177/239/narcotics-and-psychotropic-substances-and-human-trafficking"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "transit": {
@@ -13991,7 +14109,8 @@
       "diazepam",
       "sleeping pills",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "destination": "CY",
     "category": "medication",
@@ -14006,7 +14125,7 @@
       "name": "Cyprus Ministry of Health, Pharmaceutical Services — Narcotics and Psychotropics (permits for visitors carrying controlled medicines)",
       "url": "https://www.moh.gov.cy/moh/phs/phs.nsf/drugsphych_en/drugsphych_en"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "procedure": {
@@ -14261,7 +14380,15 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "LK",
     "category": "medication",
@@ -14272,7 +14399,7 @@
       "name": "Bringing Personal Medicines into Sri Lanka — National Medicines Regulatory Authority (NMRA)",
       "url": "https://www.nmra.gov.lk/announcements/bringing-personal-medicines-into-sri-lanka"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -14902,7 +15029,15 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "DO",
     "category": "medication",
@@ -14910,13 +15045,13 @@
     "limits": {
       "description": "Controlled or psychotropic medicines for personal use are allowed only with the doctor's prescription that justifies their use during your stay; quantity must match your stay and dosage."
     },
-    "notes": "DGA Manual del Viajero, FAQ 4: 'En el caso de sustancias controladas o psicotrópicas, debes presentar la receta médica que justifique su consumo durante la estadía.' PDF manual: '...debiendo mostrarse la receta médica, en caso de que se trate de sustancias psicotrópicas.' Customs does not name specific drugs. We could not find a Ministry of Public Health (DIGEMAPS) or DNCD page on travellers' controlled medication, so any extra Ministry authorisation for large quantities or particular substances is unconfirmed. Separately, Customs lists 'sustancias psicotrópicas' without a prescription among prohibited/restricted items, and Canada's advice notes the Dominican Republic's zero-tolerance policy on illegal drugs. Keep medicines in original packaging with the prescription. Ley 50-88 lists amphetamine, morphine and oxycodone in Category II, not Category I (no accepted medical use), and medicines in Categories II to IV are dispensed in the country on prescription. Brand names are for search only.",
+    "notes": "DGA Manual del Viajero, FAQ 4: 'En el caso de sustancias controladas o psicotrópicas, debes presentar la receta médica que justifique su consumo durante la estadía.' PDF manual: '...debiendo mostrarse la receta médica, en caso de que se trate de sustancias psicotrópicas.' Customs does not name specific drugs. We could not find a Ministry of Public Health (DIGEMAPS) or DNCD page on travellers' controlled medication, so any extra Ministry authorisation for large quantities or particular substances is unconfirmed. Separately, Customs lists 'sustancias psicotrópicas' without a prescription among prohibited/restricted items, and Canada's advice notes the Dominican Republic's zero-tolerance policy on illegal drugs. Keep medicines in original packaging with the prescription. Ley 50-88 lists amphetamine, morphine and oxycodone in Category II, not Category I (no accepted medical use), and medicines in Categories II to IV are dispensed in the country on prescription. Brand names are for search only. Ley 50-88 lists codeine and methylphenidate in Category II and alprazolam and diazepam in Category IV. Low-dose codeine combinations (no more than 90 mg per dose with a non-narcotic active ingredient) are in Category III. All of these are controlled, so bring the prescription.",
     "summary": "Allowed for personal use only with the doctor's prescription justifying its use during your stay; the amount must match your stay and dosage.",
     "legal_source": {
       "name": "Dirección General de Aduanas (DGA) — Manual del Viajero (traveller FAQ page)",
       "url": "https://www.aduanas.gob.do/manual-del-viajero/"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "letter": {
@@ -15518,7 +15653,13 @@
       "adderall",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "xanax",
+      "valium",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "AR",
     "category": "medication",
@@ -15527,13 +15668,13 @@
       "description": "Carry a legalised medical prescription. Under the Mercosur rule applied in Argentina, it must show your name and address; the medicine, active ingredient, strength, form, quantity and dosage; and the date, name, address, signature and registration of the prescriber. It must be authorised by the health authority. Patients in transit present this document to health or police authorities at the airport or border.",
       "quantity": "up to 30 days, with legalised prescription"
     },
-    "notes": "Source: argentina.gob.ar Derecho Fácil summary of Mercosur GMC Resolution 66/2000, which ANMAT applies. It covers travel between Argentina, Brazil, Paraguay, Uruguay and Venezuela, and no official page was found on how travellers from outside Mercosur are treated, so confirm with ANMAT before travelling. ARCA lists 'Estupefacientes' as prohibited in baggage. ANMAT's control lists include methadone, hydrocodone and hydromorphone (narcotics, Ley 17.818) and amphetamine, alprazolam, clonazepam, diazepam and lorazepam (psychotropics, Ley 19.303). Methylphenidate was not checked. Medicines not registered in Argentina may need an ANMAT exceptional-access (RAEM-NR) authorisation; that procedure is for imports and may not cover a traveller's own supply. ANMAT's statement to the International Narcotics Control Board (14 June 2019) asks for a valid prescription and sets a limit of 30 days for narcotics and for psychotropics. It lists no prohibited substance. Morphine, oxycodone and amphetamine are on the UN's international control lists; brand names are for search only.",
+    "notes": "Source: argentina.gob.ar Derecho Fácil summary of Mercosur GMC Resolution 66/2000, which ANMAT applies. It covers travel between Argentina, Brazil, Paraguay, Uruguay and Venezuela, and no official page was found on how travellers from outside Mercosur are treated, so confirm with ANMAT before travelling. ARCA lists 'Estupefacientes' as prohibited in baggage. ANMAT's control lists include methadone, hydrocodone and hydromorphone (narcotics, Ley 17.818) and amphetamine, alprazolam, clonazepam, diazepam and lorazepam (psychotropics, Ley 19.303). Medicines not registered in Argentina may need an ANMAT exceptional-access (RAEM-NR) authorisation; that procedure is for imports and may not cover a traveller's own supply. ANMAT's statement to the International Narcotics Control Board (14 June 2019) asks for a valid prescription and sets a limit of 30 days for narcotics and for psychotropics. It lists no prohibited substance. Morphine, oxycodone and amphetamine are on the UN's international control lists; brand names are for search only. Methylphenidate and codeine are on the UN's international control lists; brand names are for search only. Tramadol and lisdexamfetamine (Vyvanse) weren't found on an Argentine list we read.",
     "summary": "Carry a legalised prescription that meets the Mercosur rule and is authorised by the health authority.",
     "legal_source": {
       "name": "Argentina.gob.ar Derecho Fácil — Mercosur: Traslado de medicamentos (Resolución GMC 66/2000)",
       "url": "https://www.argentina.gob.ar/justicia/derechofacil/leysimple/mercosur-traslado-de-medicamentos"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "transit": {
@@ -16028,7 +16169,8 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "destination": "JO",
     "category": "medication",
@@ -16043,7 +16185,7 @@
       "name": "Jordan Food and Drug Administration (Narcotic & Psychotropic Substances Control Department) — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (2025)",
       "url": "https://www.incb.org/documents/Travellers/files/JOR_2025_ENG.pdf"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -16231,7 +16373,8 @@
       "morphine",
       "fentanyl",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "destination": "CR",
     "category": "medication",
@@ -16246,7 +16389,7 @@
       "name": "Decreto Ejecutivo N° 45161-S, Reglamento para el control de drogas, estupefacientes y psicotrópicas (17 Jun 2025), art. 57 — SCIJ/Sinalevi, Procuraduría General de la República",
       "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=105221&param2=147500&param3=1"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "procedure": {
@@ -16544,7 +16687,8 @@
       "sleeping pills",
       "painkillers",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "valium"
     ],
     "destination": "QA",
     "category": "medication",
@@ -16559,7 +16703,7 @@
       "name": "Ministry of Public Health Qatar, Pharmacy and Drug Control Department — 'Controls and Regulations for the release of narcotic drugs, psychotropic substances and psychoactive drugs in the possession of patients arriving in or departing the State of Qatar' (Guideline of Controlled Drugs for Travellers, PDF)",
       "url": "https://www.moph.gov.qa/_layouts/15/download.aspx?SourceUrl=/Admin/Lists/PublicationsAttachments/Attachments/201/Guideline-of-Controlled-Drugs-for-Travellers%20-%20English.pdf"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "procedure": {
@@ -16609,7 +16753,14 @@
         "url": "https://www.moph.gov.qa/_layouts/15/download.aspx?SourceUrl=/Admin/Lists/PublicationsAttachments/Attachments/201/Guideline-of-Controlled-Drugs-for-Travellers%20-%20English.pdf"
       },
       "verified_at": "2026-10-15"
-    }
+    },
+    "_sources": [
+      {
+        "claim": "METHYLPHENIDATE methyl α-phenyl-2-piperidine acetate",
+        "name": "Country information for travellers, as submitted to the International Narcotics Control Board",
+        "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      }
+    ]
   },
   {
     "slug": "cannabis-qa",
@@ -16984,7 +17135,15 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "CL",
     "category": "medication",
@@ -16998,7 +17157,7 @@
       "name": "Instituto de Salud Pública de Chile (ISP), Agencia Nacional de Medicamentos — Guía para ingresar medicamentos a Chile en el equipaje (published 5 June 2025)",
       "url": "https://www.ispch.gob.cl/anamed/importacion-y-exportacion/guia-para-ingresar-medicamentos-a-chile-en-el-equipaje/"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -17412,7 +17571,16 @@
       "oxycodone",
       "oxycontin",
       "oxy",
-      "morphine"
+      "morphine",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine",
+      "tramadol"
     ],
     "destination": "ME",
     "category": "medication",
@@ -17421,13 +17589,13 @@
       "description": "You may carry a medicine containing a controlled drug only in the amount needed for your own treatment for at most 30 days, and you must carry a certificate (report) from your doctor confirming you need it. The certificate may not be older than 90 days. The UK government also says to declare such medicine to customs on arrival.",
       "quantity": "Max 30 days' supply + doctor's certificate under 90 days old"
     },
-    "notes": "Law on Prevention of Drug Abuse, Art. 43: 'Lice koje prelazi državnu granicu može da posjeduje lijek koji sadrži drogu u količini potrebnoj za ličnu terapiju, za period od najviše 30 dana na osnovu potvrde (izvještaja) izabranog doktora ili doktora medicine specijaliste...' and 'Potvrda o neophodnosti posjedovanja lijeka ne može biti starija od 90 dana.' The same rule (30 days, certificate from a vet, under 90 days old) applies to medicine for an animal travelling with you, and for that the law expressly requires reporting the certificate to customs (fine EUR 100 if not, Art. 52a). For human medicine the law requires you to carry the certificate; UK FCDO advice additionally says 'You must declare any prescription medication containing narcotics to customs on arrival' and that undocumented or undeclared medication 'may lead to confiscation and legal action' — declaring is the safe course. Holding more than the doctor-prescribed amount is a misdemeanour (EUR 100–2,000, Art. 52). Amphetamine, morphine and oxycodone are on Montenegro's drug list. You can't hold more than your doctor set. The Ministry's own 2020 traveller notice (gov.me article 222598, now archived) states the same rule.",
+    "notes": "Law on Prevention of Drug Abuse, Art. 43: 'Lice koje prelazi državnu granicu može da posjeduje lijek koji sadrži drogu u količini potrebnoj za ličnu terapiju, za period od najviše 30 dana na osnovu potvrde (izvještaja) izabranog doktora ili doktora medicine specijaliste...' and 'Potvrda o neophodnosti posjedovanja lijeka ne može biti starija od 90 dana.' The same rule (30 days, certificate from a vet, under 90 days old) applies to medicine for an animal travelling with you, and for that the law expressly requires reporting the certificate to customs (fine EUR 100 if not, Art. 52a). For human medicine the law requires you to carry the certificate; UK FCDO advice additionally says 'You must declare any prescription medication containing narcotics to customs on arrival' and that undocumented or undeclared medication 'may lead to confiscation and legal action' — declaring is the safe course. Holding more than the doctor-prescribed amount is a misdemeanour (EUR 100–2,000, Art. 52). Amphetamine, morphine and oxycodone are on Montenegro's drug list. You can't hold more than your doctor set. The Ministry's own 2020 traveller notice (gov.me article 222598, now archived) states the same rule. Codeine combination medicines with no more than 100 mg of codeine per dose unit are listed separately as exempt from some international controls. The 30-day rule still applies to any medicine containing a listed drug, so carry the doctor's certificate for these too. Tramadol is a controlled drug in Montenegro.",
     "summary": "Up to 30 days' supply, with a doctor's certificate no older than 90 days.",
     "legal_source": {
       "name": "Zakon o sprječavanju zloupotrebe droga (Law on Prevention of Drug Abuse, Sl. list CG 28/11, 35/13, 84/24, 117/26) — consolidated text published by the Government of Montenegro",
       "url": "https://www.gov.me/en/documents/eaa4743a-ed71-423c-b25c-324e228e6e10"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "letter": {
@@ -17765,7 +17933,8 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "codeine"
     ],
     "destination": "JM",
     "category": "medication",
@@ -17780,7 +17949,7 @@
       "name": "Importation of Prescription Drugs to Jamaica — Embassy of Jamaica and Jamaica Mission to the EU, Brussels (reproducing Ministry of Health and Wellness guidance)",
       "url": "https://jamaica-brussels.be/importation-of-prescription-drugs-to-jamaica/"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "procedure": {
@@ -18703,7 +18872,15 @@
       "oxycodone",
       "oxycontin",
       "oxy",
-      "morphine"
+      "morphine",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "TZ",
     "category": "medication",
@@ -18718,7 +18895,7 @@
       "name": "Guidelines for Dealing in Controlled Drugs (Third Edition, January 2021), Tanzania Medicines and Medical Devices Authority, s. 2.5.2",
       "url": "https://www.tmda.go.tz/uploads/publications/en1626772669-en1626163951-GUIDELINES%20FOR%20DEALING%20IN%20CONTROLLED%20DRUGSpdf.pdf"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "letter": {
@@ -19285,7 +19462,12 @@
       "adderall",
       "amphetamine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "ritalin",
+      "concerta"
     ],
     "destination": "IL",
     "category": "medication",
@@ -19300,7 +19482,7 @@
       "name": "International Travel with Controlled Substances — Guidelines for Travelers, Pharmaceutics Division, Israel Ministry of Health (gov.il; English page updated 28.05.2024, Hebrew version updated 30.08.2026)",
       "url": "https://www.gov.il/en/pages/carrying-medication"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -20149,7 +20331,8 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "destination": "ES",
     "category": "medication",
@@ -20212,7 +20395,7 @@
         "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -20416,7 +20599,16 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "tramadol"
     ],
     "destination": "AM",
     "category": "medication",
@@ -20425,12 +20617,12 @@
     "limits": {
       "description": "Narcotic and psychotropic medicines can be brought in without a licence if you show medical documents confirming the medical need, with the product name and quantity. The documents, or certified Armenian translations with notarisation, must be given to customs. Only narcotic and psychotropic medicines registered in Armenia may be imported. Fill in a customs declaration stating the quantity prescribed and that it was legally obtained."
     },
-    "notes": "Failing to declare medicine containing narcotic or psychotropic substances can lead to administrative or criminal penalties under Armenian law. Amphetamine and dexamphetamine are banned: see the separate entry. Morphine, oxycodone and methylphenidate are on Armenia's restricted list, and they still have to be registered in Armenia to be brought in.",
+    "notes": "Failing to declare medicine containing narcotic or psychotropic substances can lead to administrative or criminal penalties under Armenian law. Amphetamine and dexamphetamine are banned: see the separate entry. Morphine, oxycodone, codeine and methylphenidate (Ritalin) are on Armenia's restricted List No 2. Alprazolam (Xanax), diazepam (Valium), tramadol and codeine combination medicines are on List No 3, controlled under set conditions. Either way, they must be registered in Armenia to be brought in.",
     "legal_source": {
       "name": "State Revenue Committee of Armenia — Guide for individuals crossing the RA border (2024)",
       "url": "https://src.am/storage/menu_contents_266/tq_sahman_hatogh_fizandz_eng_6666aa46082b1.pdf"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "letter": {
@@ -20927,7 +21119,15 @@
       "oxycodone",
       "oxycontin",
       "oxy",
-      "morphine"
+      "morphine",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "BA",
     "category": "medication",
@@ -20941,7 +21141,7 @@
       "name": "Indirect Taxation Authority of Bosnia and Herzegovina — Information for citizens and travelers",
       "url": "https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "letter": {
@@ -21123,7 +21323,13 @@
       "psychotropic medication",
       "controlled medication",
       "morphine",
-      "amphetamine"
+      "amphetamine",
+      "codeine",
+      "tramadol",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam"
     ],
     "destination": "UZ",
     "category": "medication",
@@ -21133,12 +21339,12 @@
       "description": "You must declare any narcotic or psychotropic medicines when you cross the border. Narcotic medicines: up to 7 days' supply, with a document from a medical institution in your country of residence or stay giving the medicine's name, its form and the recommended quantity for the course of treatment; show it to customs. Psychotropic medicines: up to 5 different medicines and no more than 2 packs of each, within a course of treatment, without a medical document. Which substances count as narcotic or psychotropic is set by the lists approved by Cabinet Resolution No. 330 of 12 November 2015. The 7-day allowance applies to restricted narcotics such as morphine and amphetamine. Banned ones such as oxycodone can't be brought in: see the separate entry.",
       "quantity": "Narcotics 7 days; psychotropics 5 × 2 packs"
     },
-    "notes": "Customs check the documents against what you carry and declare. Any quantity above what the medical document and your declaration show is seized and destroyed. The sources differ on psychotropics: Uzbekistan's 2024 statement to the International Narcotics Control Board gives 15 days' dose; Resolution 191, as amended in 2026, is the legal text and is used here. The lists change on 12 January 2027 under Resolution No. 359.",
+    "notes": "Customs check the documents against what you carry and declare. Any quantity above what the medical document and your declaration show is seized and destroyed. The sources differ on psychotropics: Uzbekistan's 2024 statement to the International Narcotics Control Board gives 15 days' dose; Resolution 191, as amended in 2026, is the legal text and is used here. The lists change on 12 January 2027 under Resolution No. 359. Codeine and tramadol are restricted narcotics, so the 7-day limit and a medical document apply. Combination medicines with other active ingredients are controlled only once they're added to the list by name, so check yours. The UK government warns that some non-prescription medicines, including codeine, cause problems at entry. Alprazolam (Xanax) and diazepam (Valium) are restricted psychotropics.",
     "legal_source": {
       "name": "Cabinet of Ministers of Uzbekistan, Resolution No. 191 of 8 June 2016 — Regulation on bringing in and taking out medicines and medical devices by individuals for personal use (as amended to 8 February 2026; LexUz Russian translation of the Uzbek original)",
       "url": "https://lex.uz/ru/docs/2978666"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "letter": {
@@ -21169,6 +21375,11 @@
         "claim": "359",
         "name": "Uzbekistan: Cabinet of Ministers resolutions (LexUz)",
         "url": "https://lex.uz/ru/docs/8323707"
+      },
+      {
+        "claim": "including codeine",
+        "name": "GOV.UK (FCDO) travel advice",
+        "url": "https://www.gov.uk/foreign-travel-advice/uzbekistan/entry-requirements"
       }
     ]
   },
@@ -21378,7 +21589,15 @@
       "oxycodone",
       "oxycontin",
       "oxy",
-      "morphine"
+      "morphine",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "SC",
     "category": "medication",
@@ -21392,7 +21611,7 @@
       "name": "Customs Management (Prohibited and Restricted Goods) Regulations, 2023 (S.I. 87 of 2023), Seychelles Official Gazette, 30 October 2023 — regulations 3–4, First and Second Schedules",
       "url": "https://src.gov.sc/wp-content/uploads/2023/11/SI-87-Customs-Management-Prohibited-and-Restricted-Goods-Regulations-2023.pdf"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -22978,7 +23197,15 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "VN",
     "category": "medication",
@@ -23007,7 +23234,7 @@
       "name": "GOV.UK (FCDO) — Vietnam travel advice: Health, 'Medication' (updated 21 September 2026)",
       "url": "https://www.gov.uk/foreign-travel-advice/vietnam/health"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -23319,7 +23546,12 @@
       "prescription medicine",
       "prescription drugs",
       "pills",
-      "tablets"
+      "tablets",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "codeine"
     ],
     "destination": "ZW",
     "category": "medication",
@@ -23327,13 +23559,13 @@
     "limits": {
       "description": "ZIMRA lists medicines as restricted goods, which can only be imported under a permit issued by the Medicines Control Authority of Zimbabwe (MCAZ). The page does not say whether a traveller’s own medicines in their luggage are covered, so check with MCAZ before you travel."
     },
-    "notes": "Expired drugs and dangerous or harmful drugs are among the things these controls protect against. No primary page read here gives a personal-use quantity for travellers.",
+    "notes": "Expired drugs and dangerous or harmful drugs are among the things these controls protect against. No primary page read here gives a personal-use quantity for travellers. Zimbabwe classes alprazolam, diazepam and codeine as prescription preparations. Codeine tablets with 15 mg or less per dose combined with other ingredients, and codeine liquids with 5 mg or less per dose, are outside that class. Xanax and Valium are listed for search only: they map to alprazolam and diazepam.",
     "summary": "Medicines are restricted: ZIMRA says importing them needs an MCAZ permit. Check with MCAZ whether that covers your own medicines.",
     "legal_source": {
       "name": "Zimbabwe Revenue Authority (ZIMRA) — Restricted and prohibited goods",
       "url": "https://www.zimra.co.zw/customs/restricted-and-prohibited-goods"
     },
-    "verified_at": "2026-11-03",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -23341,6 +23573,11 @@
         "claim": "Medicines are restricted goods; permit authority MCAZ",
         "name": "Zimbabwe Revenue Authority (ZIMRA) — Restricted and prohibited goods",
         "url": "https://www.zimra.co.zw/customs/restricted-and-prohibited-goods"
+      },
+      {
+        "claim": "PRESCRIPTION PREPARATIONS (P.P.)",
+        "name": "mcaz.co.zw",
+        "url": "https://www.mcaz.co.zw/wp-content/uploads/2021/11/Medicines-and-Allied-Substances-Control-General-Regulations-1991SI-150-of-1991-1.pdf"
       }
     ]
   },
@@ -24110,7 +24347,15 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "MN",
     "category": "medication",
@@ -24124,7 +24369,7 @@
       "name": "Ministry of Foreign Affairs of the Republic of Korea — 해외안전여행 (0404.go.kr), Mongolia: entry notes",
       "url": "https://0404.go.kr/ntnSafetyInfo/68/detail"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -25077,7 +25322,7 @@
   {
     "destination": "IS",
     "category": "medication",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "legal_source": {
@@ -25105,7 +25350,12 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta",
+      "vyvanse",
+      "elvanse",
+      "lisdexamfetamine",
+      "tramadol"
     ],
     "verdict": "allowed_with_limits",
     "limits": {
@@ -25423,7 +25673,19 @@
       "oxycodone",
       "oxycontin",
       "oxy",
-      "morphine"
+      "morphine",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine",
+      "vyvanse",
+      "elvanse",
+      "lisdexamfetamine",
+      "tramadol"
     ],
     "destination": "NO",
     "category": "medication",
@@ -25432,7 +25694,7 @@
       "description": "Visitors without a registered address in Norway can bring up to 30 days’ use of medicines containing narcotic substances, prescribed by a doctor or dentist for their own medical use, from any country. For more than 30 days, apply to the Norwegian Medical Products Agency for permission before travelling. Use the red “goods to declare” channel where there is one.",
       "quantity": "Up to 30 days’ use (visitors)"
     },
-    "notes": "Residents of Norway have different limits: up to 7 days’ use with documentation from abroad only, or 30 days with a medical certificate from a doctor in Norway. Visitors resident in another Schengen country can use a Schengen certificate as documentation. A granted permit is sent by post, so the agency recommends applying well before you travel; applications are not accepted by email. Norway's narcotics list marks amphetamine as forbidden, but that ban doesn't apply to medicine you bring for your own medical use under the traveller rule (Narcotics Regulation § 5 and § 19). Brand names are listed for search only.",
+    "notes": "Residents of Norway have different limits: up to 7 days’ use with documentation from abroad only, or 30 days with a medical certificate from a doctor in Norway. Visitors resident in another Schengen country can use a Schengen certificate as documentation. A granted permit is sent by post, so the agency recommends applying well before you travel; applications are not accepted by email. Norway's narcotics list marks amphetamine, methylphenidate and lisdexamfetamine as forbidden, but that ban doesn't apply to medicine you bring for your own medical use under the traveller rule (Narcotics Regulation § 5 and § 19). Brand names are listed for search only.",
     "summary": "Visitors: up to 30 days’ use with a copy of the prescription or a doctor’s letter, declared in the red channel. Longer: apply to the Medicines Agency first.",
     "procedure": {
       "title": "For more than 30 days: apply to the Norwegian Medical Products Agency",
@@ -25472,7 +25734,7 @@
       "name": "Norwegian Medical Products Agency (DMP/NOMA) — Bringing medicines into Norway by travel (updated 28/10/2026)",
       "url": "https://www.dmp.no/en/manufacturing-import-and-retailing-of-medicines/importing-medicines-for-personal-use/bringing-medicines-into-norway-by-travel"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -25802,7 +26064,15 @@
       "oxycodone",
       "oxycontin",
       "oxy",
-      "morphine"
+      "morphine",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "CH",
     "category": "medication",
@@ -25811,13 +26081,13 @@
       "description": "You can carry medicines containing narcotic or psychotropic substances without an import permit if the amount is no more than you need for 30 days and is for your own use, not for someone else. Doping substances are not allowed in any quantity.",
       "quantity": "Up to 30 days’ supply of narcotic or psychotropic medicines"
     },
-    "notes": "Customs check whether medicines are licensed or compliant and whether the quantity is within the maximum monthly amount for one person; suspicious goods are held and passed to Swissmedic, which alone decides. Doping substances are those in Annex I of the Sport Promotion Ordinance; Swiss Sport Integrity publishes the prohibited list. Swissmedic recommends carrying the medicine in its original pack in your hand luggage, with one certificate per medicine: the Schengen form from a Schengen country, a doctor's certificate from elsewhere. You can't bring more than 30 days' supply: there are no exceptions, so see a doctor in Switzerland for longer stays. You don't have to declare it and can use the green channel. Narcotic medicines can't be posted, and the person named on the prescription must carry them.",
+    "notes": "Customs check whether medicines are licensed or compliant and whether the quantity is within the maximum monthly amount for one person; suspicious goods are held and passed to Swissmedic, which alone decides. Doping substances are those in Annex I of the Sport Promotion Ordinance; Swiss Sport Integrity publishes the prohibited list. Swissmedic recommends carrying the medicine in its original pack in your hand luggage, with one certificate per medicine: the Schengen form from a Schengen country, a doctor's certificate from elsewhere. You can't bring more than 30 days' supply: there are no exceptions, so see a doctor in Switzerland for longer stays. You don't have to declare it and can use the green channel. Narcotic medicines can't be posted, and the person named on the prescription must carry them. Codeine combination medicines with no more than 100 mg codeine per dose (or 2.5% in liquids) are partly exempt from narcotics control. Ready-made tramadol medicines are exempt from it, so the rules for ordinary medicines apply: up to a month's supply for your own use.",
     "summary": "Narcotic or psychotropic medicines: up to 30 days’ supply for your own use, no permit needed. Doping substances are banned.",
     "legal_source": {
       "name": "Federal Office for Customs and Border Security (FOCBS/BAZG) — Medicines (medicinal products) and doping",
       "url": "https://www.bazg.admin.ch/en/import-of-medicines-and-doping-substances"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -25898,7 +26168,11 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta",
+      "vyvanse",
+      "elvanse",
+      "lisdexamfetamine"
     ],
     "destination": "DE",
     "category": "medication",
@@ -25913,7 +26187,7 @@
       "name": "Betäubungsmittel-Außenhandelsverordnung (BtMAHV), § 15(1) No. 2 — simplified cross-border traffic",
       "url": "https://www.gesetze-im-internet.de/btmahv/__15.html"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -25969,7 +26243,7 @@
   {
     "destination": "FR",
     "category": "medication",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "legal_source": {
@@ -25996,7 +26270,8 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "verdict": "allowed_with_limits",
     "limits": {
@@ -26068,7 +26343,7 @@
   {
     "destination": "AT",
     "category": "medication",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "legal_source": {
@@ -26095,7 +26370,8 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "verdict": "allowed_with_limits",
     "limits": {
@@ -26488,7 +26764,7 @@
   {
     "destination": "NL",
     "category": "medication",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "legal_source": {
@@ -26517,7 +26793,8 @@
       "medicinal cannabis",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "verdict": "depends",
     "limits": {
@@ -26560,7 +26837,7 @@
   {
     "destination": "IT",
     "category": "medication",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "legal_source": {
@@ -26591,7 +26868,8 @@
       "buprenorphine",
       "opioid painkiller",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "verdict": "allowed_with_limits",
     "limits": {
@@ -26645,7 +26923,7 @@
   {
     "destination": "PL",
     "category": "medication",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "legal_source": {
@@ -26672,7 +26950,8 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "verdict": "depends",
     "limits": {
@@ -26788,7 +27067,7 @@
   {
     "destination": "BE",
     "category": "medication",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "legal_source": {
@@ -26815,7 +27094,8 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "verdict": "allowed_with_limits",
     "limits": {
@@ -26845,7 +27125,7 @@
   {
     "destination": "BG",
     "category": "medication",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "legal_source": {
@@ -26870,7 +27150,9 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta",
+      "tramadol"
     ],
     "verdict": "allowed_with_limits",
     "limits": {
@@ -26914,7 +27196,7 @@
   {
     "destination": "DK",
     "category": "medication",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "legal_source": {
@@ -26941,7 +27223,9 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta",
+      "tramadol"
     ],
     "verdict": "allowed_with_limits",
     "limits": {
@@ -26976,7 +27260,7 @@
   {
     "destination": "EE",
     "category": "medication",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "legal_source": {
@@ -27003,7 +27287,12 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta",
+      "vyvanse",
+      "elvanse",
+      "lisdexamfetamine",
+      "tramadol"
     ],
     "verdict": "allowed_with_limits",
     "limits": {
@@ -27043,7 +27332,7 @@
   {
     "destination": "FI",
     "category": "medication",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "legal_source": {
@@ -27070,7 +27359,11 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta",
+      "vyvanse",
+      "elvanse",
+      "lisdexamfetamine"
     ],
     "verdict": "allowed_with_limits",
     "limits": {
@@ -27094,13 +27387,18 @@
         "claim": "Codeine and oxycodone are narcotic drugs under the 1961 Single Convention",
         "name": "International Narcotics Control Board — Yellow List: narcotic drugs under international control (65th edition, July 2026)",
         "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
+      },
+      {
+        "claim": "Lisdeksamfetamiini",
+        "name": "finlex.fi",
+        "url": "https://www.finlex.fi/fi/lainsaadanto/2008/543"
       }
     ]
   },
   {
     "destination": "HR",
     "category": "medication",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "legal_source": {
@@ -27127,7 +27425,8 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "verdict": "allowed_with_limits",
     "limits": {
@@ -27209,7 +27508,7 @@
   {
     "destination": "HU",
     "category": "medication",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "legal_source": {
@@ -27236,7 +27535,8 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "verdict": "allowed_with_limits",
     "limits": {
@@ -27271,7 +27571,7 @@
   {
     "destination": "LU",
     "category": "medication",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "legal_source": {
@@ -27298,7 +27598,8 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "verdict": "allowed",
     "limits": {
@@ -27332,7 +27633,7 @@
   {
     "destination": "PT",
     "category": "medication",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "legal_source": {
@@ -27359,7 +27660,8 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "verdict": "allowed_with_limits",
     "limits": {
@@ -27389,7 +27691,7 @@
   {
     "destination": "PE",
     "category": "medication",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "legal_source": {
@@ -27409,7 +27711,8 @@
       "valium",
       "diazepam",
       "klonopin",
-      "clonazepam"
+      "clonazepam",
+      "concerta"
     ],
     "verdict": "allowed_with_limits",
     "limits": {
@@ -27449,7 +27752,7 @@
   {
     "destination": "MA",
     "category": "medication",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "legal_source": {
@@ -27476,7 +27779,8 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "verdict": "depends",
     "limits": {
@@ -27505,7 +27809,7 @@
   {
     "destination": "SV",
     "category": "medication",
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "legal_source": {
@@ -27532,7 +27836,8 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "verdict": "allowed_with_limits",
     "limits": {
@@ -27643,7 +27948,12 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta",
+      "vyvanse",
+      "elvanse",
+      "lisdexamfetamine",
+      "tramadol"
     ],
     "destination": "LV",
     "category": "medication",
@@ -27652,13 +27962,13 @@
       "description": "Arriving from a country outside the Schengen area, you can bring medicines containing substances on Latvia's Lists II and III for your own use without a special permit: List II medicines for a course of treatment of up to 14 days, List III for up to 30 days. Carry a prescription, a copy of it or another document showing you need them. From a Schengen country, you need that country's certificate for carrying narcotic or psychotropic medicines.",
       "quantity": "List II: 14 days; List III: 30 days"
     },
-    "notes": "From Latvia's State Agency of Medicines. The same page also says private persons may not bring in narcotic analgesics, without explaining how this fits with the List II rule: if your medicine is an opioid painkiller, ask the agency before you travel. Morphine, oxycodone and methylphenidate are on List II. Amphetamine isn't covered: see the amphetamine entry. Brand names are listed for search only.",
+    "notes": "From Latvia's State Agency of Medicines. The same page also says private persons may not bring in narcotic analgesics, without explaining how this fits with the List II rule: if your medicine is an opioid painkiller, ask the agency before you travel. Morphine, oxycodone, codeine, methylphenidate and lisdexamfetamine are on List II (up to 14 days). Alprazolam, diazepam and tramadol are on List III (up to 30 days). Amphetamine isn't covered: see the amphetamine entry. Brand names are listed for search only.",
     "summary": "From outside Schengen, no permit: List II medicines up to 14 days, List III up to 30 days, with a prescription. Opioid painkillers: ask first.",
     "legal_source": {
       "name": "State Agency of Medicines of Latvia (Zāļu valsts aģentūra) — Zāļu ievešana, izvešana un saņemšana pa pastu (bringing in, taking out and receiving medicines by post)",
       "url": "https://www.zva.gov.lv/lv/pacientiem-un-sabiedribai/zales/zalu-iegade/zalu-ievesana-izvesana-un-sanemsana-pa-pastu"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -27738,7 +28048,8 @@
       "opioid painkiller",
       "morphine",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "concerta"
     ],
     "destination": "SI",
     "category": "medication",
@@ -27752,7 +28063,7 @@
       "name": "Financial Administration of the Republic of Slovenia (FURS) — Import of medications (refreshed 23 September 2020)",
       "url": "https://www.fu.gov.si/en/life_events_individuals/import_of_medications"
     },
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -27900,7 +28211,15 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "MK",
     "category": "medication",
@@ -27910,7 +28229,7 @@
       "description": "Medicine containing a psychotropic substance: you may carry up to 7 days' supply for your own use, only with medical documents. Tell the customs officer its name and quantity, and show the documents. If you're on substitution treatment for addiction, or symptom treatment for terminal cancer, you may carry up to 15 days' supply of medicine containing a listed substance, as your documents state. The same declaration applies.",
       "quantity": "7 days' supply (15 in the listed cases)"
     },
-    "notes": "The law's 7-day rule names psychotropic substances only. North Macedonia classes amphetamine as psychotropic, and morphine and oxycodone as narcotic drugs. So if you take morphine or oxycodone for any other reason, such as ordinary pain treatment, this rule gives you no clear route. Ask the Agency for Medicines and Medical Devices (info@malmed.gov.mk) before you travel. The law also bans substances in its \"List I\" except for medical or scientific use. The published classification sorts drugs into UN-style categories, with morphine and oxycodone in the first category of narcotic drugs, and it doesn't say how those categories match the law's lists. No customs page could be checked for this entry.",
+    "notes": "The law's 7-day rule names psychotropic substances only. North Macedonia classes amphetamine as psychotropic, and morphine, oxycodone and codeine as narcotic drugs. So if you take morphine, oxycodone or codeine for any other reason, such as ordinary pain treatment, this rule gives you no clear route. Ask the Agency for Medicines and Medical Devices (info@malmed.gov.mk) before you travel. The law also bans substances in its \"List I\" except for medical or scientific use. The published classification sorts drugs into UN-style categories, with morphine and oxycodone in the first category of narcotic drugs, and it doesn't say how those categories match the law's lists. No customs page could be checked for this entry. Benzodiazepines such as alprazolam (Xanax) and diazepam (Valium), and methylphenidate (Ritalin), are classed as psychotropic. Low-dose codeine combinations weren't checked.",
     "legal_source": {
       "name": "Law on Control of Narcotic Drugs and Psychotropic Substances of North Macedonia, Article 45 (consolidated text, Ministry of Health medicines portal)",
       "url": "https://lekovi.zdravstvo.gov.mk/documents.documentcomponent:downloadfile/1532346270?t%3Aac=2"
@@ -27932,7 +28251,7 @@
         "url": "https://malmed.gov.mk/"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -27986,7 +28305,8 @@
       "dexamphetamine",
       "dextroamphetamine",
       "methylphenidate",
-      "ritalin"
+      "ritalin",
+      "concerta"
     ],
     "destination": "UZ",
     "category": "medication",
@@ -28027,7 +28347,7 @@
         "url": "https://www.gov.uk/foreign-travel-advice/uzbekistan/entry-requirements"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -28082,7 +28402,15 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "KG",
     "category": "medication",
@@ -28092,7 +28420,7 @@
       "description": "You need a medical document, such as a doctor's prescription, endorsed by the health authorities of your home country, that shows your illness. The quantity and doses can't exceed what the prescription states. Substances on the national prohibited list can't be brought in. Declare your medicines on the customs form.",
       "quantity": "no more than the prescription states"
     },
-    "notes": "The prohibited list is set by Government Decision No. 543 of 9 November 2007. It couldn't be read for this entry, so we can't say whether amphetamine, morphine or oxycodone is on it. Ask a Kyrgyz embassy before you travel, as the UK government also advises. This comes from a 2013 statement to the International Narcotics Control Board, which may be out of date, and from current UK travel advice. No Kyrgyz customs or health page could be read.",
+    "notes": "The prohibited list is set by Government Decision No. 543 of 9 November 2007. It couldn't be read for this entry, so we can't say whether a specific medicine, such as amphetamine, morphine, oxycodone, codeine, methylphenidate or a benzodiazepine, is on it. Ask a Kyrgyz embassy before you travel, as the UK government also advises. This comes from a 2013 statement to the International Narcotics Control Board, which may be out of date, and from current UK travel advice. No Kyrgyz customs or health page could be read.",
     "legal_source": {
       "name": "Kyrgyz Republic — country information for travellers carrying controlled medicines, submitted to the International Narcotics Control Board (15 September 2013)",
       "url": "https://www.incb.org/documents/Travellers/files/KYR_ENG_2013.pdf"
@@ -28109,7 +28437,7 @@
         "url": "https://www.gov.uk/foreign-travel-advice/kyrgyzstan/entry-requirements"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -28121,7 +28449,8 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "codeine"
     ],
     "destination": "ID",
     "category": "medication",
@@ -28147,7 +28476,7 @@
         "url": "https://peraturan.bpk.go.id/Download/384474/permenkes-no-7-tahun-2025.pdf"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -28163,7 +28492,15 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "FJ",
     "category": "medication",
@@ -28195,7 +28532,7 @@
         "url": "https://frcs.org.fj/our-services/customs/travellers/visiting-fiji/arriving-in-fiji/"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -28209,7 +28546,12 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "codeine"
     ],
     "destination": "MO",
     "category": "medication",
@@ -28241,7 +28583,7 @@
         "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -28254,7 +28596,15 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "BN",
     "category": "medication",
@@ -28285,7 +28635,7 @@
         "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -28308,7 +28658,10 @@
       "valium",
       "diazepam",
       "klonopin",
-      "clonazepam"
+      "clonazepam",
+      "concerta",
+      "elvanse",
+      "tramadol"
     ],
     "destination": "BR",
     "category": "medication",
@@ -28318,7 +28671,7 @@
       "description": "ANVISA's current page says medicines on Lists A1, A2, A3, B1, B2, C2 and C5 can't be imported, except when you ask ANVISA for an exception before importing, for your own treatment, and there's no alternative treatment. Approval isn't guaranteed. You apply through ANVISA's SEI system with a prescription, a medical report and a signed liability statement. Once approved, you show the authorisation at the ANVISA airport post. Morphine and oxycodone are on List A1, codeine on A2, amphetamine, lisdexamfetamine and methylphenidate on A3, and alprazolam, clonazepam and diazepam on B1.",
       "quantity": "prior ANVISA approval"
     },
-    "notes": "The sources conflict. Brazil's 2016 statement to the International Narcotics Control Board allows a valid prescription with up to 5 ampoules or 30 days' treatment for Lists A1, A2, A3 and B2, and 60 days for List B1. ANVISA's import page, changed in September 2026, doesn't repeat those limits, and it doesn't separately mention medicine a visitor carries in their baggage. Treat the current page as the rule and ask ANVISA (0800 642 9782) before you travel. Brand names are listed for search only: they map to substances on Brazil's lists.",
+    "notes": "The sources conflict. Brazil's 2016 statement to the International Narcotics Control Board allows a valid prescription with up to 5 ampoules or 30 days' treatment for Lists A1, A2, A3 and B2, and 60 days for List B1. ANVISA's import page, changed in September 2026, doesn't repeat those limits, and it doesn't separately mention medicine a visitor carries in their baggage. Treat the current page as the rule and ask ANVISA (0800 642 9782) before you travel. Brand names are listed for search only: they map to substances on Brazil's lists. Tramadol is on List A2, like codeine. Preparations with no more than 100 mg of codeine or tramadol per dose (codeine also no more than 2.5%) are sold in Brazil on a special-control prescription instead of the A notification. The substances are still on List A2, and the page on personal imports doesn't make an exception for these preparations.",
     "legal_source": {
       "name": "ANVISA — Importação de produtos controlados (modified 23 September 2026)",
       "url": "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/controlados/importacao"
@@ -28345,7 +28698,7 @@
         "url": "https://www.incb.org/documents/Travellers/files/BRA_ENG_2016.pdf"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -28368,7 +28721,7 @@
       "description": "Peru's regulation says a traveller with a terminal illness may hold medicine containing a narcotic if they carry the original prescription and a certificate from their home health authority. The amount can't exceed 5 days' supply. It doesn't say what applies to other travellers, so ask DIGEMID, Peru's medicines authority, before you travel.",
       "quantity": "5 days (terminally ill travellers)"
     },
-    "notes": "Morphine and oxycodone are on List IIA and codeine on List IIB of Peru's Annex 2. The prohibited lists are IA and IB, so these aren't among the banned substances. DIGEMID's statement to the International Narcotics Control Board (27 January 2025) gives the same 5-day figure, with a footnote pointing to terminally ill travellers. It also asks for a valid prescription, a doctor's certificate endorsed at home, and the original prescription at customs. Brand names are listed for search only.",
+    "notes": "Morphine and oxycodone are on List IIA and codeine on List IIB of Peru's Annex 2. The prohibited lists are IA and IB, so these aren't among the banned substances. DIGEMID's statement to the International Narcotics Control Board (27 January 2025) gives the same 5-day figure, with a footnote pointing to terminally ill travellers. It also asks for a valid prescription, a doctor's certificate endorsed at home, and the original prescription at customs. Brand names are listed for search only. Codeine is on List IIB, and codeine preparations are also on List IVA. Neither is a prohibited list. The 5-day rule refers to medicines containing narcotics and doesn't separate the two. Tramadol isn't in DIGEMID's catalogue of Annex 2.",
     "legal_source": {
       "name": "Decreto Supremo N.° 023-2001-SA, Reglamento de estupefacientes, psicotrópicos y otras sustancias sujetas a fiscalización sanitaria, Fifth supplementary provision — Ministerio de Salud (gob.pe)",
       "url": "https://www.gob.pe/institucion/minsa/normas-legales/255646-023-2001-sa"
@@ -28390,7 +28743,7 @@
         "url": "https://www.incb.org/incb/uploads/documents/Travellers/files/PER-_2025-ENG.pdf"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -28405,7 +28758,15 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "CO",
     "category": "medication",
@@ -28415,7 +28776,7 @@
       "description": "You can bring medicine containing a narcotic or psychotropic substance for your own use, up to a standard 30-day treatment, whatever the substance. Colombia asks for a copy of the prescription. If you stay more than one month and need to continue, see a doctor licensed in Colombia for a new prescription and buy the medicine there.",
       "quantity": "30-day standard treatment"
     },
-    "notes": "This is Article 83 of Resolution 1478 of 2006. It covers narcotics on Lists I and II of the 1961 Convention and psychotropics on Lists II, III and IV of the 1971 Convention. The resolution's annex lists amphetamine under the Green List, and morphine and oxycodone are on the Yellow List. Colombia's 2016 statement to the International Narcotics Control Board gives the same 30-day limit, but says to present the original prescription at customs, so carry the original and a copy. Later resolutions changed other parts of this one. We couldn't confirm that this article is unchanged, so check with the Fondo Nacional de Estupefacientes if you can. Brand names are listed for search only.",
+    "notes": "This is Article 83 of Resolution 1478 of 2006. It covers narcotics on Lists I and II of the 1961 Convention and psychotropics on Lists II, III and IV of the 1971 Convention. The resolution's annex lists amphetamine under the Green List, and morphine and oxycodone are on the Yellow List. Colombia's 2016 statement to the International Narcotics Control Board gives the same 30-day limit, but says to present the original prescription at customs, so carry the original and a copy. Later resolutions changed other parts of this one. We couldn't confirm that this article is unchanged, so check with the Fondo Nacional de Estupefacientes if you can. Brand names are listed for search only. Article 83 names Lists I and II of the 1961 Convention. Low-dose codeine combinations are on that Convention's List III, so the article doesn't clearly cover them. Ask the Fondo Nacional de Estupefacientes before travelling with them. The resolution's annex names alprazolam, diazepam, methylphenidate and codeine; it doesn't name tramadol or lisdexamfetamine (Vyvanse).",
     "legal_source": {
       "name": "Resolución 1478 de 2006, art. 83 — Ministerio de la Protección Social, published by the Fondo Nacional de Estupefacientes",
       "url": "https://fne.minsalud.gov.co/extranet/Paginas/normatividad/docs/Resolucion_1478_2006.pdf"
@@ -28442,7 +28803,7 @@
         "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -28497,7 +28858,15 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "EC",
     "category": "medication",
@@ -28539,7 +28908,7 @@
         "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -28554,7 +28923,15 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "UY",
     "category": "medication",
@@ -28596,7 +28973,7 @@
         "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -28612,7 +28989,15 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "BS",
     "category": "medication",
@@ -28649,7 +29034,7 @@
         "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -28665,7 +29050,11 @@
       "morphine",
       "oxycodone",
       "oxycontin",
-      "oxy"
+      "oxy",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine"
     ],
     "destination": "BZ",
     "category": "medication",
@@ -28675,7 +29064,7 @@
       "description": "Belize's 2014 statement to the International Narcotics Control Board allows up to 30 days of a narcotic or psychotropic medicine. It asks for a valid prescription, a certificate from Belize's health authorities, and the original prescription shown at customs.",
       "quantity": "30 days"
     },
-    "notes": "This is the newest statement we could find for travellers. Belize's Misuse of Drugs Regulations (2020 edition) list amphetamine, morphine and oxycodone in Schedule II. They also say no controlled drug may be imported unless the person it's consigned to holds an import authorisation from the Director of Health Services, and they don't mention travellers' own medicine. Ask the Director of Health Services (dhs@health.gov.bz; these details date from 2014) before you travel. Brand names are listed for search only.",
+    "notes": "This is the newest statement we could find for travellers. Belize's Misuse of Drugs Regulations (2020 edition) list amphetamine, morphine and oxycodone in Schedule II. They also say no controlled drug may be imported unless the person it's consigned to holds an import authorisation from the Director of Health Services, and they don't mention travellers' own medicine. Ask the Director of Health Services (dhs@health.gov.bz; these details date from 2014) before you travel. Brand names are listed for search only. Low-dose codeine preparations (no more than 100 mg per dose, or 2.5%, not for injection) are in Schedule V, which the regulations except from the import and possession bans. Alprazolam and diazepam are in Schedule IV: see the benzodiazepine entry. Tramadol and lisdexamfetamine (Vyvanse) aren't in the regulations' schedules.",
     "legal_source": {
       "name": "Belize Director of Health Services — country information as submitted to the International Narcotics Control Board (18 June 2014)",
       "url": "https://www.incb.org/documents/Travellers/files/BZE_ENG_2014.pdf"
@@ -28692,7 +29081,7 @@
         "url": "https://www.agm.gov.bz/uploads/laws/63f5161530204_Cap_103_Misuse_of_Drugs_Regulations_1.pdf"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -28700,7 +29089,10 @@
     "slug": "amphetamine-za",
     "names": [
       "adderall",
-      "amphetamine"
+      "amphetamine",
+      "vyvanse",
+      "elvanse",
+      "lisdexamfetamine"
     ],
     "destination": "ZA",
     "category": "medication",
@@ -28709,7 +29101,7 @@
     "limits": {
       "description": "South Africa lists amfetamine and its salts in Schedules 7 and 8. The rule for people entering the country covers Schedules 3 to 6 only, so it gives no allowance for Adderall or other amphetamine medicine. Contact the South African Health Products Regulatory Authority (SAHPRA) before you travel and don't assume you can bring it."
     },
-    "notes": "Dexamfetamine in medicines registered in South Africa for ADHD is in Schedule 6, but Adderall also contains amfetamine salts. SAHPRA's January 2025 information for the International Narcotics Control Board gives 30 days for psychotropic substances in general and doesn't mention amphetamine; the regulation and the schedules are the legal text. Checked against the consolidated schedules of 1 August 2025. SAHPRA contact: Mokgadi.fafudi@sahpra.org.za, +27 12 501 0300.",
+    "notes": "Dexamfetamine in medicines registered in South Africa for ADHD is in Schedule 6, but Adderall also contains amfetamine salts. SAHPRA's January 2025 information for the International Narcotics Control Board gives 30 days for psychotropic substances in general and doesn't mention amphetamine; the regulation and the schedules are the legal text. Checked against the consolidated schedules of 1 August 2025. SAHPRA contact: Mokgadi.fafudi@sahpra.org.za, +27 12 501 0300. Lisdexamfetamine (Vyvanse, Elvanse) is Schedule 6 only in medicines registered in South Africa for ADHD; otherwise it's Schedule 7. The schedules don't say whether a product you bought abroad counts, so ask SAHPRA before you travel.",
     "legal_source": {
       "name": "General Regulations under the Medicines and Related Substances Act, 1965 (Government Gazette 41064, 25 August 2017), regulation 8",
       "url": "https://www.gov.za/sites/default/files/gcis_document/201708/41064gon859.pdf"
@@ -28726,7 +29118,7 @@
         "url": "https://www.sahpra.org.za/wp-content/uploads/2025/08/Consolidated-Schedules_01-August-2025.pdf"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -28767,16 +29159,25 @@
       "oxy",
       "morphine",
       "controlled medication",
-      "narcotic medication"
+      "narcotic medication",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "tramadol"
     ],
     "destination": "MU",
     "category": "medication",
     "verdict": "depends",
     "summary": "Get an import authorisation from the Ministry of Health before you travel, and carry your prescription.",
     "limits": {
-      "description": "Morphine and oxycodone are dangerous drugs in the Second Schedule of the Dangerous Drugs Act. Anyone importing a dangerous drug must apply for authorisation from the Permanent Secretary of the Ministry. Customs can detain or seize a consignment that has no authorisation."
+      "description": "Morphine, oxycodone, codeine and methylphenidate are dangerous drugs in the Second Schedule of the Dangerous Drugs Act; alprazolam, diazepam and tramadol are in the Third Schedule. Anyone importing a dangerous drug must apply for authorisation from the Permanent Secretary of the Ministry. Customs can detain or seize a consignment that has no authorisation."
     },
-    "notes": "The Act has no separate traveller allowance or personal quantity. The Mauritius Revenue Authority has applied the same rule to an airport passenger: in a 2017 case it pointed out that she had neither a medical prescription nor a Ministry of Health authorisation for her tramadol. OxyContin, Adderall and oxy are listed for search only: they map to oxycodone and amphetamine.",
+    "notes": "The Act has no separate traveller allowance or personal quantity. The Mauritius Revenue Authority has applied the same rule to an airport passenger: in a 2017 case it pointed out that she had neither a medical prescription nor a Ministry of Health authorisation for her tramadol. OxyContin, Adderall and oxy are listed for search only: they map to oxycodone and amphetamine. Codeine combined with other ingredients, at no more than 100 mg per dose unit, is an exempt preparation (Fifth Schedule), so this authorisation rule doesn't cover it. Xanax, Valium, Ritalin and Concerta are listed for search only: they map to alprazolam, diazepam and methylphenidate.",
     "legal_source": {
       "name": "Dangerous Drugs Act (Act 41 of 2000, Mauritius), section 12 and Second Schedule, version at 30 June 2017",
       "url": "https://mauritiuslii.org/akn/mu/act/2000/41/eng@2017-06-30"
@@ -28793,7 +29194,7 @@
         "url": "https://www.mra.mu/download/SeizureTramadol.pdf"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -28808,7 +29209,10 @@
       "morphine",
       "controlled medication",
       "narcotic medication",
-      "psychotropic medication"
+      "psychotropic medication",
+      "ritalin",
+      "concerta",
+      "methylphenidate"
     ],
     "destination": "ZW",
     "category": "medication",
@@ -28844,7 +29248,7 @@
         "url": "https://www.incb.org/documents/Travellers/files/ZIM_ENG_2014.pdf"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -28859,7 +29263,16 @@
       "morphine",
       "controlled medication",
       "narcotic medication",
-      "psychotropic medication"
+      "psychotropic medication",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine",
+      "tramadol"
     ],
     "destination": "GH",
     "category": "medication",
@@ -28868,7 +29281,7 @@
     "limits": {
       "description": "In 2016 Ghana's Food and Drugs Authority (FDA) told the International Narcotics Control Board that travellers with controlled medicines need a valid prescription, a doctor's certificate endorsed by their home health authorities, a certificate from Ghana's health authorities, and the original prescription at customs. Its 2025 import guideline says a prescription product for personal use needs the FDA's special approval. Neither gives a number of days."
     },
-    "notes": "The 2016 statement is old, and it set quantities by reference to annexes of UN guidelines rather than stating them. It listed no prohibited substances at that time, but it doesn't name amphetamine, morphine or oxycodone, and Ghana's current narcotics law (Act 1019 of 2020) wasn't read for this entry, so don't take this as confirmation that a specific medicine is allowed. The 2025 guideline is written for licensed importers and doesn't describe medicine in a traveller's luggage. FDA contact: fda@fda.gov.gh, +233 302 233200. OxyContin, Adderall and oxy are listed for search only: they map to oxycodone and amphetamine.",
+    "notes": "The 2016 statement is old, and it set quantities by reference to annexes of UN guidelines rather than stating them. It listed no prohibited substances at that time, but it doesn't name amphetamine, morphine or oxycodone, and Ghana's current narcotics law (Act 1019 of 2020) wasn't read for this entry, so don't take this as confirmation that a specific medicine is allowed. The 2025 guideline is written for licensed importers and doesn't describe medicine in a traveller's luggage. FDA contact: fda@fda.gov.gh, +233 302 233200. OxyContin, Adderall and oxy are listed for search only: they map to oxycodone and amphetamine. Ghana made tramadol a controlled, prescription-only substance in 2018 (Executive Instrument 168), although it isn't on the UN lists. Codeine-containing cough syrup is banned (see that entry). The FDA's import guideline also reserves diazepam 5 mg and 10 mg tablets for local production; it doesn't say how this applies to your own supply. Xanax, Valium, Ritalin and Concerta are listed for search only: they map to alprazolam, diazepam and methylphenidate.",
     "legal_source": {
       "name": "Ghana Food and Drugs Authority: country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (29 November 2016)",
       "url": "https://www.incb.org/documents/Travellers/files/GHA_ENG_2016.pdf"
@@ -28888,9 +29301,19 @@
         "claim": "Amfetamine is on the UN Green List of psychotropic substances; morphine and oxycodone are on the UN Yellow List of narcotic drugs",
         "name": "International Narcotics Control Board: Green List (36th edition, 2025) and Yellow List (65th edition)",
         "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "reclassified Tramadol as a",
+        "name": "fdaghana.gov.gh",
+        "url": "https://fdaghana.gov.gh/wp-content/uploads/2025/02/FDA-Responds-to-BBC-Africa-Eye-Investigation-Who-is-Flooding-West-Africa-with-Opioids.pdf"
+      },
+      {
+        "claim": "p. Diazepam Tablets (5 mg, 10mg).",
+        "name": "fdaghana.gov.gh",
+        "url": "https://fdaghana.gov.gh/wp-content/uploads/2024/09/GUIDELINES-ON-IMPORTATION-OF-DRUGS.pdf"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -28905,7 +29328,15 @@
       "morphine",
       "controlled medication",
       "narcotic medication",
-      "psychotropic medication"
+      "psychotropic medication",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam"
     ],
     "destination": "ZM",
     "category": "medication",
@@ -28914,7 +29345,7 @@
     "limits": {
       "description": "Zambia's medicines law exempts a traveller's own medicine from the general import permit, on terms set by regulation. Separately, anyone importing a narcotic drug or psychotropic substance for medical use must get additional authorisation from the Zambia Medicines Regulatory Authority and follow the drug laws. The law doesn't say how these two rules fit together for a traveller, and it sets no quantity."
     },
-    "notes": "The Dangerous Drugs Act lists amphetamine and morphine in its schedule and requires a licence to import scheduled drugs. Don't assume the traveller exemption covers a controlled medicine. OxyContin, Adderall and oxy are listed for search only: they map to oxycodone and amphetamine.",
+    "notes": "The Dangerous Drugs Act lists amphetamine and morphine in its schedule and requires a licence to import scheduled drugs. Don't assume the traveller exemption covers a controlled medicine. OxyContin, Adderall and oxy are listed for search only: they map to oxycodone and amphetamine. Codeine combined with other ingredients, at no more than 100 mg per dose unit and 2.5% in liquids, is excepted from the Dangerous Drugs Act's import licence. Xanax, Valium, Ritalin and Concerta are listed for search only: they map to alprazolam, diazepam and methylphenidate.",
     "legal_source": {
       "name": "Medicines and Allied Substances Act, 2013 (Zambia), sections 35 and 37",
       "url": "https://faolex.fao.org/docs/pdf/zam133737.pdf"
@@ -28936,7 +29367,7 @@
         "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -28951,7 +29382,16 @@
       "morphine",
       "controlled medication",
       "narcotic medication",
-      "psychotropic medication"
+      "psychotropic medication",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate",
+      "codeine",
+      "tramadol"
     ],
     "destination": "NG",
     "category": "medication",
@@ -28960,7 +29400,7 @@
     "limits": {
       "description": "Nigeria's medicines regulator, NAFDAC, says narcotics and controlled or psychotropic substances shouldn't be imported without an import permit and a permit to clear, and that a product containing them must be registered in Nigeria. This guidance is written for companies. It doesn't say whether medicine in a traveller's luggage is treated differently, and no personal allowance is stated."
     },
-    "notes": "We found no Nigerian rule for travellers carrying controlled medicine, so this isn't confirmation that you can or can't bring a specific medicine. NAFDAC's Narcotics and Controlled Substances Directorate: ncs@nafdac.gov.ng. OxyContin, Adderall and oxy are listed for search only: they map to oxycodone and amphetamine.",
+    "notes": "We found no Nigerian rule for travellers carrying controlled medicine, so this isn't confirmation that you can or can't bring a specific medicine. NAFDAC's Narcotics and Controlled Substances Directorate: ncs@nafdac.gov.ng. OxyContin, Adderall and oxy are listed for search only: they map to oxycodone and amphetamine. NAFDAC says only 50 mg and 100 mg tramadol are approved for use in Nigeria, and it treats stronger tablets as banned strengths. Xanax, Valium, Ritalin and Concerta are listed for search only: they map to alprazolam, diazepam and methylphenidate.",
     "legal_source": {
       "name": "NAFDAC: Guidelines for Obtaining Permit to Clear Narcotic Drugs, Psychotropic Substances, Drug Precursors and Nationally Controlled Drugs (NCS-GDL-003-02, effective 5 August 2024), ss. 1.3-1.4",
       "url": "https://nafdac.gov.ng/wp-content/uploads/Files/Resources/Guidelines/NARCOTICS_GUIDELINES/2025_Uploads/Guidelines-for-Obtaining-Permit-to-Clear-Narcotic-Drugs-Psychotropic-Substances-and-Drug-Precursors-2025.pdf"
@@ -28975,9 +29415,19 @@
         "claim": "Amfetamine is on the UN Green List of psychotropic substances; morphine and oxycodone are on the UN Yellow List of narcotic drugs",
         "name": "International Narcotics Control Board: Green List (36th edition, 2025) and Yellow List (65th edition)",
         "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
+      },
+      {
+        "claim": "We wish to emphasise that only 50mg and 100mg of Tramadol are approved for use in Nigeria.",
+        "name": "nafdac.gov.ng",
+        "url": "https://nafdac.gov.ng/speech-by-the-director-general-nafdac-prof-moji-christianah-adeyeye-at-the-destruction-exercise-of-banned-and-unregistered-tramadol-and-other-counterfeit-medicines-and-unwholesome-re-bagged-sugarat/"
+      },
+      {
+        "claim": "the prescription strengths of tramadol for medical purpose are 50 mg and 100 mg and they can be imported and prescribed with stricter controls",
+        "name": "nafdac.gov.ng",
+        "url": "https://nafdac.gov.ng/abuse-of-psychoactive-drugs-in-nigeria-our-problem-by-prof-christianah-mojisola-adeyeye/"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   },
@@ -28995,7 +29445,14 @@
       "oxycontin",
       "oxy",
       "adderall",
-      "amphetamine"
+      "amphetamine",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "ritalin",
+      "concerta",
+      "methylphenidate"
     ],
     "destination": "OM",
     "category": "medication",
@@ -29005,7 +29462,7 @@
       "description": "If your medicine contains a narcotic or psychotropic substance, Oman's Ministry of Health releases at most one month's supply, or enough for your stay if that is shorter, even if you carry more. Bring a detailed certified medical report or a prescription in your name, under 6 months old. It should give your personal details, your diagnosis, the medicine's scientific name, the dose and the length of treatment, with the doctor's signature and stamp and the health institution's stamp. Also bring a copy of your passport, and your place of stay and contact number. The ministry can seize and destroy your medicine if the report isn't adequate, and it destroys any amount above what is allowed.",
       "quantity": "one month's supply, or your stay if shorter"
     },
-    "notes": "The ministry names morphine and codeine as examples of narcotic medicines. It doesn't name oxycodone or amphetamine (Adderall). Both are on the UN's international control lists, but Oman's own schedule isn't confirmed here. The UK warns that some prescription and over-the-counter medicines are illegal in Oman without saying which, and Germany warns that some painkillers and psychiatric medicines count as illegal drugs there. Germany advises carrying a doctor's certificate in more than one language. Check your medicine with the Ministry of Health's Drug Control Department before you travel.",
+    "notes": "The ministry names morphine and codeine as examples of narcotic medicines. It doesn't name oxycodone, amphetamine (Adderall), methylphenidate (Ritalin), alprazolam (Xanax) or diazepam (Valium). All are on the UN's international control lists, but Oman's own schedule isn't confirmed here. Nothing read says how tramadol or lisdexamfetamine (Vyvanse) is treated. The UK warns that some prescription and over-the-counter medicines are illegal in Oman without saying which, and Germany warns that some painkillers and psychiatric medicines count as illegal drugs there. Germany advises carrying a doctor's certificate in more than one language. Check your medicine with the Ministry of Health's Drug Control Department before you travel.",
     "legal_source": {
       "name": "Oman Ministry of Health, Directorate General of Pharmaceutical Affairs and Drug Control — Rules and Regulations for carrying of narcotic drugs and psychotropic substances through international border for personal use",
       "url": "https://moh.gov.om/media/svnp4oep/english.pdf"
@@ -29047,7 +29504,168 @@
         "url": "https://www.incb.org/incb/uploads/documents/Psychotropics/forms/greenlist/2026/2510307E.pdf"
       }
     ],
-    "verified_at": "2026-11-06",
+    "verified_at": "2026-11-08",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "psychotropic-category-2-cn",
+    "names": [
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "tramadol",
+      "sleeping pills",
+      "benzodiazepine"
+    ],
+    "destination": "CN",
+    "category": "medication",
+    "verdict": "depends",
+    "summary": "China lists alprazolam (Xanax), diazepam (Valium) and tramadol as Category II psychotropic medicines. We found no official rule for carrying them into China.",
+    "limits": {
+      "description": "China's psychotropic catalogue puts alprazolam, diazepam and tramadol in Category II. The State Council rule that lets you carry controlled medicine into or out of China names only narcotic drugs and Category I psychotropics. Customs releases those on the basis of personal use and a reasonable amount. It doesn't mention Category II, and we found no other official rule for travellers. Carry your prescription and a doctor's letter, bring only what you need, and ask China's drug regulator or an embassy before you travel."
+    },
+    "notes": "Contact the Department of Drug Supervision, National Medical Products Administration (yaojianguansichu@nmpa.gov.cn, +86 10 88331078). The catalogue is the 2013 edition, and it has been amended since. Brand names are listed for search only: Xanax contains alprazolam and Valium contains diazepam.",
+    "legal_source": {
+      "name": "National Medical Products Administration, Ministry of Public Security and National Health and Family Planning Commission — Psychotropic Substances Catalogue (2013 edition), as republished by the Hunan Medical Products Administration",
+      "url": "http://mpa.hunan.gov.cn/mpa/ztzl/jdgz/202010/13874445/files/21616ca7499740d1818a884598a3b347.doc"
+    },
+    "_sources": [
+      {
+        "claim": "Alprazolam, diazepam and tramadol are listed in Category II",
+        "name": "Psychotropic Substances Catalogue (2013 edition)",
+        "url": "http://mpa.hunan.gov.cn/mpa/ztzl/jdgz/202010/13874445/files/21616ca7499740d1818a884598a3b347.doc"
+      },
+      {
+        "claim": "Art. 44: individuals may carry narcotic drugs and Category I psychotropics within a single prescription's maximum; customs releases them across the border on a personal-use, reasonable basis",
+        "name": "Regulations on the Administration of Narcotic Drugs and Psychotropic Substances (State Council Order No. 442), Art. 44",
+        "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/200803/t20080328_780477.html"
+      },
+      {
+        "claim": "NMPA Department of Drug Supervision contact details",
+        "name": "China — country information for travellers carrying controlled medicines, as submitted to the International Narcotics Control Board (2024)",
+        "url": "https://www.incb.org/documents/Travellers/files/CPR_ENG_2024.pdf"
+      }
+    ],
+    "verified_at": "2026-11-08",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "benzodiazepine-medication-bz",
+    "names": [
+      "benzodiazepines",
+      "sleeping pills",
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam"
+    ],
+    "destination": "BZ",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "summary": "Belize's regulations exempt these medicines from the import ban. Its 2014 statement still asks for a prescription and allows 30 days.",
+    "limits": {
+      "description": "Alprazolam and diazepam are in Schedule IV of Belize's Misuse of Drugs Regulations. Regulation 4 says the ban on importing controlled drugs doesn't apply to Schedule IV drugs, and the ban on possessing them doesn't apply when they're in a medicinal product. Belize's 2014 statement to the International Narcotics Control Board allows up to 30 days of a psychotropic medicine. It asks for a valid prescription, a certificate from Belize's health authorities, and the original prescription shown at customs.",
+      "quantity": "30 days (2014 statement)"
+    },
+    "notes": "The regulations and the 2014 statement don't say the same thing: the regulations lift the import ban, while the statement still lists documents. Carry your prescription and keep the medicine in its original packaging. If you can, check with the Director of Health Services (dhs@health.gov.bz; these details date from 2014). Brand names are listed for search only: Xanax is alprazolam and Valium is diazepam.",
+    "legal_source": {
+      "name": "Misuse of Drugs Regulations, Cap. 103, reg. 4 and Schedule IV — Subsidiary Laws of Belize, Revised Edition 2020 (Attorney General's Ministry)",
+      "url": "https://www.agm.gov.bz/uploads/laws/63f5161530204_Cap_103_Misuse_of_Drugs_Regulations_1.pdf"
+    },
+    "_sources": [
+      {
+        "claim": "Reg. 4(1) and (2)(a): Schedule IV drugs excepted from the import prohibition, and from the possession prohibition when in a medicinal product; Schedule IV lists alprazolam and diazepam",
+        "name": "Misuse of Drugs Regulations, Cap. 103, Revised Edition 2020",
+        "url": "https://www.agm.gov.bz/uploads/laws/63f5161530204_Cap_103_Misuse_of_Drugs_Regulations_1.pdf"
+      },
+      {
+        "claim": "30 days for psychotropic substances; prescription, destination certificate, original at customs",
+        "name": "Belize Director of Health Services — country information as submitted to the International Narcotics Control Board (18 June 2014)",
+        "url": "https://www.incb.org/documents/Travellers/files/BZE_ENG_2014.pdf"
+      }
+    ],
+    "verified_at": "2026-11-08",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "schedule-5-medication-za",
+    "names": [
+      "xanax",
+      "alprazolam",
+      "valium",
+      "diazepam",
+      "tramadol"
+    ],
+    "destination": "ZA",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "summary": "Up to 6 months' supply for your own use, with your prescription, a certified copy, or a letter from your prescriber.",
+    "limits": {
+      "description": "Alprazolam, diazepam and tramadol are Schedule 5 medicines in South Africa. You may bring up to the quantity you need for six months, for your own use. Carry one of these: the original prescription, a certified copy, or a letter from the person who prescribed or dispensed the medicine, giving that person's name, physical address and email address.",
+      "quantity": "up to 6 months' supply"
+    },
+    "notes": "The sources conflict: SAHPRA's January 2025 information for the International Narcotics Control Board gives 30 days for psychotropic substances, which include alprazolam and diazepam, and asks for more documents. The regulation is the legal text, but carrying what SAHPRA lists keeps you covered either way. Checked against the consolidated schedules of 1 August 2025. SAHPRA contact: Mokgadi.fafudi@sahpra.org.za, +27 12 501 0300. Xanax, Valium, Ritalin and Concerta are listed for search only: they map to alprazolam, diazepam and methylphenidate.",
+    "legal_source": {
+      "name": "General Regulations under the Medicines and Related Substances Act, 1965 (Government Gazette 41064, 25 August 2017), regulation 8",
+      "url": "https://www.gov.za/sites/default/files/gcis_document/201708/41064gon859.pdf"
+    },
+    "_sources": [
+      {
+        "claim": "A person entering the Republic may possess a Schedule 3, 4 or 5 substance for up to six months' use, with the original prescription, a certified copy, or a prescriber's or dispenser's letter",
+        "name": "General Regulations (Government Gazette 41064, 25 August 2017), regulation 8",
+        "url": "https://www.gov.za/sites/default/files/gcis_document/201708/41064gon859.pdf"
+      },
+      {
+        "claim": "Alprazolam, diazepam and tramadol are listed in Schedule 5",
+        "name": "SAHPRA: Consolidated Schedules, 1 August 2025",
+        "url": "https://www.sahpra.org.za/wp-content/uploads/2025/08/Consolidated-Schedules_01-August-2025.pdf"
+      },
+      {
+        "claim": "Psychotropic substances: 30 days",
+        "name": "SAHPRA, INCB country sheet (13 January 2025)",
+        "url": "https://www.incb.org/documents/Travellers/files/SAF-2025-ENG.pdf"
+      }
+    ],
+    "verified_at": "2026-11-08",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "slug": "codeine-cough-syrup-gh",
+    "names": [
+      "codeine cough syrup",
+      "codeine syrup",
+      "codeine cough mixture"
+    ],
+    "destination": "GH",
+    "category": "medication",
+    "verdict": "prohibited",
+    "summary": "Banned. Ghana lists codeine-containing cough syrup as a banned substance, and it will be confiscated.",
+    "limits": {
+      "description": "Ghana's Food and Drugs Authority lists codeine-containing cough syrup among banned substances in its import guideline. Any product containing a banned substance is confiscated and destroyed, and a penalty applies."
+    },
+    "notes": "The ban followed Executive Instrument 167 (2018), which banned the manufacture and sale of codeine-containing cough syrup. Codeine tablets and other codeine products are not covered by this ban: see the controlled medication entry.",
+    "legal_source": {
+      "name": "Ghana Food and Drugs Authority: Guideline on Importation of Drugs (FDA/DNC/GDL-10/02, 8 January 2024), s. 3.6 Banned Substances",
+      "url": "https://fdaghana.gov.gh/wp-content/uploads/2024/09/GUIDELINES-ON-IMPORTATION-OF-DRUGS.pdf"
+    },
+    "_sources": [
+      {
+        "claim": "Codeine containing cough syrup is listed under Banned Substances; products containing a banned substance are confiscated and destroyed and attract a penalty",
+        "name": "Ghana FDA: Guideline on Importation of Drugs (8 January 2024)",
+        "url": "https://fdaghana.gov.gh/wp-content/uploads/2024/09/GUIDELINES-ON-IMPORTATION-OF-DRUGS.pdf"
+      },
+      {
+        "claim": "Executive Instrument 167 banned the manufacture and sale of codeine-containing cough syrup",
+        "name": "Ghana FDA: response to BBC Africa Eye investigation (February 2025)",
+        "url": "https://fdaghana.gov.gh/wp-content/uploads/2025/02/FDA-Responds-to-BBC-Africa-Eye-Investigation-Who-is-Flooding-West-Africa-with-Opioids.pdf"
+      }
+    ],
+    "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
   }
