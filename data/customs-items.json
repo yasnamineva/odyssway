@@ -5867,18 +5867,36 @@
     "category": "cash",
     "verdict": "declaration_required",
     "limits": {
-      "description": "Cash/currency above the threshold must be declared to border-gate customs on arrival or departure; amounts at or below the threshold need no declaration.",
-      "quantity": "Foreign currency cash equivalent to USD 5,000 or more, OR Vietnamese dong cash of VND 15,000,000 or more"
+      "description": "On arrival and on departure, declare cash of more than US$5,000 or the equivalent in another currency, or more than VND 15,000,000. On arrival, also declare more than 300 grams of gold, including jewellery, gold bars and raw gold. Canada's advice adds that when you leave, you must present a written approval to carry foreign currency or dong in cash abroad, issued by an authorised Vietnamese credit institution or the State Bank of Vietnam.",
+      "quantity": "over US$5,000, or over VND 15,000,000"
     },
-    "notes": "Threshold set under State Bank of Vietnam Circular No. 15/2011/TT-NHNN. Declaration is also required below the threshold if the traveler intends to deposit foreign currency exceeding USD 5,000 into a Vietnamese bank account, since the stamped declaration form is needed as supporting documentation for the bank. Traveler's checks, bank/payment cards, and securities are not subject to this cash threshold.",
-    "summary": "Declare foreign cash worth US$5,000 or more, or VND 15,000,000 or more, on arrival or departure.",
+    "notes": "Vietnam's rule is set by State Bank of Vietnam Circular No. 15/2011/TT-NHNN, which couldn't be read for this entry; the figures come from the travel advice of Canada and Germany, which agree on \"more than\". Declaring at exactly US$5,000 does no harm. Declaration is also needed below the threshold if you intend to deposit more than US$5,000 of foreign currency into a Vietnamese bank account, since the bank asks for the stamped declaration.",
+    "summary": "Declare cash over US$5,000 (or the equivalent) or over VND 15,000,000 when you arrive or leave, and gold over 300 g.",
+    "cashThreshold": {
+      "amount": 5000,
+      "currency": "USD",
+      "comparison": "over",
+      "foreignOnly": true
+    },
     "legal_source": {
-      "name": "State Bank of Vietnam Circular No. 15/2011/TT-NHNN, as summarized by Vietnam Customs / Vietnam Law Magazine (official gazette text)",
-      "url": "https://www.customs.gov.vn/index.jsp?pageId=2281&aid=157007&cid=4208"
+      "name": "Government of Canada: Travel advice for Vietnam, Laws and culture: cash declarations (modified 19 October 2026)",
+      "url": "https://travel.gc.ca/destinations/vietnam"
     },
-    "verified_at": "2026-08-18",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
+    "verified_at": "2026-11-08",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Declare more than 15 million Vietnamese dong, more than US$5,000 or the equivalent in cash, and more than 300 grams of gold on arrival; on departure the same, plus a written approval from an authorised Vietnamese credit institution or the State Bank",
+        "name": "Government of Canada: Travel advice for Vietnam (modified 19 October 2026)",
+        "url": "https://travel.gc.ca/destinations/vietnam"
+      },
+      {
+        "claim": "Bargeld ausländischer Währungen im Wert über 5.000 USD und Bargeld der vietnamesischen Währung Dong im Wert über 15 Mio. VND müssen deklariert werden",
+        "name": "Auswärtiges Amt: Vietnam, Reise- und Sicherheitshinweise",
+        "url": "https://www.auswaertiges-amt.de/de/service/laender/vietnam-node/vietnamsicherheit/217274"
+      }
+    ]
   },
   {
     "slug": "alcohol-cn",

@@ -525,12 +525,12 @@ test("German drone pages: translated rules, machine-translation notice, hreflang
   await page.goto("/bring/drones/france");
   await expect(page.locator('link[rel=alternate][hreflang=de]')).toHaveAttribute("href", /\/de\/bring\/drones\/france$/);
   await expect(page.getByTestId("german-version-link")).toHaveAttribute("href", "/de/bring/drones/france");
-  // Vietnam cash isn't translated (it waits on its threshold wording).
-  const missing = await page.goto("/de/bring/cash/vietnam");
+  // Every real pair has a German page today; a pair without one gets the same not-found page.
+  const missing = await page.goto("/de/bring/cash/atlantis");
   expect(missing?.status()).toBe(404);
   await expect(page.getByTestId("de-not-found").getByRole("link", { name: "Zur englischen Fassung" })).toHaveAttribute(
     "href",
-    "/bring/cash/vietnam",
+    "/bring/cash/atlantis",
   );
 });
 
@@ -552,11 +552,10 @@ test("German index and hubs list only German pages and link back to English", as
     "/de/bring/drones/france",
   );
   await expect(page.locator('link[rel=alternate][hreflang=en]')).toHaveAttribute("href", /\/bring\/drones$/);
-  // A hub lists only countries with a German page: Nigeria's alcohol page isn't translated.
-  // Vietnam cash isn't translated yet, so the German cash hub doesn't list it.
+  // The German cash hub lists the countries that have a German cash page.
   await page.goto("/de/bring/cash");
   await expect(page.getByTestId("de-hub-list").getByRole("link", { name: "Spanien" })).toBeVisible();
-  await expect(page.getByTestId("de-hub-list").getByRole("link", { name: "Vietnam" })).toHaveCount(0);
+  await expect(page.getByTestId("de-hub-list").getByRole("link", { name: "Vietnam" })).toBeVisible();
   const missing = await page.goto("/de/bring/pets");
   expect(missing?.status()).toBe(404);
 });
