@@ -188,7 +188,12 @@ Pick by traffic and source reachability, not by map coverage.
     WordPress API `wp-json/wp/v2/servicios`; 180 days, UK and Canada agree; CA-4 90-day regional note).
     The same CA-4 list covers Guatemala, Honduras and Nicaragua: reuse it once each country's stay
     rule is sourced.
-  - Newly reachable, to research next: Bhutan, Cape Verde, Paraguay, Nepal; Bolivia's
+  - Cape Verde probed 2026-11-09: `ease.gov.cv/assets/lista_de_paises.pdf` is readable (pdftotext): 91 nationalities needing
+    an entry, transit or airport-stopover visa from 1 Jan 2026 (of our passports: Armenia, Azerbaijan, Belarus), plus the
+    order's exemptions (e.g. holders of EU, UK, Swiss, US, Canadian or Brazilian residence permits). Missing before it can
+    ship: the stay limit for everyone else and the pre-registration rule (EASE FAQ 404; the registration portal is on a
+    contractor's domain). Don't read "not on the list" as visa-free without a source that says so.
+  - Newly reachable, to research next: Bhutan, Paraguay, Nepal; Bolivia's
     visa portal has an API (servicios.cancilleria.gob.bo/visas/api), routes not found yet.
   - Kazakhstan, Laos, Kuwait, Pakistan, Nepal: official sites are
     JavaScript apps or refuse connections. Retry periodically; a readable official PDF or
