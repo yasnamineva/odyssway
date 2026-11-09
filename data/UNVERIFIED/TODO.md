@@ -4222,16 +4222,17 @@ Added `melatonin-ca` (Health Canada PDL notice of 2 June 2026 + GUI-0116) and `m
   not extendable), Commission Schengen page (29 states), Commission EES page (12 Oct 2025 start, full on 10 Apr 2026),
   Singapore ICA visa list (updated 28 Oct 2026; same nine of our passports), Thailand FDA health products (all food,
   medicine and device values), India DoR NDPS travellers page, RBI cash direction (updated 12 Jan 2026), Egypt customs
-  (allowances and clearances), Brazil cash (US$10,000) and allowance table.
+  (allowances and clearances), Brazil cash (US$10,000) and allowance table, Singapore HSA personal medications (updated
+  23 Oct 2026: 3 months, gum and nicotine bans, 2-week lead time).
 - Changed: Japan NCD added a trial online application system (Nov 2026), now in the permit steps; ICA moved its pages
   (citations updated). Brazil tobacco was wrong in our row: Receita Federal gives cigarettes, cigars and tobacco
   separate "no total" limits, not alternatives; fixed 2026-11-09.
-- Not yet re-read from that list: the rest of the 124 (mostly customs pages: Singapore HSA/SFA/CAAS/Police, Taiwan
+- Not yet re-read from that list: the rest of the 124 (mostly customs pages: Singapore SFA/CAAS/Police, Taiwan
   customs, Mexico SENASICA, Thailand customs, NZ MPI, Australia legislation, Korea, Colombia DIAN, Sweden kratom, China
   MOFCOM/MEM, Indonesia, South Africa CAA, UAE GCAA, Brazil MAPA). Read them as the weekly report's sentence diffs
   arrive (snapshots now exist in CI).
 - Quote check against a full local snapshot set (2026-11-09): 1,059 of 3,268 quoted passages found. The misses are
   mostly quotes we translated into English (Peru, Colombia, Costa Rica, Dominican Republic tables) and PDFs; entity
   decoding added to the check the same day. Worth doing: mark translated quotes in rows so the check skips them.
-- Audit idea from the Brazil fix: re-check every tobacco row whose allowance is one `one_of` group with several
+- ✔ Audit from the Brazil fix (2026-11-09): every allowance with alternatives (27 rows) says "or"/"one of" as its source does; no other row had Brazil's problem. Was: re-check every tobacco row whose allowance is one `one_of` group with several
   products, against its source's wording ("or" vs separate lines).
