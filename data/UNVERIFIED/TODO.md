@@ -4194,3 +4194,9 @@ Coverage after it: Ambien 85, Klonopin 89, Lyrica 12, Sudafed 11, melatonin 5 of
 - **Pseudoephedrine**: a controlled precursor (not a traveller rule) in BR, PE, CO, SA, TW, FJ, MU; rows tell travellers to ask. Mexico reported banned (no source read). Rwanda lists it with "very severe" Schedule I precursors (warning note on the row).
 - **Melatonin**: only ZA (Schedule 4, Schedule 2 at 6 mg/day for jet lag), plus the existing JP, AU, NZ, CL rows. No EU state's classification was read for travellers.
 - **Zolpidem**: not in the Dominican Republic's Ley 50-88 (as read), Belize's schedules or Fiji's Schedule 1, so no name there; Canada's 90-day "targeted substance" status not read.
+
+## Melatonin pass, 2026-11-09
+Added `melatonin-ca` (Health Canada PDL notice of 2 June 2026 + GUI-0116) and `melatonin-sg` (NDF register entry for Circadin 2 mg + HSA personal-medication page + HSA document guide, Appendix A read in full: no melatonin). Melatonin now answers in 7 countries (ZA JP AU NZ CL CA SG).
+- **Singapore**: only Circadin's classification read; the Fourth Schedule to the Misuse of Drugs Regulations (prohibited substances) not read (HSA's guide gives cannabis products as its examples). Over-the-counter supplements bought abroad: no HSA statement found.
+- **Germany**: Zoll and BfArM pages don't name melatonin; Zoll says supplements sold freely abroad can count as medicines in Germany (three months' personal supply). No row: no source names melatonin.
+- Next candidates (high search volume): Thailand, UAE, Korea, Philippines, the UK row's EU neighbours; each needs a national register or authority page that names melatonin.

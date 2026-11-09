@@ -20014,6 +20014,40 @@
     "status": "verified"
   },
   {
+    "slug": "melatonin-ca",
+    "names": [
+      "melatonin"
+    ],
+    "destination": "CA",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "summary": "Adult melatonin: up to a 90-day supply, in its retail package or with its label. Melatonin for children's sleep is prescription-only.",
+    "limits": {
+      "description": "Health Canada generally classifies melatonin as a natural health product, and every licensed melatonin product in Canada is for adults. Visitors and residents may bring a personal quantity of a natural health product: no more than a 90-day supply or a single course of treatment, whichever is less, based on the directions for use. It must be in the pharmacy or original retail package, or have its original label attached saying what it is and what it contains. Since 2 June 2026, melatonin sold for sleep-related use in children and adolescents under 18 is a prescription drug: visitors may bring a personal quantity of a prescription drug for their own use or for someone in their care travelling with them, while Canadian residents generally may not bring in prescription drugs bought abroad.",
+      "quantity": "up to a 90-day supply"
+    },
+    "notes": "Health Canada judges the quantity from the product's directions for use, so keep the label. Visitors staying more than three months may have an additional 90-day supply sent by mail or courier every three months.",
+    "legal_source": {
+      "name": "Health Canada: Bringing health products into Canada for personal use (GUI-0116)",
+      "url": "https://www.canada.ca/en/health-canada/services/drugs-health-products/compliance-enforcement/importation-exportation/personal-use-health-products-guidance/document.html"
+    },
+    "_sources": [
+      {
+        "claim": "Melatonin is generally classified as a natural health product; all licensed melatonin NHPs are for adults; from 2 June 2026 melatonin sold for sleep-related use in children and adolescents under 18 is a prescription drug",
+        "name": "Health Canada: Notice of amendment, Prescription Drug List qualifier for pediatric melatonin (2 June 2026)",
+        "url": "https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/prescription-drug-list/notices-changes/qualifier-pediatric-melatonin-amendment.html"
+      },
+      {
+        "claim": "Residents and visitors may bring a 90-day supply or single course of treatment, whichever is less, of a natural health product, in pharmacy or retail packaging or with the original label; visitors may bring a personal quantity of a prescription drug; residents generally may not bring prescription drugs; visitors staying over three months may receive a further 90-day supply by mail or courier every three months",
+        "name": "Health Canada: Bringing health products into Canada for personal use (GUI-0116)",
+        "url": "https://www.canada.ca/en/health-canada/services/drugs-health-products/compliance-enforcement/importation-exportation/personal-use-health-products-guidance/document.html"
+      }
+    ],
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "slug": "peptides-nz",
     "names": [
       "peptides",
@@ -23282,6 +23316,46 @@
       "verified_at": "2026-10-26",
       "verified_by": "agent:claude-opus-5-5"
     }
+  },
+  {
+    "slug": "melatonin-sg",
+    "names": [
+      "melatonin",
+      "circadin"
+    ],
+    "destination": "SG",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "summary": "Prescription-only in Singapore. Bring up to 3 months' supply prescribed to you at home, with the prescription or a doctor's letter.",
+    "limits": {
+      "description": "Singapore's register classifies melatonin (Circadin 2 mg prolonged-release tablets) as a prescription-only medicine. Melatonin isn't on the list of controlled substances in HSA's guide for travellers (Appendix A), so you need no approval if it was lawfully prescribed to you, or an immediate family member, in your country of residence. Bring up to 3 months' supply, with a copy of a valid prescription or a doctor's letter, each medicine in its original packaging labelled by the pharmacy with your name, the medicine and the quantity. More than 3 months' supply isn't allowed.",
+      "quantity": "up to 3 months' supply"
+    },
+    "notes": "The register entry read is for one product, Circadin 2 mg; other melatonin products' classification wasn't read. Melatonin sold as a supplement elsewhere has no prescription behind it, so HSA's no-approval route may not cover it: ask HSA before travelling with one. The no-approval route also requires that a medicine contains nothing on the Fourth Schedule to the Misuse of Drugs Regulations (prohibited substances); that schedule wasn't read here, and HSA's examples of it are cannabis products.",
+    "legal_source": {
+      "name": "Health Sciences Authority: Travelling with medications to Singapore",
+      "url": "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-medications/"
+    },
+    "_sources": [
+      {
+        "claim": "Circadin prolonged release tablets 2 mg, active ingredient melatonin, forensic classification: prescription only medicines",
+        "name": "National Drug Formulary (Singapore): Circadin 2 mg [SIN13954P], last updated 9 October 2026",
+        "url": "https://www.ndf.gov.sg/about-drugs/product-information/sin13954p/"
+      },
+      {
+        "claim": "Up to 3 months' supply if no approval is needed and the medication is not prohibited; lawfully prescribed in the country of residence; copy of a valid prescription or doctor's letter; original labelled packaging; more than 3 months' supply not allowed",
+        "name": "Health Sciences Authority: Travelling with medications to Singapore (last updated 23 October 2026)",
+        "url": "https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-medications/"
+      },
+      {
+        "claim": "Appendix A, the list of controlled substances requiring approval, does not include melatonin",
+        "name": "Health Sciences Authority: Document guide for bringing in personal medications (23 October 2026)",
+        "url": "https://file.go.gov.sg/document-guide-for-bringing-in-personal-medications.pdf"
+      }
+    ],
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   },
   {
     "slug": "weapons-tr",
