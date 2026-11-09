@@ -30326,5 +30326,34 @@
     "verified_at": "2026-11-08",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "slug": "cash-py",
+    "names": [
+      "cash",
+      "currency",
+      "money"
+    ],
+    "destination": "PY",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "summary": "Declare cash or travellers' cheques worth US$10,000 or more. You can declare online in advance or at terminals at the airport or border.",
+    "limits": {
+      "description": "Declare cash or travellers' cheques if the value is US$10,000 or more, when entering or leaving Paraguay. You can declare online in advance or at computer terminals at the airport or place of arrival, and you get a certified declaration showing you brought the money in.",
+      "quantity": "US$10,000"
+    },
+    "notes": "From the UK government's travel advice for Paraguay; no Paraguayan customs page was read for this rule.",
+    "legal_source": {
+      "name": "GOV.UK (FCDO) — Paraguay travel advice: Entry requirements (updated 2026-11-03)",
+      "url": "https://www.gov.uk/foreign-travel-advice/paraguay/entry-requirements"
+    },
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "at_least"
+    }
   }
 ]

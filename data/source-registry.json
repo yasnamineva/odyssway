@@ -8735,6 +8735,55 @@
     ]
   },
   {
+    "code": "PY",
+    "name": "Paraguay",
+    "recheckDays": 90,
+    "recheckReason": "The US, Canada, Australia and New Zealand exemption (Ley 7314) is listed as valid until 13 August 2027; the table is updated by decree",
+    "entry": [
+      {
+        "url": "https://migraciones.gov.py/wp-content/uploads/2026/01/ACUERDOS-DE-SUPRESION-DE-VISAS-2026.pdf",
+        "name": "Dirección Nacional de Migraciones (Paraguay) — Acuerdos de supresión de visas (última actualización: enero de 2026)",
+        "rows": 64,
+        "lastChecked": "2026-11-09"
+      },
+      {
+        "url": "https://migraciones.gov.py/prorroga-de-permanencia-transitoria/",
+        "name": "Dirección Nacional de Migraciones — Prórroga de permanencia transitoria",
+        "rows": 48,
+        "lastChecked": "2026-11-09"
+      },
+      {
+        "url": "https://www.gov.uk/foreign-travel-advice/paraguay/entry-requirements",
+        "name": "GOV.UK (FCDO) — Paraguay travel advice: Entry requirements (updated 2026-11-03)",
+        "rows": 1,
+        "lastChecked": "2026-11-09"
+      }
+    ],
+    "customs": [
+      {
+        "url": "https://www.gov.uk/foreign-travel-advice/paraguay/entry-requirements",
+        "name": "GOV.UK (FCDO) — Paraguay travel advice: Entry requirements (updated 2026-11-03)",
+        "rows": 1,
+        "lastChecked": "2026-11-09"
+      }
+    ],
+    "medicine": [],
+    "known": [
+      {
+        "topic": "entry",
+        "url": "https://www.mre.gov.py/",
+        "status": "blocked",
+        "note": "Foreign Ministry visa pages; 403 to automated requests"
+      },
+      {
+        "topic": "entry",
+        "url": "https://migraciones.gov.py/informacion-sobre-visas/",
+        "status": "blocked",
+        "note": "HTML table disagrees with itself (two versions, e.g. Mongolia, Malaysia, Philippines, Venezuela); the January 2026 PDF it links is used instead"
+      }
+    ]
+  },
+  {
     "code": "QA",
     "name": "Qatar",
     "recheckDays": 180,

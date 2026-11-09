@@ -1,5 +1,21 @@
 [
   {
+    "commit": "0ddde761b16f7b3e0d27aa9619f491d367510b77",
+    "date": "2026-11-09",
+    "dataset": "trip-charges",
+    "summary": "Trip charges: Mexico visitor fee (DNR, MXN 983) and airport departure migration fee (DSM, MXN 232) from INM's 2026 air-entry table; New Zealand IVL (NZD 100) with its exemptions from Immigration NZ. Venice (2026 trial over) and Belize (sources unreachable) recorded",
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Instituto Nacional de Migración: Tabla de costos de pago de derechos, internación vía aérea 2026 (Ley Federal de Derechos)",
+      "url": "https://www.gob.mx/cms/uploads/attachment/file/1047224/INTERNACION-VIA-AEREA-2026.pdf"
+    },
+    "destinations": [
+      "MX",
+      "NZ"
+    ]
+  },
+  {
     "commit": "8c2d74b30766a26f480e217ea0eb7a2ed6f7eadb",
     "date": "2026-11-09",
     "dataset": "customs-items",

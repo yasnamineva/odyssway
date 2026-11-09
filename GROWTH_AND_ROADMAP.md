@@ -8,8 +8,8 @@ without a primary official source.
 
 Where we are today (2026-11-09):
 
-- 68 destinations plus the Schengen Area; 3,924 verified entry rows; 774 customs rows
-  (182 medication, 43 with a doctor's-letter checklist, 22 with a permit how-to, 19 with
+- 69 destinations plus the Schengen Area; 3,988 verified entry rows; 810 customs rows
+  (217 medication, 43 with a doctor's-letter checklist, 22 with a permit how-to, 19 with
   a transit rule); 1,125 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
   planner, travel-authorisation guides, the 90/180 calculator, the multi-country day counter, named-medicine pages, border cards,
@@ -188,12 +188,21 @@ Pick by traffic and source reachability, not by map coverage.
     WordPress API `wp-json/wp/v2/servicios`; 180 days, UK and Canada agree; CA-4 90-day regional note).
     The same CA-4 list covers Guatemala, Honduras and Nicaragua: reuse it once each country's stay
     rule is sourced.
+  - ✔ Paraguay added 2026-11-09 (64 passports; Kosovo held): the migration office's January 2026 PDF of visa-suppression
+    agreements (`migraciones.gov.py/wp-content/uploads/2026/01/ACUERDOS-DE-SUPRESION-DE-VISAS-2026.pdf`, pdftotext
+    reads it) gives each country's legal basis and stay: 90 days for 45 of our passports, 30 for Korea, Singapore,
+    Malaysia, no day count for MERCOSUR (AR BR CL), visa for 13 (incl. China, India, the Western Balkans except Kosovo).
+    Use the PDF, not the HTML page, whose two tables disagree. The US/CA/AU/NZ exemption (Ley 7314) runs to 13 Aug 2027,
+    so the registry re-checks every 90 days. Cash from GOV.UK (US$10,000 or more). mre.gov.py 403.
+  - Bhutan probed 2026-11-09: visit.doi.gov.bt 500, tourism.gov.bt refuses connections; only the Ministry's 25 Aug 2023
+    release is readable (SDF USD 200 a night, USD 100 for US-dollar payers until 31 Aug 2027). Nepal: immigration.gov.np
+    certificate error.
   - Cape Verde probed 2026-11-09: `ease.gov.cv/assets/lista_de_paises.pdf` is readable (pdftotext): 91 nationalities needing
     an entry, transit or airport-stopover visa from 1 Jan 2026 (of our passports: Armenia, Azerbaijan, Belarus), plus the
     order's exemptions (e.g. holders of EU, UK, Swiss, US, Canadian or Brazilian residence permits). Missing before it can
     ship: the stay limit for everyone else and the pre-registration rule (EASE FAQ 404; the registration portal is on a
     contractor's domain). Don't read "not on the list" as visa-free without a source that says so.
-  - Newly reachable, to research next: Bhutan, Paraguay, Nepal; Bolivia's
+  - Newly reachable, to research next: Bolivia's
     visa portal has an API (servicios.cancilleria.gob.bo/visas/api), routes not found yet.
   - Kazakhstan, Laos, Kuwait, Pakistan, Nepal: official sites are
     JavaScript apps or refuse connections. Retry periodically; a readable official PDF or
