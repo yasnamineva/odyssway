@@ -4211,5 +4211,6 @@ Added `melatonin-ca` (Health Canada PDL notice of 2 June 2026 + GUI-0116) and `m
     (3 Aug 2016) and DS 4460 (27 Jan 2021), both named in DS 5497, aren't in the gazette's online index; either may
     explain it. LT has no group on the portal, LI isn't listed, XK only via 'SERBIA (INCLUDING KOSOVO)'.
   - Israel: portal still shows Group III; the row follows DS 5497 (Group I). Re-check the portal at each re-check.
-  - Customs beyond cash: aduana.gob.bo not tried yet. Germany's advice: pets need a translated vet certificate and rabies
-    proof; medicines that are over the counter in the EU may be refused, so carry a (translated) prescription.
+  - Customs: done from aduana.gob.bo/regimen-viajero (allowance, alcohol, tobacco, prescribed medicine, cash). Still open:
+    controlled medicines (no Bolivian source found), pets (Germany's advice: translated vet certificate and rabies proof;
+    needs SENASAG), and whether the 400-cigarette and 50-cigar/500 g lines can be combined.

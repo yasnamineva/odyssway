@@ -8,7 +8,7 @@ without a primary official source.
 
 Where we are today (2026-11-09):
 
-- 70 destinations plus the Schengen Area; 4,047 verified entry rows; 811 customs rows
+- 70 destinations plus the Schengen Area; 4,047 verified entry rows; 815 customs rows
   (217 medication, 43 with a doctor's-letter checklist, 22 with a permit how-to, 19 with
   a transit rule); 1,457 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
@@ -214,7 +214,9 @@ Pick by traffic and source reachability, not by map coverage.
     gazette's online index, and finding either may release them. Cross-checked with Germany's advice the same day: it
     reads the 90 days per calendar year (rows say our rolling count never allows more), German row adds health
     insurance on entry (lead in TODO for a Bolivian source). Cash from DS 5404 (May 2025): register US$10,000–50,000,
-    above that only via a bank; Germany's advice still shows the pre-2025 limits. Other customs: aduana.gob.bo not tried.
+    above that only via a bank; Germany's advice still shows the pre-2025 limits. Customs from aduana.gob.bo/regimen-viajero
+    (readable HTML): US$1,000 of new goods, 3 L alcohol, 400 cigarettes / 50 cigars or 500 g tobacco, prescribed medicine
+    up to 3 boxes or bottles, cash penalties (30%). Controlled medicines still unanswered for Bolivia.
   - Kazakhstan, Laos, Kuwait, Pakistan, Nepal: official sites are
     JavaScript apps or refuse connections. Retry periodically; a readable official PDF or
     legal-database text unblocks each.

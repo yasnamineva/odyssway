@@ -10194,12 +10194,60 @@
   },
   {
     "id": "cash-bo",
-    "sourceHash": "f7f7cc5f",
+    "sourceHash": "46802aed",
     "fields": {
-      "summary": "Fremdwährung im Wert von 10 000 bis 50 000 US-Dollar auf dem Zollformular registrieren. Mehr als 50 000 US-Dollar müssen über eine Bank oder ein zugelassenes Geldtransferunternehmen kommen.",
-      "limitsDescription": "Wer Fremdwährung im Wert von 10 000 bis 50 000 US-Dollar einführt, muss sie auf einem Formular des bolivianischen Zolls (Aduana Nacional) registrieren, mit Herkunft und Bestimmung des Geldes. Mehr als 50 000 US-Dollar müssen über eine Bank oder ein zugelassenes Geldtransferunternehmen eingeführt werden. Bei der Ausreise sind 10 000 bis 20 000 US-Dollar zu registrieren, und mehr als 20 000 US-Dollar müssen über eine Bank oder ein Geldtransferunternehmen laufen.",
+      "summary": "Fremdwährung im Wert von 10 000 bis 50 000 US-Dollar auf dem Zollformular 250 anmelden. Mehr als 50 000 US-Dollar müssen über eine Bank oder ein zugelassenes Geldtransferunternehmen kommen.",
+      "limitsDescription": "Fremdwährung im Wert von 10 000 bis 50 000 US-Dollar müssen Sie bei der Ankunft auf dem Zollformular 250 anmelden, mit Herkunft und Bestimmung des Geldes. Mehr als 50 000 US-Dollar müssen über eine Bank oder ein zugelassenes Geldtransferunternehmen eingeführt werden. Bei der Ausreise melden Sie 10 000 bis 20 000 US-Dollar an; mehr als 20 000 US-Dollar müssen über eine Bank oder ein Geldtransferunternehmen laufen.",
       "limitsQuantity": "10 000 bis 50 000 US-Dollar",
-      "notes": "Aus dem Decreto Supremo 5404 vom 23. Mai 2025, der Boliviens Regeln für das Mitführen von Fremdwährung (Decreto Supremo 29681) neu gefasst hat. Das Dekret sagt außerdem, dass alle Personen ein- und ausgeführte Fremdwährung auf dem Zollformular melden müssen, ohne eine Untergrenze zu nennen; fragen Sie daher im Zweifel beim Zoll nach. Die Reisehinweise des Auswärtigen Amts nennen noch die älteren Grenzen (Anmeldung über 10 000 US-Dollar, Genehmigung der Zentralbank über 20 000 US-Dollar); das Dekret von 2025 ist der geltende Text."
+      "notes": "Aus dem Decreto Supremo 5404 vom 23. Mai 2025, der Boliviens Regeln für das Mitführen von Fremdwährung neu gefasst hat, und der Reisendenseite des bolivianischen Zolls, die dieselben Grenzen und die Strafen nennt: Der Zoll behält 30 % nicht angemeldeter Fremdwährung ein, 30 % der Differenz bei einer falschen Anmeldung und 30 % des Betrags über den Grenzen. Die Reisehinweise des Auswärtigen Amts nennen noch die älteren Grenzen (Anmeldung über 10 000 US-Dollar, Genehmigung der Zentralbank über 20 000 US-Dollar); das Dekret von 2025 ist der geltende Text."
+    },
+    "translated_at": "2026-11-09",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "goods-allowance-bo",
+    "sourceHash": "6e04256d",
+    "fields": {
+      "summary": "Neue Waren für den eigenen Gebrauch bis 1 000 US-Dollar sind zollfrei, zusätzlich zu gebrauchten persönlichen Gegenständen. Was darüber liegt, wird verzollt.",
+      "limitsDescription": "Gebrauchte Kleidung und persönliche Gegenstände sowie je eine Kamera, ein Laptop, eine Videokamera, ein Mobiltelefon, Sportausrüstung und ein tragbares Musikinstrument sind erlaubt. Neue Artikel ausschließlich für den persönlichen Gebrauch, nicht zum Verkauf, sind bis zu einem Wert von 1 000 US-Dollar zollfrei. Was über die Freimenge hinausgeht, wird verzollt.",
+      "limitsQuantity": "1 000 US-Dollar an neuen Waren",
+      "notes": "Füllen Sie vor der Einreise das Zollformular 250 (eidesstattliche Erklärung) für mitgeführte neue Waren und Fremdwährung aus. Für Alkohol, Tabak und verschriebene Arzneimittel gelten innerhalb der Freimenge eigene Grenzen."
+    },
+    "translated_at": "2026-11-09",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "alcohol-bo",
+    "sourceHash": "33182ce0",
+    "fields": {
+      "summary": "Bis zu 3 Liter alkoholische Getränke sind zollfrei. Mehr wird verzollt.",
+      "limitsDescription": "Bis zu 3 Liter alkoholische Getränke insgesamt, als Teil der Freimenge von 1 000 US-Dollar für neue Waren. Was über die Freimenge hinausgeht, wird verzollt.",
+      "limitsQuantity": "3 Liter",
+      "notes": "Füllen Sie vor der Einreise das Zollformular 250 (eidesstattliche Erklärung) für mitgeführte neue Waren und Fremdwährung aus."
+    },
+    "translated_at": "2026-11-09",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "tobacco-bo",
+    "sourceHash": "14135e3a",
+    "fields": {
+      "summary": "Bis zu 400 Zigaretten sowie bis zu 50 Zigarren oder 500 g Schnitttabak sind zollfrei. Mehr wird verzollt.",
+      "limitsDescription": "Bis zu 400 Zigaretten; bis zu 50 Zigarren oder 500 Gramm Schnitttabak. Diese Mengen gehören zur Freimenge von 1 000 US-Dollar für neue Waren, und was darüber hinausgeht, wird verzollt.",
+      "limitsQuantity": "400 Zigaretten; 50 Zigarren oder 500 g Tabak",
+      "notes": "Füllen Sie vor der Einreise das Zollformular 250 (eidesstattliche Erklärung) für mitgeführte neue Waren und Fremdwährung aus. Der Zoll nennt die Grenze für Zigaretten und die für Zigarren oder Tabak in getrennten Zeilen und sagt nicht, ob Sie beides mitbringen dürfen."
+    },
+    "translated_at": "2026-11-09",
+    "translated_by": "agent:claude-opus-5-5 (machine translation)"
+  },
+  {
+    "id": "prescription-medication-bo",
+    "sourceHash": "90e8ba74",
+    "fields": {
+      "summary": "Ihnen verschriebene Arzneimittel für den eigenen Gebrauch, bis zu 3 Einheiten (Packungen oder Flaschen), sind zollfrei. Führen Sie das Rezept mit.",
+      "limitsDescription": "Ihnen verschriebene Arzneimittel für den eigenen Gebrauch, bis zu drei Einheiten (Packungen oder Flaschen), gehören zur zollfreien Freimenge. Was über die Freimenge hinausgeht, wird verzollt.",
+      "limitsQuantity": "3 Packungen oder Flaschen",
+      "notes": "Der bolivianische Zoll nennt diese Grenze als Teil der zollfreien Freimenge; sie gilt nicht für Arzneimittel mit kontrollierten Substanzen, die diese Zeile nicht beantwortet. Die Reisehinweise des Auswärtigen Amts ergänzen, dass manche in der EU rezeptfreie Arzneimittel in Bolivien nicht erlaubt sein können, und raten, für jedes benötigte Arzneimittel ein Rezept oder eine übersetzte ärztliche Bescheinigung mitzuführen."
     },
     "translated_at": "2026-11-09",
     "translated_by": "agent:claude-opus-5-5 (machine translation)"

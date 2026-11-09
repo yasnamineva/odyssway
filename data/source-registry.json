@@ -1670,6 +1670,14 @@
     ],
     "customs": [
       {
+        "url": "https://www.aduana.gob.bo/regimen-viajero",
+        "name": "Aduana Nacional (Bolivia) — Declaración de equipaje y divisas (Form. 250, franquicia, divisas)",
+        "rows": 4,
+        "lastChecked": "2026-11-09",
+        "method": "html",
+        "status": "readable"
+      },
+      {
         "url": "http://www.gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/280715",
         "name": "Gaceta Oficial de Bolivia — Decreto Supremo 5404 (23 May 2025), modifies Decreto Supremo 29681 on carrying foreign currency in and out",
         "rows": 1,
@@ -1686,7 +1694,24 @@
         "status": "readable"
       }
     ],
-    "medicine": [],
+    "medicine": [
+      {
+        "url": "https://www.aduana.gob.bo/regimen-viajero",
+        "name": "Aduana Nacional (Bolivia) — Declaración de equipaje y divisas (Form. 250, franquicia, divisas)",
+        "rows": 1,
+        "lastChecked": "2026-11-09",
+        "method": "html",
+        "status": "readable"
+      },
+      {
+        "url": "https://www.auswaertiges-amt.de/de/service/laender/bolivien-node/boliviensicherheit-213428",
+        "name": "Auswärtiges Amt — Bolivien: Reise- und Sicherheitshinweise, Einreise und Zoll",
+        "rows": 1,
+        "lastChecked": "2026-11-09",
+        "method": "html",
+        "status": "readable"
+      }
+    ],
     "known": [
       {
         "topic": "entry",

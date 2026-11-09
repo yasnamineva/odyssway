@@ -1,5 +1,51 @@
 [
   {
+    "commit": "37dda8ff0bb22dca788f597e133adf91f8724945",
+    "date": "2026-11-09",
+    "dataset": "customs-items",
+    "summary": "Source-watch review (2 Nov report), first part: Japan NCD's trial online application system added to the narcotics and stimulant-raw-material permit steps (with German); Singapore ICA citations moved to its new URLs (old ones 301); watcher's China entry now watches the visa-free list page, not the NIA homepage. China, Canada eTA, Nigeria F5A, Schengen membership, EES dates and Singapore's visa list re-read: unchanged",
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Narcotics Control Department, Ministry of Health, Labour and Welfare — Application Guidance (carrying medicine containing controlled substances)",
+      "url": "https://www.ncd.mhlw.go.jp/en/application2.html"
+    },
+    "destinations": [
+      "JP",
+      "SG"
+    ]
+  },
+  {
+    "commit": "37dda8ff0bb22dca788f597e133adf91f8724945",
+    "date": "2026-11-09",
+    "dataset": "destinations",
+    "summary": "Source-watch review (2 Nov report), first part: Japan NCD's trial online application system added to the narcotics and stimulant-raw-material permit steps (with German); Singapore ICA citations moved to its new URLs (old ones 301); watcher's China entry now watches the visa-free list page, not the NIA homepage. China, Canada eTA, Nigeria F5A, Schengen membership, EES dates and Singapore's visa list re-read: unchanged",
+    "verified_at": "2026-09-02",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "Immigration & Checkpoints Authority (ICA) Singapore - Entering Singapore",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/entry-requirements"
+    },
+    "destinations": [
+      "SG"
+    ]
+  },
+  {
+    "commit": "37dda8ff0bb22dca788f597e133adf91f8724945",
+    "date": "2026-11-09",
+    "dataset": "entry-requirements",
+    "summary": "Source-watch review (2 Nov report), first part: Japan NCD's trial online application system added to the narcotics and stimulant-raw-material permit steps (with German); Singapore ICA citations moved to its new URLs (old ones 301); watcher's China entry now watches the visa-free list page, not the NIA homepage. China, Canada eTA, Nigeria F5A, Schengen membership, EES dates and Singapore's visa list re-read: unchanged",
+    "verified_at": "2026-09-10",
+    "verified_by": "agent:claude-sonnet-5",
+    "source": {
+      "name": "ICA - Check if You Need an Entry Visa",
+      "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines"
+    },
+    "destinations": [
+      "SG"
+    ]
+  },
+  {
     "commit": "120d8caffe427447759b2f1a753d95c6219ea29c",
     "date": "2026-11-09",
     "dataset": "customs-items",

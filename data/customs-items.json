@@ -30392,12 +30392,12 @@
     "destination": "BO",
     "category": "cash",
     "verdict": "declaration_required",
-    "summary": "Register foreign cash of US$10,000 to US$50,000 on the customs form. More than US$50,000 must come in through a bank or licensed money-transfer firm.",
+    "summary": "Declare foreign cash of US$10,000 to US$50,000 on customs Form 250. More than US$50,000 must come in through a bank or licensed money-transfer firm.",
     "limits": {
-      "description": "Bringing in foreign currency worth between US$10,000 and US$50,000 needs registering on a form from Bolivia's customs (Aduana Nacional), with where the money comes from and where it is going. More than US$50,000 must be brought in through a bank or a licensed money-transfer company. When leaving, US$10,000 to US$20,000 needs registering, and more than US$20,000 must go through a bank or money-transfer company.",
+      "description": "Foreign currency worth between US$10,000 and US$50,000 must be declared on customs Form 250 when you arrive, with where the money comes from and where it is going. More than US$50,000 must be brought in through a bank or a licensed money-transfer company. When leaving, declare US$10,000 to US$20,000; more than US$20,000 must go through a bank or money-transfer company.",
       "quantity": "US$10,000 to US$50,000"
     },
-    "notes": "From Decreto Supremo 5404 of 23 May 2025, which rewrote Bolivia's rules on carrying foreign currency (Decreto Supremo 29681). The decree also says everyone must report foreign currency they bring in or take out on the customs form, without naming a lower limit, so ask customs if you are unsure. Germany's travel advice still gives the older limits (declare above US$10,000, central bank approval above US$20,000); the 2025 decree is the current text.",
+    "notes": "From Decreto Supremo 5404 of 23 May 2025, which rewrote Bolivia's rules on carrying foreign currency, and Bolivian customs' traveller page, which gives the same limits and the penalties: customs keeps 30% of undeclared currency, 30% of the difference if your declaration is wrong, and 30% of any amount above the limits. Germany's travel advice still gives the older limits (declare above US$10,000, central bank approval above US$20,000); the 2025 decree is the current text.",
     "legal_source": {
       "name": "Gaceta Oficial de Bolivia — Decreto Supremo 5404 (23 May 2025), modifies Decreto Supremo 29681 on carrying foreign currency in and out",
       "url": "http://www.gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/280715"
@@ -30419,13 +30419,185 @@
         "checked": "2026-11-09"
       },
       {
-        "claim": "Art. 2: all persons 'están obligadas a reportar a la Aduana Nacional, la internación y salida de divisas' on the customs form (no lower limit named)",
-        "name": "Gaceta Oficial de Bolivia — Decreto Supremo 5404 (23 May 2025), modifies Decreto Supremo 29681 on carrying foreign currency in and out",
-        "url": "http://www.gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/280715",
+        "claim": "Older limits: cash up to US$10,000 without approval, up to US$20,000 declared on arrival, US$20,000 to 500,000 with prior central bank approval",
+        "name": "Auswärtiges Amt — Bolivien: Reise- und Sicherheitshinweise, Einreise und Zoll",
+        "url": "https://www.auswaertiges-amt.de/de/service/laender/bolivien-node/boliviensicherheit-213428",
         "checked": "2026-11-09"
       },
       {
-        "claim": "Older limits: cash up to US$10,000 without approval, up to US$20,000 declared on arrival, US$20,000 to 500,000 with prior central bank approval",
+        "claim": "'Declarar divisas entre $us. 10.000 y $us. 50.000 para el ingreso'; 30% retention of undeclared currency, of the difference on an inaccurate declaration, and of the amount above the limits",
+        "name": "Aduana Nacional (Bolivia) — Declaración de equipaje y divisas (Form. 250, franquicia, divisas)",
+        "url": "https://www.aduana.gob.bo/regimen-viajero",
+        "checked": "2026-11-09"
+      }
+    ],
+    "cashThreshold": {
+      "amount": 10000,
+      "currency": "USD",
+      "comparison": "at_least"
+    }
+  },
+  {
+    "slug": "goods-allowance-bo",
+    "names": [
+      "duty free",
+      "duty-free allowance",
+      "gifts",
+      "souvenirs",
+      "shopping",
+      "franquicia",
+      "customs allowance",
+      "laptop",
+      "camera"
+    ],
+    "destination": "BO",
+    "category": "other",
+    "verdict": "allowed_with_limits",
+    "summary": "New goods for your own use up to US$1,000 enter duty-free, besides used personal effects. Anything above the allowance pays customs duties.",
+    "limits": {
+      "description": "Used clothing and personal effects, plus one camera, one laptop, one video camera, one mobile phone, sports gear and one portable musical instrument, are allowed. New articles strictly for personal use, not for sale, are duty-free up to a value of US$1,000. Anything above the allowance pays customs duties.",
+      "quantity": "US$1,000 of new goods"
+    },
+    "notes": "Before you enter, fill in customs Form 250 (sworn declaration) for new goods and foreign currency you carry. Alcohol, tobacco and prescription medicines have their own limits within the allowance.",
+    "legal_source": {
+      "name": "Aduana Nacional (Bolivia) — Declaración de equipaje y divisas (Form. 250, franquicia, divisas)",
+      "url": "https://www.aduana.gob.bo/regimen-viajero"
+    },
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "'Artículos nuevos de estricto uso o consumo personal, sin fines comerciales, hasta por un valor de $us. 1.000'; used personal effects and one camera, laptop, video camera, phone, musical instrument; 'Toda mercancía que exceda la franquicia deberá pagar tributos aduaneros'; Form 250 before entry",
+        "name": "Aduana Nacional (Bolivia) — Declaración de equipaje y divisas (Form. 250, franquicia, divisas)",
+        "url": "https://www.aduana.gob.bo/regimen-viajero",
+        "checked": "2026-11-09"
+      }
+    ]
+  },
+  {
+    "slug": "alcohol-bo",
+    "names": [
+      "alcohol",
+      "wine",
+      "beer",
+      "spirits",
+      "liquor",
+      "vino",
+      "cerveza",
+      "whisky",
+      "pisco"
+    ],
+    "destination": "BO",
+    "category": "alcohol",
+    "verdict": "allowed_with_limits",
+    "summary": "Up to 3 litres of alcoholic drinks duty-free. More pays customs duties.",
+    "limits": {
+      "description": "Up to 3 litres of alcoholic drinks in total, as part of the US$1,000 allowance for new goods. Anything above the allowance pays customs duties.",
+      "quantity": "3 litres"
+    },
+    "notes": "Before you enter, fill in customs Form 250 (sworn declaration) for new goods and foreign currency you carry.",
+    "legal_source": {
+      "name": "Aduana Nacional (Bolivia) — Declaración de equipaje y divisas (Form. 250, franquicia, divisas)",
+      "url": "https://www.aduana.gob.bo/regimen-viajero"
+    },
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Limitaciones: 'Hasta tres (3) litros de bebidas alcohólicas'",
+        "name": "Aduana Nacional (Bolivia) — Declaración de equipaje y divisas (Form. 250, franquicia, divisas)",
+        "url": "https://www.aduana.gob.bo/regimen-viajero",
+        "checked": "2026-11-09"
+      }
+    ],
+    "allowance": {
+      "groups": [
+        {
+          "kind": "total",
+          "products": [
+            "spirits",
+            "intermediate",
+            "still_wine",
+            "beer"
+          ],
+          "amount": 3
+        }
+      ]
+    }
+  },
+  {
+    "slug": "tobacco-bo",
+    "names": [
+      "tobacco",
+      "cigarettes",
+      "cigars",
+      "cigarillos",
+      "rolling tobacco",
+      "cigarrillos",
+      "tabaco"
+    ],
+    "destination": "BO",
+    "category": "tobacco",
+    "verdict": "allowed_with_limits",
+    "summary": "Up to 400 cigarettes, and up to 50 cigars or 500 g of cut tobacco, duty-free. More pays customs duties.",
+    "limits": {
+      "description": "Up to 400 cigarettes; up to 50 cigars or 500 grams of cut tobacco. These are part of the US$1,000 allowance for new goods, and anything above the allowance pays customs duties.",
+      "quantity": "400 cigarettes; 50 cigars or 500 g tobacco"
+    },
+    "notes": "Before you enter, fill in customs Form 250 (sworn declaration) for new goods and foreign currency you carry. Customs lists the cigarette limit and the cigar or tobacco limit on separate lines and doesn't say whether you can bring both.",
+    "legal_source": {
+      "name": "Aduana Nacional (Bolivia) — Declaración de equipaje y divisas (Form. 250, franquicia, divisas)",
+      "url": "https://www.aduana.gob.bo/regimen-viajero"
+    },
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Limitaciones: 'Hasta cuatrocientos (400) cigarrillos; Hasta cincuenta (50) cigarros o quinientos (500) gramos de tabaco picado'",
+        "name": "Aduana Nacional (Bolivia) — Declaración de equipaje y divisas (Form. 250, franquicia, divisas)",
+        "url": "https://www.aduana.gob.bo/regimen-viajero",
+        "checked": "2026-11-09"
+      }
+    ]
+  },
+  {
+    "slug": "prescription-medication-bo",
+    "names": [
+      "medication",
+      "prescription medicine",
+      "medicine",
+      "medicamentos",
+      "pills",
+      "drugs (prescription)"
+    ],
+    "destination": "BO",
+    "category": "medication",
+    "verdict": "allowed_with_limits",
+    "summary": "Prescribed medicines for your own use, up to 3 units (boxes or bottles), enter duty-free. Carry the prescription.",
+    "limits": {
+      "description": "Medicines prescribed to you, for your own use, up to three units (boxes or bottles), are part of the duty-free allowance. Anything above the allowance pays customs duties.",
+      "quantity": "3 boxes or bottles"
+    },
+    "notes": "Bolivian customs gives this limit as part of the duty-free allowance; it doesn't cover medicines with controlled substances, which this row doesn't answer. Germany's travel advice adds that some medicines sold without prescription in the EU may not be allowed into Bolivia, and to carry a prescription or a translated doctor's statement for any medicine you need.",
+    "legal_source": {
+      "name": "Aduana Nacional (Bolivia) — Declaración de equipaje y divisas (Form. 250, franquicia, divisas)",
+      "url": "https://www.aduana.gob.bo/regimen-viajero"
+    },
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "'Productos farmacéuticos y medicamentos bajo prescripción médica expresa para uso personal del destinatario, en una cantidad no superior a tres (3) unidades (cajas o frascos)'",
+        "name": "Aduana Nacional (Bolivia) — Declaración de equipaje y divisas (Form. 250, franquicia, divisas)",
+        "url": "https://www.aduana.gob.bo/regimen-viajero",
+        "checked": "2026-11-09"
+      },
+      {
+        "claim": "Some medicines available without prescription in the EU may not be allowed in; always carry a prescription or translated medical statement",
         "name": "Auswärtiges Amt — Bolivien: Reise- und Sicherheitshinweise, Einreise und Zoll",
         "url": "https://www.auswaertiges-amt.de/de/service/laender/bolivien-node/boliviensicherheit-213428",
         "checked": "2026-11-09"
