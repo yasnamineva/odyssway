@@ -6,7 +6,7 @@ anything gets built, and its Accuracy Policy (§3) comes before everything here.
 listed as *candidates* are research leads, not verified rules, and none can be published
 without a primary official source.
 
-Where we are today (2026-11-08):
+Where we are today (2026-11-09):
 
 - 68 destinations plus the Schengen Area; 3,924 verified entry rows; 774 customs rows
   (182 medication, 43 with a doctor's-letter checklist, 22 with a permit how-to, 19 with
@@ -17,7 +17,8 @@ Where we are today (2026-11-08):
 - About 2,000 URLs in the sitemap. Google indexes well; Bing indexes the pages but shows
   them rarely (young domain, few links).
 - No analytics, by design.
-- German pilot: all 823 "Can I bring it?" pages under `/de/bring` (2026-11-08), machine-translated from the verified English rows (§5.5).
+- German pilot: all 823 "Can I bring it?" pages under `/de/bring` (2026-11-08) and all 646 named-medicine pages under `/de/medications` with 22 product hubs (2026-11-09), machine-translated from the verified English rows (§5.5).
+- **Pushed 2026-11-09** (12 commits: Vietnam cash, third controlled-medicine pass, German retranslations; build, 242 unit tests and 130 e2e passed). ✔ IndexNow `--since 2026-11-08`: 869 URLs (HTTP 200).
 - **Pushed 2026-11-08** (38 commits: German to 822 pages, the controlled-medicine pass, item-search wording, zoomable route map; build, 242 unit tests and 130 e2e passed). ✔ IndexNow `--since 2026-11-06`: 959 URLs (HTTP 200).
 - **Pushed 2026-11-06** (73 commits: the German pilot from 53 to 402 pages, with translated permit how-tos, letter
   checklists and transit rules; the cost guardrails; the site-wide 404; corrections to Brunei alcohol, Kyrgyzstan
@@ -604,6 +605,16 @@ Kong, Korea, Taiwan, China, India, Qatar, Jordan, Israel, Saudi Arabia, Ecuador,
 Armenia, Uzbekistan, Kyrgyzstan, Mongolia, Macao, Brunei, Rwanda, Nigeria, Ghana, Zambia, Zimbabwe, Fiji, Belize, El
 Salvador), then German destination hubs. Use a scratch export of untranslated rows per destination (fields from
 `customsRowFields`/`customsRowDetails`), write `{id, fields}` entries, append with `sourceHash: "pending"`, `pnpm i18n:stamp de`.
+✔ 2026-11-08 the remaining pairs above: all 823 "Can I bring it?" pages are in German.
+✔ 2026-11-09 **German named-medicine pages**: `/de/medications` (index), `/de/medications/{product}` (22 hubs) and
+`/de/medications/{product}/{country}` (646 pages, every English pair), from the already-translated rows with the same
+freshness rule (`lib/german-medications.ts`, `germanRowsReady`); German names for generics (Codein, Oxycodon, Peptide,
+HGH (Wachstumshormon)); hreflang both ways and "Auf Deutsch lesen" on the English pages; one shared row card
+(`components/GermanCustomsRowCard.tsx`) for both German page types. Same day: validate-data's translation sentence count
+fixed (it read "15,000,000." and "under 17." as ordinals and counted parenthetical glosses): 75 warnings down to 22, each
+re-read (faithful sentence splits). **Next for German:** destination hubs need the entry rows translated (documents and
+notes of ~3,900 rows). Start with a German hub showing the customs section only, or wait for the November export to show
+whether German pages earn clicks before translating entry rows.
 
 ## 6. Long-term goals
 
