@@ -1,5 +1,21 @@
 [
   {
+    "commit": "9459e1b808f439133f1f4d698fab01df1c497f65",
+    "date": "2026-11-09",
+    "dataset": "customs-items",
+    "summary": "Melatonin rows for Canada (Health Canada PDL notice of 2 June 2026: children's sleep use prescription-only, adult products are natural health products; GUI-0116 90-day personal supply) and Singapore (NDF lists Circadin 2 mg as prescription-only; not in HSA's Appendix A controlled list, read in full; 3 months with a home prescription), with German translations",
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Health Canada: Bringing health products into Canada for personal use (GUI-0116)",
+      "url": "https://www.canada.ca/en/health-canada/services/drugs-health-products/compliance-enforcement/importation-exportation/personal-use-health-products-guidance/document.html"
+    },
+    "destinations": [
+      "CA",
+      "SG"
+    ]
+  },
+  {
     "commit": "b968783eeafd0657dbd1141ba0301361bbd68252",
     "date": "2026-11-08",
     "dataset": "customs-items",
