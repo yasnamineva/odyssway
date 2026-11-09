@@ -132,12 +132,16 @@ since I checked*. Built client-side from verified rows; no accounts.
    IVL (NZD 100, with its exemptions). Not added: Venice's access fee (2026 trial ended 27 July; 2027 days
    published, amounts and rules due by 31 Dec: re-check in January), Belize's exit fee and PACT fee (pactbelize.org
    403, ideclare.gov.bz certificate error, no other official page states them). Mexico's land and sea tables
-   and whether airlines include DNR in fares are still unread.
+   and whether airlines include DNR in fares are still unread. Maldives (Green Tax, departure tax, airport
+   development fee): mira.gov.mv returns 403 to automated requests; needs another official source.
 4. **Pre-departure recheck**: a saved trip remembers when it was checked; on return it
    lists the rule changes for its destinations since then (from the per-destination
-   changelog).
+   changelog). ✔ 2026-10-28, part of `/readiness` (a saved plan flags countries whose rules changed since it was
+   checked, from the changelog dates).
 5. **Cookie-free event counter**: anonymous counts of tool actions (no cookies, no
    personal data) so the next phase can be decided on evidence (§12 validation rule).
+   ✔ 2026-10-28: `/api/count` (fixed event list in `lib/count.ts`, one counter per event per day, no IP or cookies;
+   /privacy section 3). Counts need the Upstash credentials, which aren't available locally.
 6. Later, only with the owner's go-ahead: accounts, email alerts, an annual plan for
    saved trips and alerts (sells persistent state, not facts).
 
