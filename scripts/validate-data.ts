@@ -493,10 +493,13 @@ function checkTranslations(): void {
           const sentences = (x: string) =>
             x
               // Not sentence ends: ordinal dates ("26. Juli"), section numbers and common abbreviations.
-              .replace(/(\d)\.(?=\s)/g, "$1")
+              // Only before a month name or a lowercase word: "under 17. Some" and "15,000,000." end sentences.
+              .replace(/(\d)\.(?=\s+(?:Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember|[a-zäöüß§]))/g, "$1")
               .replace(/\b(z|d|u)\. (B|h|a)\./g, "$1$2")
               .replace(/\b(Mio|Nr|Art|bzw|ca|usw|Tel|Abs|vgl|e\.g|i\.e|No|St)\./g, "$1")
-              .split(/[.!?](?:\s|$)/)
+              // Parenthetical glosses (a translation of a quoted passage) aren't added claims.
+              .replace(/\([^()]*\)/g, "")
+              .split(/[.!?]["'”“’]?(?:\s|$)/)
               .filter((p) => p.trim().length > 3).length;
           if (sentences(trText) > sentences(enText)) {
             console.warn(`⚠ ${where}: "${k}" has ${sentences(trText)} sentences vs ${sentences(enText)} in English — check nothing was added.`);
