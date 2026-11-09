@@ -181,7 +181,7 @@ const SOURCES: WatchedSource[] = [
   },
   {
     id: "cn-nia-visa-free-list",
-    url: "https://www.nia.gov.cn/",
+    url: "https://www.nia.gov.cn/n741440/n741577/c1731154/content.html",
     usedBy: "data/entry-requirements.json (China NIA unilateral visa-free list)",
   },
   {
@@ -206,7 +206,7 @@ const SOURCES: WatchedSource[] = [
   },
   {
     id: "sg-ica-entering-singapore",
-    url: "https://www.ica.gov.sg/enter-transit-depart/entering-singapore",
+    url: "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/entry-requirements",
     usedBy: "data/entry-requirements.json (Singapore ICA visa-required country list — exact per-nationality stay lengths for several countries are not published by ICA and were sourced from converging secondary reporting; recheck if precision matters)",
   },
   {

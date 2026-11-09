@@ -1,5 +1,35 @@
 [
   {
+    "commit": "120d8caffe427447759b2f1a753d95c6219ea29c",
+    "date": "2026-11-09",
+    "dataset": "customs-items",
+    "summary": "Bolivia cross-checked with Germany's travel advice (90 days per calendar year noted on every visa-free row; German row: passport valid 6 months, health insurance on entry, land-border stamp); cash row from Decreto Supremo 5404 of May 2025 (register US$10,000–50,000, more only through a bank) with German translation",
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Gaceta Oficial de Bolivia — Decreto Supremo 5404 (23 May 2025), modifies Decreto Supremo 29681 on carrying foreign currency in and out",
+      "url": "http://www.gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/280715"
+    },
+    "destinations": [
+      "BO"
+    ]
+  },
+  {
+    "commit": "120d8caffe427447759b2f1a753d95c6219ea29c",
+    "date": "2026-11-09",
+    "dataset": "entry-requirements",
+    "summary": "Bolivia cross-checked with Germany's travel advice (90 days per calendar year noted on every visa-free row; German row: passport valid 6 months, health insurance on entry, land-border stamp); cash row from Decreto Supremo 5404 of May 2025 (register US$10,000–50,000, more only through a bank) with German translation",
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministerio de Relaciones Exteriores de Bolivia — visa portal country list (grupo per country)",
+      "url": "https://servicios.cancilleria.gob.bo/visas/api/paises"
+    },
+    "destinations": [
+      "BO"
+    ]
+  },
+  {
     "commit": "e64bcef747f468ec0ace2facf7a410f981035686",
     "date": "2026-11-09",
     "dataset": "destinations",
