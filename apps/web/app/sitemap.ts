@@ -4,6 +4,7 @@ import { blogPosts } from "../lib/blog";
 import { BRING_CATEGORIES } from "../lib/bring-categories";
 import { bringPairs } from "../lib/bring-pages";
 import { germanPairs, hasGermanPage, translatedCustomsRow } from "../lib/translations";
+import { germanDestinations } from "../lib/german-destinations";
 import { germanPairsForProduct, germanProductPairs, germanProducts, hasGermanProductPage } from "../lib/german-medications";
 import { countriesVerifiedAt } from "../lib/countries";
 import { customsItems, destinationPath, destinations, entryRequirements } from "../lib/destinations";
@@ -122,6 +123,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ...(hasGermanProductPage(pair) ? { alternates: { languages: { en, de: `${BASE}/de/medications/${pair.product.slug}/${pair.destinationSlug}` } } } : {}),
       };
     }),
+    // German country pages (customs only; no hreflang pair, the English hub isn't the same content).
+    ...(germanDestinations().length > 0 ? [{ url: `${BASE}/de/destinations`, lastModified: DATA_LAST_UPDATED, priority: 0.4 }] : []),
+    ...germanDestinations().map((d) => ({
+      url: `${BASE}/de/destinations/${d.slug}`,
+      lastModified: latest(d.pairs.map((p) => germanLastModified(p.rows))),
+      priority: 0.5,
+    })),
     // German medicine pages: index, product hubs and pairs, only where every row is translated.
     ...(germanProductPairs.length > 0
       ? [

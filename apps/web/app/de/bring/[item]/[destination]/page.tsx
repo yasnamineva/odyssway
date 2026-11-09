@@ -12,6 +12,7 @@ import {
   translatedCustomsRow,
 } from "../../../../../lib/translations";
 import GermanCustomsRowCard from "../../../../../components/GermanCustomsRowCard";
+import { germanDestination } from "../../../../../lib/german-destinations";
 import { translationProblemHref } from "../../../../../lib/report-problem";
 
 /**
@@ -157,6 +158,16 @@ export default async function GermanBringPage({ params }: { params: Promise<Para
         <a href="/trip-check" className="font-medium text-blue-700 underline">
           {t("checkYourTrip")}
         </a>
+        {germanDestination(pair.destinationSlug) && (
+          <>
+            <span className="mx-2 text-slate-300" aria-hidden="true">
+              |
+            </span>
+            <a href={`/de/destinations/${pair.destinationSlug}`} className="text-blue-700 underline" data-testid="de-destination-link">
+              {t("destinations.allRulesFor", { country })}
+            </a>
+          </>
+        )}
       </p>
 
       {elsewhere.length > 0 && (

@@ -585,3 +585,18 @@ test("German named-medicine pages: pair, hub and index, hreflang both ways, link
   const missing = await page.goto("/de/medications/not-a-medicine");
   expect(missing?.status()).toBe(404);
 });
+
+test("German country page lists every German customs rule for the country and links the English entry rules", async ({ page }) => {
+  await page.goto("/de/destinations/new-zealand");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Einfuhrbestimmungen Neuseeland");
+  await expect(page.getByTestId("de-destination-rules").getByRole("link", { name: "Bargeld" })).toHaveAttribute(
+    "href",
+    "/de/bring/cash/new-zealand",
+  );
+  await expect(page.getByTestId("de-entry-english").getByRole("link")).toHaveAttribute("href", "/destinations/new-zealand");
+  await expect(page.locator("link[rel=alternate][hreflang]")).toHaveCount(0);
+  await page.goto("/de/bring/cash/new-zealand");
+  await expect(page.getByTestId("de-destination-link")).toHaveAttribute("href", "/de/destinations/new-zealand");
+  await page.goto("/de/destinations");
+  await expect(page.getByTestId("de-destinations-list").getByRole("link", { name: "Neuseeland" })).toBeVisible();
+});

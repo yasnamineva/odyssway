@@ -47,6 +47,11 @@ export default function GermanBringIndex() {
         </a>
       </p>
       <p className="text-sm">
+        <a href="/de/destinations" className="font-medium text-blue-700 underline">
+          {t("destinations.indexTitle")} →
+        </a>
+      </p>
+      <p className="text-sm">
         <a href="/bring" hrefLang="en" lang="en" className="text-blue-700 underline">
           {t("allCountriesEnglish")}
         </a>

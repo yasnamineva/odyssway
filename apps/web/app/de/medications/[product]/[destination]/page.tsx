@@ -3,6 +3,7 @@ import { createTranslator } from "next-intl";
 import { notFound } from "next/navigation";
 import deMessages from "../../../../../messages/de.json";
 import GermanCustomsRowCard from "../../../../../components/GermanCustomsRowCard";
+import { germanDestination } from "../../../../../lib/german-destinations";
 import { VERDICT_STYLES } from "../../../../../components/CustomsRowCard";
 import { BRING_CATEGORIES } from "../../../../../lib/bring-categories";
 import { bringPair } from "../../../../../lib/bring-pages";
@@ -181,6 +182,16 @@ export default async function GermanMedicationPairPage({ params }: { params: Pro
             </a>
           </>
         ) : null}
+        {germanDestination(pair.destinationSlug) && (
+          <>
+            <span className="mx-2 text-slate-300" aria-hidden="true">
+              |
+            </span>
+            <a href={`/de/destinations/${pair.destinationSlug}`} className="text-blue-700 underline">
+              {t("destinations.allRulesFor", { country: name })}
+            </a>
+          </>
+        )}
       </p>
 
       {others.length > 0 && (
