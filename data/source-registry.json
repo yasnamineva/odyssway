@@ -1581,6 +1581,109 @@
     ]
   },
   {
+    "code": "BO",
+    "name": "Bolivia",
+    "recheckDays": 90,
+    "recheckReason": "The visa groups change by decree (last on 1 Dec 2025) and the Foreign Ministry's portal lags the decrees (Israel still Group III)",
+    "entry": [
+      {
+        "url": "http://www.gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/151773",
+        "name": "Gaceta Oficial de Bolivia — Decreto Supremo 1923 (12 Mar 2014), regulation of the Migration Law (Ley 370)",
+        "rows": 59,
+        "lastChecked": "2026-11-09",
+        "method": "html",
+        "status": "readable"
+      },
+      {
+        "url": "http://www.gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/168945",
+        "name": "Gaceta Oficial de Bolivia — Decreto Supremo 4828 (23 Nov 2022), amends Decreto Supremo 1923",
+        "rows": 59,
+        "lastChecked": "2026-11-09",
+        "method": "html",
+        "status": "readable"
+      },
+      {
+        "url": "https://servicios.cancilleria.gob.bo/visas/api/paises",
+        "name": "Ministerio de Relaciones Exteriores de Bolivia — visa portal country list (grupo per country)",
+        "rows": 59,
+        "lastChecked": "2026-11-09",
+        "method": "api",
+        "status": "readable",
+        "note": "JSON list of {nombre, iso, grupo}; the iso codes are unreliable (Zambia ZA, Turkmenistan TR), so match by name"
+      },
+      {
+        "url": "https://www.gov.uk/foreign-travel-advice/bolivia/entry-requirements",
+        "name": "GOV.UK (FCDO) — Bolivia travel advice: Entry requirements (updated 2026-09-22)",
+        "rows": 41,
+        "lastChecked": "2026-11-09",
+        "method": "gov.uk content API",
+        "status": "readable"
+      },
+      {
+        "url": "http://www.gacetaoficialdebolivia.gob.bo/anexos/descargarAnexo/61",
+        "name": "Gaceta Oficial de Bolivia — Decreto Supremo 27150 (3 Sep 2003), Anexo I: países que no requieren visa",
+        "rows": 34,
+        "lastChecked": "2026-11-09",
+        "method": "pdf",
+        "status": "readable"
+      },
+      {
+        "url": "http://www.gacetaoficialdebolivia.gob.bo/anexos/descargarAnexo/66",
+        "name": "Gaceta Oficial de Bolivia — Decreto Supremo 27150 (3 Sep 2003), Anexo II: países que requieren visa sin consulta",
+        "rows": 14,
+        "lastChecked": "2026-11-09",
+        "method": "pdf",
+        "status": "readable"
+      },
+      {
+        "url": "http://www.gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/280992",
+        "name": "Gaceta Oficial de Bolivia — Decreto Supremo 5497 (1 Dec 2025), modifies the visa exemption list",
+        "rows": 6,
+        "lastChecked": "2026-11-09",
+        "method": "html",
+        "status": "readable"
+      },
+      {
+        "url": "http://www.gacetaoficialdebolivia.gob.bo/normas/descargarPdf/26503",
+        "name": "Gaceta Oficial de Bolivia — Decreto Supremo 28997 (1 Jan 2007), modifies the visa exemption list",
+        "rows": 4,
+        "lastChecked": "2026-11-09",
+        "method": "pdf",
+        "status": "readable"
+      },
+      {
+        "url": "http://www.gacetaoficialdebolivia.gob.bo/normas/descargarPdf/152647",
+        "name": "Gaceta Oficial de Bolivia — Decreto Supremo 2097 (27 Aug 2014), modifies the visa exemption list",
+        "rows": 1,
+        "lastChecked": "2026-11-09",
+        "method": "pdf",
+        "status": "readable"
+      }
+    ],
+    "customs": [],
+    "medicine": [],
+    "known": [
+      {
+        "topic": "entry",
+        "url": "https://visas.cancilleria.gob.bo/",
+        "status": "js",
+        "note": "Quasar app; its public API route /paises (servicios.cancilleria.gob.bo/visas/api) is what the rows cite; other routes need a login"
+      },
+      {
+        "topic": "entry",
+        "url": "https://migracion.gob.bo/",
+        "status": "js",
+        "note": "Angular app; its API (migracion.gob.bo:3004/api) times out from here; www. host has a certificate error"
+      },
+      {
+        "topic": "entry",
+        "url": "http://www.gacetaoficialdebolivia.gob.bo/normas/busquedag1?q=Extensi%C3%B3n%20de%20Visas",
+        "status": "readable",
+        "note": "Gazette keyword search lists the visa-list decrees; DS 2861 (2016) and DS 4460 (2021), both named in DS 5497, aren't in its online index. https returns connection reset; use http"
+      }
+    ]
+  },
+  {
     "code": "BR",
     "name": "Brazil",
     "recheckDays": 60,

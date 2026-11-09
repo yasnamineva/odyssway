@@ -777,6 +777,186 @@
     ]
   },
   {
+    "destination": "BO",
+    "source": {
+      "name": "Ministerio de Relaciones Exteriores de Bolivia — visa portal country list (grupo per country)",
+      "url": "https://servicios.cancilleria.gob.bo/visas/api/paises"
+    },
+    "checked": "2026-11-09",
+    "groups": [
+      {
+        "label": "Group I: no tourist visa, 90 days a year",
+        "requirement": "visa_free",
+        "stayPolicy": {
+          "kind": "rolling_window",
+          "windowDays": 365,
+          "maxDays": 90
+        },
+        "template": "AR",
+        "nationalities": [
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CZ",
+          "DE",
+          "DK",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JP",
+          "KR",
+          "LU",
+          "LV",
+          "MT",
+          "MX",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
+          "SI",
+          "SK",
+          "TR",
+          "US",
+          "VA"
+        ],
+        "labels": {
+          "AR": "ARGENTINA",
+          "AT": "AUSTRIA",
+          "AU": "AUSTRALIA",
+          "BE": "BELGICA",
+          "BG": "BULGARIA",
+          "BR": "BRASIL",
+          "CA": "CANADA",
+          "CH": "SUIZA",
+          "CL": "CHILE",
+          "CZ": "REP. CHECA",
+          "DE": "ALEMANIA",
+          "DK": "DINAMARCA",
+          "ES": "ESPAÑA",
+          "FI": "FINLANDIA",
+          "FR": "FRANCIA",
+          "GB": "REINO UNIDO GRAN BRETAÑA IRLANDA DEL NORTE",
+          "GR": "GRECIA",
+          "HR": "CROACIA",
+          "HU": "HUNGRIA",
+          "IE": "IRLANDA",
+          "IL": "ISRAEL",
+          "IS": "ISLANDIA",
+          "IT": "ITALIA",
+          "JP": "JAPON",
+          "KR": "REPUBLICA DE COREA",
+          "LU": "LUXEMBURGO",
+          "LV": "LETONIA/LATIVIA",
+          "MT": "MALTA",
+          "MX": "MEXICO",
+          "NL": "PAISES BAJOS",
+          "NO": "NORUEGA",
+          "NZ": "NUEVA ZELANDIA",
+          "PL": "POLONIA",
+          "PT": "PORTUGAL",
+          "RO": "RUMANIA",
+          "SE": "SUECIA",
+          "SI": "ESLOVENIA",
+          "SK": "ESLOVAQUIA",
+          "TR": "TURQUIA",
+          "US": "ESTADOS UNIDOS",
+          "VA": "VATICANO - SANTA SEDE"
+        }
+      },
+      {
+        "label": "Group II: visa or entry authorisation",
+        "requirement": "visa_required",
+        "stayPolicy": {
+          "kind": "visa_required"
+        },
+        "template": "AL",
+        "nationalities": [
+          "AL",
+          "AM",
+          "AZ",
+          "BA",
+          "BY",
+          "CN",
+          "CY",
+          "GE",
+          "IN",
+          "MD",
+          "ME",
+          "MK",
+          "MY",
+          "RS",
+          "RU",
+          "SG",
+          "SM",
+          "UA"
+        ],
+        "labels": {
+          "AL": "ALBANIA",
+          "AM": "ARMENIA",
+          "AZ": "AZERBAYAN",
+          "BA": "BOSNIA-HERZEGOVINA",
+          "BY": "BIELORRUSIA",
+          "CN": "CHINA",
+          "CY": "CHIPRE",
+          "GE": "GEORGIA",
+          "IN": "INDIA",
+          "MD": "MOLDOVA",
+          "ME": "MONTENEGRO",
+          "MK": "MACEDONIA",
+          "MY": "MALASIA",
+          "RS": "SERBIA",
+          "RU": "RUSIA",
+          "SG": "SINGAPUR",
+          "SM": "SAN MARINO",
+          "UA": "UCRANIA"
+        }
+      }
+    ],
+    "held": [
+      {
+        "nationality": "AD",
+        "reason": "The 2003 list (DS 27150, Annex I) puts Andorra in Group I, but the Foreign Ministry's portal shows Group II (2026-11-09) and no readable decree explains the change (DS 2861 of 2016 is not in the gazette's online index)."
+      },
+      {
+        "nationality": "EE",
+        "reason": "The 2003 list (DS 27150, Annex I) puts Estonia in Group I, but the Foreign Ministry's portal shows Group II (2026-11-09) and no readable decree explains the change (DS 2861 of 2016 is not in the gazette's online index)."
+      },
+      {
+        "nationality": "MC",
+        "reason": "The 2003 list (DS 27150, Annex I) puts Monaco in Group I, but the Foreign Ministry's portal shows Group II (2026-11-09) and no readable decree explains the change (DS 2861 of 2016 is not in the gazette's online index)."
+      },
+      {
+        "nationality": "LT",
+        "reason": "The Foreign Ministry's portal lists Lithuania with no group (2026-11-09); the 2003 list (DS 27150, Annex I) puts it in Group I, but later changes can't be ruled out without a second source."
+      },
+      {
+        "nationality": "LI",
+        "reason": "Liechtenstein is missing from the Foreign Ministry's portal list (2026-11-09); the 2003 list (DS 27150, Annex I) puts it in Group I, but later changes can't be ruled out without a second source."
+      },
+      {
+        "nationality": "XK",
+        "reason": "Kosovo has no entry of its own; the portal lists 'SERBIA (INCLUDING KOSOVO)' in Group II, which we don't apply to Kosovo passports without a source that says so."
+      }
+    ]
+  },
+  {
     "destination": "BR",
     "source": {
       "name": "Ministério das Relações Exteriores — Quadro Geral de Regime de Vistos para a Entrada de Estrangeiros no Brasil (QGRV), updated 26 August 2026",

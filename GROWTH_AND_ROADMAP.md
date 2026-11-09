@@ -8,9 +8,9 @@ without a primary official source.
 
 Where we are today (2026-11-09):
 
-- 69 destinations plus the Schengen Area; 3,988 verified entry rows; 810 customs rows
+- 70 destinations plus the Schengen Area; 4,047 verified entry rows; 810 customs rows
   (217 medication, 43 with a doctor's-letter checklist, 22 with a permit how-to, 19 with
-  a transit rule); 1,125 entry rows with a structured passport-validity rule.
+  a transit rule); 1,457 entry rows with a structured passport-validity rule.
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
   planner, travel-authorisation guides, the 90/180 calculator, the multi-country day counter, named-medicine pages, border cards,
   embeddable calculator and "Can I bring it?" widgets, the public JSON API.
@@ -202,8 +202,16 @@ Pick by traffic and source reachability, not by map coverage.
     order's exemptions (e.g. holders of EU, UK, Swiss, US, Canadian or Brazilian residence permits). Missing before it can
     ship: the stay limit for everyone else and the pre-registration rule (EASE FAQ 404; the registration portal is on a
     contractor's domain). Don't read "not on the list" as visa-free without a source that says so.
-  - Newly reachable, to research next: Bolivia's
-    visa portal has an API (servicios.cancilleria.gob.bo/visas/api), routes not found yet.
+  - ✔ Bolivia added 2026-11-09 (59 passports: 41 visa-free, 18 visa; AD EE MC LT LI XK held). The Foreign Ministry's
+    visa portal API `servicios.cancilleria.gob.bo/visas/api/paises` (public, no login) gives each country's group; its
+    iso codes are wrong in places, so match by name. Every group is cross-checked against the gazette decree chain
+    (`gacetaoficialdebolivia.gob.bo`, http only): DS 27150 annexes (2003), DS 28997 (2007: Cyprus, Serbia y Montenegro
+    to II, Croatia to I), DS 2097 (2014: China to II), DS 5497 (1 Dec 2025: KR ZA BG MT RO AE and US IL to Group I).
+    The portal still shows Israel in Group III, so the IL row follows the decree and says so. Group meanings and the
+    stay (30 days, extendable by 60, 90 calendar days a year at most) from DS 1923 as amended by DS 4828 (2022);
+    modelled as 90 in any 365 days. UK row cross-checked with GOV.UK. Held: the portal disagrees with the 2003 annex
+    for AD EE MC (Group II now) with no readable decree to explain it; DS 2861 (2016) and DS 4460 (2021) aren't in the
+    gazette's online index, and finding either may release them. No customs rows yet (aduana.gob.bo not tried).
   - Kazakhstan, Laos, Kuwait, Pakistan, Nepal: official sites are
     JavaScript apps or refuse connections. Retry periodically; a readable official PDF or
     legal-database text unblocks each.
