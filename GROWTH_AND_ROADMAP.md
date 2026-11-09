@@ -127,6 +127,12 @@ since I checked*. Built client-side from verified rows; no accounts.
 3. **Entry costs per trip**: authorisation fees, mandatory insurance, tourist levies and
    departure taxes, from `data/trip-charges.json` (government charges only, never prices
    of services).
+   ✔ 2026-11-09: 11 charges in 9 countries. Added Mexico's visitor fee (DNR, MXN 983) and airport departure
+   migration fee (DSM, MXN 232) from INM's 2026 air-entry table (an image PDF, read visually), and New Zealand's
+   IVL (NZD 100, with its exemptions). Not added: Venice's access fee (2026 trial ended 27 July; 2027 days
+   published, amounts and rules due by 31 Dec: re-check in January), Belize's exit fee and PACT fee (pactbelize.org
+   403, ideclare.gov.bz certificate error, no other official page states them). Mexico's land and sea tables
+   and whether airlines include DNR in fares are still unread.
 4. **Pre-departure recheck**: a saved trip remembers when it was checked; on return it
    lists the rule changes for its destinations since then (from the per-destination
    changelog).

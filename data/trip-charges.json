@@ -148,5 +148,61 @@
     "verified_at": "2026-10-28",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified"
+  },
+  {
+    "id": "mexico-visitor-fee-dnr",
+    "destination": "MX",
+    "kind": "entry_levy",
+    "title": "Visitor fee (Derecho de No Residente, DNR)",
+    "amount": 983,
+    "currency": "MXN",
+    "amountText": "MXN 983.00 (2026)",
+    "whoPays": "Foreigners arriving by air as visitors without permission to do paid work (tourists and business visitors). Crew on scheduled international flights staying no more than seven days don't pay.",
+    "howToPay": "By Visa or Mastercard card, at a bank counter with INM's help sheet, or by electronic transfer. INM staff never accept cash.",
+    "notes": "Set by Article 8, section I of Mexico's Federal Fees Law (Ley Federal de Derechos). INM's air-entry table doesn't say whether airlines include the fee in the ticket price, and the land and sea entry tables weren't read.",
+    "legal_source": {
+      "name": "Instituto Nacional de Migración: Tabla de costos de pago de derechos, internación vía aérea 2026 (Ley Federal de Derechos)",
+      "url": "https://www.gob.mx/cms/uploads/attachment/file/1047224/INTERNACION-VIA-AEREA-2026.pdf"
+    },
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "id": "mexico-airport-departure-migration-fee",
+    "destination": "MX",
+    "kind": "departure_tax",
+    "title": "Airport migration services fee on departure (DSM)",
+    "amount": 232,
+    "currency": "MXN",
+    "amountText": "MXN 232.00 (2026)",
+    "whoPays": "Passengers on international flights leaving Mexico.",
+    "notes": "Set by Article 12 of Mexico's Federal Fees Law (Ley Federal de Derechos). INM's table doesn't say how it is collected or whether airlines include it in the ticket price.",
+    "legal_source": {
+      "name": "Instituto Nacional de Migración: Tabla de costos de pago de derechos, internación vía aérea 2026 (Ley Federal de Derechos)",
+      "url": "https://www.gob.mx/cms/uploads/attachment/file/1047224/INTERNACION-VIA-AEREA-2026.pdf"
+    },
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "id": "new-zealand-international-visitor-levy",
+    "destination": "NZ",
+    "kind": "entry_levy",
+    "title": "International Visitor Conservation and Tourism Levy (IVL)",
+    "amount": 100,
+    "currency": "NZD",
+    "amountText": "NZD 100, each time you request an NZeTA or apply for a visa that includes it",
+    "whoPays": "Many visitors: it's charged with the NZeTA and with visitor, student, working holiday and some work visas. Not charged on an Australian or New Zealand passport, a passport from many Pacific Island nations, to transit passengers arriving at and leaving from Auckland International Airport, to holders of a New Zealand resident visa or an Australian Resident Visa, or with a Business Visitor Visa or APEC business travel card.",
+    "howToPay": "Paid with the NZeTA request or the visa application. It isn't refunded, even if the application is declined.",
+    "notes": "Immigration New Zealand's online tool, Fees, decision times and where to apply, confirms which other visa holders don't pay and which Pacific passports are exempt.",
+    "legal_source": {
+      "name": "Immigration New Zealand: Paying the International Visitor Levy",
+      "url": "https://www.immigration.govt.nz/process-to-apply/applying-for-a-visa/fees-processing-times-and-refunds/paying-the-international-visitor-levy/"
+    },
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
   }
 ]
