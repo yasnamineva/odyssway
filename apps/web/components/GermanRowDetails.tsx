@@ -1,6 +1,6 @@
 import type { CustomsItemRecord, TranslatableFields } from "@odyssway/engine";
 import { createTranslator } from "next-intl";
-import deMessages from "../../../../../messages/de.json";
+import deMessages from "../messages/de.json";
 
 const t = createTranslator({ locale: "de", messages: deMessages, namespace: "dePages" });
 

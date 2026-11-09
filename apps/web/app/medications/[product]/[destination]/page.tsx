@@ -15,6 +15,7 @@ import {
   productPairs,
   productsForDestination, productInSentence } from "../../../../lib/medication-products";
 import { rowLabel } from "../../../../lib/bring-pages";
+import { hasGermanProductPage } from "../../../../lib/german-medications";
 
 interface Params {
   product: string;
@@ -64,7 +65,18 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   return {
     title,
     description,
-    alternates: { canonical: `/medications/${pair.product.slug}/${pair.destinationSlug}` },
+    alternates: {
+      canonical: `/medications/${pair.product.slug}/${pair.destinationSlug}`,
+      ...(hasGermanProductPage(pair)
+        ? {
+            languages: {
+              en: `/medications/${pair.product.slug}/${pair.destinationSlug}`,
+              de: `/de/medications/${pair.product.slug}/${pair.destinationSlug}`,
+              "x-default": `/medications/${pair.product.slug}/${pair.destinationSlug}`,
+            },
+          }
+        : {}),
+    },
     openGraph: { title, description },
   };
 }
@@ -132,6 +144,19 @@ export default async function MedicationPairPage({ params }: { params: Promise<P
 
       <header>
         <h1 className="font-display text-2xl font-bold tracking-tight text-slate-900 lg:text-3xl">{t("h1", vars)}</h1>
+        {hasGermanProductPage(pair) && (
+          <p className="mt-1 text-xs">
+            <a
+              href={`/de/medications/${pair.product.slug}/${pair.destinationSlug}`}
+              hrefLang="de"
+              lang="de"
+              className="text-blue-700 underline"
+              data-testid="german-version-link"
+            >
+              {tb("germanVersion")}
+            </a>
+          </p>
+        )}
         <p className="mt-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm">
           <span className="text-xs font-semibold tracking-wide text-slate-500 uppercase">{tb("shortAnswer")}</span>
           <br />

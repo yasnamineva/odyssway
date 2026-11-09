@@ -42,6 +42,11 @@ export default function GermanBringIndex() {
         ))}
       </ul>
       <p className="text-sm">
+        <a href="/de/medications" className="font-medium text-blue-700 underline">
+          {t("medications.indexMetaTitle")} →
+        </a>
+      </p>
+      <p className="text-sm">
         <a href="/bring" hrefLang="en" lang="en" className="text-blue-700 underline">
           {t("allCountriesEnglish")}
         </a>

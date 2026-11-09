@@ -141,6 +141,31 @@
       "applies": "Gilt auch im Transit",
       "exempt_airside": "Nicht, wenn Sie im Transitbereich bleiben",
       "checkedOn": "Geprüft am {date}"
+    },
+    "medications": {
+      "breadcrumbRoot": "Medikamente",
+      "indexMetaTitle": "Mit Medikamenten reisen: Ritalin, Xanax, Ozempic und mehr",
+      "indexIntro": "Wählen Sie Ihr Medikament und sehen Sie Land für Land, ob Sie es mitnehmen dürfen. Ein Land erscheint nur, wenn seine amtliche Regel das Medikament namentlich nennt. Die deutschen Seiten sind maschinelle Übersetzungen unserer geprüften englischen Texte.",
+      "countries": "{count, plural, one {# Land} other {# Länder}}",
+      "hubMetaTitle": "Mit {product} reisen: Regeln in {count} Ländern",
+      "hubH1": "Mit {product} reisen",
+      "hubIntro": "Ob Sie {product} mitnehmen dürfen, hängt vom Reiseziel ab. Die Liste enthält nur Länder, deren amtliche Regel {product} namentlich nennt. Jede Zeile führt zur vollständigen Regel mit Quelle.",
+      "hubSummary": "{product} an der Grenze: in {banned} von {count} geprüften Ländern verboten, in {conditional} unter Auflagen erlaubt, in {allowed} in Grenzen erlaubt.",
+      "missing": "Ihr Reiseziel fehlt? Dort haben wir noch keine Regel geprüft, die {product} namentlich nennt.",
+      "metaTitle": "{country}: Darf man {product} mitnehmen? Regeln {year}",
+      "h1": "{country}: Darf man {product} mitnehmen?",
+      "ruleScope": "Die amtliche Regel für {country} nennt {product} ausdrücklich. Sie gilt auch für die anderen dort genannten Arzneimittel; lesen Sie die Bedingungen deshalb genau.",
+      "otherCountries": "{product} in anderen Ländern",
+      "allCountries": "{product} in allen Ländern →",
+      "otherMedicines": "Andere Medikamente für {country}",
+      "medicationGuide": "Alle Arzneimittelregeln für {country} →",
+      "productNames": {
+        "codeine": "Codein",
+        "oxycodone": "Oxycodon",
+        "peptides": "Peptide",
+        "hgh": "HGH (Wachstumshormon)"
+      },
+      "medicalDisclaimer": "Keine medizinische Beratung. Setzen Sie ein Medikament wegen einer Reiseregel nicht ab und ändern Sie es nicht, ohne mit Ihrer Ärztin oder Ihrem Arzt zu sprechen."
     }
   }
 }

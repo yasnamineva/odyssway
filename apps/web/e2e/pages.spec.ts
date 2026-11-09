@@ -561,3 +561,27 @@ test("German index and hubs list only German pages and link back to English", as
   const missing = await page.goto("/de/bring/pets");
   expect(missing?.status()).toBe(404);
 });
+
+test("German named-medicine pages: pair, hub and index, hreflang both ways, linked from English", async ({ page }) => {
+  await page.goto("/medications/ritalin/japan");
+  const german = page.getByTestId("german-version-link");
+  await expect(german).toHaveAttribute("href", "/de/medications/ritalin/japan");
+  await expect(page.locator('link[rel=alternate][hreflang=de]')).toHaveAttribute("href", /\/de\/medications\/ritalin\/japan$/);
+
+  await page.goto("/de/medications/ritalin/japan");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Japan: Darf man Ritalin mitnehmen?");
+  await expect(page.getByTestId("de-translation-notice")).toContainText("maschinelle Übersetzung");
+  await expect(page.locator('link[rel=alternate][hreflang=en]')).toHaveAttribute("href", /\/medications\/ritalin\/japan$/);
+  await expect(page.getByTestId("de-product-elsewhere").getByRole("link", { name: "Thailand" })).toHaveAttribute(
+    "href",
+    "/de/medications/ritalin/thailand",
+  );
+
+  await page.goto("/de/medications/codeine");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Mit Codein reisen");
+  await expect(page.getByTestId("de-product-summary")).toContainText("geprüften Ländern");
+  await page.goto("/de/medications");
+  await expect(page.getByTestId("de-medications-list").getByRole("link", { name: /Oxycodon/ })).toBeVisible();
+  const missing = await page.goto("/de/medications/not-a-medicine");
+  expect(missing?.status()).toBe(404);
+});

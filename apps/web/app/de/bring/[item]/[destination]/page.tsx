@@ -5,13 +5,13 @@ import deMessages from "../../../../../messages/de.json";
 import { bringPair, type BringPair } from "../../../../../lib/bring-pages";
 import {
   countryName,
+  germanDate,
   germanPairs,
   germanRowHeading,
   isSharedRow,
-  translatedCustomsDetails,
   translatedCustomsRow,
 } from "../../../../../lib/translations";
-import GermanRowDetails from "./GermanRowDetails";
+import GermanCustomsRowCard from "../../../../../components/GermanCustomsRowCard";
 import { translationProblemHref } from "../../../../../lib/report-problem";
 
 /**
@@ -32,12 +32,6 @@ export const dynamicParams = false;
 
 export function generateStaticParams(): Params[] {
   return germanPairs().map((p) => ({ item: p.itemSlug, destination: p.destinationSlug }));
-}
-
-function germanDate(iso: string | null | undefined): string {
-  if (!iso) return "";
-  const [y, m, d] = iso.split("-").map(Number);
-  return new Intl.DateTimeFormat("de-DE", { dateStyle: "long", timeZone: "UTC" }).format(new Date(Date.UTC(y!, m! - 1, d!)));
 }
 
 function pairFor(item: string, destination: string): BringPair | undefined {
@@ -154,49 +148,9 @@ export default async function GermanBringPage({ params }: { params: Promise<Para
 
       <h2 className="text-lg font-semibold text-slate-900">{t("rulesHeading")}</h2>
       <ul className="space-y-4">
-        {rows.map((r) => {
-          const tr = translatedCustomsRow(r, LOCALE)!;
-          const sources = [r.legal_source, ...((r as { _sources?: Array<{ name: string; url: string }> })._sources ?? [])].filter(
-            (s, i, all) => s && all.findIndex((x) => x?.url === s.url) === i,
-          );
-          return (
-            <li key={r.slug} id={r.slug} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <h3 className="text-base font-semibold text-slate-900">{rowHeading(r.slug)}</h3>
-              <p className="mt-1 text-sm font-medium text-slate-800">{t(`verdict.${r.verdict}`)}</p>
-              {tr.limitsDescription && (
-                <p className="mt-3 text-sm leading-relaxed text-slate-700">
-                  <span className="font-semibold">{t("limit")}: </span>
-                  {tr.limitsDescription}
-                  {tr.limitsQuantity && <span className="text-slate-600"> ({tr.limitsQuantity})</span>}
-                </p>
-              )}
-              {tr.notes && (
-                <p className="mt-3 text-sm leading-relaxed text-slate-700">
-                  <span className="font-semibold">{t("details")}: </span>
-                  {tr.notes}
-                </p>
-              )}
-              {(() => {
-                const details = translatedCustomsDetails(r, LOCALE);
-                return details ? <GermanRowDetails row={r} details={details} country={country} formatDate={germanDate} /> : null;
-              })()}
-              <div className="mt-4 border-t border-slate-100 pt-3 text-xs text-slate-500">
-                <p>
-                  <span className="font-semibold">{t("source")}: </span>
-                  {sources.map((s, i) => (
-                    <span key={s!.url}>
-                      {i > 0 && "; "}
-                      <a href={s!.url} lang="en" className="underline" rel="noopener">
-                        {s!.name}
-                      </a>
-                    </span>
-                  ))}
-                </p>
-                {r.verified_at && <p className="mt-1">{t("checked", { date: germanDate(r.verified_at) })}</p>}
-              </div>
-            </li>
-          );
-        })}
+        {rows.map((r) => (
+          <GermanCustomsRowCard key={r.slug} row={r} heading={rowHeading(r.slug)} country={country} />
+        ))}
       </ul>
 
       <p className="text-sm">

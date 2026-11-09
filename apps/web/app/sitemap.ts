@@ -1,8 +1,10 @@
 import type { MetadataRoute } from "next";
+import type { CustomsItemRecord } from "@odyssway/engine";
 import { blogPosts } from "../lib/blog";
 import { BRING_CATEGORIES } from "../lib/bring-categories";
 import { bringPairs } from "../lib/bring-pages";
 import { germanPairs, hasGermanPage, translatedCustomsRow } from "../lib/translations";
+import { germanPairsForProduct, germanProductPairs, germanProducts, hasGermanProductPage } from "../lib/german-medications";
 import { countriesVerifiedAt } from "../lib/countries";
 import { customsItems, destinationPath, destinations, entryRequirements } from "../lib/destinations";
 import { schengenCustomsRows, schengenDestinations } from "../lib/schengen-destinations";
@@ -23,6 +25,14 @@ const CONTENT_CHECKED = "2026-07-13";
 function latest(dates: Array<string | null | undefined>): string {
   const valid = dates.filter((d): d is string => Boolean(d));
   return valid.length > 0 ? valid.sort().at(-1)! : CONTENT_CHECKED;
+}
+
+/**
+ * A German page changes when its English rows are re-checked *or* retranslated: take the
+ * later date, so a newly translated page is picked up by `indexnow --since`.
+ */
+function germanLastModified(rows: CustomsItemRecord[]): string {
+  return latest([...rows.map((r) => r.verified_at), ...rows.map((r) => translatedCustomsRow(r, "de")?.translatedAt)]);
 }
 
 const DATA_LAST_UPDATED = latest([
@@ -103,11 +113,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: latest(pairsForProduct(p.slug).map((pair) => latestVerified(pair.rows))),
       priority: 0.6,
     })),
-    ...productPairs.map((pair) => ({
-      url: `${BASE}/medications/${pair.product.slug}/${pair.destinationSlug}`,
-      lastModified: latestVerified(pair.rows) ?? DATA_LAST_UPDATED,
-      priority: 0.5,
+    ...productPairs.map((pair) => {
+      const en = `${BASE}/medications/${pair.product.slug}/${pair.destinationSlug}`;
+      return {
+        url: en,
+        lastModified: latestVerified(pair.rows) ?? DATA_LAST_UPDATED,
+        priority: 0.5,
+        ...(hasGermanProductPage(pair) ? { alternates: { languages: { en, de: `${BASE}/de/medications/${pair.product.slug}/${pair.destinationSlug}` } } } : {}),
+      };
+    }),
+    // German medicine pages: index, product hubs and pairs, only where every row is translated.
+    ...(germanProductPairs.length > 0
+      ? [
+          {
+            url: `${BASE}/de/medications`,
+            lastModified: DATA_LAST_UPDATED,
+            priority: 0.4,
+            alternates: { languages: { en: `${BASE}/medications`, de: `${BASE}/de/medications` } },
+          },
+        ]
+      : []),
+    ...germanProducts.map((p) => ({
+      url: `${BASE}/de/medications/${p.slug}`,
+      lastModified: latest(germanPairsForProduct(p.slug).map((pair) => germanLastModified(pair.rows))),
+      priority: 0.4,
+      alternates: { languages: { en: `${BASE}/medications/${p.slug}`, de: `${BASE}/de/medications/${p.slug}` } },
     })),
+    ...germanProductPairs.map((pair) => {
+      const en = `${BASE}/medications/${pair.product.slug}/${pair.destinationSlug}`;
+      const de = `${BASE}/de/medications/${pair.product.slug}/${pair.destinationSlug}`;
+      return { url: de, lastModified: germanLastModified(pair.rows), priority: 0.5, alternates: { languages: { en, de } } };
+    }),
     ...bringPairs.map((p) => {
       const en = `${BASE}/bring/${p.itemSlug}/${p.destinationSlug}`;
       const de = `${BASE}/de/bring/${p.itemSlug}/${p.destinationSlug}`;
@@ -137,9 +173,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       const de = `${BASE}/de/bring/${p.itemSlug}/${p.destinationSlug}`;
       // A German page changes when its English rows are re-checked *or* retranslated:
       // take the later date, so a newly translated page is picked up by `indexnow --since`.
-      const translated = p.rows.map((r) => translatedCustomsRow(r, "de")?.translatedAt ?? "");
-      const lastModified = [p.lastVerified ?? CONTENT_CHECKED, ...translated].sort().at(-1)!;
-      return { url: de, lastModified, priority: 0.5, alternates: { languages: { en, de } } };
+      return { url: de, lastModified: germanLastModified(p.rows), priority: 0.5, alternates: { languages: { en, de } } };
     }),
     ...Object.entries(BRING_CATEGORIES).map(([category, meta]) => {
       const dates = customsItems

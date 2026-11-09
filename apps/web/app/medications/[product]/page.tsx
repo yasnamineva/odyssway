@@ -6,32 +6,18 @@ import { DESCRIPTION_MAX, clip, rowLead } from "../../../lib/seo-text";
 import { SITE_URL } from "../../../lib/site";
 import { withArticle } from "../../../lib/destinations";
 import { VERDICT_STYLES } from "../../../components/CustomsRowCard";
+import { hasGermanProductHub } from "../../../lib/german-medications";
 import {
   latestVerified,
   medicationProducts,
   pairsForProduct,
-  productBySlug, productInSentence } from "../../../lib/medication-products";
+  productBySlug, productInSentence, verdictCounts } from "../../../lib/medication-products";
 
 interface Params {
   product: string;
 }
 
 export const dynamicParams = false;
-
-/**
- * One answer class per country: a country whose rows disagree (e.g. one form
- * allowed, another banned) counts as conditional, never as allowed.
- */
-function verdictCounts(pairs: ReturnType<typeof pairsForProduct>) {
-  const counts = { banned: 0, conditional: 0, allowed: 0 };
-  for (const pair of pairs) {
-    const verdicts = new Set(pair.rows.map((r) => r.verdict));
-    if (verdicts.size === 1 && verdicts.has("prohibited")) counts.banned += 1;
-    else if ([...verdicts].every((v) => v === "allowed" || v === "allowed_with_limits")) counts.allowed += 1;
-    else counts.conditional += 1;
-  }
-  return counts;
-}
 
 export function generateStaticParams(): Params[] {
   return medicationProducts.map((p) => ({ product: p.slug }));
@@ -47,7 +33,18 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   return {
     title: t("metaTitle", vars),
     description,
-    alternates: { canonical: `/medications/${product.slug}` },
+    alternates: {
+      canonical: `/medications/${product.slug}`,
+      ...(hasGermanProductHub(product.slug)
+        ? {
+            languages: {
+              en: `/medications/${product.slug}`,
+              de: `/de/medications/${product.slug}`,
+              "x-default": `/medications/${product.slug}`,
+            },
+          }
+        : {}),
+    },
     openGraph: { title: t("metaTitle", vars), description, images: ["/opengraph-image"] },
   };
 }
@@ -59,6 +56,7 @@ export default async function MedicationProductPage({ params }: { params: Promis
   const t = await getTranslations("medicationProduct");
   const tv = await getTranslations("destinationPage.verdict");
   const tc = await getTranslations("common");
+  const tb = await getTranslations("bringDestinationPage");
   const others = medicationProducts.filter((p) => p.slug !== product.slug);
 
   const counts = verdictCounts(pairs);
@@ -115,6 +113,13 @@ export default async function MedicationProductPage({ params }: { params: Promis
         <h1 className="font-display text-2xl font-bold tracking-tight text-slate-900 lg:text-3xl">
           {t("h1", { product: product.name })}
         </h1>
+        {hasGermanProductHub(product.slug) && (
+          <p className="mt-1 text-xs">
+            <a href={`/de/medications/${product.slug}`} hrefLang="de" lang="de" className="text-blue-700 underline" data-testid="german-version-link">
+              {tb("germanVersion")}
+            </a>
+          </p>
+        )}
         <p className="mt-3 text-sm leading-relaxed text-slate-600">{t("intro", { product: product.name })}</p>
         <p className="mt-3 rounded-xl bg-slate-50 p-3 text-sm leading-relaxed text-slate-800" data-testid="product-summary">
           {t("summary", { product: product.name, count: pairs.length, ...counts })}

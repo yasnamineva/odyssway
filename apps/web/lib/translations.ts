@@ -113,7 +113,10 @@ export function isSharedRow(slug: string, destinationCode: string): boolean {
  * row's kind (rowLabels in messages/de.json), or "additional rules in {country}" for a
  * national row shown next to the EU one. Null when none fits: that page isn't built.
  */
-export function germanRowHeading(slug: string, pair: BringPair): GermanRowHeading | null {
+export function germanRowHeading(
+  slug: string,
+  pair: { destination: { code: string }; rows: CustomsItemRecord[] },
+): GermanRowHeading | null {
   const code = pair.destination.code;
   if (isSharedRow(slug, code)) return { kind: "shared" };
   const base = slug.replace(new RegExp(`-(${code.toLowerCase()})$`), "");
@@ -123,11 +126,24 @@ export function germanRowHeading(slug: string, pair: BringPair): GermanRowHeadin
   return null;
 }
 
+/** True when every row is translated and, on a page with several rows, each can be headed. */
+export function germanRowsReady(pair: { destination: { code: string }; rows: CustomsItemRecord[] }): boolean {
+  return (
+    allRowsTranslated(pair.rows, "de") &&
+    (pair.rows.length === 1 || pair.rows.every((r) => germanRowHeading(r.slug, pair) !== null))
+  );
+}
+
+/** An ISO date as German readers write it ("8. November 2026"), timezone-free. */
+export function germanDate(iso: string | null | undefined): string {
+  if (!iso) return "";
+  const [y, m, d] = iso.split("-").map(Number);
+  return new Intl.DateTimeFormat("de-DE", { dateStyle: "long", timeZone: "UTC" }).format(new Date(Date.UTC(y!, m! - 1, d!)));
+}
+
 /** "Can I bring it?" pairs whose every row is translated in German and can be headed (the /de pages). */
 export function germanPairs(): BringPair[] {
-  return bringPairs.filter(
-    (p) => allRowsTranslated(p.rows, "de") && (p.rows.length === 1 || p.rows.every((r) => germanRowHeading(r.slug, p) !== null)),
-  );
+  return bringPairs.filter(germanRowsReady);
 }
 
 let germanSet: Set<BringPair> | null = null;

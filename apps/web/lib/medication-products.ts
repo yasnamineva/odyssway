@@ -116,3 +116,18 @@ export function latestVerified(rows: CustomsItemRecord[]): string | null {
   const dates = rows.map((r) => r.verified_at).filter((d): d is string => Boolean(d));
   return dates.length > 0 ? dates.sort().at(-1)! : null;
 }
+
+/**
+ * One answer class per country: a country whose rows disagree
+ * counts as conditional, never as allowed.
+ */
+export function verdictCounts(pairs: ProductPair[]): { banned: number; conditional: number; allowed: number } {
+  const counts = { banned: 0, conditional: 0, allowed: 0 };
+  for (const pair of pairs) {
+    const verdicts = new Set(pair.rows.map((r) => r.verdict));
+    if (verdicts.size === 1 && verdicts.has("prohibited")) counts.banned += 1;
+    else if ([...verdicts].every((v) => v === "allowed" || v === "allowed_with_limits")) counts.allowed += 1;
+    else counts.conditional += 1;
+  }
+  return counts;
+}
