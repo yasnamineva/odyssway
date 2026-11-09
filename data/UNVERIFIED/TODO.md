@@ -4214,3 +4214,24 @@ Added `melatonin-ca` (Health Canada PDL notice of 2 June 2026 + GUI-0116) and `m
   - Customs: done from aduana.gob.bo/regimen-viajero (allowance, alcohol, tobacco, prescribed medicine, cash). Still open:
     controlled medicines (no Bolivian source found), pets (Germany's advice: translated vet certificate and rabies proof;
     needs SENASAG), and whether the 400-cigarette and 50-cigar/500 g lines can be combined.
+
+## Source watcher report 2026-11-02 (reviewed 2026-11-09)
+
+- Re-read by hand, unchanged for our rows: China NIA visa-free list (still dated 17 Feb 2026; the watcher had the NIA
+  homepage, now the list page), Canada eTA help page (6 months; US exempt), Nigeria F5A (90-day validity, 30-day stay,
+  not extendable), Commission Schengen page (29 states), Commission EES page (12 Oct 2025 start, full on 10 Apr 2026),
+  Singapore ICA visa list (updated 28 Oct 2026; same nine of our passports), Thailand FDA health products (all food,
+  medicine and device values), India DoR NDPS travellers page, RBI cash direction (updated 12 Jan 2026), Egypt customs
+  (allowances and clearances), Brazil cash (US$10,000) and allowance table.
+- Changed: Japan NCD added a trial online application system (Nov 2026), now in the permit steps; ICA moved its pages
+  (citations updated). Brazil tobacco was wrong in our row: Receita Federal gives cigarettes, cigars and tobacco
+  separate "no total" limits, not alternatives; fixed 2026-11-09.
+- Not yet re-read from that list: the rest of the 124 (mostly customs pages: Singapore HSA/SFA/CAAS/Police, Taiwan
+  customs, Mexico SENASICA, Thailand customs, NZ MPI, Australia legislation, Korea, Colombia DIAN, Sweden kratom, China
+  MOFCOM/MEM, Indonesia, South Africa CAA, UAE GCAA, Brazil MAPA). Read them as the weekly report's sentence diffs
+  arrive (snapshots now exist in CI).
+- Quote check against a full local snapshot set (2026-11-09): 1,059 of 3,268 quoted passages found. The misses are
+  mostly quotes we translated into English (Peru, Colombia, Costa Rica, Dominican Republic tables) and PDFs; entity
+  decoding added to the check the same day. Worth doing: mark translated quotes in rows so the check skips them.
+- Audit idea from the Brazil fix: re-check every tobacco row whose allowance is one `one_of` group with several
+  products, against its source's wording ("or" vs separate lines).

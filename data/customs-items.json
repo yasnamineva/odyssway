@@ -6388,16 +6388,16 @@
     "category": "tobacco",
     "verdict": "allowed_with_limits",
     "limits": {
-      "description": "Duty-free tobacco allowance for travelers entering Brazil.",
-      "quantity": "Up to 10 packs of cigarettes (200 cigarettes total), OR 25 cigars/cigarrilhas, OR 250 grams of pipe tobacco"
+      "description": "Each product has its own duty-free limit, within the US$1,000 baggage allowance (US$500 by land or river): 10 packs of 20 foreign-made cigarettes, 25 cigars or cigarillos, and 250 g of smoking tobacco. Over a limit, the goods are still treated as baggage but pay import tax.",
+      "quantity": "10 packs (200 cigarettes), 25 cigars or cigarillos, 250 g tobacco"
     },
-    "notes": "Sale of tobacco products (including duty-free) to travelers under 18 is prohibited, even if accompanied by a guardian. Quantities above the limit are taxable at standard import rates.",
-    "summary": "Duty-free from age 18: 10 packs (200 cigarettes), or 25 cigars, or 250 g of pipe tobacco.",
+    "notes": "Sale of tobacco products (including duty-free) to travelers under 18 is prohibited, even if accompanied by a guardian. Receita Federal lists the three limits on separate lines, each 'no total', so you can bring all three. Quantities above a limit are taxable at standard import rates.",
+    "summary": "Duty-free from age 18: 10 packs (200 cigarettes), 25 cigars or cigarillos, and 250 g of smoking tobacco, each with its own limit.",
     "legal_source": {
       "name": "Receita Federal do Brasil – Guia do Viajante: Cota de isenção, duty free e bagagem tributável",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/cota-de-isencao-duty-free-e-bagagem-tributavel"
     },
-    "verified_at": "2026-10-30",
+    "verified_at": "2026-11-09",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "allowance": {
@@ -6410,14 +6410,24 @@
                 "cigarettes"
               ],
               "amount": 200
-            },
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
             {
               "products": [
                 "cigars",
                 "cigarillos"
               ],
               "amount": 25
-            },
+            }
+          ]
+        },
+        {
+          "kind": "one_of",
+          "options": [
             {
               "products": [
                 "smoking_tobacco"
@@ -6427,7 +6437,15 @@
           ]
         }
       ]
-    }
+    },
+    "_sources": [
+      {
+        "claim": "Limites quantitativos: 'Cigarros de fabricação estrangeira 10 maços, no total, contendo cada um 20 unidades'; 'Charutos ou cigarrilhas 25 unidades no total'; 'Fumo 250 gramas no total' (separate lines); over the limits the goods are baggage without the tax exemption",
+        "name": "Receita Federal do Brasil – Guia do Viajante: Cota de isenção, duty free e bagagem tributável",
+        "url": "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/cota-de-isencao-duty-free-e-bagagem-tributavel",
+        "checked": "2026-11-09"
+      }
+    ]
   },
   {
     "slug": "cash-br",

@@ -40,15 +40,30 @@ function snapshotId(url: string): string {
   return `data-${createHash("sha1").update(url).digest("hex").slice(0, 10)}${govuk ? "-s" : ""}`;
 }
 
+const NAMED_ENTITIES: Record<string, string> = {
+  nbsp: " ", amp: "&", quot: '"', apos: "'", lt: "<", gt: ">",
+  lsquo: "‘", rsquo: "’", ldquo: "“", rdquo: "”", ndash: "–", mdash: "—", hellip: "…",
+};
+
+/** Snapshots can keep HTML entities (`&#8217;`, `&nbsp;`) that the rows' quotes don't have. */
+function decodeEntities(text: string): string {
+  return text
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex: string) => String.fromCodePoint(parseInt(hex, 16)))
+    .replace(/&#(\d+);/g, (_, dec: string) => String.fromCodePoint(Number(dec)))
+    .replace(/&([a-z]+);/gi, (whole, name: string) => NAMED_ENTITIES[name.toLowerCase()] ?? whole);
+}
+
 /** Lowercase, straight quotes, single spaces, no soft hyphens: wording compared, not typography. */
 export function normalise(text: string): string {
-  return text
+  return decodeEntities(text)
     .normalize("NFKC")
     .replace(/[­​]/g, "")
     .replace(/[‘’`´]/g, "'")
     .replace(/[“”«»„]/g, '"')
     .replace(/[–—]/g, "-")
     .replace(/\s+/g, " ")
+    .replace(/ ([,.;:!?)])/g, "$1")
+    .replace(/\( /g, "(")
     .toLowerCase()
     .trim();
 }
