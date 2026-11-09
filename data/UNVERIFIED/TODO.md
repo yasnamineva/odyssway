@@ -4203,3 +4203,13 @@ Added `melatonin-ca` (Health Canada PDL notice of 2 June 2026 + GUI-0116) and `m
 - **UAE**: traveller rule depends on MOHAP's controlled/semi-controlled list; mohap.gov.ae refused connections 2026-11-09 (WebFetch ECONNRESET, curl no response). Retry, then search the list PDF for melatonin.
 - **Philippines**: the FDA registers melatonin products as food supplements (verification portal; advisory 2025-1383 on an unregistered one), but no traveller allowance for supplements was found. No row.
 - Next candidates (high search volume): UAE, Korea, Philippines, the UK row's EU neighbours; each needs a national register or authority page that names melatonin.
+- Bolivia leads (2026-11-09):
+  - Health insurance on entry: Germany's travel advice says foreigners without a Bolivian residence permit must show
+    health insurance on entry. Only the German row says so; find the Bolivian rule (a DIGEMIG resolution or decree) to
+    add it to every row. GOV.UK's Bolivia page (updated 2026-09-22) doesn't mention it.
+  - Held AD EE MC: the 2003 list (DS 27150 Annex I) has them in Group I, the Foreign Ministry portal in Group II. DS 2861
+    (3 Aug 2016) and DS 4460 (27 Jan 2021), both named in DS 5497, aren't in the gazette's online index; either may
+    explain it. LT has no group on the portal, LI isn't listed, XK only via 'SERBIA (INCLUDING KOSOVO)'.
+  - Israel: portal still shows Group III; the row follows DS 5497 (Group I). Re-check the portal at each re-check.
+  - Customs beyond cash: aduana.gob.bo not tried yet. Germany's advice: pets need a translated vet certificate and rabies
+    proof; medicines that are over the counter in the EU may be refused, so carry a (translated) prescription.

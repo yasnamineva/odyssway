@@ -1,5 +1,65 @@
 [
   {
+    "commit": "e64bcef747f468ec0ace2facf7a410f981035686",
+    "date": "2026-11-09",
+    "dataset": "destinations",
+    "summary": "Bolivia: 59 passports from the Foreign Ministry's visa-portal country groups, each cross-checked with the gazette decree chain (DS 27150 annexes, DS 28997, DS 2097, DS 5497 of Dec 2025); 41 visa-free (90 days a year, DS 1923/4828), 18 need a visa or entry authorisation; Israel follows DS 5497 over the portal; AD EE MC LT LI XK held; UK row cross-checked with GOV.UK",
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministerio de Relaciones Exteriores de Bolivia — visa portal country list (grupo per country)",
+      "url": "https://servicios.cancilleria.gob.bo/visas/api/paises"
+    },
+    "destinations": [
+      "BO"
+    ]
+  },
+  {
+    "commit": "e64bcef747f468ec0ace2facf7a410f981035686",
+    "date": "2026-11-09",
+    "dataset": "entry-requirements",
+    "summary": "Bolivia: 59 passports from the Foreign Ministry's visa-portal country groups, each cross-checked with the gazette decree chain (DS 27150 annexes, DS 28997, DS 2097, DS 5497 of Dec 2025); 41 visa-free (90 days a year, DS 1923/4828), 18 need a visa or entry authorisation; Israel follows DS 5497 over the portal; AD EE MC LT LI XK held; UK row cross-checked with GOV.UK",
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministerio de Relaciones Exteriores de Bolivia — visa portal country list (grupo per country)",
+      "url": "https://servicios.cancilleria.gob.bo/visas/api/paises"
+    },
+    "destinations": [
+      "BO"
+    ]
+  },
+  {
+    "commit": "46ca39d51c586ff1197c413db7df038f4cd523cd",
+    "date": "2026-11-09",
+    "dataset": "customs-items",
+    "summary": "Paraguay cross-checked with Germany's travel advice: German row (90 days, one 90-day extension, land-border stamp fine), cash row records the differing US$10,000 wording",
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "GOV.UK (FCDO) — Paraguay travel advice: Entry requirements (updated 2026-11-03)",
+      "url": "https://www.gov.uk/foreign-travel-advice/paraguay/entry-requirements"
+    },
+    "destinations": [
+      "PY"
+    ]
+  },
+  {
+    "commit": "46ca39d51c586ff1197c413db7df038f4cd523cd",
+    "date": "2026-11-09",
+    "dataset": "entry-requirements",
+    "summary": "Paraguay cross-checked with Germany's travel advice: German row (90 days, one 90-day extension, land-border stamp fine), cash row records the differing US$10,000 wording",
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Dirección Nacional de Migraciones (Paraguay) — Acuerdos de supresión de visas (última actualización: enero de 2026)",
+      "url": "https://migraciones.gov.py/wp-content/uploads/2026/01/ACUERDOS-DE-SUPRESION-DE-VISAS-2026.pdf"
+    },
+    "destinations": [
+      "PY"
+    ]
+  },
+  {
     "commit": "53513b2303d8de99ba2c7a1896c72d8e1b2a592e",
     "date": "2026-11-09",
     "dataset": "customs-items",

@@ -30367,5 +30367,57 @@
         "url": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/paraguaysicherheit-224964"
       }
     ]
+  },
+  {
+    "slug": "cash-bo",
+    "names": [
+      "cash",
+      "currency",
+      "money",
+      "dollars",
+      "foreign currency"
+    ],
+    "destination": "BO",
+    "category": "cash",
+    "verdict": "declaration_required",
+    "summary": "Register foreign cash of US$10,000 to US$50,000 on the customs form. More than US$50,000 must come in through a bank or licensed money-transfer firm.",
+    "limits": {
+      "description": "Bringing in foreign currency worth between US$10,000 and US$50,000 needs registering on a form from Bolivia's customs (Aduana Nacional), with where the money comes from and where it is going. More than US$50,000 must be brought in through a bank or a licensed money-transfer company. When leaving, US$10,000 to US$20,000 needs registering, and more than US$20,000 must go through a bank or money-transfer company.",
+      "quantity": "US$10,000 to US$50,000"
+    },
+    "notes": "From Decreto Supremo 5404 of 23 May 2025, which rewrote Bolivia's rules on carrying foreign currency (Decreto Supremo 29681). The decree also says everyone must report foreign currency they bring in or take out on the customs form, without naming a lower limit, so ask customs if you are unsure. Germany's travel advice still gives the older limits (declare above US$10,000, central bank approval above US$20,000); the 2025 decree is the current text.",
+    "legal_source": {
+      "name": "Gaceta Oficial de Bolivia — Decreto Supremo 5404 (23 May 2025), modifies Decreto Supremo 29681 on carrying foreign currency in and out",
+      "url": "http://www.gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/280715"
+    },
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "Art. 3 I: 'La internación física de divisas al territorio nacional, por montos entre $us10.000.- (DIEZ MIL 00/100 DÓLARES ESTADOUNIDENSES) y $us50.000.- (CINCUENTA MIL 00/100 DÓLARES ESTADOUNIDENSES)' ... 'requerirán de registro en formulario provisto por la Aduana Nacional'; exit between US$10,000 and US$20,000 likewise",
+        "name": "Gaceta Oficial de Bolivia — Decreto Supremo 5404 (23 May 2025), modifies Decreto Supremo 29681 on carrying foreign currency in and out",
+        "url": "http://www.gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/280715",
+        "checked": "2026-11-09"
+      },
+      {
+        "claim": "Art. 3 II: entry above US$50,000 and exit above US$20,000 'deberán ser realizadas a través de entidades de intermediación financiera y/o empresas de giros y remesas de dinero'",
+        "name": "Gaceta Oficial de Bolivia — Decreto Supremo 5404 (23 May 2025), modifies Decreto Supremo 29681 on carrying foreign currency in and out",
+        "url": "http://www.gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/280715",
+        "checked": "2026-11-09"
+      },
+      {
+        "claim": "Art. 2: all persons 'están obligadas a reportar a la Aduana Nacional, la internación y salida de divisas' on the customs form (no lower limit named)",
+        "name": "Gaceta Oficial de Bolivia — Decreto Supremo 5404 (23 May 2025), modifies Decreto Supremo 29681 on carrying foreign currency in and out",
+        "url": "http://www.gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/280715",
+        "checked": "2026-11-09"
+      },
+      {
+        "claim": "Older limits: cash up to US$10,000 without approval, up to US$20,000 declared on arrival, US$20,000 to 500,000 with prior central bank approval",
+        "name": "Auswärtiges Amt — Bolivien: Reise- und Sicherheitshinweise, Einreise und Zoll",
+        "url": "https://www.auswaertiges-amt.de/de/service/laender/bolivien-node/boliviensicherheit-213428",
+        "checked": "2026-11-09"
+      }
+    ]
   }
 ]

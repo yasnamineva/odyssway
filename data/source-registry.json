@@ -1612,6 +1612,14 @@
         "note": "JSON list of {nombre, iso, grupo}; the iso codes are unreliable (Zambia ZA, Turkmenistan TR), so match by name"
       },
       {
+        "url": "https://www.auswaertiges-amt.de/de/service/laender/bolivien-node/boliviensicherheit-213428",
+        "name": "Auswärtiges Amt — Bolivien: Reise- und Sicherheitshinweise, Einreise und Zoll",
+        "rows": 41,
+        "lastChecked": "2026-11-09",
+        "method": "html",
+        "status": "readable"
+      },
+      {
         "url": "https://www.gov.uk/foreign-travel-advice/bolivia/entry-requirements",
         "name": "GOV.UK (FCDO) — Bolivia travel advice: Entry requirements (updated 2026-09-22)",
         "rows": 41,
@@ -1660,7 +1668,24 @@
         "status": "readable"
       }
     ],
-    "customs": [],
+    "customs": [
+      {
+        "url": "http://www.gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/280715",
+        "name": "Gaceta Oficial de Bolivia — Decreto Supremo 5404 (23 May 2025), modifies Decreto Supremo 29681 on carrying foreign currency in and out",
+        "rows": 1,
+        "lastChecked": "2026-11-09",
+        "method": "html",
+        "status": "readable"
+      },
+      {
+        "url": "https://www.auswaertiges-amt.de/de/service/laender/bolivien-node/boliviensicherheit-213428",
+        "name": "Auswärtiges Amt — Bolivien: Reise- und Sicherheitshinweise, Einreise und Zoll",
+        "rows": 1,
+        "lastChecked": "2026-11-09",
+        "method": "html",
+        "status": "readable"
+      }
+    ],
     "medicine": [],
     "known": [
       {
