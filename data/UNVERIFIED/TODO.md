@@ -4236,3 +4236,24 @@ Added `melatonin-ca` (Health Canada PDL notice of 2 June 2026 + GUI-0116) and `m
   decoding added to the check the same day. Worth doing: mark translated quotes in rows so the check skips them.
 - ✔ Audit from the Brazil fix (2026-11-09): every allowance with alternatives (27 rows) says "or"/"one of" as its source does; no other row had Brazil's problem. Was: re-check every tobacco row whose allowance is one `one_of` group with several
   products, against its source's wording ("or" vs separate lines).
+
+## Source-watch report 2026-11-09 (review started 2026-11-10)
+
+189 pages changed, 117 with no wording change after normalising (navigation, dates, entity decoding). The
+Dominican Republic MIREX results pages (~25) differ only in HTML-entity decoding (`aacute`, `iacute`): not real
+changes. Auswärtiges Amt security pages: shared news-box text, not entry rules.
+- ✔ Bahamas (2026-11-10): Immigration rewrote 'Before Your Arrival' (4 Nov) and 'Entry Requirements' (5 Nov).
+  The list now gives each passport a stay: 8 months (AG BE CA DK GR IS IT LI LU NO SM CH TR GB US), 3 months
+  (110 countries incl. Kosovo), or visa required (63, now incl. **Bosnia and Herzegovina**). All 64 rows
+  rewritten from it: day counts set (240 / 90; GB keeps GOV.UK's 30), BA now visa required, XK added, **AD held**
+  (on neither list; was visa-waived), India's exemption now only with a valid CA/UK/US/Schengen visa with 6
+  months' validity (MOFA eVISA page of 31 Oct still also accepts permanent residence: conflict recorded). The old
+  'Entry Requirements' wording (US citizens 8 months, Latin Americans 3 months, Canadian PR 30 days) is gone;
+  rows re-cited to Before Your Arrival. Extension page: $200 fee and interview unchanged, "since 18 Sep 2024"
+  dropped. Open: Italy's own advice says "under 90 days" while the Bahamas list gives Italy 8 months (row
+  follows the Bahamas list and quotes both).
+- ✔ Turkey MFA: only South Africa's paragraph changed (e-visa now via a private company site, 30-day stay); we
+  have no ZA→TR row.
+- Next from this report: Uruguay's visa regime page (gub.uy, 66 rows), Hong Kong pre-arrival registration for
+  Indian nationals, GOV.UK visiting-the-UK-as-EU-citizen, DHS VWP page, NZ immigration homepage, Singapore
+  police cash-report page, Malaysia–China exemption article.

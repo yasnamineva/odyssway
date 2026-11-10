@@ -1079,23 +1079,49 @@
   {
     "destination": "BS",
     "source": {
-      "name": "Bahamas Department of Immigration — Before Your Arrival (Entry Criteria and Visa Requirements; page updated 2026-08-10)",
+      "name": "Bahamas Department of Immigration — Before Your Arrival (Entry Criteria and Visa Requirements; page updated 2026-11-04)",
       "url": "https://www.immigration.gov.bs/entry-requirements/before-your-arrival/"
     },
-    "checked": "2026-11-02",
+    "checked": "2026-11-10",
     "groups": [
       {
-        "label": "visa free, 240 days",
+        "label": "visa free, 240 days (8 months)",
         "requirement": "visa_free",
         "stayPolicy": {
           "kind": "fixed_per_entry",
           "maxDays": 240
         },
-        "template": "US",
+        "template": "BE",
         "nationalities": [
+          "BE",
           "CA",
+          "CH",
+          "DK",
+          "GR",
+          "IS",
+          "IT",
+          "LI",
+          "LU",
+          "NO",
+          "SM",
+          "TR",
           "US"
-        ]
+        ],
+        "labels": {
+          "BE": "Belgium",
+          "CA": "Canada",
+          "CH": "Switzerland",
+          "DK": "Denmark",
+          "GR": "Greece",
+          "IS": "Iceland",
+          "IT": "Italy",
+          "LI": "Liechtenstein",
+          "LU": "Luxembourg",
+          "NO": "Norway",
+          "SM": "San Marino",
+          "TR": "Türkiye",
+          "US": "United States of America"
+        }
       },
       {
         "label": "visa free, 30 days",
@@ -1110,47 +1136,38 @@
         ]
       },
       {
-        "label": "visa free",
+        "label": "visa free, 90 days (3 months)",
         "requirement": "visa_free",
         "stayPolicy": {
-          "kind": "visa_required"
+          "kind": "fixed_per_entry",
+          "maxDays": 90
         },
         "template": "AT",
         "nationalities": [
-          "AD",
           "AM",
           "AR",
           "AT",
           "AU",
           "AZ",
-          "BA",
-          "BE",
           "BG",
           "BR",
-          "CH",
           "CL",
           "CN",
           "CY",
           "CZ",
           "DE",
-          "DK",
           "EE",
           "ES",
           "FI",
           "FR",
           "GE",
-          "GR",
           "HR",
           "HU",
           "IE",
           "IL",
-          "IS",
-          "IT",
           "JP",
           "KR",
-          "LI",
           "LT",
-          "LU",
           "LV",
           "MC",
           "MD",
@@ -1159,7 +1176,6 @@
           "MX",
           "MY",
           "NL",
-          "NO",
           "NZ",
           "PL",
           "PT",
@@ -1169,10 +1185,54 @@
           "SG",
           "SI",
           "SK",
-          "SM",
-          "TR",
-          "VA"
-        ]
+          "VA",
+          "XK"
+        ],
+        "labels": {
+          "AM": "Armenia",
+          "AR": "Argentina",
+          "AT": "Austria",
+          "AU": "Australia",
+          "AZ": "Azerbaijan",
+          "BG": "Bulgaria",
+          "BR": "Brazil",
+          "CL": "Chile",
+          "CN": "China",
+          "CY": "Cyprus",
+          "CZ": "Czechia",
+          "DE": "Germany",
+          "EE": "Estonia",
+          "ES": "Spain",
+          "FI": "Finland",
+          "FR": "France",
+          "GE": "Georgia",
+          "HR": "Croatia",
+          "HU": "Hungary",
+          "IE": "Ireland",
+          "IL": "Israel",
+          "JP": "Japan",
+          "KR": "Korea, Republic of",
+          "LT": "Lithuania",
+          "LV": "Latvia",
+          "MC": "Monaco",
+          "MD": "Moldova, Republic of",
+          "MK": "North Macedonia",
+          "MT": "Malta",
+          "MX": "Mexico",
+          "MY": "Malaysia",
+          "NL": "Netherlands (Kingdom of the)",
+          "NZ": "New Zealand",
+          "PL": "Poland",
+          "PT": "Portugal",
+          "RO": "Romania",
+          "RU": "Russian Federation",
+          "SE": "Sweden",
+          "SG": "Singapore",
+          "SI": "Slovenia",
+          "SK": "Slovakia",
+          "VA": "Holy See",
+          "XK": "Kosovo"
+        }
       },
       {
         "label": "visa required",
@@ -1183,18 +1243,27 @@
         "template": "AL",
         "nationalities": [
           "AL",
+          "BA",
           "BY",
           "IN",
           "ME",
           "RS",
           "UA"
-        ]
+        ],
+        "labels": {
+          "AL": "Albania",
+          "BA": "Bosnia and Herzegovina",
+          "BY": "Belarus",
+          "ME": "Montenegro",
+          "RS": "Serbia",
+          "UA": "Ukraine"
+        }
       }
     ],
     "held": [
       {
-        "nationality": "XK",
-        "reason": "On neither of Bahamas Immigration's lists"
+        "nationality": "AD",
+        "reason": "On neither of Bahamas Immigration's lists (page updated 4 Nov 2026); was on the visa-waived list before"
       }
     ]
   },
