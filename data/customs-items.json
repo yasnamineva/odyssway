@@ -30201,6 +30201,39 @@
     "status": "verified"
   },
   {
+    "slug": "e-cigarettes-cn",
+    "names": [
+      "e-cigarette",
+      "vape",
+      "vaping liquid",
+      "e-liquid"
+    ],
+    "destination": "CN",
+    "category": "e_cigarettes",
+    "verdict": "allowed_with_limits",
+    "limits": {
+      "description": "Duty-free e-cigarette allowance for travellers entering mainland China",
+      "quantity": "2 devices plus 6 cartridges or pre-filled products (disposables included), with no more than 12 ml of e-liquid in total. Arriving from Hong Kong or Macao: 1 device plus 3, up to 6 ml. Travellers crossing many times in a short period: 1 device plus 1, up to 2 ml."
+    },
+    "notes": "E-cigarettes whose e-liquid volume isn't labelled may not be brought in. Travellers under 18 may not bring e-cigarettes in at all (the age was 16 until GACC Announcement No. 176 of 2024 raised it from 1 December 2024). Above the allowance, if Customs accepts the extra is for your own use, duty is charged only on the extra (a single item that can't be split is taxed in full), and the taxed extra may not be more than the duty-free amount itself. Since 1 December 2024 the value of the duty-free e-cigarettes counts toward your general duty-free baggage allowance. You must declare more than 2 devices, 6 cartridges or 12 ml (from Hong Kong or Macao: more than 1, 3 or 6 ml).",
+    "summary": "Duty-free: 2 e-cigarettes and 6 cartridges, up to 12 ml of liquid in total (less from Hong Kong or Macao). Travellers under 18 may not bring any.",
+    "legal_source": {
+      "name": "General Administration of Customs of China, Announcement No. 102 of 2022 on e-cigarette taxation (海关总署公告2022年第102号), point 3, as published by the Ministry of Commerce",
+      "url": "http://www.mofcom.gov.cn/zcfb/zgdwjjmywg/art/2023/art_17c1c25fc6004a028f4ddeefd83bd698.html"
+    },
+    "verified_at": "2026-11-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified",
+    "_sources": [
+      {
+        "claim": "From 1 Dec 2024: age limit raised from 16 to 18; duty-free e-cigarettes count toward the baggage allowance; travellers must declare more than 2 devices, 6 cartridges or 12 ml (1, 3 or 6 ml from Hong Kong or Macao)",
+        "name": "General Administration of Customs of China, Announcement No. 176 of 2024 (海关总署公告2024年第176号), points 2(3) and 3, as published by the Ministry of Commerce",
+        "url": "https://www.mofcom.gov.cn/zcfb/zgdwjjmywg/art/2025/art_4adf716bf28542fdbffe5510b30d8ed9.html",
+        "checked": "2026-11-10"
+      }
+    ]
+  },
+  {
     "slug": "benzodiazepine-medication-bz",
     "names": [
       "benzodiazepines",

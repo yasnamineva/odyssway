@@ -64,7 +64,6 @@ const withdrawnMedicationPairs = [
 /** Withdrawn while its only row awaits primary-source verification (see the research TODO). */
 const withdrawnBringPages = [
   { source: "/bring/e-cigarettes/saudi-arabia", destination: "/destinations/saudi-arabia", permanent: false },
-  { source: "/bring/e-cigarettes/china", destination: "/destinations/china", permanent: false },
   { source: "/bring/drones/brazil", destination: "/destinations/brazil", permanent: false },
   { source: "/bring/e-cigarettes/morocco", destination: "/destinations/morocco", permanent: false },
   { source: "/bring/e-cigarettes/kenya", destination: "/destinations/kenya", permanent: false },

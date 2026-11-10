@@ -1675,29 +1675,6 @@
     "status": "needs_verification"
   },
   {
-    "slug": "e-cigarettes-cn",
-    "names": [
-      "e-cigarette",
-      "vape",
-      "vaping liquid",
-      "e-liquid"
-    ],
-    "destination": "CN",
-    "category": "e_cigarettes",
-    "verdict": "allowed_with_limits",
-    "limits": {
-      "description": "General Administration of Customs Announcement No. 102 of 2022 (effective 1 November 2022) allows passengers to duty-free carry 2 e-cigarette devices plus 6 cartridges/liquid products totaling 12ml or less. Travelers on Hong Kong/Macao routes get a lower allowance (1 device, 3 cartridges, up to 6ml); frequent cross-border travelers get less still (1 device, 1 cartridge, up to 2ml, once per day). Travelers under 16 may not carry e-cigarettes at all."
-    },
-    "notes": "The announcement number and exact figures are corroborated identically across multiple independent Chinese sources (news outlets, tax-law reference sites, industry sites) — a direct fetch of customs.gov.cn itself still fails on a self-signed certificate, the same block this project has hit on Chinese government domains throughout, so this is strong search-corroboration rather than a directly read government page. Moved to UNVERIFIED on 2026-10-17: the figures were corroborated by news and reference sites; customs.gov.cn returns 412 to our fetches.",
-    "legal_source": {
-      "name": "General Administration of Customs of China, Announcement No. 102 of 2022 (海关总署公告2022年第102号) — E-Cigarette Taxation",
-      "url": "http://www.customs.gov.cn/customs/302249/302266/302267/4666399/index.html"
-    },
-    "verified_at": "2026-09-18",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "needs_verification"
-  },
-  {
     "slug": "drones-br",
     "names": [
       "drone",
