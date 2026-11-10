@@ -12718,8 +12718,6 @@
       "controlled substance",
       "narcotic medication",
       "psychotropic medication",
-      "adderall",
-      "amphetamine",
       "ritalin",
       "methylphenidate",
       "xanax",
@@ -12746,13 +12744,13 @@
     "limits": {
       "description": "MFDA Guideline §4.9.1: \"Importation of controlled drug for prescription should be limited to 30 days' supply, for patients with chronic illness can be of maximum 90 days' supply\"; more than three months needs documents on the patient's illness history with a valid prescription, and a controlled-drug prescription is valid for 90 days from the prescribed date. §4.8.2: \"It is an offense to import any controlled drug into Maldives without obtaining the import certificate from MFDA\", and controlled medicinal products may not be imported by post."
     },
-    "notes": "The airport operator's customs page: \"Controlled substances — including opioids, benzodiazepines, and stimulants — require particular documentation. Some substances that are legal by prescription in the country of origin may be controlled in the Maldives.\" The MFDA guideline requires an MFDA import certificate/authorization for controlled drugs and channels bulk imports through designated importers; how that applies to a traveller's personal supply is not spelled out, so contact MFDA before travelling with any narcotic or psychotropic medicine (that includes ADHD stimulants and benzodiazepines). UK FCDO: carry a doctor's prescription and check Maldivian regulations in advance. Drug offences carry severe penalties.",
+    "notes": "The airport operator's customs page: \"Controlled substances — including opioids, benzodiazepines, and stimulants — require particular documentation. Some substances that are legal by prescription in the country of origin may be controlled in the Maldives.\" The MFDA guideline requires an MFDA import certificate/authorization for controlled drugs and channels bulk imports through designated importers; how that applies to a traveller's personal supply is not spelled out, so contact MFDA before travelling with any narcotic or psychotropic medicine (that includes ADHD stimulants and benzodiazepines). UK FCDO: carry a doctor's prescription and check Maldivian regulations in advance. Drug offences carry severe penalties. Methylphenidate (Ritalin, Concerta) was on the Drugs Act's Schedule I list of prohibited drugs (item 89) until Presidential Decree No. 10/2026 removed it on 12 May 2026, so it now falls under these import rules. Amphetamine (Adderall) and lisdexamfetamine (Vyvanse) aren't answered here: the Act's current schedules weren't readable, and if they're on Schedule I they can't be brought in at all. Ask MFDA before travelling with them.",
     "summary": "Controlled medicine needs an MFDA import certificate; usually up to 30 days' supply, or 90 for chronic illness.",
     "legal_source": {
       "name": "Maldives Food and Drug Authority — Guideline on Good Import Practice (MTG/RE-IP/GLN-TE 007, 13.02.2020), §§4.7–4.9",
       "url": "https://health.gov.mv/storage/uploads/50wNdLqA/bixuazbn.pdf"
     },
-    "verified_at": "2026-11-08",
+    "verified_at": "2026-11-10",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -12760,6 +12758,12 @@
         "claim": "The rule itself",
         "name": "Maldives Food and Drug Authority — Guideline on Good Import Practice (MTG/RE-IP/GLN-TE 007, 13.02.2020), §§4.7–4.9",
         "url": "https://health.gov.mv/storage/uploads/50wNdLqA/bixuazbn.pdf"
+      },
+      {
+        "claim": "Methylphenidate removed from item 89 of Schedule I (prohibited drugs) of the Drugs Act (Act No. 17/2011) by Presidential Decree No. 10/2026, effective 12 May 2026",
+        "name": "President's Office (Maldives) — President issues decree amending the Drugs Act to facilitate the availability of methylphenidate for ADHD treatment (12 May 2026)",
+        "url": "https://presidency.gov.mv/Press/Article/36652",
+        "checked": "2026-11-10"
       },
       {
         "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",

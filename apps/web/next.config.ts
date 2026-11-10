@@ -54,6 +54,8 @@ const withdrawnMedicationPairs = [
     "tramadol/malaysia",
     "tramadol/maldives",
     "tramadol/cyprus",
+    // 2026-11-10: the Maldives Drugs Act schedules weren't readable; amphetamine may be on Schedule I (prohibited).
+    "adderall/maldives",
 ].map((pair) => ({
   source: `/medications/${pair}`,
   destination: `/medications/${pair.split("/")[0]}`,

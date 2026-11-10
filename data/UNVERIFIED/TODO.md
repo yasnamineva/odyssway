@@ -4292,3 +4292,9 @@ Still held:
 - SI: PISRS API sits behind a proof-of-work bot check; not worked around. Needs a manual read.
 - PT (pgdlisboa resets the connection; DRE JS-only), RO (legislatie.just.ro refuses), EE (Riigi Teataja JS-only),
   LT (e-seimas/e-tar 403).
+
+## Withdrawn-page pass, 2026-11-10
+- ✔ `e-cigarettes-cn` back from GACC Announcement No. 102 (2022) and its amendment No. 176 (2024), both read in full on mofcom.gov.cn (customs.gov.cn still 412). The withdrawn row's minimum age (16) was out of date: 18 since 1 Dec 2024. `tobacco-cn` still says frequent crossers get "1 e-cigarette device per day"; No. 102 says 1 device + 1 cartridge up to 2 ml (no "per day"). Fix when tobacco-cn is re-read.
+- ✔ `controlled-medication-tw`: Taipei Customs' limits page (2025-06-24) applies the prescription/own-use/6-month rule to all controlled drugs, not only Schedules 1-3 as the row said. Lisdexamfetamine = Schedule 2 item 179, tramadol = Schedule 4 item 70 (MOJ English schedule, amended to 14 Nov 2024; the 25 Aug 2025 amendment adds other substances). Vyvanse/Taiwan page back.
+- **Maldives**: methylphenidate was on Drugs Act Schedule I (prohibited) until Decree 10/2026 (12 May 2026, presidency.gov.mv). Amphetamine/lisdexamfetamine status unknown: Schedule I not read (mvlaw.gov.mv is a JS app, mfda.gov.mv in maintenance, the Third Amendment of Dec 2025 isn't found as text). Adderall/amphetamine names removed from `controlled-medication-mv`; /medications/adderall/maldives and vyvanse/maldives redirect. Needs the Schedule I list (Gazette text of Act 17/2011 as amended) before any stimulant answer.
+- Still withdrawn: e-cigarettes MA/KE/ZA/AL/SA, meat-dairy-ke (Kenya Law and source.pdf return the bot check, 202), drones-br, remaining Vyvanse/tramadol pairs.
