@@ -1,5 +1,50 @@
 [
   {
+    "commit": "d2448b9cf521f86e9a447f1afffd95e0b5403c80",
+    "date": "2026-11-10",
+    "dataset": "customs-items",
+    "summary": "Customs: Maldives controlled medicines: methylphenidate was a Schedule I prohibited drug until Presidential Decree No. 10/2026 (12 May 2026), now noted; Adderall/amphetamine no longer answered (Schedule I not readable, may be prohibited), /medications/adderall/maldives redirects; TODO for the withdrawn-page pass",
+    "verified_at": "2026-11-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Maldives Food and Drug Authority — Guideline on Good Import Practice (MTG/RE-IP/GLN-TE 007, 13.02.2020), §§4.7–4.9",
+      "url": "https://health.gov.mv/storage/uploads/50wNdLqA/bixuazbn.pdf"
+    },
+    "destinations": [
+      "MV"
+    ]
+  },
+  {
+    "commit": "cb7f32621aede581814d3eadb572954dc72bfec4",
+    "date": "2026-11-10",
+    "dataset": "customs-items",
+    "summary": "Customs: Taiwan controlled medicines corrected from Taipei Customs' personal-medicine limits (2025-06-24): the prescription/certificate, own-use and 6-month cap apply to every controlled drug, not only Schedules 1-3 (TFDA certification remains 1-3 only). Lisdexamfetamine (Vyvanse) Schedule 2 item 179 and tramadol Schedule 4 item 70 cited from the MOJ schedule; /medications/vyvanse/taiwan back, redirect removed",
+    "verified_at": "2026-11-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministry of Health and Welfare (Taiwan) — Pay Attention to Carrying Controlled Drugs Into and Out of a Country",
+      "url": "https://www.mohw.gov.tw/cp-6570-74684-2.html"
+    },
+    "destinations": [
+      "TW"
+    ]
+  },
+  {
+    "commit": "34d2225d5028ea6942e19e7b147f3b0d16e8df16",
+    "date": "2026-11-10",
+    "dataset": "customs-items",
+    "summary": "Customs: China e-cigarettes back, from GACC Announcement No. 102 of 2022 point 3 as amended by No. 176 of 2024 (both read on mofcom.gov.cn): 2 devices + 6 cartridges, 12 ml total (1/3/6 ml from Hong Kong or Macao; 1/1/2 ml for frequent crossers); unlabelled volume banned; minimum age now 18, not 16; counts toward the baggage allowance since 1 Dec 2024; declaration above the allowance; redirect removed",
+    "verified_at": "2026-11-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "General Administration of Customs of China, Announcement No. 102 of 2022 on e-cigarette taxation (海关总署公告2022年第102号), point 3, as published by the Ministry of Commerce",
+      "url": "http://www.mofcom.gov.cn/zcfb/zgdwjjmywg/art/2023/art_17c1c25fc6004a028f4ddeefd83bd698.html"
+    },
+    "destinations": [
+      "CN"
+    ]
+  },
+  {
     "commit": "07527ff56f8000f49e87a309f6f965ed4a722438",
     "date": "2026-11-10",
     "dataset": "overstay-penalties",

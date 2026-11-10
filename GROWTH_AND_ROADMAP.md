@@ -29,7 +29,7 @@ Where we are today (2026-11-09):
   inspection of a top page (e.g. `/bring/e-cigarettes/malaysia`); then resubmit the sitemap.
   Also seen in the export: 22 pages that earned impressions now 307-redirect (withdrawn overstay rows,
   Vyvanse and tramadol pairs whose rows no longer name the brand, withdrawn e-cigarette pages); intended by
-  §3. ✔ 2026-11-10: overstay GR, DK, CH, CZ, SK re-sourced from official portals and back online (BG, SI, PT, RO, EE, LT still held; see TODO).
+  §3. ✔ 2026-11-10: overstay GR, DK, CH, CZ, SK re-sourced from official portals and back online (BG, SI, PT, RO, EE, LT still held; see TODO). ✔ 2026-11-10: China e-cigarettes back (GACC announcements read on mofcom.gov.cn; minimum age corrected to 18); Vyvanse/Taiwan back with the Taiwan controlled-medicine rule corrected (all schedules, per Taipei Customs). Maldives: Ritalin was a banned Schedule I drug until 12 May 2026; Adderall withdrawn there until Schedule I is read. Still held: e-cigarettes MA/KE/ZA/AL/SA, Kenya meat/dairy, other Vyvanse/tramadol pairs.
 - German pilot: all 823 "Can I bring it?" pages under `/de/bring` (2026-11-08) all 646 named-medicine pages under `/de/medications` with 22 product hubs, and 97 customs-only country pages under `/de/destinations` (2026-11-09), machine-translated from the verified English rows (§5.5).
 - **Pushed 2026-11-09** (12 commits: Vietnam cash, third controlled-medicine pass, German retranslations; build, 242 unit tests and 130 e2e passed). ✔ IndexNow `--since 2026-11-08`: 869 URLs (HTTP 200).
 - **Pushed 2026-11-08** (38 commits: German to 822 pages, the controlled-medicine pass, item-search wording, zoomable route map; build, 242 unit tests and 130 e2e passed). ✔ IndexNow `--since 2026-11-06`: 959 URLs (HTTP 200).
