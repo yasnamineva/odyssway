@@ -1,5 +1,50 @@
 [
   {
+    "commit": "94ab0f0637fbd464b71acef21d7b2d9212c823b9",
+    "date": "2026-11-10",
+    "dataset": "entry-requirements",
+    "summary": "Argentina (57 entry rows): national hospitals now require health insurance or prior payment from foreigners without permanent residence for routine care (Health Ministry Resolution 1066/2026, BO 11 Aug 2026; emergencies excepted); art. 123 bis sworn declaration still unregulated; tourist page, consolidated Ley 25.871 and the resolution cited in _sources; re-dated",
+    "verified_at": "2026-11-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Dirección Nacional de Migraciones — Régimen de Visas; Migraciones — Documentación para ingresar al país como turista",
+      "url": "https://www.migraciones.gob.ar/accesible/indexdnm.php?visas"
+    },
+    "destinations": [
+      "AR"
+    ]
+  },
+  {
+    "commit": "2c0f9a5a8959dac355fb39456f3ecf6aae880369",
+    "date": "2026-11-10",
+    "dataset": "entry-requirements",
+    "summary": "Bahamas: cite Immigration's Entry Requirements and Extension of Stay pages in _sources for the rows that quote them (quotes confirmed today), so they're watched and quote-checked. Quote check: short saved pages (<6,000 chars, usually a landing page linking a PDF) are grouped with unsaved ones",
+    "verified_at": "2026-11-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Bahamas Department of Immigration — Before Your Arrival (Entry Criteria and Visa Requirements; page updated 2026-11-04)",
+      "url": "https://www.immigration.gov.bs/entry-requirements/before-your-arrival/"
+    },
+    "destinations": [
+      "BS"
+    ]
+  },
+  {
+    "commit": "02069c071dd047e920cd0dbd6cb1668035e86ae2",
+    "date": "2026-11-10",
+    "dataset": "entry-requirements",
+    "summary": "Entry: UA→NZ quotes updated to Immigration New Zealand's current wording (rule unchanged: 6 months in 12 multiple-entry, 9 in 18 single-entry); re-dated",
+    "verified_at": "2026-11-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Immigration New Zealand — Visitor visa",
+      "url": "https://www.immigration.govt.nz/visas/visitor-visa/"
+    },
+    "destinations": [
+      "NZ"
+    ]
+  },
+  {
     "commit": "d2448b9cf521f86e9a447f1afffd95e0b5403c80",
     "date": "2026-11-10",
     "dataset": "customs-items",
