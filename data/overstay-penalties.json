@@ -78,6 +78,44 @@
     "status": "verified"
   },
   {
+    "country": "GR",
+    "fineRange": "A criminal fine of at least EUR 5,000, together with at least 2 years' imprisonment, for a non-EU national who stays in Greece without the legal formalities (Law 3386/2005, Art. 83(1), as replaced in September 2025). Breaking the conditions of a postponed removal: at least 2 years' imprisonment and at least EUR 10,000 (Art. 83(3)).",
+    "banRange": "Up to 10 years, set case by case; can be extended by further periods of up to 5 years (Law 5226/2025, Art. 12(2)). An entry ban is mandatory with the return decision when no voluntary-departure period was given, when the person didn't comply with the obligation to return, or when they pose a risk to public order, security or health (Art. 12(1)).",
+    "enforcementNotes": "Since Law 5226/2025 (Government Gazette A' 154, 8 September 2025), illegal stay is a criminal offence in Greece, not just an administrative matter. The sentence for Art. 83(1) and (3) cannot be converted or suspended, except that the court suspends it on condition that the convicted person leaves Greece voluntarily and immediately (Art. 83(4)–(5)). For illegal entry or exit, the prosecutor may decide not to prosecute, on condition of immediate voluntary departure. Law 5275/2026 (A' 17, 6 February 2026) only updated cross-references to Art. 83; the penalties are unchanged.",
+    "legal_source": {
+      "name": "Law 5226/2025, Art. 27 (replacing Art. 83 of Law 3386/2005) and Art. 12 — Government Gazette A' 154/08.09.2025, National Printing House",
+      "url": "https://api.et.gr/apiLAW/1/2025/5226/pdf"
+    },
+    "_sources": [
+      {
+        "claim": "Art. 83(1): at least 2 years' imprisonment and at least EUR 5,000 for entering, leaving or staying without the legal formalities; Art. 83(3): at least 2 years and EUR 10,000; Art. 83(4)–(5): no conversion or suspension, except suspension on immediate voluntary departure; Art. 12: entry ban up to 10 years, extendable by up to 5 years",
+        "name": "Law 5226/2025 — Government Gazette A' 154/08.09.2025 (National Printing House API)",
+        "url": "https://api.et.gr/apiLAW/1/2025/5226/pdf"
+      },
+      {
+        "claim": "Law 5275/2026 only amends cross-references to Art. 83 (Art. 23(4) of Law 5226/2025 now refers to Art. 83(3))",
+        "name": "Law 5275/2026 — Government Gazette A' 17/06.02.2026 (National Printing House API)",
+        "url": "https://api.et.gr/apiLAW/1/2026/5275/pdf"
+      }
+    ],
+    "verified_at": "2026-11-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
+    "country": "HR",
+    "fineRange": "EUR 60–920 for a third-country national's unlawful stay",
+    "banRange": "1–3 months when tied to a revoked short-term-residence case (Aliens Act, Art. 56(2)) — this is a reasonable proxy for overstay consequences, not a figure confirmed to be identical to a straightforward tourist overstay",
+    "enforcementNotes": "The fine figure is directly quoted from Croatia's Official Gazette: \"Novčanom kaznom u iznosu od 60,00 do 920,00 eura kaznit će se za prekršaj državljanin treće zemlje koji u Republici Hrvatskoj nezakonito boravi\" (Zakon o strancima, current Art. 253(2), as amended by Narodne novine 151/22) — a real breakthrough over an earlier pass that only found stale pre-euro kuna figures.",
+    "legal_source": {
+      "name": "Narodne novine (Croatia's Official Gazette) — Zakon o strancima (Aliens Act), Art. 253(2)",
+      "url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_151_2347.html"
+    },
+    "verified_at": "2026-09-18",
+    "verified_by": "agent:claude-sonnet-5",
+    "status": "verified"
+  },
+  {
     "country": "IS",
     "fineRange": "No specific monetary figure was found for Iceland in this pass",
     "banRange": "Typically at least 2 years, can be permanent for more serious cases",
@@ -178,19 +216,6 @@
       "url": "https://www.aklagare.se/globalassets/dokument/rattsliga-vagledningar/rav-202121-normalstraff-for-vissa-botesbrott.pdf"
     },
     "verified_at": "2026-09-16",
-    "verified_by": "agent:claude-sonnet-5",
-    "status": "verified"
-  },
-  {
-    "country": "HR",
-    "fineRange": "EUR 60–920 for a third-country national's unlawful stay",
-    "banRange": "1–3 months when tied to a revoked short-term-residence case (Aliens Act, Art. 56(2)) — this is a reasonable proxy for overstay consequences, not a figure confirmed to be identical to a straightforward tourist overstay",
-    "enforcementNotes": "The fine figure is directly quoted from Croatia's Official Gazette: \"Novčanom kaznom u iznosu od 60,00 do 920,00 eura kaznit će se za prekršaj državljanin treće zemlje koji u Republici Hrvatskoj nezakonito boravi\" (Zakon o strancima, current Art. 253(2), as amended by Narodne novine 151/22) — a real breakthrough over an earlier pass that only found stale pre-euro kuna figures.",
-    "legal_source": {
-      "name": "Narodne novine (Croatia's Official Gazette) — Zakon o strancima (Aliens Act), Art. 253(2)",
-      "url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_151_2347.html"
-    },
-    "verified_at": "2026-09-18",
     "verified_by": "agent:claude-sonnet-5",
     "status": "verified"
   }
