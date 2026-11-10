@@ -21,6 +21,8 @@ import { fileURLToPath } from "node:url";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const SNAPSHOT_DIR = process.env.SOURCE_SNAPSHOT_DIR ?? join(ROOT, ".cache", "source-snapshots");
 const MIN_QUOTE = 30;
+/** Saved text shorter than this is usually a landing page whose rule sits in a linked PDF or table. */
+const THIN_PAGE = 6000;
 
 type Row = {
   slug?: string;
@@ -102,7 +104,7 @@ export function missLines(misses: Miss[]): string[] {
       ? ["Not found on any cited page (re-read the source: the rule may have changed, or the page reworded it):", "", ...saved.map(line), ""]
       : []),
     ...(partial.length > 0
-      ? ["Not found on the saved pages, but some cited pages weren't saved (the quote may be there):", "", ...partial.map(line), ""]
+      ? ["Not found, but some cited pages weren't saved or saved only a short landing page (the quote may be in a linked document):", "", ...partial.map(line), ""]
       : []),
   ];
 }
@@ -124,8 +126,9 @@ function main(): void {
       if (quotes.length === 0) continue;
       const urls = [...new Set([r.legal_source?.url, ...(r._sources ?? []).map((s) => s.url)].filter(Boolean) as string[])];
       const saved = urls.map((u) => join(SNAPSHOT_DIR, `${snapshotId(u)}.txt`)).filter((p) => existsSync(p));
-      const unsaved = urls.length - saved.length;
       const pages = saved.map((p) => normalise(readFileSync(p, "utf8")));
+      // A short saved page counts like an unsaved one: the quote may be in a document it links to.
+      const unsaved = urls.length - pages.filter((page) => page.length >= THIN_PAGE).length;
       if (pages.length === 0) {
         uncheckable++;
         continue;
