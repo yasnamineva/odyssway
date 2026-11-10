@@ -1,5 +1,67 @@
 [
   {
+    "commit": "7b44638e7084f1cc720683c1eb6c3e54726aafa0",
+    "date": "2026-11-10",
+    "dataset": "customs-items",
+    "summary": "Moved sources from the 9 Nov watcher report: Japan designated-substances list re-cited to the 1 June 2026 edition the ministry now links (kratom and poppers rows re-read); cannabis-nz rebuilt without the deleted NZ Customs events advisory: CBD under Customs' 3-month prescription-medicine rule (Medsafe classification), controlled-drug rule stated conditionally, US-supplied products banned per the Customs release; TODO updated",
+    "verified_at": "2026-11-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "New Zealand Customs Service — Prohibited and restricted items (prescription medicines and controlled drugs)",
+      "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/"
+    },
+    "destinations": [
+      "JP",
+      "NZ"
+    ]
+  },
+  {
+    "commit": "cc74b37fd0da51b2b9fafaea4812dba77a5103e0",
+    "date": "2026-11-10",
+    "dataset": "customs-items",
+    "summary": "Moved sources: Mauritius Revenue Authority pages now under /index.php (allowances, traveller FAQ) and Jamaica Customs PDFs at their plain file names (prohibited items guide, cash release, C5 card); every quoted figure and passage re-read on the new copies, 11 rows re-dated; German alcohol-jm link updated and re-stamped",
+    "verified_at": "2026-11-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "What are my duty-free allowances and exemptions? — Jamaica Customs Agency FAQ",
+      "url": "https://jca.gov.jm/faq/what-are-my-duty-free-allowances-and-exemptions"
+    },
+    "destinations": [
+      "JM",
+      "MU"
+    ]
+  },
+  {
+    "commit": "f41a6eab4452d1e662f1449ffdce0a7bc6762b85",
+    "date": "2026-11-10",
+    "dataset": "entry-requirements",
+    "summary": "Hong Kong, Indian passports: what to do if pre-arrival registration fails (visa from the Immigration Department, about four weeks, not via Chinese missions); exemption list completed from the page (official passports, Travel Pass, crew); unsupported 'refused boarding' wording replaced with the page's slip rule",
+    "verified_at": "2026-11-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Immigration Department (HKSAR) — Pre-arrival Registration for Indian Nationals",
+      "url": "https://www.immd.gov.hk/eng/services/visas/pre-arrival_registration_for_indian_nationals.html"
+    },
+    "destinations": [
+      "HK"
+    ]
+  },
+  {
+    "commit": "9c238340c35bbd6137918b1a6d1aa6a585915675",
+    "date": "2026-11-10",
+    "dataset": "entry-requirements",
+    "summary": "Uruguay: admission table re-read after the 9 Nov watcher report (only layout changed); all 65 rows and the entry list still agree; re-dated",
+    "verified_at": "2026-11-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Ministerio del Interior (Dirección Nacional de Migración) — Régimen de visas de admisión (published 19/08/2025)",
+      "url": "https://www.gub.uy/ministerio-interior/comunicacion/publicaciones/regimen-visas-admision"
+    },
+    "destinations": [
+      "UY"
+    ]
+  },
+  {
     "commit": "d30d64bde6d4b53380391a8234f27025d53fccf2",
     "date": "2026-11-10",
     "dataset": "entry-requirements",
