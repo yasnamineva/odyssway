@@ -74,7 +74,6 @@ const withdrawnBringPages = [
   // Overstay rows sourced from NGO, news, law-firm or mirror sites (2026-10-19).
   { source: "/rules/overstay-penalties/lt", destination: "/rules/overstay-penalties", permanent: false },
   { source: "/rules/overstay-penalties/ee", destination: "/rules/overstay-penalties", permanent: false },
-  { source: "/rules/overstay-penalties/dk", destination: "/rules/overstay-penalties", permanent: false },
   { source: "/rules/overstay-penalties/bg", destination: "/rules/overstay-penalties", permanent: false },
   { source: "/rules/overstay-penalties/ch", destination: "/rules/overstay-penalties", permanent: false },
   { source: "/rules/overstay-penalties/pt", destination: "/rules/overstay-penalties", permanent: false },
