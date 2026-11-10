@@ -13467,15 +13467,15 @@
     "category": "medication",
     "verdict": "depends",
     "limits": {
-      "description": "For personal Schedule 1-3 controlled drugs (examples the Ministry gives: sleeping pills like zolpidem, triazolam, flunitrazepam, and opioids like morphine and fentanyl), \"the amount cannot exceed that on the prescription,\" a medical institution certificate or a diagnostic certificate/prescription copy from the attending physician is required, and the total is capped at a 6-month supply. For Schedule 1-3 controlled drugs specifically, travelers may send TFDA \"a declaration and medical diagnostic certificate to apply for a certification document\" in advance under Article 18 of the Enforcement Rules for the Controlled Drugs Act."
+      "description": "Controlled drugs (any schedule) need a prescription or certificate from the treating doctor's medical institution, must be for your own illness, and may not exceed the prescribed amount or 6 months' supply. Examples the Ministry gives: sleeping pills such as zolpidem, triazolam and flunitrazepam, and opioids such as morphine and fentanyl. For Schedule 1-3 controlled drugs you can also send TFDA \"a declaration and medical diagnostic certificate to apply for a certification document\" in advance, under Article 18 of the Enforcement Rules for the Controlled Drugs Act."
     },
-    "notes": "Taiwan's list of controlled drugs puts morphine in Schedule 1, and amphetamine and oxycodone in Schedule 2, so this process applies to them. Brand names are listed for search only: Adderall contains amphetamine and OxyContin contains oxycodone. The Ministry's guidance doesn't say how it treats ADHD medicines in practice, so check with TFDA before you travel with one. Controlled drugs must be carried on the person at all times and cannot be sent by mail or courier. Codeine products with more than 1 gram of codeine per 100 ml (or 100 g) are controlled drugs in Taiwan, Schedule 2 or 3 by strength. Weaker products aren't on the list of controlled drugs.",
-    "summary": "Schedule 1–3 controlled drugs: no more than prescribed, with a doctor's certificate, up to 6 months' supply.",
+    "notes": "Taiwan's list of controlled drugs puts morphine in Schedule 1, amphetamine, oxycodone and lisdexamfetamine (Vyvanse, Elvanse) in Schedule 2, and tramadol in Schedule 4, so these rules apply to them; the optional TFDA certification covers Schedules 1-3 only, so not tramadol. Brand names are listed for search only: Adderall contains amphetamine and OxyContin contains oxycodone. The Ministry's guidance doesn't say how it treats ADHD medicines in practice, so check with TFDA before you travel with one. Controlled drugs must be carried on the person at all times and cannot be sent by mail or courier. Codeine products with more than 1 gram of codeine per 100 ml (or 100 g) are controlled drugs in Taiwan, Schedule 2 or 3 by strength. Weaker products aren't on the list of controlled drugs.",
+    "summary": "Controlled drugs: no more than prescribed, with a doctor's prescription or certificate, up to 6 months' supply.",
     "legal_source": {
       "name": "Ministry of Health and Welfare (Taiwan) — Pay Attention to Carrying Controlled Drugs Into and Out of a Country",
       "url": "https://www.mohw.gov.tw/cp-6570-74684-2.html"
     },
-    "verified_at": "2026-11-08",
+    "verified_at": "2026-11-10",
     "verified_by": "agent:claude-opus-5-5",
     "status": "verified",
     "_sources": [
@@ -13483,6 +13483,12 @@
         "claim": "The rule itself",
         "name": "Ministry of Health and Welfare (Taiwan) — Pay Attention to Carrying Controlled Drugs Into and Out of a Country",
         "url": "https://www.mohw.gov.tw/cp-6570-74684-2.html"
+      },
+      {
+        "claim": "Controlled drugs need the doctor's prescription or certificate from a medical institution, only for the traveller's own illness, no more than prescribed and at most 6 months' supply; a TFDA certificate for carrying controlled drugs can be applied for",
+        "name": "Customs Administration, Taipei Customs — Medicines and medical devices (入境旅客攜帶自用藥物限量表, published 2025-06-24)",
+        "url": "https://web.customs.gov.tw/taipei/singlehtml/3392?cntId=cus2_3392_3392_1347",
+        "checked": "2026-11-10"
       },
       {
         "claim": "Amfetamine and methylphenidate are Schedule II and alprazolam, diazepam and clonazepam Schedule IV psychotropic substances (Green List); codeine and oxycodone are narcotic drugs (Yellow List). Lisdexamfetamine, tramadol and modafinil are on neither list.",
@@ -13495,9 +13501,10 @@
         "url": "https://www.incb.org/incb/uploads/documents/Narcotic-Drugs/Yellow_List/65th_Edition/YL_65th_EN_unedited.pdf"
       },
       {
-        "claim": "122 Oxycodone",
+        "claim": "Schedule 2: 122 Oxycodone, 179 Lisdexamphetamine; Schedule 4: 70 Tramadol (list as amended to 14 Nov 2024; the 25 Aug 2025 amendment adds other substances only)",
         "name": "Taiwan: Schedules of controlled drugs",
-        "url": "https://law.moj.gov.tw/ENG/LawClass/LawGetFile.ashx?FileId=0000005517&lan=E"
+        "url": "https://law.moj.gov.tw/ENG/LawClass/LawGetFile.ashx?FileId=0000005517&lan=E",
+        "checked": "2026-11-10"
       }
     ]
   },

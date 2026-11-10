@@ -45,7 +45,6 @@ const withdrawnMedicationPairs = [
     "vyvanse/malaysia",
     "vyvanse/maldives",
     "vyvanse/serbia",
-    "vyvanse/taiwan",
     "vyvanse/cyprus",
     "tramadol/australia",
     "tramadol/philippines",
