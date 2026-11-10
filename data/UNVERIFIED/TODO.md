@@ -4275,3 +4275,20 @@ changes. Auswärtiges Amt security pages: shared news-box text, not entry rules.
 - Unmonitorable this week: 217 new, mostly gov.me (69), mvp.gov.ba (41), viaggiaresicuri.it (30), kln.gov.my (12)
   from the CI runner; viaggiaresicuri and kln answer from here, gov.me timed out, mvp.gov.ba redirects. EUR-Lex
   answers 202 (challenge), not moved.
+
+## Overstay penalties re-sourced from official portals (2026-11-10)
+Readable official routes found (useful for any future legal text):
+- Greece: National Printing House API, `https://api.et.gr/apiLAW/1/{year}/{number}/pdf` (or `/apiFEK/{issue}/{year}/{no}/pdf`).
+- Denmark: Retsinformation, `/eli/lta/{year}/{no}/xml`; search JSON at `/api/documentsearch?t=...`.
+- Switzerland: Fedlex SPARQL (`https://fedlex.data.admin.ch/sparqlendpoint`) lists each consolidation's HTML in the file store.
+- Czechia: e-Sbírka cache API, `/sbr-cache/dokumenty-sbirky/{url-encoded /sb/YYYY/NNN/DATE}/fragmenty?cisloStranky=N`.
+- Slovakia: Slov-Lex static index `https://static.slov-lex.sk/static/SK/ZZ/{year}/{no}/` lists dated HTML versions.
+Published: GR (corrected: law 5226/2025 Art. 27, not 5275/2026; the old "repeat offence 3 years + EUR 10,000" was
+wrong), DK (DKK 1,500 + 500/month from the prosecution guideline), CH, CZ (old row cited § 157, the carriers'
+section; real fine up to CZK 5,000 / 10,000), SK.
+Still held:
+- BG: Art. 48(1)(3) (overstay) BGN 500–5,000, repeat 1,000–10,000, read on mfa.bg's consolidated copy (to SG 52/2025).
+  Open: amendments after SG 52/2025, and the official rule converting leva amounts to euro since 1 Jan 2026.
+- SI: PISRS API sits behind a proof-of-work bot check; not worked around. Needs a manual read.
+- PT (pgdlisboa resets the connection; DRE JS-only), RO (legislatie.just.ro refuses), EE (Riigi Teataja JS-only),
+  LT (e-seimas/e-tar 403).

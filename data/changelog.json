@@ -1,5 +1,65 @@
 [
   {
+    "commit": "07527ff56f8000f49e87a309f6f965ed4a722438",
+    "date": "2026-11-10",
+    "dataset": "overstay-penalties",
+    "summary": "Overstay penalties: Slovakia back, from Slov-Lex (Act 404/2011 Coll., version of 1 Oct 2026, via its static version index): fine up to EUR 1,600 (EUR 165 on the spot) for unauthorised stay; mandatory expulsion with an optional 1–5 year ban, no ban with assisted voluntary return; redirect removed",
+    "verified_at": "2026-11-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Bundesgesetz über die Ausländerinnen und Ausländer und über die Integration (AIG, SR 142.20), Arts. 67 and 115 — Fedlex, version in force from 1 November 2026",
+      "url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de"
+    }
+  },
+  {
+    "commit": "b4b916769a58138a14ba9f17716ace83c8042b36",
+    "date": "2026-11-10",
+    "dataset": "overstay-penalties",
+    "summary": "Overstay penalties: Czechia back, from e-Sbírka (Act 326/1999 Coll., version of 12 June 2026, via its public cache API): up to CZK 5,000 for staying without valid authorisation, CZK 10,000 if repeated (§ 156(1)(f), (p), (5)); expulsion up to 5 years (§ 119(1)(b)(4)) or 3 years (§ 119(1)(c)(2)). Corrects the withdrawn row, which cited the carriers' section (§ 157); redirect removed",
+    "verified_at": "2026-11-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Bundesgesetz über die Ausländerinnen und Ausländer und über die Integration (AIG, SR 142.20), Arts. 67 and 115 — Fedlex, version in force from 1 November 2026",
+      "url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de"
+    }
+  },
+  {
+    "commit": "85a02beb27ebbd89602c74044b65331f525927c4",
+    "date": "2026-11-10",
+    "dataset": "overstay-penalties",
+    "summary": "Overstay penalties: Switzerland back, from Fedlex (AIG version of 1 Nov 2026, via the SPARQL file store): Art. 115(1)(b) monetary penalty or up to one year for unlawful stay, fine if negligent, suspension while removal is pending; Art. 67 entry ban up to 5 years; replaces the withdrawn news-sourced row; redirect removed",
+    "verified_at": "2026-11-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Bundesgesetz über die Ausländerinnen und Ausländer und über die Integration (AIG, SR 142.20), Arts. 67 and 115 — Fedlex, version in force from 1 November 2026",
+      "url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de"
+    }
+  },
+  {
+    "commit": "e4c7324621ed1795155dd54d4158d6e67d0ec0fd",
+    "date": "2026-11-10",
+    "dataset": "overstay-penalties",
+    "summary": "Overstay penalties: Denmark back, from Retsinformation: Aliens Act (LBK 953 of 4 Oct 2026) § 59(2) fine or up to 6 months, prosecution guideline DKK 1,500 + 500 per month after the first; § 25 b expulsion and § 32 entry ban (2 years; 5 after re-entry in breach of a ban); replaces the withdrawn law-firm-sourced row; redirect removed",
+    "verified_at": "2026-11-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Udlændingeloven (Aliens Act), consolidated LBK no. 953 of 4 October 2026, §§ 25 b, 32 and 59 — Retsinformation",
+      "url": "https://www.retsinformation.dk/eli/lta/2026/953"
+    }
+  },
+  {
+    "commit": "ae72d0cd84ae17d106341ac8bd3107a8012abd64",
+    "date": "2026-11-10",
+    "dataset": "overstay-penalties",
+    "summary": "Overstay penalties: Greece back, from the official gazette (National Printing House API): Law 5226/2025 Art. 27 replaced Art. 83 of Law 3386/2005 (at least 2 years and EUR 5,000 for staying without the legal formalities; at least 2 years and EUR 10,000 for breaking postponed-removal conditions; suspension only on immediate voluntary departure), entry ban up to 10 years extendable by 5 (Art. 12). Corrects the withdrawn NGO-sourced row (wrong law, wrong repeat-offence figures); redirect removed",
+    "verified_at": "2026-11-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Law 5226/2025, Art. 27 (replacing Art. 83 of Law 3386/2005) and Art. 12 — Government Gazette A' 154/08.09.2025, National Printing House",
+      "url": "https://api.et.gr/apiLAW/1/2025/5226/pdf"
+    }
+  },
+  {
     "commit": "7b44638e7084f1cc720683c1eb6c3e54726aafa0",
     "date": "2026-11-10",
     "dataset": "customs-items",
