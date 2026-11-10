@@ -1,5 +1,20 @@
 [
   {
+    "commit": "f7dbed45797775e9f87826a55e3689198fe80aea",
+    "date": "2026-11-09",
+    "dataset": "customs-items",
+    "summary": "Brazil tobacco corrected: Receita Federal gives cigarettes (10 packs), cigars or cigarillos (25) and tobacco (250 g) separate limits, not alternatives (row, carry check, German); quote check decodes HTML entities and stray spaces in snapshots; 2 Nov source-watch review recorded",
+    "verified_at": "2026-11-09",
+    "verified_by": "agent:claude-opus-5-5",
+    "source": {
+      "name": "Receita Federal do Brasil – Guia do Viajante: Cota de isenção, duty free e bagagem tributável",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/cota-de-isencao-duty-free-e-bagagem-tributavel"
+    },
+    "destinations": [
+      "BR"
+    ]
+  },
+  {
     "commit": "356d49713e469e4c7845a5d5756ca5e3c3370f5b",
     "date": "2026-11-09",
     "dataset": "customs-items",
