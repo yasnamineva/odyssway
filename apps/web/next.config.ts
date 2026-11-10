@@ -75,7 +75,6 @@ const withdrawnBringPages = [
   { source: "/rules/overstay-penalties/lt", destination: "/rules/overstay-penalties", permanent: false },
   { source: "/rules/overstay-penalties/ee", destination: "/rules/overstay-penalties", permanent: false },
   { source: "/rules/overstay-penalties/bg", destination: "/rules/overstay-penalties", permanent: false },
-  { source: "/rules/overstay-penalties/ch", destination: "/rules/overstay-penalties", permanent: false },
   { source: "/rules/overstay-penalties/pt", destination: "/rules/overstay-penalties", permanent: false },
   { source: "/rules/overstay-penalties/ro", destination: "/rules/overstay-penalties", permanent: false },
   { source: "/rules/overstay-penalties/si", destination: "/rules/overstay-penalties", permanent: false },
