@@ -46,6 +46,26 @@
     "status": "verified"
   },
   {
+    "country": "CZ",
+    "fineRange": "Up to CZK 5,000 for staying without a valid travel document and residence authorisation (Act No. 326/1999 Coll. § 156(1)(f) with § 103(n); fine under § 156(5)(c)); up to CZK 10,000 if the breach is repeated (§ 156(1)(p), (5)(b)).",
+    "banRange": "Administrative expulsion, with a period during which you can't enter the EU, Iceland, Liechtenstein, Norway or Switzerland, and an entry in the Schengen Information System: up to 5 years for staying without valid authorisation (§ 119(1)(b) point 4); up to 3 years if you can't prove you stayed only for the period allowed visa-free or on a short-stay visa (§ 119(1)(c) point 2).",
+    "enforcementNotes": "These are administrative offences (přestupky) handled by the police, not crimes. The police issue the expulsion decision (§ 119(1)). Text as in force from 12 June 2026, read from the official e-Sbírka collection.",
+    "legal_source": {
+      "name": "Act No. 326/1999 Coll., on the Residence of Foreign Nationals, §§ 103(n), 119(1) and 156 — e-Sbírka, version in force from 12 June 2026",
+      "url": "https://www.e-sbirka.cz/eli/cz/sb/1999/326/2026-06-12"
+    },
+    "_sources": [
+      {
+        "claim": "§ 103(n) duty to stay only with a valid travel document and residence authorisation; § 156(1)(f), (p) and (5)(b)–(c): fines up to CZK 5,000 / 10,000; § 119(1)(b) point 4: expulsion up to 5 years; § 119(1)(c) point 2: up to 3 years",
+        "name": "e-Sbírka (official Collection of Laws), Act No. 326/1999 Coll., current version (fragments read via its public cache API)",
+        "url": "https://www.e-sbirka.cz/eli/cz/sb/1999/326/2026-06-12"
+      }
+    ],
+    "verified_at": "2026-11-10",
+    "verified_by": "agent:claude-opus-5-5",
+    "status": "verified"
+  },
+  {
     "country": "DE",
     "fineRange": "EUR 500–5,000 administrative fine (Residence Act § 98, for negligent unlawful residence) — this figure is secondary-corroborated; the primary-text fetch used for the ban tiers below didn't reach far enough to confirm it verbatim",
     "banRange": "Up to 5 years as the general rule (§11(3)); up to 10 years if expulsion followed a criminal conviction (§11(5)); up to 20 years for terrorism/security grounds (§11(5a)); can be permanent for standing deportation orders (§11(5b))",
