@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { germanPairs } from "../../../lib/translations";
+import { GERMAN_INDEXABLE, germanPairs } from "../../../lib/translations";
 import { getTranslations } from "next-intl/server";
 import { clip, rowLead } from "../../../lib/seo-text";
 import { notFound } from "next/navigation";
@@ -51,7 +51,7 @@ export async function generateMetadata({
     description,
     alternates: {
       canonical: `/bring/${found.meta.slug}`,
-      ...(germanPairs().some((p) => p.itemSlug === found.meta.slug)
+      ...(GERMAN_INDEXABLE && germanPairs().some((p) => p.itemSlug === found.meta.slug)
         ? { languages: { en: `/bring/${found.meta.slug}`, de: `/de/bring/${found.meta.slug}`, "x-default": `/bring/${found.meta.slug}` } }
         : {}),
     },

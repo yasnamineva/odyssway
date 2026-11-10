@@ -3,7 +3,7 @@ import { createTranslator } from "next-intl";
 import { notFound } from "next/navigation";
 import deMessages from "../../../../messages/de.json";
 import { bringCategoryBySlug } from "../../../../lib/bring-categories";
-import { countryName, germanPairs, translatedCustomsRow } from "../../../../lib/translations";
+import { GERMAN_INDEXABLE, countryName, germanPairs, translatedCustomsRow } from "../../../../lib/translations";
 
 /** German hub for one item category: every country with a German page for it (GROWTH_AND_ROADMAP.md §5.5). */
 const t = createTranslator({ locale: "de", messages: deMessages, namespace: "dePages" });
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ item: str
   return {
     title,
     description,
-    alternates: { canonical: `/de/bring/${item}`, languages: { en: `/bring/${item}`, de: `/de/bring/${item}`, "x-default": `/bring/${item}` } },
+    alternates: { canonical: `/de/bring/${item}`, ...(GERMAN_INDEXABLE ? { languages: { en: `/bring/${item}`, de: `/de/bring/${item}`, "x-default": `/bring/${item}` } } : {}) },
     openGraph: { title, description, locale: "de_DE" },
   };
 }

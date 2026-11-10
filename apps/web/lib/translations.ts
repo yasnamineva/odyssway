@@ -13,6 +13,18 @@ import deMessages from "../messages/de.json";
  * never sees a stale or half-translated rule.
  */
 export const TRANSLATED_LOCALES = ["de"] as const;
+
+/**
+ * Whether search engines may index the German pages (2026-11-10: false).
+ *
+ * Search impressions collapsed on 7–8 Nov 2026, right after ~870 machine-translated
+ * German pages went live (6–8 Nov), with no Google update announced and no technical
+ * fault found. Google's spam policies count unreviewed automatic translation at scale
+ * as scaled content. So the German pages stay up for readers but carry noindex, leave
+ * the sitemap, and lose their hreflang links. Turn this back on only after a
+ * native-speaker review, and then a small batch first.
+ */
+export const GERMAN_INDEXABLE = false;
 export type TranslatedLocale = (typeof TRANSLATED_LOCALES)[number];
 
 type TranslationRow = { id: string; sourceHash: string; fields: TranslatableFields; translated_at: string };

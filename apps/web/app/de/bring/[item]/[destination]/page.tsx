@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import deMessages from "../../../../../messages/de.json";
 import { bringPair, type BringPair } from "../../../../../lib/bring-pages";
 import {
+  GERMAN_INDEXABLE,
   countryName,
   germanDate,
   germanPairs,
@@ -57,7 +58,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     description,
     alternates: {
       canonical: germanPath(pair),
-      languages: { en: englishPath(pair), de: germanPath(pair), "x-default": englishPath(pair) },
+      ...(GERMAN_INDEXABLE ? { languages: { en: englishPath(pair), de: germanPath(pair), "x-default": englishPath(pair) } } : {}),
     },
     openGraph: { title, description, locale: "de_DE" },
   };

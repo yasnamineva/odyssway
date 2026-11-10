@@ -17,6 +17,19 @@ Where we are today (2026-11-09):
 - About 2,000 URLs in the sitemap. Google indexes well; Bing indexes the pages but shows
   them rarely (young domain, few links).
 - No analytics, by design.
+- **Search collapse, 7–8 Nov 2026 (export of 10 Nov):** about 1,000 impressions a day through 4 Nov,
+  then 831, 827, 352 and 13 (8 Nov). The first ~410 machine-translated German pages went live on 6 Nov
+  and ~870 by 8 Nov. No Google update was announced, and the live site serves Googlebot normally (200, correct
+  canonicals, no noindex, valid sitemap, real 404s). Most likely cause: Google's scaled-content/spam
+  handling of unreviewed machine translation. ✔ Fix (2026-11-10): `GERMAN_INDEXABLE = false` in
+  `apps/web/lib/translations.ts`: German pages stay up for readers but are `noindex, follow`, left out of the
+  sitemap, and have no hreflang either way; German content is marked `lang="de"`. **Rule from now on: no
+  machine-translated page gets indexed without a native-speaker review, and then a small batch first, watched
+  for two weeks.** Owner to check in Search Console: Manual actions, Pages (indexing) report, and URL
+  inspection of a top page (e.g. `/bring/e-cigarettes/malaysia`); then resubmit the sitemap.
+  Also seen in the export: 22 pages that earned impressions now 307-redirect (withdrawn overstay rows,
+  Vyvanse and tramadol pairs whose rows no longer name the brand, withdrawn e-cigarette pages); intended by
+  §3, but worth a look at whether some of those rows can be re-sourced.
 - German pilot: all 823 "Can I bring it?" pages under `/de/bring` (2026-11-08) all 646 named-medicine pages under `/de/medications` with 22 product hubs, and 97 customs-only country pages under `/de/destinations` (2026-11-09), machine-translated from the verified English rows (§5.5).
 - **Pushed 2026-11-09** (12 commits: Vietnam cash, third controlled-medicine pass, German retranslations; build, 242 unit tests and 130 e2e passed). ✔ IndexNow `--since 2026-11-08`: 869 URLs (HTTP 200).
 - **Pushed 2026-11-08** (38 commits: German to 822 pages, the controlled-medicine pass, item-search wording, zoomable route map; build, 242 unit tests and 130 e2e passed). ✔ IndexNow `--since 2026-11-06`: 959 URLs (HTTP 200).

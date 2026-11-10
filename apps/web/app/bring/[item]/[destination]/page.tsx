@@ -9,7 +9,7 @@ import CustomsRowCard from "../../../../components/CustomsRowCard";
 import { productsForDestination } from "../../../../lib/medication-products";
 import { destinationPath, withArticle } from "../../../../lib/destinations";
 import { blogPosts } from "../../../../lib/blog";
-import { hasGermanPage } from "../../../../lib/translations";
+import { GERMAN_INDEXABLE, hasGermanPage } from "../../../../lib/translations";
 
 interface Params {
   item: string;
@@ -58,7 +58,7 @@ export async function generateMetadata({
     alternates: {
       canonical: `/bring/${pair.itemSlug}/${pair.destinationSlug}`,
       // A German page exists only when every row is translated and headed (lib/translations.ts).
-      ...(hasGermanPage(pair)
+      ...(GERMAN_INDEXABLE && hasGermanPage(pair)
         ? {
             languages: {
               en: `/bring/${pair.itemSlug}/${pair.destinationSlug}`,

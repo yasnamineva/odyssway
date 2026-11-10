@@ -3,7 +3,7 @@ import type { CustomsItemRecord } from "@odyssway/engine";
 import { blogPosts } from "../lib/blog";
 import { BRING_CATEGORIES } from "../lib/bring-categories";
 import { bringPairs } from "../lib/bring-pages";
-import { germanPairs, hasGermanPage, translatedCustomsRow } from "../lib/translations";
+import { GERMAN_INDEXABLE, germanPairs, hasGermanPage, translatedCustomsRow } from "../lib/translations";
 import { germanDestinations } from "../lib/german-destinations";
 import { germanPairsForProduct, germanProductPairs, germanProducts, hasGermanProductPage } from "../lib/german-medications";
 import { countriesVerifiedAt } from "../lib/countries";
@@ -43,7 +43,7 @@ const DATA_LAST_UPDATED = latest([
 ]);
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
+  const entries: MetadataRoute.Sitemap = [
     { url: `${BASE}/`, lastModified: DATA_LAST_UPDATED, priority: 0.9 },
     { url: `${BASE}/trip-check`, lastModified: countriesVerifiedAt, priority: 1 },
     { url: `${BASE}/calculator`, lastModified: countriesVerifiedAt, priority: 0.9 },
@@ -208,4 +208,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.4,
     })),
   ];
+  if (GERMAN_INDEXABLE) return entries;
+  // German pages are noindex for now (lib/translations.ts): no URLs, no hreflang alternates.
+  return entries
+    .filter((e) => !e.url.startsWith(`${BASE}/de/`) && e.url !== `${BASE}/de`)
+    .map(({ alternates: _alternates, ...rest }) => rest);
 }

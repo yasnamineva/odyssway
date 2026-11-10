@@ -11,7 +11,7 @@ import {
 } from "../../../../lib/german-medications";
 import { latestVerified } from "../../../../lib/medication-products";
 import { SITE_URL } from "../../../../lib/site";
-import { countryName, germanDate, translatedCustomsRow } from "../../../../lib/translations";
+import { GERMAN_INDEXABLE, countryName, germanDate, translatedCustomsRow } from "../../../../lib/translations";
 
 /** German hub for one named medicine: every country with a German page for it (GROWTH_AND_ROADMAP.md §5.5). */
 const t = createTranslator({ locale: "de", messages: deMessages, namespace: "dePages" });
@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: { params: Promise<{ product: 
     description,
     alternates: {
       canonical: `/de/medications/${product}`,
-      languages: { en: `/medications/${product}`, de: `/de/medications/${product}`, "x-default": `/medications/${product}` },
+      ...(GERMAN_INDEXABLE ? { languages: { en: `/medications/${product}`, de: `/de/medications/${product}`, "x-default": `/medications/${product}` } } : {}),
     },
     openGraph: { title, description, locale: "de_DE" },
   };

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { createTranslator } from "next-intl";
 import deMessages from "../../../messages/de.json";
 import { germanPairsForProduct, germanProductName, germanProducts } from "../../../lib/german-medications";
+import { GERMAN_INDEXABLE } from "../../../lib/translations";
 
 /** German index of named medicines with German pages (GROWTH_AND_ROADMAP.md §5.5). */
 const t = createTranslator({ locale: "de", messages: deMessages, namespace: "dePages" });
@@ -13,7 +14,7 @@ export function generateMetadata(): Metadata {
   return {
     title,
     description,
-    alternates: { canonical: "/de/medications", languages: { en: "/medications", de: "/de/medications", "x-default": "/medications" } },
+    alternates: { canonical: "/de/medications", ...(GERMAN_INDEXABLE ? { languages: { en: "/medications", de: "/de/medications", "x-default": "/medications" } } : {}) },
     openGraph: { title, description, locale: "de_DE" },
   };
 }

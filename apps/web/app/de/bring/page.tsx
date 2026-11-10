@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { createTranslator } from "next-intl";
 import deMessages from "../../../messages/de.json";
-import { germanPairs } from "../../../lib/translations";
+import { GERMAN_INDEXABLE, germanPairs } from "../../../lib/translations";
 import { BRING_CATEGORIES, type BringCategory } from "../../../lib/bring-categories";
 
 /** German index of "Can I bring it?" categories that have German pages (GROWTH_AND_ROADMAP.md §5.5). */
@@ -13,7 +13,7 @@ export function generateMetadata(): Metadata {
   return {
     title,
     description,
-    alternates: { canonical: "/de/bring", languages: { en: "/bring", de: "/de/bring", "x-default": "/bring" } },
+    alternates: { canonical: "/de/bring", ...(GERMAN_INDEXABLE ? { languages: { en: "/bring", de: "/de/bring", "x-default": "/bring" } } : {}) },
     openGraph: { title, description, locale: "de_DE" },
   };
 }

@@ -17,6 +17,7 @@ import {
 import { latestVerified, type ProductPair } from "../../../../../lib/medication-products";
 import { translationProblemHref } from "../../../../../lib/report-problem";
 import {
+  GERMAN_INDEXABLE,
   countryName,
   germanDate,
   germanRowHeading,
@@ -64,7 +65,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     description,
     alternates: {
       canonical: germanPath(pair),
-      languages: { en: englishPath(pair), de: germanPath(pair), "x-default": englishPath(pair) },
+      ...(GERMAN_INDEXABLE ? { languages: { en: englishPath(pair), de: germanPath(pair), "x-default": englishPath(pair) } } : {}),
     },
     openGraph: { title, description, locale: "de_DE" },
   };

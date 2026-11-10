@@ -120,6 +120,9 @@ test("sitemap and robots respond", async ({ request }) => {
   expect(await sitemap.text()).toContain("/rules/90-180-rule");
   expect(await sitemap.text()).toContain("/rules/overstay-penalties");
   expect(await sitemap.text()).toContain("/bring/e-cigarettes/japan");
+  // German pages are noindex for now, so they and their hreflang alternates stay out of the sitemap.
+  expect(await sitemap.text()).not.toContain("/de/");
+  expect(await sitemap.text()).not.toContain("hreflang");
   const robots = await request.get("/robots.txt");
   expect(robots.status()).toBe(200);
 });
@@ -514,7 +517,7 @@ test("Schengen countries have a hub and item pages built from the shared Schenge
   await expect(page.getByRole("link", { name: /^Tobacco/ })).toHaveAttribute("href", "/bring/tobacco/france");
 });
 
-test("German drone pages: translated rules, machine-translation notice, hreflang both ways; untranslated pairs 404", async ({ page }) => {
+test("German drone pages: translated rules, machine-translation notice, noindex without hreflang; untranslated pairs 404", async ({ page }) => {
   await page.goto("/de/bring/drones/france");
   await expect(page.locator("article[lang=de] h1")).toHaveText("Frankreich: Darf man eine Drohne mitnehmen?");
   await expect(page.getByTestId("de-translation-notice")).toContainText("maschinelle Übersetzung");
@@ -522,10 +525,13 @@ test("German drone pages: translated rules, machine-translation notice, hreflang
     "href",
     "/bring/drones/france",
   );
-  await expect(page.locator('link[rel=alternate][hreflang=en]')).toHaveAttribute("href", /\/bring\/drones\/france$/);
+  // German pages stay out of search until reviewed (GERMAN_INDEXABLE in lib/translations.ts).
+  await expect(page.locator('meta[name=robots]')).toHaveAttribute("content", /noindex/);
+  await expect(page.locator("link[rel=alternate][hreflang]")).toHaveCount(0);
   await expect(page.getByTestId("de-same-item-elsewhere").getByRole("link", { name: "Deutschland" })).toBeVisible();
   await page.goto("/bring/drones/france");
-  await expect(page.locator('link[rel=alternate][hreflang=de]')).toHaveAttribute("href", /\/de\/bring\/drones\/france$/);
+  await expect(page.locator("link[rel=alternate][hreflang]")).toHaveCount(0);
+  await expect(page.locator('meta[name=robots]')).toHaveCount(0);
   await expect(page.getByTestId("german-version-link")).toHaveAttribute("href", "/de/bring/drones/france");
   // Every real pair has a German page today; a pair without one gets the same not-found page.
   const missing = await page.goto("/de/bring/cash/atlantis");
@@ -553,7 +559,7 @@ test("German index and hubs list only German pages and link back to English", as
     "href",
     "/de/bring/drones/france",
   );
-  await expect(page.locator('link[rel=alternate][hreflang=en]')).toHaveAttribute("href", /\/bring\/drones$/);
+  await expect(page.locator('meta[name=robots]')).toHaveAttribute("content", /noindex/);
   // The German cash hub lists the countries that have a German cash page.
   await page.goto("/de/bring/cash");
   await expect(page.getByTestId("de-hub-list").getByRole("link", { name: "Spanien" })).toBeVisible();
@@ -562,16 +568,16 @@ test("German index and hubs list only German pages and link back to English", as
   expect(missing?.status()).toBe(404);
 });
 
-test("German named-medicine pages: pair, hub and index, hreflang both ways, linked from English", async ({ page }) => {
+test("German named-medicine pages: pair, hub and index, noindex, linked from English", async ({ page }) => {
   await page.goto("/medications/ritalin/japan");
   const german = page.getByTestId("german-version-link");
   await expect(german).toHaveAttribute("href", "/de/medications/ritalin/japan");
-  await expect(page.locator('link[rel=alternate][hreflang=de]')).toHaveAttribute("href", /\/de\/medications\/ritalin\/japan$/);
+  await expect(page.locator("link[rel=alternate][hreflang]")).toHaveCount(0);
 
   await page.goto("/de/medications/ritalin/japan");
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("Japan: Darf man Ritalin mitnehmen?");
   await expect(page.getByTestId("de-translation-notice")).toContainText("maschinelle Übersetzung");
-  await expect(page.locator('link[rel=alternate][hreflang=en]')).toHaveAttribute("href", /\/medications\/ritalin\/japan$/);
+  await expect(page.locator('meta[name=robots]')).toHaveAttribute("content", /noindex/);
   await expect(page.getByTestId("de-product-elsewhere").getByRole("link", { name: "Thailand" })).toHaveAttribute(
     "href",
     "/de/medications/ritalin/thailand",

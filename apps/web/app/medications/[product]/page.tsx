@@ -7,6 +7,7 @@ import { SITE_URL } from "../../../lib/site";
 import { withArticle } from "../../../lib/destinations";
 import { VERDICT_STYLES } from "../../../components/CustomsRowCard";
 import { hasGermanProductHub } from "../../../lib/german-medications";
+import { GERMAN_INDEXABLE } from "../../../lib/translations";
 import {
   latestVerified,
   medicationProducts,
@@ -35,7 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     description,
     alternates: {
       canonical: `/medications/${product.slug}`,
-      ...(hasGermanProductHub(product.slug)
+      ...(GERMAN_INDEXABLE && hasGermanProductHub(product.slug)
         ? {
             languages: {
               en: `/medications/${product.slug}`,

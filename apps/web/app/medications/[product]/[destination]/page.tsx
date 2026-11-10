@@ -16,6 +16,7 @@ import {
   productsForDestination, productInSentence } from "../../../../lib/medication-products";
 import { rowLabel } from "../../../../lib/bring-pages";
 import { hasGermanProductPage } from "../../../../lib/german-medications";
+import { GERMAN_INDEXABLE } from "../../../../lib/translations";
 
 interface Params {
   product: string;
@@ -67,7 +68,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     description,
     alternates: {
       canonical: `/medications/${pair.product.slug}/${pair.destinationSlug}`,
-      ...(hasGermanProductPage(pair)
+      ...(GERMAN_INDEXABLE && hasGermanProductPage(pair)
         ? {
             languages: {
               en: `/medications/${pair.product.slug}/${pair.destinationSlug}`,
