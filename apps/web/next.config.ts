@@ -78,7 +78,6 @@ const withdrawnBringPages = [
   { source: "/rules/overstay-penalties/pt", destination: "/rules/overstay-penalties", permanent: false },
   { source: "/rules/overstay-penalties/ro", destination: "/rules/overstay-penalties", permanent: false },
   { source: "/rules/overstay-penalties/si", destination: "/rules/overstay-penalties", permanent: false },
-  { source: "/rules/overstay-penalties/sk", destination: "/rules/overstay-penalties", permanent: false },
 ];
 
 const retiredBlogRedirects = (
