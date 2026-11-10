@@ -89,10 +89,30 @@ function rowId(file: string, r: Row): string {
   return file.startsWith("customs") ? (r.slug ?? "?") : `${r.nationality}→${r.destination}`;
 }
 
+type Miss = { file: string; quote: string; unsaved: boolean; rows: string[] };
+
+/** Report lines: misses on fully saved sources first (the strongest sign of a change), each quote once. */
+export function missLines(misses: Miss[]): string[] {
+  const line = (m: Miss) =>
+    `- \`${m.file}\` ${m.rows.length > 8 ? `${m.rows.slice(0, 8).join(", ")} and ${m.rows.length - 8} more` : m.rows.join(", ")}: “${m.quote.length > 160 ? `${m.quote.slice(0, 157)}…` : m.quote}”`;
+  const saved = misses.filter((m) => !m.unsaved);
+  const partial = misses.filter((m) => m.unsaved);
+  return [
+    ...(saved.length > 0
+      ? ["Not found on any cited page (re-read the source: the rule may have changed, or the page reworded it):", "", ...saved.map(line), ""]
+      : []),
+    ...(partial.length > 0
+      ? ["Not found on the saved pages, but some cited pages weren't saved (the quote may be there):", "", ...partial.map(line), ""]
+      : []),
+  ];
+}
+
 function main(): void {
   const outIdx = process.argv.indexOf("--out");
   const outFile = outIdx > 0 ? process.argv[outIdx + 1] : undefined;
-  const misses: string[] = [];
+  // One entry per (file, quote, saved-or-not): the same quote is often repeated across a
+  // destination's rows for every passport, and listing each row buries the other misses.
+  const misses = new Map<string, Miss>();
   let checkedQuotes = 0;
   let found = 0;
   let uncheckable = 0;
@@ -113,11 +133,12 @@ function main(): void {
       for (const q of quotes) {
         checkedQuotes++;
         if (pages.some((page) => page.includes(normalise(q)))) found++;
-        else
-          misses.push(
-            `- \`${file}\` ${rowId(file, r)}: “${q.length > 160 ? `${q.slice(0, 157)}…` : q}”` +
-              (unsaved > 0 ? ` (${unsaved} cited page${unsaved > 1 ? "s" : ""} not saved; the quote may be there)` : ""),
-          );
+        else {
+          const key = `${file}\u0000${q}\u0000${unsaved > 0}`;
+          const miss = misses.get(key) ?? { file, quote: q, unsaved: unsaved > 0, rows: [] };
+          miss.rows.push(rowId(file, r));
+          misses.set(key, miss);
+        }
       }
     }
   }
@@ -126,9 +147,7 @@ function main(): void {
     "",
     `${found} of ${checkedQuotes} quoted passages found on their sources' saved text; ${uncheckable} rows with quotes had no snapshot to check against.`,
     "",
-    ...(misses.length > 0
-      ? ["Not found (re-read the source: the rule may have changed, or the page reworded it):", "", ...misses]
-      : ["Every checked quote was found."]),
+    ...(misses.size > 0 ? missLines([...misses.values()]) : ["Every checked quote was found."]),
     "",
   ].join("\n");
   process.stdout.write(report);
