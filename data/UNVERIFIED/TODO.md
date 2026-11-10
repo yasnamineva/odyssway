@@ -4257,3 +4257,21 @@ changes. Auswärtiges Amt security pages: shared news-box text, not entry rules.
 - Next from this report: Uruguay's visa regime page (gub.uy, 66 rows), Hong Kong pre-arrival registration for
   Indian nationals, GOV.UK visiting-the-UK-as-EU-citizen, DHS VWP page, NZ immigration homepage, Singapore
   police cash-report page, Malaysia–China exemption article.
+- ✔ Rest of the 9 Nov report's changes (2026-11-10): Uruguay table (layout only; 65 rows agree, re-dated), Hong
+  Kong PAR for Indian nationals (failure path, exemption list fixed), Japan NCD (online system now live; our wording
+  already covers it), Health Canada peptides (NAD+ dropped from its list; not in our row). GOV.UK EU visitors, DHS
+  VWP, NZ immigration, Singapore police, RTM Malaysia, AA, Spain advice, Irish, AU Home Affairs pages: navigation,
+  news or dates only.
+- ✔ Moved sources (the report's 404s, 2026-11-10): MRA Mauritius → /index.php paths (4 rows re-read); JCA Jamaica
+  PDFs → plain file names (7 rows, every quote re-read); MHLW designated-substances list → the 1 June 2026 edition
+  now linked from its "For foreigners and travelers" page (the 6 Sept edition was removed; kratom-jp, poppers-jp
+  still supported). **Watch:** MHLW should post a newer edition; re-cite when it does.
+- ✔ cannabis-nz rebuilt (2026-11-10): the NZ Customs Major Events advisory PDF (3 months CBD / 1 month other
+  medicinal cannabis) is gone. Kept only what readable sources say: CBD = prescription medicine (Medsafe) under
+  Customs' 3-month rule; controlled-drug rule (1 month, declare) stated conditionally; US-supplied products banned
+  (Customs release, 3 Sep 2024). **Open:** the Medicinal Cannabis Agency consumer page (health.govt.nz, Cloudflare
+  403 to scripts and to WebFetch) and legislation.govt.nz (202 challenge) hold the rest; needs a manual browser read.
+  German cannabis-nz translation now stale (English shown) until retranslated.
+- Unmonitorable this week: 217 new, mostly gov.me (69), mvp.gov.ba (41), viaggiaresicuri.it (30), kln.gov.my (12)
+  from the CI runner; viaggiaresicuri and kln answer from here, gov.me timed out, mvp.gov.ba redirects. EUR-Lex
+  answers 202 (challenge), not moved.
