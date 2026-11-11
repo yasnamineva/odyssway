@@ -38,8 +38,6 @@ function destinationCodeRedirects() {
 const withdrawnMedicationPairs = [
     "vyvanse/mexico",
     "vyvanse/china",
-    "vyvanse/saudi-arabia",
-    "vyvanse/brazil",
     "vyvanse/south-korea",
     "vyvanse/hong-kong",
     "vyvanse/malaysia",
@@ -49,8 +47,6 @@ const withdrawnMedicationPairs = [
     "tramadol/australia",
     "tramadol/philippines",
     "tramadol/new-zealand",
-    "tramadol/saudi-arabia",
-    "tramadol/brazil",
     "tramadol/malaysia",
     "tramadol/maldives",
     "tramadol/cyprus",

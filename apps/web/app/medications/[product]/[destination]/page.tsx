@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { isIndexedProductPair, NOINDEX_FOLLOW } from "../../../../lib/search-index";
 import { getTranslations } from "next-intl/server";
 import { withArticle } from "../../../../lib/destinations";
 import { checkedYear, describeRule, multiRowLead, rowLead, titleAnswer, titleWithAnswer } from "../../../../lib/seo-text";
@@ -66,6 +67,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   return {
     title,
     description,
+    ...(isIndexedProductPair(pair) ? {} : { robots: NOINDEX_FOLLOW }),
     alternates: {
       canonical: `/medications/${pair.product.slug}/${pair.destinationSlug}`,
       ...(GERMAN_INDEXABLE && hasGermanProductPage(pair)

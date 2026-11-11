@@ -127,6 +127,23 @@ test("sitemap and robots respond", async ({ request }) => {
   expect(robots.status()).toBe(200);
 });
 
+test("near-duplicate pages stay up for readers but out of search (lib/search-index.ts)", async ({ page, request }) => {
+  const xml = await (await request.get("/sitemap.xml")).text();
+  // A passport outside the original 22: page works, noindex, not in the sitemap.
+  await page.goto("/destinations/bahamas/kosovo");
+  await expect(page.locator("h1")).toBeVisible();
+  await expect(page.locator("meta[name=robots]")).toHaveAttribute("content", /noindex/);
+  expect(xml).not.toContain("/destinations/bahamas/kosovo<");
+  // A Schengen state page that only repeats the EU rule.
+  await page.goto("/bring/alcohol/austria");
+  await expect(page.locator("meta[name=robots]")).toHaveAttribute("content", /noindex/);
+  expect(xml).not.toContain("/bring/alcohol/austria<");
+  // Pages with their own substance stay indexable.
+  await page.goto("/destinations/bahamas/united-states");
+  await expect(page.locator("meta[name=robots]")).toHaveCount(0);
+  expect(xml).toContain("/destinations/bahamas/united-states<");
+});
+
 test("every sitemap URL resolves — never advertise a 404 to search engines", async ({ request }) => {
   const xml = await (await request.get("/sitemap.xml")).text();
   const paths = [...xml.matchAll(/<loc>https?:\/\/[^/]+([^<]*)<\/loc>/g)].map((m) => m[1]!);
@@ -135,7 +152,8 @@ test("every sitemap URL resolves — never advertise a 404 to search engines", a
   for (let i = 0; i < paths.length; i += 20) {
     await Promise.all(
       paths.slice(i, i + 20).map(async (path) => {
-        const res = await request.get(path);
+        // No redirects either: a sitemap URL that redirects is one search engines drop.
+        const res = await request.get(path, { maxRedirects: 0 });
         if (res.status() !== 200) bad.push(`${res.status()} ${path}`);
       }),
     );

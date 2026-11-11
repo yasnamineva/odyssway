@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { isIndexedBringPair, NOINDEX_FOLLOW } from "../../../../lib/search-index";
 import { getTranslations } from "next-intl/server";
 import { checkedYear, clip, describeRule, multiRowLead, rowLead, titleAnswer, titleWithAnswer } from "../../../../lib/seo-text";
 import { notFound } from "next/navigation";
@@ -55,6 +56,7 @@ export async function generateMetadata({
   return {
     title,
     description,
+    ...(isIndexedBringPair(pair) ? {} : { robots: NOINDEX_FOLLOW }),
     alternates: {
       canonical: `/bring/${pair.itemSlug}/${pair.destinationSlug}`,
       // A German page exists only when every row is translated and headed (lib/translations.ts).

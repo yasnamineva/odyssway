@@ -19,7 +19,8 @@
     "indexnow": "tsx scripts/indexnow.ts",
     "gsc:compare": "tsx scripts/gsc-compare.ts",
     "ci": "pnpm typecheck && pnpm test && pnpm validate:data && pnpm sources:registry --check && pnpm build",
-    "i18n:stamp": "tsx scripts/i18n-stamp.ts"
+    "i18n:stamp": "tsx scripts/i18n-stamp.ts",
+    "seo:guard": "tsx scripts/seo-guard.ts"
   },
   "devDependencies": {
     "tsx": "^4.20.0",

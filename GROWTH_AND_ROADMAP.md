@@ -6,7 +6,7 @@ anything gets built, and its Accuracy Policy (§3) comes before everything here.
 listed as *candidates* are research leads, not verified rules, and none can be published
 without a primary official source.
 
-Where we are today (2026-11-09):
+Where we are today (2026-11-11):
 
 - 70 destinations plus the Schengen Area; 4,047 verified entry rows; 815 customs rows
   (217 medication, 43 with a doctor's-letter checklist, 22 with a permit how-to, 19 with
@@ -14,7 +14,7 @@ Where we are today (2026-11-09):
 - Tools: Trip Check (multi-country route, passport check per stop), the trip readiness
   planner, travel-authorisation guides, the 90/180 calculator, the multi-country day counter, named-medicine pages, border cards,
   embeddable calculator and "Can I bring it?" widgets, the public JSON API.
-- About 2,000 URLs in the sitemap. Google indexes well; Bing indexes the pages but shows
+- 2,538 URLs in the sitemap (5,783 before the 2026-11-11 pruning); Google had indexed ~1,500; Bing indexes the pages but shows
   them rarely (young domain, few links).
 - No analytics, by design.
 - **Search collapse, 7–8 Nov 2026 (export of 10 Nov):** about 1,000 impressions a day through 4 Nov,
@@ -27,6 +27,23 @@ Where we are today (2026-11-09):
   machine-translated page gets indexed without a native-speaker review, and then a small batch first, watched
   for two weeks.** Owner to check in Search Console: Manual actions, Pages (indexing) report, and URL
   inspection of a top page (e.g. `/bring/e-cigarettes/malaysia`); then resubmit the sitemap.
+  **Deeper analysis (2026-11-11, coverage export of 11 Nov):** no manual action (owner checked). Google
+  indexed only 1,502 pages and left 3,792 as "Discovered – currently not indexed". The German pages were the
+  last straw, not the only cause: in one week we added ~3,800 templated pages: **2,426 passport pages on 2 Nov**
+  (entry-lists expansion; ~70% identical text to sibling passports, zero impressions for any passport outside
+  the original 22), **648 brand × country medicine pages on only 121 distinct rule sets** (Xanax/Valium → Japan
+  95% identical: doorway pattern), **205 Schengen-state item pages repeating the shared EU rule** (zero
+  impressions), plus ~870 German machine translations. ✔ Fix (2026-11-11, `apps/web/lib/search-index.ts`): these
+  stay up for readers as `noindex, follow` and leave the sitemap; indexable = original 22 passports, one
+  medicine page per country × rule set plus every medicine page that earned impressions
+  (`search-keep-medications.json`), state item pages only with a national rule. Sitemap 5,783 → 2,538 URLs;
+  no page with impressions loses indexability. Also fixed: four medicine pages (Vyvanse/tramadol × Brazil, Saudi
+  Arabia) were in the sitemap but still 307-redirected; the e2e sitemap test now refuses redirects.
+  ✔ **Pre-push SEO guard** (`pnpm seo:guard`, pre-push hook, AGENTS.md "Search safety"): blocks bulk URL
+  additions, loss of earning pages, noindex/robots mistakes and near-duplicate new pages.
+  **Recovery plan:** after deploy, owner resubmits the sitemap and requests indexing for the top 10 pages; watch
+  the next exports weekly. Expect weeks, not days. Then grow only by small batches with unique substance (e.g.
+  passport pages for a new passport only where its rule differs from the list default).
   Also seen in the export: 22 pages that earned impressions now 307-redirect (withdrawn overstay rows,
   Vyvanse and tramadol pairs whose rows no longer name the brand, withdrawn e-cigarette pages); intended by
   §3. ✔ 2026-11-10: overstay GR, DK, CH, CZ, SK re-sourced from official portals and back online (BG, SI, PT, RO, EE, LT still held; see TODO). ✔ 2026-11-10: China e-cigarettes back (GACC announcements read on mofcom.gov.cn; minimum age corrected to 18); Vyvanse/Taiwan back with the Taiwan controlled-medicine rule corrected (all schedules, per Taipei Customs). Maldives: Ritalin was a banned Schedule I drug until 12 May 2026; Adderall withdrawn there until Schedule I is read. Still held: e-cigarettes MA/KE/ZA/AL/SA, Kenya meat/dairy, other Vyvanse/tramadol pairs. Quote check grouped and ordered (2026-11-10); its strong misses found uncited sources (Bahamas, Argentina) and a new Argentine rule: national hospitals require insurance or prior payment from non-resident foreigners (Res. 1066/2026), now on all 57 AR rows. 68 strong misses left to triage (TODO).

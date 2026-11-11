@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { isIndexedTravelPair, NOINDEX_FOLLOW } from "../../../../lib/search-index";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import BreadcrumbJsonLd from "../../../../components/BreadcrumbJsonLd";
@@ -57,6 +58,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     title,
     description,
     alternates: { canonical: travelPairPath(pair) },
+    ...(isIndexedTravelPair(pair) ? {} : { robots: NOINDEX_FOLLOW }),
     openGraph: {
       title,
       description,

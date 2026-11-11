@@ -1,0 +1,13 @@
+#!/bin/sh
+# Blocks a push to main that could erase search visibility (scripts/seo-guard.ts).
+# Enabled with: git config core.hooksPath scripts/git-hooks
+while read -r local_ref local_sha remote_ref remote_sha; do
+  if [ "$remote_ref" = "refs/heads/main" ]; then
+    echo "pre-push: running the SEO guard against the local build…"
+    npx -y pnpm@9 -s seo:guard || {
+      echo "pre-push: SEO guard failed — push blocked. Fix the problems above (or get the owner's OK for a larger batch)."
+      exit 1
+    }
+  fi
+done
+exit 0

@@ -17,6 +17,7 @@ import { travelAuthorisations } from "../lib/travel-authorisations";
 import { travelPairPath, travelPairs } from "../lib/travel-pairs";
 import { publishedOverstayPenalties } from "../lib/overstay-penalties";
 import { SITE_URL as BASE } from "../lib/site";
+import { isIndexedBringPair, isIndexedProductPair, isIndexedTravelPair } from "../lib/search-index";
 import { LEGAL_UPDATED } from "../lib/legal";
 
 /** Content pages carry the date their sources were last checked (AGENTS.md §7). */
@@ -103,7 +104,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     })),
     { url: `${BASE}/bring`, lastModified: DATA_LAST_UPDATED, priority: 0.5 },
-    ...travelPairs.map((pair) => ({
+    ...travelPairs.filter(isIndexedTravelPair).map((pair) => ({
       url: `${BASE}${travelPairPath(pair)}`,
       lastModified: pair.row.verified_at ?? DATA_LAST_UPDATED,
       priority: 0.6,
@@ -114,7 +115,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: latest(pairsForProduct(p.slug).map((pair) => latestVerified(pair.rows))),
       priority: 0.6,
     })),
-    ...productPairs.map((pair) => {
+    ...productPairs.filter(isIndexedProductPair).map((pair) => {
       const en = `${BASE}/medications/${pair.product.slug}/${pair.destinationSlug}`;
       return {
         url: en,
@@ -152,7 +153,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       const de = `${BASE}/de/medications/${pair.product.slug}/${pair.destinationSlug}`;
       return { url: de, lastModified: germanLastModified(pair.rows), priority: 0.5, alternates: { languages: { en, de } } };
     }),
-    ...bringPairs.map((p) => {
+    ...bringPairs.filter(isIndexedBringPair).map((p) => {
       const en = `${BASE}/bring/${p.itemSlug}/${p.destinationSlug}`;
       const de = `${BASE}/de/bring/${p.itemSlug}/${p.destinationSlug}`;
       const translated = hasGermanPage(p);

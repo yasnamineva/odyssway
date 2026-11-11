@@ -34,6 +34,30 @@ important calls; everything else is yours to drive.
 - §3 (accuracy) and §13 (guardrails) still override all of this. Being proactive never
   means publishing an unverified rule.
 
+### Search safety (owner instruction, 2026-11-11)
+
+Search visibility is the business. On 2–8 Nov 2026 about 3,800 templated pages went live in
+a week (2,426 passport pages, hundreds of brand × country medicine pages, ~870
+machine-translated German pages) and Google impressions fell from ~1,000 a day to almost
+none. Never again:
+
+- **Before every push to main, run `pnpm build && pnpm seo:guard`** (also enforced by the
+  pre-push hook in `scripts/git-hooks`, enabled with `git config core.hooksPath
+  scripts/git-hooks`). Don't push while it fails, and never bypass it with `--no-verify`.
+  It blocks: more new indexable URLs than the budget (25, or 2% of the live sitemap); a page
+  that earned impressions in the latest Search Console export losing indexability; robots
+  or home-page noindex; non-indexable sitemap URLs; new pages over 85% identical to an
+  existing one.
+- **New page types or bulk expansions ship in small batches** (tens of pages, not
+  hundreds), each judged against the next Search Console export. A bigger batch needs
+  the owner's explicit OK (`SEO_GUARD_MAX_ADDED`).
+- **Indexable means unique substance or proven demand** (`apps/web/lib/search-index.ts`).
+  Pages that repeat another page's rule for a different passport, brand or member state
+  stay up for readers as `noindex, follow` and stay out of the sitemap. Machine
+  translations stay noindex until a native-speaker review.
+- Withdrawing a page that earned impressions for accuracy (§3) is allowed: list it with the
+  reason in `scripts/seo-guard-allow.txt`.
+
 ---
 
 ## 1. What we are building and why
