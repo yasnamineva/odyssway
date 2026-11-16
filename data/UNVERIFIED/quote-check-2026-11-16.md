@@ -1,0 +1,316 @@
+## Quote check
+
+1276 of 3285 quoted passages found on their sources' saved text; 508 rows with quotes had no snapshot to check against.
+
+Not found on any cited page (re-read the source: the rule may have changed, or the page reworded it):
+
+- `entry-requirements.json` IN→CA: “select visa-required countries”
+- `entry-requirements.json` AU→MY: “Australian passport holders do not need to apply for VISA before travelling to Malaysia”
+- `entry-requirements.json` ES→SA, DE→SA, NL→SA: “a one-year, multiple entry visa, allowing tourists to spend up to 90 days in the country”
+- `entry-requirements.json` CN→EC, IN→EC: “visa de visitante temporal prórroga turista”
+- `entry-requirements.json` CN→EC, IN→EC: “Concesión de visa de visitante temporal prórroga turista”
+- `entry-requirements.json` CA→KH, ES→KH, FR→KH: “All travelers are required to fill in the Cambodia e-Arrival even if they have been granted VISA”
+- `entry-requirements.json` CA→KH, ES→KH, FR→KH: “within 7 days prior to your arrival”
+- `entry-requirements.json` CA→KH, ES→KH, FR→KH: “within 7 days before or on arrival”
+- `entry-requirements.json` AL→AR, MD→AR: “AVE Global Turista: HABILITADO”
+- `entry-requirements.json` BA→TW: “Bosnia and Herzegovina needs a visa”
+- `entry-requirements.json` TR→HK: “TÜRKİYE (Formerly known as Turkey)”
+- `customs-items.json` drones-mx: “El registro de la información del RPAS debe llevarse a cabo antes de iniciar su operación correspondiente”
+- `customs-items.json` food-animal-mx: “ensunciativa, más no limitativa”
+- `customs-items.json` fresh-produce-in: “Seeds / Plants / Fruits / Flowers and other planting material”
+- `customs-items.json` drones-za: “UAS shall be operated within the Republic of South Africa, unless such UAS has been issued with a certificate of registration by the Director”
+- `customs-items.json` injectable-medication-mx: “a device for measuring blood pressure and one for measuring glucose or a combined device, and their reagents, as well as medications for personal use”
+- `customs-items.json` cannabis-br: “exceptional import authorization”
+- `customs-items.json` injectable-medication-th: “Bringing of health products into the Kingdom of Thailand”
+- `customs-items.json` drones-cn: “Owners of civil unmanned aircraft shall carry out real-name registration in accordance with the law”
+- `customs-items.json` prescription-medication-cn: “Small quantities of medication for personal use carried by inbound/outbound persons shall be limited to self-use, reasonable quantities, and subject to custo…”
+- `customs-items.json` cbd-hk: “Importation of products (including food or drinks) containing CBD into Hong Kong is prohibited unless the relevant provisions in the DDO are complied with”
+- `customs-items.json` prescription-medication-hk: “reasonable quantity for personal use”
+- `customs-items.json` cannabis-ge: “narcotic drugs strictly restricted for free circulation”
+- `customs-items.json` cannabis-mv: “Possession, trafficking and manufacture of any illegal drugs are serious offences in Maldives and penalties can be severe”
+- `customs-items.json` alcohol-lk: “All liquor should either be purchased from Sri Lanka Duty Free shops or brought from abroad on the day of arrival. Liquor sent as Unaccompanied Baggage will …”
+- `customs-items.json` alcohol-do: “Hasta cinco litros de bebida alcohólica de libre circulación”
+- `customs-items.json` tobacco-do: “Se permite ingresar, libre de impuestos: 20 cajetillas de cigarrillos, o 25 puros, o 200 gramos de tabaco”
+- `customs-items.json` prescription-medication-do: “Los medicamentos deben ser de uso personal de conformidad con la estadía y dosis”
+- `customs-items.json` injectable-medication-do: “deben ser de uso personal de conformidad con la estadía y dosis”
+- `customs-items.json` injectable-medication-do: “sujetas a regulaciones por el Ministerio de Salud Pública”
+- `customs-items.json` cannabis-do: “The Dominican Republic has a zero-tolerance policy to illegal drugs, including cannabis. Authorities can impose severe penalties for possession of even a sma…”
+- `customs-items.json` gifts-electronics-do: “Una cámara fotográfica y de video por viajero. Dos teléfonos celulares”
+- `customs-items.json` alcohol-co: “hasta por un valor total de dos mil dólares”
+- `customs-items.json` cash-co: “Declaración de Equipaje, de Dinero o Títulos representativos de Dinero – Viajeros”
+- `customs-items.json` cash-co: “You can bring up to 10,000 US dollars-worth of any currency”
+- `customs-items.json` cash-co: “declare anything above this amount with”
+- `customs-items.json` cannabis-co: “sin permiso de autoridad competente, introduzca al país, así sea en tránsito o saque de él”
+- `customs-items.json` meat-dairy-co: “independientemente de la cantidad”
+- `customs-items.json` fresh-produce-co: “vegetales, animales y productos reglamentados”
+- `customs-items.json` drones-jo: “You must obtain authorization before importing or operating a drone”
+- `customs-items.json` drones-jo: “Drones Operations Approval Application Form”
+- `customs-items.json` alcohol-qa: “Neem geen alcohol en varkensvlees(producten) mee naar Qatar”
+- `customs-items.json` pork-products-qa: “Neem geen alcohol en varkensvlees(producten) mee”
+- `customs-items.json` drones-qa: “Drone use, including aerial photography and filming, is regulated in Qatar. You may need licences or permits before importing or operating a drone. Breaching…”
+- `customs-items.json` meat-dairy-cl: “Carne o derivados (jamón, embutidos, otros)”
+- `customs-items.json` meat-dairy-cl: “Leche y sus derivados (queso, yogurt, otros)”
+- `customs-items.json` meat-dairy-cl: “Productos de origen animal y comida de uso personal, que los contenga”
+- `customs-items.json` meat-dairy-cl: “Declaring YES does not necessarily imply authorization”
+- `customs-items.json` meat-dairy-cl: “constituye falta y será sancionado con multa”
+- `customs-items.json` drones-jm: “Professional operators, whether commercial or non-commercial, require a Special Aerial Work Permit from the JCAA”
+- `customs-items.json` drones-jm: “Recreational operators do not require a permit but must comply with the relevant operating guidelines”
+- `customs-items.json` cash-bs: “of a value equivalent to BS $10,000.00”
+- `customs-items.json` cash-bs: “Penalties for non-compliance can include forfeiture of the cash, plus up to a $2,000 fine”
+- `customs-items.json` cash-bs: “is maintained at the same level as the U.S. dollar”
+- `customs-items.json` meat-dairy-bs: “Meat, provisions, fruits and vegetables, and any articles intended for human food, which are unfit for human consumption”
+- `customs-items.json` pets-bs: “A current permit from the Department of Agriculture (one time use only); The animal must be at least six months of age; A current Veterinary Health Certifica…”
+- `customs-items.json` cash-tz: “You must declare any amount over 10,000 U.S. dollars on arrival and departure”
+- `customs-items.json` cash-tz: “Cross Border Declaration of Currency and Bearer Negotiable Instruments”
+- `customs-items.json` cannabis-tz: “some herbal highs and products containing cannabidiol (CBD) are illegal in Tanzania”
+- `customs-items.json` weapons-kh: “weapons and ammunition (武器・弾薬), narcotics, pornographic products, radio equipment, and chemicals that can be used to make explosives are prohibited from bein…”
+- `customs-items.json` cannabis-kh: “de entre 10 años a cadena perpetua”
+
+Not found, but some cited pages weren't saved or saved only a short landing page (the quote may be in a linked document):
+
+- `entry-requirements.json` SG→RW: “The following countries to be granted 90 days valid visa free of charge upon arrival: Angola, Benin, Central African Republic, Chad, Cote d'Ivoire, Democrati…”
+- `entry-requirements.json` JP→EG, KR→EG: “generally must first obtain an e-Visa via the Egypt e-Visa Portal”
+- `entry-requirements.json` JP→EG, KR→EG: “may be issued with an e-Visa upon application on the Egypt e-Visa Portal”
+- `entry-requirements.json` US→NG, CA→NG, AU→NG, NZ→NG, JP→NG, SG→NG, BR→NG, MX→NG and 53 more: “citizens of all countries except ECOWAS member States and other countries which Nigeria has entered into visa abolition/waiver agreements”
+- `entry-requirements.json` GB→MA, CA→MA, JP→MA, KR→MA: “For all nationalities, the maximum duration of the tourist trip is 90 days”
+- `entry-requirements.json` US→ID, GB→ID, CA→ID, AU→ID, NZ→ID, JP→ID, KR→ID, SG→ID and 48 more: “Mulai 1 Oktober, Deklarasi Kedatangan Penumpang Wajib Dilakukan di Aplikasi All Indonesia”
+- `entry-requirements.json` CN→IN, XK→IN, TR→IN: “apply for regular Visa at Indian Mission”
+- `entry-requirements.json` UA→IE: “As per the Minister for Justice's announcement on 25 February 2022, citizens of Ukraine do not need a visa to travel to Ireland”
+- `entry-requirements.json` GB→GE: “also applies to citizens of Great Britain”
+- `entry-requirements.json` MY→RS: “For holders of diplomatic and official passports: visas required. For holders of ordinary passports and other travel documents: visas required”
+- `entry-requirements.json` IN→RS: “For holders of ordinary passports and other travel documents: 'Visas required'”
+- `entry-requirements.json` KR→AL: “Korean passport holders travelling to Albania for tourism may stay for 90 days within a 180-day period without a separate visa”
+- `entry-requirements.json` FR→MA, ES→MA, DE→MA, NL→MA: “For all nationalities, the maximum duration of the tourist trip is 90 days. A request for an extension can be made at the nearest police station to stay an a…”
+- `entry-requirements.json` FR→RW, MT→RW, CY→RW: “get visa upon arrival and are waived visa fees for a visit of 30 days”
+- `entry-requirements.json` FR→ZA, ES→ZA, DE→ZA, IT→ZA, NL→ZA, AT→ZA, BE→ZA, BG→ZA and 28 more: “will progressively become compulsory for short stay visits from countries that require port-of-entry visas”
+- `entry-requirements.json` ES→RW, DE→RW, IT→RW, NL→RW, AT→RW, BE→RW, BG→RW, HR→RW and 37 more: “must not exceed 50 USD for single entry visa or 70 USD for multiple entry”
+- `entry-requirements.json` ES→TR, NL→TR: “Ordinary and official passport holders are exempted from visa up to 90 days in any 180-day period”
+- `entry-requirements.json` US→LK, GB→LK, CA→LK, AU→LK, NZ→LK, JP→LK, KR→LK, CN→LK and 57 more: “can be extended for up to six months”
+- `entry-requirements.json` US→LK, GB→LK, CA→LK, AU→LK, NZ→LK, JP→LK, KR→LK, CN→LK and 57 more: “are required to obtain an Electronic Travel Authorization (ETA) prior to their arrival”
+- `entry-requirements.json` CA→LK: “not less than 6 months from the date of arrival”
+- `entry-requirements.json` US→PE, GB→PE, CA→PE, AU→PE, NZ→PE, JP→PE, KR→PE, SG→PE and 15 more: “90 days, extendable once for an equal period, within a period of 365 days counted from the first entry into national territory”
+- `entry-requirements.json` US→PE, GB→PE, CA→PE, AU→PE, NZ→PE, JP→PE, KR→PE, SG→PE and 55 more: “must have a minimum of 6 months validity from the date of entry to Peru”
+- `entry-requirements.json` US→PE, GB→PE, CA→PE, AU→PE, NZ→PE, JP→PE, KR→PE, SG→PE and 55 more: “up to 183 calendar days, cumulative over a 365-day period counted from the first regular entry”
+- `entry-requirements.json` CA→PE: “Tourist visa: not required for a stay of less than 90 days per 365-day period”
+- `entry-requirements.json` SG→PE: “Singapore tourists can stay up to 90 days in Peru without a visa”
+- `entry-requirements.json` FR→PE, DE→PE, ES→PE, IT→PE, NL→PE, UA→PE, AT→PE, BE→PE and 26 more: “90 days every 180 days from the first entry into national territory”
+- `entry-requirements.json` MX→PE: “183 calendar days, not extendable, within a period of 365 days counted from the first entry into national territory”
+- `entry-requirements.json` CN→PE, IN→PE: “during a period of six months for Chinese passport holders, and one year for Indian passport holders”
+- `entry-requirements.json` US→DO, GB→DO, CA→DO, AU→DO, NZ→DO, JP→DO, KR→DO, SG→DO and 50 more: “Prórroga de estadía para turistas”
+- `entry-requirements.json` US→DO, GB→DO, CA→DO, AU→DO, NZ→DO, JP→DO, KR→DO, SG→DO and 50 more: “30 días establecidos para los turistas”
+- `entry-requirements.json` US→DO, GB→DO, CA→DO, AU→DO, NZ→DO, JP→DO, KR→DO, SG→DO and 50 more: “a través de una prórroga extensible hasta 120 días”
+- `entry-requirements.json` US→DO, GB→DO, CA→DO, AU→DO, NZ→DO, JP→DO, KR→DO, SG→DO and 50 more: “Servicio de cálculo y pago de tasas de estadía”
+- `entry-requirements.json` US→DO, GB→DO, CA→DO, AU→DO, NZ→DO, JP→DO, KR→DO, SG→DO and 50 more: “could be deported or refused re-entry”
+- `entry-requirements.json` US→CO, GB→CO, CA→CO, AU→CO, NZ→CO, JP→CO, KR→CO, SG→CO and 25 more: “ingresar, permanecer y salir de Colombia, exentos de requisito de visa”
+- `entry-requirements.json` US→CO, GB→CO, CA→CO, AU→CO, NZ→CO, JP→CO, KR→CO, SG→CO and 25 more: “hasta por noventa (90) días calendario”
+- `entry-requirements.json` US→CO, GB→CO, CA→CO, AU→CO, NZ→CO, JP→CO, KR→CO, SG→CO and 25 more: “Requisitos de entrada y salida del país”
+- `entry-requirements.json` US→CO, GB→CO, CA→CO, AU→CO, NZ→CO, JP→CO, KR→CO, SG→CO and 25 more: “tiquete de viaje de salida y demostrar solvencia económica, según corresponda”
+- `entry-requirements.json` US→CO, GB→CO, CA→CO, AU→CO, NZ→CO, JP→CO, KR→CO, SG→CO and 5 more: “more than 180 days in any 12-month period”
+- `entry-requirements.json` GB→CO: “Reino Unido de la Gran Bretaña e Irlanda del Norte”
+- `entry-requirements.json` CA→CO: “control y verificación migratoria”
+- `entry-requirements.json` CN→CO, IN→CO: “exención condicionada de visa para actividades de corta estancia”
+- `entry-requirements.json` CN→CO, IN→CO: “con una vigencia mínima de ciento ochenta (180) días al momento de ingreso al territorio nacional”
+- `entry-requirements.json` FR→CO, DE→CO, ES→CO, IT→CO, NL→CO: “Citizens of the Union may stay in the territory of Colombia for a maximum period of 90 days in any 180-day period”
+- `entry-requirements.json` FR→CO, DE→CO, ES→CO, IT→CO, NL→CO: “UNIÓN EUROPEA - PTP - Prórroga COP 0”
+- `entry-requirements.json` US→AR, GB→AR, CA→AR, AU→AR, NZ→AR, JP→AR, KR→AR, SG→AR and 49 more: “será exigible una vez reglamentada su implementación”
+- `entry-requirements.json` GB→AR: “You can visit Argentina without a visa for tourism for up to 90 days”
+- `entry-requirements.json` GB→AR: “must be valid for the proposed duration of your stay”
+- `entry-requirements.json` AU→AR: “Los ciudadanos australianos no requieren visa para ingresar a la Argentina como turistas por un plazo de permanencia de hasta 90 días”
+- `entry-requirements.json` NL→CR: “INGRESO SIN VISA. PERMANENCIA MÁXIMA: HASTA 180 DÍAS NATURALES NO PRORROGABLES. (Únicamente se prorrogará a quienes se le otorguen menos de 90 días y hasta p…”
+- `entry-requirements.json` FR→QA, DE→QA, ES→QA, IT→QA, NL→QA, AR→QA, BR→QA, MY→QA and 1 more: “maximaal 90 dagen binnen 180 dagen”
+- `entry-requirements.json` FR→QA, DE→QA, ES→QA, IT→QA, NL→QA, AR→QA, BR→QA, MY→QA and 1 more: “90 days within a 180-day validity period”
+- `entry-requirements.json` FR→QA, DE→QA, ES→QA, IT→QA, NL→QA, AR→QA, BR→QA, MY→QA and 52 more: “Visa-free entry is now the new term defining previously visa on arrival. Nothing changed except the name”
+- `entry-requirements.json` DE→QA: “Mit einem regulären Reisepass kann ein Visum-Waiver mit einer Gültigkeit von 180 Tagen bei Einreise beantragt werden. Dieses berechtigt zur mehrfachen Einrei…”
+- `entry-requirements.json` GB→QA: “If you need to stay longer than 30 days, you must extend your visa waiver before it expires through the Qatar Ministry of Interior. If you do not do this, yo…”
+- `entry-requirements.json` US→QA: “90-days Visa-free Entry for US Citizens”
+- `entry-requirements.json` US→QA: “Visa-Free for US Citizens (F1)”
+- `entry-requirements.json` US→QA: “F1 is a multiple-entry visa. US citizens can stay for up to 90 days upon each visit”
+- `entry-requirements.json` US→QA: “within 2 years from the date of their Visa-Free (F1) approval”
+- `entry-requirements.json` US→QA, UA→QA: “Health insurance from an accredited insurance company”
+- `entry-requirements.json` CA→CL, KR→CL, AR→CL, FR→CL, DE→CL, ES→CL: “¿Requiere visa de permanencia transitoria?”
+- `entry-requirements.json` CA→CL, KR→CL, AR→CL, FR→CL, DE→CL, ES→CL: “los medios económicos suficientes para sustentar su estadía”
+- `entry-requirements.json` CA→CL, KR→CL, AR→CL, FR→CL, DE→CL, ES→CL: “Prórroga de Permanencia Transitoria”
+- `entry-requirements.json` CA→CL, KR→CL, AR→CL, FR→CL, DE→CL, ES→CL: “ESTA DECLARACIÓN DEBE SER LLENADA POR TODA PERSONA QUE INGRESE AL PAÍS”
+- `entry-requirements.json` US→ME, GB→ME, CA→ME, AU→ME, NZ→ME, JP→ME, KR→ME, SG→ME and 48 more: “najduže 90 dana u vremenskom periodu od 180 dana, računajući od dana prvog ulaska”
+- `entry-requirements.json` US→ME, GB→ME, CA→ME, AU→ME, NZ→ME, JP→ME, KR→ME, SG→ME and 48 more: “je već boravio 90 dana u periodu od 180 dana”
+- `entry-requirements.json` GB→ME, ES→ME: “may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa”
+- `entry-requirements.json` KR→JM: “SOUTH KOREA (REPUBLIC OF)(pta)”
+- `entry-requirements.json` KR→JM, DE→JM, NL→JM: “Entry visa — foreigners arriving in Jamaica”
+- `entry-requirements.json` KR→JM, DE→JM, NL→JM: “*** Nationals of these countries are allowed to enter Jamaica without meeting a visa requirement for the purpose of tourism or to conduct short term business…”
+- `entry-requirements.json` KR→JM, DE→JM, NL→JM: “Requirements for entry into Jamaica”
+- `entry-requirements.json` KR→JM, DE→JM, NL→JM: “the decision in respect of admission and length of stay in the country rests with the Immigration Officer”
+- `entry-requirements.json` KR→JM, DE→JM, NL→JM: “Commonwealth citizens are allowed a maximum of 12 months stay on the island”
+- `entry-requirements.json` KR→JM, DE→JM, NL→JM: “Non-Commonwealth citizens are allowed a maximum of 6 months stay on the island as a visitor”
+- `entry-requirements.json` NL→JM: “KINGDOM OF THE NETHERLANDS (pta)”
+- `entry-requirements.json` GB→BS: “United Kingdom of Great Britain and Northern Ireland”
+- `entry-requirements.json` GB→BS, CA→BS: “do not need a visa to enter The Bahamas for a stay up to eight (8) months”
+- `entry-requirements.json` DE→BS, NL→BS: “do not need a visa to enter The Bahamas for a stay up to three (3) months”
+- `entry-requirements.json` DE→BS: “Deutsche Staatsangehörige benötigen für die Einreise und den touristischen Aufenthalt von bis zu 90 Tagen kein Visum”
+- `entry-requirements.json` KR→EC, AR→EC, FR→EC, ES→EC, NL→EC: “Lista de países que deben presentar visa al ingresar al Ecuador”
+- `entry-requirements.json` KR→EC, FR→EC, ES→EC, NL→EC: “El plazo de permanencia autorizado como turista será de hasta 90 días en el período de un año contado a partir del primer ingreso que marca el inicio de su a…”
+- `entry-requirements.json` KR→EC, FR→EC, ES→EC, NL→EC: “Emisión de prórroga de autorización de permanencia en territorio para extranjeros”
+- `entry-requirements.json` KR→EC, FR→EC, ES→EC, NL→EC: “el equivalente a una tercera parte del Salario Básico Unificado en el Ecuador”
+- `entry-requirements.json` AR→EC: “Para los turistas suramericanos el plazo de permanencia será de hasta ciento ochenta días en el periodo de un año cronológico contados a partir de su primer …”
+- `entry-requirements.json` AR→EC: “excepto ciudadanos sudamericanos ya que, poseen una autorización de permanencia de hasta 180 días”
+- `entry-requirements.json` AR→EC: “acuerdos internacionales específicos”
+- `entry-requirements.json` GB→TZ, CA→TZ, AU→TZ, NZ→TZ, IN→TZ, SG→TZ: “Commonwealth countries except the United Kingdom, Canada, India, Pakistan, Australia and New Zealand”
+- `entry-requirements.json` GB→TZ, CA→TZ, AU→TZ, NZ→TZ, JP→TZ, KR→TZ, CN→TZ, IN→TZ and 51 more: “Countries whose nationals can obtain a visa upon arrival”
+- `entry-requirements.json` GB→TZ, CA→TZ, AU→TZ, NZ→TZ, JP→TZ, KR→TZ, CN→TZ, IN→TZ and 51 more: “both the online and the on arrival Visa facility”
+- `entry-requirements.json` GB→TZ, CA→TZ, AU→TZ, NZ→TZ, JP→TZ, KR→TZ, CN→TZ, IN→TZ and 54 more: “is mandatory to all foreigners traveling in Tanzania Mainland”
+- `entry-requirements.json` US→TZ: “are not entitled to an Ordinary Visa”
+- `entry-requirements.json` US→TZ: “MUST apply for a Multiple Visa even if they plan for a single entry”
+- `entry-requirements.json` US→TZ: “the maximum consecutive stay in the country is only three months”
+- `entry-requirements.json` US→TZ: “on each visit a holder may stay in the country for a maximum period of three months (90 days)”
+- `entry-requirements.json` GB→KH: “All travelers are required to fill in the Cambodia e-Arrival even if they have been granted VISA”
+- `entry-requirements.json` GB→KH: “within 7 days before or on arrival”
+- `entry-requirements.json` KR→IL, FR→IL, DE→IL, ES→IL: “Eligible — Based on your answers, you can apply for an ETA-IL”
+- `entry-requirements.json` KR→IL, FR→IL, DE→IL, ES→IL: “As of January 1st, 2025, travelers to Israel must have a valid visa or ETA-IL approval before starting their journey”
+- `entry-requirements.json` KR→IL, FR→IL, DE→IL, ES→IL: “stay for up to 90 days per visit”
+- `entry-requirements.json` KR→IL, FR→IL, DE→IL, ES→IL: “does not constitute a guarantee of entry”
+- `entry-requirements.json` AR→AM, BR→AM, CN→AM, UA→AM, AL→AM, BY→AM, GE→AM, MD→AM and 2 more: “if no other term is defined by the international agreements”
+- `entry-requirements.json` US→MK, GB→MK, CA→MK, AU→MK, NZ→MK, JP→MK, KR→MK, SG→MK and 50 more: “Visa for foreign citizens: Not needed”
+- `entry-requirements.json` US→MK, GB→MK, CA→MK, AU→MK, NZ→MK, JP→MK, KR→MK, SG→MK and 56 more: “не подолго од 90 дена во кој било период од 180 дена”
+- `entry-requirements.json` US→MK, GB→MK, CA→MK, AU→MK, NZ→MK, JP→MK, KR→MK, SG→MK and 56 more: “најдоцна до истекот на рокот од 90 дена во текот на 180 дена”
+- `entry-requirements.json` AT→AE, BE→AE, BG→AE, HR→AE, CY→AE, CZ→AE, DK→AE, EE→AE and 13 more: “may stay in the territory of the UAE for a maximum period of 90 days in any 180-day period”
+- `entry-requirements.json` ME→AE: “may enter, pass through and stay in the United Arab Emirates for up to 90 days, with a valid travel document, without a visa”
+- `entry-requirements.json` AT→BA: “Državljani Republike Austrije izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od…”
+- `entry-requirements.json` BE→BA: “Državljani Kraljevine Belgije izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od…”
+- `entry-requirements.json` BG→BA: “Državljani Republike Bugarske izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od…”
+- `entry-requirements.json` HR→BA: “Državljani Republike Hrvatske izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od…”
+- `entry-requirements.json` CY→BA: “Državljani Republike Kipar izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od še…”
+- `entry-requirements.json` CZ→BA: “Državljani Češke Republike izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od še…”
+- `entry-requirements.json` DK→BA: “Državljani Kraljevine Danske izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od …”
+- `entry-requirements.json` EE→BA: “Državljani Republike Estonije izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od…”
+- `entry-requirements.json` FI→BA: “Državljani Republike Finske izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od š…”
+- `entry-requirements.json` GR→BA: “Državljani Republike Grčke izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od še…”
+- `entry-requirements.json` HU→BA: “Državljani Mađarske izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od šest mjes…”
+- `entry-requirements.json` IE→BA: “Državljani Irske izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine I mogu boraviti najviše do 90 (devede…”
+- `entry-requirements.json` LV→BA: “Državljani Republike Letonije izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od…”
+- `entry-requirements.json` LT→BA: “Državljani Republike Litvanije izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu o…”
+- `entry-requirements.json` LU→BA: “Državljani Velikog Vojvodstva Luksemburga izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, …”
+- `entry-requirements.json` MT→BA: “Državljani Republike Malta izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od še…”
+- `entry-requirements.json` PL→BA: “Državljani Republike Poljske izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od …”
+- `entry-requirements.json` PT→BA: “Državljani Republike Portugal izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od…”
+- `entry-requirements.json` RO→BA: “Državljani Rumunije izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od šest mjes…”
+- `entry-requirements.json` SK→BA: “Državljani Slovačke Republike izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od…”
+- `entry-requirements.json` SI→BA: “Državljani Republike Slovenije izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu o…”
+- `entry-requirements.json` SE→BA: “Državljani Kraljevine Švedske izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od…”
+- `entry-requirements.json` AL→BA: “Državljani Albanije, nosioci važećih običnih pasoša , izuzimaju se od obaveze pribavljanja viza u svrhu ulaska, izlaska, tranzita i boravka na teritoriji Bos…”
+- `entry-requirements.json` AD→BA: “Državljani Kneževine Andore izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od š…”
+- `entry-requirements.json` GE→BA: “Državlјani Republike Gruzije izuzimaju se od obaveze pribavlјanja vize za ulazak, izlazak, tranzit i boravak na teritoriji Bosne i Hercegovine u trajanju do …”
+- `entry-requirements.json` MD→BA: “Državljanima Republike Moldavije, prilikom ulaska, izlaska ili prelaska preko teritorije BiH nije potrebna viza za boravak do 90 dana u periodu od 180 dana”
+- `entry-requirements.json` MC→BA: “Državljani Kneževine Monako izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od š…”
+- `entry-requirements.json` ME→BA: “Državljani Crne Gore izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od šest mje…”
+- `entry-requirements.json` MK→BA: “Državljani Republike Sjeverne Makedonije, nosioci pasoša i biometrijskih ličnih karata izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska prek…”
+- `entry-requirements.json` SM→BA: “Državljani Republike San Marino izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu …”
+- `entry-requirements.json` RS→BA: “Državljani Republike Srbije izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od š…”
+- `entry-requirements.json` VA→BA: “Državljani Vatikana nije potrebna viza za ulazak, izlazak, tranzit i boravak na teritoriji Bosne i Hercegovine u trajanju do 90 (devedeset) dana u bilo kojem…”
+- `entry-requirements.json` TR→BA: “Državljani Republike Turske izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od š…”
+- `entry-requirements.json` AM→BA: “Državljanima Republike Armenije, nosiocima važećih običnih i službenih pasoša , prilikom ulaska, izlaska ili prelaska preko teritorije BiH potrebna je viza ”
+- `entry-requirements.json` AZ→BA: “Državljani Azerbejdžana , nosioci običnih pasoša, izuzimaju se od obaveze pribavljanja viza za ulazak, izlazak, tranzit i boravak na teritoriji Bosne i Herce…”
+- `entry-requirements.json` BY→BA: “Državljanima Republike Bjelorusije, nosiocima običnih putnih isprava , prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine potrebna je…”
+- `entry-requirements.json` RU→BA: “U skladu sa navedenim sporazumom državlјani države jedne Strane ulaze, izlaze i borave na teritoriji države druge Strane bez viza, na osnovu važećih dokumena…”
+- `entry-requirements.json` AZ→MK: “Visa for foreign citizens: Needed *Holders of diplomatic and official passports do not require a visa for short-term stays”
+- `entry-requirements.json` IS→ME: “Nationals of Iceland may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa”
+- `entry-requirements.json` IS→ME: “Nationals of Iceland may enter, pass through the territory of and stay in Montenegro up to 30 days, without a visa, with a valid identity card issued by the …”
+- `entry-requirements.json` NO→ME: “Citizens of Norway can enter, transit through the territory and stay in Montenegro for up to 90 days, with a valid travel document, without a visa”
+- `entry-requirements.json` NO→ME: “Citizens of Norway can enter, transit through the territory and stay in Montenegro for up to 30 days, without a visa, with a valid identity card issued by th…”
+- `entry-requirements.json` LI→ME: “Nationals of Liechtenstein may enter, pass through the territory of and stay in Montenegro up to 90 days, with a valid travel document, without a visa”
+- `entry-requirements.json` LI→ME: “Nationals of Liechtenstein may enter, pass through the territory of and stay in Montenegro up to 30 days, without a visa, with a valid identity card issued b…”
+- `entry-requirements.json` CH→ME: “Nationals of Switzerland may enter, transit through the territory and stay in Montenegro for up to 90 days, with a valid travel document, without a visa”
+- `entry-requirements.json` CH→ME: “Swiss citizens can enter, transit through the territory and stay in Montenegro for up to 30 days, without a visa, with a valid Identity Card issued by the co…”
+- `entry-requirements.json` IS→BA: “Državljani Republike Island izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu od š…”
+- `entry-requirements.json` NO→BA: “Državljani Kraljevine Norveške izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu o…”
+- `entry-requirements.json` LI→BA: “Državljani Kneževine Lihtenštajn izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u periodu…”
+- `entry-requirements.json` CH→BA: “Državljani Švajcarske Konfederacija izuzeti su od viznog režima prilikom ulaska, izlaska ili prelaska preko teritorije Bosne i Hercegovine do 90 dana, u peri…”
+- `entry-requirements.json` AL→MU: “Albania: Visa for sixty days on arrival”
+- `entry-requirements.json` AD→MU: “Andorra: Visa for sixty days on arrival”
+- `entry-requirements.json` AM→MU: “Armenia: Visa for sixty days on arrival”
+- `entry-requirements.json` AZ→MU: “Azerbaijan: Visa for sixty days on arrival”
+- `entry-requirements.json` BY→MU: “Belarus: Visa for sixty days on arrival”
+- `entry-requirements.json` BA→MU: “Bosnia & Herzegovina: Visa for sixty days on arrival”
+- `entry-requirements.json` MK→MU: “Macedonia (ex Yugoslav Rep.): Visa for sixty days on arrival”
+- `entry-requirements.json` MD→MU: “Moldova: Visa for sixty days on arrival”
+- `entry-requirements.json` RS→MU: “Serbia: Visa for sixty days on arrival”
+- `entry-requirements.json` VA→SV: “Santa Sede (Ciudad del Vaticano)”
+- `entry-requirements.json` TR→SV: “Türkiye (antiguamente Turquía)”
+- `entry-requirements.json` BY→SV: “Belarus, Republica de (Bielorrusia)”
+- `entry-requirements.json` MD→SV: “Moldova, República de (Moldavia)”
+- `entry-requirements.json` AT→PY, BE→PY, BG→PY, CY→PY, HR→PY, DK→PY, SI→PY, ES→PY and 37 more: “NO REQUIERE VISA: para permanencia de hasta 90 días”
+- `entry-requirements.json` KR→PY, SG→PY, MY→PY: “NO REQUIERE VISA: para permanencia de hasta 30 días”
+- `entry-requirements.json` GB→BO: “REINO UNIDO GRAN BRETAÑA IRLANDA DEL NORTE”
+- `customs-items.json` cash-jp: “Declaration of Carrying of Means of Payment, etc”
+- `customs-items.json` injectable-medication-br: “medicamentos, incluindo os biológicos”
+- `customs-items.json` injectable-medication-sg: “already in use when you arrive, such as implanted devices or those already in contact with your skin or eyes”
+- `customs-items.json` controlled-medication-au: “Prescription medicines such as morphine, oxycodone, methadone, methylphenidate, Adderall, and benzodiazepines are all covered by the traveller exemption”
+- `customs-items.json` controlled-medication-au: “requires a prescription from your medical doctor”
+- `customs-items.json` meat-dairy-cn: “动物源性乳及乳制品，包括生乳、巴氏杀菌乳、灭菌乳、调制乳、发酵乳，奶油、黄油、奶酪、炼乳等乳制品”
+- `customs-items.json` e-cigarettes-jp: “The quantity of cartridges that can clear customs with only a customs check is one month's supply, based on directions for use”
+- `customs-items.json` controlled-medication-cn: “Category I psychotropic substances”
+- `customs-items.json` controlled-medication-cn: “For treatment of illness, an individual, upon presenting a medical diagnosis certificate issued by a medical institution and personal ID, may carry narcotic …”
+- `customs-items.json` alcohol-ie: “You are not entitled to alcohol or tobacco allowances if you are under 17”
+- `customs-items.json` cannabis-ie: “It is an offence to import or carry on your person, controlled substances (drugs) when travelling to or from Ireland. Examples of controlled substances are c…”
+- `customs-items.json` controlled-medication-ge: “narcotic drugs strictly restricted for free circulation”
+- `customs-items.json` controlled-medication-ge: “Narcotic drugs, psychotropic substances, Precursors and Narcological Assistance”
+- `customs-items.json` controlled-medication-ge: “medications subject to the special control”
+- `customs-items.json` controlled-medication-ge: “A person can bring into the territory of Georgia 31 days’ supply of narcotic drugs and psychotropic substances for personal use (except of “narcotic drugs st…”
+- `customs-items.json` controlled-medication-mv: “Controlled substances — including opioids, benzodiazepines, and stimulants — require particular documentation. Some substances that are legal by prescription…”
+- `customs-items.json` controlled-medication-mv: “Importation of controlled drug for prescription should be limited to 30 days' supply, for patients with chronic illness can be of maximum 90 days' supply”
+- `customs-items.json` controlled-medication-mv: “It is an offense to import any controlled drug into Maldives without obtaining the import certificate from MFDA”
+- `customs-items.json` tobacco-mv: “Up to 200 cigarettes, or 25 cigars, or 250 grams of tobacco”
+- `customs-items.json` tobacco-mv: “will be retained by Customs for a maximum of 30 days”
+- `customs-items.json` drones-mv: “Permits required in advance from MCAA + MNDF. Drones without permits may be held at customs”
+- `customs-items.json` drones-mv: “approval from any other relevant parties (e.g. resorts, island or city council)”
+- `customs-items.json` fresh-produce-mv: “all plants, parts of plants, plant products”
+- `customs-items.json` fresh-produce-mv: “raw flora and bouquets and garlands made from fresh flora weighing less than 500 grams may be imported without a phytosanitary certificate”
+- `customs-items.json` fresh-produce-mv: “all parts of Maldivian coconut trees (cocos nucifera) except timber”
+- `customs-items.json` prescription-medication-tw: “maximum 12 units per type, 36 total units combined”
+- `customs-items.json` prescription-medication-tw: “restricted to a 2-month supply”
+- `customs-items.json` cannabis-tw: “Marijuana is still listed under the Category two narcotics in accordance with 'Narcotics Hazard Prevention Act' in Taiwan”
+- `customs-items.json` meat-dairy-tw: “NTD 200,000, regardless of nationality”
+- `customs-items.json` fresh-produce-tw: “Bringing live plants and fresh plant products is prohibited”
+- `customs-items.json` cash-al: “are obliged to declare the amounts in cash, any type of instrument negotiable of the holder, metals or precious stones, valuables and antiques, starting from…”
+- `customs-items.json` weapons-al: “special import provisions are enforced for strategic sectors such as weapons, munitions”
+- `customs-items.json` controlled-medication-lk: “the provisions of this Chapter or a licence of the Director”
+- `customs-items.json` tobacco-pe: “Cajetillas de cigarrillos (20 unidades). Cigarros puros (50 unidades) o tabaco picado o en hierbas para fumar (250 gramos)”
+- `customs-items.json` cash-pe: “Bienes o artículos que debes declarar”
+- `customs-items.json` prescription-medication-pe: “reasonable quantity for your trip”
+- `customs-items.json` meat-dairy-pe: “Embutidos (excepto de origen porcino) hasta 10 Kg”
+- `customs-items.json` meat-dairy-pe: “Comida rápida enlatada (excepto de porcino) hasta 2 Kg”
+- `customs-items.json` controlled-medication-do: “debiendo mostrarse la receta médica, en caso de que se trate de sustancias psicotrópicas”
+- `customs-items.json` cash-ar: “igual o superior al equivalente a USD 10.000”
+- `customs-items.json` cannabis-ar: “CANNABIS (Marihuana), su resina (Haschisch) y los extractos y tinturas de Cannabis — LISTA I. LEY 17818/68”
+- `customs-items.json` cannabis-ar: “extractos y tinturas de Cannabis”
+- `customs-items.json` alcohol-cr: “Quinientos gramos de tabaco elaborado, cinco litros de vino, aguardiente o licor, por cada viajero mayor de edad y hasta dos kilogramos de golosinas”
+- `customs-items.json` tobacco-cr: “Quinientos gramos de tabaco elaborado”
+- `customs-items.json` tobacco-cr: “por cada viajero mayor de edad”
+- `customs-items.json` cash-cr: “Al ingresar en el país o salir de él, toda persona, nacional o extranjera, estará obligada a declarar el dinero efectivo o los títulos valores que porte, si …”
+- `customs-items.json` cash-cr: “(US$10.000,00) o su equivalente en otra moneda”
+- `customs-items.json` cash-cr: “Declaración de dinero en efectivo y/o títulos valores”
+- `customs-items.json` cash-cr: “la pérdida inmediata del dinero en efectivo y/o títulos valores a favor del Instituto Costarricense sobre Drogas”
+- `customs-items.json` prescription-medication-cr: “Medicamentos, alimentos, instrumentos, aparatos médicos, higiénicos o de tocador y artículos desechables utilizados con estos, en cantidades acordes con las …”
+- `customs-items.json` controlled-medication-cr: “El Ministerio de Salud autorizará a los viajeros el ingreso o salida de preparados farmacéuticos que contienen estupefacientes o psicotrópicos cuando la cant…”
+- `customs-items.json` controlled-medication-cr: “Si las cantidades son menores a un mes de tratamiento, esta autorización no es requerida. Los viajeros internacionales no pueden llevar consigo los estupefac…”
+- `customs-items.json` controlled-medication-cr: “Lista de sustancias sometidas a fiscalización nacional”
+- `customs-items.json` injectable-medication-cr: “instrumentos, aparatos médicos”
+- `customs-items.json` injectable-medication-cr: “y artículos desechables utilizados con estos, en cantidades acordes con las circunstancias y necesidades del viajero”
+- `customs-items.json` weapons-cr: “Escopeta o rifles de caza y quinientos tiros, incluso hasta cuatro armas diferentes para cacería o para tiro al blanco”
+- `customs-items.json` weapons-cr: “siempre que se demuestre, en forma fehaciente, que el viajero es turista. El ingreso de armas y municiones estará sujeto a las regulaciones que sobre esta ma…”
+- `customs-items.json` duty-free-goods-cr: “Las mercancías que la persona traiga consigo, que no constituyan equipaje, no estarán sujetas al pago de tributos hasta por un monto de quinientos pesos cent…”
+- `customs-items.json` duty-free-goods-cr: “Para estos efectos, la persona deberá permanecer un mínimo de setenta y dos horas fuera del país y no tendrá derecho a disfrutar, de nuevo, de este beneficio…”
+- `customs-items.json` prescription-medication-qa: “Some prescribed and over-the-counter medicines may be controlled substances in Qatar. If you need to bring controlled or prescription medication into Qatar, …”
+- `customs-items.json` cash-me: “novac, čekovi, hartije od vrijednosti na donosioca, dragocjeni metali ili drago kamenje”
+- `customs-items.json` controlled-medication-me: “Lice koje prelazi državnu granicu može da posjeduje lijek koji sadrži drogu u količini potrebnoj za ličnu terapiju, za period od najviše 30 dana na osnovu po…”
+- `customs-items.json` controlled-medication-me: “Potvrda o neophodnosti posjedovanja lijeka ne može biti starija od 90 dana”
+- `customs-items.json` controlled-medication-me: “You must declare any prescription medication containing narcotics to customs on arrival”
+- `customs-items.json` controlled-medication-me: “may lead to confiscation and legal action”
+- `customs-items.json` cannabis-me: “Zabranjena je upotreba, proizvodnja, promet, posjedovanje droga za ličnu upotrebu”
+- `customs-items.json` cannabis-me: “Illegal drugs, including cannabis, carry severe penalties”
+- `customs-items.json` alcohol-jm: “1 litre of Spirits; 1 litre of Wine”
+- `customs-items.json` tobacco-jm: “200 sticks of cigarettes or 50 sticks of cigars or 230g of Tobacco”
+- `customs-items.json` alcohol-bs: “DUTY FREE ALLOWANCES FOR ALL TRAVELLERS — Alcoholic Beverages not exceeding one quart of spirits and one quart of wine (Adults only)”
+- `customs-items.json` alcohol-bs: “every traveling adult, either visitor or resident”
+- `customs-items.json` alcohol-bs: “in addition to the entitled exemption”
+- `customs-items.json` alcohol-bs: “All beer imported into the country is dutiable at a rate of $10 per imperial gallon or $18 per case”
+- `customs-items.json` weapons-bs: “ist nur mit besonderer Einfuhrgenehmigung erlaubt”
+
