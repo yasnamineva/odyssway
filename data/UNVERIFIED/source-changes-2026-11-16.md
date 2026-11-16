@@ -1,0 +1,1103 @@
+# Source changes — 2026-11-16
+
+Official sources changed (or could not be checked). A human must review
+each item, update the affected data, and bump `verified_at`.
+
+Watched 1618 sources: 208 changed, 792 first snapshots, 10 volatile (differ between fetches, not flagged), 209 newly unmonitorable, 129 still unmonitorable (unreachable, JS-rendered or bot-challenged).
+
+## Changed
+
+- **ec-short-stay-calculator-page** — CONTENT CHANGED. Review https://home-affairs.ec.europa.eu/policies/schengen/border-crossing/short-stay-calculator_en and re-verify: engine rules, /rules/90-180-rule.
+  - Removed: “&nbsp; See all Schengen area History of Schengen Schengen Governance Temporary Reintroduction of Border Control &nbsp; See all Smart Borders European Travel Information and Authorisation System (ETIAS) Entry/Exit System (EES) &nbsp; See all Travel and residence documents Visa …”
+  - Added: “&nbsp; See all Schengen area History of Schengen Schengen Governance Temporary Reintroduction of Border Control &nbsp; See all Smart Borders European Travel Information and Authorisation System (ETIAS) Entry/Exit System (EES) &nbsp; See all Travel and residence documents Visa …”
+- **uk-standard-visitor** — CONTENT CHANGED. Review https://www.gov.uk/standard-visitor-visa and re-verify: data/entry-requirements.json (UK Standard Visitor route, ETA, stay length, documents).
+  - Removed: “Accept additional cookies Reject additional cookies View cookies Hide cookie message Skip to main content GOV.UK Navigation menu Menu Menu Services and information Benefits Births, death, marriages and care Business and self-employed Childcare and parenting Citizenship and liv…”
+  - Added: “Accept additional cookies Reject additional cookies View cookies Hide cookie message Skip to main content GOV.UK Navigation menu Menu Menu Services and information Benefits Births, death, marriages and care Business and self-employed Childcare and parenting Citizenship and liv…”
+- **eulisa-home** — CONTENT CHANGED. Review https://www.eulisa.europa.eu/ and re-verify: eu-LISA announcements — EES/ETIAS operational news and official EU traveler app releases (tracked competitive risk per AGENTS.md §11).
+  - Removed: “eu-LISA | European Union Agency for the Operational Management of Large-Scale IT Systems in the Area of Freedom, Security and Justice Skip to main content eu-LISA Menu Main navigation Home About Open submenu About Back About Who We Are Discover eu-LISA Access to Documents Open…”
+  - Removed: “Type Highlight Publication Date 19/10/2026 eu-LISA Management Board reviews implementation of key EU IT systems and future interoperability roadmap The Management Board of eu-LISA met in Strasbourg on 23–24 September 2026 to review progress across the Agency’s portfolio of lar…”
+  - Removed: “The Management Board reviewed the state of play of the Agency’s major operational systems and development programmes, including Eurodac and DubliNet, the...”
+  - Removed: “Type Highlight Publication Date 24/09/2026 eu-LISA and ENISA strengthen cooperation with new Memorandum of Understanding eu-LISA and the European Union Agency for Cybersecurity ( ENISA ) signed a new Memorandum of Understanding (MoU) in Tallinn on 16 September 2026, further st…”
+  - Removed: “Type Highlight Publication Date 16/09/2026 Opening speech by eu-LISA Executive Director Tillmann Keber at the Industry Roundtable 2026: Data Management On 9 September 2026 in Strasbourg, eu-LISA Executive Director Tillmann Keber opened the eu-LISA Industry Roundtable 2026: Dat…”
+  - Removed: “Good morning to all of you, and welcome to this year’s eu-LISA Industry Roundtable.”
+  - Removed: “Type Highlight Publication Date 09/09/2026 See all updates Publications eu-LISA - Year in Review 2025 Publication Type Information Materials Publication Date 21/08/2026 EES Quarterly Report - Q1 2026 Publication Type Reports Publication Date 10/07/2026 Eurodac Annual Statistic…”
+  - Added: “eu-LISA | European Union Agency for the Operational Management of Large-Scale IT Systems in the Area of Freedom, Security and Justice Skip to main content eu-LISA Menu Main navigation Home About Open submenu About Back About Who We Are Discover eu-LISA Access to Documents Open…”
+  - Added: “Organised by the German Federal Criminal Police Office (BKA), the conference brought together senior representatives of law enforcement and security authorities, policymakers and experts to discuss emerging threats and the future of security cooperation.”
+  - Added: “Under the theme “New Threats, New Strategies: A...”
+  - Added: “Type Highlight Publication Date 16/11/2026 eu-LISA strengthens inter-agency cooperation through staff exchanges In autumn 2026, eu-LISA welcomed colleagues from Frontex , Europol , the European Union Drugs Agency (EUDA) and the European Union Agency for Asylum (EUAA) as part o…”
+  - Added: “During their visits to eu-LISA’s sites in Tallinn and Strasbourg, participants gained first-hand insights into the Agency’s work, exchanged knowledge and...”
+  - Added: “Type Highlight Publication Date 06/11/2026 eu-LISA sets strategic priorities for 2027 eu-LISA's Management Committee met in Tallinn on 6 and 7 October 2026 for a strategic retreat to discuss the Agency's priorities for 2027, review key operational and organisational developmen…”
+  - Added: “Type Highlight Publication Date 19/10/2026 eu-LISA and ENISA strengthen cooperation with new Memorandum of Understanding eu-LISA and the European Union Agency for Cybersecurity ( ENISA ) signed a new Memorandum of Understanding (MoU) in Tallinn on 16 September 2026, further st…”
+  - Added: “Type Highlight Publication Date 16/09/2026 See all updates Publications eu-LISA - Year in Review 2025 Publication Type Information Materials Publication Date 21/08/2026 EES Quarterly Report - Q1 2026 Publication Type Reports Publication Date 10/07/2026 Eurodac Annual Statistic…”
+- **ca-eta-eligibility** — CONTENT CHANGED. Review https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=1016&top=16 and re-verify: data/entry-requirements.json (Canada eTA eligibility, stay length).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **au-eta-subclass-601** — CONTENT CHANGED. Review https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601 and re-verify: data/entry-requirements.json (Australia ETA subclass 601 and eVisitor terms).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **ng-tourism-visa** — CONTENT CHANGED. Review https://immigration.gov.ng/info-center/tourism-visa-f5a/ and re-verify: data/entry-requirements.json (Nigeria Tourism Visa F5A e-Visa terms).
+  - Removed: “Previous Study Tour Visa – F7G Next Transit Visa – F3B Business (Frequently Travelled Executives) Visa – F4C March 30, 2025 Visiting (Single Entry) Visa – F6A March 30, 2025 Related Posts Events News Training NIS CHARGES 14TH COMMAND COURSE GRADUATES ON SMART BORDERS AND TECHN…”
+  - Removed: “NIS Headquarters Umar Musa Yar Adu'a Express Way, Airport Road, Sauka, Abuja, FCT, Nigeria +234-912-1900-655 nis.servicom@nigeriaimmigration.gov.ng Site Links About Us Contact Service Level Agreement Visa Application Privacy Policy Terms and Conditions NIS Headquarters Copyrig…”
+  - Added: “Previous Study Tour Visa – F7G Next Transit Visa – F3B Business (Frequently Travelled Executives) Visa – F4C March 30, 2025 Visiting (Single Entry) Visa – F6A March 30, 2025 Related Posts Uncategorized NIS Conducts Routine System Maintenance News Press release NIS ADDRESSES TE…”
+- **tr-visa-information** — CONTENT CHANGED. Review https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa and re-verify: data/entry-requirements.json (Turkey visa-exemption regime, Law No. 6458; also the source for China's very recent 2026-01-02 visa-free grant — worth periodic recheck given how new that change is). Note: evisa.gov.tr — the domain named in secondary sources as Turkey's e-Visa portal — currently redirects to a private company; not used as a citation, but worth periodically re-checking..
+  - Removed: “Ordinary passport holders can get their 15 day period visa from Turkish diplomatic representations abroad.”
+  - Removed: “Ali Özel Foreign Policy Synopsis Main Issues Regions International Organisations Overseas Promotion and Cultural Affairs Frequently Asked Questions Protocol Protocol Consular Info For Foreigners Holiday Enlightenment Project Diplomatic Missions in Türkiye Frequently Asked Ques…”
+  - Added: “Ordinary and official passport holders can get their visas from Turkish diplomatic or consular representations abroad.”
+  - Added: “Ordinary passport holders who hold a valid Schengen members or USA, UK, Ireland visa or residence permit may get their visas via the website www.evisa.gov.tr provided that they meet certain conditions.”
+  - Added: “Ali Özel Foreign Policy Synopsis Main Issues Regions International Organisations Overseas Promotion and Cultural Affairs Frequently Asked Questions Protocol The Turkish Flag and The Turkish National Anthem (Independence March) Diplomatic Portal-Online Desk Forms Diplomatic Lis…”
+- **sg-ica-entering-singapore** — CONTENT CHANGED. Review https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/entry-requirements and re-verify: data/entry-requirements.json (Singapore ICA visa-required country list — exact per-nationality stay lengths for several countries are not published by ICA and were sourced from converging secondary reporting; recheck if precision matters).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **vn-evisa-portal** — CONTENT CHANGED. Review https://evisa.xuatnhapcanh.gov.vn/ and re-verify: data/entry-requirements.json (Vietnam e-Visa portal — unilateral exemption + e-visa nationality lists). Note: newer evisa.gov.vn/thithucdientu.gov.vn domains have broken SSL certs as of verification..
+  - Removed: “Vietnam portal on Immigration/Vietnam visa - National portal on Immigration Home E-visa Invite, sponsor enter VietNam Search E-visa search Invite, sponsor enter VietNam E-visa support Login &nbsp; VIETNAM IMMIGRATION DEPARTMENT NOTICE From 08:00 on 11/11/2024 (GMT+7) , the Vie…”
+  - Removed: “&nbsp;Please visit these new addresses to submit your application and check the results.”
+  - Removed: “&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The Vietnam Immigration portal provides the following services: E-visa issuance E-transaction applying for visa at oversea Vietnamese representative&nbsp;offices and Checkpoints Declare temporary resi…”
+  - Removed: “&nbsp; &nbsp; &nbsp; &nbsp; Copyright by Vietnam Immigration Department (44 - 46, Tran Phu street, Ba Dinh Dist, Ha Noi).”
+  - Added: “Vietnam portal on Immigration/Vietnam visa - National portal on Immigration Home Search E-visa support Login You do not have the roles required to access this portlet.”
+  - Added: “You do not have the roles required to access this portlet.”
+  - Added: “Copyright by Vietnam Immigration Department (44 - 46, Tran Phu street, Ba Dinh Dist, Ha Noi).”
+- **cn-nia-visa-free-list** — CONTENT CHANGED. Review https://www.nia.gov.cn/n741440/n741577/c1731154/content.html and re-verify: data/entry-requirements.json (China NIA unilateral visa-free list).
+  - Removed: “国家移民管理局 中文 English Русский Français Español العربية 无障碍浏览 首页 组织机构 新闻发布 政务公开 办事服务 互动交流 概况信息 国家移民管理局（中华人民共和国出入境管理局）于2018年4月2日组建成立，是公安部管理的国家局，为副部级。国家移民管理局领导管理全国出入境边防检查机构、边境管理机构各项工作，指导管理各省、自治区、直辖市公安机关出入境管理机构业务工作。 机构职责 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;国家移民管理局内设：综合司(移民事务国际合作司)、政…”
+  - Removed: “09-03 人民日报：北京口岸今年出入境人员总量突破15...”
+  - Removed: “08-26 新华社：国门之心 同心同行 08-21 通知公告 国家移民管理局2027年度公开遴选公务员...”
+  - Removed: “10-26 国家移民管理局新闻发布会采访通知 10-18 国家移民管理机构2027年度考试录用公务...”
+  - Removed: “10-13 国家移民管理局关于全国推广网上办理外国人...”
+  - Removed: “09-21 政策文件 国务院关于出境入境管理的规定 07-31 《公安机关人民警察证使用管理规定》（公安...”
+  - Removed: “07-07 国务院关于对外投资的规定 06-01 中华人民共和国反外国不当域外管辖条例 04-13 中共中央发出通知 部署党的二十一大代表选举工作 二十一大代表名额共2360名，由全国38个选举单位选举产生 &nbsp;&nbsp; 二十一大代表选举工作从现在开始，到明年6月底前结束 |&nbsp; 中央组织部答问 三季度1.92亿人次出入境 免签入境外国人同比增长24.1% 全球公共安全合作论坛（连云港）2026年大会移民管理合作分论...”
+  - Removed: “全球公共安全合作论坛（连云港）2025年大会开幕 内地与港澳特区出入境管理部门“1+2” 联系协作机制会议在渝...”
+  - …and 36 more removed
+  - Added: “单方面免签国家名单 中文 English Русский Français Español العربية 无障碍浏览 首页 组织机构 新闻发布 政务公开 办事服务 互动交流 当前位置： 首页 &gt; 政务公开 &gt; 政策解读 &gt;&nbsp; 正文 单方面免签国家名单 2026-02-17 来源：国家移民管理局网站 【字体： 大 中 小 】 打印本页 分享到: （根据外交部对外公布信息整理，截至2026年2月17日） &nbsp; 欧洲（35国）： 法国、德国、意大利、荷兰、西班牙、瑞士、爱尔兰、匈牙利、奥地利、比利时、卢森堡、波兰、斯…”
+- **data-f2acc12473** — CONTENT CHANGED. Review https://www.cbp.gov/travel/us-citizens/know-before-you-go/prohibited-and-restricted-items and re-verify: customs-items.json:prescription-medication-us, customs-items.json:meat-dairy-us, customs-items.json:fresh-produce-us.
+  - Removed: “Citizens/Lawful Permanent Residents Know Before You Go Prohibited and Restricted Items Skip to body content Travel Preclearance General Aviation For International Visitors Biometrics Customer Service For U.S.”
+  - Removed: “Citizens/Lawful Permanent Residents Mobile Passport Control Western Hemisphere Travel Initiative Advance Parole, Reentry Permit, and Refugee Travel Documentation for Returning Aliens Residing in the U.S Know Before You Go Before Your Trip Shopping Abroad Prohibited and Restric…”
+  - Added: “Citizens/Lawful Permanent Residents Know Before You Go Prohibited and Restricted Items Skip to body content Travel General Aviation Preclearance For International Visitors Biometrics Customer Service For U.S.”
+  - Added: “Citizens/Lawful Permanent Residents Mobile Passport Control Western Hemisphere Travel Initiative Advance Parole, Reentry Permit, and Refugee Travel Documentation for Returning Aliens Residing in the U.S Know Before You Go Before Your Trip Shopping Abroad Prohibited and Restric…”
+- **data-8915f944e3** — CONTENT CHANGED. Review https://www.cbp.gov/travel/clearing-cbp/cbp-reminds-travelers-canada-marijuana-remains-illegal-united-states and re-verify: customs-items.json:cannabis-us.
+  - Removed: “Skip to body content Travel Preclearance General Aviation For International Visitors Biometrics Customer Service For U.S.”
+  - Removed: “Ready Lanes Traveler Entry Forms Passenger Name Record (PNR) For Travel Industry Personnel For Canadian and Mexican Citizens Pleasure Boats Preventing International Child Abduction Search Authority eBadge Trusted Worker Program Travel Skip to body content Preclearance General …”
+  - Added: “Skip to body content Travel General Aviation Preclearance For International Visitors Biometrics Customer Service For U.S.”
+  - Added: “Ready Lanes Traveler Entry Forms Passenger Name Record (PNR) For Travel Industry Personnel For Canadian and Mexican Citizens Pleasure Boats Preventing International Child Abduction Search Authority eBadge Trusted Worker Program Travel Skip to body content General Aviation Prec…”
+- **nz-nzeta-visa-waiver-list** — CONTENT CHANGED. Review https://www.immigration.govt.nz/new-zealand-visas/visas/visa/nzeta and re-verify: data/entry-requirements.json (New Zealand NZeTA + visa-waiver country list, IVL fee).
+  - Removed: “New Zealand Electronic Travel Authority (NZeTA) &raquo; Immigration New Zealand New Zealand Electronic Travel Authority (NZeTA) :: Immigration New Zealand Skip to main content Skip to main navigation Skip to secondary navigation Skip to search Process to apply For employers Lo…”
+  - Added: “New Zealand Electronic Travel Authority (NZeTA) &raquo; Immigration New Zealand New Zealand Electronic Travel Authority (NZeTA) :: Immigration New Zealand Skip to main content Skip to main navigation Skip to secondary navigation Skip to search Application system issue Issued: …”
+  - Added: “The processing of applications has resumed.”
+  - Added: “Impact of Microsoft outage Planned upgrade Issued: Monday 16 Nov 2026, 04:00 pm NZDT From 05:00 to 07:30 Thursday 19 November (NZDT), you cannot access some visa applications and application forms.”
+  - Added: “Wait for 30 minutes and try again.”
+  - Added: “Check the applications affected by this upgrade: Planned upgrades for 2026 Process to apply For employers Login Visit Toro Visit Toro Learn what you need to do to visit New Zealand.”
+- **data-67cad9183f** — CONTENT CHANGED. Review https://www.cbsa-asfc.gc.ca/travel-voyage/cannabis-eng.html and re-verify: customs-items.json:cannabis-cbd-ca.
+  - Removed: “Travellers : Cannabis at the border Skip to main content Skip to "About this site" Canada.ca Services Departments Language selection Français Search and menus Search and menus Canada Border Services Agency Search Search website Search Topics menu Travellers Import and Export S…”
+  - Removed: “Transporting cannabis across the border in any form – including any oils containing THC or cannabidiol (CBD) - without a permit or exemption authorized by Health Canada remains a serious criminal offence subject to arrest and prosecution, despite the legalization of cannabis i…”
+  - Removed: “The prohibition applies regardless of: The amount of cannabis you have with you, Whether you hold a medical document authorizing the use of cannabis for medical purposes, Whether you are travelling from an area with legalized or decriminalized cannabis.”
+  - Removed: “If you are entering Canada from another country, remember: if you have cannabis with you in any form, you must declare it to the Canada Border Services Agency.”
+  - Removed: “Not declaring cannabis in your possession at the Canadian border could also lead to arrest and prosecution.”
+  - Removed: “If you are leaving Canada, remember: you may not take cannabis out of the country either.”
+  - Removed: “You may be subject to criminal charges if you attempt to travel to other countries with any amount of cannabis in your possession.”
+  - Removed: “Only Health Canada retains the authority to issue permits or grant exemptions to import or export cannabis.”
+  - …and 11 more removed
+  - Added: “Crossing the Canadian border with cannabis Skip to main content Skip to About this site Language selection Français fr / Gouvernement du Canada Search Search CBSA Search Menu Main Menu Jobs and the workplace Immigration and citizenship Travel and tourism Business and industry …”
+  - Added: “This applies whether you are entering or leaving the country.”
+  - Added: “On this page Know the rules before you travel Travelling with medical cannabis or prescription drugs Canadian penalties for crossing the border with cannabis Penalties in other countries Related links Know the rules before you travel Taking cannabis across the border is a seri…”
+  - Added: “You cannot bring cannabis across the border, even if you are travelling to or from a place where cannabis is legal or decriminalized.”
+  - Added: “This restriction applies to all forms of cannabis, including: edibles extracts topicals products containing cannabidiol ( CBD ) Travelling with medical cannabis or prescription drugs You cannot cross the border with cannabis for medical purposes in any form, including CBD, unl…”
+  - Added: “Note: A medical document to use cannabis for medical purposes in Canada is not valid for crossing the border.”
+  - Added: “Prescription drugs You are not permitted to enter Canada with prescription drugs containing cannabis, such as Epidiolex or Sativex, unless you meet the specific requirements set by Health Canada.”
+  - Added: “Learn about the requirements: Cannabis Regulations (Sections 195.4 and 195.5) Other medical cannabis Travelling with any other cannabis for medical purposes (for example, cannabis authorized under a medical document) requires an exemption issued by Health Canada.”
+  - …and 12 more added
+- **data-64ef24d6ed** — CONTENT CHANGED. Review https://www.ncd.mhlw.go.jp/en/application2.html and re-verify: customs-items.json:prescription-medication-jp, customs-items.json:amphetamine-medication-jp, customs-items.json:stimulant-medication-jp (+2 more).
+  - Removed: “Application Guidance | NARCOTICS CONTROL DEPARTMENT Japanese About Us About Us Drug Crime Investigation Supervision and Instruction on legally distributed narcotics Forensic Science International Cooperation with foreign law enforcement Awareness Raising for Drug Abuse Prevent…”
+  - Removed: “The Online Application System (Trial Operation in November) is now available.”
+  - Removed: “Please access the system through the link below.”
+  - Removed: “Please note that only applicants who meet certain eligibility requirements may use the online application system.”
+  - Removed: “Before applying, carefully read all instructions and notices to confirm that you are eligible.”
+  - Removed: “If you submit an online application without meeting the eligibility requirements, we will reply by email to inform you that your application cannot be accepted and provide guidance on the standard application procedure.”
+  - Removed: “However, please note that we may not be able to respond immediately.”
+  - Removed: “If the deadline for submitting an application through the standard procedure passes while you are waiting for our reply, we will not be able to provide any special accommodations or extensions.”
+  - …and 7 more removed
+  - Added: “Application Guidance | NARCOTICS CONTROL DEPARTMENT Japanese About Us About Us Drug Crime Investigation Supervision and Instruction on legally distributed narcotics Forensic Science International Cooperation with foreign law enforcement Awareness Raising for Drug Abuse Prevent…”
+  - Added: “Consequently, we are unable to process application documents or issue permits.”
+  - Added: “Please wait for further updates while the issue is being resolved.”
+  - Added: “Specifically, for "Application Method A," the system is designed to automatically send an email once the required information is entered and the "submit" button is pressed.”
+  - Added: “Due to the current email system issues, these automated emails are not being sent.”
+  - Added: “As the automated email is required to proceed to the next stage, it is currently impossible to complete the application process.”
+  - Added: “Please also be aware that, even if your date of entry into Japan is two weeks away, it may still not be possible to issue a permit due to these email system issues.”
+  - Added: “Choose how you would like to apply There are two ways to apply.”
+  - …and 15 more added
+- **data-25660e47c7** — CONTENT CHANGED. Review https://www.gob.mx/senasica/documentos/productos-prohibidos?state=published and re-verify: customs-items.json:food-animal-mx, customs-items.json:food-plant-mx.
+  - Removed: “Productos prohibidos | Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria | Gobierno | gob.mx Interruptor de Navegación Trámites Gobierno English Interruptor de Navegación Trámites y servicios Acciones y programas Prensa Blogs Directorio Contacto Ligas de Interé…”
+  - Added: “Productos prohibidos | Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria | Gobierno | gob.mx Interruptor de Navegación Trámites Gobierno English Interruptor de Navegación Trámites y servicios Acciones y programas Prensa Blogs Directorio Contacto Ligas de Interé…”
+- **data-78b0ef0edc** — CONTENT CHANGED. Review https://www.gob.mx/afac/acciones-y-programas/rpas-drones and re-verify: customs-items.json:drones-mx.
+  - Removed: “Directorio Reportes de Seguridad Datos Personales Transparencia Inicio Agencia Federal de Aviación Civil Acciones y Programas > Trámites Aa+ Aa- Publicaciones Recientes Nuevo 2026-11-04 14:02:00 -0600 PARTICIPA AFAC EN EL 39.º SEMINARIO INTERNACIONAL DE SEGURIDAD AÉREA “AMIGOS…”
+  - Added: “Directorio Reportes de Seguridad Datos Personales Transparencia Inicio Agencia Federal de Aviación Civil Acciones y Programas > Trámites Aa+ Aa- Publicaciones Recientes Nuevo 2026-11-13 16:40:00 -0600 AFAC INFORMA SOBRE RESTRICCIONES TEMPORALES EN OPERACIONES AÉREAS HACIA ESTA…”
+- **data-1db569ad6b** — CONTENT CHANGED. Review https://www.customs.go.th/list_strc_simple_neted.php?ini_content=individual_160503_03_160905_01&lang=en&left_menu=menu_individual_submenu_01_160421_01 and re-verify: customs-items.json:alcohol-th, customs-items.json:tobacco-th.
+  - Removed: “Postal Booking Tax Incentives Clinic ระบบ e-Submission Web Traffic Statistics 15,259 Today views 126,005 This month views 25,303,740 Total views For more information please contact.”
+  - Added: “Postal Booking Tax Incentives Clinic ระบบ e-Submission Web Traffic Statistics 14,476 Today views 221,789 This month views 25,399,524 Total views For more information please contact.”
+- **data-682e06be47** — CONTENT CHANGED. Review https://en.fda.moph.go.th/entrepreneurs-narcotic-drugs-and-psychotropic-substances/category/guidance-for-travelers-under-treatment-carrying-personal-medications-containing-narcotic-drugs-into-/ and re-verify: customs-items.json:controlled-medication-th.
+  - Removed: “สำนักงานคณะกรรมการอาหารและยา FOOD AND DRUG ADMINISTRATION Food and Drug Administration, Ministry of Public Health 88/24 Tiwanon Road, Mueang District, Nonthaburi 11000 THAILAND Open : Monday – Friday 08.30 – 16.30 hrs.”
+  - Added: “Last updated : 13 September 2024 สำนักงานคณะกรรมการอาหารและยา FOOD AND DRUG ADMINISTRATION Food and Drug Administration, Ministry of Public Health 88/24 Tiwanon Road, Mueang District, Nonthaburi 11000 THAILAND Open : Monday – Friday 08.30 – 16.30 hrs.”
+- **data-ea582cfddd** — CONTENT CHANGED. Review https://www.customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1 and re-verify: customs-items.json:alcohol-eg, customs-items.json:tobacco-eg, customs-items.json:prescription-medication-eg (+7 more).
+  - Removed: “في جولة ميدانية بميناء &#171;سفاجا&#187; مصلحة الجمارك تستعرض منظومة &quot;الصادر المطور&quot; و&quot;التسجيل المسبق للشحنات الجوية&quot; في ندوة موسعة مع جمعية رجال الأعمال المصريين الصينيين مصلحة الجمارك المصرية عن المصلحة مصلحة الجمارك المصرية كلمة رئيس المصلحة الخطة الاستر…”
+  - Added: “في جولة ميدانية بميناء &#171;سفاجا&#187; مصلحة الجمارك تستعرض منظومة &quot;الصادر المطور&quot; و&quot;التسجيل المسبق للشحنات الجوية&quot; في ندوة موسعة مع جمعية رجال الأعمال المصريين الصينيين مصلحة الجمارك المصرية عن المصلحة مصلحة الجمارك المصرية كلمة رئيس المصلحة الخطة الاستر…”
+- **data-67eaba008f** — CONTENT CHANGED. Review https://www.rra.gov.rw/en/customs-services/travelers/prohibited-goods and re-verify: customs-items.json:cannabis-rw, customs-items.json:weapons-rw.
+  - Removed: “Share this page on social media or print Share this page on X (formerly Twitter) Share this page on Facebook Share this page on WhatsApp Share this page on WhatsApp Web &nbsp;&nbsp; Print this page About RRA Profile News & Events Job Vacancy Announcements Staff Login Staff Log…”
+  - Added: “Share this page on social media or print Share this page on X (formerly Twitter) Share this page on Facebook Share this page on WhatsApp Share this page on WhatsApp Web &nbsp;&nbsp; Print this page About RRA Profile News & Events Job Vacancy Announcements Staff Login Contact U…”
+- **data-b6aac31de0** — CONTENT CHANGED. Review https://www.douane.gov.ma/dms/loadDocument?documentId=94052 and re-verify: customs-items.json:food-animal-ma, customs-items.json:food-plant-ma, customs-items.json:drones-ma.
+- **data-1123fae2b5** — CONTENT CHANGED. Review https://dor.gov.in/international-travellers-requiring-ndps-medical-use and re-verify: customs-items.json:medication-in.
+  - Removed: “Designed, Developed and Hosted by National Informatics Centre (NIC) Last updated on : 2 November, 2026 Visitors Count : 1938026 Your browser does not support Javascript Your browser does not support Javascript Your browser does not support Javascript Your browser does not supp…”
+  - Added: “Designed, Developed and Hosted by National Informatics Centre (NIC) Last updated on : 12 November, 2026 Visitors Count : 1955736 Your browser does not support Javascript Your browser does not support Javascript Your browser does not support Javascript Your browser does not sup…”
+- **data-eb0cf7663e** — CONTENT CHANGED. Review https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201 and re-verify: customs-items.json:cash-in.
+  - Removed: “Contact us on helpdoc[at]rbi[dot]org[dot]in Website last updated date: Nov 09, 2026 Web Information Manager Accessibility Statement (133 KB) | Screen Reader and Accessibility Help Supports: Google Chrome 147+ | Firefox 150+ | Microsoft Edge Version 147+ | Safari 17+”
+  - Added: “Contact us on helpdoc[at]rbi[dot]org[dot]in Website last updated date: Nov 16, 2026 Web Information Manager Accessibility Statement (133 KB) | Screen Reader and Accessibility Help Supports: Google Chrome 147+ | Firefox 150+ | Microsoft Edge Version 147+ | Safari 17+”
+- **data-a0b151e50b** — CONTENT CHANGED. Review https://www.agriculture.gov.au/biosecurity-trade/travelling/bringing-mailing-goods and re-verify: customs-items.json:meat-dairy-au.
+  - Removed: “Submit Skip Skip Page last updated: 12 March 2026 We acknowledge the continuous connection of First Nations Traditional Owners and Custodians to the lands, seas and waters of Australia.”
+  - Added: “Submit Skip Skip Leave this field blank Page last updated: 13 November 2026 We acknowledge the continuous connection of First Nations Traditional Owners and Custodians to the lands, seas and waters of Australia.”
+- **data-68336cdeb9** — CONTENT CHANGED. Review https://www.tga.gov.au/products/unapproved-therapeutic-goods/therapeutic-vaping-goods/vaping-hub/vapes-information-individuals-and-patients and re-verify: customs-items.json:e-cigarettes-au.
+  - Removed: “&nbsp; Product types Therapeutic vaping goods Topics Scheduling (national classification system) Vaping hub Main navigation In this section Vaping hub Changes to the regulation of vapes Vapes: information for individuals and patients Vapes: information for prescribers Vapes: i…”
+  - Added: “&nbsp; Product types Therapeutic vaping goods Topics Scheduling (national classification system) Vaping hub Main navigation In this section Vaping hub Changes to the regulation of vapes Vapes: information for individuals and patients Vapes: information for prescribers Vapes: i…”
+- **data-a1a325946a** — CONTENT CHANGED. Review https://www.agriculture.gov.au/biosecurity-trade/travelling/to-australia and re-verify: customs-items.json:fresh-produce-au.
+  - Removed: “Submit Skip Skip Page last updated: 27 October 2026 We acknowledge the continuous connection of First Nations Traditional Owners and Custodians to the lands, seas and waters of Australia.”
+  - Added: “Submit Skip Skip Leave this field blank Page last updated: 12 November 2026 We acknowledge the continuous connection of First Nations Traditional Owners and Custodians to the lands, seas and waters of Australia.”
+- **data-b34a87124c** — CONTENT CHANGED. Review https://www.dubaicustoms.gov.ae/en/eServices/ServicesForIndividuals/ViewCustomsProcedure/Pages/DeclaringMoneyProcedure.aspx and re-verify: customs-items.json:cash-ae.
+  - Removed: “View Customs Procedure Declaring Money Procedure Sign In Loading Skip to main content Toggle navigation About Us Contact Us Customs Information Search Accessibility العربية Search Search Close Menu Close contrast Bookmark Button العربية Text Size Use the buttons below to incre…”
+  - Added: “View Customs Procedure Declaring Money Procedure Sign In Loading Skip to main content Toggle navigation Home About Us Contact Us Customs Information Search Accessibility العربية Search Search Close Menu Close contrast Bookmark Button العربية Text Size Use the buttons below to …”
+- **data-7fda14a6fe** — CONTENT CHANGED. Review https://www.mpi.govt.nz/bring-send-to-nz/bringing-and-posting-items-to-nz/travelling-to-new-zealand and re-verify: customs-items.json:food-plant-nz.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-94ecd36525** — CONTENT CHANGED. Review https://www.gcaa.gov.ae/en/pages/UASRegistration.aspx/ and re-verify: customs-items.json:drones-ae.
+  - Removed: “× Home Notebook Documents Pages Recent MobileDownTimeConfiguration Content_Tasks PushNotification EPublicationMobileMenu Site contents English (United States) Currently selected Home Accessibility Events All Notifications All Quick Links Abu Dhabi Declaration All Frequently Us…”
+  - Added: “× Home Notebook Documents Pages Recent ImportantLinks MobileDownTimeConfiguration Content_Tasks PushNotification EPublicationMobileMenu Site contents English (United States) Currently selected Home Accessibility Events All Notifications All Quick Links Abu Dhabi Declaration Al…”
+- **data-0effffcdb0** — CONTENT CHANGED. Review https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/cota-de-isencao-duty-free-e-bagagem-tributavel and re-verify: customs-items.json:alcohol-br, customs-items.json:tobacco-br.
+  - Removed: “Abrir menu principal de navegação Receita Federal Termos mais buscados Desenrola Brasil assinatura mei enem imposto de renda Termos mais buscados Desenrola Brasil assinatura mei Assuntos Notícias Todas as notícias Arrecadação e Cobrança Cidadania Fiscal Combate ao contrabando …”
+  - Removed: “Isenções e Outros Benefícios Operador Econômico Autorizado Painel Receita Receita Sintonia Reforma Tributária do Consumo Remessa Conforme CNPJ da Pessoa Física Participação Social Audiências e Consultas Públicas Conselhos e Órgãos Colegiados Congressos Ouvidoria Auditorias Con…”
+  - Removed: “Portais Relacionados Empresas e Negócios ENAT eSocial ITR Orientações para celebração de convênios Nota Fiscal de Serviço Eletrônica (NFS-e) Nota Fiscal Eletrônica Nota Fiscal Eletrônica do Ouro (NF-e Ouro) Portal CNIR Procuradoria da Fazenda (PGFN) Registrato Simples Nacional…”
+  - Removed: “Portais Relacionados Empresas e Negócios ENAT eSocial ITR Orientações para celebração de convênios Nota Fiscal de Serviço Eletrônica (NFS-e) Nota Fiscal Eletrônica Nota Fiscal Eletrônica do Ouro (NF-e Ouro) Portal CNIR Procuradoria da Fazenda (PGFN) Registrato Simples Nacional…”
+  - Added: “Abrir menu principal de navegação Receita Federal Termos mais buscados Desenrola Brasil mei assinatura enem imposto de renda Termos mais buscados Desenrola Brasil mei assinatura Assuntos Notícias Todas as notícias Arrecadação e Cobrança Cidadania Fiscal Combate ao contrabando …”
+  - Added: “Isenções e Outros Benefícios Operador Econômico Autorizado Painel Receita Receita Sintonia Reforma Tributária do Consumo Remessa Conforme CNPJ da Pessoa Física Participação Social Audiências e Consultas Públicas Conselhos e Órgãos Colegiados Congressos Ouvidoria Auditorias Con…”
+  - Added: “Vídeos das Histórias de Trabalho Portais Relacionados Empresas e Negócios ENAT eSocial ITR Orientações para celebração de convênios Nota Fiscal de Serviço Eletrônica (NFS-e) Nota Fiscal Eletrônica Nota Fiscal Eletrônica do Ouro (NF-e Ouro) Portal CNIR Procuradoria da Fazenda (…”
+  - Added: “Vídeos das Histórias de Trabalho Portais Relacionados Empresas e Negócios ENAT eSocial ITR Orientações para celebração de convênios Nota Fiscal de Serviço Eletrônica (NFS-e) Nota Fiscal Eletrônica Nota Fiscal Eletrônica do Ouro (NF-e Ouro) Portal CNIR Procuradoria da Fazenda (…”
+- **data-04d902e5f4** — CONTENT CHANGED. Review https://www.customs.gov.sg/at-customs/arriving-in-singapore/duty-free-concession-gst-relief/ and re-verify: customs-items.json:alcohol-sg, customs-items.json:tobacco-sg.
+  - Removed: “Government officials will never ask for money or bank details via phone call, text message or email.”
+  - Removed: “Only trust SMSes from gov.sg (opens in new tab) SMS Sender ID.”
+  - Removed: “Call ScamShield 1799 or visit the ScamShield (opens in new tab) website.”
+  - Removed: “Back to Arriving in Singapore Other pages in Arriving in Singapore Declaration and Payment of Taxes Customs@SG Web Application Prohibited and Controlled Goods Traveller&#x27;s Guide GST Exemption for Investment Precious Metals Re-importing Goods Sent Overseas for Activities Ha…”
+  - Added: “Government officials will never ask you to transfer money over a phone call.”
+  - Added: “If you&#x27;re unsure if something is a scam, call ScamShield (opens in new tab) at 1799.”
+  - Added: “Back to Arriving in Singapore Other pages in Arriving in Singapore Declaration and Payment of Taxes Customs@SG Web Application Prohibited and Controlled Goods Traveller&#x27;s Guide GST Exemption for Investment Precious Metals Re-importing Goods Sent Overseas for Activities Ha…”
+- **data-24609addbf** — CONTENT CHANGED. Review https://www.auswaertiges-amt.de/de/reiseundsicherheit/saudiarabiensicherheit-202298 and re-verify: customs-items.json:cash-sa, entry-requirements.json:DE>SA.
+  - Removed: “Inhalt Geben Sie ein Suchwort ein Suche Häufig gesucht gunther &nbsp; TÜRKEI &nbsp; Reise und Sicherheit &nbsp; Anzahl gefundener Suchergebnisse: Keine passenden Schlagwörter gefunden.”
+  - Removed: “Reisen und Gesundheit Deutsche Auslandsvertretungen in Ihrem Reiseland Vertretungen Ihres Reiselandes in Deutschland Aktuelle Reisewarnungen Reise- und Sicherheit: Letzte Aktualisierungen Service Service Zurück zur ersten Navigationsebene Zur Übersicht Visa und Aufenthalt Kons…”
+  - Removed: “09.11.2026 Artikel Globale Herausforderungen mit starken Partnern bewältigen: G7 Außenminister treffen sich in Paris In einer Welt vielfältiger Krisen und neuer Herausforderungen ist eine enge Zusammenarbeit der wirtschaftsstärksten Demokratien und ihrer Partner unerlässlich, …”
+  - Removed: “Reiseinfos Siehe Aktuelles Infrastruktur/Verkehr Es gibt ein Inlandsflugnetz und Eisenbahn- (zwischen Riad/Dammam, Riad/Al-Qassim/Hail/Sakaka und Jeddah/Mekka/Medina) sowie Busverbindungen.”
+  - Added: “Inhalt Geben Sie ein Suchwort ein Suche Häufig gesucht TÜRKEI &nbsp; Marokko Tiere einreise &nbsp; Iran &nbsp; Anzahl gefundener Suchergebnisse: Keine passenden Schlagwörter gefunden.”
+  - Added: “Reisen und Gesundheit Deutsche Auslandsvertretungen in Ihrem Reiseland Vertretungen Ihres Reiselandes in Deutschland Aktuelle Reisewarnungen Reise- und Sicherheit: Letzte Aktualisierungen Service Service Zurück zur ersten Navigationsebene Zur Übersicht Visa und Aufenthalt Kons…”
+  - Added: “16.11.2026 Artikel EU -Außenrat in Brüssel: Ukraine und Sicherheit im Schwarzmeerraum im Fokus Außenminister Wadephul reist heute nach Brüssel zum EU -Außenrat und nimmt daneben an einem Schwarzmeer-Ministertreffen teil.”
+  - Added: “Im Mittelpunkt der Gespräche stehen die Unterstützung der Ukraine, sowie die Sicherheit im Schwarzmeerraum.”
+  - Added: “09.11.2026 Artikel Globale Herausforderungen mit starken Partnern bewältigen: G7 Außenminister treffen sich in Paris In einer Welt vielfältiger Krisen und neuer Herausforderungen ist eine enge Zusammenarbeit der wirtschaftsstärksten Demokratien und ihrer Partner unerlässlich, …”
+- **data-2f70a998ae** — CONTENT CHANGED. Review https://www.beacukai.go.id/selamat-datang and re-verify: customs-items.json:cash-id.
+  - Removed: “box-3d-50 Kewajiban Pemberitahuan Barang Demi kenyamanan dan kelancaran perjalanan Anda, setiap penumpang yang memasuki atau meninggalkan wilayah Indonesia wajib menyampaikan daftar barang bawaan melalui formulir pemberitahuan pabean digital.”
+  - Removed: “box-3d-50 Pembebasan Untuk barang keperluan pribadi, Anda diberikan pembebasan sebesar USD500 per penumpang.”
+  - Removed: “Atas kelebihannya akan dimusnahkan oleh petugas box-3d-50 Barang Bawaan berupa Handphone, Komputer Genggam, dan Komputer Tablet (HKT) Jika Anda membawa perangkat telekomunikasi jenis handphone, komputer genggam, dan komputer tablet (HKT) yang diperoleh dari luar negeri dan ber…”
+  - Removed: “box-3d-50 Barang yang Dilarang atau Dibatasi (LARTAS) Beberapa barang dilarang dan/atau dibatasi untuk dibawa masuk ke Indonesia yang selanjutnya disebut sebagai Barang Larangan dan Pembatasan (LARTAS).”
+  - Removed: “Pastikan Anda memeriksa daftar bawaan Anda sebelum melakukan perjalanan ke Indonesia.”
+  - Removed: “Klik Di Sini untuk lihat artikel mengenai larangan dan pembatasan.”
+  - Removed: “box-3d-50 Membawa Uang dalam Jumlah Besar?”
+  - Added: “Kewajiban Pemberitahuan Barang Demi kenyamanan dan kelancaran perjalanan Anda, setiap penumpang yang memasuki atau meninggalkan wilayah Indonesia wajib menyampaikan daftar barang bawaan melalui formulir pemberitahuan pabean digital.”
+  - Added: “Pembebasan Untuk barang keperluan pribadi, Anda diberikan pembebasan sebesar USD500 per penumpang.”
+  - Added: “Atas kelebihannya akan dimusnahkan oleh petugas Barang Bawaan berupa Handphone, Komputer Genggam, dan Komputer Tablet (HKT) Jika Anda membawa perangkat telekomunikasi jenis handphone, komputer genggam, dan komputer tablet (HKT) yang diperoleh dari luar negeri dan berencana men…”
+  - Added: “Barang yang Dilarang atau Dibatasi (LARTAS) Beberapa barang dilarang dan/atau dibatasi untuk dibawa masuk ke Indonesia yang selanjutnya disebut sebagai Barang Larangan dan Pembatasan (LARTAS).”
+  - Added: “Contohnya: Olahan Pangan, dengan batas tidak lebih dari 5 kg per penumpang, Kosmetik, dengan batas tidak lebih dari 20 pcs per penumpang, dan lainnya.”
+  - Added: “Pastikan Anda memeriksa barang bawaan sebelum melakukan perjalanan ke Indonesia.”
+  - Added: “Untuk mengetahui daftar lengkap barang LARTAS beserta ketentuannya, silakan kunjungi www.insw.go.id/intr .”
+  - Added: “Klik di Sini untuk lihat artikel mengenai larangan dan pembatasan.”
+  - …and 1 more added
+- **data-e2b2401231** — CONTENT CHANGED. Review https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/dinheiro-em-especie and re-verify: customs-items.json:cash-br.
+  - Removed: “Abrir menu principal de navegação Receita Federal Termos mais buscados Desenrola Brasil assinatura mei enem imposto de renda Termos mais buscados Desenrola Brasil assinatura mei Assuntos Notícias Todas as notícias Arrecadação e Cobrança Cidadania Fiscal Combate ao contrabando …”
+  - Removed: “Isenções e Outros Benefícios Operador Econômico Autorizado Painel Receita Receita Sintonia Reforma Tributária do Consumo Remessa Conforme CNPJ da Pessoa Física Participação Social Audiências e Consultas Públicas Conselhos e Órgãos Colegiados Congressos Ouvidoria Auditorias Con…”
+  - Removed: “Portais Relacionados Empresas e Negócios ENAT eSocial ITR Orientações para celebração de convênios Nota Fiscal de Serviço Eletrônica (NFS-e) Nota Fiscal Eletrônica Nota Fiscal Eletrônica do Ouro (NF-e Ouro) Portal CNIR Procuradoria da Fazenda (PGFN) Registrato Simples Nacional…”
+  - Removed: “Portais Relacionados Empresas e Negócios ENAT eSocial ITR Orientações para celebração de convênios Nota Fiscal de Serviço Eletrônica (NFS-e) Nota Fiscal Eletrônica Nota Fiscal Eletrônica do Ouro (NF-e Ouro) Portal CNIR Procuradoria da Fazenda (PGFN) Registrato Simples Nacional…”
+  - Added: “Abrir menu principal de navegação Receita Federal Termos mais buscados Desenrola Brasil mei assinatura enem imposto de renda Termos mais buscados Desenrola Brasil mei assinatura Assuntos Notícias Todas as notícias Arrecadação e Cobrança Cidadania Fiscal Combate ao contrabando …”
+  - Added: “Isenções e Outros Benefícios Operador Econômico Autorizado Painel Receita Receita Sintonia Reforma Tributária do Consumo Remessa Conforme CNPJ da Pessoa Física Participação Social Audiências e Consultas Públicas Conselhos e Órgãos Colegiados Congressos Ouvidoria Auditorias Con…”
+  - Added: “Vídeos das Histórias de Trabalho Portais Relacionados Empresas e Negócios ENAT eSocial ITR Orientações para celebração de convênios Nota Fiscal de Serviço Eletrônica (NFS-e) Nota Fiscal Eletrônica Nota Fiscal Eletrônica do Ouro (NF-e Ouro) Portal CNIR Procuradoria da Fazenda (…”
+  - Added: “Vídeos das Histórias de Trabalho Portais Relacionados Empresas e Negócios ENAT eSocial ITR Orientações para celebração de convênios Nota Fiscal de Serviço Eletrônica (NFS-e) Nota Fiscal Eletrônica Nota Fiscal Eletrônica do Ouro (NF-e Ouro) Portal CNIR Procuradoria da Fazenda (…”
+- **data-292ac2145e** — CONTENT CHANGED. Review https://www.hsa.gov.sg/tobacco-regulation/vaping-enforcement/ and re-verify: customs-items.json:nicotine-pouches-sg, customs-items.json:heated-tobacco-sg.
+  - Removed: “Back to Tobacco regulation Other pages in Tobacco regulation Overview of tobacco control Report tobacco-related offences Tobacco licences See all pages Back to top Health Sciences Authority Announcements Products regulation Health services and info regulation Blood donation La…”
+  - Added: “Back to Tobacco regulation Other pages in Tobacco regulation Overview of tobacco control Report tobacco-related offences Tobacco licences See all pages Back to top Health Sciences Authority Announcements Products regulation Health services and info regulation Blood donation La…”
+- **data-6fe2dd5fce** — CONTENT CHANGED. Review https://www.customs.gov.sg/doing-business/import-operations/import-procedures/controlled-and-prohibited-goods-for-imports/ and re-verify: customs-items.json:e-cigarettes-sg, customs-items.json:chewing-gum-sg.
+  - Removed: “Government officials will never ask for money or bank details via phone call, text message or email.”
+  - Removed: “Only trust SMSes from gov.sg (opens in new tab) SMS Sender ID.”
+  - Removed: “Call ScamShield 1799 or visit the ScamShield (opens in new tab) website.”
+  - Removed: “Back to Import Procedures Other pages in Import Procedures Import Procedures Overview Authorised Piers and Places Claiming Preferential Tariff Treatment for Dutiable Imports Depositing Goods in Free Trade Zones Depositing Goods in Licensed or Zero-GST Warehouses Documents for …”
+  - Added: “Government officials will never ask you to transfer money over a phone call.”
+  - Added: “If you&#x27;re unsure if something is a scam, call ScamShield (opens in new tab) at 1799.”
+  - Added: “Back to Import Procedures Other pages in Import Procedures Import Procedures Overview Authorised Piers and Places Claiming Preferential Tariff Treatment for Dutiable Imports Depositing Goods in Free Trade Zones Depositing Goods in Licensed or Zero-GST Warehouses Documents for …”
+- **data-4e97fc29d1** — CONTENT CHANGED. Review https://www.auswaertiges-amt.de/de/reiseundsicherheit/aegyptensicherheit-212622 and re-verify: customs-items.json:controlled-medication-eg, entry-requirements.json:DE>EG.
+  - Removed: “Inhalt Geben Sie ein Suchwort ein Suche Häufig gesucht gunther &nbsp; TÜRKEI &nbsp; Reise und Sicherheit &nbsp; Anzahl gefundener Suchergebnisse: Keine passenden Schlagwörter gefunden.”
+  - Removed: “Reisen und Gesundheit Deutsche Auslandsvertretungen in Ihrem Reiseland Vertretungen Ihres Reiselandes in Deutschland Aktuelle Reisewarnungen Reise- und Sicherheit: Letzte Aktualisierungen Service Service Zurück zur ersten Navigationsebene Zur Übersicht Visa und Aufenthalt Kons…”
+  - Removed: “09.11.2026 Artikel Globale Herausforderungen mit starken Partnern bewältigen: G7 Außenminister treffen sich in Paris In einer Welt vielfältiger Krisen und neuer Herausforderungen ist eine enge Zusammenarbeit der wirtschaftsstärksten Demokratien und ihrer Partner unerlässlich, …”
+  - Removed: “Reiseinfos Infrastruktur/Verkehr Es gibt ein Inlandsflugnetz, eingeschränkten Eisenbahnverkehr und ein auf Hauptstrecken recht gut ausgebautes Straßennetz.”
+  - Added: “Inhalt Geben Sie ein Suchwort ein Suche Häufig gesucht TÜRKEI &nbsp; Marokko Tiere einreise &nbsp; Iran &nbsp; Anzahl gefundener Suchergebnisse: Keine passenden Schlagwörter gefunden.”
+  - Added: “Reisen und Gesundheit Deutsche Auslandsvertretungen in Ihrem Reiseland Vertretungen Ihres Reiselandes in Deutschland Aktuelle Reisewarnungen Reise- und Sicherheit: Letzte Aktualisierungen Service Service Zurück zur ersten Navigationsebene Zur Übersicht Visa und Aufenthalt Kons…”
+  - Added: “16.11.2026 Artikel EU -Außenrat in Brüssel: Ukraine und Sicherheit im Schwarzmeerraum im Fokus Außenminister Wadephul reist heute nach Brüssel zum EU -Außenrat und nimmt daneben an einem Schwarzmeer-Ministertreffen teil.”
+  - Added: “Im Mittelpunkt der Gespräche stehen die Unterstützung der Ukraine, sowie die Sicherheit im Schwarzmeerraum.”
+  - Added: “09.11.2026 Artikel Globale Herausforderungen mit starken Partnern bewältigen: G7 Außenminister treffen sich in Paris In einer Welt vielfältiger Krisen und neuer Herausforderungen ist eine enge Zusammenarbeit der wirtschaftsstärksten Demokratien und ihrer Partner unerlässlich, …”
+- **data-df6449938f** — CONTENT CHANGED. Review https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/proibicoes-restricoes and re-verify: customs-items.json:cannabis-br, customs-items.json:weapons-br.
+  - Removed: “Abrir menu principal de navegação Receita Federal Termos mais buscados Desenrola Brasil assinatura mei enem imposto de renda Termos mais buscados Desenrola Brasil assinatura mei Assuntos Notícias Todas as notícias Arrecadação e Cobrança Cidadania Fiscal Combate ao contrabando …”
+  - Removed: “Isenções e Outros Benefícios Operador Econômico Autorizado Painel Receita Receita Sintonia Reforma Tributária do Consumo Remessa Conforme CNPJ da Pessoa Física Participação Social Audiências e Consultas Públicas Conselhos e Órgãos Colegiados Congressos Ouvidoria Auditorias Con…”
+  - Removed: “Portais Relacionados Empresas e Negócios ENAT eSocial ITR Orientações para celebração de convênios Nota Fiscal de Serviço Eletrônica (NFS-e) Nota Fiscal Eletrônica Nota Fiscal Eletrônica do Ouro (NF-e Ouro) Portal CNIR Procuradoria da Fazenda (PGFN) Registrato Simples Nacional…”
+  - Removed: “Portais Relacionados Empresas e Negócios ENAT eSocial ITR Orientações para celebração de convênios Nota Fiscal de Serviço Eletrônica (NFS-e) Nota Fiscal Eletrônica Nota Fiscal Eletrônica do Ouro (NF-e Ouro) Portal CNIR Procuradoria da Fazenda (PGFN) Registrato Simples Nacional…”
+  - Added: “Abrir menu principal de navegação Receita Federal Termos mais buscados Desenrola Brasil mei assinatura enem imposto de renda Termos mais buscados Desenrola Brasil mei assinatura Assuntos Notícias Todas as notícias Arrecadação e Cobrança Cidadania Fiscal Combate ao contrabando …”
+  - Added: “Isenções e Outros Benefícios Operador Econômico Autorizado Painel Receita Receita Sintonia Reforma Tributária do Consumo Remessa Conforme CNPJ da Pessoa Física Participação Social Audiências e Consultas Públicas Conselhos e Órgãos Colegiados Congressos Ouvidoria Auditorias Con…”
+  - Added: “Vídeos das Histórias de Trabalho Portais Relacionados Empresas e Negócios ENAT eSocial ITR Orientações para celebração de convênios Nota Fiscal de Serviço Eletrônica (NFS-e) Nota Fiscal Eletrônica Nota Fiscal Eletrônica do Ouro (NF-e Ouro) Portal CNIR Procuradoria da Fazenda (…”
+  - Added: “Vídeos das Histórias de Trabalho Portais Relacionados Empresas e Negócios ENAT eSocial ITR Orientações para celebração de convênios Nota Fiscal de Serviço Eletrônica (NFS-e) Nota Fiscal Eletrônica Nota Fiscal Eletrônica do Ouro (NF-e Ouro) Portal CNIR Procuradoria da Fazenda (…”
+- **data-d8a9ae5704** — CONTENT CHANGED. Review https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-medications/ and re-verify: customs-items.json:medication-sg, customs-items.json:peptides-sg, customs-items.json:medicated-gum-sg (+1 more).
+  - Removed: “Back to Travelling with medication and medical devices to Singapore Other pages in Travelling with medication and medical devices to Singapore Travelling with medical devices to Singapore See all pages Back to top Health Sciences Authority Announcements Products regulation Hea…”
+  - Added: “Back to Travelling with medication and medical devices to Singapore Other pages in Travelling with medication and medical devices to Singapore Travelling with medical devices to Singapore See all pages Back to top Health Sciences Authority Announcements Products regulation Hea…”
+- **data-f61f4b51ba** — CONTENT CHANGED. Review https://www.police.gov.sg/E-Services/Lodge-Cash-Movement-Report-For-Carriers-Recipients-or-Senders and re-verify: customs-items.json:cash-sg.
+  - Removed: “National Service Our Present and History Keeping Singapore as one of the safest countries in the world Our Present and History Police Day SPF200 Police Heritage Trail Police Heritage Centre Close E-Services Home E-Services Access Police E-Services For Individual Home For Indiv…”
+  - Removed: “As we celebrate our 50th anniversary this year, we continue to inform, inspire and connect you through stories of our officers and the work behind policing in Singapore.”
+  - Removed: “No Scares on Our Watch Next Stop: Looking Out for One Another Faces of SPF: TransCom Officer Supt (NS) Lum Hui SPF Receives Silver Ribbon Award for Third Consecutive Year At the Heart of the Community On the Digital Frontline: Two Officers Disrupting Cybercrime Strengthening P…”
+  - Removed: “Statistics Home Statistics Find out more about Singapore&#39;s crime, scams and traffic statistics Media Hub Read latest news and updates from Police News Access official Police News Releases News Police Advisory For Deepavali Eve Celebrations In Little India Singaporean Linke…”
+  - Removed: “Police Life No Scares on Our Watch Next Stop: Looking Out for One Another Faces of SPF: TransCom Officer Supt (NS) Lum Hui SPF Receives Silver Ribbon Award for Third Consecutive Year At the Heart of the Community On the Digital Frontline: Two Officers Disrupting Cybercrime Str…”
+  - Removed: “Publications Statistics Find out more about Singapore&#39;s crime, scams and traffic statistics Statistics Close Advisories Home Advisories Stay informed with our advisories Theft &amp; Property Crime Home Theft &amp; Property Crime Information and tips to help you stay inform…”
+  - Removed: “Students 12 years old and under Students 13 to 19 years old Youth Centric Advisories Stay informed with our advisories Theft &amp; Property Crime Information and tips to help you stay informed and protected against theft and other property-related crimes.”
+  - Removed: “Theft &amp; Property Crime Dishonest Misappropriation of Property Housebreaking Motor Vehicle Theft Snatch Theft Theft In Dwelling Theft of Bicycle and PMD Act of Endangering Human Life Everyone has a responsibility to keep the neighbourhood safe Act of Endangering Human Life …”
+  - …and 13 more removed
+  - Added: “National Service Our Present and History Keeping Singapore as one of the safest countries in the world Our Present and History Police Day SPF200 Police Heritage Trail Police Heritage Centre Close E-Services Home E-Services Access Police E-Services For Individual Home For Indiv…”
+  - Added: “Learn more about the SPF through our profiles and articles!”
+  - Added: “Publications Home Publications Check out our Police Annual and other publications.”
+  - Added: “Statistics Home Statistics Find out more about Singapore&#x27;s crime, scams and traffic statistics Media Hub Read latest news and updates from Police News Access official Police News Releases News Police Life Police Life covers subjects that are of interest to the community, …”
+  - Added: “Police Life Publications Check out our Police Annual and other publications.”
+  - Added: “Publications Statistics Find out more about Singapore&#x27;s crime, scams and traffic statistics Statistics Close Advisories Home Advisories Stay informed with our advisories Theft and Property Crime Home Theft and Property Crime Information and tips to help you stay informed …”
+  - Added: “Students 12 years old and under Students 13 to 19 years old Youth Centric Advisories Stay informed with our advisories Theft and Property Crime Information and tips to help you stay informed and protected against theft and other property-related crimes.”
+  - Added: “Theft and Property Crime Dishonest Misappropriation of Property Housebreaking Motor Vehicle Theft Snatch Theft Theft In Dwelling Theft of Bicycle and PMD Act of Endangering Human Life Everyone has a responsibility to keep the neighbourhood safe Act of Endangering Human Life Co…”
+  - …and 12 more added
+- **data-f01601b567** — CONTENT CHANGED. Review https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/ and re-verify: customs-items.json:injectable-medication-sg.
+  - Removed: “Health Sciences Authority Announcements Products regulation Health services and info regulation Blood donation Lab services Who we are E-Services Careers Report adverse events Report incidents for enforcement HSA Data Protection Policy Reach us Contact Feedback © 2026 Governme…”
+  - Added: “Health Sciences Authority Announcements Products regulation Health services and info regulation Blood donation Lab services Who we are E-Services Careers Report adverse events Report incidents for enforcement HSA Data Protection Policy Reach us Contact Feedback © 2026 Governme…”
+- **data-5cc9ad4661** — CONTENT CHANGED. Review https://www.caa.co.za/industry-information/uas/ and re-verify: customs-items.json:drones-za.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-f71e1212b6** — CONTENT CHANGED. Review https://www.legislation.gov.au/F1996B03651/latest/text and re-verify: customs-items.json:growth-hormone-au, customs-items.json:kratom-au, customs-items.json:phenibut-au.
+  - Removed: “Customs (Prohibited Imports) Regulations 1956 - Federal Register of Legislation &lt;link rel="stylesheet" href="styles.84630ab4f3c563f3.css"&gt; Skip to main Australian Government Federal Register of Legislation Site navigation Help and resources Register for My Account Sign i…”
+  - Added: “Customs (Prohibited Imports) Regulations 1956 - Federal Register of Legislation &lt;link rel="stylesheet" href="styles.84630ab4f3c563f3.css"&gt; Skip to main Australian Government Federal Register of Legislation Site navigation Help and resources Register for My Account Sign i…”
+  - Added: “The survey closes on 28 November 2026.”
+- **data-093068cb1a** — CONTENT CHANGED. Review https://www.legislation.gov.au/F2026L01327/latest/text and re-verify: customs-items.json:peptides-au, customs-items.json:melatonin-au, customs-items.json:kratom-au (+1 more).
+  - Removed: “Therapeutic Goods (Poisons Standard—October 2026) Instrument 2026 - Federal Register of Legislation &lt;link rel="stylesheet" href="styles.84630ab4f3c563f3.css"&gt; Skip to main Australian Government Federal Register of Legislation Site navigation Help and resources Register f…”
+  - Added: “Therapeutic Goods (Poisons Standard—October 2026) Instrument 2026 - Federal Register of Legislation &lt;link rel="stylesheet" href="styles.84630ab4f3c563f3.css"&gt; Skip to main Australian Government Federal Register of Legislation Site navigation Help and resources Register f…”
+  - Added: “The survey closes on 28 November 2026.”
+- **data-9390a51ecc** — CONTENT CHANGED. Review https://sertifikasicdob.pom.go.id/wasdisobat/sas/ and re-verify: customs-items.json:medication-id, customs-items.json:controlled-medication-id, customs-items.json:narcotic-medication-id.
+  - Removed: “23, Jakarta pusat 10560 Indonesia Email: sertifikasicdob@pom.go.id OSS WA: wa.me/62811-6774-642 Email: kontak@oss.go.id Statistik pengunjung Views hari ini: 327 Views Bulan ini: 6,275 Views Total: 212,248 Visitor Online: 1 Visitor hari ini: 203 Visitor bulan ini: 3,766 Visitor…”
+  - Added: “23, Jakarta pusat 10560 Indonesia Email: sertifikasicdob@pom.go.id OSS WA: wa.me/62811-6774-642 Email: kontak@oss.go.id Statistik pengunjung Views hari ini: 271 Views Bulan ini: 6,271 Views Total: 213,960 Visitor Online: 2 Visitor hari ini: 182 Visitor bulan ini: 3,831 Visitor…”
+- **data-4dc290f52d** — CONTENT CHANGED. Review https://www.faa.gov/uas/resources/foreign_operators and re-verify: customs-items.json:drones-us.
+  - Removed: “B4UFLY App Low Altitude Authorization and Notification Capability (LAANC) Temporary Flight Restrictions (TFRs) Remote ID Aviation Safety Reporting Program (ASRP) for UAS Recreational Flyers &amp; Community-Based Organizations Overview The Recreational UAS Safety Test (TRUST) T…”
+  - Added: “B4UFLY App Low Altitude Authorization and Notification Capability (LAANC) Temporary Flight Restrictions (TFRs) Remote ID Aviation Safety Reporting Program (ASRP) for UAS Recreational Flyers &amp; Community-Based Organizations Overview The Recreational UAS Safety Test (TRUST) T…”
+- **data-70472d00ac** — CONTENT CHANGED. Review https://www.mem.gov.cn/gk/zfxxgkpt/fdzdgknr/202408/t20240808_497240.shtml and re-verify: customs-items.json:cbd-cn.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-4b0be3075a** — CONTENT CHANGED. Review https://www.casa.gov.au/knowyourdrone/drone-rules and re-verify: customs-items.json:drones-au.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-c95335fbfc** — CONTENT CHANGED. Review https://www.caas.gov.sg/unmanned-aircraft/registration-deregistration/ and re-verify: customs-items.json:drones-sg.
+  - Removed: “Back to Unmanned Aircraft Other pages in Unmanned Aircraft Requirements for flying unmanned aircraft No-fly zones and UA flying areas Remote identification Operator and activity permits Unmanned aircraft basic training Unmanned aircraft pilot licence See all pages Back to top …”
+  - Added: “Back to Unmanned Aircraft Other pages in Unmanned Aircraft Requirements for flying unmanned aircraft No-fly zones and UA flying areas Remote identification Operator and activity permits Unmanned aircraft basic training Unmanned aircraft pilot licence See all pages Back to top …”
+- **data-873f33ef3b** — CONTENT CHANGED. Review https://www.gov.br/agricultura/pt-br/assuntos/vigilancia-agropecuaria/viajantes-e-bagagens and re-verify: customs-items.json:meat-dairy-br, customs-items.json:fresh-produce-br.
+  - Removed: “Abrir menu principal de navegação Ministério da Agricultura e Pecuária Termos mais buscados Desenrola Brasil assinatura mei enem imposto de renda Termos mais buscados Desenrola Brasil assinatura mei Acesso à Informação Institucional Estrutura Organizacional Comissão de Ética O…”
+  - Added: “Abrir menu principal de navegação Ministério da Agricultura e Pecuária Termos mais buscados Desenrola Brasil mei assinatura enem imposto de renda Termos mais buscados Desenrola Brasil mei assinatura Acesso à Informação Institucional Estrutura Organizacional Comissão de Ética O…”
+- **data-c50563ba1a** — CONTENT CHANGED. Review https://english1.visitkorea.or.kr/enu/TRV/TV_ENG_2_4.jsp and re-verify: customs-items.json:meat-dairy-kr, customs-items.json:fresh-produce-kr.
+  - Removed: “Official Site of Korea Tourism Org.: Animal/Plant Quarantines Contents SNS LOGIN Interactive Map SITEMAP Language 日本語 中文(简体） 中文(繁體) Français Español Deutsch Pусский ภาษาไทย Bahasa Indonesia Tiếng Việt عربي 한국어 GO GNB menu Open Search box Show Serach Box Hide Search Visit KOREA…”
+  - Added: “Official Site of Korea Tourism Org.: Animal/Plant Quarantines Contents SNS LOGIN Interactive Map SITEMAP Language 日本語 中文(简体） 中文(繁體) Français Español Deutsch Pусский ภาษาไทย Bahasa Indonesia Tiếng Việt عربي 한국어 GO GNB menu Open Search box Show Serach Box Hide Search Visit KOREA…”
+- **data-98357d5666** — CONTENT CHANGED. Review https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm and re-verify: customs-items.json:fresh-produce-eu.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-856d7742d9** — CONTENT CHANGED. Review https://regeringen.se/pressmeddelanden/2025/02/regeringen-narkotikaklassar-kratom/ and re-verify: customs-items.json:kratom-se.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-250c693a47** — CONTENT CHANGED. Review https://www.aviation.govt.nz/rules/rule-part/part-101/ and re-verify: customs-items.json:drones-nz.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-7a2936c2df** — CONTENT CHANGED. Review https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=47964 and re-verify: customs-items.json:prescription-medication-cn.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-5fb44c07b9** — CONTENT CHANGED. Review https://www.mfds.go.kr/eng/brd/m_60/view.do?seq=75669 and re-verify: customs-items.json:controlled-medication-kr.
+  - Removed: “Ministry of Food and Drug Safety&gt;Information&gt;International Risk Information | Ministry of Food and Drug Safety Go to Main Contents Go to Main Menu home Sitemap Korean menu menu Show/hide Information News&Notice News&Notice Card News Photo News COVID-19 Latest COVID-19 Ne…”
+  - Added: “Ministry of Food and Drug Safety&gt;Information&gt;International Risk Information | Ministry of Food and Drug Safety Go to Main Contents Go to Main Menu home Sitemap Korean menu menu Show/hide Information News&Notice News&Notice Card News Photo News COVID-19 Latest COVID-19 Ne…”
+- **data-940a0b3dad** — CONTENT CHANGED. Review https://www.carina.rs/en/passengers/passenger-custom-clerance/FAQ/tourists.html and re-verify: customs-items.json:alcohol-rs, customs-items.json:tobacco-rs, customs-items.json:e-cigarettes-rs (+7 more).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-173780e8cc** — CONTENT CHANGED. Review https://web.customs.gov.tw/en/singlehtml/1865?cntId=cus16_87451_1865 and re-verify: customs-items.json:alcohol-tw, customs-items.json:tobacco-tw.
+  - Removed: “&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Issued：Department of Customs Clearance Affairs Release date：2026-07-08 Click times：19642 Open About Us Organization Structure About the Director General Tariff System Customs Museum Contact Us Cargo Clearance Non-intrusive Inspection, …”
+  - Removed: “Last updated:2026-11-05”
+  - Added: “&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Issued：Department of Customs Clearance Affairs Release date：2026-07-08 Click times：19922 Open About Us Organization Structure About the Director General Tariff System Customs Museum Contact Us Cargo Clearance Non-intrusive Inspection, …”
+  - Added: “Last updated:2026-11-13”
+- **data-a5f9b31a99** — CONTENT CHANGED. Review https://www.mohw.gov.tw/cp-6649-79226-1.html and re-verify: customs-items.json:prescription-medication-tw.
+  - Removed: “出遊常備用藥及攜帶藥品出入境規定- 衛生福利部 按 Enter 到主內容區 ::: 回首頁 RSS 雙語詞彙 部長信箱 網站導覽 En Aa 小 中 大 進階 熱門關鍵字 健康幣 長照 寒流 流感疫苗 您的瀏覽器不支援javascript功能，若網頁功能無法正常使用時，請開啟瀏覽器Javscript狀態。 本部簡介 部長 次長 主任秘書 行政組織 本部單位及所屬機關 使命願景及重大政策 政策報導 部徽設計說明 最新消息 焦點新聞 真相說明 公告訊息 活動訊息 招標資訊 就業資訊 便民服務 消費者保護 部長信箱 人民線上申辦服務專區 表單下載 諮詢服…”
+  - Added: “出遊常備用藥及攜帶藥品出入境規定- 衛生福利部 按 Enter 到主內容區 ::: 回首頁 RSS 雙語詞彙 部長信箱 網站導覽 En Aa 小 中 大 進階 熱門關鍵字 健康幣 流感疫苗 長照 腎 您的瀏覽器不支援javascript功能，若網頁功能無法正常使用時，請開啟瀏覽器Javscript狀態。 本部簡介 部長 次長 主任秘書 行政組織 本部單位及所屬機關 使命願景及重大政策 政策報導 部徽設計說明 最新消息 焦點新聞 真相說明 公告訊息 活動訊息 招標資訊 就業資訊 便民服務 消費者保護 部長信箱 人民線上申辦服務專區 表單下載 諮詢服務…”
+- **data-c86bb2a170** — CONTENT CHANGED. Review https://web.customs.gov.tw/taipei/singlehtml/3392?cntId=cus2_3392_3392_1351 and re-verify: customs-items.json:fresh-produce-tw.
+  - Removed: “關於各國核發CITES許可證之機構，您可參考 CITES網頁 ；相關輸入規定，您可參考 貿易署網頁 。 (二) 野生動物保育法(第24條)規定： 保育類野生動物之產製品非經主管機關行政院農業部林保署(下稱林保署)或海洋委員會海洋保育署(下稱海保署)之同意，不得輸入或輸出。 若未檢附輸出入同意文件，將由主管機關依法處分，並面臨罰鍰或刑事責任。 海洋哺乳類野生動物之產製品，非經海保署同意，均不得輸入。 關於保育類物種名錄，您可參考「 陸域保育類野生動物名錄 」及「 海洋保育類野生動物名錄 」。 ♦林保署服務專線：02-23515441 ♦ 林保署署長信…”
+  - Added: “關於各國核發CITES許可證之機構，您可參考 CITES網頁 ；相關輸入規定，您可參考 貿易署網頁 。 (二) 野生動物保育法(第24條)規定： 保育類野生動物之產製品非經主管機關行政院農業部林保署(下稱林保署)或海洋委員會海洋保育署(下稱海保署)之同意，不得輸入或輸出。 若未檢附輸出入同意文件，將由主管機關依法處分，並面臨罰鍰或刑事責任。 海洋哺乳類野生動物之產製品，非經海保署同意，均不得輸入。 關於保育類物種名錄，您可參考「 陸域保育類野生動物名錄 」及「 海洋保育類野生動物名錄 」。 ♦林保署服務專線：02-23515441 ♦ 林保署署長信…”
+- **data-11b6f457eb** — CONTENT CHANGED. Review https://web.customs.gov.tw/ekaohsiung/singlehtml/c718884d9be040dcb652112cdbabad3a?cntId=cb9e98e0aa664b4eb58f638076ddbeef and re-verify: customs-items.json:cash-tw.
+  - Removed: “Issued：Information Management Office Release date：2021-05-10 Click times：47169 Open About KHC Director Organization & Functions Jurisdiction History of KHC Characteristics Location & Transportation Travelers Must Know Departure Arrival VAT Refund for Foreigners Contact Informa…”
+  - Added: “Issued：Information Management Office Release date：2021-05-10 Click times：47365 Open About KHC Director Organization & Functions Jurisdiction History of KHC Characteristics Location & Transportation Travelers Must Know Departure Arrival VAT Refund for Foreigners Contact Informa…”
+- **data-d8e49e1dbe** — CONTENT CHANGED. Review https://web.customs.gov.tw/etaipei/singlehtml/1367?cntId=df67c73ce2f449f09c487bf7f3ed88bb and re-verify: customs-items.json:meat-dairy-tw.
+  - Removed: “&nbsp;General Affairs Section, Inspection Division TEL:+886-3-398-2293 &nbsp; &nbsp; [RELLINKS]: &nbsp;Animal and Plant Health Inspection Agency Ministry of Agriculture - APHIA Issued：Inspection Division Release date：2024-07-22 Click times：219550 Annex Download FAQs contact in…”
+  - Added: “&nbsp;General Affairs Section, Inspection Division TEL:+886-3-398-2293 &nbsp; &nbsp; [RELLINKS]: &nbsp;Animal and Plant Health Inspection Agency Ministry of Agriculture - APHIA Issued：Inspection Division Release date：2024-07-22 Click times：220668 Annex Download FAQs contact in…”
+- **data-10dfe4d4ba** — CONTENT CHANGED. Review https://web.customs.gov.tw/taichung/singlehtml/274?cntId=523e44c77a674455b2385edfd0c24af3 and re-verify: customs-items.json:cbd-tw.
+  - Removed: “未經許可購買CBD產品進口，小心觸法受罰-臺中關中文版網站 您的瀏覽器不支援或未開啟JavaScript功能，將無法正常使用本系統，請開啟瀏覽器JavaScript功能，以利系統順利執行。 X 訊息 關閉 ::: 跳到主要內容 網站導覽 分類檢索 聯絡我們 常見問答 English 字級大小 小 中 大 ::: 熱門搜尋： x 認識臺中關 本關簡介 歷史沿革 本關特色 機關首長 歷任首長 施政計畫 機關願景 組織系統表 業務職掌 交通資訊 聯絡資訊 貨物通關 優質企業(AEO)專區 海運快遞專區 貨物通關須知 申辦業務須知 申辦業務答詢 業者常見錯…”
+  - Added: “未經許可購買CBD產品進口，小心觸法受罰-臺中關中文版網站 您的瀏覽器不支援或未開啟JavaScript功能，將無法正常使用本系統，請開啟瀏覽器JavaScript功能，以利系統順利執行。 X 訊息 關閉 ::: 跳到主要內容 網站導覽 分類檢索 聯絡我們 常見問答 English 字級大小 小 中 大 ::: 熱門搜尋： x 認識臺中關 本關簡介 歷史沿革 本關特色 機關首長 歷任首長 施政計畫 機關願景 組織系統表 業務職掌 交通資訊 聯絡資訊 貨物通關 優質企業(AEO)專區 海運快遞專區 貨物通關須知 申辦業務須知 申辦業務答詢 業者常見錯…”
+- **data-706f5e9ee2** — CONTENT CHANGED. Review https://web.customs.gov.tw/etaipei/singlehtml/1373?cntId=4a12960866294b029ad6bea2fa4ff4da and re-verify: customs-items.json:cannabis-tw.
+  - Removed: “Issued：Secretariat Release date：2024-10-11 Click times：15843 Open About TPC About TPC Administration Plan Director Medium and long-term plans Location Duties of TPC Units and Telephone Travel Arrival Departure Unaccompanied Luggage VAT Refund for Foreigners Contact Information…”
+  - Added: “Issued：Secretariat Release date：2024-10-11 Click times：15911 Open About TPC About TPC Administration Plan Director Medium and long-term plans Location Duties of TPC Units and Telephone Travel Arrival Departure Unaccompanied Luggage VAT Refund for Foreigners Contact Information…”
+- **data-68132d9734** — CONTENT CHANGED. Review https://web.customs.gov.tw/en/singlehtml/3457?cntId=cus16_175758_3457 and re-verify: customs-items.json:e-cigarettes-tw.
+  - Removed: “Content Maintainers: General Affairs Section, Inspection Division TEL:+886-3-3982293 Issued：Inspection Division Release date：2020-05-06 Click times：64772 Open About Us Organization Structure About the Director General Tariff System Customs Museum Contact Us Cargo Clearance Non…”
+  - Removed: “Last updated:2026-11-05”
+  - Added: “Content Maintainers: General Affairs Section, Inspection Division TEL:+886-3-3982293 Issued：Inspection Division Release date：2020-05-06 Click times：65217 Open About Us Organization Structure About the Director General Tariff System Customs Museum Contact Us Cargo Clearance Non…”
+  - Added: “Last updated:2026-11-13”
+- **data-75713189f8** — CONTENT CHANGED. Review https://web.customs.gov.tw/ekaohsiung/singlehtml/9a18ddca4652423ba5e2f6801a8fe492?cntId=935f25ca5d15405a82a328b9f2813af0 and re-verify: customs-items.json:weapons-tw.
+  - Removed: “&nbsp; Issued：Information Management Office Release date：2021-09-09 Click times：4770 Open About KHC Director Organization & Functions Jurisdiction History of KHC Characteristics Location & Transportation Travelers Must Know Departure Arrival VAT Refund for Foreigners Contact I…”
+  - Added: “&nbsp; Issued：Information Management Office Release date：2021-09-09 Click times：4838 Open About KHC Director Organization & Functions Jurisdiction History of KHC Characteristics Location & Transportation Travelers Must Know Departure Arrival VAT Refund for Foreigners Contact I…”
+- **data-44d4f6a723** — CONTENT CHANGED. Review https://www.gob.pe/1116-ingresar-equipaje-al-pais-ingresar-y-salir-con-dinero-del-pais and re-verify: customs-items.json:cash-pe.
+  - Removed: “Ingresar equipaje al país - Ingresar y salir con dinero del país - Trámite - Superintendencia Nacional de Aduanas y de Administración Tributaria - Plataforma del Estado Peruano Saltar a contenido principal Texto de búsqueda en gob.pe Inicio El Estado MEF SUNAT Ingresar equipaj…”
+  - Added: “Ingresar equipaje al país - Ingresar y salir con dinero del país - Trámite - Superintendencia Nacional de Aduanas y de Administración Tributaria - Plataforma del Estado Peruano Saltar a contenido principal Texto de búsqueda en gob.pe Inicio El Estado MEF SUNAT Ingresar equipaj…”
+- **data-47a9b8e55b** — CONTENT CHANGED. Review https://www.gob.pe/institucion/senasa/campa%C3%B1as/6969-amigo-viajero and re-verify: customs-items.json:meat-dairy-pe, customs-items.json:fresh-produce-pe.
+  - Removed: “- Campañas - Servicio Nacional de Sanidad Agraria del Perú - Plataforma del Estado Peruano Saltar a contenido principal Texto de búsqueda en gob.pe Inicio El Estado MIDAGRI SENASA Campañas y eventos ¡Amigo viajero!”
+  - Added: “- Campañas - Servicio Nacional de Sanidad Agraria del Perú - Plataforma del Estado Peruano Saltar a contenido principal Notifica la ocurrencia de nuevas plagas en tu predio Leer alerta completa Cerrar aviso Texto de búsqueda en gob.pe Inicio El Estado MIDAGRI SENASA Campañas y…”
+- **data-1ca7f9b7aa** — CONTENT CHANGED. Review https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1165_2019.htm and re-verify: customs-items.json:alcohol-co, customs-items.json:tobacco-co, customs-items.json:goods-allowance-co.
+  - Added: “Notas de Vigencia Concordancias Doctrina Concordante Legislaci&oacute;n Anterior 3.”
+- **data-fddf00f24c** — CONTENT CHANGED. Review https://travel.gc.ca/destinations/colombia and re-verify: customs-items.json:weapons-co, customs-items.json:drones-co.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-8f9b4dbb65** — CONTENT CHANGED. Review http://www.secretariasenado.gov.co/senado/basedoc/ley_0599_2000_pr014.html and re-verify: customs-items.json:cannabis-co.
+  - Removed: “Leyes desde 1992 - Vigencia expresa y control de constitucionalidad [LEY_0599_2000_PR014] &Uacute;ltima actualizaci&oacute;n: 15 de octubre de 2026 - (Diario Oficial No.”
+  - Removed: “53.651 - 7 de octubre de 2026) Derechos de autor reservados - Prohibida su reproducci�n Inicio Art�culo 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 33A 34 35 36 37 38 38A 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 …”
+  - Removed: “Notas de Vigencia Notas de Vigencia Jurisprudencia Vigencia Jurisprudencia Vigencia Legislaci&oacute;n Anterior Anterior | Siguiente Disposiciones analizadas por Avance Jur&iacute;dico Casa Editorial S.A.S.� "Leyes desde 1992 - Vigencia Expresa y Sentencias de Constitucionalid…”
+  - Removed: “53.651 - 7 de octubre de 2026) Las notas de vigencia, concordancias, notas del editor, forma de presentaci�n y disposici�n de la compilaci�n est�n protegidas por las normas sobre derecho de autor.”
+  - Added: “Leyes desde 1992 - Vigencia expresa y control de constitucionalidad [LEY_0599_2000_PR014] &Uacute;ltima actualizaci&oacute;n: 31 de octubre de 2026 - (Diario Oficial No.”
+  - Added: “53.672 - 28 de octubre de 2026) Derechos de autor reservados - Prohibida su reproducci�n Inicio Art�culo 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 33A 34 35 36 37 38 38A 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58…”
+  - Added: “Notas de Vigencia Notas de Vigencia Jurisprudencia Vigencia Jurisprudencia Vigencia Legislaci&oacute;n Anterior Anterior | Siguiente Disposiciones analizadas por Avance Jur&iacute;dico Casa Editorial S.A.S.� "Leyes desde 1992 - Vigencia Expresa y Sentencias de Constitucionalid…”
+  - Added: “53.672 - 28 de octubre de 2026) Las notas de vigencia, concordancias, notas del editor, forma de presentaci�n y disposici�n de la compilaci�n est�n protegidas por las normas sobre derecho de autor.”
+- **data-4b40ab3390** — CONTENT CHANGED. Review https://www.auswaertiges-amt.de/de/service/laender/jordanien-node/jordaniensicherheit-218008 and re-verify: customs-items.json:alcohol-jo, customs-items.json:tobacco-jo, customs-items.json:weapons-jo (+4 more).
+  - Removed: “Inhalt Geben Sie ein Suchwort ein Suche Häufig gesucht gunther &nbsp; TÜRKEI &nbsp; Reise und Sicherheit &nbsp; Anzahl gefundener Suchergebnisse: Keine passenden Schlagwörter gefunden.”
+  - Removed: “Reisen und Gesundheit Deutsche Auslandsvertretungen in Ihrem Reiseland Vertretungen Ihres Reiselandes in Deutschland Aktuelle Reisewarnungen Reise- und Sicherheit: Letzte Aktualisierungen Sie sind hier: Service Service Zurück zur ersten Navigationsebene Zur Übersicht Visa und …”
+  - Removed: “09.11.2026 Artikel Globale Herausforderungen mit starken Partnern bewältigen: G7 Außenminister treffen sich in Paris In einer Welt vielfältiger Krisen und neuer Herausforderungen ist eine enge Zusammenarbeit der wirtschaftsstärksten Demokratien und ihrer Partner unerlässlich, …”
+  - Removed: “Reiseinfos Siehe Aktuelles Infrastruktur/Verkehr Vergehen gegen das Betäubungsmittelgesetz werden schon bei geringsten Mengen und bei jeder Art von Drogen mit langjährigen Haftstrafen (bis lebenslänglich) geahndet.”
+  - Added: “Inhalt Geben Sie ein Suchwort ein Suche Häufig gesucht TÜRKEI &nbsp; Marokko Tiere einreise &nbsp; Iran &nbsp; Anzahl gefundener Suchergebnisse: Keine passenden Schlagwörter gefunden.”
+  - Added: “Reisen und Gesundheit Deutsche Auslandsvertretungen in Ihrem Reiseland Vertretungen Ihres Reiselandes in Deutschland Aktuelle Reisewarnungen Reise- und Sicherheit: Letzte Aktualisierungen Sie sind hier: Service Service Zurück zur ersten Navigationsebene Zur Übersicht Visa und …”
+  - Added: “16.11.2026 Artikel EU -Außenrat in Brüssel: Ukraine und Sicherheit im Schwarzmeerraum im Fokus Außenminister Wadephul reist heute nach Brüssel zum EU -Außenrat und nimmt daneben an einem Schwarzmeer-Ministertreffen teil.”
+  - Added: “Im Mittelpunkt der Gespräche stehen die Unterstützung der Ukraine, sowie die Sicherheit im Schwarzmeerraum.”
+  - Added: “09.11.2026 Artikel Globale Herausforderungen mit starken Partnern bewältigen: G7 Außenminister treffen sich in Paris In einer Welt vielfältiger Krisen und neuer Herausforderungen ist eine enge Zusammenarbeit der wirtschaftsstärksten Demokratien und ihrer Partner unerlässlich, …”
+- **data-2471313d9d** — CONTENT CHANGED. Review https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=99648&param2=136510&param3=1 and re-verify: customs-items.json:alcohol-cr, customs-items.json:tobacco-cr, customs-items.json:prescription-medication-cr (+2 more).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-c4888ac556** — CONTENT CHANGED. Review https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=99936&param2=136926&param3=1 and re-verify: customs-items.json:cash-cr.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-885c42c4ef** — CONTENT CHANGED. Review https://www.auswaertiges-amt.de/de/service/laender/katar-node/katarsicherheit-202280 and re-verify: customs-items.json:alcohol-qa, customs-items.json:pork-products-qa.
+  - Removed: “Inhalt Geben Sie ein Suchwort ein Suche Häufig gesucht gunther &nbsp; TÜRKEI &nbsp; Reise und Sicherheit &nbsp; Anzahl gefundener Suchergebnisse: Keine passenden Schlagwörter gefunden.”
+  - Removed: “Reisen und Gesundheit Deutsche Auslandsvertretungen in Ihrem Reiseland Vertretungen Ihres Reiselandes in Deutschland Aktuelle Reisewarnungen Reise- und Sicherheit: Letzte Aktualisierungen Sie sind hier: Service Service Zurück zur ersten Navigationsebene Zur Übersicht Visa und …”
+  - Removed: “09.11.2026 Artikel Globale Herausforderungen mit starken Partnern bewältigen: G7 Außenminister treffen sich in Paris In einer Welt vielfältiger Krisen und neuer Herausforderungen ist eine enge Zusammenarbeit der wirtschaftsstärksten Demokratien und ihrer Partner unerlässlich, …”
+  - Removed: “Reiseinfos Infrastruktur/Verkehr Der Tourismus der Hauptstadt Doha ist gut entwickelt.”
+  - Added: “Inhalt Geben Sie ein Suchwort ein Suche Häufig gesucht TÜRKEI &nbsp; Marokko Tiere einreise &nbsp; Iran &nbsp; Anzahl gefundener Suchergebnisse: Keine passenden Schlagwörter gefunden.”
+  - Added: “Reisen und Gesundheit Deutsche Auslandsvertretungen in Ihrem Reiseland Vertretungen Ihres Reiselandes in Deutschland Aktuelle Reisewarnungen Reise- und Sicherheit: Letzte Aktualisierungen Sie sind hier: Service Service Zurück zur ersten Navigationsebene Zur Übersicht Visa und …”
+  - Added: “16.11.2026 Artikel EU -Außenrat in Brüssel: Ukraine und Sicherheit im Schwarzmeerraum im Fokus Außenminister Wadephul reist heute nach Brüssel zum EU -Außenrat und nimmt daneben an einem Schwarzmeer-Ministertreffen teil.”
+  - Added: “Im Mittelpunkt der Gespräche stehen die Unterstützung der Ukraine, sowie die Sicherheit im Schwarzmeerraum.”
+  - Added: “09.11.2026 Artikel Globale Herausforderungen mit starken Partnern bewältigen: G7 Außenminister treffen sich in Paris In einer Welt vielfältiger Krisen und neuer Herausforderungen ist eine enge Zusammenarbeit der wirtschaftsstärksten Demokratien und ihrer Partner unerlässlich, …”
+- **data-308abda122** — CONTENT CHANGED. Review https://jca.gov.jm/faq/what-are-my-duty-free-allowances-and-exemptions and re-verify: customs-items.json:alcohol-jm, customs-items.json:tobacco-jm.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-ee94711958** — CONTENT CHANGED. Review https://www.jcaa.gov.jm/recreational-ua-operators-or-hobbyists/ and re-verify: customs-items.json:drones-jm.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-62c453de71** — CONTENT CHANGED. Review https://travel.gc.ca/destinations/tanzania and re-verify: customs-items.json:cash-tz, customs-items.json:plastic-bags-tz.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-79a72d38cc** — CONTENT CHANGED. Review https://www.dcea.go.tz/pages/fact-about-marijuana and re-verify: customs-items.json:cannabis-tz.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-06386a5865** — CONTENT CHANGED. Review https://recalls-rappels.canada.ca/en/alert-recall/think-twice-injecting-peptides-bought-online-unauthorized-products-can-seriously-harm and re-verify: customs-items.json:peptides-ca.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-02ca25db1c** — CONTENT CHANGED. Review https://www.tcaa.go.tz/pages/drones and re-verify: customs-items.json:drones-tz.
+  - Removed: “Drones | TCAA - Tanzania Civil Aviation Authority Search CASP Report Incident SSP FAQ Contact Us Environment ENG SWA ENG SWA The United Republic of Tanzania Tanzania Civil Aviation Authority ISO 9001:2015 CERTIFIED Menu Home About TCAA About TCAA Who we are About Us Vision and…”
+  - Removed: “&nbsp; Important notice : If a resident sells a drone to other person he / she must notify the Authority (TCAA) Click here for more information about drones ICAO AFCAC CASSOA SASO CANSO ICAO AFCAC CASSOA SASO CANSO Contact Us Tanzania Civil Aviation Authority Aviation House, N…”
+  - Added: “General Information | TCAA - Tanzania Civil Aviation Authority ENG SWA TCAA Home TCAA Home Drone Menu General Information Permits &amp; Applications Licensing &amp; Registration Legal &amp; Compliance Importation &amp; Travel General Information TANZANIA DRONE PERMIT PROCEDURE…”
+  - Added: “&nbsp; Important notice : If a resident sells a drone to other person he / she must notify the Authority (TCAA) Click here for more information about drones Last updated: 19 Oct 2026 ICAO AFCAC CASSOA SASO CANSO ICAO AFCAC CASSOA SASO CANSO Contact Us Tanzania Civil Aviation A…”
+- **data-3b21236f0d** — CONTENT CHANGED. Review https://www.legislation.gov.uk/uksi/2001/3998/regulation/4 and re-verify: customs-items.json:growth-hormone-gb.
+  - Removed: “E ngland, W ales, S cotland and N orthern I reland) Show Timeline of Changes Opening Options Open whole Instrument Open Instrument without Schedules Open Schedules only More Resources Original: King's Printer Version View more Changes over time for: Section 4 Alternative versi…”
+  - Added: “E ngland, W ales, S cotland and N orthern I reland) Show Timeline of Changes Opening Options Open whole Instrument Open Instrument without Schedules Open Schedules only More Resources Original: King's Printer Version View more Changes over time for: Section 4 Alternative versi…”
+- **data-349401efa3** — CONTENT CHANGED. Review https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-import/ and re-verify: customs-items.json:medical-devices-sg.
+  - Removed: “Back to Travelling with medication and medical devices to Singapore Other pages in Travelling with medication and medical devices to Singapore Travelling with medications to Singapore See all pages Back to top Health Sciences Authority Announcements Products regulation Health …”
+  - Added: “Back to Travelling with medication and medical devices to Singapore Other pages in Travelling with medication and medical devices to Singapore Travelling with medications to Singapore See all pages Back to top Health Sciences Authority Announcements Products regulation Health …”
+- **data-11d23308cf** — CONTENT CHANGED. Review https://www.cnb.gov.sg/singapore-drug-situation/drugs--psychoactive-substances--and-inhalants/kratom/ and re-verify: customs-items.json:kratom-sg.
+  - Removed: “The related penalties are as follows:- Trafficking of Kratom: At least 5 years of imprisonment and 5 strokes of the cane, up to a maximum of 20 years of imprisonment and 15 strokes of the cane Illegal import or export of Kratom: At least 5 years of imprisonment and 5 strokes o…”
+  - Added: “The related penalties are as follows:- Trafficking of Kratom: At least 5 years of imprisonment and 5 strokes of the cane, up to a maximum of 20 years of imprisonment and 15 strokes of the cane Illegal import or export of Kratom: At least 5 years of imprisonment and 5 strokes o…”
+- **data-ff8d4489f7** — CONTENT CHANGED. Review https://www.aemps.gob.es/medicamentos-de-uso-humano/estupefacientes-y-psicotropos/certificados-y-permisos-para-el-transporte-de-medicamentos-estupefacientes-y-psicotropos-por-viajeros-en-tratamiento-medico/ and re-verify: customs-items.json:controlled-medication-es.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-108b02f0ff** — CONTENT CHANGED. Review https://www.mda.gov.my/index.php/industry/exemption/personal-use-medical-device and re-verify: customs-items.json:medical-devices-my.
+  - Removed: “EXAMPLES AND SITUATIONS:&nbsp; Examples and Situations of Personal Use Medical Device &nbsp; &nbsp; Date of upload: 10th July 2026&nbsp; Prepared by:&nbsp;Policy and Strategic Planning Division&nbsp; Uploaded by: Corporate Communication Division Medical Device Authority (MDA),…”
+  - Added: “EXAMPLES AND SITUATIONS:&nbsp; Examples and Situations of Personal Use Medical Device &nbsp; &nbsp; Date of upload: 10th July 2026&nbsp; Prepared by:&nbsp;Policy and Strategic Planning Division&nbsp; Uploaded by: Corporate Communication Division Medical Device Authority (MDA),…”
+- **data-3b8cfb8724** — CONTENT CHANGED. Review https://www.uino.gov.ba/portal/en/information-for-citizens-and-travelers-2/ and re-verify: customs-items.json:alcohol-ba, customs-items.json:tobacco-ba, customs-items.json:cash-ba (+3 more).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-bac03f0959** — CONTENT CHANGED. Review https://lex.uz/ru/docs/2978666 and re-verify: customs-items.json:prescription-medication-uz, customs-items.json:controlled-medication-uz, customs-items.json:prohibited-narcotics-uz (+1 more).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-8859b7069a** — CONTENT CHANGED. Review https://frcs.org.fj/our-services/customs/travellers/visiting-fiji/arriving-in-fiji/ and re-verify: customs-items.json:alcohol-fj, customs-items.json:tobacco-fj, customs-items.json:e-cigarettes-fj (+4 more).
+  - Removed: “Arriving in Fiji &#8211; FRCS Skip to content About Us Careers Public Notice CIS VMS TPOS Authenticator FAQs Contact Us Search Menu Latest News Our Services Our Portals Forms Tenders Taxation Customs Legislation VAT Monitoring System Individuals Businesses and Organizations Pr…”
+  - Removed: “Last Updated - September 18, 2025 Back to Top Visiting Fiji Arriving in Fiji Currency Declaration Import Restrictions Restricted and Prohibited Goods Yachts and Vessels Household Effect Recent Posts FRCS Strengthens Taxpayer Register Through PFTAC Mission November 3, 2026 Empo…”
+  - Added: “Arriving in Fiji &#8211; FRCS Skip to content About Us Careers Public Notice CIS VMS TPOS Authenticator FAQs Contact Us Search Menu Latest News Our Services Our Portals Forms Tenders Taxation Customs Legislation VAT Monitoring System Individuals Businesses and Organizations Pr…”
+  - Added: “Last Updated - September 18, 2025 Back to Top Visiting Fiji Arriving in Fiji Currency Declaration Import Restrictions Restricted and Prohibited Goods Yachts and Vessels Household Effect Recent Posts FRCS Empowers MSMEs Through Tax, Customs and Financial Literacy Training Novem…”
+- **data-8000258802** — CONTENT CHANGED. Review https://www.immigration.govt.nz/ and re-verify: destinations.json:NZ.
+  - Removed: “Immigration New Zealand :: Immigration New Zealand Skip to main content Skip to main navigation Skip to secondary navigation Skip to search Process to apply For employers Login Visit Toro Visit Toro Learn what you need to do to visit New Zealand.”
+  - Removed: “Moving to New Zealand Resident visas to live in New Zealand Refugees and asylum seeker information Setting up your life in New Zealand Staying safe and knowing your rights Where to apply for New Zealand citizenship and a passport About us About us News centre How we work Our s…”
+  - Removed: “3 Nov 2026 Changes to the Green List from 8 March 2027 The Government is making changes to the Green List following the introduction of new Skilled Migrant Category (SMC) pathways.”
+  - Removed: “30 Oct 2026 Parent Category estimated selection dates now available People with a Parent Resident Visa expression of interest (EOI) have now received information about their queue entry and estimated selection dates, and we have published estimated queue selection dat… All ann…”
+  - Added: “Immigration New Zealand :: Immigration New Zealand Skip to main content Skip to main navigation Skip to secondary navigation Skip to search Application system issue Issued: Friday 13 Nov 2026, 09:50 am NZDT Customers can now apply for visas again through our enhanced Immigrati…”
+  - Added: “The processing of applications has resumed.”
+  - Added: “Impact of Microsoft outage Planned upgrade Issued: Monday 16 Nov 2026, 04:00 pm NZDT From 05:00 to 07:30 Thursday 19 November (NZDT), you cannot access some visa applications and application forms.”
+  - Added: “Wait for 30 minutes and try again.”
+  - Added: “Check the applications affected by this upgrade: Planned upgrades for 2026 Process to apply For employers Login Visit Toro Visit Toro Learn what you need to do to visit New Zealand.”
+  - Added: “Moving to New Zealand Resident visas to live in New Zealand Refugees and asylum seeker information Setting up your life in New Zealand Staying safe and knowing your rights Where to apply for New Zealand citizenship and a passport About us About us News centre How we work Our s…”
+  - Added: “12 Nov 2026 Visa waiver travel suspended for Kuwait nationals The Minister of Immigration has temporarily suspended visa waiver travel for people travelling on Kuwait passports.”
+  - Added: “11 Nov 2026 Technical issue affecting Parent Category November draw The technical issue that affected the 10 November 2026 Parent Category draw has been resolved.”
+  - …and 1 more added
+- **data-650fb19b4b** — CONTENT CHANGED. Review https://www.hikorea.go.kr/Main.pt and re-verify: destinations.json:KR.
+  - Removed: “이용대상 SES Auto-gate 이용방법 SES 등록센터 및 이용가능 공항 자동출입국심사 상호이용 한·미국(SeS-GE) 한-홍콩(SES-e-Channel) 한-마카오(SES-APC) 한-대만(SES-e-Gate) 한-독일(SES-EasyPASS) 정보광장 체류가이드)" >비자내비게이터(맞춤형 체류가이드) 동포 맞춤형 길라잡이 체류자격별 안내메뉴얼 한국생활 길잡이 출입국/체류안내 국적/귀화안내 사회통합 기술창업이민 투자이민 투자지원 고용지원 출입국관련 법령지침정보 빅데이터 분석·시각화 뉴스…”
+  - Removed: “자세히보기 바로가기 메뉴 방문예약 신청하기 이용안내 민원신청 신청하기 이용안내 자동출입국심사 신청하기 이용안내 온라인사증발급 신청 바로가기 단기체류외국인 숙박신고 바로가기 바로가기 메뉴 비자내비게이터(맞춤형 체류가이드) 바로가기 동포 맞춤형 길라잡이 바로가기 체류자격별 안내매뉴얼 바로가기 출입국/체류안내 바로가기 나의 민원처리현황 나의 민원 방문예약확인 전자민원 신청현황 사증신청 결과조회 방문예약 신청현황 자동출입국심사신청 자진출국 사전신고 난민 이의신청 국적심사 진행상황 조회 질의응답(Q&…”
+  - Removed: “7.) [2026-11-05] 외국인등록증 성명 표기 시 붙임표(하이픈, “-”) 사용 안내 [2026-11-04] 회화지도 강사(E-2) 마약검사 항목 등 변경 안내 [2026-11-03] 춘천출입국·외국인사무소 원주 이동출입국서비스 월 2회 운영 안내(한시적) [2026-11-03] 2026년 10월 국적업무 심사기간 안내 [2026-10-29] 2026년 하반기 난민(전문)통역인 보수교육 안내 [2026-10-29] ‘재외동포정책의 이해와 정착지원을 위한 전문가 과정’ 운영 [2026-…”
+  - Added: “이용대상 SES Auto-gate 이용방법 SES 등록센터 및 이용가능 공항 자동출입국심사 상호이용 한·미국(SeS-GE) 한-홍콩(SES-e-Channel) 한-마카오(SES-APC) 한-대만(SES-e-Gate) 한-독일(SES-EasyPASS) 정보광장 체류가이드)" >비자내비게이터(맞춤형 체류가이드) 동포 맞춤형 길라잡이 체류자격별 안내메뉴얼 한국생활 길잡이 출입국/체류안내 국적/귀화안내 사회통합 기술창업이민 투자이민 투자지원 고용지원 출입국관련 법령지침정보 빅데이터 분석·시각화 취업…”
+  - Added: “자세히보기 바로가기 메뉴 방문예약 신청하기 이용안내 민원신청 신청하기 이용안내 자동출입국심사 신청하기 이용안내 온라인사증발급 신청 바로가기 단기체류외국인 숙박신고 바로가기 바로가기 메뉴 비자내비게이터(맞춤형 체류가이드) 바로가기 동포 맞춤형 길라잡이 바로가기 체류자격별 안내매뉴얼 바로가기 출입국/체류안내 바로가기 나의 민원처리현황 나의 민원 방문예약확인 전자민원 신청현황 사증신청 결과조회 방문예약 신청현황 자동출입국심사신청 자진출국 사전신고 난민 이의신청 국적심사 진행상황 조회 질의응답(Q&…”
+  - Added: “11.) [2026-11-10] 2026년 12월 출입국민원 대행기관 교육 일정 알림 [2026-11-09] 정부과천청사 정전 작업 알림(11.”
+  - Added: “7.) [2026-11-05] 외국인등록증 성명 표기 시 붙임표(하이픈, “-”) 사용 안내 [2026-11-04] 회화지도 강사(E-2) 마약검사 항목 등 변경 안내 [2026-11-03] 춘천출입국·외국인사무소 원주 이동출입국서비스 월 2회 운영 안내(한시적) [2026-11-03] 2026년 10월 국적업무 심사기간 안내 [2026-10-29] 2026년 하반기 난민(전문)통역인 보수교육 안내 [2026-10-29] ‘재외동포정책의 이해와 정착지원을 위한 전문가 과정’ 운영 [2026-…”
+- **data-d2b46bc3aa** — CONTENT CHANGED. Review https://www.irishimmigration.ie/visa-non-visa-required-nationalities/ and re-verify: destinations.json:IE, entry-requirements.json:US>IE, entry-requirements.json:CA>IE (+29 more).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-9ddbcf051b** — CONTENT CHANGED. Review https://www.mfa.gov.rs/en and re-verify: destinations.json:RS.
+  - Removed: “Đurić Holds Talks with Venezuelan Foreign Minister Đurić Holds Talks with Venezuelan Foreign Minister 09.”
+  - Removed: “Find a Diplomatic Mission All Embassies Welcome to Serbia Portal for Foreigners Diplomatic Protocol Diplomatic Protocol About Serbia About Serbia Returning point Current Affairs Statement by the Ministry of Foreign Affairs 30 Oct Statement by the Ministry of Foreign Affairs Ko…”
+  - Removed: “Министар Ђурић поручио је из Њујорка, након седнице СБ УН на којој је разматран Извештај генералног секретара УН о раду УНМИК за претходних шест месеци, да се на данашњем заседању водила жестока борба за српске интересе и за српски глас на КиМ.”
+  - Added: “Find a Diplomatic Mission All Embassies Welcome to Serbia Portal for Foreigners Diplomatic Protocol Diplomatic Protocol About Serbia About Serbia Returning point Current Affairs Statement by the Ministry of Foreign Affairs 30 Oct Statement by the Ministry of Foreign Affairs Ko…”
+  - Added: “Министар спољних послова Републике Србије Марко Ђурић @markodjuric обратио се данас на церемонији доделе диплома полазницима Дипломатске академије Министарства спољних послова, генерације 2025/2026.”
+- **data-2291a6c7c3** — CONTENT CHANGED. Review https://www.gob.pe/institucion/rree/informes-publicaciones/2315744-requerimientos-y-exoneracion-de-visas-para-ciudadanos-extranjeros-que-cuenten-con-pasaportes-ordinarios and re-verify: destinations.json:PE, entry-requirements.json:US>PE, entry-requirements.json:GB>PE (+63 more).
+  - Removed: “Requerimientos y exoneración de visas para ciudadanos extranjeros que cuenten con pasaportes ordinarios - Informes y publicaciones - Ministerio de Relaciones Exteriores - Plataforma del Estado Peruano Saltar a contenido principal Texto de búsqueda en gob.pe Inicio El Estado RR…”
+  - Removed: “Requerimientos y exoneración de visas para ciudadanos extranjeros que cuenten con pasaportes ordinarios PDF 386.2 KB Descargar Imprimir Compartir Facebook Twitter Whatsapp Email Guardar Sobre el Estado Peruano El Estado Peruano ¿Qué es Gob.pe?”
+  - Added: “Requerimientos y exoneración de visas para ciudadanos extranjeros que cuenten con pasaportes ordinarios - Informes y publicaciones - Ministerio de Relaciones Exteriores - Plataforma del Estado Peruano Saltar a contenido principal Texto de búsqueda en gob.pe Inicio El Estado RR…”
+  - Added: “Requerimientos y exoneración de visas para ciudadanos extranjeros que cuenten con pasaportes ordinarios PDF 468.2 KB Descargar Imprimir Compartir Facebook Twitter Whatsapp Email Guardar Sobre el Estado Peruano El Estado Peruano ¿Qué es Gob.pe?”
+- **data-d4f37f4649** — CONTENT CHANGED. Review https://www.boca.gov.tw/cp-149-4486-7785a-2.html and re-verify: destinations.json:TW, entry-requirements.json:US>TW, entry-requirements.json:GB>TW (+61 more).
+  - Removed: “Passport Apply for a Passport(Taiwan) Apply for a Passport(Abroad) Passport Photos Application Directions for a Second ROC Passport Applying for Past Passport Records Passport FAQs Application Forms Passport Act and Regulations ePassport Project Operating Directions for Issuan…”
+  - Added: “Passport Apply for a Passport(Taiwan) Apply for a Passport(Abroad) Passport Photos Application Directions for a Second ROC Passport Applying for Past Passport Records Passport FAQs Application Forms Passport Act and Regulations ePassport Project Operating Directions for Issuan…”
+- **data-8ea37d5d34** — CONTENT CHANGED. Review https://serviciomigraciones.cl/permanencia-transitoria/subcategorias/turistas/ and re-verify: destinations.json:CL.
+  - Removed: “Personas que ingresan con fines turísticos o similares | SERMIG Ir al contenido Atención : Informamos a nuestros usuarios que la plataforma de nuestro servicio entrará en un proceso de actualización, motivo por el cual presentará algunos retrasos en sus consultas.”
+  - Removed: “Esperamos su comprensión.”
+  - Removed: “Buscar Reserva tu hora Ayuda Migraciones EN Reserva tu hora Mis trámites digitales Quiénes somos Quiénes somos Dirección Nacional Direcciones Regionales Noticias regionales Organigrama Trámites migratorios Permanencia Transitoria Residencia Temporal Residencia Definitiva Nacio…”
+  - Added: “Personas que ingresan con fines turísticos o similares | SERMIG Ir al contenido Buscar Reserva tu hora Ayuda Migraciones EN Reserva tu hora Mis trámites digitales Quiénes somos Quiénes somos Dirección Nacional Direcciones Regionales Noticias regionales Organigrama Trámites mig…”
+- **data-774724250f** — CONTENT CHANGED. Review https://www.migraciones.gob.ar/accesible/indexdnm.php?visas and re-verify: destinations.json:AR, entry-requirements.json:US>AR, entry-requirements.json:GB>AR (+59 more).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-8231b49067** — CONTENT CHANGED. Review https://www.mfa.am/en/visa/ and re-verify: destinations.json:AM, entry-requirements.json:CA>AM, entry-requirements.json:MX>AM (+9 more).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-096b2114f9** — CONTENT CHANGED. Review https://www.immigration.gov.bs/entry-requirements/before-your-arrival/ and re-verify: destinations.json:BS, entry-requirements.json:US>BS, entry-requirements.json:AU>BS (+58 more).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-cd08948d7d** — CONTENT CHANGED. Review https://www.gub.uy/ministerio-interior/comunicacion/publicaciones/regimen-visas-admision and re-verify: destinations.json:UY, entry-requirements.json:US>UY, entry-requirements.json:GB>UY (+63 more).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-66e35a45f6** — CONTENT CHANGED. Review https://www.imi.gov.my/index.php/en/main-services/visa/visa-requirement-by-country/ and re-verify: destinations.json:MY.
+  - Removed: “Visa Requirement by Country &#8211; Malaysian Immigration Department MYHRMIS Mobile MYHRMIS Mobile splwpk-electronic-archive splwpk-publicising splwpk-w3c Feedback Form Carian Laman Carian Laman splwpk-boradcast splwpk-about-us splwpk-client-charter splwpk-news splwpk-faq splw…”
+  - Added: “Visa Requirement by Country &#8211; Malaysian Immigration Department MYHRMIS Mobile MYHRMIS Mobile splwpk-electronic-archive splwpk-publicising splwpk-w3c Feedback Form Carian Laman Carian Laman splwpk-boradcast splwpk-about-us splwpk-client-charter splwpk-news splwpk-faq splw…”
+- **data-d36a48c46d** — CONTENT CHANGED. Review https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-visitor-visa-national-list and re-verify: entry-requirements.json:UA>GB, entry-requirements.json:CN>GB, entry-requirements.json:IN>GB (+13 more).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-75fc7ce0aa** — CONTENT CHANGED. Review https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/eligibility/eta-x.html and re-verify: entry-requirements.json:BR>CA, entry-requirements.json:MX>CA, entry-requirements.json:AR>CA (+3 more).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-7b66b413cb** — CONTENT CHANGED. Review https://image.mfa.go.th/mfa/0/umufy3EgqL/Con0926/Visa_Exemption_(EN)_0.jpg and re-verify: entry-requirements.json:US>TH, entry-requirements.json:GB>TH, entry-requirements.json:CA>TH (+61 more).
+- **data-a6194710d4** — CONTENT CHANGED. Review https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/special-category-visa-subclass-444 and re-verify: entry-requirements.json:NZ>AU.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-5393933587** — CONTENT CHANGED. Review https://www.mfa.gov.sg/Countries-Regions/U/United-Arab-Emirates/Travel-Page and re-verify: entry-requirements.json:SG>AE.
+  - Removed: “Beware of scammers pretending to be MFA officers.”
+  - Removed: “Government officials will never ask you to transfer money or disclose bank log-in details over a phone call.”
+  - Removed: “Call the 24/7 ScamShield (opens in new tab) Helpline at 1799 if you are unsure if something is a scam.”
+  - Removed: “Back to top Ministry of Foreign Affairs Travelling overseas Get help overseas Visiting Singapore Careers Newsroom About MFA ICJ Candidature (opens in new tab) Lee Kuan Yew Exchange Fellowship (opens in new tab) Courses at Singapore Cooperation Programme (opens in new tab) Find…”
+  - Added: “Back to top Ministry of Foreign Affairs Travelling overseas Get help overseas Visiting Singapore Careers Newsroom About MFA ICJ Candidature (opens in new tab) Lee Kuan Yew Exchange Fellowship (opens in new tab) Courses at Singapore Cooperation Programme (opens in new tab) Find…”
+- **data-3da5c23937** — CONTENT CHANGED. Review https://www.immigration.govt.nz/visas/visa-waiver-visitor-visa/ and re-verify: entry-requirements.json:GB>NZ.
+  - Removed: “Visa Waiver Visitor Visa &raquo; Immigration New Zealand Visa Waiver Visitor Visa :: Immigration New Zealand Skip to main content Skip to main navigation Skip to secondary navigation Skip to search Process to apply For employers Login Visit Toro Visit Toro Learn what you need …”
+  - Added: “Visa Waiver Visitor Visa &raquo; Immigration New Zealand Visa Waiver Visitor Visa :: Immigration New Zealand Skip to main content Skip to main navigation Skip to secondary navigation Skip to search Application system issue Issued: Friday 13 Nov 2026, 09:50 am NZDT Customers ca…”
+  - Added: “The processing of applications has resumed.”
+  - Added: “Impact of Microsoft outage Planned upgrade Issued: Monday 16 Nov 2026, 04:00 pm NZDT From 05:00 to 07:30 Thursday 19 November (NZDT), you cannot access some visa applications and application forms.”
+  - Added: “Wait for 30 minutes and try again.”
+  - Added: “Check the applications affected by this upgrade: Planned upgrades for 2026 Process to apply For employers Login Visit Toro Visit Toro Learn what you need to do to visit New Zealand.”
+- **data-86e11246b1** — CONTENT CHANGED. Review https://www.immigration.govt.nz/visas/new-zealand-electronic-travel-authority-nzeta/ and re-verify: entry-requirements.json:US>NZ, entry-requirements.json:CA>NZ, entry-requirements.json:JP>NZ (+6 more).
+  - Removed: “New Zealand Electronic Travel Authority (NZeTA) &raquo; Immigration New Zealand New Zealand Electronic Travel Authority (NZeTA) :: Immigration New Zealand Skip to main content Skip to main navigation Skip to secondary navigation Skip to search Process to apply For employers Lo…”
+  - Added: “New Zealand Electronic Travel Authority (NZeTA) &raquo; Immigration New Zealand New Zealand Electronic Travel Authority (NZeTA) :: Immigration New Zealand Skip to main content Skip to main navigation Skip to secondary navigation Skip to search Application system issue Issued: …”
+  - Added: “The processing of applications has resumed.”
+  - Added: “Impact of Microsoft outage Planned upgrade Issued: Monday 16 Nov 2026, 04:00 pm NZDT From 05:00 to 07:30 Thursday 19 November (NZDT), you cannot access some visa applications and application forms.”
+  - Added: “Wait for 30 minutes and try again.”
+  - Added: “Check the applications affected by this upgrade: Planned upgrades for 2026 Process to apply For employers Login Visit Toro Visit Toro Learn what you need to do to visit New Zealand.”
+- **data-64692f38bb** — CONTENT CHANGED. Review https://www.immigration.govt.nz/visas/visitor-visa/ and re-verify: entry-requirements.json:UA>NZ, entry-requirements.json:CN>NZ.
+  - Removed: “Visitor Visa &raquo; Immigration New Zealand Visitor Visa :: Immigration New Zealand Skip to main content Skip to main navigation Skip to secondary navigation Skip to search Process to apply For employers Login Visit Toro Visit Toro Learn what you need to do to visit New Zealand.”
+  - Removed: “After you apply After you apply, we may contact you and ask for: evidence of a medical examination or chest X-ray police certificates as proof of your good character.”
+  - Added: “Visitor Visa &raquo; Immigration New Zealand Visitor Visa :: Immigration New Zealand Skip to main content Skip to main navigation Skip to secondary navigation Skip to search Application system issue Issued: Friday 13 Nov 2026, 09:50 am NZDT Customers can now apply for visas ag…”
+  - Added: “The processing of applications has resumed.”
+  - Added: “Impact of Microsoft outage Planned upgrade Issued: Monday 16 Nov 2026, 04:00 pm NZDT From 05:00 to 07:30 Thursday 19 November (NZDT), you cannot access some visa applications and application forms.”
+  - Added: “Wait for 30 minutes and try again.”
+  - Added: “Check the applications affected by this upgrade: Planned upgrades for 2026 Process to apply For employers Login Visit Toro Visit Toro Learn what you need to do to visit New Zealand.”
+  - Added: “Citizens of Kuwait You should supply Confirmation of your Citizenship certificate.”
+  - Added: “This can be obtained through taking a screenshot of the Citizenship certificate on the Sahel App, Kuwait’s unified government e-services platform.”
+  - Added: “The screenshot you provide must include the QR code, and must be dated within one week (7 calendar days) of your application submission.&nbsp; After you apply After you apply, we may contact you and ask for: evidence of a medical examination or chest X-ray police certificates …”
+- **data-0f91cc45e8** — CONTENT CHANGED. Review https://www.immigration.govt.nz/visit/what-you-need-to-visit-new-zealand/australian-citizens-and-permanent-residents-travelling-to-new-zealand/ and re-verify: entry-requirements.json:AU>NZ.
+  - Removed: “Australian citizens and permanent residents travelling to New Zealand :: Immigration New Zealand Skip to main content Skip to main navigation Skip to secondary navigation Skip to search Process to apply For employers Login Visit Toro Visit Toro Learn what you need to do to vis…”
+  - Added: “Australian citizens and permanent residents travelling to New Zealand :: Immigration New Zealand Skip to main content Skip to main navigation Skip to secondary navigation Skip to search Application system issue Issued: Friday 13 Nov 2026, 09:50 am NZDT Customers can now apply …”
+  - Added: “The processing of applications has resumed.”
+  - Added: “Impact of Microsoft outage Planned upgrade Issued: Monday 16 Nov 2026, 04:00 pm NZDT From 05:00 to 07:30 Thursday 19 November (NZDT), you cannot access some visa applications and application forms.”
+  - Added: “Wait for 30 minutes and try again.”
+  - Added: “Check the applications affected by this upgrade: Planned upgrades for 2026 Process to apply For employers Login Visit Toro Visit Toro Learn what you need to do to visit New Zealand.”
+- **data-36d3e3eff3** — CONTENT CHANGED. Review https://www.mofa.gov.ae/en/visa-exemptions-for-non-citizen and re-verify: entry-requirements.json:US>AE, entry-requirements.json:AU>AE, entry-requirements.json:NZ>AE (+53 more).
+  - Removed: “Confirm Cancel Open in new window Close modal English العربية Close modal The Ministry of Foreign Affairs was awarded a 4 star rating by the Global Star Rating System for Services Learn More”
+  - Added: “Confirm Cancel Open in new window Close modal English العربية Close modal The Ministry of Foreign Affairs was awarded a 5 star rating by the Global Star Rating System for Services Learn More”
+- **data-b2656e9c32** — CONTENT CHANGED. Review https://www.immigration.govt.nz/visit/what-you-need-to-visit-new-zealand/visa-waiver-countries-and-territories/ and re-verify: entry-requirements.json:AR>NZ, entry-requirements.json:CL>NZ, entry-requirements.json:IN>NZ (+48 more).
+  - Removed: “Visa waiver countries and territories :: Immigration New Zealand Skip to main content Skip to main navigation Skip to secondary navigation Skip to search Process to apply For employers Login Visit Toro Visit Toro Learn what you need to do to visit New Zealand.”
+  - Removed: “List of visa waiver countries and territories Andorra Argentina Austria Bahrain Belgium Brazil Brunei Bulgaria Canada Chile Croatia Cyprus Czech&nbsp;Republic Denmark Estonia (citizens only) Finland France Germany Greece (only for Greek passports issued on and after 1 Jan 2006…”
+  - Added: “Visa waiver countries and territories :: Immigration New Zealand Skip to main content Skip to main navigation Skip to secondary navigation Skip to search Application system issue Issued: Friday 13 Nov 2026, 09:50 am NZDT Customers can now apply for visas again through our enha…”
+  - Added: “The processing of applications has resumed.”
+  - Added: “Impact of Microsoft outage Planned upgrade Issued: Monday 16 Nov 2026, 04:00 pm NZDT From 05:00 to 07:30 Thursday 19 November (NZDT), you cannot access some visa applications and application forms.”
+  - Added: “Wait for 30 minutes and try again.”
+  - Added: “Check the applications affected by this upgrade: Planned upgrades for 2026 Process to apply For employers Login Visit Toro Visit Toro Learn what you need to do to visit New Zealand.”
+  - Added: “Alert Visa waiver travel is temporarily suspended for people travelling on Kuwait passports.”
+  - Added: “Visa waiver travel suspended for Kuwait nationals List of visa waiver countries and territories Andorra Argentina Austria Bahrain Belgium Brazil Brunei Bulgaria Canada Chile Croatia Cyprus Czech&nbsp;Republic Denmark Estonia (citizens only) Finland France Germany Greece (only …”
+- **data-b9247b2304** — CONTENT CHANGED. Review https://washington.mfa.gov.sg/visa-and-entry-requirements/ and re-verify: entry-requirements.json:US>SG.
+  - Removed: “Government officials will never ask you to transfer money or disclose bank log-in details over a phone call.”
+  - Removed: “Call the 24/7 ScamShield Helpline at 1799 if you are unsure if something is a scam.”
+  - Removed: “For more information on how to protect yourself against scams, please visit the ScamShield website (opens in new tab) .”
+  - Removed: “Back to top Embassy of the Republic of Singapore in Washington DC Mission updates Consular services Procurement opportunities About Singapore-US Relations About the Embassy About Singapore (opens in new tab) MFA Home (opens in new tab) Reach us Contact Feedback © 2026 Governme…”
+  - Added: “Back to top Embassy of the Republic of Singapore in Washington DC Mission updates Consular services Procurement opportunities About Singapore-US Relations About the Embassy About Singapore (opens in new tab) MFA Home (opens in new tab) Reach us Contact Feedback © 2026 Governme…”
+- **data-d5a3b3a276** — CONTENT CHANGED. Review https://travel.gc.ca/destinations/saudi-arabia and re-verify: entry-requirements.json:CA>SA.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-f038010c28** — CONTENT CHANGED. Review https://www.gov.br/mre/pt-br/embaixada-mexico/requisitos-para-entrada-de-ciudanos-mexicanos-en-brasil-para-turismo-o-negocios and re-verify: entry-requirements.json:MX>BR.
+  - Removed: “Abrir menu principal de navegação Ministério das Relações Exteriores Termos mais buscados Desenrola Brasil assinatura mei enem imposto de renda Termos mais buscados Desenrola Brasil assinatura mei GOV.BR Serviços Buscar serviços por Categorias Órgãos Estados Serviços por públi…”
+  - Added: “Abrir menu principal de navegação Ministério das Relações Exteriores Termos mais buscados Desenrola Brasil mei assinatura enem imposto de renda Termos mais buscados Desenrola Brasil mei assinatura GOV.BR Serviços Buscar serviços por Categorias Órgãos Estados Serviços por públi…”
+- **data-a1a9234753** — CONTENT CHANGED. Review https://www.smartraveller.gov.au/destinations/asia/singapore and re-verify: entry-requirements.json:AU>SG.
+  - Removed: “Singapore Travel Advice &amp; Safety | Smartraveller Skip to main content Smartraveller Facebook Twitter Instagram YouTube Subscribe for updates Search Smartraveller Search Browse destinations Main navigation Home Travel essentials The essentials checklist قائمة التحقّق قبل ال…”
+  - Added: “Singapore Travel Advice &amp; Safety | Smartraveller Skip to main content Smartraveller Facebook Twitter Instagram YouTube Subscribe for updates Search Smartraveller Search Browse destinations Main navigation Home Travel essentials The essentials checklist قائمة التحقّق قبل ال…”
+- **data-5c099b0e77** — CONTENT CHANGED. Review https://tokyo.mfa.gov.sg/visa-information/ and re-verify: entry-requirements.json:JP>SG.
+  - Removed: “Government officials will never ask you to transfer money or disclose bank log-in details over a phone call.”
+  - Removed: “Call the 24/7 ScamShield Helpline at 1799 if you are unsure if something is a scam.”
+  - Removed: “For more information on how to protect yourself against scams, please visit the ScamShield website (opens in new tab) .”
+  - Removed: “Toranomon Toyo Kyodo Building 7F, 1-13-3 Toranomon Minato-ku, Tokyo 105-0001 (opens in new tab) Telephone: 03 3519 4472 Fax: 03-3519-4420 E-mail: tma-visa@tm-a.co.jp Office Hours: 9.30 am - 6.00 pm Embassy of the Republic of Singapore in Tokyo Mission updates Consular services…”
+  - Added: “Toranomon Toyo Kyodo Building 7F, 1-13-3 Toranomon Minato-ku, Tokyo 105-0001 (opens in new tab) Telephone: 03 3519 4472 Fax: 03-3519-4420 E-mail: tma-visa@tm-a.co.jp Office Hours: 9.30 am - 6.00 pm Embassy of the Republic of Singapore in Tokyo Mission updates Consular services…”
+- **data-bf8ae63c42** — CONTENT CHANGED. Review https://x.com/EmbaMexSing/status/1905505850942521574 and re-verify: entry-requirements.json:MX>SG.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-0eaa965b94** — CONTENT CHANGED. Review https://brasilia.mfa.gov.sg/important-information/visa-free-entry-for-brazilians/ and re-verify: entry-requirements.json:BR>SG.
+  - Removed: “Government officials will never ask you to transfer money or disclose bank log-in details over a phone call.”
+  - Removed: “Call the 24/7 ScamShield Helpline at 1799 if you are unsure if something is a scam.”
+  - Removed: “For more information on how to protect yourself against scams, please visit the ScamShield website ↗ (opens in new tab) .”
+  - Removed: “EN BP Mission updates Consular services Procurement opportunities About the Embassy About Singapore ↗ (opens in new tab) eRegister trip (opens in new tab) Home Important information Visa-free entry for Brazilians Visa-free entry for Brazilians Brazilian passport holders may en…”
+  - Removed: “Last updated 6 November 2025 Brazilian passport holders will be able to visit Singapore for business or tourism purposes for a period of up to 30 days without a visa.”
+  - Removed: “The entry requirements to Singapore are listed below: A passport that is valid for at least six months; Sufficient funds for the length of your intended stay; A completed SG Arrival Card (SGAC) with Electronic Health Declaration ↗ (opens in new tab) ; A valid Singapore visa, i…”
+  - Removed: “You may refer to more information on the entry requirements here ↗ (opens in new tab) .”
+  - Removed: “Back to Important information Back to top Embassy of the Republic of Singapore in Brasilia Mission updates Consular services Procurement opportunities About the Embassy About Singapore (opens in new tab) MFA Home (opens in new tab) Reach us Contact Feedback (opens in new tab) …”
+  - Added: “EN BP Mission updates Consular services Procurement opportunities About the Embassy About Singapore (opens in new tab) eRegister trip (opens in new tab) Home Important information Visa-free entry for Brazilians Visa-free entry for Brazilians Brazilian passport holders may ente…”
+  - Added: “Last updated on 6 November 2025 Brazilian passport holders will be able to visit Singapore for business or tourism purposes for a period of up to 30 days without a visa.”
+  - Added: “The entry requirements to Singapore are listed below: A passport that is valid for at least six months; Sufficient funds for the length of your intended stay; A completed SG Arrival Card (SGAC) with Electronic Health Declaration (opens in new tab) ; A valid Singapore visa, if …”
+  - Added: “You may refer to more information on the entry requirements here (opens in new tab) .”
+  - Added: “Back to Important information Back to top Embassy of the Republic of Singapore in Brasilia Mission updates Consular services Procurement opportunities About the Embassy About Singapore (opens in new tab) MFA Home (opens in new tab) Reach us Contact Feedback © 2026 Government o…”
+- **data-56c0bd7029** — CONTENT CHANGED. Review https://travel.gc.ca/destinations/brazil and re-verify: entry-requirements.json:CA>BR.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-9a39695772** — CONTENT CHANGED. Review https://seoul.mfa.gov.sg/consular-services/visa-information/ and re-verify: entry-requirements.json:KR>SG.
+  - Removed: “Government officials will never ask you to transfer money or disclose bank log-in details over a phone call.”
+  - Removed: “Call the 24/7 ScamShield Helpline at 1799 if you are unsure if something is a scam.”
+  - Removed: “For more information on how to protect yourself against scams, please visit the ScamShield website ↗ (opens in new tab) .”
+  - Removed: “Mission updates Consular services Procurement opportunities About the Embassy About Singapore ↗ (opens in new tab) eRegister trip (opens in new tab) Home Consular services Visa information Visa information Learn more about the visa application process at the Singapore Embassy …”
+  - Removed: “Appointments should be made online via https://calendly.com/sgembseoul-pd ↗ (opens in new tab) at least two working days before your visit.”
+  - Removed: “Other foreign nationalities may click here ↗ (opens in new tab) to check if you require a visa to travel to Singapore.”
+  - Removed: “All foreign visitors must ensure that they meet or possess the following entry requirements as stated on the Singapore Immigrations and Checkpoints Authority website ↗ (opens in new tab) .”
+  - Removed: “Visa application Online via Submission of Application for Visa Electronically (SAVE) ↗ (opens in new tab) Visa can be applied online ↗ (opens in new tab) through a local contact if he/she is a Singapore Citizen /Singapore Permanent Resident who is at least 21 years old and has…”
+  - …and 14 more removed
+  - Added: “Mission updates Consular services Procurement opportunities About the Embassy About Singapore (opens in new tab) eRegister trip (opens in new tab) Home Consular services Visa information Visa information Learn more about the visa application process at the Singapore Embassy in…”
+  - Added: “Appointments should be made online via https://calendly.com/sgembseoul-pd (opens in new tab) at least two working days before your visit.”
+  - Added: “Other foreign nationalities may click here (opens in new tab) to check if you require a visa to travel to Singapore.”
+  - Added: “All foreign visitors must ensure that they meet or possess the following entry requirements as stated on the Singapore Immigrations and Checkpoints Authority website (opens in new tab) .”
+  - Added: “Visa application Online via Submission of Application for Visa Electronically (SAVE) (opens in new tab) Visa can be applied online (opens in new tab) through a local contact if he/she is a Singapore Citizen /Singapore Permanent Resident who is at least 21 years old and has a S…”
+  - Added: “The local contact is required to furnish his/her passport details during the application in SAVE (opens in new tab) .”
+  - Added: “Forms can be downloaded from ICA&#x27;s website: Form 14A: https://www.ica.gov.sg/docs/default-source/ica/forms/form14a.pdf (opens in new tab) Form V39A (LOI): https://www.ica.gov.sg/docs/default-source/ica/forms/application-for-visa-letter-of-introduction-v39a.pdf (opens in n…”
+  - Added: “Please see the Immigration &amp; Checkpoints Authority (ICA) (opens in new tab) Homepage for more information.”
+  - …and 11 more added
+- **data-8feaf957ba** — CONTENT CHANGED. Review https://www.cbp.gov/travel/international-visitors/visa-waiver-program and re-verify: entry-requirements.json:IN>US, travel-authorisations.json:esta.
+  - Removed: “Border Patrol Air and Marine Operations Office of Field Operations Office of Trade Office of Professional Responsibility Other Career Opportunities Applicant Categories Veterans Persons with Disabilities Retired Annuitant Senior Executive Service Prepare to Apply Applicant Res…”
+  - Removed: “Citizens/Lawful Permanent Residents Trusted Traveler Programs Advisories and Wait Times Clearing Customs For Travel Industry Personnel For Canadian and Mexican Citizens Pleasure Boats Preventing International Child Abduction Search Authority eBadge Trusted Worker Program Trave…”
+  - Added: “Border Patrol Air and Marine Operations Office of Field Operations Office of Trade Office of Professional Responsibility Other Career Opportunities Applicant Categories Veterans Persons with Disabilities Retired Annuitant Senior Executive Service Prepare to Apply Applicant Res…”
+  - Added: “Citizens/Lawful Permanent Residents Trusted Traveler Programs Advisories and Wait Times Clearing Customs For Travel Industry Personnel For Canadian and Mexican Citizens Pleasure Boats Preventing International Child Abduction Search Authority eBadge Trusted Worker Program Trave…”
+- **data-8ca9822bd2** — CONTENT CHANGED. Review https://www.mfa.gov.sg/Overseas-Mission/Beijing/consular-services/visa-information/ and re-verify: entry-requirements.json:CN>SG.
+  - Removed: “Government officials will never ask you to transfer money or disclose bank log-in details over a phone call.”
+  - Removed: “Call the 24/7 ScamShield Helpline at 1799 if you are unsure if something is a scam.”
+  - Removed: “For more information on how to protect yourself against scams, please visit the ScamShield website (opens in new tab) .”
+  - Removed: “Back to Consular services Other pages in Consular services Application for Singapore Citizenship Application of Singapore biometric passport Certificate of Clearance eRegister Loss of Singapore passport Notarial services Registration of marriage overseas Renewal or transfer of…”
+  - Added: “Back to Consular services Other pages in Consular services Application for Singapore Citizenship Application of Singapore biometric passport Certificate of Clearance eRegister Loss of Singapore passport Notarial services Registration of marriage overseas Renewal or transfer of…”
+- **data-8fec820e0f** — CONTENT CHANGED. Review https://www.immd.gov.hk/eng/services/visas/pre-arrival_registration_for_indian_nationals.html and re-verify: entry-requirements.json:IN>HK.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-20c8ba6c40** — CONTENT CHANGED. Review https://www.irishimmigration.ie/coming-to-visit-ireland/short-stay-visa-waiver-programme/ and re-verify: entry-requirements.json:CN>IE, entry-requirements.json:IN>IE, entry-requirements.json:BA>IE (+5 more).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-4344672611** — CONTENT CHANGED. Review https://www.smartraveller.gov.au/destinations/asia/malaysia and re-verify: entry-requirements.json:AU>MY.
+  - Removed: “Malaysia Travel Advice &amp; Safety | Smartraveller Skip to main content Smartraveller Facebook Twitter Instagram YouTube Subscribe for updates Search Smartraveller Search Browse destinations Main navigation Home Travel essentials The essentials checklist قائمة التحقّق قبل الس…”
+  - Added: “Malaysia Travel Advice &amp; Safety | Smartraveller Skip to main content Smartraveller Facebook Twitter Instagram YouTube Subscribe for updates Search Smartraveller Search Browse destinations Main navigation Home Travel essentials The essentials checklist قائمة التحقّق قبل الس…”
+- **data-3ad0dfaece** — CONTENT CHANGED. Review https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/malaysia/ and re-verify: entry-requirements.json:SG>MY.
+  - Removed: “Beware of scammers pretending to be MFA officers.”
+  - Removed: “Government officials will never ask you to transfer money or disclose bank log-in details over a phone call.”
+  - Removed: “Call the 24/7 ScamShield (opens in new tab) Helpline at 1799 if you are unsure if something is a scam.”
+  - Removed: “Back to top Ministry of Foreign Affairs Travelling overseas Get help overseas Visiting Singapore Careers Newsroom About MFA ICJ Candidature (opens in new tab) Lee Kuan Yew Exchange Fellowship (opens in new tab) Courses at Singapore Cooperation Programme (opens in new tab) Find…”
+  - Added: “Back to top Ministry of Foreign Affairs Travelling overseas Get help overseas Visiting Singapore Careers Newsroom About MFA ICJ Candidature (opens in new tab) Lee Kuan Yew Exchange Fellowship (opens in new tab) Courses at Singapore Cooperation Programme (opens in new tab) Find…”
+- **data-a331946eb0** — CONTENT CHANGED. Review https://china.embassy.gov.au/bjng/Visas_and_Migration.html and re-verify: entry-requirements.json:CN>AU.
+  - Removed: “Visas and Citizenship Australian Embassy China Skip to main content Text size English 中文 Toggle navigation About us &nbsp; About us Australians &nbsp; Consular Services Notarial Services Passport Services Residing in China Connecting with Australia &nbsp; Travelling to Austral…”
+  - Removed: “&nbsp; Page last updated 26 October 2026 &nbsp; Australian Embassy China Embassy&nbsp;address:&nbsp; 21&nbsp;Dongzhimenwai&nbsp;Street,&nbsp;Chaoyang&nbsp;District,&nbsp;Beijing&nbsp; Telephone: +86 10 5140 4111 Follow us: About us About us Australians Consular Services Notari…”
+  - Added: “Visas and Citizenship Australian Embassy China Skip to main content Text size English 中文 Toggle navigation About us &nbsp; About us Job Vacancies Australians &nbsp; Consular Services Notarial Services Passport Services Residing in China Connecting with Australia &nbsp; Travell…”
+  - Added: “&nbsp; Page last updated 26 October 2026 &nbsp; Australian Embassy China Embassy&nbsp;address:&nbsp; 21&nbsp;Dongzhimenwai&nbsp;Street,&nbsp;Chaoyang&nbsp;District,&nbsp;Beijing&nbsp; Telephone: +86 10 5140 4111 Follow us: About us About us Job Vacancies Australians Consular S…”
+- **data-760b59240a** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/sjedinjene-americke-drzave and re-verify: entry-requirements.json:US>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-c6bc242831** — CONTENT CHANGED. Review https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/pengecualian-visa-malaysia-china-bagi-lawatan-jangka-pendek-berkuat-kuasa-esok/ and re-verify: entry-requirements.json:CN>MY.
+  - Removed: “Pengecualian visa Malaysia-China bagi lawatan jangka pendek, berkuat kuasa esok - Portal Berita RTM Skip to content Menu Utama Nasional Fokus Lensa 360 Perspektif Komentar Fakta Visual Fakta Ringkas Niaga Kes Global Arena Gemerlap Mandat Berita BES+ Info Cuaca Search Info Cuac…”
+  - Removed: “Disyorkan Perasmian Pavilion Malaysia sempena COP31 di Turkiye Keselamatan sepanjang kempen PRN Melaka ke-16 terkawal ITU PP-26: Malaysia gesa perluas ketersambungan global melangkaui kawasan berpenduduk Banjir Selangor: KIR terjejas terima bantuan keseluruhan RM3,000 bermula …”
+  - Removed: “Jangan Abaikan Pemakanan dan Kesihatan Anda Artikel Tajaan Zakat korporat McDonald’s Malaysia cecah RM16 juta sejak 2017 PALING POPULAR Jet peribadi terhempas, timbalan menteri dan empat maut Global Iran berjaya bedil USS Abraham Lincoln Global Kata Kunci Nasional Berita Terki…”
+  - Added: “Pengecualian visa Malaysia-China bagi lawatan jangka pendek, berkuat kuasa esok - Portal Berita RTM Skip to content Menu Utama Nasional Fokus Lensa 360 Perspektif Komentar Fakta Visual Fakta Ringkas Niaga Kes Global Arena Gemerlap Mandat Berita BES+ Info Cuaca Search Info Cuac…”
+  - Added: “Disyorkan ASEAN-China belum tetap tarikh akhir baharu rundingan COC Laut China Selatan PM tegas kerajaan kekal stabil, fokus tanggungjawab kepada rakyat Kontrak dua projek lewat di Sarawak berdepan kemungkinan ditamatkan Malaysia-Australia perluas kerjasama, pelbagai bidang st…”
+  - Added: “Jangan Abaikan Pemakanan dan Kesihatan Anda Artikel Tajaan Zakat korporat McDonald’s Malaysia cecah RM16 juta sejak 2017 Artikel Tajaan Dokumentari 75 tahun KWSP bakal bersiaran di RTM, Astro AWANI PALING POPULAR Jet peribadi terhempas, timbalan menteri dan empat maut Global I…”
+- **data-982327ab5d** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/kanada and re-verify: entry-requirements.json:CA>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-20eb9a730e** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/ujedinjeno-kraljevstvo and re-verify: entry-requirements.json:GB>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-1546a7cc1c** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/australija and re-verify: entry-requirements.json:AU>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-41a131dc22** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/novi-zeland and re-verify: entry-requirements.json:NZ>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-8804d000e8** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/japan and re-verify: entry-requirements.json:JP>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-8b56bf85e1** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/singapur and re-verify: entry-requirements.json:SG>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-135ee557e1** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/izrael and re-verify: entry-requirements.json:IL>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-6aef7ce8fa** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/cile and re-verify: entry-requirements.json:CL>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-4f611b4cdd** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/brazil and re-verify: entry-requirements.json:BR>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-4cd3ad3df4** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/meksiko and re-verify: entry-requirements.json:MX>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-6f9a09f970** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/koreja-republika and re-verify: entry-requirements.json:KR>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-a8a28f5178** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/argentina and re-verify: entry-requirements.json:AR>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-34c21c34ba** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/ukrajina and re-verify: entry-requirements.json:UA>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-afb6308e9d** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/kina and re-verify: entry-requirements.json:CN>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-2952b999e4** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/indija and re-verify: entry-requirements.json:IN>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-ccc31df533** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/malezija and re-verify: entry-requirements.json:MY>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-3034246cd4** — CONTENT CHANGED. Review https://www.boca.gov.tw/cp-220-1885-b6ae7-2.html and re-verify: entry-requirements.json:IN>TW.
+  - Removed: “(Taiwan) Travel Authorization Certificate (Applicable to citizens of India, Indonesia, Vietnam, the Philippines and Thailand) facebook twitter line Print Go Back ( alt + ← Go Back) Created：2014-09-26 Data Source：Bureau Of Consular Affairs Counter：30547 Updated：2023-01-12 Onlin…”
+  - Added: “(Taiwan) Travel Authorization Certificate (Applicable to citizens of India, Indonesia, Vietnam, the Philippines and Thailand) facebook twitter line Print Go Back ( alt + ← Go Back) Created：2014-09-26 Data Source：Bureau Of Consular Affairs Counter：30926 Updated：2023-01-12 Onlin…”
+- **data-6501597386** — CONTENT CHANGED. Review https://www.mfa.gov.sg/Countries-Regions/A/Albania/Travel-Page and re-verify: entry-requirements.json:SG>AL.
+  - Removed: “Beware of scammers pretending to be MFA officers.”
+  - Removed: “Government officials will never ask you to transfer money or disclose bank log-in details over a phone call.”
+  - Removed: “Call the 24/7 ScamShield (opens in new tab) Helpline at 1799 if you are unsure if something is a scam.”
+  - Removed: “Back to top Ministry of Foreign Affairs Travelling overseas Get help overseas Visiting Singapore Careers Newsroom About MFA ICJ Candidature (opens in new tab) Lee Kuan Yew Exchange Fellowship (opens in new tab) Courses at Singapore Cooperation Programme (opens in new tab) Find…”
+  - Added: “Back to top Ministry of Foreign Affairs Travelling overseas Get help overseas Visiting Singapore Careers Newsroom About MFA ICJ Candidature (opens in new tab) Lee Kuan Yew Exchange Fellowship (opens in new tab) Courses at Singapore Cooperation Programme (opens in new tab) Find…”
+- **data-06e3e2936a** — CONTENT CHANGED. Review https://www.dhs.gov/visa-waiver-program and re-verify: entry-requirements.json:FR>US, entry-requirements.json:ES>US, entry-requirements.json:DE>US (+45 more).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-359fff9c7a** — CONTENT CHANGED. Review https://www.auswaertiges-amt.de/de/reiseundsicherheit/japansicherheit-213032 and re-verify: entry-requirements.json:DE>JP.
+  - Removed: “Inhalt Geben Sie ein Suchwort ein Suche Häufig gesucht gunther &nbsp; TÜRKEI &nbsp; Reise und Sicherheit &nbsp; Anzahl gefundener Suchergebnisse: Keine passenden Schlagwörter gefunden.”
+  - Removed: “Reisen und Gesundheit Deutsche Auslandsvertretungen in Ihrem Reiseland Vertretungen Ihres Reiselandes in Deutschland Aktuelle Reisewarnungen Reise- und Sicherheit: Letzte Aktualisierungen Service Service Zurück zur ersten Navigationsebene Zur Übersicht Visa und Aufenthalt Kons…”
+  - Removed: “09.11.2026 Artikel Globale Herausforderungen mit starken Partnern bewältigen: G7 Außenminister treffen sich in Paris In einer Welt vielfältiger Krisen und neuer Herausforderungen ist eine enge Zusammenarbeit der wirtschaftsstärksten Demokratien und ihrer Partner unerlässlich, …”
+  - Removed: “Einreise und Zoll Einreise- und Zollbestimmungen für deutsche Staatsangehörige können sich kurzfristig ändern, ohne dass das Auswärtige Amt hiervon vorher unterrichtet wird.”
+  - Added: “Inhalt Geben Sie ein Suchwort ein Suche Häufig gesucht TÜRKEI &nbsp; Marokko Tiere einreise &nbsp; Iran &nbsp; Anzahl gefundener Suchergebnisse: Keine passenden Schlagwörter gefunden.”
+  - Added: “Reisen und Gesundheit Deutsche Auslandsvertretungen in Ihrem Reiseland Vertretungen Ihres Reiselandes in Deutschland Aktuelle Reisewarnungen Reise- und Sicherheit: Letzte Aktualisierungen Service Service Zurück zur ersten Navigationsebene Zur Übersicht Visa und Aufenthalt Kons…”
+  - Added: “16.11.2026 Artikel EU -Außenrat in Brüssel: Ukraine und Sicherheit im Schwarzmeerraum im Fokus Außenminister Wadephul reist heute nach Brüssel zum EU -Außenrat und nimmt daneben an einem Schwarzmeer-Ministertreffen teil.”
+  - Added: “Im Mittelpunkt der Gespräche stehen die Unterstützung der Ukraine, sowie die Sicherheit im Schwarzmeerraum.”
+  - Added: “09.11.2026 Artikel Globale Herausforderungen mit starken Partnern bewältigen: G7 Außenminister treffen sich in Paris In einer Welt vielfältiger Krisen und neuer Herausforderungen ist eine enge Zusammenarbeit der wirtschaftsstärksten Demokratien und ihrer Partner unerlässlich, …”
+- **data-b6a0622af6** — CONTENT CHANGED. Review https://www.nederlandwereldwijd.nl/reisadvies/japan and re-verify: entry-requirements.json:NL>JP.
+  - Removed: “Laatst gewijzigd op: 07-08-2026 Nog steeds geldig op: 09-11-2026 In het kort De kleurcode van het reisadvies voor het zuidoosten van Fukushima is rood.”
+  - Removed: “Wat uw situatie ook is: reis er niet heen.”
+  - Removed: “Hieronder vallen steden als Futaba, Iitate, Katsurao, Minimisōma, Namie, Okuma en Tomioka.”
+  - Removed: “De Japanse overheid heeft deze gebieden daarom afgesloten.”
+  - Removed: “Hier ziet u ook waar de afgesloten gebieden liggen.”
+  - Removed: “Criminaliteit Japan is een relatief veilig land.”
+  - Removed: “Toch komt in grote steden zoals Tokio en Osaka criminaliteit voor.”
+  - Removed: “Dit zijn bijvoorbeeld: Yurekuru Call Japan Shelter Guide Safetytips NHK World-Japan Tokyo Minato City Lees informatie over aardbevingen op de volgende websites (informatie in het Engels): USGS Earthquake Hazards Program Tokyo Metropolitan Government Tropische stormen In Japan …”
+  - …and 4 more removed
+  - Added: “Laatst gewijzigd op: 16-11-2026 Nog steeds geldig op: 16-11-2026 In het kort De kleurcode van het reisadvies voor een klein gebied in het zuidoosten van Fukushima is rood.”
+  - Added: “Wat uw situatie ook is: reis niet hierheen.”
+  - Added: “De Japanse overheid heeft het gebied direct rond de Fukushima Daiichi Nuclear Power Station afgesloten.”
+  - Added: “Criminaliteit In grote steden zoals Tokio en Osaka komt criminaliteit voor.”
+  - Added: “Dit geldt ook voor sofdrugs.”
+  - Added: “Dit zijn bijvoorbeeld: Yurekuru Call Japan Shelter Guide Safetytips NHK World-Japan Tokyo Minato City Lees informatie over aardbevingen op de volgende websites (informatie in het Engels): USGS Earthquake Hazards Program Tokyo Metropolitan Government Lees wat u verder kunt doen…”
+  - Added: “Reisverzekering Sluit altijd een goede reisverzekering af die extra kosten dekt.”
+  - Added: “Check wat u mag meenemen naar Japan op de website van de IATA (Informatie in het Engels).”
+- **data-ed03b958ef** — CONTENT CHANGED. Review https://www.gov.uk/guidance/visiting-the-uk-as-an-eu-eea-or-swiss-citizen and re-verify: entry-requirements.json:FR>GB, entry-requirements.json:ES>GB, entry-requirements.json:DE>GB (+28 more).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-fa1219e903** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/spanija and re-verify: entry-requirements.json:ES>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-fdaaec0f2f** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/francuska and re-verify: entry-requirements.json:FR>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-b5c0f8da7f** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/nemacka and re-verify: entry-requirements.json:DE>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-bf6c5d4124** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/italija and re-verify: entry-requirements.json:IT>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-5d967016d1** — CONTENT CHANGED. Review https://mfa.gov.rs/en/citizens/travel-serbia/visa-regime/holandija and re-verify: entry-requirements.json:NL>RS.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-b4a2a6139e** — CONTENT CHANGED. Review https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/evisitor-651 and re-verify: entry-requirements.json:FR>AU, entry-requirements.json:ES>AU, entry-requirements.json:DE>AU (+33 more).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-74c4d8cdf2** — CONTENT CHANGED. Review https://www.auswaertiges-amt.de/de/service/laender/singapur-node/singapursicherheit-225412 and re-verify: entry-requirements.json:DE>SG.
+  - Removed: “Inhalt Geben Sie ein Suchwort ein Suche Häufig gesucht gunther &nbsp; TÜRKEI &nbsp; Reise und Sicherheit &nbsp; Anzahl gefundener Suchergebnisse: Keine passenden Schlagwörter gefunden.”
+  - Removed: “Reisen und Gesundheit Deutsche Auslandsvertretungen in Ihrem Reiseland Vertretungen Ihres Reiselandes in Deutschland Aktuelle Reisewarnungen Reise- und Sicherheit: Letzte Aktualisierungen Sie sind hier: Service Service Zurück zur ersten Navigationsebene Zur Übersicht Visa und …”
+  - Removed: “09.11.2026 Artikel Globale Herausforderungen mit starken Partnern bewältigen: G7 Außenminister treffen sich in Paris In einer Welt vielfältiger Krisen und neuer Herausforderungen ist eine enge Zusammenarbeit der wirtschaftsstärksten Demokratien und ihrer Partner unerlässlich, …”
+  - Removed: “Reiseinfos Infrastruktur/Verkehr Die Sicherheitslage im Nahen und Mittleren Osten bleibt volatil.”
+  - Added: “Inhalt Geben Sie ein Suchwort ein Suche Häufig gesucht TÜRKEI &nbsp; Marokko Tiere einreise &nbsp; Iran &nbsp; Anzahl gefundener Suchergebnisse: Keine passenden Schlagwörter gefunden.”
+  - Added: “Reisen und Gesundheit Deutsche Auslandsvertretungen in Ihrem Reiseland Vertretungen Ihres Reiselandes in Deutschland Aktuelle Reisewarnungen Reise- und Sicherheit: Letzte Aktualisierungen Sie sind hier: Service Service Zurück zur ersten Navigationsebene Zur Übersicht Visa und …”
+  - Added: “16.11.2026 Artikel EU -Außenrat in Brüssel: Ukraine und Sicherheit im Schwarzmeerraum im Fokus Außenminister Wadephul reist heute nach Brüssel zum EU -Außenrat und nimmt daneben an einem Schwarzmeer-Ministertreffen teil.”
+  - Added: “Im Mittelpunkt der Gespräche stehen die Unterstützung der Ukraine, sowie die Sicherheit im Schwarzmeerraum.”
+  - Added: “09.11.2026 Artikel Globale Herausforderungen mit starken Partnern bewältigen: G7 Außenminister treffen sich in Paris In einer Welt vielfältiger Krisen und neuer Herausforderungen ist eine enge Zusammenarbeit der wirtschaftsstärksten Demokratien und ihrer Partner unerlässlich, …”
+- **data-5f9aa0495a** — CONTENT CHANGED. Review https://www.nederlandwereldwijd.nl/reisadvies/singapore and re-verify: entry-requirements.json:NL>SG.
+  - Removed: “Laatst gewijzigd op: 09-09-2026 Nog steeds geldig op: 09-11-2026 In het kort De kleurcode van het reisadvies voor Singapore is groen.”
+  - Added: “Laatst gewijzigd op: 09-09-2026 Nog steeds geldig op: 16-11-2026 In het kort De kleurcode van het reisadvies voor Singapore is groen.”
+- **data-57f4a46ee5** — CONTENT CHANGED. Review https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332 and re-verify: entry-requirements.json:DE>AE, entry-requirements.json:AT>AE, entry-requirements.json:BE>AE (+41 more).
+  - Removed: “Inhalt Geben Sie ein Suchwort ein Suche Häufig gesucht gunther &nbsp; TÜRKEI &nbsp; Reise und Sicherheit &nbsp; Anzahl gefundener Suchergebnisse: Keine passenden Schlagwörter gefunden.”
+  - Removed: “Reisen und Gesundheit Deutsche Auslandsvertretungen in Ihrem Reiseland Vertretungen Ihres Reiselandes in Deutschland Aktuelle Reisewarnungen Reise- und Sicherheit: Letzte Aktualisierungen Service Service Zurück zur ersten Navigationsebene Zur Übersicht Visa und Aufenthalt Kons…”
+  - Removed: “In Umm al Quwain, Sharjah und Ras Al Khaimah sind aktuell die Strände bzw.”
+  - Removed: “Strandabschnitte gesperrt.”
+  - Removed: “Das Ministerium für Klimawandel und Umwelt hat bestätigt, dass die Schließung der Strände auf den Austritt von Öl aus einem Öltanker zurückgeht.”
+  - Removed: “Reinigungsarbeiten sind im Gange.”
+  - Removed: “09.11.2026 Artikel Globale Herausforderungen mit starken Partnern bewältigen: G7 Außenminister treffen sich in Paris In einer Welt vielfältiger Krisen und neuer Herausforderungen ist eine enge Zusammenarbeit der wirtschaftsstärksten Demokratien und ihrer Partner unerlässlich, …”
+  - Removed: “Reiseinfos Siehe Aktuelles Achten Sie auf einen ausreichenden Reisekrankenversicherungsschutz.”
+  - Added: “Inhalt Geben Sie ein Suchwort ein Suche Häufig gesucht TÜRKEI &nbsp; Marokko Tiere einreise &nbsp; Iran &nbsp; Anzahl gefundener Suchergebnisse: Keine passenden Schlagwörter gefunden.”
+  - Added: “Reisen und Gesundheit Deutsche Auslandsvertretungen in Ihrem Reiseland Vertretungen Ihres Reiselandes in Deutschland Aktuelle Reisewarnungen Reise- und Sicherheit: Letzte Aktualisierungen Service Service Zurück zur ersten Navigationsebene Zur Übersicht Visa und Aufenthalt Kons…”
+  - Added: “Das Ministerium für Klimawandel und Umwelt hat bestätigt, dass die Schließung einiger Strände in Umm al Quwain, Sharjah, Ras Al Khaimah und Khor Fakkan auf den Austritt von Öl aus einem Öltanker zurückgeht.”
+  - Added: “Reinigungsarbeiten sind im Gange, mehrere Strände sind jedoch weiterhin gesperrt.”
+  - Added: “16.11.2026 Artikel EU -Außenrat in Brüssel: Ukraine und Sicherheit im Schwarzmeerraum im Fokus Außenminister Wadephul reist heute nach Brüssel zum EU -Außenrat und nimmt daneben an einem Schwarzmeer-Ministertreffen teil.”
+  - Added: “Im Mittelpunkt der Gespräche stehen die Unterstützung der Ukraine, sowie die Sicherheit im Schwarzmeerraum.”
+  - Added: “09.11.2026 Artikel Globale Herausforderungen mit starken Partnern bewältigen: G7 Außenminister treffen sich in Paris In einer Welt vielfältiger Krisen und neuer Herausforderungen ist eine enge Zusammenarbeit der wirtschaftsstärksten Demokratien und ihrer Partner unerlässlich, …”
+  - Added: “Für die Erlangung eines Aufenthaltstitels sind u.a.”
+  - …and 1 more added
+- **data-5f314004bc** — CONTENT CHANGED. Review https://www.nederlandwereldwijd.nl/reisadvies/verenigde-arabische-emiraten and re-verify: entry-requirements.json:NL>AE.
+  - Removed: “Laatst gewijzigd op: 19-10-2026 Nog steeds geldig op: 09-11-2026 In het kort De veiligheidssituatie in de Verenigde Arabische Emiraten (VAE) is gestabiliseerd maar blijft onvoorspelbaar.”
+  - Added: “Laatst gewijzigd op: 19-10-2026 Nog steeds geldig op: 16-11-2026 In het kort De veiligheidssituatie in de Verenigde Arabische Emiraten (VAE) is gestabiliseerd maar blijft onvoorspelbaar.”
+- **data-3464f208cc** — CONTENT CHANGED. Review https://www.nederlandwereldwijd.nl/reisadvies/maldiven and re-verify: entry-requirements.json:NL>MV.
+  - Removed: “Laatst gewijzigd op: 09-09-2026 Nog steeds geldig op: 09-11-2026 In het kort De kleurcode van het reisadvies voor de Maldiven is geel.”
+  - Added: “Laatst gewijzigd op: 09-09-2026 Nog steeds geldig op: 16-11-2026 In het kort De kleurcode van het reisadvies voor de Maldiven is geel.”
+- **data-fc8d8e971d** — CONTENT CHANGED. Review https://www.auswaertiges-amt.de/de/service/laender/malediven-node/maledivensicherheit/220382 and re-verify: entry-requirements.json:DE>MV.
+  - Removed: “Inhalt Geben Sie ein Suchwort ein Suche Häufig gesucht gunther &nbsp; TÜRKEI &nbsp; Reise und Sicherheit &nbsp; Anzahl gefundener Suchergebnisse: Keine passenden Schlagwörter gefunden.”
+  - Removed: “Reisen und Gesundheit Deutsche Auslandsvertretungen in Ihrem Reiseland Vertretungen Ihres Reiselandes in Deutschland Aktuelle Reisewarnungen Reise- und Sicherheit: Letzte Aktualisierungen Sie sind hier: Service Service Zurück zur ersten Navigationsebene Zur Übersicht Visa und …”
+  - Removed: “09.11.2026 Artikel Globale Herausforderungen mit starken Partnern bewältigen: G7 Außenminister treffen sich in Paris In einer Welt vielfältiger Krisen und neuer Herausforderungen ist eine enge Zusammenarbeit der wirtschaftsstärksten Demokratien und ihrer Partner unerlässlich, …”
+  - Removed: “Reiseinfos Zuständige Auslandsvertretung In den Malediven gibt es keine deutsche Botschaft, zuständig ist die deutsche Botschaft in Colombo/Sri Lanka.”
+  - Added: “Inhalt Geben Sie ein Suchwort ein Suche Häufig gesucht TÜRKEI &nbsp; Marokko Tiere einreise &nbsp; Iran &nbsp; Anzahl gefundener Suchergebnisse: Keine passenden Schlagwörter gefunden.”
+  - Added: “Reisen und Gesundheit Deutsche Auslandsvertretungen in Ihrem Reiseland Vertretungen Ihres Reiselandes in Deutschland Aktuelle Reisewarnungen Reise- und Sicherheit: Letzte Aktualisierungen Sie sind hier: Service Service Zurück zur ersten Navigationsebene Zur Übersicht Visa und …”
+  - Added: “16.11.2026 Artikel EU -Außenrat in Brüssel: Ukraine und Sicherheit im Schwarzmeerraum im Fokus Außenminister Wadephul reist heute nach Brüssel zum EU -Außenrat und nimmt daneben an einem Schwarzmeer-Ministertreffen teil.”
+  - Added: “Im Mittelpunkt der Gespräche stehen die Unterstützung der Ukraine, sowie die Sicherheit im Schwarzmeerraum.”
+  - Added: “09.11.2026 Artikel Globale Herausforderungen mit starken Partnern bewältigen: G7 Außenminister treffen sich in Paris In einer Welt vielfältiger Krisen und neuer Herausforderungen ist eine enge Zusammenarbeit der wirtschaftsstärksten Demokratien und ihrer Partner unerlässlich, …”
+- **data-194db24629** — CONTENT CHANGED. Review https://www.nederlandwereldwijd.nl/reisadvies/saoedi-arabie and re-verify: entry-requirements.json:NL>SA.
+  - Removed: “Laatst gewijzigd op: 22-10-2026 Nog steeds geldig op: 09-11-2026 In het kort Sinds begin september 2026 zijn er in verschillende delen van Saoedi-Arabië regelmatig drone- en raketaanvallen vanuit de Houthi’s in Jemen.”
+  - Added: “Laatst gewijzigd op: 22-10-2026 Nog steeds geldig op: 16-11-2026 In het kort Sinds begin september 2026 zijn er in verschillende delen van Saoedi-Arabië regelmatig drone- en raketaanvallen vanuit de Houthi’s in Jemen.”
+- **data-2755a8eee2** — CONTENT CHANGED. Review https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=Singapur and re-verify: entry-requirements.json:ES>SG.
+  - Removed: “Recomendaciones vigentes a 9 de noviembre de 2026 Última actualización el 6 de mayo de 2026 Notas importantes NO HAY RESTRICCIONES ESPECÍFICAS RELATIVAS A VIAJES A ESTE PAÍS.&#160;Se sugiere leer con atención el resto&#160;de estas recomendaciones de viaje.&#160; Singapur es u…”
+  - Removed: “Correo electrónico&#58;&#160; singapore@tourspain.es &#160; Teléfonos de interés&#58; Policía&#58; 999 Bomberos y Ambulancia&#58; 995 Ambulancias (general)&#58; 1777 Policía (Hotline)&#58; 1800 353 0000 Policía tráfico&#58; 6547 0000 Más información El Gobierno de España conde…”
+  - Removed: “Iberoamérica en clave de arte” Banners Cooperación Española Instituto Cervantes Participación pública Red de casas Portal de transparecia Accesos directos Embajadas y Consulados Información Protección de Datos Stop acoso sexual y por razón de sexo Preguntas frecuentes Ficha pa…”
+  - Added: “Recomendaciones vigentes a 16 de noviembre de 2026 Última actualización el 6 de mayo de 2026 Notas importantes NO HAY RESTRICCIONES ESPECÍFICAS RELATIVAS A VIAJES A ESTE PAÍS.&#160;Se sugiere leer con atención el resto&#160;de estas recomendaciones de viaje.&#160; Singapur es …”
+  - Added: “Correo electrónico&#58;&#160; singapore@tourspain.es &#160; Teléfonos de interés&#58; Policía&#58; 999 Bomberos y Ambulancia&#58; 995 Ambulancias (general)&#58; 1777 Policía (Hotline)&#58; 1800 353 0000 Policía tráfico&#58; 6547 0000 Más información El Gobierno de España conde…”
+- **data-60adf2dadc** — CONTENT CHANGED. Review https://www.nederlandwereldwijd.nl/reisadvies/egypte and re-verify: entry-requirements.json:NL>EG.
+  - Removed: “Laatst gewijzigd op: 19-06-2026 Nog steeds geldig op: 09-11-2026 In het kort De kleurcode van het reisadvies is rood voor Noord-Sinaï, de grenzen met Libië en Sudan, de Hala’ib-driehoek en Bir Tawil.”
+  - Added: “Laatst gewijzigd op: 19-06-2026 Nog steeds geldig op: 16-11-2026 In het kort De kleurcode van het reisadvies is rood voor Noord-Sinaï, de grenzen met Libië en Sudan, de Hala’ib-driehoek en Bir Tawil.”
+- **data-e1c353988d** — CONTENT CHANGED. Review https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=Maldivas and re-verify: entry-requirements.json:ES>MV.
+  - Removed: “Recomendaciones vigentes a 9 de noviembre de 2026 Última actualización el 18 de junio de 2026 Notas importantes NO HAY RESTRICCIONES ESPECÍFICAS RELATIVAS A VIAJES A ESTE PAÍS.”
+  - Removed: “Direcciones y teléfonos de interés La Embajada de Maldivas acreditada en España es su&#160; Representación en Londres 22 Nottingham Place&#160;Londres W1U 5NJ.&#160;Reino Unido Teléfono&#58;+44 (0)207 224 2135 Fax&#58; +44 (0)207 224 2157 Correo electrónico&#58;&#160; info@mal…”
+  - Removed: “Iberoamérica en clave de arte” Banners Cooperación Española Instituto Cervantes Participación pública Red de casas Portal de transparecia Accesos directos Embajadas y Consulados Información Protección de Datos Stop acoso sexual y por razón de sexo Preguntas frecuentes Ficha pa…”
+  - Added: “Recomendaciones vigentes a 16 de noviembre de 2026 Última actualización el 18 de junio de 2026 Notas importantes NO HAY RESTRICCIONES ESPECÍFICAS RELATIVAS A VIAJES A ESTE PAÍS.”
+  - Added: “Direcciones y teléfonos de interés La Embajada de Maldivas acreditada en España es su&#160; Representación en Londres 22 Nottingham Place&#160;Londres W1U 5NJ.&#160;Reino Unido Teléfono&#58;+44 (0)207 224 2135 Fax&#58; +44 (0)207 224 2157 Correo electrónico&#58;&#160; info@mal…”
+- **data-83bb1acff8** — CONTENT CHANGED. Review https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=Egipto and re-verify: entry-requirements.json:ES>EG.
+  - Removed: “Recomendaciones vigentes a 9 de noviembre de 2026 Última actualización el 19 de octubre de 2026 Notas importantes Eg ipto es un país que tiene actualmente un buen nivel de seguridad general, con una mejora notable durante los últimos años.”
+  - Removed: “&#160; Agencias de transferencia internacional de dinero&#58; - Western Union&#58; Tel&#58; 19190 (disponible llamando desde Egipto sin prefijo) - MoneyGram&#58; Tel&#58; 2 2395 9842/3 &#160; &#160; Más información El Gobierno de España condena el ataque en Cracovia España, Fr…”
+  - Removed: “Iberoamérica en clave de arte” Banners Cooperación Española Instituto Cervantes Participación pública Red de casas Portal de transparecia Accesos directos Embajadas y Consulados Información Protección de Datos Stop acoso sexual y por razón de sexo Preguntas frecuentes Ficha pa…”
+  - Added: “Recomendaciones vigentes a 16 de noviembre de 2026 Última actualización el 19 de octubre de 2026 Notas importantes Eg ipto es un país que tiene actualmente un buen nivel de seguridad general, con una mejora notable durante los últimos años.”
+  - Added: “&#160; Agencias de transferencia internacional de dinero&#58; - Western Union&#58; Tel&#58; 19190 (disponible llamando desde Egipto sin prefijo) - MoneyGram&#58; Tel&#58; 2 2395 9842/3 &#160; &#160; Más información El Gobierno de España condena los bombardeos israelíes contra …”
+- **data-9001f1414d** — CONTENT CHANGED. Review https://www.auswaertiges-amt.de/de/service/laender/tuerkei-node/tuerkeisicherheit-201962 and re-verify: entry-requirements.json:DE>TR.
+  - Removed: “Inhalt Geben Sie ein Suchwort ein Suche Häufig gesucht gunther &nbsp; TÜRKEI &nbsp; Reise und Sicherheit &nbsp; Anzahl gefundener Suchergebnisse: Keine passenden Schlagwörter gefunden.”
+  - Removed: “Reisen und Gesundheit Deutsche Auslandsvertretungen in Ihrem Reiseland Vertretungen Ihres Reiselandes in Deutschland Aktuelle Reisewarnungen Reise- und Sicherheit: Letzte Aktualisierungen Sie sind hier: Service Service Zurück zur ersten Navigationsebene Zur Übersicht Visa und …”
+  - Removed: “09.11.2026 Artikel Globale Herausforderungen mit starken Partnern bewältigen: G7 Außenminister treffen sich in Paris In einer Welt vielfältiger Krisen und neuer Herausforderungen ist eine enge Zusammenarbeit der wirtschaftsstärksten Demokratien und ihrer Partner unerlässlich, …”
+  - Added: “Inhalt Geben Sie ein Suchwort ein Suche Häufig gesucht TÜRKEI &nbsp; Marokko Tiere einreise &nbsp; Iran &nbsp; Anzahl gefundener Suchergebnisse: Keine passenden Schlagwörter gefunden.”
+  - Added: “Reisen und Gesundheit Deutsche Auslandsvertretungen in Ihrem Reiseland Vertretungen Ihres Reiselandes in Deutschland Aktuelle Reisewarnungen Reise- und Sicherheit: Letzte Aktualisierungen Sie sind hier: Service Service Zurück zur ersten Navigationsebene Zur Übersicht Visa und …”
+  - Added: “16.11.2026 Artikel EU -Außenrat in Brüssel: Ukraine und Sicherheit im Schwarzmeerraum im Fokus Außenminister Wadephul reist heute nach Brüssel zum EU -Außenrat und nimmt daneben an einem Schwarzmeer-Ministertreffen teil.”
+  - Added: “Im Mittelpunkt der Gespräche stehen die Unterstützung der Ukraine, sowie die Sicherheit im Schwarzmeerraum.”
+  - Added: “Reiseinfos Siehe Aktuelles Infrastruktur/Verkehr Die Türkei verfügt über gute Straßenverbindungen, ein dichtes Inlandsflugnetz und ein Schnellzugnetz zwischen einigen Großstädten.”
+- **data-67b9008b4f** — CONTENT CHANGED. Review https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Detalle-recomendaciones-de-viaje.aspx?trc=Arabia+Saud%C3%AD and re-verify: entry-requirements.json:ES>SA.
+  - Removed: “Recomendaciones vigentes a 9 de noviembre de 2026 Última actualización el 10 de junio de 2026 Notas importantes E l espacio aéreo de Arabia Saudí se encuentra abierto.”
+  - Removed: “Correo electrónico&#58;&#160; emb.riad.info@maec.es Página web Oficina Comercial,&#160; P.O.Box 94327, Riyadh-11693.&#160; Tel&#58; +966 11 464 51 25 y 11 461 21 53.&#160; Fax&#58; +966 11 462 13 03 |&#160; Correo electrónico&#58;&#160; riad@comercio.mineco.es ​ Consulado Hono…”
+  - Removed: “Iberoamérica en clave de arte” Banners Cooperación Española Instituto Cervantes Participación pública Red de casas Portal de transparecia Accesos directos Embajadas y Consulados Información Protección de Datos Stop acoso sexual y por razón de sexo Preguntas frecuentes Ficha pa…”
+  - Added: “Recomendaciones vigentes a 16 de noviembre de 2026 Última actualización el 10 de junio de 2026 Notas importantes E l espacio aéreo de Arabia Saudí se encuentra abierto.”
+  - Added: “Correo electrónico&#58;&#160; emb.riad.info@maec.es Página web Oficina Comercial,&#160; P.O.Box 94327, Riyadh-11693.&#160; Tel&#58; +966 11 464 51 25 y 11 461 21 53.&#160; Fax&#58; +966 11 462 13 03 |&#160; Correo electrónico&#58;&#160; riad@comercio.mineco.es ​ Consulado Hono…”
+- **data-12168ba3d8** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=64&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:US>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-64094db459** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=39&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:CA>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-265a605f98** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=184&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:GB>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-09315aef12** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=15&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:AU>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-0b1c05f7a2** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=169&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:NZ>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-2293d238e6** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=123&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:JP>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-c785c72fe4** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=48&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:KR>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-cf31cdd519** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=211&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:SG>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-c4970c2c74** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=143&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:MY>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-c0a55bf677** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=42&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:CN>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-c910072701** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=92&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:IN>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-7b529a5bdf** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=120&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:IL>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-7d87e8d664** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=238&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:UA>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-87c5931edc** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=152&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:MX>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-b55faf3aca** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=31&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:BR>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-7fe9e0bd81** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=12&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:AR>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-5d26d72239** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=41&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:CL>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-164ae2a3e9** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=70&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:FR>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-ca69e9eb84** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=4&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:DE>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-bcadf7b7ae** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=63&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:ES>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-db4f976bb1** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=121&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:IT>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-e4cc1248e1** — CONTENT CHANGED. Review https://consultas.mirex.gob.do/servicios/visas/consulta-de-requisitos-para-extranjeros-ingresar-a-la-republica-dominicana/results?condicion=Extranjeros&country=171&tipoPasaporte=Ordinario&tipoVisa=visa_ts and re-verify: entry-requirements.json:NL>DO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-91ef7d5549** — CONTENT CHANGED. Review https://www.diplomatie.gouv.fr/fr/information-par-pays/jordanie/conseils-aux-voyageurs-entree-sejour and re-verify: entry-requirements.json:FR>JO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-9434f31edc** — CONTENT CHANGED. Review https://www.nederlandwereldwijd.nl/reisadvies/jordanie and re-verify: entry-requirements.json:NL>JO.
+  - Removed: “Laatst gewijzigd op: 08-09-2026 Nog steeds geldig op: 09-11-2026 In het kort De veiligheidssituatie in Jordanië is gestabiliseerd maar blijft onvoorspelbaar.”
+  - Added: “Laatst gewijzigd op: 08-09-2026 Nog steeds geldig op: 16-11-2026 In het kort De veiligheidssituatie in Jordanië is gestabiliseerd maar blijft onvoorspelbaar.”
+- **data-aa82802f5b** — CONTENT CHANGED. Review https://travel.gc.ca/destinations/jordan and re-verify: entry-requirements.json:CA>JO.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-8602460429** — CONTENT CHANGED. Review https://travel.gc.ca/destinations/bahamas and re-verify: entry-requirements.json:CA>BS.
+  - Removed: “Bahamas travel advice Skip to main content Skip to "About government" Language selection Français Government of Canada Search Search Travel and tourism Search Menu Main Menu Jobs Immigration and citizenship Travel and tourism Business Benefits Health Taxes Environment and natu…”
+  - Removed: “Box SS-6371, Nassau, Bahamas Telephone 1-876-926-1500 / 1-844-880-6519 Online form/Email Request assistance: United States and Caribbean Internet Nassau - Honorary consul of Canada Facebook Canada in the Bahamas X (Twitter) Canada in Bahamas Kingston - High Commission of Canad…”
+  - Removed: “Box 1500, Kingston, Jamaica Telephone 1-876-926-1500 / 1-844-880-6519 Fax 1-876-733-3493 Online form/Email Request assistance: United States and Caribbean Internet Kingston - High Commission of Canada Facebook High Commission of Canada in Jamaica X (Twitter) @CanadaJamaica Ins…”
+  - Removed: “Date modified: 13 October 2026 16:11 ET Date modified:&#32; 2026-04-17 About this site Government of Canada All contacts Departments and agencies About government Themes and topics Jobs Immigration and citizenship Travel and tourism Business Benefits Health Taxes Environment a…”
+  - Added: “Bahamas travel advice Skip to main content Skip to "About government" Language selection Français Government of Canada Search Search Travel and tourism Search Menu Main Menu Jobs Immigration and citizenship Travel and tourism Business Benefits Health Taxes Environment and natu…”
+  - Added: “section – updated mission coordinates Last updated: 13 November 2026 15:22 ET On this page Risk level Safety and security Entry and exit requirements Health Laws and culture Natural disasters and climate Need help?”
+  - Added: “Box SS-6371, Nassau, Bahamas Telephone 1-876-926-1500 / 1-844-880-6519 Online form/Email Request assistance: United States and Caribbean WhatsApp +1-202-931-0753 Signal +1-343-337-4357 Internet Nassau - Honorary consul of Canada Facebook Canada in the Bahamas X (Twitter) Canad…”
+  - Added: “Box 1500, Kingston, Jamaica Telephone 1-876-926-1500 / 1-844-880-6519 Fax 1-876-733-3493 Online form/Email Request assistance: United States and Caribbean WhatsApp +1-202-931-0753 Signal +1-343-337-4357 Internet Kingston - High Commission of Canada Facebook High Commission of …”
+  - Added: “Date modified: 13 November 2026 15:22 ET Date modified:&#32; 2026-04-17 About this site Government of Canada All contacts Departments and agencies About government Themes and topics Jobs Immigration and citizenship Travel and tourism Business Benefits Health Taxes Environment …”
+- **data-f8baeafbc9** — CONTENT CHANGED. Review https://www.nederlandwereldwijd.nl/reisadvies/bahamas and re-verify: entry-requirements.json:NL>BS, entry-requirements.json:AT>BS, entry-requirements.json:BE>BS (+36 more).
+  - Removed: “Laatst gewijzigd op: 12-06-2026 Nog steeds geldig op: 09-11-2026 In het kort De kleurcode van het reisadvies voor de Bahama’s is geel.”
+  - Added: “Laatst gewijzigd op: 12-06-2026 Nog steeds geldig op: 16-11-2026 In het kort De kleurcode van het reisadvies voor de Bahama’s is geel.”
+- **data-ece01c8323** — CONTENT CHANGED. Review https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/tanzania/ and re-verify: entry-requirements.json:SG>TZ.
+  - Removed: “Beware of scammers pretending to be MFA officers.”
+  - Removed: “Government officials will never ask you to transfer money or disclose bank log-in details over a phone call.”
+  - Removed: “Call the 24/7 ScamShield (opens in new tab) Helpline at 1799 if you are unsure if something is a scam.”
+  - Removed: “Back to top Ministry of Foreign Affairs Travelling overseas Get help overseas Visiting Singapore Careers Newsroom About MFA ICJ Candidature (opens in new tab) Lee Kuan Yew Exchange Fellowship (opens in new tab) Courses at Singapore Cooperation Programme (opens in new tab) Find…”
+  - Added: “Back to top Ministry of Foreign Affairs Travelling overseas Get help overseas Visiting Singapore Careers Newsroom About MFA ICJ Candidature (opens in new tab) Lee Kuan Yew Exchange Fellowship (opens in new tab) Courses at Singapore Cooperation Programme (opens in new tab) Find…”
+- **data-c4191cfa4f** — CONTENT CHANGED. Review https://www.nederlandwereldwijd.nl/reisadvies/cambodja and re-verify: entry-requirements.json:NL>KH.
+  - Removed: “Laatst gewijzigd op: 10-09-2026 Nog steeds geldig op: 09-11-2026 In het kort De kleurcode van het reisadvies is rood voor de strook van 5 kilometer vanaf de grens met Thailand.”
+  - Added: “Laatst gewijzigd op: 10-09-2026 Nog steeds geldig op: 16-11-2026 In het kort De kleurcode van het reisadvies is rood voor de strook van 5 kilometer vanaf de grens met Thailand.”
+- **data-1401e7be28** — CONTENT CHANGED. Review https://www.gob.ec/mremh/tramites/concesion-visa-visitante-temporal-turista-90-dias and re-verify: entry-requirements.json:CN>EC, entry-requirements.json:IN>EC, entry-requirements.json:AL>EC.
+  - Removed: “1417 75 Cuéntanos el problema Tenemos en cuenta todos los comentarios, ya que nos ayudan a mejorar constantemente la información.”
+  - Added: “1418 75 Cuéntanos el problema Tenemos en cuenta todos los comentarios, ya que nos ayudan a mejorar constantemente la información.”
+- **data-fe18f110aa** — CONTENT CHANGED. Review https://www.mfa.am/en/visafreelist and re-verify: entry-requirements.json:US>AM, entry-requirements.json:GB>AM, entry-requirements.json:AU>AM (+40 more).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-c881091efd** — CONTENT CHANGED. Review https://www.mfa.am/en/whoneedvisa and re-verify: entry-requirements.json:AR>AM, entry-requirements.json:BR>AM, entry-requirements.json:CN>AM (+7 more).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-1340d49844** — CONTENT CHANGED. Review https://lex.uz/ru/docs/513096 and re-verify: entry-requirements.json:AU>UZ, entry-requirements.json:AR>UZ, entry-requirements.json:IL>UZ (+55 more).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-e798f118b3** — CONTENT CHANGED. Review https://lex.uz/ru/docs/7807760 and re-verify: entry-requirements.json:US>UZ.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-3605d636a0** — CONTENT CHANGED. Review https://europa.eu/youreurope/citizens/travel/entry-exit/eu-citizen/index_en.htm and re-verify: entry-requirements.json:AT>AL, entry-requirements.json:BE>AL, entry-requirements.json:BG>AL (+20 more).
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+- **data-67e9ad9dd5** — CONTENT CHANGED. Review https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-07-25;286 and re-verify: overstay-penalties.json:IT.
+  - (only wording that isn't sentence-shaped changed, e.g. a table or a date line)
+
+## Newly unreachable (URL moved? blocked?)
+
+- **ec-schengen-area-page** — fetch failed (HTTP 429): https://home-affairs.ec.europa.eu/policies/schengen/schengen-area_en — used by data/countries.json (membership list, Cyprus status)
+- **ec-ees-policy-page** — fetch failed (HTTP 429): https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/entry-exit-system_en — used by /ees and /ees/what-to-expect content (rollout dates, data collected)
+- **data-432c6b3ae9** — fetch failed (no readable content (0 chars: JS-rendered page or bot challenge)): https://eur-lex.europa.eu/eli/dec/2022/2451/oj — used by countries.json:row
+- **data-891842a052** — fetch failed (HTTP 403): https://www.consilium.europa.eu/en/press/press-releases/2023/12/30/schengen-area-council-takes-move-towards-lifting-border-controls-with-bulgaria-and-romania/ — used by countries.json:row
+- **data-0db98fbbf2** — fetch failed (HTTP 429): https://home-affairs.ec.europa.eu/news/bulgaria-and-romania-join-schengen-area-2025-01-03_en — used by countries.json:row
+- **data-51bc433d5a** — fetch failed (no readable content (10 chars: JS-rendered page or bot challenge)): https://laws.e-gov.go.jp/law/333AC0000000006 — used by customs-items.json:weapons-jp
+- **data-95ff5d3d6d** — fetch failed (HTTP 403): https://scuml.efcc.gov.ng/wp-content/uploads/2022/05/MONEY-LAUNDERING-publication.pdf — used by customs-items.json:cash-ng
+- **za-visa-exemption-list** — fetch failed (The operation was aborted due to timeout): https://www.dha.gov.za/index.php/immigration-services/exempt-countries — used by data/entry-requirements.json (South Africa DHA visa exemption list — also watch for the new ETA's eligibility/fee terms once published)
+- **data-120cfe5926** — fetch failed (The operation was aborted due to timeout): https://www.lba.de/EN/Drones/Cross_Border_Operations/Cross_Border_Operations_hilfs_node.html — used by customs-items.json:drones-de
+- **data-7002dc421f** — fetch failed (fetch failed): https://www.abf.gov.au/help-and-support-subsite/CustomsNotices/2026-29.pdf — used by customs-items.json:nicotine-pouches-au
+- **data-0467ff9207** — fetch failed (fetch failed): https://www.austrac.gov.au/general-public/moving-money-overseas — used by customs-items.json:cash-au
+- **data-a0eb4b6659** — fetch failed (fetch failed): https://www.tga.gov.au/resources/consumer-information-and-resources/travelling-medicines-and-medical-devices/entering-australia — used by customs-items.json:medication-au, customs-items.json:injectable-medication-au
+- **data-399c06a72c** — fetch failed (fetch failed): https://www.incb.org/documents/Travellers/files/TUR_ENG_2017.pdf — used by customs-items.json:controlled-medication-tr
+- **data-d45b75858a** — fetch failed (no readable content (6 chars: JS-rendered page or bot challenge)): https://www.tga.gov.au/resources/explore-topic/medicinal-cannabis-hub/medicinal-cannabis-information-patients/medicinal-cannabis-importation-and-travellers-exemption — used by customs-items.json:cannabis-au
+- **data-cdecc379f4** — fetch failed (HTTP 403): https://customs.gov.ph/guidelines-on-arriving-travelers/ — used by customs-items.json:alcohol-ph, customs-items.json:tobacco-ph, customs-items.json:weapons-ph
+- **data-e232714112** — fetch failed (HTTP 403): https://customs.gov.ph/foreign-currency/ — used by customs-items.json:cash-ph
+- **data-8c660dc850** — fetch failed (HTTP 404): https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A41994D0028 — used by customs-items.json:controlled-medication-eu
+- **data-03635be34c** — fetch failed (fetch failed): https://www.ede.gov.ae/documents/61005/0/Controlled+and+semi-controlled+medicines+list.pdf/9a7ac2c4-ec95-5b9a-9720-214314184141?t=1766997996140 — used by customs-items.json:controlled-medication-ae
+- **data-32a8adceb1** — fetch failed (HTTP 403): https://caap.gov.ph/wp-content/uploads/2025/05/Drone-Dos-and-Donts-Revised_final-scaled.jpg — used by customs-items.json:drones-ph
+- **data-01f92af026** — fetch failed (no readable content (0 chars: JS-rendered page or bot challenge)): https://www.sfa.gov.sg/bringing-food-for-private-consumption-from-overseas/list-of-food---food-products-allowed — used by customs-items.json:meat-dairy-sg, customs-items.json:fresh-produce-sg
+- **data-749e9a9d61** — fetch failed (no readable content (0 chars: JS-rendered page or bot challenge)): https://www.sfa.gov.sg/bringing-food-for-private-consumption-from-overseas/general-rule-to-bring-food-into-singapore-non-commercial — used by customs-items.json:fresh-produce-sg
+- **data-071996ca24** — fetch failed (no readable content (264 chars: JS-rendered page or bot challenge)): https://www.lakemedelsverket.se/en/treatment-and-prescription/buy-use-and-handle-medicines/travelling-with-medicines — used by customs-items.json:controlled-medication-se, customs-items.json:prescription-medication-se
+- **data-5a08c3aa40** — fetch failed (fetch failed): https://www.bai.gov.ph/Stakeholders/MeatProductsImport — used by customs-items.json:meat-dairy-ph
+- **data-de64db291e** — fetch failed (fetch failed): https://ticaret.gov.tr/data/65966a8013b876fb4cb76a9d/2024-18%20Sayl%C4%B1%20Genelge.pdf — used by customs-items.json:e-cigarettes-tr
+- **data-c62a85d1c0** — fetch failed (HTTP 403): https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/95621 — used by customs-items.json:e-cigarettes-ph
+- **data-1e5ed70cb5** — fetch failed (fetch failed): https://www.legco.gov.hk/yr20-21/english/brief/ncr218sf22pt4-e.pdf — used by customs-items.json:controlled-medication-hk
+- **data-2bf5168878** — fetch failed (fetch failed): https://www.zdravlje.gov.rs/extfile/sr/447633/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD%20%D0%BE%20%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%B8%D0%BC%20%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%BC%20%D1%81%D1%83%D0%BF%D1%81%D1%82%D0%B0%D0%BD%D1%86%D0%B0%D0%BC%D0%B0.pdf — used by customs-items.json:controlled-medication-rs
+- **data-032fe05cee** — fetch failed (terminated): http://mpa.hunan.gov.cn/mpa/ztzl/jdgz/202010/13874445/files/21616ca7499740d1818a884598a3b347.doc — used by customs-items.json:controlled-medication-cn, customs-items.json:psychotropic-category-2-cn
+- **data-0a8ea1e26b** — fetch failed (HTTP 403): https://www.moh.gov.cy/moh/phs/phs.nsf/drugsphych_en/drugsphych_en — used by customs-items.json:controlled-medication-cy
+- **data-0a761704b5** — fetch failed (HTTP 403): https://www.moh.gov.cy/moh/phs/phs.nsf/0C083A899BB653E4C22585340045E50D/$file/Application%20Form%20for%20Import%20for%20Personal%20Use.doc — used by customs-items.json:controlled-medication-cy
+- **data-931f388c0a** — fetch failed (fetch failed): https://carc.gov.jo/en/drones — used by customs-items.json:drones-jo
+- **data-166810afb2** — fetch failed (fetch failed): https://www.gov.me/dokumenta/96ae60dd-9608-426d-ac08-adeb6c656bee — used by customs-items.json:cash-me
+- **data-1bca43e665** — fetch failed (fetch failed): https://www.gov.me/dokumenta/31c08da8-50ec-47ba-9975-a39fe4eca260 — used by customs-items.json:alcohol-me, customs-items.json:tobacco-me
+- **data-a1020d79ee** — fetch failed (fetch failed): https://www.gov.me/en/documents/eaa4743a-ed71-423c-b25c-324e228e6e10 — used by customs-items.json:controlled-medication-me, customs-items.json:cannabis-me
+- **data-e1a50f635e** — fetch failed (fetch failed): https://www.customs.gov.qa/Arabic/Documents/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF%20%D9%84%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AC%D9%85%D8%B1%D9%83%D9%8A%D8%A9%20%D8%A8%D9%85%D9%86%D8%A7%D9%81%D8%B0%20%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84%20%D8%A7%D9%84%D8%A7%D9%88%D9%84%D9%89%20%D8%A8%D8%AF%D9%88%D9%84%20%D9%85%D8%AC%D9%84%D8%B3%20%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%20%D9%84%D8%AF%D9%88%D9%84%20%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9.pdf — used by customs-items.json:tobacco-qa
+- **data-f5fa644ce6** — fetch failed (fetch failed): https://cairo.embassy.qa/en/egypt/travel-tips — used by customs-items.json:cash-eg
+- **data-f24cc2dc22** — fetch failed (fetch failed): https://www.gov.pl/web/gif/substancje-kontrolowane-info-pacjenci2 — used by customs-items.json:controlled-medication-pl
+- **data-aaa0089848** — fetch failed (fetch failed): https://www.bfarm.de/EN/Federal-Opium-Agency/Narcotic-drugs/Travelling-with-narcotic-drugs/_node.html — used by customs-items.json:controlled-medication-de
+- **data-2207ac7983** — fetch failed (fetch failed): https://www.gesetze-im-internet.de/btmahv/__15.html — used by customs-items.json:controlled-medication-de
+- **data-ea95d8346d** — fetch failed (fetch failed): https://www.gesetze-im-internet.de/btmg_1981/anlage_iii.html — used by customs-items.json:controlled-medication-de
+- **data-c1067c0fe5** — fetch failed (fetch failed): https://www.gesetze-im-internet.de/kcang/__2.html — used by customs-items.json:cannabis-de, customs-items.json:cbd-de
+- **data-20d673725a** — fetch failed (fetch failed): https://www.gesetze-im-internet.de/kcang/__1.html — used by customs-items.json:cannabis-de, customs-items.json:cbd-de
+- **data-ea3d323726** — fetch failed (fetch failed): https://www.uradni-list.si/_pdf/2019/Ur/u2019069.pdf — used by customs-items.json:controlled-medication-si
+- **data-e8ba6b4f38** — fetch failed (HTTP 403): https://peraturan.bpk.go.id/Download/384474/permenkes-no-7-tahun-2025.pdf — used by customs-items.json:narcotic-medication-id
+- **data-c74c837ec2** — fetch failed (fetch failed): https://www.parliament.gov.zm/sites/default/files/documents/acts/Dangerous%20Drugs%20Act.pdf — used by customs-items.json:controlled-medication-zm
+- **data-d0545f932b** — fetch failed (fetch failed): https://immigration.gov.ph/ — used by destinations.json:PH
+- **data-bca28dcfee** — fetch failed (HTTP 523): https://en.consul.mn/visa/c/83 — used by destinations.json:MN, entry-requirements.json:US>MN, entry-requirements.json:BR>MN (+28 more)
+- **data-f7d872b717** — fetch failed (fetch failed): https://moi.gov.jo/EN/Pages/Restricted_and_Non_Restricted_Countries_Nationalities — used by destinations.json:JO
+- **data-fc1ccb4d12** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro — used by destinations.json:ME
+- **data-1e984ac23f** — fetch failed (HTTP 403): https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/35/9740 — used by entry-requirements.json:IL>PH
+- **data-4a750933f3** — fetch failed (fetch failed): https://immigration.gov.ph/visas/visa-upon-arrival-sevua/ — used by entry-requirements.json:CN>PH
+- **data-946955f5b2** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/GEO — used by entry-requirements.json:US>GE, entry-requirements.json:CA>GE, entry-requirements.json:AU>GE (+57 more)
+- **data-a152aa1e7a** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/MAR — used by entry-requirements.json:IT>MA
+- **data-a1dc4d0ce9** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/KEN — used by entry-requirements.json:IT>KE
+- **data-118a7feb85** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/USA — used by entry-requirements.json:IT>US
+- **data-ab5996880b** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/CAN — used by entry-requirements.json:IT>CA
+- **data-a05217e6aa** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/BRA — used by entry-requirements.json:IT>BR
+- **data-e7df2e75ab** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/MEX — used by entry-requirements.json:IT>MX
+- **data-7d48e8f65f** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/GBR — used by entry-requirements.json:IT>GB
+- **data-5022615ac4** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/THA — used by entry-requirements.json:IT>TH
+- **data-953901a7a6** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/VNM — used by entry-requirements.json:IT>VN
+- **data-6280b1b793** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/MYS — used by entry-requirements.json:IT>MY
+- **data-d6ac40722f** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/PHL — used by entry-requirements.json:IT>PH
+- **data-6ef6931142** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/MDV — used by entry-requirements.json:IT>MV
+- **data-941c891848** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/EGY — used by entry-requirements.json:IT>EG
+- **data-1dc7347835** — fetch failed (HTTP 403): https://www.chileatiende.gob.cl/fichas/3445-pasaporte — used by entry-requirements.json:CL>PE, entry-requirements.json:CL>CO, entry-requirements.json:CL>EC (+1 more)
+- **data-0386daca21** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/PER — used by entry-requirements.json:IT>PE
+- **data-2ca0acbbb6** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/DOM — used by entry-requirements.json:IT>DO
+- **data-c466f30573** — fetch failed (HTTP 403): https://cancilleria.gov.co/normograma/compilacion/docs/resolucion_minrelaciones_12189_2026.htm — used by entry-requirements.json:US>CO, entry-requirements.json:GB>CO, entry-requirements.json:CA>CO (+36 more)
+- **data-284517d5a3** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/CRI — used by entry-requirements.json:IT>CR
+- **data-9ba9931111** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/QAT — used by entry-requirements.json:IT>QA
+- **data-66cfc577a1** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/united-kingdom-of-great-britain-and-northern-ireland — used by entry-requirements.json:GB>ME
+- **data-4fe1230521** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/united-states-of-america — used by entry-requirements.json:US>ME
+- **data-9944d04beb** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/canada — used by entry-requirements.json:CA>ME
+- **data-a1c62dc9cb** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/australia — used by entry-requirements.json:AU>ME
+- **data-615858ae34** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/japan — used by entry-requirements.json:JP>ME
+- **data-59fe1ae919** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/new-zealand — used by entry-requirements.json:NZ>ME
+- **data-faca1f2034** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/singapore — used by entry-requirements.json:SG>ME
+- **data-5b82e0dbd9** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/korea-republic-of-south-korea — used by entry-requirements.json:KR>ME
+- **data-36326e78f2** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/china — used by entry-requirements.json:CN>ME
+- **data-19e536cbc1** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/malaysia — used by entry-requirements.json:MY>ME
+- **data-3834dc57d8** — fetch failed (fetch failed): https://www.gov.me/en/article/montenegro-fully-aligns-its-visa-policy-with-the-european-union-citizens-of-numerous-countries-can-now-apply-for-a-montenegrin-visa — used by entry-requirements.json:CN>ME, entry-requirements.json:BY>ME, entry-requirements.json:RU>ME (+1 more)
+- **data-e355b35361** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/india — used by entry-requirements.json:IN>ME
+- **data-e02c46cbea** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/ukraine — used by entry-requirements.json:UA>ME
+- **data-580ad67092** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/israel — used by entry-requirements.json:IL>ME
+- **data-b6565eda1d** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/brazil — used by entry-requirements.json:BR>ME
+- **data-7c7c5b7eda** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/mexico — used by entry-requirements.json:MX>ME
+- **data-ae729a022f** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/JAM — used by entry-requirements.json:IT>JM
+- **data-093f998102** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/argentina — used by entry-requirements.json:AR>ME
+- **data-b74772bb6d** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/chile — used by entry-requirements.json:CL>ME
+- **data-df1bb5dcdd** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/france — used by entry-requirements.json:FR>ME
+- **data-589a108adf** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/germany — used by entry-requirements.json:DE>ME
+- **data-5f663f0b17** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/italy — used by entry-requirements.json:IT>ME
+- **data-063775a0dc** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/spain — used by entry-requirements.json:ES>ME
+- **data-209aaf3388** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/BHS — used by entry-requirements.json:IT>BS
+- **data-b757832ef5** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/netherlands — used by entry-requirements.json:NL>ME
+- **data-4e9ce1b1cc** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/ECU — used by entry-requirements.json:IT>EC
+- **data-94a7f52fb0** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/ARM — used by entry-requirements.json:IT>AM
+- **data-b7558e9e70** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/SYC — used by entry-requirements.json:IT>SC
+- **data-ce3c601101** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/GHA — used by entry-requirements.json:US>GH, entry-requirements.json:GB>GH, entry-requirements.json:CA>GH (+62 more)
+- **data-bfaefcf71b** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/ZMB — used by entry-requirements.json:IT>ZM
+- **data-98815954bb** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/MUS — used by entry-requirements.json:IT>MU
+- **data-7d011ab762** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/ZWE — used by entry-requirements.json:IT>ZW
+- **data-b98679dd5c** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/KGZ — used by entry-requirements.json:US>KG, entry-requirements.json:GB>KG, entry-requirements.json:CA>KG (+55 more)
+- **data-d0e8ade46e** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/OMN — used by entry-requirements.json:US>OM, entry-requirements.json:GB>OM, entry-requirements.json:CA>OM (+61 more)
+- **data-b05150a0c4** — fetch failed (no readable content (16 chars: JS-rendered page or bot challenge)): https://www.viaggiaresicuri.it/find-country/country/BRN — used by entry-requirements.json:US>BN, entry-requirements.json:GB>BN, entry-requirements.json:CA>BN (+60 more)
+- **data-a83d8f6297** — fetch failed (HTTP 404): https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22015A0521(01) — used by entry-requirements.json:AT>AE, entry-requirements.json:BE>AE, entry-requirements.json:BG>AE (+18 more)
+- **data-3205c1e309** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/diplomatic-missions-to-montenegro/united-arab-emirates — used by entry-requirements.json:ME>AE
+- **data-83f1439719** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/austria — used by entry-requirements.json:AT>ME
+- **data-4f5d6f1a22** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/denmark — used by entry-requirements.json:DK>ME
+- **data-50cabd41f1** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/czech-republic — used by entry-requirements.json:CZ>ME
+- **data-4d3309bf82** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/bulgaria — used by entry-requirements.json:BG>ME
+- **data-56130084d7** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/belgium — used by entry-requirements.json:BE>ME
+- **data-ce9d835e3d** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/croatia — used by entry-requirements.json:HR>ME
+- **data-1d03417cba** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/cyprus — used by entry-requirements.json:CY>ME
+- **data-42d24a2b3a** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/estonia — used by entry-requirements.json:EE>ME
+- **data-82ad3e1e84** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/finland — used by entry-requirements.json:FI>ME
+- **data-125aee8ebf** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/luxembourg — used by entry-requirements.json:LU>ME
+- **data-3479750a90** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/greece — used by entry-requirements.json:GR>ME
+- **data-62e9fc0987** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/lithuania — used by entry-requirements.json:LT>ME
+- **data-e74930e7a6** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/latvia — used by entry-requirements.json:LV>ME
+- **data-08227195e0** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/ireland — used by entry-requirements.json:IE>ME
+- **data-b3f46971d6** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/hungary — used by entry-requirements.json:HU>ME
+- **data-7a28550157** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/malta — used by entry-requirements.json:MT>ME
+- **data-9612118e7b** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/poland — used by entry-requirements.json:PL>ME
+- **data-4f4662b509** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/albania — used by entry-requirements.json:AL>ME
+- **data-25e138d8fd** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/portugal — used by entry-requirements.json:PT>ME
+- **data-2bebd5fe8d** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/sweden — used by entry-requirements.json:SE>ME
+- **data-6341f3c1b2** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/slovenia — used by entry-requirements.json:SI>ME
+- **data-df4e169f7f** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/slovakia — used by entry-requirements.json:SK>ME
+- **data-8d11f352a4** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/romania — used by entry-requirements.json:RO>ME
+- **data-eb8598c673** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/andorra — used by entry-requirements.json:AD>ME
+- **data-825cb1df11** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/bosnia-and-herzegovina — used by entry-requirements.json:BA>ME
+- **data-68fac70eac** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/san-marino — used by entry-requirements.json:SM>ME
+- **data-abe94c9bbf** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/georgia — used by entry-requirements.json:GE>ME
+- **data-06d9932723** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/north-macedonia — used by entry-requirements.json:MK>ME
+- **data-072ee0deeb** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/monaco — used by entry-requirements.json:MC>ME
+- **data-f8d85916b3** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/moldova — used by entry-requirements.json:MD>ME
+- **data-27f6fd2b3c** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/kosovo — used by entry-requirements.json:XK>ME
+- **data-b6f1899fa4** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638883494519747547 — used by entry-requirements.json:AT>BA
+- **data-c4fdd77467** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638883511753966503 — used by entry-requirements.json:BE>BA
+- **data-f43decca3e** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638884251050581867 — used by entry-requirements.json:HR>BA
+- **data-6281cd3460** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638883531345686936 — used by entry-requirements.json:BG>BA
+- **data-07f3491e61** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638884175022732022 — used by entry-requirements.json:CZ>BA
+- **data-a5f1c033b4** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638887761830659875 — used by entry-requirements.json:CY>BA
+- **data-7ba16cdc30** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/serbia — used by entry-requirements.json:RS>ME
+- **data-1dff563512** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638884180185942653 — used by entry-requirements.json:DK>BA
+- **data-f5746e5848** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638884209011970465 — used by entry-requirements.json:FI>BA
+- **data-aad59a44d1** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638884194892215809 — used by entry-requirements.json:EE>BA
+- **data-f6c3a29709** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886780972585765 — used by entry-requirements.json:HU>BA
+- **data-99a5de82a3** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638884225425865092 — used by entry-requirements.json:GR>BA
+- **data-56b5b6e10f** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_639222101785307612 — used by entry-requirements.json:IE>BA
+- **data-6e03e7207e** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886773596241280 — used by entry-requirements.json:LT>BA
+- **data-e7c4a660ea** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638884397584823001 — used by entry-requirements.json:LV>BA
+- **data-adcb9b4e5e** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886775887040221 — used by entry-requirements.json:LU>BA
+- **data-b32bce4154** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886790875262202 — used by entry-requirements.json:MT>BA
+- **data-0f59311f5a** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886875439854778 — used by entry-requirements.json:PL>BA
+- **data-933abda1e5** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886876828018609 — used by entry-requirements.json:PT>BA
+- **data-a29c2902b6** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638887765301578339 — used by entry-requirements.json:RO>BA
+- **data-98f121d8c0** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886945200626735 — used by entry-requirements.json:SK>BA
+- **data-f545406a7d** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886946546990155 — used by entry-requirements.json:SI>BA
+- **data-96b2efd7d1** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638887656343958811 — used by entry-requirements.json:SE>BA
+- **data-b5e262cf42** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638883481060049996 — used by entry-requirements.json:AD>BA
+- **data-3a6d088af9** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_639050098700037188 — used by entry-requirements.json:GE>BA
+- **data-94f376861e** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638975086772324997 — used by entry-requirements.json:AL>BA
+- **data-71c3dbfef8** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638884171543811588 — used by entry-requirements.json:ME>BA
+- **data-11828de50d** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886809407303595 — used by entry-requirements.json:MD>BA
+- **data-9ef89dc098** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886811835502138 — used by entry-requirements.json:MC>BA
+- **data-9939f02849** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886917376997574 — used by entry-requirements.json:SM>BA
+- **data-1b281232e8** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886957200216716 — used by entry-requirements.json:RS>BA
+- **data-72b36a39d0** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886943611766628 — used by entry-requirements.json:MK>BA
+- **data-94f89deaf6** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_639222210020811154 — used by entry-requirements.json:TR>BA
+- **data-3c35205b77** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638887640244282053 — used by entry-requirements.json:VA>BA
+- **data-9adf7c68c5** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638883490864830189 — used by entry-requirements.json:AM>BA
+- **data-2303bec854** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_639215238587178303 — used by entry-requirements.json:AZ>BA
+- **data-e4bfa1171c** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638883518204682391 — used by entry-requirements.json:BY>BA
+- **data-2f1697b34c** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886911908205123 — used by entry-requirements.json:RU>BA
+- **data-2bed66495b** — fetch failed (HTTP 404): https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A22002A0430%2801%29 — used by entry-requirements.json:CH>AL, nationality-rules.json:row
+- **data-a3d53fa770** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/armenia — used by entry-requirements.json:AM>ME
+- **data-b4abcc7a9c** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/azerbaijan — used by entry-requirements.json:AZ>ME
+- **data-efabc64446** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/belarus — used by entry-requirements.json:BY>ME
+- **data-e3644e452f** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/turkey — used by entry-requirements.json:TR>ME
+- **data-d0da769a54** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/russian-federation — used by entry-requirements.json:RU>ME
+- **data-4fe60f06cf** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638884268062797702 — used by entry-requirements.json:IS>BA
+- **data-4f17edcc40** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886836641300367 — used by entry-requirements.json:NO>BA
+- **data-de7cb181b3** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638886764098495916 — used by entry-requirements.json:LI>BA
+- **data-e38e71b629** — fetch failed (fetch failed): https://www.mvp.gov.ba/bs/org_cmd57sdlc000nn43u2rk8pgsd_638887767276051162 — used by entry-requirements.json:CH>BA
+- **data-02d2c8688d** — fetch failed (HTTP 403): https://cancilleria.gov.co/normograma/compilacion/docs/resolucion_minrelaciones_3717_2023.htm — used by entry-requirements.json:AM>CO, entry-requirements.json:BY>CO, entry-requirements.json:XK>CO
+- **data-2025f58939** — fetch failed (fetch failed): https://www.kln.gov.my/web/aut_vienna/requirement_foreigner — used by entry-requirements.json:AT>MY
+- **data-c22a2e1034** — fetch failed (fetch failed): https://www.kln.gov.my/web/bel_brussels/requirement_foreigner — used by entry-requirements.json:BE>MY
+- **data-09ef7ce8ca** — fetch failed (fetch failed): https://www.kln.gov.my/web/cze_prague/requirement_foreigner — used by entry-requirements.json:CZ>MY
+- **data-19f1b369d2** — fetch failed (fetch failed): https://www.kln.gov.my/web/hun_budapest/requirement_foreigner — used by entry-requirements.json:HU>MY
+- **data-9fff2dcaa0** — fetch failed (fetch failed): https://www.kln.gov.my/web/hrv_zagreb/requirement_foreigner — used by entry-requirements.json:HR>MY
+- **data-410f6d48b4** — fetch failed (fetch failed): https://www.kln.gov.my/web/rou_bucharest/requirement_foreigner — used by entry-requirements.json:RO>MY
+- **data-c204b2b058** — fetch failed (fetch failed): https://www.kln.gov.my/web/rus_moscow/requirement_foreigner — used by entry-requirements.json:AM>MY, entry-requirements.json:BY>MY, entry-requirements.json:GE>MY (+1 more)
+- **data-8d96a374f6** — fetch failed (fetch failed): https://www.kln.gov.my/web/tur_ankara/requirement_foreigner — used by entry-requirements.json:TR>MY
+- **data-0da80312d3** — fetch failed (fetch failed): https://www.kln.gov.my/web/bih_sarajevo/requirement_foreigner — used by entry-requirements.json:BA>MY, entry-requirements.json:RS>MY
+- **data-e332c2a9c8** — fetch failed (fetch failed): https://www.kln.gov.my/web/srb_belgrade/requirement_foreigner — used by entry-requirements.json:RS>MY
+- **data-318ebfe53d** — fetch failed (fetch failed): https://www.kln.gov.my/web/aze_baku/requirement_foreigner — used by entry-requirements.json:AZ>MY
+- **data-1f2e032d90** — fetch failed (fetch failed): https://www.kln.gov.my/web/che_berne/requirement_foreigner — used by entry-requirements.json:CH>MY, entry-requirements.json:LI>MY
+- **data-6d0d8bd429** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/switzerland — used by entry-requirements.json:CH>ME
+- **data-7176157811** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/iceland — used by entry-requirements.json:IS>ME
+- **data-ea72ea1e2f** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/liechtenstein — used by entry-requirements.json:LI>ME
+- **data-9e9d35e069** — fetch failed (fetch failed): https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/norway — used by entry-requirements.json:NO>ME
+- **data-677466c29b** — fetch failed (no readable content (62 chars: JS-rendered page or bot challenge)): https://www.retsinformation.dk/eli/retsinfo/2020/9906 — used by overstay-penalties.json:DK
+- **data-fed3f58f04** — fetch failed (no readable content (62 chars: JS-rendered page or bot challenge)): https://www.retsinformation.dk/eli/lta/2026/953 — used by overstay-penalties.json:DK
+- **data-f7e17e429f** — fetch failed (no readable content (8 chars: JS-rendered page or bot challenge)): https://www.e-sbirka.cz/eli/cz/sb/1999/326/2026-06-12 — used by overstay-penalties.json:CZ
+- **data-ecea9d34fb** — fetch failed (no readable content (69 chars: JS-rendered page or bot challenge)): https://esta.cbp.dhs.gov/ — used by travel-authorisations.json:esta
+- **data-ab3888a94a** — fetch failed (HTTP 403): https://lovebali.baliprov.go.id/ — used by trip-charges.json:bali-tourist-levy
